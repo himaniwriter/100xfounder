@@ -1,195 +1,163 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Command, Search, Sparkles } from "lucide-react";
-import { Geist, Geist_Mono } from "next/font/google";
-import { HeroSection } from "@/components/hero-section";
+import { Search } from "lucide-react";
+import { Footer } from "@/components/layout/footer";
+import { Navbar } from "@/components/layout/navbar";
+import { GlassCard } from "@/components/ui/glass-card";
 
-const geistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
-});
-
-const founders = [
-  {
-    name: "Anika Rao",
-    role: "Founder & CEO, CausalAI",
-    avatar: "AR",
-    badges: ["YC W24", "Ex-Stripe"],
-  },
-  {
-    name: "Mateo Lin",
-    role: "Founder, Helix Cloud",
-    avatar: "ML",
-    badges: ["Seed", "Ex-Notion"],
-  },
-  {
-    name: "Nora Patel",
-    role: "Co-Founder, Arc Ledger",
-    avatar: "NP",
-    badges: ["Series A", "MIT"],
-  },
-  {
-    name: "Ibrahim Khan",
-    role: "Founder, Vector Forge",
-    avatar: "IK",
-    badges: ["YC S23", "Ex-Scale"],
-  },
-  {
-    name: "Leah Cho",
-    role: "Founder, Orbit Labs",
-    avatar: "LC",
-    badges: ["Pre-Seed", "Stanford"],
-  },
-  {
-    name: "Samir Das",
-    role: "Founder, Prism Infra",
-    avatar: "SD",
-    badges: ["Series B", "Ex-Plaid"],
-  },
+const trendingCompanies = [
+  "Stripe",
+  "OpenAI",
+  "Notion",
+  "Figma",
+  "Linear",
+  "Vercel",
+  "Datadog",
+  "Anthropic",
 ];
 
-const directoryRows = [
-  { company: "CausalAI", founder: "Anika Rao", totalRaised: "$42.5M", year: "2023", region: "SF" },
-  { company: "Helix Cloud", founder: "Mateo Lin", totalRaised: "$19.0M", year: "2022", region: "NYC" },
-  { company: "Arc Ledger", founder: "Nora Patel", totalRaised: "$11.2M", year: "2024", region: "LDN" },
-  { company: "Vector Forge", founder: "Ibrahim Khan", totalRaised: "$31.8M", year: "2021", region: "BER" },
-  { company: "Orbit Labs", founder: "Leah Cho", totalRaised: "$8.7M", year: "2025", region: "SEA" },
+const featuredFounders = [
+  {
+    name: "Ava Chen",
+    role: "Founder, FluxOS",
+    location: "San Francisco",
+    tags: ["AI Infra", "Ex-Stripe"],
+  },
+  {
+    name: "Noah Patel",
+    role: "Co-Founder, Orbit Health",
+    location: "New York",
+    tags: ["HealthTech", "YC W24"],
+  },
+  {
+    name: "Mila Romero",
+    role: "Founder, Quintic Labs",
+    location: "London",
+    tags: ["Developer Tools", "Ex-Google"],
+  },
 ];
 
 export default function HomePage() {
+  const marqueeItems = [...trendingCompanies, ...trendingCompanies];
+
   return (
-    <main
-      className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-[#030303] text-white font-sans antialiased`}
-    >
-      <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute left-1/2 top-[-15rem] h-[30rem] w-[50rem] -translate-x-1/2 rounded-full bg-blue-600/20 blur-[180px]" />
-        <div className="absolute right-[-8rem] top-[20rem] h-[24rem] w-[24rem] rounded-full bg-violet-600/20 blur-[160px]" />
+    <main className="relative min-h-screen overflow-x-hidden bg-[#050505] text-[#EDEDED]">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute left-1/2 top-[-16rem] h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.28),transparent_70%)] blur-3xl" />
       </div>
 
-      <header className="sticky top-0 z-50 border-b border-white/5 bg-[#030303]/60 backdrop-blur-2xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
-          <div className="flex items-center gap-3">
-            <div className="grid h-8 w-8 place-items-center rounded-lg border border-white/10 bg-white/5 shadow-[0_0_24px_rgba(139,92,246,0.35)]">
-              <Sparkles className="h-4 w-4 text-violet-300" />
-            </div>
-            <span className="text-sm font-medium tracking-wide text-zinc-100">FounderBase</span>
+      <div className="relative z-10">
+        <Navbar />
+
+        <section className="mx-auto w-full max-w-7xl px-4 pb-12 pt-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center">
+            <motion.h1
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-5xl font-semibold tracking-tight text-transparent sm:text-6xl md:text-7xl"
+            >
+              The Index of Ambition.
+            </motion.h1>
+
+            <motion.p
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
+              className="mx-auto mt-5 max-w-2xl text-lg text-zinc-400"
+            >
+              Discover the people building the future.
+            </motion.p>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+              className="mx-auto mt-10 max-w-2xl"
+            >
+              <div className="flex h-14 items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 backdrop-blur-md">
+                <Search className="h-5 w-5 text-zinc-400" />
+                <input
+                  type="text"
+                  placeholder="Search founders, startups, and signals..."
+                  className="h-full flex-1 bg-transparent text-base text-zinc-100 placeholder:text-zinc-500 focus:outline-none"
+                />
+                <span className="rounded-md border border-white/10 bg-white/5 px-2 py-1 font-mono text-xs text-zinc-400">
+                  Cmd + K
+                </span>
+              </div>
+            </motion.div>
           </div>
+        </section>
 
-          <div className="hidden w-full max-w-xl items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-zinc-400 lg:flex">
-            <Search className="h-4 w-4" />
-            <span className="flex-1">Search founders, companies, rounds...</span>
-            <span className="inline-flex items-center gap-1 rounded-md border border-white/10 bg-white/5 px-2 py-1 text-xs text-zinc-300">
-              <Command className="h-3 w-3" />K
-            </span>
-          </div>
-
-          <nav className="flex items-center gap-5 text-sm text-zinc-400">
-            {[
-              "Directory",
-              "Signals",
-              "Benchmarks",
-              "Pricing",
-            ].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="transition-colors hover:text-white"
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </header>
-
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pb-20">
-        <HeroSection />
-
-        <section className="mt-16">
-          <div className="mb-6 flex items-center justify-between">
-            <h2 className="text-lg text-zinc-100">Founder Cards</h2>
-            <p className="text-sm text-zinc-500">Live profile snapshots</p>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {founders.map((founder, idx) => (
-              <motion.article
-                key={founder.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ delay: idx * 0.06, duration: 0.35, ease: "easeOut" }}
-                whileHover={{ y: -4, scale: 1.01 }}
-                className="rounded-xl border border-white/10 bg-white/[0.02] p-5 transition-colors hover:border-white/20 hover:bg-white/[0.05]"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/10 text-sm font-medium text-zinc-200">
-                    {founder.avatar}
-                  </div>
-                  <div>
-                    <h3 className="text-base text-white">{founder.name}</h3>
-                    <p className="text-sm text-gray-400">{founder.role}</p>
-                  </div>
+        <section className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          <p className="mb-4 text-sm uppercase tracking-[0.18em] text-zinc-500">Trending</p>
+          <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-md">
+            <motion.div
+              className="flex w-max gap-3 px-4 py-4"
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            >
+              {marqueeItems.map((company, index) => (
+                <div
+                  key={`${company}-${index}`}
+                  className="rounded-lg border border-white/10 bg-black/30 px-5 py-2 text-sm text-zinc-300"
+                >
+                  {company}
                 </div>
+              ))}
+            </motion.div>
+          </div>
+        </section>
 
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {founder.badges.map((badge) => (
-                    <span
-                      key={badge}
-                      className="rounded-full border border-blue-500/20 bg-blue-500/10 px-2.5 py-1 text-xs text-blue-400"
-                    >
-                      {badge}
-                    </span>
-                  ))}
-                </div>
-              </motion.article>
+        <section className="mx-auto w-full max-w-7xl px-4 pb-20 pt-8 sm:px-6 lg:px-8">
+          <div className="mb-6 flex items-end justify-between">
+            <h2 className="text-2xl font-semibold tracking-tight text-white">Featured Founders</h2>
+            <span className="text-sm text-zinc-500">Updated daily</span>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {featuredFounders.map((founder, index) => (
+              <GlassCard key={founder.name} className="p-5">
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.35, delay: index * 0.08, ease: "easeOut" }}
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold text-zinc-200">
+                      {founder.name
+                        .split(" ")
+                        .map((part) => part[0])
+                        .join("")
+                        .slice(0, 2)}
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-medium text-white">{founder.name}</h3>
+                      <p className="text-sm text-zinc-400">{founder.role}</p>
+                      <p className="mt-1 text-xs text-zinc-500">{founder.location}</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {founder.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full border border-[#6366f1]/30 bg-[#6366f1]/10 px-2.5 py-1 text-xs text-indigo-300"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              </GlassCard>
             ))}
           </div>
         </section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-          className="mt-16 overflow-hidden rounded-xl border border-white/10 bg-white/[0.02]"
-        >
-          <div className="flex items-center justify-between border-b border-white/5 px-5 py-4">
-            <h2 className="text-sm uppercase tracking-[0.18em] text-zinc-300">The Directory</h2>
-            <div className="font-mono text-xs text-zinc-500">stream://founderbase/live</div>
-          </div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[760px] text-left text-sm">
-              <thead className="border-b border-white/5 text-zinc-500">
-                <tr>
-                  <th className="px-5 py-3 font-medium">Company</th>
-                  <th className="px-5 py-3 font-medium">Founder</th>
-                  <th className="px-5 py-3 font-medium">Total Raised</th>
-                  <th className="px-5 py-3 font-medium">Founded Year</th>
-                  <th className="px-5 py-3 font-medium">Region</th>
-                </tr>
-              </thead>
-              <tbody>
-                {directoryRows.map((row) => (
-                  <tr key={row.company} className="border-b border-white/5 last:border-0 hover:bg-white/[0.03]">
-                    <td className="px-5 py-3 text-zinc-200">{row.company}</td>
-                    <td className="px-5 py-3 text-zinc-400">{row.founder}</td>
-                    <td className="px-5 py-3 font-mono text-zinc-300">{row.totalRaised}</td>
-                    <td className="px-5 py-3 font-mono text-zinc-300">{row.year}</td>
-                    <td className="px-5 py-3 font-mono text-zinc-500">{row.region}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </motion.section>
+        <Footer />
       </div>
     </main>
   );
