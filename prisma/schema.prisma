@@ -13,6 +13,17 @@ enum FounderStatus {
   REJECTED
 }
 
+enum UserRole {
+  ADMIN
+  MEMBER
+}
+
+enum ClaimStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
 enum FundingStage {
   BOOTSTRAPPED
   PRE_SEED
@@ -32,13 +43,19 @@ model User {
   email     String   @unique
   name      String?
   avatar    String?
+  passwordHash String?
+  role      UserRole @default(MEMBER)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   founderProfile    FounderProfile?
   endorsementsGiven Endorsement[]  @relation("EndorsementsGiven")
+  claims            ClaimRequest[]
+  connectors        AggregatorConnection[] @relation("ConnectorCreator")
+  claimedDirectoryEntries FounderDirectoryEntry[] @relation("DirectoryEntryClaimant")
 
   @@index([createdAt])
+  @@index([role])
   @@map("users")
 }
 
@@ -132,14 +149,60 @@ model FounderDirectoryEntry {
   productSummary String
   fundingInfo    String?
   sourceUrl      String?
+  ycProfileUrl   String?
   verified       Boolean  @default(true)
   avatarUrl      String?
+  claimedByUserId String? @db.Uuid
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
+
+  claimedByUser User? @relation("DirectoryEntryClaimant", fields: [claimedByUserId], references: [id], onDelete: SetNull)
+  claimRequests ClaimRequest[]
 
   @@index([companyName])
   @@index([industry])
   @@index([headquarters])
   @@index([stage])
+  @@index([claimedByUserId])
   @@map("founder_directory_entries")
+}
+
+model ClaimRequest {
+  id          String      @id @default(cuid())
+  userId      String      @db.Uuid
+  founderEntryId String
+  message     String?
+  status      ClaimStatus @default(PENDING)
+  reviewedAt  DateTime?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  user        User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  founderEntry FounderDirectoryEntry @relation(fields: [founderEntryId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, founderEntryId])
+  @@index([status])
+  @@index([createdAt])
+  @@map("claim_requests")
+}
+
+model AggregatorConnection {
+  id           String   @id @default(cuid())
+  name         String
+  provider     String
+  endpoint     String
+  authHeader   String?
+  authValue    String?
+  isActive     Boolean  @default(true)
+  lastSyncAt   DateTime?
+  createdById  String   @db.Uuid
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  createdBy User @relation("ConnectorCreator", fields: [createdById], references: [id], onDelete: Cascade)
+
+  @@index([provider])
+  @@index([isActive])
+  @@index([createdById])
+  @@map("aggregator_connections")
 }

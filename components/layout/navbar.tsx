@@ -32,10 +32,16 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <Link
-            href="/join"
+            href="/dashboard"
             className="inline-flex h-9 items-center rounded-md border border-transparent bg-[#6366f1] px-4 text-sm font-medium text-white transition-colors hover:bg-[#5558ea]"
           >
-            Join
+            Dashboard
+          </Link>
+          <Link
+            href="/login"
+            className="inline-flex h-9 items-center rounded-md border border-white/10 bg-white/5 px-3 text-sm text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
+          >
+            Login
           </Link>
           <button
             type="button"

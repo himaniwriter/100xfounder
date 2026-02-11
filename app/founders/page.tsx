@@ -1,103 +1,47 @@
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import { FounderCard, type Founder } from "@/components/founder-card";
+import { FounderCard } from "@/components/founder-card";
+import {
+  getFounderDirectory,
+  getFounderFilterOptions,
+  splitRecentlyFunded,
+} from "@/lib/founders/store";
 
-const founders: Founder[] = [
-  {
-    id: "f_1",
-    name: "Ava Chen",
-    startup: "Founder, FluxOS",
-    industry: "AI",
-    location: "SF",
-    stage: "Series A",
-    verified: true,
-  },
-  {
-    id: "f_2",
-    name: "Noah Patel",
-    startup: "Co-Founder, Orbit Health",
-    industry: "SaaS",
-    location: "NYC",
-    stage: "Seed",
-    verified: true,
-  },
-  {
-    id: "f_3",
-    name: "Mila Romero",
-    startup: "Founder, Quintic Labs",
-    industry: "Crypto",
-    location: "London",
-    stage: "Seed",
-    verified: true,
-  },
-  {
-    id: "f_4",
-    name: "Ethan Brooks",
-    startup: "Founder, Nova Ledger",
-    industry: "Crypto",
-    location: "NYC",
-    stage: "Series A",
-    verified: true,
-  },
-  {
-    id: "f_5",
-    name: "Sofia Kim",
-    startup: "Founder, SignalStack",
-    industry: "SaaS",
-    location: "SF",
-    stage: "Seed",
-    verified: true,
-  },
-  {
-    id: "f_6",
-    name: "Luca Marino",
-    startup: "Co-Founder, Atlas Neural",
-    industry: "AI",
-    location: "London",
-    stage: "Series A",
-    verified: true,
-  },
-  {
-    id: "f_7",
-    name: "Priya Nair",
-    startup: "Founder, Delta Ops",
-    industry: "SaaS",
-    location: "SF",
-    stage: "Series A",
-    verified: true,
-  },
-  {
-    id: "f_8",
-    name: "Zane Okafor",
-    startup: "Founder, Helio Compute",
-    industry: "AI",
-    location: "NYC",
-    stage: "Seed",
-    verified: true,
-  },
-  {
-    id: "f_9",
-    name: "Ivy Laurent",
-    startup: "Founder, Radius Chain",
-    industry: "Crypto",
-    location: "London",
-    stage: "Series A",
-    verified: true,
-  },
-  {
-    id: "f_10",
-    name: "Daniel Park",
-    startup: "Founder, Framebase",
-    industry: "SaaS",
-    location: "SF",
-    stage: "Seed",
-    verified: true,
-  },
-];
+function readParam(value: string | string[] | undefined): string[] {
+  if (!value) {
+    return [];
+  }
 
-export default async function FoundersPage() {
-  // Later replace this with Prisma, e.g.:
-  // const founders = await prisma.founderProfile.findMany({ ... })
+  const raw = Array.isArray(value) ? value.join(",") : value;
+
+  return raw
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+type FoundersPageProps = {
+  searchParams?: {
+    industry?: string | string[];
+    location?: string | string[];
+    stage?: string | string[];
+  };
+};
+
+export default async function FoundersPage({ searchParams }: FoundersPageProps) {
+  const selectedIndustries = readParam(searchParams?.industry);
+  const selectedLocations = readParam(searchParams?.location);
+  const selectedStages = readParam(searchParams?.stage);
+
+  const [founders, filterOptions] = await Promise.all([
+    getFounderDirectory({
+      industry: selectedIndustries,
+      location: selectedLocations,
+      stage: selectedStages,
+    }),
+    getFounderFilterOptions(),
+  ]);
+  const { recent, rest } = splitRecentlyFunded(founders, 18);
 
   return (
     <main className="min-h-screen bg-[#050505] text-[#EDEDED]">
@@ -106,83 +50,150 @@ export default async function FoundersPage() {
       <div className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-end justify-between">
           <div>
-            <h1 className="text-3xl font-semibold tracking-tight text-white">Founder Directory</h1>
-            <p className="mt-2 text-sm text-zinc-400">Browse verified builders across top startup hubs.</p>
+            <h1 className="text-3xl font-semibold tracking-tight text-white">
+              Founder Directory
+            </h1>
+            <p className="mt-2 text-sm text-zinc-400">
+              Profiles sourced from the uploaded group-company PDF and enriched with
+              YC founder links.
+            </p>
           </div>
-          <p className="text-sm text-zinc-500">{founders.length} founders</p>
+          <p className="text-sm text-zinc-500">{founders.length} profiles</p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[260px_minmax(0,1fr)]">
-          <aside className="hidden h-fit rounded-xl border border-white/10 bg-white/5 p-5 backdrop-blur-md lg:block lg:sticky lg:top-24">
-            <h2 className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-300">Filters</h2>
+        <div className="grid gap-8 lg:grid-cols-[280px_minmax(0,1fr)]">
+          <aside className="hidden h-fit rounded-xl border border-white/10 bg-white/5 p-5 backdrop-blur-md lg:sticky lg:top-24 lg:block">
+            <h2 className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-300">
+              Filters
+            </h2>
 
-            <div className="mt-6 space-y-6">
+            <form className="mt-6 space-y-6" method="GET">
               <div>
                 <h3 className="mb-3 text-sm font-medium text-white">Industry</h3>
                 <div className="space-y-2">
-                  {[
-                    { id: "industry-saas", label: "SaaS" },
-                    { id: "industry-ai", label: "AI" },
-                    { id: "industry-crypto", label: "Crypto" },
-                  ].map((item) => (
-                    <label key={item.id} htmlFor={item.id} className="flex cursor-pointer items-center gap-2 text-sm text-zinc-300">
-                      <input
-                        id={item.id}
-                        type="checkbox"
-                        className="h-4 w-4 rounded border-white/20 bg-transparent text-[#6366f1] focus:ring-[#6366f1]/50"
-                      />
-                      {item.label}
-                    </label>
-                  ))}
+                  {filterOptions.industries.map((industry) => {
+                    const id = `industry-${industry}`;
+                    const checked = selectedIndustries.includes(industry);
+
+                    return (
+                      <label
+                        key={id}
+                        htmlFor={id}
+                        className="flex cursor-pointer items-center gap-2 text-sm text-zinc-300"
+                      >
+                        <input
+                          id={id}
+                          name="industry"
+                          value={industry}
+                          defaultChecked={checked}
+                          type="checkbox"
+                          className="h-4 w-4 rounded border-white/20 bg-transparent text-[#6366f1] focus:ring-[#6366f1]/50"
+                        />
+                        {industry}
+                      </label>
+                    );
+                  })}
                 </div>
               </div>
 
               <div>
                 <h3 className="mb-3 text-sm font-medium text-white">Location</h3>
                 <div className="space-y-2">
-                  {[
-                    { id: "location-sf", label: "SF" },
-                    { id: "location-nyc", label: "NYC" },
-                    { id: "location-london", label: "London" },
-                  ].map((item) => (
-                    <label key={item.id} htmlFor={item.id} className="flex cursor-pointer items-center gap-2 text-sm text-zinc-300">
-                      <input
-                        id={item.id}
-                        type="checkbox"
-                        className="h-4 w-4 rounded border-white/20 bg-transparent text-[#6366f1] focus:ring-[#6366f1]/50"
-                      />
-                      {item.label}
-                    </label>
-                  ))}
+                  {filterOptions.locations.map((location) => {
+                    const id = `location-${location}`;
+                    const checked = selectedLocations.includes(location);
+
+                    return (
+                      <label
+                        key={id}
+                        htmlFor={id}
+                        className="flex cursor-pointer items-center gap-2 text-sm text-zinc-300"
+                      >
+                        <input
+                          id={id}
+                          name="location"
+                          value={location}
+                          defaultChecked={checked}
+                          type="checkbox"
+                          className="h-4 w-4 rounded border-white/20 bg-transparent text-[#6366f1] focus:ring-[#6366f1]/50"
+                        />
+                        {location}
+                      </label>
+                    );
+                  })}
                 </div>
               </div>
 
               <div>
                 <h3 className="mb-3 text-sm font-medium text-white">Stage</h3>
                 <div className="space-y-2">
-                  {[
-                    { id: "stage-seed", label: "Seed" },
-                    { id: "stage-series-a", label: "Series A" },
-                  ].map((item) => (
-                    <label key={item.id} htmlFor={item.id} className="flex cursor-pointer items-center gap-2 text-sm text-zinc-300">
-                      <input
-                        id={item.id}
-                        type="checkbox"
-                        className="h-4 w-4 rounded border-white/20 bg-transparent text-[#6366f1] focus:ring-[#6366f1]/50"
-                      />
-                      {item.label}
-                    </label>
-                  ))}
+                  {filterOptions.stages.map((stage) => {
+                    const id = `stage-${stage}`;
+                    const checked = selectedStages.includes(stage);
+
+                    return (
+                      <label
+                        key={id}
+                        htmlFor={id}
+                        className="flex cursor-pointer items-center gap-2 text-sm text-zinc-300"
+                      >
+                        <input
+                          id={id}
+                          name="stage"
+                          value={stage}
+                          defaultChecked={checked}
+                          type="checkbox"
+                          className="h-4 w-4 rounded border-white/20 bg-transparent text-[#6366f1] focus:ring-[#6366f1]/50"
+                        />
+                        {stage}
+                      </label>
+                    );
+                  })}
                 </div>
               </div>
-            </div>
+
+              <div className="flex gap-2 pt-2">
+                <button
+                  type="submit"
+                  className="inline-flex items-center rounded-md bg-[#6366f1] px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-[#5558ea]"
+                >
+                  Apply
+                </button>
+                <a
+                  href="/founders"
+                  className="inline-flex items-center rounded-md border border-white/10 px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:text-white"
+                >
+                  Reset
+                </a>
+              </div>
+            </form>
           </aside>
 
           <section>
-            <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {founders.map((founder) => (
-                <FounderCard key={founder.id} founder={founder} />
-              ))}
+            {recent.length > 0 ? (
+              <>
+                <div className="mb-4 flex items-center justify-between">
+                  <h2 className="text-lg font-medium text-white">Recently Funded (Priority)</h2>
+                  <span className="text-xs text-zinc-500">{recent.length} records</span>
+                </div>
+                <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+                  {recent.map((founder) => (
+                    <FounderCard key={founder.id} founder={founder} />
+                  ))}
+                </div>
+              </>
+            ) : null}
+
+            <div className={recent.length > 0 ? "mt-8" : ""}>
+              <div className="mb-4 flex items-center justify-between">
+                <h2 className="text-lg font-medium text-white">All Other Records</h2>
+                <span className="text-xs text-zinc-500">{rest.length} records</span>
+              </div>
+              <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+                {rest.map((founder) => (
+                  <FounderCard key={founder.id} founder={founder} />
+                ))}
+              </div>
             </div>
           </section>
         </div>

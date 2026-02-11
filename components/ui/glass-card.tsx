@@ -1,10 +1,10 @@
 "use client";
 
 import * as React from "react";
-import { motion } from "framer-motion";
+import { motion, type HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-type GlassCardProps = React.ComponentPropsWithoutRef<"div">;
+type GlassCardProps = HTMLMotionProps<"div">;
 
 export function GlassCard({ className, children, ...props }: GlassCardProps) {
   return (

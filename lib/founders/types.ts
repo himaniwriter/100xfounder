@@ -10,6 +10,7 @@ export type FounderDirectoryItem = {
   productSummary: string;
   fundingInfo: string | null;
   sourceUrl: string;
+  ycProfileUrl: string | null;
   verified: boolean;
   avatarUrl: string | null;
 };
@@ -24,6 +25,7 @@ export type FounderSyncInput = {
   productSummary: string;
   fundingInfo?: string | null;
   sourceUrl?: string;
+  ycProfileUrl?: string | null;
   verified?: boolean;
   avatarUrl?: string | null;
   slug?: string;
