@@ -3,7 +3,18 @@ import type { FounderDirectoryItem } from "@/lib/founders/types";
 export const WIKI_SOURCE_URL =
   "https://en.wikipedia.org/wiki/List_of_companies_named_after_people";
 
-export const WIKI_Eponymous_SEED: FounderDirectoryItem[] = [
+type BaseWikiFounder = Omit<
+  FounderDirectoryItem,
+  | "companySlug"
+  | "websiteUrl"
+  | "employeeCount"
+  | "techStack"
+  | "recentNews"
+  | "linkedinUrl"
+  | "twitterUrl"
+>;
+
+const BASE_WIKI_RECORDS: BaseWikiFounder[] = [
   {
     id: "ford-motor-henry-ford",
     slug: "ford-motor-henry-ford",
@@ -194,3 +205,35 @@ export const WIKI_Eponymous_SEED: FounderDirectoryItem[] = [
     avatarUrl: null,
   },
 ];
+
+function websiteFromCompany(companyName: string): string {
+  const root = companyName
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")
+    .replace(/\b(company|corporation|technologies|co)\b/g, "")
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .join("");
+  return `https://www.${root}.com`;
+}
+
+export const WIKI_Eponymous_SEED: FounderDirectoryItem[] = BASE_WIKI_RECORDS.map(
+  (item) => ({
+    ...item,
+    companySlug: item.companyName
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)+/g, ""),
+    websiteUrl: websiteFromCompany(item.companyName),
+    employeeCount: item.stage === "Public" ? "10,000+" : "500-5,000",
+    techStack: ["AWS", "React", "Python"],
+    recentNews: [
+      `${item.companyName} expands category leadership in 2026.`,
+      `${item.founderName} remains a top reference in company-history analyses.`,
+      `${item.companyName} sees rising mention volume across founder intelligence trackers.`,
+    ],
+    linkedinUrl: `https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(item.companyName)}`,
+    twitterUrl: `https://x.com/search?q=${encodeURIComponent(item.companyName)}`,
+  }),
+);

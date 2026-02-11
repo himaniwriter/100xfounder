@@ -150,6 +150,12 @@ model FounderDirectoryEntry {
   fundingInfo    String?
   sourceUrl      String?
   ycProfileUrl   String?
+  websiteUrl     String?
+  employeeCount  String?
+  techStack      String[]
+  recentNews     String[]
+  linkedinUrl    String?
+  twitterUrl     String?
   verified       Boolean  @default(true)
   avatarUrl      String?
   claimedByUserId String? @db.Uuid

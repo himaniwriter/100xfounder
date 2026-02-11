@@ -1,6 +1,7 @@
 export type FounderDirectoryItem = {
   id: string;
   slug: string;
+  companySlug: string;
   founderName: string;
   companyName: string;
   foundedYear: number | null;
@@ -11,6 +12,12 @@ export type FounderDirectoryItem = {
   fundingInfo: string | null;
   sourceUrl: string;
   ycProfileUrl: string | null;
+  websiteUrl: string | null;
+  employeeCount: string | null;
+  techStack: string[];
+  recentNews: string[];
+  linkedinUrl: string | null;
+  twitterUrl: string | null;
   verified: boolean;
   avatarUrl: string | null;
 };
@@ -26,6 +33,12 @@ export type FounderSyncInput = {
   fundingInfo?: string | null;
   sourceUrl?: string;
   ycProfileUrl?: string | null;
+  websiteUrl?: string | null;
+  employeeCount?: string | null;
+  techStack?: string[] | null;
+  recentNews?: string[] | null;
+  linkedinUrl?: string | null;
+  twitterUrl?: string | null;
   verified?: boolean;
   avatarUrl?: string | null;
   slug?: string;

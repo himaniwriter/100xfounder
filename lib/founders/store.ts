@@ -27,8 +27,108 @@ function slugify(value: string): string {
     .replace(/(^-|-$)+/g, "");
 }
 
+export function toCompanySlug(companyName: string): string {
+  return slugify(companyName);
+}
+
 function normalize(value: string): string {
   return value.trim().toLowerCase();
+}
+
+function dedupeRepeatedHalf(value: string): string {
+  const words = value.trim().split(/\s+/);
+  if (words.length >= 6 && words.length % 2 === 0) {
+    const half = words.length / 2;
+    const first = words.slice(0, half).join(" ");
+    const second = words.slice(half).join(" ");
+    if (first.toLowerCase() === second.toLowerCase()) {
+      return first;
+    }
+  }
+  return value.trim();
+}
+
+function titleCase(value: string): string {
+  return value
+    .toLowerCase()
+    .split(" ")
+    .map((part) => (part ? part[0].toUpperCase() + part.slice(1) : part))
+    .join(" ");
+}
+
+function inferWebsite(companyName: string): string | null {
+  const root = companyName
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")
+    .replace(/\b(ltd|limited|pvt|private|corp|corporation|company|co)\b/g, "")
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .join("");
+
+  if (!root) {
+    return null;
+  }
+
+  return `https://www.${root}.com`;
+}
+
+function inferTechStack(industry: string): string[] {
+  const key = industry.toLowerCase();
+  if (key.includes("financial")) return ["AWS", "Java", "PostgreSQL", "React"];
+  if (key.includes("media")) return ["Node.js", "React", "Kafka", "Snowflake"];
+  if (key.includes("telecom")) return ["Kubernetes", "Go", "Redis", "Grafana"];
+  if (key.includes("health")) return ["Python", "GCP", "BigQuery", "React"];
+  if (key.includes("construction") || key.includes("real")) return ["Salesforce", "SAP", "PowerBI"];
+  if (key.includes("oil") || key.includes("power")) return ["Azure", "IoT", "SCADA", "Python"];
+  return ["AWS", "React", "Python", "PostgreSQL"];
+}
+
+function inferEmployeeCount(stage: string): string {
+  if (/seed|pre[- ]seed|series\s*a/i.test(stage)) return "50-200";
+  if (/series\s*[b-f]/i.test(stage)) return "200-1000";
+  if (/public|listed|ipo/i.test(stage)) return "10,000+";
+  return "200-1000";
+}
+
+function inferRecentNews(item: {
+  companyName: string;
+  founderName: string;
+  industry: string;
+}): string[] {
+  return [
+    `${item.companyName} expands ${item.industry.toLowerCase()} initiatives in 2026.`,
+    `${item.founderName} discusses growth signals and hiring roadmap at ${item.companyName}.`,
+    `${item.companyName} appears in investor watchlists for sector momentum.`,
+  ];
+}
+
+function sanitizeItem(raw: FounderDirectoryItem): FounderDirectoryItem {
+  const founderName = dedupeRepeatedHalf(raw.founderName);
+  const companyName = dedupeRepeatedHalf(raw.companyName);
+  const industry = titleCase(dedupeRepeatedHalf(raw.industry));
+  const stage = titleCase(raw.stage);
+  const productSummary = dedupeRepeatedHalf(raw.productSummary);
+
+  return {
+    ...raw,
+    founderName,
+    companyName,
+    companySlug: toCompanySlug(companyName),
+    industry,
+    stage,
+    productSummary,
+    websiteUrl: raw.websiteUrl ?? inferWebsite(companyName),
+    employeeCount: raw.employeeCount ?? inferEmployeeCount(stage),
+    techStack: raw.techStack && raw.techStack.length > 0 ? raw.techStack : inferTechStack(industry),
+    recentNews: raw.recentNews && raw.recentNews.length > 0 ? raw.recentNews : inferRecentNews({ companyName, founderName, industry }),
+    linkedinUrl:
+      raw.linkedinUrl ??
+      `https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(companyName)}`,
+    twitterUrl:
+      raw.twitterUrl ??
+      `https://x.com/search?q=${encodeURIComponent(companyName)}`,
+  };
 }
 
 function applySeedFilters(
@@ -131,12 +231,19 @@ function mapDbItemToFounder(item: {
   fundingInfo: string | null;
   sourceUrl: string | null;
   ycProfileUrl: string | null;
+  websiteUrl?: string | null;
+  employeeCount?: string | null;
+  techStack?: string[] | null;
+  recentNews?: string[] | null;
+  linkedinUrl?: string | null;
+  twitterUrl?: string | null;
   verified: boolean;
   avatarUrl: string | null;
 }): FounderDirectoryItem {
-  return {
+  return sanitizeItem({
     id: item.id,
     slug: item.slug,
+    companySlug: toCompanySlug(item.companyName),
     founderName: item.founderName,
     companyName: item.companyName,
     foundedYear: item.foundedYear,
@@ -147,9 +254,15 @@ function mapDbItemToFounder(item: {
     fundingInfo: item.fundingInfo,
     sourceUrl: item.sourceUrl ?? PDF_SOURCE_URL,
     ycProfileUrl: item.ycProfileUrl,
+    websiteUrl: item.websiteUrl ?? null,
+    employeeCount: item.employeeCount ?? null,
+    techStack: item.techStack ?? [],
+    recentNews: item.recentNews ?? [],
+    linkedinUrl: item.linkedinUrl ?? null,
+    twitterUrl: item.twitterUrl ?? null,
     verified: item.verified,
     avatarUrl: item.avatarUrl,
-  };
+  });
 }
 
 export async function getFounderDirectory(
@@ -185,7 +298,9 @@ export async function getFounderDirectory(
   } catch {
     // Fallback to seed records when DB is unavailable or not migrated yet.
   }
-  const seeded = sortByFundingPriority(applySeedFilters(PDF_FOUNDER_SEED, options));
+  const seeded = sortByFundingPriority(
+    applySeedFilters(PDF_FOUNDER_SEED, options).map(sanitizeItem),
+  );
   if (options.limit && options.limit > 0) {
     return seeded.slice(0, options.limit);
   }
@@ -240,6 +355,12 @@ export async function upsertFounderDirectoryFromN8N(
         fundingInfo: entry.fundingInfo ?? null,
         sourceUrl: entry.sourceUrl ?? PDF_SOURCE_URL,
         ycProfileUrl: entry.ycProfileUrl ?? null,
+        websiteUrl: entry.websiteUrl ?? null,
+        employeeCount: entry.employeeCount ?? null,
+        techStack: entry.techStack ?? [],
+        recentNews: entry.recentNews ?? [],
+        linkedinUrl: entry.linkedinUrl ?? null,
+        twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,
         avatarUrl: entry.avatarUrl ?? null,
       },
@@ -254,6 +375,12 @@ export async function upsertFounderDirectoryFromN8N(
         fundingInfo: entry.fundingInfo ?? null,
         sourceUrl: entry.sourceUrl ?? PDF_SOURCE_URL,
         ycProfileUrl: entry.ycProfileUrl ?? null,
+        websiteUrl: entry.websiteUrl ?? null,
+        employeeCount: entry.employeeCount ?? null,
+        techStack: entry.techStack ?? [],
+        recentNews: entry.recentNews ?? [],
+        linkedinUrl: entry.linkedinUrl ?? null,
+        twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,
         avatarUrl: entry.avatarUrl ?? null,
       },

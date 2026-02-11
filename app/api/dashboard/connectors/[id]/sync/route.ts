@@ -41,6 +41,20 @@ function normalizeRecords(payload: unknown): FounderSyncInput[] {
       stage: typeof record.stage === "string" ? record.stage : undefined,
       fundingInfo:
         typeof record.fundingInfo === "string" ? record.fundingInfo : undefined,
+      websiteUrl:
+        typeof record.websiteUrl === "string" ? record.websiteUrl : undefined,
+      employeeCount:
+        typeof record.employeeCount === "string" ? record.employeeCount : undefined,
+      techStack: Array.isArray(record.techStack)
+        ? record.techStack.filter((item): item is string => typeof item === "string")
+        : undefined,
+      recentNews: Array.isArray(record.recentNews)
+        ? record.recentNews.filter((item): item is string => typeof item === "string")
+        : undefined,
+      linkedinUrl:
+        typeof record.linkedinUrl === "string" ? record.linkedinUrl : undefined,
+      twitterUrl:
+        typeof record.twitterUrl === "string" ? record.twitterUrl : undefined,
       headquarters:
         typeof record.headquarters === "string" ? record.headquarters : undefined,
       sourceUrl: typeof record.sourceUrl === "string" ? record.sourceUrl : undefined,
