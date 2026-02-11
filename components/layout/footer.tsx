@@ -4,33 +4,33 @@ const footerColumns = [
   {
     title: "Platform",
     links: [
-      { label: "Founder Directory", href: "#" },
-      { label: "Startup Explorer", href: "#" },
-      { label: "Insights", href: "#" },
+      { label: "Founder Directory", href: "/founders" },
+      { label: "Startup Explorer", href: "/startups" },
+      { label: "Insights", href: "/signals" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "About", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Contact", href: "#" },
+      { label: "About", href: "/about" },
+      { label: "Careers", href: "/careers" },
+      { label: "Contact", href: "/contact" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { label: "Blog", href: "#" },
-      { label: "Help Center", href: "#" },
-      { label: "Changelog", href: "#" },
+      { label: "Blog", href: "/blog" },
+      { label: "Help Center", href: "/help" },
+      { label: "Changelog", href: "/changelog" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { label: "Privacy", href: "#" },
-      { label: "Terms", href: "#" },
-      { label: "Cookies", href: "#" },
+      { label: "Privacy", href: "/privacy" },
+      { label: "Terms", href: "/terms" },
+      { label: "Cookies", href: "/cookies" },
     ],
   },
 ];
@@ -60,7 +60,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-6 text-sm text-zinc-500">
-          © {new Date().getFullYear()} FounderBase. All rights reserved.
+          © {new Date().getFullYear()} 100Xfounder. All rights reserved.
         </div>
       </div>
     </footer>

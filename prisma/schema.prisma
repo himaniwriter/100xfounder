@@ -119,3 +119,27 @@ model Endorsement {
   @@index([createdAt])
   @@map("endorsements")
 }
+
+model FounderDirectoryEntry {
+  id             String   @id @default(cuid())
+  slug           String   @unique
+  founderName    String
+  companyName    String
+  foundedYear    Int?
+  headquarters   String?
+  industry       String
+  stage          String
+  productSummary String
+  fundingInfo    String?
+  sourceUrl      String?
+  verified       Boolean  @default(true)
+  avatarUrl      String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([companyName])
+  @@index([industry])
+  @@index([headquarters])
+  @@index([stage])
+  @@map("founder_directory_entries")
+}

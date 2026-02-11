@@ -4,10 +4,10 @@ import Link from "next/link";
 import { Search } from "lucide-react";
 
 const navLinks = [
-  { label: "Directory", href: "#" },
-  { label: "Startups", href: "#" },
-  { label: "Signals", href: "#" },
-  { label: "Pricing", href: "#" },
+  { label: "Directory", href: "/founders" },
+  { label: "Startups", href: "/startups" },
+  { label: "Signals", href: "/signals" },
+  { label: "Pricing", href: "/pricing" },
 ];
 
 export function Navbar() {
@@ -15,7 +15,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="text-xl font-bold tracking-tighter text-white">
-          FounderBase
+          100Xfounder
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
@@ -31,12 +31,12 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <button
-            type="button"
+          <Link
+            href="/join"
             className="inline-flex h-9 items-center rounded-md border border-transparent bg-[#6366f1] px-4 text-sm font-medium text-white transition-colors hover:bg-[#5558ea]"
           >
             Join
-          </button>
+          </Link>
           <button
             type="button"
             aria-label="Search"
