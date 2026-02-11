@@ -1,0 +1,121 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum FounderStatus {
+  PENDING
+  VERIFIED
+  REJECTED
+}
+
+enum FundingStage {
+  BOOTSTRAPPED
+  PRE_SEED
+  SEED
+  SERIES_A
+  SERIES_B
+  SERIES_C
+  SERIES_D
+  SERIES_E
+  SERIES_F
+  IPO
+  ACQUIRED
+}
+
+model User {
+  id        String   @id @default(uuid()) @db.Uuid
+  email     String   @unique
+  name      String?
+  avatar    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  founderProfile    FounderProfile?
+  endorsementsGiven Endorsement[]  @relation("EndorsementsGiven")
+
+  @@index([createdAt])
+  @@map("users")
+}
+
+model FounderProfile {
+  id          String       @id @default(uuid()) @db.Uuid
+  userId      String       @unique @db.Uuid
+  bio         String?
+  location    String?
+  linkedinUrl String?
+  twitterUrl  String?
+  website     String?
+  slug        String       @unique
+  status      FounderStatus @default(PENDING)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  user         User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  startups     FounderStartup[]
+  endorsements Endorsement[]    @relation("FounderEndorsements")
+
+  @@index([status])
+  @@index([location])
+  @@index([status, createdAt])
+  @@map("founder_profiles")
+}
+
+model Startup {
+  id           String       @id @default(uuid()) @db.Uuid
+  name         String
+  oneLiner     String?
+  website      String?
+  fundingStage FundingStage @default(BOOTSTRAPPED)
+  totalRaised  Int          @default(0)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  founders FounderStartup[]
+
+  @@index([name])
+  @@index([fundingStage])
+  @@index([totalRaised])
+  @@index([fundingStage, totalRaised])
+  @@map("startups")
+}
+
+model FounderStartup {
+  founderId String   @db.Uuid
+  startupId String   @db.Uuid
+  roleTitle String?
+  isPrimary Boolean  @default(false)
+  joinedAt  DateTime @default(now())
+
+  founder FounderProfile @relation(fields: [founderId], references: [id], onDelete: Cascade)
+  startup Startup        @relation(fields: [startupId], references: [id], onDelete: Cascade)
+
+  @@id([founderId, startupId])
+  @@index([startupId])
+  @@index([founderId, isPrimary])
+  @@map("founder_startups")
+}
+
+model Endorsement {
+  id         String   @id @default(uuid()) @db.Uuid
+  endorserId String   @db.Uuid
+  founderId  String   @db.Uuid
+  skill      String
+  note       String?
+  createdAt  DateTime @default(now())
+
+  endorser User          @relation("EndorsementsGiven", fields: [endorserId], references: [id], onDelete: Cascade)
+  founder  FounderProfile @relation("FounderEndorsements", fields: [founderId], references: [id], onDelete: Cascade)
+
+  @@unique([endorserId, founderId, skill])
+  @@index([founderId])
+  @@index([endorserId])
+  @@index([skill])
+  @@index([founderId, skill])
+  @@index([createdAt])
+  @@map("endorsements")
+}
