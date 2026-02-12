@@ -40,7 +40,7 @@ type PillGroupProps = {
 
 function PillGroup({ title, values, selected, onToggle }: PillGroupProps) {
   return (
-    <details open className="group rounded-xl border border-white/10 bg-white/[0.02]">
+    <details open className="group rounded-xl border border-white/15 bg-white/[0.02]">
       <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2">
         <span className="text-xs font-medium uppercase tracking-wide text-zinc-300">
           {title}
@@ -48,7 +48,7 @@ function PillGroup({ title, values, selected, onToggle }: PillGroupProps) {
         <ChevronDown className="h-4 w-4 text-zinc-500 transition-transform group-open:rotate-180" />
       </summary>
 
-      <div className="flex flex-wrap gap-2 border-t border-white/10 p-3">
+      <div className="flex flex-wrap gap-2 border-t border-white/15 p-3">
         {values.length > 0 ? (
           values.map((value) => {
             const active = selected.includes(value);

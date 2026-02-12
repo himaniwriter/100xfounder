@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NewsCoverImage } from "@/components/ui/news-cover-image";
 import { cn } from "@/lib/utils";
 import type { BlogPost } from "@/lib/blog/types";
 
@@ -17,11 +18,12 @@ export function BlogCard({ post, className }: BlogCardProps) {
       )}
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-      <img
-        src={post.thumbnail}
-        alt={post.title}
-        loading="lazy"
-        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      <NewsCoverImage
+        title={post.title}
+        imageUrl={post.thumbnail}
+        uniqueId={post.slug}
+        className="h-full w-full"
+        imageClassName="transition-transform duration-500 group-hover:scale-105"
       />
 
       <div className="absolute inset-x-0 bottom-0 p-4">

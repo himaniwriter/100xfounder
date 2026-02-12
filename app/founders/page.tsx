@@ -77,6 +77,7 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
   const shouldUseSpotlight = recent.length > 0 && recent.length < 3;
   const spotlightRecent =
     activeTab === "all" && shouldUseSpotlight ? recent.slice(0, 1) : recent;
+  const allRecentIdSet = new Set(recent.map((item) => item.id));
   const recentIdSet = new Set(spotlightRecent.map((item) => item.id));
   const ycFounders = founders.filter((item) => Boolean(item.ycProfileUrl));
   const hiringNowFounders = founders.filter(isHiringNow);
@@ -99,7 +100,7 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
     count: number;
   }> = [
     { id: "all", label: "All Founders", count: founders.length },
-    { id: "trending", label: "Trending", count: spotlightRecent.length },
+    { id: "trending", label: "Trending", count: recent.length },
     { id: "hiring", label: "Hiring Now", count: hiringNowFounders.length },
     { id: "yc", label: "YC Alumni", count: ycFounders.length },
   ];
@@ -157,15 +158,15 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
 
             <section>
               <div className="mb-6 overflow-x-auto">
-                <div className="inline-flex min-w-full gap-2 rounded-2xl border border-white/10 bg-white/[0.03] p-2 backdrop-blur-[20px]">
+              <div className="inline-flex min-w-full gap-2 rounded-2xl border border-white/15 bg-white/[0.03] p-2 backdrop-blur-[40px]">
                   {tabItems.map((tab) => (
                     <Link
                       key={tab.id}
                       href={tabHref(tab.id)}
                       className={
                         activeTab === tab.id
-                          ? "inline-flex items-center gap-2 rounded-xl border border-indigo-400/50 bg-indigo-500/15 px-3 py-2 text-sm text-indigo-200 shadow-[0_0_14px_rgba(99,102,241,0.3)]"
-                          : "inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
+                        ? "inline-flex items-center gap-2 rounded-xl border border-indigo-400/50 bg-indigo-500/15 px-3 py-2 text-sm text-indigo-200 shadow-[0_0_14px_rgba(99,102,241,0.3)]"
+                        : "inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 py-2 text-sm text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
                       }
                     >
                       {tab.label}
@@ -218,16 +219,16 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
                   ) : (
                     <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
                       {directoryItems.map((founder) => (
-                        <FounderCard
-                          key={founder.id}
-                          founder={founder}
-                          isTrending={recentIdSet.has(founder.id)}
-                        />
+                      <FounderCard
+                        key={founder.id}
+                        founder={founder}
+                        isTrending={allRecentIdSet.has(founder.id)}
+                      />
                       ))}
                     </div>
                   )
                 ) : (
-                  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8 text-center backdrop-blur-[20px]">
+                  <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-8 text-center backdrop-blur-[40px]">
                     <p className="text-sm text-zinc-400">
                       No profiles match the selected filters.
                     </p>

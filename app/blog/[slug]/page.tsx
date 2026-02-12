@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { FounderCallout } from "@/components/blog/founder-callout";
+import { NewsCoverImage } from "@/components/ui/news-cover-image";
 import { extractHeadings, getBlogPostBySlug } from "@/lib/blog/store";
 
 type BlogPostPageProps = {
@@ -150,10 +151,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </header>
 
-          <img
-            src={post.thumbnail}
-            alt={post.title}
-            className="h-[330px] w-full rounded-2xl border border-white/10 object-cover"
+          <NewsCoverImage
+            title={post.title}
+            imageUrl={post.thumbnail}
+            uniqueId={post.slug}
+            className="h-[330px] w-full rounded-2xl border border-white/10"
           />
 
           <div className="space-y-5">{renderContent(post.content)}</div>

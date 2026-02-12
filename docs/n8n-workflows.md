@@ -2,6 +2,9 @@
 
 We are using N8N to handle dynamic workflows from the frontend and API routes.
 
+Related blueprint:
+- `/Users/lovishmadaan/Documents/New project/docs/funding-news-pipeline.md`
+
 ## Workflow A: Smart Newsletter (Automated)
 - Trigger: `POST https://n8n.yourdomain.com/webhook/subscribe`
 - Payload:
@@ -49,6 +52,36 @@ Frontend/API mapping:
 - Claim endpoint: `/api/founders/claim` (already forwards to webhook).
 - Env var: `N8N_CLAIM_PROFILE_WEBHOOK_URL`.
 
+## Workflow D: Company Content Expansion (SEO)
+- Trigger: `POST https://n8n.yourdomain.com/webhook/company-content`
+- Payload:
+```json
+{
+  "type": "company_profile_expansion",
+  "prompt": "I have a startup named ...",
+  "company": {
+    "name": "Odeko",
+    "oneLiner": "Operations software that helps cafes grow.",
+    "industry": "Supply Chain",
+    "stage": "Series B",
+    "location": "New York, NY",
+    "tags": ["B2B", "Supply Chain"]
+  }
+}
+```
+- N8N logic:
+1. Pass `prompt` + company context to LLM node.
+2. Enforce JSON output with keys:
+   - `problem`
+   - `solution`
+   - `why_growing` (or `whyGrowing`)
+   - `culture`
+3. Return JSON body directly to the app.
+
+Frontend/API mapping:
+- Server-side company page generation: `/company/[slug]`.
+- Env var: `N8N_COMPANY_CONTENT_WEBHOOK_URL`.
+
 ## Shared Security
-- Use `x-secret-key` header with `N8N_SYNC_SECRET`.
+- Use `x-secret-key` header with shared secret (`N8N_SECRET_KEY` for app webhooks, `N8N_SYNC_SECRET` for sync endpoint).
 - Keep all N8N webhook URLs server-side only.

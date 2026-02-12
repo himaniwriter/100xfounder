@@ -3,12 +3,14 @@ import {
   Coins,
   Flame,
   Linkedin,
+  Lock,
   MapPin,
   Share2,
   Users2,
 } from "lucide-react";
 import Link from "next/link";
 import { GlassCard } from "@/components/ui/glass-card";
+import { CompanyLogo } from "@/components/ui/company-logo";
 import { cn } from "@/lib/utils";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
 
@@ -42,20 +44,7 @@ function meshGradient(seed: string) {
   };
 }
 
-function readDomain(value: string | null): string | null {
-  if (!value) return null;
-  try {
-    return new URL(value).hostname;
-  } catch {
-    return null;
-  }
-}
-
 export function FounderCard({ founder, isTrending = false, featured = false }: FounderCardProps) {
-  const domain = readDomain(founder.websiteUrl);
-  const companyLogoUrl = domain
-    ? `https://www.google.com/s2/favicons?domain=${domain}&sz=128`
-    : null;
   const profileUrl = `/founders/${founder.slug}`;
   const linkedInUrl =
     founder.linkedinUrl ??
@@ -81,18 +70,11 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
       >
         <div className="flex min-w-0 items-start gap-4">
           <div className="relative h-16 w-16 shrink-0">
-            <div className="h-14 w-14 overflow-hidden rounded-xl border border-white/20 bg-black/40">
-              {companyLogoUrl ? (
-                <img
-                  src={companyLogoUrl}
-                  alt={`${founder.companyName} logo`}
-                  loading="lazy"
-                  className="h-full w-full object-cover"
-                />
-              ) : (
-                <div className="h-full w-full" style={meshGradient(`${founder.companyName}-logo`)} />
-              )}
-            </div>
+            <CompanyLogo
+              companyName={founder.companyName}
+              websiteUrl={founder.websiteUrl}
+              className="h-14 w-14 rounded-xl border border-white/20"
+            />
             <div className="absolute -bottom-1 -right-2 h-9 w-9 overflow-hidden rounded-full border border-white/25 bg-black/40 shadow-[0_0_0_2px_rgba(5,5,5,0.9)]">
               {founder.avatarUrl ? (
                 <img
@@ -153,8 +135,9 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
         <div className={cn("flex items-center gap-2", featured ? "md:shrink-0" : "")}>
           <Link
             href="/pricing"
-            className="inline-flex h-10 items-center rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 px-4 text-sm font-medium text-white transition-all hover:brightness-110"
+            className="enterprise-unlock-btn"
           >
+            <Lock className="h-4 w-4" />
             Unlock Contact
           </Link>
 
@@ -163,14 +146,14 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
             target="_blank"
             rel="noreferrer"
             aria-label={`Open ${founder.founderName} on LinkedIn`}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
+            className="enterprise-secondary-icon-btn"
           >
             <Linkedin className="h-4 w-4" />
           </a>
           <Link
             href={`/signals?founder=${encodeURIComponent(founder.founderName)}`}
             aria-label={`Track ${founder.founderName}`}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
+            className="enterprise-secondary-icon-btn"
           >
             <Bell className="h-4 w-4" />
           </Link>
@@ -179,7 +162,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
             target="_blank"
             rel="noreferrer"
             aria-label={`Share ${founder.founderName} profile`}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
+            className="enterprise-secondary-icon-btn"
           >
             <Share2 className="h-4 w-4" />
           </a>

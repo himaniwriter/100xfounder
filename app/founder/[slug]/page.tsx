@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { ProfileTabs } from "@/components/founders/profile-tabs";
 import { getFounderDirectory } from "@/lib/founders/store";
 
 type FounderPageProps = { params: { slug: string } };
@@ -25,12 +26,16 @@ export async function generateMetadata({ params }: FounderPageProps): Promise<Me
 export default async function FounderPage({ params }: FounderPageProps) {
   const founder = await getFounder(params.slug);
   if (!founder) notFound();
+  const all = await getFounderDirectory();
+  const similar = all
+    .filter((item) => item.slug !== founder.slug && item.industry === founder.industry)
+    .slice(0, 4);
 
   return (
     <main className="min-h-screen bg-[#050505] text-[#EDEDED]">
       <Navbar />
       <section className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md">
+        <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-8 backdrop-blur-[40px]">
           <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
             {founder.founderName}
           </h1>
@@ -41,6 +46,8 @@ export default async function FounderPage({ params }: FounderPageProps) {
             <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">{founder.industry}</span>
             <span className="rounded-full border border-[#6366f1]/30 bg-[#6366f1]/10 px-2.5 py-1 text-xs text-indigo-300">{founder.stage}</span>
           </div>
+
+          <ProfileTabs founder={founder} similar={similar} />
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link

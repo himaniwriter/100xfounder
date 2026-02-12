@@ -26,6 +26,7 @@ npm run dev
 - `N8N_SYNC_SECRET`
 - `N8N_WEBHOOK_URL`
 - `N8N_SECRET_KEY`
+- `N8N_COMPANY_CONTENT_WEBHOOK_URL` (optional, for AI-expanded company profile content)
 - `N8N_NEWSLETTER_WEBHOOK_URL`
 - `N8N_UNLOCK_CONTACT_WEBHOOK_URL`
 - `N8N_CLAIM_PROFILE_WEBHOOK_URL`
@@ -83,5 +84,7 @@ It accepts either:
 - The uploaded PDF is a group-company register. Records are mapped into directory profiles using group/owner/company fields where available.
 - YC founder links are currently generated as query links to:
   - `https://www.ycombinator.com/founders?query=<name>`
+- Company content expansion uses the 4-point prompt strategy and can call n8n webhook `N8N_COMPANY_CONTENT_WEBHOOK_URL`.
+  - Expected JSON response keys: `problem`, `solution`, `why_growing` (or `whyGrowing`), `culture`.
 - N8N architecture guide:
   - `/Users/lovishmadaan/Documents/New project/docs/n8n-workflows.md`

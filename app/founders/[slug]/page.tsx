@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { ProfileTabs } from "@/components/founders/profile-tabs";
 import { getFounderDirectory } from "@/lib/founders/store";
 
 type FounderProfilePageProps = {
@@ -18,12 +19,16 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
     notFound();
   }
 
+  const similar = founders
+    .filter((item) => item.slug !== founder.slug && item.industry === founder.industry)
+    .slice(0, 4);
+
   return (
     <main className="min-h-screen bg-[#050505] text-[#EDEDED]">
       <Navbar />
 
       <section className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md">
+        <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-8 backdrop-blur-[40px]">
           <div className="flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-300">
               Verified Profile
@@ -51,24 +56,7 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
             </p>
           ) : null}
 
-          <dl className="mt-8 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-lg border border-white/10 bg-black/30 p-4">
-              <dt className="text-xs uppercase tracking-[0.12em] text-zinc-500">Headquarters</dt>
-              <dd className="mt-1 text-sm text-zinc-200">{founder.headquarters ?? "Not available"}</dd>
-            </div>
-            <div className="rounded-lg border border-white/10 bg-black/30 p-4">
-              <dt className="text-xs uppercase tracking-[0.12em] text-zinc-500">Founded Year</dt>
-              <dd className="mt-1 text-sm text-zinc-200">{founder.foundedYear ?? "Not available"}</dd>
-            </div>
-            <div className="rounded-lg border border-white/10 bg-black/30 p-4">
-              <dt className="text-xs uppercase tracking-[0.12em] text-zinc-500">Source</dt>
-              <dd className="mt-1 text-sm text-zinc-200">{founder.sourceUrl}</dd>
-            </div>
-            <div className="rounded-lg border border-white/10 bg-black/30 p-4">
-              <dt className="text-xs uppercase tracking-[0.12em] text-zinc-500">Directory Slug</dt>
-              <dd className="mt-1 text-sm text-zinc-200">{founder.slug}</dd>
-            </div>
-          </dl>
+          <ProfileTabs founder={founder} similar={similar} />
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
