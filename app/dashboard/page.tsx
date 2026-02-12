@@ -85,6 +85,14 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="flex items-center gap-2">
+            {session.role === "ADMIN" ? (
+              <Link
+                href="/admin"
+                className="rounded-md border border-indigo-400/35 bg-indigo-500/10 px-3 py-1.5 text-xs text-indigo-200 transition-colors hover:bg-indigo-500/20"
+              >
+                Admin Console
+              </Link>
+            ) : null}
             <Link
               href="/founders"
               className="rounded-md border border-white/10 px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:text-white"

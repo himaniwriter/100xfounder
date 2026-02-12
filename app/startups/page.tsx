@@ -9,22 +9,19 @@ const cityCards = [
   {
     city: "Delhi",
     description: "AI, fintech, and enterprise distribution momentum.",
-    image:
-      "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/cities/delhi.svg",
     href: "/founders?location=Delhi",
   },
   {
     city: "Bangalore",
     description: "SaaS operators, deep tech founders, and GTM leaders.",
-    image:
-      "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/cities/bangalore.svg",
     href: "/founders?location=Bangalore",
   },
   {
     city: "Mumbai",
     description: "Consumer scale, commerce, and financial infrastructure.",
-    image:
-      "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/cities/mumbai.svg",
     href: "/founders?location=Mumbai",
   },
 ];

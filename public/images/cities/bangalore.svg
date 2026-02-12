@@ -1,0 +1,44 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bangalore tech district skyline">
+  <defs>
+    <linearGradient id="blr-bg" x1="0" y1="0" x2="1400" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07101B"/>
+      <stop offset="0.5" stop-color="#123047"/>
+      <stop offset="1" stop-color="#081322"/>
+    </linearGradient>
+    <radialGradient id="blr-orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 170) rotate(52) scale(260 310)">
+      <stop stop-color="#22D3EE" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#blr-bg)"/>
+  <rect width="1400" height="900" fill="url(#blr-orb)"/>
+
+  <g fill="#0E1B2B">
+    <rect x="0" y="575" width="1400" height="325"/>
+    <rect x="120" y="360" width="160" height="300"/>
+    <rect x="320" y="430" width="120" height="230"/>
+    <rect x="480" y="315" width="190" height="345"/>
+    <rect x="710" y="395" width="130" height="265"/>
+    <rect x="880" y="340" width="170" height="320"/>
+    <rect x="1080" y="410" width="180" height="250"/>
+  </g>
+
+  <g opacity="0.55" fill="#67E8F9">
+    <rect x="150" y="392" width="10" height="10" rx="2"/>
+    <rect x="180" y="392" width="10" height="10" rx="2"/>
+    <rect x="520" y="352" width="10" height="10" rx="2"/>
+    <rect x="550" y="352" width="10" height="10" rx="2"/>
+    <rect x="910" y="374" width="10" height="10" rx="2"/>
+    <rect x="940" y="374" width="10" height="10" rx="2"/>
+    <rect x="1120" y="438" width="10" height="10" rx="2"/>
+    <rect x="1150" y="438" width="10" height="10" rx="2"/>
+  </g>
+
+  <path d="M0 708C145 682 252 665 420 680C598 698 706 744 901 738C1087 733 1203 669 1400 650V900H0V708Z" fill="#0A1423" fill-opacity="0.9"/>
+
+  <g fill="#E2E8F0" opacity="0.85">
+    <rect x="86" y="86" width="330" height="44" rx="12"/>
+    <rect x="86" y="146" width="224" height="30" rx="9" opacity="0.74"/>
+  </g>
+</svg>

@@ -32,6 +32,7 @@ const footerColumns = [
       { label: "Signals", href: "/signals" },
       { label: "Membership Plans", href: "/pricing" },
       { label: "Blog", href: "/blog" },
+      { label: "Sitemap", href: "/sitemap" },
       { label: "Privacy", href: "/privacy" },
       { label: "Terms", href: "/terms" },
     ],

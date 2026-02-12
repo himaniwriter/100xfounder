@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { CompanyLogo } from "@/components/ui/company-logo";
 
 const tickerItems = [
   "Zoho reports $1B Revenue",
@@ -13,10 +14,34 @@ const tickerItems = [
 ];
 
 const fundingFeed = [
-  { time: "2 hours ago", company: "Zepto", stage: "Raised Series B", amount: "$50M" },
-  { time: "5 hours ago", company: "Lentra", stage: "Raised Series C", amount: "$120M" },
-  { time: "8 hours ago", company: "SaaSBoom", stage: "Raised Seed", amount: "$8M" },
-  { time: "1 day ago", company: "Orbit AI", stage: "Raised Series A", amount: "$24M" },
+  {
+    time: "2 hours ago",
+    company: "Zepto",
+    domain: "zeptonow.com",
+    stage: "Raised Series B",
+    amount: "$50M",
+  },
+  {
+    time: "5 hours ago",
+    company: "Lentra",
+    domain: "lentra.ai",
+    stage: "Raised Series C",
+    amount: "$120M",
+  },
+  {
+    time: "8 hours ago",
+    company: "SaaSBoom",
+    domain: "saasboom.com",
+    stage: "Raised Seed",
+    amount: "$8M",
+  },
+  {
+    time: "1 day ago",
+    company: "Orbit AI",
+    domain: "orbit.ai",
+    stage: "Raised Series A",
+    amount: "$24M",
+  },
 ];
 
 const hiringHeatmap = [
@@ -81,7 +106,11 @@ export default function SignalsPage() {
                 >
                   <p className="text-xs text-zinc-500">{item.time}</p>
                   <div className="flex items-center gap-2">
-                    <div className="h-7 w-7 rounded-md border border-white/15 bg-gradient-to-br from-indigo-500/30 to-violet-500/25" />
+                    <CompanyLogo
+                      companyName={item.company}
+                      domain={item.domain}
+                      className="h-7 w-7 rounded-md border border-white/15"
+                    />
                     <p className="text-sm text-zinc-200">
                       <span className="font-medium text-white">{item.company}</span>{" "}
                       {item.stage}

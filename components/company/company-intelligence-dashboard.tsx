@@ -9,6 +9,7 @@ import {
 import type { CompanyContentExpansion } from "@/lib/company/content-expansion";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
 import { CompanyLogo } from "@/components/ui/company-logo";
+import { FounderAvatar } from "@/components/ui/founder-avatar";
 
 type CompanyDashboardProps = {
   primary: FounderDirectoryItem;
@@ -23,29 +24,6 @@ type FounderCard = {
   imageUrl: string | null;
   linkedin: string;
 };
-
-function hashValue(value: string): number {
-  let hash = 0;
-  for (let index = 0; index < value.length; index += 1) {
-    hash = (hash << 5) - hash + value.charCodeAt(index);
-    hash |= 0;
-  }
-  return Math.abs(hash);
-}
-
-function gradientMesh(seed: string) {
-  const palettes = [
-    ["#6366f1", "#8b5cf6", "#111827"],
-    ["#06b6d4", "#6366f1", "#0f172a"],
-    ["#ec4899", "#a855f7", "#111827"],
-    ["#3b82f6", "#8b5cf6", "#1e1b4b"],
-  ];
-  const [first, second, third] = palettes[hashValue(seed) % palettes.length];
-
-  return {
-    backgroundImage: `radial-gradient(circle at 20% 20%, ${first}, transparent 50%), radial-gradient(circle at 75% 30%, ${second}, transparent 52%), linear-gradient(140deg, ${third}, #050505 75%)`,
-  };
-}
 
 function inferTeamSize(value: string | null): string {
   if (!value) {
@@ -392,18 +370,11 @@ export function CompanyIntelligenceDashboard({
                   className="rounded-xl border border-white/15 bg-black/25 p-4 transition-all hover:border-indigo-400/40 hover:shadow-[0_0_14px_rgba(99,102,241,0.25)]"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="h-12 w-12 overflow-hidden rounded-full border border-white/20 bg-black/30">
-                      {founder.imageUrl ? (
-                        <img
-                          src={founder.imageUrl}
-                          alt={founder.name}
-                          loading="lazy"
-                          className="h-full w-full object-cover"
-                        />
-                      ) : (
-                        <div className="h-full w-full" style={gradientMesh(founder.name)} />
-                      )}
-                    </div>
+                    <FounderAvatar
+                      name={founder.name}
+                      imageUrl={founder.imageUrl}
+                      className="h-12 w-12 rounded-full border border-white/20 bg-black/30"
+                    />
                     <div className="min-w-0">
                       <p className="truncate text-sm font-medium text-white">{founder.name}</p>
                       <p className="text-xs text-zinc-400">{founder.role}</p>

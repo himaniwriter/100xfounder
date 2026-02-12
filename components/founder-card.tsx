@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import { GlassCard } from "@/components/ui/glass-card";
 import { CompanyLogo } from "@/components/ui/company-logo";
+import { FounderAvatar } from "@/components/ui/founder-avatar";
 import { cn } from "@/lib/utils";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
 
@@ -18,30 +19,6 @@ type FounderCardProps = {
   isTrending?: boolean;
   featured?: boolean;
 };
-
-const GRADIENT_PALETTE = [
-  ["#6366f1", "#8b5cf6", "#3b82f6"],
-  ["#a855f7", "#6366f1", "#06b6d4"],
-  ["#ec4899", "#8b5cf6", "#6366f1"],
-  ["#22d3ee", "#6366f1", "#a855f7"],
-  ["#f97316", "#eab308", "#8b5cf6"],
-];
-
-function hashValue(value: string): number {
-  let hash = 0;
-  for (let index = 0; index < value.length; index += 1) {
-    hash = (hash << 5) - hash + value.charCodeAt(index);
-    hash |= 0;
-  }
-  return Math.abs(hash);
-}
-
-function meshGradient(seed: string) {
-  const [first, second, third] = GRADIENT_PALETTE[hashValue(seed) % GRADIENT_PALETTE.length];
-  return {
-    backgroundImage: `radial-gradient(circle at 22% 20%, ${first}, transparent 48%), radial-gradient(circle at 78% 28%, ${second}, transparent 50%), linear-gradient(145deg, ${third}, #0a0a0f 75%)`,
-  };
-}
 
 export function FounderCard({ founder, isTrending = false, featured = false }: FounderCardProps) {
   const profileUrl = `/founders/${founder.slug}`;
@@ -75,16 +52,11 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
               className="h-14 w-14 rounded-xl border border-white/20"
             />
             <div className="absolute -bottom-1 -right-2 h-9 w-9 overflow-hidden rounded-full border border-white/25 bg-black/40 shadow-[0_0_0_2px_rgba(5,5,5,0.9)]">
-              {founder.avatarUrl ? (
-                <img
-                  src={founder.avatarUrl}
-                  alt={founder.founderName}
-                  loading="lazy"
-                  className="h-full w-full object-cover"
-                />
-              ) : (
-                <div className="h-full w-full" style={meshGradient(`${founder.founderName}-avatar`)} />
-              )}
+              <FounderAvatar
+                name={founder.founderName}
+                imageUrl={founder.avatarUrl}
+                className="h-full w-full"
+              />
             </div>
           </div>
 

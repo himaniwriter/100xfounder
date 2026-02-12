@@ -21,7 +21,21 @@ function headingSlug(text: string): string {
     .replace(/(^-|-$)+/g, "");
 }
 
+function isHtmlContent(content: string): boolean {
+  return /<\/?[a-z][\s\S]*>/i.test(content);
+}
+
 function renderContent(content: string) {
+  if (isHtmlContent(content)) {
+    return [
+      <div
+        key="html-content"
+        className="prose prose-invert max-w-none text-[18px] leading-[1.8]"
+        dangerouslySetInnerHTML={{ __html: content }}
+      />,
+    ];
+  }
+
   const lines = content.split("\n");
   const nodes: React.ReactNode[] = [];
 

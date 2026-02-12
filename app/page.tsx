@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { GlassCard } from "@/components/ui/glass-card";
 import { NewsCoverImage } from "@/components/ui/news-cover-image";
+import { readHomepageContent } from "@/lib/content/homepage-content";
 import { getFounderDirectory, splitRecentlyFunded } from "@/lib/founders/store";
 
 function parseAmountToMillions(amount: string): number {
@@ -19,6 +20,7 @@ function parseAmountToMillions(amount: string): number {
 }
 
 export default async function HomePage() {
+  const homepageContent = await readHomepageContent();
   const founders = await getFounderDirectory({ limit: 80 });
   const { recent } = splitRecentlyFunded(founders, 12);
   const featuredFounders = (recent.length > 0 ? recent : founders).slice(0, 3);
@@ -143,6 +145,14 @@ export default async function HomePage() {
       imageUrl: "/images/covers/startup-brief.svg",
     },
   ];
+  const heroTitle = homepageContent.heroTitle;
+  const highlightedPhrase = "Most Accurate";
+  const phraseIndex = heroTitle.toLowerCase().indexOf(highlightedPhrase.toLowerCase());
+  const heroTitleBefore = phraseIndex >= 0 ? heroTitle.slice(0, phraseIndex) : heroTitle;
+  const heroTitleAfter =
+    phraseIndex >= 0
+      ? heroTitle.slice(phraseIndex + highlightedPhrase.length)
+      : "";
 
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-[#050505] text-[#EDEDED]">
@@ -166,33 +176,35 @@ export default async function HomePage() {
         <section className="mx-auto w-full max-w-7xl px-4 pb-14 pt-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl">
-              The World&apos;s
-              {" "}
-              <span className="bg-gradient-to-r from-white via-indigo-200 to-zinc-500 bg-clip-text text-transparent">
-                Most Accurate
-              </span>
-              {" "}
-              Index of Indian Founders &amp; Startups.
+              {phraseIndex >= 0 ? (
+                <>
+                  {heroTitleBefore}
+                  <span className="bg-gradient-to-r from-white via-indigo-200 to-zinc-500 bg-clip-text text-transparent">
+                    {highlightedPhrase}
+                  </span>
+                  {heroTitleAfter}
+                </>
+              ) : (
+                heroTitle
+              )}
             </h1>
 
             <p className="mx-auto mt-5 max-w-3xl text-lg text-zinc-300">
-              Access verified contact details, funding signals, and growth metrics for
-              10,000+ YC founders and top Indian enterprises. Stop guessing, start
-              connecting.
+              {homepageContent.heroSubtitle}
             </p>
 
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
               <Link
-                href="/founders"
+                href={homepageContent.primaryCtaHref}
                 className="inline-flex h-11 items-center rounded-lg bg-[#6366f1] px-5 text-sm font-medium text-white transition-colors hover:bg-[#5458e8]"
               >
-                Search the Database
+                {homepageContent.primaryCtaLabel}
               </Link>
               <Link
-                href="/pricing"
+                href={homepageContent.secondaryCtaHref}
                 className="inline-flex h-11 items-center rounded-lg border border-white/15 bg-white/5 px-5 text-sm font-medium text-zinc-100 transition-colors hover:border-white/25 hover:text-white"
               >
-                Get Full Access
+                {homepageContent.secondaryCtaLabel}
               </Link>
             </div>
 

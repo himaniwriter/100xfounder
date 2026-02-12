@@ -10,6 +10,9 @@ export type BlogPost = {
   isTrending: boolean;
   author: string;
   content: string;
+  status?: "DRAFT" | "PUBLISHED";
+  seoTitle?: string;
+  seoDescription?: string;
 };
 
 export type BlogHeading = {
