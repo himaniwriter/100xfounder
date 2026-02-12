@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { buildLinkedInAvatarSources } from "@/lib/founders/linkedin";
 import { cn } from "@/lib/utils";
 
 type FounderAvatarProps = {
   name: string;
   imageUrl?: string | null;
+  linkedinUrl?: string | null;
   className?: string;
   imageClassName?: string;
 };
@@ -35,47 +37,65 @@ function gradientFromName(name: string) {
 export function FounderAvatar({
   name,
   imageUrl,
+  linkedinUrl,
   className,
   imageClassName,
 }: FounderAvatarProps) {
   const sources = useMemo(() => {
-    if (!imageUrl || !imageUrl.trim()) {
-      return [] as string[];
+    const values: string[] = [];
+    if (imageUrl && imageUrl.trim()) {
+      values.push(imageUrl.trim());
     }
-    return [imageUrl.trim()];
-  }, [imageUrl]);
+
+    values.push(
+      ...buildLinkedInAvatarSources({
+        linkedinUrl,
+        founderName: name,
+      }),
+    );
+
+    return Array.from(new Set(values));
+  }, [imageUrl, linkedinUrl, name]);
 
   const [attemptIndex, setAttemptIndex] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     setAttemptIndex(0);
-  }, [name, imageUrl]);
+    setIsLoaded(false);
+  }, [name, imageUrl, linkedinUrl]);
 
   const activeSource = sources[attemptIndex];
 
-  if (activeSource) {
-    return (
-      <div className={cn("overflow-hidden bg-black/35", className)}>
+  return (
+    <div
+      className={cn("relative grid h-full w-full place-items-center overflow-hidden bg-black/35", className)}
+      style={gradientFromName(name)}
+      aria-label={`${name} avatar fallback`}
+    >
+      {activeSource ? (
         <img
           src={activeSource}
           alt={name}
           loading="lazy"
-          className={cn("h-full w-full object-cover", imageClassName)}
-          onError={() => setAttemptIndex((current) => Math.min(current + 1, sources.length))}
+          className={cn(
+            "absolute inset-0 h-full w-full object-cover transition-opacity duration-200",
+            isLoaded ? "opacity-100" : "opacity-0",
+            imageClassName,
+          )}
+          onLoad={() => setIsLoaded(true)}
+          onError={() => {
+            setIsLoaded(false);
+            setAttemptIndex((current) => {
+              const next = current + 1;
+              return next < sources.length ? next : sources.length;
+            });
+          }}
         />
-      </div>
-    );
-  }
-
-  return (
-    <div
-      className={cn("grid h-full w-full place-items-center overflow-hidden bg-black/35", className)}
-      style={gradientFromName(name)}
-      aria-label={`${name} avatar fallback`}
-    >
+      ) : null}
       <svg
         viewBox="0 0 48 48"
-        className="h-6 w-6 text-white/75"
+        className={cn("h-6 w-6 text-white/75 transition-opacity", isLoaded ? "opacity-0" : "opacity-100")}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"

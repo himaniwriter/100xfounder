@@ -373,6 +373,7 @@ export function CompanyIntelligenceDashboard({
                     <FounderAvatar
                       name={founder.name}
                       imageUrl={founder.imageUrl}
+                      linkedinUrl={founder.linkedin}
                       className="h-12 w-12 rounded-full border border-white/20 bg-black/30"
                     />
                     <div className="min-w-0">

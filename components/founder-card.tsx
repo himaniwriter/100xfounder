@@ -55,6 +55,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
               <FounderAvatar
                 name={founder.founderName}
                 imageUrl={founder.avatarUrl}
+                linkedinUrl={founder.linkedinUrl}
                 className="h-full w-full"
               />
             </div>
@@ -103,10 +104,15 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
           </div>
         </div>
 
-        <div className={cn("flex items-center gap-2", featured ? "md:shrink-0" : "")}>
+        <div
+          className={cn(
+            "flex flex-wrap items-center gap-2",
+            featured ? "md:shrink-0" : "",
+          )}
+        >
           <Link
             href={profileUrl}
-            className="enterprise-primary-btn"
+            className="enterprise-primary-btn w-full justify-center sm:w-auto"
           >
             View Contact
           </Link>

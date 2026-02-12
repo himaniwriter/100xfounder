@@ -64,6 +64,11 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
   const selectedLocations = readParam(searchParams?.location);
   const selectedStages = readParam(searchParams?.stage);
   const activeTab = resolveTab(searchParams?.tab);
+  const lastUpdatedOn = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date());
 
   const [founders, filterOptions] = await Promise.all([
     getFounderDirectory({
@@ -135,7 +140,7 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
         <Navbar />
 
         <div className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-          <div className="mb-8 flex items-end justify-between">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h1 className="text-3xl font-semibold tracking-tight text-white">
                 Founder Directory
@@ -145,7 +150,10 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
                 and conversion-ready outreach actions.
               </p>
             </div>
-            <p className="text-sm text-zinc-500">{founders.length} profiles indexed</p>
+            <div className="text-left sm:text-right">
+              <p className="text-sm text-zinc-500">{founders.length} profiles indexed</p>
+              <p className="mt-1 text-xs text-zinc-500">Updated on {lastUpdatedOn}</p>
+            </div>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]">
@@ -156,9 +164,9 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
               selectedStages={selectedStages}
             />
 
-            <section>
+            <section className="min-w-0">
               <div className="mb-6 overflow-x-auto">
-              <div className="inline-flex min-w-full gap-2 rounded-2xl border border-white/15 bg-white/[0.03] p-2 backdrop-blur-[40px]">
+                <div className="inline-flex min-w-full gap-2 rounded-2xl border border-white/15 bg-white/[0.03] p-2 backdrop-blur-[40px]">
                   {tabItems.map((tab) => (
                     <Link
                       key={tab.id}
@@ -192,7 +200,7 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
                 {shouldUseSpotlight ? (
                   <FounderCard founder={spotlightRecent[0]} isTrending featured />
                 ) : (
-                  <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
+                  <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))] sm:[grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
                     {spotlightRecent.map((founder) => (
                       <FounderCard key={founder.id} founder={founder} isTrending />
                     ))}
@@ -217,7 +225,7 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
                       isTrending={recentIdSet.has(directoryItems[0].id)}
                     />
                   ) : (
-                    <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
+                    <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))] sm:[grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
                       {directoryItems.map((founder) => (
                       <FounderCard
                         key={founder.id}

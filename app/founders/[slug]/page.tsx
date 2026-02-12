@@ -1,15 +1,44 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { ProfileFaqSection } from "@/components/seo/profile-faq-section";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { ProfileTabs } from "@/components/founders/profile-tabs";
 import { getFounderDirectory } from "@/lib/founders/store";
+import {
+  buildFounderFaqs,
+  buildFounderProfileSchema,
+} from "@/lib/seo/profile-seo";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 type FounderProfilePageProps = {
   params: {
     slug: string;
   };
 };
+
+async function getFounderBySlug(slug: string) {
+  const founders = await getFounderDirectory();
+  return founders.find((item) => item.slug === slug) ?? null;
+}
+
+export async function generateMetadata({ params }: FounderProfilePageProps): Promise<Metadata> {
+  const founder = await getFounderBySlug(params.slug);
+  if (!founder) {
+    return { title: "Founder Not Found | 100Xfounder" };
+  }
+
+  const baseUrl = getSiteBaseUrl();
+
+  return {
+    title: `${founder.founderName} - Founder Profile & Signals | 100Xfounder`,
+    description: `Explore founder profile for ${founder.founderName}, including company ${founder.companyName}, funding context, and growth signals on 100Xfounder.`,
+    alternates: {
+      canonical: `${baseUrl}/founders/${founder.slug}`,
+    },
+  };
+}
 
 export default async function FounderProfilePage({ params }: FounderProfilePageProps) {
   const founders = await getFounderDirectory();
@@ -22,6 +51,14 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
   const similar = founders
     .filter((item) => item.slug !== founder.slug && item.industry === founder.industry)
     .slice(0, 4);
+  const baseUrl = getSiteBaseUrl();
+  const faqs = buildFounderFaqs(founder);
+  const schema = buildFounderProfileSchema({
+    baseUrl,
+    founder,
+    faqs,
+    pagePath: `/founders/${founder.slug}`,
+  });
 
   return (
     <main className="min-h-screen bg-[#050505] text-[#EDEDED]">
@@ -57,6 +94,10 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
           ) : null}
 
           <ProfileTabs founder={founder} similar={similar} />
+          <ProfileFaqSection
+            title={`FAQs About ${founder.founderName}`}
+            faqs={faqs}
+          />
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -84,6 +125,11 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
 
       <Footer />
     </main>

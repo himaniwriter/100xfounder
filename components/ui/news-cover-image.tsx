@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
 
 type NewsCoverImageProps = {
@@ -68,34 +68,49 @@ export function NewsCoverImage({
   }, [imageUrl, localFallback]);
 
   const [attemptIndex, setAttemptIndex] = useState(0);
-  const activeSource = sources[attemptIndex];
+  const [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    setAttemptIndex(0);
+    setIsLoaded(false);
+  }, [title, imageUrl, uniqueId]);
 
-  if (activeSource) {
-    return (
-      <div className={cn("overflow-hidden bg-black/35", className)}>
-        <img
-          src={activeSource}
-          alt={title}
-          loading="lazy"
-          className={cn("h-full w-full object-cover", imageClassName)}
-          onError={() =>
-            setAttemptIndex((current) => Math.min(current + 1, sources.length))
-          }
-        />
-      </div>
-    );
-  }
+  const activeSource = sources[attemptIndex];
 
   return (
     <div
       className={cn(
-        "grid h-full w-full place-items-center overflow-hidden bg-black/35 text-zinc-300",
+        "relative grid h-full w-full place-items-center overflow-hidden bg-black/35 text-zinc-300",
         className,
       )}
       style={fallbackGradient(uniqueId)}
       aria-label={`${title} fallback cover`}
     >
-      <div className="inline-flex rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs text-zinc-200">
+      {activeSource ? (
+        <img
+          src={activeSource}
+          alt={title}
+          loading="lazy"
+          className={cn(
+            "absolute inset-0 h-full w-full object-cover transition-opacity duration-200",
+            isLoaded ? "opacity-100" : "opacity-0",
+            imageClassName,
+          )}
+          onLoad={() => setIsLoaded(true)}
+          onError={() => {
+            setIsLoaded(false);
+            setAttemptIndex((current) => {
+              const next = current + 1;
+              return next < sources.length ? next : sources.length;
+            });
+          }}
+        />
+      ) : null}
+      <div
+        className={cn(
+          "inline-flex rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs text-zinc-200 transition-opacity",
+          isLoaded ? "opacity-0" : "opacity-100",
+        )}
+      >
         Startup Intelligence
       </div>
     </div>

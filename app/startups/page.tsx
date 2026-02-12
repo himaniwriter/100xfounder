@@ -75,7 +75,7 @@ export default function StartupsPage() {
               <Link
                 key={card.city}
                 href={card.href}
-                className="group relative block h-52 min-w-[320px] overflow-hidden rounded-2xl border border-white/15 bg-black/35 backdrop-blur-[40px]"
+                className="group relative block h-52 min-w-[260px] overflow-hidden rounded-2xl border border-white/15 bg-black/35 backdrop-blur-[40px] sm:min-w-[320px]"
               >
                 <img
                   src={card.image}

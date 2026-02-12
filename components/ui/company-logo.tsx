@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
 
 type CompanyLogoProps = {
@@ -60,6 +60,27 @@ function initialsFromName(name: string): string {
   return `${words[0][0] ?? ""}${words[1][0] ?? ""}`.toUpperCase();
 }
 
+const CURATED_LOGO_MAP: Record<string, string> = {
+  zepto: "/images/logos/zepto.svg",
+  "sarvam-ai": "/images/logos/sarvam-ai.svg",
+  juspay: "/images/logos/juspay.svg",
+  perfios: "/images/logos/perfios.svg",
+  "appsforbharat": "/images/logos/appsforbharat.svg",
+  bluestone: "/images/logos/bluestone.svg",
+  razorpay: "/images/logos/razorpay.svg",
+  lentra: "/images/logos/lentra.svg",
+  rebelfoods: "/images/logos/rebel-foods.svg",
+  udaan: "/images/logos/udaan.svg",
+};
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)+/g, "");
+}
+
 export function CompanyLogo({
   companyName,
   websiteUrl,
@@ -72,45 +93,64 @@ export function CompanyLogo({
     [domain, websiteUrl],
   );
   const sources = useMemo(() => {
-    if (!resolvedDomain) {
-      return [] as string[];
+    const values: string[] = [];
+    const companySlug = slugify(companyName);
+    const curated = CURATED_LOGO_MAP[companySlug];
+    if (curated) {
+      values.push(curated);
     }
-
-    return [
-      `https://logo.clearbit.com/${resolvedDomain}`,
-      `https://www.google.com/s2/favicons?domain=${resolvedDomain}&sz=128`,
-    ];
-  }, [resolvedDomain]);
+    if (resolvedDomain) {
+      values.push(
+        `https://logo.clearbit.com/${resolvedDomain}`,
+        `https://www.google.com/s2/favicons?domain=${resolvedDomain}&sz=128`,
+      );
+    }
+    return values;
+  }, [companyName, resolvedDomain]);
 
   const [attemptIndex, setAttemptIndex] = useState(0);
-  const activeSource = sources[attemptIndex];
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  if (activeSource) {
-    return (
-      <div className={cn("overflow-hidden bg-black/30", className)}>
-        <img
-          src={activeSource}
-          alt={`${companyName} logo`}
-          loading="lazy"
-          className={cn("h-full w-full object-cover", imageClassName)}
-          onError={() =>
-            setAttemptIndex((current) => Math.min(current + 1, sources.length))
-          }
-        />
-      </div>
-    );
-  }
+  useEffect(() => {
+    setAttemptIndex(0);
+    setIsLoaded(false);
+  }, [companyName, resolvedDomain]);
+
+  const activeSource = sources[attemptIndex];
 
   return (
     <div
       className={cn(
-        "grid h-full w-full place-items-center overflow-hidden bg-black/30 text-xs font-semibold text-white",
+        "relative grid h-full w-full place-items-center overflow-hidden bg-black/30 text-xs font-semibold text-white",
         className,
       )}
       style={gradientFromName(companyName)}
       aria-label={`${companyName} initials avatar`}
     >
-      <span className="text-sm tracking-wide">{initialsFromName(companyName)}</span>
+      {activeSource ? (
+        <img
+          src={activeSource}
+          alt={`${companyName} logo`}
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          className={cn(
+            "absolute inset-0 h-full w-full object-cover transition-opacity duration-200",
+            isLoaded ? "opacity-100" : "opacity-0",
+            imageClassName,
+          )}
+          onLoad={() => setIsLoaded(true)}
+          onError={() => {
+            setIsLoaded(false);
+            setAttemptIndex((current) => {
+              const next = current + 1;
+              return next < sources.length ? next : sources.length;
+            });
+          }}
+        />
+      ) : null}
+      <span className={cn("text-sm tracking-wide transition-opacity", isLoaded ? "opacity-0" : "opacity-100")}>
+        {initialsFromName(companyName)}
+      </span>
     </div>
   );
 }

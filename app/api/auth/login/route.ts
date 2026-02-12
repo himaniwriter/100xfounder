@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
+import {
+  getDummyAdminCredentials,
+  isDummyAdminLogin,
+} from "@/lib/auth/dummy-admin";
 import { verifyPassword } from "@/lib/auth/password";
 import {
   createSessionToken,
@@ -29,6 +33,29 @@ export async function POST(request: Request) {
   }
 
   const email = parsed.data.email.toLowerCase().trim();
+  const password = parsed.data.password;
+
+  if (isDummyAdminLogin(email, password)) {
+    const dummy = getDummyAdminCredentials();
+    const token = await createSessionToken({
+      userId: "dummy-admin",
+      email: dummy.email,
+      role: "ADMIN",
+      name: dummy.name,
+    });
+
+    const response = NextResponse.json({
+      success: true,
+      user: {
+        id: "dummy-admin",
+        email: dummy.email,
+        name: dummy.name,
+        role: "ADMIN",
+      },
+    });
+
+    return setSessionCookie(response, token);
+  }
 
   if (!isDatabaseConfigured()) {
     return NextResponse.json(
@@ -56,7 +83,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const valid = await verifyPassword(parsed.data.password, user.passwordHash);
+    const valid = await verifyPassword(password, user.passwordHash);
 
     if (!valid) {
       return NextResponse.json(

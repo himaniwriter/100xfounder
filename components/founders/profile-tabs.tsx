@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
+import { HalfBlurValue } from "@/components/ui/half-blur-value";
 
 type ProfileTabsProps = {
   founder: FounderDirectoryItem;
@@ -121,10 +122,13 @@ export function ProfileTabs({ founder, similar }: ProfileTabsProps) {
 
           <div className="mt-4 rounded-lg border border-white/10 bg-black/30 p-3">
             <p className="text-sm text-zinc-200">
-              Email: {contact.email}
+              Email: <HalfBlurValue value={contact.email} className="font-medium tracking-wide" />
             </p>
             <p className="mt-2 text-sm text-zinc-200">
-              Phone: {contact.phone}
+              Phone: <HalfBlurValue value={contact.phone} className="font-medium tracking-wide" />
+            </p>
+            <p className="mt-2 text-xs text-zinc-500">
+              Partial preview shown to signal available verified contact data.
             </p>
           </div>
         </aside>

@@ -2,6 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getSessionFromRequest } from "@/lib/auth/session";
 import { upsertFounderDirectoryFromN8N } from "@/lib/founders/store";
+import { buildPrimaryLinkedInAvatar } from "@/lib/founders/linkedin";
 import type { FounderSyncInput } from "@/lib/founders/types";
 
 function normalizeRecords(payload: unknown): FounderSyncInput[] {
@@ -33,6 +34,9 @@ function normalizeRecords(payload: unknown): FounderSyncInput[] {
       continue;
     }
 
+    const linkedinUrl =
+      typeof record.linkedinUrl === "string" ? record.linkedinUrl : undefined;
+
     records.push({
       founderName,
       companyName,
@@ -51,8 +55,7 @@ function normalizeRecords(payload: unknown): FounderSyncInput[] {
       recentNews: Array.isArray(record.recentNews)
         ? record.recentNews.filter((item): item is string => typeof item === "string")
         : undefined,
-      linkedinUrl:
-        typeof record.linkedinUrl === "string" ? record.linkedinUrl : undefined,
+      linkedinUrl,
       twitterUrl:
         typeof record.twitterUrl === "string" ? record.twitterUrl : undefined,
       headquarters:
@@ -60,7 +63,13 @@ function normalizeRecords(payload: unknown): FounderSyncInput[] {
       sourceUrl: typeof record.sourceUrl === "string" ? record.sourceUrl : undefined,
       ycProfileUrl:
         typeof record.ycProfileUrl === "string" ? record.ycProfileUrl : undefined,
-      avatarUrl: typeof record.avatarUrl === "string" ? record.avatarUrl : undefined,
+      avatarUrl:
+        typeof record.avatarUrl === "string"
+          ? record.avatarUrl
+          : buildPrimaryLinkedInAvatar({
+              linkedinUrl,
+              founderName,
+            }) ?? undefined,
       verified:
         typeof record.verified === "boolean" ? record.verified : undefined,
       foundedYear:

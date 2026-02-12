@@ -1,5 +1,6 @@
 import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
+import { buildPrimaryLinkedInAvatar } from "@/lib/founders/linkedin";
 import { PDF_FOUNDER_SEED, PDF_SOURCE_URL } from "@/lib/founders/seed-data";
 import type {
   FounderDirectoryItem,
@@ -124,11 +125,17 @@ function sanitizeItem(raw: FounderDirectoryItem): FounderDirectoryItem {
     recentNews: raw.recentNews && raw.recentNews.length > 0 ? raw.recentNews : inferRecentNews({ companyName, founderName, industry }),
     linkedinUrl:
       raw.linkedinUrl ??
-      `https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(companyName)}`,
+      `https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(founderName)}`,
     twitterUrl:
       raw.twitterUrl ??
       `https://x.com/search?q=${encodeURIComponent(companyName)}`,
     isFeatured: raw.isFeatured ?? false,
+    avatarUrl:
+      raw.avatarUrl ??
+      buildPrimaryLinkedInAvatar({
+        linkedinUrl: raw.linkedinUrl,
+        founderName,
+      }),
   };
 }
 
@@ -215,6 +222,20 @@ function applyFeaturedFlag(items: FounderDirectoryItem[]): FounderDirectoryItem[
   }));
 }
 
+function mergeUniqueBySlug(
+  primary: FounderDirectoryItem[],
+  secondary: FounderDirectoryItem[],
+): FounderDirectoryItem[] {
+  const bySlug = new Map<string, FounderDirectoryItem>();
+  primary.forEach((item) => bySlug.set(item.slug, item));
+  secondary.forEach((item) => {
+    if (!bySlug.has(item.slug)) {
+      bySlug.set(item.slug, item);
+    }
+  });
+  return Array.from(bySlug.values());
+}
+
 export function splitRecentlyFunded(
   items: FounderDirectoryItem[],
   maxRecent = 24,
@@ -298,7 +319,20 @@ export async function getFounderDirectory(
     });
 
     if (rows.length > 0) {
-      const sorted = applyFeaturedFlag(sortByFundingPriority(rows.map(mapDbItemToFounder)));
+      const dbItems = rows.map(mapDbItemToFounder);
+      const selectedStages = options.stage ?? [];
+      const shouldAugmentSeriesStages =
+        selectedStages.length > 0 &&
+        selectedStages.some((stage) => /series\s*[b-d]/i.test(stage));
+
+      const mergedItems = shouldAugmentSeriesStages
+        ? mergeUniqueBySlug(
+            dbItems,
+            applySeedFilters(PDF_FOUNDER_SEED, options).map(sanitizeItem),
+          )
+        : dbItems;
+
+      const sorted = applyFeaturedFlag(sortByFundingPriority(mergedItems));
       if (options.limit && options.limit > 0) {
         return sorted.slice(0, options.limit);
       }
@@ -372,7 +406,12 @@ export async function upsertFounderDirectoryFromN8N(
         twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,
         // isFeatured is currently derived on read from funding signals.
-        avatarUrl: entry.avatarUrl ?? null,
+        avatarUrl:
+          entry.avatarUrl ??
+          buildPrimaryLinkedInAvatar({
+            linkedinUrl: entry.linkedinUrl,
+            founderName: entry.founderName,
+          }),
       },
       update: {
         founderName: entry.founderName,
@@ -393,7 +432,12 @@ export async function upsertFounderDirectoryFromN8N(
         twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,
         // isFeatured is currently derived on read from funding signals.
-        avatarUrl: entry.avatarUrl ?? null,
+        avatarUrl:
+          entry.avatarUrl ??
+          buildPrimaryLinkedInAvatar({
+            linkedinUrl: entry.linkedinUrl,
+            founderName: entry.founderName,
+          }),
       },
     });
   });

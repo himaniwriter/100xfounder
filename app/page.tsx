@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Search, ShieldCheck, Zap, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { HalfBlurValue } from "@/components/ui/half-blur-value";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { GlassCard } from "@/components/ui/glass-card";
 import { NewsCoverImage } from "@/components/ui/news-cover-image";
@@ -241,7 +242,7 @@ export default async function HomePage() {
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
-          <div className="mb-5 flex items-end justify-between">
+          <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <h2 className="text-2xl font-semibold tracking-tight text-white">Why Trust Us</h2>
           </div>
 
@@ -273,7 +274,7 @@ export default async function HomePage() {
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-          <div className="mb-5 flex items-end justify-between gap-4">
+          <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
             <h2 className="text-2xl font-semibold tracking-tight text-white">
               Market Pulse: Latest Funding Rounds
             </h2>
@@ -333,7 +334,7 @@ export default async function HomePage() {
                     <p className="text-xs uppercase tracking-[0.14em] text-zinc-400">
                       Featured Deal • {featuredDeal.sector}
                     </p>
-                    <h3 className="mt-1 text-2xl font-semibold tracking-tight text-white">
+                    <h3 className="mt-1 text-xl font-semibold tracking-tight text-white sm:text-2xl">
                       {featuredDeal.headline}
                     </h3>
                   </div>
@@ -415,7 +416,7 @@ export default async function HomePage() {
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 pt-8 sm:px-6 lg:px-8">
-          <div className="mb-6 flex items-end justify-between">
+          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <h2 className="text-2xl font-semibold tracking-tight text-white">
               Recently Funded Spotlight
             </h2>
@@ -472,7 +473,7 @@ export default async function HomePage() {
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md md:p-8">
-            <div className="mb-6 flex items-end justify-between gap-4">
+            <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <h2 className="text-2xl font-semibold tracking-tight text-white">
                   Direct Contact Access
@@ -500,10 +501,14 @@ export default async function HomePage() {
                 </div>
                 <div className="mt-5 space-y-2 rounded-lg border border-white/10 bg-black/30 p-3">
                   <div className="rounded-md border border-white/10 bg-white/5 p-2">
-                    <p className="text-sm text-zinc-300">Email: rmukesh@ril.com</p>
+                    <p className="text-sm text-zinc-300">
+                      Email: <HalfBlurValue value="rmukesh@ril.com" className="font-medium tracking-wide" />
+                    </p>
                   </div>
                   <div className="rounded-md border border-white/10 bg-white/5 p-2">
-                    <p className="text-sm text-zinc-300">Phone: +91 98765 43210</p>
+                    <p className="text-sm text-zinc-300">
+                      Phone: <HalfBlurValue value="+91 98765 43210" className="font-medium tracking-wide" />
+                    </p>
                   </div>
                 </div>
               </GlassCard>
@@ -520,10 +525,10 @@ export default async function HomePage() {
                 </div>
                 <div className="mt-5 space-y-2 rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-3">
                   <p className="rounded-md border border-white/10 bg-white/5 p-2 text-sm text-zinc-200">
-                    Email: rmukesh@ril.com
+                    Email: <HalfBlurValue value="rmukesh@ril.com" className="font-medium tracking-wide" />
                   </p>
                   <p className="rounded-md border border-white/10 bg-white/5 p-2 text-sm text-zinc-200">
-                    Phone: +91 98765 43210
+                    Phone: <HalfBlurValue value="+91 98765 43210" className="font-medium tracking-wide" />
                   </p>
                   <p className="rounded-md border border-white/10 bg-white/5 p-2 text-sm text-zinc-200">
                     LinkedIn: linkedin.com/in/mukeshambani
@@ -535,7 +540,7 @@ export default async function HomePage() {
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-          <div className="mb-6 flex items-end justify-between">
+          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <h2 className="text-2xl font-semibold tracking-tight text-white">
               Market Intelligence &amp; Deep Dives
             </h2>
@@ -570,6 +575,76 @@ export default async function HomePage() {
                 </Link>
               </GlassCard>
             ))}
+          </div>
+        </section>
+
+        <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-[40px] sm:p-6">
+            <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <h2 className="text-2xl font-semibold tracking-tight text-white">
+                  Instagram Feed
+                </h2>
+                <p className="mt-1 text-sm text-zinc-400">
+                  Latest stories and founder snapshots from @100x.founder.
+                </p>
+              </div>
+              <a
+                href="https://www.instagram.com/100x.founder/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex h-10 items-center justify-center rounded-lg border border-pink-400/35 bg-pink-500/10 px-4 text-sm font-medium text-pink-200 transition-colors hover:bg-pink-500/20"
+              >
+                Follow @100x.founder
+              </a>
+            </div>
+
+            <div className="grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+              {[
+                {
+                  title: "Funding Wire",
+                  image: "/images/covers/funding-wire.svg",
+                },
+                {
+                  title: "AI Ecosystem",
+                  image: "/images/covers/ai-grid.svg",
+                },
+                {
+                  title: "Startup Brief",
+                  image: "/images/covers/startup-brief.svg",
+                },
+                {
+                  title: "Talent Radar",
+                  image: "/images/covers/talent-map.svg",
+                },
+                {
+                  title: "Delhi Ecosystem",
+                  image: "/images/cities/delhi.svg",
+                },
+                {
+                  title: "Bangalore Ecosystem",
+                  image: "/images/cities/bangalore.svg",
+                },
+              ].map((post) => (
+                <a
+                  key={post.title}
+                  href="https://www.instagram.com/100x.founder/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group overflow-hidden rounded-xl border border-white/10 bg-black/30 transition-colors hover:border-pink-400/35"
+                >
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    loading="lazy"
+                    className="h-28 w-full object-cover transition-transform duration-300 group-hover:scale-105 sm:h-32"
+                  />
+                  <div className="border-t border-white/10 px-2.5 py-2 text-[11px] uppercase tracking-[0.12em] text-zinc-400">
+                    {post.title}
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
         </section>
 

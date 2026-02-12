@@ -5,7 +5,14 @@ import { useRouter } from "next/navigation";
 
 type Mode = "login" | "register";
 
-export function LoginRegisterForm() {
+type LoginRegisterFormProps = {
+  dummyAdmin?: {
+    email: string;
+    password: string;
+  } | null;
+};
+
+export function LoginRegisterForm({ dummyAdmin = null }: LoginRegisterFormProps) {
   const router = useRouter();
   const [mode, setMode] = useState<Mode>("login");
   const [name, setName] = useState("");
@@ -76,6 +83,27 @@ export function LoginRegisterForm() {
       </div>
 
       <form className="space-y-4" onSubmit={onSubmit}>
+        {mode === "login" && dummyAdmin ? (
+          <div className="rounded-lg border border-indigo-400/35 bg-indigo-500/10 p-3">
+            <p className="text-xs font-medium uppercase tracking-wide text-indigo-200">
+              Demo Admin Credentials
+            </p>
+            <p className="mt-2 text-xs text-zinc-200">Email: {dummyAdmin.email}</p>
+            <p className="mt-1 text-xs text-zinc-200">Password: {dummyAdmin.password}</p>
+            <button
+              type="button"
+              onClick={() => {
+                setMode("login");
+                setEmail(dummyAdmin.email);
+                setPassword(dummyAdmin.password);
+              }}
+              className="mt-2 inline-flex rounded-md border border-indigo-300/40 bg-indigo-500/20 px-2.5 py-1 text-xs font-medium text-indigo-100 transition-colors hover:bg-indigo-500/30"
+            >
+              Use Demo Credentials
+            </button>
+          </div>
+        ) : null}
+
         {mode === "register" ? (
           <div>
             <label className="mb-1 block text-xs text-zinc-300">Name</label>

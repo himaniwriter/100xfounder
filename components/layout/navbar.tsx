@@ -17,7 +17,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-bold tracking-tighter text-white">
+          <Link href="/" className="text-lg font-bold tracking-tighter text-white sm:text-xl">
             100Xfounder
           </Link>
 
@@ -33,16 +33,16 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2">
             <Link
               href="/dashboard"
-              className="inline-flex h-9 items-center rounded-md border border-transparent bg-[#6366f1] px-4 text-sm font-medium text-white transition-colors hover:bg-[#5558ea]"
+              className="hidden h-9 items-center rounded-md border border-transparent bg-[#6366f1] px-3 text-sm font-medium text-white transition-colors hover:bg-[#5558ea] sm:inline-flex"
             >
               Dashboard
             </Link>
             <Link
               href="/login"
-              className="inline-flex h-9 items-center rounded-md border border-white/10 bg-white/5 px-3 text-sm text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
+              className="inline-flex h-9 items-center rounded-md border border-white/10 bg-white/5 px-2.5 text-xs text-zinc-300 transition-colors hover:border-white/20 hover:text-white sm:px-3 sm:text-sm"
             >
               Login
             </Link>

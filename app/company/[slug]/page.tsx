@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { ProfileFaqSection } from "@/components/seo/profile-faq-section";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { CompanyIntelligenceDashboard } from "@/components/company/company-intelligence-dashboard";
 import { buildCompanyContentExpansion } from "@/lib/company/content-expansion";
 import { getFounderDirectory } from "@/lib/founders/store";
+import {
+  buildCompanyFaqs,
+  buildCompanyProfileSchema,
+} from "@/lib/seo/profile-seo";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 type CompanyPageProps = {
   params: { slug: string };
@@ -42,6 +48,7 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
   if (!context) notFound();
 
   const { primary, matches } = context;
+  const baseUrl = getSiteBaseUrl();
   const expansion = await buildCompanyContentExpansion({
     name: primary.companyName,
     oneLiner: primary.productSummary,
@@ -50,23 +57,13 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
     location: primary.headquarters ?? "India",
     tags: [primary.industry, primary.stage],
   });
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: primary.companyName,
-    url: primary.websiteUrl ?? undefined,
-    founder: {
-      "@type": "Person",
-      name: primary.founderName,
-    },
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: primary.headquarters ?? "Unknown",
-      addressCountry: "IN",
-    },
-    sameAs: [primary.linkedinUrl, primary.twitterUrl].filter(Boolean),
-  };
+  const faqs = buildCompanyFaqs(primary, matches);
+  const schema = buildCompanyProfileSchema({
+    baseUrl,
+    primary,
+    matches,
+    faqs,
+  });
 
   return (
     <main className="min-h-screen bg-[#050505] text-[#EDEDED]">
@@ -77,6 +74,10 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
           primary={primary}
           matches={matches}
           expansion={expansion}
+        />
+        <ProfileFaqSection
+          title={`FAQs About ${primary.companyName}`}
+          faqs={faqs}
         />
       </section>
 

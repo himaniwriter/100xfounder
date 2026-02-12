@@ -44,6 +44,25 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-black/95">
       <div className="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="mb-10 rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h3 className="text-base font-semibold text-white">Instagram: @100x.founder</h3>
+              <p className="mt-2 max-w-3xl text-sm text-zinc-400">
+                Follow daily founder signals, funding clips, and ecosystem snapshots.
+              </p>
+            </div>
+            <a
+              href="https://www.instagram.com/100x.founder/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-10 items-center justify-center rounded-lg border border-pink-400/35 bg-pink-500/10 px-4 text-sm font-medium text-pink-200 transition-colors hover:bg-pink-500/20"
+            >
+              Open Instagram
+            </a>
+          </div>
+        </div>
+
+        <div className="mb-10 rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md">
           <h3 className="text-base font-semibold text-white">Directory Navigation</h3>
           <p className="mt-2 max-w-3xl text-sm text-zinc-400">
             Explore founder intelligence by location, industry, and role to discover
