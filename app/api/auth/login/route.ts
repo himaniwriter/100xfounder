@@ -6,6 +6,11 @@ import {
   createSessionToken,
   setSessionCookie,
 } from "@/lib/auth/session";
+import {
+  DATABASE_CONFIG_ERROR,
+  isDatabaseConfigured,
+  toPublicDatabaseError,
+} from "@/lib/db-config";
 
 const loginSchema = z.object({
   email: z.string().email(),
@@ -24,6 +29,13 @@ export async function POST(request: Request) {
   }
 
   const email = parsed.data.email.toLowerCase().trim();
+
+  if (!isDatabaseConfigured()) {
+    return NextResponse.json(
+      { success: false, error: DATABASE_CONFIG_ERROR },
+      { status: 503 },
+    );
+  }
 
   try {
     const user = await prisma.user.findUnique({
@@ -75,7 +87,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         success: false,
-        error: error instanceof Error ? error.message : "Login failed.",
+        error: toPublicDatabaseError(error, "Login failed."),
       },
       { status: 500 },
     );

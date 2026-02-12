@@ -1,12 +1,24 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getSessionFromRequest } from "@/lib/auth/session";
+import {
+  DATABASE_CONFIG_ERROR,
+  isDatabaseConfigured,
+  toPublicDatabaseError,
+} from "@/lib/db-config";
 
 export async function GET(request: NextRequest) {
   const session = await getSessionFromRequest(request);
 
   if (!session) {
     return NextResponse.json({ success: false, error: "Unauthorized" }, { status: 401 });
+  }
+
+  if (!isDatabaseConfigured()) {
+    return NextResponse.json(
+      { success: false, error: DATABASE_CONFIG_ERROR },
+      { status: 503 },
+    );
   }
 
   try {
@@ -30,7 +42,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       {
         success: false,
-        error: error instanceof Error ? error.message : "Could not fetch session user.",
+        error: toPublicDatabaseError(error, "Could not fetch session user."),
       },
       { status: 500 },
     );
