@@ -22,6 +22,7 @@ export function normalizeBlogPost(post: BlogPost): BlogPost {
   return {
     ...post,
     status: post.status ?? "PUBLISHED",
+    sourceName: post.sourceName ?? "100Xfounder Desk",
     seoTitle: post.seoTitle ?? post.title,
     seoDescription: post.seoDescription ?? post.excerpt,
   };

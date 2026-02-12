@@ -10,6 +10,9 @@ export type BlogPost = {
   isTrending: boolean;
   author: string;
   content: string;
+  sourceName?: string;
+  sourceUrl?: string;
+  sourceTitle?: string;
   status?: "DRAFT" | "PUBLISHED";
   seoTitle?: string;
   seoDescription?: string;
