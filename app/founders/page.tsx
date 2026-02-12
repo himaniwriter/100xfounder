@@ -74,7 +74,10 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
     getFounderFilterOptions(),
   ]);
   const { recent } = splitRecentlyFunded(founders, 18);
-  const recentIdSet = new Set(recent.map((item) => item.id));
+  const shouldUseSpotlight = recent.length > 0 && recent.length < 3;
+  const spotlightRecent =
+    activeTab === "all" && shouldUseSpotlight ? recent.slice(0, 1) : recent;
+  const recentIdSet = new Set(spotlightRecent.map((item) => item.id));
   const ycFounders = founders.filter((item) => Boolean(item.ycProfileUrl));
   const hiringNowFounders = founders.filter(isHiringNow);
 
@@ -96,7 +99,7 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
     count: number;
   }> = [
     { id: "all", label: "All Founders", count: founders.length },
-    { id: "trending", label: "Trending", count: recent.length },
+    { id: "trending", label: "Trending", count: spotlightRecent.length },
     { id: "hiring", label: "Hiring Now", count: hiringNowFounders.length },
     { id: "yc", label: "YC Alumni", count: ycFounders.length },
   ];
@@ -105,7 +108,7 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
     activeTab === "all"
       ? founders.filter((item) => !recentIdSet.has(item.id))
       : activeTab === "trending"
-        ? recent
+        ? spotlightRecent
         : activeTab === "hiring"
           ? hiringNowFounders
           : ycFounders;
@@ -180,17 +183,19 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
                     <h2 className="text-sm font-medium uppercase tracking-wide text-zinc-200">
                       Recently Funded
                     </h2>
-                    <span className="text-xs text-zinc-500">{recent.length} records</span>
-                  </div>
+                  <span className="text-xs text-zinc-500">
+                    {shouldUseSpotlight ? "Spotlight" : `${spotlightRecent.length} records`}
+                  </span>
+                </div>
 
-                  {recent.length === 1 ? (
-                    <FounderCard founder={recent[0]} isTrending featured />
-                  ) : (
-                    <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
-                      {recent.map((founder) => (
-                        <FounderCard key={founder.id} founder={founder} isTrending />
-                      ))}
-                    </div>
+                {shouldUseSpotlight ? (
+                  <FounderCard founder={spotlightRecent[0]} isTrending featured />
+                ) : (
+                  <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
+                    {spotlightRecent.map((founder) => (
+                      <FounderCard key={founder.id} founder={founder} isTrending />
+                    ))}
+                  </div>
                   )}
                 </>
               ) : null}

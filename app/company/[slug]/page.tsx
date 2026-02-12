@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BadgeCheck } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { CompanyFollowActions } from "@/components/company/company-follow-actions";
 import { GatedValue } from "@/components/ui/gated-value";
-import { getSessionFromCookies } from "@/lib/auth/session";
-import { getFounderDirectory, toCompanySlug } from "@/lib/founders/store";
+import { getFounderDirectory } from "@/lib/founders/store";
 
 type CompanyPageProps = {
   params: { slug: string };
@@ -51,9 +52,12 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
   const context = await getCompanyContext(params.slug);
   if (!context) notFound();
 
-  const { primary, matches, similar } = context;
-  const session = await getSessionFromCookies();
-  const unlocked = Boolean(session);
+  const { primary, similar } = context;
+  const companyDomain = primary.websiteUrl
+    ? primary.websiteUrl.replace(/^https?:\/\//, "").replace(/\/.*$/, "")
+    : "company.com";
+  const contactEmail = `contact@${companyDomain}`;
+  const contactPhone = "+91 98765 43210";
 
   const compareTargets = similar.slice(0, 2);
 
@@ -91,9 +95,28 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
           <span className="text-zinc-300">{primary.companyName}</span>
         </nav>
 
-        <header className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
-          <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        <header
+          className={`rounded-2xl border bg-white/5 p-6 backdrop-blur-md ${
+            primary.isFeatured
+              ? "border-yellow-300/30 shadow-[0_0_15px_rgba(255,215,0,0.3)]"
+              : "border-white/10"
+          }`}
+        >
+          <h1 className="flex flex-wrap items-center gap-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
             {primary.companyName}
+            {primary.verified ? (
+              <span
+                title="Identity Verified by 100Xfounder."
+                className="inline-flex items-center rounded-full border border-blue-400/40 bg-blue-500/10 px-2 py-1 text-xs text-blue-300"
+              >
+                <BadgeCheck className="h-3.5 w-3.5" />
+              </span>
+            ) : null}
+            {primary.isFeatured ? (
+              <span className="inline-flex items-center rounded-full border border-yellow-300/40 bg-yellow-500/10 px-2 py-1 text-xs text-yellow-200">
+                Featured
+              </span>
+            ) : null}
           </h1>
           <p className="mt-2 max-w-3xl text-sm text-zinc-300">{primary.productSummary}</p>
           <div className="mt-4 flex flex-wrap gap-2">
@@ -110,6 +133,11 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
               {primary.founderName}
             </Link>
           </p>
+
+          <CompanyFollowActions
+            companyName={primary.companyName}
+            companyTopic={primary.companySlug}
+          />
         </header>
 
         <div className="mt-6 grid gap-6 lg:grid-cols-2">
@@ -150,10 +178,10 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
                 <dt className="text-zinc-500">Direct Email</dt>
                 <dd>
                   <GatedValue
-                    unlocked={unlocked}
                     blurredPreview="r****@company.com"
-                    actualValue={null}
-                    ctaLabel="Unlock Contact Info"
+                    actualValue={contactEmail}
+                    ctaLabel="Show Info"
+                    companyId={primary.id}
                   />
                 </dd>
               </div>
@@ -161,10 +189,10 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
                 <dt className="text-zinc-500">Phone</dt>
                 <dd>
                   <GatedValue
-                    unlocked={unlocked}
                     blurredPreview="+91 98*******"
-                    actualValue={null}
-                    ctaLabel="Unlock Contact Info"
+                    actualValue={contactPhone}
+                    ctaLabel="Show Info"
+                    companyId={primary.id}
                   />
                 </dd>
               </div>
@@ -172,10 +200,10 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
                 <dt className="text-zinc-500">Growth Rate</dt>
                 <dd>
                   <GatedValue
-                    unlocked={unlocked}
                     blurredPreview="📈 Top 5%"
                     actualValue="📈 Top 5%"
-                    ctaLabel="Upgrade to View"
+                    ctaLabel="Show Info"
+                    companyId={primary.id}
                   />
                 </dd>
               </div>
@@ -183,10 +211,10 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
                 <dt className="text-zinc-500">Investor Deck</dt>
                 <dd>
                   <GatedValue
-                    unlocked={unlocked}
                     blurredPreview="🔒 Restricted Access"
                     actualValue="Restricted access. Contact admin."
-                    ctaLabel="Upgrade to View"
+                    ctaLabel="Show Info"
+                    companyId={primary.id}
                   />
                 </dd>
               </div>

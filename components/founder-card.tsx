@@ -67,7 +67,9 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
   return (
     <GlassCard
       className={cn(
-        "border-white/10 bg-white/[0.03] p-5 backdrop-blur-[20px] transition-all hover:border-white/20 hover:bg-white/[0.045] hover:shadow-[0_0_15px_rgba(99,102,241,0.3)]",
+        founder.isFeatured
+          ? "border-yellow-300/45 bg-white/[0.03] p-5 backdrop-blur-[40px] shadow-[0_0_15px_rgba(255,215,0,0.3)] transition-all hover:border-yellow-300/60 hover:bg-white/[0.045]"
+          : "border-white/15 bg-white/[0.03] p-5 backdrop-blur-[40px] transition-all hover:border-white/30 hover:bg-white/[0.045] hover:shadow-[0_0_15px_rgba(99,102,241,0.3)]",
         featured ? "md:p-6" : "",
       )}
     >
@@ -79,7 +81,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
       >
         <div className="flex min-w-0 items-start gap-4">
           <div className="relative h-16 w-16 shrink-0">
-            <div className="h-14 w-14 overflow-hidden rounded-xl border border-white/15 bg-black/40">
+            <div className="h-14 w-14 overflow-hidden rounded-xl border border-white/20 bg-black/40">
               {companyLogoUrl ? (
                 <img
                   src={companyLogoUrl}
@@ -91,7 +93,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
                 <div className="h-full w-full" style={meshGradient(`${founder.companyName}-logo`)} />
               )}
             </div>
-            <div className="absolute -bottom-1 -right-2 h-9 w-9 overflow-hidden rounded-full border border-white/20 bg-black/40 shadow-[0_0_0_2px_rgba(5,5,5,0.9)]">
+            <div className="absolute -bottom-1 -right-2 h-9 w-9 overflow-hidden rounded-full border border-white/25 bg-black/40 shadow-[0_0_0_2px_rgba(5,5,5,0.9)]">
               {founder.avatarUrl ? (
                 <img
                   src={founder.avatarUrl}

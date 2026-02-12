@@ -128,6 +128,7 @@ function sanitizeItem(raw: FounderDirectoryItem): FounderDirectoryItem {
     twitterUrl:
       raw.twitterUrl ??
       `https://x.com/search?q=${encodeURIComponent(companyName)}`,
+    isFeatured: raw.isFeatured ?? false,
   };
 }
 
@@ -207,6 +208,13 @@ function sortByFundingPriority(items: FounderDirectoryItem[]): FounderDirectoryI
   });
 }
 
+function applyFeaturedFlag(items: FounderDirectoryItem[]): FounderDirectoryItem[] {
+  return items.map((item) => ({
+    ...item,
+    isFeatured: item.isFeatured || getFundingPriority(item) >= 6,
+  }));
+}
+
 export function splitRecentlyFunded(
   items: FounderDirectoryItem[],
   maxRecent = 24,
@@ -261,6 +269,7 @@ function mapDbItemToFounder(item: {
     linkedinUrl: item.linkedinUrl ?? null,
     twitterUrl: item.twitterUrl ?? null,
     verified: item.verified,
+    isFeatured: false,
     avatarUrl: item.avatarUrl,
   });
 }
@@ -289,7 +298,7 @@ export async function getFounderDirectory(
     });
 
     if (rows.length > 0) {
-      const sorted = sortByFundingPriority(rows.map(mapDbItemToFounder));
+      const sorted = applyFeaturedFlag(sortByFundingPriority(rows.map(mapDbItemToFounder)));
       if (options.limit && options.limit > 0) {
         return sorted.slice(0, options.limit);
       }
@@ -298,9 +307,9 @@ export async function getFounderDirectory(
   } catch {
     // Fallback to seed records when DB is unavailable or not migrated yet.
   }
-  const seeded = sortByFundingPriority(
+  const seeded = applyFeaturedFlag(sortByFundingPriority(
     applySeedFilters(PDF_FOUNDER_SEED, options).map(sanitizeItem),
-  );
+  ));
   if (options.limit && options.limit > 0) {
     return seeded.slice(0, options.limit);
   }
@@ -362,6 +371,7 @@ export async function upsertFounderDirectoryFromN8N(
         linkedinUrl: entry.linkedinUrl ?? null,
         twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,
+        // isFeatured is currently derived on read from funding signals.
         avatarUrl: entry.avatarUrl ?? null,
       },
       update: {
@@ -382,6 +392,7 @@ export async function upsertFounderDirectoryFromN8N(
         linkedinUrl: entry.linkedinUrl ?? null,
         twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,
+        // isFeatured is currently derived on read from funding signals.
         avatarUrl: entry.avatarUrl ?? null,
       },
     });

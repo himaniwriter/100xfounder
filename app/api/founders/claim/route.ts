@@ -2,6 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { getSessionFromRequest } from "@/lib/auth/session";
+import { postToN8N } from "@/lib/n8n";
 
 const claimSchema = z.object({
   slug: z.string().min(2),
@@ -30,7 +31,7 @@ export async function POST(request: NextRequest) {
 
   const founderEntry = await prisma.founderDirectoryEntry.findUnique({
     where: { slug: parsed.data.slug },
-    select: { id: true, slug: true },
+    select: { id: true, slug: true, founderName: true, companyName: true },
   });
 
   if (!founderEntry) {
@@ -63,6 +64,24 @@ export async function POST(request: NextRequest) {
       createdAt: true,
     },
   });
+
+  try {
+    await postToN8N(
+      process.env.N8N_CLAIM_PROFILE_WEBHOOK_URL,
+      {
+        claimId: claim.id,
+        userId: session.userId,
+        founderEntryId: founderEntry.id,
+        founderSlug: founderEntry.slug,
+        founderName: founderEntry.founderName,
+        companyName: founderEntry.companyName,
+        message: parsed.data.message ?? null,
+      },
+      { secret: process.env.N8N_SYNC_SECRET },
+    );
+  } catch {
+    // Claim flow should not fail if webhook dispatch fails.
+  }
 
   return NextResponse.json({ success: true, claim }, { status: 201 });
 }

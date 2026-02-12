@@ -26,12 +26,17 @@ npm run dev
 - `N8N_SYNC_SECRET`
 - `N8N_WEBHOOK_URL`
 - `N8N_SECRET_KEY`
+- `N8N_NEWSLETTER_WEBHOOK_URL`
+- `N8N_UNLOCK_CONTACT_WEBHOOK_URL`
+- `N8N_CLAIM_PROFILE_WEBHOOK_URL`
 
 ## Routes
 
 - `/` Home
 - `/founders` Directory
 - `/founders/[slug]` Profile page
+- `/blog` Blog home
+- `/blog/[slug]` Blog article
 - `/login` Login/Register
 - `/dashboard` Member/Admin dashboard
 
@@ -47,6 +52,10 @@ npm run dev
 - `GET /api/founders`
 - `POST /api/founders/sync` (n8n secret header: `x-secret-key`)
 - `POST /api/founders/claim` (logged-in users)
+
+### Newsletter & events
+- `POST /api/newsletter/subscribe`
+- `POST /api/events/unlock-contact`
 
 ### Admin connectors
 - `GET /api/dashboard/connectors` (admin)
@@ -74,3 +83,5 @@ It accepts either:
 - The uploaded PDF is a group-company register. Records are mapped into directory profiles using group/owner/company fields where available.
 - YC founder links are currently generated as query links to:
   - `https://www.ycombinator.com/founders?query=<name>`
+- N8N architecture guide:
+  - `/Users/lovishmadaan/Documents/New project/docs/n8n-workflows.md`

@@ -12,6 +12,7 @@ type BaseWikiFounder = Omit<
   | "recentNews"
   | "linkedinUrl"
   | "twitterUrl"
+  | "isFeatured"
 >;
 
 const BASE_WIKI_RECORDS: BaseWikiFounder[] = [
@@ -235,5 +236,6 @@ export const WIKI_Eponymous_SEED: FounderDirectoryItem[] = BASE_WIKI_RECORDS.map
     ],
     linkedinUrl: `https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(item.companyName)}`,
     twitterUrl: `https://x.com/search?q=${encodeURIComponent(item.companyName)}`,
+    isFeatured: false,
   }),
 );

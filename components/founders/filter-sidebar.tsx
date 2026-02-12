@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { ChevronDown, Search } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { cleanLabel } from "@/lib/founders/filter-utils";
 
 type FilterSidebarProps = {
   options: {
@@ -15,20 +16,6 @@ type FilterSidebarProps = {
   selectedLocations: string[];
   selectedStages: string[];
 };
-
-const MAX_FILTER_LABEL = 25;
-
-function cleanLabel(value: string): string {
-  return value.replace(/\s+/g, " ").trim();
-}
-
-function truncateLabel(value: string): string {
-  if (value.length <= MAX_FILTER_LABEL) {
-    return value;
-  }
-
-  return `${value.slice(0, MAX_FILTER_LABEL)}...`;
-}
 
 function setListParam(params: URLSearchParams, key: string, values: string[]) {
   params.delete(key);
@@ -65,7 +52,7 @@ function PillGroup({ title, values, selected, onToggle }: PillGroupProps) {
         {values.length > 0 ? (
           values.map((value) => {
             const active = selected.includes(value);
-            const label = truncateLabel(cleanLabel(value));
+            const label = cleanLabel(value);
 
             return (
               <button
@@ -77,7 +64,7 @@ function PillGroup({ title, values, selected, onToggle }: PillGroupProps) {
                   "rounded-full border px-3 py-1.5 text-xs transition-all",
                   active
                     ? "border-indigo-400/60 bg-indigo-500/15 text-indigo-200 shadow-[0_0_14px_rgba(99,102,241,0.32)]"
-                    : "border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:text-white",
+                    : "border-white/15 bg-white/5 text-zinc-300 hover:border-white/30 hover:text-white",
                 )}
               >
                 {label}
@@ -153,7 +140,7 @@ export function FilterSidebar({
   };
 
   return (
-    <aside className="h-fit w-full rounded-2xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-[20px] lg:sticky lg:top-24 lg:w-[280px] lg:min-w-[280px]">
+    <aside className="h-fit w-full rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-[40px] lg:sticky lg:top-24 lg:w-[280px] lg:min-w-[280px]">
       <h2 className="text-xs font-medium uppercase tracking-wide text-zinc-300">
         Control Center
       </h2>
@@ -162,7 +149,7 @@ export function FilterSidebar({
         <label className="mb-2 block text-xs uppercase tracking-wide text-zinc-500">
           Search Filters
         </label>
-        <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-black/35 px-3 py-2">
+        <div className="flex items-center gap-2 rounded-xl border border-white/15 bg-black/35 px-3 py-2">
           <Search className="h-4 w-4 text-zinc-500" />
           <input
             value={query}
@@ -205,7 +192,7 @@ export function FilterSidebar({
         <button
           type="button"
           onClick={clearFilters}
-          className="inline-flex flex-1 items-center justify-center rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
+          className="inline-flex flex-1 items-center justify-center rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-xs text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
         >
           Reset
         </button>

@@ -23,6 +23,7 @@ const founderSyncSchema = z.object({
   linkedinUrl: z.string().url().nullable().optional(),
   twitterUrl: z.string().url().nullable().optional(),
   verified: z.boolean().optional(),
+  isFeatured: z.boolean().optional(),
   avatarUrl: z.string().url().nullable().optional(),
   slug: z.string().optional(),
 });

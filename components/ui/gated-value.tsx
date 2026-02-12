@@ -1,35 +1,51 @@
-import Link from "next/link";
+"use client";
+
+import { useMemo, useState } from "react";
+import { Lock } from "lucide-react";
+import { logDataUnlock } from "@/lib/client-tracking";
 
 type GatedValueProps = {
-  unlocked: boolean;
   blurredPreview: string;
   actualValue: string | null;
-  ctaHref?: string;
   ctaLabel?: string;
+  companyId: string;
 };
 
 export function GatedValue({
-  unlocked,
   blurredPreview,
   actualValue,
-  ctaHref = "/login",
-  ctaLabel = "Unlock Contact Info",
+  ctaLabel = "Show Info",
+  companyId,
 }: GatedValueProps) {
-  if (unlocked) {
-    return <span className="text-zinc-100">{actualValue ?? "Not available"}</span>;
+  const [revealed, setRevealed] = useState(false);
+  const displayValue = useMemo(() => actualValue ?? blurredPreview, [actualValue, blurredPreview]);
+  const visibleValue = revealed ? displayValue : blurredPreview;
+
+  async function onReveal() {
+    // TODO: Check User Subscription Tier Here
+    setRevealed(true);
+    await logDataUnlock(companyId);
   }
 
   return (
-    <span className="relative inline-flex min-h-8 items-center">
-      <span className="select-none blur-sm">{blurredPreview}</span>
-      <span className="absolute inset-0 flex items-center">
-        <Link
-          href={ctaHref}
-          className="rounded bg-[#6366f1] px-2 py-1 text-[10px] font-medium text-white transition-colors hover:bg-[#5558ea]"
-        >
-          {ctaLabel}
-        </Link>
+    <div className="relative inline-flex min-h-9 min-w-[175px] items-center rounded-md border border-white/10 bg-black/25 px-2.5 py-1.5">
+      <span
+        className={`pr-24 text-sm text-zinc-100 transition-[filter,opacity] duration-200 ${
+          revealed ? "blur-0 opacity-100" : "select-none blur-sm opacity-90"
+        }`}
+      >
+        {visibleValue}
       </span>
-    </span>
+      {!revealed ? (
+        <button
+          type="button"
+          onClick={onReveal}
+          className="absolute inset-y-1 right-1 inline-flex items-center gap-1 rounded bg-gradient-to-r from-blue-500 to-purple-500 px-2 py-0.5 text-[10px] font-medium text-white transition-all hover:brightness-110"
+        >
+          <Lock className="h-3 w-3" />
+          {ctaLabel}
+        </button>
+      ) : null}
+    </div>
   );
 }

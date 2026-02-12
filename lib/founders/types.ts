@@ -19,6 +19,7 @@ export type FounderDirectoryItem = {
   linkedinUrl: string | null;
   twitterUrl: string | null;
   verified: boolean;
+  isFeatured: boolean;
   avatarUrl: string | null;
 };
 
@@ -40,6 +41,7 @@ export type FounderSyncInput = {
   linkedinUrl?: string | null;
   twitterUrl?: string | null;
   verified?: boolean;
+  isFeatured?: boolean;
   avatarUrl?: string | null;
   slug?: string;
 };
