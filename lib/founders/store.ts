@@ -1,5 +1,6 @@
 import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
+import { isDatabaseConfigured } from "@/lib/db-config";
 import { buildPrimaryLinkedInAvatar } from "@/lib/founders/linkedin";
 import { PDF_FOUNDER_SEED, PDF_SOURCE_URL } from "@/lib/founders/seed-data";
 import type {
@@ -494,6 +495,22 @@ function mapDbItemToFounder(item: {
 export async function getFounderDirectory(
   options: FounderQueryOptions = {},
 ): Promise<FounderDirectoryItem[]> {
+  if (!isDatabaseConfigured()) {
+    const seeded = applyFeaturedFlag(
+      sortByFundingPriority(
+        dedupeExactDetailProfiles(
+          dedupeCompanyProfiles(
+            applySeedFilters(PDF_FOUNDER_SEED, options).map(sanitizeItem),
+          ),
+        ),
+      ),
+    );
+    if (options.limit && options.limit > 0) {
+      return seeded.slice(0, options.limit);
+    }
+    return seeded;
+  }
+
   try {
     const where: Prisma.FounderDirectoryEntryWhereInput = {};
 

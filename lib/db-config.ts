@@ -1,10 +1,23 @@
 const DATABASE_URL_PATTERN = /Environment variable not found:\s*DATABASE_URL/i;
+const DATABASE_URL_PLACEHOLDER_PATTERNS = [
+  /USER:PASSWORD@HOST/i,
+  /DB_NAME/i,
+  /replace-with/i,
+  /example/i,
+];
 
 export const DATABASE_CONFIG_ERROR =
   "Database is not configured. Add DATABASE_URL in .env.local, then restart the server.";
 
 export function isDatabaseConfigured() {
-  return Boolean(process.env.DATABASE_URL?.trim());
+  const databaseUrl = process.env.DATABASE_URL?.trim();
+  if (!databaseUrl) {
+    return false;
+  }
+
+  return !DATABASE_URL_PLACEHOLDER_PATTERNS.some((pattern) =>
+    pattern.test(databaseUrl),
+  );
 }
 
 export function toPublicDatabaseError(

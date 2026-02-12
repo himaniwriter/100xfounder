@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/prisma";
+import { isDatabaseConfigured } from "@/lib/db-config";
 
 export type GlobalSiteSettings = {
   headCode: string;
@@ -45,6 +46,10 @@ export const DEFAULT_GLOBAL_SITE_SETTINGS: GlobalSiteSettings = {
 };
 
 export async function readGlobalSiteSettings(): Promise<GlobalSiteSettings> {
+  if (!isDatabaseConfigured()) {
+    return DEFAULT_GLOBAL_SITE_SETTINGS;
+  }
+
   try {
     const rows = await prisma.$queryRawUnsafe<Array<{ value: Partial<GlobalSiteSettings> }>>(
       "SELECT value FROM site_settings WHERE key = 'global' LIMIT 1",
