@@ -1,9 +1,14 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { requireAdminApi } from "@/lib/auth/admin-guard";
+import { readGlobalSiteSettings } from "@/lib/site-settings";
 
-function getSupabaseConfig() {
-  const baseUrl = process.env.SUPABASE_URL;
-  const serviceRole = process.env.SUPABASE_SERVICE_ROLE_KEY;
+async function getSupabaseConfig() {
+  const settings = await readGlobalSiteSettings();
+  const baseUrl = settings.supabaseUrl || process.env.SUPABASE_URL || "";
+  const serviceRole =
+    settings.supabaseServiceRoleKey ||
+    process.env.SUPABASE_SERVICE_ROLE_KEY ||
+    "";
 
   if (!baseUrl || !serviceRole) {
     return null;
@@ -36,7 +41,7 @@ export async function GET(request: NextRequest) {
     return access;
   }
 
-  const config = getSupabaseConfig();
+  const config = await getSupabaseConfig();
   if (!config) {
     return NextResponse.json(
       { success: false, error: "SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY is not configured." },
@@ -87,7 +92,7 @@ export async function POST(request: NextRequest) {
     return access;
   }
 
-  const config = getSupabaseConfig();
+  const config = await getSupabaseConfig();
   if (!config) {
     return NextResponse.json(
       { success: false, error: "SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY is not configured." },

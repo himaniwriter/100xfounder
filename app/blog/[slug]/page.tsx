@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { FounderCallout } from "@/components/blog/founder-callout";
 import { NewsCoverImage } from "@/components/ui/news-cover-image";
 import { extractHeadings, getBlogPostBySlug } from "@/lib/blog/store";
+import { sanitizeRichHtml } from "@/lib/security/sanitize";
 
 type BlogPostPageProps = {
   params: {
@@ -27,11 +28,12 @@ function isHtmlContent(content: string): boolean {
 
 function renderContent(content: string) {
   if (isHtmlContent(content)) {
+    const safeHtml = sanitizeRichHtml(content);
     return [
       <div
         key="html-content"
         className="prose prose-invert max-w-none text-[18px] leading-[1.8]"
-        dangerouslySetInnerHTML={{ __html: content }}
+        dangerouslySetInnerHTML={{ __html: safeHtml }}
       />,
     ];
   }
@@ -163,6 +165,20 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               <span>{post.readingTime}</span>
               <span>{post.author}</span>
             </div>
+            {post.sourceUrl ? (
+              <p className="mt-3 text-xs text-zinc-400">
+                Source:{" "}
+                <a
+                  href={post.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="text-indigo-300 hover:text-indigo-200"
+                >
+                  {post.sourceName ?? "Original Publisher"}
+                </a>
+                {post.sourceTitle ? <span className="text-zinc-500"> · {post.sourceTitle}</span> : null}
+              </p>
+            ) : null}
           </header>
 
           <NewsCoverImage

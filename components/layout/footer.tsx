@@ -2,41 +2,113 @@ import Link from "next/link";
 
 const footerColumns = [
   {
-    title: "Directories by City",
+    title: "General",
     links: [
-      { label: "Top Startups in Delhi", href: "/founders?city=delhi" },
-      { label: "Top Startups in Bangalore", href: "/founders?city=bangalore" },
-      { label: "Top Startups in Mumbai", href: "/founders?city=mumbai" },
+      { label: "About", href: "/about" },
+      { label: "Startups", href: "/startups" },
+      { label: "Jobs", href: "/jobs" },
+      { label: "Salary & Equity", href: "/salary-equity" },
+      { label: "Negotiation Coaching", href: "/negotiation-coaching" },
+      { label: "Fulfillment Policy", href: "/fulfillment-policy" },
+      { label: "Add Startup or Job", href: "/add-startup-or-job" },
+      { label: "Sitemap (HTML)", href: "/sitemap" },
+      { label: "Sitemap (XML)", href: "/sitemap.xml" },
     ],
   },
   {
-    title: "Directories by Industry",
+    title: "Industry",
     links: [
-      { label: "Fintech India", href: "/founders?industry=fintech" },
-      { label: "EdTech India", href: "/founders?industry=edtech" },
-      { label: "SaaS Founders", href: "/founders?industry=saas" },
+      { label: "AI startups", href: "/startups/ai-startups" },
+      { label: "Biotech startups", href: "/startups/biotech-startups" },
+      { label: "Cybersecurity startups", href: "/startups/cybersecurity-startups" },
+      { label: "E-Commerce startups", href: "/startups/e-commerce-startups" },
+      { label: "EdTech startups", href: "/startups/edtech-startups" },
+      { label: "FinTech startups", href: "/startups/fintech-startups" },
+      { label: "Healthcare startups", href: "/startups/healthcare-startups" },
+      { label: "Marketplace startups", href: "/startups/marketplace-startups" },
+      { label: "SaaS startups", href: "/startups/saas-startups" },
+      { label: "Sustainability startups", href: "/startups/sustainability-startups" },
     ],
   },
   {
-    title: "Directories by Role",
+    title: "Stage",
     links: [
-      { label: "Find CTOs", href: "/founders?role=cto" },
-      { label: "Find Angel Investors", href: "/founders?role=angel-investor" },
-      { label: "Find YC Founders", href: "/founders?network=yc" },
+      { label: "Early-stage startups", href: "/startups/early-stage-startups" },
+      { label: "Growth-stage startups", href: "/startups/growth-stage-startups" },
+      { label: "Mature startups", href: "/startups/mature-startups" },
+      { label: "Under 50 employees", href: "/startups/under-50-employees" },
+      { label: "Under 100 employees", href: "/startups/under-100-employees" },
+      { label: "Under 500 employees", href: "/startups/under-500-employees" },
+      { label: "Founded in 2021", href: "/startups/founded-in-2021" },
+      { label: "Founded in 2020", href: "/startups/founded-in-2020" },
     ],
   },
   {
-    title: "Platform",
+    title: "HQ location",
     links: [
-      { label: "Founder Directory", href: "/founders" },
-      { label: "Signals", href: "/signals" },
-      { label: "Membership Plans", href: "/pricing" },
-      { label: "Blog", href: "/blog" },
-      { label: "Sitemap", href: "/sitemap" },
-      { label: "Privacy", href: "/privacy" },
-      { label: "Terms", href: "/terms" },
+      { label: "United States Startups", href: "/startups/united-states-startups" },
+      { label: "Remote Startups", href: "/startups/remote-startups" },
+      { label: "Startups in New York", href: "/startups/startups-in-new-york" },
+      { label: "Startups in Chicago", href: "/startups/startups-in-chicago" },
+      { label: "Startups in Boston", href: "/startups/startups-in-boston" },
+      { label: "Startups in San Francisco", href: "/startups/startups-in-san-francisco" },
+      { label: "Startups in Los Angeles", href: "/startups/startups-in-los-angeles" },
+      { label: "Startups in Seattle", href: "/startups/startups-in-seattle" },
+      { label: "Startups in Austin", href: "/startups/startups-in-austin" },
+      { label: "Startups in Miami", href: "/startups/startups-in-miami" },
+      { label: "Startups in Washington DC", href: "/startups/startups-in-washington-dc" },
+      { label: "Startups in Dallas", href: "/startups/startups-in-dallas" },
+      { label: "Startups in Philadelphia", href: "/startups/startups-in-philadelphia" },
+      { label: "Startups in San Diego", href: "/startups/startups-in-san-diego" },
+      { label: "Startups in Houston", href: "/startups/startups-in-houston" },
+      { label: "Startups in Atlanta", href: "/startups/startups-in-atlanta" },
+      { label: "Startups in Denver", href: "/startups/startups-in-denver" },
+      { label: "Startups in India", href: "/startups/startups-in-india" },
+      { label: "Startups in London", href: "/startups/startups-in-london" },
+      { label: "Startups in Canada", href: "/startups/startups-in-canada" },
     ],
   },
+];
+
+const highIntentKeywords = [
+  { label: "AI startups", href: "/startups/ai-startups" },
+  { label: "Biotech startups", href: "/startups/biotech-startups" },
+  { label: "Cybersecurity startups", href: "/startups/cybersecurity-startups" },
+  { label: "E-Commerce startups", href: "/startups/e-commerce-startups" },
+  { label: "EdTech startups", href: "/startups/edtech-startups" },
+  { label: "FinTech startups", href: "/startups/fintech-startups" },
+  { label: "Healthcare startups", href: "/startups/healthcare-startups" },
+  { label: "Marketplace startups", href: "/startups/marketplace-startups" },
+  { label: "SaaS startups", href: "/startups/saas-startups" },
+  { label: "Sustainability startups", href: "/startups/sustainability-startups" },
+  { label: "Early-stage startups", href: "/startups/early-stage-startups" },
+  { label: "Growth-stage startups", href: "/startups/growth-stage-startups" },
+  { label: "Mature startups", href: "/startups/mature-startups" },
+  { label: "Under 50 employees", href: "/startups/under-50-employees" },
+  { label: "Under 100 employees", href: "/startups/under-100-employees" },
+  { label: "Under 500 employees", href: "/startups/under-500-employees" },
+  { label: "Founded in 2021", href: "/startups/founded-in-2021" },
+  { label: "Founded in 2020", href: "/startups/founded-in-2020" },
+  { label: "United States startups", href: "/startups/united-states-startups" },
+  { label: "Remote Startups", href: "/startups/remote-startups" },
+  { label: "Startups in New York", href: "/startups/startups-in-new-york" },
+  { label: "Startups in Chicago", href: "/startups/startups-in-chicago" },
+  { label: "Startups in Boston", href: "/startups/startups-in-boston" },
+  { label: "Startups in San Francisco", href: "/startups/startups-in-san-francisco" },
+  { label: "Startups in Los Angeles", href: "/startups/startups-in-los-angeles" },
+  { label: "Startups in Seattle", href: "/startups/startups-in-seattle" },
+  { label: "Startups in Austin", href: "/startups/startups-in-austin" },
+  { label: "Startups in Miami", href: "/startups/startups-in-miami" },
+  { label: "Startups in Washington DC", href: "/startups/startups-in-washington-dc" },
+  { label: "Startups in Dallas", href: "/startups/startups-in-dallas" },
+  { label: "Startups in Philadelphia", href: "/startups/startups-in-philadelphia" },
+  { label: "Startups in San Diego", href: "/startups/startups-in-san-diego" },
+  { label: "Startups in Houston", href: "/startups/startups-in-houston" },
+  { label: "Startups in Atlanta", href: "/startups/startups-in-atlanta" },
+  { label: "Startups in Denver", href: "/startups/startups-in-denver" },
+  { label: "Startups in India", href: "/startups/startups-in-india" },
+  { label: "Startups in London", href: "/startups/startups-in-london" },
+  { label: "Startups in Canada", href: "/startups/startups-in-canada" },
 ];
 
 export function Footer() {
@@ -65,9 +137,27 @@ export function Footer() {
         <div className="mb-10 rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md">
           <h3 className="text-base font-semibold text-white">Directory Navigation</h3>
           <p className="mt-2 max-w-3xl text-sm text-zinc-400">
-            Explore founder intelligence by location, industry, and role to discover
-            the highest-signal opportunities faster.
+            Explore startup intelligence by industry, stage, and headquarters to discover
+            the highest-signal companies faster.
           </p>
+        </div>
+
+        <div className="mb-10 rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md">
+          <h3 className="text-base font-semibold text-white">Top Searches</h3>
+          <p className="mt-2 text-sm text-zinc-400">
+            High-intent startup and funding queries users search for across Google.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {highIntentKeywords.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -91,7 +181,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-6 text-sm text-zinc-500">
-          © 2026 100Xfounder. The #1 Source for Indian Startup Intelligence.
+          © 2026 100Xfounder. The #1 Source for Indian & US Startup Intelligence.
         </div>
       </div>
     </footer>

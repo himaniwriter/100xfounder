@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { BlogCard } from "@/components/blog/blog-card";
@@ -7,62 +9,117 @@ import { getBlogHomeSections } from "@/lib/blog/store";
 
 type BlogHomePageProps = {
   searchParams?: {
-    insight?: string;
+    category?: string;
   };
 };
 
 export const metadata: Metadata = {
-  title: "Startup Intelligence Blog | 100Xfounder",
+  title: "Startup News & Funding Desk | 100Xfounder Blog",
   description:
-    "Deep dives on founders, startup funding signals, and market intelligence from 100Xfounder.",
+    "Daily startup intelligence from India and the US: rewritten funding updates, market signals, and founder moves with source attribution.",
 };
 
 export default function BlogHomePage({ searchParams }: BlogHomePageProps) {
-  const { featured, trending, recent } = getBlogHomeSections();
-  const insight = searchParams?.insight?.trim();
+  const { posts } = getBlogHomeSections();
+  const activeCategory = searchParams?.category?.trim();
+  const visiblePosts = activeCategory
+    ? posts.filter((post) => post.category.toLowerCase() === activeCategory.toLowerCase())
+    : posts;
+  const featured = visiblePosts.find((post) => post.isFeatured) ?? visiblePosts[0] ?? null;
+  const trending = visiblePosts
+    .filter((post) => post.isTrending && post.slug !== featured?.slug)
+    .slice(0, 3);
+  const latestFeed = visiblePosts.filter((post) => post.slug !== featured?.slug).slice(0, 9);
+  const categories = Array.from(new Set(posts.map((post) => post.category))).slice(0, 8);
 
   return (
     <main className="min-h-screen bg-[#050505] text-[#EDEDED]">
       <Navbar />
 
-      <section className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 lg:grid-cols-[minmax(0,1fr)_320px] sm:px-6 lg:px-8">
+      <section className="border-b border-white/10 bg-black/40">
+        <div className="mx-auto flex w-full max-w-7xl items-center gap-3 overflow-x-auto px-4 py-3 sm:px-6 lg:px-8">
+          <span className="shrink-0 text-xs uppercase tracking-[0.22em] text-zinc-500">Newsroom</span>
+          <Link
+            href="/blog"
+            className={`shrink-0 rounded-full border px-3 py-1 text-xs transition-colors ${
+              activeCategory
+                ? "border-white/15 bg-white/[0.03] text-zinc-300 hover:border-white/25 hover:text-white"
+                : "border-indigo-400/50 bg-indigo-500/15 text-indigo-200"
+            }`}
+          >
+            All
+          </Link>
+          {categories.map((category) => (
+            <Link
+              key={category}
+              href={`/blog?category=${encodeURIComponent(category)}`}
+              className={`shrink-0 rounded-full border px-3 py-1 text-xs transition-colors ${
+                activeCategory?.toLowerCase() === category.toLowerCase()
+                  ? "border-indigo-400/50 bg-indigo-500/15 text-indigo-200"
+                  : "border-white/15 bg-white/[0.03] text-zinc-300 hover:border-white/25 hover:text-white"
+              }`}
+            >
+              {category}
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-8 lg:grid-cols-[minmax(0,1fr)_320px] sm:px-6 lg:px-8">
         <div>
           <header className="mb-6">
-            <h1 className="text-3xl font-semibold tracking-tight text-white">Market Intelligence & Deep Dives</h1>
-            <p className="mt-2 max-w-3xl text-sm text-zinc-400">
-              Founder-level analysis across SaaS, funding, and operator playbooks.
+            <p className="text-xs uppercase tracking-[0.26em] text-zinc-500">100Xfounder News Desk</p>
+            <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+              India & US Startup Funding Coverage
+            </h1>
+            <p className="mt-2 max-w-3xl text-sm text-zinc-400 sm:text-base">
+              Fast, source-attributed rewrites of high-signal startup stories. Read the summary here, then jump to the original
+              reporting when needed.
             </p>
-            {insight ? (
-              <p className="mt-3 text-xs text-indigo-300">
-                Highlighted insight: <span className="font-medium">{insight.replace(/-/g, " ")}</span>
-              </p>
-            ) : null}
           </header>
 
-          {featured ? (
-            <div className="grid gap-4 lg:grid-cols-5">
-              <BlogCard post={featured} className="h-[420px] lg:col-span-3" />
-              <div className="grid gap-4 lg:col-span-2">
-                {trending.map((post) => (
-                  <BlogCard key={post.slug} post={post} className="h-[132px]" />
-                ))}
-              </div>
-            </div>
-          ) : null}
+          {featured ? <BlogCard post={featured} variant="hero" /> : null}
 
           <div className="mt-8">
-            <h2 className="mb-4 text-sm font-medium uppercase tracking-wide text-zinc-300">
-              Recent Articles
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {recent.map((post) => (
-                <BlogCard key={post.slug} post={post} className="h-[250px]" />
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="text-sm font-medium uppercase tracking-wide text-zinc-300">Latest Coverage</h2>
+              <Link href="https://entrackr.com/" target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-1 text-xs text-zinc-400 transition-colors hover:text-zinc-200">
+                View source site
+                <ChevronRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+            <div className="space-y-3">
+              {latestFeed.map((post) => (
+                <BlogCard key={post.slug} post={post} variant="feed" />
               ))}
+              {latestFeed.length === 0 ? (
+                <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6 text-sm text-zinc-400">
+                  No posts found for this category.
+                </div>
+              ) : null}
             </div>
           </div>
         </div>
 
-        <NewsletterSubscribeBox topic="blog" />
+        <aside className="space-y-5">
+          <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md">
+            <h2 className="text-xs uppercase tracking-[0.22em] text-zinc-500">Trending on Desk</h2>
+            <div className="mt-3 space-y-3">
+              {trending.map((post) => (
+                <BlogCard key={post.slug} post={post} variant="stack" />
+              ))}
+            </div>
+          </div>
+
+          <NewsletterSubscribeBox topic="startup-news" />
+
+          <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md">
+            <p className="text-xs uppercase tracking-[0.22em] text-zinc-500">Coverage Policy</p>
+            <p className="mt-2 text-sm text-zinc-400">
+              We publish rewritten summaries with source links, and do not mirror full articles from publishers.
+            </p>
+          </div>
+        </aside>
       </section>
 
       <Footer />

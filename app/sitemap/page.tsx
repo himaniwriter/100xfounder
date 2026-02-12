@@ -41,7 +41,14 @@ function SitemapSection({ title, links }: SectionProps) {
 }
 
 export default async function HtmlSitemapPage() {
-  const { baseUrl, staticLinks, blogLinks, companyLinks, founderLinks } =
+  const {
+    baseUrl,
+    staticLinks,
+    blogLinks,
+    startupCategoryLinks,
+    companyLinks,
+    founderLinks,
+  } =
     await getHtmlSitemapData();
 
   return (
@@ -69,6 +76,7 @@ export default async function HtmlSitemapPage() {
 
         <div className="grid gap-5">
           <SitemapSection title="Core Pages" links={staticLinks} />
+          <SitemapSection title="Startup Category Pages" links={startupCategoryLinks} />
           <SitemapSection title="Blog Articles" links={blogLinks} />
           <SitemapSection title="Company Profiles" links={companyLinks} />
           <SitemapSection title="Founder Profiles" links={founderLinks} />

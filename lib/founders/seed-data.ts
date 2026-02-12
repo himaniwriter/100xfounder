@@ -1,5 +1,7 @@
 import pdfSeed from "@/lib/founders/pdf-seed.json";
+import { GROWTHLIST_US_SEED } from "@/lib/founders/growthlist-us-seed";
 import { RECENT_FUNDED_SEED } from "@/lib/founders/recent-funded-seed";
+import { TOPSTARTUPS_SEED } from "@/lib/founders/topstartups-seed";
 import { WIKI_Eponymous_SEED } from "@/lib/founders/wiki-seed";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
 
@@ -39,6 +41,8 @@ const normalizedPdf = (pdfSeed as unknown as Array<Record<string, unknown>>).map
 
 const combined = [
   ...RECENT_FUNDED_SEED,
+  ...GROWTHLIST_US_SEED,
+  ...TOPSTARTUPS_SEED,
   ...normalizedPdf,
   ...WIKI_Eponymous_SEED,
 ];

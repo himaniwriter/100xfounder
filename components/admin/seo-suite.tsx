@@ -32,7 +32,9 @@ export function SeoSuite() {
   const { data, error, isLoading, mutate } = useSWR("/api/admin/settings", fetcher);
   const [form, setForm] = useState<SiteSettings>(DEFAULT_SETTINGS);
   const [saving, setSaving] = useState(false);
-  const [status, setStatus] = useState<string | null>(null);
+  const [status, setStatus] = useState<{ type: "success" | "error"; message: string } | null>(
+    null,
+  );
 
   useEffect(() => {
     if (data) {
@@ -44,22 +46,35 @@ export function SeoSuite() {
     event.preventDefault();
     setSaving(true);
     setStatus(null);
+    try {
+      const response = await fetch("/api/admin/settings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const result = await response.json();
 
-    const response = await fetch("/api/admin/settings", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
-    const result = await response.json();
-    setSaving(false);
+      if (!response.ok || !result.success) {
+        setStatus({
+          type: "error",
+          message: `Failed to save configuration: ${result.error ?? "Unknown error."}`,
+        });
+        return;
+      }
 
-    if (!response.ok || !result.success) {
-      setStatus(result.error ?? "Failed to save configuration.");
-      return;
+      setStatus({ type: "success", message: "Configuration saved successfully." });
+      await mutate();
+    } catch (saveError) {
+      setStatus({
+        type: "error",
+        message:
+          saveError instanceof Error
+            ? `Failed to save configuration: ${saveError.message}`
+            : "Failed to save configuration.",
+      });
+    } finally {
+      setSaving(false);
     }
-
-    setStatus("Configuration saved.");
-    await mutate();
   }
 
   return (
@@ -163,8 +178,14 @@ export function SeoSuite() {
       </form>
 
       {status ? (
-        <p className="rounded-md border border-white/10 bg-black/40 px-3 py-2 text-xs text-zinc-300">
-          {status}
+        <p
+          className={
+            status.type === "success"
+              ? "rounded-md border border-emerald-400/35 bg-emerald-500/10 px-3 py-2 text-xs text-emerald-200"
+              : "rounded-md border border-red-400/35 bg-red-500/10 px-3 py-2 text-xs text-red-200"
+          }
+        >
+          {status.message}
         </p>
       ) : null}
     </div>

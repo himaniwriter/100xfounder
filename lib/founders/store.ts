@@ -19,6 +19,22 @@ const RECENT_FUNDING_RE =
   /(raised|funding|funded|round|valuation|series\s*[a-f]|seed|pre[- ]seed|202[4-9])/i;
 const MATURE_COMPANY_RE =
   /(publicly listed|listed\/regulated|ipo|public company|subsidiary)/i;
+const COMPANY_SUFFIXES = new Set([
+  "co",
+  "company",
+  "corp",
+  "corporation",
+  "inc",
+  "incorporated",
+  "llc",
+  "ltd",
+  "limited",
+  "plc",
+  "pvt",
+  "private",
+  "technologies",
+  "technology",
+]);
 
 function slugify(value: string): string {
   return value
@@ -34,6 +50,184 @@ export function toCompanySlug(companyName: string): string {
 
 function normalize(value: string): string {
   return value.trim().toLowerCase();
+}
+
+function normalizeForMatch(value: string | null | undefined): string {
+  if (!value) {
+    return "";
+  }
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function canonicalCompanyKey(value: string): string {
+  const cleaned = normalizeForMatch(value);
+  if (!cleaned) {
+    return "";
+  }
+  const words = cleaned
+    .split(" ")
+    .filter((word) => word && !COMPANY_SUFFIXES.has(word));
+  return words.join(" ") || cleaned;
+}
+
+function profileQualityScore(item: FounderDirectoryItem): number {
+  let score = 0;
+  if (item.verified) score += 5;
+  if (item.isFeatured) score += 4;
+  if (item.fundingInfo) score += 3;
+  if (item.websiteUrl) score += 2;
+  if (item.ycProfileUrl) score += 2;
+  if (item.linkedinUrl) score += 1;
+  if (item.twitterUrl) score += 1;
+  score += Math.min(item.recentNews.length, 3);
+  score += Math.min(item.techStack.length, 4);
+  score += Math.min(Math.floor(item.productSummary.length / 80), 3);
+  score += Math.max(getFundingPriority(item), 0);
+  return score;
+}
+
+function choosePreferredProfile(
+  current: FounderDirectoryItem,
+  candidate: FounderDirectoryItem,
+): FounderDirectoryItem {
+  const scoreCurrent = profileQualityScore(current);
+  const scoreCandidate = profileQualityScore(candidate);
+  if (scoreCandidate !== scoreCurrent) {
+    return scoreCandidate > scoreCurrent ? candidate : current;
+  }
+
+  const yearCurrent = current.foundedYear ?? -1;
+  const yearCandidate = candidate.foundedYear ?? -1;
+  if (yearCandidate !== yearCurrent) {
+    return yearCandidate > yearCurrent ? candidate : current;
+  }
+
+  return candidate.founderName.localeCompare(current.founderName) < 0
+    ? candidate
+    : current;
+}
+
+function dedupeCompanyProfiles(items: FounderDirectoryItem[]): FounderDirectoryItem[] {
+  const byCompanyKey = new Map<string, FounderDirectoryItem>();
+
+  items.forEach((item) => {
+    const key = canonicalCompanyKey(item.companyName);
+    if (!key) {
+      return;
+    }
+
+    const current = byCompanyKey.get(key);
+    if (!current) {
+      byCompanyKey.set(key, item);
+      return;
+    }
+
+    byCompanyKey.set(key, choosePreferredProfile(current, item));
+  });
+
+  return Array.from(byCompanyKey.values());
+}
+
+function exactDetailSignature(item: FounderDirectoryItem): string {
+  const summary = normalizeForMatch(item.productSummary);
+  const stage = normalizeForMatch(item.stage);
+  const location = normalizeForMatch(item.headquarters ?? "");
+  const funding = normalizeForMatch(item.fundingInfo ?? "");
+  if (!summary || summary.length < 30) {
+    return "";
+  }
+  return `${summary}::${stage}::${location}::${funding}`;
+}
+
+function dedupeExactDetailProfiles(items: FounderDirectoryItem[]): FounderDirectoryItem[] {
+  const bySignature = new Map<string, FounderDirectoryItem>();
+  const result: FounderDirectoryItem[] = [];
+
+  items.forEach((item) => {
+    const signature = exactDetailSignature(item);
+    if (!signature) {
+      result.push(item);
+      return;
+    }
+
+    const current = bySignature.get(signature);
+    if (!current) {
+      bySignature.set(signature, item);
+      result.push(item);
+      return;
+    }
+
+    const preferred = choosePreferredProfile(current, item);
+    if (preferred.id !== current.id) {
+      bySignature.set(signature, preferred);
+      const index = result.findIndex((candidate) => candidate.id === current.id);
+      if (index >= 0) {
+        result[index] = preferred;
+      }
+    }
+  });
+
+  return result;
+}
+
+function syncEntryQualityScore(entry: FounderSyncInput): number {
+  let score = 0;
+  if (entry.verified) score += 5;
+  if (entry.fundingInfo) score += 3;
+  if (entry.websiteUrl) score += 2;
+  if (entry.ycProfileUrl) score += 2;
+  if (entry.linkedinUrl) score += 1;
+  if (entry.twitterUrl) score += 1;
+  score += Math.min(entry.recentNews?.length ?? 0, 3);
+  score += Math.min(entry.techStack?.length ?? 0, 4);
+  score += Math.min(Math.floor(entry.productSummary.length / 80), 3);
+  return score;
+}
+
+function choosePreferredSyncEntry(
+  current: FounderSyncInput,
+  candidate: FounderSyncInput,
+): FounderSyncInput {
+  const scoreCurrent = syncEntryQualityScore(current);
+  const scoreCandidate = syncEntryQualityScore(candidate);
+  if (scoreCandidate !== scoreCurrent) {
+    return scoreCandidate > scoreCurrent ? candidate : current;
+  }
+
+  const yearCurrent = current.foundedYear ?? -1;
+  const yearCandidate = candidate.foundedYear ?? -1;
+  if (yearCandidate !== yearCurrent) {
+    return yearCandidate > yearCurrent ? candidate : current;
+  }
+
+  return candidate.founderName.localeCompare(current.founderName) < 0
+    ? candidate
+    : current;
+}
+
+function dedupeSyncEntriesByCompany(entries: FounderSyncInput[]): FounderSyncInput[] {
+  const byCompany = new Map<string, FounderSyncInput>();
+
+  entries.forEach((entry) => {
+    const key = canonicalCompanyKey(entry.companyName);
+    if (!key) {
+      return;
+    }
+
+    const current = byCompany.get(key);
+    if (!current) {
+      byCompany.set(key, entry);
+      return;
+    }
+
+    byCompany.set(key, choosePreferredSyncEntry(current, entry));
+  });
+
+  return Array.from(byCompany.values());
 }
 
 function dedupeRepeatedHalf(value: string): string {
@@ -240,7 +434,9 @@ export function splitRecentlyFunded(
   items: FounderDirectoryItem[],
   maxRecent = 24,
 ): { recent: FounderDirectoryItem[]; rest: FounderDirectoryItem[] } {
-  const sorted = sortByFundingPriority(items);
+  const sorted = sortByFundingPriority(
+    dedupeExactDetailProfiles(dedupeCompanyProfiles(items)),
+  );
   const recent = sorted.filter((item) => getFundingPriority(item) > 0).slice(0, maxRecent);
   const recentIds = new Set(recent.map((item) => item.id));
   const rest = sorted.filter((item) => !recentIds.has(item.id));
@@ -320,19 +516,12 @@ export async function getFounderDirectory(
 
     if (rows.length > 0) {
       const dbItems = rows.map(mapDbItemToFounder);
-      const selectedStages = options.stage ?? [];
-      const shouldAugmentSeriesStages =
-        selectedStages.length > 0 &&
-        selectedStages.some((stage) => /series\s*[b-d]/i.test(stage));
-
-      const mergedItems = shouldAugmentSeriesStages
-        ? mergeUniqueBySlug(
-            dbItems,
-            applySeedFilters(PDF_FOUNDER_SEED, options).map(sanitizeItem),
-          )
-        : dbItems;
-
-      const sorted = applyFeaturedFlag(sortByFundingPriority(mergedItems));
+      const mergedItems = mergeUniqueBySlug(
+        dbItems,
+        applySeedFilters(PDF_FOUNDER_SEED, options).map(sanitizeItem),
+      );
+      const uniqueItems = dedupeExactDetailProfiles(dedupeCompanyProfiles(mergedItems));
+      const sorted = applyFeaturedFlag(sortByFundingPriority(uniqueItems));
       if (options.limit && options.limit > 0) {
         return sorted.slice(0, options.limit);
       }
@@ -341,9 +530,15 @@ export async function getFounderDirectory(
   } catch {
     // Fallback to seed records when DB is unavailable or not migrated yet.
   }
-  const seeded = applyFeaturedFlag(sortByFundingPriority(
-    applySeedFilters(PDF_FOUNDER_SEED, options).map(sanitizeItem),
-  ));
+  const seeded = applyFeaturedFlag(
+    sortByFundingPriority(
+      dedupeExactDetailProfiles(
+        dedupeCompanyProfiles(
+          applySeedFilters(PDF_FOUNDER_SEED, options).map(sanitizeItem),
+        ),
+      ),
+    ),
+  );
   if (options.limit && options.limit > 0) {
     return seeded.slice(0, options.limit);
   }
@@ -378,7 +573,9 @@ export async function upsertFounderDirectoryFromN8N(
     return { upserted: 0 };
   }
 
-  const operations = entries.map((entry) => {
+  const dedupedEntries = dedupeSyncEntriesByCompany(entries);
+
+  const operations = dedupedEntries.map((entry) => {
     const slug =
       entry.slug && entry.slug.length > 0
         ? slugify(entry.slug)

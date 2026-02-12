@@ -16,9 +16,9 @@ const HOMEPAGE_CONTENT_PATH = path.join(
 );
 
 const FALLBACK_CONTENT: HomepageContent = {
-  heroTitle: "The World’s Most Accurate Index of Indian Founders & Startups.",
+  heroTitle: "The World’s Most Accurate Index of Indian & US Founders & Startups.",
   heroSubtitle:
-    "Access verified contact details, funding signals, and growth metrics for 10,000+ YC founders and top Indian enterprises. Stop guessing, start connecting.",
+    "Access verified contact details, funding signals, and growth metrics for 10,000+ YC founders and top Indian and US startups. Stop guessing, start connecting.",
   primaryCtaLabel: "Search the Database",
   primaryCtaHref: "/founders",
   secondaryCtaLabel: "Get Full Access",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { readGlobalSiteSettings } from "@/lib/site-settings";
+import { sanitizeAdminEmbedHtml } from "@/lib/security/sanitize";
 import "./globals.css";
 import "react-quill/dist/quill.snow.css";
 
@@ -28,16 +29,17 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const siteSettings = await readGlobalSiteSettings();
+  const safeHeadCode = siteSettings.headCode
+    ? sanitizeAdminEmbedHtml(siteSettings.headCode)
+    : "";
+  const safeBodyCode = siteSettings.bodyCode
+    ? sanitizeAdminEmbedHtml(siteSettings.bodyCode)
+    : "";
 
   return (
     <html lang="en" suppressHydrationWarning>
-      {siteSettings.headCode ? (
-        <head>
-          <script
-            id="admin-head-code"
-            dangerouslySetInnerHTML={{ __html: siteSettings.headCode }}
-          />
-        </head>
+      {safeHeadCode ? (
+        <head dangerouslySetInnerHTML={{ __html: safeHeadCode }} />
       ) : null}
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
@@ -45,10 +47,10 @@ export default async function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
         </ThemeProvider>
-        {siteSettings.bodyCode ? (
+        {safeBodyCode ? (
           <div
             id="admin-body-code"
-            dangerouslySetInnerHTML={{ __html: siteSettings.bodyCode }}
+            dangerouslySetInnerHTML={{ __html: safeBodyCode }}
           />
         ) : null}
       </body>

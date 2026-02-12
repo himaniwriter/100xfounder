@@ -6,6 +6,7 @@ import {
   createSessionToken,
   setSessionCookie,
 } from "@/lib/auth/session";
+import { toPublicUserDTO } from "@/lib/auth/dto";
 import {
   DATABASE_CONFIG_ERROR,
   isDatabaseConfigured,
@@ -80,7 +81,7 @@ export async function POST(request: Request) {
 
     const response = NextResponse.json({
       success: true,
-      user,
+      user: toPublicUserDTO(user),
     });
 
     return setSessionCookie(response, token);

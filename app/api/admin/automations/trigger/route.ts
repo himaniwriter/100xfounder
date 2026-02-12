@@ -1,31 +1,56 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { z } from "zod";
 import { requireAdminApi } from "@/lib/auth/admin-guard";
+import { readGlobalSiteSettings } from "@/lib/site-settings";
 
 const triggerSchema = z.object({
   action: z.enum(["news_scraper", "sync_newsletter", "enrich_data"]),
 });
 
-function getWebhookUrl(action: "news_scraper" | "sync_newsletter" | "enrich_data"): string | null {
+async function getWebhookUrl(
+  action: "news_scraper" | "sync_newsletter" | "enrich_data",
+): Promise<string | null> {
+  const settings = await readGlobalSiteSettings();
+  const n8nPrimaryWebhookUrl = settings.n8nPrimaryWebhookUrl.trim();
+  const n8nBaseWebhookUrl = settings.n8nBaseWebhookUrl.trim();
+  const envNews =
+    process.env.N8N_NEWS_SCRAPER_WEBHOOK_URL ||
+    process.env.N8N_TRIGGER_NEWS_SCRAPER_WEBHOOK_URL ||
+    "";
+  const envNewsletter =
+    process.env.N8N_NEWSLETTER_SYNC_WEBHOOK_URL ||
+    process.env.N8N_NEWSLETTER_WEBHOOK_URL ||
+    "";
+  const envEnrich =
+    process.env.N8N_ENRICH_DATA_WEBHOOK_URL ||
+    process.env.N8N_COMPANY_CONTENT_WEBHOOK_URL ||
+    "";
+
   if (action === "news_scraper") {
     return (
-      process.env.N8N_NEWS_SCRAPER_WEBHOOK_URL ??
-      process.env.N8N_TRIGGER_NEWS_SCRAPER_WEBHOOK_URL ??
+      settings.n8nNewsScraperWebhookUrl.trim() ||
+      n8nPrimaryWebhookUrl ||
+      n8nBaseWebhookUrl ||
+      envNews ||
       null
     );
   }
 
   if (action === "sync_newsletter") {
     return (
-      process.env.N8N_NEWSLETTER_SYNC_WEBHOOK_URL ??
-      process.env.N8N_NEWSLETTER_WEBHOOK_URL ??
+      settings.n8nNewsletterWebhookUrl.trim() ||
+      n8nPrimaryWebhookUrl ||
+      n8nBaseWebhookUrl ||
+      envNewsletter ||
       null
     );
   }
 
   return (
-    process.env.N8N_ENRICH_DATA_WEBHOOK_URL ??
-    process.env.N8N_COMPANY_CONTENT_WEBHOOK_URL ??
+    settings.n8nEnrichDataWebhookUrl.trim() ||
+    n8nPrimaryWebhookUrl ||
+    n8nBaseWebhookUrl ||
+    envEnrich ||
     null
   );
 }
@@ -46,7 +71,8 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const webhookUrl = getWebhookUrl(parsed.data.action);
+  const settings = await readGlobalSiteSettings();
+  const webhookUrl = await getWebhookUrl(parsed.data.action);
   if (!webhookUrl) {
     return NextResponse.json(
       {
@@ -62,7 +88,11 @@ export async function POST(request: NextRequest) {
     Accept: "application/json",
   };
 
-  const secret = process.env.N8N_SYNC_SECRET ?? process.env.N8N_SECRET_KEY;
+  const secret =
+    settings.n8nSecretKey.trim() ||
+    process.env.N8N_SYNC_SECRET ||
+    process.env.N8N_SECRET_KEY ||
+    "";
   if (secret) {
     headers["x-secret-key"] = secret;
   }

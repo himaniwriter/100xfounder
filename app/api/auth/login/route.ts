@@ -10,6 +10,7 @@ import {
   createSessionToken,
   setSessionCookie,
 } from "@/lib/auth/session";
+import { toPublicUserDTO } from "@/lib/auth/dto";
 import {
   DATABASE_CONFIG_ERROR,
   isDatabaseConfigured,
@@ -46,12 +47,12 @@ export async function POST(request: Request) {
 
     const response = NextResponse.json({
       success: true,
-      user: {
+      user: toPublicUserDTO({
         id: "dummy-admin",
         email: dummy.email,
         name: dummy.name,
         role: "ADMIN",
-      },
+      }),
     });
 
     return setSessionCookie(response, token);
@@ -101,12 +102,7 @@ export async function POST(request: Request) {
 
     const response = NextResponse.json({
       success: true,
-      user: {
-        id: user.id,
-        email: user.email,
-        name: user.name,
-        role: user.role,
-      },
+      user: toPublicUserDTO(user),
     });
 
     return setSessionCookie(response, token);

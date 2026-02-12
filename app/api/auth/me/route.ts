@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getSessionFromRequest } from "@/lib/auth/session";
+import { toPublicUserDTO } from "@/lib/auth/dto";
 import {
   DATABASE_CONFIG_ERROR,
   isDatabaseConfigured,
@@ -37,7 +38,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ success: false, error: "User not found" }, { status: 404 });
     }
 
-    return NextResponse.json({ success: true, user });
+    return NextResponse.json({ success: true, user: toPublicUserDTO(user) });
   } catch (error) {
     return NextResponse.json(
       {

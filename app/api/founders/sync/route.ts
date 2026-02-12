@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { upsertFounderDirectoryFromN8N } from "@/lib/founders/store";
+import { getConfiguredN8nSecret, isAuthorizedN8nWebhook } from "@/lib/security/webhooks";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -33,17 +34,17 @@ const payloadSchema = z.object({
 });
 
 export async function POST(request: Request) {
-  const configuredSecret = process.env.N8N_SYNC_SECRET;
-  const requestSecret = request.headers.get("x-secret-key");
+  const configuredSecret = await getConfiguredN8nSecret();
 
   if (!configuredSecret) {
     return NextResponse.json(
-      { success: false, error: "N8N_SYNC_SECRET is not configured." },
+      { success: false, error: "N8N webhook secret is not configured." },
       { status: 500 },
     );
   }
 
-  if (!requestSecret || requestSecret !== configuredSecret) {
+  const authorized = await isAuthorizedN8nWebhook(request.headers);
+  if (!authorized) {
     return NextResponse.json(
       { success: false, error: "Unauthorized." },
       { status: 401 },

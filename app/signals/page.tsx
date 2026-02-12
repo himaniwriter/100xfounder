@@ -6,41 +6,55 @@ import { Navbar } from "@/components/layout/navbar";
 import { CompanyLogo } from "@/components/ui/company-logo";
 
 const tickerItems = [
-  "Zoho reports $1B Revenue",
-  "Zepto raises $200M",
-  "Freshworks expands enterprise GTM",
-  "Razorpay adds new lending rail",
-  "Postman doubles API enterprise adoption",
+  "OpenAI closes $6.6B strategic round",
+  "Anthropic lands $4B infrastructure commitment",
+  "Perplexity raises $500M to scale AI search",
+  "Zepto raises $200M in Series D momentum",
+  "Ramp extends US fintech automation footprint",
 ];
 
 const fundingFeed = [
   {
     time: "2 hours ago",
-    company: "Zepto",
-    domain: "zeptonow.com",
-    stage: "Raised Series B",
-    amount: "$50M",
+    company: "OpenAI",
+    domain: "openai.com",
+    stage: "Strategic Round",
+    amount: "$6.6B",
   },
   {
-    time: "5 hours ago",
-    company: "Lentra",
-    domain: "lentra.ai",
+    time: "4 hours ago",
+    company: "Anthropic",
+    domain: "anthropic.com",
+    stage: "Strategic Round",
+    amount: "$4B",
+  },
+  {
+    time: "6 hours ago",
+    company: "Perplexity",
+    domain: "perplexity.ai",
     stage: "Raised Series C",
-    amount: "$120M",
+    amount: "$500M",
   },
   {
     time: "8 hours ago",
-    company: "SaaSBoom",
-    domain: "saasboom.com",
-    stage: "Raised Seed",
-    amount: "$8M",
+    company: "Zepto",
+    domain: "zeptonow.com",
+    stage: "Raised Series D",
+    amount: "$200M",
+  },
+  {
+    time: "11 hours ago",
+    company: "Sarvam AI",
+    domain: "sarvam.ai",
+    stage: "Raised Series B",
+    amount: "$41M",
   },
   {
     time: "1 day ago",
-    company: "Orbit AI",
-    domain: "orbit.ai",
-    stage: "Raised Series A",
-    amount: "$24M",
+    company: "Ramp",
+    domain: "ramp.com",
+    stage: "Growth Round",
+    amount: "$150M",
   },
 ];
 
@@ -72,7 +86,7 @@ export default function SignalsPage() {
         >
           <h1 className="text-3xl font-semibold tracking-tight text-white">Signals Terminal</h1>
           <p className="mt-2 text-sm text-zinc-400">
-            Real-time funding and operating indicators from the startup ecosystem.
+            Real-time funding and operating indicators across India and US startup ecosystems.
           </p>
         </motion.div>
 

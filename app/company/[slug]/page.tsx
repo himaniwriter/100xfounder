@@ -10,6 +10,7 @@ import {
   buildCompanyFaqs,
   buildCompanyProfileSchema,
 } from "@/lib/seo/profile-seo";
+import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 type CompanyPageProps = {
@@ -83,7 +84,7 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
       />
 
       <Footer />

@@ -2,10 +2,11 @@ import Link from "next/link";
 import { Search, ShieldCheck, Zap, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { BlogCard } from "@/components/blog/blog-card";
 import { HalfBlurValue } from "@/components/ui/half-blur-value";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { GlassCard } from "@/components/ui/glass-card";
-import { NewsCoverImage } from "@/components/ui/news-cover-image";
+import { getBlogHomeSections } from "@/lib/blog/store";
 import { readHomepageContent } from "@/lib/content/homepage-content";
 import { getFounderDirectory, splitRecentlyFunded } from "@/lib/founders/store";
 
@@ -29,87 +30,87 @@ export default async function HomePage() {
     founders.map((item) => [item.companyName.toLowerCase(), `/company/${item.companySlug}`]),
   );
   const fundingTickerItems = [
-    "🚀 Deal Alert: Sarvam AI raises $41M",
-    "📉 M&A: Zomato acquires Blinkit",
+    "🚀 Deal Alert: OpenAI secures $6.6B strategic funding",
+    "🤖 AI Signal: Anthropic expands enterprise model stack",
     "💼 Growth Equity: Zepto secures $200M",
-    "⚡ Fintech: Perfios closes fresh round",
+    "🏦 Fintech: Ramp raises fresh growth capital",
   ];
   const featuredDeal = {
-    company: "Zepto",
-    domain: "zeptonow.com",
-    headline: "Zepto raises $200M Series E led by StepStone Group.",
-    amount: "$200M",
-    valuation: "$1.4B",
-    investors: "YC, Glade Brook",
-    round: "Series E",
-    sector: "Quick Commerce",
+    company: "OpenAI",
+    domain: "openai.com",
+    headline: "OpenAI secures a $6.6B strategic round to scale frontier AI infrastructure.",
+    amount: "$6.6B",
+    valuation: "$157B",
+    investors: "Microsoft, Thrive, Altimeter",
+    round: "Strategic",
+    sector: "AI Infrastructure",
   };
   const fundingFeed = [
     {
       date: "2h ago",
+      company: "Perplexity",
+      domain: "perplexity.ai",
+      round: "Series C",
+      amount: "$500M",
+      investors: "Lead: IVP",
+    },
+    {
+      date: "4h ago",
+      company: "Anthropic",
+      domain: "anthropic.com",
+      round: "Strategic",
+      amount: "$4B",
+      investors: "Lead: Amazon",
+    },
+    {
+      date: "7h ago",
+      company: "Zepto",
+      domain: "zeptonow.com",
+      round: "Series D",
+      amount: "$200M",
+      investors: "Lead: StepStone Group",
+    },
+    {
+      date: "10h ago",
       company: "Sarvam AI",
       domain: "sarvam.ai",
-      round: "Series A",
+      round: "Series B",
       amount: "$41M",
       investors: "Lead: Lightspeed India",
     },
     {
-      date: "4h ago",
-      company: "Juspay",
-      domain: "juspay.in",
-      round: "Series C",
-      amount: "$60M",
-      investors: "Lead: SoftBank Vision Fund",
-    },
-    {
-      date: "7h ago",
-      company: "Perfios",
-      domain: "perfios.com",
-      round: "Series D",
-      amount: "$80M",
-      investors: "Lead: Kedaara Capital",
-    },
-    {
-      date: "10h ago",
-      company: "AppsForBharat",
-      domain: "appsforbharat.com",
-      round: "Series B",
-      amount: "$18M",
-      investors: "Lead: Fundamentum",
-    },
-    {
       date: "14h ago",
-      company: "BlueStone",
-      domain: "bluestone.com",
-      round: "Series C",
-      amount: "$30M",
-      investors: "Lead: Peak XV Partners",
+      company: "Ramp",
+      domain: "ramp.com",
+      round: "Growth",
+      amount: "$150M",
+      investors: "Lead: Khosla Ventures",
     },
   ];
   const sectorRadar = [
     {
-      sector: "AI Infrastructure",
+      sector: "US AI Infrastructure",
       momentum: "High",
-      weeklyRounds: 9,
-      href: "/founders?industry=AI",
+      weeklyRounds: 11,
+      href: "/founders?industry=AI+Infrastructure",
     },
     {
-      sector: "Fintech",
+      sector: "India Fintech",
       momentum: "High",
       weeklyRounds: 7,
       href: "/founders?industry=Fintech",
     },
     {
-      sector: "B2B SaaS",
+      sector: "US Fintech",
       momentum: "Medium",
-      weeklyRounds: 5,
-      href: "/founders?industry=SaaS",
+      weeklyRounds: 6,
+      href: "/founders?location=New+York",
     },
     {
-      sector: "Climate Tech",
+      sector: "India AI Founders",
       momentum: "Medium",
-      weeklyRounds: 3,
-      href: "/founders",
+      weeklyRounds: 4,
+      href: "/founders?location=Bangalore",
     },
   ];
   const isMegaRound = parseAmountToMillions(featuredDeal.amount) >= 100;
@@ -125,27 +126,12 @@ export default async function HomePage() {
   const marqueeItems = Array.from(
     new Set(founders.map((item) => item.companyName)),
   );
-  const trustLogos = ["Sequoia", "Y Combinator", "Accel", "InfoEdge"];
-  const insightCards = [
-    {
-      title: "The Rise of AI in Delhi",
-      href: "/blog?insight=rise-of-ai-in-delhi",
-      tag: "AI Intelligence",
-      imageUrl: "/images/covers/ai-grid.svg",
-    },
-    {
-      title: "Who Is Funding the Next Flipkart?",
-      href: "/blog?insight=who-is-funding-the-next-flipkart",
-      tag: "Funding Signals",
-      imageUrl: "/images/covers/funding-wire.svg",
-    },
-    {
-      title: "YC W26 Batch Analysis",
-      href: "/blog?insight=yc-w26-batch-analysis",
-      tag: "YC Tracker",
-      imageUrl: "/images/covers/startup-brief.svg",
-    },
-  ];
+  const { posts: blogPosts } = getBlogHomeSections();
+  const latestHomeArticles = blogPosts.slice(0, 6);
+  const leadHomeArticle = latestHomeArticles[0] ?? null;
+  const sideHomeArticles = latestHomeArticles.slice(1, 4);
+  const extraHomeArticles = latestHomeArticles.slice(4, 6);
+  const trustLogos = ["Sequoia", "Y Combinator", "Accel", "Andreessen Horowitz"];
   const heroTitle = homepageContent.heroTitle;
   const highlightedPhrase = "Most Accurate";
   const phraseIndex = heroTitle.toLowerCase().indexOf(highlightedPhrase.toLowerCase());
@@ -197,13 +183,13 @@ export default async function HomePage() {
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
               <Link
                 href={homepageContent.primaryCtaHref}
-                className="inline-flex h-11 items-center rounded-lg bg-[#6366f1] px-5 text-sm font-medium text-white transition-colors hover:bg-[#5458e8]"
+                className="glass-cta-btn"
               >
                 {homepageContent.primaryCtaLabel}
               </Link>
               <Link
                 href={homepageContent.secondaryCtaHref}
-                className="inline-flex h-11 items-center rounded-lg border border-white/15 bg-white/5 px-5 text-sm font-medium text-zinc-100 transition-colors hover:border-white/25 hover:text-white"
+                className="glass-ghost-btn"
               >
                 {homepageContent.secondaryCtaLabel}
               </Link>
@@ -280,7 +266,7 @@ export default async function HomePage() {
             </h2>
             <Link
               href="/signals"
-              className="text-sm text-zinc-400 transition-colors hover:text-white"
+              className="glass-ghost-btn h-10 px-4 text-sm"
             >
               Open full signals feed
             </Link>
@@ -422,7 +408,7 @@ export default async function HomePage() {
             </h2>
             <Link
               href="/founders"
-              className="text-sm text-zinc-400 transition-colors hover:text-white"
+              className="glass-ghost-btn h-10 px-4 text-sm"
             >
               Open full directory
             </Link>
@@ -430,43 +416,40 @@ export default async function HomePage() {
 
           <div className="grid gap-5 md:grid-cols-3">
             {featuredFounders.map((founder) => (
-              <GlassCard key={founder.id} className="p-5">
-                <div className="flex items-start gap-3">
-                  <CompanyLogo
-                    companyName={founder.companyName}
-                    websiteUrl={founder.websiteUrl}
-                    className="h-11 w-11 rounded-xl border border-white/15"
-                  />
-                  <div>
-                    <h3 className="text-lg font-medium text-white">
-                      {founder.founderName}
-                    </h3>
-                    <p className="text-sm text-zinc-300">{founder.companyName}</p>
-                    <p className="mt-1 text-xs text-zinc-500">
-                      {founder.productSummary}
-                    </p>
+              <Link key={founder.id} href={`/founders/${founder.slug}`} className="group block">
+                <GlassCard className="h-full cursor-pointer p-5 transition-all group-hover:scale-[1.015] group-hover:border-indigo-400/45 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]">
+                  <div className="flex items-start gap-3">
+                    <CompanyLogo
+                      companyName={founder.companyName}
+                      websiteUrl={founder.websiteUrl}
+                      className="h-11 w-11 rounded-xl border border-white/15"
+                    />
+                    <div>
+                      <h3 className="text-lg font-medium text-white">
+                        {founder.founderName}
+                      </h3>
+                      <p className="text-sm text-zinc-300">{founder.companyName}</p>
+                      <p className="mt-1 text-xs text-zinc-500">
+                        {founder.productSummary}
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
-                    {founder.industry}
-                  </span>
-                  <span className="rounded-full border border-[#6366f1]/30 bg-[#6366f1]/10 px-2.5 py-1 text-xs text-indigo-300">
-                    {founder.stage}
-                  </span>
-                </div>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
+                      {founder.industry}
+                    </span>
+                    <span className="rounded-full border border-[#6366f1]/30 bg-[#6366f1]/10 px-2.5 py-1 text-xs text-indigo-300">
+                      {founder.stage}
+                    </span>
+                  </div>
 
-                <div className="mt-4 text-xs">
-                  <Link
-                    href={`/founders/${founder.slug}`}
-                    className="inline-flex items-center gap-1 text-indigo-300 transition-colors hover:text-indigo-200"
-                  >
+                  <span className="glass-ghost-btn mt-4 inline-flex h-9 items-center gap-1 px-3 text-xs text-indigo-200">
                     View Profile
                     <ArrowRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
-              </GlassCard>
+                  </span>
+                </GlassCard>
+              </Link>
             ))}
           </div>
         </section>
@@ -485,7 +468,7 @@ export default async function HomePage() {
               </div>
               <Link
                 href="/founders"
-                className="inline-flex h-10 shrink-0 items-center rounded-lg bg-[#6366f1] px-4 text-sm font-medium text-white transition-colors hover:bg-[#5458e8]"
+                className="glass-cta-btn h-10 shrink-0 px-4 text-sm"
               >
                 Open Directory
               </Link>
@@ -542,40 +525,33 @@ export default async function HomePage() {
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <h2 className="text-2xl font-semibold tracking-tight text-white">
-              Market Intelligence &amp; Deep Dives
+              Latest Startup Intelligence From Our Blog
             </h2>
             <Link
               href="/blog"
-              className="text-sm text-zinc-400 transition-colors hover:text-white"
+              className="glass-ghost-btn h-10 px-4 text-sm"
             >
-              Open blog
+              Open full blog
             </Link>
           </div>
 
-          <div className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2">
-            {insightCards.map((item) => (
-              <GlassCard
-                key={item.title}
-                className="min-w-[290px] snap-start p-4 md:min-w-[360px]"
-              >
-                <NewsCoverImage
-                  title={item.title}
-                  imageUrl={item.imageUrl}
-                  uniqueId={item.title}
-                  className="h-32 rounded-lg border border-white/10"
-                />
-                <p className="mt-3 text-xs uppercase tracking-[0.14em] text-zinc-500">{item.tag}</p>
-                <h3 className="mt-2 text-base font-semibold text-white">{item.title}</h3>
-                <Link
-                  href={item.href}
-                  className="mt-4 inline-flex items-center gap-1 text-sm text-indigo-300 transition-colors hover:text-indigo-200"
-                >
-                  Read Analysis
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </Link>
-              </GlassCard>
-            ))}
+          <div className="grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+            {leadHomeArticle ? <BlogCard post={leadHomeArticle} variant="hero" /> : null}
+
+            <div className="space-y-3">
+              {sideHomeArticles.map((post) => (
+                <BlogCard key={post.slug} post={post} variant="stack" />
+              ))}
+            </div>
           </div>
+
+          {extraHomeArticles.length > 0 ? (
+            <div className="mt-5 grid gap-3 md:grid-cols-2">
+              {extraHomeArticles.map((post) => (
+                <BlogCard key={post.slug} post={post} variant="feed" />
+              ))}
+            </div>
+          ) : null}
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">

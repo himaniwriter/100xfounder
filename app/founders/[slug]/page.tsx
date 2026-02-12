@@ -10,6 +10,7 @@ import {
   buildFounderFaqs,
   buildFounderProfileSchema,
 } from "@/lib/seo/profile-seo";
+import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 type FounderProfilePageProps = {
@@ -128,7 +129,7 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
       />
 
       <Footer />

@@ -4,12 +4,12 @@ import Link from "next/link";
 import { Search } from "lucide-react";
 
 const navLinks = [
+  { label: "Home", href: "/" },
   { label: "Directory", href: "/founders" },
   { label: "Startups", href: "/startups" },
   { label: "Signals", href: "/signals" },
   { label: "Blog", href: "/blog" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Sitemap", href: "/sitemap" },
 ];
 
 export function Navbar() {

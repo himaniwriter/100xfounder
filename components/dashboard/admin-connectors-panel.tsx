@@ -23,9 +23,13 @@ export function AdminConnectorsPanel({
   const [name, setName] = useState("");
   const [provider, setProvider] = useState("");
   const [endpoint, setEndpoint] = useState("");
+  const [n8nWebhookUrl, setN8nWebhookUrl] = useState("");
   const [authHeader, setAuthHeader] = useState("Authorization");
   const [authValue, setAuthValue] = useState("");
-  const [status, setStatus] = useState<string | null>(null);
+  const [status, setStatus] = useState<{
+    type: "success" | "error" | "info";
+    message: string;
+  } | null>(null);
   const [saving, setSaving] = useState(false);
 
   async function refreshConnectors() {
@@ -41,37 +45,60 @@ export function AdminConnectorsPanel({
     event.preventDefault();
     setSaving(true);
     setStatus(null);
-
-    const response = await fetch("/api/dashboard/connectors", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name,
-        provider,
-        endpoint,
-        authHeader: authHeader || undefined,
-        authValue: authValue || undefined,
-      }),
-    });
-
-    const result = await response.json();
-    setSaving(false);
-
-    if (!response.ok || !result.success) {
-      setStatus(result.error ?? "Failed to save connector");
+    const resolvedEndpoint = n8nWebhookUrl.trim() || endpoint.trim();
+    if (!resolvedEndpoint) {
+      setSaving(false);
+      setStatus({
+        type: "error",
+        message: "Failed: add an N8N webhook URL or API endpoint.",
+      });
       return;
     }
 
-    setStatus("Connector saved.");
-    setName("");
-    setProvider("");
-    setEndpoint("");
-    setAuthValue("");
-    await refreshConnectors();
+    try {
+      const response = await fetch("/api/dashboard/connectors", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          provider,
+          endpoint: resolvedEndpoint,
+          authHeader: authHeader || undefined,
+          authValue: authValue || undefined,
+        }),
+      });
+
+      const result = await response.json();
+      if (!response.ok || !result.success) {
+        setStatus({
+          type: "error",
+          message: `Failed: ${result.error ?? "Failed to save connector."}`,
+        });
+        return;
+      }
+
+      setStatus({ type: "success", message: "Connector saved successfully." });
+      setName("");
+      setProvider("");
+      setEndpoint("");
+      setN8nWebhookUrl("");
+      setAuthValue("");
+      await refreshConnectors();
+    } catch (saveError) {
+      setStatus({
+        type: "error",
+        message:
+          saveError instanceof Error
+            ? `Failed: ${saveError.message}`
+            : "Failed to save connector.",
+      });
+    } finally {
+      setSaving(false);
+    }
   }
 
   async function syncConnector(id: string) {
-    setStatus("Syncing connector...");
+    setStatus({ type: "info", message: "Syncing connector..." });
 
     const response = await fetch(`/api/dashboard/connectors/${id}/sync`, {
       method: "POST",
@@ -80,11 +107,14 @@ export function AdminConnectorsPanel({
     const result = await response.json();
 
     if (!response.ok || !result.success) {
-      setStatus(result.error ?? "Sync failed");
+      setStatus({ type: "error", message: `Failed: ${result.error ?? "Sync failed."}` });
       return;
     }
 
-    setStatus(`Sync complete. Upserted ${result.upserted} founder records.`);
+    setStatus({
+      type: "success",
+      message: `Sync complete. Upserted ${result.upserted} founder records.`,
+    });
     await refreshConnectors();
   }
 
@@ -111,10 +141,15 @@ export function AdminConnectorsPanel({
           className="rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-zinc-100"
         />
         <input
+          value={n8nWebhookUrl}
+          onChange={(event) => setN8nWebhookUrl(event.target.value)}
+          placeholder="N8N Webhook URL (optional)"
+          className="rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-zinc-100 md:col-span-2"
+        />
+        <input
           value={endpoint}
           onChange={(event) => setEndpoint(event.target.value)}
-          placeholder="https://api.provider.com/founders"
-          required
+          placeholder="Fallback API Endpoint (optional if webhook is set)"
           className="rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-zinc-100 md:col-span-2"
         />
         <input
@@ -139,7 +174,19 @@ export function AdminConnectorsPanel({
         </button>
       </form>
 
-      {status ? <p className="mt-3 text-xs text-zinc-300">{status}</p> : null}
+      {status ? (
+        <p
+          className={
+            status.type === "success"
+              ? "mt-3 rounded-md border border-emerald-400/30 bg-emerald-500/10 px-3 py-2 text-xs text-emerald-200"
+              : status.type === "error"
+                ? "mt-3 rounded-md border border-red-400/30 bg-red-500/10 px-3 py-2 text-xs text-red-200"
+                : "mt-3 rounded-md border border-white/15 bg-white/5 px-3 py-2 text-xs text-zinc-300"
+          }
+        >
+          {status.message}
+        </p>
+      ) : null}
 
       <div className="mt-6 space-y-3">
         {connectors.map((connector) => (

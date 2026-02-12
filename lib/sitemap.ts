@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllBlogPosts } from "@/lib/blog/store";
 import { getFounderDirectory } from "@/lib/founders/store";
+import { STARTUP_DISCOVERY_PAGES } from "@/lib/startups/discovery-pages";
 
 type ChangeFrequency = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
 
@@ -21,6 +22,7 @@ export type HtmlSitemapData = {
   baseUrl: string;
   staticLinks: HtmlSitemapLink[];
   blogLinks: HtmlSitemapLink[];
+  startupCategoryLinks: HtmlSitemapLink[];
   companyLinks: HtmlSitemapLink[];
   founderLinks: HtmlSitemapLink[];
 };
@@ -32,6 +34,11 @@ const STATIC_ROUTES: StaticRoute[] = [
   { href: "/signals", label: "Signals", changeFrequency: "hourly", priority: 0.9 },
   { href: "/pricing", label: "Pricing", changeFrequency: "weekly", priority: 0.8 },
   { href: "/blog", label: "Blog", changeFrequency: "daily", priority: 0.85 },
+  { href: "/jobs", label: "Startup Jobs", changeFrequency: "weekly", priority: 0.7 },
+  { href: "/salary-equity", label: "Salary & Equity Guide", changeFrequency: "weekly", priority: 0.68 },
+  { href: "/negotiation-coaching", label: "Negotiation Coaching", changeFrequency: "weekly", priority: 0.66 },
+  { href: "/fulfillment-policy", label: "Fulfillment Policy", changeFrequency: "monthly", priority: 0.5 },
+  { href: "/add-startup-or-job", label: "Add Startup or Job", changeFrequency: "weekly", priority: 0.72 },
   { href: "/about", label: "About", changeFrequency: "monthly", priority: 0.6 },
   { href: "/contact", label: "Contact", changeFrequency: "monthly", priority: 0.6 },
   { href: "/help", label: "Help Center", changeFrequency: "monthly", priority: 0.5 },
@@ -99,6 +106,14 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .sort((a, b) => a.label.localeCompare(b.label)),
   );
 
+  const startupCategoryLinks = uniqueByHref(
+    STARTUP_DISCOVERY_PAGES.map((item) => ({
+      href: `/startups/${item.slug}`,
+      label: item.title,
+      lastModified: now,
+    })).sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
   const companyLinks = uniqueByHref(
     founders
       .map((item) => ({
@@ -123,13 +138,21 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
     baseUrl,
     staticLinks,
     blogLinks,
+    startupCategoryLinks,
     companyLinks,
     founderLinks,
   };
 }
 
 export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
-  const { baseUrl, staticLinks, blogLinks, companyLinks, founderLinks } =
+  const {
+    baseUrl,
+    staticLinks,
+    blogLinks,
+    startupCategoryLinks,
+    companyLinks,
+    founderLinks,
+  } =
     await getHtmlSitemapData();
 
   const staticRouteMeta = new Map(STATIC_ROUTES.map((route) => [route.href, route]));
@@ -151,6 +174,13 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
+  const startupCategoryEntries: MetadataRoute.Sitemap = startupCategoryLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "daily",
+    priority: 0.84,
+  }));
+
   const companyEntries: MetadataRoute.Sitemap = companyLinks.map((link) => ({
     url: `${baseUrl}${link.href}`,
     lastModified: link.lastModified,
@@ -165,5 +195,11 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: 0.74,
   }));
 
-  return [...staticEntries, ...blogEntries, ...companyEntries, ...founderEntries];
+  return [
+    ...staticEntries,
+    ...blogEntries,
+    ...startupCategoryEntries,
+    ...companyEntries,
+    ...founderEntries,
+  ];
 }
