@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { logDataUnlock } from "@/lib/client-tracking";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
 
 type ProfileTabsProps = {
@@ -21,7 +20,6 @@ const tabs: Array<{ id: TabKey; label: string }> = [
 
 export function ProfileTabs({ founder, similar }: ProfileTabsProps) {
   const [activeTab, setActiveTab] = useState<TabKey>("overview");
-  const [revealed, setRevealed] = useState(false);
 
   const contact = useMemo(() => {
     const host = founder.websiteUrl
@@ -33,11 +31,6 @@ export function ProfileTabs({ founder, similar }: ProfileTabsProps) {
       phone: "+91 98765 43210",
     };
   }, [founder.websiteUrl]);
-
-  async function onUnlockData() {
-    setRevealed(true);
-    await logDataUnlock(founder.id);
-  }
 
   return (
     <div className="mt-6">
@@ -122,25 +115,17 @@ export function ProfileTabs({ founder, similar }: ProfileTabsProps) {
           <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-300">
             Contact & Verified Info
           </h3>
-          <p className="mt-2 text-xs text-zinc-500">Identity and data verified by 100Xfounder.</p>
+          <p className="mt-2 text-xs text-zinc-500">
+            Identity and data verified by 100Xfounder.
+          </p>
 
-          <div className="relative mt-4 rounded-lg border border-white/10 bg-black/30 p-3">
-            <p className={`text-sm text-zinc-200 ${revealed ? "" : "blur-[6px] select-none"}`}>
+          <div className="mt-4 rounded-lg border border-white/10 bg-black/30 p-3">
+            <p className="text-sm text-zinc-200">
               Email: {contact.email}
             </p>
-            <p className={`mt-2 text-sm text-zinc-200 ${revealed ? "" : "blur-[6px] select-none"}`}>
+            <p className="mt-2 text-sm text-zinc-200">
               Phone: {contact.phone}
             </p>
-
-            {!revealed ? (
-              <button
-                type="button"
-                onClick={onUnlockData}
-                className="absolute inset-0 m-auto h-9 w-fit rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 px-4 text-sm font-medium text-white transition-all hover:brightness-110"
-              >
-                Unlock Data
-              </button>
-            ) : null}
           </div>
         </aside>
       </div>

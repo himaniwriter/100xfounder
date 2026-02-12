@@ -1,0 +1,37 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Startup intelligence cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090F1B"/>
+      <stop offset="0.55" stop-color="#122038"/>
+      <stop offset="1" stop-color="#0A1224"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 260) rotate(48) scale(280 360)">
+      <stop stop-color="#3B82F6" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#orb)"/>
+
+  <rect x="118" y="132" width="964" height="536" rx="26" fill="#0D172B" stroke="#3B82F6" stroke-opacity="0.35" stroke-width="2"/>
+
+  <g fill="#E2E8F0">
+    <rect x="166" y="188" width="420" height="44" rx="10"/>
+    <rect x="166" y="252" width="270" height="26" rx="8" opacity="0.72"/>
+  </g>
+
+  <g opacity="0.9" stroke="#60A5FA" stroke-width="2.2">
+    <path d="M166 354H1034"/>
+    <path d="M166 430H1034"/>
+    <path d="M166 506H1034"/>
+    <path d="M166 582H1034"/>
+  </g>
+
+  <g fill="#93C5FD" opacity="0.95">
+    <rect x="166" y="338" width="72" height="32" rx="8"/>
+    <rect x="166" y="414" width="72" height="32" rx="8"/>
+    <rect x="166" y="490" width="72" height="32" rx="8"/>
+    <rect x="166" y="566" width="72" height="32" rx="8"/>
+  </g>
+</svg>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ImageOff } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type NewsCoverImageProps = {
@@ -34,6 +33,20 @@ function fallbackGradient(seed: string) {
   };
 }
 
+function topicFallbackImage(title: string): string {
+  const value = title.toLowerCase();
+  if (/fund|round|deal|capital|valuation|investor|finance/.test(value)) {
+    return "/images/covers/funding-wire.svg";
+  }
+  if (/ai|genai|machine|model|yc/.test(value)) {
+    return "/images/covers/ai-grid.svg";
+  }
+  if (/hiring|talent|team|culture|people/.test(value)) {
+    return "/images/covers/talent-map.svg";
+  }
+  return "/images/covers/startup-brief.svg";
+}
+
 export function NewsCoverImage({
   title,
   imageUrl,
@@ -41,6 +54,7 @@ export function NewsCoverImage({
   className,
   imageClassName,
 }: NewsCoverImageProps) {
+  const localFallback = useMemo(() => topicFallbackImage(title), [title]);
   const sources = useMemo(() => {
     const values: string[] = [];
 
@@ -48,14 +62,10 @@ export function NewsCoverImage({
       values.push(imageUrl.trim());
     }
 
-    values.push(
-      `https://source.unsplash.com/800x600/?technology,startup,office&sig=${encodeURIComponent(
-        uniqueId,
-      )}`,
-    );
+    values.push(localFallback);
 
     return values;
-  }, [imageUrl, uniqueId]);
+  }, [imageUrl, localFallback]);
 
   const [attemptIndex, setAttemptIndex] = useState(0);
   const activeSource = sources[attemptIndex];
@@ -83,11 +93,10 @@ export function NewsCoverImage({
         className,
       )}
       style={fallbackGradient(uniqueId)}
-      aria-label={`${title} fallback cover image`}
+      aria-label={`${title} fallback cover`}
     >
-      <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs">
-        <ImageOff className="h-3.5 w-3.5" />
-        Image unavailable
+      <div className="inline-flex rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs text-zinc-200">
+        Startup Intelligence
       </div>
     </div>
   );

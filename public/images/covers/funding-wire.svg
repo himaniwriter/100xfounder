@@ -1,0 +1,42 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Funding market cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1226"/>
+      <stop offset="0.55" stop-color="#152A55"/>
+      <stop offset="1" stop-color="#081123"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(940 180) rotate(128) scale(260 340)">
+      <stop stop-color="#3B82F6" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330 580) rotate(135) scale(240 300)">
+      <stop stop-color="#60A5FA" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#glowA)"/>
+  <rect width="1200" height="800" fill="url(#glowB)"/>
+
+  <g opacity="0.88">
+    <rect x="132" y="524" width="116" height="156" rx="16" fill="#1D4ED8"/>
+    <rect x="266" y="454" width="116" height="226" rx="16" fill="#2563EB"/>
+    <rect x="400" y="392" width="116" height="288" rx="16" fill="#3B82F6"/>
+    <rect x="534" y="340" width="116" height="340" rx="16" fill="#60A5FA"/>
+    <rect x="668" y="280" width="116" height="400" rx="16" fill="#93C5FD"/>
+  </g>
+
+  <g opacity="0.6" stroke="#C7D2FE" stroke-width="2">
+    <path d="M140 318H1060"/>
+    <path d="M140 398H1060"/>
+    <path d="M140 478H1060"/>
+    <path d="M140 558H1060"/>
+    <path d="M140 638H1060"/>
+  </g>
+
+  <g fill="#E2E8F0" opacity="0.9">
+    <rect x="760" y="130" width="282" height="42" rx="10"/>
+    <rect x="760" y="190" width="220" height="30" rx="8" opacity="0.75"/>
+    <rect x="760" y="238" width="182" height="20" rx="6" opacity="0.55"/>
+  </g>
+</svg>

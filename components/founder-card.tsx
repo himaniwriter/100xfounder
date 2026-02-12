@@ -3,7 +3,6 @@ import {
   Coins,
   Flame,
   Linkedin,
-  Lock,
   MapPin,
   Share2,
   Users2,
@@ -134,11 +133,10 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
 
         <div className={cn("flex items-center gap-2", featured ? "md:shrink-0" : "")}>
           <Link
-            href="/pricing"
-            className="enterprise-unlock-btn"
+            href={profileUrl}
+            className="enterprise-primary-btn"
           >
-            <Lock className="h-4 w-4" />
-            Unlock Contact
+            View Contact
           </Link>
 
           <a

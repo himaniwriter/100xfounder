@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: CompanyPageProps): Promise<Me
 
   return {
     title: `${primary.companyName} - Founder, Funding & Signals | 100Xfounder`,
-    description: `View ${primary.companyName}'s profile on 100Xfounder. Track their growth signals, tech stack, and founder ${primary.founderName}. Unlock verified contact details.`,
+    description: `View ${primary.companyName}'s profile on 100Xfounder. Track their growth signals, tech stack, and founder ${primary.founderName}. Access verified contact details.`,
   };
 }
 

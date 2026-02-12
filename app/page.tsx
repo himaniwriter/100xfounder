@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, ShieldCheck, Zap, ArrowRight, Lock, CheckCircle2 } from "lucide-react";
+import { Search, ShieldCheck, Zap, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { CompanyLogo } from "@/components/ui/company-logo";
@@ -22,6 +22,9 @@ export default async function HomePage() {
   const founders = await getFounderDirectory({ limit: 80 });
   const { recent } = splitRecentlyFunded(founders, 12);
   const featuredFounders = (recent.length > 0 ? recent : founders).slice(0, 3);
+  const companyHrefMap = new Map(
+    founders.map((item) => [item.companyName.toLowerCase(), `/company/${item.companySlug}`]),
+  );
   const fundingTickerItems = [
     "🚀 Deal Alert: Sarvam AI raises $41M",
     "📉 M&A: Zomato acquires Blinkit",
@@ -81,12 +84,41 @@ export default async function HomePage() {
     },
   ];
   const sectorRadar = [
-    { sector: "AI Infrastructure", momentum: "High", weeklyRounds: 9 },
-    { sector: "Fintech", momentum: "High", weeklyRounds: 7 },
-    { sector: "B2B SaaS", momentum: "Medium", weeklyRounds: 5 },
-    { sector: "Climate Tech", momentum: "Medium", weeklyRounds: 3 },
+    {
+      sector: "AI Infrastructure",
+      momentum: "High",
+      weeklyRounds: 9,
+      href: "/founders?industry=AI",
+    },
+    {
+      sector: "Fintech",
+      momentum: "High",
+      weeklyRounds: 7,
+      href: "/founders?industry=Fintech",
+    },
+    {
+      sector: "B2B SaaS",
+      momentum: "Medium",
+      weeklyRounds: 5,
+      href: "/founders?industry=SaaS",
+    },
+    {
+      sector: "Climate Tech",
+      momentum: "Medium",
+      weeklyRounds: 3,
+      href: "/founders",
+    },
   ];
   const isMegaRound = parseAmountToMillions(featuredDeal.amount) >= 100;
+  const featuredDealHref =
+    companyHrefMap.get(featuredDeal.company.toLowerCase()) ??
+    `/signals?company=${encodeURIComponent(featuredDeal.company)}`;
+  const fundingFeedWithLinks = fundingFeed.map((item) => ({
+    ...item,
+    href:
+      companyHrefMap.get(item.company.toLowerCase()) ??
+      `/signals?company=${encodeURIComponent(item.company)}`,
+  }));
   const marqueeItems = Array.from(
     new Set(founders.map((item) => item.companyName)),
   );
@@ -96,19 +128,19 @@ export default async function HomePage() {
       title: "The Rise of AI in Delhi",
       href: "/blog?insight=rise-of-ai-in-delhi",
       tag: "AI Intelligence",
-      imageUrl: "",
+      imageUrl: "/images/covers/ai-grid.svg",
     },
     {
       title: "Who Is Funding the Next Flipkart?",
       href: "/blog?insight=who-is-funding-the-next-flipkart",
       tag: "Funding Signals",
-      imageUrl: "",
+      imageUrl: "/images/covers/funding-wire.svg",
     },
     {
       title: "YC W26 Batch Analysis",
       href: "/blog?insight=yc-w26-batch-analysis",
       tag: "YC Tracker",
-      imageUrl: "",
+      imageUrl: "/images/covers/startup-brief.svg",
     },
   ];
 
@@ -250,9 +282,10 @@ export default async function HomePage() {
 
               <div className="mt-4 space-y-2">
                 {sectorRadar.map((item) => (
-                  <div
+                  <Link
                     key={item.sector}
-                    className="rounded-xl border border-white/10 bg-black/25 p-3"
+                    href={item.href}
+                    className="block rounded-xl border border-white/10 bg-black/25 p-3 transition-colors hover:border-white/30"
                   >
                     <p className="text-sm font-medium text-white">{item.sector}</p>
                     <div className="mt-1 flex items-center justify-between text-xs">
@@ -261,13 +294,16 @@ export default async function HomePage() {
                         {item.momentum}
                       </span>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </aside>
 
             <div className="space-y-4">
-              <article className="relative overflow-hidden rounded-2xl border border-white/15 bg-[linear-gradient(145deg,rgba(20,30,62,0.95)_0%,rgba(37,99,235,0.18)_50%,rgba(9,14,28,0.95)_100%)] p-6 shadow-[0_0_36px_rgba(37,99,235,0.16)]">
+              <Link
+                href={featuredDealHref}
+                className="group relative block overflow-hidden rounded-2xl border border-white/15 bg-[linear-gradient(145deg,rgba(20,30,62,0.95)_0%,rgba(37,99,235,0.18)_50%,rgba(9,14,28,0.95)_100%)] p-6 shadow-[0_0_36px_rgba(37,99,235,0.16)] transition-colors hover:border-white/30"
+              >
                 <div className="pointer-events-none absolute -right-24 -top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.28),transparent_72%)] blur-3xl" />
                 {isMegaRound ? (
                   <span className="inline-flex items-center rounded-full border border-amber-300/35 bg-amber-500/10 px-2.5 py-1 text-xs text-amber-200">
@@ -302,7 +338,7 @@ export default async function HomePage() {
                     Investors: {featuredDeal.investors}
                   </span>
                 </div>
-              </article>
+              </Link>
 
               <div className="rounded-2xl border border-white/15 bg-white/[0.03] backdrop-blur-[40px]">
                 <div className="hidden grid-cols-[88px_minmax(0,1.4fr)_110px_100px_minmax(0,1fr)] gap-3 border-b border-white/10 px-4 py-2 text-[11px] uppercase tracking-[0.14em] text-zinc-500 md:grid">
@@ -314,10 +350,11 @@ export default async function HomePage() {
                 </div>
 
                 <div className="divide-y divide-white/10">
-                  {fundingFeed.map((item) => (
-                    <div
+                  {fundingFeedWithLinks.map((item) => (
+                    <Link
                       key={`${item.company}-${item.date}`}
-                      className="grid gap-3 px-4 py-3 md:grid-cols-[88px_minmax(0,1.4fr)_110px_100px_minmax(0,1fr)] md:items-center"
+                      href={item.href}
+                      className="grid gap-3 px-4 py-3 transition-colors hover:bg-white/[0.03] md:grid-cols-[88px_minmax(0,1.4fr)_110px_100px_minmax(0,1fr)] md:items-center"
                     >
                       <p className="text-xs text-zinc-500">{item.date}</p>
                       <div className="flex min-w-0 items-center gap-2.5">
@@ -333,7 +370,7 @@ export default async function HomePage() {
                       </span>
                       <p className="text-sm font-medium text-emerald-300">{item.amount}</p>
                       <p className="truncate text-xs text-zinc-400">{item.investors}</p>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -347,14 +384,20 @@ export default async function HomePage() {
           </p>
           <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="flex w-max gap-3 px-4 py-4">
-              {[...marqueeItems, ...marqueeItems].slice(0, 24).map((company, index) => (
-                <div
-                  key={`${company}-${index}`}
-                  className="rounded-lg border border-white/10 bg-black/30 px-5 py-2 text-sm text-zinc-300"
-                >
-                  {company}
-                </div>
-              ))}
+              {[...marqueeItems, ...marqueeItems].slice(0, 24).map((company, index) => {
+                const href =
+                  companyHrefMap.get(company.toLowerCase()) ??
+                  `/signals?company=${encodeURIComponent(company)}`;
+                return (
+                  <Link
+                    key={`${company}-${index}`}
+                    href={href}
+                    className="rounded-lg border border-white/10 bg-black/30 px-5 py-2 text-sm text-zinc-300 transition-colors hover:border-white/25 hover:text-white"
+                  >
+                    {company}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -420,47 +463,41 @@ export default async function HomePage() {
             <div className="mb-6 flex items-end justify-between gap-4">
               <div>
                 <h2 className="text-2xl font-semibold tracking-tight text-white">
-                  Unlock the Full Picture
+                  Direct Contact Access
                 </h2>
                 <p className="mt-2 max-w-2xl text-sm text-zinc-400">
-                  Public profiles give you the name. Pro membership gives you the handshake.
-                  Access direct contact info for $X/month.
+                  Every profile includes visible contact details, verified tags, and key business
+                  signals so your outreach can start immediately.
                 </p>
               </div>
               <Link
-                href="/pricing"
+                href="/founders"
                 className="inline-flex h-10 shrink-0 items-center rounded-lg bg-[#6366f1] px-4 text-sm font-medium text-white transition-colors hover:bg-[#5458e8]"
               >
-                View Membership Plans
+                Open Directory
               </Link>
             </div>
 
             <div className="grid gap-4 md:grid-cols-2">
               <GlassCard className="p-5">
-                <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">Public View</p>
+                <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">Profile Snapshot</p>
                 <div className="mt-4 space-y-2">
                   <h3 className="text-lg font-semibold text-white">Mukesh Ambani</h3>
                   <p className="text-sm text-zinc-300">Reliance Industries</p>
                   <p className="text-sm text-zinc-400">Sector: Energy, Telecom, Retail</p>
                 </div>
                 <div className="mt-5 space-y-2 rounded-lg border border-white/10 bg-black/30 p-3">
-                  <div className="relative rounded-md border border-white/10 bg-white/5 p-2">
-                    <p className="select-none text-sm text-zinc-300 blur-sm">Email: r***@ril.com</p>
-                    <div className="absolute inset-y-0 right-2 flex items-center">
-                      <Lock className="h-4 w-4 text-zinc-500" />
-                    </div>
+                  <div className="rounded-md border border-white/10 bg-white/5 p-2">
+                    <p className="text-sm text-zinc-300">Email: rmukesh@ril.com</p>
                   </div>
-                  <div className="relative rounded-md border border-white/10 bg-white/5 p-2">
-                    <p className="select-none text-sm text-zinc-300 blur-sm">Phone: +91 98******10</p>
-                    <div className="absolute inset-y-0 right-2 flex items-center">
-                      <Lock className="h-4 w-4 text-zinc-500" />
-                    </div>
+                  <div className="rounded-md border border-white/10 bg-white/5 p-2">
+                    <p className="text-sm text-zinc-300">Phone: +91 98765 43210</p>
                   </div>
                 </div>
               </GlassCard>
 
               <GlassCard className="p-5">
-                <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">Member View</p>
+                <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">Verified Access</p>
                 <div className="mt-4 space-y-2">
                   <h3 className="text-lg font-semibold text-white">Mukesh Ambani</h3>
                   <p className="text-sm text-zinc-300">Reliance Industries</p>
@@ -471,10 +508,13 @@ export default async function HomePage() {
                 </div>
                 <div className="mt-5 space-y-2 rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-3">
                   <p className="rounded-md border border-white/10 bg-white/5 p-2 text-sm text-zinc-200">
-                    Email: r***@ril.com
+                    Email: rmukesh@ril.com
                   </p>
                   <p className="rounded-md border border-white/10 bg-white/5 p-2 text-sm text-zinc-200">
-                    Phone: +91 98******10
+                    Phone: +91 98765 43210
+                  </p>
+                  <p className="rounded-md border border-white/10 bg-white/5 p-2 text-sm text-zinc-200">
+                    LinkedIn: linkedin.com/in/mukeshambani
                   </p>
                 </div>
               </GlassCard>
