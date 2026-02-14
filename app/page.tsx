@@ -183,13 +183,13 @@ export default async function HomePage() {
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
               <Link
                 href={homepageContent.primaryCtaHref}
-                className="glass-cta-btn"
+                className="glass-cta-btn w-full justify-center sm:w-auto sm:min-w-[220px]"
               >
                 {homepageContent.primaryCtaLabel}
               </Link>
               <Link
                 href={homepageContent.secondaryCtaHref}
-                className="glass-ghost-btn"
+                className="glass-ghost-btn w-full justify-center sm:w-auto sm:min-w-[220px]"
               >
                 {homepageContent.secondaryCtaLabel}
               </Link>
@@ -266,7 +266,7 @@ export default async function HomePage() {
             </h2>
             <Link
               href="/signals"
-              className="glass-ghost-btn h-10 px-4 text-sm"
+              className="glass-ghost-btn"
             >
               Open full signals feed
             </Link>
@@ -408,7 +408,7 @@ export default async function HomePage() {
             </h2>
             <Link
               href="/founders"
-              className="glass-ghost-btn h-10 px-4 text-sm"
+              className="glass-ghost-btn"
             >
               Open full directory
             </Link>
@@ -444,7 +444,7 @@ export default async function HomePage() {
                     </span>
                   </div>
 
-                  <span className="glass-ghost-btn mt-4 inline-flex h-9 items-center gap-1 px-3 text-xs text-indigo-200">
+                  <span className="glass-ghost-btn glass-ghost-btn-compact mt-4 inline-flex items-center gap-1 text-indigo-200">
                     View Profile
                     <ArrowRight className="h-3.5 w-3.5" />
                   </span>
@@ -468,7 +468,7 @@ export default async function HomePage() {
               </div>
               <Link
                 href="/founders"
-                className="glass-cta-btn h-10 shrink-0 px-4 text-sm"
+                className="glass-cta-btn shrink-0"
               >
                 Open Directory
               </Link>
@@ -529,7 +529,7 @@ export default async function HomePage() {
             </h2>
             <Link
               href="/blog"
-              className="glass-ghost-btn h-10 px-4 text-sm"
+              className="glass-ghost-btn"
             >
               Open full blog
             </Link>

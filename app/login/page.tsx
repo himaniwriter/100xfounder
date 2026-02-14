@@ -2,15 +2,10 @@ import { redirect } from "next/navigation";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { LoginRegisterForm } from "@/components/auth/login-register-form";
-import {
-  getDummyAdminCredentials,
-  isDummyAdminEnabled,
-} from "@/lib/auth/dummy-admin";
 import { getSessionFromCookies } from "@/lib/auth/session";
 
 export default async function LoginPage() {
   const session = await getSessionFromCookies();
-  const dummyAdmin = isDummyAdminEnabled() ? getDummyAdminCredentials() : null;
 
   if (session) {
     redirect("/dashboard");
@@ -28,16 +23,7 @@ export default async function LoginPage() {
           their founder profile.
         </p>
 
-        <LoginRegisterForm
-          dummyAdmin={
-            dummyAdmin
-              ? {
-                  email: dummyAdmin.email,
-                  password: dummyAdmin.password,
-                }
-              : null
-          }
-        />
+        <LoginRegisterForm />
       </section>
       <Footer />
     </main>

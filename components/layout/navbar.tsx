@@ -1,7 +1,7 @@
-"use client";
-
 import Link from "next/link";
 import { Search } from "lucide-react";
+import { getSessionFromCookies } from "@/lib/auth/session";
+import { LogoutButton } from "@/components/dashboard/logout-button";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -12,7 +12,9 @@ const navLinks = [
   { label: "Pricing", href: "/pricing" },
 ];
 
-export function Navbar() {
+export async function Navbar() {
+  const session = await getSessionFromCookies();
+
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -34,18 +36,16 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-1.5 sm:gap-2">
-            <Link
-              href="/dashboard"
-              className="hidden h-9 items-center rounded-md border border-transparent bg-[#6366f1] px-3 text-sm font-medium text-white transition-colors hover:bg-[#5558ea] sm:inline-flex"
-            >
-              Dashboard
-            </Link>
-            <Link
-              href="/login"
-              className="inline-flex h-9 items-center rounded-md border border-white/10 bg-white/5 px-2.5 text-xs text-zinc-300 transition-colors hover:border-white/20 hover:text-white sm:px-3 sm:text-sm"
-            >
-              Login
-            </Link>
+            {session ? (
+              <LogoutButton />
+            ) : (
+              <Link
+                href="/login"
+                className="inline-flex h-9 items-center rounded-md border border-white/10 bg-white/5 px-2.5 text-xs text-zinc-300 transition-colors hover:border-white/20 hover:text-white sm:px-3 sm:text-sm"
+              >
+                Login
+              </Link>
+            )}
             <button
               type="button"
               aria-label="Search"

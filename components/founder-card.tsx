@@ -112,7 +112,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
         >
           <Link
             href={profileUrl}
-            className="glass-cta-btn h-10 w-full justify-center sm:w-auto"
+            className="glass-cta-btn w-full justify-center sm:w-auto"
           >
             View Contact
           </Link>
@@ -122,14 +122,14 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
             target="_blank"
             rel="noreferrer"
             aria-label={`Open ${founder.founderName} on LinkedIn`}
-            className="glass-ghost-btn h-10 w-10"
+            className="glass-ghost-btn glass-ghost-btn-icon"
           >
             <Linkedin className="h-4 w-4" />
           </a>
           <Link
             href={`/signals?founder=${encodeURIComponent(founder.founderName)}`}
             aria-label={`Track ${founder.founderName}`}
-            className="glass-ghost-btn h-10 w-10"
+            className="glass-ghost-btn glass-ghost-btn-icon"
           >
             <Bell className="h-4 w-4" />
           </Link>
@@ -138,7 +138,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
             target="_blank"
             rel="noreferrer"
             aria-label={`Share ${founder.founderName} profile`}
-            className="glass-ghost-btn h-10 w-10"
+            className="glass-ghost-btn glass-ghost-btn-icon"
           >
             <Share2 className="h-4 w-4" />
           </a>
