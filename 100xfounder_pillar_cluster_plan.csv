@@ -1,0 +1,16 @@
+cluster,keywords_total,low_keywords,medium_keywords,high_keywords,pillar_url,pillar_type,cluster_pillar_url,cluster_pillar_status,target_urls_to_create,target_urls_already_existing
+ai_finance_legal,80,14,66,0,/startups/fintech-startups,startup_discovery_existing,/blog/ai-finance-and-legal-tools-for-startups,create,80,0
+ai_fundraising,63,34,29,0,/startups/early-stage-startups,startup_discovery_existing,/blog/ai-fundraising-tools-for-startups,create,46,17
+ai_hiring,80,28,52,0,/founders?tab=hiring,founders_hub_existing,/blog/ai-hiring-tools-for-startups,create,80,0
+ai_long_tail,80,51,29,0,/blog,blog_hub_existing,/blog/ai-tools-checklists-and-templates-for-founders,create,80,0
+ai_marketing,80,29,51,0,/blog,blog_hub_existing,/blog/ai-marketing-tools-for-startups,create,80,0
+ai_product,55,22,33,0,/startups/saas-startups,startup_discovery_existing,/blog/ai-product-and-analytics-tools-for-startups,create,55,0
+ai_productivity,45,18,27,0,/blog,blog_hub_existing,/blog/ai-productivity-tools-for-founders,create,45,0
+ai_sales,80,25,54,1,/blog,blog_hub_existing,/blog/ai-sales-tools-for-startups,create,80,0
+ai_support,77,31,45,1,/startups/saas-startups,startup_discovery_existing,/blog/ai-customer-support-tools-for-startups,create,77,0
+ai_tool_comparisons,80,1,78,1,/blog,blog_hub_existing,/blog/best-ai-tool-comparisons-for-startups,create,80,0
+ai_tools,80,31,48,1,/startups/ai-startups,startup_discovery_existing,/blog/ai-tools-for-startups,create,0,80
+cofounder,100,8,87,5,/founders,founders_hub_existing,/blog/find-cofounder-for-startup,create,0,100
+community,100,6,92,2,/founders?tab=trending,founders_hub_existing,/blog/startup-founder-community-guide,create,0,100
+fundraising,100,15,85,0,/startups/early-stage-startups,startup_discovery_existing,/blog/startup-fundraising-playbook,create,0,100
+growth,100,21,77,2,/startups/growth-stage-startups,startup_discovery_existing,/blog/startup-growth-playbook,create,100,0
