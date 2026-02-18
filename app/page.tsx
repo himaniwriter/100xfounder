@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { BlogCard } from "@/components/blog/blog-card";
 import { HalfBlurValue } from "@/components/ui/half-blur-value";
 import { CompanyLogo } from "@/components/ui/company-logo";
+import { FounderAvatar } from "@/components/ui/founder-avatar";
 import { GlassCard } from "@/components/ui/glass-card";
 import { getBlogHomeSections } from "@/lib/blog/store";
 import { readHomepageContent } from "@/lib/content/homepage-content";
@@ -419,11 +420,19 @@ export default async function HomePage() {
               <Link key={founder.id} href={`/founders/${founder.slug}`} className="group block">
                 <GlassCard className="h-full cursor-pointer p-5 transition-all group-hover:scale-[1.015] group-hover:border-indigo-400/45 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]">
                   <div className="flex items-start gap-3">
-                    <CompanyLogo
-                      companyName={founder.companyName}
-                      websiteUrl={founder.websiteUrl}
-                      className="h-11 w-11 rounded-xl border border-white/15"
-                    />
+                    <div className="relative h-12 w-12 shrink-0">
+                      <CompanyLogo
+                        companyName={founder.companyName}
+                        websiteUrl={founder.websiteUrl}
+                        className="h-11 w-11 rounded-xl border border-white/15"
+                      />
+                      <FounderAvatar
+                        name={founder.founderName}
+                        imageUrl={founder.avatarUrl}
+                        linkedinUrl={founder.linkedinUrl}
+                        className="absolute -bottom-1 -right-1 h-6 w-6 rounded-full border border-white/20 bg-black/40"
+                      />
+                    </div>
                     <div>
                       <h3 className="text-lg font-medium text-white">
                         {founder.founderName}

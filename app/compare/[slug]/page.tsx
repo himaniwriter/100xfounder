@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { CompanyLogo } from "@/components/ui/company-logo";
+import { FounderAvatar } from "@/components/ui/founder-avatar";
 import { getFounderDirectory } from "@/lib/founders/store";
 
 type ComparePageProps = {
@@ -35,6 +37,35 @@ export default async function ComparePage({ params }: ComparePageProps) {
         <p className="mt-2 text-sm text-zinc-400">
           Side-by-side founder and growth signal comparison.
         </p>
+
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          {[left, right].map((item) => (
+            <article
+              key={item.id}
+              className="rounded-xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-[30px]"
+            >
+              <div className="flex items-center gap-3">
+                <div className="relative h-14 w-14 shrink-0">
+                  <CompanyLogo
+                    companyName={item.companyName}
+                    websiteUrl={item.websiteUrl}
+                    className="h-12 w-12 rounded-xl border border-white/20"
+                  />
+                  <FounderAvatar
+                    name={item.founderName}
+                    imageUrl={item.avatarUrl}
+                    linkedinUrl={item.linkedinUrl}
+                    className="absolute -bottom-1 -right-1 h-7 w-7 rounded-full border border-white/25 bg-black/30"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <p className="truncate text-base font-semibold text-white">{item.companyName}</p>
+                  <p className="truncate text-sm text-zinc-400">{item.founderName}</p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
 
         <div className="mt-6 overflow-hidden rounded-xl border border-white/10 bg-white/5">
           <table className="w-full text-left text-sm">

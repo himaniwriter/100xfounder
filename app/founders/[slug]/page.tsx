@@ -5,6 +5,8 @@ import { ProfileFaqSection } from "@/components/seo/profile-faq-section";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { ProfileTabs } from "@/components/founders/profile-tabs";
+import { CompanyLogo } from "@/components/ui/company-logo";
+import { FounderAvatar } from "@/components/ui/founder-avatar";
 import { getFounderDirectory } from "@/lib/founders/store";
 import {
   buildFounderFaqs,
@@ -67,22 +69,40 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
 
       <section className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-8 backdrop-blur-[40px]">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-300">
-              Verified Profile
-            </span>
-            <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
-              {founder.stage}
-            </span>
-            <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
-              {founder.industry}
-            </span>
-          </div>
+          <div className="flex items-start gap-4">
+            <div className="relative mt-1 h-16 w-16 shrink-0">
+              <CompanyLogo
+                companyName={founder.companyName}
+                websiteUrl={founder.websiteUrl}
+                className="h-14 w-14 rounded-xl border border-white/20"
+              />
+              <FounderAvatar
+                name={founder.founderName}
+                imageUrl={founder.avatarUrl}
+                linkedinUrl={founder.linkedinUrl}
+                className="absolute -bottom-1 -right-1 h-8 w-8 rounded-full border border-white/25 bg-black/40 shadow-[0_0_0_2px_rgba(5,5,5,0.9)]"
+              />
+            </div>
 
-          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            {founder.founderName}
-          </h1>
-          <p className="mt-2 text-lg text-zinc-300">{founder.companyName}</p>
+            <div className="min-w-0">
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-300">
+                  Verified Profile
+                </span>
+                <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
+                  {founder.stage}
+                </span>
+                <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
+                  {founder.industry}
+                </span>
+              </div>
+
+              <h1 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                {founder.founderName}
+              </h1>
+              <p className="mt-2 text-lg text-zinc-300">{founder.companyName}</p>
+            </div>
+          </div>
 
           <p className="mt-6 text-sm leading-7 text-zinc-300">
             {founder.productSummary}

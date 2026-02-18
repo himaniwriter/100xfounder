@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
+import { CompanyLogo } from "@/components/ui/company-logo";
+import { FounderAvatar } from "@/components/ui/founder-avatar";
 import { HalfBlurValue } from "@/components/ui/half-blur-value";
 
 type ProfileTabsProps = {
@@ -101,8 +103,25 @@ export function ProfileTabs({ founder, similar }: ProfileTabsProps) {
                     href={`/founders/${item.slug}`}
                     className="rounded-lg border border-white/10 bg-black/30 p-3 transition-colors hover:border-white/20"
                   >
-                    <p className="text-sm font-medium text-white">{item.founderName}</p>
-                    <p className="mt-1 text-xs text-zinc-400">{item.companyName}</p>
+                    <div className="flex items-center gap-3">
+                      <div className="relative h-11 w-11 shrink-0">
+                        <CompanyLogo
+                          companyName={item.companyName}
+                          websiteUrl={item.websiteUrl}
+                          className="h-9 w-9 rounded-lg border border-white/20"
+                        />
+                        <FounderAvatar
+                          name={item.founderName}
+                          imageUrl={item.avatarUrl}
+                          linkedinUrl={item.linkedinUrl}
+                          className="absolute -bottom-1 -right-1 h-6 w-6 rounded-full border border-white/25 bg-black/30"
+                        />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="truncate text-sm font-medium text-white">{item.founderName}</p>
+                        <p className="mt-1 truncate text-xs text-zinc-400">{item.companyName}</p>
+                      </div>
+                    </div>
                   </Link>
                 ))
               ) : (

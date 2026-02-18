@@ -12,6 +12,14 @@ type FounderAvatarProps = {
   imageClassName?: string;
 };
 
+function buildSeededAvatarSources(name: string): string[] {
+  const seed = encodeURIComponent(name.trim().toLowerCase() || "founder");
+  return [
+    `https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=${seed}`,
+    `https://api.dicebear.com/9.x/micah/svg?seed=${seed}`,
+  ];
+}
+
 function hashValue(value: string): number {
   let hash = 0;
   for (let index = 0; index < value.length; index += 1) {
@@ -53,6 +61,8 @@ export function FounderAvatar({
         founderName: name,
       }),
     );
+
+    values.push(...buildSeededAvatarSources(name));
 
     return Array.from(new Set(values));
   }, [imageUrl, linkedinUrl, name]);
