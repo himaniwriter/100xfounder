@@ -4,6 +4,7 @@ import { z } from "zod";
 import { buildExcerpt, countWords, slugify } from "@/lib/blog/post-utils";
 import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
 import { prisma } from "@/lib/prisma";
+import { ensureBlogPostsSchema } from "@/lib/db-bootstrap";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -159,6 +160,7 @@ export async function POST(request: Request) {
   }
 
   const title = parsed.data.title.trim();
+  await ensureBlogPostsSchema();
   const slug = await buildUniqueSlugFromTitle(title);
   const seoTitle = parsed.data.seo_metadata?.title?.trim() || title;
   const seoDescription =

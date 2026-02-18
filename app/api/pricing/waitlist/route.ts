@@ -7,6 +7,7 @@ import { isWorkEmail } from "@/lib/pricing/waitlist";
 import { getConfiguredN8nSecret } from "@/lib/security/webhooks";
 import { readGlobalSiteSettings } from "@/lib/site-settings";
 import { recordSiteEvent } from "@/lib/analytics/site-events";
+import { ensureGrowthWaveSchema } from "@/lib/db-bootstrap";
 
 const waitlistSchema = z.object({
   name: z.string().trim().min(2).max(120),
@@ -56,6 +57,8 @@ export async function POST(request: Request) {
   }
 
   try {
+    await ensureGrowthWaveSchema();
+
     const row = await prisma.pricingWaitlistRequest.create({
       data: {
         name: parsed.data.name,

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
 import { prisma } from "@/lib/prisma";
+import { ensureGrowthWaveSchema } from "@/lib/db-bootstrap";
 
 const eventSchema = z.object({
   event_name: z.enum([
@@ -49,6 +50,8 @@ export async function POST(request: Request) {
   }
 
   try {
+    await ensureGrowthWaveSchema();
+
     await prisma.siteEvent.create({
       data: {
         eventName: parsed.data.event_name,
@@ -61,12 +64,11 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ success: true }, { status: 201 });
   } catch (error) {
+    console.error("Event tracking failed:", error);
+
     return NextResponse.json(
-      {
-        success: false,
-        error: toPublicDatabaseError(error, "Failed to track event."),
-      },
-      { status: 500 },
+      { success: true, stored: false, warning: toPublicDatabaseError(error, "Failed to track event.") },
+      { status: 201 },
     );
   }
 }

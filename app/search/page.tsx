@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { SearchPageForm } from "@/components/search/search-page-form";
 import { searchSite } from "@/lib/search/service";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 type SearchPageProps = {
   searchParams?: {
@@ -20,6 +21,7 @@ function toType(value: string | undefined): "all" | "founder" | "company" | "blo
 }
 
 export async function generateMetadata({ searchParams }: SearchPageProps): Promise<Metadata> {
+  const baseUrl = getSiteBaseUrl();
   const q = searchParams?.q?.trim() || "";
 
   if (!q) {
@@ -27,12 +29,19 @@ export async function generateMetadata({ searchParams }: SearchPageProps): Promi
       title: "Search Founders, Companies, and Blog Posts | 100Xfounder",
       description: "Search 100Xfounder across founder profiles, company pages, and startup intelligence articles.",
       robots: { index: false, follow: true },
+      alternates: {
+        canonical: `${baseUrl}/search`,
+      },
     };
   }
 
   return {
     title: `Search results for ${q} | 100Xfounder`,
     description: `Search results for ${q} across founders, companies, and blog posts on 100Xfounder.`,
+    robots: { index: false, follow: true },
+    alternates: {
+      canonical: `${baseUrl}/search`,
+    },
   };
 }
 

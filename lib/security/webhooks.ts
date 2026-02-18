@@ -18,6 +18,7 @@ export async function getConfiguredN8nSecret(): Promise<string> {
     settings.n8nSecretKey.trim() ||
     process.env.N8N_SYNC_SECRET ||
     process.env.N8N_SECRET_KEY ||
+    process.env.N8N_BLOG_SECRET ||
     ""
   );
 }

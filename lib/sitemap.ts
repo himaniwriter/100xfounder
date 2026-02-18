@@ -69,16 +69,25 @@ function normalizeBaseUrl(value: string): string {
 }
 
 export function getSiteBaseUrl(): string {
+  const defaultProductionUrl = "https://100xfounder.com";
   const explicit = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL;
   if (explicit) {
     return normalizeBaseUrl(explicit);
+  }
+
+  if (process.env.VERCEL_ENV === "production") {
+    return defaultProductionUrl;
+  }
+
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    return normalizeBaseUrl(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);
   }
 
   if (process.env.VERCEL_URL) {
     return normalizeBaseUrl(`https://${process.env.VERCEL_URL}`);
   }
 
-  return "https://100xfounder.com";
+  return defaultProductionUrl;
 }
 
 function uniqueByHref(items: HtmlSitemapLink[]): HtmlSitemapLink[] {

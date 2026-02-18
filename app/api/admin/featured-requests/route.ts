@@ -7,6 +7,7 @@ import {
   featuredStatusFromDbValue,
 } from "@/lib/featured/config";
 import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
+import { ensureFeaturedFounderSchema } from "@/lib/db-bootstrap";
 
 const statusQuerySchema = z
   .enum(["new", "in_review", "approved", "rejected", "published"])
@@ -46,6 +47,8 @@ export async function GET(request: NextRequest) {
   }
 
   try {
+    await ensureFeaturedFounderSchema();
+
     const rows = await prisma.featuredFounderRequest.findMany({
       where: parsedStatus.data
         ? {

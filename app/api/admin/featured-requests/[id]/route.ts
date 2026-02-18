@@ -7,6 +7,7 @@ import {
   featuredStatusToDbValue,
 } from "@/lib/featured/config";
 import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
+import { ensureFeaturedFounderSchema } from "@/lib/db-bootstrap";
 
 const featuredStatusSchema = z.enum([
   "new",
@@ -203,6 +204,8 @@ export async function PATCH(
   }
 
   try {
+    await ensureFeaturedFounderSchema();
+
     const existing = await prisma.featuredFounderRequest.findUnique({
       where: { id: context.params.id },
     });

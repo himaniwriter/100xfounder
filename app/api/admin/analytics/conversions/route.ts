@@ -3,6 +3,10 @@ import { z } from "zod";
 import { requireAdminApi } from "@/lib/auth/admin-guard";
 import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
 import { prisma } from "@/lib/prisma";
+import {
+  ensureFeaturedFounderSchema,
+  ensureGrowthWaveSchema,
+} from "@/lib/db-bootstrap";
 
 const querySchema = z.object({
   range: z.enum(["7d", "30d"]).optional(),
@@ -80,6 +84,11 @@ export async function GET(request: NextRequest) {
   const endDate = new Date();
 
   try {
+    await Promise.all([
+      ensureFeaturedFounderSchema(),
+      ensureGrowthWaveSchema(),
+    ]);
+
     const [events, featuredRows, pricingRows] = await Promise.all([
       prisma.siteEvent.findMany({
         where: { createdAt: { gte: startDate } },
