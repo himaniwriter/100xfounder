@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     "Daily startup intelligence from India and the US: rewritten funding updates, market signals, and founder moves with source attribution.",
 };
 
-export default function BlogHomePage({ searchParams }: BlogHomePageProps) {
-  const { posts } = getBlogHomeSections();
+export default async function BlogHomePage({ searchParams }: BlogHomePageProps) {
+  const { posts } = await getBlogHomeSections();
   const activeCategory = searchParams?.category?.trim();
   const visiblePosts = activeCategory
     ? posts.filter((post) => post.category.toLowerCase() === activeCategory.toLowerCase())

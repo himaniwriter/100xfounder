@@ -3,7 +3,11 @@
 import { useState } from "react";
 import { RefreshCw } from "lucide-react";
 
-type AutomationAction = "news_scraper" | "sync_newsletter" | "enrich_data";
+type AutomationAction =
+  | "news_scraper"
+  | "sync_newsletter"
+  | "enrich_data"
+  | "founders_sync";
 
 const cards: Array<{
   title: string;
@@ -28,6 +32,12 @@ const cards: Array<{
     description: "Start AI + enrichment workflow for incomplete founder/company profiles.",
     action: "enrich_data",
     button: "Enrich Records",
+  },
+  {
+    title: "Sync Founders Directory",
+    description: "Run founder/company refresh workflow that posts into the sync webhook.",
+    action: "founders_sync",
+    button: "Sync Founders",
   },
 ];
 

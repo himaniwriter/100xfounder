@@ -38,6 +38,11 @@ enum FundingStage {
   ACQUIRED
 }
 
+enum PostStatus {
+  DRAFT     @map("draft")
+  PUBLISHED @map("published")
+}
+
 model User {
   id        String   @id @default(uuid()) @db.Uuid
   email     String   @unique
@@ -211,4 +216,22 @@ model AggregatorConnection {
   @@index([isActive])
   @@index([createdById])
   @@map("aggregator_connections")
+}
+
+model Post {
+  id             String     @id @default(uuid()) @db.Uuid
+  title          String
+  content        String
+  slug           String     @unique
+  featureImage   String     @map("feature_image")
+  imageCredit    String?    @map("image_credit")
+  seoTitle       String     @map("seo_title")
+  seoDescription String     @map("seo_description")
+  wordCount      Int        @map("word_count")
+  status         PostStatus @default(DRAFT)
+  createdAt      DateTime   @default(now()) @map("created_at")
+  updatedAt      DateTime   @updatedAt @map("updated_at")
+
+  @@index([status, createdAt(sort: Desc)])
+  @@map("posts")
 }

@@ -9,6 +9,7 @@ import type { HomepageContent } from "@/lib/content/homepage-content";
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 type StudioTab = "blog" | "pages";
+type BlogListFilter = "ALL" | "DRAFT" | "PUBLISHED";
 
 type BlogForm = {
   slug: string;
@@ -17,6 +18,7 @@ type BlogForm = {
   category: string;
   readingTime: string;
   thumbnail: string;
+  imageCredit: string;
   author: string;
   content: string;
   status: "DRAFT" | "PUBLISHED";
@@ -33,6 +35,7 @@ const EMPTY_BLOG_FORM: BlogForm = {
   category: "Guide",
   readingTime: "5 min read",
   thumbnail: "/images/covers/startup-brief.svg",
+  imageCredit: "",
   author: "100Xfounder Research",
   content: "",
   status: "DRAFT",
@@ -59,6 +62,7 @@ function toBlogForm(post: BlogPost): BlogForm {
     category: post.category,
     readingTime: post.readingTime,
     thumbnail: post.thumbnail,
+    imageCredit: post.imageCredit ?? "",
     author: post.author,
     content: post.content,
     status: post.status ?? "PUBLISHED",
@@ -73,6 +77,7 @@ export function ContentStudio() {
   const [activeTab, setActiveTab] = useState<StudioTab>("blog");
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [blogForm, setBlogForm] = useState<BlogForm>(EMPTY_BLOG_FORM);
+  const [blogFilter, setBlogFilter] = useState<BlogListFilter>("ALL");
   const [homepageForm, setHomepageForm] = useState<HomepageContent | null>(null);
   const [status, setStatus] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
@@ -88,6 +93,15 @@ export function ContentStudio() {
   );
 
   const posts = useMemo(() => blogState.data?.posts ?? [], [blogState.data]);
+  const visiblePosts = useMemo(() => {
+    if (blogFilter === "DRAFT") {
+      return posts.filter((post) => post.status === "DRAFT");
+    }
+    if (blogFilter === "PUBLISHED") {
+      return posts.filter((post) => post.status === "PUBLISHED");
+    }
+    return posts;
+  }, [posts, blogFilter]);
 
   useEffect(() => {
     if (!posts.length) {
@@ -186,6 +200,24 @@ export function ContentStudio() {
     await blogState.mutate();
   }
 
+  async function publishPost(slug: string) {
+    const response = await fetch(`/api/admin/content/blog/${slug}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ status: "PUBLISHED" }),
+    });
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      setStatus(result.error ?? "Failed to publish post.");
+      return;
+    }
+
+    setBlogForm((current) => ({ ...current, status: "PUBLISHED" }));
+    setStatus("Post published.");
+    await blogState.mutate();
+  }
+
   async function saveHomepageBlocks() {
     if (!homepageForm) return;
     setSaving(true);
@@ -260,16 +292,32 @@ export function ContentStudio() {
                 New
               </button>
             </div>
+            <div className="mb-3 inline-flex rounded-md border border-white/10 bg-black/20 p-1">
+              {(["ALL", "DRAFT", "PUBLISHED"] as BlogListFilter[]).map((value) => (
+                <button
+                  key={value}
+                  type="button"
+                  onClick={() => setBlogFilter(value)}
+                  className={
+                    blogFilter === value
+                      ? "rounded-md bg-indigo-500/20 px-2 py-1 text-xs text-indigo-200"
+                      : "rounded-md px-2 py-1 text-xs text-zinc-400 hover:text-white"
+                  }
+                >
+                  {value}
+                </button>
+              ))}
+            </div>
 
             <div className="space-y-2">
               {blogState.isLoading ? (
                 <p className="text-sm text-zinc-400">Loading posts...</p>
               ) : blogState.error ? (
                 <p className="text-sm text-red-300">{(blogState.error as Error).message}</p>
-              ) : posts.length === 0 ? (
-                <p className="text-sm text-zinc-500">No posts available.</p>
+              ) : visiblePosts.length === 0 ? (
+                <p className="text-sm text-zinc-500">No posts found for this filter.</p>
               ) : (
-                posts.map((post) => (
+                visiblePosts.map((post) => (
                   <div
                     key={post.slug}
                     className={
@@ -306,6 +354,15 @@ export function ContentStudio() {
                         Delete
                       </button>
                     </div>
+                    {post.status === "DRAFT" ? (
+                      <button
+                        type="button"
+                        onClick={() => publishPost(post.slug)}
+                        className="mt-2 rounded-md border border-indigo-400/35 bg-indigo-500/10 px-2 py-1 text-xs text-indigo-200 hover:bg-indigo-500/20"
+                      >
+                        Publish
+                      </button>
+                    ) : null}
                   </div>
                 ))
               )}
@@ -361,6 +418,14 @@ export function ContentStudio() {
                   setBlogForm((current) => ({ ...current, thumbnail: event.target.value }))
                 }
                 placeholder="Featured Image URL"
+                className="h-10 rounded-md border border-white/15 bg-black/40 px-3 text-sm text-zinc-100 md:col-span-2"
+              />
+              <input
+                value={blogForm.imageCredit}
+                onChange={(event) =>
+                  setBlogForm((current) => ({ ...current, imageCredit: event.target.value }))
+                }
+                placeholder="Image Credit (Source)"
                 className="h-10 rounded-md border border-white/15 bg-black/40 px-3 text-sm text-zinc-100 md:col-span-2"
               />
               <input
@@ -445,6 +510,15 @@ export function ContentStudio() {
             >
               {saving ? "Saving..." : "Save Article"}
             </button>
+            {!isNewPost && selectedSlug && blogForm.status !== "PUBLISHED" ? (
+              <button
+                type="button"
+                onClick={() => publishPost(selectedSlug)}
+                className="ml-2 inline-flex h-10 items-center rounded-md border border-emerald-400/35 bg-emerald-500/10 px-4 text-sm font-medium text-emerald-200 transition-colors hover:bg-emerald-500/20"
+              >
+                Publish
+              </button>
+            ) : null}
           </div>
         </div>
       ) : (

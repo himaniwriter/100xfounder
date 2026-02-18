@@ -91,7 +91,7 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
   const now = new Date();
   const founders = await getFounderDirectory();
   const countryCoverage = await getCountryCoverage();
-  const blogPosts = getAllBlogPosts();
+  const blogPosts = await getAllBlogPosts();
 
   const staticLinks = STATIC_ROUTES.map((route) => ({
     href: route.href,

@@ -3,13 +3,19 @@ import { z } from "zod";
 import { requireAdminApi } from "@/lib/auth/admin-guard";
 import { readGlobalSiteSettings } from "@/lib/site-settings";
 
+const automationActionSchema = z.enum([
+  "news_scraper",
+  "sync_newsletter",
+  "enrich_data",
+  "founders_sync",
+]);
+type AutomationAction = z.infer<typeof automationActionSchema>;
+
 const triggerSchema = z.object({
-  action: z.enum(["news_scraper", "sync_newsletter", "enrich_data"]),
+  action: automationActionSchema,
 });
 
-async function getWebhookUrl(
-  action: "news_scraper" | "sync_newsletter" | "enrich_data",
-): Promise<string | null> {
+async function getWebhookUrl(action: AutomationAction): Promise<string | null> {
   const settings = await readGlobalSiteSettings();
   const n8nPrimaryWebhookUrl = settings.n8nPrimaryWebhookUrl.trim();
   const n8nBaseWebhookUrl = settings.n8nBaseWebhookUrl.trim();
@@ -24,6 +30,10 @@ async function getWebhookUrl(
   const envEnrich =
     process.env.N8N_ENRICH_DATA_WEBHOOK_URL ||
     process.env.N8N_COMPANY_CONTENT_WEBHOOK_URL ||
+    "";
+  const envFoundersSync =
+    process.env.N8N_FOUNDERS_SYNC_WEBHOOK_URL ||
+    process.env.N8N_TRIGGER_FOUNDERS_SYNC_WEBHOOK_URL ||
     "";
 
   if (action === "news_scraper") {
@@ -42,6 +52,16 @@ async function getWebhookUrl(
       n8nPrimaryWebhookUrl ||
       n8nBaseWebhookUrl ||
       envNewsletter ||
+      null
+    );
+  }
+
+  if (action === "founders_sync") {
+    return (
+      settings.n8nFoundersSyncWebhookUrl.trim() ||
+      n8nPrimaryWebhookUrl ||
+      n8nBaseWebhookUrl ||
+      envFoundersSync ||
       null
     );
   }
@@ -103,7 +123,10 @@ export async function POST(request: NextRequest) {
       headers,
       body: JSON.stringify({
         action: parsed.data.action,
+        source: "100xfounder-admin",
+        schemaVersion: "2026-02-18",
         triggeredBy: access.session.email,
+        triggeredByRole: access.session.role,
         triggeredAt: new Date().toISOString(),
       }),
       cache: "no-store",

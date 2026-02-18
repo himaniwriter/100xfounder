@@ -17,7 +17,7 @@ export async function Navbar() {
   const session = await getSessionFromCookies();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
+    <header className="glass-header sticky top-0 z-50">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="text-lg font-bold tracking-tighter text-white sm:text-xl">

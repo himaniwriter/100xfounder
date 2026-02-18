@@ -21,6 +21,7 @@ const settingsSchema = z.object({
   n8nNewsScraperWebhookUrl: optionalHttpUrl,
   n8nNewsletterWebhookUrl: optionalHttpUrl,
   n8nEnrichDataWebhookUrl: optionalHttpUrl,
+  n8nFoundersSyncWebhookUrl: optionalHttpUrl,
   n8nClaimProfileWebhookUrl: optionalHttpUrl,
   n8nSecretKey: z.string().optional(),
   supabaseUrl: optionalHttpUrl,

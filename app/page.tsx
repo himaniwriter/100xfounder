@@ -127,7 +127,7 @@ export default async function HomePage() {
   const marqueeItems = Array.from(
     new Set(founders.map((item) => item.companyName)),
   );
-  const { posts: blogPosts } = getBlogHomeSections();
+  const { posts: blogPosts } = await getBlogHomeSections();
   const latestHomeArticles = blogPosts.slice(0, 6);
   const leadHomeArticle = latestHomeArticles[0] ?? null;
   const sideHomeArticles = latestHomeArticles.slice(1, 4);

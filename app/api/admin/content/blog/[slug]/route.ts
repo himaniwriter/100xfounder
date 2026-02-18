@@ -1,7 +1,10 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { z } from "zod";
 import { requireAdminApi } from "@/lib/auth/admin-guard";
-import { readAdminBlogPosts, writeAdminBlogPosts } from "@/lib/admin/blog-content-store";
+import {
+  deleteAdminBlogPost,
+  updateAdminBlogPost,
+} from "@/lib/admin/blog-content-store";
 
 const updateBlogSchema = z.object({
   title: z.string().min(4).optional(),
@@ -9,6 +12,7 @@ const updateBlogSchema = z.object({
   category: z.string().min(2).optional(),
   readingTime: z.string().min(3).optional(),
   thumbnail: z.string().min(1).optional(),
+  imageCredit: z.string().max(240).optional(),
   author: z.string().min(2).optional(),
   content: z.string().min(20).optional(),
   status: z.enum(["DRAFT", "PUBLISHED"]).optional(),
@@ -38,36 +42,15 @@ export async function PATCH(
   }
 
   try {
-    const posts = await readAdminBlogPosts();
-    const index = posts.findIndex((post) => post.slug === context.params.slug);
-
-    if (index < 0) {
+    const post = await updateAdminBlogPost(context.params.slug, parsed.data);
+    if (!post) {
       return NextResponse.json(
         { success: false, error: "Blog post not found." },
         { status: 404 },
       );
     }
 
-    const existing = posts[index];
-    const nextStatus = parsed.data.status ?? existing.status ?? "PUBLISHED";
-
-    posts[index] = {
-      ...existing,
-      ...parsed.data,
-      status: nextStatus,
-      publishedAt:
-        nextStatus === "PUBLISHED"
-          ? existing.publishedAt === "2099-01-01"
-            ? new Date().toISOString().slice(0, 10)
-            : existing.publishedAt
-          : "2099-01-01",
-      seoTitle: parsed.data.seoTitle ?? existing.seoTitle ?? existing.title,
-      seoDescription:
-        parsed.data.seoDescription ?? existing.seoDescription ?? existing.excerpt,
-    };
-
-    await writeAdminBlogPosts(posts);
-    return NextResponse.json({ success: true, post: posts[index] });
+    return NextResponse.json({ success: true, post });
   } catch (error) {
     return NextResponse.json(
       {
@@ -89,17 +72,14 @@ export async function DELETE(
   }
 
   try {
-    const posts = await readAdminBlogPosts();
-    const nextPosts = posts.filter((post) => post.slug !== context.params.slug);
-
-    if (nextPosts.length === posts.length) {
+    const deleted = await deleteAdminBlogPost(context.params.slug);
+    if (!deleted) {
       return NextResponse.json(
         { success: false, error: "Blog post not found." },
         { status: 404 },
       );
     }
 
-    await writeAdminBlogPosts(nextPosts);
     return NextResponse.json({ success: true });
   } catch (error) {
     return NextResponse.json(

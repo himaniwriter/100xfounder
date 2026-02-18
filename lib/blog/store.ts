@@ -1,5 +1,8 @@
 import rawPosts from "@/lib/blog/blog-data.json";
+import { isDatabaseConfigured } from "@/lib/db-config";
+import { buildExcerpt, toReadingTime } from "@/lib/blog/post-utils";
 import type { BlogHeading, BlogPost } from "@/lib/blog/types";
+import { prisma } from "@/lib/prisma";
 
 function parseDateValue(value: string): number {
   const time = Date.parse(value);
@@ -14,10 +17,6 @@ function slugify(value: string): string {
     .replace(/(^-|-$)+/g, "");
 }
 
-export function getAllBlogPosts(): BlogPost[] {
-  return getAllBlogPostsWithOptions();
-}
-
 export function normalizeBlogPost(post: BlogPost): BlogPost {
   return {
     ...post,
@@ -28,26 +27,100 @@ export function normalizeBlogPost(post: BlogPost): BlogPost {
   };
 }
 
-export function getAllBlogPostsWithOptions(
-  options: { includeDrafts?: boolean } = {},
-): BlogPost[] {
-  const includeDrafts = options.includeDrafts ?? false;
+function mapDatabasePostToBlogPost(post: {
+  slug: string;
+  title: string;
+  content: string;
+  featureImage: string;
+  imageCredit: string | null;
+  seoTitle: string;
+  seoDescription: string;
+  wordCount: number;
+  status: "DRAFT" | "PUBLISHED";
+  createdAt: Date;
+}): BlogPost {
+  const resolvedWordCount = post.wordCount > 0 ? post.wordCount : 0;
 
-  return [...(rawPosts as BlogPost[])]
-    .map(normalizeBlogPost)
+  return normalizeBlogPost({
+    slug: post.slug,
+    title: post.title,
+    excerpt: buildExcerpt(post.content, post.seoDescription),
+    category: "Founder Intelligence",
+    readingTime: toReadingTime(resolvedWordCount),
+    thumbnail: post.featureImage,
+    imageCredit: post.imageCredit ?? undefined,
+    wordCount: resolvedWordCount,
+    publishedAt: post.createdAt.toISOString(),
+    isFeatured: false,
+    isTrending: false,
+    author: "100Xfounder Research",
+    content: post.content,
+    status: post.status,
+    seoTitle: post.seoTitle,
+    seoDescription: post.seoDescription,
+  });
+}
+
+async function readBlogPostsFromDatabase(): Promise<BlogPost[]> {
+  if (!isDatabaseConfigured()) {
+    return [];
+  }
+
+  try {
+    const posts = await prisma.post.findMany({
+      orderBy: { createdAt: "desc" },
+    });
+
+    return posts.map((post) =>
+      mapDatabasePostToBlogPost({
+        ...post,
+        status: post.status === "PUBLISHED" ? "PUBLISHED" : "DRAFT",
+      }),
+    );
+  } catch {
+    return [];
+  }
+}
+
+function readBlogPostsFromFile(): BlogPost[] {
+  return [...(rawPosts as BlogPost[])].map(normalizeBlogPost);
+}
+
+export async function getAllBlogPosts(): Promise<BlogPost[]> {
+  return getAllBlogPostsWithOptions();
+}
+
+export async function getAllBlogPostsWithOptions(
+  options: { includeDrafts?: boolean } = {},
+): Promise<BlogPost[]> {
+  const includeDrafts = options.includeDrafts ?? false;
+  const filePosts = readBlogPostsFromFile();
+  const databasePosts = await readBlogPostsFromDatabase();
+  const mergedBySlug = new Map<string, BlogPost>();
+
+  filePosts.forEach((post) => {
+    mergedBySlug.set(post.slug, post);
+  });
+
+  databasePosts.forEach((post) => {
+    mergedBySlug.set(post.slug, post);
+  });
+
+  return [...mergedBySlug.values()]
     .filter((post) => includeDrafts || post.status === "PUBLISHED")
     .sort((a, b) => parseDateValue(b.publishedAt) - parseDateValue(a.publishedAt));
 }
 
-export function getBlogPostBySlug(
+export async function getBlogPostBySlug(
   slug: string,
   options: { includeDrafts?: boolean } = {},
-): BlogPost | null {
-  return getAllBlogPostsWithOptions(options).find((post) => post.slug === slug) ?? null;
+): Promise<BlogPost | null> {
+  const posts = await getAllBlogPostsWithOptions(options);
+  return posts.find((post) => post.slug === slug) ?? null;
 }
 
-export function getBlogHomeSections() {
-  const posts = getAllBlogPostsWithOptions();
+export async function getBlogHomeSections() {
+  const posts = await getAllBlogPostsWithOptions();
   const featured = posts.find((post) => post.isFeatured) ?? posts[0] ?? null;
 
   const trending = posts

@@ -14,6 +14,7 @@ export type GlobalSiteSettings = {
   n8nNewsScraperWebhookUrl: string;
   n8nNewsletterWebhookUrl: string;
   n8nEnrichDataWebhookUrl: string;
+  n8nFoundersSyncWebhookUrl: string;
   n8nClaimProfileWebhookUrl: string;
   n8nSecretKey: string;
   supabaseUrl: string;
@@ -36,6 +37,7 @@ export const DEFAULT_GLOBAL_SITE_SETTINGS: GlobalSiteSettings = {
   n8nNewsScraperWebhookUrl: "",
   n8nNewsletterWebhookUrl: "",
   n8nEnrichDataWebhookUrl: "",
+  n8nFoundersSyncWebhookUrl: "",
   n8nClaimProfileWebhookUrl: "",
   n8nSecretKey: "",
   supabaseUrl: "",

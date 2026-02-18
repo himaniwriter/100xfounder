@@ -10,6 +10,7 @@ type IntegrationSettings = {
   n8nNewsScraperWebhookUrl: string;
   n8nNewsletterWebhookUrl: string;
   n8nEnrichDataWebhookUrl: string;
+  n8nFoundersSyncWebhookUrl: string;
   n8nClaimProfileWebhookUrl: string;
   n8nSecretKey: string;
   supabaseUrl: string;
@@ -34,6 +35,7 @@ const DEFAULT_SETTINGS: IntegrationSettings = {
   n8nNewsScraperWebhookUrl: "",
   n8nNewsletterWebhookUrl: "",
   n8nEnrichDataWebhookUrl: "",
+  n8nFoundersSyncWebhookUrl: "",
   n8nClaimProfileWebhookUrl: "",
   n8nSecretKey: "",
   supabaseUrl: "",
@@ -116,6 +118,7 @@ export function IntegrationSettingsPanel() {
         n8nNewsScraperWebhookUrl: data.n8nNewsScraperWebhookUrl,
         n8nNewsletterWebhookUrl: data.n8nNewsletterWebhookUrl,
         n8nEnrichDataWebhookUrl: data.n8nEnrichDataWebhookUrl,
+        n8nFoundersSyncWebhookUrl: data.n8nFoundersSyncWebhookUrl,
         n8nClaimProfileWebhookUrl: data.n8nClaimProfileWebhookUrl,
         n8nSecretKey: "",
         supabaseUrl: data.supabaseUrl,
@@ -150,6 +153,7 @@ export function IntegrationSettingsPanel() {
       form.n8nNewsScraperWebhookUrl.trim() ||
       form.n8nNewsletterWebhookUrl.trim() ||
       form.n8nEnrichDataWebhookUrl.trim() ||
+      form.n8nFoundersSyncWebhookUrl.trim() ||
       form.n8nClaimProfileWebhookUrl.trim(),
     );
   }, [form]);
@@ -286,6 +290,14 @@ export function IntegrationSettingsPanel() {
                   placeholder="https://n8n.yourdomain.com/webhook/enrich-data"
                   onChange={(value) =>
                     setForm((current) => ({ ...current, n8nEnrichDataWebhookUrl: value }))
+                  }
+                />
+                <InputField
+                  label="Founders Sync Webhook"
+                  value={form.n8nFoundersSyncWebhookUrl}
+                  placeholder="https://n8n.yourdomain.com/webhook/founders-sync"
+                  onChange={(value) =>
+                    setForm((current) => ({ ...current, n8nFoundersSyncWebhookUrl: value }))
                   }
                 />
                 <InputField

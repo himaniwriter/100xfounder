@@ -105,7 +105,7 @@ function renderContent(content: string) {
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post = getBlogPostBySlug(params.slug);
+  const post = await getBlogPostBySlug(params.slug);
   if (!post) {
     return { title: "Post Not Found | 100Xfounder" };
   }
@@ -116,8 +116,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   };
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = getBlogPostBySlug(params.slug);
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const post = await getBlogPostBySlug(params.slug);
   if (!post) {
     notFound();
   }
@@ -187,6 +187,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             uniqueId={post.slug}
             className="h-[330px] w-full rounded-2xl border border-white/10"
           />
+          {post.imageCredit ? (
+            <p className="text-xs italic text-zinc-500">{post.imageCredit}</p>
+          ) : null}
 
           <div className="space-y-5">{renderContent(post.content)}</div>
         </article>
