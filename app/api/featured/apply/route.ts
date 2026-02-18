@@ -4,6 +4,10 @@ import { postToN8N } from "@/lib/n8n";
 import { getConfiguredN8nSecret } from "@/lib/security/webhooks";
 import { recordSiteEvent } from "@/lib/analytics/site-events";
 import {
+  ensureFeaturedFounderSchema,
+  ensureGrowthWaveSchema,
+} from "@/lib/db-bootstrap";
+import {
   FEATURED_PLAN_BY_KEY,
   featuredPlanToDbValue,
   featuredStatusFromDbValue,
@@ -41,6 +45,11 @@ export async function POST(request: Request) {
   const planDetails = FEATURED_PLAN_BY_KEY[parsed.data.plan];
 
   try {
+    await Promise.all([
+      ensureFeaturedFounderSchema(),
+      ensureGrowthWaveSchema(),
+    ]);
+
     const created = await prisma.featuredFounderRequest.create({
       data: {
         founderName: parsed.data.founder_name,
