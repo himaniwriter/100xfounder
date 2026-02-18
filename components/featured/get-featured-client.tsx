@@ -167,7 +167,7 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
             <iframe
               src={n8nFormUrl}
               title="Get Featured n8n Form"
-              className="mt-4 h-[720px] w-full rounded-xl border border-white/15 bg-black/40"
+              className="mt-4 h-[560px] w-full rounded-xl border border-white/15 bg-black/40 sm:h-[640px] lg:h-[720px]"
             />
           ) : (
             <div className="mt-4 rounded-xl border border-amber-400/35 bg-amber-500/10 p-4 text-sm text-amber-200">

@@ -39,6 +39,7 @@
 
 * {
   @apply border-border;
+  box-sizing: border-box;
 }
 
 html,
@@ -47,9 +48,42 @@ body {
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   @apply bg-background text-foreground;
   background-color: #050505;
+  overflow-x: clip;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.36);
+  color: #ffffff;
+}
+
+:where(img, svg, video, canvas) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(main, section, article, header, footer, aside, nav) {
+  min-width: 0;
+}
+
+:where(a, button, input, select, textarea) {
+  -webkit-tap-highlight-color: rgba(99, 102, 241, 0.24);
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.45);
 }
 
 @layer components {
@@ -64,6 +98,9 @@ body {
         rgba(255, 255, 255, 0.1) 100%
       ),
       rgba(8, 8, 12, 0.48);
+    background-size:
+      180% 180%,
+      auto;
     -webkit-backdrop-filter: blur(18px) saturate(145%);
     backdrop-filter: blur(18px) saturate(145%);
     box-shadow:
@@ -77,6 +114,16 @@ body {
     inset: 0;
     pointer-events: none;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 60%);
+  }
+
+  .glass-header a,
+  .glass-header button {
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease,
+      background-color 0.2s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .glass-cta-btn {
@@ -268,12 +315,50 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .glass-header {
+    animation: glass-header-shift 12s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 @keyframes ticker-scroll {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes glass-header-shift {
+  0% {
+    background-position:
+      0% 50%,
+      0 0;
+  }
+  50% {
+    background-position:
+      100% 50%,
+      0 0;
+  }
+  100% {
+    background-position:
+      0% 50%,
+      0 0;
   }
 }
 
