@@ -7,6 +7,11 @@ const cards = [
     href: "/admin/data",
   },
   {
+    title: "Featured Requests",
+    description: "Review founder applications and publish approved listings.",
+    href: "/admin/featured-requests",
+  },
+  {
     title: "Automation Hub",
     description: "Trigger n8n workflows and monitor webhook run output instantly.",
     href: "/admin/automations",

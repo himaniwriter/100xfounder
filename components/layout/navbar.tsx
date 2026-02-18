@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Signals", href: "/signals" },
   { label: "Blog", href: "/blog" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Get Featured", href: "/get-featured" },
 ];
 
 export async function Navbar() {
@@ -37,6 +38,12 @@ export async function Navbar() {
           </nav>
 
           <div className="flex items-center gap-1.5 sm:gap-2">
+            <Link
+              href="/get-featured"
+              className="inline-flex h-9 items-center rounded-md border border-indigo-400/45 bg-indigo-500/15 px-2.5 text-xs text-indigo-200 transition-colors hover:bg-indigo-500/25 sm:px-3 sm:text-sm"
+            >
+              Get Featured
+            </Link>
             {session ? (
               <LogoutButton />
             ) : (

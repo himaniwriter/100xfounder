@@ -37,6 +37,7 @@ const STATIC_ROUTES: StaticRoute[] = [
   { href: "/startups", label: "Startup Explorer", changeFrequency: "weekly", priority: 0.85 },
   { href: "/signals", label: "Signals", changeFrequency: "hourly", priority: 0.9 },
   { href: "/pricing", label: "Pricing", changeFrequency: "weekly", priority: 0.8 },
+  { href: "/get-featured", label: "Get Featured", changeFrequency: "weekly", priority: 0.82 },
   { href: "/blog", label: "Blog", changeFrequency: "daily", priority: 0.85 },
   { href: "/jobs", label: "Startup Jobs", changeFrequency: "weekly", priority: 0.7 },
   { href: "/salary-equity", label: "Salary & Equity Guide", changeFrequency: "weekly", priority: 0.68 },

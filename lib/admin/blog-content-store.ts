@@ -1,6 +1,5 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import type { PostStatus } from "@prisma/client";
 import type { BlogPost } from "@/lib/blog/types";
 import {
   buildExcerpt,
@@ -38,11 +37,11 @@ function parseDateValue(value: string): number {
   return Number.isNaN(time) ? 0 : time;
 }
 
-function toDbStatus(status: BlogStatus): PostStatus {
+function toDbStatus(status: BlogStatus): "DRAFT" | "PUBLISHED" {
   return status === "PUBLISHED" ? "PUBLISHED" : "DRAFT";
 }
 
-function fromDbStatus(status: PostStatus): BlogStatus {
+function fromDbStatus(status: "DRAFT" | "PUBLISHED"): BlogStatus {
   return status === "PUBLISHED" ? "PUBLISHED" : "DRAFT";
 }
 
@@ -55,7 +54,7 @@ function mapDatabasePostToBlogPost(post: {
   seoTitle: string;
   seoDescription: string;
   wordCount: number;
-  status: PostStatus;
+  status: "DRAFT" | "PUBLISHED";
   createdAt: Date;
 }): BlogPost {
   return normalizeBlogPost({

@@ -195,10 +195,10 @@ export default async function HomePage() {
                 {homepageContent.secondaryCtaLabel}
               </Link>
               <Link
-                href="/countries"
+                href="/get-featured"
                 className="glass-ghost-btn w-full justify-center sm:w-auto sm:min-w-[220px]"
               >
-                Browse Country Tiers
+                Get Featured
               </Link>
             </div>
 

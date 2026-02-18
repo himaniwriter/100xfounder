@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -89,6 +90,12 @@ export function PricingClient() {
         <p className="mt-3 text-sm text-zinc-300">
           Join the waitlist to secure the &quot;Founding Member&quot; rate ($49/mo vs $99/mo).
         </p>
+        <Link
+          href="/get-featured"
+          className="mt-4 inline-flex items-center rounded-md border border-indigo-400/45 bg-indigo-500/15 px-3 py-1.5 text-xs text-indigo-200 transition-colors hover:bg-indigo-500/25"
+        >
+          Founder? Apply to Get Featured
+        </Link>
 
         <form className="mt-6 space-y-4" onSubmit={onSubmit}>
           <div>
@@ -150,4 +157,3 @@ export function PricingClient() {
     </section>
   );
 }
-

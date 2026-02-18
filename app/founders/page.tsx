@@ -173,6 +173,12 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
             <div className="text-left sm:text-right">
               <p className="text-sm text-zinc-500">{founders.length} profiles indexed</p>
               <p className="mt-1 text-xs text-zinc-500">Updated on {lastUpdatedOn}</p>
+              <Link
+                href="/get-featured"
+                className="mt-3 inline-flex items-center rounded-md border border-indigo-400/45 bg-indigo-500/15 px-3 py-1.5 text-xs text-indigo-200 transition-colors hover:bg-indigo-500/25"
+              >
+                Get Featured
+              </Link>
             </div>
           </div>
 

@@ -43,6 +43,24 @@ enum PostStatus {
   PUBLISHED @map("published")
 }
 
+enum FeaturedPlan {
+  STARTER  @map("starter")
+  GROWTH   @map("growth")
+  PRIORITY @map("priority")
+
+  @@map("featured_plan")
+}
+
+enum FeaturedRequestStatus {
+  NEW       @map("new")
+  IN_REVIEW @map("in_review")
+  APPROVED  @map("approved")
+  REJECTED  @map("rejected")
+  PUBLISHED @map("published")
+
+  @@map("featured_request_status")
+}
+
 model User {
   id        String   @id @default(uuid()) @db.Uuid
   email     String   @unique
@@ -234,4 +252,33 @@ model Post {
 
   @@index([status, createdAt(sort: Desc)])
   @@map("posts")
+}
+
+model FeaturedFounderRequest {
+  id                    String                @id @default(uuid()) @db.Uuid
+  founderName            String                @map("founder_name")
+  workEmail              String                @map("work_email")
+  companyName            String                @map("company_name")
+  websiteUrl             String?               @map("website_url")
+  linkedinUrl            String?               @map("linkedin_url")
+  country                String?
+  industry               String?
+  stage                  String?
+  productSummary         String                @map("product_summary")
+  fundingInfo            String?               @map("funding_info")
+  plan                   FeaturedPlan
+  priceInr               Int                   @map("price_inr")
+  priceUsd               Int                   @map("price_usd")
+  source                 String                @default("n8n_embed")
+  externalSubmissionId   String?               @unique @map("external_submission_id")
+  status                 FeaturedRequestStatus @default(NEW)
+  reviewNotes            String?               @map("review_notes")
+  publishedFounderEntryId String?              @map("published_founder_entry_id")
+  createdAt              DateTime              @default(now()) @map("created_at")
+  updatedAt              DateTime              @updatedAt @map("updated_at")
+
+  @@index([status, createdAt(sort: Desc)])
+  @@index([workEmail])
+  @@index([companyName])
+  @@map("featured_founder_requests")
 }
