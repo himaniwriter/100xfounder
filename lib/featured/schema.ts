@@ -24,6 +24,9 @@ export const featuredCanonicalPayloadSchema = z.object({
   funding_info: optionalText(2000),
   plan: featuredPlanSchema,
   external_submission_id: optionalText(190),
+  utm_source: optionalText(120),
+  utm_medium: optionalText(120),
+  utm_campaign: optionalText(160),
 });
 
 const webhookAliasSchema = z.object({
@@ -47,6 +50,12 @@ const webhookAliasSchema = z.object({
   plan: featuredPlanSchema.optional(),
   external_submission_id: optionalText(190),
   externalSubmissionId: optionalText(190),
+  utm_source: optionalText(120),
+  utm_medium: optionalText(120),
+  utm_campaign: optionalText(160),
+  utmSource: optionalText(120),
+  utmMedium: optionalText(120),
+  utmCampaign: optionalText(160),
 });
 
 export type FeaturedCanonicalPayload = z.infer<typeof featuredCanonicalPayloadSchema>;
@@ -90,6 +99,15 @@ export function normalizeWebhookFeaturedPayload(
     external_submission_id:
       normalizeOptional(source.external_submission_id) ??
       normalizeOptional(source.externalSubmissionId),
+    utm_source:
+      normalizeOptional(source.utm_source) ??
+      normalizeOptional(source.utmSource),
+    utm_medium:
+      normalizeOptional(source.utm_medium) ??
+      normalizeOptional(source.utmMedium),
+    utm_campaign:
+      normalizeOptional(source.utm_campaign) ??
+      normalizeOptional(source.utmCampaign),
   };
 
   const canonicalParsed = featuredCanonicalPayloadSchema.safeParse(canonical);

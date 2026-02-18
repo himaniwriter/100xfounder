@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, ShieldCheck, Zap, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Zap, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { BlogCard } from "@/components/blog/blog-card";
@@ -7,6 +7,8 @@ import { HalfBlurValue } from "@/components/ui/half-blur-value";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
 import { GlassCard } from "@/components/ui/glass-card";
+import { HeroCtaGroup } from "@/components/home/hero-cta-group";
+import { HomeSearchBar } from "@/components/home/home-search-bar";
 import { getBlogHomeSections } from "@/lib/blog/store";
 import { readHomepageContent } from "@/lib/content/homepage-content";
 import { getFounderDirectory, splitRecentlyFunded } from "@/lib/founders/store";
@@ -181,39 +183,15 @@ export default async function HomePage() {
               {homepageContent.heroSubtitle}
             </p>
 
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
-              <Link
-                href={homepageContent.primaryCtaHref}
-                className="glass-cta-btn w-full justify-center sm:w-auto sm:min-w-[220px]"
-              >
-                {homepageContent.primaryCtaLabel}
-              </Link>
-              <Link
-                href={homepageContent.secondaryCtaHref}
-                className="glass-ghost-btn w-full justify-center sm:w-auto sm:min-w-[220px]"
-              >
-                {homepageContent.secondaryCtaLabel}
-              </Link>
-              <Link
-                href="/get-featured"
-                className="glass-ghost-btn w-full justify-center sm:w-auto sm:min-w-[220px]"
-              >
-                Get Featured
-              </Link>
-            </div>
+            <HeroCtaGroup
+              primaryHref={homepageContent.primaryCtaHref}
+              primaryLabel={homepageContent.primaryCtaLabel}
+              secondaryHref={homepageContent.secondaryCtaHref}
+              secondaryLabel={homepageContent.secondaryCtaLabel}
+            />
 
             <div className="mx-auto mt-9 max-w-3xl rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-2xl">
-              <div className="flex h-14 items-center gap-3 rounded-xl border border-white/10 bg-black/35 px-4">
-                <Search className="h-5 w-5 text-zinc-400" />
-                <input
-                  type="text"
-                  placeholder="Search founders, startups, and signals..."
-                  className="h-full flex-1 bg-transparent text-base text-zinc-100 placeholder:text-zinc-500 focus:outline-none"
-                />
-                <span className="rounded-md border border-white/10 bg-white/5 px-2 py-1 font-mono text-xs text-zinc-400">
-                  Cmd + K
-                </span>
-              </div>
+              <HomeSearchBar />
 
               <div className="mt-4 border-t border-white/10 pt-4">
                 <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">

@@ -7,7 +7,10 @@ import { Navbar } from "@/components/layout/navbar";
 import { ProfileTabs } from "@/components/founders/profile-tabs";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
-import { getFounderDirectory } from "@/lib/founders/store";
+import {
+  getFounderDirectory,
+  getFounderDirectoryLastUpdatedAt,
+} from "@/lib/founders/store";
 import {
   buildFounderFaqs,
   buildFounderProfileSchema,
@@ -44,7 +47,10 @@ export async function generateMetadata({ params }: FounderProfilePageProps): Pro
 }
 
 export default async function FounderProfilePage({ params }: FounderProfilePageProps) {
-  const founders = await getFounderDirectory();
+  const [founders, lastUpdatedAt] = await Promise.all([
+    getFounderDirectory(),
+    getFounderDirectoryLastUpdatedAt(),
+  ]);
   const founder = founders.find((item) => item.slug === params.slug);
 
   if (!founder) {
@@ -62,6 +68,11 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
     faqs,
     pagePath: `/founders/${founder.slug}`,
   });
+  const lastUpdatedOn = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  }).format(lastUpdatedAt);
 
   return (
     <main className="min-h-screen bg-[#050505] text-[#EDEDED]">
@@ -106,6 +117,7 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
                 {founder.founderName}
               </h1>
               <p className="mt-2 text-lg text-zinc-300">{founder.companyName}</p>
+              <p className="mt-1 text-xs text-zinc-500">Last updated: {lastUpdatedOn}</p>
             </div>
           </div>
 
@@ -120,6 +132,29 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
           ) : null}
 
           <ProfileTabs founder={founder} similar={similar} />
+
+          <section className="mt-8 rounded-xl border border-white/10 bg-black/25 p-4">
+            <h2 className="text-base font-semibold text-white">Related Founders</h2>
+            <p className="mt-1 text-xs text-zinc-500">
+              More founders in {founder.industry}.
+            </p>
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              {similar.length > 0 ? (
+                similar.map((item) => (
+                  <Link
+                    key={item.id}
+                    href={`/founders/${item.slug}`}
+                    className="rounded-md border border-white/10 bg-white/[0.03] p-3 transition-colors hover:border-white/25"
+                  >
+                    <p className="text-sm font-medium text-white">{item.founderName}</p>
+                    <p className="mt-1 text-xs text-zinc-400">{item.companyName}</p>
+                  </Link>
+                ))
+              ) : (
+                <p className="text-sm text-zinc-500">No related founders available yet.</p>
+              )}
+            </div>
+          </section>
           <ProfileFaqSection
             title={`FAQs About ${founder.founderName}`}
             faqs={faqs}

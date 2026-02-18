@@ -2,37 +2,23 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
+import { trackSiteEvent } from "@/lib/client-tracking";
+import { isWorkEmail } from "@/lib/pricing/waitlist";
 
 const intents = ["Investment Deal Flow", "Sales Leads", "Hiring"];
 
-const FREE_EMAIL_DOMAINS = new Set([
-  "gmail.com",
-  "yahoo.com",
-  "outlook.com",
-  "hotmail.com",
-  "icloud.com",
-  "proton.me",
-  "protonmail.com",
-]);
-
-function isWorkEmail(value: string): boolean {
-  const email = value.trim().toLowerCase();
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return false;
-  }
-  const domain = email.split("@")[1] ?? "";
-  return Boolean(domain) && !FREE_EMAIL_DOMAINS.has(domain);
-}
-
 export function PricingClient() {
+  const searchParams = useSearchParams();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [intent, setIntent] = useState(intents[0]);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setError(null);
     setSuccess(false);
@@ -42,14 +28,37 @@ export function PricingClient() {
       return;
     }
 
-    const formData = {
-      name: name.trim(),
-      email: email.trim(),
-      lookingFor: intent,
-    };
+    setLoading(true);
+    const response = await fetch("/api/pricing/waitlist", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: name.trim(),
+        work_email: email.trim(),
+        intent,
+        utm_source: searchParams.get("utm_source"),
+        utm_medium: searchParams.get("utm_medium"),
+        utm_campaign: searchParams.get("utm_campaign"),
+      }),
+    });
+    const result = await response.json();
+    setLoading(false);
 
-    // TODO: Send to n8n waitlist webhook when ready.
-    console.log(formData);
+    if (!response.ok || !result.success) {
+      setError(result.error ?? "Failed to submit waitlist request.");
+      return;
+    }
+
+    trackSiteEvent({
+      event_name: "pricing_waitlist_submit",
+      path: "/pricing",
+      payload: {
+        intent,
+        utm_source: searchParams.get("utm_source"),
+        utm_medium: searchParams.get("utm_medium"),
+        utm_campaign: searchParams.get("utm_campaign"),
+      },
+    });
     setSuccess(true);
     setName("");
     setEmail("");
@@ -92,6 +101,17 @@ export function PricingClient() {
         </p>
         <Link
           href="/get-featured"
+          onClick={() =>
+            trackSiteEvent({
+              event_name: "cta_click",
+              path: "/pricing",
+              payload: {
+                cta_label: "Founder? Apply to Get Featured",
+                cta_target: "/get-featured",
+                section: "pricing_waitlist",
+              },
+            })
+          }
           className="mt-4 inline-flex items-center rounded-md border border-indigo-400/45 bg-indigo-500/15 px-3 py-1.5 text-xs text-indigo-200 transition-colors hover:bg-indigo-500/25"
         >
           Founder? Apply to Get Featured
@@ -142,8 +162,8 @@ export function PricingClient() {
             </select>
           </div>
 
-          <button type="submit" className="glass-cta-btn w-full justify-center">
-            Secure My Spot
+          <button type="submit" disabled={loading} className="glass-cta-btn w-full justify-center disabled:opacity-70">
+            {loading ? "Submitting..." : "Secure My Spot"}
           </button>
         </form>
 

@@ -12,6 +12,11 @@ const cards = [
     href: "/admin/featured-requests",
   },
   {
+    title: "Analytics",
+    description: "Monitor conversion funnel performance for search and lead capture.",
+    href: "/admin/analytics",
+  },
+  {
     title: "Automation Hub",
     description: "Trigger n8n workflows and monitor webhook run output instantly.",
     href: "/admin/automations",

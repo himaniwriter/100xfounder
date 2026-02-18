@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { postToN8N } from "@/lib/n8n";
 import { getConfiguredN8nSecret } from "@/lib/security/webhooks";
+import { recordSiteEvent } from "@/lib/analytics/site-events";
 import {
   FEATURED_PLAN_BY_KEY,
   featuredPlanToDbValue,
@@ -64,6 +65,18 @@ export async function POST(request: Request) {
       },
     });
 
+    await recordSiteEvent({
+      event_name: "featured_form_submit",
+      path: "/get-featured",
+      payload: {
+        plan: parsed.data.plan,
+        source: "site_form",
+        utm_source: parsed.data.utm_source ?? null,
+        utm_medium: parsed.data.utm_medium ?? null,
+        utm_campaign: parsed.data.utm_campaign ?? null,
+      },
+    });
+
     const webhookUrl =
       process.env.N8N_FEATURED_APPLY_WEBHOOK_URL ||
       process.env.N8N_FEATURED_WEBHOOK_URL ||
@@ -78,6 +91,9 @@ export async function POST(request: Request) {
           source: "site_form",
           price_inr: planDetails.priceInr,
           price_usd: planDetails.priceUsd,
+          utm_source: parsed.data.utm_source ?? null,
+          utm_medium: parsed.data.utm_medium ?? null,
+          utm_campaign: parsed.data.utm_campaign ?? null,
         },
         { secret: secret || undefined },
       ).catch((error) => {

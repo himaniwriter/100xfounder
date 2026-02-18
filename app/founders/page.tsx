@@ -1,14 +1,18 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { FounderCard } from "@/components/founder-card";
 import { FilterSidebar } from "@/components/founders/filter-sidebar";
 import {
   getFounderDirectory,
+  getFounderDirectoryLastUpdatedAt,
   getFounderFilterOptions,
   splitRecentlyFunded,
 } from "@/lib/founders/store";
 import type { CountryTier, FounderDirectoryItem } from "@/lib/founders/types";
+import { serializeJsonLd } from "@/lib/security/sanitize";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 function readParam(value: string | string[] | undefined): string[] {
   if (!value) {
@@ -72,6 +76,66 @@ function readTierParam(value: string | string[] | undefined): CountryTier[] {
     );
 }
 
+function hasMultiFilterState(input: {
+  industries: string[];
+  locations: string[];
+  stages: string[];
+  countries: string[];
+  tiers: CountryTier[];
+  tab: DirectoryTab;
+}): boolean {
+  const activeDimensions = [
+    input.industries.length > 0,
+    input.locations.length > 0,
+    input.stages.length > 0,
+    input.countries.length > 0,
+    input.tiers.length > 0,
+    input.tab !== "all",
+  ].filter(Boolean).length;
+
+  const multiValue =
+    input.industries.length > 1 ||
+    input.locations.length > 1 ||
+    input.stages.length > 1 ||
+    input.countries.length > 1 ||
+    input.tiers.length > 1;
+
+  return activeDimensions > 1 || multiValue;
+}
+
+export async function generateMetadata({ searchParams }: FoundersPageProps): Promise<Metadata> {
+  const industries = readParam(searchParams?.industry);
+  const locations = readParam(searchParams?.location);
+  const stages = readParam(searchParams?.stage);
+  const countries = readParam(searchParams?.country);
+  const tiers = readTierParam(searchParams?.tier);
+  const tab = resolveTab(searchParams?.tab);
+  const shouldNoindex = hasMultiFilterState({
+    industries,
+    locations,
+    stages,
+    countries,
+    tiers,
+    tab,
+  });
+  const baseUrl = getSiteBaseUrl();
+
+  return {
+    title: "Founder Directory | 100Xfounder",
+    description:
+      "Explore verified founder profiles with funding rounds, hiring roles, and company intelligence.",
+    alternates: {
+      canonical: `${baseUrl}/founders`,
+    },
+    robots: shouldNoindex
+      ? {
+          index: false,
+          follow: true,
+        }
+      : undefined,
+  };
+}
+
 export default async function FoundersPage({ searchParams }: FoundersPageProps) {
   const selectedIndustries = readParam(searchParams?.industry);
   const selectedLocations = readParam(searchParams?.location);
@@ -79,13 +143,8 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
   const selectedCountries = readParam(searchParams?.country);
   const selectedTiers = readTierParam(searchParams?.tier);
   const activeTab = resolveTab(searchParams?.tab);
-  const lastUpdatedOn = new Intl.DateTimeFormat("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  }).format(new Date());
 
-  const [founders, filterOptions] = await Promise.all([
+  const [founders, filterOptions, lastUpdatedAt] = await Promise.all([
     getFounderDirectory({
       industry: selectedIndustries,
       location: selectedLocations,
@@ -95,7 +154,34 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
       perCountryLimit: 500,
     }),
     getFounderFilterOptions(),
+    getFounderDirectoryLastUpdatedAt(),
   ]);
+  const lastUpdatedOn = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  }).format(lastUpdatedAt);
+  const baseUrl = getSiteBaseUrl();
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${baseUrl}/founders#webpage`,
+        url: `${baseUrl}/founders`,
+        name: "Founder directory",
+        description:
+          "Founder profiles with company context, funding rounds, and hiring signals.",
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${baseUrl}/` },
+          { "@type": "ListItem", position: 2, name: "Founders", item: `${baseUrl}/founders` },
+        ],
+      },
+    ],
+  };
   const { recent } = splitRecentlyFunded(founders, 18);
   const shouldUseSpotlight = recent.length > 0 && recent.length < 3;
   const spotlightRecent =
@@ -277,6 +363,10 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
 
         <Footer />
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
+      />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllBlogPosts } from "@/lib/blog/store";
-import { countryTierLabel } from "@/lib/founders/country-tier";
+import { countryTierLabel, countryToSlug } from "@/lib/founders/country-tier";
+import { slugifySegment } from "@/lib/founders/hubs";
 import { getCountryCoverage, getFounderDirectory } from "@/lib/founders/store";
 import { STARTUP_DISCOVERY_PAGES } from "@/lib/startups/discovery-pages";
 
@@ -26,6 +27,9 @@ export type HtmlSitemapData = {
   startupCategoryLinks: HtmlSitemapLink[];
   countryLinks: HtmlSitemapLink[];
   tierLinks: HtmlSitemapLink[];
+  industryLinks: HtmlSitemapLink[];
+  stageLinks: HtmlSitemapLink[];
+  countryIndustryLinks: HtmlSitemapLink[];
   companyLinks: HtmlSitemapLink[];
   founderLinks: HtmlSitemapLink[];
 };
@@ -36,9 +40,14 @@ const STATIC_ROUTES: StaticRoute[] = [
   { href: "/countries", label: "Countries", changeFrequency: "daily", priority: 0.92 },
   { href: "/startups", label: "Startup Explorer", changeFrequency: "weekly", priority: 0.85 },
   { href: "/signals", label: "Signals", changeFrequency: "hourly", priority: 0.9 },
+  { href: "/search", label: "Search", changeFrequency: "weekly", priority: 0.75 },
   { href: "/pricing", label: "Pricing", changeFrequency: "weekly", priority: 0.8 },
   { href: "/get-featured", label: "Get Featured", changeFrequency: "weekly", priority: 0.82 },
+  { href: "/industries", label: "Industries", changeFrequency: "daily", priority: 0.86 },
+  { href: "/stages", label: "Stages", changeFrequency: "daily", priority: 0.86 },
   { href: "/blog", label: "Blog", changeFrequency: "daily", priority: 0.85 },
+  { href: "/llms.txt", label: "LLMS", changeFrequency: "weekly", priority: 0.4 },
+  { href: "/ai-sitemap.xml", label: "AI Sitemap", changeFrequency: "daily", priority: 0.45 },
   { href: "/jobs", label: "Startup Jobs", changeFrequency: "weekly", priority: 0.7 },
   { href: "/salary-equity", label: "Salary & Equity Guide", changeFrequency: "weekly", priority: 0.68 },
   { href: "/negotiation-coaching", label: "Negotiation Coaching", changeFrequency: "weekly", priority: 0.66 },
@@ -140,6 +149,58 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .sort((a, b) => a.label.localeCompare(b.label)),
   );
 
+  const industryLinks = uniqueByHref(
+    Array.from(
+      new Map(
+        founders.map((item) => [slugifySegment(item.industry), item.industry]),
+      ).entries(),
+    )
+      .filter(([slug]) => slug.length > 0)
+      .map(([slug, label]) => ({
+        href: `/industries/${slug}`,
+        label: `${label} startups`,
+        lastModified: now,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
+  const stageLinks = uniqueByHref(
+    Array.from(
+      new Map(founders.map((item) => [slugifySegment(item.stage), item.stage])).entries(),
+    )
+      .filter(([slug]) => slug.length > 0)
+      .map(([slug, label]) => ({
+        href: `/stages/${slug}`,
+        label: `${label} startups`,
+        lastModified: now,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
+  const countryIndustryLinks = uniqueByHref(
+    Array.from(
+      new Map(
+        founders
+          .filter((item) => (item.country ?? "Unknown") !== "Unknown")
+          .map((item) => {
+            const countrySlug = countryToSlug(item.country ?? "");
+            const industrySlug = slugifySegment(item.industry);
+            return [
+              `${countrySlug}:${industrySlug}`,
+              {
+                href: `/countries/${countrySlug}/industries/${industrySlug}`,
+                label: `${item.industry} startups in ${item.country}`,
+                lastModified: now,
+              },
+            ] as const;
+          }),
+      ).values(),
+    )
+      .filter((item) => item.href.includes("/countries/"))
+      .slice(0, 3000)
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
   const companyLinks = uniqueByHref(
     founders
       .map((item) => ({
@@ -167,6 +228,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
     startupCategoryLinks,
     countryLinks,
     tierLinks,
+    industryLinks,
+    stageLinks,
+    countryIndustryLinks,
     companyLinks,
     founderLinks,
   };
@@ -180,6 +244,9 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     startupCategoryLinks,
     countryLinks,
     tierLinks,
+    industryLinks,
+    stageLinks,
+    countryIndustryLinks,
     companyLinks,
     founderLinks,
   } =
@@ -225,6 +292,27 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: 0.82,
   }));
 
+  const industryEntries: MetadataRoute.Sitemap = industryLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "daily",
+    priority: 0.84,
+  }));
+
+  const stageEntries: MetadataRoute.Sitemap = stageLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "daily",
+    priority: 0.83,
+  }));
+
+  const countryIndustryEntries: MetadataRoute.Sitemap = countryIndustryLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
   const companyEntries: MetadataRoute.Sitemap = companyLinks.map((link) => ({
     url: `${baseUrl}${link.href}`,
     lastModified: link.lastModified,
@@ -245,6 +333,9 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...startupCategoryEntries,
     ...countryEntries,
     ...tierEntries,
+    ...industryEntries,
+    ...stageEntries,
+    ...countryIndustryEntries,
     ...companyEntries,
     ...founderEntries,
   ];

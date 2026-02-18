@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 import { countryTierLabel } from "@/lib/founders/country-tier";
+import { slugifySegment } from "@/lib/founders/hubs";
 import { getCountryCoverage, getFounderDirectory } from "@/lib/founders/store";
 
 type CountryPageProps = {
@@ -70,6 +71,15 @@ export default async function CountryPage({ params }: CountryPageProps) {
   }
 
   const { country, companies } = context;
+  const topIndustries = Array.from(
+    companies.reduce((acc, item) => {
+      const current = acc.get(item.industry) ?? 0;
+      acc.set(item.industry, current + 1);
+      return acc;
+    }, new Map<string, number>()),
+  )
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 8);
   const baseUrl = getSiteBaseUrl();
 
   const schema = {
@@ -126,6 +136,23 @@ export default async function CountryPage({ params }: CountryPageProps) {
         </header>
 
         <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
+          <div className="mb-4">
+            <h2 className="text-sm font-medium uppercase tracking-wide text-zinc-300">
+              Top Industry Clusters
+            </h2>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {topIndustries.map(([industry, count]) => (
+                <Link
+                  key={industry}
+                  href={`/countries/${country.countrySlug}/industries/${slugifySegment(industry)}`}
+                  className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
+                >
+                  {industry} ({count})
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <h2 className="text-xl font-semibold text-white">Company Directory</h2>
           <p className="mt-2 text-sm text-zinc-400">
             Ordered by funding and growth signals, capped at 500 companies for this country.

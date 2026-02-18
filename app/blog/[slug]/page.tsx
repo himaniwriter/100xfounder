@@ -5,8 +5,9 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { FounderCallout } from "@/components/blog/founder-callout";
 import { NewsCoverImage } from "@/components/ui/news-cover-image";
-import { extractHeadings, getBlogPostBySlug } from "@/lib/blog/store";
-import { sanitizeRichHtml } from "@/lib/security/sanitize";
+import { extractHeadings, getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog/store";
+import { sanitizeRichHtml, serializeJsonLd } from "@/lib/security/sanitize";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 type BlogPostPageProps = {
   params: {
@@ -117,13 +118,63 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = await getBlogPostBySlug(params.slug);
+  const [post, allPosts] = await Promise.all([
+    getBlogPostBySlug(params.slug),
+    getAllBlogPosts(),
+  ]);
   if (!post) {
     notFound();
   }
 
   const headings = extractHeadings(post.content);
   const hasRahulBajaj = /rahul bajaj/i.test(post.content);
+  const relatedReads = allPosts
+    .filter((item) => item.slug !== post.slug && item.category === post.category)
+    .slice(0, 4);
+  const baseUrl = getSiteBaseUrl();
+  const pageUrl = `${baseUrl}/blog/${post.slug}`;
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${pageUrl}#article`,
+        headline: post.title,
+        description: post.excerpt,
+        image: post.thumbnail,
+        datePublished: post.publishedAt,
+        dateModified: post.publishedAt,
+        author: {
+          "@type": "Person",
+          name: post.author,
+        },
+        mainEntityOfPage: pageUrl,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `${baseUrl}/`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog",
+            item: `${baseUrl}/blog`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: post.title,
+            item: pageUrl,
+          },
+        ],
+      },
+    ],
+  };
 
   return (
     <main className="min-h-screen bg-[#050505] text-[#EDEDED]">
@@ -192,6 +243,26 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           ) : null}
 
           <div className="space-y-5">{renderContent(post.content)}</div>
+
+          <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+            <h2 className="text-base font-semibold text-white">Related Reads</h2>
+            <div className="mt-3 space-y-2">
+              {relatedReads.length > 0 ? (
+                relatedReads.map((item) => (
+                  <Link
+                    key={item.slug}
+                    href={`/blog/${item.slug}`}
+                    className="block rounded-md border border-white/10 bg-black/25 p-3 transition-colors hover:border-white/25"
+                  >
+                    <p className="text-sm font-medium text-white">{item.title}</p>
+                    <p className="mt-1 line-clamp-2 text-xs text-zinc-400">{item.excerpt}</p>
+                  </Link>
+                ))
+              ) : (
+                <p className="text-sm text-zinc-500">No related reads available yet.</p>
+              )}
+            </div>
+          </section>
         </article>
 
         <aside className="space-y-4">
@@ -208,6 +279,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </section>
 
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleSchema) }}
+      />
     </main>
   );
 }

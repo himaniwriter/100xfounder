@@ -282,3 +282,35 @@ model FeaturedFounderRequest {
   @@index([companyName])
   @@map("featured_founder_requests")
 }
+
+model PricingWaitlistRequest {
+  id          String   @id @default(uuid()) @db.Uuid
+  name        String
+  workEmail   String   @map("work_email")
+  intent      String
+  utmSource   String?  @map("utm_source")
+  utmMedium   String?  @map("utm_medium")
+  utmCampaign String?  @map("utm_campaign")
+  source      String   @default("pricing_page")
+  status      String   @default("new")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([createdAt(sort: Desc)])
+  @@index([workEmail])
+  @@map("pricing_waitlist_requests")
+}
+
+model SiteEvent {
+  id        String   @id @default(uuid()) @db.Uuid
+  eventName String   @map("event_name")
+  path      String
+  referrer  String?
+  sessionId String?  @map("session_id")
+  payload   Json?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([eventName, createdAt(sort: Desc)])
+  @@index([path])
+  @@map("site_events")
+}

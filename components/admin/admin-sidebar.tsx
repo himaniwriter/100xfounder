@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   Activity,
+  BarChart3,
   Database,
   FileText,
   Star,
@@ -18,6 +19,7 @@ const navItems = [
   { label: "Dashboard", href: "/admin", icon: Gauge },
   { label: "Data (Supabase)", href: "/admin/data", icon: Database },
   { label: "Featured Requests", href: "/admin/featured-requests", icon: Star },
+  { label: "Analytics", href: "/admin/analytics", icon: BarChart3 },
   { label: "Content (Blog/Pages)", href: "/admin/content", icon: FileText },
   { label: "Automations (N8N)", href: "/admin/automations", icon: Sparkles },
   { label: "Media Library", href: "/admin/media", icon: Images },

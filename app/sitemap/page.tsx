@@ -48,6 +48,9 @@ export default async function HtmlSitemapPage() {
     startupCategoryLinks,
     countryLinks,
     tierLinks,
+    industryLinks,
+    stageLinks,
+    countryIndustryLinks,
     companyLinks,
     founderLinks,
   } =
@@ -73,13 +76,22 @@ export default async function HtmlSitemapPage() {
             >
               Open XML Sitemap
             </a>
+            <a
+              href="/ai-sitemap.xml"
+              className="rounded-full border border-indigo-400/35 bg-indigo-500/10 px-2.5 py-1 text-indigo-300 transition-colors hover:bg-indigo-500/20"
+            >
+              Open AI Sitemap
+            </a>
           </div>
         </div>
 
         <div className="grid gap-5">
           <SitemapSection title="Core Pages" links={staticLinks} />
+          <SitemapSection title="Industry Pages" links={industryLinks} />
+          <SitemapSection title="Stage Pages" links={stageLinks} />
           <SitemapSection title="Country Tier Pages" links={tierLinks} />
           <SitemapSection title="Country Pages" links={countryLinks} />
+          <SitemapSection title="Country + Industry Pages" links={countryIndustryLinks} />
           <SitemapSection title="Startup Category Pages" links={startupCategoryLinks} />
           <SitemapSection title="Blog Articles" links={blogLinks} />
           <SitemapSection title="Company Profiles" links={companyLinks} />

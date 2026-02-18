@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import {
   FEATURED_FAQS,
   FEATURED_PLANS,
@@ -9,12 +10,14 @@ import {
   formatUsd,
   type FeaturedPlanKey,
 } from "@/lib/featured/config";
+import { trackSiteEvent } from "@/lib/client-tracking";
 
 type GetFeaturedClientProps = {
   n8nFormUrl: string;
 };
 
 export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
+  const searchParams = useSearchParams();
   const [form, setForm] = useState({
     founder_name: "",
     work_email: "",
@@ -38,10 +41,19 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
     setError(null);
     setSuccess(null);
 
+    const utmSource = searchParams.get("utm_source");
+    const utmMedium = searchParams.get("utm_medium");
+    const utmCampaign = searchParams.get("utm_campaign");
+
     const response = await fetch("/api/featured/apply", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
+      body: JSON.stringify({
+        ...form,
+        utm_source: utmSource,
+        utm_medium: utmMedium,
+        utm_campaign: utmCampaign,
+      }),
     });
     const result = await response.json();
     setLoading(false);
@@ -54,6 +66,17 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
     setSuccess(
       "Application received. Our team will review your details and contact you with next steps.",
     );
+    trackSiteEvent({
+      event_name: "featured_form_submit",
+      path: "/get-featured",
+      payload: {
+        plan: form.plan,
+        source: "site_form",
+        utm_source: utmSource,
+        utm_medium: utmMedium,
+        utm_campaign: utmCampaign,
+      },
+    });
     setForm({
       founder_name: "",
       work_email: "",
@@ -83,6 +106,17 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
         <div className="mt-6">
           <a
             href="#apply"
+            onClick={() =>
+              trackSiteEvent({
+                event_name: "cta_click",
+                path: "/get-featured",
+                payload: {
+                  cta_label: "Start Application",
+                  cta_target: "#apply",
+                  section: "get_featured_hero",
+                },
+              })
+            }
             className="inline-flex items-center rounded-md border border-indigo-400/45 bg-indigo-500/15 px-4 py-2 text-sm font-medium text-indigo-200 transition-colors hover:bg-indigo-500/25"
           >
             Start Application

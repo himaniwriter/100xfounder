@@ -778,6 +778,24 @@ export async function getCountryCoverage(): Promise<CountryCoverage[]> {
     });
 }
 
+export async function getFounderDirectoryLastUpdatedAt(): Promise<Date> {
+  if (!isDatabaseConfigured()) {
+    return new Date();
+  }
+
+  try {
+    const aggregate = await prisma.founderDirectoryEntry.aggregate({
+      _max: {
+        updatedAt: true,
+      },
+    });
+
+    return aggregate._max.updatedAt ?? new Date();
+  } catch {
+    return new Date();
+  }
+}
+
 export async function upsertFounderDirectoryFromN8N(
   entries: FounderSyncInput[],
 ): Promise<{ upserted: number }> {

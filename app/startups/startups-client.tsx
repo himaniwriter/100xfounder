@@ -143,7 +143,33 @@ const usFundingHubs = [
   },
 ];
 
-export function StartupsClient() {
+type StartupsClientProps = {
+  cityStats?: Record<string, number>;
+  collectionStats?: {
+    soonicorns: number;
+    genaiIndia: number;
+    b2bSaas: number;
+    usAiInfrastructure: number;
+    usFintech: number;
+  };
+  updatedAt?: string;
+};
+
+export function StartupsClient({
+  cityStats = {},
+  collectionStats,
+  updatedAt,
+}: StartupsClientProps) {
+  const collectionCountByTitle: Record<string, number | undefined> = {
+    "🦄 Soonicorns (Valuation >$500M)": collectionStats?.soonicorns,
+    "🤖 Generative AI India": collectionStats?.genaiIndia,
+    "💼 B2B SaaS Leaders": collectionStats?.b2bSaas,
+    "🇺🇸 US AI Infrastructure": collectionStats?.usAiInfrastructure,
+    "🏦 US Fintech Challengers": collectionStats?.usFintech,
+  };
+
+  const updatedLabel = updatedAt ? new Date(updatedAt).toLocaleString() : "Live sync";
+
   return (
     <section className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <motion.div
@@ -155,6 +181,7 @@ export function StartupsClient() {
         <p className="mt-2 max-w-3xl text-sm text-zinc-400">
           Navigate startup momentum across Indian and US ecosystems by city, collection, and operating signal.
         </p>
+        <p className="mt-1 text-xs text-zinc-500">Last updated: {updatedLabel}</p>
       </motion.div>
 
       <motion.div
@@ -183,6 +210,11 @@ export function StartupsClient() {
               <div className="absolute inset-x-0 bottom-0 p-4">
                 <p className="text-lg font-semibold text-white">{card.city}</p>
                 <p className="mt-1 text-sm text-zinc-300">{card.description}</p>
+                {cityStats[card.city] ? (
+                  <p className="mt-2 text-xs text-zinc-400">
+                    {cityStats[card.city]} companies tracked
+                  </p>
+                ) : null}
               </div>
             </Link>
           ))}
@@ -221,6 +253,11 @@ export function StartupsClient() {
                 Funded Companies
               </p>
               <p className="mt-1 text-sm text-zinc-300">{hub.companiesTracked}</p>
+              {cityStats[hub.city] ? (
+                <p className="mt-1 text-xs text-zinc-500">
+                  Data-backed count: {cityStats[hub.city]} companies
+                </p>
+              ) : null}
               <p className="mt-3 text-xs uppercase tracking-[0.12em] text-zinc-500">
                 Funding Signal
               </p>
@@ -250,6 +287,11 @@ export function StartupsClient() {
             >
               <h3 className="text-lg font-semibold text-white">{collection.title}</h3>
               <p className="mt-2 text-sm text-zinc-400">{collection.description}</p>
+              {collectionCountByTitle[collection.title] ? (
+                <p className="mt-2 text-xs text-zinc-500">
+                  {collectionCountByTitle[collection.title]} matched companies
+                </p>
+              ) : null}
               <span className="mt-4 inline-flex text-sm text-indigo-300">
                 Open filtered directory
               </span>
@@ -260,4 +302,3 @@ export function StartupsClient() {
     </section>
   );
 }
-
