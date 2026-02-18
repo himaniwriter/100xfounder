@@ -1,54 +1,134 @@
+import { timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import {
-  buildUniqueBlogSlug,
-  createAdminBlogPost,
-} from "@/lib/admin/blog-content-store";
-import {
-  buildExcerpt,
-  countWords,
-  slugify,
-} from "@/lib/blog/post-utils";
-import {
-  getConfiguredN8nSecret,
-  isAuthorizedN8nWebhook,
-} from "@/lib/security/webhooks";
+import { buildExcerpt, countWords, slugify } from "@/lib/blog/post-utils";
+import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
+import { prisma } from "@/lib/prisma";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const seoMetadataSchema = z
-  .object({
-    title: z.string().min(4).optional(),
-    description: z.string().min(10).optional(),
-  })
-  .optional();
-
 const webhookPayloadSchema = z.object({
-  title: z.string().min(4),
-  content: z.string().min(100),
-  feature_image: z.string().url().optional(),
-  featureImage: z.string().url().optional(),
-  image_credit: z.string().max(240).optional(),
-  imageCredit: z.string().max(240).optional(),
-  seo_metadata: seoMetadataSchema,
-  seoMetadata: seoMetadataSchema,
+  title: z.string().trim().min(4).max(220),
+  content: z.string().trim().min(1),
+  feature_image: z.string().trim().url(),
+  image_credit: z.string().trim().max(240).optional(),
+  seo_metadata: z
+    .object({
+      title: z.string().trim().min(4).max(220).optional(),
+      description: z.string().trim().min(10).max(320).optional(),
+    })
+    .optional(),
 });
 
-export async function POST(request: Request) {
-  const configuredSecret = await getConfiguredN8nSecret();
-  if (!configuredSecret) {
-    return NextResponse.json(
-      { success: false, error: "N8N webhook secret is not configured." },
-      { status: 500 },
-    );
+function methodNotAllowed() {
+  return NextResponse.json(
+    { success: false, error: "Method not allowed. Use POST." },
+    { status: 405, headers: { Allow: "POST" } },
+  );
+}
+
+function safeCompareSecret(provided: string, expected: string): boolean {
+  const left = Buffer.from(provided);
+  const right = Buffer.from(expected);
+  if (left.length !== right.length) {
+    return false;
+  }
+  return timingSafeEqual(left, right);
+}
+
+function isAuthorizedRequest(request: Request): boolean {
+  const configuredSecret = process.env.N8N_BLOG_SECRET?.trim() || "";
+  const requestSecret = request.headers.get("x-secret-key")?.trim() || "";
+
+  if (!configuredSecret || !requestSecret) {
+    return false;
   }
 
-  const authorized = await isAuthorizedN8nWebhook(request.headers);
-  if (!authorized) {
+  return safeCompareSecret(requestSecret, configuredSecret);
+}
+
+async function buildUniqueSlugFromTitle(title: string): Promise<string> {
+  const baseSlug = slugify(title) || "untitled-post";
+  let candidate = baseSlug;
+  let suffix = 1;
+
+  while (true) {
+    const existing = await prisma.post.findUnique({
+      where: { slug: candidate },
+      select: { id: true },
+    });
+
+    if (!existing) {
+      return candidate;
+    }
+
+    candidate = `${baseSlug}-${suffix}`;
+    suffix += 1;
+  }
+}
+
+function mapSavedPost(post: {
+  id: string;
+  title: string;
+  content: string;
+  slug: string;
+  featureImage: string;
+  imageCredit: string | null;
+  seoTitle: string;
+  seoDescription: string;
+  wordCount: number;
+  status: "DRAFT" | "PUBLISHED";
+  createdAt: Date;
+  updatedAt: Date;
+}) {
+  return {
+    id: post.id,
+    title: post.title,
+    content: post.content,
+    slug: post.slug,
+    feature_image: post.featureImage,
+    image_credit: post.imageCredit,
+    seo_title: post.seoTitle,
+    seo_description: post.seoDescription,
+    word_count: post.wordCount,
+    status: post.status === "DRAFT" ? "draft" : "published",
+    created_at: post.createdAt.toISOString(),
+    updated_at: post.updatedAt.toISOString(),
+  };
+}
+
+export async function GET() {
+  return methodNotAllowed();
+}
+
+export async function PUT() {
+  return methodNotAllowed();
+}
+
+export async function PATCH() {
+  return methodNotAllowed();
+}
+
+export async function DELETE() {
+  return methodNotAllowed();
+}
+
+export async function POST(request: Request) {
+  if (!isAuthorizedRequest(request)) {
     return NextResponse.json(
       { success: false, error: "Unauthorized." },
       { status: 401 },
+    );
+  }
+
+  if (!isDatabaseConfigured()) {
+    return NextResponse.json(
+      {
+        success: false,
+        error: "Database is not configured. Add DATABASE_URL in .env.local, then restart the server.",
+      },
+      { status: 500 },
     );
   }
 
@@ -61,15 +141,6 @@ export async function POST(request: Request) {
         error: "Invalid webhook payload.",
         details: parsed.error.flatten(),
       },
-      { status: 400 },
-    );
-  }
-
-  const featureImage =
-    parsed.data.feature_image?.trim() || parsed.data.featureImage?.trim() || "";
-  if (!featureImage) {
-    return NextResponse.json(
-      { success: false, error: "feature_image is required." },
       { status: 400 },
     );
   }
@@ -87,53 +158,33 @@ export async function POST(request: Request) {
     );
   }
 
-  const slug = await buildUniqueBlogSlug(slugify(parsed.data.title));
-  const seoTitle =
-    parsed.data.seo_metadata?.title ||
-    parsed.data.seoMetadata?.title ||
-    parsed.data.title;
+  const title = parsed.data.title.trim();
+  const slug = await buildUniqueSlugFromTitle(title);
+  const seoTitle = parsed.data.seo_metadata?.title?.trim() || title;
   const seoDescription =
-    parsed.data.seo_metadata?.description ||
-    parsed.data.seoMetadata?.description ||
-    buildExcerpt(content);
-  const imageCredit =
-    parsed.data.image_credit?.trim() ||
-    parsed.data.imageCredit?.trim() ||
-    undefined;
+    parsed.data.seo_metadata?.description?.trim() || buildExcerpt(content);
 
   try {
-    const post = await createAdminBlogPost({
-      slug,
-      title: parsed.data.title,
-      content,
-      status: "DRAFT",
-      thumbnail: featureImage,
-      imageCredit,
-      seoTitle,
-      seoDescription,
-      excerpt: seoDescription,
+    const post = await prisma.post.create({
+      data: {
+        title,
+        content,
+        slug,
+        featureImage: parsed.data.feature_image,
+        imageCredit: parsed.data.image_credit?.trim() || null,
+        seoTitle,
+        seoDescription,
+        wordCount,
+        status: "DRAFT",
+      },
     });
 
-    return NextResponse.json(
-      {
-        success: true,
-        post: {
-          slug: post.slug,
-          title: post.title,
-          status: post.status,
-          wordCount: post.wordCount ?? wordCount,
-        },
-      },
-      { status: 201 },
-    );
+    return NextResponse.json({ post: mapSavedPost(post) }, { status: 201 });
   } catch (error) {
     return NextResponse.json(
       {
         success: false,
-        error:
-          error instanceof Error
-            ? error.message
-            : "Failed to save webhook blog post.",
+        error: toPublicDatabaseError(error, "Failed to save webhook blog post."),
       },
       { status: 500 },
     );
