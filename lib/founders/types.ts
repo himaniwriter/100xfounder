@@ -1,3 +1,14 @@
+export type CountryTier = "TIER_1" | "TIER_2" | "TIER_3";
+
+export type FundingRound = {
+  round: string;
+  amount: string;
+  amountUsd: number | null;
+  announcedOn: string | null;
+  investors: string[];
+  source: string | null;
+};
+
 export type FounderDirectoryItem = {
   id: string;
   slug: string;
@@ -21,6 +32,14 @@ export type FounderDirectoryItem = {
   verified: boolean;
   isFeatured: boolean;
   avatarUrl: string | null;
+  country?: string;
+  countryTier?: CountryTier;
+  fundingTotalDisplay?: string | null;
+  fundingTotalUsd?: number | null;
+  lastRound?: FundingRound | null;
+  allRounds?: FundingRound[];
+  isHiring?: boolean;
+  hiringRoles?: string[];
 };
 
 export type FounderSyncInput = {
@@ -44,4 +63,12 @@ export type FounderSyncInput = {
   isFeatured?: boolean;
   avatarUrl?: string | null;
   slug?: string;
+  country?: string;
+  countryTier?: CountryTier;
+  fundingTotalDisplay?: string | null;
+  fundingTotalUsd?: number | null;
+  lastRound?: FundingRound | null;
+  allRounds?: FundingRound[] | null;
+  isHiring?: boolean;
+  hiringRoles?: string[] | null;
 };

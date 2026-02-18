@@ -194,6 +194,12 @@ export default async function HomePage() {
               >
                 {homepageContent.secondaryCtaLabel}
               </Link>
+              <Link
+                href="/countries"
+                className="glass-ghost-btn w-full justify-center sm:w-auto sm:min-w-[220px]"
+              >
+                Browse Country Tiers
+              </Link>
             </div>
 
             <div className="mx-auto mt-9 max-w-3xl rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-2xl">

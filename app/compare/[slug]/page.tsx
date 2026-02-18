@@ -79,6 +79,30 @@ export default async function ComparePage({ params }: ComparePageProps) {
             <tbody>
               {[
                 ["Founder", left.founderName, right.founderName],
+                ["Country", left.country ?? "Unknown", right.country ?? "Unknown"],
+                [
+                  "Total Funding",
+                  left.fundingTotalDisplay ?? left.fundingInfo ?? "Undisclosed",
+                  right.fundingTotalDisplay ?? right.fundingInfo ?? "Undisclosed",
+                ],
+                [
+                  "Last Round",
+                  left.lastRound ? `${left.lastRound.round} ${left.lastRound.amount}` : "Undisclosed",
+                  right.lastRound ? `${right.lastRound.round} ${right.lastRound.amount}` : "Undisclosed",
+                ],
+                [
+                  "Hiring Roles",
+                  left.isHiring
+                    ? left.hiringRoles && left.hiringRoles.length > 0
+                      ? left.hiringRoles.slice(0, 3).join(", ")
+                      : "Hiring now"
+                    : "No active signal",
+                  right.isHiring
+                    ? right.hiringRoles && right.hiringRoles.length > 0
+                      ? right.hiringRoles.slice(0, 3).join(", ")
+                      : "Hiring now"
+                    : "No active signal",
+                ],
                 ["Industry", left.industry, right.industry],
                 ["Stage", left.stage, right.stage],
                 ["Headquarters", left.headquarters ?? "N/A", right.headquarters ?? "N/A"],

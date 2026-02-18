@@ -2,6 +2,7 @@ import {
   Bell,
   Coins,
   Flame,
+  Briefcase,
   Linkedin,
   MapPin,
   Share2,
@@ -28,6 +29,10 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
   const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(profileUrl)}`;
   const employeeCount = founder.employeeCount ?? "500+";
   const location = founder.headquarters ?? "India";
+  const fundingDisplay = founder.fundingTotalDisplay ?? founder.fundingInfo ?? founder.stage;
+  const lastRoundDisplay = founder.lastRound
+    ? `${founder.lastRound.round} ${founder.lastRound.amount}`
+    : null;
 
   return (
     <GlassCard
@@ -86,11 +91,16 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
 
             <p className="mt-1 text-sm font-medium text-zinc-400">{founder.companyName}</p>
             <p className="mt-2 text-sm text-zinc-500">{founder.productSummary}</p>
+            {lastRoundDisplay ? (
+              <p className="mt-2 text-xs text-indigo-300">
+                Last round: {lastRoundDisplay}
+              </p>
+            ) : null}
 
             <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-zinc-400">
               <span className="inline-flex items-center gap-1.5">
                 <Coins className="h-3.5 w-3.5 text-indigo-300" />
-                {founder.stage}
+                {fundingDisplay}
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <MapPin className="h-3.5 w-3.5 text-indigo-300" />
@@ -100,6 +110,14 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
                 <Users2 className="h-3.5 w-3.5 text-indigo-300" />
                 {employeeCount} Employees
               </span>
+              {founder.isHiring ? (
+                <span className="inline-flex items-center gap-1.5 text-emerald-300">
+                  <Briefcase className="h-3.5 w-3.5" />
+                  {founder.hiringRoles && founder.hiringRoles.length > 0
+                    ? `Hiring: ${founder.hiringRoles.slice(0, 2).join(", ")}`
+                    : "Hiring Now"}
+                </span>
+              ) : null}
             </div>
           </div>
         </div>

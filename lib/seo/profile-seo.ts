@@ -63,6 +63,15 @@ export function buildFounderFaqs(founder: FounderDirectoryItem): ProfileFaq[] {
   const location = toLocation(founder.headquarters);
   const techStack = founder.techStack.slice(0, 4);
   const today = formatDate();
+  const lastRound = founder.lastRound
+    ? `${founder.lastRound.round} ${founder.lastRound.amount}`
+    : "not disclosed";
+  const roundCount = founder.allRounds?.length ?? 0;
+  const hiringText = founder.isHiring
+    ? founder.hiringRoles && founder.hiringRoles.length > 0
+      ? founder.hiringRoles.join(", ")
+      : "multiple roles"
+    : "no active hiring signal";
   const contactHost = normalizeWebsite(founder.websiteUrl)
     ?.replace(/^https?:\/\//, "")
     .replace(/\/.*$/, "") ?? "company domain";
@@ -83,6 +92,14 @@ export function buildFounderFaqs(founder: FounderDirectoryItem): ProfileFaq[] {
     {
       question: `What is the current funding stage of ${founder.companyName}?`,
       answer: `${founder.companyName} is currently categorized at ${founder.stage} on 100Xfounder.${founder.fundingInfo ? ` Funding signal: ${founder.fundingInfo}` : ""}`,
+    },
+    {
+      question: `What is the latest funding round for ${founder.companyName}?`,
+      answer: `The latest tracked round for ${founder.companyName} is ${lastRound}. Total tracked rounds: ${roundCount}.`,
+    },
+    {
+      question: `Is ${founder.companyName} hiring right now?`,
+      answer: `Current hiring signal for ${founder.companyName}: ${hiringText}.`,
     },
     {
       question: `Is ${founder.founderName}'s profile verified?`,
@@ -118,6 +135,15 @@ export function buildCompanyFaqs(
   const founders = Array.from(new Set(matches.map((item) => item.founderName))).slice(0, 5);
   const techStack = primary.techStack.slice(0, 5);
   const today = formatDate();
+  const lastRound = primary.lastRound
+    ? `${primary.lastRound.round} ${primary.lastRound.amount}`
+    : "not disclosed";
+  const roundCount = primary.allRounds?.length ?? 0;
+  const hiringText = primary.isHiring
+    ? primary.hiringRoles && primary.hiringRoles.length > 0
+      ? primary.hiringRoles.join(", ")
+      : "multiple roles"
+    : "no active hiring signal";
 
   return [
     {
@@ -135,6 +161,14 @@ export function buildCompanyFaqs(
     {
       question: `What stage is ${primary.companyName} in?`,
       answer: `${primary.companyName} is currently mapped to ${primary.stage}.${primary.fundingInfo ? ` Funding context: ${primary.fundingInfo}` : ""}`,
+    },
+    {
+      question: `What is the latest funding round of ${primary.companyName}?`,
+      answer: `${primary.companyName}'s latest tracked round is ${lastRound}. Total tracked rounds: ${roundCount}.`,
+    },
+    {
+      question: `Is ${primary.companyName} hiring now?`,
+      answer: `${primary.companyName} hiring status: ${hiringText}.`,
     },
     {
       question: `What technologies does ${primary.companyName} use?`,
@@ -342,4 +376,3 @@ export function buildCompanyProfileSchema(input: CompanySchemaInput) {
     ],
   };
 }
-

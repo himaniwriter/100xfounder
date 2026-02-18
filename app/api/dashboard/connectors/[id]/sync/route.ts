@@ -74,6 +74,32 @@ function normalizeRecords(payload: unknown): FounderSyncInput[] {
         typeof record.verified === "boolean" ? record.verified : undefined,
       foundedYear:
         typeof record.foundedYear === "number" ? record.foundedYear : undefined,
+      country:
+        typeof record.country === "string" ? record.country : undefined,
+      countryTier:
+        record.countryTier === "TIER_1" ||
+        record.countryTier === "TIER_2" ||
+        record.countryTier === "TIER_3"
+          ? record.countryTier
+          : undefined,
+      fundingTotalDisplay:
+        typeof record.fundingTotalDisplay === "string"
+          ? record.fundingTotalDisplay
+          : undefined,
+      fundingTotalUsd:
+        typeof record.fundingTotalUsd === "number" ? record.fundingTotalUsd : undefined,
+      lastRound:
+        record.lastRound && typeof record.lastRound === "object"
+          ? (record.lastRound as FounderSyncInput["lastRound"])
+          : undefined,
+      allRounds: Array.isArray(record.allRounds)
+        ? (record.allRounds as FounderSyncInput["allRounds"])
+        : undefined,
+      isHiring:
+        typeof record.isHiring === "boolean" ? record.isHiring : undefined,
+      hiringRoles: Array.isArray(record.hiringRoles)
+        ? record.hiringRoles.filter((item): item is string => typeof item === "string")
+        : undefined,
     });
   }
 

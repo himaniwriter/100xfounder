@@ -5,6 +5,7 @@ const footerColumns = [
     title: "General",
     links: [
       { label: "About", href: "/about" },
+      { label: "Countries", href: "/countries" },
       { label: "Startups", href: "/startups" },
       { label: "Jobs", href: "/jobs" },
       { label: "Salary & Equity", href: "/salary-equity" },
@@ -71,6 +72,10 @@ const footerColumns = [
 ];
 
 const highIntentKeywords = [
+  { label: "Top startups by country", href: "/countries" },
+  { label: "Tier 1 startup countries", href: "/countries/tier/tier_1" },
+  { label: "Tier 2 startup countries", href: "/countries/tier/tier_2" },
+  { label: "Tier 3 startup countries", href: "/countries/tier/tier_3" },
   { label: "AI startups", href: "/startups/ai-startups" },
   { label: "Biotech startups", href: "/startups/biotech-startups" },
   { label: "Cybersecurity startups", href: "/startups/cybersecurity-startups" },

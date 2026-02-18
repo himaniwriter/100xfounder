@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: FounderProfilePageProps): Pro
   const baseUrl = getSiteBaseUrl();
 
   return {
-    title: `${founder.founderName} - Founder Profile & Signals | 100Xfounder`,
-    description: `Explore founder profile for ${founder.founderName}, including company ${founder.companyName}, funding context, and growth signals on 100Xfounder.`,
+    title: `${founder.founderName} - Founder Profile, Funding & Hiring | 100Xfounder`,
+    description: `Explore founder profile for ${founder.founderName}, including company ${founder.companyName}, funding rounds, hiring roles, and market signals on 100Xfounder.`,
     alternates: {
       canonical: `${baseUrl}/founders/${founder.slug}`,
     },
@@ -93,7 +93,12 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
                   {founder.stage}
                 </span>
                 <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
-                  {founder.industry}
+                  {founder.industry}</span>
+                <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
+                  {founder.country ?? "Unknown"}
+                </span>
+                <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
+                  {founder.countryTier ?? "TIER_3"}
                 </span>
               </div>
 

@@ -3,7 +3,14 @@ import { prisma } from "@/lib/prisma";
 import { isDatabaseConfigured } from "@/lib/db-config";
 import { buildPrimaryLinkedInAvatar } from "@/lib/founders/linkedin";
 import { PDF_FOUNDER_SEED, PDF_SOURCE_URL } from "@/lib/founders/seed-data";
+import {
+  classifyCountryTier,
+  countryToSlug,
+  extractCountryFromHeadquarters,
+} from "@/lib/founders/country-tier";
+import { buildFundingSummary, buildHiringSummary } from "@/lib/founders/insights";
 import type {
+  CountryTier,
   FounderDirectoryItem,
   FounderSyncInput,
 } from "@/lib/founders/types";
@@ -13,6 +20,9 @@ type FounderQueryOptions = {
   industry?: string[];
   location?: string[];
   stage?: string[];
+  country?: string[];
+  tier?: CountryTier[];
+  perCountryLimit?: number;
 };
 
 const RECENT_STAGE_RE = /(pre[- ]seed|seed|series\s*[a-f])/i;
@@ -294,17 +304,38 @@ function inferRecentNews(item: {
 }): string[] {
   return [
     `${item.companyName} expands ${item.industry.toLowerCase()} initiatives in 2026.`,
-    `${item.founderName} discusses growth signals and hiring roadmap at ${item.companyName}.`,
+    `${item.founderName} discusses product roadmap and market execution at ${item.companyName}.`,
     `${item.companyName} appears in investor watchlists for sector momentum.`,
   ];
 }
 
 function sanitizeItem(raw: FounderDirectoryItem): FounderDirectoryItem {
-  const founderName = dedupeRepeatedHalf(raw.founderName);
+  const founderNameRaw = dedupeRepeatedHalf(raw.founderName);
   const companyName = dedupeRepeatedHalf(raw.companyName);
+  const founderName = /(founding team|leadership team)/i.test(founderNameRaw)
+    ? `${companyName} Founder`
+    : founderNameRaw;
   const industry = titleCase(dedupeRepeatedHalf(raw.industry));
   const stage = titleCase(raw.stage);
   const productSummary = dedupeRepeatedHalf(raw.productSummary);
+  const recentNews =
+    raw.recentNews && raw.recentNews.length > 0
+      ? raw.recentNews
+      : inferRecentNews({ companyName, founderName, industry });
+  const sourceUrl = raw.sourceUrl ?? PDF_SOURCE_URL;
+  const country = raw.country ?? extractCountryFromHeadquarters(raw.headquarters, sourceUrl);
+  const countryTier = raw.countryTier ?? classifyCountryTier(country);
+  const fundingSummary = buildFundingSummary({
+    fundingInfo: raw.fundingInfo,
+    productSummary,
+    recentNews,
+    sourceUrl,
+  });
+  const hiringSummary = buildHiringSummary({
+    fundingInfo: raw.fundingInfo,
+    productSummary,
+    recentNews,
+  });
 
   return {
     ...raw,
@@ -317,7 +348,8 @@ function sanitizeItem(raw: FounderDirectoryItem): FounderDirectoryItem {
     websiteUrl: raw.websiteUrl ?? inferWebsite(companyName),
     employeeCount: raw.employeeCount ?? inferEmployeeCount(stage),
     techStack: raw.techStack && raw.techStack.length > 0 ? raw.techStack : inferTechStack(industry),
-    recentNews: raw.recentNews && raw.recentNews.length > 0 ? raw.recentNews : inferRecentNews({ companyName, founderName, industry }),
+    recentNews,
+    sourceUrl,
     linkedinUrl:
       raw.linkedinUrl ??
       `https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(founderName)}`,
@@ -331,6 +363,21 @@ function sanitizeItem(raw: FounderDirectoryItem): FounderDirectoryItem {
         linkedinUrl: raw.linkedinUrl,
         founderName,
       }),
+    country,
+    countryTier,
+    fundingTotalDisplay: raw.fundingTotalDisplay ?? fundingSummary.fundingTotalDisplay,
+    fundingTotalUsd: raw.fundingTotalUsd ?? fundingSummary.fundingTotalUsd,
+    lastRound: raw.lastRound ?? fundingSummary.lastRound,
+    allRounds:
+      raw.allRounds && raw.allRounds.length > 0
+        ? raw.allRounds
+        : fundingSummary.allRounds,
+    isHiring:
+      typeof raw.isHiring === "boolean" ? raw.isHiring : hiringSummary.isHiring,
+    hiringRoles:
+      raw.hiringRoles && raw.hiringRoles.length > 0
+        ? raw.hiringRoles
+        : hiringSummary.hiringRoles,
   };
 }
 
@@ -357,6 +404,48 @@ function applySeedFilters(
     result = result.filter((item) => stages.has(normalize(item.stage)));
   }
 
+  if (options.country && options.country.length > 0) {
+    const countries = new Set(options.country.map(normalize));
+    result = result.filter((item) => {
+      const country = item.country ?? extractCountryFromHeadquarters(item.headquarters, item.sourceUrl);
+      return countries.has(normalize(country));
+    });
+  }
+
+  if (options.tier && options.tier.length > 0) {
+    const tiers = new Set(options.tier);
+    result = result.filter((item) => {
+      const country = item.country ?? extractCountryFromHeadquarters(item.headquarters, item.sourceUrl);
+      const tier = item.countryTier ?? classifyCountryTier(country);
+      return tiers.has(tier);
+    });
+  }
+
+  return result;
+}
+
+function applyPerCountryLimit(
+  items: FounderDirectoryItem[],
+  perCountryLimit: number | undefined,
+): FounderDirectoryItem[] {
+  const safeLimit =
+    typeof perCountryLimit === "number" && Number.isFinite(perCountryLimit) && perCountryLimit > 0
+      ? Math.floor(perCountryLimit)
+      : 500;
+
+  const counters = new Map<string, number>();
+  const result: FounderDirectoryItem[] = [];
+
+  items.forEach((item) => {
+    const country = item.country ?? extractCountryFromHeadquarters(item.headquarters, item.sourceUrl);
+    const current = counters.get(country) ?? 0;
+    if (current >= safeLimit) {
+      return;
+    }
+    counters.set(country, current + 1);
+    result.push(item);
+  });
+
   return result;
 }
 
@@ -367,8 +456,25 @@ function getFundingPriority(item: FounderDirectoryItem): number {
     score += 5;
   }
 
+  if (typeof item.fundingTotalUsd === "number" && item.fundingTotalUsd > 0) {
+    score += Math.min(Math.log10(item.fundingTotalUsd + 1), 9);
+  }
+
   if (item.fundingInfo && RECENT_FUNDING_RE.test(item.fundingInfo)) {
     score += 4;
+  }
+
+  if (item.lastRound?.announcedOn && /^20[0-9]{2}$/.test(item.lastRound.announcedOn)) {
+    const year = Number(item.lastRound.announcedOn);
+    if (year >= 2025) {
+      score += 2;
+    } else if (year >= 2023) {
+      score += 1;
+    }
+  }
+
+  if (item.isHiring) {
+    score += 1;
   }
 
   if (item.productSummary && /startup|saas|platform|ai|api/i.test(item.productSummary)) {
@@ -429,6 +535,18 @@ function mergeUniqueBySlug(
     }
   });
   return Array.from(bySlug.values());
+}
+
+function finalizeFounderDirectory(
+  items: FounderDirectoryItem[],
+  options: FounderQueryOptions,
+): FounderDirectoryItem[] {
+  const filtered = applySeedFilters(items, options);
+  const countryLimited = applyPerCountryLimit(filtered, options.perCountryLimit);
+  if (options.limit && options.limit > 0) {
+    return countryLimited.slice(0, options.limit);
+  }
+  return countryLimited;
 }
 
 export function splitRecentlyFunded(
@@ -505,10 +623,7 @@ export async function getFounderDirectory(
         ),
       ),
     );
-    if (options.limit && options.limit > 0) {
-      return seeded.slice(0, options.limit);
-    }
-    return seeded;
+    return finalizeFounderDirectory(seeded, options);
   }
 
   try {
@@ -539,10 +654,7 @@ export async function getFounderDirectory(
       );
       const uniqueItems = dedupeExactDetailProfiles(dedupeCompanyProfiles(mergedItems));
       const sorted = applyFeaturedFlag(sortByFundingPriority(uniqueItems));
-      if (options.limit && options.limit > 0) {
-        return sorted.slice(0, options.limit);
-      }
-      return sorted;
+      return finalizeFounderDirectory(sorted, options);
     }
   } catch {
     // Fallback to seed records when DB is unavailable or not migrated yet.
@@ -556,16 +668,15 @@ export async function getFounderDirectory(
       ),
     ),
   );
-  if (options.limit && options.limit > 0) {
-    return seeded.slice(0, options.limit);
-  }
-  return seeded;
+  return finalizeFounderDirectory(seeded, options);
 }
 
 export async function getFounderFilterOptions(): Promise<{
   industries: string[];
   locations: string[];
   stages: string[];
+  countries: string[];
+  tiers: CountryTier[];
 }> {
   const items = await getFounderDirectory();
 
@@ -580,7 +691,91 @@ export async function getFounderFilterOptions(): Promise<{
       items.map((item) => item.headquarters ?? "").filter(Boolean),
     ),
     stages: uniqueSorted(items.map((item) => item.stage)),
+    countries: uniqueSorted(
+      items
+        .map((item) => item.country ?? "Unknown")
+        .filter((country) => country !== "Unknown"),
+    ),
+    tiers: Array.from(
+      new Set(
+        items
+          .filter((item) => (item.country ?? "Unknown") !== "Unknown")
+          .map((item) => item.countryTier ?? classifyCountryTier(item.country ?? "Unknown")),
+      ),
+    ).sort(),
   };
+}
+
+export type CountryCoverage = {
+  country: string;
+  countrySlug: string;
+  tier: CountryTier;
+  companyCount: number;
+  founderCount: number;
+  hiringCompanies: number;
+  fundedCompanies: number;
+};
+
+export async function getCountryCoverage(): Promise<CountryCoverage[]> {
+  const items = await getFounderDirectory({ perCountryLimit: 500 });
+  const grouped = new Map<
+    string,
+    {
+      tier: CountryTier;
+      founderCount: number;
+      companySlugs: Set<string>;
+      hiringCompanySlugs: Set<string>;
+      fundedCompanySlugs: Set<string>;
+    }
+  >();
+
+  items.forEach((item) => {
+    const country = item.country ?? extractCountryFromHeadquarters(item.headquarters, item.sourceUrl);
+    if (country === "Unknown") {
+      return;
+    }
+    const tier = item.countryTier ?? classifyCountryTier(country);
+    const current = grouped.get(country) ?? {
+      tier,
+      founderCount: 0,
+      companySlugs: new Set<string>(),
+      hiringCompanySlugs: new Set<string>(),
+      fundedCompanySlugs: new Set<string>(),
+    };
+
+    current.founderCount += 1;
+    current.companySlugs.add(item.companySlug);
+
+    if (item.isHiring) {
+      current.hiringCompanySlugs.add(item.companySlug);
+    }
+
+    if ((typeof item.fundingTotalUsd === "number" && item.fundingTotalUsd > 0) || item.fundingInfo) {
+      current.fundedCompanySlugs.add(item.companySlug);
+    }
+
+    grouped.set(country, current);
+  });
+
+  return Array.from(grouped.entries())
+    .map(([country, value]) => ({
+      country,
+      countrySlug: countryToSlug(country),
+      tier: value.tier,
+      companyCount: value.companySlugs.size,
+      founderCount: value.founderCount,
+      hiringCompanies: value.hiringCompanySlugs.size,
+      fundedCompanies: value.fundedCompanySlugs.size,
+    }))
+    .sort((a, b) => {
+      if (a.tier !== b.tier) {
+        return a.tier.localeCompare(b.tier);
+      }
+      if (a.companyCount !== b.companyCount) {
+        return b.companyCount - a.companyCount;
+      }
+      return a.country.localeCompare(b.country);
+    });
 }
 
 export async function upsertFounderDirectoryFromN8N(
@@ -597,6 +792,39 @@ export async function upsertFounderDirectoryFromN8N(
       entry.slug && entry.slug.length > 0
         ? slugify(entry.slug)
         : slugify(`${entry.founderName}-${entry.companyName}`);
+    const synthesizedFundingInfo =
+      entry.fundingInfo ??
+      (() => {
+        const value = [
+          entry.fundingTotalDisplay ? `Total funding: ${entry.fundingTotalDisplay}` : "",
+          entry.lastRound
+            ? `Last round: ${entry.lastRound.round} ${entry.lastRound.amount}${
+                entry.lastRound.announcedOn ? ` (${entry.lastRound.announcedOn})` : ""
+              }`
+            : "",
+        ]
+          .filter(Boolean)
+          .join(". ");
+        return value || null;
+      })();
+    const synthesizedRecentNews =
+      entry.recentNews && entry.recentNews.length > 0
+        ? entry.recentNews
+        : [
+            ...(entry.allRounds ?? []).slice(0, 4).map(
+              (round) =>
+                `${entry.companyName} ${round.round} ${round.amount}${
+                  round.announcedOn ? ` (${round.announcedOn})` : ""
+                }.`,
+            ),
+            ...(entry.hiringRoles && entry.hiringRoles.length > 0
+              ? [`${entry.companyName} hiring for ${entry.hiringRoles.join(", ")}.`]
+              : []),
+          ];
+    const synthesizedSummary =
+      entry.isHiring && entry.hiringRoles && entry.hiringRoles.length > 0
+        ? `${entry.productSummary} Hiring focus: ${entry.hiringRoles.join(", ")}.`
+        : entry.productSummary;
 
     return prisma.founderDirectoryEntry.upsert({
       where: { slug },
@@ -608,14 +836,14 @@ export async function upsertFounderDirectoryFromN8N(
         headquarters: entry.headquarters ?? null,
         industry: entry.industry ?? "General",
         stage: entry.stage ?? "Growth",
-        productSummary: entry.productSummary,
-        fundingInfo: entry.fundingInfo ?? null,
+        productSummary: synthesizedSummary,
+        fundingInfo: synthesizedFundingInfo,
         sourceUrl: entry.sourceUrl ?? PDF_SOURCE_URL,
         ycProfileUrl: entry.ycProfileUrl ?? null,
         websiteUrl: entry.websiteUrl ?? null,
         employeeCount: entry.employeeCount ?? null,
         techStack: entry.techStack ?? [],
-        recentNews: entry.recentNews ?? [],
+        recentNews: synthesizedRecentNews,
         linkedinUrl: entry.linkedinUrl ?? null,
         twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,
@@ -634,14 +862,14 @@ export async function upsertFounderDirectoryFromN8N(
         headquarters: entry.headquarters ?? null,
         industry: entry.industry ?? "General",
         stage: entry.stage ?? "Growth",
-        productSummary: entry.productSummary,
-        fundingInfo: entry.fundingInfo ?? null,
+        productSummary: synthesizedSummary,
+        fundingInfo: synthesizedFundingInfo,
         sourceUrl: entry.sourceUrl ?? PDF_SOURCE_URL,
         ycProfileUrl: entry.ycProfileUrl ?? null,
         websiteUrl: entry.websiteUrl ?? null,
         employeeCount: entry.employeeCount ?? null,
         techStack: entry.techStack ?? [],
-        recentNews: entry.recentNews ?? [],
+        recentNews: synthesizedRecentNews,
         linkedinUrl: entry.linkedinUrl ?? null,
         twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,

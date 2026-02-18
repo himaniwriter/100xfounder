@@ -234,6 +234,8 @@ export function CompanyIntelligenceDashboard({
   const stageValue = primary.stage || "Undisclosed";
   const description = expansion.aboutMarkdown || aboutMarkdown(primary);
   const whyItMattersText = expansion.whyItMatters || whyItMatters(primary);
+  const fundingRounds = primary.allRounds ?? [];
+  const hiringRoles = primary.hiringRoles ?? [];
 
   return (
     <div className="space-y-6">
@@ -358,6 +360,53 @@ export function CompanyIntelligenceDashboard({
                 <p className="mt-2 text-sm leading-7 text-indigo-100/90">{whyItMattersText}</p>
               </div>
             </div>
+          </section>
+
+          <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
+            <h2 className="text-2xl font-semibold text-white">Funding Snapshot</h2>
+            <div className="mt-3 flex flex-wrap gap-2 text-sm">
+              <span className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-zinc-200">
+                Total Funding: {primary.fundingTotalDisplay ?? primary.fundingInfo ?? "Undisclosed"}
+              </span>
+              <span className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-zinc-200">
+                Last Round: {primary.lastRound ? `${primary.lastRound.round} ${primary.lastRound.amount}` : "Undisclosed"}
+              </span>
+              <span className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-zinc-200">
+                All Rounds: {fundingRounds.length}
+              </span>
+            </div>
+
+            {fundingRounds.length > 0 ? (
+              <ul className="mt-4 grid gap-2 text-sm text-zinc-300 sm:grid-cols-2">
+                {fundingRounds.slice(0, 8).map((round, index) => (
+                  <li key={`${round.round}-${round.amount}-${index}`} className="rounded-lg border border-white/10 bg-black/30 px-3 py-2">
+                    {round.round} • {round.amount}
+                    {round.announcedOn ? ` • ${round.announcedOn}` : ""}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </section>
+
+          <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
+            <h2 className="text-2xl font-semibold text-white">Hiring Roles</h2>
+            {primary.isHiring ? (
+              <div className="mt-3">
+                <p className="text-sm text-emerald-300">This company is actively hiring.</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {(hiringRoles.length > 0 ? hiringRoles : ["Multiple roles"]).map((role) => (
+                    <span
+                      key={role}
+                      className="rounded-full border border-emerald-400/35 bg-emerald-500/10 px-3 py-1.5 text-xs text-emerald-200"
+                    >
+                      {role}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <p className="mt-3 text-sm text-zinc-400">No active hiring signal detected.</p>
+            )}
           </section>
 
           <section id="meet-founders" className="rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">

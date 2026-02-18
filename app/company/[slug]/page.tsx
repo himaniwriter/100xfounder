@@ -39,8 +39,8 @@ export async function generateMetadata({ params }: CompanyPageProps): Promise<Me
   const { primary } = context;
 
   return {
-    title: `${primary.companyName} - Founder, Funding & Signals | 100Xfounder`,
-    description: `View ${primary.companyName}'s profile on 100Xfounder. Track their growth signals, tech stack, and founder ${primary.founderName}. Access verified contact details.`,
+    title: `${primary.companyName} - Founder, Funding Rounds & Hiring | 100Xfounder`,
+    description: `View ${primary.companyName}'s profile on 100Xfounder with founder details, total funding, last round, all rounds, and hiring roles in one place.`,
   };
 }
 

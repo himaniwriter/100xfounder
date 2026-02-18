@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: FounderPageProps): Promise<Me
   const baseUrl = getSiteBaseUrl();
 
   return {
-    title: `${founder.founderName} - Founder Profile & Signals | 100Xfounder`,
-    description: `Explore founder profile for ${founder.founderName}, including company ${founder.companyName}, funding context, and growth signals on 100Xfounder.`,
+    title: `${founder.founderName} - Founder Profile, Funding & Hiring | 100Xfounder`,
+    description: `Explore founder profile for ${founder.founderName}, including company ${founder.companyName}, funding rounds, hiring roles, and market signals on 100Xfounder.`,
     alternates: {
       canonical: `${baseUrl}/founders/${founder.slug}`,
     },
@@ -83,6 +83,8 @@ export default async function FounderPage({ params }: FounderPageProps) {
           <div className="mt-6 flex flex-wrap gap-2">
             <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">{founder.industry}</span>
             <span className="rounded-full border border-[#6366f1]/30 bg-[#6366f1]/10 px-2.5 py-1 text-xs text-indigo-300">{founder.stage}</span>
+            <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">{founder.country ?? "Unknown"}</span>
+            <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">{founder.countryTier ?? "TIER_3"}</span>
           </div>
 
           <ProfileTabs founder={founder} similar={similar} />

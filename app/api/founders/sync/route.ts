@@ -27,6 +27,36 @@ const founderSyncSchema = z.object({
   isFeatured: z.boolean().optional(),
   avatarUrl: z.string().url().nullable().optional(),
   slug: z.string().optional(),
+  country: z.string().min(2).optional(),
+  countryTier: z.enum(["TIER_1", "TIER_2", "TIER_3"]).optional(),
+  fundingTotalDisplay: z.string().nullable().optional(),
+  fundingTotalUsd: z.number().nullable().optional(),
+  lastRound: z
+    .object({
+      round: z.string(),
+      amount: z.string(),
+      amountUsd: z.number().nullable(),
+      announcedOn: z.string().nullable(),
+      investors: z.array(z.string()),
+      source: z.string().nullable(),
+    })
+    .nullable()
+    .optional(),
+  allRounds: z
+    .array(
+      z.object({
+        round: z.string(),
+        amount: z.string(),
+        amountUsd: z.number().nullable(),
+        announcedOn: z.string().nullable(),
+        investors: z.array(z.string()),
+        source: z.string().nullable(),
+      }),
+    )
+    .nullable()
+    .optional(),
+  isHiring: z.boolean().optional(),
+  hiringRoles: z.array(z.string()).nullable().optional(),
 });
 
 const payloadSchema = z.object({

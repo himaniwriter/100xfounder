@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllBlogPosts } from "@/lib/blog/store";
-import { getFounderDirectory } from "@/lib/founders/store";
+import { countryTierLabel } from "@/lib/founders/country-tier";
+import { getCountryCoverage, getFounderDirectory } from "@/lib/founders/store";
 import { STARTUP_DISCOVERY_PAGES } from "@/lib/startups/discovery-pages";
 
 type ChangeFrequency = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
@@ -23,6 +24,8 @@ export type HtmlSitemapData = {
   staticLinks: HtmlSitemapLink[];
   blogLinks: HtmlSitemapLink[];
   startupCategoryLinks: HtmlSitemapLink[];
+  countryLinks: HtmlSitemapLink[];
+  tierLinks: HtmlSitemapLink[];
   companyLinks: HtmlSitemapLink[];
   founderLinks: HtmlSitemapLink[];
 };
@@ -30,6 +33,7 @@ export type HtmlSitemapData = {
 const STATIC_ROUTES: StaticRoute[] = [
   { href: "/", label: "Home", changeFrequency: "daily", priority: 1 },
   { href: "/founders", label: "Founder Directory", changeFrequency: "daily", priority: 0.95 },
+  { href: "/countries", label: "Countries", changeFrequency: "daily", priority: 0.92 },
   { href: "/startups", label: "Startup Explorer", changeFrequency: "weekly", priority: 0.85 },
   { href: "/signals", label: "Signals", changeFrequency: "hourly", priority: 0.9 },
   { href: "/pricing", label: "Pricing", changeFrequency: "weekly", priority: 0.8 },
@@ -86,6 +90,7 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
   const baseUrl = getSiteBaseUrl();
   const now = new Date();
   const founders = await getFounderDirectory();
+  const countryCoverage = await getCountryCoverage();
   const blogPosts = getAllBlogPosts();
 
   const staticLinks = STATIC_ROUTES.map((route) => ({
@@ -114,6 +119,26 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
     })).sort((a, b) => a.label.localeCompare(b.label)),
   );
 
+  const countryLinks = uniqueByHref(
+    countryCoverage
+      .map((item) => ({
+        href: `/countries/${item.countrySlug}`,
+        label: `${item.country} startups`,
+        lastModified: now,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
+  const tierLinks = uniqueByHref(
+    Array.from(new Set(countryCoverage.map((item) => item.tier)))
+      .map((tier) => ({
+        href: `/countries/tier/${tier.toLowerCase()}`,
+        label: `${countryTierLabel(tier)} countries`,
+        lastModified: now,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
   const companyLinks = uniqueByHref(
     founders
       .map((item) => ({
@@ -139,6 +164,8 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
     staticLinks,
     blogLinks,
     startupCategoryLinks,
+    countryLinks,
+    tierLinks,
     companyLinks,
     founderLinks,
   };
@@ -150,6 +177,8 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     staticLinks,
     blogLinks,
     startupCategoryLinks,
+    countryLinks,
+    tierLinks,
     companyLinks,
     founderLinks,
   } =
@@ -181,6 +210,20 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: 0.84,
   }));
 
+  const countryEntries: MetadataRoute.Sitemap = countryLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "daily",
+    priority: 0.83,
+  }));
+
+  const tierEntries: MetadataRoute.Sitemap = tierLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "daily",
+    priority: 0.82,
+  }));
+
   const companyEntries: MetadataRoute.Sitemap = companyLinks.map((link) => ({
     url: `${baseUrl}${link.href}`,
     lastModified: link.lastModified,
@@ -199,6 +242,8 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...staticEntries,
     ...blogEntries,
     ...startupCategoryEntries,
+    ...countryEntries,
+    ...tierEntries,
     ...companyEntries,
     ...founderEntries,
   ];

@@ -7,7 +7,7 @@ import { getHtmlSitemapData } from "@/lib/sitemap";
 export const metadata: Metadata = {
   title: "Sitemap | 100Xfounder",
   description:
-    "Browse all major pages, founder profiles, company pages, and blog articles on 100Xfounder.",
+    "Browse all major pages, country clusters, founder profiles, company pages, and blog articles on 100Xfounder.",
 };
 
 type SectionProps = {
@@ -46,6 +46,8 @@ export default async function HtmlSitemapPage() {
     staticLinks,
     blogLinks,
     startupCategoryLinks,
+    countryLinks,
+    tierLinks,
     companyLinks,
     founderLinks,
   } =
@@ -76,6 +78,8 @@ export default async function HtmlSitemapPage() {
 
         <div className="grid gap-5">
           <SitemapSection title="Core Pages" links={staticLinks} />
+          <SitemapSection title="Country Tier Pages" links={tierLinks} />
+          <SitemapSection title="Country Pages" links={countryLinks} />
           <SitemapSection title="Startup Category Pages" links={startupCategoryLinks} />
           <SitemapSection title="Blog Articles" links={blogLinks} />
           <SitemapSection title="Company Profiles" links={companyLinks} />

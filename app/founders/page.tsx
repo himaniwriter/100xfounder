@@ -8,7 +8,7 @@ import {
   getFounderFilterOptions,
   splitRecentlyFunded,
 } from "@/lib/founders/store";
-import type { FounderDirectoryItem } from "@/lib/founders/types";
+import type { CountryTier, FounderDirectoryItem } from "@/lib/founders/types";
 
 function readParam(value: string | string[] | undefined): string[] {
   if (!value) {
@@ -35,6 +35,9 @@ function setListParam(params: URLSearchParams, key: string, values: string[]) {
 }
 
 function isHiringNow(item: FounderDirectoryItem): boolean {
+  if (typeof item.isHiring === "boolean") {
+    return item.isHiring;
+  }
   return /hiring|expanding team|open roles|building team|talent/i.test(
     `${item.productSummary} ${item.fundingInfo ?? ""}`,
   );
@@ -55,14 +58,26 @@ type FoundersPageProps = {
     industry?: string | string[];
     location?: string | string[];
     stage?: string | string[];
+    country?: string | string[];
+    tier?: string | string[];
     tab?: string | string[];
   };
 };
+
+function readTierParam(value: string | string[] | undefined): CountryTier[] {
+  return readParam(value)
+    .map((item) => item.trim().toUpperCase())
+    .filter((item): item is CountryTier =>
+      item === "TIER_1" || item === "TIER_2" || item === "TIER_3",
+    );
+}
 
 export default async function FoundersPage({ searchParams }: FoundersPageProps) {
   const selectedIndustries = readParam(searchParams?.industry);
   const selectedLocations = readParam(searchParams?.location);
   const selectedStages = readParam(searchParams?.stage);
+  const selectedCountries = readParam(searchParams?.country);
+  const selectedTiers = readTierParam(searchParams?.tier);
   const activeTab = resolveTab(searchParams?.tab);
   const lastUpdatedOn = new Intl.DateTimeFormat("en-US", {
     month: "long",
@@ -75,6 +90,9 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
       industry: selectedIndustries,
       location: selectedLocations,
       stage: selectedStages,
+      country: selectedCountries,
+      tier: selectedTiers,
+      perCountryLimit: 500,
     }),
     getFounderFilterOptions(),
   ]);
@@ -95,6 +113,8 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
     setListParam(params, "industry", selectedIndustries);
     setListParam(params, "location", selectedLocations);
     setListParam(params, "stage", selectedStages);
+    setListParam(params, "country", selectedCountries);
+    setListParam(params, "tier", selectedTiers);
     const queryString = params.toString();
     return queryString ? `/founders?${queryString}` : "/founders";
   };
@@ -146,8 +166,8 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
                 Founder Directory
               </h1>
               <p className="mt-2 max-w-2xl text-sm text-zinc-400">
-                Curated founder intelligence with verified signals, funding momentum,
-                and conversion-ready outreach actions.
+                Global company intelligence with up to 500 companies per country,
+                mapped by Tier 1, Tier 2, and Tier 3 markets.
               </p>
             </div>
             <div className="text-left sm:text-right">
@@ -157,12 +177,14 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]">
-            <FilterSidebar
-              options={filterOptions}
-              selectedIndustries={selectedIndustries}
-              selectedLocations={selectedLocations}
-              selectedStages={selectedStages}
-            />
+              <FilterSidebar
+                options={filterOptions}
+                selectedIndustries={selectedIndustries}
+                selectedLocations={selectedLocations}
+                selectedStages={selectedStages}
+                selectedCountries={selectedCountries}
+                selectedTiers={selectedTiers}
+              />
 
             <section className="min-w-0">
               <div className="mb-6 overflow-x-auto">

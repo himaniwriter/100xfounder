@@ -11,10 +11,14 @@ type FilterSidebarProps = {
     industries: string[];
     locations: string[];
     stages: string[];
+    countries: string[];
+    tiers: string[];
   };
   selectedIndustries: string[];
   selectedLocations: string[];
   selectedStages: string[];
+  selectedCountries: string[];
+  selectedTiers: string[];
 };
 
 function setListParam(params: URLSearchParams, key: string, values: string[]) {
@@ -36,9 +40,10 @@ type PillGroupProps = {
   values: string[];
   selected: string[];
   onToggle: (value: string) => void;
+  formatLabel?: (value: string) => string;
 };
 
-function PillGroup({ title, values, selected, onToggle }: PillGroupProps) {
+function PillGroup({ title, values, selected, onToggle, formatLabel }: PillGroupProps) {
   return (
     <details open className="group rounded-xl border border-white/15 bg-white/[0.02]">
       <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2">
@@ -52,7 +57,7 @@ function PillGroup({ title, values, selected, onToggle }: PillGroupProps) {
         {values.length > 0 ? (
           values.map((value) => {
             const active = selected.includes(value);
-            const label = cleanLabel(value);
+            const label = formatLabel ? formatLabel(value) : cleanLabel(value);
 
             return (
               <button
@@ -84,6 +89,8 @@ export function FilterSidebar({
   selectedIndustries,
   selectedLocations,
   selectedStages,
+  selectedCountries,
+  selectedTiers,
 }: FilterSidebarProps) {
   const router = useRouter();
   const pathname = usePathname();
@@ -93,14 +100,18 @@ export function FilterSidebar({
   const [industries, setIndustries] = useState<string[]>(selectedIndustries);
   const [locations, setLocations] = useState<string[]>(selectedLocations);
   const [stages, setStages] = useState<string[]>(selectedStages);
+  const [countries, setCountries] = useState<string[]>(selectedCountries);
+  const [tiers, setTiers] = useState<string[]>(selectedTiers);
 
   const filtered = useMemo(
     () => ({
       industries: filterBySearch(options.industries, query),
       locations: filterBySearch(options.locations, query),
       stages: filterBySearch(options.stages, query),
+      countries: filterBySearch(options.countries, query),
+      tiers: filterBySearch(options.tiers, query),
     }),
-    [options.industries, options.locations, options.stages, query],
+    [options.industries, options.locations, options.stages, options.countries, options.tiers, query],
   );
 
   const toggleValue = (
@@ -120,6 +131,8 @@ export function FilterSidebar({
     setListParam(params, "industry", industries);
     setListParam(params, "location", locations);
     setListParam(params, "stage", stages);
+    setListParam(params, "country", countries);
+    setListParam(params, "tier", tiers);
 
     const queryString = params.toString();
     router.push(queryString ? `${pathname}?${queryString}` : pathname);
@@ -129,11 +142,15 @@ export function FilterSidebar({
     setIndustries([]);
     setLocations([]);
     setStages([]);
+    setCountries([]);
+    setTiers([]);
 
     const params = new URLSearchParams(searchParams.toString());
     params.delete("industry");
     params.delete("location");
     params.delete("stage");
+    params.delete("country");
+    params.delete("tier");
 
     const queryString = params.toString();
     router.push(queryString ? `${pathname}?${queryString}` : pathname);
@@ -178,6 +195,19 @@ export function FilterSidebar({
           values={filtered.stages}
           selected={stages}
           onToggle={(value) => toggleValue(stages, value, setStages)}
+        />
+        <PillGroup
+          title="Country"
+          values={filtered.countries}
+          selected={countries}
+          onToggle={(value) => toggleValue(countries, value, setCountries)}
+        />
+        <PillGroup
+          title="Country Tier"
+          values={filtered.tiers}
+          selected={tiers}
+          onToggle={(value) => toggleValue(tiers, value, setTiers)}
+          formatLabel={(value) => value.replace("TIER_", "Tier ")}
         />
       </div>
 

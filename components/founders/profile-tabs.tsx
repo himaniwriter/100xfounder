@@ -62,6 +62,42 @@ export function ProfileTabs({ founder, similar }: ProfileTabsProps) {
               {founder.fundingInfo ? (
                 <p className="mt-4 text-sm leading-7 text-indigo-300">{founder.fundingInfo}</p>
               ) : null}
+              <div className="mt-4 flex flex-wrap gap-2 text-xs">
+                <span className="rounded-full border border-white/15 bg-black/30 px-2.5 py-1 text-zinc-300">
+                  Total Funding: {founder.fundingTotalDisplay ?? "Undisclosed"}
+                </span>
+                <span className="rounded-full border border-white/15 bg-black/30 px-2.5 py-1 text-zinc-300">
+                  Last Round: {founder.lastRound ? `${founder.lastRound.round} ${founder.lastRound.amount}` : "Undisclosed"}
+                </span>
+                <span className="rounded-full border border-white/15 bg-black/30 px-2.5 py-1 text-zinc-300">
+                  Hiring: {founder.isHiring ? "Yes" : "No"}
+                </span>
+              </div>
+              {founder.allRounds && founder.allRounds.length > 0 ? (
+                <ul className="mt-4 grid gap-2 text-xs text-zinc-300 sm:grid-cols-2">
+                  {founder.allRounds.slice(0, 6).map((round, index) => (
+                    <li
+                      key={`${round.round}-${round.amount}-${index}`}
+                      className="rounded-md border border-white/10 bg-black/30 px-2.5 py-1.5"
+                    >
+                      {round.round} • {round.amount}
+                      {round.announcedOn ? ` • ${round.announcedOn}` : ""}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+              {founder.isHiring && founder.hiringRoles && founder.hiringRoles.length > 0 ? (
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {founder.hiringRoles.map((role) => (
+                    <span
+                      key={role}
+                      className="rounded-full border border-emerald-400/35 bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-200"
+                    >
+                      {role}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
             </div>
           ) : null}
 
