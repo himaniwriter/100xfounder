@@ -25,8 +25,22 @@ function resolveDatabaseUrl(rawUrl: string | undefined): string | undefined {
     if (!url.searchParams.has("pgbouncer")) {
       url.searchParams.set("pgbouncer", "true");
     }
-    if (!url.searchParams.has("connection_limit")) {
-      url.searchParams.set("connection_limit", "1");
+    const forcedConnectionLimit = process.env.PRISMA_CONNECTION_LIMIT?.trim();
+    if (forcedConnectionLimit) {
+      url.searchParams.set("connection_limit", forcedConnectionLimit);
+    } else {
+      const existingLimitRaw = url.searchParams.get("connection_limit");
+      const existingLimit = existingLimitRaw
+        ? Number.parseInt(existingLimitRaw, 10)
+        : Number.NaN;
+      if (!Number.isFinite(existingLimit) || existingLimit < 3) {
+        url.searchParams.set("connection_limit", "3");
+      }
+    }
+
+    const poolTimeout = process.env.PRISMA_POOL_TIMEOUT_SECONDS?.trim();
+    if (poolTimeout && !url.searchParams.has("pool_timeout")) {
+      url.searchParams.set("pool_timeout", poolTimeout);
     }
 
     return url.toString();

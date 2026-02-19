@@ -13,14 +13,17 @@ function safeCompare(secretA: string, secretB: string): boolean {
 }
 
 export async function getConfiguredN8nSecret(): Promise<string> {
+  const envSecret =
+    process.env.N8N_SYNC_SECRET?.trim() ||
+    process.env.N8N_SECRET_KEY?.trim() ||
+    process.env.N8N_BLOG_SECRET?.trim() ||
+    "";
+  if (envSecret) {
+    return envSecret;
+  }
+
   const settings = await readGlobalSiteSettings();
-  return (
-    settings.n8nSecretKey.trim() ||
-    process.env.N8N_SYNC_SECRET ||
-    process.env.N8N_SECRET_KEY ||
-    process.env.N8N_BLOG_SECRET ||
-    ""
-  );
+  return settings.n8nSecretKey.trim();
 }
 
 export async function isAuthorizedN8nWebhook(headers: Headers): Promise<boolean> {

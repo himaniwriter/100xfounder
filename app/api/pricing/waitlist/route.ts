@@ -73,7 +73,7 @@ export async function POST(request: Request) {
       },
     });
 
-    await recordSiteEvent({
+    void recordSiteEvent({
       event_name: "pricing_waitlist_submit",
       path: "/pricing",
       payload: {
@@ -84,16 +84,22 @@ export async function POST(request: Request) {
       },
     });
 
-    const siteSettings = await readGlobalSiteSettings();
-    const webhookUrl =
-      process.env.N8N_PRICING_WAITLIST_WEBHOOK_URL ||
-      siteSettings.n8nPrimaryWebhookUrl ||
-      siteSettings.n8nBaseWebhookUrl ||
-      "";
+    void (async () => {
+      let webhookUrl = process.env.N8N_PRICING_WAITLIST_WEBHOOK_URL || "";
+      if (!webhookUrl) {
+        const siteSettings = await readGlobalSiteSettings();
+        webhookUrl =
+          siteSettings.n8nPrimaryWebhookUrl ||
+          siteSettings.n8nBaseWebhookUrl ||
+          "";
+      }
 
-    if (webhookUrl) {
+      if (!webhookUrl) {
+        return;
+      }
+
       const secret = await getConfiguredN8nSecret();
-      postToN8N(
+      await postToN8N(
         webhookUrl,
         {
           request_id: row.id,
@@ -106,10 +112,10 @@ export async function POST(request: Request) {
           utm_campaign: parsed.data.utm_campaign ?? null,
         },
         { secret: secret || undefined },
-      ).catch((error) => {
+      );
+    })().catch((error) => {
         console.error("Pricing waitlist n8n dispatch failed:", error);
-      });
-    }
+    });
 
     return NextResponse.json(
       {

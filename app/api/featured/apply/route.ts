@@ -65,7 +65,7 @@ export async function POST(request: Request) {
       },
     });
 
-    await recordSiteEvent({
+    void recordSiteEvent({
       event_name: "featured_form_submit",
       path: "/get-featured",
       payload: {
@@ -82,21 +82,23 @@ export async function POST(request: Request) {
       process.env.N8N_FEATURED_WEBHOOK_URL ||
       "";
     if (webhookUrl) {
-      const secret = await getConfiguredN8nSecret();
-      postToN8N(
-        webhookUrl,
-        {
-          ...parsed.data,
-          request_id: created.id,
-          source: "site_form",
-          price_inr: planDetails.priceInr,
-          price_usd: planDetails.priceUsd,
-          utm_source: parsed.data.utm_source ?? null,
-          utm_medium: parsed.data.utm_medium ?? null,
-          utm_campaign: parsed.data.utm_campaign ?? null,
-        },
-        { secret: secret || undefined },
-      ).catch((error) => {
+      void (async () => {
+        const secret = await getConfiguredN8nSecret();
+        await postToN8N(
+          webhookUrl,
+          {
+            ...parsed.data,
+            request_id: created.id,
+            source: "site_form",
+            price_inr: planDetails.priceInr,
+            price_usd: planDetails.priceUsd,
+            utm_source: parsed.data.utm_source ?? null,
+            utm_medium: parsed.data.utm_medium ?? null,
+            utm_campaign: parsed.data.utm_campaign ?? null,
+          },
+          { secret: secret || undefined },
+        );
+      })().catch((error) => {
         console.error("Featured apply n8n dispatch failed:", error);
       });
     }
