@@ -11,7 +11,6 @@ import {
   getConfiguredN8nSecret,
   isAuthorizedN8nWebhook,
 } from "@/lib/security/webhooks";
-import { ensureFeaturedFounderSchema } from "@/lib/db-bootstrap";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -56,8 +55,6 @@ export async function POST(request: Request) {
   const planDetails = FEATURED_PLAN_BY_KEY[data.plan];
 
   try {
-    await ensureFeaturedFounderSchema();
-
     const payload = {
       founderName: data.founder_name,
       workEmail: data.work_email,

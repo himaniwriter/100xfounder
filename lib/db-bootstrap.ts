@@ -162,29 +162,58 @@ CREATE INDEX IF NOT EXISTS posts_status_created_at_idx
 `,
 ];
 
-async function runStatements(statements: string[]) {
-  for (const statement of statements) {
-    await prisma.$executeRawUnsafe(statement);
+const LOCK_KEYS = {
+  featured: "db_bootstrap_featured_v1",
+  growth: "db_bootstrap_growth_v1",
+  blog: "db_bootstrap_blog_v1",
+} as const;
+
+async function runStatements(lockKey: string, statements: string[]) {
+  await prisma.$transaction(async (tx) => {
+    await tx.$executeRawUnsafe(
+      `SELECT pg_advisory_xact_lock(hashtext('${lockKey}'));`,
+    );
+
+    for (const statement of statements) {
+      await tx.$executeRawUnsafe(statement);
+    }
+  });
+}
+
+function cacheBootstrapPromise(
+  key:
+    | "ensureFeaturedFounderSchemaPromise"
+    | "ensureGrowthWaveSchemaPromise"
+    | "ensureBlogPostsSchemaPromise",
+  loader: () => Promise<void>,
+) {
+  if (!globalThis[key]) {
+    globalThis[key] = loader().catch((error) => {
+      globalThis[key] = undefined;
+      throw error;
+    });
   }
+
+  return globalThis[key]!;
 }
 
 export function ensureFeaturedFounderSchema() {
-  if (!globalThis.ensureFeaturedFounderSchemaPromise) {
-    globalThis.ensureFeaturedFounderSchemaPromise = runStatements(FEATURED_SCHEMA_STATEMENTS);
-  }
-  return globalThis.ensureFeaturedFounderSchemaPromise;
+  return cacheBootstrapPromise(
+    "ensureFeaturedFounderSchemaPromise",
+    () => runStatements(LOCK_KEYS.featured, FEATURED_SCHEMA_STATEMENTS),
+  );
 }
 
 export function ensureGrowthWaveSchema() {
-  if (!globalThis.ensureGrowthWaveSchemaPromise) {
-    globalThis.ensureGrowthWaveSchemaPromise = runStatements(GROWTH_WAVE_STATEMENTS);
-  }
-  return globalThis.ensureGrowthWaveSchemaPromise;
+  return cacheBootstrapPromise(
+    "ensureGrowthWaveSchemaPromise",
+    () => runStatements(LOCK_KEYS.growth, GROWTH_WAVE_STATEMENTS),
+  );
 }
 
 export function ensureBlogPostsSchema() {
-  if (!globalThis.ensureBlogPostsSchemaPromise) {
-    globalThis.ensureBlogPostsSchemaPromise = runStatements(BLOG_POSTS_STATEMENTS);
-  }
-  return globalThis.ensureBlogPostsSchemaPromise;
+  return cacheBootstrapPromise(
+    "ensureBlogPostsSchemaPromise",
+    () => runStatements(LOCK_KEYS.blog, BLOG_POSTS_STATEMENTS),
+  );
 }
