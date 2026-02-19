@@ -4,9 +4,6 @@ import { postToN8N } from "@/lib/n8n";
 import { getConfiguredN8nSecret } from "@/lib/security/webhooks";
 import { recordSiteEvent } from "@/lib/analytics/site-events";
 import {
-  ensureGrowthWaveSchema,
-} from "@/lib/db-bootstrap";
-import {
   FEATURED_PLAN_BY_KEY,
   featuredPlanToDbValue,
   featuredStatusFromDbValue,
@@ -16,16 +13,6 @@ import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-
-function serializeError(error: unknown) {
-  if (error instanceof Error) {
-    return {
-      name: error.name,
-      message: error.message,
-    };
-  }
-  return { message: String(error) };
-}
 
 export async function POST(request: Request) {
   if (!isDatabaseConfigured()) {
@@ -54,8 +41,6 @@ export async function POST(request: Request) {
   const planDetails = FEATURED_PLAN_BY_KEY[parsed.data.plan];
 
   try {
-    await ensureGrowthWaveSchema();
-
     const created = await prisma.featuredFounderRequest.create({
       data: {
         founderName: parsed.data.founder_name,
@@ -126,17 +111,10 @@ export async function POST(request: Request) {
       { status: 201 },
     );
   } catch (error) {
-    const debugKey = request.headers.get("x-debug-key")?.trim();
-    const allowDebug =
-      Boolean(debugKey) &&
-      Boolean(process.env.AUTH_SECRET) &&
-      debugKey === process.env.AUTH_SECRET;
-
     return NextResponse.json(
       {
         success: false,
         error: toPublicDatabaseError(error, "Failed to submit application."),
-        ...(allowDebug ? { debug: serializeError(error) } : {}),
       },
       { status: 500 },
     );

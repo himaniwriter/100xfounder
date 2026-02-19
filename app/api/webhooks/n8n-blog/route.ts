@@ -148,11 +148,11 @@ export async function POST(request: Request) {
 
   const content = parsed.data.content.trim();
   const wordCount = countWords(content);
-  if (wordCount < 800 || wordCount > 1400) {
+  if (wordCount < 400) {
     return NextResponse.json(
       {
         success: false,
-        error: "Content must be between 800 and 1400 words.",
+        error: "need atleast 400 words",
         wordCount,
       },
       { status: 400 },

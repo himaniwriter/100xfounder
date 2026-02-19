@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
 import { prisma } from "@/lib/prisma";
-import { ensureGrowthWaveSchema } from "@/lib/db-bootstrap";
 
 const eventSchema = z.object({
   event_name: z.enum([
@@ -50,8 +49,6 @@ export async function POST(request: Request) {
   }
 
   try {
-    await ensureGrowthWaveSchema();
-
     await prisma.siteEvent.create({
       data: {
         eventName: parsed.data.event_name,
