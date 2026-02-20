@@ -103,6 +103,7 @@ export async function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
+                prefetch={false}
                 className="text-sm text-zinc-400 transition-colors hover:text-white"
               >
                 {link.label}
@@ -134,6 +135,7 @@ export async function Navbar() {
                           <Link
                             key={link.label}
                             href={link.href}
+                            prefetch={false}
                             className="block rounded-lg border border-transparent p-2 transition-colors hover:border-white/15 hover:bg-white/[0.04]"
                           >
                             <p className="text-sm font-medium text-white">{link.label}</p>
@@ -180,6 +182,7 @@ export async function Navbar() {
             <Link
               key={`mobile-${link.label}`}
               href={link.href}
+              prefetch={false}
               className="shrink-0 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
             >
               {link.label}

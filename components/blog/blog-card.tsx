@@ -8,6 +8,7 @@ type BlogCardProps = {
   post: BlogPost;
   className?: string;
   variant?: "hero" | "stack" | "feed";
+  priority?: boolean;
 };
 
 function formatDate(value: string): string {
@@ -38,11 +39,12 @@ function MetaRow({ post, compact = false }: { post: BlogPost; compact?: boolean 
   );
 }
 
-export function BlogCard({ post, className, variant = "feed" }: BlogCardProps) {
+export function BlogCard({ post, className, variant = "feed", priority = false }: BlogCardProps) {
   if (variant === "hero") {
     return (
       <Link
         href={`/blog/${post.slug}`}
+        prefetch={false}
         className={cn(
           "group grid overflow-hidden rounded-2xl border border-white/15 bg-white/[0.03] transition-all duration-300 hover:border-white/25 hover:bg-white/[0.05]",
           "lg:grid-cols-[1.05fr_minmax(0,1fr)]",
@@ -55,6 +57,7 @@ export function BlogCard({ post, className, variant = "feed" }: BlogCardProps) {
           uniqueId={post.slug}
           className="h-64 w-full lg:h-full"
           imageClassName="transition-transform duration-500 group-hover:scale-105"
+          priority={priority}
         />
         <div className="flex flex-col p-5 lg:p-6">
           <p className="text-[11px] uppercase tracking-[0.24em] text-zinc-500">Lead Story</p>
@@ -78,6 +81,7 @@ export function BlogCard({ post, className, variant = "feed" }: BlogCardProps) {
     return (
       <Link
         href={`/blog/${post.slug}`}
+        prefetch={false}
         className={cn(
           "group grid grid-cols-[120px_minmax(0,1fr)] gap-3 overflow-hidden rounded-xl border border-white/10 bg-white/[0.02] p-2.5 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.04]",
           className,
@@ -101,6 +105,7 @@ export function BlogCard({ post, className, variant = "feed" }: BlogCardProps) {
   return (
     <Link
       href={`/blog/${post.slug}`}
+      prefetch={false}
       className={cn(
         "group grid gap-4 rounded-xl border border-white/10 bg-black/30 p-3 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.03] sm:grid-cols-[220px_minmax(0,1fr)]",
         className,

@@ -1,7 +1,4 @@
-"use client";
-
-import { useEffect, useMemo, useState } from "react";
-import { buildLinkedInAvatarSources } from "@/lib/founders/linkedin";
+import { buildPrimaryLinkedInAvatar } from "@/lib/founders/linkedin";
 import { cn } from "@/lib/utils";
 
 type FounderAvatarProps = {
@@ -11,14 +8,6 @@ type FounderAvatarProps = {
   className?: string;
   imageClassName?: string;
 };
-
-function buildSeededAvatarSources(name: string): string[] {
-  const seed = encodeURIComponent(name.trim().toLowerCase() || "founder");
-  return [
-    `https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=${seed}`,
-    `https://api.dicebear.com/9.x/micah/svg?seed=${seed}`,
-  ];
-}
 
 function hashValue(value: string): number {
   let hash = 0;
@@ -49,33 +38,12 @@ export function FounderAvatar({
   className,
   imageClassName,
 }: FounderAvatarProps) {
-  const sources = useMemo(() => {
-    const values: string[] = [];
-    if (imageUrl && imageUrl.trim()) {
-      values.push(imageUrl.trim());
-    }
-
-    values.push(
-      ...buildLinkedInAvatarSources({
-        linkedinUrl,
-        founderName: name,
-      }),
-    );
-
-    values.push(...buildSeededAvatarSources(name));
-
-    return Array.from(new Set(values));
-  }, [imageUrl, linkedinUrl, name]);
-
-  const [attemptIndex, setAttemptIndex] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setAttemptIndex(0);
-    setIsLoaded(false);
-  }, [name, imageUrl, linkedinUrl]);
-
-  const activeSource = sources[attemptIndex];
+  const activeSource =
+    (imageUrl && imageUrl.trim()) ||
+    buildPrimaryLinkedInAvatar({
+      linkedinUrl,
+      founderName: name,
+    });
 
   return (
     <div
@@ -88,24 +56,17 @@ export function FounderAvatar({
           src={activeSource}
           alt={name}
           loading="lazy"
+          decoding="async"
+          referrerPolicy="no-referrer"
           className={cn(
-            "absolute inset-0 h-full w-full object-cover transition-opacity duration-200",
-            isLoaded ? "opacity-100" : "opacity-0",
+            "absolute inset-0 h-full w-full object-cover",
             imageClassName,
           )}
-          onLoad={() => setIsLoaded(true)}
-          onError={() => {
-            setIsLoaded(false);
-            setAttemptIndex((current) => {
-              const next = current + 1;
-              return next < sources.length ? next : sources.length;
-            });
-          }}
         />
       ) : null}
       <svg
         viewBox="0 0 48 48"
-        className={cn("h-6 w-6 text-white/75 transition-opacity", isLoaded ? "opacity-0" : "opacity-100")}
+        className={cn("h-6 w-6 text-white/75", activeSource ? "opacity-20" : "opacity-100")}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"

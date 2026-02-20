@@ -529,7 +529,7 @@ export default async function HomePage() {
           </div>
 
           <div className="grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
-            {leadHomeArticle ? <BlogCard post={leadHomeArticle} variant="hero" /> : null}
+            {leadHomeArticle ? <BlogCard post={leadHomeArticle} variant="hero" priority /> : null}
 
             <div className="space-y-3">
               {sideHomeArticles.map((post) => (

@@ -65,8 +65,8 @@ export async function POST(request: Request) {
       },
     });
 
-    void recordSiteEvent({
-      event_name: "featured_form_submit",
+    const analyticsPayload = {
+      event_name: "featured_form_submit" as const,
       path: "/get-featured",
       payload: {
         plan: parsed.data.plan,
@@ -75,33 +75,41 @@ export async function POST(request: Request) {
         utm_medium: parsed.data.utm_medium ?? null,
         utm_campaign: parsed.data.utm_campaign ?? null,
       },
-    });
+    };
 
     const webhookUrl =
       process.env.N8N_FEATURED_APPLY_WEBHOOK_URL ||
       process.env.N8N_FEATURED_WEBHOOK_URL ||
       "";
-    if (webhookUrl) {
+    const webhookPayload = {
+      ...parsed.data,
+      request_id: created.id,
+      source: "site_form",
+      price_inr: planDetails.priceInr,
+      price_usd: planDetails.priceUsd,
+      utm_source: parsed.data.utm_source ?? null,
+      utm_medium: parsed.data.utm_medium ?? null,
+      utm_campaign: parsed.data.utm_campaign ?? null,
+    };
+
+    // Detach non-critical side effects so API latency depends only on DB write.
+    setTimeout(() => {
+      void recordSiteEvent(analyticsPayload);
+
+      if (!webhookUrl) {
+        return;
+      }
+
       void (async () => {
         const secret = await getConfiguredN8nSecret();
-        await postToN8N(
-          webhookUrl,
-          {
-            ...parsed.data,
-            request_id: created.id,
-            source: "site_form",
-            price_inr: planDetails.priceInr,
-            price_usd: planDetails.priceUsd,
-            utm_source: parsed.data.utm_source ?? null,
-            utm_medium: parsed.data.utm_medium ?? null,
-            utm_campaign: parsed.data.utm_campaign ?? null,
-          },
-          { secret: secret || undefined },
-        );
+        await postToN8N(webhookUrl, webhookPayload, {
+          secret: secret || undefined,
+          timeoutMs: 8000,
+        });
       })().catch((error) => {
         console.error("Featured apply n8n dispatch failed:", error);
       });
-    }
+    }, 0);
 
     return NextResponse.json(
       {

@@ -1,5 +1,6 @@
 type PostToN8NOptions = {
   secret?: string;
+  timeoutMs?: number;
 };
 
 export async function postToN8N(
@@ -19,10 +20,12 @@ export async function postToN8N(
     headers["x-secret-key"] = options.secret;
   }
 
+  const timeoutMs = Math.max(1000, options.timeoutMs ?? 8000);
   const response = await fetch(webhookUrl, {
     method: "POST",
     headers,
     body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(timeoutMs),
   });
 
   if (!response.ok) {

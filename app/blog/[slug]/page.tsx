@@ -237,6 +237,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             imageUrl={post.thumbnail}
             uniqueId={post.slug}
             className="h-[330px] w-full rounded-2xl border border-white/10"
+            priority
           />
           {post.imageCredit ? (
             <p className="text-xs italic text-zinc-500">{post.imageCredit}</p>

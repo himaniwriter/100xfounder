@@ -70,6 +70,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
             <div className="flex flex-wrap items-center gap-2">
               <Link
                 href={profileUrl}
+                prefetch={false}
                 className="truncate text-[1.1rem] font-semibold text-white transition-colors hover:text-indigo-200"
               >
                 {founder.founderName}
@@ -130,6 +131,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
         >
           <Link
             href={profileUrl}
+            prefetch={false}
             className="glass-cta-btn w-full justify-center sm:w-auto"
           >
             View Contact

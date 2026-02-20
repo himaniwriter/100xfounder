@@ -2,6 +2,8 @@ import type { ReactNode } from "react";
 import { AdminSidebar } from "@/components/admin/admin-sidebar";
 import { AdminTopbar } from "@/components/admin/admin-topbar";
 import { requireAdminPage } from "@/lib/auth/admin-guard";
+import "react-quill/dist/quill.snow.css";
+import "./admin.css";
 
 export default async function AdminLayout({ children }: { children: ReactNode }) {
   const session = await requireAdminPage();

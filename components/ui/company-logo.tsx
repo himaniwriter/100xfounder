@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect, useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
 
 type CompanyLogoProps = {
@@ -88,35 +85,14 @@ export function CompanyLogo({
   className,
   imageClassName,
 }: CompanyLogoProps) {
-  const resolvedDomain = useMemo(
-    () => parseDomain(domain) ?? parseDomain(websiteUrl),
-    [domain, websiteUrl],
-  );
-  const sources = useMemo(() => {
-    const values: string[] = [];
-    const companySlug = slugify(companyName);
-    const curated = CURATED_LOGO_MAP[companySlug];
-    if (curated) {
-      values.push(curated);
-    }
-    if (resolvedDomain) {
-      values.push(
-        `https://logo.clearbit.com/${resolvedDomain}`,
-        `https://www.google.com/s2/favicons?domain=${resolvedDomain}&sz=128`,
-      );
-    }
-    return values;
-  }, [companyName, resolvedDomain]);
-
-  const [attemptIndex, setAttemptIndex] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setAttemptIndex(0);
-    setIsLoaded(false);
-  }, [companyName, resolvedDomain]);
-
-  const activeSource = sources[attemptIndex];
+  const resolvedDomain = parseDomain(domain) ?? parseDomain(websiteUrl);
+  const companySlug = slugify(companyName);
+  const curated = CURATED_LOGO_MAP[companySlug];
+  const activeSource =
+    curated ??
+    (resolvedDomain
+      ? `https://www.google.com/s2/favicons?domain=${resolvedDomain}&sz=128`
+      : null);
 
   return (
     <div
@@ -125,30 +101,22 @@ export function CompanyLogo({
         className,
       )}
       style={gradientFromName(companyName)}
-      aria-label={`${companyName} initials avatar`}
+      aria-label={`${companyName} logo`}
     >
       {activeSource ? (
         <img
           src={activeSource}
           alt={`${companyName} logo`}
           loading="lazy"
+          decoding="async"
           referrerPolicy="no-referrer"
           className={cn(
-            "absolute inset-0 h-full w-full object-cover transition-opacity duration-200",
-            isLoaded ? "opacity-100" : "opacity-0",
+            "absolute inset-0 h-full w-full object-cover",
             imageClassName,
           )}
-          onLoad={() => setIsLoaded(true)}
-          onError={() => {
-            setIsLoaded(false);
-            setAttemptIndex((current) => {
-              const next = current + 1;
-              return next < sources.length ? next : sources.length;
-            });
-          }}
         />
       ) : null}
-      <span className={cn("text-sm tracking-wide transition-opacity", isLoaded ? "opacity-0" : "opacity-100")}>
+      <span className={cn("text-sm tracking-wide", activeSource ? "opacity-20" : "opacity-100")}>
         {initialsFromName(companyName)}
       </span>
     </div>

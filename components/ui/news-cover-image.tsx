@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect, useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
 
 type NewsCoverImageProps = {
@@ -9,6 +6,7 @@ type NewsCoverImageProps = {
   uniqueId: string;
   className?: string;
   imageClassName?: string;
+  priority?: boolean;
 };
 
 function hashValue(value: string): number {
@@ -53,28 +51,9 @@ export function NewsCoverImage({
   uniqueId,
   className,
   imageClassName,
+  priority = false,
 }: NewsCoverImageProps) {
-  const localFallback = useMemo(() => topicFallbackImage(title), [title]);
-  const sources = useMemo(() => {
-    const values: string[] = [];
-
-    if (imageUrl && imageUrl.trim()) {
-      values.push(imageUrl.trim());
-    }
-
-    values.push(localFallback);
-
-    return values;
-  }, [imageUrl, localFallback]);
-
-  const [attemptIndex, setAttemptIndex] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false);
-  useEffect(() => {
-    setAttemptIndex(0);
-    setIsLoaded(false);
-  }, [title, imageUrl, uniqueId]);
-
-  const activeSource = sources[attemptIndex];
+  const activeSource = (imageUrl && imageUrl.trim()) || topicFallbackImage(title);
 
   return (
     <div
@@ -89,27 +68,17 @@ export function NewsCoverImage({
         <img
           src={activeSource}
           alt={title}
-          loading="lazy"
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : "auto"}
+          decoding="async"
           className={cn(
-            "absolute inset-0 h-full w-full object-cover transition-opacity duration-200",
-            isLoaded ? "opacity-100" : "opacity-0",
+            "absolute inset-0 h-full w-full object-cover",
             imageClassName,
           )}
-          onLoad={() => setIsLoaded(true)}
-          onError={() => {
-            setIsLoaded(false);
-            setAttemptIndex((current) => {
-              const next = current + 1;
-              return next < sources.length ? next : sources.length;
-            });
-          }}
         />
       ) : null}
       <div
-        className={cn(
-          "inline-flex rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs text-zinc-200 transition-opacity",
-          isLoaded ? "opacity-0" : "opacity-100",
-        )}
+        className={cn("inline-flex rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs text-zinc-200", activeSource ? "opacity-0" : "opacity-100")}
       >
         Startup Intelligence
       </div>

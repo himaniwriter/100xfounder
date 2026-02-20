@@ -78,7 +78,7 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
             </p>
           </header>
 
-          {featured ? <BlogCard post={featured} variant="hero" /> : null}
+          {featured ? <BlogCard post={featured} variant="hero" priority /> : null}
 
           <div className="mt-8">
             <div className="mb-4 flex items-center justify-between">
