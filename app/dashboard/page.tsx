@@ -4,7 +4,6 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { ClaimPanel } from "@/components/dashboard/claim-panel";
 import { AdminConnectorsPanel } from "@/components/dashboard/admin-connectors-panel";
-import { LogoutButton } from "@/components/dashboard/logout-button";
 import { getSessionFromCookies } from "@/lib/auth/session";
 import { getFounderDirectory } from "@/lib/founders/store";
 import { prisma } from "@/lib/prisma";
@@ -99,7 +98,6 @@ export default async function DashboardPage() {
             >
               Browse Directory
             </Link>
-            <LogoutButton />
           </div>
         </div>
 
