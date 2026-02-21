@@ -17,6 +17,34 @@ type GetFeaturedClientProps = {
 };
 
 export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
+  const ceoBenefits = [
+    {
+      title: "Earn trust faster",
+      description:
+        "Show verified founder and company context so investors, customers, and media can validate your story quickly.",
+    },
+    {
+      title: "Improve search presence",
+      description:
+        "Get an indexable profile built around high-intent founder and company queries to capture discovery traffic.",
+    },
+    {
+      title: "Centralize your narrative",
+      description:
+        "Keep funding, last round, and hiring details in one page so prospects do not need to cross-check multiple sites.",
+    },
+    {
+      title: "Convert attention into inbound",
+      description:
+        "Make it easy for qualified people to understand your company and contact you with the right context.",
+    },
+  ];
+  const reviewProcess = [
+    "Apply and pick a one-time plan",
+    "Editorial review checks credibility and data quality",
+    "Approved profiles receive payment instructions",
+    "Your founder profile is published after final QA",
+  ];
   const searchParams = useSearchParams();
   const [form, setForm] = useState({
     founder_name: "",
@@ -97,12 +125,23 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
       <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-md sm:p-8">
         <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">Founder Visibility</p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Get Featured on 100Xfounder
+          Get Your Founder Story Seen by Investors, Buyers, and Talent
         </h1>
         <p className="mt-3 max-w-3xl text-sm text-zinc-300 sm:text-base">
-          Showcase your founder profile in front of operators, investors, and ecosystem partners.
-          Choose a one-time plan, submit your details, and our team will review before publish.
+          Build a trusted, indexable founder profile with your funding and hiring signals in one place.
+          Choose a one-time plan, submit your details, and our team reviews every application before publish.
         </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <span className="rounded-full border border-white/15 bg-black/25 px-2.5 py-1 text-xs text-zinc-300">
+            Human-reviewed profiles
+          </span>
+          <span className="rounded-full border border-white/15 bg-black/25 px-2.5 py-1 text-xs text-zinc-300">
+            Search and AI discoverable pages
+          </span>
+          <span className="rounded-full border border-white/15 bg-black/25 px-2.5 py-1 text-xs text-zinc-300">
+            Manual approval before publish
+          </span>
+        </div>
         <div className="mt-6">
           <a
             href="#apply"
@@ -122,6 +161,20 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
             Start Application
           </a>
         </div>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        {ceoBenefits.map((benefit) => (
+          <div
+            key={benefit.title}
+            className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-md"
+          >
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-200">
+              {benefit.title}
+            </h2>
+            <p className="mt-2 text-sm text-zinc-300">{benefit.description}</p>
+          </div>
+        ))}
       </section>
 
       <section className="grid gap-4 md:grid-cols-3">
@@ -160,7 +213,7 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
         <div>
           <h2 className="text-lg font-semibold text-white">Apply with n8n Form</h2>
           <p className="mt-2 text-sm text-zinc-400">
-            If your embedded n8n form is configured, applicants can submit directly below.
+            Use the embedded form for your standard founder intake flow.
           </p>
 
           {n8nFormUrl ? (
@@ -179,7 +232,7 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
         <div>
           <h2 className="text-lg font-semibold text-white">Fallback Application Form</h2>
           <p className="mt-2 text-sm text-zinc-400">
-            This form submits to our secure API and can also forward to n8n automation.
+            This form submits to our secure API and can forward to n8n for operations automation.
           </p>
 
           <form onSubmit={onSubmit} className="mt-4 grid gap-3 md:grid-cols-2">
@@ -299,6 +352,23 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
           {error ? <p className="mt-3 text-xs text-red-300">{error}</p> : null}
           {success ? <p className="mt-3 text-xs text-emerald-300">{success}</p> : null}
         </div>
+      </section>
+
+      <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-md">
+        <h2 className="text-lg font-semibold text-white">What happens after you apply</h2>
+        <ol className="mt-4 grid gap-3 md:grid-cols-2">
+          {reviewProcess.map((step, index) => (
+            <li
+              key={step}
+              className="rounded-md border border-white/10 bg-black/30 p-3 text-sm text-zinc-300"
+            >
+              <span className="mr-2 inline-flex h-5 w-5 items-center justify-center rounded-full border border-white/15 bg-white/5 text-xs text-zinc-200">
+                {index + 1}
+              </span>
+              {step}
+            </li>
+          ))}
+        </ol>
       </section>
 
       <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-md">

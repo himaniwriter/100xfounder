@@ -22,13 +22,13 @@ export const FEATURED_PLANS: FeaturedPlanDetails[] = [
     label: "Starter",
     priceInr: 9900,
     priceUsd: 149,
-    description: "For early-stage founders who want a verified listing.",
+    description: "For founders who want a trusted profile live quickly.",
     deliverables: [
-      "Founder + company listing in directory",
-      "Basic verification badge",
+      "Founder + company profile in directory",
+      "Basic verification badge after review",
+      "Funding, last round, and hiring fields added",
       "Review SLA: up to 7 days",
-      "Inclusion in one distribution mention",
-      "No revision cycle included",
+      "One correction request within 7 days",
     ],
   },
   {
@@ -36,12 +36,12 @@ export const FEATURED_PLANS: FeaturedPlanDetails[] = [
     label: "Growth",
     priceInr: 24900,
     priceUsd: 349,
-    description: "For growth-stage teams that need stronger profile visibility.",
+    description: "For growth-stage teams that need stronger visibility and speed.",
     deliverables: [
       "Everything in Starter",
       "Priority review SLA: up to 3 days",
-      "Higher listing visibility placement",
-      "Extended visibility window",
+      "Higher placement on relevant hub pages",
+      "One distribution mention (newsroom/social)",
       "One listing content update cycle",
     ],
   },
@@ -50,13 +50,13 @@ export const FEATURED_PLANS: FeaturedPlanDetails[] = [
     label: "Priority",
     priceInr: 49900,
     priceUsd: 699,
-    description: "For founders who want fastest turnaround and spotlight visibility.",
+    description: "For companies that want fastest turnaround and spotlight reach.",
     deliverables: [
       "Everything in Growth",
       "Fast-track review SLA: up to 24 hours",
-      "Spotlight placement window",
-      "Priority distribution mentions",
-      "Two listing content update cycles",
+      "Homepage or topic spotlight window (up to 14 days)",
+      "Priority distribution mentions across channels",
+      "Two listing content update cycles + priority support",
     ],
   },
 ];
@@ -143,7 +143,7 @@ export const FEATURED_FAQS: Array<{ question: string; answer: string }> = [
   {
     question: "When is payment requested?",
     answer:
-      "After application review, approved submissions receive payment instructions through your provided work email.",
+      "After review and approval, we share payment instructions on your work email before publish starts.",
   },
   {
     question: "Can I request refunds?",

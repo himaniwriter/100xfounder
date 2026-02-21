@@ -161,7 +161,7 @@ export default async function HomePage() {
   ];
   const trustLogos = ["Sequoia", "Y Combinator", "Accel", "Andreessen Horowitz"];
   const heroTitle = homepageContent.heroTitle;
-  const highlightedPhrase = "Most Accurate";
+  const highlightedPhrase = "Discovered";
   const phraseIndex = heroTitle.toLowerCase().indexOf(highlightedPhrase.toLowerCase());
   const heroTitleBefore = phraseIndex >= 0 ? heroTitle.slice(0, phraseIndex) : heroTitle;
   const heroTitleAfter =
@@ -220,7 +220,7 @@ export default async function HomePage() {
 
               <div className="mt-4 border-t border-white/10 pt-4">
                 <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">
-                  Trusted by investors at:
+                  Followed by investors and operators at:
                 </p>
                 <div className="mt-3 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
                   {trustLogos.map((logo) => (
@@ -239,31 +239,33 @@ export default async function HomePage() {
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
           <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <h2 className="text-2xl font-semibold tracking-tight text-white">Why Trust Us</h2>
+            <h2 className="text-2xl font-semibold tracking-tight text-white">Why CEOs Choose 100Xfounder</h2>
           </div>
 
           <div className="grid gap-5 md:grid-cols-3">
             <GlassCard className="group p-6 hover:border-indigo-500/70 hover:shadow-[0_0_0_1px_rgba(99,102,241,0.6),0_0_45px_rgba(99,102,241,0.2)]">
               <ShieldCheck className="h-6 w-6 text-indigo-300" />
-              <h3 className="mt-4 text-lg font-semibold text-white">Human-Verified Data.</h3>
+              <h3 className="mt-4 text-lg font-semibold text-white">Credibility That Converts.</h3>
               <p className="mt-2 text-sm text-zinc-400">
-                Unlike automated scrapers, our data is verified by a human research
-                team every 90 days.
+                Profiles are reviewed by humans so investors, media, and partners can trust your
+                story before they reach out.
               </p>
             </GlassCard>
 
             <GlassCard className="flex flex-col justify-between p-6 hover:border-indigo-500/70 hover:shadow-[0_0_0_1px_rgba(99,102,241,0.6),0_0_45px_rgba(99,102,241,0.2)]">
               <p className="font-mono text-5xl font-semibold text-white">50M+</p>
               <p className="mt-4 text-sm text-zinc-400">
-                Data points indexed across funding, hiring, and revenue signals.
+                Structured data points across founder, funding, and hiring signals to improve
+                discoverability and profile quality.
               </p>
             </GlassCard>
 
             <GlassCard className="group p-6 hover:border-indigo-500/70 hover:shadow-[0_0_0_1px_rgba(99,102,241,0.6),0_0_45px_rgba(99,102,241,0.2)]">
               <Zap className="h-6 w-6 text-indigo-300" />
-              <h3 className="mt-4 text-lg font-semibold text-white">First-Mover Advantage.</h3>
+              <h3 className="mt-4 text-lg font-semibold text-white">Search + AI Visibility.</h3>
               <p className="mt-2 text-sm text-zinc-400">
-                Get alerts on stealth startups 3 months before they appear on the news.
+                Your profile is built to appear in high-intent searches and AI answer surfaces
+                where buyers and talent do research.
               </p>
             </GlassCard>
           </div>

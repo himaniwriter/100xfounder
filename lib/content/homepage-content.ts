@@ -16,13 +16,13 @@ const HOMEPAGE_CONTENT_PATH = path.join(
 );
 
 const FALLBACK_CONTENT: HomepageContent = {
-  heroTitle: "The World’s Most Accurate Index of Indian & US Founders & Startups.",
+  heroTitle: "Get Discovered by Investors, Customers, and Talent on 100Xfounder.",
   heroSubtitle:
-    "Access verified contact details, funding signals, and growth metrics for 10,000+ YC founders and top Indian and US startups. Stop guessing, start connecting.",
-  primaryCtaLabel: "Search the Database",
+    "Create a verified founder profile with your funding, traction, and hiring signals in one place so the right people can trust and contact you faster.",
+  primaryCtaLabel: "Browse Founder Profiles",
   primaryCtaHref: "/founders",
-  secondaryCtaLabel: "Get Full Access",
-  secondaryCtaHref: "/pricing",
+  secondaryCtaLabel: "View Feature Plans",
+  secondaryCtaHref: "/get-featured",
 };
 
 export async function readHomepageContent(): Promise<HomepageContent> {

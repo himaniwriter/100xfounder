@@ -4,9 +4,9 @@ import { Navbar } from "@/components/layout/navbar";
 import { GetFeaturedClient } from "@/components/featured/get-featured-client";
 
 export const metadata: Metadata = {
-  title: "Get Featured Founder Profile | 100Xfounder",
+  title: "Get Featured Founder Profile | Build Trust and Inbound | 100Xfounder",
   description:
-    "Apply to feature your founder profile on 100Xfounder with one-time plans, verification, and reviewed listing visibility.",
+    "Apply to feature your founder profile on 100Xfounder with one-time plans, verification, and manual review before publish.",
 };
 
 export default function GetFeaturedPage() {
