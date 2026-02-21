@@ -5,6 +5,9 @@ import { Navbar } from "@/components/layout/navbar";
 import { FounderCard } from "@/components/founder-card";
 import { FilterSidebar } from "@/components/founders/filter-sidebar";
 import {
+  countryToSlug,
+} from "@/lib/founders/country-tier";
+import {
   getFounderDirectory,
   getFounderDirectoryLastUpdatedAt,
   getFounderFilterOptions,
@@ -190,6 +193,16 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
   const recentIdSet = new Set(spotlightRecent.map((item) => item.id));
   const ycFounders = founders.filter((item) => Boolean(item.ycProfileUrl));
   const hiringNowFounders = founders.filter(isHiringNow);
+  const discoverCountrySlug =
+    countryToSlug(
+      founders.find((item) => (item.country ?? "Unknown") !== "Unknown")?.country ?? "India",
+    ) || "india";
+  const discoverNowLinks = [
+    { label: "Newsroom", href: "/blog" },
+    { label: "Topics", href: "/topics" },
+    { label: "Funding News", href: "/funding-rounds" },
+    { label: "Country News", href: `/countries/${discoverCountrySlug}/news` },
+  ];
 
   const tabHref = (tab: DirectoryTab) => {
     const params = new URLSearchParams();
@@ -265,6 +278,17 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
               >
                 Get Featured
               </Link>
+              <div className="mt-3 flex flex-wrap gap-1.5 sm:justify-end">
+                {discoverNowLinks.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="rounded-full border border-white/15 bg-white/[0.03] px-2.5 py-1 text-[11px] text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 

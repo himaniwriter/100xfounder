@@ -11,9 +11,30 @@ export const dynamic = "force-dynamic";
 
 const webhookPayloadSchema = z.object({
   title: z.string().trim().min(4).max(220),
+  subtitle: z.string().trim().max(220).optional(),
   content: z.string().trim().min(1),
+  author: z.string().trim().min(2).max(120).optional(),
   feature_image: z.string().trim().url(),
   image_credit: z.string().trim().max(240).optional(),
+  article_type: z.string().trim().min(2).max(64).optional(),
+  topic_slug: z.string().trim().min(2).max(120).optional(),
+  canonical_url: z.string().trim().url().optional(),
+  source_urls: z.array(z.string().trim().url()).max(30).optional(),
+  fact_check_status: z.string().trim().min(2).max(64).optional(),
+  discover_ready: z.boolean().optional(),
+  social_image_url: z.string().trim().url().optional(),
+  published_at: z.string().datetime().optional(),
+  citations: z
+    .array(
+      z.object({
+        source_name: z.string().trim().min(2).max(160),
+        source_url: z.string().trim().url(),
+        source_title: z.string().trim().min(2).max(220),
+        quoted_claim: z.string().trim().max(1000).optional(),
+      }),
+    )
+    .max(30)
+    .optional(),
   seo_metadata: z
     .object({
       title: z.string().trim().min(4).max(220).optional(),
@@ -72,28 +93,48 @@ async function buildUniqueSlugFromTitle(title: string): Promise<string> {
 function mapSavedPost(post: {
   id: string;
   title: string;
+  subtitle: string | null;
   content: string;
   slug: string;
+  articleType: string;
+  topicSlug: string | null;
   featureImage: string;
   imageCredit: string | null;
+  author: string;
+  canonicalUrl: string | null;
+  sourceUrlsJson: unknown;
+  factCheckStatus: string;
+  discoverReady: boolean;
+  socialImageUrl: string | null;
   seoTitle: string;
   seoDescription: string;
   wordCount: number;
   status: "DRAFT" | "PUBLISHED";
+  publishedAt: Date | null;
   createdAt: Date;
   updatedAt: Date;
 }) {
   return {
     id: post.id,
     title: post.title,
+    subtitle: post.subtitle,
     content: post.content,
     slug: post.slug,
+    article_type: post.articleType,
+    topic_slug: post.topicSlug,
     feature_image: post.featureImage,
     image_credit: post.imageCredit,
+    author: post.author,
+    canonical_url: post.canonicalUrl,
+    source_urls: Array.isArray(post.sourceUrlsJson) ? post.sourceUrlsJson : [],
+    fact_check_status: post.factCheckStatus,
+    discover_ready: post.discoverReady,
+    social_image_url: post.socialImageUrl,
     seo_title: post.seoTitle,
     seo_description: post.seoDescription,
     word_count: post.wordCount,
     status: post.status === "DRAFT" ? "draft" : "published",
+    published_at: post.publishedAt?.toISOString() ?? null,
     created_at: post.createdAt.toISOString(),
     updated_at: post.updatedAt.toISOString(),
   };
@@ -167,18 +208,54 @@ export async function POST(request: Request) {
     parsed.data.seo_metadata?.description?.trim() || buildExcerpt(content);
 
   try {
-    const post = await prisma.post.create({
-      data: {
-        title,
-        content,
-        slug,
-        featureImage: parsed.data.feature_image,
-        imageCredit: parsed.data.image_credit?.trim() || null,
-        seoTitle,
-        seoDescription,
-        wordCount,
-        status: "DRAFT",
-      },
+    const post = await prisma.$transaction(async (tx) => {
+      const created = await tx.post.create({
+        data: {
+          title,
+          subtitle: parsed.data.subtitle?.trim() || null,
+          content,
+          slug,
+          articleType: parsed.data.article_type?.trim() || "analysis",
+          topicSlug: parsed.data.topic_slug?.trim() || null,
+          featureImage: parsed.data.feature_image,
+          imageCredit: parsed.data.image_credit?.trim() || null,
+          author: parsed.data.author?.trim() || "100Xfounder Research",
+          canonicalUrl: parsed.data.canonical_url?.trim() || null,
+          sourceUrlsJson: parsed.data.source_urls ?? [],
+          factCheckStatus: parsed.data.fact_check_status?.trim() || "pending_review",
+          discoverReady: parsed.data.discover_ready ?? false,
+          socialImageUrl: parsed.data.social_image_url?.trim() || null,
+          seoTitle,
+          seoDescription,
+          wordCount,
+          status: "DRAFT",
+          publishedAt: parsed.data.published_at ? new Date(parsed.data.published_at) : null,
+        },
+      });
+
+      if (parsed.data.citations?.length) {
+        await tx.postCitation.createMany({
+          data: parsed.data.citations.map((item) => ({
+            postId: created.id,
+            sourceName: item.source_name,
+            sourceUrl: item.source_url,
+            sourceTitle: item.source_title,
+            quotedClaim: item.quoted_claim?.trim() || null,
+          })),
+        });
+      }
+
+      await tx.postUpdate.create({
+        data: {
+          postId: created.id,
+          changeType: "webhook_draft_created",
+          note: "Draft imported from n8n webhook",
+        },
+      });
+
+      return tx.post.findUniqueOrThrow({
+        where: { id: created.id },
+      });
     });
 
     return NextResponse.json({ post: mapSavedPost(post) }, { status: 201 });

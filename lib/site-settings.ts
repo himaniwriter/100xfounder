@@ -9,6 +9,9 @@ export type GlobalSiteSettings = {
   defaultMetaTitle: string;
   defaultOgImageUrl: string;
   twitterHandle: string;
+  editorialReviewSlaHours: string;
+  correctionsResponseSlaHours: string;
+  publishCadencePerDay: string;
   n8nPrimaryWebhookUrl: string;
   n8nBaseWebhookUrl: string;
   n8nNewsScraperWebhookUrl: string;
@@ -32,6 +35,9 @@ export const DEFAULT_GLOBAL_SITE_SETTINGS: GlobalSiteSettings = {
   defaultMetaTitle: "100Xfounder | Indian Founder Intelligence",
   defaultOgImageUrl: "",
   twitterHandle: "@100xfounder",
+  editorialReviewSlaHours: "24",
+  correctionsResponseSlaHours: "48",
+  publishCadencePerDay: "8",
   n8nPrimaryWebhookUrl: "",
   n8nBaseWebhookUrl: "",
   n8nNewsScraperWebhookUrl: "",

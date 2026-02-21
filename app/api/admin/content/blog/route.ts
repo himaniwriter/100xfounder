@@ -10,6 +10,7 @@ import { slugify } from "@/lib/blog/post-utils";
 
 const createBlogSchema = z.object({
   title: z.string().min(4),
+  subtitle: z.string().max(220).optional(),
   slug: z.string().min(2).optional(),
   excerpt: z.string().min(10).optional(),
   category: z.string().min(2).optional(),
@@ -17,8 +18,29 @@ const createBlogSchema = z.object({
   thumbnail: z.string().min(1).optional(),
   imageCredit: z.string().max(240).optional(),
   author: z.string().min(2).optional(),
+  authorId: z.string().uuid().optional(),
   content: z.string().min(20),
   status: z.enum(["DRAFT", "PUBLISHED"]).default("DRAFT"),
+  articleType: z.string().min(2).max(64).optional(),
+  topicSlug: z.string().min(2).max(120).optional(),
+  canonicalUrl: z.string().url().optional(),
+  sourceUrls: z.array(z.string().url()).max(30).optional(),
+  factCheckStatus: z.string().min(2).max(64).optional(),
+  correctionNote: z.string().max(2000).optional(),
+  discoverReady: z.boolean().optional(),
+  socialImageUrl: z.string().url().optional(),
+  publishedAt: z.string().datetime().optional(),
+  citations: z
+    .array(
+      z.object({
+        sourceName: z.string().min(2).max(160),
+        sourceUrl: z.string().url(),
+        sourceTitle: z.string().min(2).max(220),
+        quotedClaim: z.string().max(1000).optional(),
+      }),
+    )
+    .max(30)
+    .optional(),
   seoTitle: z.string().min(4).optional(),
   seoDescription: z.string().min(10).optional(),
   isFeatured: z.boolean().optional(),

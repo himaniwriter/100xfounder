@@ -14,7 +14,7 @@ type BlogHomePageProps = {
 };
 
 export const metadata: Metadata = {
-  title: "Startup News & Funding Desk | 100Xfounder Blog",
+  title: "Startup News & Funding Desk | 100Xfounder Newsroom",
   description:
     "Daily startup intelligence from India and the US: rewritten funding updates, market signals, and founder moves with source attribution.",
 };

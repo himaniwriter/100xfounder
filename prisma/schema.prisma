@@ -239,19 +239,82 @@ model AggregatorConnection {
 model Post {
   id             String     @id @default(uuid()) @db.Uuid
   title          String
+  subtitle       String?
   content        String
   slug           String     @unique
+  articleType    String     @default("analysis") @map("article_type")
+  topicSlug      String?    @map("topic_slug")
   featureImage   String     @map("feature_image")
   imageCredit    String?    @map("image_credit")
+  author         String     @default("100Xfounder Research") @map("author")
+  authorId       String?    @db.Uuid @map("author_id")
+  canonicalUrl   String?    @map("canonical_url")
+  sourceUrlsJson Json?      @map("source_urls_json")
+  factCheckStatus String    @default("pending_review") @map("fact_check_status")
+  correctionNote String?    @map("correction_note")
+  discoverReady  Boolean    @default(false) @map("discover_ready")
+  socialImageUrl String?    @map("social_image_url")
   seoTitle       String     @map("seo_title")
   seoDescription String     @map("seo_description")
   wordCount      Int        @map("word_count")
   status         PostStatus @default(DRAFT)
+  publishedAt    DateTime?  @map("published_at")
   createdAt      DateTime   @default(now()) @map("created_at")
   updatedAt      DateTime   @updatedAt @map("updated_at")
+  authorProfile  Author?    @relation("AuthorPosts", fields: [authorId], references: [id], onDelete: SetNull)
+  updates        PostUpdate[]
+  citations      PostCitation[]
 
   @@index([status, createdAt(sort: Desc)])
+  @@index([publishedAt(sort: Desc), status])
+  @@index([topicSlug, publishedAt(sort: Desc)])
+  @@index([authorId])
   @@map("posts")
+}
+
+model Author {
+  id        String   @id @default(uuid()) @db.Uuid
+  name      String
+  slug      String   @unique
+  bio       String?
+  role      String?
+  avatarUrl String?  @map("avatar_url")
+  sameAsJson Json?   @map("same_as_json")
+  isActive  Boolean  @default(true) @map("is_active")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  posts     Post[]   @relation("AuthorPosts")
+
+  @@index([isActive])
+  @@map("authors")
+}
+
+model PostUpdate {
+  id         String   @id @default(uuid()) @db.Uuid
+  postId     String   @db.Uuid @map("post_id")
+  changeType String   @map("change_type")
+  note       String?
+  changedBy  String?  @map("changed_by")
+  createdAt  DateTime @default(now()) @map("created_at")
+  post       Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@index([postId, createdAt(sort: Desc)])
+  @@map("post_updates")
+}
+
+model PostCitation {
+  id          String   @id @default(uuid()) @db.Uuid
+  postId      String   @db.Uuid @map("post_id")
+  sourceName  String   @map("source_name")
+  sourceUrl   String   @map("source_url")
+  sourceTitle String   @map("source_title")
+  quotedClaim String?  @map("quoted_claim")
+  createdAt   DateTime @default(now()) @map("created_at")
+  post        Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@index([postId])
+  @@index([sourceUrl])
+  @@map("post_citations")
 }
 
 model FeaturedFounderRequest {

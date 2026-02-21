@@ -45,13 +45,17 @@ export default async function HtmlSitemapPage() {
     baseUrl,
     staticLinks,
     blogLinks,
+    topicLinks,
+    fundingRoundLinks,
     startupCategoryLinks,
     countryLinks,
+    countryNewsLinks,
     tierLinks,
     industryLinks,
     stageLinks,
     countryIndustryLinks,
     companyLinks,
+    companyNewsLinks,
     founderLinks,
   } =
     await getHtmlSitemapData();
@@ -91,10 +95,14 @@ export default async function HtmlSitemapPage() {
           <SitemapSection title="Stage Pages" links={stageLinks} />
           <SitemapSection title="Country Tier Pages" links={tierLinks} />
           <SitemapSection title="Country Pages" links={countryLinks} />
+          <SitemapSection title="Country News Hubs" links={countryNewsLinks} />
           <SitemapSection title="Country + Industry Pages" links={countryIndustryLinks} />
           <SitemapSection title="Startup Category Pages" links={startupCategoryLinks} />
-          <SitemapSection title="Blog Articles" links={blogLinks} />
+          <SitemapSection title="News Topic Hubs" links={topicLinks} />
+          <SitemapSection title="Funding Round Hubs" links={fundingRoundLinks} />
+          <SitemapSection title="News Articles" links={blogLinks} />
           <SitemapSection title="Company Profiles" links={companyLinks} />
+          <SitemapSection title="Company News Hubs" links={companyNewsLinks} />
           <SitemapSection title="Founder Profiles" links={founderLinks} />
         </div>
       </section>

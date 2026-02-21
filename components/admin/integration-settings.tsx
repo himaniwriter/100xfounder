@@ -5,6 +5,9 @@ import useSWR from "swr";
 import { Eye, EyeOff } from "lucide-react";
 
 type IntegrationSettings = {
+  editorialReviewSlaHours: string;
+  correctionsResponseSlaHours: string;
+  publishCadencePerDay: string;
   n8nPrimaryWebhookUrl: string;
   n8nBaseWebhookUrl: string;
   n8nNewsScraperWebhookUrl: string;
@@ -30,6 +33,9 @@ type IntegrationSettingsResponse = IntegrationSettings & {
 };
 
 const DEFAULT_SETTINGS: IntegrationSettings = {
+  editorialReviewSlaHours: "24",
+  correctionsResponseSlaHours: "48",
+  publishCadencePerDay: "8",
   n8nPrimaryWebhookUrl: "",
   n8nBaseWebhookUrl: "",
   n8nNewsScraperWebhookUrl: "",
@@ -113,6 +119,9 @@ export function IntegrationSettingsPanel() {
   useEffect(() => {
     if (data) {
       setForm({
+        editorialReviewSlaHours: data.editorialReviewSlaHours ?? "24",
+        correctionsResponseSlaHours: data.correctionsResponseSlaHours ?? "48",
+        publishCadencePerDay: data.publishCadencePerDay ?? "8",
         n8nPrimaryWebhookUrl: data.n8nPrimaryWebhookUrl,
         n8nBaseWebhookUrl: data.n8nBaseWebhookUrl,
         n8nNewsScraperWebhookUrl: data.n8nNewsScraperWebhookUrl,
@@ -236,6 +245,38 @@ export function IntegrationSettingsPanel() {
           <p className="text-sm text-red-300">{(error as Error).message}</p>
         ) : (
           <>
+            <section className="space-y-3">
+              <h2 className="text-sm font-medium uppercase tracking-wide text-zinc-300">
+                Editorial SLA
+              </h2>
+              <div className="grid gap-3 md:grid-cols-3">
+                <InputField
+                  label="Review SLA (hours)"
+                  value={form.editorialReviewSlaHours}
+                  placeholder="24"
+                  onChange={(value) =>
+                    setForm((current) => ({ ...current, editorialReviewSlaHours: value }))
+                  }
+                />
+                <InputField
+                  label="Corrections SLA (hours)"
+                  value={form.correctionsResponseSlaHours}
+                  placeholder="48"
+                  onChange={(value) =>
+                    setForm((current) => ({ ...current, correctionsResponseSlaHours: value }))
+                  }
+                />
+                <InputField
+                  label="Cadence target (posts/day)"
+                  value={form.publishCadencePerDay}
+                  placeholder="8"
+                  onChange={(value) =>
+                    setForm((current) => ({ ...current, publishCadencePerDay: value }))
+                  }
+                />
+              </div>
+            </section>
+
             <section className="space-y-3">
               <h2 className="text-sm font-medium uppercase tracking-wide text-zinc-300">
                 N8N Webhooks

@@ -6,7 +6,7 @@ import { LogoutButton } from "@/components/dashboard/logout-button";
 const primaryNavLinks = [
   { label: "Home", href: "/" },
   { label: "Signals", href: "/signals" },
-  { label: "Blog", href: "/blog" },
+  { label: "Newsroom", href: "/blog" },
   { label: "Pricing", href: "/pricing" },
 ];
 
@@ -18,7 +18,8 @@ const mobileNavLinks = [
   { label: "Stages", href: "/stages" },
   { label: "Startups", href: "/startups" },
   { label: "Signals", href: "/signals" },
-  { label: "Blog", href: "/blog" },
+  { label: "Newsroom", href: "/blog" },
+  { label: "Topics", href: "/topics" },
   { label: "Pricing", href: "/pricing" },
   { label: "Search", href: "/search" },
   { label: "Get Featured", href: "/get-featured" },
@@ -68,6 +69,16 @@ const megaMenuSections = [
   {
     title: "Popular Paths",
     links: [
+      {
+        label: "News Topics",
+        href: "/topics",
+        description: "Clustered newsroom hubs by high-intent startup themes.",
+      },
+      {
+        label: "Funding Round News",
+        href: "/funding-rounds",
+        description: "Follow stage-based funding coverage and momentum.",
+      },
       {
         label: "Trending Founders",
         href: "/founders?tab=trending",

@@ -5,6 +5,11 @@ const footerColumns = [
     title: "General",
     links: [
       { label: "About", href: "/about" },
+      { label: "Newsroom", href: "/blog" },
+      { label: "News Topics", href: "/topics" },
+      { label: "Funding Round News", href: "/funding-rounds" },
+      { label: "Authors", href: "/authors" },
+      { label: "Editorial Policy", href: "/editorial-policy" },
       { label: "Countries", href: "/countries" },
       { label: "Startups", href: "/startups" },
       { label: "Jobs", href: "/jobs" },
@@ -72,6 +77,11 @@ const footerColumns = [
 ];
 
 const highIntentKeywords = [
+  { label: "Startup newsroom", href: "/blog" },
+  { label: "Startup news topics", href: "/topics" },
+  { label: "Funding round news", href: "/funding-rounds" },
+  { label: "India startup news", href: "/countries/india/news" },
+  { label: "US startup news", href: "/countries/united-states/news" },
   { label: "Top startups by country", href: "/countries" },
   { label: "Tier 1 startup countries", href: "/countries/tier/tier_1" },
   { label: "Tier 2 startup countries", href: "/countries/tier/tier_2" },

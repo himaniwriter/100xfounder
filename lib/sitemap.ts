@@ -3,6 +3,7 @@ import { getAllBlogPosts } from "@/lib/blog/store";
 import { countryTierLabel, countryToSlug } from "@/lib/founders/country-tier";
 import { slugifySegment } from "@/lib/founders/hubs";
 import { getCountryCoverage, getFounderDirectory } from "@/lib/founders/store";
+import { getFundingRoundOptions, getTopicSummaries } from "@/lib/news/hubs";
 import { STARTUP_DISCOVERY_PAGES } from "@/lib/startups/discovery-pages";
 
 type ChangeFrequency = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
@@ -24,13 +25,17 @@ export type HtmlSitemapData = {
   baseUrl: string;
   staticLinks: HtmlSitemapLink[];
   blogLinks: HtmlSitemapLink[];
+  topicLinks: HtmlSitemapLink[];
+  fundingRoundLinks: HtmlSitemapLink[];
   startupCategoryLinks: HtmlSitemapLink[];
   countryLinks: HtmlSitemapLink[];
+  countryNewsLinks: HtmlSitemapLink[];
   tierLinks: HtmlSitemapLink[];
   industryLinks: HtmlSitemapLink[];
   stageLinks: HtmlSitemapLink[];
   countryIndustryLinks: HtmlSitemapLink[];
   companyLinks: HtmlSitemapLink[];
+  companyNewsLinks: HtmlSitemapLink[];
   founderLinks: HtmlSitemapLink[];
 };
 
@@ -45,9 +50,21 @@ const STATIC_ROUTES: StaticRoute[] = [
   { href: "/get-featured", label: "Get Featured", changeFrequency: "weekly", priority: 0.82 },
   { href: "/industries", label: "Industries", changeFrequency: "daily", priority: 0.86 },
   { href: "/stages", label: "Stages", changeFrequency: "daily", priority: 0.86 },
-  { href: "/blog", label: "Blog", changeFrequency: "daily", priority: 0.85 },
+  { href: "/blog", label: "Newsroom", changeFrequency: "daily", priority: 0.85 },
+  { href: "/topics", label: "News Topics", changeFrequency: "daily", priority: 0.84 },
+  { href: "/funding-rounds", label: "Funding Round News", changeFrequency: "daily", priority: 0.83 },
+  { href: "/authors", label: "Authors", changeFrequency: "weekly", priority: 0.74 },
+  { href: "/editorial-policy", label: "Editorial Policy", changeFrequency: "monthly", priority: 0.62 },
+  { href: "/corrections-policy", label: "Corrections Policy", changeFrequency: "monthly", priority: 0.6 },
+  { href: "/methodology", label: "Methodology", changeFrequency: "monthly", priority: 0.6 },
+  { href: "/about-newsroom", label: "About Newsroom", changeFrequency: "monthly", priority: 0.64 },
+  { href: "/contact-newsroom", label: "Contact Newsroom", changeFrequency: "monthly", priority: 0.64 },
   { href: "/llms.txt", label: "LLMS", changeFrequency: "weekly", priority: 0.4 },
   { href: "/ai-sitemap.xml", label: "AI Sitemap", changeFrequency: "daily", priority: 0.45 },
+  { href: "/ai-sitemap-news.xml", label: "AI News Sitemap", changeFrequency: "daily", priority: 0.45 },
+  { href: "/rss.xml", label: "RSS", changeFrequency: "hourly", priority: 0.55 },
+  { href: "/atom.xml", label: "Atom", changeFrequency: "hourly", priority: 0.55 },
+  { href: "/news-sitemap.xml", label: "News Sitemap", changeFrequency: "hourly", priority: 0.58 },
   { href: "/jobs", label: "Startup Jobs", changeFrequency: "weekly", priority: 0.7 },
   { href: "/salary-equity", label: "Salary & Equity Guide", changeFrequency: "weekly", priority: 0.68 },
   { href: "/negotiation-coaching", label: "Negotiation Coaching", changeFrequency: "weekly", priority: 0.66 },
@@ -108,9 +125,14 @@ function uniqueByHref(items: HtmlSitemapLink[]): HtmlSitemapLink[] {
 export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
   const baseUrl = getSiteBaseUrl();
   const now = new Date();
-  const founders = await getFounderDirectory();
-  const countryCoverage = await getCountryCoverage();
-  const blogPosts = await getAllBlogPosts();
+  const [founders, countryCoverage, blogPosts, topics, fundingRoundOptions] =
+    await Promise.all([
+      getFounderDirectory(),
+      getCountryCoverage(),
+      getAllBlogPosts(),
+      getTopicSummaries(250),
+      getFundingRoundOptions(80),
+    ]);
 
   const staticLinks = STATIC_ROUTES.map((route) => ({
     href: route.href,
@@ -143,6 +165,16 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .map((item) => ({
         href: `/countries/${item.countrySlug}`,
         label: `${item.country} startups`,
+        lastModified: now,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
+  const countryNewsLinks = uniqueByHref(
+    countryCoverage
+      .map((item) => ({
+        href: `/countries/${item.countrySlug}/news`,
+        label: `${item.country} startup news`,
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
@@ -220,6 +252,36 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .sort((a, b) => a.label.localeCompare(b.label)),
   );
 
+  const companyNewsLinks = uniqueByHref(
+    founders
+      .map((item) => ({
+        href: `/companies/${item.companySlug}/news`,
+        label: `${item.companyName} news`,
+        lastModified: now,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
+  const topicLinks = uniqueByHref(
+    topics
+      .map((topic) => ({
+        href: `/topics/${topic.slug}`,
+        label: `${topic.label} topic news`,
+        lastModified: new Date(topic.lastPublishedAt),
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
+  const fundingRoundLinks = uniqueByHref(
+    fundingRoundOptions
+      .map((item) => ({
+        href: `/funding-rounds/${item.slug}`,
+        label: `${item.label} funding news`,
+        lastModified: now,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  );
+
   const founderLinks = uniqueByHref(
     founders
       .map((item) => ({
@@ -234,13 +296,17 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
     baseUrl,
     staticLinks,
     blogLinks,
+    topicLinks,
+    fundingRoundLinks,
     startupCategoryLinks,
     countryLinks,
+    countryNewsLinks,
     tierLinks,
     industryLinks,
     stageLinks,
     countryIndustryLinks,
     companyLinks,
+    companyNewsLinks,
     founderLinks,
   };
 }
@@ -250,13 +316,17 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     baseUrl,
     staticLinks,
     blogLinks,
+    topicLinks,
+    fundingRoundLinks,
     startupCategoryLinks,
     countryLinks,
+    countryNewsLinks,
     tierLinks,
     industryLinks,
     stageLinks,
     countryIndustryLinks,
     companyLinks,
+    companyNewsLinks,
     founderLinks,
   } =
     await getHtmlSitemapData();
@@ -294,6 +364,13 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: 0.83,
   }));
 
+  const countryNewsEntries: MetadataRoute.Sitemap = countryNewsLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "daily",
+    priority: 0.82,
+  }));
+
   const tierEntries: MetadataRoute.Sitemap = tierLinks.map((link) => ({
     url: `${baseUrl}${link.href}`,
     lastModified: link.lastModified,
@@ -329,6 +406,13 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: 0.76,
   }));
 
+  const companyNewsEntries: MetadataRoute.Sitemap = companyNewsLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "daily",
+    priority: 0.79,
+  }));
+
   const founderEntries: MetadataRoute.Sitemap = founderLinks.map((link) => ({
     url: `${baseUrl}${link.href}`,
     lastModified: link.lastModified,
@@ -336,16 +420,34 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: 0.74,
   }));
 
+  const topicEntries: MetadataRoute.Sitemap = topicLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "daily",
+    priority: 0.82,
+  }));
+
+  const fundingRoundEntries: MetadataRoute.Sitemap = fundingRoundLinks.map((link) => ({
+    url: `${baseUrl}${link.href}`,
+    lastModified: link.lastModified,
+    changeFrequency: "daily",
+    priority: 0.81,
+  }));
+
   return [
     ...staticEntries,
     ...blogEntries,
     ...startupCategoryEntries,
     ...countryEntries,
+    ...countryNewsEntries,
     ...tierEntries,
     ...industryEntries,
     ...stageEntries,
     ...countryIndustryEntries,
+    ...topicEntries,
+    ...fundingRoundEntries,
     ...companyEntries,
+    ...companyNewsEntries,
     ...founderEntries,
   ];
 }

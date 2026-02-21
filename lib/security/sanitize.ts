@@ -19,9 +19,24 @@ const BLOG_ALLOWED_TAGS = [
   "a",
   "hr",
   "span",
+  "img",
+  "figure",
+  "figcaption",
 ];
 
-const BLOG_ALLOWED_ATTR = ["href", "target", "rel", "class", "id"];
+const BLOG_ALLOWED_ATTR = [
+  "href",
+  "src",
+  "target",
+  "rel",
+  "class",
+  "id",
+  "alt",
+  "title",
+  "loading",
+  "width",
+  "height",
+];
 
 const SAFE_TARGETS = new Set(["_self", "_blank", "_parent", "_top"]);
 const URL_ATTRS = new Set(["href", "src"]);

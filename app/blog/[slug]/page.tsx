@@ -6,6 +6,8 @@ import { Navbar } from "@/components/layout/navbar";
 import { FounderCallout } from "@/components/blog/founder-callout";
 import { NewsCoverImage } from "@/components/ui/news-cover-image";
 import { extractHeadings, getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog/store";
+import { countryToSlug } from "@/lib/founders/country-tier";
+import { getFounderDirectory } from "@/lib/founders/store";
 import { sanitizeRichHtml, serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
@@ -23,8 +25,46 @@ function headingSlug(text: string): string {
     .replace(/(^-|-$)+/g, "");
 }
 
+function authorSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)+/g, "");
+}
+
 function isHtmlContent(content: string): boolean {
   return /<\/?[a-z][\s\S]*>/i.test(content);
+}
+
+function formatMetaDate(value?: string): string {
+  if (!value) {
+    return "Latest";
+  }
+
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) {
+    return "Latest";
+  }
+
+  return new Intl.DateTimeFormat("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  }).format(parsed);
+}
+
+function formatFactCheckStatus(value: string | undefined): string {
+  if (!value) {
+    return "Pending review";
+  }
+
+  return value
+    .replace(/[_-]+/g, " ")
+    .split(" ")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
 }
 
 function renderContent(content: string) {
@@ -112,15 +152,30 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 
   return {
-    title: `${post.title} | 100Xfounder Blog`,
-    description: post.excerpt,
+    title: `${post.seoTitle ?? post.title} | 100Xfounder Newsroom`,
+    description: post.seoDescription ?? post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
+    openGraph: {
+      title: post.seoTitle ?? post.title,
+      description: post.seoDescription ?? post.excerpt,
+      type: "article",
+      images: [
+        {
+          url: post.thumbnail,
+          alt: post.title,
+        },
+      ],
+    },
   };
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const [post, allPosts] = await Promise.all([
+  const [post, allPosts, founders] = await Promise.all([
     getBlogPostBySlug(params.slug),
     getAllBlogPosts(),
+    getFounderDirectory({ perCountryLimit: 500 }),
   ]);
   if (!post) {
     notFound();
@@ -128,25 +183,98 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const headings = extractHeadings(post.content);
   const hasRahulBajaj = /rahul bajaj/i.test(post.content);
+  const topicSlug = post.topicSlug || headingSlug(post.category || "news");
+  const authorProfileSlug = authorSlug(post.author);
+  const authorHref = `/authors/${authorProfileSlug}`;
   const relatedReads = allPosts
     .filter((item) => item.slug !== post.slug && item.category === post.category)
     .slice(0, 4);
+  const matchedCompany = founders.find((item) =>
+    `${post.title} ${post.excerpt}`.toLowerCase().includes(item.companyName.toLowerCase()),
+  );
+  const relatedCoverageCandidates = [
+    {
+      href: `/topics/${topicSlug}`,
+      label: `${post.category || "News"} Topic Hub`,
+    },
+    matchedCompany
+      ? {
+          href: `/companies/${matchedCompany.companySlug}/news`,
+          label: `${matchedCompany.companyName} News Hub`,
+        }
+      : null,
+    matchedCompany
+      ? {
+          href: `/countries/${countryToSlug(matchedCompany.country ?? "India")}/news`,
+          label: `${matchedCompany.country ?? "Country"} Startup News`,
+        }
+      : null,
+    /seed|series|growth|late stage|pre-seed|strategic/i.test(
+      `${post.title} ${post.excerpt} ${post.content}`,
+    )
+      ? {
+          href: "/funding-rounds",
+          label: "Funding Round News Hubs",
+        }
+      : null,
+  ].filter((item): item is { href: string; label: string } => Boolean(item));
+  const relatedCoverage = Array.from(
+    new Map(relatedCoverageCandidates.map((item) => [item.href, item])).values(),
+  ).slice(0, 4);
+  const citationItems = Array.from(
+    new Map(
+      [
+        ...(post.citations ?? []).map((citation) => ({
+          sourceName: citation.sourceName,
+          sourceTitle: citation.sourceTitle,
+          sourceUrl: citation.sourceUrl,
+          quotedClaim: citation.quotedClaim ?? null,
+        })),
+        ...(post.sourceUrls ?? []).map((sourceUrl) => ({
+          sourceName: "Referenced Source",
+          sourceTitle: sourceUrl,
+          sourceUrl,
+          quotedClaim: null,
+        })),
+      ].map((item) => [item.sourceUrl, item]),
+    ).values(),
+  );
+  const factCheckStatus = formatFactCheckStatus(post.factCheckStatus);
+  const factChecked = ["reviewed", "verified", "approved"].includes(
+    (post.factCheckStatus || "").toLowerCase(),
+  );
   const baseUrl = getSiteBaseUrl();
   const pageUrl = `${baseUrl}/blog/${post.slug}`;
+  const publishedDate = post.publishedAt;
+  const updatedDate = post.updatedAt ?? post.publishedAt;
   const articleSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
+        "@type": "NewsArticle",
         "@id": `${pageUrl}#article`,
         headline: post.title,
+        alternativeHeadline: post.subtitle || undefined,
         description: post.excerpt,
-        image: post.thumbnail,
-        datePublished: post.publishedAt,
-        dateModified: post.publishedAt,
+        articleSection: post.category,
+        image: [post.socialImageUrl, post.thumbnail].filter(Boolean),
+        datePublished: publishedDate,
+        dateModified: updatedDate,
+        isAccessibleForFree: true,
+        citation: citationItems.map((item) => item.sourceUrl),
         author: {
           "@type": "Person",
           name: post.author,
+          url: `${baseUrl}${authorHref}`,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "100Xfounder",
+          url: baseUrl,
+          logo: {
+            "@type": "ImageObject",
+            url: `${baseUrl}/favicon.ico`,
+          },
         },
         mainEntityOfPage: pageUrl,
       },
@@ -162,7 +290,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           {
             "@type": "ListItem",
             position: 2,
-            name: "Blog",
+            name: "Newsroom",
             item: `${baseUrl}/blog`,
           },
           {
@@ -206,15 +334,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <article className="space-y-6">
           <header className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-md">
             <Link href="/blog" className="text-xs text-zinc-400 hover:text-zinc-200">
-              ← Back to blog
+              ← Back to newsroom
             </Link>
             <h1 className="mt-3 text-4xl font-semibold tracking-tight text-white">{post.title}</h1>
+            {post.subtitle ? (
+              <p className="mt-3 text-lg text-zinc-300">{post.subtitle}</p>
+            ) : null}
             <div className="mt-3 flex flex-wrap items-center gap-3 text-sm text-zinc-400">
               <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs uppercase tracking-wide text-zinc-300">
                 {post.category}
               </span>
               <span>{post.readingTime}</span>
-              <span>{post.author}</span>
+              <span>
+                By{" "}
+                <Link href={authorHref} className="text-indigo-300 hover:text-indigo-200">
+                  {post.author}
+                </Link>
+              </span>
+              <span>Published: {formatMetaDate(publishedDate)}</span>
+              <span>Updated: {formatMetaDate(updatedDate)}</span>
             </div>
             {post.sourceUrl ? (
               <p className="mt-3 text-xs text-zinc-400">
@@ -243,7 +381,93 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <p className="text-xs italic text-zinc-500">{post.imageCredit}</p>
           ) : null}
 
+          <section className="rounded-xl border border-indigo-400/20 bg-indigo-500/10 p-4">
+            <h2 className="text-base font-semibold text-white">Why this matters</h2>
+            <p className="mt-2 text-sm leading-7 text-zinc-200">{post.excerpt}</p>
+          </section>
+
+          <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+            <h2 className="text-base font-semibold text-white">Fact-check status</h2>
+            <p className="mt-2 text-sm text-zinc-300">
+              {factCheckStatus}
+              {factChecked ? " • Verified by newsroom review workflow." : " • Pending final verification."}
+            </p>
+            {post.correctionNote ? (
+              <p className="mt-2 rounded-lg border border-amber-400/25 bg-amber-500/10 p-3 text-xs text-amber-100">
+                Correction note: {post.correctionNote}
+              </p>
+            ) : null}
+          </section>
+
           <div className="space-y-5">{renderContent(post.content)}</div>
+
+          <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+            <h2 className="text-base font-semibold text-white">Sources & Citations</h2>
+            <div className="mt-3 space-y-2">
+              {citationItems.length > 0 ? (
+                citationItems.map((item) => (
+                  <div
+                    key={item.sourceUrl}
+                    className="rounded-md border border-white/10 bg-black/25 p-3"
+                  >
+                    <a
+                      href={item.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="text-sm font-medium text-indigo-300 hover:text-indigo-200"
+                    >
+                      {item.sourceName}
+                    </a>
+                    <p className="mt-1 text-xs text-zinc-400">{item.sourceTitle}</p>
+                    {item.quotedClaim ? (
+                      <p className="mt-2 text-xs text-zinc-300">Claim referenced: {item.quotedClaim}</p>
+                    ) : null}
+                  </div>
+                ))
+              ) : (
+                <p className="text-sm text-zinc-500">No citations attached yet.</p>
+              )}
+            </div>
+          </section>
+
+          {post.updates && post.updates.length > 0 ? (
+            <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+              <h2 className="text-base font-semibold text-white">Update Log</h2>
+              <div className="mt-3 space-y-2">
+                {post.updates.slice(0, 5).map((update) => (
+                  <div
+                    key={`${update.changeType}-${update.createdAt ?? "now"}`}
+                    className="rounded-md border border-white/10 bg-black/25 p-3"
+                  >
+                    <p className="text-sm font-medium text-zinc-200">{formatFactCheckStatus(update.changeType)}</p>
+                    {update.note ? <p className="mt-1 text-xs text-zinc-400">{update.note}</p> : null}
+                    {update.createdAt ? (
+                      <p className="mt-1 text-xs text-zinc-500">Updated: {formatMetaDate(update.createdAt)}</p>
+                    ) : null}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
+          <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+            <h2 className="text-base font-semibold text-white">Related Coverage</h2>
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              {relatedCoverage.length > 0 ? (
+                relatedCoverage.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="rounded-md border border-white/10 bg-black/25 p-3 text-sm text-zinc-200 transition-colors hover:border-white/25 hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                ))
+              ) : (
+                <p className="text-sm text-zinc-500">No related coverage clusters yet.</p>
+              )}
+            </div>
+          </section>
 
           <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
             <h2 className="text-base font-semibold text-white">Related Reads</h2>

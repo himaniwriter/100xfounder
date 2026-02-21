@@ -144,21 +144,150 @@ $$;
 CREATE TABLE IF NOT EXISTS public.posts (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   title text NOT NULL,
+  subtitle text,
   content text NOT NULL,
   slug text NOT NULL UNIQUE,
+  article_type text NOT NULL DEFAULT 'analysis',
+  topic_slug text,
   feature_image text NOT NULL,
   image_credit text,
+  author text NOT NULL DEFAULT '100Xfounder Research',
+  author_id uuid,
+  canonical_url text,
+  source_urls_json jsonb,
+  fact_check_status text NOT NULL DEFAULT 'pending_review',
+  correction_note text,
+  discover_ready boolean NOT NULL DEFAULT false,
+  social_image_url text,
   seo_title text NOT NULL,
   seo_description text NOT NULL,
   word_count integer NOT NULL,
   status "PostStatus" NOT NULL DEFAULT 'draft',
+  published_at timestamptz,
   created_at timestamptz NOT NULL DEFAULT now(),
   updated_at timestamptz NOT NULL DEFAULT now()
 );
 `,
   `
+ALTER TABLE IF EXISTS public.posts
+  ADD COLUMN IF NOT EXISTS author text;
+`,
+  `
+ALTER TABLE IF EXISTS public.posts
+  ADD COLUMN IF NOT EXISTS subtitle text,
+  ADD COLUMN IF NOT EXISTS article_type text,
+  ADD COLUMN IF NOT EXISTS topic_slug text,
+  ADD COLUMN IF NOT EXISTS author_id uuid,
+  ADD COLUMN IF NOT EXISTS canonical_url text,
+  ADD COLUMN IF NOT EXISTS source_urls_json jsonb,
+  ADD COLUMN IF NOT EXISTS fact_check_status text,
+  ADD COLUMN IF NOT EXISTS correction_note text,
+  ADD COLUMN IF NOT EXISTS discover_ready boolean,
+  ADD COLUMN IF NOT EXISTS social_image_url text,
+  ADD COLUMN IF NOT EXISTS published_at timestamptz;
+`,
+  `
+UPDATE public.posts
+SET author = '100Xfounder Research'
+WHERE author IS NULL;
+`,
+  `
+UPDATE public.posts
+SET article_type = 'analysis'
+WHERE article_type IS NULL;
+`,
+  `
+UPDATE public.posts
+SET fact_check_status = 'pending_review'
+WHERE fact_check_status IS NULL;
+`,
+  `
+UPDATE public.posts
+SET discover_ready = false
+WHERE discover_ready IS NULL;
+`,
+  `
+UPDATE public.posts
+SET published_at = created_at
+WHERE published_at IS NULL AND status = 'published';
+`,
+  `
+ALTER TABLE IF EXISTS public.posts
+  ALTER COLUMN author SET DEFAULT '100Xfounder Research',
+  ALTER COLUMN author SET NOT NULL,
+  ALTER COLUMN article_type SET DEFAULT 'analysis',
+  ALTER COLUMN article_type SET NOT NULL,
+  ALTER COLUMN fact_check_status SET DEFAULT 'pending_review',
+  ALTER COLUMN fact_check_status SET NOT NULL,
+  ALTER COLUMN discover_ready SET DEFAULT false,
+  ALTER COLUMN discover_ready SET NOT NULL;
+`,
+  `
+CREATE TABLE IF NOT EXISTS public.authors (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  name text NOT NULL,
+  slug text NOT NULL UNIQUE,
+  bio text,
+  role text,
+  avatar_url text,
+  same_as_json jsonb,
+  is_active boolean NOT NULL DEFAULT true,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now()
+);
+`,
+  `
+CREATE TABLE IF NOT EXISTS public.post_updates (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  post_id uuid NOT NULL REFERENCES public.posts(id) ON DELETE CASCADE,
+  change_type text NOT NULL,
+  note text,
+  changed_by text,
+  created_at timestamptz NOT NULL DEFAULT now()
+);
+`,
+  `
+CREATE TABLE IF NOT EXISTS public.post_citations (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  post_id uuid NOT NULL REFERENCES public.posts(id) ON DELETE CASCADE,
+  source_name text NOT NULL,
+  source_url text NOT NULL,
+  source_title text NOT NULL,
+  quoted_claim text,
+  created_at timestamptz NOT NULL DEFAULT now()
+);
+`,
+  `
 CREATE INDEX IF NOT EXISTS posts_status_created_at_idx
   ON public.posts(status, created_at DESC);
+`,
+  `
+CREATE INDEX IF NOT EXISTS posts_published_at_status_idx
+  ON public.posts(published_at DESC, status);
+`,
+  `
+CREATE INDEX IF NOT EXISTS posts_topic_slug_published_at_idx
+  ON public.posts(topic_slug, published_at DESC);
+`,
+  `
+CREATE INDEX IF NOT EXISTS posts_author_id_idx
+  ON public.posts(author_id);
+`,
+  `
+CREATE INDEX IF NOT EXISTS authors_is_active_idx
+  ON public.authors(is_active);
+`,
+  `
+CREATE INDEX IF NOT EXISTS post_updates_post_id_created_at_idx
+  ON public.post_updates(post_id, created_at DESC);
+`,
+  `
+CREATE INDEX IF NOT EXISTS post_citations_post_id_idx
+  ON public.post_citations(post_id);
+`,
+  `
+CREATE INDEX IF NOT EXISTS post_citations_source_url_idx
+  ON public.post_citations(source_url);
 `,
 ];
 

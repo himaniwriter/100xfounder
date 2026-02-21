@@ -11,6 +11,7 @@ import { HeroCtaGroup } from "@/components/home/hero-cta-group";
 import { HomeSearchBar } from "@/components/home/home-search-bar";
 import { getBlogHomeSections } from "@/lib/blog/store";
 import { readHomepageContent } from "@/lib/content/homepage-content";
+import { countryToSlug } from "@/lib/founders/country-tier";
 import { getFounderDirectory, splitRecentlyFunded } from "@/lib/founders/store";
 
 function parseAmountToMillions(amount: string): number {
@@ -134,6 +135,30 @@ export default async function HomePage() {
   const leadHomeArticle = latestHomeArticles[0] ?? null;
   const sideHomeArticles = latestHomeArticles.slice(1, 4);
   const extraHomeArticles = latestHomeArticles.slice(4, 6);
+  const topCountrySlug =
+    countryToSlug(
+      founders.find((item) => (item.country ?? "Unknown") !== "Unknown")?.country ?? "India",
+    ) || "india";
+  const discoverModules = [
+    {
+      title: "Topic Hubs",
+      description: "Clustered newsroom pages organized by startup themes and search intent.",
+      href: "/topics",
+      label: "Explore Topics",
+    },
+    {
+      title: "Country News",
+      description: "Country-level startup coverage with funding and ecosystem movement context.",
+      href: `/countries/${topCountrySlug}/news`,
+      label: "Open Country News",
+    },
+    {
+      title: "Funding Round Desk",
+      description: "Track stage-based funding coverage from seed through late-stage rounds.",
+      href: "/funding-rounds",
+      label: "Track Funding News",
+    },
+  ];
   const trustLogos = ["Sequoia", "Y Combinator", "Accel", "Andreessen Horowitz"];
   const heroTitle = homepageContent.heroTitle;
   const highlightedPhrase = "Most Accurate";
@@ -518,13 +543,13 @@ export default async function HomePage() {
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <h2 className="text-2xl font-semibold tracking-tight text-white">
-              Latest Startup Intelligence From Our Blog
+              Latest Startup Intelligence From Our Newsroom
             </h2>
             <Link
               href="/blog"
               className="glass-ghost-btn"
             >
-              Open full blog
+              Open full newsroom
             </Link>
           </div>
 
@@ -545,6 +570,41 @@ export default async function HomePage() {
               ))}
             </div>
           ) : null}
+        </section>
+
+        <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 className="text-2xl font-semibold tracking-tight text-white">
+                Discover Now
+              </h2>
+              <p className="mt-2 text-sm text-zinc-400">
+                Jump into the newsroom sections that are refreshed for search and AI citation surfaces.
+              </p>
+            </div>
+            <Link
+              href="/blog"
+              className="glass-ghost-btn"
+            >
+              Open Newsroom
+            </Link>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            {discoverModules.map((module) => (
+              <Link
+                key={module.title}
+                href={module.href}
+                className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 transition-colors hover:border-white/30"
+              >
+                <p className="text-sm uppercase tracking-[0.14em] text-zinc-500">{module.title}</p>
+                <p className="mt-3 text-sm leading-6 text-zinc-300">{module.description}</p>
+                <span className="mt-4 inline-flex items-center rounded-full border border-indigo-400/35 bg-indigo-500/10 px-2.5 py-1 text-xs text-indigo-200">
+                  {module.label}
+                </span>
+              </Link>
+            ))}
+          </div>
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">

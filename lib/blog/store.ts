@@ -1,7 +1,13 @@
 import rawPosts from "@/lib/blog/blog-data.json";
 import { isDatabaseConfigured } from "@/lib/db-config";
 import { buildExcerpt, toReadingTime } from "@/lib/blog/post-utils";
-import type { BlogHeading, BlogPost } from "@/lib/blog/types";
+import type {
+  BlogHeading,
+  BlogPost,
+  BlogPostCitation,
+  BlogPostUpdate,
+} from "@/lib/blog/types";
+import { ensureBlogPostsSchema } from "@/lib/db-bootstrap";
 import { prisma } from "@/lib/prisma";
 
 function parseDateValue(value: string): number {
@@ -17,47 +23,182 @@ function slugify(value: string): string {
     .replace(/(^-|-$)+/g, "");
 }
 
+function normalizeCitations(citations: BlogPostCitation[] | undefined): BlogPostCitation[] {
+  return (citations ?? [])
+    .filter(
+      (item) =>
+        item &&
+        item.sourceName?.trim() &&
+        item.sourceTitle?.trim() &&
+        item.sourceUrl?.trim(),
+    )
+    .map((item) => ({
+      id: item.id,
+      sourceName: item.sourceName.trim(),
+      sourceTitle: item.sourceTitle.trim(),
+      sourceUrl: item.sourceUrl.trim(),
+      quotedClaim: item.quotedClaim?.trim() || null,
+      createdAt: item.createdAt,
+    }));
+}
+
+function normalizeUpdates(updates: BlogPostUpdate[] | undefined): BlogPostUpdate[] {
+  return (updates ?? [])
+    .filter((item) => item?.changeType?.trim())
+    .map((item) => ({
+      id: item.id,
+      changeType: item.changeType.trim(),
+      note: item.note?.trim() || null,
+      changedBy: item.changedBy?.trim() || null,
+      createdAt: item.createdAt,
+    }));
+}
+
+function normalizeSourceUrls(post: BlogPost): string[] {
+  const fromArray = Array.isArray(post.sourceUrls)
+    ? post.sourceUrls.map((item) => item.trim()).filter(Boolean)
+    : [];
+  const fromSingle = post.sourceUrl?.trim() ? [post.sourceUrl.trim()] : [];
+
+  return Array.from(new Set([...fromArray, ...fromSingle]));
+}
+
+function resolvePublishedAt(post: BlogPost): string {
+  const published = post.publishedAt?.trim();
+  if (published) {
+    return published;
+  }
+
+  if (post.createdAt?.trim()) {
+    return post.createdAt;
+  }
+
+  return new Date().toISOString();
+}
+
 export function normalizeBlogPost(post: BlogPost): BlogPost {
+  const resolvedPublishedAt = resolvePublishedAt(post);
+  const resolvedCreatedAt = post.createdAt ?? resolvedPublishedAt;
+  const resolvedUpdatedAt = post.updatedAt ?? resolvedCreatedAt;
+  const sourceUrls = normalizeSourceUrls(post);
+
   return {
     ...post,
+    slug: slugify(post.slug || post.title),
+    subtitle: post.subtitle?.trim() || undefined,
+    articleType: post.articleType?.trim() || "analysis",
+    topicSlug: post.topicSlug?.trim() || slugify(post.category || "news"),
+    authorId: post.authorId ?? null,
+    canonicalUrl: post.canonicalUrl?.trim() || undefined,
+    sourceUrls,
+    factCheckStatus: post.factCheckStatus?.trim() || "pending_review",
+    correctionNote: post.correctionNote?.trim() || undefined,
+    discoverReady: post.discoverReady ?? false,
+    socialImageUrl: post.socialImageUrl?.trim() || undefined,
+    publishedAt: resolvedPublishedAt,
+    createdAt: resolvedCreatedAt,
+    updatedAt: resolvedUpdatedAt,
     status: post.status ?? "PUBLISHED",
+    sourceUrl: sourceUrls[0],
     sourceName: post.sourceName ?? "100Xfounder Desk",
     seoTitle: post.seoTitle ?? post.title,
     seoDescription: post.seoDescription ?? post.excerpt,
+    citations: normalizeCitations(post.citations),
+    updates: normalizeUpdates(post.updates),
   };
 }
 
 function mapDatabasePostToBlogPost(post: {
   slug: string;
   title: string;
+  subtitle: string | null;
   content: string;
+  articleType: string;
+  topicSlug: string | null;
   featureImage: string;
   imageCredit: string | null;
+  author: string;
+  authorId: string | null;
+  canonicalUrl: string | null;
+  sourceUrlsJson: unknown;
+  factCheckStatus: string;
+  correctionNote: string | null;
+  discoverReady: boolean;
+  socialImageUrl: string | null;
   seoTitle: string;
   seoDescription: string;
   wordCount: number;
   status: "DRAFT" | "PUBLISHED";
+  publishedAt: Date | null;
   createdAt: Date;
+  updatedAt: Date;
+  citations: Array<{
+    id: string;
+    sourceName: string;
+    sourceUrl: string;
+    sourceTitle: string;
+    quotedClaim: string | null;
+    createdAt: Date;
+  }>;
+  updates: Array<{
+    id: string;
+    changeType: string;
+    note: string | null;
+    changedBy: string | null;
+    createdAt: Date;
+  }>;
 }): BlogPost {
   const resolvedWordCount = post.wordCount > 0 ? post.wordCount : 0;
+  const sourceUrls = Array.isArray(post.sourceUrlsJson)
+    ? post.sourceUrlsJson
+        .map((item) => (typeof item === "string" ? item.trim() : ""))
+        .filter(Boolean)
+    : [];
 
   return normalizeBlogPost({
     slug: post.slug,
     title: post.title,
+    subtitle: post.subtitle ?? undefined,
     excerpt: buildExcerpt(post.content, post.seoDescription),
     category: "Founder Intelligence",
     readingTime: toReadingTime(resolvedWordCount),
     thumbnail: post.featureImage,
     imageCredit: post.imageCredit ?? undefined,
     wordCount: resolvedWordCount,
-    publishedAt: post.createdAt.toISOString(),
+    articleType: post.articleType,
+    topicSlug: post.topicSlug ?? undefined,
+    authorId: post.authorId,
+    canonicalUrl: post.canonicalUrl ?? undefined,
+    sourceUrls,
+    factCheckStatus: post.factCheckStatus,
+    correctionNote: post.correctionNote ?? undefined,
+    discoverReady: post.discoverReady,
+    socialImageUrl: post.socialImageUrl ?? undefined,
+    publishedAt: (post.publishedAt ?? post.createdAt).toISOString(),
+    createdAt: post.createdAt.toISOString(),
+    updatedAt: post.updatedAt.toISOString(),
     isFeatured: false,
     isTrending: false,
-    author: "100Xfounder Research",
+    author: post.author || "100Xfounder Research",
     content: post.content,
     status: post.status,
     seoTitle: post.seoTitle,
     seoDescription: post.seoDescription,
+    citations: post.citations.map((item) => ({
+      id: item.id,
+      sourceName: item.sourceName,
+      sourceTitle: item.sourceTitle,
+      sourceUrl: item.sourceUrl,
+      quotedClaim: item.quotedClaim,
+      createdAt: item.createdAt.toISOString(),
+    })),
+    updates: post.updates.map((item) => ({
+      id: item.id,
+      changeType: item.changeType,
+      note: item.note,
+      changedBy: item.changedBy,
+      createdAt: item.createdAt.toISOString(),
+    })),
   });
 }
 
@@ -67,8 +208,13 @@ async function readBlogPostsFromDatabase(): Promise<BlogPost[]> {
   }
 
   try {
+    await ensureBlogPostsSchema();
     const posts = await prisma.post.findMany({
-      orderBy: { createdAt: "desc" },
+      include: {
+        citations: { orderBy: { createdAt: "asc" } },
+        updates: { orderBy: { createdAt: "desc" } },
+      },
+      orderBy: [{ publishedAt: "desc" }, { createdAt: "desc" }],
     });
 
     return posts.map((post) =>
@@ -136,6 +282,24 @@ export async function getBlogHomeSections() {
     .slice(0, 9);
 
   return { posts, featured, trending, recent };
+}
+
+export async function getNewsTopicSummaries() {
+  const posts = await getAllBlogPostsWithOptions();
+  const counts = new Map<string, { slug: string; label: string; count: number }>();
+
+  posts.forEach((post) => {
+    const slug = post.topicSlug || slugify(post.category || "news");
+    const label = post.category || "News";
+    const current = counts.get(slug);
+    if (current) {
+      current.count += 1;
+      return;
+    }
+    counts.set(slug, { slug, label, count: 1 });
+  });
+
+  return Array.from(counts.values()).sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 
 export function extractHeadings(content: string): BlogHeading[] {

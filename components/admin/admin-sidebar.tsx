@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import {
   Activity,
   BarChart3,
+  CheckSquare,
   Database,
   FileText,
   Star,
@@ -21,6 +22,7 @@ const navItems = [
   { label: "Featured Requests", href: "/admin/featured-requests", icon: Star },
   { label: "Analytics", href: "/admin/analytics", icon: BarChart3 },
   { label: "Content (Blog/Pages)", href: "/admin/content", icon: FileText },
+  { label: "Newsroom Checklist", href: "/admin/newsroom-checklist", icon: CheckSquare },
   { label: "Automations (N8N)", href: "/admin/automations", icon: Sparkles },
   { label: "Media Library", href: "/admin/media", icon: Images },
   { label: "SEO & Scripts", href: "/admin/seo", icon: Activity },

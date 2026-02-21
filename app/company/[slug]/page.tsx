@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProfileFaqSection } from "@/components/seo/profile-faq-section";
+import { BlogCard } from "@/components/blog/blog-card";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { CompanyIntelligenceDashboard } from "@/components/company/company-intelligence-dashboard";
@@ -14,6 +15,7 @@ import {
   buildCompanyFaqs,
   buildCompanyProfileSchema,
 } from "@/lib/seo/profile-seo";
+import { getCompanyNewsContext } from "@/lib/news/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
@@ -62,7 +64,10 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
   if (!context) notFound();
 
   const { primary, matches, related } = context;
-  const lastUpdatedAt = await getFounderDirectoryLastUpdatedAt();
+  const [lastUpdatedAt, companyNews] = await Promise.all([
+    getFounderDirectoryLastUpdatedAt(),
+    getCompanyNewsContext(params.slug, 6),
+  ]);
   const baseUrl = getSiteBaseUrl();
   const expansion = await buildCompanyContentExpansion({
     name: primary.companyName,
@@ -131,6 +136,49 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
               ))
             ) : (
               <p className="text-sm text-zinc-500">No related companies available yet.</p>
+            )}
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 className="text-xl font-semibold text-white">Discover Now</h2>
+              <p className="mt-2 text-sm text-zinc-400">
+                Newsroom and topic pages connected to {primary.companyName}.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <Link
+                href={`/companies/${primary.companySlug}/news`}
+                className="rounded-full border border-indigo-400/35 bg-indigo-500/10 px-3 py-1.5 text-xs text-indigo-200 hover:bg-indigo-500/20"
+              >
+                Company News Hub
+              </Link>
+              <Link
+                href="/topics"
+                className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+              >
+                Topic Hubs
+              </Link>
+              <Link
+                href="/funding-rounds"
+                className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+              >
+                Funding News
+              </Link>
+            </div>
+          </div>
+
+          <div className="mt-4 space-y-3">
+            {companyNews?.items?.length ? (
+              companyNews.items.slice(0, 3).map((post) => (
+                <BlogCard key={post.slug} post={post} variant="feed" />
+              ))
+            ) : (
+              <p className="rounded-xl border border-white/10 bg-black/25 p-4 text-sm text-zinc-500">
+                No company-specific newsroom stories available yet.
+              </p>
             )}
           </div>
         </section>
