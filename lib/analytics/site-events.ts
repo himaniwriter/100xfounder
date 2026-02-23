@@ -9,7 +9,8 @@ export type SiteEventName =
   | "search_submit"
   | "interview_questionnaire_submit"
   | "guest_post_order_submit"
-  | "whatsapp_redirect";
+  | "whatsapp_redirect"
+  | "page_not_found";
 
 export type SiteEventPayload = {
   event_name: SiteEventName;

@@ -12,6 +12,7 @@ const eventSchema = z.object({
     "interview_questionnaire_submit",
     "guest_post_order_submit",
     "whatsapp_redirect",
+    "page_not_found",
   ]),
   path: z.string().trim().min(1).max(240),
   referrer: z.union([z.string().trim().max(1000), z.null()]).optional(),

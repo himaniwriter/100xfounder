@@ -15,6 +15,7 @@ import {
   Sparkles,
   PenSquare,
   ShoppingCart,
+  ScrollText,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -26,6 +27,7 @@ const navItems = [
   { label: "Guest Post Orders", href: "/admin/guest-post-orders", icon: ShoppingCart },
   { label: "Social Feed", href: "/admin/social-feed", icon: Images },
   { label: "Analytics", href: "/admin/analytics", icon: BarChart3 },
+  { label: "Log Manager", href: "/admin/logs", icon: ScrollText },
   { label: "Content (Blog/Pages)", href: "/admin/content", icon: FileText },
   { label: "Newsroom Checklist", href: "/admin/newsroom-checklist", icon: CheckSquare },
   { label: "Automations (N8N)", href: "/admin/automations", icon: Sparkles },

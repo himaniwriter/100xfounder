@@ -32,6 +32,11 @@ const cards = [
     href: "/admin/analytics",
   },
   {
+    title: "Log Manager",
+    description: "Track 404 errors and view site-level event logs with filters.",
+    href: "/admin/logs",
+  },
+  {
     title: "Automation Hub",
     description: "Trigger n8n workflows and monitor webhook run output instantly.",
     href: "/admin/automations",
