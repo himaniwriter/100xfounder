@@ -52,6 +52,16 @@ const QUICK_ACTIONS: PaletteItem[] = [
   },
 ];
 
+const PALETTE_TRENDING_QUERIES = [
+  "Top startup company names in India",
+  "Top founders of 2025 list",
+  "OpenAI latest funding round",
+  "Aravind Srinivas profile",
+  "Perplexity hiring roles",
+  "Indian fintech startups hiring now",
+  "US AI infrastructure companies",
+];
+
 function toPaletteItems(data: SearchApiResponse | null): PaletteItem[] {
   if (!data) {
     return [];
@@ -190,8 +200,14 @@ export function GlobalCommandPalette() {
   }, [items, open, pathname, router, selectedIndex, trimmedQuery]);
 
   useEffect(() => {
-    function onOpenEvent() {
+    function onOpenEvent(event: Event) {
+      const customEvent = event as CustomEvent<{ query?: string }>;
+      const seededQuery = customEvent.detail?.query?.trim() ?? "";
       setOpen(true);
+      if (seededQuery) {
+        setQuery(seededQuery);
+        setSelectedIndex(0);
+      }
     }
 
     window.addEventListener("open-command-palette", onOpenEvent as EventListener);
@@ -272,6 +288,20 @@ export function GlobalCommandPalette() {
     setSelectedIndex(0);
   }, [open, trimmedQuery, loading, items.length]);
 
+  function applyTrendingQuery(nextQuery: string) {
+    setQuery(nextQuery);
+    setSelectedIndex(0);
+    inputRef.current?.focus();
+    trackSiteEvent({
+      event_name: "cta_click",
+      path: pathname || "/",
+      payload: {
+        source: "command_palette_ticker",
+        query: nextQuery,
+      },
+    });
+  }
+
   if (!open) {
     return null;
   }
@@ -301,6 +331,26 @@ export function GlobalCommandPalette() {
             <Command className="h-3 w-3" />
             K
           </span>
+        </div>
+
+        <div className="border-b border-white/10 bg-[#0d1020]/45">
+          <div className="flex items-center gap-2 px-4 py-2 text-[11px] uppercase tracking-[0.14em] text-zinc-500">
+            <span>Trending now</span>
+          </div>
+          <div className="overflow-hidden pb-2">
+            <div className="command-palette-ticker-track">
+              {[...PALETTE_TRENDING_QUERIES, ...PALETTE_TRENDING_QUERIES].map((trend, index) => (
+                <button
+                  key={`palette-trend-${trend}-${index}`}
+                  type="button"
+                  onClick={() => applyTrendingQuery(trend)}
+                  className="rounded-full border border-white/15 bg-black/35 px-3 py-1 text-xs text-zinc-300 transition-colors hover:border-indigo-400/45 hover:bg-indigo-500/15 hover:text-indigo-100"
+                >
+                  {trend}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="max-h-[65vh] overflow-y-auto p-2">
@@ -407,4 +457,3 @@ export function GlobalCommandPalette() {
     </div>
   );
 }
-

@@ -240,7 +240,7 @@ export function CompanyIntelligenceDashboard({
 
   return (
     <div className="space-y-6">
-      <header className="sticky top-16 z-40 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px] shadow-[0_0_24px_rgba(99,102,241,0.18)]">
+      <header className="relative rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px] shadow-[0_0_24px_rgba(99,102,241,0.18)]">
         <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex min-w-0 items-start gap-4">
             <CompanyLogo

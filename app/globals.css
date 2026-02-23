@@ -378,6 +378,19 @@ body {
   animation: ticker-scroll 22s linear infinite;
 }
 
+.command-palette-ticker-track {
+  display: flex;
+  width: max-content;
+  gap: 0.5rem;
+  white-space: nowrap;
+  padding: 0 1rem;
+  animation: ticker-scroll 26s linear infinite;
+}
+
+.command-palette-ticker-track:hover {
+  animation-play-state: paused;
+}
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

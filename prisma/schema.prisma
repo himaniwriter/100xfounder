@@ -61,6 +61,14 @@ enum FeaturedRequestStatus {
   @@map("featured_request_status")
 }
 
+enum WatchlistEntityType {
+  FOUNDER @map("founder")
+  COMPANY @map("company")
+  TOPIC   @map("topic")
+
+  @@map("watchlist_entity_type")
+}
+
 model User {
   id        String   @id @default(uuid()) @db.Uuid
   email     String   @unique
@@ -76,6 +84,10 @@ model User {
   claims            ClaimRequest[]
   connectors        AggregatorConnection[] @relation("ConnectorCreator")
   claimedDirectoryEntries FounderDirectoryEntry[] @relation("DirectoryEntryClaimant")
+  watchlistItems    UserWatchlistItem[]
+  savedSearches     UserSavedSearch[]
+  notifications     UserNotification[]
+  notificationPreference UserNotificationPreference?
 
   @@index([createdAt])
   @@index([role])
@@ -444,4 +456,59 @@ model SiteEvent {
   @@index([eventName, createdAt(sort: Desc)])
   @@index([path])
   @@map("site_events")
+}
+
+model UserWatchlistItem {
+  id         String            @id @default(uuid()) @db.Uuid
+  userId     String            @db.Uuid @map("user_id")
+  entityType WatchlistEntityType @map("entity_type")
+  entitySlug String            @map("entity_slug")
+  entityName String            @map("entity_name")
+  createdAt  DateTime          @default(now()) @map("created_at")
+  user       User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, entityType, entitySlug])
+  @@index([userId, createdAt(sort: Desc)])
+  @@map("user_watchlist_items")
+}
+
+model UserSavedSearch {
+  id          String   @id @default(uuid()) @db.Uuid
+  userId      String   @db.Uuid @map("user_id")
+  query       String
+  searchType  String   @map("search_type")
+  filtersJson Json?    @map("filters_json")
+  createdAt   DateTime @default(now()) @map("created_at")
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, query, searchType])
+  @@index([userId, createdAt(sort: Desc)])
+  @@map("user_saved_searches")
+}
+
+model UserNotification {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @db.Uuid @map("user_id")
+  kind      String
+  title     String
+  body      String
+  targetUrl String?  @map("target_url")
+  isRead    Boolean  @default(false) @map("is_read")
+  createdAt DateTime @default(now()) @map("created_at")
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, isRead, createdAt(sort: Desc)])
+  @@map("user_notifications")
+}
+
+model UserNotificationPreference {
+  userId      String   @id @db.Uuid @map("user_id")
+  instantEmail Boolean @default(false) @map("instant_email")
+  dailyDigest  Boolean @default(true) @map("daily_digest")
+  weeklyDigest Boolean @default(false) @map("weekly_digest")
+  premiumOptIn Boolean @default(false) @map("premium_opt_in")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_notification_preferences")
 }

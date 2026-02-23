@@ -11,6 +11,8 @@ declare global {
   var ensureJobPostingsSchemaPromise: Promise<void> | undefined;
   // eslint-disable-next-line no-var
   var ensureOutreachFunnelSchemaPromise: Promise<void> | undefined;
+  // eslint-disable-next-line no-var
+  var ensureDashboardRetentionSchemaPromise: Promise<void> | undefined;
 }
 
 const FEATURED_SCHEMA_STATEMENTS = [
@@ -127,6 +129,78 @@ CREATE INDEX IF NOT EXISTS pricing_waitlist_requests_created_at_idx
   `
 CREATE INDEX IF NOT EXISTS pricing_waitlist_requests_work_email_idx
   ON public.pricing_waitlist_requests(work_email);
+`,
+];
+
+const DASHBOARD_RETENTION_STATEMENTS = [
+  `
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1
+    FROM pg_type
+    WHERE typname = 'watchlist_entity_type'
+  ) THEN
+    CREATE TYPE watchlist_entity_type AS ENUM ('founder', 'company', 'topic');
+  END IF;
+END
+$$;
+`,
+  `
+CREATE TABLE IF NOT EXISTS public.user_watchlist_items (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
+  entity_type watchlist_entity_type NOT NULL,
+  entity_slug text NOT NULL,
+  entity_name text NOT NULL,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  UNIQUE(user_id, entity_type, entity_slug)
+);
+`,
+  `
+CREATE TABLE IF NOT EXISTS public.user_saved_searches (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
+  query text NOT NULL,
+  search_type text NOT NULL,
+  filters_json jsonb,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  UNIQUE(user_id, query, search_type)
+);
+`,
+  `
+CREATE TABLE IF NOT EXISTS public.user_notifications (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
+  kind text NOT NULL,
+  title text NOT NULL,
+  body text NOT NULL,
+  target_url text,
+  is_read boolean NOT NULL DEFAULT false,
+  created_at timestamptz NOT NULL DEFAULT now()
+);
+`,
+  `
+CREATE TABLE IF NOT EXISTS public.user_notification_preferences (
+  user_id uuid PRIMARY KEY REFERENCES public.users(id) ON DELETE CASCADE,
+  instant_email boolean NOT NULL DEFAULT false,
+  daily_digest boolean NOT NULL DEFAULT true,
+  weekly_digest boolean NOT NULL DEFAULT false,
+  premium_opt_in boolean NOT NULL DEFAULT false,
+  updated_at timestamptz NOT NULL DEFAULT now()
+);
+`,
+  `
+CREATE INDEX IF NOT EXISTS user_watchlist_items_user_id_created_at_idx
+  ON public.user_watchlist_items(user_id, created_at DESC);
+`,
+  `
+CREATE INDEX IF NOT EXISTS user_saved_searches_user_id_created_at_idx
+  ON public.user_saved_searches(user_id, created_at DESC);
+`,
+  `
+CREATE INDEX IF NOT EXISTS user_notifications_user_id_is_read_created_at_idx
+  ON public.user_notifications(user_id, is_read, created_at DESC);
 `,
 ];
 
@@ -455,6 +529,7 @@ CREATE INDEX IF NOT EXISTS instagram_posts_posted_at_idx
 const LOCK_KEYS = {
   featured: "db_bootstrap_featured_v1",
   growth: "db_bootstrap_growth_v1",
+  dashboardRetention: "db_bootstrap_dashboard_retention_v1",
   blog: "db_bootstrap_blog_v1",
   jobs: "db_bootstrap_jobs_v1",
   outreach: "db_bootstrap_outreach_v1",
@@ -485,7 +560,8 @@ function cacheBootstrapPromise(
     | "ensureGrowthWaveSchemaPromise"
     | "ensureBlogPostsSchemaPromise"
     | "ensureJobPostingsSchemaPromise"
-    | "ensureOutreachFunnelSchemaPromise",
+    | "ensureOutreachFunnelSchemaPromise"
+    | "ensureDashboardRetentionSchemaPromise",
   loader: () => Promise<void>,
 ) {
   if (!globalThis[key]) {
@@ -530,5 +606,12 @@ export function ensureOutreachFunnelSchema() {
   return cacheBootstrapPromise(
     "ensureOutreachFunnelSchemaPromise",
     () => runStatements(LOCK_KEYS.outreach, OUTREACH_FUNNEL_STATEMENTS),
+  );
+}
+
+export function ensureDashboardRetentionSchema() {
+  return cacheBootstrapPromise(
+    "ensureDashboardRetentionSchemaPromise",
+    () => runStatements(LOCK_KEYS.dashboardRetention, DASHBOARD_RETENTION_STATEMENTS),
   );
 }
