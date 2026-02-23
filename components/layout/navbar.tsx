@@ -122,28 +122,28 @@ export function Navbar() {
             100Xfounder
           </Link>
 
-          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 md:flex">
+          <nav className="absolute left-1/2 top-0 hidden h-full -translate-x-1/2 items-center gap-7 md:flex">
             {primaryNavLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm text-zinc-400 transition-colors hover:text-white"
+                className="inline-flex h-full items-center text-sm text-zinc-400 transition-colors hover:text-white"
               >
                 {link.label}
               </Link>
             ))}
 
-            <div className="group relative">
+            <div className="group relative flex h-full items-center">
               <button
                 type="button"
-                className="inline-flex items-center gap-1.5 text-sm text-zinc-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
+                className="inline-flex h-full items-center gap-1.5 text-sm text-zinc-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
                 aria-haspopup="true"
               >
                 Explore
                 <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" />
               </button>
 
-              <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-[min(860px,calc(100vw-2rem))] max-h-[75vh] -translate-x-1/2 overflow-y-auto rounded-2xl border border-white/15 bg-[#08080f] p-5 pt-4 opacity-0 shadow-[0_28px_72px_rgba(0,0,0,0.62)] transition-all duration-150 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
+              <div className="pointer-events-none invisible absolute left-1/2 top-[calc(100%+0.5rem)] z-50 w-[min(860px,calc(100vw-2rem))] max-h-[75vh] -translate-x-1/2 overflow-y-auto rounded-2xl border border-white/15 bg-[#08080f] p-5 pt-4 opacity-0 shadow-[0_28px_72px_rgba(0,0,0,0.62)] transition-all duration-150 before:absolute before:-top-2 before:left-0 before:h-2 before:w-full group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
                 <p className="mb-4 text-xs uppercase tracking-[0.18em] text-zinc-500">
                   Discovery Menu
                 </p>
@@ -163,7 +163,7 @@ export function Navbar() {
                             className="block rounded-lg border border-transparent p-2 transition-colors hover:border-white/15 hover:bg-white/[0.04]"
                           >
                             <p className="text-sm font-medium text-white">{link.label}</p>
-                            <p className="mt-0.5 text-xs text-zinc-400">{link.description}</p>
+                            <p className="mt-0.5 text-xs leading-relaxed text-zinc-400">{link.description}</p>
                           </Link>
                         ))}
                       </div>
