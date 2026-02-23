@@ -90,7 +90,8 @@ body {
   .glass-header {
     position: relative;
     isolation: isolate;
-    overflow: clip;
+    overflow-x: clip;
+    overflow-y: visible;
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     background:
       linear-gradient(

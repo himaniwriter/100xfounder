@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { countryTierLabel } from "@/lib/founders/country-tier";
 import { getCountryCoverage } from "@/lib/founders/store";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 const SUPPORTED_TIERS = ["TIER_1", "TIER_2", "TIER_3"] as const;
 
@@ -32,15 +33,23 @@ function parseTier(value: string): SupportedTier | null {
 
 export async function generateMetadata({ params }: TierPageProps): Promise<Metadata> {
   const tier = parseTier(params.tier);
+  const baseUrl = getSiteBaseUrl();
   if (!tier) {
     return {
       title: "Tier Page Not Found | 100Xfounder",
+      robots: {
+        index: false,
+        follow: true,
+      },
     };
   }
 
   return {
     title: `${countryTierLabel(tier)} Countries | Top Startups | 100Xfounder`,
     description: `Explore ${countryTierLabel(tier)} countries with top startup coverage, founder profiles, funding rounds, and hiring data.`,
+    alternates: {
+      canonical: `${baseUrl}/countries/tier/${tier.toLowerCase()}`,
+    },
   };
 }
 

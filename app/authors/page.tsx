@@ -4,11 +4,15 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { getAllBlogPosts } from "@/lib/blog/store";
 import { getNewsAuthors } from "@/lib/news/authors";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const metadata: Metadata = {
   title: "Newsroom Authors | 100Xfounder",
   description:
     "Meet the 100Xfounder newsroom contributors covering startup funding, founder moves, and market intelligence.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/authors`,
+  },
 };
 
 export default async function AuthorsPage() {

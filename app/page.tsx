@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, Zap, ArrowRight } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
@@ -16,6 +17,25 @@ import { countryToSlug } from "@/lib/founders/country-tier";
 import { getFounderDirectory, splitRecentlyFunded } from "@/lib/founders/store";
 import { getInstagramProfileUrl } from "@/lib/marketing/outreach";
 import { getInstagramFeed } from "@/lib/outreach/instagram";
+import { getSiteBaseUrl } from "@/lib/sitemap";
+
+const baseUrl = getSiteBaseUrl();
+
+export const metadata: Metadata = {
+  title: "100Xfounder | Founder Intelligence and Startup Newsroom",
+  description:
+    "Discover verified founder profiles, startup funding signals, and daily newsroom coverage across India and US startup ecosystems.",
+  alternates: {
+    canonical: `${baseUrl}/`,
+  },
+  openGraph: {
+    title: "100Xfounder | Founder Intelligence and Startup Newsroom",
+    description:
+      "Discover verified founder profiles, startup funding signals, and daily newsroom coverage across India and US startup ecosystems.",
+    url: `${baseUrl}/`,
+    type: "website",
+  },
+};
 
 function parseAmountToMillions(amount: string): number {
   const normalized = amount.trim().toUpperCase();
@@ -139,6 +159,33 @@ export default async function HomePage() {
   const latestHomeArticles = blogPosts.slice(0, 12);
   const leadHomeArticle = latestHomeArticles[0] ?? null;
   const headlineArticles = latestHomeArticles.slice(1, 7);
+  const marketPulseTrending = blogPosts.filter((post) => post.isTrending).slice(0, 3);
+  const marketPulseTrendingSlugs = new Set(
+    marketPulseTrending.map((post) => post.slug),
+  );
+  const marketPulseLatest = blogPosts
+    .filter((post) => !marketPulseTrendingSlugs.has(post.slug))
+    .slice(0, 3);
+  const marketPulseSeed = [
+    ...marketPulseTrending.map((post) => ({
+      post,
+      badge: "Trending" as const,
+    })),
+    ...marketPulseLatest.map((post) => ({
+      post,
+      badge: "Latest" as const,
+    })),
+  ];
+  const marketPulseUsedSlugs = new Set(
+    marketPulseSeed.map((item) => item.post.slug),
+  );
+  const marketPulseFallback = blogPosts
+    .filter((post) => !marketPulseUsedSlugs.has(post.slug))
+    .map((post) => ({
+      post,
+      badge: "Latest" as const,
+    }));
+  const marketPulseNews = [...marketPulseSeed, ...marketPulseFallback].slice(0, 6);
   const recentCategoryWindow = blogPosts.slice(0, 24);
   const categoryBuckets = new Map<string, typeof blogPosts>();
   recentCategoryWindow.forEach((post) => {
@@ -288,124 +335,6 @@ export default async function HomePage() {
                 where buyers and talent do research.
               </p>
             </GlassCard>
-          </div>
-        </section>
-
-        <section className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-          <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
-            <h2 className="text-2xl font-semibold tracking-tight text-white">
-              Market Pulse: Latest Funding Rounds
-            </h2>
-            <Link
-              href="/signals"
-              className="glass-ghost-btn"
-            >
-              Open full signals feed
-            </Link>
-          </div>
-
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,0.3fr)_minmax(0,0.7fr)]">
-            <aside className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-[40px]">
-              <h3 className="text-xs uppercase tracking-[0.16em] text-zinc-500">Funding Radar</h3>
-              <p className="mt-2 text-sm text-zinc-300">
-                Live intelligence across high-velocity sectors, refreshed every 2 hours.
-              </p>
-
-              <div className="mt-4 space-y-2">
-                {sectorRadar.map((item) => (
-                  <Link
-                    key={item.sector}
-                    href={item.href}
-                    className="block rounded-xl border border-white/10 bg-black/25 p-3 transition-colors hover:border-white/30"
-                  >
-                    <p className="text-sm font-medium text-white">{item.sector}</p>
-                    <div className="mt-1 flex items-center justify-between text-xs">
-                      <span className="text-zinc-400">{item.weeklyRounds} rounds this week</span>
-                      <span className="rounded-full border border-white/15 bg-white/5 px-2 py-0.5 text-zinc-300">
-                        {item.momentum}
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </aside>
-
-            <div className="space-y-4">
-              <Link
-                href={featuredDealHref}
-                className="group relative block overflow-hidden rounded-2xl border border-white/15 bg-[linear-gradient(145deg,rgba(20,30,62,0.95)_0%,rgba(37,99,235,0.18)_50%,rgba(9,14,28,0.95)_100%)] p-6 shadow-[0_0_36px_rgba(37,99,235,0.16)] transition-colors hover:border-white/30"
-              >
-                <div className="pointer-events-none absolute -right-24 -top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.28),transparent_72%)] blur-3xl" />
-                {isMegaRound ? (
-                  <span className="inline-flex items-center rounded-full border border-amber-300/35 bg-amber-500/10 px-2.5 py-1 text-xs text-amber-200">
-                    🦄 Mega Round
-                  </span>
-                ) : null}
-
-                <div className="mt-4 flex items-start gap-3">
-                  <CompanyLogo
-                    companyName={featuredDeal.company}
-                    domain={featuredDeal.domain}
-                    className="h-11 w-11 rounded-xl border border-white/20"
-                  />
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.14em] text-zinc-400">
-                      Featured Deal • {featuredDeal.sector}
-                    </p>
-                    <h3 className="mt-1 text-xl font-semibold tracking-tight text-white sm:text-2xl">
-                      {featuredDeal.headline}
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="mt-5 flex flex-wrap gap-2.5">
-                  <span className="rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-sm text-zinc-100">
-                    Amount: {featuredDeal.amount}
-                  </span>
-                  <span className="rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-sm text-zinc-100">
-                    Valuation: {featuredDeal.valuation}
-                  </span>
-                  <span className="rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-sm text-zinc-100">
-                    Investors: {featuredDeal.investors}
-                  </span>
-                </div>
-              </Link>
-
-              <div className="rounded-2xl border border-white/15 bg-white/[0.03] backdrop-blur-[40px]">
-                <div className="hidden grid-cols-[88px_minmax(0,1.4fr)_110px_100px_minmax(0,1fr)] gap-3 border-b border-white/10 px-4 py-2 text-[11px] uppercase tracking-[0.14em] text-zinc-500 md:grid">
-                  <span>Date</span>
-                  <span>Company</span>
-                  <span>Round</span>
-                  <span>Amount</span>
-                  <span>Investors</span>
-                </div>
-
-                <div className="divide-y divide-white/10">
-                  {fundingFeedWithLinks.map((item) => (
-                    <Link
-                      key={`${item.company}-${item.date}`}
-                      href={item.href}
-                      className="grid gap-3 px-4 py-3 transition-colors hover:bg-white/[0.03] md:grid-cols-[88px_minmax(0,1.4fr)_110px_100px_minmax(0,1fr)] md:items-center"
-                    >
-                      <p className="text-xs text-zinc-500">{item.date}</p>
-                      <div className="flex min-w-0 items-center gap-2.5">
-                        <CompanyLogo
-                          companyName={item.company}
-                          domain={item.domain}
-                          className="h-8 w-8 shrink-0 rounded-lg border border-white/20"
-                        />
-                        <p className="truncate text-sm font-medium text-white">{item.company}</p>
-                      </div>
-                      <span className="w-fit rounded-full border border-blue-400/35 bg-blue-500/10 px-2.5 py-1 text-xs text-blue-300">
-                        {item.round}
-                      </span>
-                      <p className="text-sm font-medium text-emerald-300">{item.amount}</p>
-                      <p className="truncate text-xs text-zinc-400">{item.investors}</p>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -598,6 +527,184 @@ export default async function HomePage() {
               ))}
             </div>
           ) : null}
+        </section>
+
+        <section className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+          <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
+            <h2 className="text-2xl font-semibold tracking-tight text-white">
+              Market Pulse: Latest Funding Rounds
+            </h2>
+            <Link
+              href="/signals"
+              className="glass-ghost-btn"
+            >
+              Open full signals feed
+            </Link>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,0.3fr)_minmax(0,0.7fr)]">
+            <aside className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-[40px]">
+              <h3 className="text-xs uppercase tracking-[0.16em] text-zinc-500">Funding Radar</h3>
+              <p className="mt-2 text-sm text-zinc-300">
+                Live intelligence across high-velocity sectors, refreshed every 2 hours.
+              </p>
+
+              <div className="mt-4 space-y-2">
+                {sectorRadar.map((item) => (
+                  <Link
+                    key={item.sector}
+                    href={item.href}
+                    className="block rounded-xl border border-white/10 bg-black/25 p-3 transition-colors hover:border-white/30"
+                  >
+                    <p className="text-sm font-medium text-white">{item.sector}</p>
+                    <div className="mt-1 flex items-center justify-between text-xs">
+                      <span className="text-zinc-400">{item.weeklyRounds} rounds this week</span>
+                      <span className="rounded-full border border-white/15 bg-white/5 px-2 py-0.5 text-zinc-300">
+                        {item.momentum}
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </aside>
+
+            <div className="space-y-4">
+              <Link
+                href={featuredDealHref}
+                className="group relative block overflow-hidden rounded-2xl border border-white/15 bg-[linear-gradient(145deg,rgba(20,30,62,0.95)_0%,rgba(37,99,235,0.18)_50%,rgba(9,14,28,0.95)_100%)] p-6 shadow-[0_0_36px_rgba(37,99,235,0.16)] transition-colors hover:border-white/30"
+              >
+                <div className="pointer-events-none absolute -right-24 -top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.28),transparent_72%)] blur-3xl" />
+                {isMegaRound ? (
+                  <span className="inline-flex items-center rounded-full border border-amber-300/35 bg-amber-500/10 px-2.5 py-1 text-xs text-amber-200">
+                    🦄 Mega Round
+                  </span>
+                ) : null}
+
+                <div className="mt-4 flex items-start gap-3">
+                  <CompanyLogo
+                    companyName={featuredDeal.company}
+                    domain={featuredDeal.domain}
+                    className="h-11 w-11 rounded-xl border border-white/20"
+                  />
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.14em] text-zinc-400">
+                      Featured Deal • {featuredDeal.sector}
+                    </p>
+                    <h3 className="mt-1 text-xl font-semibold tracking-tight text-white sm:text-2xl">
+                      {featuredDeal.headline}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="mt-5 flex flex-wrap gap-2.5">
+                  <span className="rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-sm text-zinc-100">
+                    Amount: {featuredDeal.amount}
+                  </span>
+                  <span className="rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-sm text-zinc-100">
+                    Valuation: {featuredDeal.valuation}
+                  </span>
+                  <span className="rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-sm text-zinc-100">
+                    Investors: {featuredDeal.investors}
+                  </span>
+                </div>
+              </Link>
+
+              <div className="rounded-2xl border border-white/15 bg-white/[0.03] backdrop-blur-[40px]">
+                <div className="hidden grid-cols-[88px_minmax(0,1.4fr)_110px_100px_minmax(0,1fr)] gap-3 border-b border-white/10 px-4 py-2 text-[11px] uppercase tracking-[0.14em] text-zinc-500 md:grid">
+                  <span>Date</span>
+                  <span>Company</span>
+                  <span>Round</span>
+                  <span>Amount</span>
+                  <span>Investors</span>
+                </div>
+
+                <div className="divide-y divide-white/10">
+                  {fundingFeedWithLinks.map((item) => (
+                    <Link
+                      key={`${item.company}-${item.date}`}
+                      href={item.href}
+                      className="grid gap-3 px-4 py-3 transition-colors hover:bg-white/[0.03] md:grid-cols-[88px_minmax(0,1.4fr)_110px_100px_minmax(0,1fr)] md:items-center"
+                    >
+                      <p className="text-xs text-zinc-500">{item.date}</p>
+                      <div className="flex min-w-0 items-center gap-2.5">
+                        <CompanyLogo
+                          companyName={item.company}
+                          domain={item.domain}
+                          className="h-8 w-8 shrink-0 rounded-lg border border-white/20"
+                        />
+                        <p className="truncate text-sm font-medium text-white">{item.company}</p>
+                      </div>
+                      <span className="w-fit rounded-full border border-blue-400/35 bg-blue-500/10 px-2.5 py-1 text-xs text-blue-300">
+                        {item.round}
+                      </span>
+                      <p className="text-sm font-medium text-emerald-300">{item.amount}</p>
+                      <p className="truncate text-xs text-zinc-400">{item.investors}</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-[40px] sm:p-5">
+                <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-200">
+                    Trending & Latest on the Desk
+                  </h3>
+                  <Link
+                    href="/blog"
+                    aria-label="View all newsroom posts"
+                    className="inline-flex items-center gap-1 text-xs text-indigo-300 transition-colors hover:text-indigo-200"
+                  >
+                    View all newsroom
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                </div>
+
+                {marketPulseNews.length > 0 ? (
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {marketPulseNews.map((item) => (
+                      <Link
+                        key={`market-pulse-${item.post.slug}`}
+                        href={`/blog/${item.post.slug}`}
+                        className="group rounded-xl border border-white/10 bg-black/30 p-2.5 transition-colors hover:border-white/25 hover:bg-white/[0.04]"
+                      >
+                        <div className="grid grid-cols-[100px_minmax(0,1fr)] gap-3">
+                          <NewsCoverImage
+                            title={item.post.title}
+                            imageUrl={item.post.thumbnail}
+                            uniqueId={`market-pulse-${item.post.slug}`}
+                            className="h-20 w-full rounded-md border border-white/10"
+                            imageClassName="transition-transform duration-500 group-hover:scale-105"
+                          />
+
+                          <div className="min-w-0">
+                            <span
+                              className={
+                                item.badge === "Trending"
+                                  ? "inline-flex rounded-full border border-indigo-400/40 bg-indigo-500/15 px-2 py-0.5 text-[10px] uppercase tracking-[0.14em] text-indigo-200"
+                                  : "inline-flex rounded-full border border-emerald-400/35 bg-emerald-500/10 px-2 py-0.5 text-[10px] uppercase tracking-[0.14em] text-emerald-200"
+                              }
+                            >
+                              {item.badge}
+                            </span>
+                            <p className="mt-2 line-clamp-2 text-sm font-medium text-zinc-100 transition-colors group-hover:text-white">
+                              {item.post.title}
+                            </p>
+                            <p className="mt-1 text-[11px] text-zinc-500">
+                              {item.post.category} • {item.post.readingTime}
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="rounded-lg border border-white/10 bg-black/30 px-3 py-4 text-sm text-zinc-400">
+                    No newsroom stories available right now.
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">

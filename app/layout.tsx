@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
+import dynamicImport from "next/dynamic";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { readGlobalSiteSettings } from "@/lib/site-settings";
 import { sanitizeAdminEmbedHtml } from "@/lib/security/sanitize";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 import "./globals.css";
 
-const GlobalCommandPalette = dynamic(
+const GlobalCommandPalette = dynamicImport(
   () =>
     import("@/components/system/global-command-palette").then(
       (module) => module.GlobalCommandPalette,
@@ -27,10 +28,55 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "100Xfounder",
-  description: "Premium startup founder directory",
-};
+export const dynamic = "force-dynamic";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const baseUrl = getSiteBaseUrl();
+  const settings = await readGlobalSiteSettings();
+  const defaultTitle =
+    settings.defaultMetaTitle?.trim() ||
+    "100Xfounder | Founder Intelligence and Startup Newsroom";
+  const defaultDescription =
+    "100Xfounder tracks startup funding, founder profiles, hiring signals, and source-attributed newsroom coverage across India and the US.";
+  const ogImageUrl = settings.defaultOgImageUrl?.trim() || undefined;
+  const twitterHandle = settings.twitterHandle?.trim() || undefined;
+
+  return {
+    metadataBase: new URL(baseUrl),
+    title: defaultTitle,
+    description: defaultDescription,
+    alternates: {
+      canonical: `${baseUrl}/`,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    openGraph: {
+      type: "website",
+      url: baseUrl,
+      siteName: "100Xfounder",
+      title: defaultTitle,
+      description: defaultDescription,
+      images: ogImageUrl
+        ? [
+            {
+              url: ogImageUrl,
+              alt: "100Xfounder",
+            },
+          ]
+        : undefined,
+    },
+    twitter: {
+      card: ogImageUrl ? "summary_large_image" : "summary",
+      title: defaultTitle,
+      description: defaultDescription,
+      creator: twitterHandle,
+      site: twitterHandle,
+      images: ogImageUrl ? [ogImageUrl] : undefined,
+    },
+  };
+}
 
 export default async function RootLayout({
   children,

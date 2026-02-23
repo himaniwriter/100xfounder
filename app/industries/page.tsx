@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Startup Industries Directory | 100Xfounder",
   description:
     "Browse startup intelligence by industry with founders, funding rounds, and hiring signals.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/industries`,
+  },
 };
 
 export default async function IndustriesPage() {

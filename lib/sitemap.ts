@@ -4,6 +4,7 @@ import { countryTierLabel, countryToSlug } from "@/lib/founders/country-tier";
 import { slugifySegment } from "@/lib/founders/hubs";
 import { getCountryCoverage, getFounderDirectory } from "@/lib/founders/store";
 import { getFundingRoundOptions, getTopicSummaries } from "@/lib/news/hubs";
+import { isPathEligibleForSitemap } from "@/lib/seo/indexability";
 import { STARTUP_DISCOVERY_PAGES } from "@/lib/startups/discovery-pages";
 
 type ChangeFrequency = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
@@ -45,9 +46,7 @@ const STATIC_ROUTES: StaticRoute[] = [
   { href: "/countries", label: "Countries", changeFrequency: "daily", priority: 0.92 },
   { href: "/startups", label: "Startup Explorer", changeFrequency: "weekly", priority: 0.85 },
   { href: "/signals", label: "Signals", changeFrequency: "hourly", priority: 0.9 },
-  { href: "/search", label: "Search", changeFrequency: "weekly", priority: 0.75 },
   { href: "/pricing", label: "Pricing", changeFrequency: "weekly", priority: 0.8 },
-  { href: "/feature-now", label: "Feature Now", changeFrequency: "weekly", priority: 0.82 },
   { href: "/get-featured", label: "Get Featured", changeFrequency: "weekly", priority: 0.82 },
   { href: "/interview-questionnaire", label: "Interview Questionnaire", changeFrequency: "weekly", priority: 0.78 },
   { href: "/guest-post-marketplace", label: "Guest Post Marketplace", changeFrequency: "weekly", priority: 0.76 },
@@ -63,24 +62,6 @@ const STATIC_ROUTES: StaticRoute[] = [
   { href: "/methodology", label: "Methodology", changeFrequency: "monthly", priority: 0.6 },
   { href: "/about-newsroom", label: "About Newsroom", changeFrequency: "monthly", priority: 0.64 },
   { href: "/contact-newsroom", label: "Contact Newsroom", changeFrequency: "monthly", priority: 0.64 },
-  { href: "/llms.txt", label: "LLMS", changeFrequency: "weekly", priority: 0.4 },
-  { href: "/ai-sitemap.xml", label: "AI Sitemap", changeFrequency: "daily", priority: 0.45 },
-  { href: "/ai-sitemap-news.xml", label: "AI News Sitemap", changeFrequency: "daily", priority: 0.45 },
-  { href: "/rss.xml", label: "RSS", changeFrequency: "hourly", priority: 0.55 },
-  { href: "/atom.xml", label: "Atom", changeFrequency: "hourly", priority: 0.55 },
-  { href: "/news-sitemap.xml", label: "News Sitemap", changeFrequency: "hourly", priority: 0.58 },
-  { href: "/jobs", label: "Startup Jobs", changeFrequency: "weekly", priority: 0.7 },
-  { href: "/salary-equity", label: "Salary & Equity Guide", changeFrequency: "weekly", priority: 0.68 },
-  { href: "/negotiation-coaching", label: "Negotiation Coaching", changeFrequency: "weekly", priority: 0.66 },
-  { href: "/fulfillment-policy", label: "Fulfillment Policy", changeFrequency: "monthly", priority: 0.5 },
-  { href: "/add-startup-or-job", label: "Add Startup or Job", changeFrequency: "weekly", priority: 0.72 },
-  { href: "/about", label: "About", changeFrequency: "monthly", priority: 0.6 },
-  { href: "/contact", label: "Contact", changeFrequency: "monthly", priority: 0.6 },
-  { href: "/help", label: "Help Center", changeFrequency: "monthly", priority: 0.5 },
-  { href: "/changelog", label: "Changelog", changeFrequency: "weekly", priority: 0.55 },
-  { href: "/privacy", label: "Privacy", changeFrequency: "yearly", priority: 0.4 },
-  { href: "/terms", label: "Terms", changeFrequency: "yearly", priority: 0.4 },
-  { href: "/cookies", label: "Cookies", changeFrequency: "yearly", priority: 0.35 },
   { href: "/sitemap", label: "Sitemap (HTML)", changeFrequency: "weekly", priority: 0.7 },
 ];
 
@@ -90,25 +71,8 @@ function normalizeBaseUrl(value: string): string {
 }
 
 export function getSiteBaseUrl(): string {
-  const defaultProductionUrl = "https://100xfounder.com";
-  const explicit = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL;
-  if (explicit) {
-    return normalizeBaseUrl(explicit);
-  }
-
-  if (process.env.VERCEL_ENV === "production") {
-    return defaultProductionUrl;
-  }
-
-  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
-    return normalizeBaseUrl(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);
-  }
-
-  if (process.env.VERCEL_URL) {
-    return normalizeBaseUrl(`https://${process.env.VERCEL_URL}`);
-  }
-
-  return defaultProductionUrl;
+  const canonicalProductionUrl = "https://100xfounder.com";
+  return normalizeBaseUrl(canonicalProductionUrl);
 }
 
 function uniqueByHref(items: HtmlSitemapLink[]): HtmlSitemapLink[] {
@@ -126,6 +90,10 @@ function uniqueByHref(items: HtmlSitemapLink[]): HtmlSitemapLink[] {
   return result;
 }
 
+function filterIndexableLinks(items: HtmlSitemapLink[]): HtmlSitemapLink[] {
+  return items.filter((item) => isPathEligibleForSitemap(item.href));
+}
+
 export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
   const baseUrl = getSiteBaseUrl();
   const now = new Date();
@@ -138,13 +106,15 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       getFundingRoundOptions(80),
     ]);
 
-  const staticLinks = STATIC_ROUTES.map((route) => ({
-    href: route.href,
-    label: route.label,
-    lastModified: now,
-  }));
+  const staticLinks = filterIndexableLinks(
+    STATIC_ROUTES.map((route) => ({
+      href: route.href,
+      label: route.label,
+      lastModified: now,
+    })),
+  );
 
-  const blogLinks = uniqueByHref(
+  const blogLinks = filterIndexableLinks(uniqueByHref(
     blogPosts
       .map((post) => ({
         href: `/blog/${post.slug}`,
@@ -154,17 +124,17 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
           : new Date(post.publishedAt),
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const startupCategoryLinks = uniqueByHref(
+  const startupCategoryLinks = filterIndexableLinks(uniqueByHref(
     STARTUP_DISCOVERY_PAGES.map((item) => ({
       href: `/startups/${item.slug}`,
       label: item.title,
       lastModified: now,
     })).sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const countryLinks = uniqueByHref(
+  const countryLinks = filterIndexableLinks(uniqueByHref(
     countryCoverage
       .map((item) => ({
         href: `/countries/${item.countrySlug}`,
@@ -172,9 +142,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const countryNewsLinks = uniqueByHref(
+  const countryNewsLinks = filterIndexableLinks(uniqueByHref(
     countryCoverage
       .map((item) => ({
         href: `/countries/${item.countrySlug}/news`,
@@ -182,9 +152,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const tierLinks = uniqueByHref(
+  const tierLinks = filterIndexableLinks(uniqueByHref(
     Array.from(new Set(countryCoverage.map((item) => item.tier)))
       .map((tier) => ({
         href: `/countries/tier/${tier.toLowerCase()}`,
@@ -192,9 +162,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const industryLinks = uniqueByHref(
+  const industryLinks = filterIndexableLinks(uniqueByHref(
     Array.from(
       new Map(
         founders.map((item) => [slugifySegment(item.industry), item.industry]),
@@ -207,9 +177,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const stageLinks = uniqueByHref(
+  const stageLinks = filterIndexableLinks(uniqueByHref(
     Array.from(
       new Map(founders.map((item) => [slugifySegment(item.stage), item.stage])).entries(),
     )
@@ -220,9 +190,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const countryIndustryLinks = uniqueByHref(
+  const countryIndustryLinks = filterIndexableLinks(uniqueByHref(
     Array.from(
       new Map(
         founders
@@ -244,9 +214,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .filter((item) => item.href.includes("/countries/"))
       .slice(0, 3000)
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const companyLinks = uniqueByHref(
+  const companyLinks = filterIndexableLinks(uniqueByHref(
     founders
       .map((item) => ({
         href: `/company/${item.companySlug}`,
@@ -254,9 +224,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const companyNewsLinks = uniqueByHref(
+  const companyNewsLinks = filterIndexableLinks(uniqueByHref(
     founders
       .map((item) => ({
         href: `/companies/${item.companySlug}/news`,
@@ -264,9 +234,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const topicLinks = uniqueByHref(
+  const topicLinks = filterIndexableLinks(uniqueByHref(
     topics
       .map((topic) => ({
         href: `/topics/${topic.slug}`,
@@ -274,9 +244,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: new Date(topic.lastPublishedAt),
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const fundingRoundLinks = uniqueByHref(
+  const fundingRoundLinks = filterIndexableLinks(uniqueByHref(
     fundingRoundOptions
       .map((item) => ({
         href: `/funding-rounds/${item.slug}`,
@@ -284,9 +254,9 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
-  const founderLinks = uniqueByHref(
+  const founderLinks = filterIndexableLinks(uniqueByHref(
     founders
       .map((item) => ({
         href: `/founders/${item.slug}`,
@@ -294,7 +264,7 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
         lastModified: now,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
-  );
+  ));
 
   return {
     baseUrl,
@@ -453,5 +423,8 @@ export async function getXmlSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...companyEntries,
     ...companyNewsEntries,
     ...founderEntries,
-  ];
+  ].filter((entry) => {
+    const path = entry.url.replace(baseUrl, "") || "/";
+    return isPathEligibleForSitemap(path);
+  });
 }

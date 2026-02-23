@@ -21,7 +21,7 @@ export function GetFeaturedCtaCard({
   });
 
   return (
-    <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+    <section className="rounded-xl border border-indigo-400/30 bg-[#0a0f22] p-4 shadow-[0_14px_36px_rgba(2,6,23,0.56)]">
       <h2 className="text-base font-semibold text-white">{title}</h2>
       <p className="mt-2 text-sm text-zinc-300">{description}</p>
       <div className="mt-3 flex flex-wrap gap-2">

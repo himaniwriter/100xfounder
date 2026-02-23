@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Funding Round News Hubs | 100Xfounder",
   description:
     "Explore startup newsroom coverage by funding stage including seed, Series A, growth, and late-stage updates.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/funding-rounds`,
+  },
 };
 
 export default async function FundingRoundsPage() {

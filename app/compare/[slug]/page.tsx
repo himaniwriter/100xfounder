@@ -1,16 +1,52 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
 import { getFounderDirectory } from "@/lib/founders/store";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 type ComparePageProps = {
   params: {
     slug: string;
   };
 };
+
+export async function generateMetadata({
+  params,
+}: ComparePageProps): Promise<Metadata> {
+  const [leftSlug, rightSlug] = params.slug.split("-vs-");
+  const baseUrl = getSiteBaseUrl();
+
+  if (!leftSlug || !rightSlug) {
+    return {
+      title: "Startup Comparison | 100Xfounder",
+      description: "Compare startup companies and founders side by side.",
+      alternates: {
+        canonical: `${baseUrl}/compare/${params.slug}`,
+      },
+    };
+  }
+
+  const founders = await getFounderDirectory({ limit: 2000 });
+  const left = founders.find((item) => item.companySlug === leftSlug);
+  const right = founders.find((item) => item.companySlug === rightSlug);
+  const pairLabel =
+    left && right ? `${left.companyName} vs ${right.companyName}` : "Startup Comparison";
+
+  return {
+    title: `${pairLabel} | 100Xfounder`,
+    description:
+      left && right
+        ? `Compare ${left.companyName} and ${right.companyName} across founder profile, funding, hiring, and growth signals.`
+        : "Compare startup companies and founders side by side.",
+    alternates: {
+      canonical: `${baseUrl}/compare/${params.slug}`,
+    },
+  };
+}
 
 export default async function ComparePage({ params }: ComparePageProps) {
   const [leftSlug, rightSlug] = params.slug.split("-vs-");

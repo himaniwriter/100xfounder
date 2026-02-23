@@ -114,12 +114,15 @@ export function Navbar() {
   return (
     <header className="glass-header sticky top-0 z-50">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-lg font-bold tracking-tighter text-white sm:text-xl">
+        <div className="relative flex h-16 items-center">
+          <Link
+            href="/"
+            className="relative z-20 shrink-0 text-lg font-bold tracking-tighter text-white sm:text-xl"
+          >
             100Xfounder
           </Link>
 
-          <nav className="hidden items-center gap-7 md:flex">
+          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 md:flex">
             {primaryNavLinks.map((link) => (
               <Link
                 key={link.label}
@@ -140,12 +143,14 @@ export function Navbar() {
                 <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" />
               </button>
 
-              <div className="pointer-events-none invisible absolute left-1/2 top-[calc(100%+14px)] z-50 w-[min(860px,calc(100vw-2rem))] max-h-[75vh] -translate-x-1/2 translate-y-2 overflow-y-auto rounded-2xl border border-white/15 bg-[#08080f]/95 p-5 opacity-0 shadow-[0_24px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl transition-all duration-150 group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
-                <p className="mb-4 text-xs uppercase tracking-[0.18em] text-zinc-500">Discovery Menu</p>
+              <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-[min(860px,calc(100vw-2rem))] max-h-[75vh] -translate-x-1/2 overflow-y-auto rounded-2xl border border-white/15 bg-[#08080f] p-5 pt-4 opacity-0 shadow-[0_28px_72px_rgba(0,0,0,0.62)] transition-all duration-150 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
+                <p className="mb-4 text-xs uppercase tracking-[0.18em] text-zinc-500">
+                  Discovery Menu
+                </p>
 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {megaMenuSections.map((section) => (
-                    <div key={section.title} className="rounded-xl border border-white/10 bg-white/[0.03] p-3">
+                    <div key={section.title} className="rounded-xl border border-white/10 bg-[#111424] p-3">
                       <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-300">
                         {section.title}
                       </h3>
@@ -169,7 +174,7 @@ export function Navbar() {
             </div>
           </nav>
 
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="relative z-20 ml-auto flex items-center gap-1.5 sm:gap-2">
             <Link
               href="/get-featured"
               className="inline-flex h-9 items-center rounded-md border border-indigo-400/45 bg-indigo-500/15 px-2.5 text-xs text-indigo-200 transition-colors hover:bg-indigo-500/25 sm:px-3 sm:text-sm"

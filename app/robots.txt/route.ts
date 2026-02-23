@@ -8,9 +8,13 @@ export async function GET() {
   const body = [
     "User-agent: *",
     "Allow: /",
+    "Disallow: /api/",
     "Disallow: /admin",
     "Disallow: /api/admin",
     "Disallow: /dashboard",
+    "Disallow: /login",
+    "Disallow: /api/auth/",
+    "Disallow: /api/webhooks/",
     "Max-image-preview: large",
     "",
     `Sitemap: ${baseUrl}/sitemap.xml`,

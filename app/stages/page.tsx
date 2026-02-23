@@ -11,6 +11,9 @@ export const revalidate = 21600;
 export const metadata: Metadata = {
   title: "Startup Stages Directory | 100Xfounder",
   description: "Browse startup companies by funding stage with founder, hiring, and round data.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/stages`,
+  },
 };
 
 export default async function StagesPage() {

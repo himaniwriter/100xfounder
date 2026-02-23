@@ -1,10 +1,21 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { getSignalsFeed } from "@/lib/signals/feed";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const revalidate = 1800;
+
+export const metadata: Metadata = {
+  title: "Startup Signals Feed | 100Xfounder",
+  description:
+    "Monitor live funding and hiring signals across startup companies with real-time market activity snapshots.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/signals`,
+  },
+};
 
 function toHeatmapLevel(count: number): "High" | "Medium" | "Low" {
   if (count >= 5) return "High";

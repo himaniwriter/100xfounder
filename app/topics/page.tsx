@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Startup News Topics | 100Xfounder Newsroom",
   description:
     "Browse startup newsroom coverage by topic with source-attributed stories across funding, founders, hiring, and market shifts.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/topics`,
+  },
 };
 
 function formatDate(value: string): string {

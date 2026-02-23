@@ -4,11 +4,15 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { countryTierLabel } from "@/lib/founders/country-tier";
 import { getCountryCoverage } from "@/lib/founders/store";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const metadata: Metadata = {
   title: "Top Startups by Country Tier | 100Xfounder",
   description:
     "Explore top funded companies by country across Tier 1, Tier 2, and Tier 3 startup markets. Up to 500 companies per country with founders, funding rounds, and hiring signals.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/countries`,
+  },
 };
 
 export default async function CountriesPage() {

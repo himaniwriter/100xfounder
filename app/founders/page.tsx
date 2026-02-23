@@ -14,6 +14,7 @@ import {
   splitRecentlyFunded,
 } from "@/lib/founders/store";
 import type { CountryTier, FounderDirectoryItem } from "@/lib/founders/types";
+import { resolveQueryIndexability } from "@/lib/seo/indexability";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
@@ -79,33 +80,6 @@ function readTierParam(value: string | string[] | undefined): CountryTier[] {
     );
 }
 
-function hasMultiFilterState(input: {
-  industries: string[];
-  locations: string[];
-  stages: string[];
-  countries: string[];
-  tiers: CountryTier[];
-  tab: DirectoryTab;
-}): boolean {
-  const activeDimensions = [
-    input.industries.length > 0,
-    input.locations.length > 0,
-    input.stages.length > 0,
-    input.countries.length > 0,
-    input.tiers.length > 0,
-    input.tab !== "all",
-  ].filter(Boolean).length;
-
-  const multiValue =
-    input.industries.length > 1 ||
-    input.locations.length > 1 ||
-    input.stages.length > 1 ||
-    input.countries.length > 1 ||
-    input.tiers.length > 1;
-
-  return activeDimensions > 1 || multiValue;
-}
-
 export async function generateMetadata({ searchParams }: FoundersPageProps): Promise<Metadata> {
   const industries = readParam(searchParams?.industry);
   const locations = readParam(searchParams?.location);
@@ -113,13 +87,13 @@ export async function generateMetadata({ searchParams }: FoundersPageProps): Pro
   const countries = readParam(searchParams?.country);
   const tiers = readTierParam(searchParams?.tier);
   const tab = resolveTab(searchParams?.tab);
-  const shouldNoindex = hasMultiFilterState({
-    industries,
-    locations,
-    stages,
-    countries,
-    tiers,
-    tab,
+  const decision = resolveQueryIndexability("/founders", {
+    industry: industries,
+    location: locations,
+    stage: stages,
+    country: countries,
+    tier: tiers,
+    tab: tab === "all" ? [] : [tab],
   });
   const baseUrl = getSiteBaseUrl();
 
@@ -128,14 +102,9 @@ export async function generateMetadata({ searchParams }: FoundersPageProps): Pro
     description:
       "Explore verified founder profiles with funding rounds, hiring roles, and company intelligence.",
     alternates: {
-      canonical: `${baseUrl}/founders`,
+      canonical: `${baseUrl}${decision.canonicalPath}`,
     },
-    robots: shouldNoindex
-      ? {
-          index: false,
-          follow: true,
-        }
-      : undefined,
+    robots: decision.robots,
   };
 }
 

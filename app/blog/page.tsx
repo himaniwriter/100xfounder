@@ -6,24 +6,45 @@ import { Navbar } from "@/components/layout/navbar";
 import { BlogCard } from "@/components/blog/blog-card";
 import { NewsletterSubscribeBox } from "@/components/blog/newsletter-subscribe-box";
 import { getBlogHomeSections } from "@/lib/blog/store";
+import { normalizeQueryValues, resolveQueryIndexability } from "@/lib/seo/indexability";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 type BlogHomePageProps = {
   searchParams?: {
-    category?: string;
+    category?: string | string[];
   };
 };
 
-export const metadata: Metadata = {
-  title: "Startup News & Funding Desk | 100Xfounder Newsroom",
-  description:
-    "Daily startup intelligence from India and the US: rewritten funding updates, market signals, and founder moves with source attribution.",
-};
+export async function generateMetadata({
+  searchParams,
+}: BlogHomePageProps): Promise<Metadata> {
+  const categoryValues = normalizeQueryValues(searchParams?.category);
+  const decision = resolveQueryIndexability("/blog", {
+    category: categoryValues,
+  });
+  const baseUrl = getSiteBaseUrl();
+
+  return {
+    title: "Startup News & Funding Desk | 100Xfounder Newsroom",
+    description:
+      "Daily startup intelligence from India and the US: rewritten funding updates, market signals, and founder moves with source attribution.",
+    alternates: {
+      canonical: `${baseUrl}${decision.canonicalPath}`,
+    },
+    robots: decision.robots,
+  };
+}
 
 export default async function BlogHomePage({ searchParams }: BlogHomePageProps) {
   const { posts } = await getBlogHomeSections();
-  const activeCategory = searchParams?.category?.trim();
-  const visiblePosts = activeCategory
-    ? posts.filter((post) => post.category.toLowerCase() === activeCategory.toLowerCase())
+  const categoryValues = normalizeQueryValues(searchParams?.category);
+  const activeCategory = categoryValues[0];
+  const visiblePosts = categoryValues.length > 0
+    ? posts.filter((post) =>
+        categoryValues.some(
+          (category) => post.category.toLowerCase() === category.toLowerCase(),
+        ),
+      )
     : posts;
   const featured = visiblePosts.find((post) => post.isFeatured) ?? visiblePosts[0] ?? null;
   const trending = visiblePosts
@@ -54,7 +75,9 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
               key={category}
               href={`/blog?category=${encodeURIComponent(category)}`}
               className={`shrink-0 rounded-full border px-3 py-1 text-xs transition-colors ${
-                activeCategory?.toLowerCase() === category.toLowerCase()
+                categoryValues.some(
+                  (active) => active.toLowerCase() === category.toLowerCase(),
+                )
                   ? "border-indigo-400/50 bg-indigo-500/15 text-indigo-200"
                   : "border-white/15 bg-white/[0.03] text-zinc-300 hover:border-white/25 hover:text-white"
               }`}
@@ -101,44 +124,48 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
           </div>
         </div>
 
-        <aside className="space-y-5">
-          <div className="rounded-2xl border border-indigo-400/30 bg-indigo-500/10 p-4 backdrop-blur-md">
-            <p className="text-xs uppercase tracking-[0.22em] text-indigo-200">Get Featured</p>
-            <p className="mt-2 text-sm text-zinc-200">
-              Founder story to publish? Use our feature funnel or guest-post order flow.
-            </p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              <Link
-                href="/get-featured"
-                className="rounded-md border border-indigo-300/40 bg-indigo-400/10 px-2.5 py-1.5 text-xs text-indigo-100 transition-colors hover:bg-indigo-400/20"
-              >
-                Get Featured
-              </Link>
-              <Link
-                href="/guest-post-marketplace"
-                className="rounded-md border border-white/20 bg-black/30 px-2.5 py-1.5 text-xs text-zinc-200 transition-colors hover:border-white/35"
-              >
-                Guest Post Plans
-              </Link>
+        <aside className="relative space-y-5 lg:sticky lg:top-28 lg:self-start">
+          <div>
+            <div className="rounded-2xl border border-indigo-400/35 bg-[#0a0f22] p-4 shadow-[0_14px_42px_rgba(2,6,23,0.62)]">
+              <p className="text-xs uppercase tracking-[0.22em] text-indigo-200">Get Featured</p>
+              <p className="mt-2 text-sm text-zinc-200">
+                Founder story to publish? Use our feature funnel or guest-post order flow.
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <Link
+                  href="/get-featured"
+                  className="rounded-md border border-indigo-300/40 bg-indigo-400/10 px-2.5 py-1.5 text-xs text-indigo-100 transition-colors hover:bg-indigo-400/20"
+                >
+                  Get Featured
+                </Link>
+                <Link
+                  href="/guest-post-marketplace"
+                  className="rounded-md border border-white/20 bg-black/30 px-2.5 py-1.5 text-xs text-zinc-200 transition-colors hover:border-white/35"
+                >
+                  Guest Post Plans
+                </Link>
+              </div>
             </div>
           </div>
 
-          <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md">
-            <h2 className="text-xs uppercase tracking-[0.22em] text-zinc-500">Trending on Desk</h2>
-            <div className="mt-3 space-y-3">
-              {trending.map((post) => (
-                <BlogCard key={post.slug} post={post} variant="stack" />
-              ))}
+          <div className="space-y-5">
+            <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md">
+              <h2 className="text-xs uppercase tracking-[0.22em] text-zinc-500">Trending on Desk</h2>
+              <div className="mt-3 space-y-3">
+                {trending.map((post) => (
+                  <BlogCard key={post.slug} post={post} variant="stack" />
+                ))}
+              </div>
             </div>
-          </div>
 
-          <NewsletterSubscribeBox topic="startup-news" />
+            <NewsletterSubscribeBox topic="startup-news" />
 
-          <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md">
-            <p className="text-xs uppercase tracking-[0.22em] text-zinc-500">Coverage Policy</p>
-            <p className="mt-2 text-sm text-zinc-400">
-              We publish rewritten summaries with source links, and do not mirror full articles from publishers.
-            </p>
+            <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md">
+              <p className="text-xs uppercase tracking-[0.22em] text-zinc-500">Coverage Policy</p>
+              <p className="mt-2 text-sm text-zinc-400">
+                We publish rewritten summaries with source links, and do not mirror full articles from publishers.
+              </p>
+            </div>
           </div>
         </aside>
       </section>

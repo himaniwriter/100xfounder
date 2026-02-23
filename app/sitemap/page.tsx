@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import { getHtmlSitemapData } from "@/lib/sitemap";
+import { getHtmlSitemapData, getSiteBaseUrl } from "@/lib/sitemap";
 
 export const dynamic = "force-dynamic";
 
@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Sitemap | 100Xfounder",
   description:
     "Browse all major pages, country clusters, founder profiles, company pages, and blog articles on 100Xfounder.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/sitemap`,
+  },
 };
 
 type SectionProps = {

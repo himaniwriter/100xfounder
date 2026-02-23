@@ -5,20 +5,31 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { getAllBlogPosts } from "@/lib/blog/store";
 import { getNewsAuthorBySlug } from "@/lib/news/authors";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
+  const baseUrl = getSiteBaseUrl();
   const author = await getNewsAuthorBySlug(params.slug);
   if (!author) {
-    return { title: "Author Not Found | 100Xfounder" };
+    return {
+      title: "Author Not Found | 100Xfounder",
+      robots: {
+        index: false,
+        follow: true,
+      },
+    };
   }
 
   return {
     title: `${author.name} | 100Xfounder Newsroom`,
     description: author.bio,
+    alternates: {
+      canonical: `${baseUrl}/authors/${params.slug}`,
+    },
   };
 }
 

@@ -159,17 +159,20 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   if (!post) {
     return { title: "Post Not Found | 100Xfounder" };
   }
+  const baseUrl = getSiteBaseUrl();
+  const canonical = `${baseUrl}/blog/${post.slug}`;
 
   return {
     title: `${post.seoTitle ?? post.title} | 100Xfounder Newsroom`,
     description: post.seoDescription ?? post.excerpt,
     alternates: {
-      canonical: `/blog/${post.slug}`,
+      canonical,
     },
     openGraph: {
       title: post.seoTitle ?? post.title,
       description: post.seoDescription ?? post.excerpt,
       type: "article",
+      url: canonical,
       images: [
         {
           url: post.thumbnail,
@@ -511,13 +514,15 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
           </section>
         </article>
 
-        <aside className="space-y-4">
-          <GetFeaturedCtaCard
-            context="blog_post"
-            description="Own the narrative for your startup with a verified featured profile."
-          />
+        <aside className="relative space-y-4">
+          <div className="lg:sticky lg:top-24 lg:z-30">
+            <GetFeaturedCtaCard
+              context="blog_post"
+              description="Own the narrative for your startup with a verified featured profile."
+            />
+          </div>
           {hasRahulBajaj ? (
-            <div className="sticky top-24">
+            <div className="relative z-10">
               <FounderCallout
                 founderName="Rahul Bajaj Group"
                 founderSlug="rahul-bajaj-group-bajaj-finance-ltd-1"

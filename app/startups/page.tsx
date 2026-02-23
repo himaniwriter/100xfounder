@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { StartupsClient } from "./startups-client";
@@ -5,6 +6,16 @@ import {
   getFounderDirectory,
   getFounderDirectoryLastUpdatedAt,
 } from "@/lib/founders/store";
+import { getSiteBaseUrl } from "@/lib/sitemap";
+
+export const metadata: Metadata = {
+  title: "Startup Explorer | 100Xfounder",
+  description:
+    "Explore startup collections by market, stage, and geography with founder, funding, and hiring intelligence.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/startups`,
+  },
+};
 
 function normalize(value: string | null | undefined): string {
   if (!value) return "";

@@ -1,7 +1,18 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { getSiteBaseUrl } from "@/lib/sitemap";
 import { PricingClient } from "./pricing-client";
+
+export const metadata: Metadata = {
+  title: "Pricing | 100Xfounder",
+  description:
+    "Compare 100Xfounder plans for founder visibility, discovery tools, and startup intelligence workflows.",
+  alternates: {
+    canonical: `${getSiteBaseUrl()}/pricing`,
+  },
+};
 
 export default function PricingPage() {
   return (

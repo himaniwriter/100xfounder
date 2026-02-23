@@ -12,6 +12,7 @@
     "start": "next start",
     "postinstall": "prisma generate",
     "lint": "next lint",
+    "seo:validate": "node actions/seo-crawl-validate.mjs",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy"
   },

@@ -44,7 +44,7 @@ export function NewsletterSubscribeBox({
   }
 
   return (
-    <aside className="sticky top-24 rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md">
+    <aside className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md">
       <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-300">
         Subscribe to Newsletter
       </h3>
