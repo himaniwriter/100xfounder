@@ -49,10 +49,14 @@ export type BlogPost = {
   seoDescription?: string;
   citations?: BlogPostCitation[];
   updates?: BlogPostUpdate[];
+  faqSchema?: Record<string, unknown> | null;
+  howtoSchema?: Record<string, unknown> | null;
+  faqAdded?: boolean;
+  howtoAdded?: boolean;
 };
 
 export type BlogHeading = {
   id: string;
   text: string;
-  level: 2 | 3;
+  level: 1 | 2 | 3 | 4;
 };

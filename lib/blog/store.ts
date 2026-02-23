@@ -64,6 +64,13 @@ function normalizeSourceUrls(post: BlogPost): string[] {
   return Array.from(new Set([...fromArray, ...fromSingle]));
 }
 
+function asJsonRecord(value: unknown): Record<string, unknown> | null {
+  if (value && typeof value === "object" && !Array.isArray(value)) {
+    return value as Record<string, unknown>;
+  }
+  return null;
+}
+
 function resolvePublishedAt(post: BlogPost): string {
   const published = post.publishedAt?.trim();
   if (published) {
@@ -106,6 +113,10 @@ export function normalizeBlogPost(post: BlogPost): BlogPost {
     seoDescription: post.seoDescription ?? post.excerpt,
     citations: normalizeCitations(post.citations),
     updates: normalizeUpdates(post.updates),
+    faqSchema: asJsonRecord(post.faqSchema),
+    howtoSchema: asJsonRecord(post.howtoSchema),
+    faqAdded: post.faqAdded ?? false,
+    howtoAdded: post.howtoAdded ?? false,
   };
 }
 
@@ -128,6 +139,10 @@ function mapDatabasePostToBlogPost(post: {
   socialImageUrl: string | null;
   seoTitle: string;
   seoDescription: string;
+  faqSchema: unknown;
+  howtoSchema: unknown;
+  faqAdded: boolean;
+  howtoAdded: boolean;
   wordCount: number;
   status: "DRAFT" | "PUBLISHED";
   publishedAt: Date | null;
@@ -185,6 +200,10 @@ function mapDatabasePostToBlogPost(post: {
     status: post.status,
     seoTitle: post.seoTitle,
     seoDescription: post.seoDescription,
+    faqSchema: asJsonRecord(post.faqSchema),
+    howtoSchema: asJsonRecord(post.howtoSchema),
+    faqAdded: post.faqAdded,
+    howtoAdded: post.howtoAdded,
     citations: post.citations.map((item) => ({
       id: item.id,
       sourceName: item.sourceName,
@@ -326,33 +345,33 @@ export async function getNewsTopicSummaries() {
 export function extractHeadings(content: string): BlogHeading[] {
   if (/<\/?[a-z][\s\S]*>/i.test(content)) {
     const headingMatches = Array.from(
-      content.matchAll(/<h([23])[^>]*>(.*?)<\/h\1>/gi),
+      content.matchAll(/<h([1-4])[^>]*>(.*?)<\/h\1>/gi),
     );
+    const headings: BlogHeading[] = [];
 
-    return headingMatches
-      .map((match) => {
-        const level = Number(match[1]) as 2 | 3;
-        const text = match[2].replace(/<[^>]+>/g, "").trim();
-        if (!text) {
-          return null;
-        }
+    headingMatches.forEach((match) => {
+      const level = Number(match[1]) as 1 | 2 | 3 | 4;
+      const text = match[2].replace(/<[^>]+>/g, "").trim();
+      if (!text) {
+        return;
+      }
+      headings.push({
+        id: slugify(text),
+        text,
+        level,
+      });
+    });
 
-        return {
-          id: slugify(text),
-          text,
-          level,
-        } satisfies BlogHeading;
-      })
-      .filter((item): item is BlogHeading => Boolean(item));
+    return headings;
   }
 
   return content
     .split("\n")
     .map((line) => line.trim())
-    .filter((line) => line.startsWith("## ") || line.startsWith("### "))
+    .filter((line) => /^#{1,4}\s+/.test(line))
     .map((line): BlogHeading => {
-      const level = line.startsWith("### ") ? 3 : 2;
-      const text = line.replace(/^###?\s+/, "").trim();
+      const level = (line.match(/^#{1,4}/)?.[0].length ?? 2) as 1 | 2 | 3 | 4;
+      const text = line.replace(/^#{1,4}\s+/, "").trim();
       return {
         id: slugify(text),
         text,

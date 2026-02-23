@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BackToTopButton } from "@/components/BackToTopButton";
+import { ReadingProgressBar } from "@/components/ReadingProgressBar";
+import { SocialShareBar } from "@/components/SocialShareBar";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { ArticleToc } from "@/components/blog/article-toc";
+import { FeaturedWidgetAttention } from "@/components/blog/featured-widget-attention";
 import { FounderCallout } from "@/components/blog/founder-callout";
 import { GetFeaturedCtaCard } from "@/components/shared/get-featured-cta-card";
 import { NewsCoverImage } from "@/components/ui/news-cover-image";
-import {
-  extractHeadings,
-  getAllBlogPostsWithOptions,
-  getBlogPostBySlug,
-} from "@/lib/blog/store";
+import { getAllBlogPostsWithOptions, getBlogPostBySlug } from "@/lib/blog/store";
+import { addHeadingIds, extractHeadings } from "@/lib/addHeadingIds";
 import { requireAdminPage } from "@/lib/auth/admin-guard";
 import { countryToSlug } from "@/lib/founders/country-tier";
 import { getFounderDirectory } from "@/lib/founders/store";
@@ -126,6 +128,17 @@ function renderContent(content: string) {
       return;
     }
 
+    if (line.startsWith("# ")) {
+      flushList();
+      const text = line.slice(2).trim();
+      nodes.push(
+        <h1 id={headingSlug(text)} key={`h1-${index}`} className="mt-10 text-3xl font-bold tracking-tight text-white">
+          {text}
+        </h1>,
+      );
+      return;
+    }
+
     if (line.startsWith("### ")) {
       flushList();
       const text = line.slice(4).trim();
@@ -133,6 +146,17 @@ function renderContent(content: string) {
         <h3 id={headingSlug(text)} key={`h3-${index}`} className="mt-7 text-xl font-medium text-zinc-100">
           {text}
         </h3>,
+      );
+      return;
+    }
+
+    if (line.startsWith("#### ")) {
+      flushList();
+      const text = line.slice(5).trim();
+      nodes.push(
+        <h4 id={headingSlug(text)} key={`h4-${index}`} className="mt-6 text-lg font-medium text-zinc-100">
+          {text}
+        </h4>,
       );
       return;
     }
@@ -200,7 +224,8 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
     notFound();
   }
 
-  const headings = extractHeadings(post.content);
+  const contentWithHeadingIds = addHeadingIds(post.content);
+  const headings = extractHeadings(contentWithHeadingIds);
   const hasRahulBajaj = /rahul bajaj/i.test(post.content);
   const topicSlug = post.topicSlug || headingSlug(post.category || "news");
   const authorProfileSlug = authorSlug(post.author);
@@ -266,6 +291,9 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
   const pageUrl = `${baseUrl}/blog/${post.slug}`;
   const publishedDate = post.publishedAt;
   const updatedDate = post.updatedAt ?? post.publishedAt;
+  const faqSchema = post.faqSchema && typeof post.faqSchema === "object" ? post.faqSchema : null;
+  const howtoSchema =
+    post.howtoSchema && typeof post.howtoSchema === "object" ? post.howtoSchema : null;
   const articleSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -325,37 +353,22 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
 
   return (
     <main className="min-h-screen bg-[#050505] text-[#EDEDED]">
+      <ReadingProgressBar />
       <Navbar />
 
       <section className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 lg:grid-cols-[220px_minmax(0,700px)_260px] sm:px-6 lg:px-8">
         <aside className="hidden lg:block">
-          <div className="sticky top-24 rounded-xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-md">
-            <p className="text-xs uppercase tracking-wide text-zinc-500">Table of Contents</p>
-            <ul className="mt-3 space-y-2">
-              {headings.map((heading) => (
-                <li key={heading.id}>
-                  <a
-                    href={`#${heading.id}`}
-                    className={
-                      heading.level === 3
-                        ? "block pl-3 text-xs text-zinc-400 hover:text-white"
-                        : "block text-sm text-zinc-300 hover:text-white"
-                    }
-                  >
-                    {heading.text}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ArticleToc headings={headings} mode="desktop" />
         </aside>
 
         <article className="space-y-6">
+          <ArticleToc headings={headings} mode="mobile" />
           <header className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-md">
             <Link href="/blog" className="text-xs text-zinc-400 hover:text-zinc-200">
               ← Back to newsroom
             </Link>
             <h1 className="mt-3 text-4xl font-semibold tracking-tight text-white">{post.title}</h1>
+            <SocialShareBar url={pageUrl} title={post.title} description={post.excerpt} />
             {post.subtitle ? (
               <p className="mt-3 text-lg text-zinc-300">{post.subtitle}</p>
             ) : null}
@@ -423,7 +436,7 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
             ) : null}
           </section>
 
-          <div className="space-y-5">{renderContent(post.content)}</div>
+          <div id="article-content" className="space-y-5">{renderContent(contentWithHeadingIds)}</div>
 
           <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
             <h2 className="text-base font-semibold text-white">Sources & Citations</h2>
@@ -493,6 +506,16 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
             </div>
           </section>
 
+          <section className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
+            <h2 className="text-base font-semibold text-white">Found this useful? Share it.</h2>
+            <SocialShareBar
+              url={pageUrl}
+              title={post.title}
+              description={post.excerpt}
+              showFloatingMobile
+            />
+          </section>
+
           <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
             <h2 className="text-base font-semibold text-white">Related Reads</h2>
             <div className="mt-3 space-y-2">
@@ -515,7 +538,10 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
         </article>
 
         <aside className="relative space-y-4">
-          <div className="lg:sticky lg:top-24 lg:z-30">
+          <div
+            id="featured-widget"
+            className="featured-widget-transition lg:sticky lg:top-24 lg:z-30"
+          >
             <GetFeaturedCtaCard
               context="blog_post"
               description="Own the narrative for your startup with a verified featured profile."
@@ -533,11 +559,25 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
         </aside>
       </section>
 
+      <FeaturedWidgetAttention />
+      <BackToTopButton />
       <Footer />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleSchema) }}
       />
+      {faqSchema ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema) }}
+        />
+      ) : null}
+      {howtoSchema ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(howtoSchema) }}
+        />
+      ) : null}
     </main>
   );
 }

@@ -1,10 +1,12 @@
 import { timingSafeEqual } from "node:crypto";
+import type { Prisma } from "@prisma/client";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { buildExcerpt, countWords, slugify } from "@/lib/blog/post-utils";
 import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
 import { prisma } from "@/lib/prisma";
 import { ensureBlogPostsSchema } from "@/lib/db-bootstrap";
+import { generateFaqSchema, generateHowToSchema } from "@/lib/generateSchemas";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -108,6 +110,10 @@ function mapSavedPost(post: {
   socialImageUrl: string | null;
   seoTitle: string;
   seoDescription: string;
+  faqSchema: unknown;
+  howtoSchema: unknown;
+  faqAdded: boolean;
+  howtoAdded: boolean;
   wordCount: number;
   status: "DRAFT" | "PUBLISHED";
   publishedAt: Date | null;
@@ -132,6 +138,10 @@ function mapSavedPost(post: {
     social_image_url: post.socialImageUrl,
     seo_title: post.seoTitle,
     seo_description: post.seoDescription,
+    faq_schema: post.faqSchema,
+    howto_schema: post.howtoSchema,
+    faq_added: post.faqAdded,
+    howto_added: post.howtoAdded,
     word_count: post.wordCount,
     status: post.status === "DRAFT" ? "draft" : "published",
     published_at: post.publishedAt?.toISOString() ?? null,
@@ -206,6 +216,14 @@ export async function POST(request: Request) {
   const seoTitle = parsed.data.seo_metadata?.title?.trim() || title;
   const seoDescription =
     parsed.data.seo_metadata?.description?.trim() || buildExcerpt(content);
+  const faqSchema = generateFaqSchema(content);
+  const howtoSchema = generateHowToSchema(content);
+  const faqSchemaValue = faqSchema
+    ? (faqSchema as Prisma.InputJsonValue)
+    : undefined;
+  const howtoSchemaValue = howtoSchema
+    ? (howtoSchema as Prisma.InputJsonValue)
+    : undefined;
 
   try {
     const post = await prisma.$transaction(async (tx) => {
@@ -227,6 +245,10 @@ export async function POST(request: Request) {
           socialImageUrl: parsed.data.social_image_url?.trim() || null,
           seoTitle,
           seoDescription,
+          faqSchema: faqSchemaValue,
+          howtoSchema: howtoSchemaValue,
+          faqAdded: faqSchema !== null,
+          howtoAdded: howtoSchema !== null,
           wordCount,
           status: "DRAFT",
           publishedAt: parsed.data.published_at ? new Date(parsed.data.published_at) : null,

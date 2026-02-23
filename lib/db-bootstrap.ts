@@ -188,6 +188,10 @@ ALTER TABLE IF EXISTS public.posts
   ADD COLUMN IF NOT EXISTS correction_note text,
   ADD COLUMN IF NOT EXISTS discover_ready boolean,
   ADD COLUMN IF NOT EXISTS social_image_url text,
+  ADD COLUMN IF NOT EXISTS faq_schema jsonb,
+  ADD COLUMN IF NOT EXISTS howto_schema jsonb,
+  ADD COLUMN IF NOT EXISTS faq_added boolean,
+  ADD COLUMN IF NOT EXISTS howto_added boolean,
   ADD COLUMN IF NOT EXISTS published_at timestamptz;
 `,
   `
@@ -212,6 +216,16 @@ WHERE discover_ready IS NULL;
 `,
   `
 UPDATE public.posts
+SET faq_added = false
+WHERE faq_added IS NULL;
+`,
+  `
+UPDATE public.posts
+SET howto_added = false
+WHERE howto_added IS NULL;
+`,
+  `
+UPDATE public.posts
 SET published_at = created_at
 WHERE published_at IS NULL AND status = 'published';
 `,
@@ -224,7 +238,11 @@ ALTER TABLE IF EXISTS public.posts
   ALTER COLUMN fact_check_status SET DEFAULT 'pending_review',
   ALTER COLUMN fact_check_status SET NOT NULL,
   ALTER COLUMN discover_ready SET DEFAULT false,
-  ALTER COLUMN discover_ready SET NOT NULL;
+  ALTER COLUMN discover_ready SET NOT NULL,
+  ALTER COLUMN faq_added SET DEFAULT false,
+  ALTER COLUMN faq_added SET NOT NULL,
+  ALTER COLUMN howto_added SET DEFAULT false,
+  ALTER COLUMN howto_added SET NOT NULL;
 `,
   `
 CREATE TABLE IF NOT EXISTS public.authors (
