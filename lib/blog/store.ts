@@ -1,4 +1,5 @@
 import rawPosts from "@/lib/blog/blog-data.json";
+import { unstable_cache } from "next/cache";
 import { isDatabaseConfigured } from "@/lib/db-config";
 import { buildExcerpt, toReadingTime } from "@/lib/blog/post-utils";
 import type {
@@ -232,14 +233,7 @@ function readBlogPostsFromFile(): BlogPost[] {
   return [...(rawPosts as BlogPost[])].map(normalizeBlogPost);
 }
 
-export async function getAllBlogPosts(): Promise<BlogPost[]> {
-  return getAllBlogPostsWithOptions();
-}
-
-export async function getAllBlogPostsWithOptions(
-  options: { includeDrafts?: boolean } = {},
-): Promise<BlogPost[]> {
-  const includeDrafts = options.includeDrafts ?? false;
+async function readMergedBlogPosts(): Promise<BlogPost[]> {
   const filePosts = readBlogPostsFromFile();
   const databasePosts = await readBlogPostsFromDatabase();
   const mergedBySlug = new Map<string, BlogPost>();
@@ -252,9 +246,36 @@ export async function getAllBlogPostsWithOptions(
     mergedBySlug.set(post.slug, post);
   });
 
-  return [...mergedBySlug.values()]
-    .filter((post) => includeDrafts || post.status === "PUBLISHED")
-    .sort((a, b) => parseDateValue(b.publishedAt) - parseDateValue(a.publishedAt));
+  return [...mergedBySlug.values()].sort(
+    (a, b) => parseDateValue(b.publishedAt) - parseDateValue(a.publishedAt),
+  );
+}
+
+const getCachedPublishedBlogPosts = unstable_cache(
+  async () => {
+    const posts = await readMergedBlogPosts();
+    return posts.filter((post) => post.status === "PUBLISHED");
+  },
+  ["blog-posts-published-v1"],
+  {
+    revalidate: 180,
+    tags: ["blog-posts-published"],
+  },
+);
+
+export async function getAllBlogPosts(): Promise<BlogPost[]> {
+  return getAllBlogPostsWithOptions();
+}
+
+export async function getAllBlogPostsWithOptions(
+  options: { includeDrafts?: boolean } = {},
+): Promise<BlogPost[]> {
+  const includeDrafts = options.includeDrafts ?? false;
+  if (!includeDrafts) {
+    return getCachedPublishedBlogPosts();
+  }
+
+  return readMergedBlogPosts();
 }
 
 export async function getBlogPostBySlug(

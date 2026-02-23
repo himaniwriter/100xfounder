@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { unstable_cache } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { isDatabaseConfigured } from "@/lib/db-config";
 
@@ -92,16 +93,11 @@ export async function readGlobalSiteSettingsFromFile(): Promise<GlobalSiteSettin
   return readGlobalSiteSettingsFromDisk();
 }
 
-export async function readGlobalSiteSettings(): Promise<GlobalSiteSettings> {
-  if (!isDatabaseConfigured()) {
-    return readGlobalSiteSettingsFromDisk();
-  }
-
-  try {
+const getCachedGlobalSiteSettings = unstable_cache(
+  async (): Promise<GlobalSiteSettings> => {
     const rows = await prisma.$queryRawUnsafe<Array<{ value: Partial<GlobalSiteSettings> }>>(
       "SELECT value FROM site_settings WHERE key = 'global' LIMIT 1",
     );
-
     const fromFile = await readGlobalSiteSettingsFromDisk();
     if (!rows[0]?.value) {
       return fromFile;
@@ -111,6 +107,18 @@ export async function readGlobalSiteSettings(): Promise<GlobalSiteSettings> {
       ...fromFile,
       ...rows[0].value,
     };
+  },
+  ["global-site-settings-v1"],
+  { revalidate: 120 },
+);
+
+export async function readGlobalSiteSettings(): Promise<GlobalSiteSettings> {
+  if (!isDatabaseConfigured()) {
+    return readGlobalSiteSettingsFromDisk();
+  }
+
+  try {
+    return await getCachedGlobalSiteSettings();
   } catch {
     return readGlobalSiteSettingsFromDisk();
   }

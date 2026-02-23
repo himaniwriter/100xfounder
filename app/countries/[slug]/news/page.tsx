@@ -4,21 +4,16 @@ import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/blog/blog-card";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import { getCountryCoverage } from "@/lib/founders/store";
 import { getCountryNewsContext } from "@/lib/news/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const revalidate = 21600;
+export const dynamic = "force-dynamic";
 
 type CountryNewsPageProps = {
   params: { slug: string };
 };
-
-export async function generateStaticParams() {
-  const countries = await getCountryCoverage();
-  return countries.map((item) => ({ slug: item.countrySlug }));
-}
 
 export async function generateMetadata({
   params,

@@ -1,4 +1,5 @@
 import type { Prisma } from "@prisma/client";
+import { unstable_cache } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { isDatabaseConfigured } from "@/lib/db-config";
 import { buildPrimaryLinkedInAvatar } from "@/lib/founders/linkedin";
@@ -252,6 +253,35 @@ function dedupeRepeatedHalf(value: string): string {
     }
   }
   return value.trim();
+}
+
+function isPlaceholderFounderName(founderName: string, companyName: string): boolean {
+  const normalizedFounder = normalizeForMatch(founderName);
+  const normalizedCompany = normalizeForMatch(companyName);
+  const companyKey = canonicalCompanyKey(companyName);
+
+  if (!normalizedFounder || normalizedFounder.length < 3) {
+    return true;
+  }
+
+  if (
+    /\bleadership team\b/.test(normalizedFounder) ||
+    /\bfounding team\b/.test(normalizedFounder) ||
+    /\bexecutive team\b/.test(normalizedFounder)
+  ) {
+    return true;
+  }
+
+  if (
+    normalizedFounder === normalizedCompany ||
+    normalizedFounder === companyKey ||
+    normalizedFounder === `${companyKey} founder` ||
+    normalizedFounder.endsWith(" founder")
+  ) {
+    return true;
+  }
+
+  return false;
 }
 
 function titleCase(value: string): string {
@@ -541,13 +571,65 @@ function finalizeFounderDirectory(
   items: FounderDirectoryItem[],
   options: FounderQueryOptions,
 ): FounderDirectoryItem[] {
-  const filtered = applySeedFilters(items, options);
+  const trustFiltered = items.filter(
+    (item) => !isPlaceholderFounderName(item.founderName, item.companyName),
+  );
+  const filtered = applySeedFilters(trustFiltered, options);
   const countryLimited = applyPerCountryLimit(filtered, options.perCountryLimit);
   if (options.limit && options.limit > 0) {
     return countryLimited.slice(0, options.limit);
   }
   return countryLimited;
 }
+
+function hasScopedFilters(options: FounderQueryOptions): boolean {
+  return Boolean(
+    (options.industry && options.industry.length > 0) ||
+      (options.location && options.location.length > 0) ||
+      (options.stage && options.stage.length > 0) ||
+      (options.country && options.country.length > 0) ||
+      (options.tier && options.tier.length > 0),
+  );
+}
+
+function buildSeededDirectoryBase(): FounderDirectoryItem[] {
+  return applyFeaturedFlag(
+    sortByFundingPriority(
+      dedupeExactDetailProfiles(
+        dedupeCompanyProfiles(PDF_FOUNDER_SEED.map(sanitizeItem)),
+      ),
+    ),
+  );
+}
+
+async function loadFounderDirectoryBaseUnfiltered(): Promise<FounderDirectoryItem[]> {
+  if (!isDatabaseConfigured()) {
+    return buildSeededDirectoryBase();
+  }
+
+  try {
+    const rows = await prisma.founderDirectoryEntry.findMany({
+      orderBy: [{ verified: "desc" }, { foundedYear: "asc" }, { founderName: "asc" }],
+    });
+
+    if (rows.length > 0) {
+      const dbItems = rows.map(mapDbItemToFounder);
+      const mergedItems = mergeUniqueBySlug(dbItems, PDF_FOUNDER_SEED.map(sanitizeItem));
+      const uniqueItems = dedupeExactDetailProfiles(dedupeCompanyProfiles(mergedItems));
+      return applyFeaturedFlag(sortByFundingPriority(uniqueItems));
+    }
+  } catch {
+    // Fallback to seeded base.
+  }
+
+  return buildSeededDirectoryBase();
+}
+
+const getCachedFounderDirectoryBaseUnfiltered = unstable_cache(
+  loadFounderDirectoryBaseUnfiltered,
+  ["founder-directory-base-unfiltered-v1"],
+  { revalidate: 1200 },
+);
 
 export function splitRecentlyFunded(
   items: FounderDirectoryItem[],
@@ -613,6 +695,11 @@ function mapDbItemToFounder(item: {
 export async function getFounderDirectory(
   options: FounderQueryOptions = {},
 ): Promise<FounderDirectoryItem[]> {
+  if (!hasScopedFilters(options)) {
+    const baseItems = await getCachedFounderDirectoryBaseUnfiltered();
+    return finalizeFounderDirectory(baseItems, options);
+  }
+
   if (!isDatabaseConfigured()) {
     const seeded = applyFeaturedFlag(
       sortByFundingPriority(

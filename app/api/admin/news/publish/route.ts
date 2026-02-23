@@ -6,6 +6,7 @@ import {
   updateAdminBlogPost,
 } from "@/lib/admin/blog-content-store";
 import { assessPublishReadiness } from "@/lib/news/service";
+import { revalidateNewsroomPaths } from "@/lib/blog/revalidate";
 
 const publishSchema = z.object({
   slug: z.string().min(2),
@@ -79,6 +80,7 @@ export async function POST(request: NextRequest) {
         { status: 500 },
       );
     }
+    revalidateNewsroomPaths(updated.slug);
 
     return NextResponse.json({
       success: true,

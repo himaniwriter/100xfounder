@@ -13,6 +13,8 @@ import {
   Images,
   Settings,
   Sparkles,
+  PenSquare,
+  ShoppingCart,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -20,6 +22,9 @@ const navItems = [
   { label: "Dashboard", href: "/admin", icon: Gauge },
   { label: "Data (Supabase)", href: "/admin/data", icon: Database },
   { label: "Featured Requests", href: "/admin/featured-requests", icon: Star },
+  { label: "Interview Submissions", href: "/admin/interview-submissions", icon: PenSquare },
+  { label: "Guest Post Orders", href: "/admin/guest-post-orders", icon: ShoppingCart },
+  { label: "Social Feed", href: "/admin/social-feed", icon: Images },
   { label: "Analytics", href: "/admin/analytics", icon: BarChart3 },
   { label: "Content (Blog/Pages)", href: "/admin/content", icon: FileText },
   { label: "Newsroom Checklist", href: "/admin/newsroom-checklist", icon: CheckSquare },

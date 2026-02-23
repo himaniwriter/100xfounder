@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { readGlobalSiteSettings } from "@/lib/site-settings";
 import { sanitizeAdminEmbedHtml } from "@/lib/security/sanitize";
 import "./globals.css";
+
+const GlobalCommandPalette = dynamic(
+  () =>
+    import("@/components/system/global-command-palette").then(
+      (module) => module.GlobalCommandPalette,
+    ),
+  {
+    ssr: false,
+  },
+);
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,6 +54,7 @@ export default async function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
       >
         {children}
+        <GlobalCommandPalette />
         {safeBodyCode ? (
           <div
             id="admin-body-code"

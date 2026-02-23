@@ -12,6 +12,7 @@ import Link from "next/link";
 import { GlassCard } from "@/components/ui/glass-card";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
+import { getUserSubmittedExternalRel } from "@/lib/seo/external-links";
 import { cn } from "@/lib/utils";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
 
@@ -70,7 +71,6 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
             <div className="flex flex-wrap items-center gap-2">
               <Link
                 href={profileUrl}
-                prefetch={false}
                 className="truncate text-[1.1rem] font-semibold text-white transition-colors hover:text-indigo-200"
               >
                 {founder.founderName}
@@ -131,7 +131,6 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
         >
           <Link
             href={profileUrl}
-            prefetch={false}
             className="glass-cta-btn w-full justify-center sm:w-auto"
           >
             View Contact
@@ -140,7 +139,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
           <a
             href={linkedInUrl}
             target="_blank"
-            rel="noreferrer"
+            rel={getUserSubmittedExternalRel()}
             aria-label={`Open ${founder.founderName} on LinkedIn`}
             className="glass-ghost-btn glass-ghost-btn-icon"
           >

@@ -90,7 +90,6 @@ export default async function SignalsPage() {
                 <Link
                   key={item.id}
                   href={`/company/${item.companySlug}`}
-                  prefetch={false}
                   className="grid grid-cols-1 gap-2 rounded-lg border border-white/10 bg-black/25 px-3 py-2 transition-colors hover:border-white/30 sm:grid-cols-[minmax(0,1fr)_140px] sm:items-center sm:gap-3"
                 >
                   <div className="flex items-center gap-2">

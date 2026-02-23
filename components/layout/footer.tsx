@@ -1,4 +1,8 @@
 import Link from "next/link";
+import {
+  buildWhatsAppRedirectPath,
+  getInstagramProfileUrl,
+} from "@/lib/marketing/outreach";
 
 const footerColumns = [
   {
@@ -6,6 +10,11 @@ const footerColumns = [
     links: [
       { label: "About", href: "/about" },
       { label: "Newsroom", href: "/blog" },
+      { label: "Feature Now", href: "/feature-now" },
+      { label: "Get Featured", href: "/get-featured" },
+      { label: "Interview Questionnaire", href: "/interview-questionnaire" },
+      { label: "Guest Post Marketplace", href: "/guest-post-marketplace" },
+      { label: "Guest Post Order", href: "/guest-post-order" },
       { label: "News Topics", href: "/topics" },
       { label: "Funding Round News", href: "/funding-rounds" },
       { label: "Authors", href: "/authors" },
@@ -127,6 +136,12 @@ const highIntentKeywords = [
 ];
 
 export function Footer() {
+  const instagramUrl = getInstagramProfileUrl();
+  const whatsappHref = buildWhatsAppRedirectPath({
+    context: "footer",
+    source: "footer",
+  });
+
   return (
     <footer className="border-t border-white/10 bg-black/95">
       <div className="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
@@ -138,14 +153,22 @@ export function Footer() {
                 Follow daily founder signals, funding clips, and ecosystem snapshots.
               </p>
             </div>
-            <a
-              href="https://www.instagram.com/100x.founder/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex h-10 items-center justify-center rounded-lg border border-pink-400/35 bg-pink-500/10 px-4 text-sm font-medium text-pink-200 transition-colors hover:bg-pink-500/20"
-            >
-              Open Instagram
-            </a>
+            <div className="flex flex-wrap gap-2">
+              <a
+                href={instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex h-10 items-center justify-center rounded-lg border border-pink-400/35 bg-pink-500/10 px-4 text-sm font-medium text-pink-200 transition-colors hover:bg-pink-500/20"
+              >
+                Open Instagram
+              </a>
+              <a
+                href={whatsappHref}
+                className="inline-flex h-10 items-center justify-center rounded-lg border border-emerald-400/35 bg-emerald-500/10 px-4 text-sm font-medium text-emerald-200 transition-colors hover:bg-emerald-500/20"
+              >
+                WhatsApp Us
+              </a>
+            </div>
           </div>
         </div>
 

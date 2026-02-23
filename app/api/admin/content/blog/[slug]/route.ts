@@ -6,6 +6,7 @@ import {
   readAdminBlogPostBySlug,
   updateAdminBlogPost,
 } from "@/lib/admin/blog-content-store";
+import { revalidateNewsroomPaths } from "@/lib/blog/revalidate";
 
 const updateBlogSchema = z.object({
   title: z.string().min(4).optional(),
@@ -109,6 +110,7 @@ export async function PATCH(
         { status: 404 },
       );
     }
+    revalidateNewsroomPaths(post.slug);
 
     return NextResponse.json({ success: true, post });
   } catch (error) {
@@ -139,6 +141,7 @@ export async function DELETE(
         { status: 404 },
       );
     }
+    revalidateNewsroomPaths(context.params.slug);
 
     return NextResponse.json({ success: true });
   } catch (error) {

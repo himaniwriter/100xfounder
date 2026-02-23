@@ -1,4 +1,4 @@
-export type SearchResultType = "founder" | "company" | "blog";
+export type SearchResultType = "founder" | "company" | "blog" | "signal" | "topic";
 
 export type SearchFounderResult = {
   slug: string;
@@ -28,6 +28,26 @@ export type SearchBlogResult = {
   publishedAt: string;
 };
 
+export type SearchSignalResult = {
+  id: string;
+  companyName: string;
+  founderName: string;
+  companySlug: string;
+  industry: string;
+  stage: string;
+  country: string;
+  fundingTotal: string;
+  lastRound: string;
+  isHiring: boolean;
+};
+
+export type SearchTopicResult = {
+  slug: string;
+  label: string;
+  count: number;
+  lastPublishedAt: string;
+};
+
 export type SearchApiResponse = {
   success: true;
   query: string;
@@ -35,6 +55,8 @@ export type SearchApiResponse = {
     founders: SearchFounderResult[];
     companies: SearchCompanyResult[];
     posts: SearchBlogResult[];
+    signals: SearchSignalResult[];
+    topics: SearchTopicResult[];
   };
   total: number;
 };

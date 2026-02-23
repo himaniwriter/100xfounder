@@ -11,12 +11,22 @@ import {
   type FeaturedPlanKey,
 } from "@/lib/featured/config";
 import { trackSiteEvent } from "@/lib/client-tracking";
+import { InstagramFeedGrid } from "@/components/social/instagram-feed-grid";
+import type { InstagramFeedItem } from "@/lib/outreach/types";
 
 type GetFeaturedClientProps = {
   n8nFormUrl: string;
+  instagramUrl: string;
+  instagramFeed: InstagramFeedItem[];
+  whatsappHeroHref: string;
 };
 
-export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
+export function GetFeaturedClient({
+  n8nFormUrl,
+  instagramUrl,
+  instagramFeed,
+  whatsappHeroHref,
+}: GetFeaturedClientProps) {
   const ceoBenefits = [
     {
       title: "Earn trust faster",
@@ -44,6 +54,24 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
     "Editorial review checks credibility and data quality",
     "Approved profiles receive payment instructions",
     "Your founder profile is published after final QA",
+  ];
+  const trustItems = [
+    {
+      label: "Review SLA",
+      value: "Starter: 7 days • Growth: 3 days • Priority: 24 hours",
+    },
+    {
+      label: "Verification Scope",
+      value: "Founder identity, company website, funding references, and public profile links",
+    },
+    {
+      label: "Publish Window",
+      value: "Profiles are published after manual approval and final editorial QA",
+    },
+    {
+      label: "Revision Policy",
+      value: "Starter includes one revision, Growth and Priority include expanded update cycles",
+    },
   ];
   const searchParams = useSearchParams();
   const [form, setForm] = useState({
@@ -142,7 +170,43 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
             Manual approval before publish
           </span>
         </div>
-        <div className="mt-6">
+        <div className="mt-6 flex flex-wrap gap-2">
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() =>
+              trackSiteEvent({
+                event_name: "cta_click",
+                path: "/get-featured",
+                payload: {
+                  cta_label: "Follow Instagram",
+                  cta_target: instagramUrl,
+                  section: "get_featured_hero",
+                },
+              })
+            }
+            className="inline-flex items-center rounded-md border border-pink-400/35 bg-pink-500/10 px-4 py-2 text-sm font-medium text-pink-200 transition-colors hover:bg-pink-500/20"
+          >
+            Follow on Instagram
+          </a>
+          <a
+            href={whatsappHeroHref}
+            onClick={() =>
+              trackSiteEvent({
+                event_name: "cta_click",
+                path: "/get-featured",
+                payload: {
+                  cta_label: "Contact on WhatsApp",
+                  cta_target: whatsappHeroHref,
+                  section: "get_featured_hero",
+                },
+              })
+            }
+            className="inline-flex items-center rounded-md border border-emerald-400/35 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-200 transition-colors hover:bg-emerald-500/20"
+          >
+            Contact on WhatsApp
+          </a>
           <a
             href="#apply"
             onClick={() =>
@@ -175,6 +239,18 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
             <p className="mt-2 text-sm text-zinc-300">{benefit.description}</p>
           </div>
         ))}
+      </section>
+
+      <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-md">
+        <h2 className="text-lg font-semibold text-white">Trust and Review Standards</h2>
+        <div className="mt-4 grid gap-3 md:grid-cols-2">
+          {trustItems.map((item) => (
+            <article key={item.label} className="rounded-md border border-white/10 bg-black/30 p-3">
+              <p className="text-xs uppercase tracking-[0.14em] text-zinc-500">{item.label}</p>
+              <p className="mt-1 text-sm text-zinc-300">{item.value}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="grid gap-4 md:grid-cols-3">
@@ -224,7 +300,8 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
             />
           ) : (
             <div className="mt-4 rounded-xl border border-amber-400/35 bg-amber-500/10 p-4 text-sm text-amber-200">
-              Set <code>NEXT_PUBLIC_N8N_FEATURED_FORM_URL</code> to render your embedded n8n form.
+              The embedded application form is temporarily unavailable. Please use the fallback
+              form on this page and our team will process your request.
             </div>
           )}
         </div>
@@ -353,6 +430,14 @@ export function GetFeaturedClient({ n8nFormUrl }: GetFeaturedClientProps) {
           {success ? <p className="mt-3 text-xs text-emerald-300">{success}</p> : null}
         </div>
       </section>
+
+      <InstagramFeedGrid
+        items={instagramFeed}
+        profileUrl={instagramUrl}
+        title="Latest on Instagram"
+        description="Social proof from founder spotlights and ecosystem updates."
+        compact
+      />
 
       <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-md">
         <h2 className="text-lg font-semibold text-white">What happens after you apply</h2>

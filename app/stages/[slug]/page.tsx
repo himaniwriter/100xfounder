@@ -3,20 +3,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import { getFoundersByStageSlug, getStageOptions } from "@/lib/founders/hubs";
+import { getFoundersByStageSlug } from "@/lib/founders/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const revalidate = 21600;
+export const dynamic = "force-dynamic";
 
 type StagePageProps = {
   params: { slug: string };
 };
-
-export async function generateStaticParams() {
-  const options = await getStageOptions();
-  return options.map((item) => ({ slug: item.slug }));
-}
 
 export async function generateMetadata({ params }: StagePageProps): Promise<Metadata> {
   const context = await getFoundersByStageSlug(params.slug);

@@ -9,7 +9,10 @@ type HookKey =
   | "news_scraper"
   | "newsletter_distribution"
   | "data_enrichment"
-  | "founders_sync";
+  | "founders_sync"
+  | "interview_intake"
+  | "guest_post_orders"
+  | "instagram_sync";
 
 type HookConfig = {
   key: HookKey;
@@ -105,6 +108,24 @@ async function loadHookConfigs(): Promise<{
         settings.n8nFoundersSyncWebhookUrl.trim() ||
         process.env.N8N_FOUNDERS_SYNC_WEBHOOK_URL ||
         "",
+      required: false,
+    },
+    {
+      key: "interview_intake",
+      label: "Interview Intake",
+      url: process.env.N8N_INTERVIEW_WEBHOOK_URL || "",
+      required: true,
+    },
+    {
+      key: "guest_post_orders",
+      label: "Guest Post Orders",
+      url: process.env.N8N_GUEST_POST_WEBHOOK_URL || "",
+      required: false,
+    },
+    {
+      key: "instagram_sync",
+      label: "Instagram Sync",
+      url: process.env.N8N_INSTAGRAM_SYNC_WEBHOOK_URL || "",
       required: false,
     },
   ];

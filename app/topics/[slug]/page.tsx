@@ -6,18 +6,14 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
-import { getTopicNewsContext, getTopicSummaries } from "@/lib/news/hubs";
+import { getTopicNewsContext } from "@/lib/news/hubs";
 
 export const revalidate = 21600;
+export const dynamic = "force-dynamic";
 
 type TopicNewsPageProps = {
   params: { slug: string };
 };
-
-export async function generateStaticParams() {
-  const topics = await getTopicSummaries(120);
-  return topics.map((item) => ({ slug: item.slug }));
-}
 
 export async function generateMetadata({
   params,

@@ -339,11 +339,75 @@ model FeaturedFounderRequest {
   publishedFounderEntryId String?              @map("published_founder_entry_id")
   createdAt              DateTime              @default(now()) @map("created_at")
   updatedAt              DateTime              @updatedAt @map("updated_at")
+  interviewSubmissions   InterviewQuestionnaireSubmission[]
 
   @@index([status, createdAt(sort: Desc)])
   @@index([workEmail])
   @@index([companyName])
   @@map("featured_founder_requests")
+}
+
+model InterviewQuestionnaireSubmission {
+  id              String                 @id @default(uuid()) @db.Uuid
+  featuredRequestId String?              @db.Uuid @map("featured_request_id")
+  founderName      String                @map("founder_name")
+  workEmail        String                @map("work_email")
+  companyName      String                @map("company_name")
+  responsesJson    Json                  @map("responses_json")
+  assetLinksJson   Json?                 @map("asset_links_json")
+  externalSubmissionId String?           @unique @map("external_submission_id")
+  status           String                @default("new")
+  source           String                @default("site_form")
+  reviewNotes      String?               @map("review_notes")
+  createdAt        DateTime              @default(now()) @map("created_at")
+  updatedAt        DateTime              @updatedAt @map("updated_at")
+  featuredRequest  FeaturedFounderRequest? @relation(fields: [featuredRequestId], references: [id], onDelete: SetNull)
+
+  @@index([status, createdAt(sort: Desc)])
+  @@index([workEmail])
+  @@index([companyName])
+  @@index([featuredRequestId])
+  @@map("interview_questionnaire_submissions")
+}
+
+model GuestPostOrder {
+  id                   String   @id @default(uuid()) @db.Uuid
+  name                 String
+  workEmail            String   @map("work_email")
+  companyName          String   @map("company_name")
+  websiteUrl           String?  @map("website_url")
+  targetUrl            String?  @map("target_url")
+  topic                String
+  brief                String
+  budgetInr            Int?     @map("budget_inr")
+  packageKey           String?  @map("package_key")
+  source               String   @default("site_form")
+  externalSubmissionId String?  @unique @map("external_submission_id")
+  status               String   @default("new")
+  reviewNotes          String?  @map("review_notes")
+  createdAt            DateTime @default(now()) @map("created_at")
+  updatedAt            DateTime @updatedAt @map("updated_at")
+
+  @@index([status, createdAt(sort: Desc)])
+  @@index([workEmail])
+  @@index([companyName])
+  @@map("guest_post_orders")
+}
+
+model InstagramPost {
+  id             String   @id @default(uuid()) @db.Uuid
+  externalPostId String   @unique @map("external_post_id")
+  caption        String?
+  mediaUrl       String   @map("media_url")
+  permalink      String
+  thumbnailUrl   String?  @map("thumbnail_url")
+  postedAt       DateTime @map("posted_at")
+  ingestedAt     DateTime @default(now()) @map("ingested_at")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  @@index([postedAt(sort: Desc)])
+  @@map("instagram_posts")
 }
 
 model PricingWaitlistRequest {

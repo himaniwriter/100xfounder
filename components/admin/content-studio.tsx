@@ -259,6 +259,17 @@ export function ContentStudio() {
 
                   <div className="mt-3 flex flex-wrap items-center gap-2">
                     <Link
+                      href={
+                        post.status === "PUBLISHED"
+                          ? `/blog/${post.slug}`
+                          : `/blog/${post.slug}?preview=1`
+                      }
+                      target="_blank"
+                      className="rounded-md border border-blue-400/35 bg-blue-500/10 px-2.5 py-1 text-xs text-blue-200 hover:bg-blue-500/20"
+                    >
+                      Preview
+                    </Link>
+                    <Link
                       href={`/admin/content/blog/${post.slug}`}
                       className="rounded-md border border-indigo-400/35 bg-indigo-500/10 px-2.5 py-1 text-xs text-indigo-200 hover:bg-indigo-500/20"
                     >

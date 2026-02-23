@@ -102,6 +102,27 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
         </div>
 
         <aside className="space-y-5">
+          <div className="rounded-2xl border border-indigo-400/30 bg-indigo-500/10 p-4 backdrop-blur-md">
+            <p className="text-xs uppercase tracking-[0.22em] text-indigo-200">Get Featured</p>
+            <p className="mt-2 text-sm text-zinc-200">
+              Founder story to publish? Use our feature funnel or guest-post order flow.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <Link
+                href="/get-featured"
+                className="rounded-md border border-indigo-300/40 bg-indigo-400/10 px-2.5 py-1.5 text-xs text-indigo-100 transition-colors hover:bg-indigo-400/20"
+              >
+                Get Featured
+              </Link>
+              <Link
+                href="/guest-post-marketplace"
+                className="rounded-md border border-white/20 bg-black/30 px-2.5 py-1.5 text-xs text-zinc-200 transition-colors hover:border-white/35"
+              >
+                Guest Post Plans
+              </Link>
+            </div>
+          </div>
+
           <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md">
             <h2 className="text-xs uppercase tracking-[0.22em] text-zinc-500">Trending on Desk</h2>
             <div className="mt-3 space-y-3">

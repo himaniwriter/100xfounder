@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { ClaimPanel } from "@/components/dashboard/claim-panel";
 import { AdminConnectorsPanel } from "@/components/dashboard/admin-connectors-panel";
+import { ProfileSettingsPanel } from "@/components/dashboard/profile-settings-panel";
 import { getSessionFromCookies } from "@/lib/auth/session";
 import { getFounderDirectory } from "@/lib/founders/store";
 import { prisma } from "@/lib/prisma";
@@ -36,8 +37,22 @@ export default async function DashboardPage() {
     isActive: boolean;
     lastSyncAt: Date | null;
   }> = [];
+  let profileName: string | null = session.name ?? null;
+  let profileAvatarUrl: string | null = null;
 
   try {
+    const user = await prisma.user.findUnique({
+      where: { id: session.userId },
+      select: {
+        name: true,
+        avatar: true,
+      },
+    });
+    if (user) {
+      profileName = user.name;
+      profileAvatarUrl = user.avatar;
+    }
+
     claims = await prisma.claimRequest.findMany({
       where: { userId: session.userId },
       orderBy: { createdAt: "desc" },
@@ -106,6 +121,14 @@ export default async function DashboardPage() {
             {dbWarning}
           </div>
         ) : null}
+
+        <div className="mb-6">
+          <ProfileSettingsPanel
+            email={session.email}
+            initialName={profileName}
+            initialAvatarUrl={profileAvatarUrl}
+          />
+        </div>
 
         <div className="grid gap-6 lg:grid-cols-2">
           <ClaimPanel founderOptions={founderOptions} />

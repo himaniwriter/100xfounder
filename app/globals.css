@@ -89,15 +89,17 @@ body {
 @layer components {
   .glass-header {
     position: relative;
+    isolation: isolate;
+    overflow: clip;
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     background:
       linear-gradient(
         120deg,
-        rgba(255, 255, 255, 0.16) 0%,
-        rgba(255, 255, 255, 0.04) 36%,
-        rgba(255, 255, 255, 0.1) 100%
+        rgba(255, 255, 255, 0.12) 0%,
+        rgba(255, 255, 255, 0.03) 36%,
+        rgba(255, 255, 255, 0.07) 100%
       ),
-      rgba(8, 8, 12, 0.48);
+      rgba(8, 8, 12, 0.9);
     background-size:
       180% 180%,
       auto;
@@ -113,7 +115,7 @@ body {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 60%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 62%);
   }
 
   .glass-header a,

@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { ChevronDown, Search } from "lucide-react";
-import { getSessionFromCookies } from "@/lib/auth/session";
-import { LogoutButton } from "@/components/dashboard/logout-button";
+import { ChevronDown } from "lucide-react";
+import { NavbarAuthActions } from "@/components/layout/navbar-auth-actions";
+import { CommandPaletteTrigger } from "@/components/system/command-palette-trigger";
 
 const primaryNavLinks = [
   { label: "Home", href: "/" },
   { label: "Signals", href: "/signals" },
-  { label: "Newsroom", href: "/blog" },
+  { label: "Blog", href: "/blog" },
   { label: "Pricing", href: "/pricing" },
 ];
 
@@ -18,11 +18,13 @@ const mobileNavLinks = [
   { label: "Stages", href: "/stages" },
   { label: "Startups", href: "/startups" },
   { label: "Signals", href: "/signals" },
-  { label: "Newsroom", href: "/blog" },
+  { label: "Blog", href: "/blog" },
   { label: "Topics", href: "/topics" },
   { label: "Pricing", href: "/pricing" },
   { label: "Search", href: "/search" },
   { label: "Get Featured", href: "/get-featured" },
+  { label: "Interview Q&A", href: "/interview-questionnaire" },
+  { label: "Guest Posts", href: "/guest-post-marketplace" },
 ];
 
 const megaMenuSections = [
@@ -94,13 +96,21 @@ const megaMenuSections = [
         href: "/search",
         description: "Query founders, companies, and blog posts.",
       },
+      {
+        label: "Interview Questionnaire",
+        href: "/interview-questionnaire",
+        description: "Structured Q&A intake for approved founder features.",
+      },
+      {
+        label: "Guest Post Marketplace",
+        href: "/guest-post-marketplace",
+        description: "Sponsored startup story packages and order flow.",
+      },
     ],
   },
 ];
 
-export async function Navbar() {
-  const session = await getSessionFromCookies();
-
+export function Navbar() {
   return (
     <header className="glass-header sticky top-0 z-50">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -114,7 +124,6 @@ export async function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                prefetch={false}
                 className="text-sm text-zinc-400 transition-colors hover:text-white"
               >
                 {link.label}
@@ -146,7 +155,6 @@ export async function Navbar() {
                           <Link
                             key={link.label}
                             href={link.href}
-                            prefetch={false}
                             className="block rounded-lg border border-transparent p-2 transition-colors hover:border-white/15 hover:bg-white/[0.04]"
                           >
                             <p className="text-sm font-medium text-white">{link.label}</p>
@@ -168,23 +176,8 @@ export async function Navbar() {
             >
               Get Featured
             </Link>
-            {session ? (
-              <LogoutButton />
-            ) : (
-              <Link
-                href="/login"
-                className="inline-flex h-9 items-center rounded-md border border-white/10 bg-white/5 px-2.5 text-xs text-zinc-300 transition-colors hover:border-white/20 hover:text-white sm:px-3 sm:text-sm"
-              >
-                Login
-              </Link>
-            )}
-            <Link
-              href="/search"
-              aria-label="Open search"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
-            >
-              <Search className="h-4 w-4" />
-            </Link>
+            <NavbarAuthActions />
+            <CommandPaletteTrigger />
           </div>
         </div>
 
@@ -193,7 +186,6 @@ export async function Navbar() {
             <Link
               key={`mobile-${link.label}`}
               href={link.href}
-              prefetch={false}
               className="shrink-0 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
             >
               {link.label}

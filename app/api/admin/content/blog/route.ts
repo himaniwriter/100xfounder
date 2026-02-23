@@ -7,6 +7,7 @@ import {
   readAdminBlogPosts,
 } from "@/lib/admin/blog-content-store";
 import { slugify } from "@/lib/blog/post-utils";
+import { revalidateNewsroomPaths } from "@/lib/blog/revalidate";
 
 const createBlogSchema = z.object({
   title: z.string().min(4),
@@ -100,6 +101,7 @@ export async function POST(request: NextRequest) {
       thumbnail: parsed.data.thumbnail ?? "/images/covers/startup-brief.svg",
       imageCredit: parsed.data.imageCredit,
     });
+    revalidateNewsroomPaths(post.slug);
 
     return NextResponse.json({ success: true, post }, { status: 201 });
   } catch (error) {

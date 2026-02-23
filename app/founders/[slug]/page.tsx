@@ -5,6 +5,7 @@ import { ProfileFaqSection } from "@/components/seo/profile-faq-section";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { ProfileTabs } from "@/components/founders/profile-tabs";
+import { GetFeaturedCtaCard } from "@/components/shared/get-featured-cta-card";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
 import {
@@ -15,6 +16,7 @@ import {
   buildFounderFaqs,
   buildFounderProfileSchema,
 } from "@/lib/seo/profile-seo";
+import { getUserSubmittedExternalRel } from "@/lib/seo/external-links";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
@@ -155,6 +157,12 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
               )}
             </div>
           </section>
+
+          <GetFeaturedCtaCard
+            context="founder_profile"
+            description="Get your founder profile published with verified funding and hiring context."
+          />
+
           <ProfileFaqSection
             title={`FAQs About ${founder.founderName}`}
             faqs={faqs}
@@ -171,7 +179,7 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
               <a
                 href={founder.ycProfileUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel={getUserSubmittedExternalRel()}
                 className="inline-flex items-center rounded-lg border border-[#6366f1]/30 bg-[#6366f1]/10 px-4 py-2 text-sm text-indigo-300 transition-colors hover:bg-[#6366f1]/20"
               >
                 View on YC Founders

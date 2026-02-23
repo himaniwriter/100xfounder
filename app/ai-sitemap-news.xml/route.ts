@@ -27,6 +27,11 @@ export async function GET() {
 
   const hubs = [
     "/blog",
+    "/feature-now",
+    "/get-featured",
+    "/interview-questionnaire",
+    "/guest-post-marketplace",
+    "/guest-post-order",
     "/topics",
     "/funding-rounds",
     "/authors",

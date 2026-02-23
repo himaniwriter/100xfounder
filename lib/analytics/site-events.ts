@@ -6,7 +6,10 @@ export type SiteEventName =
   | "cta_click"
   | "featured_form_submit"
   | "pricing_waitlist_submit"
-  | "search_submit";
+  | "search_submit"
+  | "interview_questionnaire_submit"
+  | "guest_post_order_submit"
+  | "whatsapp_redirect";
 
 export type SiteEventPayload = {
   event_name: SiteEventName;

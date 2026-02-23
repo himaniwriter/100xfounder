@@ -12,6 +12,21 @@ const cards = [
     href: "/admin/featured-requests",
   },
   {
+    title: "Interview Submissions",
+    description: "Review interview questionnaire responses and move them to publish-ready.",
+    href: "/admin/interview-submissions",
+  },
+  {
+    title: "Guest Post Orders",
+    description: "Process sponsored guest-post requests and editorial review notes.",
+    href: "/admin/guest-post-orders",
+  },
+  {
+    title: "Social Feed",
+    description: "Preview ingested Instagram posts shown in public conversion pages.",
+    href: "/admin/social-feed",
+  },
+  {
     title: "Analytics",
     description: "Monitor conversion funnel performance for search and lead capture.",
     href: "/admin/analytics",

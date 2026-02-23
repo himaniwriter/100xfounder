@@ -1,18 +1,21 @@
 import Link from "next/link";
-import { ShieldCheck, Zap, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Zap, ArrowRight } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { BlogCard } from "@/components/blog/blog-card";
-import { HalfBlurValue } from "@/components/ui/half-blur-value";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
 import { GlassCard } from "@/components/ui/glass-card";
+import { NewsCoverImage } from "@/components/ui/news-cover-image";
 import { HeroCtaGroup } from "@/components/home/hero-cta-group";
 import { HomeSearchBar } from "@/components/home/home-search-bar";
+import { InstagramFeedGrid } from "@/components/social/instagram-feed-grid";
 import { getBlogHomeSections } from "@/lib/blog/store";
 import { readHomepageContent } from "@/lib/content/homepage-content";
 import { countryToSlug } from "@/lib/founders/country-tier";
 import { getFounderDirectory, splitRecentlyFunded } from "@/lib/founders/store";
+import { getInstagramProfileUrl } from "@/lib/marketing/outreach";
+import { getInstagramFeed } from "@/lib/outreach/instagram";
 
 function parseAmountToMillions(amount: string): number {
   const normalized = amount.trim().toUpperCase();
@@ -28,6 +31,8 @@ function parseAmountToMillions(amount: string): number {
 export default async function HomePage() {
   const homepageContent = await readHomepageContent();
   const founders = await getFounderDirectory({ limit: 80 });
+  const instagramUrl = getInstagramProfileUrl();
+  const instagramFeed = await getInstagramFeed(6);
   const { recent } = splitRecentlyFunded(founders, 12);
   const featuredFounders = (recent.length > 0 ? recent : founders).slice(0, 3);
   const companyHrefMap = new Map(
@@ -131,10 +136,25 @@ export default async function HomePage() {
     new Set(founders.map((item) => item.companyName)),
   );
   const { posts: blogPosts } = await getBlogHomeSections();
-  const latestHomeArticles = blogPosts.slice(0, 6);
+  const latestHomeArticles = blogPosts.slice(0, 12);
   const leadHomeArticle = latestHomeArticles[0] ?? null;
-  const sideHomeArticles = latestHomeArticles.slice(1, 4);
-  const extraHomeArticles = latestHomeArticles.slice(4, 6);
+  const headlineArticles = latestHomeArticles.slice(1, 7);
+  const recentCategoryWindow = blogPosts.slice(0, 24);
+  const categoryBuckets = new Map<string, typeof blogPosts>();
+  recentCategoryWindow.forEach((post) => {
+    const key = post.category?.trim() || "Founder Intelligence";
+    const existing = categoryBuckets.get(key) ?? [];
+    existing.push(post);
+    categoryBuckets.set(key, existing);
+  });
+  const categorySections = Array.from(categoryBuckets.entries())
+    .map(([category, posts]) => ({
+      category,
+      count: posts.length,
+      posts: posts.slice(0, 4),
+    }))
+    .sort((left, right) => right.count - left.count || left.category.localeCompare(right.category))
+    .slice(0, 4);
   const topCountrySlug =
     countryToSlug(
       founders.find((item) => (item.country ?? "Unknown") !== "Unknown")?.country ?? "India",
@@ -475,100 +495,106 @@ export default async function HomePage() {
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md md:p-8">
-            <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <h2 className="text-2xl font-semibold tracking-tight text-white">
-                  Direct Contact Access
-                </h2>
-                <p className="mt-2 max-w-2xl text-sm text-zinc-400">
-                  Every profile includes visible contact details, verified tags, and key business
-                  signals so your outreach can start immediately.
-                </p>
-              </div>
-              <Link
-                href="/founders"
-                className="glass-cta-btn shrink-0"
-              >
-                Open Directory
-              </Link>
-            </div>
-
-            <div className="grid gap-4 md:grid-cols-2">
-              <GlassCard className="p-5">
-                <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">Profile Snapshot</p>
-                <div className="mt-4 space-y-2">
-                  <h3 className="text-lg font-semibold text-white">Mukesh Ambani</h3>
-                  <p className="text-sm text-zinc-300">Reliance Industries</p>
-                  <p className="text-sm text-zinc-400">Sector: Energy, Telecom, Retail</p>
-                </div>
-                <div className="mt-5 space-y-2 rounded-lg border border-white/10 bg-black/30 p-3">
-                  <div className="rounded-md border border-white/10 bg-white/5 p-2">
-                    <p className="text-sm text-zinc-300">
-                      Email: <HalfBlurValue value="rmukesh@ril.com" className="font-medium tracking-wide" />
-                    </p>
-                  </div>
-                  <div className="rounded-md border border-white/10 bg-white/5 p-2">
-                    <p className="text-sm text-zinc-300">
-                      Phone: <HalfBlurValue value="+91 98765 43210" className="font-medium tracking-wide" />
-                    </p>
-                  </div>
-                </div>
-              </GlassCard>
-
-              <GlassCard className="p-5">
-                <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">Verified Access</p>
-                <div className="mt-4 space-y-2">
-                  <h3 className="text-lg font-semibold text-white">Mukesh Ambani</h3>
-                  <p className="text-sm text-zinc-300">Reliance Industries</p>
-                  <p className="inline-flex items-center gap-1 text-sm text-emerald-300">
-                    <CheckCircle2 className="h-4 w-4" />
-                    Verified
-                  </p>
-                </div>
-                <div className="mt-5 space-y-2 rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-3">
-                  <p className="rounded-md border border-white/10 bg-white/5 p-2 text-sm text-zinc-200">
-                    Email: <HalfBlurValue value="rmukesh@ril.com" className="font-medium tracking-wide" />
-                  </p>
-                  <p className="rounded-md border border-white/10 bg-white/5 p-2 text-sm text-zinc-200">
-                    Phone: <HalfBlurValue value="+91 98765 43210" className="font-medium tracking-wide" />
-                  </p>
-                  <p className="rounded-md border border-white/10 bg-white/5 p-2 text-sm text-zinc-200">
-                    LinkedIn: linkedin.com/in/mukeshambani
-                  </p>
-                </div>
-              </GlassCard>
-            </div>
-          </div>
-        </section>
-
-        <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <h2 className="text-2xl font-semibold tracking-tight text-white">
-              Latest Startup Intelligence From Our Newsroom
+              Trending News by Category
             </h2>
             <Link
               href="/blog"
               className="glass-ghost-btn"
             >
-              Open full newsroom
+              Open Blog
             </Link>
           </div>
+
+          <p className="mb-5 max-w-3xl text-sm text-zinc-400">
+            Browse the day&apos;s top startup headlines organized by high-signal categories.
+          </p>
 
           <div className="grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
             {leadHomeArticle ? <BlogCard post={leadHomeArticle} variant="hero" priority /> : null}
 
-            <div className="space-y-3">
-              {sideHomeArticles.map((post) => (
-                <BlogCard key={post.slug} post={post} variant="stack" />
-              ))}
+            <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md">
+              <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+                Trending Headlines
+              </p>
+
+              <div className="mt-3 divide-y divide-white/10">
+                {headlineArticles.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="block py-3 transition-colors hover:text-white"
+                  >
+                    <p className="text-base font-medium leading-snug text-zinc-100">
+                      {post.title}
+                    </p>
+                    <p className="mt-1 text-xs text-zinc-500">
+                      {post.category} • {post.readingTime}
+                    </p>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 
-          {extraHomeArticles.length > 0 ? (
-            <div className="mt-5 grid gap-3 md:grid-cols-2">
-              {extraHomeArticles.map((post) => (
-                <BlogCard key={post.slug} post={post} variant="feed" />
+          {categorySections.length > 0 ? (
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {categorySections.map((section) => (
+                <article
+                  key={section.category}
+                  className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md"
+                >
+                  <div className="mb-3 flex items-center justify-between gap-2">
+                    <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-zinc-200">
+                      {section.category}
+                    </h3>
+                    <span className="rounded-full border border-white/15 bg-black/30 px-2 py-0.5 text-[11px] text-zinc-400">
+                      {section.count} stories
+                    </span>
+                  </div>
+
+                  <div className="space-y-2">
+                    {section.posts.map((post, index) => (
+                      <Link
+                        key={post.slug}
+                        href={`/blog/${post.slug}`}
+                        className="group grid grid-cols-[92px_minmax(0,1fr)] gap-3 rounded-lg border border-white/10 bg-black/30 p-2.5 transition-colors hover:border-white/25 hover:bg-white/[0.04]"
+                      >
+                        <NewsCoverImage
+                          title={post.title}
+                          imageUrl={post.thumbnail}
+                          uniqueId={`${section.category}-${post.slug}`}
+                          className="h-16 w-full rounded-md border border-white/10"
+                          imageClassName="transition-transform duration-500 group-hover:scale-105"
+                        />
+
+                        <div className="min-w-0">
+                          <p
+                            className={
+                              index === 0
+                                ? "line-clamp-2 text-sm font-semibold text-white"
+                                : "line-clamp-2 text-sm text-zinc-300"
+                            }
+                          >
+                            {post.title}
+                          </p>
+                          <p className="mt-1 text-[11px] text-zinc-500">
+                            {post.readingTime}
+                          </p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+
+                  <Link
+                    href={`/blog?category=${encodeURIComponent(section.category)}`}
+                    className="mt-3 inline-flex items-center gap-1 text-xs text-indigo-300 transition-colors hover:text-indigo-200"
+                  >
+                    View {section.category} News
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                </article>
               ))}
             </div>
           ) : null}
@@ -610,73 +636,12 @@ export default async function HomePage() {
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-[40px] sm:p-6">
-            <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <h2 className="text-2xl font-semibold tracking-tight text-white">
-                  Instagram Feed
-                </h2>
-                <p className="mt-1 text-sm text-zinc-400">
-                  Latest stories and founder snapshots from @100x.founder.
-                </p>
-              </div>
-              <a
-                href="https://www.instagram.com/100x.founder/"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex h-10 items-center justify-center rounded-lg border border-pink-400/35 bg-pink-500/10 px-4 text-sm font-medium text-pink-200 transition-colors hover:bg-pink-500/20"
-              >
-                Follow @100x.founder
-              </a>
-            </div>
-
-            <div className="grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
-              {[
-                {
-                  title: "Funding Wire",
-                  image: "/images/covers/funding-wire.svg",
-                },
-                {
-                  title: "AI Ecosystem",
-                  image: "/images/covers/ai-grid.svg",
-                },
-                {
-                  title: "Startup Brief",
-                  image: "/images/covers/startup-brief.svg",
-                },
-                {
-                  title: "Talent Radar",
-                  image: "/images/covers/talent-map.svg",
-                },
-                {
-                  title: "Delhi Ecosystem",
-                  image: "/images/cities/delhi.svg",
-                },
-                {
-                  title: "Bangalore Ecosystem",
-                  image: "/images/cities/bangalore.svg",
-                },
-              ].map((post) => (
-                <a
-                  key={post.title}
-                  href="https://www.instagram.com/100x.founder/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group overflow-hidden rounded-xl border border-white/10 bg-black/30 transition-colors hover:border-pink-400/35"
-                >
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    loading="lazy"
-                    className="h-28 w-full object-cover transition-transform duration-300 group-hover:scale-105 sm:h-32"
-                  />
-                  <div className="border-t border-white/10 px-2.5 py-2 text-[11px] uppercase tracking-[0.12em] text-zinc-400">
-                    {post.title}
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
+          <InstagramFeedGrid
+            items={instagramFeed}
+            profileUrl={instagramUrl}
+            title="Instagram Feed"
+            description="Latest stories and founder snapshots from @100x.founder."
+          />
         </section>
 
         <Footer />

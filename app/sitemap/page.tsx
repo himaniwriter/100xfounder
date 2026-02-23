@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { getHtmlSitemapData } from "@/lib/sitemap";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Sitemap | 100Xfounder",
   description:

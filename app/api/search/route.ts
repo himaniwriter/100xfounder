@@ -4,7 +4,7 @@ import { searchSite } from "@/lib/search/service";
 
 const querySchema = z.object({
   q: z.string().trim().min(1).max(120),
-  type: z.enum(["all", "founder", "company", "blog"]).optional(),
+  type: z.enum(["all", "founder", "company", "blog", "signal", "topic"]).optional(),
   limit: z.number().int().min(1).max(50).optional(),
 });
 

@@ -58,7 +58,7 @@ function levelClass(level: "High" | "Medium" | "Low") {
 }
 
 export function SignalsClient() {
-  const { data, error, isLoading } = useSWR<SignalsResponse>(
+  const { data, error, isLoading, mutate } = useSWR<SignalsResponse>(
     "/api/signals/feed?limit=40",
     fetcher,
   );
@@ -130,32 +130,70 @@ export function SignalsClient() {
             Funding Feed
           </h2>
 
-          {isLoading ? <p className="mt-4 text-sm text-zinc-500">Loading feed...</p> : null}
-          {error ? <p className="mt-4 text-sm text-red-300">{(error as Error).message}</p> : null}
-
-          <div className="mt-4 space-y-3">
-            {items.slice(0, 18).map((item) => (
-              <Link
-                key={item.id}
-                href={`/company/${item.companySlug}`}
-                className="grid grid-cols-1 gap-2 rounded-lg border border-white/10 bg-black/25 px-3 py-2 transition-colors hover:border-white/30 sm:grid-cols-[minmax(0,1fr)_140px] sm:items-center sm:gap-3"
+          {isLoading ? (
+            <div className="mt-4 space-y-3">
+              {Array.from({ length: 6 }).map((_, index) => (
+                <div
+                  key={`signal-skeleton-${index}`}
+                  className="h-[52px] animate-pulse rounded-lg border border-white/10 bg-white/[0.04]"
+                />
+              ))}
+            </div>
+          ) : null}
+          {error ? (
+            <div className="mt-4 rounded-lg border border-red-400/25 bg-red-500/10 p-3">
+              <p className="text-sm text-red-300">{(error as Error).message}</p>
+              <button
+                type="button"
+                onClick={() => void mutate()}
+                className="mt-2 rounded-md border border-red-300/35 px-2 py-1 text-xs text-red-200 transition-colors hover:bg-red-400/10"
               >
-                <div className="flex items-center gap-2">
-                  <CompanyLogo
-                    companyName={item.companyName}
-                    className="h-7 w-7 rounded-md border border-white/15"
-                  />
-                  <p className="text-sm text-zinc-200">
-                    <span className="font-medium text-white">{item.companyName}</span> • {item.lastRound}
+                Retry
+              </button>
+            </div>
+          ) : null}
+
+          {!isLoading && !error ? (
+            <div className="mt-4 space-y-3">
+              {items.slice(0, 18).map((item) => (
+                <Link
+                  key={item.id}
+                  href={`/company/${item.companySlug}`}
+                  className="grid grid-cols-1 gap-2 rounded-lg border border-white/10 bg-black/25 px-3 py-2 transition-colors hover:border-white/30 sm:grid-cols-[minmax(0,1fr)_140px] sm:items-center sm:gap-3"
+                >
+                  <div className="flex items-center gap-2">
+                    <CompanyLogo
+                      companyName={item.companyName}
+                      className="h-7 w-7 rounded-md border border-white/15"
+                    />
+                    <p className="text-sm text-zinc-200">
+                      <span className="font-medium text-white">{item.companyName}</span> • {item.lastRound}
+                    </p>
+                  </div>
+                  <div className="text-left sm:text-right">
+                    <p className="text-sm font-medium text-emerald-300">{item.fundingTotal}</p>
+                    <p className="text-[11px] text-zinc-500">{item.country}</p>
+                  </div>
+                </Link>
+              ))}
+
+              {items.length === 0 ? (
+                <div className="rounded-lg border border-white/10 bg-black/30 p-4">
+                  <p className="text-sm text-zinc-200">No live signals available right now.</p>
+                  <p className="mt-1 text-xs text-zinc-500">
+                    Please retry in a moment while we refresh the feed.
                   </p>
+                  <button
+                    type="button"
+                    onClick={() => void mutate()}
+                    className="mt-3 rounded-md border border-white/20 px-2.5 py-1 text-xs text-zinc-300 transition-colors hover:border-white/35 hover:text-white"
+                  >
+                    Refresh feed
+                  </button>
                 </div>
-                <div className="text-left sm:text-right">
-                  <p className="text-sm font-medium text-emerald-300">{item.fundingTotal}</p>
-                  <p className="text-[11px] text-zinc-500">{item.country}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
+              ) : null}
+            </div>
+          ) : null}
         </motion.div>
 
         <motion.div

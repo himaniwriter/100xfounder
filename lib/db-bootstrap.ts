@@ -7,6 +7,10 @@ declare global {
   var ensureGrowthWaveSchemaPromise: Promise<void> | undefined;
   // eslint-disable-next-line no-var
   var ensureBlogPostsSchemaPromise: Promise<void> | undefined;
+  // eslint-disable-next-line no-var
+  var ensureJobPostingsSchemaPromise: Promise<void> | undefined;
+  // eslint-disable-next-line no-var
+  var ensureOutreachFunnelSchemaPromise: Promise<void> | undefined;
 }
 
 const FEATURED_SCHEMA_STATEMENTS = [
@@ -291,29 +295,179 @@ CREATE INDEX IF NOT EXISTS post_citations_source_url_idx
 `,
 ];
 
+const JOB_POSTINGS_STATEMENTS = [
+  `
+CREATE TABLE IF NOT EXISTS public.job_postings (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  title text NOT NULL,
+  slug text NOT NULL UNIQUE,
+  company_name text NOT NULL,
+  company_website text,
+  location text,
+  country text,
+  job_type text,
+  work_mode text,
+  experience_level text,
+  salary_range text,
+  currency text,
+  description text NOT NULL,
+  requirements text,
+  apply_url text NOT NULL,
+  application_email text,
+  industry text,
+  source text NOT NULL DEFAULT 'n8n_webhook',
+  external_submission_id text UNIQUE,
+  status text NOT NULL DEFAULT 'draft',
+  posted_at timestamptz,
+  expires_at timestamptz,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT job_postings_status_check CHECK (status IN ('draft', 'published', 'rejected'))
+);
+`,
+  `
+CREATE INDEX IF NOT EXISTS job_postings_status_created_at_idx
+  ON public.job_postings(status, created_at DESC);
+`,
+  `
+CREATE INDEX IF NOT EXISTS job_postings_company_name_idx
+  ON public.job_postings(company_name);
+`,
+  `
+CREATE INDEX IF NOT EXISTS job_postings_country_idx
+  ON public.job_postings(country);
+`,
+];
+
+const OUTREACH_FUNNEL_STATEMENTS = [
+  `
+CREATE TABLE IF NOT EXISTS public.interview_questionnaire_submissions (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  featured_request_id uuid REFERENCES public.featured_founder_requests(id) ON DELETE SET NULL,
+  founder_name text NOT NULL,
+  work_email text NOT NULL,
+  company_name text NOT NULL,
+  responses_json jsonb NOT NULL,
+  asset_links_json jsonb,
+  external_submission_id text UNIQUE,
+  status text NOT NULL DEFAULT 'new',
+  source text NOT NULL DEFAULT 'site_form',
+  review_notes text,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now()
+);
+`,
+  `
+ALTER TABLE IF EXISTS public.interview_questionnaire_submissions
+  ADD COLUMN IF NOT EXISTS external_submission_id text UNIQUE,
+  ADD COLUMN IF NOT EXISTS review_notes text;
+`,
+  `
+CREATE INDEX IF NOT EXISTS interview_questionnaire_submissions_status_created_at_idx
+  ON public.interview_questionnaire_submissions(status, created_at DESC);
+`,
+  `
+CREATE INDEX IF NOT EXISTS interview_questionnaire_submissions_work_email_idx
+  ON public.interview_questionnaire_submissions(work_email);
+`,
+  `
+CREATE INDEX IF NOT EXISTS interview_questionnaire_submissions_company_name_idx
+  ON public.interview_questionnaire_submissions(company_name);
+`,
+  `
+CREATE INDEX IF NOT EXISTS interview_questionnaire_submissions_featured_request_id_idx
+  ON public.interview_questionnaire_submissions(featured_request_id);
+`,
+  `
+CREATE TABLE IF NOT EXISTS public.guest_post_orders (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  name text NOT NULL,
+  work_email text NOT NULL,
+  company_name text NOT NULL,
+  website_url text,
+  target_url text,
+  topic text NOT NULL,
+  brief text NOT NULL,
+  budget_inr integer,
+  package_key text,
+  source text NOT NULL DEFAULT 'site_form',
+  external_submission_id text UNIQUE,
+  status text NOT NULL DEFAULT 'new',
+  review_notes text,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now()
+);
+`,
+  `
+ALTER TABLE IF EXISTS public.guest_post_orders
+  ADD COLUMN IF NOT EXISTS review_notes text;
+`,
+  `
+CREATE INDEX IF NOT EXISTS guest_post_orders_status_created_at_idx
+  ON public.guest_post_orders(status, created_at DESC);
+`,
+  `
+CREATE INDEX IF NOT EXISTS guest_post_orders_work_email_idx
+  ON public.guest_post_orders(work_email);
+`,
+  `
+CREATE INDEX IF NOT EXISTS guest_post_orders_company_name_idx
+  ON public.guest_post_orders(company_name);
+`,
+  `
+CREATE TABLE IF NOT EXISTS public.instagram_posts (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  external_post_id text NOT NULL UNIQUE,
+  caption text,
+  media_url text NOT NULL,
+  permalink text NOT NULL,
+  thumbnail_url text,
+  posted_at timestamptz NOT NULL,
+  ingested_at timestamptz NOT NULL DEFAULT now(),
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now()
+);
+`,
+  `
+CREATE INDEX IF NOT EXISTS instagram_posts_posted_at_idx
+  ON public.instagram_posts(posted_at DESC);
+`,
+];
+
 const LOCK_KEYS = {
   featured: "db_bootstrap_featured_v1",
   growth: "db_bootstrap_growth_v1",
   blog: "db_bootstrap_blog_v1",
+  jobs: "db_bootstrap_jobs_v1",
+  outreach: "db_bootstrap_outreach_v1",
 } as const;
 
 async function runStatements(lockKey: string, statements: string[]) {
-  await prisma.$transaction(async (tx) => {
-    await tx.$executeRawUnsafe(
-      `SELECT pg_advisory_xact_lock(hashtext('${lockKey}'));`,
-    );
+  await prisma.$transaction(
+    async (tx) => {
+      await tx.$executeRawUnsafe(
+        `SELECT pg_advisory_xact_lock(hashtext('${lockKey}'));`,
+      );
 
-    for (const statement of statements) {
-      await tx.$executeRawUnsafe(statement);
-    }
-  });
+      for (const statement of statements) {
+        await tx.$executeRawUnsafe(statement);
+      }
+    },
+    {
+      // DDL bootstrap can wait on advisory lock under concurrent ISR/static generation.
+      maxWait: 120_000,
+      timeout: 120_000,
+    },
+  );
 }
 
 function cacheBootstrapPromise(
   key:
     | "ensureFeaturedFounderSchemaPromise"
     | "ensureGrowthWaveSchemaPromise"
-    | "ensureBlogPostsSchemaPromise",
+    | "ensureBlogPostsSchemaPromise"
+    | "ensureJobPostingsSchemaPromise"
+    | "ensureOutreachFunnelSchemaPromise",
   loader: () => Promise<void>,
 ) {
   if (!globalThis[key]) {
@@ -344,5 +498,19 @@ export function ensureBlogPostsSchema() {
   return cacheBootstrapPromise(
     "ensureBlogPostsSchemaPromise",
     () => runStatements(LOCK_KEYS.blog, BLOG_POSTS_STATEMENTS),
+  );
+}
+
+export function ensureJobPostingsSchema() {
+  return cacheBootstrapPromise(
+    "ensureJobPostingsSchemaPromise",
+    () => runStatements(LOCK_KEYS.jobs, JOB_POSTINGS_STATEMENTS),
+  );
+}
+
+export function ensureOutreachFunnelSchema() {
+  return cacheBootstrapPromise(
+    "ensureOutreachFunnelSchemaPromise",
+    () => runStatements(LOCK_KEYS.outreach, OUTREACH_FUNNEL_STATEMENTS),
   );
 }

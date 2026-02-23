@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import type { CompanyContentExpansion } from "@/lib/company/content-expansion";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
+import { getUserSubmittedExternalRel } from "@/lib/seo/external-links";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
 
@@ -164,7 +165,7 @@ function parseInline(text: string): ReactNode[] {
             key={`link-${keyIndex++}`}
             href={linkMatch[2]}
             target="_blank"
-            rel="nofollow noreferrer"
+            rel={getUserSubmittedExternalRel()}
             className="text-indigo-300 underline underline-offset-4 hover:text-indigo-200"
           >
             {linkMatch[1]}
@@ -265,7 +266,7 @@ export function CompanyIntelligenceDashboard({
             <a
               href={websiteUrl}
               target="_blank"
-              rel="nofollow noreferrer"
+              rel={getUserSubmittedExternalRel()}
               className="inline-flex h-10 items-center gap-2 rounded-lg border border-white/25 px-4 text-sm text-zinc-200 transition-colors hover:border-white/35 hover:text-white"
             >
               Visit Website
@@ -434,7 +435,7 @@ export function CompanyIntelligenceDashboard({
                   <a
                     href={founder.linkedin}
                     target="_blank"
-                    rel="noreferrer"
+                    rel={getUserSubmittedExternalRel()}
                     className="mt-3 inline-flex h-8 items-center gap-1 rounded-md border border-white/15 px-2.5 text-xs text-zinc-200 transition-colors hover:border-white/30 hover:text-white"
                   >
                     <Linkedin className="h-3.5 w-3.5" />

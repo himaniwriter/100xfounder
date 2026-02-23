@@ -13,8 +13,16 @@ type SearchPageProps = {
   };
 };
 
-function toType(value: string | undefined): "all" | "founder" | "company" | "blog" {
-  if (value === "founder" || value === "company" || value === "blog") {
+function toType(
+  value: string | undefined,
+): "all" | "founder" | "company" | "blog" | "signal" | "topic" {
+  if (
+    value === "founder" ||
+    value === "company" ||
+    value === "blog" ||
+    value === "signal" ||
+    value === "topic"
+  ) {
     return value;
   }
   return "all";
@@ -26,8 +34,9 @@ export async function generateMetadata({ searchParams }: SearchPageProps): Promi
 
   if (!q) {
     return {
-      title: "Search Founders, Companies, and Blog Posts | 100Xfounder",
-      description: "Search 100Xfounder across founder profiles, company pages, and startup intelligence articles.",
+      title: "Search Founders, Companies, Signals, Topics, and Articles | 100Xfounder",
+      description:
+        "Search 100Xfounder across founder profiles, company pages, live signals, topic hubs, and startup intelligence articles.",
       robots: { index: false, follow: true },
       alternates: {
         canonical: `${baseUrl}/search`,
@@ -37,7 +46,7 @@ export async function generateMetadata({ searchParams }: SearchPageProps): Promi
 
   return {
     title: `Search results for ${q} | 100Xfounder`,
-    description: `Search results for ${q} across founders, companies, and blog posts on 100Xfounder.`,
+    description: `Search results for ${q} across founders, companies, signals, topics, and articles on 100Xfounder.`,
     robots: { index: false, follow: true },
     alternates: {
       canonical: `${baseUrl}/search`,
@@ -65,7 +74,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         <header className="mb-6">
           <p className="text-xs uppercase tracking-[0.18em] text-zinc-500">Search</p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Founder, Company, and Blog Search
+            Founder, Company, Signal, Topic, and Blog Search
           </h1>
           <p className="mt-2 text-sm text-zinc-400">
             Find high-intent startup intelligence in one place.
@@ -142,6 +151,50 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
                   ))
                 ) : (
                   <p className="text-sm text-zinc-500">No blog matches.</p>
+                )}
+              </div>
+            </section>
+
+            <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-md">
+              <h2 className="text-lg font-semibold text-white">Signals</h2>
+              <div className="mt-3 space-y-2">
+                {result?.results.signals.length ? (
+                  result.results.signals.map((item) => (
+                    <Link
+                      key={item.id}
+                      href={`/company/${item.companySlug}`}
+                      className="block rounded-md border border-white/10 bg-black/30 p-3 transition-colors hover:border-white/25"
+                    >
+                      <p className="text-sm font-medium text-white">
+                        {item.companyName} • {item.lastRound}
+                      </p>
+                      <p className="mt-1 text-xs text-zinc-400">
+                        {item.country} • {item.industry} • Funding: {item.fundingTotal}
+                      </p>
+                    </Link>
+                  ))
+                ) : (
+                  <p className="text-sm text-zinc-500">No signal matches.</p>
+                )}
+              </div>
+            </section>
+
+            <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-md">
+              <h2 className="text-lg font-semibold text-white">Topics</h2>
+              <div className="mt-3 space-y-2">
+                {result?.results.topics.length ? (
+                  result.results.topics.map((item) => (
+                    <Link
+                      key={item.slug}
+                      href={`/topics/${item.slug}`}
+                      className="block rounded-md border border-white/10 bg-black/30 p-3 transition-colors hover:border-white/25"
+                    >
+                      <p className="text-sm font-medium text-white">{item.label}</p>
+                      <p className="mt-1 text-xs text-zinc-400">{item.count} stories</p>
+                    </Link>
+                  ))
+                ) : (
+                  <p className="text-sm text-zinc-500">No topic matches.</p>
                 )}
               </div>
             </section>

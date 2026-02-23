@@ -6,7 +6,7 @@ import { trackSiteEvent } from "@/lib/client-tracking";
 
 type SearchPageFormProps = {
   initialQuery: string;
-  initialType: "all" | "founder" | "company" | "blog";
+  initialType: "all" | "founder" | "company" | "blog" | "signal" | "topic";
 };
 
 export function SearchPageForm({ initialQuery, initialType }: SearchPageFormProps) {
@@ -46,20 +46,22 @@ export function SearchPageForm({ initialQuery, initialType }: SearchPageFormProp
         <input
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Search founders, companies, blog posts"
+          placeholder="Search founders, companies, signals, topics, articles"
           className="h-11 rounded-md border border-white/15 bg-black/40 px-3 text-sm text-zinc-100 placeholder:text-zinc-500"
         />
         <select
           value={type}
           onChange={(event) =>
-            setType(event.target.value as "all" | "founder" | "company" | "blog")
+            setType(event.target.value as "all" | "founder" | "company" | "blog" | "signal" | "topic")
           }
           className="h-11 rounded-md border border-white/15 bg-black/40 px-3 text-sm text-zinc-100"
         >
           <option value="all">All</option>
           <option value="founder">Founders</option>
           <option value="company">Companies</option>
-          <option value="blog">Blog</option>
+          <option value="signal">Signals</option>
+          <option value="topic">Topics</option>
+          <option value="blog">Articles</option>
         </select>
         <button
           type="submit"

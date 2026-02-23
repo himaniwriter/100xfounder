@@ -170,10 +170,6 @@ const ADMIN_ALLOWED_TAGS = [
   "style",
   "meta",
   "link",
-  "div",
-  "span",
-  "img",
-  "a",
 ];
 
 const ADMIN_ALLOWED_ATTR = [
@@ -205,7 +201,21 @@ export function sanitizeAdminEmbedHtml(html: string): string {
     html,
     ADMIN_ALLOWED_TAGS,
     ADMIN_ALLOWED_ATTR,
-    new Set(["object", "embed", "applet"]),
+    new Set([
+      "object",
+      "embed",
+      "applet",
+      "div",
+      "span",
+      "a",
+      "img",
+      "button",
+      "p",
+      "header",
+      "footer",
+      "section",
+      "nav",
+    ]),
   );
 }
 

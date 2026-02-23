@@ -45,13 +45,6 @@ export function HeroCtaGroup({
       >
         {secondaryLabel}
       </Link>
-      <Link
-        href="/get-featured"
-        onClick={() => onCtaClick("Get Featured", "/get-featured")}
-        className="glass-ghost-btn w-full justify-center sm:w-auto sm:min-w-[220px]"
-      >
-        Get Featured
-      </Link>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { BlogCard } from "@/components/blog/blog-card";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { CompanyIntelligenceDashboard } from "@/components/company/company-intelligence-dashboard";
+import { GetFeaturedCtaCard } from "@/components/shared/get-featured-cta-card";
 import { buildCompanyContentExpansion } from "@/lib/company/content-expansion";
 import {
   getFounderDirectory,
@@ -182,6 +183,12 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
             )}
           </div>
         </section>
+        <div className="mt-6">
+          <GetFeaturedCtaCard
+            context="company_profile"
+            description="Want your company featured with founder details and funding visibility? Start here."
+          />
+        </div>
         <ProfileFaqSection
           title={`FAQs About ${primary.companyName}`}
           faqs={faqs}

@@ -4,23 +4,16 @@ import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/blog/blog-card";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import {
-  getFundingRoundOptions,
-  getFundingStageNewsContext,
-} from "@/lib/news/hubs";
+import { getFundingStageNewsContext } from "@/lib/news/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const revalidate = 21600;
+export const dynamic = "force-dynamic";
 
 type FundingStagePageProps = {
   params: { stage: string };
 };
-
-export async function generateStaticParams() {
-  const stages = await getFundingRoundOptions(40);
-  return stages.map((item) => ({ stage: item.slug }));
-}
 
 export async function generateMetadata({
   params,

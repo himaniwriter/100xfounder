@@ -4,8 +4,14 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { FounderCallout } from "@/components/blog/founder-callout";
+import { GetFeaturedCtaCard } from "@/components/shared/get-featured-cta-card";
 import { NewsCoverImage } from "@/components/ui/news-cover-image";
-import { extractHeadings, getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog/store";
+import {
+  extractHeadings,
+  getAllBlogPostsWithOptions,
+  getBlogPostBySlug,
+} from "@/lib/blog/store";
+import { requireAdminPage } from "@/lib/auth/admin-guard";
 import { countryToSlug } from "@/lib/founders/country-tier";
 import { getFounderDirectory } from "@/lib/founders/store";
 import { sanitizeRichHtml, serializeJsonLd } from "@/lib/security/sanitize";
@@ -14,6 +20,9 @@ import { getSiteBaseUrl } from "@/lib/sitemap";
 type BlogPostPageProps = {
   params: {
     slug: string;
+  };
+  searchParams?: {
+    preview?: string;
   };
 };
 
@@ -73,7 +82,7 @@ function renderContent(content: string) {
     return [
       <div
         key="html-content"
-        className="prose prose-invert max-w-none text-[18px] leading-[1.8]"
+        className="prose prose-invert max-w-none prose-p:my-5 prose-p:text-[18px] prose-p:leading-8 prose-headings:tracking-tight prose-headings:text-white prose-headings:font-semibold prose-h1:text-4xl prose-h1:font-bold prose-h1:mt-10 prose-h1:mb-5 prose-h2:text-3xl prose-h2:mt-9 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-h4:text-xl prose-h4:mt-7 prose-h4:mb-3 prose-li:my-1 prose-li:text-zinc-300 prose-ul:my-6 prose-ol:my-6 prose-a:text-indigo-300 hover:prose-a:text-indigo-200 prose-strong:text-zinc-100 prose-blockquote:border-l-indigo-400/40 prose-blockquote:text-zinc-200"
         dangerouslySetInnerHTML={{ __html: safeHtml }}
       />,
     ];
@@ -171,10 +180,17 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   };
 }
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function BlogPostPage({ params, searchParams }: BlogPostPageProps) {
+  const previewRequested =
+    searchParams?.preview === "1" || searchParams?.preview === "true";
+
+  if (previewRequested) {
+    await requireAdminPage();
+  }
+
   const [post, allPosts, founders] = await Promise.all([
-    getBlogPostBySlug(params.slug),
-    getAllBlogPosts(),
+    getBlogPostBySlug(params.slug, { includeDrafts: previewRequested }),
+    getAllBlogPostsWithOptions({ includeDrafts: previewRequested }),
     getFounderDirectory({ perCountryLimit: 500 }),
   ]);
   if (!post) {
@@ -344,6 +360,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs uppercase tracking-wide text-zinc-300">
                 {post.category}
               </span>
+              {previewRequested && post.status === "DRAFT" ? (
+                <span className="rounded-full border border-amber-400/35 bg-amber-500/10 px-2.5 py-1 text-xs uppercase tracking-wide text-amber-200">
+                  Draft Preview
+                </span>
+              ) : null}
               <span>{post.readingTime}</span>
               <span>
                 By{" "}
@@ -491,6 +512,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </article>
 
         <aside className="space-y-4">
+          <GetFeaturedCtaCard
+            context="blog_post"
+            description="Own the narrative for your startup with a verified featured profile."
+          />
           {hasRahulBajaj ? (
             <div className="sticky top-24">
               <FounderCallout

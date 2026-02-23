@@ -1,10 +1,14 @@
 import { getAllBlogPosts } from "@/lib/blog/store";
 import { getFounderDirectory } from "@/lib/founders/store";
+import { getTopicSummaries } from "@/lib/news/hubs";
+import { getSignalsFeed } from "@/lib/signals/feed";
 import type {
   SearchApiResponse,
   SearchBlogResult,
   SearchCompanyResult,
   SearchFounderResult,
+  SearchSignalResult,
+  SearchTopicResult,
   SearchResultType,
 } from "@/lib/search/types";
 
@@ -20,6 +24,13 @@ function normalize(value: string): string {
     .replace(/[^a-z0-9\s]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function toTokens(value: string): string[] {
+  return normalize(value)
+    .split(" ")
+    .map((token) => token.trim())
+    .filter(Boolean);
 }
 
 function scoreText(value: string, query: string, weight: number): number {
@@ -51,18 +62,67 @@ function scoreText(value: string, query: string, weight: number): number {
   return 0;
 }
 
+function scoreTokenMatch(value: string, queryTokens: string[], weight: number): number {
+  if (!value || queryTokens.length === 0) {
+    return 0;
+  }
+
+  const valueTokens = toTokens(value);
+  if (valueTokens.length === 0) {
+    return 0;
+  }
+
+  const matchedTokenCount = queryTokens.filter((queryToken) =>
+    valueTokens.some((valueToken) => valueToken.includes(queryToken)),
+  ).length;
+
+  if (matchedTokenCount === 0) {
+    return 0;
+  }
+
+  if (matchedTokenCount === queryTokens.length) {
+    return weight * 2.5;
+  }
+
+  if (queryTokens.length === 1) {
+    return weight * 1.25;
+  }
+
+  const requiredForStrongPartial = Math.ceil(queryTokens.length * 0.75);
+  if (matchedTokenCount >= requiredForStrongPartial && matchedTokenCount >= 2) {
+    return weight * 1.5;
+  }
+
+  if (matchedTokenCount >= 2) {
+    return weight * 0.75;
+  }
+
+  return 0;
+}
+
+function scoreField(value: string, query: string, queryTokens: string[], weight: number): number {
+  return Math.max(scoreText(value, query, weight), scoreTokenMatch(value, queryTokens, weight));
+}
+
 function limitResults<T>(items: T[], limit: number): T[] {
   return items.slice(0, Math.max(1, limit));
 }
 
 export async function searchSite(options: SearchOptions): Promise<SearchApiResponse> {
   const q = normalize(options.query);
+  const queryTokens = toTokens(q);
   const requestedType = options.type;
   const requestedLimit = Math.max(1, Math.min(options.limit, 50));
+  const includeFounders = requestedType === "all" || requestedType === "founder" || requestedType === "company";
+  const includePosts = requestedType === "all" || requestedType === "blog";
+  const includeSignals = requestedType === "all" || requestedType === "signal";
+  const includeTopics = requestedType === "all" || requestedType === "topic";
 
-  const [founders, posts] = await Promise.all([
-    getFounderDirectory({ perCountryLimit: 500 }),
-    getAllBlogPosts(),
+  const [founders, posts, signalsFeed, topicSummaries] = await Promise.all([
+    includeFounders ? getFounderDirectory({ perCountryLimit: 500 }) : Promise.resolve([]),
+    includePosts ? getAllBlogPosts() : Promise.resolve([]),
+    includeSignals ? getSignalsFeed(120) : Promise.resolve({ updatedAt: "", items: [] }),
+    includeTopics ? getTopicSummaries(120) : Promise.resolve([]),
   ]);
 
   const founderScored =
@@ -70,11 +130,12 @@ export async function searchSite(options: SearchOptions): Promise<SearchApiRespo
       ? founders
           .map((item) => {
             const score =
-              scoreText(item.founderName, q, 10) +
-              scoreText(item.companyName, q, 9) +
-              scoreText(item.industry, q, 5) +
-              scoreText(item.stage, q, 4) +
-              scoreText(item.productSummary, q, 2);
+              scoreField(item.founderName, q, queryTokens, 10) +
+              scoreField(item.companyName, q, queryTokens, 9) +
+              scoreField(`${item.founderName} ${item.companyName}`, q, queryTokens, 9) +
+              scoreField(item.industry, q, queryTokens, 5) +
+              scoreField(item.stage, q, queryTokens, 4) +
+              scoreField(item.productSummary, q, queryTokens, 2);
 
             if (score <= 0) {
               return null;
@@ -103,10 +164,12 @@ export async function searchSite(options: SearchOptions): Promise<SearchApiRespo
 
           founders.forEach((item) => {
             const score =
-              scoreText(item.companyName, q, 10) +
-              scoreText(item.industry, q, 6) +
-              scoreText(item.stage, q, 4) +
-              scoreText(item.productSummary, q, 2);
+              scoreField(item.companyName, q, queryTokens, 10) +
+              scoreField(item.founderName, q, queryTokens, 9) +
+              scoreField(`${item.companyName} ${item.founderName}`, q, queryTokens, 9) +
+              scoreField(item.industry, q, queryTokens, 6) +
+              scoreField(item.stage, q, queryTokens, 4) +
+              scoreField(item.productSummary, q, queryTokens, 2);
 
             if (score <= 0) {
               return;
@@ -140,10 +203,10 @@ export async function searchSite(options: SearchOptions): Promise<SearchApiRespo
       ? posts
           .map((post) => {
             const score =
-              scoreText(post.title, q, 10) +
-              scoreText(post.category, q, 5) +
-              scoreText(post.excerpt, q, 3) +
-              scoreText(post.content, q, 1);
+              scoreField(post.title, q, queryTokens, 10) +
+              scoreField(post.category, q, queryTokens, 5) +
+              scoreField(post.excerpt, q, queryTokens, 3) +
+              scoreField(post.content, q, queryTokens, 1);
 
             if (score <= 0) {
               return null;
@@ -163,17 +226,89 @@ export async function searchSite(options: SearchOptions): Promise<SearchApiRespo
           .sort((a, b) => b.score - a.score)
       : [];
 
+  const signalScored =
+    requestedType === "all" || requestedType === "signal"
+      ? signalsFeed.items
+          .map((item) => {
+            const score =
+              scoreField(item.companyName, q, queryTokens, 10) +
+              scoreField(item.founderName, q, queryTokens, 9) +
+              scoreField(item.industry, q, queryTokens, 5) +
+              scoreField(item.stage, q, queryTokens, 4) +
+              scoreField(item.country, q, queryTokens, 3) +
+              scoreField(item.lastRound, q, queryTokens, 3) +
+              scoreField(item.fundingTotal, q, queryTokens, 3);
+
+            if (score <= 0) {
+              return null;
+            }
+
+            const result: SearchSignalResult = {
+              id: item.id,
+              companyName: item.companyName,
+              founderName: item.founderName,
+              companySlug: item.companySlug,
+              industry: item.industry,
+              stage: item.stage,
+              country: item.country,
+              fundingTotal: item.fundingTotal,
+              lastRound: item.lastRound,
+              isHiring: item.isHiring,
+            };
+
+            return { result, score };
+          })
+          .filter((item): item is { result: SearchSignalResult; score: number } => Boolean(item))
+          .sort((a, b) => b.score - a.score)
+      : [];
+
+  const topicScored =
+    requestedType === "all" || requestedType === "topic"
+      ? topicSummaries
+          .map((topic) => {
+            const score =
+              scoreField(topic.label, q, queryTokens, 10) +
+              scoreField(topic.slug.replace(/-/g, " "), q, queryTokens, 8);
+
+            if (score <= 0) {
+              return null;
+            }
+
+            const result: SearchTopicResult = {
+              slug: topic.slug,
+              label: topic.label,
+              count: topic.count,
+              lastPublishedAt: topic.lastPublishedAt,
+            };
+
+            return { result, score };
+          })
+          .filter((item): item is { result: SearchTopicResult; score: number } => Boolean(item))
+          .sort((a, b) => b.score - a.score)
+      : [];
+
+  const splitLimit = Math.max(4, Math.ceil(requestedLimit / 3));
+  const splitLimitCompact = Math.max(3, Math.ceil(requestedLimit / 4));
+
   const foundersResults = limitResults(
     founderScored.map((item) => item.result),
-    requestedType === "founder" ? requestedLimit : Math.max(5, Math.ceil(requestedLimit / 2)),
+    requestedType === "founder" ? requestedLimit : splitLimit,
   );
   const companiesResults = limitResults(
     companyScored.map((item) => item.result),
-    requestedType === "company" ? requestedLimit : Math.max(5, Math.ceil(requestedLimit / 2)),
+    requestedType === "company" ? requestedLimit : splitLimit,
   );
   const postsResults = limitResults(
     postScored.map((item) => item.result),
-    requestedType === "blog" ? requestedLimit : Math.max(5, Math.ceil(requestedLimit / 2)),
+    requestedType === "blog" ? requestedLimit : splitLimit,
+  );
+  const signalsResults = limitResults(
+    signalScored.map((item) => item.result),
+    requestedType === "signal" ? requestedLimit : splitLimitCompact,
+  );
+  const topicsResults = limitResults(
+    topicScored.map((item) => item.result),
+    requestedType === "topic" ? requestedLimit : splitLimitCompact,
   );
 
   return {
@@ -183,7 +318,14 @@ export async function searchSite(options: SearchOptions): Promise<SearchApiRespo
       founders: foundersResults,
       companies: companiesResults,
       posts: postsResults,
+      signals: signalsResults,
+      topics: topicsResults,
     },
-    total: foundersResults.length + companiesResults.length + postsResults.length,
+    total:
+      foundersResults.length +
+      companiesResults.length +
+      postsResults.length +
+      signalsResults.length +
+      topicsResults.length,
   };
 }
