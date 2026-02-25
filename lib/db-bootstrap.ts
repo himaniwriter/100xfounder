@@ -13,6 +13,8 @@ declare global {
   var ensureOutreachFunnelSchemaPromise: Promise<void> | undefined;
   // eslint-disable-next-line no-var
   var ensureDashboardRetentionSchemaPromise: Promise<void> | undefined;
+  // eslint-disable-next-line no-var
+  var ensureSalaryEquitySchemaPromise: Promise<void> | undefined;
 }
 
 const FEATURED_SCHEMA_STATEMENTS = [
@@ -431,6 +433,47 @@ CREATE INDEX IF NOT EXISTS job_postings_country_idx
 `,
 ];
 
+const SALARY_EQUITY_STATEMENTS = [
+  `
+CREATE TABLE IF NOT EXISTS public.salary_equity_entries (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  role text NOT NULL,
+  level text,
+  location text,
+  country text,
+  stage text,
+  base_min integer,
+  base_max integer,
+  currency text NOT NULL DEFAULT 'USD',
+  equity_min_bps integer,
+  equity_max_bps integer,
+  source text NOT NULL DEFAULT 'n8n_webhook',
+  source_url text,
+  external_submission_id text UNIQUE,
+  status text NOT NULL DEFAULT 'draft',
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now(),
+  CONSTRAINT salary_equity_status_check CHECK (status IN ('draft', 'published', 'rejected'))
+);
+`,
+  `
+CREATE INDEX IF NOT EXISTS salary_equity_entries_status_created_at_idx
+  ON public.salary_equity_entries(status, created_at DESC);
+`,
+  `
+CREATE INDEX IF NOT EXISTS salary_equity_entries_location_idx
+  ON public.salary_equity_entries(location);
+`,
+  `
+CREATE INDEX IF NOT EXISTS salary_equity_entries_role_idx
+  ON public.salary_equity_entries(role);
+`,
+  `
+CREATE INDEX IF NOT EXISTS salary_equity_entries_stage_idx
+  ON public.salary_equity_entries(stage);
+`,
+];
+
 const OUTREACH_FUNNEL_STATEMENTS = [
   `
 CREATE TABLE IF NOT EXISTS public.interview_questionnaire_submissions (
@@ -532,6 +575,7 @@ const LOCK_KEYS = {
   dashboardRetention: "db_bootstrap_dashboard_retention_v1",
   blog: "db_bootstrap_blog_v1",
   jobs: "db_bootstrap_jobs_v1",
+  salaryEquity: "db_bootstrap_salary_equity_v1",
   outreach: "db_bootstrap_outreach_v1",
 } as const;
 
@@ -560,6 +604,7 @@ function cacheBootstrapPromise(
     | "ensureGrowthWaveSchemaPromise"
     | "ensureBlogPostsSchemaPromise"
     | "ensureJobPostingsSchemaPromise"
+    | "ensureSalaryEquitySchemaPromise"
     | "ensureOutreachFunnelSchemaPromise"
     | "ensureDashboardRetentionSchemaPromise",
   loader: () => Promise<void>,
@@ -599,6 +644,13 @@ export function ensureJobPostingsSchema() {
   return cacheBootstrapPromise(
     "ensureJobPostingsSchemaPromise",
     () => runStatements(LOCK_KEYS.jobs, JOB_POSTINGS_STATEMENTS),
+  );
+}
+
+export function ensureSalaryEquitySchema() {
+  return cacheBootstrapPromise(
+    "ensureSalaryEquitySchemaPromise",
+    () => runStatements(LOCK_KEYS.salaryEquity, SALARY_EQUITY_STATEMENTS),
   );
 }
 

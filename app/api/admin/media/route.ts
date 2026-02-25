@@ -1,39 +1,11 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { requireAdminApi } from "@/lib/auth/admin-guard";
-import { readGlobalSiteSettings } from "@/lib/site-settings";
-
-async function getSupabaseConfig() {
-  const settings = await readGlobalSiteSettings();
-  const baseUrl = settings.supabaseUrl || process.env.SUPABASE_URL || "";
-  const serviceRole =
-    settings.supabaseServiceRoleKey ||
-    process.env.SUPABASE_SERVICE_ROLE_KEY ||
-    "";
-
-  if (!baseUrl || !serviceRole) {
-    return null;
-  }
-
-  return {
-    baseUrl: baseUrl.replace(/\/+$/, ""),
-    serviceRole,
-  };
-}
-
-function safePath(value: string): string {
-  return value
-    .replace(/\s+/g, "-")
-    .replace(/[^a-zA-Z0-9._/-]/g, "")
-    .replace(/\/+/g, "/");
-}
-
-function toPublicUrl(baseUrl: string, filePath: string): string {
-  const encodedPath = filePath
-    .split("/")
-    .map((segment) => encodeURIComponent(segment))
-    .join("/");
-  return `${baseUrl}/storage/v1/object/public/images/${encodedPath}`;
-}
+import {
+  getSupabaseMediaConfig,
+  importRemoteImageToSupabase,
+  uploadImageFileToSupabase,
+  toPublicMediaUrl,
+} from "@/lib/media/storage";
 
 export async function GET(request: NextRequest) {
   const access = await requireAdminApi(request);
@@ -41,7 +13,7 @@ export async function GET(request: NextRequest) {
     return access;
   }
 
-  const config = await getSupabaseConfig();
+  const config = await getSupabaseMediaConfig();
   if (!config) {
     return NextResponse.json(
       { success: false, error: "SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY is not configured." },
@@ -49,7 +21,7 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  const response = await fetch(`${config.baseUrl}/storage/v1/object/list/images`, {
+  const response = await fetch(`${config.baseUrl}/storage/v1/object/list/${config.bucket}`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${config.serviceRole}`,
@@ -78,7 +50,7 @@ export async function GET(request: NextRequest) {
   const items = Array.isArray(payload)
     ? payload.map((item: { name: string; created_at?: string; updated_at?: string }) => ({
       name: item.name,
-      url: toPublicUrl(config.baseUrl, item.name),
+      url: toPublicMediaUrl(config.baseUrl, item.name, config.bucket),
       createdAt: item.created_at ?? item.updated_at ?? null,
     }))
     : [];
@@ -92,7 +64,7 @@ export async function POST(request: NextRequest) {
     return access;
   }
 
-  const config = await getSupabaseConfig();
+  const config = await getSupabaseMediaConfig();
   if (!config) {
     return NextResponse.json(
       { success: false, error: "SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY is not configured." },
@@ -102,51 +74,56 @@ export async function POST(request: NextRequest) {
 
   const formData = await request.formData();
   const rawFile = formData.get("file");
+  const remoteUrl = String(formData.get("url") ?? "").trim();
   const folder = String(formData.get("folder") ?? "").trim();
 
-  if (!(rawFile instanceof File)) {
-    return NextResponse.json(
-      { success: false, error: "Upload requires a file field." },
-      { status: 400 },
-    );
+  if (rawFile instanceof File) {
+    try {
+      const uploaded = await uploadImageFileToSupabase(rawFile, {
+        config,
+        folder: folder || "blog",
+      });
+      return NextResponse.json({ success: true, item: uploaded });
+    } catch (error) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: error instanceof Error ? error.message : "Upload failed.",
+        },
+        { status: 502 },
+      );
+    }
   }
 
-  const safeName = safePath(rawFile.name);
-  const prefix = folder ? `${safePath(folder)}/` : "";
-  const filePath = `${prefix}${Date.now()}-${safeName}`;
+  if (remoteUrl) {
+    try {
+      const imported = await importRemoteImageToSupabase(remoteUrl, {
+        config,
+        folder: folder || "blog/imported",
+      });
+      if (!imported) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: "Unable to import this image URL. Make sure it is a public direct image URL.",
+          },
+          { status: 400 },
+        );
+      }
+      return NextResponse.json({ success: true, item: imported });
+    } catch (error) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: error instanceof Error ? error.message : "Image import failed.",
+        },
+        { status: 502 },
+      );
+    }
+  }
 
-  const buffer = Buffer.from(await rawFile.arrayBuffer());
-
-  const response = await fetch(
-    `${config.baseUrl}/storage/v1/object/images/${encodeURIComponent(filePath).replace(/%2F/g, "/")}`,
-    {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${config.serviceRole}`,
-        apikey: config.serviceRole,
-        "Content-Type": rawFile.type || "application/octet-stream",
-        "x-upsert": "true",
-      },
-      body: buffer,
-    },
+  return NextResponse.json(
+    { success: false, error: "Upload requires a file field or url field." },
+    { status: 400 },
   );
-
-  const payload = await response.json().catch(() => null);
-  if (!response.ok) {
-    return NextResponse.json(
-      {
-        success: false,
-        error: payload?.message ?? `Upload failed (${response.status}).`,
-      },
-      { status: 502 },
-    );
-  }
-
-  return NextResponse.json({
-    success: true,
-    item: {
-      name: filePath,
-      url: toPublicUrl(config.baseUrl, filePath),
-    },
-  });
 }

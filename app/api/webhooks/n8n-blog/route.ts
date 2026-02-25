@@ -7,6 +7,10 @@ import { isDatabaseConfigured, toPublicDatabaseError } from "@/lib/db-config";
 import { prisma } from "@/lib/prisma";
 import { ensureBlogPostsSchema } from "@/lib/db-bootstrap";
 import { generateFaqSchema, generateHowToSchema } from "@/lib/generateSchemas";
+import {
+  mirrorExternalImagesInHtmlToSupabase,
+  mirrorRemoteImageUrlToSupabase,
+} from "@/lib/media/storage";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -63,7 +67,10 @@ function safeCompareSecret(provided: string, expected: string): boolean {
 
 function isAuthorizedRequest(request: Request): boolean {
   const configuredSecret = process.env.N8N_BLOG_SECRET?.trim() || "";
-  const requestSecret = request.headers.get("x-secret-key")?.trim() || "";
+  const requestSecret =
+    request.headers.get("x-secret-key")?.trim() ||
+    request.headers.get("x-n8n-secret")?.trim() ||
+    "";
 
   if (!configuredSecret || !requestSecret) {
     return false;
@@ -197,7 +204,18 @@ export async function POST(request: Request) {
     );
   }
 
-  const content = parsed.data.content.trim();
+  let content = parsed.data.content.trim();
+  try {
+    content = (
+      await mirrorExternalImagesInHtmlToSupabase(content, {
+        folder: "blog/inline-imported",
+        maxImages: 10,
+      })
+    ).trim();
+  } catch (error) {
+    // Do not block publishing if media mirroring fails.
+    console.error("n8n-blog inline image mirror failed", error);
+  }
   const wordCount = countWords(content);
   if (wordCount < 400) {
     return NextResponse.json(
@@ -216,6 +234,17 @@ export async function POST(request: Request) {
   const seoTitle = parsed.data.seo_metadata?.title?.trim() || title;
   const seoDescription =
     parsed.data.seo_metadata?.description?.trim() || buildExcerpt(content);
+  let featureImage = parsed.data.feature_image;
+  try {
+    featureImage = (
+      await mirrorRemoteImageUrlToSupabase(parsed.data.feature_image, {
+        folder: "blog/featured-imported",
+      })
+    ) || parsed.data.feature_image;
+  } catch (error) {
+    // Keep original URL if storage import fails.
+    console.error("n8n-blog featured image mirror failed", error);
+  }
   const faqSchema = generateFaqSchema(content);
   const howtoSchema = generateHowToSchema(content);
   const faqSchemaValue = faqSchema
@@ -235,7 +264,7 @@ export async function POST(request: Request) {
           slug,
           articleType: parsed.data.article_type?.trim() || "analysis",
           topicSlug: parsed.data.topic_slug?.trim() || null,
-          featureImage: parsed.data.feature_image,
+          featureImage: featureImage || parsed.data.feature_image,
           imageCredit: parsed.data.image_credit?.trim() || null,
           author: parsed.data.author?.trim() || "100Xfounder Research",
           canonicalUrl: parsed.data.canonical_url?.trim() || null,

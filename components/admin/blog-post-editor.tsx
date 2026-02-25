@@ -9,6 +9,7 @@ import { countWords, slugify, toReadingTime } from "@/lib/blog/post-utils";
 import type { BlogPost } from "@/lib/blog/types";
 
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+const ReactQuillEditor = ReactQuill as any;
 
 type BlogPostEditorProps = {
   slug?: string;
@@ -247,12 +248,15 @@ function parseCitationsInput(value: string) {
 export function BlogPostEditor({ slug }: BlogPostEditorProps) {
   const router = useRouter();
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const quillRef = useRef<any>(null);
 
   const [form, setForm] = useState<EditorForm>(DEFAULT_FORM);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
-  const [uploadedImageUrl, setUploadedImageUrl] = useState<string>("");
+  const [importingImage, setImportingImage] = useState(false);
+  const [imageImportUrl, setImageImportUrl] = useState("");
+  const [uploadedImageUrls, setUploadedImageUrls] = useState<string[]>([]);
 
   const isNew = !slug;
 
@@ -426,34 +430,103 @@ export function BlogPostEditor({ slug }: BlogPostEditorProps) {
     router.refresh();
   }
 
-  async function uploadImage(file: File) {
+  async function uploadImages(files: File[]) {
+    if (files.length === 0) {
+      return;
+    }
+
     setUploading(true);
-    setStatusMessage("Uploading image...");
+    setStatusMessage(`Uploading ${files.length} image${files.length > 1 ? "s" : ""}...`);
+
+    const uploaded: string[] = [];
+
+    for (const file of files) {
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("folder", "blog");
+
+      const response = await fetch("/api/admin/media", {
+        method: "POST",
+        body: formData,
+      });
+      const result = await response.json().catch(() => null);
+
+      if (!response.ok || !result?.success) {
+        setStatusMessage(result?.error ?? `Image upload failed for ${file.name}.`);
+        continue;
+      }
+
+      const imageUrl = String(result.item?.url ?? "").trim();
+      if (imageUrl) {
+        uploaded.push(imageUrl);
+      }
+    }
+
+    setUploading(false);
+    if (uploaded.length === 0) {
+      return;
+    }
+
+    setUploadedImageUrls((current) => [
+      ...uploaded,
+      ...current.filter((item) => !uploaded.includes(item)),
+    ]);
+    setStatusMessage(
+      `${uploaded.length} image${uploaded.length > 1 ? "s" : ""} uploaded. Insert at cursor or set as featured.`,
+    );
+  }
+
+  async function importImageByUrl() {
+    const url = imageImportUrl.trim();
+    if (!url) {
+      setStatusMessage("Add an image URL first.");
+      return;
+    }
+
+    setImportingImage(true);
+    setStatusMessage("Importing image URL to server...");
 
     const formData = new FormData();
-    formData.append("file", file);
-    formData.append("folder", "blog");
+    formData.append("url", url);
+    formData.append("folder", "blog/imported");
 
     const response = await fetch("/api/admin/media", {
       method: "POST",
       body: formData,
     });
-
     const result = await response.json().catch(() => null);
-    setUploading(false);
+    setImportingImage(false);
 
     if (!response.ok || !result?.success) {
-      setStatusMessage(result?.error ?? "Image upload failed.");
+      setStatusMessage(result?.error ?? "Image import failed.");
       return;
     }
 
-    const imageUrl = String(result.item?.url ?? "");
-    setUploadedImageUrl(imageUrl);
-    setStatusMessage("Image uploaded. You can insert it in content or set as featured image.");
+    const imageUrl = String(result.item?.url ?? "").trim();
+    if (!imageUrl) {
+      setStatusMessage("Image import failed.");
+      return;
+    }
+
+    setUploadedImageUrls((current) => [imageUrl, ...current.filter((item) => item !== imageUrl)]);
+    setImageImportUrl("");
+    setStatusMessage("Image imported to your server. You can now insert it in content.");
   }
 
   function insertImageIntoEditor(url: string) {
     if (!url) return;
+
+    const editor = quillRef.current?.getEditor?.();
+    if (editor) {
+      const range = editor.getSelection(true);
+      const insertAt = range ? range.index : editor.getLength();
+      editor.insertEmbed(insertAt, "image", url, "user");
+      editor.setSelection(insertAt + 1, 0, "user");
+      const nextHtml = editor.root?.innerHTML || form.content;
+      setForm((current) => ({ ...current, content: nextHtml }));
+      return;
+    }
+
     setForm((current) => ({
       ...current,
       content: `${current.content}<p><img src=\"${url}\" alt=\"${current.title || "Blog image"}\" /></p>`,
@@ -608,10 +681,11 @@ export function BlogPostEditor({ slug }: BlogPostEditorProps) {
           </div>
 
           <div className="rounded-md border border-white/15 bg-black/40 p-2">
-            <ReactQuill
+            <ReactQuillEditor
+              ref={quillRef}
               theme="snow"
               value={form.content}
-              onChange={(value) => setForm((current) => ({ ...current, content: value }))}
+              onChange={(value: string) => setForm((current) => ({ ...current, content: value }))}
               modules={quillModules}
             />
           </div>
@@ -816,46 +890,74 @@ export function BlogPostEditor({ slug }: BlogPostEditorProps) {
                 disabled={uploading}
                 className="rounded-md border border-white/15 px-3 py-1.5 text-xs text-zinc-200 hover:border-white/30 disabled:opacity-60"
               >
-                {uploading ? "Uploading..." : "Upload Image"}
+                {uploading ? "Uploading..." : "Upload Image(s)"}
               </button>
+              <div className="flex gap-2">
+                <input
+                  value={imageImportUrl}
+                  onChange={(event) => setImageImportUrl(event.target.value)}
+                  placeholder="Paste direct image URL and import to your server"
+                  className="h-9 w-full rounded-md border border-white/15 bg-black/40 px-3 text-xs text-zinc-100"
+                />
+                <button
+                  type="button"
+                  onClick={() => {
+                    void importImageByUrl();
+                  }}
+                  disabled={importingImage}
+                  className="rounded-md border border-white/15 px-3 py-1.5 text-xs text-zinc-200 hover:border-white/30 disabled:opacity-60"
+                >
+                  {importingImage ? "Importing..." : "Import URL"}
+                </button>
+              </div>
               <input
                 ref={fileInputRef}
                 type="file"
                 className="hidden"
                 accept="image/*"
+                multiple
                 onChange={(event) => {
-                  const file = event.target.files?.[0];
-                  if (!file) return;
-                  void uploadImage(file);
+                  const files = Array.from(event.target.files ?? []);
+                  if (files.length === 0) return;
+                  void uploadImages(files);
                   event.target.value = "";
                 }}
               />
 
-              {uploadedImageUrl ? (
+              {uploadedImageUrls.length > 0 ? (
                 <div className="space-y-2 rounded-md border border-white/10 bg-black/30 p-3">
-                  <p className="line-clamp-2 text-xs text-zinc-400">{uploadedImageUrl}</p>
-                  <div className="flex flex-wrap gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setForm((current) => ({ ...current, thumbnail: uploadedImageUrl }))}
-                      className="rounded-md border border-white/15 px-2.5 py-1 text-xs text-zinc-200 hover:border-white/30"
-                    >
-                      Use as Featured
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => insertImageIntoEditor(uploadedImageUrl)}
-                      className="rounded-md border border-white/15 px-2.5 py-1 text-xs text-zinc-200 hover:border-white/30"
-                    >
-                      Insert in Content
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => copyText(uploadedImageUrl)}
-                      className="rounded-md border border-white/15 px-2.5 py-1 text-xs text-zinc-200 hover:border-white/30"
-                    >
-                      Copy URL
-                    </button>
+                  <p className="text-xs text-zinc-500">
+                    Uploaded media (click Insert to place image at current cursor position)
+                  </p>
+                  <div className="space-y-2">
+                    {uploadedImageUrls.slice(0, 8).map((url) => (
+                      <div key={url} className="rounded-md border border-white/10 bg-black/25 p-2">
+                        <p className="line-clamp-2 text-xs text-zinc-400">{url}</p>
+                        <div className="mt-2 flex flex-wrap gap-2">
+                          <button
+                            type="button"
+                            onClick={() => setForm((current) => ({ ...current, thumbnail: url }))}
+                            className="rounded-md border border-white/15 px-2.5 py-1 text-xs text-zinc-200 hover:border-white/30"
+                          >
+                            Use as Featured
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => insertImageIntoEditor(url)}
+                            className="rounded-md border border-white/15 px-2.5 py-1 text-xs text-zinc-200 hover:border-white/30"
+                          >
+                            Insert at Cursor
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => copyText(url)}
+                            className="rounded-md border border-white/15 px-2.5 py-1 text-xs text-zinc-200 hover:border-white/30"
+                          >
+                            Copy URL
+                          </button>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               ) : null}

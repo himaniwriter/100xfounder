@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { permanentRedirect } from "next/navigation";
 import { ShieldCheck, Zap, ArrowRight } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
@@ -18,6 +19,7 @@ import { getFounderDirectory, splitRecentlyFunded } from "@/lib/founders/store";
 import { getInstagramProfileUrl } from "@/lib/marketing/outreach";
 import { getInstagramFeed } from "@/lib/outreach/instagram";
 import { getSiteBaseUrl } from "@/lib/sitemap";
+import { mapTopStartupsDirectoryQueryToPath } from "@/lib/startups/catalog";
 
 const baseUrl = getSiteBaseUrl();
 
@@ -48,7 +50,38 @@ function parseAmountToMillions(amount: string): number {
   return numericValue;
 }
 
-export default async function HomePage() {
+type HomePageProps = {
+  searchParams?: Record<string, string | string[] | undefined>;
+};
+
+function toSearchParams(input: Record<string, string | string[] | undefined> | undefined) {
+  const params = new URLSearchParams();
+
+  Object.entries(input || {}).forEach(([key, value]) => {
+    if (Array.isArray(value)) {
+      value.forEach((entry) => {
+        if (entry?.trim()) {
+          params.append(key, entry.trim());
+        }
+      });
+      return;
+    }
+
+    if (typeof value === "string" && value.trim()) {
+      params.append(key, value.trim());
+    }
+  });
+
+  return params;
+}
+
+export default async function HomePage({ searchParams }: HomePageProps) {
+  const query = toSearchParams(searchParams);
+  const mappedDirectoryPath = mapTopStartupsDirectoryQueryToPath(query);
+  if (mappedDirectoryPath) {
+    permanentRedirect(mappedDirectoryPath);
+  }
+
   const homepageContent = await readHomepageContent();
   const founders = await getFounderDirectory({ limit: 80 });
   const instagramUrl = getInstagramProfileUrl();
@@ -152,9 +185,46 @@ export default async function HomePage() {
       companyHrefMap.get(item.company.toLowerCase()) ??
       `/signals?company=${encodeURIComponent(item.company)}`,
   }));
-  const marqueeItems = Array.from(
-    new Set(founders.map((item) => item.companyName)),
+  const marqueeCompanyMap = new Map(
+    founders.map((item) => [
+      item.companySlug,
+      {
+        slug: item.companySlug,
+        name: item.companyName,
+        websiteUrl: item.websiteUrl,
+      },
+    ]),
   );
+  const fallbackMarqueeNames = [
+    "Anthropic",
+    "Perplexity",
+    "Zepto",
+    "Anduril",
+    "Scale AI",
+    "OpenAI",
+    "Databricks",
+    "Sarvam AI",
+    "Brex",
+    "AppsForBharat",
+    "Lentra",
+    "Ramp",
+    "Mercor",
+    "Cursor",
+    "Juspay",
+    "Perfios",
+  ];
+  const marqueeCompanies =
+    marqueeCompanyMap.size > 0
+      ? Array.from(marqueeCompanyMap.values()).slice(0, 24)
+      : fallbackMarqueeNames.map((name) => ({
+          slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+          name,
+          websiteUrl: null,
+        }));
+  const marqueeSplitIndex = Math.ceil(marqueeCompanies.length / 2);
+  const marqueeTopRow = marqueeCompanies.slice(0, marqueeSplitIndex);
+  const marqueeBottomRow = marqueeCompanies.slice(marqueeSplitIndex);
+  const marqueeBottomSafe = marqueeBottomRow.length > 0 ? marqueeBottomRow : marqueeTopRow;
   const { posts: blogPosts } = await getBlogHomeSections();
   const latestHomeArticles = blogPosts.slice(0, 12);
   const leadHomeArticle = latestHomeArticles[0] ?? null;
@@ -339,25 +409,73 @@ export default async function HomePage() {
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-          <p className="mb-4 text-sm uppercase tracking-[0.18em] text-zinc-500">
-            Recently Indexed Companies
-          </p>
-          <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-md">
-            <div className="flex w-max gap-3 px-4 py-4">
-              {[...marqueeItems, ...marqueeItems].slice(0, 24).map((company, index) => {
-                const href =
-                  companyHrefMap.get(company.toLowerCase()) ??
-                  `/signals?company=${encodeURIComponent(company)}`;
-                return (
-                  <Link
-                    key={`${company}-${index}`}
-                    href={href}
-                    className="rounded-lg border border-white/10 bg-black/30 px-5 py-2 text-sm text-zinc-300 transition-colors hover:border-white/25 hover:text-white"
-                  >
-                    {company}
-                  </Link>
-                );
-              })}
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-[linear-gradient(180deg,rgba(15,29,52,0.42),rgba(4,8,16,0.7))] backdrop-blur-md">
+            <div className="px-4 pb-1 pt-6 text-center sm:px-6">
+              <p className="text-xs uppercase tracking-[0.22em] text-zinc-500">
+                Recently Indexed Companies
+              </p>
+              <p className="mt-2 text-sm text-zinc-400">
+                Join founders, operators, and investors tracking market movements across these
+                companies.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden px-2 pb-6 pt-4 sm:px-3">
+              <div className="company-marquee-mask" />
+
+              <div className="company-marquee-row">
+                <div className="company-marquee-track company-marquee-track-left">
+                  {[...marqueeTopRow, ...marqueeTopRow].map((company, index) => {
+                    const href =
+                      companyHrefMap.get(company.name.toLowerCase()) ??
+                      `/signals?company=${encodeURIComponent(company.name)}`;
+                    return (
+                      <Link
+                        key={`${company.slug}-top-${index}`}
+                        href={href}
+                        className="company-marquee-card"
+                      >
+                        <CompanyLogo
+                          companyName={company.name}
+                          websiteUrl={company.websiteUrl}
+                          className="h-8 w-8 rounded-md border border-white/10"
+                          imageClassName="object-contain bg-black/40 p-1"
+                        />
+                        <span className="truncate text-sm font-medium text-zinc-200">
+                          {company.name}
+                        </span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="company-marquee-row mt-3">
+                <div className="company-marquee-track company-marquee-track-right">
+                  {[...marqueeBottomSafe, ...marqueeBottomSafe].map((company, index) => {
+                    const href =
+                      companyHrefMap.get(company.name.toLowerCase()) ??
+                      `/signals?company=${encodeURIComponent(company.name)}`;
+                    return (
+                      <Link
+                        key={`${company.slug}-bottom-${index}`}
+                        href={href}
+                        className="company-marquee-card"
+                      >
+                        <CompanyLogo
+                          companyName={company.name}
+                          websiteUrl={company.websiteUrl}
+                          className="h-8 w-8 rounded-md border border-white/10"
+                          imageClassName="object-contain bg-black/40 p-1"
+                        />
+                        <span className="truncate text-sm font-medium text-zinc-200">
+                          {company.name}
+                        </span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -542,8 +660,8 @@ export default async function HomePage() {
             </Link>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,0.3fr)_minmax(0,0.7fr)]">
-            <aside className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-[40px]">
+          <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,0.3fr)_minmax(0,0.7fr)]">
+            <aside className="self-start h-fit rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-[40px]">
               <h3 className="text-xs uppercase tracking-[0.16em] text-zinc-500">Funding Radar</h3>
               <p className="mt-2 text-sm text-zinc-300">
                 Live intelligence across high-velocity sectors, refreshed every 2 hours.

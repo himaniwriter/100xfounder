@@ -42,6 +42,16 @@ const megaMenuSections = [
         description: "Programmatic startup lists for high-intent categories.",
       },
       {
+        label: "Startups by Industry",
+        href: "/startups/industry",
+        description: "Path-based SEO pages for AI, FinTech, SaaS, and more.",
+      },
+      {
+        label: "Startups by Location",
+        href: "/startups/location",
+        description: "City and country startup clusters with funding context.",
+      },
+      {
         label: "Signals Feed",
         href: "/signals",
         description: "Track recent funding and hiring movement.",
@@ -65,6 +75,16 @@ const megaMenuSections = [
         label: "Stages",
         href: "/stages",
         description: "Explore startups from seed to public.",
+      },
+      {
+        label: "Funding Round Startups",
+        href: "/startups/funding-round",
+        description: "Seed to Series E startup cohorts.",
+      },
+      {
+        label: "Investor-backed Startups",
+        href: "/startups/investor",
+        description: "Startup pages grouped by investor support.",
       },
     ],
   },
@@ -105,6 +125,16 @@ const megaMenuSections = [
         label: "Guest Post Marketplace",
         href: "/guest-post-marketplace",
         description: "Sponsored startup story packages and order flow.",
+      },
+      {
+        label: "Startup Jobs",
+        href: "/startups/jobs",
+        description: "Browse startup jobs by location, role, and market.",
+      },
+      {
+        label: "Salary & Equity",
+        href: "/startups/salary-equity",
+        description: "Compensation benchmark pages for startup operators.",
       },
     ],
   },

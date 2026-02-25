@@ -38,6 +38,7 @@ const SITEMAP_EXCLUDED_EXACT_PATHS = new Set([
   "/ai-sitemap.xml",
   "/ai-sitemap-news.xml",
   "/sitemap.xml",
+  "/startup-salary-equity-database",
   ...Array.from(THIN_NOINDEX_PAGE_SLUGS).map((slug) => `/${slug}`),
 ]);
 

@@ -391,6 +391,69 @@ body {
   animation-play-state: paused;
 }
 
+.company-marquee-row {
+  position: relative;
+  overflow: hidden;
+}
+
+.company-marquee-mask {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background:
+    linear-gradient(90deg, rgba(4, 8, 16, 0.95), transparent 12%, transparent 88%, rgba(4, 8, 16, 0.95)),
+    linear-gradient(180deg, rgba(4, 8, 16, 0.16), transparent 30%, transparent 70%, rgba(4, 8, 16, 0.16));
+}
+
+.company-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 0.85rem;
+}
+
+.company-marquee-card {
+  display: flex;
+  min-width: 12rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  padding: 0.65rem 0.85rem;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+.company-marquee-card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(129, 140, 248, 0.7);
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.18), rgba(99, 102, 241, 0.08));
+}
+
+.company-marquee-track-left {
+  animation: ticker-scroll 28s linear infinite;
+}
+
+.company-marquee-track-right {
+  animation: ticker-scroll-reverse 32s linear infinite;
+}
+
+.company-marquee-row:hover .company-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
