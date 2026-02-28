@@ -5,6 +5,7 @@ import { ProfileFaqSection } from "@/components/seo/profile-faq-section";
 import { BlogCard } from "@/components/blog/blog-card";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { CompanyIntelligenceDashboard } from "@/components/company/company-intelligence-dashboard";
 import { GetFeaturedCtaCard } from "@/components/shared/get-featured-cta-card";
 import { CompanyLogo } from "@/components/ui/company-logo";
@@ -194,6 +195,21 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
             )}
           </div>
         </section>
+
+        <PillarCrosslinks
+          context={{
+            country: primary.country,
+            industry: primary.industry,
+            stage: primary.stage,
+            companySlug: primary.companySlug,
+            founderSlug: primary.slug,
+          }}
+          includeGlobal
+          maxLinks={10}
+          title="Contextual Research Links"
+          description="Jump to country, industry, stage, startup taxonomy, and newsroom routes tied to this company."
+          className="mt-6"
+        />
         <div className="mt-6">
           <GetFeaturedCtaCard
             context="company_profile"

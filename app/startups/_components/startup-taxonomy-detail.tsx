@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { FounderCard } from "@/components/founder-card";
 import type {
   StartupListContext,
@@ -16,6 +17,7 @@ export function StartupTaxonomyDetail({
   basePath,
   related,
 }: StartupTaxonomyDetailProps) {
+  const anchorItem = context.items[0];
   const pageSuffix = context.page > 1 ? ` (Page ${context.page})` : "";
 
   const previousHref =
@@ -103,6 +105,21 @@ export function StartupTaxonomyDetail({
           </div>
         </section>
       ) : null}
+
+      <PillarCrosslinks
+        context={{
+          country: anchorItem?.country,
+          industry: anchorItem?.industry,
+          stage: anchorItem?.stage,
+          fundingRound: anchorItem?.lastRound?.round,
+          companySlug: anchorItem?.companySlug,
+        }}
+        includeGlobal
+        maxLinks={8}
+        title="Connected Pillar Routes"
+        description="Continue discovery through country, industry, stage, funding, and newsroom hubs."
+        className="mt-8"
+      />
     </section>
   );
 }

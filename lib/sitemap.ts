@@ -2,11 +2,20 @@ import type { MetadataRoute } from "next";
 import { getAllBlogPosts } from "@/lib/blog/store";
 import { countryTierLabel, countryToSlug } from "@/lib/founders/country-tier";
 import { slugifySegment } from "@/lib/founders/hubs";
-import { getCountryCoverage, getFounderDirectory } from "@/lib/founders/store";
+import {
+  getCountryCoverage,
+  getFounderDirectory,
+  getFounderDirectoryLastUpdatedAt,
+} from "@/lib/founders/store";
 import { getFundingRoundOptions, getTopicSummaries } from "@/lib/news/hubs";
-import { getSalaryEquityOverview } from "@/lib/salary-equity/store";
+import {
+  SALARY_INDEX_THRESHOLD,
+  getSalaryEquityOverview,
+} from "@/lib/salary-equity/store";
 import { isPathEligibleForSitemap } from "@/lib/seo/indexability";
 import {
+  JOB_INDEX_THRESHOLD,
+  STARTUP_INDEX_THRESHOLD,
   getJobsOverview,
   getStartupTaxonomyOptions,
 } from "@/lib/startups/catalog";
@@ -118,10 +127,20 @@ function sortLinksByLabel(items: HtmlSitemapLink[]): HtmlSitemapLink[] {
 
 export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
   const baseUrl = getSiteBaseUrl();
-  const now = new Date();
+  const parseDate = (value: string | Date | null | undefined, fallback: Date): Date => {
+    if (!value) {
+      return fallback;
+    }
+    const parsed = new Date(value);
+    if (Number.isNaN(parsed.getTime())) {
+      return fallback;
+    }
+    return parsed;
+  };
   const [
     founders,
     countryCoverage,
+    founderDirectoryUpdatedAt,
     blogPosts,
     topics,
     fundingRoundOptions,
@@ -135,6 +154,7 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
     await Promise.all([
       getFounderDirectory(),
       getCountryCoverage(),
+      getFounderDirectoryLastUpdatedAt(),
       getAllBlogPosts(),
       getTopicSummaries(250),
       getFundingRoundOptions(80),
@@ -146,11 +166,26 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       getSalaryEquityOverview(),
     ]);
 
+  const directoryUpdatedAt = founderDirectoryUpdatedAt;
+  const latestBlogUpdatedAt = blogPosts
+    .map((post) => parseDate(post.updatedAt ?? post.publishedAt, directoryUpdatedAt))
+    .sort((a, b) => b.getTime() - a.getTime())[0] ?? directoryUpdatedAt;
+  const jobsUpdatedAt = parseDate(jobsOverview.updatedAt, directoryUpdatedAt);
+  const salaryUpdatedAt = parseDate(salaryOverview.updatedAt, directoryUpdatedAt);
+  const staticLastModified = new Date(
+    Math.max(
+      directoryUpdatedAt.getTime(),
+      latestBlogUpdatedAt.getTime(),
+      jobsUpdatedAt.getTime(),
+      salaryUpdatedAt.getTime(),
+    ),
+  );
+
   const staticLinks = filterIndexableLinks(
     STATIC_ROUTES.map((route) => ({
       href: route.href,
       label: route.label,
-      lastModified: now,
+      lastModified: staticLastModified,
     })),
   );
 
@@ -159,9 +194,7 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .map((post) => ({
         href: `/blog/${post.slug}`,
         label: post.title,
-        lastModified: Number.isNaN(Date.parse(post.publishedAt))
-          ? now
-          : new Date(post.publishedAt),
+        lastModified: parseDate(post.updatedAt ?? post.publishedAt, latestBlogUpdatedAt),
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
@@ -170,82 +203,82 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
     uniqueByHref(
       [
         ...startupIndustryOptions
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= STARTUP_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/industry/${item.slug}`,
             label: `${item.label} startups`,
-            lastModified: now,
+            lastModified: directoryUpdatedAt,
           })),
         ...startupLocationOptions
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= STARTUP_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/location/${item.slug}`,
             label: `${item.label} startups`,
-            lastModified: now,
+            lastModified: directoryUpdatedAt,
           })),
         ...startupRoundOptions
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= STARTUP_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/funding-round/${item.slug}`,
             label: `${item.label} startups`,
-            lastModified: now,
+            lastModified: directoryUpdatedAt,
           })),
         ...startupInvestorOptions
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= STARTUP_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/investor/${item.slug}`,
             label: `${item.label}-backed startups`,
-            lastModified: now,
+            lastModified: directoryUpdatedAt,
           })),
         ...jobsOverview.byLocation
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= JOB_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/jobs/location/${item.slug}`,
             label: `Startup jobs in ${item.label}`,
-            lastModified: now,
+            lastModified: jobsUpdatedAt,
           })),
         ...jobsOverview.byRole
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= JOB_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/jobs/role/${item.slug}`,
             label: `${item.label} startup jobs`,
-            lastModified: now,
+            lastModified: jobsUpdatedAt,
           })),
         ...jobsOverview.byTitle
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= JOB_INDEX_THRESHOLD)
           .slice(0, 300)
           .map((item) => ({
             href: `/startups/jobs/title/${item.slug}`,
             label: `${item.label} startup jobs`,
-            lastModified: now,
+            lastModified: jobsUpdatedAt,
           })),
         ...jobsOverview.byMarket
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= JOB_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/jobs/market/${item.slug}`,
             label: `${item.label} startup jobs`,
-            lastModified: now,
+            lastModified: jobsUpdatedAt,
           })),
         ...salaryOverview.byLocation
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= SALARY_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/salary-equity/location/${item.slug}`,
             label: `${item.label} salary benchmarks`,
-            lastModified: now,
+            lastModified: salaryUpdatedAt,
           })),
         ...salaryOverview.byRole
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= SALARY_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/salary-equity/role/${item.slug}`,
             label: `${item.label} salary benchmarks`,
-            lastModified: now,
+            lastModified: salaryUpdatedAt,
           })),
         ...salaryOverview.byStage
-          .filter((item) => item.count >= 0)
+          .filter((item) => item.count >= SALARY_INDEX_THRESHOLD)
           .map((item) => ({
             href: `/startups/salary-equity/stage/${item.slug}`,
             label: `${item.label} salary benchmarks`,
-            lastModified: now,
+            lastModified: salaryUpdatedAt,
           })),
       ].sort((a, b) => a.label.localeCompare(b.label)),
     ),
@@ -253,20 +286,22 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
 
   const countryLinks = filterIndexableLinks(uniqueByHref(
     countryCoverage
+      .filter((item) => item.companyCount >= STARTUP_INDEX_THRESHOLD)
       .map((item) => ({
         href: `/countries/${item.countrySlug}`,
         label: `${item.country} startups`,
-        lastModified: now,
+        lastModified: directoryUpdatedAt,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
 
   const countryNewsLinks = filterIndexableLinks(uniqueByHref(
     countryCoverage
+      .filter((item) => item.companyCount >= STARTUP_INDEX_THRESHOLD)
       .map((item) => ({
         href: `/countries/${item.countrySlug}/news`,
         label: `${item.country} startup news`,
-        lastModified: now,
+        lastModified: latestBlogUpdatedAt,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
@@ -276,38 +311,82 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .map((tier) => ({
         href: `/countries/tier/${tier.toLowerCase()}`,
         label: `${countryTierLabel(tier)} countries`,
-        lastModified: now,
+        lastModified: directoryUpdatedAt,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
+
+  const industryGroups = founders.reduce(
+    (acc, founder) => {
+      const slug = slugifySegment(founder.industry);
+      if (!slug) {
+        return acc;
+      }
+
+      const current = acc.get(slug) ?? {
+        label: founder.industry,
+        companies: new Set<string>(),
+      };
+      current.companies.add(founder.companySlug);
+      acc.set(slug, current);
+      return acc;
+    },
+    new Map<string, { label: string; companies: Set<string> }>(),
+  );
 
   const industryLinks = filterIndexableLinks(uniqueByHref(
-    Array.from(
-      new Map(
-        founders.map((item) => [slugifySegment(item.industry), item.industry]),
-      ).entries(),
-    )
-      .filter(([slug]) => slug.length > 0)
-      .map(([slug, label]) => ({
+    Array.from(industryGroups.entries())
+      .filter(([, value]) => value.companies.size >= STARTUP_INDEX_THRESHOLD)
+      .map(([slug, value]) => ({
         href: `/industries/${slug}`,
-        label: `${label} startups`,
-        lastModified: now,
+        label: `${value.label} startups`,
+        lastModified: directoryUpdatedAt,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
 
+  const stageGroups = founders.reduce(
+    (acc, founder) => {
+      const slug = slugifySegment(founder.stage);
+      if (!slug) {
+        return acc;
+      }
+
+      const current = acc.get(slug) ?? {
+        label: founder.stage,
+        companies: new Set<string>(),
+      };
+      current.companies.add(founder.companySlug);
+      acc.set(slug, current);
+      return acc;
+    },
+    new Map<string, { label: string; companies: Set<string> }>(),
+  );
+
   const stageLinks = filterIndexableLinks(uniqueByHref(
-    Array.from(
-      new Map(founders.map((item) => [slugifySegment(item.stage), item.stage])).entries(),
-    )
-      .filter(([slug]) => slug.length > 0)
-      .map(([slug, label]) => ({
+    Array.from(stageGroups.entries())
+      .filter(([, value]) => value.companies.size >= STARTUP_INDEX_THRESHOLD)
+      .map(([slug, value]) => ({
         href: `/stages/${slug}`,
-        label: `${label} startups`,
-        lastModified: now,
+        label: `${value.label} startups`,
+        lastModified: directoryUpdatedAt,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
+
+  const countryIndustryCompanyCounts = founders.reduce((acc, founder) => {
+    const countrySlug = countryToSlug(founder.country ?? "");
+    const industrySlug = slugifySegment(founder.industry);
+    if (!countrySlug || !industrySlug) {
+      return acc;
+    }
+
+    const key = `/countries/${countrySlug}/industries/${industrySlug}`;
+    const existing = acc.get(key) ?? new Set<string>();
+    existing.add(founder.companySlug);
+    acc.set(key, existing);
+    return acc;
+  }, new Map<string, Set<string>>());
 
   const countryIndustryLinks = filterIndexableLinks(uniqueByHref(
     Array.from(
@@ -322,13 +401,18 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
               {
                 href: `/countries/${countrySlug}/industries/${industrySlug}`,
                 label: `${item.industry} startups in ${item.country}`,
-                lastModified: now,
+                lastModified: directoryUpdatedAt,
               },
             ] as const;
           }),
       ).values(),
     )
       .filter((item) => item.href.includes("/countries/"))
+      .filter(
+        (item) =>
+          (countryIndustryCompanyCounts.get(item.href)?.size ?? 0) >=
+          STARTUP_INDEX_THRESHOLD,
+      )
       .slice(0, 3000)
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
@@ -338,7 +422,7 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .map((item) => ({
         href: `/company/${item.companySlug}`,
         label: item.companyName,
-        lastModified: now,
+        lastModified: directoryUpdatedAt,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
@@ -348,7 +432,7 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .map((item) => ({
         href: `/companies/${item.companySlug}/news`,
         label: `${item.companyName} news`,
-        lastModified: now,
+        lastModified: latestBlogUpdatedAt,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
@@ -368,7 +452,7 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .map((item) => ({
         href: `/funding-rounds/${item.slug}`,
         label: `${item.label} funding news`,
-        lastModified: now,
+        lastModified: latestBlogUpdatedAt,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));
@@ -378,7 +462,7 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
       .map((item) => ({
         href: `/founders/${item.slug}`,
         label: `${item.founderName} (${item.companyName})`,
-        lastModified: now,
+        lastModified: directoryUpdatedAt,
       }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   ));

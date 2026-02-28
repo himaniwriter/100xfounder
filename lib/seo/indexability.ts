@@ -11,7 +11,13 @@ export type IndexabilityDecision = {
     | undefined;
 };
 
-export const THIN_NOINDEX_PAGE_SLUGS = new Set<string>();
+export const THIN_NOINDEX_PAGE_SLUGS = new Set<string>([
+  "join",
+  "careers",
+  "changelog",
+  "add-startup-or-job",
+  "negotiation-coaching",
+]);
 
 const SITEMAP_EXCLUDED_EXACT_PATHS = new Set([
   "/search",
@@ -28,6 +34,14 @@ const SITEMAP_EXCLUDED_EXACT_PATHS = new Set([
 ]);
 
 const SITEMAP_EXCLUDED_PREFIXES = ["/api/", "/admin", "/dashboard", "/founder/"];
+
+function slugifySegment(value: string): string {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)+/g, "");
+}
 
 function normalizeSingleQueryToken(value: string): string[] {
   if (!value.includes(",")) {
@@ -87,14 +101,106 @@ export function resolveQueryIndexability(
   basePath: string,
   query: Record<string, string[] | undefined>,
 ): IndexabilityDecision {
-  const shouldIndex = true;
-  const canonicalPath = buildCanonicalPath(basePath, query);
+  const activeEntries = Object.entries(query).filter(
+    ([, values]) => (values?.length ?? 0) > 0,
+  );
+
+  if (basePath === "/search") {
+    return {
+      shouldIndex: false,
+      canonicalPath: "/search",
+      robots: {
+        index: false,
+        follow: true,
+      },
+    };
+  }
+
+  if (basePath === "/startups") {
+    if (activeEntries.length === 0) {
+      return {
+        shouldIndex: true,
+        canonicalPath: "/startups",
+        robots: undefined,
+      };
+    }
+
+    const canonicalPath = mapStartupsQueryToCanonicalPath(query);
+    return {
+      shouldIndex: false,
+      canonicalPath,
+      robots: {
+        index: false,
+        follow: true,
+      },
+    };
+  }
+
+  if (basePath === "/founders" || basePath === "/blog") {
+    if (activeEntries.length === 0) {
+      return {
+        shouldIndex: true,
+        canonicalPath: basePath,
+        robots: undefined,
+      };
+    }
+
+    if (isSimpleQueryState(query)) {
+      return {
+        shouldIndex: true,
+        canonicalPath: buildCanonicalPath(basePath, query),
+        robots: undefined,
+      };
+    }
+
+    return {
+      shouldIndex: false,
+      canonicalPath: basePath,
+      robots: {
+        index: false,
+        follow: true,
+      },
+    };
+  }
 
   return {
-    shouldIndex,
-    canonicalPath,
+    shouldIndex: true,
+    canonicalPath: buildCanonicalPath(basePath, query),
     robots: undefined,
   };
+}
+
+function mapStartupsQueryToCanonicalPath(
+  query: Record<string, string[] | undefined>,
+): string {
+  const valueMap: Record<string, string | undefined> = {
+    industry: query.industry?.[0] ?? query.industries?.[0],
+    location: query.location?.[0] ?? query.hq_location?.[0],
+    funding_round: query.funding_round?.[0] ?? query.stage?.[0],
+    investor: query.investor?.[0] ?? query.investors?.[0],
+  };
+
+  const activeKeys = Object.entries(valueMap).filter(([, value]) => Boolean(value));
+  if (activeKeys.length !== 1) {
+    return "/startups";
+  }
+
+  const [key, value] = activeKeys[0];
+  const slug = slugifySegment(value ?? "");
+  if (!slug) {
+    return "/startups";
+  }
+
+  if (key === "industry") {
+    return `/startups/industry/${slug}`;
+  }
+  if (key === "location") {
+    return `/startups/location/${slug}`;
+  }
+  if (key === "funding_round") {
+    return `/startups/funding-round/${slug}`;
+  }
+  return `/startups/investor/${slug}`;
 }
 
 export function isThinNoindexPageSlug(slug: string): boolean {

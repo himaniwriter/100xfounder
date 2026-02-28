@@ -5,6 +5,7 @@ import { ProfileFaqSection } from "@/components/seo/profile-faq-section";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { ProfileTabs } from "@/components/founders/profile-tabs";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { GetFeaturedCtaCard } from "@/components/shared/get-featured-cta-card";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
@@ -162,6 +163,21 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
           <GetFeaturedCtaCard
             context="founder_profile"
             description="Get your founder profile published with verified funding and hiring context."
+          />
+
+          <PillarCrosslinks
+            context={{
+              country: founder.country,
+              industry: founder.industry,
+              stage: founder.stage,
+              companySlug: founder.companySlug,
+              founderSlug: founder.slug,
+            }}
+            includeGlobal
+            maxLinks={10}
+            title="Related Pillar Pages"
+            description="Access the country, industry, stage, startup taxonomy, and newsroom routes connected to this founder."
+            className="mt-6"
           />
 
           <ProfileFaqSection

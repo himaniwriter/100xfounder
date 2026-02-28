@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { SalaryFacetPage } from "@/app/startups/_components/salary-listing";
 import {
+  SALARY_INDEX_THRESHOLD,
+  SALARY_STATIC_PARAMS_CAP,
   getSalaryEquityOverview,
   getSalaryFacetContext,
 } from "@/lib/salary-equity/store";
@@ -15,6 +17,14 @@ type SalaryStagePageProps = {
   params: { stageSlug: string };
   searchParams?: { page?: string };
 };
+
+export async function generateStaticParams(): Promise<Array<{ stageSlug: string }>> {
+  const overview = await getSalaryEquityOverview();
+  return overview.byStage
+    .filter((item) => item.count >= SALARY_INDEX_THRESHOLD)
+    .slice(0, SALARY_STATIC_PARAMS_CAP)
+    .map((item) => ({ stageSlug: item.slug }));
+}
 
 function parsePage(raw: string | undefined): number {
   if (!raw) return 1;

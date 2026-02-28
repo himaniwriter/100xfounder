@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { getIndustryOptions } from "@/lib/founders/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 
 export default async function IndustriesPage() {
   const industries = await getIndustryOptions();
+  const topIndustry = industries[0];
   const baseUrl = getSiteBaseUrl();
 
   const schema = {
@@ -54,6 +56,17 @@ export default async function IndustriesPage() {
             Explore startup companies by industry with founder profiles, funding history, and hiring context.
           </p>
         </header>
+
+        <PillarCrosslinks
+          context={{
+            industry: topIndustry?.label,
+          }}
+          includeGlobal
+          maxLinks={8}
+          title="Industry Hub Crosslinks"
+          description="Move between industry lists, startup taxonomy pages, and related funding/news routes."
+          className="mt-6"
+        />
 
         <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {industries.map((item) => (

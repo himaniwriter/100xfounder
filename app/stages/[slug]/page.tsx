@@ -3,16 +3,26 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import { getFoundersByStageSlug } from "@/lib/founders/hubs";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
+import { getFoundersByStageSlug, getStageOptions } from "@/lib/founders/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const revalidate = 21600;
-export const dynamic = "force-dynamic";
+const HUB_STATIC_THRESHOLD = 15;
+const STATIC_PARAMS_CAP = 5000;
 
 type StagePageProps = {
   params: { slug: string };
 };
+
+export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
+  const options = await getStageOptions();
+  return options
+    .filter((item) => item.count >= HUB_STATIC_THRESHOLD)
+    .slice(0, STATIC_PARAMS_CAP)
+    .map((item) => ({ slug: item.slug }));
+}
 
 export async function generateMetadata({ params }: StagePageProps): Promise<Metadata> {
   const context = await getFoundersByStageSlug(params.slug);
@@ -25,6 +35,13 @@ export async function generateMetadata({ params }: StagePageProps): Promise<Meta
     title: `${context.label} Startups | 100Xfounder`,
     description: `Explore ${context.label} startups with founders, funding rounds, and hiring signals.`,
     alternates: { canonical },
+    robots:
+      context.companies.length < HUB_STATIC_THRESHOLD
+        ? {
+            index: false,
+            follow: true,
+          }
+        : undefined,
   };
 }
 
@@ -69,6 +86,19 @@ export default async function StagePage({ params }: StagePageProps) {
             {context.companies.length} companies indexed with founder profiles, funding rounds, and hiring signals.
           </p>
         </header>
+
+        <PillarCrosslinks
+          context={{
+            stage: context.label,
+            industry: context.companies[0]?.industry,
+            country: context.companies[0]?.country,
+          }}
+          includeGlobal
+          maxLinks={8}
+          title="Related Stage Routes"
+          description="Open matched funding/news, industry, and country hubs for this startup stage."
+          className="mt-6"
+        />
 
         <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
           <div className="overflow-hidden rounded-xl border border-white/10 bg-black/25">

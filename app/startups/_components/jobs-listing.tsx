@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import type {
   JobFacetContext,
   JobFacetOption,
@@ -23,6 +24,7 @@ export function JobsOverview({
   updatedAt,
 }: JobsOverviewProps) {
   const latest = jobs.slice(0, 18);
+  const anchorJob = latest[0];
 
   return (
     <section className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
@@ -51,6 +53,19 @@ export function JobsOverview({
         <FacetBlock title="Role" hrefPrefix="/startups/jobs/role" options={byRole.slice(0, 12)} />
         <FacetBlock title="Market" hrefPrefix="/startups/jobs/market" options={byMarket.slice(0, 12)} />
       </section>
+
+      <PillarCrosslinks
+        context={{
+          country: anchorJob?.country,
+          industry: anchorJob?.industry,
+          topic: "startup jobs",
+        }}
+        includeGlobal
+        maxLinks={8}
+        title="Related Jobs and Market Hubs"
+        description="Open connected startup, industry, country, and newsroom pages from this jobs surface."
+        className="mt-8"
+      />
 
       <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
         <h2 className="text-sm font-medium uppercase tracking-wide text-zinc-300">Latest Startup Jobs</h2>
@@ -95,6 +110,7 @@ type JobsFacetPageProps = {
 };
 
 export function JobsFacetPage({ context, basePath, related }: JobsFacetPageProps) {
+  const anchorJob = context.jobs[0];
   const previousHref =
     context.page > 1
       ? context.page === 2
@@ -198,6 +214,19 @@ export function JobsFacetPage({ context, basePath, related }: JobsFacetPageProps
           </div>
         </section>
       ) : null}
+
+      <PillarCrosslinks
+        context={{
+          country: anchorJob?.country,
+          industry: anchorJob?.industry,
+          topic: "startup jobs",
+        }}
+        includeGlobal
+        maxLinks={8}
+        title="Connected Discovery Routes"
+        description="Continue from job facets into startup taxonomy, country hubs, and newsroom clusters."
+        className="mt-8"
+      />
     </section>
   );
 }

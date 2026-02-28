@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import type {
   SalaryEquityFacet,
   SalaryFacetContext,
@@ -19,6 +20,9 @@ export function SalaryOverview({
   byRole,
   byStage,
 }: SalaryOverviewProps) {
+  const anchorLocation = byLocation[0];
+  const anchorRole = byRole[0];
+  const anchorStage = byStage[0];
   return (
     <section className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <header className="rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
@@ -46,6 +50,21 @@ export function SalaryOverview({
         <FacetCard title="By Role" hrefPrefix="/startups/salary-equity/role" options={byRole.slice(0, 12)} />
         <FacetCard title="By Stage" hrefPrefix="/startups/salary-equity/stage" options={byStage.slice(0, 12)} />
       </div>
+
+      <PillarCrosslinks
+        context={{
+          country: anchorLocation?.label,
+          stage: anchorStage?.label,
+          topic: "startup salary and equity",
+          fundingRound: anchorStage?.label,
+          industry: anchorRole?.label,
+        }}
+        includeGlobal
+        maxLinks={8}
+        title="Related Compensation and Market Hubs"
+        description="Move from compensation pages to matching startup, stage, and newsroom routes."
+        className="mt-8"
+      />
     </section>
   );
 }
@@ -61,6 +80,7 @@ export function SalaryFacetPage({
   basePath,
   related,
 }: SalaryFacetPageProps) {
+  const anchorEntry = context.entries[0];
   const previousHref =
     context.page > 1
       ? context.page === 2
@@ -174,6 +194,21 @@ export function SalaryFacetPage({
           </div>
         </section>
       ) : null}
+
+      <PillarCrosslinks
+        context={{
+          country: anchorEntry?.country,
+          stage: anchorEntry?.stage,
+          topic: "startup salary and equity",
+          fundingRound: anchorEntry?.stage,
+          industry: anchorEntry?.role,
+        }}
+        includeGlobal
+        maxLinks={8}
+        title="Connected Research Routes"
+        description="Open linked startup taxonomy and newsroom pages from this compensation facet."
+        className="mt-8"
+      />
     </section>
   );
 }

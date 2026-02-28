@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { countryTierLabel } from "@/lib/founders/country-tier";
 import { getCountryCoverage } from "@/lib/founders/store";
 import { getSiteBaseUrl } from "@/lib/sitemap";
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 
 export default async function CountriesPage() {
   const coverage = await getCountryCoverage();
+  const topCountry = coverage[0];
   const tiers = ["TIER_1", "TIER_2", "TIER_3"] as const;
 
   return (
@@ -48,6 +50,17 @@ export default async function CountriesPage() {
             </span>
           </div>
         </header>
+
+        <PillarCrosslinks
+          context={{
+            country: topCountry?.country,
+          }}
+          includeGlobal
+          maxLinks={9}
+          title="Country Discovery Routes"
+          description="Navigate from country clusters to startup taxonomies and newsroom hubs without leaving the directory graph."
+          className="mt-6"
+        />
 
         <div className="mt-8 space-y-8">
           {tiers.map((tier) => {

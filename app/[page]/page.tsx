@@ -239,6 +239,14 @@ const pageContent: Record<string, StaticPageContent> = {
 };
 
 type ContentKey = keyof typeof pageContent;
+const INDEXABLE_CATCHALL_SLUGS = new Set<ContentKey>([
+  "about",
+  "contact",
+  "privacy",
+  "terms",
+  "cookies",
+  "fulfillment-policy",
+]);
 
 function isContentKey(value: string): value is ContentKey {
   return value in pageContent;
@@ -257,6 +265,7 @@ export async function generateMetadata({
 
   const content = pageContent[params.page];
   const baseUrl = getSiteBaseUrl();
+  const shouldIndex = INDEXABLE_CATCHALL_SLUGS.has(params.page);
 
   return {
     title: `${content.title} | 100Xfounder`,
@@ -264,6 +273,15 @@ export async function generateMetadata({
     alternates: {
       canonical: `${baseUrl}/${params.page}`,
     },
+    robots: shouldIndex
+      ? {
+          index: true,
+          follow: true,
+        }
+      : {
+          index: false,
+          follow: true,
+        },
   };
 }
 

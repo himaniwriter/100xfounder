@@ -3,8 +3,10 @@ import Link from "next/link";
 import { permanentRedirect } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import type { FounderDirectoryItem } from "@/lib/founders/types";
+import { resolveQueryIndexability } from "@/lib/seo/indexability";
 import {
   getStartupDirectoryDataset,
   mapSourceDirectoryQueryToPath,
@@ -64,6 +66,20 @@ function toSearchParams(input: Record<string, string | string[] | undefined> | u
   });
 
   return params;
+}
+
+function toQueryRecord(
+  params: URLSearchParams,
+): Record<string, string[] | undefined> {
+  const record: Record<string, string[] | undefined> = {};
+  Array.from(new Set(params.keys())).forEach((key) => {
+    const values = params
+      .getAll(key)
+      .map((value) => value.trim())
+      .filter(Boolean);
+    record[key] = values.length > 0 ? values : undefined;
+  });
+  return record;
 }
 
 function parsePage(pageParam: string | null): number {
@@ -297,15 +313,16 @@ function StartupCard({ startup }: { startup: StartupItem }) {
 export async function generateMetadata({ searchParams }: StartupsPageProps): Promise<Metadata> {
   const baseUrl = getSiteBaseUrl();
   const params = toSearchParams(searchParams);
-  const mapped = mapSourceDirectoryQueryToPath(params);
+  const decision = resolveQueryIndexability("/startups", toQueryRecord(params));
 
   return {
     title: "100Xfounder Startup Directory | Companies, Filters, External Links",
     description:
       "Browse startup company boxes with filters by industry, location, funding stage, and investor. Explore external company links and founder profiles on 100Xfounder.",
     alternates: {
-      canonical: mapped ? `${baseUrl}${mapped}` : `${baseUrl}/startups`,
+      canonical: `${baseUrl}${decision.canonicalPath}`,
     },
+    robots: decision.robots,
   };
 }
 
@@ -400,6 +417,7 @@ export default async function StartupsPage({ searchParams }: StartupsPageProps) 
   });
 
   const totalResults = ranked.length;
+  const topStartup = ranked[0];
   const totalPages = Math.max(1, Math.ceil(totalResults / PAGE_SIZE));
   const page = Math.min(parsePage(params.get("page")), totalPages);
   const start = (page - 1) * PAGE_SIZE;
@@ -449,6 +467,22 @@ export default async function StartupsPage({ searchParams }: StartupsPageProps) 
             ))}
           </div>
         </section>
+
+        <PillarCrosslinks
+          context={{
+            country: topStartup?.country,
+            industry: topStartup?.industry,
+            stage: topStartup?.stage,
+            fundingRound: topStartup?.lastRound?.round,
+            companySlug: topStartup?.companySlug,
+            founderSlug: topStartup?.slug,
+          }}
+          includeGlobal
+          maxLinks={10}
+          title="Related Startup and News Hubs"
+          description="Use these contextual routes to move between startup listicles, country pages, and funding coverage."
+          className="mt-6"
+        />
 
         <section className="mt-6 grid items-start gap-6 lg:grid-cols-[320px_minmax(0,1fr)]">
           <aside className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-[40px] lg:sticky lg:top-20">

@@ -3,17 +3,29 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 import { countryTierLabel } from "@/lib/founders/country-tier";
 import { slugifySegment } from "@/lib/founders/hubs";
 import { getCountryCoverage, getFounderDirectory } from "@/lib/founders/store";
 
+const HUB_STATIC_THRESHOLD = 15;
+const STATIC_PARAMS_CAP = 5000;
+
 type CountryPageProps = {
   params: {
     slug: string;
   };
 };
+
+export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
+  const coverage = await getCountryCoverage();
+  return coverage
+    .filter((country) => country.companyCount >= HUB_STATIC_THRESHOLD)
+    .slice(0, STATIC_PARAMS_CAP)
+    .map((country) => ({ slug: country.countrySlug }));
+}
 
 async function getCountryContext(slug: string) {
   const coverage = await getCountryCoverage();
@@ -61,6 +73,13 @@ export async function generateMetadata({ params }: CountryPageProps): Promise<Me
     alternates: {
       canonical,
     },
+    robots:
+      context.companies.length < HUB_STATIC_THRESHOLD
+        ? {
+            index: false,
+            follow: true,
+          }
+        : undefined,
   };
 }
 
@@ -152,6 +171,18 @@ export default async function CountryPage({ params }: CountryPageProps) {
               ))}
             </div>
           </div>
+
+          <PillarCrosslinks
+            context={{
+              country: country.country,
+              industry: topIndustries[0]?.[0],
+            }}
+            includeGlobal
+            maxLinks={9}
+            title="Related Country Hubs"
+            description="Cross-link into country news, startup location pages, and key industry hubs for deeper market research."
+            className="mb-6"
+          />
 
           <h2 className="text-xl font-semibold text-white">Company Directory</h2>
           <p className="mt-2 text-sm text-zinc-400">

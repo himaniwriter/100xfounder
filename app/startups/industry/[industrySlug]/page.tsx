@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { StartupTaxonomyDetail } from "@/app/startups/_components/startup-taxonomy-detail";
 import {
+  STARTUP_INDEX_THRESHOLD,
+  STARTUP_STATIC_PARAMS_CAP,
   getStartupListContext,
   getStartupTaxonomyOptions,
 } from "@/lib/startups/catalog";
@@ -20,6 +22,14 @@ type StartupIndustryPageProps = {
     page?: string;
   };
 };
+
+export async function generateStaticParams(): Promise<Array<{ industrySlug: string }>> {
+  const options = await getStartupTaxonomyOptions("industry");
+  return options
+    .filter((item) => item.count >= STARTUP_INDEX_THRESHOLD)
+    .slice(0, STARTUP_STATIC_PARAMS_CAP)
+    .map((item) => ({ industrySlug: item.slug }));
+}
 
 function parsePage(raw: string | undefined): number {
   if (!raw) {

@@ -4,16 +4,26 @@ import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/blog/blog-card";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { getCountryCoverage } from "@/lib/founders/store";
 import { getCountryNewsContext } from "@/lib/news/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const revalidate = 21600;
-export const dynamic = "force-dynamic";
+const HUB_STATIC_THRESHOLD = 15;
+const STATIC_PARAMS_CAP = 5000;
 
 type CountryNewsPageProps = {
   params: { slug: string };
 };
+
+export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
+  const coverage = await getCountryCoverage();
+  return coverage
+    .filter((country) => country.companyCount >= HUB_STATIC_THRESHOLD)
+    .slice(0, STATIC_PARAMS_CAP)
+    .map((country) => ({ slug: country.countrySlug }));
+}
 
 export async function generateMetadata({
   params,

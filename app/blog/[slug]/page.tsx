@@ -9,6 +9,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { ArticleToc } from "@/components/blog/article-toc";
 import { FeaturedWidgetAttention } from "@/components/blog/featured-widget-attention";
 import { FounderCallout } from "@/components/blog/founder-callout";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { GetFeaturedCtaCard } from "@/components/shared/get-featured-cta-card";
 import { NewsCoverImage } from "@/components/ui/news-cover-image";
 import { getAllBlogPostsWithOptions, getBlogPostBySlug } from "@/lib/blog/store";
@@ -513,6 +514,21 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
               )}
             </div>
           </section>
+
+          <PillarCrosslinks
+            context={{
+              topicSlug,
+              country: matchedCompany?.country,
+              industry: matchedCompany?.industry,
+              stage: matchedCompany?.stage,
+              companySlug: matchedCompany?.companySlug,
+              founderSlug: matchedCompany?.slug,
+            }}
+            includeGlobal
+            maxLinks={10}
+            title="Contextual Internal Links"
+            description="Explore pillar and category pages connected to this article for deeper startup research."
+          />
 
           <section className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
             <h2 className="text-base font-semibold text-white">Found this useful? Share it.</h2>

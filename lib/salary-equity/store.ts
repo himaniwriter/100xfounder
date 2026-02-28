@@ -64,7 +64,8 @@ type SalaryEquityRow = {
 };
 
 const PER_PAGE = 30;
-const INDEX_THRESHOLD = 0;
+export const SALARY_INDEX_THRESHOLD = 15;
+export const SALARY_STATIC_PARAMS_CAP = 5000;
 
 const SEEDED_SALARY_LOCATION_FACETS: Array<{ slug: string; label: string }> = [
   { slug: "new-york", label: "New York" },
@@ -322,6 +323,6 @@ export async function getSalaryFacetContext(
     totalCount,
     page,
     totalPages,
-    shouldIndex: totalCount >= INDEX_THRESHOLD,
+    shouldIndex: totalCount >= SALARY_INDEX_THRESHOLD,
   };
 }

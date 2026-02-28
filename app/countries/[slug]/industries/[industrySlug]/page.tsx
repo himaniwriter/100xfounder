@@ -3,11 +3,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import { getCountryIndustryContext } from "@/lib/founders/hubs";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
+import { countryToSlug } from "@/lib/founders/country-tier";
+import { getCountryIndustryContext, slugifySegment } from "@/lib/founders/hubs";
+import { getFounderDirectory } from "@/lib/founders/store";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const revalidate = 21600;
+const HUB_STATIC_THRESHOLD = 15;
+const STATIC_PARAMS_CAP = 5000;
 
 type CountryIndustryPageProps = {
   params: {
@@ -15,6 +20,39 @@ type CountryIndustryPageProps = {
     industrySlug: string;
   };
 };
+
+export async function generateStaticParams(): Promise<
+  Array<{ slug: string; industrySlug: string }>
+> {
+  const founders = await getFounderDirectory({ perCountryLimit: 500 });
+  const grouped = new Map<string, Set<string>>();
+
+  founders.forEach((founder) => {
+    const country = founder.country?.trim();
+    if (!country) {
+      return;
+    }
+
+    const countrySlug = countryToSlug(country);
+    const industrySlug = slugifySegment(founder.industry);
+    if (!countrySlug || !industrySlug) {
+      return;
+    }
+
+    const key = `${countrySlug}:${industrySlug}`;
+    const companySet = grouped.get(key) ?? new Set<string>();
+    companySet.add(founder.companySlug);
+    grouped.set(key, companySet);
+  });
+
+  return Array.from(grouped.entries())
+    .filter(([, companySet]) => companySet.size >= HUB_STATIC_THRESHOLD)
+    .slice(0, STATIC_PARAMS_CAP)
+    .map(([key]) => {
+      const [slug, industrySlug] = key.split(":");
+      return { slug, industrySlug };
+    });
+}
 
 export async function generateMetadata({ params }: CountryIndustryPageProps): Promise<Metadata> {
   const context = await getCountryIndustryContext(params.slug, params.industrySlug);
@@ -27,6 +65,13 @@ export async function generateMetadata({ params }: CountryIndustryPageProps): Pr
     title: `${context.industry} Startups in ${context.country} | 100Xfounder`,
     description: `Explore ${context.industry} startups in ${context.country} with founder, funding, and hiring data.`,
     alternates: { canonical },
+    robots:
+      context.companies.length < HUB_STATIC_THRESHOLD
+        ? {
+            index: false,
+            follow: true,
+          }
+        : undefined,
   };
 }
 
@@ -73,6 +118,19 @@ export default async function CountryIndustryPage({ params }: CountryIndustryPag
             {context.companies.length} companies indexed with founder profiles, funding rounds, and hiring signals.
           </p>
         </header>
+
+        <PillarCrosslinks
+          context={{
+            country: context.country,
+            industry: context.industry,
+            stage: context.companies[0]?.stage,
+          }}
+          includeGlobal
+          maxLinks={9}
+          title="Related Geo and Industry Routes"
+          description="Navigate from this geo+industry page to country news, stage hubs, and startup taxonomy pages."
+          className="mt-6"
+        />
 
         <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
           <div className="overflow-hidden rounded-xl border border-white/10 bg-black/25">

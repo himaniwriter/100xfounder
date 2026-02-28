@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { JobsFacetPage } from "@/app/startups/_components/jobs-listing";
 import {
+  JOB_INDEX_THRESHOLD,
+  STARTUP_STATIC_PARAMS_CAP,
   getJobsFacetContext,
   getJobsOverview,
 } from "@/lib/startups/catalog";
@@ -15,6 +17,14 @@ type JobsLocationPageProps = {
   params: { locationSlug: string };
   searchParams?: { page?: string };
 };
+
+export async function generateStaticParams(): Promise<Array<{ locationSlug: string }>> {
+  const overview = await getJobsOverview();
+  return overview.byLocation
+    .filter((item) => item.count >= JOB_INDEX_THRESHOLD)
+    .slice(0, STARTUP_STATIC_PARAMS_CAP)
+    .map((item) => ({ locationSlug: item.slug }));
+}
 
 function parsePage(raw: string | undefined): number {
   if (!raw) return 1;

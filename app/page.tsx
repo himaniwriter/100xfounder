@@ -5,6 +5,7 @@ import { ShieldCheck, Zap, ArrowRight } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { BlogCard } from "@/components/blog/blog-card";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
 import { GlassCard } from "@/components/ui/glass-card";
@@ -312,6 +313,8 @@ export default async function HomePage({ searchParams }: HomePageProps) {
     },
   ];
   const trustLogos = ["Sequoia", "Y Combinator", "Accel", "Andreessen Horowitz"];
+  const primaryContextFounder = featuredFounders[0] ?? founders[0] ?? null;
+  const primaryTopicSlug = leadHomeArticle?.topicSlug ?? null;
   const heroTitle = homepageContent.heroTitle;
   const highlightedPhrase = "Discovered";
   const phraseIndex = heroTitle.toLowerCase().indexOf(highlightedPhrase.toLowerCase());
@@ -387,6 +390,21 @@ export default async function HomePage({ searchParams }: HomePageProps) {
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="mx-auto w-full max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+          <PillarCrosslinks
+            context={{
+              country: primaryContextFounder?.country,
+              industry: primaryContextFounder?.industry,
+              stage: primaryContextFounder?.stage,
+              topicSlug: primaryTopicSlug,
+            }}
+            includeGlobal
+            maxLinks={10}
+            title="Explore by Industry, Location, Stage, and Funding"
+            description="Use these hub routes to move from top-level discovery to focused startup and news pages in a few clicks."
+          />
         </section>
 
         <section className="mx-auto w-full max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">

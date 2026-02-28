@@ -3,16 +3,29 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import { getFoundersByIndustrySlug } from "@/lib/founders/hubs";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
+import {
+  getFoundersByIndustrySlug,
+  getIndustryOptions,
+} from "@/lib/founders/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 export const revalidate = 21600;
-export const dynamic = "force-dynamic";
+const HUB_STATIC_THRESHOLD = 15;
+const STATIC_PARAMS_CAP = 5000;
 
 type IndustryPageProps = {
   params: { slug: string };
 };
+
+export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
+  const options = await getIndustryOptions();
+  return options
+    .filter((item) => item.count >= HUB_STATIC_THRESHOLD)
+    .slice(0, STATIC_PARAMS_CAP)
+    .map((item) => ({ slug: item.slug }));
+}
 
 export async function generateMetadata({ params }: IndustryPageProps): Promise<Metadata> {
   const context = await getFoundersByIndustrySlug(params.slug);
@@ -25,6 +38,13 @@ export async function generateMetadata({ params }: IndustryPageProps): Promise<M
     title: `Top ${context.label} Startups | 100Xfounder`,
     description: `Explore ${context.label} startups with founders, funding rounds, and hiring signals.`,
     alternates: { canonical },
+    robots:
+      context.companies.length < HUB_STATIC_THRESHOLD
+        ? {
+            index: false,
+            follow: true,
+          }
+        : undefined,
   };
 }
 
@@ -69,6 +89,19 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
             {context.companies.length} companies indexed with founder context, funding rounds, and hiring signals.
           </p>
         </header>
+
+        <PillarCrosslinks
+          context={{
+            industry: context.label,
+            stage: context.companies[0]?.stage,
+            country: context.companies[0]?.country,
+          }}
+          includeGlobal
+          maxLinks={8}
+          title="Related Industry Routes"
+          description="Explore matching startup taxonomy, stage hubs, and country routes linked to this industry."
+          className="mt-6"
+        />
 
         <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
           <div className="overflow-hidden rounded-xl border border-white/10 bg-black/25">

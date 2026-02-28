@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { BlogCard } from "@/components/blog/blog-card";
 import { NewsletterSubscribeBox } from "@/components/blog/newsletter-subscribe-box";
 import { getBlogHomeSections } from "@/lib/blog/store";
@@ -47,6 +48,7 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
       )
     : posts;
   const featured = visiblePosts.find((post) => post.isFeatured) ?? visiblePosts[0] ?? null;
+  const contextualSeed = featured ?? visiblePosts[0] ?? null;
   const trending = visiblePosts
     .filter((post) => post.isTrending && post.slug !== featured?.slug)
     .slice(0, 3);
@@ -100,6 +102,17 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
               reporting when needed.
             </p>
           </header>
+
+          <PillarCrosslinks
+            context={{
+              topicSlug: contextualSeed?.topicSlug,
+            }}
+            includeGlobal
+            maxLinks={8}
+            title="Pillar Hubs"
+            description="Move from newsroom stories to connected startup, funding, country, and category routes."
+            className="mb-6"
+          />
 
           {featured ? <BlogCard post={featured} variant="hero" priority /> : null}
 

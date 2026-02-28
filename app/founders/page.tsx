@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { FounderCard } from "@/components/founder-card";
 import { FilterSidebar } from "@/components/founders/filter-sidebar";
 import {
@@ -160,6 +161,7 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
     activeTab === "all" && shouldUseSpotlight ? recent.slice(0, 1) : recent;
   const allRecentIdSet = new Set(recent.map((item) => item.id));
   const recentIdSet = new Set(spotlightRecent.map((item) => item.id));
+  const topFounder = founders[0];
   const ycFounders = founders.filter((item) => Boolean(item.ycProfileUrl));
   const hiringNowFounders = founders.filter(isHiringNow);
   const discoverCountrySlug =
@@ -262,6 +264,18 @@ export default async function FoundersPage({ searchParams }: FoundersPageProps) 
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]">
+              <PillarCrosslinks
+                context={{
+                  country: topFounder?.country,
+                  industry: topFounder?.industry,
+                  stage: topFounder?.stage,
+                }}
+                includeGlobal
+                maxLinks={8}
+                title="Pillar Hubs"
+                description="Jump to country, industry, stage, startup taxonomy, and newsroom hubs connected to founder discovery."
+                className="mb-6 lg:col-span-2"
+              />
               <FilterSidebar
                 options={filterOptions}
                 selectedIndustries={selectedIndustries}

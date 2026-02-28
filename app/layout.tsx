@@ -28,8 +28,6 @@ const jetbrainsMono = JetBrains_Mono({
   display: "optional",
 });
 
-export const dynamic = "force-dynamic";
-
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getSiteBaseUrl();
   const settings = await readGlobalSiteSettings();

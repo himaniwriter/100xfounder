@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { StartupTaxonomyDetail } from "@/app/startups/_components/startup-taxonomy-detail";
 import {
+  STARTUP_INDEX_THRESHOLD,
+  STARTUP_STATIC_PARAMS_CAP,
   getStartupListContext,
   getStartupTaxonomyOptions,
 } from "@/lib/startups/catalog";
@@ -18,6 +20,14 @@ type StartupInvestorPageProps = {
   };
   searchParams?: Record<string, string | string[] | undefined>;
 };
+
+export async function generateStaticParams(): Promise<Array<{ investorSlug: string }>> {
+  const options = await getStartupTaxonomyOptions("investor");
+  return options
+    .filter((item) => item.count >= STARTUP_INDEX_THRESHOLD)
+    .slice(0, STARTUP_STATIC_PARAMS_CAP)
+    .map((item) => ({ investorSlug: item.slug }));
+}
 
 function parsePage(raw: string | string[] | undefined): number {
   if (!raw) {

@@ -120,8 +120,9 @@ type StartupDimensionInput = "industry" | "location" | "funding-round" | "invest
 
 const STARTUP_PAGE_SIZE = 50;
 const JOBS_PAGE_SIZE = 25;
-const STARTUP_INDEX_THRESHOLD = 0;
-const JOB_INDEX_THRESHOLD = 0;
+export const STARTUP_INDEX_THRESHOLD = 15;
+export const JOB_INDEX_THRESHOLD = 15;
+export const STARTUP_STATIC_PARAMS_CAP = 5000;
 
 const LOCATION_RULES: Array<{ slug: string; label: string; terms: string[] }> = [
   {

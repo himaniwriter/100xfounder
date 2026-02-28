@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { getStageOptions } from "@/lib/founders/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 
 export default async function StagesPage() {
   const stages = await getStageOptions();
+  const topStage = stages[0];
   const baseUrl = getSiteBaseUrl();
 
   const schema = {
@@ -53,6 +55,17 @@ export default async function StagesPage() {
             Navigate startups by stage from Seed to Series and late growth profiles.
           </p>
         </header>
+
+        <PillarCrosslinks
+          context={{
+            stage: topStage?.label,
+          }}
+          includeGlobal
+          maxLinks={8}
+          title="Stage Hub Crosslinks"
+          description="Traverse stage pages with related startup taxonomy and funding newsroom routes."
+          className="mt-6"
+        />
 
         <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {stages.map((item) => (
