@@ -143,6 +143,7 @@ export function ProfileTabs({ founder, similar }: ProfileTabsProps) {
                       <div className="relative h-11 w-11 shrink-0">
                         <CompanyLogo
                           companyName={item.companyName}
+                          imageUrl={item.avatarUrl}
                           websiteUrl={item.websiteUrl}
                           className="h-9 w-9 rounded-lg border border-white/20"
                         />

@@ -46,7 +46,7 @@ export async function generateMetadata({
     description: `Compensation and equity benchmarks for ${context.label.toLowerCase()} roles in startups.`,
     alternates: { canonical },
     robots:
-      !context.shouldIndex || context.page > 1
+      !context.shouldIndex
         ? { index: false, follow: true }
         : undefined,
   };

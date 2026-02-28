@@ -46,7 +46,7 @@ export async function generateMetadata({
     description: `Salary and equity coverage for ${context.label} startup stages.`,
     alternates: { canonical },
     robots:
-      !context.shouldIndex || context.page > 1
+      !context.shouldIndex
         ? { index: false, follow: true }
         : undefined,
   };

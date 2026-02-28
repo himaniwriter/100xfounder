@@ -11,8 +11,11 @@
     "build": "next build",
     "start": "next start",
     "postinstall": "prisma generate",
-    "lint": "next lint",
+    "lint": "next lint && npm run lint:branding",
+    "lint:branding": "node actions/branding-safety-check.mjs",
+    "lint:branding:build": "BRANDING_CHECK_SCAN_BUILD=1 node actions/branding-safety-check.mjs",
     "seo:validate": "node actions/seo-crawl-validate.mjs",
+    "images:mirror:companies": "node actions/mirror-company-images.mjs",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy"
   },

@@ -84,6 +84,7 @@ export default async function ComparePage({ params }: ComparePageProps) {
                 <div className="relative h-14 w-14 shrink-0">
                   <CompanyLogo
                     companyName={item.companyName}
+                    imageUrl={item.avatarUrl}
                     websiteUrl={item.websiteUrl}
                     className="h-12 w-12 rounded-xl border border-white/20"
                   />

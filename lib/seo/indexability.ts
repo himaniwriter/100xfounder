@@ -11,22 +11,7 @@ export type IndexabilityDecision = {
     | undefined;
 };
 
-export const THIN_NOINDEX_PAGE_SLUGS = new Set([
-  "jobs",
-  "salary-equity",
-  "negotiation-coaching",
-  "fulfillment-policy",
-  "add-startup-or-job",
-  "about",
-  "contact",
-  "help",
-  "changelog",
-  "privacy",
-  "terms",
-  "cookies",
-  "careers",
-  "join",
-]);
+export const THIN_NOINDEX_PAGE_SLUGS = new Set<string>();
 
 const SITEMAP_EXCLUDED_EXACT_PATHS = new Set([
   "/search",
@@ -102,20 +87,13 @@ export function resolveQueryIndexability(
   basePath: string,
   query: Record<string, string[] | undefined>,
 ): IndexabilityDecision {
-  const shouldIndex = isSimpleQueryState(query);
-  const canonicalPath = shouldIndex
-    ? buildCanonicalPath(basePath, query)
-    : basePath;
+  const shouldIndex = true;
+  const canonicalPath = buildCanonicalPath(basePath, query);
 
   return {
     shouldIndex,
     canonicalPath,
-    robots: shouldIndex
-      ? undefined
-      : {
-          index: false,
-          follow: true,
-        },
+    robots: undefined,
   };
 }
 

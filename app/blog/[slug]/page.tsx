@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { BackToTopButton } from "@/components/BackToTopButton";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { SocialShareBar } from "@/components/SocialShareBar";
@@ -18,6 +18,7 @@ import { countryToSlug } from "@/lib/founders/country-tier";
 import { getFounderDirectory } from "@/lib/founders/store";
 import { sanitizeRichHtml, serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
+import { findFirstActiveRedirectTarget } from "@/lib/url-redirects";
 
 type BlogPostPageProps = {
   params: {
@@ -221,6 +222,13 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
     getFounderDirectory({ perCountryLimit: 500 }),
   ]);
   if (!post) {
+    const redirectTarget = await findFirstActiveRedirectTarget([
+      `/blog/${params.slug}`,
+      `/newsroom/${params.slug}`,
+    ]);
+    if (redirectTarget) {
+      permanentRedirect(redirectTarget);
+    }
     notFound();
   }
 

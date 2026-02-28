@@ -8,6 +8,7 @@ import { CompanyLogo } from "@/components/ui/company-logo";
 type SignalFeedItem = {
   id: string;
   companyName: string;
+  avatarUrl: string | null;
   founderName: string;
   companySlug: string;
   founderSlug: string;
@@ -164,6 +165,7 @@ export function SignalsClient() {
                   <div className="flex items-center gap-2">
                     <CompanyLogo
                       companyName={item.companyName}
+                      imageUrl={item.avatarUrl}
                       className="h-7 w-7 rounded-md border border-white/15"
                     />
                     <p className="text-sm text-zinc-200">

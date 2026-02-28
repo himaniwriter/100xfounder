@@ -46,7 +46,7 @@ export async function generateMetadata({
     description: `Live startup listings for the ${context.label} title cluster across top startup markets.`,
     alternates: { canonical },
     robots:
-      !context.shouldIndex || context.page > 1
+      !context.shouldIndex
         ? { index: false, follow: true }
         : undefined,
   };

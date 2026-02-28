@@ -64,7 +64,7 @@ type SalaryEquityRow = {
 };
 
 const PER_PAGE = 30;
-const INDEX_THRESHOLD = 8;
+const INDEX_THRESHOLD = 0;
 
 const SEEDED_SALARY_LOCATION_FACETS: Array<{ slug: string; label: string }> = [
   { slug: "new-york", label: "New York" },

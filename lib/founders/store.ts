@@ -3,6 +3,7 @@ import { unstable_cache } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { isDatabaseConfigured } from "@/lib/db-config";
 import { buildPrimaryLinkedInAvatar } from "@/lib/founders/linkedin";
+import { mirrorRemoteImageUrlToSupabase } from "@/lib/media/storage";
 import { PDF_FOUNDER_SEED, PDF_SOURCE_URL } from "@/lib/founders/seed-data";
 import {
   classifyCountryTier,
@@ -309,6 +310,36 @@ function inferWebsite(companyName: string): string | null {
   return `https://www.${root}.com`;
 }
 
+function parseDomain(value: string | null | undefined): string | null {
+  if (!value) {
+    return null;
+  }
+
+  try {
+    return new URL(value).hostname.toLowerCase();
+  } catch {
+    const sanitized = value
+      .replace(/^https?:\/\//i, "")
+      .replace(/\/.*$/, "")
+      .trim()
+      .toLowerCase();
+    return sanitized || null;
+  }
+}
+
+function buildCompanyLogoFallback(
+  companyName: string,
+  websiteUrl: string | null | undefined,
+): string | null {
+  const inferredWebsite = websiteUrl ?? inferWebsite(companyName);
+  const domain = parseDomain(inferredWebsite);
+  if (!domain) {
+    return null;
+  }
+
+  return `https://unavatar.io/${domain}`;
+}
+
 function inferTechStack(industry: string): string[] {
   const key = industry.toLowerCase();
   if (key.includes("financial")) return ["AWS", "Java", "PostgreSQL", "React"];
@@ -389,6 +420,7 @@ function sanitizeItem(raw: FounderDirectoryItem): FounderDirectoryItem {
     isFeatured: raw.isFeatured ?? false,
     avatarUrl:
       raw.avatarUrl ??
+      buildCompanyLogoFallback(companyName, raw.websiteUrl) ??
       buildPrimaryLinkedInAvatar({
         linkedinUrl: raw.linkedinUrl,
         founderName,
@@ -891,8 +923,39 @@ export async function upsertFounderDirectoryFromN8N(
   }
 
   const dedupedEntries = dedupeSyncEntriesByCompany(entries);
+  const normalizedEntries: FounderSyncInput[] = [];
 
-  const operations = dedupedEntries.map((entry) => {
+  for (const entry of dedupedEntries) {
+    const fallbackCompanyLogo = buildCompanyLogoFallback(
+      entry.companyName,
+      entry.websiteUrl ?? null,
+    );
+    const fallbackAvatar =
+      fallbackCompanyLogo ??
+      buildPrimaryLinkedInAvatar({
+        linkedinUrl: entry.linkedinUrl,
+        founderName: entry.founderName,
+      }) ?? null;
+    const originalAvatar = entry.avatarUrl ?? fallbackAvatar;
+    let mirroredAvatar = originalAvatar;
+
+    if (originalAvatar) {
+      try {
+        mirroredAvatar = await mirrorRemoteImageUrlToSupabase(originalAvatar, {
+          folder: "companies/logos",
+        });
+      } catch {
+        mirroredAvatar = originalAvatar;
+      }
+    }
+
+    normalizedEntries.push({
+      ...entry,
+      avatarUrl: mirroredAvatar,
+    });
+  }
+
+  const operations = normalizedEntries.map((entry) => {
     const slug =
       entry.slug && entry.slug.length > 0
         ? slugify(entry.slug)
@@ -953,12 +1016,7 @@ export async function upsertFounderDirectoryFromN8N(
         twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,
         // isFeatured is currently derived on read from funding signals.
-        avatarUrl:
-          entry.avatarUrl ??
-          buildPrimaryLinkedInAvatar({
-            linkedinUrl: entry.linkedinUrl,
-            founderName: entry.founderName,
-          }),
+        avatarUrl: entry.avatarUrl,
       },
       update: {
         founderName: entry.founderName,
@@ -979,16 +1037,80 @@ export async function upsertFounderDirectoryFromN8N(
         twitterUrl: entry.twitterUrl ?? null,
         verified: entry.verified ?? true,
         // isFeatured is currently derived on read from funding signals.
-        avatarUrl:
-          entry.avatarUrl ??
-          buildPrimaryLinkedInAvatar({
-            linkedinUrl: entry.linkedinUrl,
-            founderName: entry.founderName,
-          }),
+        avatarUrl: entry.avatarUrl,
       },
     });
   });
 
   await prisma.$transaction(operations);
   return { upserted: operations.length };
+}
+
+export async function mirrorFounderDirectoryCompanyImages(
+  options: { limit?: number } = {},
+): Promise<{
+  processed: number;
+  updated: number;
+  failed: number;
+}> {
+  if (!isDatabaseConfigured()) {
+    return { processed: 0, updated: 0, failed: 0 };
+  }
+
+  const safeLimit =
+    typeof options.limit === "number" && Number.isFinite(options.limit) && options.limit > 0
+      ? Math.min(Math.floor(options.limit), 5000)
+      : 2000;
+
+  const rows = await prisma.founderDirectoryEntry.findMany({
+    where: {
+      avatarUrl: {
+        not: null,
+      },
+    },
+    select: {
+      id: true,
+      avatarUrl: true,
+    },
+    take: safeLimit,
+    orderBy: {
+      updatedAt: "desc",
+    },
+  });
+
+  const mirroredByUrl = new Map<string, string>();
+  let processed = 0;
+  let updated = 0;
+  let failed = 0;
+
+  for (const row of rows) {
+    const rawUrl = row.avatarUrl?.trim();
+    if (!rawUrl) {
+      continue;
+    }
+    processed += 1;
+
+    let mirrored = mirroredByUrl.get(rawUrl);
+    if (!mirrored) {
+      try {
+        mirrored = await mirrorRemoteImageUrlToSupabase(rawUrl, {
+          folder: "companies/logos",
+        });
+        mirroredByUrl.set(rawUrl, mirrored);
+      } catch {
+        failed += 1;
+        continue;
+      }
+    }
+
+    if (mirrored && mirrored !== rawUrl) {
+      await prisma.founderDirectoryEntry.update({
+        where: { id: row.id },
+        data: { avatarUrl: mirrored },
+      });
+      updated += 1;
+    }
+  }
+
+  return { processed, updated, failed };
 }

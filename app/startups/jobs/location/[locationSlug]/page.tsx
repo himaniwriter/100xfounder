@@ -46,7 +46,7 @@ export async function generateMetadata({
     description: `Explore startup jobs in ${context.label} across engineering, GTM, product, and leadership roles.`,
     alternates: { canonical },
     robots:
-      !context.shouldIndex || context.page > 1
+      !context.shouldIndex
         ? { index: false, follow: true }
         : undefined,
   };

@@ -2,8 +2,10 @@ import { cn } from "@/lib/utils";
 
 type CompanyLogoProps = {
   companyName: string;
+  imageUrl?: string | null;
   websiteUrl?: string | null;
   domain?: string | null;
+  allowExternalFallback?: boolean;
   className?: string;
   imageClassName?: string;
 };
@@ -19,6 +21,23 @@ function parseDomain(value: string | null | undefined): string | null {
     const sanitized = value.replace(/^https?:\/\//, "").replace(/\/.*$/, "").trim();
     return sanitized || null;
   }
+}
+
+function sanitizeHttpImageUrl(value: string | null | undefined): string | null {
+  if (!value) {
+    return null;
+  }
+
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return null;
+  }
+
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed;
+  }
+
+  return null;
 }
 
 function hashValue(value: string): number {
@@ -80,17 +99,21 @@ function slugify(value: string): string {
 
 export function CompanyLogo({
   companyName,
+  imageUrl,
   websiteUrl,
   domain,
+  allowExternalFallback = false,
   className,
   imageClassName,
 }: CompanyLogoProps) {
   const resolvedDomain = parseDomain(domain) ?? parseDomain(websiteUrl);
   const companySlug = slugify(companyName);
   const curated = CURATED_LOGO_MAP[companySlug];
+  const provided = sanitizeHttpImageUrl(imageUrl);
   const activeSource =
+    provided ??
     curated ??
-    (resolvedDomain
+    (allowExternalFallback && resolvedDomain
       ? `https://www.google.com/s2/favicons?domain=${resolvedDomain}&sz=128`
       : null);
 
@@ -111,7 +134,7 @@ export function CompanyLogo({
           decoding="async"
           referrerPolicy="no-referrer"
           className={cn(
-            "absolute inset-0 h-full w-full object-cover",
+            "absolute inset-0 h-full w-full object-contain",
             imageClassName,
           )}
         />

@@ -4,6 +4,7 @@ import { getFounderDirectory, getFounderDirectoryLastUpdatedAt } from "@/lib/fou
 export type SignalFeedItem = {
   id: string;
   companyName: string;
+  avatarUrl: string | null;
   founderName: string;
   companySlug: string;
   founderSlug: string;
@@ -41,6 +42,7 @@ const getCachedSignalsFeed = unstable_cache(
       .map((item) => ({
         id: item.id,
         companyName: item.companyName,
+        avatarUrl: item.avatarUrl ?? null,
         founderName: item.founderName,
         companySlug: item.companySlug,
         founderSlug: item.slug,

@@ -7,6 +7,7 @@ const primaryNavLinks = [
   { label: "Home", href: "/" },
   { label: "Signals", href: "/signals" },
   { label: "Blog", href: "/blog" },
+  { label: "Startup", href: "/startup" },
   { label: "Pricing", href: "/pricing" },
 ];
 
@@ -17,6 +18,7 @@ const mobileNavLinks = [
   { label: "Industries", href: "/industries" },
   { label: "Stages", href: "/stages" },
   { label: "Startups", href: "/startups" },
+  { label: "Startup", href: "/startup" },
   { label: "Signals", href: "/signals" },
   { label: "Blog", href: "/blog" },
   { label: "Topics", href: "/topics" },
@@ -85,6 +87,46 @@ const megaMenuSections = [
         label: "Investor-backed Startups",
         href: "/startups/investor",
         description: "Startup pages grouped by investor support.",
+      },
+    ],
+  },
+  {
+    title: "Main Queries",
+    links: [
+      {
+        label: "Top AI Startups",
+        href: "/startups/industry/artificial-intelligence",
+        description: "High-intent startup list for AI search demand.",
+      },
+      {
+        label: "Top FinTech Startups",
+        href: "/startups/industry/fintech",
+        description: "Dedicated FinTech startup cluster page.",
+      },
+      {
+        label: "Startups in New York",
+        href: "/startups/location/new-york",
+        description: "Geo-specific startup list for NYC intent.",
+      },
+      {
+        label: "Series A Startups",
+        href: "/startups/funding-round/series-a",
+        description: "Funding-stage startup cohort by Series A.",
+      },
+      {
+        label: "Y Combinator Startups",
+        href: "/startups/investor/y-combinator",
+        description: "Investor-backed startup list for YC queries.",
+      },
+      {
+        label: "Startup Jobs in New York",
+        href: "/startups/jobs/location/new-york",
+        description: "Role and location-led startup jobs page.",
+      },
+      {
+        label: "Software Engineer Salary & Equity",
+        href: "/startups/salary-equity/role/software-engineer",
+        description: "Compensation benchmark surface for startup hiring.",
       },
     ],
   },

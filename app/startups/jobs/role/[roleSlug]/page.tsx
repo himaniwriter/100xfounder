@@ -46,7 +46,7 @@ export async function generateMetadata({
     description: `Browse ${context.label.toLowerCase()} startup jobs with direct application links and market context.`,
     alternates: { canonical },
     robots:
-      !context.shouldIndex || context.page > 1
+      !context.shouldIndex
         ? { index: false, follow: true }
         : undefined,
   };

@@ -44,6 +44,14 @@ export type HtmlSitemapData = {
   founderLinks: HtmlSitemapLink[];
 };
 
+export type CategorizedSitemapLinks = {
+  pages: HtmlSitemapLink[];
+  categories: HtmlSitemapLink[];
+  posts: HtmlSitemapLink[];
+  news: HtmlSitemapLink[];
+  directory: HtmlSitemapLink[];
+};
+
 const STATIC_ROUTES: StaticRoute[] = [
   { href: "/", label: "Home", changeFrequency: "daily", priority: 1 },
   { href: "/founders", label: "Founder Directory", changeFrequency: "daily", priority: 0.95 },
@@ -104,6 +112,10 @@ function filterIndexableLinks(items: HtmlSitemapLink[]): HtmlSitemapLink[] {
   return items.filter((item) => isPathEligibleForSitemap(item.href));
 }
 
+function sortLinksByLabel(items: HtmlSitemapLink[]): HtmlSitemapLink[] {
+  return [...items].sort((a, b) => a.label.localeCompare(b.label));
+}
+
 export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
   const baseUrl = getSiteBaseUrl();
   const now = new Date();
@@ -158,49 +170,49 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
     uniqueByHref(
       [
         ...startupIndustryOptions
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/industry/${item.slug}`,
             label: `${item.label} startups`,
             lastModified: now,
           })),
         ...startupLocationOptions
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/location/${item.slug}`,
             label: `${item.label} startups`,
             lastModified: now,
           })),
         ...startupRoundOptions
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/funding-round/${item.slug}`,
             label: `${item.label} startups`,
             lastModified: now,
           })),
         ...startupInvestorOptions
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/investor/${item.slug}`,
             label: `${item.label}-backed startups`,
             lastModified: now,
           })),
         ...jobsOverview.byLocation
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/jobs/location/${item.slug}`,
             label: `Startup jobs in ${item.label}`,
             lastModified: now,
           })),
         ...jobsOverview.byRole
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/jobs/role/${item.slug}`,
             label: `${item.label} startup jobs`,
             lastModified: now,
           })),
         ...jobsOverview.byTitle
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .slice(0, 300)
           .map((item) => ({
             href: `/startups/jobs/title/${item.slug}`,
@@ -208,28 +220,28 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
             lastModified: now,
           })),
         ...jobsOverview.byMarket
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/jobs/market/${item.slug}`,
             label: `${item.label} startup jobs`,
             lastModified: now,
           })),
         ...salaryOverview.byLocation
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/salary-equity/location/${item.slug}`,
             label: `${item.label} salary benchmarks`,
             lastModified: now,
           })),
         ...salaryOverview.byRole
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/salary-equity/role/${item.slug}`,
             label: `${item.label} salary benchmarks`,
             lastModified: now,
           })),
         ...salaryOverview.byStage
-          .filter((item) => item.count >= 8)
+          .filter((item) => item.count >= 0)
           .map((item) => ({
             href: `/startups/salary-equity/stage/${item.slug}`,
             label: `${item.label} salary benchmarks`,
@@ -387,6 +399,50 @@ export async function getHtmlSitemapData(): Promise<HtmlSitemapData> {
     companyLinks,
     companyNewsLinks,
     founderLinks,
+  };
+}
+
+export async function getCategorizedSitemapLinks(): Promise<CategorizedSitemapLinks> {
+  const data = await getHtmlSitemapData();
+
+  const pages = sortLinksByLabel(uniqueByHref(data.staticLinks));
+
+  const categories = sortLinksByLabel(
+    filterIndexableLinks(
+      uniqueByHref([
+        ...data.startupCategoryLinks,
+        ...data.countryLinks,
+        ...data.tierLinks,
+        ...data.industryLinks,
+        ...data.stageLinks,
+        ...data.countryIndustryLinks,
+      ]),
+    ),
+  );
+
+  const posts = sortLinksByLabel(uniqueByHref(data.blogLinks));
+
+  const news = sortLinksByLabel(
+    filterIndexableLinks(
+      uniqueByHref([
+        ...data.topicLinks,
+        ...data.fundingRoundLinks,
+        ...data.countryNewsLinks,
+        ...data.companyNewsLinks,
+      ]),
+    ),
+  );
+
+  const directory = sortLinksByLabel(
+    filterIndexableLinks(uniqueByHref([...data.companyLinks, ...data.founderLinks])),
+  );
+
+  return {
+    pages,
+    categories,
+    posts,
+    news,
+    directory,
   };
 }
 

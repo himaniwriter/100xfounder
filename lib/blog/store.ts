@@ -1,7 +1,7 @@
 import rawPosts from "@/lib/blog/blog-data.json";
 import { unstable_cache } from "next/cache";
 import { isDatabaseConfigured } from "@/lib/db-config";
-import { buildExcerpt, toReadingTime } from "@/lib/blog/post-utils";
+import { buildExcerpt, countWords, toPlainText, toReadingTime } from "@/lib/blog/post-utils";
 import type {
   BlogHeading,
   BlogPost,
@@ -10,6 +10,25 @@ import type {
 } from "@/lib/blog/types";
 import { ensureBlogPostsSchema } from "@/lib/db-bootstrap";
 import { prisma } from "@/lib/prisma";
+
+const MIN_PUBLIC_WORD_COUNT = 400;
+const LOW_QUALITY_PATTERNS = [
+  /\blorem ipsum\b/i,
+  /\bcoming soon\b/i,
+  /\bplaceholder content\b/i,
+  /\bdummy copy\b/i,
+  /\bsample article\b/i,
+  /\btest post\b/i,
+  /\btest article\b/i,
+  /\bto be updated\b/i,
+  /\bcontent pending\b/i,
+  /\barticle under review\b/i,
+];
+const LOW_QUALITY_HTML_MARKERS = [
+  "class=\"alsoread\"",
+  "yourstory.com/api/v2/analytics",
+  "contenteditable=\"false\"",
+];
 
 function parseDateValue(value: string): number {
   const time = Date.parse(value);
@@ -82,6 +101,64 @@ function resolvePublishedAt(post: BlogPost): string {
   }
 
   return new Date().toISOString();
+}
+
+function isHttpMediaUrl(value: string | undefined): boolean {
+  if (!value) {
+    return false;
+  }
+
+  return /^https?:\/\//i.test(value.trim());
+}
+
+function resolveContentWordCount(post: BlogPost): number {
+  if (typeof post.wordCount === "number" && Number.isFinite(post.wordCount) && post.wordCount > 0) {
+    return Math.round(post.wordCount);
+  }
+  return countWords(post.content || "");
+}
+
+function hasLowQualityPattern(post: BlogPost): boolean {
+  const normalizedText = [
+    post.title || "",
+    post.excerpt || "",
+    toPlainText(post.content || ""),
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  if (LOW_QUALITY_PATTERNS.some((pattern) => pattern.test(normalizedText))) {
+    return true;
+  }
+
+  const htmlContent = (post.content || "").toLowerCase();
+  return LOW_QUALITY_HTML_MARKERS.some((marker) => htmlContent.includes(marker));
+}
+
+function isHighQualityPublishedPost(post: BlogPost): boolean {
+  if (post.status !== "PUBLISHED") {
+    return false;
+  }
+
+  const title = (post.title || "").trim();
+  const excerpt = (post.excerpt || "").trim();
+  const content = (post.content || "").trim();
+  const plainText = toPlainText(content);
+  const wordCount = resolveContentWordCount(post);
+
+  if (title.length < 12 || excerpt.length < 60) {
+    return false;
+  }
+
+  if (!content || plainText.length < 500 || wordCount < MIN_PUBLIC_WORD_COUNT) {
+    return false;
+  }
+
+  if (!isHttpMediaUrl(post.thumbnail)) {
+    return false;
+  }
+
+  return !hasLowQualityPattern(post);
 }
 
 export function normalizeBlogPost(post: BlogPost): BlogPost {
@@ -273,9 +350,9 @@ async function readMergedBlogPosts(): Promise<BlogPost[]> {
 const getCachedPublishedBlogPosts = unstable_cache(
   async () => {
     const posts = await readMergedBlogPosts();
-    return posts.filter((post) => post.status === "PUBLISHED");
+    return posts.filter((post) => isHighQualityPublishedPost(post));
   },
-  ["blog-posts-published-v1"],
+  ["blog-posts-published-v2"],
   {
     revalidate: 180,
     tags: ["blog-posts-published"],

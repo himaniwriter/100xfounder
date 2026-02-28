@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import { isThinNoindexPageSlug } from "@/lib/seo/indexability";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
 type StaticPageContent = {
@@ -258,7 +257,6 @@ export async function generateMetadata({
 
   const content = pageContent[params.page];
   const baseUrl = getSiteBaseUrl();
-  const shouldNoindex = isThinNoindexPageSlug(params.page);
 
   return {
     title: `${content.title} | 100Xfounder`,
@@ -266,12 +264,6 @@ export async function generateMetadata({
     alternates: {
       canonical: `${baseUrl}/${params.page}`,
     },
-    robots: shouldNoindex
-      ? {
-          index: false,
-          follow: true,
-        }
-      : undefined,
   };
 }
 

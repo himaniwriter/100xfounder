@@ -46,7 +46,7 @@ export async function generateMetadata({
     description: `Open startup job opportunities in ${context.label} markets with high-intent role pages.`,
     alternates: { canonical },
     robots:
-      !context.shouldIndex || context.page > 1
+      !context.shouldIndex
         ? { index: false, follow: true }
         : undefined,
   };

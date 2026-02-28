@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { CompanyIntelligenceDashboard } from "@/components/company/company-intelligence-dashboard";
 import { GetFeaturedCtaCard } from "@/components/shared/get-featured-cta-card";
+import { CompanyLogo } from "@/components/ui/company-logo";
 import { buildCompanyContentExpansion } from "@/lib/company/content-expansion";
 import {
   getFounderDirectory,
@@ -115,10 +116,20 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
                   key={item.id}
                   className="rounded-xl border border-white/10 bg-black/25 p-4"
                 >
-                  <Link href={`/company/${item.companySlug}`} className="text-base font-medium text-white hover:text-indigo-200">
-                    {item.companyName}
-                  </Link>
-                  <p className="mt-1 text-xs text-zinc-400">{item.founderName}</p>
+                  <div className="flex items-start gap-3">
+                    <CompanyLogo
+                      companyName={item.companyName}
+                      imageUrl={item.avatarUrl}
+                      websiteUrl={item.websiteUrl}
+                      className="h-10 w-10 shrink-0 rounded-lg border border-white/15"
+                    />
+                    <div className="min-w-0">
+                      <Link href={`/company/${item.companySlug}`} className="text-base font-medium text-white hover:text-indigo-200">
+                        {item.companyName}
+                      </Link>
+                      <p className="mt-1 text-xs text-zinc-400">{item.founderName}</p>
+                    </div>
+                  </div>
                   <div className="mt-3 flex flex-wrap gap-2">
                     <Link
                       href={`/company/${item.companySlug}`}

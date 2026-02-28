@@ -65,7 +65,7 @@ export async function generateMetadata({
       canonical,
     },
     robots:
-      !context.shouldIndex || context.page > 1
+      !context.shouldIndex
         ? {
             index: false,
             follow: true,

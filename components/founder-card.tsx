@@ -54,6 +54,7 @@ export function FounderCard({ founder, isTrending = false, featured = false }: F
           <div className="relative h-16 w-16 shrink-0">
             <CompanyLogo
               companyName={founder.companyName}
+              imageUrl={founder.avatarUrl}
               websiteUrl={founder.websiteUrl}
               className="h-14 w-14 rounded-xl border border-white/20"
             />

@@ -2,7 +2,6 @@ import { NextResponse, type NextRequest } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getSessionFromRequest } from "@/lib/auth/session";
 import { upsertFounderDirectoryFromN8N } from "@/lib/founders/store";
-import { buildPrimaryLinkedInAvatar } from "@/lib/founders/linkedin";
 import type { FounderSyncInput } from "@/lib/founders/types";
 
 function normalizeRecords(payload: unknown): FounderSyncInput[] {
@@ -66,10 +65,7 @@ function normalizeRecords(payload: unknown): FounderSyncInput[] {
       avatarUrl:
         typeof record.avatarUrl === "string"
           ? record.avatarUrl
-          : buildPrimaryLinkedInAvatar({
-              linkedinUrl,
-              founderName,
-            }) ?? undefined,
+          : undefined,
       verified:
         typeof record.verified === "boolean" ? record.verified : undefined,
       foundedYear:

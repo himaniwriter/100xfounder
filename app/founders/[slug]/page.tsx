@@ -86,6 +86,7 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
             <div className="relative mt-1 h-16 w-16 shrink-0">
               <CompanyLogo
                 companyName={founder.companyName}
+                imageUrl={founder.avatarUrl}
                 websiteUrl={founder.websiteUrl}
                 className="h-14 w-14 rounded-xl border border-white/20"
               />

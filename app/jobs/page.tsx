@@ -1,6 +1,6 @@
 import { permanentRedirect } from "next/navigation";
 import {
-  mapTopStartupsJobsQueryToPath,
+  mapSourceJobsQueryToPath,
 } from "@/lib/startups/catalog";
 
 type JobsLegacyPageProps = {
@@ -44,7 +44,7 @@ function preserveTracking(searchParams: URLSearchParams) {
 
 export default function JobsLegacyPage({ searchParams }: JobsLegacyPageProps) {
   const params = toSearchParams(searchParams);
-  const mapped = mapTopStartupsJobsQueryToPath(params);
+  const mapped = mapSourceJobsQueryToPath(params);
 
   if (mapped) {
     permanentRedirect(mapped);

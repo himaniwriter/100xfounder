@@ -1,4 +1,5 @@
 import { Prisma } from "@prisma/client";
+import { unstable_cache } from "next/cache";
 import { ensureJobPostingsSchema } from "@/lib/db-bootstrap";
 import { isDatabaseConfigured } from "@/lib/db-config";
 import { slugifySegment } from "@/lib/founders/hubs";
@@ -19,6 +20,15 @@ export type StartupTaxonomyOption = {
   slug: string;
   label: string;
   count: number;
+};
+
+type StartupHubOverview = {
+  totalStartups: number;
+  updatedAt: string;
+  industries: StartupTaxonomyOption[];
+  locations: StartupTaxonomyOption[];
+  fundingRounds: StartupTaxonomyOption[];
+  investors: StartupTaxonomyOption[];
 };
 
 export type StartupListContext = {
@@ -110,8 +120,8 @@ type StartupDimensionInput = "industry" | "location" | "funding-round" | "invest
 
 const STARTUP_PAGE_SIZE = 50;
 const JOBS_PAGE_SIZE = 25;
-const STARTUP_INDEX_THRESHOLD = 8;
-const JOB_INDEX_THRESHOLD = 8;
+const STARTUP_INDEX_THRESHOLD = 0;
+const JOB_INDEX_THRESHOLD = 0;
 
 const LOCATION_RULES: Array<{ slug: string; label: string; terms: string[] }> = [
   {
@@ -439,6 +449,12 @@ async function getFounderBase(): Promise<FounderDirectoryItem[]> {
   return getFounderDirectory({ perCountryLimit: 500, limit: 5000 });
 }
 
+const getCachedFounderBase = unstable_cache(
+  getFounderBase,
+  ["startups-founder-base-v1"],
+  { revalidate: 900 },
+);
+
 function collectStartupOptions(founders: FounderDirectoryItem[]) {
   const industry = new Map<string, { label: string; companySlugs: Set<string> }>();
   const location = new Map<string, { label: string; companySlugs: Set<string> }>();
@@ -566,10 +582,10 @@ function normalizeInvestorSlug(slug: string): string {
   return INVESTOR_ALIASES[normalized] || normalized;
 }
 
-export async function getStartupHubOverview() {
-  const founders = await getFounderBase();
+async function loadStartupHubOverview(): Promise<StartupHubOverview> {
+  const founders = await getCachedFounderBase();
   const options = collectStartupOptions(founders);
-  const [lastUpdatedAt] = await Promise.all([getFounderDirectoryLastUpdatedAt()]);
+  const lastUpdatedAt = await getFounderDirectoryLastUpdatedAt();
 
   return {
     totalStartups: dedupeCompanies(founders).length,
@@ -581,10 +597,32 @@ export async function getStartupHubOverview() {
   };
 }
 
+const getCachedStartupHubOverview = unstable_cache(
+  loadStartupHubOverview,
+  ["startups-hub-overview-v1"],
+  { revalidate: 900 },
+);
+
+export async function getStartupHubOverview(): Promise<StartupHubOverview> {
+  return getCachedStartupHubOverview();
+}
+
+export async function getStartupDirectoryDataset(): Promise<{
+  founders: FounderDirectoryItem[];
+  overview: StartupHubOverview;
+}> {
+  const [founders, overview] = await Promise.all([
+    getCachedFounderBase(),
+    getCachedStartupHubOverview(),
+  ]);
+
+  return { founders, overview };
+}
+
 export async function getStartupTaxonomyOptions(
   dimensionInput: StartupDimensionInput,
 ): Promise<StartupTaxonomyOption[]> {
-  const founders = await getFounderBase();
+  const founders = await getCachedFounderBase();
   const options = collectStartupOptions(founders);
 
   if (dimensionInput === "industry") {
@@ -617,7 +655,7 @@ export async function getStartupListContext(
   rawSlug: string,
   rawPage?: number,
 ): Promise<StartupListContext | null> {
-  const founders = await getFounderBase();
+  const founders = await getCachedFounderBase();
   const options = collectStartupOptions(founders);
   const dimension = mapDimensionFromInput(dimensionInput);
 
@@ -968,7 +1006,7 @@ function withPreservedQuery(path: string, source: URLSearchParams): string {
   return queryString ? `${path}?${queryString}` : path;
 }
 
-export function mapTopStartupsDirectoryQueryToPath(searchParams: URLSearchParams): string | null {
+export function mapSourceDirectoryQueryToPath(searchParams: URLSearchParams): string | null {
   const industries = searchParams.get("industries");
   const hqLocation = searchParams.get("hq_location");
   const fundingRound = searchParams.get("funding_round");
@@ -1001,7 +1039,7 @@ export function mapTopStartupsDirectoryQueryToPath(searchParams: URLSearchParams
   return null;
 }
 
-export function mapTopStartupsJobsQueryToPath(searchParams: URLSearchParams): string | null {
+export function mapSourceJobsQueryToPath(searchParams: URLSearchParams): string | null {
   const jobLocation = searchParams.get("job_location");
   const role = searchParams.get("role");
   const title = searchParams.get("title");

@@ -19,7 +19,7 @@ import { getFounderDirectory, splitRecentlyFunded } from "@/lib/founders/store";
 import { getInstagramProfileUrl } from "@/lib/marketing/outreach";
 import { getInstagramFeed } from "@/lib/outreach/instagram";
 import { getSiteBaseUrl } from "@/lib/sitemap";
-import { mapTopStartupsDirectoryQueryToPath } from "@/lib/startups/catalog";
+import { mapSourceDirectoryQueryToPath } from "@/lib/startups/catalog";
 
 const baseUrl = getSiteBaseUrl();
 
@@ -77,7 +77,7 @@ function toSearchParams(input: Record<string, string | string[] | undefined> | u
 
 export default async function HomePage({ searchParams }: HomePageProps) {
   const query = toSearchParams(searchParams);
-  const mappedDirectoryPath = mapTopStartupsDirectoryQueryToPath(query);
+  const mappedDirectoryPath = mapSourceDirectoryQueryToPath(query);
   if (mappedDirectoryPath) {
     permanentRedirect(mappedDirectoryPath);
   }
@@ -88,8 +88,15 @@ export default async function HomePage({ searchParams }: HomePageProps) {
   const instagramFeed = await getInstagramFeed(6);
   const { recent } = splitRecentlyFunded(founders, 12);
   const featuredFounders = (recent.length > 0 ? recent : founders).slice(0, 3);
-  const companyHrefMap = new Map(
-    founders.map((item) => [item.companyName.toLowerCase(), `/company/${item.companySlug}`]),
+  const companyMetaMap = new Map(
+    founders.map((item) => [
+      item.companyName.toLowerCase(),
+      {
+        href: `/company/${item.companySlug}`,
+        websiteUrl: item.websiteUrl,
+        avatarUrl: item.avatarUrl,
+      },
+    ]),
   );
   const fundingTickerItems = [
     "🚀 Deal Alert: OpenAI secures $6.6B strategic funding",
@@ -177,13 +184,19 @@ export default async function HomePage({ searchParams }: HomePageProps) {
   ];
   const isMegaRound = parseAmountToMillions(featuredDeal.amount) >= 100;
   const featuredDealHref =
-    companyHrefMap.get(featuredDeal.company.toLowerCase()) ??
+    companyMetaMap.get(featuredDeal.company.toLowerCase())?.href ??
     `/signals?company=${encodeURIComponent(featuredDeal.company)}`;
+  const featuredDealAvatar =
+    companyMetaMap.get(featuredDeal.company.toLowerCase())?.avatarUrl ?? null;
+  const featuredDealWebsite =
+    companyMetaMap.get(featuredDeal.company.toLowerCase())?.websiteUrl ?? null;
   const fundingFeedWithLinks = fundingFeed.map((item) => ({
     ...item,
     href:
-      companyHrefMap.get(item.company.toLowerCase()) ??
+      companyMetaMap.get(item.company.toLowerCase())?.href ??
       `/signals?company=${encodeURIComponent(item.company)}`,
+    avatarUrl: companyMetaMap.get(item.company.toLowerCase())?.avatarUrl ?? null,
+    websiteUrl: companyMetaMap.get(item.company.toLowerCase())?.websiteUrl ?? null,
   }));
   const marqueeCompanyMap = new Map(
     founders.map((item) => [
@@ -192,6 +205,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
         slug: item.companySlug,
         name: item.companyName,
         websiteUrl: item.websiteUrl,
+        avatarUrl: item.avatarUrl,
       },
     ]),
   );
@@ -220,6 +234,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
           name,
           websiteUrl: null,
+          avatarUrl: null,
         }));
   const marqueeSplitIndex = Math.ceil(marqueeCompanies.length / 2);
   const marqueeTopRow = marqueeCompanies.slice(0, marqueeSplitIndex);
@@ -427,7 +442,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                 <div className="company-marquee-track company-marquee-track-left">
                   {[...marqueeTopRow, ...marqueeTopRow].map((company, index) => {
                     const href =
-                      companyHrefMap.get(company.name.toLowerCase()) ??
+                      companyMetaMap.get(company.name.toLowerCase())?.href ??
                       `/signals?company=${encodeURIComponent(company.name)}`;
                     return (
                       <Link
@@ -437,7 +452,9 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                       >
                         <CompanyLogo
                           companyName={company.name}
+                          imageUrl={company.avatarUrl}
                           websiteUrl={company.websiteUrl}
+                          allowExternalFallback={false}
                           className="h-8 w-8 rounded-md border border-white/10"
                           imageClassName="object-contain bg-black/40 p-1"
                         />
@@ -454,7 +471,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                 <div className="company-marquee-track company-marquee-track-right">
                   {[...marqueeBottomSafe, ...marqueeBottomSafe].map((company, index) => {
                     const href =
-                      companyHrefMap.get(company.name.toLowerCase()) ??
+                      companyMetaMap.get(company.name.toLowerCase())?.href ??
                       `/signals?company=${encodeURIComponent(company.name)}`;
                     return (
                       <Link
@@ -464,7 +481,9 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                       >
                         <CompanyLogo
                           companyName={company.name}
+                          imageUrl={company.avatarUrl}
                           websiteUrl={company.websiteUrl}
+                          allowExternalFallback={false}
                           className="h-8 w-8 rounded-md border border-white/10"
                           imageClassName="object-contain bg-black/40 p-1"
                         />
@@ -501,7 +520,9 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                     <div className="relative h-12 w-12 shrink-0">
                       <CompanyLogo
                         companyName={founder.companyName}
+                        imageUrl={founder.avatarUrl}
                         websiteUrl={founder.websiteUrl}
+                        allowExternalFallback={false}
                         className="h-11 w-11 rounded-xl border border-white/15"
                       />
                       <FounderAvatar
@@ -701,7 +722,10 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                 <div className="mt-4 flex items-start gap-3">
                   <CompanyLogo
                     companyName={featuredDeal.company}
+                    imageUrl={featuredDealAvatar}
+                    websiteUrl={featuredDealWebsite}
                     domain={featuredDeal.domain}
+                    allowExternalFallback={false}
                     className="h-11 w-11 rounded-xl border border-white/20"
                   />
                   <div>
@@ -747,7 +771,10 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                       <div className="flex min-w-0 items-center gap-2.5">
                         <CompanyLogo
                           companyName={item.company}
+                          imageUrl={item.avatarUrl}
+                          websiteUrl={item.websiteUrl}
                           domain={item.domain}
+                          allowExternalFallback={false}
                           className="h-8 w-8 shrink-0 rounded-lg border border-white/20"
                         />
                         <p className="truncate text-sm font-medium text-white">{item.company}</p>

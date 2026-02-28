@@ -132,6 +132,21 @@ CREATE INDEX IF NOT EXISTS pricing_waitlist_requests_created_at_idx
 CREATE INDEX IF NOT EXISTS pricing_waitlist_requests_work_email_idx
   ON public.pricing_waitlist_requests(work_email);
 `,
+  `
+CREATE TABLE IF NOT EXISTS public.url_redirect_rules (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  source_path text NOT NULL UNIQUE,
+  target_url text NOT NULL,
+  is_active boolean NOT NULL DEFAULT true,
+  note text,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now()
+);
+`,
+  `
+CREATE INDEX IF NOT EXISTS url_redirect_rules_is_active_updated_at_idx
+  ON public.url_redirect_rules(is_active, updated_at DESC);
+`,
 ];
 
 const DASHBOARD_RETENTION_STATEMENTS = [
@@ -571,7 +586,7 @@ CREATE INDEX IF NOT EXISTS instagram_posts_posted_at_idx
 
 const LOCK_KEYS = {
   featured: "db_bootstrap_featured_v1",
-  growth: "db_bootstrap_growth_v1",
+  growth: "db_bootstrap_growth_v2",
   dashboardRetention: "db_bootstrap_dashboard_retention_v1",
   blog: "db_bootstrap_blog_v1",
   jobs: "db_bootstrap_jobs_v1",

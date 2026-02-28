@@ -245,6 +245,7 @@ export function CompanyIntelligenceDashboard({
           <div className="flex min-w-0 items-start gap-4">
             <CompanyLogo
               companyName={primary.companyName}
+              imageUrl={primary.avatarUrl}
               websiteUrl={primary.websiteUrl}
               className="h-20 w-20 rounded-2xl border border-white/15"
             />

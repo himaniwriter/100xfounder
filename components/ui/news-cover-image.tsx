@@ -9,6 +9,42 @@ type NewsCoverImageProps = {
   priority?: boolean;
 };
 
+function optimizeCoverSource(rawSource: string, priority: boolean): string {
+  const source = rawSource.trim();
+  if (!source) {
+    return source;
+  }
+
+  if (!/^https?:\/\//i.test(source)) {
+    return source;
+  }
+
+  try {
+    const parsed = new URL(source);
+    if (parsed.hostname.includes("images.unsplash.com")) {
+      parsed.searchParams.set("auto", "format");
+      parsed.searchParams.set("fit", "crop");
+      parsed.searchParams.set("w", priority ? "1280" : "960");
+      parsed.searchParams.set("q", priority ? "68" : "58");
+      return parsed.toString();
+    }
+
+    if (parsed.hostname.includes("images.yourstory.com")) {
+      if (!parsed.searchParams.has("auto")) {
+        parsed.searchParams.set("auto", "format");
+      }
+      if (!parsed.searchParams.has("q")) {
+        parsed.searchParams.set("q", priority ? "70" : "60");
+      }
+      return parsed.toString();
+    }
+
+    return parsed.toString();
+  } catch {
+    return source;
+  }
+}
+
 function hashValue(value: string): number {
   let hash = 0;
   for (let index = 0; index < value.length; index += 1) {
@@ -53,7 +89,10 @@ export function NewsCoverImage({
   imageClassName,
   priority = false,
 }: NewsCoverImageProps) {
-  const activeSource = (imageUrl && imageUrl.trim()) || topicFallbackImage(title);
+  const activeSource = optimizeCoverSource(
+    (imageUrl && imageUrl.trim()) || topicFallbackImage(title),
+    priority,
+  );
 
   return (
     <div
@@ -68,6 +107,8 @@ export function NewsCoverImage({
         <img
           src={activeSource}
           alt={title}
+          width={1600}
+          height={900}
           loading={priority ? "eager" : "lazy"}
           fetchPriority={priority ? "high" : "auto"}
           decoding="async"
