@@ -63,6 +63,7 @@ export type CategorizedSitemapLinks = {
 
 const STATIC_ROUTES: StaticRoute[] = [
   { href: "/", label: "Home", changeFrequency: "daily", priority: 1 },
+  { href: "/about", label: "About 100Xfounder", changeFrequency: "monthly", priority: 0.7 },
   { href: "/founders", label: "Founder Directory", changeFrequency: "daily", priority: 0.95 },
   { href: "/countries", label: "Countries", changeFrequency: "daily", priority: 0.92 },
   { href: "/startups", label: "Startup Explorer", changeFrequency: "weekly", priority: 0.85 },
