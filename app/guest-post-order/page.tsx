@@ -82,6 +82,36 @@ export default function GuestPostOrderPage({ searchParams }: GuestPostOrderPageP
             </p>
           </aside>
         </section>
+
+        <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-6">
+          <h2 className="text-xl font-semibold tracking-tight text-white">
+            Submission checklist for faster approval
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Orders move faster when the article brief is specific and source-backed. Include a clear audience,
+            the business angle you want to highlight, and any URLs that validate your claims. Editorial review
+            prioritizes submissions that help readers make better decisions, not generic promotional copy.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Before submitting, review
+            <Link href="/editorial-policy" className="text-indigo-300 hover:text-indigo-200">
+              {" Editorial Policy"}
+            </Link>
+            {" and "}
+            <Link href="/methodology" className="text-indigo-300 hover:text-indigo-200">
+              {"Methodology"}
+            </Link>
+            . For corrections or update requests after publishing, use
+            <Link href="/corrections-policy" className="text-indigo-300 hover:text-indigo-200">
+              {" Corrections Policy"}
+            </Link>
+            {" and "}
+            <Link href="/contact-newsroom" className="text-indigo-300 hover:text-indigo-200">
+              {"Contact Newsroom"}
+            </Link>
+            .
+          </p>
+        </section>
       </section>
 
       <Footer />

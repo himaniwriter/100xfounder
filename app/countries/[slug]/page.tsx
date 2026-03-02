@@ -172,6 +172,32 @@ export default async function CountryPage({ params }: CountryPageProps) {
             </div>
           </div>
 
+          <div className="mb-6 rounded-xl border border-white/10 bg-black/25 p-5">
+            <h2 className="text-xl font-semibold text-white">
+              {country.country} startup intelligence overview
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-zinc-300">
+              This country page consolidates startup signals that are typically scattered across multiple directories.
+              You can review founder identity, company positioning, funding progression, and hiring momentum in one
+              route, then drill down into specific industries or stages based on your goal.
+            </p>
+            <p className="mt-3 text-sm leading-7 text-zinc-300">
+              To expand analysis, use
+              <Link href={`/countries/${country.countrySlug}/news`} className="text-indigo-300 hover:text-indigo-200">
+                {" country news coverage"}
+              </Link>
+              , 
+              <Link href={`/startups/location/${country.countrySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                {" startup location taxonomy"}
+              </Link>
+              , and
+              <Link href="/funding-rounds" className="text-indigo-300 hover:text-indigo-200">
+                {" funding-stage hubs"}
+              </Link>
+              {" to map where execution is accelerating."}
+            </p>
+          </div>
+
           <PillarCrosslinks
             context={{
               country: country.country,

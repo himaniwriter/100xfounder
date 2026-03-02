@@ -476,7 +476,7 @@ export default async function BlogPostPage({ params, searchParams }: BlogPostPag
             </div>
           </section>
 
-          {post.updates && post.updates.length > 0 ? (
+          {previewRequested && post.updates && post.updates.length > 0 ? (
             <section className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
               <h2 className="text-base font-semibold text-white">Update Log</h2>
               <div className="mt-3 space-y-2">

@@ -133,6 +133,30 @@ export default async function CountryIndustryPage({ params }: CountryIndustryPag
         />
 
         <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
+          <h2 className="text-xl font-semibold text-white">
+            {context.industry} in {context.country}: context for operators and investors
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Geo + industry pages are useful when you need clarity on where a sector is actually gaining traction.
+            This hub focuses only on <strong>{context.industry}</strong> companies in <strong>{context.country}</strong>,
+            so comparisons are made between companies that share a similar market environment and regulatory context.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            To complete the picture, pair this table with
+            <Link href={`/countries/${params.slug}`} className="text-indigo-300 hover:text-indigo-200">
+              {" country directory"}
+            </Link>
+            , 
+            <Link href={`/countries/${params.slug}/news`} className="text-indigo-300 hover:text-indigo-200">
+              {" country news"}
+            </Link>
+            , and
+            <Link href={`/startups/industry/${params.industrySlug}`} className="text-indigo-300 hover:text-indigo-200">
+              {" startup industry pages"}
+            </Link>
+            {" to benchmark both local execution and global category movement."}
+          </p>
+
           <div className="overflow-hidden rounded-xl border border-white/10 bg-black/25">
             <table className="w-full text-left text-sm">
               <thead className="border-b border-white/10 text-zinc-400">

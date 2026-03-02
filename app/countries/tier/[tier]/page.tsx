@@ -98,6 +98,67 @@ export default async function TierPage({ params }: TierPageProps) {
             </Link>
           ))}
         </section>
+
+        <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6">
+          <h2 className="text-xl font-semibold tracking-tight text-white">
+            How to use {countryTierLabel(tier)} market pages
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Tier-level routing helps you compare countries with broadly similar ecosystem maturity.
+            Instead of evaluating markets in isolation, you can benchmark company density, hiring intensity,
+            and funding activity across peers in the same tier group.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            For deeper analysis, open each country profile and pair it with
+            <Link href="/countries" className="text-indigo-300 hover:text-indigo-200">
+              {" country index pages"}
+            </Link>
+            , 
+            <Link href="/founders" className="text-indigo-300 hover:text-indigo-200">
+              {" founder directory"}
+            </Link>
+            , 
+            <Link href="/funding-rounds" className="text-indigo-300 hover:text-indigo-200">
+              {" funding round hubs"}
+            </Link>
+            , and
+            <Link href="/startups/location" className="text-indigo-300 hover:text-indigo-200">
+              {" startup location routes"}
+            </Link>
+            .
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            A practical workflow is to shortlist countries from this tier, open each country profile, and then
+            compare sector concentration through country-industry pages. This quickly shows where startup density is
+            broad versus where growth is concentrated in a narrow set of categories.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link
+              href="/countries"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Country Index
+            </Link>
+            <Link
+              href="/countries/tier/tier_1"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Tier 1
+            </Link>
+            <Link
+              href="/countries/tier/tier_2"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Tier 2
+            </Link>
+            <Link
+              href="/countries/tier/tier_3"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Tier 3
+            </Link>
+          </div>
+        </section>
       </section>
 
       <Footer />

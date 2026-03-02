@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
-import { getFoundersByStageSlug, getStageOptions } from "@/lib/founders/hubs";
+import { countryToSlug } from "@/lib/founders/country-tier";
+import { getFoundersByStageSlug, getStageOptions, slugifySegment } from "@/lib/founders/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 
@@ -50,6 +51,25 @@ export default async function StagePage({ params }: StagePageProps) {
   if (!context) {
     notFound();
   }
+
+  const topIndustries = Array.from(
+    context.companies.reduce((acc, item) => {
+      const key = item.industry || "Unknown";
+      acc.set(key, (acc.get(key) ?? 0) + 1);
+      return acc;
+    }, new Map<string, number>()),
+  )
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6);
+  const topCountries = Array.from(
+    context.companies.reduce((acc, item) => {
+      const key = item.country || "Unknown";
+      acc.set(key, (acc.get(key) ?? 0) + 1);
+      return acc;
+    }, new Map<string, number>()),
+  )
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6);
 
   const baseUrl = getSiteBaseUrl();
   const schema = {
@@ -101,6 +121,65 @@ export default async function StagePage({ params }: StagePageProps) {
         />
 
         <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
+          <h2 className="text-xl font-semibold text-white">
+            {context.label} stage intelligence summary
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Stage pages are useful when you need to evaluate startups under comparable capital pressure.
+            In the <strong>{context.label}</strong> cohort, company behavior often reflects common constraints:
+            growth targets, hiring pace, and product depth expectations tied to this funding band.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            You can combine this page with
+            <Link href={`/funding-rounds/${params.slug}`} className="text-indigo-300 hover:text-indigo-200">
+              {" funding-stage news"}
+            </Link>
+            , 
+            <Link href="/industries" className="text-indigo-300 hover:text-indigo-200">
+              {" industry hubs"}
+            </Link>
+            , and
+            <Link href="/countries" className="text-indigo-300 hover:text-indigo-200">
+              {" country routes"}
+            </Link>
+            {" to compare whether momentum is concentrated in one vertical or spread across markets."}
+          </p>
+
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
+            <div className="rounded-xl border border-white/10 bg-black/25 p-4">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">
+                Top industries in this stage
+              </h3>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {topIndustries.map(([industry, count]) => (
+                  <Link
+                    key={industry}
+                    href={`/industries/${slugifySegment(industry)}`}
+                    className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
+                  >
+                    {industry} ({count})
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-xl border border-white/10 bg-black/25 p-4">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">
+                Top markets in this stage
+              </h3>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {topCountries.map(([country, count]) => (
+                  <Link
+                    key={country}
+                    href={country === "Unknown" ? "/countries" : `/countries/${countryToSlug(country)}`}
+                    className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
+                  >
+                    {country} ({count})
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <div className="overflow-hidden rounded-xl border border-white/10 bg-black/25">
             <table className="w-full text-left text-sm">
               <thead className="border-b border-white/10 text-zinc-400">

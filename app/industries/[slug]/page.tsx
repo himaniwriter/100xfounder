@@ -4,9 +4,11 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
+import { countryToSlug } from "@/lib/founders/country-tier";
 import {
   getFoundersByIndustrySlug,
   getIndustryOptions,
+  slugifySegment,
 } from "@/lib/founders/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
@@ -53,6 +55,25 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
   if (!context) {
     notFound();
   }
+
+  const topCountries = Array.from(
+    context.companies.reduce((acc, item) => {
+      const key = item.country || "Unknown";
+      acc.set(key, (acc.get(key) ?? 0) + 1);
+      return acc;
+    }, new Map<string, number>()),
+  )
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6);
+  const topStages = Array.from(
+    context.companies.reduce((acc, item) => {
+      const key = item.stage || "Unknown";
+      acc.set(key, (acc.get(key) ?? 0) + 1);
+      return acc;
+    }, new Map<string, number>()),
+  )
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6);
 
   const baseUrl = getSiteBaseUrl();
   const schema = {
@@ -104,6 +125,67 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
         />
 
         <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
+          <h2 className="text-xl font-semibold text-white">
+            {context.label} market intelligence summary
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            This industry page is designed for users who need more than a static company list.
+            The directory groups <strong>{context.label}</strong> startups with founder, funding,
+            and hiring context so you can compare execution quality across similar business models.
+            This makes it easier to understand whether movement in this sector is broad-based or
+            concentrated in a few outlier companies.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            For deeper research, pair this page with
+            <Link href="/funding-rounds" className="text-indigo-300 hover:text-indigo-200">
+              {" funding round hubs"}
+            </Link>
+            , 
+            <Link href="/countries" className="text-indigo-300 hover:text-indigo-200">
+              {" country coverage"}
+            </Link>
+            , and
+            <Link href={`/startups/industry/${params.slug}`} className="text-indigo-300 hover:text-indigo-200">
+              {" startup industry taxonomy"}
+            </Link>
+            . This route helps reduce noise and speeds up market screening.
+          </p>
+
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
+            <div className="rounded-xl border border-white/10 bg-black/25 p-4">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">
+                Top geographies
+              </h3>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {topCountries.map(([country, count]) => (
+                  <Link
+                    key={country}
+                    href={country === "Unknown" ? "/countries" : `/countries/${countryToSlug(country)}`}
+                    className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
+                  >
+                    {country} ({count})
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-xl border border-white/10 bg-black/25 p-4">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">
+                Stage concentration
+              </h3>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {topStages.map(([stage, count]) => (
+                  <Link
+                    key={stage}
+                    href={`/stages/${slugifySegment(stage)}`}
+                    className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
+                  >
+                    {stage} ({count})
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <div className="overflow-hidden rounded-xl border border-white/10 bg-black/25">
             <table className="w-full text-left text-sm">
               <thead className="border-b border-white/10 text-zinc-400">

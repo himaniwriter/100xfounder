@@ -15,7 +15,6 @@ export async function GET() {
     "Disallow: /login",
     "Disallow: /api/auth/",
     "Disallow: /api/webhooks/",
-    "Max-image-preview: large",
     "",
     `Sitemap: ${baseUrl}/sitemap.xml`,
     `Sitemap: ${baseUrl}/sitemap-pages.xml`,

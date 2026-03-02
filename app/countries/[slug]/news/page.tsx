@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/blog/blog-card";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { slugifySegment } from "@/lib/founders/hubs";
 import { getCountryCoverage } from "@/lib/founders/store";
 import { getCountryNewsContext } from "@/lib/news/hubs";
 import { serializeJsonLd } from "@/lib/security/sanitize";
@@ -47,6 +48,17 @@ export default async function CountryNewsPage({ params }: CountryNewsPageProps) 
   if (!context) {
     notFound();
   }
+
+  const countrySlug = context.countrySlug;
+  const primaryTopic = context.relatedTopics[0];
+  const secondaryTopic = context.relatedTopics[1];
+  const primaryTopicSlug = primaryTopic?.slug;
+  const primaryTopicLabel = primaryTopic?.label ?? "startup operations";
+  const secondaryTopicSlug = secondaryTopic?.slug;
+  const secondaryTopicLabel = secondaryTopic?.label ?? "funding movement";
+  const primaryTopicCategorySlug = slugifySegment(primaryTopicLabel);
+  const secondaryTopicCategorySlug = slugifySegment(secondaryTopicLabel);
+  const tierLabel = context.tier.replace("_", " ");
 
   const baseUrl = getSiteBaseUrl();
   const pageUrl = `${baseUrl}/countries/${context.countrySlug}/news`;
@@ -110,6 +122,106 @@ export default async function CountryNewsPage({ params }: CountryNewsPageProps) 
           </div>
         </header>
 
+        <section className="mt-6 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
+          <h2 className="text-xl font-semibold tracking-tight text-white">
+            Market Brief: {context.country} Startup Coverage
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            This hub is designed for readers who want a clear view of startup activity in <strong>{context.country}</strong>
+            without jumping across multiple sites. The page combines country-specific reporting with internal links to directories,
+            topic clusters, and funding surfaces. In practical terms, this means you can move from a headline to comparable companies,
+            then to category-level movement, in one research flow.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            {context.country} is currently mapped as <strong>{tierLabel}</strong> coverage in the platform. We use this tier context
+            to prioritize stories around operating signals, founder execution, and capital deployment. If your objective is deal
+            discovery, market expansion research, or competitive monitoring, this page works best when paired with the
+            <Link href={`/countries/${countrySlug}`} className="text-indigo-300 hover:text-indigo-200">
+              {" country directory"}
+            </Link>
+            {" and "}
+            <Link href="/founders" className="text-indigo-300 hover:text-indigo-200">
+              {"founder profiles"}
+            </Link>
+            {" for deeper entity-level context."}
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Current topic momentum in this coverage set includes <strong>{primaryTopicLabel}</strong>
+            {secondaryTopic ? (
+              <>
+                {" and "}
+                <strong>{secondaryTopicLabel}</strong>
+              </>
+            ) : null}
+            . You can use these signals to shortlist which segments are attracting attention and where to spend research time next.
+            This approach is faster than reading isolated updates, because each article here can be connected to related market hubs.
+          </p>
+
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
+            <div className="rounded-xl border border-white/10 bg-black/30 p-4">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">Suggested Research Flow</h3>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                <li>
+                  Start with the
+                  <Link href={`/countries/${countrySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                    {` ${context.country} directory`}
+                  </Link>
+                  {" to identify active companies and founders."}
+                </li>
+                <li>
+                  Compare with
+                  <Link href="/funding-rounds" className="text-indigo-300 hover:text-indigo-200">
+                    {" funding-round coverage"}
+                  </Link>
+                  {" to map capital flow by stage."}
+                </li>
+                <li>
+                  Expand to
+                  <Link href={`/startups/location/${countrySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                    {` startups by location (${context.country})`}
+                  </Link>
+                  {" and cross-check market peers."}
+                </li>
+              </ul>
+            </div>
+
+            <div className="rounded-xl border border-white/10 bg-black/30 p-4">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">Topic Paths</h3>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                <li>
+                  Primary topic:
+                  {primaryTopicSlug ? (
+                    <Link href={`/topics/${primaryTopicSlug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {` ${primaryTopicLabel}`}
+                    </Link>
+                  ) : (
+                    ` ${primaryTopicLabel}`
+                  )}
+                </li>
+                <li>
+                  Category view:
+                  <Link href={`/startups/industry/${primaryTopicCategorySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                    {` startups in ${primaryTopicLabel}`}
+                  </Link>
+                </li>
+                {secondaryTopicSlug ? (
+                  <li>
+                    Secondary topic:
+                    <Link href={`/topics/${secondaryTopicSlug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {` ${secondaryTopicLabel}`}
+                    </Link>
+                    {" and related "}
+                    <Link href={`/startups/industry/${secondaryTopicCategorySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {"startup pages"}
+                    </Link>
+                    .
+                  </li>
+                ) : null}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
           <div className="space-y-3">
             {context.items.length > 0 ? (
@@ -117,8 +229,36 @@ export default async function CountryNewsPage({ params }: CountryNewsPageProps) 
                 <BlogCard key={post.slug} post={post} variant={index === 0 ? "hero" : "feed"} />
               ))
             ) : (
-              <div className="rounded-xl border border-white/15 bg-white/[0.03] p-6 text-sm text-zinc-400">
-                No country-specific stories found yet. Fresh coverage appears here as articles are published.
+              <div className="rounded-xl border border-white/15 bg-white/[0.03] p-6">
+                <h3 className="text-base font-semibold text-white">No direct country stories mapped yet</h3>
+                <p className="mt-3 text-sm leading-7 text-zinc-300">
+                  We do not have a direct story mapped to this country feed right now. That does not mean the market is inactive.
+                  In many cases, early signals appear first in topic hubs, company pages, or stage-based funding updates before they
+                  are clustered into a country timeline.
+                </p>
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                  <li>
+                    Check
+                    <Link href="/blog" className="text-indigo-300 hover:text-indigo-200">
+                      {" latest newsroom stories"}
+                    </Link>
+                    {" and filter by relevant topics."}
+                  </li>
+                  <li>
+                    Review
+                    <Link href="/signals" className="text-indigo-300 hover:text-indigo-200">
+                      {" market pulse signals"}
+                    </Link>
+                    {" for funding and hiring movement."}
+                  </li>
+                  <li>
+                    Explore
+                    <Link href={`/countries/${countrySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {` ${context.country} startup profiles`}
+                    </Link>
+                    {" for company-level context while coverage builds."}
+                  </li>
+                </ul>
               </div>
             )}
           </div>

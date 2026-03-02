@@ -40,6 +40,58 @@ export function NewsroomStaticPage({ content }: NewsroomStaticPageProps) {
             .
           </p>
         </div>
+
+        <section className="mt-6 rounded-xl border border-white/15 bg-white/[0.03] p-5">
+          <h2 className="text-lg font-semibold text-white">Related newsroom routes</h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            These pages are designed to be used together. Start with the policy or methodology page you are reading,
+            then move into coverage pages and contributor profiles to verify how these standards are applied in live stories.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link
+              href="/blog"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Newsroom Home
+            </Link>
+            <Link
+              href="/authors"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Authors
+            </Link>
+            <Link
+              href="/editorial-policy"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Editorial Policy
+            </Link>
+            <Link
+              href="/corrections-policy"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Corrections Policy
+            </Link>
+            <Link
+              href="/methodology"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Methodology
+            </Link>
+            <Link
+              href="/topics"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Topic Hubs
+            </Link>
+            <Link
+              href="/funding-rounds"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Funding Round Hubs
+            </Link>
+          </div>
+        </section>
       </section>
       <Footer />
     </main>

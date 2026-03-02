@@ -89,6 +89,36 @@ export default async function FundingStagePage({ params }: FundingStagePageProps
           </p>
         </header>
 
+        <section className="mt-6 rounded-2xl border border-white/15 bg-white/[0.03] p-6">
+          <h2 className="text-xl font-semibold tracking-tight text-white">
+            {context.label} intelligence brief
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            This stage page is built for readers tracking how startups behave under a similar funding profile.
+            Stage-level grouping makes it easier to compare execution quality, hiring strategy, and product depth
+            without mixing early and late capital cycles in one list.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Use this feed together with
+            <Link href={`/startups/funding-round/${context.slug}`} className="text-indigo-300 hover:text-indigo-200">
+              {" startup cohort pages"}
+            </Link>
+            {" and "}
+            <Link href="/stages" className="text-indigo-300 hover:text-indigo-200">
+              {"stage directories"}
+            </Link>
+            . Then validate story-level trends against
+            <Link href="/topics" className="text-indigo-300 hover:text-indigo-200">
+              {" topic hubs"}
+            </Link>
+            {" and "}
+            <Link href="/blog" className="text-indigo-300 hover:text-indigo-200">
+              {"newsroom updates"}
+            </Link>
+            .
+          </p>
+        </section>
+
         <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
           <div className="space-y-3">
             {context.items.length > 0 ? (
@@ -96,8 +126,35 @@ export default async function FundingStagePage({ params }: FundingStagePageProps
                 <BlogCard key={post.slug} post={post} variant={index === 0 ? "hero" : "feed"} />
               ))
             ) : (
-              <div className="rounded-xl border border-white/15 bg-white/[0.03] p-6 text-sm text-zinc-400">
-                No stories indexed for this stage yet.
+              <div className="rounded-xl border border-white/15 bg-white/[0.03] p-6 text-sm text-zinc-300">
+                <h3 className="text-base font-semibold text-white">No direct stories indexed for this stage yet</h3>
+                <p className="mt-3 leading-7">
+                  Coverage for this funding stage is currently sparse. This usually happens when recent reporting is tagged
+                  to broader market topics instead of a specific stage page.
+                </p>
+                <ul className="mt-4 list-disc space-y-2 pl-5">
+                  <li>
+                    Review
+                    <Link href="/funding-rounds" className="text-indigo-300 hover:text-indigo-200">
+                      {" all funding hubs"}
+                    </Link>
+                    {" for adjacent stage activity."}
+                  </li>
+                  <li>
+                    Open
+                    <Link href="/topics" className="text-indigo-300 hover:text-indigo-200">
+                      {" topic pages"}
+                    </Link>
+                    {" to find category-level capital signals."}
+                  </li>
+                  <li>
+                    Compare with
+                    <Link href={`/startups/funding-round/${context.slug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {" startup listings for this round"}
+                    </Link>
+                    .
+                  </li>
+                </ul>
               </div>
             )}
           </div>

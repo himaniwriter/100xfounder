@@ -68,6 +68,62 @@ export default async function FundingRoundsPage() {
             </Link>
           ))}
         </section>
+
+        <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6">
+          <h2 className="text-xl font-semibold tracking-tight text-white">
+            How to read funding-stage signals
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Funding-stage pages help you compare startups that are operating under similar capital conditions.
+            A seed-stage company and a late-stage company may show similar headline growth, but the quality of
+            that growth often differs once you factor in team size, market maturity, and investor expectations.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Use this hub with
+            <Link href="/stages" className="text-indigo-300 hover:text-indigo-200">
+              {" startup stage directories"}
+            </Link>
+            , 
+            <Link href="/startups/funding-round" className="text-indigo-300 hover:text-indigo-200">
+              {" funding-round startup lists"}
+            </Link>
+            , and
+            <Link href="/blog" className="text-indigo-300 hover:text-indigo-200">
+              {" newsroom coverage"}
+            </Link>
+            {" to build a full view of momentum, execution quality, and market timing."}
+          </p>
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
+            <div className="rounded-xl border border-white/10 bg-black/30 p-4">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">Recommended flow</h3>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                <li>Start with one funding stage page and identify recurring company names.</li>
+                <li>
+                  Open related
+                  <Link href="/topics" className="text-indigo-300 hover:text-indigo-200">
+                    {" topic hubs"}
+                  </Link>
+                  {" to verify category-level demand."}
+                </li>
+                <li>
+                  Compare geography-specific execution in
+                  <Link href="/countries" className="text-indigo-300 hover:text-indigo-200">
+                    {" country pages"}
+                  </Link>
+                  .
+                </li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-white/10 bg-black/30 p-4">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">Coverage intent</h3>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                <li>Highlight useful capital movement, not noise.</li>
+                <li>Connect funding updates to founder and hiring context.</li>
+                <li>Keep links crawlable and relevant for deeper route discovery.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />

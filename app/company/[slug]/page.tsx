@@ -106,6 +106,32 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
         <p className="mt-3 text-xs text-zinc-500">Last updated: {lastUpdatedOn}</p>
 
         <section className="mt-6 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
+          <h2 className="text-xl font-semibold text-white">
+            {primary.companyName} intelligence brief
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            This profile combines core company context with linked founder, funding, and newsroom routes so readers can
+            evaluate business momentum without switching across multiple tools. Use it as a baseline for comparing peers
+            in the same industry and stage.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            For deeper validation, pair this page with
+            <Link href={`/founders/${primary.slug}`} className="text-indigo-300 hover:text-indigo-200">
+              {" founder profile"}
+            </Link>
+            , 
+            <Link href={`/companies/${primary.companySlug}/news`} className="text-indigo-300 hover:text-indigo-200">
+              {" company news coverage"}
+            </Link>
+            , and
+            <Link href="/funding-rounds" className="text-indigo-300 hover:text-indigo-200">
+              {" stage-based funding hubs"}
+            </Link>
+            {" to contextualize updates against wider market movement."}
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-[40px]">
           <h2 className="text-xl font-semibold text-white">Related Companies</h2>
           <p className="mt-2 text-sm text-zinc-400">
             Alternatives in {primary.industry} with comparable market signals.

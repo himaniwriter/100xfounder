@@ -146,6 +146,45 @@ export default function AboutPage() {
             ))}
           </div>
         </section>
+
+        <section className="mt-10 rounded-2xl border border-white/15 bg-white/[0.03] p-6 backdrop-blur-md">
+          <h2 className="text-xl font-semibold text-white">How we connect news to intelligence</h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            100Xfounder is structured as a connected research surface. A user can start with a funding or founder
+            story, open the linked company profile, compare similar entities by stage or industry, and then validate
+            movement across country pages. This internal route design is intentional: it helps users move from
+            headline-level information to decision-level context without switching platforms.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Our editorial and data layers work together. Newsroom pages prioritize source-attributed clarity, while
+            profile and taxonomy pages organize structured details such as stage, funding progression, and hiring
+            momentum. If you want to understand how a startup market is changing, this combination is more useful
+            than reading single articles in isolation.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            To review how coverage decisions are made, see
+            <Link href="/about-newsroom" className="text-indigo-300 hover:text-indigo-200">
+              {" About Newsroom"}
+            </Link>
+            , 
+            <Link href="/editorial-policy" className="text-indigo-300 hover:text-indigo-200">
+              {" Editorial Policy"}
+            </Link>
+            , and
+            <Link href="/methodology" className="text-indigo-300 hover:text-indigo-200">
+              {" Methodology"}
+            </Link>
+            . For fast research starts, go directly to
+            <Link href="/founders" className="text-indigo-300 hover:text-indigo-200">
+              {" Founder Directory"}
+            </Link>
+            {" or "}
+            <Link href="/startups" className="text-indigo-300 hover:text-indigo-200">
+              {"Startup Explorer"}
+            </Link>
+            .
+          </p>
+        </section>
       </section>
       <Footer />
     </main>

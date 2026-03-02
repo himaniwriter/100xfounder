@@ -79,6 +79,53 @@ export default async function StagesPage() {
             </Link>
           ))}
         </section>
+
+        <section className="mt-8 rounded-2xl border border-white/15 bg-white/[0.03] p-6">
+          <h2 className="text-xl font-semibold tracking-tight text-white">
+            Stage-based startup analysis guide
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Stage pages help you separate startup narratives that look similar on the surface but operate
+            under very different constraints. Early-stage teams optimize for discovery and speed, while
+            later-stage teams optimize for scale, efficiency, and governance. Comparing companies within the
+            same stage gives cleaner benchmarks for funding, hiring, and product expansion.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Use this directory with
+            <Link href="/funding-rounds" className="text-indigo-300 hover:text-indigo-200">
+              {" funding-round coverage"}
+            </Link>
+            , 
+            <Link href="/startups/funding-round" className="text-indigo-300 hover:text-indigo-200">
+              {" startup cohorts by round"}
+            </Link>
+            , and
+            <Link href="/countries" className="text-indigo-300 hover:text-indigo-200">
+              {" country hubs"}
+            </Link>
+            {" to get a stronger market view before making investment, hiring, or partnership decisions."}
+          </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <Link
+              href="/topics"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Topic Hubs
+            </Link>
+            <Link
+              href="/signals"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Signals Feed
+            </Link>
+            <Link
+              href="/founders"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Founder Directory
+            </Link>
+          </div>
+        </section>
       </section>
 
       <script

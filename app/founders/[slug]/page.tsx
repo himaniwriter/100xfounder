@@ -9,6 +9,8 @@ import { PillarCrosslinks } from "@/components/seo/pillar-crosslinks";
 import { GetFeaturedCtaCard } from "@/components/shared/get-featured-cta-card";
 import { CompanyLogo } from "@/components/ui/company-logo";
 import { FounderAvatar } from "@/components/ui/founder-avatar";
+import { countryToSlug } from "@/lib/founders/country-tier";
+import { slugifySegment } from "@/lib/founders/hubs";
 import {
   getFounderDirectory,
   getFounderDirectoryLastUpdatedAt,
@@ -65,6 +67,22 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
     .slice(0, 4);
   const baseUrl = getSiteBaseUrl();
   const faqs = buildFounderFaqs(founder);
+  const countryLabel = founder.country ?? "India";
+  const countrySlug = countryToSlug(countryLabel);
+  const industrySlug = slugifySegment(founder.industry);
+  const stageSlug = slugifySegment(founder.stage);
+  const headquarters = founder.headquarters?.trim() || countryLabel;
+  const totalFunding =
+    founder.fundingTotalDisplay?.trim() ||
+    founder.fundingInfo?.trim() ||
+    "Undisclosed";
+  const lastRoundLabel = founder.lastRound?.round?.trim() || null;
+  const lastRoundAmount = founder.lastRound?.amount?.trim() || null;
+  const hiringSummary = founder.isHiring
+    ? founder.hiringRoles && founder.hiringRoles.length > 0
+      ? founder.hiringRoles.slice(0, 4).join(", ")
+      : "Active hiring signal detected"
+    : "No active hiring roles mapped right now";
   const schema = buildFounderProfileSchema({
     baseUrl,
     founder,
@@ -136,6 +154,115 @@ export default async function FounderProfilePage({ params }: FounderProfilePageP
           ) : null}
 
           <ProfileTabs founder={founder} similar={similar} />
+
+          <section className="mt-6 rounded-xl border border-white/10 bg-black/25 p-5">
+            <h2 className="text-xl font-semibold text-white">
+              Founder Intelligence Brief: {founder.founderName}
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-zinc-300">
+              This profile is built to help readers move from a founder name to decision-ready context.
+              <strong> {founder.founderName}</strong> is mapped to <strong>{founder.companyName}</strong> in the
+              <strong> {founder.industry}</strong> category, with current stage context as
+              <strong> {founder.stage}</strong>. The primary operating market is <strong>{headquarters}</strong>,
+              which connects this profile directly to regional ecosystem pages and related industry hubs.
+            </p>
+            <p className="mt-3 text-sm leading-7 text-zinc-300">
+              Funding visibility currently shows <strong>{totalFunding}</strong>
+              {lastRoundLabel ? (
+                <>
+                  {", with the latest mapped round as "}
+                  <strong>{lastRoundLabel}</strong>
+                  {lastRoundAmount ? ` (${lastRoundAmount})` : ""}.
+                </>
+              ) : (
+                "."
+              )}
+              {" "}
+              This makes it easier to evaluate growth narrative against capital stage rather than reading isolated
+              updates without baseline context.
+            </p>
+            <p className="mt-3 text-sm leading-7 text-zinc-300">
+              For deeper research, combine this founder page with the
+              <Link href={`/company/${founder.companySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                {" company profile"}
+              </Link>
+              , 
+              <Link href={`/companies/${founder.companySlug}/news`} className="text-indigo-300 hover:text-indigo-200">
+                {" company news hub"}
+              </Link>
+              , 
+              <Link href={`/countries/${countrySlug}/news`} className="text-indigo-300 hover:text-indigo-200">
+                {" country newsroom"}
+              </Link>
+              {" and "}
+              <Link href={`/startups/industry/${industrySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                {`${founder.industry} startup list`}
+              </Link>
+              . This route gives a cleaner picture of execution, market demand, and competitive movement.
+            </p>
+
+            <div className="mt-5 grid gap-4 md:grid-cols-2">
+              <div className="rounded-lg border border-white/10 bg-white/[0.03] p-4">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">
+                  Research flow
+                </h3>
+                <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                  <li>
+                    Validate company baseline on
+                    <Link href={`/company/${founder.companySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {" company intelligence"}
+                    </Link>
+                    .
+                  </li>
+                  <li>
+                    Compare market peers via
+                    <Link href={`/industries/${industrySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {` ${founder.industry} industry routes`}
+                    </Link>
+                    {" and "}
+                    <Link href={`/stages/${stageSlug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {`${founder.stage} stage pages`}
+                    </Link>
+                    .
+                  </li>
+                  <li>
+                    Track fresh updates in
+                    <Link href="/blog" className="text-indigo-300 hover:text-indigo-200">
+                      {" newsroom coverage"}
+                    </Link>
+                    {" and "}
+                    <Link href="/signals" className="text-indigo-300 hover:text-indigo-200">
+                      {"signals feed"}
+                    </Link>
+                    .
+                  </li>
+                </ul>
+              </div>
+
+              <div className="rounded-lg border border-white/10 bg-white/[0.03] p-4">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-300">
+                  Operating context
+                </h3>
+                <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                  <li>
+                    Geography:
+                    <Link href={`/countries/${countrySlug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {` ${countryLabel} directory`}
+                    </Link>
+                    .
+                  </li>
+                  <li>
+                    Stage signal:
+                    <Link href={`/funding-rounds/${stageSlug}`} className="text-indigo-300 hover:text-indigo-200">
+                      {` ${founder.stage} funding coverage`}
+                    </Link>
+                    .
+                  </li>
+                  <li>Hiring status: {hiringSummary}.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
 
           <section className="mt-8 rounded-xl border border-white/10 bg-black/25 p-4">
             <h2 className="text-base font-semibold text-white">Related Founders</h2>

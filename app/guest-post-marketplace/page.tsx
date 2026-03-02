@@ -96,6 +96,52 @@ export default function GuestPostMarketplacePage() {
             </article>
           ))}
         </section>
+
+        <section className="rounded-2xl border border-white/15 bg-white/[0.03] p-6">
+          <h2 className="text-xl font-semibold tracking-tight text-white">
+            What happens after you select a package
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            Every guest post request goes through manual editorial review before publication. The review checks
+            clarity of narrative, relevance for startup operators and investors, and source quality for factual claims.
+            This keeps sponsored coverage useful for readers while protecting overall newsroom trust.
+          </p>
+          <p className="mt-3 text-sm leading-7 text-zinc-300">
+            To align your submission with platform standards, review the
+            <Link href="/editorial-policy" className="text-indigo-300 hover:text-indigo-200">
+              {" Editorial Policy"}
+            </Link>
+            , then place details through
+            <Link href="/guest-post-order" className="text-indigo-300 hover:text-indigo-200">
+              {" the order form"}
+            </Link>
+            . You can also explore
+            <Link href="/blog" className="text-indigo-300 hover:text-indigo-200">
+              {" published newsroom stories"}
+            </Link>
+            {" for format reference and quality expectations."}
+          </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <Link
+              href="/about-newsroom"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              About Newsroom
+            </Link>
+            <Link
+              href="/methodology"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Methodology
+            </Link>
+            <Link
+              href="/contact-newsroom"
+              className="rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-xs text-zinc-300 hover:border-white/30 hover:text-white"
+            >
+              Contact Newsroom
+            </Link>
+          </div>
+        </section>
       </section>
 
       <Footer />

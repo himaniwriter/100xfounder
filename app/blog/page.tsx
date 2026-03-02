@@ -114,6 +114,34 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
             className="mb-6"
           />
 
+          <section className="mb-6 rounded-2xl border border-white/15 bg-white/[0.03] p-5">
+            <h2 className="text-lg font-semibold text-white">How to use this newsroom for decisions</h2>
+            <p className="mt-3 text-sm leading-7 text-zinc-300">
+              This newsroom is structured for fast research. Read a headline summary here, verify the original source,
+              and then move into related internal pages for broader context. That sequence helps reduce blind spots
+              when you are tracking startups, founders, and funding shifts across India and the US.
+            </p>
+            <p className="mt-3 text-sm leading-7 text-zinc-300">
+              For a complete view, combine stories with
+              <Link href="/topics" className="text-indigo-300 hover:text-indigo-200">
+                {" topic hubs"}
+              </Link>
+              , 
+              <Link href="/funding-rounds" className="text-indigo-300 hover:text-indigo-200">
+                {" funding round pages"}
+              </Link>
+              , 
+              <Link href="/countries" className="text-indigo-300 hover:text-indigo-200">
+                {" country routes"}
+              </Link>
+              , and the
+              <Link href="/startups" className="text-indigo-300 hover:text-indigo-200">
+                {" startup directory"}
+              </Link>
+              . This keeps coverage contextual instead of isolated.
+            </p>
+          </section>
+
           {featured ? <BlogCard post={featured} variant="hero" priority /> : null}
 
           <div className="mt-8">
