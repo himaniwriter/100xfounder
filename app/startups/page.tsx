@@ -453,37 +453,6 @@ export default async function StartupsPage({ searchParams }: StartupsPageProps) 
           </div>
         </header>
 
-        <section className="mt-4 rounded-2xl border border-indigo-400/30 bg-indigo-500/5 p-4">
-          <p className="text-xs uppercase tracking-[0.18em] text-indigo-300">Main Queries</p>
-          <div className="mt-2 flex flex-wrap gap-2">
-            {MAIN_QUERY_LINKS.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-full border border-indigo-400/35 bg-indigo-500/10 px-3 py-1.5 text-xs text-indigo-100 transition-colors hover:bg-indigo-500/20"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <PillarCrosslinks
-          context={{
-            country: topStartup?.country,
-            industry: topStartup?.industry,
-            stage: topStartup?.stage,
-            fundingRound: topStartup?.lastRound?.round,
-            companySlug: topStartup?.companySlug,
-            founderSlug: topStartup?.slug,
-          }}
-          includeGlobal
-          maxLinks={10}
-          title="Related Startup and News Hubs"
-          description="Use these contextual routes to move between startup listicles, country pages, and funding coverage."
-          className="mt-6"
-        />
-
         <section className="mt-6 grid items-start gap-6 lg:grid-cols-[320px_minmax(0,1fr)]">
           <aside className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-[40px] lg:sticky lg:top-20">
             <h2 className="text-xs uppercase tracking-[0.18em] text-zinc-400">Filter Startups</h2>
@@ -650,6 +619,37 @@ export default async function StartupsPage({ searchParams }: StartupsPageProps) 
             </div>
           </div>
         </section>
+
+        <section className="mt-10 rounded-2xl border border-indigo-400/30 bg-indigo-500/5 p-4">
+          <p className="text-xs uppercase tracking-[0.18em] text-indigo-300">Main Queries</p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {MAIN_QUERY_LINKS.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-full border border-indigo-400/35 bg-indigo-500/10 px-3 py-1.5 text-xs text-indigo-100 transition-colors hover:bg-indigo-500/20"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <PillarCrosslinks
+          context={{
+            country: topStartup?.country,
+            industry: topStartup?.industry,
+            stage: topStartup?.stage,
+            fundingRound: topStartup?.lastRound?.round,
+            companySlug: topStartup?.companySlug,
+            founderSlug: topStartup?.slug,
+          }}
+          includeGlobal
+          maxLinks={10}
+          title="Related Startup and News Hubs"
+          description="Use these contextual routes to move between startup listicles, country pages, and funding coverage."
+          className="mt-6"
+        />
       </section>
 
       <Footer />

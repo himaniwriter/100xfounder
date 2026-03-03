@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { ProfileFaqSection } from "@/components/seo/profile-faq-section";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
@@ -27,40 +27,108 @@ type FounderProfilePageProps = {
   params: {
     slug: string;
   };
+  searchParams?: Record<string, string | string[] | undefined>;
 };
 
-async function getFounderBySlug(slug: string) {
-  const founders = await getFounderDirectory();
-  return founders.find((item) => item.slug === slug) ?? null;
+type FounderRecord = Awaited<ReturnType<typeof getFounderDirectory>>[number];
+type FounderSlugResolution = {
+  founder: FounderRecord;
+  redirectSlug: string | null;
+};
+
+function normalizeSlug(value: string): string {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9-]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function buildQueryString(searchParams?: Record<string, string | string[] | undefined>): string {
+  const query = new URLSearchParams();
+  Object.entries(searchParams ?? {}).forEach(([key, value]) => {
+    if (Array.isArray(value)) {
+      value.forEach((entry) => {
+        if (entry?.trim()) {
+          query.append(key, entry.trim());
+        }
+      });
+      return;
+    }
+
+    if (typeof value === "string" && value.trim()) {
+      query.append(key, value.trim());
+    }
+  });
+  return query.toString();
+}
+
+function resolveFounderBySlug(
+  founders: FounderRecord[],
+  requestedSlug: string,
+): FounderSlugResolution | null {
+  const decoded = decodeURIComponent(requestedSlug);
+  const normalized = normalizeSlug(decoded);
+  if (!normalized) {
+    return null;
+  }
+
+  const exact = founders.find((item) => item.slug === normalized);
+  if (exact) {
+    return { founder: exact, redirectSlug: exact.slug === requestedSlug ? null : exact.slug };
+  }
+
+  const prefixMatches = founders.filter((item) => item.slug.startsWith(`${normalized}-`));
+  if (prefixMatches.length === 1) {
+    return { founder: prefixMatches[0], redirectSlug: prefixMatches[0].slug };
+  }
+
+  const founderNameMatches = founders.filter(
+    (item) => normalizeSlug(item.founderName) === normalized,
+  );
+  if (founderNameMatches.length === 1) {
+    return { founder: founderNameMatches[0], redirectSlug: founderNameMatches[0].slug };
+  }
+
+  return null;
 }
 
 export async function generateMetadata({ params }: FounderProfilePageProps): Promise<Metadata> {
-  const founder = await getFounderBySlug(params.slug);
-  if (!founder) {
+  const founders = await getFounderDirectory();
+  const resolved = resolveFounderBySlug(founders, params.slug);
+  if (!resolved) {
     return { title: "Founder Not Found | 100Xfounder" };
   }
 
   const baseUrl = getSiteBaseUrl();
+  const canonicalSlug = resolved.redirectSlug ?? resolved.founder.slug;
 
   return {
-    title: `${founder.founderName} - Founder Profile, Funding & Hiring | 100Xfounder`,
-    description: `Explore founder profile for ${founder.founderName}, including company ${founder.companyName}, funding rounds, hiring roles, and market signals on 100Xfounder.`,
+    title: `${resolved.founder.founderName} - Founder Profile, Funding & Hiring | 100Xfounder`,
+    description: `Explore founder profile for ${resolved.founder.founderName}, including company ${resolved.founder.companyName}, funding rounds, hiring roles, and market signals on 100Xfounder.`,
     alternates: {
-      canonical: `${baseUrl}/founders/${founder.slug}`,
+      canonical: `${baseUrl}/founders/${canonicalSlug}`,
     },
   };
 }
 
-export default async function FounderProfilePage({ params }: FounderProfilePageProps) {
+export default async function FounderProfilePage({ params, searchParams }: FounderProfilePageProps) {
   const [founders, lastUpdatedAt] = await Promise.all([
     getFounderDirectory(),
     getFounderDirectoryLastUpdatedAt(),
   ]);
-  const founder = founders.find((item) => item.slug === params.slug);
+  const resolved = resolveFounderBySlug(founders, params.slug);
 
-  if (!founder) {
+  if (!resolved) {
     notFound();
   }
+  if (resolved.redirectSlug) {
+    const queryString = buildQueryString(searchParams);
+    const target = `/founders/${resolved.redirectSlug}${queryString ? `?${queryString}` : ""}`;
+    permanentRedirect(target);
+  }
+  const founder = resolved.founder;
 
   const similar = founders
     .filter((item) => item.slug !== founder.slug && item.industry === founder.industry)

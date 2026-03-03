@@ -272,7 +272,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
       badge: "Latest" as const,
     }));
   const marketPulseNews = [...marketPulseSeed, ...marketPulseFallback].slice(0, 6);
-  const recentCategoryWindow = blogPosts.slice(0, 24);
+  const recentCategoryWindow = blogPosts.slice(0, 36);
   const categoryBuckets = new Map<string, typeof blogPosts>();
   recentCategoryWindow.forEach((post) => {
     const key = post.category?.trim() || "Founder Intelligence";
@@ -280,14 +280,76 @@ export default async function HomePage({ searchParams }: HomePageProps) {
     existing.push(post);
     categoryBuckets.set(key, existing);
   });
-  const categorySections = Array.from(categoryBuckets.entries())
-    .map(([category, posts]) => ({
+  const startupNewsPosts = blogPosts
+    .filter((post) =>
+      /(startup|funding|series|seed|ipo|venture|vc|acqui|acquir|merger|round|raises|capital|fintech|m&a)/i.test(
+        `${post.category} ${post.title} ${post.excerpt}`,
+      ),
+    )
+    .slice(0, 6);
+  const founderInterviewPosts = blogPosts
+    .filter((post) =>
+      /(founder|founders|ceo|interview|q&a|playbook|operator|leadership)/i.test(
+        `${post.category} ${post.title} ${post.excerpt}`,
+      ),
+    )
+    .slice(0, 6);
+  const trendingNowPosts = blogPosts.filter((post) => post.isTrending).slice(0, 6);
+  type HomeCategorySection = {
+    key: string;
+    category: string;
+    count: number;
+    href: string;
+    posts: typeof blogPosts;
+  };
+  const categorySections: HomeCategorySection[] = [];
+  const categorySectionKeys = new Set<string>();
+  const curatedLabels = new Set(["startup news", "founder interviews", "trending now"]);
+  const addCategorySection = (
+    key: string,
+    category: string,
+    posts: typeof blogPosts,
+    href: string,
+    countOverride?: number,
+  ) => {
+    if (posts.length === 0 || categorySectionKeys.has(key)) {
+      return;
+    }
+    categorySectionKeys.add(key);
+    categorySections.push({
+      key,
       category,
+      count: countOverride ?? posts.length,
+      href,
+      posts: posts.slice(0, 5),
+    });
+  };
+  addCategorySection("startup-news", "Startup News", startupNewsPosts, "/blog");
+  addCategorySection(
+    "founder-interviews",
+    "Founder Interviews",
+    founderInterviewPosts,
+    "/blog?query=founder",
+  );
+  addCategorySection("trending-now", "Trending Now", trendingNowPosts, "/blog");
+  Array.from(categoryBuckets.entries())
+    .map(([category, posts]) => ({
+      key: `category-${category.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+      category,
+      posts,
       count: posts.length,
-      posts: posts.slice(0, 4),
+      href: `/blog?category=${encodeURIComponent(category)}`,
     }))
     .sort((left, right) => right.count - left.count || left.category.localeCompare(right.category))
-    .slice(0, 4);
+    .forEach((section) => {
+      if (categorySections.length >= 8 || curatedLabels.has(section.category.toLowerCase())) {
+        return;
+      }
+      addCategorySection(section.key, section.category, section.posts, section.href, section.count);
+    });
+  if (categorySections.length < 6) {
+    addCategorySection("latest-updates", "Latest Updates", blogPosts, "/blog", blogPosts.length);
+  }
   const topCountrySlug =
     countryToSlug(
       founders.find((item) => (item.country ?? "Unknown") !== "Unknown")?.country ?? "India",
@@ -594,7 +656,8 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
 
           <p className="mb-5 max-w-3xl text-sm text-zinc-400">
-            Browse the day&apos;s top startup headlines organized by high-signal categories.
+            Browse category-wise newsroom coverage including Startup News, Founder Interviews,
+            Trending Now, funding updates, and sector desks.
           </p>
 
           <div className="grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
@@ -625,10 +688,10 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
 
           {categorySections.length > 0 ? (
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {categorySections.map((section) => (
                 <article
-                  key={section.category}
+                  key={section.key}
                   className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md"
                 >
                   <div className="mb-3 flex items-center justify-between gap-2">
@@ -650,7 +713,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                         <NewsCoverImage
                           title={post.title}
                           imageUrl={post.thumbnail}
-                          uniqueId={`${section.category}-${post.slug}`}
+                          uniqueId={`${section.key}-${post.slug}`}
                           className="h-16 w-full rounded-md border border-white/10"
                           imageClassName="transition-transform duration-500 group-hover:scale-105"
                         />
@@ -674,7 +737,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                   </div>
 
                   <Link
-                    href={`/blog?category=${encodeURIComponent(section.category)}`}
+                    href={section.href}
                     className="mt-3 inline-flex items-center gap-1 text-xs text-indigo-300 transition-colors hover:text-indigo-200"
                   >
                     View {section.category} News

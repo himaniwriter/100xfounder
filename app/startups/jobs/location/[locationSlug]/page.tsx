@@ -20,10 +20,16 @@ type JobsLocationPageProps = {
 
 export async function generateStaticParams(): Promise<Array<{ locationSlug: string }>> {
   const overview = await getJobsOverview();
-  return overview.byLocation
+  const generated = overview.byLocation
     .filter((item) => item.count >= JOB_INDEX_THRESHOLD)
     .slice(0, STARTUP_STATIC_PARAMS_CAP)
-    .map((item) => ({ locationSlug: item.slug }));
+    .map((item) => item.slug);
+
+  if (!generated.includes("new-york")) {
+    generated.push("new-york");
+  }
+
+  return generated.slice(0, STARTUP_STATIC_PARAMS_CAP).map((locationSlug) => ({ locationSlug }));
 }
 
 function parsePage(raw: string | undefined): number {

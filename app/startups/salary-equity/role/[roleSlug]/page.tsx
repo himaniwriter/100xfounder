@@ -20,10 +20,16 @@ type SalaryRolePageProps = {
 
 export async function generateStaticParams(): Promise<Array<{ roleSlug: string }>> {
   const overview = await getSalaryEquityOverview();
-  return overview.byRole
+  const generated = overview.byRole
     .filter((item) => item.count >= SALARY_INDEX_THRESHOLD)
     .slice(0, SALARY_STATIC_PARAMS_CAP)
-    .map((item) => ({ roleSlug: item.slug }));
+    .map((item) => item.slug);
+
+  if (!generated.includes("software-engineer")) {
+    generated.push("software-engineer");
+  }
+
+  return generated.slice(0, SALARY_STATIC_PARAMS_CAP).map((roleSlug) => ({ roleSlug }));
 }
 
 function parsePage(raw: string | undefined): number {

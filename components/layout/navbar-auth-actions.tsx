@@ -32,14 +32,19 @@ export function NavbarAuthActions() {
           signal: controller.signal,
         });
 
-        if (response.ok) {
-          const payload = (await response.json()) as {
-            success?: boolean;
-            user?: AuthUser;
-          };
-          if (payload?.user) {
-            setUser(payload.user);
-          }
+        if (!response.ok) {
+          setAuthState("guest");
+          return;
+        }
+
+        const payload = (await response.json()) as {
+          success?: boolean;
+          authenticated?: boolean;
+          user?: AuthUser | null;
+        };
+
+        if (payload?.authenticated && payload.user) {
+          setUser(payload.user);
           setAuthState("authenticated");
           return;
         }

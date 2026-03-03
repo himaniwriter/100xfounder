@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import dynamicImport from "next/dynamic";
+import Script from "next/script";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { readGlobalSiteSettings } from "@/lib/site-settings";
-import { sanitizeAdminEmbedHtml } from "@/lib/security/sanitize";
 import { getSiteBaseUrl } from "@/lib/sitemap";
 import "./globals.css";
 
@@ -76,37 +76,21 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const siteSettings = await readGlobalSiteSettings();
-  const safeHeadCode = siteSettings.headCode
-    ? sanitizeAdminEmbedHtml(siteSettings.headCode)
-    : "";
-  const claritySnippet = `<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "vgpr7x481r");</script>`;
-  const safeHeadWithClarity = safeHeadCode.includes("clarity.ms/tag/vgpr7x481r")
-    ? safeHeadCode
-    : `${safeHeadCode}${claritySnippet}`;
-  const safeBodyCode = siteSettings.bodyCode
-    ? sanitizeAdminEmbedHtml(siteSettings.bodyCode)
-    : "";
-
   return (
     <html lang="en" suppressHydrationWarning>
-      <head dangerouslySetInnerHTML={{ __html: safeHeadWithClarity }} />
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
       >
         {children}
         <GlobalCommandPalette />
-        {safeBodyCode ? (
-          <div
-            id="admin-body-code"
-            dangerouslySetInnerHTML={{ __html: safeBodyCode }}
-          />
-        ) : null}
+        <Script id="clarity-tracker" strategy="afterInteractive">
+          {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "vgpr7x481r");`}
+        </Script>
       </body>
     </html>
   );

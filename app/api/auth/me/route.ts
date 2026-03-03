@@ -12,7 +12,7 @@ export async function GET(request: NextRequest) {
   const session = await getSessionFromRequest(request);
 
   if (!session) {
-    return NextResponse.json({ success: false, error: "Unauthorized" }, { status: 401 });
+    return NextResponse.json({ success: true, authenticated: false, user: null });
   }
 
   if (!isDatabaseConfigured()) {
@@ -36,10 +36,14 @@ export async function GET(request: NextRequest) {
     });
 
     if (!user) {
-      return NextResponse.json({ success: false, error: "User not found" }, { status: 404 });
+      return NextResponse.json({ success: true, authenticated: false, user: null });
     }
 
-    return NextResponse.json({ success: true, user: toPublicUserDTO(user) });
+    return NextResponse.json({
+      success: true,
+      authenticated: true,
+      user: toPublicUserDTO(user),
+    });
   } catch (error) {
     return NextResponse.json(
       {

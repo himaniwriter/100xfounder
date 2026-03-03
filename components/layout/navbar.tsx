@@ -7,7 +7,7 @@ const primaryNavLinks = [
   { label: "Home", href: "/" },
   { label: "Signals", href: "/signals" },
   { label: "Blog", href: "/blog" },
-  { label: "Startup", href: "/startup" },
+  { label: "Startup", href: "/startups" },
   { label: "Pricing", href: "/pricing" },
 ];
 
@@ -18,7 +18,6 @@ const mobileNavLinks = [
   { label: "Industries", href: "/industries" },
   { label: "Stages", href: "/stages" },
   { label: "Startups", href: "/startups" },
-  { label: "Startup", href: "/startup" },
   { label: "Signals", href: "/signals" },
   { label: "Blog", href: "/blog" },
   { label: "Topics", href: "/topics" },
@@ -120,13 +119,13 @@ const megaMenuSections = [
       },
       {
         label: "Startup Jobs in New York",
-        href: "/startups/jobs/location/new-york",
-        description: "Role and location-led startup jobs page.",
+        href: "/startups/jobs",
+        description: "Role and location-led startup jobs pages.",
       },
       {
         label: "Software Engineer Salary & Equity",
-        href: "/startups/salary-equity/role/software-engineer",
-        description: "Compensation benchmark surface for startup hiring.",
+        href: "/startups/salary-equity",
+        description: "Compensation benchmark pages for startup hiring.",
       },
     ],
   },
@@ -232,6 +231,7 @@ export function Navbar() {
                           <Link
                             key={link.label}
                             href={link.href}
+                            prefetch={false}
                             className="block rounded-lg border border-transparent p-2 transition-colors hover:border-white/15 hover:bg-white/[0.04]"
                           >
                             <p className="text-sm font-medium text-white">{link.label}</p>
@@ -263,6 +263,7 @@ export function Navbar() {
             <Link
               key={`mobile-${link.label}`}
               href={link.href}
+              prefetch={false}
               className="shrink-0 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
             >
               {link.label}

@@ -1,5 +1,4 @@
 import type { Prisma } from "@prisma/client";
-import { unstable_cache } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { isDatabaseConfigured } from "@/lib/db-config";
 import { buildPrimaryLinkedInAvatar } from "@/lib/founders/linkedin";
@@ -657,11 +656,27 @@ async function loadFounderDirectoryBaseUnfiltered(): Promise<FounderDirectoryIte
   return buildSeededDirectoryBase();
 }
 
-const getCachedFounderDirectoryBaseUnfiltered = unstable_cache(
-  loadFounderDirectoryBaseUnfiltered,
-  ["founder-directory-base-unfiltered-v1"],
-  { revalidate: 1200 },
-);
+const FOUNDER_BASE_CACHE_TTL_MS = 20 * 60 * 1000;
+let founderDirectoryBaseCache:
+  | {
+      expiresAt: number;
+      value: FounderDirectoryItem[];
+    }
+  | null = null;
+
+async function getCachedFounderDirectoryBaseUnfiltered(): Promise<FounderDirectoryItem[]> {
+  const now = Date.now();
+  if (founderDirectoryBaseCache && founderDirectoryBaseCache.expiresAt > now) {
+    return founderDirectoryBaseCache.value;
+  }
+
+  const nextValue = await loadFounderDirectoryBaseUnfiltered();
+  founderDirectoryBaseCache = {
+    value: nextValue,
+    expiresAt: now + FOUNDER_BASE_CACHE_TTL_MS,
+  };
+  return nextValue;
+}
 
 export function splitRecentlyFunded(
   items: FounderDirectoryItem[],
