@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { buildWhatsAppRedirectPath } from "@/lib/marketing/outreach";
+import { ArrowRight } from "lucide-react";
 
 type GetFeaturedCtaCardProps = {
   context: "founder_profile" | "company_profile" | "blog_post";
@@ -14,28 +14,23 @@ export function GetFeaturedCtaCard({
   description = "Get a verified founder/company profile with funding and hiring context in one place.",
   plan,
 }: GetFeaturedCtaCardProps) {
-  const whatsappHref = buildWhatsAppRedirectPath({
-    context,
-    source: "content_page",
-    plan,
-  });
-
   return (
-    <section className="rounded-xl border border-indigo-400/30 bg-[#0a0f22] p-4 shadow-[0_14px_36px_rgba(2,6,23,0.56)]">
-      <h2 className="text-base font-semibold text-white">{title}</h2>
-      <p className="mt-2 text-sm text-zinc-300">{description}</p>
-      <div className="mt-3 flex flex-wrap gap-2">
+    <section className="rounded-[14px] border border-indigo-400/20 bg-gradient-to-b from-indigo-500/8 to-transparent p-5">
+      <h2 className="text-base font-semibold tracking-tight text-white">{title}</h2>
+      <p className="mt-2 text-sm leading-relaxed text-zinc-400">{description}</p>
+      <div className="mt-4 flex flex-wrap gap-2">
         <a
-          href={whatsappHref}
-          className="inline-flex items-center rounded-md border border-emerald-400/35 bg-emerald-500/10 px-3 py-1.5 text-xs text-emerald-200 transition-colors hover:bg-emerald-500/20"
+          href="mailto:media@100xfounder.com"
+          className="glass-ghost-btn glass-ghost-btn-compact border-emerald-400/25 text-emerald-200 hover:border-emerald-400/40 hover:bg-emerald-500/10"
         >
-          Contact on WhatsApp
+          Contact Editorial
         </a>
         <Link
           href="/get-featured"
-          className="inline-flex items-center rounded-md border border-indigo-400/35 bg-indigo-500/10 px-3 py-1.5 text-xs text-indigo-200 transition-colors hover:bg-indigo-500/20"
+          className="glass-ghost-btn glass-ghost-btn-compact border-indigo-400/25 text-indigo-200 hover:border-indigo-400/40 hover:bg-indigo-500/10"
         >
-          Open Get Featured
+          Get Featured
+          <ArrowRight className="ml-1 h-3 w-3" />
         </Link>
       </div>
     </section>

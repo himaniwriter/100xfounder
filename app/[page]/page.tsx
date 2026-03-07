@@ -147,7 +147,7 @@ const pageContent: Record<string, StaticPageContent> = {
     bullets: [
       "Work on product, data, and growth systems for startup intelligence.",
       "Build dark-mode-first experiences for high-volume directories.",
-      "Collaborate with research and automation teams across N8N/Supabase.",
+      "Collaborate with our in-house research and editorial teams.",
     ],
     ctaLabel: "Contact Hiring Team",
     ctaHref: "/contact",
@@ -275,13 +275,13 @@ export async function generateMetadata({
     },
     robots: shouldIndex
       ? {
-          index: true,
-          follow: true,
-        }
+        index: true,
+        follow: true,
+      }
       : {
-          index: false,
-          follow: true,
-        },
+        index: false,
+        follow: true,
+      },
   };
 }
 

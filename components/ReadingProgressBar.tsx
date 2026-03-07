@@ -24,12 +24,11 @@ export function ReadingProgressBar() {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed left-0 right-0 top-0 z-[70] h-[3px]">
+    <div className="pointer-events-none fixed left-0 right-0 top-0 z-[70] h-[2px]">
       <div
-        className="h-full bg-indigo-500/95 transition-[width] duration-150"
+        className="h-full bg-gradient-to-r from-indigo-500 to-blue-400 transition-[width] duration-150 ease-out"
         style={{ width: `${progress}%` }}
       />
     </div>
   );
 }
-

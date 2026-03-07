@@ -92,7 +92,7 @@ export function ArticleToc({ headings, mode = "desktop" }: ArticleTocProps) {
   }
 
   const list = (
-    <ul className="mt-3 space-y-2">
+    <ul className="mt-3 space-y-1">
       {normalizedHeadings.map((heading) => {
         const isActive = activeId === heading.id;
         return (
@@ -107,10 +107,14 @@ export function ArticleToc({ headings, mode = "desktop" }: ArticleTocProps) {
                 }
               }}
               className={[
-                "block border-l-2 border-transparent text-sm transition-colors",
+                "block rounded-md py-1 pl-3 text-sm transition-all duration-150",
                 getLevelPadding(heading.level),
-                heading.level >= 3 ? "text-xs text-zinc-400 hover:text-white" : "text-sm text-zinc-300 hover:text-white",
-                isActive ? "border-indigo-400 font-semibold text-indigo-200" : "",
+                heading.level >= 3
+                  ? "text-xs text-zinc-500 hover:text-zinc-200"
+                  : "text-[13px] text-zinc-400 hover:text-zinc-100",
+                isActive
+                  ? "border-l-2 border-indigo-400 bg-indigo-500/5 font-medium text-indigo-200"
+                  : "border-l-2 border-transparent",
               ]
                 .join(" ")
                 .trim()}
@@ -125,14 +129,14 @@ export function ArticleToc({ headings, mode = "desktop" }: ArticleTocProps) {
 
   if (mode === "mobile") {
     return (
-      <div className="mb-4 rounded-xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-md lg:hidden">
+      <div className="mb-4 rounded-[14px] border border-white/8 bg-white/[0.02] p-4 lg:hidden">
         <button
           type="button"
           onClick={() => setIsOpen((value) => !value)}
-          className="flex w-full items-center justify-between text-left text-sm font-medium text-zinc-200"
+          className="flex w-full items-center justify-between text-left text-sm font-medium text-zinc-300"
         >
           <span>Table of Contents</span>
-          <span aria-hidden="true" className="text-xs text-zinc-400">
+          <span aria-hidden="true" className="text-xs text-zinc-500">
             {isOpen ? "▲" : "▼"}
           </span>
         </button>
@@ -142,10 +146,9 @@ export function ArticleToc({ headings, mode = "desktop" }: ArticleTocProps) {
   }
 
   return (
-    <div className="sticky top-24 rounded-xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-md">
-      <p className="text-xs uppercase tracking-wide text-zinc-500">Table of Contents</p>
+    <div className="sticky top-24 rounded-[14px] border border-white/8 bg-white/[0.02] p-4">
+      <p className="text-overline uppercase text-zinc-500">On this page</p>
       {list}
     </div>
   );
 }
-

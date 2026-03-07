@@ -232,11 +232,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
     marqueeCompanyMap.size > 0
       ? Array.from(marqueeCompanyMap.values()).slice(0, 24)
       : fallbackMarqueeNames.map((name) => ({
-          slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
-          name,
-          websiteUrl: null,
-          avatarUrl: null,
-        }));
+        slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+        name,
+        websiteUrl: null,
+        avatarUrl: null,
+      }));
   const marqueeSplitIndex = Math.ceil(marqueeCompanies.length / 2);
   const marqueeTopRow = marqueeCompanies.slice(0, marqueeSplitIndex);
   const marqueeBottomRow = marqueeCompanies.slice(marqueeSplitIndex);
@@ -387,14 +387,14 @@ export default async function HomePage({ searchParams }: HomePageProps) {
       : "";
 
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-[#050505] text-[#EDEDED]">
+    <main className="relative min-h-screen overflow-x-hidden bg-[#050505] text-zinc-100">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute left-1/2 top-[-16rem] h-[38rem] w-[38rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.28),transparent_70%)] blur-3xl" />
-        <div className="absolute right-[-12rem] top-[14rem] h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.22),transparent_72%)] blur-3xl" />
+        <div className="absolute left-1/2 top-[-16rem] h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.2),transparent_70%)] blur-3xl" />
+        <div className="absolute right-[-12rem] top-[14rem] h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15),transparent_72%)] blur-3xl" />
       </div>
 
       <div className="relative z-10">
-        <section className="border-b border-white/10 bg-white/5 backdrop-blur-md">
+        <section className="border-b border-white/6 bg-white/[0.02]">
           <div className="overflow-hidden">
             <div className="ticker-track">
               <span>{fundingTickerItems.join(" • ")}</span>
@@ -405,9 +405,9 @@ export default async function HomePage({ searchParams }: HomePageProps) {
 
         <Navbar />
 
-        <section className="mx-auto w-full max-w-7xl px-4 pb-14 pt-20 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl">
+        <section className="mx-auto w-full max-w-7xl px-4 pb-16 pt-24 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-[3.5rem] md:leading-[1.08]">
               {phraseIndex >= 0 ? (
                 <>
                   {heroTitleBefore}
@@ -421,7 +421,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
               )}
             </h1>
 
-            <p className="mx-auto mt-5 max-w-3xl text-lg text-zinc-300">
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-zinc-400">
               {homepageContent.heroSubtitle}
             </p>
 
@@ -432,18 +432,18 @@ export default async function HomePage({ searchParams }: HomePageProps) {
               secondaryLabel={homepageContent.secondaryCtaLabel}
             />
 
-            <div className="mx-auto mt-9 max-w-3xl rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-2xl">
+            <div className="mx-auto mt-10 max-w-2xl rounded-[14px] border border-white/8 bg-white/[0.03] p-3">
               <HomeSearchBar />
 
-              <div className="mt-4 border-t border-white/10 pt-4">
-                <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">
-                  Followed by investors and operators at:
+              <div className="mt-4 border-t border-white/6 pt-4">
+                <p className="text-overline uppercase text-zinc-600">
+                  Followed by investors and operators at
                 </p>
-                <div className="mt-3 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+                <div className="mt-3 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
                   {trustLogos.map((logo) => (
                     <div
                       key={logo}
-                      className="rounded-md border border-white/10 bg-black/40 px-3 py-1.5 text-xs font-medium tracking-wide text-zinc-400 grayscale"
+                      className="rounded-md border border-white/8 bg-white/[0.03] px-3 py-1.5 text-xs font-medium tracking-wide text-zinc-500"
                     >
                       {logo}
                     </div>
@@ -454,7 +454,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+        <section className="mx-auto w-full max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
           <PillarCrosslinks
             context={{
               country: primaryContextFounder?.country,
@@ -469,33 +469,33 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           />
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
-          <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <h2 className="text-2xl font-semibold tracking-tight text-white">Why CEOs Choose 100Xfounder</h2>
+        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <h2 className="text-heading-2 text-white">Why CEOs Choose 100Xfounder</h2>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
-            <GlassCard className="group p-6 hover:border-indigo-500/70 hover:shadow-[0_0_0_1px_rgba(99,102,241,0.6),0_0_45px_rgba(99,102,241,0.2)]">
-              <ShieldCheck className="h-6 w-6 text-indigo-300" />
-              <h3 className="mt-4 text-lg font-semibold text-white">Credibility That Converts.</h3>
-              <p className="mt-2 text-sm text-zinc-400">
+          <div className="grid gap-4 md:grid-cols-3">
+            <GlassCard variant="elevated" className="group p-6 hover:border-indigo-500/30 hover:shadow-glow-indigo">
+              <ShieldCheck className="h-5 w-5 text-indigo-300/80" />
+              <h3 className="mt-4 text-heading-3 text-white">Credibility That Converts</h3>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-500">
                 Profiles are reviewed by humans so investors, media, and partners can trust your
                 story before they reach out.
               </p>
             </GlassCard>
 
-            <GlassCard className="flex flex-col justify-between p-6 hover:border-indigo-500/70 hover:shadow-[0_0_0_1px_rgba(99,102,241,0.6),0_0_45px_rgba(99,102,241,0.2)]">
-              <p className="font-mono text-5xl font-semibold text-white">50M+</p>
-              <p className="mt-4 text-sm text-zinc-400">
+            <GlassCard variant="elevated" className="flex flex-col justify-between p-6 hover:border-indigo-500/30 hover:shadow-glow-indigo">
+              <p className="font-mono text-5xl font-bold tracking-tight text-white">50M+</p>
+              <p className="mt-4 text-sm leading-relaxed text-zinc-500">
                 Structured data points across founder, funding, and hiring signals to improve
                 discoverability and profile quality.
               </p>
             </GlassCard>
 
-            <GlassCard className="group p-6 hover:border-indigo-500/70 hover:shadow-[0_0_0_1px_rgba(99,102,241,0.6),0_0_45px_rgba(99,102,241,0.2)]">
-              <Zap className="h-6 w-6 text-indigo-300" />
-              <h3 className="mt-4 text-lg font-semibold text-white">Search + AI Visibility.</h3>
-              <p className="mt-2 text-sm text-zinc-400">
+            <GlassCard variant="elevated" className="group p-6 hover:border-indigo-500/30 hover:shadow-glow-indigo">
+              <Zap className="h-5 w-5 text-indigo-300/80" />
+              <h3 className="mt-4 text-heading-3 text-white">Search + AI Visibility</h3>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-500">
                 Your profile is built to appear in high-intent searches and AI answer surfaces
                 where buyers and talent do research.
               </p>
@@ -503,13 +503,13 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-[linear-gradient(180deg,rgba(15,29,52,0.42),rgba(4,8,16,0.7))] backdrop-blur-md">
+        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="overflow-hidden rounded-[14px] border border-white/8 bg-white/[0.02]">
             <div className="px-4 pb-1 pt-6 text-center sm:px-6">
-              <p className="text-xs uppercase tracking-[0.22em] text-zinc-500">
+              <p className="text-overline uppercase text-zinc-500">
                 Recently Indexed Companies
               </p>
-              <p className="mt-2 text-sm text-zinc-400">
+              <p className="mt-2 text-sm text-zinc-500">
                 Join founders, operators, and investors tracking market movements across these
                 companies.
               </p>
@@ -579,23 +579,23 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 pb-20 pt-8 sm:px-6 lg:px-8">
-          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <h2 className="text-2xl font-semibold tracking-tight text-white">
+        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <h2 className="text-heading-2 text-white">
               Recently Funded Spotlight
             </h2>
             <Link
               href="/founders"
-              className="glass-ghost-btn"
+              className="glass-ghost-btn glass-ghost-btn-compact"
             >
               Open full directory
             </Link>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-3">
             {featuredFounders.map((founder) => (
               <Link key={founder.id} href={`/founders/${founder.slug}`} className="group block">
-                <GlassCard className="h-full cursor-pointer p-5 transition-all group-hover:scale-[1.015] group-hover:border-indigo-400/45 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]">
+                <GlassCard variant="elevated" className="h-full cursor-pointer p-5 transition-all duration-200 group-hover:border-white/16 group-hover:shadow-card-hover">
                   <div className="flex items-start gap-3">
                     <div className="relative h-12 w-12 shrink-0">
                       <CompanyLogo
@@ -623,11 +623,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                     </div>
                   </div>
 
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    <span className="rounded-full border border-white/8 bg-white/[0.04] px-2.5 py-0.5 text-xs text-zinc-400">
                       {founder.industry}
                     </span>
-                    <span className="rounded-full border border-[#6366f1]/30 bg-[#6366f1]/10 px-2.5 py-1 text-xs text-indigo-300">
+                    <span className="rounded-full border border-indigo-400/20 bg-indigo-500/8 px-2.5 py-0.5 text-xs text-indigo-300/80">
                       {founder.stage}
                     </span>
                   </div>
@@ -642,14 +642,14 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <h2 className="text-2xl font-semibold tracking-tight text-white">
+        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <h2 className="text-heading-2 text-white">
               Trending News by Category
             </h2>
             <Link
               href="/blog"
-              className="glass-ghost-btn"
+              className="glass-ghost-btn glass-ghost-btn-compact"
             >
               Open Blog
             </Link>
@@ -663,8 +663,8 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           <div className="grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
             {leadHomeArticle ? <BlogCard post={leadHomeArticle} variant="hero" priority /> : null}
 
-            <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md">
-              <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+            <div className="rounded-[14px] border border-white/8 bg-white/[0.02] p-5">
+              <p className="text-overline uppercase text-zinc-500">
                 Trending Headlines
               </p>
 
@@ -688,11 +688,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
 
           {categorySections.length > 0 ? (
-            <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {categorySections.map((section) => (
                 <article
                   key={section.key}
-                  className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-md"
+                  className="rounded-[14px] border border-white/8 bg-white/[0.02] p-4"
                 >
                   <div className="mb-3 flex items-center justify-between gap-2">
                     <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-zinc-200">
@@ -749,22 +749,22 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           ) : null}
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-          <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
-            <h2 className="text-2xl font-semibold tracking-tight text-white">
+        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
+            <h2 className="text-heading-2 text-white">
               Market Pulse: Latest Funding Rounds
             </h2>
             <Link
               href="/signals"
-              className="glass-ghost-btn"
+              className="glass-ghost-btn glass-ghost-btn-compact"
             >
               Open full signals feed
             </Link>
           </div>
 
           <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,0.3fr)_minmax(0,0.7fr)]">
-            <aside className="self-start h-fit rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-[40px]">
-              <h3 className="text-xs uppercase tracking-[0.16em] text-zinc-500">Funding Radar</h3>
+            <aside className="self-start h-fit rounded-[14px] border border-white/8 bg-white/[0.02] p-5">
+              <h3 className="text-overline uppercase text-zinc-500">Funding Radar</h3>
               <p className="mt-2 text-sm text-zinc-300">
                 Live intelligence across high-velocity sectors, refreshed every 2 hours.
               </p>
@@ -832,8 +832,8 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                 </div>
               </Link>
 
-              <div className="rounded-2xl border border-white/15 bg-white/[0.03] backdrop-blur-[40px]">
-                <div className="hidden grid-cols-[88px_minmax(0,1.4fr)_110px_100px_minmax(0,1fr)] gap-3 border-b border-white/10 px-4 py-2 text-[11px] uppercase tracking-[0.14em] text-zinc-500 md:grid">
+              <div className="rounded-[14px] border border-white/8 bg-white/[0.02]">
+                <div className="hidden grid-cols-[88px_minmax(0,1.4fr)_110px_100px_minmax(0,1fr)] gap-3 border-b border-white/6 px-4 py-2.5 text-overline uppercase text-zinc-600 md:grid">
                   <span>Date</span>
                   <span>Company</span>
                   <span>Round</span>
@@ -870,9 +870,9 @@ export default async function HomePage({ searchParams }: HomePageProps) {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4 backdrop-blur-[40px] sm:p-5">
+              <div className="rounded-[14px] border border-white/8 bg-white/[0.02] p-4 sm:p-5">
                 <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-200">
+                  <h3 className="text-overline font-semibold uppercase text-zinc-300">
                     Trending & Latest on the Desk
                   </h3>
                   <Link
@@ -933,19 +933,19 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <h2 className="text-2xl font-semibold tracking-tight text-white">
+              <h2 className="text-heading-2 text-white">
                 Discover Now
               </h2>
-              <p className="mt-2 text-sm text-zinc-400">
+              <p className="mt-2 text-sm text-zinc-500">
                 Jump into the newsroom sections that are refreshed for search and AI citation surfaces.
               </p>
             </div>
             <Link
               href="/blog"
-              className="glass-ghost-btn"
+              className="glass-ghost-btn glass-ghost-btn-compact"
             >
               Open Newsroom
             </Link>
@@ -956,11 +956,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
               <Link
                 key={module.title}
                 href={module.href}
-                className="rounded-2xl border border-white/15 bg-white/[0.03] p-5 transition-colors hover:border-white/30"
+                className="rounded-[14px] border border-white/8 bg-white/[0.02] p-5 transition-all duration-200 hover:border-white/16 hover:bg-white/[0.04]"
               >
-                <p className="text-sm uppercase tracking-[0.14em] text-zinc-500">{module.title}</p>
-                <p className="mt-3 text-sm leading-6 text-zinc-300">{module.description}</p>
-                <span className="mt-4 inline-flex items-center rounded-full border border-indigo-400/35 bg-indigo-500/10 px-2.5 py-1 text-xs text-indigo-200">
+                <p className="text-overline uppercase text-zinc-500">{module.title}</p>
+                <p className="mt-3 text-sm leading-relaxed text-zinc-400">{module.description}</p>
+                <span className="mt-4 inline-flex items-center rounded-full border border-indigo-400/20 bg-indigo-500/8 px-2.5 py-0.5 text-xs text-indigo-300/80">
                   {module.label}
                 </span>
               </Link>
@@ -968,7 +968,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <InstagramFeedGrid
             items={instagramFeed}
             profileUrl={instagramUrl}

@@ -1,0 +1,496 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - alert [ref=e2]: Get Featured Founder Profile | Build Trust and Inbound | 100Xfounder
+  - main [ref=e3]:
+    - generic [ref=e6]:
+      - link "100Xfounder" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Signals" [ref=e10] [cursor=pointer]:
+          - /url: /signals
+        - link "Blog" [ref=e11] [cursor=pointer]:
+          - /url: /blog
+        - link "Startup" [ref=e12] [cursor=pointer]:
+          - /url: /startups
+        - link "Pricing" [ref=e13] [cursor=pointer]:
+          - /url: /pricing
+        - button "Explore" [ref=e15] [cursor=pointer]:
+          - text: Explore
+          - img [ref=e16]
+      - generic [ref=e18]:
+        - link "Get Featured" [ref=e19] [cursor=pointer]:
+          - /url: /get-featured
+        - button "Open command palette" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+          - generic [ref=e25]: search founder, news etc
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: Founder Visibility
+        - heading "Get Your Founder Story Seen by Investors, Buyers, and Talent" [level=1] [ref=e29]
+        - paragraph [ref=e30]: Build a trusted, indexable founder profile with your funding and hiring signals in one place. Choose a one-time plan, submit your details, and our team reviews every application before publish.
+        - generic [ref=e31]:
+          - generic [ref=e32]: Human-reviewed profiles
+          - generic [ref=e33]: Search and AI discoverable pages
+          - generic [ref=e34]: Manual approval before publish
+        - generic [ref=e35]:
+          - link "Follow on Instagram" [ref=e36] [cursor=pointer]:
+            - /url: https://www.instagram.com/100x.founder/
+          - link "Contact on WhatsApp" [ref=e37] [cursor=pointer]:
+            - /url: /api/redirect/whatsapp?context=get_featured_hero&source=get_featured_page
+          - link "Start Application" [ref=e38] [cursor=pointer]:
+            - /url: "#apply"
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - heading "Earn trust faster" [level=2] [ref=e41]
+          - paragraph [ref=e42]: Show verified founder and company context so investors, customers, and media can validate your story quickly.
+        - generic [ref=e43]:
+          - heading "Improve search presence" [level=2] [ref=e44]
+          - paragraph [ref=e45]: Get an indexable profile built around high-intent founder and company queries to capture discovery traffic.
+        - generic [ref=e46]:
+          - heading "Centralize your narrative" [level=2] [ref=e47]
+          - paragraph [ref=e48]: Keep funding, last round, and hiring details in one page so prospects do not need to cross-check multiple sites.
+        - generic [ref=e49]:
+          - heading "Convert attention into inbound" [level=2] [ref=e50]
+          - paragraph [ref=e51]: Make it easy for qualified people to understand your company and contact you with the right context.
+      - generic [ref=e52]:
+        - heading "Trust and Review Standards" [level=2] [ref=e53]
+        - generic [ref=e54]:
+          - article [ref=e55]:
+            - paragraph [ref=e56]: Review SLA
+            - paragraph [ref=e57]: "Starter: 7 days • Growth: 3 days • Priority: 24 hours"
+          - article [ref=e58]:
+            - paragraph [ref=e59]: Verification Scope
+            - paragraph [ref=e60]: Founder identity, company website, funding references, and public profile links
+          - article [ref=e61]:
+            - paragraph [ref=e62]: Publish Window
+            - paragraph [ref=e63]: Profiles are published after manual approval and final editorial QA
+          - article [ref=e64]:
+            - paragraph [ref=e65]: Revision Policy
+            - paragraph [ref=e66]: Starter includes one revision, Growth and Priority include expanded update cycles
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - paragraph [ref=e69]: Starter
+          - paragraph [ref=e70]:
+            - text: ₹9,900
+            - generic [ref=e71]: / $149
+          - paragraph [ref=e72]: For founders who want a trusted profile live quickly.
+          - heading "What you get" [level=2] [ref=e73]
+          - list [ref=e74]:
+            - listitem [ref=e75]: Founder + company profile in directory
+            - listitem [ref=e76]: Basic verification badge after review
+            - listitem [ref=e77]: Funding, last round, and hiring fields added
+            - listitem [ref=e78]: "Review SLA: up to 7 days"
+            - listitem [ref=e79]: One correction request within 7 days
+        - generic [ref=e80]:
+          - paragraph [ref=e81]: Growth
+          - paragraph [ref=e82]:
+            - text: ₹24,900
+            - generic [ref=e83]: / $349
+          - paragraph [ref=e84]: For growth-stage teams that need stronger visibility and speed.
+          - heading "What you get" [level=2] [ref=e85]
+          - list [ref=e86]:
+            - listitem [ref=e87]: Everything in Starter
+            - listitem [ref=e88]: "Priority review SLA: up to 3 days"
+            - listitem [ref=e89]: Higher placement on relevant hub pages
+            - listitem [ref=e90]: One distribution mention (newsroom/social)
+            - listitem [ref=e91]: One listing content update cycle
+        - generic [ref=e92]:
+          - paragraph [ref=e93]: Priority
+          - paragraph [ref=e94]:
+            - text: ₹49,900
+            - generic [ref=e95]: / $699
+          - paragraph [ref=e96]: For companies that want fastest turnaround and spotlight reach.
+          - heading "What you get" [level=2] [ref=e97]
+          - list [ref=e98]:
+            - listitem [ref=e99]: Everything in Growth
+            - listitem [ref=e100]: "Fast-track review SLA: up to 24 hours"
+            - listitem [ref=e101]: Homepage or topic spotlight window (up to 14 days)
+            - listitem [ref=e102]: Priority distribution mentions across channels
+            - listitem [ref=e103]: Two listing content update cycles + priority support
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - heading "Apply with n8n Form" [level=2] [ref=e106]
+          - paragraph [ref=e107]: Use the embedded form for your standard founder intake flow.
+          - generic [ref=e108]: The embedded application form is temporarily unavailable. Please use the fallback form on this page and our team will process your request.
+        - generic [ref=e109]:
+          - heading "Fallback Application Form" [level=2] [ref=e110]
+          - paragraph [ref=e111]: This form submits to our secure API and can forward to n8n for operations automation.
+          - generic [ref=e112]:
+            - textbox "Founder Name" [ref=e113]
+            - textbox "Work Email" [ref=e114]
+            - textbox "Company Name" [ref=e115]
+            - combobox [ref=e116]:
+              - option "Starter" [selected]
+              - option "Growth"
+              - option "Priority"
+            - textbox "Website URL (optional)" [ref=e117]
+            - textbox "LinkedIn URL (optional)" [ref=e118]
+            - textbox "Country (optional)" [ref=e119]
+            - textbox "Industry (optional)" [ref=e120]
+            - textbox "Stage (optional)" [ref=e121]
+            - textbox "Product Summary" [ref=e122]
+            - textbox "Funding Info (optional)" [ref=e123]
+            - button "Submit Application" [ref=e124] [cursor=pointer]
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - heading "Latest on Instagram" [level=2] [ref=e128]
+            - paragraph [ref=e129]: Social proof from founder spotlights and ecosystem updates.
+          - link "Follow on Instagram" [ref=e130] [cursor=pointer]:
+            - /url: https://www.instagram.com/100x.founder/
+        - generic [ref=e131]:
+          - link "Funding Wire Funding Wire" [ref=e132] [cursor=pointer]:
+            - /url: https://www.instagram.com/100x.founder/
+            - img "Funding Wire" [ref=e133]
+            - generic [ref=e134]: Funding Wire
+          - link "AI Ecosystem AI Ecosystem" [ref=e135] [cursor=pointer]:
+            - /url: https://www.instagram.com/100x.founder/
+            - img "AI Ecosystem" [ref=e136]
+            - generic [ref=e137]: AI Ecosystem
+          - link "Startup Brief Startup Brief" [ref=e138] [cursor=pointer]:
+            - /url: https://www.instagram.com/100x.founder/
+            - img "Startup Brief" [ref=e139]
+            - generic [ref=e140]: Startup Brief
+          - link "Talent Radar Talent Radar" [ref=e141] [cursor=pointer]:
+            - /url: https://www.instagram.com/100x.founder/
+            - img "Talent Radar" [ref=e142]
+            - generic [ref=e143]: Talent Radar
+      - generic [ref=e144]:
+        - heading "What happens after you apply" [level=2] [ref=e145]
+        - list [ref=e146]:
+          - listitem [ref=e147]:
+            - generic [ref=e148]: "1"
+            - text: Apply and pick a one-time plan
+          - listitem [ref=e149]:
+            - generic [ref=e150]: "2"
+            - text: Editorial review checks credibility and data quality
+          - listitem [ref=e151]:
+            - generic [ref=e152]: "3"
+            - text: Approved profiles receive payment instructions
+          - listitem [ref=e153]:
+            - generic [ref=e154]: "4"
+            - text: Your founder profile is published after final QA
+      - generic [ref=e155]:
+        - heading "FAQs" [level=2] [ref=e156]
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - paragraph [ref=e159]: How long does profile review take?
+            - paragraph [ref=e160]: "Review timelines depend on your selected plan. Starter: up to 7 days, Growth: up to 3 days, Priority: up to 24 hours."
+          - generic [ref=e161]:
+            - paragraph [ref=e162]: What can lead to rejection?
+            - paragraph [ref=e163]: Incomplete data, unverifiable company information, misleading claims, and non-startup submissions can be rejected during review.
+          - generic [ref=e164]:
+            - paragraph [ref=e165]: When is payment requested?
+            - paragraph [ref=e166]: After review and approval, we share payment instructions on your work email before publish starts.
+          - generic [ref=e167]:
+            - paragraph [ref=e168]: Can I request refunds?
+            - paragraph [ref=e169]: Please review our Fulfillment Policy for refund eligibility and service terms before submission.
+        - paragraph [ref=e170]:
+          - text: Refunds and service terms are governed by our
+          - link "Fulfillment Policy" [ref=e171] [cursor=pointer]:
+            - /url: /fulfillment-policy
+          - text: .
+    - generic [ref=e173]:
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - 'heading "Instagram: @100x.founder" [level=3] [ref=e177]'
+          - paragraph [ref=e178]: Follow daily founder signals, funding clips, and ecosystem snapshots.
+        - generic [ref=e179]:
+          - link "Open Instagram" [ref=e180] [cursor=pointer]:
+            - /url: https://www.instagram.com/100x.founder/
+          - link "WhatsApp Us" [ref=e181] [cursor=pointer]:
+            - /url: /api/redirect/whatsapp?context=footer&source=footer
+      - generic [ref=e182]:
+        - heading "Directory Navigation" [level=3] [ref=e183]
+        - paragraph [ref=e184]: Explore startup intelligence by industry, stage, and headquarters to discover the highest-signal companies faster.
+      - generic [ref=e185]:
+        - heading "Top Searches" [level=3] [ref=e186]
+        - paragraph [ref=e187]: High-intent startup and funding queries users search for across Google.
+        - generic [ref=e188]:
+          - link "Startup newsroom" [ref=e189] [cursor=pointer]:
+            - /url: /blog
+          - link "Startup news topics" [ref=e190] [cursor=pointer]:
+            - /url: /topics
+          - link "Funding round news" [ref=e191] [cursor=pointer]:
+            - /url: /funding-rounds
+          - link "India startup news" [ref=e192] [cursor=pointer]:
+            - /url: /countries/india/news
+          - link "US startup news" [ref=e193] [cursor=pointer]:
+            - /url: /countries/united-states/news
+          - link "Top startups by country" [ref=e194] [cursor=pointer]:
+            - /url: /countries
+          - link "Tier 1 startup countries" [ref=e195] [cursor=pointer]:
+            - /url: /countries/tier/tier_1
+          - link "Tier 2 startup countries" [ref=e196] [cursor=pointer]:
+            - /url: /countries/tier/tier_2
+          - link "Tier 3 startup countries" [ref=e197] [cursor=pointer]:
+            - /url: /countries/tier/tier_3
+          - link "AI startups" [ref=e198] [cursor=pointer]:
+            - /url: /startups/ai-startups
+          - link "Biotech startups" [ref=e199] [cursor=pointer]:
+            - /url: /startups/biotech-startups
+          - link "Cybersecurity startups" [ref=e200] [cursor=pointer]:
+            - /url: /startups/cybersecurity-startups
+          - link "E-Commerce startups" [ref=e201] [cursor=pointer]:
+            - /url: /startups/e-commerce-startups
+          - link "EdTech startups" [ref=e202] [cursor=pointer]:
+            - /url: /startups/edtech-startups
+          - link "FinTech startups" [ref=e203] [cursor=pointer]:
+            - /url: /startups/fintech-startups
+          - link "Healthcare startups" [ref=e204] [cursor=pointer]:
+            - /url: /startups/healthcare-startups
+          - link "Marketplace startups" [ref=e205] [cursor=pointer]:
+            - /url: /startups/marketplace-startups
+          - link "SaaS startups" [ref=e206] [cursor=pointer]:
+            - /url: /startups/saas-startups
+          - link "Sustainability startups" [ref=e207] [cursor=pointer]:
+            - /url: /startups/sustainability-startups
+          - link "Early-stage startups" [ref=e208] [cursor=pointer]:
+            - /url: /startups/early-stage-startups
+          - link "Growth-stage startups" [ref=e209] [cursor=pointer]:
+            - /url: /startups/growth-stage-startups
+          - link "Mature startups" [ref=e210] [cursor=pointer]:
+            - /url: /startups/mature-startups
+          - link "Under 50 employees" [ref=e211] [cursor=pointer]:
+            - /url: /startups/under-50-employees
+          - link "Under 100 employees" [ref=e212] [cursor=pointer]:
+            - /url: /startups/under-100-employees
+          - link "Under 500 employees" [ref=e213] [cursor=pointer]:
+            - /url: /startups/under-500-employees
+          - link "Founded in 2021" [ref=e214] [cursor=pointer]:
+            - /url: /startups/founded-in-2021
+          - link "Founded in 2020" [ref=e215] [cursor=pointer]:
+            - /url: /startups/founded-in-2020
+          - link "United States startups" [ref=e216] [cursor=pointer]:
+            - /url: /startups/united-states-startups
+          - link "Remote Startups" [ref=e217] [cursor=pointer]:
+            - /url: /startups/remote-startups
+          - link "Startups in New York" [ref=e218] [cursor=pointer]:
+            - /url: /startups/startups-in-new-york
+          - link "Startups in Chicago" [ref=e219] [cursor=pointer]:
+            - /url: /startups/startups-in-chicago
+          - link "Startups in Boston" [ref=e220] [cursor=pointer]:
+            - /url: /startups/startups-in-boston
+          - link "Startups in San Francisco" [ref=e221] [cursor=pointer]:
+            - /url: /startups/startups-in-san-francisco
+          - link "Startups in Los Angeles" [ref=e222] [cursor=pointer]:
+            - /url: /startups/startups-in-los-angeles
+          - link "Startups in Seattle" [ref=e223] [cursor=pointer]:
+            - /url: /startups/startups-in-seattle
+          - link "Startups in Austin" [ref=e224] [cursor=pointer]:
+            - /url: /startups/startups-in-austin
+          - link "Startups in Miami" [ref=e225] [cursor=pointer]:
+            - /url: /startups/startups-in-miami
+          - link "Startups in Washington DC" [ref=e226] [cursor=pointer]:
+            - /url: /startups/startups-in-washington-dc
+          - link "Startups in Dallas" [ref=e227] [cursor=pointer]:
+            - /url: /startups/startups-in-dallas
+          - link "Startups in Philadelphia" [ref=e228] [cursor=pointer]:
+            - /url: /startups/startups-in-philadelphia
+          - link "Startups in San Diego" [ref=e229] [cursor=pointer]:
+            - /url: /startups/startups-in-san-diego
+          - link "Startups in Houston" [ref=e230] [cursor=pointer]:
+            - /url: /startups/startups-in-houston
+          - link "Startups in Atlanta" [ref=e231] [cursor=pointer]:
+            - /url: /startups/startups-in-atlanta
+          - link "Startups in Denver" [ref=e232] [cursor=pointer]:
+            - /url: /startups/startups-in-denver
+          - link "Startups in India" [ref=e233] [cursor=pointer]:
+            - /url: /startups/startups-in-india
+          - link "Startups in London" [ref=e234] [cursor=pointer]:
+            - /url: /startups/startups-in-london
+          - link "Startups in Canada" [ref=e235] [cursor=pointer]:
+            - /url: /startups/startups-in-canada
+      - generic [ref=e236]:
+        - generic [ref=e237]:
+          - heading "General" [level=3] [ref=e238]
+          - list [ref=e239]:
+            - listitem [ref=e240]:
+              - link "About" [ref=e241] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e242]:
+              - link "Newsroom" [ref=e243] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e244]:
+              - link "Feature Now" [ref=e245] [cursor=pointer]:
+                - /url: /feature-now
+            - listitem [ref=e246]:
+              - link "Get Featured" [ref=e247] [cursor=pointer]:
+                - /url: /get-featured
+            - listitem [ref=e248]:
+              - link "Interview Questionnaire" [ref=e249] [cursor=pointer]:
+                - /url: /interview-questionnaire
+            - listitem [ref=e250]:
+              - link "Guest Post Marketplace" [ref=e251] [cursor=pointer]:
+                - /url: /guest-post-marketplace
+            - listitem [ref=e252]:
+              - link "Guest Post Order" [ref=e253] [cursor=pointer]:
+                - /url: /guest-post-order
+            - listitem [ref=e254]:
+              - link "News Topics" [ref=e255] [cursor=pointer]:
+                - /url: /topics
+            - listitem [ref=e256]:
+              - link "Funding Round News" [ref=e257] [cursor=pointer]:
+                - /url: /funding-rounds
+            - listitem [ref=e258]:
+              - link "Authors" [ref=e259] [cursor=pointer]:
+                - /url: /authors
+            - listitem [ref=e260]:
+              - link "Editorial Policy" [ref=e261] [cursor=pointer]:
+                - /url: /editorial-policy
+            - listitem [ref=e262]:
+              - link "Countries" [ref=e263] [cursor=pointer]:
+                - /url: /countries
+            - listitem [ref=e264]:
+              - link "Startups" [ref=e265] [cursor=pointer]:
+                - /url: /startups
+            - listitem [ref=e266]:
+              - link "Jobs" [ref=e267] [cursor=pointer]:
+                - /url: /jobs
+            - listitem [ref=e268]:
+              - link "Salary & Equity" [ref=e269] [cursor=pointer]:
+                - /url: /salary-equity
+            - listitem [ref=e270]:
+              - link "Negotiation Coaching" [ref=e271] [cursor=pointer]:
+                - /url: /negotiation-coaching
+            - listitem [ref=e272]:
+              - link "Fulfillment Policy" [ref=e273] [cursor=pointer]:
+                - /url: /fulfillment-policy
+            - listitem [ref=e274]:
+              - link "Add Startup or Job" [ref=e275] [cursor=pointer]:
+                - /url: /add-startup-or-job
+            - listitem [ref=e276]:
+              - link "Sitemap (HTML)" [ref=e277] [cursor=pointer]:
+                - /url: /sitemap
+            - listitem [ref=e278]:
+              - link "Sitemap (XML)" [ref=e279] [cursor=pointer]:
+                - /url: /sitemap.xml
+        - generic [ref=e280]:
+          - heading "Industry" [level=3] [ref=e281]
+          - list [ref=e282]:
+            - listitem [ref=e283]:
+              - link "AI startups" [ref=e284] [cursor=pointer]:
+                - /url: /startups/ai-startups
+            - listitem [ref=e285]:
+              - link "Biotech startups" [ref=e286] [cursor=pointer]:
+                - /url: /startups/biotech-startups
+            - listitem [ref=e287]:
+              - link "Cybersecurity startups" [ref=e288] [cursor=pointer]:
+                - /url: /startups/cybersecurity-startups
+            - listitem [ref=e289]:
+              - link "E-Commerce startups" [ref=e290] [cursor=pointer]:
+                - /url: /startups/e-commerce-startups
+            - listitem [ref=e291]:
+              - link "EdTech startups" [ref=e292] [cursor=pointer]:
+                - /url: /startups/edtech-startups
+            - listitem [ref=e293]:
+              - link "FinTech startups" [ref=e294] [cursor=pointer]:
+                - /url: /startups/fintech-startups
+            - listitem [ref=e295]:
+              - link "Healthcare startups" [ref=e296] [cursor=pointer]:
+                - /url: /startups/healthcare-startups
+            - listitem [ref=e297]:
+              - link "Marketplace startups" [ref=e298] [cursor=pointer]:
+                - /url: /startups/marketplace-startups
+            - listitem [ref=e299]:
+              - link "SaaS startups" [ref=e300] [cursor=pointer]:
+                - /url: /startups/saas-startups
+            - listitem [ref=e301]:
+              - link "Sustainability startups" [ref=e302] [cursor=pointer]:
+                - /url: /startups/sustainability-startups
+        - generic [ref=e303]:
+          - heading "Stage" [level=3] [ref=e304]
+          - list [ref=e305]:
+            - listitem [ref=e306]:
+              - link "Early-stage startups" [ref=e307] [cursor=pointer]:
+                - /url: /startups/early-stage-startups
+            - listitem [ref=e308]:
+              - link "Growth-stage startups" [ref=e309] [cursor=pointer]:
+                - /url: /startups/growth-stage-startups
+            - listitem [ref=e310]:
+              - link "Mature startups" [ref=e311] [cursor=pointer]:
+                - /url: /startups/mature-startups
+            - listitem [ref=e312]:
+              - link "Under 50 employees" [ref=e313] [cursor=pointer]:
+                - /url: /startups/under-50-employees
+            - listitem [ref=e314]:
+              - link "Under 100 employees" [ref=e315] [cursor=pointer]:
+                - /url: /startups/under-100-employees
+            - listitem [ref=e316]:
+              - link "Under 500 employees" [ref=e317] [cursor=pointer]:
+                - /url: /startups/under-500-employees
+            - listitem [ref=e318]:
+              - link "Founded in 2021" [ref=e319] [cursor=pointer]:
+                - /url: /startups/founded-in-2021
+            - listitem [ref=e320]:
+              - link "Founded in 2020" [ref=e321] [cursor=pointer]:
+                - /url: /startups/founded-in-2020
+        - generic [ref=e322]:
+          - heading "HQ location" [level=3] [ref=e323]
+          - list [ref=e324]:
+            - listitem [ref=e325]:
+              - link "United States Startups" [ref=e326] [cursor=pointer]:
+                - /url: /startups/united-states-startups
+            - listitem [ref=e327]:
+              - link "Remote Startups" [ref=e328] [cursor=pointer]:
+                - /url: /startups/remote-startups
+            - listitem [ref=e329]:
+              - link "Startups in New York" [ref=e330] [cursor=pointer]:
+                - /url: /startups/startups-in-new-york
+            - listitem [ref=e331]:
+              - link "Startups in Chicago" [ref=e332] [cursor=pointer]:
+                - /url: /startups/startups-in-chicago
+            - listitem [ref=e333]:
+              - link "Startups in Boston" [ref=e334] [cursor=pointer]:
+                - /url: /startups/startups-in-boston
+            - listitem [ref=e335]:
+              - link "Startups in San Francisco" [ref=e336] [cursor=pointer]:
+                - /url: /startups/startups-in-san-francisco
+            - listitem [ref=e337]:
+              - link "Startups in Los Angeles" [ref=e338] [cursor=pointer]:
+                - /url: /startups/startups-in-los-angeles
+            - listitem [ref=e339]:
+              - link "Startups in Seattle" [ref=e340] [cursor=pointer]:
+                - /url: /startups/startups-in-seattle
+            - listitem [ref=e341]:
+              - link "Startups in Austin" [ref=e342] [cursor=pointer]:
+                - /url: /startups/startups-in-austin
+            - listitem [ref=e343]:
+              - link "Startups in Miami" [ref=e344] [cursor=pointer]:
+                - /url: /startups/startups-in-miami
+            - listitem [ref=e345]:
+              - link "Startups in Washington DC" [ref=e346] [cursor=pointer]:
+                - /url: /startups/startups-in-washington-dc
+            - listitem [ref=e347]:
+              - link "Startups in Dallas" [ref=e348] [cursor=pointer]:
+                - /url: /startups/startups-in-dallas
+            - listitem [ref=e349]:
+              - link "Startups in Philadelphia" [ref=e350] [cursor=pointer]:
+                - /url: /startups/startups-in-philadelphia
+            - listitem [ref=e351]:
+              - link "Startups in San Diego" [ref=e352] [cursor=pointer]:
+                - /url: /startups/startups-in-san-diego
+            - listitem [ref=e353]:
+              - link "Startups in Houston" [ref=e354] [cursor=pointer]:
+                - /url: /startups/startups-in-houston
+            - listitem [ref=e355]:
+              - link "Startups in Atlanta" [ref=e356] [cursor=pointer]:
+                - /url: /startups/startups-in-atlanta
+            - listitem [ref=e357]:
+              - link "Startups in Denver" [ref=e358] [cursor=pointer]:
+                - /url: /startups/startups-in-denver
+            - listitem [ref=e359]:
+              - link "Startups in India" [ref=e360] [cursor=pointer]:
+                - /url: /startups/startups-in-india
+            - listitem [ref=e361]:
+              - link "Startups in London" [ref=e362] [cursor=pointer]:
+                - /url: /startups/startups-in-london
+            - listitem [ref=e363]:
+              - link "Startups in Canada" [ref=e364] [cursor=pointer]:
+                - /url: /startups/startups-in-canada
+      - generic [ref=e365]: "© 2026 100Xfounder. The #1 Source for Indian & US Startup Intelligence."
+```

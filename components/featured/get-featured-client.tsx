@@ -287,29 +287,29 @@ export function GetFeaturedClient({
         className="grid gap-6 rounded-2xl border border-white/15 bg-white/[0.03] p-5 backdrop-blur-md lg:grid-cols-2"
       >
         <div>
-          <h2 className="text-lg font-semibold text-white">Apply with n8n Form</h2>
+          <h2 className="text-lg font-semibold text-white">Startup Profile Application</h2>
           <p className="mt-2 text-sm text-zinc-400">
-            Use the embedded form for your standard founder intake flow.
+            Submit your founder story and company details for editorial review.
           </p>
 
           {n8nFormUrl ? (
             <iframe
               src={n8nFormUrl}
-              title="Get Featured n8n Form"
+              title="Get Featured Application"
               className="mt-4 h-[560px] w-full rounded-xl border border-white/15 bg-black/40 sm:h-[640px] lg:h-[720px]"
             />
           ) : (
             <div className="mt-4 rounded-xl border border-amber-400/35 bg-amber-500/10 p-4 text-sm text-amber-200">
-              The embedded application form is temporarily unavailable. Please use the fallback
-              form on this page and our team will process your request.
+              The embedded application form is temporarily unavailable. Please use the standard application
+              form on this page and our editorial team will process your request.
             </div>
           )}
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-white">Fallback Application Form</h2>
+          <h2 className="text-lg font-semibold text-white">Application Form</h2>
           <p className="mt-2 text-sm text-zinc-400">
-            This form submits to our secure API and can forward to n8n for operations automation.
+            This secure form submits directly to our editorial team for review and publishing approval.
           </p>
 
           <form onSubmit={onSubmit} className="mt-4 grid gap-3 md:grid-cols-2">

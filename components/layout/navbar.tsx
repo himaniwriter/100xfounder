@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { NavbarAuthActions } from "@/components/layout/navbar-auth-actions";
 import { CommandPaletteTrigger } from "@/components/system/command-palette-trigger";
+import { MobileNavDrawer } from "@/components/layout/mobile-nav-drawer";
 
 const primaryNavLinks = [
   { label: "Home", href: "/" },
@@ -9,23 +11,6 @@ const primaryNavLinks = [
   { label: "Blog", href: "/blog" },
   { label: "Startup", href: "/startups" },
   { label: "Pricing", href: "/pricing" },
-];
-
-const mobileNavLinks = [
-  { label: "Home", href: "/" },
-  { label: "Directory", href: "/founders" },
-  { label: "Countries", href: "/countries" },
-  { label: "Industries", href: "/industries" },
-  { label: "Stages", href: "/stages" },
-  { label: "Startups", href: "/startups" },
-  { label: "Signals", href: "/signals" },
-  { label: "Blog", href: "/blog" },
-  { label: "Topics", href: "/topics" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Search", href: "/search" },
-  { label: "Get Featured", href: "/get-featured" },
-  { label: "Interview Q&A", href: "/interview-questionnaire" },
-  { label: "Guest Posts", href: "/guest-post-marketplace" },
 ];
 
 const megaMenuSections = [
@@ -148,11 +133,6 @@ const megaMenuSections = [
         description: "Recently active profiles with fresh company signals.",
       },
       {
-        label: "Hiring Now",
-        href: "/founders?tab=hiring",
-        description: "Companies actively hiring right now.",
-      },
-      {
         label: "Search",
         href: "/search",
         description: "Query founders, companies, and blog posts.",
@@ -167,16 +147,6 @@ const megaMenuSections = [
         href: "/guest-post-marketplace",
         description: "Sponsored startup story packages and order flow.",
       },
-      {
-        label: "Startup Jobs",
-        href: "/startups/jobs",
-        description: "Browse startup jobs by location, role, and market.",
-      },
-      {
-        label: "Salary & Equity",
-        href: "/startups/salary-equity",
-        description: "Compensation benchmark pages for startup operators.",
-      },
     ],
   },
 ];
@@ -185,57 +155,64 @@ export function Navbar() {
   return (
     <header className="glass-header sticky top-0 z-50">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center">
+        <div className="relative flex h-14 items-center lg:h-16">
+          {/* Logo */}
           <Link
             href="/"
-            className="relative z-20 shrink-0 text-lg font-bold tracking-tighter text-white sm:text-xl"
+            className="relative z-20 shrink-0"
+            aria-label="100Xfounder Home"
           >
-            100Xfounder
+            <Image
+              src="/images/brand/100xfounder-logo.png"
+              alt="100Xfounder"
+              width={2000}
+              height={1000}
+              priority
+              className="h-auto w-[140px] max-h-[350px] object-contain sm:w-[160px] lg:w-[170px]"
+            />
           </Link>
 
-          <nav className="absolute left-1/2 top-0 hidden h-full -translate-x-1/2 items-center gap-7 md:flex">
+          {/* Desktop nav */}
+          <nav className="absolute left-1/2 top-0 hidden h-full -translate-x-1/2 items-center gap-1 md:flex">
             {primaryNavLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className="inline-flex h-full items-center text-sm text-zinc-400 transition-colors hover:text-white"
+                className="inline-flex h-full items-center px-3 text-[14px] font-medium text-zinc-400 transition-colors duration-150 hover:text-white"
               >
                 {link.label}
               </Link>
             ))}
 
+            {/* Explore mega menu */}
             <div className="group relative flex h-full items-center">
               <button
                 type="button"
-                className="inline-flex h-full items-center gap-1.5 text-sm text-zinc-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
+                className="inline-flex h-full items-center gap-1 px-3 text-[14px] font-medium text-zinc-400 transition-colors duration-150 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
                 aria-haspopup="true"
               >
                 Explore
-                <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" />
+                <ChevronDown className="h-3.5 w-3.5 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
               </button>
 
-              <div className="pointer-events-none invisible absolute left-1/2 top-[calc(100%+0.5rem)] z-50 w-[min(860px,calc(100vw-2rem))] max-h-[75vh] -translate-x-1/2 overflow-y-auto rounded-2xl border border-white/15 bg-[#08080f] p-5 pt-4 opacity-0 shadow-[0_28px_72px_rgba(0,0,0,0.62)] transition-all duration-150 before:absolute before:-top-2 before:left-0 before:h-2 before:w-full group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
-                <p className="mb-4 text-xs uppercase tracking-[0.18em] text-zinc-500">
-                  Discovery Menu
-                </p>
-
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <div className="pointer-events-none invisible absolute left-1/2 top-[calc(100%+0.25rem)] z-50 w-[min(1100px,calc(100vw-2rem))] -translate-x-1/2 rounded-[14px] border border-white/8 bg-[#0a0a0f]/95 p-6 opacity-0 shadow-elevated backdrop-blur-xl transition-all duration-200 before:absolute before:-top-2 before:left-0 before:h-2 before:w-full group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
                   {megaMenuSections.map((section) => (
-                    <div key={section.title} className="rounded-xl border border-white/10 bg-[#111424] p-3">
-                      <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-300">
+                    <div key={section.title} className="flex flex-col">
+                      <h3 className="mb-3 text-overline font-semibold uppercase text-zinc-500">
                         {section.title}
                       </h3>
 
-                      <div className="mt-3 space-y-2">
+                      <div className="space-y-1">
                         {section.links.map((link) => (
                           <Link
                             key={link.label}
                             href={link.href}
                             prefetch={false}
-                            className="block rounded-lg border border-transparent p-2 transition-colors hover:border-white/15 hover:bg-white/[0.04]"
+                            className="group/link block rounded-lg p-2.5 transition-colors duration-150 hover:bg-white/[0.03]"
                           >
-                            <p className="text-sm font-medium text-white">{link.label}</p>
-                            <p className="mt-0.5 text-xs leading-relaxed text-zinc-400">{link.description}</p>
+                            <p className="text-sm font-medium text-zinc-200 transition-colors group-hover/link:text-white">{link.label}</p>
+                            <p className="mt-1 text-xs leading-relaxed text-zinc-500 transition-colors group-hover/link:text-zinc-400">{link.description}</p>
                           </Link>
                         ))}
                       </div>
@@ -246,30 +223,19 @@ export function Navbar() {
             </div>
           </nav>
 
+          {/* Right actions */}
           <div className="relative z-20 ml-auto flex items-center gap-1.5 sm:gap-2">
             <Link
               href="/get-featured"
-              className="inline-flex h-9 items-center rounded-md border border-indigo-400/45 bg-indigo-500/15 px-2.5 text-xs text-indigo-200 transition-colors hover:bg-indigo-500/25 sm:px-3 sm:text-sm"
+              className="hidden items-center rounded-button border border-indigo-400/30 bg-indigo-500/10 px-3 py-1.5 text-[13px] font-medium text-indigo-200 transition-all duration-150 hover:border-indigo-400/50 hover:bg-indigo-500/15 sm:inline-flex"
             >
               Get Featured
             </Link>
             <NavbarAuthActions />
             <CommandPaletteTrigger />
+            <MobileNavDrawer />
           </div>
         </div>
-
-        <nav className="no-scrollbar flex gap-2 overflow-x-auto pb-3 md:hidden">
-          {mobileNavLinks.map((link) => (
-            <Link
-              key={`mobile-${link.label}`}
-              href={link.href}
-              prefetch={false}
-              className="shrink-0 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-zinc-300 transition-colors hover:border-white/20 hover:text-white"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
       </div>
     </header>
   );

@@ -17,6 +17,8 @@
     "seo:validate": "node actions/seo-crawl-validate.mjs",
     "seo:audit": "node actions/seo-crawl-audit.mjs",
     "images:mirror:companies": "node actions/mirror-company-images.mjs",
+    "migrate:antigravity:dry": "node actions/migrate-100x-to-antigravity.mjs --dry-run",
+    "migrate:antigravity": "node actions/migrate-100x-to-antigravity.mjs --push",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy"
   },

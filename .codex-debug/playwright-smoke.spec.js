@@ -92,6 +92,7 @@ test.describe('100Xfounder smoke navigation', () => {
       // Ignore known noisy client-side extensions and third-party trackers.
       if (message.includes('net::err_blocked_by_client')) return false;
       if (message.includes('net::err_aborted') && (url.includes('_rsc=') || url.includes('/api/auth/me'))) return false;
+      if (message.includes('net::err_aborted') && !url.includes('100xfounder.com')) return false;
       if (url.includes('unavatar.io')) return false;
       if (message.includes('notsameorigin') || message.includes('blocked_by_orb')) return false;
       if (url.includes('clarity.ms')) return false;

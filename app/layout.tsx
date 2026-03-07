@@ -19,7 +19,7 @@ const GlobalCommandPalette = dynamicImport(
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "optional",
+  display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -58,11 +58,11 @@ export async function generateMetadata(): Promise<Metadata> {
       description: defaultDescription,
       images: ogImageUrl
         ? [
-            {
-              url: ogImageUrl,
-              alt: "100Xfounder",
-            },
-          ]
+          {
+            url: ogImageUrl,
+            alt: "100Xfounder",
+          },
+        ]
         : undefined,
     },
     twitter: {

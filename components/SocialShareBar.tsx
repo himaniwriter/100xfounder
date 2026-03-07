@@ -14,7 +14,6 @@ type ShareButtonConfig = {
   key: "twitter" | "linkedin" | "whatsapp" | "facebook";
   label: string;
   href: string;
-  className: string;
   icon: ReactNode;
 };
 
@@ -79,28 +78,24 @@ export function SocialShareBar({
         key: "twitter",
         label: "Tweet",
         href: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
-        className: "bg-black text-white",
         icon: <XIcon />,
       },
       {
         key: "linkedin",
-        label: "Share",
+        label: "LinkedIn",
         href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
-        className: "bg-[#0077B5] text-white",
         icon: <LinkedInIcon />,
       },
       {
         key: "whatsapp",
-        label: "Share",
+        label: "WhatsApp",
         href: `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`,
-        className: "bg-[#25D366] text-white",
         icon: <WhatsAppIcon />,
       },
       {
         key: "facebook",
-        label: "Share",
+        label: "Facebook",
         href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
-        className: "bg-[#1877F2] text-white",
         icon: <FacebookIcon />,
       },
     ];
@@ -132,18 +127,21 @@ export function SocialShareBar({
     }
   };
 
+  const buttonBaseClass =
+    "inline-flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/[0.04] px-3 text-[13px] text-zinc-300 transition-all duration-200 hover:border-white/20 hover:bg-white/[0.08] hover:text-white";
+
   return (
     <>
-      <div className="my-4 border-y border-white/10 py-4">
+      <div className="my-4 border-y border-white/8 py-4">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="mr-1 text-xs uppercase tracking-[0.16em] text-zinc-400">Share:</span>
+          <span className="mr-1 text-overline uppercase text-zinc-500">Share</span>
           {shareButtons.map((button) => (
             <a
               key={button.key}
               href={button.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex h-9 items-center gap-2 rounded-full px-3 text-[13px] transition-opacity hover:opacity-85 ${button.className}`}
+              className={buttonBaseClass}
               aria-label={`${button.label} on ${button.key}`}
             >
               {button.icon}
@@ -153,11 +151,11 @@ export function SocialShareBar({
           <button
             type="button"
             onClick={handleCopy}
-            className="inline-flex h-9 items-center gap-2 rounded-full border border-white/15 bg-white/[0.05] px-3 text-[13px] text-zinc-200 transition-colors hover:border-white/30 hover:text-white"
+            className={buttonBaseClass}
             aria-live="polite"
           >
             <CopyIcon />
-            <span className="hidden sm:inline">{copied ? "Copied! ✓" : "Copy Link"}</span>
+            <span className="hidden sm:inline">{copied ? "Copied ✓" : "Copy link"}</span>
           </button>
         </div>
       </div>
@@ -165,18 +163,18 @@ export function SocialShareBar({
       {showFloatingMobile ? (
         <div
           className={[
-            "fixed bottom-0 left-0 right-0 z-[65] border-t border-white/10 bg-[#0b0b0f]/95 px-2 py-2 backdrop-blur-md transition-transform duration-200 sm:hidden",
+            "fixed bottom-0 left-0 right-0 z-[65] border-t border-white/8 bg-[#050505]/95 px-3 py-2.5 backdrop-blur-lg transition-transform duration-200 sm:hidden",
             showFloating ? "translate-y-0" : "translate-y-full",
           ].join(" ")}
         >
-          <div className="grid grid-cols-5 gap-1">
+          <div className="grid grid-cols-5 gap-1.5">
             {shareButtons.map((button) => (
               <a
                 key={`mobile-${button.key}`}
                 href={button.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex h-9 items-center justify-center rounded-md ${button.className}`}
+                className="flex h-10 items-center justify-center rounded-lg border border-white/10 bg-white/[0.04] text-zinc-300 transition-colors hover:bg-white/[0.08] hover:text-white"
                 aria-label={`Share on ${button.key}`}
               >
                 {button.icon}
@@ -185,7 +183,7 @@ export function SocialShareBar({
             <button
               type="button"
               onClick={handleCopy}
-              className="flex h-9 items-center justify-center rounded-md border border-white/15 bg-white/[0.05] text-zinc-200"
+              className="flex h-10 items-center justify-center rounded-lg border border-white/10 bg-white/[0.04] text-zinc-300 hover:bg-white/[0.08] hover:text-white"
               aria-label="Copy article link"
             >
               <CopyIcon />

@@ -14,10 +14,10 @@ export default async function AdminLayout({ children }: { children: ReactNode })
         <AdminSidebar />
       </div>
 
-      <div className="pl-[280px]">
+      <div className="pl-[260px] flex flex-col min-h-screen">
         <AdminTopbar email={session.email} role={session.role} />
-        <section className="p-6">
-          <div className="min-h-[calc(100vh-110px)] rounded-2xl border border-white/10 bg-black/40 p-5 backdrop-blur-md">
+        <section className="flex-1 p-8">
+          <div className="mx-auto w-full max-w-[1400px]">
             {children}
           </div>
         </section>
