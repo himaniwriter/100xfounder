@@ -46,6 +46,7 @@ if [[ ! -f "$WP_DIR/wp-config.php" ]]; then
   wp config create --dbname=wp --dbuser=wp --dbpass=wp --skip-check --quiet
   wp config set WP_DEBUG true --raw --quiet
   wp config set WP_DEBUG_DISPLAY false --raw --quiet
+  wp config set WP_ENVIRONMENT_TYPE local --quiet
   wp core install --url="$URL" --title="100xFounder" --admin_user=admin --admin_password=admin \
     --admin_email=admin@example.com --skip-email --quiet
 
