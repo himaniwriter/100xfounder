@@ -76,6 +76,31 @@ function xf_install_schema() {
   KEY status_created (status,created_at)
 ) $charset;");
 
+    dbDelta("CREATE TABLE " . xf_table('subscribers') . " (
+  id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  email varchar(190) NOT NULL,
+  source varchar(50) NOT NULL DEFAULT 'site',
+  status varchar(20) NOT NULL DEFAULT 'active',
+  created_at datetime NOT NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY email (email)
+) $charset;");
+
+    dbDelta("CREATE TABLE " . xf_table('queue') . " (
+  id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  type varchar(30) NOT NULL DEFAULT 'news',
+  title varchar(255) NOT NULL,
+  notes text,
+  source_urls text,
+  status varchar(20) NOT NULL DEFAULT 'queued',
+  priority tinyint(3) unsigned NOT NULL DEFAULT 5,
+  post_id bigint(20) unsigned DEFAULT NULL,
+  created_at datetime NOT NULL,
+  updated_at datetime NOT NULL,
+  PRIMARY KEY  (id),
+  KEY type_status (type,status,priority)
+) $charset;");
+
     update_option('xf_db_version', XF_DB_VERSION);
 }
 

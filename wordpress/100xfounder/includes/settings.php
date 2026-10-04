@@ -33,6 +33,16 @@ function xf_setting_defaults() {
         'adsense_client' => 'ca-pub-4106130565884060',
         'adsense_slot' => '',
         'footer_links' => 1,
+        'event_feeds' => '',
+        'gsc_verification' => '',
+        'bing_verification' => '',
+        'ga4_id' => '',
+        'indexnow_enabled' => 1,
+        'instagram_url' => 'https://www.instagram.com/100x.founder/',
+        'linkedin_url' => '',
+        'x_url' => '',
+        'logo_url' => '',
+        'default_social_image' => '',
     ];
 }
 

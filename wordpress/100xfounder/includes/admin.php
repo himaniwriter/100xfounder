@@ -216,6 +216,20 @@ function xf_settings_fields() {
             'auto_publish' => ['Auto-publish spotlights', 'checkbox', 'Otherwise each submission waits for your review under Founder Spotlights → Pending.'],
             'instagram_handle' => ['Instagram handle', 'text', 'Without the @.'],
         ],
+        'Events' => [
+            'event_feeds' => ['Public event calendars (ICS)', 'textarea', 'One iCal/ICS URL per line, e.g. a Luma calendar or a Meetup group feed. New events are imported daily as Pending for your review.'],
+        ],
+        'Search & social' => [
+            'gsc_verification' => ['Google Search Console code', 'text', 'Only the content="…" value of the verification meta tag.'],
+            'bing_verification' => ['Bing Webmaster code', 'text', ''],
+            'ga4_id' => ['Google Analytics 4 ID', 'text', 'e.g. G-XXXXXXX. Not loaded for logged-in users.'],
+            'indexnow_enabled' => ['Ping IndexNow on publish', 'checkbox', 'Tells Bing and other IndexNow engines about new and updated pages within minutes.'],
+            'instagram_url' => ['Instagram URL', 'text', ''],
+            'linkedin_url' => ['LinkedIn URL', 'text', ''],
+            'x_url' => ['X (Twitter) URL', 'text', ''],
+            'logo_url' => ['Logo image URL (for Google)', 'text', 'Square PNG, at least 112×112.'],
+            'default_social_image' => ['Default share image URL', 'text', 'Used when a page has no image. 1200×630.'],
+        ],
         'Google AdSense' => [
             'adsense_client' => ['Publisher ID', 'text', 'ca-pub-… The AdSense script is added to the head of content pages, and /ads.txt is served automatically.'],
             'adsense_slot' => ['In-content ad slot ID', 'text', 'Optional. Create a Display ad unit in AdSense and paste its slot ID for fixed placements. Without it, Auto ads choose placements.'],
@@ -234,6 +248,8 @@ add_action('admin_post_xf_save_settings', function () {
             $raw = isset($_POST[$key]) ? wp_unslash($_POST[$key]) : '';
             if ($type === 'checkbox') {
                 $values[$key] = $raw ? 1 : 0;
+            } elseif ($type === 'textarea') {
+                $values[$key] = sanitize_textarea_field($raw);
             } elseif ($type === 'number') {
                 $values[$key] = absint($raw);
             } elseif ($type === 'secret') {
@@ -269,6 +285,8 @@ function xf_admin_settings() {
                             <td>
                                 <?php if ($type === 'checkbox') : ?>
                                     <input type="checkbox" id="xf_<?php echo esc_attr($key); ?>" name="<?php echo esc_attr($key); ?>" value="1" <?php checked(!empty($s[$key])); ?>>
+                                <?php elseif ($type === 'textarea') : ?>
+                                    <textarea class="large-text" rows="4" id="xf_<?php echo esc_attr($key); ?>" name="<?php echo esc_attr($key); ?>"><?php echo esc_textarea($s[$key]); ?></textarea>
                                 <?php elseif ($type === 'secret') : ?>
                                     <input type="password" class="regular-text" id="xf_<?php echo esc_attr($key); ?>" name="<?php echo esc_attr($key); ?>" value="" autocomplete="new-password" placeholder="<?php echo $s[$key] ? '•••••••• (saved)' : ''; ?>">
                                 <?php else : ?>

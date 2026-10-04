@@ -11,6 +11,7 @@ function xf_pipeline_stages() {
         'replies' => 'xf_check_replies',
         'send' => 'xf_send_due_outreach',
         'digest' => function () { return xf_queue_daily_digest(1) ?: ['queued' => null]; },
+        'events' => 'xf_import_events',
     ];
 }
 

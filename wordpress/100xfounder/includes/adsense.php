@@ -133,6 +133,27 @@ HTML
 <!-- wp:paragraph --><p>Questions about these terms: <a href="mailto:{$email}">{$email}</a>.</p><!-- /wp:paragraph -->
 HTML
         ],
+        'editorial' => ['Editorial Policy', 'editorial-policy', <<<HTML
+<!-- wp:paragraph --><p>{$site} covers startups, funding, launches, jobs and AI with one rule: <strong>every fact has a source</strong>. Each article lists its sources at the end, with the publisher, date and the claim each one supports.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">How we report</h2><!-- /wp:heading -->
+<!-- wp:list --><ul><li>We prefer primary sources: company announcements, regulatory filings, official data and on-the-record interviews.</li><li>We write in our own words and link to original reporting when we build on it.</li><li>Figures about people, such as net worth or compensation, are published only when a reliable source reports them, with the date.</li><li>Software may help us find and organise stories, and every article is reviewed and edited by a person before it is published.</li></ul><!-- /wp:list -->
+<!-- wp:heading --><h2 class="wp-block-heading">Founder verification</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>When we publish about a founder or company we invite them to check the facts and sources. Pages they confirm show a "Verified" mark; corrections they send are reviewed and applied openly.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">Independence</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Sponsored content is always labelled "Sponsored" and its links are marked as such. Advertisers and sponsors never decide what we cover or what we say.</p><!-- /wp:paragraph -->
+HTML
+        ],
+        'corrections' => ['Corrections Policy', 'corrections-policy', <<<HTML
+<!-- wp:paragraph --><p>We correct errors quickly and openly. If something we published is wrong, email <a href="mailto:{$email}">{$email}</a> with the page link, what is wrong, and a source for the correct information.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Corrected articles carry an "Updated" note describing the change and the date. Minor fixes such as typos are corrected without a note.</p><!-- /wp:paragraph -->
+HTML
+        ],
+        'advertise' => ['Advertise', 'advertise', <<<HTML
+<!-- wp:paragraph --><p>Reach founders, operators, investors and job seekers across India and the US.</p><!-- /wp:paragraph -->
+<!-- wp:list --><ul><li><strong>Fast-track or featured startup listing:</strong> priority review and placement in the directory and on the homepage.</li><li><strong>Sponsored article:</strong> your story, reviewed by our editors and clearly labelled "Sponsored".</li><li><strong>Featured job:</strong> pin a role at the top of the jobs board.</li></ul><!-- /wp:list -->
+<!-- wp:paragraph --><p>Tell us what you'd like to promote on the <a href="/contact/">contact page</a> and we'll send prices and an invoice.</p><!-- /wp:paragraph -->
+HTML
+        ],
         'disclaimer' => ['Disclaimer', 'disclaimer', <<<HTML
 <!-- wp:paragraph --><p>Information on {$site} is for general information only and is not investment, legal or financial advice. Listings and spotlights are not endorsements. We are not affiliated with Product Hunt. This website displays advertising, and we may earn money from ads shown on our pages; advertising never influences which products we list.</p><!-- /wp:paragraph -->
 HTML
@@ -167,7 +188,7 @@ function xf_create_legal_pages() {
 
 /** Footer links to the trust pages, for themes without a configured footer menu. */
 add_action('wp_footer', function () {
-    if (!xf_get_setting('footer_links')) {
+    if (!apply_filters('xf_show_footer_links', (bool) xf_get_setting('footer_links'))) {
         return;
     }
     $links = [

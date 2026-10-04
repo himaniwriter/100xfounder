@@ -6,19 +6,37 @@ if (!defined('ABSPATH')) {
 /** Blog categories in homepage section order (slug => name). */
 function xf_news_categories() {
     return [
-        'funding' => 'Funding',
-        'startup-news' => 'Startup News',
-        'founder-stories' => 'Founder Stories',
+        // Sector bar, in the design's order.
         'ai-deeptech' => 'AI & Deeptech',
         'fintech' => 'Fintech',
-        'saas' => 'SaaS',
         'ecommerce' => 'eCommerce',
+        'consumer-d2c' => 'Consumer & D2C',
         'ev-mobility' => 'EV & Mobility',
-        'web3' => 'Web3 & Blockchain',
+        'saas' => 'SaaS',
+        'healthtech' => 'Healthtech',
+        'web3' => 'Web3',
+        'spacetech' => 'SpaceTech',
+        'gaming' => 'Gaming',
+        'press-releases' => 'Press releases',
+        'reports' => 'Reports',
+        // Story types.
+        'funding' => 'Funding',
+        'startup-news' => 'Startup News',
+        'ai-news' => 'AI News',
+        'founder-stories' => 'Founder Stories',
         'in-depth' => 'In Depth',
         'next-wave' => 'Next Wave',
-        'reports' => 'Reports',
     ];
+}
+
+/** Categories shown in the header sector bar. */
+function xf_sector_categories() {
+    return array_slice(xf_news_categories(), 0, 12, true);
+}
+
+/** Long-read categories that make up the Blog. */
+function xf_blog_categories() {
+    return ['in-depth', 'founder-stories', 'reports', 'next-wave'];
 }
 
 function xf_create_news_categories() {

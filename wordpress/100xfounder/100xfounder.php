@@ -15,12 +15,13 @@ if (!defined('ABSPATH')) {
 }
 
 define('XF_VERSION', '1.0.0');
-define('XF_DB_VERSION', '1');
+define('XF_DB_VERSION', '2');
 define('XF_FILE', __FILE__);
 define('XF_DIR', plugin_dir_path(__FILE__));
 define('XF_URL', plugin_dir_url(__FILE__));
 
 require_once XF_DIR . 'includes/settings.php';
+require_once XF_DIR . 'includes/fields.php';
 require_once XF_DIR . 'includes/schema.php';
 require_once XF_DIR . 'includes/post-types.php';
 require_once XF_DIR . 'includes/producthunt.php';
@@ -34,6 +35,13 @@ require_once XF_DIR . 'includes/adsense.php';
 require_once XF_DIR . 'includes/news.php';
 require_once XF_DIR . 'includes/redirects.php';
 require_once XF_DIR . 'includes/importer.php';
+require_once XF_DIR . 'includes/events.php';
+require_once XF_DIR . 'includes/rounds.php';
+require_once XF_DIR . 'includes/engagement.php';
+require_once XF_DIR . 'includes/submissions.php';
+require_once XF_DIR . 'includes/sources.php';
+require_once XF_DIR . 'includes/seo.php';
+require_once XF_DIR . 'includes/queue.php';
 
 if (is_admin()) {
     require_once XF_DIR . 'includes/admin.php';
@@ -67,6 +75,13 @@ function xf_deactivate() {
 add_action('plugins_loaded', function () {
     if (get_option('xf_db_version') !== XF_DB_VERSION) {
         xf_install_schema();
+        // New pages and categories added in later versions.
+        add_action('init', function () {
+            xf_create_pages();
+            xf_create_legal_pages();
+            xf_create_news_categories();
+            flush_rewrite_rules();
+        }, 99);
     }
 });
 
@@ -79,6 +94,10 @@ function xf_page_definitions() {
         'launches' => ['title' => 'Daily Launches', 'slug' => 'launches', 'content' => '[xf_launches]'],
         'spotlights' => ['title' => 'Founder Spotlights', 'slug' => 'spotlights', 'content' => '[xf_spotlights]'],
         'feature' => ['title' => 'Your Founder Spotlight', 'slug' => 'feature', 'content' => '[xf_feature_form]'],
+        'submit' => ['title' => 'Send us your story', 'slug' => 'submit', 'content' => '[xf_submit_form]'],
+        'events' => ['title' => 'Startup events', 'slug' => 'events', 'content' => '[xf_events]'],
+        'funding' => ['title' => 'Funding tracker', 'slug' => 'funding-tracker', 'content' => '[xf_funding_tracker]'],
+        'blog' => ['title' => 'Blog', 'slug' => 'blog', 'content' => ''],
         'unsubscribe' => ['title' => 'Unsubscribe', 'slug' => 'unsubscribe', 'content' => '[xf_unsubscribe]'],
     ];
 }

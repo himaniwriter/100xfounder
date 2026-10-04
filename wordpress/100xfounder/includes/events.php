@@ -1,0 +1,181 @@
+<?php
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+/* -------------------------------------------------------------------------
+ * Events: our own entries plus events imported from public iCal (ICS) feeds
+ * such as Luma calendars or Meetup groups. Imported events wait as pending
+ * for review and always link back to the organiser's page.
+ * ---------------------------------------------------------------------- */
+
+add_action('init', function () {
+    register_post_type('xf_event', [
+        'labels' => ['name' => 'Events', 'singular_name' => 'Event', 'add_new_item' => 'Add event', 'edit_item' => 'Edit event'],
+        'public' => true,
+        'has_archive' => false,
+        'rewrite' => ['slug' => 'event', 'with_front' => false],
+        'menu_icon' => 'dashicons-calendar-alt',
+        'supports' => ['title', 'editor', 'excerpt', 'thumbnail'],
+        'show_in_rest' => true,
+    ]);
+});
+
+xf_register_fields('xf_event', 'Event details', [
+    'start' => ['Starts', 'datetime', null, 'Local time of the event.'],
+    'end' => ['Ends', 'datetime'],
+    'city' => ['City', 'text', null, 'e.g. Bengaluru, Delhi NCR, Online'],
+    'venue' => ['Venue', 'text'],
+    'url' => ['Registration / official page', 'url'],
+    'organizer' => ['Organiser', 'text'],
+    'kind' => ['Our coverage', 'select', ['', 'Live coverage', 'Recap', 'Delegation', 'Meetup', 'Conference', 'Hackathon', 'Demo day']],
+]);
+
+/** Upcoming published events, soonest first. */
+function xf_upcoming_events($limit = 4) {
+    return get_posts([
+        'post_type' => 'xf_event',
+        'post_status' => 'publish',
+        'posts_per_page' => $limit,
+        'meta_key' => '_xf_start',
+        'orderby' => 'meta_value',
+        'order' => 'ASC',
+        'meta_query' => [['key' => '_xf_start', 'value' => current_time('mysql', true), 'compare' => '>=', 'type' => 'DATETIME']],
+    ]);
+}
+
+/* ---- ICS import ---- */
+
+/** Unfolds and parses VEVENTs from an ICS document into arrays. */
+function xf_parse_ics($ics) {
+    $ics = preg_replace("/\r\n[ \t]|\n[ \t]/", '', str_replace("\r\n", "\n", (string) $ics));
+    $events = [];
+    if (!preg_match_all('/BEGIN:VEVENT(.*?)END:VEVENT/s', $ics, $blocks)) {
+        return $events;
+    }
+    foreach ($blocks[1] as $block) {
+        $event = [];
+        foreach (explode("\n", trim($block)) as $line) {
+            if (!preg_match('/^([A-Z-]+)((?:;[^:]*)?):(.*)$/', $line, $m)) {
+                continue;
+            }
+            $name = $m[1];
+            $params = $m[2];
+            $value = str_replace(['\\n', '\\N', '\\,', '\\;', '\\\\'], ["\n", "\n", ',', ';', '\\'], $m[3]);
+            if (in_array($name, ['DTSTART', 'DTEND'], true)) {
+                $tz = preg_match('/TZID=([^;:]+)/', $params, $t) ? $t[1] : null;
+                $event[$name] = xf_ics_time($value, $tz);
+            } elseif ($name === 'ORGANIZER') {
+                // Prefer the display name (CN=…) over the mailto: address.
+                $event['ORGANIZER'] = preg_match('/CN="?([^";:]+)"?/', $params, $cn) ? trim($cn[1]) : preg_replace('/^mailto:.*$/i', '', trim($value));
+            } elseif (in_array($name, ['UID', 'SUMMARY', 'LOCATION', 'URL', 'DESCRIPTION', 'STATUS'], true)) {
+                $event[$name] = trim($value);
+            }
+        }
+        if (!empty($event['UID']) && !empty($event['SUMMARY']) && !empty($event['DTSTART'])) {
+            $events[] = $event;
+        }
+    }
+    return $events;
+}
+
+/** Converts an ICS date/time to a UTC "Y-m-d H:i:s" string. */
+function xf_ics_time($value, $tz = null) {
+    try {
+        if (preg_match('/^\d{8}$/', $value)) {
+            return (new DateTime($value . ' 00:00:00', new DateTimeZone($tz ?: 'UTC')))->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d H:i:s');
+        }
+        if (substr($value, -1) === 'Z') {
+            return (new DateTime($value, new DateTimeZone('UTC')))->format('Y-m-d H:i:s');
+        }
+        return (new DateTime($value, new DateTimeZone($tz ?: wp_timezone_string())))->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d H:i:s');
+    } catch (Exception $e) {
+        return '';
+    }
+}
+
+function xf_event_feeds() {
+    $raw = (string) xf_get_setting('event_feeds');
+    return array_values(array_filter(array_map('trim', preg_split('/\R/', $raw)), function ($url) {
+        return (bool) wp_http_validate_url($url);
+    }));
+}
+
+/** Imports upcoming events from every configured ICS feed as pending posts. */
+function xf_import_events() {
+    $created = 0;
+    $feeds = xf_event_feeds();
+    $horizon = time() + 120 * DAY_IN_SECONDS;
+    foreach ($feeds as $feed) {
+        $response = wp_remote_get($feed, ['timeout' => 15, 'limit_response_size' => 2000000]);
+        if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
+            continue;
+        }
+        foreach (xf_parse_ics(wp_remote_retrieve_body($response)) as $e) {
+            $start = strtotime($e['DTSTART'] . ' UTC');
+            if (!$start || $start < time() || $start > $horizon || (isset($e['STATUS']) && strtoupper($e['STATUS']) === 'CANCELLED')) {
+                continue;
+            }
+            $uid = 'ics:' . md5($e['UID']);
+            $exists = get_posts(['post_type' => 'xf_event', 'post_status' => 'any', 'posts_per_page' => 1, 'fields' => 'ids', 'meta_key' => '_xf_uid', 'meta_value' => $uid]);
+            if ($exists) {
+                continue;
+            }
+            $location = $e['LOCATION'] ?? '';
+            $url = $e['URL'] ?? '';
+            if (!$url && preg_match('#https?://\S+#', $e['DESCRIPTION'] ?? '', $m)) {
+                $url = $m[0];
+            }
+            wp_insert_post([
+                'post_type' => 'xf_event',
+                'post_status' => 'pending',
+                'post_title' => wp_strip_all_tags($e['SUMMARY']),
+                'post_excerpt' => wp_trim_words(wp_strip_all_tags($e['DESCRIPTION'] ?? ''), 40),
+                'post_content' => wpautop(esc_html(wp_trim_words(wp_strip_all_tags($e['DESCRIPTION'] ?? ''), 160))),
+                'meta_input' => [
+                    '_xf_uid' => $uid,
+                    '_xf_start' => $e['DTSTART'],
+                    '_xf_end' => $e['DTEND'] ?? '',
+                    '_xf_venue' => mb_substr($location, 0, 200),
+                    '_xf_city' => xf_guess_city($location),
+                    '_xf_url' => esc_url_raw($url),
+                    '_xf_organizer' => sanitize_text_field($e['ORGANIZER'] ?? ''),
+                    '_xf_source_feed' => esc_url_raw($feed),
+                ],
+            ]);
+            $created++;
+        }
+    }
+    return ['feeds' => count($feeds), 'imported_for_review' => $created];
+}
+
+function xf_guess_city($location) {
+    $cities = ['Bengaluru', 'Bangalore', 'Mumbai', 'Delhi', 'Gurugram', 'Gurgaon', 'Noida', 'Hyderabad', 'Chennai', 'Pune', 'Kolkata', 'Ahmedabad', 'Jaipur', 'Kochi', 'Dubai', 'Singapore', 'San Francisco', 'New York', 'London'];
+    foreach ($cities as $city) {
+        if (stripos($location, $city) !== false) {
+            return $city === 'Bangalore' ? 'Bengaluru' : ($city === 'Gurgaon' ? 'Gurugram' : $city);
+        }
+    }
+    if (preg_match('/zoom|google meet|online|virtual/i', $location)) {
+        return 'Online';
+    }
+    return '';
+}
+
+/** Event pages: date, place, organiser and a clear link to register at the source. */
+add_filter('the_content', function ($content) {
+    $post = get_post();
+    if (!$post || $post->post_type !== 'xf_event' || !is_singular('xf_event') || $post->ID !== get_queried_object_id()) {
+        return $content;
+    }
+    $start = get_post_meta($post->ID, '_xf_start', true);
+    $url = get_post_meta($post->ID, '_xf_url', true);
+    $facts = array_filter([
+        $start ? get_date_from_gmt($start, 'l, j F Y · g:i a') : '',
+        get_post_meta($post->ID, '_xf_venue', true) ?: get_post_meta($post->ID, '_xf_city', true),
+        ($org = get_post_meta($post->ID, '_xf_organizer', true)) ? 'Organised by ' . $org : '',
+    ]);
+    $head = '<div class="xf xf-event-facts">' . implode('', array_map(function ($f) { return '<p>' . esc_html($f) . '</p>'; }, $facts)) . '</div>';
+    $cta = $url ? '<p class="xf-actions"><a class="xf-button" href="' . esc_url($url) . '" target="_blank" rel="noopener">Register on the organiser\'s page</a></p>' : '';
+    return $head . $content . $cta;
+});

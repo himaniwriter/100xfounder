@@ -182,3 +182,34 @@ add_shortcode('xf_spotlights', function () {
     }
     return $out . '</div></div>';
 });
+
+/* Plain fallbacks; the 100xFounder theme renders these pages with the full design. */
+
+add_shortcode('xf_events', function () {
+    $events = xf_upcoming_events(30);
+    if (!$events) {
+        return '<p class="xf-muted">No upcoming events yet.</p>';
+    }
+    $out = '<ul class="xf xf-plain-list">';
+    foreach ($events as $e) {
+        $start = get_post_meta($e->ID, '_xf_start', true);
+        $out .= '<li><a href="' . esc_url(get_permalink($e)) . '">' . esc_html(get_the_title($e)) . '</a> <span class="xf-muted">' . esc_html(get_date_from_gmt($start, 'j M Y') . ' · ' . get_post_meta($e->ID, '_xf_city', true)) . '</span></li>';
+    }
+    return $out . '</ul>';
+});
+
+add_shortcode('xf_funding_tracker', function () {
+    $rounds = xf_recent_rounds(50);
+    if (!$rounds) {
+        return '<p class="xf-muted">Funding rounds will appear here as we track them.</p>';
+    }
+    $out = '<table class="xf xf-table"><thead><tr><th>Company</th><th>Round</th><th>Lead investor</th><th>Amount</th></tr></thead><tbody>';
+    foreach ($rounds as $r) {
+        $out .= '<tr><td><a href="' . esc_url(get_permalink($r)) . '">' . esc_html(get_post_meta($r->ID, '_xf_company', true) ?: get_the_title($r)) . '</a></td><td>' . esc_html(get_post_meta($r->ID, '_xf_round', true)) . '</td><td>' . esc_html(get_post_meta($r->ID, '_xf_lead_investor', true)) . '</td><td>' . esc_html(get_post_meta($r->ID, '_xf_amount_display', true) ?: 'Undisclosed') . '</td></tr>';
+    }
+    return $out . '</tbody></table>';
+});
+
+add_shortcode('xf_submit_form', function () {
+    return '<p><a href="' . esc_url(home_url('/submit/')) . '">Send us your story</a></p>';
+});
