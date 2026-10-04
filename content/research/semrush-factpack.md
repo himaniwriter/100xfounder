@@ -339,3 +339,56 @@ Basic $39/mo ($29 annual) · Pro + AI **$59 first month then $119** ($89 annual)
 10. **Do not publish a Semrush support phone number** — two conflicting versions circulate on third-party pages and neither is on kb/252.
 
 11. ⚠️ Still unverified: G2 and TrustRadius figures (403-blocked); whether the legacy ladder is still purchasable; the date the ladder changed; the India/GST angle (**nothing found anywhere** — treat section 10 as unverified and either omit it or state plainly that Semrush publishes no India-specific billing terms we could confirm).
+
+---
+
+## 14. FINAL PASS — deepest verification. Overrides sections 2, 10 and 13 where they conflict.
+Source: content/research/semrush-facts.md (1,136 lines, 138 source URLs, all checked 4 Oct 2026). Limits were extracted from the pricing page's **own JS bundle**, so they are primary.
+
+### 14.1 Semrush is no longer a public company — the strongest freshness signal we have
+- Adobe's acquisition completed **28 April 2026** at $12.00/share (~$1.9bn equity value).
+- **Delisted from the NYSE that day. SEC registration terminated 8 May 2026** (Form 15 shows "One (1)" holder of record). `investors.semrush.com` now redirects to semrush.com.
+- **FY2025 is the last financial report that will ever exist.**
+- **Every competing review still writing "NYSE: SEMR" is now factually wrong.** Say this plainly and date it.
+
+### 14.2 Currency — this resolves the India section
+- Official FAQ: **"All prices are in US dollars."** No INR anywhere in the page HTML or JS; server props returned `currency: usd, rate: 1`.
+- A currency-toggle component does exist in the code, so India-routed INR is **unconfirmed, not ruled out**.
+- **India: 18% GST is added on top**; GSTIN is 15 digits.
+- Write the India section as: billed in USD, 18% GST on top, FX and bank charges borne by the customer (the refund policy confirms this). **Drop every unverified ₹ figure.**
+
+### 14.3 Rows per report — contradiction RESOLVED, use these
+Section 13 said rows-per-report wasn't published for the new tiers. That was wrong: the figures sit in the pricing page's own JS bundle. **Results per report: 10,000 / 10,000 / 30,000 / 50,000** across SEO / Starter / Pro+ / Advanced. The 10,000-row ceiling on both the $139 and $199 plans is real — attribute it to Semrush's pricing page.
+
+Also recovered from the bundle: pages crawled 100k/100k/300k/1M · reports per day 3,000/3,000/5,000/10,000 · keyword metric updates **per month** 250/250/1,000/5,000 · SEO Ideas/month 500/800/2,000 (KB only).
+
+### 14.4 Seats — now primary, no longer secondary
+**$45 / $80 / $100 per month by SEO tier.** $20 flat with no SEO plan. Traffic & Market seats $289–$309. Users are charged **per toolkit**, and **AI Visibility must be bought separately for each user**.
+
+### 14.5 The annual discount does NOT apply to add-ons — lead with this
+The 17% annual saving applies **only to the core plans**. Every specialist toolkit carries **identical monthly and annual-per-month prices** (confirmed from source constants). So a buyer on annual billing still pays full freight on AI Visibility $99/domain, Local $30–60/location, Content $60, Social $20–250, Advertising $99/$220, AI PR $149–499, Lead Gen $90, reports $10/$20. **Nobody else publishes this.**
+
+### 14.6 The old→new price rise, quotable
+Semrush publishes **no official crosswalk** (kb/1624 redirects to the pricing page). Inferred from matching limit values, and labelled as our inference: **Guru → Pro+ and Business → Advanced each rose +$49.05/mo for identical documented limits.**
+
+### 14.7 Trial — more detail now primary
+7-day trial on all plans; **card required with a $1 authorisation (not a charge)**; one trial per toolkit per account; **exports disabled during the trial**; auto-converts unless cancelled; and **trial-to-paid conversions are excluded from the refund guarantee**.
+
+### 14.8 Semrush contradicts itself — use this honestly rather than picking a figure
+Its own properties publish keyword counts as **28.8B / 28B / 27.3B / 26B / "500 million"**; users as **10M vs 28M**; AI prompts as **261M / 289M / 317M**; the trial as **7-day vs 14-day**; traffic history from **2012 vs 2017**. Quote the range and say which page each came from.
+
+Verified data-scale claims [homepage markup + kb/997]: 28B keywords · 43T backlinks · 808M domain profiles · **142 geo databases** · 317M+ LLM prompts · crawler ~10bn pages/day · 500TB raw traffic data · 200M-user clickstream panel.
+
+**Genuine buyer point no rival makes: 142 keyword geo-databases, but AI-visibility prompt coverage in only 32 countries.**
+
+### 14.9 The pricing page runs live A/B experiments
+It carries experiment flags (`expSimplePricing: 2`), so a reader may genuinely see different plan names or layout from ours. Make "verified 4 October 2026 — confirm on the pricing page, which Semrush is actively testing" **prominent**, not a footnote.
+
+### 14.10 Affiliate programme — what is public
+Commissions, a **120-day last-click cookie**, payout timing and the prohibition clauses are public. **Not public:** coupon/discount-code rules for approved affiliates, and any rules about stating prices. Full T&Cs are login-gated behind Impact.com.
+
+### 14.11 Do NOT publish — no source exists
+"Agency Growth Kit" (no such product; closest are Lead Generation $90 and Pro Report $20) · API unit **prices** (packages confirmed, no dollar price published) · AI Visibility per-user surcharge · Log File Analyzer limits (the "10 GB/day" figure in circulation belongs to Semrush Enterprise, a different product) · Link Building Tool limits · Backlink Audit per-tier mapping · SEO Writing Assistant / Topic Research limits · "ContentShake AI" (no page under that name) · any fixed advance-notice period for annual non-renewal · whether the free plan's "10 reports/day" is one shared pool or per tool (the KB and blog contradict each other — say so).
+
+### 14.12 Video references — verified
+Main @semrush channel walkthrough: **"Semrush Overview: The All-in-One SEO Toolkit for Marketing Pros"** (`epX_KJ83I0E`). A keyword-research tutorial exists on **Semrush Academy**, a separate Semrush-owned channel — state the distinction. **Publish dates and durations could not be confirmed; do not state them.** 17 third-party look-alikes were checked and rejected.

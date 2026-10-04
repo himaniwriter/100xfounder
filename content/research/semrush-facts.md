@@ -632,30 +632,45 @@ Documented toolkit limits: Ads Launch Assistant **100 AI-generated Google ad cop
 | Guru ($249.95) | **Pro+** ($299) | identical limits: 15 / 1,500 / 300k / 30,000 / 1,000 — confirmed by kb/64's "Guru… or Semrush One Pro+" |
 | Business ($499.95) | **Advanced** ($549) | identical limits: 40 / 5,000 / 1M / 50,000 / 5,000; both gate API access and Share of Voice |
 
-**This is an inference from matching limit values, clearly labelled as such.** Prices moved too: Guru $249.95 → Pro+ $299 (+$49.05/mo) and Business $499.95 → Advanced $549 (+$49.05/mo), while Pro → SEO held at $139.95. **That is a real, quotable price rise at the two upper tiers**, and the honest way to put it is: same documented limits, higher price, plus bundled AI-visibility features at Starter and above.
+**This is an inference from matching limit values, clearly labelled as such. Semrush publishes no crosswalk:** `https://www.semrush.com/kb/1624-semrush-one-vs-seo-toolkit` has a crosswalk-sounding title but **redirects to the generic pricing page** (byte-identical response to /prices/) — the comparison table its title promises is not retrievable. Verified 4 Oct 2026. Do not cite it as a source for the mapping.
 
-### 6.10 Tools in the brief that could NOT be verified — do not write limits for these
+Prices moved too: Guru $249.95 → Pro+ $299 (+$49.05/mo) and Business $499.95 → Advanced $549 (+$49.05/mo), while Pro → SEO held at $139.95. **That is a real, quotable price rise at the two upper tiers**, and the honest way to put it is: same documented limits, higher price, plus bundled AI-visibility features at Starter and above.
 
-Primary-source descriptions, limits and tier requirements were **not** obtained for the following. Absence here does **not** mean "no limit exists."
+### 6.10 Three more SEO tools, now verified
 
-| Tool | Status on 4 Oct 2026 |
-|---|---|
-| **Log File Analyzer** | **Not found** as a named tool in the SEO Toolkit KB sidebar, on the pricing comparison table, or on any current pricing page. Do not state a limit or plan requirement without re-verifying. |
-| **Backlink Audit** | Listed in the SEO Toolkit KB sidebar, but no description, toxicity-score mechanics, row/domain limits or tier confirmed. |
-| **Link Building Tool** | Not located in the SEO Toolkit KB sidebar; no limits confirmed. |
-| **Domain Overview** | Listed in the KB sidebar; no verbatim description or limits captured. |
-| **SEO Writing Assistant** | Only confirmed fact: listed as a **Guru**-tier inclusion on kb/1547. No per-month usage limit confirmed. |
-| **Topic Research** | Only confirmed fact: listed as a **Guru**-tier inclusion on kb/1547. No limits confirmed. |
-| **ContentShake AI** | No page under that name. Only confirmed: Content Toolkit has a **Base plan only**, $60/mo, "10,000 articles/mo", "5 SEO content boosts/mo". |
-| **AI Brand Sentiment** | Only confirmed: "weekly data on brand sentiment" (kb/997) and that it appears as a plan feature on the pricing page. |
-| **Prompt Research** | Listed as a feature in site navigation and on /features/; no limits doc retrieved. |
-| **Semrush MCP** | "MCP Access: Yes" on all four paid tiers; Advanced gets "higher usage limits and deeper data endpoints". **No numeric MCP limits published.** |
-| **AI Visibility Index** | Linked from the homepage and the Resources nav; not located as a documented product with limits. |
-| **Agency Growth Kit** | **No page, price or KB article under this name.** See §3.4. |
-| **API unit prices** | Not published. See §2.8. |
-| **AI Visibility per-user surcharge** | Referenced by tooltip only; no price constant found. See §2.5. |
+**Backlink Audit.** Lets you "audit your domain's backlink profile to help you take a deeper look at which links may positively or negatively affect your rankings" — toxicity scoring, disavow file, outreach for link removal, Lost & Found report; integrates Google Search Console, Google Analytics and Majestic.
+**Limits:** up to **500 links per referring domain** from the Semrush database, **10 per referring domain** via Majestic; file uploads **50 MB**; outreach max **500 emails/day**; Toxicity Score **0–100**; initial link set gathered "going back **3 months** from the start of your campaign". "**Without an SEO Toolkit subscription, you can manually re-run a campaign once per week**" — paid gets unlimited re-runs; export and automated crawls are subscriber-only.
+**Plan tier:** the page distinguishes only "included in the SEO Toolkit" vs "without an SEO Toolkit subscription". **No Pro/Guru/Business or Starter/Pro+/Advanced breakdown exists — do not invent one.**
+[https://www.semrush.com/kb/295-backlink-audit-tool , 4 Oct 2026]
 
-### 6.9 Enterprise
+**Domain Overview.** "a tool that shows a website's organic traffic, paid traffic, backlinks, and comprehensive AI visibility in a single report" — also tracks "AI Visibility Score, total mentions, and cited pages and sources in AI-generated answers", at domain, subdomain, subfolder or URL level.
+**Limits:** requests/day 10 (no toolkit) / 3,000 (Pro) / 5,000 (Guru) / 10,000 (Business). "Historical data in Domain Overview is available **only on Guru and Business** subscriptions." "The **Growth and Compare by Countries** reports require a Guru or Business subscription." No row cap or update frequency stated.
+[https://www.semrush.com/kb/semrush-reports-tools/domain-analytics/domain-overview/ , 4 Oct 2026]
+
+**Keyword Gap (fuller detail).** "offers a side-by-side comparison between keyword profiles of **up to five competitors**," showing "all of the top opportunities for each site, total keyword overlap, common keywords shared by all sites, and more."
+**Limits:** up to **5 domains** at once. Results per report 10,000 / 30,000 / 50,000 (Pro / Guru / Business). Export tiers: "the first 100, 500, 1,000, 3,000, 10,000, 30,000, or 50,000". Keyword types: organic (Google top 100), paid (Google Ads top 8), PLA. **Historical data and URL/subdomain/subfolder comparison require Guru or Business.**
+[https://www.semrush.com/kb/28-keyword-gap , 4 Oct 2026]
+
+### 6.11 Tools with partial or no documentation — handle with care
+
+Absence of a limit here does **not** mean "no limit exists" — it means Semrush does not publish one that could be found.
+
+| Tool | What IS verified | What is NOT |
+|---|---|---|
+| **Log File Analyzer** | Exists as a product page: analyze access logs to "take a look at your site from the perspective of a Googlebot" and "identify bugs, crawling issues, and other technical SEO problems". Shows Googlebot activity over a **30-day** window, HTTP status codes, file types crawled, a "Hits by Pages" report, desktop-vs-mobile bot filtering. Supported formats: **Combined Log Format, W3C Extended, Amazon Classic Load Balancer, Kinsta**; files must be **unarchived**. The 2018 launch page still labels it "**open beta**". [https://www.semrush.com/features/log-file-analyzer/ , https://www.semrush.com/news/272325-log-file-analyzer-open-beta/ , 4 Oct 2026] | **No file-size limit, line count, upload count or plan tier is documented anywhere.** Its KB URL `/kb/semrush-reports-tools/projects/log-file-analyzer/` returns a hard **404**; repeated domain-restricted searches surfaced **no KB article**; the linked manual PDF did not serve. ⚠ **A "10 GB/day, 3-month retention" figure circulating for this tool actually belongs to Semrush Enterprise log analysis, a different product — do not attribute it here.** |
+| **Link Building Tool** | "allows you to find prospects based on your target keywords and competitors, start outreach directly from the platform, and keep track of your campaigns." Four tabs: Overview, Prospects, In Progress, Monitor. Prospects come from entered keywords, domains linking to entered competitors, manual uploads, or lost backlinks. [https://www.semrush.com/features/link-building/ , 4 Oct 2026] | **No numeric limit of any kind is documented** (prospects, keywords, competitors, emails/day, campaigns), and **no plan tier**. `/kb/semrush-reports-tools/projects/link-building-tool/` → hard **404**; `/kb/827-configuring-link-building`, `/kb/731-link-building` and `/kb/737-reviewing-link-building-prospects` all resolve to a generic SEO Toolkit landing page. |
+| **SEO Writing Assistant** | Listed as a **Guru**-tier inclusion on kb/1547, i.e. Pro+ or above in 2026 naming. On the free plan: "one piece of content" (blog). | No per-month usage limit on paid tiers confirmed. |
+| **Topic Research** | Listed as a **Guru**-tier inclusion on kb/1547. | No limits confirmed. |
+| **ContentShake AI** | **No page under that name.** Content Toolkit has a **Base plan only**, $60/mo, "10,000 articles/mo", "5 SEO content boosts/mo", 7 languages. | Whether ContentShake AI still exists as a distinct product. |
+| **AI Brand Sentiment** | "**weekly** data on brand sentiment" (kb/997); appears as a plan feature from Starter up. | No numeric limits. |
+| **Prompt Research** | Named in the Discover nav and on /features/keyword-research/. | No limits doc retrieved. |
+| **Semrush MCP** | "MCP Access: Yes" on all four paid tiers (incl. the SEO tier); Advanced gets "higher usage limits and deeper data endpoints in API and MCP access". Docs at developer.semrush.com/api/v4/introduction/semrush-mcp/. | **No numeric MCP request limits published.** |
+| **AI Visibility Index** | Linked from the homepage and the Resources nav. | Not located as a documented product with limits. |
+| **Agency Growth Kit** | — | **No page, price or KB article under this name.** See §3.4. |
+| **API unit prices** | Packages of 2M/5M/10M/20M units; Advanced/Business tier required; unused units expire. | **No dollar price published.** See §2.8. |
+| **AI Visibility per-user surcharge** | Referenced by two tooltips. | **No price found.** See §2.5. |
+
+### 6.12 Enterprise
 Published Enterprise feature list, verbatim: "Unlimited projects & custom limits • Custom large-scale AI prompt tracking • Daily or weekly tracking frequency • Multi-brand, multi-product AI visibility • Advanced AI Automations and content workflows • Forecasting & ROI attribution • Multi-million-page crawling • Custom integrations & API • SSO, team governance & audit logs • Dedicated account manager • Enterprise SLA & 24/7 support". Pricing: "Custom pricing available."
 Named Enterprise products in the footer: **Enterprise SEO, Enterprise AIO, Enterprise SI, Insights24, Mfour**.
 [https://www.semrush.com/prices/ , 4 Oct 2026]
@@ -886,13 +901,149 @@ A site-wide banner advertises an event: "Discover how leading brands get found a
 
 ## 9. Official Semrush YouTube videos
 
-<!-- PENDING: filled in below once verified -->
+### 9.1 The official channels
+- **Main channel: "Semrush"** — https://www.youtube.com/@semrush — canonical channel ID `UCj7v9UM1aGx6GR-nsY-9u8w`. Verified by fetching the channel's own RSS feed, which returns `Channel Title: Semrush`. The legacy `/user/SEMrushHQ` URL resolves to the same channel ID.
+[https://www.youtube.com/feeds/videos.xml?channel_id=UCj7v9UM1aGx6GR-nsY-9u8w , 4 Oct 2026]
+- **"Semrush Academy"** — https://www.youtube.com/channel/UCIX5KGYyUB-0R9rY_tsAGSg (handle @semrushacademy8519). Semrush-owned, but a **separate channel** from @semrush.
+
+**Verification method:** YouTube's oEmbed API (`youtube.com/oembed?url=...`), which returns the authoritative `author_name` (channel) and `title`. Direct fetches of `youtube.com/watch` pages return only footer/nav markup, so **publish dates, durations and view counts could not be confirmed and are deliberately not stated.**
+
+### 9.2 Video 1 — product walkthrough (main @semrush channel)
+- **Exact title:** "Semrush Overview: The All-in-One SEO Toolkit for Marketing Pros"
+- **Channel:** Semrush (main official channel)
+- **URL:** https://www.youtube.com/watch?v=epX_KJ83I0E
+- **Verified:** oEmbed returned `"author_name": "Semrush"`
+- Publish date / duration: **not confirmed**
+[https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=epX_KJ83I0E&format=json , 4 Oct 2026]
+
+### 9.3 Video 2 — keyword research tutorial (Semrush Academy channel)
+- **Exact title:** "How to Perform Keyword Research With SEMrush | Lesson 6/8 | SEMrush Academy"
+- **Channel:** Semrush Academy (Semrush's own education channel — **not** the main @semrush channel)
+- **URL:** https://www.youtube.com/watch?v=-cPQ6FpbXVQ
+- **Verified:** oEmbed returned `"author_name": "Semrush Academy"`
+- Publish date / duration: **not confirmed**
+[https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=-cPQ6FpbXVQ&format=json , 4 Oct 2026]
+
+**Honest limitation:** **no keyword-research tutorial was confirmed on the main @semrush channel.** Around eight site-restricted searches and ~18 oEmbed-verified candidate IDs produced only third-party results for that topic. The main channel's recent output is short-form SEO news and opinion rather than product tutorials. The Semrush Academy video above is the closest genuinely Semrush-owned option. If main-channel-only is required, browse https://www.youtube.com/@semrush/search?query=keyword%20research in a real browser.
+
+### 9.4 Verified alternates (all Semrush-owned)
+- "SEMrush Overview Series: Content Marketing toolkit" — channel **Semrush** (main) — https://www.youtube.com/watch?v=hP3IJw_pFNM — official but older and narrower.
+- "Getting Started with Semrush" — channel **Semrush Academy** — https://www.youtube.com/watch?v=AXUpGeNWIos — a good alternate buyer-facing walkthrough.
+- "Introduction to Keyword Research | Lesson 1/8 | SEMrush Academy" — channel **Semrush Academy** — https://www.youtube.com/watch?v=36otqm7DrSo — Lesson 1 of the same 8-part course as §9.3.
+[all verified via oEmbed, 4 Oct 2026]
+
+### 9.5 ⚠ Verified NOT official — do not cite as Semrush
+Each of these was oEmbed-checked and belongs to a third party, despite ranking for "Semrush tutorial" queries:
+`HWRCYcfq8Q4` Kevin Stratvert · `lvcKl-hzw8c`, `MVbYI2wCuoE` Style Factory · `u9efjjF6JpA`, `Hdm_cGz_n-k`, `FwsLeKFUzEk`, `squDS2v6EfA` MMX · `vTevwTjc5Zg` Tutorials by Manizha & Ryan · `AYFSX-B8BHM` My First Website · `E2o91oB-wgY`, `Bb0jshGTmSw` Travis Wilkie · `3Zhj4m3oioI` Daragh Walsh · `3C2JRNx1ds4` Tutorial Stack · `OwSpeuADj6o`, `I6vyPs1ZMYk` Grow with Will · `51UgFO4QVSg` Tony Teaches Tech · `TE-Xn6dKcLg` Querylookup Research.
+[all via https://www.youtube.com/oembed , 4 Oct 2026]
+
+Note in particular: "The ULTIMATE Semrush Keyword Research Tutorial" (`HWRCYcfq8Q4`) is **Kevin Stratvert's**, not Semrush's — it is widely mis-attributed.
 
 ---
 
-## 10. Semrush affiliate programme terms
+## 10. Semrush affiliate programme terms — compliance notes
 
-<!-- PENDING: filled in below once verified -->
+### 10.0 ⚠ The full terms are NOT publicly published
+Semrush's own KB, verbatim: "The Semrush Affiliate Terms and Conditions can be found on the **sign-up page** of the Semrush Affiliate Program. After clicking on the 'Join now' button, you can access and review the terms and conditions before completing the sign-up process."
+[https://www.semrush.com/kb/97-affiliate-program , 4 Oct 2026]
+
+The Impact-hosted campaign terms URL (`app.impact.com/campaign-campaign-info-v2/Semrush.brand`) **could not be fetched** — it returned a redirect loop (>10 redirects), i.e. it is login-gated. **Everything below comes from the two pages that ARE public:** the affiliate landing page FAQ and the Trademarks and Brand Usage Policy.
+
+URL notes: `https://www.semrush.com/lp/affiliate-program/` returned **empty content**; the working canonical page is **`https://www.semrush.com/lp/affiliate-program/en/`**. `https://www.semrush.com/company/affiliate-program/` returns **HTTP 404**. The old `berush.com/en/terms` **301-redirects** to the current LP — the legacy BeRush terms page is gone.
+
+### 10.1 Commission, cookie and payout (public FAQ)
+[all: https://www.semrush.com/lp/affiliate-program/en/ , 4 Oct 2026]
+- Headline: affiliates earn "**up to $450 per sale and $10 for each trial activation**", varying by product and partner tier.
+- Trial activations: **$10** per free trial. Sales, base tier: **$100–$300** per sale.
+- Tier scaling: **$300–$450 for Semrush One**; **$50–$80 for Social/Local toolkits**; up to **$350** for top-tier products at Platinum level.
+- Quarterly content bonus: **$200–$1,500** depending on performance tier.
+- **Cookie window: 120 days, last-click attribution.** KB wording: "last-click attribution, **120 days of cookie life**, and the support of a team of dedicated account managers."
+[https://www.semrush.com/kb/97-affiliate-program , 4 Oct 2026]
+- Referrals take **2+ hours** to appear in dashboard statistics.
+- **"Transaction locking happens 27 days after the end of the month"**; payment issued **21 days after** that locking.
+- Methods: "**Electronic Funds Transfer or PayPal**", processed through **Impact.com**. No minimum-payout threshold is published.
+- The programme is **one-time CPA, not recurring**. (Semrush migrated from in-house BeRush to Impact.com; the berush.com → semrush.com 301 corroborates the migration. The claim that "legacy BeRush affiliates keep recurring commissions" comes from third-party review sites, **not** a Semrush source — treat as unverified.)
+- Loyalty programme detail sits in a Semrush-hosted PDF: https://static.semrush.com/kb/uploads/2024/10/03/Loyalty%20Program%20Guide.pdf (located via search; not fetched).
+
+### 10.2 Eligibility and automatic decline reasons
+[https://www.semrush.com/lp/affiliate-program/en/ , 4 Oct 2026]
+- Minimum **1,000 unique monthly visitors** (content creators) or **1,000+ organic followers** (social accounts).
+- Requires high-quality relevant content aligned with the Semrush brand, verified contact information matching the promotional properties, no objectionable content, primarily online-marketing focus.
+- **Applications are declined for:** unverified contacts, under-construction/unfinished sites, **coupon/cashback sites**, browser extensions, email-only promotional strategies, and forum-based promotion.
+
+### 10.3 What affiliates MAY NOT claim or do — verbatim clauses
+All quotations: [https://www.semrush.com/lp/affiliate-program/en/ , 4 Oct 2026]
+
+**Brand bidding:**
+> "you are not allowed to bid on Semrush's branded keywords and ANY misspelled branded keywords like (but not limited to) Smerush, Semrash, Sem rush, Semrus, etc."
+
+**PPC pre-approval:**
+> "All PPC advertising campaigns must be pre-approved by the Semrush Affiliate team."
+
+**Trademarks in names/domains:**
+> "You are not allowed to use Semrush's trademarks in domain names, social media accounts, or communities names."
+
+**Free-trial misrepresentation — the closest published rule to a coupon/discount restriction. Prohibited:**
+> "misrepresenting a free trial as a coupon or discount, advertising invalid trials or offers"
+
+**Misrepresentation:**
+> "You should not misrepresent Semrush or its products/services"
+— and affiliates must not engage in "false advertising."
+
+**Self-referral:**
+> "Self-referrals and commission sharing are strictly prohibited. You are not permitted to use your own affiliate link to make purchases or create accounts for yourself, your relatives, or employees."
+
+**Fraud:** click fraud, cookie stuffing and unauthorised promotional methods are prohibited.
+
+**Disclosure (FTC):**
+> "you must follow the Federal Trade Commission (FTC) guidelines when using Semrush affiliate links"
+— affiliates must clearly communicate that
+> "you may earn a commission or receive compensation for referrals or sales."
+
+**Prohibited placements:** affiliates may not promote on
+> "adult websites, gambling sites, or platforms that promote hate speech, violence, or illegal activities."
+
+**Marketing assets:** approved affiliates get "referral URLs and creative assets" via the Impact dashboard. The public page states no usage restrictions on those assets beyond the brand policy below.
+
+### 10.4 Logos, screenshots and brand assets — Trademarks and Brand Usage Policy
+[https://www.semrush.com/company/legal/brand-policy/ , 4 Oct 2026]
+
+This policy **explicitly stacks with the affiliate terms**: if you participate in the affiliate programme, your use of the Marks is subject to the affiliate terms **together with** this policy.
+
+**Prohibited uses of the Marks** — no unauthorised use "in the name of your business, product, service, app, or other offering", nor in domain names and social media accounts, nor on promotional merchandise for sale or distribution, nor in **any** advertising (creative, digital, social, PPC), nor in metatags or hidden text.
+
+**Formatting:** "Marks should always be used in their full, exact, most-up-to-date form and color". Do not alter, animate, distort, or combine the Marks with other symbols. Use ™ (or ® only for registered marks). Set apart the first mention via capitalisation, italics, bold, or underlining.
+
+**Required attribution notice**, near a prominent mention:
+> "[mark] is a trademark or registered trademark of Semrush Inc. in the U.S. and other countries."
+
+**Screenshots policy — directly relevant to the brief's "do not screenshot Semrush's interface" rule.** You may use screenshots if you:
+- do not alter them except to resize;
+- do not use portions only;
+- do not include them in your own product UI;
+- exclude third-party content and personal data.
+
+**Further prohibitions:** nothing that "falsely impl[ies] an endorsement or sponsorship, partnership by, or an affiliation"; no overlapping the Marks with shapes/photos; no association with "vulgar, obscene, indecent or unlawful materials"; nothing that damages Semrush's reputation or goodwill.
+
+**Partners/resellers:** partners need "written consent specifying what Marks you can use". Resellers must include ® or ™ on all materials, provide samples before public use, obtain written approval, and modify or stop use if non-compliant. Contact: **trademarks@semrush.com**.
+
+### 10.5 What our page must therefore do (direct compliance read-across)
+1. **FTC disclosure is a programme requirement, not just good practice** — the affiliate FAQ mandates it explicitly. The brief's disclosure box satisfies this; keep it above the first affiliate link.
+2. **Never present the free trial as a coupon or discount.** This is an explicitly prohibited claim. Describe it as a 7-day free trial, card required.
+3. **No invented discount codes** — already in the brief, and reinforced by the ban on "advertising invalid trials or offers".
+4. **Do not use "Semrush" in our own page's branding, domain or social handles**, and do not run PPC on Semrush brand terms without written pre-approval.
+5. **Prefer our own original graphics over Semrush screenshots** (as the brief already requires). If a screenshot were ever used, the policy requires it be unaltered except for resizing, whole rather than cropped, and free of third-party content and personal data.
+6. **State prices as "as of 4 October 2026, confirm on semrush.com"** — the pricing experiment flag (§0.2) makes this materially true, not just boilerplate.
+7. **Do not imply partnership or endorsement** beyond "we are an affiliate and earn a commission."
+
+### 10.6 Published gaps — do NOT assume a rule either way
+Not found on any Semrush primary source:
+- **Coupon/discount-code promotion rules as such.** The only published adjacent rules are (a) coupon/cashback sites are a stated *decline* reason at application, and (b) the ban on "misrepresenting a free trial as a coupon or discount". Whether an approved affiliate may publish a legitimate Semrush discount code is **not addressed publicly**.
+- **Rules about stating prices** — nothing published.
+- Minimum payout threshold, commission clawback/refund windows, termination clauses, FTC disclosure placement specifics.
+- Third-party blogs make confident claims here (e.g. that PPC traffic must route through your own landing page first). **None of that could be verified against a Semrush source — do not rely on it for compliance.**
+
+**Authoritative text for anything in §10.6** is the T&C shown inside the Impact.com sign-up flow, or email **affiliates@semrush.com** (contact published at https://www.semrush.com/kb/97-affiliate-program).
 
 ---
 
@@ -911,7 +1062,24 @@ A site-wide banner advertises an event: "Discover how leading brands get found a
 - https://www.semrush.com/kb/252-cancelling-your-account
 - https://www.semrush.com/kb/31-site-audit · /kb/32-position-tracking · /kb/681-site-audit-troubleshooting · /kb/34-my-reports
 - https://www.semrush.com/kb/1400-gst-taxes · /kb/251-taxes-collected · /kb/37-vat-taxes · /kb/1223-us-sales-tax-faq
+- https://www.semrush.com/kb/997-semrush-data (canonical data page) · /kb/995-what-is-semrush
+- https://www.semrush.com/kb/1608-semrush-one · /kb/1547-seo-toolkit-pricing-limits
+- https://www.semrush.com/kb/262-keyword-magic-tool · /kb/696-what-are-the-limits-of-my-position-tracking-campaign · /kb/28-keyword-gap · /kb/295-backlink-audit-tool
+- https://www.semrush.com/kb/semrush-reports-tools/domain-analytics/domain-overview/
+- https://www.semrush.com/kb/287-what-countries-does-semrush-cover (stale) · /kb/718-what-mobile-databases-are-available-on-semrush · /kb/399-access-more-databases · /kb/64-historical-data
+- https://www.semrush.com/kb/1391-semrush-local · /kb/1071-listing-management-listings-tab · /kb/1611-local-toolkit-pricing-and-plans
+- https://www.semrush.com/kb/23-pla-research · /kb/519-product-listing-ads-positions · /kb/1551-pricing-and-plans · /kb/1549-getting-started-with-advertising-toolkit · /kb/1563-advertising-toolkit-faqs
+- https://www.semrush.com/kb/811-semrush-social · /kb/756-social-poster · /kb/33-social-tracker · /kb/1065-social-analytics · /kb/1368-ai-social-content-generator · /kb/1544-social-toolkit-pricing-and-plans
+- https://www.semrush.com/kb/1506-traffic-and-market-traffic-overview · /kb/1121-semrush-traffic-and-market · /kb/1000-competitive-research-bundle
+- https://www.semrush.com/kb/97-affiliate-program · /kb/5-api
 - https://www.semrush.com/kb/support/ · https://www.semrush.com/cancel/
+
+### Marketing / product pages
+- https://www.semrush.com/ (homepage stat strip) · https://www.semrush.com/features/ · https://www.semrush.com/features/keyword-research/
+- https://www.semrush.com/analytics/backlinks/ · https://www.semrush.com/analytics/keywordmagic/
+- https://www.semrush.com/features/log-file-analyzer/ · https://www.semrush.com/features/link-building/
+- https://enterprise.semrush.com/ · https://www.semrush.com/partner/semrushpro/
+- https://www.semrush.com/lp/affiliate-program/en/ · https://www.semrush.com/company/legal/brand-policy/
 
 ### Legal
 - https://www.semrush.com/company/legal/refund-policy/ (Last Updated 20 Aug 2025)
@@ -951,3 +1119,18 @@ A site-wide banner advertises an event: "Discover how leading brands get found a
 | https://www.semrush.com/kb/1042-api-units | 404 |
 | https://www.semrush.com/company/legal/cancellation-policy/ | 404 |
 | https://www.semrush.com/api-analytics/ | 301 → developer.semrush.com |
+| https://www.semrush.com/our-data/ | 404 — live equivalent is /kb/997-semrush-data |
+| https://www.semrush.com/semrush-one/ | 404 — live equivalent is /kb/1608-semrush-one |
+| https://www.semrush.com/kb/1624-semrush-one-vs-seo-toolkit | 200 but **redirects to the generic pricing page**; no crosswalk table |
+| https://www.semrush.com/kb/856-subscription-plans-comparison | 200 but serves the same page as /kb/1011-subscriptions |
+| https://www.semrush.com/kb/411-site-audit-limits | 404 — use /kb/31-site-audit |
+| https://www.semrush.com/kb/219-position-tracking-overview | 404 — use /kb/32-position-tracking |
+| https://www.semrush.com/kb/1004-ai-visibility-toolkit | 404 — use /kb/1608-semrush-one |
+| https://www.semrush.com/kb/semrush-reports-tools/projects/log-file-analyzer/ | 404; no KB article found for the tool at all |
+| https://www.semrush.com/kb/semrush-reports-tools/projects/link-building-tool/ | 404; /kb/827, /kb/731, /kb/737 all misroute to a generic landing page |
+| https://www.semrush.com/kb/1042-api-units | 404 |
+| https://www.semrush.com/lp/affiliate-program/ | returned empty content; use /lp/affiliate-program/en/ |
+| https://www.semrush.com/company/affiliate-program/ | 404 |
+| https://www.berush.com/en/terms | 301 → /lp/affiliate-program/en/; legacy BeRush terms gone |
+| app.impact.com/campaign-campaign-info-v2/Semrush.brand | redirect loop (>10); login-gated — the authoritative affiliate T&Cs live here |
+| youtube.com/watch pages and youtube.com/@semrush/videos | return footer markup only; hence no publish dates or durations in §9 |
