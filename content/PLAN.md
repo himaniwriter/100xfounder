@@ -83,3 +83,22 @@ Official careers/interview pages + public job-board API (Greenhouse/Ashby/Lever)
 
 ## b23 · India company setup, in-depth / saas ("not legal/tax advice")
 1. Pvt Ltd vs LLP vs OPC in 2026 2. GTM for Indian SaaS selling globally (GST on exports; Freshworks, Zoho, Chargebee, Postman) 3. Indian SaaS companies going global: list and numbers 4. How startups get acquired + recent acquisitions
+
+## Phase 1b · Rewrite the old site's 15 placeholder articles (owner asked to publish them, 4 Oct 2026)
+The originals in `wordpress/100xfounder/data/blog-posts.json` are 63–99-word unsourced stubs (one starts "this is testing"). Rewrite each as a full article per BRIEF.md on the same topic, **keeping its `slug`** (set `"slug"` in the JSON) so old URLs keep working. Re-verify every claim from current sources; if the core claim can't be confirmed (e.g. "reportedly raising"), write only what is sourced, or skip the topic and say so. Save as `content/drafts/legacy-<slug>.json`. Run as 3 agents of 5 articles each, after phase 1 finishes.
+
+- `openai-anthropic-enterprise-ai-spend`: OpenAI vs Anthropic: Where Enterprise AI Spend Is Concentrating in 2027 (US Funding)
+- `us-fintech-infrastructure-ramp-brex-2026`: US Fintech Infrastructure in 2026: Ramp, Brex, and the New CFO Stack (US Fintech)
+- `india-us-founder-playbook-cross-border`: The India-US Founder Playbook: Building Cross-Border Distribution From Day Zero (Global GTM)
+- `usv-wellbeing-nutrition-majority-buyout`: USV Doubles Down on D2C Wellness With a Majority Bet on Wellbeing Nutrition (M&A)
+- `man-company-fy25-pressure-check`: The Man Company’s FY25 Reality Check: Lower Revenue, Profitability Reversal (Fintrackr)
+- `datoms-series-a-industrial-iot`: Datoms Eyes Series A to Scale Industrial IoT Across High-Asset Sectors (Funding)
+- `indigrid-technology-series-a-electronics`: IndiGrid Technology Secures Series A to Expand Electronics Manufacturing Infrastructure (Funding)
+- `w-health-fund-ii-first-close`: W Health Ventures Reaches First Close for Fund II, Deepening Healthcare Thesis (VC)
+- `rainmatter-pensionbox-majority-stake`: Rainmatter Takes Majority Position in PensionBox to Expand Long-Term Wealth Rails (M&A)
+- `fractal-ipo-demand-signal`: Fractal IPO Demand Signals Institutional Appetite for Data-Led Businesses (IPO)
+- `idfy-growth-round-neo-asset`: IDfy Prepares New Capital Raise to Expand Trust and Verification Infrastructure (Exclusive)
+- `tbo-tek-q3fy26-growth-signal`: TBO Tek Posts Strong Q3 FY26 Expansion as Travel Demand Rebounds (Fintrackr)
+- `lenskart-q3fy26-profit-jump`: Lenskart’s Q3 FY26 Profit Surge Highlights Maturity in Omnichannel Eyewear (Fintrackr)
+- `bighaat-funding-ocp-bidra`: BigHaat Raises Fresh Capital to Deepen Agri-Commerce and Inputs Distribution (Funding)
+- `emversity-series-a-premji-invest`: Emversity Lands Series A to Scale Employability-First Higher Education (Funding)
