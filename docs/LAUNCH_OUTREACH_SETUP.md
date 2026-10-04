@@ -29,12 +29,12 @@ When a founder fills in the spotlight form at `/feature/<token>`:
    - Product Hunt's API terms restrict commercial use without their approval. Email hello@producthunt.com to describe the use case before relying on it commercially.
    - Every listing credits and links back to Product Hunt.
 2. **Database.** Set `DATABASE_URL` to a Postgres (Supabase) database. Tables are created automatically on first use. The same SQL is in `supabase/migrations/20261004120000_launch_outreach.sql`.
-3. **Outreach mailbox.** Use a dedicated sending address, ideally on a separate domain or subdomain such as `hello@get100xfounder.com`, so cold email can't hurt the main domain's reputation.
-   - With Google Workspace, turn on 2-step verification and create an **app password**.
-   - Set `SMTP_USER`, `SMTP_PASS`, `OUTREACH_FROM_EMAIL` and `OUTREACH_FROM_NAME`.
-   - IMAP uses the same credentials by default.
-   - Set up SPF, DKIM and DMARC on the sending domain.
-   - Warm the mailbox up: start at `OUTREACH_DAILY_LIMIT=10` and raise it over 2–3 weeks to about 30–50.
+3. **Outreach mailbox (Hostinger Email).** In hPanel, go to **Emails** and create a mailbox such as `hello@100xfounder.com`. Then set:
+   - `SMTP_USER` and `OUTREACH_FROM_EMAIL` to the full mailbox address, and `SMTP_PASS` to the mailbox password.
+   - `SMTP_HOST=smtp.hostinger.com`, `SMTP_PORT=465` (SSL). These are the defaults.
+   - Reply and bounce detection uses `imap.hostinger.com:993` with the same credentials by default.
+   - Set up SPF, DKIM and DMARC. If the domain's DNS is managed by Hostinger, hPanel → **Emails → Connect domain** adds them for you. If DNS is elsewhere, copy the records hPanel shows.
+   - Warm the mailbox up: start at `OUTREACH_DAILY_LIMIT=10` and raise it over 2–3 weeks to about 30–50. Hostinger caps sending per mailbox and its terms forbid bulk unsolicited mail, so keep volume low and personal.
 4. **Compliance.** Set `OUTREACH_POSTAL_ADDRESS`; CAN-SPAM requires a physical address. Sending stays off until it's set.
    - Every email has a one-click unsubscribe link and a `List-Unsubscribe` header.
    - Only emails a company publishes on its own website are used.

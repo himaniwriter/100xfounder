@@ -34,13 +34,13 @@ export function getOutreachConfig() {
     replyTo: process.env.OUTREACH_REPLY_TO?.trim() || "",
     postalAddress: process.env.OUTREACH_POSTAL_ADDRESS?.trim() || "",
     smtp: {
-      host: process.env.SMTP_HOST?.trim() || "smtp.gmail.com",
+      host: process.env.SMTP_HOST?.trim() || "smtp.hostinger.com",
       port: readInt("SMTP_PORT", 465),
       user: smtpUser,
       pass: process.env.SMTP_PASS?.trim() || "",
     },
     imap: {
-      host: process.env.IMAP_HOST?.trim() || "imap.gmail.com",
+      host: process.env.IMAP_HOST?.trim() || "imap.hostinger.com",
       port: readInt("IMAP_PORT", 993),
       user: process.env.IMAP_USER?.trim() || smtpUser,
       pass: process.env.IMAP_PASS?.trim() || process.env.SMTP_PASS?.trim() || "",
