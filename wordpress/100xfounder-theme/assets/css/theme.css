@@ -147,7 +147,7 @@ a:hover .ph img{transform:scale(1.05);filter:saturate(1)}
 /* Contribute */
 .contribute{display:flex;flex-wrap:wrap;gap:32px 80px;padding:48px 0;border-top:1px solid var(--tx);border-bottom:1px solid var(--ln)}
 .contribute h2{margin:12px 0 0;font-size:clamp(30px,3.8vw,46px);line-height:1.04;letter-spacing:-.045em;font-weight:600}
-.contribute .opt{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid var(--ln)}
+.contribute .opt{display:flex;align-items:center;justify-content:space-between;gap:16px;height:auto;padding:18px 0;border-bottom:1px solid var(--ln);color:var(--tx)}
 
 /* Tabs */
 .tabs{display:flex;gap:28px;overflow-x:auto;border-bottom:1px solid var(--ln);scrollbar-width:none}
@@ -359,3 +359,10 @@ a:hover .ph img{transform:scale(1.05);filter:saturate(1)}
 body{background-image:radial-gradient(1100px 420px at 50% -220px,rgba(124,92,255,.22),transparent 65%);background-repeat:no-repeat}
 .ac:focus-visible{-webkit-text-fill-color:currentColor}
 @media (prefers-reduced-motion:reduce){.ac,.hl,.ticker .label,.prog{animation:none}}
+/* Home without news yet: jobs + tools take the lead slot. */
+.home-start{display:flex;flex-wrap:wrap;gap:36px 48px;align-items:flex-start;padding-top:40px}
+.home-start .job-mini{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--ln)}
+.home-start .job-mini .t{display:block;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.home-start .job-mini .m{display:block;font-size:13px;color:var(--t2);margin-top:2px}
+.tool-mini{display:flex;flex-direction:column;gap:6px;padding:18px;border:1px solid var(--ln);border-radius:10px;transition:border-color .25s,background .25s}
+.tool-mini:hover{border-color:var(--ln2);background:var(--bg2)}

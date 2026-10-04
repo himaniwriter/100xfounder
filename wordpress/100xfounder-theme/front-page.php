@@ -28,10 +28,11 @@ if (post_type_exists('xf_startup')) {
 }
 $raised = function_exists('xf_rounds_total_usd') ? xf_rounds_total_usd(7) : 0;
 $events = function_exists('xf_upcoming_events') ? xf_upcoming_events(4) : [];
+$open_roles = post_type_exists('xf_job') ? (int) wp_count_posts('xf_job')->publish : 0;
 $pillars = [
     ['Launched.', $launch_count ? sprintf(_n('%d launch in today’s list', '%d launches in today’s list', $launch_count), $launch_count) : 'The best Product Hunt launches, daily', $launch_url],
     ['Raised.', $raised ? xf_format_usd_short($raised) . ' on the funding tracker this week' : 'Funding rounds, tracked daily', $funding_url],
-    ['Hiring.', 'Fresh roles at funded startups', xft_page_exists('jobs') ? home_url('/jobs/') : add_query_arg('type', 'job', $submit_url)],
+    ['Hiring.', $open_roles ? sprintf('%s open roles from official careers pages', number_format_i18n($open_roles)) : 'Fresh roles at funded startups', xft_page_exists('jobs') ? home_url('/jobs/') : add_query_arg('type', 'job', $submit_url)],
     ['Happening.', $events ? sprintf(_n('%d event on the calendar', '%d events on the calendar', count($events)), count($events)) : 'Startup events worth your time', $events_url],
     ['Worth reading.', 'Long reads and founder stories', $blog_url],
 ];
@@ -84,10 +85,35 @@ $pillars = [
         <div id="newsletter"><?php echo xft_newsletter(); // phpcs:ignore ?></div>
     </aside>
 </section>
-<?php else : ?>
-<section class="wrap" style="padding-top:48px">
-    <div class="notice">Stories are on their way. <a href="<?php echo esc_url($submit_url); ?>" style="border-bottom:1px solid var(--ln2)">Send us yours</a>.</div>
-    <div id="newsletter" style="max-width:420px"><?php echo xft_newsletter(); // phpcs:ignore ?></div>
+<?php else :
+    // No news yet: lead with what the site already has (live jobs and free tools).
+    $home_jobs = post_type_exists('xf_job') ? get_posts(['post_type' => 'xf_job', 'posts_per_page' => 8]) : [];
+    $home_tools = function_exists('xf_tools') ? xf_tools() : [];
+    ?>
+<section class="wrap home-start">
+    <div style="flex:999 1 560px;min-width:0">
+        <?php if ($home_jobs) : ?>
+            <div class="sh"><h2>Hiring now</h2><a class="k u" href="<?php echo esc_url(home_url('/jobs/')); ?>">All <?php echo esc_html(number_format_i18n($open_roles)); ?> roles →</a></div>
+            <?php foreach ($home_jobs as $j) :
+                $co = get_post_meta($j->ID, '_xf_company_name', true); ?>
+                <a class="job-mini row" href="<?php echo esc_url(get_permalink($j)); ?>">
+                    <span class="av"><?php echo esc_html(xft_initials($co)); ?></span>
+                    <span style="flex:1;min-width:0"><span class="t"><span class="u"><?php echo esc_html(get_the_title($j)); ?></span></span><span class="m"><?php echo esc_html(implode(' · ', array_filter([$co, get_post_meta($j->ID, '_xf_function', true), get_post_meta($j->ID, '_xf_city', true)]))); ?></span></span>
+                    <span class="mono hs" style="font-size:12px;color:var(--t3)"><?php echo esc_html(xft_age($j)); ?></span>
+                </a>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        <p class="k" style="margin-top:22px;font-size:10.5px">News, funding rounds and founder stories start here soon. Got one? <a class="u" href="<?php echo esc_url($submit_url); ?>">Send it to us</a>.</p>
+    </div>
+    <aside style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:16px">
+        <?php if ($home_tools) : ?>
+            <div class="sh"><h2>Free tools</h2><a class="k u" href="<?php echo esc_url(home_url('/tools/')); ?>">All →</a></div>
+            <?php foreach ($home_tools as $slug => $t) : ?>
+                <a class="tool-mini" href="<?php echo esc_url(home_url('/tools/' . $slug . '/')); ?>"><span class="k"><?php echo esc_html($t['group']); ?></span><span style="font-size:17px;font-weight:600;letter-spacing:-.015em"><?php echo esc_html($t['title']); ?></span><span style="font-size:14px;color:var(--t2);line-height:1.5"><?php echo esc_html($t['desc']); ?></span></a>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        <div id="newsletter"><?php echo xft_newsletter(); // phpcs:ignore ?></div>
+    </aside>
 </section>
 <?php endif; ?>
 
@@ -118,7 +144,7 @@ if ($top_launches || $ig) : ?>
                 <span class="mono" style="width:36px;font-size:22px;color:var(--t3);letter-spacing:-.04em"><?php echo esc_html(str_pad((string) ($i + 1), 2, '0', STR_PAD_LEFT)); ?></span>
                 <span style="flex:1;min-width:0"><span style="display:block;font-size:17px;font-weight:600;letter-spacing:-.015em"><span class="u"><?php echo esc_html(get_the_title($l)); ?></span></span><span style="display:block;font-size:14px;color:var(--t2);margin-top:3px"><?php echo esc_html(wp_trim_words((string) get_post_meta($l->ID, '_xf_tagline', true), 14)); ?></span></span>
                 <?php if ($terms) : ?><span class="tag hs" style="color:var(--t2)"><?php echo esc_html($terms[0]); ?></span><?php endif; ?>
-                <span class="k hs" style="width:84px;text-align:right;font-size:10.5px"><?php echo (int) get_post_meta($l->ID, '_xf_votes', true); ?> votes</span>
+                <?php $v = (int) get_post_meta($l->ID, '_xf_votes', true); if ($v) : ?><span class="k hs" style="width:84px;text-align:right;font-size:10.5px"><?php echo $v; ?> votes</span><?php endif; ?>
             </a>
         <?php endforeach; ?>
     </div>
