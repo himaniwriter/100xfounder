@@ -1,7 +1,7 @@
 # 100xFounder Content and SEO Platform: PRD
 
-**Status:** Draft v0.2, owner's answers applied; awaiting final approval
-**Version:** 0.2 (2026-10-04)
+**Status:** Draft v0.3, owner's UI design added; awaiting final approval
+**Version:** 0.3 (2026-10-04)
 **Platform:** WordPress on Hostinger with the `100xfounder` plugin. See `CLAUDE.md` for the standing rules.
 
 ---
@@ -35,6 +35,66 @@ These apply to every pillar:
    - **Jobs only:** Google's Indexing API, which Google allows only for job postings and livestreams.
    - Fast indexing is achievable, but nobody can guarantee a ranking.
 5. **Clear labelling.** "Sponsored" and "Affiliate link" disclosures, with `rel="sponsored"` on those links.
+
+## 2a. UI design (owner-supplied, 2026-10-04)
+
+**Source of truth:**
+- Design canvas "100Xfounder Revamp": https://claude.ai/artifact/1M6rZmasXRJJTQ7LxcreH8
+- The PDF export `100Xfounder_Revamp.pdf`, 17 pages
+
+The canvas holds six desktop pages at 1440px, each with a 390px mobile version.
+
+**Design system:**
+
+| Token | Value |
+|---|---|
+| Background, surface | `#0b0b0c`, `#121214` |
+| Lines | `#232326`, `#303035` |
+| Text | `#f2f2ef`, secondary `#a6a6a2`, tertiary `#8c8c88` |
+| Accent | `#ff6a3d` (category labels, active tab, "Breaking", founder-story tags) |
+| Signature divider | 1px gradient hairline `#ff6a3d → #c56bff → #4aa8ff` |
+| Type | **Inter** 400–700 for UI and headlines (tight tracking, around −0.05em on display); **Geist Mono** for kickers, labels, timestamps, numbers and prices |
+| Shape | Max width 1240px, 10px button radius, 6px image radius |
+| Behaviour | Sticky blurred header; rise-in animations that respect reduced motion; buttons are either primary (light) or ghost |
+
+**Implementation decision:** a custom classic **WordPress theme, `100xfounder-theme`**, built pixel-close to the canvas (header, footer with the giant wordmark, templates per page). The `100xfounder` plugin keeps all data and logic. The theme only renders. Fonts are self-hosted for speed and privacy.
+
+**Page-by-page mapping:**
+
+| Design page | WordPress template | Data (pillar) |
+|---|---|---|
+| **Home** | `front-page.php` | See the list below |
+| **Launches and founders** | `/launches/` | Hero; founder of the day (latest published spotlight, verified badge from pillar 6); **leaderboard** of Product Hunt imports with Today / Yesterday / This week and category chips; **upvotes**; founder stories; Instagram grid; "Launching soon?" CTA |
+| **Jobs board** | `/jobs/` + single job | "What / Where" search; function filter with counts; stage chips; Full-time / Remote / Hybrid tabs; job rows (initials avatar, salary in mono, age, **save**, Apply to the official URL); "Founder replies fast" tag (set by the employer); **Morning job alerts** (email) |
+| **News, events & long reads** | `/news/` | Lead story, latest list with thumbnails, upcoming events, most read, newsletter box, load more |
+| **Article page** | `single.php` | Centred headline, author and read time, hero image with credit, **"In this story" table of contents**, share, pull quotes, tags, **"Original reporting" link (plus our Sources block)**, keep reading |
+| **Submit story** | `/submit/` | Five types: Article, Press release, Event news, Product launch, Job post. Each sets the form fields. Files and Instagram opt-in go to the review queue (manual invoice for paid types) |
+
+**Home** (`front-page.php`) pulls together:
+- a date / city / social top bar
+- the category bar
+- a **breaking ticker**
+- a "Today in Indian & US startups" strip with live counts: Launched, Raised, Hiring, Happening, Worth reading
+- latest, lead story and most read
+- a **funding tracker table**
+- the recently funded spotlight
+- the Instagram grid
+- a block per category
+- events and startups hiring
+- the blog
+- contribute
+- a footer with the wordmark
+
+**New features the design adds to scope:** Events (a calendar post type), the Funding tracker (a structured funding-round post type that feeds the home table and `/funding-tracker/`), a breaking ticker, a newsletter ("The 8AM brief"), launch upvotes, saved jobs and job alerts.
+
+**Pages not in the canvas yet:** these will be designed in the same system and added to the canvas for your approval before they're built:
+- AI tools directory and tool profile (pillar 5)
+- Free tools hub and tool page (pillar 4)
+- AI news tracker and story timeline (pillar 7)
+- Founder profile (pillar 1)
+- How-to-apply guide (pillar 2)
+
+**Content rule for the design's sample data:** the canvas uses illustrative headlines and numbers (for example the funding amounts and "Claude Frontier Academy"). None of these get published. Live pages show only real, sourced content, and empty states until it exists.
 
 ## 3. Shared foundation (built first, used by every pillar)
 
@@ -315,11 +375,11 @@ The reasoning:
 
 | Phase | Scope | Growth lever |
 |---|---|---|
-| **A. Foundation (slim)** | Sources system, review checklist, schema, IndexNow, news sitemap, E-E-A-T pages, Search Console/GA settings, **content queue and draft API, plus the first skill** | Required by everything |
-| **B. Jobs engine + calculators** (pillars 2 and 4a) | ATS sync, job and city/role pages, Indexing API, expiry; in-hand salary, CTC and notice-buyout calculators; `/write-apply-guide` for the top 30 companies | Fastest indexing (hours) and the biggest Indian volume |
-| **C. AI news desk + AI tool directory** (pillars 7, 5 and 4b) | Feed tracker, review queue, story timelines, `/ai-news-desk`; tool profiles, task pages, health checks, `/write-ai-tool`; writing-helper tools | Daily freshness plus long-tail evergreen |
-| **D. Founders + verification** (pillars 1 and 6) | Founder profiles, sourced net worth, `/write-founder`, verification emails, corrections log | Trust (E-E-A-T) and backlinks |
-| **E. Revenue** (pillar 3) | Submit-startup tiers, sponsored articles, manual-invoice orders, affiliate manager, funding roundup | Monetise the traffic |
+| **A. Foundation (slim)** | **Theme `100xfounder-theme` built to the canvas (header, footer, home, news, article, submit)**, sources system, review checklist, schema, IndexNow, news sitemap, E-E-A-T pages, Search Console/GA settings, **content queue and draft API, plus the first skill** | Required by everything |
+| **B. Jobs engine + calculators** (pillars 2 and 4a) | Jobs board exactly as designed (filters, save, alerts), ATS sync, job and city/role pages, Indexing API, expiry; in-hand salary, CTC and notice-buyout calculators; `/write-apply-guide` for the top 30 companies | Fastest indexing (hours) and the biggest Indian volume |
+| **C. AI news desk + AI tool directory** (pillars 7, 5 and 4b) | Canvas designs for the new pages first, then the feed tracker, review queue, story timelines, `/ai-news-desk`; tool profiles, task pages, health checks, `/write-ai-tool`; writing-helper tools | Daily freshness plus long-tail evergreen |
+| **D. Founders + verification** (pillars 1 and 6) | Launches page as designed (leaderboard, upvotes, founder of the day), founder profiles, sourced net worth, `/write-founder`, verification emails, corrections log | Trust (E-E-A-T) and backlinks |
+| **E. Revenue** (pillar 3) | Funding tracker, events and newsletter, submit-startup tiers, sponsored articles, manual-invoice orders, affiliate manager, funding roundup | Monetise the traffic |
 
 AdSense runs from day one. Apply once 20–30 quality articles are live, likely during phase B or C.
 ## 7. Risks
@@ -341,6 +401,7 @@ AdSense runs from day one. Apply once 20–30 quality articles are live, likely 
 - **Order:** growth-first (section 6).
 
 **Still open. Defaults are used if you don't answer:**
+0. **UI questions:** newsletter provider, events, and how upvotes work. Asked in chat on 2026-10-04.
 1. **Prices:** paid listing and sponsored article prices. Default: Fast-track ₹2,999 / $49, Featured ₹7,999 / $129 a week, Sponsored article ₹14,999 / $249.
 2. **Who reviews:** default is you, the admin, only.
 3. **Affiliate programs:** default is none at launch; the affiliate manager is built for adding later.

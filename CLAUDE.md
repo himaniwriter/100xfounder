@@ -24,6 +24,16 @@ The full plan is in `docs/PRD.md`. Its open questions and approval status are tr
 - **Payments are a manual invoice** (no payment gateway).
 - **Build order is growth-first**: foundation, then jobs and calculators, then AI news and the AI directory, then founders and verification, then revenue features.
 
+## UI design
+
+- **Source of truth:** the owner's design canvas, https://claude.ai/artifact/1M6rZmasXRJJTQ7LxcreH8 ("100Xfounder Revamp"). It's a dark editorial portal:
+  - colours: `#0b0b0c` background, `#f2f2ef` text, `#ff6a3d` accent
+  - type: Inter, plus Geist Mono for labels
+  - signature: the orange → violet → blue hairline divider
+- **Build:** a custom WordPress theme (`wordpress/100xfounder-theme/`) that matches it closely. The plugin holds the logic.
+- **New pages:** design them on the same canvas first and get approval, then build.
+- **Sample content:** never publish the canvas's sample headlines or numbers. Live pages show only real, sourced content.
+
 ## Non-negotiable rules
 
 - **Every factual claim about a real person or company carries a source.** Never invent or estimate net worth, funding, revenue or personal details. If there's no reliable source, leave it out.
