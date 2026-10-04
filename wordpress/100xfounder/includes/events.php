@@ -164,6 +164,15 @@ function xf_import_events() {
                 continue;
             }
             $location = $e['LOCATION'] ?? '';
+            // Most public calendars are worldwide. Keep only events in the cities we
+            // cover, so the page stays "what's on near me" rather than a global dump.
+            $bucket = function_exists('xf_event_city_bucket') ? xf_event_city_bucket($location) : '';
+            if (!$bucket || $bucket === 'Online') {
+                $bucket = function_exists('xf_event_city_bucket') ? xf_event_city_bucket($e['SUMMARY'] ?? '') : '';
+            }
+            if (!$bucket || $bucket === 'Online') {
+                continue;
+            }
             $url = $e['URL'] ?? '';
             if (!$url && preg_match('#https?://\S+#', $e['DESCRIPTION'] ?? '', $m)) {
                 $url = $m[0];
@@ -179,7 +188,7 @@ function xf_import_events() {
                     '_xf_start' => $e['DTSTART'],
                     '_xf_end' => $e['DTEND'] ?? '',
                     '_xf_venue' => mb_substr($location, 0, 200),
-                    '_xf_city' => xf_guess_city($location),
+                    '_xf_city' => $bucket,
                     '_xf_url' => esc_url_raw($url),
                     '_xf_organizer' => sanitize_text_field($e['ORGANIZER'] ?? ''),
                     '_xf_source_feed' => esc_url_raw($feed),
