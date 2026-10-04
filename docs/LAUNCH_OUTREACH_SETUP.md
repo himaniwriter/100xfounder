@@ -1,5 +1,7 @@
 # Daily Growth Routine and Headless WordPress: Setup Guide
 
+> **Superseded:** the live site now runs fully on WordPress. See [WORDPRESS_SETUP.md](WORDPRESS_SETUP.md). This guide covers the earlier Next.js version, which is kept in the repo for reference.
+
 ## What runs every day
 
 The routine is a Vercel Cron job. It calls `/api/cron/daily-growth` at 14:00 UTC (7am Pacific / 7:30pm IST), configured in `vercel.json`. Each run goes through these stages in order:
