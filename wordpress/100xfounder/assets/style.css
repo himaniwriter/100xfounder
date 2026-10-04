@@ -132,3 +132,4 @@ body.home .wp-block-post-title, body.home .entry-header .entry-title { display: 
 @media (min-width: 1000px) { .xf-news-layout { grid-template-columns: minmax(0, 1fr) 320px; } }
 .xf-news-main, .xf-news-sidebar, .xf-news-card, .xf-news-card a, .xf-news-body, .xf-startup-card, .xf-grid > * { min-width: 0; }
 .xf-grid, .xf-grid--3, .xf-grid--4, .xf-news-grid, .xf-news-grid--4 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
+.xf-directory .xf-grid, .xf-launches .xf-grid, .xf-home .xf-grid--4 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }

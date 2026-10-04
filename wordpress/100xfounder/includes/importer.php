@@ -29,6 +29,8 @@ function xf_import_startups_batch() {
             'post_title' => $row['name'],
             'post_name' => $row['slug'],
             'post_excerpt' => $row['summary'] ?? '',
+            // A fixed past date keeps real launches first; the directory then sorts A→Z.
+            'post_date' => '2024-01-01 00:00:00',
             'post_content' => isset($row['summary']) ? wpautop(esc_html($row['summary'])) : '',
             'meta_input' => [
                 '_xf_source' => 'seed',
@@ -92,12 +94,30 @@ function xf_import_blog_posts() {
             continue;
         }
         if (!empty($p['thumbnail'])) {
-            $attachment = media_sideload_image(add_query_arg(['w' => 1200, 'fm' => 'jpg'], $p['thumbnail']), $post_id, $p['title'], 'id');
-            if (!is_wp_error($attachment)) {
+            $attachment = xf_sideload_image(add_query_arg(['w' => 1200, 'fm' => 'jpg', 'q' => 80], $p['thumbnail']), $post_id, $p['title']);
+            if ($attachment) {
                 set_post_thumbnail($post_id, $attachment);
             }
         }
         $created++;
     }
     return ['created' => $created, 'total' => count($posts)];
+}
+
+/**
+ * media_sideload_image() rejects URLs without an image extension (e.g. Unsplash),
+ * so download first and name the file ourselves.
+ */
+function xf_sideload_image($url, $post_id, $title) {
+    $tmp = download_url($url, 20);
+    if (is_wp_error($tmp)) {
+        return 0;
+    }
+    $file = ['name' => sanitize_file_name(sanitize_title($title) ?: 'image') . '.jpg', 'tmp_name' => $tmp];
+    $id = media_handle_sideload($file, $post_id, $title);
+    if (is_wp_error($id)) {
+        @unlink($tmp);
+        return 0;
+    }
+    return (int) $id;
 }

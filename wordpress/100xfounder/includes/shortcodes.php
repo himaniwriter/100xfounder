@@ -90,6 +90,8 @@ add_shortcode('xf_directory', function () {
         'paged' => $paged,
         's' => $search,
         'fields' => 'ids',
+        // Newest launches first, then alphabetical (imported listings share a date).
+        'orderby' => ['date' => 'DESC', 'title' => 'ASC'],
     ];
     if ($industry) {
         $args['tax_query'] = [['taxonomy' => 'xf_industry', 'field' => 'slug', 'terms' => $industry]];

@@ -2,6 +2,38 @@
 
 The whole site now runs on WordPress using the **100xFounder** plugin (`wordpress/100xfounder/`, packaged as `wordpress/dist/100xfounder.zip`). The Next.js app in this repo is no longer needed for the live site.
 
+## 0. Try it on your own computer first
+
+**Option A, one command (Mac, Linux, or Windows with WSL).** You need PHP 8.1+:
+- **Mac:** `brew install php`
+- **Ubuntu or WSL:** `sudo apt install php-cli php-sqlite3 php-gd php-zip php-curl php-xml php-mbstring unzip curl`
+
+Then, from the repo folder:
+
+```bash
+bash wordpress/local/run-local.sh
+```
+
+The script:
+- downloads WordPress, using SQLite so you don't need MySQL
+- installs the plugin, imports the 1,258 startups and the old blog posts, and sets the home page
+- starts the site at **http://localhost:8080**
+
+| | |
+|---|---|
+| Dashboard | http://localhost:8080/wp-admin |
+| Username | `admin` |
+| Password | `admin` |
+
+Other things to know:
+- Press **Ctrl+C** to stop. Run the script again to restart.
+- Add `--reset` to start from scratch.
+- Plugin code changes show up as soon as you refresh.
+
+**Option B, no command line.** Install the free [Local](https://localwp.com) app and create a new WordPress site. Open its admin and go to **Plugins → Add New → Upload Plugin**, upload `wordpress/dist/100xfounder.zip` and activate it. Then use **100xFounder → Import data**.
+
+**Locally, emails won't actually send** unless you enter a real mailbox in Settings, and the Product Hunt import needs your token. Everything else works offline.
+
 ## 1. Install WordPress on 100xfounder.com (hPanel)
 
 1. **Back up the current site.** In hPanel → **Files → File Manager → public_html**, download or rename the existing files (the old static site) so WordPress can take over.

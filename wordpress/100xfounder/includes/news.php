@@ -125,6 +125,10 @@ add_shortcode('xf_news', function () {
     $sticky = get_option('sticky_posts');
     $featured = $sticky ? get_posts(['post_type' => 'post', 'posts_per_page' => 1, 'post__in' => $sticky, 'ignore_sticky_posts' => true]) : [];
     if (!$featured) {
+        // The lead story needs a picture: take the newest post that has one.
+        $featured = get_posts(['post_type' => 'post', 'posts_per_page' => 1, 'meta_key' => '_thumbnail_id']);
+    }
+    if (!$featured) {
         $featured = get_posts(['post_type' => 'post', 'posts_per_page' => 1]);
     }
     if (!$featured) {
