@@ -39,6 +39,7 @@ function xf_setting_defaults() {
         'bing_verification' => '',
         'ga4_id' => '',
         'indexnow_enabled' => 1,
+        'mcp_allow_publish' => 0,
         'instagram_url' => 'https://www.instagram.com/100x.founder/',
         'linkedin_url' => '',
         'x_url' => '',

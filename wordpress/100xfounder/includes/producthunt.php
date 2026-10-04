@@ -210,3 +210,96 @@ function xf_ph_import_day($days_ago = 1) {
 
     return ['day' => $window['label'], 'fetched' => count($posts), 'selected' => count($selected), 'created' => $created, 'updated' => $updated];
 }
+
+/* -------------------------------------------------------------------------
+ * No-token fallback: Product Hunt's public Atom feed (www.producthunt.com/feed).
+ * It's an official syndication feed, so this is not page scraping. It has the
+ * name, tagline, product page and outbound link, but no vote counts, so feed
+ * imports never show votes. Once a developer token is set, the API importer
+ * takes over and fills in votes for the same launches (same ph:<id> key).
+ * ---------------------------------------------------------------------- */
+
+const XF_PH_FEED = 'https://www.producthunt.com/feed';
+
+/** Parsed feed entries published within the last $hours. */
+function xf_ph_feed_entries($hours = 48) {
+    $response = wp_remote_get(XF_PH_FEED, ['timeout' => 20, 'user-agent' => 'Mozilla/5.0 (compatible; 100xFounder/1.0; +' . home_url('/') . ')']);
+    if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
+        return is_wp_error($response) ? $response : new WP_Error('xf_ph_feed', 'Product Hunt feed returned HTTP ' . wp_remote_retrieve_response_code($response));
+    }
+    $prev = libxml_use_internal_errors(true);
+    $xml = simplexml_load_string(wp_remote_retrieve_body($response));
+    libxml_use_internal_errors($prev);
+    if (!$xml) {
+        return new WP_Error('xf_ph_feed', 'Could not read the Product Hunt feed.');
+    }
+    $cutoff = time() - $hours * HOUR_IN_SECONDS;
+    $entries = [];
+    foreach ($xml->entry as $e) {
+        $published = strtotime((string) $e->published);
+        if (!$published || $published < $cutoff || !preg_match('/Post\/(\d+)/', (string) $e->id, $m)) {
+            continue;
+        }
+        $html = html_entity_decode((string) $e->content, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        $tagline = '';
+        if (preg_match('/<p>\s*(.*?)\s*<\/p>/s', $html, $tm)) {
+            $tagline = trim(wp_strip_all_tags($tm[1]));
+        }
+        $outbound = preg_match('/href="(https:\/\/www\.producthunt\.com\/r\/p\/\d+[^"]*)"/', $html, $lm) ? html_entity_decode($lm[1]) : '';
+        $entries[] = [
+            'id' => $m[1],
+            'name' => trim((string) $e->title),
+            'tagline' => $tagline,
+            'url' => strtok((string) $e->link['href'], '?'),
+            'outbound' => $outbound,
+            'published' => gmdate('Y-m-d H:i:s', $published),
+        ];
+    }
+    return $entries;
+}
+
+/** Imports recent launches from the feed. Used when no API token is set. */
+function xf_ph_import_feed($hours = 48, $limit = 15) {
+    $entries = xf_ph_feed_entries($hours);
+    if (is_wp_error($entries)) {
+        return ['error' => $entries->get_error_message()];
+    }
+    $created = 0;
+    $skipped = 0;
+    foreach (array_slice($entries, 0, $limit) as $launch) {
+        if (xf_find_startup_by_external_id('ph:' . $launch['id'])) {
+            $skipped++;
+            continue;
+        }
+        $post_id = wp_insert_post([
+            'post_type' => 'xf_startup',
+            'post_status' => 'publish',
+            'post_title' => $launch['name'],
+            'post_name' => sanitize_title($launch['name']),
+            'post_excerpt' => $launch['tagline'],
+            'post_content' => $launch['tagline'] ? wpautop(esc_html($launch['tagline'])) : '',
+            'post_date_gmt' => $launch['published'],
+            'meta_input' => [
+                '_xf_source' => 'producthunt',
+                '_xf_import_method' => 'feed',
+                '_xf_external_id' => 'ph:' . $launch['id'],
+                '_xf_tagline' => $launch['tagline'],
+                '_xf_ph_url' => $launch['url'],
+                '_xf_launched_at' => $launch['published'],
+                '_xf_launch_day' => get_date_from_gmt($launch['published'], 'Y-m-d'),
+                '_xf_website' => $launch['outbound'] ? xf_resolve_website($launch['outbound']) : '',
+            ],
+        ], true);
+        if (is_wp_error($post_id)) {
+            continue;
+        }
+        wp_set_object_terms($post_id, 'Just launched', 'xf_stage');
+        $created++;
+    }
+    return ['source' => 'feed', 'in_window' => count($entries), 'created' => $created, 'already_had' => $skipped];
+}
+
+/** The daily import: the API when a token is set, the public feed otherwise. */
+function xf_ph_import_daily() {
+    return xf_get_setting('ph_token') ? xf_ph_import_day(1) : xf_ph_import_feed(48, 15);
+}

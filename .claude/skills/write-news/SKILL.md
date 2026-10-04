@@ -15,6 +15,8 @@ Writes startup and funding news for 100xfounder.com. It runs on the owner's Clau
    - `XF_WP_APP_PASSWORD`, created in WordPress → Users → Profile → Application Passwords
 3. Run the helper in `.claude/skills/write-news/xf.sh`, for example `bash .claude/skills/write-news/xf.sh queue news 3`.
 
+> **If the `100xfounder` MCP server is connected** (see `docs/MCP.md`), use its tools instead of `xf.sh`: `list_queue`, `recent_posts`, `list_categories`, then `create_draft` with the same payload. Everything below still applies.
+
 ## Steps
 1. **Pick topics.**
    - Run `xf.sh queue news N` (default N=3). If the owner gave a topic, use that instead.

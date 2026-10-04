@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
 
 function xf_pipeline_stages() {
     return [
-        'import' => function () { return xf_ph_import_day(1); },
+        'import' => 'xf_ph_import_daily',
         'contacts' => function () { return xf_discover_contacts_for_new_startups(15); },
         // Replies are checked before sending so nobody who answered gets a follow-up.
         'replies' => 'xf_check_replies',
@@ -13,6 +13,8 @@ function xf_pipeline_stages() {
         'digest' => function () { return xf_queue_daily_digest(1) ?: ['queued' => null]; },
         'events' => 'xf_import_events',
         'jobs' => function () { return xf_sync_jobs(150); },
+        // After the sync: tell Google about job pages it hasn't seen, and Bing/IndexNow about everything new.
+        'indexing' => function () { return ['google_jobs' => xf_indexing_backfill(190), 'indexnow_pending' => count((array) get_option('xf_indexnow_pending', []))]; },
     ];
 }
 

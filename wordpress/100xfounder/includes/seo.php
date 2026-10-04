@@ -177,7 +177,8 @@ add_action('init', function () {
 
 add_filter('robots_txt', function ($output, $public) {
     if ($public) {
-        $output .= "\nSitemap: " . home_url('/wp-sitemap.xml') . "\nSitemap: " . home_url('/news-sitemap.xml') . "\n";
+        // WordPress core already lists wp-sitemap.xml; add only the news sitemap.
+        $output .= (strpos($output, 'wp-sitemap.xml') === false ? "\nSitemap: " . home_url('/wp-sitemap.xml') : '') . "\nSitemap: " . home_url('/news-sitemap.xml') . "\n";
     }
     return $output;
 }, 10, 2);
@@ -202,27 +203,129 @@ add_action('init', function () {
     }
 }, 1);
 
+function xf_indexnow_allowed() {
+    return xf_get_setting('indexnow_enabled') && wp_get_environment_type() !== 'local' && !preg_match('/localhost|127\.0\.0\.1/', home_url());
+}
+
+/** Sends URLs to IndexNow in one request (the API takes up to 10,000). Returns the HTTP status. */
+function xf_indexnow_submit(array $urls) {
+    $urls = array_values(array_unique(array_filter($urls)));
+    if (!$urls || !xf_indexnow_allowed()) {
+        return 0;
+    }
+    $code = 0;
+    foreach (array_chunk($urls, 10000) as $chunk) {
+        $r = wp_remote_post('https://api.indexnow.org/indexnow', [
+            'timeout' => 20,
+            'headers' => ['Content-Type' => 'application/json; charset=utf-8'],
+            'body' => wp_json_encode([
+                'host' => wp_parse_url(home_url(), PHP_URL_HOST),
+                'key' => xf_indexnow_key(),
+                'keyLocation' => home_url('/' . xf_indexnow_key() . '.txt'),
+                'urlList' => $chunk,
+            ]),
+        ]);
+        $code = is_wp_error($r) ? 0 : (int) wp_remote_retrieve_response_code($r);
+    }
+    update_option('xf_indexnow_last', ['at' => time(), 'urls' => count($urls), 'status' => $code], false);
+    return $code;
+}
+
+/** Published and updated pages are collected and sent in one batch a minute later (a job sync can publish hundreds). */
 add_action('transition_post_status', function ($new, $old, $post) {
-    if ($new !== 'publish' || !in_array($post->post_type, ['post', 'page', 'xf_startup', 'xf_spotlight', 'xf_event', 'xf_round'], true)) {
+    if (($new !== 'publish' && $old !== 'publish') || !in_array($post->post_type, ['post', 'page', 'xf_startup', 'xf_spotlight', 'xf_event', 'xf_round', 'xf_job', 'xf_guide'], true) || !xf_indexnow_allowed()) {
         return;
     }
-    if (!xf_get_setting('indexnow_enabled') || wp_get_environment_type() === 'local' || preg_match('/localhost|127\.0\.0\.1/', home_url())) {
-        return;
+    $pending = (array) get_option('xf_indexnow_pending', []);
+    $pending[] = get_permalink($post);
+    update_option('xf_indexnow_pending', array_slice(array_unique($pending), -10000), false);
+    if (!wp_next_scheduled('xf_indexnow_flush')) {
+        wp_schedule_single_event(time() + 60, 'xf_indexnow_flush');
     }
-    // Defer so the permalink is final.
-    wp_schedule_single_event(time() + 10, 'xf_indexnow_ping', [get_permalink($post)]);
 }, 10, 3);
 
-add_action('xf_indexnow_ping', function ($url) {
-    wp_remote_post('https://api.indexnow.org/indexnow', [
-        'timeout' => 10,
-        'blocking' => false,
-        'headers' => ['Content-Type' => 'application/json; charset=utf-8'],
-        'body' => wp_json_encode([
-            'host' => wp_parse_url(home_url(), PHP_URL_HOST),
-            'key' => xf_indexnow_key(),
-            'keyLocation' => home_url('/' . xf_indexnow_key() . '.txt'),
-            'urlList' => [$url],
-        ]),
-    ]);
+add_action('xf_indexnow_flush', function () {
+    $pending = (array) get_option('xf_indexnow_pending', []);
+    delete_option('xf_indexnow_pending');
+    xf_indexnow_submit($pending);
 });
+
+/** Every public URL we want indexed: sitemap entries plus the virtual tool and job landing pages. */
+function xf_all_public_urls() {
+    $urls = [home_url('/')];
+    $types = ['post', 'page', 'xf_job', 'xf_guide', 'xf_event', 'xf_round', 'xf_spotlight'];
+    foreach ($types as $t) {
+        if (!post_type_exists($t)) continue;
+        foreach (get_posts(['post_type' => $t, 'post_status' => 'publish', 'posts_per_page' => 5000, 'fields' => 'ids', 'no_found_rows' => true]) as $id) {
+            if (!xf_is_noindexed($id)) $urls[] = get_permalink($id);
+        }
+    }
+    foreach (xf_landing_urls() as $u) $urls[] = $u;
+    return array_values(array_unique($urls));
+}
+
+/** Respect the theme/plugin noindex rules for thin startup listings etc. */
+function xf_is_noindexed($post_id) {
+    return (bool) apply_filters('xf_is_noindexed', false, $post_id);
+}
+
+/** Tool pages, company pages and job landing pages with enough roles to be indexable. */
+function xf_landing_urls() {
+    $urls = [];
+    if (function_exists('xf_tools')) {
+        $urls[] = home_url('/tools/');
+        foreach (array_keys(xf_tools()) as $slug) $urls[] = home_url('/tools/' . $slug . '/');
+    }
+    if (post_type_exists('xf_job') && function_exists('xf_job_query_args')) {
+        $base = ['q' => '', 'where' => '', 'workplace' => '', 'function' => '', 'city' => ''];
+        $combos = [];
+        foreach (XF_JOB_FUNCTIONS as $fn) {
+            $combos[] = ['function' => $fn, 'city' => ''];
+            foreach (XF_JOB_CITIES as $c) $combos[] = ['function' => $fn, 'city' => $c];
+        }
+        foreach (XF_JOB_CITIES as $c) $combos[] = ['function' => '', 'city' => $c];
+        foreach ($combos as $c) {
+            $q = new WP_Query(array_merge(xf_job_query_args(array_merge($base, $c), 1, 1), ['fields' => 'ids']));
+            if ($q->found_posts < 5) continue; // Same threshold as the page's noindex rule.
+            $slug = $c['function'] && $c['city'] ? sanitize_title($c['function']) . '-jobs-in-' . sanitize_title($c['city'])
+                : ($c['function'] ? sanitize_title($c['function']) . '-jobs' : 'jobs-in-' . sanitize_title($c['city']));
+            $urls[] = home_url('/jobs/' . $slug . '/');
+        }
+        foreach (get_terms(['taxonomy' => 'xf_company', 'hide_empty' => true]) ?: [] as $t) {
+            if (!is_wp_error($t)) $urls[] = get_term_link($t);
+        }
+    }
+    return array_values(array_filter(array_unique($urls), 'is_string'));
+}
+
+/* ---- Sitemaps: drop the users list (it exposes login names), add tool and job landing pages ---- */
+
+add_filter('wp_sitemaps_add_provider', function ($provider, $name) {
+    return $name === 'users' ? false : $provider;
+}, 10, 2);
+
+add_action('init', function () {
+    if (!function_exists('wp_register_sitemap_provider') || !class_exists('WP_Sitemaps_Provider')) {
+        return;
+    }
+    if (!class_exists('XF_Landing_Sitemap')) {
+        class XF_Landing_Sitemap extends WP_Sitemaps_Provider {
+            public function __construct() {
+                $this->name = 'landing';
+                $this->object_type = 'landing';
+            }
+            public function get_url_list($page_num, $object_subtype = '') {
+                $urls = get_transient('xf_landing_urls');
+                if (!is_array($urls)) {
+                    $urls = xf_landing_urls();
+                    set_transient('xf_landing_urls', $urls, 6 * HOUR_IN_SECONDS);
+                }
+                return array_map(function ($u) { return ['loc' => $u]; }, array_slice($urls, ($page_num - 1) * 2000, 2000));
+            }
+            public function get_max_num_pages($object_subtype = '') {
+                return 1;
+            }
+        }
+    }
+    wp_register_sitemap_provider('landing', new XF_Landing_Sitemap());
+}, 20);

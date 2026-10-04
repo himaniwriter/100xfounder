@@ -45,6 +45,7 @@ require_once XF_DIR . 'includes/queue.php';
 require_once XF_DIR . 'includes/jobs.php';
 require_once XF_DIR . 'includes/tools.php';
 require_once XF_DIR . 'includes/guides.php';
+require_once XF_DIR . 'includes/mcp.php';
 
 if (is_admin()) {
     require_once XF_DIR . 'includes/admin.php';

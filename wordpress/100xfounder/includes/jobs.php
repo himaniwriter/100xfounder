@@ -362,9 +362,13 @@ function xf_sync_company_jobs(WP_Term $company) {
 }
 
 function xf_expire_job($id) {
+    // Read the public URL before unpublishing; a draft's permalink is ?p=ID.
+    $url = get_post_status($id) === 'publish' ? get_permalink($id) : '';
     update_post_meta($id, '_xf_expired', '1');
     wp_update_post(['ID' => $id, 'post_status' => 'draft']);
-    xf_indexing_notify(get_permalink($id) ?: home_url('/?p=' . $id), 'URL_DELETED');
+    if ($url && get_post_meta($id, '_xf_google_notified', true)) {
+        xf_indexing_notify($url, 'URL_DELETED');
+    }
 }
 
 /** Syncs companies, least recently synced first, within a time budget. */
@@ -423,36 +427,69 @@ function xf_google_access_token() {
     return $token;
 }
 
-/** Tells Google a job URL was added/updated or removed. Capped under the default 200/day quota. */
+/** Google Indexing API calls left today (default quota is 200; we keep a margin). */
+function xf_indexing_quota_left() {
+    return max(0, 190 - (int) get_transient('xf_indexing_count_' . gmdate('Ymd')));
+}
+
+/**
+ * Tells Google a job URL was added/updated or removed. Returns true when Google
+ * accepted it. Job pages only: Google allows this API for JobPosting pages.
+ */
 function xf_indexing_notify($url, $type = 'URL_UPDATED') {
-    if (!xf_get_setting('google_service_account') || preg_match('/localhost|127\.0\.0\.1/', $url)) {
-        return;
-    }
-    $key = 'xf_indexing_count_' . gmdate('Ymd');
-    $count = (int) get_transient($key);
-    if ($count >= 190) {
-        return;
+    if (!xf_get_setting('google_service_account') || !$url || preg_match('/localhost|127\.0\.0\.1/', $url) || !xf_indexing_quota_left()) {
+        return false;
     }
     $token = xf_google_access_token();
     if (!$token) {
-        return;
+        return false;
     }
-    set_transient($key, $count + 1, DAY_IN_SECONDS);
-    wp_remote_post('https://indexing.googleapis.com/v3/urlNotifications:publish', [
-        'timeout' => 10, 'blocking' => false,
+    $key = 'xf_indexing_count_' . gmdate('Ymd');
+    set_transient($key, (int) get_transient($key) + 1, DAY_IN_SECONDS);
+    $r = wp_remote_post('https://indexing.googleapis.com/v3/urlNotifications:publish', [
+        'timeout' => 15,
         'headers' => ['Authorization' => 'Bearer ' . $token, 'Content-Type' => 'application/json'],
         'body' => wp_json_encode(['url' => $url, 'type' => $type]),
     ]);
+    $code = is_wp_error($r) ? 0 : (int) wp_remote_retrieve_response_code($r);
+    if ($code !== 200) {
+        update_option('xf_indexing_last_error', ['at' => time(), 'code' => $code, 'body' => is_wp_error($r) ? $r->get_error_message() : mb_substr(wp_remote_retrieve_body($r), 0, 300)], false);
+    }
+    return $code === 200;
 }
 
 add_action('transition_post_status', function ($new, $old, $post) {
-    if ($post->post_type === 'xf_job' && $new === 'publish') {
+    if ($post->post_type === 'xf_job' && $new === 'publish' && $old !== 'publish') {
         wp_schedule_single_event(time() + 15, 'xf_indexing_job', [$post->ID]);
     }
 }, 10, 3);
 add_action('xf_indexing_job', function ($id) {
-    xf_indexing_notify(get_permalink($id), 'URL_UPDATED');
+    if (xf_indexing_notify(get_permalink($id), 'URL_UPDATED')) {
+        update_post_meta($id, '_xf_google_notified', time());
+    }
 });
+
+/**
+ * Daily backfill: open jobs Google hasn't been told about yet, newest first,
+ * within whatever quota is left today. Runs in the daily routine.
+ */
+function xf_indexing_backfill($max = 190) {
+    if (!xf_get_setting('google_service_account')) {
+        return ['skipped' => 'No Google service account key in Settings → Jobs.'];
+    }
+    $ids = get_posts(['post_type' => 'xf_job', 'post_status' => 'publish', 'posts_per_page' => min($max, xf_indexing_quota_left()), 'fields' => 'ids', 'orderby' => 'date', 'order' => 'DESC',
+        'meta_query' => [['key' => '_xf_google_notified', 'compare' => 'NOT EXISTS']]]);
+    $sent = 0;
+    foreach ($ids as $id) {
+        if (!xf_indexing_notify(get_permalink($id), 'URL_UPDATED')) {
+            break;
+        }
+        update_post_meta($id, '_xf_google_notified', time());
+        $sent++;
+    }
+    $left = (int) (new WP_Query(['post_type' => 'xf_job', 'post_status' => 'publish', 'posts_per_page' => 1, 'fields' => 'ids', 'meta_query' => [['key' => '_xf_google_notified', 'compare' => 'NOT EXISTS']]]))->found_posts;
+    return ['sent_to_google' => $sent, 'still_waiting' => $left, 'last_error' => $sent < count($ids) ? get_option('xf_indexing_last_error') : null];
+}
 
 /* ---- Queries used by the theme ---- */
 

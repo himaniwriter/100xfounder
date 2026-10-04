@@ -40,6 +40,12 @@ add_action('admin_post_xf_admin', function () {
         case 'stop_contact':
             $wpdb->update(xf_table('contacts'), ['status' => 'paused', 'next_send_at' => null, 'updated_at' => xf_now()], ['id' => $id]);
             break;
+        case 'submit_all':
+            $urls = xf_all_public_urls();
+            $code = xf_indexnow_submit($urls);
+            $g = xf_indexing_backfill(190);
+            $notice = sprintf('Sent %d URLs to IndexNow (HTTP %s). Google Indexing API: %s', count($urls), $code ?: 'not sent: IndexNow is off or this is a local site', isset($g['skipped']) ? $g['skipped'] : $g['sent_to_google'] . ' job pages sent, ' . $g['still_waiting'] . ' waiting for the next days\' quota.');
+            break;
         case 'set_home':
             $pages = get_option('xf_pages', []);
             update_option('show_on_front', 'page');
@@ -128,6 +134,7 @@ function xf_admin_dashboard() {
                 <?php foreach (array_keys(xf_pipeline_stages()) as $stage) : ?>
                     <a class="button" href="<?php echo esc_url(xf_admin_action_url('run', ['stage' => $stage])); ?>">Run <?php echo esc_html($stage); ?></a>
                 <?php endforeach; ?>
+                <a class="button" href="<?php echo esc_url(xf_admin_action_url('submit_all')); ?>">Submit all URLs for indexing</a>
             </p>
             <?php if ($last_run) : ?>
                 <h3>Last run: <?php echo esc_html(wp_date('M j, H:i', $last_run['at'])); ?></h3>
@@ -221,6 +228,9 @@ function xf_settings_fields() {
         ],
         'Jobs' => [
             'google_service_account' => ['Google Indexing API key (JSON)', 'secret_textarea', 'Optional. Paste the JSON key of a Google Cloud service account that is an Owner in Search Console. New and removed jobs are then sent to Google within minutes (job pages only, as Google allows). Leave blank to keep the saved key.'],
+        ],
+        'Claude (MCP)' => [
+            'mcp_allow_publish' => ['Allow publishing through MCP', 'checkbox', 'Off by default: Claude can only create and edit drafts (Pending review). Turn on to add a publish tool that Claude may use after you approve a specific post in chat. The Claude user also needs the Editor role. Connection URL: ' . rest_url('xf/v1/mcp')],
         ],
         'Search & social' => [
             'gsc_verification' => ['Google Search Console code', 'text', 'Only the content="…" value of the verification meta tag.'],

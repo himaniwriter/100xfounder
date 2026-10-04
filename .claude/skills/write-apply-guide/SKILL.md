@@ -12,6 +12,8 @@ Writes evergreen "How to apply at {company}" guides (pillar 2: Jobs in India). R
 2. Needs `XF_SITE_URL`, `XF_WP_USER` (Author role) and `XF_WP_APP_PASSWORD`. If any are missing, stop and ask the owner.
 3. Uses the same helper as /write-news: `bash .claude/skills/write-news/xf.sh`.
 
+> **If the `100xfounder` MCP server is connected** (see `docs/MCP.md`), use its tools instead of `xf.sh`: `list_queue`, `recent_posts`, `list_categories`, then `create_draft` with the same payload. Everything below still applies.
+
 ## Steps
 1. **Pick the company.**
    - If the owner named one, use it. Otherwise run `xf.sh queue apply-guide 3` and take the top item.
