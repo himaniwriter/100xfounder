@@ -30,9 +30,9 @@ The full plan is in `docs/PRD.md`. Its open questions and approval status are tr
 ## UI design
 
 - **Source of truth:** the owner's design canvas, https://claude.ai/artifact/1M6rZmasXRJJTQ7LxcreH8 ("100Xfounder Revamp"). It's a dark editorial portal:
-  - colours: `#0b0b0c` background, `#f2f2ef` text, `#ff6a3d` accent
+  - colours: `#0b0b0c` background, `#f2f2ef` text, violet accent `#b07cff` (owner switched from orange on 2026-10-04)
   - type: Inter, plus Geist Mono for labels
-  - signature: the orange → violet → blue hairline divider
+  - signature: an animated purple gradient (`#7c5cff → #b07cff → #ff6ad5 → #6a7bff`) on the hairline divider, accent labels, ticker and progress bar; it stops under `prefers-reduced-motion`
 - **Build:** a custom WordPress theme (`wordpress/100xfounder-theme/`) that matches it closely. The plugin holds the logic.
 - **New pages:** design them on the same canvas first and get approval, then build.
 - **Sample content:** never publish the canvas's sample headlines or numbers. Live pages show only real, sourced content.
