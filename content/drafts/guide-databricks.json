@@ -1,0 +1,87 @@
+{
+  "type": "xf_guide",
+  "title": "How to Get a Job at Databricks India in 2026: Process, Rounds & Tips",
+  "excerpt": "Databricks has 94 open roles in India, mostly in Bengaluru. See its official hiring stages, the reported interview rounds, and tips to prepare before you apply.",
+  "content": "<p>Databricks, the San Francisco data and AI platform company, has been building out its Bengaluru engineering centre since 2023, and India is now one of its busier hiring locations. As of 4 October 2026, its official Greenhouse job board lists 94 open roles based in India. This guide explains which teams are hiring, how Databricks describes its own interview process, and what candidates report about the rounds, so you can prepare properly before you apply.</p>\n\n<p><em>100Xfounder is an independent site. This guide is not official and we are not affiliated with or endorsed by Databricks. Always check details with your recruiter and the official careers site.</em></p>\n\n<h2>Databricks in India: a quick background</h2>\n<p>Databricks has had an India business since 2019. In May 2023, Anil Bhasin, Databricks' Vice President for India and South Asia, told InfoWorld the company planned to grow its 250-person Indian workforce by at least 50% that year, adding sales, technical specialists, solutions architects and support staff. In the same period it set up its first R&amp;D hub in the Asia Pacific region, in Bengaluru.</p>\n<p>According to a Databricks engineering blog post from September 2023, the Bengaluru development centre opened in May 2023. It hired founding engineers and both graduates and experienced engineers, and ran its first internship cohort with students from five IITs (Chennai, Guwahati, Kanpur, Kharagpur and Mumbai).</p>\n<p>In April 2025 Databricks said it would invest more than US$250 million in India over three years. The plan included a 105,000 sq ft R&amp;D office at Bagmane Capital Park in Bengaluru, more than 100 additional R&amp;D engineers on top of the 100+ already there, and a target of over 750 employees in India. In September 2025 it appointed Kamalkanth Tummala, previously a Salesforce vice president, as India country manager.</p>\n\n<h2>Which teams are hiring in India now</h2>\n<p>We checked Databricks' Greenhouse job board on 4 October 2026. Of the 94 India-based openings, 72 list Bengaluru as their only location. The rest are in Mumbai, Pune or Delhi, span several Indian cities, or are remote within India. Grouped by function:</p>\n<ul>\n<li><strong>R&amp;D engineering (about 49 roles).</strong> Senior, staff and senior staff software engineers across backend, infrastructure, networking, data platform, ingestion, observability, search, billing (\"Money\"), multi-cloud efficiency and partner ecosystem, plus engineering managers and directors.</li>\n<li><strong>Field engineering and services (about 25).</strong> Solutions architects (including AI/ML specialists and financial services and public sector roles), forward deployed engineers and deployment strategists.</li>\n<li><strong>Finance and business systems (about 11).</strong> SAP, payroll, accounts payable, collections and finance data roles.</li>\n<li><strong>Sales, support and others (about 9).</strong> Account executives, technical solutions engineers for Spark and ML, and sales operations.</li>\n</ul>\n<p>Two things stand out. First, several engineering posts say Databricks is setting up 10 or 14 new teams \"from scratch\" in Bengaluru, so new hires often join early-stage teams. Second, almost every listing asks for experience: most senior engineering roles want 5–7+ years and staff roles 10–15+. There were no India internship or new-grad postings on the board on the day we checked. You can browse the current list on our <a href=\"/jobs/company/databricks/\">Databricks jobs page</a>, which is refreshed from the same official feed.</p>\n\n<h2>What Databricks looks for</h2>\n<p>Databricks publishes six culture principles: being customer obsessed, raising the bar, truth seeking, operating from first principles, a bias for action, and putting the company first. Its interview prep page says interviews are structured around role-specific competencies and these principles. It also says to expect behavioural prompts such as \"Tell me about a time…\".</p>\n<p>The engineering job posts repeat a few requirements: production experience in Python, Java, Scala, C++, Go or Rust; building large-scale distributed systems; and work on SaaS or service-oriented platforms. Customer-facing field roles add pre-sales or consulting experience and the ability to explain technical ideas to non-technical audiences. Several Mumbai, Bengaluru and Delhi solutions architect roles are listed as hybrid.</p>\n\n<h2>The hiring process</h2>\n<p>Databricks' \"Interviewing with us\" page sets out seven stages:</p>\n<ol>\n<li><strong>Find a role</strong> on the careers site.</li>\n<li><strong>Apply online.</strong></li>\n<li><strong>Talk to Talent Acquisition.</strong> A recruiter call about your background and the role.</li>\n<li><strong>Skill assessments.</strong> A pre-onsite screen, which can be a hiring manager screen, a technical assessment or another skills check, depending on the role.</li>\n<li><strong>Interviews.</strong> An onsite loop, usually four to six interviews with different team members. Select roles, especially go-to-market and executive ones, also include a presentation.</li>\n<li><strong>Reference checks.</strong></li>\n<li><strong>Decision and offer.</strong></li>\n</ol>\n<p>Databricks says the whole process typically takes two to three months, depending on role, region and team. It aims to share feedback within 48 hours of the final interview, though that can vary. Interviews are virtual on Google Meet. For engineering, its \"Engineering at Databricks\" page lists a hiring manager phone screen, a technical phone screen, virtual panel interviews, reference checks and a hiring committee.</p>\n\n<h2>Interview rounds by role</h2>\n<h3>Software engineering</h3>\n<p>Databricks does not publish its engineering questions. interviewing.io's guide, which it says is based on conversations with Databricks engineers and candidates, describes a recruiter call, an hour-long coding screen on CoderPad and a hiring manager call. These are followed by an onsite of roughly four to five hours: two algorithm rounds, a concurrency and multithreading round, a system design round in Google Docs and a behavioural round. The same guide reports that candidates are matched to a team early, that some switch teams after the onsite, and that the process can take up to eight weeks. These are third-party and candidate reports, not official facts, and the loop for India roles or senior levels may differ.</p>\n<h3>Field engineering, sales and other roles</h3>\n<p>For customer-facing and leadership roles, Databricks' prep page says a presentation may be part of the loop. It offers downloadable interview prep guides for Engineering (including Field Engineering), Product and Sales on its interview page. Read the one for your function before the recruiter call.</p>\n\n<h2>How to stand out</h2>\n<ul>\n<li><strong>Apply to the specific team.</strong> India posts name the team (Networking, Search, Ingestion, Observability). Tailor your CV to that system's problems instead of sending a generic profile.</li>\n<li><strong>Show distributed systems work you owned end to end.</strong> The posts repeatedly ask for systems built \"from scratch\". Lead with design decisions, scale and what broke.</li>\n<li><strong>Practise concurrency, not just algorithms.</strong> Candidate reports consistently mention a dedicated concurrency round.</li>\n<li><strong>Prepare culture-principle stories.</strong> Have two or three examples each for customer focus, data-driven decisions and acting quickly, told in a situation, action, result format.</li>\n<li><strong>Know the product.</strong> Databricks runs an India Data + AI Academy with self-paced courses and labs. Hands-on time with the platform helps, especially for solutions architect roles.</li>\n<li><strong>Protect your current employer's information.</strong> Databricks explicitly asks candidates not to share confidential material and not to use work computers for interviews.</li>\n</ul>\n\n<h2>Referrals, timelines and offers</h2>\n<p>Every India role is applied for through the official careers site, which runs on Greenhouse. If you know someone at Databricks, ask them about the team and the work, but there is no paid route in. Ignore anyone who charges for a \"guaranteed\" referral. Plan for the two-to-three-month window Databricks itself gives. Databricks does not publish India salary bands, and we don't quote unverified figures. When an offer arrives, use our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a> to turn the CTC into monthly take-home pay, and compare it with similar <a href=\"/jobs/ai-ml-jobs-in-bengaluru/\">AI and ML jobs in Bengaluru</a>.</p>\n\n<h2>FAQs</h2>\n<h3>Does Databricks hire freshers in India?</h3>\n<p>Its university recruiting page lists Bangalore as a hub for interns and new graduates, with applications typically opening in August. On 4 October 2026, though, its board showed no India internship or new-grad openings, so check back during the next campus cycle.</p>\n<h3>How long does the Databricks hiring process take?</h3>\n<p>Databricks says it typically takes two to three months, depending on role, region and team.</p>\n<h3>How many interview rounds are there?</h3>\n<p>Officially, a recruiter call, a pre-onsite screen and an onsite loop of usually four to six interviews, plus a presentation for some roles.</p>\n<h3>Where are Databricks' India offices?</h3>\n<p>Most current roles are in Bengaluru, home to its R&amp;D centre at Bagmane Capital Park. Others are listed in Mumbai, Delhi, Pune and remote within India.</p>\n\n<p>Ready to apply? See every open <a href=\"/jobs/company/databricks/\">Databricks role in India</a> or browse all <a href=\"/jobs/\">jobs on 100Xfounder</a>.</p>",
+  "fields": {
+    "company_slug": "databricks",
+    "hiring_for": "Engineering, Field Engineering, Finance, Sales, Support",
+    "process_length": "2–3 months (Databricks' stated typical range)",
+    "rounds": "Onsite loop of 4–6 interviews (per Databricks)",
+    "careers_url": "https://www.databricks.com/company/careers"
+  },
+  "sources": [
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs",
+      "publisher": "Databricks (Greenhouse job board)",
+      "date": "2026-10-04",
+      "claim": "94 open India roles on 4 Oct 2026 (72 Bengaluru-only); team/function breakdown, experience requirements, hybrid listings, no India intern/new-grad posts"
+    },
+    {
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7648674002",
+      "publisher": "Databricks",
+      "date": "2026-09-21",
+      "claim": "Job post: setting up 14 new teams from scratch in Bengaluru"
+    },
+    {
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8320187002",
+      "publisher": "Databricks",
+      "date": "2026-09-21",
+      "claim": "Job post: 10 new teams being set up from scratch in Bengaluru; distributed-systems requirements"
+    },
+    {
+      "url": "https://www.databricks.com/company/careers/interview-prep",
+      "publisher": "Databricks",
+      "date": "2026-10-04",
+      "claim": "Seven hiring stages, 2–3 month timeline, 4–6 onsite interviews, presentation for select roles, 48-hour feedback aim, Google Meet, behavioural prompts, confidentiality guidance, prep guides (page undated; accessed date)"
+    },
+    {
+      "url": "https://www.databricks.com/company/careers/engineering-at-databricks",
+      "publisher": "Databricks",
+      "date": "2026-10-04",
+      "claim": "Engineering stages: hiring manager screen, technical screen, virtual panel, references, hiring committee (page undated; accessed date)"
+    },
+    {
+      "url": "https://www.databricks.com/company/careers/culture",
+      "publisher": "Databricks",
+      "date": "2026-10-04",
+      "claim": "Six culture principles (page undated; accessed date)"
+    },
+    {
+      "url": "https://www.databricks.com/company/careers/university-recruiting",
+      "publisher": "Databricks",
+      "date": "2026-10-04",
+      "claim": "Bangalore listed as intern/new-grad hub; applications typically open in August (page undated; accessed date)"
+    },
+    {
+      "url": "https://databricks.com/blog/introducing-databricks-bengaluru-development-center",
+      "publisher": "Databricks Blog",
+      "date": "2023-09-05",
+      "claim": "Bengaluru development centre opened May 2023; founding engineers, grads and experienced hires; interns from five IITs"
+    },
+    {
+      "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-invest-over-us250-million-india-over-next-three-years",
+      "publisher": "Databricks",
+      "date": "2025-04-24",
+      "claim": "US$250M+ India investment over three years; 105,000 sq ft Bagmane Capital Park office; 100+ engineers plus 100+ more R&D hires; 750+ employees target; India Data + AI Academy"
+    },
+    {
+      "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-appoints-kamalkanth-tummala-indias-country-manager",
+      "publisher": "Databricks",
+      "date": "2025-09-15",
+      "claim": "Kamalkanth Tummala appointed VP and India country manager; ex-Salesforce VP"
+    },
+    {
+      "url": "https://www.infoworld.com/article/2338430/databricks-doubles-down-in-india-with-staff-hires-new-randd-hub.html",
+      "publisher": "InfoWorld",
+      "date": "2023-05-05",
+      "claim": "Anil Bhasin: grow 250-person India workforce by 50%+ in 2023; India operations since 2019; first APJ R&D hub in Bengaluru"
+    },
+    {
+      "url": "https://interviewing.io/databricks-interview-questions",
+      "publisher": "interviewing.io (third-party, candidate/engineer reports)",
+      "date": "2026-10-04",
+      "claim": "Reported engineering loop: recruiter call, CoderPad screen, HM call, onsite with algorithms x2, concurrency, system design (Google Docs), behavioural; up to 8 weeks; team matching (undated; accessed date)"
+    }
+  ]
+}

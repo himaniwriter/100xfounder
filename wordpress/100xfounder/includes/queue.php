@@ -50,6 +50,50 @@ function xf_queue_item_to_array($row) {
     ];
 }
 
+/** Auto-publishing is the owner's switch (Settings → Claude (MCP)) plus the user's own publish rights. */
+function xf_can_auto_publish() {
+    return function_exists('xf_mcp_publish_enabled') && xf_mcp_publish_enabled() && current_user_can('publish_posts');
+}
+
+/**
+ * Sideloads a draft's openly licensed images: the first becomes the featured image,
+ * the rest replace <!-- xf-image-N --> markers as credited figures. Each attachment
+ * keeps its licence, credit and source page.
+ */
+function xf_attach_images($post_id, array $images, $title) {
+    require_once ABSPATH . 'wp-admin/includes/media.php';
+    require_once ABSPATH . 'wp-admin/includes/file.php';
+    require_once ABSPATH . 'wp-admin/includes/image.php';
+    $content = (string) get_post_field('post_content', $post_id);
+    foreach (array_values($images) as $i => $img) {
+        $url = esc_url_raw((string) ($img['url'] ?? ''));
+        $alt = sanitize_text_field((string) ($img['alt'] ?? ''));
+        $credit = sanitize_text_field((string) ($img['credit'] ?? ''));
+        $source = esc_url_raw((string) ($img['source_page'] ?? ''));
+        $att = $url && wp_http_validate_url($url) ? xf_sideload_image($url, $post_id, $alt ?: $title) : 0;
+        if (!$att) {
+            $content = str_replace('<!-- xf-image-' . ($i + 1) . ' -->', '', $content);
+            continue;
+        }
+        update_post_meta($att, '_wp_attachment_image_alt', $alt);
+        update_post_meta($att, '_xf_image_credit', $credit);
+        update_post_meta($att, '_xf_image_license', sanitize_text_field((string) ($img['license'] ?? '')));
+        update_post_meta($att, '_xf_image_source', $source);
+        if ($i === 0) {
+            set_post_thumbnail($post_id, $att);
+            update_post_meta($post_id, '_xf_image_credit', $credit);
+            continue;
+        }
+        $caption = sanitize_text_field((string) ($img['caption'] ?? ''));
+        $credit_html = $source ? '<a href="' . esc_url($source) . '" rel="nofollow noopener" target="_blank">' . esc_html($credit) . '</a>' : esc_html($credit);
+        $figure = '<figure class="xf-figure">' . wp_get_attachment_image($att, 'large', false, ['alt' => $alt, 'loading' => 'lazy'])
+            . '<figcaption>' . esc_html($caption) . ($caption && $credit ? ' · ' : '') . $credit_html . '</figcaption></figure>';
+        $marker = '<!-- xf-image-' . ($i + 1) . ' -->';
+        $content = strpos($content, $marker) !== false ? str_replace($marker, $figure, $content) : $content . $figure;
+    }
+    wp_update_post(['ID' => $post_id, 'post_content' => preg_replace('/<!-- xf-image-\d+ -->/', '', $content)]);
+}
+
 /** Creates a pending draft from a skill's payload. Returns the post ID or WP_Error. */
 function xf_create_draft(array $d, $author_id) {
     $type = in_array($d['type'] ?? 'post', ['post', 'xf_round', 'xf_event', 'xf_guide'], true) ? $d['type'] : 'post';
@@ -64,6 +108,7 @@ function xf_create_draft(array $d, $author_id) {
     }
 
     $postarr = [
+        'post_name' => sanitize_title((string) ($d['slug'] ?? '')),
         'post_type' => $type,
         'post_status' => 'pending',
         'post_author' => $author_id,
@@ -96,6 +141,16 @@ function xf_create_draft(array $d, $author_id) {
         $attachment = function_exists('xf_sideload_image') ? xf_sideload_image($d['image_url'], $post_id, $title) : 0;
         if ($attachment) {
             set_post_thumbnail($post_id, $attachment);
+        }
+    }
+    if (!empty($d['images']) && is_array($d['images'])) {
+        xf_attach_images($post_id, array_slice($d['images'], 0, 8), $title);
+    }
+    if (!empty($d['publish_at']) && xf_can_auto_publish()) {
+        // Owner-enabled auto-publishing: schedule (or publish) instead of leaving it pending.
+        $ts = strtotime((string) $d['publish_at']);
+        if ($ts) {
+            wp_update_post(['ID' => $post_id, 'post_status' => $ts > time() ? 'future' : 'publish', 'post_date_gmt' => gmdate('Y-m-d H:i:s', $ts), 'post_date' => get_date_from_gmt(gmdate('Y-m-d H:i:s', $ts)), 'edit_date' => true]);
         }
     }
     if (!empty($d['queue_id'])) {
@@ -140,7 +195,7 @@ add_action('rest_api_init', function () {
             if (is_wp_error($post_id)) {
                 return $post_id;
             }
-            return ['id' => $post_id, 'status' => 'pending', 'edit_url' => admin_url('post.php?post=' . $post_id . '&action=edit'), 'preview_url' => get_preview_post_link($post_id)];
+            return ['id' => $post_id, 'status' => get_post_status($post_id), 'url' => get_permalink($post_id), 'edit_url' => admin_url('post.php?post=' . $post_id . '&action=edit'), 'preview_url' => get_preview_post_link($post_id)];
         },
     ]);
 

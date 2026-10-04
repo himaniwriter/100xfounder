@@ -237,6 +237,7 @@ add_action('wp_head', function () {
             'publisher' => xf_publisher_schema(),
             'mainEntityOfPage' => get_permalink($post),
             'articleSection' => $cat ? $cat->name : null,
+            'inLanguage' => function_exists('xf_post_lang') ? xf_post_lang($post->ID) : 'en',
             'citation' => $citations ?: null,
         ]));
         $crumbs = [['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => home_url('/')]];
@@ -281,8 +282,8 @@ add_action('init', function () {
     echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">' . "\n";
     foreach ($posts as $p) {
         printf(
-            "<url><loc>%s</loc><news:news><news:publication><news:name>%s</news:name><news:language>en</news:language></news:publication><news:publication_date>%s</news:publication_date><news:title>%s</news:title></news:news></url>\n",
-            esc_url(get_permalink($p)), esc_html(get_bloginfo('name')), esc_html(get_the_date('c', $p)), esc_html(wp_strip_all_tags(get_the_title($p)))
+            "<url><loc>%s</loc><news:news><news:publication><news:name>%s</news:name><news:language>%s</news:language></news:publication><news:publication_date>%s</news:publication_date><news:title>%s</news:title></news:news></url>\n",
+            esc_url(get_permalink($p)), esc_html(get_bloginfo('name')), esc_html(strtok(function_exists('xf_post_lang') ? xf_post_lang($p->ID) : 'en', '-')), esc_html(get_the_date('c', $p)), esc_html(wp_strip_all_tags(get_the_title($p)))
         );
     }
     echo '</urlset>';

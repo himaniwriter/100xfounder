@@ -343,6 +343,14 @@ a:hover .ph img{transform:scale(1.05);filter:saturate(1)}
 .crumbs a{color:var(--t2)}.crumbs a:hover{color:var(--tx)}
 .job-body{max-width:760px}
 .job-body p,.job-body li{font-size:16px;line-height:1.7;color:#d6d6d2}
+.job-body p{margin:0 0 14px}
+.job-body h3{margin:32px 0 12px;font-size:13px;font-family:'Geist Mono',ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--ac);font-weight:500}
+.job-body h3:first-child{margin-top:0}
+.job-body ul{margin:0 0 18px;padding:0;list-style:none}
+.job-body li{position:relative;padding:7px 0 7px 22px;border-bottom:1px solid var(--ln)}
+.job-body li:last-child{border-bottom:0}
+.job-body li::before{content:'';position:absolute;left:2px;top:17px;width:6px;height:6px;border-radius:2px;background:var(--ac)}
+.job-body b,.job-body strong{color:var(--tx);font-weight:600}
 .job-body h2,.job-body h3{margin:32px 0 12px;font-size:20px;letter-spacing:-.02em;font-weight:600}
 .job-body ul{padding-left:20px}
 @media (max-width:860px){.jsearch .fp+.fp{border-left:0;border-top:1px solid var(--ln2)}.jsearch button{width:100%}.facts>div+div{border-left:0;padding-left:0}}
@@ -367,3 +375,9 @@ body{background-image:radial-gradient(1100px 420px at 50% -220px,rgba(124,92,255
 .home-start .job-mini .m{display:block;font-size:13px;color:var(--t2);margin-top:2px}
 .tool-mini{display:flex;flex-direction:column;gap:6px;padding:18px;border:1px solid var(--ln);border-radius:10px;transition:border-color .25s,background .25s}
 .tool-mini:hover{border-color:var(--ln2);background:var(--bg2)}
+
+/* Credited, openly licensed article images (inserted by the draft API). */
+.xf-figure{margin:32px 0}
+.xf-figure img{display:block;width:100%;height:auto;border-radius:6px;background:#17181b}
+.xf-figure figcaption{margin-top:10px;font-size:13px;line-height:1.5;color:var(--t3)}
+.xf-figure figcaption a{color:var(--t2);border-bottom:1px solid var(--ln2)}

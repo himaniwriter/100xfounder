@@ -26,6 +26,11 @@ function xf_news_categories() {
         'founder-stories' => 'Founder Stories',
         'in-depth' => 'In Depth',
         'next-wave' => 'Next Wave',
+        // Added 2026-10-04: salary and career explainers, and international coverage.
+        'careers-salary' => 'Careers & Salary',
+        'global' => 'Global',
+        'francais' => 'Français',
+        'deutsch' => 'Deutsch',
     ];
 }
 

@@ -32,7 +32,11 @@ while (have_posts()) :
             </div>
         </div>
         <div class="facts in" style="margin-top:40px;animation-delay:.18s">
-            <div><div class="k" style="font-size:10px">Location</div><div class="v"><?php echo esc_html(get_post_meta($id, '_xf_location', true) ?: $city); ?></div></div>
+            <div><div class="k" style="font-size:10px">Location</div><div class="v"><?php
+                // Multi-city roles list every city; show three and a count.
+                $locs = array_values(array_unique(array_filter(array_map('trim', preg_split('#\s*/\s*|;#', (string) get_post_meta($id, '_xf_location', true))))));
+                echo esc_html($locs ? implode(', ', array_slice($locs, 0, 3)) . (count($locs) > 3 ? sprintf(' +%d more', count($locs) - 3) : '') : $city);
+            ?></div></div>
             <div><div class="k" style="font-size:10px">Workplace</div><div class="v"><?php echo esc_html(get_post_meta($id, '_xf_workplace', true) . ' · ' . get_post_meta($id, '_xf_type', true)); ?></div></div>
             <div><div class="k" style="font-size:10px">Level</div><div class="v"><?php echo esc_html(get_post_meta($id, '_xf_level', true) ?: '—'); ?></div></div>
             <div><div class="k" style="font-size:10px">Pay</div><div class="v mono"><?php echo esc_html($salary ?: 'Not disclosed'); ?></div></div>

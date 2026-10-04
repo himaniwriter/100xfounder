@@ -614,9 +614,53 @@ add_filter('document_title_parts', function ($parts) {
     return $parts;
 });
 
-/** Feed descriptions sometimes carry their own <h1>; the job title is the page's only one. */
+/**
+ * Feed descriptions arrive in every shape: Lever sends <div>s and <br>s with
+ * private-use or "•" bullet glyphs, Greenhouse sends real lists, some send bold
+ * lines as headings. Rebuild them into one clean form: <h3> for short "Heading:"
+ * lines and feed headings, <ul> for bullet runs, <p> for everything else.
+ */
+function xf_job_clean_html($html) {
+    $html = wp_kses((string) $html, ['a' => ['href' => true], 'b' => [], 'strong' => [], 'em' => [], 'i' => [], 'ul' => [], 'ol' => [], 'li' => [], 'p' => [], 'br' => [], 'div' => [], 'h1' => [], 'h2' => [], 'h3' => [], 'h4' => [], 'h5' => []]);
+    $html = str_replace(["\xc2\xa0", '&nbsp;'], ' ', $html);
+    $html = preg_replace('#<h[1-5][^>]*>(.*?)</h[1-5]>#is', "\n##$1\n", $html);
+    $html = preg_replace('#<li[^>]*>(.*?)</li>#is', "\n• $1\n", $html);
+    $html = preg_replace('#</?(ul|ol|div|p)[^>]*>|<br\s*/?>#i', "\n", $html);
+    $out = [];
+    $list = [];
+    $flush = function () use (&$list, &$out) {
+        if ($list) {
+            $out[] = '<ul><li>' . implode('</li><li>', $list) . '</li></ul>';
+            $list = [];
+        }
+    };
+    foreach (preg_split('/\n+/', $html) as $line) {
+        $line = trim($line);
+        $plain = trim(wp_strip_all_tags($line));
+        if ($plain === '') {
+            continue;
+        }
+        // Bullet glyphs feeds use: • ▪ ◦ ● · – - * and private-use characters (U+E000–U+F8FF).
+        if (preg_match('/^(?:<(?:b|strong)>)?\s*(?:[\x{2022}\x{25AA}\x{25E6}\x{25CF}\x{00B7}\x{2013}\x{2014}*\-]|[\x{E000}-\x{F8FF}])\s*/u', $line, $m)) {
+            $list[] = trim(preg_replace('/^\s*(?:[\x{2022}\x{25AA}\x{25E6}\x{25CF}\x{00B7}\x{2013}\x{2014}*\-]|[\x{E000}-\x{F8FF}])\s*/u', '', strpos($line, '<') === 0 ? preg_replace('/^<(b|strong)>\s*/', '<$1>', $line) : $line));
+            continue;
+        }
+        $flush();
+        $is_heading = strpos($line, '##') === 0
+            || (mb_strlen($plain) <= 60 && substr($plain, -1) === ':' )
+            || (mb_strlen($plain) <= 60 && preg_match('#^<(b|strong)>.*</\1>$#i', $line));
+        if ($is_heading) {
+            $out[] = '<h3>' . esc_html(rtrim(ltrim($plain, '# '), ':')) . '</h3>';
+        } else {
+            $out[] = '<p>' . $line . '</p>';
+        }
+    }
+    $flush();
+    return implode("\n", $out);
+}
+
 add_filter('the_content', function ($content) {
-    return is_singular('xf_job') ? preg_replace('/<(\/?)h1\b/i', '<$1h2', $content) : $content;
+    return is_singular('xf_job') ? xf_job_clean_html($content) : $content;
 }, 20);
 
 /** Expired jobs: noindex while they still resolve (e.g. via a cached link). */
