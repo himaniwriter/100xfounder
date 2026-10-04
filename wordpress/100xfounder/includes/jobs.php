@@ -13,7 +13,8 @@ if (!defined('ABSPATH')) {
 const XF_JOB_FUNCTIONS = ['Engineering', 'AI & ML', 'Data', 'Product', 'Design', 'Marketing', 'Sales', 'Operations'];
 const XF_JOB_CITIES = ['Bengaluru', 'Mumbai', 'Delhi NCR', 'Hyderabad', 'Pune', 'Chennai', 'Kolkata', 'Ahmedabad', 'Remote'];
 
-add_action('init', function () {
+/** Registered on init, and called directly on activation so seeding can create company terms. */
+function xf_register_job_types() {
     register_post_type('xf_job', [
         'labels' => ['name' => 'Jobs', 'singular_name' => 'Job', 'add_new_item' => 'Add job', 'edit_item' => 'Edit job'],
         'public' => true,
@@ -33,7 +34,8 @@ add_action('init', function () {
     ]);
     // /jobs/ai-ml-jobs-in-bengaluru/, /jobs/marketing-jobs/, /jobs/jobs-in-pune/
     add_rewrite_rule('^jobs/([a-z0-9-]+)/?$', 'index.php?pagename=jobs&xf_jobs_slug=$matches[1]', 'top');
-});
+}
+add_action('init', 'xf_register_job_types');
 
 add_filter('query_vars', function ($vars) {
     $vars[] = 'xf_jobs_slug';

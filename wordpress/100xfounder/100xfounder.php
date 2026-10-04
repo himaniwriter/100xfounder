@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 }
 
 define('XF_VERSION', '1.0.0');
-define('XF_DB_VERSION', '3');
+define('XF_DB_VERSION', '4');
 define('XF_FILE', __FILE__);
 define('XF_DIR', plugin_dir_path(__FILE__));
 define('XF_URL', plugin_dir_url(__FILE__));
@@ -56,6 +56,7 @@ register_deactivation_hook(__FILE__, 'xf_deactivate');
 function xf_activate() {
     xf_install_schema();
     xf_register_post_types();
+    xf_register_job_types();
     xf_create_pages();
     xf_create_legal_pages();
     xf_create_news_categories();
