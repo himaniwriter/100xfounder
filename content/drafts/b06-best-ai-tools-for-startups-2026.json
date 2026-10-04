@@ -1,0 +1,146 @@
+{
+  "type": "post",
+  "slug": "best-ai-tools-for-startups-2026",
+  "title": "Best AI tools for startups in 2026: a stack for every team",
+  "excerpt": "A practical AI stack for startups in 2026: assistants, coding, docs, meetings, design, marketing, sales and support tools, with prices as of October 2026.",
+  "category": "ai-news",
+  "tags": [
+    "AI tools",
+    "startup tools",
+    "ChatGPT",
+    "Claude",
+    "GitHub Copilot",
+    "Cursor",
+    "Notion AI",
+    "AI stack"
+  ],
+  "content": "<p>The best AI tools for startups in 2026 are a small, deliberate stack, not a long list. Pick one general assistant for everyone (ChatGPT, Claude or the Gemini and Copilot features bundled with your office suite), one coding tool for engineers (GitHub Copilot, Cursor or Claude Code), AI built into your docs and meetings, and specialist tools only for the teams that need them: marketing, sales and support. This guide sets out a stack by team and by funding stage, with prices from each vendor's own page as of 4 October 2026.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>A solo founder can run a capable AI stack for about $30 to $40 a month: a $20 assistant plus a $10 to $20 coding tool, with free tiers for notes, design and CRM.</li>\n<li>Team plans matter more than model choice. ChatGPT Business, Claude Team and Google Workspace add admin controls and data terms that consumer plans don't have.</li>\n<li>Many vendors now charge per seat plus usage credits (GitHub Copilot, Figma, Notion agents, HubSpot), so budget for usage, not just headcount.</li>\n<li>For marketing, sales and support we've written separate in-depth guides; this pillar summarises them.</li>\n<li>No affiliate links appear in this article, and no vendor paid to be included.</li>\n</ul>\n\n<h2>How we chose these tools</h2>\n<p>We looked for tools that a startup team of 1 to 50 people can buy and use without a long sales process. Each pick had to meet these criteria: public pricing, or a clear \"contact sales\" if not; a free or low-cost entry plan; AI features that work today; admin, security and data-retention options suitable for business use; and availability to buyers in India, the US, the UK, the EU and Canada. Where several products do the same job, we name the main options rather than declare one winner, because the right choice usually depends on the tools your team already uses.</p>\n<p>All prices below come from vendor pricing pages read on 4 October 2026, in US dollars unless stated. Prices vary by country, currency and billing period, taxes such as GST or VAT are extra, and vendors change plans often, so confirm on the live page. 100Xfounder has no affiliate or paid relationship with any company named here.</p>\n\n<h2>General AI assistants: one for the whole company</h2>\n<h3>ChatGPT</h3>\n<p>OpenAI's pricing page lists ChatGPT Free, Go at $8 a month, Plus at $20 and Pro from $100. For companies, ChatGPT Business costs $25 per user per month on monthly billing or $20 on annual billing for a Standard seat, with a minimum of two seats, according to OpenAI's help centre. Standard seats include ChatGPT, ChatGPT Work and the Codex coding agent. OpenAI says it won't train on a Business workspace's data, which is the main reason to move a team off personal accounts.</p>\n<h3>Claude</h3>\n<p>Anthropic lists Claude Pro at $20 a month, or $17 a month billed annually, and Max from $100. Claude Team costs $20 per standard seat per month on annual billing ($25 monthly), with premium seats at $100 ($125 monthly). Claude Code, Anthropic's coding agent, is included in all paid plans. Enterprise is priced at $20 per seat per month on annual billing plus usage at API rates.</p>\n<h3>Gemini in Google Workspace and Microsoft 365 Copilot</h3>\n<p>If your company already pays for an office suite, check what it includes before buying another assistant. On Google's US pricing page, Business Starter (US$7 per user per month) includes Gemini in Gmail, and Business Standard (US$14) brings Gemini into Docs, Meet, Drive and other apps. New customers get introductory prices for their first 20 users for 12 months. Microsoft sells Microsoft 365 Copilot Business as an add-on from $18 per user per month paid yearly, a reduction from $21 at the time of writing, or bundled into Business Premium with Copilot at $32.</p>\n\n<h2>Coding: the biggest productivity lever for technical teams</h2>\n<p>For a software startup, AI coding tools are usually the highest-return spend on this list. The three main options:</p>\n<ul>\n<li><strong>GitHub Copilot.</strong> According to GitHub's documentation, there's a free tier, Pro at $10 a month, Pro+ at $39 and Max at $100. Business costs $19 and Enterprise $39 per seat per month. Usage is measured in AI credits, with paid overage beyond each plan's allowance.</li>\n<li><strong>Cursor.</strong> An AI-first code editor with a free Hobby tier, Pro at $20 a month and Teams at $40 per user per month.</li>\n<li><strong>Claude Code and Codex.</strong> Command-line coding agents bundled with Claude and ChatGPT paid plans respectively, which can make a separate coding subscription unnecessary for small teams.</li>\n</ul>\n<p>Most teams settle on one editor tool plus one agent. Whatever you pick, keep code review and tests mandatory: AI-written code still needs a human owner. If you're hiring engineers who work this way, our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs</a> page tracks openings from official careers pages.</p>\n<!-- xf-image-2 -->\n\n<h2>Docs, meetings and design</h2>\n<h3>Notion AI</h3>\n<p>Notion lists Free, Plus from $10 and Business from $20 per member per month. Full Notion AI, including agents, AI meeting notes and enterprise search across connected apps, comes with Business. Custom agents use Notion credits, priced at $10 per 1,000 after a free trial. Enterprise adds zero data retention with the AI model providers, which matters if you store customer or financial data in your wiki. (Notion is also hiring; see <a href=\"/jobs/company/notion/\">Notion jobs</a>.)</p>\n<h3>AI meeting notes: Granola and Fireflies</h3>\n<p>Meeting notetakers are one of the fastest wins for founders who spend the day on calls. Granola's free Basic plan keeps 30 days of history, Business costs $14 per user per month and Enterprise $35 with SSO and admin controls. Fireflies offers a free plan, then Pro at $10 and Business at $19 per seat per month billed annually. Always tell participants when a call is being recorded or transcribed, and check local consent rules.</p>\n<!-- xf-image-3 -->\n\n<h3>Design and prototyping: Figma</h3>\n<p>Figma now builds AI usage into its seats. Its Starter plan is free with up to 500 AI credits a month. A Professional full seat costs $16 a month with 3,000 AI credits, and Organization full seats cost $55 a month billed annually. Figma Make turns prompts or existing designs into working prototypes and simple web apps, useful for testing an idea with users before engineering time is spent. Non-designers on the team can use cheaper Collab or Dev seats.</p>\n\n<h2>Marketing, sales and support: the specialist layer</h2>\n<p>These three functions have the most specialised AI tools, so we cover each in its own guide. In brief:</p>\n<ul>\n<li><strong>Marketing.</strong> Our guide \"Best AI tools for marketing teams in 2026\" compares content, SEO, ads, social and analytics tools. The short version: a general assistant plus the AI already in Google Ads, Meta and Google Analytics goes a long way. Add a scheduler such as Buffer, which has a free plan with its AI Assistant and paid plans from $5 per channel per month.</li>\n<li><strong>Sales.</strong> Our guide \"Best AI sales tools in 2026\" covers prospecting, outreach, call coaching and CRM AI. Most early teams start with a free CRM, a prospecting database such as Apollo.io (free plan, then $49 per seat per month billed annually) and a free AI notetaker.</li>\n<li><strong>Customer support.</strong> Our guide \"Best AI customer support tools in 2026\" compares Intercom Fin, Zendesk, Freshdesk, Decagon, Sierra and others. Pricing is moving to a charge per resolved conversation; Intercom, for example, lists Fin at $0.99 per outcome.</li>\n</ul>\n\n<h2>A stack for every stage</h2>\n<p>The table below combines the prices above into example stacks. These are illustrations, not recommendations to buy every item.</p>\n<table>\n<thead><tr><th>Stage</th><th>Assistant</th><th>Coding</th><th>Docs and meetings</th><th>Design</th></tr></thead>\n<tbody>\n<tr><td>Solo founder, pre-seed</td><td>ChatGPT Plus or Claude Pro, $20 a month</td><td>GitHub Copilot Pro $10 or Cursor Pro $20</td><td>Notion Free, Granola Basic (free)</td><td>Figma Starter (free)</td></tr>\n<tr><td>Seed team of 5 to 15</td><td>ChatGPT Business or Claude Team, $20 per seat a month annually</td><td>Copilot Business $19 per seat or Cursor Teams $40 per user</td><td>Notion Business from $20 per member; Granola Business $14 or Fireflies Pro $10</td><td>Figma Professional, $16 per full seat</td></tr>\n<tr><td>Series A and beyond</td><td>Enterprise plans with SSO and data controls (Claude Enterprise from $20 per seat plus usage)</td><td>Copilot Enterprise $39 per seat</td><td>Notion Enterprise (custom); Granola Enterprise $35</td><td>Figma Organization, $55 per full seat</td></tr>\n</tbody>\n</table>\n<!-- xf-image-4 -->\n\n<h2>Bottom line: buy less, govern more</h2>\n<p>The risk for most startups isn't missing a tool. It's paying for overlapping ones and letting company data spread across personal accounts. Three rules help. First, standardise on one assistant and move everyone to its business plan, where the vendor's data terms and admin controls apply. Second, read each vendor's data-retention and model-training terms, especially before uploading customer data, and confirm anything regulated (health, finance, children's data) with a qualified adviser. Third, review AI spend every quarter, because usage-based credits can grow quietly. Then use the companion guides to add marketing, sales and support tools only when those teams exist. To see which AI products are launching and getting funded, follow our <a href=\"/launches/\">launches</a> and <a href=\"/funding-tracker/\">funding tracker</a>.</p>\n<!-- xf-image-5 -->\n\n<h2>FAQ</h2>\n<h3>What AI tools should a startup use first?</h3>\n<p>Start with one general assistant on a business plan (ChatGPT Business or Claude Team, both $20 per seat per month on annual billing as of October 2026) and, for software teams, one AI coding tool. Add specialist tools when a team's workload justifies them.</p>\n<h3>Is ChatGPT or Claude better for a startup team?</h3>\n<p>Both cost about the same for teams and both include a coding agent (Codex with ChatGPT, Claude Code with Claude). Trial both on your real tasks for a week and choose the one your team uses more.</p>\n<h3>What is the cheapest AI coding assistant?</h3>\n<p>GitHub Copilot has a free tier and a $10-a-month Pro plan, and Cursor has a free Hobby tier, according to their pricing pages as of October 2026.</p>\n<h3>Do I need Gemini or Microsoft Copilot if I already pay for ChatGPT?</h3>\n<p>Not necessarily. They are most useful inside Gmail, Docs, Outlook and Teams. If your team lives in those apps, the bundled AI may cover everyday writing and summaries without a separate assistant for everyone.</p>\n<h3>Is it safe to put company data into AI tools?</h3>\n<p>Use business plans, not personal accounts, and read the data terms. OpenAI says it doesn't train on ChatGPT Business workspace data, and Notion Enterprise offers zero data retention with its AI providers. For regulated data, get professional advice first.</p>\n<h2>Sources</h2><ol><li>OpenAI, \"<a href=\"https://chatgpt.com/pricing\">ChatGPT pricing</a>\", accessed 4 October 2026</li><li>OpenAI Help Center, \"<a href=\"https://help.openai.com/en/articles/8792828-what-is-chatgpt-business\">ChatGPT Business - Overview</a>\", accessed 4 October 2026</li><li>Anthropic, \"<a href=\"https://claude.com/pricing\">Claude pricing</a>\", accessed 4 October 2026</li><li>Google, \"<a href=\"https://workspace.google.com/pricing?hl=en\">Google Workspace pricing</a>\", accessed 4 October 2026</li><li>Microsoft, \"<a href=\"https://www.microsoft.com/en-us/microsoft-365/copilot/business\">Microsoft 365 Copilot for business</a>\", accessed 4 October 2026</li><li>GitHub Docs, \"<a href=\"https://docs.github.com/en/copilot/get-started/plans\">Plans for GitHub Copilot</a>\", accessed 4 October 2026</li><li>Cursor, \"<a href=\"https://cursor.com/pricing\">Pricing</a>\", accessed 4 October 2026</li><li>Notion, \"<a href=\"https://www.notion.com/pricing\">Pricing</a>\", accessed 4 October 2026</li><li>Granola, \"<a href=\"https://www.granola.ai/pricing\">Pricing</a>\", accessed 4 October 2026</li><li>Fireflies.ai, \"<a href=\"https://fireflies.ai/pricing\">Pricing</a>\", accessed 4 October 2026</li><li>Figma, \"<a href=\"https://www.figma.com/pricing/\">Plans and pricing</a>\", accessed 4 October 2026</li><li>Intercom, \"<a href=\"https://www.intercom.com/pricing\">Pricing</a>\", accessed 4 October 2026</li><li>Apollo.io, \"<a href=\"https://www.apollo.io/pricing\">Pricing</a>\", accessed 4 October 2026</li><li>Buffer, \"<a href=\"https://buffer.com/pricing\">Pricing</a>\", accessed 4 October 2026</li></ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Desks_in_an_open_office_space_%28Unsplash%29.jpg/1920px-Desks_in_an_open_office_space_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "A person working on a laptop at a wooden desk in a high-ceilinged shared office with plants",
+      "caption": "A startup AI stack works best when everyone shares one assistant and one set of data rules.",
+      "credit": "Photo: Crew / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Desks_in_an_open_office_space_(Unsplash).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS_code_on_a_screen_%28Unsplash%29.jpg/1920px-CSS_code_on_a_screen_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Close-up of a monitor showing colour-highlighted HTML code",
+      "caption": "AI coding tools such as GitHub Copilot, Cursor and Claude Code are often the highest-return AI spend for software startups.",
+      "credit": "Photo: Sai Kiran Anagani / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:CSS_code_on_a_screen_(Unsplash).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Busy_people_at_a_coffee_shop_%28Unsplash%29.jpg/1920px-Busy_people_at_a_coffee_shop_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "People working on laptops at a long table, seen through a window from above",
+      "caption": "AI notetakers and workspace assistants cut the admin that follows every meeting.",
+      "credit": "Photo: Tim Gouw / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Busy_people_at_a_coffee_shop_(Unsplash).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Startup_Edmonton_Founders_50_%289137853097%29.jpg/1920px-Startup_Edmonton_Founders_50_%289137853097%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "A speaker presenting to a seated audience in a brick-walled venue under a \"founders 50\" slide",
+      "caption": "The right stack changes with stage: free tiers for solo founders, admin controls for growing teams.",
+      "credit": "Photo: Mack Male / Wikimedia Commons, CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Startup_Edmonton_Founders_50_(9137853097).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Wikimedia_Foundation_Servers-8055_13.jpg/1920px-Wikimedia_Foundation_Servers-8055_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "alt": "Rows of server racks with network cables in a data centre",
+      "caption": "Before uploading company or customer data, check each AI vendor's retention and training terms.",
+      "credit": "Photo: Victorgrigas / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Servers-8055_13.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://chatgpt.com/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-04",
+      "claim": "Free $0, Go $8, Plus $20 per month, Pro from $100 per month"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-business",
+      "publisher": "OpenAI Help Center",
+      "date": "2026-10-04",
+      "claim": "Standard seat $25/user/month monthly or $20 annual; Premium $125/$100; minimum 2 seats; includes ChatGPT, ChatGPT Work and Codex; OpenAI does not train on workspace data"
+    },
+    {
+      "url": "https://claude.com/pricing",
+      "publisher": "Anthropic",
+      "date": "2026-10-04",
+      "claim": "Free; Pro $20 monthly or $17/month annual; Max from $100; Team standard seat $20 annual/$25 monthly, premium $100/$125; Enterprise $20/seat plus usage; Claude Code included in paid plans"
+    },
+    {
+      "url": "https://workspace.google.com/pricing?hl=en",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "Business Starter US$7, Standard US$14, Plus US$22 per user/month with introductory prices of $4.90, $7 and $15.40 for new customers (first 20 users, 12 months); Gemini in Gmail on Starter; Gemini in Docs, Meet, Drive on Standard"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-365/copilot/business",
+      "publisher": "Microsoft",
+      "date": "2026-10-04",
+      "claim": "Microsoft 365 Copilot Business add-on from $18/user/month paid yearly (originally $21); Business Premium with Copilot $32/user/month paid yearly"
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/get-started/plans",
+      "publisher": "GitHub Docs",
+      "date": "2026-10-04",
+      "claim": "Copilot Free; Pro $10; Pro+ $39; Max $100 per month; Business $19 and Enterprise $39 per granted seat per month; AI credits"
+    },
+    {
+      "url": "https://cursor.com/pricing",
+      "publisher": "Cursor",
+      "date": "2026-10-04",
+      "claim": "Hobby free; Pro $20/month; Teams $40/user/month; Enterprise custom"
+    },
+    {
+      "url": "https://www.notion.com/pricing",
+      "publisher": "Notion",
+      "date": "2026-10-04",
+      "claim": "Free; Plus $10; Business $20 per member/month with full Notion AI (agents, meeting notes, enterprise search); Enterprise custom with zero data retention with LLM providers; agents use Notion credits at $10 per 1,000"
+    },
+    {
+      "url": "https://www.granola.ai/pricing",
+      "publisher": "Granola",
+      "date": "2026-10-04",
+      "claim": "Basic free with 30-day history; Business $14; Enterprise $35 per user/month with SSO"
+    },
+    {
+      "url": "https://fireflies.ai/pricing",
+      "publisher": "Fireflies.ai",
+      "date": "2026-10-04",
+      "claim": "Free; Pro $10, Business $19 per seat/month billed annually; Enterprise $39 annual only"
+    },
+    {
+      "url": "https://www.figma.com/pricing/",
+      "publisher": "Figma",
+      "date": "2026-10-04",
+      "claim": "Starter free with up to 500 AI credits/month; Professional full seat $16/month with 3,000 AI credits; Organization full seat $55; Figma Make prompt-to-prototype"
+    },
+    {
+      "url": "https://www.intercom.com/pricing",
+      "publisher": "Intercom",
+      "date": "2026-10-04",
+      "claim": "Fin AI Agent $0.99 per outcome; Early Stage startup discount"
+    },
+    {
+      "url": "https://www.apollo.io/pricing",
+      "publisher": "Apollo.io",
+      "date": "2026-10-04",
+      "claim": "Free plan; Basic $49 per seat/month billed annually"
+    },
+    {
+      "url": "https://buffer.com/pricing",
+      "publisher": "Buffer",
+      "date": "2026-10-04",
+      "claim": "Free plan with AI Assistant; Essentials $5 per channel/month"
+    }
+  ]
+}

@@ -22,6 +22,7 @@ The full plan is in `docs/PRD.md`. Its open questions and approval status are tr
 
 - **AI writing uses Claude Code skills** (`.claude/skills/`) running on the owner's Claude plan limits. Don't use the Claude API or any paid AI API in the site or plugin.
 - **Payments are a manual invoice** (no payment gateway).
+- **Byline (2026-10-04):** articles publish under the pen name **Ishaan Vardhan** (author slug `ishaan-vardhan`). The bio says openly that it is the editorial desk's pen name. Never give it invented credentials, a fake photo or claimed first-hand experience.
 - **Newsletter:** signups are stored in WordPress (no sender yet).
 - **Events:** imported from public ICS calendar feeds (Luma, Meetup and others), then reviewed. Never scraped.
 - **Launch ranking:** Product Hunt votes, plus our own "likes" count shown separately.

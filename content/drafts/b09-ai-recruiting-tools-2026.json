@@ -1,0 +1,152 @@
+{
+  "type": "post",
+  "slug": "ai-recruiting-tools-2026",
+  "title": "AI recruiting tools in 2026: screening, sourcing and the new rules",
+  "excerpt": "How hiring teams use AI to source, screen and schedule in 2026, plus what NYC Local Law 144 and the EU AI Act's high-risk rules require of employers.",
+  "category": "ai-news",
+  "tags": [
+    "AI recruiting",
+    "HR tech",
+    "NYC Local Law 144",
+    "EU AI Act",
+    "hiring",
+    "LinkedIn",
+    "Workday",
+    "compliance"
+  ],
+  "content": "<p>In 2026, AI shows up at every stage of hiring. It writes job ads, finds passive candidates, ranks or summarises applications, runs first-round voice screens and books interviews. The law is stricter than many buyers realise. New York City has required bias audits and candidate notices since 2023. The EU AI Act treats recruitment AI as \"high-risk\", and after a July 2026 amendment its main obligations for these tools now apply from 2 December 2027.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>Recruiting is the HR function where AI is most used. In SHRM research published in April 2026, 27% of organisations applied AI to talent acquisition, the highest share of any HR area.</li>\n<li>The large platforms now sell agents rather than single features. LinkedIn says more than 20,000 companies use its agentic hiring products. Workday now owns both HiredScore and Paradox.</li>\n<li>NYC Local Law 144 requires an independent bias audit within the past year, a published summary of that audit, and notice to candidates 10 business days before an automated tool is used.</li>\n<li>Under the EU AI Act, systems that filter applications or evaluate candidates are high-risk (Annex III, point 4). The Digital Omnibus moved the start of those obligations from 2 August 2026 to 2 December 2027.</li>\n<li>Emotion recognition in the workplace has been banned in the EU since 2 February 2025. Do not buy an interview tool that claims to read candidates' feelings.</li>\n</ul>\n\n<h2>How much hiring teams actually use AI</h2>\n<p>Adoption is real but uneven. In research covering 1,908 HR professionals, <a href=\"https://www.shrm.org/topics-tools/news/ai-hr-2026-from-hype-to-measured-human-centered-impact\">SHRM</a> found that 39% of organisations use AI somewhere in HR, and that the share rises to 60% at employers with 5,000 or more staff. Recruiting led every other function at 27%. The most common uses were writing and improving job postings, screening and matching résumés, and scheduling interviews.</p>\n<p>The push comes from volume. LinkedIn chief executive Dan Shapero said in September 2026 that job seekers are sending about 30% more applications than before the pandemic, according to <a href=\"https://fortune.com/2026/09/30/linkedin-ceo-dan-shapero-says-job-seekers-sending-out-30-more-applications-pre-pandemic-harder-know-who-can-do-job/\">Fortune</a>. Many of those candidates now use AI to write their applications. Recruiters who receive more polished applications than they can read are the main buyers of screening tools. Candidates on the other side of that process can browse roles on our <a href=\"/jobs/\">jobs board</a>, which lists only openings from official careers pages.</p>\n\n<h2>Sourcing: agents that search and write outreach</h2>\n<p>Sourcing has changed most visibly. LinkedIn's <a href=\"https://business.linkedin.com/hire/hiring-assistant\">Hiring Assistant</a> takes a recruiter's hiring goals and turns them into a search strategy. It reviews applicants from LinkedIn and from a connected applicant tracking system (ATS), drafts personalised messages, pre-screens interested candidates and keeps searching in the background. LinkedIn sells it as an add-on to LinkedIn Recruiter and does not publish a price. Its product page lists support for English, French, German, Dutch, Spanish, Portuguese and Italian, and says recruiters stay \"in the loop\" at every step.</p>\n<p>On 29 September 2026 LinkedIn announced Hiring Assistant 2. According to <a href=\"https://www.socialmediatoday.com/news/linkedin-updates-its-ai-powered-hiring-bot/831837/\">Social Media Today</a>, the new version remembers a recruiter's past hiring patterns, explains why a profile matches, shows signals about how likely a candidate is to respond, adds verification badges and can run voice pre-screens. LinkedIn also said more than 20,000 companies use its agentic hiring products, and that recruiters are four times more likely to contact candidates found by Hiring Assistant than those found by traditional methods. That is LinkedIn's own figure.</p>\n<p>ATS vendors also offer sourcing help from their own data. Ashby's <a href=\"https://www.ashbyhq.com/ai\">AI features</a> include \"talent rediscovery\", which matches people already in a company's database against a new job, and AI-written personalisation for outreach emails. Ashby claims customers see a reply-rate lift of about 46%.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Screening: matching, summaries and first-round interviews</h2>\n<p>Screening is where both the efficiency gains and the legal risk are largest. Vendors have moved towards \"assistive\" designs in which the AI recommends and a person decides. <a href=\"https://www.greenhouse.com/ai-recruiting\">Greenhouse</a> says its talent-matching feature never makes the decision itself. Greenhouse also offers voice AI that conducts a first two-way interview at a time the candidate chooses, a notetaker that maps interview notes to scorecard questions, and résumé review that hides identifying details. The company says Warden AI runs monthly third-party bias audits, that it holds ISO 42001 certification, and that Greenhouse AI is included on its Core, Plus and Pro plans.</p>\n<p><a href=\"https://www.ashbyhq.com/ai\">Ashby</a> states that its AI-assisted application review never ranks applicants or gives them numerical ratings, and that every output carries citations which recruiters can check, flag or override. Ashby says FairNow audits it for bias and that it monitors compliance with the EU AI Act and NYC Local Law 144.</p>\n<p>These design choices matter in law as well as marketing. Under NYC's rules, a tool counts as an \"automated employment decision tool\" when it substantially assists or replaces discretionary decision-making. A score that recruiters routinely follow can meet that test. One that only summarises a CV may not. Ask vendors to show you how their output reaches the person making the decision.</p>\n\n<h2>Scheduling and conversational AI</h2>\n<p>Scheduling is the least controversial use and often the quickest to pay back, especially for frontline and high-volume roles. Workday <a href=\"https://newsroom.workday.com/2025-10-01-Workday-Completes-Acquisition-of-Paradox\">completed its acquisition of Paradox</a> on 1 October 2025. Paradox's conversational agent answers candidates' questions instantly, lets them book their own interview slots and offers 24/7 support. Workday now pairs Paradox with HiredScore for matching and with Workday Recruiting for the core ATS. In a <a href=\"https://blog.workday.com/en-us/workday-paradox-redefining-frontline-candidate-experience.html\">Workday blog post</a>, Paradox said it expected to schedule about 32 million interviews in 2025, which it described as roughly one in ten US interviews.</p>\n<p>Inside ATS products, scheduling automation can cost extra. Ashby sells advanced auto-scheduling as an add-on or within its Enterprise package.</p>\n\n<h2>NYC Local Law 144: what the rules require</h2>\n<p>New York City's law was the first in the world aimed specifically at AI hiring tools. According to the city's <a href=\"https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page\">Department of Consumer and Worker Protection (DCWP)</a>, it took effect on 1 January 2023 and has been enforced since 5 July 2023. The <a href=\"https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf\">DCWP FAQ</a> sets out these core rules:</p>\n<ul>\n<li><strong>Scope.</strong> The law covers employers and employment agencies using an automated tool \"in the city\". That includes jobs based at least part-time in an NYC office and fully remote jobs tied to an NYC office. It applies to screening and assessment of people who have applied for a specific job or are being considered for promotion. It does not cover searching a résumé bank or reaching out to people who have not applied.</li>\n<li><strong>Bias audit.</strong> An independent auditor must calculate selection or scoring rates and impact ratios across sex, race/ethnicity and intersectional categories. An audit is valid for one year. DCWP does not approve auditors, and a vendor may commission the audit of its own tool.</li>\n<li><strong>Public summary.</strong> The employer must post a summary of the audit results.</li>\n<li><strong>Notice.</strong> NYC-resident candidates must be told at least 10 business days in advance that an automated tool will be used and which qualifications or characteristics it will assess. The notice must explain how to request a reasonable accommodation. It can appear in the job posting, be sent by mail or email, or be placed on the careers section of the employer's website.</li>\n</ul>\n<p>Enforcement has been weak so far, but that is changing. A December 2025 audit by the New York State Comptroller, summarised by <a href=\"https://www.dlapiper.com/en-us/insights/publications/2026/01/critical-audit-of-nyc-ai-hiring-law-signals-increased-risk-for-employers\">DLA Piper</a>, called DCWP's enforcement \"ineffective\". It found that 75% of test calls to the city's 311 hotline about these tools never reached the agency. DCWP's own review of 32 companies flagged one compliance issue, while the Comptroller's auditors found at least 17 potential issues at the same companies. DLA Piper puts the maximum civil penalty at $1,500 per violation, and DCWP has agreed to adopt most of the audit's recommendations. Discrimination complaints go separately to the NYC Commission on Human Rights.</p>\n\n<!-- xf-image-3 -->\n\n<h2>The EU AI Act: why recruitment AI is \"high-risk\"</h2>\n<p>The <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689\">AI Act (Regulation (EU) 2024/1689)</a> lists employment as a high-risk area in Annex III, point 4. Point 4(a) covers AI systems intended for recruitment or selection, \"in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates\". Point 4(b) covers AI used to make decisions on promotion or termination, to allocate tasks based on behaviour or personal traits, or to monitor and evaluate workers' performance.</p>\n<p>Article 6(3) offers a narrow exemption for Annex III systems that do not pose a significant risk, such as tools that only perform a narrow procedural task. A system that profiles people is always high-risk. Most screening and matching products profile candidates by design.</p>\n<p>The obligations differ for vendors and employers. Vendors (providers) carry most of the burden: risk management, data governance, technical documentation, conformity assessment and registration. Employers (deployers) still have real duties under Article 26:</p>\n<ul>\n<li>use the system according to the vendor's instructions;</li>\n<li>assign human oversight to people with the competence, training and authority to exercise it;</li>\n<li>keep the system's automatically generated logs for at least six months;</li>\n<li>before using a high-risk system at the workplace, inform workers' representatives and the affected workers (Article 26(7));</li>\n<li>tell people when a high-risk Annex III system is used to make, or help make, decisions about them (Article 26(11)).</li>\n</ul>\n<p><strong>The timeline has moved.</strong> Under the original text, Annex III obligations applied from 2 August 2026. The \"Digital Omnibus on AI\", adopted as <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32026R1744\">Regulation (EU) 2026/1744</a> of 8 July 2026 and published on 24 July 2026, moves that date for stand-alone high-risk systems, including recruitment tools, to 2 December 2027. According to the <a href=\"https://artificialintelligenceact.eu/article/113/\">consolidated Article 113</a> maintained by the Future of Life Institute, high-risk AI built into products regulated under Annex I follows from 2 August 2028.</p>\n<p>The ban on emotion recognition did not move. Article 5(1)(f), in force since 2 February 2025, prohibits AI that infers emotions in workplace and education settings, except for medical or safety reasons. Video-interview products that claim to read \"enthusiasm\" or \"confidence\" from faces or voices belong in that category. Fines run up to €35 million or 7% of worldwide annual turnover for prohibited practices, and up to €15 million or 3% for most other breaches.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Lawsuits are a separate risk</h2>\n<p>Regulation is only part of the exposure. In <em>Mobley v. Workday</em>, a federal court in California on 16 May 2025 granted conditional certification of a nationwide age-discrimination collective action. The judge found a \"unified policy\" in the use of Workday's AI recommendation system to score, sort, rank or screen applicants, according to <a href=\"https://www.lawandtheworkplace.com/2025/06/ai-bias-lawsuit-against-workday-reaches-next-stage-as-court-grants-conditional-certification-of-adea-claim/\">Proskauer</a>. Workday denies the claims, and the case does not decide whether the tool discriminated. It does show that a vendor can be pulled into the case, and that employers who rely on a tool's scores cannot hand off their responsibility to the vendor.</p>\n\n<h2>A practical buying and rollout checklist</h2>\n<ol>\n<li><strong>Map each feature to a decision.</strong> Write down which features source, which screen, which score and which only schedule. Notice and audit duties attach to the screening and scoring steps.</li>\n<li><strong>Get the audit before you sign.</strong> For NYC roles, ask for the vendor's latest independent bias audit, its date and the categories it covered. Check whether your own data needs a separate audit.</li>\n<li><strong>Turn off what you cannot defend.</strong> Disable automatic rejection, unexplained numerical scores and anything that infers emotion.</li>\n<li><strong>Write the candidate notice early.</strong> Ten business days is the NYC minimum. For EU roles, plan to inform workers' representatives as well as candidates.</li>\n<li><strong>Name a human reviewer.</strong> Choose someone with the authority to overrule the tool, and record when they do.</li>\n<li><strong>Keep logs.</strong> Six months is the EU floor for deployers. Many legal teams will want longer.</li>\n</ol>\n<p>This article explains the rules in general terms and is not legal advice. Confirm your obligations with employment counsel or the relevant regulator before you deploy a tool.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Why it matters</h2>\n<p>AI recruiting has moved from pilots to standard purchases. The biggest platforms now sell agents that source, screen and schedule. The rules have not settled. New York's law is under pressure to be enforced properly, and the EU has bought time but kept its high-risk classification. Teams that build audit trails, notices and human checkpoints now will find December 2027 manageable. For more coverage, see our <a href=\"/news/\">AI and startup news</a>.</p>\n\n<h2>FAQ</h2>\n<h3>Is it legal to use AI to screen résumés?</h3>\n<p>Yes, in most places, with conditions. In New York City, you need a bias audit from the past year and advance notice to candidates. In the EU, screening tools are high-risk systems under the AI Act, with obligations applying from 2 December 2027.</p>\n<h3>Does NYC Local Law 144 apply to sourcing tools?</h3>\n<p>Generally, no. DCWP's FAQ says the requirements do not apply when a tool scans a résumé bank, contacts potential candidates or invites applications from people who have not applied for a specific role.</p>\n<h3>When do EU AI Act rules for hiring tools start?</h3>\n<p>The ban on emotion recognition at work has applied since 2 February 2025. High-risk obligations for recruitment systems apply from 2 December 2027 under Regulation (EU) 2026/1744.</p>\n<h3>Who is responsible if a vendor's AI is biased: the vendor or the employer?</h3>\n<p>Often both. The EU AI Act puts most compliance duties on providers but gives deployers their own obligations. US litigation such as <em>Mobley v. Workday</em> shows that vendors can be sued alongside the employers that rely on their tools.</p>\n<h3>Can candidates ask not to be assessed by AI?</h3>\n<p>Under NYC rules, the notice must tell candidates how to request a reasonable accommodation under other laws. The EU AI Act gives people a right to be told when a high-risk system is used in decisions about them.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>SHRM, <a href=\"https://www.shrm.org/topics-tools/news/ai-hr-2026-from-hype-to-measured-human-centered-impact\">\"AI in HR 2026: From Hype to Measured, Human-Centered Impact\"</a>, 8 April 2026</li>\n<li>Fortune, <a href=\"https://fortune.com/2026/09/30/linkedin-ceo-dan-shapero-says-job-seekers-sending-out-30-more-applications-pre-pandemic-harder-know-who-can-do-job/\">\"LinkedIn CEO says that job seekers are sending out 30% more applications than pre-pandemic\"</a>, 30 September 2026</li>\n<li>LinkedIn, <a href=\"https://business.linkedin.com/hire/hiring-assistant\">\"Hiring Assistant for LinkedIn Recruiter &amp; Jobs\"</a>, accessed 4 October 2026</li>\n<li>Social Media Today, <a href=\"https://www.socialmediatoday.com/news/linkedin-updates-its-ai-powered-hiring-bot/831837/\">\"LinkedIn updates its AI-powered hiring bot\"</a>, 30 September 2026</li>\n<li>Greenhouse, <a href=\"https://www.greenhouse.com/ai-recruiting\">\"AI Recruiting Software\"</a>, accessed 4 October 2026</li>\n<li>Ashby, <a href=\"https://www.ashbyhq.com/ai\">\"Ashby AI\"</a>, accessed 4 October 2026</li>\n<li>Workday, <a href=\"https://newsroom.workday.com/2025-10-01-Workday-Completes-Acquisition-of-Paradox\">\"Workday Completes Acquisition of Paradox\"</a>, 1 October 2025</li>\n<li>Workday Blog, <a href=\"https://blog.workday.com/en-us/workday-paradox-redefining-frontline-candidate-experience.html\">\"Workday + Paradox: Redefining the Frontline Candidate Experience\"</a>, 1 October 2025</li>\n<li>NYC Department of Consumer and Worker Protection, <a href=\"https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page\">\"Automated Employment Decision Tools (AEDT)\"</a>, accessed 4 October 2026</li>\n<li>NYC Department of Consumer and Worker Protection, <a href=\"https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf\">\"Automated Employment Decision Tools: Frequently Asked Questions\"</a>, 29 June 2023</li>\n<li>DLA Piper, <a href=\"https://www.dlapiper.com/en-us/insights/publications/2026/01/critical-audit-of-nyc-ai-hiring-law-signals-increased-risk-for-employers\">\"Critical audit of NYC's AI hiring law signals increased risk for employers\"</a>, 30 January 2026</li>\n<li>EUR-Lex, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689\">\"Regulation (EU) 2024/1689 (Artificial Intelligence Act)\"</a>, 12 July 2024</li>\n<li>EUR-Lex, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32026R1744\">\"Regulation (EU) 2026/1744 (Digital Omnibus on AI)\"</a>, 24 July 2026</li>\n<li>Future of Life Institute (EU AI Act Explorer), <a href=\"https://artificialintelligenceact.eu/article/113/\">\"Article 113: Entry into Force and Application\"</a>, accessed 4 October 2026</li>\n<li>Proskauer (Law and the Workplace), <a href=\"https://www.lawandtheworkplace.com/2025/06/ai-bias-lawsuit-against-workday-reaches-next-stage-as-court-grants-conditional-certification-of-adea-claim/\">\"AI bias lawsuit against Workday reaches next stage as court grants conditional certification of ADEA claim\"</a>, June 2025</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Woman_Conducting_an_Interview.jpg/1920px-Woman_Conducting_an_Interview.jpg",
+      "alt": "A woman interviews a young man across a desk in an office",
+      "caption": "Screening and first-round interviews are where AI hiring tools carry the most legal risk.",
+      "credit": "Photo: amtec_photos / Wikimedia Commons, CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Woman_Conducting_an_Interview.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Young_Man_on_a_Job_Interview_%2826931177139%29.jpg/1920px-Young_Man_on_a_Job_Interview_%2826931177139%29.jpg",
+      "alt": "A young man in a shirt and tie answers questions during a job interview",
+      "caption": "Vendors now pitch AI as an assistant to recruiters, not a replacement for their judgement.",
+      "credit": "Photo: Amtec Photos / Wikimedia Commons, CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Young_Man_on_a_Job_Interview_(26931177139).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/New_York_City_Hall.jpg",
+      "alt": "The front of New York City Hall with its columns and clock tower",
+      "caption": "New York City has required bias audits for automated hiring tools since July 2023.",
+      "credit": "Photo: Momos / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:New_York_City_Hall.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg/1920px-European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg",
+      "alt": "The European Parliament's hemicycle chamber in Strasbourg during a plenary session",
+      "caption": "The EU AI Act classifies recruitment AI as high-risk under Annex III.",
+      "credit": "Photo: Diliff / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Berlaymont_building_2015.jpg/1920px-Berlaymont_building_2015.jpg",
+      "alt": "The Berlaymont building in Brussels, headquarters of the European Commission",
+      "caption": "The Digital Omnibus moved high-risk obligations for hiring tools to December 2027.",
+      "credit": "Photo: Andersen Pecorone / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Berlaymont_building_2015.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.shrm.org/topics-tools/news/ai-hr-2026-from-hype-to-measured-human-centered-impact",
+      "publisher": "SHRM",
+      "date": "2026-04-08",
+      "claim": "39% of organisations use AI in HR; 27% in talent acquisition; 60% at 5,000+ employees; common recruiting uses; 1,908 HR professionals"
+    },
+    {
+      "url": "https://fortune.com/2026/09/30/linkedin-ceo-dan-shapero-says-job-seekers-sending-out-30-more-applications-pre-pandemic-harder-know-who-can-do-job/",
+      "publisher": "Fortune",
+      "date": "2026-09-30",
+      "claim": "Dan Shapero: job seekers send ~30% more applications than pre-pandemic"
+    },
+    {
+      "url": "https://business.linkedin.com/hire/hiring-assistant",
+      "publisher": "LinkedIn",
+      "date": "2026-10-04",
+      "claim": "Hiring Assistant features, languages, add-on to Recruiter, no public price, recruiter in the loop"
+    },
+    {
+      "url": "https://www.socialmediatoday.com/news/linkedin-updates-its-ai-powered-hiring-bot/831837/",
+      "publisher": "Social Media Today",
+      "date": "2026-09-30",
+      "claim": "Hiring Assistant 2 features; 20,000+ companies; 4x more likely to contact sourced candidates"
+    },
+    {
+      "url": "https://www.greenhouse.com/ai-recruiting",
+      "publisher": "Greenhouse",
+      "date": "2026-10-04",
+      "claim": "Greenhouse AI features, decision stays human, Warden AI monthly audits, ISO 42001, available on Core/Plus/Pro"
+    },
+    {
+      "url": "https://www.ashbyhq.com/ai",
+      "publisher": "Ashby",
+      "date": "2026-10-04",
+      "claim": "Ashby AI features: no ranking, citations, FairNow audits, scheduling add-on, ~46% reply lift claim"
+    },
+    {
+      "url": "https://newsroom.workday.com/2025-10-01-Workday-Completes-Acquisition-of-Paradox",
+      "publisher": "Workday",
+      "date": "2025-10-01",
+      "claim": "Workday completed Paradox acquisition; self-scheduling, 24/7 support; suite with HiredScore"
+    },
+    {
+      "url": "https://blog.workday.com/en-us/workday-paradox-redefining-frontline-candidate-experience.html",
+      "publisher": "Workday Blog",
+      "date": "2025-10-01",
+      "claim": "Paradox expected to schedule ~32 million interviews, ~1 in 10 US interviews"
+    },
+    {
+      "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+      "publisher": "NYC DCWP",
+      "date": "2026-10-04",
+      "claim": "LL144 requirements; enforcement from 5 July 2023"
+    },
+    {
+      "url": "https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf",
+      "publisher": "NYC DCWP",
+      "date": "2023-06-29",
+      "claim": "Scope, bias audit contents, one-year validity, notice rules, sourcing exclusion, complaints"
+    },
+    {
+      "url": "https://www.dlapiper.com/en-us/insights/publications/2026/01/critical-audit-of-nyc-ai-hiring-law-signals-increased-risk-for-employers",
+      "publisher": "DLA Piper",
+      "date": "2026-01-30",
+      "claim": "NYS Comptroller audit findings (75% misrouted calls, 1 vs 17 issues, 32 companies); max penalty $1,500"
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "publisher": "EUR-Lex",
+      "date": "2024-07-12",
+      "claim": "Annex III point 4; Articles 5(1)(f), 6(3), 26, 99"
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32026R1744",
+      "publisher": "EUR-Lex",
+      "date": "2026-07-24",
+      "claim": "Regulation (EU) 2026/1744 of 8 July 2026; Annex III high-risk date moved to 2 December 2027"
+    },
+    {
+      "url": "https://artificialintelligenceact.eu/article/113/",
+      "publisher": "Future of Life Institute (EU AI Act Explorer)",
+      "date": "2026-10-04",
+      "claim": "Consolidated Article 113 after amendment: 2 Dec 2027 (Annex III), 2 Aug 2028 (Annex I)"
+    },
+    {
+      "url": "https://www.lawandtheworkplace.com/2025/06/ai-bias-lawsuit-against-workday-reaches-next-stage-as-court-grants-conditional-certification-of-adea-claim/",
+      "publisher": "Proskauer",
+      "date": "2025-06-01",
+      "claim": "Mobley v. Workday conditional certification 16 May 2025; 'unified policy' finding"
+    }
+  ]
+}
