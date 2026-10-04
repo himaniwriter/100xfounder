@@ -161,6 +161,42 @@ function xf_create_draft(array $d, $author_id) {
 }
 
 add_action('rest_api_init', function () {
+    /** Read or change plugin settings (administrators only), so setup doesn't need wp-admin. */
+    register_rest_route('xf/v1', '/settings', [
+        [
+            'methods' => 'GET',
+            'permission_callback' => function () { return current_user_can('manage_options'); },
+            'callback' => function () {
+                $s = xf_get_settings();
+                foreach (array_keys(XF_SECRET_CONSTANTS) as $secret) {
+                    if (!empty($s[$secret])) {
+                        $s[$secret] = '(set)';
+                    }
+                }
+                return $s;
+            },
+        ],
+        [
+            'methods' => 'POST',
+            'permission_callback' => function () { return current_user_can('manage_options'); },
+            'callback' => function (WP_REST_Request $r) {
+                $saved = (array) get_option('xf_settings', []);
+                $defaults = xf_setting_defaults();
+                $changed = [];
+                foreach ((array) $r->get_json_params() as $key => $value) {
+                    if (!array_key_exists($key, $defaults)) {
+                        continue;
+                    }
+                    $saved[$key] = is_scalar($value) ? (string) $value : '';
+                    $changed[] = $key;
+                }
+                update_option('xf_settings', $saved);
+                return ['updated' => $changed];
+            },
+        ],
+    ]);
+
+
     $can_write = function () {
         return current_user_can('edit_posts');
     };
