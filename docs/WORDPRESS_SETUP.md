@@ -54,7 +54,17 @@ Other things to know:
    - **Import startups** brings in the 1,258 startups. These stay hidden from Google until they have real content.
    - **Import blog posts** brings in the 15 old posts as drafts.
 
-The default **Twenty Twenty-Five** theme works well. Any theme works, because the plugin's layouts use their own styles.
+Then go to **Appearance → Themes → Add New → Upload Theme**, choose `100xfounder-theme.zip`, and **Activate** it. This is the site design (the canvas).
+
+### Or deploy both in one command (from your computer)
+
+Once WordPress is installed, `wordpress/deploy/deploy-hostinger.sh` backs up the database, uploads both zips over SSH, activates them and sets permalinks. Run it from a terminal on your machine; it asks for the SSH password, which is never stored:
+
+```
+XF_SSH_HOST=145.79.213.114 XF_SSH_PORT=65002 XF_SSH_USER=u840917216 bash wordpress/deploy/deploy-hostinger.sh
+```
+
+Turn on **SSH access** first in hPanel → **Advanced → SSH Access**. Using an SSH key instead of the password is safer.
 
 ## 3. Settings (100xFounder → Settings)
 
@@ -66,6 +76,8 @@ The default **Twenty Twenty-Five** theme works well. Any theme works, because th
 | Daily sending limit | Start at **10**, then raise it over 2–3 weeks to 30–50. Hostinger limits sending per mailbox and forbids bulk spam. |
 | Send outreach emails | Tick it once everything above is set. |
 | AdSense publisher ID | Prefilled with `ca-pub-4106130565884060`. |
+| Job sources (Jobs section) | Pre-filled with 23 official company careers feeds (Greenhouse, Lever, Ashby). Add a company as `ats:board`, e.g. `greenhouse:groww`. Jobs sync daily; closed roles are taken down automatically. |
+| Google service account JSON (Jobs section) | Optional. Lets new and closed job pages be sent to Google's Indexing API (job pages only, up to 190 a day). Create it in Google Cloud, enable the Indexing API, and add the service account email as an **Owner** in Search Console. You can put it in `wp-config.php` as `XF_GOOGLE_SERVICE_ACCOUNT` instead. |
 
 - **Secrets in `wp-config.php` (optional):** you can keep secrets out of the database with `define('XF_SMTP_PASS', '…'); define('XF_PH_TOKEN', '…');`
 - **Reply and bounce detection:** this needs PHP's **imap** extension. Turn it on in hPanel → **Advanced → PHP Configuration → PHP extensions → imap**.

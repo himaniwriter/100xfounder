@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 }
 
 define('XF_VERSION', '1.0.0');
-define('XF_DB_VERSION', '2');
+define('XF_DB_VERSION', '3');
 define('XF_FILE', __FILE__);
 define('XF_DIR', plugin_dir_path(__FILE__));
 define('XF_URL', plugin_dir_url(__FILE__));
@@ -42,6 +42,9 @@ require_once XF_DIR . 'includes/submissions.php';
 require_once XF_DIR . 'includes/sources.php';
 require_once XF_DIR . 'includes/seo.php';
 require_once XF_DIR . 'includes/queue.php';
+require_once XF_DIR . 'includes/jobs.php';
+require_once XF_DIR . 'includes/tools.php';
+require_once XF_DIR . 'includes/guides.php';
 
 if (is_admin()) {
     require_once XF_DIR . 'includes/admin.php';
@@ -57,6 +60,7 @@ function xf_activate() {
     xf_create_legal_pages();
     xf_create_news_categories();
     xf_create_navigation();
+    xf_seed_job_sources();
     if (!get_option('permalink_structure')) {
         update_option('permalink_structure', '/%postname%/');
     }
@@ -80,6 +84,7 @@ add_action('plugins_loaded', function () {
             xf_create_pages();
             xf_create_legal_pages();
             xf_create_news_categories();
+            xf_seed_job_sources();
             flush_rewrite_rules();
         }, 99);
     }
@@ -98,6 +103,9 @@ function xf_page_definitions() {
         'events' => ['title' => 'Startup events', 'slug' => 'events', 'content' => '[xf_events]'],
         'funding' => ['title' => 'Funding tracker', 'slug' => 'funding-tracker', 'content' => '[xf_funding_tracker]'],
         'blog' => ['title' => 'Blog', 'slug' => 'blog', 'content' => ''],
+        'jobs' => ['title' => 'Jobs', 'slug' => 'jobs', 'content' => ''],
+        'tools' => ['title' => 'Free tools', 'slug' => 'tools', 'content' => ''],
+        'guides' => ['title' => 'How to apply', 'slug' => 'how-to-apply', 'content' => ''],
         'unsubscribe' => ['title' => 'Unsubscribe', 'slug' => 'unsubscribe', 'content' => '[xf_unsubscribe]'],
     ];
 }

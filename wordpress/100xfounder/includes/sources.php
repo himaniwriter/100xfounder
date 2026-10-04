@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
  * founder verification emails. Posts can't be published without one.
  * ---------------------------------------------------------------------- */
 
-const XF_SOURCE_TYPES = ['post', 'xf_startup', 'xf_spotlight'];
+const XF_SOURCE_TYPES = ['post', 'xf_startup', 'xf_spotlight', 'xf_guide'];
 
 function xf_get_sources($post_id) {
     $sources = get_post_meta($post_id, '_xf_sources', true);

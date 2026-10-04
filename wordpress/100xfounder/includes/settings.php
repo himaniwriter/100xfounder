@@ -34,6 +34,7 @@ function xf_setting_defaults() {
         'adsense_slot' => '',
         'footer_links' => 1,
         'event_feeds' => '',
+        'google_service_account' => '',
         'gsc_verification' => '',
         'bing_verification' => '',
         'ga4_id' => '',
@@ -50,6 +51,7 @@ const XF_SECRET_CONSTANTS = [
     'ph_token' => 'XF_PH_TOKEN',
     'smtp_pass' => 'XF_SMTP_PASS',
     'smtp_user' => 'XF_SMTP_USER',
+    'google_service_account' => 'XF_GOOGLE_SERVICE_ACCOUNT',
 ];
 
 function xf_get_settings() {

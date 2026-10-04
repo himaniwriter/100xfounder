@@ -65,6 +65,24 @@
     if (window.innerWidth > 860) root.classList.remove('menu-open');
   });
 
+  // Saved jobs live in this browser only (no account needed).
+  var savedKey = 'xf_saved_jobs';
+  var readSaved = function () { try { return JSON.parse(localStorage.getItem(savedKey) || '[]'); } catch (err) { return []; } };
+  document.querySelectorAll('[data-save]').forEach(function (b) {
+    if (readSaved().indexOf(b.getAttribute('data-save')) !== -1) { b.classList.add('on'); b.setAttribute('aria-pressed', 'true'); }
+  });
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-save]');
+    if (!b) return;
+    var id = b.getAttribute('data-save');
+    var list = readSaved();
+    var i = list.indexOf(id);
+    if (i === -1) list.push(id); else list.splice(i, 1);
+    try { localStorage.setItem(savedKey, JSON.stringify(list)); } catch (err) {}
+    b.classList.toggle('on', i === -1);
+    b.setAttribute('aria-pressed', i === -1 ? 'true' : 'false');
+  });
+
   // Mark liked launches from earlier visits.
   document.querySelectorAll('[data-like]').forEach(function (b) {
     try { if (localStorage.getItem('xf_like_' + b.getAttribute('data-like'))) b.classList.add('on'); } catch (err) {}
@@ -76,7 +94,7 @@
     if (!form) return;
     e.preventDefault();
     var msg = form.querySelector('.xf-subscribe__msg');
-    var data = { email: form.email.value, website: form.website ? form.website.value : '', source: form.getAttribute('data-source') || 'site' };
+    var data = { email: form.email.value, website: form.website ? form.website.value : '', source: form.getAttribute('data-source') || 'site', filters: form.getAttribute('data-alert') || '' };
     fetch(form.getAttribute('data-endpoint'), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
       .then(function (res) {

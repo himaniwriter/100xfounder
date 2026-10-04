@@ -28,6 +28,9 @@ add_action('wp_enqueue_scripts', function () {
     $uri = get_template_directory_uri();
     wp_enqueue_style('xft', $uri . '/assets/css/theme.css', [], XFT_VERSION);
     wp_enqueue_script('xft', $uri . '/assets/js/theme.js', [], XFT_VERSION, ['strategy' => 'defer', 'in_footer' => true]);
+    if (get_query_var('xf_tool')) {
+        wp_enqueue_script('xft-tools', $uri . '/assets/js/tools.js', [], XFT_VERSION, ['strategy' => 'defer', 'in_footer' => true]);
+    }
     // The theme supplies its own fonts and footer links.
     wp_dequeue_style('wp-block-library-theme');
 });

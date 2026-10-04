@@ -219,6 +219,9 @@ function xf_settings_fields() {
         'Events' => [
             'event_feeds' => ['Public event calendars (ICS)', 'textarea', 'One iCal/ICS URL per line, e.g. a Luma calendar or a Meetup group feed. New events are imported daily as Pending for your review.'],
         ],
+        'Jobs' => [
+            'google_service_account' => ['Google Indexing API key (JSON)', 'secret_textarea', 'Optional. Paste the JSON key of a Google Cloud service account that is an Owner in Search Console. New and removed jobs are then sent to Google within minutes (job pages only, as Google allows). Leave blank to keep the saved key.'],
+        ],
         'Search & social' => [
             'gsc_verification' => ['Google Search Console code', 'text', 'Only the content="…" value of the verification meta tag.'],
             'bing_verification' => ['Bing Webmaster code', 'text', ''],
@@ -250,6 +253,10 @@ add_action('admin_post_xf_save_settings', function () {
                 $values[$key] = $raw ? 1 : 0;
             } elseif ($type === 'textarea') {
                 $values[$key] = sanitize_textarea_field($raw);
+            } elseif ($type === 'secret_textarea') {
+                if (trim($raw) !== '') {
+                    $values[$key] = trim($raw);
+                }
             } elseif ($type === 'number') {
                 $values[$key] = absint($raw);
             } elseif ($type === 'secret') {
@@ -285,6 +292,8 @@ function xf_admin_settings() {
                             <td>
                                 <?php if ($type === 'checkbox') : ?>
                                     <input type="checkbox" id="xf_<?php echo esc_attr($key); ?>" name="<?php echo esc_attr($key); ?>" value="1" <?php checked(!empty($s[$key])); ?>>
+                                <?php elseif ($type === 'secret_textarea') : ?>
+                                    <textarea class="large-text code" rows="3" id="xf_<?php echo esc_attr($key); ?>" name="<?php echo esc_attr($key); ?>" placeholder="<?php echo $s[$key] ? '(saved; paste a new key to replace it)' : ''; ?>"></textarea>
                                 <?php elseif ($type === 'textarea') : ?>
                                     <textarea class="large-text" rows="4" id="xf_<?php echo esc_attr($key); ?>" name="<?php echo esc_attr($key); ?>"><?php echo esc_textarea($s[$key]); ?></textarea>
                                 <?php elseif ($type === 'secret') : ?>

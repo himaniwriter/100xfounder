@@ -12,6 +12,7 @@ function xf_pipeline_stages() {
         'send' => 'xf_send_due_outreach',
         'digest' => function () { return xf_queue_daily_digest(1) ?: ['queued' => null]; },
         'events' => 'xf_import_events',
+        'jobs' => function () { return xf_sync_jobs(150); },
     ];
 }
 

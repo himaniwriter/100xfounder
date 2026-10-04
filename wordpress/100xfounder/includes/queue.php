@@ -52,14 +52,14 @@ function xf_queue_item_to_array($row) {
 
 /** Creates a pending draft from a skill's payload. Returns the post ID or WP_Error. */
 function xf_create_draft(array $d, $author_id) {
-    $type = in_array($d['type'] ?? 'post', ['post', 'xf_round', 'xf_event'], true) ? $d['type'] : 'post';
+    $type = in_array($d['type'] ?? 'post', ['post', 'xf_round', 'xf_event', 'xf_guide'], true) ? $d['type'] : 'post';
     $title = sanitize_text_field((string) ($d['title'] ?? ''));
     $content = wp_kses_post((string) ($d['content'] ?? ''));
-    if (mb_strlen($title) < 8 || ($type === 'post' && str_word_count(wp_strip_all_tags($content)) < 150)) {
+    if (mb_strlen($title) < 8 || (in_array($type, ['post', 'xf_guide'], true) && str_word_count(wp_strip_all_tags($content)) < 150)) {
         return new WP_Error('too_short', 'A draft needs a real title and at least 150 words.', ['status' => 400]);
     }
     $sources = isset($d['sources']) && is_array($d['sources']) ? $d['sources'] : [];
-    if ($type === 'post' && !array_filter($sources, function ($s) { return !empty($s['url']); })) {
+    if (in_array($type, ['post', 'xf_guide'], true) && !array_filter($sources, function ($s) { return !empty($s['url']); })) {
         return new WP_Error('no_sources', 'Drafts must include at least one source.', ['status' => 400]);
     }
 

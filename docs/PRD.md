@@ -382,6 +382,17 @@ The reasoning:
 | **E. Revenue** (pillar 3) | Funding tracker, events and newsletter, submit-startup tiers, sponsored articles, manual-invoice orders, affiliate manager, funding roundup | Monetise the traffic |
 
 AdSense runs from day one. Apply once 20–30 quality articles are live, likely during phase B or C.
+
+**Status (4 Oct 2026):** A is built. B is built and tested locally:
+- jobs board, job, company and role/city pages;
+- 23 official feeds (645 roles in a test sync);
+- saved jobs and job alerts;
+- Indexing API hook and expiry;
+- in-hand salary, salary hike and notice buyout calculators;
+- apply-guide pages and `/write-apply-guide`.
+
+Neither is live yet: it waits for WordPress on Hostinger and the owner's go-ahead.
+
 ## 7. Risks
 
 | Risk | Mitigation |
