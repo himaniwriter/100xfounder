@@ -311,3 +311,31 @@ Basic $39/mo ($29 annual) · Pro + AI **$59 first month then $119** ($89 annual)
 | **Semrush** | **7 days, first annual purchase only — never on monthly** |
 
 ⚠️ Unverified: Ubersuggest per-plan USD and free daily searches; Mangools free-plan limits and API pricing; Serpstat extra-seat cost and post-trial refunds; Similarweb trial length and API pricing; SpyFu free-tier allowance.
+
+---
+
+## 13. CORRECTIONS — these override earlier sections. Verified 4 Oct 2026.
+
+**Read this before writing. Several earlier claims in this file were wrong or overstated.**
+
+1. **Do NOT say Pro/Guru/Business were "retired".** They are gone from semrush.com/pricing/, but Semrush's **own help centre still publishes them with prices** at kb/1547 (undated). Correct wording: *"no longer shown on the pricing page, though Semrush's own help centre still lists them"*. ⚠️ Whether a new buyer can still purchase that ladder is unverified.
+
+2. **Rows per report: 10,000 / 30,000 / 50,000 applies to the LEGACY tiers only.** It is **not published for SEO / Starter / Pro+ / Advanced**. Do **not** claim a "10,000-row wall" on the new plans — that was an error in section 2 above. Say the figure is published for the legacy ladder and not disclosed for the new one.
+
+3. **Free trial — verified primary.** semrush.com/pricing/: *"Try Semrush free for seven days. Cancel anytime."* **SEO, Starter and Pro+ show a "Try for free" button; Advanced does not.** **Exports are disabled during the trial** (kb/1011) — now primary, no longer ⚠️. The widespread "14-day trial" is an affiliate/partner claim, not a Semrush offer. Say seven.
+
+4. **Free plan caps — now primary (kb/1011):** 10 queries/day per tool · Site Audit **100 pages/month** · Position Tracking **10 keywords** · 1 project · SEO Writing Assistant 1 piece.
+
+5. **Seats:** primary source says "from $45/mo, scales with tier". The **$80 / $100 per-tier figures remain secondary** — attribute or omit. Non-SEO toolkit seats $20; Traffic & Market seats from $289.
+
+6. **ADOBE DID NOT CAUSE THE REPRICING — do not imply it.** Adobe has said **nothing about pricing** since the 28 Apr 2026 close. Its FAQ says *"no changes to our existing contracts"* and *"no immediate changes… including billing"*. Six later announcements mention Adobe; **none** mentions pricing or plans. Semrush One reportedly launched **October 2025, before the deal was even announced**. Any "Adobe hiked the prices" narrative is unverified — and debunking it is itself a content gap, since competing pages assert it.
+
+7. **The ratings split is a CATEGORY pattern, not a Semrush scandal.** **Ahrefs' Trustpilot is 2.2/5 from 323 reviews** (read directly), against ~4.5 on G2. Semrush is 1.7/5 (1,406) against 4.6 on Capterra. **Same shape.** The honest explanation: product-review sites and transaction-review sites attract different populations, and annual SaaS billing generates complaint reviews across the category. Write it that way — it is fairer, more useful, and nowhere on page 1. Do not present Semrush as uniquely bad.
+
+8. **Pro+ ($299) gives the same sites/keywords/crawl limits Guru gave at $249.95** — the two ladders map 1:1 on those lines. So roughly **$49/mo buys the AI layer**. Our own arithmetic from two primary pages; nobody else does it.
+
+9. **Do not cite Reddit at all.** Inaccessible to every research pass; no verified thread, subreddit or date exists. Omitting it is defensible; inventing it is not.
+
+10. **Do not publish a Semrush support phone number** — two conflicting versions circulate on third-party pages and neither is on kb/252.
+
+11. ⚠️ Still unverified: G2 and TrustRadius figures (403-blocked); whether the legacy ladder is still purchasable; the date the ladder changed; the India/GST angle (**nothing found anywhere** — treat section 10 as unverified and either omit it or state plainly that Semrush publishes no India-specific billing terms we could confirm).
