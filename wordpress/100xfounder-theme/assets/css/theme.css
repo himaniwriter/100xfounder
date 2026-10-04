@@ -381,3 +381,14 @@ body{background-image:radial-gradient(1100px 420px at 50% -220px,rgba(124,92,255
 .xf-figure img{display:block;width:100%;height:auto;border-radius:6px;background:#17181b}
 .xf-figure figcaption{margin-top:10px;font-size:13px;line-height:1.5;color:var(--t3)}
 .xf-figure figcaption a{color:var(--t2);border-bottom:1px solid var(--ln2)}
+
+/* Buyer enquiry form on B2B listing articles ([xf_quote_form]). */
+.xf-quote{margin:40px 0;padding:28px;border:1px solid var(--ln2);border-radius:12px;background:var(--bg2)}
+.xf-quote h2{margin:6px 0 8px;font-size:24px}
+.xf-quote-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:14px;margin:18px 0}
+.xf-quote label span{display:block;font-size:13px;color:var(--t2);margin-bottom:6px}
+.xf-quote label.wide{grid-column:1/-1}
+.xf-quote input[type=text],.xf-quote input[type=email],.xf-quote input[type=tel],.xf-quote textarea{width:100%;padding:11px 12px;border-radius:8px;border:1px solid var(--ln2);background:var(--bg);font-size:15px}
+.xf-quote-consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t2);margin-bottom:16px;line-height:1.5}
+.xf-quote-ok{color:var(--tx);font-weight:500}
+.xf-quote-err{color:#ff8a8a}

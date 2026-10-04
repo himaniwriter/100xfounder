@@ -40,6 +40,7 @@ require_once XF_DIR . 'includes/events.php';
 require_once XF_DIR . 'includes/rounds.php';
 require_once XF_DIR . 'includes/engagement.php';
 require_once XF_DIR . 'includes/submissions.php';
+require_once XF_DIR . 'includes/leads.php';
 require_once XF_DIR . 'includes/sources.php';
 require_once XF_DIR . 'includes/seo.php';
 require_once XF_DIR . 'includes/queue.php';
