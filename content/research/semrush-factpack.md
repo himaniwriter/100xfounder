@@ -260,3 +260,54 @@ Is Semrush worth the cost? · Is Semrush good for beginners? · How accurate is 
 6. The "Is Semrush a Russian company?" timeline, leg by leg.
 7. Support channels (mail@semrush.com, 1-800-815-9959) — sourced from affiliate pages only.
 8. G2 and TrustRadius figures (both 403-blocked; snippets only).
+
+---
+
+## 12. More rivals — verified from their own pages, 4 Oct 2026 (SUPERSEDES any figure above)
+
+**These correct the stale third-party numbers flagged earlier. Use these, not Gizmodo's.**
+
+### Mangools [mangools.com/plans-and-pricing]
+Basic $30.50/mo ($18.85 annual) · Premium $40.50 ($26.35) · Agency $70.50 ($48.85). Annual −35%.
+- Rank tracking 200 / 700 / 1,500 keywords; daily updates on Agency only.
+- **Extra seats cost nothing** — included from Premium (3) and Agency (5); sub-users share the parent's limits.
+- **Money-back cut to 48 hours** in 2026 (was 10 days). No trial; a free no-card plan instead.
+- Better than Semrush at: price per seat for an AI-search + classic-SEO bundle.
+
+### Ubersuggest [app.neilpatel.com/en/pricing]
+USD range published as **$29–$99**; per-plan USD values ⚠️ unverified (page geo-prices to INR).
+- Users 1 / 2 / 5; projects 1 / 7 / 15; rows per report 2,000 / 5,000 / 10,000.
+- **Add-ons $5/mo each**, including +1 user — the cheapest extra seat in this set.
+- **No API at all.** One-time 7-day trial, monthly only; **lifetime purchases non-refundable**.
+- Better than Semrush at: the **lifetime licence** (≈10× monthly, no subscription risk). Nothing else here offers one.
+
+### Similarweb [similarweb.com/packages/web/]
+Self-service prices ARE public: Competitive Intelligence $199/mo ($125 annual) · + SEO & AEO $399 ($333) · + Ads $649 ($542). All **1 seat**.
+- API is enterprise-only or standalone. Annual billing is not self-serve (email support).
+- Better than Semrush at: **panel-based traffic and audience data for domains you don't own**, up to 37 months of history, plus App and Retail intelligence.
+
+### Serpstat [serpstat.com/page/pricing-plans/]
+Individual $50/mo ($38 annual) · Team $100 ($76) · Team x2 $169 ($128) · Agency $410 ($310). ~24% annual discount.
+- **Users included 1 / 3 / 6 / 30.** Export rows 50k / 250k / 500k / 2.5m.
+- **API credits bundled from the $100 Team tier** (200k–400k/mo) — Semrush gates API to its top tier.
+- 7-day trial with a $1 verification charge, refunded; auto-renews after.
+- ⚠️ Third-party pages quoting Lite $69 / Standard $149 / Advanced $299 are stale.
+- Better than Semrush at: **bundled API credits on a mid-tier plan**.
+
+### SpyFu [spyfu.com/pricing]
+Basic $39/mo ($29 annual) · Pro + AI **$59 first month then $119** ($89 annual) · Team $249 ($187).
+- Users 1 / 1 / 5; **extra users $15 / $30 / $30**. API access on every tier.
+- Basic capped at 10k rows; Pro and Team **unlimited** search results and exports.
+- **30-day money-back guarantee, no forms** — the best refund terms of any tool here, and a sharp contrast with Semrush's 7-day annual-only policy.
+- Better than Semrush at: **10+ years of PPC competitor history** with unlimited exports at $89/mo annual.
+
+### Refund terms side by side (the comparison that favours an honest page)
+| Tool | Refund window |
+|---|---|
+| SpyFu | **30 days**, no forms |
+| Serpstat | 7-day trial ($1 verification, auto-renews) |
+| Ubersuggest | 7-day trial, monthly only; lifetime non-refundable |
+| Mangools | **48 hours** (cut from 10 days in 2026) |
+| **Semrush** | **7 days, first annual purchase only — never on monthly** |
+
+⚠️ Unverified: Ubersuggest per-plan USD and free daily searches; Mangools free-plan limits and API pricing; Serpstat extra-seat cost and post-trial refunds; Similarweb trial length and API pricing; SpyFu free-tier allowance.
