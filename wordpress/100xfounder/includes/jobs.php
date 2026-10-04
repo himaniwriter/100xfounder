@@ -126,6 +126,19 @@ function xf_default_job_sources() {
         ['OpenAI', 'ashby', 'openai', 'https://openai.com/careers'],
         ['Notion', 'ashby', 'notion', 'https://www.notion.com/careers'],
         ['Atlan', 'ashby', 'atlan', 'https://atlan.com/careers/'],
+        // Added 2026-10-04: each board checked to belong to the company and list India roles.
+        ['Okta', 'greenhouse', 'okta', 'https://www.okta.com/company/careers/'],
+        ['MongoDB', 'greenhouse', 'mongodb', 'https://www.mongodb.com/company/careers'],
+        ['Zscaler', 'greenhouse', 'zscaler', 'https://www.zscaler.com/careers'],
+        ['Rubrik', 'greenhouse', 'rubrik', 'https://www.rubrik.com/company/careers'],
+        ['GitLab', 'greenhouse', 'gitlab', 'https://about.gitlab.com/jobs/'],
+        ['Glean', 'greenhouse', 'gleanwork', 'https://www.glean.com/careers'],
+        ['Sigmoid', 'greenhouse', 'sigmoid', 'https://www.sigmoid.com/careers/'],
+        ['Toast', 'greenhouse', 'toast', 'https://careers.toasttab.com'],
+        ['Elastic', 'greenhouse', 'elastic', 'https://www.elastic.co/careers'],
+        ['New Relic', 'greenhouse', 'newrelic', 'https://newrelic.com/about/careers'],
+        ['Hevo Data', 'lever', 'hevodata', 'https://hevodata.com/careers/'],
+        ['Zeta', 'lever', 'zeta', 'https://www.zeta.tech/in/careers'],
     ];
 }
 

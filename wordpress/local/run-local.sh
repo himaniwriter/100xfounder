@@ -23,8 +23,9 @@ wp() { php -d memory_limit=512M "$WPCLI" --path="$WP_DIR" $ROOT_FLAG "$@"; }
 for cmd in php curl unzip; do
   command -v "$cmd" >/dev/null || { echo "Missing '$cmd'. See the requirements at the top of this script."; exit 1; }
 done
+PHP_MODULES="$(php -m)"  # captured once: piping into grep -q trips pipefail with SIGPIPE
 for ext in sqlite3 pdo_sqlite gd; do
-  php -m | grep -qi "^$ext$" || { echo "PHP extension '$ext' is missing. See the requirements at the top of this script."; exit 1; }
+  grep -qi "^$ext$" <<<"$PHP_MODULES" || { echo "PHP extension '$ext' is missing. See the requirements at the top of this script."; exit 1; }
 done
 
 if [[ "${1:-}" == "--reset" ]]; then
