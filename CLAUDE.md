@@ -51,6 +51,7 @@ The full plan is in `docs/PRD.md`. Its open questions and approval status are tr
 ## Working conventions
 
 - **Local dev:** `bash wordpress/local/run-local.sh` starts http://localhost:8080 (admin/admin). Test there before every release.
-- **Releases:** package `wordpress/dist/100xfounder.zip` and upload it through WP admin. The owner approves before anything goes live.
+- **Live site:** WordPress on Hostinger since 2026-10-04 (admin user `xf_owner`; the owner logs in through hPanel's one-click WordPress admin or a password reset). Hostinger's shared hosting blocks SSH/FTP from cloud sessions; HTTPS and the Hostinger API work.
+- **Releases:** the owner approves first. Then run `HOSTINGER_API_TOKEN=… python3 wordpress/deploy/deploy-hostinger-api.py` (token from hPanel → profile → API, kept only in the environment, revoked afterwards), or upload `wordpress/dist/*.zip` through WP admin.
 - **Plugin code style:** procedural WordPress PHP with an `xf_` prefix and one module per file in `includes/`. Escape all output, use nonces and capability checks, and prepare all SQL.
 - **Development branch:** `claude/modest-heisenberg-reisvt`.

@@ -1,5 +1,11 @@
 # Going live on WordPress (Hostinger)
 
+> **Live since 4 October 2026.** WordPress runs on 100xfounder.com with the `100xfounder` plugin and the `100xfounder-theme` theme active, installed through the Hostinger API. The old static site is backed up. An hPanel cron job (daily, 03:00 UTC / 08:30 IST) runs the plugin routine.
+>
+> **Logging in:** https://100xfounder.com/wp-admin, user `xf_owner`. Set your own password with **Lost your password?** (sent to creatorbusinesshub9@gmail.com), or use hPanel → Websites → 100xfounder.com → **WordPress → Admin panel** for one-click login.
+>
+> **Shipping updates:** `HOSTINGER_API_TOKEN=… python3 wordpress/deploy/deploy-hostinger-api.py` uploads and deploys both the plugin and the theme (see section 2a). Revoke the token in hPanel when you're done.
+
 The whole site now runs on WordPress using the **100xFounder** plugin (`wordpress/100xfounder/`, packaged as `wordpress/dist/100xfounder.zip`). The Next.js app in this repo is no longer needed for the live site.
 
 ## 0. Try it on your own computer first
@@ -56,7 +62,17 @@ Other things to know:
 
 Then go to **Appearance → Themes → Add New → Upload Theme**, choose `100xfounder-theme.zip`, and **Activate** it. This is the site design (the canvas).
 
-### Or deploy both in one command (from your computer)
+### 2a. Deploy through the Hostinger API (no SSH or FTP)
+
+This is what took the site live. It works from any computer or cloud session that can reach `developers.hostinger.com`:
+
+1. In hPanel click your profile → **API** → **Generate token** (short expiry). The token controls the whole Hostinger account, so keep it in an environment variable, never in a file or chat.
+2. Run `HOSTINGER_API_TOKEN=… python3 wordpress/deploy/deploy-hostinger-api.py`. It uploads every plugin and theme file, asks Hostinger to deploy them (both stay active), and purges the LiteSpeed cache.
+3. Revoke the token afterwards.
+
+The first install (WordPress itself, clearing the old files, SSL, cron job) was also done through this API; `wordpress_installations_install` needs an empty `public_html` or `overwrite: true`.
+
+### Or deploy both in one command over SSH
 
 Once WordPress is installed, `wordpress/deploy/deploy-hostinger.sh` backs up the database, uploads both zips over SSH, activates them and sets permalinks. Run it from a terminal on your machine; it asks for the SSH password, which is never stored:
 
