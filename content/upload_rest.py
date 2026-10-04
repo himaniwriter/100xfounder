@@ -34,6 +34,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 UA = "100xfounder-upload/1.0 (https://100xfounder.com)"
 CATEGORY_NAMES = {"careers-salary": "Careers & Salary", "global": "Global", "francais": "Français", "deutsch": "Deutsch"}
 REST_BASE = {"post": "posts", "xf_guide": "xf_guide"}
+# Google's "How was this created?" question: say so plainly on every article.
+DISCLOSURE = ('<p class="xf-disclosure"><em>How this article was made: researched and drafted with AI assistance by the '
+              '100xFounder editorial desk, using only the sources listed in it; every figure links to its source. '
+              'Read our <a href="/editorial-policy/">editorial policy</a>, or report an error through our '
+              '<a href="/corrections-policy/">corrections policy</a>.</em></p>')
 
 
 class Site:
@@ -159,6 +164,8 @@ def main():
                     content = content.replace(marker, figure(src, img)) if marker in content else content + figure(src, img)
                 time.sleep(2)
             content = re.sub(r"<!-- xf-image-\d+ -->", "", content)
+            if "xf-disclosure" not in content:
+                content += DISCLOSURE
             upd = {"content": content, "status": "future" if when > dt.datetime.now(dt.timezone.utc) else "publish",
                    "date_gmt": when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")}
             if p.get("slug"):
