@@ -7,9 +7,9 @@ get_header();
 
 $lead = xft_lead_post();
 $exclude = $lead ? [$lead->ID] : [];
-$latest = xft_query_posts(['posts_per_page' => 8]);
-$secondary = xft_query_posts(['posts_per_page' => 2, 'post__not_in' => $exclude, 'meta_key' => '_thumbnail_id']);
-$popular = xft_popular(5);
+$latest = xft_query_posts(['posts_per_page' => 12]);
+$secondary = xft_query_posts(['posts_per_page' => 4, 'post__not_in' => $exclude, 'meta_key' => '_thumbnail_id']);
+$popular = xft_popular(6);
 $news_url = xft_page_url('news', 'news');
 $launch_url = xft_page_url('launches', 'launches');
 $events_url = xft_page_url('events', 'events');
@@ -110,7 +110,7 @@ $pillars = [
 
     <div class="o-lead" style="flex:2.2 1 480px;order:2;min-width:0">
         <a href="<?php echo esc_url(home_url('/jobs/')); ?>" class="rv" style="display:block">
-            <span class="ph ph-16x10"><img src="<?php echo esc_url($brand('card-jobs.jpg')); ?>" alt="Jobs from official careers pages" width="1600" height="1000" fetchpriority="high"></span>
+            <?php echo function_exists('xf_brand_photo_html') ? xf_brand_photo_html('jobs', '16x10', true) : ''; // phpcs:ignore ?>
             <span style="display:flex;gap:12px;margin-top:18px"><span class="tag">Jobs · Lead</span><span class="k" style="font-size:10.5px">Updated daily</span></span>
             <span class="lead-title"><span class="u"><?php echo esc_html(sprintf('%s open roles at startups and top companies, straight from their careers pages', number_format_i18n($open_roles))); ?></span></span>
             <span class="dek">Every role comes from a company’s own careers page or applicant-tracking feed, never a reposting site. Filter by role and city, see the salary where it’s published, and apply on the company site.</span>
@@ -119,7 +119,7 @@ $pillars = [
         <?php if ($home_tools) : ?>
             <div style="margin-top:28px;padding-top:24px;border-top:1px solid var(--ln);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:24px">
                 <?php foreach ($home_tools as $slug => $t) : ?>
-                    <a href="<?php echo esc_url(home_url('/tools/' . $slug . '/')); ?>" class="rv" style="display:block"><span class="ph ph-16x10"><img src="<?php echo esc_url($brand('card-tool-' . $slug . '.jpg')); ?>" alt="<?php echo esc_attr($t['title']); ?>" width="1600" height="1000" loading="lazy"></span><span class="tag" style="display:block;margin-top:12px">Free tool</span><span class="card-title"><span class="u"><?php echo esc_html($t['title']); ?></span></span><span class="k" style="display:block;margin-top:8px;font-size:10.5px"><?php echo esc_html($t['group']); ?> · No sign-up</span></a>
+                    <a href="<?php echo esc_url(home_url('/tools/' . $slug . '/')); ?>" class="rv" style="display:block"><?php echo function_exists('xf_brand_photo_html') ? xf_brand_photo_html('tools') : ''; // phpcs:ignore ?><span class="tag" style="display:block;margin-top:12px">Free tool</span><span class="card-title"><span class="u"><?php echo esc_html($t['title']); ?></span></span><span class="k" style="display:block;margin-top:8px;font-size:10.5px"><?php echo esc_html($t['group']); ?> · No sign-up</span></a>
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
@@ -181,22 +181,25 @@ if ($top_launches || $ig) : ?>
 <?php endif; ?>
 
 <?php
-// Three sector blocks: the design's picks first, else whichever sectors have stories.
+// One block per category that has stories, in the site's own order, so the home page
+// covers the full range of what we publish instead of three fixed picks.
 $blocks = [];
-$candidates = ['ai-deeptech', 'fintech', 'consumer-d2c', 'ecommerce', 'saas', 'funding', 'startup-news', 'ev-mobility', 'healthtech'];
+$candidates = function_exists('xf_news_categories') ? array_keys(xf_news_categories())
+    : ['ai-deeptech', 'fintech', 'consumer-d2c', 'ecommerce', 'saas', 'funding', 'startup-news', 'ev-mobility', 'healthtech'];
 $used = $exclude;
 foreach ($candidates as $slug) {
-    if (count($blocks) >= 3) break;
+    if (count($blocks) >= 12) break;
     $term = get_term_by('slug', $slug, 'category');
-    if (!$term) continue;
-    $posts = xft_query_posts(['posts_per_page' => 4, 'cat' => $term->term_id, 'post__not_in' => $used]);
-    if (count($posts) >= 2) {
+    if (!$term || !$term->count) continue;
+    $posts = xft_query_posts(['posts_per_page' => 5, 'cat' => $term->term_id, 'post__not_in' => $used]);
+    if (count($posts) >= 1) {
         $blocks[] = [$term, $posts];
         $used = array_merge($used, wp_list_pluck($posts, 'ID'));
     }
 }
 if ($blocks) : ?>
-<section class="wrap" style="padding-top:88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:40px 32px">
+<section class="wrap" style="padding-top:88px"><div class="sh"><h2>Every section</h2><a class="k u" href="<?php echo esc_url($news_url); ?>">All news →</a></div></section>
+<section class="wrap" style="padding-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:40px 32px">
     <?php foreach ($blocks as [$term, $posts]) : $first = array_shift($posts); ?>
         <div class="rv">
             <div class="sh"><h2><?php echo esc_html($term->name); ?></h2><a class="k u" href="<?php echo esc_url(get_category_link($term)); ?>">More</a></div>
@@ -241,9 +244,9 @@ if ($events || $hiring) : ?>
 
 <?php
 $blog_cats = function_exists('xf_blog_categories') ? array_filter(array_map(function ($s) { $t = get_term_by('slug', $s, 'category'); return $t ? $t->term_id : 0; }, xf_blog_categories())) : [];
-$blog_posts = $blog_cats ? xft_query_posts(['posts_per_page' => 4, 'category__in' => $blog_cats]) : [];
-if (count($blog_posts) < 4) {
-    $blog_posts = xft_query_posts(['posts_per_page' => 4, 'meta_key' => '_thumbnail_id', 'offset' => 3]);
+$blog_posts = $blog_cats ? xft_query_posts(['posts_per_page' => 8, 'category__in' => $blog_cats]) : [];
+if (count($blog_posts) < 8) {
+    $blog_posts = xft_query_posts(['posts_per_page' => 8, 'meta_key' => '_thumbnail_id', 'offset' => 3]);
 }
 if ($blog_posts) : ?>
 <section class="wrap" style="padding-top:88px">

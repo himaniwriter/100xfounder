@@ -111,6 +111,39 @@ function xf_brand_asset($file) {
     return XF_URL . 'assets/brand/' . $file;
 }
 
+/**
+ * A real, openly licensed photograph for a section of the site, in one fixed
+ * template (1600x1000). Reused across pages so we don't make an image per article.
+ * Returns ['url' => …, 'credit' => …, 'license' => …, 'source_page' => …, 'alt' => …] or null.
+ */
+function xf_brand_photo($slot) {
+    static $credits = null;
+    if ($credits === null) {
+        $file = XF_DIR . 'assets/brand/photo-credits.json';
+        $credits = is_readable($file) ? (array) json_decode((string) file_get_contents($file), true) : [];
+    }
+    if (!isset($credits[$slot])) {
+        $slot = 'default';
+    }
+    if (!isset($credits[$slot])) {
+        return null;
+    }
+    return array_merge($credits[$slot], ['url' => xf_brand_asset('photo-' . $slot . '.jpg')]);
+}
+
+/** The photo plus its credit line, as the theme renders it inside a .ph frame. */
+function xf_brand_photo_html($slot, $ratio = '16x10', $eager = false) {
+    $p = xf_brand_photo($slot);
+    if (!$p) {
+        return '';
+    }
+    return sprintf(
+        '<span class="ph ph-%s"><img src="%s" alt="%s" width="1600" height="1000" loading="%s"%s><span class="ph-credit"><a href="%s" rel="nofollow noopener" target="_blank">%s</a></span></span>',
+        esc_attr($ratio), esc_url($p['url']), esc_attr($p['alt']), $eager ? 'eager' : 'lazy',
+        $eager ? ' fetchpriority="high"' : '', esc_url($p['source_page']), esc_html($p['credit'])
+    );
+}
+
 /** The bundled 1200x630 card for this section of the site, or the owner's default image. */
 function xf_brand_social_image() {
     if (function_exists('xf_current_tool') && ($tool = xf_current_tool())) {
