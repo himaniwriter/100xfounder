@@ -6,7 +6,7 @@
 
 - Each JSON payload goes to POST /wp-json/xf/v1/drafts (the plugin sideloads its images).
 - With Settings → Claude (MCP) → "Allow publishing through MCP" on and a user who may publish,
-  posts are scheduled at 08:00, 12:00, 16:00 and 20:00 IST (first N slots per day); otherwise
+  posts are scheduled across the day in IST (up to 10 slots, --per-day N); otherwise
   they land as Pending review.
 - content/uploaded.json records what went up per site, so re-runs skip those files.
 Credentials come only from the environment. Never put them in this repo.
@@ -23,7 +23,8 @@ import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEDGER = os.path.join(HERE, "uploaded.json")
-SLOTS_IST = ["08:00", "12:00", "16:00", "20:00"]
+# Ten slots spread over the day; --per-day N uses the first N in this spread order.
+SLOTS_IST = ["07:00", "14:00", "10:30", "17:30", "21:00", "08:45", "12:15", "15:45", "19:15", "22:30"]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
 
@@ -33,6 +34,7 @@ def schedule(n, per_day, start):
         for t in SLOTS_IST[:per_day]:
             h, m = map(int, t.split(":"))
             slots.append(dt.datetime(day.year, day.month, day.day, h, m, tzinfo=IST))
+        slots[-min(per_day, len(SLOTS_IST)):] = sorted(slots[-min(per_day, len(SLOTS_IST)):])
         day += dt.timedelta(days=1)
     return slots[:n]
 
@@ -40,7 +42,7 @@ def schedule(n, per_day, start):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("files", nargs="*")
-    ap.add_argument("--per-day", type=int, default=4)
+    ap.add_argument("--per-day", type=int, default=10)
     ap.add_argument("--start", default=(dt.date.today() + dt.timedelta(days=1)).isoformat())
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
