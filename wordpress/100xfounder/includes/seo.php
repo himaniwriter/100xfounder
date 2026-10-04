@@ -103,8 +103,49 @@ function xf_social_image() {
     if (is_singular('xf_startup') && ($thumb = get_post_meta(get_the_ID(), '_xf_thumbnail', true))) {
         return $thumb;
     }
-    return (string) xf_get_setting('default_social_image');
+    return xf_brand_social_image();
 }
+
+/** URL of an image shipped in assets/brand/ (made by wordpress/design/build.py). */
+function xf_brand_asset($file) {
+    return XF_URL . 'assets/brand/' . $file;
+}
+
+/** The bundled 1200x630 card for this section of the site, or the owner's default image. */
+function xf_brand_social_image() {
+    if (function_exists('xf_current_tool') && ($tool = xf_current_tool())) {
+        return xf_brand_asset('og-tool-' . $tool['slug'] . '.png');
+    }
+    if (is_singular('xf_job') || is_tax('xf_company')) {
+        return xf_brand_asset('og-jobs.png');
+    }
+    if (is_singular('xf_guide')) {
+        return xf_brand_asset('og-guides.png');
+    }
+    $sections = ['jobs' => 'jobs', 'tools' => 'tools', 'news' => 'news', 'blog' => 'news', 'launches' => 'launches', 'funding' => 'funding', 'events' => 'events', 'guides' => 'guides'];
+    $key = is_page() && function_exists('xf_page_key') ? xf_page_key() : '';
+    if (isset($sections[$key])) {
+        return xf_brand_asset('og-' . $sections[$key] . '.png');
+    }
+    if (is_singular('post') || is_category()) {
+        return xf_brand_asset('og-news.png');
+    }
+    return (string) xf_get_setting('default_social_image') ?: xf_brand_asset('og-default.png');
+}
+
+/** Square logo for Organization schema: the owner's setting, else the bundled wordmark tile. */
+function xf_logo_url() {
+    return (string) xf_get_setting('logo_url') ?: xf_brand_asset('logo-512.png');
+}
+
+/** Favicon and home-screen icon, unless the owner set a Site Icon in the Customizer. */
+add_action('wp_head', function () {
+    if (has_site_icon()) {
+        return;
+    }
+    $icon = esc_url(xf_brand_asset('icon-512.png'));
+    printf('<link rel="icon" href="%1$s" sizes="512x512" type="image/png">' . "\n" . '<link rel="apple-touch-icon" href="%1$s">' . "\n", $icon);
+}, 4);
 
 add_action('wp_head', function () {
     $s = xf_get_settings();
@@ -130,6 +171,10 @@ add_action('wp_head', function () {
     printf('<meta property="og:url" content="%s">' . "\n", esc_url($url));
     if ($image) {
         printf('<meta property="og:image" content="%s">' . "\n", esc_url($image));
+        if (strpos($image, XF_URL . 'assets/brand/') === 0) {
+            echo '<meta property="og:image:width" content="1200">' . "\n" . '<meta property="og:image:height" content="630">' . "\n";
+            printf('<meta property="og:image:alt" content="%s">' . "\n", esc_attr($title));
+        }
     }
     printf('<meta name="twitter:card" content="%s">' . "\n", $image ? 'summary_large_image' : 'summary');
     if (is_singular('post')) {
@@ -152,7 +197,7 @@ function xf_json_ld(array $data) {
 }
 
 function xf_publisher_schema() {
-    $logo = (string) xf_get_setting('logo_url');
+    $logo = xf_logo_url();
     return array_filter([
         '@type' => 'Organization',
         'name' => get_bloginfo('name'),

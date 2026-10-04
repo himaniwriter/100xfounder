@@ -13,6 +13,7 @@ PORT="${PORT:-8080}"
 URL="http://localhost:${PORT}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PLUGIN_DIR="$(cd "$HERE/../100xfounder" && pwd)"
+THEME_DIR="$(cd "$HERE/../100xfounder-theme" && pwd)"
 SITE="$HERE/.site"
 WP_DIR="$SITE/wordpress"
 WPCLI="$SITE/wp-cli.phar"
@@ -54,6 +55,8 @@ if [[ ! -f "$WP_DIR/wp-config.php" ]]; then
   echo "→ Installing the 100xFounder plugin (linked to your repo, so code edits show up live)…"
   ln -sfn "$PLUGIN_DIR" "$WP_DIR/wp-content/plugins/100xfounder"
   wp plugin activate 100xfounder --quiet
+  ln -sfn "$THEME_DIR" "$WP_DIR/wp-content/themes/100xfounder-theme"
+  wp theme activate 100xfounder-theme --quiet
 
   echo "→ Setting the home page and importing the old site's data…"
   wp eval '

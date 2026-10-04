@@ -27,7 +27,7 @@ $linkedin = xft_plugin() ? xf_get_setting('linkedin_url') : '';
 
 <header class="site-header">
     <div class="wrap bar">
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="logo" aria-label="<?php echo esc_attr(get_bloginfo('name')); ?> home"><?php echo xft_logo_svg(); // phpcs:ignore ?><?php echo esc_html(get_bloginfo('name') ?: '100Xfounder'); ?></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/logo.png'); ?>" width="161" height="24" alt="<?php echo esc_attr(get_bloginfo('name') ?: '100xFounder'); ?> home"></a>
         <nav class="primary-nav" aria-label="Main">
             <?php foreach ($nav as $item) : ?>
                 <a class="nl<?php echo xft_is_current($item['url']) ? ' on' : ''; ?>" href="<?php echo esc_url($item['url']); ?>"><?php echo esc_html($item['label']); ?></a>
@@ -67,13 +67,20 @@ $linkedin = xft_plugin() ? xf_get_setting('linkedin_url') : '';
 </header>
 
 <?php if (is_front_page()) :
+    // News headlines when there are any; until then the newest roles, labelled as such.
     $ticker = xft_ticker_posts();
+    $label = 'Breaking';
+    if (!$ticker && post_type_exists('xf_job')) {
+        $ticker = get_posts(['post_type' => 'xf_job', 'posts_per_page' => 8]);
+        $label = 'Now hiring';
+    }
     if ($ticker) : ?>
-        <div class="ticker" aria-label="Breaking">
-            <div class="k label">Breaking</div>
+        <div class="ticker" aria-label="<?php echo esc_attr($label); ?>">
+            <div class="k label"><?php echo esc_html($label); ?></div>
             <div class="track"><div class="mq">
-                <?php for ($copy = 0; $copy < 2; $copy++) : foreach ($ticker as $t) : ?>
-                    <a href="<?php echo esc_url(get_permalink($t)); ?>"<?php echo $copy ? ' aria-hidden="true" tabindex="-1"' : ''; ?>><span class="mono" style="color:var(--t3);font-size:11px"><?php echo esc_html(get_the_time('H:i', $t)); ?></span>&nbsp;&nbsp;<?php echo esc_html(get_the_title($t)); ?></a>
+                <?php for ($copy = 0; $copy < 2; $copy++) : foreach ($ticker as $t) :
+                    $co = $t->post_type === 'xf_job' ? get_post_meta($t->ID, '_xf_company_name', true) : ''; ?>
+                    <a href="<?php echo esc_url(get_permalink($t)); ?>"<?php echo $copy ? ' aria-hidden="true" tabindex="-1"' : ''; ?>><span class="mono" style="color:var(--t3);font-size:11px"><?php echo esc_html($co ?: get_the_time('H:i', $t)); ?></span>&nbsp;&nbsp;<?php echo esc_html(get_the_title($t)); ?></a>
                 <?php endforeach; endfor; ?>
             </div></div>
         </div>
