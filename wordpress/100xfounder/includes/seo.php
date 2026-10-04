@@ -17,16 +17,84 @@ function xf_meta_description() {
     if (is_front_page()) {
         return get_bloginfo('description') ?: 'Startup news, daily launches, funding tracker, founder stories and jobs from India and the US.';
     }
+    if (function_exists('xf_current_tool') && ($tool = xf_current_tool())) {
+        return $tool['desc'];
+    }
+    if (is_tax('xf_company')) {
+        $name = single_term_title('', false);
+        return wp_strip_all_tags(term_description()) ?: sprintf('Open roles at %1$s in India, synced daily from %1$s\'s official careers page. See the location, team and salary where published, then apply on the company site.', $name);
+    }
+    if (is_page() && ($text = xf_page_description(xf_page_key()))) {
+        return $text;
+    }
     if (is_singular()) {
         $post = get_post();
-        $text = $post->post_excerpt ?: (string) get_post_meta($post->ID, '_xf_tagline', true) ?: wp_strip_all_tags($post->post_content);
-        return wp_trim_words(wp_strip_all_tags($text), 30, '…');
+        $text = $post->post_excerpt ?: (string) get_post_meta($post->ID, '_xf_tagline', true) ?: strip_shortcodes($post->post_content);
+        $text = trim(wp_strip_all_tags($text));
+        return $text !== '' ? wp_trim_words($text, 30, '…') : get_bloginfo('description');
     }
     if (is_category() || is_tag() || is_tax()) {
         return wp_strip_all_tags(term_description()) ?: single_term_title('', false) . ' news and analysis on 100Xfounder.';
     }
     return get_bloginfo('description');
 }
+
+/** Descriptions for the plugin's own pages, whose content is only a shortcode. */
+function xf_page_description($key) {
+    if ($key === 'jobs' && function_exists('xf_job_filters_from_request')) {
+        $f = xf_job_filters_from_request();
+        $n = (int) (new WP_Query(array_merge(xf_job_query_args($f, 1), ['fields' => 'ids'])))->found_posts;
+        $what = ($f['function'] ? $f['function'] . ' ' : '') . 'jobs';
+        $where = $f['city'] === 'Remote' || $f['workplace'] === 'Remote' ? ' (remote, open to India)' : ($f['city'] ? ' in ' . $f['city'] : ' in India');
+        return sprintf('%s open %s%s at startups and top companies, taken only from official careers pages and updated daily. Filter by role and city, then apply on the company site.', number_format_i18n($n), $what, $where);
+    }
+    $map = [
+        'news' => 'Startup and funding news from India and the US, written from named sources and reviewed by an editor before it goes live.',
+        'blog' => 'Long reads, founder lessons and analysis from the 100xFounder editors.',
+        'directory' => 'A directory of startups from India and around the world, with what they do, their stage and links to their launches.',
+        'launches' => 'Today\'s Product Hunt launches, with founders, taglines and votes, refreshed every day.',
+        'spotlights' => 'Founder spotlights: how startups were built, in the founders\' own words.',
+        'events' => 'Upcoming startup, AI and tech events in Bengaluru, Delhi NCR, Mumbai and online, from official event calendars.',
+        'funding' => 'A tracker of startup funding rounds, with the amount, stage, investors and a source for every round.',
+        'submit' => 'Submit your startup, launch, news or press release to 100xFounder. An editor reads every submission.',
+        'tools' => 'Free calculators for Indian salaried professionals: in-hand salary from CTC, salary hike and notice period buyout.',
+        'guides' => 'How to apply at top companies hiring in India: the hiring process, interview rounds and tips, with sources.',
+    ];
+    return $map[$key] ?? '';
+}
+
+/**
+ * The address of the page being viewed, for virtual pages that core gets wrong:
+ * job landing pages and tools (core points them at /jobs/ and /tools/) and term archives (core prints none).
+ */
+function xf_current_canonical() {
+    if (function_exists('xf_current_tool') && ($tool = xf_current_tool())) {
+        return home_url('/tools/' . $tool['slug'] . '/');
+    }
+    if (is_page() && ($slug = (string) get_query_var('xf_jobs_slug'))) {
+        return home_url('/jobs/' . $slug . '/');
+    }
+    if (is_tax() || is_category() || is_tag()) {
+        $paged = max(1, (int) get_query_var('paged'));
+        return $paged > 1 ? get_pagenum_link($paged) : get_term_link(get_queried_object());
+    }
+    return '';
+}
+
+add_filter('get_canonical_url', function ($url) {
+    $here = xf_current_canonical();
+    return $here && !is_wp_error($here) ? $here : $url;
+});
+
+add_action('wp_head', function () {
+    if (xf_seo_plugin_active() || !(is_tax() || is_category() || is_tag())) {
+        return;
+    }
+    $here = xf_current_canonical();
+    if ($here && !is_wp_error($here)) {
+        printf('<link rel="canonical" href="%s">' . "\n", esc_url($here));
+    }
+}, 3);
 
 function xf_social_image() {
     if (is_singular() && has_post_thumbnail()) {
@@ -51,7 +119,8 @@ add_action('wp_head', function () {
     }
     $title = wp_get_document_title();
     $desc = xf_meta_description();
-    $url = is_singular() ? get_permalink() : home_url(add_query_arg([], $GLOBALS['wp']->request ?? ''));
+    $url = xf_current_canonical();
+    $url = $url && !is_wp_error($url) ? $url : (is_singular() ? get_permalink() : home_url(add_query_arg([], $GLOBALS['wp']->request ?? '')));
     $image = xf_social_image();
     printf('<meta name="description" content="%s">' . "\n", esc_attr($desc));
     printf('<meta property="og:site_name" content="%s">' . "\n", esc_attr(get_bloginfo('name')));

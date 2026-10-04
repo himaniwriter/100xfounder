@@ -603,6 +603,22 @@ add_action('wp_head', function () {
     echo '<script type="application/ld+json">' . wp_json_encode($data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) . "</script>\n";
 }, 5);
 
+/** "Staff Engineer at Databricks, Bengaluru": job titles alone repeat across companies. */
+add_filter('document_title_parts', function ($parts) {
+    if (is_singular('xf_job')) {
+        $id = get_queried_object_id();
+        $company = (string) get_post_meta($id, '_xf_company_name', true);
+        $city = (string) get_post_meta($id, '_xf_city', true);
+        $parts['title'] = get_the_title($id) . ($company ? ' at ' . $company : '') . ($city ? ', ' . $city : '');
+    }
+    return $parts;
+});
+
+/** Feed descriptions sometimes carry their own <h1>; the job title is the page's only one. */
+add_filter('the_content', function ($content) {
+    return is_singular('xf_job') ? preg_replace('/<(\/?)h1\b/i', '<$1h2', $content) : $content;
+}, 20);
+
 /** Expired jobs: noindex while they still resolve (e.g. via a cached link). */
 add_filter('wp_robots', function ($robots) {
     if (is_singular('xf_job') && get_post_meta(get_the_ID(), '_xf_expired', true)) {
