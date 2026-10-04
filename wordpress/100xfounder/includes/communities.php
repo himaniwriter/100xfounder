@@ -265,3 +265,23 @@ function xf_community_card_html($post) {
     <?php
     return ob_get_clean();
 }
+
+/**
+ * The picture for an event card: the organiser's own share image where they
+ * publish one, otherwise the shared city photograph so no card is ever blank.
+ * Returns ['url' => …, 'credit' => …, 'theirs' => bool].
+ */
+function xf_event_image($event_id) {
+    $img = (string) get_post_meta((int) $event_id, '_xf_image', true);
+    if ($img) {
+        return [
+            'url' => $img,
+            'credit' => function_exists('xf_event_image_credit') ? xf_event_image_credit($event_id) : '',
+            'theirs' => true,
+        ];
+    }
+    $city = (string) get_post_meta((int) $event_id, '_xf_city', true);
+    $slot = function_exists('xf_event_city_bucket') ? xf_event_city_bucket($city) : '';
+    $photo = function_exists('xf_brand_photo') ? xf_brand_photo($slot === 'Online' || !$slot ? 'events' : 'events') : null;
+    return $photo ? ['url' => $photo['url'], 'credit' => $photo['credit'], 'theirs' => false] : ['url' => '', 'credit' => '', 'theirs' => false];
+}

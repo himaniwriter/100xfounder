@@ -54,7 +54,14 @@ $base = get_permalink();
             $url = get_post_meta($id, '_xf_url', true) ?: get_permalink($e);
             $mine = !empty($_COOKIE['xf_rsvp_' . $id]);
             ?>
-            <article class="xf-event" id="rsvp">
+            <?php $pic = function_exists('xf_event_image') ? xf_event_image($id) : ['url' => '', 'credit' => '', 'theirs' => false]; ?>
+            <article class="xf-event<?php echo $pic['url'] ? ' has-pic' : ''; ?>" id="rsvp">
+                <?php if ($pic['url']) : ?>
+                    <a class="xf-event__pic" href="<?php echo esc_url(get_permalink($e)); ?>">
+                        <img src="<?php echo esc_url($pic['url']); ?>" alt="<?php echo esc_attr(get_the_title($e)); ?>" loading="lazy" referrerpolicy="no-referrer">
+                        <?php if ($pic['credit']) : ?><span class="ph-credit"><?php echo esc_html(($pic['theirs'] ? 'Image: ' : '') . $pic['credit']); ?></span><?php endif; ?>
+                    </a>
+                <?php endif; ?>
                 <div class="xf-event__date">
                     <span class="k"><?php echo esc_html($start ? wp_date('M', strtotime($start)) : ''); ?></span>
                     <span class="d"><?php echo esc_html($start ? wp_date('j', strtotime($start)) : '—'); ?></span>
