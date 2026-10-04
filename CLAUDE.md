@@ -18,6 +18,12 @@ Read this first in every session. It records what the owner has decided about th
 
 The full plan is in `docs/PRD.md`. Its open questions and approval status are tracked there.
 
+## Owner decisions
+
+- **AI writing uses Claude Code skills** (`.claude/skills/`) running on the owner's Claude plan limits. Don't use the Claude API or any paid AI API in the site or plugin.
+- **Payments are a manual invoice** (no payment gateway).
+- **Build order is growth-first**: foundation, then jobs and calculators, then AI news and the AI directory, then founders and verification, then revenue features.
+
 ## Non-negotiable rules
 
 - **Every factual claim about a real person or company carries a source.** Never invent or estimate net worth, funding, revenue or personal details. If there's no reliable source, leave it out.

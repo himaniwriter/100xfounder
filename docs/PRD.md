@@ -1,7 +1,7 @@
 # 100xFounder Content and SEO Platform: PRD
 
-**Status:** Draft, awaiting owner approval
-**Version:** 0.1 (2026-10-04)
+**Status:** Draft v0.2, owner's answers applied; awaiting final approval
+**Version:** 0.2 (2026-10-04)
 **Platform:** WordPress on Hostinger with the `100xfounder` plugin. See `CLAUDE.md` for the standing rules.
 
 ---
@@ -42,7 +42,7 @@ These apply to every pillar:
 |---|---|
 | **Editorial workflow** | Statuses: *Idea → Draft → In review → Published → Needs update*. Shows the assigned reviewer and a review checklist (sources present, facts checked, no thin content). Uses WordPress's built-in Pending/Draft plus a checklist panel. |
 | **Sources system** | A meta box on every post type that holds a repeatable list of sources (URL, publisher, date, supported claim). It renders a "Sources" block with `citation` schema. Publishing a founder or company article with no sources is blocked. |
-| **AI drafting assistant (optional)** | A "Draft with AI" button that turns the queued item plus its sources into a first draft. It writes in our own words, cites sources inline, and never fabricates figures. Runs on the Claude API using your API key, with a capped monthly budget, and drafts always land in review. |
+| **Content-writing skills (no API credits)** | Articles are written by **Claude Code skills that run on your Claude plan's daily limits**, not on paid API credits (owner decision). The plugin exposes a **content queue** and a **draft inbox** over the WordPress REST API, using a built-in Application Password over HTTPS. The skills read the queue, research with web search, write with inline sources, self-check, and upload each draft as **Pending review**. You review and publish in WordPress. See section 4a. |
 | **Schema** | `NewsArticle`, `ProfilePage`/`Person`, `Organization`, `JobPosting`, `SoftwareApplication`, `ItemList`, `BreadcrumbList` and `FAQPage` (only where real Q&A exists). |
 | **Indexing** | Core sitemaps, a Google News sitemap (last 48h), IndexNow ping on publish/update, the Google Indexing API for jobs, and auto-noindex of thin pages. |
 | **E-E-A-T pages** | Author profiles with bios, plus Editorial Policy, Corrections Policy, Sources & Methodology and Advertise pages. AdSense already has About/Contact/Privacy/Terms/Disclaimer. |
@@ -155,16 +155,23 @@ These apply to every pillar:
 2. The brief or draft goes through editorial review against quality and policy rules.
 3. It's published with a **"Sponsored"** label, `rel="sponsored"` links and an author line of "Partner content".
 
-**Payments:** see the open questions. Razorpay suits Indian buyers; Stripe or PayPal suit international ones.
+**Payments (owner decision): manual invoice.**
+1. The order form creates an *Order* (pending) and emails you and the buyer.
+2. You send the invoice and mark the order *Paid* in admin.
+3. That unlocks the listing or sponsored article.
+
+No payment gateway in v1.
 
 **Acceptance criteria:**
 - Paid items can't skip review.
 - All sponsored content is labelled.
-- Payment webhooks change status automatically.
+- An order moves Pending → Paid → Published only by an admin action, and the buyer is emailed at each step.
 
 ### Pillar 4: AI tools that rank fast and actually work
 
-*Interpretation needs your confirmation; see the open questions.* The proposal is **free, working tools hosted on our site**: people use them, they earn links, and long-tail tool keywords rank quickly.
+**Owner decision: both of the following.**
+- **(a) Free working tools hosted on our site.** People use them, they earn links, and long-tail tool keywords rank quickly.
+- **(b) Fast-ranking, verified pages about AI tools.** These come from the pillar 5 directory, with a daily check that each tool still works.
 
 **Initial set:**
 - 6 that need no AI and have no running cost:
@@ -174,11 +181,13 @@ These apply to every pillar:
   - CTC to in-hand calculator
   - notice-period buyout calculator
   - startup name and domain checker
-- 4 AI-powered, using a capped Claude API budget and rate limits:
-  - LinkedIn headline generator
-  - cold email / referral message writer
-  - resume bullet improver
-  - startup pitch one-liner generator
+- 4 writing helpers built **without any AI API**, since there are no API credits:
+  - LinkedIn headline builder
+  - referral and cold-email builder
+  - resume bullet builder
+  - pitch one-liner builder
+
+  These use templates and rules (role, skills and achievement fields combined with proven formulas). Each offers a **"Copy as prompt"** button that hands a ready-made prompt to the visitor's own ChatGPT or Claude, so they work for free and never break.
 
 **"Must be working":** every tool has an automated test, run daily, plus uptime monitoring. A broken tool is hidden automatically and the admin is alerted.
 
@@ -186,7 +195,7 @@ These apply to every pillar:
 
 **Acceptance criteria:**
 - Tools load in under 2s on mobile.
-- AI tools have abuse limits (per-IP rate limit, CAPTCHA after N uses) and a monthly cost cap.
+- No paid APIs, so tools have no running cost and nothing to rate-limit.
 
 ### Pillar 5: "Which AI to use for what" (directory modelled on theresanaiforthat.com)
 
@@ -263,26 +272,56 @@ The list can be edited in admin.
 
 ---
 
+## 4a. Content-writing skills (Claude Code, using your plan limits)
+
+The skills live in the repo under `.claude/skills/`, so they're available in every Claude Code session: terminal, desktop, web or a scheduled routine. Usage counts against your Claude plan's limits, not API credits.
+
+| Skill | Writes | Input from the site queue |
+|---|---|---|
+| `/write-news` | Startup and funding news and the weekly funding roundup | Queued stories from the news desk |
+| `/ai-news-desk` | AI news stories and **updates to existing story timelines** | Significant stories from the feed tracker |
+| `/write-founder` | Founder profiles (sources required; net worth only when sourced) | Founder stubs from Product Hunt imports and spotlights |
+| `/write-apply-guide` | "How to apply at {company}" guides | Your company list |
+| `/write-ai-tool` | AI tool profiles, "AI for {task}" pages and alternatives | Directory candidates and task pages under 5 tools |
+
+**How each skill works:**
+1. Pull the next N items from `GET /wp-json/xf/v1/queue?type=…`.
+2. Research with web search and web fetch, keeping a source list with URL, publisher, date and the claim it supports.
+3. Write to the page-type template and style guide (`docs/STYLE_GUIDE.md`): structure, length, tone and internal links.
+4. Self-check:
+   - every number and claim has a source
+   - nothing invented
+   - no copied passages
+   - title and meta length are right
+5. Upload with `POST /wp-json/xf/v1/drafts` as **Pending review**, with category, tags, sources, schema fields and the featured-image source.
+6. Report the edit links for you to review.
+
+**Scheduling:** a Claude Code **routine** can run, for example, `/ai-news-desk` every morning and `/write-news` at noon. These use your plan, and the drafts wait for your review. For a cloud routine to reach the site, the environment's network must allow 100xfounder.com.
+
+**Security:**
+- A dedicated WordPress user with the **Author** role that can only create pending posts.
+- An Application Password (revocable) stored as a secret in the environment, never in the repo.
+
 ## 5. Information architecture (top navigation)
 
 **News** (Startup · Funding · AI News) · **Founders** · **Jobs** · **AI Tools** (Directory · Free Tools) · **Startups** (Directory · Launches · Submit) · **Advertise**
 
-## 6. Roadmap (proposed order; each phase ships locally first, and you approve before it goes live)
+## 6. Roadmap: growth-first order (owner asked for the fastest-growing combination)
 
-| Phase | Scope | Why first |
+The reasoning:
+- **Jobs** (Google for Jobs and the Indexing API) plus **salary and CTC calculators** reach India's largest search audience fastest, and each feeds the other.
+- **AI news plus the AI tool directory** brings daily fresh content (Google News and Discover) and evergreen long-tail traffic.
+- **Monetisation and founder pillars** come once there's traffic to sell.
+
+| Phase | Scope | Growth lever |
 |---|---|---|
-| **A. Foundation** | Editorial workflow, sources system, schema, IndexNow, news sitemap, E-E-A-T pages, affiliate/sponsored primitives, Search Console/GA settings | Everything else depends on it |
-| **B. News + verification** (pillars 3 and 6) | Paid listings and sponsored flow, funding tags and roundup, founder verification outreach | Builds on what exists; first revenue |
-| **C. AI directory + free tools** (pillars 5 and 4) | Tool profiles, task pages, health checks, the first 10 free tools | High search demand; tools earn links |
-| **D. Jobs** (pillar 2) | ATS sync, job pages, Indexing API, "how to apply" guides for the top 30 companies | Huge Indian search volume |
-| **E. AI news desk + founder profiles** (pillars 7 and 1) | Feed tracker, review queue, story timelines, founder profiles, net-worth policy | Needs the review muscle from A–D |
+| **A. Foundation (slim)** | Sources system, review checklist, schema, IndexNow, news sitemap, E-E-A-T pages, Search Console/GA settings, **content queue and draft API, plus the first skill** | Required by everything |
+| **B. Jobs engine + calculators** (pillars 2 and 4a) | ATS sync, job and city/role pages, Indexing API, expiry; in-hand salary, CTC and notice-buyout calculators; `/write-apply-guide` for the top 30 companies | Fastest indexing (hours) and the biggest Indian volume |
+| **C. AI news desk + AI tool directory** (pillars 7, 5 and 4b) | Feed tracker, review queue, story timelines, `/ai-news-desk`; tool profiles, task pages, health checks, `/write-ai-tool`; writing-helper tools | Daily freshness plus long-tail evergreen |
+| **D. Founders + verification** (pillars 1 and 6) | Founder profiles, sourced net worth, `/write-founder`, verification emails, corrections log | Trust (E-E-A-T) and backlinks |
+| **E. Revenue** (pillar 3) | Submit-startup tiers, sponsored articles, manual-invoice orders, affiliate manager, funding roundup | Monetise the traffic |
 
-Each phase includes:
-- local testing
-- screenshots for your review
-- an updated plugin zip
-- a "what changed" note
-
+AdSense runs from day one. Apply once 20–30 quality articles are live, likely during phase B or C.
 ## 7. Risks
 
 | Risk | Mitigation |
@@ -293,16 +332,19 @@ Each phase includes:
 | Hostinger limits (cron frequency, PHP time, email volume) | Batch work, a 2-hourly cron, low email volume, and a VPS later if needed |
 | Running costs | Claude API cap; free tools that need no AI make up most of the set |
 
-## 8. Open questions (answer before build)
+## 8. Decisions and remaining questions
 
-1. **Pillar 4:** does "AI tools that rank fast" mean free working tools on our site, or something else?
-2. **AI drafting:** can we use the Claude API, with your key and a monthly cap, to draft content for human review?
-3. **Payments:** which provider handles paid listings and sponsored articles?
-4. **First phase:** which pillar(s) matter most to start with?
-5. **Prices:** paid listing and sponsored article prices in INR and USD.
-6. **Who reviews:** is it you, or will there be other editors or authors? This affects author profiles and permissions.
-7. **Affiliate programs:** which do you already have (Amazon, Impact, AI tool programs)?
-8. **Job companies:** which 30 companies come first for jobs and "how to apply" guides? (A default list will be proposed if you skip this.)
+**Decided (2026-10-04):**
+- **Pillar 4:** both free on-site tools and verified AI-tool pages.
+- **AI writing:** Claude Code skills on your plan's limits, with no API credits.
+- **Payments:** manual invoice.
+- **Order:** growth-first (section 6).
+
+**Still open. Defaults are used if you don't answer:**
+1. **Prices:** paid listing and sponsored article prices. Default: Fast-track ₹2,999 / $49, Featured ₹7,999 / $129 a week, Sponsored article ₹14,999 / $249.
+2. **Who reviews:** default is you, the admin, only.
+3. **Affiliate programs:** default is none at launch; the affiliate manager is built for adding later.
+4. **First 30 companies for jobs and apply guides:** default is a mix of big tech (Google, Microsoft, Amazon, Meta, Adobe, Salesforce), Indian unicorns (Flipkart, Swiggy, Zomato, Razorpay, CRED, Zepto, PhonePe, Meesho, Groww, Zerodha, Paytm) and AI-first companies (OpenAI, Anthropic, NVIDIA, Sarvam AI, Krutrim), subject to each having a public job feed or careers page.
 
 ## 9. Approval
 
