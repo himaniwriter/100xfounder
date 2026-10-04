@@ -1,6 +1,6 @@
 # 100xFounder Content and SEO Platform: PRD
 
-**Status:** Draft v0.3, owner's UI design added; awaiting final approval
+**Status:** **Approved by owner 2026-10-04 (v0.3). Phase A in progress.**
 **Version:** 0.3 (2026-10-04)
 **Platform:** WordPress on Hostinger with the `100xfounder` plugin. See `CLAUDE.md` for the standing rules.
 
@@ -394,6 +394,11 @@ AdSense runs from day one. Apply once 20–30 quality articles are live, likely 
 
 ## 8. Decisions and remaining questions
 
+**Decided (2026-10-04, UI round):**
+- **Newsletter:** collect signups in WordPress only for now; choose a sender later.
+- **Events:** fetched automatically from public event calendars. An admin adds **iCal/ICS feeds**, for example Luma calendars and Meetup groups, or any organiser's public `.ics`. Imported events land as *pending* for review, are credited to the organiser, and link to the original registration page. No scraping of sites without a public feed.
+- **Launch votes:** rank by real Product Hunt votes, plus a separate "100x likes" count from visitors (one per browser, rate-limited, no login).
+
 **Decided (2026-10-04):**
 - **Pillar 4:** both free on-site tools and verified AI-tool pages.
 - **AI writing:** Claude Code skills on your plan's limits, with no API credits.
@@ -401,7 +406,7 @@ AdSense runs from day one. Apply once 20–30 quality articles are live, likely 
 - **Order:** growth-first (section 6).
 
 **Still open. Defaults are used if you don't answer:**
-0. **UI questions:** newsletter provider, events, and how upvotes work. Asked in chat on 2026-10-04.
+
 1. **Prices:** paid listing and sponsored article prices. Default: Fast-track ₹2,999 / $49, Featured ₹7,999 / $129 a week, Sponsored article ₹14,999 / $249.
 2. **Who reviews:** default is you, the admin, only.
 3. **Affiliate programs:** default is none at launch; the affiliate manager is built for adding later.
@@ -409,6 +414,6 @@ AdSense runs from day one. Apply once 20–30 quality articles are live, likely 
 
 ## 9. Approval
 
-- [ ] Owner approves the scope and phase order
-- [ ] Open questions answered
-- [ ] Phase A starts
+- [x] Owner approves the scope and phase order (2026-10-04)
+- [x] Key questions answered (defaults apply to the rest)
+- [x] Phase A started
