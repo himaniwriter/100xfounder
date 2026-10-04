@@ -96,6 +96,7 @@ $base = get_permalink();
     </div>
 
     <aside style="flex:1 1 320px;min-width:0">
+        <?php echo function_exists('xf_city_alert_form') ? xf_city_alert_form($city, 'events page') : ''; // phpcs:ignore ?>
         <div class="xf-subscribe" style="margin-top:0"><div class="k">Organising something?</div><div class="xf-subscribe__title">Get your event in front of founders and operators.</div><a class="btn btn-w" href="<?php echo esc_url($submit); ?>" style="margin-top:14px;width:100%">Submit an event</a></div>
         <div id="newsletter"><?php echo xft_newsletter('The week’s events, funding and launches in one email.'); // phpcs:ignore ?></div>
     </aside>

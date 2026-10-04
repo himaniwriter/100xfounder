@@ -285,3 +285,103 @@ function xf_event_image($event_id) {
     $photo = function_exists('xf_brand_photo') ? xf_brand_photo($slot === 'Online' || !$slot ? 'events' : 'events') : null;
     return $photo ? ['url' => $photo['url'], 'credit' => $photo['credit'], 'theirs' => false] : ['url' => '', 'credit' => '', 'theirs' => false];
 }
+
+/* ---- City alerts: a second, lighter lead capture that works on any event page ---- */
+
+function xf_city_alert_consent() {
+    return 'I agree that 100xFounder may message me on WhatsApp or by phone about startup events and communities in my city. I can ask to stop at any time.';
+}
+
+/** Have we already got this visitor's number? */
+function xf_city_alert_done() {
+    return !empty($_COOKIE['xf_city_alert']) || xf_community_unlocked();
+}
+
+add_action('admin_post_nopriv_xf_city_alert', 'xf_handle_city_alert');
+add_action('admin_post_xf_city_alert', 'xf_handle_city_alert');
+function xf_handle_city_alert() {
+    $back = remove_query_arg(['alert', 'alert_error'], wp_get_referer() ?: home_url('/events/'));
+    $fail = function ($msg) use ($back) {
+        wp_safe_redirect(add_query_arg('alert_error', rawurlencode($msg), $back) . '#alerts');
+        exit;
+    };
+    if (!isset($_POST['xf_alert_nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['xf_alert_nonce'])), 'xf_city_alert')) {
+        $fail('Your session expired. Please try again.');
+    }
+    if (!empty($_POST['website'])) {
+        wp_safe_redirect(add_query_arg('alert', 'done', $back) . '#alerts');
+        exit;
+    }
+    if (function_exists('xf_rate_limited') && xf_rate_limited('alert', 8, HOUR_IN_SECONDS)) {
+        $fail('Too many requests from your connection. Please try again later.');
+    }
+    $name = sanitize_text_field(wp_unslash($_POST['name'] ?? ''));
+    $phone = sanitize_text_field(wp_unslash($_POST['phone'] ?? ''));
+    $city = sanitize_text_field(wp_unslash($_POST['city'] ?? ''));
+    $context = sanitize_text_field(wp_unslash($_POST['context'] ?? ''));
+    if (mb_strlen($name) < 2 || strlen(preg_replace('/\D/', '', $phone)) < 10) {
+        $fail('Please add your name and a phone number with its country code.');
+    }
+    if (empty($_POST['consent'])) {
+        $fail('Please tick the consent box so we can message you.');
+    }
+    $id = wp_insert_post([
+        'post_type' => 'xf_lead',
+        'post_status' => 'private',
+        'post_title' => $name . ' — event alerts' . ($city ? ' / ' . $city : ''),
+        'post_content' => 'Asked for event alerts' . ($context ? ' from: ' . $context : '') . '.',
+        'meta_input' => [
+            '_xf_lead_name' => $name,
+            '_xf_lead_phone' => $phone,
+            '_xf_lead_city' => $city,
+            '_xf_lead_niche' => 'event-alerts',
+            '_xf_lead_sub' => $context,
+            '_xf_lead_source' => esc_url_raw($back),
+            '_xf_lead_consent' => current_time('mysql'),
+            '_xf_lead_consent_text' => xf_city_alert_consent(),
+        ],
+    ]);
+    if (!is_wp_error($id)) {
+        wp_mail(get_option('admin_email'), 'Event alert signup: ' . $name,
+            "Name: $name\nPhone: $phone\nCity: $city\nFrom: $context\nPage: $back\n\nLeads: " . admin_url('edit.php?post_type=xf_lead'));
+    }
+    setcookie('xf_city_alert', '1', time() + 180 * DAY_IN_SECONDS, COOKIEPATH ?: '/', COOKIE_DOMAIN, is_ssl(), true);
+    wp_safe_redirect(add_query_arg('alert', 'done', $back) . '#alerts');
+    exit;
+}
+
+/** A compact "tell me what's on in my city" form for event pages. */
+function xf_city_alert_form($city = '', $context = '') {
+    $done = isset($_GET['alert']) && $_GET['alert'] === 'done';
+    $error = isset($_GET['alert_error']) ? sanitize_text_field(wp_unslash($_GET['alert_error'])) : '';
+    $privacy = function_exists('xft_page_url') ? xft_page_url('privacy', 'privacy-policy') : home_url('/privacy-policy/');
+    $where = $city ?: 'your city';
+    ob_start(); ?>
+    <div class="xf-gate" id="alerts">
+        <?php if ($done || (xf_city_alert_done() && !$error)) : ?>
+            <p class="k">You're on the list</p>
+            <h3>We'll message you before the next one</h3>
+            <p>You'll hear from us when something worth attending is announced in <?php echo esc_html($where); ?>.</p>
+        <?php else : ?>
+            <p class="k">Don't miss the next one</p>
+            <h3>Get startup events in <?php echo esc_html($where); ?> on WhatsApp</h3>
+            <p>We'll message you when a demo day, mixer or founder meetup is announced near you. No spam, and you can stop any time.</p>
+            <?php if ($error) : ?><p class="xf-quote-err" role="alert"><?php echo esc_html($error); ?></p><?php endif; ?>
+            <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+                <input type="hidden" name="action" value="xf_city_alert">
+                <input type="hidden" name="city" value="<?php echo esc_attr($city); ?>">
+                <input type="hidden" name="context" value="<?php echo esc_attr($context); ?>">
+                <?php wp_nonce_field('xf_city_alert', 'xf_alert_nonce'); ?>
+                <p class="screen-reader-text"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
+                <div class="xf-gate-grid">
+                    <label><span>Your name</span><input type="text" name="name" required autocomplete="name"></label>
+                    <label><span>Phone, with country code</span><input type="tel" name="phone" required placeholder="+91 98XXXXXXXX" autocomplete="tel"></label>
+                </div>
+                <label class="xf-quote-consent"><input type="checkbox" name="consent" value="1" required> <?php echo esc_html(xf_city_alert_consent()); ?> See our <a href="<?php echo esc_url($privacy); ?>">privacy policy</a>.</label>
+                <button class="btn btn-w" type="submit">Send me events in <?php echo esc_html($where); ?></button>
+            </form>
+        <?php endif; ?>
+    </div>
+    <?php
+    return ob_get_clean();
+}
