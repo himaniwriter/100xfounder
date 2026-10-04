@@ -91,6 +91,10 @@ def main():
     if not TOKEN:
         sys.exit("Set HOSTINGER_API_TOKEN first (hPanel → profile → API). Do not commit it.")
     status, installs = api("GET", "/api/hosting/v1/wordpress/installations")
+    if status in (401, 403):
+        sys.exit(f"Hostinger rejected the API token ({status}). Check HOSTINGER_API_TOKEN is the real token from hPanel → profile → API, not a placeholder.")
+    if status != 200:
+        sys.exit(f"Hostinger API error {status}: {installs}")
     site = next((i for i in installs if i["domain"] == DOMAIN), None) if status == 200 else None
     if not site:
         sys.exit(f"No WordPress installation found for {DOMAIN}. Install it first (see docs/WORDPRESS_SETUP.md).")
