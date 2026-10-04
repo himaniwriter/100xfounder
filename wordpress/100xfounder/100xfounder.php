@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 }
 
 define('XF_VERSION', '1.0.0');
-define('XF_DB_VERSION', '7');
+define('XF_DB_VERSION', '8');
 define('XF_FILE', __FILE__);
 define('XF_DIR', plugin_dir_path(__FILE__));
 define('XF_URL', plugin_dir_url(__FILE__));
@@ -41,6 +41,7 @@ require_once XF_DIR . 'includes/rounds.php';
 require_once XF_DIR . 'includes/engagement.php';
 require_once XF_DIR . 'includes/submissions.php';
 require_once XF_DIR . 'includes/leads.php';
+require_once XF_DIR . 'includes/communities.php';
 require_once XF_DIR . 'includes/sources.php';
 require_once XF_DIR . 'includes/seo.php';
 require_once XF_DIR . 'includes/queue.php';
