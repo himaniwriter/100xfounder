@@ -392,3 +392,37 @@ Commissions, a **120-day last-click cookie**, payout timing and the prohibition 
 
 ### 14.12 Video references — verified
 Main @semrush channel walkthrough: **"Semrush Overview: The All-in-One SEO Toolkit for Marketing Pros"** (`epX_KJ83I0E`). A keyword-research tutorial exists on **Semrush Academy**, a separate Semrush-owned channel — state the distinction. **Publish dates and durations could not be confirmed; do not state them.** 17 third-party look-alikes were checked and rejected.
+
+---
+
+## 15. LAST ADDITIONS — from the extended fact file (157 primary URLs, 4 Oct 2026)
+
+### 15.1 The headline price is $139.95, not $139
+The pricing page renderer truncates the decimal. The real constants are **$139.95 / $199 / $299 / $549** monthly and **$117.33 / $165.17 / $248.17 / $455.67** annually. Use $139.95.
+
+### 15.2 Semrush's last-ever financials say it is losing small customers — in its own words
+FY2025 10-K and Q4 release, both **2 March 2026** (the final filings before delisting):
+- Revenue **$443.6M, +18%** · ARR **$471.4M, +15%**
+- **~108,000 paying customers — DOWN about 9,000 year on year**
+- The 10-K attributes this to *"softness at the lower end… freelancers and less sophisticated users"* and *"some consolidation in the market from AI"*.
+- Founded 2008 by Oleg Shchegolev and Dmitry Melnikov. **No 2026 figures exist or ever will.**
+
+**This is the most valuable honest-review fact in the whole pack.** Semrush told its regulator that the exact buyer reading our page — a freelancer or small operator — is the segment leaving. Pair it with the pricing move and it explains the strategy without us having to speculate.
+
+### 15.3 Entry-tier content limits nobody writes about
+- **Topic Research: "two searches per lifetime"** on the entry tier.
+- **SEO Writing Assistant: 2 documents and 500 AI words, lifetime.**
+These make the cheapest plan far weaker for content work than any competing review admits.
+
+### 15.4 A worked seat example to use directly
+A **3-seat Pro+ team wanting AI visibility for everyone: $657/month** ($299 + 2 × $80 seats + AI Visibility licences at $99/user). Build the real-bill section around arithmetic like this.
+
+### 15.5 OUR affiliate compliance — this binds how we write
+Semrush's affiliate programme: **120-day cookie, $10 per trial, up to $450 per sale**, and it **explicitly bans "misrepresenting a free trial as a coupon or discount"** and bans brand-keyword bidding.
+**So: never frame the 7-day trial as a coupon, deal or discount anywhere on the page.** Our honest framing already complies; keep it that way.
+
+### 15.6 Geographic coverage is quoted five different ways
+142 / 190+ / 220+ / 32 / 117 — five numbers for five different datasets that **no Semrush page reconciles**. Give the number with the dataset it belongs to; don't average them.
+
+### 15.7 A third plan vocabulary exists
+The KB still uses Pro/Guru/Business throughout, while kb/1618 introduces **"SEO Classic"** as a third name. Semrush publishes **no crosswalk** (kb/1624 sounds like one but redirects to the pricing page). Our old→new mapping is inference and must be labelled as such — but the price rise it reveals is quotable: **Guru $249.95 → Pro+ $299, Business $499.95 → Advanced $549, for the same documented limits.**

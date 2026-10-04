@@ -659,18 +659,71 @@ Absence of a limit here does **not** mean "no limit exists" — it means Semrush
 |---|---|---|
 | **Log File Analyzer** | Exists as a product page: analyze access logs to "take a look at your site from the perspective of a Googlebot" and "identify bugs, crawling issues, and other technical SEO problems". Shows Googlebot activity over a **30-day** window, HTTP status codes, file types crawled, a "Hits by Pages" report, desktop-vs-mobile bot filtering. Supported formats: **Combined Log Format, W3C Extended, Amazon Classic Load Balancer, Kinsta**; files must be **unarchived**. The 2018 launch page still labels it "**open beta**". [https://www.semrush.com/features/log-file-analyzer/ , https://www.semrush.com/news/272325-log-file-analyzer-open-beta/ , 4 Oct 2026] | **No file-size limit, line count, upload count or plan tier is documented anywhere.** Its KB URL `/kb/semrush-reports-tools/projects/log-file-analyzer/` returns a hard **404**; repeated domain-restricted searches surfaced **no KB article**; the linked manual PDF did not serve. ⚠ **A "10 GB/day, 3-month retention" figure circulating for this tool actually belongs to Semrush Enterprise log analysis, a different product — do not attribute it here.** |
 | **Link Building Tool** | "allows you to find prospects based on your target keywords and competitors, start outreach directly from the platform, and keep track of your campaigns." Four tabs: Overview, Prospects, In Progress, Monitor. Prospects come from entered keywords, domains linking to entered competitors, manual uploads, or lost backlinks. [https://www.semrush.com/features/link-building/ , 4 Oct 2026] | **No numeric limit of any kind is documented** (prospects, keywords, competitors, emails/day, campaigns), and **no plan tier**. `/kb/semrush-reports-tools/projects/link-building-tool/` → hard **404**; `/kb/827-configuring-link-building`, `/kb/731-link-building` and `/kb/737-reviewing-link-building-prospects` all resolve to a generic SEO Toolkit landing page. |
-| **SEO Writing Assistant** | Listed as a **Guru**-tier inclusion on kb/1547, i.e. Pro+ or above in 2026 naming. On the free plan: "one piece of content" (blog). | No per-month usage limit on paid tiers confirmed. |
-| **Topic Research** | Listed as a **Guru**-tier inclusion on kb/1547. | No limits confirmed. |
-| **ContentShake AI** | **No page under that name.** Content Toolkit has a **Base plan only**, $60/mo, "10,000 articles/mo", "5 SEO content boosts/mo", 7 languages. | Whether ContentShake AI still exists as a distinct product. |
-| **AI Brand Sentiment** | "**weekly** data on brand sentiment" (kb/997); appears as a plan feature from Starter up. | No numeric limits. |
-| **Prompt Research** | Named in the Discover nav and on /features/keyword-research/. | No limits doc retrieved. |
-| **Semrush MCP** | "MCP Access: Yes" on all four paid tiers (incl. the SEO tier); Advanced gets "higher usage limits and deeper data endpoints in API and MCP access". Docs at developer.semrush.com/api/v4/introduction/semrush-mcp/. | **No numeric MCP request limits published.** |
-| **AI Visibility Index** | Linked from the homepage and the Resources nav. | Not located as a documented product with limits. |
+| **AI Visibility Index** | A published Semrush Enterprise **benchmark study / leaderboard, not a self-serve tool** — "the definitive industry benchmark measuring brand performance across AI-powered search platforms". **126 million US AI search prompts** analysed; **4 platforms** (ChatGPT, Google AI Mode, Google AI Overview, Gemini); **22 industries**. Findings: only **36 global brands** held top-100 visibility on all four platforms every month ("the Universal 36"); "fewer than 1 in 5 brands" are both frequently mentioned and consistently cited. **Free to download, no subscription required.** [https://ai-visibility-index.semrush.com/ , /methodology , https://www.semrush.com/news/463141-semrush-releases-expanded-2026-ai-visibility-index-analyzing-126-million-ai-search-prompts/ , 4 Oct 2026] | **Update cadence not specified**; methodology says only that data is "collected over longer timeframes and averaged". |
+| **"AI Toolkit"** | **No current KB article exists under this name.** The only primary source is the launch press release [https://www.semrush.com/news/385040-semrush-unveils-ai-toolkit-ai-seo-toolkit-to-help-businesses-leverage-ai-brand-perception-and-stay-ahead-in-the-evolution-of-search/]. Every current KB page and the live pricing page say "**AI Visibility Toolkit**". "AI Toolkit" is the launch-era name for what is now the AI Visibility Toolkit. | No separate limits or tiers exist. **Do not cite a KB URL for "AI Toolkit".** |
+| **Enterprise AIO** | "a custom platform solution designed for large organizations managing AI visibility at scale"; offers "**unlimited prompt tracking**, dedicated support, and custom integrations". Prompt coverage is shared with Semrush One. [https://www.semrush.com/kb/1626-ai-visibility-features , https://enterprise.semrush.com/ , 4 Oct 2026] | **No published price, seat count or prompt figure beyond "unlimited".** |
+
+### 6.12 Content and AI tools — limits now verified
+
+**SEO Writing Assistant (SWA).** "analyzes your content in real time and provides recommendations to improve SEO performance, readability, originality, and tone of voice." Scores four components: Readability, SEO, Originality, Tone of Voice. Add-on for Google Docs, MS Word and WordPress. Plagiarism checking is "based on the Copyleaks Plagiarism Checker."
+
+| Limit (article uses legacy names) | Free / Pro | Guru | Business |
+|---|---|---|---|
+| Documents | up to **2 per account** | **unlimited** per month | **unlimited** per month |
+| Plagiarism checks | **3 in total per account** (Pro) | **5 per month** | **10 per month** |
+| Smart Writer Words | **500 (lifetime limit)** (Pro) | **1,000 per month** | **2,000 per month** |
+
+Add-ons (Guru/Business only): 10 extra plagiarism checks for **$5/month**; extra Smart Writer Words available from Subscription Info.
+Word consumption: Rephraser works best on 20–130 words; Compose consumes words generated, "maximum 100 limits per generation"; Ask AI consumes words equal to the response length; paraphrasing works "up to 500 words" at a time.
+**These are severe limits at the entry tier — 2 documents and 500 lifetime AI words on Pro/SEO is a genuinely important buying fact.**
+[https://www.semrush.com/kb/814-seo-writing-assistant , 4 Oct 2026 — verified directly]
+
+**Topic Research.** "supports SEOs, content writers, and strategists by streamlining the content brainstorming process. Enter a topic in the search bar and the tool will generate cards of related subtopics and ideas."
+**Limit, verbatim and striking:** "Users without an SEO Toolkit subscription, and those on the **Pro** tier of the SEO subscription, can conduct **two searches per lifetime**." / "Users on the **Guru or Business** tiers of the SEO Toolkit subscription have **unlimited access**."
+**Two searches per lifetime on the entry tier is effectively a demo, not a feature. Worth calling out.**
+[https://www.semrush.com/kb/776-topic-research , 4 Oct 2026 — verified directly]
+**Undocumented overlap:** a newer Content Toolkit tool, **Topic Finder** (https://www.semrush.com/kb/1537-topic-finder), does the same ideation job ("helps you discover high-potential content topics backed by real-time SEO data", with weekly "Topic Rotation", disabled if fewer than 50 topics are available). Both pages are live, neither states a replacement relationship, and Topic Finder has **no documented plan tier**.
+
+**Content Toolkit (formerly ContentShake AI).** "helps you create, optimize, and repurpose content that performs everywhere — from Google and social media to AI search platforms like ChatGPT." Components: Topic Finder, SEO Brief Generator, AI Article Generator, AI search optimisation, repurposing, publishing.
+Limits: **5 SEO-boosted articles per month**; add-on "an additional 10 SEO Boosted articles for **$30/month**"; **standard articles unlimited**; **brand voices up to 50**; **WordPress publishing up to 100 sites**; 7-day free trial. Single plan at **$60/month**.
+**ContentShake AI has effectively been rebranded as the Content Toolkit** — the old name survives only in the KB slug (`kb/1358-contentshake`).
+[https://www.semrush.com/kb/1358-contentshake and https://www.semrush.com/kb/1536-content-toolkit-pricing-and-plans , 4 Oct 2026]
+
+**AI Visibility Toolkit — standalone plan limits, verified directly.** Components: Visibility Overview, Brand Performance, Competitor Research, Prompt Research, Prompt Tracking, AI Search Site Audit.
+Standalone base plan at **$99 per month** includes, verbatim:
+> "1 folder · 1 domain for Brand Performance analysis · **300 daily queries in AI Analysis reports and 1000 daily queries in Prompt Research** · **25 prompts for Prompt Tracking** · AI Search Checks in Site Audit for **up to 100 pages** · **10 CSV exports daily**"
+
+**Add-on prices — these matter and are easy to miss:**
+- "In a corporate account with multiple users, access to the AI Visibility Toolkit can be shared across your team by adding another license (**$99**) for each subuser on the account." **This is the missing AI-Visibility per-user surcharge referenced in §2.5: $99 per extra user per month.**
+- "Additional domains or locations for Brand Performance can be purchased for **$99 each**." Note: "Adding an additional domain increases the number of domains you can analyze in Brand Performance—it does **not** grant another user access."
+- "You can add **50 more prompts** to your Prompt Tracking limit for **$60 per month**."
+
+**Update frequency, verbatim:** "Visibility Overview, Competitor Research, Prompt Research: updated **daily on a rolling basis**. Brand Performance reports: updated **weekly**. Prompt tracking: updated **daily**."
+**Coverage:** "Prompt Tracking: Offers broad international coverage, supporting **220+ countries and territories** across all major global markets." Brand Performance locations: "more than **68,000 options** worldwide—ranging from countries, states, regions, and cities, to global coverage."
+Bundled equivalents restated on the same page: "Starter: Monitor up to 5 websites… **50 prompts**, and 500 keywords (daily tracking). Pro+: …15 websites, **100 prompts**, and 1,500 keywords. Advanced: …40 websites, **200 prompts**, and 5,000 keywords."
+**No free trial** is offered for this toolkit.
+[https://www.semrush.com/kb/1493-ai-visibility-toolkit , 4 Oct 2026 — verified directly]
+
+**Prompt Research.** "helps you move beyond keywords to see what your audience is actually asking AI." Returns topic-level AI Volume, topic count, prompts per topic, intent breakdown (informational, navigational, commercial, transactional, task), brands mentioned, source domains cited.
+Limits: "You can run up to **1,000 prompts per day**"; "Each unique combination of prompt, country, and LLM counts as 1"; "Data is refreshed **daily on a rolling basis**."
+Underlying data: "prompt database of **317M+ AI queries**" across "**117 regional databases**"; "Prompt responses are captured from **real requests and not via any APIs of LLMs**" — a methodology claim worth quoting. Metric scales: AI Visibility 0–100; Topic Difficulty 0–100%.
+[https://www.semrush.com/kb/1597-prompt-research-report , https://www.semrush.com/kb/1607-semrush-ai-visibility-data , https://www.semrush.com/kb/1594-ai-seo-metrics , 4 Oct 2026]
+
+**AI Brand Sentiment.** **There is no standalone tool page.** Sentiment is the **Perception** report inside Brand Performance Reports (four reports: Brand Performance, Perception, Narrative Drivers, Questions). The Perception report "provides a detailed analysis of sentiment to understand how your brand is perceived by AI platforms."
+Platforms: "Google AI Mode, ChatGPT, Perplexity, and Gemini". **Update frequency: weekly.** **68,500 locations; 53 languages**; "Select up to **9 competitors**". Tracks 1 domain and location by default; additional domain slots **$99 each**, with a **14-day cooldown** per slot after a domain change.
+**Internal conflict:** kb/1595 says "up to 9 competitors" while kb/1626 says Competitor Research compares "up to four competitors at once." Different reports, never reconciled.
+[https://www.semrush.com/kb/1595-brand-performance-reports and https://www.semrush.com/kb/1626-ai-visibility-features , 4 Oct 2026]
+
+**Semrush MCP — limits now verified directly.** "Semrush MCP links your AI assistants directly to live Semrush data. Query keyword rankings, traffic breakdowns, and competitive intelligence in natural language without exporting CSVs." Connects ChatGPT, Claude, Gemini, Perplexity, Cursor, VS Code and Claude Code via OAuth or API key. Endpoint `https://mcp.semrush.com/v2/mcp`.
+**Access is read-only, verbatim:** "The connection uses **read-only** access, meaning your AI assistants can retrieve Semrush data but **cannot modify or delete it**." Surfaces the Analytics API, Trends API and Projects API (read-only Position Tracking and Site Audit).
+**Units:** "The Semrush MCP is available across **Semrush One, SEO Classic, and Trends API** plans." "All of these plans include **50,000 MCP API units** that refresh on your subscription renewal date" — covering Semrush One Starter, Semrush One Pro+, SEO Classic Pro and SEO Classic Guru. For more, "upgrade to… Semrush One Advanced + an MCP API units package" or "SEO Classic Business + an MCP API units package". Packages: "**2 million, 5 million, 10 million, or 20 million units**", plus an option to "purchase **unlimited** API units".
+**Per-call unit costs and rate limits are NOT documented** — the article only advises specificity ("Top 50 keywords in the US" consumes fewer units than "all keywords globally") and caching.
+⚠ **This article introduces a THIRD plan vocabulary — "SEO Classic Pro / Guru / Business" — which appears on no other Semrush page.**
+[https://www.semrush.com/kb/1618-mcp and https://www.semrush.com/kb/1619-getting-started-with-mcp , 4 Oct 2026 — verified directly]
 | **Agency Growth Kit** | — | **No page, price or KB article under this name.** See §3.4. |
 | **API unit prices** | Packages of 2M/5M/10M/20M units; Advanced/Business tier required; unused units expire. | **No dollar price published.** See §2.8. |
-| **AI Visibility per-user surcharge** | Referenced by two tooltips. | **No price found.** See §2.5. |
 
-### 6.12 Enterprise
+### 6.13 Enterprise
 Published Enterprise feature list, verbatim: "Unlimited projects & custom limits • Custom large-scale AI prompt tracking • Daily or weekly tracking frequency • Multi-brand, multi-product AI visibility • Advanced AI Automations and content workflows • Forecasting & ROI attribution • Multi-million-page crawling • Custom integrations & API • SSO, team governance & audit logs • Dedicated account manager • Enterprise SLA & 24/7 support". Pricing: "Custom pricing available."
 Named Enterprise products in the footer: **Enterprise SEO, Enterprise AIO, Enterprise SI, Insights24, Mfour**.
 [https://www.semrush.com/prices/ , 4 Oct 2026]
@@ -777,7 +830,8 @@ A review that quietly picks one number is wrong-by-omission. These are live, sim
 | Keyword database | **28.8B** (kb/997) · **28B** (homepage) · **28B+** (features page, kb/995) · **27.3B** (kb/262) · **26B** (analytics/keywordmagic) · **"over 500 million"** (kb/287 — badly stale, ~58× low) | Cite **28.8 billion** with kb/997 as the source, and note Semrush's own pages range from 26B to 28.8B. **Never cite kb/287 for database size.** |
 | Marketers using Semrush | **10M** (partner page) vs **28M** (keyword-research page) vs **"over 28 million users globally"** (Adobe, 28 Apr 2026) | A ~3× discrepancy. Quote the Adobe close figure (28M) as the dated one and name the conflict. |
 | AI prompt database | **261M** (news, 14 May 2026) · **289M+** (kb/995) · **317M+** (homepage, kb/997) | Cite **317M+** as current; the others lag. |
-| Geo databases | **142** (homepage, kb/997, features) vs "more than 140" (kb/287) vs **113** with historical coverage (kb/64) | Cite 142, note only 113 carry history. |
+| Geo databases | **142** (homepage, kb/997, features) vs "more than 140" (kb/287) vs **113** with historical coverage (kb/64) vs **117** regional prompt databases (kb/1607) | Cite 142 for keyword data, note only 113 carry history. |
+| Geographic footprint by product | **142** geo databases (keyword/search) · **190+** countries (Traffic & Market panel) · **220+** countries and territories (AI Prompt Tracking, kb/1493) · **32** countries (AI prompt *database*, news 14 May 2026) · **117** regional prompt databases (kb/1607) | These are genuinely different datasets, but **no Semrush page reconciles them.** Never present one as "countries covered" without naming the product. |
 | Historical traffic depth | "dating back to **2012**" (Traffic & Market pricing tab) vs "**2017**" (kb/1011) vs "Monthly data available from **January 2017**" (kb/1506) | Two of three say 2017. Cite 2017 for Traffic & Market, 2012 for keyword/SERP history. |
 | Trial length | **7-day** (pricing page, kb/1011, kb/995) vs **14-day** (partner page) | 7 days is the dominant and most-sourced figure. The 14-day one is on the partner landing page. |
 
@@ -1072,6 +1126,15 @@ Not found on any Semrush primary source:
 - https://www.semrush.com/kb/811-semrush-social · /kb/756-social-poster · /kb/33-social-tracker · /kb/1065-social-analytics · /kb/1368-ai-social-content-generator · /kb/1544-social-toolkit-pricing-and-plans
 - https://www.semrush.com/kb/1506-traffic-and-market-traffic-overview · /kb/1121-semrush-traffic-and-market · /kb/1000-competitive-research-bundle
 - https://www.semrush.com/kb/97-affiliate-program · /kb/5-api
+- https://www.semrush.com/kb/814-seo-writing-assistant · /kb/776-topic-research · /kb/1537-topic-finder
+- https://www.semrush.com/kb/1358-contentshake · /kb/1536-content-toolkit-pricing-and-plans
+- https://www.semrush.com/kb/1493-ai-visibility-toolkit · /kb/1626-ai-visibility-features · /kb/1595-brand-performance-reports · /kb/1597-prompt-research-report · /kb/1607-semrush-ai-visibility-data · /kb/1594-ai-seo-metrics
+- https://www.semrush.com/kb/1618-mcp · /kb/1619-getting-started-with-mcp
+- https://ai-visibility-index.semrush.com/ and /methodology
+- https://www.semrush.com/news/463141-semrush-releases-expanded-2026-ai-visibility-index-analyzing-126-million-ai-search-prompts/
+- https://www.semrush.com/news/447617-semrush-named-to-four-of-g2s-2026-best-software-awards-lists/
+- https://www.semrush.com/news/458100-semrush-expands-ai-visibility-database-to-32-countries-with-17-new-regional-markets/
+- https://www.semrush.com/news/385040-semrush-unveils-ai-toolkit-... (launch-era "AI Toolkit" name)
 - https://www.semrush.com/kb/support/ · https://www.semrush.com/cancel/
 
 ### Marketing / product pages
@@ -1117,6 +1180,9 @@ Not found on any Semrush primary source:
 | https://www.semrush.com/kb/998-what-is-included-in-my-subscription | 404 |
 | https://www.semrush.com/kb/538-position-tracking-limits | 404 |
 | https://www.semrush.com/kb/1042-api-units | 404 |
+| https://www.semrush.com/kb/719-us-database-how-does-it-work | 200 but no numeric figures ("billions of keywords" only) |
+| https://www.semrush.com/features/ | 200 but carries no numeric data claims at all |
+| /log-file-analyzer/static/log-file-analyzer-manual.pdf | did not serve; resolved to the free SEO Checker page |
 | https://www.semrush.com/company/legal/cancellation-policy/ | 404 |
 | https://www.semrush.com/api-analytics/ | 301 → developer.semrush.com |
 | https://www.semrush.com/our-data/ | 404 — live equivalent is /kb/997-semrush-data |
@@ -1129,6 +1195,9 @@ Not found on any Semrush primary source:
 | https://www.semrush.com/kb/semrush-reports-tools/projects/log-file-analyzer/ | 404; no KB article found for the tool at all |
 | https://www.semrush.com/kb/semrush-reports-tools/projects/link-building-tool/ | 404; /kb/827, /kb/731, /kb/737 all misroute to a generic landing page |
 | https://www.semrush.com/kb/1042-api-units | 404 |
+| https://www.semrush.com/kb/719-us-database-how-does-it-work | 200 but no numeric figures ("billions of keywords" only) |
+| https://www.semrush.com/features/ | 200 but carries no numeric data claims at all |
+| /log-file-analyzer/static/log-file-analyzer-manual.pdf | did not serve; resolved to the free SEO Checker page |
 | https://www.semrush.com/lp/affiliate-program/ | returned empty content; use /lp/affiliate-program/en/ |
 | https://www.semrush.com/company/affiliate-program/ | 404 |
 | https://www.berush.com/en/terms | 301 → /lp/affiliate-program/en/; legacy BeRush terms gone |
