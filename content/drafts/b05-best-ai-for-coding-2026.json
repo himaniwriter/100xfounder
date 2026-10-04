@@ -1,0 +1,188 @@
+{
+  "type": "post",
+  "slug": "best-ai-for-coding-2026",
+  "title": "Best AI for coding in 2026: Claude Code vs Copilot, Cursor and Codex",
+  "excerpt": "Claude Code, GitHub Copilot, Cursor, OpenAI Codex, Google Antigravity and Devin compared on price, models, where they run and data use, as of October 2026.",
+  "category": "in-depth",
+  "tags": [
+    "AI coding tools",
+    "Claude Code",
+    "GitHub Copilot",
+    "Cursor",
+    "OpenAI Codex",
+    "Google Antigravity",
+    "Devin",
+    "developer tools"
+  ],
+  "content": "<p>There is no single best AI for coding in 2026; the right pick depends on where you work. Claude Code and OpenAI Codex suit developers who want an agent that can run commands and finish multi-step tasks, GitHub Copilot is the easiest option for teams already on GitHub, and Cursor remains the most complete AI-first editor. Below we compare them, along with Google's Antigravity, Devin (formerly Windsurf) and Replit, using vendor pricing pages we checked on 4 October 2026.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>Most vendors now sell both an editor or terminal assistant and a cloud agent that returns a pull request.</li>\n<li>Entry paid plans cluster around $10 to $20 a month: Copilot Pro is $10, while Claude Pro, ChatGPT Plus (with Codex), Cursor Individual and Devin Pro are each $20 at monthly rates.</li>\n<li>Ownership matters this year. SpaceX now owns Cursor, and OpenAI has proposed cutting off its models in Cursor from 12 November 2026.</li>\n<li>For companies, the deciding factors are usually admin controls and data use, not raw model quality. Business tiers from Anthropic, GitHub and OpenAI say they do not train on customer data by default.</li>\n</ul>\n\n<h2>How we compared the tools</h2>\n<p>We judged each tool on five criteria, using vendor pricing pages, documentation, dated announcements and reputable outlets:</p>\n<ul>\n<li><strong>Where it runs:</strong> inside an IDE, in the terminal, as a desktop app, or as a cloud agent that works on its own copy of your repository.</li>\n<li><strong>Models:</strong> whether you are locked to one lab's models or can switch between several.</li>\n<li><strong>Pricing and limits:</strong> list price at monthly rates and how usage is metered (messages, credits or tasks).</li>\n<li><strong>Team and enterprise controls:</strong> SSO, seat management, policy settings and audit logs.</li>\n<li><strong>Privacy and data use:</strong> whether your code can be used to train models, and how long it is kept.</li>\n</ul>\n<p>We did not run our own benchmark; any scores quoted are the vendor's own.</p>\n\n<h2>Comparison table: AI coding tools in October 2026</h2>\n<table>\n<thead><tr><th>Tool</th><th>Where it runs</th><th>Models</th><th>Paid plans from</th><th>Team controls</th></tr></thead>\n<tbody>\n<tr><td>Claude Code (Anthropic)</td><td>Terminal, VS Code, JetBrains, desktop app, web, mobile, Slack</td><td>Claude only (Opus, Sonnet, Haiku, Fable)</td><td>$20/month (Pro)</td><td>Team and Enterprise plans</td></tr>\n<tr><td>GitHub Copilot</td><td>IDEs, Copilot CLI, Copilot app, GitHub.com cloud agent</td><td>Claude, GPT, Gemini and Grok models</td><td>$10/month (Pro)</td><td>Business $19 and Enterprise $39 per seat</td></tr>\n<tr><td>Cursor</td><td>Own editor, cloud agents</td><td>Composer, Grok and other frontier models</td><td>$20/month (Individual)</td><td>Teams $40 per user; Enterprise custom</td></tr>\n<tr><td>OpenAI Codex</td><td>CLI, IDE extension, web, desktop app, iOS</td><td>OpenAI only (GPT-6.1 Sol, GPT-6 Luna, GPT-6 Astra)</td><td>Included in ChatGPT, from free; Plus $20/month</td><td>Business $20 per user; Enterprise custom</td></tr>\n<tr><td>Google Antigravity</td><td>Antigravity app, CLI, IDE extensions</td><td>A variety of agent models</td><td>Free tier; Google AI Pro and Ultra</td><td>Google Cloud plans from $30 per seat</td></tr>\n<tr><td>Devin (formerly Windsurf)</td><td>Devin Desktop editor, CLI, Devin Cloud</td><td>OpenAI, Claude, Gemini, SpaceXAI and open models</td><td>$20/month (Pro)</td><td>Teams $80/month plus $40 per seat</td></tr>\n<tr><td>Replit</td><td>Browser-based workspace</td><td>Not specified on pricing page</td><td>$20/month (Core)</td><td>Enterprise custom</td></tr>\n</tbody>\n</table>\n<p>US dollar list prices at monthly billing, checked 4 October 2026.</p>\n\n<h2>Claude Code: best for developers who want a hands-on agent</h2>\n<p>Claude Code is Anthropic's agentic coding tool. It reads a codebase, edits files, runs commands and opens pull requests. According to <a href=\"https://code.claude.com/docs/en/overview\">Anthropic's documentation</a>, it runs in the terminal, in VS Code and JetBrains IDEs, in a desktop app and in the browser, and can pick up tasks from Slack, GitHub Actions and GitLab CI/CD. Cloud sessions run in Anthropic-managed virtual machines, so long jobs keep running after you close your laptop.</p>\n<p>Pricing is tied to Claude subscriptions. <a href=\"https://claude.com/pricing\">Anthropic's pricing page</a> says Claude Code is included in all paid plans: Pro costs $20 a month ($17 a month billed annually), Max starts at $100 a month, and Team seats cost $25 ($20 annually) for a standard seat or $125 ($100 annually) for a premium seat. Enterprise is listed at $20 per seat per month on annual billing plus API usage. The free plan does not include Claude Code.</p>\n<p>Anthropic's <a href=\"https://code.claude.com/docs/en/model-config\">model configuration page</a> says paid accounts default to Claude Opus 5.5, with aliases to switch to Sonnet for daily work, Haiku for quick tasks, or Fable for the hardest long-running jobs. Anthropic released <a href=\"https://www.anthropic.com/news/claude-opus-5-5\">Opus 5.5 on 22 September 2026</a> and reported a 66.4% score on Terminal-Bench 4.0; that is the company's own figure.</p>\n<p>On data, Anthropic's <a href=\"https://code.claude.com/docs/en/data-usage\">data usage page</a> says Free, Pro and Max users choose whether their sessions can be used for training. Team, Enterprise and API customers are not trained on by default, with 30-day standard retention, and zero data retention is available to qualified enterprise accounts.</p>\n<p><strong>Who it suits:</strong> engineers comfortable in a terminal and teams that want one agent across laptop, browser and CI. The trade-off: Claude models only.</p>\n<!-- xf-image-2 -->\n\n<h2>GitHub Copilot: best default for teams on GitHub</h2>\n<p>Copilot's strength is reach: it sits in the editors most developers use and is built into GitHub. The <a href=\"https://github.com/features/copilot/plans\">Copilot plans page</a> lists four individual tiers: Free, Pro at $10 a month, Pro+ at $39 and Max at $100. Each paid plan now comes with a monthly allowance of AI credits worth $15, $70 and $200 respectively. GitHub's <a href=\"https://docs.github.com/en/copilot/get-started/plans\">plan documentation</a> prices Copilot Business at $19 per seat per month with 1,900 credits per user, and Enterprise at $39 with 3,900. The plans page lists models from Anthropic, OpenAI, Google and xAI, so you can switch labs without switching tools.</p>\n<p>The Copilot cloud agent is the headline feature. You assign it an issue and it opens a pull request. <a href=\"https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent\">GitHub's documentation</a> says it works in its own temporary development environment powered by GitHub Actions, where it can run tests and linters. It is available on all paid Copilot plans, and on Business and Enterprise an administrator must switch it on. On 1 October 2026 GitHub added <a href=\"https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app\">dynamic workflows to Copilot CLI and the Copilot app</a>, which split a goal into parallel steps with a pause for human review.</p>\n<p>For companies, Copilot Business and Enterprise add licence and policy management and IP indemnity, and GitHub says it does not use Business or Enterprise data to train its models.</p>\n<p><strong>Who it suits:</strong> companies already on GitHub, developers on a budget, and anyone who wants several labs' models in one tool.</p>\n\n<h2>Cursor: best AI-first editor, with an ownership question</h2>\n<p>Cursor is a code editor built around AI, with tab completion, an in-editor agent and cloud agents. <a href=\"https://cursor.com/pricing\">Cursor's pricing page</a> lists a free Hobby plan with limited agent requests, an Individual plan at $20 a month with cloud agents and Bugbot code review on usage-based billing, Teams at $40 per user per month with team-wide privacy mode, SAML/OIDC single sign-on and Bugbot reviews, and a custom Enterprise plan with SCIM seat management, audit logs and controls over which repositories, models and MCP servers people can use.</p>\n<p>In July, Cursor added a cheaper plan for India. According to <a href=\"https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/\">TechCrunch</a>, Cursor Start costs ₹649 a month (about $7) and includes Cursor's Composer 2.5 model and Grok 4.5, but not the frontier models from OpenAI and Anthropic.</p>\n<p>The bigger change is ownership. <a href=\"https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/\">TechCrunch reported</a> that SpaceX closed its $60 billion all-stock acquisition of Cursor in August. Two weeks later, <a href=\"https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html\">CNBC reported</a> that OpenAI plans to end access to its models in Cursor, with a proposed shutoff date of 12 November 2026. Cursor CEO Michael Truell said OpenAI models serve about 5% of Cursor traffic and that the companies were talking. Anthropic co-founder Tom Brown said Anthropic would keep supporting Claude in Cursor.</p>\n<p><strong>Who it suits:</strong> developers who want the most polished AI editor and like switching models. Teams with strict vendor rules should review the new ownership.</p>\n<!-- xf-image-3 -->\n\n<h2>OpenAI Codex: best value if you already pay for ChatGPT</h2>\n<p>Codex is OpenAI's coding agent, and it now comes with every ChatGPT plan. OpenAI's <a href=\"https://learn.chatgpt.com/docs/pricing\">Codex pricing page</a> lists it on Free, Go ($8 a month), Plus ($20), Pro (from $100, with $200 and $500 tiers), Business ($20 per user per month for two or more users, billed annually), Edu and Enterprise. Plus users get Codex on the web, in the CLI, in the IDE extension and on iOS; Go users get the desktop app at standard speed as it rolls out; Business adds cloud integrations such as automatic code review and Slack.</p>\n<p>Limits depend on model and plan. For example, OpenAI says Plus users working locally with GPT-6 Luna get roughly 350 to 3,000 messages per five hours, while Pro currently has no fixed five-hour limit. Plus and Pro users can buy extra credits instead of upgrading.</p>\n<p>On 29 September at DevDay, OpenAI launched GPT-6.1 Sol, which it says nearly matches its flagship GPT-6 Astra on agentic coding at one-fifth of the token price, <a href=\"https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/\">TechCrunch reported</a>. It is available in Codex for Plus, Pro, Business, Enterprise and Edu users. On data, OpenAI's Business plan includes SAML SSO and no training on business data by default.</p>\n<p><strong>Who it suits:</strong> anyone already on ChatGPT who wants an agent without another subscription. As with Claude Code, you only get one lab's models.</p>\n\n<h2>Google, Devin and Replit: the other serious options</h2>\n<h3>Google Antigravity, Gemini Code Assist and Jules</h3>\n<p>Google has reorganised its coding products. According to <a href=\"https://docs.cloud.google.com/gemini/docs/codeassist/overview\">Google Cloud's documentation</a>, from 18 June 2026 the Gemini Code Assist IDE extensions and Gemini CLI stopped serving the individual, Google AI Pro and Google AI Ultra tiers, and those users were told to move to Antigravity and Antigravity CLI. Gemini Code Assist continues as Standard and Enterprise editions through Google Cloud, supporting VS Code, JetBrains IDEs and Android Studio.</p>\n<p><a href=\"https://antigravity.google/pricing\">Antigravity's pricing page</a> lists a free individual plan with weekly rate limits and unlimited tab completions, higher limits through Google AI Pro and Ultra, and business plans through Google Cloud from $30 per seat per month or pay-as-you-go with no seat fee. Google also runs <a href=\"https://jules.google/\">Jules</a>, an asynchronous agent that clones your GitHub repository into a cloud VM, plans the change and opens a pull request; its tiers range from 15 to 300 tasks a day.</p>\n<p><strong>Who it suits:</strong> teams on Google Cloud, Android developers, and anyone who wants a capable free tier to start with.</p>\n\n<h3>Devin (formerly Windsurf)</h3>\n<p>Windsurf's website now redirects to Devin, and <a href=\"https://devin.ai/desktop\">Cognition's product page</a> says Devin Desktop is the new name for Windsurf, with plans and settings carried over. A Windsurf plugin for JetBrains is still available. <a href=\"https://devin.ai/pricing\">Devin's pricing page</a> lists a free plan, Pro at $20 a month with access to models from OpenAI, Anthropic, Google and SpaceXAI plus open-source models and the Devin Cloud agent, Max at $200, Teams at $80 a month plus $40 per developer seat for up to 200 users, and a custom Enterprise plan with SSO and a dedicated deployment option.</p>\n<p><strong>Who it suits:</strong> former Windsurf users and teams wanting an editor plus a cloud agent with wide model choice.</p>\n\n<h3>Replit</h3>\n<p>Replit is a browser-based place to build and host apps with an AI agent. <a href=\"https://replit.com/pricing\">Replit's pricing page</a> lists Core at $20 a month ($18 billed annually) with $20 of usage on its most powerful models, Pro at $100 a month ($90 annually) with 10 parallel agents and up to 15 collaborators, and a custom Enterprise plan with SSO/SAML and single-tenant environments.</p>\n<p><strong>Who it suits:</strong> founders building prototypes or internal tools without a local setup.</p>\n<!-- xf-image-4 -->\n\n<h2>Which AI should you use for what?</h2>\n<ul>\n<li><strong>Delegating whole tasks from the terminal:</strong> Claude Code or Codex CLI. Choose by which lab's models you prefer and which subscription you already have.</li>\n<li><strong>Assigning issues and getting pull requests back:</strong> the Copilot cloud agent if your code is on GitHub; Claude Code on the web, Codex cloud, Jules or Devin Cloud otherwise.</li>\n<li><strong>Writing code yourself in an editor with strong autocomplete:</strong> Cursor, Devin Desktop or Copilot in VS Code or JetBrains.</li>\n<li><strong>Tight budget:</strong> Copilot Pro at $10, ChatGPT Go at $8 with Codex, Antigravity's free tier, or Cursor Start at ₹649 in India.</li>\n<li><strong>Regulated company:</strong> a business tier with SSO and a no-training default, such as Copilot Business, Claude Team or Enterprise, ChatGPT Business or Cursor Teams. Check retention terms with the vendor.</li>\n<li><strong>Non-engineers building apps:</strong> Replit.</li>\n</ul>\n<p>Many developers pair an editor assistant with a terminal or cloud agent. Job hunting? See our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs</a> and open roles at <a href=\"/jobs/company/anthropic/\">Anthropic</a> and <a href=\"/jobs/company/openai/\">OpenAI</a>.</p>\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>The leading tools now differ more in workflow than in raw ability. Claude Code and Codex lead for agent-style work, Copilot is the safest default for GitHub-centred teams, and Cursor is still the strongest dedicated editor, though its sale to SpaceX makes it a less neutral choice. Prices change almost monthly, so check the vendor page and trial a tool on a real repository before committing a team. We track these launches on our <a href=\"/news/\">news page</a>.</p>\n\n<h2>FAQ</h2>\n<h3>What is the best AI for coding in 2026?</h3>\n<p>It depends on your workflow: Claude Code and Codex for agent-style work, Copilot for GitHub teams, Cursor for an AI-first editor.</p>\n<h3>Is Claude Code free?</h3>\n<p>No. Anthropic's pricing page says Claude Code is included in all paid plans, starting with Pro at $20 a month, but not in the free plan.</p>\n<h3>Is GitHub Copilot cheaper than Cursor?</h3>\n<p>At list price, yes: Copilot Pro is $10 a month and Cursor Individual $20. Both meter heavy usage.</p>\n<h3>Can I still use OpenAI models in Cursor?</h3>\n<p>For now, yes. OpenAI has proposed ending access on 12 November 2026, according to CNBC, and Cursor said it was in talks with OpenAI.</p>\n<h3>What happened to Windsurf?</h3>\n<p>Cognition renamed the Windsurf editor Devin Desktop. Windsurf's website redirects to Devin, and plans and settings carried over.</p>\n<h3>Do these tools train on my code?</h3>\n<p>Business tiers from Anthropic, GitHub and OpenAI say they do not train on customer data by default. On Claude's consumer plans, you choose in your privacy settings.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Anthropic, <a href=\"https://claude.com/pricing\">\"Plans and pricing\"</a> (accessed 4 October 2026)</li>\n<li>Anthropic, <a href=\"https://code.claude.com/docs/en/overview\">\"Claude Code overview\"</a> (accessed 4 October 2026)</li>\n<li>Anthropic, <a href=\"https://code.claude.com/docs/en/model-config\">\"Model configuration\"</a> (accessed 4 October 2026)</li>\n<li>Anthropic, <a href=\"https://code.claude.com/docs/en/data-usage\">\"Data usage\"</a> (accessed 4 October 2026)</li>\n<li>Anthropic, <a href=\"https://www.anthropic.com/news/claude-opus-5-5\">\"Claude Opus 5.5\"</a>, 22 September 2026</li>\n<li>GitHub, <a href=\"https://github.com/features/copilot/plans\">\"GitHub Copilot plans and pricing\"</a> (accessed 4 October 2026)</li>\n<li>GitHub Docs, <a href=\"https://docs.github.com/en/copilot/get-started/plans\">\"Plans for GitHub Copilot\"</a> (accessed 4 October 2026)</li>\n<li>GitHub Docs, <a href=\"https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent\">\"About Copilot cloud agent\"</a> (accessed 4 October 2026)</li>\n<li>GitHub Changelog, <a href=\"https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app\">\"Dynamic workflows in Copilot CLI and the Copilot app\"</a>, 1 October 2026</li>\n<li>Cursor, <a href=\"https://cursor.com/pricing\">\"Pricing\"</a> (accessed 4 October 2026)</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/\">\"Cursor makes its biggest India push yet ahead of SpaceX acquisition with localized pricing\"</a>, 27 July 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/\">\"SpaceX officially closes its Cursor acquisition\"</a>, 15 August 2026</li>\n<li>CNBC, <a href=\"https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html\">\"OpenAI to end model access to Cursor after acquisition by Elon Musk's SpaceX\"</a>, 29 August 2026</li>\n<li>OpenAI, <a href=\"https://learn.chatgpt.com/docs/pricing\">\"Codex pricing\"</a> (accessed 4 October 2026)</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/\">\"OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less\"</a>, 29 September 2026</li>\n<li>Google Cloud, <a href=\"https://docs.cloud.google.com/gemini/docs/codeassist/overview\">\"Gemini Code Assist overview\"</a> (accessed 4 October 2026)</li>\n<li>Google, <a href=\"https://antigravity.google/pricing\">\"Antigravity pricing\"</a> (accessed 4 October 2026)</li>\n<li>Google, <a href=\"https://jules.google/\">\"Jules\"</a> (accessed 4 October 2026)</li>\n<li>Cognition, <a href=\"https://devin.ai/desktop\">\"Devin Desktop\"</a> (accessed 4 October 2026)</li>\n<li>Cognition, <a href=\"https://devin.ai/pricing\">\"Devin pricing\"</a> (accessed 4 October 2026)</li>\n<li>Replit, <a href=\"https://replit.com/pricing\">\"Pricing\"</a> (accessed 4 October 2026)</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Programmer_at_work_%28Unsplash%29.jpg/1920px-Programmer_at_work_%28Unsplash%29.jpg",
+      "alt": "Hands typing on a laptop showing code in an editor on a wooden desk",
+      "caption": "Most AI coding tools now combine an in-editor assistant with an agent that can run tasks on its own.",
+      "credit": "Photo: Crew / Wikimedia Commons, CC0",
+      "license": "CC0 1.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Programmer_at_work_(Unsplash).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Visual_studio_code_updated.png",
+      "alt": "Screenshot of the Visual Studio Code editor with a JavaScript file, autocomplete menu and integrated terminal",
+      "caption": "VS Code, where Claude Code, Copilot and Codex all offer extensions.",
+      "credit": "Photo: Gátomo Dev / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/w/index.php?curid=112721046"
+    },
+    {
+      "url": "https://live.staticflickr.com/3420/3856456237_054e5b74e9_b.jpg",
+      "alt": "Close-up of green command-line text scrolling on a dark computer screen",
+      "caption": "Terminal-first agents such as Claude Code and Codex CLI run commands directly in your project.",
+      "credit": "Photo: *n3wjack's world in pixels / Openverse (Flickr), CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://www.flickr.com/photos/88875472@N00/3856456237"
+    },
+    {
+      "url": "https://live.staticflickr.com/3563/3462606643_fd5d1e350d_b.jpg",
+      "alt": "Long aisle of white server racks under bright ceiling lights in the CERN server room",
+      "caption": "Cloud agents work on a copy of your repository in remote virtual machines.",
+      "credit": "Photo: torkildr / Openverse (Flickr), CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://www.flickr.com/photos/8718930@N07/3462606643"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Code_Review_photos-3.jpg/1920px-Code_Review_photos-3.jpg",
+      "alt": "A developer in a grey hat working on a laptop in an open-plan office",
+      "caption": "Whatever the tool, a human still reviews the pull request before it ships.",
+      "credit": "Photo: Matthew (WMF) / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/w/index.php?curid=15854986"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://claude.com/pricing",
+      "publisher": "Anthropic",
+      "date": "2026-10-04",
+      "claim": "Claude plan prices; Claude Code included in all paid plans (checked 4 Oct 2026)"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/overview",
+      "publisher": "Anthropic",
+      "date": "2026-10-04",
+      "claim": "Claude Code surfaces: terminal, IDEs, desktop, web, Slack, CI"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/model-config",
+      "publisher": "Anthropic",
+      "date": "2026-10-04",
+      "claim": "Default Opus 5.5 and model aliases in Claude Code"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/data-usage",
+      "publisher": "Anthropic",
+      "date": "2026-10-04",
+      "claim": "Training choice for consumer plans, commercial no-training default, 30-day retention, ZDR"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-opus-5-5",
+      "publisher": "Anthropic",
+      "date": "2026-09-22",
+      "claim": "Opus 5.5 release date and Terminal-Bench 4.0 score (vendor-reported)"
+    },
+    {
+      "url": "https://github.com/features/copilot/plans",
+      "publisher": "GitHub",
+      "date": "2026-10-04",
+      "claim": "Copilot Free, Pro, Pro+, Max prices, AI credits, models, Business/Enterprise admin features and no-training statement (checked 4 Oct 2026)"
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/get-started/plans",
+      "publisher": "GitHub Docs",
+      "date": "2026-10-04",
+      "claim": "Copilot Business $19 and Enterprise $39 per seat with credit allowances"
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent",
+      "publisher": "GitHub Docs",
+      "date": "2026-10-04",
+      "claim": "Cloud agent runs in GitHub Actions environment; available on paid plans; admin enablement"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
+      "publisher": "GitHub Changelog",
+      "date": "2026-10-01",
+      "claim": "Dynamic workflows in Copilot CLI and app"
+    },
+    {
+      "url": "https://cursor.com/pricing",
+      "publisher": "Cursor",
+      "date": "2026-10-04",
+      "claim": "Cursor Hobby, Individual, Teams, Enterprise plans and features (checked 4 Oct 2026)"
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/",
+      "publisher": "TechCrunch",
+      "date": "2026-07-27",
+      "claim": "Cursor Start at Rs 649 a month with Composer 2.5 and Grok 4.5"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+      "publisher": "TechCrunch",
+      "date": "2026-08-15",
+      "claim": "SpaceX closes $60B all-stock Cursor acquisition"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html",
+      "publisher": "CNBC",
+      "date": "2026-08-29",
+      "claim": "Proposed 12 Nov 2026 shutoff; Truell 5% traffic; Tom Brown statement"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-04",
+      "claim": "Codex included in ChatGPT plans, prices, surfaces, limits, models, Business no-training default (checked 4 Oct 2026)"
+    },
+    {
+      "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
+      "publisher": "TechCrunch",
+      "date": "2026-09-29",
+      "claim": "GPT-6.1 Sol launch, availability in Codex, one-fifth price claim"
+    },
+    {
+      "url": "https://docs.cloud.google.com/gemini/docs/codeassist/overview",
+      "publisher": "Google Cloud",
+      "date": "2026-10-04",
+      "claim": "18 June 2026 change for individual tiers; migration to Antigravity; editions, IDEs, agent mode"
+    },
+    {
+      "url": "https://antigravity.google/pricing",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "Antigravity free, AI Pro/Ultra, Google Cloud business plans from $30/seat (checked 4 Oct 2026)"
+    },
+    {
+      "url": "https://jules.google/",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "Jules cloud VM workflow and task-per-day tiers (checked 4 Oct 2026)"
+    },
+    {
+      "url": "https://devin.ai/desktop",
+      "publisher": "Cognition",
+      "date": "2026-10-04",
+      "claim": "Devin Desktop is the new name for Windsurf; JetBrains plugin still available"
+    },
+    {
+      "url": "https://devin.ai/pricing",
+      "publisher": "Cognition",
+      "date": "2026-10-04",
+      "claim": "Devin Free, Pro, Max, Teams, Enterprise prices and models (checked 4 Oct 2026)"
+    },
+    {
+      "url": "https://replit.com/pricing",
+      "publisher": "Replit",
+      "date": "2026-10-04",
+      "claim": "Replit Core, Pro, Enterprise prices and features (checked 4 Oct 2026)"
+    }
+  ]
+}

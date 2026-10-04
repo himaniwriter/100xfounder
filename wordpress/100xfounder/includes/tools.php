@@ -16,7 +16,7 @@ function xf_tools() {
             'short' => 'In-hand salary',
             'desc' => 'Turn your CTC into monthly take-home pay under the new or old tax regime, with PF, professional tax and HRA.',
             'group' => 'Salary',
-            'seo_title' => 'In-hand Salary Calculator India FY 2025-26 (New & Old Regime)',
+            'seo_title' => 'In-hand Salary Calculator India 2026-27 (New & Old Regime)',
         ],
         'salary-hike-calculator' => [
             'title' => 'Salary hike calculator',

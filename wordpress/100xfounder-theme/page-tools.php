@@ -55,7 +55,7 @@ if (!$tool) : ?>
     <?php endforeach; ?>
 </section>
 <section class="wrap" style="padding-top:56px">
-    <p class="k" style="font-size:10.5px;max-width:720px;line-height:1.7">Estimates only, not tax or legal advice. Tax figures follow the Income-tax Act as amended by the Finance Act 2025 (FY 2025-26). Check your final tax on <a class="u" href="https://www.incometax.gov.in/" target="_blank" rel="noopener">incometax.gov.in</a>.</p>
+    <p class="k" style="font-size:10.5px;max-width:720px;line-height:1.7">Estimates only, not tax or legal advice. Tax figures follow the Income-tax Act, 2025 for tax year 2026-27 (Budget 2026 kept the slabs unchanged). Check your final tax on <a class="u" href="https://www.incometax.gov.in/" target="_blank" rel="noopener">incometax.gov.in</a>.</p>
 </section>
 <?php get_footer(); return; endif; ?>
 
@@ -78,7 +78,7 @@ if (!$tool) : ?>
         <div class="seg" role="group" aria-label="Tax regime"><button type="button" data-regime="new" aria-pressed="true">New (default)</button><button type="button" data-regime="old" aria-pressed="false">Old</button></div>
         <div data-old-only hidden style="display:flex;flex-direction:column;gap:12px">
             <div class="k" style="margin-top:12px">City</div>
-            <div class="seg" role="group" aria-label="City type"><button type="button" data-metro="true" aria-pressed="true">Metro</button><button type="button" data-metro="false" aria-pressed="false">Non-metro</button></div>
+            <div class="seg" role="group" aria-label="City type"><button type="button" data-metro="true" aria-pressed="true" title="50% HRA cities: Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Pune, Ahmedabad">50% HRA city</button><button type="button" data-metro="false" aria-pressed="false">Other city</button></div>
             <label class="k" for="rent">Monthly rent paid (₹)</label>
             <div class="fld"><input id="rent" inputmode="numeric" value="0"></div>
             <label class="k" for="ded">80C investments, yearly (₹, max 1.5L incl. PF)</label>
@@ -91,7 +91,7 @@ if (!$tool) : ?>
                 <div class="fld"><input id="basic" inputmode="numeric" value="50"><span class="mono" style="color:var(--t3)">%</span></div>
                 <label class="k" for="pt">Professional tax, yearly (₹)</label>
                 <div class="fld"><input id="pt" inputmode="numeric" value="2400"></div>
-                <label style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--t2)"><input id="pfcap" type="checkbox" checked> PF capped at ₹1,800 a month (₹15,000 wage ceiling)</label>
+                <label style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--t2)"><input id="pfcap" type="checkbox" checked> PF capped at ₹3,000 a month (₹25,000 wage ceiling from 17 Sep 2026)</label>
             </div>
         </details>
     </div>
@@ -129,7 +129,7 @@ if (!$tool) : ?>
             <div class="br"><span style="color:var(--t2)">In-hand per month after</span><span class="mono" id="hk-after"></span></div>
             <div class="br"><span style="color:var(--t2)">Share of the raise you keep</span><span class="mono" id="hk-take"></span></div>
         </div>
-        <p style="font-size:14px;color:var(--t3)">Assumes basic = 50% of CTC, PF capped at ₹1,800 a month, ₹2,400 professional tax and, for the old regime, ₹1.5L of 80C.</p>
+        <p style="font-size:14px;color:var(--t3)">Assumes basic = 50% of CTC, PF capped at ₹3,000 a month, ₹2,500 professional tax and, for the old regime, ₹1.5L of 80C.</p>
     </div>
 </section>
 <?php else : ?>
@@ -163,6 +163,6 @@ if (!$tool) : ?>
         <?php foreach ($tools as $slug => $t) : if ($slug === $tool['slug']) continue; ?><a class="chip" href="<?php echo esc_url($hub . $slug . '/'); ?>"><?php echo esc_html($t['short']); ?></a><?php endforeach; ?>
         <a class="chip" href="<?php echo esc_url(home_url('/jobs/')); ?>">Browse jobs</a>
     </div>
-    <p class="k" style="margin-top:32px;font-size:10.5px;max-width:760px;line-height:1.7">Estimate only, not tax or legal advice. Slabs, the ₹75,000 / ₹50,000 standard deduction, the Section 87A rebate (up to ₹12 lakh taxable income in the new regime, ₹5 lakh in the old), surcharge and 4% cess follow the Finance Act 2025 for FY 2025-26. Sources: <a class="u" href="https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1" target="_blank" rel="noopener nofollow">Income Tax Department</a>, <a class="u" href="https://www.indiabudget.gov.in/" target="_blank" rel="noopener nofollow">Union Budget 2025-26</a>, <a class="u" href="https://www.epfindia.gov.in/" target="_blank" rel="noopener nofollow">EPFO</a>. Your payslip may differ (allowances, perks, state PT rules).</p>
+    <p class="k" style="margin-top:32px;font-size:10.5px;max-width:760px;line-height:1.7">Estimate only, not tax or legal advice. Slabs, the ₹75,000 / ₹50,000 standard deduction, the Section 87A rebate (up to ₹12 lakh taxable income in the new regime, ₹5 lakh in the old), surcharge and 4% cess follow the Income-tax Act, 2025 for tax year 2026-27 (unchanged by Budget 2026); the PF cap uses the ₹25,000 wage ceiling in force from 17 September 2026. Sources: <a class="u" href="https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1" target="_blank" rel="noopener nofollow">Income Tax Department</a>, <a class="u" href="https://www.indiabudget.gov.in/" target="_blank" rel="noopener nofollow">Union Budget 2026-27</a>, <a class="u" href="https://www.epfindia.gov.in/" target="_blank" rel="noopener nofollow">EPFO</a>. Your payslip may differ (allowances, perks, state PT rules).</p>
 </section>
 <?php get_footer();

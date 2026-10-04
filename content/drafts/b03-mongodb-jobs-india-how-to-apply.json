@@ -1,0 +1,128 @@
+{
+ "type": "post",
+ "slug": "mongodb-jobs-india-how-to-apply",
+ "title": "How to Get a Job at MongoDB in India in 2026: Process and Tips",
+ "excerpt": "MongoDB lists 82 India roles, most in Gurugram. See its official six-step hiring process, what interviews test, and how to prepare before you apply in 2026.",
+ "category": "careers-salary",
+ "tags": [
+  "MongoDB",
+  "MongoDB careers",
+  "Gurugram jobs",
+  "how to apply",
+  "interview process",
+  "software engineer jobs India",
+  "hybrid work",
+  "2026"
+ ],
+ "content": "<p>MongoDB, the New York database company, is hiring steadily in India, and most of its openings sit in Gurugram (Gurgaon), near Delhi. As of 4 October 2026, its official Greenhouse job board lists 82 India-based roles out of 390 worldwide, and 64 of them are in Gurugram alone. The way in is to apply to a specific team's posting, then clear a recruiter conversation, technical interviews on coding and system design, and a final talk with a director or VP. Those are the steps MongoDB itself publishes.</p>\n\n<p><em>100Xfounder is an independent site. This guide is not official, and we are not affiliated with or endorsed by MongoDB. Check every detail with your recruiter and on MongoDB's careers site.</em></p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li><strong>Gurugram is the hub.</strong> 64 of the 82 India roles we counted on 4 October 2026 are Gurugram-only; Bengaluru, Mumbai and multi-city listings make up the rest.</li>\n<li><strong>Engineering leads, but it is not the only door.</strong> Roughly 35 roles are software, business-systems or reliability engineering. The rest span technical support, sales, finance, HR, marketing and product.</li>\n<li><strong>The official process has six steps:</strong> apply, recruiter conversation, initial technical interview, technical assessments (system design and coding), a director or VP interview, then an offer.</li>\n<li><strong>Expect hybrid work.</strong> 75 of the 82 India posts say MongoDB wants candidates based in that city for its hybrid model.</li>\n<li><strong>Most roles want experience.</strong> We found no India internship or new-graduate posting on the board that day.</li>\n</ul>\n\n<h2>MongoDB in India: why Gurugram matters</h2>\n<p>For years MongoDB's Indian offices mostly sold and supported its database. That changed when it started building products here. In a June 2026 post, <a href=\"https://www.mongodb.com/company/blog/news/mongodb-upskill-two-million-builders-india-by-2030\">MongoDB said</a> it has more than 700 employees in the region across Bengaluru, Mumbai and Gurgaon. It said it serves half of India's top 100 companies by market capitalisation and more than 50 unicorns (startups valued at $1 billion or more). The same post said a dedicated engineering team launched in India the previous year and already owns pieces such as the management plane for MongoDB Enterprise Advanced and parts of its modernisation platform.</p>\n<p>At its Investor Day on 29 September 2026, MongoDB <a href=\"https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-atlas-agent-engine-to-put-ai-agents-in-production-without-a-new-stack\">launched Atlas Agent Engine</a>, a product for running AI agents in production. A day later, according to <a href=\"https://cxotoday.com/media-coverage/mongodb-launches-atlas-agent-engine-powered-by-rapidly-growing-rd-hub-in-india/\">CXOToday</a>, the company said its India R&amp;D team of about 110 engineers, set up roughly 18 months earlier, had owned core architectural parts of that product. The team also worked on backup features for MongoDB 9.0 and on AI-assisted migration and code-translation tools. CXOToday put MongoDB's regional headcount at more than 750 across Gurugram, Bengaluru and Mumbai, and quoted director of engineering Nitin Aggarwal saying the team's work reaches MongoDB's largest enterprise customers worldwide.</p>\n<p>For job seekers, the takeaway is simple: Gurugram is no longer only a sales and support office. Product engineering roles there now sit on teams that ship globally.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Which roles are open in India right now</h2>\n<p>We pulled MongoDB's public Greenhouse feed on 4 October 2026. Here is how the 82 India roles break down by function, using our own grouping of job titles:</p>\n<table>\n<thead><tr><th>Function</th><th>Approx. roles</th><th>Examples from the board</th></tr></thead>\n<tbody>\n<tr><td>Software and business-systems engineering</td><td>31</td><td>Software Engineer 3, Senior and Staff Software Engineer, Engineering Manager (AI Builder Experience), Salesforce and GTM Tech engineers</td></tr>\n<tr><td>Reliability and cloud operations</td><td>4</td><td>Senior and Staff Site Reliability Engineer, Cloud Operations Engineer, Lead Platform Engineering</td></tr>\n<tr><td>Support and customer success</td><td>10</td><td>Associate TSE II, Technical Services Engineer, Technical Account Manager</td></tr>\n<tr><td>Sales, partners and pre-sales</td><td>14</td><td>Account Development Representative, Enterprise Account Executive, Solutions Architect, Forward Deployed Engineer</td></tr>\n<tr><td>Finance, HR, marketing, product and programmes</td><td>about 23</td><td>Revenue and payroll specialists, recruiters, marketing managers, Senior Product Manager, Technical Program Managers</td></tr>\n</tbody>\n</table>\n<p>Three patterns stand out in the postings. First, several Gurugram teams are new and AI-focused. One <a href=\"https://www.mongodb.com/careers/job/?gh_jid=7590644\">Senior Software Engineer post</a> describes a new platform to help customers build AI applications on MongoDB, and other roles sit in teams called AI Builder Experience and AI Framework Integrations. Second, experience bars are clear: Software Engineer 3 posts ask for roughly two to five years, senior roles for five or more, and staff roles for about eight or more. Third, even the \"associate\" support roles ask for around four years of relevant experience. You can browse the live list on our <a href=\"/jobs/company/mongodb/\">MongoDB jobs page</a>, which is refreshed from the same official feed.</p>\n\n<h2>How MongoDB works: hybrid, and based in the city</h2>\n<p>MongoDB's careers page describes four working models: in-office (three to five days a week at a dedicated desk), flexible (one to two days a week at a shared desk), fully remote, and customer-facing remote. It says the model depends on the role and is agreed between employee and manager. In practice, almost every India posting we read uses the same line: MongoDB is \"looking to speak to candidates who are based in\" Gurugram, Bengaluru or Mumbai \"for our hybrid working model\". One <a href=\"https://www.mongodb.com/careers/job/?gh_jid=8208074\">Software Engineer 3 listing</a> spells it out as three days in the office and two at home.</p>\n<p>So if you live in another city, say so early and ask whether relocation is expected. Do not assume a remote arrangement just because MongoDB offers one elsewhere.</p>\n\n<h2>What MongoDB looks for</h2>\n<p>MongoDB lists six values on its careers site: Think Big, Go Far; Build Together; Embrace the Power of Differences; Make it Matter; Own What You Do; and Be Intellectually Honest. Its job posts also refer to a \"Leadership Commitment\" that guides how people make decisions. Expect behavioural questions that test these ideas, especially ownership and honesty about mistakes.</p>\n<p>On the technical side, engineering posts keep returning to distributed systems. The Gurugram senior role asks for a background in building core parts of high-scale compute and data systems and an interest in Python, Go and Java. The AI teams add Node.js and AI frameworks. Business-systems roles are Salesforce-heavy, and support roles want deep troubleshooting skills with databases and operating systems.</p>\n\n<!-- xf-image-3 -->\n\n<h2>The hiring process, step by step</h2>\n<p>MongoDB's <a href=\"https://www.mongodb.com/company/careers/teams/engineering\">engineering careers page</a> sets out a typical six-step process:</p>\n<ol>\n<li><strong>Apply</strong> to a specific opening.</li>\n<li><strong>Recruiter conversation</strong> about your career goals and the role.</li>\n<li><strong>Initial technical interview</strong> to gauge your technical depth.</li>\n<li><strong>Technical assessments</strong>, covering system design and coding.</li>\n<li><strong>Director or VP interview</strong>, a broader conversation about the team and your fit.</li>\n<li><strong>Job offer</strong>, followed by onboarding.</li>\n</ol>\n<p>A 2021 post by MongoDB technical recruiter Bryan Spears on the <a href=\"https://www.mongodb.com/company/blog/culture/recruiting-tips/how-prepare-your-engineering-interview-mongodb\">company blog</a> adds useful context, though it is a few years old. It says hiring is team-based: you interview for a specific team, the panel includes future teammates and your manager, and one recruiter stays with you throughout. At the time, the process was one or two virtual interviews followed by an \"onsite\" held over Zoom, with the format varying by team and seniority.</p>\n\n<h3>What technical interviewers grade</h3>\n<p>The same post lists what MongoDB engineers look for, and it is the most useful official prep material available:</p>\n<ul>\n<li><strong>Writing code:</strong> strong command of your language, concurrency-safe code that handles edge cases, and sound object-oriented design.</li>\n<li><strong>Software engineering:</strong> data structures and algorithms, runtime versus memory trade-offs, and testing your own code.</li>\n<li><strong>Collaboration:</strong> readable, organised code, taking hints well, and explaining where you are stuck.</li>\n<li><strong>System design:</strong> designs that scale for concurrency, throughput and reliability, avoid common bottlenecks, and weigh alternatives.</li>\n</ul>\n<p>Topics can include concurrency, distributed systems, algorithms, system design and language-specific coding. MongoDB says its questions come from real problems it has solved, not riddles. Behavioural rounds cover successes and failures, mentoring, career goals and projects you have owned.</p>\n\n<h3>What candidates report</h3>\n<p>The following comes from candidate reports, not from MongoDB. TechPrep, a third-party prep site, summarises <a href=\"https://www.techprep.app/blog/mongodb-interview-process\">2025 and 2026 candidate accounts</a> as a roughly 30-minute recruiter screen, a 60-minute technical screen, a hiring-manager round and a virtual onsite of three to four back-to-back sessions, over about three to five weeks. It says candidates describe the technical screen as often run through Karat, an outside interviewing service, for earlier-career levels, and with a MongoDB engineer for senior roles. Treat these as patterns, not promises; your recruiter will confirm the exact loop for your team.</p>\n\n<!-- xf-image-4 -->\n\n<h2>How to stand out</h2>\n<p>MongoDB senior technical recruiter Lauren Sokal shared four resume tips in a <a href=\"https://www.mongodb.com/company/blog/culture/recruiting-tips/four-tips-writing-applying-your-engineering-resume\">2021 blog post</a> that still apply:</p>\n<ul>\n<li><strong>Keep it to one page</strong>, or two if you have 15 or more years of experience. List only the technologies where you have recent, concrete examples.</li>\n<li><strong>Keep it clear.</strong> Use a plain font and a simple layout. Put education near the top if you are a recent graduate, and recent experience first if you are not.</li>\n<li><strong>Be intentional.</strong> Tailor the resume to the job description and apply to roles that genuinely fit. You do not need every listed skill.</li>\n<li><strong>Show what makes you different</strong> with a short summary or interests section, including why MongoDB appeals to you.</li>\n</ul>\n<p>Beyond the resume, a few practical moves help:</p>\n<ul>\n<li><strong>Use the product.</strong> MongoDB points candidates to its free MongoDB University courses and its documentation. Building a small project on Atlas gives you real things to talk about.</li>\n<li><strong>Practise concurrency and design, not just puzzles.</strong> MongoDB's own list puts concurrency-safe code and scalable design next to algorithms.</li>\n<li><strong>Talk while you code.</strong> Collaboration and communication are graded explicitly.</li>\n<li><strong>Match the team.</strong> For the AI teams, show backend work in Node.js or Python and familiarity with AI frameworks. For business systems, show Salesforce depth. For support, show calm, methodical debugging.</li>\n<li><strong>Prepare stories</strong> about a failure you learned from and a project you owned end to end. Those map directly to the behavioural round.</li>\n</ul>\n\n<h2>Pay, notice periods and offers</h2>\n<p>MongoDB's India postings do not publish salary ranges. Some mention a \"competitive\" or \"top-range\" salary with equity and benefits, and one Gurugram sales-support post lists 20 weeks of paternity and 26 weeks of maternity leave. We have not found an official India pay range, so we do not quote one. Recruiters normally ask for your expectations on the first call. Work out what a fixed salary means in your pocket with our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a>. If your current employer has a long notice period, our <a href=\"/tools/notice-period-buyout-calculator/\">notice period buyout calculator</a> helps you plan the conversation.</p>\n<p>In Indian offers, pay is usually quoted as CTC (cost to company) in LPA, meaning lakh rupees per annum; one lakh is ₹100,000. Equity at US-listed companies like MongoDB usually comes as RSUs (restricted stock units). Their tax treatment in India is specific, so confirm it with a qualified tax adviser.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>MongoDB's India hiring has shifted from mostly go-to-market roles to real product engineering, with Gurugram at the centre and AI work on its newest launches. That makes it one of the more interesting database companies to join in India in 2026. It also means the bar is experienced-hire: most roles want several years of distributed-systems, Salesforce, support or sales experience, and you should expect to be in the office part of the week. Read MongoDB's own interview guidance, practise concurrency and system design, and apply to the specific team whose work you can speak to.</p>\n\n<h2>FAQ</h2>\n<h3>Where is MongoDB hiring in India?</h3>\n<p>Mostly in Gurugram. On 4 October 2026, 64 of 82 India roles were Gurugram-only. Bengaluru had nine, Mumbai two, and the rest were multi-city or listed as \"India\".</p>\n<h3>How many interview rounds does MongoDB have?</h3>\n<p>MongoDB's engineering page lists a recruiter conversation, an initial technical interview, technical assessments on system design and coding, and a director or VP interview before an offer. The exact loop varies by team and level.</p>\n<h3>Does MongoDB hire freshers in India?</h3>\n<p>MongoDB runs intern and graduate programmes globally, but we found no India internship or new-graduate posting on its board on 4 October 2026. Watch the board and MongoDB's campus pages.</p>\n<h3>Is MongoDB India remote?</h3>\n<p>Most India postings ask for candidates based in the office city for a hybrid model. At least one engineering post specifies three days in the office and two at home.</p>\n<h3>Do I need a referral?</h3>\n<p>No. You can apply directly through MongoDB's careers site. A referral from someone who knows your work can help, but MongoDB's published process starts with a normal application.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>MongoDB (Greenhouse job board), \"MongoDB jobs API\", accessed 2026-10-04. <a href=\"https://boards-api.greenhouse.io/v1/boards/mongodb/jobs\">Link</a></li>\n<li>MongoDB, \"Engineering careers\", accessed 2026-10-04. <a href=\"https://www.mongodb.com/company/careers/teams/engineering\">Link</a></li>\n<li>MongoDB, \"Careers\", accessed 2026-10-04. <a href=\"https://www.mongodb.com/company/careers\">Link</a></li>\n<li>MongoDB Blog, \"How to Prepare for Your Engineering Interview at MongoDB\", 2021-10-21. <a href=\"https://www.mongodb.com/company/blog/culture/recruiting-tips/how-prepare-your-engineering-interview-mongodb\">Link</a></li>\n<li>MongoDB Blog, \"Four Tips for Writing and Applying with Your Engineering Resume\", 2021-09-03. <a href=\"https://www.mongodb.com/company/blog/culture/recruiting-tips/four-tips-writing-applying-your-engineering-resume\">Link</a></li>\n<li>MongoDB Blog, \"MongoDB to Upskill Two Million Builders in India by 2030\", 2026-06-30. <a href=\"https://www.mongodb.com/company/blog/news/mongodb-upskill-two-million-builders-india-by-2030\">Link</a></li>\n<li>MongoDB, \"MongoDB Launches Atlas Agent Engine to Put AI Agents in Production Without a New Stack\", 2026-09-29. <a href=\"https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-atlas-agent-engine-to-put-ai-agents-in-production-without-a-new-stack\">Link</a></li>\n<li>CXOToday, \"MongoDB Launches Atlas Agent Engine, Powered by Rapidly Growing R&amp;D Hub in India\", 2026-09-30. <a href=\"https://cxotoday.com/media-coverage/mongodb-launches-atlas-agent-engine-powered-by-rapidly-growing-rd-hub-in-india/\">Link</a></li>\n<li>MongoDB, \"Software Engineer 3 (Gurugram)\" job posting, accessed 2026-10-04. <a href=\"https://www.mongodb.com/careers/job/?gh_jid=8208074\">Link</a></li>\n<li>MongoDB, \"Senior Software Engineer (Gurugram)\" job posting, accessed 2026-10-04. <a href=\"https://www.mongodb.com/careers/job/?gh_jid=7590644\">Link</a></li>\n<li>TechPrep (third-party, candidate reports), \"MongoDB's Interview Process (2026)\", accessed 2026-10-04. <a href=\"https://www.techprep.app/blog/mongodb-interview-process\">Link</a></li>\n</ol>",
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/MongoDB_NYC_Headquarters.jpg/1920px-MongoDB_NYC_Headquarters.jpg",
+   "alt": "Exterior of the building housing MongoDB's headquarters in New York City",
+   "caption": "MongoDB is headquartered in New York, but much of its newest product work now happens in Gurugram.",
+   "credit": "Photo: Jerzy Fischer / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MongoDB_NYC_Headquarters.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/1920px-Cyber_City_View.jpg",
+   "alt": "Glass office towers in Cyber City, Gurugram, seen from a distance",
+   "caption": "Cyber City in Gurugram, the business district where most of MongoDB's India roles are based.",
+   "credit": "Photo: Tarun4u / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Cyber_City_View.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/DLF_Cyber_City_with_Rapid_Metro%2C_Gurgaon.jpg/1920px-DLF_Cyber_City_with_Rapid_Metro%2C_Gurgaon.jpg",
+   "alt": "Rapid Metro elevated track running between office buildings in DLF Cyber City, Gurgaon",
+   "caption": "Most India postings ask for candidates based in the city for MongoDB's hybrid model.",
+   "credit": "Photo: Slyronit / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:DLF_Cyber_City_with_Rapid_Metro,_Gurgaon.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Wikimedia_Foundation_Servers-8055_15.jpg/1920px-Wikimedia_Foundation_Servers-8055_15.jpg",
+   "alt": "Rows of rack-mounted servers with blinking lights in a data centre",
+   "caption": "MongoDB's interviews lean on concurrency, distributed systems and system design.",
+   "credit": "Photo: Victorgrigas / Wikimedia Commons, CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Servers-8055_15.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/MongoDB_Palo_Alto_Office.jpg/1920px-MongoDB_Palo_Alto_Office.jpg",
+   "alt": "Exterior of a MongoDB office building in Palo Alto with company signage",
+   "caption": "MongoDB hires globally, but India roles follow the same team-based interview process.",
+   "credit": "Photo: BrokenSegue / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MongoDB_Palo_Alto_Office.jpg"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://boards-api.greenhouse.io/v1/boards/mongodb/jobs",
+   "publisher": "MongoDB (Greenhouse job board)",
+   "date": "2026-10-04",
+   "claim": "390 roles worldwide, 82 India roles on 4 Oct 2026 (64 Gurugram-only, 9 Bengaluru, 2 Mumbai, rest multi-city/India); function mix; experience requirements; 75 of 82 India posts mention hybrid and city-based candidates; no India intern/new-grad postings; paternity/maternity leave in sales support post; 'Leadership Commitment'"
+  },
+  {
+   "url": "https://www.mongodb.com/company/careers/teams/engineering",
+   "publisher": "MongoDB",
+   "date": "2026-10-04",
+   "claim": "Six-step engineering recruitment process; India engineering locations Bengaluru and Gurugram (page undated; accessed date)"
+  },
+  {
+   "url": "https://www.mongodb.com/company/careers",
+   "publisher": "MongoDB",
+   "date": "2026-10-04",
+   "claim": "Six company values; four working models; intern and graduate programmes (page undated; accessed date)"
+  },
+  {
+   "url": "https://www.mongodb.com/company/blog/culture/recruiting-tips/how-prepare-your-engineering-interview-mongodb",
+   "publisher": "MongoDB Blog (Bryan Spears)",
+   "date": "2021-10-21",
+   "claim": "Team-based process, one or two virtual interviews then onsite over Zoom, single recruiter, what technical and behavioural interviews assess, MongoDB University and docs as prep, questions based on real problems"
+  },
+  {
+   "url": "https://www.mongodb.com/company/blog/culture/recruiting-tips/four-tips-writing-applying-your-engineering-resume",
+   "publisher": "MongoDB Blog (Lauren Sokal)",
+   "date": "2021-09-03",
+   "claim": "Four resume tips: one page, clarity, tailoring, uniqueness"
+  },
+  {
+   "url": "https://www.mongodb.com/company/blog/news/mongodb-upskill-two-million-builders-india-by-2030",
+   "publisher": "MongoDB Blog",
+   "date": "2026-06-30",
+   "claim": "700+ regional employees, offices in Bengaluru, Mumbai, Gurgaon; half of India's top 100 companies; 50+ unicorns; engineering team launched previous year and its responsibilities"
+  },
+  {
+   "url": "https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-atlas-agent-engine-to-put-ai-agents-in-production-without-a-new-stack",
+   "publisher": "MongoDB",
+   "date": "2026-09-29",
+   "claim": "Atlas Agent Engine launched at Investor Day"
+  },
+  {
+   "url": "https://cxotoday.com/media-coverage/mongodb-launches-atlas-agent-engine-powered-by-rapidly-growing-rd-hub-in-india/",
+   "publisher": "CXOToday",
+   "date": "2026-09-30",
+   "claim": "India R&D team of about 110 engineers set up about 18 months earlier; 750+ employees across Gurugram, Bengaluru, Mumbai; work on Atlas Agent Engine, MongoDB 9.0 backup features, modernisation tooling; Nitin Aggarwal quote"
+  },
+  {
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8208074",
+   "publisher": "MongoDB",
+   "date": "2026-10-04",
+   "claim": "Software Engineer 3 posting: hybrid 3 days in office, 2 days from home; top-range salary, equity"
+  },
+  {
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7590644",
+   "publisher": "MongoDB",
+   "date": "2026-10-04",
+   "claim": "Gurugram senior role on new AI application platform; 5+ years distributed systems; Python, Go, Java"
+  },
+  {
+   "url": "https://www.techprep.app/blog/mongodb-interview-process",
+   "publisher": "TechPrep (third-party, candidate reports)",
+   "date": "2026-10-04",
+   "claim": "Candidate-reported loop: recruiter screen, technical screen (often Karat at earlier levels), hiring manager round, 3-4 session virtual onsite, 3-5 weeks"
+  }
+ ]
+}
