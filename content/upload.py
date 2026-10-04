@@ -18,6 +18,7 @@ import glob
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 
@@ -45,6 +46,7 @@ def main():
     ap.add_argument("--per-day", type=int, default=10)
     ap.add_argument("--start", default=(dt.date.today() + dt.timedelta(days=1)).isoformat())
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--pause", type=float, default=20, help="seconds between posts")
     a = ap.parse_args()
 
     site = os.environ.get("XF_SITE_URL", "").rstrip("/")
@@ -86,6 +88,8 @@ def main():
         done[name] = {"id": res.get("id"), "status": res.get("status"), "url": res.get("url"), "publish_at": p["publish_at"]}
         json.dump(ledger, open(LEDGER, "w"), indent=1)
         print(f"{res.get('status'):8} {t:%d %b %H:%M}  {p['title']}  → {res.get('url')}")
+        # Wikimedia rate-limits image downloads (HTTP 429); a pause between posts keeps every image.
+        time.sleep(a.pause)
 
 
 if __name__ == "__main__":

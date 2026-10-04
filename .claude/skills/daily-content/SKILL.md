@@ -34,7 +34,8 @@ For each file check, and fix or drop:
 - Would a careful editor at a good news site publish this as is? If not, drop it.
 
 ## 4. Schedule on the live site
-`python3 content/upload.py --per-day 10 --start <tomorrow> content/drafts/daily-YYYYMMDD-*.json`
+`python3 content/upload_rest.py --per-day 10 content/drafts/daily-YYYYMMDD-*.json`
+(Uses only WordPress's built-in REST API plus /xf/v1/drafts, so it works whether or not the latest plugin is deployed. It continues the schedule after posts already queued, uploads each image to the media library, and pauses between posts for Wikimedia's rate limit. `content/upload.py` is the alternative once the 2026-10-04 plugin release is live.)
 It spreads the 10 posts from 07:00 to 22:30 IST. The site sends each to IndexNow and the news sitemap when it goes live.
 
 ## 5. Report
