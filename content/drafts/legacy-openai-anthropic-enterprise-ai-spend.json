@@ -1,0 +1,134 @@
+{
+ "type": "post",
+ "slug": "openai-anthropic-enterprise-ai-spend",
+ "title": "OpenAI vs Anthropic in 2026: where enterprise AI spend is going",
+ "excerpt": "Anthropic leads Ramp's business adoption data and Menlo's API spend survey, while OpenAI nears $70B annualized revenue. What each measure shows.",
+ "category": "ai-news",
+ "tags": [
+  "OpenAI",
+  "Anthropic",
+  "Enterprise AI",
+  "Ramp AI Index",
+  "Menlo Ventures",
+  "LLM market share",
+  "Claude",
+  "ChatGPT"
+ ],
+ "content": "<p>Enterprise AI spending in 2026 is concentrating on two model makers, and the balance between them has shifted. Anthropic overtook OpenAI in Ramp's measure of US business adoption in April 2026 and led it 43.8% to 39.8% in the September update, while Menlo Ventures' survey put Anthropic at 40% of enterprise large language model (LLM) API spend at the end of 2025, against OpenAI's 27%. OpenAI, meanwhile, is still growing fast, with annualized revenue reported at nearly $70 billion in late September.</p>\n<p>This article sets out what each dataset actually measures, where the money is going (coding and agents above all), and what it means for companies and founders deciding which models to build on.</p>\n<h2>Key takeaways</h2>\n<ul>\n<li>Menlo Ventures estimated enterprise generative AI spend at $37 billion in 2025, with $12.5 billion going to foundation model APIs. Anthropic held 40% of that API spend, OpenAI 27% and Google 21%.</li>\n<li>Ramp's transaction data shows 43.8% of US businesses on its platform paying Anthropic and 39.8% paying OpenAI as of its September 2026 update. More than half of customers using either vendor use both.</li>\n<li>Both companies are growing very quickly. Anthropic's run-rate revenue passed $47 billion in May 2026, and Bloomberg reported $65 billion at the end of July. OpenAI was reported at nearly $70 billion annualized in late September.</li>\n<li>Coding is the largest single use: Menlo estimated Anthropic held about 54% of the enterprise coding model market.</li>\n</ul>\n<h2>Three ways to measure \"enterprise AI spend\"</h2>\n<p>Headlines about who is \"winning\" enterprise AI often mix different measures. Each tells you something different, so it is worth separating them.</p>\n<table>\n<thead><tr><th>Measure</th><th>What it counts</th><th>Latest reading</th></tr></thead>\n<tbody>\n<tr><td>Share of LLM API spend (Menlo Ventures)</td><td>Survey of 495 US enterprise AI decision-makers plus market modelling</td><td>Anthropic 40%, OpenAI 27%, Google 21% (December 2025)</td></tr>\n<tr><td>Share of businesses paying (Ramp AI Index)</td><td>Share of US businesses on Ramp with a transaction to each vendor</td><td>Anthropic 43.8%, OpenAI 39.8% (September 2026)</td></tr>\n<tr><td>Company revenue run rate</td><td>Each company's own annualized revenue, defined in its own way</td><td>Anthropic $65 billion (end of July 2026, reported); OpenAI nearly $70 billion (late September 2026, reported)</td></tr>\n</tbody>\n</table>\n<p>The first is about money spent through APIs by larger enterprises. The second is about how many businesses on one US platform pay each vendor at all, regardless of how much. The third includes consumer subscriptions as well as business revenue. They can point in different directions without any of them being wrong.</p>\n<h2>Menlo Ventures: Anthropic leads API spend</h2>\n<p>Menlo Ventures' <a href=\"https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/\">2025 State of Generative AI in the Enterprise</a> report, published on 9 December 2025, estimated that enterprises spent $37 billion on generative AI in 2025, 3.2 times the $11.5 billion of 2024. Foundation model APIs accounted for $12.5 billion of that.</p>\n<p>Within API spend, Anthropic's share rose to 40%, from 24% in 2024. OpenAI's share was 27%, down from 50% in 2023, and Google's was 21%, up from 7% in 2023. The three together held 88%. The survey of 495 US enterprise AI decision-makers ran from 7 to 25 November 2025.</p>\n<p>The most striking number in the report is coding: Menlo found coding was the largest category of departmental AI spend, at about $4 billion, and estimated Anthropic's share of the coding model market at about 54%.</p>\n<!-- xf-image-2 -->\n<h2>Ramp AI Index: the adoption crossover</h2>\n<p>Ramp, the US spend management company, publishes an AI Index based on transaction data from businesses on its platform. Its lead economist Ara Kharazian <a href=\"https://ramp.com/leading-indicators/the-ai-race-has-a-new-frontrunner-but-no-clear-winner\">reported in May 2026</a> that Anthropic overtook OpenAI in April, with 34.4% of businesses paying Anthropic against 32.3% for OpenAI. Anthropic had nearly quadrupled its adoption rate over the previous year, he wrote, while OpenAI's share had peaked at 34.4% in December 2025.</p>\n<p>Two other findings from that report matter for enterprise buyers. First, 52% of customers using Anthropic or OpenAI use both. Second, 43% of Anthropic's current customers had previously paid a different generative AI vendor. Ramp also cautioned that it likely undercounts Google, because many businesses get Gemini through existing Workspace subscriptions rather than paying for it separately.</p>\n<p>The <a href=\"https://ramp.com/data/ai-index-sept-2026\">September 2026 update</a>, published on 9 September, put Anthropic at 43.8% of businesses and OpenAI at 39.8%, with overall adoption still rising but decelerating. Ramp also expanded the index in 2026 to track token volumes and model-level spend, and moved to weekly updates, according to <a href=\"https://cryptobriefing.com/ramp-ai-index-token-spend-volumes-update/\">Crypto Briefing</a>; the April and September readings are best read as separate snapshots rather than a precise trend.</p>\n<h3>Prices are falling</h3>\n<p>The September report found the effective price per million tokens across businesses fell 41% to $0.68, from a 2026 peak of $1.15 in March. Frontier models such as Anthropic's Opus took about 45% of token share, while cheaper models drove much of the volume growth. Kharazian argued that falling prices combined with only modest volume growth could pressure frontier labs' revenue, a useful counterweight to the growth headlines.</p>\n<h2>Revenue: both companies are growing fast</h2>\n<h3>Anthropic</h3>\n<p>Anthropic said its run-rate revenue was $14 billion when it raised a $30 billion Series G at a $380 billion post-money valuation on <a href=\"https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation\">12 February 2026</a>. At that point, the number of customers spending more than $1 million a year had grown to over 500, eight of the Fortune 10 were Claude customers, and Claude Code, its coding tool, had passed $2.5 billion in run-rate revenue.</p>\n<p>On <a href=\"https://www.anthropic.com/news/series-h\">28 May 2026</a>, Anthropic announced a $65 billion Series H at a $965 billion post-money valuation, led by Altimeter Capital, Dragoneer, Greenoaks and Sequoia Capital, and said run-rate revenue had crossed $47 billion in mid-May. Bloomberg later reported a run rate of $65 billion at the end of July, according to <a href=\"https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/\">TechCrunch</a>, which also noted that both Anthropic and OpenAI had filed confidential IPO paperwork.</p>\n<h3>OpenAI</h3>\n<p>OpenAI closed a $122 billion funding round at an $852 billion post-money valuation on 31 March 2026, co-led by SoftBank, with Amazon, Nvidia and SoftBank as anchor investors, according to <a href=\"https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html\">CNBC</a>. OpenAI said then that it was generating $2 billion in revenue a month, after $13.1 billion in revenue in 2025, and that ChatGPT had more than 900 million weekly active users.</p>\n<p>Axios reported on 29 September 2026 that OpenAI's annualized revenue was nearly $70 billion, with business revenue more than doubling since the start of the third quarter, according to <a href=\"https://www.pymnts.com/news/artificial-intelligence/2026/openai-annualized-revenue-nears-70-billion-amid-enterprise-growth/\">PYMNTS</a>. TechCrunch has cautioned that the two companies may calculate their revenue metrics differently, so direct comparisons of run rates should be made carefully.</p>\n<!-- xf-image-3 -->\n<h2>Where enterprise money is going</h2>\n<h3>Coding comes first</h3>\n<p>Coding is the clearest enterprise use case. Menlo's estimate of $4 billion in coding spend in 2025, and Anthropic's disclosure that Claude Code passed $2.5 billion in run-rate revenue by February 2026, show how quickly software teams have moved. OpenAI competes here with its Codex tools; in India, TCS said it would use Codex to standardise AI-native software development, according to <a href=\"https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/\">TechCrunch</a>.</p>\n<h3>Agents and the cloud distribution race</h3>\n<p>The next battleground is AI agents that carry out multi-step work. Distribution through cloud providers is a large part of that fight. Amazon agreed to invest $50 billion in OpenAI, starting with $15 billion, and AWS became the exclusive third-party cloud provider for OpenAI Frontier, a platform for building and managing teams of AI agents, according to <a href=\"https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-partnership-aws-elemental-inference-strands-labs-and-more-march-2-2026/\">AWS</a>. The companies are also building a \"stateful runtime environment\" for OpenAI models on Amazon Bedrock. Amazon is also an Anthropic investor: $5 billion of the previously committed hyperscaler money in Anthropic's Series H came from Amazon, Anthropic said.</p>\n<h3>Multi-model is the norm</h3>\n<p>Ramp's finding that 52% of AI-paying customers use both Anthropic and OpenAI says the most about how enterprises actually buy. Companies tend to route different workloads to different models: one for coding, another for customer-facing chat, a cheaper one for high-volume classification. The September token-price data reinforces that pattern, as businesses use frontier models where quality matters and cheaper ones elsewhere.</p>\n<!-- xf-image-4 -->\n<h2>The India angle</h2>\n<p>Both companies now treat India as a major market. Anthropic opened its Bengaluru office on 16 February 2026, its second in Asia after Tokyo, and said India is the second-largest market for Claude.ai, according to its <a href=\"https://anthropic.com/news/bengaluru-office-partnerships-across-india\">announcement</a>. It named partners including Air India, CRED, Cognizant, Razorpay and Swiggy, and said its India run-rate revenue had doubled since October 2025.</p>\n<p>OpenAI said India has more than 100 million weekly ChatGPT users, and announced a deal with the Tata Group for 100 megawatts of AI data centre capacity, with plans to scale to 1 gigawatt, plus a ChatGPT Enterprise rollout across Tata's workforce starting with hundreds of thousands of TCS employees, according to <a href=\"https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/\">TechCrunch</a>. It plans offices in Mumbai and Bengaluru in addition to New Delhi.</p>\n<p>For job seekers, both companies hire in India and globally; see current openings at <a href=\"/jobs/company/anthropic/\">Anthropic</a> and <a href=\"/jobs/company/openai/\">OpenAI</a>, or browse all <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs</a>.</p>\n<h2>What founders should take from this</h2>\n<p>This section is our analysis.</p>\n<ul>\n<li><strong>Design for more than one model.</strong> With more than half of AI-paying businesses using both leading vendors, buyers expect flexibility. An abstraction layer that lets you switch or route between models protects you from price changes, outages and shifts in model quality.</li>\n<li><strong>Price on value, not tokens.</strong> If token prices keep falling, as Ramp's data suggests, products that simply resell model access will see their margins squeezed. Products priced on outcomes (tickets resolved, code merged, invoices processed) hold up better.</li>\n<li><strong>Coding and agents are where budgets are.</strong> Menlo's data and both companies' disclosures point to software development and agentic workflows as the biggest enterprise line items. Tools that plug into those workflows have the shortest path to a budget.</li>\n<li><strong>Watch the cloud marketplaces.</strong> Enterprises often buy AI through AWS, Azure and Google Cloud commitments. Being available in those marketplaces can matter as much as model choice.</li>\n</ul>\n<!-- xf-image-5 -->\n<h2>Bottom line</h2>\n<p>By the measures available in October 2026, Anthropic leads in enterprise API spend and in the share of US businesses paying for it, while OpenAI remains larger by total revenue and users and is growing quickly in business sales. Neither lead is settled: prices are falling, most enterprises use both, and the companies' revenue figures are not defined the same way. The safer bet for most companies is not picking a winner but building so that it does not matter. We will keep tracking the numbers in our <a href=\"/news/\">AI news</a> coverage.</p>\n<h2>FAQ</h2>\n<h3>Is Anthropic bigger than OpenAI in enterprise AI?</h3>\n<p>By Menlo Ventures' estimate of enterprise LLM API spend, yes: 40% to 27% at the end of 2025. By Ramp's measure of US businesses paying each vendor, Anthropic also led in September 2026, 43.8% to 39.8%. By total company revenue, the two were close in the latest reports, and they calculate revenue differently.</p>\n<h3>What is the Ramp AI Index?</h3>\n<p>It is a regular measure from Ramp, based on transaction data from US businesses on its platform, showing the share paying for AI tools and for specific vendors. It reflects Ramp's own customers, not the whole US economy.</p>\n<h3>How much do enterprises spend on generative AI?</h3>\n<p>Menlo Ventures estimated $37 billion in 2025, up from $11.5 billion in 2024, with $12.5 billion on foundation model APIs.</p>\n<h3>What is Anthropic's revenue in 2026?</h3>\n<p>Anthropic said its run-rate revenue passed $47 billion in mid-May 2026. Bloomberg reported it at $65 billion at the end of July.</p>\n<h3>Do companies use both OpenAI and Anthropic?</h3>\n<p>Often, yes. Ramp found that 52% of its customers using either Anthropic or OpenAI pay for both.</p>\n<h2>Sources</h2>\n<ol>\n<li>Menlo Ventures, <a href=\"https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/\">\"2025: The State of Generative AI in the Enterprise\"</a>, 9 December 2025</li>\n<li>Ramp, <a href=\"https://ramp.com/leading-indicators/the-ai-race-has-a-new-frontrunner-but-no-clear-winner\">\"Claude's crossover moment: Anthropic surpasses OpenAI in adoption\"</a>, 19 May 2026</li>\n<li>Ramp, <a href=\"https://ramp.com/data/ai-index-sept-2026\">\"September 2026 Ramp AI Index\"</a>, 9 September 2026</li>\n<li>Crypto Briefing, <a href=\"https://cryptobriefing.com/ramp-ai-index-token-spend-volumes-update/\">\"Ramp AI Index now tracks token spend and model-level usage across 70,000 businesses\"</a>, 22 September 2026</li>\n<li>Anthropic, <a href=\"https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation\">\"Anthropic raises $30B Series G at $380B valuation\"</a>, 12 February 2026</li>\n<li>Anthropic, <a href=\"https://www.anthropic.com/news/series-h\">\"Anthropic raises $65B Series H at $965B valuation\"</a>, 28 May 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/\">\"Anthropic's annualized revenue surges to $65B\"</a>, 17 August 2026</li>\n<li>CNBC, <a href=\"https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html\">\"OpenAI closes record-breaking $122 billion funding round\"</a>, 31 March 2026</li>\n<li>PYMNTS, <a href=\"https://www.pymnts.com/news/artificial-intelligence/2026/openai-annualized-revenue-nears-70-billion-amid-enterprise-growth/\">\"OpenAI Annualized Revenue Nears $70 Billion Amid Enterprise Growth\"</a>, 29 September 2026</li>\n<li>AWS, <a href=\"https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-partnership-aws-elemental-inference-strands-labs-and-more-march-2-2026/\">\"AWS Weekly Roundup: OpenAI partnership and more\"</a>, 2 March 2026</li>\n<li>Anthropic, <a href=\"https://anthropic.com/news/bengaluru-office-partnerships-across-india\">\"Bengaluru office and partnerships across India\"</a>, 16 February 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/\">\"OpenAI taps Tata for 100MW AI data center capacity in India\"</a>, 18 February 2026</li>\n</ol>",
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Wikimedia_Foundation_Servers-8055_13.jpg/1920px-Wikimedia_Foundation_Servers-8055_13.jpg",
+   "alt": "Rows of server racks with blinking lights inside a data centre",
+   "caption": "Enterprise AI spending ultimately pays for computing capacity in data centres like this one.",
+   "credit": "Photo: Victorgrigas / Wikimedia Commons, CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Servers-8055_13.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Coding_Shots_Annual_Plan_high_res-5.jpg/1920px-Coding_Shots_Annual_Plan_high_res-5.jpg",
+   "alt": "A developer working on code on a laptop screen",
+   "caption": "Coding is the largest single category of enterprise AI spend, according to Menlo Ventures.",
+   "credit": "Photo: Matthew (WMF) / Wikimedia Commons, CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Coding_Shots_Annual_Plan_high_res-5.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg/1920px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+   "alt": "Anthropic chief executive Dario Amodei speaking on stage at TechCrunch Disrupt 2023",
+   "caption": "Anthropic, led by Dario Amodei, said its run-rate revenue passed $47 billion in May 2026.",
+   "credit": "Photo: TechCrunch / Wikimedia Commons, CC BY 2.0",
+   "license": "CC BY 2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_%28cropped%29.jpg/1920px-Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_%28cropped%29.jpg",
+   "alt": "OpenAI chief executive Sam Altman speaking at TechCrunch Disrupt San Francisco in 2019",
+   "caption": "OpenAI, led by Sam Altman, closed a $122 billion funding round in March 2026.",
+   "credit": "Photo: TechCrunch / Wikimedia Commons, CC BY 2.0",
+   "license": "CC BY 2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_(cropped).jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Bengaluru_Skyline_from_Tata_Promont.jpg/1920px-Bengaluru_Skyline_from_Tata_Promont.jpg",
+   "alt": "The Bengaluru skyline with high-rise towers seen from a residential building",
+   "caption": "Anthropic opened its Bengaluru office in February 2026; OpenAI plans offices in Bengaluru and Mumbai.",
+   "credit": "Photo: Kushagra140 / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Bengaluru_Skyline_from_Tata_Promont.jpg"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
+   "publisher": "Menlo Ventures",
+   "date": "2025-12-09",
+   "claim": "$37B enterprise gen AI spend 2025 vs $11.5B 2024; $12.5B on model APIs; Anthropic 40%, OpenAI 27%, Google 21%; coding $4B; Anthropic ~54% coding; 495 respondents Nov 7-25"
+  },
+  {
+   "url": "https://ramp.com/leading-indicators/the-ai-race-has-a-new-frontrunner-but-no-clear-winner",
+   "publisher": "Ramp",
+   "date": "2026-05-19",
+   "claim": "April 2026 crossover: Anthropic 34.4% vs OpenAI 32.3%; Anthropic ~4x adoption in a year; OpenAI peak 34.4% Dec 2025; 52% use both; 43% switched; Google undercounted"
+  },
+  {
+   "url": "https://ramp.com/data/ai-index-sept-2026",
+   "publisher": "Ramp",
+   "date": "2026-09-09",
+   "claim": "Anthropic 43.8%, OpenAI 39.8%; adoption decelerating; token price $0.68 down 41% from $1.15 March peak; frontier models 45% of tokens; Kharazian interpretation"
+  },
+  {
+   "url": "https://cryptobriefing.com/ramp-ai-index-token-spend-volumes-update/",
+   "publisher": "Crypto Briefing",
+   "date": "2026-09-22",
+   "claim": "Ramp AI Index expanded to token volumes and model-level spend, weekly updates"
+  },
+  {
+   "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+   "publisher": "Anthropic",
+   "date": "2026-02-12",
+   "claim": "$30B Series G at $380B; $14B run-rate; 500+ customers >$1M; 8 of Fortune 10; Claude Code >$2.5B run-rate"
+  },
+  {
+   "url": "https://www.anthropic.com/news/series-h",
+   "publisher": "Anthropic",
+   "date": "2026-05-28",
+   "claim": "$65B Series H at $965B; leads; run-rate >$47B mid-May; $5B from Amazon"
+  },
+  {
+   "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/",
+   "publisher": "TechCrunch",
+   "date": "2026-08-17",
+   "claim": "Bloomberg: Anthropic $65B run rate end of July; both filed confidential IPO paperwork; metrics may be calculated differently"
+  },
+  {
+   "url": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html",
+   "publisher": "CNBC",
+   "date": "2026-03-31",
+   "claim": "OpenAI $122B round at $852B; SoftBank co-led; Amazon, Nvidia, SoftBank anchors; $2B revenue per month; $13.1B revenue 2025; 900M+ weekly users"
+  },
+  {
+   "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-annualized-revenue-nears-70-billion-amid-enterprise-growth/",
+   "publisher": "PYMNTS",
+   "date": "2026-09-29",
+   "claim": "Axios: OpenAI annualized revenue nearly $70B; B2B revenue more than doubled since start of Q3"
+  },
+  {
+   "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-partnership-aws-elemental-inference-strands-labs-and-more-march-2-2026/",
+   "publisher": "AWS",
+   "date": "2026-03-02",
+   "claim": "Amazon to invest $50B in OpenAI starting with $15B; AWS exclusive third-party cloud provider for OpenAI Frontier; stateful runtime on Bedrock"
+  },
+  {
+   "url": "https://anthropic.com/news/bengaluru-office-partnerships-across-india",
+   "publisher": "Anthropic",
+   "date": "2026-02-16",
+   "claim": "Bengaluru office opened; India second-largest Claude.ai market; partners; India run-rate doubled since Oct 2025"
+  },
+  {
+   "url": "https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/",
+   "publisher": "TechCrunch",
+   "date": "2026-02-18",
+   "claim": "OpenAI-Tata 100MW to 1GW; 100M+ weekly ChatGPT users in India; ChatGPT Enterprise at TCS; Codex; Mumbai and Bengaluru offices"
+  }
+ ]
+}
