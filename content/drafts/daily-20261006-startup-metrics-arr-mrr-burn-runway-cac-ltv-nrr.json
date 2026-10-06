@@ -1,0 +1,116 @@
+{
+  "type": "post",
+  "slug": "startup-metrics-arr-mrr-burn-runway-cac-ltv-nrr",
+  "title": "Startup metrics explained: ARR, MRR, burn, runway, CAC, LTV and NRR",
+  "excerpt": "What ARR, MRR, burn, runway, CAC, LTV, NRR and burn multiple mean, with sourced benchmarks from a16z, YC, Bessemer and Skok and worked examples you can copy.",
+  "category": "in-depth",
+  "tags": [
+    "startup metrics",
+    "arr",
+    "mrr",
+    "burn rate",
+    "runway",
+    "cac",
+    "ltv",
+    "net revenue retention"
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Openspace_wao_coworking.jpg/1920px-Openspace_wao_coworking.jpg",
+      "alt": "Open-plan coworking space with people working at shared desks under large windows",
+      "caption": "Most early-stage teams track the same handful of numbers, whatever their office looks like.",
+      "credit": "Photo: WAO Coworking / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Openspace_wao_coworking.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Paul_Graham_talking_about_Prototype_Day_at_Y_Combinator_Summer_2009.jpg/1920px-Paul_Graham_talking_about_Prototype_Day_at_Y_Combinator_Summer_2009.jpg",
+      "alt": "Paul Graham speaking to a room of founders at Y Combinator in 2009",
+      "caption": "Paul Graham at Y Combinator in 2009. His essays set the 5–7% weekly growth benchmark for YC companies.",
+      "credit": "Photo: Kevin Hale / Wikimedia Commons, CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Paul_Graham_talking_about_Prototype_Day_at_Y_Combinator_Summer_2009.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/TechnologyHub_2020_Office_Space_Cubicles.jpg/1280px-TechnologyHub_2020_Office_Space_Cubicles.jpg",
+      "alt": "Rows of empty office desks and cubicles in an open-plan business centre",
+      "caption": "Rent, salaries and software all count towards gross burn.",
+      "credit": "Photo: Missionedit / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:TechnologyHub_2020_Office_Space_Cubicles.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Team_Eshopbox.jpg",
+      "alt": "A startup team gathered around a screen during a presentation",
+      "caption": "Unit economics such as CAC payback are a standing item in many startup reviews.",
+      "credit": "Photo: Eshopbox / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Team_Eshopbox.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/DesignEthnographyStudioLifeAnalysis5.jpg/1920px-DesignEthnographyStudioLifeAnalysis5.jpg",
+      "alt": "A group of people reviewing data together on a large screen",
+      "caption": "Cohort data, not one month's snapshot, tells you whether retention is improving.",
+      "credit": "Photo: Kalsau / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:DesignEthnographyStudioLifeAnalysis5.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://a16z.com/16-startup-metrics/",
+      "publisher": "a16z",
+      "date": "2015-08-21",
+      "claim": "ARR recurring only; don't multiply a month's bookings by 12; bookings vs revenue; LTV as PV of net profit; blended vs paid CAC; CMGR; gross vs net burn; net revenue churn"
+    },
+    {
+      "url": "https://paulgraham.com/growth.html",
+      "publisher": "Paul Graham",
+      "date": "2012-09-01",
+      "claim": "Good YC growth 5-7% a week, 10% exceptional, 1% weak; measure revenue or active users"
+    },
+    {
+      "url": "https://paulgraham.com/aord.html",
+      "publisher": "Paul Graham",
+      "date": "2015-10-01",
+      "claim": "Default alive vs dead; inputs cash, expenses, growth; Trevor Blackwell calculator"
+    },
+    {
+      "url": "https://www.forentrepreneurs.com/saas-metrics-2/",
+      "publisher": "David Skok (For Entrepreneurs)",
+      "date": "2026-10-06",
+      "claim": "CAC definition; LTV = ARPA × GM / churn; LTV:CAC > 3 (best 7-8); CAC payback 5-7, under 12 months; MRR components; negative churn"
+    },
+    {
+      "url": "https://sacks.substack.com/p/the-burn-multiple-51a7e43cb200",
+      "publisher": "David Sacks",
+      "date": "2020-04-23",
+      "claim": "Burn multiple = net burn / net new ARR; benchmark scale"
+    },
+    {
+      "url": "https://www.bvp.com/atlas/state-of-the-cloud-2023",
+      "publisher": "Bessemer Venture Partners",
+      "date": "2023-04-11",
+      "claim": "NRR 100/110/120%+; logo retention 85/90/95%; runway 12/18/24 months; efficiency score inverse ratio"
+    },
+    {
+      "url": "https://www.bvp.com/atlas/scaling-to-100-million",
+      "publisher": "Bessemer Venture Partners",
+      "date": "2021-09-21",
+      "claim": "CAC payback <12 SMB, <18 mid-market, <24 enterprise; gross retention 85-90%"
+    },
+    {
+      "url": "https://www.crv.com/content/startup-runway",
+      "publisher": "CRV",
+      "date": "2026-08-18",
+      "claim": "Runway = cash / monthly net burn; trailing 3-month average; report gross and net burn; raise with 12-18 months left; fund 18-24 months"
+    },
+    {
+      "url": "https://www.sequoiacap.com/article/adapting-to-endure/",
+      "publisher": "Sequoia Capital",
+      "date": "2022-05-16",
+      "claim": "Downturn guidance to confront reality and extend runway"
+    }
+  ],
+  "content": "<p>ARR and MRR measure recurring revenue, burn and runway measure how long your cash lasts, CAC and LTV measure what a customer costs and what they are worth, and NRR measures whether existing customers spend more or less over time. Together they answer the two questions every investor asks: is this business growing efficiently, and will it survive long enough to matter?</p>\n\n<p>This guide defines each metric using the investors and operators who popularised them, including a16z, Y Combinator's Paul Graham, Bessemer Venture Partners, David Skok and David Sacks, then works through one hypothetical company's numbers step by step. Every figure is shown with its formula so you can reproduce it on your own numbers. (Indian amounts: ₹1 lakh is ₹1,00,000 and ₹1 crore is ₹1,00,00,000. The arithmetic is the same in any currency.)</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>ARR counts only recurring revenue; a16z warns against multiplying a single good month of bookings by 12.</li>\n<li>Runway is cash divided by monthly net burn; CRV, a venture firm, suggests raising enough for 18 to 24 months.</li>\n<li>LTV should be based on profit, not revenue; David Skok's rule of thumb is an LTV-to-CAC ratio above 3 and CAC recovered within 12 months.</li>\n<li>Bessemer rates net revenue retention of 100% as good, 110% as better and 120% or more as best.</li>\n<li>David Sacks's burn multiple (net burn ÷ net new ARR) ties growth and spending into a single efficiency number.</li>\n</ul>\n\n<h2>The illustrative company used in this guide</h2>\n<p>All worked examples below use one made-up business, \"LedgerCo\", a B2B software startup selling a monthly subscription to small companies. Every figure about LedgerCo is invented for illustration and the arithmetic is ours. Definitions and benchmarks are sourced.</p>\n<ul>\n<li>200 paying customers, each paying ₹25,000 a month on average</li>\n<li>Gross margin of 80% (revenue minus hosting, support and payment costs)</li>\n<li>Monthly operating expenses of ₹90 lakh</li>\n<li>Cash in the bank: ₹6 crore</li>\n<li>Sales and marketing spend of ₹60 lakh last quarter, which brought in 40 new customers</li>\n</ul>\n\n<h2>MRR and ARR: recurring revenue</h2>\n<p>Monthly recurring revenue (MRR) is the subscription revenue you can expect every month; annual recurring revenue (ARR) is the yearly equivalent. According to <a href=\"https://a16z.com/16-startup-metrics/\">a16z's \"16 Startup Metrics\"</a> (Jeff Jordan, Anu Hariharan, Frank Chen and Preethi Kasireddy, 2015), ARR includes only recurring components and excludes one-time fees and services. The authors also caution that some founders inflate ARR by taking one month's bookings and multiplying by 12. They separate bookings (what customers have committed to pay) from revenue (what has been earned as the service is delivered).</p>\n\n<p><strong>LedgerCo example:</strong> 200 customers × ₹25,000 = ₹50 lakh MRR. ARR = ₹50 lakh × 12 = ₹6 crore. Only do the ×12 step on genuinely recurring subscription revenue.</p>\n\n<h3>Break MRR into its parts</h3>\n<p>David Skok's \"SaaS Metrics 2.0\", written with NetSuite's Ron Gill and HubSpot's Brad Coffey, recommends tracking new, expansion and churned MRR separately, because their sum, net new MRR, hides which driver is working, <a href=\"https://www.forentrepreneurs.com/saas-metrics-2/\">according to Skok's guide</a>.</p>\n\n<p><strong>LedgerCo example, one month:</strong></p>\n<table>\n<thead><tr><th>MRR movement</th><th>Amount</th></tr></thead>\n<tbody>\n<tr><td>Starting MRR</td><td>₹50.0 lakh</td></tr>\n<tr><td>+ New customers</td><td>₹4.0 lakh</td></tr>\n<tr><td>+ Expansion (upgrades, extra seats)</td><td>₹1.5 lakh</td></tr>\n<tr><td>− Churned (cancellations)</td><td>₹1.0 lakh</td></tr>\n<tr><td>− Contraction (downgrades)</td><td>₹0.5 lakh</td></tr>\n<tr><td><strong>Ending MRR</strong></td><td><strong>₹54.0 lakh</strong></td></tr>\n</tbody>\n</table>\n<p>Net new MRR is ₹4 lakh, or 8% growth in the month (4 ÷ 50).</p>\n\n<h2>Growth rate: measure it the right way</h2>\n<p>Paul Graham wrote in his 2012 essay \"Startup = Growth\" that a good growth rate during Y Combinator is 5% to 7% a week, 10% a week is exceptional, and 1% suggests the company has not yet worked out what it is doing, <a href=\"https://paulgraham.com/growth.html\">according to the essay</a>. He recommends revenue as the number to track, or active users before a company charges. His figures describe growth during YC, when companies are very small, so they are not a target for a company with ₹6 crore of ARR.</p>\n\n<p>For month-to-month growth, a16z recommends the compounded monthly growth rate (CMGR) rather than a simple average of monthly rates, because it smooths out volatile months and is easier to compare, <a href=\"https://a16z.com/16-startup-metrics/\">according to a16z</a>.</p>\n\n<p><strong>LedgerCo example:</strong> MRR grew from ₹30 lakh to ₹54 lakh over 12 months. CMGR = (54 ÷ 30)^(1/12) − 1 = 1.8^(0.0833) − 1 ≈ 5.0% a month. On an annual basis that is 80% growth (54 ÷ 30 = 1.8).</p>\n\n<!-- xf-image-2 -->\n\n<h2>Burn rate and runway: how long the cash lasts</h2>\n<p>Burn rate is the rate at which cash is decreasing. a16z distinguishes gross burn (total spending) from net burn (spending minus the cash revenue brings in). CRV, a venture firm, defines runway as cash on hand divided by monthly net burn, recommends using a trailing three-month average rather than a single month, and suggests reporting both burn figures: gross burn shows your cost structure, while net burn shows how quickly you are approaching zero, <a href=\"https://www.crv.com/content/startup-runway\">according to CRV</a>.</p>\n\n<p><strong>LedgerCo example:</strong></p>\n<ul>\n<li>Gross burn = ₹90 lakh a month (all operating expenses).</li>\n<li>Net burn = ₹90 lakh − ₹54 lakh of revenue = ₹36 lakh a month.</li>\n<li>Runway = ₹6 crore ÷ ₹36 lakh = 600 ÷ 36 ≈ 16.7 months.</li>\n</ul>\n<p>That figure assumes nothing changes. If revenue keeps growing, net burn shrinks every month and runway lengthens; if hiring plans add ₹10 lakh a month of costs, runway falls to about 13 months (600 ÷ 46).</p>\n\n<h3>How much runway is enough?</h3>\n<p>CRV suggests starting to raise with 12 to 18 months of cash left and sizing a round to fund 18 to 24 months after it closes. Bessemer's State of the Cloud 2023 report rated 12 months of runway as good, 18 months as better and 24 months or more as best, <a href=\"https://www.bvp.com/atlas/state-of-the-cloud-2023\">according to Bessemer</a>. Sequoia's May 2022 \"Adapting to Endure\" presentation to its founders, prepared for a downturn, urged companies to confront reality and act early to extend runway, <a href=\"https://www.sequoiacap.com/article/adapting-to-endure/\">according to Sequoia</a>.</p>\n\n<p>Paul Graham's \"Default Alive or Default Dead\" essay (October 2015) turns runway into a yes-or-no question: on current expenses and recent revenue growth, will the company reach profitability before the money runs out? He notes that many founders do not know the answer, and points to a calculator by Trevor Blackwell that needs only cash, monthly expenses and growth rate, <a href=\"https://paulgraham.com/aord.html\">according to the essay</a>. LedgerCo, at 5% monthly growth with flat costs, would need revenue of ₹90 lakh a month to break even; by our arithmetic that takes about 10.5 months of compounding (ln(90 ÷ 54) ÷ ln(1.05) ≈ 10.5), inside its 16.7-month runway, so on these assumptions it is default alive.</p>\n\n<!-- xf-image-3 -->\n\n<h2>Burn multiple: is the growth efficient?</h2>\n<p>Burn and growth are linked. David Sacks of Craft Ventures proposed the burn multiple in April 2020: net burn divided by net new ARR over the same period, answering how much a startup spends to add each extra unit of ARR. His scale rates under 1 as amazing, 1 to 1.5 great, 1.5 to 2 good, 2 to 3 suspect and above 3 bad, <a href=\"https://sacks.substack.com/p/the-burn-multiple-51a7e43cb200\">according to Sacks</a>. Sacks argues the metric flags problems in margins, sales efficiency or churn early, because any of them forces a company to burn more for the same growth.</p>\n\n<p><strong>LedgerCo example, past 12 months:</strong> MRR rose by ₹24 lakh (from ₹30 lakh to ₹54 lakh), so net new ARR = ₹24 lakh × 12 = ₹2.88 crore. If net burn averaged ₹36 lakh a month, annual net burn = ₹4.32 crore. Burn multiple = 4.32 ÷ 2.88 = 1.5, right at Sacks's line between great and good.</p>\n\n<p>Bessemer reports a related \"efficiency score\" that flips the ratio (net new ARR ÷ net burn), so check which way round any benchmark is written before comparing.</p>\n\n<h2>CAC: what a customer costs</h2>\n<p>Customer acquisition cost (CAC) is sales and marketing spending divided by the number of new customers it brings in, <a href=\"https://www.forentrepreneurs.com/saas-metrics-2/\">according to Skok</a>. a16z distinguishes blended CAC, which divides spending by all new customers including those who arrived organically, from paid CAC, which counts only customers from paid channels, and says investors focus on paid CAC.</p>\n\n<p><strong>LedgerCo example:</strong> ₹60 lakh of sales and marketing ÷ 40 new customers = ₹1.5 lakh blended CAC. If only 25 of those customers came through paid channels, paid CAC would be ₹60 lakh ÷ 25 = ₹2.4 lakh, a much less flattering number.</p>\n\n<h2>LTV and the LTV-to-CAC ratio</h2>\n<p>a16z defines lifetime value (LTV) as the present value of the future net profit from a customer over the relationship, and warns against using revenue in place of profit. Skok's simpler SaaS formula is average revenue per account (ARPA) × gross margin ÷ churn rate. His rule of thumb is that LTV should be more than three times CAC, with the best companies reaching seven or eight, and that CAC should be earned back within 12 months, ideally 5 to 7, <a href=\"https://www.forentrepreneurs.com/saas-metrics-2/\">according to Skok</a>.</p>\n\n<p><strong>LedgerCo example</strong> (assuming 2% of customers cancel each month):</p>\n<ul>\n<li>Gross profit per customer per month = ₹25,000 × 80% = ₹20,000.</li>\n<li>LTV = ₹20,000 ÷ 0.02 = ₹10 lakh. (A 2% monthly churn implies an average customer lifetime of 50 months.)</li>\n<li>LTV ÷ CAC = ₹10 lakh ÷ ₹1.5 lakh ≈ 6.7, comfortably above 3 on blended CAC; on paid CAC of ₹2.4 lakh it is about 4.2.</li>\n<li>CAC payback = ₹1.5 lakh ÷ ₹20,000 = 7.5 months.</li>\n</ul>\n<p>Bessemer's 2021 \"Scaling to $100 Million\" report sets CAC payback targets by customer type: under 12 months for companies selling to small businesses, under 18 for mid-market and under 24 for enterprise, <a href=\"https://www.bvp.com/atlas/scaling-to-100-million\">according to Bessemer</a>. LedgerCo sells to small businesses, so 7.5 months clears that bar.</p>\n\n<!-- xf-image-4 -->\n\n<p>A caution: the LTV formula is very sensitive to churn. If LedgerCo's churn is really 4% a month rather than 2%, LTV halves to ₹5 lakh. Early-stage companies rarely have enough history to know churn precisely, which is why many investors put more weight on CAC payback and cohort retention.</p>\n\n<h2>NRR: do existing customers grow?</h2>\n<p>Net revenue retention (NRR), also called net dollar retention, takes the recurring revenue from a group of customers a year ago and compares it with what those same customers pay today, counting upgrades and subtracting downgrades and cancellations. New customers are excluded. Above 100% means the existing base grows on its own, which Skok calls negative churn: expansion outweighs losses. a16z describes the related net revenue churn as MRR lost minus upsell MRR, divided by starting MRR.</p>\n\n<p>Bessemer's State of the Cloud 2023 benchmarks rate NRR of 100% as good, 110% as better and 120% or more as best, and logo retention (the share of customers kept) above 85% as good, above 90% better and 95% or more best, <a href=\"https://www.bvp.com/atlas/state-of-the-cloud-2023\">according to Bessemer</a>. Its 2021 scaling report put gross revenue retention for most stages at 85% to 90%, lower for companies selling to small businesses.</p>\n\n<p><strong>LedgerCo example, the cohort of customers it had 12 months ago:</strong></p>\n<ul>\n<li>Their ARR a year ago: ₹3.6 crore.</li>\n<li>Expansion since then: +₹0.6 crore. Downgrades: −₹0.15 crore. Cancellations: −₹0.35 crore.</li>\n<li>The same customers' ARR today: 3.6 + 0.6 − 0.15 − 0.35 = ₹3.7 crore.</li>\n<li>NRR = 3.7 ÷ 3.6 ≈ 103%. Gross revenue retention (ignoring expansion) = (3.6 − 0.15 − 0.35) ÷ 3.6 ≈ 86%.</li>\n</ul>\n<p>So LedgerCo's base is growing slightly without new sales, which is good by Bessemer's 2023 scale, but there is room to improve on expansion.</p>\n\n<h2>Putting it on one page</h2>\n<table>\n<thead><tr><th>Metric</th><th>Formula</th><th>LedgerCo (illustrative)</th><th>Sourced benchmark</th></tr></thead>\n<tbody>\n<tr><td>ARR</td><td>Recurring MRR × 12</td><td>₹6.5 crore (₹54 lakh × 12)</td><td>Recurring only (a16z)</td></tr>\n<tr><td>Growth</td><td>CMGR</td><td>≈5% a month</td><td>5–7% a week during YC (Graham)</td></tr>\n<tr><td>Runway</td><td>Cash ÷ net burn</td><td>≈16.7 months</td><td>Raise for 18–24 months (CRV)</td></tr>\n<tr><td>Burn multiple</td><td>Net burn ÷ net new ARR</td><td>1.5</td><td>Under 1.5 great (Sacks)</td></tr>\n<tr><td>LTV : CAC</td><td>LTV ÷ CAC</td><td>≈6.7 blended</td><td>Above 3 (Skok)</td></tr>\n<tr><td>CAC payback</td><td>CAC ÷ monthly gross profit per customer</td><td>7.5 months</td><td>Under 12 months for SMB (Bessemer)</td></tr>\n<tr><td>NRR</td><td>Cohort ARR now ÷ a year ago</td><td>≈103%</td><td>100% good, 120%+ best (Bessemer)</td></tr>\n</tbody>\n</table>\n<p>(The ARR row uses the latest ₹54 lakh MRR; the ₹6 crore figure earlier was the starting point.)</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>No single metric tells you whether a startup is healthy. Revenue growth without efficiency shows up in a high burn multiple; cheap acquisition with weak retention shows up in a low NRR; strong unit economics mean little if runway ends before the next round. Define every metric precisely, show the formula alongside the figure, use the same definitions every month, and benchmark against published scales rather than against what sounds impressive. If you are tracking the companies that do this well, our <a href=\"/funding-tracker/\">funding tracker</a> lists recent rounds, and the <a href=\"/news/\">news section</a> covers the companies behind them.</p>\n\n<h2>FAQ</h2>\n<h3>What is the difference between ARR and revenue?</h3>\n<p>ARR counts only recurring subscription revenue on an annualised basis. Revenue, under accounting rules, also includes one-time fees and services and is recognised as it is earned.</p>\n<h3>How do you calculate runway?</h3>\n<p>Divide cash in the bank by monthly net burn (expenses minus cash revenue), ideally using a three-month average.</p>\n<h3>What is a good LTV to CAC ratio?</h3>\n<p>David Skok's rule of thumb is above 3, with the best SaaS companies at 7 to 8.</p>\n<h3>What is a good net revenue retention?</h3>\n<p>Bessemer's 2023 benchmarks call 100% good, 110% better and 120% or more best.</p>\n<h3>What is a burn multiple?</h3>\n<p>Net burn divided by net new ARR over the same period. David Sacks rates under 1 as amazing and above 3 as bad.</p>\n<h3>Should I report gross or net burn?</h3>\n<p>Both, CRV advises: gross burn shows your cost base and net burn shows how fast cash is falling.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>a16z, \"<a href=\"https://a16z.com/16-startup-metrics/\">16 Startup Metrics</a>\", 21 August 2015</li>\n<li>Paul Graham, \"<a href=\"https://paulgraham.com/growth.html\">Startup = Growth</a>\", September 2012</li>\n<li>Paul Graham, \"<a href=\"https://paulgraham.com/aord.html\">Default Alive or Default Dead?</a>\", October 2015</li>\n<li>David Skok, For Entrepreneurs, \"<a href=\"https://www.forentrepreneurs.com/saas-metrics-2/\">SaaS Metrics 2.0: A Guide to Measuring and Improving What Matters</a>\", accessed 6 October 2026</li>\n<li>David Sacks, \"<a href=\"https://sacks.substack.com/p/the-burn-multiple-51a7e43cb200\">The Burn Multiple</a>\", 23 April 2020</li>\n<li>Bessemer Venture Partners, \"<a href=\"https://www.bvp.com/atlas/state-of-the-cloud-2023\">State of the Cloud 2023</a>\", 11 April 2023</li>\n<li>Bessemer Venture Partners, \"<a href=\"https://www.bvp.com/atlas/scaling-to-100-million\">Scaling to $100 Million</a>\", 21 September 2021</li>\n<li>CRV, \"<a href=\"https://www.crv.com/content/startup-runway\">Startup runway</a>\", 18 August 2026</li>\n<li>Sequoia Capital, \"<a href=\"https://www.sequoiacap.com/article/adapting-to-endure/\">Adapting to Endure</a>\", 16 May 2022</li>\n</ol>"
+}

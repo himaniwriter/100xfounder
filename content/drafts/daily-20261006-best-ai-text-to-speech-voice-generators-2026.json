@@ -1,0 +1,176 @@
+{
+  "type": "post",
+  "slug": "best-ai-text-to-speech-voice-generators-2026",
+  "title": "Best AI text-to-speech tools in 2026: ElevenLabs, Google, Azure",
+  "excerpt": "We compare ElevenLabs, Google, Azure, Amazon Polly, OpenAI and Sarvam on price, Indian-language voices and commercial-use terms, as of 6 October 2026.",
+  "category": "ai-news",
+  "tags": [
+    "text-to-speech",
+    "AI voice generator",
+    "ElevenLabs",
+    "Google Gemini TTS",
+    "Azure AI Speech",
+    "Amazon Polly",
+    "Sarvam AI",
+    "Indian languages"
+  ],
+  "content": "<p>The best AI text-to-speech tools in October 2026 are ElevenLabs for expressive, studio-style voices, Google's Gemini 3.8 Flash TTS and Chirp 3 HD for cheap API scale, and Microsoft's new MAI-Voice-2.1 for multilingual voice agents. Indian founders also have two home-grown options: Sarvam AI's Bulbul v3, billed in rupees across 11 Indian languages, and AI4Bharat's Indic Parler-TTS, a free open model. Three big launches landed in a fortnight: Gemini 3.8 Flash TTS on 23 September, Eleven v4 on 28 September and MAI-Voice-2.1 on 1 October. All prices below were checked on the vendors' own pages as of 6 October 2026.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>Cheapest at volume:</strong> Google and Amazon still sell basic voices at $4 per million characters. Microsoft's neural voices cost $15, and premium \"HD\" tiers run $22 to $30.</li>\n<li><strong>Best Indian-language coverage:</strong> Eleven v4 covers 14 Indian languages. Google's Chirp 3 HD covers nine plus Indian English, and Sarvam's Bulbul covers 11.</li>\n<li><strong>Voice cloning is gated.</strong> Google's new voice-replication feature isn't offered in India, and Microsoft makes you apply for access.</li>\n<li><strong>Licensing:</strong> ElevenLabs' free plan is for non-commercial use only. OpenAI requires you to tell listeners the voice is AI-generated.</li>\n</ul>\n\n<h2>What changed in the last two weeks</h2>\n<p>Google announced Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS on 23 September, according to <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/\">the Google blog</a>. Flash TTS is for creative work such as audiobooks, games and podcasts. Flash-Lite TTS is the cheaper one for high-volume dubbing and voice agents. Google says the pair cover more than 100 languages and dialects, with more than 2,000 ready-made voices. Every clip carries an invisible SynthID watermark plus C2PA content credentials.</p>\n<p>ElevenLabs followed on 28 September with Eleven v4 and v4 Turbo. <a href=\"https://techcrunch.com/2026/09/28/elevenlabs-new-v4-speech-model-supports-more-expression-control-and-90-languages/\">TechCrunch</a> reported that language support rose from 70 to 90, that a voice can now be cloned from 10 seconds of audio, and that the company reported an annualised revenue run rate of over $600 million. ElevenLabs' <a href=\"https://elevenlabs.io/docs/overview/models\">model documentation</a> quotes a median inference latency of about 100 milliseconds for v4 Turbo.</p>\n<p>Then on 1 October, Microsoft AI released MAI-Voice-2.1 and MAI-Voice-2.1-Flash alongside a streaming transcription model. <a href=\"https://microsoft.ai/news/our-first-streaming-transcription-model/\">Microsoft AI</a> says both voice models cover 23 languages and 26 locales, and one voice can switch languages while keeping a native accent. It priced MAI-Voice-2.1 at $22 per million characters and the Flash version at $15.</p>\n\n<h2>Price comparison as of 6 October 2026</h2>\n<p>Most API vendors bill per million characters of input text. A million characters is roughly a long novel. Gemini and OpenAI's newer models bill per token instead, so we list those separately. Prices are pay-as-you-go list rates in US dollars.</p>\n<table>\n<thead><tr><th>Service and voice tier</th><th>Price per 1M characters</th><th>Monthly free allowance</th></tr></thead>\n<tbody>\n<tr><td>Google Standard or WaveNet</td><td>$4</td><td>4M characters</td></tr>\n<tr><td>Google Neural2</td><td>$16</td><td>1M characters</td></tr>\n<tr><td>Google Chirp 3 HD</td><td>$30</td><td>1M characters</td></tr>\n<tr><td>Google Studio</td><td>$160</td><td>1M characters</td></tr>\n<tr><td>Amazon Polly Standard / Neural</td><td>$4 / $16</td><td>5M standard; 1M neural for 12 months</td></tr>\n<tr><td>Amazon Polly Generative / Long-Form</td><td>$30 / $100</td><td>100,000 / 500,000 for 12 months</td></tr>\n<tr><td>Azure neural (East US) / HD</td><td>$15 / $22</td><td>0.5M characters</td></tr>\n<tr><td>MAI-Voice-2.1 / Flash</td><td>$22 / $15</td><td>Not stated</td></tr>\n<tr><td>OpenAI tts-1 / tts-1-hd</td><td>$15 / $30</td><td>None</td></tr>\n<tr><td>Sarvam Bulbul v3</td><td>₹3,000 (₹3 per 1,000)</td><td>Sign-up credits</td></tr>\n</tbody>\n</table>\n<p>Sources: <a href=\"https://cloud.google.com/text-to-speech/pricing\">Google Cloud</a>, <a href=\"https://aws.amazon.com/polly/pricing/\">AWS</a>, <a href=\"https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/\">Azure</a> (free tier) and Microsoft's <a href=\"https://prices.azure.com/api/retail/prices?$filter=armRegionName%20eq%20'eastus'%20and%20contains(meterName,'Neural')\">Azure Retail Prices API</a> (per-character rates), <a href=\"https://microsoft.ai/news/our-first-streaming-transcription-model/\">Microsoft AI</a>, <a href=\"https://developers.openai.com/api/docs/pricing\">OpenAI</a> and <a href=\"https://www.sarvam.ai/api-pricing\">Sarvam AI</a>.</p>\n<p>Token-billed models work differently. On Google Cloud, Gemini 3.8 Flash TTS costs $0.50 per million text tokens in and $9 per million audio tokens out until 31 December 2026, and both rates double on 1 January 2027. Flash-Lite TTS charges $6 per million audio tokens. Google counts 25 audio tokens per second, so by our arithmetic an hour of Flash TTS audio uses 90,000 output tokens, or about $0.81 at this year's rate. OpenAI's gpt-4o-mini-tts charges $0.60 per million text tokens in and $12 per million audio tokens out.</p>\n\n<h2>The five big text-to-speech services, compared</h2>\n<h3>ElevenLabs: the most expressive voices, sold by subscription</h3>\n<p>ElevenLabs is the tool most creators and voice-agent startups try first. Its <a href=\"https://elevenlabs.io/pricing\">pricing page</a> lists a free plan with 10,000 credits a month, Starter at $6 a month for 30,000 credits, Creator at $22 for 121,000 credits, Pro at $99 for 600,000 credits, Scale at $299 for 1.8 million and Business at $990 for 6 million. Enterprise is custom-priced. Starter adds instant voice cloning, and Creator and above add professional voice cloning.</p>\n<p>For Indian users the bigger story is language coverage. Its <a href=\"https://elevenlabs.io/docs/overview/models\">documentation</a> lists Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Nepali, Odia, Punjabi, Sindhi, Tamil, Telugu and Urdu for the Eleven v4 family. That is one of the longest Indian-language lists among the services we checked. Eleven v4 accepts up to 10,000 characters per request. The older Flash v2.5 model is faster (about 75 milliseconds) but supports only 32 languages.</p>\n<p>The licensing line matters. ElevenLabs' <a href=\"https://elevenlabs.io/terms-of-use\">terms of use</a> limit free users to non-commercial purposes, while paid users can use the service commercially and keep their rights in the output. If you clone a voice, you must be authorised to share it. ElevenLabs is also hiring; see the open roles on our <a href=\"/jobs/company/elevenlabs/\">ElevenLabs jobs page</a>.</p>\n\n<!-- xf-image-2 -->\n\n<h3>Google: Gemini TTS for control, Chirp 3 HD for Indian languages</h3>\n<p>Google now sells two families. Gemini TTS models take natural-language direction (\"say this warmly, a little faster\") and bill per token. Chirp 3 HD voices bill per character and are the safer pick for predictable cost. According to <a href=\"https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd\">Google Cloud documentation</a>, Chirp 3 HD supports Hindi, Tamil, Telugu, Bengali, Marathi, Kannada, Malayalam, Gujarati and Indian English at general availability, with Punjabi in preview.</p>\n<p>One limit for Indian teams: the new voice-replication feature in Gemini 3.8 Flash TTS needs a 30-second sample and a recorded verbal consent from the voice owner. Google says it isn't available in India, the European Economic Area, the UK, Switzerland, Illinois or Texas, according to <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/\">its announcement</a>. Google Cloud separately sells an \"instant custom voice\" at $60 per million characters, according to <a href=\"https://cloud.google.com/text-to-speech/pricing\">its pricing page</a>.</p>\n\n<h3>Microsoft Azure AI Speech and MAI-Voice-2.1</h3>\n<p>Azure has one of the deepest Indian voice catalogues. Its <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts\">language support page</a> lists neural voices for Hindi, Indian English, Bengali, Marathi, Gujarati, Kannada, Malayalam, Punjabi, Odia and Assamese, among other Indian locales. Standard neural voices cost $15 per million characters in East US and the HD tier $22, according to Microsoft's retail price feed. The free tier includes half a million characters a month.</p>\n<p>The new MAI-Voice-2.1 models are in public preview with no service-level agreement, according to <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices\">Microsoft Learn</a>. Microsoft's prebuilt voice table includes six Hindi voices and two Indian English voices, and Central India is one of the serving regions, which helps latency for Indian callers. Instant voice cloning works from a 5 to 60 second clip but requires a limited-access application and an uploaded consent recording. Microsoft says it holds full licensing rights for commercial use of the models, which are available to third-party developers.</p>\n\n<!-- xf-image-3 -->\n\n<h3>Amazon Polly: cheap and reliable, thin on Indian languages</h3>\n<p>Polly is the budget workhorse for IVR menus, notifications and e-learning. Prices are $4 per million characters for standard voices, $16 for neural, $30 for generative and $100 for long-form, according to <a href=\"https://aws.amazon.com/polly/pricing/\">AWS</a>. New accounts get a free tier that includes 5 million standard characters a month.</p>\n<p>The catch is coverage. Polly's <a href=\"https://docs.aws.amazon.com/polly/latest/dg/available-voices.html\">voice list</a> has only two Indian locales: Hindi and Indian English. Kajal is the only Hindi voice with a neural option, and in Indian English Kajal also has a generative version. If you need Tamil or Bengali speech, Polly is out.</p>\n\n<h3>OpenAI: simple API, English-first voices</h3>\n<p>OpenAI's speech endpoint offers three models: gpt-4o-mini-tts, tts-1 and tts-1-hd. Its <a href=\"https://developers.openai.com/api/docs/guides/text-to-speech\">text-to-speech guide</a> lists 13 built-in voices and says language support generally follows its Whisper speech model, which includes Hindi, though the voices are tuned for English. You can create a custom voice only from a speaker's consent recording.</p>\n<p>OpenAI's usage rules add a product requirement: you must clearly tell end users that the voice they hear is AI-generated, not human. Build that disclosure into your app's UI or call script from day one.</p>\n\n<h2>Indian-language specialists: Sarvam Bulbul and Indic Parler-TTS</h2>\n<p>Bengaluru-based Sarvam AI sells Bulbul v3 at ₹3 per 1,000 characters for both real-time and streaming use, according to <a href=\"https://www.sarvam.ai/api-pricing\">its pricing page</a>. New users get free sign-up credits, and credits don't expire. Its <a href=\"https://docs.sarvam.ai/api-reference-docs/text-to-speech/convert\">API documentation</a> lists 11 language codes: Bengali, English (India), Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil and Telugu. Bulbul v3 offers more than 30 speakers and up to 2,500 characters per request. Billing in rupees also keeps accounting simple for Indian startups. Sarvam is hiring as well; see <a href=\"/jobs/company/sarvam-ai/\">Sarvam AI jobs</a>.</p>\n<p>If you'd rather run the model yourself, AI4Bharat at IIT Madras and Hugging Face released Indic Parler-TTS under the Apache 2.0 licence, which permits commercial use. Its <a href=\"https://huggingface.co/ai4bharat/indic-parler-tts\">model card</a> lists 20 officially supported languages, including Assamese, Bodo, Dogri, Konkani, Maithili, Manipuri, Sanskrit and Santali, which few commercial APIs cover. It ships with 69 voices. Expect to supply your own GPU hosting and quality testing.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Commercial use and licensing: what to check before you ship</h2>\n<ul>\n<li><strong>Plan tier.</strong> On ElevenLabs, commercial rights start on the paid Starter plan. Cloud APIs (Google, Azure, AWS, OpenAI) have no separate \"commercial\" tier; your usage falls under the provider's service terms.</li>\n<li><strong>Disclosure.</strong> OpenAI requires you to tell listeners the voice is AI-generated. That is good practice everywhere, and Google watermarks its Gemini TTS audio regardless.</li>\n<li><strong>Cloning consent.</strong> Every vendor that clones voices asks for proof of consent: a verbal consent recording on Google and Microsoft, and authorisation on ElevenLabs. Never clone a founder, celebrity or customer without written permission.</li>\n<li><strong>Preview status.</strong> MAI-Voice-2.1 and Punjabi Chirp 3 HD voices are in preview. Avoid them for production systems that need an SLA.</li>\n<li><strong>Price changes.</strong> Gemini 3.8 TTS rates double on 1 January 2027, so budget for the higher rate now.</li>\n</ul>\n<p>This is a product overview, not legal advice. For voice-cloning consent and advertising use, confirm your obligations with a qualified lawyer.</p>\n\n<h2>Which text-to-speech tool should you pick?</h2>\n<ul>\n<li><strong>YouTube voice-overs, audiobooks and ads:</strong> ElevenLabs (paid plan) for expressiveness and Indian-language breadth.</li>\n<li><strong>Voice agents and call centres in India:</strong> Azure or MAI-Voice-2.1-Flash for Hindi voices served from Central India, or Sarvam Bulbul for regional languages billed in rupees.</li>\n<li><strong>High-volume notifications at the lowest cost:</strong> Google Standard or Amazon Polly Standard at $4 per million characters.</li>\n<li><strong>Multilingual product narration with style control:</strong> Gemini 3.8 Flash TTS, while 2026 introductory pricing lasts.</li>\n<li><strong>Full control or rarer Indian languages:</strong> self-host Indic Parler-TTS.</li>\n</ul>\n<p><strong>Bottom line:</strong> No single vendor wins everywhere. Test your own script in your target language on two or three services, since a Tamil support line and an English podcast sound good on different engines. If you're building a speech product, our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs board</a> lists teams hiring for exactly this work.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Frequently asked questions</h2>\n<h3>Which AI text-to-speech is best for Hindi?</h3>\n<p>ElevenLabs v4, Google Chirp 3 HD, Azure (including six Hindi MAI-Voice-2.1 voices) and Sarvam Bulbul v3 all support Hindi. Amazon Polly has one neural Hindi voice. Try your own script on each, as quality varies by voice.</p>\n<h3>Can I use ElevenLabs' free plan for YouTube monetisation?</h3>\n<p>No. ElevenLabs' terms limit free users to non-commercial purposes. Commercial use starts on the $6-a-month Starter plan.</p>\n<h3>What is the cheapest text-to-speech API?</h3>\n<p>Google's Standard and WaveNet voices and Amazon Polly's standard voices cost $4 per million characters as of 6 October 2026. Both also include monthly free allowances.</p>\n<h3>Is there a free, open-source text-to-speech model for Indian languages?</h3>\n<p>Yes. AI4Bharat's Indic Parler-TTS is released under Apache 2.0, covers 20 languages and permits commercial use, but you have to host it yourself.</p>\n<h3>Can I clone my own voice in India?</h3>\n<p>On ElevenLabs paid plans, yes. Google says Gemini 3.8's voice replication isn't available in India, and Microsoft's cloning requires a limited-access application.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Google, <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/\">\"Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS\"</a>, 23 September 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/09/28/elevenlabs-new-v4-speech-model-supports-more-expression-control-and-90-languages/\">\"ElevenLabs' new v4 speech model supports more expression control and 90 languages\"</a>, 28 September 2026</li>\n<li>Microsoft AI, <a href=\"https://microsoft.ai/news/our-first-streaming-transcription-model/\">\"Our first streaming transcription model debuts at no. 1 on Artificial Analysis\"</a>, 1 October 2026</li>\n<li>Microsoft Learn, <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices\">\"MAI-Voice-2.1 and MAI-Voice-2.1-Flash\"</a>, updated 1 October 2026</li>\n<li>Microsoft Learn, <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts\">\"Language and voice support for the Speech service\"</a>, accessed 6 October 2026</li>\n<li>Microsoft Azure, <a href=\"https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/\">\"Azure Speech pricing\"</a>, accessed 6 October 2026</li>\n<li>Microsoft, <a href=\"https://prices.azure.com/api/retail/prices?$filter=armRegionName%20eq%20'eastus'%20and%20contains(meterName,'Neural')\">\"Azure Retail Prices API: Azure Speech neural meters, East US\"</a>, accessed 6 October 2026</li>\n<li>ElevenLabs, <a href=\"https://elevenlabs.io/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n<li>ElevenLabs, <a href=\"https://elevenlabs.io/docs/overview/models\">\"Models\"</a>, accessed 6 October 2026</li>\n<li>ElevenLabs, <a href=\"https://elevenlabs.io/terms-of-use\">\"Terms of Use\"</a>, accessed 6 October 2026</li>\n<li>Google Cloud, <a href=\"https://cloud.google.com/text-to-speech/pricing\">\"Text-to-Speech pricing\"</a>, accessed 6 October 2026</li>\n<li>Google Cloud, <a href=\"https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd\">\"Chirp 3: HD voices\"</a>, accessed 6 October 2026</li>\n<li>Amazon Web Services, <a href=\"https://aws.amazon.com/polly/pricing/\">\"Amazon Polly pricing\"</a>, accessed 6 October 2026</li>\n<li>Amazon Web Services, <a href=\"https://docs.aws.amazon.com/polly/latest/dg/available-voices.html\">\"Available voices\"</a>, accessed 6 October 2026</li>\n<li>OpenAI, <a href=\"https://developers.openai.com/api/docs/pricing\">\"API pricing\"</a>, accessed 6 October 2026</li>\n<li>OpenAI, <a href=\"https://developers.openai.com/api/docs/guides/text-to-speech\">\"Text to speech\"</a>, accessed 6 October 2026</li>\n<li>Sarvam AI, <a href=\"https://www.sarvam.ai/api-pricing\">\"API pricing\"</a>, accessed 6 October 2026</li>\n<li>Sarvam AI, <a href=\"https://docs.sarvam.ai/api-reference-docs/text-to-speech/convert\">\"Text to speech API reference\"</a>, accessed 6 October 2026</li>\n<li>Hugging Face / AI4Bharat, <a href=\"https://huggingface.co/ai4bharat/indic-parler-tts\">\"Indic Parler-TTS model card\"</a>, accessed 6 October 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Condenser_Microphone_with_Pop_Filter_and_Reflection_Filter.jpg/1920px-Condenser_Microphone_with_Pop_Filter_and_Reflection_Filter.jpg",
+      "alt": "Studio condenser microphone on a stand with a pop filter in front and a curved reflection filter behind it",
+      "caption": "AI voice generators now produce narration that once needed a microphone and a booth like this.",
+      "credit": "Photo: Tim Sheerman-Chase / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Condenser_Microphone_with_Pop_Filter_and_Reflection_Filter.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/A_home_recording_setup_for_the_Kathabhidhana_project_for_Wiktionary.jpg/1920px-A_home_recording_setup_for_the_Kathabhidhana_project_for_Wiktionary.jpg",
+      "alt": "Home recording setup with a shotgun microphone, a foam pad and a handheld audio recorder, used to record spoken words for Wiktionary",
+      "caption": "Volunteer recordings like this Kathabhidhana project setup help build speech data for Indian languages.",
+      "credit": "Photo: Subhashish Panigrahi / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:A_home_recording_setup_for_the_Kathabhidhana_project_for_Wiktionary.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Dantewada_Yuva_BPO.jpg/1920px-Dantewada_Yuva_BPO.jpg",
+      "alt": "Staff working at computers in a lab at the Yuva BPO centre in Dantewada, Chhattisgarh",
+      "caption": "Customer-support desks are a natural fit for Hindi and regional-language voice agents.",
+      "credit": "Photo: Samuel.Wsx / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dantewada_Yuva_BPO.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Alexa_Amazon_Echo_Dot_3rd_Gen_Smart_Speaker_-_Sandstone_Fabric_%28Creative_Commons%29_%2851048461088%29.jpg/1920px-Alexa_Amazon_Echo_Dot_3rd_Gen_Smart_Speaker_-_Sandstone_Fabric_%28Creative_Commons%29_%2851048461088%29.jpg",
+      "alt": "Round fabric-covered smart speaker on a table",
+      "caption": "Smart speakers made synthetic voices familiar. The newest models add emotion and accent control.",
+      "credit": "Photo: Smart Home Perfected / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alexa_Amazon_Echo_Dot_3rd_Gen_Smart_Speaker_-_Sandstone_Fabric_(Creative_Commons)_(51048461088).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Rangers_recording_for_Glacier%27s_podcast%2C_%22Headwaters%22_%2852944378233%29.jpg/1920px-Rangers_recording_for_Glacier%27s_podcast%2C_%22Headwaters%22_%2852944378233%29.jpg",
+      "alt": "Podcast host holding a microphone and recording equipment in a forest",
+      "caption": "Podcast and audiobook narration is one of the main uses for text-to-speech tools.",
+      "credit": "Photo: GlacierNPS / Wikimedia Commons, Public domain",
+      "license": "Public domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rangers_recording_for_Glacier%27s_podcast,_%22Headwaters%22_(52944378233).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "publisher": "Google",
+      "date": "2026-09-23",
+      "claim": "Gemini 3.8 Flash TTS / Flash-Lite launch, 100+ languages, 2,000+ voices, SynthID, voice replication 30s sample and consent, not available in India/EEA/UK/Switzerland/Illinois/Texas"
+    },
+    {
+      "url": "https://techcrunch.com/2026/09/28/elevenlabs-new-v4-speech-model-supports-more-expression-control-and-90-languages/",
+      "publisher": "TechCrunch",
+      "date": "2026-09-28",
+      "claim": "Eleven v4 launch, languages 70 to 90, 10-second cloning, $600M+ run rate"
+    },
+    {
+      "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+      "publisher": "Microsoft AI",
+      "date": "2026-10-01",
+      "claim": "MAI-Voice-2.1 and Flash launch, 23 languages/26 locales, $22 and $15 per 1M characters"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices",
+      "publisher": "Microsoft Learn",
+      "date": "2026-10-01",
+      "claim": "MAI-Voice public preview, Hindi/Indian English voices, Central India region, gated 5-60s cloning, commercial licensing rights"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts",
+      "publisher": "Microsoft Learn",
+      "date": "2026-10-06",
+      "claim": "Azure neural voices for Indian locales"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/",
+      "publisher": "Microsoft Azure",
+      "date": "2026-10-06",
+      "claim": "Azure Speech free tier 0.5M characters per month"
+    },
+    {
+      "url": "https://prices.azure.com/api/retail/prices?$filter=armRegionName%20eq%20'eastus'%20and%20contains(meterName,'Neural')",
+      "publisher": "Microsoft (Azure Retail Prices API)",
+      "date": "2026-10-06",
+      "claim": "Azure neural TTS $15 and Neural HD $22 per 1M characters, East US"
+    },
+    {
+      "url": "https://elevenlabs.io/pricing",
+      "publisher": "ElevenLabs",
+      "date": "2026-10-06",
+      "claim": "ElevenLabs plan prices, credits, cloning tiers, commercial use on paid plans"
+    },
+    {
+      "url": "https://elevenlabs.io/docs/overview/models",
+      "publisher": "ElevenLabs",
+      "date": "2026-10-06",
+      "claim": "Eleven v4 languages incl. 14 Indian languages, 10,000-char limit, v4 Turbo ~100ms, Flash v2.5 32 languages ~75ms"
+    },
+    {
+      "url": "https://elevenlabs.io/terms-of-use",
+      "publisher": "ElevenLabs",
+      "date": "2026-10-06",
+      "claim": "Free plan non-commercial; paid users keep rights in output; voice authorisation"
+    },
+    {
+      "url": "https://cloud.google.com/text-to-speech/pricing",
+      "publisher": "Google Cloud",
+      "date": "2026-10-06",
+      "claim": "Google TTS per-character prices, free tiers, Gemini TTS token prices, 25 tokens per second, instant custom voice $60"
+    },
+    {
+      "url": "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+      "publisher": "Google Cloud",
+      "date": "2026-10-06",
+      "claim": "Chirp 3 HD Indian locales, Punjabi preview"
+    },
+    {
+      "url": "https://aws.amazon.com/polly/pricing/",
+      "publisher": "Amazon Web Services",
+      "date": "2026-10-06",
+      "claim": "Polly prices and free tier"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/available-voices.html",
+      "publisher": "Amazon Web Services",
+      "date": "2026-10-06",
+      "claim": "Polly Hindi and Indian English voices"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-06",
+      "claim": "tts-1 $15, tts-1-hd $30 per 1M characters; gpt-4o-mini-tts token prices"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/text-to-speech",
+      "publisher": "OpenAI",
+      "date": "2026-10-06",
+      "claim": "13 voices, Whisper-like language support incl. Hindi, AI disclosure requirement, consent-based custom voices"
+    },
+    {
+      "url": "https://www.sarvam.ai/api-pricing",
+      "publisher": "Sarvam AI",
+      "date": "2026-10-06",
+      "claim": "Bulbul v3 Rs 3 per 1,000 characters, free credits, credits do not expire"
+    },
+    {
+      "url": "https://docs.sarvam.ai/api-reference-docs/text-to-speech/convert",
+      "publisher": "Sarvam AI",
+      "date": "2026-10-06",
+      "claim": "Bulbul 11 language codes, v3 30+ speakers, 2,500 characters"
+    },
+    {
+      "url": "https://huggingface.co/ai4bharat/indic-parler-tts",
+      "publisher": "Hugging Face / AI4Bharat",
+      "date": "2026-10-06",
+      "claim": "Indic Parler-TTS Apache 2.0, 20 languages, 69 voices"
+    }
+  ]
+}
