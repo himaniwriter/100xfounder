@@ -1,0 +1,185 @@
+{
+  "type": "post",
+  "slug": "ranktune-review",
+  "title": "Ranktune review 2026: AI visibility tracking, pricing and alternatives",
+  "excerpt": "Ranktune tracks how ChatGPT, Gemini and Perplexity mention your brand and the traffic they send. Plans from $30 a month; we compare Otterly, Peec and Profound.",
+  "category": "saas",
+  "tags": [
+    "Ranktune review",
+    "Ranktune pricing",
+    "Ranktune alternatives",
+    "Product Hunt",
+    "AI visibility",
+    "generative engine optimization",
+    "AI search"
+  ],
+  "content": "<p>Ranktune is a paid web app that tracks how often ChatGPT, Gemini, Claude, Perplexity and other AI assistants mention your brand, and how many visitors those assistants actually send to your site. It is built for small SaaS teams, agencies and online stores that want AI-search tracking without an enterprise contract. Our verdict: a cheap, wide-ranging first tool for AI visibility, but a very young product with little track record, so start on monthly billing. It launched on <a href=\"/launches/\">Product Hunt</a> on 6 October 2026, and all prices below were checked on the vendor's site that day.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>Price:</strong> paid plans run from $30 a month (Starter) to $270 a month (Growth), with 20% off on yearly billing. Enterprise is custom.</li>\n<li><strong>What sets it apart:</strong> it pairs AI-answer tracking with referral-traffic attribution, a content editor and an AI agent in one product, where many rivals sell only visibility scores.</li>\n<li><strong>The catch:</strong> Starter tracks only 20 prompts on three AI engines, and the API and MCP server start on the $120 Business plan.</li>\n<li><strong>Trial:</strong> there is no free plan, only a trial with 10 AI credits in total.</li>\n<li><strong>Maturity:</strong> this is its first Product Hunt launch, with no public changelog and no press coverage we could find.</li>\n</ul>\n\n<h2>What Ranktune does</h2>\n<p>Ranktune sends buyer-style questions, such as \"best helpdesk software for small businesses\", to several AI models and records whether your brand and your competitors appear in the answers. Its documentation describes three headline metrics: <strong>visibility</strong> (how often models mention or recommend you), <strong>share of voice</strong> (your share of all brand mentions against the competitors you track) and <strong>understanding</strong> (how accurately models describe who you are and what you do), according to <a href=\"https://tryranktune.com/docs/ai-visibility/what-is-ai-visibility\">Ranktune's docs</a>. Reports also break scores down by AI platform, show prompts where rivals appear and you don't, and keep a history across refreshes.</p>\n<p>The second half of the product is traffic. You add a small tracking script to your site or connect Google Analytics, and Ranktune sorts visits into \"confirmed\", \"likely\" and \"possible\" AI referrals by source, according to its <a href=\"https://tryranktune.com/features/ai-traffic\">AI traffic page</a>. In his Product Hunt launch post, founder Sewell Stephens said he built it to answer two questions together: whether a brand shows up in AI answers, and whether that visibility sends people to the website.</p>\n<p>Ranktune is run by Anchorpenewersoft LLC, which trades as Ranktune, according to its <a href=\"https://tryranktune.com/privacy\">privacy policy</a>. The homepage says more than 200 businesses use it. That is the vendor's own claim, and we could not check it independently.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Key features</h2>\n<ul>\n<li><strong>Visibility tracking.</strong> Daily automatic report refreshes, plus 1 to 5 manual refreshes a day depending on plan (unlimited on Enterprise). Engines covered rise with plan, from ChatGPT, Gemini and Perplexity on Starter up to Claude, Google AI Overviews and DeepSeek on higher tiers.</li>\n<li><strong>Action Center.</strong> A ranked list of recommendations tied to your prompts and competitors, such as publishing a comparison page or adding Organization schema, according to the <a href=\"https://tryranktune.com/docs/getting-started\">getting-started guide</a>.</li>\n<li><strong>AI traffic attribution.</strong> Script-based or Google Analytics-based tracking, with referrals broken down by assistant and by landing page.</li>\n<li><strong>Monitoring.</strong> Surfaces discussion threads where your category comes up. The homepage shows Reddit, Quora and Hacker News, while the pricing table lists Reddit monitoring.</li>\n<li><strong>Content Studio and Agent.</strong> Draft, score and schedule blog and social posts, and ask an agent that can read your reports, traffic data and brand voice. Publishing goes to WordPress, Webflow, LinkedIn or a webhook, according to the <a href=\"https://tryranktune.com/features/integrations\">integrations page</a>.</li>\n<li><strong>API and MCP server.</strong> A REST API at api.tryranktune.com and an MCP server that works with Cursor, Claude Desktop and ChatGPT, using an API key or OAuth 2.1. Both need the Business plan or higher, according to the <a href=\"https://tryranktune.com/docs/mcp\">MCP docs</a>. The API allows 1,500 requests per 15 minutes per IP address, and returns a 403 error when you run out of credits, according to the <a href=\"https://tryranktune.com/docs/api-reference/errors-and-limits\">rate-limit docs</a>.</li>\n</ul>\n\n<h2>Pricing</h2>\n<p>All plans below are from <a href=\"https://tryranktune.com/pricing\">Ranktune's pricing page</a>, checked on 6 October 2026. Prices are in US dollars. AI credits pay for drafting, rewriting and agent requests. Visibility tracking is limited separately, by the number of prompts.</p>\n<table>\n<thead><tr><th>Plan</th><th>Monthly billing</th><th>Yearly billing (per month)</th><th>Prompts tracked</th><th>AI engines</th><th>AI credits / month</th><th>Seats / workspaces</th></tr></thead>\n<tbody>\n<tr><td>Starter</td><td>$30</td><td>$24</td><td>20</td><td>ChatGPT, Gemini, Perplexity</td><td>300</td><td>2 / 1</td></tr>\n<tr><td>Business</td><td>$120</td><td>$96</td><td>50</td><td>+ Claude, Google AI Overviews</td><td>500</td><td>4 / 2</td></tr>\n<tr><td>Growth</td><td>$270</td><td>$216</td><td>100</td><td>+ DeepSeek</td><td>1,000</td><td>8 / 4</td></tr>\n<tr><td>Enterprise</td><td>Custom</td><td>Custom</td><td>Unlimited</td><td>All six</td><td>Unlimited</td><td>Unlimited</td></tr>\n</tbody>\n</table>\n<p>Webhooks come with every paid plan. The API and <a href=\"/model-context-protocol-mcp-explained/\">MCP server</a> start on Business, and priority support on Growth. Enterprise adds a dedicated account manager, which the pricing page describes as working directly with the founder. The free trial gives 10 AI credits in total, and they don't reset. Ranktune takes cards, Apple Pay, Google Pay and Link. Its <a href=\"https://tryranktune.com/refund\">refund policy</a> says you can cancel at any time and keep access until the end of the paid period. Refunds are generally not given for partial periods or unused credits, only, at the company's discretion, for problems such as duplicate charges or billing errors.</p>\n\n<h2>Ranktune vs alternatives</h2>\n<p>We compared Ranktune with three better-known AI-visibility trackers, using each vendor's own pricing page as of 6 October 2026.</p>\n<table>\n<thead><tr><th>Tool</th><th>Entry paid price (monthly)</th><th>Prompts at entry tier</th><th>Engines at entry tier</th><th>API access</th><th>Seats</th></tr></thead>\n<tbody>\n<tr><td>Ranktune</td><td>$30</td><td>20</td><td>3 (ChatGPT, Gemini, Perplexity)</td><td>From Business ($120)</td><td>2</td></tr>\n<tr><td><a href=\"https://otterly.ai/pricing\">Otterly.AI</a></td><td>$29 (Lite)</td><td>15</td><td>4 (ChatGPT, AI Overviews, Perplexity, Copilot)</td><td>From Standard ($189)</td><td>Unlimited</td></tr>\n<tr><td><a href=\"https://peec.ai/pricing\">Peec AI</a></td><td>$95 (Starter)</td><td>50</td><td>3 of your choice</td><td>Enterprise only</td><td>Unlimited</td></tr>\n<tr><td><a href=\"https://www.tryprofound.com/pricing\">Profound</a></td><td>No public paid price (free trial, then Enterprise)</td><td>50 (trial, 7 days)</td><td>3 on trial, up to 9 on Enterprise</td><td>Enterprise only</td><td>Unlimited</td></tr>\n</tbody>\n</table>\n<p>On price per prompt, Ranktune's Starter plan ($30 for 20 prompts) sits close to Otterly's Lite plan ($29 for 15). Otterly's next step up costs $189 for 100 prompts, plus API and MCP access. Ranktune's Business plan is cheaper at $120 but tracks only 50 prompts. Peec's Starter is pricier but tracks 50 prompts from day one. Profound skips self-serve paid plans and goes straight from a seven-day trial to enterprise contracts. Otterly adds AI-traffic tracking (Agent Analytics) from its Standard plan, and Profound includes it in its trial. Of the plan lists we checked, only Ranktune's cheapest paid plan bundles traffic attribution, content drafting and CMS publishing. The trade-off is seats: all three rivals offer unlimited users, which suits bigger teams better.</p>\n\n<!-- xf-image-3 -->\n\n<h2>What Product Hunt users said</h2>\n<p>The launch drew little discussion. When we checked on 6 October, the <a href=\"https://www.producthunt.com/products/ranktune\">Product Hunt page</a> showed 63 upvotes, two comments and no reviews. Apart from Sewell Stephens's own launch post, which asked whether combining visibility and traffic data is useful, the one comment came from Ali Almoosawi. He liked that Ranktune tracks real referral traffic rather than mentions alone. He also asked whether it separates visits from ChatGPT's search feature from visits by its browsing agent, which he said behave very differently in server logs. No reply from the maker had appeared when we checked. Two comments are too few to judge how the product holds up for real customers.</p>\n<p>Signs of activity are modest but real. The founder has posted six articles on the <a href=\"https://tryranktune.com/blog\">Ranktune blog</a> between 13 August and 28 September 2026, and the docs cover setup, billing, account deletion and the API. We found no public changelog.</p>\n\n<h2>Privacy and data</h2>\n<p>Ranktune's <a href=\"https://tryranktune.com/privacy\">privacy policy</a> (last updated 30 July 2026) lists the data it collects: account details, IP address, device and usage data, plus the prompts, files and outputs you put through the service. Passwords are hashed with bcrypt, and OAuth credentials and API keys are encrypted at rest. The named processors include Stripe, MongoDB, Amazon S3, Cloudflare, Google Analytics, and the AI providers OpenAI, Anthropic, Perplexity, DeepSeek and Google. Infrastructure is mainly in the US, and the policy relies on Standard Contractual Clauses for transfers from the EU and UK. It sets out GDPR rights and legal bases and a short California section, and says the service is not meant for anyone under 18.</p>\n<p>The <a href=\"https://tryranktune.com/terms\">terms of use</a> say you keep ownership of what you submit. You grant a limited licence for Ranktune to process it \"for the purpose of operating and improving the Service\". Liability is capped at what you paid in the previous 12 months. We found no statement on whether your data may be used to train models, and no public DPA, SOC 2 report or security page. The AI-traffic script runs on your own site, so if you have visitors in the EU or India, check how it fits your cookie and consent setup.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Who should use it (and who shouldn't)</h2>\n<p><strong>Good fit:</strong> founders and small marketing teams who want one affordable tool that tracks AI answers, shows which assistants send traffic and helps write the pages that might change those answers. It also suits teams that already work in Cursor or Claude Desktop and want the MCP server, at $120 a month. Tracking is only half the job; our guide to <a href=\"/ai-for-seo-without-google-penalty/\">using AI for SEO without a Google penalty</a> covers the content side.</p>\n<p><strong>Poor fit:</strong> larger teams that need many seats, many countries or more than 100 tracked prompts without an enterprise contract. Also anyone whose procurement process asks for a DPA, SOC 2 report or vendor track record. Teams that only need visibility scores may find a pure tracker simpler.</p>\n\n<h2>How we scored it</h2>\n<p>We have not used it ourselves; this review is based on the vendor's documentation, pricing and terms, and public user feedback, checked on 6 October 2026.</p>\n<table>\n<thead><tr><th>Criterion</th><th>Score (1–5)</th><th>Why</th></tr></thead>\n<tbody>\n<tr><td>Features vs alternatives</td><td>4</td><td>Visibility, traffic attribution, content, agent and MCP in one product, though entry plans track few prompts and engines.</td></tr>\n<tr><td>Pricing and value</td><td>4</td><td>$30 entry price matches Otterly per prompt and undercuts Peec, with 20% off yearly. API and MCP cost $120.</td></tr>\n<tr><td>Ease of getting started</td><td>3</td><td>Clear setup guide with a suggested first week, but no free plan and a trial of only 10 credits.</td></tr>\n<tr><td>Privacy and data terms</td><td>3</td><td>Named processors, GDPR bases and encryption at rest, but US hosting, no training statement and no DPA or SOC 2.</td></tr>\n<tr><td>Maturity and support</td><td>2</td><td>First launch, no public changelog, no press coverage, priority support only from Growth.</td></tr>\n<tr><td><strong>Overall</strong></td><td><strong>3.2</strong></td><td>Average of the five scores.</td></tr>\n</tbody>\n</table>\n<p><strong>Verdict:</strong> a cheap, wide-ranging first tool for AI visibility, but a very young product with little track record, so start on monthly billing.</p>\n\n<!-- xf-image-5 -->\n\n<h2>FAQ</h2>\n<h3>How much does Ranktune cost?</h3>\n<p>Starter costs $30 a month, Business $120 and Growth $270 on monthly billing, or $24, $96 and $216 a month billed yearly. Enterprise is priced on request. These prices were checked on 6 October 2026.</p>\n<h3>Is there a Ranktune coupon or discount?</h3>\n<p>There was no public coupon as of 6 October 2026. The only public discount is 20% off for paying yearly, and new users get a free trial with 10 AI credits.</p>\n<h3>Which AI platforms does Ranktune track?</h3>\n<p>ChatGPT, Gemini and Perplexity on Starter. Business adds Claude and Google AI Overviews, and Growth and Enterprise add DeepSeek.</p>\n<h3>Does Ranktune have an API or MCP server?</h3>\n<p>Yes. Both come with Business, Growth and Enterprise. The MCP server works with Cursor, Claude Desktop and ChatGPT, using an API key or OAuth.</p>\n<h3>Can I get a refund?</h3>\n<p>Usually not for the current period. You can cancel at any time and keep access until it ends. Refunds are considered for duplicate charges, billing errors and similar payment problems.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Ranktune, <a href=\"https://tryranktune.com/\">\"AI search visibility and content platform\"</a> (homepage), accessed 6 October 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/docs/getting-started\">\"Get started with Ranktune\"</a>, accessed 6 October 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/docs/ai-visibility/what-is-ai-visibility\">\"What is AI visibility?\"</a>, accessed 6 October 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/docs/mcp\">\"MCP server\"</a>, accessed 6 October 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/docs/api-reference/errors-and-limits\">\"Errors &amp; rate limits\"</a>, accessed 6 October 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/features/ai-traffic\">\"AI traffic analytics\"</a>, accessed 6 October 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/features/integrations\">\"Integrations\"</a>, accessed 6 October 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/privacy\">\"Privacy Policy\"</a>, last updated 30 July 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/terms\">\"Terms of use\"</a>, last updated 30 July 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/refund\">\"Refund Policy\"</a>, last updated 30 July 2026</li>\n<li>Ranktune, <a href=\"https://tryranktune.com/blog\">\"Blog\"</a>, accessed 6 October 2026</li>\n<li>Product Hunt, <a href=\"https://www.producthunt.com/products/ranktune\">\"Ranktune: Track AI visibility, citations, and referral traffic\"</a>, 6 October 2026</li>\n<li>Otterly.AI, <a href=\"https://otterly.ai/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n<li>Peec AI, <a href=\"https://peec.ai/pricing\">\"Pricing for Brands\"</a>, accessed 6 October 2026</li>\n<li>Profound, <a href=\"https://www.tryprofound.com/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Smartphone_with_ChatGPT_app_and_laptop_%2852917381683%29.jpg/1920px-Smartphone_with_ChatGPT_app_and_laptop_%2852917381683%29.jpg",
+      "alt": "Hand holding a smartphone showing a ChatGPT conversation in front of an open laptop",
+      "caption": "More buyers now ask AI assistants for product shortlists, which is the behaviour AI-visibility tools try to measure.",
+      "credit": "Photo: Jernej Furman from Slovenia / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Smartphone_with_ChatGPT_app_and_laptop_(52917381683).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Analytics_2016-02-26_at_10.19.24_AM.jpg/1920px-Analytics_2016-02-26_at_10.19.24_AM.jpg",
+      "alt": "Laptop screen showing a web analytics dashboard with a line chart and a pie chart",
+      "caption": "Referral analytics like these are how AI-traffic tools separate assistant visits from other traffic.",
+      "credit": "Photo: By Lalmch from Pixabay / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Analytics_2016-02-26_at_10.19.24_AM.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Google_analytics_phone_%28Unsplash%29.jpg/1920px-Google_analytics_phone_%28Unsplash%29.jpg",
+      "alt": "Smartphone showing a Google search results page for the word analytics",
+      "caption": "Ranking in classic search results does not guarantee a mention in AI answers.",
+      "credit": "Photo: Edho Pratama edhoradic / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Google_analytics_phone_(Unsplash).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Datacenter_Server_Racks_%2822370909788%29.jpg/1920px-Datacenter_Server_Racks_%2822370909788%29.jpg",
+      "alt": "Rows of black server racks in a data centre with a raised tiled floor",
+      "caption": "Ranktune says its infrastructure and most of its service providers are in the United States.",
+      "credit": "Photo: Carl Lender from Sunrise, USA / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Datacenter_Server_Racks_(22370909788).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Hand_holding_smartphone_with_ChatGPT_%2852917076309%29.jpg/1920px-Hand_holding_smartphone_with_ChatGPT_%2852917076309%29.jpg",
+      "alt": "Hand holding a smartphone with the ChatGPT app open",
+      "caption": "ChatGPT, Gemini and Perplexity are tracked on every Ranktune plan; Claude, AI Overviews and DeepSeek cost more.",
+      "credit": "Photo: Jernej Furman from Slovenia / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hand_holding_smartphone_with_ChatGPT_(52917076309).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://tryranktune.com/",
+      "publisher": "Ranktune",
+      "date": "2026-10-06",
+      "claim": "Product overview, tracked engines, 200+ businesses claim (vendor), Reddit/Quora/Hacker News monitoring"
+    },
+    {
+      "url": "https://tryranktune.com/pricing",
+      "publisher": "Ranktune",
+      "date": "2026-10-06",
+      "claim": "Plan prices, yearly 20% discount, prompts, engines, credits, seats, API/MCP from Business, trial of 10 credits, payment methods"
+    },
+    {
+      "url": "https://tryranktune.com/docs/getting-started",
+      "publisher": "Ranktune",
+      "date": "2026-10-06",
+      "claim": "Setup steps, Action Center, AI traffic via snippet or Google Analytics, Content Studio and Agent"
+    },
+    {
+      "url": "https://tryranktune.com/docs/ai-visibility/what-is-ai-visibility",
+      "publisher": "Ranktune",
+      "date": "2026-10-06",
+      "claim": "Visibility, share of voice, understanding metrics and report contents"
+    },
+    {
+      "url": "https://tryranktune.com/docs/mcp",
+      "publisher": "Ranktune",
+      "date": "2026-10-06",
+      "claim": "MCP server for Cursor, Claude Desktop, ChatGPT; API key or OAuth 2.1; Business plan or higher"
+    },
+    {
+      "url": "https://tryranktune.com/docs/api-reference/errors-and-limits",
+      "publisher": "Ranktune",
+      "date": "2026-10-06",
+      "claim": "1,500 requests per 15 minutes per IP; 403 on credit limits"
+    },
+    {
+      "url": "https://tryranktune.com/features/ai-traffic",
+      "publisher": "Ranktune",
+      "date": "2026-10-06",
+      "claim": "Confirmed, likely and possible AI traffic attribution"
+    },
+    {
+      "url": "https://tryranktune.com/features/integrations",
+      "publisher": "Ranktune",
+      "date": "2026-10-06",
+      "claim": "WordPress, Webflow, Google Analytics, LinkedIn, webhooks, script tag"
+    },
+    {
+      "url": "https://tryranktune.com/privacy",
+      "publisher": "Ranktune",
+      "date": "2026-07-30",
+      "claim": "Anchorpenewersoft LLC, data collected, bcrypt, encryption at rest, processors, US hosting, SCCs, GDPR/CCPA, under-18"
+    },
+    {
+      "url": "https://tryranktune.com/terms",
+      "publisher": "Ranktune",
+      "date": "2026-07-30",
+      "claim": "Content ownership, licence to process and improve, liability cap"
+    },
+    {
+      "url": "https://tryranktune.com/refund",
+      "publisher": "Ranktune",
+      "date": "2026-07-30",
+      "claim": "Cancellation and refund rules"
+    },
+    {
+      "url": "https://tryranktune.com/blog",
+      "publisher": "Ranktune",
+      "date": "2026-10-06",
+      "claim": "Six blog posts by Sewell Stephens, 13 Aug to 28 Sep 2026"
+    },
+    {
+      "url": "https://www.producthunt.com/products/ranktune",
+      "publisher": "Product Hunt",
+      "date": "2026-10-06",
+      "claim": "Launch date, 63 upvotes, two comments, no reviews, founder post, Ali Almoosawi comment"
+    },
+    {
+      "url": "https://otterly.ai/pricing",
+      "publisher": "Otterly.AI",
+      "date": "2026-10-06",
+      "claim": "Otterly plan prices, prompts, engines, API/MCP and Agent Analytics from Standard"
+    },
+    {
+      "url": "https://peec.ai/pricing",
+      "publisher": "Peec AI",
+      "date": "2026-10-06",
+      "claim": "Peec plan prices ($95/$245/$495 monthly), prompts, models, unlimited users, API on Enterprise"
+    },
+    {
+      "url": "https://www.tryprofound.com/pricing",
+      "publisher": "Profound",
+      "date": "2026-10-06",
+      "claim": "Profound free trial terms, Enterprise custom pricing, up to 9 engines, Agent Analytics, API on Enterprise"
+    }
+  ],
+  "review": {
+    "name": "Ranktune",
+    "url": "https://tryranktune.com/",
+    "ph_url": "https://www.producthunt.com/products/ranktune",
+    "category": "BusinessApplication",
+    "os": "Web",
+    "pricing_url": "https://tryranktune.com/pricing",
+    "price": "30",
+    "currency": "USD",
+    "billing": "per month, billed monthly",
+    "free_plan": "trial",
+    "checked": "2026-10-06",
+    "rating": "3.2",
+    "verdict": "A cheap, wide-ranging first tool for AI visibility, but a very young product with little track record, so start on monthly billing.",
+    "pros": [
+      "Tracks AI visibility and AI referral traffic in one tool",
+      "Entry price of $30 a month, 20% off yearly",
+      "Content Studio publishes to WordPress and Webflow",
+      "MCP server and API for Cursor, Claude Desktop and ChatGPT"
+    ],
+    "cons": [
+      "Starter tracks only 20 prompts on three AI engines",
+      "API and MCP start at $120 a month",
+      "Trial limited to 10 AI credits, no free plan",
+      "First launch, with no public changelog or press coverage",
+      "No public DPA or SOC 2 report"
+    ]
+  }
+}

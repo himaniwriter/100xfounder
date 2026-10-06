@@ -1,0 +1,168 @@
+{
+  "type": "post",
+  "slug": "banger-review",
+  "title": "Banger review 2026: AI-run email automation, pricing and alternatives",
+  "excerpt": "Banger lets AI assistants such as Claude and ChatGPT run company email, from mailboxes to welcome sequences. Free tier, paid from $5 a month; vs Resend, Loops.",
+  "category": "saas",
+  "tags": [
+    "Banger review",
+    "Banger pricing",
+    "Banger alternatives",
+    "Product Hunt",
+    "email automation",
+    "MCP",
+    "AI agents"
+  ],
+  "content": "<p>Banger is a company email platform that your AI assistant runs: mailboxes on your own domain, product emails such as receipts, newsletters, and automated welcome and win-back sequences, all controlled from Claude, ChatGPT and other AI assistants. It is aimed at solo founders and small SaaS or e-commerce teams. Our verdict: unusually generous pricing and careful safety rules make it worth trying for small products, though the product is only weeks old in its current form. Its latest version launched on <a href=\"/launches/\">Product Hunt</a> on 6 October 2026, and we checked the prices on the vendor's site that day.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>Price:</strong> free for 3,000 emails a month. Paid plans start at $5 a month billed yearly, or $6 month to month. Contacts, mailboxes and seats are unlimited on every plan.</li>\n<li><strong>What sets it apart:</strong> an MCP server with 182 tools, so AI assistants such as Claude, ChatGPT, Codex, Cursor and Grok can set up domains, send email and build automated sequences.</li>\n<li><strong>Guardrails:</strong> a person must approve the first activation of any automated sequence, and AI agents cannot approve their own work.</li>\n<li><strong>The catch:</strong> paid plans have hard monthly limits with no overage option, fees are non-refundable, and the company pivoted to this product only in August 2026.</li>\n</ul>\n\n<h2>What Banger does</h2>\n<p>Banger puts four jobs that small companies usually spread across several tools in one workspace. It hosts mailboxes like hello@ or support@ on your domain, sends transactional email from your app, runs Broadcasts (one-off newsletters and announcements), and runs Journeys (automated sequences such as onboarding, cart recovery and win-back). People manage it in a web app, software uses a REST API, and AI assistants use an <a href=\"/model-context-protocol-mcp-explained/\">MCP server</a>, all working on the same data, according to <a href=\"https://bangermail.com/llms.txt\">Banger's product reference</a>. Every email goes out through Amazon SES, and Banger sets up SPF, DKIM and DMARC for your domain, according to the <a href=\"https://bangermail.com/\">homepage FAQ</a>.</p>\n<p>The company behind it is BangerMail Inc. Its <a href=\"https://bangermail.com/about/\">about page</a> names two cofounders: Tiago, who worked on communication products at Automattic and Beeper, and Luiz, whose background is engineering at Microsoft and Cadence Design Systems. Product Hunt lists them as Tiago Loureiro and Luiz Barcelos. The <a href=\"https://bangermail.com/blog/introducing-banger-mail/\">launch post</a> (28 September 2026) says the product took its current shape after a pivot on 13 August. Banger first launched on Product Hunt on 2 July 2026 as \"Banger Mail\", shared mailboxes for teams and AI agents.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Key features</h2>\n<ul>\n<li><strong>Mailboxes and Triage.</strong> Unlimited mailboxes on your domains, or a Banger-hosted starter address while you set up DNS. Labels and Triage rules sort incoming mail, and you can connect existing Gmail accounts.</li>\n<li><strong>Journeys.</strong> Lifecycle sequences triggered by product events or incoming webhooks, which can be previewed and simulated before they go live. The first activation always needs human review.</li>\n<li><strong>Broadcasts.</strong> Newsletters and announcements to lists or segments, with audience previews, readiness checks and scheduling.</li>\n<li><strong>A/B tests and translation.</strong> Test two to four versions of a subject line, design, content or sender name. Banger can prepare other languages from your source email.</li>\n<li><strong>Signup forms.</strong> Inline forms, popups, bars and hosted pages, with double opt-in by default.</li>\n<li><strong>Agent access.</strong> A remote MCP server with OAuth 2.1, a REST API with an OpenAPI 3.1 description, and setup guides for Claude, Claude Code, ChatGPT, Codex, Cursor and Grok, according to the <a href=\"https://bangermail.com/llms.txt\">developer reference</a>.</li>\n<li><strong>Open-source extras.</strong> Bangerverse, an MIT-licensed repository with 70 email templates and two beta companion apps, a desktop alert app called Pulse and a Gmail-style web inbox called mailG. Banger has no native desktop or mobile app of its own.</li>\n</ul>\n\n<h2>Pricing</h2>\n<p>All prices are from <a href=\"https://bangermail.com/pricing/\">Banger's pricing page</a>, checked on 6 October 2026, in US dollars. Every plan has every feature. Plans differ only in sending volume, storage, Triage volume, history and support.</p>\n<table>\n<thead><tr><th>Plan</th><th>Billed yearly (per month)</th><th>Month to month</th><th>Emails / month</th><th>Storage</th><th>History</th><th>Support</th></tr></thead>\n<tbody>\n<tr><td>Free</td><td>$0</td><td>$0</td><td>3,000 (max 100 a day)</td><td>256 MB</td><td>7 days</td><td>Community</td></tr>\n<tr><td>Starter</td><td>$5</td><td>$6</td><td>15,000</td><td>5 GB</td><td>30 days</td><td>Email</td></tr>\n<tr><td>Pro</td><td>$20</td><td>$24</td><td>50,000</td><td>50 GB</td><td>90 days</td><td>Email</td></tr>\n<tr><td>Business</td><td>$200</td><td>$240</td><td>250,000</td><td>250 GB</td><td>1 year</td><td>Priority, 1 dedicated sending lane</td></tr>\n<tr><td>Scale</td><td>$2,000</td><td>$2,400</td><td>2,000,000</td><td>2 TB</td><td>Unlimited</td><td>Slack, 99.9% SLA, 3 lanes</td></tr>\n</tbody>\n</table>\n<p>Above 2 million emails a month, Banger offers dedicated infrastructure, a 99.99% SLA, a DPA and invoicing at custom prices. Marketing, product and mailbox emails all count the same. On Free, emails over the daily cap go out the next day. On paid plans, sends beyond the monthly allowance are refused until the allowance renews or you upgrade, and there are no overage fees. Banger's <a href=\"https://bangermail.com/terms/\">terms</a> (updated 27 September 2026) say fees are non-refundable, including for partial periods. Price rises need 30 days' email notice. If an AI agent buys a plan from a chat, it buys a fixed prepaid month or year that does not renew automatically.</p>\n\n<h2>Banger vs alternatives</h2>\n<p>We compared Banger with two developer-friendly email platforms that small SaaS teams often choose, using each vendor's pricing page as of 6 October 2026.</p>\n<table>\n<thead><tr><th>Tool</th><th>Free tier</th><th>Entry paid plan</th><th>How price scales</th><th>Hosted mailboxes</th></tr></thead>\n<tbody>\n<tr><td>Banger</td><td>3,000 emails/month, 100/day</td><td>$5/month yearly ($6 monthly), 15,000 emails</td><td>By emails sent; unlimited contacts</td><td>Yes, unlimited</td></tr>\n<tr><td><a href=\"https://resend.com/pricing\">Resend</a></td><td>3,000 emails/month, 100/day; 1,000 marketing contacts</td><td>Pro $20/month, 50,000 transactional emails</td><td>Transactional by volume; marketing by contacts ($40 for 5,000)</td><td>Not listed; inbound email included on all plans</td></tr>\n<tr><td><a href=\"https://loops.so/pricing\">Loops</a></td><td>4,000 sends per 30 days to your 1,000 newest contacts, with Loops branding</td><td>$49/month at 5,000 subscribed contacts</td><td>By subscribed contacts; unlimited sends, all features on all plans</td><td>Not listed</td></tr>\n</tbody>\n</table>\n<p>On raw price, Banger is cheapest at small volumes: $5 to $6 a month covers 15,000 emails with no contact limit, while Loops charges $49 once your list passes 1,000 subscribers. Resend's $20 Pro plan matches Banger Pro's 50,000 emails for transactional mail, but marketing contacts are billed separately. What you give up is maturity. Resend and Loops are established, focused tools, while Banger bundles mailboxes, transactional email, marketing and automation into a product that took its current form in August 2026.</p>\n\n<!-- xf-image-3 -->\n\n<h2>What Product Hunt users said</h2>\n<p>When we checked the <a href=\"https://www.producthunt.com/products/banger-mail\">Product Hunt page</a> on 6 October, the new launch had 62 upvotes. In his launch post, Tiago Loureiro framed the product around customer moments small teams miss, such as a signup who never returns, an abandoned cart or a customer about to cancel. He also posted guides for SaaS and e-commerce use. The page's one review, rated 4 out of 5, dates from July and covers the earlier shared-mailbox product. The reviewer, Omri Ben-Shoham, said setup was quick and \"routing rules made sense right away\". He asked for a way to see which agent action last touched a thread, because activity currently appears as a single feed. One review is too little to judge reliability, and it predates the August pivot.</p>\n\n<h2>Privacy and data</h2>\n<p>Banger's <a href=\"https://bangermail.com/trust/\">trust page</a> is more detailed than most early-stage products publish. Mail, contacts and content are stored in the United States: records and search in a PlanetScale Postgres database on AWS, and raw messages and files in Backblaze B2. Sending runs on Amazon SES in Frankfurt, and mail receiving and filtering on Hetzner. Traffic uses TLS 1.2 or higher. Google tokens, provider keys and your own AI keys get extra AES-256-GCM encryption. Banger says plainly that mail is not end-to-end encrypted, so it can technically read stored mail, with production access limited to the people who run the service. It also says it has completed a CASA Tier 2 assessment, the independent security review Google requires for apps that read Gmail data.</p>\n<p>OpenAI powers email design, the mail assistant, brand discovery and translation. A provider called TypeSafe runs Triage and contact-import mapping, with some personal details removed first. Banger says neither it nor these providers train AI models on customer data, and it does not sell data. Its <a href=\"https://bangermail.com/privacy/\">privacy policy</a> treats customers as the controller and Banger as processor for workspace content. Its <a href=\"https://bangermail.com/acceptable-use/\">acceptable use policy</a> requires confirmed consent before Broadcasts reach subscribed contacts, adds one-click unsubscribe to every Broadcast and Journey email, and suppresses unsubscribes, hard bounces and complaints across the workspace. That matters if you email people in the EU, UK or India. A DPA is listed only for the custom high-volume tier, and data storage is US-based.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Who should use it (and who shouldn't)</h2>\n<p><strong>Good fit:</strong> solo founders and small teams launching on a new domain who already work in Claude, ChatGPT or Cursor and want one cheap system for support mail, receipts, a welcome sequence and a launch newsletter. It also suits anyone who wants an AI agent to handle DNS setup and email operations with a human approval step built in. For other options in the category, see our guide to the <a href=\"/best-ai-marketing-tools-2026/\">best AI marketing tools in 2026</a>.</p>\n<p><strong>Poor fit:</strong> teams that need native mobile or desktop mail apps, guaranteed delivery above their plan limit without upgrading, EU-only data storage, or a long vendor track record and a signed DPA on a standard plan. Companies with established lifecycle tooling may not want to move to a product this new.</p>\n\n<h2>How we scored it</h2>\n<p>We have not used it ourselves; this review is based on the vendor's documentation, pricing and terms, and public user feedback, checked on 6 October 2026.</p>\n<table>\n<thead><tr><th>Criterion</th><th>Score (1–5)</th><th>Why</th></tr></thead>\n<tbody>\n<tr><td>Features vs alternatives</td><td>4</td><td>Mailboxes, transactional email, Broadcasts, Journeys, A/B tests and a 182-tool MCP server in one product. No native apps.</td></tr>\n<tr><td>Pricing and value</td><td>5</td><td>Every feature on every plan, unlimited contacts and seats, and paid plans from $5 a month, well below Loops and Resend at small volumes.</td></tr>\n<tr><td>Ease of getting started</td><td>4</td><td>Free forever with no card, a hosted starter mailbox and guided DNS setup. You need to be comfortable connecting an AI assistant.</td></tr>\n<tr><td>Privacy and data terms</td><td>4</td><td>Detailed trust page, no training on customer data, CASA Tier 2 and consent rules. Not end-to-end encrypted, US storage, DPA only on custom tier.</td></tr>\n<tr><td>Maturity and support</td><td>3</td><td>Public docs, status page and open-source repo, but pivoted in August 2026 and has one Product Hunt review.</td></tr>\n<tr><td><strong>Overall</strong></td><td><strong>4.0</strong></td><td>Average of the five scores.</td></tr>\n</tbody>\n</table>\n<p>Banger's <a href=\"https://bangermail.com/status.json\">status feed</a> showed the API, MCP server, web app and sign-in all operational when we checked on 6 October 2026. <strong>Verdict:</strong> unusually generous pricing and careful safety rules make it worth trying for small products, though the product is only weeks old in its current form.</p>\n\n<!-- xf-image-5 -->\n\n<h2>FAQ</h2>\n<h3>How much does Banger cost?</h3>\n<p>Free covers 3,000 emails a month. Paid plans are Starter at $5, Pro at $20, Business at $200 and Scale at $2,000 a month, billed yearly. Month-to-month billing costs 20% more. Prices were checked on 6 October 2026.</p>\n<h3>Is there a Banger coupon or discount?</h3>\n<p>Yearly billing is the main public discount, since month-to-month billing costs 20% more. For the Product Hunt launch, the maker posted a code in the launch thread for 25% off the first year of any paid plan, valid until 13 October 2026. Check that thread for current terms. Otherwise there was no public coupon as of 6 October 2026.</p>\n<h3>Which AI assistants work with Banger?</h3>\n<p>Banger documents setup for Claude, Claude Code, ChatGPT, Codex, Cursor and Grok, and lists Hermes and OpenClaw. Any client that supports remote MCP servers with OAuth, or with a workspace API key, should also connect.</p>\n<h3>Can an AI agent send email without my approval?</h3>\n<p>It depends on your workspace policy. Drafts and sends can run directly under the policy you set, but the first activation of a Journey always needs a person to approve it, and agents cannot approve anything themselves.</p>\n<h3>What happens if I hit my sending limit?</h3>\n<p>On Free, extra emails wait until the next day. On paid plans, extra sends are refused until the next billing period or until you upgrade, and there are no overage charges.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Banger, <a href=\"https://bangermail.com/\">\"Welcome emails, newsletters, receipts, replies\"</a> (homepage), accessed 6 October 2026</li>\n<li>Banger, <a href=\"https://bangermail.com/llms.txt\">\"Banger product and developer reference (llms.txt)\"</a>, accessed 6 October 2026</li>\n<li>Banger, <a href=\"https://bangermail.com/pricing/\">\"Pricing\"</a>, accessed 6 October 2026</li>\n<li>Banger, <a href=\"https://bangermail.com/terms/\">\"Terms of Service\"</a>, last updated 27 September 2026</li>\n<li>Banger, <a href=\"https://bangermail.com/privacy/\">\"Privacy Policy\"</a>, accessed 6 October 2026</li>\n<li>Banger, <a href=\"https://bangermail.com/trust/\">\"How Banger handles your mail\"</a>, accessed 6 October 2026</li>\n<li>Banger, <a href=\"https://bangermail.com/acceptable-use/\">\"Acceptable Use &amp; Anti-Spam Policy\"</a>, accessed 6 October 2026</li>\n<li>Banger, <a href=\"https://bangermail.com/about/\">\"About Banger\"</a>, accessed 6 October 2026</li>\n<li>Banger, <a href=\"https://bangermail.com/blog/introducing-banger-mail/\">\"Introducing Banger: company email your AI runs\"</a>, 28 September 2026</li>\n<li>Banger, <a href=\"https://bangermail.com/status.json\">\"Status feed\"</a>, checked 6 October 2026</li>\n<li>Product Hunt, <a href=\"https://www.producthunt.com/products/banger-mail\">\"Banger: Win and keep customers with email automation your AI runs\"</a>, 6 October 2026</li>\n<li>Resend, <a href=\"https://resend.com/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n<li>Loops, <a href=\"https://loops.so/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Typing_on_a_laptop_%28Unsplash%29.jpg/1920px-Typing_on_a_laptop_%28Unsplash%29.jpg",
+      "alt": "Person typing on an open laptop at a dark wooden table, with a potted plant behind",
+      "caption": "Small teams often handle support mail, receipts and newsletters from one laptop, the kind of workload Banger hands to an AI assistant.",
+      "credit": "Photo: Simon Hattinga Verschure webmarbles / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Typing_on_a_laptop_(Unsplash).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Postbox_by_Martin_Vorel.jpeg/1920px-Postbox_by_Martin_Vorel.jpeg",
+      "alt": "Old metal post box mounted on a street wall in Prague",
+      "caption": "Banger includes unlimited mailboxes such as hello@ and support@ on every plan, Free included.",
+      "credit": "Photo: Martin Vorel / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Postbox_by_Martin_Vorel.jpeg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Mini_shopping_cart_placed_on_a_table_next_to_a_laptop_in_a_modern_office_setting.jpg/1920px-Mini_shopping_cart_placed_on_a_table_next_to_a_laptop_in_a_modern_office_setting.jpg",
+      "alt": "Miniature shopping cart on a desk next to an open laptop",
+      "caption": "Abandoned-cart recovery is one of the automated email sequences Banger's makers highlight for online stores.",
+      "credit": "Photo: Shixart1985 / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Mini_shopping_cart_placed_on_a_table_next_to_a_laptop_in_a_modern_office_setting.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Technician_with_laptop_working_on_server_rack_at_NERSC.jpg/1920px-Technician_with_laptop_working_on_server_rack_at_NERSC.jpg",
+      "alt": "Technician crouching beside a server rack with a laptop on the floor, connecting cables",
+      "caption": "Banger says it stores mail and contacts in the US and sends through Amazon SES in Frankfurt.",
+      "credit": "Photo: Derrick Coetzee from Berkeley, CA, USA / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Technician_with_laptop_working_on_server_rack_at_NERSC.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Programmer_at_work_%28Unsplash%29.jpg/1920px-Programmer_at_work_%28Unsplash%29.jpg",
+      "alt": "Person working on a laptop at a wooden desk with an app window open on screen",
+      "caption": "Developers can connect Banger through its REST API, while AI assistants use its MCP server.",
+      "credit": "Photo: Crew crew / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Programmer_at_work_(Unsplash).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bangermail.com/",
+      "publisher": "Banger",
+      "date": "2026-10-06",
+      "claim": "Product overview, Amazon SES, SPF/DKIM/DMARC setup, free plan summary"
+    },
+    {
+      "url": "https://bangermail.com/llms.txt",
+      "publisher": "Banger",
+      "date": "2026-10-06",
+      "claim": "Product reference: MCP URL, OAuth 2.1, supported clients, REST API/OpenAPI, safety model, pricing summary, 182 MCP tools via index.md, Bangerverse, no native apps"
+    },
+    {
+      "url": "https://bangermail.com/pricing/",
+      "publisher": "Banger",
+      "date": "2026-10-06",
+      "claim": "Plan prices, allowances, storage, history, support, custom tier above 2M emails"
+    },
+    {
+      "url": "https://bangermail.com/terms/",
+      "publisher": "Banger",
+      "date": "2026-09-27",
+      "claim": "Non-refundable fees, 20% month-to-month premium, 30-day price-change notice, agent prepaid periods, limit behaviour"
+    },
+    {
+      "url": "https://bangermail.com/privacy/",
+      "publisher": "Banger",
+      "date": "2026-10-06",
+      "claim": "Controller/processor roles, no training on customer data"
+    },
+    {
+      "url": "https://bangermail.com/trust/",
+      "publisher": "Banger",
+      "date": "2026-10-06",
+      "claim": "Data locations, encryption, not end-to-end, CASA Tier 2, AI providers, subprocessors, deletion window"
+    },
+    {
+      "url": "https://bangermail.com/acceptable-use/",
+      "publisher": "Banger",
+      "date": "2026-10-06",
+      "claim": "Consent confirmation, suppression, unsubscribe rules"
+    },
+    {
+      "url": "https://bangermail.com/about/",
+      "publisher": "Banger",
+      "date": "2026-10-06",
+      "claim": "Cofounders' backgrounds"
+    },
+    {
+      "url": "https://bangermail.com/blog/introducing-banger-mail/",
+      "publisher": "Banger",
+      "date": "2026-09-28",
+      "claim": "Launch post, 13 August pivot, double opt-in, human approval for Journeys"
+    },
+    {
+      "url": "https://bangermail.com/status.json",
+      "publisher": "Banger",
+      "date": "2026-10-06",
+      "claim": "API, MCP, web app and sign-in operational"
+    },
+    {
+      "url": "https://www.producthunt.com/products/banger-mail",
+      "publisher": "Product Hunt",
+      "date": "2026-10-06",
+      "claim": "6 Oct launch, 62 upvotes, maker post and launch discount, July 2026 first launch, Omri Ben-Shoham review"
+    },
+    {
+      "url": "https://resend.com/pricing",
+      "publisher": "Resend",
+      "date": "2026-10-06",
+      "claim": "Resend transactional and marketing plan prices, free tier, inbound email"
+    },
+    {
+      "url": "https://loops.so/pricing",
+      "publisher": "Loops",
+      "date": "2026-10-06",
+      "claim": "Loops free plan limits, $49 at 5,000 subscribed contacts, unlimited sends, no seat fees"
+    }
+  ],
+  "review": {
+    "name": "Banger",
+    "url": "https://bangermail.com/",
+    "ph_url": "https://www.producthunt.com/products/banger-mail",
+    "category": "BusinessApplication",
+    "os": "Web",
+    "pricing_url": "https://bangermail.com/pricing/",
+    "price": "6",
+    "currency": "USD",
+    "billing": "per month, billed monthly ($5 a month billed yearly)",
+    "free_plan": "yes",
+    "checked": "2026-10-06",
+    "rating": "4.0",
+    "verdict": "Unusually generous pricing and careful safety rules make it worth trying for small products, though the product is only weeks old in its current form.",
+    "pros": [
+      "Free plan with 3,000 emails a month; paid plans from $5 a month",
+      "Unlimited contacts, mailboxes and seats on every plan",
+      "MCP server lets Claude, ChatGPT, Cursor and others run email",
+      "Human approval required before a Journey first goes live",
+      "Detailed trust page and no training on customer data"
+    ],
+    "cons": [
+      "Paid plans refuse sends over the monthly limit, with no overage option",
+      "Fees are non-refundable",
+      "Took its current form only after an August 2026 pivot",
+      "No native desktop or mobile app",
+      "Data stored in the US; DPA only on the custom tier"
+    ]
+  }
+}

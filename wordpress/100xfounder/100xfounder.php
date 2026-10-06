@@ -44,6 +44,7 @@ require_once XF_DIR . 'includes/leads.php';
 require_once XF_DIR . 'includes/communities.php';
 require_once XF_DIR . 'includes/sources.php';
 require_once XF_DIR . 'includes/seo.php';
+require_once XF_DIR . 'includes/reviews.php';
 require_once XF_DIR . 'includes/queue.php';
 require_once XF_DIR . 'includes/jobs.php';
 require_once XF_DIR . 'includes/tools.php';

@@ -1,0 +1,148 @@
+{
+  "type": "post",
+  "slug": "floani-review",
+  "title": "Floani review 2026: animated AI diagrams, pricing and alternatives",
+  "excerpt": "Floani review: the AI diagram editor that animates and exports your diagrams as video, with MCP for Claude and Cursor. Pricing, privacy and alternatives.",
+  "category": "saas",
+  "tags": [
+    "Floani review",
+    "Floani pricing",
+    "Floani alternatives",
+    "Product Hunt",
+    "AI diagram tool",
+    "MCP",
+    "architecture diagrams"
+  ],
+  "content": "<p>Floani is a browser-based diagram editor that adds motion graphics: connections animate, steps reveal in order and a virtual camera moves between scenes, so a system diagram can be presented or exported as a video. It's built for engineers, solutions architects and teachers who explain systems for a living. Our verdict: a fresh, keenly priced idea with an unusually complete MCP setup for AI agents, but it's a beta from a one-person launch, so keep exports of anything important. Floani made its first Product Hunt launch on 6 October 2026.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>What's different:</strong> diagrams and animation live in the same project, with MP4 and GIF export, live presenting and interactive share links.</li>\n<li><strong>Pricing:</strong> free for 5 projects. Pro costs $9 a month ($90 a year) and Max costs $19 a month ($190 a year), in US dollars.</li>\n<li><strong>AI agents:</strong> Pro and Max include an MCP server, so Claude Code, Codex or Cursor can build and animate diagrams in your account.</li>\n<li><strong>Caution:</strong> the AI assistant routes prompts through OpenRouter to third-party models. Some of those providers may keep prompts or use them for training.</li>\n</ul>\n\n<h2>What Floani does</h2>\n<p>According to <a href=\"https://floani.com\">Floani's website</a>, you build diagrams from shapes, cloud-provider logos, charts, rich text and custom HTML cards. You can also import Mermaid text or ask the built-in AI for a first draft. Then you add motion: particles travelling along connections, objects revealed one step at a time, scenes, camera moves and a 2.5D depth effect. Finished work can be presented live, shared as an interactive link, embedded, or exported as an MP4.</p>\n<p>The example gallery shows the intended audience. It includes an orchestrated saga across microservices, a highly available AWS web app, a BPMN loan process, a RAG chatbot on Amazon Bedrock, an OAuth 2.0 login with PKCE and a CI/CD pipeline to Google Kubernetes Engine. This is a tool for explaining how systems behave, not for drawing org charts.</p>\n<p>Floani is run by IMPACTUS AI LTDA, a company based in Hortolândia, São Paulo state, Brazil, according to its <a href=\"https://floani.com/terms.html\">terms of service</a>. The terms describe the product as a beta in active development. Its <a href=\"https://www.producthunt.com/products/floani\">Product Hunt page</a> names one maker, Elber Domingos. We found no published funding or team-size information, so we have left that out.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Key features</h2>\n<ul>\n<li><strong>Motion on the canvas.</strong> Animated connections, staged reveals, scenes and camera paths, set up in the same editor as the diagram. Edit a node and the animation keeps working.</li>\n<li><strong>Built-in AI assistant.</strong> Describe a diagram, review the draft and apply it. Usage is metered in credits: the default model usually takes 1–2 credits for a new flow and 1 for an edit, according to the <a href=\"https://floani.com/pricing\">pricing page</a>.</li>\n<li><strong>MCP server and skill.</strong> Floani's <a href=\"https://floani.com/mcp\">MCP guide</a> gives copy-paste setup for Claude Code, Codex, Cursor and Claude Desktop (through a local bridge), using Streamable HTTP and API keys. You can scope each key to read, write or share. A free downloadable SKILL.md file teaches an agent to plan readable diagrams. The pricing FAQ notes that Claude's web custom connectors aren't supported yet.</li>\n<li><strong>Imports.</strong> Mermaid flowcharts, sequence diagrams and mindmaps (Pro and Max). Max adds Terraform Studio, which turns Terraform configuration, plan and state files into editable diagrams.</li>\n<li><strong>Exports and sharing.</strong> PNG and JSON on every plan. MP4 and GIF exports, public links and embeds on Pro and Max. Video renders on your own computer, so it isn't counted against a quota.</li>\n<li><strong>Languages.</strong> The site is available in English, Portuguese (Brazil) and Spanish.</li>\n</ul>\n\n<h2>Pricing</h2>\n<p>Prices below are from <a href=\"https://floani.com/pricing\">Floani's pricing page</a>, checked on 6 October 2026. They are in US dollars, charged through Stripe, and the page says no tax is added on top.</p>\n<table>\n<thead><tr><th>Plan</th><th>Monthly</th><th>Yearly</th><th>Main limits</th></tr></thead>\n<tbody>\n<tr><td>Free</td><td>$0</td><td>$0</td><td>5 projects with one flow each; 10 AI credits once; 1 GB storage; 500 objects per flow; PNG/JSON export and in-app presenting; no MP4, links or MCP.</td></tr>\n<tr><td>Pro</td><td>$9/month</td><td>$90/year</td><td>Unlimited projects and flows; MP4/GIF up to 1440p and 3 minutes; public links and embeds; 350 AI credits a month; 25 GB storage; Mermaid import; MCP (100 new flows a day).</td></tr>\n<tr><td>Max</td><td>$19/month</td><td>$190/year</td><td>1,350 AI credits a month plus 30 free default-model requests a day; MP4/GIF up to 4K and 8 minutes; 100 GB storage; MCP (300 new flows a day); Terraform Studio.</td></tr>\n</tbody>\n</table>\n<p>Yearly billing works out to two months free. Pro and Max users can buy 300 extra credits for $6. Monthly credits don't roll over, and credit packs expire 12 months after your latest pack purchase, according to the <a href=\"https://floani.com/terms.html\">terms</a>.</p>\n<p>\"Unlimited\" is subject to a fair-use policy. Pro allows 200 new flows a day and Max allows 500. Each plan also has a monthly traffic line for public links (25 GB on Pro, 100 GB on Max). Past twice that line, videos in your links play only when clicked.</p>\n<p>Floani's <a href=\"https://floani.com/refunds.html\">refund policy</a> says subscriptions renew automatically. Cancelling takes effect at the end of the paid period. Buyers in Brazil get an automatic full refund if they cancel within 7 days of their first purchase. Elsewhere, Floani says it will honour whatever withdrawal right your local law gives you.</p>\n\n<h2>Floani vs alternatives</h2>\n<p>Competitor prices are from each vendor's pricing page, checked on 6 October 2026.</p>\n<table>\n<thead><tr><th>Tool</th><th>Cheapest paid plan</th><th>Free tier</th><th>AI</th><th>Animation and video export</th></tr></thead>\n<tbody>\n<tr><td>Floani</td><td>$9/month ($90/year)</td><td>5 projects, 10 AI credits</td><td>Built-in assistant plus MCP for your own agent</td><td>Yes: scenes, camera, MP4/GIF</td></tr>\n<tr><td><a href=\"https://www.eraser.io/pricing\">Eraser</a></td><td>$20/member/month ($15 yearly)</td><td>3 files, 3 AI diagrams</td><td>40 AI diagram credits on Starter; API on paid plans</td><td>Not listed; exports PDF, PNG, SVG, Markdown</td></tr>\n<tr><td><a href=\"https://plus.excalidraw.com/pricing\">Excalidraw+</a></td><td>$7/user/month ($6 billed yearly)</td><td>Open-source editor, one scene</td><td>Limited on Free, extended on Plus</td><td>Slide-style presentations; PDF and PPTX export; no video listed</td></tr>\n</tbody>\n</table>\n<p>Eraser is the closest rival for engineering diagrams. It has deeper team features but more than twice Floani's entry price per member, and it lists no video export. Excalidraw+ is cheaper and has a hand-drawn style many teams like, but it presents slides rather than animating a diagram. Floani's real difference is motion: neither rival lists animated connections, camera moves or MP4 export.</p>\n\n<!-- xf-image-3 -->\n\n<h2>What Product Hunt users said</h2>\n<p>The launch was small. When we checked on 6 October, it had 69 upvotes, five comments and no reviews, and it was ranked 27th for the day. In the <a href=\"https://www.producthunt.com/p/floani/floani\">launch discussion</a>, Elber Domingos introduced the editor, the MCP integration and the export options, and asked for feedback on the AI workflow.</p>\n<p>Harsh Yadav singled out the camera movement and animated connections as useful for architecture diagrams and said he wanted to try it on a messy AI-agent architecture. Nikolas Dimitroulakis, co-founder of the API marketplace ApyHub, suggested offering diagram-to-video as an API that takes source text and returns an MP4 or GIF. With so little feedback, there's no meaningful user consensus yet.</p>\n\n<h2>Privacy and data</h2>\n<p>Floani's <a href=\"https://floani.com/privacy.html\">privacy policy</a>, updated 1 October 2026, is detailed and written for Brazil's LGPD and the EU's GDPR. The main points:</p>\n<ul>\n<li><strong>Your work:</strong> Floani says it does not train models on your work, does not sell personal data and does not show ads. You can delete your account and everything in it from the app.</li>\n<li><strong>Analytics:</strong> session recordings and heatmaps (PostHog and Microsoft Clarity) and Sentry error recordings run only if you opt in.</li>\n<li><strong>AI requests:</strong> prompts, and the parts of a project needed to answer them, go through OpenRouter to the provider of the model you pick. Named providers include Anthropic, DeepSeek, Google, OpenAI, Qwen and others, served from the US, China or other countries. Unless a message reads a connected app, OpenRouter may pick providers whose terms let them keep prompts or train on them. Don't put confidential architecture or secrets into the assistant if that matters to you.</li>\n<li><strong>Connected apps:</strong> Google Drive, Slack, GitHub, Notion and others connect through Composio and are read only, only when you point the assistant at them.</li>\n<li><strong>Fraud prevention:</strong> coded (hashed) identifiers of your email, card and Google account are kept for 24 months, even after you delete your account.</li>\n</ul>\n<p>The <a href=\"https://floani.com/terms.html\">terms</a> say you own your projects and the AI output you create. Users must be at least 16, and Brazilian law applies without removing consumer rights where you live. We found no SOC 2 or similar certification on the site, which matters for larger companies.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Who should use it (and who shouldn't)</h2>\n<p><strong>Good fit:</strong></p>\n<ul>\n<li>Engineers and architects who walk others through systems in design reviews, onboarding or conference talks.</li>\n<li>Developer advocates and teachers who want a short video of a request moving through a system.</li>\n<li>People who already work in Claude Code, Codex or Cursor and want an agent to draft the diagram for them.</li>\n</ul>\n<p>If you're building a portfolio for <a href=\"/jobs/ai-ml-jobs/\">AI and ML roles</a>, an animated architecture walkthrough is one inexpensive way to show how you think about systems.</p>\n<p><strong>Poor fit:</strong></p>\n<ul>\n<li>Large teams that need SSO, admin controls or security certifications. Floani lists none.</li>\n<li>Anyone whose diagrams are confidential and who plans to lean on the built-in AI.</li>\n<li>Anyone who needs a mature vendor with a public product history. There's no public changelog or blog yet.</li>\n</ul>\n<p>More new tools appear daily on our <a href=\"/launches/\">launches page</a>.</p>\n\n<!-- xf-image-5 -->\n\n<h2>How we scored it</h2>\n<p>We have not used it ourselves; this review is based on the vendor's documentation, pricing and terms, and public user feedback, checked on 6 October 2026.</p>\n<table>\n<thead><tr><th>Criterion</th><th>Score (1–5)</th><th>Why</th></tr></thead>\n<tbody>\n<tr><td>Features vs alternatives</td><td>4</td><td>Animation, MP4 export and an MCP server set it apart from Eraser and Excalidraw+; team features are thin.</td></tr>\n<tr><td>Pricing and value</td><td>4</td><td>Pro at $9 undercuts Eraser's $20 entry plan; Excalidraw+ is cheaper but has no video export.</td></tr>\n<tr><td>Ease of getting started</td><td>4</td><td>Free plan with no card and a clear MCP guide; the free tier can't export video or share links.</td></tr>\n<tr><td>Privacy and data terms</td><td>3</td><td>A clear policy, opt-in analytics and no training on your work; AI prompts may reach providers that keep them; no certifications.</td></tr>\n<tr><td>Maturity and support</td><td>2</td><td>A beta, first launch, single named maker, no changelog or blog; support is by email and phone.</td></tr>\n<tr><td><strong>Overall</strong></td><td><strong>3.4</strong></td><td>Average of the five scores.</td></tr>\n</tbody>\n</table>\n\n<h2>FAQ</h2>\n<h3>Is Floani free?</h3>\n<p>Yes, with limits: 5 projects with one flow each, 10 starter AI credits, PNG and JSON export, and presenting from the app. MP4 export, public links and MCP need Pro or Max.</p>\n<h3>Is there a Floani coupon or discount?</h3>\n<p>There's no public coupon code as of 6 October 2026. The only public discount is yearly billing, which gives two months free ($90 a year for Pro, $190 for Max).</p>\n<h3>Can Claude or Cursor create Floani diagrams?</h3>\n<p>Yes, on Pro and Max. You create an API key in Floani and add its MCP server to Claude Code, Codex, Cursor or Claude Desktop. The agent can then create, animate and share flows in your account.</p>\n<h3>Can I export animated diagrams as video?</h3>\n<p>Yes. Pro exports MP4 or GIF up to 1440p and 3 minutes, and Max up to 4K and 8 minutes. Exports render on your own computer and aren't counted.</p>\n<h3>Does Floani train AI on my diagrams?</h3>\n<p>Floani says it doesn't. But prompts sent to its assistant go through OpenRouter, and some model providers may keep them or use them for training.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Floani, <a href=\"https://floani.com\">\"Diagrams meet motion graphics\"</a>, accessed 6 October 2026</li>\n<li>Floani, <a href=\"https://floani.com/pricing\">\"Pricing and plan comparison\"</a>, accessed 6 October 2026</li>\n<li>Floani, <a href=\"https://floani.com/mcp\">\"Connect your AI with MCP\"</a>, accessed 6 October 2026</li>\n<li>Floani, <a href=\"https://floani.com/terms.html\">\"Terms of service\"</a>, updated 1 October 2026</li>\n<li>Floani, <a href=\"https://floani.com/privacy.html\">\"Privacy policy\"</a>, updated 1 October 2026</li>\n<li>Floani, <a href=\"https://floani.com/refunds.html\">\"Refunds and cancellation\"</a>, accessed 6 October 2026</li>\n<li>Product Hunt, <a href=\"https://www.producthunt.com/products/floani\">\"Floani\"</a>, 6 October 2026</li>\n<li>Product Hunt, <a href=\"https://www.producthunt.com/p/floani/floani\">\"Floani launch discussion\"</a>, 6 October 2026</li>\n<li>Eraser, <a href=\"https://www.eraser.io/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n<li>Excalidraw, <a href=\"https://plus.excalidraw.com/pricing\">\"Excalidraw+ pricing\"</a>, accessed 6 October 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Reflections_on_the_new_Machine_Age_%E2%80%94_technology%2C_inequality_and_the_economy_%2816620787618%29.jpg/1920px-Reflections_on_the_new_Machine_Age_%E2%80%94_technology%2C_inequality_and_the_economy_%2816620787618%29.jpg",
+      "alt": "People in a meeting room photographing a large wall-to-wall whiteboard covered in notes and sketches",
+      "caption": "Explaining a system usually starts at a whiteboard. Floani's pitch is to make that sketch move.",
+      "credit": "Photo: Steve Jurvetson / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Reflections_on_the_new_Machine_Age_%E2%80%94_technology,_inequality_and_the_economy_(16620787618).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Programmer_at_work_%28Unsplash%29.jpg/1920px-Programmer_at_work_%28Unsplash%29.jpg",
+      "alt": "A person typing on a laptop showing code in an editor",
+      "caption": "Floani's MCP server lets coding agents such as Claude Code, Codex and Cursor draft diagrams.",
+      "credit": "Photo: Crew / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Programmer_at_work_(Unsplash).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1920px-BalticServers_data_center.jpg",
+      "alt": "Rows of server racks in a data centre aisle",
+      "caption": "Cloud architecture, the kind of system Floani's examples animate, runs on rooms like this.",
+      "credit": "Photo: BalticServers.com / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Programmers.jpg/1920px-Programmers.jpg",
+      "alt": "Two developers looking at a laptop screen together in an office",
+      "caption": "Prompts sent to Floani's assistant may reach third-party model providers, so keep secrets out.",
+      "credit": "Photo: Lbronn / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Programmers.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/WikiConference_North_America_2018_Hackathon_-_left_whiteboard.jpg/1920px-WikiConference_North_America_2018_Hackathon_-_left_whiteboard.jpg",
+      "alt": "A whiteboard covered in handwritten project ideas at a hackathon",
+      "caption": "Static whiteboard notes, like these from a 2018 hackathon, are what animated diagram tools try to improve on.",
+      "credit": "Photo: Minh Nguyen / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:WikiConference_North_America_2018_Hackathon_-_left_whiteboard.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://floani.com",
+      "publisher": "Floani",
+      "date": "2026-10-06",
+      "claim": "What Floani does: shapes, logos, HTML cards, Mermaid, motion, presenting, links, MP4; example gallery; languages"
+    },
+    {
+      "url": "https://floani.com/pricing",
+      "publisher": "Floani",
+      "date": "2026-10-06",
+      "claim": "Free, Pro $9/$90, Max $19/$190; plan limits; credits; fair use rows; FAQ incl. Claude web connectors not supported"
+    },
+    {
+      "url": "https://floani.com/mcp",
+      "publisher": "Floani",
+      "date": "2026-10-06",
+      "claim": "MCP setup for Claude Code, Codex, Cursor, Claude Desktop; Streamable HTTP; API key scopes; free SKILL.md"
+    },
+    {
+      "url": "https://floani.com/terms.html",
+      "publisher": "Floani",
+      "date": "2026-10-01",
+      "claim": "IMPACTUS AI LTDA, Hortolândia, Brazil; beta; content and AI output ownership; credits; age 16; Brazilian law"
+    },
+    {
+      "url": "https://floani.com/privacy.html",
+      "publisher": "Floani",
+      "date": "2026-10-01",
+      "claim": "No training on your work; opt-in analytics; OpenRouter providers and countries; Composio connected apps; 24-month anti-fraud codes"
+    },
+    {
+      "url": "https://floani.com/refunds.html",
+      "publisher": "Floani",
+      "date": "2026-10-06",
+      "claim": "Auto-renewal; cancellation at period end; 7-day refund for Brazil; local withdrawal rights elsewhere"
+    },
+    {
+      "url": "https://www.producthunt.com/products/floani",
+      "publisher": "Product Hunt",
+      "date": "2026-10-06",
+      "claim": "First launch 6 Oct 2026; maker Elber Domingos; 69 upvotes, rank 27, 5 comments, no reviews when checked"
+    },
+    {
+      "url": "https://www.producthunt.com/p/floani/floani",
+      "publisher": "Product Hunt",
+      "date": "2026-10-06",
+      "claim": "Launch discussion: maker intro, Harsh Yadav and Nikolas Dimitroulakis comments"
+    },
+    {
+      "url": "https://www.eraser.io/pricing",
+      "publisher": "Eraser",
+      "date": "2026-10-06",
+      "claim": "Free 3 files/3 AI diagrams; Starter $20/$15 per member; 40 credits; exports PDF/PNG/SVG/MD; API"
+    },
+    {
+      "url": "https://plus.excalidraw.com/pricing",
+      "publisher": "Excalidraw",
+      "date": "2026-10-06",
+      "claim": "Plus $7 monthly or $6 billed yearly per user; presentations; extended AI; PDF/PPTX export"
+    }
+  ],
+  "review": {
+    "name": "Floani",
+    "url": "https://floani.com/",
+    "ph_url": "https://www.producthunt.com/products/floani",
+    "category": "DesignApplication",
+    "os": "Web",
+    "pricing_url": "https://floani.com/pricing",
+    "price": "9",
+    "currency": "USD",
+    "billing": "per month (billed monthly; $90 a year billed yearly)",
+    "free_plan": "yes",
+    "checked": "2026-10-06",
+    "rating": "3.4",
+    "verdict": "A fresh, keenly priced idea with an unusually complete MCP setup for AI agents, but it's a beta from a one-person launch, so keep exports of anything important.",
+    "pros": [
+      "Diagrams and animation in one project, with MP4 and GIF export",
+      "Pro at $9 a month undercuts Eraser's entry plan",
+      "MCP server for Claude Code, Codex and Cursor on Pro and Max",
+      "Detailed privacy policy with opt-in analytics and no training on your work"
+    ],
+    "cons": [
+      "Beta product with no public changelog or blog",
+      "AI prompts may reach model providers that keep them",
+      "Free plan can't export video or share links",
+      "No SSO, admin controls or security certifications listed"
+    ]
+  }
+}

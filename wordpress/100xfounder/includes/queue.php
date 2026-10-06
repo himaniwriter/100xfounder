@@ -127,6 +127,9 @@ function xf_create_draft(array $d, $author_id) {
     }
 
     xf_save_sources($post_id, $sources);
+    if ($type === 'post' && !empty($d['review']) && function_exists('xf_save_review')) {
+        xf_save_review($post_id, $d['review']); // Tool review: at-a-glance box and Product schema.
+    }
     update_post_meta($post_id, '_xf_drafted_by', 'claude-skill');
     if (!empty($d['original_url'])) update_post_meta($post_id, '_xf_original_url', esc_url_raw($d['original_url']));
     if (!empty($d['image_credit'])) update_post_meta($post_id, '_xf_image_credit', sanitize_text_field($d['image_credit']));
