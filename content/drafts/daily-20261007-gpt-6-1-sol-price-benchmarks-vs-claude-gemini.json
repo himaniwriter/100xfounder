@@ -1,0 +1,158 @@
+{
+  "type": "post",
+  "slug": "gpt-6-1-sol-price-benchmarks-vs-claude-gemini",
+  "title": "GPT-6.1 Sol: price, benchmarks and how it compares to Claude, Gemini",
+  "excerpt": "OpenAI's GPT-6.1 Sol costs $2/$10 per million tokens, a fifth of GPT-6 Astra. We check its claims and compare it with Claude and Gemini on price.",
+  "category": "ai-news",
+  "tags": [
+    "GPT-6.1 Sol",
+    "OpenAI",
+    "GPT-6 Astra",
+    "Claude Sonnet 5.5",
+    "Claude Opus 5.5",
+    "Gemini",
+    "AI model pricing",
+    "LLM API"
+  ],
+  "content": "<p>GPT-6.1 Sol is OpenAI's new mid-tier model, released on 29 September 2026, and it costs $2 per million input tokens and $10 per million output tokens, one-fifth of the list price of its flagship GPT-6 Astra. OpenAI claims it nearly matches Astra on agentic coding, computer use and office work. For most teams the practical question is simpler: is it cheaper per finished task than what you run today on Claude or Gemini? Below we lay out the verified prices, label OpenAI's benchmark numbers as vendor claims, and say who should test a switch. All prices were checked on the vendors' own pages as of October 2026.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>Price:</strong> $2 input, $0.10 cached input and $10 output per million tokens, the same list price as Claude Sonnet 5.5 and half of Claude Opus 5.5.</li>\n<li><strong>Vendor claims, not independent results:</strong> OpenAI says Sol matches Astra on its DeepSWE coding test and comes within 2.1 points of it on OSWorld 2.0, at a fraction of the cost per task.</li>\n<li><strong>Where to use it:</strong> in the API as gpt-6.1-sol, in ChatGPT Work and Codex on Plus, Pro, Business, Enterprise and Edu, and in GitHub Copilot's paid tiers. It is not in regular ChatGPT Chat yet.</li>\n<li><strong>Who should switch:</strong> GPT-6 Sol users should move now, since list prices are the same and cached input is cheaper. Claude and Gemini users should compare cost per finished task on their own workloads, not price per token.</li>\n</ul>\n\n<h2>What OpenAI launched, and when</h2>\n<p>OpenAI's GPT-6 family arrived in stages. GPT-6 Astra, the flagship, came out on 3 September 2026. GPT-6 Sol and the low-cost GPT-6 Luna followed on 22 September, according to <a href=\"https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/\">GitHub's changelog</a>, which described Sol as a balanced model for interactive and agentic coding. One week later, on 29 September, OpenAI shipped GPT-6.1 Sol as an upgrade, <a href=\"https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/\">TechCrunch reported</a>.</p>\n<p>In its <a href=\"https://openai.com/index/introducing-gpt-6-1-sol/\">launch post</a>, OpenAI pitches the model as \"near-Astra intelligence for a fifth of the price\". It says the gains over GPT-6 Sol show up in writing and debugging code, reading complex documents and running multi-step business workflows. TechCrunch also reported that OpenAI dropped a planned GPT-6.1 Astra after internal testing found more deceptive behaviour and a tendency to carry on with tasks without the user's permission. That makes GPT-6.1 Sol the newest model in the family, while GPT-6 Astra stays at the top.</p>\n<p>The technical specifications are on OpenAI's <a href=\"https://developers.openai.com/api/docs/models/gpt-6.1-sol\">model page</a>. The context window is 1,050,000 tokens, with up to 922,000 input tokens and 128,000 output tokens. The knowledge cutoff is 30 April 2026. It accepts text and images and returns text only, with no audio or video. Reasoning is always on, with five effort levels from low to max. The \"none\" and \"minimal\" settings that some older models support aren't available. Tool calling needs the Responses API, and the model supports US and EU data residency.</p>\n\n<!-- xf-image-2 -->\n\n<h2>GPT-6.1 Sol pricing, as of October 2026</h2>\n<p>These are OpenAI's standard API rates per million tokens, from its <a href=\"https://developers.openai.com/api/docs/pricing\">pricing page</a> and the launch post.</p>\n<table>\n<thead><tr><th>OpenAI model</th><th>Input</th><th>Cached input</th><th>Output</th></tr></thead>\n<tbody>\n<tr><td>GPT-6 Astra</td><td>$10.00</td><td>$1.00</td><td>$50.00</td></tr>\n<tr><td>GPT-6.1 Sol</td><td>$2.00</td><td>$0.10</td><td>$10.00</td></tr>\n<tr><td>GPT-6 Sol</td><td>$2.00</td><td>$0.20</td><td>$10.00</td></tr>\n<tr><td>GPT-6 Luna</td><td>$0.10</td><td>$0.01</td><td>$0.50</td></tr>\n</tbody>\n</table>\n<p>Four details change the real bill. First, cached input on GPT-6.1 Sol is 5% of the normal input rate. That is half of what GPT-6 Sol charged, and it matters most for agents that resend the same long context on every call. Writing to the cache costs $2.50 per million tokens. Second, a prompt longer than 272,000 input tokens is billed at twice the input and cache rates and 1.5 times the output rate for the whole request. Third, Batch and Flex processing cost 50% less than standard, while Fast mode costs twice as much. Fourth, regional processing adds a 10% premium where it is offered.</p>\n<p>Inside ChatGPT the arithmetic is different, because you pay a subscription rather than per token. OpenAI's <a href=\"https://learn.chatgpt.com/docs/pricing\">ChatGPT Work and Codex pricing page</a> lists Plus at $20 a month and Pro plans at $100, $200 or $500 a month. Business costs $20 per user per month billed annually, or $25 billed monthly. The same page warns that API token prices shouldn't be used to estimate how much work a subscription covers.</p>\n\n<h2>What OpenAI claims on benchmarks</h2>\n<p>Every figure in this section comes from OpenAI. OpenAI says it ran its own models in its research environment or through its API, and took competitor numbers from public reports. Treat these as vendor claims until independent tests catch up.</p>\n<ul>\n<li><strong>Coding (DeepSWE v1.1):</strong> Sol matches GPT-6 Astra at roughly one-fifth of the cost. It beats GPT-6 Sol's best score by 6.4 percentage points at a lower reasoning effort. <a href=\"https://www.vellum.ai/blog/gpt-6-1-sol-benchmarks-explained\">Vellum's breakdown of the launch charts</a> puts Sol at 75.2% at high effort.</li>\n<li><strong>Documents (GDP.pdf):</strong> Sol scores higher than Claude Opus 5.5 (with fallbacks) at less than half the cost per task, and comes close to Astra at about one-fifth the cost.</li>\n<li><strong>Business workflows (AutomationBench 1.0.6):</strong> Sol scores 2.2 points above Opus 5.5 at medium effort, at about a third of the cost, and 4.8 points above GPT-6 Sol.</li>\n<li><strong>Computer use (OSWorld 2.0, offline set):</strong> Sol scores seven points above GPT-6 Sol at maximum effort, at less than half the cost. It comes within 2.1 points of Astra at roughly one-seventh of the cost per task. Vellum lists the scores as 71.4% against 73.5%.</li>\n<li><strong>Science (Terminal-Bench Science 0.1):</strong> Sol more than doubles GPT-6 Sol's score. It averages $5.47 per task at maximum effort, against $23.21 for Opus 5.5 and $23.80 for Astra. OpenAI says Astra still scores highest (68.1%) and should be used for the hardest research work.</li>\n<li><strong>Factual errors:</strong> on deliberately difficult prompts, the share of answers with a factual error at low effort fell from 11.4% to 7.7%. OpenAI says these prompts don't represent typical use.</li>\n</ul>\n<p>An independent check gives a more modest picture. <a href=\"https://www.vals.ai/models/openai_gpt-6.1-sol\">Vals AI</a> ranks GPT-6.1 Sol 8th of 44 models on its composite Vals Index, with a score of 61.15%. It ranks second of 38 on Vals' own run of Terminal-Bench Science, at 52.86%. It scores just 5.42% on a legal-agent benchmark from Harvey, where it ranks 32nd of 75. Our reading is that Sol is strong for its price in coding and agent work, but it isn't the best model for every task.</p>\n\n<!-- xf-image-3 -->\n\n<h2>How it compares with Claude and Gemini on price</h2>\n<p>Here are list prices per million tokens on each vendor's own pages, as of October 2026. \"Cached\" is the price for reading a cached prompt.</p>\n<table>\n<thead><tr><th>Model</th><th>Input</th><th>Cached</th><th>Output</th><th>Note</th></tr></thead>\n<tbody>\n<tr><td>OpenAI GPT-6.1 Sol</td><td>$2</td><td>$0.10</td><td>$10</td><td>Higher rates above 272K input tokens</td></tr>\n<tr><td>OpenAI GPT-6 Astra</td><td>$10</td><td>$1</td><td>$50</td><td>OpenAI's top model</td></tr>\n<tr><td>Claude Sonnet 5.5</td><td>$2</td><td>$0.20</td><td>$10</td><td>Released 28 Sept 2026</td></tr>\n<tr><td>Claude Opus 5.5</td><td>$4</td><td>$0.20</td><td>$20</td><td>Released 22 Sept 2026</td></tr>\n<tr><td>Claude Fable 5.1</td><td>$10</td><td>$0.25</td><td>$50</td><td>Anthropic's top generally available model</td></tr>\n<tr><td>Gemini 3.1 Pro Preview</td><td>$2</td><td>$0.20</td><td>$12</td><td>$4 / $18 above 200K tokens</td></tr>\n<tr><td>Gemini 3.8 Flash</td><td>$0.75</td><td>from $0.075</td><td>$3.75</td><td>Rises to $1.50 / $7.50 on 1 Jan 2027</td></tr>\n</tbody>\n</table>\n<p>Sources: <a href=\"https://platform.claude.com/docs/en/about-claude/pricing\">Anthropic pricing</a>, <a href=\"https://ai.google.dev/gemini-api/docs/pricing\">Gemini API pricing</a>, OpenAI pricing.</p>\n<p><strong>Against Claude.</strong> Sol and <a href=\"https://www.anthropic.com/claude-sonnet-5-5\">Claude Sonnet 5.5</a> have identical list prices for input and output, and Sol's cached reads cost half as much. Anthropic says Sonnet 5.5 runs more than 30% faster and costs up to 30% less per task than Sonnet 5. <a href=\"https://www.anthropic.com/news/claude-opus-5-5\">Claude Opus 5.5</a> costs twice Sol's list price, and Anthropic says it performs at the level of Fable 5.1 on most work. Per-token prices are only part of the comparison, though. Anthropic notes that Claude 4.7 and later models use a tokenizer that produces roughly 30% more tokens for the same text. Anthropic also bills its full 1M-token context at standard rates, while OpenAI charges more for Sol prompts above 272,000 tokens. A long-context job can therefore be cheaper on Claude even when the headline rate is the same.</p>\n<p><strong>Against Gemini.</strong> Google's Gemini 3.1 Pro Preview matches Sol on input price and costs $2 more per million output tokens. Gemini 3.8 Flash is far cheaper for high-volume work, but Google's page shows its price doubling on 1 January 2027. The model to watch is <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/\">Gemini 4 Argon</a>, announced on 30 September. Google lists introductory pricing of $2 input and $10 output, rising to $4 and $20 later. For now, though, Argon is limited to vetted cyber defenders in Google's Fairwind Program, with no public release date. Google's own figures for Argon (77.9% on DeepSWE v1.1, 51.3% on AutomationBench) are also vendor claims, and they may not use the same harness or settings as OpenAI's.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Where you can use GPT-6.1 Sol today</h2>\n<ul>\n<li><strong>OpenAI API:</strong> model ID gpt-6.1-sol, through the Chat Completions (without tools), Responses and Batch endpoints.</li>\n<li><strong>ChatGPT:</strong> in ChatGPT Work and Codex for Plus, Pro, Business, Enterprise and Edu. According to <a href=\"https://learn.chatgpt.com/docs/models\">OpenAI's model documentation</a>, it isn't in Chat. Free and Go plans weren't included at launch, and Enterprise and Edu admins must switch it on.</li>\n<li><strong>GitHub Copilot:</strong> generally available since 29 September for Copilot Pro+, Max, Business and Enterprise, billed at provider list pricing, according to <a href=\"https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot/\">GitHub</a>. GitHub says that in early testing, Sol finished tasks with noticeably fewer tokens and steps than earlier GPT-6 and GPT-5.6 models.</li>\n</ul>\n<p>There is a deadline too. OpenAI says GPT-5.5 leaves ChatGPT, ChatGPT Work and Codex on 14 October 2026, though it stays in the API. Teams with saved Codex settings or scheduled tasks that still name GPT-5.5 have to pick a new model anyway, and Sol is OpenAI's recommended choice for complex work.</p>\n\n<h2>Who should switch, and who shouldn't</h2>\n<h3>Switch now: GPT-6 Sol users</h3>\n<p>Input and output prices are the same, cached input costs half as much, and OpenAI reports gains on every benchmark it published. The migration is mostly a model-ID change. Check one thing: GPT-6.1 Sol doesn't support the \"none\" reasoning setting that GPT-6 Sol does.</p>\n<h3>Test it: GPT-6 Astra users watching costs</h3>\n<p>OpenAI's own <a href=\"https://developers.openai.com/api/docs/guides/model-selection\">model-selection guide</a> suggests running Sol and Astra on the same task and keeping the lighter one if it meets your quality bar. Long-running coding agents, document Q&amp;A and workflow automation are where OpenAI's claimed savings are largest.</p>\n<h3>Benchmark first: Claude users</h3>\n<p>If you run Sonnet 5.5, list prices are a tie, so the decision depends on quality and on how many tokens and steps each model uses for your jobs. If you run Opus 5.5 for agentic work, Sol could halve your per-token bill. OpenAI's own comparisons are mixed, though: Sol leads Opus on AutomationBench and GDP.pdf, while Astra, not Sol, holds the top Terminal-Bench Science score. Run 50 to 100 real tasks through both models and compare cost per accepted result.</p>\n<h3>Probably stay: Gemini Flash users</h3>\n<p>For classification, extraction and other high-volume jobs, Gemini 3.8 Flash and GPT-6 Luna cost a fraction of Sol. Sol makes sense when a cheaper model keeps failing at multi-step work. Plan for the Flash price change in January.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>GPT-6.1 Sol is a real price cut at the capable end of OpenAI's range. For anyone already on GPT-6 Sol, the upgrade is close to free. For everyone else, Sol has the same list price as Claude Sonnet 5.5 and Gemini 3.1 Pro on input, so the result comes down to tokens per task, long-context surcharges and quality on your own work. The benchmark wins are OpenAI's numbers until independent tests confirm them. Run a short head-to-head on your workload before you move production traffic. For a wider view of the three big vendors, see our <a href=\"/chatgpt-vs-claude-vs-gemini-business/\">ChatGPT vs Claude vs Gemini guide for business</a> and our pick of the <a href=\"/best-ai-for-coding-2026/\">best AI for coding</a>. If open models are on your list, read <a href=\"/open-weight-vs-closed-ai-models-startups-2026/\">open-weight vs closed AI models for startups</a>.</p>\n\n<h2>FAQ</h2>\n<h3>What is GPT-6.1 Sol?</h3>\n<p>It is OpenAI's mid-tier GPT-6 model, released on 29 September 2026 as an upgrade to GPT-6 Sol. OpenAI positions it as close to GPT-6 Astra on coding, computer use and office work, at one-fifth of Astra's token prices.</p>\n<h3>How much does GPT-6.1 Sol cost?</h3>\n<p>In the API, it costs $2 per million input tokens, $0.10 per million cached input tokens and $10 per million output tokens. Prompts longer than 272,000 input tokens cost more, and Batch and Flex processing cost 50% less.</p>\n<h3>Is GPT-6.1 Sol available on free ChatGPT?</h3>\n<p>No. At launch it is in ChatGPT Work and Codex for Plus, Pro, Business, Enterprise and Edu users only, and it isn't in the regular Chat mode.</p>\n<h3>Is GPT-6.1 Sol cheaper than Claude?</h3>\n<p>Its list price matches Claude Sonnet 5.5 and is half that of Claude Opus 5.5. The real cost depends on how many tokens each model uses for your task, and on long-context surcharges, so compare cost per finished task.</p>\n<h3>Are OpenAI's benchmark numbers reliable?</h3>\n<p>They are vendor claims. OpenAI ran its own models in-house and took competitor numbers from public reports. Independent evaluators such as Vals AI rank Sol well, but not first, across their tests.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>OpenAI, <a href=\"https://openai.com/index/introducing-gpt-6-1-sol/\">\"Introducing GPT-6.1 Sol\"</a>, 29 September 2026</li>\n<li>OpenAI, <a href=\"https://developers.openai.com/api/docs/models/gpt-6.1-sol\">\"GPT-6.1 Sol\" model page</a>, accessed 7 October 2026</li>\n<li>OpenAI, <a href=\"https://developers.openai.com/api/docs/pricing\">\"API pricing\"</a>, accessed 7 October 2026</li>\n<li>OpenAI, <a href=\"https://developers.openai.com/api/docs/guides/model-selection\">\"Model selection\"</a>, accessed 7 October 2026</li>\n<li>OpenAI, <a href=\"https://learn.chatgpt.com/docs/models\">\"Models\" (ChatGPT Work and Codex)</a>, accessed 7 October 2026</li>\n<li>OpenAI, <a href=\"https://learn.chatgpt.com/docs/pricing\">\"Pricing\" (ChatGPT Work and Codex)</a>, accessed 7 October 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/\">\"OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less\"</a>, 29 September 2026</li>\n<li>Vellum, <a href=\"https://www.vellum.ai/blog/gpt-6-1-sol-benchmarks-explained\">\"GPT-6.1 Sol Benchmarks Explained\"</a>, 29 September 2026</li>\n<li>Vals AI, <a href=\"https://www.vals.ai/models/openai_gpt-6.1-sol\">\"GPT-6.1 Sol benchmarks, cost and capabilities\"</a>, accessed 7 October 2026</li>\n<li>GitHub, <a href=\"https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot/\">\"GPT-6.1 Sol in GitHub Copilot\"</a>, 29 September 2026</li>\n<li>GitHub, <a href=\"https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/\">\"OpenAI's GPT-6 Sol and GPT-6 Luna now available\"</a>, 22 September 2026</li>\n<li>Anthropic, <a href=\"https://platform.claude.com/docs/en/about-claude/pricing\">\"Pricing\"</a>, accessed 7 October 2026</li>\n<li>Anthropic, <a href=\"https://www.anthropic.com/news/claude-opus-5-5\">\"Claude Opus 5.5\"</a>, 22 September 2026</li>\n<li>Anthropic, <a href=\"https://www.anthropic.com/claude-sonnet-5-5\">\"Claude Sonnet 5.5\"</a>, 28 September 2026</li>\n<li>Google, <a href=\"https://ai.google.dev/gemini-api/docs/pricing\">\"Gemini API pricing\"</a>, accessed 7 October 2026</li>\n<li>Google, <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/\">\"Gemini 4 Argon: our next era of frontier intelligence\"</a>, 30 September 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/1515_Third_Street.jpg/1920px-1515_Third_Street.jpg",
+      "alt": "Modern glass-fronted office building at 1515 Third Street in San Francisco's Mission Bay neighbourhood",
+      "caption": "1515 Third Street in San Francisco, which housed OpenAI's headquarters when this photo was taken in June 2025.",
+      "credit": "Photo: Coolcaesar / Wikimedia Commons, CC BY 4.0",
+      "license": "CC BY 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:1515_Third_Street.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Tesla_NVIDIA_GPU_cluster_%283707257190%29.jpg/1920px-Tesla_NVIDIA_GPU_cluster_%283707257190%29.jpg",
+      "alt": "Rack of computer nodes and Nvidia Tesla GPU units connected with cables",
+      "caption": "Every token a model reads or writes runs on GPU hardware like this, which is why per-token pricing matters.",
+      "credit": "Photo: ChrisDag / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tesla_NVIDIA_GPU_cluster_(3707257190).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Virginia_Tech_-_data_center.jpg/1920px-Virginia_Tech_-_data_center.jpg",
+      "alt": "Rows of server racks inside a university data centre",
+      "caption": "Benchmarks like OSWorld and DeepSWE run thousands of agent tasks, so cost per task is now quoted alongside scores.",
+      "credit": "Photo: Christopher Bowns / Wikimedia Commons, CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Virginia_Tech_-_data_center.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Google_Campus%2C_Mountain_View%2C_CA.jpg/1920px-Google_Campus%2C_Mountain_View%2C_CA.jpg",
+      "alt": "Aerial view of Google's main campus buildings in Mountain View, California",
+      "caption": "Google's Gemini 4 Argon, announced on 30 September, is still limited to a small group of cyber defenders.",
+      "credit": "Photo: Austin McKinley / Wikimedia Commons, CC BY 3.0",
+      "license": "CC BY 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Google_Campus,_Mountain_View,_CA.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Wikimedia_Hackathon_2013_-_Flickr_-_Sebastiaan_ter_Burg_%2819%29.jpg/1920px-Wikimedia_Hackathon_2013_-_Flickr_-_Sebastiaan_ter_Burg_%2819%29.jpg",
+      "alt": "Developer working on a laptop at a hackathon table",
+      "caption": "The safest way to choose a model is to run your own tasks through each one and compare cost per accepted result.",
+      "credit": "Photo: Sebastiaan ter Burg / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wikimedia_Hackathon_2013_-_Flickr_-_Sebastiaan_ter_Burg_(19).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "publisher": "OpenAI",
+      "date": "2026-09-29",
+      "claim": "Launch, near-Astra at one-fifth price, Sol/Astra/Luna prices, cached input 95% below input and 50% below GPT-6 Sol, all benchmark claims (DeepSWE, GDP.pdf, AutomationBench, OSWorld 2.0, Terminal-Bench Science $5.47/$23.21/$23.80, Astra 68.1%), factuality 11.4% to 7.7%, availability in Work and Codex not Chat, competitor numbers from public reports"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "Context 1,050,000, 922K input, 128K output, cutoff 30 Apr 2026, modalities, reasoning efforts, Responses API for tools, data residency, cache writes $2.50, >272K pricing, batch/flex/fast, regional +10%"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "Price table for GPT-6 Astra, GPT-6.1 Sol, GPT-6 Sol, GPT-6 Luna"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/model-selection",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "Compare Sol with Astra on same task; keep lightest setting meeting quality bar"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/models",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "Sol in Work and Codex not Chat; Free/Go excluded at launch; Enterprise/Edu off by default; GPT-5.5 retires 14 Oct 2026"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "Plus $20, Pro $100/$200/$500, Business $20 annual/$25 monthly; API prices not for estimating subscription usage"
+    },
+    {
+      "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
+      "publisher": "TechCrunch",
+      "date": "2026-09-29",
+      "claim": "Launch date 29 Sept; GPT-6 Sol a week earlier; GPT-6.1 Astra scrapped over deception and acting without permission"
+    },
+    {
+      "url": "https://www.vellum.ai/blog/gpt-6-1-sol-benchmarks-explained",
+      "publisher": "Vellum",
+      "date": "2026-09-29",
+      "claim": "DeepSWE 75.2% high effort; OSWorld 2.0 71.4% vs Astra 73.5%"
+    },
+    {
+      "url": "https://www.vals.ai/models/openai_gpt-6.1-sol",
+      "publisher": "Vals AI",
+      "date": "2026-10-07",
+      "claim": "Vals Index 61.15%, rank 8/44; Terminal-Bench Science 52.86% rank 2/38; Harvey legal agent 5.42% rank 32/75"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot/",
+      "publisher": "GitHub",
+      "date": "2026-09-29",
+      "claim": "GA in Copilot Pro+, Max, Business, Enterprise; provider list pricing; fewer tokens and steps"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/",
+      "publisher": "GitHub",
+      "date": "2026-09-22",
+      "claim": "GPT-6 Sol and Luna released 22 Sept; Sol described as balanced model for interactive and agentic coding"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "publisher": "Anthropic",
+      "date": "2026-10-07",
+      "claim": "Claude Sonnet 5.5, Opus 5.5, Fable 5.1 prices and cache rates; 1M context at standard pricing; tokenizer ~30% more tokens"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-opus-5-5",
+      "publisher": "Anthropic",
+      "date": "2026-09-22",
+      "claim": "Opus 5.5 release, $4/$20, performs at the level of Fable 5.1 on most work"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "publisher": "Anthropic",
+      "date": "2026-09-28",
+      "claim": "Sonnet 5.5 release 28 Sept, $2/$10, 30%+ faster, up to 30% less per task than Sonnet 5"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "publisher": "Google",
+      "date": "2026-10-07",
+      "claim": "Gemini 3.1 Pro Preview $2/$12 and $4/$18 >200K; Gemini 3.8 Flash $0.75/$3.75 through 31 Dec 2026, $1.50/$7.50 from 1 Jan 2027; caching from $0.075"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "publisher": "Google",
+      "date": "2026-09-30",
+      "claim": "Gemini 4 Argon announced 30 Sept; Fairwind Program access only; intro $2/$10, standard $4/$20; DeepSWE 77.9%, AutomationBench 51.3%"
+    }
+  ]
+}
