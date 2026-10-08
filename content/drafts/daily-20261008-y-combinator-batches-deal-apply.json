@@ -1,0 +1,152 @@
+{
+ "type": "post",
+ "slug": "y-combinator-batches-deal-apply",
+ "title": "Y Combinator in 2026: batches, the $500K deal and how to apply",
+ "excerpt": "YC's 2026 batch calendar, the $500K standard deal and dilution, how much of each batch is AI, how to apply, and the US parent rule for Indian founders.",
+ "category": "global",
+ "tags": [
+  "y combinator",
+  "yc application",
+  "startup accelerator",
+  "safe",
+  "indian founders",
+  "delaware flip",
+  "reverse flip",
+  "ai startups"
+ ],
+ "content": "<p>Y Combinator now runs four batches a year, invests $500,000 in every company it accepts, and requires the company to have a parent incorporated in the US, Canada, Singapore or the Cayman Islands. The next deadline is for the Winter 2027 batch: applications close on 2 November at 8pm Pacific time, applicants hear back by 11 December, and the batch runs from January to March in person in San Francisco (<a href=\"https://www.ycombinator.com/apply\">Y Combinator</a>).</p>\n\n<p>That deadline lands while the Fall 2026 batch is filling YC's startup directory, which listed 121 Fall 2026 companies when we checked on 8 October 2026 (<a href=\"https://www.ycombinator.com/companies\">YC startup directory</a>). This guide covers the batch calendar, the standard deal and what it costs you in equity, how much of each batch is AI, how to apply, and what Indian founders need to know about the US-parent requirement and the reverse-flip trend. It is general information, not legal or tax advice; take advice from a lawyer and chartered accountant before restructuring a company.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>YC invests $500,000: $125,000 on a post-money SAFE for 7%, plus $375,000 on an uncapped SAFE with a most-favoured-nation clause.</li>\n<li>It runs Winter, Spring, Summer and Fall batches, says over 10,000 companies apply every three months, and typically accepts about 1%.</li>\n<li>About three in four companies in each 2026 batch describe their product in terms of AI, agents or machine learning, by our count of YC's directory.</li>\n<li>You do not need to incorporate before applying, but an Indian company must sit under a US, Canadian, Singapore or Cayman parent to join.</li>\n<li>Few India-based companies now get in; our count found one or two per 2026 batch.</li>\n</ul>\n\n<h2>The 2026 batch calendar</h2>\n<p>YC moved from two batches a year to four. Announcing its first Spring batch on 20 January 2025, YC's Dalton Caldwell gave two reasons: more frequent batches make the timing work for more founders, and the pace of change in AI is pushing more people to start companies (<a href=\"https://www.ycombinator.com/blog/announcing-yc-x25/\">Y Combinator</a>). YC's investor page now describes four batches a year, each ending with a Demo Day (<a href=\"https://www.ycombinator.com/investors\">Y Combinator</a>).</p>\n<p>Batches are smaller than the old twice-yearly cohorts. YC's public directory listed these company counts on 8 October 2026:</p>\n<table>\n<thead><tr><th>Batch</th><th>Companies in YC directory</th></tr></thead>\n<tbody>\n<tr><td>Winter 2026</td><td>198</td></tr>\n<tr><td>Spring 2026</td><td>193</td></tr>\n<tr><td>Summer 2026</td><td>231</td></tr>\n<tr><td>Fall 2026 (still being added)</td><td>121</td></tr>\n</tbody>\n</table>\n<p>Directory counts can differ from Demo Day lists. TechCrunch put the Winter 2026 Demo Day cohort at nearly 190 companies when it covered the event on 26 March 2026 (<a href=\"https://techcrunch.com/2026/03/26/16-of-the-most-interesting-startups-from-yc-w26-demo-day/\">TechCrunch</a>).</p>\n<p>Each batch is in person in San Francisco and starts with a three-day in-person kick-off (<a href=\"https://www.ycombinator.com/apply\">Y Combinator</a>).</p>\n\n<!-- xf-image-2 -->\n\n<h2>The standard deal, and what it costs you</h2>\n<p>YC's standard deal, as published on its website (<a href=\"https://www.ycombinator.com/deal\">Y Combinator</a>):</p>\n<ul>\n<li><strong>$125,000 on a post-money SAFE for 7%</strong> of the company.</li>\n<li><strong>$375,000 on an uncapped SAFE with a most-favoured-nation (MFN) provision.</strong> It converts on the best terms of the SAFEs or notes you issue before your next priced round. YC's example: if you later raise on SAFEs with a $15 million post-money cap, the MFN SAFE converts at that cap, worth about 2.5% ($375,000 ÷ $15 million).</li>\n<li><strong>Pro rata rights</strong> to keep investing in later rounds.</li>\n<li>The money is committed the day you are accepted, is not tied to milestones, and YC charges no programme fees.</li>\n</ul>\n<p>In YC's own example, that adds up to roughly 9.5% before the dilution from other investors. A lower cap on your next SAFEs means a bigger stake for the MFN SAFE, so the second number is the one to model. A SAFE (simple agreement for future equity) is not debt: it converts to shares at a later priced round.</p>\n<p>Indian founders sometimes ask why this structure does not work for an Indian private company. SAFEs are US instruments, and YC only invests in US, Canadian, Cayman and Singapore corporations (<a href=\"https://www.ycombinator.com/deal\">Y Combinator</a>), which is the root of the flip discussed below.</p>\n\n<h2>How much of YC is AI now?</h2>\n<p>Most of it. In March 2025 YC chief executive Garry Tan told CNBC that about 80% of the Winter 2025 companies presenting at Demo Day were AI-focused, that for about a quarter of them 95% of the code was written by AI, and that the batch in aggregate grew 10% a week (<a href=\"https://www.cnbc.com/2025/03/15/y-combinator-startups-are-fastest-growing-in-fund-history-because-of-ai.html\">CNBC</a>).</p>\n<p>YC does not publish an official AI share for each 2026 batch, so we counted. On 8 October 2026 we searched YC's public directory for companies whose one-line or long description mentions AI, artificial intelligence, agents, LLMs or machine learning (<a href=\"https://www.ycombinator.com/companies\">YC startup directory</a>):</p>\n<ul>\n<li>Winter 2026: 149 of 198, or 75%</li>\n<li>Spring 2026: 155 of 193, or 80%</li>\n<li>Summer 2026: 170 of 231, or 74%</li>\n</ul>\n<p>This is a keyword count, not a classification. It includes companies that use AI inside a product rather than sell AI, and it misses AI companies that describe themselves without those words. It is consistent with Tan's description: AI is now the default, not a category.</p>\n\n<!-- xf-image-3 -->\n\n<h2>How to apply</h2>\n<p>Applications go through YC's online portal. Most interviews are held by video in November and December for the Winter batch, with decisions the same day as the interview (<a href=\"https://www.ycombinator.com/apply\">Y Combinator</a>). What YC's FAQ says about who can apply (<a href=\"https://www.ycombinator.com/faq\">Y Combinator</a>):</p>\n<ul>\n<li><strong>You do not need to incorporate first</strong>, or to get US visas or business licences before applying.</li>\n<li><strong>Ideas are fine.</strong> On average, 40% of the companies YC funds in each batch are just an idea, and most have no revenue.</li>\n<li><strong>Solo founders are accepted</strong>, though YC says one-person startups are hard and runs a free co-founder matching service.</li>\n<li><strong>Reapplying is normal.</strong> In a typical batch, about half the companies applied more than once before being accepted.</li>\n<li><strong>Feedback</strong> is given only to teams invited to interview.</li>\n<li><strong>Late applications</strong> are read on a best-effort basis after the deadline.</li>\n</ul>\n<p>Students can use Early Decision: apply now, get funded on acceptance, and take a place in a later batch after graduating (<a href=\"https://www.ycombinator.com/early-decision\">Y Combinator</a>).</p>\n<p>On the application itself, Paul Graham's essay \"How to Apply to Y Combinator\", hosted on YC's site, says the partners care more about the founders than the idea, and that applicants who submit a video are statistically much more likely to be invited to interview (<a href=\"https://www.ycombinator.com/howtoapply\">Y Combinator</a>). Explain what you do in plain words, show what you have built, and be specific about users. If you already have a product live, a public launch is useful evidence; see what founders are shipping on our <a href=\"/launches/\">launches page</a>.</p>\n<p>As for odds, YC's investor page says over 10,000 companies apply every three months and it typically accepts 1% (<a href=\"https://www.ycombinator.com/investors\">Y Combinator</a>).</p>\n\n<!-- xf-image-4 -->\n\n<h2>Indian founders: the flip, visas and the reverse flip</h2>\n<h3>The parent-company requirement</h3>\n<p>If your company is incorporated anywhere other than the US, Canada, Singapore or the Cayman Islands, YC says you must create a parent in one of those jurisdictions, and your existing company becomes its subsidiary. YC connects accepted founders with lawyers but warns it takes significant effort (<a href=\"https://www.ycombinator.com/faq\">Y Combinator</a>). For an Indian private limited company, that usually means a US holding company owning the Indian entity, a structure known as a \"flip\". When the requirement drew criticism in India in December 2020, Inc42 reported a founder describing his setup: a Delaware parent, the Mumbai company as its wholly-owned subsidiary, transfer pricing on payments between them, and separate Indian and US lawyers. Info Edge's Sanjeev Bikhchandani argued at the time that flipping moves ownership, intellectual property and data overseas while the work stays in India (<a href=\"https://inc42.com/buzz/ycombinator-india-flip-structure-startups/\">Inc42</a>). A flip also involves Indian foreign-exchange and tax rules, so cost it with advisers before you accept.</p>\n<h3>Being in San Francisco</h3>\n<p>The batch is in person. In September 2023, a YC spokesperson told TechCrunch that international founders were struggling to take part because they could not get visas, and that only one company from India and Southeast Asia was in the Summer 2023 batch, down from 44 in Winter 2021 (<a href=\"https://techcrunch.com/2023/09/19/yc-says-visa-challenges-hampering-participation-of-international-founders\">TechCrunch</a>). YC's FAQ says it works with immigration attorneys who have helped hundreds of founders get visas, and connects each accepted team with one (<a href=\"https://www.ycombinator.com/faq\">Y Combinator</a>).</p>\n<h3>Fewer Indian companies</h3>\n<p>Inc42 counted 74 Indian startups in YC batches in 2021, 40 in 2022 and 18 in 2023, and pointed to the bigger 2022 deal, the reverse-flip trend and stronger local seed funding (<a href=\"https://inc42.com/features/startup-accelerator-y-combinator-indian-startup\">Inc42</a>). In YC's directory we found two companies located in India in Winter 2026, one in Spring 2026, two in Summer 2026 and one so far in Fall 2026 (<a href=\"https://www.ycombinator.com/companies\">YC startup directory</a>).</p>\n<h3>The reverse flip</h3>\n<p>The best-known Indian YC company has gone the other way. Razorpay, from the Winter 2015 batch (<a href=\"https://www.ycombinator.com/companies/razorpay\">Y Combinator</a>), completed its move back to India on 29 May 2025, following PhonePe, Zepto, Dream11 and Groww, according to <a href=\"https://entrackr.com/news/razorpay-completes-reverse-flip-to-india-9317267\">Entrackr</a>, which said the company was targeting a listing in 2026-27 and likely faced a large tax bill from the move. The lesson for a new founder: a flip is cheap at the start and expensive to undo later, so decide early where you expect to list.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>YC in 2026 means more batches, a fixed $500,000 cheque, and an overwhelmingly AI-heavy cohort. For Indian founders the cheque comes with a US-style structure, three months in San Francisco and a possible reverse flip later. If you are weighing YC against Indian seed investors, compare the full dilution and the cost of the flip, not just the headline cheque. Our <a href=\"/funding-tracker/\">funding tracker</a> follows who is raising from whom, with a source for every round.</p>\n\n<h2>FAQ</h2>\n<h3>How much equity does Y Combinator take?</h3>\n<p>7% for the $125,000 post-money SAFE, plus whatever the $375,000 MFN SAFE converts into. In YC's $15 million-cap example, that is about 2.5% more.</p>\n<h3>When is the next YC deadline?</h3>\n<p>Winter 2027 applications close on 2 November 2026 at 8pm Pacific time, with decisions by 11 December.</p>\n<h3>Can an Indian company apply to YC?</h3>\n<p>Yes. You do not need to restructure to apply, but if accepted you must set up a US, Canadian, Singapore or Cayman parent above the Indian company.</p>\n<h3>Does YC fund just an idea?</h3>\n<p>Yes. YC says on average 40% of each batch is just an idea, and most companies have no revenue.</p>\n<h3>Is YC remote?</h3>\n<p>No. The batch is held in person in San Francisco, starting with a three-day kick-off.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Y Combinator, \"<a href=\"https://www.ycombinator.com/apply\">Apply to Y Combinator</a>\", accessed 8 October 2026</li>\n<li>Y Combinator, \"<a href=\"https://www.ycombinator.com/deal\">The YC Deal</a>\", accessed 8 October 2026</li>\n<li>Y Combinator, \"<a href=\"https://www.ycombinator.com/faq\">Frequently Asked Questions</a>\", accessed 8 October 2026</li>\n<li>Y Combinator, \"<a href=\"https://www.ycombinator.com/investors\">Resources for Investors</a>\", accessed 8 October 2026</li>\n<li>Y Combinator (Dalton Caldwell), \"<a href=\"https://www.ycombinator.com/blog/announcing-yc-x25/\">Announcing the YC Spring 2025 batch</a>\", 20 January 2025</li>\n<li>Y Combinator (Paul Graham), \"<a href=\"https://www.ycombinator.com/howtoapply\">How to Apply to Y Combinator</a>\", accessed 8 October 2026</li>\n<li>Y Combinator, \"<a href=\"https://www.ycombinator.com/early-decision\">Early Decision for Students</a>\", accessed 8 October 2026</li>\n<li>Y Combinator, \"<a href=\"https://www.ycombinator.com/companies\">The YC Startup Directory</a>\", queried 8 October 2026</li>\n<li>CNBC, \"<a href=\"https://www.cnbc.com/2025/03/15/y-combinator-startups-are-fastest-growing-in-fund-history-because-of-ai.html\">Y Combinator startups are fastest growing, most profitable in fund history because of AI</a>\", 15 March 2025</li>\n<li>TechCrunch, \"<a href=\"https://techcrunch.com/2026/03/26/16-of-the-most-interesting-startups-from-yc-w26-demo-day/\">16 of the most interesting startups from YC W26 Demo Day</a>\", 26 March 2026</li>\n<li>TechCrunch, \"<a href=\"https://techcrunch.com/2023/09/19/yc-says-visa-challenges-hampering-participation-of-international-founders\">YC says visa challenges hampering participation of international founders</a>\", 19 September 2023</li>\n<li>Inc42, \"<a href=\"https://inc42.com/features/startup-accelerator-y-combinator-indian-startup\">Is Y Combinator Losing Its Grip On Indian Startups?</a>\", 19 September 2023</li>\n<li>Inc42, \"<a href=\"https://inc42.com/buzz/ycombinator-india-flip-structure-startups/\">Y Combinator's flip demand for Indian startups</a>\", 8 December 2020</li>\n<li>Entrackr, \"<a href=\"https://entrackr.com/news/razorpay-completes-reverse-flip-to-india-9317267\">Razorpay completes reverse flip to India</a>\", 29 May 2025</li>\n<li>Y Combinator, \"<a href=\"https://www.ycombinator.com/companies/razorpay\">Razorpay company profile</a>\", accessed 8 October 2026</li>\n</ol>",
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mark_Zuckerberg_answers_Jessica_Livingston%27s_questions_at_Startup_School_%286292791797%29.jpg/1920px-Mark_Zuckerberg_answers_Jessica_Livingston%27s_questions_at_Startup_School_%286292791797%29.jpg",
+   "alt": "Y Combinator co-founder Jessica Livingston interviewing Mark Zuckerberg on stage at YC's Startup School",
+   "caption": "YC co-founder Jessica Livingston interviews Mark Zuckerberg at YC's Startup School in 2011.",
+   "credit": "Photo: Robert Scoble / Wikimedia Commons, CC BY 2.0",
+   "license": "CC BY 2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_answers_Jessica_Livingston%27s_questions_at_Startup_School_(6292791797).jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Digital_photograph_of_the_skyline_of_the_Financial_District_of_San_Francisco%2C_California_from_the_San_Francisco_%E2%80%93_Oakland_Bay_Bridge_at_1017.15_on_Saturday%2C_3_September_2022.jpg/1920px-thumbnail.jpg",
+   "alt": "The San Francisco Financial District skyline seen from the Bay Bridge",
+   "caption": "San Francisco, where every YC batch now runs in person.",
+   "credit": "Photo: Wehrstossgewehr / Wikimedia Commons, CC BY 4.0",
+   "license": "CC BY 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Digital_photograph_of_the_skyline_of_the_Financial_District_of_San_Francisco,_California_from_the_San_Francisco_%E2%80%93_Oakland_Bay_Bridge_at_1017.15_on_Saturday,_3_September_2022.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Garry_Tan%2C_Web_Summit_2018%2C_November_6_SD5_6949_%2845700698642%29%28tighter_4x3_crop%29.jpg/1920px-Garry_Tan%2C_Web_Summit_2018%2C_November_6_SD5_6949_%2845700698642%29%28tighter_4x3_crop%29.jpg",
+   "alt": "Garry Tan speaking at Web Summit 2018",
+   "caption": "Garry Tan, now YC's chief executive, at Web Summit in 2018.",
+   "credit": "Photo: Web Summit / Wikimedia Commons, CC BY 2.0",
+   "license": "CC BY 2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Garry_Tan,_Web_Summit_2018,_November_6_SD5_6949_(45700698642)(tighter_4x3_crop).jpg"
+  },
+  {
+   "url": "https://live.staticflickr.com/5057/5474607769_1edc4494a4_b.jpg",
+   "alt": "A whiteboard at Y Combinator's office covered in notes",
+   "caption": "A whiteboard at Y Combinator's office.",
+   "credit": "Photo: Paul Miller / Openverse (Flickr), CC BY 2.0",
+   "license": "CC BY 2.0",
+   "source_page": "https://www.flickr.com/photos/24928513@N00/5474607769"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/BLRT2_IntlDep.jpg/1920px-BLRT2_IntlDep.jpg",
+   "alt": "International departures area of Terminal 2 at Kempegowda International Airport, Bengaluru",
+   "caption": "Bengaluru airport's international departures. YC's in-person batch means three months in San Francisco for Indian teams.",
+   "credit": "Photo: Ananthmohanram18 / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:BLRT2_IntlDep.jpg"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.ycombinator.com/apply",
+   "publisher": "Y Combinator",
+   "date": "2026-10-08",
+   "claim": "Winter 2027 deadline 2 Nov 8pm PT; decisions by 11 Dec; Jan-Mar in SF; video interviews Nov-Dec, same-day decisions; 3-day kick-off"
+  },
+  {
+   "url": "https://www.ycombinator.com/deal",
+   "publisher": "Y Combinator",
+   "date": "2026-10-08",
+   "claim": "$500K: $125K post-money SAFE for 7%, $375K uncapped MFN SAFE; $15M cap example 2.5%; pro rata; no milestones; no fees; US/Canada/Cayman/Singapore"
+  },
+  {
+   "url": "https://www.ycombinator.com/faq",
+   "publisher": "Y Combinator",
+   "date": "2026-10-08",
+   "claim": "No incorporation needed to apply; parent company requirement; 40% just an idea; solo founders; half reapplied; feedback after interview; late applications; immigration attorneys; in-person SF"
+  },
+  {
+   "url": "https://www.ycombinator.com/investors",
+   "publisher": "Y Combinator",
+   "date": "2026-10-08",
+   "claim": "10,000+ apply every 3 months; ~1% acceptance; four batches a year with Demo Day"
+  },
+  {
+   "url": "https://www.ycombinator.com/blog/announcing-yc-x25/",
+   "publisher": "Y Combinator",
+   "date": "2025-01-20",
+   "claim": "First Spring batch; reasons for four batches (timing, AI)"
+  },
+  {
+   "url": "https://www.ycombinator.com/howtoapply",
+   "publisher": "Y Combinator",
+   "date": "2026-10-08",
+   "claim": "Paul Graham: founders matter more than idea; video makes interview more likely"
+  },
+  {
+   "url": "https://www.ycombinator.com/early-decision",
+   "publisher": "Y Combinator",
+   "date": "2026-10-08",
+   "claim": "Early Decision for students; funded on acceptance; later batch after graduating"
+  },
+  {
+   "url": "https://www.ycombinator.com/companies",
+   "publisher": "Y Combinator",
+   "date": "2026-10-08",
+   "claim": "Batch counts (W26 198, Spring 193, S26 231, F26 121); AI keyword counts; India-located companies per batch (own query of public directory)"
+  },
+  {
+   "url": "https://www.cnbc.com/2025/03/15/y-combinator-startups-are-fastest-growing-in-fund-history-because-of-ai.html",
+   "publisher": "CNBC",
+   "date": "2025-03-15",
+   "claim": "Tan: ~80% of W25 presenters AI-focused; quarter with 95% AI-written code; batch grew 10% weekly"
+  },
+  {
+   "url": "https://techcrunch.com/2026/03/26/16-of-the-most-interesting-startups-from-yc-w26-demo-day/",
+   "publisher": "TechCrunch",
+   "date": "2026-03-26",
+   "claim": "Nearly 190 companies in W26 Demo Day cohort"
+  },
+  {
+   "url": "https://techcrunch.com/2023/09/19/yc-says-visa-challenges-hampering-participation-of-international-founders",
+   "publisher": "TechCrunch",
+   "date": "2023-09-19",
+   "claim": "YC spokesperson on visas; one India/SEA company in S23 vs 44 in W21"
+  },
+  {
+   "url": "https://inc42.com/features/startup-accelerator-y-combinator-indian-startup",
+   "publisher": "Inc42",
+   "date": "2023-09-19",
+   "claim": "Indian startups in YC: 74 (2021), 40 (2022), 18 (2023); reasons"
+  },
+  {
+   "url": "https://inc42.com/buzz/ycombinator-india-flip-structure-startups/",
+   "publisher": "Inc42",
+   "date": "2020-12-08",
+   "claim": "Flip debate 2020; founder's Delaware parent with Mumbai subsidiary, transfer pricing, two sets of lawyers; Bikhchandani criticism"
+  },
+  {
+   "url": "https://entrackr.com/news/razorpay-completes-reverse-flip-to-india-9317267",
+   "publisher": "Entrackr",
+   "date": "2025-05-29",
+   "claim": "Razorpay completed reverse flip; PhonePe, Zepto, Dream11, Groww earlier; IPO target 2026-27; likely large tax liability"
+  },
+  {
+   "url": "https://www.ycombinator.com/companies/razorpay",
+   "publisher": "Y Combinator",
+   "date": "2026-10-08",
+   "claim": "Razorpay batch Winter 2015, founded 2014"
+  }
+ ]
+}

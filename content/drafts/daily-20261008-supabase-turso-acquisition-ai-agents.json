@@ -1,0 +1,122 @@
+{
+  "type": "post",
+  "slug": "supabase-turso-acquisition-ai-agents",
+  "title": "Supabase raises $150M and buys Turso to build databases for AI agents",
+  "excerpt": "GIC leads a $150M round four months after Supabase's $500M Series F. Why buying Turso matters when 70% of its new databases are created by AI agents.",
+  "category": "saas",
+  "tags": [
+    "Supabase",
+    "Turso",
+    "GIC",
+    "CapitalG",
+    "AI agents",
+    "Postgres",
+    "SQLite",
+    "databases"
+  ],
+  "content": "<p>Supabase, the open-source Postgres platform whose growth is being driven by AI coding tools, has raised $150 million led by Singapore's sovereign wealth fund GIC and agreed to buy the database startup Turso, the company <a href=\"https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html\">announced on 2 October 2026</a>. The money arrives four months after a $500 million Series F, and the deal is a bet that AI agents, not people, will create most of the world's new databases.</p>\n<p>Supabase did not disclose a new valuation or the price it is paying for Turso. What it did disclose is the number behind the bet: about 70% of the databases now launched on its platform are created by agents or AI-driven tools.</p>\n<h2>Key takeaways</h2>\n<ul>\n<li>GIC led the $150 million round, with Alphabet's growth fund CapitalG, IronArc and SquarePeg also investing, according to <a href=\"https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html\">Supabase's announcement</a>. No valuation was given.</li>\n<li>Supabase says it now adds more than 1 million users and 4 million databases a month, and roughly 70% of new databases are made by agents or AI tools.</li>\n<li>Turso, which rebuilt the SQLite database in Rust, will keep running. Its founder Glauber Costa becomes Supabase's Head of Agentic Services.</li>\n<li>The deal follows Databricks' 2025 purchase of Neon, which had said over 80% of its databases were created by AI agents. Database companies are now being valued on how well they serve software that builds software.</li>\n</ul>\n<h2>What Supabase announced</h2>\n<p>The new round is led by GIC, which also led Supabase's <a href=\"https://supabase.com/blog/supabase-series-f\">$500 million Series F in June 2026</a>. That round was priced at a $10 billion pre-money valuation, or $10.5 billion after the new money, <a href=\"https://www.verdict.co.uk/supabase-150m-funding-turso-acquisition/\">Verdict reported</a>. Supabase says the fresh capital will go into product work for agent-driven workloads, and <a href=\"https://siliconangle.com/2026/10/02/database-startup-supabase-raises-150m-acquires-turso/\">SiliconANGLE reported</a> that part of it also funds liquidity for employees, as the Series F did.</p>\n<p>The pace of fundraising is unusual even for AI infrastructure. In October 2025 Supabase raised a $100 million Series E at a $5 billion valuation, co-led by Accel and Peak XV, according to <a href=\"https://www.builtinsf.com/articles/supabase-raises-100m-series-e-5b-valuation-20251007\">Built In San Francisco</a>. At the time it reported more than 4 million developers. The October 2026 announcement puts the figure at 13 million. For founders tracking these rounds, our <a href=\"/funding-tracker/\">funding tracker</a> logs the larger AI infrastructure deals as they are announced.</p>\n<p>Supabase also launched Supabase Compute, a service for running web services and agents, at its <a href=\"https://supabase.com/blog/supabase-select-2026-recap\">Select 2026 conference</a> on the same day.</p>\n<!-- xf-image-2 -->\n<h2>Why Turso, and what it does</h2>\n<p>In <a href=\"https://supabase.com/blog/supabase-is-acquiring-turso\">Supabase's own post on the deal</a>, CEO Paul Copplestone says Turso rebuilt SQLite in Rust and built a cloud platform where one server can manage millions of databases. That is the property Supabase wants.</p>\n<p>A Postgres database is a capable but fairly heavy thing to run. Each instance needs memory and compute, even when idle. SQLite is the opposite: a database that lives in a single file and can be created almost for free. Turso's pitch is that every agent, or every user of an agent-built app, can get its own isolated database on demand, either in the public cloud or inside a customer's own cloud account (what the industry calls BYOC, bring your own cloud), according to the <a href=\"https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html\">press release</a>.</p>\n<p>Copplestone's framing in the blog post is that agents should be able to make a database as easily as they make a file, without worrying about cost. Turso's existing customers include Superhuman, Sauna.ai, CTO.new and Mastra, Supabase said.</p>\n<h3>What happens to Turso users</h3>\n<p>Costa, writing on <a href=\"https://turso.tech/blog/turso-is-joining-supabase\">Turso's blog</a>, says Turso keeps running and existing databases, APIs and workflows continue as they are. The Turso database stays open source and under active development, and the whole Turso team, including co-founder Pekka Enberg, moves to Supabase. The plan is a path where a project can start on lightweight SQLite-style databases and move to full Postgres as it grows.</p>\n<p>The team has been shipping right up to the deal. Turso's blog lists a 0.8 release on 29 September 2026 that adds concurrent writes, lifting one of SQLite's best-known limits, a single writer at a time (<a href=\"https://turso.tech/blog\">Turso blog</a>).</p>\n<!-- xf-image-3 -->\n<h2>The bigger shift: agents as database customers</h2>\n<p>The most important figure in the announcement is not the funding amount. It is the 70%. In June, Supabase said <a href=\"https://supabase.com/blog/supabase-series-f\">over 60% of new databases</a> were launched by AI tools, and that database launches had grown 600% year on year. By October the agent share had climbed to about 70%, by the company's own count.</p>\n<p>This matches what Databricks saw when it agreed to buy Neon, a serverless Postgres startup, in May 2025. In <a href=\"https://www.databricks.com/company/newsroom/press-releases/databricks-agrees-acquire-neon-help-developers-deliver-ai-systems\">its announcement</a>, Databricks said over 80% of the databases provisioned on Neon were created automatically by AI agents rather than by humans. Two of the biggest independent Postgres platforms have now been reshaped around the same customer: an AI model writing an app and needing somewhere to store its data.</p>\n<p>Why does this matter commercially? Agent-built projects are numerous, cheap and often short-lived. A prototype spun up by a coding assistant may be abandoned within hours. A platform that charges for idle Postgres instances either loses money on these projects or prices them out. Turso's many-small-databases design is meant to make that long tail cheap enough to host at scale, while keeping the projects that do take off inside Supabase as they grow.</p>\n<!-- xf-image-4 -->\n<h2>What it means for developers and founders in India</h2>\n<p>For Indian developers and early-stage teams that start products on a managed Postgres backend, three practical points follow from the deal.</p>\n<ul>\n<li><strong>Nothing changes overnight.</strong> Turso users keep their databases and APIs, according to Turso. Supabase users do not need to migrate.</li>\n<li><strong>Expect cheaper, smaller databases.</strong> If Supabase brings Turso's per-agent databases into its main product, builders of multi-tenant SaaS and AI agent apps could give each customer or each agent its own isolated store, rather than packing everyone into one large database.</li>\n<li><strong>The hiring signal is real.</strong> Database and agent infrastructure is where some of the year's largest rounds are going. Engineers who know Postgres internals, SQLite and Rust are in demand; our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs board</a> and <a href=\"/jobs/company/databricks/\">Databricks openings</a> list current roles from official career pages.</li>\n</ul>\n<!-- xf-image-5 -->\n<h2>What we still do not know</h2>\n<p>Several things were not disclosed. Supabase did not say what it paid for Turso, whether the deal has closed or needs approvals, or what valuation the $150 million was priced at. The 70% agent share and the 4 million databases a month are company figures that have not been independently checked. We have left out any valuation estimate for that reason.</p>\n<h2>Bottom line</h2>\n<p>Supabase is using a quick follow-on round to buy the piece it was missing: a way to give every AI agent its own database at almost no cost. If agents keep creating most new databases, the platform that makes those databases cheapest to start and easiest to grow will win the long tail of AI-built software. Databricks made the same bet with Neon. Supabase is now making it with both Postgres and SQLite.</p>\n<h2>FAQ</h2>\n<h3>How much did Supabase raise in October 2026?</h3>\n<p>$150 million, led by GIC with CapitalG, IronArc and SquarePeg, announced on 2 October 2026. It came four months after a $500 million Series F.</p>\n<h3>What is Supabase's valuation?</h3>\n<p>The new round's valuation was not disclosed. The June 2026 Series F was priced at $10 billion pre-money, or $10.5 billion post-money as reported by Verdict.</p>\n<h3>How much did Supabase pay for Turso?</h3>\n<p>The price was not disclosed.</p>\n<h3>Will Turso shut down?</h3>\n<p>No. Turso says its platform keeps running and its database stays open source. Founder Glauber Costa joins Supabase as Head of Agentic Services.</p>\n<h3>Why do AI agents need their own databases?</h3>\n<p>Coding agents create apps and prototypes that each need somewhere to store data. Supabase says about 70% of its new databases now come from agents or AI tools, so the cost and speed of creating a database matter more than before.</p>\n<p>For more coverage of AI infrastructure deals, see our <a href=\"/news/\">latest news</a>.</p>\n<h2>Sources</h2>\n<ol>\n<li>Supabase via PR Newswire, \"Supabase Announces $150M in New Funding and Turso Acquisition\", 2 October 2026. <a href=\"https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html\">Link</a></li>\n<li>Supabase, \"Supabase is acquiring Turso\", 2 October 2026. <a href=\"https://supabase.com/blog/supabase-is-acquiring-turso\">Link</a></li>\n<li>Turso, \"Turso is joining Supabase to give every agent its own database\", 2 October 2026. <a href=\"https://turso.tech/blog/turso-is-joining-supabase\">Link</a></li>\n<li>Turso, blog index (Turso 0.8 release, 29 September 2026), accessed 8 October 2026. <a href=\"https://turso.tech/blog\">Link</a></li>\n<li>Supabase, \"Supabase Series F\", 4 June 2026. <a href=\"https://supabase.com/blog/supabase-series-f\">Link</a></li>\n<li>Supabase, \"Supabase Select 2026 Recap\", 2 October 2026. <a href=\"https://supabase.com/blog/supabase-select-2026-recap\">Link</a></li>\n<li>SiliconANGLE, \"Database startup Supabase raises $150M, acquires Turso\", 2 October 2026. <a href=\"https://siliconangle.com/2026/10/02/database-startup-supabase-raises-150m-acquires-turso/\">Link</a></li>\n<li>Verdict, \"Supabase raises $150m and buys Turso for agentic workloads\", 5 October 2026. <a href=\"https://www.verdict.co.uk/supabase-150m-funding-turso-acquisition/\">Link</a></li>\n<li>Built In San Francisco, \"Supabase Raises $100M Series E Funding at $5B Valuation\", 7 October 2025. <a href=\"https://www.builtinsf.com/articles/supabase-raises-100m-series-e-5b-valuation-20251007\">Link</a></li>\n<li>Databricks, \"Databricks Agrees to Acquire Neon to Help Developers Deliver AI Systems\", 14 May 2025. <a href=\"https://www.databricks.com/company/newsroom/press-releases/databricks-agrees-acquire-neon-help-developers-deliver-ai-systems\">Link</a></li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rootconf_2015_%2817848284831%29.jpg/1920px-Rootconf_2015_%2817848284831%29.jpg",
+      "alt": "A speaker in a yellow shirt presents a slide titled 10 reasons why you should prefer PostgreSQL to MySQL at a conference in India",
+      "caption": "A PostgreSQL talk at Rootconf, a DevOps conference in India. Supabase is built on Postgres.",
+      "credit": "Photo: HasGeek / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rootconf_2015_(17848284831).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Screenshot_of_the_Open_Source_CMS_Supabase.png",
+      "alt": "Screenshot of the Supabase table editor showing a User table and its fields",
+      "caption": "Supabase's table editor running on a developer's own machine.",
+      "credit": "Image: TheTimmathy / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Screenshot_of_the_Open_Source_CMS_Supabase.png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/SQLiteHelp310.png/1920px-SQLiteHelp310.png",
+      "alt": "Terminal window showing the SQLite command-line help screen",
+      "caption": "The SQLite command-line shell. Turso has rebuilt SQLite in Rust for a cloud of many small databases.",
+      "credit": "Image: Klaas Z4us van B. / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:SQLiteHelp310.png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wikimedia_Foundation_Servers-8055_16.jpg/1920px-Wikimedia_Foundation_Servers-8055_16.jpg",
+      "alt": "Rows of rack-mounted servers with network cables in a data centre",
+      "caption": "Every agent-created database has to live on servers like these, which is why cost per database matters.",
+      "credit": "Photo: Victor Grigas / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Servers-8055_16.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Marina_Bay_Singapore-3499.jpg/1920px-Marina_Bay_Singapore-3499.jpg",
+      "alt": "Singapore's Marina Bay skyline with office towers in the central business district",
+      "caption": "Singapore's central business district. GIC, Singapore's sovereign wealth fund, led both of Supabase's 2026 rounds.",
+      "credit": "Photo: Bijay Chaurasia / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Marina_Bay_Singapore-3499.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html",
+      "publisher": "Supabase via PR Newswire",
+      "date": "2026-10-02",
+      "claim": "$150M led by GIC with CapitalG, IronArc, SquarePeg; 1M+ users and 4M databases a month; ~70% created by agents/AI tools; 600% YoY database growth to June; 13M developers; Turso per-agent databases in public cloud and BYOC; customers Superhuman, Sauna.ai, CTO.new, Mastra; Costa as Head of Agentic Services; valuation and price not disclosed"
+    },
+    {
+      "url": "https://supabase.com/blog/supabase-is-acquiring-turso",
+      "publisher": "Supabase",
+      "date": "2026-10-02",
+      "claim": "Turso rebuilt SQLite in Rust; one server can manage millions of databases; Costa and Enberg join; agents should create databases like files"
+    },
+    {
+      "url": "https://turso.tech/blog/turso-is-joining-supabase",
+      "publisher": "Turso",
+      "date": "2026-10-02",
+      "claim": "Turso keeps running; database stays open source; whole team joins Supabase; Costa Head of Agentic Services; graduation path to Postgres"
+    },
+    {
+      "url": "https://turso.tech/blog",
+      "publisher": "Turso",
+      "date": "2026-09-29",
+      "claim": "Turso 0.8 adds concurrent writes without SQLite's single-writer bottleneck"
+    },
+    {
+      "url": "https://supabase.com/blog/supabase-series-f",
+      "publisher": "Supabase",
+      "date": "2026-06-04",
+      "claim": "$500M Series F at $10B pre-money led by GIC; over 60% of new databases launched by AI tools; 600% YoY database launches; employee liquidity"
+    },
+    {
+      "url": "https://supabase.com/blog/supabase-select-2026-recap",
+      "publisher": "Supabase",
+      "date": "2026-10-02",
+      "claim": "Supabase Compute launched at Select 2026 for running web services and agents"
+    },
+    {
+      "url": "https://siliconangle.com/2026/10/02/database-startup-supabase-raises-150m-acquires-turso/",
+      "publisher": "SiliconANGLE",
+      "date": "2026-10-02",
+      "claim": "Investors, undisclosed Turso price, proceeds for employee liquidity and agent features, Copplestone quote"
+    },
+    {
+      "url": "https://www.verdict.co.uk/supabase-150m-funding-turso-acquisition/",
+      "publisher": "Verdict",
+      "date": "2026-10-05",
+      "claim": "Series F valued Supabase at $10.5B post-money; Series E $100M at $5B in Oct 2025"
+    },
+    {
+      "url": "https://www.builtinsf.com/articles/supabase-raises-100m-series-e-5b-valuation-20251007",
+      "publisher": "Built In San Francisco",
+      "date": "2025-10-07",
+      "claim": "$100M Series E at $5B co-led by Accel and Peak XV; over 4M developers"
+    },
+    {
+      "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-agrees-acquire-neon-help-developers-deliver-ai-systems",
+      "publisher": "Databricks",
+      "date": "2025-05-14",
+      "claim": "Databricks to acquire Neon; over 80% of Neon databases created by AI agents"
+    }
+  ]
+}

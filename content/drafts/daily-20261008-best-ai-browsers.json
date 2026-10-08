@@ -1,0 +1,164 @@
+{
+  "type": "post",
+  "slug": "best-ai-browsers",
+  "title": "Best AI browsers in 2026: Comet, Gemini in Chrome, Dia and Edge",
+  "excerpt": "Comet, Gemini in Chrome, Copilot in Edge, Dia and Opera Neon compared: prices, availability in India, and the prompt-injection risks of AI agents.",
+  "category": "ai-news",
+  "tags": [
+    "AI browsers",
+    "browser agents",
+    "Perplexity Comet",
+    "Gemini in Chrome",
+    "Dia",
+    "Opera Neon",
+    "Microsoft Edge",
+    "prompt injection"
+  ],
+  "content": "<p>For most people in October 2026, the best AI browser is the one already installed: Gemini in Chrome and Copilot in Microsoft Edge are free, work in India and summarise or compare pages well. If you want an agent that clicks and fills in forms for you, Perplexity's Comet is the free option available worldwide, Chrome's auto browse is the most polished but still limited to paying US subscribers, and Dia suits teams whose work lives in Slack, Notion and Google Workspace. One name is gone: OpenAI switched off its ChatGPT Atlas browser on 9 August 2026 and is folding its features into ChatGPT and Codex, according to <a href=\"https://telecomtalk.info/openai-retires-atlas-focus-on-chatgpt-codex/1010592/\">TelecomTalk</a>, so anyone still searching for Atlas this month needs a replacement.</p>\n\n<p>Prices and availability below come from vendor pages checked on 8 October 2026 unless stated otherwise. Read the security section before you let any of these tools log in to your email or bank.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>Two kinds of tools share the \"AI browser\" label: assistants that read and summarise pages, and agents that click, type and complete tasks for you. The second kind carries far more risk.</li>\n<li>Gemini in Chrome reached India in March 2026, but Chrome's auto browse agent started in the US only, for Google AI Pro and Ultra subscribers.</li>\n<li>Comet has been free to download since October 2025 and runs on Android; Dia's AI features cost $10 or $100 a month; Opera Neon costs $19.90 a month.</li>\n<li>Prompt injection, where hidden text on a web page hijacks the agent, is not solved. OpenAI says it is unlikely ever to be fully solved, and Gartner has told companies to block AI browsers for now.</li>\n</ul>\n\n<h2>Assistant or agent: know which one you are installing</h2>\n<p>An <strong>AI assistant in the browser</strong> sits in a side panel. You ask it to summarise a long article, compare three product pages or draft a reply, and it answers using the pages you have open. It does not act on its own.</p>\n<p>A <strong>browser agent</strong> goes further. You give it a task (\"book the cheapest Friday flight to Bengaluru\" or \"fill in this expense form\") and it navigates, clicks and types for you, often while signed in to your accounts. Gartner analysts describe AI browsers as combining both: a sidebar for interacting with content and an agentic capability that navigates and completes tasks on websites, according to <a href=\"https://www.theregister.com/2025/12/08/gartner_recommends_ai_browser_ban/\">The Register</a>.</p>\n<p>For reading and research, any tool here is fine. For agents, choose carefully, start with low-stakes tasks, and keep payment and email accounts out of reach.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Gemini in Chrome: the default choice for most people</h2>\n<p><strong>Best for:</strong> anyone who already uses Chrome and a Google account and wants page summaries, tab comparison and voice chat without switching browsers.</p>\n<p><strong>Availability:</strong> Google's <a href=\"https://support.google.com/gemini/answer/16283624\">help page</a> lists Gemini in Chrome in more than 180 countries and territories, including India, the US, UK and Canada, on Mac, Windows and Chromebook Plus. You must be 13 or older and signed in to Chrome, and it does not work in Incognito mode. Google says it is still rolling out gradually. India, Canada and New Zealand were added on 13 March 2026 alongside support for more than 50 extra languages, according to the <a href=\"https://workspaceupdates.googleblog.com/2026/03/gemini-in-chrome-expands-to-more-countries-and-languages.html\">Google Workspace Updates blog</a>.</p>\n<p><strong>The agent part (auto browse):</strong> Google launched auto browse on 28 January 2026 for AI Pro and AI Ultra subscribers in the US, on desktop, according to <a href=\"https://9to5google.com/2026/01/28/chrome-gemini-auto-browse/\">9to5Google</a>. You still have to press the buy button yourself when shopping, and you can take over a task at any point. On 30 July 2026 Google connected its Gemini Spark assistant to Chrome auto browse, letting it use your logged-in accounts and saved passwords for errands; that rollout also started in the US, and Google says it hands sensitive actions such as payments back to you, according to the <a href=\"https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-july-2026/\">Google blog</a>. Users under 18 cannot use auto browse.</p>\n<p><strong>Pricing:</strong> the Gemini sidebar is part of Chrome. When we checked Google's <a href=\"https://gemini.google/subscriptions/\">subscriptions page</a> on 8 October 2026 it listed Google AI Plus at ₹399 a month, AI Pro at ₹1,950 a month and AI Ultra from ₹6,500 a month (Indian pricing). Auto browse needs Pro or Ultra and, at launch, a US location.</p>\n\n<h2>Copilot in Microsoft Edge: the free alternative for Windows users</h2>\n<p><strong>Best for:</strong> Windows users and Microsoft 365 workplaces that want multi-tab answers and tidy browsing history without a new browser.</p>\n<p><strong>What it does:</strong> Microsoft's <a href=\"https://explore.microsoft.com/en-us/edge/copilot-mode\">Copilot in Edge page</a> lists summaries, comparisons across many open tabs, YouTube video summaries, writing help and \"Journeys\", which group related pages, searches and chats so you can pick up where you left off.</p>\n<p><strong>Pricing:</strong> Microsoft says Copilot in Edge is free to use, with usage limits; when you hit a limit you can upgrade to a paid option or come back later. Microsoft 365 subscribers get higher allowances. Work accounts follow the organisation's Copilot data and privacy controls.</p>\n<p><strong>Key limits:</strong> Microsoft's page does not set out country restrictions, so check availability in your region inside Edge.</p>\n\n<!-- xf-image-3 -->\n\n<h2>Perplexity Comet: the free agentic browser that works in India</h2>\n<p><strong>Best for:</strong> researchers, students and founders who want an AI-first browser with an agent, at no cost, on desktop and Android.</p>\n<p><strong>Availability and pricing:</strong> Comet was first offered only through Perplexity's top-tier Max plan and became free for everyone worldwide in October 2025, with rate limits on free use, according to <a href=\"https://tech.yahoo.com/ai/perplexity-ai/articles/perplexity-makes-ai-browser-free-172945066.html\">ExtremeTech via Yahoo Tech</a>. An Android version reached the Google Play Store in November 2025, with India named as a key market, according to <a href=\"https://www.digit.in/news/apps/perplexity-brings-its-comet-ai-browser-to-android-to-take-on-google-chrome.html\">Digit</a>. Perplexity's own site blocked our automated checks on 8 October 2026, so confirm current paid tiers there before subscribing.</p>\n<p><strong>Security record:</strong> in August 2025 Brave's researchers showed that hidden text in a Reddit comment could instruct Comet's assistant to fetch a user's email address and one-time password and send them to an attacker, according to <a href=\"https://brave.com/blog/comet-prompt-injection/\">Brave</a>. The episode is a clear public example of why agents should not roam signed-in accounts unsupervised.</p>\n\n<h2>Dia: the work browser from the Arc team</h2>\n<p><strong>Best for:</strong> knowledge workers and small teams who want the browser to pull context from Slack, Notion, Gmail, Google Calendar and similar tools.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Dia's <a href=\"https://www.diabrowser.com/pricing\">pricing page</a> lists a free browser tier with no AI features, \"Better Answers\" at $10 a month (AI chat across connected tools such as Slack, Gmail, Notion and GitHub) and \"Better Days\" at $100 a month, which adds six times more tasks and chats, a daily Morning Brief, and reports, decks and meeting prep. New users get a 14-day trial of the top tier without a card. Dia is available for macOS and Windows, according to <a href=\"https://www.diabrowser.com/\">its homepage</a>.</p>\n<p><strong>Ownership:</strong> Atlassian, the maker of Jira and Confluence, agreed to buy The Browser Company on 4 September 2025, with the aim of making Dia a browser built for work, according to <a href=\"https://www.atlassian.com/blog/announcements/atlassian-acquires-the-browser-company\">Atlassian</a>.</p>\n<p><strong>Key limits:</strong> the value depends on connecting your work apps, which means granting the browser access to sensitive company data. Check this with whoever handles IT and security.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Opera Neon: a paid agentic browser for power users</h2>\n<p><strong>Best for:</strong> people who want several specialised agents inside the browser and are comfortable paying for it.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Opera's <a href=\"https://www.operaneon.com/\">Neon site</a> lists a $19.90 monthly subscription that unlocks the agent features and access to top-tier models. Opera describes Neon as a browser that works on tasks, manages tabs and runs workflows, with connections through MCP and command-line paths. If MCP is new to you, read our <a href=\"/model-context-protocol-mcp-explained/\">explainer on the Model Context Protocol</a>.</p>\n<p><strong>Key limits:</strong> there is no free tier for the agent, and the site gives little detail on per-task limits.</p>\n\n<h2>What happened to ChatGPT Atlas</h2>\n<p>OpenAI launched Atlas on 21 October 2025 and retired it on 9 August 2026, telling users to save bookmarks, open tabs and history before shutdown, according to <a href=\"https://telecomtalk.info/openai-retires-atlas-focus-on-chatgpt-codex/1010592/\">TelecomTalk</a>. <a href=\"https://bgr.com/2212396/openai-chatgpt-browser-atlas-discontinued/\">BGR</a> reported on 10 July 2026 that OpenAI had set 9 August as the deprecation date and planned to move Atlas features into the ChatGPT desktop app and a ChatGPT extension for Chrome. Its browsing and agent features are being rolled into ChatGPT and Codex. If you relied on Atlas, Comet is the closest free equivalent and Gemini in Chrome the closest mainstream one.</p>\n\n<h2>Which AI browser should you pick?</h2>\n<table>\n<thead><tr><th>Pick this</th><th>If you…</th><th>Price (8 Oct 2026)</th><th>In India?</th></tr></thead>\n<tbody>\n<tr><td>Gemini in Chrome</td><td>use Chrome and want summaries and tab comparison with no switching</td><td>Free sidebar; auto browse needs AI Pro or Ultra</td><td>Sidebar yes; auto browse launched in the US first</td></tr>\n<tr><td>Copilot in Edge</td><td>work on Windows or Microsoft 365</td><td>Free with limits</td><td>Check in Edge</td></tr>\n<tr><td>Perplexity Comet</td><td>want a free agentic browser on desktop and Android</td><td>Free, rate-limited</td><td>Yes, including Android</td></tr>\n<tr><td>Dia</td><td>want AI that reads your work tools</td><td>Free browser; AI $10 or $100 a month</td><td>No restriction listed</td></tr>\n<tr><td>Opera Neon</td><td>want multiple agents and will pay</td><td>$19.90 a month</td><td>No restriction listed</td></tr>\n</tbody>\n</table>\n\n<!-- xf-image-5 -->\n\n<h2>Privacy and security: the prompt-injection problem</h2>\n<p>The core risk is <strong>prompt injection</strong>: text hidden in a web page, email or document that the agent reads and treats as an instruction. Because agents act inside your logged-in sessions, a malicious page could tell one to send your data elsewhere or make a purchase.</p>\n<p>OpenAI wrote in December 2025 that prompt injection \"is unlikely to ever be fully 'solved,'\" and the UK's National Cyber Security Centre has warned that such attacks may never be totally mitigated, according to <a href=\"https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/\">TechCrunch</a>. Gartner's December 2025 advisory, \"Cybersecurity Must Block AI Browsers for Now\", warned that active web content, browsing history and open tabs are often sent to the AI provider's cloud, and that agents can be steered into rogue actions or credential abuse, according to <a href=\"https://www.theregister.com/2025/12/08/gartner_recommends_ai_browser_ban/\">The Register</a>.</p>\n<p>Practical rules if you use an agent:</p>\n<ul>\n<li>Use a separate browser profile for agent tasks, without your email, bank or company admin accounts signed in.</li>\n<li>Give narrow instructions. OpenAI notes that wide latitude makes it easier for hidden content to influence the agent.</li>\n<li>Confirm every payment, message and form submission yourself. Chrome and Gemini Spark already hand payments back to you; keep that habit with other tools.</li>\n<li>At work, ask IT before installing any AI browser. Gartner has advised companies to block them for now.</li>\n</ul>\n\n<h2>Bottom line</h2>\n<p>For reading, summarising and comparing pages, stay with Gemini in Chrome or Copilot in Edge: both are free and available in India. For hands-off tasks, Comet is the free way to experiment and Chrome's auto browse is the most guarded option if you are a paying US subscriber. Dia is worth a trial for teams that live in SaaS tools. Treat every agent like a new intern with your passwords: useful, supervised, and never left alone with the bank account. For more tools by job, see our guide to <a href=\"/best-ai-tools-for-startups/\">AI tools for startups</a>.</p>\n\n<h2>FAQ</h2>\n<h3>What is the best free AI browser?</h3>\n<p>Perplexity Comet is the best free agentic browser as of October 2026. For assistant features only, Gemini in Chrome and Copilot in Edge are free and already built into widely used browsers.</p>\n<h3>Is Gemini in Chrome available in India?</h3>\n<p>Yes. Google added India on 13 March 2026. The auto browse agent launched for AI Pro and Ultra subscribers in the US first.</p>\n<h3>Is ChatGPT Atlas still available?</h3>\n<p>No. OpenAI retired Atlas on 9 August 2026 and is moving its features into ChatGPT and Codex.</p>\n<h3>Are AI browsers safe?</h3>\n<p>Summary features are low risk. Agents that act in your logged-in accounts can be manipulated by prompt injection, so keep sensitive accounts out of them and confirm every important action yourself.</p>\n<h3>How much does Dia cost?</h3>\n<p>The browser is free. AI features cost $10 a month (Better Answers) or $100 a month (Better Days), with a 14-day trial, as of 8 October 2026.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>TelecomTalk, \"OpenAI Retires ChatGPT Atlas to Focus on ChatGPT and Codex\", 10 August 2026, <a href=\"https://telecomtalk.info/openai-retires-atlas-focus-on-chatgpt-codex/1010592/\">telecomtalk.info</a></li>\n<li>BGR, \"OpenAI Has Already Discontinued Its Controversial ChatGPT Atlas Browser\", 10 July 2026, <a href=\"https://bgr.com/2212396/openai-chatgpt-browser-atlas-discontinued/\">bgr.com</a></li>\n<li>Google, \"Gemini in Chrome\" help page, accessed 8 October 2026, <a href=\"https://support.google.com/gemini/answer/16283624\">support.google.com</a></li>\n<li>Google Workspace Updates, \"Gemini in Chrome expands to more countries and languages\", 13 March 2026, <a href=\"https://workspaceupdates.googleblog.com/2026/03/gemini-in-chrome-expands-to-more-countries-and-languages.html\">workspaceupdates.googleblog.com</a></li>\n<li>9to5Google, \"Google Chrome rolling out Gemini 'auto browse' to AI Pro\", 28 January 2026, <a href=\"https://9to5google.com/2026/01/28/chrome-gemini-auto-browse/\">9to5google.com</a></li>\n<li>Google, \"Gemini Spark: new Chrome browsing integration\", 30 July 2026, <a href=\"https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-july-2026/\">blog.google</a></li>\n<li>Google, \"Google AI plans\", accessed 8 October 2026, <a href=\"https://gemini.google/subscriptions/\">gemini.google</a></li>\n<li>Microsoft, \"Copilot in Microsoft Edge\", accessed 8 October 2026, <a href=\"https://explore.microsoft.com/en-us/edge/copilot-mode\">explore.microsoft.com</a></li>\n<li>ExtremeTech via Yahoo Tech, \"Perplexity Makes AI Browser Free, Adds $5 News Plan\", 3 October 2025, <a href=\"https://tech.yahoo.com/ai/perplexity-ai/articles/perplexity-makes-ai-browser-free-172945066.html\">tech.yahoo.com</a></li>\n<li>Digit, \"Perplexity brings its Comet AI browser to Android to take on Google Chrome\", 21 November 2025, <a href=\"https://www.digit.in/news/apps/perplexity-brings-its-comet-ai-browser-to-android-to-take-on-google-chrome.html\">digit.in</a></li>\n<li>Brave, \"Agentic Browser Security: Indirect Prompt Injection in Perplexity Comet\", 20 August 2025, <a href=\"https://brave.com/blog/comet-prompt-injection/\">brave.com</a></li>\n<li>The Browser Company, \"Dia pricing\", accessed 8 October 2026, <a href=\"https://www.diabrowser.com/pricing\">diabrowser.com/pricing</a></li>\n<li>The Browser Company, \"Dia\", accessed 8 October 2026, <a href=\"https://www.diabrowser.com/\">diabrowser.com</a></li>\n<li>Atlassian, \"Welcoming The Browser Company to Atlassian\", 4 September 2025, <a href=\"https://www.atlassian.com/blog/announcements/atlassian-acquires-the-browser-company\">atlassian.com</a></li>\n<li>Opera, \"Opera Neon\", accessed 8 October 2026, <a href=\"https://www.operaneon.com/\">operaneon.com</a></li>\n<li>TechCrunch, \"OpenAI says AI browsers may always be vulnerable to prompt injection attacks\", 22 December 2025, <a href=\"https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/\">techcrunch.com</a></li>\n<li>The Register, \"Block all AI browsers for the foreseeable future: Gartner\", 8 December 2025, <a href=\"https://www.theregister.com/2025/12/08/gartner_recommends_ai_browser_ban/\">theregister.com</a></li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Woman_using_laptop_and_talking_while_sitting_at_a_table.jpg/1920px-Woman_using_laptop_and_talking_while_sitting_at_a_table.jpg",
+      "alt": "A smiling woman holding a mug gestures towards an open laptop at a kitchen table",
+      "caption": "AI browsers promise to read, compare and act on web pages for you.",
+      "credit": "Photo: Shixart1985 / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Woman_using_laptop_and_talking_while_sitting_at_a_table.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Woman_working_on_a_laptop_in_the_kitchen._Top_view.jpg/1920px-Woman_working_on_a_laptop_in_the_kitchen._Top_view.jpg",
+      "alt": "Top view of hands typing on a laptop on a wooden table next to a glass and a coffee cup",
+      "caption": "Assistant features such as page summaries are low risk; agents that act in logged-in accounts need more care.",
+      "credit": "Photo: Shixart1985 / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Woman_working_on_a_laptop_in_the_kitchen._Top_view.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Woman_with_glasses_using_a_ThinkPad_laptop_%2867503269%29.jpg/1920px-Woman_with_glasses_using_a_ThinkPad_laptop_%2867503269%29.jpg",
+      "alt": "A woman wearing red glasses types on a black laptop at a table",
+      "caption": "Copilot in Edge and Gemini in Chrome add AI to browsers many people already use.",
+      "credit": "Photo: Pavel Soro London / Wikimedia Commons, CC BY 3.0",
+      "license": "CC BY 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Woman_with_glasses_using_a_ThinkPad_laptop_(67503269).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Galaxy_Z_Fold_%26_Z_Flip.jpg/1920px-Galaxy_Z_Fold_%26_Z_Flip.jpg",
+      "alt": "Two Samsung foldable smartphones, a Galaxy Z Fold and a Galaxy Z Flip, side by side",
+      "caption": "Comet is one of the few agentic browsers available on Android, which matters in mobile-first markets such as India.",
+      "credit": "Photo: Ka Kit Pang / Wikimedia Commons, CC BY 3.0",
+      "license": "CC BY 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Galaxy_Z_Fold_%26_Z_Flip.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Old_key_and_laptop.jpg/1920px-Old_key_and_laptop.jpg",
+      "alt": "An old iron key lying on a laptop keyboard",
+      "caption": "Agents that use saved passwords and logged-in sessions widen the security risk.",
+      "credit": "Photo: Nikowsk / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Old_key_and_laptop.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://telecomtalk.info/openai-retires-atlas-focus-on-chatgpt-codex/1010592/",
+      "publisher": "TelecomTalk",
+      "date": "2026-08-10",
+      "claim": "OpenAI Retires ChatGPT Atlas to Focus on ChatGPT and Codex"
+    },
+    {
+      "url": "https://bgr.com/2212396/openai-chatgpt-browser-atlas-discontinued/",
+      "publisher": "BGR",
+      "date": "2026-07-10",
+      "claim": "Atlas deprecation set for 9 August 2026; features move to ChatGPT desktop app and Chrome extension"
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/16283624",
+      "publisher": "Google",
+      "date": "2026-10-08",
+      "claim": "Gemini in Chrome"
+    },
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/03/gemini-in-chrome-expands-to-more-countries-and-languages.html",
+      "publisher": "Google Workspace Updates",
+      "date": "2026-03-13",
+      "claim": "Gemini in Chrome expands to more countries and languages"
+    },
+    {
+      "url": "https://9to5google.com/2026/01/28/chrome-gemini-auto-browse/",
+      "publisher": "9to5Google",
+      "date": "2026-01-28",
+      "claim": "Google Chrome rolling out Gemini 'auto browse' to AI Pro"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-july-2026/",
+      "publisher": "Google",
+      "date": "2026-07-30",
+      "claim": "Gemini Spark: new Chrome browsing integration"
+    },
+    {
+      "url": "https://gemini.google/subscriptions/",
+      "publisher": "Google",
+      "date": "2026-10-08",
+      "claim": "Google AI plans"
+    },
+    {
+      "url": "https://explore.microsoft.com/en-us/edge/copilot-mode",
+      "publisher": "Microsoft",
+      "date": "2026-10-08",
+      "claim": "Copilot in Microsoft Edge"
+    },
+    {
+      "url": "https://tech.yahoo.com/ai/perplexity-ai/articles/perplexity-makes-ai-browser-free-172945066.html",
+      "publisher": "ExtremeTech via Yahoo Tech",
+      "date": "2025-10-03",
+      "claim": "Perplexity Makes AI Browser Free, Adds $5 News Plan"
+    },
+    {
+      "url": "https://www.digit.in/news/apps/perplexity-brings-its-comet-ai-browser-to-android-to-take-on-google-chrome.html",
+      "publisher": "Digit",
+      "date": "2025-11-21",
+      "claim": "Perplexity brings its Comet AI browser to Android to take on Google Chrome"
+    },
+    {
+      "url": "https://brave.com/blog/comet-prompt-injection/",
+      "publisher": "Brave",
+      "date": "2025-08-20",
+      "claim": "Agentic Browser Security: Indirect Prompt Injection in Perplexity Comet"
+    },
+    {
+      "url": "https://www.diabrowser.com/pricing",
+      "publisher": "The Browser Company",
+      "date": "2026-10-08",
+      "claim": "Dia pricing"
+    },
+    {
+      "url": "https://www.diabrowser.com/",
+      "publisher": "The Browser Company",
+      "date": "2026-10-08",
+      "claim": "Dia"
+    },
+    {
+      "url": "https://www.atlassian.com/blog/announcements/atlassian-acquires-the-browser-company",
+      "publisher": "Atlassian",
+      "date": "2025-09-04",
+      "claim": "Welcoming The Browser Company to Atlassian"
+    },
+    {
+      "url": "https://www.operaneon.com/",
+      "publisher": "Opera",
+      "date": "2026-10-08",
+      "claim": "Opera Neon"
+    },
+    {
+      "url": "https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/",
+      "publisher": "TechCrunch",
+      "date": "2025-12-22",
+      "claim": "OpenAI says AI browsers may always be vulnerable to prompt injection attacks"
+    },
+    {
+      "url": "https://www.theregister.com/2025/12/08/gartner_recommends_ai_browser_ban/",
+      "publisher": "The Register",
+      "date": "2025-12-08",
+      "claim": "Block all AI browsers for the foreseeable future: Gartner"
+    }
+  ]
+}
