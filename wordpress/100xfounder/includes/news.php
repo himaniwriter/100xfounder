@@ -223,7 +223,7 @@ add_action('rest_api_init', function () {
                 return new WP_REST_Response(null, 204);
             }
             // One counted view per visitor per post per hour.
-            $key = 'xf_v_' . md5($id . '|' . ($_SERVER['REMOTE_ADDR'] ?? ''));
+            $key = 'xf_v_' . md5($id . '|' . xf_client_ip());
             if (!get_transient($key)) {
                 set_transient($key, 1, HOUR_IN_SECONDS);
                 update_post_meta($id, '_xf_views', (int) get_post_meta($id, '_xf_views', true) + 1);

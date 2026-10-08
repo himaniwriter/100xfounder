@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
  * ---------------------------------------------------------------------- */
 
 function xf_rate_limited($bucket, $limit, $window) {
-    $key = 'xf_rl_' . md5($bucket . '|' . ($_SERVER['REMOTE_ADDR'] ?? ''));
+    $key = 'xf_rl_' . md5($bucket . '|' . xf_client_ip());
     $count = (int) get_transient($key);
     if ($count >= $limit) {
         return true;

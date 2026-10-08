@@ -190,3 +190,22 @@ wordpress/local/                   Local WordPress + SQLite runner (run-local.sh
 - **No ads on thin or private pages.** Thin pages stay noindexed.
 - **Secrets** go in env vars or wp-config constants, never in the repo or in chat.
 - **Design:** the source of truth is the owner's canvas (https://claude.ai/artifact/1M6rZmasXRJJTQ7LxcreH8). The accent is now purple (owner's change on 4 Oct 2026). Never publish the canvas's sample content.
+
+## 9. Security (checklist applied 8 Oct 2026)
+
+| Check | State |
+|---|---|
+| SQL injection | All queries with outside input use `$wpdb->prepare()`; others only interpolate table names. |
+| XSS | Theme and plugin output is escaped (`esc_html`/`esc_attr`/`esc_url`, JSON-LD with `JSON_HEX_TAG`); calculators write numbers only. |
+| CSRF | Every admin action and public form checks a nonce and (for admin) a capability. |
+| Auth | REST write routes need `edit_posts`; MCP needs an application password; the cron URL key is compared with `hash_equals`. |
+| Brute force | `includes/security.php`: 5 failed logins in 15 min lock that IP for 30 min, for wp-login **and** application passwords (so the MCP server and skill API too). Generic login errors. |
+| Rate limiting | Subscribe, job alerts, likes, submissions and the contact form are limited per visitor; the visitor key uses `xf_client_ip()` (Hostinger CDN aware). |
+| Uploads | Images/PDF only, real file-type check, 5–8 MB caps, no SVG. |
+| XML-RPC | Refused (403) in PHP and in `.htaccess`. |
+| Info leaks | WordPress version tag removed; `readme.html`/`license.txt` return 403; admin author links go to /about/; anonymous REST users list removed; users sitemap removed. |
+| Dashboard file editor | Disabled (`DISALLOW_FILE_EDIT`). |
+| Headers | Hostinger sends HSTS, X-Frame-Options, nosniff, Referrer-Policy, Permissions-Policy and its own CSP at the server level (it overrides the plugin's extra CSP directives). |
+| Secrets | None in the repo; settings can live in wp-config constants. |
+
+**Owner actions still open:** change the WordPress password, revoke the Hostinger API token, rotate the SSH password (all were shared in chat). WordPress core auto-updates minor releases (7.1.3 was pending on 8 Oct); keep plugins and core updated.

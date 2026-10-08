@@ -237,9 +237,14 @@ function xf_handle_contact() {
         wp_safe_redirect(add_query_arg('sent', 1, $back));
         exit;
     }
+    // Same answer when throttled, so bots learn nothing; at most 5 messages an hour per visitor.
+    if (xf_rate_limited('contact', 5, HOUR_IN_SECONDS)) {
+        wp_safe_redirect(add_query_arg('sent', 1, $back));
+        exit;
+    }
     $name = sanitize_text_field(wp_unslash($_POST['name'] ?? ''));
     $email = sanitize_email(wp_unslash($_POST['email'] ?? ''));
-    $message = sanitize_textarea_field(wp_unslash($_POST['message'] ?? ''));
+    $message = mb_substr(sanitize_textarea_field(wp_unslash($_POST['message'] ?? '')), 0, 5000);
     if ($name && is_email($email) && $message) {
         wp_mail(get_option('admin_email'), "Contact form: $name", "$message\n\nFrom: $name <$email>", ['Reply-To: ' . $name . ' <' . $email . '>']);
     }
