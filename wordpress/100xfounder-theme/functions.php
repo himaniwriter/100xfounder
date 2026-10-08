@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('XFT_VERSION', '1.1.1');
+define('XFT_VERSION', '1.5.0');
 
 require_once __DIR__ . '/inc-tabs.php';
 
@@ -108,10 +108,28 @@ function xft_initials($name) {
 
 /** Image in the design's frame; a dotted placeholder when the post has none. */
 function xft_image($post, $ratio = '16x10', $size = 'xft-card', $eager = false) {
-    $img = has_post_thumbnail($post)
-        ? get_the_post_thumbnail($post, $size, ['loading' => $eager ? 'eager' : 'lazy', 'alt' => esc_attr(wp_strip_all_tags(get_the_title($post)))])
-        : '';
-    return '<span class="ph ph-' . esc_attr($ratio) . '">' . $img . '</span>';
+    if (has_post_thumbnail($post)) {
+        $img = get_the_post_thumbnail($post, $size, ['loading' => $eager ? 'eager' : 'lazy', 'alt' => esc_attr(wp_strip_all_tags(get_the_title($post)))]);
+        return '<span class="ph ph-' . esc_attr($ratio) . '">' . $img . '</span>';
+    }
+    // No featured image: use the shared, credited photo for this section rather than an empty frame.
+    if (function_exists('xf_brand_photo_html')) {
+        return xf_brand_photo_html(xft_photo_slot($post), $ratio, $eager);
+    }
+    return '<span class="ph ph-' . esc_attr($ratio) . '"></span>';
+}
+
+/** Which shared photograph suits a post, from its category. */
+function xft_photo_slot($post) {
+    $map = ['funding' => 'funding', 'startup-news' => 'news', 'ai-news' => 'news', 'in-depth' => 'news',
+            'careers-salary' => 'guides', 'global' => 'guides', 'reports' => 'tools', 'manufacturers' => 'funding',
+            'founder-stories' => 'launches', 'saas' => 'launches'];
+    foreach ((array) get_the_category(is_object($post) ? $post->ID : (int) $post) as $cat) {
+        if (isset($map[$cat->slug])) {
+            return $map[$cat->slug];
+        }
+    }
+    return 'default';
 }
 
 function xft_query_posts(array $args) {

@@ -1,0 +1,202 @@
+{
+  "type": "post",
+  "slug": "willow-voice-review",
+  "title": "Willow review 2026: AI voice dictation, pricing and alternatives",
+  "excerpt": "Willow review: what the AI dictation app does, its new Knowledge feature, pricing from $12 a month, privacy terms and how it compares with Wispr Flow and Aqua.",
+  "category": "ai-news",
+  "tags": [
+    "Willow review",
+    "Willow pricing",
+    "Willow alternatives",
+    "Product Hunt",
+    "AI voice dictation",
+    "Wispr Flow",
+    "speech to text"
+  ],
+  "content": "<p>Willow is an AI voice dictation app for Mac, Windows and iPhone: you hold a hotkey, talk, and it types cleaned-up text into whatever app your cursor is in. It suits founders, developers and anyone who writes a lot of email, Slack and AI prompts. Our verdict: a polished dictation tool with strong privacy defaults, priced level with Wispr Flow, but with no Android app and pricier than Aqua Voice or Superwhisper. Its newest feature, Willow Knowledge, launched on Product Hunt on 6 October 2026.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>What's new:</strong> Willow Knowledge imports your writing style and personal context from ChatGPT, Claude or Gemini, so Willow's Scribe feature drafts text that sounds like you.</li>\n<li><strong>Pricing:</strong> a free plan with unlimited dictation on Willow's smaller model; Pro costs $15 a month ($12 billed yearly); Business costs $35 a month ($28 yearly).</li>\n<li><strong>Privacy:</strong> Private Mode is on by default and keeps transcripts and audio on your device. Sharing anonymised text for model training is opt-in.</li>\n<li><strong>Gaps:</strong> no Android app, no public changelog, and the full SOC 2 report is only available under NDA.</li>\n</ul>\n\n<h2>What Willow does</h2>\n<p>Willow works as a system-wide dictation layer. According to <a href=\"https://willowvoice.com\">Willow's website</a>, you put your cursor in any text field (Gmail, Slack, Notion, Cursor, iMessage), hold a hotkey and speak. It then inserts formatted text with filler words removed and punctuation fixed. Willow says text appears in as little as 200 milliseconds and claims it is three times more accurate than built-in dictation. Those are the company's own figures; we have not seen independent benchmarks.</p>\n<p>The company is Willow, Inc., a Y Combinator-backed startup. <a href=\"https://techcrunch.com/2025/11/12/willows-voice-keyboard-lets-you-type-across-all-your-ios-apps-and-actually-edit-what-you-said\">TechCrunch reported</a> in November 2025 that founders Allan Guo and Lawrence Liu, both Stanford dropouts, had raised $4.5 million from Box Group, Y Combinator, Burst Capital and angel investors including HubSpot's Dharmesh Shah and Reddit co-founder Alexis Ohanian. The same report named Uber, Heidi Health and Zego as enterprise customers.</p>\n<p>Willow has shipped steadily. Its <a href=\"https://www.producthunt.com/products/willow-voice\">Product Hunt page</a> lists launches for the iOS keyboard (November 2025), Windows (January 2026), developers (February), teams (March), Scribe (May) and the Frontier Pro dictation model (July), before Knowledge in October.</p>\n\n<h3>The news hook: Willow Knowledge</h3>\n<p>Knowledge is the October 2026 launch. Willow's <a href=\"https://www.producthunt.com/products/willow-voice/launches/willow-knowledge\">launch listing</a> says it lets you bring your writing style and personal context into Willow from ChatGPT, Claude, Gemini or another assistant. In the <a href=\"https://www.producthunt.com/p/willow-voice/willow-knowledge\">launch discussion</a>, maker Sharath Kuruganty explained how it works: you copy a prompt Willow gives you into your usual AI chatbot, then paste its answer back into Willow. You can then set separate preferences for contexts such as email or Slack. Co-founder Allan Guo added that it helps Willow learn your style, preferences and facts about you, and that it matters most with Scribe.</p>\n<p>That design is worth noting. Willow doesn't connect to your ChatGPT or Claude account. It relies on a summary that you generate and paste in yourself, so you can read exactly what you hand over before you share it.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Key features</h2>\n<ul>\n<li><strong>Dictation in any app.</strong> One hotkey on Mac and Windows, and a custom keyboard on iPhone. <a href=\"https://techcrunch.com/2025/11/12/willows-voice-keyboard-lets-you-type-across-all-your-ios-apps-and-actually-edit-what-you-said\">TechCrunch noted</a> that the iOS keyboard keeps a full layout for manual edits.</li>\n<li><strong>Scribe.</strong> Rather than dictating word for word, you describe what you want to say, and Scribe writes it in your style. According to <a href=\"https://help.willowvoice.com/en/articles/15043797-introduction-to-scribe-in-willow\">Willow's help centre</a>, it can draft from scratch, reply to on-screen content, or edit highlighted text by voice. The default shortcut is Function + Control.</li>\n<li><strong>Style matching.</strong> Separate tone presets for casual messaging, work chat, email and notes, according to the <a href=\"https://help.willowvoice.com/en/articles/12864746-personalization-and-style-matching\">personalisation guide</a>.</li>\n<li><strong>Dictionary and shortcuts.</strong> An auto-learning dictionary for names and jargon, plus saved snippets you can insert by voice.</li>\n<li><strong>Languages and modes.</strong> The website lists 100+ languages with switching between them, a whisper mode and an offline mode.</li>\n<li><strong>Developer use.</strong> Willow's <a href=\"https://willowvoice.com/developers\">developer page</a> pitches dictation for Cursor, Claude Code and Codex prompts, PR descriptions and tickets.</li>\n</ul>\n\n<h2>Pricing</h2>\n<p>Prices below are from <a href=\"https://willowvoice.com/pricing\">Willow's pricing page</a>, checked on 6 October 2026, in US dollars.</p>\n<table>\n<thead><tr><th>Plan</th><th>Monthly billing</th><th>Annual billing</th><th>What you get</th></tr></thead>\n<tbody>\n<tr><td>Free</td><td>$0</td><td>$0</td><td>Unlimited dictation on the smaller Frontier Mini model, limited personalisation, 20 Scribe uses a week. No card needed.</td></tr>\n<tr><td>Pro</td><td>$15/month</td><td>$12/month</td><td>Unlimited Frontier Pro model, priority processing, writing-style memory, unlimited Scribe, longer dictation.</td></tr>\n<tr><td>Business</td><td>$35/month</td><td>$28/month</td><td>Everything in Pro plus enforced privacy mode (zero data retention), SOC 2 Type II, HIPAA enforcement, admin and team controls.</td></tr>\n<tr><td>Enterprise</td><td>Custom</td><td>Custom</td><td>Invoice/PO billing, SSO/SAML, MSA and DPA, usage dashboards, API access, dedicated support.</td></tr>\n</tbody>\n</table>\n<p>Annual billing saves 20%. <a href=\"https://help.willowvoice.com/en/articles/10877048-discount-promo-codes-students-educators-non-profits-military\">Willow's help centre</a> also offers 30% off Pro to verified students, educators, non-profit staff and military personnel, by emailing support with proof of status. Cancellation takes effect at the end of the billing period, according to the <a href=\"https://help.willowvoice.com/en/articles/12854134-managing-or-canceling-your-willow-subscription\">subscription guide</a>. Neither the guide nor the terms describe a refund policy.</p>\n\n<h2>Willow vs alternatives</h2>\n<p>Each competitor's figures come from its own pricing page, checked on 6 October 2026.</p>\n<table>\n<thead><tr><th>Tool</th><th>Cheapest paid plan</th><th>Free tier</th><th>Platforms</th><th>Notable</th></tr></thead>\n<tbody>\n<tr><td>Willow</td><td>$15/month ($12 yearly)</td><td>Unlimited on smaller model</td><td>Mac, Windows, iPhone</td><td>Scribe and Knowledge; Private Mode by default</td></tr>\n<tr><td><a href=\"https://wisprflow.ai/pricing\">Wispr Flow</a></td><td>$15/user/month ($12 yearly)</td><td>2,000 words/week desktop, 1,000 mobile</td><td>Mac, Windows, iOS, Android</td><td>SOC 2 Type II and ISO 27001; HIPAA with signed BAA</td></tr>\n<tr><td><a href=\"https://aquavoice.com/pricing\">Aqua Voice</a></td><td>$10/month ($8 yearly)</td><td>1,000 words in total</td><td>Mac, Windows, iOS</td><td>70% student discount; zero data retention on Business</td></tr>\n<tr><td><a href=\"https://superwhisper.com/docs/billing/plans.md\">Superwhisper</a></td><td>$8.49/month ($84.99/year, $249.99 lifetime)</td><td>Unlimited with local models</td><td>Mac, Windows, iPhone, Android</td><td>Free tier keeps dictation on-device; bring-your-own API keys on Pro</td></tr>\n</tbody>\n</table>\n<p>On price alone, Willow matches Wispr Flow and costs more than Aqua Voice and Superwhisper. Its free plan is generous by comparison, with unlimited dictation where Wispr Flow and Aqua cap words. If you're on Android, Wispr Flow and Superwhisper support it and Willow doesn't. If you want dictation that never leaves your laptop, Superwhisper's local models are the clearer choice.</p>\n\n<!-- xf-image-3 -->\n\n<h2>What Product Hunt users said</h2>\n<p>Willow has an average of 4.9 out of 5 from 11 reviews on its <a href=\"https://www.producthunt.com/products/willow-voice/reviews\">Product Hunt reviews page</a>. That is Product Hunt users' rating, not ours. Most reviewers praised accuracy and speed. One, Paul Sussman, said it saves him about two hours a day. The complaints were specific:</p>\n<ul>\n<li>Martijn van Noordennen reported that the fast mode sometimes turned non-English speech into English.</li>\n<li>Paul Sussman mentioned occasional slow responses, with the app warning that processing was taking longer than usual.</li>\n<li>Christopher Sands, who gave 4 out of 5, wanted a way to turn off inactivity notifications.</li>\n<li>One reviewer said the free tier's weekly word cap held back heavy users. Willow's current pricing page lists unlimited dictation on the free Frontier Mini model, so that limit appears to have changed.</li>\n</ul>\n<p>On the Knowledge launch itself, Sara Ford asked whether it works like agent skills for Willow. Suryansh Tiwari said earlier Scribe drafts sometimes missed his context and he hoped Knowledge would fix that. When we checked, the launch had about 110 upvotes and was eighth for the day.</p>\n\n<h2>Privacy and data</h2>\n<p>Privacy is a strength. Willow's <a href=\"https://help.willowvoice.com/en/articles/12854269-how-willow-protects-your-data-and-privacy\">data protection article</a> says Private Mode is on by default. In that mode, transcripts and audio stay on your device and aren't stored on Willow's servers, so switching devices means losing your transcript history. Sharing anonymised text through \"Help Willow Improve\" is opt-in, and no audio is included.</p>\n<p>The <a href=\"https://willowvoice.com/privacy-policy\">privacy policy</a>, updated 5 August 2026, adds three points:</p>\n<ul>\n<li>Context awareness can read the active window when you enable it.</li>\n<li>Google data, such as calendar and contacts, is read-only and is never used for training.</li>\n<li>Service providers are bound by zero-retention and no-training controls. The policy doesn't name those AI providers or say where data is processed.</li>\n</ul>\n<p>Willow's <a href=\"https://help.willowvoice.com/en/articles/13668493-compliance-certifications-and-security-standards\">compliance page</a> lists SOC 2 Type II and HIPAA support, with the reports available through its trust centre under NDA. Only Business and Enterprise enforce zero data retention for a whole team.</p>\n<p>The <a href=\"https://willowvoice.com/terms-of-service\">terms of service</a> are dated 30 April 2025, older than several features they now cover. They set California law, binding arbitration with a class-action waiver, and a liability cap of the greater of 12 months' fees or $100. They also say you should check AI output before relying on it.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Who should use it (and who shouldn't)</h2>\n<p><strong>Good fit:</strong></p>\n<ul>\n<li>People on Mac, Windows or iPhone who write a lot of short messages and AI prompts.</li>\n<li>Anyone who wants a capable free tier before paying.</li>\n<li>Teams that need SOC 2 and HIPAA paperwork from a vendor with named enterprise customers.</li>\n<li>Indian founders working across languages. Willow lists 100+ languages, but check how well yours works on the free plan first, given the language-switching complaint above.</li>\n</ul>\n<p><strong>Poor fit:</strong></p>\n<ul>\n<li>Android users.</li>\n<li>Anyone who needs fully offline, open-model dictation (Superwhisper's free tier fits better).</li>\n<li>Budget buyers: Aqua Voice's Pro plan is $5 a month cheaper.</li>\n</ul>\n<p>If you're tracking new tools, our <a href=\"/launches/\">launches page</a> lists Product Hunt launches as they happen, and the <a href=\"/news/\">news section</a> covers AI product moves.</p>\n\n<!-- xf-image-5 -->\n\n<h2>How we scored it</h2>\n<p>We have not used it ourselves; this review is based on the vendor's documentation, pricing and terms, and public user feedback, checked on 6 October 2026.</p>\n<table>\n<thead><tr><th>Criterion</th><th>Score (1–5)</th><th>Why</th></tr></thead>\n<tbody>\n<tr><td>Features vs alternatives</td><td>4</td><td>Scribe, Knowledge, style presets and 100+ languages match or exceed rivals; no Android app.</td></tr>\n<tr><td>Pricing and value</td><td>3</td><td>A strong free tier, but Pro at $15 costs the same as Wispr Flow and more than Aqua Voice ($10) and Superwhisper ($8.49).</td></tr>\n<tr><td>Ease of getting started</td><td>4</td><td>Free plan with no card, setup guides for Mac, Windows and iOS, and one hotkey to learn.</td></tr>\n<tr><td>Privacy and data terms</td><td>4</td><td>On-device Private Mode by default and opt-in training; AI providers aren't named and terms date from April 2025.</td></tr>\n<tr><td>Maturity and support</td><td>4</td><td>Funded team, named enterprise customers and a detailed help centre; no public changelog.</td></tr>\n<tr><td><strong>Overall</strong></td><td><strong>3.8</strong></td><td>Average of the five scores.</td></tr>\n</tbody>\n</table>\n\n<h2>FAQ</h2>\n<h3>Is Willow free?</h3>\n<p>Yes. The free plan gives unlimited dictation on Willow's smaller Frontier Mini model and 20 Scribe uses a week. Pro unlocks the stronger Frontier Pro model and unlimited Scribe.</p>\n<h3>Is there a Willow coupon or discount?</h3>\n<p>There's no public coupon code as of 6 October 2026. Willow offers 20% off for annual billing and 30% off Pro for verified students, educators, non-profit staff and military members. You claim it by emailing support with proof of status.</p>\n<h3>Does Willow work on Android?</h3>\n<p>Not as of 6 October 2026. Willow lists Mac, Windows and iPhone. Wispr Flow and Superwhisper both support Android.</p>\n<h3>Does Willow store my voice recordings?</h3>\n<p>Not in the default Private Mode, which keeps audio and transcripts on your device. Anonymised text is shared only if you opt in to \"Help Willow Improve\".</p>\n<h3>What is Willow Knowledge?</h3>\n<p>It's a feature launched on 6 October 2026. It imports a summary of your writing style and personal context, which you generate in ChatGPT, Claude or Gemini and paste into Willow, so Scribe's drafts sound more like you.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Willow, <a href=\"https://willowvoice.com\">\"Willow: voice dictation\"</a>, accessed 6 October 2026</li>\n<li>Willow, <a href=\"https://willowvoice.com/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n<li>Willow, <a href=\"https://willowvoice.com/developers\">\"Willow for developers\"</a>, accessed 6 October 2026</li>\n<li>Willow, <a href=\"https://willowvoice.com/privacy-policy\">\"Privacy Policy\"</a>, updated 5 August 2026</li>\n<li>Willow, <a href=\"https://willowvoice.com/terms-of-service\">\"Terms of Service\"</a>, updated 30 April 2025</li>\n<li>Willow Help Center, <a href=\"https://help.willowvoice.com/en/articles/12854269-how-willow-protects-your-data-and-privacy\">\"How Willow protects your data and privacy\"</a>, accessed 6 October 2026</li>\n<li>Willow Help Center, <a href=\"https://help.willowvoice.com/en/articles/13668493-compliance-certifications-and-security-standards\">\"Compliance certifications and security standards\"</a>, accessed 6 October 2026</li>\n<li>Willow Help Center, <a href=\"https://help.willowvoice.com/en/articles/15043797-introduction-to-scribe-in-willow\">\"Introduction to Scribe in Willow\"</a>, accessed 6 October 2026</li>\n<li>Willow Help Center, <a href=\"https://help.willowvoice.com/en/articles/12864746-personalization-and-style-matching\">\"Personalization and style matching\"</a>, accessed 6 October 2026</li>\n<li>Willow Help Center, <a href=\"https://help.willowvoice.com/en/articles/10877048-discount-promo-codes-students-educators-non-profits-military\">\"Discount promo codes: students, educators, non-profits, military\"</a>, accessed 6 October 2026</li>\n<li>Willow Help Center, <a href=\"https://help.willowvoice.com/en/articles/12854134-managing-or-canceling-your-willow-subscription\">\"Managing or canceling your Willow subscription\"</a>, accessed 6 October 2026</li>\n<li>Product Hunt, <a href=\"https://www.producthunt.com/products/willow-voice\">\"Willow\"</a>, accessed 6 October 2026</li>\n<li>Product Hunt, <a href=\"https://www.producthunt.com/products/willow-voice/launches/willow-knowledge\">\"Willow Knowledge\"</a>, 6 October 2026</li>\n<li>Product Hunt, <a href=\"https://www.producthunt.com/p/willow-voice/willow-knowledge\">\"Willow Knowledge launch discussion\"</a>, 6 October 2026</li>\n<li>Product Hunt, <a href=\"https://www.producthunt.com/products/willow-voice/reviews\">\"Willow reviews\"</a>, accessed 6 October 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2025/11/12/willows-voice-keyboard-lets-you-type-across-all-your-ios-apps-and-actually-edit-what-you-said\">\"Willow's voice keyboard lets you type across all your iOS apps and actually edit what you said\"</a>, 12 November 2025</li>\n<li>Wispr Flow, <a href=\"https://wisprflow.ai/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n<li>Aqua Voice, <a href=\"https://aquavoice.com/pricing\">\"Pricing\"</a>, accessed 6 October 2026</li>\n<li>Superwhisper, <a href=\"https://superwhisper.com/docs/billing/plans.md\">\"Plans and pricing\"</a>, accessed 6 October 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Microphone_and_webcam.jpg/1920px-Microphone_and_webcam.jpg",
+      "alt": "A desk microphone on a small tripod next to an open laptop, with a webcam on a stand behind it",
+      "caption": "Voice dictation apps turn a simple desk microphone and laptop into a writing setup.",
+      "credit": "Photo: Антон Пищулин / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Microphone_and_webcam.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Typing_on_a_laptop_%28Unsplash%29.jpg/1920px-Typing_on_a_laptop_%28Unsplash%29.jpg",
+      "alt": "Hands typing on a laptop keyboard",
+      "caption": "Dictation tools pitch themselves as a faster alternative to typing every message.",
+      "credit": "Photo: Simon Hattinga Verschure / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Typing_on_a_laptop_(Unsplash).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Hands_are_typing_on_a_laptop_keyboard_while_a_clock_rests_next_to_the_device.jpg/1920px-Hands_are_typing_on_a_laptop_keyboard_while_a_clock_rests_next_to_the_device.jpg",
+      "alt": "Hands typing on a laptop keyboard with a small clock beside the laptop",
+      "caption": "Time saved is the main selling point of every dictation app in this comparison.",
+      "credit": "Photo: Shixart1985 / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hands_are_typing_on_a_laptop_keyboard_while_a_clock_rests_next_to_the_device.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Person_works_on_laptop_while_holding_smartphone_in_living_room.jpg/1920px-Person_works_on_laptop_while_holding_smartphone_in_living_room.jpg",
+      "alt": "A person on a couch typing on a laptop while holding a smartphone",
+      "caption": "Willow covers Mac, Windows and iPhone; Android users need another app.",
+      "credit": "Photo: Shixart1985 / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Person_works_on_laptop_while_holding_smartphone_in_living_room.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Blue_condenser_microphone_%28Unsplash%29.jpg/1920px-Blue_condenser_microphone_%28Unsplash%29.jpg",
+      "alt": "A blue condenser microphone on a stand",
+      "caption": "Any decent microphone works with system-wide dictation; accuracy depends more on the model.",
+      "credit": "Photo: Kelly Sikkema / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Blue_condenser_microphone_(Unsplash).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://willowvoice.com",
+      "publisher": "Willow",
+      "date": "2026-10-06",
+      "claim": "How Willow works, platforms (Mac, Windows, iPhone), 200ms, 3x accuracy claim, 100+ languages, whisper and offline modes"
+    },
+    {
+      "url": "https://willowvoice.com/pricing",
+      "publisher": "Willow",
+      "date": "2026-10-06",
+      "claim": "Free, Pro $15/$12, Business $35/$28, Enterprise custom; plan features; 20% annual saving"
+    },
+    {
+      "url": "https://willowvoice.com/developers",
+      "publisher": "Willow",
+      "date": "2026-10-06",
+      "claim": "Developer use: Cursor, Claude Code, Codex, PRs, tickets"
+    },
+    {
+      "url": "https://willowvoice.com/privacy-policy",
+      "publisher": "Willow",
+      "date": "2026-08-05",
+      "claim": "Private Mode, opt-in training, context awareness, Google data read-only, providers bound by zero retention, no provider names"
+    },
+    {
+      "url": "https://willowvoice.com/terms-of-service",
+      "publisher": "Willow",
+      "date": "2025-04-30",
+      "claim": "Willow, Inc.; California law; arbitration and class waiver; liability cap; auto-renewal; verify AI output"
+    },
+    {
+      "url": "https://help.willowvoice.com/en/articles/12854269-how-willow-protects-your-data-and-privacy",
+      "publisher": "Willow Help Center",
+      "date": "2026-10-06",
+      "claim": "Private Mode default; transcripts and audio on-device; Help Willow Improve opt-in"
+    },
+    {
+      "url": "https://help.willowvoice.com/en/articles/13668493-compliance-certifications-and-security-standards",
+      "publisher": "Willow Help Center",
+      "date": "2026-10-06",
+      "claim": "SOC 2 Type II, HIPAA, reports via trust centre under NDA"
+    },
+    {
+      "url": "https://help.willowvoice.com/en/articles/15043797-introduction-to-scribe-in-willow",
+      "publisher": "Willow Help Center",
+      "date": "2026-10-06",
+      "claim": "Scribe modes and Function + Control shortcut"
+    },
+    {
+      "url": "https://help.willowvoice.com/en/articles/12864746-personalization-and-style-matching",
+      "publisher": "Willow Help Center",
+      "date": "2026-10-06",
+      "claim": "Style presets by context"
+    },
+    {
+      "url": "https://help.willowvoice.com/en/articles/10877048-discount-promo-codes-students-educators-non-profits-military",
+      "publisher": "Willow Help Center",
+      "date": "2026-10-06",
+      "claim": "30% off Pro for students, educators, non-profits, military"
+    },
+    {
+      "url": "https://help.willowvoice.com/en/articles/12854134-managing-or-canceling-your-willow-subscription",
+      "publisher": "Willow Help Center",
+      "date": "2026-10-06",
+      "claim": "Cancellation at end of billing period; no refund policy stated"
+    },
+    {
+      "url": "https://www.producthunt.com/products/willow-voice",
+      "publisher": "Product Hunt",
+      "date": "2026-10-06",
+      "claim": "Launch history: iOS Nov 2025, Windows Jan 2026, Developers Feb, Teams Mar, Scribe May, Frontier Pro Jul"
+    },
+    {
+      "url": "https://www.producthunt.com/products/willow-voice/launches/willow-knowledge",
+      "publisher": "Product Hunt",
+      "date": "2026-10-06",
+      "claim": "Willow Knowledge launch 6 Oct 2026, description, ~110 upvotes, day rank 8 when checked"
+    },
+    {
+      "url": "https://www.producthunt.com/p/willow-voice/willow-knowledge",
+      "publisher": "Product Hunt",
+      "date": "2026-10-06",
+      "claim": "Maker explanation of Knowledge; comments from Sara Ford and Suryansh Tiwari"
+    },
+    {
+      "url": "https://www.producthunt.com/products/willow-voice/reviews",
+      "publisher": "Product Hunt",
+      "date": "2026-10-06",
+      "claim": "4.9/5 from 11 reviews; reviewer praise and complaints"
+    },
+    {
+      "url": "https://techcrunch.com/2025/11/12/willows-voice-keyboard-lets-you-type-across-all-your-ios-apps-and-actually-edit-what-you-said",
+      "publisher": "TechCrunch",
+      "date": "2025-11-12",
+      "claim": "$4.5M raised, investors, founders, enterprise customers, iOS keyboard"
+    },
+    {
+      "url": "https://wisprflow.ai/pricing",
+      "publisher": "Wispr Flow",
+      "date": "2026-10-06",
+      "claim": "Pro $15/$12, free word limits, platforms incl. Android, SOC 2/ISO 27001/HIPAA BAA"
+    },
+    {
+      "url": "https://aquavoice.com/pricing",
+      "publisher": "Aqua Voice",
+      "date": "2026-10-06",
+      "claim": "Pro $10/$8, free 1,000 words, platforms, 70% student discount, ZDR on Business"
+    },
+    {
+      "url": "https://superwhisper.com/docs/billing/plans.md",
+      "publisher": "Superwhisper",
+      "date": "2026-10-06",
+      "claim": "Pro $8.49/month, $84.99/year, $249.99 lifetime; free local models; platforms incl. Android"
+    }
+  ],
+  "review": {
+    "name": "Willow",
+    "url": "https://willowvoice.com/",
+    "ph_url": "https://www.producthunt.com/products/willow-voice",
+    "category": "ProductivityApplication",
+    "os": "macOS, Windows, iOS",
+    "pricing_url": "https://willowvoice.com/pricing",
+    "price": "15",
+    "currency": "USD",
+    "billing": "per month (billed monthly; $12 a month billed yearly)",
+    "free_plan": "yes",
+    "checked": "2026-10-06",
+    "rating": "3.8",
+    "verdict": "A polished dictation tool with strong privacy defaults, priced level with Wispr Flow, but with no Android app and pricier than Aqua Voice or Superwhisper.",
+    "pros": [
+      "Free plan with unlimited dictation on the smaller model",
+      "Private Mode on by default keeps transcripts and audio on your device",
+      "Scribe and the new Knowledge feature draft text in your own style",
+      "SOC 2 Type II and HIPAA support for teams"
+    ],
+    "cons": [
+      "No Android app",
+      "Pro costs more than Aqua Voice and Superwhisper",
+      "AI providers aren't named in the privacy policy",
+      "No public changelog; terms date from April 2025"
+    ]
+  }
+}

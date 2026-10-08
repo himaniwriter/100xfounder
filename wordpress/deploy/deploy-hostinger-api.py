@@ -20,7 +20,33 @@ import urllib.parse
 import urllib.request
 
 BASE = "https://developers.hostinger.com"
-TOKEN = os.environ.get("HOSTINGER_API_TOKEN", "").strip()
+def _token():
+    """Your own API key, in this order, so it never has to be pasted into a chat:
+      1. HOSTINGER_API_TOKEN in the environment
+      2. the file named by HOSTINGER_API_TOKEN_FILE
+      3. ~/.config/100xfounder/hostinger-token  (chmod 600; create it yourself)
+      4. macOS Keychain:  security add-generic-password -s hostinger-api -a "$USER" -w
+    """
+    t = os.environ.get("HOSTINGER_API_TOKEN", "").strip()
+    if t:
+        return t
+    for path in (os.environ.get("HOSTINGER_API_TOKEN_FILE"), os.path.expanduser("~/.config/100xfounder/hostinger-token")):
+        if path and os.path.isfile(path):
+            t = open(path).read().strip()
+            if t:
+                return t
+    try:
+        import subprocess
+        out = subprocess.run(["security", "find-generic-password", "-s", "hostinger-api", "-w"],
+                             capture_output=True, text=True, timeout=10)
+        if out.returncode == 0:
+            return out.stdout.strip()
+    except Exception:  # noqa: BLE001 - Keychain is optional
+        pass
+    return ""
+
+
+TOKEN = _token()
 DOMAIN = os.environ.get("XF_DOMAIN", "100xfounder.com")
 USER = os.environ.get("XF_HOSTING_USER", "u840917216")
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # wordpress/
@@ -89,8 +115,15 @@ def upload_dir(local_dir, remote_prefix):
 
 def main():
     if not TOKEN:
-        sys.exit("Set HOSTINGER_API_TOKEN first (hPanel → profile → API). Do not commit it.")
+        sys.exit("No Hostinger API token found. Set HOSTINGER_API_TOKEN, or save it in\n"
+                 "  ~/.config/100xfounder/hostinger-token  (chmod 600), or the macOS Keychain:\n"
+                 '  security add-generic-password -s hostinger-api -a "$USER" -w\n'
+                 "Get the token from hPanel → profile → API. Never commit it.")
     status, installs = api("GET", "/api/hosting/v1/wordpress/installations")
+    if status in (401, 403):
+        sys.exit(f"Hostinger rejected the API token ({status}). Check HOSTINGER_API_TOKEN is the real token from hPanel → profile → API, not a placeholder.")
+    if status != 200:
+        sys.exit(f"Hostinger API error {status}: {installs}")
     site = next((i for i in installs if i["domain"] == DOMAIN), None) if status == 200 else None
     if not site:
         sys.exit(f"No WordPress installation found for {DOMAIN}. Install it first (see docs/WORDPRESS_SETUP.md).")

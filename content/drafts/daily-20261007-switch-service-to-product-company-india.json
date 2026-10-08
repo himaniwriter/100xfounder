@@ -1,0 +1,122 @@
+{
+  "type": "post",
+  "slug": "switch-service-to-product-company-india",
+  "title": "Service to product company switch in India: skills, pay and interviews",
+  "excerpt": "Moving from TCS, Infosys or Wipro to a product company or startup: what the pay surveys show, how interviews differ and a 90-day plan to make the switch.",
+  "category": "careers-salary",
+  "tags": [
+    "career switch",
+    "product company jobs",
+    "it services",
+    "tcs",
+    "infosys",
+    "software engineer salary",
+    "interview preparation",
+    "india jobs"
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Tata_Consultancy_Services%2C_Electronic_City_Bangalore_campus.jpg/1920px-Tata_Consultancy_Services%2C_Electronic_City_Bangalore_campus.jpg",
+      "alt": "Buildings of the Tata Consultancy Services campus in Electronic City, Bengaluru",
+      "caption": "TCS's Electronic City campus in Bengaluru. Services firms are where many Indian engineers start their careers.",
+      "credit": "Photo: HokuroN / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tata_Consultancy_Services,_Electronic_City_Bangalore_campus.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Infosys_Mysore_Campus.jpg/1920px-Infosys_Mysore_Campus.jpg",
+      "alt": "Library building at the Infosys campus in Mysuru, Karnataka",
+      "caption": "The Infosys campus in Mysuru. Infosys reported an 11% average raise in India for FY26 including promotions.",
+      "credit": "Photo: L'Astorina / Wikimedia Commons, CC BY 4.0",
+      "license": "CC BY 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Infosys_Mysore_Campus.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/A_typical_game_development_company_in_India.jpg",
+      "alt": "Developers working at desks with monitors in an Indian software studio",
+      "caption": "Developers at work in an Indian software studio.",
+      "credit": "Photo: Red Apple Learning / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:A_typical_game_development_company_in_India.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Hitec_City%2C_Hyderabad_%2872189%29.jpg/1920px-Hitec_City%2C_Hyderabad_%2872189%29.jpg",
+      "alt": "Office towers in HITEC City, Hyderabad",
+      "caption": "HITEC City, Hyderabad. The city led metro hiring growth in Naukri's August 2026 index.",
+      "credit": "Photo: Syced / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hitec_City,_Hyderabad_(72189).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Aerial_view_of_the_Glass_Pyramid_at_the_Infosys_Campus.jpg/1920px-Aerial_view_of_the_Glass_Pyramid_at_the_Infosys_Campus.jpg",
+      "alt": "Aerial view of the Glass Pyramid building at the Infosys campus",
+      "caption": "The Glass Pyramid at the Infosys campus in Bengaluru. Infosys is one of the IT services firms many engineers start their careers at.",
+      "credit": "Photo: Vinu Thomas from Bangalore, India / Wikimedia Commons, CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Glass_Pyramid_at_the_Infosys_Campus.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.aon.com/apac/in-the-press/asia-newsroom/2026/aon-survey-projects-slight-uptick-in-salaries-in-india-2026",
+      "publisher": "Aon",
+      "date": "2026-02-24",
+      "claim": "2026 projections: 9.1% overall; tech consulting & services 6.6%; platforms & products 9.4%; GCCs 9.3%; engineering design 9.9%; 1,400+ orgs, 45 industries"
+    },
+    {
+      "url": "https://www.outlookbusiness.com/corporate/infosys-ceo-salil-parekhs-remuneration-rises-2-to-826-crore-in-fy26",
+      "publisher": "Outlook Business",
+      "date": "2026-05-30",
+      "claim": "Infosys FY26 median remuneration Rs 11,13,024 vs Rs 10,72,008; average India increase 11% incl. promotions"
+    },
+    {
+      "url": "https://www.levels.fyi/companies/tata-consultancy-services/salaries/software-engineer/locations/india",
+      "publisher": "Levels.fyi",
+      "date": "2026-10-07",
+      "claim": "TCS India SWE median Rs 699K; level medians; 2,901 data points"
+    },
+    {
+      "url": "https://www.levels.fyi/companies/flipkart/salaries/software-engineer/locations/india",
+      "publisher": "Levels.fyi",
+      "date": "2026-10-07",
+      "claim": "Flipkart India SWE median Rs 3.16M; SDE1-3 medians; SDE2 base/stock/bonus split; 4-year vesting; 778 data points"
+    },
+    {
+      "url": "https://www.levels.fyi/t/software-engineer/locations/india",
+      "publisher": "Levels.fyi",
+      "date": "2026-10-07",
+      "claim": "India SWE median Rs 3,005,381; 25th Rs 1.69M; 75th Rs 4.91M; 23,752 submissions"
+    },
+    {
+      "url": "https://mediabrief.com/randstad-salary-trends-report-2025-26/",
+      "publisher": "MediaBrief",
+      "date": "2026-01-27",
+      "claim": "Randstad 2025-26: IT junior Rs 6.65L, middle Rs 20.75L, senior Rs 35.66L average CTC"
+    },
+    {
+      "url": "https://www.naukri.com/blog/naukri-jobspeak-white-collar-hiring-grows-14-in-aug-fresher-hiring-ai-roles-lead/",
+      "publisher": "Naukri",
+      "date": "2026-09-07",
+      "claim": "Aug 2026: +14% YoY; AI/ML +31%; IT +11%; AI/ML within IT +22%; infosec +32%; experience bands; Hyderabad +23%; GCC +10%, Hyderabad GCC +28%"
+    },
+    {
+      "url": "https://india.entrepreneur.com/business-news/from-tcs-to-techm-headcount-declines-echo-vembus-it-hiring-concerns",
+      "publisher": "Entrepreneur India",
+      "date": "2026-08-04",
+      "claim": "TCS FY26 -23,000 and Q1 FY27 +9,279 to 593,798; Infosys -532; HCLTech -3,292; TechM -863; Wipro +888"
+    },
+    {
+      "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+      "publisher": "Amazon",
+      "date": "2026-10-07",
+      "claim": "SDE II process: 90-min OA (2 coding, 20 min design, 8 min LP survey); four 55-min interviews; STAR; outcome within 5 business days"
+    },
+    {
+      "url": "https://www.freepressjournal.in/business/indias-gcc-industry-records-984-billion-revenue-in-fy26-report-says",
+      "publisher": "Free Press Journal",
+      "date": "2026-08-19",
+      "claim": "Awfis-Zinnov: 2,117 GCCs, 3,728 units, 2.36 million professionals, $98.4 bn FY26 revenue"
+    }
+  ],
+  "content": "<p>Moving from an IT services company such as TCS, Infosys or Wipro to a product company or startup is one of the most common career jumps in Indian tech, and published pay data shows why: product employers both pay more and budget bigger raises. The switch is won in the interview, which tests coding from scratch, system design and evidence that you owned outcomes, so plan about three months of focused preparation and apply directly through official careers pages.</p>\n\n<p>The timing is worth a look. Big services firms reported mixed headcount in the June 2026 quarter, with TCS adding 9,279 people while Infosys and HCLTech shrank, and Naukri's August 2026 hiring index showed AI and machine-learning roles growing fastest. This guide sets out the pay gap using named surveys only, the skills and interview format product companies use, and a step-by-step plan. (LPA means lakh per annum; ₹1 lakh is ₹1,00,000.)</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>Aon projects 2026 raises of 6.6% in technology consulting and services against 9.4% in technology platforms and products and 9.3% in global capability centres.</li>\n<li>On Levels.fyi's self-reported data, the median TCS software engineer package in India is ₹6.99 lakh, against ₹31.6 lakh at Flipkart and ₹30.05 lakh across all Indian software engineers.</li>\n<li>Product interviews lean on data structures, algorithms, system design and behavioural stories; Amazon's process, for example, runs an online assessment and then four 55-minute interviews.</li>\n<li>AI skills carry the most momentum: AI/ML hiring rose 31% year on year in August 2026, according to Naukri.</li>\n<li>Global capability centres (GCCs) are a practical middle step, with about 2.36 million people across 2,117 centres in India.</li>\n</ul>\n\n<h2>Why the switch happens: what the surveys show</h2>\n<h3>Raises differ by sector</h3>\n<p>Aon's annual salary survey, covering more than 1,400 organisations in 45 industries, projects an average Indian raise of 9.1% for 2026. Underneath that, technology consulting and services sits at 6.6%, the lowest of the sectors it lists, while technology platforms and products is at 9.4%, GCCs at 9.3% and engineering design services at 9.9%, <a href=\"https://www.aon.com/apac/in-the-press/asia-newsroom/2026/aon-survey-projects-slight-uptick-in-salaries-in-india-2026\">according to Aon</a>. A gap of about three percentage points a year compounds: over five years it is the difference between your pay rising roughly 38% and roughly 57% before promotions, on simple compounding of those averages.</p>\n<p>Services firms do reward people who move up. Infosys's annual report put the median employee's pay at ₹11,13,024 for the year to March 2026, up about 4% from ₹10,72,008, and said the average increase in India was 11% once promotions were included, <a href=\"https://www.outlookbusiness.com/corporate/infosys-ceo-salil-parekhs-remuneration-rises-2-to-826-crore-in-fy26\">according to Outlook Business</a>.</p>\n\n<h3>The pay gap at the same job title</h3>\n<p>Levels.fyi collects pay reports from employees. The table below uses its software engineer pages for India, as of October 2026. Treat them as indicative: they are self-reported, and the people who submit may not be typical.</p>\n<table>\n<thead><tr><th>Employer (Levels.fyi, India)</th><th>Median total pay</th><th>Example levels</th><th>Data points</th></tr></thead>\n<tbody>\n<tr><td>Tata Consultancy Services</td><td>₹6.99 lakh</td><td>Assistant Engineer ₹5.77 lakh; IT Analyst ₹10.9 lakh; Assistant Consultant ₹19.3 lakh</td><td>2,901</td></tr>\n<tr><td>Flipkart</td><td>₹31.6 lakh</td><td>SDE 1 ₹22.4 lakh; SDE 2 ₹36.2 lakh; SDE 3 ₹56.6 lakh</td><td>778</td></tr>\n<tr><td>All software engineers in India</td><td>₹30.05 lakh</td><td>25th percentile ₹16.9 lakh; 75th percentile ₹49.1 lakh</td><td>23,752</td></tr>\n</tbody>\n</table>\n<p>Sources: <a href=\"https://www.levels.fyi/companies/tata-consultancy-services/salaries/software-engineer/locations/india\">Levels.fyi TCS</a>, <a href=\"https://www.levels.fyi/companies/flipkart/salaries/software-engineer/locations/india\">Levels.fyi Flipkart</a> and <a href=\"https://www.levels.fyi/t/software-engineer/locations/india\">Levels.fyi India</a>.</p>\n<p>Two cautions. First, product packages often include stock: Levels.fyi's Flipkart page shows an SDE 2 package of about ₹29.8 lakh base, ₹4.36 lakh of stock a year and ₹2.02 lakh of bonus, with stock vesting over four years. Stock is not cash until it vests and can be sold. Second, a wider survey narrows the picture. Randstad's 2025-26 salary trends report puts average IT-sector pay at ₹6.65 lakh for junior, ₹20.75 lakh for middle and ₹35.66 lakh for senior staff, <a href=\"https://mediabrief.com/randstad-salary-trends-report-2025-26/\">according to MediaBrief</a>. Most people who switch land somewhere between the services and top-product numbers, not at the top.</p>\n\n<!-- xf-image-2 -->\n\n<h2>What the market is hiring for in 2026</h2>\n<p>Naukri's JobSpeak index for August 2026 rose 14% year on year. AI/ML roles grew 31% across sectors, and within IT/software services hiring rose 11%, AI/ML hiring 22% and IT and information security roles 32%, <a href=\"https://www.naukri.com/blog/naukri-jobspeak-white-collar-hiring-grows-14-in-aug-fresher-hiring-ai-roles-lead/\">according to Naukri</a>. The AI demand is tilted to experience: hiring for AI/ML talent with 16+ years of experience more than doubled, the 13-16 year band grew 87% and the 8-12 year band 39%. Hyderabad led metros, with overall hiring up 23%.</p>\n<p>Services headcount, meanwhile, is uneven. TCS ended the year to March 2026 with about 23,000 fewer employees, then added 9,279 in the June quarter to reach 593,798. Infosys fell by 532 in that quarter, HCLTech by 3,292 and Tech Mahindra by 863, while Wipro added 888, <a href=\"https://india.entrepreneur.com/business-news/from-tcs-to-techm-headcount-declines-echo-vembus-it-hiring-concerns\">according to Entrepreneur India</a>. The same report describes the work shifting from writing code towards orchestrating and checking AI-assisted output.</p>\n\n<h2>Skills that carry over, and the gaps to close</h2>\n<p>Services experience is useful. You have worked with large clients, legacy systems, production support and process. What product interviewers probe is different: can you design and own something end to end, reason about trade-offs, and show its effect in numbers? In our reading of hiring guides, these are the usual gaps:</p>\n<ul>\n<li><strong>Coding from first principles.</strong> Writing correct, tested code without a framework doing the heavy lifting, under time pressure.</li>\n<li><strong>Data structures and algorithms.</strong> Arrays, hash maps, trees, graphs, sorting and complexity analysis.</li>\n<li><strong>System design.</strong> Scaling a service, choosing storage, caching, queues and handling failure.</li>\n<li><strong>Product sense and metrics.</strong> Why a feature exists, who uses it and how you would measure it.</li>\n<li><strong>Ownership stories.</strong> Specific situations where you made a call and can show the result.</li>\n</ul>\n<p>If your current project is maintenance-heavy, build evidence outside it: an internal tool you led, a well-documented open-source contribution, or a small product with real users. One deep stack beats a list of ten technologies on a resume.</p>\n\n<!-- xf-image-3 -->\n\n<h2>How product interviews differ</h2>\n<p>Big product companies publish their process, which makes preparation concrete. Amazon's guide for SDE II (mid-level software engineer) candidates is a good template, <a href=\"https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep\">according to Amazon</a>:</p>\n<ul>\n<li><strong>Online assessment:</strong> 90 minutes covering two coding questions, about 20 minutes of system-design scenarios and an eight-minute survey on Amazon's Leadership Principles.</li>\n<li><strong>Interview loop:</strong> four interviews of 55 minutes each with engineers, testing technical and behavioural skills.</li>\n<li><strong>Coding:</strong> syntactically correct code, not pseudo-code, with attention to scale, robustness, testing and edge cases.</li>\n<li><strong>System design:</strong> at least one design question, judged on practicality, efficiency, reliability and scalability.</li>\n<li><strong>Behavioural:</strong> two or three questions per interview on past successes or setbacks, answered in the STAR format (situation, task, action, result), with metrics where possible.</li>\n<li><strong>Outcome:</strong> a decision within five business days of the loop.</li>\n</ul>\n<p>Startup processes are not standardised and can differ a lot from this template. Ask the recruiter for the stages before you start, and read our company-specific <a href=\"/how-to-apply/\">how-to-apply guides</a> for firms on our jobs board.</p>\n<p>The behavioural round is where services candidates often lose ground, because their project stories are about the client team rather than their own decisions. Prepare six to eight stories with your own role, the choice you made and a number at the end.</p>\n\n<h2>GCCs: a practical middle step</h2>\n<p>Global capability centres, the in-house tech and operations arms of multinational companies, sit between services and product work: you build for one company's own products or platforms. India hosts 2,117 GCCs with 3,728 units, employing about 2.36 million people, and the ecosystem generated $98.4 billion of revenue in FY26, according to a report by Awfis and Zinnov <a href=\"https://www.freepressjournal.in/business/indias-gcc-industry-records-984-billion-revenue-in-fy26-report-says\">reported by the Free Press Journal</a>. Naukri recorded GCC hiring up 10% in August 2026, led by Hyderabad at 28%, and Aon expects GCC raises of 9.3% in 2026. Many services engineers find the move to a GCC easier because the domain and enterprise processes are familiar.</p>\n\n<!-- xf-image-4 -->\n\n<h2>A 90-day plan to switch</h2>\n<ol>\n<li><strong>Weeks 1-2: pick a target.</strong> Choose a role (backend, frontend, data, SRE, QA automation) and 20-30 companies. Read their job descriptions and note the repeated skills.</li>\n<li><strong>Weeks 1-8: daily practice.</strong> An hour a day on data structures and algorithms, increasing difficulty each week, timed and written in a plain editor.</li>\n<li><strong>Weeks 4-10: system design.</strong> One design a week, from a URL shortener to a feed or a payments flow, explained out loud.</li>\n<li><strong>Weeks 2-6: rewrite your resume.</strong> Replace duties with outcomes, such as \"cut batch run time from 6 hours to 40 minutes\", and drop the client name if it isn't public.</li>\n<li><strong>Weeks 6-12: apply and interview.</strong> Apply in batches of five to ten, starting with lower-priority companies to warm up, and ask for referrals from former colleagues who already moved.</li>\n</ol>\n<p>Factor in your notice period. Check the term in your appointment letter early and use our <a href=\"/tools/notice-period-buyout-calculator/\">notice period buyout calculator</a> if a new employer offers to pay it.</p>\n\n<h2>How to apply and negotiate</h2>\n<p>Apply on official careers pages or applicant-tracking systems rather than through unknown agents. Our <a href=\"/jobs/\">jobs board</a> lists roles pulled from companies' own careers feeds, with filters such as <a href=\"/jobs/engineering-jobs-in-bengaluru/\">engineering jobs in Bengaluru</a>. When an offer arrives, compare in-hand pay, not CTC, and look at how much is variable or stock. Our <a href=\"/tools/salary-hike-calculator/\">salary hike calculator</a> shows how much of a jump survives tax.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>The pay and raise gap between services and product employers is visible in every named data source we checked, but it goes to people who can pass a product interview, not to job titles. Spend three months closing the coding, design and storytelling gaps, consider a GCC as a stepping stone, and judge offers on cash in hand and the quality of work, not the brand alone.</p>\n\n<h2>FAQ</h2>\n<h3>Can I move from TCS or Infosys to a product company with 2-3 years of experience?</h3>\n<p>Yes. Early-career moves are common because interviews test fundamentals you can learn, such as data structures, algorithms and basic design.</p>\n<h3>How much salary hike should I expect when switching?</h3>\n<p>There is no fixed figure. Published data shows a wide gap between services and product medians, but your offer depends on level, company and negotiation.</p>\n<h3>Is a GCC a product company?</h3>\n<p>A GCC is a multinational's own centre. Work ranges from operations to core product engineering, so check what the specific team builds.</p>\n<h3>Do startups ask DSA questions?</h3>\n<p>Many do, but formats vary widely. Ask the recruiter for the stages and practise both coding rounds and practical exercises.</p>\n<h3>Should I take a pay cut to join a startup?</h3>\n<p>Only with clear reasons, such as role scope or learning, and only after valuing any stock options realistically.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Aon, \"<a href=\"https://www.aon.com/apac/in-the-press/asia-newsroom/2026/aon-survey-projects-slight-uptick-in-salaries-in-india-2026\">Aon Survey Projects Slight Uptick in Salaries in India From 8.9 Percent in 2025 to 9.1 Percent in 2026</a>\", 24 February 2026</li>\n<li>Outlook Business, \"<a href=\"https://www.outlookbusiness.com/corporate/infosys-ceo-salil-parekhs-remuneration-rises-2-to-826-crore-in-fy26\">Infosys CEO Salil Parekh's remuneration rises 2% to ₹82.6 crore in FY26</a>\", 30 May 2026</li>\n<li>Levels.fyi, \"<a href=\"https://www.levels.fyi/companies/tata-consultancy-services/salaries/software-engineer/locations/india\">Tata Consultancy Services Software Engineer Salaries in India</a>\", accessed 7 October 2026</li>\n<li>Levels.fyi, \"<a href=\"https://www.levels.fyi/companies/flipkart/salaries/software-engineer/locations/india\">Flipkart Software Engineer Salaries in India</a>\", accessed 7 October 2026</li>\n<li>Levels.fyi, \"<a href=\"https://www.levels.fyi/t/software-engineer/locations/india\">Software Engineer Salary in India</a>\", accessed 7 October 2026</li>\n<li>MediaBrief, \"<a href=\"https://mediabrief.com/randstad-salary-trends-report-2025-26/\">Senior-level salaries in Tier-2 cities rise sharply, now rival metro pay: Randstad Salary Trends Report 2025-26</a>\", 27 January 2026</li>\n<li>Naukri, \"<a href=\"https://www.naukri.com/blog/naukri-jobspeak-white-collar-hiring-grows-14-in-aug-fresher-hiring-ai-roles-lead/\">Naukri JobSpeak August 2026: Hiring Grows 14% YOY</a>\", 7 September 2026</li>\n<li>Entrepreneur India, \"<a href=\"https://india.entrepreneur.com/business-news/from-tcs-to-techm-headcount-declines-echo-vembus-it-hiring-concerns\">From TCS to TechM, headcount declines echo Vembu's IT hiring concerns</a>\", 4 August 2026</li>\n<li>Amazon, \"<a href=\"https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep\">SDE II Interview Prep</a>\", accessed 7 October 2026</li>\n<li>Free Press Journal, \"<a href=\"https://www.freepressjournal.in/business/indias-gcc-industry-records-984-billion-revenue-in-fy26-report-says\">India's GCC industry records $98.4 billion revenue in FY26, report says</a>\", 19 August 2026</li>\n</ol>"
+}

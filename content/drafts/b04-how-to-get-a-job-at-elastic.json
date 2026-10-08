@@ -1,0 +1,157 @@
+{
+  "type": "post",
+  "slug": "how-to-get-a-job-at-elastic",
+  "title": "How to Get a Job at Elastic in 2026: Process, India Roles and Tips",
+  "excerpt": "Elastic's official hiring stages, its interview AI rules, where it is hiring in October 2026, India included, and how to stand out at a distributed company.",
+  "category": "careers-salary",
+  "tags": [
+    "Elastic",
+    "Elasticsearch",
+    "remote jobs",
+    "how to apply",
+    "interview process",
+    "India jobs",
+    "careers"
+  ],
+  "content": "<p>To get a job at Elastic in 2026, apply on its Greenhouse-powered careers site and expect the process laid out on its official \"How we hire\" page. That process runs from a 30-minute recruiter screen through department interviews and, for some roles, a panel presentation and a technical assessment. Elastic has been distributed by design since it was founded, so many roles are posted country by country rather than tied to an office. India had 14 openings on 4 October 2026. 100Xfounder is an independent site and is not affiliated with or endorsed by Elastic.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>Elastic's public job board listed 392 postings on 4 October 2026. They covered 203 distinct roles, because the same role is often posted separately in several countries.</li>\n<li>Elasticsearch platform engineering was the largest group (103 postings), but none of those roles were listed in India that day.</li>\n<li>India had 14 postings, mostly in Bengaluru and mostly in sales, solutions architecture, consulting, IT and finance.</li>\n<li>Elastic's own hiring page lists a recruiter screen, department interviews, a panel presentation and a technical assessment, each with a published time range.</li>\n<li>Elastic says it allows AI for preparation but wants interviews kept \"strictly human-to-human\".</li>\n</ul>\n\n<h2>How Elastic works: distributed by design</h2>\n<p>Elastic, the company behind Elasticsearch and Kibana, has no headquarters in the usual sense. Its <a href=\"https://www.sec.gov/Archives/edgar/data/1707753/000170775326000018/estc-20260430.htm\">annual report for the year ended 30 April 2026</a> says it is \"a distributed company\" and has no principal executive office. The same filing says it had 4,019 employees in over 40 countries, and that its processes and teams are built so people can generally work without being in the same place as colleagues. Revenue for that fiscal year was $1.739 billion, up 17%, the filing shows.</p>\n<p>This goes back to the beginning. An <a href=\"https://www.elastic.co/blog/culture-elastic-distributed-by-design\">Elastic culture post from April 2020</a> says the founding team was spread across Israel, Germany and the Netherlands. The company runs on asynchronous tools such as GitHub, Slack and Zoom, holds department meetings at times that suit several regions, and uses leadership \"ask me anything\" sessions to share plans.</p>\n<p>The job posts repeat this. Many engineering listings say the company is \"distributed by intention\" and hires the best engineers \"wherever they are\". A <a href=\"https://jobs.elastic.co/jobs?gh_jid=8161519\">senior vector search engineering post</a> gives bonus points for having collaborated over the internet, and \"double bonus points\" for doing it asynchronously.</p>\n\n<h3>The Source Code values</h3>\n<p>Elastic sums up its culture in a set of values it calls the <a href=\"https://www.elastic.co/about/our-source-code\">Source Code</a>. They include \"Customer, 1st\", \"Home, Dinner\" (balance between work and life), \"Space, Time\" (room to think and to fail), \"IT, Depends\" (complex questions deserve nuanced answers) and \"HUMBLE, Ambitious\". One value is written as \"01.02, /FORMAT\". It is about empathy across cultures in a distributed company, and the page sums it up as \"don't assume malice\". Elastic's hiring page tells candidates to read these values before interviewing, and at least one India posting lists alignment with them as a requirement.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Where Elastic is hiring right now</h2>\n<p>We pulled every live posting from <a href=\"https://boards-api.greenhouse.io/v1/boards/elastic/jobs?content=true\">Elastic's public Greenhouse job board</a> on 4 October 2026. The board listed 392 postings for 203 distinct job titles. Elastic often posts one role in many countries. For example, a senior vector search engineer role appeared as separate listings in nine countries.</p>\n<p>The largest departments by posting count were:</p>\n<table>\n<thead><tr><th>Department</th><th>Postings</th></tr></thead>\n<tbody>\n<tr><td>Platform – Elasticsearch</td><td>103</td></tr>\n<tr><td>Security – Cross Team</td><td>26</td></tr>\n<tr><td>Security – Integrations</td><td>19</td></tr>\n<tr><td>IT</td><td>14</td></tr>\n<tr><td>Sales – AMER West</td><td>12</td></tr>\n<tr><td>Observability – Application Observability</td><td>11</td></tr>\n</tbody>\n</table>\n<p>By country, the United States had the most postings (about 120), followed by Canada and Spain (37 each), Ireland and Portugal (23 each), Greece (22), the UK (21), Poland (16) and India (14). The Elasticsearch core engineering roles were open in 11 countries: the US, Canada, the UK, Ireland, Spain, Portugal, Greece, Romania, Norway, Poland and Switzerland.</p>\n<p>Because each listing names a country, check that it is one where you can legally work before you apply. The postings we read do not say whether Elastic sponsors visas, so ask the recruiter if that matters to you. Our <a href=\"/jobs/company/elastic/\">Elastic jobs page</a> shows the same openings, refreshed from the official feed.</p>\n\n<h2>Elastic jobs in India</h2>\n<p>On 4 October 2026, ten India postings were in Bangalore (Bengaluru), one in Mumbai and three were listed simply as \"India\". They covered:</p>\n<ul>\n<li><strong>Consulting:</strong> three consulting architect roles in observability, platform and search. The <a href=\"https://jobs.elastic.co/jobs?gh_jid=7447236\">search consulting architect post</a> requires an active Elastic certification and at least seven years as a consulting architect or similar. It mentions travel to client sites of up to 20%.</li>\n<li><strong>Solutions architecture and partners:</strong> a senior solution architect in Mumbai, a <a href=\"https://jobs.elastic.co/jobs?gh_jid=8226083\">senior partner solutions architect</a> (8+ years, travel up to 30% across India) and an APJ partner sales specialist for cloud marketplaces.</li>\n<li><strong>Sales development:</strong> a senior SDR and an <a href=\"https://jobs.elastic.co/jobs?gh_jid=8067061\">SDR for India's public sector</a>. That post asks for experience with ministries, defence, healthcare or government agencies, plus an \"AI-first mindset\".</li>\n<li><strong>IT engineering:</strong> a <a href=\"https://jobs.elastic.co/jobs?gh_jid=8237463\">Kubernetes platform engineer</a> (5+ years with infrastructure-as-code and cloud providers) and a lead Salesforce full-stack AI engineer (12+ years).</li>\n<li><strong>Finance and operations:</strong> two revenue manager roles, a strategic sourcing analyst (three to five years) and a <a href=\"https://jobs.elastic.co/jobs?gh_jid=8161139\">fixed-term marketing operations coordinator</a> (one to three years).</li>\n</ul>\n<p>The pattern matters. If you want to work on Elasticsearch itself from India, there were no such openings that day. The realistic routes into Elastic India right now are customer-facing technical roles, internal IT and business functions. If you hold an Elastic certification, consulting is the clearest fit. For other Bengaluru engineering openings, see our <a href=\"/jobs/engineering-jobs-in-bengaluru/\">engineering jobs in Bengaluru</a> list.</p>\n\n<!-- xf-image-3 -->\n\n<h2>The hiring process, step by step</h2>\n<p>Elastic publishes its process on its <a href=\"https://www.elastic.co/careers/how-we-hire\">How we hire</a> page. Not every role has every stage, but this is the official outline:</p>\n<ol>\n<li><strong>Application.</strong> Elastic asks people to apply only to roles that match their experience, and to tailor the CV with concrete project examples. Cover letters are optional but welcome.</li>\n<li><strong>Recruiter screen (30 minutes).</strong> A phone or video call to introduce the role and answer your questions.</li>\n<li><strong>Department interviews (45–90 minutes each).</strong> Several conversations with peers, the hiring manager and leaders.</li>\n<li><strong>Panel presentation (45–90 minutes), for some roles.</strong> Role-play scenarios or product demos that simulate the job.</li>\n<li><strong>Technical assessment (60–90 minutes), for some roles.</strong> Depending on the job, this can be a deep technical discussion of Elastic's products, a test of architecture and problem-solving, or a timed, proctored coding exercise.</li>\n<li><strong>Decision and offer.</strong> Elastic says successful candidates often hear within days of the final review, though timing varies. The recruiter then shares pay, start date and onboarding details.</li>\n</ol>\n<p>Elastic says there is no dress code, and it tells candidates to test their setup before video interviews. For adjustments during the process, email candidate_accessibility@elastic.co. The postings say Elastic replies within 24 business hours.</p>\n\n<h3>What candidates report</h3>\n<p>Individual accounts add some colour, but they are <strong>candidate reports</strong>, not policy, and older ones may be out of date. A 2022 <a href=\"https://leetcode.com/discuss/post/2578843/\">LeetCode Discuss post</a> from a backend candidate in Bengaluru describes this sequence:</p>\n<ul>\n<li>a half-hour recruiter screen;</li>\n<li>a behavioural round with the hiring manager;</li>\n<li>a take-home coding assignment, done within 24 hours of starting it;</li>\n<li>a round with a principal engineer that went deep into the submitted code;</li>\n<li>a further round with an architect.</li>\n</ul>\n<p>The candidate was rejected at the end. The main lesson is that Elastic interviewers may examine your own code line by line, so be ready to defend every choice in it.</p>\n\n<h2>How Elastic treats AI in interviews</h2>\n<p>In July 2026 Elastic published a <a href=\"https://www.elastic.co/blog/ai-guidelines-interview-process\">guide to AI in the interview process</a>. It allows AI for proofreading, structuring your thoughts, brainstorming answers and preparing presentations. It does not allow inventing experience, letting AI do the main thinking, or using AI tools during the interview itself, which should stay \"strictly human-to-human\". The guide says Elastic uses AI-detection tools on applications. Deliberate misrepresentation can lead to disqualification, or to dismissal if it comes to light after hiring.</p>\n<p>This sits alongside job posts that ask for AI fluency. The US vector search posting, for example, asks for a track record of using AI to speed up development and debugging \"while still owning the final outcomes\". In practice: use AI as a tool at work, but be able to explain every line yourself.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Pay, benefits and how to stand out</h2>\n<h3>What the postings disclose</h3>\n<p>Where the law requires it, Elastic publishes base-pay ranges. The <a href=\"https://jobs.elastic.co/jobs?gh_jid=8161511\">US senior software engineer, vector search posting</a> lists a typical starting base salary of $133,100 to $210,600. A higher range of $159,900 to $252,900 applies in select high-cost areas such as the San Francisco Bay Area, Seattle, Los Angeles and New York. A <a href=\"https://jobs.elastic.co/jobs?gh_jid=8237959\">US director of engineering post</a> lists $199,700 to $315,900. Those posts say the roles are eligible for Elastic's stock programme and a US 401(k) with matching up to 6%.</p>\n<p>The India postings we reviewed carried no pay figures, and we have not included unverified numbers. In India, offers are usually quoted as annual CTC (cost to company) in lakhs per annum (LPA; one lakh is ₹100,000). Use our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a> to turn CTC into monthly take-home pay, and confirm tax details with a qualified professional.</p>\n<p>Benefits listed across postings and on Elastic's <a href=\"https://www.elastic.co/careers/benefits\">benefits page</a> include at least 16 weeks of parental leave, donation matching up to US$2,000 a year, 40 hours of volunteer time and money towards setting up a home workspace. The postings also say pay is based on the work you will do at Elastic, not your previous salary. Benefits vary by country.</p>\n\n<h3>Practical tips</h3>\n<ol>\n<li><strong>Prove you work well remotely.</strong> Point to open-source pull requests, design docs or projects you delivered with people in other time zones. Elastic's own posts reward this.</li>\n<li><strong>Know the product.</strong> The technical assessment can cover Elastic's products. Run Elasticsearch and Kibana yourself, and if you are applying for consulting, get the Elastic certification the role names.</li>\n<li><strong>Write clearly.</strong> A distributed company runs on written updates. A tight CV with specific project results, and an optional short cover letter, shows you can do that.</li>\n<li><strong>Prepare to defend your own code.</strong> Both the official technical stage and the candidate report point to deep discussion of how and why you built something.</li>\n<li><strong>Use AI only within Elastic's rules.</strong> Use it to prepare, never to fake experience, and leave it out of live interviews.</li>\n<li><strong>Apply selectively.</strong> Elastic asks for this directly. Pick the one or two listings, in a country where you can work, that genuinely fit.</li>\n</ol>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>Elastic is one of the few public software companies of its size that is distributed by design. It publishes its interview stages, its AI rules and, in many countries, its pay ranges. That openness makes preparation easier. Remember, though, that roles are posted country by country, and in India the current openings lean towards customer-facing, IT and business roles rather than core Elasticsearch engineering. Applicants who show strong written communication, real product knowledge and a record of remote collaboration fit what Elastic says it wants.</p>\n\n<h2>FAQ</h2>\n<h3>Is Elastic fully remote?</h3>\n<p>Elastic calls itself distributed by design and has no principal executive office. Its annual report says employees can generally work without being in the same location as colleagues, though it also has offices and employee hubs. Each posting names a country or city, and some customer roles need travel.</p>\n<h3>Does Elastic hire in India?</h3>\n<p>Yes. On 4 October 2026 it had 14 India postings, mostly in Bengaluru, across consulting, solutions architecture, sales development, IT and finance.</p>\n<h3>How many interview rounds does Elastic have?</h3>\n<p>It depends on the role. The official outline is a recruiter screen, department interviews, and for some roles a panel presentation and a technical assessment, followed by an offer decision.</p>\n<h3>Can I use ChatGPT or other AI tools during Elastic interviews?</h3>\n<p>No. Elastic's July 2026 guidance allows AI for preparation but says interviews should be human-to-human, and that misrepresentation can disqualify you.</p>\n<h3>Where should I apply?</h3>\n<p>Apply only through Elastic's official careers site at jobs.elastic.co, or browse our <a href=\"/jobs/company/elastic/\">Elastic jobs page</a>. Never pay anyone for a referral or an interview.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Elastic, <a href=\"https://www.elastic.co/careers/how-we-hire\">\"How we hire\"</a>, accessed 4 October 2026</li>\n<li>Elastic, <a href=\"https://www.elastic.co/blog/ai-guidelines-interview-process\">\"Elastic's guide to AI in the interview process\"</a>, 16 July 2026</li>\n<li>Elastic, <a href=\"https://www.elastic.co/blog/culture-elastic-distributed-by-design\">\"Elastic: Distributed by design\"</a>, 20 April 2020</li>\n<li>Elastic, <a href=\"https://www.elastic.co/about/our-source-code\">\"Our Source Code\"</a>, accessed 4 October 2026</li>\n<li>Elastic, <a href=\"https://www.elastic.co/careers/benefits\">\"Benefits\"</a>, accessed 4 October 2026</li>\n<li>Elastic N.V. (SEC), <a href=\"https://www.sec.gov/Archives/edgar/data/1707753/000170775326000018/estc-20260430.htm\">\"Form 10-K for the fiscal year ended April 30, 2026\"</a>, 8 June 2026</li>\n<li>Elastic (Greenhouse job board API), <a href=\"https://boards-api.greenhouse.io/v1/boards/elastic/jobs?content=true\">\"Elastic job postings\"</a>, accessed 4 October 2026</li>\n<li>Elastic, <a href=\"https://jobs.elastic.co/jobs?gh_jid=8161511\">\"Senior Software Engineer - Vector Search - Elasticsearch\" (United States)</a>, 27 August 2026</li>\n<li>Elastic, <a href=\"https://jobs.elastic.co/jobs?gh_jid=8161519\">\"Senior Software Engineer - Vector Search - Elasticsearch\" (Spain)</a>, 27 August 2026</li>\n<li>Elastic, <a href=\"https://jobs.elastic.co/jobs?gh_jid=8237959\">\"Director of Software Engineering - Distributed Systems, Serverless - Elasticsearch\"</a>, 29 September 2026</li>\n<li>Elastic, <a href=\"https://jobs.elastic.co/jobs?gh_jid=7447236\">\"Consulting Architect - Search\" (India)</a>, 5 December 2025</li>\n<li>Elastic, <a href=\"https://jobs.elastic.co/jobs?gh_jid=8226083\">\"Senior Partner Solutions Architect\" (Bangalore)</a>, 25 September 2026</li>\n<li>Elastic, <a href=\"https://jobs.elastic.co/jobs?gh_jid=8067061\">\"Sales Development Representative (India Public Sector)\"</a>, 26 August 2026</li>\n<li>Elastic, <a href=\"https://jobs.elastic.co/jobs?gh_jid=8237463\">\"Platform Engineer - Kubernetes\" (Bangalore)</a>, 29 September 2026</li>\n<li>Elastic, <a href=\"https://jobs.elastic.co/jobs?gh_jid=8161139\">\"Coordinator, Marketing Operations (Fixed Term)\" (Bangalore)</a>, 7 September 2026</li>\n<li>LeetCode Discuss (candidate report), <a href=\"https://leetcode.com/discuss/post/2578843/\">\"Elastic | SDE2 | Backend developer | Bangalore | Rejected\"</a>, 15 September 2022</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/World_Time_Zones_Map_1.png/1920px-World_Time_Zones_Map_1.png",
+      "alt": "World map coloured by time zone with UTC offsets marked across continents",
+      "caption": "Elastic describes itself as distributed by design, with employees in over 40 countries.",
+      "credit": "Photo: TimeZonesBoy / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:World_Time_Zones_Map_1.png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Shay_Banon_talking_about_Elasticsearch_at_Berlin_Buzzwords_2010.jpg",
+      "alt": "Shay Banon standing at a lectern presenting Elasticsearch at the Berlin Buzzwords conference in 2010",
+      "caption": "Shay Banon talking about Elasticsearch at Berlin Buzzwords in 2010.",
+      "credit": "Photo: Richard Wöber / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shay_Banon_talking_about_Elasticsearch_at_Berlin_Buzzwords_2010.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bangalore_skyline_2011_%285392899266%29.jpg/1920px-Bangalore_skyline_2011_%285392899266%29.jpg",
+      "alt": "Bengaluru city skyline with office towers and trees under a blue sky",
+      "caption": "Most of Elastic's India openings in October 2026 were listed in Bengaluru.",
+      "credit": "Photo: Saad Faruque from Bangalore, India / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bangalore_skyline_2011_(5392899266).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/A_woman_sits_at_a_desk_with_her_laptop%2C_deeply_focused_on_her_work_in_a_low-light_environment.jpg/1920px-A_woman_sits_at_a_desk_with_her_laptop%2C_deeply_focused_on_her_work_in_a_low-light_environment.jpg",
+      "alt": "A woman working on a laptop at a desk in a dimly lit room",
+      "caption": "Elastic allows AI for interview preparation but wants interviews kept human-to-human.",
+      "credit": "Photo: Shixart1985 / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:A_woman_sits_at_a_desk_with_her_laptop,_deeply_focused_on_her_work_in_a_low-light_environment.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Elasticsearch_Cluster_August_2014.png",
+      "alt": "Diagram of an Elasticsearch cluster showing nodes, shards and replicas",
+      "caption": "Technical assessments can cover Elastic's products, so hands-on Elasticsearch experience helps.",
+      "credit": "Photo: ^demon / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Elasticsearch_Cluster_August_2014.png"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.elastic.co/careers/how-we-hire",
+      "publisher": "Elastic",
+      "date": "2026-10-04",
+      "claim": "Official hiring stages and durations; application advice; offer timing; no dress code; accessibility email"
+    },
+    {
+      "url": "https://www.elastic.co/blog/ai-guidelines-interview-process",
+      "publisher": "Elastic",
+      "date": "2026-07-16",
+      "claim": "AI allowed for preparation; not during interviews; AI detection; misrepresentation consequences"
+    },
+    {
+      "url": "https://www.elastic.co/blog/culture-elastic-distributed-by-design",
+      "publisher": "Elastic",
+      "date": "2020-04-20",
+      "claim": "Distributed origins across Israel, Germany and the Netherlands; async tools; multi-region meetings; AMAs"
+    },
+    {
+      "url": "https://www.elastic.co/about/our-source-code",
+      "publisher": "Elastic",
+      "date": "2026-10-04",
+      "claim": "Source Code values"
+    },
+    {
+      "url": "https://www.elastic.co/careers/benefits",
+      "publisher": "Elastic",
+      "date": "2026-10-04",
+      "claim": "Volunteer hours, donation matching, workspace reimbursement; benefits vary by region"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1707753/000170775326000018/estc-20260430.htm",
+      "publisher": "Elastic N.V. (SEC Form 10-K)",
+      "date": "2026-06-08",
+      "claim": "No principal executive office; 4,019 employees in over 40 countries at 30 April 2026; distributed by design; FY2026 revenue $1.739B, up 17%"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/elastic/jobs?content=true",
+      "publisher": "Elastic (Greenhouse job board API)",
+      "date": "2026-10-04",
+      "claim": "392 postings, 203 distinct titles; department and country counts; 14 India postings; Elasticsearch roles in 11 countries; parental leave and pay-not-based-on-previous-salary boilerplate"
+    },
+    {
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8161511",
+      "publisher": "Elastic",
+      "date": "2026-08-27",
+      "claim": "US vector search pay ranges; AI to accelerate development while owning outcomes; stock programme; 401(k) match"
+    },
+    {
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8161519",
+      "publisher": "Elastic",
+      "date": "2026-08-27",
+      "claim": "Bonus points for internet and asynchronous collaboration"
+    },
+    {
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8237959",
+      "publisher": "Elastic",
+      "date": "2026-09-29",
+      "claim": "Distributed by intention; director pay range"
+    },
+    {
+      "url": "https://jobs.elastic.co/jobs?gh_jid=7447236",
+      "publisher": "Elastic",
+      "date": "2025-12-05",
+      "claim": "India consulting architect: certification, 7+ years, up to 20% travel"
+    },
+    {
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8226083",
+      "publisher": "Elastic",
+      "date": "2026-09-25",
+      "claim": "Senior partner SA India: 8+ years, travel up to 30%"
+    },
+    {
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8067061",
+      "publisher": "Elastic",
+      "date": "2026-08-26",
+      "claim": "SDR India public sector requirements; AI-first mindset"
+    },
+    {
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8237463",
+      "publisher": "Elastic",
+      "date": "2026-09-29",
+      "claim": "Kubernetes platform engineer Bangalore: 5+ years IaC and cloud"
+    },
+    {
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8161139",
+      "publisher": "Elastic",
+      "date": "2026-09-07",
+      "claim": "Fixed-term marketing ops coordinator: 1-3 years; Source Code alignment"
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/2578843/",
+      "publisher": "LeetCode Discuss (candidate report)",
+      "date": "2022-09-15",
+      "claim": "Bengaluru backend candidate report: recruiter screen, HM behavioural round, take-home, code deep dive, architect round"
+    }
+  ]
+}

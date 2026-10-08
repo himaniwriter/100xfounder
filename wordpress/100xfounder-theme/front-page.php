@@ -7,9 +7,9 @@ get_header();
 
 $lead = xft_lead_post();
 $exclude = $lead ? [$lead->ID] : [];
-$latest = xft_query_posts(['posts_per_page' => 8]);
-$secondary = xft_query_posts(['posts_per_page' => 2, 'post__not_in' => $exclude, 'meta_key' => '_thumbnail_id']);
-$popular = xft_popular(5);
+$latest = xft_query_posts(['posts_per_page' => 12]);
+$secondary = xft_query_posts(['posts_per_page' => 4, 'post__not_in' => $exclude, 'meta_key' => '_thumbnail_id']);
+$popular = xft_popular(6);
 $news_url = xft_page_url('news', 'news');
 $launch_url = xft_page_url('launches', 'launches');
 $events_url = xft_page_url('events', 'events');
@@ -86,32 +86,50 @@ $pillars = [
     </aside>
 </section>
 <?php else :
-    // No news yet: lead with what the site already has (live jobs and free tools).
+    /*
+     * No news yet: the same three columns as the design, filled with what the site
+     * really has: the newest roles (Latest), the jobs board and free tools (lead),
+     * and the companies hiring most (numbered list).
+     */
     $home_jobs = post_type_exists('xf_job') ? get_posts(['post_type' => 'xf_job', 'posts_per_page' => 8]) : [];
-    $home_tools = function_exists('xf_tools') ? xf_tools() : [];
+    $home_tools = function_exists('xf_tools') ? array_slice(xf_tools(), 0, 2, true) : [];
+    $brand = function ($file) { return function_exists('xf_brand_asset') ? xf_brand_asset($file) : ''; };
+    $top_cos = taxonomy_exists('xf_company') ? get_terms(['taxonomy' => 'xf_company', 'orderby' => 'count', 'order' => 'DESC', 'number' => 5, 'hide_empty' => true]) : [];
     ?>
-<section class="wrap home-start">
-    <div style="flex:999 1 560px;min-width:0">
-        <?php if ($home_jobs) : ?>
-            <div class="sh"><h2>Hiring now</h2><a class="k u" href="<?php echo esc_url(home_url('/jobs/')); ?>">All <?php echo esc_html(number_format_i18n($open_roles)); ?> roles →</a></div>
-            <?php foreach ($home_jobs as $j) :
-                $co = get_post_meta($j->ID, '_xf_company_name', true); ?>
-                <a class="job-mini row" href="<?php echo esc_url(get_permalink($j)); ?>">
-                    <span class="av"><?php echo esc_html(xft_initials($co)); ?></span>
-                    <span style="flex:1;min-width:0"><span class="t"><span class="u"><?php echo esc_html(get_the_title($j)); ?></span></span><span class="m"><?php echo esc_html(implode(' · ', array_filter([$co, get_post_meta($j->ID, '_xf_function', true), get_post_meta($j->ID, '_xf_city', true)]))); ?></span></span>
-                    <span class="mono hs" style="font-size:12px;color:var(--t3)"><?php echo esc_html(xft_age($j)); ?></span>
-                </a>
-            <?php endforeach; ?>
-        <?php endif; ?>
-        <p class="k" style="margin-top:22px;font-size:10.5px">News, funding rounds and founder stories start here soon. Got one? <a class="u" href="<?php echo esc_url($submit_url); ?>">Send it to us</a>.</p>
-    </div>
-    <aside style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:16px">
+<section class="wrap" style="padding-top:36px;display:flex;flex-wrap:wrap;gap:36px 40px;align-items:flex-start">
+    <aside style="flex:1 1 250px;order:1;min-width:0">
+        <div class="sh"><h2>Latest</h2><a class="k u" href="<?php echo esc_url(home_url('/jobs/')); ?>">All jobs</a></div>
+        <?php foreach ($home_jobs as $j) :
+            $co = get_post_meta($j->ID, '_xf_company_name', true); ?>
+            <a href="<?php echo esc_url(get_permalink($j)); ?>" class="row latest-item">
+                <span style="display:flex;gap:10px;align-items:baseline"><span class="mono age"><?php echo esc_html(xft_age($j)); ?></span><span class="tag"><?php echo esc_html(get_post_meta($j->ID, '_xf_function', true) ?: 'Hiring'); ?></span></span>
+                <span class="t"><span class="u"><?php echo esc_html(get_the_title($j) . ($co ? ' at ' . $co : '')); ?></span></span>
+            </a>
+        <?php endforeach; ?>
+    </aside>
+
+    <div class="o-lead" style="flex:2.2 1 480px;order:2;min-width:0">
+        <a href="<?php echo esc_url(home_url('/jobs/')); ?>" class="rv" style="display:block">
+            <?php echo function_exists('xf_brand_photo_html') ? xf_brand_photo_html('jobs', '16x10', true) : ''; // phpcs:ignore ?>
+            <span style="display:flex;gap:12px;margin-top:18px"><span class="tag">Jobs · Lead</span><span class="k" style="font-size:10.5px">Updated daily</span></span>
+            <span class="lead-title"><span class="u"><?php echo esc_html(sprintf('%s open roles at startups and top companies, straight from their careers pages', number_format_i18n($open_roles))); ?></span></span>
+            <span class="dek">Every role comes from a company’s own careers page or applicant-tracking feed, never a reposting site. Filter by role and city, see the salary where it’s published, and apply on the company site.</span>
+            <span class="k" style="display:block;margin-top:12px;font-size:11px">By the 100xFounder jobs desk · <?php echo esc_html(wp_date('j M Y')); ?></span>
+        </a>
         <?php if ($home_tools) : ?>
-            <div class="sh"><h2>Free tools</h2><a class="k u" href="<?php echo esc_url(home_url('/tools/')); ?>">All →</a></div>
-            <?php foreach ($home_tools as $slug => $t) : ?>
-                <a class="tool-mini" href="<?php echo esc_url(home_url('/tools/' . $slug . '/')); ?>"><span class="k"><?php echo esc_html($t['group']); ?></span><span style="font-size:17px;font-weight:600;letter-spacing:-.015em"><?php echo esc_html($t['title']); ?></span><span style="font-size:14px;color:var(--t2);line-height:1.5"><?php echo esc_html($t['desc']); ?></span></a>
-            <?php endforeach; ?>
+            <div style="margin-top:28px;padding-top:24px;border-top:1px solid var(--ln);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:24px">
+                <?php foreach ($home_tools as $slug => $t) : ?>
+                    <a href="<?php echo esc_url(home_url('/tools/' . $slug . '/')); ?>" class="rv" style="display:block"><?php echo function_exists('xf_brand_photo_html') ? xf_brand_photo_html('tools') : ''; // phpcs:ignore ?><span class="tag" style="display:block;margin-top:12px">Free tool</span><span class="card-title"><span class="u"><?php echo esc_html($t['title']); ?></span></span><span class="k" style="display:block;margin-top:8px;font-size:10.5px"><?php echo esc_html($t['group']); ?> · No sign-up</span></a>
+                <?php endforeach; ?>
+            </div>
         <?php endif; ?>
+    </div>
+
+    <aside style="flex:1 1 260px;order:3;min-width:0">
+        <div class="sh"><h2>Hiring most</h2><span class="k">Open roles</span></div>
+        <?php foreach ((is_array($top_cos) ? $top_cos : []) as $i => $c) : ?>
+            <a href="<?php echo esc_url(get_term_link($c)); ?>" class="row pop-item"><span class="n"><?php echo (int) $i + 1; ?></span><span><span class="t"><span class="u"><?php echo esc_html($c->name); ?></span></span><span class="k" style="display:block;margin-top:6px;font-size:10.5px"><?php echo esc_html(sprintf(_n('%s open role', '%s open roles', $c->count), number_format_i18n($c->count))); ?></span></span></a>
+        <?php endforeach; ?>
         <div id="newsletter"><?php echo xft_newsletter(); // phpcs:ignore ?></div>
     </aside>
 </section>
@@ -163,22 +181,25 @@ if ($top_launches || $ig) : ?>
 <?php endif; ?>
 
 <?php
-// Three sector blocks: the design's picks first, else whichever sectors have stories.
+// One block per category that has stories, in the site's own order, so the home page
+// covers the full range of what we publish instead of three fixed picks.
 $blocks = [];
-$candidates = ['ai-deeptech', 'fintech', 'consumer-d2c', 'ecommerce', 'saas', 'funding', 'startup-news', 'ev-mobility', 'healthtech'];
+$candidates = function_exists('xf_news_categories') ? array_keys(xf_news_categories())
+    : ['ai-deeptech', 'fintech', 'consumer-d2c', 'ecommerce', 'saas', 'funding', 'startup-news', 'ev-mobility', 'healthtech'];
 $used = $exclude;
 foreach ($candidates as $slug) {
-    if (count($blocks) >= 3) break;
+    if (count($blocks) >= 12) break;
     $term = get_term_by('slug', $slug, 'category');
-    if (!$term) continue;
-    $posts = xft_query_posts(['posts_per_page' => 4, 'cat' => $term->term_id, 'post__not_in' => $used]);
-    if (count($posts) >= 2) {
+    if (!$term || !$term->count) continue;
+    $posts = xft_query_posts(['posts_per_page' => 5, 'cat' => $term->term_id, 'post__not_in' => $used]);
+    if (count($posts) >= 1) {
         $blocks[] = [$term, $posts];
         $used = array_merge($used, wp_list_pluck($posts, 'ID'));
     }
 }
 if ($blocks) : ?>
-<section class="wrap" style="padding-top:88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:40px 32px">
+<section class="wrap" style="padding-top:88px"><div class="sh"><h2>Every section</h2><a class="k u" href="<?php echo esc_url($news_url); ?>">All news →</a></div></section>
+<section class="wrap" style="padding-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:40px 32px">
     <?php foreach ($blocks as [$term, $posts]) : $first = array_shift($posts); ?>
         <div class="rv">
             <div class="sh"><h2><?php echo esc_html($term->name); ?></h2><a class="k u" href="<?php echo esc_url(get_category_link($term)); ?>">More</a></div>
@@ -191,20 +212,41 @@ if ($blocks) : ?>
 </section>
 <?php endif; ?>
 
-<?php if ($events) : ?>
+<?php
+// Startups hiring: roles that publish a salary first, as the design shows pay on each row.
+$hiring = post_type_exists('xf_job') ? get_posts(['post_type' => 'xf_job', 'posts_per_page' => 5, 'meta_key' => '_xf_salary_min', 'meta_compare' => '>', 'meta_value' => 0, 'meta_type' => 'NUMERIC']) : [];
+if (count($hiring) < 5 && post_type_exists('xf_job')) {
+    $hiring = array_merge($hiring, get_posts(['post_type' => 'xf_job', 'posts_per_page' => 5 - count($hiring), 'offset' => 8, 'post__not_in' => wp_list_pluck($hiring, 'ID')]));
+}
+if ($events || $hiring) : ?>
 <section class="wrap" style="padding-top:88px;display:flex;flex-wrap:wrap;gap:40px">
+    <?php if ($events) : ?>
     <div style="flex:1 1 380px;min-width:0">
         <div class="sh"><h2>Startup events</h2><a class="k u" href="<?php echo esc_url($events_url); ?>">Calendar →</a></div>
         <?php foreach ($events as $e) echo xft_event_row($e); // phpcs:ignore ?>
     </div>
+    <?php endif; ?>
+    <?php if ($hiring) : ?>
+    <div style="flex:1.3 1 460px;min-width:0">
+        <div class="sh"><h2>Startups hiring</h2><a class="k u" href="<?php echo esc_url(home_url('/jobs/')); ?>">Job board →</a></div>
+        <?php foreach ($hiring as $j) :
+            $sal = function_exists('xf_job_salary_label') ? xf_job_salary_label($j->ID) : ''; ?>
+            <a href="<?php echo esc_url(get_permalink($j)); ?>" class="row" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--ln)">
+                <span style="flex:2 1 220px;min-width:0"><span style="display:block;font-size:16px;font-weight:600;letter-spacing:-.015em"><span class="u"><?php echo esc_html(get_the_title($j)); ?></span></span><span style="display:block;font-size:13px;color:var(--t2);margin-top:2px"><?php echo esc_html(implode(' · ', array_filter([get_post_meta($j->ID, '_xf_company_name', true), get_post_meta($j->ID, '_xf_location', true) ?: get_post_meta($j->ID, '_xf_city', true)]))); ?></span></span>
+                <?php if ($sal) : ?><span class="mono" style="font-size:13px"><?php echo esc_html($sal); ?></span><?php endif; ?>
+                <span class="mono" style="font-size:11px;color:var(--t3);width:24px;text-align:right"><?php echo esc_html(xft_age($j)); ?></span>
+            </a>
+        <?php endforeach; ?>
+    </div>
+    <?php endif; ?>
 </section>
 <?php endif; ?>
 
 <?php
 $blog_cats = function_exists('xf_blog_categories') ? array_filter(array_map(function ($s) { $t = get_term_by('slug', $s, 'category'); return $t ? $t->term_id : 0; }, xf_blog_categories())) : [];
-$blog_posts = $blog_cats ? xft_query_posts(['posts_per_page' => 4, 'category__in' => $blog_cats]) : [];
-if (count($blog_posts) < 4) {
-    $blog_posts = xft_query_posts(['posts_per_page' => 4, 'meta_key' => '_thumbnail_id', 'offset' => 3]);
+$blog_posts = $blog_cats ? xft_query_posts(['posts_per_page' => 8, 'category__in' => $blog_cats]) : [];
+if (count($blog_posts) < 8) {
+    $blog_posts = xft_query_posts(['posts_per_page' => 8, 'meta_key' => '_thumbnail_id', 'offset' => 3]);
 }
 if ($blog_posts) : ?>
 <section class="wrap" style="padding-top:88px">

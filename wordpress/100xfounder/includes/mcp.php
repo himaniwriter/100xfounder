@@ -113,7 +113,8 @@ function xf_mcp_instructions() {
     return "You are connected to 100xfounder.com (WordPress). Rules from the owner:\n"
         . "- Every fact about a real person or company needs a source (url, publisher, date, claim). Never invent net worth, funding, revenue or quotes.\n"
         . "- create_draft and update_draft always leave posts as Pending review. A human reviews before anything is published.\n"
-        . "- Only call publish_post after the owner has explicitly approved that specific post in the conversation.\n"
+        . "- Call publish_post only after the owner approves that post in the conversation, or inside the owner's scheduled daily-content routine (owner decision 2026-10-04), and only once review_checklist passes.\n"
+        . "- French (Canada) and German articles: pass fields.lang ('fr-CA' or 'de-DE'); a translation also passes fields.translation_of (the English post ID).\n"
         . "- Write in our own words; credit sources; label sponsored content.\n"
         . "- Check recent_posts first so you don't duplicate a story.\n"
         . "See docs/STYLE_GUIDE.md and CLAUDE.md in the repo for the full rules.";

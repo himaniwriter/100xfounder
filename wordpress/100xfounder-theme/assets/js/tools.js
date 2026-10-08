@@ -1,5 +1,6 @@
 /* 100Xfounder free tools. Runs in the browser; nothing is sent anywhere.
-   Tax rules: FY 2025-26 (AY 2026-27), Income-tax Act as amended by the Finance Act 2025. */
+   Tax rules: tax year 2026-27 under the Income-tax Act, 2025 (in force 1 April 2026; slabs unchanged by Budget 2026).
+   PF: EPF wage ceiling ₹25,000 a month from 17 September 2026 (S.O. 5109(E)), so the capped PF is ₹3,000. */
 (function () {
   'use strict';
   var inr = function (n) { return '₹' + Math.round(n).toLocaleString('en-IN'); };
@@ -40,7 +41,7 @@
   function salary(o) {
     var ctc = Math.max(0, o.ctc);
     var basic = ctc * o.basicPct;
-    var pfMonthlyCap = o.pfCap ? 1800 : Infinity;
+    var pfMonthlyCap = o.pfCap ? 3000 : Infinity;
     var pf = Math.min(basic * 0.12, pfMonthlyCap * 12); // each side
     var gratuity = basic * 0.0481;
     var gross = Math.max(0, ctc - pf - gratuity);
@@ -115,7 +116,7 @@
       var mode = $('#mode-pct', hk).checked ? 'pct' : 'ctc';
       if (mode === 'pct') { next = cur * (1 + pct / 100); } else { pct = cur ? (next / cur - 1) * 100 : 0; }
       var regime = $('#hk-old', hk).checked ? 'old' : 'new';
-      var base = { regime: regime, metro: true, rent: 0, deductions: 150000, pt: 2400, basicPct: .5, pfCap: true };
+      var base = { regime: regime, metro: true, rent: 0, deductions: 150000, pt: 2500, basicPct: .5, pfCap: true };
       var a = salary(Object.assign({ ctc: cur }, base));
       var b = salary(Object.assign({ ctc: next }, base));
       $('#hk-new', hk).textContent = inr(next);

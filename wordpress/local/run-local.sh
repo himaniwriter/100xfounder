@@ -13,6 +13,7 @@ PORT="${PORT:-8080}"
 URL="http://localhost:${PORT}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PLUGIN_DIR="$(cd "$HERE/../100xfounder" && pwd)"
+THEME_DIR="$(cd "$HERE/../100xfounder-theme" && pwd)"
 SITE="$HERE/.site"
 WP_DIR="$SITE/wordpress"
 WPCLI="$SITE/wp-cli.phar"
@@ -23,8 +24,9 @@ wp() { php -d memory_limit=512M "$WPCLI" --path="$WP_DIR" $ROOT_FLAG "$@"; }
 for cmd in php curl unzip; do
   command -v "$cmd" >/dev/null || { echo "Missing '$cmd'. See the requirements at the top of this script."; exit 1; }
 done
+PHP_MODULES="$(php -m)"  # captured once: piping into grep -q trips pipefail with SIGPIPE
 for ext in sqlite3 pdo_sqlite gd; do
-  php -m | grep -qi "^$ext$" || { echo "PHP extension '$ext' is missing. See the requirements at the top of this script."; exit 1; }
+  grep -qi "^$ext$" <<<"$PHP_MODULES" || { echo "PHP extension '$ext' is missing. See the requirements at the top of this script."; exit 1; }
 done
 
 if [[ "${1:-}" == "--reset" ]]; then
@@ -53,6 +55,8 @@ if [[ ! -f "$WP_DIR/wp-config.php" ]]; then
   echo "→ Installing the 100xFounder plugin (linked to your repo, so code edits show up live)…"
   ln -sfn "$PLUGIN_DIR" "$WP_DIR/wp-content/plugins/100xfounder"
   wp plugin activate 100xfounder --quiet
+  ln -sfn "$THEME_DIR" "$WP_DIR/wp-content/themes/100xfounder-theme"
+  wp theme activate 100xfounder-theme --quiet
 
   echo "→ Setting the home page and importing the old site's data…"
   wp eval '

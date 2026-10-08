@@ -244,6 +244,11 @@ add_filter('wp_sitemaps_posts_query_args', function ($args, $post_type) {
     if ($post_type === 'xf_startup') {
         $args['meta_query'] = [['key' => '_xf_indexable', 'value' => '1']];
     }
+    // The private feature and unsubscribe pages are noindexed, so keep them out of the sitemap.
+    if ($post_type === 'page') {
+        $pages = get_option('xf_pages', []);
+        $args['post__not_in'] = array_filter(array_map('intval', [$pages['feature'] ?? 0, $pages['unsubscribe'] ?? 0]));
+    }
     return $args;
 }, 10, 2);
 
@@ -260,3 +265,9 @@ function xf_refresh_indexable_flag($startup_id) {
 add_action('save_post_xf_startup', function ($post_id) {
     xf_refresh_indexable_flag($post_id);
 });
+
+/** The same private pages stay out of IndexNow submissions. */
+add_filter('xf_is_noindexed', function ($noindex, $post_id) {
+    $pages = get_option('xf_pages', []);
+    return $noindex || in_array((int) $post_id, array_map('intval', [$pages['feature'] ?? 0, $pages['unsubscribe'] ?? 0]), true);
+}, 10, 2);

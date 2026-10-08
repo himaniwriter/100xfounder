@@ -23,9 +23,9 @@ The owner's seven content pillars (from `CLAUDE.md`):
 | Area | State |
 |---|---|
 | WordPress | Installed through the Hostinger API. PHP 8.3, SSL active (Hostinger lifetime cert), HTTPS redirect on. Timezone Asia/Kolkata, permalinks `/%postname%/`. |
-| Plugin `100xfounder` | Active. `XF_DB_VERSION` 4. |
+| Plugin `100xfounder` | Active on live at `XF_DB_VERSION` 4. The repo is at 5 (12 more job feeds), **not deployed yet**; waiting for the owner's OK. |
 | Theme `100xfounder-theme` | Active. `XFT_VERSION` 1.1.1. Purple animated gradient accent. |
-| Jobs | 645 open roles from 23 official careers feeds. Synced daily. |
+| Jobs | Live: 645 open roles from 23 official careers feeds, synced daily. Repo: 35 feeds (1,145 roles in a local sync on 4 Oct), live after the next deploy. |
 | Free tools | In-hand salary (FY 2025-26, new and old regime), salary hike, notice buyout calculators. |
 | News, rounds, events, guides | Templates are live, but **nothing is published yet**. The home page leads with jobs and tools until there's news. |
 | Product Hunt launches | The importer is live in no-token mode (public feed). **No launches imported yet**; the first run is tonight's cron. |
@@ -177,7 +177,7 @@ wordpress/local/                   Local WordPress + SQLite runner (run-local.sh
 6. **Phase D:** founders and verification. **Phase E:** revenue (listing tiers, sponsored posts, manual invoices).
 7. **Small follow-ups:**
    - Write the first apply guides for the top companies on the board.
-   - Consider adding more verified ATS feeds; there are 23 now.
+   - Deploy the 35-feed plugin (`XF_DB_VERSION` 5) once the owner approves. More feeds can be added the same way: confirm the board belongs to the company and lists India roles.
    - The `docs/SEO_GROWTH_PLAN.md` "undo" request from early on was never confirmed; ask before touching it.
 
 ## 8. Rules that never change (summary of `CLAUDE.md`)

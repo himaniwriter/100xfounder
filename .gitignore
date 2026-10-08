@@ -27,3 +27,5 @@ tsconfig.tsbuildinfo
 
 # Local WordPress created by wordpress/local/run-local.sh
 wordpress/local/.site/
+wordpress/design/og/*.html
+content/uploaded.json

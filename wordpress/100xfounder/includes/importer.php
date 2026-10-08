@@ -113,7 +113,10 @@ function xf_sideload_image($url, $post_id, $title) {
     if (is_wp_error($tmp)) {
         return 0;
     }
-    $file = ['name' => sanitize_file_name(sanitize_title($title) ?: 'image') . '.jpg', 'tmp_name' => $tmp];
+    // Keep the source's real extension (Commons thumbnails are often .png); WordPress rejects a mismatch.
+    $ext = strtolower(pathinfo((string) wp_parse_url($url, PHP_URL_PATH), PATHINFO_EXTENSION));
+    $ext = in_array($ext, ['jpg', 'jpeg', 'png', 'webp', 'gif'], true) ? $ext : 'jpg';
+    $file = ['name' => sanitize_file_name(mb_substr(sanitize_title($title) ?: 'image', 0, 80)) . '.' . $ext, 'tmp_name' => $tmp];
     $id = media_handle_sideload($file, $post_id, $title);
     if (is_wp_error($id)) {
         @unlink($tmp);

@@ -1,0 +1,140 @@
+{
+  "type": "post",
+  "slug": "best-ai-meeting-note-takers",
+  "title": "Best AI meeting note takers in 2026: Otter, Fireflies, Granola, Fathom",
+  "excerpt": "Otter, Fireflies, Fathom, Granola and the AI built into Zoom, Meet and Teams compared on price, free tiers, bots, languages, compliance and consent rules.",
+  "category": "in-depth",
+  "tags": [
+    "AI note taker",
+    "Otter.ai",
+    "Fireflies.ai",
+    "Granola",
+    "Fathom",
+    "Zoom",
+    "Google Meet",
+    "Microsoft Teams"
+  ],
+  "content": "<p>The best AI meeting note taker for you depends mostly on two things: whether you are happy for a bot to join your calls, and which video platform your company already pays for. If you use Zoom, Google Meet or Microsoft Teams on a paid business plan, try the built-in AI notes first. If you need cross-platform notes, CRM sync or no visible bot, Otter, Fireflies, Fathom and Granola each fill a different gap, and all four have a free tier.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>Fathom and Fireflies have the most generous free plans. Fathom offers unlimited free recordings and transcriptions, and Fireflies offers unlimited transcription with limited AI summaries and storage.</li>\n<li>Granola never sends a bot. It captures audio from your own device, which suits people who find meeting bots awkward, but it also puts the duty to tell others squarely on you.</li>\n<li>Zoom's core meeting summaries are still included in eligible paid Zoom Workplace plans. Its new ZoomMate add-on costs $20 per user per month billed monthly.</li>\n<li>Recording laws differ. US federal law needs one party's consent, but around 11 US states require everyone's consent, so announce your note taker on every call.</li>\n</ul>\n\n<h2>How we compared the tools</h2>\n<p>We checked each vendor's own pricing and help pages on 4 October 2026 and compared them on criteria that decide whether a note taker works for a team, not on which summaries we liked best:</p>\n<ul>\n<li><strong>Capture method:</strong> does a bot join the call, or does the app record your device's audio?</li>\n<li><strong>Platforms:</strong> Zoom, Google Meet, Microsoft Teams, in-person meetings and phone calls.</li>\n<li><strong>Free tier and price per user:</strong> what you get for nothing, and the annual and monthly price of paid plans.</li>\n<li><strong>Languages:</strong> how many languages transcription supports.</li>\n<li><strong>Integrations:</strong> CRM (Salesforce, HubSpot), Slack, Notion and APIs.</li>\n<li><strong>Security and compliance:</strong> SOC 2, HIPAA, SSO, data retention and training on your data.</li>\n</ul>\n<p>Prices below are in US dollars as shown on the vendors' pages. Taxes and regional offers vary. Otter, for example, showed a lower promotional Pro price for India-issued cards when we checked.</p>\n\n<h2>Otter.ai: the established all-rounder</h2>\n<p>Otter sends an assistant into Zoom, Microsoft Teams and Google Meet calls to transcribe and write notes. According to <a href=\"https://otter.ai/pricing\">Otter's pricing page</a>, the free Basic plan includes 300 transcription minutes a month, a 30-minute cap per conversation and three lifetime file imports. Pro costs $8.33 per user per month billed annually and raises the limits to 1,200 minutes and 90 minutes per meeting, with Salesforce, HubSpot and Zapier integrations. Business costs $19.99 per user per month billed annually and offers unlimited meetings, up to four hours per meeting, three concurrent meetings and admin activity logs. Enterprise adds SSO, SCIM, an Otter API and webhooks, and HIPAA compliance as an add-on.</p>\n<p>Otter transcribes English, Spanish, French, German, Japanese and Chinese, so it is less suited to teams that hold meetings in other languages. It also now lists an MCP server, which lets AI assistants that support the protocol query your meeting history.</p>\n<p><strong>Who it suits:</strong> individuals and small teams who want reliable live transcripts across all three big platforms, and sales teams on Business or Enterprise that need CRM connections.</p>\n\n<h2>Fireflies.ai: widest language support and conversation analytics</h2>\n<p>Fireflies' free plan is unusually broad. According to <a href=\"https://fireflies.ai/pricing\">its pricing page</a>, it includes unlimited transcription (with conditions), limited AI summaries, 400 minutes of storage per team, transcription in more than 100 languages, and support for Zoom, Google Meet, Teams and other platforms. Pro costs $10 per seat per month billed annually, or $18 monthly, with unlimited AI summaries and 8,000 minutes of storage per seat. Business costs $19 annually, or $29 monthly, with unlimited storage, conversation intelligence and team analytics. Enterprise is $39 per seat per month on annual billing only and adds SSO, SCIM, audit logs, HIPAA compliance and custom data retention.</p>\n<!-- xf-image-2 -->\n<p>Fireflies normally joins as a bot, but its Chrome extension can record without the Fireflies bot. Recordings are capped at three hours. The company lists SOC 2 Type II and GDPR compliance and says customer data is not used for AI training.</p>\n<p><strong>Who it suits:</strong> multilingual teams, managers who want talk-time and sentiment analytics, and companies that want to try a full-featured tool before paying.</p>\n\n<h2>Fathom: the most generous free plan</h2>\n<p>According to <a href=\"https://www.fathom.ai/pricing\">Fathom's pricing page</a>, its free plan gives unlimited recordings and transcriptions, instant AI summaries, clips and search, with the choice of bot or bot-free capture. Premium costs $16 per month billed annually ($20 monthly) and adds advanced summaries, AI action items and an assistant you can question. Team costs $15 per user annually ($19 monthly) for two or more users, with shared playlists and global search. Business costs $25 per user annually ($34 monthly) and adds CRM field sync, deal views, coaching metrics and AI scorecards. Enterprise adds SSO, SCIM and custom data retention.</p>\n<p>Fathom's <a href=\"https://www.fathom.ai/\">homepage</a> lists support for Zoom, Google Meet and Microsoft Teams, and integrations with Salesforce, HubSpot, Slack, Notion and Asana, plus a public API. It also lists SOC 2 Type II, GDPR and HIPAA compliance.</p>\n<p><strong>Who it suits:</strong> solo founders and consultants who want strong free notes, and sales teams that want call summaries written straight into the CRM.</p>\n\n<h2>Granola: bot-free notes you write with the AI</h2>\n<p>Granola works differently. It does not join your meeting. According to <a href=\"https://www.granola.ai/\">Granola's website</a>, it transcribes your computer's audio in the background while you jot your own rough notes, then uses the transcript to expand them. It runs on macOS and Windows, with iPhone and Android apps for in-person meetings and calls, and it works with Zoom, Meet, Teams and other meeting apps.</p>\n<p>According to <a href=\"https://www.granola.ai/pricing\">Granola's pricing page</a>, the free Basic plan keeps 30 days of meeting history. Business costs $14 per user per month for unlimited notes and history, integrations with Notion, HubSpot, Affinity and Zapier, and API and MCP access. Enterprise costs $35 per user per month and adds SSO, SCIM, HIPAA-compliant workspaces and the ability to opt everyone in the team out of model training. Granola lists SOC 2 Type II across all plans.</p>\n<!-- xf-image-3 -->\n<p><strong>Who it suits:</strong> founders, investors and consultants who take many external calls where a bot would feel intrusive, and anyone who wants notes shaped by their own priorities rather than a generic summary. Because nothing visible joins the call, you must tell participants yourself.</p>\n\n<h2>Built-in AI in Zoom, Google Meet and Microsoft Teams</h2>\n<h3>Zoom</h3>\n<p>In June 2026 Zoom folded its AI Companion features into Zoom Workplace under plain names such as \"meeting summary\". According to <a href=\"https://www.zoom.com/en/blog/zoom-ai-companion-zoommate/\">Zoom's announcement</a>, meeting summaries, transcription and chat compose remain included in eligible paid Workplace plans at no additional cost. Its new agentic product, ZoomMate, costs $20 per user per month billed monthly or $16.67 billed annually, with 2,200 AI credits per user a month, according to <a href=\"https://zoom.us/pricing/aic\">ZoomMate's pricing page</a>. The paid plan adds unlimited AI note-taking and custom summary templates. The free ZoomMate Basic tier limits meeting summaries to three hosted meetings a month.</p>\n<!-- xf-image-4 -->\n<h3>Google Meet</h3>\n<p>Google's \"Take notes for me\" feature writes notes with Gemini. According to <a href=\"https://support.google.com/meet/answer/14754931?hl=en\">Google Meet Help</a>, the meeting organiser needs an eligible Workspace edition or Google AI plan. Notes are saved to the organiser's Google Drive and attached to the Calendar event. It supports eight languages (English, French, German, Italian, Japanese, Korean, Portuguese and Spanish), one per meeting, and is recommended for meetings of 15 minutes to eight hours. Meet tells every participant when notes are being taken and shows a pencil icon. On Google's <a href=\"https://workspace.google.com/pricing\">Workspace pricing page</a>, Gemini in Meet appears from the Business Standard plan up.</p>\n<h3>Microsoft Teams</h3>\n<p>Microsoft sells AI meeting notes for Teams in two ways. <a href=\"https://www.microsoft.com/en-us/microsoft-teams/premium\">Teams Premium</a> costs $10 per user per month on annual billing, includes intelligent recap and requires a Teams licence. <a href=\"https://www.microsoft.com/en-us/copilot/solutions/business\">Microsoft 365 Copilot Business</a> costs $18 per user per month on annual billing (reduced from $21 when we checked) and brings Copilot into Teams, Word, Outlook and other apps, along with prebuilt agents including Facilitator.</p>\n<p><strong>Who the built-ins suit:</strong> companies that hold almost every meeting on one platform and already pay for it. You avoid another vendor review, and notes stay inside systems your IT team already manages. They are weaker when you join clients' calls on other platforms.</p>\n\n<h2>Side-by-side comparison</h2>\n<table>\n<thead><tr><th>Tool</th><th>Capture</th><th>Free tier</th><th>Paid from (annual billing)</th><th>Notable compliance</th></tr></thead>\n<tbody>\n<tr><td>Otter.ai</td><td>Bot joins Zoom, Meet, Teams</td><td>300 min/month, 30 min/meeting</td><td>Pro $8.33/user/month</td><td>SSO, SCIM; HIPAA add-on (Enterprise)</td></tr>\n<tr><td>Fireflies.ai</td><td>Bot; Chrome extension without bot</td><td>Unlimited transcription, limited summaries, 400 min storage</td><td>Pro $10/seat/month</td><td>SOC 2 Type II, GDPR; HIPAA (Enterprise)</td></tr>\n<tr><td>Fathom</td><td>Bot or bot-free</td><td>Unlimited recordings and transcripts</td><td>Premium $16/month; Team $15/user</td><td>SOC 2 Type II, GDPR, HIPAA</td></tr>\n<tr><td>Granola</td><td>Device audio, no bot</td><td>30-day history</td><td>Business $14/user/month</td><td>SOC 2 Type II; HIPAA (Enterprise)</td></tr>\n<tr><td>Zoom Workplace</td><td>Built in</td><td>Basic ZoomMate: 3 summaries/month</td><td>Included in eligible paid plans; ZoomMate $16.67</td><td>Managed in Zoom admin</td></tr>\n<tr><td>Google Meet</td><td>Built in</td><td>None</td><td>Eligible Workspace edition</td><td>Managed in Workspace admin</td></tr>\n<tr><td>Microsoft Teams</td><td>Built in</td><td>None</td><td>Teams Premium $10; Copilot Business $18</td><td>Managed in Microsoft 365 admin</td></tr>\n</tbody>\n</table>\n\n<h2>Consent and recording rules</h2>\n<p>An AI note taker is a recording device, so recording laws apply. According to the <a href=\"https://www.rcfp.org/introduction-to-reporters-recording-guide/\">Reporters Committee for Freedom of the Press</a>, US federal law requires the consent of at least one party, but about 11 states, including California, Florida, Illinois, Massachusetts, Pennsylvania and Washington, require the consent of everyone in the conversation. For calls across state lines, the guide advises assuming the stricter law applies. Other countries have their own rules, and in Europe recordings and transcripts usually contain personal data, which is one reason vendors advertise GDPR compliance.</p>\n<!-- xf-image-5 -->\n<p>The practical rule is simple: say at the start of every call that you are using an AI note taker, and switch it off if anyone objects. Built-in tools like Google Meet show participants a visible notice, but bot-free tools rely on you. This is general information, not legal advice; confirm your obligations with a qualified lawyer in your jurisdiction.</p>\n\n<h2>Which note taker to use for what</h2>\n<ul>\n<li><strong>You run every meeting on one platform your company pays for:</strong> start with Zoom's included summaries, Google Meet's \"Take notes for me\" or Teams Premium.</li>\n<li><strong>You join calls on many platforms and want to pay nothing:</strong> Fathom's free plan, or Fireflies' free plan if you need many languages.</li>\n<li><strong>Sales calls that must land in Salesforce or HubSpot:</strong> Fathom Business, Otter's paid plans or Fireflies.</li>\n<li><strong>External calls where a bot would be awkward:</strong> Granola, or Fathom and Fireflies in their bot-free modes, always with a spoken heads-up.</li>\n<li><strong>Healthcare or other regulated data:</strong> compare the HIPAA options on Fireflies Enterprise, Otter Enterprise, Granola Enterprise and Fathom, and get your compliance team to review the contract.</li>\n</ul>\n<p>For more AI tools, browse new products on our <a href=\"/launches/\">launches page</a> and follow vendor updates in <a href=\"/news/\">our news section</a>.</p>\n\n<h2>Bottom line</h2>\n<p>For most teams, the cheapest good option is the one you already own: Zoom, Meet and Teams all include or sell AI notes inside the meeting tool. Standalone note takers earn their place when you meet across platforms, need CRM sync, or want notes without a bot. Fathom offers the most on a free plan, Fireflies covers the most languages, Otter is the established all-rounder, and Granola is the pick for bot-free notes on your own device. Whichever you choose, tell people they are being recorded.</p>\n\n<h2>FAQ</h2>\n<h3>What is the best free AI note taker in 2026?</h3>\n<p>Fathom's free plan offers unlimited recordings, transcriptions and instant AI summaries. Fireflies' free plan offers unlimited transcription and 100+ languages but limits AI summaries and storage.</p>\n<h3>Which AI note taker works without a bot joining the call?</h3>\n<p>Granola captures your device's audio and never sends a bot. Fathom offers bot-free capture, and Fireflies can record through its Chrome extension without its bot.</p>\n<h3>Is Zoom's AI meeting summary free?</h3>\n<p>Meeting summaries remain included at no additional cost in eligible paid Zoom Workplace plans, according to Zoom. The separate ZoomMate add-on costs $20 per user per month billed monthly.</p>\n<h3>Do I need permission to record a meeting with AI?</h3>\n<p>Often, yes. US federal law requires one party's consent, but around 11 US states require everyone's consent, and other countries have their own rules. Announce the note taker at the start of each call.</p>\n<h3>Which languages does Google Meet's \"Take notes for me\" support?</h3>\n<p>English, French, German, Italian, Japanese, Korean, Portuguese and Spanish, one language per meeting, according to Google.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Otter.ai, <a href=\"https://otter.ai/pricing\">\"Pricing\"</a>, checked 4 October 2026</li>\n<li>Fireflies.ai, <a href=\"https://fireflies.ai/pricing\">\"Pricing &amp; Plans\"</a>, checked 4 October 2026</li>\n<li>Fathom, <a href=\"https://www.fathom.ai/pricing\">\"Pricing\"</a>, checked 4 October 2026</li>\n<li>Fathom, <a href=\"https://www.fathom.ai/\">\"Fathom homepage\"</a>, checked 4 October 2026</li>\n<li>Granola, <a href=\"https://www.granola.ai/\">\"Granola homepage\"</a>, checked 4 October 2026</li>\n<li>Granola, <a href=\"https://www.granola.ai/pricing\">\"Pricing\"</a>, checked 4 October 2026</li>\n<li>Zoom, <a href=\"https://www.zoom.com/en/blog/zoom-ai-companion-zoommate/\">\"Meet ZoomMate: Zoom's next chapter in AI\"</a>, 24 June 2026</li>\n<li>Zoom, <a href=\"https://zoom.us/pricing/aic\">\"ZoomMate Pricing\"</a>, checked 4 October 2026</li>\n<li>Google, <a href=\"https://support.google.com/meet/answer/14754931?hl=en\">\"Take notes for me in Google Meet\"</a>, Google Meet Help, checked 4 October 2026</li>\n<li>Google, <a href=\"https://workspace.google.com/pricing\">\"Google Workspace plans and pricing\"</a>, checked 4 October 2026</li>\n<li>Microsoft, <a href=\"https://www.microsoft.com/en-us/microsoft-teams/premium\">\"Microsoft Teams Premium\"</a>, checked 4 October 2026</li>\n<li>Microsoft, <a href=\"https://www.microsoft.com/en-us/copilot/solutions/business\">\"Microsoft Copilot for Business\"</a>, checked 4 October 2026</li>\n<li>Reporters Committee for Freedom of the Press, <a href=\"https://www.rcfp.org/introduction-to-reporters-recording-guide/\">\"Introduction to the Reporter's Recording Guide\"</a>, checked 4 October 2026</li>\n</ol>\n",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/IAEA_meeting_%28virtual%29_with_Pekka_Haavisto%2C_Vienna%2C_March_2023%2C_07.jpg/1920px-IAEA_meeting_%28virtual%29_with_Pekka_Haavisto%2C_Vienna%2C_March_2023%2C_07.jpg",
+      "alt": "Officials seated at a conference table hold a virtual meeting with a remote participant shown on a large screen",
+      "caption": "A hybrid video meeting at the IAEA in Vienna. AI note takers transcribe and summarise calls like this automatically.",
+      "credit": "Photo: IAEA Imagebank / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:IAEA_meeting_(virtual)_with_Pekka_Haavisto,_Vienna,_March_2023,_07.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Video_Conference_Using_Laptop.jpg",
+      "alt": "A laptop on a desk showing a video conference with several participants",
+      "caption": "Most note takers join calls like this as a bot; some, including Fireflies' Chrome extension, can record without one.",
+      "credit": "Photo: Project Kei / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Video_Conference_Using_Laptop.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Glass_of_red_wine_in_front_of_Microsoft_Teams_meeting.jpg/1920px-Glass_of_red_wine_in_front_of_Microsoft_Teams_meeting.jpg",
+      "alt": "A glass of red wine in front of a monitor showing a Microsoft Teams video meeting",
+      "caption": "An online company party on Microsoft Teams. Granola and other bot-free tools record from your own device instead of joining the call.",
+      "credit": "Photo: JIP / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Glass_of_red_wine_in_front_of_Microsoft_Teams_meeting.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Ruben_Gallego_on_Zoom_call_with_Glendale_AZ_community.jpg",
+      "alt": "Grid of participants in a Zoom video call between a US congressman and city officials",
+      "caption": "A Zoom call between a US congressional office and city officials. Zoom's meeting summaries remain included in eligible paid plans.",
+      "credit": "Photo: Office of Ruben Gallego, United States Congress / Wikimedia Commons, Public domain",
+      "license": "Public domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ruben_Gallego_on_Zoom_call_with_Glendale_AZ_community.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Electronic_Frontier_Foundation_video_conferencing_background_laptop-spying_%2839225195715%29.png",
+      "alt": "Electronic Frontier Foundation video-call background illustration with a laptop and privacy theme",
+      "caption": "A privacy-themed video call background from the Electronic Frontier Foundation. Recording laws differ by place, so always announce an AI note taker.",
+      "credit": "Photo: EFF Photos / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Electronic_Frontier_Foundation_video_conferencing_background_laptop-spying_(39225195715).png"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://otter.ai/pricing",
+      "publisher": "Otter.ai",
+      "date": "2026-10-04",
+      "claim": "Basic 300 min/month, 30 min cap, 3 lifetime imports; Pro $8.33 annual, 1,200 min, 90 min; Business $19.99 annual, unlimited, 4 hours, 3 concurrent; Enterprise SSO, SCIM, HIPAA add-on, API; six languages; MCP server; India-card offer"
+    },
+    {
+      "url": "https://fireflies.ai/pricing",
+      "publisher": "Fireflies.ai",
+      "date": "2026-10-04",
+      "claim": "Free unlimited transcription, limited summaries, 400 min storage; Pro $10/$18; Business $19/$29; Enterprise $39 annual; 100+ languages; Chrome extension without bot; 3-hour recording limit; SOC 2 Type II, GDPR, HIPAA; data not used for AI training"
+    },
+    {
+      "url": "https://www.fathom.ai/pricing",
+      "publisher": "Fathom",
+      "date": "2026-10-04",
+      "claim": "Free unlimited recordings/transcriptions; Premium $16/$20; Team $15/$19; Business $25/$34; Enterprise SSO, SCIM, retention"
+    },
+    {
+      "url": "https://www.fathom.ai/",
+      "publisher": "Fathom",
+      "date": "2026-10-04",
+      "claim": "Zoom, Meet, Teams; bot-free option; Salesforce, HubSpot, Slack, Notion, Asana; API; SOC 2 Type II, GDPR, HIPAA"
+    },
+    {
+      "url": "https://www.granola.ai/",
+      "publisher": "Granola",
+      "date": "2026-10-04",
+      "claim": "No bot, device audio; macOS, Windows, iPhone, Android; works with Zoom, Meet, Teams"
+    },
+    {
+      "url": "https://www.granola.ai/pricing",
+      "publisher": "Granola",
+      "date": "2026-10-04",
+      "claim": "Free 30-day history; Business $14; Enterprise $35 with SSO, SCIM, HIPAA; SOC 2 Type II; training opt-out"
+    },
+    {
+      "url": "https://www.zoom.com/en/blog/zoom-ai-companion-zoommate/",
+      "publisher": "Zoom",
+      "date": "2026-06-24",
+      "claim": "AI Companion features folded into Workplace; meeting summaries etc. included in eligible paid plans at no additional cost; ZoomMate launch"
+    },
+    {
+      "url": "https://zoom.us/pricing/aic",
+      "publisher": "Zoom",
+      "date": "2026-10-04",
+      "claim": "ZoomMate $20 monthly/$16.67 annual, 2,200 credits; Basic 3 meeting summaries/month"
+    },
+    {
+      "url": "https://support.google.com/meet/answer/14754931?hl=en",
+      "publisher": "Google Meet Help",
+      "date": "2026-10-04",
+      "claim": "Take notes for me: eligible edition, saved to Drive, 8 languages, participants notified, 15 min-8 hours"
+    },
+    {
+      "url": "https://workspace.google.com/pricing",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "Gemini in Meet from Business Standard"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-teams/premium",
+      "publisher": "Microsoft",
+      "date": "2026-10-04",
+      "claim": "Teams Premium $10/user/month paid yearly, intelligent recap, requires Teams licence"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/copilot/solutions/business",
+      "publisher": "Microsoft",
+      "date": "2026-10-04",
+      "claim": "Microsoft 365 Copilot Business $18/user/month paid yearly (from $21); Copilot in Teams; Facilitator agent"
+    },
+    {
+      "url": "https://www.rcfp.org/introduction-to-reporters-recording-guide/",
+      "publisher": "Reporters Committee for Freedom of the Press",
+      "date": "2026-10-04",
+      "claim": "Federal one-party consent; about 11 all-party consent states; stricter law for interstate calls"
+    }
+  ]
+}

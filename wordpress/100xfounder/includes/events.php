@@ -102,6 +102,48 @@ function xf_event_feeds() {
 }
 
 /** Imports upcoming events from every configured ICS feed as pending posts. */
+/**
+ * The organiser's own share image for an event, from the Open Graph tag on its
+ * public page. og:image exists so other sites can show it when they link, which
+ * is exactly what we do: their picture, their credit, a link back to them. We
+ * store the URL, never a copy, and any organiser can ask us to drop it.
+ */
+function xf_fetch_event_image($url) {
+    if (!$url || !wp_http_validate_url($url)) {
+        return '';
+    }
+    $r = wp_remote_get($url, [
+        'timeout' => 15,
+        'limit_response_size' => 600000,
+        'user-agent' => '100xFounderBot/1.0 (+' . home_url('/') . ')',
+    ]);
+    if (is_wp_error($r) || wp_remote_retrieve_response_code($r) !== 200) {
+        return '';
+    }
+    $html = wp_remote_retrieve_body($r);
+    foreach (['og:image:secure_url', 'og:image', 'twitter:image'] as $prop) {
+        if (preg_match('#<meta[^>]+(?:property|name)=["\']' . preg_quote($prop, '#') . '["\'][^>]+content=["\']([^"\']+)#i', $html, $m)
+            || preg_match('#<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\']' . preg_quote($prop, '#') . '["\']#i', $html, $m)) {
+            $img = html_entity_decode($m[1], ENT_QUOTES);
+            if (strpos($img, '//') === 0) {
+                $img = 'https:' . $img;
+            }
+            if (preg_match('#^https?://#i', $img)) {
+                return esc_url_raw($img);
+            }
+        }
+    }
+    return '';
+}
+
+/** Who published the image, for the credit line under it. */
+function xf_event_image_credit($event_id) {
+    $url = (string) get_post_meta($event_id, '_xf_url', true);
+    $host = $url ? wp_parse_url($url, PHP_URL_HOST) : '';
+    $organiser = (string) get_post_meta($event_id, '_xf_organizer', true);
+    return trim($organiser ?: ($host ? preg_replace('/^www\./', '', $host) : ''));
+}
+
 function xf_import_events() {
     $created = 0;
     $feeds = xf_event_feeds();
@@ -122,6 +164,15 @@ function xf_import_events() {
                 continue;
             }
             $location = $e['LOCATION'] ?? '';
+            // Most public calendars are worldwide. Keep only events in the cities we
+            // cover, so the page stays "what's on near me" rather than a global dump.
+            $bucket = function_exists('xf_event_city_bucket') ? xf_event_city_bucket($location) : '';
+            if (!$bucket || $bucket === 'Online') {
+                $bucket = function_exists('xf_event_city_bucket') ? xf_event_city_bucket($e['SUMMARY'] ?? '') : '';
+            }
+            if (!$bucket || $bucket === 'Online') {
+                continue;
+            }
             $url = $e['URL'] ?? '';
             if (!$url && preg_match('#https?://\S+#', $e['DESCRIPTION'] ?? '', $m)) {
                 $url = $m[0];
@@ -137,10 +188,12 @@ function xf_import_events() {
                     '_xf_start' => $e['DTSTART'],
                     '_xf_end' => $e['DTEND'] ?? '',
                     '_xf_venue' => mb_substr($location, 0, 200),
-                    '_xf_city' => xf_guess_city($location),
+                    '_xf_city' => $bucket,
                     '_xf_url' => esc_url_raw($url),
                     '_xf_organizer' => sanitize_text_field($e['ORGANIZER'] ?? ''),
                     '_xf_source_feed' => esc_url_raw($feed),
+                    // The organiser's own share image, fetched from their page.
+                    '_xf_image' => $url ? xf_fetch_event_image($url) : '',
                 ],
             ]);
             $created++;

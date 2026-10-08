@@ -16,7 +16,7 @@ function xf_tools() {
             'short' => 'In-hand salary',
             'desc' => 'Turn your CTC into monthly take-home pay under the new or old tax regime, with PF, professional tax and HRA.',
             'group' => 'Salary',
-            'seo_title' => 'In-hand Salary Calculator India FY 2025-26 (New & Old Regime)',
+            'seo_title' => 'In-hand Salary Calculator India 2026-27 (New & Old Regime)',
         ],
         'salary-hike-calculator' => [
             'title' => 'Salary hike calculator',
@@ -38,6 +38,29 @@ function xf_tools() {
 add_action('init', function () {
     add_rewrite_rule('^tools/([a-z0-9-]+)/?$', 'index.php?pagename=tools&xf_tool=$matches[1]', 'top');
 });
+
+/**
+ * Self-heal the pretty URLs. A deploy that swaps the plugin directory can leave the
+ * stored rewrite rules without ours (the one-time flush runs on a single request and
+ * can be missed), which 404s /tools/<slug>/ and /jobs/<slug>/ while the pages exist.
+ * Check the stored rules late on init and flush once if ours are gone.
+ */
+add_action('init', function () {
+    if (get_transient('xf_rewrite_checked')) {
+        return;
+    }
+    set_transient('xf_rewrite_checked', 1, 10 * MINUTE_IN_SECONDS);
+    $stored = get_option('rewrite_rules');
+    if (!is_array($stored) || !$stored) {
+        return; // Plain permalinks, or WordPress is about to build them anyway.
+    }
+    foreach (['^tools/([a-z0-9-]+)/?$', '^jobs/([a-z0-9-]+)/?$'] as $rule) {
+        if (!isset($stored[$rule])) {
+            flush_rewrite_rules(false);
+            return;
+        }
+    }
+}, 999);
 
 add_filter('query_vars', function ($vars) {
     $vars[] = 'xf_tool';

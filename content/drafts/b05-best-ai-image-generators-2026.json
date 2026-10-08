@@ -1,0 +1,194 @@
+{
+  "type": "post",
+  "slug": "best-ai-image-generators-2026",
+  "title": "Best AI image generators in 2026: prices and commercial rights",
+  "excerpt": "Midjourney, GPT Image, Nano Banana, FLUX and Adobe Firefly compared on quality, API access, price and who owns the outputs you create for commercial use.",
+  "category": "in-depth",
+  "tags": [
+    "AI image generators",
+    "Midjourney",
+    "GPT Image",
+    "Nano Banana",
+    "FLUX",
+    "Adobe Firefly",
+    "AI copyright",
+    "generative AI"
+  ],
+  "content": "<p>The best AI image generator in 2026 depends on the job. Midjourney suits stylised art, OpenAI's GPT Image and Google's Nano Banana models suit text-heavy graphics and chat-based editing, FLUX suits teams that want to self-host, and Adobe Firefly suits brands that want legal cover. Below we compare all five on quality, editing, API access, price and commercial-use terms, using vendor pages checked on 4 October 2026.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>Every vendor here lets you use outputs commercially, but the fine print differs: Midjourney requires a Pro or Mega plan if your company earns more than $1 million a year, and the free FLUX.2 [dev] weights are for non-commercial use only.</li>\n<li>Adobe says outputs from its own Firefly models are safe for commercial use and offers IP indemnification to eligible enterprise customers. OpenAI and Google offer indemnities through business contracts and Google Cloud.</li>\n<li>Google has shut down Imagen in the Gemini API; its image models are now the Nano Banana line, led by Nano Banana 2 (Gemini 3.1 Flash Image) and Nano Banana Pro (Gemini 3 Pro Image).</li>\n<li>Provenance marking is now standard: Google stamps every Gemini API image with SynthID, OpenAI adds both C2PA Content Credentials and SynthID, and Adobe attaches Content Credentials.</li>\n</ul>\n\n<h2>How we compared the generators</h2>\n<p>We did not rank on taste alone. Each tool was judged on seven criteria using the vendor's own pricing pages, documentation, licence files and terms: image quality and style; text rendering; editing (references, multi-turn edits); API access; price; commercial rights and indemnity (who owns outputs and whether the vendor will defend you against an IP claim); and open weights for self-hosting.</p>\n<p>Prices below are the US-dollar list prices shown on vendor pages on 4 October 2026. Readers in India and elsewhere may see local-currency prices, such as rupees, and amounts vary by country.</p>\n\n<p><em>This article summarises vendor terms for comparison only. It is not legal advice; confirm licensing questions with a qualified professional before you rely on them.</em></p>\n\n<h2>Comparison table</h2>\n<table>\n<thead>\n<tr><th>Tool</th><th>Current model (Oct 2026)</th><th>Starting price</th><th>Developer API</th><th>Who owns outputs</th><th>Indemnity</th><th>Open weights</th></tr>\n</thead>\n<tbody>\n<tr><td>Midjourney</td><td>V8.2 (default since 24 July 2026)</td><td>$10/month Basic</td><td>None listed; web and Discord</td><td>You, but companies above $1M revenue need Pro or Mega</td><td>No; you indemnify Midjourney</td><td>No</td></tr>\n<tr><td>OpenAI GPT Image</td><td>gpt-image-2.5-sunburst and gpt-image-2.5-flare</td><td>ChatGPT Free (limited); API at $30 per million image output tokens</td><td>Yes</td><td>You (OpenAI assigns its rights)</td><td>Business Services Agreement includes an IP indemnity</td><td>No</td></tr>\n<tr><td>Google Nano Banana</td><td>Nano Banana 2, Nano Banana Pro, Nano Banana 2 Lite</td><td>From about $0.034 per 1K image (Lite)</td><td>Yes, Gemini API</td><td>Google won't claim ownership</td><td>Through Google Cloud for listed services</td><td>No</td></tr>\n<tr><td>FLUX (Black Forest Labs)</td><td>FLUX.2 family; FLUX 3 in early access</td><td>Pay as you go API, no subscription</td><td>Yes</td><td>Licence claims no ownership of outputs</td><td>No; the free licence makes you indemnify BFL</td><td>Yes (klein 4B under Apache 2.0; dev and klein 9B non-commercial)</td></tr>\n<tr><td>Adobe Firefly</td><td>Firefly models plus partner models</td><td>Free tier; $9.99/month Standard</td><td>Not covered here</td><td>Commercial use allowed for Firefly-model outputs</td><td>Eligible enterprise customers</td><td>No</td></tr>\n</tbody>\n</table>\n\n<h2>Midjourney: best for art direction and mood</h2>\n<p>Midjourney's current default is V8.2, which became the default on 24 July 2026, according to <a href=\"https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version\">Midjourney's version documentation</a>. It focuses on aesthetics and personalisation and adds a new Edit Model that replaces Omni Reference, Character Reference and Retexture. V8.1, released in April, added native 2K \"HD\" images.</p>\n<h3>Price and plans</h3>\n<p>Midjourney sells four subscriptions, according to its <a href=\"https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans\">plan comparison page</a>: Basic at $10 a month, Standard at $30, Pro at $60 and Mega at $120, with a 20% discount for annual billing. Basic includes 3.3 hours of fast GPU time a month; Standard and above add unlimited \"Relax\" image generation.</p>\n<h3>Commercial rights and privacy</h3>\n<p>Midjourney's <a href=\"https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service\">terms of service</a> (effective 27 May 2026) say you own the assets you create to the fullest extent the law allows, with an important exception: a company, or an employee of a company, with more than $1,000,000 a year in revenue must be on Pro or Mega to own its assets.</p>\n<p>By default your images are publicly viewable and remixable, and you grant Midjourney a broad licence to prompts and outputs. <a href=\"https://docs.midjourney.com/hc/en-us/articles/32019750070669\">Stealth mode</a>, which keeps work off the public site, is only available on Pro and Mega, and even then anything you create in a public Discord channel stays visible. The terms also ask you to indemnify Midjourney against third-party claims, not the other way round.</p>\n<p><strong>Who it suits:</strong> designers, agencies and creators who care most about look and feel and will do final layout and type elsewhere. Businesses above the revenue line should budget for Pro.</p>\n\n<!-- xf-image-2 -->\n\n<h2>OpenAI GPT Image: best for instructions, text and editing in chat</h2>\n<p>OpenAI's API now offers two current image models, gpt-image-2.5-sunburst and gpt-image-2.5-flare. According to OpenAI's <a href=\"https://platform.openai.com/docs/guides/image-generation\">image generation guide</a>, Sunburst is meant for work where editing precision matters most, while Flare targets fast, high-quality everyday generation. Both work through the Image API or as a tool in the Responses API.</p>\n<p>OpenAI's documentation admits that complex prompts can take up to two minutes and that text rendering can still struggle with precise placement.</p>\n<h3>Price</h3>\n<p>Both GPT Image 2.5 models share the same token rates: $8 per million image input tokens, $30 per million image output tokens and $5 per million text input tokens. Cost per picture therefore depends on size and quality setting.</p>\n<p>In the consumer app, the <a href=\"https://chatgpt.com/pricing\">ChatGPT pricing page</a> lists limited image creation on the free plan, more on Go ($8 a month) and \"more complex and accurate\" image creation on Plus ($20 a month). Pro, from $100 a month, advertises unlimited and faster image creation.</p>\n<h3>Commercial rights</h3>\n<p>OpenAI's <a href=\"https://openai.com/policies/row-terms-of-use/\">Terms of Use</a> (effective 1 January 2026) say that, as between you and OpenAI, you own the output, and OpenAI assigns to you whatever rights it has in it. The terms warn that other users may receive similar output. For businesses, OpenAI's <a href=\"https://openai.com/policies/services-agreement/\">Services Agreement</a> includes an indemnity in which OpenAI agrees to defend customers against third-party claims that its services infringe IP rights, subject to listed exclusions such as customer content and modifications.</p>\n<p>On provenance, OpenAI's <a href=\"https://help.openai.com/en/articles/8912793-c2pa-in-chatgpt-images\">help centre</a> says supported images from ChatGPT, Codex and the API carry both C2PA metadata and a SynthID watermark, and anyone can check a file at openai.com/verify.</p>\n<p><strong>Who it suits:</strong> marketers, product teams and founders who want to describe an edit in plain language, iterate inside a chat, or wire image generation into an app. Our <a href=\"/jobs/company/openai/\">OpenAI jobs page</a> lists its open roles.</p>\n\n<h2>Google Nano Banana: best value API and strongest on world knowledge</h2>\n<p>If you are still searching for \"Imagen\", note that Google has retired it. The <a href=\"https://ai.google.dev/gemini-api/docs/image-generation\">Gemini API image generation docs</a> say Imagen models are shut down and that Nano Banana models should be used for all image generation. The current line-up:</p>\n<ul>\n<li><strong>Nano Banana 2 (Gemini 3.1 Flash Image):</strong> Google's generalist model, which it says offers 4K generation, world knowledge, reliable text rendering and strong multi-reference consistency.</li>\n<li><strong>Nano Banana Pro (Gemini 3 Pro Image):</strong> the premium model for complex tasks, localisation and brand consistency.</li>\n<li><strong>Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image):</strong> the fastest and cheapest, not optimised for multiple references or multi-turn editing.</li>\n</ul>\n<h3>Price</h3>\n<p>Google's <a href=\"https://ai.google.dev/gemini-api/docs/pricing\">Gemini API pricing</a> works out to about $0.067 per 1K (1024x1024) image and $0.151 per 4K image on Nano Banana 2, about $0.134 per image up to 2K on Nano Banana Pro, and about $0.034 per 1K image on Nano Banana 2 Lite. Image models are not available on the free API tier, and Google states that paid-tier content is not used to improve its products.</p>\n<h3>Commercial rights and watermarking</h3>\n<p>The <a href=\"https://ai.google.dev/gemini-api/terms\">Gemini API terms</a> say Google won't claim ownership of generated content, while reserving the right to generate the same or similar content for others. Every image includes a SynthID watermark, which <a href=\"https://deepmind.google/models/synthid/\">Google DeepMind</a> describes as an imperceptible signal its tools can detect. For an indemnity, Google Cloud's <a href=\"https://cloud.google.com/terms/generative-ai-indemnified-services\">list of generative AI indemnified services</a> covers its enterprise agent platform API (formerly Vertex AI) when used with generally available Gemini, Imagen and Veo models.</p>\n<p><strong>Who it suits:</strong> developers who need many images at low cost, and teams producing infographics, diagrams or localised marketing where text and real-world accuracy matter.</p>\n\n<!-- xf-image-3 -->\n\n<h2>FLUX by Black Forest Labs: best for self-hosting and custom models</h2>\n<p>Black Forest Labs (BFL) is the one vendor here that publishes model weights. Its <a href=\"https://bfl.ai/pricing\">pricing page</a> lists the FLUX.2 family ([klein] 4B and 9B, [flex], [pro] and [max]) alongside FLUX 3 Image, Video and Action. <a href=\"https://bfl.ai/blog/flux-3\">FLUX 3</a>, announced on 23 July 2026 and in early access, is trained on images, video and audio together; BFL says it handles complex prompts and text much better than earlier FLUX versions.</p>\n<p>The hosted API is pay as you go with \"no subscriptions, no seat fees\". Example rates on the page range from $0.024 to $0.048 per image depending on model and resolution.</p>\n<h3>The licence trap: dev is not free for business</h3>\n<p>According to the <a href=\"https://github.com/black-forest-labs/flux2\">FLUX.2 GitHub repository</a>, only FLUX.2 [klein] 4B (and its base variant) is released under the permissive Apache 2.0 licence. FLUX.2 [dev] and the [klein] 9B models use the <a href=\"https://github.com/black-forest-labs/flux2/blob/main/model_licenses/LICENSE-FLUX-NON-COMMERICAL\">FLUX Non-Commercial License v2.1</a>, which allows the weights only for non-commercial purposes. It says revenue-generating use, or use that affects end users, is not non-commercial.</p>\n<p>There is a nuance. The same licence says BFL claims no ownership of outputs and that you may use outputs for any purpose, including commercial ones, except to train a competing model. It also requires content filtering or human review, and asks you to indemnify BFL. Running [dev] in production for a business still needs a paid licence. BFL's <a href=\"https://bfl.ai/licensing\">licensing page</a> offers Builder (klein models, 10,000 images a month, one domain), Platform (adds FLUX.2 [dev], 100,000 images a month, aimed at SaaS products), Professional (for agencies, first three clients included) and Enterprise tiers.</p>\n<p><strong>Who it suits:</strong> engineering teams that want to fine-tune on their own product photos or brand style, keep data on their own servers, or control cost at volume. New image tools also show up on our <a href=\"/launches/\">launches page</a>.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Adobe Firefly: best for commercial safety and design workflows</h2>\n<p>Adobe's pitch is about risk. Its <a href=\"https://www.adobe.com/products/firefly/plans.html\">Firefly plans page</a> says outputs from Adobe Firefly models are safe for commercial use because they are trained on licensed and public-domain content, and that eligible enterprise customers can receive IP indemnification for select Firefly outputs. Adobe also attaches Content Credentials automatically, and its <a href=\"https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html\">generative AI user guidelines</a> forbid users from removing or altering them.</p>\n<p>One caveat: Firefly now also hosts partner models, including GPT Image, Gemini (Nano Banana) and FLUX. Adobe's own FAQ says you are responsible for deciding whether partner-model output is appropriate for your project, so the commercial-safety promise applies to Adobe's own models, not every model inside the app.</p>\n<h3>Price</h3>\n<p>The plans page lists a free tier with limited daily generations, then Firefly Standard at $9.99 a month (2,000 generative credits), Pro at $19.99 (4,000 credits), Pro Plus at $49.99 (10,000 credits) and Premium at $199.99 (50,000 credits). All paid plans include unlimited standard image generations; credits are spent on video, audio and partner-model outputs.</p>\n<p><strong>Who it suits:</strong> in-house brand teams, agencies with large clients and anyone already working in Adobe's apps.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Can you copyright AI-generated images?</h2>\n<p>Owning an output under a vendor's terms is not the same as holding copyright in it. In January 2025 the <a href=\"https://www.copyright.gov/newsnet/2025/1060.html\">US Copyright Office</a> concluded that AI outputs can be protected only where a human author has determined sufficient expressive elements, for example through creative arrangement or modification. It said that merely providing prompts is not enough, though using AI as an assistive tool does not bar protection. Other countries apply their own rules, so have a designer refine important brand assets such as logos.</p>\n\n<h2>Bottom line: which AI image generator to use for what</h2>\n<ul>\n<li><strong>Mood boards, concept art, editorial illustration:</strong> Midjourney, on Pro if your company passes $1 million in revenue or needs privacy.</li>\n<li><strong>Social graphics, ads with copy, quick edits from a chat:</strong> ChatGPT with GPT Image 2.5, or Gemini with Nano Banana 2.</li>\n<li><strong>High-volume API work on a budget:</strong> Nano Banana 2 Lite or FLUX.2 via the BFL API.</li>\n<li><strong>Self-hosting and fine-tuning:</strong> FLUX.2 [klein] 4B for Apache 2.0 freedom, or a paid BFL licence for [dev].</li>\n<li><strong>Enterprise campaigns where legal review is strict:</strong> Adobe Firefly's own models, ideally on an enterprise plan with indemnity.</li>\n</ul>\n<p>Many teams will use two tools: one for ideas and one for production-safe output. Follow our <a href=\"/news/\">AI news coverage</a> for model updates, and see <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs</a> if you want to work on these systems.</p>\n\n<h2>FAQ</h2>\n<h3>Which AI image generator is best for commercial use?</h3>\n<p>Adobe Firefly is the most conservative choice because Adobe trains its own models on licensed and public-domain content and offers IP indemnification to eligible enterprise customers. OpenAI and Google also let you use outputs commercially and offer indemnities through business and cloud contracts.</p>\n<h3>Can I use Midjourney images commercially on the Basic plan?</h3>\n<p>Yes, if you are an individual or a company with under $1 million in annual revenue. Larger companies and their employees must subscribe to Pro or Mega to own their assets, according to Midjourney's terms.</p>\n<h3>Is FLUX free for commercial use?</h3>\n<p>Only partly. FLUX.2 [klein] 4B is Apache 2.0. FLUX.2 [dev] and [klein] 9B weights are non-commercial, though the licence lets you use their outputs commercially. Production business use of [dev] needs a paid BFL licence.</p>\n<h3>How can I tell if an image was made with AI?</h3>\n<p>Check for Content Credentials (C2PA metadata) or a SynthID watermark. OpenAI offers a checker at openai.com/verify. A missing label does not prove an image is human-made.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Midjourney, <a href=\"https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans\">\"Comparing Midjourney Plans\"</a> (accessed 4 October 2026)</li>\n<li>Midjourney, <a href=\"https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service\">\"Terms of Service\"</a>, effective 27 May 2026</li>\n<li>Midjourney, <a href=\"https://docs.midjourney.com/hc/en-us/articles/32019750070669\">\"Stealth Mode\"</a> (accessed 4 October 2026)</li>\n<li>Midjourney, <a href=\"https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version\">\"Version\"</a> (accessed 4 October 2026)</li>\n<li>OpenAI, <a href=\"https://platform.openai.com/docs/guides/image-generation\">\"Image generation\"</a> (accessed 4 October 2026)</li>\n<li>OpenAI, <a href=\"https://chatgpt.com/pricing\">\"ChatGPT pricing\"</a> (accessed 4 October 2026)</li>\n<li>OpenAI, <a href=\"https://openai.com/policies/row-terms-of-use/\">\"Terms of Use\"</a>, effective 1 January 2026</li>\n<li>OpenAI, <a href=\"https://openai.com/policies/services-agreement/\">\"OpenAI Services Agreement\"</a>, effective 1 January 2026</li>\n<li>OpenAI, <a href=\"https://help.openai.com/en/articles/8912793-c2pa-in-chatgpt-images\">\"Provenance signals (Content Credentials, SynthID) in OpenAI-generated content\"</a> (accessed 4 October 2026)</li>\n<li>Google, <a href=\"https://ai.google.dev/gemini-api/docs/image-generation\">\"Nano Banana image generation\"</a>, Gemini API docs (accessed 4 October 2026)</li>\n<li>Google, <a href=\"https://ai.google.dev/gemini-api/docs/pricing\">\"Gemini Developer API pricing\"</a> (accessed 4 October 2026)</li>\n<li>Google, <a href=\"https://ai.google.dev/gemini-api/terms\">\"Gemini API Additional Terms of Service\"</a> (accessed 4 October 2026)</li>\n<li>Google Cloud, <a href=\"https://cloud.google.com/terms/generative-ai-indemnified-services\">\"Google Cloud Generative AI Indemnified Services\"</a> (accessed 4 October 2026)</li>\n<li>Google DeepMind, <a href=\"https://deepmind.google/models/synthid/\">\"SynthID\"</a> (accessed 4 October 2026)</li>\n<li>Black Forest Labs, <a href=\"https://bfl.ai/pricing\">\"Pricing\"</a> (accessed 4 October 2026)</li>\n<li>Black Forest Labs, <a href=\"https://bfl.ai/licensing\">\"Open Weights Licensing\"</a> (accessed 4 October 2026)</li>\n<li>Black Forest Labs, <a href=\"https://bfl.ai/blog/flux-3\">\"FLUX 3\"</a>, 23 July 2026</li>\n<li>Black Forest Labs, <a href=\"https://github.com/black-forest-labs/flux2\">\"FLUX.2 repository README\"</a>, GitHub (accessed 4 October 2026)</li>\n<li>Black Forest Labs, <a href=\"https://github.com/black-forest-labs/flux2/blob/main/model_licenses/LICENSE-FLUX-NON-COMMERICAL\">\"FLUX Non-Commercial License v2.1\"</a> (accessed 4 October 2026)</li>\n<li>Adobe, <a href=\"https://www.adobe.com/products/firefly/plans.html\">\"Adobe Firefly plans and pricing\"</a> (accessed 4 October 2026)</li>\n<li>Adobe, <a href=\"https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html\">\"Adobe Generative AI User Guidelines\"</a> (accessed 4 October 2026)</li>\n<li>U.S. Copyright Office, <a href=\"https://www.copyright.gov/newsnet/2025/1060.html\">\"Copyright Office Releases Part 2 of Artificial Intelligence Report\"</a>, 29 January 2025</li>\n</ol>\n",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Wacom_Cintiq_22HD_workspace_2_%28Unsplash%29.jpg/1920px-Wacom_Cintiq_22HD_workspace_2_%28Unsplash%29.jpg",
+      "alt": "A designer's desk with a large Wacom Cintiq pen display, keyboard and monitor",
+      "caption": "Image generators now sit alongside the pen displays and editing apps in most design workflows.",
+      "credit": "Photo: Norbert Levajsics / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wacom_Cintiq_22HD_workspace_2_(Unsplash).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Penciling_on_Wacom_Cintiq_13HD_by_David_Revoy.jpg/1920px-Penciling_on_Wacom_Cintiq_13HD_by_David_Revoy.jpg",
+      "alt": "An illustrator pencilling a comic page on a Wacom Cintiq 13HD pen display",
+      "caption": "Midjourney is strongest at art direction, but finished work still often passes through an illustrator's hands.",
+      "credit": "Photo: David Revoy / Wikimedia Commons, CC BY 4.0",
+      "license": "CC BY 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Penciling_on_Wacom_Cintiq_13HD_by_David_Revoy.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Googleplex_-_June_2019_%285849%29.jpg/1920px-Googleplex_-_June_2019_%285849%29.jpg",
+      "alt": "Buildings and landscaping at the Googleplex campus in Mountain View, California",
+      "caption": "Google's Nano Banana models replaced Imagen in the Gemini API.",
+      "credit": "Photo: Gregory Varnum / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Googleplex_-_June_2019_(5849).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Nvidia_GeForce_RTX_5060_Ti_16GB%2C_PNY_Overclocked_Dual_Fan%2C_front.jpg/1920px-Nvidia_GeForce_RTX_5060_Ti_16GB%2C_PNY_Overclocked_Dual_Fan%2C_front.jpg",
+      "alt": "Front of a PNY Nvidia GeForce RTX 5060 Ti 16GB dual-fan graphics card",
+      "caption": "Open-weight FLUX models such as FLUX.2 [klein] are built to run on consumer graphics cards.",
+      "credit": "Photo: FreeMediaKid! / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nvidia_GeForce_RTX_5060_Ti_16GB,_PNY_Overclocked_Dual_Fan,_front.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Adobe_World_Headquarters.jpg/1920px-Adobe_World_Headquarters.jpg",
+      "alt": "Adobe's world headquarters towers in San Jose, California",
+      "caption": "Adobe's world headquarters in San Jose. The company offers IP indemnification for select Firefly outputs to eligible enterprise customers.",
+      "credit": "Photo: Coolcaesar / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Adobe_World_Headquarters.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+      "publisher": "Midjourney",
+      "date": "2026-10-04",
+      "claim": "Plan prices ($10/$30/$60/$120), annual discount, GPU time, Stealth only on Pro/Mega, $1M revenue rule"
+    },
+    {
+      "url": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service",
+      "publisher": "Midjourney",
+      "date": "2026-05-27",
+      "claim": "Asset ownership, $1M revenue rule, public by default, licence to Midjourney, user indemnifies Midjourney"
+    },
+    {
+      "url": "https://docs.midjourney.com/hc/en-us/articles/32019750070669",
+      "publisher": "Midjourney",
+      "date": "2026-10-04",
+      "claim": "Stealth mode limits; public Discord channels remain visible"
+    },
+    {
+      "url": "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version",
+      "publisher": "Midjourney",
+      "date": "2026-10-04",
+      "claim": "V8.2 default since 24 July 2026; Edit Model; V8.1 HD images"
+    },
+    {
+      "url": "https://platform.openai.com/docs/guides/image-generation",
+      "publisher": "OpenAI",
+      "date": "2026-10-04",
+      "claim": "gpt-image-2.5-sunburst/flare, token prices, limitations on latency and text rendering"
+    },
+    {
+      "url": "https://chatgpt.com/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-04",
+      "claim": "ChatGPT Free/Go/Plus/Pro prices and image creation features"
+    },
+    {
+      "url": "https://openai.com/policies/row-terms-of-use/",
+      "publisher": "OpenAI",
+      "date": "2026-01-01",
+      "claim": "User owns output; OpenAI assigns rights; similar outputs"
+    },
+    {
+      "url": "https://openai.com/policies/services-agreement/",
+      "publisher": "OpenAI",
+      "date": "2026-01-01",
+      "claim": "OpenAI IP indemnity for business customers and exclusions"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8912793-c2pa-in-chatgpt-images",
+      "publisher": "OpenAI",
+      "date": "2026-10-04",
+      "claim": "C2PA metadata and SynthID on supported OpenAI images; openai.com/verify"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/image-generation",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "Nano Banana model line-up, Imagen shut down, SynthID on all images"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "Per-image API prices for Nano Banana 2, Pro and 2 Lite; paid-tier data use"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/terms",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "Google won't claim ownership of generated content"
+    },
+    {
+      "url": "https://cloud.google.com/terms/generative-ai-indemnified-services",
+      "publisher": "Google Cloud",
+      "date": "2026-10-04",
+      "claim": "Generative AI indemnified services list"
+    },
+    {
+      "url": "https://deepmind.google/models/synthid/",
+      "publisher": "Google DeepMind",
+      "date": "2026-10-04",
+      "claim": "What SynthID is"
+    },
+    {
+      "url": "https://bfl.ai/pricing",
+      "publisher": "Black Forest Labs",
+      "date": "2026-10-04",
+      "claim": "FLUX model list, pay-as-you-go API, example per-image prices"
+    },
+    {
+      "url": "https://bfl.ai/licensing",
+      "publisher": "Black Forest Labs",
+      "date": "2026-10-04",
+      "claim": "Builder/Platform/Professional/Enterprise open-weight licence tiers"
+    },
+    {
+      "url": "https://bfl.ai/blog/flux-3",
+      "publisher": "Black Forest Labs",
+      "date": "2026-07-23",
+      "claim": "FLUX 3 announcement and early access"
+    },
+    {
+      "url": "https://github.com/black-forest-labs/flux2",
+      "publisher": "Black Forest Labs",
+      "date": "2026-10-04",
+      "claim": "Licence per FLUX.2 model: klein 4B Apache 2.0; dev and klein 9B non-commercial"
+    },
+    {
+      "url": "https://github.com/black-forest-labs/flux2/blob/main/model_licenses/LICENSE-FLUX-NON-COMMERICAL",
+      "publisher": "Black Forest Labs",
+      "date": "2026-10-04",
+      "claim": "FLUX Non-Commercial License v2.1 terms on weights and outputs"
+    },
+    {
+      "url": "https://www.adobe.com/products/firefly/plans.html",
+      "publisher": "Adobe",
+      "date": "2026-10-04",
+      "claim": "Firefly prices, credits, commercial-safety claim, enterprise IP indemnification, partner models caveat"
+    },
+    {
+      "url": "https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html",
+      "publisher": "Adobe",
+      "date": "2026-10-04",
+      "claim": "Content Credentials must not be removed"
+    },
+    {
+      "url": "https://www.copyright.gov/newsnet/2025/1060.html",
+      "publisher": "U.S. Copyright Office",
+      "date": "2025-01-29",
+      "claim": "Copyrightability of AI outputs; prompts alone insufficient"
+    }
+  ]
+}

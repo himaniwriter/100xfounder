@@ -1,0 +1,134 @@
+{
+  "type": "post",
+  "slug": "chatgpt-vs-claude-vs-gemini-business",
+  "title": "ChatGPT vs Claude vs Gemini for business in 2026: which to use",
+  "excerpt": "ChatGPT, Claude and Gemini compared for business in October 2026: seat prices, data controls, new models and which assistant fits which team and task.",
+  "category": "in-depth",
+  "tags": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "AI tools",
+    "OpenAI",
+    "Anthropic",
+    "Google Workspace",
+    "AI for business"
+  ],
+  "content": "<p>For most businesses in October 2026 the honest answer is to pick the assistant that fits the software you already run: Gemini if your company lives in Google Workspace, ChatGPT if you want the broadest all-round toolkit and connectors, and Claude if long documents, careful writing and coding agents are central to your work. All three now offer business plans that do not train on your company data by default, so the decision is about fit, admin controls and price rather than raw intelligence.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>All three vendors shipped new flagship models in September 2026: OpenAI's GPT-6 family, Anthropic's Claude Fable 5.1, Opus 5.5 and Sonnet 5.5, and Google's Gemini 4 Argon (still in limited rollout).</li>\n<li>Entry business seats are close in price: Claude Team starts at $20 per seat a month on annual billing, Gemini Enterprise's Business edition at $21, and ChatGPT Business at ₹1,800 per user a month on the Indian pricing page.</li>\n<li>Google bundles Gemini into Workspace plans, so many companies already pay for it. Check what your current Workspace tier includes before buying another tool.</li>\n<li>Vendor benchmarks are self-reported and each company picks tests that flatter its model. Run a two-week pilot on your own tasks instead of choosing on leaderboard numbers.</li>\n</ul>\n\n<h2>How we compared them</h2>\n<p>We did not rank these assistants on our opinion of which \"feels smartest\". Instead we checked each vendor's own pricing page, product announcements and trust documentation on 4 October 2026 and compared them on six criteria that matter to a company buying seats:</p>\n<ul>\n<li><strong>Ecosystem fit:</strong> does it work inside the email, documents and chat tools your team already uses (Google Workspace, Microsoft 365, Slack)?</li>\n<li><strong>Data and admin controls:</strong> training on business data, single sign-on (SSO), user provisioning (SCIM), audit logs, data retention and data residency.</li>\n<li><strong>Price per seat and billing model:</strong> flat seats, usage-based billing or both.</li>\n<li><strong>Models available:</strong> which current models business users can reach.</li>\n<li><strong>Agents and connectors:</strong> can it take actions or pull from your company's tools?</li>\n<li><strong>Coding:</strong> whether a coding agent is included in the business seat.</li>\n</ul>\n<p>Prices vary by country and currency. When we checked, OpenAI and Google showed Indian rupee prices for our region, while Anthropic and Google Cloud listed US dollars. Always confirm the price on the vendor page for your own country before you budget.</p>\n\n<h2>ChatGPT for business: the broadest toolkit</h2>\n<p>OpenAI sells ChatGPT to companies in two tiers. According to <a href=\"https://chatgpt.com/pricing/\">OpenAI's pricing page</a>, ChatGPT Business cost ₹1,800 per user per month billed annually (₹2,250 billed monthly) for teams of two or more when we checked from India. It bundles ChatGPT, the ChatGPT Work agent and the Codex coding agent across web, desktop and mobile, with connectors for Microsoft 365, Google Drive, Slack, GitHub, Linear and Figma. It also includes centralised billing, usage analytics and spend controls, SAML SSO and multi-factor authentication. OpenAI says it does not train on business data by default.</p>\n<p>ChatGPT Enterprise is priced through sales, with credit-based and token-based options. The same page lists SCIM, enterprise key management, role-based access controls, custom data retention, 24/7 priority support and data residency in ten regions: the US, EU, UK, Japan, Canada, South Korea, Singapore, India, Australia and the UAE. OpenAI also offers nonprofits up to 75% off Business or Enterprise.</p>\n<p>On models, OpenAI introduced <a href=\"https://openai.com/index/gpt-6-astra/\">GPT-6 Astra</a> in September 2026 and said it would reach all ChatGPT Plus, Pro, Business and Enterprise users. It claims state-of-the-art results on computer use, coding and professional work, including 64.6% on Terminal-Bench Science 0.1 against 52.6% for Claude Fable 5.1 in its own comparison. One detail matters for IT teams: Enterprise administrators must switch Astra on for their workspace, because it is off by default at launch. OpenAI followed up with the cheaper GPT-6 Sol and GPT-6 Luna on 22 September, which it said cost about half as much in the API as GPT-5.6 promotional pricing, <a href=\"https://community.openai.com/t/announcing-gpt-6-sol-and-gpt-6-luna-in-the-api-codex-and-chatgpt/1399925\">according to OpenAI's developer forum announcement</a>, and then GPT-6.1 Sol on 29 September.</p>\n<p>Business users get a 256K-token context window for reasoning models (roughly 320 pages of input). Free and Plus conversations can be used for training unless the user opts out, which is a good reason not to let staff paste client data into personal accounts.</p>\n<!-- xf-image-2 -->\n<p><strong>Who it suits:</strong> mixed-tool companies that use Microsoft 365 in one team and Google Drive in another, teams that want one subscription covering chat, research, image generation, agents and coding, and regulated firms that need in-country data residency on Enterprise.</p>\n\n<h2>Claude for business: long documents, writing and coding agents</h2>\n<p>Anthropic's pricing is the most transparent of the three. According to <a href=\"https://claude.com/pricing\">Claude's pricing page</a>, a Team standard seat costs $20 per month on annual billing or $25 monthly, and a premium seat with five times the usage costs $100 annually or $125 monthly. Team includes central billing, SSO and admin controls. Claude Enterprise costs $20 per seat per month billed annually plus usage billed at API rates, so the bill grows with how heavily people use the most capable models. Enterprise adds SCIM, audit logs, a compliance API, custom data retention and a HIPAA-ready option for US healthcare data. Anthropic says Team and Enterprise content is not used for training by default; on individual plans training is opt-out.</p>\n<p>Anthropic released three models in September. <a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-1\">Claude Fable 5.1</a>, launched on 1 September, is its most capable generally available model, priced in the API at $10 per million input tokens and $50 per million output tokens. A restricted sibling, Mythos 5.1, is limited to vetted organisations. <a href=\"https://www.anthropic.com/news/claude-opus-5-5\">Claude Opus 5.5</a> followed on 22 September for Pro, Max, Team and Enterprise users. Anthropic says it costs 40% less to run than Opus 5 on typical workloads and scores 66.4% on Terminal-Bench 4.0, an agentic coding test. <a href=\"https://www.anthropic.com/claude-sonnet-5-5\">Claude Sonnet 5.5</a> arrived on 28 September, including on the free plan, with API pricing of $2 and $10 per million tokens and an Anthropic-reported 1,844 Elo on GDPval-AA, a test of knowledge work across 44 occupations.</p>\n<p>The business case for Claude rests on three things. Claude Code, Anthropic's coding agent, is included from the Pro plan up. Claude has extensions for Chrome and Microsoft 365. And the per-seat Enterprise price is low, with heavy users paying for what they consume rather than everyone paying a premium. The trade-off is a less predictable bill, so set usage budgets first.</p>\n<!-- xf-image-3 -->\n<p><strong>Who it suits:</strong> legal, consulting, research and policy teams that work through long contracts and reports; software teams that want a coding agent bundled with the chat assistant; and companies that want a low entry seat price with usage-based scaling.</p>\n\n<h2>Gemini for business: already inside Google Workspace</h2>\n<p>Google takes a different route. Gemini is built into Google Workspace subscriptions rather than sold mainly as a separate chatbot. On the <a href=\"https://workspace.google.com/pricing\">Workspace pricing page</a> we saw in India, the Base plan (₹99 per user per month) had no Gemini features. Business Starter (₹270) included the Gemini assistant in Gmail. Business Standard (₹1,080, with a 20% introductory discount to ₹864 for up to 20 users) added Gemini in Gmail, Docs, Sheets, Meet and more. Enterprise pricing is through sales.</p>\n<p>Google's <a href=\"https://knowledge.workspace.google.com/admin/gemini/gemini-ai-features-now-included-in-google-workspace-subscriptions?hl=en\">Workspace admin documentation</a> lists Gemini in the side panel of Gmail, Docs, Sheets, Slides, Drive and Chat, \"Help me write\", automatic meeting notes in Meet and access to the Gemini app. It also states that Workspace content is not human-reviewed or used to train generative AI models outside your domain without permission.</p>\n<p>For companies that want agents across more than Google's apps, Google Cloud sells <a href=\"https://cloud.google.com/gemini-enterprise\">Gemini Enterprise</a> separately. The Business edition starts at $21 per seat per month for up to 300 seats and connects to Microsoft 365, Google Workspace, HubSpot, Jira and other tools, with a no-code Workflow Builder for custom agents. Standard and Plus editions start at $30 per seat per month and add higher quotas, bring-your-own agents and advanced security controls. Google says a $0-seat-fee, pay-as-you-go edition for organisations with 20 or more seats is gradually rolling out to a limited group of customers.</p>\n<!-- xf-image-4 -->\n<p>Google's newest frontier model, Gemini 4 Argon, was announced on 30 September. <a href=\"https://9to5google.com/2026/09/30/gemini-4-argon-announcement/\">9to5Google reported</a> that it is reaching trusted testers first and will roll out to Google AI Ultra subscribers and paid API customers, with introductory API pricing of $2 per million input tokens and $10 per million output tokens. Google reported a 77.9% score on the DeepSWE coding benchmark against 74.2% for Claude Opus 5.5. In its <a href=\"https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/\">September recap</a>, Google also listed Gemini 3.8 Flash and new connected apps in Gemini, including Airtable, Linear and Adobe.</p>\n<p><strong>Who it suits:</strong> any business already on Google Workspace, because the marginal cost may be zero. It also suits teams whose AI use is mostly email, documents and meetings, and companies that want an agent platform across Microsoft 365 and other tools through Gemini Enterprise.</p>\n\n<h2>Side-by-side: plans, prices and controls</h2>\n<table>\n<thead><tr><th>Criterion</th><th>ChatGPT</th><th>Claude</th><th>Gemini</th></tr></thead>\n<tbody>\n<tr><td>Entry business plan</td><td>Business: ₹1,800/user/month annual, ₹2,250 monthly (India page), 2+ users</td><td>Team standard: $20/seat/month annual, $25 monthly</td><td>Included in Workspace Starter and up; Gemini Enterprise Business from $21/seat/month</td></tr>\n<tr><td>Top tier</td><td>Enterprise, custom pricing</td><td>Enterprise: $20/seat/month plus usage at API rates</td><td>Workspace Enterprise or Gemini Enterprise Standard/Plus from $30/seat/month</td></tr>\n<tr><td>Training on business data</td><td>No, by default</td><td>None by default on Team and Enterprise</td><td>Not used outside your domain without permission</td></tr>\n<tr><td>SSO / SCIM</td><td>SAML SSO on Business; SCIM on Enterprise</td><td>SSO on Team; SCIM on Enterprise</td><td>Managed through Workspace or Google Cloud admin</td></tr>\n<tr><td>Residency and governance</td><td>Data residency in ten regions incl. India (Enterprise)</td><td>Custom retention, audit logs (Enterprise)</td><td>Advanced security and governance on Gemini Enterprise Standard/Plus</td></tr>\n<tr><td>Coding agent in seat</td><td>Codex</td><td>Claude Code (Pro and up)</td><td>Antigravity on Gemini Enterprise Standard/Plus (limited rollout)</td></tr>\n<tr><td>Newest flagship (Sept 2026)</td><td>GPT-6 Astra, GPT-6.1 Sol</td><td>Fable 5.1, Opus 5.5, Sonnet 5.5</td><td>Gemini 4 Argon (limited rollout), Gemini 3.8 Flash</td></tr>\n</tbody>\n</table>\n<p>Sources: vendor pricing and product pages listed below, checked 4 October 2026.</p>\n\n<h2>Which to use for what</h2>\n<p>Based on the features and controls above, this is a reasonable starting map:</p>\n<ul>\n<li><strong>Email, documents and meetings for a Google Workspace company:</strong> start with the Gemini features you already pay for. Upgrade the Workspace tier before adding a second vendor.</li>\n<li><strong>A company on Microsoft 365 that wants a general assistant:</strong> ChatGPT Business connects to Microsoft 365, and Claude has a Microsoft 365 extension. Pilot both with the same documents.</li>\n<li><strong>Long contracts, research reports and policy drafting:</strong> Claude, whose recent models Anthropic positions for document work, or ChatGPT Business with its 256K reasoning context window. Test both on your longest real files.</li>\n<li><strong>Software development:</strong> every vendor now bundles a coding agent. Claude Code comes with Claude plans and Codex with ChatGPT plans.</li>\n<li><strong>Cross-tool agents (CRM, ticketing, wikis):</strong> compare ChatGPT's connectors and workspace agents with Gemini Enterprise's connector library and Workflow Builder.</li>\n<li><strong>Regulated data or strict residency rules:</strong> look first at ChatGPT Enterprise's regional residency, Claude Enterprise's HIPAA-ready option and audit logs, and Google's Standard/Plus security controls. Have your legal and security teams review the contracts.</li>\n<li><strong>Tight budget, small team:</strong> Gemini through an existing Workspace plan costs the least extra. Claude Team's $20 annual seat is the cheapest standalone seat listed in dollars.</li>\n</ul>\n<!-- xf-image-5 -->\n\n<h2>How to run a fair two-week pilot</h2>\n<p>The most reliable test is your own work. Pick 20 to 30 real tasks from three or four teams, such as a sales email, a contract summary, a spreadsheet analysis and a bug fix. Run the same prompts through each assistant on a business trial, never on personal accounts that may train on the data. Score accuracy, editing time and whether the output can be used as it is. Have IT check SSO, provisioning and log export before a full rollout.</p>\n<p>Also track cost per active user, not just the seat price. Usage-based plans like Claude Enterprise and Gemini Enterprise's pay-as-you-go edition can be cheaper for light users and more expensive for heavy ones. The skills to run these evaluations are in demand too: you can see current openings at <a href=\"/jobs/company/openai/\">OpenAI</a>, <a href=\"/jobs/company/anthropic/\">Anthropic</a> and across our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs board</a>.</p>\n\n<h2>Bottom line</h2>\n<p>The three assistants are now close enough in capability that ecosystem and governance decide most purchases. If your team works in Google Workspace, use the Gemini features you already have and add Gemini Enterprise only if you need agents across other tools. If you want one subscription with the widest set of built-in tools and in-country data residency, ChatGPT Business or Enterprise is the safe default. If your work revolves around long documents, careful writing or software, Claude Team offers a low entry price and bundles Claude Code. Whichever you choose, keep company data on business plans and re-check prices every quarter; all three vendors changed models in the last month alone. Follow model and pricing changes in our <a href=\"/news/\">AI news coverage</a>.</p>\n\n<h2>FAQ</h2>\n<h3>Is ChatGPT, Claude or Gemini cheapest for a small business?</h3>\n<p>If you already pay for Google Workspace Business Starter or above, Gemini features are included. As a standalone seat, Claude Team costs $20 per seat per month on annual billing, while ChatGPT Business was ₹1,800 per user per month annually on OpenAI's Indian pricing page. Prices vary by country.</p>\n<h3>Do these companies train AI on my business data?</h3>\n<p>Not by default on business plans. OpenAI says ChatGPT Business and Enterprise do not train on business data by default, Anthropic says the same for Claude Team and Enterprise, and Google says Workspace content is not used to train models outside your domain without permission.</p>\n<h3>Which AI is best for coding at work?</h3>\n<p>All three now bundle coding agents: Codex with ChatGPT, Claude Code with Claude, and Google Antigravity with Gemini Enterprise Standard/Plus (still rolling out). Test them on your own codebase, because vendor coding benchmarks are self-reported.</p>\n<h3>Can I use Gemini with Microsoft 365?</h3>\n<p>Yes, through Gemini Enterprise, which lists Microsoft 365 among its connectors. The Gemini features bundled in Workspace work inside Google's own apps.</p>\n<h3>Which has data residency in India?</h3>\n<p>OpenAI's pricing page lists India among ten data residency regions for ChatGPT Enterprise. Check with each vendor's sales team for your specific compliance needs.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>OpenAI, <a href=\"https://chatgpt.com/pricing/\">\"ChatGPT Pricing\"</a>, checked 4 October 2026</li>\n<li>OpenAI, <a href=\"https://openai.com/index/gpt-6-astra/\">\"GPT-6 Astra: A new generation of intelligence\"</a>, September 2026 (updated 29 September 2026)</li>\n<li>OpenAI Developer Community, <a href=\"https://community.openai.com/t/announcing-gpt-6-sol-and-gpt-6-luna-in-the-api-codex-and-chatgpt/1399925\">\"Announcing GPT-6 Sol and GPT-6 Luna in the API, Codex and ChatGPT\"</a>, 22 September 2026</li>\n<li>Anthropic, <a href=\"https://claude.com/pricing\">\"Plans &amp; Pricing\"</a>, checked 4 October 2026</li>\n<li>Anthropic, <a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-1\">\"Introducing Claude Fable 5.1 and Claude Mythos 5.1\"</a>, 1 September 2026</li>\n<li>Anthropic, <a href=\"https://www.anthropic.com/news/claude-opus-5-5\">\"Introducing Claude Opus 5.5\"</a>, 22 September 2026</li>\n<li>Anthropic, <a href=\"https://www.anthropic.com/claude-sonnet-5-5\">\"Introducing Claude Sonnet 5.5\"</a>, 28 September 2026</li>\n<li>Google, <a href=\"https://workspace.google.com/pricing\">\"Google Workspace plans and pricing\"</a>, checked 4 October 2026</li>\n<li>Google Workspace Admin Help, <a href=\"https://knowledge.workspace.google.com/admin/gemini/gemini-ai-features-now-included-in-google-workspace-subscriptions?hl=en\">\"Gemini AI features now included in Google Workspace subscriptions\"</a>, updated 1 October 2026</li>\n<li>Google Cloud, <a href=\"https://cloud.google.com/gemini-enterprise\">\"Gemini Enterprise app: Best of Google AI for Business\"</a>, checked 4 October 2026</li>\n<li>Google, <a href=\"https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/\">\"The latest AI news we announced in September 2026\"</a>, 2 October 2026</li>\n<li>9to5Google, <a href=\"https://9to5google.com/2026/09/30/gemini-4-argon-announcement/\">\"Google announces Gemini 4 Argon as its new frontier model\"</a>, 30 September 2026</li>\n</ol>\n",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/ChatGPT.png/1920px-ChatGPT.png",
+      "alt": "Screenshot of a ChatGPT conversation in a web browser, showing a user prompt and the assistant's reply",
+      "caption": "A ChatGPT conversation in the browser. Business plans add admin controls and connectors on top of the same chat interface.",
+      "credit": "Photo: Lugab89 / Wikimedia Commons, CC BY 3.0",
+      "license": "CC BY 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:ChatGPT.png"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Sam_Altman_speaking_at_TED.jpg/1920px-Sam_Altman_speaking_at_TED.jpg",
+      "alt": "OpenAI CEO Sam Altman speaking on stage at a TED event",
+      "caption": "OpenAI CEO Sam Altman. OpenAI rolled out its GPT-6 model family to ChatGPT business plans in September 2026.",
+      "credit": "Photo: Steve Jurvetson / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg/1920px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+      "alt": "Anthropic CEO Dario Amodei speaking on stage at TechCrunch Disrupt 2023",
+      "caption": "Anthropic CEO Dario Amodei at TechCrunch Disrupt 2023. Anthropic released three Claude models in September 2026.",
+      "credit": "Photo: TechCrunch / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/This_knage_shows_the_model_switcher_for_Gemini_AI_web_app..png",
+      "alt": "Phone screenshot of the Gemini web app's model switcher menu listing two Gemini models",
+      "caption": "An earlier version of the Gemini web app's model switcher. In Workspace, Gemini also appears in the side panel of Gmail, Docs and Sheets.",
+      "credit": "Photo: Orwell reader / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:This_knage_shows_the_model_switcher_for_Gemini_AI_web_app..png"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Meet_Google_CEO_Sundar_Pichai_%40Hanoi%2C_Vietnam_%2823836877591%29.jpg/1920px-Meet_Google_CEO_Sundar_Pichai_%40Hanoi%2C_Vietnam_%2823836877591%29.jpg",
+      "alt": "Google CEO Sundar Pichai speaking to an audience of developers in Hanoi, Vietnam",
+      "caption": "Google CEO Sundar Pichai at a developer event in Hanoi. Google bundles Gemini into Workspace plans and sells Gemini Enterprise separately.",
+      "credit": "Photo: Nguyen Hung Vu / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Meet_Google_CEO_Sundar_Pichai_@Hanoi,_Vietnam_(23836877591).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://chatgpt.com/pricing/",
+      "publisher": "OpenAI",
+      "date": "2026-10-04",
+      "claim": "ChatGPT Business ₹1,800/user/month annual, ₹2,250 monthly, 2+ users; connectors; SAML SSO; no training on business data by default; 256K reasoning context; Enterprise SCIM, EKM, RBAC, data residency in ten regions; nonprofit discount up to 75%; Free/Plus training opt-out"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "publisher": "OpenAI",
+      "date": "2026-09-03",
+      "claim": "GPT-6 Astra availability for Plus, Pro, Business, Enterprise; benchmark 64.6% vs 52.6% Terminal-Bench Science; Enterprise admins enable, off by default; GPT-6.1 Sol update 29 Sept"
+    },
+    {
+      "url": "https://community.openai.com/t/announcing-gpt-6-sol-and-gpt-6-luna-in-the-api-codex-and-chatgpt/1399925",
+      "publisher": "OpenAI Developer Community",
+      "date": "2026-09-22",
+      "claim": "GPT-6 Sol and Luna launch, 50% lower API prices than GPT-5.6 promotional pricing"
+    },
+    {
+      "url": "https://claude.com/pricing",
+      "publisher": "Anthropic",
+      "date": "2026-10-04",
+      "claim": "Claude Team $20/$25 standard, $100/$125 premium; Enterprise $20/seat plus API-rate usage; SCIM, audit logs, compliance API, HIPAA-ready; no training by default on Team/Enterprise; Claude Code and Microsoft 365 extension from Pro"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "publisher": "Anthropic",
+      "date": "2026-09-01",
+      "claim": "Claude Fable 5.1 most capable GA model, API $10/$50 per million tokens; Mythos 5.1 restricted"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-opus-5-5",
+      "publisher": "Anthropic",
+      "date": "2026-09-22",
+      "claim": "Opus 5.5 on Pro, Max, Team, Enterprise; 40% cheaper to run than Opus 5; 66.4% Terminal-Bench 4.0"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "publisher": "Anthropic",
+      "date": "2026-09-28",
+      "claim": "Sonnet 5.5 incl. free plan; API $2/$10; GDPval-AA 1,844 Elo"
+    },
+    {
+      "url": "https://workspace.google.com/pricing",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "Workspace Base ₹99 no Gemini, Starter ₹270 Gemini in Gmail, Standard ₹1,080 (₹864 intro) Gemini in Gmail, Docs, Meet; Enterprise via sales"
+    },
+    {
+      "url": "https://knowledge.workspace.google.com/admin/gemini/gemini-ai-features-now-included-in-google-workspace-subscriptions?hl=en",
+      "publisher": "Google Workspace Admin Help",
+      "date": "2026-10-01",
+      "claim": "Gemini features included in Workspace; content not used to train models outside domain without permission"
+    },
+    {
+      "url": "https://cloud.google.com/gemini-enterprise",
+      "publisher": "Google Cloud",
+      "date": "2026-10-04",
+      "claim": "Gemini Enterprise Business from $21/seat up to 300 seats; connectors incl. Microsoft 365, HubSpot, Jira; Workflow Builder; Standard/Plus from $30; Antigravity limited rollout; pay-as-you-go edition"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "publisher": "Google",
+      "date": "2026-10-02",
+      "claim": "Gemini 3.8 Flash; connected apps incl. Airtable, Linear, Adobe; Gemini 4 Argon rollout"
+    },
+    {
+      "url": "https://9to5google.com/2026/09/30/gemini-4-argon-announcement/",
+      "publisher": "9to5Google",
+      "date": "2026-09-30",
+      "claim": "Gemini 4 Argon announced 30 Sept; rollout to trusted testers then AI Ultra and paid API; intro API price $2/$10; DeepSWE 77.9% vs Opus 5.5 74.2%"
+    }
+  ]
+}

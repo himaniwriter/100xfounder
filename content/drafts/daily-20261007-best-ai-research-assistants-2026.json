@@ -1,0 +1,170 @@
+{
+  "type": "post",
+  "slug": "best-ai-research-assistants-2026",
+  "title": "Best AI research assistants in 2026: which to use for what",
+  "excerpt": "Perplexity, ChatGPT and Gemini deep research, Gemini Notebook, Claude, Elicit and Consensus compared on use case, price and how far to trust citations.",
+  "category": "ai-news",
+  "tags": [
+    "AI research assistant",
+    "Perplexity",
+    "ChatGPT deep research",
+    "Gemini Deep Research",
+    "NotebookLM",
+    "Gemini Notebook",
+    "Elicit",
+    "Consensus"
+  ],
+  "content": "<p>The best AI research assistant depends on the job. Perplexity is quickest for cited answers on the web. ChatGPT deep research and Gemini Deep Research write long, multi-source reports. Gemini Notebook (the new name for NotebookLM) is the safest choice for working only from your own documents. Claude's Research mode is strong when your context sits in email and docs. For peer-reviewed papers, Elicit and Consensus beat all of them. All of these tools still get citations wrong sometimes, so check every source before you rely on it. Prices below were checked on vendor pages as of October 2026.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>Fast web answers:</strong> Perplexity, now with GPT-6.1 Sol and Claude Sonnet 5.5 in its model picker. Pro costs $17 a month billed annually.</li>\n<li><strong>Long reports:</strong> ChatGPT deep research (more allowance on Plus at $20 and Pro from $100) and Gemini Deep Research, which is included even on Gemini's free plan.</li>\n<li><strong>Your own documents:</strong> Gemini Notebook keeps answers grounded in the sources you upload, with 50 sources per notebook free and up to 600 on Google AI Ultra.</li>\n<li><strong>Academic work:</strong> Elicit (Pro $49 a month) for systematic reviews, Consensus (Pro $12 a month billed annually) for quick evidence checks.</li>\n<li><strong>Citation risk is real:</strong> a 2026 study found 3–13% of citation URLs from commercial models and deep research agents were invented.</li>\n</ul>\n\n<h2>What changed this year</h2>\n<p>Three changes since mid-2026 affect which tool you should pick. On 16 July, Google renamed NotebookLM to Gemini Notebook, according to the <a href=\"https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html\">Google Workspace Updates blog</a>. Existing notebooks and shared links carried over automatically. Second, the models underneath these assistants changed in the past fortnight. Perplexity's <a href=\"https://www.perplexity.ai/pro\">Pro page</a> already lists OpenAI's GPT-6.1 Sol, released on 29 September, alongside Claude Sonnet 5.5 and Gemini 3.8 Flash. Third, OpenAI says GPT-5.5 leaves ChatGPT on 14 October 2026, according to its <a href=\"https://learn.chatgpt.com/docs/pricing\">ChatGPT Work and Codex pricing page</a>. If you saved research workflows on that model, you'll need to choose a new one.</p>\n<p>Underneath the product names, the tools now split into three kinds. Answer engines search the web and reply in seconds with inline citations. Deep research agents spend several minutes planning, browsing many pages and writing a long report. Source-grounded notebooks only work from documents you give them. Most researchers end up using one of each.</p>\n\n<!-- xf-image-2 -->\n\n<h3>The tools at a glance</h3>\n<table>\n<thead><tr><th>Tool</th><th>Best for</th><th>Paid entry price (Oct 2026)</th><th>Free option</th></tr></thead>\n<tbody>\n<tr><td>Perplexity</td><td>Quick cited web answers, model choice</td><td>Pro $17/month billed annually; Max $167/month billed annually</td><td>Yes</td></tr>\n<tr><td>ChatGPT deep research</td><td>Long reports, research with connected apps</td><td>Plus $20/month; Pro from $100/month</td><td>Limited</td></tr>\n<tr><td>Gemini Deep Research</td><td>Reports that mix the web with Gmail, Drive and Chat</td><td>Google AI Plus $4.99; AI Pro $19.99/month</td><td>Yes</td></tr>\n<tr><td>Gemini Notebook</td><td>Answers grounded only in your uploaded sources</td><td>Included in Google AI plans</td><td>Yes, 50 sources per notebook</td></tr>\n<tr><td>Claude Research</td><td>Agentic research across the web and your work apps</td><td>Pro $17/month billed annually, $20 monthly</td><td>No (paid plans only)</td></tr>\n<tr><td>Elicit</td><td>Systematic reviews and data extraction from papers</td><td>Pro $49/month</td><td>Yes</td></tr>\n<tr><td>Consensus</td><td>Fast evidence checks across peer-reviewed studies</td><td>Pro $12/month billed annually</td><td>Yes</td></tr>\n</tbody>\n</table>\n<p>Indian readers see local prices on some pages. Google's <a href=\"https://gemini.google/subscriptions/\">subscription page</a>, for example, lists Google AI Plus at ₹399 a month and AI Pro at ₹1,950 a month in India.</p>\n\n<h2>Perplexity: the fastest cited answers</h2>\n<p>Perplexity is still the tool to open when you want a sourced answer in seconds rather than a report in minutes. Every answer includes inline citations, and paid users can choose the model behind it. Its current list includes GPT-6.1 Sol, Gemini 3.8 Flash, Claude Sonnet 5.5, Kimi K3, GLM 5.3 and Grok 4.7. Pro costs $17 a month billed annually and adds deep research, model selection and more usage. Max costs $167 a month billed annually and adds what Perplexity calls expert-level research, frontier models and the highest limits. Perplexity says the consumer plans are for personal use only.</p>\n<p>Developers can reach the same research depth through the <a href=\"https://docs.perplexity.ai/docs/agent-api/presets\">Agent API presets</a>. The old deep-research preset is now called \"medium\" and the advanced one \"high\". Perplexity's <a href=\"https://docs.perplexity.ai/docs/getting-started/pricing\">API pricing</a> charges $2.50 per 1,000 standard web-search calls, plus model tokens.</p>\n<p><strong>Use it for:</strong> market scans, competitor lookups, checking a claim before a meeting. <strong>Watch out for:</strong> answers that look confident but rest on a single weak source.</p>\n\n<h2>ChatGPT deep research and Gemini Deep Research: long reports</h2>\n<p><strong>ChatGPT deep research</strong> is on every ChatGPT plan. OpenAI's <a href=\"https://chatgpt.com/pricing/\">pricing page</a> marks it \"limited\" on Free, \"expanded\" on Plus and \"maximum\" on Pro, but doesn't publish exact monthly counts. Plans cost $8 (Go), $20 (Plus), and $100, $200 or $500 (Pro). OpenAI has added more control over each run. In a <a href=\"https://openai.com/index/chatgpt-for-excel/\">March 2026 update</a>, it said users can focus research on specific websites and data sources, shape the research plan before and during a run, and review sources in a redesigned view. It also connected financial data providers such as Moody's, Dow Jones Factiva and MSCI as apps. Developers should note that the original o3-deep-research and o4-mini-deep-research API models were due to shut down on 23 July 2026. OpenAI's <a href=\"https://developers.openai.com/api/docs/guides/deep-research\">documentation</a> names gpt-5.6-sol as the replacement.</p>\n<p><strong>Gemini Deep Research</strong> is the most generous at the free end. Google says on its <a href=\"https://gemini.google/overview/deep-research/\">Deep Research page</a> that it can browse up to hundreds of websites, plus your Gmail, Drive and Chat if you allow it. It turns a prompt into a research plan you can edit, then writes a multi-page report in minutes. That report can become an Audio Overview or interactive content in Canvas. Google says it is available in 150 countries and more than 45 languages, and the free Gemini plan includes it. Paid tiers raise usage limits: Google AI Plus costs $4.99 a month, AI Pro $19.99 and AI Ultra from $99.99.</p>\n<p><strong>Use them for:</strong> due diligence on a company, a first pass at a market map, or a literature overview before you read the originals. <strong>Watch out for:</strong> report length. A 20-page report with 100 citations takes real time to check, and the studies below suggest you should check it.</p>\n\n<!-- xf-image-3 -->\n\n<h2>Gemini Notebook and Claude Research: working from your own material</h2>\n<p><strong>Gemini Notebook</strong> (formerly NotebookLM) answers only from the sources you add, which makes it the best choice for interview transcripts, board packs, course readings or a stack of PDFs. According to its <a href=\"https://notebooklm.google/plans\">plans page</a>, the free version allows up to 50 sources per notebook. That rises to 100 on Google AI Plus, 300 on AI Pro and 600 on AI Ultra. The same page says it can also find new material through Source Discovery and Deep Research. It can turn your sources into Audio Overviews, slides, flashcards and reports. On privacy, Google says it never uses organisations' data to train Gemini Notebook. For individuals, data isn't used for training unless you submit feedback.</p>\n<p><strong>Claude Research</strong> is available on paid Claude plans (Pro, Max, Team and Enterprise) on the web, desktop and mobile, according to <a href=\"https://support.claude.com/en/articles/11088861-using-research-on-claude\">Anthropic's help centre</a>. Web search has to be turned on. Claude then runs a series of searches that build on each other, and it can pull in connected Gmail, Google Calendar and Google Docs alongside the web. It returns answers with citations designed to be easy to check. Research counts against normal usage limits, but Anthropic notes it can use them up faster. Claude Pro costs $17 a month billed annually ($200 up front) or $20 monthly, and Max starts at $100 a month, according to <a href=\"https://claude.com/pricing\">Claude's pricing page</a>.</p>\n<p><strong>Use them for:</strong> anything where the answer must come from a defined set of documents, or where internal context matters more than the open web.</p>\n\n<h2>Elicit and Consensus: for academic research</h2>\n<p>General assistants search the open web. Elicit and Consensus search scholarly literature, which is what students, clinicians and research teams need.</p>\n<p><strong>Elicit</strong> says its free Basic plan searches more than 138 million papers, with unlimited summaries and chat with papers, according to its <a href=\"https://www.elicit.com/pricing\">pricing page</a>. Pro costs $49 a month ($588 a year) and is built for systematic reviews. It can screen up to 5,000 papers, extract data into up to 20 table columns and includes API access. Scale costs $169 a month and adds team editing and extraction from figures. Enterprise screens up to 40,000 papers.</p>\n<p><strong>Consensus</strong> focuses on what the evidence says. Its <a href=\"https://consensus.app/pricing/\">pricing page</a> describes a search across more than 400 million peer-reviewed papers. The free plan includes 10 Pro messages and up to three Deep reviews a month. Pro costs $12 a month billed annually ($144) and gives unlimited Pro messages and 15 Deep reviews. The Deep plan costs $45 a month billed annually ($540) and includes 200 Deep reviews. Consensus offers students, faculty and US clinicians up to 40% off.</p>\n<p><strong>Use them for:</strong> literature reviews, finding study designs and sample sizes, and checking whether a health or science claim holds up. <strong>Watch out for:</strong> coverage gaps in fields that publish mostly in books or non-English journals.</p>\n\n<!-- xf-image-4 -->\n\n<h2>How accurate are AI citations?</h2>\n<p>This is the main reason we don't recommend publishing anything straight from an AI report. Three studies show the scale of the problem.</p>\n<ul>\n<li><strong>Invented links.</strong> In an April 2026 paper, Delip Rao, Eric Wong and Chris Callison-Burch examined more than 220,000 citation URLs. They found that 3–13% of URLs from commercial models and deep research agents had never existed, with no record in the Wayback Machine. Between 5% and 18% didn't resolve at all, according to the <a href=\"https://arxiv.org/abs/2604.03173\">arXiv preprint</a>. An automated link checker cut the share of broken links to under 1%.</li>\n<li><strong>Wrong attribution.</strong> The <a href=\"https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php\">Tow Center for Digital Journalism</a> tested eight AI search tools on 1,600 queries in March 2025. Perplexity gave incorrect answers 37% of the time, ChatGPT search 67% and Grok 3 94%. Paid versions answered more queries correctly than free ones but were also more often confidently wrong.</li>\n<li><strong>News distortion.</strong> In October 2025, 22 public broadcasters in 18 countries evaluated more than 3,000 answers from ChatGPT, Copilot, Gemini and Perplexity. The <a href=\"https://www.ebu.ch/research/open/report/news-integrity-in-ai-assistants\">EBU and BBC report</a> found that almost half had at least one significant issue. A third had serious sourcing problems, and a fifth had major accuracy problems.</li>\n</ul>\n<p>The older studies tested earlier models, and vendors have improved since then. The habit they point to still holds. Open every source you plan to cite, check that it says what the AI claims, and prefer the original document to the AI's summary of it.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line: which AI research assistant to use</h2>\n\n\n<p>No single AI research assistant does everything well. A good setup in 2026 is one answer engine, one deep research agent and one source-grounded notebook, plus Elicit or Consensus if you read papers. The price gaps are small, and most tools have a free tier, so the bigger risk isn't overspending. It's trusting a citation you never opened. For more tools by job, see our guide to the <a href=\"/best-ai-tools-for-startups-2026/\">best AI tools for startups</a>.</p>\n<ul>\n<li><strong>Founders and operators:</strong> Perplexity Pro for daily lookups, plus Gemini or ChatGPT deep research for the occasional market report. If your company runs on Google Workspace, Gemini's access to Gmail and Drive saves time.</li>\n<li><strong>Analysts and consultants:</strong> ChatGPT Plus or Pro for deep research with financial data apps, or Claude for research across connected work tools. Keep a Gemini notebook for each client's documents.</li>\n<li><strong>Students:</strong> start free with Gemini Deep Research and Gemini Notebook, and add Consensus for academic sources. See our <a href=\"/best-ai-tools-for-students-2026/\">best AI tools for students</a> guide.</li>\n<li><strong>Academics and clinicians:</strong> Elicit for systematic reviews, Consensus for quick evidence checks. Use general assistants only for background reading.</li>\n<li><strong>Tight budget:</strong> Gemini's free plan covers both deep research and notebooks. Our <a href=\"/best-free-ai-tools-2026/\">best free AI tools</a> list has more options.</li>\n</ul>\n\n<h2>FAQ</h2>\n<h3>Which AI is best for research in 2026?</h3>\n<p>For quick sourced answers, Perplexity. For long reports, ChatGPT deep research or Gemini Deep Research. For work grounded in your own files, Gemini Notebook. For academic papers, Elicit or Consensus.</p>\n<h3>Is NotebookLM still available?</h3>\n<p>Yes. Google renamed it Gemini Notebook on 16 July 2026. Existing notebooks and shared links kept working.</p>\n<h3>Is Gemini Deep Research free?</h3>\n<p>Yes. Google's free Gemini plan includes Deep Research, and paid Google AI plans raise the usage limits.</p>\n<h3>Can I trust citations from AI research tools?</h3>\n<p>Not without checking. A 2026 study found 3–13% of citation URLs from commercial models and deep research agents were invented, and broadcaster studies found frequent sourcing errors in news answers.</p>\n<h3>Is Elicit or Consensus better for a literature review?</h3>\n<p>Elicit is better for structured systematic reviews with screening and data extraction. Consensus is faster for checking what studies say about a specific question.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Google Workspace Updates, <a href=\"https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html\">\"NotebookLM is now Gemini Notebook\"</a>, 16 July 2026</li>\n<li>Perplexity, <a href=\"https://www.perplexity.ai/pro\">\"Perplexity Pro\"</a>, accessed 7 October 2026</li>\n<li>Perplexity, <a href=\"https://docs.perplexity.ai/docs/agent-api/presets\">\"Presets\"</a>, accessed 7 October 2026</li>\n<li>Perplexity, <a href=\"https://docs.perplexity.ai/docs/getting-started/pricing\">\"API pricing\"</a>, accessed 7 October 2026</li>\n<li>OpenAI, <a href=\"https://chatgpt.com/pricing/\">\"ChatGPT pricing\"</a>, accessed 7 October 2026</li>\n<li>OpenAI, <a href=\"https://learn.chatgpt.com/docs/pricing\">\"Pricing\" (ChatGPT Work and Codex)</a>, accessed 7 October 2026</li>\n<li>OpenAI, <a href=\"https://openai.com/index/chatgpt-for-excel/\">\"Introducing ChatGPT for Excel and new financial data integrations\"</a>, 5 March 2026</li>\n<li>OpenAI, <a href=\"https://developers.openai.com/api/docs/guides/deep-research\">\"Deep research\" (API guide)</a>, accessed 7 October 2026</li>\n<li>Google, <a href=\"https://gemini.google/overview/deep-research/\">\"Gemini Deep Research\"</a>, accessed 7 October 2026</li>\n<li>Google, <a href=\"https://gemini.google/subscriptions/\">\"Google AI Plus, Pro and Ultra\"</a>, accessed 7 October 2026</li>\n<li>Google, <a href=\"https://notebooklm.google/plans\">\"Gemini Notebook plans\"</a>, accessed 7 October 2026</li>\n<li>Anthropic, <a href=\"https://support.claude.com/en/articles/11088861-using-research-on-claude\">\"Use research on Claude\"</a>, accessed 7 October 2026</li>\n<li>Anthropic, <a href=\"https://claude.com/pricing\">\"Claude pricing\"</a>, accessed 7 October 2026</li>\n<li>Elicit, <a href=\"https://www.elicit.com/pricing\">\"Pricing\"</a>, accessed 7 October 2026</li>\n<li>Consensus, <a href=\"https://consensus.app/pricing/\">\"Pricing\"</a>, accessed 7 October 2026</li>\n<li>Delip Rao, Eric Wong and Chris Callison-Burch (arXiv), <a href=\"https://arxiv.org/abs/2604.03173\">\"Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents\"</a>, 3 April 2026</li>\n<li>Columbia Journalism Review (Tow Center), <a href=\"https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php\">\"We compared eight AI search engines. They're all bad at citing news\"</a>, 6 March 2025</li>\n<li>European Broadcasting Union, <a href=\"https://www.ebu.ch/research/open/report/news-integrity-in-ai-assistants\">\"News Integrity in AI Assistants\"</a>, 21 October 2025</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/LOC_Main_Reading_Room_Highsmith.jpg/1920px-LOC_Main_Reading_Room_Highsmith.jpg",
+      "alt": "The domed Main Reading Room of the Library of Congress, with circular rows of reading desks under an ornate ceiling",
+      "caption": "The Library of Congress Main Reading Room. AI research assistants promise library-scale searching in minutes.",
+      "credit": "Photo: Carol M. Highsmith / Wikimedia Commons, Public domain",
+      "license": "Public domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:LOC_Main_Reading_Room_Highsmith.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Rammohun_Library_and_Free_Reading_Room_-_Main_Reading_Room_%282%29.jpg/1920px-Rammohun_Library_and_Free_Reading_Room_-_Main_Reading_Room_%282%29.jpg",
+      "alt": "Readers at long tables in the main reading room of the Rammohun Library and Free Reading Room in Kolkata",
+      "caption": "The Rammohun Library's reading room in Kolkata. Free AI tiers now give students basic research help at no cost.",
+      "credit": "Photo: Sumitsurai / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rammohun_Library_and_Free_Reading_Room_-_Main_Reading_Room_(2).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/NYC_Public_Library_Research_Room_Jan_2006.jpg/1920px-NYC_Public_Library_Research_Room_Jan_2006.jpg",
+      "alt": "Panoramic view of a long research room at the New York Public Library with reading tables and lamps",
+      "caption": "Deep research agents read dozens of sources per report, which leaves more citations for you to check.",
+      "credit": "Photo: Diliff / Wikimedia Commons, CC BY 2.5",
+      "license": "CC BY 2.5",
+      "source_page": "https://commons.wikimedia.org/wiki/File:NYC_Public_Library_Research_Room_Jan_2006.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Card_catalog_John_Rylands_Library_02.jpg/1920px-Card_catalog_John_Rylands_Library_02.jpg",
+      "alt": "Wooden card catalogue drawers at the John Rylands Library in Manchester",
+      "caption": "A card catalogue at the John Rylands Library. Elicit and Consensus index scholarly papers in much the same way.",
+      "credit": "Photo: Alicia Fagerving / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Card_catalog_John_Rylands_Library_02.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Newspaper_Stack_%288582618448%29.jpg/1920px-Newspaper_Stack_%288582618448%29.jpg",
+      "alt": "A stack of folded newspapers",
+      "caption": "Broadcaster-led studies found AI assistants often misattribute or distort news reports.",
+      "credit": "Photo: Babak Farrokhi / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Newspaper_Stack_(8582618448).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html",
+      "publisher": "Google Workspace Updates",
+      "date": "2026-07-16",
+      "claim": "NotebookLM renamed Gemini Notebook; links redirect automatically"
+    },
+    {
+      "url": "https://www.perplexity.ai/pro",
+      "publisher": "Perplexity",
+      "date": "2026-10-07",
+      "claim": "Pro $17/mo annual, Max $167/mo annual, features, model list incl. GPT-6.1 Sol, Sonnet 5.5, Gemini 3.8 Flash, Kimi K3, GLM 5.3, Grok 4.7, inline citations, personal use only"
+    },
+    {
+      "url": "https://docs.perplexity.ai/docs/agent-api/presets",
+      "publisher": "Perplexity",
+      "date": "2026-10-07",
+      "claim": "deep-research preset renamed medium, advanced-deep-research renamed high"
+    },
+    {
+      "url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "publisher": "Perplexity",
+      "date": "2026-10-07",
+      "claim": "web_search $2.50 per 1,000 invocations"
+    },
+    {
+      "url": "https://chatgpt.com/pricing/",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "Deep research limited on Free, expanded on Plus, maximum on Pro"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "Go $8, Plus $20, Pro $100/$200/$500; GPT-5.5 retires 14 Oct 2026"
+    },
+    {
+      "url": "https://openai.com/index/chatgpt-for-excel/",
+      "publisher": "OpenAI",
+      "date": "2026-03-05",
+      "claim": "Research run controls (focus on sites, shape plan, redesigned source review); Moody's, Factiva, MSCI apps"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/deep-research",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "o3-deep-research and o4-mini-deep-research shutdown 23 July 2026, replacement gpt-5.6-sol"
+    },
+    {
+      "url": "https://gemini.google/overview/deep-research/",
+      "publisher": "Google",
+      "date": "2026-10-07",
+      "claim": "Browses up to hundreds of sites plus Gmail/Drive/Chat, editable plan, multi-page report, Audio Overview, Canvas, 150 countries, 45+ languages"
+    },
+    {
+      "url": "https://gemini.google/subscriptions/",
+      "publisher": "Google",
+      "date": "2026-10-07",
+      "claim": "Free plan includes Deep Research; AI Plus $4.99 (Rs 399), AI Pro $19.99 (Rs 1,950), Ultra from $99.99"
+    },
+    {
+      "url": "https://notebooklm.google/plans",
+      "publisher": "Google",
+      "date": "2026-10-07",
+      "claim": "Sources per notebook 50/100/300/600; Source Discovery and Deep Research; artifacts; training policy"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/11088861-using-research-on-claude",
+      "publisher": "Anthropic",
+      "date": "2026-10-07",
+      "claim": "Research on paid plans, needs web search, Gmail/Calendar/Docs, citations, uses limits faster"
+    },
+    {
+      "url": "https://claude.com/pricing",
+      "publisher": "Anthropic",
+      "date": "2026-10-07",
+      "claim": "Pro $17/mo annual ($200 up front) or $20 monthly; Max from $100; Research not on Free"
+    },
+    {
+      "url": "https://www.elicit.com/pricing",
+      "publisher": "Elicit",
+      "date": "2026-10-07",
+      "claim": "Basic free 138M+ papers; Pro $49/mo, $588/yr, 5,000-paper screening, 20 columns, API; Scale $169; Enterprise 40,000 papers"
+    },
+    {
+      "url": "https://consensus.app/pricing/",
+      "publisher": "Consensus",
+      "date": "2026-10-07",
+      "claim": "400M+ papers; Free 10 Pro messages, 3 Deep reviews; Pro $12/mo annual ($144), 15 Deep reviews; Deep $45/mo annual ($540), 200 Deep reviews; up to 40% off"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.03173",
+      "publisher": "arXiv (Rao, Wong, Callison-Burch)",
+      "date": "2026-04-03",
+      "claim": "3-13% of citation URLs hallucinated; 5-18% non-resolving; 53,090 + 168,021 URLs; urlhealth cuts to under 1%"
+    },
+    {
+      "url": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php",
+      "publisher": "Columbia Journalism Review",
+      "date": "2025-03-06",
+      "claim": "8 tools, 1,600 queries; Perplexity 37%, ChatGPT search 67%, Grok 3 94% incorrect; premium versions more confidently wrong"
+    },
+    {
+      "url": "https://www.ebu.ch/research/open/report/news-integrity-in-ai-assistants",
+      "publisher": "European Broadcasting Union",
+      "date": "2025-10-21",
+      "claim": "22 PSM orgs, 18 countries, 14 languages, 3,000+ responses; almost half significant issue, a third sourcing, a fifth accuracy"
+    }
+  ]
+}
