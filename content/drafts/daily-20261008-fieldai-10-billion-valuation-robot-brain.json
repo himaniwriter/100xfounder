@@ -1,0 +1,115 @@
+{
+  "type": "post",
+  "slug": "fieldai-10-billion-valuation-robot-brain",
+  "title": "FieldAI's $700M round at a $10B valuation: term sheet, not yet closed",
+  "excerpt": "FieldAI has signed a term sheet to raise $700M at $10B, Business Insider reports. What its robot brain does and how it compares with Skild AI and PI.",
+  "category": "ai-deeptech",
+  "tags": [
+    "FieldAI",
+    "robotics",
+    "physical AI",
+    "Skild AI",
+    "Physical Intelligence",
+    "Boston Dynamics",
+    "funding"
+  ],
+  "content": "<p>FieldAI, a California company that makes AI software to let robots work on their own in messy places such as construction sites, is raising $700 million at a $10 billion valuation, <a href=\"https://www.businessinsider.com/robotics-startup-fieldai-raises-at-10b-valuation-in-new-round-2026-10\">Business Insider reported</a> on 2 October 2026. The key detail is the round's status: according to Business Insider's source, FieldAI has signed a term sheet, which means the deal may not have formally closed yet.</p>\n<p>FieldAI has not confirmed the round. It did not respond to Business Insider, and the lead investor has not been named. Some later write-ups describe the round as closed. We have not found any source that confirms a close, so this article treats it as a signed term sheet that has not been announced.</p>\n<h2>Key takeaways</h2>\n<ul>\n<li>FieldAI is raising $700 million at a $10 billion valuation, according to one person familiar with the deal cited by Business Insider. A term sheet is signed; a formal close is not confirmed.</li>\n<li>At $10 billion, FieldAI's value would be five times the $2 billion it was valued at in August 2025.</li>\n<li>Revenue plus signed customer contracts has passed $135 million, up at least $35 million since June, the same source told Business Insider. That is not the same as annual revenue.</li>\n<li>The price puts FieldAI near Physical Intelligence, reported in March to be in talks at more than $11 billion, and Skild AI, valued above $14 billion in January.</li>\n</ul>\n<h2>Closed round or term sheet? What the sources say</h2>\n<p>Coverage of this deal has not been consistent, so the wording matters.</p>\n<ul>\n<li><strong>Business Insider</strong>, which broke the story, headlined it as FieldAI being \"set to raise\". The body says FieldAI has signed a term sheet, and the deal may not have formally closed, <a href=\"https://www.businessinsider.com/robotics-startup-fieldai-raises-at-10b-valuation-in-new-round-2026-10\">according to the report</a>.</li>\n<li><strong>The Next Web</strong> also described FieldAI as set to raise, and noted that the company did not comment (<a href=\"https://thenextweb.com/news/fieldai-10b-europe-robot-brains\">The Next Web</a>).</li>\n<li><strong>Orange County Business Journal</strong>, FieldAI's home-region paper, ran the story as \"set to raise\", citing Business Insider, and said it had asked FieldAI to confirm (<a href=\"https://www.ocbj.com/defense-2/robotics-company-fieldai-set-to-raise-700m-at-10b-valuation-bi/\">OCBJ</a>).</li>\n</ul>\n<p>A term sheet sets out the main terms of an investment, such as the price and the amount. The final legal documents and the transfer of money come later, and terms can still change. Until FieldAI or its investors announce the round, $700 million and $10 billion are reported figures, not confirmed ones.</p>\n<!-- xf-image-2 -->\n<h2>What FieldAI actually sells</h2>\n<p>FieldAI builds what it calls Field Foundation Models, AI models designed for robots rather than adapted from chatbots or image models. In its <a href=\"https://www.intelcapital.com/fieldai-announces-over-400m-in-funds-raised-to-advance-embodied-ai-at-scale/\">August 2025 funding announcement</a>, the company described them as \"physics-first\" models that account for uncertainty and risk, so robots can move through changing sites without maps, GPS or pre-set routes. It said the software already ran on quadrupeds, humanoids, wheeled robots and passenger-scale vehicles.</p>\n<p>That is the idea Business Insider summarises as a universal brain for robots: one software layer that a construction company, a mine or a data centre can run across different machines. FieldAI does not make its own robot body. Its business depends on partnerships with hardware makers and on customers who already own machines.</p>\n<h3>Where it is deployed</h3>\n<ul>\n<li><strong>Construction.</strong> In March 2026, FieldAI and Boston Dynamics announced a partnership to run FieldAI's models on the Spot robot dog at construction sites. They reported a 90% cut in inspection time compared with manual checks, and FieldAI said it plans to build one of the largest third-party fleets of four-legged robots (<a href=\"https://www.fieldai.com/news/boston-dynamics-and-fieldai-partner-to-bring-robots-into-uncharted-and-dynamic-environments\">FieldAI</a>).</li>\n<li><strong>Heavy industry.</strong> In September 2026, Caterpillar said it was working with FieldAI on autonomous inspections, digital twins and risk detection for jobsites and factories (<a href=\"https://www.prnewswire.com/news-releases/caterpillar-and-fieldai-advance-ai-powered-industrial-innovation-302866862.html\">Caterpillar via PR Newswire</a>).</li>\n<li><strong>Customers.</strong> Business Insider reports FieldAI's customers include construction firms, data centre operators and defence companies, and that it has more than 30 customers in all.</li>\n</ul>\n<!-- xf-image-3 -->\n<h2>How the valuation jumped from $2 billion to $10 billion</h2>\n<p>In August 2025, FieldAI announced it had raised $405 million across two back-to-back rounds. Investors named included Bezos Expeditions, Khosla Ventures, NVentures (Nvidia's venture arm), Intel Capital, Temasek, BHP Ventures, Emerson Collective, Canaan Partners and Prysm, with Gates Frontier and Samsung among earlier backers (<a href=\"https://www.intelcapital.com/fieldai-announces-over-400m-in-funds-raised-to-advance-embodied-ai-at-scale/\">FieldAI release</a>). <a href=\"https://siliconangle.com/2025/08/20/robotics-software-startup-fieldai-raises-405m-funding\">SiliconANGLE</a> reported that this valued the company at $2 billion, up from $500 million in 2024.</p>\n<p>The reported $10 billion price is therefore a fivefold rise in about 14 months. The case for it rests on commercial traction. Business Insider reported in June that FieldAI had passed $100 million in revenue and customer contracts. Its source now puts the figure above $135 million.</p>\n<p>Read that number carefully. It combines revenue already earned with the value of signed contracts, which may run for years and may be paid out in stages. It is not annual recurring revenue, and FieldAI has not broken it down. A $10 billion valuation on that base is a bet on growth, not on current sales.</p>\n<!-- xf-image-4 -->\n<h2>FieldAI vs Physical Intelligence and Skild AI</h2>\n<p>FieldAI is one of three heavily funded startups trying to own the \"robot brain\" layer of physical AI. Here is how the reported numbers compare.</p>\n<table>\n<thead><tr><th>Company</th><th>Latest reported valuation</th><th>Status and source</th></tr></thead>\n<tbody>\n<tr><td>Skild AI</td><td>Above $14 billion</td><td>About $1.4 billion round led by SoftBank, reported January 2026 (<a href=\"https://news.bloomberglaw.com/private-equity/robotics-startup-skild-ai-valued-above-14-billion-in-new-round\">Bloomberg</a>)</td></tr>\n<tr><td>Physical Intelligence</td><td>More than $11 billion</td><td>In talks to raise about $1 billion, reported March 2026 (<a href=\"https://news.bloomberglaw.com/artificial-intelligence/ai-robotics-lab-in-talks-to-nab-1-billion-at-11-billion-value\">Bloomberg</a>)</td></tr>\n<tr><td>FieldAI</td><td>$10 billion</td><td>Term sheet for $700 million signed, reported October 2026 (<a href=\"https://www.businessinsider.com/robotics-startup-fieldai-raises-at-10b-valuation-in-new-round-2026-10\">Business Insider</a>)</td></tr>\n</tbody>\n</table>\n<p>Skild AI, led by chief executive Deepak Pathak, more than tripled its valuation in seven months, from about $4.7 billion, with Nvidia, Macquarie and Bezos Expeditions among the investors, <a href=\"https://news.bloomberglaw.com/private-equity/robotics-startup-skild-ai-valued-above-14-billion-in-new-round\">Bloomberg reported</a>. Physical Intelligence, founded by AI academics and former Google DeepMind researchers, was last valued at $5.6 billion after a $600 million round before the March talks, <a href=\"https://news.bloomberglaw.com/artificial-intelligence/ai-robotics-lab-in-talks-to-nab-1-billion-at-11-billion-value\">according to Bloomberg</a>.</p>\n<p>The three differ in focus. Physical Intelligence and Skild have pitched general models that can control almost any robot for almost any task. FieldAI has leaned harder into paying industrial customers in outdoor and unstructured settings, which is why its revenue-and-contracts figure is central to its pitch. Bezos Expeditions has backed both FieldAI and Skild AI, according to the companies' disclosed investor lists, a sign of how concentrated the money in this field is.</p>\n<!-- xf-image-5 -->\n<h2>Why it matters</h2>\n<p>Investors are now valuing robot software companies at prices once reserved for AI model labs, before the market has shown which approach works at scale. FieldAI's case is that it already has paying customers in construction, energy and defence. Its risk is that a term sheet is not a closed round, and a revenue-plus-contracts figure is not recurring revenue. For Indian founders and engineers, the signal is that physical AI is now one of the best-funded corners of the market; our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs board</a> tracks roles from official career pages, and our <a href=\"/funding-tracker/\">funding tracker</a> will log the round if FieldAI confirms it.</p>\n<h2>FAQ</h2>\n<h3>Has FieldAI closed its $700 million round?</h3>\n<p>Not confirmed. Business Insider's source said FieldAI has signed a term sheet, meaning the deal may not have formally closed. FieldAI has not announced it.</p>\n<h3>What is FieldAI's valuation?</h3>\n<p>The new round would value it at $10 billion, as reported. Its last confirmed round, in August 2025, valued it at $2 billion according to SiliconANGLE.</p>\n<h3>What does FieldAI make?</h3>\n<p>Software, not robots. Its Field Foundation Models let robots such as Boston Dynamics' Spot move and work on their own in changing environments without maps or GPS.</p>\n<h3>Who are FieldAI's investors?</h3>\n<p>Disclosed backers from 2025 include Bezos Expeditions, Khosla Ventures, NVentures, Intel Capital, Temasek and Emerson Collective. The lead of the new round has not been named.</p>\n<h3>Who are FieldAI's competitors?</h3>\n<p>The closest are Physical Intelligence and Skild AI, which also build general-purpose AI for robots.</p>\n<p>More AI and deep-tech funding stories are on our <a href=\"/news/\">news page</a>.</p>\n<h2>Sources</h2>\n<ol>\n<li>Business Insider, \"Robotics startup FieldAI is set to raise $700 million at a $10 billion valuation\", 2 October 2026. <a href=\"https://www.businessinsider.com/robotics-startup-fieldai-raises-at-10b-valuation-in-new-round-2026-10\">Link</a></li>\n<li>The Next Web, \"Robot software startup FieldAI is set to raise $700M at a $10B valuation\", 2 October 2026. <a href=\"https://thenextweb.com/news/fieldai-10b-europe-robot-brains\">Link</a></li>\n<li>Orange County Business Journal, \"Robotics company FieldAI set to raise $700M at $10B valuation: BI\", 2 October 2026. <a href=\"https://www.ocbj.com/defense-2/robotics-company-fieldai-set-to-raise-700m-at-10b-valuation-bi/\">Link</a></li>\n<li>FieldAI (via Intel Capital), \"FieldAI Announces Over $400M in Funds Raised to Advance Embodied AI at Scale\", 20 August 2025. <a href=\"https://www.intelcapital.com/fieldai-announces-over-400m-in-funds-raised-to-advance-embodied-ai-at-scale/\">Link</a></li>\n<li>SiliconANGLE, \"Robotics software startup FieldAI raises $405M in funding\", 20 August 2025. <a href=\"https://siliconangle.com/2025/08/20/robotics-software-startup-fieldai-raises-405m-funding\">Link</a></li>\n<li>FieldAI, \"Boston Dynamics and FieldAI Partner to Bring Robots Into Uncharted and Dynamic Environments\", 12 March 2026. <a href=\"https://www.fieldai.com/news/boston-dynamics-and-fieldai-partner-to-bring-robots-into-uncharted-and-dynamic-environments\">Link</a></li>\n<li>Caterpillar via PR Newswire, \"Caterpillar and FieldAI Advance AI-Powered Industrial Innovation\", 2 September 2026. <a href=\"https://www.prnewswire.com/news-releases/caterpillar-and-fieldai-advance-ai-powered-industrial-innovation-302866862.html\">Link</a></li>\n<li>Bloomberg (via Bloomberg Law), \"AI Robotics Lab in Talks to Nab $1 Billion at $11 Billion Value\", 27 March 2026. <a href=\"https://news.bloomberglaw.com/artificial-intelligence/ai-robotics-lab-in-talks-to-nab-1-billion-at-11-billion-value\">Link</a></li>\n<li>Bloomberg (via Bloomberg Law), \"Robotics Startup Skild AI Valued Above $14 Billion in New Round\", 14 January 2026. <a href=\"https://news.bloomberglaw.com/private-equity/robotics-startup-skild-ai-valued-above-14-billion-in-new-round\">Link</a></li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Boston_Dynamics_LKAB_Almedalen_29_juni_2023.jpg/1920px-Boston_Dynamics_LKAB_Almedalen_29_juni_2023.jpg",
+      "alt": "A blue Boston Dynamics Spot robot dog with a laser scanner mounted on its back walks on a paved path",
+      "caption": "A Spot robot fitted with a scanner. FieldAI runs its models on Spot for autonomous site inspections.",
+      "credit": "Photo: Tore Danielsson (WMSE) / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Boston_Dynamics_LKAB_Almedalen_29_juni_2023.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Caterpillar_325_FL_excavator_on_a_job_site.jpg/1920px-Caterpillar_325_FL_excavator_on_a_job_site.jpg",
+      "alt": "A yellow Caterpillar excavator loading material into a dump truck at a construction site",
+      "caption": "Construction sites change daily, which is why FieldAI's software is built to work without fixed maps.",
+      "credit": "Photo: Grendelkhan / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Caterpillar_325_FL_excavator_on_a_job_site.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/An_UAV_displayed_by_Thermal_Systems_at_Amaravati_Drone_summit_%2801%29.jpg/1920px-An_UAV_displayed_by_Thermal_Systems_at_Amaravati_Drone_summit_%2801%29.jpg",
+      "alt": "An industrial inspection drone on display at the Amaravati Drone Summit in India",
+      "caption": "An industrial inspection drone. Drones are among the machines FieldAI says its software can run.",
+      "credit": "Photo: iMahesh / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:An_UAV_displayed_by_Thermal_Systems_at_Amaravati_Drone_summit_(01).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Humanoid_Robot_%281%29_ITB_2017.JPG/1920px-Humanoid_Robot_%281%29_ITB_2017.JPG",
+      "alt": "A small white and blue humanoid robot sitting on a table at a trade fair",
+      "caption": "Humanoid robots are one of the body types that robot-brain startups want their models to control.",
+      "credit": "Photo: Travelarz / Wikimedia Commons, CC BY-SA 3.0 PL",
+      "license": "CC BY-SA 3.0 PL",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Humanoid_Robot_(1)_ITB_2017.JPG"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Diwakar_Vaish_with_his_development_-_Manav_at_A-SET_Robotics_Lab.jpg/1920px-Diwakar_Vaish_with_his_development_-_Manav_at_A-SET_Robotics_Lab.jpg",
+      "alt": "Roboticist Diwakar Vaish seated beside Manav, a small white humanoid robot, at the A-SET Robotics Lab in India",
+      "caption": "Diwakar Vaish with Manav, a humanoid built at A-SET Robotics Lab in India.",
+      "credit": "Photo: Jasonprost / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Diwakar_Vaish_with_his_development_-_Manav_at_A-SET_Robotics_Lab.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.businessinsider.com/robotics-startup-fieldai-raises-at-10b-valuation-in-new-round-2026-10",
+      "publisher": "Business Insider",
+      "date": "2026-10-02",
+      "claim": "Raising $700M at $10B per person familiar; term sheet signed, may not have formally closed; lead unknown; no comment; previously $2B; $135M+ revenue and contracts, up $35M+ since June; earlier $100M report; 30+ customers; customers in construction, data centres, defence; HQ Irvine and Bay Area; PI ~$11B, Skild >$14B"
+    },
+    {
+      "url": "https://thenextweb.com/news/fieldai-10b-europe-robot-brains",
+      "publisher": "The Next Web",
+      "date": "2026-10-02",
+      "claim": "Set to raise; term sheet; no comment from FieldAI"
+    },
+    {
+      "url": "https://www.ocbj.com/defense-2/robotics-company-fieldai-set-to-raise-700m-at-10b-valuation-bi/",
+      "publisher": "Orange County Business Journal",
+      "date": "2026-10-02",
+      "claim": "Set to raise $700M at $10B citing BI; asked FieldAI for confirmation"
+    },
+    {
+      "url": "https://www.intelcapital.com/fieldai-announces-over-400m-in-funds-raised-to-advance-embodied-ai-at-scale/",
+      "publisher": "FieldAI (via Intel Capital)",
+      "date": "2025-08-20",
+      "claim": "$405M across two rounds; investor list; FFMs physics-first, no maps or GPS; quadrupeds, humanoids, wheeled robots, passenger-scale vehicles; Irvine HQ"
+    },
+    {
+      "url": "https://siliconangle.com/2025/08/20/robotics-software-startup-fieldai-raises-405m-funding",
+      "publisher": "SiliconANGLE",
+      "date": "2025-08-20",
+      "claim": "$2B valuation, up from $500M in 2024"
+    },
+    {
+      "url": "https://www.fieldai.com/news/boston-dynamics-and-fieldai-partner-to-bring-robots-into-uncharted-and-dynamic-environments",
+      "publisher": "FieldAI",
+      "date": "2026-03-12",
+      "claim": "Boston Dynamics Spot partnership, 90% inspection-time reduction, large third-party quadruped fleet"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/caterpillar-and-fieldai-advance-ai-powered-industrial-innovation-302866862.html",
+      "publisher": "Caterpillar via PR Newswire",
+      "date": "2026-09-02",
+      "claim": "Caterpillar collaboration on autonomous inspections, digital twins, risk identification"
+    },
+    {
+      "url": "https://news.bloomberglaw.com/artificial-intelligence/ai-robotics-lab-in-talks-to-nab-1-billion-at-11-billion-value",
+      "publisher": "Bloomberg (via Bloomberg Law)",
+      "date": "2026-03-27",
+      "claim": "Physical Intelligence in talks to raise ~$1B at >$11B; prior $600M at $5.6B; founded by AI academics and ex-DeepMind researchers"
+    },
+    {
+      "url": "https://news.bloomberglaw.com/private-equity/robotics-startup-skild-ai-valued-above-14-billion-in-new-round",
+      "publisher": "Bloomberg (via Bloomberg Law)",
+      "date": "2026-01-14",
+      "claim": "Skild AI ~$1.4B round led by SoftBank at >$14B; prior ~$4.7B; CEO Deepak Pathak; Nvidia, Macquarie, Bezos Expeditions"
+    }
+  ]
+}

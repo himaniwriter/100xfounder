@@ -1,0 +1,127 @@
+{
+ "type": "post",
+ "slug": "validate-startup-idea",
+ "title": "How to validate a startup idea before you build: a 5-step guide",
+ "excerpt": "Validate a startup idea before writing code: problem checks, Mom Test interviews, YC's five questions, smoke tests, pre-sales and the 40% fit test.",
+ "category": "in-depth",
+ "tags": [
+  "startup idea validation",
+  "customer interviews",
+  "the mom test",
+  "y combinator",
+  "product-market fit",
+  "mvp",
+  "founders"
+ ],
+ "content": "<p>To validate a startup idea before you build it, find out whether specific people already have the problem badly enough to spend time or money on it. In practice that means three steps, in order: unbiased conversations about how people handle the problem today, a cheap test of demand such as a landing page, and a request for a real commitment such as a pre-order, a paid pilot or a letter of intent. Code comes after you have evidence, not before.</p>\n\n<p>The cost of skipping this is well documented. In an analysis published on 5 March 2026 of 431 venture-backed companies that shut down since 2023, CB Insights found that running out of capital was the final cause in 70% of cases, but poor product-market fit was cited in 43%, bad timing in 29% and unsustainable unit economics in 19% (<a href=\"https://www.cbinsights.com/research/report/startup-failure-reasons-top/\">CB Insights</a>). Those are the failures validation is meant to catch early. This guide pulls together the most-cited playbooks from Y Combinator, Paul Graham, <em>The Mom Test</em> and First Round Review, with examples only where they are documented.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>Start from a problem you or people near you have, not from an idea you invented to start a company.</li>\n<li>In interviews, ask about the last time something happened, not whether someone would use your product.</li>\n<li>Compliments are not data. Time, introductions and money are.</li>\n<li>A landing page with a pricing step can test demand before you write product code, as Buffer did before its launch.</li>\n<li>After launch, the \"very disappointed\" survey gives you a rough product-market fit benchmark: 40%.</li>\n</ul>\n\n<h2>Step 1: check the shape of the problem</h2>\n<p>Paul Graham, Y Combinator's co-founder, argued in his November 2012 essay \"How to Get Startup Ideas\" that the best ideas come from noticing problems, preferably your own, rather than trying to think of startup ideas. He calls invented ideas \"made-up\" or \"sitcom\" ideas: they sound plausible, so many people say they might use them, but almost nobody wants them urgently. His test is whether a small group wants the product so much that they will use a rough first version from an unknown two-person startup (<a href=\"https://paulgraham.com/startupideas.html\">Paul Graham</a>).</p>\n<p>He describes good early markets as a well: narrow but deep. His examples are Microsoft's Altair Basic, which served only a couple of thousand Altair owners at first, and Facebook, which began as a site for Harvard students. A broad, shallow market of mildly interested people usually adds up to no users.</p>\n<p>Kevin Hale, a YC partner and Wufoo co-founder, gave a checklist for the problem itself in a YC Startup School lecture. Good problems are popular, growing, urgent, expensive, mandatory or frequent, and you want at least one of these properties, ideally several (<a href=\"https://www.ycombinator.com/blog/startup-school-week-1-recap-kevin-hale-and-eric-migicovsky/\">Y Combinator</a>). Hale also asks founders for an \"insight\": the unfair advantage that explains why your solution will grow faster than everyone else's.</p>\n<p>Write your idea as three sentences before you talk to anyone: who has the problem, what they do about it today, and why your approach will beat that. You are about to test each sentence.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Step 2: talk to users without pitching</h2>\n<p>Customer conversations are the cheapest validation tool and the easiest to get wrong. People are polite, and they will praise an idea they would never pay for.</p>\n<h3>The Mom Test</h3>\n<p>Rob Fitzpatrick, a YC alumnus, wrote <em>The Mom Test</em> as a handbook for learning from customer conversations \"when everyone is lying to you\" (<a href=\"https://www.momtestbook.com/\">The Mom Test</a>). A summary by the venture firm <a href=\"https://www.unusual.vc/rob-fitzpatricks-mom-test/\">Unusual Ventures</a> sets out its three rules:</p>\n<ul>\n<li>Talk about the customer's life instead of your idea.</li>\n<li>Ask about specifics in the past, not opinions about the future.</li>\n<li>Talk less and listen more.</li>\n</ul>\n<p>The same summary describes Fitzpatrick's advice for handling bad data: deflect compliments, anchor vague \"I usually\" or \"I would\" answers back to specific past events, and dig beneath feature requests to the motivation behind them. A meeting succeeds when it ends with a commitment, which can take three forms: time (a next meeting with a clear goal), reputation (an introduction to a colleague or decision-maker) or cash.</p>\n\n<h3>Five questions from YC</h3>\n<p>Eric Migicovsky, founder of the smartwatch company Pebble and a YC partner, compressed this into five interview questions in his Startup School talk (<a href=\"https://www.ycombinator.com/blog/startup-school-week-1-recap-kevin-hale-and-eric-migicovsky/\">Y Combinator</a>):</p>\n<ol>\n<li>What is the hardest part about doing the thing you are trying to do?</li>\n<li>Tell me about the last time you encountered this problem.</li>\n<li>Why was that hard?</li>\n<li>What, if anything, have you done to try to solve it?</li>\n<li>What don't you love about the solutions you have already tried?</li>\n</ol>\n<p>He names three common mistakes: pitching your idea instead of learning, asking hypotheticals such as \"would you pay for this feature?\", and not digging into the user's wider context. At the idea stage he suggests starting with yourself, then friends and coworkers through warm introductions, and says you do not need to speak to thousands of people. Every good research plan starts with one or two.</p>\n<p>One honest caveat. In a 2025 note on his own blog, Migicovsky wrote that he based the talk on <em>The Mom Test</em> but rarely used the framework himself, preferring to build products he wanted and hoping others were similar enough to want them too (<a href=\"https://ericmigi.com/blog/startup-school-how-to-talk-to-users\">Eric Migicovsky</a>). That is Graham's \"your own problem\" route. Interviews matter most when you are not your own customer.</p>\n\n<h3>What to record</h3>\n<p>After each conversation, write down what the person does today, how often, what it costs them in time or money, and what commitment they offered. If ten interviews produce praise but no workarounds, no spending and no follow-up meetings, the problem is probably not painful enough.</p>\n\n<!-- xf-image-3 -->\n\n<h2>Step 3: run a smoke test</h2>\n<p>A smoke test measures what people do, not what they say, before the product exists. The best-documented example is Buffer. Founder Joel Gascoigne wrote in February 2011 that he first put up a two-page site explaining the product and collecting email addresses for launch. Once people signed up, he added a pricing page between the two, an extra click that tested whether they would choose a paid plan. People kept clicking through and a small number picked paid plans, and only then did he build a minimal version. He reported over 500 users and about 4% converting to paid plans within roughly two and a half months of launch (<a href=\"https://buffer.com/resources/idea-to-paying-customers-in-7-weeks-how-we-did-it/\">Buffer</a>).</p>\n<p>The same pattern works cheaply today. You need:</p>\n<ul>\n<li>A one-page site that states the problem, the promised outcome and a price.</li>\n<li>A sign-up or \"request access\" button, ideally behind a pricing choice.</li>\n<li>A small, targeted traffic source: the communities, newsletters or groups where your interviewees spend time.</li>\n<li>A pre-decided threshold, written down before you start, for what counts as a pass.</li>\n</ul>\n<p>Many of the tools in our guide to the <a href=\"/best-ai-tools-for-startups/\">best AI tools for startups</a> can produce the page, copy and analytics for this in a day. Do not let the speed tempt you into skipping the interviews. A page tests demand for a message, not for the product.</p>\n\n<h2>Step 4: ask for money or a firm commitment</h2>\n<p>The strongest validation before building is someone paying, or formally committing to pay. For consumer products that can be a refundable pre-order. For business software it is usually a paid pilot, a deposit or a signed letter of intent naming a price and a start date. The logic follows the Mom Test's ladder of commitment: cash is the costliest thing a customer can give, so it is the strongest signal (<a href=\"https://www.unusual.vc/rob-fitzpatricks-mom-test/\">Unusual Ventures</a>).</p>\n<p>Graham's essay \"Do Things That Don't Scale\" from July 2013 describes the mindset. Founders usually have to recruit early users by hand. He tells how Stripe's founders, rather than promising to send a link, would ask for a prospective user's laptop and set them up on the spot (<a href=\"https://paulgraham.com/ds.html\">Paul Graham</a>). Manual selling at this stage is itself a test: if you cannot persuade ten people face to face, ads will not persuade ten thousand.</p>\n<p>A version-zero offer can also be delivered by hand behind the scenes, with founders doing manually what the software will later automate. It costs time instead of engineering, and it shows whether people come back.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Step 5: measure pull once you launch</h2>\n<p>Validation does not stop at launch. Superhuman founder Rahul Vohra described in First Round Review how he used a survey developed by growth adviser Sean Ellis: ask users how they would feel if they could no longer use the product, and measure the share who answer \"very disappointed\". Ellis found, after benchmarking nearly a hundred startups, that companies above 40% almost always had strong traction and those below usually struggled (<a href=\"https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/\">First Round Review</a>). Vohra's lesson was to segment the answers and build for the group that loved the product most.</p>\n<p>Migicovsky describes the same loop in three stages: talk to users at the idea stage, again at the prototype stage before you have paying customers, and again while you iterate towards product-market fit (<a href=\"https://www.ycombinator.com/blog/startup-school-week-1-recap-kevin-hale-and-eric-migicovsky/\">Y Combinator</a>). Publishing on a launch platform is one way to get a burst of first users and feedback; see what others are launching on our <a href=\"/launches/\">launches page</a>.</p>\n\n<h2>The India angle: funding for proof of concept</h2>\n<p>Indian founders can get support for exactly this stage. The Startup India Seed Fund Scheme, run by DPIIT with an outlay of ₹945 crore, gives eligible startups up to ₹20 lakh as a grant, through incubators, for validating a proof of concept, building a prototype or running product trials, released in milestone-based instalments. A further up to ₹50 lakh is available for market entry and scaling through convertible debentures or debt-linked instruments (<a href=\"https://www.indiascienceandtechnology.gov.in/funding-opportunities/startups/startup-india-seed-fund-scheme-sisfs\">India Science, Technology and Innovation portal</a>). (₹1 lakh is ₹1,00,000; ₹1 crore is ₹100 lakh.)</p>\n<p>Razorpay's origin story fits Graham's pattern. Its YC profile says Harshil Mathur and Shashank Kumar founded the company in 2014 after finding how poor online payments in India were, and Mathur wrote there that YC's application questions on competition, market share and market size helped them get clear about the business even before they knew whether they would be accepted (<a href=\"https://www.ycombinator.com/companies/razorpay\">Y Combinator</a>).</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>Validation is a sequence of cheap tests that get harder to pass: a real problem, honest conversations, behaviour on a page, then money. Each step costs less than building the wrong product. Set your pass thresholds before you run each test, and be willing to change the idea when the evidence says so.</p>\n\n<h2>FAQ</h2>\n<h3>How many customer interviews do I need?</h3>\n<p>There is no fixed number. Migicovsky says you do not need thousands and that research starts with one or two people. Keep going until new interviews stop teaching you anything.</p>\n<h3>Is a waitlist enough to validate an idea?</h3>\n<p>It is a start, not proof. Buffer added a pricing step to its sign-up flow to test willingness to pay, and a pre-order or paid pilot is stronger still.</p>\n<h3>What is The Mom Test?</h3>\n<p>A short book by Rob Fitzpatrick on running customer conversations that produce useful data, built on three rules: talk about their life, ask about specific past events, and listen more than you talk.</p>\n<h3>How do I know I have product-market fit?</h3>\n<p>One widely used benchmark is Sean Ellis's survey: if at least 40% of active users would be \"very disappointed\" without your product, you are likely close.</p>\n<h3>Should I build an MVP first?</h3>\n<p>Only after interviews and a demand test. A minimum product is for learning from real usage, not a substitute for checking that the problem exists.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>CB Insights, \"<a href=\"https://www.cbinsights.com/research/report/startup-failure-reasons-top/\">Why startups fail: top reasons</a>\", 5 March 2026</li>\n<li>Paul Graham, \"<a href=\"https://paulgraham.com/startupideas.html\">How to Get Startup Ideas</a>\", November 2012</li>\n<li>Paul Graham, \"<a href=\"https://paulgraham.com/ds.html\">Do Things that Don't Scale</a>\", July 2013</li>\n<li>Y Combinator, \"<a href=\"https://www.ycombinator.com/blog/startup-school-week-1-recap-kevin-hale-and-eric-migicovsky/\">Startup School Week 1 Recap: Kevin Hale and Eric Migicovsky</a>\", 4 September 2019</li>\n<li>Eric Migicovsky, \"<a href=\"https://ericmigi.com/blog/startup-school-how-to-talk-to-users\">Startup School: How to talk to users</a>\", 25 July 2019 (2025 note)</li>\n<li>Rob Fitzpatrick, \"<a href=\"https://www.momtestbook.com/\">The Mom Test</a>\", accessed 8 October 2026</li>\n<li>Unusual Ventures, \"<a href=\"https://www.unusual.vc/rob-fitzpatricks-mom-test/\">Rob Fitzpatrick's Mom Test</a>\", 31 October 2024</li>\n<li>Buffer (Joel Gascoigne), \"<a href=\"https://buffer.com/resources/idea-to-paying-customers-in-7-weeks-how-we-did-it/\">Idea to Paying Customers in 7 Weeks: How We Did It</a>\", 16 February 2011</li>\n<li>First Round Review (Rahul Vohra), \"<a href=\"https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/\">How Superhuman Built an Engine to Find Product/Market Fit</a>\", 13 November 2018</li>\n<li>India Science, Technology and Innovation portal, \"<a href=\"https://www.indiascienceandtechnology.gov.in/funding-opportunities/startups/startup-india-seed-fund-scheme-sisfs\">Startup India Seed Fund Scheme (SISFS)</a>\", accessed 8 October 2026</li>\n<li>Y Combinator, \"<a href=\"https://www.ycombinator.com/companies/razorpay\">Razorpay company profile</a>\", accessed 8 October 2026</li>\n</ol>",
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Startup_Weekend_Edmonton_%284742626003%29.jpg/1920px-Startup_Weekend_Edmonton_%284742626003%29.jpg",
+   "alt": "Participants working on ideas at a Startup Weekend event in Edmonton",
+   "caption": "Founders testing ideas at a Startup Weekend event in Edmonton, Canada.",
+   "credit": "Photo: Mack Male / Wikimedia Commons, CC BY-SA 2.0",
+   "license": "CC BY-SA 2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Startup_Weekend_Edmonton_(4742626003).jpg"
+  },
+  {
+   "url": "https://live.staticflickr.com/7341/12810378783_5a8587d29c_b.jpg",
+   "alt": "Paul Graham, co-founder of Y Combinator, speaking",
+   "caption": "Paul Graham, whose 2012 essay argues the best ideas start from real problems.",
+   "credit": "Photo: JD Lasica / Openverse (Flickr), CC BY 2.0",
+   "license": "CC BY 2.0",
+   "source_page": "https://www.flickr.com/photos/36521958135@N01/12810378783"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pebble_Time_2_%2B_Quartz_watchface.jpg/1920px-Pebble_Time_2_%2B_Quartz_watchface.jpg",
+   "alt": "A Pebble Time 2 smartwatch showing a watch face",
+   "caption": "A Pebble smartwatch. Pebble founder Eric Migicovsky's YC talk gave five questions for user interviews.",
+   "credit": "Photo: Waldyrious / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Pebble_Time_2_%2B_Quartz_watchface.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Startup_Weekend_Recife_-_Recife_-_Pernambuco_-_Brasil.jpg/1920px-Startup_Weekend_Recife_-_Recife_-_Pernambuco_-_Brasil.jpg",
+   "alt": "Teams at a Startup Weekend event in Recife, Brazil",
+   "caption": "Teams at Startup Weekend Recife. Asking for a commitment is the hardest and most useful test.",
+   "credit": "Photo: Lailson Bandeira / Wikimedia Commons, CC BY 2.0",
+   "license": "CC BY 2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Startup_Weekend_Recife_-_Recife_-_Pernambuco_-_Brasil.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Day2_Indic_Wikimania_Hackathon_2022_01.jpg/1920px-Day2_Indic_Wikimania_Hackathon_2022_01.jpg",
+   "alt": "Developers working on laptops at a hackathon in Bengaluru",
+   "caption": "Developers at a 2022 hackathon in Bengaluru.",
+   "credit": "Photo: SSethi (WMF) / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Day2_Indic_Wikimania_Hackathon_2022_01.jpg"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.cbinsights.com/research/report/startup-failure-reasons-top/",
+   "publisher": "CB Insights",
+   "date": "2026-03-05",
+   "claim": "431 shutdowns since 2023; ran out of capital 70%; poor PMF 43%; bad timing 29%; unit economics 19%"
+  },
+  {
+   "url": "https://paulgraham.com/startupideas.html",
+   "publisher": "Paul Graham",
+   "date": "2012-11-01",
+   "claim": "Look for problems you have; made-up/sitcom ideas; well-shaped markets; Altair Basic and Facebook examples"
+  },
+  {
+   "url": "https://paulgraham.com/ds.html",
+   "publisher": "Paul Graham",
+   "date": "2013-07-01",
+   "claim": "Recruit users manually; Collison brothers set up Stripe on the spot"
+  },
+  {
+   "url": "https://www.ycombinator.com/blog/startup-school-week-1-recap-kevin-hale-and-eric-migicovsky/",
+   "publisher": "Y Combinator",
+   "date": "2019-09-04",
+   "claim": "Hale: popular, growing, urgent, expensive, mandatory, frequent; insight/unfair advantage. Migicovsky: five questions, three mistakes, three stages, start with yourself and one or two people"
+  },
+  {
+   "url": "https://ericmigi.com/blog/startup-school-how-to-talk-to-users",
+   "publisher": "Eric Migicovsky",
+   "date": "2019-07-25",
+   "claim": "2025 note: based on The Mom Test; rarely used it himself, built products he wanted"
+  },
+  {
+   "url": "https://www.momtestbook.com/",
+   "publisher": "Rob Fitzpatrick",
+   "date": "2026-10-08",
+   "claim": "Book description; Fitzpatrick is a YC alum (S07)"
+  },
+  {
+   "url": "https://www.unusual.vc/rob-fitzpatricks-mom-test/",
+   "publisher": "Unusual Ventures",
+   "date": "2024-10-31",
+   "claim": "Three rules; deflect compliments, anchor fluff, dig; commitment as time, reputation, cash"
+  },
+  {
+   "url": "https://buffer.com/resources/idea-to-paying-customers-in-7-weeks-how-we-did-it/",
+   "publisher": "Buffer",
+   "date": "2011-02-16",
+   "claim": "Two-page site, pricing page test, 500+ users, ~4% paid conversion"
+  },
+  {
+   "url": "https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/",
+   "publisher": "First Round Review",
+   "date": "2018-11-13",
+   "claim": "Sean Ellis 40% very disappointed benchmark from nearly 100 startups; segmenting"
+  },
+  {
+   "url": "https://www.indiascienceandtechnology.gov.in/funding-opportunities/startups/startup-india-seed-fund-scheme-sisfs",
+   "publisher": "India Science, Technology and Innovation portal",
+   "date": "2026-10-08",
+   "claim": "SISFS Rs 945 Cr outlay; up to Rs 20 lakh grant for PoC/prototype/trials; up to Rs 50 lakh debt-linked"
+  },
+  {
+   "url": "https://www.ycombinator.com/companies/razorpay",
+   "publisher": "Y Combinator",
+   "date": "2026-10-08",
+   "claim": "Razorpay founded 2014 by Harshil Mathur and Shashank Kumar after discovering poor state of online payments; application questions helped clarity"
+  }
+ ]
+}

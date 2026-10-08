@@ -1,0 +1,121 @@
+{
+ "type": "post",
+ "slug": "esops-indian-startups-explained",
+ "title": "ESOPs in Indian startups: vesting, tax and the 2026 rules explained",
+ "excerpt": "How startup ESOPs work in India: vesting and cliffs, tax at exercise and sale under the Income-tax Act 2025, the startup deferral, buybacks and what to ask.",
+ "category": "careers-salary",
+ "tags": [
+  "esop",
+  "stock options",
+  "startup jobs",
+  "income tax act 2025",
+  "esop tax",
+  "esop buyback",
+  "vesting"
+ ],
+ "content": "<p>An ESOP (employee stock option plan) gives you the right to buy shares in your employer at a fixed price after you have worked there long enough for the options to vest. In India you are typically taxed twice: once as salary when you exercise, on the gap between the share's fair market value and what you pay, and again as capital gains when you sell. Employees of a narrow group of certified startups can postpone the first tax bill.</p>\n\n<p>Two things changed this year. The Income-tax Act, 2025 replaced the 1961 Act from 1 April 2026, so every ESOP section number has moved, and the Finance Act, 2026, which received Presidential assent on 30 March 2026 (<a href=\"https://www.taxmann.com/post/blog/finance-act-receives-assent-of-the-president/\">Taxmann</a>), moved company share buybacks from dividend tax back to capital gains for tax year 2026-27 onwards. Here is how vesting, exercise, tax and liquidity work now, with a worked example and the questions to ask before you accept a grant. This is general information, not tax or legal advice; confirm your own position with a chartered accountant.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>Indian company law requires at least one year between grant and vesting; four years with a 12-month cliff is the common default.</li>\n<li>At exercise, fair market value minus your exercise price is a salary perquisite under section 17(1)(d) of the Income-tax Act, 2025, taxed at your slab rate.</li>\n<li>On sale, the fair market value at exercise becomes your cost; unlisted shares held over 24 months pay 12.5% long-term capital gains tax.</li>\n<li>Deferral of the exercise-stage tax applies only to \"eligible start-ups\" under section 140, which need an Inter-Ministerial Board certificate, not just DPIIT recognition.</li>\n<li>Most Indian startup ESOPs turn into cash only through a buyback or an IPO, so ask about both before you value a grant.</li>\n</ul>\n\n<h2>How an ESOP works: grant, vesting, exercise, sale</h2>\n<p>An ESOP passes through four stages, and each has its own rules:</p>\n<ol>\n<li><strong>Grant.</strong> The company gives you a number of options at an exercise (strike) price. Nothing is taxed.</li>\n<li><strong>Vesting.</strong> Options become yours to exercise over time. Rule 12(6)(a) of the Companies (Share Capital and Debentures) Rules, 2014 requires a minimum of one year between grant and vesting (<a href=\"https://ca2013.com/rule-12-companies-share-capital-and-debentures-rules-2014/\">Rule 12</a>).</li>\n<li><strong>Exercise.</strong> You pay the exercise price and receive shares. This is the first taxable event.</li>\n<li><strong>Sale.</strong> You sell the shares in a buyback, a secondary sale or after a listing. This is the second taxable event.</li>\n</ol>\n<p>Rule 12 also says options cannot be transferred, pledged or exercised by anyone else, and the company is free to set the exercise price in line with its accounting policies. If you resign or are terminated, unvested options lapse on that day, and vested options can be exercised within the period your scheme specifies (<a href=\"https://ca2013.com/rule-12-companies-share-capital-and-debentures-rules-2014/\">Rule 12(8)</a>). That exercise window after leaving is one of the most important numbers in your grant letter.</p>\n\n<h3>The cliff and the vesting schedule</h3>\n<p>The market default in India is four years with a 12-month cliff, then monthly or quarterly vesting, according to a 1 October 2026 guide by advisory firm <a href=\"https://treelife.in/legal/esop-vesting-schedule-for-startups/\">Treelife</a>. On a 4,800-option grant, 1,200 options vest at month 12 and 100 vest each month after that until month 48. Treelife notes the one-year minimum runs from the grant date, not your joining date, so a grant approved three months after you join first vests at month 15 of your service unless the scheme has a catch-up clause.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Tax at exercise: the perquisite</h2>\n<p>Under section 17(1)(d) of the Income-tax Act, 2025, the value of any specified security or sweat equity shares allotted by your current or former employer free or at a concessional rate is a perquisite, taxed as salary. Section 17 values it as the fair market value on the date you exercise, minus what you actually paid (<a href=\"https://egazette.gov.in/WriteReadData/2025/265620.pdf\">Income-tax Act, 2025</a>). Your employer deducts tax at source on it through payroll, even though you received shares, not cash.</p>\n<p>For an unlisted startup, the fair market value must come from a SEBI-registered Category I merchant banker. Treelife says the rule moved from Rule 3 of the 1962 Rules to Rule 15 of the Income-tax Rules, 2026 from 1 April 2026, and that the valuation can be as of the exercise date or an earlier date within 180 days (<a href=\"https://treelife.in/taxation/esop-taxation-in-india/\">Treelife</a>).</p>\n<p>The perquisite is added to your other salary and taxed at your slab rate. For tax year 2026-27 the top slab under the default regime is 30% on income above ₹24 lakh, plus a 4% health and education cess (<a href=\"https://www.indiabudget.gov.in/doc/memo.pdf\">Budget 2026 memorandum</a>). (₹1 lakh is ₹1,00,000; ₹1 crore is ₹1,00,00,000.) To see the effect on your monthly pay, run the numbers through our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a>.</p>\n\n<h2>Tax at sale: capital gains</h2>\n<p>When you sell, your cost of acquisition is the fair market value that was taxed as a perquisite, so you are not taxed twice on the same gain (<a href=\"https://egazette.gov.in/WriteReadData/2025/265620.pdf\">Income-tax Act, 2025</a>). The holding period starts at exercise, not grant.</p>\n<table>\n<thead><tr><th>Shares</th><th>Long-term after</th><th>Long-term rate</th><th>Short-term rate</th></tr></thead>\n<tbody>\n<tr><td>Unlisted (most startups)</td><td>24 months</td><td>12.5% (s.197)</td><td>Slab rate</td></tr>\n<tr><td>Listed, STT paid</td><td>12 months</td><td>12.5% above ₹1.25 lakh (s.198)</td><td>20% (s.196)</td></tr>\n</tbody>\n</table>\n<p>The holding periods come from section 2(101) of the Act and the rates from sections 196 to 198 (<a href=\"https://egazette.gov.in/WriteReadData/2025/265620.pdf\">Income-tax Act, 2025</a>). Surcharge and cess apply on top. If your employer is a foreign parent, as with many Indian subsidiaries of US companies, Treelife notes you must report foreign shares in Schedule FA of your return every year, whether or not you sold anything (<a href=\"https://treelife.in/taxation/esop-taxation-in-india/\">Treelife</a>).</p>\n\n<h3>A worked example</h3>\n<p>These numbers are illustrative. Say you hold 4,800 vested options with an exercise price of ₹10 and exercise when a merchant banker values the shares at ₹510.</p>\n<ul>\n<li><strong>Perquisite at exercise:</strong> (₹510 − ₹10) × 4,800 = ₹24,00,000, added to your salary. You also pay ₹48,000 to exercise.</li>\n<li><strong>Sale three years later at ₹900 in a buyback:</strong> gain = (₹900 − ₹510) × 4,800 = ₹18,72,000. Held over 24 months, it is long-term, so tax at 12.5% is ₹2,34,000 before surcharge and cess.</li>\n</ul>\n<p>The awkward part is the first bullet: in the 30% slab you owe roughly a third of ₹24 lakh in tax on shares you may not be able to sell for years. That is the problem the startup deferral was meant to solve.</p>\n\n<!-- xf-image-3 -->\n\n<h2>The startup deferral under the 2025 Act</h2>\n<p>The deferral was introduced by the Finance Act, 2020. Under the 1961 Act, employees of an eligible start-up paid exercise-stage tax within 14 days of the earliest of three events: 48 months from the end of the relevant assessment year, the sale of the shares, or leaving the employer (<a href=\"https://taxguru.in/income-tax/deferring-tds-tax-payment-income-pertaining-esop-start-ups.html\">TaxGuru</a>).</p>\n<p>The 2025 Act keeps the same three triggers but renumbers and rewords them. Section 289(3) makes the tax payable within 14 days of the earliest of: 60 months from the end of the relevant tax year, the date you sell, or the date you stop working for that employer. Section 392(3) tells the employer to deduct or pay tax on the same timetable, and section 391(2) links your own direct payment to it (<a href=\"https://egazette.gov.in/WriteReadData/2025/265620.pdf\">Income-tax Act, 2025</a>).</p>\n<p>Some commentators, Treelife among them, describe the change as a longer window, from 48 to 60 months (<a href=\"https://treelife.in/taxation/esop-taxation-in-india/\">Treelife</a>). Note the different starting points: the old clock ran from the end of the assessment year, which fell a year after the financial year, while the new clock runs from the end of the tax year itself. For most grants the deadline lands in roughly the same place. Ask your employer's payroll team which date it is using for your allotment.</p>\n\n<h3>Who qualifies</h3>\n<p>Only employees of an \"eligible start-up referred to in section 140\". Section 140 defines it as a company or LLP incorporated on or after 1 April 2016 and before 1 April 2030, with turnover not above ₹100 crore in the relevant year, holding a certificate of eligible business from the Inter-Ministerial Board of Certification (<a href=\"https://egazette.gov.in/WriteReadData/2025/265620.pdf\">Income-tax Act, 2025</a>). DPIIT recognition on its own is not enough. If your employer is not certified, the full tax falls due in the year you exercise.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Liquidity: buybacks, secondaries and IPOs</h2>\n<p>Options are worth money only when someone buys the shares. For most Indian startup employees that means a company buyback or, less often, a listing.</p>\n<p>Buybacks are real but uneven. According to <a href=\"https://inc42.com/?p=540159\">Inc42 data</a> published on 1 December 2025, 12 startups ran ESOP buybacks in 2025, letting more than 9,265 employees realise over ₹1,409 crore (about $158 million), while the total fell 7% from 2024. In 2026, BrowserStack announced a $125 million ESOP and share buyback on 12 January covering more than 500 current and former employees and early investors, its third such programme, bringing its cumulative buybacks to over $275 million (<a href=\"https://www.browserstack.com/press/browserstack-announces-125-million-esop-and-share-buyback-program-creating-wealth-for-over-500-employees\">BrowserStack</a>). Cashfree Payments announced a buyback for more than 400 employees, including 175 former staff, without disclosing its size (<a href=\"https://india.entrepreneur.com/news-and-trends/cashfree-payments-announces-esop-buyback-for-over-400/502067\">Entrepreneur India</a>).</p>\n<p>Tax depends on the structure. If you exercise and the company buys the shares back, the Finance Act, 2026 changed the rules from 1 April 2026: buyback proceeds are taxed as capital gains rather than as dividend, while promoters face an effective 30% rate and promoter companies 22% through an additional tax (<a href=\"https://www.indiabudget.gov.in/doc/memo.pdf\">Budget 2026 memorandum</a>). Some programmes instead pay cash for vested options without an exercise, which can be taxed differently, so ask for the tax treatment in writing before you tender.</p>\n\n<h2>Questions to ask before you accept a grant</h2>\n<ul>\n<li><strong>How many options, and out of how many fully diluted shares?</strong> A count without the total tells you nothing about your percentage.</li>\n<li><strong>What is the exercise price and the latest fair market value?</strong> The gap is your taxable perquisite at exercise.</li>\n<li><strong>What is the vesting schedule and is there a catch-up from my joining date?</strong></li>\n<li><strong>How long can I exercise vested options after I leave?</strong> A short window can force you to pay tax and the exercise price quickly or lose the options.</li>\n<li><strong>Is the company a section 140 eligible start-up with an Inter-Ministerial Board certificate?</strong> This decides whether you can defer tax.</li>\n<li><strong>Has the company run buybacks before, and at what price?</strong> Past liquidity is the best evidence of future liquidity.</li>\n<li><strong>Is there acceleration on an acquisition?</strong> Treelife notes acceleration is a scheme term, not a statutory right (<a href=\"https://treelife.in/legal/esop-vesting-schedule-for-startups/\">Treelife</a>).</li>\n</ul>\n<p>Treat options as a possible bonus, not as salary, and compare the cash component against similar roles on our <a href=\"/jobs/\">jobs board</a> before you trade pay for equity.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Why it matters</h2>\n<p>ESOPs are the main way Indian startups compete with large companies for talent, and the 2026 changes make the paperwork different, not the economics. The value of a grant still depends on three things you can ask about up front: your real percentage, how tax is timed against your ability to sell, and whether the company has a record of buying shares back.</p>\n\n<h2>FAQ</h2>\n<h3>When are ESOPs taxed in India?</h3>\n<p>Twice: as salary when you exercise, on fair market value minus exercise price, and as capital gains when you sell.</p>\n<h3>Is vesting taxable?</h3>\n<p>No. Vesting only gives you the right to exercise. Tax starts at exercise.</p>\n<h3>What is the ESOP section in the Income-tax Act, 2025?</h3>\n<p>The perquisite is in section 17(1)(d). The startup deferral sits in sections 289(3), 391(2) and 392(3), with eligibility in section 140.</p>\n<h3>What happens to my ESOPs if I resign?</h3>\n<p>Unvested options lapse on your last day under Rule 12. Vested options can be exercised within the period your scheme sets.</p>\n<h3>Does DPIIT recognition let me defer ESOP tax?</h3>\n<p>No. The employer must also hold an Inter-Ministerial Board certificate and meet the section 140 conditions.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Government of India (Gazette), \"<a href=\"https://egazette.gov.in/WriteReadData/2025/265620.pdf\">The Income-tax Act, 2025 (No. 30 of 2025)</a>\", 21 August 2025</li>\n<li>Ministry of Finance, \"<a href=\"https://www.indiabudget.gov.in/doc/memo.pdf\">Memorandum Explaining the Provisions in the Finance Bill, 2026</a>\", 1 February 2026</li>\n<li>Taxmann, \"<a href=\"https://www.taxmann.com/post/blog/finance-act-receives-assent-of-the-president/\">Finance Act 2026 Receives Assent of the President</a>\", 1 April 2026</li>\n<li>TaxGuru, \"<a href=\"https://taxguru.in/income-tax/deferring-tds-tax-payment-income-pertaining-esop-start-ups.html\">Deferring TDS or tax payment on income pertaining to ESOP of start-ups</a>\", 2 February 2020</li>\n<li>Treelife, \"<a href=\"https://treelife.in/taxation/esop-taxation-in-india/\">ESOP Taxation in India</a>\", 18 June 2026</li>\n<li>Treelife, \"<a href=\"https://treelife.in/legal/esop-vesting-schedule-for-startups/\">ESOP Vesting Schedule for Startups: Cliff, Structure, Timeline</a>\", 1 October 2026</li>\n<li>CA2013.com, \"<a href=\"https://ca2013.com/rule-12-companies-share-capital-and-debentures-rules-2014/\">Rule 12, Companies (Share Capital and Debentures) Rules, 2014</a>\", accessed 8 October 2026</li>\n<li>Inc42, \"<a href=\"https://inc42.com/?p=540159\">ESOP Buybacks: 9,000+ Startup Employees Made Over $158 Mn In 2025</a>\", 1 December 2025</li>\n<li>BrowserStack, \"<a href=\"https://www.browserstack.com/press/browserstack-announces-125-million-esop-and-share-buyback-program-creating-wealth-for-over-500-employees\">BrowserStack Announces $125 Million ESOP and Share Buyback Program</a>\", 12 January 2026</li>\n<li>Entrepreneur India, \"<a href=\"https://india.entrepreneur.com/news-and-trends/cashfree-payments-announces-esop-buyback-for-over-400/502067\">Cashfree Payments Announces ESOP Buyback for Over 400 Current and Former Employees</a>\", 21 January 2026</li>\n</ol>",
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Dalal_Street_sign.jpg",
+   "alt": "Street sign for Dalal Street in Mumbai's financial district",
+   "caption": "Dalal Street, Mumbai. A listing is one of the few routes by which startup ESOPs become cash.",
+   "credit": "Photo: Nick Gray / Wikimedia Commons, CC BY-SA 2.0",
+   "license": "CC BY-SA 2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Dalal_Street_sign.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Hourglasses.jpg/1920px-Hourglasses.jpg",
+   "alt": "Several hourglasses with running sand",
+   "caption": "Indian company law requires at least a year between an option grant and its vesting.",
+   "credit": "Photo: Aaaatu / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Hourglasses.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/North_Block%2C_New_Delhi.jpg",
+   "alt": "North Block, the government building in New Delhi that houses the Ministry of Finance",
+   "caption": "North Block, home of the Finance Ministry, which drafted the Income-tax Act, 2025.",
+   "credit": "Photo: KHAGESHK / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:North_Block,_New_Delhi.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Firestone_Tire_Rubber_signed_Harvey_Samuel_Firestone_1911.jpg/1920px-Firestone_Tire_Rubber_signed_Harvey_Samuel_Firestone_1911.jpg",
+   "alt": "An ornate 1911 share certificate of the Firestone Tire and Rubber Company",
+   "caption": "A 1911 share certificate. Exercising an option turns it into shares like these, now held in electronic form.",
+   "credit": "Photo: Julie Ceccaldi / Wikimedia Commons, CC0",
+   "license": "CC0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Firestone_Tire_Rubber_signed_Harvey_Samuel_Firestone_1911.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Coworkers_in_Bangalore_Coworking_Hub.JPG",
+   "alt": "People working on laptops at a coworking space in Bengaluru",
+   "caption": "A coworking space in Bengaluru. Early startup hires often trade some cash pay for options.",
+   "credit": "Photo: MonamiThakur / Wikimedia Commons, CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Coworkers_in_Bangalore_Coworking_Hub.JPG"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://egazette.gov.in/WriteReadData/2025/265620.pdf",
+   "publisher": "Government of India (Gazette)",
+   "date": "2025-08-21",
+   "claim": "s.17(1)(d) perquisite and valuation at exercise; cost = FMV; s.2(101) holding periods; ss.196-198 rates; s.289(3), 391(2), 392(3) deferral (60 months from end of tax year, sale, leaving); s.140 eligible start-up definition"
+  },
+  {
+   "url": "https://www.indiabudget.gov.in/doc/memo.pdf",
+   "publisher": "Ministry of Finance",
+   "date": "2026-02-01",
+   "claim": "Buyback consideration taxed as capital gains from 1 April 2026; promoters 30%, promoter companies 22%; 30% top slab above Rs 24 lakh; 4% cess"
+  },
+  {
+   "url": "https://www.taxmann.com/post/blog/finance-act-receives-assent-of-the-president/",
+   "publisher": "Taxmann",
+   "date": "2026-04-01",
+   "claim": "Finance Act 2026 (No. 4 of 2026) assent 30 March 2026"
+  },
+  {
+   "url": "https://taxguru.in/income-tax/deferring-tds-tax-payment-income-pertaining-esop-start-ups.html",
+   "publisher": "TaxGuru",
+   "date": "2020-02-02",
+   "claim": "1961 Act deferral via Finance Act 2020: 48 months from end of AY, sale, or leaving; 80-IAC eligibility"
+  },
+  {
+   "url": "https://treelife.in/taxation/esop-taxation-in-india/",
+   "publisher": "Treelife",
+   "date": "2026-06-18",
+   "claim": "Category I merchant banker FMV; Rule 15 of IT Rules 2026; 180-day validity; Schedule FA; describes 48 to 60 month change"
+  },
+  {
+   "url": "https://treelife.in/legal/esop-vesting-schedule-for-startups/",
+   "publisher": "Treelife",
+   "date": "2026-10-01",
+   "claim": "Four years with 12-month cliff as market default; 4,800-option example; cliff runs from grant date; acceleration is a scheme term"
+  },
+  {
+   "url": "https://ca2013.com/rule-12-companies-share-capital-and-debentures-rules-2014/",
+   "publisher": "CA2013.com",
+   "date": "2026-10-08",
+   "claim": "Rule 12: one-year minimum grant-to-vest; non-transferable; exercise price freedom; unvested lapse on resignation; vested exercisable within scheme period"
+  },
+  {
+   "url": "https://inc42.com/?p=540159",
+   "publisher": "Inc42",
+   "date": "2025-12-01",
+   "claim": "12 startups, 9,265+ employees, Rs 1,409 Cr ($158 Mn) in 2025 buybacks; down 7% YoY"
+  },
+  {
+   "url": "https://www.browserstack.com/press/browserstack-announces-125-million-esop-and-share-buyback-program-creating-wealth-for-over-500-employees",
+   "publisher": "BrowserStack",
+   "date": "2026-01-12",
+   "claim": "$125M ESOP and share buyback; 500+ employees; third buyback; $275M+ cumulative"
+  },
+  {
+   "url": "https://india.entrepreneur.com/news-and-trends/cashfree-payments-announces-esop-buyback-for-over-400/502067",
+   "publisher": "Entrepreneur India",
+   "date": "2026-01-21",
+   "claim": "Cashfree buyback for 400+ employees including 175 former staff; size undisclosed"
+  }
+ ]
+}
