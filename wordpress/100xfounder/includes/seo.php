@@ -128,7 +128,7 @@ function xf_brand_photo($slot) {
     if (!isset($credits[$slot])) {
         return null;
     }
-    return array_merge($credits[$slot], ['url' => xf_brand_asset('photo-' . $slot . '.jpg')]);
+    return array_merge($credits[$slot], ['slot' => $slot, 'url' => xf_brand_asset('photo-' . $slot . '.jpg')]);
 }
 
 /** The photo plus its credit line, as the theme renders it inside a .ph frame. */
@@ -137,9 +137,11 @@ function xf_brand_photo_html($slot, $ratio = '16x10', $eager = false) {
     if (!$p) {
         return '';
     }
+    $small = function_exists('xf_brand_resized_url') ? xf_brand_resized_url('photo-' . (isset($p['slot']) ? $p['slot'] : $slot) . '.jpg', 800) : '';
+    $srcset = $small ? sprintf(' srcset="%s 800w, %s 1600w" sizes="(max-width: 860px) 100vw, 640px"', esc_url($small), esc_url($p['url'])) : '';
     return sprintf(
-        '<span class="ph ph-%s"><img src="%s" alt="%s" width="1600" height="1000" loading="%s"%s><span class="ph-credit"><a href="%s" rel="nofollow noopener" target="_blank">%s</a></span></span>',
-        esc_attr($ratio), esc_url($p['url']), esc_attr($p['alt']), $eager ? 'eager' : 'lazy',
+        '<span class="ph ph-%s"><img src="%s"%s alt="%s" width="1600" height="1000" loading="%s" decoding="async"%s><span class="ph-credit"><a href="%s" rel="nofollow noopener" target="_blank">%s</a></span></span>',
+        esc_attr($ratio), esc_url($p['url']), $srcset, esc_attr($p['alt']), $eager ? 'eager' : 'lazy',
         $eager ? ' fetchpriority="high"' : '', esc_url($p['source_page']), esc_html($p['credit'])
     );
 }
@@ -222,7 +224,9 @@ add_action('wp_head', function () {
     if (!$id || is_user_logged_in()) {
         return;
     }
-    printf("<script async src=\"https://www.googletagmanager.com/gtag/js?id=%1\$s\"></script>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','%1\$s');</script>\n", esc_attr($id));
+    // gtag queues events until the library arrives, so nothing is lost. The ~530 KB library loads
+    // on the first scroll/tap/key or after 4 seconds, so it doesn't slow the first paint on phones.
+    printf("<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','%1\$s');(function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=%1\$s';document.head.appendChild(s);}['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,l,{once:true,passive:true});});addEventListener('load',function(){setTimeout(l,4000);});})();</script>\n", esc_attr($id));
 }, 3);
 
 function xf_json_ld(array $data) {
@@ -434,7 +438,7 @@ function xf_landing_urls() {
         foreach (XF_JOB_CITIES as $c) $combos[] = ['function' => '', 'city' => $c];
         foreach ($combos as $c) {
             $q = new WP_Query(array_merge(xf_job_query_args(array_merge($base, $c), 1, 1), ['fields' => 'ids']));
-            if ($q->found_posts < 5) continue; // Same threshold as the page's noindex rule.
+            if ($q->found_posts < 1) continue;
             $slug = $c['function'] && $c['city'] ? sanitize_title($c['function']) . '-jobs-in-' . sanitize_title($c['city'])
                 : ($c['function'] ? sanitize_title($c['function']) . '-jobs' : 'jobs-in-' . sanitize_title($c['city']));
             $urls[] = home_url('/jobs/' . $slug . '/');

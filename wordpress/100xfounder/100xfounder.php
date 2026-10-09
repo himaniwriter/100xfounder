@@ -52,6 +52,8 @@ require_once XF_DIR . 'includes/guides.php';
 require_once XF_DIR . 'includes/mcp.php';
 require_once XF_DIR . 'includes/schema-pages.php';
 require_once XF_DIR . 'includes/security.php';
+require_once XF_DIR . 'includes/indexing.php';
+require_once XF_DIR . 'includes/perf.php';
 
 if (is_admin()) {
     require_once XF_DIR . 'includes/admin.php';
