@@ -47,7 +47,8 @@ The owner's seven content pillars (from `CLAUDE.md`):
 ```
 CLAUDE.md                          Owner rules and decisions. Always read first.
 HANDOFF.md                         This file
-.mcp.json                          Claude Code → site MCP server (reads $XF_MCP_AUTH)
+.mcp.json                          Claude Code → site MCP server (reads $XF_MCP_TOKEN)
+wordpress/xf-claude-connector/     Private Claude MCP connector plugin (token-only, see docs/MCP.md)
 .claude/skills/write-news/         /write-news skill + xf.sh REST helper
 .claude/skills/write-apply-guide/  /write-apply-guide skill
 docs/PRD.md                        Full plan v0.3, phases A–E, status line in §6
@@ -122,7 +123,7 @@ wordpress/local/                   Local WordPress + SQLite runner (run-local.sh
   - **Tools:** site_overview, list_queue, add_to_queue, skip_queue_item, list_categories, recent_posts, search_content, get_post, create_draft, update_draft, set_featured_image, review_checklist, list_launches, list_jobs, list_companies, run_routine (admin), submit_all_for_indexing (admin).
   - **publish_post** only appears when Settings → Claude (MCP) → "Allow publishing through MCP" is on. It refuses posts without sources.
   - **Testing:** tested locally with `@modelcontextprotocol/sdk` 1.32. Live, it was only checked to return 401 without auth.
-- **Not done yet (owner):** create a WordPress user `claude` (Author), give it an Application Password, and export `XF_MCP_AUTH=$(printf 'claude:<app-password>' | base64)`. Steps are in `docs/MCP.md`.
+- **Not done yet (owner):** install `wordpress/dist/xf-claude-connector.zip`, create the `claude` user (Author), create a token in Settings → Claude connector, and set `XF_MCP_TOKEN` in the Claude environment. Steps are in `docs/MCP.md`. (The old `XF_MCP_AUTH` app-password method no longer applies.)
 - **Skills:**
   - `/write-news` and `/write-apply-guide` research and write drafts. They use the MCP tools when connected, and otherwise `xf.sh` with `XF_SITE_URL`, `XF_WP_USER` and `XF_WP_APP_PASSWORD`.
   - Drafts always land as **Pending review**.
