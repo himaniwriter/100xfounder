@@ -181,13 +181,13 @@ function xf_import_events() {
                 'post_type' => 'xf_event',
                 'post_status' => 'pending',
                 'post_title' => wp_strip_all_tags($e['SUMMARY']),
-                'post_excerpt' => wp_trim_words(wp_strip_all_tags($e['DESCRIPTION'] ?? ''), 40),
-                'post_content' => wpautop(esc_html(wp_trim_words(wp_strip_all_tags($e['DESCRIPTION'] ?? ''), 160))),
+                'post_excerpt' => wp_trim_words(xf_event_clean_text($e['DESCRIPTION'] ?? ''), 40),
+                'post_content' => wpautop(esc_html(wp_trim_words(xf_event_clean_text($e['DESCRIPTION'] ?? ''), 160))),
                 'meta_input' => [
                     '_xf_uid' => $uid,
                     '_xf_start' => $e['DTSTART'],
                     '_xf_end' => $e['DTEND'] ?? '',
-                    '_xf_venue' => mb_substr($location, 0, 200),
+                    '_xf_venue' => xf_event_clean_venue($location),
                     '_xf_city' => $bucket,
                     '_xf_url' => esc_url_raw($url),
                     '_xf_organizer' => sanitize_text_field($e['ORGANIZER'] ?? ''),
@@ -232,3 +232,51 @@ add_filter('the_content', function ($content) {
     $cta = $url ? '<p class="xf-actions"><a class="xf-button" href="' . esc_url($url) . '" target="_blank" rel="noopener">Register on the organiser\'s page</a></p>' : '';
     return $head . $content . $cta;
 });
+
+/* -------------------------------------------------------------------------
+ * Calendar feeds (Luma especially) put a link where the venue should be and
+ * pad descriptions with "Get up-to-date information at: <url>" and
+ * "Address: Check event page for more details." Clean both on import, and
+ * once for events already imported.
+ * ---------------------------------------------------------------------- */
+
+/** The venue, or '' when the feed only gave a link (the page then shows the city). */
+function xf_event_clean_venue($location) {
+    $v = trim(preg_replace('#https?://\S+#i', '', (string) $location), " \t\n\r\0\x0B,·-");
+    if ($v === '' || preg_match('#^(www\.|[a-z0-9.-]+\.(com|io|co|in|org|net)/)#i', $v) || preg_match('#^(online|tbd|tba|see event page)$#i', $v)) {
+        return '';
+    }
+    return mb_substr($v, 0, 160);
+}
+
+/** Description text without the feed's boilerplate lines and bare links. */
+function xf_event_clean_text($text) {
+    $t = wp_strip_all_tags((string) $text);
+    $t = preg_replace('#Get up-to-date information at:?\s*\S*#i', '', $t);
+    $t = preg_replace('#Address:?\s*Check (the )?event page for more details\.?#i', '', $t);
+    $t = preg_replace('#\b(Register|RSVP|Tickets?|Link|Sign ?up|Apply)( here)?\s*:?\s*https?://\S+#i', '', $t);
+    $t = preg_replace('#https?://\S+#i', '', $t);
+    $t = preg_replace('#\s{2,}#', ' ', $t);
+    return trim($t, " \t\n\r\0\x0B.-:");
+}
+
+add_action('admin_init', 'xf_event_cleanup_once');
+add_action('xf_daily_growth', 'xf_event_cleanup_once');
+function xf_event_cleanup_once() {
+    if (get_option('xf_event_cleanup') === '1') {
+        return;
+    }
+    foreach (get_posts(['post_type' => 'xf_event', 'post_status' => 'any', 'posts_per_page' => -1]) as $p) {
+        $venue = (string) get_post_meta($p->ID, '_xf_venue', true);
+        $clean = xf_event_clean_venue($venue);
+        if ($clean !== $venue) {
+            update_post_meta($p->ID, '_xf_venue', $clean);
+        }
+        $ex = xf_event_clean_text($p->post_excerpt);
+        $body = xf_event_clean_text($p->post_content);
+        if ($ex !== $p->post_excerpt || $body !== trim(wp_strip_all_tags($p->post_content))) {
+            wp_update_post(['ID' => $p->ID, 'post_excerpt' => $ex, 'post_content' => wpautop(esc_html($body))]);
+        }
+    }
+    update_option('xf_event_cleanup', '1', false);
+}

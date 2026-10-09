@@ -22,7 +22,9 @@ add_action('wp_enqueue_scripts', function () {
         . '.rv{animation:none!important;opacity:1!important;transform:none!important}'
         . '.mq,.strip-track{will-change:transform}'
         . 'body{background-image:none!important}'
-        . '}';
+        . '}'
+        // Home "Today in" cards: at 2 columns the 5th card sat alone; let the last odd card fill the row.
+        . '@media (max-width:540px){.pillars>.pc:last-child:nth-child(odd){grid-column:1/-1}}';
     foreach (['xft', 'xf-style'] as $handle) {
         if (wp_style_is($handle, 'enqueued')) {
             wp_add_inline_style($handle, $css);
