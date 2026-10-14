@@ -69,6 +69,8 @@ if (is_readable(XF_DIR . 'includes/schema-pages.php')) { require_once XF_DIR . '
 if (is_readable(XF_DIR . 'includes/internal-links.php')) { require_once XF_DIR . 'includes/internal-links.php'; }
 if (is_readable(XF_DIR . 'includes/breadcrumbs.php')) { require_once XF_DIR . 'includes/breadcrumbs.php'; }
 if (is_readable(XF_DIR . 'includes/ai-content.php')) { require_once XF_DIR . 'includes/ai-content.php'; }
+if (is_readable(XF_DIR . 'includes/indexing.php')) { require_once XF_DIR . 'includes/indexing.php'; }
+if (is_readable(XF_DIR . 'includes/perf.php')) { require_once XF_DIR . 'includes/perf.php'; }
 
 if (is_admin()) {
     if (is_readable(XF_DIR . 'includes/admin.php')) { require_once XF_DIR . 'includes/admin.php'; }

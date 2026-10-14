@@ -78,6 +78,38 @@ add_filter('wp_headers', function ($headers) {
     return $headers;
 });
 
+// Refuse XML-RPC requests outright: its system.* methods still answer when "disabled".
+add_action('plugins_loaded', function () {
+    if (defined('XMLRPC_REQUEST') && XMLRPC_REQUEST && xf_security_on('disable_xmlrpc')) {
+        status_header(403);
+        exit;
+    }
+}, 0);
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+
+/* Block files that only reveal the WordPress version, plus xmlrpc.php, at the web server. */
+add_filter('mod_rewrite_rules', function ($rules) {
+    if (!xf_security_on('htaccess')) {
+        return $rules;
+    }
+    $block = "\n# 100xFounder: hide version files and XML-RPC\n"
+        . "RewriteRule ^(readme\\.html|license\\.txt|wp-config-sample\\.php|xmlrpc\\.php)$ - [F,L]\n";
+    return str_replace("RewriteBase /\n", "RewriteBase /" . $block, $rules);
+});
+
+/** Rewrites .htaccess once per hardening version (WordPress only writes it from wp-admin). */
+add_action('admin_init', function () {
+    $version = '1';
+    if (get_option('xf_htaccess_version') === $version || !current_user_can('manage_options')) {
+        return;
+    }
+    require_once ABSPATH . 'wp-admin/includes/file.php';
+    require_once ABSPATH . 'wp-admin/includes/misc.php';
+    flush_rewrite_rules(true);
+    update_option('xf_htaccess_version', $version, false);
+});
+
 /* -------------------------------------------------------------------------
  * User enumeration
  *
@@ -101,6 +133,25 @@ add_filter('rest_endpoints', function ($endpoints) {
     }
     unset($endpoints['/wp/v2/users'], $endpoints['/wp/v2/users/(?P<id>[\d]+)']);
     return $endpoints;
+});
+
+/* Administrator login names stay out of public URLs: their author links and archives go to About. */
+function xf_is_admin_user($user_id) {
+    return user_can((int) $user_id, 'manage_options');
+}
+
+add_filter('author_link', function ($link, $author_id) {
+    if (!xf_security_on('no_enumeration') || !xf_is_admin_user($author_id)) {
+        return $link;
+    }
+    return (function_exists('xf_page_url') ? xf_page_url('about') : '') ?: home_url('/');
+}, 10, 2);
+
+add_action('template_redirect', function () {
+    if (xf_security_on('no_enumeration') && is_author() && xf_is_admin_user(get_queried_object_id())) {
+        wp_safe_redirect((function_exists('xf_page_url') ? xf_page_url('about') : '') ?: home_url('/'), 301);
+        exit;
+    }
 });
 
 // The generator tag names the exact WordPress version.
@@ -237,20 +288,11 @@ function xf_mutex_release($name) {
     $wpdb->delete($wpdb->options, ['option_name' => 'xf_mutex_' . $name]);
 }
 
-add_filter('authenticate', function ($user, $username) {
-    if (!xf_security_on('login_throttle') || $username === '') {
-        return $user;
-    }
-    if (get_transient(xf_login_key('xf_lb_'))) {
-        return new WP_Error(
-            'xf_locked',
-            __('Too many failed sign-in attempts. Please wait twenty minutes and try again.', '100xfounder')
-        );
-    }
-    return $user;
-}, 20, 2);
+function xf_login_locked() {
+    return xf_security_on('login_throttle') && (bool) get_transient(xf_login_key('xf_lb_'));
+}
 
-add_action('wp_login_failed', function () {
+function xf_login_record_failure() {
     if (!xf_security_on('login_throttle')) {
         return;
     }
@@ -261,7 +303,29 @@ add_action('wp_login_failed', function () {
         set_transient(xf_login_key('xf_lb_'), 1, XF_LOGIN_LOCKOUT);
         delete_transient($key);
     }
+}
+
+function xf_login_locked_message() {
+    return __('Too many failed sign-in attempts. Please wait twenty minutes and try again.', '100xfounder');
+}
+
+// Runs last: WordPress's own password check (priority 20) replaces an earlier WP_Error.
+add_filter('authenticate', function ($user, $username) {
+    if ($username === '' || !xf_login_locked()) {
+        return $user;
+    }
+    return new WP_Error('xf_locked', xf_login_locked_message());
+}, 999, 2);
+
+add_action('wp_login_failed', 'xf_login_record_failure');
+
+// Application passwords (REST API, the xf/v1 skill endpoints and the MCP server) share the same count.
+add_action('wp_authenticate_application_password_errors', function (WP_Error $error) {
+    if (xf_login_locked()) {
+        $error->add('xf_locked', xf_login_locked_message());
+    }
 });
+add_action('application_password_failed_authentication', 'xf_login_record_failure');
 
 add_action('wp_login', function () {
     delete_transient(xf_login_key());

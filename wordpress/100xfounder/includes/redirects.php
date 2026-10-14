@@ -154,6 +154,9 @@ function xf_legacy_route(array $p) {
         case 'startup-salary-equity-database':
             return [301, home_url('/tools/')];
 
+        case 'careers':
+            return [301, home_url('/jobs/')];
+
         // Whole sections with nothing equivalent here.
         case 'countries':
         case 'stages':

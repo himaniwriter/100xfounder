@@ -272,9 +272,6 @@ add_filter('wp_robots', function ($robots) {
 
 /** Keep thin startup listings out of the core XML sitemap too. */
 add_filter('wp_sitemaps_posts_query_args', function ($args, $post_type) {
-    if ($post_type === 'xf_startup') {
-        $args['meta_query'] = [['key' => '_xf_indexable', 'value' => '1']];
-    }
     // The private feature and unsubscribe pages are noindexed, so keep them out of the sitemap.
     if ($post_type === 'page') {
         $pages = get_option('xf_pages', []);
