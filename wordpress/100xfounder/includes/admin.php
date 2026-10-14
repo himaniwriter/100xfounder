@@ -170,6 +170,7 @@ function xf_admin_dashboard() {
             </table>
         </div>
 
+        <?php if (function_exists('xf_ig_admin_card')) : xf_ig_admin_card(); else : ?>
         <div class="card" style="max-width:none">
             <h2>Instagram queue</h2>
             <p>Download the slides, copy the caption, post on Instagram, then mark it posted.</p>
@@ -190,6 +191,7 @@ function xf_admin_dashboard() {
             <?php endforeach; ?>
             <?php if (!$queue) : ?><p>Nothing queued yet.</p><?php endif; ?>
         </div>
+        <?php endif; ?>
     </div>
     <?php
 }
@@ -222,6 +224,17 @@ function xf_settings_fields() {
         'Spotlights & Instagram' => [
             'auto_publish' => ['Auto-publish spotlights', 'checkbox', 'Otherwise each submission waits for your review under Founder Spotlights → Pending.'],
             'instagram_handle' => ['Instagram handle', 'text', 'Without the @.'],
+        ],
+        'Founders community popup' => [
+            'popup_enabled' => ['Show the signup popup', 'checkbox', 'Asks readers for an email and an optional WhatsApp number, only after they have scrolled and stayed a while, never on forms or legal pages. While logged in, add ?xf_popup=1 to any address to preview it.'],
+            'founders_community_url' => ['Founders community invite link', 'text', 'The WhatsApp (or Telegram) link people get after joining, e.g. https://chat.whatsapp.com/… Leave empty until the community is open: the popup then promises an invite instead of a link.'],
+            'leads_sheet_url' => ['Google Sheet for form leads', 'text', 'The Web app URL of the Apps Script in your leads sheet (https://script.google.com/macros/s/…/exec). Every lead from an unlock form is also added there as a row. Leave empty to keep leads only in WordPress.'],
+        ],
+        'Reader reviews' => [
+            'review_auto_approve' => ['Auto-approve reader reviews after 10 minutes if I haven\'t moderated them', 'checkbox', 'Only reviews that pass every safeguard (written text of 20+ characters, no links, emails or phone numbers, no shouting or repeated characters, no throwaway email address, no copied text, not from the product\'s own email domain, at most 3 per product from one network in 24 hours). The rest wait under 100xFounder → Reviews marked "needs manual review". Untick to approve every review yourself.'],
+        ],
+        'Launch submissions' => [
+            'launch_auto_approve' => ['Auto-approve launch submissions after 10 minutes if I haven\'t reviewed them', 'checkbox', 'Only new launches that pass every check: the website answers over https, the domain is not already listed, no shortener, adult or gambling terms, no disposable email. Claims of existing listings always wait for you. Auto-approved listings are marked in 100xFounder → Launches and Startups, so you can still unpublish them.'],
         ],
         'Events' => [
             'event_feeds' => ['Public event calendars (ICS)', 'textarea', 'One iCal/ICS URL per line, e.g. a Luma calendar or a Meetup group feed. New events are imported daily as Pending for your review.'],

@@ -156,10 +156,13 @@ function xf_load_square_image($source, $size) {
         if (strpos((string) wp_parse_url($url, PHP_URL_HOST), 'imgix.net') !== false) {
             $url = add_query_arg(['fm' => 'png', 'w' => $size, 'h' => $size, 'fit' => 'crop'], $url);
         }
-        $response = wp_remote_get($url, ['timeout' => 10]);
-        $data = is_wp_error($response) ? false : wp_remote_retrieve_body($response);
+        // Third-party image URL, fetched on a public endpoint: no private or loopback hosts.
+        $response = function_exists('xf_public_remote_get') ? xf_public_remote_get($url, ['timeout' => 10, 'limit_response_size' => 8000000]) : null;
+        $data = !$response || is_wp_error($response) || (int) wp_remote_retrieve_response_code($response) !== 200 ? false : wp_remote_retrieve_body($response);
     }
-    $src = $data ? @imagecreatefromstring($data) : false;
+    $info = $data ? @getimagesizefromstring($data) : false;
+    // Cap the decoded size (25 MP): a small file can declare enough pixels to exhaust memory.
+    $src = $info && $info[0] > 0 && $info[1] > 0 && $info[0] * $info[1] <= 25000000 ? @imagecreatefromstring($data) : false;
     if (!$src) {
         return null;
     }
@@ -282,6 +285,18 @@ function xf_render_spotlight_slide($spotlight_id, $n) {
     return $img;
 }
 
+/** GD image for slide $n of a queue row, whatever its kind. */
+function xf_ig_item_image($item, $n) {
+    $payload = json_decode($item->payload, true) ?: [];
+    if ($item->kind === 'daily_digest') {
+        return xf_render_digest_slide($payload, $n);
+    }
+    if ($item->kind === 'spotlight') {
+        return xf_render_spotlight_slide((int) ($payload['spotlight'] ?? 0), $n);
+    }
+    return function_exists('xf_ig_render_slide') ? xf_ig_render_slide($item->kind, $payload, $n) : null;
+}
+
 /** Public PNG endpoint for queue items: /wp-json/xf/v1/slide?item=ID&n=0 */
 add_action('rest_api_init', function () {
     register_rest_route('xf/v1', '/slide', [
@@ -293,32 +308,52 @@ add_action('rest_api_init', function () {
         ],
         'callback' => function (WP_REST_Request $request) {
             global $wpdb;
+            $n = max(0, (int) $request['n']);
+            // Only URLs this site handed out (signed): queue items are internal until posted, and each render costs real CPU.
+            if (!hash_equals(xf_slide_sig((int) $request['item'], $n), (string) $request['sig'])) {
+                return new WP_Error('forbidden', 'Not allowed', ['status' => 403]);
+            }
             $item = $wpdb->get_row($wpdb->prepare('SELECT * FROM ' . xf_table('ig_queue') . ' WHERE id = %d', (int) $request['item']));
-            if (!$item) {
+            if (!$item || $n >= max(1, (int) $item->slide_count)) {
                 return new WP_Error('not_found', 'Not found', ['status' => 404]);
             }
-            $payload = json_decode($item->payload, true) ?: [];
-            $n = max(0, (int) $request['n']);
-            $img = $item->kind === 'daily_digest'
-                ? xf_render_digest_slide($payload, $n)
-                : xf_render_spotlight_slide((int) ($payload['spotlight'] ?? 0), $n);
-            if (!$img) {
+            // Rendered once per version of the item, then served from disk.
+            $dir = trailingslashit(wp_upload_dir()['basedir']) . 'xf-ig-cache/';
+            $file = $dir . 'slide-' . (int) $item->id . '-' . $n . '-' . md5($item->payload . '|' . $item->updated_at . '|' . XF_VERSION . '|' . wp_salt('nonce')) . '.png';
+            if (!is_readable($file)) {
+                if (xf_rate_limited('ig_slide', 120, HOUR_IN_SECONDS)) {
+                    return new WP_Error('rate_limited', 'Too many requests', ['status' => 429]);
+                }
+                $img = xf_ig_item_image($item, $n);
+                if (!$img) {
+                    return new WP_Error('not_found', 'Not found', ['status' => 404]);
+                }
+                wp_mkdir_p($dir);
+                imagepng($img, $file);
+                imagedestroy($img);
+            }
+            if (!is_readable($file)) {
                 return new WP_Error('not_found', 'Not found', ['status' => 404]);
             }
             header('Content-Type: image/png');
             header('Cache-Control: public, max-age=3600');
+            header('Content-Length: ' . filesize($file));
             if (!empty($request['download'])) {
                 header('Content-Disposition: attachment; filename="100xfounder-' . (int) $item->id . '-' . ($n + 1) . '.png"');
             }
-            imagepng($img);
-            imagedestroy($img);
+            readfile($file);
             exit;
         },
     ]);
 });
 
+/** HMAC that makes a slide URL valid; the route rejects any other item/slide pair. */
+function xf_slide_sig($item_id, $n) {
+    return substr(hash_hmac('sha256', 'slide|' . (int) $item_id . '|' . (int) $n, wp_salt('auth')), 0, 20);
+}
+
 function xf_slide_url($item_id, $n, $download = false) {
-    $args = ['item' => $item_id, 'n' => $n];
+    $args = ['item' => (int) $item_id, 'n' => (int) $n, 'sig' => xf_slide_sig($item_id, $n)];
     if ($download) {
         $args['download'] = 1;
     }

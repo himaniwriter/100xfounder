@@ -1,0 +1,404 @@
+{
+ "input": "https://www.producthunt.com/posts/velozity-3",
+ "final_url": "https://www.producthunt.com/products/velozity-2?launch=velozity-3",
+ "launch": {
+  "slug": "velozity-3",
+  "name": "Velozity",
+  "tagline": "The Multiplayer AI Office where your team and agents work",
+  "featuredAt": "2026-10-07T00:01:00-07:00",
+  "dailyRank": "3",
+  "weeklyRank": "6",
+  "points": 450,
+  "commentsCount": 120,
+  "pricingType": "free_options",
+  "description": "Your team chats in one app, meets in another, and every AI works alone. Velozity brings it all into one place.\n\nChat, audio and video calls with transcripts, tasks, calendar and files, plus AI agents (Claude, Codex, etc.) on the subscriptions you already pay for. Every agent shares the same context, so work moves between people and agents without having to re-explain.\n\nFor startups, teams in dev, product, sales, and ops, or solo users juggling several AIs.\n\nNo second AI bill. Free to start.",
+  "makers": [
+   {
+    "name": "Ishu Darshan",
+    "username": "ishudarshan",
+    "headline": "ceo@velozity"
+   },
+   {
+    "name": "Akash Mandal",
+    "username": "see_akash",
+    "headline": "CTO @Velozity | Building the AI Office"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "1811e4d6-ba28-4db4-be6c-f7f345848b4b.jpeg",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "4414224c-0f35-4b92-b6fd-0819dae8c650.jpeg",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "b098c6ea-87c3-41e0-820b-bc0656478ad6.jpeg",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "a75e6de1-ac08-461e-a9ed-d9be12e6b9f2.jpeg",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "9b5a2fcf-8eea-49f0-8300-6a7e98cdbc4c.jpeg",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "8230039f-6980-4e8b-8e50-7147f6342b76.jpeg",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "17de7fc1-7441-4921-8e3e-77a08e9b6dbe.jpeg",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "44a054bd-0c22-4ebb-8f4f-2944db07e956.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=vmpfglkcDUI"
+   }
+  ],
+  "links": [
+   "getvelozity.com",
+   "x.com",
+   "play.google.com",
+   "apps.apple.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    3
+   ]
+  ]
+ },
+ "product": {
+  "name": "Velozity",
+  "slug": "velozity-2",
+  "tagline": "The Multiplayer AI Office where your team and agents work",
+  "description": "Your team chats in one app, meets in another, and every AI works alone. Velozity brings it all into one place. Chat, audio and video calls with transcripts, tasks, calendar and files, plus AI agents (Claude, Codex, etc.) on the subscriptions you already pay for. Every agent shares the same context, so work moves between people and agents without having to re-explain. For startups, teams in dev, product, sales, and ops, or solo users juggling several AIs. No second AI bill. Free to start.",
+  "websiteUrl": "https://getvelozity.com/",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 1218,
+  "twitterUrl": "https://x.com/velozitylabs",
+  "iosUrl": "https://www.producthunt.com/r/2HB5YJQPPBIIZY",
+  "androidUrl": "https://www.producthunt.com/r/YZ46QCQEQDUWE2",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5890923",
+   "depth": 0,
+   "author": "Ishu Darshan",
+   "username": "ishudarshan",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 I'm Darshan, co-founder of Velozity. AI is single-player. Real work is multiplayer. Everyone on our team was paying for their own AI, and everyone was using it alone. You prompt, copy the answer into chat, explain it to a teammate, get feedback, then prompt again. The AI got faster, but the team didn't. So we built Velozity, one shared office for your people and their AI agents: 🧑‍🤝‍🧑 Live presence. See who's in, knock on a cabin and talk. No links, no invites. 🤖 An agent for every teammate. Agents read the same mail, files and calls your team does, work inside your apps and carry a job through to the end. 💳 Bring your own AI. Agents run on the AI subscription you already pay for. ✅ You stay in control. Nothing is sent, paid or signed without a person approving it. We run our own company inside Velozity every day. This launch was planned in it, by our team and our agents working in the same space. It's free to start, and it's far from finished. We'd love to hear where it breaks for your team, not only what looks nice. 👉 Try it here: getvelozity.com Open a free office, bring in an agent, and tell us what got in your way. Akash and I will be here all day answering "
+  },
+  {
+   "id": "5928151",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@ishudarshan &nbsp;Hey, congrats. Could you explain how the approval stage works?"
+  },
+  {
+   "id": "5928175",
+   "depth": 2,
+   "author": "Ishu Darshan",
+   "username": "ishudarshan",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@swati_paliwal &nbsp;Thanks, Swati! It works in three steps: The agent prepares the work, for example, an email or a message, and puts it in the space as a draft. Nothing has gone out yet. The person the agent is working for reads the draft. They can approve it, ask for changes, or reject it. Only after that person approves does it get sent. The rest of the team can see the draft too, so nothing happens behind anyone's back. And if the draft changes after approval, it needs to be approved again."
+  },
+  {
+   "id": "5929089",
+   "depth": 2,
+   "author": "Akash Mandal",
+   "username": "see_akash",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@swati_paliwal &nbsp; Thanks! The AI prepares the action, but before anything goes out, it’s sent to the right person for approval. They can review, edit, approve, or reject it - the AI only executes after approval."
+  },
+  {
+   "id": "5927868",
+   "depth": 1,
+   "author": "Hisashi Space",
+   "username": "hisashispace",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "@ishudarshan &nbsp;Love the \"AI is single-player, real work is multiplayer\" line. The approval part is what I'd look at first, honestly. In my own support, AI drafts the reply and I check it and send it myself, which is how everyone gets an answer within a day. So nothing leaving the Space without a person saying yes makes a lot of sense to me."
+  },
+  {
+   "id": "5927948",
+   "depth": 2,
+   "author": "Ishu Darshan",
+   "username": "ishudarshan",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hisashispace &nbsp;Thank you, Hisashi. You've described exactly the model we built around: the AI drafts, and a person decides what goes out. Your support workflow is a great example of why that works. People get fast answers, and nobody receives something a human hasn't read. In Velozity, the same rule applies to anything leaving the Space, so the speed never comes at the cost of trust. If you try it for your support replies, I'd love to hear how it compares with your current setup."
+  },
+  {
+   "id": "5929085",
+   "depth": 2,
+   "author": "Akash Mandal",
+   "username": "see_akash",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hisashispace &nbsp; Exactly, that’s what we’re building Velozity around: AI helps move work faster, while humans stay in control."
+  },
+  {
+   "id": "5927067",
+   "depth": 0,
+   "author": "Akash Mandal",
+   "username": "see_akash",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 ​ I'm Akash, CTO at Velozity. ​ Darshan covered the why. I want to share what it's actually like to work this way. ​ The biggest change for me is that I stopped repeating myself. Before, every AI chat started from zero: paste the context, explain the task, copy the answer back to the team. In Velozity the agent is already in the Space. It has seen the conversation, the files and the call, so I just tag it and it picks up from there. ​ A few things I'd try first: Tag an agent in a team conversation and watch it answer with the context everyone else has. Hand a task to an agent and let it carry the work through, then review what it brings back. Knock on a teammate's cabin and start talking. No links, no invites. ​ Nothing goes out without a person approving it, which is the reason I trust it with real work. ​ We use it every day, so we know where the rough edges are, and we want to hear about the ones you find. Tell us what breaks, what's confusing, and what you'd want an agent to do for your team. ​ I'll be here all day answering questions. 🙌"
+  },
+  {
+   "id": "5929671",
+   "depth": 0,
+   "author": "Jay Smith",
+   "username": "cloudalchemist",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Managing a lot of chat spaces is a pain so this has me intrigued. What chat tools does it work with?"
+  },
+  {
+   "id": "5929691",
+   "depth": 1,
+   "author": "Ishu Darshan",
+   "username": "ishudarshan",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@cloudalchemist &nbsp;Thanks, Jay! Small clarification: Velozity doesn't sit on top of other chat tools; it is the chat. Your team and your AI agents talk in one shared space, with calls, tasks, and files in the same place. So instead of managing many chat spaces, you get one."
+  },
+  {
+   "id": "5929885",
+   "depth": 1,
+   "author": "Akash Mandal",
+   "username": "see_akash",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@cloudalchemist &nbsp; Thanks Jay! Velozity connects with Slack, Microsoft Teams, Discord, Telegram and WhatsApp Business, so your agents can pull context from those conversations into one place. It also has its own built-in chat and Spaces, so over time you can run more of the team's conversations from a single home instead of juggling tabs."
+  },
+  {
+   "id": "5927117",
+   "depth": 0,
+   "author": "Anoushka Ananth",
+   "username": "anoushkavk",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Can agents work with a code repository, and do changes go through review before anything is merged?"
+  },
+  {
+   "id": "5927334",
+   "depth": 1,
+   "author": "Akash Mandal",
+   "username": "see_akash",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@anoushkavk &nbsp; Yes, agents can make changes in the repo, raise a PR, and have those changes go through your normal review approval process before anything is merged. You can also set up routines to run these agents on a recurring basis for ongoing tasks."
+  },
+  {
+   "id": "5928530",
+   "depth": 0,
+   "author": "Yagya Bainola",
+   "username": "yagya_bainola",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Does it show how work is spread across the team, so managers can spot who is overloaded?"
+  },
+  {
+   "id": "5928555",
+   "depth": 1,
+   "author": "Ishu Darshan",
+   "username": "ishudarshan",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@yagya_bainola &nbsp;Partly, yes. Tasks are assigned by person, so you can see who is holding what; admins get a team activity dashboard on Pro, and you can ask an agent who has the most open tasks. A dedicated view that flags overload automatically isn't there yet, so I'd love to hear how you'd want it to work."
+  },
+  {
+   "id": "5929091",
+   "depth": 1,
+   "author": "Akash Mandal",
+   "username": "see_akash",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@yagya_bainola &nbsp;Partly, yes. You can already see tasks by owner and ask the agent who has the most open work. Automatic overload detection isn’t there yet, but that’s a natural next step for us."
+  },
+  {
+   "id": "5928583",
+   "depth": 0,
+   "author": "Jeetendra Kumar",
+   "username": "jeetendra_kumar2",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "shared context sounds useful, but not every teammate should see the same files. do agents inherit each person's access, or does adding a file to a space make it available to every agent there?"
+  },
+  {
+   "id": "5928606",
+   "depth": 1,
+   "author": "Ishu Darshan",
+   "username": "ishudarshan",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jeetendra_kumar2 &nbsp;Good question, and the honest answer is \"both, depending on what kind of data\". A file added to a space belongs to that space. Everyone in the space can open it, and any agent working in that space can read it. There are no per-file permissions inside a space today. The space is the boundary. An agent sees only the files in the space it is working in. It cannot reach into another space's files, and a private space is limited to the people added to it. Personal data follows the person. Your connected email, calendar, and meeting notes are read-only by your own agents, never by a teammate's. Files you attach in your private assistant chat stay private too. Agents never widen anyone's access. Each agent runs only for its owner, and only in spaces that owner already belongs to. So the practical rule: put a file in a space only if everyone there should see it, and use a smaller private space for anything sensitive."
+  },
+  {
+   "id": "5929887",
+   "depth": 1,
+   "author": "Akash Mandal",
+   "username": "see_akash",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jeetendra_kumar2 &nbsp; Great question, Jeetendra. Sharing is scoped to the Space: a file added to a Space is available to the people and agents in that Space, and nowhere else, so you control access by who you add to it (Spaces can be private to specific teammates). Personal sources work differently: an agent reaches your own email and calendar only through your own access, and that never becomes visible to other teammates' agents just because you share a Space."
+  },
+  {
+   "id": "5927271",
+   "depth": 0,
+   "author": "Ilyas",
+   "username": "ilyasb",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Nice product! It feels like going from Microsoft Office on your desktop to Google Docs. How are you handling governance?"
+  },
+  {
+   "id": "5927305",
+   "depth": 1,
+   "author": "Ishu Darshan",
+   "username": "ishudarshan",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ilyasb &nbsp;Thanks, Ilyas, and great comparison. Governance was our starting point, not an add-on. The main rule is that a person approves anything that leaves the workspace, so agents can draft and prepare, but nothing is sent, paid, or signed without someone on the team saying yes. Agents also work in the same shared Spaces as your people, so what they do is visible to the whole team instead of happening out of sight. And they run on the AI plans your team already pays for. What should governance look like for your team? I'd like to hear what matters most to you."
+  },
+  {
+   "id": "5929899",
+   "depth": 1,
+   "author": "Akash Mandal",
+   "username": "see_akash",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ilyasb &nbsp; Thanks Ilyas, love that comparison! Governance is built around one rule: agents prepare, people approve. Anything that leaves the workspace (an email, a message, a calendar invite, a code commit) is staged as a draft, and nothing goes out until the owner approves it. Access follows the same lines as your team. Workspaces have admin, member and guest roles, each agent works only inside the Spaces it is added to, and it reaches your email or calendar only through your own access. Every agent run is recorded in the Space (who asked, what it did, what changed), so there is always a trail to review."
+  }
+ ]
+}

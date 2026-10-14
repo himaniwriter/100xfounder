@@ -1,0 +1,303 @@
+{
+ "slug": "sellio",
+ "excerpt": "Sellio is an AI customer-support shared inbox for website chat, WhatsApp, Instagram, Telegram and email, priced per workspace. Plans, alternatives and launch feedback.",
+ "content": "<p>Sellio is a customer-support tool that brings website live chat, WhatsApp, Instagram, Telegram and email into one shared inbox for a team. You can train AI agents on your website, documents and FAQs so they answer customers automatically, and a person can take over a conversation at any point without losing its history. It also includes tickets, automations, a help centre and analytics on topics, response times and customer satisfaction.</p><p>The chat widget installs with one snippet, with guides for Shopify, WordPress, Squarespace, Wix and React, and new conversations can be mirrored to Slack, Discord or Teams. There is a Mac app, with Windows listed as coming soon. Plans are priced per workspace with seats included, rather than per agent.</p><p>Sellio's founder is Khalid Nouri, who describes himself on Product Hunt as a design engineer. It launched there on 4 October 2026 and finished #13 for the day with 90 upvotes and 14 comments.</p><p><em>We have not tested Sellio ourselves. This page brings together its official site and pricing page, its Product Hunt page and the official pricing pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Customer support",
+  "platform": "Web app, Mac app",
+  "os": "Browser; Mac app available, Windows app listed as coming soon",
+  "starts_at": "Free plan; paid from $20/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI customer-support shared inbox for website chat, WhatsApp, Instagram, Telegram and email",
+  "maker": {
+   "name": "Khalid Nouri",
+   "url": "https://www.producthunt.com/@uxnouri"
+  },
+  "team": [
+   {
+    "name": "Khalid Nouri",
+    "role": "Design Engineer and Founder",
+    "url": "https://www.producthunt.com/@uxnouri"
+   }
+  ],
+  "ph": {
+   "rank": 13,
+   "votes": 90,
+   "comments": 14,
+   "followers": 56,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Answering website visitors through a live chat widget with an AI agent trained on your docs",
+   "Handling WhatsApp, Instagram, Telegram and email messages from one team inbox",
+   "Letting AI answer common questions while a person takes over harder conversations",
+   "Tracking follow-ups as tickets and measuring response times and satisfaction"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Khalid Nouri introduced Sellio as a single shared inbox for live chat, support tickets and customer conversations, with AI agents you train on your own knowledge base. His line was that the AI should be there when you need it and stay out of the way when you don't.",
+    "Asked how it compares with Zendesk, he said Sellio is built for small support teams of roughly 2 to 20 people. He pointed to two differences: pricing per workspace instead of per agent, and an AI agent that runs on an included credit with daily and monthly limits you set, so the bill doesn't depend on how many conversations the AI resolves."
+   ],
+   "attribution": "Khalid Nouri, founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/sellio-2?comment=5918191"
+  },
+  "audience": {
+   "fit": [
+    "run support for a small team and want chat, WhatsApp, Instagram, Telegram and email in one place",
+    "want a free plan to start with website chat and a shared inbox",
+    "prefer a predictable bill: plans are per workspace and AI usage comes from an included credit with limits you set"
+   ],
+   "not_fit": [
+    "only need email or messaging-app support on the free plan: those channels start on the paid Mini plan",
+    "want to self-host your support tool (Chatwoot offers that)",
+    "need a Windows desktop app today"
+   ]
+  },
+  "pricing": {
+   "intro": "Sellio's plans are priced per workspace, with seats included, in US dollars. Paying yearly saves 20%.",
+   "url": "https://sellio.chat/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "2 seats, 1 channel, 1 AI agent, 1 API key, about 5 AI conversations ($0.25 of AI credit), 100 voice requests a day"
+    },
+    {
+     "name": "Mini",
+     "price": "$20/month or $192/year",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "5 seats, 3 channels, 2 AI agents, 5 automations, $5 AI credit (about 100 AI conversations)"
+    },
+    {
+     "name": "Essentials",
+     "price": "$95/month or $912/year",
+     "amount": 95,
+     "currency": "USD",
+     "detail": "10 seats, 5 channels, 5 AI agents, 25 automations, $25 AI credit (about 500 AI conversations)"
+    },
+    {
+     "name": "Plus",
+     "price": "$295/month or $2,832/year",
+     "amount": 295,
+     "currency": "USD",
+     "detail": "50+ seats, 25 channels, 25 AI agents, unlimited automations, $75 AI credit (about 1,500 AI conversations)"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Contact sales",
+     "currency": "USD",
+     "detail": "Unlimited seats, channels and AI agents"
+    }
+   ],
+   "notes": [
+    "Paid plans come with a 7-day trial with no card. When a plan ends, the workspace goes back to Free and keeps its data.",
+    "Website chat and the shared inbox are free; email and messaging channels start on Mini (Sellio FAQ).",
+    "Refund terms are not stated on the pricing page.",
+    "On Product Hunt the founder quoted a $45 monthly price; the pricing page does not list a $45 plan, so we use the pricing page's figures."
+   ]
+  },
+  "alternatives": {
+   "intro": "These are on Product Hunt's alternatives list. Prices come from each product's own pricing page, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Crisp",
+     "url": "https://crisp.chat/",
+     "what": "Shared inbox and live chat with AI features",
+     "starts_at": "Free plan; Mini $45/month per workspace",
+     "ph_rating": 4.8,
+     "ph_reviews": 32,
+     "difference": "Also priced per workspace, with the same Essentials ($95) and Plus ($295) price points. Its first paid plan is $45 for 4 agents, against Sellio's $20 for 5 seats, and its free plan has no AI credit."
+    },
+    {
+     "name": "Chatwoot",
+     "url": "https://www.chatwoot.com/",
+     "what": "Open-source omnichannel support inbox",
+     "starts_at": "Free for up to 2 agents; paid from $19/agent/month",
+     "ph_rating": 4.7,
+     "ph_reviews": 6,
+     "difference": "Priced per agent, and you can self-host the open-source version. Sellio is hosted only and priced per workspace."
+    },
+    {
+     "name": "Zendesk",
+     "url": "https://www.zendesk.com/",
+     "what": "Large help-desk suite for support teams",
+     "starts_at": "Suite Team $55/agent/month billed yearly ($69 monthly)",
+     "ph_rating": 4.0,
+     "ph_reviews": 25,
+     "difference": "Per-agent pricing plus a charge per automated AI resolution beyond the included amount ($2.00 each, pay as you go). Much broader feature set for larger teams."
+    }
+   ],
+   "more": "Product Hunt also lists Desku, Juphy, Front, Boei, ThriveDesk, ClearFeed and Kommunicate."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/sellio-2/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "WhatsApp and website chat in one shared inbox, from a team already using it",
+     "A simple setup that founders can run without a big project"
+    ],
+    "asked": [
+     "How Sellio differs from Zendesk (answer: per-workspace pricing and capped AI credit, aimed at teams of 2 to 20)",
+     "What happens when a workspace hits its daily AI limit (answer: the conversation is flagged for a human in the inbox)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "The shared inbox with WhatsApp + website chat in one place is a big win for us.",
+     "author": "Abdessamad MALKI",
+     "url": "https://www.producthunt.com/products/sellio-2?comment=5928216"
+    },
+    {
+     "text": "It looks simple but powerful.",
+     "author": "Germán Merlo",
+     "url": "https://www.producthunt.com/products/sellio-2?comment=5919211"
+    },
+    {
+     "text": "What are your main advantages over Zendex for example?",
+     "author": "Aleksandr Tretyakov",
+     "url": "https://www.producthunt.com/products/sellio-2?comment=5918634"
+    }
+   ]
+  },
+  "pros": [
+   "Free plan with website chat and a shared inbox, no card needed",
+   "Per-workspace pricing with seats included, rather than per agent",
+   "AI agent usage comes from an included credit with daily and monthly limits you set",
+   "Five channels in one inbox: website chat, WhatsApp, Instagram, Telegram and email",
+   "7-day trial of paid plans without a card"
+  ],
+  "cons": [
+   "Email and messaging-app channels need a paid plan",
+   "The free plan's AI allowance is small, about five AI conversations",
+   "New product with no user reviews on Product Hunt yet",
+   "Refund terms aren't published on the pricing page"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/sellio-2",
+   "x": {
+    "none": "We found no posts about Sellio on X yet.",
+    "search_url": "https://x.com/search?q=sellio.chat&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Sellio free?",
+    "a": "Yes. The Free plan is permanent, not a trial, and includes 2 seats, one channel, one AI agent and about five AI conversations. Website chat and the shared inbox are free; email and messaging channels need Mini or above."
+   },
+   {
+    "q": "How much do Sellio's paid plans cost?",
+    "a": "Mini is $20 a month, Essentials $95 and Plus $295, or $192, $912 and $2,832 a year. Enterprise is priced through sales. Prices are per workspace, not per agent."
+   },
+   {
+    "q": "What happens when the AI runs out of credit?",
+    "a": "The founder said on Product Hunt that when the AI limit is reached, the conversation is flagged for human attention in the inbox, so a person can pick it up."
+   },
+   {
+    "q": "How is Sellio different from Zendesk?",
+    "a": "According to its founder, Sellio targets small teams of 2 to 20 people, charges per workspace rather than per agent, and runs its AI on an included credit instead of charging per resolution. Zendesk's Suite Team starts at $55 per agent a month billed yearly."
+   },
+   {
+    "q": "Is there a free trial of paid plans?",
+    "a": "Yes, 7 days with no card. When it ends, the workspace returns to the Free plan with everything kept."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sellio official site and FAQ",
+    "url": "https://sellio.chat/"
+   },
+   {
+    "label": "Sellio pricing",
+    "url": "https://sellio.chat/pricing"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/sellio-2"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/sellio-2/alternatives"
+   },
+   {
+    "label": "Product Hunt team page",
+    "url": "https://www.producthunt.com/products/sellio-2/makers"
+   },
+   {
+    "label": "Crisp pricing",
+    "url": "https://crisp.chat/en/pricing/"
+   },
+   {
+    "label": "Chatwoot pricing",
+    "url": "https://www.chatwoot.com/pricing"
+   },
+   {
+    "label": "Zendesk pricing",
+    "url": "https://www.zendesk.com/pricing/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/b3e58ea3-7dbb-41cc-b8c7-4c0bb9173976.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Sellio graphic reading 'AI-Powered CX Built for Your Team' over the shared inbox: conversation list, an open chat and the customer details panel",
+    "w": 1280,
+    "h": 720
+   },
+   {
+    "url": "https://ph-files.imgix.net/ea97e025-4a51-4860-834e-a31b5c9dd63c.png?auto=format&fit=max&w=1400",
+    "alt": "Sellio chat widget graphic, 'Instant answers, and a person when it matters', showing two chat windows on an orange background",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/821479b9-ef26-4df6-82d3-9ae00fd6bb0d.png?auto=format&fit=max&w=1400",
+    "alt": "Sellio 'Custom AI Agents' screen listing several AI agents next to a test chat",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/d27f5c6d-0a0c-4781-a235-c800098857a8.png?auto=format&fit=max&w=1400",
+    "alt": "Sellio graphic 'Every follow-up, tracked' showing tickets on a board with status columns",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/a6776e69-bb04-49c8-9c85-7b551311adee.png?auto=format&fit=max&w=1400",
+    "alt": "Sellio analytics dashboard with conversation metrics, progress bars and a flow chart",
+    "w": 1400,
+    "h": 838
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/b3e58ea3-7dbb-41cc-b8c7-4c0bb9173976.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Sellio graphic reading 'AI-Powered CX Built for Your Team' over the shared inbox: conversation list, an open chat and the customer details panel",
+    "w": 1280,
+    "h": 720
+   },
+   {
+    "url": "https://ph-files.imgix.net/ea97e025-4a51-4860-834e-a31b5c9dd63c.png?auto=format&fit=max&w=1400",
+    "alt": "Sellio chat widget graphic, 'Instant answers, and a person when it matters', showing two chat windows on an orange background",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/821479b9-ef26-4df6-82d3-9ae00fd6bb0d.png?auto=format&fit=max&w=1400",
+    "alt": "Sellio 'Custom AI Agents' screen listing several AI agents next to a test chat",
+    "w": 1400,
+    "h": 838
+   }
+  ]
+ }
+}

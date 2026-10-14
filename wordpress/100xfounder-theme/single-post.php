@@ -53,7 +53,9 @@ while (have_posts()) :
                     <?php foreach ($share as $s) : ?><a class="share" href="<?php echo esc_url($s['href']); ?>" target="_blank" rel="noopener" aria-label="<?php echo esc_attr($s['label']); ?>"><?php echo xft_icon($s['icon'], 15); // phpcs:ignore ?></a><?php endforeach; ?>
                 </div>
                 <?php echo $content; // phpcs:ignore — the_content output, already filtered ?>
-                <?php $tags = get_the_tags(); $cats = get_the_category(); if ($tags || $cats) : ?>
+                <?php $hub = function_exists('xf_post_hub') ? xf_post_hub((int) get_post_meta($post->ID, '_xf_ai_source', true) ?: $post->ID) : '';
+                if ($hub) : ?><div class="k hub-link" style="margin-top:32px">Part of: <a class="u" href="<?php echo esc_url(xf_hub_url($hub)); ?>"><?php echo esc_html(xf_hubs()[$hub]['title']); ?></a></div><?php endif; ?>
+                <?php $tags = get_the_tags() ?: []; $cats = get_the_category() ?: []; if ($tags || $cats) : ?>
                     <div class="art-tags">
                         <?php foreach ((array) $cats as $c) if ($c->slug !== 'uncategorized') echo '<a class="btn btn-sm" href="' . esc_url(get_category_link($c)) . '">' . esc_html($c->name) . '</a>'; ?>
                         <?php foreach ((array) $tags as $t) echo '<a class="btn btn-sm" href="' . esc_url(get_tag_link($t)) . '">' . esc_html($t->name) . '</a>'; ?>
@@ -65,13 +67,10 @@ while (have_posts()) :
     </article>
 
     <?php
-    $related = xft_query_posts(['posts_per_page' => 3, 'post__not_in' => [$post->ID], 'cat' => $cat ? $cat->term_id : 0]);
-    if (count($related) < 3) {
-        $related = xft_query_posts(['posts_per_page' => 3, 'post__not_in' => [$post->ID]]);
-    }
+    $related = xft_related_posts($post, 4);
     if ($related) : ?>
         <section class="wrap" style="max-width:1120px;padding-top:88px">
-            <div class="sh"><h2>Keep reading</h2><a href="<?php echo esc_url(xft_page_url('news', 'news')); ?>" class="k">All stories →</a></div>
+            <div class="sh"><h2>Related reading</h2><a href="<?php echo esc_url(xft_page_url('news', 'news')); ?>" class="k">All stories →</a></div>
             <div class="grid-cards" style="padding-top:24px;gap:28px 24px">
                 <?php foreach ($related as $p) : ?>
                     <a href="<?php echo esc_url(get_permalink($p)); ?>" style="display:block"><?php echo xft_image($p, '3x2'); // phpcs:ignore ?><span class="tag" style="display:block;margin-top:12px"><?php echo esc_html(xft_cat_name($p)); ?></span><span class="card-title"><span class="u"><?php echo esc_html(get_the_title($p)); ?></span></span></a>

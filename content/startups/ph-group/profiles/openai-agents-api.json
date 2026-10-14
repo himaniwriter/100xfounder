@@ -1,0 +1,95 @@
+{
+  "slug": "openai-agents-api",
+  "existing_listing_slug": null,
+  "related_listing_slug": "openai",
+  "ph_url": "https://www.producthunt.com/products/openai",
+  "excerpt": "OpenAI's Agents API lets developers run cloud agents on the same managed Codex harness that powers Codex, in OpenAI's sandbox or their own. What it does, how it is billed and alternatives.",
+  "content": "<p>The Agents API gives developers OpenAI's Codex harness, the agent loop behind its Codex coding agent, as a managed service. Your application creates a session, sends a task and receives events and output; OpenAI runs the orchestration, context compaction, session recovery and, if you choose, the sandbox where the agent works. You supply the tools and decide where the agent runs.</p><p>Inside a session an agent can run commands and code, edit files and produce artifacts, follow skills and instructions, call MCP servers and built-in tools such as web search, be steered mid-task, resume later and hand work to subagents, according to OpenAI's developer documentation. The sandbox can be hosted by OpenAI or run on your own infrastructure; OpenAI's announcement also named sandbox partners including Cloudflare, E2B, Modal, Daytona and Vercel. OpenAI released it as a public beta in September 2026.</p><p>The OpenAI Agents API launched on Product Hunt on 15 September 2026 and finished #5 for the day with 202 upvotes (as of 14 October 2026). It sits on OpenAI's main Product Hunt page, where OpenAI as a whole has 869 reviews.</p><p><em>We have not tested the Agents API ourselves. This page brings together OpenAI's developer documentation and announcement and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI agent platform (API)",
+    "platform": "API (beta)",
+    "starts_at": "Usage-based: model tokens, tools and hosted sandbox time",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Managed API for running cloud agents on OpenAI's Codex harness, in a hosted or self-hosted sandbox",
+    "ph": {"rank": 5, "votes": 202, "comments": 2, "followers": 33020, "launched": "2026-09-15", "as_of": "2026-10-14"},
+    "use_cases": [
+      "Running a coding agent in the cloud from your own product",
+      "Long-running agent tasks that need context compaction and resumable sessions",
+      "Agents that call your own tools or MCP servers alongside web search",
+      "Splitting a large task across subagents",
+      "Keeping agent execution inside your own infrastructure with a self-hosted sandbox"
+    ],
+    "audience": {
+      "fit": [
+        "build products on OpenAI models and want an agent loop without maintaining one",
+        "need agents that edit files and run code in an isolated sandbox",
+        "already use MCP servers or custom tools"
+      ],
+      "not_fit": [
+        "want to mix models from several vendors in one harness",
+        "need a stable, generally available API: it was released as a beta",
+        "want a fixed monthly price: billing follows tokens, tools and sandbox time"
+      ]
+    },
+    "pricing": {
+      "intro": "There is no separate subscription. OpenAI's documentation says model usage is billed at each model's API rates, OpenAI tools at their standard rates, and OpenAI-hosted sandboxes at standard container rates.",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+      "checked": "2026-10-14",
+      "plans": [],
+      "notes": [
+        "Running the sandbox on your own infrastructure avoids OpenAI's container charges, though you pay for your own compute."
+      ]
+    },
+    "pros": [
+      "The same harness that runs Codex, managed by OpenAI",
+      "Hosted or self-hosted sandboxes, with several sandbox partners",
+      "MCP, custom tools, web search and subagents supported",
+      "Resumable sessions with automatic context compaction"
+    ],
+    "cons": [
+      "Beta, so the interface may change",
+      "Tied to OpenAI models",
+      "Costs depend on usage and can be hard to predict"
+    ],
+    "alternatives": {
+      "intro": "Product Hunt lists other model makers as alternatives to OpenAI. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Claude by Anthropic", "url": "https://www.anthropic.com/", "what": "Anthropic's family of AI models, with its own agent tooling", "starts_at": "See its pricing page", "ph_rating": 4.96, "ph_reviews": 1041, "ph_url": "https://www.producthunt.com/products/claude",
+         "difference": "A rival model family; compare its agent and sandbox offerings with OpenAI's managed Codex harness."},
+        {"name": "Mistral AI", "url": "https://mistral.ai/", "what": "Open and portable generative AI for developers and businesses", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 42, "ph_url": "https://www.producthunt.com/products/mistral-7b",
+         "difference": "Offers open-weight models you can host yourself."},
+        {"name": "DeepSeek", "url": "https://www.deepseek.com/", "what": "Open-source models for reasoning and code", "starts_at": "See its pricing page", "ph_rating": 4.89, "ph_reviews": 54, "ph_url": "https://www.producthunt.com/products/deepseek",
+         "difference": "Open-source models; you would build or choose your own agent harness."}
+      ],
+      "more": "Product Hunt also lists MiniMax."
+    },
+    "reviews": {"count": 869, "rating": 4.98, "url": "https://www.producthunt.com/products/openai/reviews", "as_of": "2026-10-14", "note": "Reviews are for OpenAI as a whole, not the Agents API alone."},
+    "opinions": {
+      "themes": {
+        "liked": ["Strong models with fast, reliable structured output (from reviews of OpenAI overall)"],
+        "asked": [],
+        "criticised": ["Rate limits and pricing that add up at volume (from reviews of OpenAI overall)"]
+      },
+      "quotes": [
+        {"text": "Rate limits and the tier ramp can bite when a batch job spikes.", "author": "Raj Nagulapalle (review of OpenAI)", "url": "https://www.producthunt.com/products/openai/reviews?review=569223"}
+      ]
+    },
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/openai",
+      "x": {"none": "We have not linked posts about the Agents API on X yet.", "search_url": "https://x.com/search?q=%22Agents%20API%22%20openai&f=live", "profile_url": "https://x.com/openai"}
+    },
+    "faq": [
+      {"q": "What is the OpenAI Agents API?", "a": "A managed API that runs agents on the Codex harness. OpenAI handles sessions, orchestration, context compaction and recovery; you supply the tools and choose where the agent runs."},
+      {"q": "How much does the Agents API cost?", "a": "OpenAI's docs say you pay model API rates, standard rates for OpenAI tools, and standard container rates if you use an OpenAI-hosted sandbox."},
+      {"q": "Can I run the agent on my own servers?", "a": "Yes. The sandbox can be OpenAI-hosted or self-hosted, and OpenAI named sandbox partners such as Cloudflare, E2B, Modal, Daytona and Vercel."},
+      {"q": "Does it support MCP?", "a": "Yes. Agents can connect to MCP servers and to tools such as web search, according to OpenAI's documentation."}
+    ],
+    "sources": [
+      {"label": "OpenAI Agents API documentation", "url": "https://developers.openai.com/api/docs/guides/agents-api/overview"},
+      {"label": "OpenAI: Introducing the Agents API", "url": "https://openai.com/index/introducing-the-agents-api/"},
+      {"label": "OpenAI developer community announcement", "url": "https://community.openai.com/t/introducing-the-agents-api-and-hosted-sandboxes/1396481"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/openai"}
+    ]
+  }
+}

@@ -34,9 +34,14 @@ For each file check, and fix or drop:
 - Would a careful editor at a good news site publish this as is? If not, drop it.
 
 ## 4. Schedule on the live site
-`python3 content/upload_rest.py --per-day 10 content/drafts/daily-YYYYMMDD-*.json`
+`python3 content/upload_rest.py --per-day 4 content/drafts/daily-YYYYMMDD-*.json`
+
+Publishing pace (owner, 6 Oct 2026): **four posts a day at random times** between 07:00 and 22:30 IST, at least 90 minutes apart (`content/upload.py` picks the times). New drafts join the end of the queue. If a draft is breaking news (a funding round, an acquisition, an IPO), move it to the front so it goes out while it is still news: `python3 content/reschedule.py --first <part-of-file-name>`.
 (Uses only WordPress's built-in REST API plus /xf/v1/drafts, so it works whether or not the latest plugin is deployed. It continues the schedule after posts already queued, uploads each image to the media library, and pauses between posts for Wikimedia's rate limit. `content/upload.py` is the alternative once the 2026-10-04 plugin release is live.)
 It spreads the 10 posts from 07:00 to 22:30 IST. The site sends each to IndexNow and the news sitemap when it goes live.
 
 ## 5. Report
 Write `content/reports/YYYY-MM-DD.md`: topics chosen and why, titles, scheduled times, URLs, anything dropped and why. Commit the drafts and report on the working branch (`git add content && git commit`), and push.
+
+## URLs
+Every slug is 2–6 words, keyword first, and **never contains a year** (owner, 7 Oct 2026). Put the year in the title if it helps; the address has to stay valid next year. Event pages are the one exception, because the edition year is part of the event's name.

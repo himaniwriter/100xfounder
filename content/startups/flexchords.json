@@ -1,0 +1,254 @@
+{
+ "slug": "flexchords",
+ "excerpt": "FlexChords is a web app that turns a YouTube video or audio file into synced guitar chords, with key and tempo detection and a chord editor. What's free, alternatives and launch feedback.",
+ "content": "<p>FlexChords is a web app for guitarists. Paste a YouTube link or upload an audio file (WAV, MP3, M4A or FLAC) and it detects the chords, the key and the tempo, then shows the chords in time with the song so you can play along. A timeline lets you jump to any part of the song, and a chord editor lets you change a chord, move its start or end, split or delete it, with undo and redo. You can export the chords as timestamped labels for Audacity, Reaper and other audio editors.</p><p>The maker says a deep-learning model predicts the chords and a separate music-theory smoothing step removes the rapid, glitchy chord changes raw models tend to produce. Songs other people have already analysed sit in a public catalogue you can play along to for free, and a free account gets five new analyses a month.</p><p>FlexChords was built by Amit S Namboothiry, who describes himself as a guitarist, and launched on Product Hunt on 4 October 2026, finishing #20 for the day with 69 upvotes.</p><p><em>We have not tested FlexChords ourselves. This page brings together its official site, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Music learning",
+  "platform": "Web app",
+  "os": "Runs in the browser; sign in with Google, email or phone",
+  "starts_at": "Free account: 5 song analyses a month; paid pricing not published",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "Web app that turns a YouTube video or audio file into synced guitar chords with key and tempo",
+  "maker": {
+   "name": "Amit S Namboothiry",
+   "url": "https://www.producthunt.com/@amits97"
+  },
+  "team": [
+   {
+    "name": "Amit S Namboothiry",
+    "role": "Creator",
+    "url": "https://www.producthunt.com/@amits97"
+   }
+  ],
+  "ph": {
+   "rank": 20,
+   "votes": 69,
+   "comments": 3,
+   "followers": 35,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Learning a song from its YouTube video with the chords scrolling in time",
+   "Working out the key and tempo of a track before a jam or a cover",
+   "Fixing a detected chord sheet by hand on the timeline",
+   "Exporting chord labels into Audacity or a DAW for practice or arranging"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Amit S Namboothiry says he built FlexChords out of two frustrations as a guitarist: chord charts for YouTube songs that were in the wrong key or heavily simplified, and chord-detection sites that put play-along, tempo and transposing tools behind subscriptions.",
+    "His focus at launch was accuracy. Raw machine-learning chord models jitter between chords, he wrote, so FlexChords adds a rule-based music-theory layer that smooths those glitches out and takes the song's key into account. He called the product a work in progress, said MIDI export was coming, and asked users for feedback on chord accuracy."
+   ],
+   "attribution": "Amit S Namboothiry, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/flexchords?comment=5917274"
+  },
+  "audience": {
+   "fit": [
+    "play guitar and learn songs from YouTube",
+    "want chords that follow the song as it plays, without paying first",
+    "use Audacity, Reaper or another audio editor and want chord markers on the timeline"
+   ],
+   "not_fit": [
+    "need tempo or transposition controls: we found neither in the app on 14 October 2026, although the site's description mentions them",
+    "need more than five new song analyses a month: no paid plan or price has been published yet",
+    "want a phone app or live microphone input: FlexChords runs in the browser and works from links and files"
+   ]
+  },
+  "pricing": {
+   "intro": "Pricing not published. FlexChords has no pricing page. The app itself describes what a free account includes.",
+   "url": "https://www.flexchords.com/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free account",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "5 new song analyses a month (the count resets monthly); unlimited play-along for songs already in the catalogue and songs you have analysed"
+    }
+   ],
+   "notes": [
+    "The app's code refers to a \"Pro\" plan with unlimited analyses, but no price, sign-up or billing terms are shown anywhere. We will add it when it is published.",
+    "The site has no published terms of service or privacy policy as of 14 October 2026."
+   ]
+  },
+  "alternatives": {
+   "intro": "Chordify is on Product Hunt's alternatives list; Moises and Chord ai are closely comparable tools we added. Prices are what each product's own site states, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Chordify",
+     "url": "https://chordify.net/",
+     "what": "Chord detection for songs with play-along chord diagrams",
+     "starts_at": "Free tier; see its Premium page for prices",
+     "difference": "A long-established, catalogue-based service with a paid Premium tier. Its Premium page blocked our automated check, so we have not quoted a price."
+    },
+    {
+     "name": "Moises",
+     "url": "https://moises.ai/",
+     "what": "Musician's toolkit with stem separation, a chord finder, speed changer and lyric transcription, on web, desktop and mobile",
+     "starts_at": "Free tier with limited uploads a month; full pricing shown after login",
+     "difference": "A broad suite with native apps. FlexChords does one job, guitar chords, in the browser."
+    },
+    {
+     "name": "Chord ai",
+     "url": "https://chordai.net/",
+     "what": "Mobile app that detects chords and beats from YouTube, audio files or the phone's microphone",
+     "starts_at": "Free to download; the site mentions a paid full version without a price",
+     "difference": "Works on iOS and Android and can listen live through the microphone; FlexChords is browser-only."
+    }
+   ],
+   "more": "Product Hunt also lists Riffstation, SoundGate Guitar, Guitar Wiz, Chord Mini and Fretello, plus music generators such as Suno that do a different job."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/flexchords/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Accuracy across most songs one tester tried, including correct key detection"
+    ],
+    "asked": [],
+    "criticised": [
+     "Chords that flip between major and minor on blues-style songs (an E and Em back-and-forth on ZZ Top's \"Legs\")",
+     "US phone numbers formatted wrongly at sign-in (the maker said a fix was coming)"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "I tried it on a few songs and it was pretty good in most cases.",
+     "author": "Tyler Cutshall",
+     "url": "https://www.producthunt.com/products/flexchords?comment=5919621"
+    },
+    {
+     "text": "It detected the key correctly (E) but the chord progression \"ping-ponged\" between E and Em.",
+     "author": "Tyler Cutshall",
+     "url": "https://www.producthunt.com/products/flexchords?comment=5919621"
+    }
+   ]
+  },
+  "pros": [
+   "Free to use for catalogue songs, plus five new analyses a month",
+   "Works from any YouTube link or an uploaded audio file",
+   "Chord editor with undo and redo for fixing detections",
+   "Exports timestamped chord labels for Audacity and other audio editors",
+   "Detects key and tempo as well as chords"
+  ],
+  "cons": [
+   "No published price for heavier use",
+   "No terms of service or privacy policy published on the site",
+   "Blues-style songs can confuse the major and minor detection, as one early tester found",
+   "No tempo or transposition controls found yet, and MIDI export is still to come"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/flexchords",
+   "x": {
+    "none": "We found no posts about FlexChords on X yet.",
+    "search_url": "https://x.com/search?q=FlexChords&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is FlexChords free?",
+    "a": "Yes, for now. A free account gets five new song analyses a month, and songs already in the catalogue can be played along to without using any. No paid plan has been priced publicly."
+   },
+   {
+    "q": "What can I upload?",
+    "a": "A YouTube link, or an audio file in WAV, MP3, M4A or FLAC format."
+   },
+   {
+    "q": "How accurate are the chords?",
+    "a": "We have not measured it. One early tester on Product Hunt found it good on most songs but saw it switch between E and Em on a blues track; the maker said he would work on those transitions. You can correct any chord in the editor."
+   },
+   {
+    "q": "Can I export the chords?",
+    "a": "Yes, as timestamped labels for Audacity, Reaper and other audio editors. The maker said MIDI export was coming soon at launch; we did not find it in the app on 14 October 2026."
+   },
+   {
+    "q": "Can it transpose a song or slow it down?",
+    "a": "We did not find transposition or playback-speed controls in the app on 14 October 2026, although the site's description mentions them."
+   }
+  ],
+  "sources": [
+   {
+    "label": "FlexChords official site",
+    "url": "https://www.flexchords.com/"
+   },
+   {
+    "label": "FlexChords song catalogue",
+    "url": "https://www.flexchords.com/chords"
+   },
+   {
+    "label": "Example FlexChords song page",
+    "url": "https://www.flexchords.com/chords/zz-top-legs-official-music-video-hd-remaster-eUDcTLaWJuo"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/flexchords"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/flexchords/alternatives"
+   },
+   {
+    "label": "Product Hunt launch history",
+    "url": "https://www.producthunt.com/products/flexchords/launches"
+   },
+   {
+    "label": "Chordify Premium",
+    "url": "https://chordify.net/premium"
+   },
+   {
+    "label": "Moises",
+    "url": "https://moises.ai/"
+   },
+   {
+    "label": "Chord ai",
+    "url": "https://chordai.net/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/8d21c9a9-aad8-4ed4-a790-10c4b0a804c0.jpeg?auto=format&fit=max&w=1400",
+    "alt": "FlexChords graphic 'Link to chords': a guitarist playing next to the FlexChords app turning a video into a chord grid",
+    "w": 1280,
+    "h": 720
+   },
+   {
+    "url": "https://ph-files.imgix.net/df26d7fd-f2e0-4062-8707-d8f41d1d4daa.png?auto=format&fit=max&w=1400",
+    "alt": "FlexChords home screen, 'Instant Guitar Chords for Any Song', with a list of popular songs on the left",
+    "w": 1400,
+    "h": 708
+   },
+   {
+    "url": "https://ph-files.imgix.net/118affc3-a1bd-4020-a24f-49f2fd11cef0.png?auto=format&fit=max&w=1400",
+    "alt": "A FlexChords song page with the video player above a grid of detected chords and the chord timeline controls",
+    "w": 1400,
+    "h": 708
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/8d21c9a9-aad8-4ed4-a790-10c4b0a804c0.jpeg?auto=format&fit=max&w=1400",
+    "alt": "FlexChords graphic 'Link to chords': a guitarist playing next to the FlexChords app turning a video into a chord grid",
+    "w": 1280,
+    "h": 720
+   },
+   {
+    "url": "https://ph-files.imgix.net/df26d7fd-f2e0-4062-8707-d8f41d1d4daa.png?auto=format&fit=max&w=1400",
+    "alt": "FlexChords home screen, 'Instant Guitar Chords for Any Song', with a list of popular songs on the left",
+    "w": 1400,
+    "h": 708
+   },
+   {
+    "url": "https://ph-files.imgix.net/118affc3-a1bd-4020-a24f-49f2fd11cef0.png?auto=format&fit=max&w=1400",
+    "alt": "A FlexChords song page with the video player above a grid of detected chords and the chord timeline controls",
+    "w": 1400,
+    "h": 708
+   }
+  ]
+ }
+}

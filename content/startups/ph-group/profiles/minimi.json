@@ -1,0 +1,92 @@
+{
+  "slug": "minimi",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/shram",
+  "excerpt": "minimi is a Mac app that builds a private memory of your digital activity, finds your open loops and gives that context to AI tools through MCP. What it does, privacy and alternatives.",
+  "content": "<p>minimi is a Mac app that keeps a memory of what you do on your computer and uses it to spot \"open loops\": things you said you would do, such as replying to a question in Slack or confirming a meeting. They land in an inbox, and minimi says it can close some of them automatically. It reads your screen through Apple's accessibility features rather than taking screenshots, and works across apps such as WhatsApp, Gmail and Calendar without separate integrations.</p><p>The same memory is available to other AI tools through the minimi MCP, which the company describes as a pen drive of your personal context that you can plug into Claude, ChatGPT, Gemini and agent tools. According to its site, the memory is stored on your Mac, nothing is kept on its servers, and your data is not used for training.</p><p>minimi is made by Shram Intelligence, Inc., a Delaware company that earlier launched the work app Shram on Product Hunt. The team says it named the app after their late kitten, Cotton, who is now its mascot. minimi 2.0 launched on Product Hunt on 24 September 2026 with 317 upvotes and 50 comments (as of 14 October 2026).</p><p><em>We have not tested minimi ourselves. This page brings together its official site, its About and contact pages and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI memory and personal assistant",
+    "platform": "Mac app with an MCP server",
+    "os": "macOS",
+    "starts_at": "Pricing not published",
+    "schema_category": "ProductivityApplication",
+    "summary_short": "Mac app that remembers your digital context, finds your open loops and shares that memory with AI tools via MCP",
+    "ph": {"rank": null, "votes": 317, "comments": 50, "followers": 2245, "launched": "2026-09-24", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/51491562-9795-4f4a-a9a3-f09c59cd70bf.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: minimi via Product Hunt",
+       "alt": "minimi title card 'Personal intelligence that comes to you' with four cartoon kittens"},
+      {"url": "https://ph-files.imgix.net/377f3b11-d6b0-493a-a808-f4acb34cf199.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: minimi via Product Hunt",
+       "alt": "minimi Memory MCP: an AI chat box with suggested questions such as 'What did I actually do today?'"},
+      {"url": "https://ph-files.imgix.net/edf75df9-acc8-4239-9d1a-69648593273e.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: minimi via Product Hunt",
+       "alt": "minimi Open loops inbox listing commitments found in Slack, email and design feedback"}
+    ],
+    "use_cases": [
+      "Catching commitments you made in chats and email before they slip",
+      "Giving Claude, ChatGPT or Gemini your personal context without re-explaining it",
+      "Asking what you worked on today or where you left off",
+      "Switching between projects without losing track of what is on your plate"
+    ],
+    "audience": {
+      "fit": [
+        "use a Mac and switch context often across chat, email and calendar",
+        "want AI assistants to know your context, and prefer it stored on your own device",
+        "already use MCP-capable tools such as Claude"
+      ],
+      "not_fit": [
+        "use Windows, Linux or only a phone: the site offers a Mac download only",
+        "are not comfortable giving an app accessibility access to read your screen",
+        "need to know the price before installing: we found no pricing on the site"
+      ]
+    },
+    "pricing": {
+      "intro": "minimi's site offers a Mac download and \"Get access\" but does not publish prices. Its footer links to a refund policy, which suggests paid plans exist; check the site for current terms.",
+      "url": "https://www.projectminimi.com/",
+      "checked": "2026-10-14",
+      "plans": [],
+      "notes": []
+    },
+    "pros": [
+      "Memory is stored on your Mac, with no cloud database, according to the company",
+      "Reads the screen through accessibility features rather than screenshots",
+      "Works across apps without setting up integrations",
+      "Shares context with other AI tools through MCP"
+    ],
+    "cons": [
+      "Mac only",
+      "No published pricing",
+      "Needs broad access to what is on your screen"
+    ],
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as minimi alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Littlebird", "url": "https://www.producthunt.com/products/littlebird", "what": "AI assistant that already knows your work", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 10, "ph_url": "https://www.producthunt.com/products/littlebird",
+         "difference": "Also builds context from your work; minimi focuses on open loops and on-device memory shared through MCP."},
+        {"name": "Mem", "url": "https://www.producthunt.com/products/mem-2-0", "what": "Notes app with AI that reminds you proactively", "starts_at": "See its pricing page", "ph_rating": 4.71, "ph_reviews": 14, "ph_url": "https://www.producthunt.com/products/mem-2-0",
+         "difference": "You write notes into Mem; minimi captures context from your screen without you writing anything."},
+        {"name": "Granola", "url": "https://www.producthunt.com/products/granola", "what": "AI notepad for back-to-back meetings", "starts_at": "See its pricing page", "ph_rating": 4.75, "ph_reviews": 56, "ph_url": "https://www.producthunt.com/products/granola",
+         "difference": "Built around meeting notes; minimi tracks commitments across all your apps."}
+      ],
+      "more": "Product Hunt also lists Shadow and Askmeety as alternatives."
+    },
+    "reviews": {"count": 7, "rating": 5, "url": "https://www.producthunt.com/products/shram/reviews", "as_of": "2026-10-14", "note": "The Product Hunt page carries over reviews from the team's earlier product, Shram."},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/shram",
+      "x": {"none": "We found no posts about minimi on X to link yet.", "search_url": "https://x.com/search?q=projectminimi&f=live", "profile_url": "https://twitter.com/project_minimi"}
+    },
+    "faq": [
+      {"q": "What is minimi?", "a": "A Mac app that builds a memory of your digital activity, finds commitments you have not closed yet, and shares that context with AI tools through its MCP server. It is made by Shram Intelligence, Inc."},
+      {"q": "How much does minimi cost?", "a": "minimi's website does not publish prices. You can download it for Mac from the site."},
+      {"q": "Does minimi take screenshots?", "a": "No, according to its FAQ. It reads what is on your screen through Apple's accessibility infrastructure."},
+      {"q": "Where is my data stored?", "a": "On your Mac, according to the company, which says it does not store your private data on its servers, retain it or train on it."},
+      {"q": "What is the minimi MCP?", "a": "A way to plug your minimi memory into AI tools such as Claude, ChatGPT and Gemini so you do not have to explain your context each time."}
+    ],
+    "sources": [
+      {"label": "minimi official site and FAQ", "url": "https://www.projectminimi.com/"},
+      {"label": "minimi About page", "url": "https://www.projectminimi.com/about"},
+      {"label": "minimi contact page", "url": "https://www.projectminimi.com/contact-us"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/shram"},
+      {"label": "Product Hunt launches", "url": "https://www.producthunt.com/products/shram/launches"}
+    ]
+  }
+}

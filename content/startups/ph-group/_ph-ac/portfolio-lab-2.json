@@ -1,0 +1,375 @@
+{
+ "input": "https://www.producthunt.com/posts/portfolio-lab-2",
+ "final_url": "https://www.producthunt.com/products/portfolio-lab?launch=portfolio-lab-2",
+ "launch": {
+  "slug": "portfolio-lab-2",
+  "name": "Portfolio Lab",
+  "tagline": "AI investing, done responsibly",
+  "featuredAt": "2026-08-10T00:01:00-07:00",
+  "dailyRank": "2",
+  "weeklyRank": "14",
+  "points": 295,
+  "commentsCount": 31,
+  "pricingType": "free_options",
+  "description": "AI made building investment strategies easy. Telling a good one from a lucky one still takes expertise. Portfolio Lab is the responsible AI investing platform: every strategy is tested on unseen data and in live markets. Connect your agent to deploy only vetted strategies in your own brokerage account. SEC-registered.",
+  "makers": [
+   {
+    "name": "Rich Sun",
+    "username": "rich_sun",
+    "headline": "Building Portfolio Lab and alphaAI"
+   }
+  ],
+  "hunter": "Ben Lang",
+  "media": [
+   {
+    "uuid": "a7481a55-cc44-4e97-a32b-91521c2b7293.png",
+    "type": "image",
+    "w": 2480,
+    "h": 1484,
+    "video": null
+   },
+   {
+    "uuid": "c073c581-f563-4f07-b61a-fd42e5ddb992.png",
+    "type": "image",
+    "w": 2480,
+    "h": 1484,
+    "video": null
+   },
+   {
+    "uuid": "0c89c2e9-abc1-42f3-93f1-08daaeaa6a65.png",
+    "type": "image",
+    "w": 2480,
+    "h": 1484,
+    "video": null
+   },
+   {
+    "uuid": "544c1038-c35e-4cc3-b207-4e8755848473.png",
+    "type": "image",
+    "w": 2480,
+    "h": 1484,
+    "video": null
+   },
+   {
+    "uuid": "9b71fdaf-c472-4ad2-9686-4ec58d19ca21.png",
+    "type": "image",
+    "w": 2480,
+    "h": 1484,
+    "video": null
+   },
+   {
+    "uuid": "08c67fb0-1b08-4ca8-bfcc-ae7e4e3d1074.png",
+    "type": "image",
+    "w": 2480,
+    "h": 1484,
+    "video": null
+   },
+   {
+    "uuid": "5738d16d-d703-41af-bc62-8f5f6af04ff1.png",
+    "type": "image",
+    "w": 2480,
+    "h": 1484,
+    "video": null
+   },
+   {
+    "uuid": "2e1c138b-c442-4206-be2f-b3042bffacb4.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/b-yl9vZEBVM"
+   }
+  ],
+  "links": [
+   "portfoliolab.ai"
+  ],
+  "badges": [
+   [
+    "daily",
+    2
+   ]
+  ]
+ },
+ "product": {
+  "name": "Portfolio Lab",
+  "slug": "portfolio-lab",
+  "tagline": "AI investing, done responsibly",
+  "description": "AI made building investment strategies easy. Telling a good one from a lucky one still takes expertise. Portfolio Lab is the responsible AI investing platform: every strategy is tested on unseen data and in live markets. Connect your agent to deploy only vetted strategies in your own brokerage account. SEC-registered.",
+  "websiteUrl": "https://portfoliolab.ai/",
+  "reviewsCount": 1,
+  "reviewsRating": 5,
+  "followersCount": 596,
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5775197",
+   "depth": 0,
+   "author": "Viktar Patotski",
+   "username": "xp_vit",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The 1,292-strategies experiment is the part that stuck with me — that it took a hedge fund professional days of line-by-line auditing to find the errors quietly inflating the results. We ended up in the same place from the other direction, working on SaaS financial models: built the thing in Excel first until it was genuinely complex and correct, then coded it, and kept the AI outside the maths entirely. It drives the inputs and interprets the output; it never computes anything. Same reason you give — wrong numbers don't look wrong, so an LLM doing the arithmetic is really a plausible-error generator. One question on the vetting: unseen data still comes from a market that actually existed. How do you handle regime change — a strategy that clears out-of-sample and live paper trading because the regime it was fitted to hadn't broken yet? Do you retire a deployed strategy automatically once live behaviour drifts from the tested distribution, or is that left to the operator?"
+  },
+  {
+   "id": "5775576",
+   "depth": 1,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@xp_vit &nbsp;Left to the operator, deliberately. A drawdown from regime change and a drawdown from a broken model look identical in a return chart, so the diagnosis has to happen at the behavior level: is the machinery still doing what it was designed to do in the environment it's facing. Intact machinery in a hostile regime is a cost you agreed to pay. Broken machinery is decay, and that's the retirement case. We surface the drift so the operator makes that call with evidence instead of pain. Auto-retiring on drift would just be redesigning at the bottom with extra steps. I went deep on this in two posts on our research page, \"Judge the behavior, not the returns\" and \"Why the best trading models refuse to learn,\" if you want the full argument."
+  },
+  {
+   "id": "5778586",
+   "depth": 2,
+   "author": "Viktar Patotski",
+   "username": "xp_vit",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@rich_sun &nbsp;Intact vs. broken machinery — that's the split I hadn't drawn cleanly. Same on the SaaS side: nine months of runway looks identical whether the model is wrong or the market got harder."
+  },
+  {
+   "id": "5754154",
+   "depth": 0,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt! I'm Rich Sun, founder of Portfolio Lab. AI made building investment strategies easy, but telling a good one from a lucky one still takes expertise. That's the part most products glaze over. 🧐 The problem Ask any AI for a strategy and you'll get one in seconds, with a beautiful backtest attached. So we ran an experiment: we had Claude build 1,292 strategies. I'm a hedge fund professional, and it still took me days of auditing the code line by line to find all the subtle errors quietly inflating the results. After correcting them, nearly all of the strategies lost their edge. They looked brilliant. They were just lucky, and the AI's flawed logic was hiding it. That's the thing about LLMs: they're built to reason in language, not to crunch numbers, and definitely not the noisy time-series data of the stock market. And the traps sit exactly where LLMs are weakest: in the numbers. If it took a professional days to catch them, imagine the average retail investor. Prompting an agent and trusting the output isn't a strategy, it's a coin flip. 💡 What we built Portfolio Lab is not another LLM wrapper. Under the hood are proprietary quantitative models, purpose-built for mar"
+  },
+  {
+   "id": "5774660",
+   "depth": 1,
+   "author": "Tehreem Fatima",
+   "username": "tehreem_fatima5",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@rich_sun Testing strategies on paper trading is one thing, but how do your quantitative models factor in real-world execution risks like slippage, liquidity drops, or latency when executing through third-party agents/brokers?"
+  },
+  {
+   "id": "5775541",
+   "depth": 2,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tehreem_fatima5 &nbsp;Good question. We model slippage and trading costs realistically based on academic research rather than assuming frictionless fills. Signals are also conservatively lagged by at least a day, so a strategy never acts on information it couldn't have had at execution time. The universe is built around liquid ETFs and large-cap names, which keeps depth from being the binding constraint."
+  },
+  {
+   "id": "5775343",
+   "depth": 1,
+   "author": "Richard Acheampong ",
+   "username": "richatsealedvault",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@rich_sun &nbsp;Great build Rich, I have already checked out the free plan. I personally want to see it prove itself before committing to paid plans so thanks for the forever free plan even though it's limited to only one strategy."
+  },
+  {
+   "id": "5775546",
+   "depth": 2,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@richatsealedvault &nbsp;Thanks for checking it out. That's the point of the free tier, no reason to pay before you've seen it work. What would you need to see to consider upgrading? Useful for me to know."
+  },
+  {
+   "id": "5775869",
+   "depth": 1,
+   "author": "Priya K",
+   "username": "priya_kushwaha1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@rich_sun &nbsp;Nice launch Congrats🙌Since you support connecting external agents via MCP how do you prevent local execution latency or API connection drops from causing missed orders or execution slippage?"
+  },
+  {
+   "id": "5776043",
+   "depth": 2,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@priya_kushwaha1 &nbsp;Thanks! Short answer, we can't prevent it, and we don't need to. Strategies trade once per day, this is investing, not day-trading, so the targets don't go stale in minutes. If your agent runs an hour late, you're still executing the same daily plan. If you want zero connection risk, the most seamless path is deploying directly through our SEC-registered RIA, where execution is fully managed."
+  },
+  {
+   "id": "5776232",
+   "depth": 0,
+   "author": "Ben Lang",
+   "username": "benln",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "hunter"
+   ],
+   "text": "Congrats on the launch!"
+  },
+  {
+   "id": "5776260",
+   "depth": 1,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@benln &nbsp;Thanks Ben! And thank you again for hunting Portfolio Lab, big part of making today happen."
+  },
+  {
+   "id": "5775259",
+   "depth": 0,
+   "author": "Dorina-Maria Anton",
+   "username": "mad94",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats Rich on the launch! I like that you’re not treating a good backtest as evidence that a strategy works. The out-of-sample + paper trading approach makes a lot of sense. I'll give it a try. I'm curious, is a strategy starts deviating from its expected risk/return, what triggers a review or retirement?"
+  },
+  {
+   "id": "5775581",
+   "depth": 1,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mad94 &nbsp;Thanks! The trigger is behavior, not returns. Returns are too noisy to tell a bad stretch from a broken model over any window you'd actually act on. So a review asks whether the machinery is still working: is the model still classifying risky days, on average, as riskier than calm ones? A strategy can lose money while classifying correctly, that's a regime cost, not a failure. But if the classification itself breaks down, that's decay, and that's the retirement case. Criteria are set before deployment, otherwise the decision gets made at the bottom, by pain."
+  },
+  {
+   "id": "5775478",
+   "depth": 0,
+   "author": "Alper Tayfur",
+   "username": "alpertayfurr",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats Rich, really interesting approach. I especially like the idea of building portfolios of strategies that compensate for each other rather than chasing one “perfect” strategy. Curious how you detect hidden correlation between strategies though. Two strategies can look different on the surface but still depend on the same market regime or underlying exposure. Do you automatically flag that before they’re combined into a portfolio?"
+  },
+  {
+   "id": "5775600",
+   "depth": 1,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@alpertayfurr &nbsp;Great question, and you're right that surface return correlation is the wrong test. Two strategies can look uncorrelated for years and then fail together, because what matters is whether they share a failure mode, not whether their daily returns move. The practical way we frame it is regime behavior. Every strategy has environments that punish it, and those are visible in how it performed across known regimes. If one strategy is weak in sharp V-shaped recoveries, you pair it with one that's strong exactly there. Today you can see that behavior in the platform and make the call yourself. Automatic flagging of shared exposure before you combine strategies is on the roadmap, we're building toward it."
+  },
+  {
+   "id": "5791390",
+   "depth": 2,
+   "author": "Alper Tayfur",
+   "username": "alpertayfurr",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "@rich_sun &nbsp;That makes sense. Framing diversification around failure modes rather than historical correlation feels much more robust. Automatic shared exposure flagging should be especially useful once portfolios start getting larger and harder to reason about manually."
+  },
+  {
+   "id": "5774932",
+   "depth": 0,
+   "author": "Etienne Garcia",
+   "username": "etiennegarcia",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Interesting that the strategies end up running through your own agent and brokerage account, and you never hold the orders yourselves. At least that takes one classic conflict out of the picture. Btw. On mobile the page takes a while to load the first time. Congrats on the launch!"
+  },
+  {
+   "id": "5775588",
+   "depth": 1,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@etiennegarcia &nbsp;Thanks! Yeah, that's deliberate. Your agent, your broker, your keys. We publish the plan, you own the execution. And thanks for flagging the mobile load, will look into it."
+  },
+  {
+   "id": "5776052",
+   "depth": 0,
+   "author": "Holly Xiao",
+   "username": "hxiao",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "\"Telling a good one from a lucky one still takes expertise\" is SO true. I've definitely asked Claude how I should invest and gotten a very confident answer with zero evidence behind it. Being able to actually test strategies before deploying them is the thing I've been missing. Congrats on launching!"
+  },
+  {
+   "id": "5776057",
+   "depth": 1,
+   "author": "Rich Sun",
+   "username": "rich_sun",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hxiao &nbsp;Yeah the confidence is the dangerous part. Claude will give you an answer either way, the question is whether anyone checked it. That's the gap we're filling. Thanks for the kind words!"
+  }
+ ]
+}

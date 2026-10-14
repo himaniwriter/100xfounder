@@ -1,0 +1,60 @@
+{
+ "input": "https://www.producthunt.com/posts/pushary-4",
+ "final_url": "https://www.producthunt.com/products/pushary?launch=pushary-4",
+ "launch": {},
+ "product": {
+  "name": "Pushary",
+  "slug": "pushary",
+  "tagline": "Control panel for AI agents on your lock screen",
+  "description": "Your AI agents stop when they need a permission or an answer. Pushary puts that yes or no on your lock screen, so the work keeps moving while you are away. New in this launch: native iPhone and Android apps. Pair with your terminal by scanning a QR code, no key to paste. Approvals, questions, and task-done alerts from Claude Code, Codex, Cursor, Gemini CLI, Hermes, and Claude Cowork land in one inbox, with per-tool policies that auto-approve the safe stuff and an audit trail of every decision.",
+  "websiteUrl": "https://pushary.com",
+  "reviewsCount": 1,
+  "reviewsRating": 5,
+  "followersCount": 1297,
+  "twitterUrl": "https://x.com/usepushary",
+  "linkedinUrl": "https://www.linkedin.com/company/pushary",
+  "instagramUrl": "https://www.instagram.com/usepushary",
+  "githubUrl": "https://github.com/aadilghani1",
+  "iosUrl": "https://www.producthunt.com/r/LVH7RU5NLPSVKO",
+  "androidUrl": "https://www.producthunt.com/r/3WMX4NFC5ZZA5D",
+  "postsCount": 5,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

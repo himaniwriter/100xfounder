@@ -15,8 +15,7 @@ while (have_posts()) :
         'Open roles' => $company ? (string) $company->count : '',
     ]);
     ?>
-    <section class="wrap" style="padding-top:48px;padding-bottom:40px">
-        <nav class="crumbs k in" aria-label="Breadcrumb"><a href="<?php echo esc_url(home_url('/jobs/')); ?>">Jobs</a><span>/</span><a href="<?php echo esc_url(xft_page_url('guides', 'how-to-apply')); ?>">How to apply</a><span>/</span><span style="color:var(--tx)"><?php echo esc_html($company ? $company->name : wp_trim_words(get_the_title(), 6)); ?></span></nav>
+    <section class="wrap" style="padding-top:4px;padding-bottom:40px">
         <div class="k in" style="margin-top:36px"><span class="ac">Apply guide</span> · Updated <?php echo esc_html(get_the_modified_date('j M Y')); ?> · <?php echo esc_html(xft_read_time($id)); ?></div>
         <h1 class="page-title in" style="animation-delay:.06s;max-width:900px"><?php the_title(); ?></h1>
         <?php if (has_excerpt()) : ?><p class="in" style="max-width:720px;margin-top:18px;font-size:19px;line-height:1.55;color:var(--t2);animation-delay:.1s"><?php echo esc_html(get_the_excerpt()); ?></p><?php endif; ?>

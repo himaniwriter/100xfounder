@@ -1,0 +1,84 @@
+{
+ "input": "https://www.producthunt.com/posts/receiptor-ai-agent-mode",
+ "final_url": "https://www.producthunt.com/products/receiptor-ai?launch=receiptor-ai-agent-mode",
+ "launch": {
+  "makers": [
+   {
+    "name": "Rohan Chaubey",
+    "username": "rohanrecommends",
+    "headline": "🥇 Top Hunter | Author | Startup Advisor"
+   },
+   {
+    "name": "Gvantsa Garmelia",
+    "username": "gvantsa_garmelia",
+    "headline": "Marketing in tech"
+   },
+   {
+    "name": "Romeo Bellon",
+    "username": "romeobellon",
+    "headline": ""
+   },
+   {
+    "name": "Luigi Fernandez Ortega",
+    "username": "luigi_receiptorai",
+    "headline": "Receiptor co-founder. AI for bookkeeping"
+   }
+  ]
+ },
+ "product": {
+  "name": "Receiptor AI",
+  "slug": "receiptor-ai",
+  "tagline": "Bookkeeping on Autopilot with AI",
+  "description": "Forget bookkeeping. Receiptor AI finds every receipt past & present, extracts data in context, auto-categorizes your expenses, and syncs to Xero/QBO. AI easily creates rules and manages your documents. Save time, maximize deductions, stay compliant.",
+  "websiteUrl": "https://receiptor.ai",
+  "reviewsCount": 7,
+  "reviewsRating": 5,
+  "followersCount": 1313,
+  "twitterUrl": "https://x.com/receiptorai",
+  "linkedinUrl": "https://www.linkedin.com/company/receiptor-ai",
+  "postsCount": 4,
+  "screenshots": [
+   "https://ph-files.imgix.net/0d7f7d70-205a-482c-9c42-6e22acc9c02e.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/1dbb6787-4885-4647-aa42-85feddcaccbe.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/4d6c6ac8-7e74-493a-836d-de678f33a789.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

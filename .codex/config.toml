@@ -1,0 +1,3 @@
+[mcp_servers.100xfounder]
+url = "https://100xfounder.com/wp-json/xf-claude/v1/mcp"
+bearer_token_env_var = "XF_MCP_TOKEN"

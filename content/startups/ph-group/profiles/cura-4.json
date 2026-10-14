@@ -1,0 +1,154 @@
+{
+  "slug": "cura-4",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/cura-4",
+  "excerpt": "Cura is an AI travel advisor from an IIT-founded team that plans whole trips from one message, compares flights and stays and adapts when plans change. What it does and what launch-day users asked.",
+  "content": "<p>Cura is an AI travel advisor. You tell it where, when, who is going and your budget in one message (or by talking, in your own language), and it plans the trip door to door: flights, stays, transfers and a day-by-day itinerary with the reasoning behind each pick. It remembers preferences such as aisle seats, late checkouts and food restrictions, shows the whole trip on a map, keeps passports, visas and boarding passes in a document wallet, and can turn a travel reel you send it into an itinerary.</p><p>Cura says it will also ring a hotel to ask for an early check-in or late checkout, and that when a flight moves it reshuffles the rest of the trip and tells the hotel. On Product Hunt, co-founder Shubham Gupta said it launched with planning and booking with a human in the loop, and that trip-management agents were coming next; another team member said fully automatic booking with your authorisation is the direction they are heading. The product description adds that human travel advisors step in when things get complicated. Its launch images show budgets in Indian rupees.</p><p>Cura's About page lists Shubham Gupta (co-founder and CEO), Mayank Gupta (co-founder and CTO) and Hersh Singh (co-founder, GTM). It went live on Product Hunt on 1 October 2026 with 94 points and 32 comments (as of 14 October 2026); it was not among the day's featured products.</p><p><em>We have not tested Cura ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI travel planning",
+    "platform": "App and web",
+    "starts_at": "Pricing not published",
+    "schema_category": "TravelApplication",
+    "summary_short": "AI travel advisor that plans whole trips from one message and adapts when plans change",
+    "maker": {
+      "name": "Shubham Gupta",
+      "url": "https://www.producthunt.com/@shubham16180"
+    },
+    "team": [
+      {
+        "name": "Shubham Gupta",
+        "role": "Co-founder and CEO (Cura About page)",
+        "url": "https://joincura.club/about.html"
+      },
+      {
+        "name": "Mayank Gupta",
+        "role": "Co-founder and CTO (Cura About page)",
+        "url": "https://joincura.club/about.html"
+      },
+      {
+        "name": "Hersh Singh",
+        "role": "Co-founder, GTM (Cura About page)",
+        "url": "https://joincura.club/about.html"
+      }
+    ],
+    "ph": {
+      "votes": 94,
+      "comments": 32,
+      "followers": 334,
+      "launched": "2026-10-01",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/cb6755f8-9ed9-4821-8ee3-08fda01eda4b.jpeg?auto=format&fit=max&w=1400",
+        "w": 1600,
+        "h": 957,
+        "alt": "Cura graphic 'Just tell Cura what you want' with a prompt to plan 6 days in Spain under ₹4 lakh, surrounded by cards for destinations, dates, budget, travellers and pace",
+        "credit": "Image: Cura via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/4e543b3a-c95f-439d-82ff-d867d37f404e.jpeg?auto=format&fit=max&w=1400",
+        "w": 1600,
+        "h": 957,
+        "alt": "Cura graphic 'A plan for every day' showing a Barcelona day plan: landing, hotel check-in and tapas in El Born, with a note explaining the pacing",
+        "credit": "Image: Cura via Product Hunt"
+      }
+    ],
+    "audience": {
+      "fit": [
+        "plan holidays across a dozen tabs and apps and want one place for the itinerary, bookings and documents",
+        "have specific preferences (vegetarian or Jain food, seat choice, slow mornings) you are tired of repeating",
+        "travel from India: its launch examples plan and budget in rupees"
+      ],
+      "not_fit": [
+        "want an agent that books and pays entirely on its own today: the team said booking keeps a human in the loop for now",
+        "need published prices before trying it: we found no pricing page on its site",
+        "only need a flight search engine"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on joincura.club as of 14 October 2026. Product Hunt lists Cura as having free options.",
+      "url": "https://joincura.club/",
+      "checked": "2026-10-14",
+      "plans": [],
+      "notes": [
+        "The cost of flights and hotels you book is separate from any fee Cura may charge; check its terms before booking."
+      ]
+    },
+    "reviews": {
+      "count": 2,
+      "rating": 4,
+      "url": "https://www.producthunt.com/products/cura-3/reviews",
+      "as_of": "2026-10-14"
+    },
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/cura-3",
+      "quotes": [
+        {
+          "author": "Raghav Mehra",
+          "text": "Once the app is trained on our preferences and we approve the plan, can we give the agent its credit card to book the flights, stays, etc?",
+          "reply": "Alto B Puthethu (Cura team): that is the direction, with your authorisation; for now Cura helps with planning and discovery."
+        },
+        {
+          "author": "Anusha Viswanadham",
+          "text": "The flight changes can really mess up your itinerary... If the agent plans around it, it's would be awesome.",
+          "reply": "Shubham Gupta: Cura launched with planning and booking (human in the loop); trip-management agents are coming."
+        }
+      ],
+      "x": {
+        "none": "We did not check X for this profile.",
+        "profile_url": "https://twitter.com/joincuraclub",
+        "search_url": "https://x.com/search?q=joincura&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Cura?",
+        "a": "An AI travel advisor that plans a trip door to door from one message: flights, stays, transfers and a daily itinerary, tailored to preferences it remembers."
+      },
+      {
+        "q": "Does Cura book flights and hotels for me?",
+        "a": "Cura's team said on Product Hunt that it launched with planning and booking with a human in the loop, and is working towards booking on your behalf once you approve a plan."
+      },
+      {
+        "q": "How much does Cura cost?",
+        "a": "Cura does not publish prices on its site (checked 14 October 2026). Product Hunt lists it as having free options."
+      },
+      {
+        "q": "Who is behind Cura?",
+        "a": "Its About page lists co-founders Shubham Gupta (CEO, IIT Delhi), Mayank Gupta (CTO, IIT Roorkee) and Hersh Singh (GTM)."
+      },
+      {
+        "q": "What happens if my flight changes?",
+        "a": "Cura says it reshuffles your stay, transfers and plans and tells the hotel. The team described trip-management agents as a next step at launch."
+      },
+      {
+        "q": "What do Product Hunt users rate it?",
+        "a": "4 out of 5 from 2 reviews as of 14 October 2026."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cura official site",
+        "url": "https://joincura.club/"
+      },
+      {
+        "label": "Cura about",
+        "url": "https://joincura.club/about.html"
+      },
+      {
+        "label": "Cura terms",
+        "url": "https://joincura.club/terms.html"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/cura-3"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/cura-4"
+      }
+    ]
+  }
+}

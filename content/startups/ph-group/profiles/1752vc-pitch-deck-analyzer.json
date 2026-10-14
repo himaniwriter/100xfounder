@@ -1,0 +1,105 @@
+{
+  "slug": "1752vc-pitch-deck-analyzer",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/1752vc-pitch-deck-analyzer",
+  "excerpt": "1752vc Pitch Deck Analyzer reviews a startup pitch deck slide by slide, the way a VC investment committee would. Pricing, alternatives and what people said on launch day.",
+  "content": "<p>1752vc Pitch Deck Analyzer, found at 1752.ai, gives founders written, slide-by-slide feedback on a pitch deck before they send it to investors. You upload the deck as a PDF and get a grade, a list of what is working and a ranked list of issues to fix, each tied to a slide. According to its makers, the feedback is calibrated to your stage and cross-checks the deck's claims against each other, flagging, for example, a revenue figure that doesn't match the pricing tiers on another slide.</p><p>It was built by 1752vc, which describes itself on Product Hunt as a go-to-market-focused VC firm and accelerator in California that receives more than 4,000 applications a year. The makers say the model was trained on more than 25,000 real decks and the investment decisions that followed them.</p><p>The analyzer launched on Product Hunt on 29 August 2026 and finished #1 for the day. As of 14 October it shows 391 points, 90 comments and 11 reviews.</p><p><em>We have not tested 1752vc Pitch Deck Analyzer ourselves. This page brings together its own site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Fundraising",
+    "platform": "Web app",
+    "starts_at": "One free analysis, then credit packs from $19",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI pitch deck review from a VC firm, with slide-by-slide feedback and a grade",
+    "maker": {"name": "Taissa Maleh", "url": "https://www.producthunt.com/@tmaleh_"},
+    "team": [
+      {"name": "Lucas Pols", "role": "GP of 1752vc (Product Hunt profile)", "url": "https://www.producthunt.com/@lucasjpols"},
+      {"name": "Taissa Maleh", "role": "Venture Partner at 1752vc (Product Hunt profile)", "url": "https://www.producthunt.com/@tmaleh_"},
+      {"name": "Ben Kahan", "role": "Principal at 1752vc (Product Hunt profile)", "url": "https://www.producthunt.com/@ben_kahan"},
+      {"name": "Grace Cupat", "url": "https://www.producthunt.com/@grace_cupat"}
+    ],
+    "ph": {"rank": 1, "votes": 391, "comments": 90, "followers": 709, "launched": "2026-08-29", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/69d56809-9ce3-4192-b91b-a167898e28ac.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "1752.ai graphic reading 'Know what investors will say, before you hit send', with a sample traction slide and a 'Why this grade?' explanation panel", "credit": "Image: 1752vc via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/6dd5fd1e-7bbb-496a-a94c-9cf950e2bffc.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "An 'Issues to Fix' list in 1752.ai, with a critical issue about a disconnect between pricing and current ARR and a suggested addition", "credit": "Image: 1752vc via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/2fe5b612-be21-46e3-9f5e-6f8c9648c4f3.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "1752.ai graphic reading 'Reviewed against 3,000+ investor attributes', showing a completed analysis with a grade and slide feedback", "credit": "Image: 1752vc via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are preparing to raise and want a first-pass investor read on your deck before real investors see it",
+        "want specific, slide-level issues (market sizing, financing logic, contradictions between slides) rather than design notes",
+        "prefer paying per analysis to a subscription: credits are sold in one-off packs and, according to the app, never expire"
+      ],
+      "not_fit": [
+        "have a deck longer than 30 slides or in a format other than PDF: the upload accepts PDFs only, up to 25 MB and 30 slides",
+        "are uneasy sharing a deck with a VC firm's tool: one experienced commenter on Product Hunt urged founders to go in with eyes open about deal-flow motives",
+        "need a free tool for many iterations: only the first analysis is free"
+      ]
+    },
+    "pricing": {
+      "intro": "1752.ai gives one free analysis, then sells credit packs. One credit is one deck analysis. Prices are in US dollars, as shown in the 1752.ai app.",
+      "url": "https://1752.ai/",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "One deck analysis"},
+        {"name": "Sprint", "price": "$19", "amount": 19, "currency": "USD", "detail": "5 deck analyses, one-off pack ('Great for iterating on one deck')"},
+        {"name": "Raise", "price": "$59", "amount": 59, "currency": "USD", "detail": "20 deck analyses, one-off pack"},
+        {"name": "Pro", "price": "$199", "amount": 199, "currency": "USD", "detail": "100 deck analyses, one-off pack, for several ventures or year-long use"}
+      ],
+      "notes": [
+        "The app says credits never expire. On Product Hunt, co-founder Lucas Pols described paid analyses as a one-time fee rather than a subscription.",
+        "Decks must be PDFs of up to 25 MB and 30 slides.",
+        "Product Hunt lists the pricing as free options."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "PitchLeague.ai", "url": "https://www.pitchleague.ai/", "what": "AI pitch deck coach with slide-by-slide feedback and a public leaderboard", "starts_at": "Free (its site says 100% free)",
+         "ph_rating": 5, "ph_reviews": 7,
+         "difference": "Free and built around scoring and a leaderboard of startups. 1752.ai is run by a VC firm and focuses on investment-committee-style reasoning and contradictions between slides."},
+        {"name": "VC Boom", "url": "https://www.vcboom.com/", "what": "Scores your deck, matches you with investors and drafts outreach emails", "starts_at": "Deck score is free; see its pricing page for the rest",
+         "ph_rating": 5, "ph_reviews": 8,
+         "difference": "Goes beyond the deck to investor matching and email outreach. 1752.ai only reviews the deck."},
+        {"name": "Exitfund", "url": "https://www.exitfund.com/", "what": "Fundraising help for startups using community and AI", "starts_at": "See its pricing page",
+         "ph_rating": 4.75, "ph_reviews": 12,
+         "difference": "A broader fundraising platform rather than a single deck-review tool."}
+      ],
+      "more": "Product Hunt also lists Go Global World and Flowlie as alternatives."
+    },
+    "reviews": {"count": 11, "rating": 5, "url": "https://www.producthunt.com/products/1752vc-pitch-deck-analysis/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/1752vc-pitch-deck-analysis",
+      "quotes": [
+        {"author": "Robert Markovski", "text": "Does the analyzer stress-test that overall financing logic as well?",
+         "reply": "Lucas Pols: it flags when the raise amount, runway, milestones and hiring or GTM plan don't add up to a fundable story."},
+        {"author": "Riya Pariyar", "text": "the market size slide... that's the one i'd want the most honest feedback on.",
+         "reply": "Taissa Maleh: the analyzer flags market sizing where the path from TAM to your real addressable market is missing."},
+        {"author": "rick segal", "text": "Folks, here are some rules you might want to consider. It's five core slides.",
+         "reply": "Lucas Pols replied that the product is free to try and further analyses are a one-time fee, not a subscription."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=1752.ai%20pitch%20deck&f=live"}
+    },
+    "faq": [
+      {"q": "What is 1752vc Pitch Deck Analyzer?", "a": "An AI tool at 1752.ai, built by the VC firm 1752vc, that reviews a pitch deck slide by slide, grades it and lists issues to fix. It launched on Product Hunt on 29 August 2026."},
+      {"q": "How much does it cost?", "a": "The first analysis is free. After that, one-off credit packs cost $19 for 5 analyses, $59 for 20 and $199 for 100, and the app says credits never expire."},
+      {"q": "What file can I upload?", "a": "A PDF of up to 25 MB and up to 30 slides."},
+      {"q": "What is the feedback based on?", "a": "According to its makers, a model trained on more than 25,000 real decks and the investor decisions that followed, reviewed against more than 3,000 investor attributes."},
+      {"q": "Who is behind it?", "a": "1752vc, which describes itself on Product Hunt as a go-to-market-focused VC firm and accelerator based in California. Its makers on Product Hunt include GP Lucas Pols, Venture Partner Taissa Maleh and Principal Ben Kahan."},
+      {"q": "How does it compare with PitchLeague.ai?", "a": "PitchLeague.ai says it is 100% free and ranks decks on a leaderboard. 1752.ai charges after the first analysis and focuses on investment-committee-style reasoning. See the comparison table above."}
+    ],
+    "sources": [
+      {"label": "1752.ai (official site and app)", "url": "https://1752.ai/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/1752vc-pitch-deck-analyzer"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/1752vc-pitch-deck-analysis"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/1752vc-pitch-deck-analysis/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/1752vc-pitch-deck-analysis/alternatives"},
+      {"label": "PitchLeague.ai", "url": "https://www.pitchleague.ai/"},
+      {"label": "VC Boom", "url": "https://www.vcboom.com/"},
+      {"label": "Exitfund", "url": "https://www.exitfund.com/"}
+    ]
+  }
+}

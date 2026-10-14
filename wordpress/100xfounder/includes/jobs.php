@@ -37,6 +37,32 @@ function xf_register_job_types() {
 }
 add_action('init', 'xf_register_job_types');
 
+/**
+ * Company details the logo backfill reads and writes over the REST API. The
+ * website is public information already; only an editor can change either.
+ */
+add_action('init', function () {
+    $can = function () { return current_user_can('manage_categories'); };
+    register_term_meta('xf_company', 'xf_logo_id', ['type' => 'integer', 'single' => true, 'show_in_rest' => true, 'auth_callback' => $can, 'sanitize_callback' => 'absint']);
+    register_term_meta('xf_company', 'xf_website', ['type' => 'string', 'single' => true, 'show_in_rest' => true, 'auth_callback' => $can, 'sanitize_callback' => 'esc_url_raw']);
+});
+
+/** The company's logo from our media library, or '' when we have none yet. */
+function xf_company_logo_url($company, $size = 'thumbnail') {
+    $term = is_object($company) ? $company : get_term_by('name', (string) $company, 'xf_company');
+    if (!$term || is_wp_error($term)) {
+        return '';
+    }
+    $id = (int) get_term_meta($term->term_id, 'xf_logo_id', true);
+    return $id ? (string) wp_get_attachment_image_url($id, $size) : '';
+}
+
+/** The company a job belongs to. */
+function xf_job_company($job_id) {
+    $terms = get_the_terms((int) $job_id, 'xf_company');
+    return $terms && !is_wp_error($terms) ? $terms[0] : null;
+}
+
 add_filter('query_vars', function ($vars) {
     $vars[] = 'xf_jobs_slug';
     return $vars;
@@ -67,6 +93,7 @@ function xf_company_fields() {
         'careers_url' => ['Official careers page', null, ''],
         'website' => ['Website', null, ''],
         'stage' => ['Stage', ['', 'Pre-seed', 'Seed', 'Series A', 'Series B', 'Series C', 'Series D+', 'Public', 'Bootstrapped']],
+        'logo_id' => ['Logo (media library ID)', null, 'Filled in from the company\'s own website icon. To replace it, upload a square logo to Media and paste its ID.'],
     ];
 }
 
@@ -327,7 +354,6 @@ function xf_sync_company_jobs(WP_Term $company) {
             '_xf_function' => xf_job_function($job['title'], $job['department']),
             '_xf_level' => xf_job_level($job['title']),
             '_xf_apply_url' => esc_url_raw($job['url']),
-            '_xf_valid_through' => gmdate('Y-m-d', max($posted, time()) + 45 * DAY_IN_SECONDS),
             '_xf_last_seen' => time(),
         ];
         if (!empty($job['salary'])) {
@@ -342,6 +368,8 @@ function xf_sync_company_jobs(WP_Term $company) {
         $existing = xf_find_job($job['id']);
         if ($existing) {
             foreach ($meta as $k => $v) update_post_meta($existing, $k, $v);
+            // No ATS feed we read publishes a closing date; drop the old synthetic one.
+            delete_post_meta($existing, '_xf_valid_through');
             if (get_post_status($existing) !== 'publish' && get_post_meta($existing, '_xf_expired', true)) {
                 delete_post_meta($existing, '_xf_expired');
                 wp_update_post(['ID' => $existing, 'post_status' => 'publish']);
@@ -404,7 +432,7 @@ function xf_sync_jobs($budget_seconds = 120) {
         }
     }
     // Manually added jobs past their "open until" date.
-    foreach (get_posts(['post_type' => 'xf_job', 'post_status' => 'publish', 'posts_per_page' => 200, 'fields' => 'ids', 'meta_query' => [['key' => '_xf_valid_through', 'value' => gmdate('Y-m-d'), 'compare' => '<', 'type' => 'DATE']]]) as $id) {
+    foreach (get_posts(['post_type' => 'xf_job', 'post_status' => 'publish', 'posts_per_page' => 200, 'fields' => 'ids', 'meta_query' => ['relation' => 'AND', ['key' => '_xf_valid_through', 'value' => gmdate('Y-m-d'), 'compare' => '<', 'type' => 'DATE'], ['key' => '_xf_source', 'compare' => 'NOT EXISTS']]]) as $id) {
         xf_expire_job($id);
     }
     return $results;
@@ -528,6 +556,15 @@ function xf_job_filters_from_request() {
     return $f;
 }
 
+/** Headline for a clean jobs URL ("AI & ML jobs in Bengaluru"), or '' on the main board. */
+function xf_job_landing_heading(array $f) {
+    $remote = $f['city'] === 'Remote' || $f['workplace'] === 'Remote';
+    $in_city = $f['city'] && $f['city'] !== 'Remote' ? ' in ' . $f['city'] : '';
+    if ($f['function']) return ($remote ? 'Remote ' : '') . $f['function'] . ' jobs' . $in_city;
+    if ($remote) return 'Remote jobs' . $in_city;
+    return $in_city ? 'Jobs' . $in_city : '';
+}
+
 function xf_job_query_args(array $f, $per_page = 30, $paged = 1) {
     $meta = [];
     if ($f['function']) $meta[] = ['key' => '_xf_function', 'value' => $f['function']];
@@ -588,17 +625,21 @@ add_action('wp_head', function () {
     $data = array_filter([
         '@context' => 'https://schema.org',
         '@type' => 'JobPosting',
-        'title' => wp_strip_all_tags(get_the_title()),
-        'description' => wp_kses_post(get_post_field('post_content', $id)) ?: wp_strip_all_tags(get_the_title()),
+        'title' => xf_schema_text(get_the_title()),
+        'description' => wp_kses_post(get_post_field('post_content', $id)) ?: xf_schema_text(get_the_title()),
+        // The employer's own reference for the role, so Google can tell two near-identical posts apart.
+        'identifier' => ($ext = get_post_meta($id, '_xf_external_id', true)) ? ['@type' => 'PropertyValue', 'name' => $company ? $company->name : get_post_meta($id, '_xf_company_name', true), 'value' => (string) $ext] : null,
         'datePosted' => get_the_date('c'),
-        'validThrough' => ($v = get_post_meta($id, '_xf_valid_through', true)) ? $v . 'T23:59:59+05:30' : null,
+        // Only a real closing date: an editor's "Open until" on a manual job. ATS feeds don't publish one.
+        'validThrough' => !get_post_meta($id, '_xf_source', true) && ($v = get_post_meta($id, '_xf_valid_through', true)) ? $v . 'T23:59:59+05:30' : null,
         'employmentType' => $types[get_post_meta($id, '_xf_type', true)] ?? 'FULL_TIME',
-        'hiringOrganization' => array_filter(['@type' => 'Organization', 'name' => $company ? $company->name : get_post_meta($id, '_xf_company_name', true), 'sameAs' => $company ? (get_term_meta($company->term_id, 'xf_website', true) ?: get_term_meta($company->term_id, 'xf_careers_url', true)) : null]),
-        'jobLocation' => $remote ? null : ['@type' => 'Place', 'address' => ['@type' => 'PostalAddress', 'addressLocality' => $city && $city !== 'Other' ? $city : get_post_meta($id, '_xf_location', true), 'addressCountry' => 'IN']],
+        'hiringOrganization' => array_filter(['@type' => 'Organization', 'name' => $company ? $company->name : get_post_meta($id, '_xf_company_name', true), 'sameAs' => $company ? (get_term_meta($company->term_id, 'xf_website', true) ?: get_term_meta($company->term_id, 'xf_careers_url', true)) : null, 'logo' => $company ? (xf_company_logo_url($company, 'full') ?: null) : null]),
+        'jobLocation' => $remote ? null : ['@type' => 'Place', 'address' => array_filter(['@type' => 'PostalAddress', 'addressLocality' => $city && $city !== 'Other' ? $city : get_post_meta($id, '_xf_location', true), 'addressRegion' => function_exists('xf_city_region') ? (xf_city_region($city) ?: null) : null, 'addressCountry' => 'IN'])],
         'jobLocationType' => $remote ? 'TELECOMMUTE' : null,
         'applicantLocationRequirements' => $remote ? ['@type' => 'Country', 'name' => 'India'] : null,
         'baseSalary' => $min ? ['@type' => 'MonetaryAmount', 'currency' => get_post_meta($id, '_xf_salary_currency', true) ?: 'INR', 'value' => ['@type' => 'QuantitativeValue', 'minValue' => $min, 'maxValue' => (float) get_post_meta($id, '_xf_salary_max', true) ?: $min, 'unitText' => 'YEAR']] : null,
         'directApply' => false,
+        'url' => get_permalink($id),
     ]);
     echo '<script type="application/ld+json">' . wp_json_encode($data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) . "</script>\n";
 }, 5);
@@ -606,10 +647,7 @@ add_action('wp_head', function () {
 /** "Staff Engineer at Databricks, Bengaluru": job titles alone repeat across companies. */
 add_filter('document_title_parts', function ($parts) {
     if (is_singular('xf_job')) {
-        $id = get_queried_object_id();
-        $company = (string) get_post_meta($id, '_xf_company_name', true);
-        $city = (string) get_post_meta($id, '_xf_city', true);
-        $parts['title'] = get_the_title($id) . ($company ? ' at ' . $company : '') . ($city ? ', ' . $city : '');
+        $parts['title'] = xf_job_seo_title(get_queried_object_id());
     }
     return $parts;
 });
@@ -663,13 +701,181 @@ add_filter('the_content', function ($content) {
     return is_singular('xf_job') ? xf_job_clean_html($content) : $content;
 }, 20);
 
-/** Expired jobs: noindex while they still resolve (e.g. via a cached link). */
+/* ---- Job page SEO: indexability, title and description from structured fields ---- */
+
+/** Jobs older than this stop being indexed and leave the sitemap. */
+const XF_JOB_INDEX_DAYS = 30;
+
+/** Role/city landing pages need this many open jobs to be indexed; company pages need XF_COMPANY_INDEX_MIN. */
+const XF_LANDING_INDEX_MIN = 10;
+const XF_COMPANY_INDEX_MIN = 5;
+
+/** True when a job page should be indexed: published, not expired, posted in the last 30 days. */
+function xf_job_is_indexable($id) {
+    $id = (int) $id;
+    if (get_post_type($id) !== 'xf_job' || get_post_status($id) !== 'publish' || get_post_meta($id, '_xf_expired', true)) {
+        return false;
+    }
+    $posted = (int) get_post_time('U', true, $id);
+    return $posted >= time() - XF_JOB_INDEX_DAYS * DAY_IN_SECONDS;
+}
+
+/** The city as shown in titles, or '' when we only know "Other". */
+function xf_job_city_label($id) {
+    $city = (string) get_post_meta($id, '_xf_city', true);
+    return $city === 'Other' ? '' : $city;
+}
+
+/** "Role at Company, City", kept to 60 characters (drops the city, then shortens the role). */
+function xf_job_seo_title($id) {
+    $role = trim(wp_strip_all_tags(get_the_title($id)));
+    $company = (string) get_post_meta($id, '_xf_company_name', true);
+    $city = xf_job_city_label($id);
+    $at = $company ? ' at ' . $company : '';
+    $full = $role . $at . ($city ? ', ' . $city : '');
+    if (mb_strlen($full) <= 60) {
+        return $full;
+    }
+    if (mb_strlen($role . $at) <= 60) {
+        return $role . $at;
+    }
+    $room = max(20, 60 - mb_strlen($at) - 1);
+    return rtrim(mb_substr($role, 0, $room)) . '…' . $at;
+}
+
+/** "Acme is hiring a Senior Engineer in Bengaluru. Full-time, hybrid, senior level. Apply on Acme's careers page." */
+function xf_job_seo_description($id) {
+    $role = trim(wp_strip_all_tags(get_the_title($id)));
+    $company = (string) get_post_meta($id, '_xf_company_name', true) ?: 'This company';
+    $city = xf_job_city_label($id);
+    $where = $city === 'Remote' ? ' (remote, India)' : ($city ? ' in ' . $city : ' in India');
+    $article = preg_match('/^[aeiou]/i', $role) ? 'an' : 'a';
+    $facts = array_filter([
+        (string) get_post_meta($id, '_xf_type', true),
+        ($w = (string) get_post_meta($id, '_xf_workplace', true)) && $city !== 'Remote' ? strtolower($w) : '',
+        ($l = (string) get_post_meta($id, '_xf_level', true)) ? strtolower($l) . ' level' : '',
+        xf_job_salary_label($id),
+    ]);
+    $text = sprintf('%s is hiring %s %s%s.', $company, $article, $role, $where);
+    if ($facts) {
+        $text .= ' ' . ucfirst(implode(', ', $facts)) . '.';
+    }
+    return $text . " Apply on {$company}'s careers page.";
+}
+
+/** The meta/og description reads the excerpt first: give job pages the structured one, in memory only. */
+add_action('wp', function () {
+    if (is_admin() || !is_singular('xf_job')) {
+        return;
+    }
+    $post = get_queried_object();
+    if ($post instanceof WP_Post) {
+        $post->post_excerpt = xf_job_seo_description($post->ID);
+    }
+});
+
+/** Open roles behind a landing page's filters (role, city, remote). */
+function xf_job_landing_count(array $f) {
+    $q = new WP_Query(array_merge(xf_job_query_args($f, 1, 1), ['fields' => 'ids']));
+    return (int) $q->found_posts;
+}
+
+/** Whether a role/city landing page (or a company page) has enough open roles to be indexed. */
+function xf_job_landing_indexable(array $f) {
+    return xf_job_landing_count($f) >= XF_LANDING_INDEX_MIN;
+}
+
+function xf_company_page_indexable($term) {
+    $term = $term instanceof WP_Term ? $term : get_term((int) $term, 'xf_company');
+    if (!$term || is_wp_error($term)) {
+        return false;
+    }
+    $q = new WP_Query(['post_type' => 'xf_job', 'post_status' => 'publish', 'posts_per_page' => 1, 'fields' => 'ids', 'tax_query' => [['taxonomy' => 'xf_company', 'terms' => $term->term_id]]]);
+    return (int) $q->found_posts >= XF_COMPANY_INDEX_MIN;
+}
+
+/**
+ * A 2–3 sentence intro for an indexable landing page, built only from the live
+ * job data: the count, the companies with most openings, and the main cities.
+ * Returns '' for thin pages. Pass a role/city filter array or an xf_company term.
+ */
+function xf_job_landing_intro($context) {
+    $is_company = $context instanceof WP_Term;
+    if ($is_company) {
+        $args = ['post_type' => 'xf_job', 'post_status' => 'publish', 'posts_per_page' => 500, 'fields' => 'ids', 'no_found_rows' => true, 'tax_query' => [['taxonomy' => 'xf_company', 'terms' => $context->term_id]]];
+        $min = XF_COMPANY_INDEX_MIN;
+    } else {
+        $args = array_merge(xf_job_query_args((array) $context, 500, 1), ['fields' => 'ids', 'no_found_rows' => true]);
+        $min = XF_LANDING_INDEX_MIN;
+    }
+    $ids = get_posts($args);
+    $n = count($ids);
+    if ($n < $min) {
+        return '';
+    }
+    $companies = $cities = $functions = [];
+    foreach ($ids as $id) {
+        $c = (string) get_post_meta($id, '_xf_company_name', true);
+        $city = xf_job_city_label($id);
+        $fn = (string) get_post_meta($id, '_xf_function', true);
+        if ($c) $companies[$c] = ($companies[$c] ?? 0) + 1;
+        if ($city) $cities[$city] = ($cities[$city] ?? 0) + 1;
+        if ($fn) $functions[$fn] = ($functions[$fn] ?? 0) + 1;
+    }
+    arsort($companies);
+    arsort($cities);
+    arsort($functions);
+    $list = function ($a, $k) {
+        $a = array_slice(array_keys($a), 0, $k);
+        return count($a) > 1 ? implode(', ', array_slice($a, 0, -1)) . ' and ' . end($a) : (string) ($a[0] ?? '');
+    };
+    $updated = wp_date('j F Y');
+    if ($is_company) {
+        $s = sprintf('%s has %d open roles in India listed here, taken from its official careers page.', $context->name, $n);
+        if ($functions) $s .= sprintf(' Most are in %s', $list($functions, 3)) . ($cities ? sprintf(', based in %s.', $list($cities, 3)) : '.');
+        return $s . sprintf(' The list was last synced on %s; apply on the company\'s own site.', $updated);
+    }
+    $context = (array) $context;
+    $label = trim(($context['function'] ? $context['function'] . ' ' : '') . 'jobs' . ($context['city'] && $context['city'] !== 'Remote' ? ' in ' . $context['city'] : ($context['city'] === 'Remote' || $context['workplace'] === 'Remote' ? ' (remote)' : '')));
+    $s = sprintf('There are %d open %s on 100xFounder right now, from company careers pages and their official hiring feeds.', $n, $label);
+    $s .= sprintf(' The most openings are at %s.', $list($companies, 3));
+    if (!$context['city'] && count($cities) > 1) {
+        $s .= sprintf(' Most roles are in %s.', $list($cities, 3));
+    }
+    return $s . sprintf(' Updated %s.', $updated);
+}
+
+/** Noindex: old or closed jobs, and thin landing and company pages. Links stay followable. */
 add_filter('wp_robots', function ($robots) {
-    if (is_singular('xf_job') && get_post_meta(get_the_ID(), '_xf_expired', true)) {
+    $thin = false;
+    if (is_singular('xf_job')) {
+        $thin = !xf_job_is_indexable(get_queried_object_id());
+    } elseif (get_query_var('xf_jobs_slug')) {
+        $thin = !xf_job_landing_indexable(xf_job_filters_from_request());
+    } elseif (is_tax('xf_company')) {
+        $thin = !xf_company_page_indexable(get_queried_object());
+    }
+    if ($thin) {
+        unset($robots['index'], $robots['max-image-preview']);
         $robots['noindex'] = true;
+        $robots['follow'] = true;
     }
     return $robots;
-});
+}, 20);
+
+/** The xf_job sitemap lists only open jobs from the last 30 days. */
+add_filter('wp_sitemaps_posts_query_args', function ($args, $post_type) {
+    if ($post_type === 'xf_job') {
+        $args['date_query'] = [['after' => gmdate('Y-m-d H:i:s', time() - XF_JOB_INDEX_DAYS * DAY_IN_SECONDS), 'column' => 'post_date_gmt', 'inclusive' => true]];
+        $args['meta_query'] = [['key' => '_xf_expired', 'compare' => 'NOT EXISTS']];
+    }
+    return $args;
+}, 20, 2);
+
+/** IndexNow skips the same jobs. */
+add_filter('xf_is_noindexed', function ($noindex, $post_id) {
+    return $noindex || (get_post_type($post_id) === 'xf_job' && !xf_job_is_indexable($post_id));
+}, 10, 2);
 
 /* ---- Job alerts (stored; sending comes when a newsletter sender is chosen) ---- */
 

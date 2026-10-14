@@ -2,9 +2,9 @@
   "mcpServers": {
     "100xfounder": {
       "type": "http",
-      "url": "https://100xfounder.com/wp-json/xf/v1/mcp",
+      "url": "https://100xfounder.com/wp-json/xf-claude/v1/mcp",
       "headers": {
-        "Authorization": "Basic ${XF_MCP_AUTH}"
+        "Authorization": "Bearer ${XF_MCP_TOKEN}"
       }
     }
   }

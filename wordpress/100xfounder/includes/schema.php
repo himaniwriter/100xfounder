@@ -68,6 +68,7 @@ function xf_install_schema() {
   slide_count tinyint(3) unsigned NOT NULL,
   payload longtext NOT NULL,
   status varchar(20) NOT NULL DEFAULT 'ready',
+  planned_at datetime DEFAULT NULL,
   posted_at datetime DEFAULT NULL,
   created_at datetime NOT NULL,
   updated_at datetime NOT NULL,
@@ -100,6 +101,16 @@ function xf_install_schema() {
   PRIMARY KEY  (id),
   KEY type_status (type,status,priority)
 ) $charset;");
+
+    if (function_exists('xf_ratings_install')) {
+        xf_ratings_install();
+    }
+    if (function_exists('xf_reviews_install')) {
+        xf_reviews_install();
+    }
+    if (function_exists('xf_camp_install')) {
+        xf_camp_install();
+    }
 
     update_option('xf_db_version', XF_DB_VERSION);
 }

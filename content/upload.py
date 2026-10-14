@@ -17,6 +17,7 @@ import datetime as dt
 import glob
 import json
 import os
+import random
 import sys
 import time
 import urllib.error
@@ -24,18 +25,31 @@ import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEDGER = os.path.join(HERE, "uploaded.json")
-# Ten slots spread over the day; --per-day N uses the first N in this spread order.
-SLOTS_IST = ["07:00", "14:00", "10:30", "17:30", "21:00", "08:45", "12:15", "15:45", "19:15", "22:30"]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
+# Posts go out between 07:00 and 22:30 IST, at times that differ every day and
+# never fall within 90 minutes of each other: a steady trickle, not a batch at
+# fixed minutes (owner's decision, 6 Oct 2026: four a day at random times).
+DAY_START, DAY_END, MIN_GAP = 7 * 60, 22 * 60 + 30, 90
+
+
+def day_times(day, per_day):
+    """Random publish times for one day, the same ones every time it is asked
+    (seeded by the date), so a re-run lines up with what is already scheduled."""
+    rng = random.Random("xf-" + day.isoformat())
+    for _ in range(500):
+        mins = sorted(rng.randint(DAY_START, DAY_END) for _ in range(per_day))
+        if all(b - a >= MIN_GAP for a, b in zip(mins, mins[1:])):
+            break
+    else:  # too many posts for the window: fall back to an even spread
+        step = (DAY_END - DAY_START) // max(per_day, 1)
+        mins = [DAY_START + i * step + rng.randint(0, max(step // 3, 1)) for i in range(per_day)]
+    return [dt.datetime(day.year, day.month, day.day, m // 60, m % 60, tzinfo=IST) for m in mins]
 
 
 def schedule(n, per_day, start):
     slots, day = [], start
     while len(slots) < n:
-        for t in SLOTS_IST[:per_day]:
-            h, m = map(int, t.split(":"))
-            slots.append(dt.datetime(day.year, day.month, day.day, h, m, tzinfo=IST))
-        slots[-min(per_day, len(SLOTS_IST)):] = sorted(slots[-min(per_day, len(SLOTS_IST)):])
+        slots += day_times(day, per_day)
         day += dt.timedelta(days=1)
     return slots[:n]
 
@@ -43,7 +57,7 @@ def schedule(n, per_day, start):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("files", nargs="*")
-    ap.add_argument("--per-day", type=int, default=10)
+    ap.add_argument("--per-day", type=int, default=4)
     ap.add_argument("--start", default=(dt.date.today() + dt.timedelta(days=1)).isoformat())
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--pause", type=float, default=20, help="seconds between posts")

@@ -1,0 +1,125 @@
+{
+  "slug": "portfolio-lab-2",
+  "ph_url": "https://www.producthunt.com/posts/portfolio-lab-2",
+  "also_covers": ["https://www.producthunt.com/posts/portfolio-lab"],
+  "existing_listing_slug": null,
+  "website": "https://portfoliolab.ai/",
+  "excerpt": "Portfolio Lab builds rules-based investment strategies with AI, tests them on unseen data and live paper trading, and runs them in your own brokerage.",
+  "content": "<p>Portfolio Lab is an investing tool that uses AI to build rules-based investment strategies, strategies that rotate between assets, hedge, or move to cash by fixed rules, and then tests them before any money is involved. Its site says every strategy is validated on data it was not built on and in a live paper portfolio with realistic fills, fees and trading costs. You can connect a brokerage account (Schwab, E*Trade, Webull, Public, tastytrade or Moomoo; Robinhood through its agentic trading) and choose how much of the account a strategy runs; the rest of the account is left alone. AI agents can connect too, to fetch the day's trades.</p><p>Portfolio Lab is offered by alphaAI Capital Management LLC, which its site describes as an investment adviser registered with the US Securities and Exchange Commission. The site adds that registration does not imply a level of skill, that all investing involves risk including loss of principal, and that live performance is shown only inside a logged-in account under SEC rules.</p><p>Its founder on Product Hunt is Rich Sun, who describes himself as a hedge fund professional. Portfolio Lab launched there on 10 August 2026, hunted by Ben Lang, and finished #2 for the day with 295 upvotes and 31 comments (as of 14 October 2026). An earlier Product Hunt launch of the same product no longer loads.</p><p><em>We have not tested Portfolio Lab ourselves, and nothing on this page is investment advice. This page brings together its official site, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Automated investing",
+    "platform": "Web app",
+    "starts_at": "Free plan; Analyst $8/month",
+    "schema_category": "FinanceApplication",
+    "summary_short": "Builds and validates rules-based investment strategies with AI and runs them in your own brokerage",
+    "maker": {"name": "Rich Sun", "url": "https://www.producthunt.com/@rich_sun"},
+    "team": [
+      {"name": "Rich Sun", "role": "Founder; also building alphaAI", "url": "https://www.producthunt.com/@rich_sun"}
+    ],
+    "ph": {"rank": 2, "votes": 295, "comments": 31, "followers": 596, "launched": "2026-08-10", "as_of": "2026-10-14"},
+    "video_url": "https://youtu.be/b-yl9vZEBVM",
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/a7481a55-cc44-4e97-a32b-91521c2b7293.png?auto=format&fit=max&w=1400", "w": 2480, "h": 1484, "credit": "Image: Portfolio Lab on Product Hunt",
+       "alt": "Portfolio Lab graphic 'AI investing, done responsibly' with an agent fetching a sample daily plan of target weights and trades"},
+      {"url": "https://ph-files.imgix.net/c073c581-f563-4f07-b61a-fd42e5ddb992.png?auto=format&fit=max&w=1400", "w": 2480, "h": 1484, "credit": "Image: Portfolio Lab on Product Hunt",
+       "alt": "Portfolio Lab 'Build strategies' screen asking for a goal: steady long-term growth, protect against big losses, ride market trends or buy the dips"},
+      {"url": "https://ph-files.imgix.net/0c89c2e9-abc1-42f3-93f1-08daaeaa6a65.png?auto=format&fit=max&w=1400", "w": 2480, "h": 1484, "credit": "Image: Portfolio Lab on Product Hunt",
+       "alt": "Portfolio Lab graphic 'See how it wins. And where it struggles.' with a hypothetical strategy chart showing a drawdown and its known failure modes"},
+      {"url": "https://ph-files.imgix.net/544c1038-c35e-4cc3-b207-4e8755848473.png?auto=format&fit=max&w=1400", "w": 2480, "h": 1484, "credit": "Image: Portfolio Lab on Product Hunt",
+       "alt": "Portfolio Lab graphic 'Validated in live markets, not just backtested' listing live prices, realistic fills, daily tracking and trading costs"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Rich Sun says AI made building investment strategies easy, but telling a good one from a lucky one still takes expertise. To test this, his team had Claude build 1,292 strategies; he says it took him days of auditing the code line by line to find subtle errors inflating the results, and once they were fixed nearly all the strategies lost their edge.",
+        "Portfolio Lab is his answer: strategies are tested on unseen data and in live markets before they are offered, and you, or your AI agent, deploy only those vetted strategies in your own brokerage account."
+      ],
+      "attribution": "Rich Sun, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/portfolio-lab?comment=5754154"
+    },
+    "use_cases": [
+      "Testing a strategy idea with virtual money before committing real money",
+      "Running a rules-based strategy on part of an existing brokerage account",
+      "Letting your own AI agent fetch a day's target positions and trades"
+    ],
+    "audience": {
+      "fit": [
+        "already have an account at one of the supported US brokerages",
+        "want rules-based strategies with their full record of drawdowns shown",
+        "want to try strategies on paper first for free"
+      ],
+      "not_fit": [
+        "want day trading: the founder says strategies trade once a day",
+        "use a brokerage outside the supported list",
+        "want personal financial advice: the site says Portfolio Lab itself does not provide personalised advice"
+      ]
+    },
+    "pricing": {
+      "intro": "Portfolio Lab lists three plans on its home page. Prices are in US dollars.",
+      "url": "https://portfoliolab.ai/#pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Explorer", "price": "Free", "amount": 0, "currency": "USD", "detail": "Build strategies and test them in live markets with virtual money; ready-made and custom strategies across 1,000+ assets; a live paper portfolio; core metrics and limited weekly usage"},
+        {"name": "Analyst", "price": "$8/month", "amount": 8, "currency": "USD", "detail": "Your strategies traded in your own brokerage; agentic investing with exact position sizes; deeper analytics and unlimited usage; 1 brokerage connection, 1 strategy per account; stock and ETF strategies"},
+        {"name": "Quant", "price": "$24/month", "amount": 24, "currency": "USD", "detail": "Everything in Analyst plus leveraged and crypto ETF strategies, full analytics, 3 brokerage connections and 5 strategies per account"}
+      ],
+      "notes": ["No credit card is needed to start, according to the site."]
+    },
+    "alternatives": {
+      "intro": "Other services that automate rules-based strategies. Prices are from each company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "Composer", "url": "https://www.composer.trade/", "what": "No-code platform to build, backtest and automate trading strategies, with an AI assistant", "starts_at": "Starter $0; Advanced $10/month",
+         "difference": "You trade through a Composer account; Portfolio Lab runs strategies inside the brokerage account you already have."},
+        {"name": "Surmount", "url": "https://surmount.ai/", "what": "Marketplace of automated investment strategies with external account connections", "starts_at": "Free; Core $5/month",
+         "difference": "A marketplace of strategies from different creators; Portfolio Lab builds and validates strategies itself."}
+      ]
+    },
+    "reviews": {"count": 1, "rating": 5, "url": "https://www.producthunt.com/products/portfolio-lab/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["The experiment showing how many AI-built strategies were just lucky", "A free plan that lets you see a strategy work before paying"],
+        "asked": ["How slippage and trading costs are handled (modelled from academic research, with signals lagged at least a day, the founder said)", "What happens if a connected agent drops or runs late (strategies trade once a day, so an hour's delay still executes the same plan)", "Who decides whether a drawdown means a strategy is broken (left to the operator, deliberately)"],
+        "criticised": ["One commenter noted the free plan is limited to one strategy"]
+      },
+      "quotes": [
+        {"text": "I personally want to see it prove itself before committing to paid plans so thanks for the forever free plan", "author": "Richard Acheampong", "url": "https://www.producthunt.com/products/portfolio-lab?comment=5775343"},
+        {"text": "how do your quantitative models factor in real-world execution risks like slippage, liquidity drops, or latency", "author": "Tehreem Fatima", "url": "https://www.producthunt.com/products/portfolio-lab?comment=5774660"}
+      ]
+    },
+    "pros": [
+      "Free paper-trading plan with no credit card",
+      "Strategies run in your own brokerage, only on the amount you set",
+      "Publishes drawdowns and known failure modes for each strategy",
+      "Low monthly prices"
+    ],
+    "cons": [
+      "Live performance is visible only after signing in",
+      "Limited to a list of US brokerages",
+      "Analyst allows one strategy per connected account"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/portfolio-lab",
+      "quotes": [
+        {"author": "Priya K", "url": "https://www.producthunt.com/products/portfolio-lab?comment=5775869", "text": "Asked how connection drops between a user's agent and the API could cause missed orders.",
+         "reply": "Rich Sun replied that strategies trade once per day, so if an agent runs an hour late it still executes the same daily plan."}
+      ],
+      "x": {"none": "We found no posts about Portfolio Lab on X yet.", "search_url": "https://x.com/search?q=portfoliolab.ai&f=live"}
+    },
+    "faq": [
+      {"q": "What is Portfolio Lab?", "a": "An AI tool that builds rules-based investment strategies, tests them on unseen data and in a live paper portfolio, and can run them in your own brokerage account. It is offered by alphaAI Capital Management LLC."},
+      {"q": "How much does Portfolio Lab cost?", "a": "Explorer is free (paper trading). Analyst is $8 a month and Quant is $24 a month."},
+      {"q": "Do I have to move my money?", "a": "No. According to the site, your money stays in your own brokerage, Portfolio Lab trades only the amount you set and never touches your other holdings."},
+      {"q": "Which brokerages does it support?", "a": "Schwab, E*Trade, Webull, Public, tastytrade and Moomoo, and Robinhood through Robinhood Agentic Trading."},
+      {"q": "How often do strategies trade?", "a": "Once a day, according to the founder: it is meant for investing, not day trading."},
+      {"q": "Is Portfolio Lab investment advice?", "a": "The site says Portfolio Lab is for informational and educational purposes and does not itself provide personalised investment advice. All investing involves risk, including loss of principal."}
+    ],
+    "sources": [
+      {"label": "Portfolio Lab official site and pricing", "url": "https://portfoliolab.ai/"},
+      {"label": "Portfolio Lab About page", "url": "https://portfoliolab.ai/about"},
+      {"label": "Portfolio Lab contact page and disclosures", "url": "https://portfoliolab.ai/contact"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/portfolio-lab?launch=portfolio-lab-2"},
+      {"label": "Composer pricing", "url": "https://www.composer.trade/pricing"},
+      {"label": "Surmount pricing", "url": "https://surmount.ai/pricing"}
+    ]
+  }
+}

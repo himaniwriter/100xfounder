@@ -1,0 +1,185 @@
+{
+  "slug": "wobo-2-0",
+  "ph_url": "https://www.producthunt.com/posts/wobo-2-0",
+  "existing_listing_slug": null,
+  "website": "https://www.wobo.ai/",
+  "excerpt": "Wobo is an AI job-search agent that finds matching roles and applies with a resume and cover letter tailored to each. Free for 5 jobs a day; paid from $34.99.",
+  "content": "<p>Wobo is an AI recruiter for job seekers. You upload your CV, answer a few questions and chat with it, and Wobo scans job listings every day for roles that match your experience. You can swipe through the matches yourself, with a match score, salary range and company ratings on each card, or let its Autopilot mode choose and apply for you. Each application gets a resume and cover letter tailored to the job, and a feature it calls Wobo Persona answers application questions in your own writing style rather than generic AI phrasing.</p><p>Wobo says it scans more than 50 sources and pre-vets every job to filter out ghost listings. It also offers free tools: an AI resume builder, a cover letter generator and an ATS resume checker that scores a resume against more than 24 criteria.</p><p>The free plan applies to 5 jobs a day. Unlimited ($34.99 a month) lets you swipe to apply without a daily cap, and Autopilot ($44.99 a month) finds and applies for you, with a 5-day free trial. The company says it is made in Brooklyn, New York. Its latest Product Hunt launch, on 15 June 2026, finished #2 for the day; the Wobo AI product page there has about 1,000 followers and two reviews.</p><p>Wobo - AI Job Search launched on Product Hunt on 15 June 2026 and finished #2 for the day, with 314 upvotes and 47 comments. It has 2 Product Hunt reviews averaging 5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Wobo ourselves. This page brings together its official site, pricing page and privacy policy, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Jobs and careers",
+    "platform": "Web app",
+    "starts_at": "Free (5 applications a day); Unlimited $34.99/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI job-search agent that finds matching roles and applies in your voice",
+    "use_cases": [
+      "Applying to many matching jobs without filling in each form",
+      "Getting a resume and cover letter tailored to every application",
+      "Swiping through pre-vetted matches with salary and company ratings",
+      "Checking a resume against ATS criteria before applying",
+      "Keeping a job search running while you work or sleep"
+    ],
+    "audience": {
+      "fit": [
+        "are applying to a large number of roles and the forms take most of your time",
+        "want tailored resumes and cover letters without writing each one",
+        "want to choose jobs yourself but apply in one swipe"
+      ],
+      "not_fit": [
+        "apply to a handful of carefully chosen roles, where writing yourself may serve you better",
+        "are uncomfortable with an AI submitting applications in your name",
+        "look mainly for jobs in India: the examples on the site are US and global tech companies"
+      ]
+    },
+    "pricing": {
+      "intro": "Wobo has a free plan and two monthly paid plans; quarterly billing is also offered at a discount. Prices are from wobo.ai, in US dollars.",
+      "url": "https://www.wobo.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "5 jobs a day applied by Wobo, basic matching, AI-tailored resume and cover letters, basic Persona, 2 AI cover letters"
+        },
+        {
+          "name": "Unlimited",
+          "price": "$34.99/month",
+          "amount": 34.99,
+          "currency": "USD",
+          "detail": "You choose the jobs and swipe to apply; unlimited applications, advanced matching, advanced voice Persona, unlimited cover letters, priority support"
+        },
+        {
+          "name": "Autopilot",
+          "price": "$44.99/month",
+          "amount": 44.99,
+          "currency": "USD",
+          "detail": "Wobo finds and applies for you with deep AI matching; 5-day free trial"
+        }
+      ]
+    },
+    "alternatives": {
+      "intro": "Other AI tools that help apply to jobs. Prices come from each product's own page, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "LazyApply",
+          "url": "https://lazyapply.com/",
+          "what": "Browser tool that auto-applies to jobs on major job boards",
+          "starts_at": "$99/year (Basic, 15 applications a day)",
+          "difference": "Priced per year with daily application caps; Wobo focuses on tailored resumes and answers in your voice."
+        },
+        {
+          "name": "Simplify",
+          "url": "https://simplify.jobs/",
+          "what": "Free browser extension that autofills applications and tracks them",
+          "starts_at": "Free",
+          "difference": "Helps you fill forms faster but you still apply yourself; Wobo can apply for you."
+        }
+      ]
+    },
+    "pros": [
+      "Free plan that still applies to 5 jobs a day",
+      "Tailored resume and cover letter for each application",
+      "Answers written in your style rather than generic AI text",
+      "Choice between swiping yourself and full Autopilot"
+    ],
+    "cons": [
+      "Autopilot sends applications in your name, so mistakes go out under it",
+      "Monthly prices are higher than some yearly-priced rivals",
+      "Job examples on the site lean towards US tech companies"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/wobo-ai",
+      "x": {
+        "none": "We found no posts about Wobo's job search on X to link yet.",
+        "search_url": "https://x.com/search?q=wobo.ai&f=live",
+        "profile_url": "https://x.com/Woboai"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Wobo?",
+        "a": "An AI job-search agent. It scans job listings daily, matches them to your experience and applies with a tailored resume and cover letter, either after you swipe or fully on Autopilot."
+      },
+      {
+        "q": "Is Wobo free?",
+        "a": "Yes, the free plan applies to 5 jobs a day. Unlimited costs $34.99 a month and Autopilot $44.99 a month, with a 5-day free trial of Autopilot."
+      },
+      {
+        "q": "How is Wobo different from other AI apply tools?",
+        "a": "Wobo says its Persona feature writes answers in your own voice, and that it pre-vets every listing to remove ghost jobs before they reach your feed."
+      },
+      {
+        "q": "Does Wobo have free resume tools?",
+        "a": "Yes: an AI resume builder, an AI cover letter generator and an ATS resume checker that scores your resume against more than 24 criteria."
+      },
+      {
+        "q": "What are the alternatives to Wobo?",
+        "a": "LazyApply, which auto-applies on job boards from $99 a year, or Simplify, a free extension that autofills applications."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Wobo official site",
+        "url": "https://www.wobo.ai/"
+      },
+      {
+        "label": "Wobo pricing",
+        "url": "https://www.wobo.ai/pricing"
+      },
+      {
+        "label": "Wobo privacy policy",
+        "url": "https://www.wobo.ai/privacy"
+      },
+      {
+        "label": "Product Hunt page and launch discussion",
+        "url": "https://www.producthunt.com/products/wobo-ai"
+      },
+      {
+        "label": "LazyApply pricing",
+        "url": "https://lazyapply.com/pricing"
+      },
+      {
+        "label": "Simplify Copilot",
+        "url": "https://simplify.jobs/copilot"
+      }
+    ],
+    "reviews": {
+      "count": 2,
+      "rating": 5,
+      "url": "https://www.producthunt.com/products/wobo-ai/reviews",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/2c25fe46-3875-4bf6-ba88-39210962b9a8.png?auto=format&fit=max&w=1400",
+        "alt": "Wobo banner 'Companies Have Recruiters. Now You Do Too.' with an illustrated figure walking towards a sunset",
+        "credit": "Image: Wobo on Product Hunt",
+        "w": 2400,
+        "h": 1264
+      }
+    ],
+    "ph": {
+      "rank": 2,
+      "votes": 314,
+      "comments": 47,
+      "followers": 1011,
+      "launched": "2026-06-15",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Taha Keles",
+        "role": "Co-Founder of Wobo",
+        "url": "https://www.producthunt.com/@taha_keles"
+      },
+      {
+        "name": "Serdar Aksoy",
+        "role": "Co-founder of Wobo.ai",
+        "url": "https://www.producthunt.com/@serdaraksoy"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes."
+}

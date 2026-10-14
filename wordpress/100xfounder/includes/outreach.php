@@ -219,25 +219,18 @@ function xf_suppress_email($email, $reason) {
 }
 
 /**
- * Stops the sequence for anyone who replied and suppresses addresses that
- * bounced, by reading the outreach mailbox over IMAP (needs PHP's imap extension).
+ * Reads the outreach mailbox over IMAP (needs PHP's imap extension) and reports
+ * which of $emails replied and which bounced since $since (a Unix time).
+ * Shared by the founder sequence and the campaign dashboard.
  */
-function xf_check_replies() {
-    global $wpdb;
+function xf_imap_scan(array $emails, $since) {
     if (!function_exists('imap_open')) {
         return ['skipped' => 'PHP imap extension is not enabled (hPanel → Advanced → PHP Configuration → Extensions → imap).'];
     }
     if (!xf_imap_available()) {
         return ['skipped' => 'Mailbox is not configured.'];
     }
-    $contacts_table = xf_table('contacts');
-    $active = $wpdb->get_results("SELECT email, last_sent_at FROM $contacts_table WHERE status IN ('contacted','sequence_done') AND last_sent_at IS NOT NULL");
-    if (!$active) {
-        return ['scanned' => 0, 'replies' => 0, 'bounces' => 0];
-    }
-    $emails = array_map('strtolower', wp_list_pluck($active, 'email'));
-    $since = min(array_map('strtotime', wp_list_pluck($active, 'last_sent_at'))) - DAY_IN_SECONDS;
-
+    $emails = array_values(array_unique(array_map('strtolower', $emails)));
     $s = xf_get_settings();
     $mailbox = sprintf('{%s:%d/imap/ssl}INBOX', $s['imap_host'], (int) $s['imap_port']);
     $imap = @imap_open($mailbox, $s['smtp_user'], $s['smtp_pass'], OP_READONLY, 1);
@@ -265,17 +258,40 @@ function xf_check_replies() {
         }
     }
     imap_close($imap);
+    return ['scanned' => count($uids), 'replied' => $replied, 'bounced' => array_diff_key($bounced, $replied)];
+}
 
-    foreach (array_keys($replied) as $email) {
+/**
+ * Stops the sequence for anyone who replied and suppresses addresses that
+ * bounced, by reading the outreach mailbox over IMAP.
+ */
+function xf_check_replies() {
+    global $wpdb;
+    if (!function_exists('imap_open')) {
+        return ['skipped' => 'PHP imap extension is not enabled (hPanel → Advanced → PHP Configuration → Extensions → imap).'];
+    }
+    if (!xf_imap_available()) {
+        return ['skipped' => 'Mailbox is not configured.'];
+    }
+    $contacts_table = xf_table('contacts');
+    $active = $wpdb->get_results("SELECT email, last_sent_at FROM $contacts_table WHERE status IN ('contacted','sequence_done') AND last_sent_at IS NOT NULL");
+    if (!$active) {
+        return ['scanned' => 0, 'replies' => 0, 'bounces' => 0];
+    }
+    $since = min(array_map('strtotime', wp_list_pluck($active, 'last_sent_at'))) - DAY_IN_SECONDS;
+    $scan = xf_imap_scan(wp_list_pluck($active, 'email'), $since);
+    if (isset($scan['skipped'])) {
+        return $scan;
+    }
+
+    foreach (array_keys($scan['replied']) as $email) {
         $wpdb->query($wpdb->prepare(
             "UPDATE $contacts_table SET status = 'replied', replied_at = %s, next_send_at = NULL, updated_at = %s WHERE email = %s AND status IN ('contacted','sequence_done')",
             xf_now(), xf_now(), $email
         ));
     }
-    foreach (array_keys($bounced) as $email) {
-        if (!isset($replied[$email])) {
-            xf_suppress_email($email, 'bounced');
-        }
+    foreach (array_keys($scan['bounced']) as $email) {
+        xf_suppress_email($email, 'bounced');
     }
-    return ['scanned' => count($uids), 'replies' => count($replied), 'bounces' => count($bounced)];
+    return ['scanned' => $scan['scanned'], 'replies' => count($scan['replied']), 'bounces' => count($scan['bounced'])];
 }

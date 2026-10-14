@@ -1,0 +1,89 @@
+{
+  "slug": "brandjet",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/brandjet",
+  "excerpt": "BrandJet AI finds buyers who are asking for products like yours in public posts, then runs outreach across email, LinkedIn, WhatsApp, Instagram and more from one inbox. Pricing, alternatives and Product Hunt figures.",
+  "content": "<p>BrandJet AI combines two jobs that sales and marketing teams usually split across several tools. The first is listening: it tracks keywords, your brand and competitors across the web and social platforms such as X, Reddit, LinkedIn and YouTube, flags posts that show buying intent, and uses AI to judge whether the buzz is positive, negative or noise. It also checks what ChatGPT, Claude and Gemini say when people ask about your brand.</p><p>The second is outreach. From the same dashboard you can add a person to your leads and run campaigns across email, LinkedIn, X, WhatsApp, Instagram and Telegram, with automated follow-ups and one shared inbox for replies. A built-in lead database lets you search by job title, company and industry, and a contact finder looks up email addresses from a name and company domain or a LinkedIn URL. BrandJet also offers a done-for-you service and an assistant called Artemis, according to its site menu.</p><p>The company behind it is Brandjet, Inc., according to its affiliate agreement. This was BrandJet's second Product Hunt launch, on 31 August 2026, under the tagline 'Turn public buying signals into sales pipeline'; it finished #2 for the day with 265 points and 26 comments.</p><p><em>We have not tested BrandJet AI ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Sales outreach and social listening",
+    "platform": "Web app",
+    "starts_at": "7-day free trial, then $79/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Finds buyers asking for products like yours in public posts and runs multi-channel outreach from one inbox",
+    "ph": {"rank": 2, "votes": 265, "comments": 26, "followers": 849, "launched": "2026-08-31", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/a4b7b59e-a209-4681-808e-56ec62f6383f.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "BrandJet graphic 'Your buyers are complaining in public' showing an X post and a Reddit post asking for outreach software, each tagged 'Buyer Intent'",
+       "credit": "Image: BrandJet AI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/87a41ed6-c49b-45b3-9f53-da229550c3f4.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "BrandJet lead database filtered by job title, with a sidebar for mentions, competitors, AI monitoring and campaigns",
+       "credit": "Image: BrandJet AI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/232cbded-dbf2-40ca-b3a2-c17df1e428f9.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "BrandJet contact finder that looks up an email address from a first name, last name and company domain, using credits",
+       "credit": "Image: BrandJet AI via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are a founder or small sales team juggling separate tools for cold email, LinkedIn and social monitoring",
+        "want to find people publicly asking for a product like yours and contact them quickly",
+        "want to know how AI assistants describe your brand alongside social mentions"
+      ],
+      "not_fit": [
+        "only need a social-listening tool or only an email sender: BrandJet's price covers both",
+        "want a free plan: there is a 7-day trial, then plans start at $79 a month",
+        "sell where cold outreach rules are strict and you can't manage consent and opt-outs yourself: the tool sends the messages, but compliance stays with you"
+      ]
+    },
+    "pricing": {
+      "intro": "BrandJet's site calls these early prices. They are in US dollars; annual billing gives two months free, and every plan has a 7-day free trial.",
+      "url": "https://www.brandjet.ai/pricing",
+      "plans": [
+        {"name": "Starter", "price": "$79/month", "amount": 79, "currency": "USD", "detail": "Unlimited inboxes and campaigns, sequences on LinkedIn, Instagram and WhatsApp, 1,000 verified leads a month, 10,000 keyword signals a month, AI brand monitoring, 3 competitors, email support"},
+        {"name": "Pro", "price": "$200/month", "amount": 200, "currency": "USD", "detail": "10,000 verified leads and 50,000 keyword signals a month, bulk AI enrichment, unlimited competitor tracking, priority email and live-chat support"}
+      ],
+      "notes": [
+        "Extra social accounts cost $20/month each on Starter and $17/month on Pro.",
+        "BrandJet says it doesn't charge per inbox, seat or campaign.",
+        "You can cancel during the trial without being charged, according to its pricing FAQ."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "GetSales.io", "url": "https://getsales.io", "what": "Multichannel outreach and go-to-market automation, strong on LinkedIn", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 21,
+         "difference": "Focused on outreach, deliverability and account safety, with an API and MCP support; BrandJet adds brand monitoring and buyer-intent listening."},
+        {"name": "Highperformr.ai", "url": "https://www.highperformr.ai", "what": "AI go-to-market platform built on intent signals and social selling", "starts_at": "See its pricing page", "ph_rating": 4.67, "ph_reviews": 18,
+         "difference": "Leans on B2B signals such as job changes and new hires, plus social publishing for teams."},
+        {"name": "Success.ai", "url": "http://success.ai", "what": "AI-written cold email outreach", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 105,
+         "difference": "Centred on cold email, while BrandJet spreads outreach across social and messaging channels."}
+      ],
+      "more": "Product Hunt also lists ZELIQ and Snov.io."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/brandjet-ai/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/brandjet-ai",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=brandjet&f=live", "profile_url": "https://twitter.com/brandjetai"}
+    },
+    "faq": [
+      {"q": "What is BrandJet AI?", "a": "A platform that combines social listening (finding posts with buying intent, tracking brand mentions and competitors) with outreach across email, LinkedIn, X, WhatsApp, Instagram and Telegram from one inbox. Its latest Product Hunt launch was on 31 August 2026."},
+      {"q": "How much does BrandJet AI cost?", "a": "Starter is $79 a month and Pro $200 a month. Annual billing gives two months free, and both plans have a 7-day free trial."},
+      {"q": "Is there a free trial?", "a": "Yes. Every plan includes a 7-day free trial with full access, and you can cancel during it without being charged, according to BrandJet's pricing page."},
+      {"q": "Which channels can BrandJet send on?", "a": "Email, LinkedIn, X (Twitter), WhatsApp, Instagram and Telegram, according to its home page. Autopilot sequences cover LinkedIn, Instagram and WhatsApp."},
+      {"q": "Does it track what AI chatbots say about my brand?", "a": "Yes. Both plans include checks on what ChatGPT, Claude and Gemini say when people ask about your brand, according to the pricing page."},
+      {"q": "Who makes BrandJet?", "a": "Brandjet, Inc., according to its affiliate programme agreement."}
+    ],
+    "sources": [
+      {"label": "BrandJet AI official site", "url": "https://www.brandjet.ai/"},
+      {"label": "BrandJet AI pricing", "url": "https://www.brandjet.ai/pricing"},
+      {"label": "BrandJet affiliate agreement", "url": "https://www.brandjet.ai/affiliate-terms"},
+      {"label": "BrandJet privacy policy", "url": "https://www.brandjet.ai/privacy"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/brandjet-ai"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/brandjet-ai/alternatives"},
+      {"label": "GetSales.io pricing", "url": "https://getsales.io/pricing"},
+      {"label": "Highperformr pricing", "url": "https://www.highperformr.ai/pricing"}
+    ]
+  }
+}

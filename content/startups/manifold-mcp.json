@@ -1,0 +1,270 @@
+{
+ "slug": "manifold-mcp",
+ "excerpt": "Manifold MCP is a hosted MCP server that gives AI agents live SEO, AI-answer, social, ad-library and lead data, paid by the call with credits. Pricing, data sources, alternatives and launch feedback.",
+ "content": "<p>Manifold MCP is a single hosted MCP server that lets an AI agent look up live marketing data. Connect it to Claude, ChatGPT, Claude Code, Codex, Cursor, Gemini CLI, Grok or any other client that supports remote MCP servers, then ask in plain words: which keywords you rank 5th to 15th for, whether ChatGPT recommends you in your category and who it names instead, which recent Reddit threads ask for a product like yours, or what a competitor is running on Meta.</p><p>Its tools cover Google rankings, keywords, SERPs and backlinks; your own Search Console, Bing Webmaster and Google Analytics data (free); what ChatGPT, Claude, Gemini, Perplexity and Google's AI Overviews say and cite; posts and comments on Reddit, TikTok, Instagram, Facebook, YouTube, LinkedIn and X; public ad libraries; and company, people and work-email lookups. Search, keyword, backlink and AI-answer data come from DataForSEO. You don't need your own API keys, and each tool tells the agent its price before it runs. Manifold only fetches data: it doesn't write or post anything. A free library of MIT-licensed skills packages whole jobs such as finding SEO quick wins.</p><p>Manifold was founded in London in September 2026 by Jesse Sibley, according to its site; on Product Hunt he said he is building it on his own. It launched on Product Hunt on 12 October 2026 and finished #5 for the day with 159 upvotes and 29 comments.</p><p><em>We have not tested Manifold ourselves. This page brings together its official site, pricing and terms, its Product Hunt page and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "SEO and marketing data",
+  "platform": "Hosted MCP server",
+  "os": "Any client that supports remote MCP servers (Claude, ChatGPT, Cursor, Claude Code, Codex, Gemini CLI, Grok and others)",
+  "starts_at": "250 free credits; Pro from $20/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Hosted MCP server giving AI agents live SEO, AI-answer, social, ad and lead data, paid per call",
+  "maker": {
+   "name": "Jesse Sibley",
+   "url": "https://www.producthunt.com/@jessesibley_"
+  },
+  "team": [
+   {
+    "name": "Jesse Sibley",
+    "role": "Founder",
+    "url": "https://www.producthunt.com/@jessesibley_"
+   }
+  ],
+  "ph": {
+   "rank": 5,
+   "votes": 159,
+   "comments": 29,
+   "followers": 204,
+   "launched": "2026-10-12",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Finding keywords close to page one and content gaps, from inside your AI assistant",
+   "Checking whether ChatGPT, Gemini or Perplexity recommend your product, and who they name instead",
+   "Finding recent Reddit threads where people ask for a product like yours",
+   "Reading competitors' live ads from public ad libraries",
+   "Giving a marketing agent a fixed credit budget for research"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Jesse Sibley says that if you ask any AI agent how to grow, you get the same generic list: post consistently, know your audience, optimise your SEO. The agent is smart, but on marketing it is guessing, because it can't see your rankings, your competitors' ads or what people are asking for on Reddit.",
+    "Manifold gives it that data through one hosted MCP server, so work that used to mean a pile of browser tabs and a spreadsheet becomes a question to your agent. He priced it per call, with every tool telling the agent its cost before it runs, and asked people what they'd want their agent to look up next."
+   ],
+   "attribution": "Jesse Sibley, founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/manifold-mcp?comment=5940528"
+  },
+  "audience": {
+   "fit": [
+    "do marketing or SEO inside Claude, ChatGPT, Cursor or a similar assistant",
+    "want SEO, AI-answer, social, ad and lead data without paying for several separate subscriptions",
+    "prefer paying per call with a hard spending cap"
+   ],
+   "not_fit": [
+    "want a tool that writes, schedules or posts content: Manifold only fetches data",
+    "want a visual dashboard or continuous rank tracking",
+    "might need a refund on credits: spent credits and unspent top-ups are generally non-refundable"
+   ]
+  },
+  "pricing": {
+   "intro": "Manifold runs on prepaid credits, priced per account rather than per seat, in US dollars. Calls stop when credits run out; there is no overage billing.",
+   "url": "https://www.manifoldmcp.com/pricing.md",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "250 credits, once, no card"
+    },
+    {
+     "name": "Pro",
+     "price": "$20 to $150 a month",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "$20 for 2,500 credits, $40 for 5,500, $80 for 12,000, $150 for 24,000 a month"
+    },
+    {
+     "name": "Max",
+     "price": "$250 to $2,000 a month",
+     "amount": 250,
+     "currency": "USD",
+     "detail": "$250 for 42,000 credits, $500 for 90,000, $1,000 for 190,000, $2,000 for 400,000 a month"
+    },
+    {
+     "name": "Top-ups",
+     "price": "1 cent per credit",
+     "currency": "USD",
+     "detail": "$10 to $500 on Pro and Max; top-up credits never expire, plan credits reset monthly"
+    }
+   ],
+   "notes": [
+    "Example costs: a SERP check 1 credit, 100 keyword ideas 10, a domain overview 5, one AI-answer prompt across four assistants 16, a 1,000-page technical crawl 30, a found work email 6.",
+    "Failed calls cost nothing; a call that finds nothing costs 1 credit. Cached results cost 25% of the live price.",
+    "At launch the founder mentioned 500 free credits; the pricing page now says 250, which we use.",
+    "Spent credits aren't refundable, and unspent top-ups only where the law requires or if Manifold closes your workspace for reasons other than a breach (terms 4.6)."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt's alternatives here are mostly MCP and agent tools; we compared Manifold with the SEO data sources marketers already use. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "DataForSEO",
+     "url": "https://dataforseo.com/",
+     "what": "Pay-as-you-go SEO data APIs for SERPs, keywords and backlinks, with an MCP server",
+     "starts_at": "Pay as you go, minimum top-up $50",
+     "difference": "The raw data source behind much of Manifold's SEO data, without the social, ad-library and lead tools, and with a $50 minimum."
+    },
+    {
+     "name": "Ahrefs",
+     "url": "https://ahrefs.com/",
+     "what": "SEO suite with its own backlink and keyword index",
+     "starts_at": "Starter $29/month; API and MCP access from Lite at $129/month",
+     "difference": "MCP access needs a Lite plan or above. Manifold starts at $20 a month in credits and adds social and lead data."
+    },
+    {
+     "name": "Semrush",
+     "url": "https://www.semrush.com/",
+     "what": "SEO and AI-search marketing suite",
+     "starts_at": "SEO plan $139/month; MCP access listed on Starter at $199/month; 7-day trial",
+     "difference": "A full dashboard suite. Manifold is built for agents only, metered per call and has no dashboard."
+    }
+   ],
+   "more": "Product Hunt lists findable 2.0, Composio, MCP360, Anysite.io, Manufact (mcp-use) and Dappier as alternatives."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/manifold-mcp/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Closing the loop on SEO from inside an agent, with a credit budget",
+     "Costs that a paying user called reasonable, and an alternative to pricier SEO suites",
+     "Connectors for agents instead of yet another standalone platform",
+     "Finding content and SEO gaps for YouTube videos"
+    ],
+    "asked": [],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "I can assign an agent a credit budget for marketing research and decide where the best opportunities are for growth.",
+     "author": "Nathan Grieve",
+     "url": "https://www.producthunt.com/products/manifold-mcp?comment=5941748"
+    },
+    {
+     "text": "Everyone knows how expensive Ahrefs is, especially if you want to use it in your claude code workflow",
+     "author": "Alex Christou",
+     "url": "https://www.producthunt.com/products/manifold-mcp?comment=5941307"
+    },
+    {
+     "text": "Saved me hours of manually setting up my own marketing MCPs for my grok bots",
+     "author": "Kameron Tanseli",
+     "url": "https://www.producthunt.com/products/manifold-mcp?comment=5941879"
+    },
+    {
+     "text": "Provide connectors instead of building another standalone platform.",
+     "author": "Suba Radhakrishnan",
+     "url": "https://www.producthunt.com/products/manifold-mcp?comment=5943833"
+    },
+    {
+     "text": "very useful to find content and seo gaps for youtube videos on google",
+     "author": "Alec Wilcock",
+     "url": "https://www.producthunt.com/products/manifold-mcp?comment=5941245"
+    }
+   ]
+  },
+  "pros": [
+   "Many marketing data sources behind one MCP connection",
+   "No API keys or provider accounts of your own needed",
+   "Each tool states its price before running, and max_credits caps spend",
+   "Search Console, Bing Webmaster and Google Analytics tools are free",
+   "Top-up credits never expire; failed calls are free",
+   "Free MIT-licensed skills library"
+  ],
+  "cons": [
+   "No dashboard or ongoing tracking; everything runs through an agent",
+   "Doesn't post or schedule content",
+   "Credits are generally non-refundable",
+   "One-person company founded in September 2026",
+   "No security or data-retention details on the homepage"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/manifold-mcp",
+   "x": {
+    "none": "A launch commenter said he found Manifold on X, but we have not linked specific posts.",
+    "search_url": "https://x.com/search?q=manifoldmcp&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "How much does Manifold MCP cost?",
+    "a": "It starts with 250 free credits. Pro plans run from $20 a month for 2,500 credits to $150 for 24,000, and Max plans from $250 to $2,000 a month. Extra credits cost 1 cent each."
+   },
+   {
+    "q": "Does Manifold post or schedule content?",
+    "a": "No. It only fetches data; your agent drafts, and you publish."
+   },
+   {
+    "q": "Do I need my own API keys?",
+    "a": "No. Manifold uses its own provider accounts. You connect with OAuth or a Manifold API key."
+   },
+   {
+    "q": "Where does the data come from?",
+    "a": "Search, keyword, backlink and AI-answer data come from DataForSEO; social, Reddit and ad data come from platforms' public data. Results are cached for a day to a week."
+   },
+   {
+    "q": "Which AI clients work with it?",
+    "a": "Claude, ChatGPT, Claude Code, Codex, Cursor, Gemini CLI, Grok, OpenCode and any client that supports remote MCP servers."
+   },
+   {
+    "q": "Is it related to Manifold Markets?",
+    "a": "No, according to its own FAQ."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Manifold MCP official site and FAQ",
+    "url": "https://www.manifoldmcp.com/"
+   },
+   {
+    "label": "Manifold MCP pricing",
+    "url": "https://www.manifoldmcp.com/pricing.md"
+   },
+   {
+    "label": "Manifold MCP terms",
+    "url": "https://www.manifoldmcp.com/terms.md"
+   },
+   {
+    "label": "Manifold MCP docs",
+    "url": "https://www.manifoldmcp.com/docs/index.md"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/manifold-mcp"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/manifold-mcp/alternatives"
+   },
+   {
+    "label": "DataForSEO pricing",
+    "url": "https://dataforseo.com/pricing"
+   },
+   {
+    "label": "Ahrefs pricing",
+    "url": "https://ahrefs.com/pricing"
+   },
+   {
+    "label": "Semrush pricing",
+    "url": "https://www.semrush.com/prices/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/fcf1575a-27e0-4f13-9a1f-ffc936506bc4.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Manifold graphic 'Your AI agent is guessing. Give it live SEO, AI search, social, ads and leads' with icons of Google, Reddit, TikTok, YouTube, LinkedIn and Meta"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/fcf1575a-27e0-4f13-9a1f-ffc936506bc4.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Manifold graphic 'Your AI agent is guessing. Give it live SEO, AI search, social, ads and leads' with icons of Google, Reddit, TikTok, YouTube, LinkedIn and Meta"
+   }
+  ]
+ }
+}

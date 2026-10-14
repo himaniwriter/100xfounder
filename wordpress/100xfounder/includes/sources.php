@@ -13,7 +13,18 @@ const XF_SOURCE_TYPES = ['post', 'xf_startup', 'xf_spotlight', 'xf_guide'];
 
 function xf_get_sources($post_id) {
     $sources = get_post_meta($post_id, '_xf_sources', true);
-    return is_array($sources) ? array_values(array_filter($sources, function ($s) { return !empty($s['url']); })) : [];
+    $sources = is_array($sources) ? array_values(array_filter($sources, function ($s) { return !empty($s['url']); })) : [];
+    // On public pages, sources that only back a locked [xf_reveal] list stay hidden with it.
+    if ($sources && !is_admin() && function_exists('xf_reveal_block') && ($block = xf_reveal_block($post_id))) {
+        $hidden = [];
+        foreach (wp_extract_urls($block['inner']) as $u) {
+            $hidden[] = preg_replace('/^www\./', '', (string) wp_parse_url($u, PHP_URL_HOST));
+        }
+        $sources = array_values(array_filter($sources, function ($s) use ($hidden) {
+            return !in_array(preg_replace('/^www\./', '', (string) wp_parse_url($s['url'], PHP_URL_HOST)), $hidden, true);
+        }));
+    }
+    return $sources;
 }
 
 function xf_save_sources($post_id, array $rows) {
@@ -121,19 +132,62 @@ add_filter('wp_insert_post_data', function ($data, $postarr) {
     return $data;
 }, 10, 2);
 
+const XF_MIN_WORDS = 500;
+const XF_MIN_IMAGES = 2;
+
+/** Words in HTML; each CJK character counts as one, since ja/zh have no spaces. */
+function xf_word_count($html) {
+    return preg_match_all('/[\p{Han}\p{Hiragana}\p{Katakana}]|[^\s\p{Han}\p{Hiragana}\p{Katakana}]+/u', wp_strip_all_tags((string) $html));
+}
+
+/** Featured image plus images in the body. */
+function xf_image_count($post) {
+    return (has_post_thumbnail($post) ? 1 : 0) + preg_match_all('/<img\s/i', (string) $post->post_content);
+}
+
+/** Why a post can't go live yet ('' when it can): owner rule 2026-10-15, 500+ words and 2+ images. */
+function xf_publish_gate_reason($post) {
+    $words = xf_word_count($post->post_content);
+    $images = xf_image_count($post);
+    $missing = [];
+    if ($words < XF_MIN_WORDS) {
+        $missing[] = sprintf('%d words (needs %d)', $words, XF_MIN_WORDS);
+    }
+    if ($images < XF_MIN_IMAGES) {
+        $missing[] = sprintf('%d images (needs %d)', $images, XF_MIN_IMAGES);
+    }
+    return $missing ? 'Saved as Pending review: ' . implode(', ', $missing) . '.' : '';
+}
+
+// Runs after REST/editor saves finish (featured image and meta are set by then), on the first move to live or scheduled only.
+add_action('wp_after_insert_post', function ($post_id, $post, $update, $post_before) {
+    $live = ['publish', 'future'];
+    if (!in_array($post->post_type, ['post', 'xf_guide'], true) || !in_array($post->post_status, $live, true)
+        || ($post_before && in_array($post_before->post_status, $live, true))) {
+        return;
+    }
+    $reason = xf_publish_gate_reason($post);
+    if ($reason === '') {
+        return;
+    }
+    wp_update_post(['ID' => $post_id, 'post_status' => 'pending']);
+    update_post_meta($post_id, '_xf_gate', $reason);
+    set_transient('xf_notice_' . get_current_user_id(), $reason, 60);
+}, 10, 4);
+
 /** The Sources block at the end of articles, profiles and spotlights. */
 function xf_sources_html($post_id) {
     $sources = xf_get_sources($post_id);
     if (!$sources) {
         return '';
     }
-    $html = '<section class="xf-sources" aria-labelledby="xf-sources-' . (int) $post_id . '"><h2 id="xf-sources-' . (int) $post_id . '" class="k">Sources</h2><ol>';
+    $html = '<details class="xf-sources"><summary class="k">Sources (' . count($sources) . ')</summary><ol>';
     foreach ($sources as $s) {
         $html .= '<li><a href="' . esc_url($s['url']) . '" target="_blank" rel="noopener nofollow">' . esc_html($s['publisher']) . '</a>'
             . ($s['date'] ? ' <span class="xf-sources__date">' . esc_html(mysql2date('j M Y', $s['date'])) . '</span>' : '')
             . ($s['claim'] ? '<span class="xf-sources__claim">' . esc_html($s['claim']) . '</span>' : '') . '</li>';
     }
-    return $html . '</ol></section>';
+    return $html . '</ol></details>';
 }
 
 add_filter('the_content', function ($content) {

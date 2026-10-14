@@ -8,7 +8,7 @@ this script uploads the images to the media library itself, inserts the credited
 slug and featured image, and schedules the post.
 
     XF_SITE_URL=https://100xfounder.com XF_WP_USER=… XF_WP_APP_PASSWORD='…' \
-        python3 content/upload_rest.py [--per-day 10] [--start 2026-10-05] [--limit N] [files…]
+        python3 content/upload_rest.py [--per-day 4] [--start 2026-10-05] [--limit N] [files…]
 
 Credentials only from the environment. Shares content/uploaded.json with upload.py.
 """
@@ -60,6 +60,14 @@ class Site:
             return json.loads(r.read().decode() or "{}")
 
 
+
+def slug_without_year(slug):
+    """Article URLs never carry a year (owner, 7 Oct 2026); events are exempt."""
+    clean = re.sub(r"(?:^|-)(?:19|20)\d{2}(?:-\d{2})?(?=-|$)", "", slug or "")
+    clean = re.sub(r"-{2,}", "-", clean).strip("-")
+    return clean or slug
+
+
 def fetch_image(url):
     """Download politely; Wikimedia answers 429 when hurried."""
     for attempt in range(5):
@@ -102,7 +110,7 @@ def figure(src, img):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("files", nargs="*")
-    ap.add_argument("--per-day", type=int, default=10)
+    ap.add_argument("--per-day", type=int, default=4)
     ap.add_argument("--start", default=(dt.date.today() + dt.timedelta(days=1)).isoformat())
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--pause", type=float, default=15)
@@ -146,6 +154,8 @@ def main():
         name = os.path.basename(f)
         try:
             images = p.pop("images", [])
+            if p.get("slug") and p.get("type", "post") in ("post", "xf_guide"):
+                p["slug"] = slug_without_year(p["slug"])
             draft = site.call("POST", "/xf/v1/drafts", p)
             pid = draft["id"]
             content, featured = p["content"], 0
@@ -169,7 +179,7 @@ def main():
             upd = {"content": content, "status": "future" if when > dt.datetime.now(dt.timezone.utc) else "publish",
                    "date_gmt": when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")}
             if p.get("slug"):
-                upd["slug"] = p["slug"]
+                upd["slug"] = slug_without_year(p["slug"])
             if featured:
                 upd["featured_media"] = featured
             res = site.call("POST", f"/wp/v2/{REST_BASE.get(p.get('type', 'post'), 'posts')}/{pid}", upd)

@@ -1,0 +1,124 @@
+{
+ "slug": "fuzzy-ai",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/fuzzy-ai-2",
+ "excerpt": "Fuzzy AI is a LinkedIn sales platform that warms prospects with comments and posts in your voice before sending personalised LinkedIn and email outreach. Plans from $149/month for 3,000 credits. How it works, account-safety answers, pricing and alternatives.",
+ "content": "<p>Fuzzy AI is a sales tool built around LinkedIn. Its idea is that cold messages fail because the prospect has never heard of you, so it tries to make you familiar first. You describe who you want to reach, and Fuzzy builds and enriches a list, including people who engaged with a competitor's or creator's post. A feed of your prospects' posts lets it draft comments and LinkedIn posts in your voice, and it can engage with chosen people automatically. Then it sends multi-step LinkedIn and email campaigns and drafts or sends replies.</p><p>A feature called Memories stores your writing style, company, offer and past conversations, and each drafted message shows which memories it drew on. You choose how much runs automatically: review every message, approve selected steps, or let it run campaigns. Team workspaces share company knowledge, assign contact owners and flag when a colleague is already engaging with the same person. Contact data comes from Firmable, Exa and ContactOut, charged per successful match.</p><p>Fuzzy AI was founded by Serena Lam, with Bladen Lam as CTO, according to their Product Hunt profiles. It launched on Product Hunt on 20 July 2026, its first launch there, and finished #1 for the day with 574 upvotes and 104 comments.</p><p><em>We have not tested Fuzzy AI ourselves. This page brings together its official site, pricing page and help centre, its Product Hunt page and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Sales outreach",
+  "platform": "Web app connected to LinkedIn, Outlook and Google",
+  "starts_at": "$149/month (Starter, 3,000 credits)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "LinkedIn sales platform that warms prospects with comments and posts before personalised outreach",
+  "maker": {"name": "Serena Lam", "url": "https://www.producthunt.com/@serenalam"},
+  "team": [
+   {"name": "Serena Lam", "role": "Founder", "url": "https://www.producthunt.com/@serenalam"},
+   {"name": "Bladen Lam", "role": "CTO", "url": "https://www.producthunt.com/@bladen_lam"}
+  ],
+  "ph": {"rank": 1, "votes": 574, "comments": 104, "followers": 1689, "launched": "2026-07-20", "as_of": "2026-10-14"},
+  "video_url": "https://www.youtube.com/watch?v=PNs_VTpEbPo",
+  "use_cases": [
+   "Building a prospect list from a plain-language description of your ideal buyer",
+   "Pulling the people who engaged with a competitor's LinkedIn post",
+   "Commenting on prospects' posts in your voice before reaching out",
+   "Running LinkedIn and email sequences with drafted replies",
+   "Coordinating a sales team so two reps don't warm the same person"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Serena Lam says she kept seeing people send cold messages to strangers, get ignored and be told to send more. Her view is that volume isn't the problem; being a stranger is. Fuzzy is her attempt to warm prospects up before the first message.",
+    "She described the launch as one place for research, LinkedIn engagement, content, outreach, follow-ups and replies, with Memories teaching it your company and writing style, and with users deciding how much to automate. In the thread she added that she built it partly because other tools felt too complicated or did not book meetings."
+   ],
+   "attribution": "Serena Lam, founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/fuzzy-ai-2?comment=5473954"
+  },
+  "audience": {
+   "fit": [
+    "sell B2B through LinkedIn and want to be known before you pitch",
+    "are a founder or small sales team without time to comment and post daily",
+    "run a team and need shared context so reps don't double up on accounts"
+   ],
+   "not_fit": [
+    "are not comfortable with automated activity on your LinkedIn account: a commenter called account safety the deciding question",
+    "need a full CRM: Fuzzy's FAQ says it does not replace your CRM",
+    "need a cheap tool for occasional outreach: plans start at $149 a month"
+   ]
+  },
+  "pricing": {
+   "intro": "Fuzzy's pricing page says every plan has the same features and differs by credits. Prices are in US dollars, billed monthly; quarterly billing is 10% off and yearly gives two months free.",
+   "url": "https://getfuzzy.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Starter", "price": "$149/month", "amount": 149, "currency": "USD", "detail": "3,000 credits a month, for example up to 120 branded posts, 300 competitor audience pulls or 600 personalised outreach sequences; daily automated commenting and unlimited contact searching"},
+    {"name": "Growth", "price": "$299/month", "amount": 299, "currency": "USD", "detail": "10,000 credits a month: up to 400 posts, 1,000 audience pulls or 2,000 outreach sequences"},
+    {"name": "Scale", "price": "$599/month", "amount": 599, "currency": "USD", "detail": "30,000 credits a month: up to 1,200 posts, 3,000 audience pulls or 6,000 outreach sequences"},
+    {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Multi-seat team management, custom agent workflows, white-glove onboarding and a dedicated success manager"}
+   ],
+   "notes": [
+    "Contact enrichment is charged per successful match through Firmable, Exa and ContactOut.",
+    "The FAQ says that without Sales Navigator you can send 100 LinkedIn invites a month, and 300 a week with it."
+   ]
+  },
+  "alternatives": {
+   "intro": "Jeeva AI, GetSales.io and Zaplify are on Product Hunt's alternatives list. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Jeeva AI", "url": "https://www.jeeva.ai/", "what": "Agentic AI sales platform for prospecting and outreach", "starts_at": "See its pricing page", "ph_rating": 4.68, "ph_reviews": 53, "ph_url": "https://www.producthunt.com/products/jeeva-ai", "difference": "A broad AI SDR; Fuzzy centres on warming prospects with LinkedIn comments and posts first."},
+    {"name": "GetSales.io", "url": "https://getsales.io/", "what": "LinkedIn and email outreach automation in one tab", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 21, "ph_url": "https://www.producthunt.com/products/getsales-io", "difference": "Focused on outreach sequences; Fuzzy adds content and comment generation in your voice."},
+    {"name": "Zaplify", "url": "https://zaplify.com/", "what": "Personalised LinkedIn and email outreach on autopilot", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 9, "ph_url": "https://www.producthunt.com/products/zaplify", "difference": "Similar channels; Fuzzy's pitch is engagement before the first message."}
+   ],
+   "more": "Product Hunt also lists Success.ai and folk."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/fuzzy-ai-2/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Engaging before pitching instead of cold blasts", "Research, engagement and outreach in one workspace"],
+    "asked": ["LinkedIn account safety (the founder said it uses residential proxies, randomised pacing and daily limits)", "Avoiding duplicate warming across a team (flagged in Teams, with one-click duplicate prevention)", "Syncing emails to Salesforce and other CRMs (depends on the CRM; no full answer shown)", "Balancing automation and a personal tone (Memories, plus review controls)"],
+    "criticised": ["One user found the risk was frequency: the same person seeing them three times in a week"]
+   },
+   "quotes": [
+    {"text": "I run LinkedIn outreach for a 36-person company and the engage-first approach is the right call, cold blasts are dead.", "author": "Ridhwik Vinod", "url": "https://www.producthunt.com/products/fuzzy-ai-2?comment=5630409"},
+    {"text": "Each individual comment passed the standing check fine, and the tell was that the same person saw us three times in one week.", "author": "Dipankar Sarkar", "url": "https://www.producthunt.com/products/fuzzy-ai-2?comment=5650427"},
+    {"text": "Is there a way to connect platforms so emails are synced to internal CRMs?", "author": "Stephanie Mangos", "url": "https://www.producthunt.com/products/fuzzy-ai-2?comment=5629972"}
+   ]
+  },
+  "pros": [
+   "Warms prospects with comments and posts before outreach",
+   "Each drafted message shows the context it used",
+   "Manual approval available for every message and reply",
+   "Team roles, shared knowledge and duplicate-engagement flags",
+   "Same features on every plan"
+  ],
+  "cons": [
+   "Starts at $149 a month",
+   "Automated LinkedIn activity carries account risk, which commenters raised",
+   "Does not replace a CRM, and CRM sync depends on the platform"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/fuzzy-ai-2",
+   "x": {"none": "We found no posts about Fuzzy AI on X to link yet.", "search_url": "https://x.com/search?q=getfuzzy.ai&f=live", "profile_url": "https://twitter.com/ai_fuzzy"}
+  },
+  "faq": [
+   {"q": "What is Fuzzy AI?", "a": "A LinkedIn-focused sales platform that finds prospects, builds familiarity through comments and posts in your voice, then runs personalised LinkedIn and email outreach and replies."},
+   {"q": "How much does Fuzzy AI cost?", "a": "Starter is $149 a month for 3,000 credits, Growth $299 for 10,000 and Scale $599 for 30,000. Enterprise is custom. Quarterly billing is 10% off and yearly gives two months free."},
+   {"q": "Is it safe for my LinkedIn account?", "a": "The founder said Fuzzy runs through residential proxies rather than a browser extension, randomises timing and daily limits, and enforces limits you can lower. Fuzzy's own sales-team page acknowledges that pushing profiles toward send targets risks LinkedIn restrictions, so weigh that risk."},
+   {"q": "Do I need Sales Navigator?", "a": "No. The FAQ says you can send 100 invites a month without it and 300 a week with it."},
+   {"q": "Does it sync with my CRM?", "a": "Fuzzy says it does not replace your CRM. Asked about Salesforce, the founder said sync options depend on the CRM; we saw no full answer."},
+   {"q": "What are the alternatives?", "a": "Jeeva AI, GetSales.io, Zaplify, Success.ai and folk are on Product Hunt's list."}
+  ],
+  "sources": [
+   {"label": "Fuzzy AI official site", "url": "https://getfuzzy.ai/"},
+   {"label": "Fuzzy AI pricing", "url": "https://getfuzzy.ai/pricing"},
+   {"label": "Fuzzy AI help centre", "url": "https://getfuzzy.ai/faq"},
+   {"label": "Fuzzy AI contact lists", "url": "https://getfuzzy.ai/features/building-contact-lists"},
+   {"label": "Fuzzy AI team features", "url": "https://getfuzzy.ai/features/team"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/fuzzy-ai-2"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/fuzzy-ai-2/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/2949c005-a937-445a-b866-aabf3c3aedf1.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "alt": "Fuzzy graphic 'One prompt. A whole pipeline.' with the find, build, content, personalise, send and reply steps", "credit": "Image: Fuzzy AI via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/6691f971-9a2a-4342-8483-93f64971dcba.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "alt": "Fuzzy graphic 'Warm them up before you pitch' with a suggested comment on a prospect's LinkedIn post", "credit": "Image: Fuzzy AI via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/8f0c88cb-836b-4e3c-9e28-ca6e0d427908.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "alt": "Fuzzy graphic 'Stop doing outreach manually' with find, warm, reach out and reply steps", "credit": "Image: Fuzzy AI via Product Hunt"}
+  ]
+ }
+}

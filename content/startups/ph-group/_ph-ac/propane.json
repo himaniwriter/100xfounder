@@ -1,0 +1,541 @@
+{
+ "input": "https://www.producthunt.com/posts/propane",
+ "final_url": "https://www.producthunt.com/products/propane?launch=propane",
+ "launch": {
+  "slug": "propane",
+  "name": "Propane ",
+  "tagline": "Automatic customer context for product teams and agents",
+  "featuredAt": "2026-06-24T00:01:00-07:00",
+  "dailyRank": "2",
+  "weeklyRank": "6",
+  "points": 500,
+  "commentsCount": 170,
+  "pricingType": "free_options",
+  "description": "Propane gives your product team and agents one connected, always-current view of your customers. Automatically collected from all your tools. Collaborate on a shared canvas. Commit straight to any coding or design agent. Secure, maintained, always on. You just build products people love.",
+  "makers": [
+   {
+    "name": "Dennis Green lieber",
+    "username": "greenlieber",
+    "headline": "Founder, builder, father, and nerd"
+   },
+   {
+    "name": "Ben Fleming",
+    "username": "benfleming",
+    "headline": "Founding AI Engineer - Product"
+   },
+   {
+    "name": "Rasmus Bangsted Pedersen",
+    "username": "rasmusbp",
+    "headline": "Engineering, design, product, good stuff"
+   },
+   {
+    "name": "Anders T.",
+    "username": "atherkildsen",
+    "headline": "Founding Designer @ Propane"
+   },
+   {
+    "name": "Nicolai Harms",
+    "username": "nicolai_harms",
+    "headline": "Software Engineer \n\n"
+   },
+   {
+    "name": "John Acosta",
+    "username": "acostajohn",
+    "headline": "Co-founder at Propane."
+   }
+  ],
+  "hunter": "Ben Lang",
+  "media": [
+   {
+    "uuid": "2259907b-26bf-46c8-8741-6ff6225c79f6.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "e7d1ffae-64e6-4416-b424-7eada00fc7c9.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "624e3b21-3b97-4fc9-9103-947138258c97.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "26d10f8a-e3ec-461d-8217-a3bc178dbf82.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "a7efd20f-6811-4eb2-853c-757eef2192b5.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "1b7fd65a-8cb5-451e-b1bd-0581ea1ae45b.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "55363612-2b3d-4f52-83bb-1757c008ca72.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "0c5a713c-a0d2-4a2a-b36b-ee11b986b25b.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "dd6ecde7-cd00-4535-a074-6be1197c5856.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=I-h87kJRhvk"
+   }
+  ],
+  "links": [
+   "go.usepropane.ai"
+  ],
+  "badges": [
+   [
+    "daily",
+    2
+   ]
+  ]
+ },
+ "product": {
+  "name": "Propane ",
+  "slug": "propane",
+  "tagline": "Automatic customer context for product teams and agents",
+  "description": "Propane gives your product team and agents one connected, always-current view of your customers. Automatically collected from all your tools. Collaborate on a shared canvas. Commit straight to any coding or design agent. Secure, maintained, always on. You just build products people love.",
+  "websiteUrl": "https://go.usepropane.ai/ph",
+  "reviewsCount": 2,
+  "reviewsRating": 5,
+  "followersCount": 789,
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5460185",
+   "depth": 0,
+   "author": "Dennis Green lieber",
+   "username": "greenlieber",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 Our founding team has been building products for 10+ years at scalable SaaS and deep learning AI companies. We wanted to fix our own problems. The way product teams work has not changed much in a long time, and we think it is time for that to change. Over the last several months we went very deep with hundreds of product teams. Two camps: stuck in legacy tooling or building everything from scratch. What surprised us is that both are doing 90% of the same work. Collecting customer feedback. Shaping and evaluating ideas. Handing off to coding agents. Every team. Every time. The same shift Cursor brought to engineering is coming for product. How you understand your customers at scale, how you operate and strategize, how you collect and make sense of everything. All of that should just be provided for you. Automatically, with your context, your intent, and your personalization built in.No one should be rebuilding that infrastructure individually, at every company, every time. We are building Propane for the people who want to focus on the primary work. To think, strategize, and shape the future of software. To have time to talk to customers, look at the market, and b"
+  },
+  {
+   "id": "5476703",
+   "depth": 1,
+   "author": "Michael Auchenberg",
+   "username": "michaelauchenberg",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@greenlieber &nbsp;im so excited for this launch. The multiplayer part and how we can accelerate our decision making in Product and cross functionally is critical to get right to actually save time and to get the decisions right"
+  },
+  {
+   "id": "5478076",
+   "depth": 2,
+   "author": "Dennis Green lieber",
+   "username": "greenlieber",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@michaelauchenberg &nbsp;Me to! We see over and over that this is hard and the multiple player part is just not there , or now it is... :)"
+  },
+  {
+   "id": "5478771",
+   "depth": 1,
+   "author": "Geet Khosla",
+   "username": "geetkhosla",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@greenlieber congrats brother!"
+  },
+  {
+   "id": "5479387",
+   "depth": 2,
+   "author": "Dennis Green lieber",
+   "username": "greenlieber",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@geetkhosla &nbsp;Thx mate!"
+  },
+  {
+   "id": "5479260",
+   "depth": 1,
+   "author": "Anders Sommer Larsen",
+   "username": "anders_sommer_larsen",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@greenlieber super cool!"
+  },
+  {
+   "id": "5479381",
+   "depth": 2,
+   "author": "Dennis Green lieber",
+   "username": "greenlieber",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@anders_sommer_larsen &nbsp;Thx! :)"
+  },
+  {
+   "id": "5479574",
+   "depth": 2,
+   "author": "Anders T.",
+   "username": "atherkildsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Thanks&nbsp; @anders_sommer_larsen &nbsp; 🙌"
+  },
+  {
+   "id": "5481086",
+   "depth": 2,
+   "author": "姜饼",
+   "username": "new_user___140202597473f65134ed0cb",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@greenlieber &nbsp; @anders_sommer_larsen &nbsp;cool"
+  },
+  {
+   "id": "5479833",
+   "depth": 1,
+   "author": "Marie Saxon",
+   "username": "marie_saxon",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@greenlieber &nbsp;this is such a real problem. Product work has become way too fragmented. How are you thinking about the line between automation and actual product taste?"
+  },
+  {
+   "id": "5480000",
+   "depth": 2,
+   "author": "Dennis Green lieber",
+   "username": "greenlieber",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@marie_saxon &nbsp;oh, yeah.. Product taste; We lost that like crazy! We look at it like this, Human are the very best to have vision, tast and view of how to solve things; Data and sources it not so much. How we can we help with that so humans can shape the best products. How do you see it?"
+  },
+  {
+   "id": "5480084",
+   "depth": 3,
+   "author": "Marie Saxon",
+   "username": "marie_saxon",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@greenlieber &nbsp;yes, I see it the same way. Product taste is still human: context, timing, intuition. The best automation, for me gives cleaner signals and removes the noise so people can make better product decisions."
+  },
+  {
+   "id": "5480201",
+   "depth": 3,
+   "author": "Dennis Green lieber",
+   "username": "greenlieber",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@marie_saxon &nbsp;i very much agree"
+  },
+  {
+   "id": "5480175",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@greenlieber &nbsp;Congrats. What was the single biggest surprise you found when you dug into hundreds of product teams, and how did that insight change the way you designed Propane?"
+  },
+  {
+   "id": "5479002",
+   "depth": 0,
+   "author": "Deani Hansen",
+   "username": "deani_bille_hansen",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congratulations on your launch! To gain maximum leverage in an AI era business context is the secret sauce - both for building the right products &amp; for winning the distribution game. Building out the winning USPs is all about understanding the space, and foundational to this is context. How do you collect and synthesize context across sources, and how do weigh the importance of each piece of information? A classic example is a freemium user saying; I'd buy your product if the UI was french, and a red account or $1m lead says; if you had a plug and play integration for SAP, I'd sign tomorrow. Synthesizing and actively reasoning across the feedback to surface the true value - how do you think about and solve that?"
+  },
+  {
+   "id": "5479143",
+   "depth": 1,
+   "author": "Anders T.",
+   "username": "atherkildsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@deani_bille_hansen &nbsp;🙇‍♂️"
+  },
+  {
+   "id": "5479172",
+   "depth": 1,
+   "author": "John Acosta",
+   "username": "acostajohn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@deani_bille_hansen &nbsp;Thank you so much for your support! and super interesting topic you've landed on which is exactly the problem we built Propane to solve. You're right that collecting feedback is the easy part, and weighing it is where things get hard, because raw volume can be misleading. Ten freemium users asking for a French UI can drown out the one account that would sign tomorrow if you supported SAP, and a system that just counts requests would tell you to go build localization. Our approach is to pull signals from your CRM, support tools, and product analytics into one place, then ground each one in business context. A request carries more than the words themselves, because it also tells you who said it, their segment, their account value, and where they sit in the funnel. The idea is that account value and revenue potential should shape the weighting, so the French-UI ask and the SAP ask might look the same on the surface but get treated very differently once that context is attached. Two principles guide how we think about this: every insight should trace back to its source, so you can see the evidence instead of trusting a score you can't inspect. And insights hav"
+  },
+  {
+   "id": "5479204",
+   "depth": 1,
+   "author": "Dennis Green lieber",
+   "username": "greenlieber",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@deani_bille_hansen &nbsp;Thanks! Great question and you nailed the core tension. Synthesizing context is one thing, weighing it is the real challenge. We collect insights and cluster them across sources, so patterns surface across feedback rather than each piece standing alone. From there our agents can reason on top of that and factor in what the team is actually trying to do. A good example is when you're shaping a new feature. The context that matters most should be grounded in your actual intent: are we trying to convert more freemium users, or close enterprise accounts? That intent shapes which signals the agent surfaces and how it reasons across the feedback. The weighting isn't hardcoded by us, it emerges from the clustered context plus the team's intent. We provide the baseline, the agent does the reasoning. We're expanding that layer as the context system matures. The goal is that it reasons with you, not just at you or just the agent."
+  },
+  {
+   "id": "5480033",
+   "depth": 0,
+   "author": "Ahmad",
+   "username": "blah_mad",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The agent handoff is the interesting edge here. Customer context is useful, but once it gets pushed into a coding or design agent I’d want a small receipt: source signals used, intent, account or segment weighting, and what changed downstream. Are you tracking that handoff already, or mostly the context layer for now?"
+  },
+  {
+   "id": "5480158",
+   "depth": 1,
+   "author": "Ben Fleming",
+   "username": "benfleming",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@blah_mad &nbsp;hey ahamad👋 insightful point! I kinda agree, we have multiple ways to push to agents, to the cursor ide or lovable - but recently we have added direct spinning up of cloud agents from our tool, which yes keeps a record of the agent run😎 so from the canvas, you can pull the right product context (signal) -&gt; work on it with your team -&gt; sketch a prototype -&gt; hand off straight to an agent running in the cloud which is connected to that canvas. we are very bullish on different kinds of agents we can plug into our system, and excited to work on this more! Weavz looks pretty cool, how are you thinking about agents there?"
+  },
+  {
+   "id": "5478615",
+   "depth": 0,
+   "author": "Simon Sylvest Rasmussen",
+   "username": "simonsylvest",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Looks very interesting - is there a minimum of data (maturity of company / product) that is needed in order for these insights to be valuable / actionable?"
+  },
+  {
+   "id": "5478652",
+   "depth": 1,
+   "author": "Ben Fleming",
+   "username": "benfleming",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@simonsylvest &nbsp;What's up simon thanks for the support!🤝 I would say for a decently established team (small/startup fine for sure) but probably not solopreneurs. One good rule of thumb could be if you have a stack of tools that are capturing customer context already but it is scattered across your team. Then signals will flow in seamlessly from those tools, filtering out the noise, and you can collaborate with your team with them in canvases!"
+  },
+  {
+   "id": "5478686",
+   "depth": 1,
+   "author": "Nicolai Harms",
+   "username": "nicolai_harms",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@simonsylvest &nbsp;hey man, besides from Ben's answer there is also the difference between a signal and a insight on our platform. Enough insights about the same subject turns into a signal, which as you said, becomes actionable. Hope that covered all the angles! Say if you have more questions"
+  },
+  {
+   "id": "5478845",
+   "depth": 0,
+   "author": "Uladzislau Rasliak",
+   "username": "uladzislau_rasliak",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Looks very polished! What vendor did you use for document processing/multiplayer text editors?"
+  },
+  {
+   "id": "5478878",
+   "depth": 1,
+   "author": "Rasmus Bangsted Pedersen",
+   "username": "rasmusbp",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@uladzislau_rasliak &nbsp;Thanks for the praise. We landed on @Tiptap to handle that layer. Great product with great offerings. Shout out to them :)"
+  },
+  {
+   "id": "5479606",
+   "depth": 2,
+   "author": "Philip Isik",
+   "username": "philip_isik",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@uladzislau_rasliak &nbsp; @rasmusbp &nbsp;Appreciate your kudos 🫶"
+  },
+  {
+   "id": "5479112",
+   "depth": 1,
+   "author": "Anders T.",
+   "username": "atherkildsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@uladzislau_rasliak &nbsp;🙏 Vivaldi looks nice as well! I'll take it for a spin! 🚴‍♂️"
+  },
+  {
+   "id": "5478446",
+   "depth": 0,
+   "author": "Thomas Kjølhede",
+   "username": "thomas_kjolhede",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Think this space is very exciting, but there is also a lot of \"build-it-yourself\" going on and most often a pretty heavy legacy stack. How do you see the space and your vision in this regard?"
+  },
+  {
+   "id": "5478519",
+   "depth": 1,
+   "author": "Dennis Green lieber",
+   "username": "greenlieber",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@thomas_kjolhede &nbsp;The way we see the market is that legacy systems were built for records, not reasoning. Someone always had to manage the context manually, and that's still true today. The DIY wave makes sense, but what we're seeing is that 90% of teams are building the same thing: the same prompts, the same skills, the same local context stores. That's just a new silo. We're building with the 90% already done. The 10% is your data, your team, your intent. You get the same power as building it yourself, but shared infrastructure means compound value across your team and agents, less time to value, and lower cost on tokens, infra, and time. Why should every team build this alone when we can scale it together? How do you see it?"
+  },
+  {
+   "id": "5479137",
+   "depth": 1,
+   "author": "Anders T.",
+   "username": "atherkildsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@thomas_kjolhede &nbsp;Building it yourself is an option, but once you hit a certain scale you end up maintaining plumbing instead of acting on insights. The fundamentals haven't changed with AI: you still need to obsess over every inch of the platform, learn from customers, and keep refining. That's a full-time job. And if it isn't yours, the system slowly ossifies around your stack instead of your customers. We'll do the obsessing so you don't have to.. and at a lower cost in end :-)"
+  },
+  {
+   "id": "5479483",
+   "depth": 0,
+   "author": "Shubham Bhattacharji",
+   "username": "shubham4real",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the idea of giving agents and product teams the same customer context is smart. right now most teams have the PM reading one set of signals and the agent working off something completely different. does propane handle cases where the data conflicts though? like support tickets pointing one direction but usage data saying the opposite?"
+  },
+  {
+   "id": "5479542",
+   "depth": 1,
+   "author": "Ben Fleming",
+   "username": "benfleming",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@shubham4real &nbsp;thanks for your thoughts &amp; support shubham!! 100% agree that there will be conflicting data, but in that case it is important the PM or builder has the full landscape of what is going on with their customers or competitors, and that is what signals will provide you with and build over time then it comes down to your strategy and good product judgement from a product manager, coming to a consensus with your team - we want propane to be the place where you can do that seamlessly and easily humans and agents together!"
+  },
+  {
+   "id": "5480038",
+   "depth": 1,
+   "author": "Dennis Green lieber",
+   "username": "greenlieber",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@shubham4real &nbsp;Yes to some level, it all about your intent as well, these things are some of the hardest to get right; But you are right a customer ranting about a feature is bad or needs improvement and it the ones the data say that they use the most, can be conflicting."
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "big-mike",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/big-mike",
+  "excerpt": "Big Mike is a US sports-betting analysis service that texts picks, injury alerts and fantasy advice in iMessage, with an iOS app and a public pick record. What it does, who it is for (21+ only), alternatives and launch comments.",
+  "content": "<p>Big Mike is an AI sports analysis service that lives in Apple's Messages app. It follows MLB, NFL, college football, the NBA and the WNBA, and texts you its betting picks: what to bet, at what price and which sportsbook has the best number. It also sends alerts when an injury or trade moves a line, and you can add it to a group chat, where it answers when someone says its name. Link a Sleeper or ESPN fantasy league and its start/sit advice is about your own roster.</p><p>An iOS app extends the texts with odds boards comparing sportsbooks, a news feed, calculators and Big Mike's public record of graded picks. You can link sportsbook accounts read-only through a service called SharpSports to track your own bets beside his; Big Mike says your sportsbook credentials never reach its servers. The terms are clear that Big Mike is an information service only: it does not take bets, and users must be 21 or older (or the legal gambling age where they live, if higher) and in a jurisdiction where such services are legal.</p><p>Big Mike LLC is behind it; Michael Hewitt posted the launch, with Ferhat Suat Erdoğan as co-maker. It launched on Product Hunt on 15 August 2026 and finished #3 for the day with 203 points and 27 comments. The launch post claimed a July record of 115–68 (+21.4 units); that is the company's own figure, and past results say nothing about future ones.</p><p><em>We have not tested Big Mike ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from. Betting carries a real risk of losing money; in the US, help is available at 1-800-GAMBLER.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Sports betting analysis",
+    "platform": "iMessage/SMS and iOS app",
+    "os": "iOS (iMessage); no Android app listed",
+    "starts_at": "Free options; paid plans billed through Apple In-App Purchases",
+    "schema_category": "SportsApplication",
+    "summary_short": "AI sports analyst that texts betting picks, injury alerts and fantasy advice in iMessage",
+    "maker": {"name": "Michael Hewitt", "url": "https://www.producthunt.com/@mikehew"},
+    "team": [
+      {"name": "Michael Hewitt", "url": "https://www.producthunt.com/@mikehew"},
+      {"name": "Ferhat Suat Erdoğan", "url": "https://www.producthunt.com/@fsuaterdogan"}
+    ],
+    "ph": {"rank": 3, "votes": 203, "comments": 27, "followers": 517, "launched": "2026-08-15", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/535168aa-dae8-4919-94e5-28f054964955.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Three iPhone message threads showing Big Mike answering in a group chat, texting the day's picks with reasoning, and showing prices and his season record",
+       "credit": "Image: Big Mike via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/44828281-def8-4289-968f-72d463a4cf4a.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Big Mike iOS app home screens with the day's board of plays, sportsbook boosts and a 'Text Big Mike' button",
+       "credit": "Image: Big Mike via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/c6030f5f-afa7-41bd-b661-b291b378a3ce.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Big Mike app record screens headed 'Every pick. Graded in public.', with win-loss records by week, month, sport and bet type",
+       "credit": "Image: Big Mike via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are 21 or older, live where sports betting is legal, and already bet on US sports",
+        "want picks, injury news and line moves pushed to your messages instead of checking several apps",
+        "play fantasy football on Sleeper or ESPN and want advice about your own roster"
+      ],
+      "not_fit": [
+        "are under 21 or live where sports betting analysis services are not legal: the terms exclude you",
+        "use Android or WhatsApp: it runs on iMessage and iOS for now, with WhatsApp mentioned by the maker only as a later step",
+        "follow sports outside MLB, NFL, college football, the NBA and the WNBA"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on bigmike.app as of 14 October 2026.",
+      "url": "https://www.bigmike.app/",
+      "plans": [],
+      "notes": [
+        "Product Hunt lists Big Mike as having free options.",
+        "According to its privacy policy, billing runs entirely through Apple In-App Purchases; Big Mike does not store card details.",
+        "The site's pricing link returned a 'page not found' when we checked."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Kutt", "url": "https://kutt.com", "what": "Peer-to-peer sports contests between friends", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 5,
+         "difference": "You wager against friends on its platform; Big Mike only gives analysis and does not take bets."},
+        {"name": "Sharp App: Sports Betting", "url": "https://www.producthunt.com/products/sharp-app-sports-betting", "what": "Data-backed tools and content for bettors", "starts_at": "See its pricing page", "ph_rating": 4, "ph_reviews": 1,
+         "difference": "A standalone app, while Big Mike's main channel is iMessage, including group chats."},
+        {"name": "Chuck", "url": "https://www.producthunt.com/products/chuck-2", "what": "Keeps you up to date on sports news", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 1,
+         "difference": "Focused on news; Big Mike adds betting picks, a graded record and fantasy advice."}
+      ],
+      "more": "Product Hunt also lists NeuroBet and Flex Fantasy."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/big-mike/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/big-mike",
+      "quotes": [
+        {"author": "Jernej Jan Kočica", "text": "in a group chat how does he decide when to speak and when to stay out?",
+         "reply": "Michael Hewitt: for now he replies when someone includes 'Big Mike' in a message or replies directly to one of his messages."},
+        {"author": "Natalia Iankovych", "text": "Am I understanding correctly that you've integrated with Polymarket and Kalshi?",
+         "reply": "Michael Hewitt: yes, you can link those accounts and track your bets in the app."},
+        {"author": "Tehreem Fatima", "text": "do you plan on expanding beyond iMessage to platforms like WhatsApp or Telegram in the future?",
+         "reply": "Michael Hewitt: WhatsApp first, then Telegram, but the focus for now is iOS."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=%22Big%20Mike%22%20bigmike.app&f=live"}
+    },
+    "faq": [
+      {"q": "What is Big Mike?", "a": "An AI sports analysis service from Big Mike LLC that texts betting picks, injury alerts and fantasy advice through iMessage and SMS, with an iOS app. It launched on Product Hunt on 15 August 2026."},
+      {"q": "Does Big Mike take bets?", "a": "No. Its terms say it is an information and analysis service only, does not operate as a sportsbook and does not accept wagers. Betting happens on third-party platforms."},
+      {"q": "Who can use Big Mike?", "a": "According to its terms, you must be 21 or older (or the legal gambling age in your jurisdiction, if higher) and live where sports betting analysis services are legal."},
+      {"q": "Which sports does it cover?", "a": "MLB, NFL, college football, the NBA and the WNBA, according to its Product Hunt launch and site."},
+      {"q": "How much does Big Mike cost?", "a": "Its site published no prices when we checked. Product Hunt lists it as having free options, and its privacy policy says billing goes through Apple In-App Purchases."},
+      {"q": "What happens when I link a sportsbook?", "a": "The link runs through SharpSports, a read-only sync service. Big Mike says you give your credentials to SharpSports directly and it receives your bet history and balances to build your ledger."}
+    ],
+    "sources": [
+      {"label": "Big Mike official site", "url": "https://www.bigmike.app/"},
+      {"label": "Big Mike privacy policy", "url": "https://www.bigmike.app/privacy-policy"},
+      {"label": "Big Mike terms of use", "url": "https://www.bigmike.app/terms-of-use"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/big-mike"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/big-mike/launches/big-mike"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/big-mike/alternatives"},
+      {"label": "Kutt", "url": "https://kutt.com/"}
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+ "slug": "goose-ads-remixer",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/gooseworks",
+ "excerpt": "Goose Ads Remixer from Gooseworks turns ads already running in your niche into new Meta ad creatives with your own logo, product images and messaging. Plans from $29/month; usable from Claude Code or Cursor through a CLI and MCP. How it works, pricing and alternatives.",
+ "content": "<p>Goose Ads Remixer makes ad creatives for Meta by starting from ads that are already running in your niche. You paste your website, pick up to 15 example ads, add a line of direction such as \"summer sale is live, 25% off everything\", and Goose generates a batch that keeps the example's angle and layout but uses your own logo, product images, colours and copy. The team says it learns the principles behind an ad rather than copying it, and each result can be compared with the original it drew on. Short video and UGC-style ads can be remixed as well.</p><p>Ads Remixer is part of Gooseworks, which describes itself as an AI growth coworker for consumer brands: it also generates product photos, plans organic social posts, publishes approved ads to Meta and matches ad spend back to each creative. You can use it in the web app, by message in Slack, WhatsApp or email, or from an AI coding agent such as Claude Code, Cursor or Codex through its CLI and MCP server. Gooseworks says it was founded in 2022, is backed by Y Combinator and is built in San Francisco.</p><p>Goose Ads Remixer launched on Product Hunt on 14 July 2026, its first launch there, and finished #3 for the day with 442 upvotes and 84 comments.</p><p><em>We have not tested Goose Ads Remixer ourselves. This page brings together Gooseworks' official site, pricing and about pages, its Product Hunt page and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI ad creative",
+  "platform": "Web app, CLI and MCP for AI coding agents",
+  "starts_at": "$29/month (Lite); free credits when started from your AI agent",
+  "schema_category": "DesignApplication",
+  "summary_short": "Remixes winning ads in your niche into on-brand Meta ad creatives with your own assets",
+  "maker": {"name": "Himanshu Bamoria", "url": "https://www.producthunt.com/@himanshu_bamoria1"},
+  "team": [
+   {"name": "Himanshu Bamoria", "role": "Co-founder", "url": "https://www.producthunt.com/@himanshu_bamoria1"},
+   {"name": "Shiv Sakhuja", "role": "Maker", "url": "https://www.producthunt.com/@shivsak"},
+   {"name": "Akhil Bisht", "role": "Founding Engineer", "url": "https://www.producthunt.com/@akhil_bisht"},
+   {"name": "Soham Mehta", "role": "Maker", "url": "https://www.producthunt.com/@sohmehta"}
+  ],
+  "ph": {"rank": 3, "votes": 442, "comments": 84, "followers": 818, "launched": "2026-07-14", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Making a batch of Meta ads from examples that already work in your category",
+   "Turning a promotion into on-brand static or video creatives in minutes",
+   "Generating ads from Claude Code, Cursor or Codex without opening the app",
+   "Testing more creative variations each week",
+   "Publishing approved ads to Meta and seeing which creative earned the revenue"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Himanshu Bamoria and Shiv Sakhuja say making Meta ad creatives was painful for them: agencies were expensive, generic AI tools produced low-quality work and doing it themselves took too long.",
+    "Their observation was that the ads already performing in any niche are public and show which hooks, offers and layouts work right now. Goose learns those patterns and rebuilds the ads with your brand's assets. They launched it for the web app and for AI coding agents through a CLI, with the first 10 ads free."
+   ],
+   "attribution": "Himanshu Bamoria and Shiv Sakhuja, makers, on Product Hunt",
+   "url": "https://www.producthunt.com/products/gooseworks?comment=5565197"
+  },
+  "audience": {
+   "fit": [
+    "run Meta ads for a consumer brand and need more creatives to test",
+    "have product photos and a brand kit but no designer on hand",
+    "already work in Claude Code, Cursor or Codex and want ad generation there"
+   ],
+   "not_fit": [
+    "worry about ads looking derivative of competitors: a commenter asked whether Goose flags outputs too close to the source",
+    "need credits to roll over: monthly credits reset each billing cycle",
+    "want a free tier in the web app: generating in the app needs a monthly plan"
+   ]
+  },
+  "pricing": {
+   "intro": "Gooseworks' pricing page lists monthly plans in US dollars. Images and videos draw on one credit balance; an ad creative uses about 30 to 90 credits depending on quality.",
+   "url": "https://gooseworks.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Lite", "price": "$29/month", "amount": 29, "currency": "USD", "detail": "2,000 AI credits a month, static ad generation, tools through MCP, credit top-ups; video available during testing only"},
+    {"name": "Starter", "price": "$59/month", "amount": 59, "currency": "USD", "detail": "4,000 credits a month (about 50 to 100 creatives), video ad generation"},
+    {"name": "Pro", "price": "$149/month", "amount": 149, "currency": "USD", "detail": "12,000 credits a month (about 160 to 330 creatives), plus coworker chat and messaging"},
+    {"name": "Business", "price": "Talk to us", "currency": "USD", "detail": "Guided setup, the first 30 ads made for you, dedicated support"}
+   ],
+   "notes": [
+    "Starting Gooseworks from your own AI agent gives 1,000 free credits.",
+    "Unused subscription credits do not roll over.",
+    "At launch the team offered the first 10 ads free and 50% off Starter and Pro with a Product Hunt coupon; those offers may have ended."
+   ]
+  },
+  "alternatives": {
+   "intro": "AdCreative.ai, Creatify and Sivi AI are on Product Hunt's alternatives list. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "AdCreative.ai", "url": "https://www.adcreative.ai/", "what": "AI ad creatives and banners", "starts_at": "See its pricing page", "ph_rating": 3.89, "ph_reviews": 53, "ph_url": "https://www.producthunt.com/products/adcreative-ai", "difference": "Generates creatives from your inputs; Goose starts from ads already running in your niche and can attribute spend back to creatives."},
+    {"name": "Creatify", "url": "https://creatify.ai/", "what": "AI video ad maker", "starts_at": "See its pricing page", "ph_rating": 4.3, "ph_reviews": 54, "ph_url": "https://www.producthunt.com/products/creatify", "difference": "Video-first, often with AI avatars; Goose covers static and video remixes of existing ad patterns."},
+    {"name": "Sivi AI", "url": "https://sivi.ai/", "what": "AI design generator for ads and banners", "starts_at": "See its pricing page", "ph_rating": 4.61, "ph_reviews": 28, "ph_url": "https://www.producthunt.com/products/sivi-ai", "difference": "General design generation; Goose is built around Meta ads and competitor examples."}
+   ],
+   "more": "Product Hunt also lists VidAU and ADYOUNEED."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/gooseworks/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Starting from proven ads instead of a blank prompt", "Remixing onto your own logo and products", "The first 10 ads being free"],
+    "asked": ["Whether it flags outputs too close to the source ad", "Whether it shows what changed from the original (you can view the original next to the result)", "Whether video is supported (yes, short-form and UGC remixes)"],
+    "criticised": ["Generated copy can come out too salesy; a commenter asked for a tone control"]
+   },
+   "quotes": [
+    {"text": "This one properly sucked me in and I have really enjoyed using it.", "author": "Martin Tanner", "url": "https://www.producthunt.com/products/gooseworks?comment=5580370"},
+    {"text": "Does Goose flag when an output sits too close to the source ad, or is that on us to eyeball?", "author": "Artem Fedorovich", "url": "https://www.producthunt.com/products/gooseworks?comment=5582065"},
+    {"text": "I'd love a quick way to tweak the tone of the generated copy before exporting, like a little slider for playful vs professional.", "author": "Güllü", "url": "https://www.producthunt.com/products/gooseworks?comment=5575672"}
+   ]
+  },
+  "pros": [
+   "Builds on ads already running in your niche",
+   "Uses your real logo, products and messaging",
+   "Works from Claude Code, Cursor, Codex or chat apps as well as the web",
+   "Month-to-month plans from $29",
+   "Publishes approved ads to Meta and links spend to each creative"
+  ],
+  "cons": [
+   "Risk of outputs feeling derivative of competitors' ads",
+   "Credits reset monthly",
+   "No free web-app tier beyond agent-started credits",
+   "Video on the $29 plan is only during testing"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/gooseworks",
+   "x": {"none": "We found no posts about Goose Ads Remixer on X to link yet.", "search_url": "https://x.com/search?q=gooseworks&f=live", "profile_url": "https://twitter.com/gooseworksai"}
+  },
+  "faq": [
+   {"q": "What is Goose Ads Remixer?", "a": "A Gooseworks tool that takes ads already running in your niche and generates new Meta ad creatives in your brand, with your logo, product images and messaging."},
+   {"q": "How much does it cost?", "a": "Lite is $29 a month, Starter $59, Pro $149, and Business is by arrangement. Starting from your own AI agent gives 1,000 free credits."},
+   {"q": "Does it copy competitors' ads?", "a": "The makers say it uses the concept, style and angle of the example ad and replaces the product images, logo and copy with yours. Whether a result sits too close to the source is something to check yourself."},
+   {"q": "Can it make video ads?", "a": "Yes. The team said short-form and UGC-style creatives can be remixed; video is included from the Starter plan."},
+   {"q": "Can I use it from Claude Code or Cursor?", "a": "Yes. Gooseworks offers a CLI and an MCP server, so Claude, Cursor, Claude Code and Codex can generate ads and save them to your dashboard."},
+   {"q": "What are the alternatives?", "a": "AdCreative.ai, Creatify and Sivi AI, with VidAU and ADYOUNEED also on Product Hunt's list."}
+  ],
+  "sources": [
+   {"label": "Goose Ads Remixer", "url": "https://gooseworks.ai/ads"},
+   {"label": "Gooseworks pricing", "url": "https://gooseworks.ai/pricing"},
+   {"label": "Gooseworks about", "url": "https://gooseworks.ai/about"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/gooseworks"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/gooseworks/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/94d27d87-684e-4314-a0f6-a496bc3fb95f.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "alt": "Goose Ads Remixer screen 'Pick your ads. Say the word. Generate.' with selected templates and a one-line instruction", "credit": "Image: Goose Ads Remixer via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/a7e4286a-cb76-40e4-be6b-94e57bee86d8.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "alt": "Goose Ads Remixer 'Or run it from your coding agent' with a terminal running the goose-ads command", "credit": "Image: Goose Ads Remixer via Product Hunt"}
+  ]
+ }
+}

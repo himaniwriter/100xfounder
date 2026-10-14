@@ -11,6 +11,7 @@
 <?php
 $nav = xft_nav_items();
 $submit_url = xft_page_url('submit', 'submit');
+$launch_url = xft_page_url('launch', 'launch');
 $instagram = xft_plugin() ? xf_get_setting('instagram_url') : '';
 $linkedin = xft_plugin() ? xf_get_setting('linkedin_url') : '';
 ?>
@@ -27,7 +28,7 @@ $linkedin = xft_plugin() ? xf_get_setting('linkedin_url') : '';
 
 <header class="site-header">
     <div class="wrap bar">
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/logo.png'); ?>" width="161" height="24" alt="<?php echo esc_attr(get_bloginfo('name') ?: '100xFounder'); ?> home"></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/logo.webp'); ?>" width="161" height="24" fetchpriority="high" alt="<?php echo esc_attr(get_bloginfo('name') ?: '100xFounder'); ?> home"></a>
         <nav class="primary-nav" aria-label="Main">
             <?php foreach ($nav as $item) : ?>
                 <a class="nl<?php echo xft_is_current($item['url']) ? ' on' : ''; ?>" href="<?php echo esc_url($item['url']); ?>"><?php echo esc_html($item['label']); ?></a>
@@ -35,6 +36,7 @@ $linkedin = xft_plugin() ? xf_get_setting('linkedin_url') : '';
         </nav>
         <div class="header-actions">
             <button class="btn btn-icon" type="button" data-search-toggle aria-expanded="false" aria-controls="search-panel" aria-label="Search"><?php echo xft_icon('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>', 17); // phpcs:ignore ?></button>
+            <a href="<?php echo esc_url($launch_url); ?>" class="btn hs">Launch your startup — free</a>
             <a href="<?php echo esc_url($submit_url); ?>" class="btn btn-w hs">Submit story</a>
             <button class="btn btn-icon mb" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu">
                 <span class="icon-menu"><?php echo xft_icon('<path d="M4 8h16M4 16h16"/>', 18); // phpcs:ignore ?></span>
@@ -46,7 +48,8 @@ $linkedin = xft_plugin() ? xf_get_setting('linkedin_url') : '';
         <?php foreach ($nav as $item) : ?>
             <a class="ml" href="<?php echo esc_url($item['url']); ?>"><?php echo esc_html($item['label']); ?><span class="k">→</span></a>
         <?php endforeach; ?>
-        <a href="<?php echo esc_url($submit_url); ?>" class="btn btn-w" style="margin-top:16px;height:48px">Submit story</a>
+        <a href="<?php echo esc_url($launch_url); ?>" class="btn" style="margin-top:16px;height:48px">Launch your startup — free</a>
+        <a href="<?php echo esc_url($submit_url); ?>" class="btn btn-w" style="margin-top:10px;height:48px">Submit story</a>
     </nav>
     <div class="search-panel" id="search-panel">
         <form class="wrap" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
@@ -87,3 +90,4 @@ $linkedin = xft_plugin() ? xf_get_setting('linkedin_url') : '';
     <?php endif;
 endif; ?>
 <main id="main">
+<?php if (function_exists('xf_breadcrumbs_html')) echo xf_breadcrumbs_html(); // phpcs:ignore -- escaped inside ?>

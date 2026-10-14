@@ -1,0 +1,201 @@
+{
+ "slug": "base-code",
+ "excerpt": "Base Code, from Base44, lets product, design, marketing and QA teams change an existing GitHub codebase in plain language from the browser, with a live preview and a normal pull request for engineers to review. What it does, requirements, pricing status and alternatives.",
+ "content": "<p>Base Code is a browser-based workspace from Base44 for working on a codebase you already have. You connect a GitHub repository, describe a change in plain language, and Base Code makes it on an isolated branch with a live preview. When the change is ready, it goes to engineering as a standard GitHub pull request, so existing branch protections, required checks and review rules stay in place and engineers still decide what merges.</p><p>The pitch is that more of the team can contribute: product, design, marketing and QA as well as engineering. Nobody needs to clone the repository or set up a local development environment, and teammates can see each other's sessions and live previews and jump into any branch. GitHub stays the source of truth: Base Code commits and pushes to the working branch as you chat. It works with web and full-stack projects, keeps the project's own stack, and stores secrets encrypted across branches. The preview is for development only; you still release through your own hosting and deployment process.</p><p>Base Code launched on Product Hunt on 12 October 2026, Base44's ninth launch there, and finished #3 for the day with 196 upvotes. The footer of Base44's site credits Wix.com Ltd.</p><p><em>We have not tested Base Code ourselves. This page brings together Base44's Base Code page, documentation and pricing page, its Product Hunt launch and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI coding",
+  "platform": "Browser-based workspace connected to GitHub",
+  "os": "Browser; needs a web or full-stack project in a GitHub repository",
+  "starts_at": "Pricing not published for Base Code",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Browser workspace where the whole team changes an existing GitHub codebase in plain language and ships through pull requests",
+  "maker": {
+   "name": "Base44",
+   "url": "https://www.producthunt.com/products/base44"
+  },
+  "ph": {
+   "rank": 3,
+   "votes": 196,
+   "comments": 4,
+   "followers": 7100,
+   "launched": "2026-10-12",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "A product manager or designer fixing copy, layout or small features without waiting for an engineer",
+   "QA reproducing and fixing a bug on its own branch, then handing it over as a pull request",
+   "Marketing updating a landing page that lives in the product's codebase",
+   "Engineers reviewing teammates' changes with the same pull-request process they already use"
+  ],
+  "audience": {
+   "fit": [
+    "have an existing web or full-stack product in a GitHub repository",
+    "want non-engineers to contribute changes while engineering keeps code review and branch protections",
+    "don't want every contributor to set up a local development environment"
+   ],
+   "not_fit": [
+    "host your code on GitLab, Bitbucket or Azure DevOps: Base Code's documentation covers GitHub only",
+    "are building an app inside Base44's own app editor: the docs say to keep using the editor and its GitHub integration",
+    "want hosting for production: the preview is for development only",
+    "have a repository whose root project is not a web or full-stack app, such as a pure mobile app"
+   ]
+  },
+  "pricing": {
+   "intro": "Pricing not published. Base44 does not list a price for Base Code on its Base Code page or in its documentation, and its pricing page does not say which Base44 plan includes it. For reference, Base44's general app-builder plans on 14 October 2026 were Free, Starter at $16, Builder at $40, Pro at $80 and Elite at $160 a month billed yearly, plus Enterprise.",
+   "url": "https://base44.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Base Code",
+     "price": "Pricing not published",
+     "currency": "USD",
+     "detail": "No price or plan requirement is stated on the Base Code page or in the docs"
+    }
+   ],
+   "notes": [
+    "Base44's documentation mentions that a coupon code for Base Code can cover up to 10 people in a workspace.",
+    "Base44's plans can be cancelled or changed any time from account settings, taking effect at the next billing cycle. The pricing page does not state refund terms."
+   ]
+  },
+  "alternatives": {
+   "intro": "Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Builder.io",
+     "url": "https://www.builder.io/",
+     "what": "AI visual IDE that connects to your repository so teams can make code changes",
+     "starts_at": "Free for 1 user; Pro $24 per user a month",
+     "difference": "Connects to GitLab and Bitbucket as well as GitHub; Base Code's documentation covers GitHub only."
+    },
+    {
+     "name": "GitHub Copilot",
+     "url": "https://github.com/features/copilot",
+     "what": "GitHub's AI assistant, whose cloud agent can work on a repository and open pull requests",
+     "starts_at": "Free tier; Pro $10/month",
+     "difference": "Built for developers working in GitHub and their editor, without a shared live-preview workspace aimed at non-engineers."
+    },
+    {
+     "name": "Replit",
+     "url": "https://replit.com/",
+     "what": "Browser IDE with an AI agent that builds and hosts apps",
+     "starts_at": "Core $20/month ($18/month billed yearly)",
+     "difference": "Also hosts and deploys apps; Base Code explicitly leaves production hosting to your own setup."
+    }
+   ]
+  },
+  "pros": [
+   "Works on your existing codebase and stack; no migration to Base44's own platform",
+   "Changes arrive as standard GitHub pull requests, and branch protections and checks still apply",
+   "No local setup for contributors",
+   "Isolated branches with live previews, visible to the whole team",
+   "GitHub remains the source of truth"
+  ],
+  "cons": [
+   "No published price, and no statement of which plan includes it",
+   "GitHub only, according to the docs",
+   "Web and full-stack projects only at the repository root",
+   "Preview is not production hosting",
+   "Opening a pull request needs GitHub write access; without it you work on a fork or copy"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/base44?launch=base-code",
+   "x": {
+    "none": "We found no independent posts about Base Code on X to link yet.",
+    "search_url": "https://x.com/search?q=%22Base%20Code%22%20base44&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "How much does Base Code cost?",
+    "a": "Base44 has not published a price for Base Code, and its pricing page doesn't say which plan includes it. Base44's general plans run from free to $160 a month billed yearly, plus Enterprise."
+   },
+   {
+    "q": "Does it work with my existing codebase?",
+    "a": "Yes, if it is a web or full-stack project in a GitHub repository. Base Code keeps your stack and doesn't add Base44's database, login or SDK."
+   },
+   {
+    "q": "Do I need a local development environment?",
+    "a": "No. There is no cloning, dependency installation or local setup; everything runs in a shared cloud environment."
+   },
+   {
+    "q": "Who reviews the changes?",
+    "a": "Engineering, through standard GitHub pull requests. Existing branch protections, required checks and review rules stay in place."
+   },
+   {
+    "q": "What if I don't have write access to the repository?",
+    "a": "The project opens read-only. You can connect a public fork or private copy, and pull requests then target that copy."
+   },
+   {
+    "q": "Can Base Code host my app in production?",
+    "a": "No. The live preview is for development; you release through your existing hosting and deployment process."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Base Code (Base44)",
+    "url": "https://base44.com/base-code"
+   },
+   {
+    "label": "Base Code documentation",
+    "url": "https://docs.base44.com/Getting-Started/base-code.md"
+   },
+   {
+    "label": "Base44 pricing",
+    "url": "https://base44.com/pricing"
+   },
+   {
+    "label": "Base Code walkthrough video (Base44)",
+    "url": "https://media.base44.com/videos/public/marketing-site-assets/branded/codebase/base-code-walkthrough-v3.mp4"
+   },
+   {
+    "label": "Product Hunt launch",
+    "url": "https://www.producthunt.com/products/base44?launch=base-code"
+   },
+   {
+    "label": "Builder.io pricing",
+    "url": "https://www.builder.io/pricing"
+   },
+   {
+    "label": "GitHub Copilot plans",
+    "url": "https://github.com/features/copilot/plans"
+   },
+   {
+    "label": "Replit pricing",
+    "url": "https://replit.com/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/9972b40f-ffd1-4e6c-b450-0f40a0889e27.png?auto=format&fit=max&w=1400",
+    "alt": "Base44 graphic 'Base Code: let your whole team build on your product'"
+   },
+   {
+    "url": "https://ph-files.imgix.net/feda9b8c-b4d2-4df5-bf81-14b68359807d.png?auto=format&fit=max&w=1400",
+    "alt": "Base Code graphic 'Build directly on your existing codebase' with the steps from connecting a repository to a pull request"
+   },
+   {
+    "url": "https://ph-files.imgix.net/500ba240-4c11-4371-b03f-497600368139.png?auto=format&fit=max&w=1400",
+    "alt": "Base Code graphic 'Turn product ideas into working changes' with a chat request beside a live preview"
+   },
+   {
+    "url": "https://ph-files.imgix.net/ab70792a-d3ad-4693-9d47-1fc31c0ca5fd.png?auto=format&fit=max&w=1400",
+    "alt": "Base Code graphic 'Expand who can contribute without changing how you ship' listing engineering, product, design, marketing and QA"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/9972b40f-ffd1-4e6c-b450-0f40a0889e27.png?auto=format&fit=max&w=1400",
+    "alt": "Base44 graphic 'Base Code: let your whole team build on your product'"
+   },
+   {
+    "url": "https://ph-files.imgix.net/feda9b8c-b4d2-4df5-bf81-14b68359807d.png?auto=format&fit=max&w=1400",
+    "alt": "Base Code graphic 'Build directly on your existing codebase' with the steps from connecting a repository to a pull request"
+   },
+   {
+    "url": "https://ph-files.imgix.net/500ba240-4c11-4371-b03f-497600368139.png?auto=format&fit=max&w=1400",
+    "alt": "Base Code graphic 'Turn product ideas into working changes' with a chat request beside a live preview"
+   }
+  ]
+ }
+}

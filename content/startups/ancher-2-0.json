@@ -1,0 +1,284 @@
+{
+ "slug": "ancher-2-0",
+ "excerpt": "Ancher saves the articles, videos, posts and podcasts you come across, finds them again by meaning and turns them into briefs, reports and posts with ChatGPT, Claude or its own agent. Plans, alternatives and launch Q&A.",
+ "content": "<p>Ancher is a tool for keeping and reusing what you read and watch. You save articles, YouTube videos, X, LinkedIn, Reddit and Instagram posts, podcasts, PDFs and screenshots from the web app, the mobile app, the browser extension, Slack, Telegram or email. Ancher writes structured notes for each item (key points, takeaways and video keyframes), links related sources, and lets you find things later by meaning rather than by title or URL, down to the exact sentence or moment in a video, with the source attached.</p><p>You can then ask questions across what you've saved, use it as context in ChatGPT or Claude, or have Ancher's own agent turn it into a memo, research brief, report, presentation or post in your voice. Ancher remembers only what you choose to save. Its homepage says your notes and files are never shared with other accounts or used to train AI, though its security page says fuller details are still to come.</p><p>Ancher is made by Streamify Tech, Inc.; its co-founder and CEO, Vincent Wu, previously spent 15 years in media at HuffPost, Yahoo News and NewsBreak. Ancher 2.0 launched on Product Hunt on 12 October 2026 and finished #6 for the day with 151 upvotes and 38 comments.</p><p><em>We have not tested Ancher ourselves. This page brings together its official site, pricing page and terms, its Product Hunt page and the official pricing pages of comparable apps, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Knowledge management",
+  "platform": "Web, mobile app and browser extension",
+  "os": "Web app (no install), mobile app and browser extension",
+  "starts_at": "Free (100 credits a month); paid from $5/month",
+  "schema_category": "ProductivityApplication",
+  "summary_short": "Saves what you read and watch, finds it by meaning and turns it into briefs, reports and posts with AI",
+  "maker": {
+   "name": "Vincent Wu",
+   "url": "https://www.producthunt.com/@vincentwu800"
+  },
+  "team": [
+   {
+    "name": "Vincent Wu",
+    "role": "Co-founder and CEO",
+    "url": "https://www.producthunt.com/@vincentwu800"
+   },
+   {
+    "name": "Ula",
+    "role": "Founding growth",
+    "url": "https://www.producthunt.com/@ula6"
+   },
+   {
+    "name": "William",
+    "role": "Operations manager",
+    "url": "https://www.producthunt.com/@william_ancher"
+   }
+  ],
+  "ph": {
+   "rank": 6,
+   "votes": 151,
+   "comments": 38,
+   "followers": 1100,
+   "launched": "2026-10-12",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Saving a line from an X post or 30 seconds of a YouTube video and finding it again weeks later",
+   "Turning a collection of saved sources into a research brief, report or presentation",
+   "Giving ChatGPT or Claude your own saved material as context",
+   "Drafting social posts from what you've read, in your own voice"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Vincent Wu says he spent 15 years in media helping algorithms decide what people see, and now wants to help people, and their agents, get back to what was worth keeping. His argument: everyone can use the same AI models, but nobody has read the same things or noticed the same details, so the work becomes yours before you write a prompt.",
+    "He describes Ancher 2.0 as an \"agentic Dropbox\": just as Dropbox made files available wherever you work, Ancher aims to make what you save usable wherever your agents work. You save a post, video, podcast or idea, later ask what you saved about something, find the exact passage with its source, and put it to work in ChatGPT, Claude or Ancher's own agent."
+   ],
+   "attribution": "Vincent Wu, co-founder and CEO, on Product Hunt",
+   "url": "https://www.producthunt.com/products/ancher-ai?comment=5931927"
+  },
+  "audience": {
+   "fit": [
+    "save a lot from X, YouTube, podcasts and articles and struggle to find it again",
+    "write reports, briefs or posts and want them grounded in sources you trust",
+    "use ChatGPT or Claude and want your own material as context"
+   ],
+   "not_fit": [
+    "need to export everything today: export was described on Product Hunt as on the roadmap",
+    "need documented security details or certifications: the security page says details are coming soon",
+    "want automatic capture of everything you browse: Ancher only keeps what you save"
+   ]
+  },
+  "pricing": {
+   "intro": "Ancher has a free plan and two paid plans, priced in dollars and measured in monthly credits. The pricing page does not say what one credit buys.",
+   "url": "https://ancher.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "100 credits a month, all core features, community support"
+    },
+    {
+     "name": "Digest",
+     "price": "$5/month or $59.99/year",
+     "amount": 5,
+     "currency": "USD",
+     "detail": "5,000 credits a month, email support"
+    },
+    {
+     "name": "Pro",
+     "price": "$15/month or $179.99/year",
+     "amount": 15,
+     "currency": "USD",
+     "detail": "20,000 credits a month, priority support, early access to new features"
+    }
+   ],
+   "notes": [
+    "The page says yearly billing saves up to 20%, but the yearly prices listed are almost exactly twelve monthly payments.",
+    "Payments are non-refundable except where the law requires or Ancher states otherwise (terms, section 10.5)."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists note-taking apps such as Reflect and Capacities; we compared Ancher with closer save-and-recall tools. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Readwise Reader",
+     "url": "https://readwise.io/read",
+     "what": "Read-it-later app bundled with Readwise's highlight review",
+     "starts_at": "$9.99/month billed yearly ($12.99 monthly); 30-day free trial",
+     "difference": "A reading and highlighting app with exports to Notion and Obsidian, and no free tier. Ancher focuses on turning saved material into finished work."
+    },
+    {
+     "name": "Recall",
+     "url": "https://www.recall.it/",
+     "what": "AI knowledge base that summarises saved videos, podcasts, PDFs and articles and lets you chat with them",
+     "starts_at": "Free (10 AI summaries a month); Plus $10/month billed yearly",
+     "difference": "Its free tier includes API and MCP access, and it offers refunds in the first 30 days."
+    },
+    {
+     "name": "mymind",
+     "url": "https://mymind.com/",
+     "what": "Private visual bookmarking app",
+     "starts_at": "See its pricing page",
+     "difference": "A visual personal library without AI drafting of reports or posts."
+    }
+   ],
+   "more": "Product Hunt lists Me.bot, Reflect, Littlebird, Capacities and Heyday as alternatives."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/ancher-ai/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Solving a problem one commenter was about to build a tool for himself"
+    ],
+    "asked": [
+     "How it compares with Notion, Readwise and Obsidian, and whether notes can be imported (no one-click Notion import yet)",
+     "Whether saved content can be exported (on the roadmap; bulk import from X is supported)",
+     "Whether it remembers everything you browse (no, only what you save, by design)"
+    ],
+    "criticised": [
+     "Getting existing bookmarks from LinkedIn, X and other sites into any such system is hard"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "The hardest part of these systems is adding content.",
+     "author": "Jay Janarthanan",
+     "url": "https://www.producthunt.com/products/ancher-ai?comment=5942537"
+    },
+    {
+     "text": "Where does Ancher stand in relation to Notion, Readwise, and Obsidian? Is there an option for me to import my notes?",
+     "author": "Muhammad Ahmed",
+     "url": "https://www.producthunt.com/products/ancher-ai?comment=5941895"
+    },
+    {
+     "text": "is there any feature present/planned that will let me export all my saved content",
+     "author": "Samridh Anand",
+     "url": "https://www.producthunt.com/products/ancher-ai?comment=5941284"
+    },
+    {
+     "text": "It's not clear form the video if it does remember everything I check or only things I save.",
+     "author": "Bengeekly",
+     "url": "https://www.producthunt.com/products/ancher-ai?comment=5943008"
+    }
+   ]
+  },
+  "pros": [
+   "Free plan, and low-cost paid plans",
+   "Captures from many sources: X, LinkedIn, YouTube, Reddit, Instagram, podcasts, PDFs, Slack, Telegram and email",
+   "Finds the exact sentence or video moment, with its source",
+   "Works with ChatGPT and Claude as well as its own agent",
+   "Says your data is never used to train AI"
+  ],
+  "cons": [
+   "Export of saved content isn't available yet",
+   "No one-click import from Notion or other note apps yet",
+   "Security details are still marked as coming soon",
+   "Credits aren't explained on the pricing page",
+   "Payments are generally non-refundable"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/ancher-ai?launch=ancher-2-0",
+   "x": {
+    "none": "We found no independent posts about Ancher 2.0 on X to link yet.",
+    "search_url": "https://x.com/search?q=ancher.ai&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "How much does Ancher cost?",
+    "a": "There is a free plan with 100 credits a month. Digest is $5 a month or $59.99 a year with 5,000 credits; Pro is $15 a month or $179.99 a year with 20,000 credits."
+   },
+   {
+    "q": "Does Ancher remember everything I browse?",
+    "a": "No. It keeps only what you choose to save. The co-founder said on Product Hunt this is deliberate, because remembering everything would turn it into another news feed."
+   },
+   {
+    "q": "Can I export my saved content?",
+    "a": "Not yet. The team said on Product Hunt that export is on the roadmap. Bulk import from X is supported, with other platforms to follow."
+   },
+   {
+    "q": "How is Ancher different from Notion or Obsidian?",
+    "a": "The team describes it as less about organising notes by hand and more about capturing small things that slip away, like 20 seconds of a video or one sentence in an article, and turning them into work. There's no one-click Notion import yet."
+   },
+   {
+    "q": "Is my data used to train AI?",
+    "a": "Ancher's homepage says your notes, files and conversations are never shared with other accounts or used to train AI. Its security page says more details are coming soon."
+   },
+   {
+    "q": "Who makes Ancher?",
+    "a": "Streamify Tech, Inc. Its co-founder and CEO is Vincent Wu."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Ancher official site",
+    "url": "https://ancher.ai/"
+   },
+   {
+    "label": "Ancher pricing",
+    "url": "https://ancher.ai/pricing"
+   },
+   {
+    "label": "Ancher terms",
+    "url": "https://ancher.ai/terms"
+   },
+   {
+    "label": "Ancher security page",
+    "url": "https://ancher.ai/security"
+   },
+   {
+    "label": "Product Hunt launch and discussion",
+    "url": "https://www.producthunt.com/products/ancher-ai?launch=ancher-2-0"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/ancher-ai/alternatives"
+   },
+   {
+    "label": "Readwise pricing",
+    "url": "https://readwise.io/pricing"
+   },
+   {
+    "label": "Recall pricing",
+    "url": "https://www.recall.it/pricing"
+   },
+   {
+    "label": "mymind pricing",
+    "url": "https://access.mymind.com/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/29fdf03f-03bb-435f-ad84-9b705727c139.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Ancher graphic 'Remember everything. Create anything.' with the app on a laptop, phone and browser"
+   },
+   {
+    "url": "https://ph-files.imgix.net/80a78534-06c0-444e-b846-87730d987659.png?auto=format&fit=max&w=1400",
+    "alt": "Ancher graphic 'Save what catches your attention' with the mobile app's save screen"
+   },
+   {
+    "url": "https://ph-files.imgix.net/8846a26e-7295-4c5d-b56d-87232ead7ec7.png?auto=format&fit=max&w=1400",
+    "alt": "Ancher graphic 'Keep your flow across mobile, web and browser extensions' showing the app on several devices"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/29fdf03f-03bb-435f-ad84-9b705727c139.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Ancher graphic 'Remember everything. Create anything.' with the app on a laptop, phone and browser"
+   },
+   {
+    "url": "https://ph-files.imgix.net/80a78534-06c0-444e-b846-87730d987659.png?auto=format&fit=max&w=1400",
+    "alt": "Ancher graphic 'Save what catches your attention' with the mobile app's save screen"
+   },
+   {
+    "url": "https://ph-files.imgix.net/8846a26e-7295-4c5d-b56d-87232ead7ec7.png?auto=format&fit=max&w=1400",
+    "alt": "Ancher graphic 'Keep your flow across mobile, web and browser extensions' showing the app on several devices"
+   }
+  ]
+ }
+}

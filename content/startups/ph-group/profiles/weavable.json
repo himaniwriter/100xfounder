@@ -1,0 +1,272 @@
+{
+ "slug": "weavable",
+ "ph_url": "https://www.producthunt.com/posts/weavable",
+ "existing_listing_slug": null,
+ "website": "https://weavable.ai/",
+ "excerpt": "Weavable gives Claude, ChatGPT, Cursor and other agents one MCP endpoint with scoped, current context from 20+ work tools. $20/month after 30 days free.",
+ "content": "<p>Weavable is a context layer that sits between a team's work tools and its AI assistants. You connect tools such as Jira, GitHub, Slack, Linear, Notion, HubSpot and Zendesk through one OAuth flow, choose which projects, channels and pipelines belong to a given workflow, and Weavable builds a graph that links tickets, threads and deals by account, team and timeline. That context is then exposed through a single MCP endpoint you can plug into Claude, ChatGPT, Cursor or your own agents.</p><p>The pitch is that direct tool connections hand the model raw data and let it guess what matters on every run. Weavable instead keeps a running changelog of what changed across your stack, scopes and ranks it before the model sees it, and keeps excluded areas (it gives HR and finance as examples) out of reach. Access is read-only, the company says data is never used for training, and it claims SOC 2 Type II and HIPAA certification. It also offers an audit trail, a REST API and SSO.</p><p>Weavable is made by Thatworks.xyz Inc. (That Works), which gives a Delaware postal address in its terms. Its makers on Product Hunt are co-founders Abesh Thakur and Varun Nair, both of whom list past roles at Meta. It launched on Product Hunt on 11 May 2026, hunted by Ben Lang, and finished #6 for the day with 228 upvotes and 65 comments. Individual use is free for 30 days and then $20 a month; team and custom plans are by contact.</p><p><em>We have not tested Weavable ourselves. This page brings together its official site, documentation and legal pages, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agents",
+  "platform": "Web app with an MCP server",
+  "starts_at": "30 days free, then $20/month (Individual)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "One MCP endpoint that gives AI agents scoped, current context from your work tools",
+  "use_cases": [
+   "Asking Claude or ChatGPT what the team shipped this week and drafting a status email",
+   "Giving an agent account-level context across HubSpot, Jira and Slack",
+   "Sharing one scoped context endpoint with a team instead of per-user tool connections",
+   "Keeping HR or finance data out of what AI can reach",
+   "Pulling customer feedback trends into a product brief"
+  ],
+  "audience": {
+   "fit": [
+    "connect several work tools to AI assistants and get inconsistent answers",
+    "want one MCP endpoint instead of setting up a server per tool",
+    "need read-only access and a clear scope for what AI can see"
+   ],
+   "not_fit": [
+    "want an agent that writes back to your tools: Weavable says its OAuth access is read-only",
+    "use only one or two tools, where a direct MCP connection may be enough",
+    "need public team pricing up front: Teams and Custom plans are by contact"
+   ]
+  },
+  "pricing": {
+   "intro": "Weavable lists three plans on its homepage. Prices are in US dollars.",
+   "url": "https://weavable.ai/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Individual",
+     "price": "30 days free, then $20/month",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "Connect all your tools, create a context and plug it into your AI stack. SOC 2 + HIPAA"
+    },
+    {
+     "name": "Teams",
+     "price": "Contact sales",
+     "detail": "Shared team contexts, up to 25 seats included, additional credits"
+    },
+    {
+     "name": "Custom",
+     "price": "Contact sales",
+     "detail": "SSO/SAML, access logs, private instances"
+    }
+   ],
+   "notes": [
+    "The homepage says you can cancel any time."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other ways to give AI agents access to company tools. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Composio",
+     "url": "https://composio.dev/",
+     "what": "Tool and integration platform for AI agents with managed authentication",
+     "starts_at": "Free Hobby plan; Pro $29/month",
+     "difference": "Gives agents many tools to call (including write actions); Weavable focuses on pre-built, read-only context rather than tool calls."
+    },
+    {
+     "name": "Glean",
+     "url": "https://www.glean.com/",
+     "what": "Enterprise AI search and assistant across company apps",
+     "starts_at": "See its pricing page",
+     "difference": "A full enterprise search and assistant product; Weavable is a lighter context endpoint you plug into the AI tools you already use."
+    }
+   ]
+  },
+  "pros": [
+   "One MCP endpoint for 20+ tools, no server to host",
+   "Read-only access and explicit scoping of what AI can see",
+   "Tracks changes over time rather than taking a snapshot at query time",
+   "Works with Claude, ChatGPT, Cursor and any MCP client",
+   "30-day free period for individuals"
+  ],
+  "cons": [
+   "Team and custom pricing is not published",
+   "Read-only, so agents cannot act in your tools through it",
+   "The token-saving and evaluation figures on the homepage are the company's own"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/weavable",
+   "x": {
+    "none": "We found no posts about Weavable on X to link yet.",
+    "search_url": "https://x.com/search?q=weavable&f=live"
+   },
+   "quotes": [
+    {
+     "text": "How does Weavable handle permissions and context boundaries so agents only reason from the information that specific users or teams should ... see?",
+     "reply": "Source connections are read-only and tightly scoped OAuth, and agents never connect to data sources directly, only to contexts you have defined with explicit data scopes.",
+     "author": "Conor McKenna",
+     "url": "https://www.producthunt.com/products/weavable?comment=5356434"
+    },
+    {
+     "text": "Curious: how do you actually reduce token usage by 90%?",
+     "reply": "Pulling raw data costs twice, on ingestion and again while the model connects records; Weavable's graph already knows the relationships and recency, so the model reasons only over the signals it queries.",
+     "author": "Grant MacLennan",
+     "url": "https://www.producthunt.com/products/weavable?comment=5356159"
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Weavable?",
+    "a": "A context layer for AI agents. It connects your work tools, builds a linked, scoped view of what is happening across them, and serves it through one MCP endpoint for Claude, ChatGPT, Cursor or your own agents."
+   },
+   {
+    "q": "How much does Weavable cost?",
+    "a": "The Individual plan is free for 30 days and then $20 a month. Teams (up to 25 seats included) and Custom plans are priced on request."
+   },
+   {
+    "q": "Why not connect my tools to Claude or ChatGPT directly?",
+    "a": "You can. Weavable's argument is that direct connections return raw data and the model decides what matters differently each time, while Weavable pre-builds the relationships, tracks changes and limits what reaches the model."
+   },
+   {
+    "q": "Can Weavable change data in my tools?",
+    "a": "No. The company says it uses read-only OAuth and cannot write to any connected tool."
+   },
+   {
+    "q": "Is my data used to train AI models?",
+    "a": "Weavable says your data is not shared, not retained and not used to train any model, and that it holds SOC 2 Type II and HIPAA certification with the report available on request."
+   },
+   {
+    "q": "What are the alternatives to Weavable?",
+    "a": "Composio for giving agents tool access, or Glean for enterprise AI search. Weavable sits between the two as a read-only context endpoint."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Weavable official site",
+    "url": "https://weavable.ai/"
+   },
+   {
+    "label": "Weavable documentation",
+    "url": "https://docs.weavable.ai/introduction"
+   },
+   {
+    "label": "Thatworks privacy notice",
+    "url": "https://thatworks.ai/privacy"
+   },
+   {
+    "label": "Thatworks terms",
+    "url": "https://thatworks.ai/terms"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/weavable"
+   },
+   {
+    "label": "Composio pricing",
+    "url": "https://composio.dev/pricing"
+   },
+   {
+    "label": "Glean pricing",
+    "url": "https://www.glean.com/pricing"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/weavable/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 6,
+   "votes": 228,
+   "comments": 65,
+   "followers": 358,
+   "launched": "2026-05-11",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Abesh Thakur",
+    "role": "Co-founder of That Works; 2x founder, ex-PM at Meta",
+    "url": "https://www.producthunt.com/@abesh_thakur"
+   },
+   {
+    "name": "Varun Nair",
+    "role": "2x founder, ex-Meta",
+    "url": "https://www.producthunt.com/@varunn"
+   }
+  ],
+  "maker": {
+   "name": "Abesh Thakur",
+   "url": "https://www.producthunt.com/@abesh_thakur"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/dbc1f6c8-3f00-4345-b968-1d30a7065611.png?auto=format&fit=max&w=1400",
+    "alt": "Weavable graphic '10x Less Tokens. Dramatically Better Answers.' comparing a raw MCP answer with a 92% full context window against a Weavable answer at 5%",
+    "credit": "Image: Weavable on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/f79bd370-038c-4a93-ba2c-6167b42309ab.png?auto=format&fit=max&w=1400",
+    "alt": "Weavable diagram 'Connect Once': tools such as HubSpot, Slack, GitHub and Notion connect by OAuth into scoped contexts served over one MCP connection",
+    "credit": "Image: Weavable on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/1a2c8ced-4531-4912-a189-98b280197d84.png?auto=format&fit=max&w=1400",
+    "alt": "Weavable graphic 'One Endpoint. Every Agent You Already Use.' linking its MCP endpoint to Claude, ChatGPT, Cursor and any agent",
+    "credit": "Image: Weavable on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/63539167-bd68-493c-b1cc-9d20c9c1865f.png?auto=format&fit=max&w=1400",
+    "alt": "Weavable graphic 'Your Work Keeps Moving. So Does Your Context.' showing a changelog timeline of events across tools",
+    "credit": "Image: Weavable on Product Hunt",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Abesh Thakur, co-founder of That Works, says teams building agent workflows already hold the context they need (decisions, relationships, pipeline data and support history), but it is spread across every tool. Connecting apps directly floods the model with raw responses and burns tokens, while static knowledge bases and RAG go stale as soon as they are captured.",
+    "Weavable keeps a continuously updated changelog across a team's work tools so agents reason from current, connected context. He claimed one-tenth the tokens of direct app connections and outputs preferred 85% of the time in LLM-as-a-judge evaluations; these are the company's own figures."
+   ],
+   "attribution": "Abesh Thakur, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/weavable?comment=5324573"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Treating context as something that changes, through an activity graph and changelog",
+     "Capturing what caused a change, which commenters felt plain RAG misses"
+    ],
+    "asked": [
+     "How it cuts token use by 90% (the graph already holds relationships and recency, so the model reasons only over the signals it needs)",
+     "How permissions and sensitive data are handled (read-only OAuth, and agents only reach contexts you define)",
+     "Whether it is faster than connecting Claude Code to each data source (yes, the makers say, because retrieval work is done upstream)",
+     "Whether context is normalised before it reaches different models (it is ranked, de-noised and structured first)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "A vector database can store snapshots and context, but it doesn’t really capture what actually caused something to change.",
+     "author": "Ishan Roy",
+     "url": "https://www.producthunt.com/products/weavable?comment=5364432"
+    },
+    {
+     "text": "How does Weavable handle permissions and context boundaries so agents only reason from the information that specific users or teams should ... see?",
+     "author": "Conor McKenna",
+     "url": "https://www.producthunt.com/products/weavable?comment=5356434"
+    },
+    {
+     "text": "We've found connecting to the data sources directly is slow as well as being token heavy",
+     "author": "Seyed Danesh",
+     "url": "https://www.producthunt.com/products/weavable?comment=5356479"
+    }
+   ]
+  },
+  "video_url": "https://youtu.be/Lo9P7lngP7c",
+  "video_title": "Weavable launch video"
+ }
+}

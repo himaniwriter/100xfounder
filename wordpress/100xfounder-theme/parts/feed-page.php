@@ -55,7 +55,15 @@ $popular = xft_popular(4);
         else : ?>
             <div style="padding:48px 0;color:var(--t2)">No stories in this section yet.</div>
         <?php endif; ?>
-        <?php if ($feed->max_num_pages > $paged) : ?>
+        <?php if (!empty($args['paginate']) && $feed->max_num_pages > 1) : ?>
+            <nav class="pager" aria-label="Pages" style="display:flex;flex-wrap:wrap;gap:8px">
+                <?php if ($paged > 1) : ?><a class="btn" rel="prev" href="<?php echo esc_url(get_pagenum_link($paged - 1)); ?>">← Newer</a><?php endif; ?>
+                <?php for ($i = 1; $i <= $feed->max_num_pages; $i++) : ?>
+                    <?php if ($i === $paged) : ?><span class="btn btn-sm" aria-current="page"><?php echo (int) $i; ?></span><?php else : ?><a class="btn btn-sm" href="<?php echo esc_url(get_pagenum_link($i)); ?>"><?php echo (int) $i; ?></a><?php endif; ?>
+                <?php endfor; ?>
+                <?php if ($paged < $feed->max_num_pages) : ?><a class="btn" rel="next" href="<?php echo esc_url(get_pagenum_link($paged + 1)); ?>">Older →</a><?php endif; ?>
+            </nav>
+        <?php elseif ($feed->max_num_pages > $paged) : ?>
             <div class="pager"><a class="btn" href="<?php echo esc_url(add_query_arg('pg', $paged + 1)); ?>">Load more stories</a></div>
         <?php elseif ($paged > 1) : ?>
             <div class="pager"><a class="btn" href="<?php echo esc_url(remove_query_arg('pg')); ?>">Back to the latest</a></div>

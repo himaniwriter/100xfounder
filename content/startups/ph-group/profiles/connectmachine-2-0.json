@@ -1,0 +1,85 @@
+{
+  "slug": "connectmachine-2-0",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/connectmachine-2-0",
+  "excerpt": "ConnectMachine is a digital business card app with a private AI that remembers who you met and why. Plans, alternatives and Product Hunt launch figures.",
+  "content": "<p>ConnectMachine is an iOS and Android app that replaces paper business cards. You can create several digital cards and share them by QR code, Apple or Google Wallet, AirDrop or a link, and the other person doesn't need the app. It also scans paper cards, LinkedIn QR codes and event badges into contacts.</p><p>The part it leads with is memory. An AI note-taker records the context of each meeting, and an \"AI Concierge\" lets you search your contacts in plain language. Contacts can sync to CRMs such as Salesforce, HubSpot and Pipedrive, or through Zapier, Make and n8n webhooks. The company says there is no public feed or open messaging and that your contact book is export-only, with no third-party write-back.</p><p>ConnectMachine is made by Connect Machine Inc. in San Francisco, according to its About page. Version 2.0 was its second Product Hunt launch, on 10 July 2026, and finished #5 for the day with 362 points and 43 comments (as of 14 October 2026).</p><p><em>We have not tested ConnectMachine ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Digital business cards and contact management",
+    "platform": "iOS and Android apps",
+    "starts_at": "Free plan; Individual from $5/month billed annually",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI digital business card app that scans cards, shares by QR or Wallet and remembers who you met",
+    "ph": {"rank": 5, "votes": 362, "comments": 43, "followers": 1917, "launched": "2026-07-10", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/bee30091-de7a-49dd-b05a-b5d95cbde85c.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "ConnectMachine 'Share your way' screen on a phone: a QR code with Share Card and Add to Apple Wallet buttons and sharing options", "credit": "Image: ConnectMachine via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/92c95500-c63b-4353-831e-ce73207a72cd.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "ConnectMachine graphic 'Every contact, straight to your CRM' showing contacts flowing to Salesforce, Zapier, HubSpot and another integration", "credit": "Image: ConnectMachine via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "go to events and meetings often and forget why you met someone",
+        "want a digital card that works without the other person installing anything",
+        "need contacts to land in Salesforce, HubSpot, Pipedrive or a Zapier/Make/n8n workflow (Individual and Team plans)"
+      ],
+      "not_fit": [
+        "want an NFC card or other hardware: ConnectMachine is an app (its own comparison pages contrast it with Popl and Mobilo on this)",
+        "only need to scan a handful of cards: the free plan already covers 3 scans and 4 cards, so a paid plan may be unnecessary",
+        "want a social network: the company says there is no public feed or open messaging"
+      ]
+    },
+    "pricing": {
+      "intro": "ConnectMachine lists three plans on its own site. Prices are in US dollars; the paid prices shown are a limited offer when billed annually.",
+      "url": "https://www.connectmachine.ai/pricing/",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "Up to 4 cards and 3 paper-card scans, CSV export, WhatsApp assistant, home-screen widgets, Apple and Google Wallet"},
+        {"name": "Individual", "price": "$5/month billed annually (limited offer; listed at $8)", "amount": 5, "currency": "USD", "detail": "Unlimited cards and scans, CRM integration, AI Notetaker and AI Concierge"},
+        {"name": "Team", "price": "$25/month for 5 seats, billed annually (limited offer; listed at $40)", "amount": 25, "currency": "USD", "detail": "Everything in Individual plus central billing, seat management, custom domain, admin branding controls and priority support"}
+      ],
+      "notes": [
+        "Monthly billing is also offered; the site says annual billing saves up to 20%.",
+        "You can cancel any time and keep access until the paid period ends, according to the pricing page.",
+        "Larger teams can ask for custom pricing through sales."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Popl", "url": "https://popl.co/", "what": "Digital business cards and event lead capture for teams", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 3,
+         "difference": "Popl now presents itself as an event lead-capture platform with badge scanning and list enrichment; ConnectMachine focuses on a personal, private contact memory."},
+        {"name": "Nametag", "url": "https://nametagai.com/", "what": "App to remember names and details of people you meet", "starts_at": "See its site", "ph_rating": 4, "ph_reviews": 1,
+         "difference": "A memory aid for people you meet, without the business-card sharing and CRM sync."},
+        {"name": "Jive", "url": "https://www.letsjive.io/", "what": "QR-based contact exchange that follows up from your inbox", "starts_at": "Free sign-up; see its site", "ph_rating": null, "ph_reviews": 0,
+         "difference": "Centres on swapping details by QR and email follow-up rather than an AI contact assistant."}
+      ],
+      "more": "Product Hunt also lists Ciremi and Workomo. ConnectMachine's own site has comparison pages against Blinq, HiHello, Popl, Mobilo, Linq and Uniqode."
+    },
+    "reviews": {"count": 3, "rating": 4.33, "url": "https://www.producthunt.com/products/connectmachine-2/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/connectmachine-2",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=ConnectMachine&f=live"}
+    },
+    "faq": [
+      {"q": "What is ConnectMachine?", "a": "A digital business card and contact app for iOS and Android with an AI that records the context of each meeting and lets you search your contacts in plain language. It is made by Connect Machine Inc. in San Francisco."},
+      {"q": "Is ConnectMachine free?", "a": "There is a free plan with up to 4 cards and 3 paper-card scans and no time limit. Individual costs $5 a month billed annually (a limited offer, listed at $8) and Team $25 a month for 5 seats billed annually (pricing page, 14 October 2026)."},
+      {"q": "Does the person I share my card with need the app?", "a": "No. The site says there is nothing for the other person to download; cards can be shared by QR code, Wallet pass, AirDrop or link."},
+      {"q": "Which CRMs does it connect to?", "a": "Its launch images name Salesforce, HubSpot and Pipedrive, and the pricing page lists a CRM webhook for Zapier, Make and n8n on paid plans."},
+      {"q": "How do I contact ConnectMachine?", "a": "Its About page gives hi@connectmachine.ai for questions, press and partnerships."},
+      {"q": "What do Product Hunt users rate it?", "a": "4.3 out of 5 from 3 reviews as of 14 October 2026. The 2.0 launch finished #5 for the day on 10 July 2026."}
+    ],
+    "sources": [
+      {"label": "ConnectMachine official site", "url": "https://www.connectmachine.ai/"},
+      {"label": "ConnectMachine pricing", "url": "https://www.connectmachine.ai/pricing/"},
+      {"label": "ConnectMachine about", "url": "https://www.connectmachine.ai/about/"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/connectmachine-2"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/connectmachine-2-0"},
+      {"label": "Popl", "url": "https://popl.co/"},
+      {"label": "Nametag", "url": "https://nametagai.com/"},
+      {"label": "Jive", "url": "https://www.letsjive.io/"}
+    ]
+  }
+}

@@ -14,11 +14,10 @@ while (have_posts()) :
     $fn = get_post_meta($id, '_xf_function', true);
     $city = get_post_meta($id, '_xf_city', true);
     ?>
-    <section class="wrap job-head" style="padding-top:48px;padding-bottom:40px">
-        <nav class="crumbs k in" aria-label="Breadcrumb"><a href="<?php echo esc_url(home_url('/jobs/')); ?>">Jobs</a><span>/</span><?php if ($company) : ?><a href="<?php echo esc_url(get_term_link($company)); ?>"><?php echo esc_html($company->name); ?></a><span>/</span><?php endif; ?><span style="color:var(--tx)"><?php echo esc_html(wp_trim_words(get_the_title(), 8)); ?></span></nav>
+    <section class="wrap job-head" style="padding-top:4px;padding-bottom:40px">
         <div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end">
             <div style="flex:999 1 600px">
-                <div class="k in" style="display:flex;gap:12px;align-items:center"><span class="av" style="width:36px;height:36px"><?php echo esc_html(xft_initials($company_name)); ?></span><span><span class="ac"><?php echo esc_html($company_name); ?></span> · <?php echo esc_html($fn); ?></span></div>
+                <div class="k in" style="display:flex;gap:12px;align-items:center"><?php echo xft_company_mark($company ?: $company_name, 44); // phpcs:ignore ?><span><span class="ac"><?php echo esc_html($company_name); ?></span> · <?php echo esc_html($fn); ?></span></div>
                 <h1 class="page-title in" style="animation-delay:.06s"><?php the_title(); ?></h1>
             </div>
             <div class="in" style="flex:1 1 260px;display:flex;flex-direction:column;gap:10px;animation-delay:.12s">

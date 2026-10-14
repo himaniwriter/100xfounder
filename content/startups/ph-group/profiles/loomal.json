@@ -1,0 +1,97 @@
+{
+ "slug": "loomal",
+ "ph_url": "https://www.producthunt.com/products/loomal",
+ "existing_listing_slug": null,
+ "website": "https://loomal.ai/",
+ "excerpt": "Loomal puts a paywall on an API, MCP tool or hosted file so AI agents can pay per call in USDC over x402, settled on Base, with no percentage cut. Free for 50 calls a month; Builder $49. How it works, pricing and alternatives.",
+ "content": "<p>Loomal is a payments layer for selling to AI agents. You wrap an HTTP endpoint or MCP tool with a few lines of code using its SDK, or paste JSON or upload a file for Loomal to host, set a price per call in USDC, and agents pay automatically using x402, an open protocol built on HTTP's 402 Payment Required status. Payments settle on the Base network in seconds to a non-custodial wallet, and each sale returns a signed receipt you can verify offline. Loomal says any agent that speaks x402, including ones built on Claude, GPT, Gemini, LangChain or CrewAI, can pay.</p><p>There are no API keys to issue and no invoices. Loomal supports Express, Hono, Next.js and FastAPI, offers a hosted MCP server and CLI, and lists paid offerings in a marketplace where agents can find them. Shopify and WooCommerce plugins are listed as coming soon. Instead of a share of revenue, Loomal charges flat monthly plans with a per-call fee above the included volume.</p><p>This was Loomal's second Product Hunt launch. It went live on 13 July 2026 and finished #4 for the day with 305 upvotes and 149 comments.</p><p><em>We have not tested Loomal ourselves. This page brings together Loomal's website, pricing page and terms, its Product Hunt page, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Payments for AI agents",
+  "platform": "SDK (Express, Hono, Next.js, FastAPI), hosted endpoints, MCP server and CLI",
+  "starts_at": "Free (50 calls/month); Builder $49/month",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Paywall APIs and MCP tools so AI agents pay per call in USDC, with no revenue cut",
+  "maker": {"name": "Loomal", "url": "https://loomal.ai/"},
+  "ph": {"rank": 4, "votes": 305, "comments": 149, "followers": 683, "launched": "2026-07-13", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/4725b1dd-c4c1-4f88-9104-4a8f0c04f0bd.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040, "credit": "Image: Loomal via Product Hunt", "alt": "Loomal graphic 'Accept payments from AI agents' showing agents paying through Loomal into a wallet on Base"},
+   {"url": "https://ph-files.imgix.net/3b798b3d-b378-4d19-b830-b1fafa68496d.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040, "credit": "Image: Loomal via Product Hunt", "alt": "Loomal code sample wrapping a route handler with requirePayment and a price of $0.05"},
+   {"url": "https://ph-files.imgix.net/fe268271-ca42-405b-8b1b-0350f624fc87.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040, "credit": "Image: Loomal via Product Hunt", "alt": "Loomal graphic 'Start accepting agent payments' with Get started and Read the docs buttons"}
+  ],
+  "use_cases": [
+   "Charging AI agents per call for an API or MCP tool",
+   "Selling data or files to agents without running a server, using Loomal hosting",
+   "Accepting micropayments too small for card networks",
+   "Getting verifiable receipts for every agent purchase"
+  ],
+  "audience": {
+   "fit": [
+    "run an API or MCP server and want agents to pay for it per call",
+    "are comfortable receiving USDC on the Base network",
+    "prefer a flat monthly fee to a percentage of revenue"
+   ],
+   "not_fit": [
+    "need card payments from human customers: payments are in USDC over x402",
+    "sell through Shopify or WooCommerce today: those plugins were listed as coming soon",
+    "cannot hold or handle stablecoins for legal or accounting reasons"
+   ]
+  },
+  "pricing": {
+   "intro": "Loomal charges flat monthly plans with included calls and takes no percentage of revenue. Prices are in US dollars from Loomal's pricing page.",
+   "url": "https://loomal.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "50 calls a month, signed webhooks and receipts, cash out to any wallet, no card required"},
+    {"name": "Builder", "price": "$49/month", "amount": 49, "currency": "USD", "detail": "15,000 calls a month, then $0.003 per call; activity timeline, email support"},
+    {"name": "Business", "price": "$199/month", "amount": 199, "currency": "USD", "detail": "75,000 calls a month, then $0.0025 per call"},
+    {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Committed volume, overage from $0.0025 per call, 99.9% uptime SLA, invoice billing"}
+   ],
+   "notes": [
+    "A call is one paid request that passes the paywall. Unused calls do not roll over.",
+    "Your service stays live past the allowance; extra calls are billed at the overage rate.",
+    "On-chain settlements are final."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Polar, Dodo Payments and ApyHub among Loomal's alternatives; the first two are payment platforms for human buyers rather than agents. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "Polar", "url": "https://polar.sh/", "what": "Open-source monetisation platform for developers", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 55, "ph_url": "https://www.producthunt.com/products/polar-6", "difference": "Card-based subscriptions and usage billing for people; Loomal takes stablecoin payments from agents per call."},
+    {"name": "Dodo Payments", "url": "https://dodopayments.com/", "what": "Payments and billing for AI, SaaS and digital products", "starts_at": "See its pricing page", "ph_rating": 4.88, "ph_reviews": 32, "ph_url": "https://www.producthunt.com/products/dodo-payments", "difference": "A merchant of record with traditional payment methods, rather than x402 payments from agents."},
+    {"name": "ApyHub", "url": "https://apyhub.com/", "what": "API discovery and consumption layer for developers and agents", "starts_at": "See its pricing page", "ph_rating": 4.71, "ph_reviews": 17, "ph_url": "https://www.producthunt.com/products/apyhub", "difference": "A catalogue of APIs to consume; Loomal is for selling your own endpoints to agents."}
+   ],
+   "more": "Product Hunt also lists PaymentKit and Merge."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/loomal/reviews", "as_of": "2026-10-14"},
+  "pros": [
+   "No percentage of revenue taken",
+   "Non-custodial: payments land in your wallet",
+   "Few lines of code for common frameworks",
+   "Free plan with no card required"
+  ],
+  "cons": [
+   "Only agents that support x402 can pay",
+   "Payments are in USDC on Base, which not every business can accept",
+   "The free plan covers only 50 calls a month",
+   "Shopify and WooCommerce support was not live yet"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/loomal",
+   "x": {"none": "We found no posts about Loomal on X to link yet.", "search_url": "https://x.com/search?q=loomal&f=live"}
+  },
+  "faq": [
+   {"q": "What is Loomal?", "a": "A payments layer that lets AI agents pay per call for your API, MCP tool or hosted file, using the x402 protocol and USDC on the Base network."},
+   {"q": "Does Loomal take a cut of revenue?", "a": "No. It charges flat monthly plans (free, $49 or $199) plus a per-call fee above the included volume."},
+   {"q": "How do I get paid?", "a": "Payments settle in USDC on Base to a non-custodial wallet Loomal provisions for your project, and you can cash out to any address."},
+   {"q": "Which agents can pay?", "a": "Loomal says anything that speaks x402, including agents built on Claude, GPT, Gemini, LangChain, CrewAI and MCP clients."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists Polar, PaymentKit, Dodo Payments, ApyHub and Merge."}
+  ],
+  "sources": [
+   {"label": "Loomal official site", "url": "https://loomal.ai/"},
+   {"label": "Loomal pricing", "url": "https://loomal.ai/pricing"},
+   {"label": "Loomal terms of service", "url": "https://loomal.ai/legal/terms"},
+   {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/loomal"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/loomal/alternatives"}
+  ]
+ }
+}

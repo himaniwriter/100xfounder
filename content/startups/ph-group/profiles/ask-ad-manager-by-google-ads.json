@@ -1,0 +1,82 @@
+{
+  "slug": "ask-ad-manager-by-google-ads",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/ask-ad-manager-by-google-ads",
+  "excerpt": "Ask Ad Manager is Google's Gemini-powered chat agent inside Google Ad Manager that helps publishers troubleshoot ad delivery, build reports from a prompt and find settings. What it does, who it is for and launch details.",
+  "content": "<p>Ask Ad Manager is a conversational AI agent, built with Gemini, inside Google Ad Manager, Google's platform for publishers who sell ad space on their sites and apps. Google announced it on its blog on 18 June 2026 and described three things it does. It helps troubleshoot problems, such as a line item that is not delivering, with follow-up questions instead of manual report digging. It builds custom metrics, reports, tables and benchmarks from a single prompt; Google's example asks for impressions by ad unit bucketed into big, medium and small, with averages and a pie chart. And it links you straight to the right place in Ad Manager with the right filters loaded.</p><p>Google says the agent uses only each publisher's own data to give personalised answers. It was released in beta in June 2026, with new skills to follow during the year, and Google said REST APIs and an MCP server for key trafficking workflows would come later in the year. The Product Hunt launch, on 19 June 2026, finished #9 for the day with 138 points. The announcement was written by Peentoo Patel, Senior Product Management Director at Google.</p><p><em>We have not tested Ask Ad Manager ourselves. This page is based on Google's announcement and the Product Hunt launch page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Ad operations",
+    "platform": "Built into Google Ad Manager (web)",
+    "starts_at": "Part of Google Ad Manager; no separate price published",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Gemini-powered chat agent in Google Ad Manager for troubleshooting, reports and navigation",
+    "ph": {"rank": 9, "votes": 138, "comments": 6, "followers": 169, "launched": "2026-06-19", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/4a90222e-fbc1-4c07-8dcd-3bdd37519536.png?auto=format&fit=max&w=1400", "w": 3788, "h": 2266,
+       "alt": "Google Ad Manager 360 report of impressions by ad unit, with the Ask Ad Manager panel showing a size-bucket summary table and pie chart", "credit": "Image: Google via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/3e92f5dc-1fec-4844-b6f9-26d265d939a7.png?auto=format&fit=max&w=1400", "w": 1988, "h": 2056,
+       "alt": "Ask Ad Manager chat panel with a prompt asking for a 30-day impressions report bucketed by ad unit size, with averages, medians and a pie chart", "credit": "Image: Google via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/93fedfa7-463c-4c25-b15f-057e64acab00.png?auto=format&fit=max&w=1400", "w": 1300, "h": 721,
+       "alt": "Title card reading 'Introducing Agentic AI in Google Ad Manager'", "credit": "Image: Google via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are a publisher or ad-ops team already using Google Ad Manager",
+        "spend time stitching together reports or tracing why a line item is under-delivering",
+        "want quicker navigation around Ad Manager's many settings"
+      ],
+      "not_fit": [
+        "are an advertiser buying ads: Ad Manager is the publisher (sell-side) platform",
+        "monetise only through AdSense or AdMob: the agent is announced for Ad Manager",
+        "need automation through code today: Google said its APIs and MCP server would come later in the year"
+      ]
+    },
+    "pricing": {
+      "intro": "Google's announcement does not give a separate price for Ask Ad Manager; it is a feature inside Google Ad Manager. Product Hunt lists it as free options.",
+      "url": "https://blog.google/products/admanager/ask-ad-manager/",
+      "plans": [],
+      "notes": [
+        "Released in beta in June 2026, with more skills planned through the year."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "Product Hunt's alternatives here are mostly tools for advertisers rather than publishers, so they are not like-for-like. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "GoMarble", "url": "https://www.gomarble.ai/", "what": "AI agents for paid media teams: creative analytics, competitor research, dashboards and reports", "starts_at": "See its pricing page",
+         "ph_rating": 4.33, "ph_reviews": 6,
+         "difference": "Built for advertisers managing paid media, not publishers selling inventory."},
+        {"name": "ADYOUNEED", "url": "https://www.adyouneed.com/", "what": "Platform and managed service to create and optimise ads", "starts_at": "See its pricing page",
+         "ph_rating": 4.31, "ph_reviews": 36,
+         "difference": "An advertiser-side creative and campaign service."}
+      ],
+      "more": "Product Hunt also lists Bard, Adsby and Magnetiq as alternatives."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/ask-ad-manager/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/ask-ad-manager",
+      "quotes": [
+        {"author": "Rahul Bhavsar", "text": "Does Ask Ad Manager explain why it recommends a fix or pricing change?"},
+        {"author": "Ido Shneior", "text": "their revenue is spread across multiple Google properties with no single place to see everything together."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=%22Ask%20Ad%20Manager%22&f=live"}
+    },
+    "faq": [
+      {"q": "What is Ask Ad Manager?", "a": "A multi-turn conversational agent, built with Gemini, inside Google Ad Manager. Google announced it on 18 June 2026 to help publishers troubleshoot, build reports and navigate the platform."},
+      {"q": "Who can use it?", "a": "Publishers using Google Ad Manager. It was released in beta in June 2026."},
+      {"q": "What can it do?", "a": "Google lists three things: troubleshoot issues such as under-delivering line items, generate custom reports and benchmarks from a prompt, and take you to the right settings with filters loaded."},
+      {"q": "Does it use my data to answer?", "a": "Google says it uses only each publisher's own data to give personalised answers and recommendations."},
+      {"q": "Is there an API or MCP server?", "a": "Google said REST APIs and an MCP server for key trafficking workflows would be released later in 2026."},
+      {"q": "How much does it cost?", "a": "Google has not published a separate price; it is part of Google Ad Manager."}
+    ],
+    "sources": [
+      {"label": "Google: Introducing Ask Ad Manager", "url": "https://blog.google/products/admanager/ask-ad-manager/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/ask-ad-manager-by-google-ads"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/ask-ad-manager"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/ask-ad-manager/alternatives"},
+      {"label": "GoMarble", "url": "https://www.gomarble.ai/"},
+      {"label": "ADYOUNEED", "url": "https://www.adyouneed.com/"}
+    ]
+  }
+}

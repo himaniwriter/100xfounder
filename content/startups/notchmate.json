@@ -1,0 +1,268 @@
+{
+ "slug": "notchmate",
+ "excerpt": "NotchMate puts a small animated creature in your MacBook notch and turns the notch into a panel for music, lyrics, clipboard, files and window snapping. Price, trial and alternatives.",
+ "content": "<p>NotchMate is a Mac app that puts Notchy, a small furry monster, in your MacBook's notch. He peeks out, waves when you unlock your Mac, puts on glasses during a focus timer and stays quiet when you're busy. Hover over or click the notch and it opens into a panel with a music player for Spotify and Apple Music, a full-screen \"Zen\" mode with synced lyrics or ambient visuals, weather, today's calendar, a Pomodoro timer, clipboard history, a file shelf, window snapping and a camera mirror.</p><p>Since its Halloween update you can pick from 24 creatures, and Notchy's colour and fur can be changed or switched off. It runs on macOS 14 Sonoma or later and draws a notch on Macs that don't have one. It is available in nine languages and asks for each permission only when you turn on the feature that needs it.</p><p>NotchMate is made by Bora Can Baltaci, a solo developer, and launched on Product Hunt on 4 October 2026, finishing #32 for the day with 62 upvotes.</p><p><em>We have not tested NotchMate ourselves. This page brings together its official site, its Product Hunt page and the official pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Mac utilities",
+  "platform": "Mac app",
+  "os": "macOS 14 Sonoma or later (Apple silicon and Intel); a physical notch is optional",
+  "starts_at": "3-day free trial, then $3.99/month or $14.99 once",
+  "schema_category": "UtilitiesApplication",
+  "summary_short": "Mac app that puts an animated creature in the notch and turns it into a panel for music, lyrics, clipboard and files",
+  "maker": {
+   "name": "Bora Can Baltaci",
+   "url": "https://www.producthunt.com/@bora_can_baltaci"
+  },
+  "team": [
+   {
+    "name": "Bora Can Baltaci",
+    "role": "Solo developer",
+    "url": "https://www.producthunt.com/@bora_can_baltaci"
+   }
+  ],
+  "ph": {
+   "rank": 32,
+   "votes": 62,
+   "comments": 1,
+   "followers": 33,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Controlling Spotify or Apple Music from the notch without switching apps",
+   "Running a Pomodoro focus timer with a visible cue in the notch",
+   "Keeping recent screenshots and copied items in a clipboard history, and parking files on a shelf to drag or AirDrop later",
+   "Snapping windows into halves, quarters or thirds",
+   "Checking your camera before a call with the built-in mirror"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Bora Can Baltaci says that when he got a MacBook he looked for something that would make the notch fun. He found apps that turn it into a widget bar and thought they were fine, but none felt alive or had any personality, so he spent most of his evenings for several months building his own.",
+    "The result puts a creature in the notch and opens into a panel with the tools he says he uses every day: music, synced lyrics, weather, calendar, a focus timer, clipboard history, a file shelf, window snapping, a camera mirror and an optional effect that folds the desktop as you close the lid. He called it his first real launch and asked for honest feedback, especially about anything that annoys people."
+   ],
+   "attribution": "Bora Can Baltaci, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/notchmate"
+  },
+  "audience": {
+   "fit": [
+    "want the notch to show something playful as well as useful",
+    "listen to Spotify or Apple Music while you work and want controls and lyrics close at hand",
+    "use a Mac without a notch, such as an older Mac or a Studio Display, and still want a notch panel (it draws one)"
+   ],
+   "not_fit": [
+    "want a free tool: after the 3-day trial it needs a paid licence (TheBoringNotch is free and open source)",
+    "use Windows: the site says a Windows version would only start if there is demand",
+    "are on macOS 13 or older"
+   ]
+  },
+  "pricing": {
+   "intro": "NotchMate has two plans. Payments go through Paddle, which shows totals for your country including estimated tax, so the amount you see may differ from the US dollar prices below.",
+   "url": "https://www.notchmate.site/#pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free trial",
+     "price": "$0 for 3 days",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Every feature, no card and no email. Notchy warns you a day before it ends"
+    },
+    {
+     "name": "Monthly",
+     "price": "$3.99/month",
+     "amount": 3.99,
+     "currency": "USD",
+     "detail": "Cancel any time; updates while you're subscribed"
+    },
+    {
+     "name": "Lifetime",
+     "price": "$14.99 once",
+     "amount": 14.99,
+     "currency": "USD",
+     "detail": "One payment; personal licence with updates for this major version"
+    }
+   ],
+   "notes": [
+    "Refunds: a full refund within 14 days of the charge if the app won't run on a supported Mac, the licence doesn't arrive, or you're not satisfied (refund policy).",
+    "The pricing card says the licence covers Macs you own, while the privacy policy says activation binds the key to one Mac. Check with the developer if you plan to use several Macs.",
+    "Promo codes can be entered at the Paddle checkout."
+   ]
+  },
+  "alternatives": {
+   "intro": "Picked from Product Hunt's alternatives list. Prices come from each product's own page, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "TheBoringNotch",
+     "url": "https://theboring.name/",
+     "what": "Open-source notch app with a music player, calendar, file shelf with AirDrop and a replacement for macOS's volume and brightness pop-ups",
+     "starts_at": "Free (GPL-3.0 open source)",
+     "ph_rating": 4.0,
+     "ph_reviews": 1,
+     "difference": "Free and open source, but it has no creature or Zen lyrics mode, and its README says the build isn't signed, so macOS warns you on first launch."
+    },
+    {
+     "name": "Sleeve",
+     "url": "https://replay.software/sleeve",
+     "what": "Desktop widget that shows and controls what's playing in Apple Music, Spotify and Doppler",
+     "starts_at": "$5.99 once, no in-app purchases",
+     "ph_rating": 5.0,
+     "ph_reviews": 7,
+     "difference": "Covers music only and sits on the desktop rather than in the notch. Sleeve 3 needs macOS 26 Tahoe."
+    },
+    {
+     "name": "DynamicLake",
+     "url": "https://www.dynamiclake.com/",
+     "what": "Dynamic Island-style notch app for Mac with plugins",
+     "starts_at": "See its pricing page",
+     "ph_rating": 5.0,
+     "ph_reviews": 1,
+     "difference": "A utility-first notch app with a plugin system; it has no character in the notch. Its prices only load in the browser, so we could not record them."
+    }
+   ],
+   "more": "Product Hunt also lists NotchNook, Bartender 5, Itsycal, Fide Island, NotchPop, Isly and Netra. We left NotchNook out of the comparison because its developer's site, lo.cafe, currently carries a statement about a dispute over control of the app and says some users lost access."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/notchmate/reviews",
+   "as_of": "2026-10-14"
+  },
+  "pros": [
+   "A character with personality, now with 24 creatures to choose from",
+   "Many everyday tools in one panel: music, lyrics, weather, calendar, timer, clipboard, file shelf, window snap, mirror",
+   "Works on Macs without a notch",
+   "3-day trial with no card, and a 14-day refund window",
+   "Permissions are requested only for the features you turn on"
+  ],
+  "cons": [
+   "Paid after the trial, while some notch apps are free",
+   "Zen mode sends the current track's details to public lyrics services while it is open (privacy policy)",
+   "Very early: version 0.4.5 on the site, and no user reviews on Product Hunt yet",
+   "Mac only"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/notchmate",
+   "x": {
+    "none": "We found no posts about NotchMate on X yet.",
+    "search_url": "https://x.com/search?q=NotchMate&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "How much does NotchMate cost?",
+    "a": "$3.99 a month or $14.99 once for a lifetime licence, as shown on its site on 14 October 2026. Paddle shows the total for your country including estimated tax, so the amount can differ."
+   },
+   {
+    "q": "Is there a free trial?",
+    "a": "Yes, 3 days with every feature, and no card or email needed. After that you need a licence key."
+   },
+   {
+    "q": "Do I need a MacBook with a notch?",
+    "a": "No. NotchMate draws a simulated notch on Macs and displays that don't have one."
+   },
+   {
+    "q": "Which macOS version does it need?",
+    "a": "macOS 14 Sonoma or later, on M1 and newer Macs and on Intel Macs that run Sonoma."
+   },
+   {
+    "q": "What permissions does it ask for?",
+    "a": "Only the ones a feature needs when you turn it on, for example Calendar for the calendar, Camera for the mirror and Accessibility for window snapping. If you refuse one, that feature stays off."
+   },
+   {
+    "q": "Can I get a refund?",
+    "a": "Yes, within 14 days of the charge, according to NotchMate's refund policy."
+   },
+   {
+    "q": "Is there a Windows version?",
+    "a": "No. The site says a Windows version would start if there is enough demand."
+   }
+  ],
+  "sources": [
+   {
+    "label": "NotchMate official site and FAQ",
+    "url": "https://www.notchmate.site/"
+   },
+   {
+    "label": "NotchMate pricing",
+    "url": "https://www.notchmate.site/#pricing"
+   },
+   {
+    "label": "NotchMate refund policy",
+    "url": "https://www.notchmate.site/refund"
+   },
+   {
+    "label": "NotchMate privacy policy",
+    "url": "https://www.notchmate.site/privacy"
+   },
+   {
+    "label": "NotchMate terms",
+    "url": "https://www.notchmate.site/terms"
+   },
+   {
+    "label": "Product Hunt page",
+    "url": "https://www.producthunt.com/products/notchmate"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/notchmate/alternatives"
+   },
+   {
+    "label": "Product Hunt launch history",
+    "url": "https://www.producthunt.com/products/notchmate/launches"
+   },
+   {
+    "label": "TheBoringNotch on GitHub",
+    "url": "https://github.com/TheBoredTeam/boring.notch"
+   },
+   {
+    "label": "Sleeve",
+    "url": "https://replay.software/sleeve"
+   },
+   {
+    "label": "DynamicLake pricing",
+    "url": "https://www.dynamiclake.com/buy"
+   },
+   {
+    "label": "lo.cafe (NotchNook developer)",
+    "url": "https://lo.cafe/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/4cb0efad-8ba5-4094-a8cf-26e9664631d1.png?auto=format&fit=max&w=1400",
+    "alt": "NotchMate's app icon: Notchy, a blue furry monster, holding the edge of a MacBook notch"
+   },
+   {
+    "url": "https://ph-files.imgix.net/4a90cef2-c81c-4864-b4ea-7771cb2b0a94.png?auto=format&fit=max&w=1400",
+    "alt": "A Mac desktop with Notchy peeking out of the notch at the top of the screen"
+   },
+   {
+    "url": "https://ph-files.imgix.net/65f60119-db2e-439a-af03-05899a38802c.png?auto=format&fit=max&w=1400",
+    "alt": "The NotchMate panel opened from the notch, showing a music player with track controls above a playlist window"
+   },
+   {
+    "url": "https://ph-files.imgix.net/5bbca83e-585a-4b08-8d7e-9a430fcc1007.png?auto=format&fit=max&w=1400",
+    "alt": "The NotchMate panel opened from the notch, showing a grid of quick tools"
+   },
+   {
+    "url": "https://ph-files.imgix.net/147d207e-ddc5-400b-9de9-c521cccb4628.png?auto=format&fit=max&w=1400",
+    "alt": "NotchMate's Zen view: full-screen synced lyrics for the song that is playing"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/4cb0efad-8ba5-4094-a8cf-26e9664631d1.png?auto=format&fit=max&w=1400",
+    "alt": "NotchMate's app icon: Notchy, a blue furry monster, holding the edge of a MacBook notch"
+   },
+   {
+    "url": "https://ph-files.imgix.net/4a90cef2-c81c-4864-b4ea-7771cb2b0a94.png?auto=format&fit=max&w=1400",
+    "alt": "A Mac desktop with Notchy peeking out of the notch at the top of the screen"
+   },
+   {
+    "url": "https://ph-files.imgix.net/65f60119-db2e-439a-af03-05899a38802c.png?auto=format&fit=max&w=1400",
+    "alt": "The NotchMate panel opened from the notch, showing a music player with track controls above a playlist window"
+   }
+  ]
+ }
+}

@@ -1,0 +1,343 @@
+{
+ "input": "https://www.producthunt.com/posts/rindler",
+ "final_url": "https://www.producthunt.com/products/rindler?launch=rindler",
+ "launch": {
+  "slug": "rindler",
+  "name": "Rindler",
+  "tagline": "Automate the web work your team does by hand",
+  "featuredAt": "2026-08-07T00:01:00-07:00",
+  "dailyRank": "3",
+  "weeklyRank": "22",
+  "points": 235,
+  "commentsCount": 21,
+  "pricingType": "free_options",
+  "description": "Rindler automates the repetitive web work your team still does by hand. Say what you need in plain English, and Rindler goes to the real site, signs in when needed, completes the task, and returns clean structured data. Put it on a schedule and it keeps running. Instead of making a browser agent guess every time, Rindler maps each site ahead of time and repairs workflows when pages change, so recurring tasks stay reliable",
+  "makers": [
+   {
+    "name": "Michael Serrano",
+    "username": "michael_serrano",
+    "headline": "Builder, ML Researcher @ MIT CSAIL"
+   },
+   {
+    "name": "Arthur De Los Santos",
+    "username": "arthurdls",
+    "headline": "Co-Founder & CTO at Rindler"
+   }
+  ],
+  "hunter": "Garry Tan",
+  "media": [
+   {
+    "uuid": "e5f5ded9-53f3-4faa-83fd-1c4bd6ccab8d.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "bc2f07b8-a8c6-45e5-9ee2-0bb38aa887a3.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "05358d8d-fddd-47ce-83cd-8b941348943c.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "6824ef80-529c-476e-94b6-df9caead0b67.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "341b3584-4c9b-4f2c-b16e-263c1e5cda28.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "7774217e-970f-4681-9dc5-76f50042fd84.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "b67c4dfe-1b2f-46ee-a104-5bebfbced244.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=V_nCIxYD-so"
+   }
+  ],
+  "links": [
+   "rindler.ai",
+   "chat.rindler.ai",
+   "twitter.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    3
+   ]
+  ]
+ },
+ "product": {
+  "name": "Rindler",
+  "slug": "rindler",
+  "tagline": "Automate the web work your team does by hand",
+  "description": "Rindler automates the repetitive web work your team still does by hand. Say what you need in plain English, and Rindler goes to the real site, signs in when needed, completes the task, and returns clean structured data. Put it on a schedule and it keeps running. Instead of making a browser agent guess every time, Rindler maps each site ahead of time and repairs workflows when pages change, so recurring tasks stay reliable",
+  "websiteUrl": "https://rindler.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 518,
+  "twitterUrl": "https://twitter.com/rindlerai",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5745164",
+   "depth": 0,
+   "author": "Michael Serrano",
+   "username": "michael_serrano",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Rindler is a map of a website that an agent calls instead of reading the page. The map knows what screens the site has and what you can do on each one, and it knows what comes back when you do it. So your agent gets the same fields back every run, in the same shape. We've mapped more than 1000 sites so far. How a run works We build the map ourselves, once, before anyone runs against it. Our ingest picks up the site and works out what it's looking at. The mapper drives the site click by click and drafts the map. A fleet of agents goes through and fixes what the draft got wrong, and the map has to pass a check against the live site before it serves anyone. Every run after that just draws on the map. There's no model sitting there working the page out again, so the run is fast and you get the same fields back in the same shape every time. Most browser agents redo all of that work on every single visit. That's why the field names come back different each run, and it's why every run takes as long and costs as much as the first one. Inside a run we pick the transport step by step. For one action we drive a real browser, and for the next we call the site's own endpoint. If you bet everyth"
+  },
+  {
+   "id": "5766188",
+   "depth": 1,
+   "author": "Priya K",
+   "username": "priya_kushwaha1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@michael_serrano &nbsp;Congrats for shipping🙌 qq Is there a local SDK or TypeScript client available to trigger Rindler sessions directly from our own backend application code?"
+  },
+  {
+   "id": "5766672",
+   "depth": 2,
+   "author": "Arthur De Los Santos",
+   "username": "arthurdls",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@michael_serrano &nbsp; @priya_kushwaha1 &nbsp;Yes, and if you have use-cases specific to your business, we'd be happy to have you on a call!"
+  },
+  {
+   "id": "5769378",
+   "depth": 2,
+   "author": "Michael Serrano",
+   "username": "michael_serrano",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@priya_kushwaha1 &nbsp; thanks for the support!! We also have an MCP server over HTTP, so from a Node backend you point the official MCP TypeScript client at https://mcp.rindler.ai/mcp with a bearer token and you're good to go. To run an automation, you just need to specify the site and the task :)"
+  },
+  {
+   "id": "5769687",
+   "depth": 1,
+   "author": "Angela Anna",
+   "username": "angelaaa",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@michael_serrano &nbsp; I'm always excited by products that make the entire AI ecosystem stronger rather than competing with every existing tool. Nicely done"
+  },
+  {
+   "id": "5769968",
+   "depth": 0,
+   "author": "Dhiraj Wohra",
+   "username": "dhirajwohra",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Good wishes for the launch.. and what if the site has disabled Agentic access.."
+  },
+  {
+   "id": "5770018",
+   "depth": 1,
+   "author": "Michael Serrano",
+   "username": "michael_serrano",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@dhirajwohra &nbsp;we don't sit on an API or an integration, so there's no access for anyone to grant us. The mapping lives on our side and Rindler works a site the way a person does, as it already is. The ones people most need handled are usually the ones that never shipped an API/MCP endpoint at all. Thanks for the well wishes!"
+  },
+  {
+   "id": "5771820",
+   "depth": 0,
+   "author": "Asad M.",
+   "username": "asadmalik901",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Same fields in the same shape every run is the selling point and it's also where I'd expect this to hurt. A map that breaks loudly gets fixed the same day. A map that's quietly a week behind still returns the right shape with a value read off the wrong element, and nothing downstream can tell, because stable shape is exactly the signal you took away. The number I'd put on the page is how quickly a map gets re-verified after a site ships a change, not how many you've mapped."
+  },
+  {
+   "id": "5769249",
+   "depth": 0,
+   "author": "Amirul",
+   "username": "1mirul",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "A clean approach to browser automation always gets my attention. Looking forward to seeing how developers use this in real workflows."
+  },
+  {
+   "id": "5769274",
+   "depth": 1,
+   "author": "Michael Serrano",
+   "username": "michael_serrano",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@1mirul &nbsp;thank you, and let us know what you think!"
+  },
+  {
+   "id": "5765831",
+   "depth": 0,
+   "author": "Suryansh Tiwari",
+   "username": "suryansh_tiwari2",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats on the launch! Love the idea of turning websites into reusable maps instead of making agents rediscover everything on every run. Curious how Rindler handles frequent UI changes or A/B tests—does the map update automatically? Wishing you an amazing launch day!"
+  },
+  {
+   "id": "5765903",
+   "depth": 1,
+   "author": "Arthur De Los Santos",
+   "username": "arthurdls",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@suryansh_tiwari2 &nbsp;Great question Suryansh! We operate with self-healing infrastructure that ensures our mapped sites remain mapped, maximizing up-time/reliability and minimizing costs, and our infrastructure takes A/B tests into account when creating site mappings. Thank you for the best wishes!"
+  },
+  {
+   "id": "5769445",
+   "depth": 1,
+   "author": "Michael Serrano",
+   "username": "michael_serrano",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@suryansh_tiwari2 &nbsp; a lot of our time goes into making the maps robust up front, so they hold up on their own, and the self-healing Arthur described sits on top of that too. Long term we think mapping is what will make browser work efficient. Thanks for the support too!!"
+  },
+  {
+   "id": "5766427",
+   "depth": 0,
+   "author": "Hamza Afzal Butt",
+   "username": "hamza_afzal_butt",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The login and bot protection part caught my attention. How do you handle sites that frequently change their security flow? Congrats @michael_serrano &amp; team!"
+  },
+  {
+   "id": "5766595",
+   "depth": 1,
+   "author": "Arthur De Los Santos",
+   "username": "arthurdls",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hamza_afzal_butt &nbsp;The same mapping and maintenance infrastructure works for the log-in pages as well, so updating log-ins don't break the system. We try to adapt as best we can to the latest security measures as well."
+  },
+  {
+   "id": "5769440",
+   "depth": 1,
+   "author": "Michael Serrano",
+   "username": "michael_serrano",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hamza_afzal_butt &nbsp;thanks! Happy to chat more about our login process and how we keep it efficient but secure. Appreciate the support!"
+  },
+  {
+   "id": "5769743",
+   "depth": 0,
+   "author": "Tanjum 🔥 🚀🚀",
+   "username": "tanjum",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "This made me stop scrolling. Instead of building another AI app, you're improving the way AI interacts with the web itself. That's a much bigger opportunity than it might seem at first glance. Looking forward to seeing real-world use cases."
+  },
+  {
+   "id": "5769759",
+   "depth": 1,
+   "author": "Michael Serrano",
+   "username": "michael_serrano",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tanjum &nbsp;there's a ton that gets unlocked once AI can interact on the web reliably and at scale, and we're working hard to make that happen. Thanks for the support!"
+  }
+ ]
+}

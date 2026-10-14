@@ -22,14 +22,15 @@ function xf_startup_card($post_id) {
     $spot = xf_published_spotlight_for($post_id) ? '<span class="xf-badge xf-badge--success">Founder spotlight</span>' : '';
 
     return sprintf(
-        '<a class="xf-card xf-startup-card" href="%s">%s<span class="xf-startup-card__body"><strong>%s</strong><span class="xf-muted">%s</span><span class="xf-badges">%s%s%s</span></span></a>',
+        '<a class="xf-card xf-startup-card" href="%s">%s<span class="xf-startup-card__body"><strong>%s</strong><span class="xf-muted">%s</span><span class="xf-badges">%s%s%s%s</span></span></a>',
         esc_url(get_permalink($post_id)),
         xf_startup_logo_html($post_id, 56),
         esc_html(get_the_title($post_id)),
         esc_html(wp_trim_words($tagline, 18)),
         $votes ? '<span class="xf-badge">' . $votes . ' upvotes</span>' : '',
         $badge,
-        $spot
+        $spot,
+        function_exists('xf_shark_tank_badge') ? xf_shark_tank_badge($post_id) : ''
     );
 }
 
@@ -112,7 +113,7 @@ add_shortcode('xf_directory', function () {
             </select>
             <button class="xf-button" type="submit">Filter</button>
         </form>
-        <p class="xf-muted"><?php echo esc_html(number_format_i18n($query->found_posts)); ?> startups</p>
+        <p class="xf-muted"><?php echo esc_html(number_format_i18n($query->found_posts)); ?> startups · Building something? <a href="<?php echo esc_url(xf_page_url('launch')); ?>"><strong>Launch your startup — free</strong></a></p>
         <div class="xf-grid">
             <?php foreach ($query->posts as $i => $id) {
                 echo xf_startup_card($id); // phpcs:ignore

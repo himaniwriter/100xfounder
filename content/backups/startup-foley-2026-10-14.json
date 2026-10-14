@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 3460,
+  "date": "2026-10-11T12:31:00",
+  "date_gmt": "2026-10-11T07:01:00",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/foley/",
+   "raw": "https://100xfounder.com/startup/foley/"
+  },
+  "modified": "2026-10-11T12:31:00",
+  "modified_gmt": "2026-10-11T07:01:00",
+  "password": "",
+  "slug": "foley",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/foley/",
+  "title": {
+   "raw": "Foley",
+   "rendered": "Foley"
+  },
+  "content": {
+   "raw": "<p>Say what needs doing. Foley turns it into a task with the project, date and reminder already set, and asks when it isn&#039;t sure instead of guessing. When plans change, say so and it moves the task. Ask it to plan your day, or what to work on first, and it answers from your list. Capture from your Apple Watch. The desktop app is free with no account, using your own OpenRouter key. Foley Pro runs the AI for you and syncs every device. On iPhone, Android, Mac, Windows and the web.</p>\n",
+   "rendered": "<p>Say what needs doing. Foley turns it into a task with the project, date and reminder already set, and asks when it isn&#039;t sure instead of guessing. When plans change, say so and it moves the task. Ask it to plan your day, or what to work on first, and it answers from your list. Capture from your Apple Watch. The desktop app is free with no account, using your own OpenRouter key. Foley Pro runs the AI for you and syncs every device. On iPhone, Android, Mac, Windows and the web.</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "A voice to-do list that files, plans and asks first",
+   "rendered": "<p>A voice to-do list that files, plans and asks first</p>\n",
+   "protected": false
+  },
+  "featured_media": 0,
+  "template": "",
+  "xf_industry": [
+   545,
+   721,
+   722
+  ],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "foley",
+  "class_list": [
+   "post-3460",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "hentry",
+   "xf_industry-artificial-intelligence",
+   "xf_industry-productivity",
+   "xf_industry-task-management",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3460",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=3460"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=3460"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=3460"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3460"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3460"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3460"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3460"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3460"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3460"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

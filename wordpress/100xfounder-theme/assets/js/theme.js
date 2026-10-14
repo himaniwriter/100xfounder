@@ -133,4 +133,89 @@
     window.addEventListener('scroll', tick, { passive: true });
     tick();
   }
+
+  // A table only earns its "scroll sideways" line when it really is wider
+  // than the column it sits in, which depends on the device.
+  var tables = document.querySelectorAll('.xf-tablewrap');
+  if (tables.length) {
+    var mark = function () {
+      Array.prototype.forEach.call(tables, function (w) {
+        if (w.scrollWidth - w.clientWidth > 4) {
+          w.setAttribute('data-overflow', '1');
+        } else {
+          w.removeAttribute('data-overflow');
+        }
+      });
+    };
+    mark();
+    window.addEventListener('resize', mark, { passive: true });
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(mark); }
+  }
+
+  // Startup pages: click-to-load video (no third-party request before the click) and a
+  // screenshot lightbox on a native <dialog> (Esc closes, focus returns to the thumbnail).
+  document.querySelectorAll('.sp-video').forEach(function (box) {
+    var btn = box.querySelector('.sp-video-play');
+    if (!btn) return;
+    var src = box.getAttribute('data-embed') || '';
+    // Same allowlist as xf_profile_video(): never frame anything else.
+    if (!/^https:\/\/(?:www\.youtube-nocookie\.com\/embed\/|player\.vimeo\.com\/video\/|www\.loom\.com\/embed\/)[A-Za-z0-9_-]+(?:\?[\w=&;-]*)?$/.test(src)) return;
+    btn.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = src;
+      f.title = box.getAttribute('data-title') || 'Video';
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.allowFullscreen = true;
+      f.referrerPolicy = 'strict-origin-when-cross-origin';
+      btn.replaceWith(f);
+      f.focus();
+    });
+  });
+  document.querySelectorAll('[data-gallery]').forEach(function (gal) {
+    var dlg = gal.nextElementSibling;
+    if (!dlg || !dlg.showModal) return; // no <dialog> support: thumbnails stay as they are
+    var btns = Array.prototype.slice.call(gal.querySelectorAll('.sp-shot-btn'));
+    var img = dlg.querySelector('img'), cap = dlg.querySelector('figcaption'), at = 0, opener = null;
+    function show(i) {
+      at = (i + btns.length) % btns.length;
+      var b = btns[at], t = b.querySelector('img'), fc = b.parentNode.querySelector('figcaption');
+      img.src = b.getAttribute('data-full');
+      img.alt = t ? t.alt : '';
+      cap.textContent = (fc ? fc.textContent + ' · ' : '') + (at + 1) + ' / ' + btns.length;
+    }
+    btns.forEach(function (b, i) {
+      b.addEventListener('click', function () { opener = b; show(i); dlg.showModal(); });
+    });
+    dlg.querySelectorAll('[data-lb]').forEach(function (b) {
+      if (btns.length < 2) { b.hidden = true; return; }
+      b.addEventListener('click', function () { show(at + parseInt(b.getAttribute('data-lb'), 10)); });
+    });
+    dlg.querySelector('[data-lb-close]').addEventListener('click', function () { dlg.close(); });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg || e.target.tagName === 'FIGURE') dlg.close(); });
+    dlg.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') show(at + 1);
+      if (e.key === 'ArrowLeft') show(at - 1);
+    });
+    dlg.addEventListener('close', function () { if (opener) opener.focus(); });
+  });
+
+  // Smooth scrolling for mouse and trackpad. Phones keep their own touch
+  // scrolling, and anyone who has asked their device for less motion gets the
+  // browser's ordinary scroll. Sideways scrollers (tables, photo strips) and
+  // ad frames are left alone, so they scroll and click exactly as before.
+  if (window.Lenis && window.matchMedia &&
+      !matchMedia('(prefers-reduced-motion: reduce)').matches &&
+      matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    var lenis = new Lenis({
+      autoRaf: true,
+      lerp: 0.11,
+      smoothWheel: true,
+      allowNestedScroll: true,
+      anchors: { offset: -120 },
+      prevent: function (node) {
+        return !!(node && node.closest && node.closest('.xf-tablewrap, .strip, iframe, [data-lenis-prevent], .ins, ins.adsbygoogle'));
+      }
+    });
+    window.xfLenis = lenis;
+  }
 })();

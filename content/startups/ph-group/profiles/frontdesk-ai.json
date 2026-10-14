@@ -1,0 +1,120 @@
+{
+ "slug": "frontdesk-ai",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/frontdesk-ai",
+ "excerpt": "Frontdesk AI turns your website into an AI front office: a 24/7 phone receptionist, web chat, two-way SMS, email agent, CRM, tickets and automation sequences. Business-in-a-Box is $99/month ($79 billed yearly) with 200 voice minutes. Features, pricing and alternatives.",
+ "content": "<p>Frontdesk AI is a front-office platform for small and medium businesses. You enter your website, it reads your content and brand, and it sets up an AI receptionist that answers and makes calls, a website chatbot, two-way SMS, an email agent, a CRM, a ticketing system, a calendar and web forms, all writing to one customer record. Workflows are described in plain English, for example \"when rent is overdue, call the resident, text if they don't answer, then open a ticket\", and Frontdesk builds the sequence of calls, texts and CRM updates.</p><p>Its site leans on property management, real estate, legal and retail, with pages for law-firm intake and Amazon seller support, and says it works in 20+ languages and sets up in about five minutes. The company says it is headquartered in Soho, New York, and that more than 10,000 businesses use it; those figures are the company's own.</p><p>Frontdesk AI launched on Product Hunt on 13 May 2026, its first launch there, and finished #4 for the day with 231 upvotes and 20 comments.</p><p><em>We have not tested Frontdesk AI ourselves. This page brings together its official site, pricing and about pages, its Product Hunt page and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI receptionist and CRM",
+  "platform": "Web app with phone, SMS, email and web chat channels",
+  "starts_at": "$99/month ($79/month billed yearly), 7-day free trial",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI receptionist, chatbot, SMS, CRM and automations for small businesses, set up from your website",
+  "maker": {"name": "Aadhrik Kuila", "url": "https://www.producthunt.com/@aadhrik"},
+  "team": [
+   {"name": "Aadhrik Kuila", "role": "Head of Product", "url": "https://www.producthunt.com/@aadhrik"},
+   {"name": "Ruchir Baronia", "role": "Maker", "url": "https://www.producthunt.com/@ruchir_baronia"}
+  ],
+  "ph": {"rank": 4, "votes": 231, "comments": 20, "followers": 750, "launched": "2026-05-13", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Answering calls after hours and booking appointments",
+   "Running a late-rent sequence of calls, texts and emails for a property manager",
+   "Qualifying website visitors through chat and sending them to the CRM",
+   "Handling legal intake and consultation reminders",
+   "Answering marketplace buyer messages within response-time limits"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Ben Holding of Frontdesk opened the launch by describing small businesses paying for a website, CRM, chatbot, lead forms and receptionist across five tools that do not share data, and still missing calls.",
+    "His pitch was that you drop in your URL and Frontdesk rebuilds the whole front office in minutes, with a free tier covering the full suite. Head of Product Aadhrik Kuila added that the hard part is making the pieces really talk to each other, so a call updates the CRM and a captured lead gets its follow-up."
+   ],
+   "attribution": "Ben Holding and Aadhrik Kuila, Frontdesk, on Product Hunt",
+   "url": "https://www.producthunt.com/products/frontdesk-ai?comment=5362373"
+  },
+  "audience": {
+   "fit": [
+    "miss calls after hours and lose leads because of it",
+    "pay for separate receptionist, chatbot, SMS and CRM tools",
+    "run property management, real estate, legal or retail businesses the site is built around"
+   ],
+   "not_fit": [
+    "need a high-volume call centre on the standard plan: it includes 200 voice minutes and 20 outbound calls a day",
+    "want to keep your existing CRM as the main record: Frontdesk is built around its own",
+    "need clear answers on how the AI decides to escalate: commenters asked and we saw no detailed reply"
+   ]
+  },
+  "pricing": {
+   "intro": "Frontdesk's pricing page lists one self-serve plan and a custom tier. Prices are in US dollars; annual billing saves 20%.",
+   "url": "https://www.myaifrontdesk.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Business-in-a-Box", "price": "$99/month or $79/month billed yearly", "amount": 99, "currency": "USD", "detail": "200 voice minutes, 100 chatbot conversations and 400 SMS a month, 20 outbound calls a day, 1,000 overage credits with auto-reload, Zapier and a verified outbound number, 3 notification recipients; 7-day free trial"},
+    {"name": "Partner / Enterprise", "price": "Custom", "currency": "USD", "detail": "Volume pricing (voice from 7 credits a minute), API access and custom integrations, dedicated account manager and Slack, white-glove onboarding, custom data retention"}
+   ],
+   "notes": [
+    "The page says there are no contracts and you can cancel any time.",
+    "The site has a 'Start for Free' option, and the launch post mentioned a free tier, but the pricing page does not list a free plan's limits."
+   ]
+  },
+  "alternatives": {
+   "intro": "Retell AI, SigmaMind AI and Famulor are on Product Hunt's alternatives list. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Retell AI", "url": "https://www.retellai.com/", "what": "Platform for building AI voice agents and call centres", "starts_at": "See its pricing page", "ph_rating": 4.8, "ph_reviews": 10, "ph_url": "https://www.producthunt.com/products/retell-ai", "difference": "A developer-oriented voice agent platform; Frontdesk bundles voice with CRM, chat, SMS and tickets for non-technical owners."},
+    {"name": "SigmaMind AI", "url": "https://sigmamind.ai/", "what": "Platform to build enterprise voice and chat agents", "starts_at": "See its pricing page", "ph_rating": 4.93, "ph_reviews": 14, "ph_url": "https://www.producthunt.com/products/sigma-ai", "difference": "Aimed at building custom agents; Frontdesk sets up a ready front office from your website."},
+    {"name": "Famulor", "url": "https://www.famulor.io/", "what": "AI voice agent platform for calls and WhatsApp", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 2, "ph_url": "https://www.producthunt.com/products/famulor-telephony-ai", "difference": "Adds WhatsApp as a channel; Frontdesk adds its own CRM and ticketing."}
+   ],
+   "more": "Product Hunt also lists Klariqo AI Voice Assistants and Estera."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/frontdesk-ai/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Putting the handoffs between calls, CRM and follow-ups in one system", "Sequences that keep the owner at the decision level"],
+    "asked": ["How the AI decides when to hand a conversation to a human", "Whether it handles business decisions or mostly inbox and scheduling (the maker pointed to multi-step sequences)", "What happens when the AI's confidence drops mid-call"],
+    "criticised": ["The 'Fortune 500' promise was called big for a solo operator"]
+   },
+   "quotes": [
+    {"text": "Knowing when not to handle something autonomously — and handing off with full context intact — is where most voice AI products silently fail.", "author": "Abhay Agarwal", "url": "https://www.producthunt.com/products/frontdesk-ai?comment=5363967"},
+    {"text": "The best operations tools protect the relationship, not just the task list.", "author": "Jim Jeffers", "url": "https://www.producthunt.com/products/frontdesk-ai?comment=5363851"},
+    {"text": "Voice agents usually demo well until edge cases hit how are you managing fallback when intent confidence drops mid conversation?", "author": "Hardik Sharma", "url": "https://www.producthunt.com/products/frontdesk-ai?comment=5362141"}
+   ]
+  },
+  "pros": [
+   "Voice, chat, SMS, email, CRM and tickets in one plan",
+   "Set up from your website in minutes, per the company",
+   "Plain-English workflow builder for multi-step follow-ups",
+   "Published price, no contract, 7-day free trial"
+  ],
+  "cons": [
+   "200 voice minutes and 20 outbound calls a day on the standard plan",
+   "Escalation rules were questioned and not explained in the thread",
+   "No Product Hunt reviews yet"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/frontdesk-ai",
+   "x": {"none": "We found no posts about Frontdesk AI on X to link yet.", "search_url": "https://x.com/search?q=myaifrontdesk&f=live"}
+  },
+  "faq": [
+   {"q": "What is Frontdesk AI?", "a": "A platform that sets up an AI phone receptionist, website chatbot, SMS and email agents, a CRM, tickets and automation sequences for a business, starting from its website."},
+   {"q": "How much does Frontdesk AI cost?", "a": "Business-in-a-Box is $99 a month, or $79 a month billed yearly, with 200 voice minutes, 100 chatbot conversations and 400 SMS a month. Partner and Enterprise pricing is custom. There is a 7-day free trial."},
+   {"q": "Can it make outbound calls?", "a": "Yes. The standard plan allows 20 outbound calls a day, for example reminders or late-payment follow-ups through sequences."},
+   {"q": "Does it hand difficult calls to a person?", "a": "Its legal page says it escalates urgent matters to on-call staff. Commenters asked how it decides that threshold, and we saw no detailed answer."},
+   {"q": "Which languages does it support?", "a": "The pricing page says 20+ languages."},
+   {"q": "What are the alternatives?", "a": "Retell AI, SigmaMind AI and Famulor, which Product Hunt lists, focus on voice agents; Frontdesk bundles voice with CRM and tickets."}
+  ],
+  "sources": [
+   {"label": "Frontdesk AI official site", "url": "https://www.myaifrontdesk.com/"},
+   {"label": "Frontdesk AI pricing", "url": "https://www.myaifrontdesk.com/pricing"},
+   {"label": "Frontdesk AI about", "url": "https://www.myaifrontdesk.com/about"},
+   {"label": "Frontdesk AI for law firms", "url": "https://www.myaifrontdesk.com/industries-we-serve/legal"},
+   {"label": "Frontdesk AI for Amazon sellers", "url": "https://www.myaifrontdesk.com/retail/ai-amazon-seller-support"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/frontdesk-ai"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/frontdesk-ai/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/8f2b531f-97c8-4749-875d-e1f04a001ff9.png?auto=format&fit=max&w=1400", "w": 1620, "h": 971, "alt": "Frontdesk graphic 'Enter your website. Get everything you need' with the receptionist, chatbot, CRM and other modules", "credit": "Image: Frontdesk AI via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/0e67f7d9-9ffc-42bb-865c-03941d9fade1.png?auto=format&fit=max&w=1400", "w": 1620, "h": 971, "alt": "Frontdesk workflow builder turning an overdue-rent instruction into calls, texts, CRM updates and tickets", "credit": "Image: Frontdesk AI via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/fc8167f7-e6b6-42b9-a4f5-488fdc67a3f2.png?auto=format&fit=max&w=1400", "w": 1621, "h": 970, "alt": "Frontdesk comparison table of the tools it says it replaces, with its own $99/month price", "credit": "Image: Frontdesk AI via Product Hunt"}
+  ]
+ }
+}

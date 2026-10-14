@@ -10,8 +10,15 @@ Read this, `CLAUDE.md` and `docs/STYLE_GUIDE.md` before writing. Today is 4 Octo
 - **Structure:** a 2–3 sentence opening that answers the search intent immediately; 5–9 sentence-case H2s; H3s where useful; a "Key takeaways" `<ul>` near the top (3–5 bullets); a "Why it matters" or "Bottom line" section; an FAQ H2 with 4–6 short Q&As (real questions people search); a final `<h2>Sources</h2>` `<ol>` listing every source as `Publisher, "Title", date` with a link (like news sites do).
 - **Sourcing:** every number, date, quote, ranking, price and claim about a real person/company comes from a source you actually fetched. Inline attribution: "according to <a href=…>Publisher</a>". Prefer primary sources (company newsroom/blog/filings, regulators, official statistics, research reports), then reputable outlets (Reuters, Bloomberg, FT, TechCrunch, The Verge, Wired, CNBC, Economic Times, Mint, Business Standard, Moneycontrol, Inc42, Entrackr, The Ken, YourStory, Forbes India, Handelsblatt, Les Affaires, BetaKit, Sifted). **Never use ANI (aninews.in, ani.in) or sites that republish ANI copy.** No content farms. Never invent anything; if you can't source it, leave it out. Never estimate net worth, valuation or revenue; only quote published figures with their date and publisher. Write in your own words; quotes only short and attributed. Pricing and feature claims for tools must come from the vendor's own page, dated.
 - **Internal links (2–5, relative hrefs, only where relevant):** `/jobs/`, `/jobs/company/<slug>/` (companies on our board: agoda, airbnb, anthropic, atlan, coinbase, cred, databricks, druva, elastic, elevenlabs, fampay, figma, gitlab, glean, groww, hevo-data, highradius, meesho, mindtickle, mongodb, new-relic, notion, observe-ai, okta, openai, paytm, rubrik, sarvam-ai, sigmoid, stripe, tekion, toast, vercel, zeta, zscaler), `/jobs/ai-ml-jobs/`, `/jobs/engineering-jobs-in-bengaluru/`, `/tools/in-hand-salary-calculator/`, `/tools/salary-hike-calculator/`, `/tools/notice-period-buyout-calculator/`, `/funding-tracker/`, `/launches/`, `/news/`.
-- **Title:** 55–70 characters, specific, keyword first, no clickbait, include the year where it helps search. **Excerpt:** 140–160 characters. **Slug:** short, keyword-rich, lowercase-hyphenated.
+- **Title:** 55–70 characters, specific, keyword first, no clickbait, include the year where it helps search. **Excerpt:** 140–160 characters. **Slug:** 2–6 words, keyword first, lowercase-hyphenated, and **never a year** (owner, 7 Oct 2026): `best-ai-for-coding`, not `best-ai-for-coding-2026`. The year can go in the title; the address has to outlive it.
 - **Not advice:** for tax, legal, immigration or investment topics add one line telling readers to confirm with a qualified professional/official source.
+
+## Google News and Discover
+Long reads mostly reach readers through Discover (Google's feed on Android and the Google app), not Top stories. Discover favours people-first, timely-or-evergreen pieces with a strong picture and an honest title:
+- **Title states the payoff**, specifically ("Notice period buyout in India: how it is taxed and what to negotiate"). No withheld point, exaggeration or bait ("Here's why…", "You won't believe…"); Discover demotes them.
+- **Featured image is a real photograph** at least 1200px wide (the 1600px `thumburl` below), landscape, of the subject itself. Not a logo, chart or text graphic.
+- **The opening two sentences answer the question**; the preview Discover shows is the first lines of the article.
+- **Timely hooks win**: tie evergreen guides to what changed this month (a new rule, a price change, a hiring wave) and say so in the first paragraph, with the date.
 
 ## Images: exactly 5 per article, openly licensed only
 Use Wikimedia Commons or Openverse. Accept only: Public domain, CC0, CC BY, CC BY-SA (any version). Reject NC/ND, "fair use", logos marked non-free, and anything without a clear licence. Never use photos from news sites, Getty, Shutterstock or company sites (unless an official press kit that grants media use; cite it).
@@ -44,6 +51,16 @@ Save to `content/drafts/<batch>-<slug>.json` and validate with `python3 -m json.
 ```
 
 Allowed HTML: `p, h2, h3, ul, ol, li, a, strong, em, blockquote (real quotes only), table, thead, tbody, tr, th, td`. At least 8 sources per article.
+
+## "What Reddit says" articles (owner, 2026-10-14)
+People search "<topic> reddit" (e.g. "best ai for coding reddit", "notion alternatives reddit") because they want real users' opinions. For new articles only (never retrofit old ones), about one in four daily posts can use this format when the topic has real Reddit discussion:
+- Title and slug carry the keyword naturally: "Best AI for Coding: What Reddit Actually Recommends", slug `best-ai-coding-reddit` (2–6 words, no year).
+- Research real threads (subreddit, thread title, date, upvotes as shown) from the last ~12 months; read them in the browser, politely — no mass scraping, no logins, no paid data.
+- Report what users actually say: the tools/answers that come up most, with how often and in which subreddits; agreements and disagreements; common complaints; India-specific takes where present.
+- Quote at most 2–3 short lines (≤25 words) per article, attributed as "a user in r/<sub>" with a link to the comment/thread; never copy whole comments, never invent or embellish quotes, never name private users beyond their public username.
+- Add our own sourced facts (pricing from official pages, what changed since the thread) so the article is more useful than the threads themselves.
+- Every thread used goes in the sources list. Disclose: "We read N Reddit threads from r/… (dates) — opinions are users', not ours."
+- Not affiliated with Reddit; don't use Reddit's logo or imply endorsement.
 
 ## Self-check before saving (fix anything that fails)
 - Word count 1,800–2,500 (`python3 -c` on the stripped content).

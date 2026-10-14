@@ -1,0 +1,359 @@
+{
+ "input": "https://www.producthunt.com/posts/yansu",
+ "final_url": "https://www.producthunt.com/products/yansu?launch=yansu",
+ "launch": {
+  "slug": "yansu",
+  "name": "Yansu",
+  "tagline": "AI that learns how you work and turns it into software",
+  "featuredAt": "2026-05-25T00:01:00-07:00",
+  "dailyRank": "3",
+  "weeklyRank": "11",
+  "points": 338,
+  "commentsCount": 80,
+  "pricingType": "free_options",
+  "description": "Yanshu learns from the work you already do. It spots repeated tasks across files, messages, and workflows, then turns the best patterns into apps and automations. No process mapping or blank canvas—just the routines worth systemizing. Use it to automate recurring work, build lightweight internal tools, and speed up daily ops without writing code.",
+  "makers": [
+   {
+    "name": "Bo",
+    "username": "bozhao",
+    "headline": "Bespoke software at scale"
+   },
+   {
+    "name": "Jeremy Xu",
+    "username": "jeremy_xu3",
+    "headline": "Product Designer"
+   },
+   {
+    "name": "Rita L",
+    "username": "taro666",
+    "headline": ""
+   },
+   {
+    "name": "yetone",
+    "username": "yetone",
+    "headline": "MLOps developer"
+   }
+  ],
+  "hunter": "Justin Jincaid",
+  "media": [
+   {
+    "uuid": "3ce3774a-1e42-48b8-9e74-d89b30f42baf.png",
+    "type": "image",
+    "w": 6344,
+    "h": 3968,
+    "video": null
+   },
+   {
+    "uuid": "3842f399-fd04-4fc6-b26b-046da1075664.png",
+    "type": "image",
+    "w": 6344,
+    "h": 3968,
+    "video": null
+   },
+   {
+    "uuid": "6ddce43b-224d-4390-9e66-3029f3d5b4dd.png",
+    "type": "image",
+    "w": 6344,
+    "h": 3968,
+    "video": null
+   },
+   {
+    "uuid": "958a9c67-abcc-477c-b203-18d2e7adc5da.png",
+    "type": "image",
+    "w": 6344,
+    "h": 3968,
+    "video": null
+   },
+   {
+    "uuid": "560879b9-431d-48fe-8cbe-9476dd0a9cff.png",
+    "type": "image",
+    "w": 6344,
+    "h": 3968,
+    "video": null
+   },
+   {
+    "uuid": "77d496d1-bfba-4b46-a2df-5c7097eef2e2.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=0uuIulWc3g0"
+   }
+  ],
+  "links": [
+   "yansu.app"
+  ],
+  "badges": [
+   [
+    "daily",
+    3
+   ]
+  ]
+ },
+ "product": {
+  "name": "Yansu",
+  "slug": "yansu",
+  "tagline": "AI that learns how you work and turns it into software",
+  "description": "Yanshu learns from the work you already do. It spots repeated tasks across files, messages, and workflows, then turns the best patterns into apps and automations. No process mapping or blank canvas—just the routines worth systemizing. Use it to automate recurring work, build lightweight internal tools, and speed up daily ops without writing code.",
+  "websiteUrl": "https://yansu.app",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 701,
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/3ce3774a-1e42-48b8-9e74-d89b30f42baf.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/3842f399-fd04-4fc6-b26b-046da1075664.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/6ddce43b-224d-4390-9e66-3029f3d5b4dd.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/958a9c67-abcc-477c-b203-18d2e7adc5da.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/560879b9-431d-48fe-8cbe-9476dd0a9cff.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5397958",
+   "depth": 0,
+   "author": "Bo",
+   "username": "bozhao",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hi everyone. This is Bo. One of the builder of Yansu. We set out a vision of bespoke software at scale. All of the software in the future will tailored to your exact needs and drifting with you as you change and grow. However, we see two challenges. First, not everyone has the time, energy or intention to build for themselves. Second, for those building they have to tinkering with it a lot to build the right thing and continue managing it. We solve this with two new ideas: Switching the relationship between software and human/user. Software is the proactive actor and human/user is the reactive one. Software is proactively and automatically created for you. You don’t have to wage any energy on it. Observe your screens and summarize and understand your intentions without you explicitly telling the AI. This solves the drift and tinkering problem. When these two ideas comes together, you have an app that is: Continuously understand, build and refine knowledge about you and the entities that relate to you. From observation and understanding it proactively builds the right app for your exact needs: Take over your current task and automatically complete it via Hand-Off Understand your dai"
+  },
+  {
+   "id": "5399306",
+   "depth": 1,
+   "author": "Artem Fedorovich",
+   "username": "artem_fedorovich",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@bozhao &nbsp;Three people already asked about the privacy side, so I'll poke at the opposite end: the Hand-Off. Observing my screen and inferring intent is the impressive part, but inference is probabilistic. Some slice of hand-offs will confidently complete the wrong task. So when Yansu takes over and gets it wrong, how do I find out? Reviewable diff before it commits, an undo, or it just executes and I notice later when something's off? \"It did it for you\" and \"it did the thing you actually meant\" are different promises. Curious which one Hand-Off is making today, and where you want it to land. Bo, the drift-with-you idea is the genuinely novel bit here. Most automation tools are static the day you set them up."
+  },
+  {
+   "id": "5399981",
+   "depth": 2,
+   "author": "Bo",
+   "username": "bozhao",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@artem_fedorovich &nbsp;Thanks for the question! I shared the privacy side in those comments, in summary we take it extremely seriously, because we dont want to lose the trust we built with user. Your question is very amazing. Love it. We take a conservative approach in hands-off. It will ask you to take over when there is not much of ambiguity anymore, or your action is very repetitive. You are very spot on \"do it for you\" vs \"do it right for you\". We are on the side that earn trust. We believe we human changes base on information, and our applications should be too."
+  },
+  {
+   "id": "5399115",
+   "depth": 0,
+   "author": "Abdul Rehman",
+   "username": "abod_rehman",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congratulations on the launch! Really curious how do you handle privacy and user control while continuously observing screens and understanding intent?"
+  },
+  {
+   "id": "5399391",
+   "depth": 1,
+   "author": "yetone",
+   "username": "yetone",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@abod_rehman &nbsp;Great question — privacy is exactly the constraint we designed Yansu around. Our core privacy technology moat is our enterprise-grade, validated on-device redaction capability . Yansu’s principle is clear: user-sensitive information must never reach the cloud before being redacted. Before any data is uploaded, Yansu uses local text models, local vision models, and rule-based engines on the user’s device to identify and redact passwords, secrets, tokens, emails, phone numbers, identity documents, payment information, private browsing content, personal information in chats/documents, as well as password managers and user-defined protected app windows. The cloud model only receives redacted, structured context for understanding task intent. Raw screens, raw text, and unredacted sensitive information are absolutely never uploaded . In other words, Yansu does not let cloud AI directly process users’ original data; it first completes enterprise-trusted redaction locally on the device, ensuring sensitive information is deterministically blocked before it can leave the local environment."
+  },
+  {
+   "id": "5399226",
+   "depth": 0,
+   "author": "James Carter",
+   "username": "james_carter35",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the idea of software drifting with you is powerful. how does Yansu capture those subtle changes in your role or priorities that you would not explicitly state in a prompt?"
+  },
+  {
+   "id": "5399802",
+   "depth": 1,
+   "author": "Bo",
+   "username": "bozhao",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@james_carter35 &nbsp;It dreams during the night. From dreaming, it understands/reflect/distill memory and knowledge. It will try understand what it learn today is a start of a change in roles or just a one off thing. These details are part of the prompt and injected into any ongoing workflow"
+  },
+  {
+   "id": "5399803",
+   "depth": 1,
+   "author": "Bo",
+   "username": "bozhao",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@james_carter35 &nbsp;It dreams during the night. From dreaming, it understands/reflect/distill memory and knowledge. It will try understand what it learn today is a start of a change in roles or just a one off thing. These details are part of the prompt and injected into any ongoing workflow"
+  },
+  {
+   "id": "5399261",
+   "depth": 0,
+   "author": "Olivia Bennett",
+   "username": "olivia_bennett7",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Does Yansu share learnings across users anonymously to improve its understanding of intentions, or is every instance completely siloed?"
+  },
+  {
+   "id": "5399808",
+   "depth": 1,
+   "author": "Bo",
+   "username": "bozhao",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@olivia_bennett7 &nbsp;It learns across all of your usages and try to sense patterns, hidden connections and intention between all of them together."
+  },
+  {
+   "id": "5402506",
+   "depth": 2,
+   "author": "Yufei Zhang",
+   "username": "yufei_zhang2",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@olivia_bennett7 &nbsp; @bozhao &nbsp;I think she means does Yansu learns from different users to do better intention inference ? Not from same user~ My guess is not since they claim it's local-first"
+  },
+  {
+   "id": "5403867",
+   "depth": 3,
+   "author": "Bo",
+   "username": "bozhao",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@olivia_bennett7 &nbsp; @yufei_zhang2 &nbsp;yeah, we dont learn from different users. In a team/company setting, we will have that feature."
+  },
+  {
+   "id": "5404259",
+   "depth": 3,
+   "author": "Reven",
+   "username": "pokedesign",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Yes"
+  },
+  {
+   "id": "5399352",
+   "depth": 0,
+   "author": "Easton Carter",
+   "username": "easton_carter",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "How do you test a system that proactively builds software, what does QA look like when no two users have the same bespoke app?"
+  },
+  {
+   "id": "5399941",
+   "depth": 1,
+   "author": "Bo",
+   "username": "bozhao",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@easton_carter &nbsp;amazing question. A good intent app that doesn't work is useless to users. Under the hood, our system simulate all possible outcomes from the intent and generate tests to make sure the apps pass them before sharing with user."
+  },
+  {
+   "id": "5399297",
+   "depth": 0,
+   "author": "Daniel Harris",
+   "username": "daniel_harris11",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats! scheduled automations based on daily patterns sound incredible. how long does Yansu typically observe before generating its first useful automation for a new user?"
+  },
+  {
+   "id": "5399965",
+   "depth": 1,
+   "author": "Bo",
+   "username": "bozhao",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@daniel_harris11 &nbsp;Usually a few times of repeat work will trigger it. Could be in the same day or a few days. The other feature, hands-off is very nice. It can trigger almost instantly after install to have a quick \"AHA\" moment."
+  },
+  {
+   "id": "5399204",
+   "depth": 0,
+   "author": "Imogen Wallace",
+   "username": "imogen_wallace",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats on the launch, Bo! this flips the script completely software acting proactively. how do you prevent Yansu from becoming overbearing or making incorrect assumptions about user intent without explicit input?"
+  },
+  {
+   "id": "5399787",
+   "depth": 1,
+   "author": "Bo",
+   "username": "bozhao",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@imogen_wallace &nbsp;Thank you! We do a few things that make it amazing experience for users. 1. We ask permissions before major decisions and share the reason why. This really helps user to understanding the intention behind it and the conversation from that also shape our future work. This really close the gap of incorrect assumptions. 2. Our \"dreaming\" feature each night reflects and distill from today's learning and knowledge and compare with before. So it will learn and explore your patterns. Focus on what it thinks you will like. And not focus on every single details."
+  }
+ ]
+}

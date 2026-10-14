@@ -76,16 +76,46 @@ function xf_startup_meta($post_id) {
     return $meta;
 }
 
+/**
+ * The company's own logo, on a light tile so a dark mark and a white one both
+ * read against the page. Where we have no logo yet, a lettered tile tinted
+ * from the name — so a grid of them is not a column of identical squares.
+ */
 function xf_startup_logo_html($post_id, $size = 64) {
+    $name = get_the_title($post_id);
+    $alt = sprintf('%s logo', $name);
     if (has_post_thumbnail($post_id)) {
-        return get_the_post_thumbnail($post_id, 'thumbnail', ['class' => 'xf-logo', 'style' => "width:{$size}px;height:{$size}px", 'loading' => 'lazy']);
+        return get_the_post_thumbnail($post_id, 'thumbnail', [
+            'class' => 'xf-logo', 'alt' => $alt, 'loading' => 'lazy', 'decoding' => 'async',
+            'style' => "width:{$size}px;height:{$size}px",
+        ]);
     }
     $thumb = get_post_meta($post_id, '_xf_thumbnail', true);
     if ($thumb) {
-        return sprintf('<img class="xf-logo" src="%s" alt="" width="%d" height="%d" loading="lazy">', esc_url($thumb), $size, $size);
+        return sprintf(
+            '<img class="xf-logo" src="%s" alt="%s" width="%d" height="%d" loading="lazy" decoding="async" referrerpolicy="no-referrer">',
+            esc_url($thumb),
+            esc_attr($alt),
+            $size,
+            $size
+        );
     }
-    $initial = mb_strtoupper(mb_substr(get_the_title($post_id), 0, 1));
-    return sprintf('<span class="xf-logo xf-logo--initial" style="width:%1$dpx;height:%1$dpx">%2$s</span>', $size, esc_html($initial));
+    return sprintf(
+        '<span class="xf-logo xf-logo--initial" aria-hidden="true" style="width:%1$dpx;height:%1$dpx;font-size:%2$dpx;--h:%3$d">%4$s</span>',
+        $size,
+        (int) round($size * 0.42),
+        xf_name_hue($name),
+        esc_html(mb_strtoupper(mb_substr($name, 0, 1)))
+    );
+}
+
+/**
+ * A stable hue for a name, so the same company always gets the same tile.
+ * Kept inside the brand's own band (indigo through violet to pink) rather than
+ * the whole wheel, so a page of tiles still looks like one site.
+ */
+function xf_name_hue($name) {
+    return 228 + (int) (hexdec(substr(md5((string) $name), 0, 4)) % 92);
 }
 
 function xf_published_spotlight_for($startup_id) {
@@ -106,7 +136,8 @@ add_filter('the_content', function ($content) {
     if (!is_singular() || !$post || $post->ID !== get_queried_object_id()) {
         return $content;
     }
-    if ($post->post_type === 'xf_startup') {
+    // A theme with its own startup layout (single-xf_startup.php) turns this off and prints the body itself.
+    if ($post->post_type === 'xf_startup' && apply_filters('xf_use_default_startup_render', true)) {
         return xf_render_startup($post, $content);
     }
     if ($post->post_type === 'xf_spotlight') {
@@ -151,7 +182,7 @@ function xf_render_startup(WP_Post $post, $content) {
         <?php if ($m['funding']) : ?><p><strong>Funding:</strong> <?php echo esc_html($m['funding']); ?></p><?php endif; ?>
         <div class="xf-actions">
             <?php if ($m['website']) : ?>
-                <a class="xf-button" href="<?php echo esc_url($m['website']); ?>" target="_blank" rel="<?php echo $spotlight ? 'noopener' : 'nofollow noopener'; ?>">Visit <?php echo esc_html(get_the_title($post)); ?></a>
+                <a class="xf-button" href="<?php echo esc_url($m['website']); ?>" target="_blank" rel="<?php echo $spotlight ? 'sponsored noopener' : 'nofollow noopener'; ?>">Visit <?php echo esc_html(get_the_title($post)); ?></a>
             <?php endif; ?>
             <?php if ($m['ph_url']) : ?>
                 <a class="xf-button xf-button--ghost" href="<?php echo esc_url($m['ph_url']); ?>" target="_blank" rel="noopener">Spotted on Product Hunt</a>
@@ -204,7 +235,7 @@ function xf_render_spotlight(WP_Post $post, $content) {
         <div class="xf-spotlight__body"><?php echo $content; // phpcs:ignore ?></div>
         <div class="xf-actions">
             <?php if ($website) : ?>
-                <a class="xf-button" href="<?php echo esc_url($website); ?>" target="_blank" rel="noopener">Visit <?php echo esc_html(get_the_title($startup_id)); ?></a>
+                <a class="xf-button" href="<?php echo esc_url($website); ?>" target="_blank" rel="nofollow noopener">Visit <?php echo esc_html(get_the_title($startup_id)); ?></a>
             <?php endif; ?>
             <?php foreach ($links as $label => $url) : if ($url) : ?>
                 <a class="xf-button xf-button--ghost" href="<?php echo esc_url($url); ?>" target="_blank" rel="nofollow noopener"><?php echo esc_html($label); ?></a>
@@ -230,7 +261,7 @@ add_filter('wp_robots', function ($robots) {
     }
     if (is_singular('xf_startup')) {
         $post = get_post();
-        $rich = strlen(wp_strip_all_tags($post->post_content)) >= 600 || xf_published_spotlight_for($post->ID);
+        $rich = function_exists('xf_startup_is_rich') ? xf_startup_is_rich($post) : (strlen(wp_strip_all_tags($post->post_content)) >= 600 || xf_published_spotlight_for($post->ID));
         if (!$rich) {
             $robots['noindex'] = true;
             $robots['follow'] = true;
@@ -258,7 +289,7 @@ function xf_refresh_indexable_flag($startup_id) {
     if (!$post || $post->post_type !== 'xf_startup') {
         return;
     }
-    $rich = strlen(wp_strip_all_tags($post->post_content)) >= 600 || xf_published_spotlight_for($startup_id);
+    $rich = function_exists('xf_startup_is_rich') ? xf_startup_is_rich($post) : (strlen(wp_strip_all_tags($post->post_content)) >= 600 || xf_published_spotlight_for($startup_id));
     update_post_meta($startup_id, '_xf_indexable', $rich ? '1' : '0');
 }
 

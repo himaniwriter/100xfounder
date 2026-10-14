@@ -1,0 +1,91 @@
+{
+  "slug": "cleanlist-ai-3",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/cleanlist-ai-3",
+  "excerpt": "Cleanlist AI builds verified, enriched B2B lead lists from a one-sentence prompt, using a waterfall of data providers, then syncs them to your CRM or runs outreach. Pricing, alternatives and Product Hunt figures for the Toronto company.",
+  "content": "<p>Cleanlist AI is a prospecting tool for sales and go-to-market teams. You describe who you want to reach in plain English, for example sales leaders at Seed or Series A companies in the US who changed jobs in the last six months, or start from a CSV, LinkedIn or Sales Navigator URLs, company domains or search filters. It then finds the people, fills in work emails and phone numbers through a waterfall of data providers, verifies the emails, adds AI research and an ICP score to each lead, and pushes the list to HubSpot or Salesforce.</p><p>Since this launch its site has put an agent called Clu at the centre. You describe a recurring job in one sentence, Clu asks the questions it needs (which titles count, how much it may spend per person), builds the workflow, tests it on 25 people without spending credits, and then runs it on a schedule, posting results to Slack. Cleanlist also offers email and call sequences, a Chrome extension for LinkedIn, and an API and MCP server so you can prospect from Claude, ChatGPT or Cursor. Its launch description cited a 15-provider waterfall; the site now says 25+.</p><p>Cleanlist AI Inc. is incorporated in Canada with an address in Toronto, according to its terms. This was its third Product Hunt launch, on 31 July 2026, and it finished #2 for the day with 271 points and 30 comments.</p><p><em>We have not tested Cleanlist AI ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from. Prospecting tools handle personal contact data; check the privacy rules (such as GDPR or India's DPDP Act) that apply to your outreach.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Sales prospecting and data enrichment",
+    "platform": "Web app, Chrome extension, API and MCP",
+    "starts_at": "Free plan; Starter $49/seat/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Builds verified, enriched B2B lead lists from a plain-English prompt and syncs them to your CRM",
+    "ph": {"rank": 2, "votes": 271, "comments": 30, "followers": 556, "launched": "2026-07-31", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/c9f96144-65ad-4371-b6c1-eebbb28f9407.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Cleanlist prompt box asking for sales leaders at Seed or Series A US companies who recently changed jobs, headed 'One prompt in. A finished list out.'",
+       "credit": "Image: Cleanlist AI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/0128000b-2817-4767-8b41-954739d0d08c.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Cleanlist people-search results with names, job titles, companies and 'Reveal email' buttons, headed 'Filter to your exact ICP in seconds'",
+       "credit": "Image: Cleanlist AI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/b8220a9b-ded6-4814-ad9e-98a0ead8b755.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Cleanlist 'Create API key' form, headed 'Or run it all by API and MCP' for prospecting from Claude, Cursor and your own agents",
+       "credit": "Image: Cleanlist AI via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "run outbound sales and stitch together separate tools for lead search, enrichment, verification and CRM upload",
+        "want recurring prospecting jobs to run on a schedule and report to Slack",
+        "want to pull lead data into Claude, ChatGPT or your own agents through MCP or an API"
+      ],
+      "not_fit": [
+        "need agents, CRM sync or the API on a budget: those start on the Pro plan at $89 per seat a month",
+        "mostly need phone numbers: a number costs 10 credits against 1 for a verified email",
+        "can't establish a lawful basis for contacting the people you find: the data is personal, and compliance stays with you"
+      ]
+    },
+    "pricing": {
+      "intro": "Cleanlist AI charges per seat, and each seat adds credits to one shared balance that rolls over. Prices are in US dollars; annual billing saves 25%.",
+      "url": "https://www.cleanlist.ai/pricing",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "50 credits a month for the workspace, 5 searches, waterfall enrichment, verified emails and phones, email validation, LinkedIn extension, up to 3 seats"},
+        {"name": "Starter", "price": "$49/seat/month", "amount": 49, "currency": "USD", "detail": "Billed monthly. 750 credits per seat a month, unlimited search, email and call sequences, AI research and ICP scoring, MCP for Claude and ChatGPT, push to CRM"},
+        {"name": "Pro", "price": "$89/seat/month", "amount": 89, "currency": "USD", "detail": "Billed monthly. 1,500 credits per seat a month, 5 active agents built by Clu, Slack, HubSpot and Salesforce sync, REST API, team reports. 14-day free trial (up to 3 seats, 250 credits)"},
+        {"name": "Enterprise", "price": "Custom", "amount": null, "currency": "USD", "detail": "Unlimited agents, credit volume priced to your pipeline, custom mailboxes, SAML SSO, dedicated success manager"}
+      ],
+      "notes": [
+        "1 credit buys one verified email; a phone number costs 10 credits; sending emails costs 0 credits.",
+        "Credit top-ups never expire, according to the pricing page."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Apollo.io", "url": "https://www.apollo.io", "what": "Sales platform with a contact database of 240M people, enrichment and outreach", "starts_at": "See its pricing page", "ph_rating": 4.19, "ph_reviews": 42,
+         "difference": "Built around its own large database; Cleanlist's pitch is combining 25+ providers in a waterfall."},
+        {"name": "Clay", "url": "https://www.clay.com", "what": "Data platform with waterfall enrichment from 200+ providers and agents", "starts_at": "See its pricing page", "ph_rating": 4.83, "ph_reviews": 40,
+         "difference": "Very flexible but built as a workflow tool; Cleanlist aims for a one-sentence set-up through its Clu agent."},
+        {"name": "Jeeva AI", "url": "https://jeeva.ai", "what": "AI sales platform that finds, enriches and scores leads and manages your inbox", "starts_at": "See its pricing page", "ph_rating": 4.68, "ph_reviews": 53,
+         "difference": "Similar end-to-end scope, offering a 5-day free trial against Cleanlist's 14-day Pro trial."}
+      ],
+      "more": "Product Hunt also lists Bitscale and Success.ai. Cleanlist's own site has comparison pages against Apollo, Clay, ZoomInfo, Unify, 6sense and Snov.io."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/cleanlist-ai/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/cleanlist-ai",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=cleanlist.ai&f=live"}
+    },
+    "faq": [
+      {"q": "What is Cleanlist AI?", "a": "A prospecting tool that turns a plain-English description, a CSV, LinkedIn URLs or filters into a verified, enriched lead list and syncs it to your CRM. It is made by Cleanlist AI Inc. of Toronto and launched on Product Hunt for the third time on 31 July 2026."},
+      {"q": "How much does Cleanlist AI cost?", "a": "There is a free plan with 50 credits a month. Starter is $49 per seat a month and Pro $89, billed monthly, with 25% off for annual billing. Enterprise is priced to volume."},
+      {"q": "What does a credit buy?", "a": "One verified email costs 1 credit and a phone number 10 credits. Sending emails costs nothing, according to the pricing page."},
+      {"q": "What is Clu?", "a": "Cleanlist's agent. You describe a prospecting job in one sentence, it builds the workflow, tests it on 25 people without spending credits, and then runs it on a schedule, posting results to Slack."},
+      {"q": "Which CRMs does it work with?", "a": "HubSpot and Salesforce sync is included on the Pro plan; Starter can push leads to your CRM. Its site also lists Slack and a Chrome extension."},
+      {"q": "Can I use Cleanlist from Claude or ChatGPT?", "a": "Yes. Its MCP server, available from the Starter plan, offers 30+ tools for Claude and ChatGPT, and Pro adds a REST API."}
+    ],
+    "sources": [
+      {"label": "Cleanlist AI official site", "url": "https://www.cleanlist.ai/"},
+      {"label": "Cleanlist AI pricing", "url": "https://www.cleanlist.ai/pricing"},
+      {"label": "About Cleanlist AI", "url": "https://www.cleanlist.ai/about-us"},
+      {"label": "Cleanlist AI terms of service", "url": "https://www.cleanlist.ai/terms-conditions"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/cleanlist-ai"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/cleanlist-ai/alternatives"},
+      {"label": "Apollo.io", "url": "https://www.apollo.io/"},
+      {"label": "Clay", "url": "https://www.clay.com/"},
+      {"label": "Jeeva AI", "url": "https://www.jeeva.ai/try-jeeva-free"}
+    ]
+  }
+}

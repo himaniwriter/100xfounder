@@ -1,0 +1,119 @@
+{
+ "slug": "investorfinder",
+ "ph_url": "https://www.producthunt.com/products/investorfinder",
+ "existing_listing_slug": null,
+ "website": "https://tools.crustdata.com/investorfinder",
+ "excerpt": "InvestorFinder is a free tool from Crustdata that matches founders with VC partners who have backed founders with similar backgrounds, using data on where portfolio founders studied, worked and live. How it works, limits and alternatives.",
+ "content": "<p>InvestorFinder is a free web tool for founders who are raising money. You paste your profile link and describe your product, and it suggests venture capital partners whose past investments look like you: founders from similar universities, previous employers or locations. Each partner profile shows patterns in who they have backed, such as where those founders studied and worked, where they are based, founder archetypes like repeat founder or operator-turned-founder, check size and focus.</p><p>The makers say it covers more than 1,000 investor profiles at firms including Sequoia, a16z and Lightspeed, with global coverage, and that the database was built with Crustdata's own data API. InvestorFinder is one of Crustdata's free tools. In the launch thread the team said it does not yet read signals such as investors' blog posts or social posts about their portfolio, but plans to add them.</p><p>InvestorFinder launched on Product Hunt on 10 May 2026 and finished #2 for the day with 289 upvotes and 25 comments.</p><p><em>We have not tested InvestorFinder ourselves. This page brings together the tool's page, Crustdata's website, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Fundraising",
+  "platform": "Web",
+  "starts_at": "Free",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Free tool that matches founders with VC partners who backed founders like them",
+  "maker": {"name": "Nithish A", "url": "https://www.producthunt.com/@nithish_a1"},
+  "team": [
+   {"name": "Raghav Mehra", "role": "Maker", "url": "https://www.producthunt.com/@ragsyme"},
+   {"name": "Nithish A", "role": "Maker", "url": "https://www.producthunt.com/@nithish_a1"},
+   {"name": "Mhimed", "role": "Maker", "url": "https://www.producthunt.com/@mhimed"}
+  ],
+  "ph": {"rank": 2, "votes": 289, "comments": 25, "followers": 515, "launched": "2026-05-10", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/4f0f61ec-fbe1-4064-845b-e9b1aae64484.png?auto=format&fit=max&w=1400", "w": 1366, "h": 759, "credit": "Image: InvestorFinder via Product Hunt", "alt": "InvestorFinder graphic '12 datapoints' listing who an investor backed, where those founders studied and worked, founder archetypes and check size"}
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Nithish A writes that founders pitch dozens of investors, land a handful, and spend months working out who the right ones were all along. InvestorFinder is meant to shorten that: an AI match between your profile and product and a database of investors, plus more than a dozen data points on each partner.",
+    "He pitched it at founders who are raising, first-time founders without a network, solo founders who want partners that back solo founders, and anyone preparing for a pitch meeting. He said the tool is free."
+   ],
+   "attribution": "Nithish A, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/investorfinder?comment=5350760"
+  },
+  "use_cases": [
+   "Building a target list of VC partners who back founders with your background",
+   "Checking whether a partner tends to back solo founders or teams",
+   "Researching a partner's investment patterns before a pitch meeting",
+   "Comparing check size, stage and focus across partners"
+  ],
+  "audience": {
+   "fit": [
+    "are a founder preparing to raise from venture capital firms",
+    "are a first-time or solo founder without an investor network",
+    "want a free starting point for investor research"
+   ],
+   "not_fit": [
+    "need angels or investors outside the firms the database covers",
+    "want signals from investors' own blog or social posts: the makers say that is not included yet",
+    "need introductions or a CRM for your fundraise: it is a research and matching tool"
+   ]
+  },
+  "pricing": {
+   "intro": "InvestorFinder is free, according to the makers on Product Hunt and the launch graphics. We found no paid plan for the tool itself.",
+   "url": "https://tools.crustdata.com/investorfinder",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "InvestorFinder", "price": "Free", "amount": 0, "currency": "USD", "detail": "Investor matching and partner profiles"}
+   ],
+   "notes": ["Crustdata, which makes the tool, sells a separate data API; this page does not cover its pricing."]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists these investor-matching tools among the alternatives. Review scores are Product Hunt users' own; check each tool's own site for current prices.",
+   "items": [
+    {"name": "VC Sheet", "url": "https://www.producthunt.com/products/vc-sheet", "what": "Directory where founders find investors", "starts_at": "See its pricing page", "ph_rating": 4.75, "ph_reviews": 8, "ph_url": "https://www.producthunt.com/products/vc-sheet", "difference": "A browsable investor directory, where InvestorFinder matches on the backgrounds of founders each partner has backed."},
+    {"name": "VC Boom", "url": "https://www.producthunt.com/products/vcboom", "what": "Scores your pitch deck and suggests investors who fit", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 8, "ph_url": "https://www.producthunt.com/products/vcboom", "difference": "Adds pitch-deck scoring; InvestorFinder starts from your founder profile instead."},
+    {"name": "Exitfund", "url": "https://www.producthunt.com/products/exitfund", "what": "Fundraising help using community and AI", "starts_at": "See its pricing page", "ph_rating": 4.75, "ph_reviews": 12, "ph_url": "https://www.producthunt.com/products/exitfund", "difference": "Positions itself around community support for raising, rather than partner-level portfolio data."}
+   ],
+   "more": "Product Hunt also lists Go Global World and AI-Powered VC Sheet."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/investorfinder/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Matching on founder background, past companies, universities and location rather than a generic VC list"],
+    "asked": [
+     "How the investor data is sourced (the team says it used Crustdata's own API, with global coverage)",
+     "Whether investors' blog and social posts are used as signals (not yet, planned)",
+     "Whether it can surface partners who back new categories"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {"text": "Things like background, past companies, and even patterns in who partners tend to back matter a lot more than people think.", "author": "Thami Benjelloun", "url": "https://www.producthunt.com/products/investorfinder?comment=5354466"},
+    {"text": "How do you source the VC data — is it manual curation, public APIs, or scraping? And do you cover European/Asian investors or US-focused?", "author": "Konstantin", "url": "https://www.producthunt.com/products/investorfinder?comment=5354712"},
+    {"text": "Do you scan for all these for signals?", "author": "Lakshminath Reddy Dondeti", "url": "https://www.producthunt.com/products/investorfinder?comment=5354527"}
+   ]
+  },
+  "pros": [
+   "Free to use",
+   "Matches on who partners have actually backed, not just stated focus",
+   "Shows whether partners back solo founders or teams",
+   "Partner-level profiles rather than firm-level lists"
+  ],
+  "cons": [
+   "Covers around 1,000 investor profiles, mostly at venture firms",
+   "Does not yet use investors' own posts as signals",
+   "Matches are based on past patterns, which may not reflect a partner's current thesis",
+   "The tool page loads with JavaScript and publishes little detail about its method"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/investorfinder",
+   "quotes": [
+    {"author": "Konstantin", "url": "https://www.producthunt.com/products/investorfinder?comment=5354712", "text": "Asked how the VC data is sourced and whether non-US investors are covered.", "reply": "Mhimed replied that coverage is global and the database was built with Crustdata's own API."}
+   ],
+   "x": {"none": "We found no posts about InvestorFinder on X to link yet.", "search_url": "https://x.com/search?q=crustdata%20investorfinder&f=live"}
+  },
+  "faq": [
+   {"q": "What is InvestorFinder?", "a": "A free tool from Crustdata that matches founders with VC partners who have backed founders with similar backgrounds, and shows each partner's investment patterns."},
+   {"q": "Is InvestorFinder free?", "a": "Yes, the makers describe it as free."},
+   {"q": "How does it decide which investors match me?", "a": "You enter your profile URL and product idea, and its AI compares you with the backgrounds and products of founders each partner has backed."},
+   {"q": "Does it cover investors outside the US?", "a": "The team says coverage is global, built from Crustdata's own data API."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists VC Sheet, VC Boom, Exitfund, Go Global World and AI-Powered VC Sheet."}
+  ],
+  "sources": [
+   {"label": "InvestorFinder tool page", "url": "https://tools.crustdata.com/investorfinder"},
+   {"label": "Crustdata about page", "url": "https://crustdata.com/about"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/investorfinder"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/investorfinder/alternatives"}
+  ]
+ }
+}

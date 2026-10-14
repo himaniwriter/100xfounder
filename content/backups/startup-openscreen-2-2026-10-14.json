@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 3457,
+  "date": "2026-10-11T12:31:00",
+  "date_gmt": "2026-10-11T07:01:00",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/openscreen-2/",
+   "raw": "https://100xfounder.com/startup/openscreen-2/"
+  },
+  "modified": "2026-10-11T12:31:00",
+  "modified_gmt": "2026-10-11T07:01:00",
+  "password": "",
+  "slug": "openscreen-2",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/openscreen-2/",
+  "title": {
+   "raw": "OpenScreen 2",
+   "rendered": "OpenScreen 2"
+  },
+  "content": {
+   "raw": "<p>Record your screen and the demo looks great on the first take: zooms planned from your clicks, smooth cursor, 3D camera moves, cursor themes, backgrounds and webcam layouts. Then let your AI agent do the edit over MCP, or cut the video yourself by deleting words in the transcript. Windows, macOS and Linux. Free, MIT, no account, no watermark.</p>\n",
+   "rendered": "<p>Record your screen and the demo looks great on the first take: zooms planned from your clicks, smooth cursor, 3D camera moves, cursor themes, backgrounds and webcam layouts. Then let your AI agent do the edit over MCP, or cut the video yourself by deleting words in the transcript. Windows, macOS and Linux. Free, MIT, no account, no watermark.</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "Record your demo and let your AI agent do the edits",
+   "rendered": "<p>Record your demo and let your AI agent do the edits</p>\n",
+   "protected": false
+  },
+  "featured_media": 0,
+  "template": "",
+  "xf_industry": [
+   596,
+   690,
+   651
+  ],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "openscreen-2",
+  "class_list": [
+   "post-3457",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "hentry",
+   "xf_industry-developer-tools",
+   "xf_industry-open-source",
+   "xf_industry-video",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3457",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=3457"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=3457"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=3457"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3457"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3457"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3457"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3457"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3457"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3457"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

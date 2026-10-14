@@ -59,9 +59,8 @@ if (!$tool) : ?>
 </section>
 <?php get_footer(); return; endif; ?>
 
-<section class="wrap" style="padding-top:56px;padding-bottom:36px">
-    <nav class="crumbs k" aria-label="Breadcrumb"><a href="<?php echo esc_url($hub); ?>">Tools</a><span>/</span><span><?php echo esc_html($tool['short']); ?></span></nav>
-    <h1 class="display" style="margin-top:18px;font-size:clamp(36px,5vw,64px)"><?php echo esc_html($tool['title']); ?></h1>
+<section class="wrap" style="padding-top:28px;padding-bottom:36px">
+    <h1 class="display" style="margin-top:0;font-size:clamp(36px,5vw,64px)"><?php echo esc_html($tool['title']); ?></h1>
     <p style="max-width:660px;margin-top:16px;font-size:17px;line-height:1.6;color:var(--t2)"><?php echo esc_html($tool['desc']); ?></p>
 </section>
 <div class="hl"></div>

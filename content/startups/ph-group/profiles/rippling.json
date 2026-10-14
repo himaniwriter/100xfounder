@@ -1,0 +1,87 @@
+{
+  "slug": "rippling",
+  "existing_listing_slug": "rippling",
+  "ph_url": "https://www.producthunt.com/posts/ai-spend-console-by-rippling",
+  "excerpt": "Rippling is a workforce platform for HR, IT, payroll and finance. Its AI Spend Console tracks a company's spending on Anthropic, OpenAI and Cursor by team and ties it to engineering output. What it does, cost and launch details.",
+  "content": "<p>Rippling is a San Francisco company whose platform puts HR, IT, payroll and finance on one system built on shared employee data, according to its own site. Its press page says it has raised $1.8 billion from investors including Kleiner Perkins, Founders Fund, Sequoia and Bedrock. Parker Conrad is co-founder and CEO.</p><p>The product launched on Product Hunt, AI Spend Console, tracks what a company spends on AI tools. You connect Anthropic, OpenAI and Cursor and see the spend in one place, broken down by team, department or other employee attributes. It can also map token spend to pull requests and code reviews from GitHub, and to performance data, to flag where AI use looks inefficient. You can ask questions in plain language and Rippling AI builds the dashboards, with no SQL. Rippling says you do not need to be a Rippling customer to use it. A related AI Gateway, for routing requests to approved models and capping spend by employee, was listed as coming soon with a waitlist. AI Spend Console launched on 6 August 2026, Rippling's fifth launch on Product Hunt, and finished #2 for the day with 270 points and 94 comments.</p><p><em>We have not tested Rippling ourselves. This page brings together Rippling's official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI spend management",
+    "platform": "Web app",
+    "starts_at": "30-day free trial for non-customers; included for Rippling AI customers",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Rippling's AI Spend Console tracks AI tool spend by team and links it to engineering output",
+    "ph": {"rank": 2, "votes": 270, "comments": 94, "followers": 1029, "launched": "2026-08-06", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/53928d9d-7360-459c-a0bd-3c57d7ad32b9.png?auto=format&fit=max&w=1400", "w": 1269, "h": 780,
+       "alt": "Rippling AI Spend Console dashboard showing total AI cost, merged pull requests, cost per merge and monthly spend by vendor (OpenAI, Cursor, Anthropic)", "credit": "Image: Rippling via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/a44e2bf1-5145-451c-baa4-620449184282.png?auto=format&fit=max&w=1400", "w": 1269, "h": 780,
+       "alt": "Rippling chart of engineering departments ranked by AI cost, split between Claude Code, OpenAI Codex and Cursor", "credit": "Image: Rippling via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/2af9991b-ea52-497a-875a-922411e42db5.png?auto=format&fit=max&w=1400", "w": 1269, "h": 780,
+       "alt": "Rippling AI answering a plain-language question with a chart of AI spend against the rate of pull requests needing changes, per team", "credit": "Image: Rippling via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are a finance or IT leader who needs one view of spending on Anthropic, OpenAI and Cursor (Rippling's own stated audience)",
+        "want to see AI spend by team or department rather than as one bill",
+        "run engineering teams and want to compare AI cost with pull request and code review data"
+      ],
+      "not_fit": [
+        "use AI vendors other than Anthropic, OpenAI and Cursor: those are the three Rippling lists",
+        "need hard spend limits and model routing today: the AI Gateway was listed as coming soon",
+        "want a self-serve price list: Rippling's main pricing is by custom quote"
+      ]
+    },
+    "pricing": {
+      "intro": "Rippling does not list a price for AI Spend Console. Its FAQ says non-customers get a 30-day free trial and that the console is included for Rippling AI customers. Rippling's wider platform is priced by custom quote.",
+      "url": "https://www.rippling.com/platform/ai/ai-spend-console",
+      "plans": [],
+      "notes": [
+        "You do not need to be a Rippling customer to start, according to the FAQ.",
+        "Colleagues can be invited to view or build dashboards."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "Product Hunt lists HR and payroll platforms as alternatives to Rippling as a whole, not to the AI Spend Console. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Remote", "url": "https://remote.com/", "what": "Global payroll, employer of record and contractor management in 150+ countries", "starts_at": "See its pricing page",
+         "ph_rating": 4.63, "ph_reviews": 16,
+         "difference": "Competes with Rippling's global payroll and EOR products, not with AI spend tracking."},
+        {"name": "Gusto", "url": "https://gusto.com/", "what": "Payroll, benefits and HR platform", "starts_at": "See its pricing page",
+         "ph_rating": 5, "ph_reviews": 13,
+         "difference": "An HR and payroll alternative to Rippling's core platform."},
+        {"name": "FirstHR", "url": "https://firsthr.app/", "what": "HR and onboarding platform for small businesses", "starts_at": "Free trial; see its pricing page",
+         "ph_rating": 5, "ph_reviews": 10,
+         "difference": "Aimed at small-business onboarding. Rippling covers HR, IT and finance together."}
+      ],
+      "more": "Product Hunt also lists Central and BambooHR."
+    },
+    "reviews": {"count": 4, "rating": 5, "url": "https://www.producthunt.com/products/rippling/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/rippling",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=Rippling%20%22AI%20Spend%20Console%22&f=live"}
+    },
+    "faq": [
+      {"q": "What is Rippling AI Spend Console?", "a": "A Rippling tool that connects to Anthropic, OpenAI and Cursor to show a company's AI spend in one place, broken down by team or department and linked to GitHub and performance data. It launched on Product Hunt on 6 August 2026."},
+      {"q": "Which AI vendors does it connect to?", "a": "Cursor, OpenAI and Anthropic, according to Rippling's FAQ."},
+      {"q": "How much does it cost?", "a": "Rippling does not publish a price. Non-customers can start with a 30-day free trial, and it is included for Rippling AI customers."},
+      {"q": "Do I need to be a Rippling customer?", "a": "No, according to Rippling's FAQ."},
+      {"q": "Can it limit AI spend?", "a": "Not on its own yet. Rippling's AI Gateway, for spend limits and model access controls, was listed as coming soon with a waitlist."},
+      {"q": "Who is it for?", "a": "Rippling says it is for finance and IT leaders who want to track and understand AI spend in one place."}
+    ],
+    "sources": [
+      {"label": "Rippling AI Spend Console", "url": "https://www.rippling.com/platform/ai/ai-spend-console"},
+      {"label": "Rippling official site", "url": "https://www.rippling.com/"},
+      {"label": "Rippling press page", "url": "https://www.rippling.com/company/press"},
+      {"label": "About Rippling", "url": "https://www.rippling.com/company/about"},
+      {"label": "Rippling pricing", "url": "https://www.rippling.com/pricing"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/ai-spend-console-by-rippling"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/rippling"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/rippling/alternatives"},
+      {"label": "Remote", "url": "https://remote.com/"},
+      {"label": "FirstHR", "url": "https://firsthr.app/"}
+    ]
+  }
+}

@@ -9,6 +9,7 @@ $company = [
     ['Contact', xft_page_url('contact', 'contact')],
 ];
 ?>
+<?php if (function_exists('xf_rating_box')) { xf_rating_box(); } ?>
 <footer class="site-footer">
     <div class="wrap footer-cols">
         <div><span class="k" style="font-size:11px">News</span>
@@ -20,21 +21,23 @@ $company = [
             <a class="nl" href="<?php echo esc_url(xft_page_url('spotlights', 'spotlights')); ?>">Founder stories</a>
             <a class="nl" href="<?php echo esc_url(xft_page_url('events', 'events')); ?>">Events</a>
             <a class="nl" href="<?php echo esc_url(xft_page_url('directory', 'startups')); ?>">Startups</a>
+            <a class="nl" href="<?php echo esc_url(xft_page_url('ai_tools', 'ai-tools')); ?>">Best AI tools</a>
         </div>
         <div><span class="k" style="font-size:11px">Contribute</span>
             <a class="nl" href="<?php echo esc_url(add_query_arg('type', 'article', $submit)); ?>">Submit article</a>
             <a class="nl" href="<?php echo esc_url(add_query_arg('type', 'press', $submit)); ?>">Press release</a>
-            <a class="nl" href="<?php echo esc_url(add_query_arg('type', 'launch', $submit)); ?>">Submit launch</a>
+            <a class="nl" href="<?php echo esc_url(xft_page_url('launch', 'launch')); ?>">Launch your startup — free</a>
             <a class="nl" href="<?php echo esc_url(add_query_arg('type', 'job', $submit)); ?>">Post a job</a>
         </div>
         <div><span class="k" style="font-size:11px">Company</span>
             <?php foreach ($company as [$label, $url]) : ?><a class="nl" href="<?php echo esc_url($url); ?>"><?php echo esc_html($label); ?></a><?php endforeach; ?>
+            <?php if (function_exists('xf_popup_enabled') && xf_get_setting('popup_enabled')) : ?><a class="nl" href="#join" data-xf-join>Join the founders community</a><?php endif; ?>
         </div>
     </div>
     <div class="wrap" style="overflow:hidden"><div class="wordmark" aria-hidden="true"><?php echo esc_html(get_bloginfo('name') ?: '100Xfounder'); ?></div></div>
     <div class="wrap k footer-bottom">
         <span>© <?php echo esc_html(wp_date('Y') . ' ' . get_bloginfo('name')); ?>. Startup news, launches and founder stories from India &amp; the US.</span>
-        <span><a href="<?php echo esc_url(xft_page_url('privacy', 'privacy-policy')); ?>">Privacy</a> · <a href="<?php echo esc_url(xft_page_url('terms', 'terms')); ?>">Terms</a> · <a href="<?php echo esc_url(xft_page_url('corrections', 'corrections-policy')); ?>">Corrections</a> · <a href="<?php echo esc_url(home_url('/wp-sitemap.xml')); ?>">Sitemap</a></span>
+        <span><a href="<?php echo esc_url(xft_page_url('privacy', 'privacy-policy')); ?>">Privacy</a> · <a href="<?php echo esc_url(xft_page_url('terms', 'terms')); ?>">Terms</a> · <a href="<?php echo esc_url(xft_page_url('corrections', 'corrections-policy')); ?>">Corrections</a> · <a href="<?php echo esc_url(xft_page_url('sitemap', 'sitemap')); ?>">Sitemap</a></span>
     </div>
 </footer>
 <?php wp_footer(); ?>

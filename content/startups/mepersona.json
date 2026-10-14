@@ -1,0 +1,315 @@
+{
+ "slug": "mepersona",
+ "excerpt": "MePersona is a unified inbox for content creators that drafts replies to fan comments and DMs in the creator's own voice, in English or Spanish, and sends nothing without approval unless auto-reply is turned on. Plans, platform rules and alternatives.",
+ "content": "<p>MePersona is an inbox for content creators. It brings comments and direct messages from platforms including YouTube, Instagram, TikTok, X, Facebook, LinkedIn, Discord, Telegram, Bluesky and others into one place, and drafts a reply to each in the creator's own voice. The \"persona\" is trained from a voice recording, the creator's posts and replies, and a quick game where you pick the replies that sound like you; it improves with every reply you approve or correct, scores how close each draft sounds to you, and remembers what individual fans said before. It works in English and Spanish and answers in whichever language the fan wrote in.</p><p>By default nothing goes out until the creator reviews it and presses Send from their own account. Auto-reply for routine messages is optional, and the founder says it has surge and spam protections. MePersona also includes media storage, post scheduling, a marketing agent and an API for developers and agencies. Its terms make creators responsible for following each platform's rules and for anything sent automatically.</p><p>MePersona, Inc. is based in Los Angeles and was founded by Steven Hacker, a film and television producer who says he spent 25 years making film and TV before teaching himself to build software. It launched on Product Hunt on 11 October 2026 and finished #6 for the day with 146 upvotes and 67 comments.</p><p><em>We have not tested MePersona ourselves. This page brings together its official site, pricing, terms and privacy policy, its Product Hunt page and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Social media management",
+  "platform": "Web app",
+  "os": "Browser; connects to the creator's social accounts",
+  "starts_at": "Free (300 AI messages a month); Premium $29/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Creator inbox that drafts replies to fan comments and DMs in the creator's own voice, in English or Spanish",
+  "maker": {
+   "name": "Steven Hacker",
+   "url": "https://www.producthunt.com/@stevenhacker"
+  },
+  "team": [
+   {
+    "name": "Steven Hacker",
+    "role": "Founder",
+    "url": "https://www.producthunt.com/@stevenhacker"
+   },
+   {
+    "name": "Priya K",
+    "role": "Listed as a maker on Product Hunt",
+    "url": "https://www.producthunt.com/@priya_kushwaha1"
+   },
+   {
+    "name": "Yogesh Wagh",
+    "role": "Content producer",
+    "url": "https://www.producthunt.com/@yogesh_wagh2"
+   }
+  ],
+  "ph": {
+   "rank": 6,
+   "votes": 146,
+   "comments": 67,
+   "followers": 373,
+   "launched": "2026-10-11",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Keeping up with fan comments and DMs across several platforms from one inbox",
+   "Replying to English- and Spanish-speaking fans in a natural voice",
+   "Remembering past conversations with individual fans",
+   "Scheduling posts across platforms",
+   "Agencies or developers building on a creator's persona through the API"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Steven Hacker (yes, that's his real name, he notes) says he spent 25 years making film and TV, and the artists he knows all hit the same wall: burnout. They go silent, or hand replies to a social media manager who doesn't sound like them, and true fans can tell.",
+    "MePersona learns how a creator talks from their posts, replies and a voice recording, then drafts answers to fan comments and DMs in one inbox for the creator to approve, getting sharper with every reply. He put two questions to Product Hunt: would you let an AI reply as you, and what would it have to prove first; and which platform's comments do you fall furthest behind on?"
+   ],
+   "attribution": "Steven Hacker, founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/mepersona?comment=5907542"
+  },
+  "audience": {
+   "fit": [
+    "are a creator who gets more comments and DMs than you can answer",
+    "have both English- and Spanish-speaking fans",
+    "want to stay personal with fans without handing replies to a social media manager"
+   ],
+   "not_fit": [
+    "want templated comment-to-DM funnels: MePersona positions itself as a relationship inbox, not a marketing autoresponder",
+    "aren't prepared to take responsibility for automated replies: the terms put platform-rule compliance on the creator",
+    "are under 18: the privacy policy says the service isn't intended for minors"
+   ]
+  },
+  "pricing": {
+   "intro": "MePersona has a free plan and monthly paid plans in US dollars. Every paid plan starts with a 7-day free trial.",
+   "url": "https://mepersona.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "300 AI messages a month, 2 platforms, 10 GB media vault, post scheduling, no card"
+    },
+    {
+     "name": "Premium",
+     "price": "$29/month",
+     "amount": 29,
+     "currency": "USD",
+     "detail": "About 2,500 AI messages a month, unlimited platforms, 100 GB vault, unified inbox, analytics, one marketing-agent plan a month"
+    },
+    {
+     "name": "Pro",
+     "price": "$99/month",
+     "amount": 99,
+     "currency": "USD",
+     "detail": "About 10,000 AI messages a month, 500 GB vault, priority support"
+    },
+    {
+     "name": "Pro Elite",
+     "price": "$149/month",
+     "amount": 149,
+     "currency": "USD",
+     "detail": "About 25,000 AI messages a month, 1 TB vault, priority support, API key"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "currency": "USD",
+     "detail": "Contact sales"
+    }
+   ],
+   "notes": [
+    "Your first payment can be refunded in full within 30 days by emailing support; one-time message top-ups aren't refundable once used (terms, section 7B).",
+    "Plans renew automatically through Stripe unless cancelled before renewal. Annual prices are not published."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists social schedulers such as Publer and Typefully; we compared MePersona with tools that handle comments and messages. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Manychat",
+     "url": "https://manychat.com/",
+     "what": "Chat and DM automation for Instagram, Messenger, WhatsApp and TikTok, including comment-to-DM flows",
+     "starts_at": "See its pricing page",
+     "difference": "Template and flow-based marketing automation, the category MePersona says it is not."
+    },
+    {
+     "name": "Hootsuite",
+     "url": "https://www.hootsuite.com/",
+     "what": "Social media management suite with a shared inbox for messages and comments",
+     "starts_at": "Standard from $99 a month; 14-day free trial",
+     "difference": "Built for brands and teams, priced per user, without a persona trained on one creator's voice."
+    },
+    {
+     "name": "NapoleonCat",
+     "url": "https://napoleoncat.com/",
+     "what": "Social inbox with auto-moderation and an AI assistant for comments and messages",
+     "starts_at": "See its pricing page; 14-day free trial",
+     "difference": "Rules-based moderation across many brand profiles, rather than one creator's voice and fan memory."
+    }
+   ],
+   "more": "Product Hunt lists Publer, RADAAR, Typefully and Fedica as alternatives."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/mepersona/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Sending replies one at a time to lower the risk of platform bans",
+     "Approval before anything is sent"
+    ],
+    "asked": [
+     "Whether fans know they're talking to an AI (the creator reviews and sends each reply; disclosure is the creator's choice)",
+     "How the persona learns (from a voice recording, a reply-picking game and connected accounts, not by watching your screen)",
+     "Whether fan memory lasts across weeks (yes, until the creator deletes it)",
+     "Whether more languages are coming (yes; English and Spanish today)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "Do people who write to you know it's an AI?",
+     "author": "Ninuna Ungiadze",
+     "url": "https://www.producthunt.com/products/mepersona?comment=5939510"
+    },
+    {
+     "text": "I liked that it sends messages one by one instead of all at once, to avoid the risk of being banned from the platform",
+     "author": "KurachiWeb",
+     "url": "https://www.producthunt.com/products/mepersona?comment=5940762"
+    },
+    {
+     "text": "How does it learn from my actions? does it watch me while I do my actions and learn?",
+     "author": "Emad Khair",
+     "url": "https://www.producthunt.com/products/mepersona?comment=5939635"
+    },
+    {
+     "text": "Does the fan memory feature actually remember previous conversations across different weeks?",
+     "author": "Charan T M",
+     "url": "https://www.producthunt.com/products/mepersona?comment=5939118"
+    },
+    {
+     "text": "Are you planning to include more languages?",
+     "author": "Adana Marukhyan",
+     "url": "https://www.producthunt.com/products/mepersona?comment=5940169"
+    }
+   ]
+  },
+  "pros": [
+   "One inbox for many platforms",
+   "Drafts in the creator's own voice and improves with each approved reply",
+   "Approval-first by default; auto-reply is optional",
+   "Fully bilingual in English and Spanish",
+   "Free plan, 7-day trials and a 30-day refund on the first payment",
+   "Says it does not sell personal information, including fan messages"
+  ],
+  "cons": [
+   "Creators carry responsibility for platform rules and anything sent automatically",
+   "Only English and Spanish so far",
+   "The privacy policy doesn't name the AI providers it uses",
+   "Question of disclosure to fans is left to each creator"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/mepersona",
+   "x": {
+    "none": "We found no independent posts about MePersona on X to link yet.",
+    "search_url": "https://x.com/search?q=mepersona&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "How much does MePersona cost?",
+    "a": "There is a free plan with 300 AI messages a month on two platforms. Premium is $29 a month, Pro $99 and Pro Elite $149, and every paid plan starts with a 7-day free trial."
+   },
+   {
+    "q": "Do fans know they're talking to an AI?",
+    "a": "The founder said on Product Hunt that, by default, the creator reads each draft, edits it if needed and sends it from their own account. Whether to tell fans is up to the creator."
+   },
+   {
+    "q": "Will it post without my approval?",
+    "a": "Not by default. Auto-reply for routine messages only works if you turn it on, and the terms make you responsible for anything sent that way."
+   },
+   {
+    "q": "How does it learn my voice?",
+    "a": "From a recording of you talking, a quick game where you pick replies that sound like you, and the accounts and replies you connect. The founder says it doesn't watch your screen."
+   },
+   {
+    "q": "Which languages does it support?",
+    "a": "English and Spanish; it replies in the language the fan wrote in. The founder said more languages are next."
+   },
+   {
+    "q": "Can I get a refund?",
+    "a": "Yes, a full refund of your first payment within 30 days, according to the terms. Used message top-ups aren't refundable."
+   }
+  ],
+  "sources": [
+   {
+    "label": "MePersona official site and FAQ",
+    "url": "https://mepersona.ai/"
+   },
+   {
+    "label": "MePersona pricing",
+    "url": "https://mepersona.ai/pricing"
+   },
+   {
+    "label": "About MePersona",
+    "url": "https://mepersona.ai/about"
+   },
+   {
+    "label": "MePersona terms",
+    "url": "https://mepersona.ai/terms"
+   },
+   {
+    "label": "MePersona privacy policy",
+    "url": "https://mepersona.ai/privacy"
+   },
+   {
+    "label": "MePersona for developers",
+    "url": "https://mepersona.ai/developers"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/mepersona"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/mepersona/alternatives"
+   },
+   {
+    "label": "Manychat pricing",
+    "url": "https://manychat.com/pricing"
+   },
+   {
+    "label": "Hootsuite plans",
+    "url": "https://www.hootsuite.com/plans"
+   },
+   {
+    "label": "NapoleonCat pricing",
+    "url": "https://napoleoncat.com/pricing/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/8d78a898-c3f6-4583-985e-1a7dee83d55d.jpeg?auto=format&fit=max&w=1400",
+    "alt": "MePersona title card 'Answer every fan comment in your own voice' beside a drafted reply"
+   },
+   {
+    "url": "https://ph-files.imgix.net/90a788be-1c02-4671-8a65-18855571cd10.png?auto=format&fit=max&w=1400",
+    "alt": "MePersona graphic 'Connect once. Hear from everyone.' listing connected social platforms"
+   },
+   {
+    "url": "https://ph-files.imgix.net/addc3c6a-64ba-4ee0-b14c-f53148231d02.png?auto=format&fit=max&w=1400",
+    "alt": "MePersona graphic 'Every fan. One inbox. Your voice.' showing the unified inbox with drafted replies"
+   },
+   {
+    "url": "https://ph-files.imgix.net/9f5d848c-c206-4a81-a1f5-a5bb68523531.png?auto=format&fit=max&w=1400",
+    "alt": "MePersona graphic 'Plan it, schedule it, post everywhere' showing a content calendar"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/8d78a898-c3f6-4583-985e-1a7dee83d55d.jpeg?auto=format&fit=max&w=1400",
+    "alt": "MePersona title card 'Answer every fan comment in your own voice' beside a drafted reply"
+   },
+   {
+    "url": "https://ph-files.imgix.net/90a788be-1c02-4671-8a65-18855571cd10.png?auto=format&fit=max&w=1400",
+    "alt": "MePersona graphic 'Connect once. Hear from everyone.' listing connected social platforms"
+   },
+   {
+    "url": "https://ph-files.imgix.net/addc3c6a-64ba-4ee0-b14c-f53148231d02.png?auto=format&fit=max&w=1400",
+    "alt": "MePersona graphic 'Every fan. One inbox. Your voice.' showing the unified inbox with drafted replies"
+   }
+  ]
+ }
+}

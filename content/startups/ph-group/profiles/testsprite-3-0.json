@@ -1,0 +1,269 @@
+{
+  "slug": "testsprite-3-0",
+  "ph_url": "https://www.producthunt.com/posts/testsprite-3-0",
+  "existing_listing_slug": null,
+  "website": "https://www.testsprite.com/",
+  "excerpt": "TestSprite is an AI agent that writes, runs and repairs end-to-end tests for web apps and APIs. Free plan; paid from $19/month. Version 3.0 and alternatives.",
+  "content": "<p>TestSprite is an AI testing agent for software teams. You point it at a running web app or API, optionally with a product spec, and it explores the app, writes end-to-end tests, runs them in a real browser or against the live API, and reports what broke. Each failure comes with the failing step, screenshots, a DOM snapshot, the test source, a guess at the root cause and a suggested fix. Passing tests are kept, so the suite grows over time, and tests repair themselves when the interface changes.</p><p>It works through a no-code web dashboard, an MCP server inside editors such as Cursor and VS Code, an open-source command-line tool (Apache 2.0) that coding agents such as Claude Code, Codex and Cursor can call, and a GitHub check that re-tests each pull request. Version 3.0, dated 24 April 2026 in the changelog, added a parallel fleet of agents that explore the app before tests are written, a rebuilt backend testing engine, a feature map extracted from an uploaded spec, and reusable test files and fixtures.</p><p>TestSprite gives its address as Seattle, Washington, and has a free plan, with paid plans from $19 a month. The company says more than 100,000 developers use it; that is its own figure.</p><p>TestSprite launched on Product Hunt on 22 May 2026 and finished #1 for the day, with 465 upvotes and 66 comments. It has 4 Product Hunt reviews averaging 4.75 out of 5 (as of 14 October 2026).</p><p><em>We have not tested TestSprite ourselves. This page brings together its official site, pricing page, changelog and CLI page, its Product Hunt listing and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Software testing",
+    "platform": "Web app, MCP server, CLI and GitHub integration",
+    "starts_at": "Free plan; paid from $19/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "AI agent that writes, runs and repairs end-to-end tests for web apps and APIs",
+    "use_cases": [
+      "Getting a first end-to-end test suite for an app that has none",
+      "Letting a coding agent check its own changes before you merge them",
+      "Re-testing every pull request automatically",
+      "Running nightly or per-release regression tests on a schedule",
+      "Testing backend APIs, including flows that depend on several calls"
+    ],
+    "audience": {
+      "fit": [
+        "build with AI coding agents and want the changes checked end to end",
+        "have little or no test coverage and no time to write Playwright or Cypress scripts",
+        "want test results posted on pull requests"
+      ],
+      "not_fit": [
+        "need to keep testing fully in-house without a hosted service: the CLI needs a TestSprite account and API key",
+        "want fixed, predictable costs: plans are measured in monthly credits",
+        "test native mobile apps: the site talks about browsers and APIs only"
+      ]
+    },
+    "pricing": {
+      "intro": "TestSprite's own pricing page, in US dollars, monthly prices. The page has a yearly toggle saying \"Save 35%\" but we did not see yearly prices.",
+      "url": "https://www.testsprite.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "150 credits a month, 1 environment, 1 test list, 30 days of run history, pull-request testing on 1 GitHub repo"
+        },
+        {
+          "name": "Starter",
+          "price": "$19/month (first month free)",
+          "amount": 19,
+          "currency": "USD",
+          "detail": "400 credits, auto-healing tests, advanced backend testing, 10 scheduled runs, 3 GitHub repos"
+        },
+        {
+          "name": "Standard",
+          "price": "$39/month",
+          "amount": 39,
+          "currency": "USD",
+          "detail": "800 credits, 3 environments, Jira and Linear integrations, a more advanced agent model, 5 GitHub repos"
+        },
+        {
+          "name": "Pro",
+          "price": "$69/month",
+          "amount": 69,
+          "currency": "USD",
+          "detail": "1,600 credits, unlimited environments and run history, unlimited pull-request testing, the most capable agent model"
+        },
+        {
+          "name": "Enterprise",
+          "price": "From $199/month (10 seats or more), contact sales",
+          "detail": "From 5,000 credits, single-tenant deployment, SSO/SCIM and audit logs, a named success manager"
+        }
+      ],
+      "notes": [
+        "The pricing page does not mention refunds.",
+        "The company says it is SOC 2 certified."
+      ]
+    },
+    "alternatives": {
+      "intro": "Two AI testing services and one widely used open-source framework. Prices come from each product's own pages, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "QA.tech",
+          "url": "https://qa.tech/",
+          "what": "AI agent that runs manual-style test journeys from plain-language goals",
+          "starts_at": "No public prices; contact sales",
+          "difference": "Similar agent-led approach, but every plan is priced on request and there is no listed free plan."
+        },
+        {
+          "name": "Momentic",
+          "url": "https://momentic.ai/",
+          "what": "AI test automation for browser and mobile apps written as plain-English steps",
+          "starts_at": "Free (2,000 credits a month); pay-as-you-go $125/month",
+          "difference": "You describe test steps yourself rather than letting an agent explore and write the suite; it also covers mobile apps."
+        },
+        {
+          "name": "Playwright",
+          "url": "https://playwright.dev/",
+          "what": "Open-source browser automation and testing framework from Microsoft",
+          "starts_at": "Free and open source",
+          "difference": "No AI agent or hosted service: you write and maintain the test code yourself, at no licence cost."
+        }
+      ]
+    },
+    "reviews": {
+      "count": 4,
+      "rating": 4.75,
+      "url": "https://www.producthunt.com/products/testsprite/reviews",
+      "as_of": "2026-10-14"
+    },
+    "pros": [
+      "Free plan that includes the full test loop and pull-request testing on one repo",
+      "Works from a dashboard, an editor via MCP, a terminal or CI",
+      "Open-source CLI under Apache 2.0",
+      "Failure reports include screenshots, a DOM snapshot, a root-cause guess and a suggested fix",
+      "Tests repair themselves when the interface changes"
+    ],
+    "cons": [
+      "Usage is metered in credits, so heavy use needs a higher plan",
+      "Needs a TestSprite account even for the open-source CLI",
+      "No refund policy shown on the pricing page",
+      "Headline numbers (users, accuracy gains) are the company's own"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/testsprite",
+      "x": {
+        "profile_url": "https://x.com/test_sprite",
+        "search_url": "https://x.com/search?q=TestSprite&f=live",
+        "posts": [
+          {
+            "author": "Piyush Garg",
+            "url": "https://x.com/piyushgarg_dev/status/1999673985446072782",
+            "note": "recommends TestSprite as an AI-powered testing tool"
+          },
+          {
+            "author": "Trae",
+            "url": "https://x.com/Trae_ai/status/1947164245168181366",
+            "note": "the AI code editor's account praises the TestSprite MCP server"
+          }
+        ]
+      }
+    },
+    "faq": [
+      {
+        "q": "What is TestSprite?",
+        "a": "An AI testing agent that explores a running web app or API, writes end-to-end tests, runs them and reports failures with a suggested fix. It can be used from a web dashboard, an editor via MCP, a CLI or GitHub pull requests."
+      },
+      {
+        "q": "Is TestSprite free?",
+        "a": "There is a free plan with 150 credits a month and one GitHub repo. Paid plans are $19, $39 and $69 a month, and Enterprise starts at $199 a month for 10 seats or more."
+      },
+      {
+        "q": "What changed in TestSprite 3.0?",
+        "a": "According to the changelog: a parallel fleet of agents explores the live app before tests are written, the backend testing engine was rebuilt, an editable feature map can be extracted from an uploaded spec, and reusable files and fixtures can be wired into tests."
+      },
+      {
+        "q": "Does it work with Claude Code, Codex or Cursor?",
+        "a": "Yes. The CLI page lists Claude Code, Codex, Cursor, Cline and Antigravity, and the MCP server runs inside editors. The CLI needs Node.js 20 or newer and a TestSprite API key."
+      },
+      {
+        "q": "Is the CLI open source?",
+        "a": "Yes. TestSprite says the CLI is released under the Apache 2.0 licence, with its source on GitHub."
+      },
+      {
+        "q": "What are the alternatives to TestSprite?",
+        "a": "QA.tech and Momentic are AI testing services; Playwright is a free open-source framework where you write the tests yourself."
+      }
+    ],
+    "sources": [
+      {
+        "label": "TestSprite official site",
+        "url": "https://www.testsprite.com/"
+      },
+      {
+        "label": "TestSprite pricing",
+        "url": "https://www.testsprite.com/pricing"
+      },
+      {
+        "label": "TestSprite about",
+        "url": "https://www.testsprite.com/about"
+      },
+      {
+        "label": "TestSprite changelog",
+        "url": "https://www.testsprite.com/changelog"
+      },
+      {
+        "label": "TestSprite CLI",
+        "url": "https://www.testsprite.com/solutions/cli"
+      },
+      {
+        "label": "Product Hunt: TestSprite 3.0 launch",
+        "url": "https://www.producthunt.com/posts/testsprite-3-0"
+      },
+      {
+        "label": "Product Hunt reviews",
+        "url": "https://www.producthunt.com/products/testsprite/reviews"
+      },
+      {
+        "label": "QA.tech pricing",
+        "url": "https://qa.tech/pricing"
+      },
+      {
+        "label": "Momentic pricing",
+        "url": "https://momentic.ai/pricing"
+      },
+      {
+        "label": "Playwright",
+        "url": "https://playwright.dev/"
+      }
+    ],
+    "ph": {
+      "rank": 1,
+      "votes": 465,
+      "comments": 66,
+      "followers": 4878,
+      "launched": "2026-05-22",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Shawnie Shan",
+        "role": "Founding team member in TestSprite",
+        "url": "https://www.producthunt.com/@shawnie_shan"
+      },
+      {
+        "name": "Adam Ji",
+        "role": "Marketing Manager",
+        "url": "https://www.producthunt.com/@adam_ji1"
+      },
+      {
+        "name": "Rui Li",
+        "role": "Co-founder and CTO of TestSprite",
+        "url": "https://www.producthunt.com/@rui_li6"
+      },
+      {
+        "name": "Mia Wang",
+        "role": "UX Designer",
+        "url": "https://www.producthunt.com/@mia_wang3"
+      },
+      {
+        "name": "Yunhao Jiao",
+        "role": "Founder & CEO of TestSprite",
+        "url": "https://www.producthunt.com/@jiao_yunhao"
+      },
+      {
+        "name": "Ken Oestreich",
+        "role": "Product-Market Fit for B2B Products",
+        "url": "https://www.producthunt.com/@fountainhead"
+      },
+      {
+        "name": "Malcolm Yang",
+        "role": "Developer of ML & Smart Contract",
+        "url": "https://www.producthunt.com/@malcolm_yang"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/2f5eeba0-3517-43ba-b590-0afb24c505b0.png?auto=format&fit=max&w=1400",
+        "credit": "Image: TestSprite on Product Hunt",
+        "alt": "TestSprite graphic 'Easiest AI agent for software testing' with a coding-assistant chat asking TestSprite to test a project and a generated test plan"
+      },
+      {
+        "url": "https://ph-files.imgix.net/83609c40-2f74-416d-8a0e-fc225a6e887d.png?auto=format&fit=max&w=1400",
+        "credit": "Image: TestSprite on Product Hunt",
+        "alt": "TestSprite workflow tiles: generate tests from a PRD, generate plans, run end-to-end tests, review, re-run and read failure reports"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes."
+}

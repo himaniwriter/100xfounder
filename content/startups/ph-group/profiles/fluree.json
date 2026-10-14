@@ -1,0 +1,100 @@
+{
+ "slug": "fluree",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/fluree",
+ "excerpt": "Fluree AI is the hosted version of Fluree's knowledge graph platform: connect your data, ask questions and run AI agents with cited, permissioned answers. Open-source FlureeDB is free; Fluree AI starts at $0 with usage-based fuel. What it does and alternatives.",
+ "content": "<p>Fluree is an enterprise AI data platform built on FlureeDB, an open-source knowledge graph database that speaks JSON-LD and SPARQL. The idea is that AI agents give better answers when they work from one governed graph of a company's data, rather than from scattered systems. Fluree pulls in documents, databases, spreadsheets and apps, links the entities and relationships, and enforces permissions on every request so each answer can be traced to its source.</p><p>The Product Hunt launch was Fluree AI, the hosted, serverless version: sign up with a work email, add your data and start asking questions, building dashboards or deploying agents that watch for events such as a posted invoice and stage fixes for human approval. Its site says you can connect Claude, Cursor or any MCP-compatible agent to the graph with one config file, and that Claude, OpenAI, Gemini and Ollama models can all work over it. Fluree, PBC lists its headquarters in Winston-Salem, North Carolina, with offices in New York, Colorado, Paris and Karnataka, India.</p><p>Fluree AI was the company's third Product Hunt launch. It went live on 24 July 2026 and finished #3 for the day with 281 upvotes and 64 comments.</p><p><em>We have not tested Fluree ourselves. This page brings together Fluree's official site, pricing, contact and leadership pages, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI data platform",
+  "platform": "Hosted (serverless) or self-hosted open-source database",
+  "starts_at": "FlureeDB free; Fluree AI $0 to start, usage-based",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Knowledge graph platform that gives AI agents governed, cited context from company data",
+  "maker": {"name": "Fluree, PBC", "url": "https://flur.ee/about"},
+  "team": [
+   {"name": "Brian Platz", "role": "CEO & Co-Founder", "url": "https://flur.ee/company/leadership"}
+  ],
+  "ph": {"rank": 3, "votes": 281, "comments": 64, "followers": 711, "launched": "2026-07-24", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Giving AI agents one permissioned source of company data",
+   "Asking questions across CRM, billing and contract data with cited answers",
+   "Building golden records and resolving duplicate entities",
+   "Connecting Claude or Cursor to a knowledge graph through MCP",
+   "Running agents that stage fixes for human approval and log every step"
+  ],
+  "audience": {
+   "fit": [
+    "are an enterprise data or AI team that needs answers traced to source data",
+    "need permissions enforced on what AI agents can see",
+    "want an open-source graph database you can run yourself"
+   ],
+   "not_fit": [
+    "want a simple chatbot over a few documents: this is a full data platform",
+    "need to know the hosted price up front: the free fuel allowance and paid rates are not published",
+    "have no structured company data to connect yet"
+   ]
+  },
+  "pricing": {
+   "intro": "Fluree's pricing page lists three options. FlureeDB is free and open source; Fluree AI is usage-based, starting at $0 with a free fuel allowance; Enterprise is quoted by sales.",
+   "url": "https://flur.ee/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "FlureeDB Open Source", "price": "Free", "amount": 0, "currency": "USD", "detail": "Open-source knowledge graph database with JSON-LD and SPARQL; run locally or self-host"},
+    {"name": "Fluree AI", "price": "$0 to start, then usage-based", "amount": 0, "currency": "USD", "detail": "Hosted serverless platform; fuel covers tokens, storage and compute; 300+ connectors, MCP and API access; no idle cost"},
+    {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Fluree Sense and licensed FlureeDB deployments, single-tenant AWS or private deployment, SSO, SLAs and enterprise support"}
+   ],
+   "notes": [
+    "The page does not state the size of the free fuel allowance or the paid fuel rates.",
+    "Fluree offers an Agent TCO calculator to estimate token costs."
+   ]
+  },
+  "alternatives": {
+   "intro": "Hasura and MindsDB are on Product Hunt's alternatives list; Neo4j is the graph database Fluree publishes a migration guide for. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Hasura", "url": "https://hasura.io/", "what": "Data access layer that exposes databases through APIs for apps and AI", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 9, "ph_url": "https://www.producthunt.com/products/hasura", "difference": "Puts an API over existing databases; Fluree builds a knowledge graph with lineage and policies."},
+    {"name": "MindsDB", "url": "https://mindsdb.com/", "what": "AI layer for querying data across many sources", "starts_at": "See its pricing page", "ph_rating": 4.8, "ph_reviews": 5, "ph_url": "https://www.producthunt.com/products/mindsdb", "difference": "Queries data where it sits; Fluree consolidates it into one governed graph."},
+    {"name": "Neo4j", "url": "https://neo4j.com/", "what": "Widely used graph database", "starts_at": "See its pricing page", "difference": "A general-purpose graph database; Fluree adds hosted AI, agents and cryptographic lineage on its own database."}
+   ],
+   "more": "Product Hunt also lists Lyzr, Datatera.ai and Cohere."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/fluree/reviews", "as_of": "2026-10-14"},
+  "pros": [
+   "Open-source core database you can run yourself",
+   "Hosted version starts at $0 with no idle cost",
+   "Answers cite their sources and respect permissions",
+   "Works with Claude, Cursor and other MCP agents"
+  ],
+  "cons": [
+   "Usage rates and free allowance size are not published",
+   "Aimed at enterprises; more than a small team may need",
+   "No Product Hunt reviews yet"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/fluree",
+   "x": {"none": "We found no posts about Fluree AI on X to link yet.", "search_url": "https://x.com/search?q=Fluree&f=live", "profile_url": "https://twitter.com/flureepbc"}
+  },
+  "faq": [
+   {"q": "What is Fluree AI?", "a": "The hosted, serverless version of Fluree's platform. You connect data, and it builds a governed knowledge graph you can ask questions of, build dashboards on and run AI agents over."},
+   {"q": "How much does Fluree cost?", "a": "FlureeDB is free and open source. Fluree AI starts at $0 with a free fuel allowance, then you pay for the tokens, storage and compute you use. Enterprise pricing is custom."},
+   {"q": "Can I connect Claude or Cursor?", "a": "Yes. Fluree says any MCP-compatible agent, including Claude and Cursor, can connect to the graph with one config file."},
+   {"q": "What data can it take in?", "a": "Its site lists PDFs, databases, CSVs, apps, spreadsheets, documents, text, images, video and geospatial data, with 300+ connectors on Fluree AI."},
+   {"q": "What are the alternatives?", "a": "Hasura and MindsDB, which Product Hunt lists, or a graph database such as Neo4j."}
+  ],
+  "sources": [
+   {"label": "Fluree official site", "url": "https://flur.ee/"},
+   {"label": "Fluree AI", "url": "https://flur.ee/fluree-ai"},
+   {"label": "Fluree pricing", "url": "https://flur.ee/pricing"},
+   {"label": "Fluree about", "url": "https://flur.ee/about"},
+   {"label": "Fluree leadership", "url": "https://flur.ee/company/leadership"},
+   {"label": "Fluree contact", "url": "https://flur.ee/contact"},
+   {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/fluree"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/fluree/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/fe03f189-f049-4b0e-bff5-fd1e1ac447a1.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "alt": "Fluree banner 'The Intelligence Layer for AI' beside a network graph", "credit": "Image: Fluree via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/0a02b90d-b3e8-4f51-8d2c-fdbba5458751.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "alt": "Fluree graphic 'Throw everything at Fluree' with app icons feeding into one knowledge graph", "credit": "Image: Fluree via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/3ea3daa8-b157-4ec4-929d-df56cc7aef90.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "alt": "Fluree answering which renewals are at risk, with cited data sources for each figure", "credit": "Image: Fluree via Product Hunt"}
+  ]
+ }
+}

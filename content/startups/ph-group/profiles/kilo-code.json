@@ -1,0 +1,270 @@
+{
+  "slug": "kilo-code",
+  "ph_url": "https://www.producthunt.com/products/kilocode",
+  "existing_listing_slug": null,
+  "website": "https://kilo.ai/",
+  "excerpt": "Kilo Code v7 for VS Code is a rebuilt version of Kilo's open-source AI coding extension, with parallel agents, git worktrees, inline review and model comparison. Free extension, pay-as-you-go models or Kilo Pass from $19; Teams $15 per user. Pricing and alternatives.",
+  "content": "<p>Kilo Code is an open-source AI coding agent that runs in VS Code, JetBrains IDEs and the terminal. Version 7 of its VS Code extension is a rebuild on the same core as the Kilo CLI, which Kilo says is built on the open-source OpenCode project. The new extension adds an Agent Manager for running several agents in tabs, each in its own git worktree if you want isolation, with results applied directly, committed or opened as a pull request. Agents can run tool calls and subagents in parallel, and you can define custom subagents with their own role, model and permissions.</p><p>Other features Kilo lists for v7 include an inline diff reviewer where line comments go straight back to the agent, running the same prompt on several models side by side, a sandboxed auto mode that limits what agents can write or reach on the network, codebase indexing, and sessions that carry across VS Code, the CLI, Slack and cloud agents. It supports more than 500 models, including your own API keys and local models through Ollama or LM Studio.</p><p>Kilo Code is made by Kilo Code, Inc.; its co-founder and CEO is Scott Breitenother. Kilo's blog announced the rebuilt VS Code extension and its return to Product Hunt on 5 May 2026, saying the IDE extensions had passed 2.3 million installs; the website now says more than 5 million people use Kilo. That Product Hunt launch received 878 upvotes and 239 comments (as of 14 October 2026).</p><p><em>We have not tested Kilo Code ourselves. This page brings together Kilo's website, VS Code page, pricing and blog, its Product Hunt page and reviews, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI coding agent",
+    "platform": "VS Code extension (also JetBrains, CLI, Slack and cloud)",
+    "starts_at": "Free extension; models pay-as-you-go or Kilo Pass from $19/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Open-source AI coding agent for VS Code, rebuilt in v7 with parallel agents and worktrees",
+    "maker": {
+      "name": "Kilo Code, Inc.",
+      "url": "https://kilo.ai/about"
+    },
+    "team": [
+      {
+        "name": "Scott Breitenother",
+        "role": "Co-founder and CEO",
+        "url": "https://kilo.ai/about"
+      }
+    ],
+    "ph": {
+      "rank": null,
+      "votes": 878,
+      "comments": 239,
+      "followers": 6256,
+      "launched": "2026-05-05",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/76d3bd37-bf26-4956-b82e-4c2346a4bc7b.png?auto=format&fit=max&w=1400",
+        "w": 869,
+        "h": 456,
+        "credit": "Image: Kilo Code via Product Hunt",
+        "alt": "Kilo Code panel in VS Code: an AI coding assistant you can ask to build features, fix bugs or explain your codebase"
+      },
+      {
+        "url": "https://ph-files.imgix.net/43c8cd27-6896-4ac8-b7c8-735dfc8b1535.png?auto=format&fit=max&w=1400",
+        "w": 869,
+        "h": 456,
+        "credit": "Image: Kilo Code via Product Hunt",
+        "alt": "Kilo Code agent picker with Code, Plan, Debug, Orchestrator and Ask agents"
+      },
+      {
+        "url": "https://ph-files.imgix.net/6e20150f-d478-4553-8165-abcca9137d89.png?auto=format&fit=max&w=1400",
+        "w": 869,
+        "h": 456,
+        "credit": "Image: Kilo Code via Product Hunt",
+        "alt": "Kilo Code model picker with Kilo Auto and other models marked free"
+      }
+    ],
+    "use_cases": [
+      "Running several coding agents in parallel, each in its own git worktree",
+      "Reviewing an agent's diff line by line and sending comments back in one click",
+      "Comparing how different models handle the same prompt",
+      "Using free, local or your own-key models instead of one vendor's",
+      "Continuing a session from VS Code in the CLI or Slack"
+    ],
+    "audience": {
+      "fit": [
+        "work in VS Code and want an open-source coding agent",
+        "want to choose between hundreds of models, including local ones",
+        "want parallel agents with worktree isolation without leaving the editor"
+      ],
+      "not_fit": [
+        "want one flat subscription that covers all model usage: inference is billed separately",
+        "relied on the legacy extension's modes: v7 replaces modes with agents defined in config files",
+        "need a fully managed IDE rather than an extension"
+      ]
+    },
+    "pricing": {
+      "intro": "The extension is free and open source. You pay for model usage separately, and teams can pay per seat for management features. Prices are from Kilo's pricing page in US dollars.",
+      "url": "https://kilo.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Free & Open Source",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "VS Code, JetBrains and CLI extensions, any AI model; usage billed separately"
+        },
+        {
+          "name": "Kilo Gateway",
+          "price": "$0 plus usage",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "500+ models at provider rates with no markup; top up credits as needed"
+        },
+        {
+          "name": "Kilo Pass",
+          "price": "From $19/month",
+          "amount": 19,
+          "currency": "USD",
+          "detail": "Monthly credit subscription with up to 50% bonus credits (Starter $19, Pro $49, Expert $199)"
+        },
+        {
+          "name": "Teams",
+          "price": "$15 per user/month",
+          "amount": 15,
+          "currency": "USD",
+          "detail": "Usage analytics, shared agents, centralised billing, shared BYOK, team management; 14-day Enterprise trial"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "currency": "USD",
+          "detail": "Model and provider limits, private gateway, audit logs, SSO/OIDC/SCIM, SLA"
+        }
+      ],
+      "notes": [
+        "Free models through Auto Free, your own keys, and local models through Ollama or LM Studio cost nothing on Kilo's side.",
+        "The pricing page lists a 5% processing fee on credit purchases.",
+        "Cloud agents and code review are billed per second, from $0.33 an hour."
+      ]
+    },
+    "alternatives": {
+      "intro": "Product Hunt lists Cursor, Claude Code and opencode among Kilo Code's alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+      "items": [
+        {
+          "name": "Cursor",
+          "url": "https://cursor.com/",
+          "what": "AI code editor with built-in agents",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.96,
+          "ph_reviews": 961,
+          "ph_url": "https://www.producthunt.com/products/cursor",
+          "difference": "A full editor with its own subscription, where Kilo is an open-source extension for the editor you already use."
+        },
+        {
+          "name": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code",
+          "what": "Anthropic's AI coding agent for the terminal and IDEs",
+          "starts_at": "See its pricing page",
+          "ph_rating": 5,
+          "ph_reviews": 781,
+          "ph_url": "https://www.producthunt.com/products/claude-code",
+          "difference": "Tied to Anthropic's models; Kilo lets you pick from hundreds of models and providers."
+        },
+        {
+          "name": "opencode",
+          "url": "https://opencode.ai/",
+          "what": "Open-source terminal AI agent that works with any model",
+          "starts_at": "See its pricing page",
+          "ph_rating": 5,
+          "ph_reviews": 51,
+          "ph_url": "https://www.producthunt.com/products/opencode",
+          "difference": "Kilo says its v7 core is built on OpenCode; Kilo adds the VS Code interface, Agent Manager and its gateway and team features."
+        }
+      ],
+      "more": "Product Hunt also lists Google Antigravity and Codex by OpenAI."
+    },
+    "reviews": {
+      "count": 51,
+      "rating": 4.96,
+      "url": "https://www.producthunt.com/products/kilocode/reviews",
+      "as_of": "2026-10-14"
+    },
+    "opinions": {
+      "themes": {
+        "liked": [
+          "The worktrees implementation and running models in parallel",
+          "The built-in diff viewer with comments that go back to the agent",
+          "Fast to get value with sensible defaults"
+        ],
+        "asked": [],
+        "criticised": [
+          "Pricing and cost could be explained more clearly",
+          "A rough sign-in flow on Linux with Brave and Cursor"
+        ]
+      },
+      "quotes": [
+        {
+          "text": "The built in diff viewer is great, it replaces gitlens for me",
+          "author": "Andrei (literally.dev)",
+          "url": "https://www.producthunt.com/products/kilocode/reviews?review=514312"
+        },
+        {
+          "text": "Pricing / cost clarity: a simple, transparent breakdown (what drives cost, typical ranges, and a few real examples) would make it easier to recommend to teams.",
+          "author": "Jacey",
+          "url": "https://www.producthunt.com/products/kilocode/reviews?review=425312"
+        }
+      ]
+    },
+    "pros": [
+      "Free and open source",
+      "More than 500 models, including your own keys and local models",
+      "Parallel agents with git worktree isolation and inline review",
+      "Sandboxed auto mode limits writes and network access"
+    ],
+    "cons": [
+      "Model usage is billed separately, which reviewers found hard to estimate",
+      "v7 changes how agents and modes are configured compared with the legacy extension",
+      "Running several models on the same prompt multiplies cost"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/kilocode",
+      "x": {
+        "none": "We found no posts about Kilo Code v7 on X to link yet.",
+        "search_url": "https://x.com/search?q=kilocode&f=live",
+        "profile_url": "https://x.com/kilocode"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is new in Kilo Code v7 for VS Code?",
+        "a": "A rebuilt extension on the same core as Kilo CLI, with an Agent Manager, git worktrees, parallel tool calls and subagents, inline code review, model comparison and a sandboxed auto mode."
+      },
+      {
+        "q": "Is Kilo Code free?",
+        "a": "The extension is free and open source. You pay for models through Kilo Gateway at provider rates, a Kilo Pass from $19 a month, or your own keys; free and local models are also supported."
+      },
+      {
+        "q": "How much is Kilo for teams?",
+        "a": "Teams is $15 per user per month, with a 14-day Enterprise trial; Enterprise is custom-priced."
+      },
+      {
+        "q": "How do I install it?",
+        "a": "Search for Kilo Code in the VS Code Extensions view or install it from the Visual Studio Marketplace."
+      },
+      {
+        "q": "What are the alternatives to Kilo Code?",
+        "a": "Product Hunt lists Cursor, Claude Code, opencode, Google Antigravity and Codex by OpenAI."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Kilo official site",
+        "url": "https://kilo.ai/"
+      },
+      {
+        "label": "Kilo Code for VS Code",
+        "url": "https://kilo.ai/landing/vs-code"
+      },
+      {
+        "label": "Kilo pricing",
+        "url": "https://kilo.ai/pricing"
+      },
+      {
+        "label": "About Kilo",
+        "url": "https://kilo.ai/about"
+      },
+      {
+        "label": "Kilo blog: back on Product Hunt (5 May 2026)",
+        "url": "https://blog.kilo.ai/p/were-back-on-product-hunt-new-vs-code"
+      },
+      {
+        "label": "Kilo Code VS Code docs",
+        "url": "https://kilo.ai/docs/code-with-ai/platforms/vscode"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/kilocode"
+      },
+      {
+        "label": "Product Hunt reviews",
+        "url": "https://www.producthunt.com/products/kilocode/reviews"
+      },
+      {
+        "label": "Product Hunt launches",
+        "url": "https://www.producthunt.com/products/kilocode/launches"
+      }
+    ]
+  }
+}

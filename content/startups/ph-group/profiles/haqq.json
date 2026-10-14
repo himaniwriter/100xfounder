@@ -1,0 +1,126 @@
+{
+ "slug": "haqq",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/haqq-mobile-app",
+ "excerpt": "HAQQ is a Beirut-built legal AI platform whose iPhone and Android app lets anyone photograph a contract or ask a legal question and get a jurisdiction-aware answer with citations and risk flags. Free to start; Starter $30/user/month. Features, pricing and alternatives.",
+ "content": "<p>HAQQ is a legal AI company that started by building software for law firms and launched a mobile app for everyone else. On the app you ask a legal question in your own words, or photograph or upload a contract, and get a structured answer under the law of the country you are in, with risk flags, citations you can open and outputs you can export to Word or PDF. It can also draft documents such as NDAs, demand letters or tenancy checks. Its reasoning layer is called Justinian, which the team describes as jurisdiction-aware retrieval over legal sources plus a separate risk-flagging pass on top of the base model.</p><p>The same account works on the web, where HAQQ also sells Legal AI Chat for lawyers, with Arabic, English and French drafting and a focus on the Middle East and Gulf, and eFirm, practice management software for law firms. HAQQ says nothing you upload trains a model. In the launch thread the team said the app handles PDF, Word, text and images, can work across 80+ jurisdictions and 30+ languages, and treats its answers as a first read rather than a substitute for a lawyer on high-stakes questions.</p><p>HAQQ's team page names Antoine Kanaan as CEO and co-founder and Abbas Kabalan as chief legal officer and co-founder, and says the company operates from Beirut. The mobile app launched on Product Hunt on 22 June 2026 and finished #3 for the day with 207 upvotes and 37 comments.</p><p><em>We have not tested HAQQ ourselves. This page brings together HAQQ's official site, pricing, mobile app and team pages, its Product Hunt page and launch discussion, and the official pages of comparable tools, and says where each fact comes from. It is not legal advice.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Legal AI",
+  "platform": "iPhone, Android and web",
+  "starts_at": "Free to start; Starter $30/user/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Legal AI app that answers questions and reviews contracts under your country's law, with citations",
+  "maker": {"name": "Stephane Boghossian", "url": "https://www.producthunt.com/@stephane_boghossian"},
+  "team": [
+   {"name": "Antoine Kanaan", "role": "CEO & Co-Founder", "url": "https://www.producthunt.com/@antoine_kanaan"},
+   {"name": "Stephane Boghossian", "role": "Head of Growth", "url": "https://www.producthunt.com/@stephane_boghossian"},
+   {"name": "Roc Khalil", "role": "Chief Technology Officer", "url": "https://www.producthunt.com/@rockhalil"},
+   {"name": "Jad Jabbour", "role": "Technology Leader & AI Lead", "url": "https://www.producthunt.com/@jad_jabbour"},
+   {"name": "Rami Atrouni", "role": "Maker", "url": "https://www.producthunt.com/@ramyatrouny"}
+  ],
+  "ph": {"rank": 3, "votes": 207, "comments": 37, "followers": 746, "launched": "2026-06-22", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Checking a contract for risky clauses before you sign",
+   "Asking about tenant, employment or consumer rights in your country",
+   "Drafting an NDA, demand letter or privacy policy",
+   "Reviewing terms of service and refund policies for a cross-border SaaS",
+   "Exporting a structured risk memo to Word or PDF"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Stephane Boghossian, HAQQ's head of growth, framed the launch around structure: a generic chatbot gives commentary on a contract, while HAQQ aims to give a formatted risk memo you can export. He said a first draft of legal work should not cost $300 an hour.",
+    "HAQQ's team page adds the wider motive: the company first built AI for law firms so lawyers could help more people, and the mobile app is for everyone else, meant to put a contract you don't understand or a right you didn't know you had within reach, in your own language."
+   ],
+   "attribution": "Stephane Boghossian on Product Hunt, and HAQQ's team page",
+   "url": "https://www.producthunt.com/products/haqq-mobile-app?comment=5172994"
+  },
+  "audience": {
+   "fit": [
+    "want a first read of a contract or legal question before paying a lawyer",
+    "work across countries, especially in the Middle East and Gulf, and need jurisdiction-aware answers",
+    "draft routine documents and want citations you can check"
+   ],
+   "not_fit": [
+    "need advice you can rely on for a high-stakes decision: HAQQ calls its answers a first read, not a substitute for counsel",
+    "need spreadsheet analysis: xlsx files were not yet supported at launch",
+    "want clear published prices for every tier: only the Starter price is shown"
+   ]
+  },
+  "pricing": {
+   "intro": "HAQQ prices Legal AI Chat (which the app uses) by credits and eFirm per seat. Prices are in US dollars from its pricing page; annual billing gives two months free.",
+   "url": "https://www.haqq.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "Free workspace with 20 credits as a sign-up gift"},
+    {"name": "Starter", "price": "$30/user/month", "amount": 30, "currency": "USD", "detail": "100 credits a month, legal research with citations, memory with 20 GB storage, Word and PDF export with no watermark"},
+    {"name": "Credit top-ups", "price": "From $1 for 2 credits", "amount": 1, "currency": "USD", "detail": "One-time packs up to $100 for 320 credits; bought credits do not expire"}
+   ],
+   "notes": [
+    "Pro and Business tiers are named on the page without a price we could read.",
+    "eFirm practice management is $60 per user per month with a two-seat minimum on the tier shown; Enterprise is custom."
+   ]
+  },
+  "alternatives": {
+   "intro": "Genie AI, AI Lawyer and Skala are on Product Hunt's alternatives list. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Genie AI", "url": "https://www.genieai.co/", "what": "AI legal assistant for drafting and reviewing contracts", "starts_at": "See its pricing page", "ph_rating": 4.65, "ph_reviews": 17, "ph_url": "https://www.producthunt.com/products/genie-ai", "difference": "Contract drafting for businesses; HAQQ emphasises Arabic and Middle East jurisdictions and a consumer mobile app."},
+    {"name": "AI Lawyer", "url": "https://ailawyer.pro/", "what": "AI legal help for individuals", "starts_at": "See its pricing page", "ph_rating": 4.2, "ph_reviews": 5, "ph_url": "https://www.producthunt.com/products/ai-lawyer", "difference": "Similar consumer audience; HAQQ adds structured risk memos and firm software."},
+    {"name": "Skala", "url": "https://www.skala.io/", "what": "Legal platform for startups", "starts_at": "See its pricing page", "ph_rating": 4.9, "ph_reviews": 10, "ph_url": "https://www.producthunt.com/products/skala", "difference": "Focused on startup legal work; HAQQ covers individuals, lawyers and firms."}
+   ],
+   "more": "Product Hunt also lists Common Paper and Docses."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/haqq-mobile-app/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Lowering the barrier to legal clarity for small teams and freelancers", "Jurisdiction-aware reasoning with risk flags", "The app's design"],
+    "asked": ["Which law applies when a contract's choice of law differs from where you operate (both are shown, with known overrides flagged)", "Multi-language contracts (30+ languages, 80+ jurisdictions)", "File types beyond PDF (Word, text and images; xlsx planned)", "What Justinian adds over a base model (legal-source retrieval, a separate risk pass and citations)"],
+    "criticised": ["Confusing naming in the launch post, which mentioned an earlier name; the maker corrected it"]
+   },
+   "quotes": [
+    {"text": "Access to justice is a real mess for small teams and freelancers.", "author": "Vikram", "url": "https://www.producthunt.com/products/haqq-mobile-app?comment=5471167"},
+    {"text": "Everyone's tried to make a base LLM a lawyer. Everyone knows how that goes.", "author": "Atta", "url": "https://www.producthunt.com/products/haqq-mobile-app?comment=5473188"},
+    {"text": "\"Here's what to check\" beats a confident wrong answer every time, especially when someones already panicking.", "author": "Peter Digitalis", "url": "https://www.producthunt.com/products/haqq-mobile-app?comment=5478147"}
+   ]
+  },
+  "pros": [
+   "Answers under the law of the user's country, with citations",
+   "Arabic, English and French drafting",
+   "Exportable Word and PDF outputs",
+   "Free to start on iPhone and Android",
+   "Says uploads are never used to train models"
+  ],
+  "cons": [
+   "Not a substitute for a lawyer on high-stakes matters, by the team's own account",
+   "Only the Starter price is clearly published",
+   "No spreadsheet support at launch"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/haqq-mobile-app",
+   "x": {"none": "We found no posts about the HAQQ mobile app on X to link yet.", "search_url": "https://x.com/search?q=haqq.ai&f=live", "profile_url": "https://x.com/haqq_ai"}
+  },
+  "faq": [
+   {"q": "What is HAQQ?", "a": "A legal AI platform. Its mobile app lets anyone ask a legal question or upload a contract and get a structured, jurisdiction-aware answer with risk flags and citations."},
+   {"q": "Is HAQQ free?", "a": "You can start free; a Free workspace gets 20 credits. Starter is $30 per user per month with 100 credits, and credit top-ups start at $1."},
+   {"q": "Which countries' laws does it cover?", "a": "The team said it works across 80+ jurisdictions and 30+ languages; its lawyer product focuses on the Middle East and Gulf."},
+   {"q": "What if my contract names another country's law?", "a": "The maker said it analyses under the contract's choice-of-law clause and adds your operating jurisdiction as a second lens, flagging where local courts tend to override the clause."},
+   {"q": "Can I rely on it instead of a lawyer?", "a": "HAQQ's team describes the answers as a first read and says it is not a substitute for counsel on high-stakes calls."},
+   {"q": "Which files can I upload?", "a": "PDF, Word, plain text and images, according to the team at launch; spreadsheets were planned."}
+  ],
+  "sources": [
+   {"label": "HAQQ mobile app", "url": "https://www.haqq.ai/mobile-app"},
+   {"label": "HAQQ Legal AI Chat", "url": "https://www.haqq.ai/legal-ai-chat"},
+   {"label": "HAQQ eFirm", "url": "https://www.haqq.ai/legal-practice-management-software"},
+   {"label": "HAQQ pricing", "url": "https://www.haqq.ai/pricing"},
+   {"label": "HAQQ team", "url": "https://www.haqq.ai/team"},
+   {"label": "HAQQ contact", "url": "https://www.haqq.ai/contact"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/haqq-mobile-app"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/haqq-mobile-app/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/56844816-a3fc-4248-888f-72209b9cfc14.png?auto=format&fit=max&w=1400", "w": 3747, "h": 2436, "alt": "HAQQ graphic 'Legal work on the go for everyone' with the app editing a mutual NDA", "credit": "Image: HAQQ via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/4e806493-251a-4089-bc02-9026da6ce3e3.png?auto=format&fit=max&w=1400", "w": 3747, "h": 2436, "alt": "HAQQ graphic 'Draft. Review. Research.' with the app drafting a shareholders' agreement", "credit": "Image: HAQQ via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/e6272666-2c0d-4748-a96b-1730b90ae539.png?auto=format&fit=max&w=1400", "w": 3747, "h": 2436, "alt": "HAQQ graphic 'Get structured legal answers' with completed knowledge searches in the app", "credit": "Image: HAQQ via Product Hunt"}
+  ]
+ }
+}

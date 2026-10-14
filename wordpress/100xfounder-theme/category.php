@@ -13,4 +13,5 @@ get_template_part('parts/feed-page', null, [
     'show_lead' => true,
     'query_args' => ['cat' => $term->term_id],
 ]);
+if ($term->slug === 'funding' && function_exists('xf_fr_links_html')) echo xf_fr_links_html(3); // phpcs:ignore -- escaped inside
 get_footer();

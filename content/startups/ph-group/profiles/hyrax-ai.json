@@ -1,0 +1,85 @@
+{
+ "slug": "hyrax-ai",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/tristan-benozer",
+ "excerpt": "Hyrax AI learns a whole codebase, audits it across security, correctness, maintainability, performance, architecture and operations, and returns fixes as pull requests that an engineer reviews and merges. What it does, what we could and couldn't confirm, and alternatives.",
+ "content": "<p>Hyrax AI describes itself as a codebase architect for engineering teams. It connects to a repository, learns the whole codebase, applies architectural judgment to changes and returns each fix as a pull request. Its Product Hunt listing stresses that nothing auto-merges: an engineer reviews and merges every one.</p><p>Hyrax's launch images add detail. A full audit runs about 39 tools across six categories (security, correctness, maintainability, performance, architecture and operations), and findings are scored by severity and effort so easy wins come first. Each finding has to survive an internal pass that argues against it and cite the exact lines involved. For a fix, Hyrax runs the repository's own tests and build, reviews its own diff, opens the pull request as a draft and marks it ready once CI passes. Its GitHub organisation describes it as automated code review and remediation.</p><p>This was Hyrax AI's second Product Hunt launch. It went live on 21 September 2026 and finished #5 for the day with 216 upvotes and 15 comments. Hyrax's website returned an access error to us, so we could not check its pricing or terms.</p><p><em>We have not tested Hyrax AI ourselves. This page brings together its Product Hunt page and launch images, its GitHub organisation and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI code review",
+  "platform": "Connects to your code repository (GitHub organisation listed)",
+  "starts_at": "Pricing not published",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "AI that audits a whole codebase and returns verified fixes as pull requests for engineers to merge",
+  "maker": {"name": "Hyrax", "url": "https://github.com/hyrax-ai"},
+  "ph": {"rank": 5, "votes": 216, "comments": 15, "followers": 371, "launched": "2026-09-21", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Auditing a repository for security, correctness and maintainability issues",
+   "Getting fixes as draft pull requests that run your tests and build first",
+   "Prioritising technical debt by severity and effort",
+   "Catching issues such as unsanitised HTML or SQL injection with cited lines"
+  ],
+  "audience": {
+   "fit": [
+    "lead an engineering team with a backlog of code-quality and security issues",
+    "want AI fixes delivered as reviewable pull requests rather than suggestions",
+    "already rely on CI tests that Hyrax can run before proposing a change"
+   ],
+   "not_fit": [
+    "want changes merged automatically: Hyrax says an engineer merges every pull request",
+    "need confirmed pricing and terms before trying: we could not load its website",
+    "have little test coverage: its fixes lean on your own tests and build"
+   ]
+  },
+  "pricing": {
+   "intro": "Pricing not confirmed: hyrax.dev returned an access error (403) to our requests on 14 October 2026, so we could not read its pricing page.",
+   "url": "https://hyrax.dev/",
+   "checked": "2026-10-14",
+   "plans": [],
+   "notes": []
+  },
+  "alternatives": {
+   "intro": "CodeRabbit, Graphite and cubic are on Product Hunt's alternatives list. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "CodeRabbit", "url": "https://www.coderabbit.ai/", "what": "AI code review on pull requests", "starts_at": "See its pricing page", "ph_rating": 4.88, "ph_reviews": 16, "ph_url": "https://www.producthunt.com/products/coderabbit", "difference": "Reviews the pull requests your team opens; Hyrax audits the whole codebase and opens its own fix pull requests."},
+    {"name": "Graphite", "url": "https://graphite.dev/", "what": "AI-powered pull request toolchain and review", "starts_at": "See its pricing page", "ph_rating": 4.93, "ph_reviews": 43, "ph_url": "https://www.producthunt.com/products/graphite", "difference": "Built around stacked pull requests and review workflow; Hyrax focuses on finding and fixing issues."},
+    {"name": "cubic", "url": "https://www.cubic.dev/", "what": "AI code review", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 8, "ph_url": "https://www.producthunt.com/products/cubic", "difference": "Review-first; Hyrax runs a full audit and remediation."}
+   ],
+   "more": "Product Hunt also lists Codex 3.0 by OpenAI and Qodo."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/tristan-benozer/reviews", "as_of": "2026-10-14"},
+  "pros": [
+   "Fixes arrive as draft pull requests after your tests and build pass",
+   "Nothing merges without an engineer, per Hyrax",
+   "Audit covers six categories, scored by severity and effort",
+   "Findings cite the exact lines and go through an internal counter-check"
+  ],
+  "cons": [
+   "We could not confirm pricing or terms from its website",
+   "No Product Hunt reviews yet",
+   "Value depends on your existing test coverage and CI"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/tristan-benozer",
+   "x": {"none": "We found no posts about Hyrax AI on X to link yet.", "search_url": "https://x.com/search?q=hyrax.dev&f=live", "profile_url": "https://twitter.com/hyraxai"}
+  },
+  "faq": [
+   {"q": "What is Hyrax AI?", "a": "An AI tool that learns your codebase, audits it and returns fixes as pull requests that an engineer reviews and merges."},
+   {"q": "Does Hyrax merge code on its own?", "a": "No, according to its Product Hunt listing: nothing auto-merges, and an engineer reviews and merges every pull request."},
+   {"q": "What does the audit cover?", "a": "Hyrax's launch images say a full audit runs about 39 tools across security, correctness, maintainability, performance, architecture and operations."},
+   {"q": "How much does Hyrax cost?", "a": "We could not confirm it: hyrax.dev returned an access error to us. Check its site directly."},
+   {"q": "What are the alternatives?", "a": "CodeRabbit, Graphite and cubic, with Codex 3.0 by OpenAI and Qodo also on Product Hunt's list."}
+  ],
+  "sources": [
+   {"label": "Hyrax official site (not reachable for us)", "url": "https://hyrax.dev/"},
+   {"label": "Hyrax on GitHub", "url": "https://github.com/hyrax-ai"},
+   {"label": "Product Hunt page and launch images", "url": "https://www.producthunt.com/products/tristan-benozer"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/tristan-benozer/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/74f99f37-9381-45c7-81d5-fca18b55dff4.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Hyrax graphic 'Runs your repo's own tests and build. Reviews its own diff.' with a list of completed fixes", "credit": "Image: Hyrax AI via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/d3a11bf8-8fbe-40f4-85f3-f5fa6b4fe6c0.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Hyrax graphic 'Findings are scored by severity and effort' with counts by category", "credit": "Image: Hyrax AI via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/994fed68-33cf-4bf0-8983-49c07bec1fb3.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Hyrax finding detail describing a stored XSS issue and the DOMPurify fix", "credit": "Image: Hyrax AI via Product Hunt"}
+  ]
+ }
+}

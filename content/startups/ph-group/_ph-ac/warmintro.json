@@ -1,0 +1,278 @@
+{
+ "input": "https://www.producthunt.com/posts/warmintro",
+ "final_url": "https://www.producthunt.com/products/warmintro?launch=warmintro",
+ "launch": {
+  "slug": "warmintro",
+  "name": "WarmIntro",
+  "tagline": "Free tool to find your warmest path into any company",
+  "featuredAt": "2026-05-21T00:01:00-07:00",
+  "dailyRank": "5",
+  "weeklyRank": "28",
+  "points": 190,
+  "commentsCount": 26,
+  "pricingType": "free",
+  "description": "Cold outreach doesn't work. WarmIntro finds the employees at any target company who share the most with your background - shared university, past employers, city, and title so every intro starts from a place of genuine connection.",
+  "makers": [
+   {
+    "name": "Nithish A",
+    "username": "nithish_a1",
+    "headline": "Building the data backbone for AI Agents"
+   },
+   {
+    "name": "Mhimed",
+    "username": "mhimed",
+    "headline": "Love building new products."
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "fa84787e-93cb-47d8-ae35-d8898cff11f1.png",
+    "type": "image",
+    "w": 1366,
+    "h": 759,
+    "video": null
+   },
+   {
+    "uuid": "a5f0805f-aba2-4f54-9b8a-13f92661199c.png",
+    "type": "image",
+    "w": 1366,
+    "h": 759,
+    "video": null
+   },
+   {
+    "uuid": "b8f89c04-cb33-40dc-8a60-355ba90eff6f.png",
+    "type": "image",
+    "w": 1366,
+    "h": 759,
+    "video": null
+   },
+   {
+    "uuid": "1ed8f84c-8a54-4b2d-bbbe-463d3d9dfeec.png",
+    "type": "image",
+    "w": 1366,
+    "h": 759,
+    "video": null
+   }
+  ],
+  "links": [
+   "tools.crustdata.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    5
+   ]
+  ]
+ },
+ "product": {
+  "name": "WarmIntro",
+  "slug": "warmintro",
+  "tagline": "Free tool to find your warmest path into any company",
+  "description": "Cold outreach doesn't work. WarmIntro finds the employees at any target company who share the most with your background - shared university, past employers, city, and title so every intro starts from a place of genuine connection.",
+  "websiteUrl": "https://tools.crustdata.com/warmintro",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 323,
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/fa84787e-93cb-47d8-ae35-d8898cff11f1.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/a5f0805f-aba2-4f54-9b8a-13f92661199c.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/b8f89c04-cb33-40dc-8a60-355ba90eff6f.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/1ed8f84c-8a54-4b2d-bbbe-463d3d9dfeec.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5383884",
+   "depth": 0,
+   "author": "Nithish A",
+   "username": "nithish_a1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey PH! 👋 Cold outreach in 2026 doesn't work like it used to. Everyone knows it. The fix is warm intros but finding the right person to reach out to at a target company is harder than it sounds. You don't just want someone who works there. You want the person who has the most in common with you. Went to the same university. Worked at the same company at the same time. In the same department. Lives in the same city. Has done a similar role. That's what WarmIntro finds. Drop your LinkedIn URL and a target company and we instantly rank every employee by how warm your connection to them actually is, based on real shared signals: 🎓 Shared university: went to the same school as you 🏢 Shared past company: worked at the same place as you ⏱️ Overlapping tenure: they were actually there at the same time 🧑‍💼 Same department: worked in the same function, not just the same company 📍 Same city: based in the same location as you 💼 Similar title: worked in the same kind of role The result is a ranked list of the people at that company you have the most in common with, so when you reach out you are using the warmest possible connection. A few ways people are using it: 🚀 Sales teams stop cold prospe"
+  },
+  {
+   "id": "5390149",
+   "depth": 1,
+   "author": "Rohan Chaubey",
+   "username": "rohanrecommends",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "hunter"
+   ],
+   "text": "@nithish_a1 &nbsp;Many congratulations on the launch, Nithish, Mhimed, and team! :) I had the chance to test WarmIntro yesterday as an early user, and while I spotted a few minor bugs, the team was impressively quick to address them. What WarmIntro does: It solves a problem I see constantly in my work, makers asking me to facilitate warm introductions to certain companies or VC firms. Instead of relying on manual networking, WarmIntro analyzes your LinkedIn profile against any target company and surfaces employees you actually have genuine connections with: shared universities, past employers, overlapping tenure, same cities, or similar roles. It turns cold outreach into warm conversations by finding the people most likely to respond to you. Why I'm endorsing it: I'm redirecting founders to this tool now because it's a smarter, scalable way to find those shared experiences that make introductions work. Rather than asking someone like me to play matchmaker, makers can discover their own warmest paths into companies which is faster, more authentic, and frankly, more empowering. This is exactly the kind of tool the PH community needs for sales, partnerships, fundraising, and job hunti"
+  },
+  {
+   "id": "5390484",
+   "depth": 2,
+   "author": "Nithish A",
+   "username": "nithish_a1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@rohanrecommends &nbsp;Thank you Rohan! Glade you found it useful. In 2026, people need warm intros and we hope a lot of folks find value from this tool."
+  },
+  {
+   "id": "5390291",
+   "depth": 1,
+   "author": "Roop Reddy",
+   "username": "roopreddy",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@nithish_a1 &nbsp;Congrats on the launch. This has broad use cases, very helpful indeed!"
+  },
+  {
+   "id": "5390539",
+   "depth": 2,
+   "author": "Nithish A",
+   "username": "nithish_a1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@roopreddy &nbsp;Thanks Roop!"
+  },
+  {
+   "id": "5391906",
+   "depth": 0,
+   "author": "Othman Katim",
+   "username": "othman_katim",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Where do you pull the employee background data from, is it mostly LinkedIn, and how do you keep it current?"
+  },
+  {
+   "id": "5393030",
+   "depth": 1,
+   "author": "Nithish A",
+   "username": "nithish_a1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@othman_katim &nbsp;Hey Othman, we get our data from Crustdata's API which pulls employee background data from public web data. Crustdata's APIs are refreshed in real-time, so the data you see is up to date."
+  },
+  {
+   "id": "5390205",
+   "depth": 0,
+   "author": "Nuseir Yassin",
+   "username": "nuseir_yassin1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "How about creator / personal introductions? You put in your profile URL and the person (creator, investor, talent, etc.) you want to directly reach out to. Then it matches based on shared interests and experiences. Could be extended to X and Instagram too."
+  },
+  {
+   "id": "5390548",
+   "depth": 1,
+   "author": "Nithish A",
+   "username": "nithish_a1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@nuseir_yassin1 &nbsp;Hey Nuseir, that's a great idea. We'll develop this for v2!"
+  },
+  {
+   "id": "5390232",
+   "depth": 0,
+   "author": "S.S. Rahman",
+   "username": "syed_shayanur_rahman",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats. Just curious as a builder, what are you using to match contacts? Is there an API for this??"
+  },
+  {
+   "id": "5390573",
+   "depth": 1,
+   "author": "Nithish A",
+   "username": "nithish_a1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@syed_shayanur_rahman &nbsp;Hey Rahman, we're using Crustdata's people enrichment API for this."
+  },
+  {
+   "id": "5390121",
+   "depth": 0,
+   "author": "Kruti Parekh",
+   "username": "krutiparekh16",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "When I entered my profile and potential company to reach out to, it showed me an error. Please advise. (screenshot below)"
+  },
+  {
+   "id": "5390423",
+   "depth": 0,
+   "author": "Sidra Arif",
+   "username": "sidraarifali",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "I tried it out and results were quite good. One thing I would love to see is the ability to bulk upload a list of companies and get all the matches exported in a file. Would save a lot of time."
+  },
+  {
+   "id": "5392552",
+   "depth": 0,
+   "author": "Jared Salois",
+   "username": "jared_salois",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Curious whether anyone's used it to break into public sector or education. Does it work just as well when your target is a school, a nonprofit, or a government office? Congrats on the launch!"
+  }
+ ]
+}

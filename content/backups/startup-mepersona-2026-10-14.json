@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 3458,
+  "date": "2026-10-11T12:31:00",
+  "date_gmt": "2026-10-11T07:01:00",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/mepersona/",
+   "raw": "https://100xfounder.com/startup/mepersona/"
+  },
+  "modified": "2026-10-11T12:31:00",
+  "modified_gmt": "2026-10-11T07:01:00",
+  "password": "",
+  "slug": "mepersona",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/mepersona/",
+  "title": {
+   "raw": "MePersona",
+   "rendered": "MePersona"
+  },
+  "content": {
+   "raw": "<p>MePersona is the unified social media inbox for content creators, but the inbox is only where it starts. Your Persona learns how you talk and improves with every reply you approve. It drafts replies to comments and DMs from YouTube, Instagram, TikTok, X and more, scores how much each sounds like you, and remembers what each fan said last time. Nothing posts until you hit Send. It works in English and Spanish, so bilingual creators stop choosing which half of their audience gets a real answer.</p>\n",
+   "rendered": "<p>MePersona is the unified social media inbox for content creators, but the inbox is only where it starts. Your Persona learns how you talk and improves with every reply you approve. It drafts replies to comments and DMs from YouTube, Instagram, TikTok, X and more, scores how much each sounds like you, and remembers what each fan said last time. Nothing posts until you hit Send. It works in English and Spanish, so bilingual creators stop choosing which half of their audience gets a real answer.</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "Answer every fan comment in your voice",
+   "rendered": "<p>Answer every fan comment in your voice</p>\n",
+   "protected": false
+  },
+  "featured_media": 0,
+  "template": "",
+  "xf_industry": [
+   547,
+   659,
+   724
+  ],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "mepersona",
+  "class_list": [
+   "post-3458",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "hentry",
+   "xf_industry-marketing-automation",
+   "xf_industry-messaging",
+   "xf_industry-social-media-marketing",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3458",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=3458"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=3458"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=3458"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3458"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3458"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3458"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3458"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3458"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3458"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

@@ -1,0 +1,343 @@
+{
+ "input": "https://www.producthunt.com/posts/vokal-4",
+ "final_url": "https://www.producthunt.com/products/vokal-2?launch=vokal-4",
+ "launch": {
+  "slug": "vokal-4",
+  "name": "Vokal",
+  "tagline": "A collaboration space for 10x teammates with their Al agents",
+  "featuredAt": "2026-06-02T00:01:00-07:00",
+  "dailyRank": "2",
+  "weeklyRank": "7",
+  "points": 430,
+  "commentsCount": 54,
+  "pricingType": "free_options",
+  "description": "Your Codex and my Codex can’t talk, so we play human telephone in Slack: copy prompts, paste summaries, ask for reviews, and lose the run. Vokal brings 10x teammates and their agents into one live workspace in minutes, whether they run local Codex, Claude Code, or Hermes — or in the cloud. Name your agents, give them roles, access, and memory, and work will happen in a shared collaboration space instead of through copy-paste handoffs.",
+  "makers": [
+   {
+    "name": "Zhen Han",
+    "username": "zhen_han",
+    "headline": "Founder @Vokal @Appifex"
+   },
+   {
+    "name": "Kai Sun",
+    "username": "kai_sun3",
+    "headline": "Co-founder @Vokal"
+   }
+  ],
+  "hunter": "Chris Messina",
+  "media": [
+   {
+    "uuid": "c469fcb1-fb6b-48a3-8a57-99807898f8d9.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "7f68a7d4-1941-4cb7-8697-f99cee32486a.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "9d3ae60b-b5dd-43e4-b7af-7988dd341156.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "f68a2708-5570-4992-9d07-68a59ef70e8d.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "2ed52519-a3df-436c-84a5-a544a6fb1ce7.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "8553b9ed-efa2-4f84-99d5-e6f066288719.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "de40c22d-f163-4801-8d89-92f1649c5256.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "f8849d9b-31b8-4933-979c-4189d71b7e1b.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "9acac8c1-8847-49b6-ac6f-bf8d16c5c48f.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   }
+  ],
+  "links": [
+   "vokal.team",
+   "docs.vokal.team"
+  ],
+  "badges": [
+   [
+    "daily",
+    2
+   ]
+  ]
+ },
+ "product": {
+  "name": "Vokal",
+  "slug": "vokal-2",
+  "tagline": "A collaboration space for 10x teammates with their Al agents",
+  "description": "Your Codex and my Codex can’t talk, so we play human telephone in Slack: copy prompts, paste summaries, ask for reviews, and lose the run. Vokal brings 10x teammates and their agents into one live workspace in minutes, whether they run local Codex, Claude Code, or Hermes — or in the cloud. Name your agents, give them roles, access, and memory, and work will happen in a shared collaboration space instead of through copy-paste handoffs.",
+  "websiteUrl": "https://vokal.team",
+  "reviewsCount": 3,
+  "reviewsRating": 5,
+  "followersCount": 937,
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/c469fcb1-fb6b-48a3-8a57-99807898f8d9.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/7f68a7d4-1941-4cb7-8697-f99cee32486a.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/9d3ae60b-b5dd-43e4-b7af-7988dd341156.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/f68a2708-5570-4992-9d07-68a59ef70e8d.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/2ed52519-a3df-436c-84a5-a544a6fb1ce7.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/8553b9ed-efa2-4f84-99d5-e6f066288719.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/de40c22d-f163-4801-8d89-92f1649c5256.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/f8849d9b-31b8-4933-979c-4189d71b7e1b.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/9acac8c1-8847-49b6-ac6f-bf8d16c5c48f.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5417176",
+   "depth": 0,
+   "author": "Chris Messina",
+   "username": "chrismessina",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "hunter"
+   ],
+   "text": "I keep coming back to this line from @zhen_han : “Vokal is the collaboration space for 10x teammates and their AI agents.” Vokal is built for the weird handoff problem that shows up once everyone on a team has their own agent stack: Claude Code in one terminal, Codex somewhere else, Cursor over here, support prompts in another tab, then a bunch of copy-paste into Slack. The product treats agents less like private sidekicks and more like teammates with roles, owners, permissions, memory, and a unified event log. So, a 10x teammate is a human who works with a crew of agent helpers . And the flow looks like this: Humans set goals → agents do work → humans review ↺ That feels like the right frame: not “another AI chat app,” but infrastructure for the awkward middle stage where startups are already working with agents… just not together. Yet ."
+  },
+  {
+   "id": "5415377",
+   "depth": 0,
+   "author": "Zhen Han",
+   "username": "zhen_han",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 I’m Zhen, founder of Vokal. Before Vokal, I worked on Meta and Google, and I’ve spent years thinking about how humans and AI systems should work together. Vokal is a collaboration space for 10x teammates and their AI agents. We built Vokal because AI agents have made individual builders much faster, but software is still built by teams. Today, a founder may use ChatGPT for strategy, an engineer may use Claude Code or Codex in a terminal, another teammate may use Cursor, and support or marketing may use their own AI workflows. The work is real, but the context is scattered: prompts, screenshots, decisions, PR notes, customer issues, docs, and follow-ups move through copy-paste handoffs. Vokal gives humans and agents one shared workspace so the team can align the goal, assign the right agent, watch the work, review in context, and save useful outputs for the next run. Here’s how it works: Bring teammates and agents into one shared workspace. Connect local or cloud agents like Claude Code, Codex, Hermes, OpenCode, MCP/custom ACP agents, or cloud agents. Give each agent a name, role, owner, permissions, app access, and memory scope. Run work in channels with tasks, d"
+  },
+  {
+   "id": "5417848",
+   "depth": 1,
+   "author": "Victoria Wu",
+   "username": "victoria_wu",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zhen_han &nbsp;Excited to see more products tackling the collaboration layer of AI, not just the intelligence layer. Congrats on the launch!"
+  },
+  {
+   "id": "5420646",
+   "depth": 0,
+   "author": "Vamshi Reddy",
+   "username": "thekrew",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The human-to-agent handoff is where most teams are still flying blind. At Tuple, when we started running AI agents across client campaigns, the breakdown wasn't the agents — it was that no one could see what they'd done or what needed human review before going out. We built a manual paper trail for that. Treating agents as first-class teammates with permissions, ownership, and an event log is exactly the right architecture. Teams that nail this in the next 18 months will have a real operational edge."
+  },
+  {
+   "id": "5420654",
+   "depth": 1,
+   "author": "Zhen Han",
+   "username": "zhen_han",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@thekrew &nbsp;Exactly. The failure mode isn’t usually that the agent did nothing, it’s invisible work. Who asked? What context was used? What changed? What still needs review before it ships? Vokal makes that trail native: agent identity, permissions, ownership, handoffs, event history, and human review stay attached to the work. And because it’s indexed, teams (including humans and agents who have the right permission) can search and reuse that context later instead of rebuilding a manual paper trail in spreadsheets or Slack paste."
+  },
+  {
+   "id": "5417758",
+   "depth": 0,
+   "author": "Vikram",
+   "username": "vikramp7470",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The 'turn agent spend into usable work' line really resonates. We waste so much time re-prompting things because one teammate's breakthrough with an agent isn't documented for the rest of the team. How does the saving useful outputs to the Knowledge Base workflow look in practice? Is it manual or AI-assisted?"
+  },
+  {
+   "id": "5417865",
+   "depth": 1,
+   "author": "Zhen Han",
+   "username": "zhen_han",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@vikramp7470 &nbsp;Great question Vikram. In Vokal, agents have their own local memory, while the Knowledge Base is team-level memory. Most useful updates can be saved or refreshed by agents automatically when it makes sense, so the team does not have to manually document every good prompt, workflow, or decision. Humans can also edit the Knowledge Base directly, or add external knowledge like thinking processes, company values, runbooks, product decisions, and reusable workflows."
+  },
+  {
+   "id": "5417908",
+   "depth": 2,
+   "author": "Vikram",
+   "username": "vikramp7470",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zhen_han &nbsp;Thanks for the clarification, Zhen. The automatic knowledge capture sounds really useful especially for teams that don't want valuable workflows and decisions getting lost in chats. Appreciate the explanation..."
+  },
+  {
+   "id": "5419693",
+   "depth": 1,
+   "author": "Zhen Han",
+   "username": "zhen_han",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@vikramp7470 &nbsp;It’s both manual and AI-assisted, but not an automatic dump of every thread. In practice, when an agent run produces something reusable, a teammate can save it into the Knowledge Base as a durable note: the problem, decision, useful prompt/context, source links, gotchas, and what to do next time. There are also product surfaces where useful session/context summaries can be saved directly. Agents can help with the curation too. You can ask an agent to turn a messy run into a clean KB entry, and agents have Knowledge Base tools for publishing durable learnings. Humans can then edit or archive the article. The important bit is selectivity: KB is for reusable decisions, corrections, patterns, and team context, not raw chat history. That’s what lets the next teammate or agent start from the breakthrough instead of rediscovering it."
+  },
+  {
+   "id": "5417789",
+   "depth": 0,
+   "author": "Ea Z",
+   "username": "ea_z",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The unified event log is interesting. What kinds of things show up in that trail when an agent touches multiple tools?"
+  },
+  {
+   "id": "5417929",
+   "depth": 1,
+   "author": "Zhen Han",
+   "username": "zhen_han",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ea_z &nbsp;often the important ones, message level: approvals, handoffs, request, results, etc."
+  },
+  {
+   "id": "5419675",
+   "depth": 1,
+   "author": "Zhen Han",
+   "username": "zhen_han",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ea_z &nbsp;The goal is to show enough provenance for the team to review and continue the work, not to expose a raw token-by-token trace. A typical trail includes: who asked, which agent/role worked on it, what task or thread it belonged to, what source context was used, which connected apps/tools were involved, what draft or output was produced, where a handoff happened, what a human corrected or approved, and what got saved for future runs. So if an agent moves across something like support context -&gt; product decision -&gt; engineering task, the important steps stay attached instead of becoming three disconnected summaries."
+  },
+  {
+   "id": "5418406",
+   "depth": 0,
+   "author": "Artem Litvinenko",
+   "username": "artltvk",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "I can see it work well for non-technical collaborators &amp; AI users, but for engineers, why is it better than a well set repository with skills, subagents, or other assisting markdowns? Would love to know more"
+  },
+  {
+   "id": "5419617",
+   "depth": 1,
+   "author": "Zhen Han",
+   "username": "zhen_han",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@artltvk &nbsp;That’s a fair question. A well-set repo with skills, subagents, and markdown instructions is still very valuable. We use that kind of context too. But repo context mostly helps the agent execute inside the codebase. The harder engineering problem is often alignment around the work: why are we building this, what customer/product context matters, who requested it, which tradeoffs were discussed, what did the agent actually do, and who reviewed the result. As AI makes implementation faster, the risk is not just 'bad code'. It’s fast work with missing shared context. Vokal is for that layer: the team, agents, tasks, source context, handoffs, review trail, and memory around the repo. If you’re one engineer in one repo, markdown may be enough. If work crosses engineers, PMs, support, multiple agents, and PR review, we think the shared workspace becomes important."
+  },
+  {
+   "id": "5418189",
+   "depth": 0,
+   "author": "Ada Johnsen",
+   "username": "ada_johnsen",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The Slack copy paste problem is very real once different people start using different AI tools. I like the idea of agents having roles and owners instead of everyone keeping their own private workflow. The useful part for teams might be less abt adding another AI tool and more abt making the work visible enough for others to review and continue. How does Vokal handle permissions when one agent needs context from another teammate's workflow?"
+  },
+  {
+   "id": "5419664",
+   "depth": 1,
+   "author": "Zhen Han",
+   "username": "zhen_han",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ada_johnsen &nbsp;That’s the exact problem we’re trying to avoid: shared context should not mean blanket access. In Vokal, agents are workspace members with an owner, role/profile, channel membership, permissions, and optional connected-app access. If the context is in a shared thread/channel/task where the agent is a member, the agent can work from that context. If it comes from an external tool, the agent needs the right connected-app grant/account for that role. If the context is private to another teammate or outside the agent’s granted tools, Vokal does not magically give the agent access. The teammate can bring the context into the shared thread, create a handoff, or grant the right app/account access. So the model is: make work visible where the team chooses to collaborate, but keep access scoped by channel membership, agent role, and app grants."
+  }
+ ]
+}

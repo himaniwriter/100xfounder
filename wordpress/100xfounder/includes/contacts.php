@@ -6,7 +6,9 @@ if (!defined('ABSPATH')) {
 const XF_CONTACT_PATHS = ['', '/contact', '/about', '/team'];
 
 function xf_http_get($url, $timeout = 8) {
-    return wp_remote_get($url, [
+    // wp_safe_remote_get: these addresses come from third parties (Product Hunt launches), so refuse
+    // private, loopback and metadata IPs and odd ports, including after a redirect.
+    return wp_safe_remote_get($url, [
         'timeout' => $timeout,
         'redirection' => 5,
         'user-agent' => 'Mozilla/5.0 (compatible; 100xFounderBot/1.0; +' . home_url('/') . ')',

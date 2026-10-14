@@ -1,0 +1,216 @@
+{
+ "slug": "blenny",
+ "excerpt": "Blenny is a free, open-source menu bar organiser for macOS 27 on Apple silicon that sorts apps into visible, revealable and hidden without moving your pointer. Requirements, limits and alternatives.",
+ "content": "<p>Blenny is a free, open-source app that tidies the Mac menu bar. It gives each menu bar app one of three places. Visible apps (the Surface, in the site's fish theme) always show. Revealable apps (the Reef) appear when you click Blenny's fish icon. Hidden apps (the Deep) never show, though they keep running. You arrange groups and order in a draft, apply the changes when you're ready, and can undo the last change. Apps with several icons move together.</p><p>Blenny's main promise is how it does this. It never moves your pointer, clicks for you or fakes a drag, and it doesn't need Screen Recording permission. To set the order it needs the Device Control permission and access to macOS's menu bar layout file. It is a small native app of about 6 MB, built only for macOS 27 on Apple silicon, and its updates are checked against the developer's own signing key and never install unattended.</p><p>The app is self-signed rather than notarized by Apple, so macOS may ask you to allow it in Privacy &amp; Security. Its README lists known limits openly, including that multiple displays are untested. Blenny is published under the Apache-2.0 licence by the developer known as fish (f-is-h on GitHub) and launched on Product Hunt on 4 October 2026, finishing #28 for the day with 63 upvotes.</p><p><em>We have not tested Blenny ourselves. This page brings together its official site, its GitHub README and releases, its Product Hunt page and the official pages of comparable apps, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Mac utilities",
+  "platform": "Mac app",
+  "os": "macOS 27 or later, Apple silicon only",
+  "starts_at": "Free (Apache-2.0 open source)",
+  "schema_category": "UtilitiesApplication",
+  "summary_short": "Free, open-source menu bar organiser for macOS 27 that never moves your pointer",
+  "maker": {
+   "name": "fish (f-is-h)",
+   "url": "https://www.producthunt.com/@fi5h"
+  },
+  "team": [
+   {
+    "name": "fish (f-is-h)",
+    "role": "Developer",
+    "url": "https://github.com/f-is-h"
+   }
+  ],
+  "ph": {
+   "rank": 28,
+   "votes": 63,
+   "comments": 1,
+   "followers": 30,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Cutting a crowded menu bar down to the few icons you need all the time",
+   "Keeping occasional apps one click away and hiding the rest",
+   "Organising the menu bar on macOS 27 without granting Screen Recording permission"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Blenny's developer introduced it as a way to give menu bar apps three places, Visible, Revealable and Hidden, set up as a draft, applied when you're ready and undoable. It was built specifically for macOS 27 on Apple silicon.",
+    "Unusually for a launch post, most of it was caveats: the app is self-signed rather than Apple-notarized, some icons without a clear owner can disappear while it is managing the bar, clicking the clock won't open Notification Center until you stop management (the trackpad gesture still works), and multiple displays haven't been tested. The developer asked for specific bug reports on GitHub."
+   ],
+   "attribution": "fish, developer, on Product Hunt",
+   "url": "https://www.producthunt.com/products/blenny?comment=5915448"
+  },
+  "audience": {
+   "fit": [
+    "run macOS 27 on an Apple silicon Mac and have too many menu bar icons",
+    "prefer free, open-source tools you can inspect",
+    "don't want to grant Screen Recording permission to a menu bar manager"
+   ],
+   "not_fit": [
+    "are on macOS 26 or earlier, or use an Intel Mac: there is no version for them",
+    "only install Apple-notarized apps: Blenny is self-signed",
+    "use several displays: multi-display setups are untested",
+    "need search, triggers or hotkeys for menu bar items (Bartender offers those)"
+   ]
+  },
+  "pricing": {
+   "intro": "Blenny is free and open source under the Apache-2.0 licence. There are no paid tiers.",
+   "url": "https://blenny.fi5h.xyz/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Open source",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Apache-2.0; download the latest release from GitHub (version 1.0.0, a 5.8 MB disk image, published 1 October 2026)"
+    }
+   ],
+   "notes": [
+    "Optional support through GitHub Sponsors or Ko-fi."
+   ]
+  },
+  "alternatives": {
+   "intro": "From Product Hunt's alternatives list. Details come from each product's own site or repository, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Bartender",
+     "url": "https://www.macbartender.com/",
+     "what": "Long-running paid menu bar manager with search, hotkeys, triggers and widgets",
+     "starts_at": "4-week free trial; see its pricing page",
+     "ph_rating": 5.0,
+     "ph_reviews": 4,
+     "difference": "Paid, closed source and far more feature-rich. Its prices load in the browser, so we could not record them."
+    },
+    {
+     "name": "Ice",
+     "url": "https://icemenubar.app/",
+     "what": "Free, open-source menu bar manager",
+     "starts_at": "Free (GPL-3.0)",
+     "ph_rating": 5.0,
+     "ph_reviews": 2,
+     "difference": "Runs on macOS 14 and later, where Blenny needs macOS 27."
+    },
+    {
+     "name": "Hidden Bar",
+     "url": "https://github.com/dwarvesf/hidden",
+     "what": "Free app that hides menu bar icons behind a toggle arrow",
+     "starts_at": "Free (MIT)",
+     "ph_rating": 5.0,
+     "ph_reviews": 2,
+     "difference": "Notarized and on the App Store, but a simple show-and-hide toggle with no per-app levels or ordering."
+    }
+   ],
+   "more": "Product Hunt also lists Bartender 4, NotchNook, Mac Menu Bar, Thaw, Later and Tuck."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/blenny/reviews",
+   "as_of": "2026-10-14"
+  },
+  "pros": [
+   "Free and open source (Apache-2.0)",
+   "Never moves the pointer or simulates clicks, and needs no Screen Recording permission",
+   "Draft, apply and undo workflow, with recovery for interrupted changes",
+   "Known limitations are documented openly in the README",
+   "Updates are signature-checked and never install unattended"
+  ],
+  "cons": [
+   "macOS 27 on Apple silicon only",
+   "Self-signed, not notarized by Apple",
+   "Clicking the clock won't open Notification Center while management is on",
+   "Some icons without a clear owner app can disappear; multiple displays untested",
+   "Undo goes back one change only"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/blenny",
+   "x": {
+    "none": "We found no posts about Blenny on X yet.",
+    "search_url": "https://x.com/search?q=Blenny%20menu%20bar&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Blenny free?",
+    "a": "Yes. It is open source under the Apache-2.0 licence, with optional sponsorship through GitHub Sponsors or Ko-fi."
+   },
+   {
+    "q": "Which Macs does Blenny support?",
+    "a": "Only Apple silicon Macs running macOS 27 or later. There is no version for macOS 26 or Intel Macs."
+   },
+   {
+    "q": "Why does macOS block it when I open it?",
+    "a": "Blenny is self-signed rather than notarized by Apple. Its README explains how to allow it in System Settings, under Privacy & Security, and each release ships a checksum file so you can verify the download."
+   },
+   {
+    "q": "What permissions does it need?",
+    "a": "Device Control, plus access to the macOS menu bar layout file, which you choose in a file picker, for ordering. It does not need Screen Recording and makes no System Integrity Protection changes."
+   },
+   {
+    "q": "What is the difference between Revealable and Hidden?",
+    "a": "Revealable apps appear when you click Blenny's icon for a reveal session; Hidden apps never appear, though they keep running."
+   },
+   {
+    "q": "How do I uninstall it?",
+    "a": "Finish or recover any change in progress, stop management, turn off Open at Login, quit, then move it to the Trash. The GitHub repository has a recovery and uninstall guide."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Blenny official site and FAQ",
+    "url": "https://blenny.fi5h.xyz/"
+   },
+   {
+    "label": "Blenny on GitHub (README)",
+    "url": "https://github.com/f-is-h/Blenny"
+   },
+   {
+    "label": "Blenny latest release",
+    "url": "https://github.com/f-is-h/Blenny/releases/latest"
+   },
+   {
+    "label": "Blenny recovery and uninstall guide",
+    "url": "https://github.com/f-is-h/Blenny/blob/main/docs/RECOVERY_AND_UNINSTALL.md"
+   },
+   {
+    "label": "Product Hunt page and launch comment",
+    "url": "https://www.producthunt.com/products/blenny"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/blenny/alternatives"
+   },
+   {
+    "label": "Bartender",
+    "url": "https://www.macbartender.com/"
+   },
+   {
+    "label": "Ice on GitHub",
+    "url": "https://github.com/jordanbaird/Ice"
+   },
+   {
+    "label": "Hidden Bar on GitHub",
+    "url": "https://github.com/dwarvesf/hidden"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/c8ca2249-b181-4abc-ada4-5ebc4e238fef.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Blenny website header: 'Blenny. Too much at the surface.' with a cartoon blenny fish peeking out of a reef",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/c8ca2249-b181-4abc-ada4-5ebc4e238fef.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Blenny website header: 'Blenny. Too much at the surface.' with a cartoon blenny fish peeking out of a reef",
+    "w": 1200,
+    "h": 630
+   }
+  ]
+ }
+}

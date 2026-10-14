@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 1756,
+  "date": "2026-10-03T17:52:08",
+  "date_gmt": "2026-10-03T12:22:08",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/flexchords/",
+   "raw": "https://100xfounder.com/startup/flexchords/"
+  },
+  "modified": "2026-10-04T20:56:15",
+  "modified_gmt": "2026-10-04T15:26:15",
+  "password": "",
+  "slug": "flexchords",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/flexchords/",
+  "title": {
+   "raw": "FlexChords",
+   "rendered": "FlexChords"
+  },
+  "content": {
+   "raw": "<p>Turn any YouTube video into accurate, playable guitar chords</p>\n",
+   "rendered": "<p>Turn any YouTube video into accurate, playable guitar chords</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "Turn any YouTube video into accurate, playable guitar chords",
+   "rendered": "<p>Turn any YouTube video into accurate, playable guitar chords</p>\n",
+   "protected": false
+  },
+  "featured_media": 1762,
+  "template": "",
+  "xf_industry": [],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "flexchords",
+  "class_list": [
+   "post-1756",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1756",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/media/1762"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=1756"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=1756"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=1756"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1756"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1756"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1756"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1756"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1756"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1756"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

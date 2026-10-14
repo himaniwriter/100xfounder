@@ -1,0 +1,416 @@
+{
+ "input": "https://www.producthunt.com/posts/zaro",
+ "final_url": "https://www.producthunt.com/products/zaro?launch=zaro",
+ "launch": {
+  "slug": "zaro",
+  "name": "Zaro",
+  "tagline": "Build agents & apps on top of your context with one prompt.",
+  "featuredAt": "2026-06-25T00:01:00-07:00",
+  "dailyRank": "3",
+  "weeklyRank": "8",
+  "points": 399,
+  "commentsCount": 96,
+  "pricingType": "free_options",
+  "description": "Zaro is where you can build working software from your scattered work. Everything you know is spread across Gmail, Slack, notes, and tabs that don't talk - Zaro pulls it into one place and lets you build apps from it in minutes: your research, your side projects, your plans, your decisions. Then they keep themselves updated, checking your connections every day so you don't have to. No code. No maintenance. No graveyard of prototypes you started and never finished.",
+  "makers": [
+   {
+    "name": "Michael Bajwa",
+    "username": "zaro_ai",
+    "headline": "Co-founder of Zaro"
+   },
+   {
+    "name": "JY",
+    "username": "jysta",
+    "headline": "Stealth"
+   },
+   {
+    "name": "William Ross",
+    "username": "william_ross4",
+    "headline": "Founding FDE"
+   },
+   {
+    "name": "Nikita Pokryshko",
+    "username": "elponi",
+    "headline": "Founding Product Engineer @ Zaro.ai"
+   },
+   {
+    "name": "Sammy Taylor",
+    "username": "sammy_taylor2",
+    "headline": "Making nice things. Making things nice."
+   },
+   {
+    "name": "timo",
+    "username": "timoite",
+    "headline": "river cleaner"
+   },
+   {
+    "name": "Stefan Ross",
+    "username": "stefan_ross",
+    "headline": "GTM Leader"
+   },
+   {
+    "name": "zheng qian",
+    "username": "zheng_qian1",
+    "headline": "I am here to look for products"
+   },
+   {
+    "name": "Ayman Elmezgueldi",
+    "username": "ayman_elmezgueldi",
+    "headline": "Exited Operator. UCL Economics."
+   },
+   {
+    "name": "Yannis Karagiannidis",
+    "username": "ykaragiannidis",
+    "headline": "Growth Λ Allergic to slow funnels"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "37091e78-ea2d-4f96-87d1-40cae53299ef.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "c9c4dea0-d701-445a-b953-1c2500e07884.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "ada261c8-2e4b-40a1-934f-0beaa36b2602.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "0daf6365-a6ca-4314-a1e9-456d727b6d45.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "820016d5-ae8d-4982-9825-545c72275f1c.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "5811f422-4035-43a4-9bea-d84ca28720c1.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=tk7WHlvaiIc"
+   }
+  ],
+  "links": [
+   "zaro.ai",
+   "twitter.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    3
+   ]
+  ]
+ },
+ "product": {
+  "name": "Zaro",
+  "slug": "zaro",
+  "tagline": "Build agents & apps on top of your context with one prompt.",
+  "description": "Zaro is where you can build working software from your scattered work. Everything you know is spread across Gmail, Slack, notes, and tabs that don't talk - Zaro pulls it into one place and lets you build apps from it in minutes: your research, your side projects, your plans, your decisions. Then they keep themselves updated, checking your connections every day so you don't have to. No code. No maintenance. No graveyard of prototypes you started and never finished.",
+  "websiteUrl": "https://zaro.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 1157,
+  "twitterUrl": "https://twitter.com/getzaroai",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/37091e78-ea2d-4f96-87d1-40cae53299ef.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/c9c4dea0-d701-445a-b953-1c2500e07884.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/ada261c8-2e4b-40a1-934f-0beaa36b2602.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/0daf6365-a6ca-4314-a1e9-456d727b6d45.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/820016d5-ae8d-4982-9825-545c72275f1c.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5479671",
+   "depth": 0,
+   "author": "Michael Bajwa",
+   "username": "zaro_ai",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt, Michael here, co-founder of Zaro. Zaro is an AI operations layer that handles the repetitive operational work your team keeps getting stuck on, so people can focus on the things that actually need a human. A bit of backstory on how we got here. I was previously part of the Convergence team through its acquisition into Salesforce in 11 months, and then left to build Zaro. What pushed me out was seeing up close that context infrastructure needed to be rebuilt from the ground up for the agentic era. The tools we have weren't designed for a world where agents do real work. Zaro is the first platform where you can build apps and agents on top of a modern context infrastructure. We built it because we kept watching teams drown in busywork nobody wanted to do. The endless context-switching, the manual handoffs between tools, the work that fills your day but never moves anything forward. Most software just adds another tab to manage. We wanted to remove work, not add it. What makes Zaro different comes down to three things. It runs on credits, so you only pay for what you use, with no bloated per-seat pricing and no paying for capacity you never touch. It plugs into the t"
+  },
+  {
+   "id": "5481469",
+   "depth": 1,
+   "author": "Yannis Karagiannidis",
+   "username": "ykaragiannidis",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Yannis here, also on the team. Adding a bit to what Michael said. The thing that got me excited about Zaro wasn't any single feature, it was watching what happened after teams started using it for a couple of weeks. The work it takes over isn't the flashy stuff, it's the quiet drag that nobody puts on a roadmap but everybody feels. The follow-up that slips, the report that takes an afternoon to pull together, the handoff between two tools that someone has to babysit. We spent a lot of time making sure it actually fits how people already work rather than asking them to change everything. That sounds obvious but it's the part most tools get wrong. If you're trying it today, the best thing you can do is point it at the most annoying recurring task on your plate and see what it does with it. That's where it clicks. Happy to answer anything about how it works under the hood, the context infrastructure side, or where we're taking it next. I'll be in the comments all day alongside Michael."
+  },
+  {
+   "id": "5482060",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zaro_ai &nbsp;congrats on the launch! Quick question from someone juggling too many tools: what’s the simplest, highest-impact Zaro automation you’d recommend a solo founder or 2‑person team set up in the first hour to feel immediate relief?"
+  },
+  {
+   "id": "5482092",
+   "depth": 2,
+   "author": "Michael Bajwa",
+   "username": "zaro_ai",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@swati_paliwal &nbsp;Hey! Thanks so much for the comment! I just had a quick look at your business (awesome btw!) - I'd build a app to manage all of your customers branding and marketing which you could share with them. You could then build an agent that is constantly monitoring the performance of engagement which would update the app for you :)"
+  },
+  {
+   "id": "5482443",
+   "depth": 1,
+   "author": "David",
+   "username": "david_marko",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zaro_ai &nbsp; Credits-based pay-for-what-you-use is the honest model, but it also means the better it gets the more it costs, the opposite of a flat seat. For a team deciding to adopt, how do you make spend predictable enough that ops can sign off? Any way to cap or forecast credit burn before a workflow runs?"
+  },
+  {
+   "id": "5484082",
+   "depth": 1,
+   "author": "Shine Quek",
+   "username": "clquek",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zaro_ai &nbsp;One prompt to build agents &amp; apps on your context is slick. How did you handle the context window limitations when users inevitably want to throw everything at it? That's the gnarly part we see most builders wrestle with."
+  },
+  {
+   "id": "5482810",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The insight here is good - most no-code tools ask you to configure context first (paste data in, define schemas, set up integrations). Zaro starts from the other end: your context already exists across Gmail and Slack, so skip the setup and just describe what you need. That's the right framing for knowledge workers. Curious how you handle context that's messy or contradictory. My research docs and my Slack threads often say different things about the same decision. Does the app inherit that ambiguity, or does Zaro surface conflicts somewhere?"
+  },
+  {
+   "id": "5482849",
+   "depth": 1,
+   "author": "Yannis Karagiannidis",
+   "username": "ykaragiannidis",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan &nbsp;You've nailed exactly the bet we're making, so thank you for that framing. On the messy and contradictory part, this is honestly one of the hardest and most interesting problems we work on. The short version: Zaro doesn't silently pick a winner and bury the conflict, because that's where automation quietly does the wrong thing with full confidence. When sources disagree, the goal is to surface the conflict rather than inherit it. A Slack thread saying one thing and a research doc saying another should show up as exactly that, a flagged disagreement with both sources visible, not a single answer that hides which one it trusted. Recency, source, and who said it all factor into how it weighs things, but the principle is that ambiguity should be made visible, not flattened. I'll be straight that this is an area we're actively improving rather than calling solved. Conflict detection is easier on factual data than on softer \"what did we decide\" judgment calls, and that second category is where we're putting a lot of the work right now. Would genuinely love to hear how you'd want it surfaced, since you clearly live this problem."
+  },
+  {
+   "id": "5482693",
+   "depth": 0,
+   "author": "S.S. Rahman",
+   "username": "syed_shayanur_rahman",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Is there a library of example use cases by role, like recruiting ops, founder workflows, or support reporting to refer to and take inspiration from?"
+  },
+  {
+   "id": "5482860",
+   "depth": 1,
+   "author": "Yannis Karagiannidis",
+   "username": "ykaragiannidis",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@syed_shayanur_rahman &nbsp; Great question, and a useful nudge. The honest answer is that a polished role-by-role library is something we're building out rather than something fully fleshed out today. The patterns you mention, recruiting ops, founder workflows, support reporting, are exactly the kinds of use cases we want front and center, because most people find it easier to start from an example than a blank page. In the meantime, the best way to find what fits your role is to point Zaro at the most repetitive task on your plate and describe what you want, it's pretty good at taking it from there. And if you tell me what you'd build for, I'm happy to point you in the right direction right now. Genuinely helpful to hear there's appetite for this, it pushes it up our list."
+  },
+  {
+   "id": "5484624",
+   "depth": 1,
+   "author": "Yannis Karagiannidis",
+   "username": "ykaragiannidis",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@syed_shayanur_rahman &nbsp;YES we have an app marketplace within the app"
+  },
+  {
+   "id": "5482609",
+   "depth": 0,
+   "author": "Anant Gupta",
+   "username": "iamanantgupta",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "How Zaro decides what context matters when building an app? Is there any manual control layer?"
+  },
+  {
+   "id": "5482854",
+   "depth": 1,
+   "author": "Yannis Karagiannidis",
+   "username": "ykaragiannidis",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@iamanantgupta &nbsp; By default, Zaro pulls the context that's relevant to what you're asking for. When you describe what you want to build, it looks across your connected sources and pulls in what relates to that task rather than dumping everything in. Relevance, recency, and source all factor into what it reaches for. On manual control, yes, that layer matters a lot to us. The goal is never a black box where you just hope it grabbed the right things. You can see what context it's drawing on and steer it, point it at specific sources, scope it to what you want included, and exclude what you don't. Automatic by default, but with you in the driver's seat when you want to be."
+  },
+  {
+   "id": "5484661",
+   "depth": 1,
+   "author": "Yannis Karagiannidis",
+   "username": "ykaragiannidis",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@iamanantgupta &nbsp;Central question, and it's how the whole thing earns trust. By default Zaro reaches for the context relevant to what you're describing, looking across your connected sources and pulling what relates to the task rather than dumping everything in, weighing relevance, recency, and source as it goes. And yes, there's a manual layer, which we think matters a lot. It's not meant to be a black box you just hope got it right. You can see what it's drawing on and steer it: point it at specific sources, scope what's included, exclude what you don't want. Automatic by default, hands on the wheel whenever you want them there."
+  },
+  {
+   "id": "5482635",
+   "depth": 0,
+   "author": "Kruti Parekh",
+   "username": "krutiparekh16",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats. How customizable are the apps after generation? Can non-technical teams tweak workflows without breaking everything?"
+  },
+  {
+   "id": "5482725",
+   "depth": 1,
+   "author": "zheng qian",
+   "username": "zheng_qian1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@krutiparekh16 &nbsp;Zaro is designed for non technical user , you build/edit/update agent/workflow/app all in natural language !"
+  },
+  {
+   "id": "5484550",
+   "depth": 1,
+   "author": "Yannis Karagiannidis",
+   "username": "ykaragiannidis",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@krutiparekh16 &nbsp;100% customizable without any code / programming knowlesge"
+  },
+  {
+   "id": "5482966",
+   "depth": 0,
+   "author": "Sree Yagna Veena",
+   "username": "yagnaveena",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "You mentioned rebuilding the context layer for the agentic era. What was the biggest limitation of existing databases/vector stores that made them unsuitable for agents doing real operational work?"
+  },
+  {
+   "id": "5483380",
+   "depth": 1,
+   "author": "Yannis Karagiannidis",
+   "username": "ykaragiannidis",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@yagnaveena &nbsp;The short version: vector stores and traditional databases were built to answer queries, not to do work. A vector store is great at \"find me the chunks that look similar to this,\" and a database is great at \"return the rows that match this.\" Both assume something outside the system already knows what it's looking for and how the pieces relate. For an agent doing real operational work, that assumption breaks. The gaps that hurt most: Retrieval isn't understanding. Pulling the top-k similar chunks gets you text that's nearby in embedding space, not the actual context of a decision, who said what, when, in response to what, and what superseded it. Agents kept getting plausible-looking but contextually wrong material. No notion of state or change over time. Operational reality moves. A decision made in a Slack thread last week overrides the doc from last month. Flat vector stores treat both as equally true and have no native sense of recency, supersession, or \"this is the current state of things.\" Relationships get flattened. The connection between an email, the task it created, and the person who owns it is exactly the context that matters, and chunk-and-embed throws"
+  },
+  {
+   "id": "5483272",
+   "depth": 0,
+   "author": "Kate Ramakaieva",
+   "username": "kate_ramakaieva",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats, team! How does Zaro compare with tools like Zapier, Make, or Taskade when the workflow gets more complex?"
+  },
+  {
+   "id": "5483362",
+   "depth": 1,
+   "author": "Yannis Karagiannidis",
+   "username": "ykaragiannidis",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@kate_ramakaieva &nbsp;Zaro starts from a different place. Instead of you mapping every branch, it works from the actual context and figures out the path, so complexity is something it absorbs rather than something you hand-configure. Less \"build the flowchart,\" more \"describe the outcome.\" Those connector tools are great for deterministic plumbing, we're aiming at the messier work that doesn't fit a clean diagram. Happy to go deeper on a specific workflow if you've got one in mind."
+  }
+ ]
+}

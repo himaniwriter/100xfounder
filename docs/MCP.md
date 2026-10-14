@@ -1,6 +1,6 @@
 # 100xFounder MCP server
 
-The plugin turns the site into an MCP server at `https://100xfounder.com/wp-json/xf/v1/mcp`, so Claude (Claude Code or Claude Desktop) can work with the site directly, on your Claude plan, with no API credits.
+The site is an MCP server at `https://100xfounder.com/wp-json/xf-claude/v1/mcp` (through the Claude Connector plugin), so Claude (Claude Code or Claude Desktop) can work with the site directly, on your Claude plan, with no API credits.
 
 ## What Claude can do through it
 
@@ -19,17 +19,24 @@ The plugin turns the site into an MCP server at `https://100xfounder.com/wp-json
 
 Nothing can be published without you, unless you turn that setting on.
 
-## Connect it (once)
+## Connect it (once) — the private Claude connector
 
-1. **Create the Claude user.** In WordPress: **Users → Add New**, username `claude`, role **Author** (or **Editor** if you want the publish tool to work). Untick "Send the new user an email".
-2. **Create an application password.** Open that user's profile → **Application Passwords** → name it `Claude MCP` → **Add New Application Password**. Copy the password it shows (it's shown once). You can revoke it there any time.
-3. **Store it on your computer, not in the repo.** In a terminal:
-   ```bash
-   export XF_MCP_AUTH=$(printf 'claude:%s' 'PASTE-THE-APP-PASSWORD' | base64)
-   ```
-   Put that line in your `~/.zshrc` or `~/.bashrc` so it survives restarts.
-4. **Claude Code:** the repo's `.mcp.json` already points at the server and reads `XF_MCP_AUTH`. Open Claude Code in this folder and approve the `100xfounder` server when asked (`/mcp` shows its status).
-   **Claude Desktop:** Settings → Connectors → Add custom connector is OAuth-only, so use Claude Code, or add it to `claude_desktop_config.json` through `npx mcp-remote https://100xfounder.com/wp-json/xf/v1/mcp --header "Authorization: Basic <the base64 value>"`.
+The site's MCP runs through a separate plugin, **100xFounder Claude Connector** (`wordpress/xf-claude-connector/`, release zip `wordpress/dist/xf-claude-connector.zip`). It gives one Claude account its own door into the site and closes every other way in.
+
+1. **Install:** WordPress → Plugins → Add New → Upload → `xf-claude-connector.zip` → Activate. (The old `/xf/v1/mcp` endpoint switches off automatically.)
+2. **Create the Claude user:** Users → Add New, username `claude`, role **Author** (Editor only if you want Claude to publish). No password needed; it never logs in.
+3. **Set it up:** Settings → **Claude connector**:
+   - *Acts as WordPress user* → `claude`, then **Save**.
+   - Tick the tool groups you want (Read, Write drafts, Add images are on; Publish and Run routines are off by default).
+   - **Create token** (90 days by default). Copy it: it's shown once.
+4. **Give it to Claude, not to the repo or chat:** add `XF_MCP_TOKEN` = the token to the Claude Code cloud environment (environment menu → Edit → environment variables), or `export XF_MCP_TOKEN=…` on your computer. The repo's `.mcp.json` sends it as `Authorization: Bearer ${XF_MCP_TOKEN}`. Start a new session and check `/mcp`.
+
+### What keeps it locked down
+- One 256-bit token, stored only as an HMAC (a database leak doesn't reveal it), expiring, revocable, rotatable (the old token dies instantly).
+- The token logs nobody into WordPress: it works only on `/wp-json/xf-claude/v1/mcp`, as the one user you chose, for one request at a time. WordPress passwords, cookies and application passwords don't work on it.
+- Only the tool groups you tick, and the `claude` user's role still applies.
+- HTTPS only; cross-site browser requests refused; 1 MB request cap; 120 calls/minute; 10 bad tokens lock that address out for an hour.
+- Kill switch, optional IP allowlist, and an activity log of every call (Settings → Claude connector).
 
 ## Notes
 

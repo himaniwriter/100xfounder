@@ -18,7 +18,7 @@ if (!$guides) {
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px">
             <?php foreach ($guides as $g) : $c = function_exists('xf_guide_company') ? xf_guide_company($g->ID) : null; ?>
                 <a class="card" style="min-height:180px" href="<?php echo esc_url(get_permalink($g)); ?>">
-                    <span class="av"><?php echo esc_html(xft_initials($c ? $c->name : get_the_title($g))); ?></span>
+                    <?php echo xft_company_mark($c ?: get_the_title($g)); // phpcs:ignore ?>
                     <span class="card-title"><?php echo esc_html(get_the_title($g)); ?></span>
                     <span style="color:var(--t2);font-size:14px"><?php echo esc_html(implode(' · ', array_filter([get_post_meta($g->ID, '_xf_rounds', true), $c ? $c->count . ' open roles' : '']))); ?></span>
                 </a>

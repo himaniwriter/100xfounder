@@ -28,12 +28,14 @@ if (post_type_exists('xf_startup')) {
 }
 $raised = function_exists('xf_rounds_total_usd') ? xf_rounds_total_usd(7) : 0;
 $events = function_exists('xf_upcoming_events') ? xf_upcoming_events(4) : [];
+// The headline count is every upcoming event, not the four we list below it.
+$event_total = function_exists('xf_upcoming_events') ? count(xf_upcoming_events(200)) : count($events);
 $open_roles = post_type_exists('xf_job') ? (int) wp_count_posts('xf_job')->publish : 0;
 $pillars = [
     ['Launched.', $launch_count ? sprintf(_n('%d launch in today’s list', '%d launches in today’s list', $launch_count), $launch_count) : 'The best Product Hunt launches, daily', $launch_url],
     ['Raised.', $raised ? xf_format_usd_short($raised) . ' on the funding tracker this week' : 'Funding rounds, tracked daily', $funding_url],
     ['Hiring.', $open_roles ? sprintf('%s open roles from official careers pages', number_format_i18n($open_roles)) : 'Fresh roles at funded startups', xft_page_exists('jobs') ? home_url('/jobs/') : add_query_arg('type', 'job', $submit_url)],
-    ['Happening.', $events ? sprintf(_n('%d event on the calendar', '%d events on the calendar', count($events)), count($events)) : 'Startup events worth your time', $events_url],
+    ['Happening.', $event_total ? sprintf(_n('%d event on the calendar', '%d events on the calendar', $event_total), $event_total) : 'Startup events worth your time', $events_url],
     ['Worth reading.', 'Long reads and founder stories', $blog_url],
 ];
 ?>
@@ -47,6 +49,10 @@ $pillars = [
     </div>
 </section>
 <div class="hl"></div>
+<?php
+// Happening soon: the organisers' own graphics, each linking to its event page.
+echo xft_photo_strip(xft_event_strip_items(), 'Upcoming startup events', 'events'); // phpcs:ignore
+?>
 
 <?php if ($lead) : ?>
 <section class="wrap" style="padding-top:36px;display:flex;flex-wrap:wrap;gap:36px 40px;align-items:flex-start">
@@ -198,6 +204,9 @@ foreach ($candidates as $slug) {
     }
 }
 if ($blocks) : ?>
+<section class="wrap" style="padding-top:88px"><div class="sh"><h2>In pictures</h2><a class="k u" href="<?php echo esc_url($news_url); ?>">All stories →</a></div></section>
+<?php echo xft_photo_strip(xft_story_strip_items(), 'Recent stories in pictures', 'stories'); // phpcs:ignore ?>
+
 <section class="wrap" style="padding-top:88px"><div class="sh"><h2>Every section</h2><a class="k u" href="<?php echo esc_url($news_url); ?>">All news →</a></div></section>
 <section class="wrap" style="padding-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:40px 32px">
     <?php foreach ($blocks as [$term, $posts]) : $first = array_shift($posts); ?>
@@ -232,6 +241,7 @@ if ($events || $hiring) : ?>
         <?php foreach ($hiring as $j) :
             $sal = function_exists('xf_job_salary_label') ? xf_job_salary_label($j->ID) : ''; ?>
             <a href="<?php echo esc_url(get_permalink($j)); ?>" class="row" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--ln)">
+                <?php echo xft_company_mark((int) $j->ID, 40); // phpcs:ignore ?>
                 <span style="flex:2 1 220px;min-width:0"><span style="display:block;font-size:16px;font-weight:600;letter-spacing:-.015em"><span class="u"><?php echo esc_html(get_the_title($j)); ?></span></span><span style="display:block;font-size:13px;color:var(--t2);margin-top:2px"><?php echo esc_html(implode(' · ', array_filter([get_post_meta($j->ID, '_xf_company_name', true), get_post_meta($j->ID, '_xf_location', true) ?: get_post_meta($j->ID, '_xf_city', true)]))); ?></span></span>
                 <?php if ($sal) : ?><span class="mono" style="font-size:13px"><?php echo esc_html($sal); ?></span><?php endif; ?>
                 <span class="mono" style="font-size:11px;color:var(--t3);width:24px;text-align:right"><?php echo esc_html(xft_age($j)); ?></span>
@@ -254,6 +264,21 @@ if ($blog_posts) : ?>
     <div class="grid-cards" style="padding-top:24px">
         <?php foreach ($blog_posts as $p) : ?>
             <a href="<?php echo esc_url(get_permalink($p)); ?>" class="rv" style="display:block"><?php echo xft_image($p, '3x2'); // phpcs:ignore ?><span class="tag" style="display:block;margin-top:14px"><?php echo esc_html(xft_cat_name($p)); ?></span><span class="card-title"><span class="u"><?php echo esc_html(get_the_title($p)); ?></span></span><span class="k" style="display:block;margin-top:8px;font-size:10.5px"><?php echo esc_html(xft_author_name($p) . ' · ' . str_replace(' read', '', xft_read_time($p))); ?></span></a>
+        <?php endforeach; ?>
+    </div>
+</section>
+<?php endif; ?>
+
+<?php
+// Latest guides & explainers: the newest posts no other block on this page links to, so no article is left without a home-page link.
+$shown = array_merge($exclude, wp_list_pluck($latest, 'ID'), wp_list_pluck($secondary, 'ID'), wp_list_pluck((array) $popular, 'ID'), $used, wp_list_pluck($blog_posts, 'ID'));
+$guides = xft_query_posts(['posts_per_page' => 8, 'post__not_in' => array_values(array_unique(array_map('intval', $shown)))]);
+if ($guides) : ?>
+<section class="wrap" style="padding-top:88px">
+    <div class="sh"><h2>Latest guides &amp; explainers</h2><a class="k u" href="<?php echo esc_url($blog_url); ?>">Every article →</a></div>
+    <div class="grid-cards" style="padding-top:24px">
+        <?php foreach ($guides as $p) : ?>
+            <a href="<?php echo esc_url(get_permalink($p)); ?>" class="rv" style="display:block"><?php echo xft_image($p, '3x2'); // phpcs:ignore ?><span class="tag" style="display:block;margin-top:14px"><?php echo esc_html(xft_cat_name($p)); ?></span><span class="card-title"><span class="u"><?php echo esc_html(get_the_title($p)); ?></span></span><span class="k" style="display:block;margin-top:8px;font-size:10.5px"><?php echo esc_html(str_replace(' read', '', xft_read_time($p))); ?></span></a>
         <?php endforeach; ?>
     </div>
 </section>

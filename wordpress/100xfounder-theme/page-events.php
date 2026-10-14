@@ -31,6 +31,12 @@ $base = get_permalink();
     <div class="k in">Calendar · <?php echo esc_html(wp_date('F Y')); ?></div>
     <h1 class="page-title in" style="animation-delay:.06s"><?php echo $city ? esc_html('Startup events in ' . $city) : 'Startup events in India'; ?></h1>
     <p class="muted" style="max-width:760px;font-size:17px;line-height:1.6;margin:16px 0 0">Demo days, meetups and conferences across Delhi NCR, Mumbai, Bengaluru and the other big startup cities. Every event links to the organiser's own page to register, and we list the communities behind them so you can keep showing up after the event ends.</p>
+    <p class="k in" style="margin:18px 0 0;display:flex;gap:16px;flex-wrap:wrap;animation-delay:.1s">
+        <span>Follow the calendar:</span>
+        <a class="u" href="<?php echo esc_url(str_replace(['https://', 'http://'], 'webcal://', home_url('/events.ics'))); ?>">Add to your calendar</a>
+        <a class="u" href="<?php echo esc_url(function_exists('xf_event_feed_url') ? xf_event_feed_url() : home_url('/feed/')); ?>">RSS</a>
+        <a class="u" href="<?php echo esc_url(home_url('/events.json')); ?>">JSON</a>
+    </p>
 </section>
 
 <section class="wrap" style="padding-top:28px">

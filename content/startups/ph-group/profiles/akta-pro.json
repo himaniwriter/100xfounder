@@ -1,0 +1,105 @@
+{
+  "slug": "akta-pro",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/akta-pro",
+  "excerpt": "akta.pro, from Wokelo AI, is a pay-as-you-go API, MCP server and CLI for private company data and news signals, built for AI agents in finance and go-to-market teams. Pricing, alternatives and launch comments.",
+  "content": "<p>akta.pro is a data API for private companies, built to be used by AI agents. It has two sides. The company data covers more than 20 million companies with over 70 fields: firmographics, leadership, products, locations, funding rounds, investors, revenue and valuation estimates, and qualitative fields such as market position, strengths and risks. The signals side is a news feed that tags articles with event types, sentiment and impact scores, industries and company mentions, so an agent can watch for funding rounds, leadership changes or deals across a list of companies. Further APIs cover headcount trends, website traffic, job posts, social posts and employee and product reviews. It is available as a REST API, an MCP server for tools such as Claude, ChatGPT and Cursor, and a command-line tool.</p><p>The makers pitch it to financial services and go-to-market teams for sourcing and diligence on deals or building outreach lists, and claim twice PitchBook's coverage; we have not checked that comparison. It is priced by consumption rather than per seat. akta.pro is built by the team behind Wokelo AI; co-founder Siddhant Masson said on Product Hunt that matching news to the right company took about 18 months to get right and is patent pending. It launched on Product Hunt on 25 August 2026 and finished #1 for the day with 415 points and 65 comments.</p><p><em>We have not tested akta.pro ourselves. Its main website blocked our automated check, so this page uses its documentation site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Company data API",
+    "platform": "API, MCP server and CLI",
+    "starts_at": "Pay as you go, $0.05 per credit",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Pay-as-you-go private company data and news signals API for AI agents",
+    "maker": {"name": "Siddhant Masson", "url": "https://www.producthunt.com/@siddhant_masson"},
+    "team": [
+      {"name": "Siddhant Masson", "role": "Co-founder (Product Hunt)", "url": "https://www.producthunt.com/@siddhant_masson"},
+      {"name": "Saswat Nanda", "role": "Co-founder at Wokelo, building akta.pro (Product Hunt profile)", "url": "https://www.producthunt.com/@saswat_nanda2"},
+      {"name": "Shiv Akhil Vasandani", "role": "Head of Growth (Product Hunt profile)", "url": "https://www.producthunt.com/@shiv_vasandani"}
+    ],
+    "ph": {"rank": 1, "votes": 415, "comments": 65, "followers": 740, "launched": "2026-08-25", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/37968db6-2d1b-4496-b860-f96d27b11af9.png?auto=format&fit=max&w=1400", "w": 3810, "h": 2280,
+       "alt": "akta.pro by Wokelo AI banner: 'Private company data and signals as one API', built for agents, pay as you go, available as API, MCP and CLI", "credit": "Image: akta.pro via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/d8b1485a-5fbf-47f0-91d0-e9a5c1e8e47c.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "akta.pro comparison table of legacy databases versus akta.pro on price, API and MCP access, and AI usage rights", "credit": "Image: akta.pro via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/fd2e6e2a-c9d0-4a7b-989b-280629d0308c.png?auto=format&fit=max&w=1400", "w": 3810, "h": 2280,
+       "alt": "akta.pro graphic '70+ data points on 20M+ companies' listing fundamental, quantitative and qualitative fields", "credit": "Image: akta.pro via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "build AI agents for private-market research, deal sourcing or diligence",
+        "run go-to-market or outbound and want to trigger outreach from company events",
+        "want company data without a per-seat annual contract: you top up and pay per call"
+      ],
+      "not_fit": [
+        "need full funding and M&A detail on pay-as-you-go: those sections are limited to Subscription and complete only on Enterprise",
+        "want a point-and-click research database rather than an API or MCP tool",
+        "need exact figures for small private companies: the makers say fields without enough supporting data are left empty"
+      ]
+    },
+    "pricing": {
+      "intro": "akta.pro is priced in credits, with each API call or data section costing a set number of credits. Prices are in US dollars, from its documentation.",
+      "url": "https://docs.akta.pro/getting-started/pricing",
+      "plans": [
+        {"name": "Pay as you go", "price": "$0.05 per credit", "amount": 0.05, "currency": "USD", "detail": "Top up a balance, no monthly commitment or seats; API, MCP and CLI included"},
+        {"name": "Subscription", "price": "$0.04 per credit", "amount": 0.04, "currency": "USD", "detail": "Adds limited access to Funding Detail and M&A sections"},
+        {"name": "Enterprise", "price": "Custom", "detail": "Complete funding and M&A data, custom schemas, bulk export, higher rate limits"}
+      ],
+      "notes": [
+        "Examples of credit use: a News Signals call costs 0.1 credits plus 0.01 per article; a company's firmographics section costs 2 credits.",
+        "A launch graphic says calls start as low as $0.10.",
+        "Company Addition requests for firms not yet in the database are free."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Reverse Contact", "url": "https://www.reversecontact.com/", "what": "People and company data API with enrichment, search, MCP and CLI", "starts_at": "Free to start; see its pricing page",
+         "ph_rating": 4.86, "ph_reviews": 74,
+         "difference": "Centred on people and contact data for sales and recruiting. akta.pro focuses on private-company depth and news signals."},
+        {"name": "Apollo.io", "url": "https://www.apollo.io/", "what": "Go-to-market platform with contact and company data and outreach tools", "starts_at": "See its pricing page",
+         "ph_rating": 4.19, "ph_reviews": 42,
+         "difference": "A full sales platform with a user interface and seats. akta.pro is an API priced per call."},
+        {"name": "Anysite.io", "url": "https://anysite.io/", "what": "Builds and enriches B2B lists from live web data through MCP or API", "starts_at": "7-day free trial; see its pricing page",
+         "ph_rating": 5, "ph_reviews": 6,
+         "difference": "Pulls live web data across many sources for lead lists. akta.pro keeps a structured company database with funding and investor fields."}
+      ],
+      "more": "Product Hunt also lists Clearbit and Hunter as alternatives."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/akta-pro/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/akta-pro",
+      "quotes": [
+        {"author": "Yahya Rogers", "text": "How often are company profiles updated? Private company data can change pretty quickly.",
+         "reply": "Saswat Nanda: refresh varies by field; funding rounds, deals and leadership changes are picked up in real time as news breaks."},
+        {"author": "Priya K", "text": "where do you pull the headcount trend data from?",
+         "reply": "Saswat Nanda: from LinkedIn and a few aggregated data sources."},
+        {"author": "Nuseir Yassin", "text": "How do you handle companies with very limited public information?",
+         "reply": "Siddhant Masson: alternative data such as social media, blogs and podcasts; fields without enough support are left empty."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=akta.pro&f=live"}
+    },
+    "faq": [
+      {"q": "What is akta.pro?", "a": "A private company data and news signals API built for AI agents, available as an API, MCP server and CLI. It is built by the team behind Wokelo AI and launched on Product Hunt on 25 August 2026."},
+      {"q": "How much data does it cover?", "a": "The makers say more than 20 million companies with over 70 fields each, plus 100+ event signal types in its news data."},
+      {"q": "How much does akta.pro cost?", "a": "Credits cost $0.05 each on pay-as-you-go and $0.04 on a subscription, with Enterprise priced on request. Each call or data section uses a set number of credits."},
+      {"q": "Can I use it inside Claude or Cursor?", "a": "Yes. Its docs describe an MCP server at mcp.akta.pro that works with Claude, ChatGPT, Cursor, VS Code and Claude Code. The makers say MCP and CLI access are included on pay-as-you-go."},
+      {"q": "Where does the headcount data come from?", "a": "A co-founder said on Product Hunt it comes from LinkedIn and a few aggregated data sources."},
+      {"q": "What if a company is missing?", "a": "Its docs include a free Company Addition endpoint to request that a company be added."}
+    ],
+    "sources": [
+      {"label": "akta.pro documentation", "url": "https://docs.akta.pro/home"},
+      {"label": "akta.pro API credits and pricing", "url": "https://docs.akta.pro/getting-started/pricing"},
+      {"label": "akta.pro documentation index", "url": "https://docs.akta.pro/llms.txt"},
+      {"label": "akta.pro official site", "url": "https://akta.pro/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/akta-pro"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/akta-pro"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/akta-pro/alternatives"},
+      {"label": "Reverse Contact", "url": "https://www.reversecontact.com/"},
+      {"label": "Apollo.io", "url": "https://www.apollo.io/"},
+      {"label": "Anysite.io", "url": "https://anysite.io/"}
+    ]
+  }
+}

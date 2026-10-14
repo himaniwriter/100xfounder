@@ -1,0 +1,103 @@
+{
+  "slug": "drizz-2",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/drizz-2",
+  "excerpt": "Drizz turns a plain-English description of a mobile app flow into a test, runs it on real iPhones and Android devices with Vision AI, and updates it when the UI changes. Pricing, alternatives and launch comments.",
+  "content": "<p>Drizz is a mobile app testing tool built around what it calls intent-based testing. You write what you want to check in one plain-English sentence, such as searching for stays in Spain for one adult on certain dates, and Drizz's AI agent works out the steps, runs them on a real iPhone or Android device, emulator or simulator, and saves a reusable test you can edit. Because it reads the screen with Vision AI instead of relying on element selectors, it says tests keep working when a designer moves a button, and when the UI does change it proposes a fix for you to approve. It plugs into CI/CD, records each run with the agent's actions and reasoning, and produces root-cause reports on failures. Tests are written in a Mac desktop app and can run locally or on Drizz Cloud.</p><p>Drizz is made by Drizz Automation Technologies Private Limited, an Indian company, according to its privacy policy, founded by Asad Abrar, Yash Varyani (CTO) and Partha Sarathi Mohanty. Its site says it has raised $2.7 million in seed funding. It launched on Product Hunt on 19 May 2026 and finished #2 for the day with 345 points and 64 comments.</p><p><em>We have not tested Drizz ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Mobile app testing",
+    "platform": "Mac desktop app and Drizz Cloud",
+    "os": "Authoring on macOS; tests run on iOS and Android devices, emulators and simulators",
+    "starts_at": "Free trial (300 tokens), then $49/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "AI mobile testing: describe a flow in plain English and it writes, runs and fixes the test",
+    "maker": {"name": "Yash Varyani", "url": "https://www.producthunt.com/@yash_varyani"},
+    "team": [
+      {"name": "Yash Varyani", "role": "Co-founder and CTO", "url": "https://www.producthunt.com/@yash_varyani"},
+      {"name": "Partha Sarathi Mohanty", "role": "Co-founder", "url": "https://www.producthunt.com/@partha_sarathi_mohanty"},
+      {"name": "Asad Abrar", "role": "Co-founder", "url": "https://www.producthunt.com/@asad_abrar1"}
+    ],
+    "ph": {"rank": 2, "votes": 345, "comments": 64, "followers": 1344, "launched": "2026-05-19", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/69d7223c-e1f9-48b9-a65b-9ec46dc4dad1.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1904,
+       "alt": "Drizz graphic 'Write the intent. Skip everything else.' turning one sentence about searching for stays into a five-step test case", "credit": "Image: Drizz via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/5eda46e8-f4e2-4486-aeec-3655792e6a6f.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1904,
+       "alt": "Drizz 'How it works' graphic: write your intent, Drizz generates the test, Drizz runs and saves it as a reusable test case", "credit": "Image: Drizz via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/77e2ef12-12cf-41fe-aa14-3a00e1b8c2f8.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1904,
+       "alt": "Drizz graphic on the problem with mobile testing today: hours to write each test and flaky selector-based tests", "credit": "Image: Drizz via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "ship iOS or Android apps often and spend too long fixing selector-based Appium tests",
+        "have testers or support staff who can describe flows but don't write test code",
+        "want tests run on real devices and in CI on every build"
+      ],
+      "not_fit": [
+        "author tests on Windows or Linux: the desktop app is for Mac",
+        "need many parallel runs on a small budget: the free trial has no parallel execution and Solo has one",
+        "test web apps only: Drizz is built for mobile apps"
+      ]
+    },
+    "pricing": {
+      "intro": "Drizz charges only for test runs; writing and editing tests is free on every plan. One Drizz Token covers one executed step. Prices are in US dollars.",
+      "url": "https://www.drizz.dev/pricing",
+      "plans": [
+        {"name": "Trial", "price": "Free", "amount": 0, "currency": "USD", "detail": "300 tokens (about 30 runs of a ten-step test), 1 app, 1 seat, unlimited test generation, RCA reports, MCP access; no parallel runs"},
+        {"name": "Solo", "price": "$49/month", "amount": 49, "currency": "USD", "detail": "5,000 tokens a month (about 500 runs), 1 parallel execution, 2 apps, forward-deployed engineer support"},
+        {"name": "Team", "price": "Custom", "detail": "Custom tokens, parallel runs, apps and seats"}
+      ],
+      "notes": [
+        "Test generation, editing, change intelligence, RCA reports and MCP access are never metered."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "QApilot", "url": "https://qapilot.io/", "what": "AI Android test automation you drive from Claude, Cursor or other MCP clients", "starts_at": "See its pricing page",
+         "ph_rating": 4.91, "ph_reviews": 11,
+         "difference": "Android and Appium based. Drizz covers iOS and Android and avoids selectors with Vision AI."},
+        {"name": "TestMu AI", "url": "https://www.testmuai.com/", "what": "Agentic testing platform for web, mobile, voice and chat, with a real device cloud", "starts_at": "See its pricing page",
+         "ph_rating": 4.75, "ph_reviews": 12,
+         "difference": "A broad enterprise testing platform. Drizz focuses on mobile apps."},
+        {"name": "GPT Driver", "url": "https://www.mobileboost.io/", "what": "AI test automation for mobile app QA from MobileBoost", "starts_at": "See its pricing page",
+         "ph_rating": 4.67, "ph_reviews": 3,
+         "difference": "Also AI-driven mobile testing; compare device support and pricing directly."}
+      ],
+      "more": "Product Hunt also lists QA.tech and DogQ as alternatives."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/drizz-2/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/drizz-2",
+      "quotes": [
+        {"author": "Koishore Roy", "text": "Can we test mobile apps on a phone/ mobile OS as well?",
+         "reply": "Partha Sarathi Mohanty: yes, you can connect a physical iOS or Android device and run tests on it, with no SDK in your app."},
+        {"author": "Aniruddh Dubge", "text": "Every test execution needs to be traceable back to who ran it, when, what version of the app",
+         "reply": "Yash Varyani: Drizz records the agent's actions and reasoning along with infrastructure and app details."},
+        {"author": "Rohan", "text": "Worked surprisingly well on our app — the onboarding tutorial inside the product could use a polish"}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=drizz.dev&f=live"}
+    },
+    "faq": [
+      {"q": "What is Drizz?", "a": "An AI mobile testing tool: you describe a flow in plain English and it writes, runs and maintains the test on real iOS and Android devices. It launched on Product Hunt on 19 May 2026."},
+      {"q": "How much does Drizz cost?", "a": "A free trial includes 300 tokens, about 30 test runs. Solo is $49 a month for 5,000 tokens; Team is custom. Writing tests is never charged."},
+      {"q": "What is a Drizz Token?", "a": "One executed test step. A ten-step test run once uses ten tokens."},
+      {"q": "Does it work on real devices?", "a": "Yes. The makers say you can connect a physical iPhone or Android phone, or use emulators and simulators, with no SDK added to your app."},
+      {"q": "What happens when the app's UI changes?", "a": "Drizz detects the change and proposes a fix, which you approve. Its site says every step is shown and every change is yours to approve."},
+      {"q": "Who makes Drizz?", "a": "Drizz Automation Technologies Private Limited, founded by Asad Abrar, Yash Varyani and Partha Sarathi Mohanty. Its site says it raised $2.7 million in seed funding."}
+    ],
+    "sources": [
+      {"label": "Drizz official site", "url": "https://www.drizz.dev/"},
+      {"label": "Drizz pricing", "url": "https://www.drizz.dev/pricing"},
+      {"label": "About Drizz", "url": "https://www.drizz.dev/about-us"},
+      {"label": "Drizz privacy policy", "url": "https://www.drizz.dev/privacy-policy"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/drizz-2"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/drizz-2"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/drizz-2/alternatives"},
+      {"label": "QApilot", "url": "https://qapilot.io/mcp/guide"},
+      {"label": "TestMu AI", "url": "https://www.testmuai.com/"},
+      {"label": "GPT Driver", "url": "https://www.mobileboost.io/hello"}
+    ]
+  }
+}

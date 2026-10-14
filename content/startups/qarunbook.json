@@ -1,0 +1,287 @@
+{
+ "slug": "qarunbook",
+ "excerpt": "qarunbook is a test-plan tool for web, Android and iOS apps that your team and your AI assistant can work through over MCP; a fixed bug waits for a retest. Plans, alternatives and launch Q&A.",
+ "content": "<p>qarunbook (short for \"QA runbook\") is a tool for the testing people do by hand on a real build before a release. You write a test plan where every check has steps and an expected result, or have an AI assistant draft it from your app's code. Then you, your team or your AI assistant work through it, recording a pass or fail for each platform: web, Android and iOS.</p><p>Issues stay attached to the check that found them. When an issue is marked fixed, the check shows \"retest\" rather than \"passed\" until someone checks the new build again. Claude Code, Cursor, Codex or any other MCP client can read what failed, record results and follow up on fixes, acting under your name and role. It connects to GitHub, GitLab, Linear, Jira, Slack, Teams, Sentry, PostHog and Zapier, and has a REST API on every plan. It does not run automated tests.</p><p>qarunbook is built by Ifeanyi Ejindu; the site says it is made by Skill Seeds. It launched on Product Hunt on 4 October 2026 and finished #36 for the day with 62 upvotes. Paid plans are a flat price per workspace rather than per seat.</p><p><em>We have not tested qarunbook ourselves. This page brings together its official site, pricing page and terms, its Product Hunt page and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Testing and QA",
+  "platform": "Web app with MCP server",
+  "os": "Browser; AI access through MCP (Claude Code, Cursor, Codex and others)",
+  "starts_at": "Free plan; paid from $29/month per workspace",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Test-plan tool for web and mobile apps that teams and AI assistants work through, with retests for fixes",
+  "maker": {
+   "name": "Ifeanyi Ejindu",
+   "url": "https://www.producthunt.com/@ifeanyi_ejindu"
+  },
+  "team": [
+   {
+    "name": "Ifeanyi Ejindu",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@ifeanyi_ejindu"
+   }
+  ],
+  "ph": {
+   "rank": 36,
+   "votes": 62,
+   "comments": 7,
+   "followers": 33,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Running a pre-release test pass across web, Android and iOS",
+   "Making sure a bug marked fixed is actually re-checked on the new build",
+   "Letting an AI assistant draft the test plan from your code and record results over MCP",
+   "Assigning checks or whole platforms to specific testers",
+   "Tracking bugs after launch, with or without a check behind each one"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Ifeanyi Ejindu says he has shipped a lot of apps, and every time, testing before a release turned into a job of its own: working out what to check, explaining how to check it and chasing bugs. The one that hurt most was a bug marked \"fixed\" that nobody looked at again on the new build.",
+    "qarunbook keeps that work in one place, he explained: a plan that says how to test, results per platform, issues that stay on the check that found them, and a \"retest\" state for fixes. He was clear that it doesn't run automated tests; it is for the testing that people and their AI assistants do on a real build. He asked teams that already have a test plan to import it and tell him where it didn't fit."
+   ],
+   "attribution": "Ifeanyi Ejindu, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/qarunbook?comment=5915743"
+  },
+  "audience": {
+   "fit": [
+    "ship web or mobile apps and test them by hand before each release",
+    "use Claude Code, Cursor or Codex and want your assistant to work through the same test plan",
+    "have a team and dislike per-seat pricing: paid plans are flat per workspace"
+   ],
+   "not_fit": [
+    "want automated end-to-end tests run for you (qarunbook doesn't run them; tools like QA.tech or TestSprite do)",
+    "need more than one app or more than one person for free: the Free plan is 1 app, just you",
+    "need on-premises hosting"
+   ]
+  },
+  "pricing": {
+   "intro": "qarunbook charges a flat price per workspace, never per seat, in US dollars before tax. Paying yearly gives two months free.",
+   "url": "https://qarunbook.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "1 app, just you; 150 checks tested and 30 issues a month; 1 AI import a month; 2 GB storage; every integration, MCP, both AI skills and the API. No card"
+    },
+    {
+     "name": "Team",
+     "price": "$29/month ($290/year)",
+     "amount": 29,
+     "currency": "USD",
+     "detail": "Unlimited testing, 15 apps, up to 15 members, 2 AI imports and 1 checklist from code a month, 50 GB storage, roles and join links"
+    },
+    {
+     "name": "Business",
+     "price": "$79/month ($790/year)",
+     "amount": 79,
+     "currency": "USD",
+     "detail": "Unlimited testing and apps, up to 50 members, unlimited AI imports, 3 checklists from code a month, 250 GB storage"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "currency": "USD",
+     "detail": "Unlimited apps, members, AI imports and storage; invoiced billing"
+    }
+   ],
+   "notes": [
+    "A checklist drafted from your code costs $10 each on qarunbook's AI beyond the plan allowance, and is free when you run it on your own AI.",
+    "A check counts once a month, the first time it gets a pass or fail; retests never count. Going over a limit deletes nothing, it just blocks adding more.",
+    "Cancelling takes effect at the end of the paid period; partial periods aren't refunded except where the law requires it (terms).",
+    "At launch the maker described the free plan as 2 apps and 5 people; the pricing page now says 1 app, just you, and we use the pricing page."
+   ]
+  },
+  "alternatives": {
+   "intro": "Testiny is on Product Hunt's alternatives list; Qase and TestRail are established test-management tools we added. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Testiny",
+     "url": "https://www.testiny.io/",
+     "what": "Test-case management: cases, plans and runs",
+     "starts_at": "Free for up to 3 users; paid from $18.50/user/month (see its pricing page for the billing cycle)",
+     "ph_rating": 5.0,
+     "ph_reviews": 3,
+     "difference": "Priced per seat, with a larger free team allowance. qarunbook is a flat price per workspace and built around retests and AI assistants."
+    },
+    {
+     "name": "Qase",
+     "url": "https://qase.io/",
+     "what": "Test management for manual and automated runs, with AI test generation and an MCP server",
+     "starts_at": "Free plan; Teams $35/user/month billed yearly ($42 monthly)",
+     "difference": "Per-seat pricing and integration with automated test results from CI."
+    },
+    {
+     "name": "TestRail",
+     "url": "https://www.testrail.com/",
+     "what": "Long-established test case and run management for larger QA teams",
+     "starts_at": "Essentials $22/user/month billed yearly",
+     "difference": "Enterprise features such as SSO, audit logs and an on-premises option, priced per seat, with a free trial rather than a free plan."
+    }
+   ],
+   "more": "Product Hunt also lists QApilot, TestMu AI, Testpine, QA.tech, TestSprite, DogQ and QA Sphere, most of which focus on automated or AI-run testing."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/qarunbook/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [],
+    "asked": [
+     "Assigning specific tests to team members (yes, per check or for a whole section or platform)",
+     "Notes or evidence for each result (a pass note can now be added next to an issue)",
+     "Where the name comes from (\"QA runbook\" written as one word)"
+    ],
+    "criticised": [
+     "Tools that mark work as done too early, which the maker says the retest state is built to prevent"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Is there a way to assign specific tests to different team members?",
+     "author": "Khaild Naseem",
+     "url": "https://www.producthunt.com/products/qarunbook?comment=5918718"
+    },
+    {
+     "text": "Many tools mark things as done too early. Does qarunbook support notes or evidence for each test result?",
+     "author": "Mikkel Larsen",
+     "url": "https://www.producthunt.com/products/qarunbook?comment=5918964"
+    }
+   ]
+  },
+  "pros": [
+   "Flat per-workspace pricing, never per seat",
+   "A fixed issue isn't counted as passed until it's retested",
+   "Separate results for web, Android and iOS",
+   "AI assistants can work the plan over MCP, acting under your name and role",
+   "Wide integrations and a REST API on every plan, including Free",
+   "Going over a limit never deletes data"
+  ],
+  "cons": [
+   "Doesn't run automated tests",
+   "Free plan is limited to one app and one person",
+   "AI-drafted checklists cost $10 each on qarunbook's AI beyond the allowance",
+   "Plan limits have changed since launch, so check the pricing page before you rely on them"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/qarunbook",
+   "x": {
+    "none": "We found no posts about qarunbook on X yet.",
+    "search_url": "https://x.com/search?q=qarunbook&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is qarunbook free?",
+    "a": "There is a free plan for one person and one app, with 150 checks tested and 30 issues a month and every feature, no card needed. Team is $29 a month and Business $79 a month per workspace."
+   },
+   {
+    "q": "Does qarunbook run automated tests?",
+    "a": "No. Its maker says it is for testing that people and their AI assistants do on a real build."
+   },
+   {
+    "q": "Can I assign tests to specific people?",
+    "a": "Yes. The maker says you can assign any check to one or more people, who get an email and an in-app notice, or make someone owner of a whole section or platform. Anyone on the team can still test any check."
+   },
+   {
+    "q": "Can testers leave notes or evidence?",
+    "a": "Yes. Next to \"Add issue\" under each check there is \"Add pass note\" for recording what you saw working, and you can attach screenshots and recordings."
+   },
+   {
+    "q": "How does my AI assistant connect?",
+    "a": "Through qarunbook's MCP server with a workspace token. A plugin adds two skills: /test-checklist drafts a plan from your code and /qa-runbook works through it."
+   },
+   {
+    "q": "What does the name mean?",
+    "a": "\"QA runbook\" written as one word: quality assurance plus runbook, the step-by-step guide a team follows."
+   }
+  ],
+  "sources": [
+   {
+    "label": "qarunbook official site",
+    "url": "https://qarunbook.com/"
+   },
+   {
+    "label": "qarunbook pricing and FAQ",
+    "url": "https://qarunbook.com/pricing"
+   },
+   {
+    "label": "qarunbook terms",
+    "url": "https://qarunbook.com/terms"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/qarunbook"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/qarunbook/alternatives"
+   },
+   {
+    "label": "Testiny pricing",
+    "url": "https://www.testiny.io/pricing/"
+   },
+   {
+    "label": "Qase pricing",
+    "url": "https://qase.io/pricing"
+   },
+   {
+    "label": "TestRail pricing",
+    "url": "https://www.testrail.com/pricing/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/baaed8f4-5290-4bf6-a89e-b75804bd55eb.png?auto=format&fit=max&w=1400",
+    "alt": "qarunbook graphic 'App testing. Easier to do. Easier to do well.' beside a dashboard of test progress",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://ph-files.imgix.net/3834ac0b-5cfc-44e3-a7f1-1d40e2214593.png?auto=format&fit=max&w=1400",
+    "alt": "qarunbook 'Know what to check.': a test plan with platforms and sections, each check with steps and an expected result",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/49d7f24f-60a3-429a-a2dc-503854fe9e11.png?auto=format&fit=max&w=1400",
+    "alt": "qarunbook 'Work through it together.': an app's test board with pass and fail results per platform",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/71d953e5-a03d-42cc-918c-0ec2f6b22952.png?auto=format&fit=max&w=1400",
+    "alt": "qarunbook 'Bring your AI assistant in.': the team screen where an AI assistant connected over MCP gets its own role",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/baaed8f4-5290-4bf6-a89e-b75804bd55eb.png?auto=format&fit=max&w=1400",
+    "alt": "qarunbook graphic 'App testing. Easier to do. Easier to do well.' beside a dashboard of test progress",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://ph-files.imgix.net/3834ac0b-5cfc-44e3-a7f1-1d40e2214593.png?auto=format&fit=max&w=1400",
+    "alt": "qarunbook 'Know what to check.': a test plan with platforms and sections, each check with steps and an expected result",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/49d7f24f-60a3-429a-a2dc-503854fe9e11.png?auto=format&fit=max&w=1400",
+    "alt": "qarunbook 'Work through it together.': an app's test board with pass and fail results per platform",
+    "w": 1270,
+    "h": 760
+   }
+  ]
+ }
+}

@@ -1,0 +1,304 @@
+{
+  "slug": "tencent-edgeone-makers",
+  "ph_url": "https://www.producthunt.com/posts/tencent-edgeone-makers",
+  "existing_listing_slug": null,
+  "website": "https://edgeone.ai/products/pages",
+  "excerpt": "EdgeOne Makers is Tencent's platform for deploying web apps and AI agents on its edge network, with a permanent free plan. Plans, features and alternatives.",
+  "content": "<p>EdgeOne Makers is Tencent Cloud's platform for shipping web apps and AI agents on the EdgeOne edge network. You connect a GitHub, GitLab or Bitbucket repository (or use the CLI), set the build command and output folder, and it deploys globally with custom domains and automatic SSL. It supports full-stack frameworks such as Next.js and Nuxt, static site generators such as Astro and Hexo, and React and Vue apps, with serverless functions and storage.</p><p>For AI agents, Makers adds a built-in runtime, a sandbox for tools, conversational memory, a model gateway and observability, and works with agent frameworks such as LangGraph and the OpenAI Agents SDK. Tencent's launch post on X says web apps and agents can live in the same project, sharing deployment, monitoring and domains. Makers grew out of EdgeOne Pages and sits inside Tencent EdgeOne, which also sells CDN, DNS, WAF, DDoS protection and bot management.</p><p>Tencent announced on X that Makers went live on 23 June 2026. EdgeOne's site says the Free plan is permanent and needs no credit card; paid EdgeOne plans run from $57 a month for Basic to $590 for Standard, with a lower-priced Personal plan.</p><p>Tencent EdgeOne launched on Product Hunt on 24 June 2026 and finished #1 for the day, with 613 upvotes and 163 comments (as of 14 October 2026).</p><p><em>We have not tested EdgeOne Makers ourselves. This page brings together EdgeOne's official product and pricing pages, Tencent's own posts on X, its Product Hunt listing and the official pricing pages of comparable platforms, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Developer tools / web and AI agent hosting",
+    "platform": "Web (Git, CLI and IDE plugins)",
+    "starts_at": "Free plan; paid EdgeOne plans from $1.4/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Tencent's edge platform for deploying web apps and AI agents from Git or the CLI",
+    "maker": {
+      "name": "Tencent Cloud",
+      "url": "https://edgeone.ai/"
+    },
+    "use_cases": [
+      "Deploying a Next.js, Nuxt, Astro or React site from Git with automatic SSL",
+      "Hosting an AI agent with sandboxed tools, memory and tracing without running your own servers",
+      "Adding an agent to an existing web project and serving both from one domain",
+      "Serving sites to users in Asia, where EdgeOne lists 2,500+ of its 3,200+ nodes"
+    ],
+    "audience": {
+      "fit": [
+        "developers who want Vercel-style Git deploys plus hosted agent infrastructure in one place",
+        "teams with users in Asia or mainland China who want an edge network strong in that region",
+        "hobbyists who want a permanent free tier with no credit card"
+      ],
+      "not_fit": [
+        "anyone who needs Makers-specific pricing spelled out up front: the pricing page lists EdgeOne plans, not Makers usage limits",
+        "teams that must keep data with a non-Chinese cloud provider for policy reasons",
+        "people who only need a static page and already use another free host"
+      ]
+    },
+    "pricing": {
+      "intro": "Makers runs on Tencent EdgeOne's plans. The pricing page lists the EdgeOne plans below with a \"$\" sign; it does not give separate Makers prices, and Edge Functions show \"overuse payment\" on paid plans.",
+      "url": "https://edgeone.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "No credit card. CDN, platform DDoS protection, basic access control, WAF ruleset, basic CC protection, free SSL; edge function requests listed as unmetered"
+        },
+        {
+          "name": "Personal",
+          "price": "$1.4/month (the page also shows $4.2 beside it)",
+          "currency": "USD",
+          "detail": "50 GB traffic, 3M requests, 1 site, 200 sub-domains, 20 rules"
+        },
+        {
+          "name": "Basic",
+          "price": "$57/month",
+          "amount": 57,
+          "currency": "USD",
+          "detail": "500 GB traffic, 20M requests, 1 site, 300 sub-domains, 50 rules"
+        },
+        {
+          "name": "Standard",
+          "price": "$590/month",
+          "amount": 590,
+          "currency": "USD",
+          "detail": "3 TB traffic, 50M requests, OWASP Top 10 managed rules, bot management"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Contact sales",
+          "detail": "On-demand traffic and requests, 10 sites, dedicated DDoS protection"
+        }
+      ],
+      "notes": [
+        "Usage above a plan's quota is billed hourly, per the pricing FAQ.",
+        "Add-ons such as Smart Acceleration, QUIC and Bot Management are $0.0143 per VAU (100 VAU per 1M requests)."
+      ]
+    },
+    "alternatives": {
+      "intro": "Other platforms for deploying web apps and serverless code. Prices come from each product's own pricing page, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "Vercel",
+          "url": "https://vercel.com/",
+          "what": "Frontend and full-stack hosting from the makers of Next.js",
+          "starts_at": "Hobby free; Pro $20/month",
+          "difference": "The reference platform for Next.js; agent hosting relies on its functions and AI SDK rather than a built-in agent sandbox and memory."
+        },
+        {
+          "name": "Netlify",
+          "url": "https://www.netlify.com/",
+          "what": "Git-based hosting for web apps with serverless and edge functions",
+          "starts_at": "Free; Personal $9/month; Pro $20/month",
+          "difference": "Long-established Git deploy workflow; no built-in agent runtime of the kind Makers advertises."
+        },
+        {
+          "name": "Cloudflare Workers and Pages",
+          "url": "https://workers.cloudflare.com/",
+          "what": "Serverless code and site hosting on Cloudflare's global network",
+          "starts_at": "Free tier; see its pricing page",
+          "difference": "The closest like-for-like option: serverless code, sites, CDN and security on one global network, from a different provider."
+        }
+      ]
+    },
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/tencent-edgeone-2/reviews",
+      "as_of": "2026-10-14"
+    },
+    "pros": [
+      "Permanent free plan with no credit card",
+      "Web apps and AI agents deploy together from Git or the CLI",
+      "Built-in agent sandbox, memory, model gateway and observability",
+      "Large edge network, especially in Asia"
+    ],
+    "cons": [
+      "No separate published pricing or limits for Makers itself",
+      "The Personal plan price is shown as two figures without explanation",
+      "Overage is billed hourly, so costs can be harder to predict",
+      "No public contact email; support goes through a contact form and community channels"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/tencent-edgeone-2",
+      "x": {
+        "profile_url": "https://x.com/TencentCloudEO",
+        "posts": [
+          {
+            "url": "https://x.com/TencentCloudEO/status/2069388162972217852",
+            "text": "Tencent EdgeOne introduces EdgeOne Makers, the edge platform to build and deploy web apps and agents through CLI, Skills, IDE plugins, Git and CI/CD.",
+            "author": "Tencent EdgeOne"
+          },
+          {
+            "url": "https://x.com/TencentCloudEO/status/2069318372987465938",
+            "text": "Tencent EdgeOne announces that Makers is going live on 23 June 2026.",
+            "author": "Tencent EdgeOne"
+          }
+        ],
+        "search_url": "https://x.com/search?q=%22EdgeOne%20Makers%22&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is EdgeOne Makers?",
+        "a": "Tencent Cloud's platform for deploying web apps and AI agents on the EdgeOne edge network, from Git or the CLI, with functions, storage and built-in agent infrastructure."
+      },
+      {
+        "q": "Is EdgeOne Makers free?",
+        "a": "There is a Free plan that EdgeOne says is permanent and needs no credit card. Paid EdgeOne plans are Personal, Basic ($57 a month), Standard ($590 a month) and Enterprise."
+      },
+      {
+        "q": "Which frameworks does it support?",
+        "a": "Next.js, Nuxt, Astro, Hexo, React and Vue for web apps, and agent frameworks such as LangGraph and the OpenAI Agents SDK."
+      },
+      {
+        "q": "How is it different from EdgeOne Pages?",
+        "a": "Makers grew out of EdgeOne Pages: it keeps the web hosting, functions and storage and adds an agent runtime with sandbox, memory, model gateway and observability."
+      },
+      {
+        "q": "What happens if I go over my plan's quota?",
+        "a": "EdgeOne's pricing FAQ says usage above the quota is billed in hourly billing cycles."
+      },
+      {
+        "q": "What are the alternatives to EdgeOne Makers?",
+        "a": "Vercel, Netlify and Cloudflare Workers and Pages are the closest like-for-like platforms."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Tencent EdgeOne official site",
+        "url": "https://edgeone.ai/"
+      },
+      {
+        "label": "EdgeOne Makers (Pages) product page",
+        "url": "https://edgeone.ai/products/pages"
+      },
+      {
+        "label": "EdgeOne pricing",
+        "url": "https://edgeone.ai/pricing"
+      },
+      {
+        "label": "EdgeOne contact",
+        "url": "https://edgeone.ai/contact"
+      },
+      {
+        "label": "Tencent EdgeOne on X: Makers announcement",
+        "url": "https://x.com/TencentCloudEO/status/2069388162972217852"
+      },
+      {
+        "label": "Tencent EdgeOne on X: Makers going live",
+        "url": "https://x.com/TencentCloudEO/status/2069318372987465938"
+      },
+      {
+        "label": "Product Hunt listing",
+        "url": "https://www.producthunt.com/products/tencent-edgeone-2"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/tencent-edgeone-makers"
+      },
+      {
+        "label": "Vercel pricing",
+        "url": "https://vercel.com/pricing"
+      },
+      {
+        "label": "Netlify pricing",
+        "url": "https://www.netlify.com/pricing/"
+      },
+      {
+        "label": "Cloudflare plans",
+        "url": "https://www.cloudflare.com/plans/"
+      }
+    ],
+    "ph": {
+      "rank": 1,
+      "votes": 613,
+      "comments": 163,
+      "followers": 2717,
+      "launched": "2026-06-24",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "xiaban",
+        "role": "Developer of EdgeOne Makers",
+        "url": "https://www.producthunt.com/@xiaban"
+      },
+      {
+        "name": "Selmaliu",
+        "role": "Developer",
+        "url": "https://www.producthunt.com/@leotw"
+      },
+      {
+        "name": "mushrooms",
+        "role": "Maker",
+        "url": "https://www.producthunt.com/@mushrooms110"
+      },
+      {
+        "name": "c1avie",
+        "role": "Cest la vie",
+        "url": "https://www.producthunt.com/@c1avie"
+      },
+      {
+        "name": "Tracy Lai",
+        "role": "Tencent EdgeOne Product Team",
+        "url": "https://www.producthunt.com/@tracy_lai222"
+      },
+      {
+        "name": "Tobias Lau",
+        "role": "Growth PM",
+        "url": "https://www.producthunt.com/@tobias_lau"
+      },
+      {
+        "name": "Zhuoli Jiang",
+        "role": "Everything about Security and Edge",
+        "url": "https://www.producthunt.com/@zhuoli_jiang"
+      },
+      {
+        "name": "MapleShaw",
+        "role": "Developer",
+        "url": "https://www.producthunt.com/@maple_shaw"
+      },
+      {
+        "name": "kassyke",
+        "role": "Product Manager for EdgeOne Makers",
+        "url": "https://www.producthunt.com/@kassy_kane"
+      },
+      {
+        "name": "Kitty Lee",
+        "role": "Founder of the EdgeOne Product",
+        "url": "https://www.producthunt.com/@kitty_lee1"
+      },
+      {
+        "name": "alina chang",
+        "role": "Product Manager at Tencent EdgeOne",
+        "url": "https://www.producthunt.com/@alina_chang"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/693d0df2-dfcb-4422-bc89-c6a86a5f120a.jpeg?auto=format&fit=max&w=1400",
+        "credit": "Image: Tencent EdgeOne on Product Hunt",
+        "alt": "Tencent EdgeOne Makers title card 'Ship AI agents like web apps, in minutes' for TypeScript and Python"
+      },
+      {
+        "url": "https://ph-files.imgix.net/a4f3af60-a6e7-4410-ba95-839c566e60b9.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Tencent EdgeOne on Product Hunt",
+        "alt": "Diagram of a local agent deployed through EdgeOne Makers to edge nodes and served to users worldwide"
+      },
+      {
+        "url": "https://ph-files.imgix.net/9e6ffbe8-2999-4c04-8824-d320f59b9d99.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Tencent EdgeOne on Product Hunt",
+        "alt": "EdgeOne Makers graphic 'Add agents, keep your code': an agents folder in a GitHub repo becomes a customer-service agent on a website"
+      },
+      {
+        "url": "https://ph-files.imgix.net/266a1acd-4d26-44b3-a4e0-2aefe69c0f07.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Tencent EdgeOne on Product Hunt",
+        "alt": "EdgeOne Makers comparison of weeks of manual setup with one-click deploy using a built-in agent runtime, sandbox, memory and observability"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes."
+}

@@ -1,5 +1,5 @@
 <?php
-/** Tags, authors and dates. */
+/** Tags, authors, industries and dates. */
 get_header();
 $title = wp_strip_all_tags(get_the_archive_title());
 $args = ['kicker' => 'Archive', 'title' => $title, 'active' => $title];
@@ -12,6 +12,11 @@ if (is_tag()) {
     $args['title'] = get_the_author_meta('display_name', get_queried_object_id());
     $args['description'] = wp_strip_all_tags(get_the_author_meta('description', get_queried_object_id()));
     $args['query_args'] = ['author' => get_queried_object_id()];
+} elseif (is_tax('xf_industry')) {
+    // Industries group startups, not articles: list only the startups filed under this one.
+    $args['kicker'] = 'Industry';
+    $args['title'] = single_term_title('', false);
+    $args['query_args'] = ['post_type' => 'xf_startup', 'tax_query' => [['taxonomy' => 'xf_industry', 'terms' => get_queried_object_id()]]];
 } elseif (is_date()) {
     $args['query_args'] = ['year' => get_query_var('year'), 'monthnum' => get_query_var('monthnum'), 'day' => get_query_var('day')];
 }

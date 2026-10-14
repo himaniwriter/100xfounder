@@ -1,0 +1,126 @@
+{
+  "slug": "onepin",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/onepin",
+  "excerpt": "Onepin checks and fixes AI voiceover so names, prices and dates are said right, across 30+ voice models including ElevenLabs. Free plan, paid from $16/month, and alternatives.",
+  "content": "<p>Onepin is a production layer for AI voiceover. You give it a script and it routes each line to one of more than 30 commercial text-to-speech models (ElevenLabs, OpenAI and Google among them), choosing per line and per language from its own benchmarks. Before synthesis a normaliser rewrites numbers, prices, dates, addresses and abbreviations into how they should be spoken; names and brands are checked against a pronunciation dictionary, which the Product Hunt listing puts at 4 million words. After synthesis every line is scored for word accuracy, naturalness, noise and pronunciation, and failing lines are fixed or regenerated.</p><p>Founder Soohyun Bae said on Product Hunt that Onepin's own voice model can fix a mispronounced word without re-rendering the whole take, and that it supports 10 locales with plans for 30. You can work through a chat agent called Quincy that builds a reusable workflow, or through the API, SDK and MCP; Premiere and DaVinci plugins were in development. The team previously built Podonos, a service that scores speech AI.</p><p>Onepin launched on Product Hunt on 10 October 2026 and finished #1 for the day, with 384 upvotes and 97 comments (as of 14 October 2026).</p><p><em>We have not tested Onepin ourselves. This page brings together its official site, pricing, FAQ and About pages and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI voiceover production",
+    "platform": "Web app, API, SDK and MCP",
+    "starts_at": "Free plan; paid from $16/month billed yearly",
+    "schema_category": "MultimediaApplication",
+    "summary_short": "Routes scripts across 30+ AI voice models and checks and fixes every line, so names, prices and dates are said right",
+    "maker": {"name": "Soohyun Bae", "url": "https://www.producthunt.com/@soohyun"},
+    "team": [
+      {"name": "Soohyun Bae", "role": "Founder and CEO", "url": "https://www.producthunt.com/@soohyun"}
+    ],
+    "ph": {"rank": 1, "votes": 384, "comments": 97, "followers": 1396, "launched": "2026-10-10", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/59e2d20a-8e04-423f-ac81-90fa2a2d6af6.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Onepin via Product Hunt",
+       "alt": "Onepin title card 'AI voice production agent' on a pink and blue gradient"},
+      {"url": "https://ph-files.imgix.net/d69ed031-730a-4d7d-a9b2-bb6d52bdf151.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Onepin via Product Hunt",
+       "alt": "Onepin's Quincy agent recommending French voices for a coffee ad voiceover, under 'Describe the task. The agent builds the workflow.'"},
+      {"url": "https://ph-files.imgix.net/547ec3f3-d51d-47d8-8ed5-d8f55a4b2568.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Onepin via Product Hunt",
+       "alt": "Onepin 'Every line scored before it ships': a first take scored 73% and the fixed take 88%"}
+    ],
+    "use_cases": [
+      "Producing product-video voiceovers where brand and product names must be said right",
+      "Dubbing and e-learning voiceover in several languages",
+      "Checking long audiobook or course scripts line by line without listening to every line",
+      "Using your existing ElevenLabs voices with extra validation on top",
+      "Fixing internal codenames and acronyms that every voice model gets wrong"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Soohyun Bae opened with an example: a great AI voice reads \"Porsche Taycan\" from the spelling and gets it wrong, and nobody notices because nobody listens to line 1,200. His team spent two years at Podonos measuring how AI voices perform.",
+        "He said no AI has ever said his own name correctly, and that wrong names, brands, addresses and medications are a blocker for teams shipping voice at scale. Onepin is the layer that checks and fixes the output instead of regenerating until it sounds right."
+      ],
+      "attribution": "Soohyun Bae, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/onepin?comment=5936215"
+    },
+    "audience": {
+      "fit": [
+        "ship AI voiceover at volume, such as product videos, courses or dubbing",
+        "work in several languages and need consistent quality across them",
+        "already pay for ElevenLabs or another provider and want validation on top (bring your own key from Studio up)"
+      ],
+      "not_fit": [
+        "need a Premiere or DaVinci plugin today: the founder said they were in development",
+        "need open-source voice models or voice cloning: the FAQ lists both as coming soon",
+        "need a language outside its 10 supported ones"
+      ]
+    },
+    "pricing": {
+      "intro": "Onepin sells credits through monthly plans; the prices shown are per month when billed yearly (the site says yearly saves 20%). Prices are Onepin's, in US dollars.",
+      "url": "https://onepin.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "1,000 one-time credits (about 15 minutes of validated audio), auto-routing, mispronunciation fixes, 10 languages, 1 workspace"},
+        {"name": "Creator", "price": "$16/month billed yearly", "amount": 16, "currency": "USD", "detail": "3,000 credits a month (about 100 minutes), 3 concurrent runs, 100 GB storage, email support"},
+        {"name": "Studio", "price": "$80/month billed yearly", "amount": 80, "currency": "USD", "detail": "15,000 credits a month (about 9 hours), 3 workspaces, bring your own key, Slack support"},
+        {"name": "Scale", "price": "$240/month billed yearly", "amount": 240, "currency": "USD", "detail": "50,000 credits a month (about 30 hours), 10 concurrent runs, lowest overage rate"},
+        {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Output ownership, commercial use on every model, IP indemnity, SSO, SLA"}
+      ],
+      "notes": [
+        "Overage is $0.010 a credit on Creator, $0.008 on Studio and $0.007 on Scale.",
+        "Seats are unlimited on every plan."
+      ]
+    },
+    "pros": [
+      "Fixes a single wrong word without re-rendering the whole take, according to the founder",
+      "Works across 30+ voice models, including ones you already pay for",
+      "Every line scored for accuracy, naturalness, noise and pronunciation",
+      "Free plan without a card and unlimited seats"
+    ],
+    "cons": [
+      "10 languages for now",
+      "No editing-software plugins yet",
+      "No open-source models or voice cloning yet"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["Fixing names and prices that voice models mispronounce", "Correcting one word without redoing the recording"],
+        "asked": [
+          "Whether a fixed word sounds natural next to the original voice (the founder says it clones the voice and style)",
+          "Whether it works with ElevenLabs voices (yes, with your API key)",
+          "Whether it plugs into Premiere or DaVinci (in development)",
+          "How it handles acronyms and internal codenames"
+        ],
+        "criticised": []
+      },
+      "quotes": []
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as Onepin alternatives. Several are voice models Onepin can route to rather than direct rivals. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "ElevenLabs", "url": "https://elevenlabs.io/", "what": "AI voices in many languages", "starts_at": "See its pricing page", "ph_rating": 4.91, "ph_reviews": 218, "ph_url": "https://www.producthunt.com/products/elevenlabs",
+         "difference": "A voice model and studio; Onepin sits on top of it and other models to check and fix output."},
+        {"name": "Cartesia Sonic", "url": "https://cartesia.ai/", "what": "Fast human-like voice API", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 24, "ph_url": "https://www.producthunt.com/products/cartesia-sonic",
+         "difference": "A single low-latency voice model rather than a validation layer across models."},
+        {"name": "Fish Audio", "url": "https://fish.audio/", "what": "Expressive text-to-speech and voice cloning", "starts_at": "See its pricing page", "ph_rating": 4.73, "ph_reviews": 15, "ph_url": "https://www.producthunt.com/products/fish-speech",
+         "difference": "Offers voice cloning, which Onepin lists as coming soon."}
+      ],
+      "more": "Product Hunt also lists Deepgram and Vapi."
+    },
+    "reviews": {"count": 1, "rating": 5, "url": "https://www.producthunt.com/products/onepin/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/onepin",
+      "x": {"none": "We found no posts about Onepin on X to link yet.", "search_url": "https://x.com/search?q=onepin.ai&f=live", "profile_url": "https://x.com/onepinai"}
+    },
+    "faq": [
+      {"q": "What is Onepin?", "a": "An AI voice production agent: it routes each line of a script to the best of 30+ voice models, cleans up numbers and names first, scores every line, and fixes what fails."},
+      {"q": "How much does Onepin cost?", "a": "Free with 1,000 one-time credits. Creator is $16 a month, Studio $80 and Scale $240, each billed yearly. Enterprise is custom."},
+      {"q": "Can I use my ElevenLabs account with Onepin?", "a": "Yes. Bring-your-own-key is available on Studio and above, and the founder said you can use your cloned ElevenLabs voices in Onepin."},
+      {"q": "Does fixing one word mean re-rendering the whole line?", "a": "No, according to the founder: Onepin's own model fixes the word instead of regenerating the take."},
+      {"q": "Which languages does Onepin support?", "a": "Ten languages today, with more planned, according to its FAQ."}
+    ],
+    "sources": [
+      {"label": "Onepin official site", "url": "https://onepin.ai/"},
+      {"label": "Onepin pricing", "url": "https://onepin.ai/pricing"},
+      {"label": "Onepin FAQ", "url": "https://onepin.ai/faq"},
+      {"label": "Onepin About page", "url": "https://onepin.ai/about"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/onepin"}
+    ]
+  }
+}

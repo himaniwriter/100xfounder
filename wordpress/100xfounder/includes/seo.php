@@ -56,6 +56,7 @@ function xf_page_description($key) {
         'spotlights' => 'Founder spotlights: how startups were built, in the founders\' own words.',
         'events' => 'Upcoming startup, AI and tech events in Bengaluru, Delhi NCR, Mumbai and online, from official event calendars.',
         'funding' => 'A tracker of startup funding rounds, with the amount, stage, investors and a source for every round.',
+        'launch' => 'Launch your startup on 100xFounder for free. Add your product, logo and screenshots; we check every launch and email you the live link.',
         'submit' => 'Submit your startup, launch, news or press release to 100xFounder. An editor reads every submission.',
         'tools' => 'Free calculators for Indian salaried professionals: in-hand salary from CTC, salary hike and notice period buyout.',
         'guides' => 'How to apply at top companies hiring in India: the hiring process, interview rounds and tips, with sources.',
@@ -97,8 +98,23 @@ add_action('wp_head', function () {
 }, 3);
 
 function xf_social_image() {
+    // A profiled startup shares its own product screenshot (1200x630), not a 180px logo.
+    if (is_singular('xf_startup') && function_exists('xf_startup_profile')) {
+        $shot = xf_startup_profile(get_the_ID())['screenshots'][0]['url'] ?? '';
+        if ($shot) {
+            return $shot;
+        }
+    }
+    // Full size: Discover shows its large card only for images at least 1200px
+    // wide, and WordPress's "large" size stops at 1024.
     if (is_singular() && has_post_thumbnail()) {
-        return get_the_post_thumbnail_url(null, 'large');
+        return get_the_post_thumbnail_url(null, 'full');
+    }
+    if (is_singular('xf_event') && function_exists('xf_event_image')) {
+        $pic = xf_event_image(get_the_ID());
+        if (!empty($pic['theirs']) && $pic['url']) {
+            return $pic['url'];
+        }
     }
     if (is_singular('xf_startup') && ($thumb = get_post_meta(get_the_ID(), '_xf_thumbnail', true))) {
         return $thumb;
@@ -216,13 +232,29 @@ add_action('wp_head', function () {
     }
 }, 2);
 
+/**
+ * Google Consent Mode v2 defaults, printed before GA4 and AdSense load.
+ * In the EEA, the UK and Switzerland everything starts denied until the
+ * visitor answers the consent message (AdSense → Privacy & messaging, a
+ * Google-certified CMP, which updates consent itself). Elsewhere analytics and
+ * ads start granted. Nothing here sets a cookie.
+ */
+add_action('wp_head', function () {
+    $eea = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'];
+    echo "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+        . "gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500,region:" . wp_json_encode($eea) . "});"
+        . "gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted',functionality_storage:'granted',security_storage:'granted'});"
+        . "gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);</script>\n";
+}, 1);
+
 /** GA4, only when a measurement ID is set. */
 add_action('wp_head', function () {
     $id = preg_replace('/[^A-Z0-9-]/', '', strtoupper((string) xf_get_setting('ga4_id')));
     if (!$id || is_user_logged_in()) {
         return;
     }
-    printf("<script async src=\"https://www.googletagmanager.com/gtag/js?id=%1\$s\"></script>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','%1\$s');</script>\n", esc_attr($id));
+    // gtag.js loads after the page has rendered so it never competes with the first paint.
+    printf("<script>gtag('js',new Date());gtag('config','%1\$s');addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=%1\$s';document.head.appendChild(s);});</script>\n", esc_js($id));
 }, 3);
 
 function xf_json_ld(array $data) {
@@ -233,6 +265,7 @@ function xf_publisher_schema() {
     $logo = xf_logo_url();
     return array_filter([
         '@type' => 'Organization',
+        '@id' => home_url('/') . '#organization',
         'name' => get_bloginfo('name'),
         'url' => home_url('/'),
         'logo' => $logo ? ['@type' => 'ImageObject', 'url' => $logo] : null,
@@ -261,7 +294,7 @@ add_action('wp_head', function () {
         xf_json_ld(array_filter([
             '@context' => 'https://schema.org',
             '@type' => 'NewsArticle',
-            'headline' => wp_strip_all_tags(get_the_title($post)),
+            'headline' => xf_schema_text(get_the_title($post)),
             'description' => xf_meta_description(),
             'image' => has_post_thumbnail($post) ? [get_the_post_thumbnail_url($post, 'full')] : null,
             'datePublished' => get_the_date('c', $post),
@@ -273,32 +306,15 @@ add_action('wp_head', function () {
             'inLanguage' => function_exists('xf_post_lang') ? xf_post_lang($post->ID) : 'en',
             'citation' => $citations ?: null,
         ]));
-        $crumbs = [['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => home_url('/')]];
-        if ($cat) {
-            $crumbs[] = ['@type' => 'ListItem', 'position' => 2, 'name' => $cat->name, 'item' => get_category_link($cat)];
-        }
-        $crumbs[] = ['@type' => 'ListItem', 'position' => count($crumbs) + 1, 'name' => wp_strip_all_tags(get_the_title($post))];
-        xf_json_ld(['@context' => 'https://schema.org', '@type' => 'BreadcrumbList', 'itemListElement' => $crumbs]);
+        // BreadcrumbList: breadcrumbs.php, shared with the visible trail.
         return;
     }
     if (is_singular('xf_event')) {
-        $id = get_the_ID();
-        $city = get_post_meta($id, '_xf_city', true);
-        $online = $city === 'Online';
-        xf_json_ld(array_filter([
-            '@context' => 'https://schema.org',
-            '@type' => 'Event',
-            'name' => wp_strip_all_tags(get_the_title()),
-            'startDate' => ($s = get_post_meta($id, '_xf_start', true)) ? gmdate('c', strtotime($s . ' UTC')) : null,
-            'endDate' => ($e = get_post_meta($id, '_xf_end', true)) ? gmdate('c', strtotime($e . ' UTC')) : null,
-            'eventAttendanceMode' => $online ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
-            'location' => $online
-                ? ['@type' => 'VirtualLocation', 'url' => get_post_meta($id, '_xf_url', true) ?: get_permalink()]
-                : ['@type' => 'Place', 'name' => get_post_meta($id, '_xf_venue', true) ?: $city, 'address' => $city],
-            'url' => get_post_meta($id, '_xf_url', true) ?: get_permalink(),
-            'organizer' => ($o = get_post_meta($id, '_xf_organizer', true)) ? ['@type' => 'Organization', 'name' => $o] : null,
-            'description' => xf_meta_description(),
-        ]));
+        // Event markup is for things people can still attend: drop it once the event has ended.
+        $end = get_post_meta(get_the_ID(), '_xf_end', true) ?: get_post_meta(get_the_ID(), '_xf_start', true);
+        if (!$end || strtotime($end . ' UTC') >= time()) {
+            xf_json_ld(xf_event_schema(get_the_ID()));
+        }
     }
 }, 4);
 
@@ -434,13 +450,13 @@ function xf_landing_urls() {
         foreach (XF_JOB_CITIES as $c) $combos[] = ['function' => '', 'city' => $c];
         foreach ($combos as $c) {
             $q = new WP_Query(array_merge(xf_job_query_args(array_merge($base, $c), 1, 1), ['fields' => 'ids']));
-            if ($q->found_posts < 5) continue; // Same threshold as the page's noindex rule.
+            if ($q->found_posts < (defined('XF_LANDING_INDEX_MIN') ? XF_LANDING_INDEX_MIN : 10)) continue; // Same threshold as the page's noindex rule (jobs.php).
             $slug = $c['function'] && $c['city'] ? sanitize_title($c['function']) . '-jobs-in-' . sanitize_title($c['city'])
                 : ($c['function'] ? sanitize_title($c['function']) . '-jobs' : 'jobs-in-' . sanitize_title($c['city']));
             $urls[] = home_url('/jobs/' . $slug . '/');
         }
         foreach (get_terms(['taxonomy' => 'xf_company', 'hide_empty' => true]) ?: [] as $t) {
-            if (!is_wp_error($t)) $urls[] = get_term_link($t);
+            if (!is_wp_error($t) && (!function_exists('xf_company_page_indexable') || xf_company_page_indexable($t))) $urls[] = get_term_link($t);
         }
     }
     return array_values(array_filter(array_unique($urls), 'is_string'));
@@ -477,3 +493,203 @@ add_action('init', function () {
     }
     wp_register_sitemap_provider('landing', new XF_Landing_Sitemap());
 }, 20);
+
+
+/** Indian states for the cities we cover: Google asks for a region on every address. */
+function xf_city_region($city) {
+    $map = [
+        'Bengaluru' => 'Karnataka', 'Bangalore' => 'Karnataka', 'Mumbai' => 'Maharashtra', 'Pune' => 'Maharashtra',
+        'Delhi NCR' => 'Delhi', 'Delhi' => 'Delhi', 'New Delhi' => 'Delhi', 'Gurugram' => 'Haryana', 'Gurgaon' => 'Haryana',
+        'Noida' => 'Uttar Pradesh', 'Hyderabad' => 'Telangana', 'Chennai' => 'Tamil Nadu', 'Kolkata' => 'West Bengal',
+        'Ahmedabad' => 'Gujarat', 'Jaipur' => 'Rajasthan', 'Kochi' => 'Kerala', 'Chandigarh' => 'Chandigarh',
+    ];
+    return $map[trim((string) $city)] ?? '';
+}
+
+/** Plain text for a schema field: no tags, and entities such as &#8211; decoded. */
+function xf_schema_text($text) {
+    return trim(html_entity_decode(wp_strip_all_tags((string) $text), ENT_QUOTES | ENT_HTML5, 'UTF-8'));
+}
+
+/**
+ * Event structured data, with the fields Google's event results look for:
+ * status, a postal address, the organiser's own image and the ticket offer.
+ * Every value comes from the organiser's listing; nothing is guessed.
+ */
+function xf_event_schema($id) {
+    $m = function ($k) use ($id) { return (string) get_post_meta($id, '_xf_' . $k, true); };
+    $city = $m('city');
+    $online = $city === 'Online';
+    $url = $m('url') ?: get_permalink($id);
+    $iso = function ($utc) { return $utc ? gmdate('c', strtotime($utc . ' UTC')) : null; };
+
+    // Only the organiser's own graphic: a shared stock photo would not represent the event.
+    $image = function_exists('xf_event_image') ? xf_event_image($id) : ['url' => ''];
+    $image = !empty($image['theirs']) ? $image : ['url' => ''];
+    // Our venue notes for readers ("(confirm before travel)") are not part of the address.
+    $venue = trim(preg_replace('/\s*\([^)]*\)\s*/', ' ', $m('venue')));
+    $price = trim($m('price'));
+    // Tickets or registration always live on the organiser's page; the price is added only when the listing states one.
+    $offers = ['@type' => 'Offer', 'url' => $url, 'availability' => 'https://schema.org/InStock', 'validFrom' => get_the_date('c', $id)];
+    if ($price !== '') {
+        if (preg_match('/^\s*free\b/i', $price)) {
+            $offers += ['price' => 0, 'priceCurrency' => 'INR'];
+        } elseif (preg_match('/(₹|rs\.?|inr|\$|usd)\s*([\d,]+(?:\.\d+)?)/iu', $price, $pm)) {
+            $offers += ['price' => (float) str_replace(',', '', $pm[2]), 'priceCurrency' => preg_match('/\$|usd/i', $pm[1]) ? 'USD' : 'INR'];
+        }
+    }
+    $address = array_filter([
+        '@type' => 'PostalAddress',
+        'streetAddress' => $venue ?: null,
+        'addressLocality' => $city === 'Delhi NCR' ? 'New Delhi' : $city,
+        'addressRegion' => xf_city_region($city) ?: null,
+        'addressCountry' => 'IN',
+    ]);
+
+    return array_filter([
+        '@context' => 'https://schema.org',
+        '@type' => 'Event',
+        'name' => xf_schema_text(get_the_title($id)),
+        'description' => xf_schema_text(get_post_field('post_excerpt', $id) ?: wp_trim_words(get_post_field('post_content', $id), 50)),
+        'startDate' => $iso($m('start')),
+        'endDate' => $iso($m('end')),
+        'eventStatus' => 'https://schema.org/EventScheduled',
+        'eventAttendanceMode' => $online ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
+        'location' => $online
+            ? ['@type' => 'VirtualLocation', 'url' => $url]
+            : ['@type' => 'Place', 'name' => $venue ?: $city, 'address' => $address],
+        'image' => !empty($image['url']) ? [$image['url']] : null,
+        'url' => $url,
+        'organizer' => $m('organizer') ? ['@type' => 'Organization', 'name' => $m('organizer'), 'url' => $url] : null,
+        'offers' => $offers,
+        'mainEntityOfPage' => get_permalink($id),
+    ]);
+}
+
+/**
+ * Article addresses never carry a year (owner, 2026-10-07): best-ai-for-coding,
+ * not best-ai-for-coding-2026. A dated URL looks stale the following January
+ * and has to be redirected to stay current. Events are exempt, because the
+ * edition year is part of their name (Bengaluru Tech Summit 2026 vs 2027).
+ */
+function xf_slug_without_year($slug) {
+    $clean = preg_replace('/(?:^|-)(?:19|20)\d{2}(?:-\d{2})?(?=-|$)/', '', (string) $slug);
+    $clean = trim(preg_replace('/-{2,}/', '-', $clean), '-');
+    return $clean !== '' ? $clean : (string) $slug;
+}
+
+// New articles only: renaming a URL that already exists is a separate, owner-approved job.
+add_filter('wp_insert_post_data', function ($data, $postarr) {
+    if (!empty($postarr['ID']) || !in_array($data['post_type'], ['post', 'xf_guide'], true) || empty($data['post_name'])) {
+        return $data;
+    }
+    $data['post_name'] = xf_slug_without_year($data['post_name']);
+    return $data;
+}, 20, 2);
+
+/**
+ * Footer JSON-LD on every page: 100xFounder described as a product, so search
+ * engines and AI tools get the same plain summary of what the site is and what
+ * it offers wherever they land. The offer is truthful (free to use); there is
+ * deliberately no rating here: readers' ratings are attached per page by
+ * ratings.php, from real votes only.
+ */
+add_action('wp_footer', function () {
+    if (is_admin() || is_404() || is_search()) {
+        return;
+    }
+    $home = home_url('/');
+    $logo = xf_logo_url();
+    xf_json_ld(array_filter([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        '@id' => $home . '#product',
+        'name' => '100xFounder',
+        'url' => $home,
+        'description' => '100xFounder is a free startup and AI discovery site for founders and operators, mainly in India. It publishes sourced startup and funding news, jobs at startups and big companies, upcoming founder events, salary and tax calculators, and researched profiles of new AI tools and products.',
+        'category' => 'Startup news, jobs, events and AI tool directory',
+        'image' => $logo ?: null,
+        'logo' => $logo ?: null,
+        'brand' => ['@type' => 'Brand', 'name' => '100xFounder', 'url' => $home],
+        'manufacturer' => ['@id' => $home . '#organization'],
+        'audience' => ['@type' => 'Audience', 'audienceType' => 'Startup founders, operators, job seekers and builders'],
+        'additionalProperty' => [
+            ['@type' => 'PropertyValue', 'name' => 'Covers', 'value' => 'Startup and funding news, jobs, founder events, calculators, AI tool profiles'],
+            ['@type' => 'PropertyValue', 'name' => 'Region', 'value' => 'India, with global coverage'],
+            ['@type' => 'PropertyValue', 'name' => 'Sources', 'value' => 'Every factual claim about a person or company is sourced'],
+            ['@type' => 'PropertyValue', 'name' => 'Machine-readable', 'value' => home_url('/llms.txt')],
+        ],
+        'offers' => [
+            '@type' => 'Offer',
+            'price' => '0',
+            'priceCurrency' => 'INR',
+            'availability' => 'https://schema.org/InStock',
+            'url' => $home,
+        ],
+    ]));
+}, 9);
+
+/**
+ * Author pages: a ProfilePage whose subject is the byline, so search engines
+ * and AI tools can tie every article to one author entity. Ishaan Vardhan is
+ * the editorial desk's disclosed pen name, never a claimed real person with
+ * credentials, so the Person carries only what the bio says.
+ */
+add_action('wp_head', function () {
+    if (!is_author()) {
+        return;
+    }
+    $user = get_queried_object();
+    if (!$user || empty($user->ID)) {
+        return;
+    }
+    $url = get_author_posts_url($user->ID);
+    xf_json_ld(array_filter([
+        '@context' => 'https://schema.org',
+        '@type' => 'ProfilePage',
+        'url' => $url,
+        'mainEntity' => array_filter([
+            '@type' => 'Person',
+            '@id' => $url . '#person',
+            'name' => $user->display_name,
+            'url' => $url,
+            'description' => wp_strip_all_tags(get_the_author_meta('description', $user->ID)) ?: null,
+            'jobTitle' => 'Editorial desk (pen name)',
+            'worksFor' => ['@id' => home_url('/') . '#organization'],
+            'knowsAbout' => ['Startups', 'Startup funding', 'AI tools', 'Jobs and careers in India'],
+        ]),
+    ]));
+}, 6);
+
+/**
+ * Content images uploaded by the scripts are plain <img> tags without width/height,
+ * so the browser can't reserve their space and the layout jumps (CLS). Fill the
+ * size in from the media library, or from a "-1024x580" size suffix in the file name.
+ */
+add_filter('the_content', function ($content) {
+    if (strpos($content, '<img') === false) {
+        return $content;
+    }
+    $uploads = wp_get_upload_dir()['baseurl'];
+    return preg_replace_callback('/<img\b(?![^>]*\bwidth=)[^>]*\bsrc="([^"]+)"[^>]*>/i', function ($m) use ($uploads) {
+        $src = html_entity_decode($m[1]);
+        if (strpos($src, $uploads) !== 0) {
+            return $m[0];
+        }
+        $w = $h = 0;
+        if (preg_match('/-(\d{2,5})x(\d{2,5})\.(?:jpe?g|png|webp|gif|avif)$/i', $src, $s)) {
+            [$w, $h] = [(int) $s[1], (int) $s[2]];
+        } else {
+            $key = 'xf_imgdim_' . md5($src);
+            $dim = wp_cache_get($key, 'xf');
+            if ($dim === false) {
+                $id = attachment_url_to_postid($src);
+                $meta = $id ? wp_get_attachment_metadata($id) : null;
+                $dim = $meta && !empty($meta['width']) ? [(int) $meta['width'], (int) $meta['height']] : [0, 0];
+                wp_cache_set($key, $dim, 'xf', DAY_IN_SECONDS);
+            }
+            [$w, $h] = $dim;
+        }
+        return $w && $h ? preg_replace('/^<img\b/i', sprintf('<img width="%d" height="%d"', $w, $h), $m[0]) : $m[0];
+    }, $content);
+}, 25);

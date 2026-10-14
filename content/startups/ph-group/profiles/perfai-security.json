@@ -1,0 +1,128 @@
+{
+  "slug": "perfai-security",
+  "ph_url": "https://www.producthunt.com/posts/perfai-security",
+  "existing_listing_slug": null,
+  "website": "https://perfai.ai",
+  "excerpt": "Perfai Security tests the permissions in apps built with Lovable, Replit, Cursor or Claude Code and opens fixes for broken access controls. Pricing and alternatives.",
+  "content": "<p>Perfai Security checks apps built with AI coding tools such as Replit, Lovable, Bolt, Base44, Cursor and Claude Code for broken permissions, the bugs that let one customer see another's data or a normal user reach admin features. You paste your app's URL. A Vision Agent maps the app's screens, routes, roles and workflows, a Security Agent tests the paths an attacker would try, and a Fix Agent proposes a fix and re-tests it. Its site says an average app has about 2,280 permission combinations to check.</p><p>The makers say it avoids injection attacks and tests only with accounts and objects it creates itself, so it is meant to be safe to run on a live app; you can also point it at a staging or preview deploy. Paid plans include automatic fix pull requests. The company behind it is PerfAI, Inc. of Santa Clara, California, according to its site.</p><p>Perfai Security launched on Product Hunt on 9 July 2026 and finished #3 for the day with 278 upvotes and 123 comments. On Product Hunt it has 3 reviews averaging 4.3 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Perfai Security ourselves. This page brings together its official site and pricing page, its Product Hunt launch and the public pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Application security",
+    "platform": "Web app (cloud.perfai.ai)",
+    "starts_at": "Free plan; Pro $49/month per app",
+    "schema_category": "SecurityApplication",
+    "summary_short": "Finds and fixes broken access controls in apps built with AI coding tools",
+    "maker": {"name": "Qutub Syed", "url": "https://www.producthunt.com/@qutub_syed"},
+    "team": [
+      {"name": "Qutub Syed", "role": "VP of Product and go-to-market", "url": "https://www.producthunt.com/@qutub_syed"},
+      {"name": "Intesar Mohammed", "role": "Maker", "url": "https://www.producthunt.com/@intesar_mohammed1"},
+      {"name": "Atef A. Ahmed", "role": "Maker", "url": "https://www.producthunt.com/@atefa7med"},
+      {"name": "Liyaquath Ali", "role": "Application security engineer", "url": "https://www.producthunt.com/@liyaquath_ali"},
+      {"name": "Mihir Shaik", "role": "Software engineer", "url": "https://www.producthunt.com/@mihir_shaik"}
+    ],
+    "ph": {"rank": 3, "votes": 278, "comments": 123, "followers": 672, "launched": "2026-07-09", "as_of": "2026-10-14"},
+    "video_url": "https://youtu.be/tbFdkcoE8vw",
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/65178bb0-a7f2-4644-907f-46c676e5d8f7.png?auto=format&fit=max&w=1400", "w": 4656, "h": 2786, "credit": "Image: Perfai Security on Product Hunt",
+       "alt": "Perfai graphic 'Paste your app URL. Find live vulnerabilities in minutes.' with the 'Test a new app' screen and its Vision, Security and Fix agents"},
+      {"url": "https://ph-files.imgix.net/35c92acd-f478-4725-a1ea-d9eeccbea5a5.png?auto=format&fit=max&w=1400", "w": 4656, "h": 2786, "credit": "Image: Perfai Security on Product Hunt",
+       "alt": "Perfai Vision Agent diagram: it maps an app's roles, flows, auth and data, then the paths an attacker would try"},
+      {"url": "https://ph-files.imgix.net/a9fe15c1-cfce-4418-a8be-86cba9f0c1b4.png?auto=format&fit=max&w=1400", "w": 4656, "h": 2786, "credit": "Image: Perfai Security on Product Hunt",
+       "alt": "Perfai Security Agent graphic with a 'permission reality check' grid of roles against data, one cell flagged as a cross-tenant leak"},
+      {"url": "https://ph-files.imgix.net/2637afda-4400-417d-b65e-efccd73deaee.png?auto=format&fit=max&w=1400", "w": 4656, "h": 2786, "credit": "Image: Perfai Security on Product Hunt",
+       "alt": "Perfai Fix Agent graphic: prove, fix and re-test, under the line 'Findings are useless unless they are fixed'"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Qutub Syed says that over 18 months he watched people, himself included, build apps with Replit, Lovable, Cursor or Claude Code that look finished within hours, with logins, payments, dashboards and user roles, and then ask whether the app is actually safe to put online.",
+        "His answer is that the risk sits in access controls: rules about which user can see or do what. Even a small app has thousands of them, too many to test by hand, so Perfai's agents learn the app and test every role and permission combination for you."
+      ],
+      "attribution": "Qutub Syed, maker, on Product Hunt",
+      "url": "https://www.producthunt.com/products/perfai-security-for-vibe-coded-apps?comment=5445514"
+    },
+    "use_cases": [
+      "Checking a vibe-coded app for data leaks between customers before launch",
+      "Testing that normal users can't reach admin screens or APIs",
+      "Getting fix pull requests for permission bugs in Replit, Lovable, Base44, Cursor or Claude Code projects",
+      "Producing compliance-ready security reports (Startup plan)"
+    ],
+    "audience": {
+      "fit": [
+        "built an app with an AI coding tool and handle customer data",
+        "have no security specialist on the team",
+        "want testing against the running app, not only a code scan"
+      ],
+      "not_fit": [
+        "need injection or infrastructure testing: the makers say it deliberately doesn't run injection attacks",
+        "want a full penetration test of a large estate on a small budget: bigger apps need the $299 Startup plan or Enterprise"
+      ]
+    },
+    "pricing": {
+      "intro": "Perfai Security publishes four plans on its pricing page. Prices are in US dollars and are per app.",
+      "url": "https://perfai.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "100 credits a month, 1 small app, 50 UI and API endpoints, Vision and Security agents, top 5 findings in full detail, community support"},
+        {"name": "Pro", "price": "$49/month per app", "amount": 49, "currency": "USD", "detail": "350 credits a month, 1 medium app, Fix Agent for Replit, Lovable and Base44, chatbot, bi-weekly autonomous testing, 100 endpoints, email support"},
+        {"name": "Startup", "price": "$299/month per app", "amount": 299, "currency": "USD", "detail": "15-day free trial with no card; 1,500 credits, 1 large app, weekly testing, Fix Agent for Cursor, Claude Code, Copilot and Devin, compliance reports, Slack and Teams, 150 endpoints"},
+        {"name": "Enterprise", "price": "Custom", "detail": "Many apps, private agents, on-premises deployment, CI/CD gating, multi-tenancy, API access"}
+      ],
+      "notes": ["Every paid plan includes automatic fix pull requests, according to the pricing page."]
+    },
+    "alternatives": {
+      "intro": "Security tools that also test running applications. Neither publishes prices in a form we could read on 14 October 2026.",
+      "items": [
+        {"name": "Aikido Security", "url": "https://www.aikido.dev/", "what": "All-in-one application and cloud security suite for developers, including AI pentests and DAST", "starts_at": "See its pricing page",
+         "difference": "Covers code, dependencies, cloud and runtime; Perfai focuses only on permissions in AI-built apps."},
+        {"name": "Escape", "url": "https://escape.tech/", "what": "Business-logic-aware DAST and AI pentesting for apps and APIs", "starts_at": "See its pricing page",
+         "difference": "Aimed at engineering and security teams in larger companies, with attack-surface management."}
+      ]
+    },
+    "reviews": {"count": 3, "rating": 4.33, "url": "https://www.producthunt.com/products/perfai-security-for-vibe-coded-apps/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["Testing live apps instead of only static code", "A clear focus on vibe-coded apps"],
+        "asked": ["Whether it catches multi-step bugs that only appear in a certain order of API calls (yes, the makers say the agent chains requests)", "Whether testing a live app is risky (the makers say it runs no injection attacks and only touches objects it creates; you can use a staging deploy)", "Whether testing with its own objects misses bugs tied to real data shapes (it signs up many role accounts across tenants, the team said)"],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "Scanning live deployed vibe apps rather than static source is the right call. Most tools miss runtime behavior entirely.", "author": "Anand Thakkar", "url": "https://www.producthunt.com/products/perfai-security-for-vibe-coded-apps?comment=5541854"},
+        {"text": "is there a safe/sandboxed mode where the mutation attempts happen", "author": "Gal Dayan", "url": "https://www.producthunt.com/products/perfai-security-for-vibe-coded-apps?comment=5541359"}
+      ]
+    },
+    "pros": [
+      "Free plan with no credit card",
+      "Tests the running app, including multi-step request chains",
+      "Fix pull requests on every paid plan",
+      "Says it avoids destructive injection tests"
+    ],
+    "cons": [
+      "Priced per app, so several apps add up",
+      "The free plan shows only the top 5 findings in full",
+      "Focused on access control, not a full security suite"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/perfai-security-for-vibe-coded-apps",
+      "quotes": [
+        {"author": "Gal Dayan", "url": "https://www.producthunt.com/products/perfai-security-for-vibe-coded-apps?comment=5541359", "text": "Asked whether there is a safe mode, since a successful attack on a live app would touch real data.",
+         "reply": "Intesar Mohammed replied that Perfai runs no injection attacks and tests only with objects it creates, and Qutub Syed added that you choose the target, such as a staging or preview deploy."}
+      ],
+      "x": {"profile_url": "https://x.com/PerfaiSecurity", "search_url": "https://x.com/search?q=perfai&f=live", "none": "Apart from Perfai's own account, we found no posts on X clearly about the product."}
+    },
+    "faq": [
+      {"q": "What is Perfai Security?", "a": "A tool that tests apps built with AI coding tools for broken permissions, such as one customer seeing another's data, and opens fixes. It is made by PerfAI, Inc. of Santa Clara, California."},
+      {"q": "How much does Perfai Security cost?", "a": "There is a free plan. Pro is $49 a month per app and Startup is $299 a month per app with a 15-day free trial; Enterprise is priced on request."},
+      {"q": "Is it safe to run on a live app?", "a": "The makers say it doesn't run injection attacks and only changes objects it created itself. You can also point it at a staging environment or preview deploy."},
+      {"q": "Which tools does it work with?", "a": "Its site lists Replit, Lovable, Bolt.new, Base44, Cursor, Claude Code and Google AI Studio. The Fix Agent supports Replit, Lovable and Base44 on Pro, and Cursor, Claude Code, Copilot and Devin on Startup."},
+      {"q": "Does it find multi-step exploits?", "a": "The makers say yes: the agent maps workflows such as create, update, approve and read, then chains requests in order."}
+    ],
+    "sources": [
+      {"label": "Perfai Security official site", "url": "https://perfai.ai/"},
+      {"label": "Perfai Security pricing", "url": "https://perfai.ai/pricing"},
+      {"label": "Perfai contact page", "url": "https://perfai.ai/contact"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/perfai-security-for-vibe-coded-apps?launch=perfai-security"},
+      {"label": "Aikido Security pricing", "url": "https://www.aikido.dev/pricing"},
+      {"label": "Escape pricing", "url": "https://escape.tech/pricing"}
+    ]
+  }
+}

@@ -112,7 +112,7 @@ function xf_fetch_event_image($url) {
     if (!$url || !wp_http_validate_url($url)) {
         return '';
     }
-    $r = wp_remote_get($url, [
+    $r = wp_safe_remote_get($url, [ // organiser-supplied URL: no private or loopback hosts, even after a redirect
         'timeout' => 15,
         'limit_response_size' => 600000,
         'user-agent' => '100xFounderBot/1.0 (+' . home_url('/') . ')',

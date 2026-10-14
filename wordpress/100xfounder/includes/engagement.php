@@ -10,7 +10,9 @@ if (!defined('ABSPATH')) {
  * ---------------------------------------------------------------------- */
 
 function xf_rate_limited($bucket, $limit, $window) {
-    $key = 'xf_rl_' . md5($bucket . '|' . ($_SERVER['REMOTE_ADDR'] ?? ''));
+    // Same visitor address as the login throttle and ratings (behind the CDN, REMOTE_ADDR may be the edge).
+    $ip = function_exists('xf_client_ip') ? xf_client_ip() : (string) ($_SERVER['REMOTE_ADDR'] ?? '');
+    $key = 'xf_rl_' . md5($bucket . '|' . $ip);
     $count = (int) get_transient($key);
     if ($count >= $limit) {
         return true;
@@ -111,7 +113,10 @@ add_action('admin_post_xf_export_subscribers', function () {
     $out = fopen('php://output', 'w');
     fputcsv($out, ['email', 'source', 'joined_utc']);
     foreach ($wpdb->get_results('SELECT email, source, created_at FROM ' . xf_table('subscribers') . " WHERE status = 'active'", ARRAY_N) as $row) {
-        fputcsv($out, $row);
+        // An address may legally start with = or + (=cmd@x.com), which a spreadsheet would run as a formula.
+        fputcsv($out, array_map(function ($v) {
+            return preg_match('/^[=+\-@\t\r]/', (string) $v) ? "'" . $v : $v;
+        }, $row));
     }
     exit;
 });

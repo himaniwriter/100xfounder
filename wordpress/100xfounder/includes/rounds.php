@@ -25,9 +25,11 @@ xf_register_fields('xf_round', 'Round details', [
     'sector' => ['Sector', 'text', null, 'e.g. AI search, Fintech, Quick commerce'],
     'round' => ['Round', 'select', ['', 'Pre-seed', 'Seed', 'Pre-Series A', 'Series A', 'Series B', 'Series C', 'Series D', 'Series E+', 'Growth', 'Debt', 'Strategic', 'Bridge', 'IPO', 'Acquisition']],
     'lead_investor' => ['Lead investor', 'text'],
+    'investors' => ['Other investors', 'text', null, 'Comma-separated, as named in the source.'],
     'amount_display' => ['Amount (as shown)', 'text', null, 'e.g. $41M or ₹120 Cr'],
     'amount_usd' => ['Amount in USD (number, for totals)', 'number', null, 'e.g. 41000000. Leave empty if undisclosed.'],
     'country' => ['Country', 'select', ['', 'India', 'United States', 'Other']],
+    'city' => ['City (HQ)', 'text', null, 'e.g. Bengaluru. Leave empty if the source does not say.'],
     'announced' => ['Announced', 'date'],
     'source_url' => ['Source (required)', 'url', null, 'Press release, filing or reputable report.'],
 ]);

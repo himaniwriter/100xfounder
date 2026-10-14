@@ -1,0 +1,290 @@
+{
+  "slug": "vidaya-2",
+  "ph_url": "https://www.producthunt.com/posts/vidaya-2",
+  "existing_listing_slug": null,
+  "website": "https://vidaya.ai/",
+  "excerpt": "Vidaya pulls wearables, blood tests, DNA and DEXA scans into one longevity dashboard with a healthspan score and an AI chat. $10/month or $89/year.",
+  "content": "<p>Vidaya is a longevity app that brings your health data into one dashboard. It connects wearables such as Apple Watch, Oura, Whoop, Garmin, Fitbit, Polar and Withings, plus Dexcom and Levels glucose monitors, and lets you upload blood test PDFs, a 23andMe DNA file and DEXA body-composition scans. From that it shows a healthspan score, a biological age estimate, sleep and recovery figures, and blood markers scored against what it calls optimal zones. An AI assistant, Vaya Chat, answers questions about your own data, and you can export doctor-ready PDF reports.</p><p>There is one paid plan, at $10 a month or $89 a year, with the same features either way, a 30-day money-back guarantee and no free trial listed. Vidaya runs on the web, iPhone and Android, and links up to five wearables or glucose monitors at once. It says clearly that its insights are for information only and are not medical advice.</p><p>Vidaya is made by Vidaya LLC, a Delaware company with an address in Raleigh, North Carolina. Its team page names Kevin Amrelle as founder and head of AI strategy and Duddu Venkata Ramana, Ph.D., as co-founder and head of AI and data science. Its privacy policy says AI answers are produced with Google's Gemini API and that your data is not used to train AI models.</p><p>Vidaya, previously called Vitality AI Health, launched on Product Hunt on 16 August 2026 and finished #4 for the day with 244 upvotes and 28 comments. It has 1 Product Hunt review, rated 5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Vidaya ourselves. This page brings together Vidaya's official site, pricing page, team page, contact page and privacy policy, its Product Hunt launch and the official pages of comparable services, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Health and longevity",
+    "platform": "Web, iOS and Android",
+    "os": "Web, iPhone, Android",
+    "starts_at": "$10/month or $89/year",
+    "schema_category": "HealthApplication",
+    "summary_short": "Longevity dashboard that combines wearables, blood tests, DNA and body scans with an AI chat",
+    "maker": {
+      "name": "Kevin Amrelle",
+      "url": "https://www.producthunt.com/@kevin_amrelle"
+    },
+    "use_cases": [
+      "Seeing data from several wearables and a glucose monitor in one place",
+      "Uploading blood test PDFs and tracking markers over time",
+      "Reading genetic traits and risks from a 23andMe file",
+      "Tracking DEXA body composition, lean mass and bone density",
+      "Asking an AI questions about your own health data",
+      "Taking a PDF report of your data to a doctor"
+    ],
+    "audience": {
+      "fit": [
+        "wear more than one tracker or a glucose monitor and want one view of the data",
+        "get regular blood tests or DEXA scans and want to track the numbers over time",
+        "are comfortable paying a monthly or yearly fee for a single all-features plan"
+      ],
+      "not_fit": [
+        "want medical advice or a diagnosis: Vidaya says its insights are for information only",
+        "want to try it free first: no free plan or trial is listed, though there is a 30-day money-back guarantee",
+        "want to connect Apple Health, Samsung Health or Google Fit from the website: its FAQ suggests this is handled differently on the web"
+      ]
+    },
+    "pricing": {
+      "intro": "Vidaya has one plan with the same features billed monthly or yearly. Prices are from Vidaya's own pricing page, in US dollars.",
+      "url": "https://vidaya.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Monthly",
+          "price": "$10/month",
+          "amount": 10,
+          "currency": "USD",
+          "detail": "All features: up to 5 wearables and CGMs with a year of history backfilled, blood work, DNA, DEXA, nutrition and supplement logging, healthspan score, biological age, PDF reports, Vaya Chat (400 messages a month), challenges and priority support"
+        },
+        {
+          "name": "Annual",
+          "price": "$89/year",
+          "amount": 89,
+          "currency": "USD",
+          "detail": "Same features as monthly; works out to $7.42 a month"
+        }
+      ],
+      "notes": [
+        "30-day money-back guarantee; cancel any time.",
+        "No free trial is listed.",
+        "The pricing page also shows a referral code that lowers the annual plan to $69."
+      ]
+    },
+    "alternatives": {
+      "intro": "Other services that bring blood tests and wearable data together. Prices come from each product's own pages, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "Function Health",
+          "url": "https://www.functionhealth.com/",
+          "what": "Membership with 160+ lab tests a year, clinician review and a personalised protocol",
+          "starts_at": "$365/year",
+          "difference": "Function arranges the blood tests themselves and has clinicians review results; Vidaya analyses data you bring from your own devices and labs."
+        },
+        {
+          "name": "Bevel",
+          "url": "https://www.bevel.health/",
+          "what": "AI health coach that combines wearable data and bloodwork, with strain, sleep and recovery scores",
+          "starts_at": "Free to start; see its site for paid plans",
+          "difference": "Has a free starting tier and a training focus; its site shows an iOS app but does not mention Android, which Vidaya supports."
+        },
+        {
+          "name": "InsideTracker",
+          "url": "https://www.insidetracker.com/",
+          "what": "Blood-test-based health and longevity analysis",
+          "starts_at": "See its pricing page",
+          "difference": "Built around its own blood test packages rather than a flat app subscription."
+        }
+      ]
+    },
+    "pros": [
+      "One flat plan with every feature, monthly or yearly",
+      "Accepts wearables, glucose monitors, blood tests, DNA and DEXA scans in one place",
+      "30-day money-back guarantee",
+      "Privacy policy says data is not sold and not used to train AI models",
+      "Works on web, iPhone and Android"
+    ],
+    "cons": [
+      "No free plan or trial listed",
+      "Not medical advice, and the scoring method is Vidaya's own",
+      "AI chat is capped at 400 messages a month",
+      "Health data is sent to Google's Gemini API to generate AI answers"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/vidaya",
+      "x": {
+        "none": "We found no posts about Vidaya on X to link yet.",
+        "search_url": "https://x.com/search?q=vidaya&f=live",
+        "profile_url": "https://x.com/Vidaya_AI"
+      },
+      "quotes": [
+        {
+          "author": "Hamza Afzal Butt",
+          "url": "https://www.producthunt.com/products/vidaya?comment=5789861",
+          "text": "How transparent is the scoring model when Vaya recommends a particular action based on someone's health data?",
+          "reply": "Kevin Amrelle said every Vaya answer cites which of your own data sources it drew from, such as which lab panel, wearable or date range."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What is Vidaya?",
+        "a": "A longevity app that combines data from wearables, glucose monitors, blood tests, DNA files and DEXA scans into one dashboard with a healthspan score, biological age and an AI chat called Vaya Chat."
+      },
+      {
+        "q": "How much does Vidaya cost?",
+        "a": "$10 a month or $89 a year, with the same features on both. There is a 30-day money-back guarantee and you can cancel any time. No free trial is listed."
+      },
+      {
+        "q": "Which devices does Vidaya connect to?",
+        "a": "Its site lists Apple Watch, Oura, Whoop, Garmin, Fitbit, Google Fit, Polar and Withings, plus Dexcom and Levels glucose monitors. Up to five can be linked at once."
+      },
+      {
+        "q": "Is Vidaya medical advice?",
+        "a": "No. Vidaya says its insights are for information only and that you should consult your healthcare provider for medical decisions."
+      },
+      {
+        "q": "What happens to my health data?",
+        "a": "The privacy policy says Vidaya does not sell personal data, encrypts it with AES-256 at rest and TLS in transit, uses Google's Gemini API for AI answers without training models on your data, and lets you delete your account and records."
+      },
+      {
+        "q": "What are the alternatives to Vidaya?",
+        "a": "Function Health (lab testing membership, $365 a year), Bevel (AI health coach, free to start) and InsideTracker (blood-test-based analysis)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Vidaya official site",
+        "url": "https://vidaya.ai/"
+      },
+      {
+        "label": "Vidaya pricing",
+        "url": "https://vidaya.ai/pricing"
+      },
+      {
+        "label": "Vidaya team",
+        "url": "https://vidaya.ai/team"
+      },
+      {
+        "label": "Vidaya about",
+        "url": "https://vidaya.ai/about"
+      },
+      {
+        "label": "Vidaya FAQ",
+        "url": "https://vidaya.ai/faq"
+      },
+      {
+        "label": "Vidaya contact",
+        "url": "https://vidaya.ai/contact"
+      },
+      {
+        "label": "Vidaya privacy policy",
+        "url": "https://vidaya.ai/privacy-policy"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/vidaya-2"
+      },
+      {
+        "label": "Function Health pricing",
+        "url": "https://www.functionhealth.com/pricing"
+      },
+      {
+        "label": "Bevel official site",
+        "url": "https://www.bevel.health/"
+      },
+      {
+        "label": "InsideTracker",
+        "url": "https://www.insidetracker.com/"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/products/vidaya?launch=vidaya-2"
+      }
+    ],
+    "ph": {
+      "rank": 4,
+      "votes": 244,
+      "comments": 28,
+      "followers": 698,
+      "launched": "2026-08-16",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Kevin Amrelle",
+        "role": "Founder and CEO",
+        "url": "https://www.producthunt.com/@kevin_amrelle"
+      },
+      {
+        "name": "Venkata Ramana Duddu",
+        "role": "Co-founder",
+        "url": "https://www.producthunt.com/@vrduddu"
+      }
+    ],
+    "video_url": "https://www.youtube.com/watch?v=D6R9o7s4W3g",
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/7a970293-89ee-41ce-a4da-f0e30ac00338.png?auto=format&fit=max&w=1400",
+        "w": 1920,
+        "h": 1080,
+        "credit": "Image: Vidaya on Product Hunt",
+        "alt": "Vidaya graphic 'Your health data, scored.' with a VAI score of 93 out of 100 measuring how complete your health picture is"
+      },
+      {
+        "url": "https://ph-files.imgix.net/340e0621-5909-452a-9c8d-51754414ef32.png?auto=format&fit=max&w=1400",
+        "w": 1920,
+        "h": 1080,
+        "credit": "Image: Vidaya on Product Hunt",
+        "alt": "Vidaya longevity dashboard on web and phone with recovery, steps, sleep and HRV cards and a healthspan score"
+      },
+      {
+        "url": "https://ph-files.imgix.net/d00658dc-76a9-44ca-9d18-42d71dfed7cb.png?auto=format&fit=max&w=1400",
+        "w": 1920,
+        "h": 1080,
+        "credit": "Image: Vidaya on Product Hunt",
+        "alt": "Vidaya's AI coach Vaya answering 'Why is my sleep score down?' with example questions about labs and VO2 max"
+      },
+      {
+        "url": "https://ph-files.imgix.net/45156219-cbca-4791-9775-b80479b3b060.png?auto=format&fit=max&w=1400",
+        "w": 1920,
+        "h": 1080,
+        "credit": "Image: Vidaya on Product Hunt",
+        "alt": "Vidaya 'Wearables, unified' graphic listing Oura, Whoop, Garmin, MyFitnessPal, Apple Health and Withings, with a connected-devices screen"
+      }
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Kevin Amrelle says Vidaya was previously called Vitality AI Health: same product, same team, new name. The problem he describes is that health data is everywhere and none of it talks to each other: meals in one app, blood work in a lab PDF, DNA in another account, medical history locked in a hospital system and steps in Apple Health.",
+        "Vidaya is built to connect those signals in one place and, in his words, answer what to actually do next rather than add another dashboard."
+      ],
+      "attribution": "Kevin Amrelle, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/vidaya?comment=5768753"
+    },
+    "opinions": {
+      "themes": {
+        "liked": [
+          "Bringing wearables, labs, nutrition, DNA and medical records into one context",
+          "Answers grounded in your own data rather than a generic chatbot"
+        ],
+        "asked": [
+          "Whether family profiles are planned (shared 'Squads' dashboards with privacy controls already exist, the founder said)",
+          "How transparent the scoring is (every Vaya answer cites which of your sources it used)",
+          "How conflicting device readings are handled (a normalisation layer, with the source kept on every data point)",
+          "Whether you can export your history for a doctor (yes, as PDF reports)"
+        ],
+        "criticised": []
+      },
+      "quotes": [
+        {
+          "text": "Would you consider adding family profiles eventually, especially for people managing health information for parents and children?",
+          "author": "Imtiaj Ahmad",
+          "url": "https://www.producthunt.com/products/vidaya?comment=5790349"
+        },
+        {
+          "text": "How does Vidaya handle conflicting measurements when different devices report different values for the same biomarker?",
+          "author": "Nirob",
+          "url": "https://www.producthunt.com/products/vidaya?comment=5790779"
+        }
+      ]
+    },
+    "reviews": {
+      "count": 1,
+      "rating": 5,
+      "url": "https://www.producthunt.com/products/vidaya/reviews",
+      "as_of": "2026-10-14"
+    }
+  }
+}

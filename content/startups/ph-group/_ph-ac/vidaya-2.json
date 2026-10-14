@@ -1,0 +1,331 @@
+{
+ "input": "https://www.producthunt.com/posts/vidaya-2",
+ "final_url": "https://www.producthunt.com/products/vidaya?launch=vidaya-2",
+ "launch": {
+  "slug": "vidaya-2",
+  "name": "Vidaya",
+  "tagline": "Healthspan score from your wearables, labs, and DNA. ",
+  "featuredAt": "2026-08-16T00:01:00-07:00",
+  "dailyRank": "4",
+  "weeklyRank": "29",
+  "points": 244,
+  "commentsCount": 28,
+  "pricingType": "payment_required",
+  "description": "Vidaya turns your wearable data, labs, and habits into a real Healthspan score and a personalized longevity plan. Built by founders tired of dashboards that show numbers but never tell you what to actually do next.",
+  "makers": [
+   {
+    "name": "Kevin Amrelle",
+    "username": "kevin_amrelle",
+    "headline": "Founder & CEO at Vidaya"
+   },
+   {
+    "name": "Venkata Ramana Duddu",
+    "username": "vrduddu",
+    "headline": "Co-founder @ Vitality AI Health"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "7a970293-89ee-41ce-a4da-f0e30ac00338.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "340e0621-5909-452a-9c8d-51754414ef32.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "d00658dc-76a9-44ca-9d18-42d71dfed7cb.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "45156219-cbca-4791-9775-b80479b3b060.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "9178fc24-ca3c-4ecb-851b-5ea6008771cd.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "a15f89c3-b6d1-4c96-ae50-84bbcdd06e48.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "ec9fc78a-6922-46d5-8c49-675bfda0c07a.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=D6R9o7s4W3g"
+   },
+   {
+    "uuid": "b244de9b-8219-4183-87de-63a4cb373b37.png",
+    "type": "interactive_demo",
+    "w": 1200,
+    "h": 630,
+    "video": "https://app.arcade.software/share/s7rPKJ5HI3JsWA9OETzY"
+   }
+  ],
+  "links": [
+   "vidaya.ai",
+   "apps.apple.com",
+   "play.google.com",
+   "twitter.com",
+   "www.instagram.com",
+   "www.linkedin.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    4
+   ]
+  ]
+ },
+ "product": {
+  "name": "Vidaya",
+  "slug": "vidaya",
+  "tagline": "Healthspan score from your wearables, labs, and DNA. ",
+  "description": "Vidaya turns your wearable data, labs, and habits into a real Healthspan score and a personalized longevity plan. Built by founders tired of dashboards that show numbers but never tell you what to actually do next.",
+  "websiteUrl": "https://vidaya.ai",
+  "reviewsCount": 1,
+  "reviewsRating": 5,
+  "followersCount": 698,
+  "twitterUrl": "https://twitter.com/vidaya_ai",
+  "linkedinUrl": "https://www.linkedin.com/company/vidaya-ai",
+  "instagramUrl": "https://www.instagram.com/vidaya.ai",
+  "iosUrl": "https://www.producthunt.com/r/HNLDS2LJKLHM35",
+  "androidUrl": "https://www.producthunt.com/r/XVP5LRIQIBLSD5",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/7a970293-89ee-41ce-a4da-f0e30ac00338.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/340e0621-5909-452a-9c8d-51754414ef32.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/d00658dc-76a9-44ca-9d18-42d71dfed7cb.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/45156219-cbca-4791-9775-b80479b3b060.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/9178fc24-ca3c-4ecb-851b-5ea6008771cd.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/a15f89c3-b6d1-4c96-ae50-84bbcdd06e48.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5768753",
+   "depth": 0,
+   "author": "Kevin Amrelle",
+   "username": "kevin_amrelle",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "A health dashboard that finally connects every signal you generate. That sounds simple, but the work is in the connecting. I’m Kevin Amrelle, Founder and CEO of Vidaya (you may have known us as Vitality AI Health, same product, same team, new name). The problem: Your health data is everywhere, and none of it talks to each other. Your meals are in MyFitnessPal. Your supplements are in SuppCo. Your blood work is in a PDF from Quest. Your DNA report is in your Ancestry account. Your medical history is locked in Epic. Your steps are in Apple Health. Your air quality is on a government EPA dashboard. Your prescriptions are at CVS. Every one of those tells you a piece of the truth. None of them tell you what’s actually happening to your body, or what to do about it. I learned this the hard way. I was in a winter bike race when my heart rate capped at 120 BPM. My cuff confirmed stage 2 hypertension. None of my health apps caught the trend. I built Vidaya so that never happens to anyone again. What it is: Vidaya is the AI longevity dashboard that unifies every health signal you generate, wearables, blood work, DNA, nutrition, supplements, environmental exposure, and your Epic medical recor"
+  },
+  {
+   "id": "5790527",
+   "depth": 1,
+   "author": "Angela Anna",
+   "username": "angelaaa",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@kevin_amrelle &nbsp;Health data has become incredibly fragmented, so bringing wearables, labs, nutrition, DNA, and medical records into one context feels like a genuinely useful step forward. The personalized action layer is the part I’d be most interested in trying."
+  },
+  {
+   "id": "5790543",
+   "depth": 2,
+   "author": "Kevin Amrelle",
+   "username": "kevin_amrelle",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@angelaaa &nbsp;Thank you, Angela. Fragmentation is exactly the enemy, and you picked the part we care most about. Data without a \"so what\" is just prettier fragmentation. The action layer looks at your own trends and says what to do next, and Vaya cites which of your sources each answer draws from, so the reasoning is always visible. Would love to hear what you think if you try it."
+  },
+  {
+   "id": "5790349",
+   "depth": 0,
+   "author": "Imtiaj Ahmad",
+   "username": "imtiaj_ahmad",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Would you consider adding family profiles eventually, especially for people managing health information for parents and children?"
+  },
+  {
+   "id": "5790542",
+   "depth": 1,
+   "author": "Kevin Amrelle",
+   "username": "kevin_amrelle",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Great question, @imtiaj_ahmad &nbsp;, and yes, the foundation for this is already live. We built Squads, shared dashboards for small groups (originally athletes, pilots, military teams) where a captain, coach, or trainer can see the group's data, with privacy controls so every member chooses what they share. Family is a natural next step on that same foundation, and managing a parent's health data is one of the use cases we hear most. An adult child watching a parent's trends is basically a two person squad with the right permissions. Children are a different story. Pediatric health data carries extra regulatory and ethical obligations, COPPA among them, so we are not going to rush it. If we do it, it gets done properly. Is your use case more the parent side or the kid side? That genuinely helps us prioritize."
+  },
+  {
+   "id": "5789861",
+   "depth": 0,
+   "author": "Hamza Afzal Butt",
+   "username": "hamza_afzal_butt",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "How transparent is the scoring model when Vaya recommends a particular action based on someone's health data?"
+  },
+  {
+   "id": "5789864",
+   "depth": 1,
+   "author": "Kevin Amrelle",
+   "username": "kevin_amrelle",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hamza_afzal_butt &nbsp;Great question, Hamza! Transparency is something we designed for at two levels. At the answer level: every Vaya response cites which of YOUR data sources it drew from (which lab panel, which wearable, which date range), so you can always see the basis for a recommendation rather than taking it on faith. If the data isn't sufficient, Vaya says so and tells you what's missing instead of guessing. And recommendations come with the evidence framing, target ranges, and the \"why\". This is drawn from a curated library of 1,000+ citations from medical literature, not free association. At the scoring level: the scores are deliberately explainable rather than a black box. The VAI Score (data completeness) shows you the per-category breakdown, you can see exactly which categories are pulling it up or down and what to connect next. The Healthspan Score is broken into five labeled pillars (cardiovascular, metabolic, sleep &amp; recovery, body composition, resilience), each traceable to the underlying markers. And a boundary we're explicit about: Vaya gives you direction, not diagnosis, anything clinical gets redirected to a medical professional. Every response is also sc"
+  },
+  {
+   "id": "5790572",
+   "depth": 0,
+   "author": "PRIYANKA MANDAL",
+   "username": "priyankamandal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "A useful addition would be letting users export their complete longitudinal health profile for sharing with their doctor."
+  },
+  {
+   "id": "5790586",
+   "depth": 1,
+   "author": "Kevin Amrelle",
+   "username": "kevin_amrelle",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@priyankamandal &nbsp;Thank you, Priyanka, you can actually do this today! Vidaya generates a downloadable PDF health report from your dashboard covering your yearly trends across all your connected domains, plus dedicated exports for blood panels (full marker tables with reference ranges, formatted so a doctor can read them at a glance) and DEXA results. It's exactly the use case we built them for, walking into an appointment with a year of your data instead of describing things from memory. We're continuing to expand what's included (raw CSV/JSON export of everything is on the roadmap). If you try it with your doctor, I'd love to hear how the conversation goes!"
+  },
+  {
+   "id": "5790779",
+   "depth": 0,
+   "author": "Nirob",
+   "username": "nir0b",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "How does Vidaya handle conflicting measurements when different devices report different values for the same biomarker?"
+  },
+  {
+   "id": "5791792",
+   "depth": 1,
+   "author": "Kevin Amrelle",
+   "username": "kevin_amrelle",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@nir0b &nbsp;Good question. We have a few layers for it: wearable data comes in through a normalization layer that maps every device's output to standardized metrics, so we're comparing like with like. From there, we keep source attribution on every data point, you can always see which device a number came from, rather than silently averaging devices that measure differently (a wrist-based HR and a chest strap genuinely aren't the same measurement). For trends, consistency within a source matters more than absolute agreement between sources, so trend lines respect provenance. And when you ask Vaya about a marker, it cites which sources it drew from, so a device disagreement is visible instead of hidden. The honest answer is that no one should be blending conflicting sensors into one fake-precise number, showing you the provenance is the trustworthy version."
+  },
+  {
+   "id": "5790491",
+   "depth": 0,
+   "author": "Monir",
+   "username": "monir_",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The idea of turning scattered health data into something actionable really stands out. Most health apps give you more dashboards and numbers, but Vidaya seems focused on answering the more useful question: “What should I actually do next?” Great launch!"
+  },
+  {
+   "id": "5790546",
+   "depth": 1,
+   "author": "Kevin Amrelle",
+   "username": "kevin_amrelle",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@monir_ &nbsp;Thanks, Monir. \"What should I actually do next\" was literally the design question. Most of us do not need a tenth dashboard, we need the Tuesday morning answer. Every score and trend links to a concrete next step, and you can ask Vaya why a number is moving and what to do about it against your own data. Congrats on CheckYa as well."
+  },
+  {
+   "id": "5790567",
+   "depth": 0,
+   "author": "Tanjum 🔥 🚀🚀",
+   "username": "tanjum",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "I like that Vaya isn't positioned as just another AI chatbot. Being able to ask questions across your own health history and get answers grounded in the underlying data could make AI genuinely useful for personal health."
+  },
+  {
+   "id": "5790584",
+   "depth": 1,
+   "author": "Kevin Amrelle",
+   "username": "kevin_amrelle",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tanjum &nbsp;Thank you, Tanjum, that distinction is the whole product. A generic chatbot can only give you generic advice; Vaya answers against YOUR history and cites which of your sources each answer drew from (which panel, which device, which date range), so you can see the basis rather than trust a vibe. And when your data can't support an answer, it says so instead of guessing. That grounding is what makes AI actually useful for personal health, in our view. Appreciate you looking closely!"
+  }
+ ]
+}

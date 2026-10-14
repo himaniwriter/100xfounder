@@ -1,0 +1,89 @@
+{
+ "slug": "kane-cli",
+ "ph_url": "https://www.producthunt.com/products/lambdatest",
+ "existing_listing_slug": null,
+ "website": "https://www.testmuai.com/kane-cli-ph/",
+ "excerpt": "Kane CLI from TestMu AI (formerly LambdaTest) runs browser tests written in plain English from your terminal, with evidence packs, headless CI mode, Playwright export and a Claude Code skill. Free CLI and local runs; plans from $19 a month. How it works and alternatives.",
+ "content": "<p>Kane CLI is a command-line testing agent from TestMu AI, the company formerly known as LambdaTest. You describe a flow in plain English, such as logging in as an admin, opening billing and checking the plan, and Kane CLI drives a real Chrome browser through it and reports pass or fail. There are no selectors to maintain and no custom test language. Each run produces a portable evidence pack with screenshots, step logs and a pass or fail verdict for each criterion, and flows can be exported as native Playwright scripts.</p><p>It installs from npm, has a visible mode for debugging and a headless mode for CI that use the same test, and an agent flag that outputs structured NDJSON so coding agents such as Claude Code, Cursor, ChatGPT or Gemini can call it; a Kane CLI skill is available for Claude Code. In June 2026 TestMu AI added a generate command that turns a described feature or workflow into structured test cases saved as reusable .testmd files.</p><p>The Kane CLI launch was TestMu AI's fourteenth on Product Hunt. It went live on 13 August 2026 and finished #1 for the day with 421 upvotes and 56 comments.</p><p><em>We have not tested Kane CLI ourselves. This page brings together TestMu AI's Kane CLI page and press release, its Product Hunt page, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Software testing",
+  "platform": "Command line (npm), runs Chrome locally or on TestMu AI's cloud",
+  "starts_at": "Free CLI and local runs; plans from $19/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Terminal agent that runs browser tests written in plain English and returns evidence packs",
+  "maker": {"name": "TestMu AI", "url": "https://www.testmuai.com/about/"},
+  "ph": {"rank": 1, "votes": 421, "comments": 56, "followers": 3295, "launched": "2026-08-13", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Writing end-to-end browser tests in plain English instead of selectors",
+   "Running the same test visibly while debugging and headless in CI",
+   "Letting Claude Code or another coding agent test the app it just changed",
+   "Generating test cases from a feature description",
+   "Exporting flows to Playwright when you need code"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer or QA engineer tired of brittle selector-based tests",
+    "use coding agents and want them to verify changes in a real browser",
+    "already use TestMu AI (LambdaTest) for cloud testing"
+   ],
+   "not_fit": [
+    "need native mobile app testing from this page's documented features: the official page describes Chrome browser testing",
+    "want no account at all: execution goes through a TestMu AI account",
+    "need large volumes of cloud runs on the free plan's 200 credits"
+   ]
+  },
+  "pricing": {
+   "intro": "The CLI is free to install and local runs are free; cloud runs are billed against a TestMu AI plan. Prices are in US dollars from the Kane CLI page.",
+   "url": "https://www.testmuai.com/kane-cli-ph/",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "200 credits a month"},
+    {"name": "Starter", "price": "$19/month", "amount": 19, "currency": "USD", "detail": "2,000 credits a month"},
+    {"name": "Pro", "price": "$99/month", "amount": 99, "currency": "USD", "detail": "10,000 credits a month"},
+    {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Custom pricing"}
+   ],
+   "notes": ["Launch bonus credits applied for the first three months on paid plans."]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists QA.tech, TestSprite and DogQ among the alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "QA.tech", "url": "https://qa.tech/", "what": "AI agents that create and run QA tests", "starts_at": "See its pricing page", "ph_rating": 4.29, "ph_reviews": 7, "ph_url": "https://www.producthunt.com/products/qa-tech", "difference": "A hosted agent that explores and tests your app; Kane CLI runs from your terminal and CI."},
+    {"name": "TestSprite", "url": "https://www.testsprite.com/", "what": "Agentic testing for AI-native teams", "starts_at": "See its pricing page", "ph_rating": 4.75, "ph_reviews": 4, "ph_url": "https://www.producthunt.com/products/testsprite", "difference": "Also aimed at AI coding workflows; compare its MCP-based approach with Kane CLI's terminal agent."},
+    {"name": "DogQ", "url": "https://dogq.io/", "what": "Testing tool that writes, heals and suggests tests", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 6, "ph_url": "https://www.producthunt.com/products/dogq", "difference": "A no-code web interface rather than a command-line tool."}
+   ],
+   "more": "Product Hunt also lists QApilot and Testpine."
+  },
+  "reviews": {"count": 12, "rating": 4.75, "url": "https://www.producthunt.com/products/lambdatest/reviews", "as_of": "2026-10-14"},
+  "pros": [
+   "Tests in plain English, without selectors or a custom language",
+   "Evidence pack with screenshots and per-step logs for every run",
+   "Same test runs visible or headless in CI",
+   "Works with coding agents through structured output and a Claude Code skill"
+  ],
+  "cons": [
+   "Needs a TestMu AI account; cloud runs use plan credits",
+   "Free plan has 200 credits a month",
+   "Natural-language tests can be less precise than coded assertions",
+   "Product Hunt reviews cover TestMu AI's wider product line, not Kane CLI alone"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/lambdatest",
+   "x": {"none": "We found no posts about Kane CLI on X to link yet.", "search_url": "https://x.com/search?q=%22kane%20cli%22&f=live", "profile_url": "https://x.com/lambdatesting"}
+  },
+  "faq": [
+   {"q": "What is Kane CLI?", "a": "A command-line agent from TestMu AI that runs browser tests written in plain English in a real Chrome browser and reports pass or fail with evidence."},
+   {"q": "How do I install it?", "a": "Run npm install -g @testmuai/kane-cli, check it with kane-cli --version, then sign in with kane-cli login (or kane-cli setup for headless environments)."},
+   {"q": "Is Kane CLI free?", "a": "The CLI and local runs are free. Cloud runs use your TestMu AI plan: free with 200 credits, Starter $19 or Pro $99 a month."},
+   {"q": "Can coding agents use it?", "a": "Yes. An agent flag outputs structured NDJSON, and there is a Kane CLI skill for Claude Code."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists QApilot, DogQ, Testpine, QA.tech and TestSprite."}
+  ],
+  "sources": [
+   {"label": "Kane CLI official page", "url": "https://www.testmuai.com/kane-cli-ph/"},
+   {"label": "Kane CLI cookbook", "url": "https://www.testmuai.com/kane-cli-cookbook/"},
+   {"label": "TestMu AI press release on test generation (GlobeNewswire)", "url": "https://www.globenewswire.com/news-release/2026/06/25/3317622/0/en/TestMu-AI-Launches-AI-Powered-Test-Case-Generation-in-Kane-CLI.html"},
+   {"label": "About TestMu AI", "url": "https://www.testmuai.com/about/"},
+   {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/lambdatest"}
+  ]
+ }
+}

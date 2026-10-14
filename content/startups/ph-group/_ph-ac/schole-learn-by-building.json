@@ -1,0 +1,104 @@
+{
+ "input": "https://www.producthunt.com/posts/schole-learn-by-building",
+ "final_url": "https://www.producthunt.com/products/schole-2?launch=schole-learn-by-building",
+ "launch": {
+  "slug": "schole-learn-by-building",
+  "featuredAt": "2026-09-24T00:01:00-07:00",
+  "dailyRank": "1",
+  "points": 378,
+  "commentsCount": 56,
+  "source": "launches page (no gallery/comments)",
+  "makers": [
+   {
+    "name": "Aleksandar Blazhev",
+    "username": "byalexai",
+    "headline": " Hunter & GTM Specialist & Launch Expert"
+   },
+   {
+    "name": "Güneş Ozgün",
+    "username": "gunes_ozgun",
+    "headline": "Product Engineer"
+   },
+   {
+    "name": "Eva Przybyla",
+    "username": "whatevacreates",
+    "headline": "Where design meets code meets story"
+   },
+   {
+    "name": "Amine Ben Ahmed",
+    "username": "amine_ben_ahmed1",
+    "headline": "Engineer"
+   },
+   {
+    "name": "Abhinand Shibu",
+    "username": "abhinand_shibu",
+    "headline": "In love with edtech."
+   },
+   {
+    "name": "Paola Mejia",
+    "username": "paola_mejia",
+    "headline": "Co-founder "
+   },
+   {
+    "name": "Vinitra Swamy",
+    "username": "vinitra",
+    "headline": "building Scholé AI, co-founder & ceo"
+   }
+  ]
+ },
+ "product": {
+  "name": "Scholé",
+  "slug": "schole-2",
+  "tagline": "Turn everyday work into personalized AI learning",
+  "description": "Most AI learning is disconnected from the work people actually need to do. Scholé changes that by giving professionals and teams personalized, task-based learning in real time, right in the flow of work. Grounded in learning science and powered by adaptive AI, Scholé helps learners practice, improve, and apply skills as they work so learning is more relevant, more effective, and immediately useful.",
+  "websiteUrl": "https://schole.ai",
+  "reviewsCount": 1,
+  "reviewsRating": 5,
+  "followersCount": 1509,
+  "twitterUrl": "https://x.com/schole-ai",
+  "linkedinUrl": "https://www.linkedin.com/company/scholeai/",
+  "instagramUrl": "https://www.instagram.com/schole_ai/",
+  "postsCount": 3,
+  "screenshots": [
+   "https://ph-files.imgix.net/1db0a530-e48f-4e2b-a03f-3cb06c536982.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

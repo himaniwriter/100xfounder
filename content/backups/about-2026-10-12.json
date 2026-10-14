@@ -1,0 +1,117 @@
+{
+ "id": 19,
+ "date": "2026-10-04T08:23:12",
+ "date_gmt": "2026-10-04T08:23:12",
+ "guid": {
+  "rendered": "https://100xfounder.com/about/",
+  "raw": "https://100xfounder.com/about/"
+ },
+ "modified": "2026-10-04T08:23:12",
+ "modified_gmt": "2026-10-04T08:23:12",
+ "password": "",
+ "slug": "about",
+ "status": "publish",
+ "type": "page",
+ "link": "https://100xfounder.com/about/",
+ "title": {
+  "raw": "About",
+  "rendered": "About"
+ },
+ "content": {
+  "raw": "<!-- wp:paragraph --><p>100xFounder is a startup launch directory. Every day we review the most upvoted and featured launches on Product Hunt, add the best of them to our directory, and invite their founders to share the story behind what they built.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">What we publish</h2><!-- /wp:heading -->\n<!-- wp:list --><ul><li><strong>Daily launches:</strong> a curated list of the day's most notable new products, with links to try them.</li><li><strong>Founder spotlights:</strong> first-hand stories from founders about why they started, what problem they solve and what they've learned.</li><li><strong>Guides and analysis:</strong> articles for founders and early adopters on launching, growing and discovering new products.</li></ul><!-- /wp:list -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">How we choose launches</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>We include the day's top launches by upvotes, the top featured products, and any launch above 100 upvotes. Listings link back to their Product Hunt page. Founder spotlights are written by the founders themselves and reviewed by our team before publishing.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>Questions or corrections? <a href=\"/contact/\">Contact us</a>.</p><!-- /wp:paragraph -->",
+  "rendered": "<p class=\"wp-block-paragraph\">100xFounder is a startup launch directory. Every day we review the most upvoted and featured launches on Product Hunt, add the best of them to our directory, and invite their founders to share the story behind what they built.</p>\n<h2 class=\"wp-block-heading\">What we publish</h2>\n<ul class=\"wp-block-list\"><li><strong>Daily launches:</strong> a curated list of the day&#8217;s most notable new products, with links to try them.</li><li><strong>Founder spotlights:</strong> first-hand stories from founders about why they started, what problem they solve and what they&#8217;ve learned.</li><li><strong>Guides and analysis:</strong> articles for founders and early adopters on launching, growing and discovering new products.</li></ul>\n<h2 class=\"wp-block-heading\">How we choose launches</h2>\n<p class=\"wp-block-paragraph\">We include the day&#8217;s top launches by upvotes, the top featured products, and any launch above 100 upvotes. Listings link back to their Product Hunt page. Founder spotlights are written by the founders themselves and reviewed by our team before publishing.</p>\n<p class=\"wp-block-paragraph\">Questions or corrections? <a href=\"/contact/\">Contact us</a>.</p>",
+  "protected": false,
+  "block_version": 1
+ },
+ "excerpt": {
+  "raw": "",
+  "rendered": "<p>100xFounder is a startup launch directory. Every day we review the most upvoted and featured launches on Product Hunt, add the best of them to our directory, and invite their founders to share the story behind what they built. What we publish Daily launches: a curated list of the day&#8217;s most notable new products, with [&hellip;]</p>\n",
+  "protected": false
+ },
+ "author": 0,
+ "featured_media": 0,
+ "parent": 0,
+ "menu_order": 0,
+ "comment_status": "closed",
+ "ping_status": "closed",
+ "template": "",
+ "meta": {
+  "wpai_generated_summary": "",
+  "wpai_meta_description": "",
+  "footnotes": ""
+ },
+ "permalink_template": "https://100xfounder.com/%pagename%/",
+ "generated_slug": "about",
+ "class_list": [
+  "post-19",
+  "page",
+  "type-page",
+  "status-publish",
+  "hentry"
+ ],
+ "_links": {
+  "self": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/19",
+    "targetHints": {
+     "allow": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+     ]
+    }
+   }
+  ],
+  "collection": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages"
+   }
+  ],
+  "about": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/types/page"
+   }
+  ],
+  "replies": [
+   {
+    "embeddable": true,
+    "href": "https://100xfounder.com/wp-json/wp/v2/comments?post=19"
+   }
+  ],
+  "version-history": [
+   {
+    "count": 0,
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/19/revisions"
+   }
+  ],
+  "wp:attachment": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=19"
+   }
+  ],
+  "wp:action-publish": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/19"
+   }
+  ],
+  "wp:action-unfiltered-html": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/19"
+   }
+  ],
+  "wp:action-assign-author": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/19"
+   }
+  ],
+  "curies": [
+   {
+    "name": "wp",
+    "href": "https://api.w.org/{rel}",
+    "templated": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,254 @@
+{
+ "slug": "eat-train-feel",
+ "excerpt": "Eat Train Feel is an invitation-only web app for logging meals, workouts and how you feel, with a coach mode and Garmin or Amazfit watch workouts. Free for now; privacy, features and alternatives.",
+ "content": "<p>Eat Train Feel is a web app that keeps three things on one timeline: what you eat, how you train and how you feel. You log meals from a library of 6,300 foods (values from the USDA database), build AMRAP or rounds workouts from the equipment you actually have and follow them one move at a time, and track weight, sleep and a daily check-in. A coach mode lets a personal trainer send workouts, cardio and meal plans to clients and see what each client actually logged.</p><p>Workouts can be sent to a Garmin or Amazfit watch. Today's plan goes over by itself, the lap button moves you to the next exercise, and the result comes back to your log. Your data is encrypted on your device before it syncs, and the site says the operator cannot read it. The exceptions are anything you choose to share with a coach and workouts on their way to your watch. There is no app-store download: you install it from the browser.</p><p>Accounts are by invitation only. Eat Train Feel is run by Aleš Sušnik in Slovenia and launched on Product Hunt on 4 October 2026, finishing #34 for the day with 60 upvotes.</p><p><em>We have not tested Eat Train Feel ourselves. This page brings together its official site, terms and privacy policy, its Product Hunt page and the official pricing pages of comparable apps, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Fitness and nutrition",
+  "platform": "Web app (installable from the browser)",
+  "os": "Any device with a modern browser; watch workouts on Garmin or Amazfit",
+  "starts_at": "Free for now (accounts by invitation)",
+  "schema_category": "HealthApplication",
+  "summary_short": "Invitation-only web app for meals, workouts and how you feel, with a coach mode and watch workouts",
+  "maker": {
+   "name": "Aleš Sušnik",
+   "url": "https://www.producthunt.com/@suskozaver"
+  },
+  "team": [
+   {
+    "name": "Aleš Sušnik",
+    "role": "Maker and operator",
+    "url": "https://www.producthunt.com/@suskozaver"
+   }
+  ],
+  "ph": {
+   "rank": 34,
+   "votes": 60,
+   "comments": 3,
+   "followers": 32,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Training at home with whatever equipment you have, guided move by move",
+   "Logging food, weight, sleep and mood in one place",
+   "A personal trainer sending a client a workout for a specific day and checking it was done",
+   "Following AMRAP or rounds workouts on a Garmin or Amazfit watch without manual syncing"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Aleš Sušnik says Eat Train Feel started this summer when a friend asked him to write her a few workouts. By the fifth one he was copy-pasting from his notes and she was screenshotting his messages. A friend who works as a personal trainer then told him what he needed with clients: send a workout for a specific day, see whether it was really done and see what they eat, all in one place. That became the coach mode.",
+    "The watch feature came from his own training at home with a Garmin fenix 8, where getting an AMRAP workout onto the watch from another app was always a question of whether it had synced. He said he cared about workouts built from the equipment you own, encryption in the browser so the server can't read your data, no app store, and being able to export everything."
+   ],
+   "attribution": "Aleš Sušnik, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/eat-train-feel?comment=5916828"
+  },
+  "audience": {
+   "fit": [
+    "train at home and want workouts built from the equipment you have",
+    "work with a personal trainer, or are one, and want plans and logs in one place",
+    "use a Garmin or Amazfit watch for workouts",
+    "care that your health log is encrypted on your own device"
+   ],
+   "not_fit": [
+    "can't get an invitation: accounts are by invitation only",
+    "might forget your password: there is no password reset, and lost data can't be recovered",
+    "are a coach looking for client payments or a branded app (Spur.fit and Trainerize offer those)",
+    "are under 16, the minimum age in the terms"
+   ]
+  },
+  "pricing": {
+   "intro": "Eat Train Feel's terms say it is free to use, for now. No plans or prices have been published.",
+   "url": "https://eattrainfeel.com/terms",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free (for now)",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "All features, by invitation"
+    }
+   ],
+   "notes": [
+    "The terms say paid plans or features may come later, with at least 15 days' notice in the app before anything you use stops being free.",
+    "You can export workouts, food diary, weight, sleep and check-ins as CSV, plus a full backup file and photos as a ZIP."
+   ]
+  },
+  "alternatives": {
+   "intro": "Hevy and Spur.fit are on Product Hunt's alternatives list; we added Trainerize as a widely used coaching platform. Prices come from each product's own pricing page, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Hevy",
+     "url": "https://www.hevyapp.com/",
+     "what": "Free workout tracker for iOS, Android, smartwatches and web, with a coaching product for trainers",
+     "starts_at": "Free app; Hevy Coach from $25/month with a 30-day free trial",
+     "ph_rating": 4.9,
+     "ph_reviews": 65,
+     "difference": "Native mobile apps with a social feed of lifters. Eat Train Feel is an invitation-only web app that also logs food and encrypts your data on the device."
+    },
+    {
+     "name": "Spur.fit",
+     "url": "https://www.spur.fit/",
+     "what": "AI coaching software for fitness and wellness coaches, with client tracking, payments and a branded app",
+     "starts_at": "Free for up to 2 clients; Pro from $19/month for 5 clients",
+     "ph_rating": 5.0,
+     "ph_reviews": 2,
+     "difference": "Built to run a coaching business, with payments and branding, priced by number of clients. Eat Train Feel's coach mode is free and has no payments."
+    },
+    {
+     "name": "Trainerize",
+     "url": "https://www.trainerize.com/",
+     "what": "Coaching platform for personal trainers and studios",
+     "starts_at": "Free for 1 client; see its pricing page for paid tiers",
+     "difference": "Paid tiers scale with the number of clients and include business add-ons. Its pricing page shows two different sets of prices, so we haven't quoted one."
+    }
+   ],
+   "more": "Product Hunt also lists HYBRD, Zing AI Fitness Coach, Downdog, Fitbod, Watch Planner and BodBot."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/eat-train-feel/reviews",
+   "as_of": "2026-10-14"
+  },
+  "pros": [
+   "Food, training and how you feel on one timeline",
+   "Workouts built from the equipment you actually own",
+   "Data encrypted on your device; the operator says it cannot read it",
+   "Coach mode included, with a separate share switch for each item",
+   "Garmin and Amazfit watch workouts with a lap per exercise",
+   "Free for now, with full CSV export"
+  ],
+  "cons": [
+   "Invitation only",
+   "No password reset: a forgotten password means the data can't be recovered",
+   "Anything shared with a coach is readable on the server",
+   "No native app-store apps",
+   "Pricing after the free period is not known"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/eat-train-feel",
+   "x": {
+    "none": "We found no posts about Eat Train Feel on X yet.",
+    "search_url": "https://x.com/search?q=eattrainfeel&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Eat Train Feel free?",
+    "a": "Yes, for now. Its terms say paid plans may come later, with at least 15 days' notice before anything you use stops being free."
+   },
+   {
+    "q": "How do I get an account?",
+    "a": "Accounts are by invitation only. The site invites people without one to ask for an account."
+   },
+   {
+    "q": "Can my coach see everything?",
+    "a": "No, only what you share. Each item has its own share switch, and shared items are decrypted so the coach can see them, which the maker confirmed on Product Hunt. If you leave a coach, the shared copies on the server are deleted."
+   },
+   {
+    "q": "What happens if I forget my password?",
+    "a": "There is no reset. Your data is encrypted with your password on your device, so if you lose it, nobody can decrypt your data."
+   },
+   {
+    "q": "Which watches does it support?",
+    "a": "Garmin and Amazfit, through Garmin Connect and Zepp. Today's workout is sent to the watch and the result comes back to your log."
+   },
+   {
+    "q": "Why doesn't it show BMI?",
+    "a": "Its terms say BMI needs your age and sex, which the app chooses not to collect."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Eat Train Feel official site",
+    "url": "https://eattrainfeel.com/"
+   },
+   {
+    "label": "Eat Train Feel terms",
+    "url": "https://eattrainfeel.com/terms"
+   },
+   {
+    "label": "Eat Train Feel privacy policy",
+    "url": "https://eattrainfeel.com/privacy"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/eat-train-feel"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/eat-train-feel/alternatives"
+   },
+   {
+    "label": "Hevy",
+    "url": "https://www.hevyapp.com/"
+   },
+   {
+    "label": "Hevy Coach pricing",
+    "url": "https://hevycoach.com/pricing/"
+   },
+   {
+    "label": "Spur.fit pricing",
+    "url": "https://www.spur.fit/pricing"
+   },
+   {
+    "label": "Trainerize pricing",
+    "url": "https://www.trainerize.com/pricing/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/d640996d-b3eb-4dbf-b90c-3dcc0b9ae8b3.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Eat Train Feel graphic 'Meals, workouts and how you feel. And your coach.' with three phone screens and a watch face",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "url": "https://ph-files.imgix.net/e8dff766-b0bc-49fa-be07-8fe52310f569.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Four Eat Train Feel phone screens side by side: eating, training, feeling and coach views",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "url": "https://ph-files.imgix.net/a0d85849-b95c-4928-93c8-263ca96e4912.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Eat Train Feel 'Coach mode: what they did, not what they planned', showing a coach's view of a client's workouts and meals",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "url": "https://ph-files.imgix.net/0ac02b74-51c0-48db-ba4b-76d46945bc3e.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Eat Train Feel 'From the gear in the room to a guided workout': equipment picker, a workout and its results on phone screens",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "url": "https://ph-files.imgix.net/c5988a2c-8ea1-48a5-82c2-69cf29dca7bb.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Eat Train Feel's Garmin watch app showing today's exercise, DB Clean & Press, 10 reps",
+    "w": 1400,
+    "h": 700
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/d640996d-b3eb-4dbf-b90c-3dcc0b9ae8b3.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Eat Train Feel graphic 'Meals, workouts and how you feel. And your coach.' with three phone screens and a watch face",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "url": "https://ph-files.imgix.net/e8dff766-b0bc-49fa-be07-8fe52310f569.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Four Eat Train Feel phone screens side by side: eating, training, feeling and coach views",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "url": "https://ph-files.imgix.net/a0d85849-b95c-4928-93c8-263ca96e4912.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Eat Train Feel 'Coach mode: what they did, not what they planned', showing a coach's view of a client's workouts and meals",
+    "w": 1400,
+    "h": 788
+   }
+  ]
+ }
+}

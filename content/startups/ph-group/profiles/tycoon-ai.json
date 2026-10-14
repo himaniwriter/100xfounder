@@ -1,0 +1,282 @@
+{
+ "slug": "tycoon-ai",
+ "ph_url": "https://www.producthunt.com/posts/tycoon-ai",
+ "existing_listing_slug": null,
+ "website": "https://tycoon.us/",
+ "excerpt": "Tycoon gives one person an AI manager plus coding, content, research and SEO agents. Free to start, then a $50/month usage wallet.",
+ "content": "<p>Tycoon is a workspace where an AI manager runs a team of AI agents for you. You give it a goal or a project, such as growing sign-ups or launching an onboarding flow, and it writes a plan, turns it into task cards, assigns them to agents, tracks progress and asks you before anything risky. At launch the manager was called Astra, the \"AI CEO\"; the site now calls it Tycoon Agent. You can message it in Tycoon, iMessage, Slack or Discord.</p><p>The ready-made agents cover coding (Claude Code, a software delivery agent), content, ad and email campaigns, research, metrics, contract review and SEO, and you can build a custom agent or import a Claude Code or Codex setup. The FAQ says strategy, public publishing, customer messages, spending, production changes and legal risks go to you for approval. Pricing is usage-based: free to start with a $5 welcome credit and no card, then a $50 monthly wallet that pays for AI tokens and machine time, with no per-seat charge.</p><p>Tycoon is operated by HeyMall, Inc., a Delaware corporation, and was founded by Xiaoyin Qu, who says an earlier company, HeyBoss, was handed to an AI CEO in 2025. It launched on Product Hunt on 21 May 2026 and finished #1 for the day with 538 upvotes and 111 comments.</p><p><em>We have not tested Tycoon ourselves. This page brings together its official site, pricing, about page and terms, its Product Hunt launch page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agents",
+  "platform": "Web, with iMessage, Slack and Discord messaging",
+  "starts_at": "Free to start ($5 credit); $50/month wallet",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI manager that plans goals and runs a team of coding, content, research and SEO agents",
+  "maker": {
+   "name": "Xiaoyin Qu",
+   "url": "https://www.producthunt.com/@xiaoyin_qu3"
+  },
+  "team": [
+   {
+    "name": "Xiaoyin Qu",
+    "role": "Founder, Tycoon",
+    "url": "https://www.producthunt.com/@xiaoyin_qu3"
+   },
+   {
+    "name": "Richie Cheng",
+    "role": "Maker; AI QA engineer (Product Hunt headline)",
+    "url": "https://www.producthunt.com/@richie_cheng"
+   }
+  ],
+  "ph": {
+   "rank": 1,
+   "votes": 538,
+   "comments": 111,
+   "followers": 1089,
+   "launched": "2026-05-21",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://youtu.be/KcUf1LuUiU4",
+  "use_cases": [
+   "Turning a goal like \"grow sign-ups this month\" into a plan and tasks",
+   "Running coding work through Claude Code under one manager",
+   "Drafting SEO posts, landing pages and social posts",
+   "Market sizing, competitor research and KPI reports",
+   "Reviewing contracts and NDAs before you sign"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Xiaoyin Qu says that a year before launch, Qu became the first human CEO to be replaced by an AI CEO, named Astra. What sounded like a stunt, Qu says, went on to help run real companies, and Tycoon is that experiment turned into a product.",
+    "Tycoon gives one person an AI CEO and a full team of AI agents: you text Astra your goals or tasks, and she turns them into structured work, assigns agents, reviews progress and asks for approval when it matters. Qu said it is built for solo founders, indie hackers and builders who want a company's output without hiring managers or coordinating everything by hand."
+   ],
+   "attribution": "Xiaoyin Qu, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/tycoon-us?comment=5388686"
+  },
+  "audience": {
+   "fit": [
+    "run a small software or online business alone and want agents to take on marketing, research and coding",
+    "already use Claude Code or Codex and want a manager layer above it",
+    "prefer paying for usage over per-seat subscriptions"
+   ],
+   "not_fit": [
+    "want a free, self-hosted tool: Tycoon is hosted and paid by usage",
+    "need refunds on unused credit: the terms say fees and token balances are not refundable",
+    "rely on CRM or project tools beyond Slack, GitHub, Stripe, GA4 and PostHog: the team said wider coverage was still coming"
+   ]
+  },
+  "pricing": {
+   "intro": "Tycoon charges for usage rather than seats. It is free to start with a $5 welcome credit and no credit card; after that you fund a wallet. Prices are in US dollars.",
+   "url": "https://tycoon.us/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free start",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "$5 welcome credit, no credit card required"
+    },
+    {
+     "name": "Wallet",
+     "price": "$50/month",
+     "amount": 50,
+     "currency": "USD",
+     "detail": "$50 of credit a month for AI tokens (at OpenRouter rates) and machine-hours, with auto top-up; unused credit rolls over; $0 per seat"
+    }
+   ],
+   "notes": [
+    "Machine time is billed per second while agents run: $0.032/hr (1 GB), $0.057/hr (2 GB) or $0.106/hr (4 GB). Idle costs nothing.",
+    "You can top up as you go instead of a monthly budget.",
+    "The terms say fees are not refundable, including unused token balances and partial billing periods."
+   ]
+  },
+  "alternatives": {
+   "intro": "A commenter on Product Hunt compared Tycoon with the open-source Paperclip; Lindy and Relevance AI are other well-known agent platforms. Prices come from each product's own pages, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Paperclip",
+     "url": "https://paperclip.ing/",
+     "what": "Open-source app that runs teams of AI agents as a company, with org charts, budgets and approvals",
+     "starts_at": "Free, MIT-licensed and self-hosted; you pay your AI providers",
+     "difference": "You host it and bring your own agents; Tycoon is hosted, ready-made and favours a flat team under one manager."
+    },
+    {
+     "name": "Lindy",
+     "url": "https://www.lindy.ai/",
+     "what": "AI assistant and agent builder for work tasks",
+     "starts_at": "Free with $50 of credits for 7 days; Team from $29.99/month",
+     "difference": "Built around automating everyday business workflows rather than a manager that runs a whole company."
+    },
+    {
+     "name": "Relevance AI",
+     "url": "https://relevanceai.com/",
+     "what": "Platform for building teams of AI agents for companies",
+     "starts_at": "Enterprise, talk to sales (no prices on its pricing page)",
+     "difference": "Aimed at larger companies; Tycoon targets solo founders and small teams."
+    }
+   ]
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/tycoon-us/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "One AI manager directing specialist agents, rather than one agent with a big title"
+    ],
+    "asked": [
+     "What the manager's review of agent work is grounded in: another AI pass, or tests and real metrics",
+     "How it differs from the open-source Paperclip",
+     "How vague goals such as \"grow revenue\" become measurable work",
+     "Which tools it connects to (Slack, GitHub, Stripe, GA4 and PostHog at launch)",
+     "How it learns a founder's brand voice and quality bar"
+    ],
+    "criticised": [
+     "A commenter warned that passing tests is not proof that shipped code works in a real environment",
+     "One commenter found the CTO and CMO screenshots misleading after the founder said the structure is flat"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Running a few agents in prod myself and the \"LLM reviews LLM\" loop is where confidence quietly inflates.",
+     "author": "Artem Fedorovich",
+     "url": "https://www.producthunt.com/products/tycoon-us?comment=5389742"
+    },
+    {
+     "text": "I'm curious how Tycoon is different from opensource Paperclip?",
+     "author": "George Sostak",
+     "url": "https://www.producthunt.com/products/tycoon-us?comment=5392746"
+    },
+    {
+     "text": "Can Tycoon integrate with existing startup stacks like Slack, Linear, HubSpot, or GitHub workflows?",
+     "author": "Colton Drake",
+     "url": "https://www.producthunt.com/products/tycoon-us?comment=5390960"
+    }
+   ]
+  },
+  "pros": [
+   "One place to give goals and approve work across coding, content, research and SEO",
+   "Clear approval rules for spending, publishing, customer messages and production changes",
+   "No per-seat fee; idle agents cost nothing and unused credit rolls over",
+   "Can import an existing Claude Code or Codex setup",
+   "Reach the manager by iMessage, Slack or Discord"
+  ],
+  "cons": [
+   "Fees and unused token balances are not refundable",
+   "Costs depend on usage, so a monthly bill is hard to predict in advance",
+   "Integrations at launch covered Slack, GitHub, Stripe, GA4 and PostHog; wider CRM and project-tool support was still coming",
+   "Quality of agent reviews was questioned by experienced commenters"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/tycoon-us",
+   "quotes": [
+    {
+     "author": "George Sostak",
+     "url": "https://www.producthunt.com/products/tycoon-us?comment=5392746",
+     "text": "I'm curious how Tycoon is different from opensource Paperclip?",
+     "reply": "Xiaoyin Qu replied that Tycoon is purpose-built for tech companies, not a general framework, and that it prefers a flat team managed by Astra over a multi-level hierarchy."
+    },
+    {
+     "author": "Colton Drake",
+     "url": "https://www.producthunt.com/products/tycoon-us?comment=5390960",
+     "text": "Can Tycoon integrate with existing startup stacks like Slack, Linear, HubSpot, or GitHub workflows?",
+     "reply": "Richie Cheng replied that Slack, GitHub, Stripe, GA4 and PostHog were supported, with wider project and CRM coverage still being added."
+    }
+   ],
+   "x": {
+    "search_url": "https://x.com/search?q=tycoon.us&f=live",
+    "profile_url": "https://x.com/quxiaoyin",
+    "posts": [
+     {
+      "author": "Alex Moore",
+      "url": "https://x.com/heyalexmoore/status/2057374877817176346",
+      "text": "A post on Tycoon's framing as an operating system for one-person companies."
+     }
+    ]
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Tycoon?",
+    "a": "A hosted workspace where an AI manager (Astra at launch, now called Tycoon Agent) takes your goals, plans the work and assigns it to AI agents for coding, content, campaigns, research, metrics, contracts and SEO."
+   },
+   {
+    "q": "How much does Tycoon cost?",
+    "a": "It is free to start with a $5 welcome credit and no card. After that a $50 monthly wallet pays for AI tokens and machine time, with no per-seat fee. You can also top up as you go."
+   },
+   {
+    "q": "Does it act without asking me?",
+    "a": "Only on low-risk, reversible, well-scoped work, according to its FAQ. Strategy, public publishing, customer messages, spending, production changes, legal risk and irreversible actions are sent to you for approval."
+   },
+   {
+    "q": "How is it different from Paperclip?",
+    "a": "Paperclip is free, open source and self-hosted with your own agents. The founder said on Product Hunt that Tycoon is purpose-built for tech companies and uses a flat team under one manager rather than a deep hierarchy."
+   },
+   {
+    "q": "Which tools does it connect to?",
+    "a": "At launch the team listed Slack, GitHub, Stripe, GA4 and PostHog. You can message the manager in iMessage, Slack or Discord and import Claude Code or Codex files."
+   },
+   {
+    "q": "Can I get a refund on unused credit?",
+    "a": "No. Tycoon's terms say fees are not refundable, including unused token balances and partial billing periods. Cancelling takes effect at the end of the billing period."
+   },
+   {
+    "q": "Who runs Tycoon?",
+    "a": "HeyMall, Inc., a Delaware corporation, operates Tycoon. Its founder is Xiaoyin Qu."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Tycoon official site and FAQ",
+    "url": "https://tycoon.us/"
+   },
+   {
+    "label": "Tycoon pricing",
+    "url": "https://tycoon.us/pricing"
+   },
+   {
+    "label": "Tycoon about page",
+    "url": "https://tycoon.us/about"
+   },
+   {
+    "label": "Tycoon terms",
+    "url": "https://tycoon.us/terms"
+   },
+   {
+    "label": "Product Hunt launch page and discussion",
+    "url": "https://www.producthunt.com/posts/tycoon-ai"
+   },
+   {
+    "label": "Paperclip on GitHub",
+    "url": "https://github.com/paperclipai/paperclip"
+   },
+   {
+    "label": "Lindy pricing",
+    "url": "https://www.lindy.ai/pricing"
+   },
+   {
+    "label": "Relevance AI pricing",
+    "url": "https://relevanceai.com/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/1ce7f524-1597-48f8-88c2-305bafb26dfe.png?auto=format&fit=max&w=1400",
+    "alt": "Diagram 'Astra manages the crew' showing the AI CEO linked to CTO, CMO, research, content, video and support agents",
+    "credit": "Image: Tycoon AI on Product Hunt",
+    "w": 1546,
+    "h": 922
+   },
+   {
+    "url": "https://ph-files.imgix.net/322d2c3d-ef8c-4830-a31d-e4681d428094.png?auto=format&fit=max&w=1400",
+    "alt": "Three steps: a message to Astra, tasks assigned to agents, and a finished product launch",
+    "credit": "Image: Tycoon AI on Product Hunt",
+    "w": 1316,
+    "h": 826
+   }
+  ]
+ }
+}

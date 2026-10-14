@@ -1,0 +1,123 @@
+{
+  "slug": "ngrok-ai-gateway",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/ngrok-ai-gateway",
+  "excerpt": "ngrok AI Gateway routes your app's AI calls across OpenAI, Anthropic and self-hosted models through one URL, with fallbacks and cost tracking. $0.05 per million tokens; how it works and alternatives.",
+  "content": "<p>ngrok, the company known for tunnels that put a local app on the internet, now sells an AI gateway. Your app points its OpenAI, Anthropic or Vercel AI SDK at one URL (gateway.ngrok.ai) with an ngrok key, and the gateway routes each request to the model you named, whether that is a public provider, a custom endpoint, or a model you run yourself. Self-hosted models connect over ngrok's private network, so you do not have to open public ports or IPs for them.</p><p>You can list fallback models in the request; if one provider fails, times out or returns an error, the gateway retries the next one. Each app or developer can get its own scoped key limited to certain providers and models, and a dashboard shows tokens, latency, errors and cost across every call. You can use ngrok-managed provider keys, which ngrok passes through at cost, or bring your own keys and be billed by the provider directly.</p><p>ngrok AI Gateway launched on Product Hunt on 5 August 2026 and finished #4 for the day, with 295 upvotes and 61 comments (as of 14 October 2026).</p><p><em>We have not tested ngrok AI Gateway ourselves. This page brings together ngrok.ai, ngrok's documentation and pricing pages and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI gateway / LLM router",
+    "platform": "Hosted API, works with OpenAI, Anthropic and Vercel AI SDKs",
+    "starts_at": "$0.05 per million tokens plus inference cost (prepaid credits)",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Hosted gateway that routes AI calls across public providers and self-hosted models with fallbacks, scoped keys and cost tracking",
+    "maker": {"name": "Niji", "url": "https://www.producthunt.com/@nijikokun"},
+    "team": [
+      {"name": "Niji", "role": "Product manager", "url": "https://www.producthunt.com/@nijikokun"},
+      {"name": "Joel Hans", "role": "Developer relations", "url": "https://www.producthunt.com/@joel_hans2"},
+      {"name": "Alice Wasko", "role": "Software engineer", "url": "https://www.producthunt.com/@alice_wasko"},
+      {"name": "James Szalay", "role": "Staff software engineer", "url": "https://www.producthunt.com/@jszalay"}
+    ],
+    "ph": {"rank": 4, "votes": 295, "comments": 61, "followers": 606, "launched": "2026-08-05", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/d80cd21e-ec08-4bde-be44-0b309d738d0d.png?auto=format&fit=max&w=1400", "w": 1200, "h": 630, "credit": "Image: ngrok via Product Hunt",
+       "alt": "ngrok.ai title card 'One gateway, every model.'"},
+      {"url": "https://ph-files.imgix.net/860e68ff-dcbd-4bd5-861e-39d065566aed.png?auto=format&fit=max&w=1400", "w": 1100, "h": 658, "credit": "Image: ngrok via Product Hunt",
+       "alt": "Diagram of the ngrok AI Gateway routing inference calls to public, self-hosted and dedicated models with failover, authorization and observability"},
+      {"url": "https://ph-files.imgix.net/10f97236-855b-4efa-88f2-ec623c43a172.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: ngrok via Product Hunt",
+       "alt": "ngrok AI Gateway dashboard listing recent requests with model, provider, tokens and cost, plus usage charts"}
+    ],
+    "use_cases": [
+      "Calling OpenAI, Anthropic and self-hosted models from one SDK and URL",
+      "Failing over to another model when a provider is slow or down",
+      "Connecting a model running on your own hardware without exposing it publicly",
+      "Giving each app or developer a scoped key with limits on which models it can use",
+      "Seeing token use, latency and cost per app, developer and model in one dashboard"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Product manager Niji says ngrok spent years helping developers connect apps and services quickly, and that building with AI raised similar infrastructure problems one layer up: an app starts with one model, then needs others, fallbacks, keys and visibility.",
+        "The team said in the comments that people want private connectivity to self-hosted inference for production apps, and increasingly for connecting coding agents to self-hosted models."
+      ],
+      "attribution": "Niji and the ngrok team on Product Hunt",
+      "url": "https://www.producthunt.com/products/ngrok-ai-gateway?comment=5703342"
+    },
+    "audience": {
+      "fit": [
+        "call more than one model provider and are tired of different SDKs and API shapes",
+        "run your own models and want to reach them privately alongside hosted ones",
+        "need per-app or per-developer cost tracking and access control for AI calls"
+      ],
+      "not_fit": [
+        "use one provider and do not need fallbacks: the gateway adds a fee and a hop",
+        "want a self-hosted, open-source router: LiteLLM is the like-for-like option",
+        "need a fallback that never silently changes output quality: a commenter warned this is hard to notice for text replies"
+      ]
+    },
+    "pricing": {
+      "intro": "The AI Gateway has its own usage-based price on ngrok.ai, separate from ngrok's tunnel plans. Prices in US dollars.",
+      "url": "https://ngrok.ai/",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "AI Gateway", "price": "$0.05 per million tokens, plus inference", "amount": 0.05, "currency": "USD", "detail": "Covers routing, observability and the other gateway features; you buy credits up front and usage draws them down"}
+      ],
+      "notes": [
+        "With ngrok-managed keys, inference is passed through at cost. With your own provider keys, the provider bills you directly.",
+        "No subscription or commitment, according to ngrok.ai. Dedicated inference on your choice of compute was marked \"coming soon\"."
+      ]
+    },
+    "pros": [
+      "Works with existing OpenAI, Anthropic and Vercel AI SDKs by changing the base URL",
+      "Private connection to self-hosted models through ngrok's network",
+      "Automatic retries and fallbacks across models and keys",
+      "Low flat fee with bring-your-own-key support"
+    ],
+    "cons": [
+      "Fallbacks to a weaker model can change answer quality without an obvious error",
+      "Hosted only; not open source",
+      "No Product Hunt reviews yet"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["Private access to self-hosted models", "One place for usage, latency and cost with your own keys", "Testing across OpenAI and Anthropic without rewriting integrations"],
+        "asked": ["How easy it is to switch providers when one is slow or offline (fallback list per request, with per-model timeouts)"],
+        "criticised": ["Fallbacks for customer-facing text can be a silent quality change; the team said the dashboard flags fallbacks"]
+      },
+      "quotes": [
+        {"text": "Connecting them through its network instead of exposing a public endpoint solves a real security headache I've dealt with firsthand.", "author": "Itohan Eigbadon", "url": "https://www.producthunt.com/products/ngrok-ai-gateway?comment=5752265"},
+        {"text": "For anything that produces text a fallback is a silent quality change.", "author": "Jernej Jan Kočica", "url": "https://www.producthunt.com/products/ngrok-ai-gateway?comment=5753495"},
+        {"text": "Jumping between multiple dashboards gets old fast, so having that consolidated is a practical improvement.", "author": "Henry Habib", "url": "https://www.producthunt.com/products/ngrok-ai-gateway?comment=5752009"}
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "LiteLLM", "url": "https://www.producthunt.com/products/litellm", "what": "Open-source library and proxy that standardises LLM APIs", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 24, "ph_url": "https://www.producthunt.com/products/litellm",
+         "difference": "You run it yourself; ngrok hosts the gateway and adds private networking to your own models."},
+        {"name": "Eden AI", "url": "https://www.producthunt.com/products/eden-ai", "what": "One API across many AI providers", "starts_at": "See its pricing page", "ph_rating": 4.95, "ph_reviews": 21, "ph_url": "https://www.producthunt.com/products/eden-ai",
+         "difference": "Covers many AI task APIs beyond LLMs; ngrok focuses on LLM routing and self-hosted models."},
+        {"name": "FastRouter.ai", "url": "https://www.producthunt.com/products/fastrouter-ai", "what": "Routes requests to the right LLM for cost, latency and quality", "starts_at": "See its pricing page", "ph_url": "https://www.producthunt.com/products/fastrouter-ai",
+         "difference": "Another hosted LLM router; compare fees, supported models and self-hosted support."}
+      ],
+      "more": "Product Hunt also lists OpenAI and Mistral AI, which are model providers rather than gateways."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/ngrok-ai-gateway/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/ngrok-ai-gateway",
+      "x": {"none": "We have not linked posts about ngrok AI Gateway on X yet.", "search_url": "https://x.com/search?q=ngrok.ai&f=live", "profile_url": "https://x.com/ngrokhq"}
+    },
+    "faq": [
+      {"q": "What is ngrok AI Gateway?", "a": "A hosted gateway from ngrok that routes your app's AI requests to public providers, custom endpoints or self-hosted models through one URL, with fallbacks, scoped keys and observability."},
+      {"q": "How much does ngrok AI Gateway cost?", "a": "$0.05 per million tokens for the gateway, plus the cost of inference. You buy credits up front; there is no subscription. With your own provider keys, the provider bills you for inference directly."},
+      {"q": "How do fallbacks work?", "a": "You set a default model and a list of others in the request. If one fails, times out or errors, the gateway retries with the next. ngrok's team said fallbacks are flagged in the dashboard."},
+      {"q": "Can I use my own OpenAI or Anthropic keys?", "a": "Yes. You can bring your own keys or use ngrok-managed ones; usage from both shows in the same logs."},
+      {"q": "Do I need to change my code?", "a": "Mostly no. ngrok says you change the base URL to gateway.ngrok.ai and use an ngrok access key with the OpenAI, Anthropic or Vercel AI SDK."}
+    ],
+    "sources": [
+      {"label": "ngrok AI Gateway site and pricing", "url": "https://ngrok.ai/"},
+      {"label": "ngrok pricing (tunnel plans)", "url": "https://ngrok.com/pricing"},
+      {"label": "ngrok docs: configure fallback models", "url": "https://ngrok.com/docs/ai-gateway/guides/configure-fallback-models"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/ngrok-ai-gateway"}
+    ]
+  }
+}

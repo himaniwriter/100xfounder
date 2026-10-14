@@ -26,12 +26,7 @@ while (have_posts()) :
     $events_url = xft_page_url('events', 'events');
     $city_url = $city ? add_query_arg('city', rawurlencode($city), $events_url) : $events_url;
     ?>
-    <section class="wrap" style="padding-top:48px">
-        <nav class="crumbs k in" aria-label="Breadcrumb">
-            <a href="<?php echo esc_url($events_url); ?>">Events</a><span>/</span>
-            <?php if ($city) : ?><a href="<?php echo esc_url($city_url); ?>"><?php echo esc_html($city); ?></a><span>/</span><?php endif; ?>
-            <span style="color:var(--tx)"><?php echo esc_html(wp_trim_words(get_the_title(), 7)); ?></span>
-        </nav>
+    <section class="wrap" style="padding-top:4px">
         <div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:36px 48px;align-items:flex-start">
             <div style="flex:999 1 560px;min-width:0">
                 <div class="k in" style="display:flex;gap:12px;flex-wrap:wrap">
@@ -55,7 +50,7 @@ while (have_posts()) :
             </div>
             <?php if ($pic['url']) : ?>
                 <div class="in" style="flex:1 1 340px;animation-delay:.14s">
-                    <span class="ph ph-16x10" style="display:block">
+                    <span class="ph ph-flyer" style="display:block">
                         <img src="<?php echo esc_url($pic['url']); ?>" alt="<?php echo esc_attr(get_the_title()); ?>" referrerpolicy="no-referrer">
                         <?php if ($pic['credit']) : ?><span class="ph-credit"><?php echo esc_html(($pic['theirs'] ? 'Image: ' : '') . $pic['credit']); ?></span><?php endif; ?>
                     </span>

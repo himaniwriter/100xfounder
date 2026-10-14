@@ -26,7 +26,7 @@ function xf_page_allows_ads() {
     if (is_singular('xf_startup') && get_post_meta(get_queried_object_id(), '_xf_indexable', true) !== '1') {
         return false;
     }
-    return true;
+    return (bool) apply_filters('xf_page_allows_ads', true);
 }
 
 add_action('wp_head', function () {
@@ -34,11 +34,16 @@ add_action('wp_head', function () {
     if (!$client || !xf_page_allows_ads()) {
         return;
     }
+    // The account meta keeps AdSense site verification working; the script itself loads once the
+    // page has rendered (after `load`, on idle, or on the first scroll/tap), so it never blocks
+    // the first paint or input. Consent Mode defaults (seo.php, priority 1) are already in place.
+    printf('<meta name="google-adsense-account" content="%s">' . "\n", esc_attr($client));
     printf(
-        '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s" crossorigin="anonymous"></script>' . "\n",
-        esc_attr($client)
+        "<script>(function(){var d=0;function go(){if(d)return;d=1;var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s';document.head.appendChild(s);}"
+        . "addEventListener('load',function(){(window.requestIdleCallback||setTimeout)(go,2000)});['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,go,{once:true,passive:true})});})();</script>\n",
+        esc_js($client)
     );
-}, 1);
+}, 2);
 
 /**
  * A manual in-content ad unit. Renders only when an ad slot ID is configured;

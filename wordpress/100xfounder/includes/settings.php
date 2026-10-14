@@ -45,6 +45,11 @@ function xf_setting_defaults() {
         'x_url' => '',
         'logo_url' => '',
         'default_social_image' => '',
+        'popup_enabled' => 1,
+        'review_auto_approve' => 1,
+        'founders_community_url' => '',
+        'leads_sheet_url' => '',
+        'launch_auto_approve' => 1,
     ];
 }
 

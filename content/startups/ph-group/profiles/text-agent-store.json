@@ -1,0 +1,248 @@
+{
+ "slug": "text-agent-store",
+ "ph_url": "https://www.producthunt.com/posts/text-agent-store",
+ "existing_listing_slug": null,
+ "website": "https://www.imessage.store/",
+ "excerpt": "Agent Store is a directory of AI agents that live as phone numbers you text in Messages: no app, no account. Free to browse; 10 categories.",
+ "content": "<p>Agent Store, launched on Product Hunt as Text Agent Store, is a directory of AI agents that you use by sending a text message. Each agent has a real phone number, so it sits in your Messages app next to your other contacts. You browse by category or by what is trending, tap Text on a listing, and Messages opens a thread with that agent, pre-filled. There is nothing to download and no account to make. You can also text the store's own number, +1 (424) 278-0248, to explore it over text and get a weekly message about new agents.</p><p>On 14 October 2026 the site listed 145 agents and 15 infrastructure providers across ten categories, including Productivity, Business, Travel, Finance, Health &amp; Fitness and Careers. Agents are mostly free to text, the maker says, and some sell in-agent purchases or subscriptions. Builders can submit an agent through a form; the site says every agent is reviewed before it goes live, within 24 hours. A featured \"billboard\" spot at the top of the store is sold by bidding and stays with the buyer until someone pays more.</p><p>The store was made by Stanley Virgint, whose Product Hunt headline reads founder and CEO of the travel agent Soar, with Patrick Sullivan, co-founder and CTO of the messaging company Linq, and Jayanth Sidamsety. It launched on Product Hunt on 17 September 2026 and finished #3 for the day with 282 upvotes and 36 comments.</p><p><em>We have not tested Agent Store ourselves. This page brings together its official site, submit page and privacy policy, its Product Hunt launch page and the official pages of comparable directories, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agents directory",
+  "platform": "Web, iOS app and SMS/iMessage",
+  "starts_at": "Free to browse; each agent sets its own prices",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Directory of AI agents you use by texting a phone number, with no app or account",
+  "maker": {
+   "name": "Stanley Virgint",
+   "url": "https://www.producthunt.com/@stannno"
+  },
+  "team": [
+   {
+    "name": "Stanley Virgint",
+    "role": "Maker; founder and CEO of Soar (Product Hunt headline)",
+    "url": "https://www.producthunt.com/@stannno"
+   },
+   {
+    "name": "Patrick Sullivan",
+    "role": "Maker; co-founder and CTO at Linq (Product Hunt headline)",
+    "url": "https://www.producthunt.com/@patsully88"
+   },
+   {
+    "name": "Jayanth Sidamsety",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@jayanth_sidamsety"
+   }
+  ],
+  "ph": {
+   "rank": 3,
+   "votes": 282,
+   "comments": 36,
+   "followers": 778,
+   "launched": "2026-09-17",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://youtu.be/RiW73esKnOg",
+  "use_cases": [
+   "Finding an AI travel, health, finance or careers agent you can text",
+   "Trying an agent without installing an app or making an account",
+   "Getting a weekly text about newly listed agents",
+   "Listing your own texting agent to reach more users"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Stanley Virgint says a wave of texting agents is coming, each with its own use and personality, but there was no good way to find them beyond spotting one on X and bookmarking it. Agent Store is the answer: one place to browse agents that live as phone numbers rather than apps.",
+    "Virgint said the directory had grown to 137 agents in its first three months, from travel companions and matchmakers to recruiters and health coaches, and invited builders to submit theirs for free distribution. In replies the maker added that agents are vetted by people before listing and that the team hand-picks new agents every Monday."
+   ],
+   "attribution": "Stanley Virgint, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/text-agent-store?comment=5868048"
+  },
+  "audience": {
+   "fit": [
+    "like to use AI through text messages rather than new apps",
+    "build a texting agent and want a place to list it",
+    "use an iPhone, since the store and many agents are built around iMessage"
+   ],
+   "not_fit": [
+    "want one assistant that does everything: this is a directory of separate agents",
+    "need detail on how each agent handles your messages: that is up to each agent, not the store",
+    "want published review criteria: the submit page says agents are reviewed but does not list the checks"
+   ]
+  },
+  "pricing": {
+   "intro": "Browsing Agent Store costs nothing and needs no account. Agents set their own prices: the maker says most are free to text and some offer in-agent purchases or subscriptions. The site lists no subscription for users.",
+   "url": "https://www.imessage.store/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Browse and text agents",
+     "price": "$0 to browse",
+     "detail": "Your usual carrier messaging charges may apply; individual agents may charge"
+    },
+    {
+     "name": "Featured billboard spot (for builders)",
+     "price": "Auction; $325 shown on 14 Oct 2026",
+     "detail": "Top-of-store placement that stays yours until someone pays more"
+    }
+   ],
+   "notes": [
+    "Listing an agent through the submit form has no fee mentioned on the page.",
+    "Payments go through Stripe, according to the privacy policy."
+   ]
+  },
+  "alternatives": {
+   "intro": "Agent Store is unusual in listing agents you text. These are well-known places to find AI assistants and bots, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "GPT Store (ChatGPT)",
+     "url": "https://chatgpt.com/gpts",
+     "what": "OpenAI's directory of custom GPTs inside ChatGPT",
+     "starts_at": "Free sign-up; see ChatGPT's pricing page",
+     "difference": "Much larger catalogue, but every GPT runs inside ChatGPT and needs an account, rather than living in your Messages app."
+    },
+    {
+     "name": "Poe",
+     "url": "https://poe.com/",
+     "what": "Chat app with many AI models and user-made bots",
+     "starts_at": "See its pricing page",
+     "difference": "Bots live in one app you install or open on the web, not as phone numbers."
+    },
+    {
+     "name": "There's An AI For That",
+     "url": "https://theresanaiforthat.com/",
+     "what": "Large directory of AI tools sorted by task",
+     "starts_at": "See its pricing page",
+     "difference": "Covers web apps and tools of every kind; it is a search directory, not a way to start texting an agent."
+    }
+   ]
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/text-agent-store/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Using AI the way you already text people"
+    ],
+    "asked": [
+     "Whether texting agents costs anything (most are free; some sell in-agent purchases or subscriptions, the maker said)",
+     "How low-quality or spam agents are kept out (people review each one, the maker said)",
+     "How to find the right agent (browse the site, or text the store's number)",
+     "Whether builders will get analytics on discovery (the maker said custom tracking is coming)"
+    ],
+    "criticised": []
+   }
+  },
+  "pros": [
+   "No app, no download and no account to try an agent",
+   "Agents sorted into ten categories with trending and editorial picks",
+   "Can be explored over text through the store's own number",
+   "Free listing for builders, reviewed within 24 hours according to the site",
+   "Privacy policy says it stores only a salted hash of your phone number"
+  ],
+  "cons": [
+   "No published review criteria for listed agents",
+   "Each agent has its own pricing and data practices",
+   "No operating company or postal address named on the site or privacy policy",
+   "Builder analytics were still promised, not live, at launch"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/text-agent-store",
+   "x": {
+    "search_url": "https://x.com/search?q=imessage.store&f=live",
+    "profile_url": "https://x.com/textagents",
+    "posts": [
+     {
+      "author": "Stanley",
+      "url": "https://x.com/stannostudio/status/2070296436390949210",
+      "text": "The maker announcing a directory of AI agents you can text on iOS, asking people to tag or submit missing agents."
+     }
+    ]
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Agent Store?",
+    "a": "A directory of AI agents that each have a real phone number. You find one on imessage.store, tap Text, and chat with it in your Messages app."
+   },
+   {
+    "q": "Is it free?",
+    "a": "Browsing is free and needs no account. The maker says most agents are free to text and some offer in-agent purchases or subscriptions."
+   },
+   {
+    "q": "How are agents checked before they are listed?",
+    "a": "The site says every agent is reviewed before it goes live, within 24 hours. On Product Hunt the maker said a group of people vets each one and checks basic safety and usability."
+   },
+   {
+    "q": "How do I list my own agent?",
+    "a": "Use the submit form at imessage.store/submit with your agent's icon, name, tagline, category, website and a contact email. A phone number is needed only to appear in the iOS app."
+   },
+   {
+    "q": "Does Agent Store read my messages?",
+    "a": "Its privacy policy says it never sees your Messages or contacts and keeps only a salted one-way hash of your phone number plus its last two digits. Each agent you text handles your messages under its own terms."
+   },
+   {
+    "q": "What are the alternatives?",
+    "a": "The GPT Store inside ChatGPT, Poe and There's An AI For That help you find AI assistants and tools, but none of them list agents you simply text."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Agent Store official site",
+    "url": "https://www.imessage.store/"
+   },
+   {
+    "label": "Agent Store submit page",
+    "url": "https://www.imessage.store/submit"
+   },
+   {
+    "label": "Agent Store privacy policy",
+    "url": "https://www.imessage.store/privacy"
+   },
+   {
+    "label": "Product Hunt launch page and discussion",
+    "url": "https://www.producthunt.com/posts/text-agent-store"
+   },
+   {
+    "label": "Maker's post on X",
+    "url": "https://x.com/stannostudio/status/2070296436390949210"
+   },
+   {
+    "label": "ChatGPT GPT Store",
+    "url": "https://chatgpt.com/gpts"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/f59470a2-ec64-42b5-8ff7-c69dc3037819.png?auto=format&fit=max&w=1400",
+    "alt": "Agent Store home screen listing a featured travel agent and the most-loved agents of the week",
+    "credit": "Image: Agent Store on Product Hunt",
+    "w": 1720,
+    "h": 1020
+   },
+   {
+    "url": "https://ph-files.imgix.net/d3ed1043-a2a5-47b2-a01a-cb58dc110c42.png?auto=format&fit=max&w=1400",
+    "alt": "Agent Store on a phone, with category tags such as Productivity, Business, Travel and Finance",
+    "credit": "Image: Agent Store on Product Hunt",
+    "w": 1720,
+    "h": 1020
+   },
+   {
+    "url": "https://ph-files.imgix.net/88d0cb67-8ae7-4c4e-a1c1-cf2ab9397c1f.png?auto=format&fit=max&w=1400",
+    "alt": "Three steps: find an agent, tap Text, start texting, beside a Messages thread with a travel agent",
+    "credit": "Image: Agent Store on Product Hunt",
+    "w": 1720,
+    "h": 1020
+   },
+   {
+    "url": "https://ph-files.imgix.net/19ed1418-d415-4d8f-b7a3-d70243ffbdbf.png?auto=format&fit=max&w=1400",
+    "alt": "Agent Store available on the web, in the App Store and by texting its phone number",
+    "credit": "Image: Agent Store on Product Hunt",
+    "w": 1720,
+    "h": 1020
+   }
+  ]
+ }
+}

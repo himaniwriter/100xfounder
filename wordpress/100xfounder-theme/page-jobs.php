@@ -15,18 +15,9 @@ $total_all = (int) (new WP_Query(array_merge(xf_job_query_args(array_merge($f, [
 $base = home_url('/jobs/');
 
 // Headline for clean URLs: "AI & ML jobs in Bengaluru".
-$remote = $f['city'] === 'Remote' || $f['workplace'] === 'Remote';
-$in_city = $f['city'] && $f['city'] !== 'Remote' ? ' in ' . $f['city'] : '';
-if ($f['function']) $heading = ($remote ? 'Remote ' : '') . $f['function'] . ' jobs' . $in_city;
-elseif ($remote) $heading = 'Remote jobs' . $in_city;
-elseif ($in_city) $heading = 'Jobs' . $in_city;
-else $heading = '';
+$heading = xf_job_landing_heading($f);
 $is_landing = (bool) get_query_var('xf_jobs_slug');
 
-// Thin landing pages stay out of the index until they have enough roles.
-if ($is_landing && $q->found_posts < 5) {
-    add_filter('wp_robots', function ($r) { $r['noindex'] = true; $r['follow'] = true; return $r; });
-}
 add_filter('pre_get_document_title', function () use ($heading) {
     return ($heading ?: 'Jobs in India at Startups and Top Companies') . ' (' . wp_date('F Y') . ') | ' . get_bloginfo('name');
 });
@@ -49,6 +40,7 @@ get_header();
 <section class="wrap" style="padding-top:80px;padding-bottom:40px">
     <div class="k in"><span class="ac">Jobs</span> · <?php echo $heading ? esc_html($heading) : 'Startups and top companies hiring in India'; ?></div>
     <h1 class="display in" style="animation-delay:.08s"><?php echo $heading ? esc_html($heading) . '.' : 'Find your<br>next day one.'; // phpcs:ignore ?></h1>
+    <?php $xi = function_exists('xf_job_landing_intro') ? xf_job_landing_intro($f) : ''; if ($xi) echo '<p class="muted in" style="max-width:720px;font-size:17px;line-height:1.6;margin:16px 0 0;animation-delay:.12s">' . esc_html($xi) . '</p>'; ?>
     <form class="jsearch in" method="get" action="<?php echo esc_url(xft_jobs_link($f, ['q' => '', 'where' => ''])); ?>" style="animation-delay:.16s">
         <div class="fp" style="flex:2 1 300px"><label for="jq" class="k" style="font-size:10px">What</label><input id="jq" name="q" value="<?php echo esc_attr($f['q']); ?>" placeholder="Role, skill or company"></div>
         <div class="fp" style="flex:1 1 220px"><label for="jw" class="k" style="font-size:10px">Where</label><input id="jw" name="where" value="<?php echo esc_attr($f['where']); ?>" placeholder="Bengaluru, Remote, Pune"></div>
@@ -98,7 +90,7 @@ get_header();
             $loc = get_post_meta($job->ID, '_xf_city', true);
             $loc = $loc && $loc !== 'Other' ? $loc : get_post_meta($job->ID, '_xf_location', true); ?>
             <div class="row job-row">
-                <span class="av"><?php echo esc_html(xft_initials($company)); ?></span>
+                <?php echo xft_company_mark((int) $job->ID); // phpcs:ignore ?>
                 <div style="flex:1 1 260px;min-width:0">
                     <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><a class="role" href="<?php echo esc_url(get_permalink($job)); ?>"><span class="u"><?php echo esc_html(get_the_title($job)); ?></span></a><?php if (get_post_meta($job->ID, '_xf_hot', true) === 'yes') : ?><span class="chip chip-ac">Founder replies fast</span><?php endif; ?></div>
                     <div class="meta"><?php echo esc_html(implode(' · ', array_filter([$company, get_post_meta($job->ID, '_xf_function', true), wp_trim_words($loc, 6, '…')]))); ?></div>

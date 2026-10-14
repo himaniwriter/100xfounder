@@ -1,0 +1,110 @@
+{
+ "slug": "macaly",
+ "ph_url": "https://www.producthunt.com/products/macaly",
+ "existing_listing_slug": null,
+ "website": "https://www.macaly.com/",
+ "excerpt": "Macaly is an AI website and app builder; its Macaly Cloud launch lets Claude, ChatGPT or Grok build and publish sites on Macaly's hosting, database and domains. Free plan with 100 Cloud actions a month; Starter $10, Pro $25. Pricing and alternatives.",
+ "content": "<p>Macaly is an AI platform for building websites and web apps from a prompt. Its agent can plan a site by asking questions, match the style of a screenshot or sketch, rebuild an existing website from its link, or turn a document such as a PDF or spreadsheet into pages. Sites come with a built-in database, sign-in with Google or email, cookie-free visitor analytics, an SEO audit after each publish, Stripe payments and hosting on a macaly.app address or your own domain.</p><p>The Product Hunt launch was for Macaly Cloud, which lets you keep building inside Claude, ChatGPT or Grok while Macaly supplies the hosting, managed database, domain and more than 70 skills such as email, payments and analytics. You connect your assistant in one click, describe what you want, and tell it to publish. Changes made this way count as Cloud actions: the free plan allows 100 a month and paid plans have no monthly cap, though some skills use Macaly credits. Macaly says data is stored in Frankfurt and Ireland, that it does not train AI models on your content, and that you can export your code and data.</p><p>Macaly is made by Langtail. Macaly Cloud launched on Product Hunt on 30 September 2026 and finished #15 for the day with 128 upvotes and 7 comments; it was the seventh Macaly launch on the site.</p><p><em>We have not tested Macaly ourselves. This page brings together Macaly's website, Macaly Cloud and pricing pages, its Product Hunt page and reviews, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI website builder",
+  "platform": "Web; connects to Claude, ChatGPT and Grok",
+  "starts_at": "Free; Starter $10/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "AI website and app builder; Macaly Cloud lets Claude or ChatGPT build and publish on its hosting",
+  "maker": {"name": "Macaly by Langtail", "url": "https://www.macaly.com/"},
+  "ph": {"rank": 15, "votes": 128, "comments": 7, "followers": 1654, "launched": "2026-09-30", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/e52def62-bc97-4902-a15b-fb178791d12c.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Macaly via Product Hunt", "alt": "Macaly Cloud graphic 'Build and publish sites with your Claude, ChatGPT and more' with three assistant logos"},
+   {"url": "https://ph-files.imgix.net/41f02c42-e6c6-492f-ab02-e0feb4246a81.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Macaly via Product Hunt", "alt": "Prompt box asking an AI assistant to build a yoga studio site where people can book classes"},
+   {"url": "https://ph-files.imgix.net/e7fd32f4-fbc4-4cd9-9362-9beda2bf8dfe.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Macaly via Product Hunt", "alt": "Macaly Cloud graphic listing skills such as payments, SEO, AI features, security, analytics and data scraping"}
+  ],
+  "use_cases": [
+   "Building and publishing a website from inside Claude or ChatGPT",
+   "Launching a small business site with bookings, a database and SEO on your own domain",
+   "Rebuilding an outdated website from its link",
+   "Turning a PDF, spreadsheet or Google Maps listing into a website",
+   "Delivering client sites from separate workspaces as an agency"
+  ],
+  "audience": {
+   "fit": [
+    "already pay for Claude or ChatGPT and want hosting and a database without another builder subscription",
+    "are a non-developer who wants a site with sign-in, forms and payments",
+    "want data hosted in Europe"
+   ],
+   "not_fit": [
+    "need to publish more than one app on the free or Starter plan",
+    "want a traditional drag-and-drop editor rather than an AI agent",
+    "need a stack other than React, Next.js and Postgres"
+   ]
+  },
+  "pricing": {
+   "intro": "Macaly has a free plan and monthly paid plans for individuals and agencies. Prices are in US dollars from Macaly's pricing page; it also shows CZK and EUR.",
+   "url": "https://www.macaly.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "1M monthly credits, 1 published app on macaly.app, 1 GiB storage and database, 100 Cloud actions a month"},
+    {"name": "Starter", "price": "$10/month", "amount": 10, "currency": "USD", "detail": "1M monthly credits, 1 app on your own domain, 5 GiB storage and database, analytics, Stripe, no Cloud action cap"},
+    {"name": "Pro", "price": "$25/month", "amount": 25, "currency": "USD", "detail": "Unlimited custom domains, 10 GiB storage and database, GitHub, Stripe and Macaly MCP access"},
+    {"name": "Agency", "price": "$350/month", "amount": 350, "currency": "USD", "detail": "For agencies running client projects in separate workspaces"}
+   ],
+   "notes": [
+    "Extra database use and backend API calls beyond the allowance are charged in credits.",
+    "Website traffic has a monthly allowance but Macaly says it does not meter or charge for going over yet.",
+    "Custom plans for teams and agencies: hi@macaly.com."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Framer, Dorik and WebWave among Macaly's alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "Framer", "url": "https://www.framer.com/", "what": "Website builder with an AI design agent", "starts_at": "See its pricing page", "ph_rating": 4.84, "ph_reviews": 262, "ph_url": "https://www.producthunt.com/products/framer", "difference": "A visual design-first builder; Macaly is driven by an AI agent and can be used from Claude or ChatGPT."},
+    {"name": "Dorik", "url": "https://dorik.com/", "what": "No-code website builder with AI", "starts_at": "See its pricing page", "ph_rating": 4.51, "ph_reviews": 36, "ph_url": "https://www.producthunt.com/products/dorik", "difference": "Focused on websites and blogs; Macaly also builds apps with a database and sign-in."},
+    {"name": "WebWave", "url": "https://webwave.me/", "what": "AI website creator", "starts_at": "See its pricing page", "ph_rating": 4.71, "ph_reviews": 84, "ph_url": "https://www.producthunt.com/products/webwave", "difference": "A website creator with a visual editor rather than an agent connected to your AI assistant."}
+   ],
+   "more": "Product Hunt also lists Hudby.io and Unicorn Platform."
+  },
+  "reviews": {"count": 4, "rating": 5, "url": "https://www.producthunt.com/products/macaly/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Easy for non-developers to build and deploy", "Used for teaching: high-school students built first websites quickly", "Thoughtful user experience"],
+    "asked": [],
+    "criticised": []
+   },
+   "quotes": [
+    {"text": "I tried Lovable and Macaly to create some websites, but personally I like Macaly much more.", "author": "Pavel Synek", "url": "https://www.producthunt.com/products/macaly/reviews?review=244699"},
+    {"text": "Macaly has some built in UX surprises that make the entire process simple and absolutely delightful.", "author": "David Bentley Hurley", "url": "https://www.producthunt.com/products/macaly/reviews?review=592522"}
+   ]
+  },
+  "pros": [
+   "Use the AI subscription you already have through Macaly Cloud",
+   "Database, sign-in, analytics and hosting included",
+   "Free plan with one published app",
+   "Data hosted in Europe; code and data can be exported"
+  ],
+  "cons": [
+   "Free plan limits Cloud actions to 100 a month",
+   "Free and Starter plans publish only one app at a time",
+   "Some skills use credits on top of the plan",
+   "Few launch-day comments to judge Macaly Cloud by"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/macaly",
+   "x": {"none": "We found no posts about Macaly Cloud on X to link yet.", "search_url": "https://x.com/search?q=macaly&f=live", "profile_url": "https://twitter.com/macalycom"}
+  },
+  "faq": [
+   {"q": "What is Macaly Cloud?", "a": "A Macaly service that lets Claude, ChatGPT or Grok build and publish sites and apps on Macaly's hosting, managed database and domains, with more than 70 skills."},
+   {"q": "Is Macaly free?", "a": "Yes, there is a free plan with one published app on a macaly.app address and 100 Cloud actions a month. Starter is $10 a month and Pro $25 a month."},
+   {"q": "What counts as a Cloud action?", "a": "Changes your AI assistant makes through Macaly Cloud, such as creating or editing files, publishing or running a command. Reading is free."},
+   {"q": "Where is my data stored?", "a": "Macaly says it uses European infrastructure in Frankfurt and Ireland and does not train AI models on your content."},
+   {"q": "What are the alternatives to Macaly?", "a": "Product Hunt lists Framer, WebWave, Dorik, Hudby.io and Unicorn Platform."}
+  ],
+  "sources": [
+   {"label": "Macaly agent page", "url": "https://www.macaly.com/agent"},
+   {"label": "Macaly Cloud", "url": "https://www.macaly.com/cloud"},
+   {"label": "Macaly pricing", "url": "https://www.macaly.com/pricing"},
+   {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/macaly"},
+   {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/macaly/reviews"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/macaly/alternatives"}
+  ]
+ }
+}

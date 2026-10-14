@@ -1,0 +1,238 @@
+{
+  "slug": "unabyss-for-claude",
+  "ph_url": "https://www.producthunt.com/posts/unabyss-for-claude",
+  "existing_listing_slug": null,
+  "website": "https://unabyss.com",
+  "excerpt": "Unabyss pulls your context from Slack, Gmail, Notion, GitHub and more into one memory that Claude, Cursor or ChatGPT read over MCP. From $13/month.",
+  "content": "<p>Unabyss is a context layer for AI tools. You connect the apps where your work lives, such as Slack, Gmail, Notion, GitHub, Google Drive, Linear and meeting recorders like Fathom, Fireflies and Granola, and Unabyss pulls the information into one structured memory, tagged by topic, sensitivity and source. AI tools that support MCP, including Claude, ChatGPT, Cursor, Codex and Gemini, then read the relevant part of that memory, so you do not have to re-explain your role, projects and preferences every time you open a new chat or switch tools. Claude can be connected through an official connector, and the context can also be exported as files.</p><p>The site contrasts this with the built-in memory of ChatGPT or Claude, which stays inside one tool, and with a hand-written context file such as CLAUDE.md, which goes stale. Unabyss stays connected to your sources and updates itself. Setup is said to take under 90 seconds. Data is encrypted at rest and in transit, each connection uses OAuth scoped per app, EU users' data is hosted in the EU, and the company says it does not sell your data or use it to train AI models.</p><p>Unabyss is run by OneType Prosta Spółka Akcyjna, a company registered in Warsaw, Poland. Paid plans start at $13 a month billed annually, each with a 7-day free trial and no card needed. It has launched on Product Hunt more than once, including as Unabyss for Claude.</p><p>Unabyss launched on Product Hunt on 17 July 2026 and finished #1 for the day, with 588 upvotes and 132 comments (as of 14 October 2026). An earlier launch of Unabyss on 25 May 2026 also finished #1 for the day, with 705 upvotes and 145 comments.</p><p><em>We have not tested Unabyss ourselves. This page brings together its official site, privacy policy and terms, its Product Hunt listing and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI productivity",
+    "platform": "Web app with MCP server for AI tools",
+    "starts_at": "7-day free trial, then Pro from $13/month billed annually",
+    "schema_category": "ProductivityApplication",
+    "summary_short": "One self-updating memory from your work apps, shared with Claude, ChatGPT and Cursor over MCP",
+    "maker": {
+      "name": "Unabyss (OneType PSA)",
+      "url": "https://unabyss.com"
+    },
+    "use_cases": [
+      "Giving Claude, Cursor and ChatGPT the same picture of your role and projects without re-pasting it",
+      "Replacing hand-maintained context files such as CLAUDE.md that go out of date",
+      "Pulling meeting notes from Fathom, Fireflies, tl;dv or Granola into the context your AI sees",
+      "Sharing one company context across a team's AI tools on the Team plan",
+      "Choosing which AI tool may see which slice of your context"
+    ],
+    "audience": {
+      "fit": [
+        "use several AI tools (Claude, Cursor, ChatGPT and others) and are tired of repeating yourself",
+        "keep your work in Slack, Gmail, Notion, GitHub or Google Drive and want AI to read it",
+        "are on a team that wants a shared, up-to-date context for its AI agents"
+      ],
+      "not_fit": [
+        "use only one AI tool and its built-in memory is enough for you",
+        "cannot let a third-party service read your email, chat or documents",
+        "want a free plan: every plan is paid after the 7-day trial"
+      ]
+    },
+    "pricing": {
+      "intro": "Prices are from Unabyss's own site, in US dollars. Every plan starts with a 7-day free trial with no credit card required, and annual billing saves up to 20%.",
+      "url": "https://unabyss.com/#pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Pro",
+          "price": "$13/month billed annually ($15 shown alongside)",
+          "amount": 13,
+          "currency": "USD",
+          "detail": "For individuals: up to 3 connected agents via MCP, up to 20 connected accounts, premium usage tier"
+        },
+        {
+          "name": "Max",
+          "price": "$79/month billed annually ($89 shown alongside)",
+          "amount": 79,
+          "currency": "USD",
+          "detail": "Unlimited agents, connected accounts and usage, multi-account support for Google apps, early access to new features. The site suggests it for people on Claude's Max plan"
+        },
+        {
+          "name": "Team",
+          "price": "$39 per seat a month billed annually ($49 shown alongside)",
+          "amount": 39,
+          "currency": "USD",
+          "detail": "Everything in Max for each seat, a shared team workspace, central seat and invoice management; minimum 3 seats"
+        }
+      ],
+      "notes": [
+        "The pricing card shows two figures for each plan (for example $13 and $15) next to the words 'billed annually'; we read the lower figure as the annual rate. Check the pricing toggle on the site before buying."
+      ]
+    },
+    "alternatives": {
+      "intro": "Built-in memory in ChatGPT and Claude is the obvious free option, but it stays inside one tool. These are other memory layers for AI. Prices come from each product's own pricing page, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "Supermemory",
+          "url": "https://supermemory.ai/",
+          "what": "Memory and search API that gives AI agents persistent, searchable memory",
+          "starts_at": "Free with $5 of monthly credits; Pro $19/month",
+          "difference": "Aimed at developers building agents through an API, rather than a ready-made context layer you connect your apps to."
+        },
+        {
+          "name": "Mem0",
+          "url": "https://mem0.ai/",
+          "what": "Memory layer for AI agents and LLM apps",
+          "starts_at": "Free Hobby plan; Starter $19/month",
+          "difference": "A developer platform for adding memory to your own AI apps; Unabyss is built for people who want their existing AI tools to share context."
+        }
+      ],
+      "more": "ChatGPT Memory, Claude's memory and hand-written context files are the do-it-yourself options Unabyss compares itself with on its site."
+    },
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/unabyss/reviews",
+      "as_of": "2026-10-14"
+    },
+    "pros": [
+      "Works across many AI tools through MCP rather than locking memory into one",
+      "Connects 25+ apps, including email, chat, docs, code and meeting recorders",
+      "Context is tagged by sensitivity and you choose what each AI tool can see",
+      "EU hosting for EU users; the company says data is not used to train AI models",
+      "7-day free trial without a card"
+    ],
+    "cons": [
+      "No free plan after the trial",
+      "You give a third party OAuth access to your email, chat and documents",
+      "SOC 2 Type II is listed as in progress, not complete",
+      "The pricing card's two figures per plan are easy to misread"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/unabyss",
+      "x": {
+        "search_url": "https://x.com/search?q=unabyss&f=live",
+        "profile_url": "https://x.com/unabyssapp",
+        "posts": [
+          {
+            "author": "Marcin Uchacz",
+            "url": "https://x.com/marcin_u2/status/2058848452037976420",
+            "text": "Launch post explaining that the team built Unabyss after tiring of keeping many .md context files up to date across Claude, Cursor and OpenClaw."
+          }
+        ]
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Unabyss?",
+        "a": "A context layer for AI. It pulls information from apps such as Slack, Gmail, Notion and GitHub into one structured memory that Claude, Cursor, ChatGPT and other MCP-compatible tools can read."
+      },
+      {
+        "q": "How much does Unabyss cost?",
+        "a": "Pro starts at $13 a month billed annually, Max at $79 and Team at $39 per seat (minimum three seats). Every plan has a 7-day free trial with no card required."
+      },
+      {
+        "q": "How is it different from ChatGPT or Claude memory?",
+        "a": "Built-in memory stays inside one tool. Unabyss takes context from where your work lives and serves it to any MCP-compatible tool, so it follows you between Claude, Cursor and ChatGPT."
+      },
+      {
+        "q": "Does it work with Claude?",
+        "a": "Yes. The site offers an official Claude connector, and you can also connect Cursor, ChatGPT and other agents over MCP or export context files."
+      },
+      {
+        "q": "Is my data safe?",
+        "a": "Unabyss says context is encrypted at rest (AES-256) and in transit (TLS 1.3), each connection uses scoped OAuth that you can revoke, EU users get EU-hosted data, and data is not sold or used to train AI models."
+      },
+      {
+        "q": "What are the alternatives?",
+        "a": "Built-in memory in ChatGPT or Claude, hand-written context files, or developer memory platforms such as Supermemory and Mem0."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Unabyss official site, pricing and FAQ",
+        "url": "https://unabyss.com/"
+      },
+      {
+        "label": "Unabyss privacy policy",
+        "url": "https://unabyss.com/privacy"
+      },
+      {
+        "label": "Unabyss terms",
+        "url": "https://unabyss.com/terms"
+      },
+      {
+        "label": "Product Hunt: Unabyss",
+        "url": "https://www.producthunt.com/products/unabyss"
+      },
+      {
+        "label": "Product Hunt launch: Unabyss for Claude",
+        "url": "https://www.producthunt.com/posts/unabyss-for-claude"
+      },
+      {
+        "label": "Product Hunt launch: Unabyss",
+        "url": "https://www.producthunt.com/posts/unabyss"
+      },
+      {
+        "label": "Marcin Uchacz on X",
+        "url": "https://x.com/marcin_u2/status/2058848452037976420"
+      },
+      {
+        "label": "Supermemory pricing",
+        "url": "https://www.supermemory.ai/pricing"
+      },
+      {
+        "label": "Mem0 pricing",
+        "url": "https://www.mem0.ai/pricing"
+      }
+    ],
+    "ph": {
+      "rank": 1,
+      "votes": 588,
+      "comments": 132,
+      "followers": 2362,
+      "launched": "2026-07-17",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Philip Kubinski",
+        "role": "co-founder @ Unabyss",
+        "url": "https://www.producthunt.com/@philip_kubinski"
+      },
+      {
+        "name": "Stanisław Morawski",
+        "role": "CTO @ Unabyss | Universal Context for AI",
+        "url": "https://www.producthunt.com/@malpunek"
+      },
+      {
+        "name": "Marcin Uchacz",
+        "role": "CEO @ unabyss.com",
+        "url": "https://www.producthunt.com/@marcin_uchacz1"
+      },
+      {
+        "name": "Dominik Bartosik",
+        "role": "Making AI remember · CPO · Unabyss.com",
+        "url": "https://www.producthunt.com/@dominik_bartosik"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/fd1493ae-aeef-440f-8346-1a286c1b2718.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Unabyss on Product Hunt",
+        "alt": "Unabyss for Claude setup: connect Claude, add the Unabyss custom connector and authorise it"
+      },
+      {
+        "url": "https://ph-files.imgix.net/b304811b-a7dd-49b9-953b-0558487f834e.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Unabyss on Product Hunt",
+        "alt": "Unabyss 'Save context from any chat' showing a decision being stored to the Unabyss vault from a Claude chat"
+      },
+      {
+        "url": "https://ph-files.imgix.net/5664b20c-38fd-41d9-abf3-a3eb2331fa5d.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Unabyss on Product Hunt",
+        "alt": "Unabyss 'Reuse it in Cursor. Or any agent.' with notes saved in one chat being read by an agent in another tool"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes.",
+  "also_covers": [
+    "https://www.producthunt.com/posts/unabyss"
+  ]
+}

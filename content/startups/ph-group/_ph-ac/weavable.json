@@ -1,0 +1,328 @@
+{
+ "input": "https://www.producthunt.com/posts/weavable",
+ "final_url": "https://www.producthunt.com/products/weavable?launch=weavable",
+ "launch": {
+  "slug": "weavable",
+  "name": "Weavable",
+  "tagline": "Give every AI agent persistent work context",
+  "featuredAt": "2026-05-11T00:01:00-07:00",
+  "dailyRank": "6",
+  "weeklyRank": "28",
+  "points": 228,
+  "commentsCount": 65,
+  "pricingType": "free_options",
+  "description": "Weavable gives AI agents persistent, live work context from the tools your business already runs on. Through a single MCP endpoint, it turns scattered updates, relationships, and system changes into a usable context layer so agents can reason more accurately without constantly re-ingesting data. The result is lower token usage, better outputs, and more reliable agent behavior across real business workflows.",
+  "makers": [
+   {
+    "name": "Abesh Thakur",
+    "username": "abesh_thakur",
+    "headline": "2x Founder | Ex-PM at Meta"
+   },
+   {
+    "name": "Varun Nair",
+    "username": "varunn",
+    "headline": "2x Founder, Ex-Meta"
+   }
+  ],
+  "hunter": "Ben Lang",
+  "media": [
+   {
+    "uuid": "dbc1f6c8-3f00-4345-b968-1d30a7065611.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "f79bd370-038c-4a93-ba2c-6167b42309ab.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "1a2c8ced-4531-4912-a189-98b280197d84.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "63539167-bd68-493c-b1cc-9d20c9c1865f.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "a2df1e4f-00c2-420d-bc47-68604362608d.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/Lo9P7lngP7c"
+   }
+  ],
+  "links": [
+   "weavable.ai"
+  ],
+  "badges": []
+ },
+ "product": {
+  "name": "Weavable",
+  "slug": "weavable",
+  "tagline": "Give every AI agent persistent work context",
+  "description": "Weavable gives AI agents persistent, live work context from the tools your business already runs on. Through a single MCP endpoint, it turns scattered updates, relationships, and system changes into a usable context layer so agents can reason more accurately without constantly re-ingesting data. The result is lower token usage, better outputs, and more reliable agent behavior across real business workflows.",
+  "websiteUrl": "https://weavable.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 358,
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/dbc1f6c8-3f00-4345-b968-1d30a7065611.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/f79bd370-038c-4a93-ba2c-6167b42309ab.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/1a2c8ced-4531-4912-a189-98b280197d84.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/63539167-bd68-493c-b1cc-9d20c9c1865f.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5324573",
+   "depth": 0,
+   "author": "Abesh Thakur",
+   "username": "abesh_thakur",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 I'm Abesh, co-founder of That Works, and today we are launching Weavable. The Problem Teams building agentic workflows are sitting on a goldmine of work context: decisions, relationships, pipeline data and support history that is spread across every tool they use. Getting that context into agents reliably is still harder than it should be. Most approaches follow one of two flawed paths: ❌ Direct app connections - raw API and MCP responses flood the model, token costs balloon, and the agent burns its context window figuring out what matters instead of acting on it. ❌ Static knowledge bases or RAG - context goes stale the moment it's captured. Agents work from the last snapshot and confidently get things wrong. So we built Weavable . The difference is measurable: one-tenth the tokens compared to direct app connections, with outputs preferred 85% of the time in LLM-as-a-judge evals. How Weavable is Different 🔌 Weavable is context infrastructure for AI agents. Instead of dumping raw data at the model or freezing a snapshot, Weavable maintains a continuous updating changelog across your actual work tools, so the knowledge graph your agents reason from is always mapped"
+  },
+  {
+   "id": "5356159",
+   "depth": 0,
+   "author": "Grant MacLennan",
+   "username": "grantmac_",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Nice! I especially like the activity graph/changelog approach because it treats context as something dynamic. Curious: how do you actually reduce token usage by 90%?"
+  },
+  {
+   "id": "5356203",
+   "depth": 1,
+   "author": "Varun Nair",
+   "username": "varunn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@grantmac_ &nbsp;Thanks! Indeed, nothing about data is every static! On the tokens: pulling raw data into the context window costs you twice. Once on ingestion, then again on reasoning, while the LLM connects records, sorts by recency, and figures out what matters. Weavable's graph already knows the relationships and what changed when. The agent queries for the specific signals it needs, and the model only reasons over those. The 90% is what we see on realistic workflows like pre-meeting briefs, renewal analysis, pipeline summaries, compared to the same thing built on raw MCP calls."
+  },
+  {
+   "id": "5356212",
+   "depth": 2,
+   "author": "Grant MacLennan",
+   "username": "grantmac_",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@varunn &nbsp;very cool guys!"
+  },
+  {
+   "id": "5357538",
+   "depth": 1,
+   "author": "Abesh Thakur",
+   "username": "abesh_thakur",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@grantmac_ &nbsp;thank you for taking a look, and for the encouragement!"
+  },
+  {
+   "id": "5364432",
+   "depth": 0,
+   "author": "Ishan Roy",
+   "username": "radx_ishan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "What interested me most was the activity graph idea. For this kind of problem, it feels a lot more practical than just relying on RAG. A vector database can store snapshots and context, but it doesn’t really capture what actually caused something to change. Like a Slack message from last week might be the thing that moved a deal forward, but a typical RAG setup only knows the message exists, not the impact it had. Tracking what changed, when it changed, and what triggered it feels much closer to how people actually reason about workflows and decisions. One thing I was curious about though is how the graph handles conflicting information across different tools. For example, if HubSpot still shows a deal as open but an email thread suggests it was already verbally closed, how does the system figure out which source to trust?"
+  },
+  {
+   "id": "5364959",
+   "depth": 1,
+   "author": "Abesh Thakur",
+   "username": "abesh_thakur",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@radx_ishan &nbsp;on the conflict resolution - timestamps help to add context and something we build in the graph construction process itself. An extension of this idea could even be used to check which deals in hubspot are actually stale based on Slack conversations/emails/zendesk support tickets (something we use internally)."
+  },
+  {
+   "id": "5356289",
+   "depth": 0,
+   "author": "Nerijus Rimdžius",
+   "username": "nerijusrimdzius",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "This is a really interesting point of view here. The activity-graph approach makes sense — context should reflect what's happening , not just what was recorded. One question from our experience building Faindo: we connect to multiple AI models (ChatGPT, Perplexity, Gemini) and one challenge we keep hitting is that each model interprets the same context differently depending on how it was trained. Does Weavable normalize context before it hits the MCP endpoint, or does it stay model-agnostic and let the agent handle interpretation? Congrats on the launch, following the progress closely."
+  },
+  {
+   "id": "5356355",
+   "depth": 1,
+   "author": "Varun Nair",
+   "username": "varunn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@nerijusrimdzius &nbsp;Thanks, and a great question! Weavable structures context before it hits the MCP endpoint. We rank it, denoise it, and resolve the connections that carry the most signal, so the downstream model gets a high-quality, ready-to-reason-over view rather than raw records to make sense of. One thing we've noticed: because of how we construct the context, models in the same class tend to reason about it in similar ways. The structure is unambiguous enough that interpretation converges. Different classes of model still unlock different capabilities on top of that, but the floor moves up everywhere, and the variance within a class drops noticeably. Curious where you've seen the biggest gaps across the three you're running at Faindo. That's exactly the kind of cross-model signal we want to be informed by."
+  },
+  {
+   "id": "5357455",
+   "depth": 1,
+   "author": "Abesh Thakur",
+   "username": "abesh_thakur",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@nerijusrimdzius &nbsp;Thanks for sharing your build journey here. Since you brought up such an interesting (and real) issue with multiple models interpreting context differently, how have you been handling it so far at your end? Any good results/hacks that you swear by?"
+  },
+  {
+   "id": "5356434",
+   "depth": 0,
+   "author": "Conor McKenna",
+   "username": "iamtherealcmk",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Yes! I've been trying to solve this problem for months with various (often questionable) hacks. Love it. One thing I’ve been thinking about a lot with agentic systems is context governance. Most team have hugely different sensitivity levels across data, customer conversations, board discussions, HR issues, commercial terms, etc. How does Weavable handle permissions and context boundaries so agents only reason from the information that specific users or teams should actually be able to see?"
+  },
+  {
+   "id": "5356529",
+   "depth": 1,
+   "author": "Varun Nair",
+   "username": "varunn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@iamtherealcmk &nbsp;Thanks Conor! Context governance is the right question to be asking as more sensitive work moves through agentic systems. Two layers to how we handle it. First, all connections to source apps are OAuth and read-only, tightly scoped. Weavable only sees what your OAuth scope permits. Second, agents don't connect to your data sources directly. They connect to contexts you've defined in Weavable: curated views with explicit data scopes. This set of HubSpot pipelines, those Slack channels, this Notion space, scoped to the user or team that should see it. Board discussions, HR, commercial terms each live in their own context with their own access rules. The governance boundary sits at the context layer, where you can model the actual sensitivity structure of your team, not at the data source where it's brittle and easy to overshare. Every query against a context is logged too: which agent, which user, which signals were retrieved. So you get an audit trail that matches the governance model. What's the shape of the hacks you've been running? 😅"
+  },
+  {
+   "id": "5357534",
+   "depth": 1,
+   "author": "Abesh Thakur",
+   "username": "abesh_thakur",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@iamtherealcmk &nbsp;to add to this - you are absolutely thinking about the right things. There are some pretty good strides being made to tackle governance overall, but not at the pace at which it needs to keep up - and it's not a matter of just shipping more dashboards. If you do have any working \"hacks\" that you are happy with - do share!"
+  },
+  {
+   "id": "5356479",
+   "depth": 0,
+   "author": "Seyed Danesh",
+   "username": "seyed_danesh",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "This is very cool guys, congratulations. How does Weavable do in terms of speed at a practical level compared to connecting say claude code into all the individual data sources? We've found connecting to the data sources directly is slow as well as being token heavy, claude has to pull some data, build a context, then pull more data, from that figure out what else it needs, it goes on for a while, especially if some are through MCP, does this help with that as well?"
+  },
+  {
+   "id": "5356550",
+   "depth": 1,
+   "author": "Varun Nair",
+   "username": "varunn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@seyed_danesh &nbsp;Thanks Seyed! Yes, this is one of the (many) things that Weavable is designed to fix. You're describing the iterative-retrieval loop: pull, reason, pull more, reason again. Each round trip costs latency and tokens, and with direct MCPs across multiple sources it compounds fast. Weavable does that work upstream and continuously. By the time the agent queries, the connections are resolved, the signals are ranked, and the change history is already in the graph. The agent typically gets what it needs in one query against a context, not four against four data sources. Fewer round trips, lower latency, and roughly a tenth of the tokens. In our testing we've not only found the responses to be of better quality but also found that the downstream model/agent becomes better at adhering to instructions too!"
+  },
+  {
+   "id": "5356750",
+   "depth": 0,
+   "author": "Fabian Exner",
+   "username": "fabian_exner",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats on the launch. The activity graph / changelog framing is strong. How do you decide which context should become a reusable workflow signal versus just being retrieved for one agent query?"
+  },
+  {
+   "id": "5356924",
+   "depth": 1,
+   "author": "Varun Nair",
+   "username": "varunn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@fabian_exner &nbsp;Thanks Fabian! That decision sits with you, not us. A context in Weavable is something you define and curate, so you decide whether a slice of your work data is worth standing up as a reusable view or just queried against a broader context. In practice, two patterns: workflow-shaped (recurring jobs like renewal analysis or pipeline review, where the same signals get queried on a cadence) and exploratory (you query a broader context, find what matters, then decide if it's worth crystallizing into its own). Because the graph underneath is always live, contexts are easy to create, modify, and clone as you learn what the agent actually needs."
+  },
+  {
+   "id": "5357536",
+   "depth": 1,
+   "author": "Abesh Thakur",
+   "username": "abesh_thakur",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@fabian_exner &nbsp;Thanks for the support!"
+  }
+ ]
+}

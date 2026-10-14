@@ -1,0 +1,315 @@
+{
+ "input": "https://www.producthunt.com/products/teachoo-2",
+ "final_url": "https://www.producthunt.com/products/teachoo-2",
+ "launch": {
+  "slug": "teachoo-2",
+  "name": "Teachoo",
+  "tagline": "AI that helps you learn anything and everything.",
+  "featuredAt": "2026-10-02T00:01:00-07:00",
+  "dailyRank": "3",
+  "weeklyRank": "20",
+  "points": 253,
+  "commentsCount": 15,
+  "pricingType": "free",
+  "description": "Teachoo helps students work through homework one question at a time. Type a problem or upload a photo, then work toward the answer with guided questions, feedback and hints. Need more help? Ask for a bigger hint or an explanation of the step. Free to use. Try a problem you haven’t solved in years.",
+  "makers": [
+   {
+    "name": "Haylli Weintraub",
+    "username": "haylli_weintraub",
+    "headline": "Product enthusiast"
+   },
+   {
+    "name": "Phillip DeRenzo",
+    "username": "phillipderenzo",
+    "headline": "Obsessed with growth."
+   }
+  ],
+  "hunter": "Ben Lang",
+  "media": [
+   {
+    "uuid": "b5bdd52a-1841-4098-974e-a42a94ef4479.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=BTL7ur207R4"
+   },
+   {
+    "uuid": "319ba9c4-e5f5-49a7-acf4-37a479285de2.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "7bc73e90-dd84-4674-8b49-516412eced92.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "f0d375c1-a143-4a4d-8e3c-f3383af8866f.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "23aac09a-fb2a-4374-b808-b7503981acc5.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "56aa9fc0-45eb-4a22-8322-d59b757ab612.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "e53e36de-56ac-4eea-b8d0-b47d5f094203.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   }
+  ],
+  "links": [
+   "teachoo.ai"
+  ],
+  "badges": [
+   [
+    "daily",
+    3
+   ]
+  ]
+ },
+ "product": {
+  "name": "Teachoo",
+  "slug": "teachoo-2",
+  "tagline": "AI that helps you learn anything and everything.",
+  "description": "Teachoo helps students work through homework one question at a time. Type a problem or upload a photo, then work toward the answer with guided questions, feedback and hints. Need more help? Ask for a bigger hint or an explanation of the step. Free to use. Try a problem you haven’t solved in years.",
+  "websiteUrl": "https://teachoo.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 703,
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/319ba9c4-e5f5-49a7-acf4-37a479285de2.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/7bc73e90-dd84-4674-8b49-516412eced92.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/f0d375c1-a143-4a4d-8e3c-f3383af8866f.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/23aac09a-fb2a-4374-b808-b7503981acc5.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/56aa9fc0-45eb-4a22-8322-d59b757ab612.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/e53e36de-56ac-4eea-b8d0-b47d5f094203.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5906435",
+   "depth": 0,
+   "author": "Phillip DeRenzo",
+   "username": "phillipderenzo",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 I’m Phillip, one of the makers of Teachoo. Teachoo comes from the team behind iAsk.ai , which has handled nearly 1 billion searches since launch. With Teachoo, we’re bringing that experience to helping students work through problems and understand how to solve them. Ever read a perfectly clear explanation, thought “got it,” then had no idea where to start on the next problem? That’s the gap we’re working on. Teachoo is a free AI tutor that helps students work through problems one question at a time. Type a question or upload a photo of your homework, and it guides you through the reasoning. Here’s an example from our demo. A student asks: “Solve x² − 5x + 6 = 0.” Teachoo starts by asking which two numbers multiply to 6 and add up to −5. The student tries an answer, gets feedback, and works toward the solution through a conversation. Those attempts matter. They give Teachoo something to respond to and the student a chance to figure out the next step. When you need more support, “Bigger hint” gives you another nudge, and “I’m Stuck” helps explain the step. There are also visual explanations, flashcards with spaced repetition, and a dashboard to follow your progress"
+  },
+  {
+   "id": "5914829",
+   "depth": 1,
+   "author": "Shivam Kushwaha",
+   "username": "shivam_kushwaha16",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@phillipderenzo &nbsp;I like this approach a lot it helps students actually understand the problem instead of just copying the answer"
+  },
+  {
+   "id": "5915083",
+   "depth": 2,
+   "author": "Phillip DeRenzo",
+   "username": "phillipderenzo",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "exactly! we've been seeing this with iAsk too. students are asking how to work through a problem, not just what the answer is. that's what we're trying to build on with teachoo. appreciate you checking it out!"
+  },
+  {
+   "id": "5915756",
+   "depth": 1,
+   "author": "Nick Hall",
+   "username": "nicholasghall",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@phillipderenzo &nbsp;Nice work! I forced it to remind me how to use the chain rule, and thought it worked well. I did encounter what might be a bug - several times, parts of its output were surrounded by unnecessary dollar signs. As in: \"Notice how the $du$'s visually cancel out!\" But it was a cosmetic problem only, it handled the actual problem very well."
+  },
+  {
+   "id": "5915774",
+   "depth": 2,
+   "author": "Phillip DeRenzo",
+   "username": "phillipderenzo",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@nicholasghall &nbsp;thanks for trying it out! glad it helped with the chain rule. those dollar signs look like math formatting that isn't displaying properly. appreciate you flagging it, we'll take a look!"
+  },
+  {
+   "id": "5915813",
+   "depth": 1,
+   "author": "Amrita P",
+   "username": "amrita_prajapati2",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@phillipderenzo &nbsp;I like that Teachoo focuses on the guiding students instead of immediately giving them the answers. how do you decide the how much help to give at each steps???"
+  },
+  {
+   "id": "5915872",
+   "depth": 2,
+   "author": "Phillip DeRenzo",
+   "username": "phillipderenzo",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@amrita_prajapati2 &nbsp;thanks! it starts with a small prompt and responds to what the student tries. if they get part of it right, the next question can focus on where they're getting stuck. the student also has control: 'bigger hint' breaks it down further, and \"I'm stuck\" explains the step. we're still refining that balance, so feedback from people trying it is really helpful."
+  },
+  {
+   "id": "5914681",
+   "depth": 0,
+   "author": "Rohit Kushwaha ",
+   "username": "rohit62661",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@phillipderenzo The photo upload featured looks helpful. Can it understand questions from a notebook photo?"
+  },
+  {
+   "id": "5915085",
+   "depth": 1,
+   "author": "Phillip DeRenzo",
+   "username": "phillipderenzo",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@rohit62661 &nbsp;yep! you can upload a notebook photo and work through the question from there. clear handwriting and a well-lit photo will give it the best shot at reading everything correctly. give it a try! btw our iAsk iOS App has a great Snap and Solve feature that we will be integrating into Teachoo."
+  },
+  {
+   "id": "5915809",
+   "depth": 0,
+   "author": "Prakash Nikam",
+   "username": "prakash_nikam911",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Looks clean UI. Kudos 🎉 . is there any option to upload handwritten notes ?"
+  },
+  {
+   "id": "5915873",
+   "depth": 1,
+   "author": "Phillip DeRenzo",
+   "username": "phillipderenzo",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@prakash_nikam911 &nbsp;thank you! yep, use 'upload photo' to add a picture of a handwritten question from your notes. clear handwriting and good lighting help it read the question correctly. curious how it does with yours if you give it a try!"
+  },
+  {
+   "id": "5916305",
+   "depth": 0,
+   "author": "Shushant Lakhyani",
+   "username": "shushantlakhyani",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "I'll test it every day"
+  },
+  {
+   "id": "5914878",
+   "depth": 0,
+   "author": "Kareem Ben",
+   "username": "karimbenkeroum",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "Guiding students toward the answer with hints instead of just handing it over is the right call for actual learning, and free access makes it easy to try. The option to ask for a bigger hint versus a full step explanation is a nice bit of control. Does it adapt the hint difficulty based on how the student is doing?"
+  },
+  {
+   "id": "5915088",
+   "depth": 1,
+   "author": "Phillip DeRenzo",
+   "username": "phillipderenzo",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@karimbenkeroum &nbsp;it responds to what the student tries in the conversation. in our demo, the student gets the numbers right but the signs wrong, so teachoo focuses on that specific mistake. they can then ask for a bigger hint to break it down further, or use \"I'm Stuck\" for an explanation of the step. the idea is to give them enough help to keep going without giving them the answer."
+  },
+  {
+   "id": "5916207",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "\"read the explanation, thought got it, then had no idea where to start on the next problem\" is a really specific and true observation, that's the actual failure mode of most homework help tools, not the one they market against. the thing I'd want to know as a parent: what stops a kid from just mashing \"bigger hint\" until the hint is basically the answer? guided questions only teach something if the difficulty ramps slower than the kid's patience for clicking through them."
+  }
+ ]
+}

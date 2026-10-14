@@ -1,0 +1,117 @@
+{
+  "slug": "referent-2",
+  "ph_url": "https://www.producthunt.com/posts/referent-2",
+  "existing_listing_slug": null,
+  "website": "https://referent.law",
+  "excerpt": "Referent is AI-native practice management for solo lawyers and small law firms: AI agents handle intake, matters, email, drafts and deadlines, with the lawyer approving.",
+  "content": "<p>Referent is practice management software for law firms, built around AI agents. It combines a legal CRM, client intake, matter management, documents, deadlines, email workflows, follow-ups and billing preparation in one workspace. Clients talk to an AI at your intake link, which screens the fit, opens a matter and prepares the engagement for your approval. Connected Gmail or Outlook inboxes are filed to the right matter, replies and documents arrive pre-drafted from the matter's context, and court dates and filing deadlines are tracked. You can run it by telling it in chat what needs to happen.</p><p>Referent's pitch is that the lawyer stays in control: anything client-facing or high-risk waits for approval and every agent action is logged. Its makers said on Product Hunt that workspaces are isolated and that they don't train on customer data. There are iPhone and Android apps and an MCP server.</p><p>Referent is led by founder and CEO George Zaletski, according to its About page, and comes from the team behind the consumer product AI Lawyer. The company named on its site is AI LAWTECH sp. z o.o. of Radom, Poland; the team says it is based in Poland and builds for US firms. Referent launched on Product Hunt on 30 August 2026 and finished #6 for the day with 159 upvotes and 42 comments (as of 14 October 2026).</p><p><em>We have not tested Referent ourselves. This page brings together its official site and About page, its Product Hunt launch and the public pricing page of a comparable tool, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Legal practice management",
+    "platform": "Web app, iPhone and Android apps",
+    "starts_at": "Pricing not published",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI-native practice management and legal CRM for solo lawyers and small firms",
+    "maker": {"name": "George Zaletski", "url": "https://www.producthunt.com/@gproduct"},
+    "team": [
+      {"name": "George Zaletski", "role": "Founder and CEO", "url": "https://www.producthunt.com/@gproduct"},
+      {"name": "Alexandr Gulid", "role": "Co-founder of the AI Lawyer project", "url": "https://www.producthunt.com/@alexgulid"},
+      {"name": "Nikita Shestakov", "role": "CTO", "url": "https://www.producthunt.com/@nikita_shestakov1"},
+      {"name": "Seva Rybakov", "role": "AI tech lead", "url": "https://www.producthunt.com/@seva_ry"},
+      {"name": "Karol", "role": "Lead developer", "url": "https://www.producthunt.com/@lptnbrg"}
+    ],
+    "ph": {"rank": 6, "votes": 159, "comments": 42, "followers": 677, "launched": "2026-08-30", "as_of": "2026-10-14"},
+    "video_url": "https://www.youtube.com/watch?v=VzfIO3bXjNI",
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/403a25cd-b2de-45b5-8b63-5303ba8668d4.jpeg?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Referent on Product Hunt",
+       "alt": "Referent graphic 'Lawyers stay in control' with an AI-suggested task, an approve button and an incoming client email"},
+      {"url": "https://ph-files.imgix.net/4cff537d-f81f-4d97-a63d-7b5c81cc4f19.jpeg?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Referent on Product Hunt",
+       "alt": "Referent 'Live from the 1st minute' screen importing a practice from a connected inbox"},
+      {"url": "https://ph-files.imgix.net/05e662be-7a39-47f0-a638-78bc154d03c0.jpeg?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Referent on Product Hunt",
+       "alt": "Referent 'AI agents run the legal routine' chat moving a matter forward, drafting an engagement agreement and scheduling a review"},
+      {"url": "https://ph-files.imgix.net/ab9c73d8-4f3d-485b-b259-78ff0c4bea8e.jpeg?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Referent on Product Hunt",
+       "alt": "Referent title card 'Legal Practice Management for AI era'"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "George, Referent's founder, says his team launched AI Lawyer almost four years ago, and that it now ranks first on Google for \"AI lawyer\" and has been used by tens of thousands of lawyers.",
+        "Their feedback kept pointing to the same gap: legal tech had plenty of research and drafting tools, but legal CRM and practice management software were still stuck before AI. Referent is the team's answer for solo and small law firms."
+      ],
+      "attribution": "George Zaletski, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/referent?comment=5814877"
+    },
+    "use_cases": [
+      "Screening and signing new clients through an AI intake link",
+      "Filing every email and attachment to the right matter automatically",
+      "Getting first drafts of replies, letters and documents to approve",
+      "Tracking court dates, filings and limitation deadlines"
+    ],
+    "audience": {
+      "fit": [
+        "are a solo lawyer or small firm without back-office staff",
+        "work mainly from Gmail or Outlook",
+        "want AI to prepare the work but keep sign-off on everything client-facing"
+      ],
+      "not_fit": [
+        "need a published price list before talking to sales: Referent asks firms to apply or book a demo",
+        "are uncomfortable giving software access to client email, a concern raised on Product Hunt"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published. Referent's site asks firms to apply or book a demo and does not list prices.",
+      "url": "https://referent.law/",
+      "checked": "2026-10-14",
+      "plans": []
+    },
+    "alternatives": {
+      "intro": "Established practice management software for law firms. Prices are from each company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "MyCase", "url": "https://www.mycase.com/", "what": "Legal practice management with case, contact, billing and client communication tools", "starts_at": "Basic $50/user/month billed annually ($60 monthly)",
+         "difference": "A long-established, per-user platform; Referent is built around AI agents doing the routine work with lawyer approval."},
+        {"name": "Clio", "url": "https://www.clio.com/", "what": "Widely used legal practice management and CRM software", "starts_at": "See its pricing page",
+         "difference": "Larger ecosystem of integrations; Referent focuses on AI-run intake, email filing and drafting for small firms."}
+      ]
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/referent/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["Moving AI from research tools into running the firm"],
+        "asked": ["Whether lawyers will let AI read their email (makers: nothing goes to a client without approval, every action is logged, Gmail and Outlook access is verified, workspaces are isolated)"],
+        "criticised": []
+      },
+      "quotes": []
+    },
+    "pros": [
+      "Covers intake, matters, email, drafting and deadlines in one place",
+      "Lawyer approval required for anything client-facing, with an audit log",
+      "Mobile apps and an MCP server",
+      "Built by a team with an established legal AI product"
+    ],
+    "cons": [
+      "No public pricing",
+      "Aimed at solo and small firms, mainly in the US",
+      "Requires connecting your firm's email"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/referent",
+      "quotes": [
+        {"author": "Alexandr Gulid", "url": "https://www.producthunt.com/products/referent?comment=5825009", "text": "Replying to a commenter doubtful that lawyers would let AI read their email.",
+         "reply": "Nothing goes to a client without the lawyer approving it, every action lands in an audit log, Gmail and Outlook are both verified with Google and Microsoft, and workspaces are isolated."}
+      ],
+      "x": {"profile_url": "https://twitter.com/referentlaw", "search_url": "https://x.com/search?q=referent.law&f=live", "none": "Apart from Referent's own account, we found no posts on X clearly about the product."}
+    },
+    "faq": [
+      {"q": "What is Referent?", "a": "AI-native practice management software for law firms: a legal CRM with intake, matters, email filing, drafting, deadlines and billing prep, run by AI agents that the lawyer supervises."},
+      {"q": "How much does Referent cost?", "a": "Referent does not publish prices; its site asks firms to apply or book a demo."},
+      {"q": "Who is behind Referent?", "a": "Founder and CEO George Zaletski and the team behind AI Lawyer. The company on its site is AI LAWTECH sp. z o.o., based in Poland."},
+      {"q": "Does Referent send anything to clients on its own?", "a": "No. Its makers say anything client-facing or high-risk waits for the lawyer's approval and every action is logged."},
+      {"q": "Does Referent train AI on client data?", "a": "Its makers said on Product Hunt that they don't train on customer data and that workspaces are isolated."}
+    ],
+    "sources": [
+      {"label": "Referent official site", "url": "https://referent.law/"},
+      {"label": "Referent About page", "url": "https://referent.law/about"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/referent?launch=referent-2"},
+      {"label": "MyCase pricing", "url": "https://www.mycase.com/pricing/"}
+    ]
+  }
+}

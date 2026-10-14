@@ -1,0 +1,107 @@
+{
+ "input": "https://www.producthunt.com/posts/testsprite-3-0",
+ "final_url": "https://www.producthunt.com/products/testsprite?launch=testsprite-3-0",
+ "launch": {
+  "slug": "testsprite-3-0",
+  "featuredAt": "2026-05-22T00:01:00-07:00",
+  "dailyRank": "1",
+  "points": 465,
+  "commentsCount": 66,
+  "source": "launches page (no gallery/comments)",
+  "makers": [
+   {
+    "name": "Shawnie Shan",
+    "username": "shawnie_shan",
+    "headline": "Founding team member in TestSprite"
+   },
+   {
+    "name": "Adam Ji",
+    "username": "adam_ji1",
+    "headline": "Marketing Manager"
+   },
+   {
+    "name": "Rui Li",
+    "username": "rui_li6",
+    "headline": "Co-founder and CTO of TestSprite"
+   },
+   {
+    "name": "Mia Wang",
+    "username": "mia_wang3",
+    "headline": "UX Designer"
+   },
+   {
+    "name": "Yunhao Jiao",
+    "username": "jiao_yunhao",
+    "headline": "Founder & CEO of TestSprite"
+   },
+   {
+    "name": "Ken Oestreich",
+    "username": "fountainhead",
+    "headline": "Product-Market Fit for B2B Products"
+   },
+   {
+    "name": "Malcolm Yang",
+    "username": "malcolm_yang",
+    "headline": "Developer of ML & Smart Contract"
+   }
+  ]
+ },
+ "product": {
+  "name": "TestSprite",
+  "slug": "testsprite",
+  "tagline": "Agentic testing for the AI-native team",
+  "description": "TestSprite is the easiest AI agent for frontend and backend software testing, automating the entire testing workflow—from test planning and code generation to execution and debugging. With natural language interaction, seamless coverage for both frontend and backend, and the ability to cut testing costs by up to 90%, it’s the ultimate tool for developers to save time and deliver high-quality software faster.",
+  "websiteUrl": "http://testsprite.com",
+  "reviewsCount": 4,
+  "reviewsRating": 4.75,
+  "followersCount": 4878,
+  "twitterUrl": "https://x.com/test_sprite",
+  "linkedinUrl": "https://www.linkedin.com/company/testsprite",
+  "instagramUrl": "",
+  "githubUrl": "https://github.com/TestSprite/Docs",
+  "postsCount": 5,
+  "screenshots": [
+   "https://ph-files.imgix.net/2f5eeba0-3517-43ba-b590-0afb24c505b0.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/4325e62c-0d4e-4de4-b217-e4ea2bd1db91.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/83609c40-2f74-416d-8a0e-fc225a6e887d.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

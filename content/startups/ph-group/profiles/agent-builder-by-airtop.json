@@ -1,0 +1,184 @@
+{
+  "slug": "agent-builder-by-airtop",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/agent-builder-by-airtop",
+  "excerpt": "Agent Builder by Airtop turns a plain-English description of a web task into a compiled, tested agent that runs on a schedule and drafts its own fix when a run breaks. Pricing, alternatives and launch details.",
+  "content": "<p>Agent Builder is the main product of Airtop, a company that makes AI agents for web and business automation. You describe the task in plain English, such as logging in to a portal and collecting data, filling out forms or enriching leads, and Agent Builder builds and tests an automation for it. Airtop's approach is to compile the automation into reusable code at build time, so each run executes code instead of asking a language model to reason through every step. Airtop says this makes its agents up to 100 times more efficient than uncompiled LLM agents. Agents run in the cloud on a schedule, on a trigger or on demand, can work on sites behind a login with credentials kept in a vault, and connect to tools such as HubSpot, Google Sheets, Gmail, Slack and Airtable.</p><p>The launch's headline feature is self-healing. When a scheduled run fails, Airtop diagnoses the failure, drafts a fix and tests it. The fix stays a draft until you deploy or discard it, so Airtop never changes a live agent on its own. Agent Builder launched on Product Hunt on 3 September 2026, Airtop's sixth launch there, and finished #2 for the day with 312 points.</p><p><em>We have not tested Agent Builder ourselves. This page brings together Airtop's official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Web automation",
+    "platform": "Web app (cloud)",
+    "starts_at": "Free plan; paid from $29/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Builds compiled web automation agents from plain English, with self-healing runs",
+    "ph": {
+      "rank": 2,
+      "votes": 312,
+      "comments": 8,
+      "followers": 2775,
+      "launched": "2026-09-03",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/2775c28d-3e0a-4213-bde3-b1a8d087d12f.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Airtop prompt box reading 'Build AI Agents with just your words', with example ideas such as monitoring product reviews and finding YC startup founders",
+        "credit": "Image: Airtop via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/9e58fd05-9141-4ab6-929c-0241c84b6a64.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Airtop graphic 'Expand your automation potential' with a grid of logos of websites and apps its agents can work with",
+        "credit": "Image: Airtop via Product Hunt"
+      }
+    ],
+    "audience": {
+      "fit": [
+        "work in marketing, sales or operations and want to automate repetitive browser work without writing code",
+        "need to automate websites or portals that have no API, including ones behind a login",
+        "run the same automation often enough that per-step LLM costs and flaky results matter"
+      ],
+      "not_fit": [
+        "want a fully autonomous agent that changes itself in production: repairs wait for your approval by design",
+        "only need to connect apps that already have APIs, where a classic integration tool may be simpler",
+        "need many parallel sessions on a small budget: the free and Starter plans allow 3 simultaneous sessions"
+      ]
+    },
+    "pricing": {
+      "intro": "Airtop prices by credits, with a free plan and monthly or annual billing (annual gives 10% off, with all credits up front). Prices are in US dollars.",
+      "url": "https://www.airtop.ai/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "$0/month",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "1,000 credits a month plus a one-time 10,000-credit bonus, 3 simultaneous sessions, 1 deployed agent"
+        },
+        {
+          "name": "Starter",
+          "price": "$29/month",
+          "amount": 29,
+          "currency": "USD",
+          "detail": "From 30,000 credits (higher credit tiers available), 3 simultaneous sessions, 10 deployed agents, integrated proxy, support"
+        },
+        {
+          "name": "Professional",
+          "price": "$189/month",
+          "amount": 189,
+          "currency": "USD",
+          "detail": "From 225,000 credits, 30 deployed agents, 30 simultaneous sessions, custom proxy, dedicated support"
+        },
+        {
+          "name": "Enterprise",
+          "price": "$558/month",
+          "amount": 558,
+          "currency": "USD",
+          "detail": "From 775,000 credits, unlimited deployed agents, 100 simultaneous sessions, SOC 2 Type 2 report"
+        }
+      ],
+      "notes": [
+        "A Custom plan offers volume pricing.",
+        "Free and Starter include a trial of Mark, Airtop's AI go-to-market employee; Professional and above include it.",
+        "Airtop says it never uses your data for AI training and lists HIPAA and SOC 2 Type 2."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "Product Hunt lists several alternatives; this is the one whose own site we checked. Review scores are Product Hunt users' own.",
+      "items": [
+        {
+          "name": "Cheat Layer",
+          "url": "https://cheatlayer.com/",
+          "what": "No-code business automation and marketing agents built from plain language",
+          "starts_at": "Its site says 'Start for $1'; see its pricing page",
+          "ph_rating": 4.75,
+          "ph_reviews": 52,
+          "difference": "Leans towards marketing agents and ad testing. Airtop focuses on compiled web automations with self-repair."
+        }
+      ],
+      "more": "Product Hunt also lists Bardeen (one-click automations, rated 4.5 from 14 reviews), Automa (AI agents and RPA workflows, 5 from 4 reviews), Relay.app and Lovable. Relay.app's site says it shut down in September 2026."
+    },
+    "reviews": {
+      "count": 9,
+      "rating": 4.67,
+      "url": "https://www.producthunt.com/products/airtop/reviews",
+      "as_of": "2026-10-14"
+    },
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/airtop",
+      "quotes": [],
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=airtop%20agent%20builder&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Agent Builder by Airtop?",
+        "a": "A tool that turns a plain-English description of a task into a compiled, tested agent that can log in to websites, fill forms and extract data on a schedule. It launched on Product Hunt on 3 September 2026."
+      },
+      {
+        "q": "What does self-healing mean here?",
+        "a": "When a run fails, Airtop diagnoses it, drafts a fix and tests it. The repair stays a draft until you deploy or discard it; your live agent is not changed on its own."
+      },
+      {
+        "q": "How much does Airtop cost?",
+        "a": "There is a free plan with 1,000 credits a month and a one-time 10,000-credit bonus. Paid plans start at $29 a month (Starter), then $189 (Professional) and $558 (Enterprise)."
+      },
+      {
+        "q": "Why compile agents instead of using an LLM each step?",
+        "a": "Airtop says compiled agents run like software, give the same output for the same input, and are up to 100 times more efficient than agents that call a model at every step."
+      },
+      {
+        "q": "Can it work with sites that have no API?",
+        "a": "Yes. Airtop says its agents can log in to applications like a person, fill forms and download documents, with credentials stored in a vault."
+      },
+      {
+        "q": "Does Airtop train AI on my data?",
+        "a": "Airtop says it never uses your data for AI training and that each session runs in its own encrypted environment."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Airtop Agent Builder",
+        "url": "https://www.airtop.ai/agent-builder"
+      },
+      {
+        "label": "Airtop official site",
+        "url": "https://www.airtop.ai/"
+      },
+      {
+        "label": "Airtop pricing",
+        "url": "https://www.airtop.ai/pricing"
+      },
+      {
+        "label": "About Airtop",
+        "url": "https://www.airtop.ai/about"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/agent-builder-by-airtop"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/airtop"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/airtop/alternatives"
+      },
+      {
+        "label": "Cheat Layer",
+        "url": "https://cheatlayer.com/"
+      },
+      {
+        "label": "Relay.app shutdown notice",
+        "url": "https://relay.app/"
+      }
+    ]
+  }
+}

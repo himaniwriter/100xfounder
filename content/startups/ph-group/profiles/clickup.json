@@ -1,0 +1,92 @@
+{
+  "slug": "clickup",
+  "existing_listing_slug": "clickup",
+  "ph_url": "https://www.producthunt.com/posts/brain-by-clickup",
+  "excerpt": "Brain² is ClickUp's company-wide AI: it reads your tasks, docs and chats, picks a model for each job and runs repeatable skills. What it does, ClickUp's plans and prices, alternatives and Product Hunt figures.",
+  "content": "<p>ClickUp is an all-in-one work platform that combines tasks, docs, whiteboards, chat, goals and dashboards in one workspace. This page looks at its June 2026 Product Hunt launch, Brain², ClickUp's rebuilt AI layer.</p><p>Brain² is pitched as one AI that knows your whole company. It reads the tasks, docs and conversations in your ClickUp workspace and in connected apps, so you don't need to brief it, and it keeps a memory of decisions, feedback and updates that ClickUp says it organises and refreshes on its own. It picks a model for each job (the page names GPT, Claude Opus and Gemini alongside ClickUp's own) under one subscription. You can teach it your workflows as reusable skills, such as drafting emails or triaging bugs, and work with it together as a team in AI chats, channels, tasks and projects. ClickUp also makes strong benchmark claims for it on its page, such as being 85% cheaper; those are the company's own figures.</p><p>ClickUp is a large, established company: its press page describes it as a San Diego business with more than $300 million in annual recurring revenue, and its privacy policy names the legal entity as Mango Technologies, Inc. Brain² was ClickUp's 12th launch on Product Hunt, on 25 June 2026, where it finished #5 for the day with 195 points and 63 comments.</p><p><em>We have not tested Brain² ourselves. This page brings together ClickUp's official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Productivity and work management",
+    "platform": "Web, iOS, Android, Windows, Mac and Chrome",
+    "starts_at": "Free Forever plan; paid from $7/user/month billed yearly",
+    "schema_category": "BusinessApplication",
+    "summary_short": "ClickUp's company-wide AI that reads your workspace, routes to the best model and runs reusable skills",
+    "ph": {"rank": 5, "votes": 195, "comments": 63, "followers": 5170, "launched": "2026-06-25", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/5f0fe8d3-368f-4487-bc05-1b1c016af88d.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160,
+       "alt": "Brain² linking team channels such as #sales and #seo with whiteboards, docs and tasks, and answering a question about SSO on the Enterprise tier",
+       "credit": "Image: ClickUp via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/50a391c6-7e29-4e18-9dbd-8fd803660bdc.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160,
+       "alt": "Brain² logo at the centre of a web of status updates from roles such as account executive, corporate counsel and director of operations",
+       "credit": "Image: ClickUp via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/924d9361-d23d-479e-b5c3-580a47035c61.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160,
+       "alt": "Brain² prompt box with the request 'Build me a slide deck' in front of generated slides and a revenue chart",
+       "credit": "Image: ClickUp via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "already run your projects, docs and chat in ClickUp and want an AI that knows that context",
+        "want one subscription that gives access to several AI models instead of paying for each",
+        "have repeatable workflows (reports, briefs, bug triage) you'd like to hand to an AI as skills"
+      ],
+      "not_fit": [
+        "keep most of your work in other tools: Brain²'s main pitch is the context inside a ClickUp workspace",
+        "want a standalone chatbot without adopting a work-management platform",
+        "need to verify vendor benchmark claims before buying: the figures on the Brain² page are ClickUp's own"
+      ]
+    },
+    "pricing": {
+      "intro": "ClickUp is priced per user, in US dollars. Yearly billing saves up to 33%. The Brain² page says you can try it free with no card, and that 'Unlimited starts at $9'.",
+      "url": "https://clickup.com/pricing",
+      "plans": [
+        {"name": "Free Forever", "price": "$0", "amount": 0, "currency": "USD", "detail": "Unlimited tasks and members, 60MB storage, collaborative docs, Kanban boards, calendar view, 1 form, AI usage with limits"},
+        {"name": "Unlimited", "price": "$7/user/month billed yearly", "amount": 7, "currency": "USD", "detail": "$10/user/month billed monthly. Unlimited storage, integrations, Gantt charts and custom fields, time tracking, ClickUp Chat, guests with permissions"},
+        {"name": "Business", "price": "$12/user/month billed yearly", "amount": 12, "currency": "USD", "detail": "$19/user/month billed monthly. Advanced dashboards, unlimited message history and timelines, 5,000 automations a month, mind maps, Google SSO"},
+        {"name": "Enterprise", "price": "Contact sales", "amount": null, "currency": "USD", "detail": "SAML SSO and SCIM, audit log, 250,000 automations a month, data residency, HIPAA available, customer success manager"}
+      ],
+      "notes": [
+        "The pricing page lists AI as included with usage limits on every plan; it does not show a separate Brain² price.",
+        "The pricing page offers a 100% money-back guarantee.",
+        "The Brain² page's 'Unlimited starts at $9' does not match the $7 (yearly) and $10 (monthly) on the pricing page when we checked."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are the products Product Hunt lists as alternatives to ClickUp. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Trello", "url": "https://www.producthunt.com/products/trello", "what": "Visual boards for team projects", "starts_at": "See its pricing page", "ph_rating": 4.77, "ph_reviews": 116,
+         "difference": "Simpler, board-first project tracking, without ClickUp's built-in docs, chat and company-wide AI."},
+        {"name": "Asana", "url": "https://www.producthunt.com/products/asana", "what": "Track and manage projects across teams", "starts_at": "See its pricing page", "ph_rating": 4.63, "ph_reviews": 86,
+         "difference": "A project-management rival; ClickUp's pitch is replacing chat and docs tools as well."},
+        {"name": "Fibery", "url": "https://www.producthunt.com/products/fibery", "what": "A flexible workspace billed as your company's operating system", "starts_at": "See its pricing page", "ph_rating": 4.95, "ph_reviews": 37,
+         "difference": "Built around customisable databases and knowledge; ClickUp is more of a ready-made, all-in-one suite."}
+      ],
+      "more": "Product Hunt also lists Swit and Frame. ClickUp's own site has comparison pages against Atlassian, Microsoft Teams, Asana, Monday, Slack, Notion, Airtable and others."
+    },
+    "reviews": {"count": 124, "rating": 4.64, "url": "https://www.producthunt.com/products/clickup/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/clickup",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=ClickUp%20Brain&f=live", "profile_url": "https://x.com/clickup"}
+    },
+    "faq": [
+      {"q": "What is ClickUp Brain²?", "a": "ClickUp's company-wide AI. It reads the tasks, docs and conversations in your workspace, keeps a memory of decisions and updates, picks an AI model for each job and runs reusable skills. It launched on Product Hunt on 25 June 2026."},
+      {"q": "Which AI models does Brain² use?", "a": "According to ClickUp's Brain² page, it routes each job to the best model, naming GPT, Claude Opus and Gemini alongside its own, under one subscription."},
+      {"q": "How much does ClickUp cost?", "a": "There is a Free Forever plan. Unlimited costs $7 per user a month billed yearly ($10 monthly), Business $12 yearly ($19 monthly), and Enterprise is priced by sales. The Brain² page says you can try it free with no card."},
+      {"q": "Does ClickUp have a free plan?", "a": "Yes. Free Forever includes unlimited tasks and members, 60MB of storage, collaborative docs and some AI usage with limits, according to its pricing page."},
+      {"q": "Which apps is ClickUp available on?", "a": "The Brain² page offers downloads for iOS, Android, Windows, Mac and Chrome, as well as the web app."},
+      {"q": "Who makes ClickUp?", "a": "Mango Technologies, Inc., doing business as ClickUp, according to its privacy policy. Its About page lists its headquarters in San Diego, United States."}
+    ],
+    "sources": [
+      {"label": "ClickUp Brain² page", "url": "https://clickup.com/brain"},
+      {"label": "ClickUp pricing", "url": "https://clickup.com/pricing"},
+      {"label": "About ClickUp", "url": "https://clickup.com/about"},
+      {"label": "ClickUp press page", "url": "https://clickup.com/press"},
+      {"label": "ClickUp privacy policy", "url": "https://clickup.com/terms/privacy"},
+      {"label": "ClickUp vs Microsoft Teams", "url": "https://clickup.com/compare/vs/microsoft-teams"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/clickup"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/clickup/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/clickup/alternatives"}
+    ]
+  }
+}

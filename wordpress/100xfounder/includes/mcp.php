@@ -273,7 +273,7 @@ function xf_mcp_tools() {
             },
         ],
         'create_draft' => [
-            'description' => 'Create a draft that lands as Pending review (never published). type: post (news/blog), xf_round (funding tracker row), xf_event, xf_guide (how-to-apply). Posts and guides need 150+ words and at least one source. Use fields for structured data (rounds: company, sector, round, lead_investor, amount_display, amount_usd, country, announced, source_url; guides: company_slug, hiring_for, process_length, rounds, careers_url; events: start, end, city, venue, url, organiser).',
+            'description' => 'Create a draft that lands as Pending review (never published). type: post (news/blog), xf_round (funding tracker row), xf_event, xf_guide (how-to-apply). Posts and guides need 150+ words and at least one source. Use fields for structured data (rounds: company, sector, round, lead_investor, investors, amount_display, amount_usd, country, city, announced, source_url; guides: company_slug, hiring_for, process_length, rounds, careers_url; events: start, end, city, venue, url, organiser).',
             'schema' => ['type' => 'object', 'properties' => [
                 'type' => ['type' => 'string', 'enum' => ['post', 'xf_round', 'xf_event', 'xf_guide']],
                 'title' => $str, 'excerpt' => $str, 'content' => ['type' => 'string', 'description' => 'HTML: p, h2, h3, ul, ol, blockquote (real sourced quotes only)'],

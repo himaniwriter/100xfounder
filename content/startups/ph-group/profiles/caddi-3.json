@@ -1,0 +1,104 @@
+{
+  "slug": "caddi-3",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/caddi-3",
+  "excerpt": "Caddi turns a narrated screenshare of a back-office task into an AI agent that runs it across your tools, built mainly for law firms, wealth advisers and accounting firms. Pricing, alternatives and launch-day questions.",
+  "content": "<p>Caddi builds automations by watching you work. You share your screen and talk through a task once, for example filing a signed contract: download it from DocuSign, rename it to the firm's convention, file it to the matter and log it in Salesforce. Caddi learns the process, asks about the exceptions (what if only one party has signed?), and builds an agent that runs it. You change it later by sending a message in plain English; Caddi tests the new version before it ships.</p><p>Before you build anything, a Discover feature reads your tools and ranks the repetitive work worth automating. Caddi says it combines AI reasoning with deterministic execution (it builds the automation as verified code), logs every run, scopes every permission and works across 150+ integrations, including screens with no API. It is aimed at professional services: law firms (intake, conflict checks, pre-bill review, document filing), registered investment advisers and accounting firms, as well as private equity, banks, mortgage companies and insurers.</p><p>Caddi Technologies, Inc. is led by co-founder and CEO Alejandro Castellano and co-founder and CTO Aditya Sastry, according to their Product Hunt profiles; its site announces a $5 million seed round. It launched on Product Hunt on 28 August 2026 and finished #2 for the day with 290 points and 40 comments.</p><p><em>We have not tested Caddi ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI workflow automation",
+    "platform": "Web app",
+    "starts_at": "Free for one user; Startup $250/user/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Turns a narrated screenshare of a back-office task into an AI agent that runs it across your tools",
+    "maker": {"name": "Jason Alafgani", "url": "https://www.producthunt.com/@jason_alafgani"},
+    "team": [
+      {"name": "Alejandro Castellano", "role": "Co-founder and CEO", "url": "https://www.producthunt.com/@alejandrocastellano"},
+      {"name": "Aditya Sastry", "role": "Co-founder and CTO", "url": "https://www.producthunt.com/@asastry"},
+      {"name": "Jason Alafgani", "url": "https://www.producthunt.com/@jason_alafgani"}
+    ],
+    "ph": {"rank": 2, "votes": 290, "comments": 40, "followers": 662, "launched": "2026-08-28", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/2fad4e7f-40cc-4763-b89e-681c7c52cae7.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Caddi process-discovery screen listing 24 discovered processes, such as executed contract filing and new matter intake, with their automation status",
+       "credit": "Image: Caddi via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/5de804dc-d0a1-4810-8338-7a50740cbcac.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Caddi guiding a recorded walkthrough of contract filing across DocuSign, NetDocuments and Salesforce, headed 'Teach it like a new hire'",
+       "credit": "Image: Caddi via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/7dd19fe1-4cb9-409b-abd9-99054415c63f.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Caddi asking 'What should I do if only one party has signed?' with options to flag it, file it anyway or something else",
+       "credit": "Image: Caddi via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "work at a law firm, wealth adviser or accounting firm with repetitive admin that hops across several tools",
+        "can explain a task over a screenshare but don't have developers to build automations",
+        "need a log of every run and scoped permissions for compliance"
+      ],
+      "not_fit": [
+        "handle patient health data: the makers said on Product Hunt that Caddi is not HIPAA-certified and they don't recommend putting patient data through it",
+        "are a small team on a tight budget: after the free single-user plan, Startup costs $250 per user a month",
+        "need Salesforce or iManage integrations cheaply: those advanced integrations start on the $6,500-a-month Business plan"
+      ]
+    },
+    "pricing": {
+      "intro": "Caddi has a free plan for one person and three paid tiers, in US dollars. Business and Enterprise start with a pilot.",
+      "url": "https://www.trycaddi.com/pricing",
+      "plans": [
+        {"name": "Individual", "price": "$0", "amount": 0, "currency": "USD", "detail": "One user, no time limit. 200 credits and 10 active loops a month, standard integrations (Slack, Google Workspace, HubSpot), 30 days of run history"},
+        {"name": "Startup", "price": "$250/user/month", "amount": 250, "currency": "USD", "detail": "Up to 10 employees. 1,000 credits per user a month, more integrations (Box, DocuSign, Clio), Govern view, team management; extra credits $1.25, extra active loops $100/month"},
+        {"name": "Business", "price": "$6,500/month", "amount": 6500, "currency": "USD", "detail": "20,000 credits a month, unlimited users and loops, advanced integrations (Salesforce, iManage), SSO, 99% uptime SLA; extra credits $0.75; one-time implementation $5k–$15k"},
+        {"name": "Enterprise", "price": "Custom", "amount": null, "currency": "USD", "detail": "Annual agreement with 50,000 credits a month (100,000 on Silver), integration governance, priority execution; implementation $5k–$15k"}
+      ],
+      "notes": [
+        "Standard AI data extraction costs 1 credit per page, according to the pricing page.",
+        "On paid plans, going over your allowance doesn't stop work: extra credits bill at your plan's rate.",
+        "Product Hunt lists Caddi as having free options."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Make", "url": "https://www.make.com", "what": "Visual builder for AI workflows and agents, with 3,500+ app integrations", "starts_at": "See its pricing page", "ph_rating": 4.76, "ph_reviews": 45,
+         "difference": "You build each scenario yourself on a visual canvas; Caddi learns the process from a narrated screenshare."},
+        {"name": "Trace", "url": "https://www.trace.so", "what": "AI orchestration layer that aligns agents and human judgement across teams", "starts_at": "See its pricing page", "ph_rating": 4.74, "ph_reviews": 38,
+         "difference": "A general orchestration layer in beta; Caddi is packaged for legal and wealth-management back offices."},
+        {"name": "Riff", "url": "https://riff.ai", "what": "AI agents for industrial operations", "starts_at": "See its pricing page", "ph_rating": 4.58, "ph_reviews": 19,
+         "difference": "Aimed at manufacturing and logistics operations rather than professional services."}
+      ],
+      "more": "Product Hunt also lists Manus (a general AI agent) and Runbear (AI teammates in Slack and Teams)."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/caddi-3/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/caddi-3",
+      "quotes": [
+        {"author": "Kate Sleeman", "text": "How does it handle small change in the process? That's usually where automations break for me.",
+         "reply": "Jason Alafgani: it looks for breakages and suggests fixes itself; you can also update the process with a message, and it tests before shipping."},
+        {"author": "Maali Baali", "text": "Talking out loud while doing the task feels way more natural than manually building a giant diagram."},
+        {"author": "Prabha Dublish", "text": "Would this work for healthcare use cases?",
+         "reply": "Jason Alafgani: for operational work yes, but Caddi is not HIPAA-certified, so they don't recommend putting patient data through it."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=trycaddi&f=live"}
+    },
+    "faq": [
+      {"q": "What is Caddi?", "a": "An 'agent that builds agents' from Caddi Technologies, Inc. You show a back-office task once over a narrated screenshare, and Caddi builds an automation that runs it across your tools. It launched on Product Hunt on 28 August 2026."},
+      {"q": "How much does Caddi cost?", "a": "The Individual plan is free for one user with 200 credits and 10 active loops a month. Startup is $250 per user a month, Business $6,500 a month, and Enterprise is priced per firm."},
+      {"q": "Who is Caddi built for?", "a": "Mainly law firms, investment advisers and accounting firms, according to the makers, with solutions on its site for private equity, banks, mortgage companies and insurers too."},
+      {"q": "What happens when the process changes?", "a": "The makers say Caddi looks for breakages and suggests fixes; you can also describe a change in plain English, and it tests the new version before shipping it."},
+      {"q": "Can I use Caddi with health data?", "a": "Not patient data. The makers said on Product Hunt that Caddi has not received HIPAA compliance certification."},
+      {"q": "How does Caddi find work to automate?", "a": "Its Discover feature checks your tools and ranks the most repetitive work by impact, according to its site and the makers."}
+    ],
+    "sources": [
+      {"label": "Caddi official site", "url": "https://www.trycaddi.com/"},
+      {"label": "Caddi pricing", "url": "https://www.trycaddi.com/pricing"},
+      {"label": "About Caddi", "url": "https://www.trycaddi.com/about-us"},
+      {"label": "Caddi terms of use", "url": "https://www.trycaddi.com/terms-conditions"},
+      {"label": "Caddi privacy notice", "url": "https://www.trycaddi.com/privacy"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/caddi-3"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/caddi-3/launches/caddi-3"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/caddi-3/alternatives"},
+      {"label": "Make", "url": "https://www.make.com/"}
+    ]
+  }
+}

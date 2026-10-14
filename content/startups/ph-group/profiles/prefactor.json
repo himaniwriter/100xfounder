@@ -1,0 +1,128 @@
+{
+  "slug": "prefactor",
+  "ph_url": "https://www.producthunt.com/posts/prefactor",
+  "existing_listing_slug": null,
+  "website": "https://prefactor.tech",
+  "excerpt": "Prefactor scores every step your AI agents take in production, flags quality drift and risk live, and can hold or block actions. Pricing and alternatives.",
+  "content": "<p>Prefactor is an evaluation and monitoring layer for AI agents running in production. It records every step an agent takes (each model call, tool call and decision), scores all of it in real time for quality, drift and risk, and shows cost and latency per step. When something looks wrong it can hold an action for approval or block it. It also includes PII checks, separate dev, staging and production environments with evaluation gates, and agent versioning with instant rollback.</p><p>The makers' pitch is that most agents pass their evaluation tests and then fail in production, where only a small sample of runs is ever checked. Prefactor says it scores 100% of activity, and its CEO said on Product Hunt that the core risk profiling today runs against defined criteria without using an LLM as a judge, though you can add your own LLM evaluations.</p><p>Prefactor was co-founded by Matt Doughty (CEO) and Simon Russell (CTO), according to their Product Hunt profiles. It launched there on 28 July 2026 and finished #1 for the day and #2 for the week, with 570 upvotes and 191 comments (as of 14 October 2026).</p><p><em>We have not tested Prefactor ourselves. This page brings together its official site and pricing page, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI agent observability and evaluation",
+    "platform": "Cloud service; self-hosted on Enterprise",
+    "starts_at": "Free Dev plan; Startup $49/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Scores every step your AI agents take in production and catches mistakes live",
+    "maker": {"name": "Matt Doughty", "url": "https://www.producthunt.com/@matt_doughty"},
+    "team": [
+      {"name": "Matt Doughty", "role": "Co-founder and CEO", "url": "https://www.producthunt.com/@matt_doughty"},
+      {"name": "Simon Russell", "role": "Co-founder and CTO", "url": "https://www.producthunt.com/@simonrussell_au"},
+      {"name": "Josh Gillies", "role": "AI engineer", "url": "https://www.producthunt.com/@joshgillies"},
+      {"name": "Ethan Lee", "role": "Maker", "url": "https://www.producthunt.com/@ethan_lee8"},
+      {"name": "Mukil Cb", "role": "Software developer", "url": "https://www.producthunt.com/@rheu"},
+      {"name": "Joseph Cholakyan", "role": "Product designer", "url": "https://www.producthunt.com/@joeys"}
+    ],
+    "ph": {"rank": 1, "votes": 570, "comments": 191, "followers": 1393, "launched": "2026-07-28", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/e43c0263-e8df-4697-a2b2-7817d04a2d57.png?auto=format&fit=max&w=1400", "w": 2560, "h": 1440, "credit": "Image: Prefactor on Product Hunt",
+       "alt": "Prefactor graphic 'How do you know what your agent is actually doing?' comparing a passing eval set, 1% sampling in production and 100% of runs scored"},
+      {"url": "https://ph-files.imgix.net/5666270e-9a5f-47d5-9a8f-cec13c15e089.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160, "credit": "Image: Prefactor on Product Hunt",
+       "alt": "Prefactor activity view 'See every run, as it happens' showing a support agent's tool calls and messages, each tagged with a risk level"},
+      {"url": "https://ph-files.imgix.net/66f2a38e-2654-4946-b774-a8d8f02afdfe.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160, "credit": "Image: Prefactor on Product Hunt",
+       "alt": "Prefactor dashboard for a sample claims review agent with a risk distribution chart, 24-hour activity and deployment environments"},
+      {"url": "https://ph-files.imgix.net/a3db6429-c30c-4462-a6ff-d3896ad6d2c5.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Prefactor on Product Hunt",
+       "alt": "Prefactor logo with the line 'Evaluate AI agents in real-time'"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Matt Doughty, who co-founded Prefactor with Simon Russell, built the launch around one question: do you actually know what your agents are doing in production right now? For most teams they talk to, he says, the honest answer is not really.",
+        "Evals pass, everything is green and the agent ships, then real runs disappear into a black box while quality drifts, risk creeps in and costs climb. Prefactor is meant to answer which of your agents are still doing their job."
+      ],
+      "attribution": "Matt Doughty, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/prefactor?comment=5568918"
+    },
+    "use_cases": [
+      "Monitoring customer-support and voice agents after launch",
+      "Holding or blocking risky agent actions in real time",
+      "Gating promotion of a new agent version from staging to production on evaluation results",
+      "Tracking cost and latency per agent step"
+    ],
+    "audience": {
+      "fit": [
+        "ship AI agents to real customers and need to know when they go wrong",
+        "work in regulated areas where you must show what an agent did",
+        "want every run scored, not a sample"
+      ],
+      "not_fit": [
+        "mainly want to evaluate coding agents: the CEO said the team has spent less time there",
+        "only run a prototype with no users yet, where the free tier or an open-source tracer may be enough"
+      ]
+    },
+    "pricing": {
+      "intro": "Prefactor is usage-based and every plan includes the full platform. A span is one step an agent takes (an LLM call, a tool call, a message turn). Prices are in US dollars.",
+      "url": "https://prefactor.tech/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Dev", "price": "Free", "amount": 0, "currency": "USD", "detail": "5,000 spans included, up to 3 agents, 7-day data retention, no credit card"},
+        {"name": "Startup", "price": "$49/month (or $499/year)", "amount": 49, "currency": "USD", "detail": "15,000 spans a month, then $0.0025 per span; unlimited seats and agents; 3-month retention"},
+        {"name": "Scaleup", "price": "$199/month (or $2,000/year)", "amount": 199, "currency": "USD", "detail": "100,000 spans a month, then $2.50 per 1,000 monthly or $2.00 annually; dev, staging and prod; 12-month retention"},
+        {"name": "Enterprise", "price": "Custom", "detail": "4M+ spans a month, self-hosted deployment, SSO, SLA and a named engineer, invoice billing"}
+      ],
+      "notes": ["Scores, risk checks and interventions don't create spans, according to the pricing page.", "Annual billing saves up to 20%."]
+    },
+    "alternatives": {
+      "intro": "Tools for tracing and evaluating LLM apps and agents. Prices are from each company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "Langfuse", "url": "https://langfuse.com/", "what": "Open-source LLM engineering platform for tracing, evals and prompt management", "starts_at": "Hobby free; Core $29/month",
+         "difference": "Open source and self-hostable on every tier, focused on tracing and evaluation rather than real-time blocking of agent actions."},
+        {"name": "LangSmith", "url": "https://www.langchain.com/langsmith", "what": "LangChain's platform for tracing, evaluating and deploying agents", "starts_at": "Developer $0/seat; Plus $39/seat per month",
+         "difference": "Priced per seat plus traces and tied closely to the LangChain ecosystem; Prefactor includes unlimited seats."}
+      ]
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/prefactor/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["Runtime enforcement, not just after-the-fact reports", "Checking on agents continuously once they are deployed"],
+        "asked": ["How to test the evaluator itself when a judge or rubric changes (the core risk checks don't use an LLM; evals can be versioned like agents)", "Which agents benefit most (voice, customer support, go-to-market workflows and multi-step agents, the CEO said)"],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "I wouldn't leave my toddler home alone so why would I deploy an agent and not checkup on it.", "author": "Stefan Knight", "url": "https://www.producthunt.com/products/prefactor?comment=5672263"},
+        {"text": "If an LLM judge, rubric, or source context changes, a score can move even when agent behavior does not.", "author": "Flavio Riper", "url": "https://www.producthunt.com/products/prefactor?comment=5675868"}
+      ]
+    },
+    "pros": [
+      "Free plan with no card; unlimited seats on every plan",
+      "Scores 100% of activity and can block actions live",
+      "Agent versioning with rollback and evaluation-gated releases",
+      "Self-hosting available on Enterprise"
+    ],
+    "cons": [
+      "Free plan limited to 3 agents and 7 days of data",
+      "Span-based pricing can climb quickly for busy agents",
+      "Less focus on coding agents, by the team's own account"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/prefactor",
+      "quotes": [
+        {"author": "Reda Roqai chaoui", "url": "https://www.producthunt.com/products/prefactor?comment=5678811", "text": "I'm curious what types of agents benefit the most from this.",
+         "reply": "Matt Doughty said they have good use cases in voice agents, customer support, GTM workflows and multi-step agents, and have spent less time on coding agents."}
+      ],
+      "x": {"profile_url": "https://x.com/prefactordev", "search_url": "https://x.com/search?q=prefactor%20agents&f=live", "none": "Apart from Prefactor's own account, we found no posts on X clearly about the product."}
+    },
+    "faq": [
+      {"q": "What is Prefactor?", "a": "An evaluation runtime for AI agents in production: it records every step, scores quality, drift and risk live, and can hold or block actions."},
+      {"q": "How much does Prefactor cost?", "a": "Dev is free with 5,000 spans. Startup is $49 a month (15,000 spans) and Scaleup $199 a month (100,000 spans), with overage per span; Enterprise is custom."},
+      {"q": "What is a span?", "a": "One step an agent takes, such as an LLM call, a tool call or a message turn. Scores, risk checks and interventions don't count as spans."},
+      {"q": "Does Prefactor use an LLM to judge my agent?", "a": "The CEO said the core risk profiling runs against defined criteria without an LLM; you can add your own LLM-based evals."},
+      {"q": "Can I self-host Prefactor?", "a": "Yes, on the Enterprise plan."}
+    ],
+    "sources": [
+      {"label": "Prefactor official site", "url": "https://prefactor.tech/"},
+      {"label": "Prefactor pricing", "url": "https://prefactor.tech/pricing"},
+      {"label": "Prefactor contact page", "url": "https://prefactor.tech/contact"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/prefactor?launch=prefactor"},
+      {"label": "Langfuse pricing", "url": "https://langfuse.com/pricing"},
+      {"label": "LangSmith pricing", "url": "https://www.langchain.com/pricing"}
+    ]
+  }
+}

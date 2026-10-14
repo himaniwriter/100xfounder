@@ -1,0 +1,125 @@
+{
+ "slug": "meridian-work-journal",
+ "ph_url": "https://www.producthunt.com/products/meridian-16",
+ "existing_listing_slug": null,
+ "website": "https://meridiona.com/",
+ "excerpt": "Meridian is an on-device AI work journal for developers: it reconstructs your day from screen activity, matches it to Jira and GitHub tickets and drafts standups and worklog updates for you to approve. Free for individual developers. How it works, privacy and alternatives.",
+ "content": "<p>Meridian is a desktop work journal for developers. It runs in the background, builds a timeline of your day from on-screen activity, matches the work to open Jira and GitHub tickets, and drafts a worklog update, a standup note and a daily summary. Nothing is posted until you approve it. The makers' point is that developers do a lot of unplanned work that never reaches a ticket, so an AI asked to write an update misses it; Meridian records it as it happens, including terminal work over SSH, and lets you look back at any past day.</p><p>According to its README, activity is kept in an encrypted database on your machine, analysis runs through the AI provider you connect, and only what a summary needs is sent to it. You can bring the Claude Code, Cursor or Codex CLI you already use, or Groq for free. It needs screen recording and accessibility permissions, runs on macOS (Apple silicon) and Windows 10/11, and the README lists 0.5 to 3 GB of memory and about 20 GB of storage a month, pruned after 30 days. Meridian launched as MIT-licensed open source; its GitHub repository now carries the PolyForm Strict License, and its website now presents Meridian as an engineering-intelligence workspace for teams.</p><p>Meridian is made by Meridiona LLP, founded by Akarsh Hegde and Adithya Harish. It launched on Product Hunt on 17 August 2026 and finished #1 for the day with 536 upvotes and 99 comments.</p><p><em>We have not tested Meridian ourselves. This page brings together Meridian's website, GitHub README and licence, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Developer productivity",
+  "platform": "Mac and Windows desktop app",
+  "os": "macOS on Apple silicon (macOS 14+), Windows 10/11 64-bit",
+  "starts_at": "Free for individual developers",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "On-device work journal that drafts standups and Jira updates from your day's activity",
+  "maker": {"name": "Akarsh Hegde", "url": "https://www.producthunt.com/@akarsh_hegde"},
+  "team": [
+   {"name": "Akarsh Hegde", "role": "Founder", "url": "https://www.producthunt.com/@akarsh_hegde"},
+   {"name": "Adithya Harish", "role": "Founder", "url": "https://www.producthunt.com/@adityaharish2002"},
+   {"name": "Kamal Bothra", "role": "Maker", "url": "https://www.producthunt.com/@kamal_bothra"}
+  ],
+  "ph": {"rank": 1, "votes": 536, "comments": 99, "followers": 1147, "launched": "2026-08-17", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/10f4ec25-27b0-4458-bc62-47a754f83eae.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Meridian via Product Hunt", "alt": "Meridian timeline of a developer's day with tasks matched to tickets, captioned 'You did more than you think'"},
+   {"url": "https://ph-files.imgix.net/3533aa6e-b37f-438b-9ba9-f3018dd0d765.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Meridian via Product Hunt", "alt": "Meridian graphic contrasting three planned tasks on the ticket with three planned plus four unplanned in the actual day"},
+   {"url": "https://ph-files.imgix.net/1442ab38-a2b8-4845-a4d9-9b7e988e4a5c.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Meridian via Product Hunt", "alt": "Meridian daily summary with completed tasks, unexpected work and a standup ready to paste"},
+   {"url": "https://ph-files.imgix.net/1c9721d5-4379-46fd-82e2-6cde81dadebc.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Meridian via Product Hunt", "alt": "Meridian drafting a worklog for a Jira ticket that is posted only after you approve it"}
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Akarsh Hegde says he quit his job three months before launch to build Meridian. He and his co-founder kept asking Claude to write updates and then spending ten minutes adding back the context it had missed: the unexpected problems they had solved along the way. A Reddit post he wrote about developers underestimating unplanned work went viral.",
+    "Meridian does the remembering: it groups the day into a timeline, matches work to Jira and GitHub tickets and drafts the update. He stressed that nothing leaves the device until you approve, that it is free for individual developers, and that it runs on the AI coding CLI you already have."
+   ],
+   "attribution": "Akarsh Hegde, founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/meridian-16?comment=5785460"
+  },
+  "use_cases": [
+   "Getting a standup note written from what you actually did yesterday",
+   "Drafting Jira worklog updates, including unplanned work, for one-click approval",
+   "Finding where the time went when a task took longer than estimated",
+   "Looking back at what you worked on on a past day"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer who works across Jira, GitHub and the terminal",
+    "already use Claude Code, Cursor or Codex CLI, or are happy to use Groq",
+    "want a record of unplanned work to show in reviews"
+   ],
+   "not_fit": [
+    "use an Intel Mac: the README says only Apple silicon is supported",
+    "are not comfortable granting screen recording and accessibility permissions",
+    "need an open-source licence: the repository now uses the PolyForm Strict License"
+   ]
+  },
+  "pricing": {
+   "intro": "Meridian is free for individual developers, according to the maker's launch post; it launched with no paid plan. The website now offers demos for teams but does not publish team pricing.",
+   "url": "https://meridiona.com/",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Individual", "price": "Free", "amount": 0, "currency": "USD", "detail": "Desktop app for macOS and Windows; uses your own AI CLI or Groq"}
+   ],
+   "notes": ["Team pricing is not published; the site offers demo calls."]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Rize, Pieces for Developers and Littlebird among Meridian's alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "Rize", "url": "https://rize.io/", "what": "Automatic time tracker", "starts_at": "See its pricing page", "ph_rating": 4.94, "ph_reviews": 17, "ph_url": "https://www.producthunt.com/products/rizeio", "difference": "Tracks time and focus; Meridian writes the work up and drafts ticket updates."},
+    {"name": "Pieces for Developers", "url": "https://pieces.app/", "what": "On-device AI assistant with long-term memory of your workflow", "starts_at": "See its pricing page", "ph_rating": 4.68, "ph_reviews": 35, "ph_url": "https://www.producthunt.com/products/pieces-for-developers", "difference": "Broader developer memory and snippets; Meridian focuses on standups and Jira or GitHub updates."},
+    {"name": "Littlebird", "url": "https://littlebird.ai/", "what": "AI assistant that already knows your work", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 10, "ph_url": "https://www.producthunt.com/products/littlebird", "difference": "A general assistant with work context; Meridian is built around ticket updates for developers."}
+   ],
+   "more": "Product Hunt also lists Magicflow and Shadow."
+  },
+  "reviews": {"count": 3, "rating": 4.67, "url": "https://www.producthunt.com/products/meridian-16/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Productivity tracking that is not surveillance-based", "A clear picture of how the day was spent"],
+    "asked": [
+     "Why an account is needed and why it needs screen and accessibility access (the account counts users; activity stays on device)",
+     "Whether it works over SSH on a remote VM (yes, through terminal activity)",
+     "How much memory it uses (built in Rust; the README lists 0.5 to 3 GB)"
+    ],
+    "criticised": ["AI timeouts while drafting (the team said this was fixed)", "Browser activity not always captured", "Required permissions sit uneasily with a privacy-first claim, one commenter said"]
+   },
+   "quotes": [
+    {"text": "I haven't seen another product that focuses on individual productivity tracking without being surveillance-based.", "author": "Rohan Chaubey", "url": "https://www.producthunt.com/products/meridian-16/reviews?review=614705"},
+    {"text": "end of busy day? did you get done what needed doing?", "author": "Andy Da Costa", "url": "https://www.producthunt.com/products/meridian-16/reviews?review=603464"}
+   ]
+  },
+  "pros": [
+   "Captures unplanned work that never reaches a ticket",
+   "Nothing is posted until you approve it",
+   "Uses the AI CLI you already pay for, or free Groq",
+   "Free for individual developers"
+  ],
+  "cons": [
+   "Needs screen recording and accessibility permissions",
+   "No Intel Mac support",
+   "Uses about 20 GB of storage a month before pruning",
+   "Licence changed from MIT to the source-available PolyForm Strict License"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/meridian-16",
+   "quotes": [
+    {"author": "ingrid.e", "url": "https://www.producthunt.com/products/meridian-16?comment=5792588", "text": "Questioned why an account and broad permissions are needed for a privacy-first app.", "reply": "Adithya Harish said the account only counts usage, screen and accessibility access build the timeline, audio is not recorded, and nothing is stored on their servers."}
+   ],
+   "x": {"none": "We found no posts about Meridian on X to link yet.", "search_url": "https://x.com/search?q=meridiona&f=live", "profile_url": "https://x.com/meridian__ai"}
+  },
+  "faq": [
+   {"q": "What is Meridian?", "a": "A desktop work journal for developers that reconstructs your day from screen activity, matches it to Jira and GitHub tickets and drafts standups and worklog updates for you to approve."},
+   {"q": "Is Meridian free?", "a": "Yes for individual developers, according to the makers. The website offers demos for teams without published prices."},
+   {"q": "Does my data leave my computer?", "a": "Activity is stored in an encrypted local database. Summaries are generated by the AI provider you connect, which receives only what a summary needs."},
+   {"q": "Which systems are supported?", "a": "macOS on Apple silicon and Windows 10/11. Intel Macs are not supported."},
+   {"q": "Is Meridian open source?", "a": "It launched as MIT-licensed, but its GitHub repository now uses the PolyForm Strict License 1.0.0, a source-available licence."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists Rize, Pieces for Developers, Magicflow, Littlebird and Shadow."}
+  ],
+  "sources": [
+   {"label": "Meridian official site", "url": "https://meridiona.com/"},
+   {"label": "Meridian on GitHub (README)", "url": "https://github.com/Meridiona/meridian"},
+   {"label": "Meridian licence", "url": "https://github.com/Meridiona/meridian/blob/main/LICENSE"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/meridian-16"},
+   {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/meridian-16/reviews"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/meridian-16/alternatives"}
+  ]
+ }
+}

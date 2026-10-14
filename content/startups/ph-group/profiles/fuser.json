@@ -1,0 +1,119 @@
+{
+ "slug": "fuser",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/fuser",
+ "excerpt": "Fuser is a node-based AI canvas for creative teams with 328 image, video, 3D and audio models plus 113 LLMs. Its Apps node builds and publishes websites, web apps and games from a prompt. Credit plans from $22.50/month with a 30-day free trial. Features and alternatives.",
+ "content": "<p>Fuser is a node-based canvas for AI creative work. Instead of prompting one model at a time, you connect nodes for text, image, video, audio, 3D and language models on one infinite canvas, so every prompt, reference and step stays visible and can be reused. Its site says it runs 328 AI models and 113 LLMs, and it adds Compositor for editable layouts, Recipes (ready-made workflow templates) and Creative Code for interactive visuals. It is aimed at agencies, studios and freelancers.</p><p>The Product Hunt launch was Apps, an App node that builds websites, web apps and games. You describe what people should be able to do, connect inspiration images and real assets from your canvas, and an AI agent writes the code and shows a working preview. You can pin comments on the preview, swap media, edit the code directly and step back through versions, then publish a version to a public link or unpublish it later.</p><p>Fuser is made by Fuser Technologies, Inc.; its site names co-founders Dalena and Hirad. The Apps launch was its second on Product Hunt, went live on 1 July 2026 and finished #9 for the day with 201 upvotes and 79 comments.</p><p><em>We have not tested Fuser ourselves. This page brings together its official site, pricing, Apps and Teams pages, its Product Hunt page and reviews, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI creative tools",
+  "platform": "Web",
+  "starts_at": "30-day free trial; Indie from $22.50/month",
+  "schema_category": "DesignApplication",
+  "summary_short": "Node-based AI canvas for image, video, 3D and audio work that can now build and publish web apps",
+  "maker": {"name": "Fuser Technologies, Inc.", "url": "https://fuser.studio/about"},
+  "team": [
+   {"name": "Dalena", "role": "Co-founder", "url": "https://fuser.studio/"},
+   {"name": "Hirad", "role": "Co-founder", "url": "https://fuser.studio/"}
+  ],
+  "ph": {"rank": 9, "votes": 201, "comments": 79, "followers": 487, "launched": "2026-07-01", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Building a small website, web tool or browser game from a prompt and your own assets",
+   "Chaining image, video and 3D models in one visible workflow",
+   "Running a ready-made Recipe on a product image or brief",
+   "Sharing work with clients for comments without them signing up",
+   "Giving a studio team a shared canvas and credit pool"
+  ],
+  "audience": {
+   "fit": [
+    "are a designer, studio or agency that mixes several AI models in one project",
+    "want to see and reuse every step of how an output was made",
+    "want to turn canvas assets into a small published web app without coding"
+   ],
+   "not_fit": [
+    "want one simple image generator: the node canvas has a learning curve",
+    "need a flat monthly price: generations draw credits that vary by model and settings",
+    "need full app hosting details: the Apps page does not describe hosting or uptime"
+   ]
+  },
+  "pricing": {
+   "intro": "Fuser sells credit plans; each generation's credit cost depends on the model and settings and is shown before you run it. Prices below are the pricing page's default monthly figures in US dollars, which change with the credit amount you choose; annual billing is 15% off.",
+   "url": "https://fuser.studio/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free trial", "price": "$0 for 30 days", "amount": 0, "currency": "USD", "detail": "30 days of Professional with 500 credits to start plus 500 every 30 days"},
+    {"name": "Indie", "price": "$22.50/month (25,000 credits)", "amount": 22.5, "currency": "USD", "detail": "Full model library, commercial licence, community and email support, public shares and cloning, 10 workflows"},
+    {"name": "Professional", "price": "$44.10/month (45,000 credits)", "amount": 44.1, "currency": "USD", "detail": "Everything in Indie plus Prompt Crafter, view-and-comment shares and priority support"},
+    {"name": "Teams", "price": "$170.10/month (150,000 credits)", "amount": 170.1, "currency": "USD", "detail": "Multiplayer canvas, teams and folders, shared credit pool, per-member spend limits, SSO and roles; 10 seats included, $8 per extra seat"},
+    {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Unlimited credits and custom contracts; contact sales"}
+   ],
+   "notes": [
+    "Credits roll over and do not expire; you can pause, switch tiers or skip a month.",
+    "Bring-your-own-key is available for supported providers on personal accounts, billed by the provider.",
+    "Fuser says a subscription does not clear third-party rights in outputs; check model terms before commercial use."
+   ]
+  },
+  "alternatives": {
+   "intro": "Magnific and Higgsfield are on Product Hunt's alternatives list; FLORA is one of the node-based canvases Fuser publishes comparison pages for. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "FLORA", "url": "https://www.florafauna.ai/", "what": "Node-based AI canvas for creative work", "starts_at": "See its pricing page", "difference": "A like-for-like node canvas; Fuser adds the Apps node and Compositor."},
+    {"name": "Magnific", "url": "https://magnific.ai/", "what": "AI platform for image, video and audio", "starts_at": "See its pricing page", "ph_rating": 4.74, "ph_reviews": 42, "ph_url": "https://www.producthunt.com/products/magnific", "difference": "Known for upscaling and generation tools rather than a node workflow canvas."},
+    {"name": "Higgsfield", "url": "https://higgsfield.ai/", "what": "AI platform for creators focused on video", "starts_at": "See its pricing page", "ph_rating": 4.94, "ph_reviews": 16, "ph_url": "https://www.producthunt.com/products/higgsfield", "difference": "Video-first tools for creators; Fuser covers more media types on one canvas."}
+   ],
+   "more": "Product Hunt also lists Midjourney, RunwayML and OpenArt AI."
+  },
+  "reviews": {"count": 7, "rating": 5, "url": "https://www.producthunt.com/products/fuser/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["A clean canvas that is easy to start with", "Many models across media in one place", "The built-in compositor"],
+    "asked": [],
+    "criticised": []
+   },
+   "quotes": [
+    {"text": "Fuser is the only one that combines a clear, readable canvas with serious multi-modal support (text, image, video, audio, 3D) and a built-in compositor.", "author": "Tadas Jotkevicius", "url": "https://www.producthunt.com/products/fuser/reviews?review=562795"},
+    {"text": "The interface is clean, the workflow builder is intuitive, and connecting nodes is much easier than I expected.", "author": "Sabah Sedsed", "url": "https://www.producthunt.com/products/fuser/reviews?review=563236"},
+    {"text": "There are not many AI tools out there that feel aimed at creatives who want to push the boundaries of AI.", "author": "James Wrigley", "url": "https://www.producthunt.com/products/fuser/reviews?review=396038"}
+   ]
+  },
+  "pros": [
+   "Hundreds of image, video, 3D and audio models on one canvas",
+   "Credits never expire and plans can be paused",
+   "Every step of a workflow stays visible and reusable",
+   "Apps node publishes a web app or site to a public link",
+   "30-day free trial of the Professional plan"
+  ],
+  "cons": [
+   "Credit costs vary by model and settings, so monthly spend is harder to predict",
+   "Node canvases take longer to learn than single-prompt tools",
+   "Apps hosting details are not described"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/fuser",
+   "x": {"none": "We found no posts about Fuser on X to link yet.", "search_url": "https://x.com/search?q=fuserstudio&f=live", "profile_url": "https://x.com/fuserstudio"}
+  },
+  "faq": [
+   {"q": "What is Fuser?", "a": "A node-based canvas where you connect AI models for text, image, video, audio and 3D into reusable creative workflows."},
+   {"q": "What is Fuser Apps?", "a": "An App node that builds a website, web app or game from a description plus your canvas assets, with a live preview, code editing, version history and one-click publishing to a public link."},
+   {"q": "How much does Fuser cost?", "a": "There is a 30-day free trial of Professional. The pricing page's default monthly prices are $22.50 for Indie, $44.10 for Professional and $170.10 for Teams, each tied to a credit amount you can change; Enterprise is custom."},
+   {"q": "Do credits expire?", "a": "No. Unused credits roll over, and you can pause, switch tiers or skip a month."},
+   {"q": "Can my team work together?", "a": "Yes. The Teams plan gives a shared canvas, a shared credit pool, spend limits, roles and SSO, with 10 seats included."},
+   {"q": "What are the alternatives?", "a": "FLORA is a similar node-based canvas; Product Hunt also lists Magnific, Higgsfield, Midjourney, RunwayML and OpenArt AI."}
+  ],
+  "sources": [
+   {"label": "Fuser official site", "url": "https://fuser.studio/"},
+   {"label": "Fuser pricing", "url": "https://fuser.studio/pricing"},
+   {"label": "Fuser Apps", "url": "https://fuser.studio/features/apps"},
+   {"label": "Fuser Teams", "url": "https://fuser.studio/features/teams"},
+   {"label": "Fuser about", "url": "https://fuser.studio/about"},
+   {"label": "Fuser terms", "url": "https://fuser.studio/legal/terms"},
+   {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/fuser"},
+   {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/fuser/reviews"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/fuser/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/f70c4909-682b-4944-9bad-4da183601d57.png?auto=format&fit=max&w=1400", "w": 1542, "h": 872, "alt": "Fuser graphic 'Now, there's an app for that.' surrounded by example app cards", "credit": "Image: Fuser via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/017b9c8d-066c-4acc-bf42-77a1ab69fee5.png?auto=format&fit=max&w=1400", "w": 2336, "h": 1320, "alt": "Fuser Apps prompt box 'What do you want to make?' with Inspiration and Assets inputs", "credit": "Image: Fuser via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/c02e023b-0330-45dd-8db3-37f5112ba913.png?auto=format&fit=max&w=1400", "w": 2336, "h": 1320, "alt": "Fuser graphic 'Build anything you can imagine.' with a 3D cat game built as an app", "credit": "Image: Fuser via Product Hunt"}
+  ]
+ }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "assembly-studio",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/assembly-studio",
+  "excerpt": "Assembly is a CRM and branded client portal for service firms, and Assembly Studio adds an AI app builder that creates custom client apps inside your workspace from a description. Pricing, alternatives and launch details.",
+  "content": "<p>Assembly is a platform for service businesses such as accounting, consulting and creative firms. It combines a CRM with a branded client experience on your own domain, where clients can message your team, share files, sign contracts and pay, plus more than 30 ready-made apps for intake, onboarding, proposals, payments and project tracking.</p><p>Assembly Studio, the AI app builder launched on Product Hunt, covers whatever those apps don't. You describe the app you need, review and approve the plan the builder proposes, and it builds the app into your workspace with sign-in, permissions and your branding already in place, then you keep refining it by chat. Assembly says the security pieces (sign-in, permissions and data isolation) are platform infrastructure rather than AI-generated code, that each app runs in its own sandbox and that it holds SOC 2 Type II. Apps can connect to tools such as Slack, Notion, Google Drive, HubSpot and Airtable. According to its AI policy, the builder uses providers including Anthropic and OpenAI, and Assembly does not use your prompts or data to train models. The company is Copilot Platforms Inc., doing business as Assembly. Studio launched on 12 August 2026, Assembly's third Product Hunt launch, and finished #4 for the day with 254 points.</p><p><em>We have not tested Assembly ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Client portal and CRM",
+    "platform": "Web app",
+    "starts_at": "Free plan; paid from $29/month billed annually",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Client portal and CRM for service firms with an AI builder for custom client apps",
+    "ph": {"rank": 4, "votes": 254, "comments": 14, "followers": 1649, "launched": "2026-08-12", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/e309baf2-9151-4c31-82e6-af2bbebb0f72.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160,
+       "alt": "Assembly app builder asking 'what app will you add?', with suggested apps including a progress tracker, proposal builder and onboarding wizard", "credit": "Image: Assembly via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/4b103a78-75c7-41ae-b9fd-38e1b0dd1092.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160,
+       "alt": "Assembly prompt box asking to build a white-labelled client project tracker, under the line 'Stop paying for expensive software. Clone it instead.'", "credit": "Image: Assembly via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/e93ef88e-577a-4b5c-818b-f815ea458775.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160,
+       "alt": "Assembly connectors settings listing Slack, Notion, Google Drive, Airtable, HubSpot, Typeform, OneDrive, Dropbox and LinkedIn", "credit": "Image: Assembly via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "run a service firm (accounting, consulting, agency) and want clients to message, share files, sign and pay in one branded place",
+        "need a custom client-facing tool, like an intake form or project tracker, without hiring a developer",
+        "need HIPAA support: the Advanced plan offers a BAA"
+      ],
+      "not_fit": [
+        "sell to consumers: Assembly's terms say the service is for business activity only",
+        "want a general-purpose app builder for public websites, since apps live inside your Assembly workspace",
+        "need a custom domain on a small budget: custom domains start on the Professional plan"
+      ]
+    },
+    "pricing": {
+      "intro": "Assembly has a free-forever plan and paid plans. Prices below are billed annually, in US dollars; monthly billing is also offered.",
+      "url": "https://assembly.com/pricing",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "5 active contacts, 1 internal user, 50 build credits a month, up to 3 apps, CRM, client experience, messaging and payments"},
+        {"name": "Starter", "price": "$29/month", "amount": 29, "currency": "USD", "detail": "Billed annually. 50 active contacts, 1 user, 200 build credits a month, API and MCP connector"},
+        {"name": "Professional", "price": "$99/month", "amount": 99, "currency": "USD", "detail": "Billed annually. 500 active contacts, 3 users, custom domains, no Assembly badge, automation builder, AI model selection"},
+        {"name": "Advanced", "price": "$499/month", "amount": 499, "currency": "USD", "detail": "Billed annually. Unlimited contacts, 5 users, audit log, enforced MFA, HIPAA (BAA), priority call support"},
+        {"name": "Enterprise", "price": "Custom", "detail": "Unlimited users, contacts and apps, custom SSO, volume build credits"}
+      ],
+      "notes": [
+        "Build credits are only used when the builder creates or edits an app; using live apps is free, and planning or failed builds cost nothing.",
+        "Extra build credits cost $0.60 each on paid plans. Unused credits roll over for one more month."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Formaloo", "url": "https://www.formaloo.com/", "what": "No-code forms, client portals, PDF builder and approval workflows", "starts_at": "See its pricing page",
+         "ph_rating": 4.72, "ph_reviews": 46,
+         "difference": "Also builds client portals without code, but from forms and workflows rather than an AI builder plus CRM."},
+        {"name": "HubSpot", "url": "https://www.hubspot.com/", "what": "Marketing, sales and service platform with a free CRM", "starts_at": "Free tools; see its pricing page",
+         "ph_rating": 4.77, "ph_reviews": 78,
+         "difference": "A much broader CRM and marketing suite. Assembly centres on the client-facing portal for service firms."},
+        {"name": "folk", "url": "https://www.folk.app/", "what": "AI CRM for sales teams", "starts_at": "See its pricing page",
+         "ph_rating": 4.79, "ph_reviews": 81,
+         "difference": "A sales CRM, with no branded client portal or payments."}
+      ],
+      "more": "Product Hunt also lists Copilot and Uspacy as alternatives."
+    },
+    "reviews": {"count": 10, "rating": 5, "url": "https://www.producthunt.com/products/assembly-7/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/assembly-7",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=%22Assembly%20Studio%22&f=live"}
+    },
+    "faq": [
+      {"q": "What is Assembly Studio?", "a": "Assembly's AI app builder. You describe an app, approve the plan and it builds the app into your Assembly workspace with sign-in, permissions and branding. It launched on Product Hunt on 12 August 2026."},
+      {"q": "What is Assembly?", "a": "A CRM and branded client portal for service businesses, where clients can message, share files, sign contracts and pay, with 30+ ready-made apps."},
+      {"q": "How much does Assembly cost?", "a": "There is a free plan. Paid plans billed annually are $29 a month (Starter), $99 (Professional) and $499 (Advanced), with Enterprise on request."},
+      {"q": "What are build credits?", "a": "Credits used when the builder creates or edits an app. A typical app takes a few dozen credits; using live apps uses none. Extra credits cost $0.60 each."},
+      {"q": "Does Assembly train AI on my data?", "a": "Its AI policy says Assembly does not use prompts, inputs or outputs from its AI features and MCP connections to train any AI model."},
+      {"q": "Is it secure?", "a": "Assembly says sign-in, permissions and data isolation are built into the platform, each app runs in its own sandbox, and it is SOC 2 Type II certified."}
+    ],
+    "sources": [
+      {"label": "Assembly official site", "url": "https://assembly.com/"},
+      {"label": "Assembly Studio", "url": "https://studio.assembly.com/"},
+      {"label": "Assembly pricing", "url": "https://assembly.com/pricing"},
+      {"label": "Assembly AI policy", "url": "https://assembly.com/legal/ai-policy"},
+      {"label": "Assembly privacy policy", "url": "https://assembly.com/legal/privacy-policy"},
+      {"label": "Assembly terms", "url": "https://assembly.com/legal/terms-of-service"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/assembly-studio"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/assembly-7"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/assembly-7/alternatives"},
+      {"label": "Formaloo", "url": "https://www.formaloo.com/"},
+      {"label": "HubSpot", "url": "https://www.hubspot.com/"},
+      {"label": "folk", "url": "https://www.folk.app/"}
+    ]
+  }
+}
