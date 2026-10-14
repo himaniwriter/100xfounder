@@ -5,30 +5,68 @@
   "excerpt": "BetterClaw is a no-code platform from New Delhi for building AI agents that run on a schedule in Slack, Telegram, Discord or Gmail, using your own AI key. Pricing, alternatives and launch-day questions.",
   "content": "<p>BetterClaw lets you build an AI agent without code or a server. You describe the job in chat, connect the tools it needs (Gmail, Slack, Notion, HubSpot, Stripe and many more), give it a schedule, and it runs the task and reports back in Slack, Telegram, Discord or Gmail. Typical jobs on its site are inbox triage, morning briefings, competitor checks and posting updates. Each agent runs in its own sandboxed container, and the makers say the agent never touches OAuth tokens directly.</p><p>Two choices set it apart. You bring your own AI key (OpenAI, Anthropic, Gemini, DeepSeek, Groq, or a local model through Ollama, among 28+ providers), and BetterClaw says it never marks up those token costs; it charges for the platform. And agents work at trust levels: they start as Interns that ask before acting, and you promote them to Specialist or Lead by hand when you trust them with more.</p><p>BetterClaw is built by BitQit Private Limited, a small software company in New Delhi, India, whose About page lists a team across tech, marketing and support. It launched on Product Hunt on 11 August 2026 and finished #2 for the day with 310 points and 61 comments.</p><p><em>We have not tested BetterClaw ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "AI agents",
     "platform": "Web app, with an iOS app",
     "starts_at": "Free plan; paid from $19/month",
     "schema_category": "BusinessApplication",
     "summary_short": "No-code platform for scheduled AI agents that work across your tools, using your own AI key",
-    "maker": {"name": "Shabnam Katoch", "url": "https://www.producthunt.com/@better_shab"},
+    "maker": {
+      "name": "Shabnam Katoch",
+      "url": "https://www.producthunt.com/@better_shab"
+    },
     "team": [
-      {"name": "Shabnam Katoch", "role": "Marketing", "url": "https://www.producthunt.com/@better_shab"},
-      {"name": "Tina Chhabra", "role": "Marketing", "url": "https://www.producthunt.com/@tina_chhabra"},
-      {"name": "Aniket Bhatnagar", "role": "Tech", "url": "https://www.producthunt.com/@aniket_bhatnagar"},
-      {"name": "Varsha Saini", "role": "Tech", "url": "https://www.producthunt.com/@varsha_saini2"}
+      {
+        "name": "Shabnam Katoch",
+        "role": "Marketing",
+        "url": "https://www.producthunt.com/@better_shab"
+      },
+      {
+        "name": "Tina Chhabra",
+        "role": "Marketing",
+        "url": "https://www.producthunt.com/@tina_chhabra"
+      },
+      {
+        "name": "Aniket Bhatnagar",
+        "role": "Tech",
+        "url": "https://www.producthunt.com/@aniket_bhatnagar"
+      },
+      {
+        "name": "Varsha Saini",
+        "role": "Tech",
+        "url": "https://www.producthunt.com/@varsha_saini2"
+      }
     ],
-    "ph": {"rank": 2, "votes": 310, "comments": 61, "followers": 849, "launched": "2026-08-11", "as_of": "2026-10-14"},
+    "ph": {
+      "rank": 2,
+      "votes": 310,
+      "comments": 61,
+      "followers": 849,
+      "launched": "2026-08-11",
+      "as_of": "2026-10-14"
+    },
     "gallery": [
-      {"url": "https://ph-files.imgix.net/cdc2d750-b5c8-44aa-8f12-dccda098e9a5.png?auto=format&fit=max&w=1400", "w": 2542, "h": 1522,
-       "alt": "BetterClaw's new scheduled task screen with frequency, time, timezone, agent and cron fields, under the heading 'Schedule tasks to run automatically'",
-       "credit": "Image: BetterClaw via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/fe9769e9-a5ed-451e-8af4-3d17f2b7b0cc.png?auto=format&fit=max&w=1400", "w": 2542, "h": 1522,
-       "alt": "BetterClaw graphic 'Connect 96 tools in one click' showing Gmail, Slack, QuickBooks, Salesforce, HubSpot, Notion, GitHub and other connector logos",
-       "credit": "Image: BetterClaw via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/a2ab8eda-1264-4c76-b449-1c36cff590dc.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
-       "alt": "BetterClaw banner 'Build your first agent today' noting a free plan with no credit card, 200+ skills, 96 connectors and 15+ chat platforms",
-       "credit": "Image: BetterClaw via Product Hunt"}
+      {
+        "url": "https://ph-files.imgix.net/cdc2d750-b5c8-44aa-8f12-dccda098e9a5.png?auto=format&fit=max&w=1400",
+        "w": 2542,
+        "h": 1522,
+        "alt": "BetterClaw's new scheduled task screen with frequency, time, timezone, agent and cron fields, under the heading 'Schedule tasks to run automatically'",
+        "credit": "Image: BetterClaw via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/fe9769e9-a5ed-451e-8af4-3d17f2b7b0cc.png?auto=format&fit=max&w=1400",
+        "w": 2542,
+        "h": 1522,
+        "alt": "BetterClaw graphic 'Connect 96 tools in one click' showing Gmail, Slack, QuickBooks, Salesforce, HubSpot, Notion, GitHub and other connector logos",
+        "credit": "Image: BetterClaw via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/a2ab8eda-1264-4c76-b449-1c36cff590dc.png?auto=format&fit=max&w=1400",
+        "w": 2540,
+        "h": 1520,
+        "alt": "BetterClaw banner 'Build your first agent today' noting a free plan with no credit card, 200+ skills, 96 connectors and 15+ chat platforms",
+        "credit": "Image: BetterClaw via Product Hunt"
+      }
     ],
     "audience": {
       "fit": [
@@ -46,11 +84,41 @@
       "intro": "BetterClaw has a free plan and three paid plans, in US dollars. Every plan uses your own AI key, so model costs are billed by your provider, not by BetterClaw.",
       "url": "https://www.betterclaw.io/pricing",
       "plans": [
-        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "1 agent, 100 credits a month, 3 connectors, 7-day memory retention, no card needed"},
-        {"name": "Basic", "price": "$19/month", "amount": 19, "currency": "USD", "detail": "1 agent, 500 credits a month, 10 connectors, 2 vCPU / 4 GB server, 7-day memory, community support"},
-        {"name": "Pro", "price": "$49/month", "amount": 49, "currency": "USD", "detail": "$39/month billed annually. 5 agents, 12,000 credits a month, unlimited connectors, ad integrations, 90-day memory, 2 team seats, 24-hour email support"},
-        {"name": "Business", "price": "$149/month", "amount": 149, "currency": "USD", "detail": "$119/month billed annually. 25 agents, 40,000 credits a month, unlimited memory, 5 team seats, dedicated server, 12-hour priority support"},
-        {"name": "Enterprise", "price": "Custom", "amount": null, "currency": "USD", "detail": "Unlimited agents, custom credits, SSO and a dedicated account manager"}
+        {
+          "name": "Free",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "1 agent, 100 credits a month, 3 connectors, 7-day memory retention, no card needed"
+        },
+        {
+          "name": "Basic",
+          "price": "$19/month",
+          "amount": 19,
+          "currency": "USD",
+          "detail": "1 agent, 500 credits a month, 10 connectors, 2 vCPU / 4 GB server, 7-day memory, community support"
+        },
+        {
+          "name": "Pro",
+          "price": "$49/month",
+          "amount": 49,
+          "currency": "USD",
+          "detail": "$39/month billed annually. 5 agents, 12,000 credits a month, unlimited connectors, ad integrations, 90-day memory, 2 team seats, 24-hour email support"
+        },
+        {
+          "name": "Business",
+          "price": "$149/month",
+          "amount": 149,
+          "currency": "USD",
+          "detail": "$119/month billed annually. 25 agents, 40,000 credits a month, unlimited memory, 5 team seats, dedicated server, 12-hour priority support"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "amount": null,
+          "currency": "USD",
+          "detail": "Unlimited agents, custom credits, SSO and a dedicated account manager"
+        }
       ],
       "notes": [
         "Every paid plan has a 7-day money-back guarantee and can be cancelled any time.",
@@ -58,52 +126,139 @@
         "According to the terms, if you run out of credits, extra credit packs are billed automatically at your plan's rate.",
         "On Product Hunt the maker said the free allowance was 500 credits a month; BetterClaw's pricing and About pages now say 100."
       ],
-      "checked": "2026-10-14"
+      "checked": "2026-10-15"
     },
     "alternatives": {
       "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
       "items": [
-        {"name": "Pickaxe", "url": "https://pickaxe.co", "what": "Build AI agents and sell them through branded portals", "starts_at": "From $37/month ($29/month billed annually)", "ph_rating": 4.94, "ph_reviews": 17,
-         "difference": "Aimed at selling agents to clients, with billing and access control built in, rather than running your own scheduled jobs."},
-        {"name": "Agentplace", "url": "https://agentplace.io", "what": "AI agents that answer customers and book appointments", "starts_at": "Free plan; Pro from $29/month", "ph_rating": 5, "ph_reviews": 2,
-         "difference": "Customer-facing agents with a free built-in model, while BetterClaw runs internal work with your own model key."},
-        {"name": "Claude by Anthropic", "url": "https://www.anthropic.com/claude", "what": "Anthropic's AI assistant and models", "starts_at": "See its pricing page", "ph_rating": 4.96, "ph_reviews": 1041,
-         "difference": "A general assistant; BetterClaw can use Claude as one of the models behind a scheduled agent."}
+        {
+          "name": "Pickaxe",
+          "url": "https://pickaxe.co",
+          "what": "Build AI agents and sell them through branded portals",
+          "starts_at": "From $37/month ($29/month billed annually)",
+          "ph_rating": 4.94,
+          "ph_reviews": 17,
+          "difference": "Aimed at selling agents to clients, with billing and access control built in, rather than running your own scheduled jobs."
+        },
+        {
+          "name": "Agentplace",
+          "url": "https://agentplace.io",
+          "what": "AI agents that answer customers and book appointments",
+          "starts_at": "Free plan; Pro from $29/month",
+          "ph_rating": 5,
+          "ph_reviews": 2,
+          "difference": "Customer-facing agents with a free built-in model, while BetterClaw runs internal work with your own model key."
+        },
+        {
+          "name": "Claude by Anthropic",
+          "url": "https://www.anthropic.com/claude",
+          "what": "Anthropic's AI assistant and models",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.96,
+          "ph_reviews": 1041,
+          "difference": "A general assistant; BetterClaw can use Claude as one of the models behind a scheduled agent."
+        }
       ],
       "more": "Product Hunt also lists Skydive and MakersClaw. On Product Hunt the maker described BetterClaw as a managed layer on top of the Hermes agent runtime, and its site has comparison pages against OpenClaw, Claude Cowork, Hermes Agent and others."
     },
-    "reviews": {"count": 14, "rating": 5, "url": "https://www.producthunt.com/products/betterclaw/reviews", "as_of": "2026-10-14"},
+    "reviews": {
+      "count": 14,
+      "rating": 5,
+      "url": "https://www.producthunt.com/products/betterclaw/reviews",
+      "as_of": "2026-10-14"
+    },
     "community": {
       "ph_url": "https://www.producthunt.com/products/betterclaw",
       "quotes": [
-        {"author": "Michael Vavilov", "text": "What triggers the a promotion from intern to specialist?",
-         "reply": "Shabnam Katoch: promotion is manual for now; you review what the agent has done and promote it when you are comfortable."},
-        {"author": "Mohsin Ali", "text": "what happens if an API rate limits the agent midtask?",
-         "reply": "Tina Chhabra: the agent waits and retries without losing progress, and escalates to you if it can't resolve it."},
-        {"author": "Stefano Galfrè", "text": "Is it really going to be 0$ forever?",
-         "reply": "Shabnam Katoch: yes, with a monthly credit allowance that resets."}
+        {
+          "author": "Michael Vavilov",
+          "text": "What triggers the a promotion from intern to specialist?",
+          "reply": "Shabnam Katoch: promotion is manual for now; you review what the agent has done and promote it when you are comfortable."
+        },
+        {
+          "author": "Mohsin Ali",
+          "text": "what happens if an API rate limits the agent midtask?",
+          "reply": "Tina Chhabra: the agent waits and retries without losing progress, and escalates to you if it can't resolve it."
+        },
+        {
+          "author": "Stefano Galfrè",
+          "text": "Is it really going to be 0$ forever?",
+          "reply": "Shabnam Katoch: yes, with a monthly credit allowance that resets."
+        }
       ],
-      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=betterclaw&f=live", "profile_url": "https://x.com/better_claw_io"}
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=betterclaw&f=live",
+        "profile_url": "https://x.com/better_claw_io"
+      }
     },
     "faq": [
-      {"q": "What is BetterClaw?", "a": "A no-code platform for building AI agents that run on a schedule and work across tools such as Gmail, Slack and Notion. It is built by BitQit Private Limited of New Delhi and launched on Product Hunt on 11 August 2026."},
-      {"q": "Is BetterClaw free?", "a": "There is a free plan with no card required: 1 agent, 100 credits a month, 3 connectors and 7-day memory. Paid plans are Basic at $19 a month, Pro at $49 and Business at $149. You also pay your AI provider directly for model usage."},
-      {"q": "Which AI models does it support?", "a": "It works with your own key from 28+ providers, including OpenAI, Anthropic, Gemini, DeepSeek and Groq, or local models through Ollama. BetterClaw says it adds no markup to token costs."},
-      {"q": "Where do the agents run?", "a": "On BetterClaw's managed infrastructure. Its sub-processor list names Railway, Fly.io (sandboxed agent runtimes), Cloudflare and Google Cloud, with Composio brokering connections to your tools."},
-      {"q": "Can an agent act without my approval?", "a": "New agents start as Interns that ask before acting. You can promote an agent to Specialist or Lead by hand, and move it back down at any time, according to the makers."},
-      {"q": "Is there a refund?", "a": "Every new paid subscription has a 7-day money-back guarantee, according to BetterClaw's terms and pricing page."}
+      {
+        "q": "What is BetterClaw?",
+        "a": "A no-code platform for building AI agents that run on a schedule and work across tools such as Gmail, Slack and Notion. It is built by BitQit Private Limited of New Delhi and launched on Product Hunt on 11 August 2026."
+      },
+      {
+        "q": "Is BetterClaw free?",
+        "a": "There is a free plan with no card required: 1 agent, 100 credits a month, 3 connectors and 7-day memory. Paid plans are Basic at $19 a month, Pro at $49 and Business at $149. You also pay your AI provider directly for model usage."
+      },
+      {
+        "q": "Which AI models does it support?",
+        "a": "It works with your own key from 28+ providers, including OpenAI, Anthropic, Gemini, DeepSeek and Groq, or local models through Ollama. BetterClaw says it adds no markup to token costs."
+      },
+      {
+        "q": "Where do the agents run?",
+        "a": "On BetterClaw's managed infrastructure. Its sub-processor list names Railway, Fly.io (sandboxed agent runtimes), Cloudflare and Google Cloud, with Composio brokering connections to your tools."
+      },
+      {
+        "q": "Can an agent act without my approval?",
+        "a": "New agents start as Interns that ask before acting. You can promote an agent to Specialist or Lead by hand, and move it back down at any time, according to the makers."
+      },
+      {
+        "q": "Is there a refund?",
+        "a": "Every new paid subscription has a 7-day money-back guarantee, according to BetterClaw's terms and pricing page."
+      }
     ],
     "sources": [
-      {"label": "BetterClaw official site", "url": "https://www.betterclaw.io/"},
-      {"label": "BetterClaw pricing", "url": "https://www.betterclaw.io/pricing"},
-      {"label": "About BetterClaw", "url": "https://www.betterclaw.io/about"},
-      {"label": "BetterClaw terms", "url": "https://www.betterclaw.io/terms"},
-      {"label": "BetterClaw sub-processors", "url": "https://www.betterclaw.io/legal/subprocessors"},
-      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/betterclaw"},
-      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/betterclaw/reviews"},
-      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/betterclaw/alternatives"},
-      {"label": "Pickaxe pricing", "url": "https://pickaxe.co/pricing"},
-      {"label": "Agentplace pricing", "url": "https://agentplace.io/pricing"}
+      {
+        "label": "BetterClaw official site",
+        "url": "https://www.betterclaw.io/"
+      },
+      {
+        "label": "BetterClaw pricing",
+        "url": "https://www.betterclaw.io/pricing"
+      },
+      {
+        "label": "About BetterClaw",
+        "url": "https://www.betterclaw.io/about"
+      },
+      {
+        "label": "BetterClaw terms",
+        "url": "https://www.betterclaw.io/terms"
+      },
+      {
+        "label": "BetterClaw sub-processors",
+        "url": "https://www.betterclaw.io/legal/subprocessors"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/betterclaw"
+      },
+      {
+        "label": "Product Hunt reviews",
+        "url": "https://www.producthunt.com/products/betterclaw/reviews"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/betterclaw/alternatives"
+      },
+      {
+        "label": "Pickaxe pricing",
+        "url": "https://pickaxe.co/pricing"
+      },
+      {
+        "label": "Agentplace pricing",
+        "url": "https://agentplace.io/pricing"
+      }
     ]
   }
 }

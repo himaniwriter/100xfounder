@@ -4,9 +4,9 @@
   "existing_listing_slug": null,
   "website": "https://rindler.com",
   "excerpt": "Rindler runs repetitive web work on the portals your team logs into, such as pulling records and submitting forms, from plain-English tasks. $1 per finished run.",
-  "content": "<p>Rindler automates the web work teams still do by hand on sites that have no API: signing into portals to pull records, download statements, check claim or order status and submit forms. You describe the task in plain English; Rindler goes to the real site, signs in when needed, completes the task and returns structured data, and you can put it on a schedule. Instead of a browser agent working out each page every time, Rindler maps each site ahead of time (its makers say more than 1,000 sites at launch) and repairs the map when pages change, so the same fields come back every run.</p><p>You set rules for what it may never do; the launch images show paying, changing card details and similar actions switched off, with every refusal logged. Developers can call it over an MCP server. Pricing is per finished run, $1 each, with monthly plans from $100.</p><p>Rindler was founded in 2025 by MIT classmates and is backed by Y Combinator, according to its site. The makers on Product Hunt are Michael Serrano and co-founder and CTO Arthur De Los Santos. Rindler launched there on 7 August 2026, hunted by Garry Tan, and finished #3 for the day with 235 upvotes and 21 comments (as of 14 October 2026). In October 2026 Rindler's home page pointed visitors to Maxxwell, a new product the team is building, while its product, pricing and FAQ pages remained online.</p><p><em>We have not tested Rindler ourselves. This page brings together its official site, pricing, About and FAQ pages, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "content": "<p>Rindler automates the web work teams still do by hand on sites that have no API: signing into portals to pull records, download statements, check claim or order status and submit forms. You describe the task in plain English; Rindler goes to the real site, signs in when needed, completes the task and returns structured data, and you can put it on a schedule. Instead of a browser agent working out each page every time, Rindler maps each site ahead of time (its makers say more than 1,000 sites at launch) and repairs the map when pages change, so the same fields come back every run.</p><p>You set rules for what it may never do; the launch images show paying, changing card details and similar actions switched off, with every refusal logged. Developers can call it over an MCP server. Pricing is per finished run, $1 each, with monthly plans from $100.</p><p>Rindler was founded in 2025 by MIT classmates and is backed by Y Combinator, according to its site. The makers on Product Hunt are Michael Serrano and co-founder and CTO Arthur De Los Santos. Rindler launched there on 7 August 2026, hunted by Garry Tan, and finished #3 for the day with 235 upvotes and 21 comments (as of 14 October 2026). Rindler has since shifted its focus. On 15 October 2026 its home page no longer described the web-automation service; it says only that the team is building Maxxwell, which it calls 'the IDE for optimal tokenmaxxing', and links to maxxwell.dev, where Maxxwell is described as a free desktop app for managing several coding agents at once. Rindler's pricing, About and FAQ pages were still online with the plans below, but the home page no longer promotes the service, so confirm with the team that it is still sold before signing up.</p><p><em>We have not tested Rindler ourselves. This page brings together its official site, pricing, About and FAQ pages, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "Browser automation",
     "platform": "Web app and MCP server",
     "starts_at": "$100/month after a 7-day free trial",
@@ -57,13 +57,13 @@
     "pricing": {
       "intro": "Rindler charges for runs that finish: one run is one completed task, however many steps it takes. Prices are in US dollars.",
       "url": "https://rindler.com/pricing",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "plans": [
         {"name": "Starter", "price": "$100/month", "amount": 100, "currency": "USD", "detail": "7-day free trial; 100 one-off runs a month; one login-gated site set up with you; access to every supported site; email support"},
         {"name": "Teams", "price": "$1,000/month", "amount": 1000, "currency": "USD", "detail": "1,000 runs a month, one-off or scheduled; 10 login-gated sites; scheduled automations; team workspace"},
         {"name": "Enterprise", "price": "Custom", "detail": "More sites, extra capacity, annual agreement billed monthly with a pilot first month, dedicated onboarding"}
       ],
-      "notes": ["1 run = 1 finished task = $1, according to the pricing page; steps and time don't count."]
+      "notes": ["1 run = 1 finished task = $1, according to the pricing page; steps and time don't count.", "On 15 October 2026 these plans were still on rindler.com/pricing, but the home page promoted only Maxxwell, the team's new product. Confirm the service is still offered before paying."]
     },
     "alternatives": {
       "intro": "Other tools that automate work in websites. Prices are from each company's own pricing page on 14 October 2026.",
@@ -107,6 +107,7 @@
     },
     "faq": [
       {"q": "What is Rindler?", "a": "A service that runs repetitive web tasks on the portals your team logs into, such as pulling records, downloading statements and submitting forms, from plain-English instructions."},
+      {"q": "Is Rindler still the team's main product?", "a": "Its home page now promotes Maxxwell, a desktop app for managing coding agents that the Rindler team is building. The Rindler pricing, About and FAQ pages are still online, but check with the team that the web-automation service is still offered."},
       {"q": "How much does Rindler cost?", "a": "Starter is $100 a month for 100 runs after a 7-day free trial, Teams is $1,000 a month for 1,000 runs, and Enterprise is custom. A run is one finished task."},
       {"q": "Who is behind Rindler?", "a": "Founders who met at MIT; the site says it was founded in 2025 and is backed by Y Combinator. On Product Hunt the makers are Michael Serrano and co-founder and CTO Arthur De Los Santos."},
       {"q": "Can developers call Rindler from code?", "a": "Yes, through its MCP server over HTTP with a bearer token, according to the makers."},
@@ -117,6 +118,7 @@
       {"label": "Rindler pricing", "url": "https://rindler.com/pricing"},
       {"label": "Rindler About page", "url": "https://rindler.com/about"},
       {"label": "Rindler FAQ", "url": "https://rindler.com/faq"},
+      {"label": "Maxxwell by Rindler", "url": "https://maxxwell.dev/"},
       {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/rindler?launch=rindler"},
       {"label": "Skyvern pricing", "url": "https://www.skyvern.com/pricing"},
       {"label": "Browse AI pricing", "url": "https://www.browse.ai/pricing"}

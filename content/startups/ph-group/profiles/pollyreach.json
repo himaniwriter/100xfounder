@@ -4,12 +4,12 @@
   "existing_listing_slug": null,
   "website": "https://pollyreach.ai",
   "excerpt": "PollyReach gives your AI agent a real phone number and voice: it makes calls for you, answers your phone 24/7 and screens spam, in 50+ languages.",
-  "content": "<p>PollyReach gives an AI agent its own real phone number and voice. You describe the task, such as \"book me a table for 7pm\", and it finds the number, makes the call, handles the conversation (including hold music and phone menus) and reports back with a summary, recording and transcript. It can also answer your phone around the clock and screen spam calls, and it works in more than 50 languages.</p><p>It is installed as a skill for AI agents (its launch images show it being added with a <code>clawhub skill install</code> command) and its site says no API key or pre-payment is needed: every agent gets a monthly free quota and you pay only for use beyond it. The makers say usage is converted into credits, with subscription plans giving different allocations.</p><p>On Product Hunt the makers are Gia Xu, Billy Chen (founder and CEO, according to his profile), co-founder ys zheng and Sandy Liu. Gia Xu says the idea came when she wanted to book a small izakaya in Japan that took bookings only by phone, and she doesn't speak Japanese. PollyReach launched on 19 May 2026 and finished #1 for the day, #2 for the week and #3 for the month, with 784 upvotes and 218 comments (as of 14 October 2026).</p><p><em>We have not tested PollyReach ourselves. This page brings together its official site, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "content": "<p>PollyReach gives an AI agent its own real phone number and voice. You describe the task, such as \"book me a table for 7pm\", and it finds the number, makes the call, handles the conversation (including hold music and phone menus) and reports back with a summary, recording and transcript. It can also answer your phone around the clock and screen spam calls, and it works in more than 50 languages.</p><p>It is installed as a skill for AI agents (its launch images show it being added with a <code>clawhub skill install</code> command) and its site says no API key or pre-payment is needed: every agent gets a monthly free quota and you pay only for use beyond it. The makers say usage is converted into credits; the pricing page lists Star ($20 a month, 2,000 credits), Pro ($40, 4,000) and Max ($100, 10,000) plans, cheaper when billed yearly.</p><p>On Product Hunt the makers are Gia Xu, Billy Chen (founder and CEO, according to his profile), co-founder ys zheng and Sandy Liu. Gia Xu says the idea came when she wanted to book a small izakaya in Japan that took bookings only by phone, and she doesn't speak Japanese. PollyReach launched on 19 May 2026 and finished #1 for the day, #2 for the week and #3 for the month, with 784 upvotes and 218 comments (as of 14 October 2026).</p><p><em>We have not tested PollyReach ourselves. This page brings together its official site, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "AI phone calls",
     "platform": "Skill for AI agents",
-    "starts_at": "Monthly free quota; paid prices not published on its site",
+    "starts_at": "Monthly free quota; Star $20/month ($17 billed yearly)",
     "schema_category": "CommunicationApplication",
     "summary_short": "Gives your AI agent a real phone number and voice to make and answer calls",
     "maker": {"name": "Gia Xu", "url": "https://www.producthunt.com/@gia_xu"},
@@ -52,15 +52,19 @@
         "run a small business and want an always-on receptionist"
       ],
       "not_fit": [
-        "want published per-minute prices before you start: the website doesn't list them",
+        "want per-minute prices: the pricing page sells monthly credit bundles without saying what a credit buys",
         "need enterprise call-centre APIs and workflows, which the makers say other tools are built for"
       ]
     },
     "pricing": {
-      "intro": "Pricing not published. PollyReach's site says every agent gets a monthly free quota with no pre-payment, and you pay only when you go over it; we could not find prices for paid use on the site.",
-      "url": "https://pollyreach.ai/pricing",
-      "checked": "2026-10-14",
-      "plans": [],
+      "intro": "PollyReach's home page says every agent gets a monthly free quota with no pre-payment, and you pay only when you go over it. Its pricing page (pollyreach.ai/pricing.html) lists three subscription plans priced with a $ sign, each with a monthly credit allowance, and a Monthly/Yearly toggle ('Save 15%'). The page does not say what one credit buys.",
+      "url": "https://pollyreach.ai/pricing.html",
+      "checked": "2026-10-15",
+      "plans": [
+        {"name": "Star", "price": "$20/month, or $17/month billed yearly", "amount": 20, "currency": "USD", "detail": "2,000 credits a month; 1 linked agent; phone number kept 90 days; default US number; multi-language support, outbound AI calls, custom call answering, call logs and analytics"},
+        {"name": "Pro", "price": "$40/month, or $34/month billed yearly", "amount": 40, "currency": "USD", "detail": "4,000 credits a month; 2 linked agents; number kept 180 days; numbers in 2 countries (changeable once a month)"},
+        {"name": "Max", "price": "$100/month, or $85/month billed yearly", "amount": 100, "currency": "USD", "detail": "10,000 credits a month; 5 linked agents; number kept 365 days; numbers in 5 countries (changeable once a month)"}
+      ],
       "notes": ["On Product Hunt the maker said usage costs are converted into credits, with subscription plans giving different credit allocations, plus free starter credits."]
     },
     "alternatives": {
@@ -104,13 +108,14 @@
     },
     "faq": [
       {"q": "What is PollyReach?", "a": "A skill that gives your AI agent a real phone number and voice, so it can make calls for you, answer your phone and screen spam, in 50+ languages."},
-      {"q": "How much does PollyReach cost?", "a": "Its site says each agent gets a monthly free quota and you pay only beyond it, with no pre-payment. Paid prices are not listed on the website."},
+      {"q": "How much does PollyReach cost?", "a": "Each agent gets a monthly free quota with no pre-payment. Paid plans on its pricing page are Star at $20 a month (2,000 credits), Pro at $40 (4,000 credits) and Max at $100 (10,000 credits), or $17, $34 and $85 a month billed yearly."},
       {"q": "What do I get after a call?", "a": "A summary, a recording and a transcript, according to PollyReach."},
       {"q": "Can it handle hold music and phone menus?", "a": "The maker says it waits on hold, navigates IVR menus and can be interrupted like a person."},
       {"q": "Does it need an API key?", "a": "No. The site says you install the skill and authentication is handled automatically."}
     ],
     "sources": [
       {"label": "PollyReach official site", "url": "https://pollyreach.ai/"},
+      {"label": "PollyReach pricing", "url": "https://pollyreach.ai/pricing.html"},
       {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/pollyreach?launch=pollyreach"},
       {"label": "Pine AI pricing", "url": "https://www.19pine.ai/pricing"},
       {"label": "Bland AI pricing", "url": "https://www.bland.ai/pricing"}

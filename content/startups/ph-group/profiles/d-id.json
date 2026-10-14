@@ -5,20 +5,42 @@
   "excerpt": "D-ID makes AI avatar videos and interactive visual agents. Its Agentic Videos feature lets viewers ask a video questions and get spoken answers from an avatar. What it does, pricing notes and alternatives.",
   "content": "<p>D-ID is an AI video company that turns photos, text and audio into talking avatar videos and real-time, interactive avatars it calls visual agents. You can use it through its Creative Reality Studio, an API or integrations such as its PowerPoint plugin. D-ID says it was founded in 2017, that its studio and API have produced more than 200 million avatar videos, and that it acquired the explainer-video company simpleshow in 2025. Its legal entities are De-Identification Ltd. and De-Identification Inc., according to its privacy policy.</p><p>The feature launched on Product Hunt, Agentic Videos, makes an ordinary video interactive. You upload a video in the Studio, choose a video agent and set how the conversation starts. Viewers can then stop and ask questions by voice or chat, and the agent answers using the video's script and any extra knowledge you add, so a training clip, product demo or tutorial can take follow-up questions. D-ID says the agents run on its V4 architecture with sub-second latency, and that you can see which questions viewers ask. Agentic Videos launched on 18 June 2026, D-ID's seventh launch on Product Hunt, and finished #7 for the day with 180 points and 57 comments.</p><p><em>We have not tested D-ID ourselves. This page brings together D-ID's official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "AI video",
     "platform": "Web studio, API and integrations",
-    "starts_at": "Free trial; see D-ID's pricing page for plans",
+    "starts_at": "14-day free trial; paid from $5.9/month ($4.7/month billed annually)",
     "schema_category": "MultimediaApplication",
     "summary_short": "AI avatar videos and interactive video agents; Agentic Videos let viewers ask a video questions",
-    "ph": {"rank": 7, "votes": 180, "comments": 57, "followers": 7906, "launched": "2026-06-18", "as_of": "2026-10-14"},
+    "ph": {
+      "rank": 7,
+      "votes": 180,
+      "comments": 57,
+      "followers": 7906,
+      "launched": "2026-06-18",
+      "as_of": "2026-10-14"
+    },
     "gallery": [
-      {"url": "https://ph-files.imgix.net/a45b10a5-0b1b-4695-9a70-471df7d2711f.png?auto=format&fit=max&w=1400", "w": 1280, "h": 720,
-       "alt": "D-ID Creative Reality Studio video editor with an avatar presenter, a script panel and a row of presenters to choose from", "credit": "Image: D-ID via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/d3be6354-29ec-4ef7-8f4c-083295c503eb.png?auto=format&fit=max&w=1400", "w": 1280, "h": 720,
-       "alt": "D-ID graphic 'Build and deploy interactive AI Agents', showing a chat with an illustrated avatar agent in the Studio", "credit": "Image: D-ID via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/9ce04ea7-396f-4041-a014-cfae2d0384fa.png?auto=format&fit=max&w=1400", "w": 1280, "h": 720,
-       "alt": "D-ID Studio language menu for an avatar's script, captioned 'Choose between 120 languages for your avatar's script'", "credit": "Image: D-ID via Product Hunt"}
+      {
+        "url": "https://ph-files.imgix.net/a45b10a5-0b1b-4695-9a70-471df7d2711f.png?auto=format&fit=max&w=1400",
+        "w": 1280,
+        "h": 720,
+        "alt": "D-ID Creative Reality Studio video editor with an avatar presenter, a script panel and a row of presenters to choose from",
+        "credit": "Image: D-ID via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/d3be6354-29ec-4ef7-8f4c-083295c503eb.png?auto=format&fit=max&w=1400",
+        "w": 1280,
+        "h": 720,
+        "alt": "D-ID graphic 'Build and deploy interactive AI Agents', showing a chat with an illustrated avatar agent in the Studio",
+        "credit": "Image: D-ID via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/9ce04ea7-396f-4041-a014-cfae2d0384fa.png?auto=format&fit=max&w=1400",
+        "w": 1280,
+        "h": 720,
+        "alt": "D-ID Studio language menu for an avatar's script, captioned 'Choose between 120 languages for your avatar's script'",
+        "credit": "Image: D-ID via Product Hunt"
+      }
     ],
     "audience": {
       "fit": [
@@ -33,59 +55,174 @@
       ]
     },
     "pricing": {
-      "intro": "D-ID publishes Studio, API and Enterprise pricing pages, but the plan prices did not appear in the page text we retrieved on 14 October 2026. Check d-id.com/pricing/studio for current prices.",
+      "intro": "D-ID's Studio pricing page lists a free trial, three paid plans and Enterprise, in US dollars. Each paid plan is cheaper per month when billed annually. Prices below are the page's default (smallest) credit option; the cards also offer larger credit amounts.",
       "url": "https://www.d-id.com/pricing/studio/",
-      "plans": [],
+      "plans": [
+        {
+          "name": "Trial",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "14-day trial. 3 minutes for videos, agents, Video Translate and API; full-screen watermark; personal-use licence"
+        },
+        {
+          "name": "Lite",
+          "price": "$5.9/month",
+          "amount": 5.9,
+          "currency": "USD",
+          "detail": "Or $4.7/month billed annually ($56 a year). 10 minutes a month; D-ID watermark"
+        },
+        {
+          "name": "Pro",
+          "price": "$29/month",
+          "amount": 29,
+          "currency": "USD",
+          "detail": "Or $16/month billed annually ($191 a year). 15 minutes a month, premium voices, 1 voice clone, commercial-use licence"
+        },
+        {
+          "name": "Advanced",
+          "price": "$196/month",
+          "amount": 196,
+          "currency": "USD",
+          "detail": "Or $108/month billed annually ($1,293 a year). 100 minutes a month, 3 voice clones, custom logo"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "detail": "Unlimited video minutes, custom minutes for agents and API, professional voice cloning, customer success manager"
+        }
+      ],
       "notes": [
+        "When we checked, the Lite, Pro and Advanced cards also offered unlimited videos for the first month, subject to D-ID's fair-use policy; this is a promotion, not a permanent feature.",
         "Plans are measured in video minutes. Each video is rounded up to the nearest 15 seconds, and unused minutes do not carry over.",
         "Trial and Lite videos carry a D-ID watermark; trial users get a full-screen watermark.",
         "API usage draws from the same minute balance as the Studio.",
         "When you share an agent, other people's conversations with it are charged to your account."
       ],
-      "checked": "2026-10-14"
+      "checked": "2026-10-15"
     },
     "alternatives": {
       "intro": "These are products Product Hunt lists as alternatives to D-ID. Review scores are Product Hunt users' own.",
       "items": [
-        {"name": "HeyGen", "url": "https://www.heygen.com/", "what": "AI videos with personal avatars", "starts_at": "Free to start; see its pricing page",
-         "ph_rating": 4.36, "ph_reviews": 72,
-         "difference": "Centred on lifelike personal avatars for recorded videos. D-ID's launch adds Q&A inside an existing video."},
-        {"name": "DeepBrain AI", "url": "https://www.deepbrain.io/", "what": "AI Studios: avatars, dubbing, video generation and interactive avatars", "starts_at": "See its pricing page",
-         "ph_rating": 4.69, "ph_reviews": 31,
-         "difference": "Also offers interactive, LLM-compatible avatars, alongside a large avatar library and dubbing in 150+ languages."},
-        {"name": "VEED", "url": "https://www.veed.io/", "what": "Online video editor with AI video, avatars and voice tools", "starts_at": "See its pricing page",
-         "ph_rating": 4.61, "ph_reviews": 36,
-         "difference": "A general video editor with avatar features, not a platform for conversational agents."}
+        {
+          "name": "HeyGen",
+          "url": "https://www.heygen.com/",
+          "what": "AI videos with personal avatars",
+          "starts_at": "Free to start; see its pricing page",
+          "ph_rating": 4.36,
+          "ph_reviews": 72,
+          "difference": "Centred on lifelike personal avatars for recorded videos. D-ID's launch adds Q&A inside an existing video."
+        },
+        {
+          "name": "DeepBrain AI",
+          "url": "https://www.deepbrain.io/",
+          "what": "AI Studios: avatars, dubbing, video generation and interactive avatars",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.69,
+          "ph_reviews": 31,
+          "difference": "Also offers interactive, LLM-compatible avatars, alongside a large avatar library and dubbing in 150+ languages."
+        },
+        {
+          "name": "VEED",
+          "url": "https://www.veed.io/",
+          "what": "Online video editor with AI video, avatars and voice tools",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.61,
+          "ph_reviews": 36,
+          "difference": "A general video editor with avatar features, not a platform for conversational agents."
+        }
       ],
       "more": "Product Hunt also lists Synthesia and Spiritme. D-ID's own benchmark page compares its real-time lip-sync with HeyGen, Anam and Tavus; that is D-ID's own test."
     },
-    "reviews": {"count": 95, "rating": 4.68, "url": "https://www.producthunt.com/products/d-id/reviews", "as_of": "2026-10-14"},
+    "reviews": {
+      "count": 95,
+      "rating": 4.68,
+      "url": "https://www.producthunt.com/products/d-id/reviews",
+      "as_of": "2026-10-14"
+    },
     "community": {
       "ph_url": "https://www.producthunt.com/products/d-id",
       "quotes": [],
-      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=D-ID%20agentic%20videos&f=live"}
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=D-ID%20agentic%20videos&f=live"
+      }
     },
     "faq": [
-      {"q": "What are D-ID Agentic Videos?", "a": "Videos that viewers can talk to. You upload a video in D-ID's Studio and attach a video agent; viewers ask questions by voice or chat and the agent answers from the script and any knowledge you add. The feature launched on Product Hunt on 18 June 2026."},
-      {"q": "How do I make one?", "a": "Upload any video in D-ID's Creative Reality Studio, choose a video agent and define how the interaction should begin, according to D-ID."},
-      {"q": "Can agents speak other languages?", "a": "Yes. D-ID says agents reply in the language you speak if a multilingual voice is enabled, and the Studio supports more than 120 languages."},
-      {"q": "Can I put an agent on my website?", "a": "Yes. You can share a D-ID-hosted link or embed the agent on your own site. Conversations others have with it are charged to your account."},
-      {"q": "Do D-ID videos have a watermark?", "a": "On the Trial and Lite plans, yes. D-ID says this is to be open about the synthetic nature of the videos."},
-      {"q": "Who is D-ID?", "a": "An AI video company founded in 2017, which says its studio and API have produced more than 200 million avatar videos. It acquired simpleshow in 2025."}
+      {
+        "q": "What are D-ID Agentic Videos?",
+        "a": "Videos that viewers can talk to. You upload a video in D-ID's Studio and attach a video agent; viewers ask questions by voice or chat and the agent answers from the script and any knowledge you add. The feature launched on Product Hunt on 18 June 2026."
+      },
+      {
+        "q": "How do I make one?",
+        "a": "Upload any video in D-ID's Creative Reality Studio, choose a video agent and define how the interaction should begin, according to D-ID."
+      },
+      {
+        "q": "Can agents speak other languages?",
+        "a": "Yes. D-ID says agents reply in the language you speak if a multilingual voice is enabled, and the Studio supports more than 120 languages."
+      },
+      {
+        "q": "Can I put an agent on my website?",
+        "a": "Yes. You can share a D-ID-hosted link or embed the agent on your own site. Conversations others have with it are charged to your account."
+      },
+      {
+        "q": "Do D-ID videos have a watermark?",
+        "a": "On the Trial and Lite plans, yes. D-ID says this is to be open about the synthetic nature of the videos."
+      },
+      {
+        "q": "Who is D-ID?",
+        "a": "An AI video company founded in 2017, which says its studio and API have produced more than 200 million avatar videos. It acquired simpleshow in 2025."
+      }
     ],
     "sources": [
-      {"label": "D-ID Agentic Videos", "url": "https://www.d-id.com/agentic-videos/"},
-      {"label": "D-ID official site", "url": "https://www.d-id.com/"},
-      {"label": "D-ID Studio pricing and FAQ", "url": "https://www.d-id.com/pricing/studio/"},
-      {"label": "About D-ID", "url": "https://www.d-id.com/about-us/"},
-      {"label": "D-ID V4 tech specs", "url": "https://www.d-id.com/v4-expressive-visual-avatars-tech-specs/"},
-      {"label": "D-ID privacy policy", "url": "https://www.d-id.com/privacy-policy/"},
-      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/agentic-videos-by-d-id"},
-      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/d-id"},
-      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/d-id/alternatives"},
-      {"label": "HeyGen", "url": "https://www.heygen.com/"},
-      {"label": "DeepBrain AI", "url": "https://www.deepbrain.io/"},
-      {"label": "VEED", "url": "https://www.veed.io/"}
+      {
+        "label": "D-ID Agentic Videos",
+        "url": "https://www.d-id.com/agentic-videos/"
+      },
+      {
+        "label": "D-ID official site",
+        "url": "https://www.d-id.com/"
+      },
+      {
+        "label": "D-ID Studio pricing and FAQ",
+        "url": "https://www.d-id.com/pricing/studio/"
+      },
+      {
+        "label": "About D-ID",
+        "url": "https://www.d-id.com/about-us/"
+      },
+      {
+        "label": "D-ID V4 tech specs",
+        "url": "https://www.d-id.com/v4-expressive-visual-avatars-tech-specs/"
+      },
+      {
+        "label": "D-ID privacy policy",
+        "url": "https://www.d-id.com/privacy-policy/"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/agentic-videos-by-d-id"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/d-id"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/d-id/alternatives"
+      },
+      {
+        "label": "HeyGen",
+        "url": "https://www.heygen.com/"
+      },
+      {
+        "label": "DeepBrain AI",
+        "url": "https://www.deepbrain.io/"
+      },
+      {
+        "label": "VEED",
+        "url": "https://www.veed.io/"
+      }
     ]
   }
 }

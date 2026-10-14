@@ -4,9 +4,9 @@
  "existing_listing_slug": null,
  "website": "https://yansu.app/",
  "excerpt": "Yansu is a desktop AI that watches how you work, turns it into knowledge and builds automations without prompts. Mac, Windows, Linux; free plan, Pro $20.",
- "content": "<p>Yansu is a desktop AI from Isoform Inc. that tries to work without being asked. It observes your desktop activity through screenshots and your messaging apps, distils what it sees into structured knowledge about how you work, and then offers handoffs and automations based on the patterns it finds. Examples on its site include a daily digest that pulls updates from Jira, Notion and Sheets, monitoring AI spend across providers, and drafting tickets from meeting action items.</p><p>It can also use the computer in the background with a virtual cursor of its own, opening apps, filling forms and filing tickets without taking over your mouse. Yansu runs on macOS 13 or later, Windows 10 or later and Linux (Ubuntu 20.04+), connects to Slack, Microsoft Teams, Feishu, Discord, Telegram, WhatsApp and WeChat, and picks a model per task from Anthropic, OpenAI and Google. Isoform says observations, memory and automations are stored locally on your device, nothing leaves it without your permission, your data is not used for training, and it holds SOC 2 Type II and ISO 27001 certifications; a maker added on Product Hunt that sensitive details are redacted on the device and only redacted, structured context goes to the cloud model.</p><p>Its Product Hunt makers include Bo, who describes himself as one of its builders, and yetone. It launched on Product Hunt on 25 May 2026 and finished #3 for the day with 338 upvotes and 80 comments. There is a free plan; paid plans are Pro ($20 a month), Studio ($100) and Max ($200), with Enterprise adding shared team memory and SSO. Earlier posts from Isoform on X described Yansu as an AI coding platform, so the product has changed direction since its first release.</p><p><em>We have not tested Yansu ourselves. This page brings together its official site, Isoform's privacy policy, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "content": "<p>Yansu is a desktop AI from Isoform Inc. that tries to work without being asked. It observes your desktop activity through screenshots and your messaging apps, distils what it sees into structured knowledge about how you work, and then offers handoffs and automations based on the patterns it finds. Examples on its site include a daily digest that pulls updates from Jira, Notion and Sheets, monitoring AI spend across providers, and drafting tickets from meeting action items.</p><p>It can also use the computer in the background with a virtual cursor of its own, opening apps, filling forms and filing tickets without taking over your mouse. Yansu runs on macOS 13 or later, Windows 10 or later and Linux (Ubuntu 20.04+), connects to Slack, Microsoft Teams, Feishu, Discord, Telegram, WhatsApp and WeChat, and picks a model per task from Anthropic, OpenAI and Google. Isoform says observations, memory and automations are stored locally on your device, nothing leaves it without your permission, your data is not used for training, and it holds SOC 2 Type II and ISO 27001 certifications; a maker added on Product Hunt that sensitive details are redacted on the device and only redacted, structured context goes to the cloud model.</p><p>Its Product Hunt makers include Bo, who describes himself as one of its builders, and yetone. It launched on Product Hunt on 25 May 2026 and finished #3 for the day with 338 upvotes and 80 comments. There is a free plan; paid plans are Pro ($20 a month), Studio ($100) and Max ($200), with Enterprise adding shared team memory and SSO. Yansu has changed direction twice. Isoform introduced it in November 2025 as 'the serious coding platform'; at its May 2026 Product Hunt launch it was 'AI that learns how you work and turns it into software', spotting repeated tasks and turning them into apps and automations; and its site now describes a proactive desktop AI that builds memory, hands off tasks and runs automations, including background computer use.</p><p><em>We have not tested Yansu ourselves. This page brings together its official site, Isoform's privacy policy, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
  "profile": {
-  "checked": "2026-10-14",
+  "checked": "2026-10-15",
   "category": "Productivity",
   "platform": "Desktop app for Mac, Windows and Linux",
   "os": "macOS 13+ (Apple silicon and Intel), Windows 10+, Linux (Ubuntu 20.04+, x64 and ARM64)",
@@ -35,7 +35,7 @@
   "pricing": {
    "intro": "Yansu's plans differ by how many handoffs, automations and memories they allow (the site gives approximate numbers). Prices are from yansu.app, in US dollars per month.",
    "url": "https://yansu.app/#pricing",
-   "checked": "2026-10-14",
+   "checked": "2026-10-15",
    "plans": [
     {
      "name": "Free",
@@ -130,6 +130,10 @@
     "a": "A desktop AI from Isoform that observes how you work, turns it into structured knowledge, and builds handoffs and automations without you having to prompt it."
    },
    {
+    "q": "Has Yansu changed since it launched?",
+    "a": "Yes. Isoform introduced Yansu in November 2025 as a coding platform. At its May 2026 Product Hunt launch it was pitched as AI that learns how you work and turns it into apps and automations. Its website now describes a proactive desktop AI that observes your work and acts on it with handoffs, automations and background computer use."
+   },
+   {
     "q": "How much does Yansu cost?",
     "a": "There is a free plan. Pro is $20 a month, Studio $100 and Max $200, each allowing more handoffs, automations and memories. Enterprise is priced on request."
    },
@@ -178,6 +182,10 @@
    {
     "label": "Isoform on X: Yansu as an AI coding platform (November 2025)",
     "url": "https://x.com/i/status/1986101253903208829"
+   },
+   {
+    "label": "Isoform blog: Introducing Yansu, the serious coding platform",
+    "url": "https://isoform.ai/blog/introducing-yansu-the-serious-coding-platform"
    }
   ],
   "reviews": {

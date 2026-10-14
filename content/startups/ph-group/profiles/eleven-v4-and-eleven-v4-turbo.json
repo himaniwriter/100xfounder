@@ -5,20 +5,42 @@
   "excerpt": "Eleven v4 is ElevenLabs' most expressive text-to-speech model, with script tags for emotion and sound effects, and Eleven v4 Turbo is its real-time version for voice agents. What changed, pricing and alternatives.",
   "content": "<p>Eleven v4 and Eleven v4 Turbo are new text-to-speech models from ElevenLabs, the AI voice company (Eleven Labs Inc., according to its terms). ElevenLabs says Eleven v4 is built on a new architecture that reads a script the way a voice actor would, keeping track of who is speaking and what just happened. You can write direction straight into the text, such as [laughs], [whispers] or [door slams], and ElevenLabs says v4 follows these tags more reliably than v3. It handles multiple speakers and sound effects, speaks 90+ languages, keeps pacing steady across long scripts such as audiobooks, and holds the same voice when a line is regenerated. Professional Voice Clones, which v3 did not support, work again, and Instant Voice Clones need about 10 seconds of audio.</p><p>Eleven v4 Turbo brings the same expressiveness to real-time use through the API and ElevenAgents. ElevenLabs gives a median inference latency of about 100 ms and about 150 ms to first speech, with streaming in both directions so audio starts before the language model has finished its sentence. Its own tests, run in September 2026, show v4 winning most blind comparisons against Cartesia Sonic 3.6, Inworld TTS-2 and Google Gemini TTS models, and Turbo starting to speak faster than Cartesia, xAI, Google and OpenAI's text-to-speech; these are ElevenLabs' benchmarks. The launch went live on Product Hunt on 2 October 2026 and finished #5 for the day with 171 points.</p><p><em>We have not tested Eleven v4 ourselves. This page brings together ElevenLabs' official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "Text to speech",
     "platform": "ElevenLabs web apps, API and ElevenAgents",
     "starts_at": "Free plan (10k credits/month); paid from $6/month",
     "schema_category": "MultimediaApplication",
     "summary_short": "ElevenLabs' most expressive text-to-speech model, plus a real-time Turbo version for agents",
-    "ph": {"rank": 5, "votes": 171, "comments": 6, "followers": 180, "launched": "2026-10-02", "as_of": "2026-10-14"},
+    "ph": {
+      "rank": 5,
+      "votes": 171,
+      "comments": 6,
+      "followers": 180,
+      "launched": "2026-10-02",
+      "as_of": "2026-10-14"
+    },
     "gallery": [
-      {"url": "https://ph-files.imgix.net/981c0354-34f2-4c4d-8b75-e9b54852ae8a.png?auto=format&fit=max&w=1400", "w": 1630, "h": 948,
-       "alt": "ElevenLabs chart of blind head-to-head preference tests in which Eleven v4 won 65–81% of pairs against Cartesia, Inworld and Google Gemini TTS models", "credit": "Image: ElevenLabs via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/f22d8b71-9d20-4e9d-b303-e9887408ca52.png?auto=format&fit=max&w=1400", "w": 1606, "h": 936,
-       "alt": "ElevenLabs chart of median time to first speech: Eleven v4 Turbo 150 ms versus Cartesia Sonic 3.6, xAI TTS, Google Gemini Flash-Lite TTS and OpenAI GPT-4o mini TTS", "credit": "Image: ElevenLabs via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/c09eec67-3992-47ab-9639-55b6727e6f58.webp?auto=format&fit=max&w=1400", "w": 1200, "h": 630,
-       "alt": "Eleven v4 title card on a blurred red and green gradient", "credit": "Image: ElevenLabs via Product Hunt"}
+      {
+        "url": "https://ph-files.imgix.net/981c0354-34f2-4c4d-8b75-e9b54852ae8a.png?auto=format&fit=max&w=1400",
+        "w": 1630,
+        "h": 948,
+        "alt": "ElevenLabs chart of blind head-to-head preference tests in which Eleven v4 won 65–81% of pairs against Cartesia, Inworld and Google Gemini TTS models",
+        "credit": "Image: ElevenLabs via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/f22d8b71-9d20-4e9d-b303-e9887408ca52.png?auto=format&fit=max&w=1400",
+        "w": 1606,
+        "h": 936,
+        "alt": "ElevenLabs chart of median time to first speech: Eleven v4 Turbo 150 ms versus Cartesia Sonic 3.6, xAI TTS, Google Gemini Flash-Lite TTS and OpenAI GPT-4o mini TTS",
+        "credit": "Image: ElevenLabs via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/c09eec67-3992-47ab-9639-55b6727e6f58.webp?auto=format&fit=max&w=1400",
+        "w": 1200,
+        "h": 630,
+        "alt": "Eleven v4 title card on a blurred red and green gradient",
+        "credit": "Image: ElevenLabs via Product Hunt"
+      }
     ],
     "audience": {
       "fit": [
@@ -36,63 +58,180 @@
       "intro": "Eleven v4 is available across ElevenLabs' plans, which are priced in credits. Prices are in US dollars per month and exclude taxes.",
       "url": "https://elevenlabs.io/pricing",
       "plans": [
-        {"name": "Free", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "10k credits a month; text to speech, speech to text, sound effects, voice design"},
-        {"name": "Starter", "price": "$6/month", "amount": 6, "currency": "USD", "detail": "30k credits, commercial licence, Instant Voice Cloning, Dubbing Studio"},
-        {"name": "Creator", "price": "$22/month", "amount": 22, "currency": "USD", "detail": "121k credits, Professional Voice Cloning, extra credits"},
-        {"name": "Pro", "price": "$99/month", "amount": 99, "currency": "USD", "detail": "600k credits, 44.1 kHz PCM output via API"},
-        {"name": "Scale", "price": "$299/month", "amount": 299, "currency": "USD", "detail": "1.8M credits, 3 seats, 3 Professional Voice Clones"},
-        {"name": "Business", "price": "$990/month", "amount": 990, "currency": "USD", "detail": "6M credits, 10 seats, low-latency TTS from 5 cents a minute"}
+        {
+          "name": "Free",
+          "price": "$0/month",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "10k credits a month; text to speech, speech to text, sound effects, voice design"
+        },
+        {
+          "name": "Starter",
+          "price": "$6/month",
+          "amount": 6,
+          "currency": "USD",
+          "detail": "30k credits, commercial licence, Instant Voice Cloning, Dubbing Studio"
+        },
+        {
+          "name": "Creator",
+          "price": "$22/month",
+          "amount": 22,
+          "currency": "USD",
+          "detail": "121k credits, Professional Voice Cloning, extra credits"
+        },
+        {
+          "name": "Pro",
+          "price": "$99/month",
+          "amount": 99,
+          "currency": "USD",
+          "detail": "600k credits, 44.1 kHz PCM output via API"
+        },
+        {
+          "name": "Scale",
+          "price": "$299/month",
+          "amount": 299,
+          "currency": "USD",
+          "detail": "1.8M credits, 3 seats, 3 Professional Voice Clones"
+        },
+        {
+          "name": "Business",
+          "price": "$990/month",
+          "amount": 990,
+          "currency": "USD",
+          "detail": "6M credits, 10 seats, low-latency TTS from 5 cents a minute"
+        }
       ],
       "notes": [
-        "When we checked, Starter was $1 for the first month until 18 October and Creator was $11 for the first month; these offers are temporary.",
+        "Limited offer: Starter's first month costs $1 instead of $6 until 18 October 2026, when the offer ends. Creator's first month is $11 instead of $22 (no end date shown). After the first month the standard prices above apply.",
         "Enterprise pricing is custom, with SSO, DPAs/SLAs and HIPAA BAAs.",
-        "A Startup Grants programme offers 12 months free for building conversational agents."
+        "A Startup Grants programme offers 12 months free for building conversational agents.",
+        "Annual billing costs 10 months' price for 12 (for example $5/month for Starter, $18.33 for Creator), according to the pricing page FAQ."
       ],
-      "checked": "2026-10-14"
+      "checked": "2026-10-15"
     },
     "alternatives": {
       "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
       "items": [
-        {"name": "Cartesia Sonic", "url": "https://cartesia.ai/sonic", "what": "Real-time text-to-speech API, with first audio in under 90 ms in 44 languages (its own figure)", "starts_at": "See its pricing page",
-         "ph_rating": 5, "ph_reviews": 24,
-         "difference": "Built for speed in voice agents. Each company's latency figures come from its own tests, measured differently."},
-        {"name": "Fish Audio", "url": "https://fish.audio/", "what": "Expressive text to speech and voice cloning with emotion tags", "starts_at": "Free sign-up; see its pricing page",
-         "ph_rating": 4.73, "ph_reviews": 15,
-         "difference": "Also offers tag-based emotional control and cloning, with a free tier."},
-        {"name": "ElevenLabs (platform)", "url": "https://elevenlabs.io/", "what": "ElevenLabs' full voice, dubbing, music and agents platform", "starts_at": "Free plan",
-         "ph_rating": 4.91, "ph_reviews": 218,
-         "difference": "The wider platform these models run inside, with its own Product Hunt page and reviews."}
+        {
+          "name": "Cartesia Sonic",
+          "url": "https://cartesia.ai/sonic",
+          "what": "Real-time text-to-speech API, with first audio in under 90 ms in 44 languages (its own figure)",
+          "starts_at": "See its pricing page",
+          "ph_rating": 5,
+          "ph_reviews": 24,
+          "difference": "Built for speed in voice agents. Each company's latency figures come from its own tests, measured differently."
+        },
+        {
+          "name": "Fish Audio",
+          "url": "https://fish.audio/",
+          "what": "Expressive text to speech and voice cloning with emotion tags",
+          "starts_at": "Free sign-up; see its pricing page",
+          "ph_rating": 4.73,
+          "ph_reviews": 15,
+          "difference": "Also offers tag-based emotional control and cloning, with a free tier."
+        },
+        {
+          "name": "ElevenLabs (platform)",
+          "url": "https://elevenlabs.io/",
+          "what": "ElevenLabs' full voice, dubbing, music and agents platform",
+          "starts_at": "Free plan",
+          "ph_rating": 4.91,
+          "ph_reviews": 218,
+          "difference": "The wider platform these models run inside, with its own Product Hunt page and reviews."
+        }
       ],
       "more": "Product Hunt also lists Deepgram and Murf AI as alternatives."
     },
-    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/eleven-v4-and-eleven-v4-turbo/reviews", "as_of": "2026-10-14"},
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/eleven-v4-and-eleven-v4-turbo/reviews",
+      "as_of": "2026-10-14"
+    },
     "community": {
       "ph_url": "https://www.producthunt.com/products/eleven-v4-and-eleven-v4-turbo",
       "quotes": [
-        {"author": "Igor Gurovich", "text": "The ~100 ms median latency on Turbo is the number that matters for us."},
-        {"author": "Gal Dayan", "text": "is there anything on the output side that flags audio as v4-generated, or watermarking?"},
-        {"author": "Philip Alm", "text": "v4 with tags works really well ngl"}
+        {
+          "author": "Igor Gurovich",
+          "text": "The ~100 ms median latency on Turbo is the number that matters for us."
+        },
+        {
+          "author": "Gal Dayan",
+          "text": "is there anything on the output side that flags audio as v4-generated, or watermarking?"
+        },
+        {
+          "author": "Philip Alm",
+          "text": "v4 with tags works really well ngl"
+        }
       ],
-      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=%22Eleven%20v4%22&f=live"}
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=%22Eleven%20v4%22&f=live"
+      }
     },
     "faq": [
-      {"q": "What is Eleven v4?", "a": "ElevenLabs' newest text-to-speech model, built on a new architecture for more expressive, performed speech, with tags for emotion and sound effects. It launched on Product Hunt on 2 October 2026."},
-      {"q": "What is Eleven v4 Turbo?", "a": "The real-time version for agents, available through the API and ElevenAgents, with a median inference latency of about 100 ms and about 150 ms to first speech, according to ElevenLabs."},
-      {"q": "Can I clone my voice with v4?", "a": "Yes. Instant Voice Clones need about 10 seconds of audio (Starter plan and up), and Professional Voice Clones, unsupported in v3, work again in v4 (Creator plan and up)."},
-      {"q": "How many languages does it support?", "a": "ElevenLabs says 90+ languages."},
-      {"q": "How much does it cost?", "a": "There is a free plan with 10k credits a month. Paid plans run from Starter at $6 a month to Business at $990 a month, with Enterprise on request."},
-      {"q": "Is v4 better than other TTS models?", "a": "ElevenLabs' own blind tests in September 2026 show v4 preferred in 65–81% of pairs against Cartesia, Inworld and Google models. These are the company's tests, not independent ones."}
+      {
+        "q": "What is Eleven v4?",
+        "a": "ElevenLabs' newest text-to-speech model, built on a new architecture for more expressive, performed speech, with tags for emotion and sound effects. It launched on Product Hunt on 2 October 2026."
+      },
+      {
+        "q": "What is Eleven v4 Turbo?",
+        "a": "The real-time version for agents, available through the API and ElevenAgents, with a median inference latency of about 100 ms and about 150 ms to first speech, according to ElevenLabs."
+      },
+      {
+        "q": "Can I clone my voice with v4?",
+        "a": "Yes. Instant Voice Clones need about 10 seconds of audio (Starter plan and up), and Professional Voice Clones, unsupported in v3, work again in v4 (Creator plan and up)."
+      },
+      {
+        "q": "How many languages does it support?",
+        "a": "ElevenLabs says 90+ languages."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "There is a free plan with 10k credits a month. Paid plans run from Starter at $6 a month to Business at $990 a month, with Enterprise on request."
+      },
+      {
+        "q": "Is v4 better than other TTS models?",
+        "a": "ElevenLabs' own blind tests in September 2026 show v4 preferred in 65–81% of pairs against Cartesia, Inworld and Google models. These are the company's tests, not independent ones."
+      }
     ],
     "sources": [
-      {"label": "Eleven v4 announcement page", "url": "https://elevenlabs.io/v4"},
-      {"label": "ElevenLabs pricing", "url": "https://elevenlabs.io/pricing"},
-      {"label": "About ElevenLabs", "url": "https://elevenlabs.io/about"},
-      {"label": "ElevenLabs terms of use", "url": "https://elevenlabs.io/terms-of-use"},
-      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/eleven-v4-and-eleven-v4-turbo"},
-      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/eleven-v4-and-eleven-v4-turbo"},
-      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/eleven-v4-and-eleven-v4-turbo/alternatives"},
-      {"label": "Cartesia Sonic", "url": "https://cartesia.ai/sonic"},
-      {"label": "Fish Audio", "url": "https://fish.audio/"}
+      {
+        "label": "Eleven v4 announcement page",
+        "url": "https://elevenlabs.io/v4"
+      },
+      {
+        "label": "ElevenLabs pricing",
+        "url": "https://elevenlabs.io/pricing"
+      },
+      {
+        "label": "About ElevenLabs",
+        "url": "https://elevenlabs.io/about"
+      },
+      {
+        "label": "ElevenLabs terms of use",
+        "url": "https://elevenlabs.io/terms-of-use"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/eleven-v4-and-eleven-v4-turbo"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/eleven-v4-and-eleven-v4-turbo"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/eleven-v4-and-eleven-v4-turbo/alternatives"
+      },
+      {
+        "label": "Cartesia Sonic",
+        "url": "https://cartesia.ai/sonic"
+      },
+      {
+        "label": "Fish Audio",
+        "url": "https://fish.audio/"
+      }
     ]
   }
 }

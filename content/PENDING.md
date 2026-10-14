@@ -39,3 +39,28 @@ Scheduled task `pending-work-2026-10-15` works through this list. Tick items off
   - the Gurugram region field
   - AdSense consent message (skipped earlier)
   - WP admin login in Chrome expires
+
+## C. Added 2026-10-15 (owner: 500+ words and 2+ images on everything published)
+
+- Live articles/guides with 0 images (all have 500+ words). Add 2+ openly licensed images each, per content/BRIEF.md:
+  - https://100xfounder.com/best-education-marketing-agency-india/ (2212 words)
+  - https://100xfounder.com/notice-period-buyout-india/ (1454 words)
+  - https://100xfounder.com/new-vs-old-tax-regime/ (1992 words)
+  - https://100xfounder.com/upcoming-indian-startup-ipos/ (1087 words)
+  - https://100xfounder.com/indian-startup-funding-q3-deal-count-falls/ (817 words)
+  - https://100xfounder.com/apple-pay-india-launch/ (736 words)
+  - https://100xfounder.com/in-hand-salary-from-ctc/ (1532 words)
+  - https://100xfounder.com/how-to-apply/how-to-get-a-job-at-paytm/ (1343 words)
+  - https://100xfounder.com/how-to-apply/how-to-get-a-job-at-meesho/ (1473 words)
+  - https://100xfounder.com/how-to-apply/how-to-get-a-job-at-databricks/ (1345 words)
+- Profiles held by the rule (fewer than 2 images): openai-agents-api, thumbmagic-5, kane-cli. Add credited gallery images or leave unpublished.
+- Deploy the gate (includes/sources.php) and the Sources dropdown (sources.php, single-xf_startup.php, theme.css, XFT_VERSION 2.5.1): needs a fresh Hostinger API token from the owner.
+
+## Status 2026-10-15 00:00–01:30 (done in chat)
+
+- [x] A1 Flagged profiles fact-checked against official sites (31 profiles; changes logged under "Fact-check 2026-10-15" in each _PROGRESS file). Rindler moved to profiles/_held/ (home page now promotes Maxxwell; confirm it's still sold).
+- [x] A2 14 Oct 13:00 publish run stopped early and published nothing; next run 15 Oct 13:00.
+- [ ] A3 Foley: suppression comes only from a bounce or an unsubscribe (unsubscribe needs a POST, so link scanners can't trigger it). The reason is in the xf_suppressions table; reading it needs Hostinger re-auth (/mcp).
+- [x] A4 Not applicable: the site has no xf_round posts yet (the tracker is empty). Owner option: seed rounds from sourced articles as Pending.
+- [x] A5 Shark Tank research: 0 brand files (the 14 Oct run was stopped by the owner); daily run from 15 Oct 12:30.
+- [x] 500-word / 2-image gate and the Sources dropdown deployed and tested live (test post 3566 trashed). All 37 scheduled posts pass.

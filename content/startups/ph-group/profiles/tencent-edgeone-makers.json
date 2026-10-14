@@ -4,9 +4,9 @@
   "existing_listing_slug": null,
   "website": "https://edgeone.ai/products/pages",
   "excerpt": "EdgeOne Makers is Tencent's platform for deploying web apps and AI agents on its edge network, with a permanent free plan. Plans, features and alternatives.",
-  "content": "<p>EdgeOne Makers is Tencent Cloud's platform for shipping web apps and AI agents on the EdgeOne edge network. You connect a GitHub, GitLab or Bitbucket repository (or use the CLI), set the build command and output folder, and it deploys globally with custom domains and automatic SSL. It supports full-stack frameworks such as Next.js and Nuxt, static site generators such as Astro and Hexo, and React and Vue apps, with serverless functions and storage.</p><p>For AI agents, Makers adds a built-in runtime, a sandbox for tools, conversational memory, a model gateway and observability, and works with agent frameworks such as LangGraph and the OpenAI Agents SDK. Tencent's launch post on X says web apps and agents can live in the same project, sharing deployment, monitoring and domains. Makers grew out of EdgeOne Pages and sits inside Tencent EdgeOne, which also sells CDN, DNS, WAF, DDoS protection and bot management.</p><p>Tencent announced on X that Makers went live on 23 June 2026. EdgeOne's site says the Free plan is permanent and needs no credit card; paid EdgeOne plans run from $57 a month for Basic to $590 for Standard, with a lower-priced Personal plan.</p><p>Tencent EdgeOne launched on Product Hunt on 24 June 2026 and finished #1 for the day, with 613 upvotes and 163 comments (as of 14 October 2026).</p><p><em>We have not tested EdgeOne Makers ourselves. This page brings together EdgeOne's official product and pricing pages, Tencent's own posts on X, its Product Hunt listing and the official pricing pages of comparable platforms, and says where each fact comes from.</em></p>",
+  "content": "<p>EdgeOne Makers is Tencent Cloud's platform for shipping web apps and AI agents on the EdgeOne edge network. You connect a GitHub, GitLab or Bitbucket repository (or use the CLI), set the build command and output folder, and it deploys globally with custom domains and automatic SSL. It supports full-stack frameworks such as Next.js and Nuxt, static site generators such as Astro and Hexo, and React and Vue apps, with serverless functions and storage.</p><p>For AI agents, Makers adds a built-in runtime, a sandbox for tools, conversational memory, a model gateway and observability, and works with agent frameworks such as LangGraph and the OpenAI Agents SDK. Tencent's launch post on X says web apps and agents can live in the same project, sharing deployment, monitoring and domains. Makers grew out of EdgeOne Pages and sits inside Tencent EdgeOne, which also sells CDN, DNS, WAF, DDoS protection and bot management.</p><p>Tencent announced on X that Makers went live on 23 June 2026. EdgeOne's site says the Free plan is permanent and needs no credit card; paid EdgeOne plans run from $57 a month for Basic to $590 for Standard, with a Personal plan listed at $1.4 a month, shown reduced from $4.2.</p><p>Tencent EdgeOne launched on Product Hunt on 24 June 2026 and finished #1 for the day, with 613 upvotes and 163 comments (as of 14 October 2026).</p><p><em>We have not tested EdgeOne Makers ourselves. This page brings together EdgeOne's official product and pricing pages, Tencent's own posts on X, its Product Hunt listing and the official pricing pages of comparable platforms, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "Developer tools / web and AI agent hosting",
     "platform": "Web (Git, CLI and IDE plugins)",
     "starts_at": "Free plan; paid EdgeOne plans from $1.4/month",
@@ -37,7 +37,7 @@
     "pricing": {
       "intro": "Makers runs on Tencent EdgeOne's plans. The pricing page lists the EdgeOne plans below with a \"$\" sign; it does not give separate Makers prices, and Edge Functions show \"overuse payment\" on paid plans.",
       "url": "https://edgeone.ai/pricing",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "plans": [
         {
           "name": "Free",
@@ -48,9 +48,10 @@
         },
         {
           "name": "Personal",
-          "price": "$1.4/month (the page also shows $4.2 beside it)",
+          "price": "$1.4/month (shown as a reduced price, with $4.2 struck through)",
           "currency": "USD",
-          "detail": "50 GB traffic, 3M requests, 1 site, 200 sub-domains, 20 rules"
+          "detail": "50 GB traffic, 3M requests, 1 site, 200 sub-domains, 20 rules",
+          "amount": 1.4
         },
         {
           "name": "Basic",
@@ -74,7 +75,8 @@
       ],
       "notes": [
         "Usage above a plan's quota is billed hourly, per the pricing FAQ.",
-        "Add-ons such as Smart Acceleration, QUIC and Bot Management are $0.0143 per VAU (100 VAU per 1M requests)."
+        "Add-ons such as Smart Acceleration, QUIC and Bot Management are $0.0143 per VAU (100 VAU per 1M requests).",
+        "Personal plan: the card shows $1.4 a month with $4.2 struck through beside it. The page does not say how long the reduced price lasts."
       ]
     },
     "alternatives": {
@@ -117,7 +119,7 @@
     ],
     "cons": [
       "No separate published pricing or limits for Makers itself",
-      "The Personal plan price is shown as two figures without explanation",
+      "The Personal plan's $1.4 price is shown against a struck-through $4.2 with no end date for the reduction",
       "Overage is billed hourly, so costs can be harder to predict",
       "No public contact email; support goes through a contact form and community channels"
     ],
@@ -147,7 +149,7 @@
       },
       {
         "q": "Is EdgeOne Makers free?",
-        "a": "There is a Free plan that EdgeOne says is permanent and needs no credit card. Paid EdgeOne plans are Personal, Basic ($57 a month), Standard ($590 a month) and Enterprise."
+        "a": "There is a Free plan that EdgeOne says is permanent and needs no credit card. Paid EdgeOne plans are Personal ($1.4 a month, shown reduced from $4.2), Basic ($57 a month), Standard ($590 a month) and Enterprise."
       },
       {
         "q": "Which frameworks does it support?",

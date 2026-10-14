@@ -4,9 +4,9 @@
  "existing_listing_slug": null,
  "website": "https://zaro.ai/",
  "excerpt": "Zaro is a shared context layer for company AI: it keeps how the business runs as versioned, permissioned files that agents read and write. Pricing on request.",
- "content": "<p>Zaro builds what it calls a shared context layer for a company's AI. Instead of each assistant or agent starting from scratch, Zaro keeps one current record of how the business runs, written as plain, readable files (playbooks, customer tiers, team roles, brand voice) that agents read from and write back to as they work. Nothing is overwritten, so you can read any file as it stood on a past date and roll it back; access is set per folder for people and automated work alike; and each answer can be traced to the file version it came from.</p><p>Zaro connects to more than 120 systems, including SharePoint, Microsoft 365, Teams, Salesforce, Confluence, Jira, Slack, Snowflake, Databricks, Google Drive and HubSpot, and offers an API, an open agent protocol and a scoped browser for systems with no API. Its security pages describe path-level permissions, controls on which tools an agent may call, live monitoring and an exportable audit trail, and say company context is never used to train others' models. Example uses on its site cover retail store performance, sales coaching from calls and deals, and multi-plant manufacturing decisions.</p><p>The site says the team comes from Convergence, PolyAI, Salesforce, Celonis, Lovable and Pigment, and lists Cherry and Hugging Face as backers. Zaro launched on Product Hunt on 25 June 2026, hunted by Rohan Chaubey, with the tagline 'Build agents & apps on top of your context with one prompt', and finished #3 for the day with 399 upvotes and 96 comments. Co-founder Michael Bajwa wrote there that he was previously part of the Convergence team through its acquisition by Salesforce. The website now focuses on enterprise AI readiness, and pricing is by conversation with the team.</p><p><em>We have not tested Zaro ourselves. This page brings together its official site, platform and security pages, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "content": "<p>Zaro builds what it calls a shared context layer for a company's AI. Instead of each assistant or agent starting from scratch, Zaro keeps one current record of how the business runs, written as plain, readable files (playbooks, customer tiers, team roles, brand voice) that agents read from and write back to as they work. Nothing is overwritten, so you can read any file as it stood on a past date and roll it back; access is set per folder for people and automated work alike; and each answer can be traced to the file version it came from.</p><p>Zaro connects to more than 120 systems, including SharePoint, Microsoft 365, Teams, Salesforce, Confluence, Jira, Slack, Snowflake, Databricks, Google Drive and HubSpot, and offers an API, an open agent protocol and a scoped browser for systems with no API. Its security pages describe path-level permissions, controls on which tools an agent may call, live monitoring and an exportable audit trail, and say company context is never used to train others' models. Example uses on its site cover retail store performance, sales coaching from calls and deals, and multi-plant manufacturing decisions.</p><p>The site says the team comes from Convergence, PolyAI, Salesforce, Celonis, Lovable and Pigment, and lists Cherry and Hugging Face as backers. Zaro launched on Product Hunt on 25 June 2026, hunted by Rohan Chaubey, with the tagline 'Build agents & apps on top of your context with one prompt', and finished #3 for the day with 399 upvotes and 96 comments. Co-founder Michael Bajwa wrote there that he was previously part of the Convergence team through its acquisition by Salesforce. At that launch Zaro was pitched as a place to pull your scattered work from Gmail, Slack and notes into one place and build self-updating apps from it, with free options and credit-based pricing. Its website now sells a company-wide context layer that makes a business 'AI-ready', aimed at larger organisations, with no public prices or self-serve sign-up; you talk to the team.</p><p><em>We have not tested Zaro ourselves. This page brings together its official site, platform and security pages, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
  "profile": {
-  "checked": "2026-10-14",
+  "checked": "2026-10-15",
   "category": "AI agents",
   "platform": "Web platform with API and connectors",
   "starts_at": "Pricing not published",
@@ -34,7 +34,7 @@
   "pricing": {
    "intro": "Pricing not published. At its Product Hunt launch in June 2026 the co-founder said Zaro runs on credits, so you pay for what you use rather than per seat, and the listing showed free options; the current website asks you to talk to the team and lists no prices.",
    "url": "https://zaro.ai/contact",
-   "checked": "2026-10-14",
+   "checked": "2026-10-15",
    "plans": []
   },
   "alternatives": {
@@ -98,6 +98,10 @@
    {
     "q": "What is Zaro?",
     "a": "A shared context layer for company AI. It keeps one current, versioned record of how the business runs as readable files, which AI agents read from and write back to, with permissions and an audit trail."
+   },
+   {
+    "q": "Has Zaro changed since its Product Hunt launch?",
+    "a": "Yes. At its June 2026 launch the Product Hunt listing described a tool for pulling your scattered work (Gmail, Slack, notes) into one place and building self-updating apps from it, with free options. In October 2026 its website describes a shared context layer for company AI, sold to organisations through a conversation with the team."
    },
    {
     "q": "How much does Zaro cost?",

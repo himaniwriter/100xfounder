@@ -5,20 +5,42 @@
   "excerpt": "AgentX is a platform for building multi-agent AI teams, and its evaluation framework tests agents before and after deployment, pinpoints failures and suggests fixes. Pricing, alternatives and launch details.",
   "content": "<p>AgentX is a platform for building, evaluating and deploying AI agents. You build agents without code from your documents, websites and data, using the language model of your choice, and can organise them into multi-agent teams in which a manager agent hands work to specialist agents. Agents can be published to the web, WhatsApp, Slack, Discord, Teams, email, voice or an API. The company is AgentX Inc., according to its terms.</p><p>The launch on Product Hunt was its evaluation framework. It builds test sets from real data or production traces, runs an agent repeatedly to measure consistency across multi-step workflows, and scores results using several language models as judges. AgentX describes four layers of evaluation (task correctness, tool and API reliability, reasoning and consistency, and business impact), plus drift detection. Reports show every step of a run, pinpoint where an agent failed and propose a fix such as a change to its instructions, and evaluations can block a deployment that fails or promote one that passes. On self-serve plans, evaluation runs in demo mode; the full evaluation programme is part of the Enterprise plan. The launch went live on 22 June 2026, AgentX's third on Product Hunt, and finished #1 for the day with 504 points and 165 comments.</p><p><em>We have not tested AgentX ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "AI agent platform",
     "platform": "Web app and API",
     "starts_at": "Free plan; paid from $49/month",
     "schema_category": "DeveloperApplication",
     "summary_short": "Multi-agent AI platform with an evaluation framework that tests agents and suggests fixes",
-    "ph": {"rank": 1, "votes": 504, "comments": 165, "followers": 2240, "launched": "2026-06-22", "as_of": "2026-10-14"},
+    "ph": {
+      "rank": 1,
+      "votes": 504,
+      "comments": 165,
+      "followers": 2240,
+      "launched": "2026-06-22",
+      "as_of": "2026-10-14"
+    },
     "gallery": [
-      {"url": "https://ph-files.imgix.net/4590dfe6-9785-4bbd-8418-c436c9b36731.jpeg?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
-       "alt": "AgentX graphic 'Pinpoint issues with LLM-as-a-Judge', showing an execution timeline, a suggested instruction change and a line-up of three judge models", "credit": "Image: AgentX via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/b347a237-bb2b-484f-9d82-d0fc45ccbaae.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
-       "alt": "AgentX diagram of a manager agent splitting a user's request among specialist agents for research, email and analytics, then delivering the result", "credit": "Image: AgentX via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/0be45786-2342-42aa-a418-d2d2d63c2c32.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
-       "alt": "AgentX workforce canvas with a manager agent connected to four member agents and a box to write instructions", "credit": "Image: AgentX via Product Hunt"}
+      {
+        "url": "https://ph-files.imgix.net/4590dfe6-9785-4bbd-8418-c436c9b36731.jpeg?auto=format&fit=max&w=1400",
+        "w": 2540,
+        "h": 1520,
+        "alt": "AgentX graphic 'Pinpoint issues with LLM-as-a-Judge', showing an execution timeline, a suggested instruction change and a line-up of three judge models",
+        "credit": "Image: AgentX via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/b347a237-bb2b-484f-9d82-d0fc45ccbaae.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "AgentX diagram of a manager agent splitting a user's request among specialist agents for research, email and analytics, then delivering the result",
+        "credit": "Image: AgentX via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/0be45786-2342-42aa-a418-d2d2d63c2c32.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "AgentX workforce canvas with a manager agent connected to four member agents and a box to write instructions",
+        "credit": "Image: AgentX via Product Hunt"
+      }
     ],
     "audience": {
       "fit": [
@@ -36,59 +58,161 @@
       "intro": "AgentX has a free plan, self-serve plans priced monthly or yearly, and a custom Enterprise plan. Prices are in US dollars.",
       "url": "https://www.agentx.so/pricing",
       "plans": [
-        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "1 workspace, up to 5 agents, 200 one-time credits, 1 seat, multi-agent workflows and API access"},
-        {"name": "Solo Builder", "price": "$49/month", "amount": 49, "currency": "USD", "detail": "$490/year. Up to 25 agents, 5,000 credits a month, deploy to production, evaluation in demo mode"},
-        {"name": "Professional", "price": "$199/month", "amount": 199, "currency": "USD", "detail": "$1,490/year. 10,000 credits a month, 2 seats, white-label deployment and client workspaces"},
-        {"name": "Business", "price": "$299/month", "amount": 299, "currency": "USD", "detail": "$2,990/year. Unlimited agents, 20,000 credits a month, priority support and SLA"},
-        {"name": "Enterprise", "price": "Custom", "detail": "Full agent evaluation programme, SSO, dedicated infrastructure, on-premise deployment, enterprise SLA"}
+        {
+          "name": "Free",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "1 workspace, up to 5 agents, 200 one-time credits, 1 seat, multi-agent workflows and API access"
+        },
+        {
+          "name": "Solo Builder",
+          "price": "$49/month",
+          "amount": 49,
+          "currency": "USD",
+          "detail": "$490/year. Up to 25 agents, 5,000 credits a month, deploy to production, evaluation in demo mode"
+        },
+        {
+          "name": "Professional",
+          "price": "$199/month",
+          "amount": 199,
+          "currency": "USD",
+          "detail": "$1,490/year. 10,000 credits a month, 2 seats, white-label deployment and client workspaces"
+        },
+        {
+          "name": "Business",
+          "price": "$299/month",
+          "amount": 299,
+          "currency": "USD",
+          "detail": "$2,990/year. Unlimited agents, 20,000 credits a month, priority support and SLA"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "detail": "Full agent evaluation programme, SSO, dedicated infrastructure, on-premise deployment, enterprise SLA"
+        }
       ],
       "notes": [
         "Extra credits cost $10 per 1,000 on paid self-serve plans. Extra seats are $10 a month each on Professional and Business.",
         "The full evaluation programme (risk mapping, custom datasets, multi-run testing, benchmarks, readiness assessment) is Enterprise only.",
-        "The pricing page's own cost examples quote the Professional plan at $249/mo, which differs from the $199 shown on the plan card; check before buying."
+        "The pricing page contradicts itself: the Professional plan card and the comparison table both say $199/month ($1,490/year), but the 'Real-world cost examples' section further down the same page (agentx.so/pricing) uses $249/mo for Professional. Confirm with AgentX before buying."
       ],
-      "checked": "2026-10-14"
+      "checked": "2026-10-15"
     },
     "alternatives": {
       "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
       "items": [
-        {"name": "GPTBots.ai", "url": "https://www.gptbots.ai/", "what": "No-code enterprise platform for AI agents, knowledge bases and workflows", "starts_at": "See its pricing page",
-         "ph_rating": 4.91, "ph_reviews": 22,
-         "difference": "Focused on building and running enterprise agents for support and sales. AgentX puts evaluation and CI/CD at the centre."},
-        {"name": "Flowise", "url": "https://flowiseai.com/", "what": "Open-source visual builder for AI agents and multi-agent flows", "starts_at": "Open source; see its pricing page",
-         "ph_rating": 4.75, "ph_reviews": 4,
-         "difference": "Open source and self-hostable, but its site now says it is being sunset."},
-        {"name": "Claude by Anthropic", "url": "https://www.anthropic.com/claude", "what": "A family of AI models and apps", "starts_at": "See its pricing page",
-         "ph_rating": 4.96, "ph_reviews": 1041,
-         "difference": "A model and assistant, not an agent-evaluation platform. AgentX lets you use Claude and other models inside its agents."}
+        {
+          "name": "GPTBots.ai",
+          "url": "https://www.gptbots.ai/",
+          "what": "No-code enterprise platform for AI agents, knowledge bases and workflows",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.91,
+          "ph_reviews": 22,
+          "difference": "Focused on building and running enterprise agents for support and sales. AgentX puts evaluation and CI/CD at the centre."
+        },
+        {
+          "name": "Flowise",
+          "url": "https://flowiseai.com/",
+          "what": "Open-source visual builder for AI agents and multi-agent flows",
+          "starts_at": "Open source; see its pricing page",
+          "ph_rating": 4.75,
+          "ph_reviews": 4,
+          "difference": "Open source and self-hostable, but its site now says it is being sunset."
+        },
+        {
+          "name": "Claude by Anthropic",
+          "url": "https://www.anthropic.com/claude",
+          "what": "A family of AI models and apps",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.96,
+          "ph_reviews": 1041,
+          "difference": "A model and assistant, not an agent-evaluation platform. AgentX lets you use Claude and other models inside its agents."
+        }
       ],
       "more": "Product Hunt also lists Make and WRITER as alternatives."
     },
-    "reviews": {"count": 6, "rating": 5, "url": "https://www.producthunt.com/products/agentx/reviews", "as_of": "2026-10-14"},
+    "reviews": {
+      "count": 6,
+      "rating": 5,
+      "url": "https://www.producthunt.com/products/agentx/reviews",
+      "as_of": "2026-10-14"
+    },
     "community": {
       "ph_url": "https://www.producthunt.com/products/agentx",
       "quotes": [],
-      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=agentx.so&f=live"}
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=agentx.so&f=live"
+      }
     },
     "faq": [
-      {"q": "What is AgentX?", "a": "A platform for building no-code AI agents and multi-agent teams, evaluating them and deploying them to channels such as the web, Slack, WhatsApp and an API. Its evaluation framework launched on Product Hunt on 22 June 2026."},
-      {"q": "What does the evaluation framework do?", "a": "It builds test sets from real data, runs agents repeatedly, scores them with several LLM judges across four layers (task correctness, tool reliability, reasoning and business impact), pinpoints failures and suggests fixes."},
-      {"q": "Can evaluations gate deployments?", "a": "Yes. AgentX says you can block a deployment automatically if evaluations fail or promote it to production if they pass."},
-      {"q": "How much does AgentX cost?", "a": "There is a free plan. Self-serve plans are Solo Builder at $49 a month, Professional at $199 and Business at $299, with Enterprise priced on request. Extra credits are $10 per 1,000."},
-      {"q": "Is full evaluation included in self-serve plans?", "a": "No. The pricing page lists evaluation in demo mode on Solo, Professional and Business; the full evaluation programme is part of Enterprise."},
-      {"q": "Which frameworks does AgentX work with?", "a": "Its site says it is compatible with LangChain, CrewAI, the OpenAI Agents SDK, Anthropic and Google ADK for observability."}
+      {
+        "q": "What is AgentX?",
+        "a": "A platform for building no-code AI agents and multi-agent teams, evaluating them and deploying them to channels such as the web, Slack, WhatsApp and an API. Its evaluation framework launched on Product Hunt on 22 June 2026."
+      },
+      {
+        "q": "What does the evaluation framework do?",
+        "a": "It builds test sets from real data, runs agents repeatedly, scores them with several LLM judges across four layers (task correctness, tool reliability, reasoning and business impact), pinpoints failures and suggests fixes."
+      },
+      {
+        "q": "Can evaluations gate deployments?",
+        "a": "Yes. AgentX says you can block a deployment automatically if evaluations fail or promote it to production if they pass."
+      },
+      {
+        "q": "How much does AgentX cost?",
+        "a": "There is a free plan. Self-serve plans are Solo Builder at $49 a month, Professional at $199 (though a cost example on the same pricing page uses $249) and Business at $299, with Enterprise priced on request. Extra credits are $10 per 1,000."
+      },
+      {
+        "q": "Is full evaluation included in self-serve plans?",
+        "a": "No. The pricing page lists evaluation in demo mode on Solo, Professional and Business; the full evaluation programme is part of Enterprise."
+      },
+      {
+        "q": "Which frameworks does AgentX work with?",
+        "a": "Its site says it is compatible with LangChain, CrewAI, the OpenAI Agents SDK, Anthropic and Google ADK for observability."
+      }
     ],
     "sources": [
-      {"label": "AgentX AI evaluation", "url": "https://www.agentx.so/ai-evaluation"},
-      {"label": "AgentX official site", "url": "https://www.agentx.so/"},
-      {"label": "AgentX pricing", "url": "https://www.agentx.so/pricing"},
-      {"label": "About AgentX", "url": "https://www.agentx.so/about"},
-      {"label": "AgentX terms", "url": "https://www.agentx.so/terms"},
-      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/agentx-ai-agent-evaluation-framework"},
-      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/agentx"},
-      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/agentx/alternatives"},
-      {"label": "GPTBots.ai", "url": "https://www.gptbots.ai/"},
-      {"label": "Flowise", "url": "https://flowiseai.com/"}
+      {
+        "label": "AgentX AI evaluation",
+        "url": "https://www.agentx.so/ai-evaluation"
+      },
+      {
+        "label": "AgentX official site",
+        "url": "https://www.agentx.so/"
+      },
+      {
+        "label": "AgentX pricing",
+        "url": "https://www.agentx.so/pricing"
+      },
+      {
+        "label": "About AgentX",
+        "url": "https://www.agentx.so/about"
+      },
+      {
+        "label": "AgentX terms",
+        "url": "https://www.agentx.so/terms"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/agentx-ai-agent-evaluation-framework"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/agentx"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/agentx/alternatives"
+      },
+      {
+        "label": "GPTBots.ai",
+        "url": "https://www.gptbots.ai/"
+      },
+      {
+        "label": "Flowise",
+        "url": "https://flowiseai.com/"
+      }
     ]
   }
 }

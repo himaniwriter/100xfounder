@@ -5,27 +5,66 @@
   "excerpt": "Asmi AI is a personal assistant that phones you each morning, takes your to-do list and then calls dentists, restaurants, plumbers or banks to get things done, reporting back by message. Pricing, alternatives and launch comments.",
   "content": "<p>Asmi is an AI personal assistant that makes phone calls for you. Each morning it calls you; you tell it what needs doing, and during the day it rings the services involved, such as a dentist, salon, plumber, bank, insurer or restaurant, or the people you need to coordinate with. It can work through phone menus, wait on hold and handle a back-and-forth conversation, then reports the outcome on iMessage or WhatsApp. You can also send it tasks by chat at any time, including as PDFs, screenshots or voice notes.</p><p>On Product Hunt, the makers said Asmi has its own voice, personality and phone number rather than imitating yours, opens every call by saying it is an AI, and only acts when you explicitly ask. They also said it can call several businesses in parallel, remember tasks that span days or weeks, and speak more than 50 languages. Asmi is run by Humint Labs, Inc., a Delaware company, according to its terms. Co-founder and CEO Rishi Raj introduced it on Product Hunt, where it launched on 11 June 2026 and finished #2 for the day with 415 points and 142 comments.</p><p><em>We have not tested Asmi ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "AI personal assistant",
     "platform": "Phone calls, iMessage and WhatsApp",
     "starts_at": "First task free, then from $10/month",
     "schema_category": "LifestyleApplication",
     "summary_short": "AI assistant that calls businesses and people for you and reports back by message",
-    "maker": {"name": "Rishi Raj", "url": "https://www.producthunt.com/@rishi_raj"},
+    "maker": {
+      "name": "Rishi Raj",
+      "url": "https://www.producthunt.com/@rishi_raj"
+    },
     "team": [
-      {"name": "Rishi Raj", "role": "Co-founder and CEO (Product Hunt)", "url": "https://www.producthunt.com/@rishi_raj"},
-      {"name": "Satwik Kottur", "url": "https://www.producthunt.com/@skottur"},
-      {"name": "Sibi Venkatesan", "url": "https://www.producthunt.com/@sibi_asmi"},
-      {"name": "Abdul Gaffoor", "role": "Product manager (Product Hunt profile)", "url": "https://www.producthunt.com/@abdul_gaffoor"}
+      {
+        "name": "Rishi Raj",
+        "role": "Co-founder and CEO (Product Hunt)",
+        "url": "https://www.producthunt.com/@rishi_raj"
+      },
+      {
+        "name": "Satwik Kottur",
+        "url": "https://www.producthunt.com/@skottur"
+      },
+      {
+        "name": "Sibi Venkatesan",
+        "url": "https://www.producthunt.com/@sibi_asmi"
+      },
+      {
+        "name": "Abdul Gaffoor",
+        "role": "Product manager (Product Hunt profile)",
+        "url": "https://www.producthunt.com/@abdul_gaffoor"
+      }
     ],
-    "ph": {"rank": 2, "votes": 415, "comments": 142, "followers": 1187, "launched": "2026-06-11", "as_of": "2026-10-14"},
+    "ph": {
+      "rank": 2,
+      "votes": 415,
+      "comments": 142,
+      "followers": 1187,
+      "launched": "2026-06-11",
+      "as_of": "2026-10-14"
+    },
     "gallery": [
-      {"url": "https://ph-files.imgix.net/a57cc73c-807b-4341-86db-93e892534071.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
-       "alt": "Asmi graphic 'Asmi calls. You talk. That's it.' showing an incoming 8:07 am call and a spoken list of errands", "credit": "Image: Asmi AI via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/65776b74-d2ff-4abb-ae91-152ae7a652dc.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
-       "alt": "Asmi on a live call booking a restaurant table on the user's behalf, with a task list of confirmed, in-progress and queued calls", "credit": "Image: Asmi AI via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/cde4952f-f13d-4c28-8150-9f0c93fc9b5c.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
-       "alt": "Asmi title card reading 'The screen era is over. AI that handles your personal chores in the real world.'", "credit": "Image: Asmi AI via Product Hunt"}
+      {
+        "url": "https://ph-files.imgix.net/a57cc73c-807b-4341-86db-93e892534071.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Asmi graphic 'Asmi calls. You talk. That's it.' showing an incoming 8:07 am call and a spoken list of errands",
+        "credit": "Image: Asmi AI via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/65776b74-d2ff-4abb-ae91-152ae7a652dc.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Asmi on a live call booking a restaurant table on the user's behalf, with a task list of confirmed, in-progress and queued calls",
+        "credit": "Image: Asmi AI via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/cde4952f-f13d-4c28-8150-9f0c93fc9b5c.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Asmi title card reading 'The screen era is over. AI that handles your personal chores in the real world.'",
+        "credit": "Image: Asmi AI via Product Hunt"
+      }
     ],
     "audience": {
       "fit": [
@@ -43,61 +82,159 @@
       "intro": "Asmi gives the first task free, then sells monthly or yearly plans by the number of tasks. Prices are in US dollars and taxes may apply.",
       "url": "https://www.asmiai.com/pricing",
       "plans": [
-        {"name": "First task", "price": "Free", "amount": 0, "currency": "USD", "detail": "One task to try it"},
-        {"name": "Pro", "price": "$10/month", "amount": 10, "currency": "USD", "detail": "20 tasks a month, or $99 a year. Tasks completed by calls, texts and emails, with reminders and follow-ups"},
-        {"name": "Ultra", "price": "$49/month", "amount": 49, "currency": "USD", "detail": "100 tasks a month, or $499 a year"}
+        {
+          "name": "First task",
+          "price": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "One task to try it"
+        },
+        {
+          "name": "Pro",
+          "price": "$10/month",
+          "amount": 10,
+          "currency": "USD",
+          "detail": "20 tasks a month, or $99 a year ($8.25/month billed yearly). Tasks completed by calls, texts and emails, with reminders and follow-ups"
+        },
+        {
+          "name": "Ultra",
+          "price": "$49/month",
+          "amount": 49,
+          "currency": "USD",
+          "detail": "100 tasks a month, or $499 a year ($41.58/month billed yearly)"
+        }
       ],
       "notes": [
-        "Plans can be cancelled any time. The task allowance resets each month.",
+        "Plans can be cancelled any time.",
         "Product Hunt listed it as free at launch; the site now shows paid plans after the first task."
       ],
-      "checked": "2026-10-14"
+      "checked": "2026-10-15"
     },
     "alternatives": {
       "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
       "items": [
-        {"name": "Pally", "url": "https://pally.com/", "what": "AI personal assistant you text; it remembers, books, chases and calls", "starts_at": "Free (its site says)",
-         "ph_rating": 4.88, "ph_reviews": 16,
-         "difference": "The closest consumer rival, driven by text and Telegram. Asmi's habit is a daily phone call and real outbound calls."},
-        {"name": "Retell AI", "url": "https://www.retellai.com/", "what": "Platform for building AI voice agents and call centres", "starts_at": "See its pricing page",
-         "ph_rating": 4.8, "ph_reviews": 10,
-         "difference": "A developer and business platform for voice agents, not a ready-made personal assistant."},
-        {"name": "Famulor", "url": "https://www.famulor.io/", "what": "AI voice agent platform for business calls, WhatsApp and SMS", "starts_at": "Free to start; see its pricing page",
-         "ph_rating": 5, "ph_reviews": 2,
-         "difference": "Built for businesses answering and making calls at scale. Asmi works for one person's errands."}
+        {
+          "name": "Pally",
+          "url": "https://pally.com/",
+          "what": "AI personal assistant you text; it remembers, books, chases and calls",
+          "starts_at": "Free (its site says)",
+          "ph_rating": 4.88,
+          "ph_reviews": 16,
+          "difference": "The closest consumer rival, driven by text and Telegram. Asmi's habit is a daily phone call and real outbound calls."
+        },
+        {
+          "name": "Retell AI",
+          "url": "https://www.retellai.com/",
+          "what": "Platform for building AI voice agents and call centres",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.8,
+          "ph_reviews": 10,
+          "difference": "A developer and business platform for voice agents, not a ready-made personal assistant."
+        },
+        {
+          "name": "Famulor",
+          "url": "https://www.famulor.io/",
+          "what": "AI voice agent platform for business calls, WhatsApp and SMS",
+          "starts_at": "Free to start; see its pricing page",
+          "ph_rating": 5,
+          "ph_reviews": 2,
+          "difference": "Built for businesses answering and making calls at scale. Asmi works for one person's errands."
+        }
       ],
       "more": "Product Hunt also lists Estera and Dialora.ai, both AI receptionists for businesses."
     },
-    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/asmi-ai/reviews", "as_of": "2026-10-14"},
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/asmi-ai/reviews",
+      "as_of": "2026-10-14"
+    },
     "community": {
       "ph_url": "https://www.producthunt.com/products/asmi-ai",
       "quotes": [
-        {"author": "Marat", "text": "I'm wary of giving it so much personal info on addition to the ability to mimic my voice.",
-         "reply": "Rishi Raj: Asmi does not mimic your voice; it has its own voice and phone number and introduces itself as your assistant."},
-        {"author": "Art Stavenka", "text": "Tricky thing could be when a bank or salon asks to confirm an OTP or the last 4 of a card mid-call."},
-        {"author": "Diana Nadim", "text": "calling three different insurance providers to compare renewal quotes because the hold times are unbearable.",
-         "reply": "Rishi Raj: Asmi can call several vendors in parallel, navigate menus and wait on hold."}
+        {
+          "author": "Marat",
+          "text": "I'm wary of giving it so much personal info on addition to the ability to mimic my voice.",
+          "reply": "Rishi Raj: Asmi does not mimic your voice; it has its own voice and phone number and introduces itself as your assistant."
+        },
+        {
+          "author": "Art Stavenka",
+          "text": "Tricky thing could be when a bank or salon asks to confirm an OTP or the last 4 of a card mid-call."
+        },
+        {
+          "author": "Diana Nadim",
+          "text": "calling three different insurance providers to compare renewal quotes because the hold times are unbearable.",
+          "reply": "Rishi Raj: Asmi can call several vendors in parallel, navigate menus and wait on hold."
+        }
       ],
-      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=asmiai&f=live"}
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=asmiai&f=live"
+      }
     },
     "faq": [
-      {"q": "What is Asmi AI?", "a": "An AI personal assistant that calls you each morning to collect your tasks, then phones businesses or people to get them done and reports back on iMessage or WhatsApp. It launched on Product Hunt on 11 June 2026."},
-      {"q": "Does Asmi use my voice?", "a": "No. Its makers say it has its own voice, personality and phone number, and every call opens by saying it is an AI."},
-      {"q": "How much does Asmi cost?", "a": "The first task is free. Pro costs $10 a month for 20 tasks and Ultra $49 a month for 100 tasks, with yearly options at $99 and $499."},
-      {"q": "Can it handle phone menus and hold music?", "a": "Yes, according to Asmi; it navigates phone menus and waits on hold."},
-      {"q": "What languages does it speak?", "a": "The makers said on Product Hunt it can speak more than 50 languages, chosen by you or from the task's context."},
-      {"q": "Who runs Asmi?", "a": "Humint Labs, Inc., a Delaware company, according to Asmi's terms. Rishi Raj is co-founder and CEO."}
+      {
+        "q": "What is Asmi AI?",
+        "a": "An AI personal assistant that calls you each morning to collect your tasks, then phones businesses or people to get them done and reports back on iMessage or WhatsApp. It launched on Product Hunt on 11 June 2026."
+      },
+      {
+        "q": "Does Asmi use my voice?",
+        "a": "No. Its makers say it has its own voice, personality and phone number, and every call opens by saying it is an AI."
+      },
+      {
+        "q": "How much does Asmi cost?",
+        "a": "The first task is free. Pro costs $10 a month for 20 tasks and Ultra $49 a month for 100 tasks, with yearly options at $99 and $499."
+      },
+      {
+        "q": "Can it handle phone menus and hold music?",
+        "a": "Yes, according to Asmi; it navigates phone menus and waits on hold."
+      },
+      {
+        "q": "What languages does it speak?",
+        "a": "The makers said on Product Hunt it can speak more than 50 languages, chosen by you or from the task's context."
+      },
+      {
+        "q": "Who runs Asmi?",
+        "a": "Humint Labs, Inc., a Delaware company, according to Asmi's terms. Rishi Raj is co-founder and CEO."
+      }
     ],
     "sources": [
-      {"label": "Asmi official site", "url": "https://www.asmiai.com/"},
-      {"label": "Asmi pricing", "url": "https://www.asmiai.com/pricing"},
-      {"label": "Asmi terms", "url": "https://www.asmiai.com/terms-and-conditions"},
-      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/asmi-ai-3"},
-      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/asmi-ai"},
-      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/asmi-ai/alternatives"},
-      {"label": "Pally", "url": "https://pally.com/"},
-      {"label": "Retell AI", "url": "https://www.retellai.com/"},
-      {"label": "Famulor", "url": "https://www.famulor.io/"}
+      {
+        "label": "Asmi official site",
+        "url": "https://www.asmiai.com/"
+      },
+      {
+        "label": "Asmi pricing",
+        "url": "https://www.asmiai.com/pricing"
+      },
+      {
+        "label": "Asmi terms",
+        "url": "https://www.asmiai.com/terms-and-conditions"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/asmi-ai-3"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/asmi-ai"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/asmi-ai/alternatives"
+      },
+      {
+        "label": "Pally",
+        "url": "https://pally.com/"
+      },
+      {
+        "label": "Retell AI",
+        "url": "https://www.retellai.com/"
+      },
+      {
+        "label": "Famulor",
+        "url": "https://www.famulor.io/"
+      }
     ]
   }
 }

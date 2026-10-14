@@ -5,29 +5,63 @@
   "excerpt": "Bluerails Discovery scores how visible a business, mainly a hotel, is to AI agents, as the first step of a Berlin startup's plan to let agents book and pay directly. Pricing in euros, alternatives and launch-day questions.",
   "content": "<p>Bluerails Discovery measures whether AI agents and assistants can find your business. It runs a set of prompts through models such as Claude and Perplexity (the launch post says a score from 400 samples, so the result is repeatable rather than a one-off check), then reports an AI-visibility score, which agents have visited your site, how you rank against rivals, and concrete fixes such as making your prices machine-readable.</p><p>Discovery is the first piece of a bigger plan. Bluerails, a Berlin company, wants businesses to be not only found by AI agents but booked and paid by them. Its site is now built mainly around hotels: it pitches direct bookings by AI agents as a way to avoid the 15–25% commission online travel agencies take, and sells a channel manager, managed ChatGPT ads and, still marked as coming soon, agent-ready checkout with settlement in euros. Payments run through Bandra Railz Finance Inc., a Canadian subsidiary registered as a money services business, according to Bluerails' terms.</p><p>Bluerails GmbH was co-founded by Jens Joseph Mannanal, who previously worked at GetYourGuide and Passionfroot, and Ashwin Kumar. Bluerails Discovery launched on Product Hunt on 23 June 2026 and finished #1 for the day with 584 points and 176 comments.</p><p><em>We have not tested Bluerails Discovery ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "AI visibility and agentic commerce",
     "platform": "Web app",
     "starts_at": "€199 for the first month, then €49/month",
     "schema_category": "BusinessApplication",
     "summary_short": "AI-visibility score for hotels and other businesses, the first step towards bookings and payments by AI agents",
-    "maker": {"name": "Jens Mannanal", "url": "https://www.producthunt.com/@j_mannanal"},
+    "maker": {
+      "name": "Jens Mannanal",
+      "url": "https://www.producthunt.com/@j_mannanal"
+    },
     "team": [
-      {"name": "Jens Joseph Mannanal", "role": "Co-founder & CEO", "url": "https://www.producthunt.com/@j_mannanal"},
-      {"name": "Ashwin Kumar", "role": "Co-founder & CTO", "url": "https://www.producthunt.com/@ashwin_kumar46"},
-      {"name": "Gurveen Ghai", "role": "Head of Operations", "url": "https://www.producthunt.com/@gurveen_ghai"}
+      {
+        "name": "Jens Joseph Mannanal",
+        "role": "Co-founder & CEO",
+        "url": "https://www.producthunt.com/@j_mannanal"
+      },
+      {
+        "name": "Ashwin Kumar",
+        "role": "Co-founder & CTO",
+        "url": "https://www.producthunt.com/@ashwin_kumar46"
+      },
+      {
+        "name": "Gurveen Ghai",
+        "role": "Head of Operations",
+        "url": "https://www.producthunt.com/@gurveen_ghai"
+      }
     ],
-    "ph": {"rank": 1, "votes": 584, "comments": 176, "followers": 1142, "launched": "2026-06-23", "as_of": "2026-10-14"},
+    "ph": {
+      "rank": 1,
+      "votes": 584,
+      "comments": 176,
+      "followers": 1142,
+      "launched": "2026-06-23",
+      "as_of": "2026-10-14"
+    },
     "gallery": [
-      {"url": "https://ph-files.imgix.net/c7a4fc3e-dc24-4e20-8b1f-c75e1c447c79.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040,
-       "alt": "Bluerails graphic 'Can AI agents find you and your products?' with a sample hotel scoring 38% (low visibility) and GPTBot, ClaudeBot and GemBot visit counts",
-       "credit": "Image: Bluerails via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/96f84734-af81-4cb6-9c63-f1f16549610b.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040,
-       "alt": "Bluerails diagram 'Your next customer is an AI agent': an agent's hotel request in Prague routed through Bluerails to a hotel's own website",
-       "credit": "Image: Bluerails via Product Hunt"},
-      {"url": "https://ph-files.imgix.net/ce569827-899c-4243-ae83-7a1dbdaa2d89.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040,
-       "alt": "Bluerails report for a sample hotel: 38.2% visibility, agents seen, rank against peers and a checklist such as 'Agents can't read your prices'",
-       "credit": "Image: Bluerails via Product Hunt"}
+      {
+        "url": "https://ph-files.imgix.net/c7a4fc3e-dc24-4e20-8b1f-c75e1c447c79.png?auto=format&fit=max&w=1400",
+        "w": 5080,
+        "h": 3040,
+        "alt": "Bluerails graphic 'Can AI agents find you and your products?' with a sample hotel scoring 38% (low visibility) and GPTBot, ClaudeBot and GemBot visit counts",
+        "credit": "Image: Bluerails via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/96f84734-af81-4cb6-9c63-f1f16549610b.png?auto=format&fit=max&w=1400",
+        "w": 5080,
+        "h": 3040,
+        "alt": "Bluerails diagram 'Your next customer is an AI agent': an agent's hotel request in Prague routed through Bluerails to a hotel's own website",
+        "credit": "Image: Bluerails via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/ce569827-899c-4243-ae83-7a1dbdaa2d89.png?auto=format&fit=max&w=1400",
+        "w": 5080,
+        "h": 3040,
+        "alt": "Bluerails report for a sample hotel: 38.2% visibility, agents seen, rank against peers and a checklist such as 'Agents can't read your prices'",
+        "credit": "Image: Bluerails via Product Hunt"
+      }
     ],
     "audience": {
       "fit": [
@@ -38,65 +72,174 @@
       "not_fit": [
         "need agent checkout and payments today: on the pricing page the full agentic payments service is marked 'coming soon'",
         "are not in hospitality: the site's pages, pricing and directory are now built around hotels",
-        "want a free tool: the launch offered a free report with no signup, but the site now lists Discovery as a paid plan"
+        "want ongoing free monitoring: the free Discovery report is one per domain, and the monthly Discovery plan is paid"
       ]
     },
     "pricing": {
       "intro": "Bluerails publishes prices in euros: one base plan, two add-ons and a full-service option.",
       "url": "https://www.bluerails.com/pricing",
       "plans": [
-        {"name": "Discovery", "price": "€199 first month, then €49/month", "amount": 49, "currency": "EUR", "detail": "AI-visibility score across 4 dimensions, monthly improvement report, keyword and prompt recommendations, competitor benchmark, content advice, listing in the Bluerails hotel directory"},
-        {"name": "Channel Manager (add-on)", "price": "+€199/month", "amount": 199, "currency": "EUR", "detail": "€179/month billed annually. Syncs rates and availability across 500+ channels, one bookings inbox, daily briefing, 24/7 help"},
-        {"name": "ChatGPT Ads (add-on)", "price": "10% of ad budget", "amount": null, "currency": "EUR", "detail": "Campaign set-up, bid management, reporting and booking tracking for ChatGPT ads"},
-        {"name": "Full-Service", "price": "From €1,799/month", "amount": 1799, "currency": "EUR", "detail": "All of the above plus AI-mention monitoring, agent-ready booking and native agentic payments; marked 'coming soon'"}
+        {
+          "name": "Discovery",
+          "price": "€199 first month, then €49/month",
+          "amount": 49,
+          "currency": "EUR",
+          "detail": "AI-visibility score across 4 dimensions, monthly improvement report, keyword and prompt recommendations, competitor benchmark, content advice, listing in the Bluerails hotel directory"
+        },
+        {
+          "name": "Channel Manager (add-on)",
+          "price": "+€199/month",
+          "amount": 199,
+          "currency": "EUR",
+          "detail": "€179/month billed annually. Syncs rates and availability across 500+ channels, one bookings inbox, daily briefing, 24/7 help"
+        },
+        {
+          "name": "ChatGPT Ads (add-on)",
+          "price": "10% of ad budget",
+          "amount": null,
+          "currency": "EUR",
+          "detail": "Campaign set-up, bid management, reporting and booking tracking for ChatGPT ads"
+        },
+        {
+          "name": "Full-Service",
+          "price": "From €1,799/month",
+          "amount": 1799,
+          "currency": "EUR",
+          "detail": "All of the above plus AI-mention monitoring, agent-ready booking and native agentic payments; marked 'coming soon'"
+        }
       ],
       "notes": [
-        "At launch on Product Hunt (June 2026), the Discovery report was described as free with no signup. The pricing page we checked lists it as a paid plan; the home page still offers a free score scan.",
+        "The site offers two different things under the Discovery name. The Discovery page (bluerails.com/discovery) offers a one-off free report: 'No account. No credit card. One free report per domain.' The pricing page (bluerails.com/pricing) lists the Discovery plan, with a monthly score and improvement report, at €199 for the first month, then €49/month. At launch on Product Hunt (June 2026) the report was described as free with no signup.",
         "Customers on payment plans go through KYC/KYB identity checks, according to the privacy policy."
       ],
-      "checked": "2026-10-14"
+      "checked": "2026-10-15"
     },
     "alternatives": {
       "intro": "These are products Product Hunt lists as alternatives. Most cover one part of what Bluerails does (being readable by agents, or selling to them). Review scores are Product Hunt users' own.",
       "items": [
-        {"name": "ZeroClick", "url": "https://www.producthunt.com/products/zeroclick", "what": "Sell your product to AI agents", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 7,
-         "difference": "Focused on selling to agents in general, while Bluerails has narrowed to hotels and adds a channel manager and settlement."},
-        {"name": "Silicon Friendly", "url": "https://www.producthunt.com/products/silicon-friendly", "what": "Rates how agent-friendly your website is, from L0 to L5", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 3,
-         "difference": "A website readiness rating; Bluerails measures what AI assistants actually say about you and goes on to bookings."},
-        {"name": "Is Your Site Agent-Ready? by Cloudflare", "url": "https://www.producthunt.com/products/is-your-site-agent-ready", "what": "Scans a website for AI-agent readiness", "starts_at": "See its pricing page", "ph_rating": null, "ph_reviews": 0,
-         "difference": "A technical scan from a large infrastructure company, without Bluerails' visibility score, reports or payments."}
+        {
+          "name": "ZeroClick",
+          "url": "https://www.producthunt.com/products/zeroclick",
+          "what": "Sell your product to AI agents",
+          "starts_at": "See its pricing page",
+          "ph_rating": 5,
+          "ph_reviews": 7,
+          "difference": "Focused on selling to agents in general, while Bluerails has narrowed to hotels and adds a channel manager and settlement."
+        },
+        {
+          "name": "Silicon Friendly",
+          "url": "https://www.producthunt.com/products/silicon-friendly",
+          "what": "Rates how agent-friendly your website is, from L0 to L5",
+          "starts_at": "See its pricing page",
+          "ph_rating": 5,
+          "ph_reviews": 3,
+          "difference": "A website readiness rating; Bluerails measures what AI assistants actually say about you and goes on to bookings."
+        },
+        {
+          "name": "Is Your Site Agent-Ready? by Cloudflare",
+          "url": "https://www.producthunt.com/products/is-your-site-agent-ready",
+          "what": "Scans a website for AI-agent readiness",
+          "starts_at": "See its pricing page",
+          "ph_rating": null,
+          "ph_reviews": 0,
+          "difference": "A technical scan from a large infrastructure company, without Bluerails' visibility score, reports or payments."
+        }
       ],
       "more": "Product Hunt also lists Browser Use (tools that make websites usable by agents) and Reiki by Web3Go (an AI-agent creation and monetisation platform)."
     },
-    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/bluerails-discovery/reviews", "as_of": "2026-10-14"},
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/bluerails-discovery/reviews",
+      "as_of": "2026-10-14"
+    },
     "community": {
       "ph_url": "https://www.producthunt.com/products/bluerails-discovery",
       "quotes": [
-        {"author": "Florent Berrez", "text": "Most \"get discovered by AI\" pitches boil down to structured data and a sitemap. The payment layer is what makes this different.",
-         "reply": "Jens Mannanal: 'discovery without execution is just SEO for agents'; the plan is wallet-based bookings for commerce and micropayments for content or API access."},
-        {"author": "Jaemin Song", "text": "The hard part I'd expect is attribution: which agent actually visited, what page/action led to a lead.",
-         "reply": "Ashwin Kumar: at the payment rails a real agent must present a verifiable identity and a signed authorisation, rather than relying on log files."}
+        {
+          "author": "Florent Berrez",
+          "text": "Most \"get discovered by AI\" pitches boil down to structured data and a sitemap. The payment layer is what makes this different.",
+          "reply": "Jens Mannanal: 'discovery without execution is just SEO for agents'; the plan is wallet-based bookings for commerce and micropayments for content or API access."
+        },
+        {
+          "author": "Jaemin Song",
+          "text": "The hard part I'd expect is attribution: which agent actually visited, what page/action led to a lead.",
+          "reply": "Ashwin Kumar: at the payment rails a real agent must present a verifiable identity and a signed authorisation, rather than relying on log files."
+        }
       ],
-      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=bluerails&f=live", "profile_url": "https://twitter.com/bluerailsdotcom"}
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=bluerails&f=live",
+        "profile_url": "https://twitter.com/bluerailsdotcom"
+      }
     },
     "faq": [
-      {"q": "What is Bluerails Discovery?", "a": "A report that scores how visible a business is to AI assistants and agents, with reasons and fixes. It is the first product of Bluerails GmbH, a Berlin company building booking and payment infrastructure for AI agents, and it launched on Product Hunt on 23 June 2026."},
-      {"q": "How much does Bluerails Discovery cost?", "a": "The pricing page lists Discovery at €199 for the first month, then €49 a month. A channel manager add-on is €199 a month and full service starts at €1,799 a month. The launch on Product Hunt described a free report with no signup."},
-      {"q": "Who is Bluerails for?", "a": "Its site is built mainly for hotels, from boutique hotels to chains, resorts and serviced apartments, though the launch pitched Discovery to businesses generally."},
-      {"q": "How is the score calculated?", "a": "According to the launch post, from 400 samples of AI answers. The sample report in the gallery mentions 200 AI responses, 5 samples per prompt and 40 prompts across 4 intent categories, measured on Claude and Perplexity."},
-      {"q": "Can AI agents book and pay through Bluerails today?", "a": "The site describes agent checkout and settlement in euros via SEPA, but the full-service plan with native agentic payments is marked 'coming soon' on the pricing page."},
-      {"q": "Who runs Bluerails?", "a": "Bluerails GmbH, Neue Schönhauser Straße 2, Berlin, represented by Jens Joseph Mannanal and Ashwin Kumar, according to its Impressum. Payment services run through its Canadian subsidiary Bandra Railz Finance Inc."}
+      {
+        "q": "What is Bluerails Discovery?",
+        "a": "A report that scores how visible a business is to AI assistants and agents, with reasons and fixes. It is the first product of Bluerails GmbH, a Berlin company building booking and payment infrastructure for AI agents, and it launched on Product Hunt on 23 June 2026."
+      },
+      {
+        "q": "How much does Bluerails Discovery cost?",
+        "a": "The Discovery page offers one free report per domain with no account or card. The ongoing Discovery plan on the pricing page costs €199 for the first month, then €49 a month. A channel manager add-on is €199 a month and full service starts at €1,799 a month."
+      },
+      {
+        "q": "Who is Bluerails for?",
+        "a": "Its site is built mainly for hotels, from boutique hotels to chains, resorts and serviced apartments, though the launch pitched Discovery to businesses generally."
+      },
+      {
+        "q": "How is the score calculated?",
+        "a": "According to the launch post, from 400 samples of AI answers. The sample report in the gallery mentions 200 AI responses, 5 samples per prompt and 40 prompts across 4 intent categories, measured on Claude and Perplexity."
+      },
+      {
+        "q": "Can AI agents book and pay through Bluerails today?",
+        "a": "The site describes agent checkout and settlement in euros via SEPA, but the full-service plan with native agentic payments is marked 'coming soon' on the pricing page."
+      },
+      {
+        "q": "Who runs Bluerails?",
+        "a": "Bluerails GmbH, Neue Schönhauser Straße 2, Berlin, represented by Jens Joseph Mannanal and Ashwin Kumar, according to its Impressum. Payment services run through its Canadian subsidiary Bandra Railz Finance Inc."
+      }
     ],
     "sources": [
-      {"label": "Bluerails official site", "url": "https://www.bluerails.com/"},
-      {"label": "Bluerails pricing", "url": "https://www.bluerails.com/pricing"},
-      {"label": "Bluerails about", "url": "https://www.bluerails.com/about"},
-      {"label": "Bluerails Impressum", "url": "https://www.bluerails.com/impressum"},
-      {"label": "Bluerails terms", "url": "https://www.bluerails.com/terms-and-conditions"},
-      {"label": "Bluerails privacy policy", "url": "https://www.bluerails.com/privacy-policy"},
-      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/bluerails-discovery"},
-      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/bluerails-discovery/launches/bluerails-discovery-3"},
-      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/bluerails-discovery/alternatives"}
+      {
+        "label": "Bluerails official site",
+        "url": "https://www.bluerails.com/"
+      },
+      {
+        "label": "Bluerails pricing",
+        "url": "https://www.bluerails.com/pricing"
+      },
+      {
+        "label": "Bluerails about",
+        "url": "https://www.bluerails.com/about"
+      },
+      {
+        "label": "Bluerails Impressum",
+        "url": "https://www.bluerails.com/impressum"
+      },
+      {
+        "label": "Bluerails terms",
+        "url": "https://www.bluerails.com/terms-and-conditions"
+      },
+      {
+        "label": "Bluerails privacy policy",
+        "url": "https://www.bluerails.com/privacy-policy"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/bluerails-discovery"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/products/bluerails-discovery/launches/bluerails-discovery-3"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/bluerails-discovery/alternatives"
+      },
+      {
+        "label": "Bluerails Discovery page",
+        "url": "https://www.bluerails.com/discovery"
+      }
     ]
   }
 }

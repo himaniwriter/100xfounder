@@ -4,9 +4,9 @@
   "existing_listing_slug": null,
   "website": "https://www.usevelo.ai",
   "excerpt": "Velo turns screen recordings, docs and prompts into narrated product demos, training and support videos. Free plan; Pro $49/month.",
-  "content": "<p>Velo is an AI video tool for companies. You record your screen, paste a URL, upload a deck or type a prompt, and Velo writes the script, adds narration and builds a finished video. It can also turn existing material such as help-centre articles, SOPs, changelogs and call notes into videos, and update a video when the product or process changes instead of making you record it again. Typical uses are product demos, sales videos, customer onboarding and support, and employee training.</p><p>Other features listed on the site include an agentic screen recorder, an AI editor, voice cloning, avatars, a brand kit, translation into more than 25 languages, viewer analytics, MCP support and SCORM export for learning systems. The Enterprise plan adds SSO, SAML, SCIM, data residency and API access, and the site states SOC 2 and ISO 27001 compliance.</p><p>Velo is operated by Flowframe, Inc., with a contact address in Delaware, USA. Its About page names Sourav Sanyal and Ajay Kumar as founders and says they have worked together since 2018 on AI for cameras, video infrastructure and computer vision. There is a free plan with 1,500 credits a month; Pro costs $49 a month. On Product Hunt the product has 2 reviews averaging 4.5 out of 5.</p><p>Velo launched on Product Hunt on 15 July 2026 and finished #2 for the day, with 570 upvotes and 147 comments. It has 2 Product Hunt reviews averaging 4.5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Velo ourselves. This page brings together its official site, pricing page, About page, terms and privacy policy, its Product Hunt listing and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "content": "<p>Velo is an AI video tool for companies. You record your screen, paste a URL, upload a deck or type a prompt, and Velo writes the script, adds narration and builds a finished video. It can also turn existing material such as help-centre articles, SOPs, changelogs and call notes into videos, and update a video when the product or process changes instead of making you record it again. Typical uses are product demos, sales videos, customer onboarding and support, and employee training.</p><p>Other features listed on the site include an agentic screen recorder, an AI editor, voice cloning, avatars, a brand kit, translation into more than 25 languages, viewer analytics, MCP support and SCORM export for learning systems. The Enterprise plan adds SSO, SAML, SCIM, data residency and API access, and the site states SOC 2 and ISO 27001 compliance.</p><p>Velo is operated by Flowframe, Inc., with a contact address in Delaware, USA. Its About page names Sourav Sanyal and Ajay Kumar as founders and says they have worked together since 2018 on AI for cameras, video infrastructure and computer vision. There is a free plan with 500 credits a month; Pro costs $49 a month, or $41 a month billed yearly. On Product Hunt the product has 2 reviews averaging 4.5 out of 5.</p><p>Velo launched on Product Hunt on 15 July 2026 and finished #2 for the day, with 570 upvotes and 147 comments. It has 2 Product Hunt reviews averaging 4.5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Velo ourselves. This page brings together its official site, pricing page, About page, terms and privacy policy, its Product Hunt listing and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "AI video",
     "platform": "Web app",
     "starts_at": "Free plan; Pro $49/month",
@@ -36,30 +36,30 @@
       ]
     },
     "pricing": {
-      "intro": "Prices are from Velo's own pricing page, shown with a $ sign. Usage is measured in credits; the page's estimator assumes about 150 credits per minute of video.",
+      "intro": "Prices are from Velo's own pricing page, shown with a $ sign. Usage is measured in credits, used according to each video's complexity; the page's estimator works out how many credits a month you need.",
       "url": "https://www.usevelo.ai/pricing/",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "plans": [
         {
           "name": "Free",
           "price": "$0",
           "amount": 0,
           "currency": "USD",
-          "detail": "1,500 credits a month, roughly 2 to 5 minutes of video"
+          "detail": "500 credits a month, roughly 2 to 5 minutes of video"
         },
         {
           "name": "Pro",
-          "price": "$49/month",
+          "price": "$49/month, or $41/month billed yearly",
           "amount": 49,
           "currency": "USD",
-          "detail": "3,000 credits a month, roughly 5 to 10 minutes of video; for one person making demos and explainers weekly"
+          "detail": "1,000 credits a month (12,000 a year on annual billing), roughly 5 to 10 minutes of video a month"
         },
         {
           "name": "Ultra",
-          "price": "$200/month",
+          "price": "$200/month, or $167/month billed yearly",
           "amount": 200,
           "currency": "USD",
-          "detail": "30,000 credits a month, roughly 50 to 100 minutes of video; more voices, avatars and shared team workflows"
+          "detail": "6,000 credits a month (72,000 a year on annual billing), roughly 30 to 60 minutes of video a month; for teams that need more credits, voices, avatars and shared video workflows"
         },
         {
           "name": "Enterprise",
@@ -68,7 +68,7 @@
         }
       ],
       "notes": [
-        "Yearly billing is cheaper; see the pricing page for the yearly rates.",
+        "Yearly prices: the pricing page's Yearly toggle shows Pro at $41 and Ultra at $167 a month, and its FAQ gives the same figures. Both the toggle and the FAQ say yearly billing saves 20%, though $41 and $167 work out to about 16-17% below the monthly prices.",
         "Add-ons such as premium voices, custom backgrounds and translation use extra credits.",
         "Paid plans renew automatically; the terms say fees are generally non-refundable except where the law requires or after certain system glitches."
       ]
@@ -139,7 +139,7 @@
       },
       {
         "q": "Is Velo free?",
-        "a": "There is a free plan with 1,500 credits a month, roughly 2 to 5 minutes of video. Pro is $49 a month and Ultra $200 a month; Enterprise is priced on request."
+        "a": "There is a free plan with 500 credits a month, roughly 2 to 5 minutes of video. Pro is $49 a month ($41 billed yearly) and Ultra $200 a month ($167 billed yearly); Enterprise is priced on request."
       },
       {
         "q": "How is Velo different from a video editor?",

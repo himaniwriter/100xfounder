@@ -6,7 +6,7 @@
   "excerpt": "Referent is AI-native practice management for solo lawyers and small law firms: AI agents handle intake, matters, email, drafts and deadlines, with the lawyer approving.",
   "content": "<p>Referent is practice management software for law firms, built around AI agents. It combines a legal CRM, client intake, matter management, documents, deadlines, email workflows, follow-ups and billing preparation in one workspace. Clients talk to an AI at your intake link, which screens the fit, opens a matter and prepares the engagement for your approval. Connected Gmail or Outlook inboxes are filed to the right matter, replies and documents arrive pre-drafted from the matter's context, and court dates and filing deadlines are tracked. You can run it by telling it in chat what needs to happen.</p><p>Referent's pitch is that the lawyer stays in control: anything client-facing or high-risk waits for approval and every agent action is logged. Its makers said on Product Hunt that workspaces are isolated and that they don't train on customer data. There are iPhone and Android apps and an MCP server.</p><p>Referent is led by founder and CEO George Zaletski, according to its About page, and comes from the team behind the consumer product AI Lawyer. The company named on its site is AI LAWTECH sp. z o.o. of Radom, Poland; the team says it is based in Poland and builds for US firms. Referent launched on Product Hunt on 30 August 2026 and finished #6 for the day with 159 upvotes and 42 comments (as of 14 October 2026).</p><p><em>We have not tested Referent ourselves. This page brings together its official site and About page, its Product Hunt launch and the public pricing page of a comparable tool, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "Legal practice management",
     "platform": "Web app, iPhone and Android apps",
     "starts_at": "Pricing not published",
@@ -58,9 +58,9 @@
       ]
     },
     "pricing": {
-      "intro": "Pricing not published. Referent's site asks firms to apply or book a demo and does not list prices.",
+      "intro": "Pricing not published. Referent is in private beta for boutique law firms: its site asks firms to apply or book a demo, and the apply page says current plans, trial terms and setup options are discussed on the call. No prices are listed (rechecked 15 October 2026).",
       "url": "https://referent.law/",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "plans": []
     },
     "alternatives": {
@@ -110,6 +110,7 @@
     "sources": [
       {"label": "Referent official site", "url": "https://referent.law/"},
       {"label": "Referent About page", "url": "https://referent.law/about"},
+      {"label": "Referent private beta application", "url": "https://referent.law/apply/"},
       {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/referent?launch=referent-2"},
       {"label": "MyCase pricing", "url": "https://www.mycase.com/pricing/"}
     ]

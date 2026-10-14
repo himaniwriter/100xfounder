@@ -6,7 +6,7 @@
  "excerpt": "Semos.ai Manager Agents are AI agents for people managers that learn from meetings to draft feedback and recognition. Free plan; Pro $39, Power $69.",
  "content": "<p>Semos.ai Manager Agents is a set of AI agents for people managers. A Meeting Agent builds context from your meetings, and other agents use it: a Feedback Agent and a Recognition Agent draft messages based on what actually happened, an HRBP Agent helps structure difficult people conversations and their documentation, a Career &amp; Growth Agent prompts growth talks, a Culture Agent flags shifts in team sentiment, and a Company Agent tracks news about your sector. The aim is to point you to what needs attention, such as overdue feedback or recognition you missed, and to explain why each suggestion is made so you learn as you go.</p><p>Semos.ai says its guidance draws on Stanford's 4Is feedback framework, the Big Five personality traits and Hofstede's cultural dimensions. Its Product Hunt gallery shows Google Calendar and Outlook Calendar connections and scores for culture, feedback and recognition. There is a free plan with 250 AI credits, paid Pro and Power plans, and an Enterprise mode that adds SAP SuccessFactors and Workday integration, SSO and SCIM.</p><p>Semos.ai is part of Semos Cloud, which makes people and culture software for large companies; its privacy policy names the operator as Semos Software LLC, a Delaware company with an address in Lewisville, Texas. The product launched on Product Hunt on 29 September 2026 and finished #5 for the day with 183 upvotes and 33 comments. The makers listed are Ivana Maznevska, Miodrag Stojanov, Jovica Nastovski and Natasha Davidovska.</p><p><em>We have not tested Semos.ai Manager Agents ourselves. This page brings together its official site, pricing page and privacy policy, its Product Hunt launch and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
  "profile": {
-  "checked": "2026-10-14",
+  "checked": "2026-10-15",
   "category": "HR and people management",
   "platform": "Web app",
   "starts_at": "Free plan (250 credits); Pro $39",
@@ -105,30 +105,30 @@
    ]
   },
   "pricing": {
-   "intro": "Semos.ai's self-serve plans are credit based. Prices are shown with a $ sign; the page does not name the currency. Each plan's credits are described as lasting 30 days.",
+   "intro": "Semos.ai's self-serve plans are credit based. Prices are shown with a $ sign; the page does not name the currency. The pricing page and the terms describe credit renewal differently; see the notes.",
    "url": "https://semos.ai/pricing/",
-   "checked": "2026-10-14",
+   "checked": "2026-10-15",
    "plans": [
     {
      "name": "Free",
      "price": "$0",
      "amount": 0,
      "currency": "USD",
-     "detail": "250 credits for 30 days (about 5-10 'intelligence moments'), full access to the multi-agent leadership AI"
+     "detail": "Pricing page: '250 credits / 30 days' and '250 one-time credits' (about 5-10 'intelligence moments'); full access to the multi-agent leadership AI"
     },
     {
      "name": "Pro",
      "price": "$39",
      "amount": 39,
      "currency": "USD",
-     "detail": "500 credits for 30 days (about 15-20 moments), adaptive coaching, meeting summaries and actions"
+     "detail": "Pricing page: '500 credits / 30 days' and '500 one-time credits' (about 15-20 moments); adaptive coaching, meeting summaries and actions"
     },
     {
      "name": "Power",
      "price": "$69",
      "amount": 69,
      "currency": "USD",
-     "detail": "1,000 credits for 30 days (about 30-40 moments), higher meeting volume, priority access to new capabilities"
+     "detail": "Pricing page: '1000 credits / 30 days' and '1000 credits/month' (about 30-40 moments); higher meeting volume, priority access to new capabilities"
     },
     {
      "name": "Enterprise Connected Mode",
@@ -137,8 +137,8 @@
     }
    ],
    "notes": [
-    "Extra credits: $15 for 100 more, self-serve plans only. Payments go through Stripe.",
-    "The pricing page describes credits in places as 'one-time' and elsewhere as monthly, and the homepage says 'Self-serve, monthly', so check the billing period at checkout."
+    "Extra credits ('Intelligence Boost'): $15 for 100 more, self-serve plans only. Payments go through Stripe.",
+    "Do credits renew? The pricing page (semos.ai/pricing) heads every plan '/ 30 days' but labels the Free and Pro credits 'one-time' and the Power credits 'credits/month'. The home page (semos.ai) calls the cost 'Self-serve, monthly'. The Manager AI Agent service terms say paid plans are subscriptions that 'renew automatically at the end of each billing period' (monthly or annual, chosen at checkout), and that Boost credits 'have no expiry date'. None of these pages says whether the free plan's 250 credits come back after 30 days."
    ]
   },
   "alternatives": {
@@ -193,7 +193,7 @@
    "Backed by Semos Cloud, which already sells people software to large companies"
   ],
   "cons": [
-   "Credit-based plans; the pricing page is unclear whether credits renew monthly",
+   "Credit-based plans; the pricing page labels some plan credits 'one-time' while the terms describe auto-renewing subscriptions",
    "HRIS integrations and SSO only in Enterprise mode",
    "Meeting content is processed by third-party AI providers",
    "Many of the launch-day questions on Product Hunt were flagged as likely AI-written, so there is little independent feedback yet"
@@ -213,7 +213,7 @@
    },
    {
     "q": "How much does it cost?",
-    "a": "There is a free plan with 250 credits for 30 days. Pro is $39 with 500 credits and Power is $69 with 1,000 credits. Extra credits cost $15 per 100. Enterprise mode is priced by sales."
+    "a": "The free plan is listed as 250 credits per 30 days, described on the same page as one-time credits. Pro is $39 with 500 credits and Power is $69 with 1,000 credits per 30 days; the terms say paid plans renew automatically each billing period. Extra credits cost $15 per 100 and do not expire. Enterprise mode is priced by sales."
    },
    {
     "q": "Does it suggest what feedback to give?",
@@ -268,6 +268,10 @@
    {
     "label": "Lattice pricing",
     "url": "https://lattice.com/pricing"
+   },
+   {
+    "label": "Semos.ai Manager AI Agent terms of service",
+    "url": "https://semos.ai/terms_of_manager_ai_agent_service/"
    }
   ]
  }

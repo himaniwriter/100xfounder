@@ -4,9 +4,9 @@
   "existing_listing_slug": null,
   "website": "https://recordmeeting.com",
   "excerpt": "RecordMeeting records and transcribes Google Meet, Zoom and Teams calls without a bot joining, then gives AI notes and a share link. Pricing and alternatives.",
-  "content": "<p>RecordMeeting is a meeting recorder that runs in your browser (as a Chrome extension or Google Workspace add-on) instead of sending a bot into the call. One click starts recording; afterwards you get the full video, a transcript, AI meeting notes and summaries, and a link to share with your team. Its site lists Google Meet, Zoom, Microsoft Teams, Webex, Telegram, WhatsApp and Discord, and you can chat with your recordings to find what was said.</p><p>Because no bot joins and other participants are not notified, the maker said on Product Hunt that the recording stays on your own machine and it is up to you to tell others you are recording. Recording a call without everyone's consent is illegal in many places, as one commenter pointed out, so check the rules where you and the other participants are before using it.</p><p>RecordMeeting is made by Qualtir, according to its site and its founder Nathan's Product Hunt comment. It launched on Product Hunt on 15 July 2026 and finished #9 for the day with 155 upvotes and 28 comments (as of 14 October 2026).</p><p><em>We have not tested RecordMeeting ourselves. This page brings together its official site and pricing page, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "content": "<p>RecordMeeting is a meeting recorder that runs in your browser (as a Chrome extension or Google Workspace add-on) instead of sending a bot into the call. One click starts recording; afterwards you get the full video, a transcript, AI meeting notes and summaries, and a link to share with your team. Its site lists Google Meet, Zoom, Microsoft Teams, Webex, Telegram, WhatsApp and Discord, and you can chat with your recordings to find what was said.</p><p>Because no bot joins and other participants are not notified, the maker said on Product Hunt that the recording stays on your own machine and it is up to you to tell others you are recording. Call-recording laws differ by country and, in the US, by state: some places allow a call to be recorded with one participant's consent, while others require every participant's consent. Several commenters raised this and asked for a consent reminder. Check the rules that apply where you and each participant are before recording.</p><p>RecordMeeting is made by Qualtir, according to its site and its founder Nathan's Product Hunt comment. It launched on Product Hunt on 15 July 2026 and finished #9 for the day with 155 upvotes and 28 comments (as of 14 October 2026).</p><p><em>We have not tested RecordMeeting ourselves. This page brings together its official site and pricing page, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "Meeting recording and transcription",
     "platform": "Chrome extension and Google Workspace add-on",
     "starts_at": "Free plan; Pro $9/month billed yearly",
@@ -42,14 +42,14 @@
         "want a low-cost recorder with unlimited recordings"
       ],
       "not_fit": [
-        "work where all-party consent to recording is required and can't reliably tell everyone yourself",
+        "work where every participant must consent to recording and you can't reliably tell everyone yourself",
         "need team-wide policy controls on consent, which a commenter asked about and the launch did not offer"
       ]
     },
     "pricing": {
       "intro": "RecordMeeting lists three plans; yearly billing saves 30%. Prices are in US dollars. Paid plans have a 30-day money-back guarantee.",
       "url": "https://recordmeeting.com/pricing",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "plans": [
         {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "5 unlocked recordings (older ones stay open, newer ones lock), recordings up to 1 hour, AI notes, full transcription, downloads, chat with recordings"},
         {"name": "Pro", "price": "$9/month billed yearly", "amount": 9, "currency": "USD", "detail": "Unlimited recordings up to 6 hours each, AI notes, transcription, downloads, chat"},
@@ -71,7 +71,7 @@
       "themes": {
         "liked": ["No bot joining the call"],
         "asked": ["How privacy and consent work without a visible bot (it is up to the user to tell others)", "How it differs from other recorders", "Whether there is a time limit (1 hour on Free, 6 hours on paid plans, per the pricing page)"],
-        "criticised": ["Commenters pointed out that recording without all parties' consent is illegal in many jurisdictions, and suggested a consent reminder option"]
+        "criticised": ["Several commenters noted that some places, including some US states, require every participant's consent to record a call, and suggested a consent reminder or announcement option"]
       },
       "quotes": [
         {"text": "How do you handle privacy and consent, especially since recordings happen without a visible bot?", "author": "Brandon TK Beesman", "url": "https://www.producthunt.com/products/recordmeeting?comment=5584437"},
@@ -85,7 +85,7 @@
       "30-day money-back guarantee"
     ],
     "cons": [
-      "Consent is entirely the user's responsibility",
+      "Telling participants, and getting consent where the law requires it, is left to you",
       "Free plan keeps only 5 recordings unlocked",
       "A custom vocabulary for names and jargon was still 'coming soon' at launch"
     ],
@@ -100,7 +100,7 @@
     "faq": [
       {"q": "What is RecordMeeting?", "a": "A browser-based meeting recorder that records and transcribes calls without a bot joining, then gives AI notes and a share link. It is made by Qualtir."},
       {"q": "How much does RecordMeeting cost?", "a": "Free for 5 unlocked recordings of up to an hour. Pro is $9 a month and Enterprise $15 per seat a month, both billed yearly."},
-      {"q": "Is it legal to record without telling people?", "a": "That depends on where you and the other participants are; many places require everyone's consent. The maker says it is up to you to tell others you are recording."},
+      {"q": "Is it legal to record without telling people?", "a": "It depends on where you and the other participants are. Some places allow a call to be recorded with one participant's consent; others require every participant's consent. RecordMeeting does not notify other participants, and the maker says telling them is up to you, so check the rules that apply before recording."},
       {"q": "Which platforms does it work with?", "a": "Google Meet, Zoom, Microsoft Teams, Webex, Telegram, WhatsApp and Discord, according to its site."},
       {"q": "Is there a recording time limit?", "a": "1 hour per recording on Free and 6 hours on paid plans."}
     ],

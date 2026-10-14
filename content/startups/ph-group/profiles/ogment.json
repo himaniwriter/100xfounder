@@ -5,20 +5,42 @@
   "excerpt": "Ogment's @O is an AI coworker you tag in Slack. Launched as a general assistant, it is now pitched to Swiss fiduciaries for bookkeeping, VAT, closing and payroll work. What it does and alternatives.",
   "content": "<p>Ogment makes @O, an AI agent that lives in Slack. You tag @O in a channel like a colleague and ask it in plain English to do something, such as create a CRM record, update a Salesforce deal or file a Linear ticket. At its Product Hunt launch Ogment said @O connects to more than 1,000 tools, can run automations on a schedule, and shares memory and skills across the whole team, with a one-click Slack install.</p><p>Since then, Ogment's website has narrowed its pitch to Swiss fiduciaries (accounting and trust firms). There, @O takes the first pass on bookkeeping and bank reconciliation, flags missing receipts and drafts reminders to clients, proposes entries with VAT codes, and prepares close, tax, VAT, audit and payroll files for a person to approve. Files can be imported into Swiss accounting tools such as WinBiz, Abacus and Bexio. The site is in English, German and French, describes the software as Swiss-built and SOC 2 compliant, and offers a free 30-minute AI audit instead of public prices.</p><p>The Slack launch of Ogment AI was on 7 July 2026 and finished #9 for the day, with 154 upvotes and 117 comments (as of 14 October 2026). It was Ogment's second launch on Product Hunt.</p><p><em>We have not tested Ogment ourselves. This page brings together its official site and its Product Hunt page, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "AI agent for Slack / accounting automation",
     "platform": "Slack app",
     "starts_at": "Pricing not published",
     "schema_category": "BusinessApplication",
     "summary_short": "AI coworker you tag in Slack, now focused on accounting workflows for Swiss fiduciaries",
-    "ph": {"rank": 9, "votes": 154, "comments": 117, "followers": 1080, "launched": "2026-07-07", "as_of": "2026-10-14"},
+    "ph": {
+      "rank": 9,
+      "votes": 154,
+      "comments": 117,
+      "followers": 1080,
+      "launched": "2026-07-07",
+      "as_of": "2026-10-14"
+    },
     "gallery": [
-      {"url": "https://ph-files.imgix.net/1859be72-67fd-4811-b7e3-37ddc72fa345.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Ogment via Product Hunt",
-       "alt": "Ogment '1-click install for Slack': a user tags @O in a sales channel to create a CRM record"},
-      {"url": "https://ph-files.imgix.net/3ef2a71d-ede7-4379-ac81-8ec3f9e3c526.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Ogment via Product Hunt",
-       "alt": "Ogment '1,000+ integrations' graphic with Gmail, Notion, Salesforce, Linear and Google Calendar icons"},
-      {"url": "https://ph-files.imgix.net/9eff52a5-27a7-4df4-964b-56ffa7b08133.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Ogment via Product Hunt",
-       "alt": "Ogment 'Delegate tasks to O' showing @O creating a Linear ticket, updating Salesforce and checking client files in Slack"}
+      {
+        "url": "https://ph-files.imgix.net/1859be72-67fd-4811-b7e3-37ddc72fa345.png?auto=format&fit=max&w=1400",
+        "w": 2540,
+        "h": 1520,
+        "credit": "Image: Ogment via Product Hunt",
+        "alt": "Ogment '1-click install for Slack': a user tags @O in a sales channel to create a CRM record"
+      },
+      {
+        "url": "https://ph-files.imgix.net/3ef2a71d-ede7-4379-ac81-8ec3f9e3c526.png?auto=format&fit=max&w=1400",
+        "w": 2540,
+        "h": 1520,
+        "credit": "Image: Ogment via Product Hunt",
+        "alt": "Ogment '1,000+ integrations' graphic with Gmail, Notion, Salesforce, Linear and Google Calendar icons"
+      },
+      {
+        "url": "https://ph-files.imgix.net/9eff52a5-27a7-4df4-964b-56ffa7b08133.png?auto=format&fit=max&w=1400",
+        "w": 2540,
+        "h": 1520,
+        "credit": "Image: Ogment via Product Hunt",
+        "alt": "Ogment 'Delegate tasks to O' showing @O creating a Linear ticket, updating Salesforce and checking client files in Slack"
+      }
     ],
     "use_cases": [
       "Tagging @O in Slack to update a CRM record or file a ticket",
@@ -42,7 +64,7 @@
     "pricing": {
       "intro": "Ogment does not publish prices. Its site offers a free 30-minute AI audit of where a firm's hours go, with an AI ROI plan.",
       "url": "https://ogment.ai/",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "plans": [],
       "notes": []
     },
@@ -60,29 +82,88 @@
     "alternatives": {
       "intro": "These are products Product Hunt lists as alternatives to @O. Review scores are Product Hunt users' own.",
       "items": [
-        {"name": "viktor.com", "url": "https://www.producthunt.com/products/viktor", "what": "AI employee that does the work in Slack and Teams", "starts_at": "See its pricing page", "ph_rating": 4.88, "ph_reviews": 16, "ph_url": "https://www.producthunt.com/products/viktor",
-         "difference": "A general AI employee for Slack and Teams; Ogment now targets fiduciary accounting work."},
-        {"name": "Runbear", "url": "https://www.producthunt.com/products/runbear", "what": "Build AI teammates to automate workflows in Slack and Teams", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 8, "ph_url": "https://www.producthunt.com/products/runbear",
-         "difference": "You build your own agents; @O comes with accounting workflows set up."},
-        {"name": "Zapier", "url": "https://zapier.com/", "what": "Connect apps and automate workflows", "starts_at": "See its pricing page", "ph_rating": 4.72, "ph_reviews": 67, "ph_url": "https://www.producthunt.com/products/zapier",
-         "difference": "Rule-based automations you configure; @O takes requests in plain English inside Slack."}
+        {
+          "name": "viktor.com",
+          "url": "https://www.producthunt.com/products/viktor",
+          "what": "AI employee that does the work in Slack and Teams",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.88,
+          "ph_reviews": 16,
+          "ph_url": "https://www.producthunt.com/products/viktor",
+          "difference": "A general AI employee for Slack and Teams; Ogment now targets fiduciary accounting work."
+        },
+        {
+          "name": "Runbear",
+          "url": "https://www.producthunt.com/products/runbear",
+          "what": "Build AI teammates to automate workflows in Slack and Teams",
+          "starts_at": "See its pricing page",
+          "ph_rating": 5,
+          "ph_reviews": 8,
+          "ph_url": "https://www.producthunt.com/products/runbear",
+          "difference": "You build your own agents; @O comes with accounting workflows set up."
+        },
+        {
+          "name": "Zapier",
+          "url": "https://zapier.com/",
+          "what": "Connect apps and automate workflows",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.72,
+          "ph_reviews": 67,
+          "ph_url": "https://www.producthunt.com/products/zapier",
+          "difference": "Rule-based automations you configure; @O takes requests in plain English inside Slack."
+        }
       ],
       "more": "Product Hunt also lists Slack itself and Adapt."
     },
-    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/ogment-mcp-builder/reviews", "as_of": "2026-10-14"},
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/ogment-mcp-builder/reviews",
+      "as_of": "2026-10-14"
+    },
     "community": {
       "ph_url": "https://www.producthunt.com/products/ogment-mcp-builder",
-      "x": {"none": "We found no posts about Ogment on X to link yet.", "search_url": "https://x.com/search?q=ogment&f=live", "profile_url": "https://twitter.com/ogmentai"}
+      "x": {
+        "none": "We found no posts about Ogment on X to link yet.",
+        "search_url": "https://x.com/search?q=ogment&f=live",
+        "profile_url": "https://twitter.com/ogmentai"
+      }
     },
     "faq": [
-      {"q": "What is @O by Ogment?", "a": "An AI agent that lives in Slack. You tag @O and ask it to do tasks across your tools. Ogment's site now focuses on accounting work for Swiss fiduciaries."},
-      {"q": "How much does Ogment cost?", "a": "Ogment does not publish prices. It offers a free 30-minute AI audit."},
-      {"q": "What accounting work can @O do?", "a": "According to Ogment: data entry and bank reconciliation, missing-receipt reminders, proposed entries with VAT, month-end close, tax and VAT packs, audit preparation and payroll checks, each routed to your team to approve."},
-      {"q": "Which accounting software does it work with?", "a": "Ogment's site names WinBiz, Abacus and Bexio as import targets, and bank exports in CAMT, CSV and PDF."}
+      {
+        "q": "What is @O by Ogment?",
+        "a": "An AI agent that lives in Slack. You tag @O and ask it to do tasks across your tools. Ogment's site now focuses on accounting work for Swiss fiduciaries."
+      },
+      {
+        "q": "How much does Ogment cost?",
+        "a": "Ogment does not publish prices. It offers a free 30-minute AI audit."
+      },
+      {
+        "q": "What accounting work can @O do?",
+        "a": "According to Ogment: data entry and bank reconciliation, missing-receipt reminders, proposed entries with VAT, month-end close, tax and VAT packs, audit preparation and payroll checks, each routed to your team to approve."
+      },
+      {
+        "q": "Which accounting software does it work with?",
+        "a": "Ogment's site names WinBiz, Abacus and Bexio as import targets, and bank exports in CAMT, CSV and PDF."
+      }
     ],
     "sources": [
-      {"label": "Ogment official site", "url": "https://ogment.ai/"},
-      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/ogment-mcp-builder"}
+      {
+        "label": "Ogment official site",
+        "url": "https://ogment.ai/"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/ogment-mcp-builder"
+      },
+      {
+        "label": "Ogment security",
+        "url": "https://ogment.ai/security"
+      },
+      {
+        "label": "Ogment AI audit",
+        "url": "https://ogment.ai/ai-audit"
+      }
     ]
   }
 }

@@ -4,12 +4,12 @@
   "existing_listing_slug": null,
   "website": "https://www.thumbmagic.co/",
   "excerpt": "Thumbmagic makes YouTube, Shorts and Reels thumbnails with AI from a video link, upload or transcript. From $17/month billed yearly. Plans and alternatives.",
-  "content": "<p>Thumbmagic is an AI thumbnail maker for YouTube, Shorts, TikTok and Instagram Reels. You paste a YouTube link, upload a video or give a transcript; it picks out key moments, suggests layouts and generates several thumbnail options. You can then change the text, colours, background and facial expression in its editor without design skills, make variations for A/B tests, and export for each platform, up to 4K.</p><p>It offers templates aimed at creator niches such as gaming, with pages for Fortnite, Minecraft and Valorant, an \"avatar\" of your face to reuse across thumbnails, and on higher plans a feature that copies the style of a thumbnail you like. Plans start at $17 a month billed yearly for 100 thumbnails.</p><p>Thumbmagic's terms and privacy policy name TURBO STUDIO S.A.S., a company registered in Paris, France, as the operator. The site also carries the Submagic name, and sign-in and pricing live on Submagic's app.</p><p>Thumbmagic launched on Product Hunt on 23 June 2026 and finished #5 for the day, with 312 upvotes and 67 comments (as of 14 October 2026).</p><p><em>We have not tested Thumbmagic ourselves. This page brings together its official site, pricing page, terms and privacy policy, its Product Hunt listing and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "content": "<p>Thumbmagic is an AI thumbnail maker for YouTube, Shorts, TikTok and Instagram Reels. You paste a YouTube link, upload a video or give a transcript; it picks out key moments, suggests layouts and generates several thumbnail options. You can then change the text, colours, background and facial expression in its editor without design skills, make variations for A/B tests, and export for each platform, up to 4K.</p><p>It offers templates aimed at creator niches such as gaming, with pages for Fortnite, Minecraft and Valorant, an \"avatar\" of your face to reuse across thumbnails, and on higher plans a feature that copies the style of a thumbnail you like. You can try it with 3 free thumbnails; paid plans start at $17 a month billed yearly for 100 thumbnails.</p><p>Thumbmagic's terms and privacy policy name TURBO STUDIO S.A.S., a company registered in Paris, France, as the operator. The site also carries the Submagic name, and sign-in and pricing live on Submagic's app.</p><p>Thumbmagic launched on Product Hunt on 23 June 2026 and finished #5 for the day, with 312 upvotes and 67 comments (as of 14 October 2026).</p><p><em>We have not tested Thumbmagic ourselves. This page brings together its official site, pricing page, terms and privacy policy, its Product Hunt listing and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "Design",
     "platform": "Web app",
-    "starts_at": "From $17/month billed yearly",
+    "starts_at": "3 free thumbnails; paid from $17/month billed yearly",
     "schema_category": "DesignApplication",
     "summary_short": "AI thumbnail maker for YouTube, Shorts and Reels that works from a video link",
     "use_cases": [
@@ -26,15 +26,15 @@
         "run a gaming or vlogging channel and want niche templates"
       ],
       "not_fit": [
-        "want a free plan: we saw only paid plans",
+        "want a free plan: there are only paid plans, plus 3 free trial thumbnails",
         "need refunds to be clear: the pricing page promises a 30-day money-back guarantee but the terms say purchases are non-refundable",
         "mind a licence over your uploads: the terms let the company use your content as promotional case studies unless you opt out by email"
       ]
     },
     "pricing": {
-      "intro": "Prices from Thumbmagic's pricing page on the Submagic app, in US dollars, shown as a monthly rate billed yearly. We did not see monthly-billed prices.",
+      "intro": "Prices from Thumbmagic's pricing page on the Submagic app, in US dollars. The page has a Monthly/Yearly toggle ('Save 40%'); the yearly figures below are the ones shown in the page as served. For monthly-billed prices, see the official pricing page.",
       "url": "https://app.submagic.co/thumbnail-generator/pricing",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "plans": [
         {
           "name": "Starter",
@@ -59,8 +59,9 @@
         }
       ],
       "notes": [
-        "The pricing page says plans have no setup fees, can be cancelled any time and carry a 30-day money-back guarantee.",
-        "The terms of use say all monthly and annual purchases are non-refundable, and cancellation takes effect at the end of the paid period. Check with the company before buying."
+        "Free use: the pricing page says 'Try out with 3 free thumbnails. No credit card required.'",
+        "Refunds, pricing page (app.submagic.co/thumbnail-generator/pricing): 'No setup fees • Cancel anytime • 30-day money-back guarantee'.",
+        "Refunds, terms of use (thumbmagic.co/terms-of-use, section 7, 'Refunds', from operator TURBO STUDIO S.A.S.): 'All monthly and annually purchases are non-refundable.' The same section says cancellation takes effect at the end of the current payment period. The two pages disagree; ask the company before you pay."
       ]
     },
     "alternatives": {
@@ -95,7 +96,7 @@
       "Exports sized for each platform, up to 4K"
     ],
     "cons": [
-      "No free plan shown",
+      "No free plan, only 3 free trial thumbnails",
       "Pricing page and terms disagree on refunds",
       "Terms give the company a licence to use your content in case studies unless you opt out",
       "The site's click-through and cost-saving figures are its own claims"
@@ -115,15 +116,15 @@
       },
       {
         "q": "How much does Thumbmagic cost?",
-        "a": "Starter is $17 a month, Pro $35 and Business $59, each billed yearly. They allow 100, 500 and unlimited thumbnails a month."
+        "a": "Billed yearly, Starter is $17 a month, Pro $35 and Business $59. They allow 100, 500 and unlimited thumbnails a month. Monthly billing is also offered; see the official pricing page for those prices."
       },
       {
         "q": "Is there a free plan?",
-        "a": "We did not see one on the pricing page."
+        "a": "There is no free plan, but the pricing page says you can try it with 3 free thumbnails and no credit card."
       },
       {
         "q": "Can I get a refund?",
-        "a": "The pricing page mentions a 30-day money-back guarantee, but the terms say purchases are non-refundable. Ask the company before you pay."
+        "a": "The two official pages disagree. The pricing page promises a '30-day money-back guarantee'; section 7 of the terms of use says 'All monthly and annually purchases are non-refundable.' Ask the company before you pay."
       },
       {
         "q": "Who makes Thumbmagic?",

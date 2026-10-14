@@ -6,7 +6,7 @@
   "excerpt": "PeakRoutine is an iPhone health coach that links sleep, HRV, daylight, mood and nutrition data from Apple Health and builds habits around them.",
   "content": "<p>PeakRoutine is an iPhone app that reads your health data through Apple Health, so data from an Apple Watch, Oura, WHOOP or similar devices flows in on its own. It looks for links between your sleep, heart-rate variability (HRV), daylight exposure, exercise, nutrition, mood and hydration, and explains what they mean for you. Six AI coaches (health, sleep, fitness, nutrition, recovery and mental health) answer questions using your own data, and a habit engine builds a daily plan that adjusts to how recovered you are.</p><p>The makers say it is a wellness app, not a clinical tool for diagnosing or managing a condition. Its site says it is free to start, that subscriptions can be cancelled any time in the app or the App Store, and that your data is never sold or shared with advertisers.</p><p>PeakRoutine was started by co-founders Siddhant Gupta and Sakshi Khare. Siddhant writes on its About page that a pre-diabetes diagnosis, and wearable data that never explained why, led him to build it. It launched on Product Hunt on 16 June 2026 and finished #4 for the day with 266 upvotes and 47 comments (as of 14 October 2026).</p><p><em>We have not tested PeakRoutine ourselves. This page brings together its official site, its Product Hunt launch and the public pages of comparable apps, and says where each fact comes from.</em></p>",
   "profile": {
-    "checked": "2026-10-14",
+    "checked": "2026-10-15",
     "category": "Health and fitness",
     "platform": "iPhone app",
     "os": "iOS; reads data through Apple Health",
@@ -60,9 +60,9 @@
       ]
     },
     "pricing": {
-      "intro": "Pricing not published. PeakRoutine's website says it is free to start and that you can cancel a subscription any time from the app or the App Store, but it does not list prices.",
+      "intro": "Pricing not published. PeakRoutine's website says it is free to start, and its FAQ describes a Free plan that tracks your data and a paid Pro plan that explains what the data means. You can cancel a subscription any time from the app or the App Store. The site lists no prices (rechecked 15 October 2026).",
       "url": "https://www.peakroutinehealth.com/",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "plans": [],
       "notes": ["Check the App Store listing for current in-app prices."]
     },

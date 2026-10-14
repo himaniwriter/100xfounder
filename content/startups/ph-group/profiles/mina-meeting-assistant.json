@@ -1,122 +1,264 @@
 {
- "slug": "mina-meeting-assistant",
- "ph_url": "https://www.producthunt.com/products/mina-meeting-assistant",
- "existing_listing_slug": null,
- "website": "https://getmina.ai/",
- "excerpt": "Mina is an AI meeting assistant that joins Zoom, Google Meet and Teams calls as a participant, speaks when asked (or proactively), pulls context from 200+ tools and updates CRMs and tickets during the call. Free to start; full pricing not published. How it works and alternatives.",
- "content": "<p>Mina is an AI meeting assistant that takes part in calls rather than only taking notes. It joins Zoom, Google Meet or Microsoft Teams as a participant, and can answer questions out loud, pull account details or the latest numbers from connected tools, and produce summaries, proposals, action items and CRM or ticket updates while the meeting is still going. It has more than 40 built-in skills, connects to over 200 tools including Slack, HubSpot, Salesforce, Jira, Linear and Notion, and lets you build assistants from templates for roles such as sales engineer, scrum master, recruiter or customer success manager.</p><p>Assistants can be reactive, speaking only when you say \"Hey Mina\" (or another name you choose), or proactive, listening all the time and acting on context, which the co-founder said costs more. He also said you can tell Mina not to record or send a transcript, and that memory from past meetings can be saved to your own Google Drive rather than Mina's servers. The website says Mina is SOC 2 Type II certified and uses 256-bit encryption.</p><p>Mina is made by [x]cube LABS, doing business as PurpleTalk, Inc.; Sridhar Muppidi and Ishika Muppidi were among its makers on Product Hunt. It launched on 1 June 2026 and finished #1 for the day with 410 upvotes and 133 comments.</p><p><em>We have not tested Mina ourselves. This page brings together Mina's website, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
- "profile": {
-  "checked": "2026-10-14",
-  "category": "AI meeting assistant",
-  "platform": "Web; joins Zoom, Google Meet and Microsoft Teams",
-  "starts_at": "Free to start; paid pricing not published",
-  "schema_category": "BusinessApplication",
-  "summary_short": "AI meeting assistant that speaks and takes actions during Zoom, Meet and Teams calls",
-  "maker": {"name": "Sridhar Muppidi", "url": "https://www.producthunt.com/@sridharmuppidi"},
-  "team": [
-   {"name": "Sridhar Muppidi", "role": "Co-founder", "url": "https://www.producthunt.com/@sridharmuppidi"},
-   {"name": "Ishika Muppidi", "role": "Maker", "url": "https://www.producthunt.com/@ishika_muppidi"},
-   {"name": "Ramesh Naidu Pediredla", "role": "Growth", "url": "https://www.producthunt.com/@rameshpediredla"}
-  ],
-  "ph": {"rank": 1, "votes": 410, "comments": 133, "followers": 1383, "launched": "2026-06-01", "as_of": "2026-10-14"},
-  "gallery": [
-   {"url": "https://ph-files.imgix.net/ba75f4a1-d72e-4f8e-8ea5-a4cf83867d86.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Mina via Product Hunt", "alt": "Mina graphic listing what it does in meetings, beside a laptop showing its calendar dashboard"},
-   {"url": "https://ph-files.imgix.net/d626578e-fd22-4d24-ab9e-49bfa28b3993.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Mina via Product Hunt", "alt": "Mina meeting assistant editor with skills such as meeting memory, web search, Google Calendar and smart emailer"},
-   {"url": "https://ph-files.imgix.net/36be11c8-83bd-4759-8654-2f0c6092e9af.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Mina via Product Hunt", "alt": "Mina graphic 'Over 200 integrations' with app icons including Google Meet, Teams, Slack, Zoom and Gmail"},
-   {"url": "https://ph-files.imgix.net/c0a826c3-056f-47c5-a8c2-a55f2f6ed2ad.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Mina via Product Hunt", "alt": "Mina screen for creating a meeting agent from scratch, with AI or from templates"}
-  ],
-  "launch_story": {
-   "paragraphs": [
-    "Sridhar Muppidi says most meetings still end with forgotten decisions, scattered follow-ups and hours of manual work, because meeting tools act as passive note-takers that transcribe, summarise and stop there. The team set out to build an assistant that takes part instead.",
-    "He described Mina as configurable into different teammates, from a quiet assistant to a proactive moderator, scrum facilitator or customer-facing copilot, and said the biggest change the team saw internally was meetings becoming places where work gets done rather than documented."
-   ],
-   "attribution": "Sridhar Muppidi, co-founder, on Product Hunt",
-   "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5404291"
-  },
-  "use_cases": [
-   "Answering product or account questions live on sales calls",
-   "Running standups, capturing blockers and filing Jira tickets",
-   "Asking set questions in interviews and tracking rubric coverage",
-   "Updating the CRM and sending follow-ups before the call ends",
-   "Remembering decisions from earlier meetings"
-  ],
-  "audience": {
-   "fit": [
-    "run many sales, customer or internal calls and want work done during them",
-    "want an assistant that can speak in the meeting, not only transcribe",
-    "use tools like HubSpot, Salesforce, Jira or Slack that Mina can update"
-   ],
-   "not_fit": [
-    "need published pricing before trying: only a free start is stated",
-    "meet with clients who object to an AI participant joining the call",
-    "need instant spoken answers: the co-founder said reasoning adds some delay"
-   ]
-  },
-  "pricing": {
-   "intro": "Mina's website says you can start free with no credit card. We found no published pricing page; the co-founder said on Product Hunt that the proactive, always-listening mode costs more than the reactive one.",
-   "url": "https://getmina.ai/",
-   "checked": "2026-10-14",
-   "plans": [],
-   "notes": ["Product Hunt users were offered extra free credits at launch."]
-  },
-  "alternatives": {
-   "intro": "Product Hunt lists Granola, MeetGeek and tl;dv among Mina's alternatives; these mainly record and summarise rather than speak during calls. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
-   "items": [
-    {"name": "Granola", "url": "https://www.granola.ai/", "what": "AI notepad for people in back-to-back meetings", "starts_at": "See its pricing page", "ph_rating": 4.75, "ph_reviews": 56, "ph_url": "https://www.producthunt.com/products/granola", "difference": "Enhances your own notes without a bot joining the call; Mina joins as a participant and can speak."},
-    {"name": "MeetGeek", "url": "https://meetgeek.ai/", "what": "Meeting recorder with automations", "starts_at": "See its pricing page", "ph_rating": 4.82, "ph_reviews": 28, "ph_url": "https://www.producthunt.com/products/meetgeek", "difference": "Automates work after meetings from recordings; Mina acts during the call."},
-    {"name": "tl;dv", "url": "https://tldv.io/", "what": "Meeting recorder and summariser", "starts_at": "See its pricing page", "ph_rating": 4.12, "ph_reviews": 34, "ph_url": "https://www.producthunt.com/products/tl-dv", "difference": "Focused on recordings and catch-up summaries rather than live participation."}
-   ],
-   "more": "Product Hunt also lists Timeless and Grain."
-  },
-  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/mina-meeting-assistant/reviews", "as_of": "2026-10-14"},
-  "opinions": {
-   "themes": {
-    "liked": ["Taking part in meetings instead of only transcribing"],
-    "asked": [
-     "Whether Mina speaks on its own or only when asked (reactive and proactive modes)",
-     "How it handles clients who refuse recording (you can tell it not to record or send a transcript)",
-     "How it copes with latency and messy context across tools (preload context before the meeting)",
-     "Whether it can run interviews with set questions and forbidden topics (yes, with a proactive assistant)"
+  "slug": "mina-meeting-assistant",
+  "ph_url": "https://www.producthunt.com/products/mina-meeting-assistant",
+  "existing_listing_slug": null,
+  "website": "https://getmina.ai/",
+  "excerpt": "Mina is an AI meeting assistant that joins Zoom, Google Meet and Teams calls as a participant, speaks when asked (or proactively), pulls context from 200+ tools and updates CRMs and tickets during the call. Free to start; full pricing not published. How it works and alternatives.",
+  "content": "<p>Mina is an AI meeting assistant that takes part in calls rather than only taking notes. It joins Zoom, Google Meet or Microsoft Teams as a participant, and can answer questions out loud, pull account details or the latest numbers from connected tools, and produce summaries, proposals, action items and CRM or ticket updates while the meeting is still going. It has more than 40 built-in skills, connects to over 200 tools including Slack, HubSpot, Salesforce, Jira, Linear and Notion, and lets you build assistants from templates for roles such as sales engineer, scrum master, recruiter or customer success manager.</p><p>Assistants can be reactive, speaking only when you say \"Hey Mina\" (or another name you choose), or proactive, listening all the time and acting on context, which the co-founder said costs more. He also said you can tell Mina not to record or send a transcript, and that memory from past meetings can be saved to your own Google Drive rather than Mina's servers. The website says Mina is SOC 2 Type II certified and uses 256-bit encryption.</p><p>Mina is made by [x]cube LABS, doing business as PurpleTalk, Inc.; Sridhar Muppidi and Ishika Muppidi were among its makers on Product Hunt. It launched on 1 June 2026 and finished #1 for the day with 410 upvotes and 133 comments.</p><p><em>We have not tested Mina ourselves. This page brings together Mina's website, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "AI meeting assistant",
+    "platform": "Web; joins Zoom, Google Meet and Microsoft Teams",
+    "starts_at": "Free to start; paid pricing not published",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI meeting assistant that speaks and takes actions during Zoom, Meet and Teams calls",
+    "maker": {
+      "name": "Sridhar Muppidi",
+      "url": "https://www.producthunt.com/@sridharmuppidi"
+    },
+    "team": [
+      {
+        "name": "Sridhar Muppidi",
+        "role": "Co-founder",
+        "url": "https://www.producthunt.com/@sridharmuppidi"
+      },
+      {
+        "name": "Ishika Muppidi",
+        "role": "Maker",
+        "url": "https://www.producthunt.com/@ishika_muppidi"
+      },
+      {
+        "name": "Ramesh Naidu Pediredla",
+        "role": "Growth",
+        "url": "https://www.producthunt.com/@rameshpediredla"
+      }
     ],
-    "criticised": ["A commenter doubted context retrieval works as well in real meetings as in demos"]
-   },
-   "quotes": [
-    {"text": "often, Propects, Clients, and strategic partners don't even want my Fathom recording the call. Not sure how they'd feel about Mina being there.", "author": "Anna Ludwinowski", "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5416915"},
-    {"text": "How do you keep Mina from interrupting people or talking at the wrong time, is there a push to talk or strict turn taking?", "author": "Thami Benjelloun", "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5414935"},
-    {"text": "what does the failure mode actually look like when the context retrieval gets it wrong", "author": "Ansari Adin", "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5415408"}
-   ]
-  },
-  "pros": [
-   "Speaks and acts during calls, not only afterwards",
-   "Reactive mode only responds when called by name",
-   "200+ integrations and 40+ skills",
-   "Can be told not to record a conversation"
-  ],
-  "cons": [
-   "Pricing beyond the free start is not published",
-   "Spoken answers can lag while a reasoning model works",
-   "An AI participant may put off some clients",
-   "Proactive mode costs more, per the co-founder"
-  ],
-  "community": {
-   "ph_url": "https://www.producthunt.com/products/mina-meeting-assistant",
-   "quotes": [
-    {"author": "Anna Ludwinowski", "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5416915", "text": "Asked about privacy pushback from clients who do not want calls recorded.", "reply": "Sridhar Muppidi said you can tell Mina not to record or send a transcript while it still does its job in the call."},
-    {"author": "Thami Benjelloun", "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5414935", "text": "Asked how Mina avoids interrupting.", "reply": "Sridhar Muppidi said the default assistant is reactive and only speaks when addressed; proactive ones can be tuned."}
-   ],
-   "x": {"none": "We found no posts about Mina on X to link yet.", "search_url": "https://x.com/search?q=getmina.ai&f=live", "profile_url": "https://twitter.com/heyminaai"}
-  },
-  "faq": [
-   {"q": "What is Mina?", "a": "An AI meeting assistant that joins Zoom, Google Meet or Teams calls as a participant, answers out loud, pulls context from your tools and updates systems during the call."},
-   {"q": "How much does Mina cost?", "a": "You can start free with no credit card. Paid pricing is not published on the website."},
-   {"q": "Will Mina interrupt my meetings?", "a": "Not in reactive mode, which only responds when you say its name. Proactive assistants listen continuously and can be tuned."},
-   {"q": "Can I stop Mina recording a call?", "a": "The co-founder said you can tell Mina not to record or not to send a transcript or summary."},
-   {"q": "What are the alternatives?", "a": "Product Hunt lists Granola, MeetGeek, Timeless, tl;dv and Grain."}
-  ],
-  "sources": [
-   {"label": "Mina official site", "url": "https://getmina.ai/"},
-   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/mina-meeting-assistant"},
-   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/mina-meeting-assistant/alternatives"}
-  ]
- }
+    "ph": {
+      "rank": 1,
+      "votes": 410,
+      "comments": 133,
+      "followers": 1383,
+      "launched": "2026-06-01",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/ba75f4a1-d72e-4f8e-8ea5-a4cf83867d86.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: Mina via Product Hunt",
+        "alt": "Mina graphic listing what it does in meetings, beside a laptop showing its calendar dashboard"
+      },
+      {
+        "url": "https://ph-files.imgix.net/d626578e-fd22-4d24-ab9e-49bfa28b3993.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: Mina via Product Hunt",
+        "alt": "Mina meeting assistant editor with skills such as meeting memory, web search, Google Calendar and smart emailer"
+      },
+      {
+        "url": "https://ph-files.imgix.net/36be11c8-83bd-4759-8654-2f0c6092e9af.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: Mina via Product Hunt",
+        "alt": "Mina graphic 'Over 200 integrations' with app icons including Google Meet, Teams, Slack, Zoom and Gmail"
+      },
+      {
+        "url": "https://ph-files.imgix.net/c0a826c3-056f-47c5-a8c2-a55f2f6ed2ad.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: Mina via Product Hunt",
+        "alt": "Mina screen for creating a meeting agent from scratch, with AI or from templates"
+      }
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Sridhar Muppidi says most meetings still end with forgotten decisions, scattered follow-ups and hours of manual work, because meeting tools act as passive note-takers that transcribe, summarise and stop there. The team set out to build an assistant that takes part instead.",
+        "He described Mina as configurable into different teammates, from a quiet assistant to a proactive moderator, scrum facilitator or customer-facing copilot, and said the biggest change the team saw internally was meetings becoming places where work gets done rather than documented."
+      ],
+      "attribution": "Sridhar Muppidi, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5404291"
+    },
+    "use_cases": [
+      "Answering product or account questions live on sales calls",
+      "Running standups, capturing blockers and filing Jira tickets",
+      "Asking set questions in interviews and tracking rubric coverage",
+      "Updating the CRM and sending follow-ups before the call ends",
+      "Remembering decisions from earlier meetings"
+    ],
+    "audience": {
+      "fit": [
+        "run many sales, customer or internal calls and want work done during them",
+        "want an assistant that can speak in the meeting, not only transcribe",
+        "use tools like HubSpot, Salesforce, Jira or Slack that Mina can update"
+      ],
+      "not_fit": [
+        "need published pricing before trying: only a free start is stated",
+        "meet with clients who object to an AI participant joining the call",
+        "need instant spoken answers: the co-founder said reasoning adds some delay"
+      ]
+    },
+    "pricing": {
+      "intro": "Mina's website says you can start free with no credit card. It has no pricing page (getmina.ai/pricing returns 'not found') and its terms do not list prices, as of 15 October 2026. The co-founder said on Product Hunt that the proactive, always-listening mode costs more than the reactive one.",
+      "url": "https://getmina.ai/",
+      "checked": "2026-10-15",
+      "plans": [],
+      "notes": [
+        "Product Hunt users were offered extra free credits at launch."
+      ]
+    },
+    "alternatives": {
+      "intro": "Product Hunt lists Granola, MeetGeek and tl;dv among Mina's alternatives; these mainly record and summarise rather than speak during calls. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+      "items": [
+        {
+          "name": "Granola",
+          "url": "https://www.granola.ai/",
+          "what": "AI notepad for people in back-to-back meetings",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.75,
+          "ph_reviews": 56,
+          "ph_url": "https://www.producthunt.com/products/granola",
+          "difference": "Enhances your own notes without a bot joining the call; Mina joins as a participant and can speak."
+        },
+        {
+          "name": "MeetGeek",
+          "url": "https://meetgeek.ai/",
+          "what": "Meeting recorder with automations",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.82,
+          "ph_reviews": 28,
+          "ph_url": "https://www.producthunt.com/products/meetgeek",
+          "difference": "Automates work after meetings from recordings; Mina acts during the call."
+        },
+        {
+          "name": "tl;dv",
+          "url": "https://tldv.io/",
+          "what": "Meeting recorder and summariser",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.12,
+          "ph_reviews": 34,
+          "ph_url": "https://www.producthunt.com/products/tl-dv",
+          "difference": "Focused on recordings and catch-up summaries rather than live participation."
+        }
+      ],
+      "more": "Product Hunt also lists Timeless and Grain."
+    },
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/mina-meeting-assistant/reviews",
+      "as_of": "2026-10-14"
+    },
+    "opinions": {
+      "themes": {
+        "liked": [
+          "Taking part in meetings instead of only transcribing"
+        ],
+        "asked": [
+          "Whether Mina speaks on its own or only when asked (reactive and proactive modes)",
+          "How it handles clients who refuse recording (you can tell it not to record or send a transcript)",
+          "How it copes with latency and messy context across tools (preload context before the meeting)",
+          "Whether it can run interviews with set questions and forbidden topics (yes, with a proactive assistant)"
+        ],
+        "criticised": [
+          "A commenter doubted context retrieval works as well in real meetings as in demos"
+        ]
+      },
+      "quotes": [
+        {
+          "text": "often, Propects, Clients, and strategic partners don't even want my Fathom recording the call. Not sure how they'd feel about Mina being there.",
+          "author": "Anna Ludwinowski",
+          "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5416915"
+        },
+        {
+          "text": "How do you keep Mina from interrupting people or talking at the wrong time, is there a push to talk or strict turn taking?",
+          "author": "Thami Benjelloun",
+          "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5414935"
+        },
+        {
+          "text": "what does the failure mode actually look like when the context retrieval gets it wrong",
+          "author": "Ansari Adin",
+          "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5415408"
+        }
+      ]
+    },
+    "pros": [
+      "Speaks and acts during calls, not only afterwards",
+      "Reactive mode only responds when called by name",
+      "200+ integrations and 40+ skills",
+      "Can be told not to record a conversation"
+    ],
+    "cons": [
+      "Pricing beyond the free start is not published",
+      "Spoken answers can lag while a reasoning model works",
+      "An AI participant may put off some clients",
+      "Proactive mode costs more, per the co-founder"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/mina-meeting-assistant",
+      "quotes": [
+        {
+          "author": "Anna Ludwinowski",
+          "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5416915",
+          "text": "Asked about privacy pushback from clients who do not want calls recorded.",
+          "reply": "Sridhar Muppidi said you can tell Mina not to record or send a transcript while it still does its job in the call."
+        },
+        {
+          "author": "Thami Benjelloun",
+          "url": "https://www.producthunt.com/products/mina-meeting-assistant?comment=5414935",
+          "text": "Asked how Mina avoids interrupting.",
+          "reply": "Sridhar Muppidi said the default assistant is reactive and only speaks when addressed; proactive ones can be tuned."
+        }
+      ],
+      "x": {
+        "none": "We found no posts about Mina on X to link yet.",
+        "search_url": "https://x.com/search?q=getmina.ai&f=live",
+        "profile_url": "https://twitter.com/heyminaai"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Mina?",
+        "a": "An AI meeting assistant that joins Zoom, Google Meet or Teams calls as a participant, answers out loud, pulls context from your tools and updates systems during the call."
+      },
+      {
+        "q": "How much does Mina cost?",
+        "a": "You can start free with no credit card. Paid pricing is not published on the website."
+      },
+      {
+        "q": "Will Mina interrupt my meetings?",
+        "a": "Not in reactive mode, which only responds when you say its name. Proactive assistants listen continuously and can be tuned."
+      },
+      {
+        "q": "Can I stop Mina recording a call?",
+        "a": "The co-founder said you can tell Mina not to record or not to send a transcript or summary."
+      },
+      {
+        "q": "What are the alternatives?",
+        "a": "Product Hunt lists Granola, MeetGeek, Timeless, tl;dv and Grain."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mina official site",
+        "url": "https://getmina.ai/"
+      },
+      {
+        "label": "Product Hunt page and launch discussion",
+        "url": "https://www.producthunt.com/products/mina-meeting-assistant"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/mina-meeting-assistant/alternatives"
+      },
+      {
+        "label": "Mina terms of service",
+        "url": "https://getmina.ai/terms-of-service"
+      },
+      {
+        "label": "Mina privacy policy",
+        "url": "https://getmina.ai/privacy-policy"
+      }
+    ]
+  }
 }
