@@ -52,10 +52,16 @@ $aria = function ($k) use ($errors) {
             ? 'We have your update. An editor checks every change before it reaches the page, usually within 3 days, and we will email you when it is done.'
             : 'We have your launch and sent a confirmation to your email. We check every launch before it goes live and will email you the link.'; ?>
         <a class="u" href="<?php echo esc_url(xft_page_url('directory', 'startups')); ?>">Browse startups →</a></div>
+    <?php if (function_exists('xf_share_bar_html')) : ?>
+        <div class="xf-moment" style="margin-top:20px"><p class="xf-moment__t">Know another founder? Share the free launch link</p>
+            <?php echo xf_share_bar_html(xf_share_launch_url(), 'Launching something? You can list your startup on 100xFounder for free:', 'launch-share', ['label' => '']); // phpcs:ignore -- escaped inside ?></div>
+    <?php endif; ?>
 <?php else : ?>
     <form method="post" action="<?php echo esc_url($claim ? xf_launch_page_url(['claim' => $claim->post_name]) : xf_launch_page_url()); ?>#launch-form" enctype="multipart/form-data" class="lf">
         <input type="hidden" name="lf_go" value="1">
         <input type="hidden" name="lf_token" value="<?php echo esc_attr(xf_launch_token()); ?>">
+        <?php $ref = sanitize_key(wp_unslash($_POST['lf_ref'] ?? $_GET['ref'] ?? '')); // phpcs:ignore WordPress.Security.NonceVerification -- attribution only
+        if ($ref) : ?><input type="hidden" name="lf_ref" value="<?php echo esc_attr(substr($ref, 0, 40)); ?>"><?php endif; ?>
         <?php if ($claim) : ?><input type="hidden" name="lf_claim" value="<?php echo (int) $claim->ID; ?>"><?php endif; ?>
 
         <div class="lf-side">

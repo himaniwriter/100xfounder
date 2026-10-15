@@ -42,7 +42,7 @@ function xf_cap_external_links($html, $keep) {
             return $m[0];
         }
         if (preg_match('~\brel=(["\'])[^"\']*\bsponsored\b~i', $m[1]) || stripos($m[2], '<img') !== false
-            || preg_match('~^https?://(?:www\.)?(?:linkedin\.com/sharing/|x\.com/intent/|twitter\.com/intent/|wa\.me/)~i', $href)) {
+            || preg_match('~^https?://(?:www\.)?(?:linkedin\.com/sharing/|x\.com/intent/|twitter\.com/intent/|wa\.me/|t\.me/share/)~i', $href)) {
             return $m[0];
         }
         if ($kept < $keep) {

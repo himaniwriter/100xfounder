@@ -19,6 +19,7 @@ while (have_posts()) :
         <div class="k in" style="margin-top:36px"><span class="ac">Apply guide</span> · Updated <?php echo esc_html(get_the_modified_date('j M Y')); ?> · <?php echo esc_html(xft_read_time($id)); ?></div>
         <h1 class="page-title in" style="animation-delay:.06s;max-width:900px"><?php the_title(); ?></h1>
         <?php if (has_excerpt()) : ?><p class="in" style="max-width:720px;margin-top:18px;font-size:19px;line-height:1.55;color:var(--t2);animation-delay:.1s"><?php echo esc_html(get_the_excerpt()); ?></p><?php endif; ?>
+        <?php if (function_exists('xf_share_bar_html')) echo '<div class="in" style="margin-top:20px;animation-delay:.12s">' . xf_share_bar_html(get_permalink(), get_the_title(), 'guide') . '</div>'; // phpcs:ignore -- escaped inside ?>
         <?php if ($facts) : ?>
             <div class="facts in" style="margin-top:36px;animation-delay:.16s">
                 <?php foreach ($facts as $label => $v) : ?><div><div class="k" style="font-size:10px"><?php echo esc_html($label); ?></div><div class="v"><?php echo esc_html($v); ?></div></div><?php endforeach; ?>
@@ -33,7 +34,7 @@ while (have_posts()) :
     <?php endif; ?>
     <div class="hl"></div>
     <section class="wrap" style="padding-top:48px;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
-        <article class="job-body entry" style="flex:999 1 560px;min-width:0">
+        <article class="job-body entry" data-quote-root style="flex:999 1 560px;min-width:0">
             <?php echo $content; // phpcs:ignore -- filtered post content ?>
             <?php if ($careers) : ?><p style="margin-top:32px"><a class="btn btn-w" href="<?php echo esc_url($careers); ?>" target="_blank" rel="noopener nofollow">Official careers page ↗</a></p><?php endif; ?>
             <p class="k" style="font-size:10.5px;margin-top:24px;line-height:1.7">Independent guide written from public sources listed above. We're not affiliated with <?php echo esc_html($company ? $company->name : 'this company'); ?>, and hiring processes change: always follow the instructions in the official job post. Spot something wrong? <a class="u" href="<?php echo esc_url(home_url('/corrections/')); ?>">Send a correction</a>.</p>

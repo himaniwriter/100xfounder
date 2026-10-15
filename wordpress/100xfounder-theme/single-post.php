@@ -7,7 +7,6 @@ while (have_posts()) :
     $cat = xft_category($post);
     $is_lead = is_sticky($post->ID);
     [$content, $toc] = xft_toc(apply_filters('the_content', get_the_content()));
-    $share = xft_share_links(get_permalink(), get_the_title());
     $credit = get_post_meta($post->ID, '_xf_image_credit', true) ?: wp_get_attachment_caption(get_post_thumbnail_id());
     $original = get_post_meta($post->ID, '_xf_original_url', true);
     $author_id = (int) $post->post_author;
@@ -25,6 +24,7 @@ while (have_posts()) :
                 <span class="avatar"><?php echo get_avatar($author_id, 72, '', '', ['force_display' => false]) ?: esc_html(xft_initials(xft_author_name($post))); // phpcs:ignore ?></span>
                 <span><a href="<?php echo esc_url(get_author_posts_url($author_id)); ?>"><?php echo esc_html(xft_author_name($post)); ?></a><span class="k" style="display:block;font-size:10.5px;margin-top:2px"><?php echo esc_html(get_the_date('j M Y') . ' · ' . xft_read_time($post)); ?><?php if (get_the_modified_time('U') > get_the_time('U') + DAY_IN_SECONDS) echo esc_html(' · Updated ' . get_the_modified_date('j M Y')); ?></span></span>
             </div>
+            <?php if (function_exists('xf_share_bar_html')) echo xf_share_bar_html(get_permalink(), get_the_title(), 'article'); // phpcs:ignore -- escaped inside ?>
         </header>
 
         <?php if (has_post_thumbnail()) : ?>
@@ -40,18 +40,9 @@ while (have_posts()) :
                     <div class="k" style="font-size:10.5px;margin-bottom:12px">In this story</div>
                     <nav class="toc" aria-label="In this story"><?php foreach ($toc as $t) : ?><a href="#<?php echo esc_attr($t['id']); ?>"><?php echo esc_html($t['text']); ?></a><?php endforeach; ?></nav>
                 <?php endif; ?>
-                <div class="k" style="font-size:10.5px;margin:32px 0 12px">Share</div>
-                <div class="share-row">
-                    <?php foreach ($share as $s) : ?><a class="share" href="<?php echo esc_url($s['href']); ?>" target="_blank" rel="noopener" aria-label="<?php echo esc_attr($s['label']); ?>"><?php echo xft_icon($s['icon'], 15); // phpcs:ignore ?></a><?php endforeach; ?>
-                    <button class="share" type="button" data-copy-link="<?php echo esc_url(get_permalink()); ?>" aria-label="Copy link"><?php echo xft_icon('<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>', 15); // phpcs:ignore ?></button>
-                </div>
             </aside>
 
-            <div class="body">
-                <div class="only-m" style="gap:8px;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--ln);align-items:center">
-                    <span class="k" style="font-size:10.5px;flex:1">Share</span>
-                    <?php foreach ($share as $s) : ?><a class="share" href="<?php echo esc_url($s['href']); ?>" target="_blank" rel="noopener" aria-label="<?php echo esc_attr($s['label']); ?>"><?php echo xft_icon($s['icon'], 15); // phpcs:ignore ?></a><?php endforeach; ?>
-                </div>
+            <div class="body" data-quote-root>
                 <?php echo $content; // phpcs:ignore — the_content output, already filtered ?>
                 <?php $hub = function_exists('xf_post_hub') ? xf_post_hub((int) get_post_meta($post->ID, '_xf_ai_source', true) ?: $post->ID) : '';
                 if ($hub) : ?><div class="k hub-link" style="margin-top:32px">Part of: <a class="u" href="<?php echo esc_url(xf_hub_url($hub)); ?>"><?php echo esc_html(xf_hubs()[$hub]['title']); ?></a></div><?php endif; ?>

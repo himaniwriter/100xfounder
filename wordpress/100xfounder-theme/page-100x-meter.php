@@ -12,6 +12,7 @@ get_header();
         <div class="k in"><span class="ac">100X Meter</span> · How it works</div>
         <h1 class="page-title in" style="animation-delay:.06s">What is the 100X Meter?</h1>
         <p class="muted in" style="font-size:18px;margin:16px 0 0;max-width:760px;animation-delay:.12s">A small gauge on every startup page that readers push with one tap a day. It shows which launches people here are excited about right now. It is a buzz meter, not a review.</p>
+        <?php if (function_exists('xf_share_bar_html')) echo '<div class="in" style="margin-top:20px;animation-delay:.16s">' . xf_share_bar_html(get_permalink(), get_the_title(), 'meter-explainer') . '</div>'; // phpcs:ignore -- escaped inside ?>
     </header>
     <div class="hl"></div>
     <div class="wrap" style="padding-top:40px">

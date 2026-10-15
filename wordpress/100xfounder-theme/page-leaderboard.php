@@ -36,6 +36,7 @@ get_header();
         <div class="k in"><span class="ac">100X Meter</span> · Reader taps, updated live</div>
         <h1 class="page-title in" style="animation-delay:.06s">Startup Leaderboard</h1>
         <p class="muted in" style="font-size:18px;margin:16px 0 0;max-width:760px;animation-delay:.12s">The startups 100xFounder readers are backing right now. One tap per reader per day, counted over the last 7 and 30 days. It shows buzz, not quality.</p>
+        <?php if (function_exists('xf_share_bar_html')) echo '<div class="in" style="margin-top:20px;animation-delay:.16s">' . xf_share_bar_html(get_permalink(), 'Startup Leaderboard: the startups 100xFounder readers are backing', 'leaderboard') . '</div>'; // phpcs:ignore -- escaped inside ?>
     </header>
     <div class="hl"></div>
     <div class="wrap xf-lb" style="padding-top:28px" data-lb data-endpoint="<?php echo esc_url(rest_url('xf/v1/meter')); ?>">

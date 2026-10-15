@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('XFT_VERSION', '2.7.3');
+define('XFT_VERSION', '2.8.0');
 
 require_once __DIR__ . '/inc-tabs.php';
 
@@ -264,16 +264,6 @@ function xft_toc($content) {
         return '<h2' . $attrs . '>' . $m[2] . '</h2>';
     }, $content);
     return [$content, $items];
-}
-
-function xft_share_links($url, $title) {
-    $u = rawurlencode($url);
-    $t = rawurlencode($title);
-    return [
-        ['label' => 'Share on LinkedIn', 'href' => 'https://www.linkedin.com/sharing/share-offsite/?url=' . $u, 'icon' => '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/>'],
-        ['label' => 'Share on X', 'href' => 'https://x.com/intent/post?url=' . $u . '&text=' . $t, 'icon' => '<path d="M4 4l16 16M20 4 4 20"/>'],
-        ['label' => 'Share on WhatsApp', 'href' => 'https://wa.me/?text=' . $t . '%20' . $u, 'icon' => '<path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/>'],
-    ];
 }
 
 function xft_icon($path, $size = 16) {

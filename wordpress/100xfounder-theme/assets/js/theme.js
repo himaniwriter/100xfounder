@@ -65,6 +65,65 @@
     if (window.innerWidth > 860) root.classList.remove('menu-open');
   });
 
+  // Share bars (plugin includes/share.php): intent links rebuilt from the bar's data-* at click time,
+  // the Web Share API where it exists, UTM tags on every link, and a GA4 `share` event only through
+  // the consent-gated gtag. No third-party scripts, no counts.
+  var E = encodeURIComponent;
+  var utm = function (u, src, ctx) {
+    var h = u.indexOf('#'), hash = h < 0 ? '' : u.slice(h);
+    u = h < 0 ? u : u.slice(0, h);
+    return u + (u.indexOf('?') < 0 ? '?' : '&') + 'utm_source=' + src + '&utm_medium=share&utm_campaign=' + ctx + hash;
+  };
+  var intent = {
+    whatsapp: function (u, t) { return 'https://wa.me/?text=' + E(t + ' ' + u); },
+    x: function (u, t) { return 'https://x.com/intent/post?text=' + E(t) + '&url=' + E(u); },
+    linkedin: function (u) { return 'https://www.linkedin.com/sharing/share-offsite/?url=' + E(u); },
+    telegram: function (u, t) { return 'https://t.me/share/url?url=' + E(u) + '&text=' + E(t); }
+  };
+  // Prefill a bar from script (tap moment, review, quote, quiz): Copy then copies the message too.
+  var shareSet = window.xfShareSet = function (bar, url, text) {
+    bar.dataset.url = url; bar.dataset.text = text;
+    var c = bar.querySelector('[data-net="copy"]');
+    if (c) { c.setAttribute('data-copy-link', text + ' ' + utm(url, 'copy', bar.dataset.ctx)); c.classList.remove('done'); }
+  };
+  if (navigator.share) document.querySelectorAll('[data-net="native"]').forEach(function (b) { b.hidden = false; });
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-net]'), bar = b && b.closest('[data-share]');
+    if (!bar) return;
+    var net = b.getAttribute('data-net'), ctx = bar.dataset.ctx, u = utm(bar.dataset.url, net, ctx), t = bar.dataset.text;
+    if (intent[net]) b.href = intent[net](u, t);
+    if (net === 'native') navigator.share({ text: t, url: u }).catch(function () {});
+    if (typeof window.gtag === 'function') window.gtag('event', 'share', { method: net, content_type: ctx, item_id: bar.dataset.url.split('#')[0].replace(location.origin, '') });
+  });
+  // "Add your take" opens the review form it points at.
+  var openReview = function () { var d = document.getElementById('write-review'); if (d) d.open = true; };
+  document.addEventListener('click', function (e) { if (e.target.closest('[data-open-review]')) openReview(); });
+  if (location.hash === '#write-review') openReview();
+
+  // Quote sharing: select 8–40 words of an article (not in forms or code) to get a "Share quote" button.
+  var qs = document.querySelector('[data-qs]'), qroot = document.querySelector('[data-quote-root]');
+  if (qs && qroot) {
+    var qpop = qs.querySelector('[data-qs-pop]'), qbar = qpop.querySelector('[data-share]'), qbase = qbar.dataset.url, quote = '', qt;
+    var tf = function (x) { return E(x).replace(/-/g, '%2D').replace(/,/g, '%2C'); };
+    var frag = function (s) { var w = s.split(' '); return '#:~:text=' + (w.length > 10 ? tf(w.slice(0, 4).join(' ')) + ',' + tf(w.slice(-4).join(' ')) : tf(s)); };
+    var qcheck = function () {
+      var sel = getSelection(), s = sel.toString().replace(/\s+/g, ' ').trim(), n = s ? s.split(' ').length : 0, a = sel.rangeCount && sel.getRangeAt(0).commonAncestorContainer;
+      a = a && (a.nodeType === 1 ? a : a.parentNode);
+      if (n < 8 || n > 40 || !a || !qroot.contains(a) || a.closest('form,input,textarea,select,pre,code,[data-share]')) { if (qpop.hidden) qs.hidden = true; return; }
+      quote = s; qpop.hidden = true; qs.hidden = false;
+      var r = sel.getRangeAt(0).getBoundingClientRect(), W = document.documentElement.clientWidth;
+      qs.style.top = (r.bottom + window.scrollY + 12) + 'px';
+      qs.style.left = Math.max(16, Math.min(r.left + window.scrollX, W - 16 - qs.offsetWidth)) + 'px';
+    };
+    document.addEventListener('selectionchange', function () { clearTimeout(qt); qt = setTimeout(qcheck, 300); });
+    document.addEventListener('pointerdown', function (e) { if (!qs.contains(e.target)) { qs.hidden = true; qpop.hidden = true; } });
+    qs.querySelector('[data-qs-btn]').addEventListener('click', function () {
+      shareSet(qbar, qbase + frag(quote), '“' + quote + '” — via 100xFounder');
+      qpop.hidden = false;
+      qs.style.left = Math.max(16, Math.min(parseFloat(qs.style.left), document.documentElement.clientWidth - 16 - qs.offsetWidth)) + 'px';
+    });
+  }
+
   // Saved jobs live in this browser only (no account needed).
   var savedKey = 'xf_saved_jobs';
   var readSaved = function () { try { return JSON.parse(localStorage.getItem(savedKey) || '[]'); } catch (err) { return []; } };
@@ -280,10 +339,18 @@
           remember(id, m.getAttribute('data-slug'), m.getAttribute('data-name'), d.level);
           var bd = m.querySelector('[data-meter-badge]'); if (bd) bd.src = bd.src.replace(/([?&]v=)\d*/, '$1' + Date.now());
           counted(); showMine(); if (msg) msg.textContent = lvlMsg(d.level);
+          var mo = m.querySelector('[data-moment]'), mb = mo && mo.querySelector('[data-share]');
+          if (mb && !lsGet('xf_moment_x_' + id)) { shareSet(mb, mb.dataset.url, 'I just backed ' + m.getAttribute('data-name') + ' at ' + d.level + 'X on 100xFounder ⚡'); mo.hidden = false; }
         } else if (d && d.code === 'already') { lsSet('xf_meter_' + id, meterDay); counted(); if (msg) msg.textContent = d.message; }
         else { btn.disabled = false; if (msg) msg.textContent = (d && d.message) || 'Could not save that. Please try again.'; }
       }).catch(function () { btn.disabled = false; if (msg) msg.textContent = 'Could not save that. Please try again.'; });
     });
+  });
+
+  document.addEventListener('click', function (e) {
+    var x = e.target.closest('[data-moment-x]'), m = x && x.closest('[data-meter]');
+    if (!m) return;
+    x.parentNode.hidden = true; lsSet('xf_moment_x_' + m.getAttribute('data-meter'), '1');
   });
 
   // Leaderboard: tap straight from a row, and "Load more".

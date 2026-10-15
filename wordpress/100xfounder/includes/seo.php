@@ -224,8 +224,8 @@ add_action('wp_head', function () {
         printf('<meta property="og:image" content="%s">' . "\n", esc_url($image));
         if (strpos($image, XF_URL . 'assets/brand/') === 0) {
             echo '<meta property="og:image:width" content="1200">' . "\n" . '<meta property="og:image:height" content="630">' . "\n";
-            printf('<meta property="og:image:alt" content="%s">' . "\n", esc_attr($title));
         }
+        printf('<meta property="og:image:alt" content="%s">' . "\n", esc_attr($title));
     }
     printf('<meta name="twitter:card" content="%s">' . "\n", $image ? 'summary_large_image' : 'summary');
     if (is_singular('post')) {

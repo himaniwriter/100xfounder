@@ -521,7 +521,7 @@ function xf_startup_reviews_html($post_id) {
     <?php if (is_user_logged_in() && current_user_can('edit_posts')) : ?>
         <p class="sp-note">You are signed in as site staff, so the review form is hidden: the site does not review its own listings.</p>
     <?php else : ?>
-        <details class="xf-rv-write">
+        <details class="xf-rv-write" id="write-review">
             <summary class="btn">Write a review</summary>
             <form class="xf-rv-form" data-endpoint="<?php echo esc_url(rest_url('xf/v1/review')); ?>" novalidate>
                 <input type="hidden" name="post" value="<?php echo (int) $post_id; ?>">
@@ -544,6 +544,9 @@ function xf_startup_reviews_html($post_id) {
                 <button type="submit" class="btn btn-w">Submit review</button>
                 <p class="xf-rv-msg" role="status" aria-live="polite"></p>
             </form>
+            <?php if (function_exists('xf_share_bar_html')) : ?>
+                <div class="xf-moment" data-rv-share hidden><p class="xf-moment__t">Thanks — share your take?</p><?php echo xf_share_bar_html(get_permalink($post_id), 'My take on ' . $name, 'review', ['label' => '', 'compact' => true]); // phpcs:ignore -- escaped inside ?></div>
+            <?php endif; ?>
         </details>
         <script>
         (function(){var f=document.currentScript.previousElementSibling.querySelector('form');if(!f||!window.fetch)return;
@@ -552,7 +555,7 @@ function xf_startup_reviews_html($post_id) {
          var d={};new FormData(f).forEach(function(v,k){d[k]=v});btn.disabled=true;msg.textContent='Sending…';
          fetch(f.dataset.endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})
           .then(function(r){return r.json()}).then(function(j){
-            if(j&&j.success){f.innerHTML='';f.appendChild(msg);msg.textContent=j.message}else{btn.disabled=false;msg.textContent=(j&&j.message)||'Could not send that. Please try again.'}
+            if(j&&j.success){f.innerHTML='';f.appendChild(msg);msg.textContent=j.message;var sh=f.parentNode.querySelector('[data-rv-share]'),b=(d.body||'').trim(),sb=sh&&sh.querySelector('[data-share]');if(sb&&window.xfShareSet){xfShareSet(sb,sb.dataset.url,sb.dataset.text+': '+(b?(b.length>120?b.slice(0,119)+'…':b):d.stars+'/5'));sh.hidden=false}}else{btn.disabled=false;msg.textContent=(j&&j.message)||'Could not send that. Please try again.'}
           }).catch(function(){btn.disabled=false;msg.textContent='Could not send that. Please try again.'});
         });})();
         </script>

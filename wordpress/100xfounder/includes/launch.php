@@ -341,6 +341,7 @@ function xf_launch_handle(array $in, array $files) {
         return ['errors' => ['form' => 'Please wait a few seconds and send the form again (or reload the page if it has been open for days).'], 'data' => xf_launch_validate($in, [], $claim)[0], 'claim' => $claim];
     }
     [$d, $errors, $uploads] = xf_launch_validate($in, $files, $claim);
+    $d['ref'] = substr(sanitize_key((string) ($in['lf_ref'] ?? '')), 0, 40); // which share link brought this founder
     if ($errors) {
         return ['errors' => $errors, 'data' => $d, 'claim' => $claim];
     }
@@ -390,7 +391,7 @@ function xf_launch_create(array $d, array $uploads, $claim) {
             '_xf_startup_id' => $claim ? $claim->ID : $startup_id,
             '_xf_claim_of' => $claim ? $claim->ID : 0,
             '_xf_launch_state' => 'pending',
-        ],
+        ] + (!empty($d['ref']) ? ['_xf_ref' => $d['ref']] : []),
     ], true);
     if (is_wp_error($sub_id)) {
         if ($startup_id) wp_delete_post($startup_id, true); // our own empty, just-created row
@@ -795,6 +796,9 @@ function xf_launch_admin_page() {
                 : 'Auto-approve is off: every launch waits for you.'; ?>
             <a href="<?php echo esc_url(admin_url('admin.php?page=xf-settings')); ?>">Settings</a></p>
         <?php if ($msg) : ?><div class="notice notice-info"><p><?php echo esc_html($msg); ?></p></div><?php endif; ?>
+        <?php $refs = function_exists('xf_share_launch_ref_counts') ? xf_share_launch_ref_counts() : []; ?>
+        <p><strong>Launches from share links:</strong>
+            <?php echo $refs ? esc_html(implode(' · ', array_map(function ($r) { return $r->ref . ': ' . (int) $r->n; }, $refs))) : 'none yet. The success page asks founders to share ' . esc_html(function_exists('xf_share_launch_url') ? xf_share_launch_url() : xf_launch_page_url()) . '.'; ?></p>
         <ul class="subsubsub">
             <li><a href="<?php echo esc_url(admin_url('admin.php?page=xf-launches')); ?>" <?php echo $view === 'open' ? 'class="current"' : ''; ?>>To review</a> |</li>
             <li><a href="<?php echo esc_url(admin_url('admin.php?page=xf-launches&view=done')); ?>" <?php echo $view === 'done' ? 'class="current"' : ''; ?>>Decided</a></li>
@@ -811,6 +815,7 @@ function xf_launch_admin_page() {
                 $flags = array_filter((array) get_post_meta($sid, '_xf_launch_flags', true));
                 $checks = [];
                 if (!empty($d['claim_of'])) $checks[] = 'Claim / update of the live listing';
+                if ($ref = get_post_meta($sid, '_xf_ref', true)) $checks[] = 'Came from share link: ' . $ref;
                 $checks[] = $d['email_match'] ? 'Email domain matches the website' : 'Email domain does NOT match the website';
                 if (xf_launch_is_disposable($d['founder_email'])) $checks[] = 'Disposable email domain';
                 if ($hits = xf_launch_blocked_terms($d['name'] . ' ' . $d['tagline'] . ' ' . $d['description'] . ' ' . $d['website'])) $checks[] = 'Blocked terms: ' . implode(', ', $hits);

@@ -243,6 +243,7 @@ function xf_meter_html($id) {
             <p class="xf-meter__note" data-meter-msg>Give it a push. One tap per reader each day; the meter tracks buzz here, not quality.</p>
             <button type="button" class="xf-meter__btn" data-meter-tap<?php echo $team ? ' disabled title="Taps from the team are not counted"' : ''; ?>><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span>100X it</span></button>
             <input class="xf-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+            <?php echo function_exists('xf_share_tap_moment') ? xf_share_tap_moment($id) : ''; // phpcs:ignore -- escaped inside ?>
         </div>
         <footer class="xf-meter__foot">
             <?php if ($stars) : ?>
@@ -255,6 +256,11 @@ function xf_meter_html($id) {
             <a class="xf-meter__link" href="<?php echo esc_url(home_url('/100x-meter/')); ?>">What's this?</a>
             <a class="xf-meter__link" href="<?php echo esc_url(home_url('/tools/startup-100x-score/')); ?>">Founder? Score your startup →</a>
             <a class="xf-meter__mine" href="<?php echo esc_url(home_url('/my-100x/')); ?>" data-meter-mine hidden></a>
+            <?php if (function_exists('xf_share_bar_html')) : ?>
+                <span class="xf-meter__share"><?php echo xf_share_bar_html($url, $name . ' on the 100xFounder 100X Meter', 'meter', ['compact' => true]); // phpcs:ignore -- escaped inside ?></span>
+                <?php echo xf_share_take_cta($id); // phpcs:ignore -- escaped inside ?>
+                <a class="xf-meter__link" href="<?php echo esc_url(xf_share_kit_url($id)); ?>">Founder? Get your share kit</a>
+            <?php endif; ?>
         </footer>
     </section>
     <?php

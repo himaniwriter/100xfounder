@@ -207,9 +207,8 @@
       if (!r.done) return;
       $('[data-q-tips]', mq).innerHTML = r.tips.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
       var url = location.origin + location.pathname, text = 'My startup scored ' + r.score + 'X on the 100X score. How 100X is yours?';
-      $('[data-q-share="wa"]', mq).href = 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url);
-      $('[data-q-share="x"]', mq).href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url);
-      $('[data-q-share="li"]', mq).href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
+      var bar = $('[data-share]', mq);
+      if (bar && window.xfShareSet) window.xfShareSet(bar, url, text);
     };
     box.addEventListener('click', function (e) {
       var b = e.target.closest('[data-q]');

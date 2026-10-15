@@ -88,6 +88,7 @@ while (have_posts()) :
                 <a class="btn" style="height:48px" href="<?php echo esc_url($ph); ?>" target="_blank" rel="noopener">See it on Product Hunt ↗</a>
             <?php endif; ?>
         </div>
+        <?php if (function_exists('xf_share_bar_html')) echo '<div class="in" style="margin-top:16px;animation-delay:.14s">' . xf_share_bar_html(get_permalink($id), $name . ' on 100xFounder', 'startup') . '</div>'; // phpcs:ignore -- escaped inside ?>
     </section>
 
     <?php if ($video || $gallery) : ?>
@@ -134,6 +135,7 @@ while (have_posts()) :
             <?php if (!empty($phs['votes'])) : ?><div><div class="k" style="font-size:10px">Launch day</div><div class="v"><?php echo esc_html(trim((!empty($phs['rank']) ? '#' . $phs['rank'] . ' · ' : '') . number_format_i18n((int) $phs['votes']) . ' upvotes')); ?></div></div><?php endif; ?>
         </div>
         <?php echo function_exists('xf_meter_html') ? xf_meter_html($id) : ''; // phpcs:ignore -- escaped inside ?>
+        <?php if (function_exists('xf_share_kit_requested') && xf_share_kit_requested()) echo xf_share_kit_html($id); // phpcs:ignore -- escaped inside ?>
         <?php if (count($jump) > 1) : ?>
             <nav class="sp-jump k" aria-label="On this page">
                 <?php foreach ($jump as $anchor => $label) : ?><a href="#<?php echo esc_attr($anchor); ?>"><?php echo esc_html($label); ?></a><?php endforeach; ?>

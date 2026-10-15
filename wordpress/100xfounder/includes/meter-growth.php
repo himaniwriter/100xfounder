@@ -19,6 +19,11 @@ if (!defined('ABSPATH')) {
 
 const XF_METER_MILESTONES = [10, 25, 50, 100];
 
+// Share bar, share kit and launch referral loop (kept out of the main plugin file, which other work is changing).
+if (is_readable(__DIR__ . '/share.php')) {
+    require_once __DIR__ . '/share.php';
+}
+
 /** Stage name for a level; meter.php's own wins if it ever defines one. */
 function xf_meter_growth_stage($level) {
     if (function_exists('xf_meter_stage')) {
@@ -110,7 +115,7 @@ function xf_meter_milestone_text($post_id, $milestone, $first_name) {
             'Hi ' . ($first_name !== '' ? $first_name : 'there') . ',', '',
             "{$name} just hit {$milestone}X on the 100xFounder 100X Meter. Readers are backing you.", '',
             'The meter counts reader taps on your listing over the last 30 days (one per reader per day). It is not a rating or a review, just a sign that people are paying attention.', '',
-            'Your live listing: ' . get_permalink($post_id), '',
+            'Your listing and share kit: ' . (function_exists('xf_share_kit_url') ? xf_share_kit_url($post_id) : get_permalink($post_id)), '',
             'Share your 100X card (1080x1350, made for Instagram and LinkedIn): ' . xf_meter_share_url($post_id), '',
             'Want to show the meter on your site? Paste this badge code:',
             xf_meter_badge_code($post_id), '',

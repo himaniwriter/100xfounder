@@ -18,9 +18,7 @@ $img = function ($file) { return function_exists('xf_brand_asset') ? xf_brand_as
             <ol class="xf-quiz__tips" data-q-tips></ol>
             <div class="xf-quiz__share">
                 <button type="button" class="btn btn-w btn-sm" data-q-png>Download score card (PNG)</button>
-                <a class="btn btn-sm" data-q-share="wa" target="_blank" rel="noopener">WhatsApp</a>
-                <a class="btn btn-sm" data-q-share="x" target="_blank" rel="noopener">X</a>
-                <a class="btn btn-sm" data-q-share="li" target="_blank" rel="noopener">LinkedIn</a>
+                <?php echo function_exists('xf_share_bar_html') ? xf_share_bar_html(home_url('/tools/startup-100x-score/'), 'How 100X is your startup? Take the free 100X score on 100xFounder.', 'quiz', ['compact' => true]) : ''; // phpcs:ignore -- escaped inside ?>
             </div>
             <details class="xf-quiz__mail">
                 <summary class="k">Email me the full report</summary>
