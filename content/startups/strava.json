@@ -1,0 +1,163 @@
+{
+ "slug": "strava",
+ "website": "https://www.strava.com/",
+ "excerpt": "Strava is the running, cycling and hiking app with a social feed. Subscription prices in India, its 2025 funding, Runna deal, IPO filing and alternatives.",
+ "content": "<p>Strava is a fitness app for recording runs, rides, hikes, swims and other workouts with GPS, then sharing them with friends in a social feed. Wikipedia says it was founded in 2009 by Mark Gainey and Michael Horvath and is based in San Francisco; Michael Martin is its chief executive. TechCrunch reported in October 2025 that Strava had about 50 million monthly active users according to Sensor Tower, and the company said in 2025 that it had more than 150 million registered users.</p><p>Recording activities, joining clubs and using safety features are free. The paid subscription adds route recommendations and offline maps, route drawing, deeper workout analysis and training history, a Fitness Score, custom goals, segment leaderboards and challenges. Strava also earns money from sponsored challenges and brand partnerships.</p><p>In April 2025 Strava bought Runna, a London running-plan app, and in May 2025 it bought The Breakaway, a cycling training app. The same month it announced new funding led by Sequoia Capital, with TCV, Jackson Square Ventures and Go4it Capital, that valued it at $2.2 billion including debt; the amount was not disclosed. In early 2026 Strava said it had confidentially submitted a draft registration statement to the US SEC for a possible IPO. As far as we could find, no offering has been priced and the company remains private.</p><p>Strava's subscription page, viewed from India on 15 October 2026, lists the Individual plan at Rs 2,499 a year (about Rs 208 a month), a Family plan at Rs 6,499 a year for up to four people, a Student plan at half price (Rs 1,249.50 a year) and a Strava plus Runna bundle at Rs 4,999.99 a year. Individual and Student plans come with a 30-day free trial. Prices differ by country.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Fitness tracking app",
+  "platform": "Android, iOS, web, Apple Watch and Garmin devices",
+  "starts_at": "Free; subscription Rs 2,499 a year in India",
+  "schema_category": "HealthApplication",
+  "summary_short": "Social fitness app for recording runs, rides and hikes, with a paid subscription for training tools",
+  "maker": {
+   "name": "Strava, Inc.",
+   "url": "https://www.strava.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Strava_Logo.svg/960px-Strava_Logo.svg.png",
+    "alt": "Strava wordmark in bold orange capital letters",
+    "credit": "Image: Strava, public domain, via Wikimedia Commons (File:Strava Logo.svg)",
+    "w": 960,
+    "h": 203
+   },
+   {
+    "url": "https://web-assets.strava.com/assets/landing-pages/_next/static/media/Device-en-US@1x.afd7937e.webp",
+    "alt": "Strava on a phone showing a map and a 'Choose a Sport' menu (Ride, Run, Hike, Ski), next to an Apple Watch recording a run with time, pace and heart rate",
+    "credit": "Image: Strava (strava.com)",
+    "w": 516,
+    "h": 476
+   }
+  ],
+  "use_cases": [
+   "Recording runs, rides and hikes with GPS",
+   "Following friends' workouts and joining clubs",
+   "Planning routes and saving offline maps",
+   "Competing on segment leaderboards",
+   "Following a structured training plan with the Runna bundle"
+  ],
+  "audience": {
+   "fit": [
+    "run, cycle or hike regularly and want to log it",
+    "like the social side of training with friends and clubs",
+    "use a GPS watch or bike computer that syncs with Strava"
+   ],
+   "not_fit": [
+    "want detailed coaching without paying: most training tools are behind the subscription",
+    "are privacy-sensitive and do not want to share routes (check privacy zones and settings)"
+   ]
+  },
+  "pricing": {
+   "intro": "Strava is free to use for recording and sharing. Prices below are from Strava's subscription page as shown in India on 15 October 2026; other countries see local prices.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "Rs 0",
+     "detail": "Record activities, community and safety features"
+    },
+    {
+     "name": "Individual",
+     "price": "Rs 2,499 a year",
+     "detail": "About Rs 208 a month; 30-day free trial"
+    },
+    {
+     "name": "Family",
+     "price": "Rs 6,499 a year",
+     "detail": "Up to four members; annual only"
+    },
+    {
+     "name": "Student",
+     "price": "Rs 1,249.50 a year",
+     "detail": "50% off for verified students; 30-day free trial"
+    },
+    {
+     "name": "Strava + Runna",
+     "price": "Rs 4,999.99 a year",
+     "detail": "Bundle with the Runna training-plan app; annual only"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.strava.com/subscribe",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Large community and clubs",
+   "Works with most GPS watches and bike computers",
+   "Useful free tier"
+  ],
+  "cons": [
+   "Many analysis and route tools need a subscription",
+   "Public-by-default sharing needs care for privacy"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Garmin Connect",
+     "url": "https://connect.garmin.com/",
+     "what": "Free app for Garmin device owners",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Free with a Garmin device; deep data but a smaller social side."
+    },
+    {
+     "name": "Nike Run Club",
+     "url": "https://www.nike.com/nrc-app",
+     "what": "Free running app with guided runs",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Free and running-only."
+    },
+    {
+     "name": "Komoot",
+     "url": "https://www.komoot.com/",
+     "what": "Route planning and navigation for hiking and cycling",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Stronger on route planning and turn-by-turn navigation."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much is Strava subscription in India?",
+    "a": "Strava's page shows Rs 2,499 a year for an individual, Rs 6,499 a year for a family of up to four and Rs 1,249.50 a year for verified students (checked 15 October 2026)."
+   },
+   {
+    "q": "Is Strava free?",
+    "a": "Yes for recording activities, the social feed and safety features. Route tools, advanced analysis and leaderboards need the subscription."
+   },
+   {
+    "q": "Is Strava a public company?",
+    "a": "Not yet. It confidentially filed for a US IPO in early 2026, but we found no priced offering."
+   },
+   {
+    "q": "Who owns Runna?",
+    "a": "Strava bought Runna in April 2025 and sells a Strava plus Runna bundle."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Strava subscription page",
+    "url": "https://www.strava.com/subscribe"
+   },
+   {
+    "label": "TechCrunch: Strava eyes IPO (12 Oct 2025)",
+    "url": "https://techcrunch.com/2025/10/12/strava-eyes-ipo-as-gen-z-trades-dating-apps-for-running-clubs/"
+   },
+   {
+    "label": "Escape Collective: Strava hits $2.2B valuation, buys The Breakaway",
+    "url": "https://escapecollective.com/strava-hits-2-2b-valuation/"
+   },
+   {
+    "label": "BikeRadar: Strava moves one step closer to going public, Reuters reports",
+    "url": "https://www.bikeradar.com/news/strava-moves-forward-with-its-ipo-reuters-reports"
+   },
+   {
+    "label": "Wikipedia: Strava",
+    "url": "https://en.wikipedia.org/wiki/Strava"
+   }
+  ]
+ }
+}

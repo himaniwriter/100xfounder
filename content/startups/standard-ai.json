@@ -1,0 +1,138 @@
+{
+ "slug": "standard-ai",
+ "website": "https://standard.ai/",
+ "excerpt": "Standard AI (formerly Standard Cognition) began with cashierless checkout and now sells VISION, camera-based shopper analytics for physical retail.",
+ "content": "<p>Standard AI is a computer vision company for physical retail. It started out as Standard Cognition, building autonomous checkout: ceiling-mounted cameras tracked which products a shopper picked up so they could walk out without queuing, without using facial recognition. In February 2021 it raised a $150 million Series C led by SoftBank Vision Fund 2, with CRV, EQT Ventures, TI Platform Management and SK Networks, which Retail Dive reported valued it at $1 billion. At the time it said it planned to fit out more than 50,000 checkout-free stores over five years.</p><p>The company has since moved from checkout to analytics. Its current product, VISION, uses a store's existing security cameras to measure what shoppers see and do. Standard AI builds a digital twin of the store, runs its models on edge hardware in the store so video stays local, and sends only anonymised data to the cloud. Retailers use it to measure in-store media and promotions ('verified impressions'), see how shoppers and staff move through the store, and judge which areas and fixtures work. At NRF 2025 the company presented VISION as a way to give retailers real-time insight into promotion performance.</p><p>Standard AI does not publish prices; it sells to retailers and consumer brands after a demo and a site assessment. We could not find independent reporting on its revenue or any funding after 2021.</p><p>It is relevant to grocery, convenience and specialty retailers that want store analytics comparable to what e-commerce sites get from web analytics, and to brands that pay for in-store media and want proof it works.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Retail computer vision analytics",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "VISION turns existing store cameras into privacy-safe shopper and media analytics",
+  "maker": {
+   "name": "Standard AI",
+   "url": "https://standard.ai/"
+  },
+  "gallery": [
+   {
+    "url": "https://standard.ai/wp-content/uploads/2026/01/cropped-SAI-Logo-26-On_White@2x-1-180x180.png",
+    "alt": "Standard AI icon: a bold black letter S with a small pink four-pointed star",
+    "credit": "Image: Standard AI (standard.ai)",
+    "w": 180,
+    "h": 180
+   },
+   {
+    "url": "https://standard.ai/wp-content/uploads/2026/01/newhome2.jpg",
+    "alt": "A digital signage screen in a supermarket aisle showing a drinks promotion, with shoppers blurred in the background",
+    "credit": "Image: Standard AI (standard.ai)",
+    "w": 803,
+    "h": 559
+   }
+  ],
+  "use_cases": [
+   "Measuring whether in-store ads and promotions are seen",
+   "Analysing shopper paths and dwell time",
+   "Optimising store layouts and staffing",
+   "Proving retail media impact to brands"
+  ],
+  "audience": {
+   "fit": [
+    "run physical stores that already have security cameras",
+    "sell or buy in-store retail media",
+    "want store analytics without facial recognition"
+   ],
+   "not_fit": [
+    "are a small single shop on a tight budget",
+    "need a checkout-free store system today (the company has moved to analytics)"
+   ]
+  },
+  "pricing": {
+   "intro": "Standard AI does not publish prices. It asks retailers to book a demo; deployment starts with an assessment of existing camera coverage.",
+   "plans": [
+    {
+     "name": "VISION",
+     "price": "Quote on request",
+     "detail": "Uses existing cameras with edge processing"
+    }
+   ],
+   "notes": [],
+   "url": "https://standard.ai/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Uses existing cameras rather than new hardware",
+   "Video processed in-store; no facial recognition",
+   "Measures retail media impact directly"
+  ],
+  "cons": [
+   "No public pricing",
+   "Few independent public results since its pivot"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "RetailNext",
+     "url": "https://retailnext.net/",
+     "what": "In-store analytics and footfall counting",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Long-established store analytics vendor with its own sensors."
+    },
+    {
+     "name": "Trax",
+     "url": "https://traxretail.com/",
+     "what": "Computer vision for shelf monitoring",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Focuses on shelf conditions and product availability."
+    },
+    {
+     "name": "Zippin",
+     "url": "https://www.getzippin.com/",
+     "what": "Checkout-free store technology",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Still sells cashierless checkout, Standard's original business."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Standard AI the same as Standard Cognition?",
+    "a": "Yes. Standard Cognition is the company's former name."
+   },
+   {
+    "q": "Does Standard AI still do cashierless checkout?",
+    "a": "Its current site focuses on VISION store analytics rather than autonomous checkout."
+   },
+   {
+    "q": "How much funding did Standard raise?",
+    "a": "Its largest reported round was a $150 million Series C in February 2021 led by SoftBank Vision Fund 2."
+   },
+   {
+    "q": "Does it use facial recognition?",
+    "a": "No. Reporting on its system and the company's own site describe anonymised, privacy-safe tracking."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Standard AI official site",
+    "url": "https://standard.ai/"
+   },
+   {
+    "label": "Retail Dive: Standard Cognition hits $1B valuation with $150M investment",
+    "url": "https://www.retaildive.com/news/standard-cognition-hits-1b-valuation-with-150m-investment/595311"
+   },
+   {
+    "label": "Retail TouchPoints: Standard Cognition raises $150 million",
+    "url": "https://retailtouchpoints.com/features/news-briefs/standard-cognition-raises-150-million-plans-to-outfit-50000-checkout-free-stores-over-five-years"
+   },
+   {
+    "label": "Covington: advises Standard Cognition on $150M Series C",
+    "url": "https://cov.com/en/news-and-insights/news/2021/02/covington-advises-standard-cognition-on-150m-series-c-funding"
+   }
+  ]
+ }
+}

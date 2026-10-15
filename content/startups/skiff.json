@@ -1,0 +1,137 @@
+{
+ "slug": "skiff",
+ "website": "https://www.notion.com/",
+ "excerpt": "Skiff, the end-to-end encrypted email, docs and calendar startup, was acquired by Notion in February 2024 and its products were shut down. What happened and alternatives.",
+ "content": "<p>Skiff was a privacy-focused workspace that offered end-to-end encrypted email, documents (Skiff Pages), a calendar and file storage (Skiff Drive). With end-to-end encryption, content is encrypted on the user's device so the company running the service cannot read it. Skiff was started in 2020 by Andrew Milich and Jason Ginsberg and attracted users who wanted an alternative to Google Workspace with stronger privacy.</p><p>On 9 February 2024 Notion announced that it had acquired Skiff. TechCrunch reported that the Skiff team would join Notion and that the deal would add privacy and encryption expertise; Notion had launched a calendar based on its earlier Cron acquisition the previous month. Terms were not disclosed. Skiff told users that its standalone products would be shut down. The sunset period was first set at six months and later extended, and users had to export their own email, contacts, calendar events and files because accounts were not moved to Notion automatically. People who had used a @skiff.com address as their login for other services had to change it before the address stopped working.</p><p>TechRadar and others questioned what the deal meant for privacy, since Notion did not offer end-to-end encrypted email. Coverage of the shutdown pointed former users towards other encrypted providers such as Proton Mail and Tutanota.</p><p>Skiff's own domains no longer serve its product, so this listing points to Notion, its acquirer. If you are looking for an encrypted email service today, consider the alternatives below, and check whether any of your other accounts still use an old @skiff.com address for login or password recovery.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Encrypted email and documents (shut down)",
+  "platform": "Discontinued",
+  "starts_at": "Discontinued",
+  "schema_category": "BusinessApplication",
+  "summary_short": "End-to-end encrypted mail, docs, calendar and drive; acquired by Notion in 2024 and closed",
+  "maker": {
+   "name": "Skiff World, Inc. (acquired by Notion)",
+   "url": "https://www.notion.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Skiff_2023_Logo.svg/960px-Skiff_2023_Logo.svg.png",
+    "alt": "Skiff logo: a black circular swirl of curved stripes beside the word Skiff",
+    "credit": "Image: Skiff, public domain, via Wikimedia Commons (File:Skiff 2023 Logo.svg)",
+    "w": 960,
+    "h": 377
+   },
+   {
+    "url": "https://avatars.githubusercontent.com/u/80722586?v=4",
+    "alt": "Skiff's swirl mark in black on an orange background, from Skiff's official GitHub organisation",
+    "credit": "Image: Skiff (GitHub: skiff-org)",
+    "w": 460,
+    "h": 460
+   }
+  ],
+  "use_cases": [
+   "Understanding what happened to Skiff Mail and Skiff Pages",
+   "Choosing a replacement encrypted email provider",
+   "Following privacy-tech acquisitions"
+  ],
+  "audience": {
+   "fit": [
+    "were a Skiff user looking for what happened and where to go next",
+    "follow privacy and productivity startups"
+   ],
+   "not_fit": [
+    "want to sign up: Skiff no longer accepts users"
+   ]
+  },
+  "pricing": {
+   "intro": "Not applicable: Skiff has shut down and no longer sells plans.",
+   "plans": [],
+   "notes": [],
+   "url": "https://www.notion.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Was one of the better-known end-to-end encrypted workspaces"
+  ],
+  "cons": [
+   "Discontinued after the Notion acquisition",
+   "Users had to migrate their own data"
+  ],
+  "alternatives": {
+   "intro": "Services former Skiff users commonly moved to. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Proton Mail",
+     "url": "https://proton.me/mail",
+     "what": "End-to-end encrypted email from Switzerland",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Also offers Drive, Calendar and Docs in one encrypted suite."
+    },
+    {
+     "name": "Tuta (Tutanota)",
+     "url": "https://tuta.com/",
+     "what": "Encrypted email and calendar from Germany",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Open source with a low-cost paid plan."
+    },
+    {
+     "name": "Notion",
+     "url": "https://www.notion.com/",
+     "what": "Connected workspace for docs and projects",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Skiff's acquirer; not end-to-end encrypted."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What happened to Skiff?",
+    "a": "Notion acquired Skiff in February 2024 and Skiff's standalone email, docs, calendar and drive were shut down after a sunset period."
+   },
+   {
+    "q": "Can I still sign up for Skiff Mail?",
+    "a": "No. The service has been discontinued."
+   },
+   {
+    "q": "Did Skiff accounts move to Notion?",
+    "a": "No. Users had to export their own data; accounts were not migrated automatically."
+   },
+   {
+    "q": "What is a good Skiff alternative?",
+    "a": "Proton Mail and Tuta are the encrypted email services most often recommended."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Notion acquires privacy-focused productivity platform Skiff (9 Feb 2024)",
+    "url": "https://techcrunch.com/2024/02/09/notion-acquires-privacy-focused-productivity-platform-skiff/"
+   },
+   {
+    "label": "TechRadar: Skiff gets bought by Notion",
+    "url": "https://www.techradar.com/computing/cyber-security/skiff-gets-bought-by-notion-raising-privacy-concerns"
+   },
+   {
+    "label": "AlternativeTo: Notion acquires Skiff, ending its services",
+    "url": "https://alternativeto.net/news/2024/2/notion-acquires-the-privacy-focused-platform-skiff-ending-its-services-within-6-months/"
+   },
+   {
+    "label": "Reclaim The Net: Skiff is shutting down after Notion acquisition",
+    "url": "https://reclaimthenet.org/private-email-and-documents-company-skiff-is-shutting-down-after-notion-acquisition"
+   }
+  ],
+  "team": [
+   {
+    "name": "Andrew Milich",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Jason Ginsberg",
+    "role": "Cofounder"
+   }
+  ]
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "slug": "shift-technology",
+ "website": "https://www.shift-technology.com/",
+ "excerpt": "Shift Technology is a Paris-based company selling AI agents for insurance claims, fraud, subrogation and payment integrity. Funding, customers and alternatives.",
+ "content": "<p>Shift Technology sells AI software to insurance companies. It began with insurance fraud detection: scanning claims and flagging suspicious patterns for investigators. It has since widened into claims automation and now describes its product as agents that transform insurers' most critical work. Its current solutions cover coverage and liability decisions, fraud and risk, subrogation (recovering money from other insurers), injury claims, and payment integrity for health insurers.</p><p>Shift was founded in Paris; TechCrunch reported it was founded in 2014, and Built In named the founders as David Durrleman, Eric Sibony and Jeremy Jawish. In May 2021 it raised a $220 million Series D led by Advent International through Advent Tech, with Avenir and existing investors Accel, Bessemer Venture Partners, General Catalyst and Iris Capital. TechCrunch reported that the round valued Shift at more than $1 billion and brought total funding to about $320 million. At the time the company said it served more than 100 customers in 25 countries and had analysed close to 2 billion claims.</p><p>Shift's website now claims that all of the top five US property and casualty insurers use it, that it has analysed more than 4 billion policies, claims and documents, and that it has more than 120 customers in over 30 countries. Customers shown there include AXA, Amica, Assurant and Elephant. These are the company's own figures.</p><p>Shift does not publish prices. It sells enterprise contracts to insurers, so it is relevant to claims, fraud and special investigation teams at insurance carriers, not to individuals or small agencies.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI for insurance",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI agents for insurers' claims, fraud, coverage and subrogation work",
+  "maker": {
+   "name": "Shift Technology",
+   "url": "https://www.shift-technology.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.shift-technology.com/hubfs/Website%202026/brand/fallback-flat.jpg",
+    "alt": "Shift logo: the word SHIFT in white capital letters on a purple background",
+    "credit": "Image: Shift Technology (shift-technology.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://www.shift-technology.com/hubfs/Agentic%20blog%20-%20Resources%20Page%20Image%20New%20Website.png",
+    "alt": "Illustration of a laptop with floating interface panels and a central button labelled AI Agents",
+    "credit": "Image: Shift Technology (shift-technology.com)",
+    "w": 458,
+    "h": 258
+   }
+  ],
+  "use_cases": [
+   "Detecting fraudulent insurance claims",
+   "Assessing policy coverage and liability on claims",
+   "Finding and pursuing subrogation opportunities",
+   "Estimating medical costs on injury claims",
+   "Checking health insurance payments for errors"
+  ],
+  "audience": {
+   "fit": [
+    "are an insurer's claims, fraud or SIU team",
+    "handle high claim volumes across property, casualty or health",
+    "want AI that supports, rather than replaces, adjusters' decisions"
+   ],
+   "not_fit": [
+    "are an individual or small agency",
+    "want self-serve software with published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Shift Technology does not publish prices; it sells enterprise contracts to insurers after a demo.",
+   "plans": [
+    {
+     "name": "Shift agent solutions",
+     "price": "Quote on request",
+     "detail": "Enterprise contracts"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.shift-technology.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Specialised in insurance for over a decade",
+   "Large insurer customer base",
+   "Covers fraud, claims, subrogation and health payment integrity"
+  ],
+  "cons": [
+   "No public pricing",
+   "Only relevant to insurers"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "FRISS",
+     "url": "https://www.friss.com/",
+     "what": "Fraud, risk and compliance software for insurers",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Focused on fraud and underwriting risk scoring."
+    },
+    {
+     "name": "Guidewire",
+     "url": "https://www.guidewire.com/",
+     "what": "Core systems for property and casualty insurers",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Core claims and policy platform with analytics add-ons."
+    },
+    {
+     "name": "CLARA Analytics",
+     "url": "https://claraanalytics.com/",
+     "what": "AI for commercial insurance claims",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Focused on workers' compensation and casualty claims."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Shift Technology do?",
+    "a": "It sells AI agents that help insurers decide coverage, detect fraud, pursue subrogation and handle injury and health claims."
+   },
+   {
+    "q": "Is Shift Technology a unicorn?",
+    "a": "Yes. Its $220 million Series D in May 2021 valued it at over $1 billion, according to TechCrunch."
+   },
+   {
+    "q": "Where is Shift Technology based?",
+    "a": "Paris, France, with operations in the US and other markets."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Shift Technology official site",
+    "url": "https://www.shift-technology.com/"
+   },
+   {
+    "label": "TechCrunch: Shift Technology raises $220M at a $1B+ valuation (5 May 2021)",
+    "url": "https://techcrunch.com/2021/05/05/shift-technology-raises-220m-at-a-1b-valuation-to-fight-insurance-fraud-with-ai/"
+   },
+   {
+    "label": "Tech.eu: Shift Technology raises $220 million in Series D",
+    "url": "https://tech.eu/2021/05/06/add-another-unicorn-to-the-list-paris-based-shift-technology-raises-220-million-in-series-d-round-valued-at-over-1-billion"
+   },
+   {
+    "label": "Built In Boston: Shift Technology raises $220M",
+    "url": "https://www.builtinboston.com/2021/05/06/shift-technology-raises-220m-1b-valuation"
+   }
+  ],
+  "team": [
+   {
+    "name": "Jeremy Jawish",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Eric Sibony",
+    "role": "Cofounder"
+   },
+   {
+    "name": "David Durrleman",
+    "role": "Cofounder"
+   }
+  ]
+ }
+}
