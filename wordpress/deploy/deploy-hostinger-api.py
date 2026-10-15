@@ -13,6 +13,7 @@ the plugin/theme active), then purge the LiteSpeed cache.
 """
 import json
 import os
+import subprocess
 import sys
 import time
 import urllib.error
@@ -127,6 +128,8 @@ def main():
     site = next((i for i in installs if i["domain"] == DOMAIN), None) if status == 200 else None
     if not site:
         sys.exit(f"No WordPress installation found for {DOMAIN}. Install it first (see docs/WORDPRESS_SETUP.md).")
+    # Owner rule (2026-10-15): server + local backup before every deploy; stop if it fails.
+    subprocess.run([sys.executable, os.path.join(HERE, "deploy", "backup-live.py")], check=True)
     stamp = time.strftime("%Y%m%d%H%M%S")
 
     print("→ Uploading plugin…")

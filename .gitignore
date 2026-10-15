@@ -29,3 +29,6 @@ tsconfig.tsbuildinfo
 wordpress/local/.site/
 wordpress/design/og/*.html
 content/uploaded.json
+
+# Live-site backups (database + code), never committed
+/backups/
