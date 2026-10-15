@@ -1,0 +1,136 @@
+{
+ "slug": "relativity-space",
+ "website": "https://www.relativityspace.com/",
+ "excerpt": "Relativity Space is building the reusable Terran R rocket. Its Terran 1 history, Eric Schmidt's takeover as CEO, launch contracts and alternatives.",
+ "content": "<p>Relativity Space is a rocket company based in Long Beach, California. Its site says it builds reusable rockets to make access to space more reliable and routine. It became known for 3D-printing large parts of its rockets. In 2023 it launched Terran 1, a small rocket made largely by 3D printing; TechCrunch reported that the flight showed the approach could work but did not reach orbit, and about a month later the company dropped Terran 1 to focus on a much larger rocket, Terran R.</p><p>Terran R is a medium-to-heavy-lift, reusable launch vehicle meant to compete with SpaceX's Falcon 9 and Falcon Heavy. Relativity says its first launch is planned for late 2026 from Cape Canaveral, Florida. The company has reported nearly $3 billion in launch contracts, and in November 2025 the satellite operator SES signed a multi-launch agreement for Terran R flights, according to Via Satellite.</p><p>In March 2025 former Google chief executive Eric Schmidt became Relativity's CEO, succeeding cofounder Tim Ellis, who stayed on the board. TechCrunch, citing The New York Times, reported that Schmidt had made a significant investment and taken a controlling stake. Ellis had led the company since founding it; the change put one of the technology industry's best-known executives in charge of getting Terran R to the launch pad.</p><p>Relativity sells launch services to satellite operators and does not publish prices. It is on 100xFounder because it is one of the best-known space startups, and because its first Terran R launch is a milestone to watch.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Space launch",
+  "platform": "Not a software product",
+  "starts_at": "Launch prices not published",
+  "schema_category": "Organization",
+  "summary_short": "Long Beach rocket company developing the reusable Terran R launch vehicle",
+  "maker": {
+   "name": "Relativity Space",
+   "url": "https://www.relativityspace.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://static1.squarespace.com/static/59a8fb50d2b8575fad311abb/t/68a4babcbaf5ae7defdb89df/1755626172492/TERRAN_R_LAUNCH.png?format=1500w",
+    "alt": "Rendering of the Terran R rocket lifting off at night between launch towers, with a bright exhaust plume and orange smoke",
+    "credit": "Image: Relativity Space (relativityspace.com)",
+    "w": 1500,
+    "h": 844
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/59a8fb50d2b8575fad311abb/1791481722900-O25916LTNKT4EPXYC2XT/home-video-poster.jpg",
+    "alt": "Large white rocket stage sections lying horizontally in Relativity Space's factory, surrounded by equipment and work stations",
+    "credit": "Image: Relativity Space (relativityspace.com)",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "use_cases": [
+   "Launching satellites to orbit (from late 2026, if Terran R flies as planned)",
+   "Following reusable-rocket competition with SpaceX",
+   "Tracking 3D printing in aerospace"
+  ],
+  "audience": {
+   "fit": [
+    "follow the space industry and launch providers",
+    "operate satellites and are comparing future launch options"
+   ],
+   "not_fit": [
+    "need a launch now: Terran R has not flown yet",
+    "are looking for a consumer product"
+   ]
+  },
+  "pricing": {
+   "intro": "Not published. Relativity sells launches to satellite operators under contract.",
+   "plans": [],
+   "notes": [],
+   "url": "https://www.relativityspace.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Nearly $3 billion in reported launch contracts",
+   "Backed by Eric Schmidt as owner-CEO",
+   "Reusable design aimed at the medium-to-heavy market"
+  ],
+  "cons": [
+   "Terran R has not yet flown",
+   "Terran 1 did not reach orbit"
+  ],
+  "alternatives": {
+   "intro": "Other launch companies with rockets in a similar class.",
+   "items": [
+    {
+     "name": "SpaceX",
+     "url": "https://www.spacex.com/",
+     "what": "Falcon 9 and Falcon Heavy launch services",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "The market leader that Terran R is designed to compete with."
+    },
+    {
+     "name": "Rocket Lab",
+     "url": "https://www.rocketlabusa.com/",
+     "what": "Electron small launcher and the Neutron medium rocket",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Neutron targets a similar reusable medium-lift market."
+    },
+    {
+     "name": "Blue Origin",
+     "url": "https://www.blueorigin.com/",
+     "what": "New Glenn heavy-lift rocket",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Larger, partially reusable heavy-lift rocket."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who runs Relativity Space?",
+    "a": "Eric Schmidt, the former Google CEO, has been CEO since March 2025; cofounder Tim Ellis is on the board."
+   },
+   {
+    "q": "When will Terran R launch?",
+    "a": "Relativity says the first launch is planned for late 2026 from Cape Canaveral."
+   },
+   {
+    "q": "Did Terran 1 reach orbit?",
+    "a": "No. It launched in 2023 but did not reach orbit, and the company then retired it."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Eric Schmidt joins Relativity Space as CEO (10 Mar 2025)",
+    "url": "https://techcrunch.com/2025/03/10/eric-schmidt-joins-relativity-space-as-ceo/"
+   },
+   {
+    "label": "Via Satellite: SES signs on for multiple Terran R launches (12 Nov 2025)",
+    "url": "https://www.satellitetoday.com/launch/2025/11/12/ses-signs-on-for-multiple-terran-r-launches-with-relativity-space/"
+   },
+   {
+    "label": "Relativity Space official site",
+    "url": "https://www.relativityspace.com/"
+   },
+   {
+    "label": "AIN: Ex-Google CEO takes over Relativity Space",
+    "url": "https://en.ain.ua/2025/03/11/ex-google-ceo-relativity-space"
+   }
+  ],
+  "team": [
+   {
+    "name": "Eric Schmidt",
+    "role": "CEO (since March 2025)"
+   },
+   {
+    "name": "Tim Ellis",
+    "role": "Cofounder; board director"
+   }
+  ]
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "slug": "saronic",
+ "website": "https://www.saronic.com/",
+ "excerpt": "Saronic Technologies builds autonomous surface vessels for navies, from the small Corsair to the 180-foot Marauder. Funding, Navy contract and shipyard plans.",
+ "content": "<p>Saronic Technologies is a US defence company that designs and builds autonomous surface vessels: boats and ships that operate without a crew on board. It was founded in 2022 and is based in Austin, Texas; Dino Mavrookas is its cofounder and chief executive. Its website lists a family of vessels, the Corsair, Mirage and Marauder, designed for both defence and commercial use. The 180-foot Marauder is the largest; Saronic says it has a top speed above 25 knots and a range of up to 5,400 nautical miles.</p><p>The company has grown fast. In February 2025 it raised a $600 million Series C led by Elad Gil at a $4 billion valuation, with the money earmarked for Port Alpha, a planned shipyard for building autonomous vessels in volume. On 31 March 2026 it announced a $1.75 billion Series D at a $9.25 billion valuation, led by Kleiner Perkins with Advent International, Bessemer Venture Partners, DFJ Growth, Andreessen Horowitz and Franklin Templeton among the investors. SiliconANGLE reported that Saronic holds a $392 million production contract with the US Navy for the Marauder, and that it completed the first Marauder hull in under six months, less than eight months after buying the shipyard where it was built.</p><p>Saronic has production facilities in Louisiana and Texas. Public-domain White House photographs on Wikimedia Commons show a groundbreaking ceremony for Port Alpha in Brownsville, Texas on 30 September 2026. The company's site also reports that a Corsair took part in rescuing downed pilots in the Strait of Hormuz, which it describes as the first known at-sea rescue by an autonomous boat.</p><p>Saronic does not sell to the public and does not publish prices; its customers are navies and government agencies. It appears on 100xFounder as one of the best-funded defence-technology startups.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Defence technology (autonomous ships)",
+  "platform": "Not a software product",
+  "starts_at": "Sold under government contracts",
+  "schema_category": "Organization",
+  "summary_short": "Builds autonomous surface vessels, from small craft to the 180-foot Marauder",
+  "maker": {
+   "name": "Saronic Technologies",
+   "url": "https://www.saronic.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.saronic.com/assets/images/home/fleet/Marauder-Thumb-A-v2.jpg",
+    "alt": "Saronic's Marauder, a large grey uncrewed vessel with containers on deck, cutting through choppy sea under a stormy sky",
+    "credit": "Image: Saronic Technologies (saronic.com)",
+    "w": 1296,
+    "h": 642
+   },
+   {
+    "url": "https://www.saronic.com/opengraph-image.png?8c80515d4d71c781",
+    "alt": "Saronic logo: a white slanted mark and the word SARONIC on a dark navy background",
+    "credit": "Image: Saronic Technologies (saronic.com)",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Uncrewed naval patrol and surveillance",
+   "Long-range autonomous maritime missions",
+   "Following defence-tech startups and funding"
+  ],
+  "audience": {
+   "fit": [
+    "follow defence technology and autonomous systems",
+    "work in naval procurement or maritime defence"
+   ],
+   "not_fit": [
+    "are looking for a consumer or business product to buy"
+   ]
+  },
+  "pricing": {
+   "intro": "Not applicable: Saronic sells vessels to navies and government agencies under contract and publishes no prices.",
+   "plans": [],
+   "notes": [],
+   "url": "https://www.saronic.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Very well funded after its 2026 Series D",
+   "Production contract with the US Navy",
+   "Builds its own shipyards"
+  ],
+  "cons": [
+   "Defence-only customer base",
+   "Private company; revenue is not officially published"
+  ],
+  "alternatives": {
+   "intro": "Other companies building autonomous or uncrewed maritime systems.",
+   "items": [
+    {
+     "name": "Anduril",
+     "url": "https://www.anduril.com/",
+     "what": "Defence technology company with autonomous undersea vehicles",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Broader defence portfolio, including the Dive-LD and Ghost Shark undersea vehicles."
+    },
+    {
+     "name": "HavocAI",
+     "url": "https://www.havocai.com/",
+     "what": "Autonomous small boats for defence",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Smaller rival focused on autonomous boat swarms."
+    },
+    {
+     "name": "Saildrone",
+     "url": "https://www.saildrone.com/",
+     "what": "Uncrewed surface vehicles for ocean data and maritime security",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Wind- and solar-powered vessels used for data collection and surveillance."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Saronic make?",
+    "a": "Autonomous surface vessels for defence and commercial use: the Corsair, Mirage and the 180-foot Marauder."
+   },
+   {
+    "q": "How much is Saronic valued at?",
+    "a": "$9.25 billion after its $1.75 billion Series D in March 2026."
+   },
+   {
+    "q": "Does Saronic have a US Navy contract?",
+    "a": "Yes. SiliconANGLE reported a $392 million Navy production contract for the Marauder."
+   },
+   {
+    "q": "What is Port Alpha?",
+    "a": "Saronic's planned shipyard for building autonomous vessels at scale, in Brownsville, Texas."
+   }
+  ],
+  "sources": [
+   {
+    "label": "SiliconANGLE: Saronic raises $1.75B at $9.25B valuation (31 Mar 2026)",
+    "url": "https://siliconangle.com/2026/03/31/saronic-raises-1-75b-9-25b-valuation-ramp-autonomous-ship-production/"
+   },
+   {
+    "label": "Saronic Series D press release via AAP (31 Mar 2026)",
+    "url": "https://www.aap.com.au/aapreleases/cision20260331ae21888/"
+   },
+   {
+    "label": "WorkBoat: Saronic raises $600 million to build autonomous vessels",
+    "url": "https://www.workboat.com/saronic-raises-600-million-to-build-autonomous-vessels"
+   },
+   {
+    "label": "Saronic official site",
+    "url": "https://www.saronic.com/"
+   },
+   {
+    "label": "Wikimedia Commons: White House photos of the Saronic Port Alpha groundbreaking (30 Sept 2026)",
+    "url": "https://commons.wikimedia.org/w/index.php?search=Saronic+Groundbreaking+Ceremony+Port+Alpha"
+   }
+  ],
+  "team": [
+   {
+    "name": "Dino Mavrookas",
+    "role": "Cofounder and CEO"
+   }
+  ]
+ }
+}

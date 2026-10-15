@@ -1,0 +1,175 @@
+{
+ "slug": "patsnap",
+ "website": "https://www.patsnap.com/",
+ "excerpt": "Patsnap sells AI patent search and innovation intelligence, including the Eureka AI agents. Published plan prices, funding and alternatives.",
+ "content": "<p>Patsnap is an innovation intelligence company. It gives R&D teams, IP lawyers and patent professionals tools to search the world's patents and technical literature, analyse competitors' patent portfolios and spot risks before launching a product. Its site calls it the AI-native platform for global innovation and says it is trusted by more than 15,000 innovators.</p><p>The flagship today is Patsnap Eureka, a set of AI agents for tasks such as novelty and prior-art search, freedom-to-operate (FTO) search, design FTO, patent drafting, engineering problem-solving with TRIZ, life-sciences data extraction, materials research and standard-essential patents (SEP), with a desktop app in beta. Alongside it sits an intelligence suite: Analytics and IP Intelligence for patents, Synapse for biopharma intelligence, and Bio and Chemical tools for sequence and chemical-structure search, plus an API and MCP access for developers.</p><p>Patsnap was founded in Singapore by Jeffrey Tiong, its chief executive, with early support from the National University of Singapore. In March 2021 it raised a $300 million Series E led by SoftBank Vision Fund 2 and Tencent Investment, with existing investors Sequoia China, Shun Wei Capital and Vertex Ventures. Bloomberg reported that the round valued it at more than $1 billion, making it a unicorn. Patsnap said the money would go into product development and AI.</p><p>Unusually for enterprise IP software, Patsnap publishes some prices. Eureka has a free 14-day trial with 10,000 credits and no credit card; Pro plans listed on its pricing page range from $100 to $400 a month depending on the product, with Enterprise and custom plans through sales.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Patent search and innovation intelligence",
+  "platform": "Web",
+  "starts_at": "Free trial; Pro plans from $100 a month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI-native patent search, IP analytics and R&D intelligence with Eureka agents",
+  "maker": {
+   "name": "Patsnap",
+   "url": "https://www.patsnap.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.patsnap.com/wp-content/uploads/2024/09/logo_new-scaled.jpg",
+    "alt": "Patsnap logo: a green and blue droplet-shaped mark beside the word patsnap in black",
+    "credit": "Image: Patsnap (patsnap.com)",
+    "w": 2560,
+    "h": 2097
+   },
+   {
+    "url": "https://www.patsnap.com/wp-content/uploads/2021/03/patsnap-series-e-1200x630-1.jpg",
+    "alt": "Patsnap announcement graphic 'PatSnap raises $300M in Series E' with a glowing globe on a dark background",
+    "credit": "Image: Patsnap (patsnap.com)",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Prior-art and novelty searches before filing a patent",
+   "Freedom-to-operate checks before a product launch",
+   "Mapping competitors' patent portfolios",
+   "Drafting patent applications with AI",
+   "Biopharma and chemical structure research"
+  ],
+  "audience": {
+   "fit": [
+    "work in R&D, IP or patent law",
+    "need patent data across many countries",
+    "want AI agents for search and drafting with a free trial"
+   ],
+   "not_fit": [
+    "file a single patent occasionally: a patent attorney or free databases may be enough",
+    "need legal advice: these are research tools"
+   ]
+  },
+  "pricing": {
+   "intro": "Patsnap's pricing page lists free Basic tiers and paid Pro plans by product, with Enterprise and custom options through sales.",
+   "plans": [
+    {
+     "name": "Eureka Basic",
+     "price": "Free for 14 days",
+     "detail": "10,000 trial credits, no credit card"
+    },
+    {
+     "name": "Eureka Pro",
+     "price": "$200 a month",
+     "detail": "Credit tiers from 10,000 to 60,000 a month"
+    },
+    {
+     "name": "Analytics / Bio / Chemical / Synapse Pro",
+     "price": "$100 a month",
+     "detail": "Monthly or yearly billing"
+    },
+    {
+     "name": "Life Sciences Agents Pro",
+     "price": "$400 a month",
+     "detail": "Yearly billing"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Contact sales",
+     "detail": "Custom plans and API"
+    }
+   ],
+   "notes": [
+    "The pricing page shows several Pro prices across products and does not make every mapping explicit; confirm the exact plan with Patsnap."
+   ],
+   "url": "https://www.patsnap.com/pricing/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Free trial and some published prices",
+   "Broad coverage from patents to biopharma and chemistry",
+   "AI agents for search and drafting"
+  ],
+  "cons": [
+   "Pricing page is complex",
+   "Advanced features sit in enterprise plans"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Derwent Innovation (Clarivate)",
+     "url": "https://clarivate.com/products/ip-intelligence/",
+     "what": "Patent research and analytics",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Long-established enterprise patent database."
+    },
+    {
+     "name": "Questel Orbit",
+     "url": "https://www.questel.com/",
+     "what": "Patent search and IP management",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Combines search with IP management services."
+    },
+    {
+     "name": "Google Patents",
+     "url": "https://patents.google.com/",
+     "what": "Free patent search",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Free, but without analytics or AI agents."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Does Patsnap have a free trial?",
+    "a": "Yes. Eureka offers 14 days free with 10,000 credits and no credit card."
+   },
+   {
+    "q": "How much does Patsnap cost?",
+    "a": "Pro plans on its pricing page range from $100 to $400 a month by product; Enterprise is priced by sales."
+   },
+   {
+    "q": "Is Patsnap a unicorn?",
+    "a": "Yes. Its $300 million Series E in March 2021 valued it at more than $1 billion, according to Bloomberg."
+   },
+   {
+    "q": "What is Patsnap Eureka?",
+    "a": "Patsnap's AI agent platform for patent search, FTO, drafting and R&D research."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Patsnap pricing",
+    "url": "https://www.patsnap.com/pricing/"
+   },
+   {
+    "label": "Patsnap: secures $300 million in Series E funding (16 Mar 2021)",
+    "url": "https://www.patsnap.com/resources/blog/patsnap-secures-300-million-dollar-series-e-funding/"
+   },
+   {
+    "label": "Bloomberg: SoftBank mints new unicorn by backing PatSnap (16 Mar 2021)",
+    "url": "https://www.bloomberg.com/news/articles/2021-03-16/softbank-mints-new-unicorn-by-backing-analytics-firm-patsnap"
+   },
+   {
+    "label": "DealStreetAsia: PatSnap raises $300m Series E",
+    "url": "https://media.dealstreetasia.com/stories/patsnap-vision-fund-2-tencent-232114"
+   },
+   {
+    "label": "Patsnap official site",
+    "url": "https://www.patsnap.com/"
+   },
+   {
+    "label": "NUS Research Institute: PatSnap secures USD 300 million in Series E",
+    "url": "https://en.nusri.cn/nusrien/news/nusrinews/318.html"
+   }
+  ],
+  "team": [
+   {
+    "name": "Jeffrey Tiong",
+    "role": "Founder and CEO"
+   }
+  ]
+ }
+}

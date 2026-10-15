@@ -1,0 +1,135 @@
+{
+ "slug": "plate-iq",
+ "website": "https://ottimate.com/",
+ "excerpt": "Plate IQ, the restaurant invoice and payments software, is now Ottimate, an AI accounts payable automation platform. What it does, funding and alternatives.",
+ "content": "<p>Plate IQ began as accounts payable software for restaurants: it read supplier invoices, coded them to the right accounts and helped restaurants pay suppliers. It has since renamed itself Ottimate, and the old plateiq.com address now redirects to ottimate.com. The agency that handled the rebrand, Altitude Marketing, said the company wanted a name that would let it expand beyond restaurants into the wider office of the CFO, regardless of industry.</p><p>Ottimate describes itself as AI-powered AP automation for profitable finance teams. The product captures and codes invoices, routes them for approval, catches cost discrepancies and invoice risk, checks purchase-order fulfilment, manages employee spend and pays vendors directly. It integrates with accounting systems including NetSuite, QuickBooks, Sage, Acumatica and Microsoft Dynamics, and targets hospitality (restaurants, hotels, casinos, country clubs), senior living, grocery and retail, healthcare practices and accounting firms. Its site says it has been named a Leader in two IDC MarketScape reports.</p><p>In November 2021, as Plate IQ, it raised a $160 million Series B from the growth equity firm FTV Capital, whose partners joined its board. At the time it said it had added more than 8,000 customers and processed over $2 billion of invoice payments through its VendorPay network, and Global Corporate Venturing reported that it handled more than 50,000 invoices a day. The announcement named Barrett Boston as chief executive, with Bhavuk Kaul moving to president.</p><p>Ottimate does not publish prices; businesses request a demo. It is aimed at finance teams handling large numbers of supplier invoices across multiple locations.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Accounts payable automation",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI accounts payable automation, formerly Plate IQ, for restaurants, hospitality and beyond",
+  "maker": {
+   "name": "Ottimate (formerly Plate IQ)",
+   "url": "https://ottimate.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://ottimate.com/wp-content/uploads/2025/09/ottimate-cover-image.png",
+    "alt": "Ottimate logo, a green octopus beside the word ottimate, above the line 'Maximize profit through smart AP.'",
+    "credit": "Image: Ottimate (ottimate.com)",
+    "w": 1200,
+    "h": 675
+   },
+   {
+    "url": "https://ottimate.com/wp-content/uploads/2025/06/cropped-OTTI_FOR-LIGHT-DARK-BACKGROUND-3-300x300.png",
+    "alt": "Ottimate mascot icon: a smiling green line-drawn octopus",
+    "credit": "Image: Ottimate (ottimate.com)",
+    "w": 300,
+    "h": 300
+   }
+  ],
+  "use_cases": [
+   "Automating supplier invoice capture and coding",
+   "Routing invoices for approval across locations",
+   "Catching supplier price changes and discrepancies",
+   "Paying vendors from one platform",
+   "Managing employee spend"
+  ],
+  "audience": {
+   "fit": [
+    "run finance for a restaurant group, hotel group or multi-location business",
+    "process large volumes of supplier invoices",
+    "use NetSuite, QuickBooks, Sage, Acumatica or Dynamics"
+   ],
+   "not_fit": [
+    "are a single small business with a few bills a month",
+    "want self-serve published pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "Ottimate does not publish prices. Its pricing page does not load publicly, and the site asks businesses to request a demo.",
+   "plans": [
+    {
+     "name": "Ottimate AP automation",
+     "price": "Quote on request",
+     "detail": "Invoice automation, approvals and payments"
+    }
+   ],
+   "notes": [],
+   "url": "https://ottimate.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Deep roots in restaurant and hospitality invoices",
+   "End-to-end AP from capture to payment",
+   "Integrations with major accounting systems"
+  ],
+  "cons": [
+   "No public pricing",
+   "Name change means older reviews refer to Plate IQ"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "MarginEdge",
+     "url": "https://www.marginedge.com/",
+     "what": "Restaurant invoice processing and cost management",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Restaurant-specific with food-cost tools; publishes per-location pricing."
+    },
+    {
+     "name": "BILL",
+     "url": "https://www.bill.com/",
+     "what": "AP and AR automation for small and mid-size businesses",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "General-purpose AP with self-serve plans."
+    },
+    {
+     "name": "Tipalti",
+     "url": "https://tipalti.com/",
+     "what": "Finance automation for payables and global payments",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Strong in mass and international supplier payments."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Plate IQ the same as Ottimate?",
+    "a": "Yes. Plate IQ renamed itself Ottimate, and plateiq.com now redirects to ottimate.com."
+   },
+   {
+    "q": "What does Ottimate do?",
+    "a": "It automates accounts payable: invoice capture and coding, approvals, discrepancy checks and vendor payments."
+   },
+   {
+    "q": "How much funding has Plate IQ raised?",
+    "a": "Its largest round was a $160 million Series B from FTV Capital in November 2021."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Ottimate official site",
+    "url": "https://ottimate.com/"
+   },
+   {
+    "label": "Business Wire: Plate IQ raises $160 million from FTV Capital (4 Nov 2021)",
+    "url": "https://www.businesswire.com/news/home/20211104005235/en/Plate-IQ-Raises-160-Million-From-FTV-Capital-To-Close-The-Supply-Chain-Payments-Gap-Between-Vendors-And-Operators"
+   },
+   {
+    "label": "Global Corporate Venturing: FTV Capital puts $160m on Plate IQ",
+    "url": "https://globalventuring.com/corporate/ftv-capital-puts-160m-on-plate-iq"
+   },
+   {
+    "label": "Altitude Marketing: rebranding Plate IQ to Ottimate",
+    "url": "https://altitudemarketing.com/altitude-news/ottimate-rebranding-project/"
+   }
+  ]
+ }
+}
