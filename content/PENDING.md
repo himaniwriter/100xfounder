@@ -54,6 +54,18 @@ Scheduled task `pending-work-2026-10-15` works through this list. Tick items off
   - https://100xfounder.com/how-to-apply/how-to-get-a-job-at-meesho/ (1473 words)
   - https://100xfounder.com/how-to-apply/how-to-get-a-job-at-databricks/ (1345 words)
 - Profiles held by the rule (fewer than 2 images): openai-agents-api, thumbmagic-5, kane-cli. Add credited gallery images or leave unpublished.
+- [x] Images added 2026-10-15 to the 10 pages above. All are from Wikimedia Commons, with the credit in the media caption and in each figure. All 10 return 200 with 500+ words:
+  - [x] best-education-marketing-agency-india (2 images): IIT Delhi Main Building Wide (TheVyomanaut, CC BY-SA 4.0); IIM Ahmedabad New Campus (Maulik Kansara, CC BY-SA 3.0)
+  - [x] notice-period-buyout-india (2): Manyata Embassy Business Park (KshitizBathwal, CC BY-SA 4.0); TCS Electronic City campus (HokuroN, CC BY-SA 4.0)
+  - [x] new-vs-old-tax-regime (2): Aayakar bhavan (Adbh266, CC BY-SA 3.0); One Rupee Indian coins (Kshitij Gupta, CC BY-SA 3.0)
+  - [x] upcoming-indian-startup-ipos (2): BSE building at Dalal Street (BSEINDIA, CC BY-SA 3.0); National Stock Exchange (312user, CC BY-SA 4.0)
+  - [x] indian-startup-funding-q3-deal-count-falls (2): Bengaluru Skyline from Tata Promont (Kushagra140, CC BY-SA 4.0); Bangalore skyline 7121517855 (Saad Faruque, CC BY-SA 2.0)
+  - [x] apple-pay-india-launch (3): Apple-payment-square (Mybloodtypeiscoffee, CC BY 4.0); BMTC bus ticket via UPI (Shaymmm, CC BY-SA 4.0); vending-machine Apple Pay terminal (KKPCW, CC BY-SA 4.0)
+  - [x] in-hand-salary-from-ctc (2): Bengaluru Business park road (IM3847, CC BY-SA 4.0); Indian 100 and 2000 rupee notes (Monito, CC BY 2.0)
+  - [x] how-to-get-a-job-at-paytm (2): Paytm and Airtel stalls, Salt Lake, Kolkata (Biswarup Ganguly, CC BY 3.0); Paytm HQ in Noida (Lakshmisreekanth, CC BY-SA 4.0)
+  - [x] how-to-get-a-job-at-meesho (2): Bangalore skyline 2011 6720868413 (Saad Faruque, CC BY 2.0); Meesho homepage under a magnifier (Jernej Furman, CC BY 2.0)
+  - [x] how-to-get-a-job-at-databricks (2): Ali Ghodsi keynote, Data + AI Summit 2026 (MockingBird45, CC BY-SA 4.0); Datacenter Server Racks (Carl Lender, CC BY 2.0)
+  - single-xf_guide.php doesn't render the featured image, so each guide also shows it as its first in-body figure. A theme fix would remove the need for that duplicate.
 - Deploy the gate (includes/sources.php) and the Sources dropdown (sources.php, single-xf_startup.php, theme.css, XFT_VERSION 2.5.1): needs a fresh Hostinger API token from the owner.
 
 ## Status 2026-10-15 00:00–01:30 (done in chat)
