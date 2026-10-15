@@ -2,6 +2,7 @@
 """Give every startup listing the company's own logo instead of a lettered tile.
 
     XF_SITE_URL=… XF_WP_USER=… XF_WP_APP_PASSWORD='…' python3 content/fetch-startup-logos.py [--limit N] [--dry-run]
+        [--slugs a,b,c] [--slugs-file path] [--only-missing]
 
 The logo comes from the company's own website: the apple-touch-icon it publishes
 for phone home screens (usually 180px and transparent), then its <link rel=icon>,
@@ -11,7 +12,9 @@ listing's featured image, so we serve it ourselves and it survives the company
 redesigning its site.
 
 Listings that already have a featured image are left alone, so this is safe to
-re-run as new startups come in.
+re-run as new startups come in. --slugs / --slugs-file (one slug per line) limit
+the run to those listings and replace their logo too, unless --only-missing is
+also given.
 """
 import argparse
 import base64
@@ -180,7 +183,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=100)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--slugs", default="", help="comma-separated listing slugs")
+    ap.add_argument("--slugs-file", help="file with one slug per line")
+    ap.add_argument("--only-missing", action="store_true", help="skip listings that already have featured_media")
     a = ap.parse_args()
+    slugs = {s.strip() for s in a.slugs.split(",") if s.strip()}
+    if a.slugs_file:
+        slugs |= {s.strip() for s in open(a.slugs_file) if s.strip() and not s.startswith("#")}
 
     site = os.environ.get("XF_SITE_URL", "https://100xfounder.com").rstrip("/")
     user, pw = os.environ.get("XF_WP_USER", ""), os.environ.get("XF_WP_APP_PASSWORD", "")
@@ -192,7 +201,7 @@ def main():
     while True:
         try:
             batch = json.loads(get(
-                f"{site}/wp-json/wp/v2/xf_startup?per_page=100&page={page}&_fields=id,slug,link,title,featured_media",
+                f"{site}/wp-json/wp/v2/xf_startup?per_page=100&page={page}&_fields=id,slug,link,title,featured_media,meta",
                 limit=4_000_000,
             )[0].decode())
         except urllib.error.HTTPError:  # past the last page
@@ -201,17 +210,27 @@ def main():
         if len(batch) < 100:
             break
         page += 1
-    todo = [p for p in listings if not p.get("featured_media")][: a.limit]
-    print(f"{len(listings)} startups, {len(todo)} without a logo\n")
+    if slugs:
+        missing = slugs - {p["slug"] for p in listings}
+        if missing:
+            print("not found: " + ", ".join(sorted(missing)))
+        todo = [p for p in listings if p["slug"] in slugs and not (a.only_missing and p.get("featured_media"))][: a.limit]
+    else:  # no slugs given: as before, every listing still without a logo
+        todo = [p for p in listings if not p.get("featured_media")][: a.limit]
+    print(f"{len(listings)} startups, {len(todo)} to do\n")
 
     done = 0
     for p in todo:
         name = html.unescape(p["title"]["rendered"])
-        web = company_site(p["link"])
+        meta = p.get("meta") or {}
+        # The listing's own _xf_website when REST exposes it (empty means cleared on purpose).
+        web = meta["_xf_website"].strip() if "_xf_website" in meta else company_site(p["link"])
+        host = (urllib.parse.urlparse(web).hostname or "").lower()
+        if any(host == b or host.endswith("." + b) for b in NOT_THE_COMPANY):
+            web = ""
         if not web:
             print(f"  skip  {name[:26]:<26} no website linked")
             continue
-        host = (urllib.parse.urlparse(web).hostname or "").lower()
         if any(host == b or host.endswith("." + b) for b in PLATFORMS):
             print(f"  skip  {name[:26]:<26} listed on {host}, not its own site")
             continue
