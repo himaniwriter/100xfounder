@@ -1,0 +1,75 @@
+{
+ "slug": "marker-learning",
+ "website": "https://www.markerlearning.com/",
+ "excerpt": "Marker Learning offered remote learning and attention disability evaluations and now develops Marker Method, an adaptive clinical assessment battery for school psychologists. Funding and alternatives.",
+ "content": "<p>Marker Learning is a New York company that set out to make learning disability evaluations, such as testing for dyslexia, faster and cheaper. AlleyWatch described it in 2021 as a telepsychology platform where psychologists and learning disability specialists give evaluations remotely through the company's own technology, designed with Johns Hopkins psychologists. Pulse 2.0 reported in 2023 that it served people aged 6 to 50, delivered a diagnostic report within a month that could support accommodations at school, at work or for standardised tests, and partnered with school districts to support special-education caseloads. Its founders said private evaluations elsewhere can cost up to $14,000 with waitlists of more than two years.</p><p>The company was co-founded by Stefan Bauer, the CEO, and Emily Yudofsky. Bauer told AlleyWatch that he was close to failing at school until a learning disability evaluation diagnosed his dyslexia, after which he went on to Yale and McKinsey. Marker raised a seed round of about $4 million in 2021 led by Primary, with Divergent Investments, Night Ventures and Operator Partners. In February 2023 it raised a $15 million Series A led by Andreessen Horowitz, with the venture arm of Richard Branson's Virgin Group, existing investors and athletes including NBA champion Danny Green and WNBA champion Jewell Loyd, Pulse 2.0 reported. It said at the time that its school partnerships reached 1 million students and that it was adding tutoring and coaching.</p><p>Marker's website now focuses on Marker Method, a clinical assessment battery for clinicians such as school psychologists. It covers academic, cognitive, psychomotor and language domains, chooses from 37 tests based on the referral and the student's answers, scores in real time, and adjusts norms for students' exposure to English. The site says a norming study is under way and it is recruiting partner developers before launch.</p><p>No price is published for Marker Method. Earlier coverage described Marker's evaluations as a fraction of the cost of traditional ones without giving a figure we could confirm.</p><p><em>This page is research, not medical or educational advice. Facts come from the pages listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Learning disability assessment (edtech and telehealth)",
+  "platform": "Remote evaluations; Marker Method digital assessment battery",
+  "starts_at": "Not published",
+  "schema_category": "EducationalApplication",
+  "summary_short": "Remote learning-disability evaluations and the Marker Method assessment battery for clinicians",
+  "maker": {"name": "Marker Learning", "url": "https://www.markerlearning.com/"},
+  "team": [
+   {"name": "Stefan Bauer", "role": "Co-founder and CEO"},
+   {"name": "Emily Yudofsky", "role": "Co-founder"}
+  ],
+  "gallery": [
+   {"url": "https://markerlearning.com/og-image.png", "w": 1200, "h": 630, "alt": "Marker Method logo with a yellow circle behind the M, above the line Clinical assessment, reimagined: adaptive, examiner-light, fair by design", "credit": "Image: Marker Learning (markerlearning.com)"},
+   {"url": "https://www.markerlearning.com/_astro/hero-student-girl-oval.NkUArNP4_1G6UUf.webp", "w": 1200, "h": 914, "alt": "A smiling girl at a desk tapping a tablet that shows a picture of an elephant, with bookshelves behind her", "credit": "Image: Marker Learning (markerlearning.com)"}
+  ],
+  "use_cases": [
+   "Remote evaluations for dyslexia and other learning disabilities",
+   "Documentation for school, workplace and test accommodations",
+   "Supporting school psychologists with special-education caseloads",
+   "Adaptive digital assessment with Marker Method"
+  ],
+  "audience": {
+   "fit": [
+    "school districts and school psychologists with evaluation backlogs",
+    "clinicians who want an adaptive, digitally scored assessment battery",
+    "families and adults researching affordable learning disability evaluations"
+   ],
+   "not_fit": [
+    "anyone needing a medical diagnosis outside learning and attention disabilities",
+    "buyers wanting a published price"
+   ]
+  },
+  "pricing": {
+   "intro": "Marker does not publish prices on its current website. Earlier press described its evaluations as a fraction of the cost of traditional ones, without a figure we could confirm.",
+   "plans": [{"name": "Marker Method", "price": "Not published", "detail": "Pre-launch; norming study under way"}],
+   "url": "https://www.markerlearning.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Remote evaluations reduce waitlists and travel",
+   "Adaptive testing aims to shorten assessments",
+   "Norms adjusted for English exposure"
+  ],
+  "cons": [
+   "Marker Method is not yet generally launched",
+   "No public pricing"
+  ],
+  "alternatives": {
+   "intro": "Other assessment publishers and evaluation services.",
+   "items": [
+    {"name": "Pearson Clinical Assessment", "url": "https://www.pearsonassessments.com/", "what": "Publisher of widely used clinical and educational tests", "difference": "Large catalogue including the WISC and WIAT."},
+    {"name": "Riverside Insights", "url": "https://riversideinsights.com/", "what": "Publisher of the Woodcock-Johnson assessments", "difference": "Established cognitive and achievement batteries."},
+    {"name": "Presence", "url": "https://presence.com/", "what": "Teletherapy and remote assessments for schools", "difference": "Broad online special-education services."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Marker Learning do?", "a": "It has offered remote learning and attention disability evaluations and school partnerships, and now develops Marker Method, an adaptive assessment battery for clinicians."},
+   {"q": "Who founded Marker Learning?", "a": "Stefan Bauer (CEO) and Emily Yudofsky."},
+   {"q": "How much has Marker Learning raised?", "a": "About $4 million in a 2021 seed round and a $15 million Series A in February 2023 led by Andreessen Horowitz."},
+   {"q": "Is Marker Method available now?", "a": "Its website says a norming study is under way and it is recruiting partner developers before launch."}
+  ],
+  "sources": [
+   {"label": "Marker Learning: Marker Method", "url": "https://www.markerlearning.com/"},
+   {"label": "AlleyWatch: Marker Learning seed round (Nov 2021)", "url": "https://alleywatch.com/2021/11/marker-learning-telehealth-dyslexia-remote-screening-learning-disabilities-assessment-evaluation-stefan-bauer/"},
+   {"label": "Pulse 2.0: Marker Learning raises $15 million (Feb 2023)", "url": "https://pulse2.com/attention-disability-services-company-marker-learning-raises-15-million"},
+   {"label": "Business Wire: Marker Learning raises $15M (Feb 2023)", "url": "https://www.businesswire.com/news/home/20230209005104/en/Marker-Learning-Raises-15M-to-Make-Quality-Learning-Disability-Assessments-and-Support-More-Accessible-and-Affordable"}
+  ]
+ }
+}

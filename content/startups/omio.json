@@ -1,0 +1,142 @@
+{
+ "slug": "omio",
+ "website": "https://www.omio.com/",
+ "excerpt": "Omio, formerly GoEuro, is a Berlin travel booking platform for trains, buses, flights and ferries, mainly in Europe. Founder, funding, Rome2rio and alternatives.",
+ "content": "<p>Omio is a travel search and booking platform that lets people compare and book trains, buses, flights and ferries in one place, with a focus on Europe. Instead of visiting each railway, coach company or airline separately, a traveller enters a route and sees options across transport modes, then books tickets through Omio's website or app. TechCrunch reported in 2022 that it also sells airport transfers and single-mode tickets, and that partners include Kayak, Huawei and LNER, with Portugal's state railway Comboios de Portugal recently added.</p><p>The company was founded in 2013 as GoEuro by Naren Shaam, who remains CEO, and renamed itself Omio in 2019 as it began expanding beyond Europe. It is headquartered in Berlin, and Startbase reported in 2022 that it had more than 300 employees from 50 countries, with offices in Berlin, Prague, Melbourne and London. In October 2019 Omio bought Rome2rio, a Melbourne journey planner covering about 10 million locations and more than 5,000 transport operators, which it runs as a separate brand. TechCrunch reported at the time that Omio averaged 27 million monthly users and had more than 800 transport partnerships.</p><p>Omio has raised about $480 million since 2013, according to TechCrunch. Bloomberg reported that a $150 million round in 2018 led by Kinnevik, with Temasek and Hillhouse, valued the company at $900 million to $1 billion. After its revenue fell 98% when COVID-19 hit Europe in spring 2020, it raised $100 million in 2020 and an $80 million Series E in June 2022 from Lazard Asset Management, Stack Capital, NEA, Temasek and funds managed by Goldman Sachs Asset Management; Shaam said revenue had by then reached twice its 2019 level.</p><p>Searching on Omio is free; travellers pay for the tickets they book. Omio's own site blocked our check, so we have not confirmed its current booking fees; any fees are shown before payment.</p><p><em>This page is research, not a review. We have not booked through Omio for this page.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Travel search and booking (trains, buses, flights, ferries)",
+  "platform": "Website and Android and iOS apps",
+  "starts_at": "Free to search; pay per ticket",
+  "schema_category": "TravelApplication",
+  "summary_short": "Compare and book trains, buses, flights and ferries across Europe in one app",
+  "maker": {
+   "name": "Omio (GoEuro Corp.)",
+   "url": "https://www.omio.com/"
+  },
+  "team": [
+   {
+    "name": "Naren Shaam",
+    "role": "Founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/OMIO_blue.svg/1280px-OMIO_blue.svg.png",
+    "w": 1280,
+    "h": 361,
+    "alt": "Omio logo: the word omio in bold dark blue with a coral dot at the top left",
+    "credit": "Logo: Omio, public domain, via Wikimedia Commons (File:OMIO blue.svg)"
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Rome2rio-logo.png",
+    "w": 241,
+    "h": 61,
+    "alt": "Rome2rio logo in black script with a pink dot over the i; Rome2rio is owned by Omio",
+    "credit": "Logo: Rome2rio, CC BY-SA 3.0, via Wikimedia Commons (File:Rome2rio-logo.png)"
+   }
+  ],
+  "use_cases": [
+   "Comparing train, bus and flight options between European cities",
+   "Booking rail tickets from several national operators in one app",
+   "Finding coach and ferry connections",
+   "Booking airport transfers",
+   "Planning multi-leg trips with Rome2rio"
+  ],
+  "audience": {
+   "fit": [
+    "travellers in Europe who want to compare transport modes in one search",
+    "tourists unfamiliar with local rail and bus operators",
+    "people planning trips across several countries"
+   ],
+   "not_fit": [
+    "regular commuters on one operator, who may find season tickets cheaper direct",
+    "travellers who prefer to buy directly from the operator"
+   ]
+  },
+  "pricing": {
+   "intro": "Searching is free; you pay for the tickets you book. Omio's site blocked our check in October 2026, so we could not confirm its current booking fees, which are shown before payment.",
+   "plans": [
+    {
+     "name": "Search and booking",
+     "price": "Free to search; ticket prices vary",
+     "detail": "Any booking fees shown at checkout"
+    }
+   ],
+   "url": "https://www.omio.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Trains, buses, flights and ferries in one search",
+   "Hundreds of transport partners across Europe",
+   "Owns the Rome2rio journey planner"
+  ],
+  "cons": [
+   "Mostly focused on Europe",
+   "Booking fees could not be confirmed from its site"
+  ],
+  "alternatives": {
+   "intro": "Other ways to book European ground and air travel.",
+   "items": [
+    {
+     "name": "Trainline",
+     "url": "https://www.thetrainline.com/",
+     "what": "Rail and coach ticket booking in the UK and Europe",
+     "difference": "Listed rail specialist with a strong UK base."
+    },
+    {
+     "name": "Rail Europe",
+     "url": "https://www.raileurope.com/",
+     "what": "Booking for European trains and rail passes",
+     "difference": "Aimed at international visitors to Europe."
+    },
+    {
+     "name": "Busbud",
+     "url": "https://www.busbud.com/",
+     "what": "Intercity bus ticket booking worldwide",
+     "difference": "Focused on buses."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Omio the same as GoEuro?",
+    "a": "Yes. GoEuro, founded in 2013, renamed itself Omio in 2019."
+   },
+   {
+    "q": "What can you book on Omio?",
+    "a": "Trains, buses, flights and ferries, plus airport transfers, mainly in Europe."
+   },
+   {
+    "q": "Who owns Rome2rio?",
+    "a": "Omio, which bought it in October 2019 and runs it as a separate brand."
+   },
+   {
+    "q": "How much has Omio raised?",
+    "a": "About $480 million since 2013, including an $80 million Series E in June 2022, according to TechCrunch."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Omio raises $80M Series E (June 2022)",
+    "url": "https://techcrunch.com/2022/06/20/omio-series-e/"
+   },
+   {
+    "label": "TechCrunch: Omio buys Rome2rio (Oct 2019)",
+    "url": "https://techcrunch.com/2019/10/31/omio-buys-rome2rio-to-build-out-its-global-travel-aggregator-business/"
+   },
+   {
+    "label": "Bloomberg: GoEuro valued at up to $1 billion (2018)",
+    "url": "https://www.bloomberg.com/news/articles/2018-10-23/goldman-backed-goeuro-raises-150-million-in-kinnevik-led-round"
+   },
+   {
+    "label": "Startbase: $80 million for Omio (2022)",
+    "url": "https://www.startbase.com/news/80-millionen-us-dollar-fuer-omio"
+   },
+   {
+    "label": "Wikipedia: Omio",
+    "url": "https://en.wikipedia.org/wiki/Omio"
+   }
+  ]
+ }
+}

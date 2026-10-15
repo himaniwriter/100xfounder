@@ -1,0 +1,135 @@
+{
+ "slug": "naked-labs",
+ "website": "https://nakedlabs.com/",
+ "excerpt": "Naked Labs made the Naked 3D Fitness Tracker, a home body-scanning mirror and rotating scale. Its services ended on 31 October 2023. Product, funding and alternatives.",
+ "content": "<p>Naked Labs was a consumer hardware startup that made what it called the world's first home body scanner. The Naked 3D Fitness Tracker combined a full-length mirror fitted with depth sensors and a scale that slowly rotated the user through 360 degrees. Retail Dive reported in 2018 that the mirror used Intel RealSense depth sensors with Wi-Fi and Bluetooth, and that a 15-second scan measured body fat, lean mass and other metrics. A companion phone app built a grey 3D model of the user's body and let them compare scans over time to see where they had lost fat or gained muscle. The Hustle reported that each scan captured about 4 million infrared data points and that the app offered goals, training plans and coaching.</p><p>In August 2018 Naked Labs announced a $14 million Series A led by Founders Fund, with NEA, Lumia Capital, Venture 51, Seabed VC and others, Retail Dive reported. At the time the scanner cost $1,395; pre-order customers were receiving units and general availability was planned for the fourth quarter of 2018. Ed Sclater was named as co-founder and chief operating officer.</p><p><strong>Naked Labs has shut down.</strong> Its website now shows a notice saying its services were no longer available as of 31 October 2023, and thanking customers for their support. Owners should not expect the company's app or services to be supported. People who want body-composition tracking today will need another device or service; some options are listed below.</p><p><em>This page is research, not a review. We never used a Naked scanner; facts come from Naked Labs' notice and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Home 3D body scanning (closed)",
+  "platform": "Smart mirror, rotating scale and phone app (services ended 2023)",
+  "starts_at": "No longer sold; launched at $1,395 in 2018",
+  "schema_category": "HealthApplication",
+  "summary_short": "Home 3D body-scanning mirror and scale; services ended October 2023",
+  "maker": {
+   "name": "Naked Labs",
+   "url": "https://nakedlabs.com/"
+  },
+  "team": [
+   {
+    "name": "Ed Sclater",
+    "role": "Co-founder and COO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://images.ctfassets.net/7xliywda64l8/4b0UMzWSty6ooeKGs6YKwI/864245b24a9e2499089c9e7cd3479ff2/Naked_Labs_InHome1.jpg?h=630&w=1200&fm=jpg&q=90",
+    "w": 1200,
+    "h": 630,
+    "alt": "A man in shorts about to step onto the round Naked scale in a bright room, with the tall Naked scanning mirror beside a window",
+    "credit": "Image: Naked Labs (nakedlabs.com)"
+   },
+   {
+    "url": "https://images.ctfassets.net/7xliywda64l8/6fmxacYTnymyuACsSsisAQ/f29c9ead9ecc37562103f05d4d3eab34/Bin__Compare__3x__1_.png?fm=jpg&fl=progressive&w=800",
+    "w": 800,
+    "h": 1732,
+    "alt": "Naked app screen comparing two grey 3D body scans from April 2017 and January 2018, with body fat, fat mass, lean mass and weight changes",
+    "credit": "Image: Naked Labs (nakedlabs.com)"
+   }
+  ],
+  "use_cases": [
+   "Tracking body fat and lean mass at home (historical)",
+   "Comparing 3D body scans over time (historical)",
+   "Setting fitness goals such as fat loss or body recomposition (historical)"
+  ],
+  "audience": {
+   "fit": [
+    "former owners checking what happened to the service",
+    "readers researching connected-fitness hardware startups"
+   ],
+   "not_fit": [
+    "anyone hoping to buy or use a Naked scanner today: services ended in October 2023"
+   ]
+  },
+  "pricing": {
+   "intro": "Naked Labs' services ended on 31 October 2023, and the scanner is no longer sold. At launch in 2018 it cost $1,395, Retail Dive reported.",
+   "plans": [
+    {
+     "name": "Naked 3D Fitness Tracker (2018 launch price)",
+     "price": "$1,395",
+     "amount": 1395,
+     "currency": "USD",
+     "detail": "Historical price; no longer available"
+    }
+   ],
+   "url": "https://nakedlabs.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Showed a full 3D body model, not just weight",
+   "Tracked changes over time in an app"
+  ],
+  "cons": [
+   "Services ended on 31 October 2023",
+   "Expensive hardware tied to the company's app and services"
+  ],
+  "alternatives": {
+   "intro": "Ways to track body composition today. Accuracy and price vary; check each provider.",
+   "items": [
+    {
+     "name": "Withings Body Comp",
+     "url": "https://www.withings.com/",
+     "what": "Smart scale measuring weight, body fat and more",
+     "difference": "Bioimpedance scale rather than a 3D scan."
+    },
+    {
+     "name": "Fit3D",
+     "url": "https://fit3d.com/",
+     "what": "3D body scanners found in gyms",
+     "difference": "Commercial scanners used at gyms and clinics."
+    },
+    {
+     "name": "DEXA scan providers",
+     "url": "https://www.dexafit.com/",
+     "what": "Clinical-style body composition scans",
+     "difference": "In-person X-ray based measurement."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Naked Labs still operating?",
+    "a": "No. Its website says its services were no longer available as of 31 October 2023."
+   },
+   {
+    "q": "What was the Naked 3D Fitness Tracker?",
+    "a": "A depth-sensing mirror and rotating scale that built a 3D model of your body and measured body fat and lean mass in a 15-second scan."
+   },
+   {
+    "q": "How much did it cost?",
+    "a": "$1,395 at launch in 2018, according to Retail Dive."
+   },
+   {
+    "q": "Who invested in Naked Labs?",
+    "a": "Founders Fund led a $14 million Series A in 2018, with NEA, Lumia Capital and others."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Naked Labs: closure notice (nakedlabs.com)",
+    "url": "https://nakedlabs.com/"
+   },
+   {
+    "label": "Retail Dive: Naked Labs introduces 3D body scanner, raises funding (Aug 2018)",
+    "url": "https://www.retaildive.com/news/naked-labs-introduces-3d-body-scanner-raises-funding/529180"
+   },
+   {
+    "label": "The Hustle: Naked Labs raises $14m",
+    "url": "https://thehustle.co/naked-labs-body-scanning"
+   },
+   {
+    "label": "Dezeen: Naked Labs launches at-home 3D body scanner (2018)",
+    "url": "https://www.dezeen.com/2018/09/12/naked-labs-3d-body-scanner-technology-design/"
+   }
+  ]
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "slug": "medallion",
+ "website": "https://www.medallion.co/",
+ "excerpt": "Medallion automates provider credentialing, payer enrollment and licensing for US healthcare organisations with AI agents and human specialists. Funding, customers and alternatives.",
+ "content": "<p>Medallion is a US healthcare operations company that handles the paperwork needed before a clinician can see patients and get paid. Its platform covers payer enrollment with Medicare, Medicaid and commercial insurers, credentialing (verifying a provider's licences, education and history), roster management, delegated credentialing, hospital privileging, cross-state licensing, ongoing monitoring and payer contract management. Medallion says autonomous AI agents do much of the multi-step work across payer portals, CAQH, email, fax and phone, with human specialists reviewing exceptions and critical steps. It has recently acquired Andros, according to its homepage.</p><p>Customers named on Medallion's site include Headspace, Iris Telehealth, Tampa General Hospital, UnitedHealthcare, CareSource, Oak Street Health, VNS Health and Virta Health, and the company says it serves more than 300 organisations. It cites results such as Tampa General cutting turnaround from 30 days to three; these are company figures. Medallion's founder and CEO is Derek Lo, whom the company describes as a second-time founder.</p><p>In August 2025 Medallion raised $43 million led by Acrew Capital, with Washington Harbour Partners and returning investors Sequoia Capital, GV and Spark Capital, bringing total funding to $130 million, HIT Consultant reported. Alongside the round it launched CredAlliance, a shared credentialing service for health plans in which a provider is verified once and the result is shared across participating payers, aimed at what it estimates is $1.2 billion a year in duplicate re-credentialing. The company said its platform supports about 1 million providers and that enterprise annual recurring revenue grew 106%.</p><p>Medallion does not publish prices. Its pricing page says engagements are built around each customer's goals, scope and performance commitments, and asks buyers to get in touch.</p><p><em>This page is research, not a review. We have not used Medallion; facts come from its website and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Healthcare provider credentialing and enrollment",
+  "platform": "Web platform with AI agents and specialist services",
+  "starts_at": "Custom pricing",
+  "schema_category": "HealthApplication",
+  "summary_short": "AI-assisted credentialing, payer enrollment and licensing for healthcare providers",
+  "maker": {"name": "Medallion", "url": "https://www.medallion.co/"},
+  "team": [{"name": "Derek Lo", "role": "Founder and CEO"}],
+  "gallery": [
+   {"url": "https://www.medallion.co/assets/media/seo/core-pages/medallion-homepage.jpg", "w": 1200, "h": 630, "alt": "Medallion banner reading Better outcomes for credentialing, faster paths to billable providers, beside a chart of completed enrollments by payer", "credit": "Image: Medallion (medallion.co)"}
+  ],
+  "use_cases": [
+   "Enrolling new clinicians with Medicare, Medicaid and commercial payers",
+   "Credentialing and re-credentialing providers",
+   "Managing state licences for clinicians who practise across states",
+   "Keeping provider rosters and data up to date",
+   "Shared credentialing for health plans through CredAlliance"
+  ],
+  "audience": {
+   "fit": [
+    "telehealth and multi-state provider groups adding clinicians quickly",
+    "health systems with large credentialing workloads",
+    "health plans that credential large provider networks"
+   ],
+   "not_fit": [
+    "a single practitioner credentialing once",
+    "buyers who want a public price list"
+   ]
+  },
+  "pricing": {
+   "intro": "Medallion does not publish prices. Its pricing page says each engagement is built around the customer's operational goals, scope and performance commitments.",
+   "plans": [{"name": "Medallion platform and services", "price": "Custom", "detail": "Contact Medallion"}],
+   "url": "https://www.medallion.co/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Covers credentialing, enrollment and licensing in one place",
+   "AI agents plus human review",
+   "Well-known healthcare customers"
+  ],
+  "cons": [
+   "No public pricing",
+   "Speed and savings figures are company estimates"
+  ],
+  "alternatives": {
+   "intro": "Other credentialing and provider data tools.",
+   "items": [
+    {"name": "CAQH", "url": "https://www.caqh.org/", "what": "Industry provider data and credentialing utility", "difference": "Non-profit industry utility used by many payers."},
+    {"name": "Verifiable", "url": "https://verifiable.com/", "what": "Credentialing software and primary-source verification", "difference": "Software-first approach for in-house teams."},
+    {"name": "Symplr", "url": "https://www.symplr.com/", "what": "Healthcare operations software including credentialing", "difference": "Broad suite for hospitals."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Medallion do?", "a": "It handles provider credentialing, payer enrollment, licensing, privileging and monitoring for healthcare organisations, using AI agents and human specialists."},
+   {"q": "How much does Medallion cost?", "a": "Pricing is custom; Medallion does not publish a price list."},
+   {"q": "How much has Medallion raised?", "a": "$130 million in total after a $43 million round led by Acrew Capital in August 2025."},
+   {"q": "What is CredAlliance?", "a": "A shared credentialing service for health plans where a provider is verified once and the result is reused across participating payers."}
+  ],
+  "sources": [
+   {"label": "Medallion: homepage", "url": "https://www.medallion.co/"},
+   {"label": "Medallion: about", "url": "https://www.medallion.co/about-medallion"},
+   {"label": "Medallion: pricing", "url": "https://www.medallion.co/pricing"},
+   {"label": "HIT Consultant: Medallion raises $43M (Aug 2025)", "url": "https://hitconsultant.net/2025/08/18/medallion-raises-43m-to-streamline-healthcare-provider-networks-with-ai/"},
+   {"label": "Medallion: raises $43 million and launches CredAlliance", "url": "https://medallion.co/news/medallion-raises-43-million-to-expand-ai-infrastructure-and-launch-credalliance"}
+  ]
+ }
+}

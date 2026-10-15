@@ -1,0 +1,149 @@
+{
+ "slug": "moveworks",
+ "website": "https://www.moveworks.com/",
+ "excerpt": "Moveworks makes an AI assistant that lets employees get IT, HR and other requests resolved in chat. Founded in 2016, it was acquired by ServiceNow in December 2025.",
+ "content": "<p>Moveworks builds an AI assistant for employees inside large companies. Instead of filing a ticket and waiting, a worker can ask the assistant in chat to reset a password, request software access, find a policy or update personal details, and it searches company knowledge and takes the action in the underlying business systems where it can. Moveworks describes it as an AI assistant platform for the entire workforce to search and act across business applications, built on what it calls a reasoning engine plus enterprise search. Entrepreneur India reported that close to 90% of its customers have rolled the assistant out to their whole workforce.</p><p>Moveworks was founded in 2016 by Bhavin Shah (CEO), Varun Singh (president), Jiang Chen and Vaibhav Nivargi, according to its about page. It is headquartered in Mountain View, California, with offices in San Francisco, Austin, New York and Bangalore. The same page says it raised $315 million at a $2.1 billion valuation and lists customers such as Toyota, Instacart, CVS Health, Marriott, HP, GitHub, Databricks and Micron. In December 2025 Moveworks said it served more than 350 enterprise customers and 5.5 million employees.</p><p><strong>Moveworks is now part of ServiceNow.</strong> ServiceNow announced on 15 December 2025 that it had completed the acquisition, which Moveworks' own post called the largest in ServiceNow's history. The two companies had partnered for eight years and shared about 250 customers. ServiceNow said the combination pairs its agentic AI and workflow automation with Moveworks' assistant, enterprise search and reasoning technology to create an AI front door for work. Moveworks said standalone customers keep the full assistant, while ServiceNow customers get tighter integration across IT, HR and other services. The price was not disclosed in the announcements we read.</p><p>Moveworks does not publish prices; enterprise contracts are quoted after a demo.</p><p><em>This page is research, not a review. We have not used Moveworks; facts come from its pages and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Enterprise AI assistant (employee support)",
+  "platform": "Chat-based AI assistant and enterprise search",
+  "starts_at": "Not published; enterprise contracts",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Employee AI assistant that resolves IT and HR requests in chat; now part of ServiceNow",
+  "maker": {
+   "name": "Moveworks (a ServiceNow company)",
+   "url": "https://www.moveworks.com/"
+  },
+  "team": [
+   {
+    "name": "Bhavin Shah",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Varun Singh",
+    "role": "Co-founder and president"
+   },
+   {
+    "name": "Jiang Chen",
+    "role": "Co-founder and CTO of AI"
+   },
+   {
+    "name": "Vaibhav Nivargi",
+    "role": "Co-founder and CTO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.moveworks.com/content/dam/images/internal/open-graph/moveworks-open-graph-homepage-v2.jpg",
+    "w": 1200,
+    "h": 630,
+    "alt": "Moveworks banner reading AI that gets work done beside a screenshot of the assistant answering a relocation question with address and benefits updates",
+    "credit": "Image: Moveworks (moveworks.com)"
+   },
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Moveworks_headquarters..jpg/1280px-Moveworks_headquarters..jpg",
+    "w": 1280,
+    "h": 853,
+    "alt": "Moveworks sign with its purple logo in front of a glass-topped office building surrounded by flowering plants",
+    "credit": "Photo: Laser24, CC BY-SA 4.0, via Wikimedia Commons (File:Moveworks headquarters..jpg)"
+   }
+  ],
+  "use_cases": [
+   "Resolving IT requests such as password resets and software access in chat",
+   "Answering HR and policy questions from company knowledge",
+   "Searching across enterprise apps and documents",
+   "Taking actions in business systems on an employee's behalf",
+   "Deflecting tickets from the service desk"
+  ],
+  "audience": {
+   "fit": [
+    "large enterprises with busy IT and HR service desks",
+    "companies already using ServiceNow"
+   ],
+   "not_fit": [
+    "small businesses without a service desk",
+    "buyers who want transparent self-serve pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "Moveworks does not publish prices. Contracts are enterprise agreements quoted after a demo.",
+   "plans": [
+    {
+     "name": "Moveworks AI Assistant",
+     "price": "Not published",
+     "detail": "Contact Moveworks or ServiceNow"
+    }
+   ],
+   "url": "https://www.moveworks.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Takes actions, not just answers questions",
+   "Large enterprise customer base",
+   "Backed by ServiceNow's platform after the 2025 acquisition"
+  ],
+  "cons": [
+   "No public pricing",
+   "Product direction now depends on ServiceNow"
+  ],
+  "alternatives": {
+   "intro": "Other AI assistants for employee support and enterprise search.",
+   "items": [
+    {
+     "name": "Glean",
+     "url": "https://www.glean.com/",
+     "what": "Enterprise AI search and assistant",
+     "difference": "Focus on search across company knowledge."
+    },
+    {
+     "name": "Aisera",
+     "url": "https://aisera.com/",
+     "what": "AI agents for IT, HR and customer service",
+     "difference": "Independent agentic service-desk vendor."
+    },
+    {
+     "name": "Microsoft 365 Copilot",
+     "url": "https://www.microsoft.com/microsoft-365/copilot",
+     "what": "AI assistant across Microsoft 365",
+     "difference": "Built into Microsoft's productivity suite."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who owns Moveworks?",
+    "a": "ServiceNow, which announced it had completed the acquisition on 15 December 2025."
+   },
+   {
+    "q": "What does Moveworks do?",
+    "a": "It provides an AI assistant that lets employees resolve IT, HR and other requests and search company knowledge through chat."
+   },
+   {
+    "q": "Who founded Moveworks?",
+    "a": "Bhavin Shah, Varun Singh, Jiang Chen and Vaibhav Nivargi, in 2016."
+   },
+   {
+    "q": "How much funding did Moveworks raise?",
+    "a": "Its about page says $315 million at a $2.1 billion valuation before the acquisition."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Moveworks: about",
+    "url": "https://www.moveworks.com/us/en/company/about"
+   },
+   {
+    "label": "Moveworks: ServiceNow acquisition closed (Dec 2025)",
+    "url": "https://www.moveworks.com/us/en/resources/blog/servicenow-moveworks-acquisition-closed"
+   },
+   {
+    "label": "Entrepreneur India: ServiceNow completes acquisition of Moveworks",
+    "url": "https://india.entrepreneur.com/en-in/news-and-trends/servicenow-completes-acquisition-of-moveworks/500915"
+   },
+   {
+    "label": "ServiceNow newsroom: ServiceNow completes acquisition of Moveworks",
+    "url": "https://newsroom.servicenow.com/press-releases/details/2025/ServiceNow-completes-acquisition-of-Moveworks/default.aspx"
+   }
+  ]
+ }
+}

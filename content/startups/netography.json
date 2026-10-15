@@ -1,0 +1,71 @@
+{
+ "slug": "netography",
+ "website": "https://www.vectra.ai/platform/network-observability",
+ "excerpt": "Netography built Netography Fusion, agentless cloud-native network observability from flow logs. Vectra AI acquired it in October 2025 and sells it as Vectra Fusion.",
+ "content": "<p>Netography was a network security company that built Netography Fusion, a cloud-native platform for seeing what is happening on an organisation's networks. Instead of installing agents on servers or putting hardware taps on network links, it collected network metadata that clouds and routers already produce, such as VPC flow logs from AWS, Azure and Google Cloud, DNS records and connection patterns, and analysed it centrally. SiliconANGLE described an approach Netography called the atomized network, treating modern enterprise networks as a mix of on-premises, cloud, SaaS, edge and remote pieces. Security teams could write detection rules, for example for traffic crossing a trust boundary, and respond with alerts, BGP flowspec commands or third-party tools.</p><p>Netography was founded in 2018 and raised $47.6 million in venture funding, including a $45 million round in November 2021, SiliconANGLE reported, from investors including Bessemer Venture Partners, SYN Ventures, Andreessen Horowitz, Mango Capital, Harpoon Ventures and Wing Capital. Martin Roesch was its CEO.</p><p><strong>Netography has been acquired.</strong> On 2 October 2025 Vectra AI, a threat detection and response company based in San Jose, announced it had bought Netography for an undisclosed price. Vectra said Netography Fusion would join its portfolio as Vectra Fusion, giving uniform visibility across AWS, Azure, Google Cloud and on-premises networks alongside Vectra's AI-driven attack detection. Quotes in the announcement came from security leaders at FICO and Rubrik describing their use of the product. Netography's former website now redirects to Vectra's network observability page, which lists asset and identity discovery, risky access paths and exposure prioritisation across clouds, SaaS and on-premises networks.</p><p>Vectra does not publish prices for the product; it offers a product tour and demos.</p><p><em>This page is research, not a review. We have not tested Netography Fusion or Vectra; facts come from Vectra's pages and SiliconANGLE.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Network security observability (acquired by Vectra AI)",
+  "platform": "Cloud-native SaaS (now Vectra Fusion)",
+  "starts_at": "Not published; demo on request",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Agentless network observability from cloud flow logs; now Vectra Fusion",
+  "maker": {"name": "Vectra AI (formerly Netography Inc.)", "url": "https://www.vectra.ai/"},
+  "team": [{"name": "Martin Roesch", "role": "CEO of Netography at the 2025 acquisition"}],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/64e36a72d57403710ee5415d/69e628954bb5c7d6b9a047e0_OG_ObservabilityPage_1200x630_041726.png", "w": 1200, "h": 634, "alt": "Vectra banner reading Continuous observability across hybrid networks over a dark blue network map", "credit": "Image: Vectra AI (vectra.ai)"}
+  ],
+  "use_cases": [
+   "Monitoring traffic across AWS, Azure and Google Cloud from VPC flow logs",
+   "Detecting trust-boundary violations and unexpected connections",
+   "Building an inventory of devices, users and service accounts from network activity",
+   "Feeding network context into a security operations centre",
+   "Responding to attacks with alerts or BGP flowspec rules"
+  ],
+  "audience": {
+   "fit": [
+    "security teams running hybrid and multi-cloud networks",
+    "SOCs that want network visibility without deploying taps or agents",
+    "existing Vectra AI customers"
+   ],
+   "not_fit": [
+    "small businesses without a security operations team",
+    "buyers looking for a standalone Netography contract: it is now sold by Vectra"
+   ]
+  },
+  "pricing": {
+   "intro": "Vectra AI does not list prices on its network observability page. It offers a product tour and demo requests.",
+   "plans": [{"name": "Vectra Fusion / Network Observability", "price": "Not published", "detail": "Contact Vectra AI"}],
+   "url": "https://www.vectra.ai/platform/network-observability",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "No agents, taps or packet capture needed",
+   "Covers multiple clouds and on-premises networks",
+   "Now backed by a larger security vendor"
+  ],
+  "cons": [
+   "No public pricing",
+   "Standalone product has been folded into Vectra's platform"
+  ],
+  "alternatives": {
+   "intro": "Other network detection and observability tools.",
+   "items": [
+    {"name": "ExtraHop", "url": "https://www.extrahop.com/", "what": "Network detection and response", "difference": "Analyses packet-level wire data."},
+    {"name": "Darktrace", "url": "https://www.darktrace.com/", "what": "AI-based network and cloud threat detection", "difference": "Self-learning anomaly detection across many environments."},
+    {"name": "Corelight", "url": "https://corelight.com/", "what": "Network evidence and detection built on Zeek", "difference": "Open-source roots in Zeek and Suricata."}
+   ]
+  },
+  "faq": [
+   {"q": "Who owns Netography?", "a": "Vectra AI, which announced the acquisition on 2 October 2025."},
+   {"q": "What happened to Netography Fusion?", "a": "It joined Vectra AI's portfolio as Vectra Fusion."},
+   {"q": "How much did Netography raise?", "a": "$47.6 million, including a $45 million round in November 2021, SiliconANGLE reported."},
+   {"q": "How does Netography collect data?", "a": "From network metadata such as cloud VPC flow logs and DNS records, without agents or network taps."}
+  ],
+  "sources": [
+   {"label": "Vectra AI: Vectra AI acquires Netography (Oct 2025)", "url": "https://www.vectra.ai/about/news/vectra-ai-acquires-netography-to-expand-its-ai-driven-cybersecurity-platform-with-pioneering-cloud-native-network-observability"},
+   {"label": "SiliconANGLE: Vectra AI acquires Netography (Oct 2025)", "url": "https://siliconangle.com/2025/10/02/vectra-ai-acquires-netography-boost-cloud-native-network-observability/"},
+   {"label": "Vectra AI: network observability", "url": "https://www.vectra.ai/platform/network-observability"}
+  ]
+ }
+}
