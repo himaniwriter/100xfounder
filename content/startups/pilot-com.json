@@ -1,0 +1,175 @@
+{
+ "slug": "pilot-com",
+ "website": "https://pilot.com/",
+ "excerpt": "Pilot provides bookkeeping, tax and CFO services for startups and small businesses, combining in-house software with US-based finance experts. Bookkeeping starts at $99/month; valued at $1.2B in 2021.",
+ "content": "<p>Pilot runs the financial back office for startups and small businesses. Instead of hiring an in-house bookkeeper or a local accountant, a company connects its bank, card, payroll and payment accounts to Pilot, and Pilot's team uses its own software to categorise transactions, reconcile accounts and close the books each month. Customers can add tax preparation, CFO services such as budgeting and investor reporting, and COO services. Pilot's About page says it gives customers a team of finance experts who take this work off their plate. It also states that Pilot is not a public accounting firm and does not provide services that require a licence to practise public accountancy.</p><p>Pilot was founded by Waseem Daher (CEO), Jessica McKellar (CTO) and Jeff Arnold (COO). TechCrunch reported in March 2018 that the three had earlier built Ksplice, which let administrators apply security patches without rebooting and was sold to Oracle in 2011, and that Pilot launched with $15 million in funding led by Index Ventures. In March 2021 CNBC reported that Pilot raised a $100 million round led by Bezos Expeditions, Jeff Bezos's investment firm, and the hedge fund Whale Rock Capital, with Sequoia and Index Ventures joining, which doubled its valuation to $1.2 billion. Stripe and its founders had invested earlier. Pilot's About page says it has raised more than $150 million in total and lists offices in San Francisco and Nashville.</p><p>Pilot publishes its prices. The Essentials bookkeeping plan costs $99 a month for businesses with up to $100,000 in monthly expenses and uses AI to categorise transactions, reconcile accounts and close the books monthly, with support through in-app messaging. Higher tiers add a dedicated US-based bookkeeper, accrual accounting, bill management and custom reporting, and are priced by monthly expenses. Tax, CFO and COO services are priced separately on the same page, and a free trial is offered.</p><p>This profile draws on Pilot's own pages and published reporting. We have not tested the service, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Bookkeeping, tax and CFO services",
+  "platform": "Web",
+  "starts_at": "Bookkeeping from $99/month",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Bookkeeping, tax and CFO services for startups and small businesses, run by software plus finance experts",
+  "maker": {
+   "name": "Pilot",
+   "url": "https://pilot.com/about"
+  },
+  "team": [
+   {
+    "name": "Waseem Daher",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Jessica McKellar",
+    "role": "Co-founder and CTO"
+   },
+   {
+    "name": "Jeff Arnold",
+    "role": "Co-founder and COO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/60a5136f2c6c8e4fb3a130d9/6881034dbf4babd2f5a2215e_pilot-opengraph.png",
+    "alt": "Pilot banner reading Bookkeeping, Accounting, Taxes, Growth, with a smiling woman beside a cash dashboard and a chat message saying your books are ready",
+    "credit": "Image: Pilot",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/60a5136f2c6c8e4fb3a130d9/60c8bceb64a66c0029529a0b_pilot-open-graph-image.jpeg",
+    "alt": "Pilot illustration of a woman working on a laptop while two colleagues review floating charts and financial documents",
+    "credit": "Image: Pilot",
+    "w": 1600,
+    "h": 1200
+   }
+  ],
+  "use_cases": [
+   "Outsourcing monthly bookkeeping and book closes",
+   "Preparing business tax returns",
+   "Getting CFO help with budgets, forecasts and investor reporting",
+   "Getting clean books ready for a fundraise or due diligence",
+   "Managing vendor bills alongside the books"
+  ],
+  "audience": {
+   "fit": [
+    "run a US startup or small business without a full-time finance team",
+    "want bookkeeping, tax and CFO help from one provider",
+    "prefer published, tiered pricing"
+   ],
+   "not_fit": [
+    "need a licensed CPA firm for an audit or attest work: Pilot says it is not a public accounting firm",
+    "only need DIY accounting software"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices from Pilot's official pricing page. Bookkeeping tiers are priced by monthly expenses; tax, CFO and COO services are priced separately. A free trial is offered.",
+   "plans": [
+    {
+     "name": "Essentials (bookkeeping)",
+     "price": "$99/month",
+     "amount": 99,
+     "currency": "USD",
+     "detail": "Up to $100,000 in monthly expenses; AI categorisation, reconciliation and monthly close; cash-basis books; in-app support"
+    },
+    {
+     "name": "Core and higher bookkeeping tiers",
+     "price": "Priced by monthly expenses",
+     "detail": "Dedicated US-based bookkeeper, cash or accrual basis, bill management, custom chart of accounts"
+    },
+    {
+     "name": "Tax, CFO and COO services",
+     "price": "See pricing page",
+     "detail": "Priced separately"
+    }
+   ],
+   "notes": [
+    "Pilot also lists separate pricing for professional services firms."
+   ],
+   "url": "https://pilot.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published pricing starting at $99 a month",
+   "Bookkeeping, tax and CFO services from one provider",
+   "Human bookkeepers on higher tiers"
+  ],
+  "cons": [
+   "Not a CPA firm, so it cannot do audits",
+   "Costs rise with monthly expenses"
+  ],
+  "alternatives": {
+   "intro": "Other outsourced bookkeeping and accounting services. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Zeni",
+     "url": "https://www.zeni.ai/",
+     "what": "AI bookkeeping and finance team for startups",
+     "tags": [
+      "Bookkeeping",
+      "Startups"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Similar software-plus-experts model aimed at startups."
+    },
+    {
+     "name": "Kruze Consulting",
+     "url": "https://kruzeconsulting.com/",
+     "what": "Accounting, tax and CFO services for VC-backed startups",
+     "tags": [
+      "Accounting",
+      "Startups"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "A CPA firm specialising in venture-backed startups."
+    },
+    {
+     "name": "Puzzle",
+     "url": "https://puzzle.io/",
+     "what": "AI accounting software for startups",
+     "tags": [
+      "Accounting software"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Software-first; you or your accountant run the books."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does Pilot cost?",
+    "a": "Bookkeeping starts at $99 a month on the Essentials plan for businesses with up to $100,000 in monthly expenses. Higher tiers, tax and CFO services cost more, per its pricing page."
+   },
+   {
+    "q": "Who founded Pilot?",
+    "a": "Waseem Daher, Jessica McKellar and Jeff Arnold, who earlier founded Ksplice, which Oracle bought in 2011."
+   },
+   {
+    "q": "Is Pilot backed by Jeff Bezos?",
+    "a": "Yes. Bezos Expeditions co-led Pilot's $100 million round in 2021, which valued it at $1.2 billion, CNBC reported."
+   },
+   {
+    "q": "Is Pilot a CPA firm?",
+    "a": "No. Pilot says it is not a public accounting firm and does not provide services that require a public accountancy licence."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Pilot: About",
+    "url": "https://pilot.com/about"
+   },
+   {
+    "label": "Pilot pricing page",
+    "url": "https://pilot.com/pricing"
+   },
+   {
+    "label": "TechCrunch: Pilot raises $15M to bring bookkeeping into the modern era (14 Mar 2018)",
+    "url": "https://techcrunch.com/2018/03/14/pilot-raises-15m-to-bring-bookkeeping-into-the-modern-era/"
+   },
+   {
+    "label": "CNBC: Jeff Bezos-backed start-up Pilot hits $1.2 billion valuation (26 Mar 2021)",
+    "url": "https://www.cnbc.com/2021/03/26/jeff-bezos-backed-start-up-pilot-hits-1point2-billion-valuation-.html"
+   }
+  ]
+ }
+}

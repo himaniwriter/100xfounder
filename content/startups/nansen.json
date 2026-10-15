@@ -1,0 +1,154 @@
+{
+ "slug": "nansen",
+ "website": "https://nansen.ai/",
+ "excerpt": "Nansen is a Singapore-based onchain analytics platform that labels hundreds of millions of crypto wallets so traders can follow 'smart money', and now lets users trade from the same app. Backed by a16z and Accel.",
+ "content": "<p>Nansen analyses public blockchain data and attaches labels to wallet addresses, such as exchanges, funds, known traders and protocols, so investors can see who is moving money and where. Its best-known idea is \"smart money\": tracking wallets with a strong record so users can see what experienced crypto investors are buying or selling. Its website now describes the product as a way to trade everything onchain with AI, powered by more than 500 million labelled addresses, with tools to track smart money, analyse any token and execute trades in one place, plus a mobile app and the Nansen Wallet.</p><p>Nansen is based in Singapore and led by CEO Alex Svanevik. In June 2021 TechCrunch reported that it raised a $12 million Series A led by Andreessen Horowitz (a16z), and that its dashboards then analysed some 90 million Ethereum wallets for crypto traders and hedge funds. DealStreetAsia reported that Skyfall Ventures, Coinbase Ventures, imToken Ventures, Mechanism Capital and QCP Capital also joined, and that Svanevik planned to double headcount from 30 to 60 by the end of the year. In December 2021 The Block reported that Nansen had raised fresh funding led by Accel at a $750 million valuation, citing investors close to the deal; Nansen did not comment on the valuation at the time.</p><p>Nansen sells subscriptions, and its plans are shown inside the app rather than on a public pricing page; when we checked, its plans link redirected to an account page that requires sign-in, so we do not quote prices. Crypto assets are volatile and trading them carries a high risk of loss. Nothing on this page is investment advice.</p><p>This profile draws on Nansen's own site and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Onchain crypto analytics and trading",
+  "platform": "Web and mobile app",
+  "starts_at": "Plans shown in the app",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Labels 500M+ wallet addresses to track smart money, analyse tokens and trade onchain",
+  "maker": {
+   "name": "Nansen",
+   "url": "https://nansen.ai/"
+  },
+  "team": [
+   {
+    "name": "Alex Svanevik",
+    "role": "CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://framerusercontent.com/assets/VYzopdvyEUAWmwTVyhrNBRJbwL4.jpg",
+    "alt": "Nansen banner reading Trade Everything Onchain With AI beside a dark Token Screener table listing tokens, prices and volumes",
+    "credit": "Image: Nansen",
+    "w": 1600,
+    "h": 840
+   },
+   {
+    "url": "https://framerusercontent.com/images/Yg5s78lp4KBGzNqLFyJKHsZRE0E.png",
+    "alt": "Close-up of a phone showing the Nansen Wallet screen with a search bar and a balance in green",
+    "credit": "Image: Nansen",
+    "w": 1080,
+    "h": 1080
+   }
+  ],
+  "use_cases": [
+   "Following what labelled smart-money wallets are buying and selling",
+   "Researching a token's holders and flows before investing",
+   "Screening tokens across chains by activity",
+   "Trading onchain from the same app as the research",
+   "Due diligence on wallets and counterparties for crypto funds"
+  ],
+  "audience": {
+   "fit": [
+    "trade or invest in crypto and want onchain data on who holds what",
+    "run research at a crypto fund or trading desk",
+    "want wallet labels rather than raw blockchain explorers"
+   ],
+   "not_fit": [
+    "want a regulated, low-risk investment product",
+    "only need simple price tracking"
+   ]
+  },
+  "pricing": {
+   "intro": "Nansen's plans are shown inside the app after sign-in; its public plans link redirects to an account page. We do not quote prices we could not check on an official public page.",
+   "plans": [
+    {
+     "name": "Nansen plans",
+     "price": "Shown in the app",
+     "detail": "Subscription access to analytics and trading tools"
+    }
+   ],
+   "notes": [
+    "Check current plans at app.nansen.ai."
+   ],
+   "url": "https://nansen.ai/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Very large set of labelled wallet addresses",
+   "Research and trading in one app",
+   "Backed by a16z and Accel"
+  ],
+  "cons": [
+   "Plan prices not shown on a public page",
+   "Crypto trading is high risk"
+  ],
+  "alternatives": {
+   "intro": "Other onchain analytics tools. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Arkham",
+     "url": "https://arkm.com/",
+     "what": "Onchain intelligence platform with entity labels",
+     "tags": [
+      "Onchain analytics"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Closest rival in wallet and entity labelling."
+    },
+    {
+     "name": "Dune",
+     "url": "https://dune.com/",
+     "what": "SQL queries and dashboards on blockchain data",
+     "tags": [
+      "Onchain analytics",
+      "SQL"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Community-built dashboards; you write queries yourself."
+    },
+    {
+     "name": "Glassnode",
+     "url": "https://glassnode.com/",
+     "what": "Onchain market metrics for Bitcoin and Ethereum",
+     "tags": [
+      "Market data"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Focus on market-wide metrics rather than wallet tracking."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Nansen?",
+    "a": "An onchain analytics platform that labels crypto wallet addresses so investors can track smart money and analyse tokens; it now also supports trading."
+   },
+   {
+    "q": "Who invested in Nansen?",
+    "a": "a16z led its $12 million Series A in 2021, and The Block reported a later round led by Accel at a $750 million valuation."
+   },
+   {
+    "q": "How much does Nansen cost?",
+    "a": "Plans are shown inside the app; we could not check them on a public page."
+   },
+   {
+    "q": "Where is Nansen based?",
+    "a": "Singapore, according to DealStreetAsia."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Nansen website",
+    "url": "https://nansen.ai/"
+   },
+   {
+    "label": "TechCrunch: Nansen raises $12M from a16z (29 Jun 2021)",
+    "url": "https://techcrunch.com/2021/06/29/nansen-raises-12m-from-a16z-to-help-investors-make-sense-of-crypto-markets/"
+   },
+   {
+    "label": "DealStreetAsia: SG crypto research firm Nansen bags $12m Series A led by a16z",
+    "url": "https://www.dealstreetasia.com/stories/nansen-series-a-a16z-247984/"
+   },
+   {
+    "label": "The Block: Nansen secures fresh funding at $750 million valuation (Dec 2021)",
+    "url": "https://www.theblock.co/post/127747/data-startup-nansen-secures-fresh-funding-at-750-million-valuation"
+   }
+  ]
+ }
+}

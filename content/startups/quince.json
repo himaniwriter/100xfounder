@@ -1,0 +1,165 @@
+{
+ "slug": "quince",
+ "website": "https://www.quince.com/",
+ "excerpt": "Quince is a San Francisco online retailer selling cashmere, silk, leather, bedding and home goods at low prices through a factory-direct model. Valued at $10.1B after a $500M Series E in March 2026.",
+ "content": "<p>Quince is an online store for everyday essentials made from premium materials: Mongolian cashmere sweaters, washable silk, Italian leather bags and shoes, Turkish cotton towels, bedding, furniture, jewellery, activewear and more. Its pitch is luxury-grade quality at much lower prices. Quince's About page says it keeps prices low with a factory-direct model that cuts out sourcing agents, warehousing, wholesaling, distribution and storefront retail, shipping from partner factories to the customer, and that it aims to be open about materials, manufacturing and pricing. It calls this a manufacturer-to-consumer model. The site offers free shipping and returns for 365 days.</p><p>Quince is headquartered in San Francisco. Wikipedia lists its founders as Sid Gupta, Sourabh Mahajan, Becky Mortimer and Zunu Mittal; Gupta is CEO and Mahajan is CTO. It started as Last Brand and rebranded to Quince in June 2020.</p><p>The company has grown quickly. According to Wikipedia, in January 2025 it raised a $120 million Series C led by Notable Capital and Wellington Management. Bloomberg reported in July 2025 that it was raising about $200 million at a valuation of more than $4.5 billion, led by Iconiq. On 11 March 2026 Quince announced a $500 million Series E led by ICONIQ at a $10.1 billion valuation, with Basis Set Ventures, Wellington Management, WndrCo, Baillie Gifford, Notable Capital and DST Global among the investors, Retail Dive and FashionUnited reported. Reports said it passed $1 billion in revenue in 2025. Quince has also faced legal disputes: Wikipedia notes a November 2025 lawsuit from Williams-Sonoma over comparative advertising claims, and trademark disputes with Yeti and Deckers (UGG).</p><p>Prices are set per product on the site. This profile draws on Quince's own pages and published reporting. We have not bought from Quince, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Direct-to-consumer apparel and home goods",
+  "platform": "Web",
+  "starts_at": "Per-product prices; free shipping and 365-day returns",
+  "schema_category": "ShoppingApplication",
+  "summary_short": "Cashmere, silk, leather and home essentials sold factory-direct at low prices",
+  "maker": {
+   "name": "Quince",
+   "url": "https://www.quince.com/about-us"
+  },
+  "team": [
+   {
+    "name": "Sid Gupta",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Sourabh Mahajan",
+    "role": "Co-founder and CTO"
+   },
+   {
+    "name": "Becky Mortimer",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Zunu Mittal",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://images.quince.com/3jTOPmgGrtpxP7ZYUJJfds/31eaa48e7392a7e1c154bbe305e4f267/Rectangle_1380.jpg?fm=jpg&q=85&w=1600",
+    "alt": "Two models in a dark blue room: a woman in a light blue shirt and jeans and a man in a navy quarter-zip sweater, from Quince's homepage",
+    "credit": "Image: Quince",
+    "w": 1600,
+    "h": 2000
+   }
+  ],
+  "use_cases": [
+   "Buying cashmere sweaters and knitwear at lower prices",
+   "Shopping for silk, linen and cotton basics",
+   "Furnishing a home with bedding, towels, rugs and furniture",
+   "Buying leather bags and shoes"
+  ],
+  "audience": {
+   "fit": [
+    "want natural materials such as cashmere, silk and leather without luxury-brand prices",
+    "are happy to shop online with long return windows",
+    "live in a market Quince ships to"
+   ],
+   "not_fit": [
+    "want to try products in a physical store",
+    "prefer established luxury brands for their name"
+   ]
+  },
+  "pricing": {
+   "intro": "Quince sells individual products at prices listed on its website. It advertises free shipping and easy returns for 365 days.",
+   "plans": [
+    {
+     "name": "Products",
+     "price": "Listed per item",
+     "detail": "Free shipping and returns for 365 days, per the homepage"
+    }
+   ],
+   "notes": [
+    "Prices vary by product and change over time."
+   ],
+   "url": "https://www.quince.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Low prices for premium materials",
+   "Free shipping and 365-day returns",
+   "Transparent about materials and factories"
+  ],
+  "cons": [
+   "Online only",
+   "Has faced lawsuits over advertising and trademarks"
+  ],
+  "alternatives": {
+   "intro": "Other direct-to-consumer brands for quality basics. We have not compared products.",
+   "items": [
+    {
+     "name": "Everlane",
+     "url": "https://www.everlane.com/",
+     "what": "Direct-to-consumer apparel with transparent pricing",
+     "tags": [
+      "Apparel"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Clothing-focused, with physical stores."
+    },
+    {
+     "name": "Uniqlo",
+     "url": "https://www.uniqlo.com/",
+     "what": "Global affordable basics retailer",
+     "tags": [
+      "Apparel"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Large store network; less focus on luxury materials."
+    },
+    {
+     "name": "Naadam",
+     "url": "https://naadam.co/",
+     "what": "Direct-to-consumer cashmere brand",
+     "tags": [
+      "Cashmere"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Specialises in cashmere rather than a wide range."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Why is Quince cheap?",
+    "a": "Quince says it uses a factory-direct model that skips sourcing agents, warehousing, wholesaling, distribution and storefront retail."
+   },
+   {
+    "q": "Who founded Quince?",
+    "a": "Sid Gupta, Sourabh Mahajan, Becky Mortimer and Zunu Mittal. Gupta is CEO."
+   },
+   {
+    "q": "How much is Quince valued at?",
+    "a": "$10.1 billion after a $500 million Series E led by ICONIQ in March 2026, according to Retail Dive and FashionUnited."
+   },
+   {
+    "q": "What is Quince's return policy?",
+    "a": "Its homepage advertises free shipping and easy returns for 365 days."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Quince: About us",
+    "url": "https://www.quince.com/about-us"
+   },
+   {
+    "label": "Quince homepage",
+    "url": "https://www.quince.com/"
+   },
+   {
+    "label": "Retail Dive: Quince raises $500M Series E, valuation tops $10B (Mar 2026)",
+    "url": "https://www.retaildive.com/news/Quince-500-million-series-e-valuation-tops-10b/814412/"
+   },
+   {
+    "label": "FashionUnited: Quince secures 500 million US dollars in Series E funding (12 Mar 2026)",
+    "url": "https://fashionunited.com/news/business/quince-secures-500-million-us-dollars-in-series-e-funding/2026031271134"
+   },
+   {
+    "label": "Bloomberg Law: Discount retailer Quince raises cash at over $4.5 billion value (Jul 2025)",
+    "url": "https://news.bloomberglaw.com/esg/discount-retailer-quince-raises-cash-at-over-4-5-billion-value"
+   },
+   {
+    "label": "Wikipedia: Quince (company)",
+    "url": "https://en.wikipedia.org/wiki/Quince_(company)"
+   }
+  ]
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "slug": "melio",
+ "website": "https://melio.com/",
+ "excerpt": "Melio is US accounts payable and receivable software for small businesses: pay bills by bank transfer or card, send invoices and sync with QuickBooks or Xero. Free plan available; acquired by Xero in October 2025.",
+ "content": "<p>Melio is a payments platform for US small and mid-sized businesses. It lets a business pay vendors, contractors and other bills by bank transfer (ACH) or card, using the payment method each side prefers, and lets it get paid through branded invoices and payment links. Plans add batch payments, approval workflows, sync with QuickBooks Online and Xero, and expense management. Melio also builds for accountants and bookkeepers who manage payments for clients. Its About page says it processes tens of billions of dollars in payments a year for hundreds of thousands of US businesses and thousands of accounting firms.</p><p>Melio was founded in 2018 by Matan Bar, Ilan Atias and Ziv Paz, according to Calcalist. It grew quickly: in September 2021 it raised a $250 million Series D co-led by Thrive Capital and General Catalyst that tripled its valuation to $4 billion, taking total funding to about $506 million, Calcalist reported. A later round in 2024 valued it at about $2 billion.</p><p><strong>Acquired by Xero.</strong> In June 2025 the New Zealand accounting software company Xero agreed to buy Melio, a deal Reuters reported at more than $2.5 billion. CPA Practice Advisor reported that Xero completed the acquisition on 15 October 2025, paying $2.5 billion up front in cash and shares, with up to $500 million more payable to Melio employees over three years. Melio continues to operate under its own brand and website, and its pricing page now includes a free six-month Xero subscription.</p><p>Melio publishes its prices. A free plan for one user includes five free ACH payments a month. The Core plan costs $25 a month ($20 billed annually) with 20 free ACH payments a month, and Boost costs $55 a month ($44 billed annually) with 50; extra users cost more. New customers get the first 90 days free. This profile draws on Melio's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Accounts payable and receivable",
+  "platform": "Web",
+  "starts_at": "Free plan; paid from $25/month",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Pay bills by ACH or card and get paid by invoice, for US small businesses; now part of Xero",
+  "maker": {
+   "name": "Melio (a Xero company)",
+   "url": "https://melio.com/about-us/"
+  },
+  "team": [
+   {
+    "name": "Matan Bar",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Ilan Atias",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Ziv Paz",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://melio.com/wp-content/uploads/2025/12/THUMBNAIL_Homepage-scaled.png",
+    "alt": "Melio product image: a dark payment card in front of the Melio Pay vendors screen and a phone showing balances and quick actions",
+    "credit": "Image: Melio",
+    "w": 2560,
+    "h": 1600
+   },
+   {
+    "url": "https://melio.com/wp-content/uploads/2025/10/Feature_Homepage-1-scaled.png",
+    "alt": "Melio screens showing a vendor bill list and a phone with a $500 payment and attached invoice, beside a dark payment card",
+    "credit": "Image: Melio",
+    "w": 2560,
+    "h": 1600
+   }
+  ],
+  "use_cases": [
+   "Paying vendor bills by ACH or card from one dashboard",
+   "Choosing card or bank transfer for each bill",
+   "Sending branded invoices and payment links to get paid",
+   "Setting up approval workflows for bills",
+   "Syncing payments with QuickBooks Online or Xero"
+  ],
+  "audience": {
+   "fit": [
+    "run a US small business that pays many vendor bills",
+    "use QuickBooks Online or Xero",
+    "are an accountant or bookkeeper paying bills for clients"
+   ],
+   "not_fit": [
+    "operate outside the US",
+    "need a full ERP for complex procurement"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices from Melio's official pricing page. New customers get 90 days free; after that, plans below apply. Monthly free ACH allowances differ by plan.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "One user, 5 free ACH payments a month, invoicing and payment links"
+    },
+    {
+     "name": "Core",
+     "price": "$25/month ($20 billed annually)",
+     "amount": 25,
+     "currency": "USD",
+     "detail": "20 free ACH a month, batch payments, QuickBooks Online and Xero sync, approval workflows; extra users $10/month"
+    },
+    {
+     "name": "Boost",
+     "price": "$55/month ($44 billed annually)",
+     "amount": 55,
+     "currency": "USD",
+     "detail": "50 free ACH a month, advanced automations and controls; extra users $10/month"
+    }
+   ],
+   "notes": [
+    "Fees for card payments and payments beyond the free ACH allowance are listed on the pricing page.",
+    "Plans include a free six-month Xero subscription offer, per the page."
+   ],
+   "url": "https://melio.com/pricing/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Free plan and published pricing",
+   "Pay by card or bank transfer from one place",
+   "Backed by Xero since 2025"
+  ],
+  "cons": [
+   "US businesses only",
+   "Free ACH payments are capped per plan"
+  ],
+  "alternatives": {
+   "intro": "Other accounts payable tools for small businesses. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "BILL",
+     "url": "https://www.bill.com/",
+     "what": "Accounts payable and receivable automation",
+     "tags": [
+      "AP/AR"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Larger, listed company aimed at small and mid-sized firms."
+    },
+    {
+     "name": "Ramp Bill Pay",
+     "url": "https://ramp.com/bill-pay",
+     "what": "Bill payments inside Ramp's spend management platform",
+     "tags": [
+      "AP",
+      "Spend management"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Bundled with corporate cards and expense management."
+    },
+    {
+     "name": "QuickBooks Bill Pay",
+     "url": "https://quickbooks.intuit.com/",
+     "what": "Bill payments inside QuickBooks Online",
+     "tags": [
+      "AP",
+      "Accounting"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Built into QuickBooks rather than a separate app."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Melio free?",
+    "a": "There is a free plan for one user with five free ACH payments a month. Paid plans start at $25 a month."
+   },
+   {
+    "q": "Who owns Melio?",
+    "a": "Xero. It completed its acquisition of Melio on 15 October 2025, CPA Practice Advisor reported."
+   },
+   {
+    "q": "Who founded Melio?",
+    "a": "Matan Bar, Ilan Atias and Ziv Paz, in 2018, according to Calcalist."
+   },
+   {
+    "q": "Does Melio work with QuickBooks?",
+    "a": "Yes. Paid plans include QuickBooks Online and Xero sync, per its pricing page."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Melio: About us",
+    "url": "https://melio.com/about-us/"
+   },
+   {
+    "label": "Melio pricing page",
+    "url": "https://melio.com/pricing/"
+   },
+   {
+    "label": "Calcalist: Melio triples valuation to $4 billion with $250 million Series D (Sep 2021)",
+    "url": "https://www.calcalistech.com/articles/0,7340,L-3917867,00.html"
+   },
+   {
+    "label": "Reuters: Xero to acquire fintech Melio in over $2.5 billion deal (24 Jun 2025)",
+    "url": "https://www.reuters.com/legal/transactional/australia-listed-xero-acquire-fintech-melio-over-25-billion-deal-2025-06-24/"
+   },
+   {
+    "label": "CPA Practice Advisor: Xero completes acquisition of Melio for $2.5B (15 Oct 2025)",
+    "url": "https://www.cpapracticeadvisor.com/2025/10/15/xero-acquires-payments-platform-melio-for-2-5b/170967/"
+   }
+  ]
+ }
+}
