@@ -1,0 +1,170 @@
+{
+ "slug": "loom",
+ "website": "https://www.loom.com/",
+ "excerpt": "Loom records your screen and camera and shares the video as a link. Now part of Atlassian after a roughly $975 million deal. Pricing, who it suits and alternatives.",
+ "content": "<p>Loom is a tool for recording short videos of your screen, your camera or both, then sharing them instantly as a link. Instead of booking a meeting, you record a walkthrough of a bug, a design review or a status update, and colleagues watch it when they have time, leaving comments and emoji reactions on the video. It works through a browser extension, desktop apps and mobile apps.</p><p>Loom was founded in 2015 in San Francisco by Joe Thomas, Vinay Hiremath and Shahed Khan. In October 2023 Atlassian, the company behind Jira and Confluence, agreed to buy it, and on 30 November 2023 Atlassian announced it had completed the acquisition. The price was about $975 million, according to Loom's legal advisers Wilson Sonsini. At the time Atlassian said Loom's business users were recording almost 5 million videos a month.</p><p>Loom carries on as its own product while being connected into Atlassian's other tools, so a recording can sit inside a Jira ticket or a Confluence page. The Business + AI plan adds Loom's AI features on top of the Business plan.</p><p>There is a free Starter plan with limits on the number of videos and the length of screen recordings, and paid plans charged per user. Loom says annual billing saves up to 17%.</p><p><em>We have not used Loom for this page. It brings together Loom's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Async video messaging",
+  "platform": "Chrome extension, macOS, Windows, iOS and Android",
+  "starts_at": "Free Starter; Business $18 per user/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Screen and camera recorder for sharing quick work videos as links",
+  "maker": {
+   "name": "Loom (an Atlassian company)",
+   "url": "https://www.loom.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/pvn35iyy/production/6f62a5ee8e9e6a4a980876e632eb1f58c3125591-2400x1254.jpg",
+    "w": 2400,
+    "h": 1254,
+    "alt": "Loom promotional image reading 'Better communication with a click', with a calendar and a recording bubble showing a woman's face and a 0:04 timer",
+    "credit": "Image: Loom (loom.com)"
+   }
+  ],
+  "use_cases": [
+   "Walking a colleague through a bug or a pull request",
+   "Design and document reviews without a meeting",
+   "Customer support answers and onboarding videos",
+   "Weekly status updates for distributed teams"
+  ],
+  "team": [
+   {
+    "name": "Joe Thomas",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Vinay Hiremath",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Shahed Khan",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "remote teams that want fewer meetings and more asynchronous updates",
+    "teams already on Jira or Confluence, where Loom videos fit in natively",
+    "support and sales teams that explain things better on video than in text"
+   ],
+   "not_fit": [
+    "anyone making polished, edited marketing videos: Loom is built for quick recordings",
+    "heavy users on the free plan, which caps videos and screen-recording length"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices from Loom's pricing page, in US dollars per user per month. The page says annual billing saves up to 17% but did not label which billing period the listed figures use.",
+   "url": "https://www.loom.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Starter",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Up to 25 videos per person, 5-minute screen recordings, up to 50 members, up to 720p"
+    },
+    {
+     "name": "Business",
+     "price": "$18 per user/month",
+     "amount": 18,
+     "currency": "USD",
+     "detail": "Unlimited videos and recording length, up to 4K"
+    },
+    {
+     "name": "Business + AI",
+     "price": "$24 per user/month",
+     "amount": 24,
+     "currency": "USD",
+     "detail": "Business plus Loom AI features; 14-day free trial"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Contact sales",
+     "detail": "Adds a 99.95% uptime SLA and enterprise controls"
+    }
+   ]
+  },
+  "alternatives": {
+   "intro": "Other ways to record and share work videos.",
+   "items": [
+    {
+     "name": "Vidyard",
+     "url": "https://www.vidyard.com/",
+     "what": "Video messaging for sales teams",
+     "difference": "Aimed at sales prospecting, with video tracking tied to CRMs."
+    },
+    {
+     "name": "Zight (formerly CloudApp)",
+     "url": "https://zight.com/",
+     "what": "Screen recording, screenshots and GIFs",
+     "difference": "Mixes quick screenshots and GIFs with video recording."
+    },
+    {
+     "name": "Microsoft Clipchamp",
+     "url": "https://clipchamp.com/",
+     "what": "Video editor with screen and camera recording",
+     "difference": "More of an editor; suits teams in Microsoft 365."
+    },
+    {
+     "name": "Miro",
+     "url": "https://miro.com/",
+     "what": "Online whiteboard",
+     "starts_at": "Free; Starter $8 per member/month billed annually",
+     "difference": "Another async-collaboration tool, but on a shared canvas rather than video."
+    }
+   ]
+  },
+  "pros": [
+   "Very quick to record and share: the link is ready as soon as you stop",
+   "Comments and emoji reactions sit right on the video",
+   "Built into Atlassian's Jira and Confluence"
+  ],
+  "cons": [
+   "Free plan limits screen recordings to 5 minutes and 25 videos per person",
+   "AI features cost extra on the Business + AI plan"
+  ],
+  "faq": [
+   {
+    "q": "Is Loom free?",
+    "a": "Yes, the Starter plan is free, with up to 25 videos per person and screen recordings up to 5 minutes."
+   },
+   {
+    "q": "Who owns Loom?",
+    "a": "Atlassian. It completed the acquisition on 30 November 2023 in a deal worth about $975 million."
+   },
+   {
+    "q": "Who founded Loom?",
+    "a": "Joe Thomas, Vinay Hiremath and Shahed Khan founded Loom in 2015."
+   },
+   {
+    "q": "How much is Loom Business?",
+    "a": "$18 per user a month, or $24 with AI features, according to Loom's pricing page on 15 October 2026."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Loom pricing",
+    "url": "https://www.loom.com/pricing"
+   },
+   {
+    "label": "Business Wire: Atlassian completes acquisition of Loom",
+    "url": "https://www.businesswire.com/news/home/20231129694662/en/Atlassian-Completes-Acquisition-of-Loom"
+   },
+   {
+    "label": "ITPro Today: Atlassian to acquire Loom",
+    "url": "https://itprotoday.com/collaboration/atlassian-acquire-startup-loom-bet-hybrid-work"
+   },
+   {
+    "label": "Wilson Sonsini: advises Loom on $975 million acquisition",
+    "url": "https://wsgr.com/en/insights/wilson-sonsini-advises-loom-on-dollar975-million-acquisition-by-atlassian.html"
+   },
+   {
+    "label": "Wikipedia: Loom, Inc. (founders and founding year)",
+    "url": "https://en.wikipedia.org/wiki/Loom,_Inc."
+   }
+  ]
+ }
+}

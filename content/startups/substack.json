@@ -1,0 +1,157 @@
+{
+ "slug": "substack",
+ "website": "https://substack.com/",
+ "excerpt": "Substack lets writers and creators publish newsletters, podcasts and video and charge for subscriptions, keeping 90% minus card fees. How it works, its funding and alternatives.",
+ "content": "<p>Substack is a publishing platform for newsletters. A writer sets up a publication for free, sends posts by email and on the web, and can switch on paid subscriptions so that readers pay monthly or yearly for some or all posts. It has grown into podcasts, video, live streams, a Twitter-like feed called Notes, and a reader app where subscribers find new writers.</p><p>Substack was founded in 2017 by Chris Best, its chief executive, Hamish McKenzie and Jairaj Sethi. TechCrunch covered its launch in October 2017.</p><p>The business model is simple: publishing is free, and when a writer charges, Substack takes 10% of subscription revenue, with card processing fees on top.</p><p>In July 2025 Substack raised a $100 million Series C at a $1.1 billion valuation, led by BOND and The Chernin Group, with Andreessen Horowitz also taking part, Bloomberg and Axios reported. At the time it had more than 5 million paid subscriptions across the platform, Axios said, and more than 50 creators were earning over $1 million a year there.</p><p><em>We have not used Substack for this page. It brings together Substack's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Newsletter publishing",
+  "platform": "Web, email, iOS and Android",
+  "starts_at": "Free to publish; 10% of paid subscription revenue",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Newsletter and subscription publishing platform for writers and creators",
+  "maker": {
+   "name": "Substack Inc.",
+   "url": "https://substack.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Chris_Best_2015.png",
+    "w": 495,
+    "h": 690,
+    "alt": "Chris Best, later Substack's co-founder and CEO, giving a talk in 2015",
+    "credit": "Photo: VMA Media, CC BY 3.0, via Wikimedia Commons"
+   }
+  ],
+  "use_cases": [
+   "Starting a free or paid email newsletter",
+   "Running a subscription podcast or video series",
+   "Building an audience through recommendations and Notes",
+   "Moving an existing mailing list to a paid model"
+  ],
+  "team": [
+   {
+    "name": "Chris Best",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Hamish McKenzie",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Jairaj Sethi",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "writers, journalists and analysts who want to be paid directly by readers",
+    "creators who want a free start with no monthly bill",
+    "people who want discovery from Substack's own network and app"
+   ],
+   "not_fit": [
+    "businesses sending marketing emails, which suit tools such as Mailchimp or Kit better",
+    "large paid newsletters, where a flat-fee platform may cost less than a 10% cut",
+    "publishers who want full control over design and their own website"
+   ]
+  },
+  "pricing": {
+   "intro": "From Substack's going-paid page: publishing is free; on paid subscriptions writers keep 90% of revenue, minus credit card fees.",
+   "url": "https://substack.com/going-paid",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free publication",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Unlimited free posts and subscribers"
+    },
+    {
+     "name": "Paid subscriptions",
+     "price": "10% of revenue + card fees",
+     "detail": "Writers set their own monthly and yearly prices"
+    }
+   ]
+  },
+  "alternatives": {
+   "intro": "Other newsletter and membership platforms.",
+   "items": [
+    {
+     "name": "Medium",
+     "url": "https://medium.com/",
+     "what": "Publishing network with a paid membership",
+     "starts_at": "Member $50/year",
+     "difference": "Readers pay Medium, and writers earn from a shared pool, rather than charging their own subscribers."
+    },
+    {
+     "name": "Ghost",
+     "url": "https://ghost.org/",
+     "what": "Open-source publishing and newsletters",
+     "difference": "Flat hosting fee and no revenue cut; can be self-hosted."
+    },
+    {
+     "name": "beehiiv",
+     "url": "https://www.beehiiv.com/",
+     "what": "Newsletter platform with ads and growth tools",
+     "difference": "Charges a subscription rather than a cut, with an ad network."
+    },
+    {
+     "name": "Kit (formerly ConvertKit)",
+     "url": "https://kit.com/",
+     "what": "Email marketing for creators",
+     "difference": "Strong automation for selling products by email."
+    }
+   ]
+  },
+  "pros": [
+   "Free to start, with no monthly bill",
+   "Publishing, payments and email delivery handled in one place",
+   "Built-in discovery through recommendations, Notes and the app"
+  ],
+  "cons": [
+   "A 10% cut becomes expensive as revenue grows",
+   "Limited design control compared with your own website"
+  ],
+  "faq": [
+   {
+    "q": "Is Substack free?",
+    "a": "Yes, publishing is free. If you charge subscribers, Substack keeps 10% of that revenue and card fees are deducted too."
+   },
+   {
+    "q": "Who founded Substack?",
+    "a": "Chris Best, Hamish McKenzie and Jairaj Sethi founded Substack in 2017. Best is the CEO."
+   },
+   {
+    "q": "How much is Substack worth?",
+    "a": "Its July 2025 Series C of $100 million valued it at $1.1 billion."
+   },
+   {
+    "q": "How many people pay on Substack?",
+    "a": "Axios reported more than 5 million paid subscriptions across the platform in July 2025."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Substack: going paid",
+    "url": "https://substack.com/going-paid"
+   },
+   {
+    "label": "Axios: Substack raises $100M at $1.1B valuation",
+    "url": "https://axios.com/2025/07/17/substack-newsletter-funding-creator-economy"
+   },
+   {
+    "label": "Bloomberg: Substack raises $100 million",
+    "url": "https://www.bloomberg.com/news/articles/2025-07-17/substack-raises-100-million-at-1-1-billion-valuation"
+   },
+   {
+    "label": "TechCrunch: Substack launch (2017)",
+    "url": "https://techcrunch.com/2017/10/16/substack-sinocism-launch"
+   },
+   {
+    "label": "Wikipedia: Substack (founders)",
+    "url": "https://en.wikipedia.org/wiki/Substack"
+   }
+  ]
+ }
+}

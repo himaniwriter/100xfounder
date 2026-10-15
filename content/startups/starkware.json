@@ -1,0 +1,159 @@
+{
+ "slug": "starkware",
+ "website": "https://starkware.co/",
+ "excerpt": "StarkWare builds zero-knowledge STARK proof technology behind Starknet, StarkEx, the Cairo language and the S-two prover. Founders, funding at an $8 billion valuation and alternatives.",
+ "content": "<p>StarkWare is an Israeli company that builds cryptographic proof technology for blockchains. Its work rests on STARKs, a kind of zero-knowledge proof that lets one computer prove to another that a large batch of computation was done correctly, without the other having to redo it. That lets blockchains such as Ethereum process many more transactions cheaply, because only a short proof has to be checked on the main chain.</p><p>Its main products are Starknet, a public network that runs on top of Ethereum; StarkEx, a scaling engine used by individual applications; Cairo, a programming language for writing provable programs, with syntax inspired by Rust; and S-two, its newest prover. StarkWare made S-two open source in 2025, said it set speed records, and in November 2025 S-two replaced the older Stone prover on Starknet mainnet. Starknet has its own token, STRK, first distributed through an airdrop.</p><p>The company's co-founders are Eli Ben-Sasson, Uri Kolodny, Michael Riabzev and Alessandro Chiesa. CTech dates the founding to 2017, while StarkWare's media kit says 2018. Kolodny was the first chief executive; he stepped down in January 2024 for family health reasons, and Ben-Sasson, previously president, became CEO.</p><p>In May 2022 StarkWare raised $100 million in a Series D led by Greenoaks Capital and Coatue at an $8 billion valuation, four times the $2 billion of its Series C six months earlier, TechCrunch reported. CTech later reported that the company was cutting jobs and shifting from infrastructure and research toward revenue-generating products.</p><p>StarkWare does not sell a priced subscription. Developers use Starknet by paying network fees, and Cairo and S-two are open source.</p><p><em>This page is research, not a review: StarkWare has no product we could try. It brings together StarkWare's own website and the reporting linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Blockchain scaling (zero-knowledge proofs)",
+  "platform": "Starknet network, StarkEx, Cairo language, S-two prover",
+  "starts_at": "No subscription; Cairo and S-two are open source",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Zero-knowledge STARK proof technology behind Starknet, StarkEx and Cairo",
+  "maker": {
+   "name": "StarkWare",
+   "url": "https://starkware.co/"
+  },
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/%D7%90%D7%9C%D7%99_%D7%91%D7%9F_%D7%A9%D7%A9%D7%95%D7%9F.jpeg",
+    "w": 1068,
+    "h": 1600,
+    "alt": "StarkWare co-founder and CEO Eli Ben-Sasson, smiling, in a red StarkWare T-shirt",
+    "credit": "Photo: Natalie Schor, CC BY-SA 3.0, via Wikimedia Commons"
+   },
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/StarkWare_logo.svg/1280px-StarkWare_logo.svg.png",
+    "w": 1200,
+    "h": 220,
+    "alt": "StarkWare logo: a four-part diamond mark beside the word STARKWARE in dark blue",
+    "credit": "Logo: StarkWare, via Wikimedia Commons (public domain)"
+   }
+  ],
+  "use_cases": [
+   "Deploying applications on Starknet, an Ethereum layer-2 network",
+   "Scaling a single exchange or app with StarkEx",
+   "Writing provable programs in Cairo",
+   "Generating zero-knowledge proofs with the open-source S-two prover"
+  ],
+  "team": [
+   {
+    "name": "Eli Ben-Sasson",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Uri Kolodny",
+    "role": "Co-founder and board member (first CEO)"
+   },
+   {
+    "name": "Michael Riabzev",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Alessandro Chiesa",
+    "role": "Co-founder and scientific adviser"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "blockchain developers who want to build on an Ethereum layer-2 network",
+    "teams that need verifiable computation with zero-knowledge proofs",
+    "researchers studying STARK proof systems"
+   ],
+   "not_fit": [
+    "anyone looking for a crypto investment tip: this page is not one",
+    "developers who prefer EVM-compatible chains and Solidity, since Starknet uses Cairo"
+   ]
+  },
+  "alternatives": {
+   "intro": "Other zero-knowledge and Ethereum scaling projects.",
+   "items": [
+    {
+     "name": "zkSync (Matter Labs)",
+     "url": "https://zksync.io/",
+     "what": "ZK rollup for Ethereum",
+     "difference": "Supports Solidity-style smart contracts."
+    },
+    {
+     "name": "Polygon",
+     "url": "https://polygon.technology/",
+     "what": "Ethereum scaling networks, including ZK technology",
+     "difference": "Broader set of networks and tools."
+    },
+    {
+     "name": "Scroll",
+     "url": "https://scroll.io/",
+     "what": "zkEVM rollup",
+     "difference": "Aims for close compatibility with the Ethereum Virtual Machine."
+    },
+    {
+     "name": "RISC Zero",
+     "url": "https://risczero.com/",
+     "what": "General-purpose zero-knowledge virtual machine",
+     "difference": "Proves programs written in Rust and other languages."
+    }
+   ]
+  },
+  "pros": [
+   "Open-source prover and language",
+   "Long track record in STARK research",
+   "Proofs secure a public network in production"
+  ],
+  "cons": [
+   "Cairo is a new language to learn",
+   "Fortunes tied to the crypto market; the company has cut staff"
+  ],
+  "faq": [
+   {
+    "q": "What does StarkWare do?",
+    "a": "It builds STARK zero-knowledge proof technology that lets blockchains like Ethereum handle more transactions. Its products include Starknet, StarkEx, the Cairo language and the S-two prover."
+   },
+   {
+    "q": "Who founded StarkWare?",
+    "a": "Eli Ben-Sasson, Uri Kolodny, Michael Riabzev and Alessandro Chiesa. Ben-Sasson has been CEO since January 2024."
+   },
+   {
+    "q": "How much is StarkWare worth?",
+    "a": "Its May 2022 Series D of $100 million valued it at $8 billion, TechCrunch reported. We found no newer priced round."
+   },
+   {
+    "q": "Is S-two open source?",
+    "a": "Yes. StarkWare released S-two as open source in 2025, and it has secured Starknet mainnet since November 2025."
+   }
+  ],
+  "sources": [
+   {
+    "label": "StarkWare: tech stack",
+    "url": "https://starkware.co/tech-stack/"
+   },
+   {
+    "label": "StarkWare: media kit",
+    "url": "https://starkware.co/media-kit/"
+   },
+   {
+    "label": "StarkWare: introducing S-two",
+    "url": "https://starkware.co/blog/s-two-prover/"
+   },
+   {
+    "label": "Starknet: S-two live on mainnet",
+    "url": "https://www.starknet.io/blog/s-two-is-live-on-starknet-mainnet-the-fastest-prover-for-a-more-private-future/"
+   },
+   {
+    "label": "TechCrunch: StarkWare quadruples valuation to $8B",
+    "url": "https://techcrunch.com/2022/05/25/starkware-quadruples-valuation-to-8b-in-6-months-closing-round-in-choppy-market"
+   },
+   {
+    "label": "CoinDesk: StarkWare CEO Uri Kolodny steps down",
+    "url": "https://www.coindesk.com/business/2024/01/11/starkware-ceo-uri-kolodny-steps-down-due-to-family-health-issue"
+   },
+   {
+    "label": "CTech: StarkWare cuts jobs in strategic shift",
+    "url": "https://www.calcalistech.com/ctechnews/article/sy7u2uq3wx"
+   },
+   {
+    "label": "CTech: StarkWare Series C at $2 billion",
+    "url": "https://www.calcalistech.com/ctech/articles/0,7340,L-3922719,00.html"
+   }
+  ]
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "slug": "neuralink",
+ "website": "https://neuralink.com/",
+ "excerpt": "Neuralink is building brain-computer interface implants. Its Telepathy trials, Blindsight, its $650 million Series E and how it compares with other BCI companies. No product is on sale.",
+ "content": "<p>Neuralink is a neurotechnology company developing brain-computer interfaces: devices implanted in the brain that read neural signals and turn them into commands for a computer or phone. It was founded in 2016, with Elon Musk among its founders. It also builds its own surgical robot to place the implant.</p><p>Its first product, called Telepathy, is aimed at people with paralysis, letting them move a cursor and type by thought. In a post on 28 January 2026 marking two years of human trials, Neuralink said 21 participants, whom it calls Neuralnauts, were enrolled in its trials worldwide, that the trial had grown from three participants in 2024 to several a month in 2025, and that it had seen no serious device-related adverse events. It said some participants type at up to 40 words a minute, and that a separate trial called VOICE aims to restore speech. These are the company's own figures and have not been independently verified.</p><p>A second device, Blindsight, is meant to restore some vision to people who have lost their sight. The US Food and Drug Administration gave it a Breakthrough Device designation in 2024, and in May 2025 Neuralink received another for restoring communication to people with severe speech impairment, according to reporting on its funding.</p><p>On 2 June 2025 Neuralink announced a $650 million Series E. Investors included ARK Invest, Founders Fund, Sequoia Capital and Thrive Capital, TechCrunch reported, and Semafor put the pre-money valuation at about $9 billion.</p><p>Neuralink has no product on sale and no published price. Its devices are available only to people enrolled in its clinical trials.</p><p><em>This page is research, not a review: Neuralink has no product we could try. It brings together Neuralink's own website and the reporting linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Brain-computer interfaces",
+  "platform": "Implanted medical device (in clinical trials)",
+  "starts_at": "Not for sale: clinical trials only",
+  "schema_category": "HealthApplication",
+  "summary_short": "Brain-computer interface implants for people with paralysis, in clinical trials",
+  "maker": {
+   "name": "Neuralink Corp.",
+   "url": "https://neuralink.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Elon_Musk_and_the_Neuralink_Future.jpg/1280px-Elon_Musk_and_the_Neuralink_Future.jpg",
+    "w": 1200,
+    "h": 781,
+    "alt": "Elon Musk on stage beside Neuralink's white surgical robot at the company's live update event in August 2020",
+    "credit": "Photo: Steve Jurvetson, CC BY 2.0, via Wikimedia Commons"
+   },
+   {
+    "url": "https://neuralink.com/assets/static/homepage.CQ861ZM0.jpg",
+    "w": 1200,
+    "h": 630,
+    "alt": "Neuralink image reading 'Redefining the boundaries of human capabilities requires pioneers', beside a man in a wheelchair wearing a cap",
+    "credit": "Image: Neuralink (neuralink.com)"
+   }
+  ],
+  "use_cases": [
+   "Controlling a computer cursor and typing by thought (Telepathy, in trials)",
+   "Restoring communication for people with severe speech impairment (VOICE trial)",
+   "Restoring some vision for people who are blind (Blindsight, in development)"
+  ],
+  "team": [
+   {
+    "name": "Elon Musk",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "people with quadriplegia from spinal cord injury or ALS who may qualify for its trials",
+    "researchers, clinicians and investors following brain-computer interfaces"
+   ],
+   "not_fit": [
+    "anyone looking to buy a device: nothing is for sale",
+    "people who want a non-invasive option, since Neuralink's device requires brain surgery"
+   ]
+  },
+  "alternatives": {
+   "intro": "Other companies building brain-computer interfaces. None sells a consumer product either.",
+   "items": [
+    {
+     "name": "Synchron",
+     "url": "https://synchron.com/",
+     "what": "BCI delivered through a blood vessel",
+     "difference": "Its Stentrode is placed through the jugular vein rather than by opening the skull."
+    },
+    {
+     "name": "Precision Neuroscience",
+     "url": "https://precisionneuro.io/",
+     "what": "Thin-film electrode array on the brain's surface",
+     "difference": "Sits on the surface of the brain instead of threads inserted into it."
+    },
+    {
+     "name": "Blackrock Neurotech",
+     "url": "https://blackrockneurotech.com/",
+     "what": "Utah-array electrodes used in academic BCI research",
+     "difference": "Its arrays have been used in research implants for many years."
+    },
+    {
+     "name": "Paradromics",
+     "url": "https://www.paradromics.com/",
+     "what": "High-data-rate implanted BCI",
+     "difference": "Focused first on restoring speech."
+    }
+   ]
+  },
+  "pros": [
+   "Large funding base for long clinical programmes",
+   "Publishes regular trial updates on its own site"
+  ],
+  "cons": [
+   "Requires brain surgery",
+   "Performance figures come from the company and are not independently verified"
+  ],
+  "faq": [
+   {
+    "q": "Can I buy a Neuralink implant?",
+    "a": "No. Neuralink has no product on sale. Its implants are available only to people enrolled in its clinical trials."
+   },
+   {
+    "q": "How many people have a Neuralink implant?",
+    "a": "Neuralink said on 28 January 2026 that 21 participants were enrolled in its trials worldwide."
+   },
+   {
+    "q": "What is Blindsight?",
+    "a": "A Neuralink device in development to restore some vision to blind people. The FDA gave it a Breakthrough Device designation in 2024."
+   },
+   {
+    "q": "How much money has Neuralink raised?",
+    "a": "Its latest announced round was a $650 million Series E on 2 June 2025. Semafor put the pre-money valuation at about $9 billion."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Neuralink: Two Years of Telepathy",
+    "url": "https://neuralink.com/updates/two-years-of-telepathy/"
+   },
+   {
+    "label": "Neuralink: Telepathy trial",
+    "url": "https://neuralink.com/trials/device-control/"
+   },
+   {
+    "label": "TechCrunch: Neuralink closes a $650M Series E",
+    "url": "https://techcrunch.com/2025/06/02/elon-musks-neuralink-closes-a-650m-series-e"
+   },
+   {
+    "label": "Becker's Hospital Review: Neuralink secures $650M",
+    "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/elon-musks-neuralink-secures-650m/"
+   },
+   {
+    "label": "Maginative: Neuralink raises $650M",
+    "url": "https://www.maginative.com/article/neuralink-raises-650m-to-expand-brain-computer-interface-trials/"
+   },
+   {
+    "label": "Wikipedia: Neuralink (founding)",
+    "url": "https://en.wikipedia.org/wiki/Neuralink"
+   }
+  ]
+ }
+}

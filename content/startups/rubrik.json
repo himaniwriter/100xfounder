@@ -1,0 +1,163 @@
+{
+ "slug": "rubrik",
+ "website": "https://www.rubrik.com/",
+ "excerpt": "Rubrik sells data backup, cyber recovery and data security software and is listed on the NYSE as RBRK. What it does, its founders, its 2024 IPO and the main alternatives.",
+ "content": "<p>Rubrik makes data security software. Its core job is backing up an organisation's data across data centres, public clouds and SaaS apps in a form attackers cannot encrypt or delete, then helping the organisation recover quickly after a ransomware attack or other incident. Its platform, Rubrik Security Cloud, also monitors that data for threats and sensitive information, covers identity systems, and now pitches tools to govern and roll back the actions of AI agents.</p><p>The company was founded in 2014 in Palo Alto by Bipul Sinha, Arvind Jain, Soham Mazumdar and Arvind Nithrakashyap. Sinha, a former partner at Lightspeed Venture Partners, is chief executive, and Nithrakashyap, who earlier co-founded Oracle's Exadata storage platform, is chief technology officer. Jain left in 2019 and went on to found the AI search company Glean.</p><p>Rubrik went public on the New York Stock Exchange under the ticker RBRK. It priced its upsized initial public offering at $32 a share, above its expected range, selling 23.5 million Class A shares, and trading began on 25 April 2024. As a listed company it reports its results publicly every quarter.</p><p>Rubrik sells mainly to mid-sized and large organisations; its website says more than 6,000 organisations use it. We found no public price list on Rubrik's site. Buyers request a demo and get a quote, so we do not give a starting price here.</p><p><em>We have not used Rubrik for this page. It brings together Rubrik's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Data security and backup",
+  "platform": "Cloud platform (SaaS) protecting on-premises, cloud and SaaS data",
+  "starts_at": "Quote only",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Data backup, cyber recovery and data security platform for organisations",
+  "maker": {
+   "name": "Rubrik, Inc.",
+   "url": "https://www.rubrik.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.rubrik.com/content/dam/rubrik/images/seo-images/Homepage-OG%20Image%20-%20rubrik-social-networks.jpg",
+    "w": 1440,
+    "h": 780,
+    "alt": "A laptop on a desk showing a Rubrik security dashboard",
+    "credit": "Image: Rubrik (rubrik.com)"
+   },
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Rubrik_Logo.svg/1280px-Rubrik_Logo.svg.png",
+    "w": 1200,
+    "h": 343,
+    "alt": "Rubrik logo: a ring of teal and blue diamonds beside the word rubrik",
+    "credit": "Logo: Rubrik, via Wikimedia Commons (public domain)"
+   }
+  ],
+  "use_cases": [
+   "Immutable backups of servers, databases and cloud workloads",
+   "Recovering systems cleanly after a ransomware attack",
+   "Backing up data held in SaaS applications",
+   "Finding sensitive data and unusual activity across backups"
+  ],
+  "team": [
+   {
+    "name": "Bipul Sinha",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Arvind Nithrakashyap",
+    "role": "Co-founder and CTO"
+   },
+   {
+    "name": "Arvind Jain",
+    "role": "Co-founder (left in 2019)"
+   },
+   {
+    "name": "Soham Mazumdar",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "IT and security teams responsible for ransomware recovery",
+    "organisations with data spread across data centres, clouds and SaaS apps",
+    "regulated industries that need immutable backups and audit trails"
+   ],
+   "not_fit": [
+    "individuals and very small businesses wanting a simple backup app",
+    "buyers who want self-serve sign-up with a published price"
+   ]
+  },
+  "pricing": {
+   "intro": "Rubrik does not publish prices on its website. It sells through quotes; the site invites buyers to watch a demo and contact the company.",
+   "url": "https://www.rubrik.com/",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Rubrik Security Cloud",
+     "price": "Quote on request",
+     "detail": "Priced by Rubrik for each customer"
+    }
+   ]
+  },
+  "alternatives": {
+   "intro": "Other backup and cyber-recovery vendors.",
+   "items": [
+    {
+     "name": "Cohesity",
+     "url": "https://www.cohesity.com/",
+     "what": "Data protection and recovery platform",
+     "difference": "A direct rival in enterprise backup and cyber recovery."
+    },
+    {
+     "name": "Veeam",
+     "url": "https://www.veeam.com/",
+     "what": "Backup and recovery software",
+     "difference": "Widely used backup software across company sizes."
+    },
+    {
+     "name": "Commvault",
+     "url": "https://www.commvault.com/",
+     "what": "Data protection and cyber resilience",
+     "difference": "Long-established enterprise backup vendor."
+    },
+    {
+     "name": "Druva",
+     "url": "https://www.druva.com/",
+     "what": "SaaS backup and recovery",
+     "difference": "Fully cloud-delivered, with no hardware to manage."
+    }
+   ]
+  },
+  "pros": [
+   "Focus on recovery after ransomware, not just backup",
+   "Covers on-premises, cloud and SaaS data in one platform",
+   "Publicly listed, so financial results are disclosed every quarter"
+  ],
+  "cons": [
+   "No public pricing",
+   "Built for organisations rather than individuals or small shops"
+  ],
+  "faq": [
+   {
+    "q": "What does Rubrik do?",
+    "a": "It backs up organisations' data in a form attackers cannot change and helps them recover quickly after cyberattacks, while monitoring that data for threats and sensitive information."
+   },
+   {
+    "q": "Is Rubrik a public company?",
+    "a": "Yes. Rubrik trades on the NYSE as RBRK. Its IPO was priced at $32 a share and trading began on 25 April 2024."
+   },
+   {
+    "q": "Who founded Rubrik?",
+    "a": "Bipul Sinha, Arvind Jain, Soham Mazumdar and Arvind Nithrakashyap founded Rubrik in 2014. Sinha is the CEO."
+   },
+   {
+    "q": "How much does Rubrik cost?",
+    "a": "Rubrik does not publish prices. Contact the company for a quote."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Rubrik website",
+    "url": "https://www.rubrik.com/"
+   },
+   {
+    "label": "Rubrik: pricing of upsized initial public offering",
+    "url": "https://www.rubrik.com/company/newsroom/press-releases/24/rubrik-announces-pricing-of-upsized-initial-public-offering"
+   },
+   {
+    "label": "SEC: Rubrik Form 10-Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/1943896/000194389624000030/rbrk-20241031.htm"
+   },
+   {
+    "label": "Rubrik leadership",
+    "url": "https://www.rubrik.com/it/company/about/leadership"
+   },
+   {
+    "label": "Blocks and Files: Rubrik alumni and Glean",
+    "url": "https://blocksandfiles.com/2023/06/04/rubrik-alumni-ai-startup-glean/"
+   },
+   {
+    "label": "Wikipedia: Rubrik (founders)",
+    "url": "https://en.wikipedia.org/wiki/Rubrik"
+   }
+  ]
+ }
+}

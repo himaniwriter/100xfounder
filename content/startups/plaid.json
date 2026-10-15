@@ -1,0 +1,169 @@
+{
+ "slug": "plaid",
+ "website": "https://plaid.com/",
+ "excerpt": "Plaid is the API that connects apps to people's bank accounts, best known in the US. How it works, how it charges, the failed Visa deal, its $6.1 billion 2025 round and alternatives.",
+ "content": "<p>Plaid is a financial data network. Its APIs let apps connect to a user's bank account, with the user's permission, to verify account details and balances, read transactions, check income and identity, and move money by bank transfer. When you link a bank account to a budgeting, investing or payments app and a Plaid window opens, that is the product at work. Plaid says consumers use it at no cost; the apps pay.</p><p>The company was founded in 2013. Zach Perret, a co-founder, is its chief executive.</p><p>In January 2020 Visa agreed to buy Plaid for about $5.3 billion. The US Justice Department sued in November 2020 to block the deal, arguing that Visa wanted to remove an emerging threat to its online debit business, and in January 2021 Visa abandoned the acquisition. Plaid stayed independent and raised a $425 million Series D in 2021 that valued it at $13.4 billion.</p><p>In April 2025 Plaid raised $575 million at a $6.1 billion valuation, less than half its 2021 price, in a round led by Franklin Templeton with Fidelity, BlackRock, NEA and Ribbit Capital, Fortune reported. In February 2026 FinTech Futures reported a later employee share sale at an $8 billion valuation; Plaid had not confirmed the figure.</p><p>Plaid sells three plan types: Pay as You Go, Growth and Custom. You can build against its sandbox for free and test with up to 200 live API calls per product before paying. Product prices are not on the public page; they are billed one-time per connected account, monthly per account, or per successful API call, depending on the product.</p><p><em>We have not used Plaid for this page. It brings together Plaid's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Fintech API",
+  "platform": "API and SDKs (web, iOS, Android)",
+  "starts_at": "Free sandbox; Pay as You Go usage pricing",
+  "schema_category": "FinanceApplication",
+  "summary_short": "API that lets apps connect to users' bank accounts for data and payments",
+  "maker": {
+   "name": "Plaid Inc.",
+   "url": "https://plaid.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/2021_-_Corporate_Innovation_Summit_%28CIS%29_stage_CG2_7883_%2851648855607%29.jpg/1280px-2021_-_Corporate_Innovation_Summit_%28CIS%29_stage_CG2_7883_%2851648855607%29.jpg",
+    "w": 1200,
+    "h": 785,
+    "alt": "Plaid co-founder and CEO Zach Perret speaking on stage at Web Summit 2021 in Lisbon",
+    "credit": "Photo: Web Summit, CC BY 2.0, via Wikimedia Commons"
+   },
+   {
+    "url": "https://plaid.com/assets/img/plaid-social-card-landscape.jpg",
+    "w": 1200,
+    "h": 630,
+    "alt": "Plaid's tartan-pattern logo mark inside a blue circle on a teal grid background",
+    "credit": "Image: Plaid (plaid.com)"
+   }
+  ],
+  "use_cases": [
+   "Linking a bank account in a fintech, investing or budgeting app",
+   "Verifying account ownership and balance before a bank transfer",
+   "Reading transaction history for personal finance or underwriting",
+   "Income and identity checks during onboarding"
+  ],
+  "team": [
+   {
+    "name": "Zach Perret",
+    "role": "Co-founder and CEO"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "fintech developers building for US, Canadian or European bank users",
+    "lenders, wallets and investing apps that need verified bank data",
+    "startups that want to start on usage-based billing with no commitment"
+   ],
+   "not_fit": [
+    "apps that need bank data mainly in India, where the RBI's Account Aggregator framework is the regulated route",
+    "buyers who want a full public price list before talking to sales"
+   ]
+  },
+  "pricing": {
+   "intro": "Plaid's pricing page lists three plans but no per-product prices. Products are billed one of three ways: a one-time fee per connected account, a monthly subscription per account, or a flat fee per successful API call.",
+   "url": "https://plaid.com/pricing/",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Pay as You Go",
+     "price": "Usage-based, standard pricing",
+     "detail": "Month to month, no upfront commitment, unlimited live API calls, access to generally available products"
+    },
+    {
+     "name": "Growth",
+     "price": "12-month commitment",
+     "detail": "Discounted product rates, a platform support package and SSO for the Plaid Dashboard"
+    },
+    {
+     "name": "Custom",
+     "price": "Contact sales",
+     "detail": "Volume pricing, beta products, integration help, premium support and account management"
+    }
+   ],
+   "notes": [
+    "Sandbox testing is free, and Limited Production allows up to 200 live API calls per product.",
+    "Plaid says it is free for consumers."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other open-banking and bank-data APIs.",
+   "items": [
+    {
+     "name": "Stripe Financial Connections",
+     "url": "https://stripe.com/financial-connections",
+     "what": "Bank account linking inside Stripe",
+     "difference": "Convenient if you already take payments with Stripe."
+    },
+    {
+     "name": "MX",
+     "url": "https://www.mx.com/",
+     "what": "Financial data aggregation and enrichment",
+     "difference": "Strong focus on banks and credit unions as customers."
+    },
+    {
+     "name": "Finicity (Mastercard)",
+     "url": "https://www.finicity.com/",
+     "what": "Open banking data owned by Mastercard",
+     "difference": "Part of Mastercard's open-banking business."
+    },
+    {
+     "name": "TrueLayer",
+     "url": "https://truelayer.com/",
+     "what": "Open banking payments and data in Europe",
+     "difference": "Focused on the UK and Europe."
+    }
+   ]
+  },
+  "pros": [
+   "Widely recognised by users when they link an account",
+   "Free sandbox and a no-commitment plan to start",
+   "One API covers data, identity and bank payments"
+  ],
+  "cons": [
+   "No public per-product prices",
+   "Pricing depends on a sales conversation once you outgrow Pay as You Go"
+  ],
+  "faq": [
+   {
+    "q": "What does Plaid do?",
+    "a": "It provides APIs that let apps connect, with permission, to a user's bank account to read data such as balances and transactions, verify identity and income, and move money."
+   },
+   {
+    "q": "Is Plaid free?",
+    "a": "It is free for consumers. Businesses can test in the sandbox for free, then pay per product: one-time per account, monthly per account or per API call."
+   },
+   {
+    "q": "Why didn't Visa buy Plaid?",
+    "a": "Visa agreed to buy Plaid for about $5.3 billion in 2020, but the US Justice Department sued to block it on competition grounds, and Visa dropped the deal in January 2021."
+   },
+   {
+    "q": "How much is Plaid worth?",
+    "a": "Its April 2025 funding round valued it at $6.1 billion, according to Fortune. A February 2026 report put a later employee share sale at $8 billion."
+   },
+   {
+    "q": "Does Plaid work in India?",
+    "a": "Check Plaid's list of supported countries before you build. In India, bank data is shared through the RBI's Account Aggregator framework."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Plaid pricing",
+    "url": "https://plaid.com/pricing/"
+   },
+   {
+    "label": "Fortune: Plaid funding round",
+    "url": "https://www.fortune.com/2025/04/03/fintech-plaid-funding-round-fidelity-blackrock-franklin-templeton-nea-perret"
+   },
+   {
+    "label": "Bloomberg Law: Plaid raises $575 million at lower valuation",
+    "url": "https://news.bloomberglaw.com/banking-law/fintech-plaid-raises-575-million-in-fundraising-round-eyes-ipo"
+   },
+   {
+    "label": "FinTech Futures: DOJ moves to block Visa-Plaid deal",
+    "url": "https://www.fintechfutures.com/m-a/us-department-of-justice-moves-to-block-5-3bn-visa-plaid-deal"
+   },
+   {
+    "label": "Crowdfund Insider: Visa's Plaid acquisition cancelled",
+    "url": "https://www.crowdfundinsider.com/2021/01/171202-busted-play-visas-acquisition-of-plaid-canceled-due-to-action-by-feds/"
+   },
+   {
+    "label": "FinTech Futures: Plaid reportedly hits $8bn valuation",
+    "url": "https://www.fintechfutures.com/venture-capital-funding/plaid-reportedly-hits-8bn-valuation-after-latest-funding-round"
+   }
+  ]
+ }
+}

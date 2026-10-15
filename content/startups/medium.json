@@ -1,0 +1,157 @@
+{
+ "slug": "medium",
+ "website": "https://medium.com/",
+ "excerpt": "Medium is an online publishing platform with a paid membership. Membership prices from its own site, how writers earn, its turnaround to profit and alternatives.",
+ "content": "<p>Medium is an online publishing platform where anyone can write and publish articles, and readers follow writers, topics and publications. Many stories are open to everyone; others are member-only and need a paid membership to read in full. Members' reading time decides how much writers in the Partner Program earn.</p><p>Medium was founded in 2012 by Ev Williams. In 2022 Williams handed the chief executive role to Tony Stubblebine, previously head of the coaching app Coach.me.</p><p>When Stubblebine took over, Medium was losing $2.6 million a month, he later told TechCrunch. After product changes, an investor restructuring, renegotiated loans, office cuts and layoffs, he said August 2024 was Medium's first profitable month ever, and in July 2025 he said it had stayed profitable since. Medium is private and does not publish its accounts; Stubblebine said it had more than a million subscribers as of April 2024.</p><p>Membership comes in two tiers. Medium Member unlocks member-only stories, audio narration, offline reading and the ability to create publications and use a custom domain. Friend of Medium costs more and sends four times as much of your reading-time money to writers. Writing and publishing is free.</p><p><em>We have not used Medium for this page. It brings together Medium's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Online publishing",
+  "platform": "Web, iOS and Android",
+  "starts_at": "Free to read and write; membership $5/month or $50/year",
+  "schema_category": "SocialNetworkingApplication",
+  "summary_short": "Online publishing platform with member-only stories and a writer Partner Program",
+  "maker": {
+   "name": "A Medium Corporation",
+   "url": "https://medium.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Ev_Williams_%2815527604887%29.jpg/1280px-Ev_Williams_%2815527604887%29.jpg",
+    "w": 1200,
+    "h": 1738,
+    "alt": "Medium founder Ev Williams, photographed in 2014",
+    "credit": "Photo: Christopher Michel, CC BY 2.0, via Wikimedia Commons"
+   }
+  ],
+  "use_cases": [
+   "Publishing essays, tutorials and opinion pieces without running a blog",
+   "Reading a wide range of writers behind one subscription",
+   "Earning from member reading time through the Partner Program",
+   "Running a group publication with several writers"
+  ],
+  "team": [
+   {
+    "name": "Ev Williams",
+    "role": "Founder"
+   },
+   {
+    "name": "Tony Stubblebine",
+    "role": "CEO"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "writers who want readers without building their own site or list",
+    "readers who want many writers for one fee",
+    "developers and professionals sharing how-to articles"
+   ],
+   "not_fit": [
+    "writers who want to set their own subscription price and own a mailing list, which suits newsletter platforms better",
+    "brands that need full control of design and SEO on their own domain"
+   ]
+  },
+  "pricing": {
+   "intro": "Membership prices from Medium's plans page and help centre, in US dollars. Writing and publishing are free.",
+   "url": "https://medium.com/plans",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Medium Member",
+     "price": "$5/month or $50/year",
+     "amount": 50,
+     "currency": "USD",
+     "detail": "Member-only stories, audio narration, offline reading, custom domain and publications"
+    },
+    {
+     "name": "Friend of Medium",
+     "price": "$15/month or $150/year",
+     "amount": 150,
+     "currency": "USD",
+     "detail": "Everything in Member; writers earn four times more from your reading, plus extra app features"
+    }
+   ],
+   "notes": [
+    "On 15 October 2026 the plans page showed a first-year welcome offer: $35 for Member and $105 for Friend of Medium, then the full annual price."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other places to publish and get paid.",
+   "items": [
+    {
+     "name": "Substack",
+     "url": "https://substack.com/",
+     "what": "Newsletter and subscription publishing",
+     "starts_at": "Free; 10% of paid revenue",
+     "difference": "Writers set their own prices and own their email list."
+    },
+    {
+     "name": "Ghost",
+     "url": "https://ghost.org/",
+     "what": "Open-source publishing platform",
+     "difference": "Your own site and newsletter, with no revenue cut."
+    },
+    {
+     "name": "Hashnode",
+     "url": "https://hashnode.com/",
+     "what": "Blogging platform for developers",
+     "difference": "Developer-focused, with blogs on your own domain."
+    },
+    {
+     "name": "LinkedIn articles",
+     "url": "https://www.linkedin.com/",
+     "what": "Long-form posts on LinkedIn",
+     "difference": "Reaches your professional network, but without reader payments."
+    }
+   ]
+  },
+  "pros": [
+   "Free to write, with a built-in readership",
+   "One subscription for readers",
+   "Writers can earn without managing payments"
+  ],
+  "cons": [
+   "Writers do not control prices or own a subscriber list",
+   "Paywalled stories frustrate non-members"
+  ],
+  "faq": [
+   {
+    "q": "How much is Medium membership?",
+    "a": "Medium Member is $5 a month or $50 a year, and Friend of Medium is $15 a month or $150 a year. In October 2026 Medium was offering a lower first-year price."
+   },
+   {
+    "q": "Is Medium free?",
+    "a": "Writing and publishing are free, and many stories are free to read. Member-only stories need a membership."
+   },
+   {
+    "q": "Who founded Medium?",
+    "a": "Ev Williams founded Medium in 2012. Tony Stubblebine has been CEO since 2022."
+   },
+   {
+    "q": "Is Medium profitable?",
+    "a": "Its CEO said August 2024 was Medium's first profitable month and, in July 2025, that it had stayed profitable since."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Medium plans",
+    "url": "https://medium.com/plans"
+   },
+   {
+    "label": "Medium Help Centre: become a Medium member",
+    "url": "https://help.medium.com/hc/en-us/articles/115004545567-Become-a-Medium-Member"
+   },
+   {
+    "label": "TechCrunch: August was Medium's first profitable month",
+    "url": "https://techcrunch.com/2024/08/21/august-was-mediums-first-profitable-month-ever"
+   },
+   {
+    "label": "TechCrunch: Medium's CEO on stopping $2.6M monthly losses",
+    "url": "https://techcrunch.com/2025/07/11/mediums-ceo-explains-what-it-took-to-stop-losing-2-6m-monthly"
+   },
+   {
+    "label": "Wikipedia: Medium (founding)",
+    "url": "https://en.wikipedia.org/wiki/Medium_(website)"
+   }
+  ]
+ }
+}

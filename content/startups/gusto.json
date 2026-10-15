@@ -1,0 +1,176 @@
+{
+ "slug": "gusto",
+ "website": "https://gusto.com/",
+ "excerpt": "Gusto runs payroll, benefits and HR for US small businesses. Its published plans and prices, its history from ZenPayroll to a $9.3 billion valuation, and alternatives.",
+ "content": "<p>Gusto is payroll, benefits and HR software for small and medium-sized businesses in the United States. It pays employees and contractors, calculates, files and pays payroll taxes, and handles new-hire paperwork, time off, health insurance and other benefits. It can also pay contractors in more than 120 countries.</p><p>The company started as ZenPayroll, founded in 2011 by Josh Reeves, Edward Kim and Tomer London, and went through Y Combinator's Winter 2012 batch. The company was later renamed Gusto. Reeves is chief executive, Kim chief technology officer and London chief product officer.</p><p>Gusto is private. In June 2025 Fortune reported that it ran a tender offer of more than $200 million for current and former employees, led by Teachers' Venture Growth, part of the Ontario Teachers' Pension Plan, at the company's last valuation of $9.3 billion.</p><p>Pricing is a monthly base fee plus a fee per person paid, and Gusto says it is month-to-month with no long-term contract. The three main plans differ mostly in whether you can run payroll in more than one state and how much HR support and compliance help is included. Note that Gusto's full payroll service is for US employers; it is not a payroll tool for companies employing staff in India.</p><p><em>We have not used Gusto for this page. It brings together Gusto's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Payroll and HR",
+  "platform": "Web, iOS and Android",
+  "starts_at": "$49/month + $6 per person",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Payroll, benefits and HR software for US small businesses",
+  "maker": {
+   "name": "Gusto, Inc.",
+   "url": "https://gusto.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://res.cloudinary.com/dja3z8nt6/image/upload/f_auto/q_auto/v1788382638/Social_Share_np6vsh.png",
+    "w": 1500,
+    "h": 876,
+    "alt": "The Gusto wordmark in white on a pink-and-red gradient",
+    "credit": "Image: Gusto (gusto.com)"
+   },
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Gusto%2C_Inc._logo.svg/1280px-Gusto%2C_Inc._logo.svg.png",
+    "w": 1200,
+    "h": 800,
+    "alt": "Gusto's white wordmark on a coral background",
+    "credit": "Logo: Gusto, via Wikimedia Commons (public domain)"
+   }
+  ],
+  "use_cases": [
+   "Running US payroll with tax filings handled",
+   "Paying contractors in the US and abroad",
+   "Onboarding new hires and storing documents",
+   "Offering health insurance and other benefits through Gusto's brokers"
+  ],
+  "team": [
+   {
+    "name": "Josh Reeves",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Edward Kim",
+    "role": "Co-founder and CTO"
+   },
+   {
+    "name": "Tomer London",
+    "role": "Co-founder and CPO"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "US small businesses that want payroll, taxes and basic HR in one place",
+    "startups with US employees in one or several states",
+    "companies paying a mix of employees and contractors"
+   ],
+   "not_fit": [
+    "companies paying employees in India or other countries on local payroll: Gusto's payroll is for US employers",
+    "very large enterprises with complex global HR needs"
+   ]
+  },
+  "pricing": {
+   "intro": "Gusto's published payroll plans, in US dollars, from its pricing page. Each is a monthly base fee plus a monthly fee per person; you are charged only for active employees.",
+   "url": "https://gusto.com/product/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Simple",
+     "price": "$49/month + $6/month per person",
+     "amount": 49,
+     "currency": "USD",
+     "detail": "Payroll in one state, unlimited payrolls, tax filings and payments, basic PTO policies"
+    },
+    {
+     "name": "Plus",
+     "price": "$80/month + $12/month per person",
+     "amount": 80,
+     "currency": "USD",
+     "detail": "Multi-state payroll, time tracking and scheduling, unlimited next-day pay, contractor invoices"
+    },
+    {
+     "name": "Premium",
+     "price": "$180/month + $22/month per person",
+     "amount": 180,
+     "currency": "USD",
+     "detail": "Named account support, HR guidance, Gusto Business Compliance, unlimited same-day and instant pay"
+    }
+   ],
+   "notes": [
+    "Add-ons include global contractor payments ($5 per payment to US bank accounts), Priority Support ($30/month + $3 per person on Simple and Plus) and Gusto Business Compliance ($85/month per state on an annual contract, included in Premium).",
+    "A separate Gusto Solo plan covers S-corp owners paying themselves."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other payroll and HR platforms for US businesses.",
+   "items": [
+    {
+     "name": "Rippling",
+     "url": "https://www.rippling.com/",
+     "what": "HR, IT and finance platform with payroll",
+     "difference": "A broader suite that combines HR and payroll with IT and finance tools."
+    },
+    {
+     "name": "ADP RUN",
+     "url": "https://www.adp.com/",
+     "what": "ADP's small-business payroll",
+     "difference": "Payroll from ADP, one of the largest US payroll providers."
+    },
+    {
+     "name": "QuickBooks Payroll",
+     "url": "https://quickbooks.intuit.com/payroll/",
+     "what": "Payroll add-on for QuickBooks",
+     "difference": "Fits businesses already doing their accounts in QuickBooks."
+    },
+    {
+     "name": "Deel",
+     "url": "https://www.deel.com/",
+     "what": "Global payroll and employer-of-record service",
+     "difference": "Built for hiring and paying people in many countries."
+    }
+   ]
+  },
+  "pros": [
+   "Transparent published pricing and month-to-month billing",
+   "Tax filing and payments included on every plan",
+   "Payroll, benefits and HR in one product"
+  ],
+  "cons": [
+   "Per-person fees add up as a team grows",
+   "Multi-state payroll needs Plus or above",
+   "US-focused: not a local payroll tool for other countries"
+  ],
+  "faq": [
+   {
+    "q": "How much does Gusto cost?",
+    "a": "Simple is $49 a month plus $6 per person, Plus $80 plus $12, and Premium $180 plus $22, according to Gusto's pricing page on 15 October 2026."
+   },
+   {
+    "q": "Who founded Gusto?",
+    "a": "Josh Reeves, Edward Kim and Tomer London founded it in 2011 as ZenPayroll."
+   },
+   {
+    "q": "Can Indian companies use Gusto?",
+    "a": "Gusto's payroll is for US employers. It can pay contractors in more than 120 countries, but it does not run local Indian payroll."
+   },
+   {
+    "q": "How much is Gusto worth?",
+    "a": "Fortune reported that its June 2025 employee tender offer was done at its last valuation, $9.3 billion. Gusto is private."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Gusto pricing",
+    "url": "https://gusto.com/product/pricing"
+   },
+   {
+    "label": "Fortune: Gusto launches $200 million-plus tender offer",
+    "url": "https://fortune.com/2025/06/09/gusto-200-million-plus-tender-offer"
+   },
+   {
+    "label": "Fortune: Gusto's co-founders",
+    "url": "https://www.fortune.com/2024/05/10/gusto-cofounders-hr-software-moms-become-friends"
+   },
+   {
+    "label": "Y Combinator: Gusto company page",
+    "url": "https://www.ycombinator.com/companies/gusto"
+   },
+   {
+    "label": "Wikipedia: Gusto, Inc. (founding and leadership)",
+    "url": "https://en.wikipedia.org/wiki/Gusto,_Inc."
+   }
+  ]
+ }
+}
