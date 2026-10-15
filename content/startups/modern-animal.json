@@ -1,0 +1,158 @@
+{
+ "slug": "modern-animal",
+ "website": "https://www.modernanimal.com/",
+ "excerpt": "Modern Animal is a membership-based veterinary clinic chain in California, Texas and other US states. Chewy agreed to acquire it in April 2026. Plans from $99 a year.",
+ "content": "<p>Modern Animal runs veterinary clinics built around a membership and an app. Members get 24/7 virtual care by chat, video and phone, book visits in the app and use clinics designed to feel calmer for pets and owners. The clinics offer primary care, urgent care, vaccines, dental care, surgery, puppy and kitten care, senior pet care and a pharmacy. Its website lists locations in Los Angeles, Orange County, the San Francisco Bay Area, Denver, Austin, Dallas, Houston and Phoenix.</p><p>Modern Animal was founded by Steven Eidelman, who earlier founded the dog-tracking company Whistle and sold it to Mars Petcare, TechCrunch reported when Founders Fund led its $13.5 million round in 2019 ahead of its first Los Angeles clinic. Law firm Fenwick reported a $75 million Series C. In September 2025 Built In reported a $46 million Series D and said the company had 27 clinics across California, Texas and Colorado. On 8 April 2026 Chewy announced a definitive agreement to acquire Modern Animal, which then had 29 owned clinics and more than 100,000 member families, for an undisclosed price; Chewy said it expected the deal to add more than $125 million in annualised revenue and that Modern Animal would keep its operations, app and team. Modern Animal's homepage now says it has joined Chewy.</p><p>Modern Animal publishes its membership prices: the Essential plan costs $99 a year and includes one exam plus 24/7 virtual care, and the All Access plan costs $199 a year with unlimited visits without exam fees. The plans list exams and virtual care; other treatment is not listed as included.</p><p><em>We have not used Modern Animal for this page. It brings together Modern Animal's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Veterinary care (part of Chewy)",
+  "platform": "Clinics plus iOS and Android app",
+  "starts_at": "Membership from $99/year",
+  "schema_category": "MedicalBusiness",
+  "summary_short": "Membership veterinary clinics with 24/7 virtual care, now part of Chewy",
+  "maker": {
+   "name": "Modern Animal",
+   "url": "https://www.modernanimal.com/"
+  },
+  "team": [
+   {
+    "name": "Steven Eidelman",
+    "role": "Founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/68bb6d55fd15750a1592afe1/6900f0a598d9e65284d2c2b7_MA-Opengraph.jpg",
+    "alt": "Modern Animal Veterinary Care banner: two people with black poodles at a picnic table outdoors",
+    "credit": "Image: Modern Animal (modernanimal.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/68bb6d55fd15750a1592afe1/68c7a70b1081a0820a18a87c_home-header.avif",
+    "alt": "A woman hugs a large spotted dog with its tongue out under a blue sky",
+    "credit": "Image: Modern Animal (modernanimal.com)",
+    "w": 1528,
+    "h": 665
+   }
+  ],
+  "use_cases": [
+   "Routine check-ups and vaccines for dogs and cats",
+   "Urgent care visits",
+   "24/7 virtual vet advice by chat, video or phone",
+   "Dental care and surgery",
+   "Ordering pet medicines"
+  ],
+  "audience": {
+   "fit": [
+    "pet owners living near a Modern Animal clinic",
+    "owners who want unlimited visits for a yearly fee",
+    "people who like booking and messaging a vet through an app"
+   ],
+   "not_fit": [
+    "owners outside its cities",
+    "pets that need specialist hospital care beyond what its clinics offer"
+   ]
+  },
+  "pricing": {
+   "intro": "Modern Animal's pricing page lists two membership plans covering exams and virtual care.",
+   "url": "https://www.modernanimal.com/pricing",
+   "plans": [
+    {
+     "name": "Essential",
+     "price": "$99/year",
+     "amount": 99,
+     "currency": "USD",
+     "detail": "One annual exam plus 24/7 virtual care"
+    },
+    {
+     "name": "All Access",
+     "price": "$199/year",
+     "amount": 199,
+     "currency": "USD",
+     "detail": "Unlimited visits with no exam fees, 24/7 virtual care, priority urgent care"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published membership prices",
+   "24/7 virtual care included",
+   "Backing of Chewy after the acquisition"
+  ],
+  "cons": [
+   "Only available in certain US cities",
+   "Clinics are limited to a handful of metro areas"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Modern Animal. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Chewy Vet Care",
+     "url": "https://www.chewy.com/",
+     "what": "Chewy's own vet clinics",
+     "starts_at": "See its own website",
+     "difference": "Now the parent company's clinic network."
+    },
+    {
+     "name": "Banfield Pet Hospital",
+     "url": "https://www.banfield.com/",
+     "what": "Veterinary hospitals with wellness plans",
+     "starts_at": "See its own website",
+     "difference": "Large US chain with optimum wellness plans."
+    },
+    {
+     "name": "BetterVet",
+     "url": "https://bettervet.com/",
+     "what": "Mobile and in-home vet care",
+     "starts_at": "See its own website",
+     "difference": "Vets who come to your home instead of a clinic."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who owns Modern Animal?",
+    "a": "Chewy, which announced a deal to acquire it in April 2026; Modern Animal's website says it has joined Chewy."
+   },
+   {
+    "q": "How much does Modern Animal cost?",
+    "a": "Membership is $99 a year (Essential) or $199 a year (All Access)."
+   },
+   {
+    "q": "Where does Modern Animal have clinics?",
+    "a": "Its website lists Los Angeles, Orange County, the San Francisco Bay Area, Denver, Austin, Dallas, Houston and Phoenix."
+   },
+   {
+    "q": "Who founded Modern Animal?",
+    "a": "Steven Eidelman, who earlier founded Whistle, according to TechCrunch."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Modern Animal pricing",
+    "url": "https://www.modernanimal.com/pricing"
+   },
+   {
+    "label": "Modern Animal: We've joined Chewy (FAQ)",
+    "url": "https://www.modernanimal.com/chewyfaq"
+   },
+   {
+    "label": "Business Wire: Chewy to acquire Modern Animal",
+    "url": "https://www.businesswire.com/news/home/20260408567488/en/Chewy-to-Acquire-Modern-Animal-Accelerating-Evolution-to-a-Fully-Integrated-Healthcare-Ecosystem"
+   },
+   {
+    "label": "TechCrunch: Modern Animal raises $13.5 million",
+    "url": "https://techcrunch.com/2019/10/24/modern-animal-raises-13-5-million-to-make-going-to-the-vet-suck-less/"
+   },
+   {
+    "label": "Built In: Modern Animal raises $46M",
+    "url": "https://builtin.com/articles/modern-animal-raises-46m-20250917"
+   },
+   {
+    "label": "Fenwick: Modern Animal $75 million Series C",
+    "url": "https://fenwick.com/insights/experience/fenwick-represents-modern-animal-in-75-million-series-c-financing"
+   }
+  ]
+ }
+}

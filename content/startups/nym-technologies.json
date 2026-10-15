@@ -1,0 +1,150 @@
+{
+ "slug": "nym-technologies",
+ "website": "https://nym.com/",
+ "excerpt": "Nym Technologies is a Swiss privacy company that makes NymVPN, a decentralised VPN with a mixnet mode. Plans from $2.39 a month with a 7-day free trial.",
+ "content": "<p>Nym Technologies builds privacy technology based on a mix network, or mixnet: a network that shuffles encrypted packets between independent nodes and adds dummy traffic so that observers cannot tell who is talking to whom from the timing and size of traffic. Its main product is NymVPN, which its website describes as a decentralised VPN that protects metadata, not just your IP address. NymVPN offers a faster mode and an anonymous mode that sends traffic through the mixnet. Sign-up can be anonymous, and the site says you can pay in several cryptocurrencies, including its own NYM token.</p><p>Nym is based in Switzerland. TechCrunch reported in July 2021 that it raised $6 million in a round loosely described as a Series A, led by Polychain Capital with European crypto investors including Eden Block, Greenfield One, Maven11, Tioga and 1kx, after a $2.5 million seed round in 2019 and earlier research grants from the EU's Horizon 2020 programme. Wired has written about Nym's approach to anonymity, and Forbes covered its argument that ordinary VPNs leave users exposed because the VPN provider can still see their traffic.</p><p>NymVPN is a paid service with a 7-day free trial for new users; its marketing lists plans starting at $2.39 a month, with longer subscriptions cheaper per month, and it offers pro-rata refunds. It suits privacy-focused users willing to trade some speed for stronger anonymity, while people who mainly want to stream from other countries may prefer a mainstream VPN.</p><p><em>We have not used Nym Technologies for this page. It brings together Nym Technologies's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Privacy and VPN",
+  "platform": "Windows, macOS, Linux, Android and iOS",
+  "starts_at": "From $2.39/month; 7-day free trial",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Decentralised VPN with a mixnet mode that hides traffic metadata",
+  "maker": {
+   "name": "Nym Technologies",
+   "url": "https://nym.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://strapi-www-nym-com-production.sos-ch-dk-2.exo.io/Nym_VPN_The_world_s_most_private_VPN_aa44c0dad7.png",
+    "alt": "NymVPN banner in green on black: free trial, sign up anonymously, plans starting at $2.39 a month, payment in several cryptocurrencies",
+    "credit": "Image: Nym Technologies (nym.com)",
+    "w": 1500,
+    "h": 844
+   },
+   {
+    "url": "https://nym.com/_next/image?url=https%3A%2F%2Fassets.nym.com%2F1_click_connect_with_Nym_VPN_a27f6dae2c.png&w=1920&q=80",
+    "alt": "NymVPN app server list showing options such as Safest, Random and countries including Albania and Argentina",
+    "credit": "Image: Nym Technologies (nym.com)",
+    "w": 1302,
+    "h": 608
+   }
+  ],
+  "use_cases": [
+   "Hiding browsing traffic from internet providers and networks",
+   "Protecting traffic metadata with the mixnet mode",
+   "Signing up and paying for a VPN anonymously",
+   "Using a VPN on public Wi-Fi"
+  ],
+  "audience": {
+   "fit": [
+    "journalists, activists and privacy-conscious users",
+    "crypto users who want to pay anonymously",
+    "people who distrust centralised VPN providers"
+   ],
+   "not_fit": [
+    "users who mainly want the fastest streaming VPN",
+    "anyone needing a free, unlimited VPN"
+   ]
+  },
+  "pricing": {
+   "intro": "NymVPN is a paid subscription with a 7-day free trial for new users. Nym's own marketing lists plans starting at $2.39 a month.",
+   "url": "https://nym.com/pricing",
+   "plans": [
+    {
+     "name": "Free trial",
+     "price": "7 days",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Converts to the chosen plan unless cancelled"
+    },
+    {
+     "name": "NymVPN subscription",
+     "price": "From $2.39/month",
+     "amount": 2.39,
+     "currency": "USD",
+     "detail": "Longer plans cost less per month"
+    }
+   ],
+   "notes": [
+    "Nym offers pro-rata refunds; payment by card or cryptocurrency, including the NYM token."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Mixnet mode protects metadata, not just IP addresses",
+   "Anonymous sign-up and crypto payments",
+   "7-day free trial and pro-rata refunds"
+  ],
+  "cons": [
+   "Mixnet mode is slower than a normal VPN",
+   "Ties to a crypto token may not suit everyone"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Nym Technologies. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Mullvad VPN",
+     "url": "https://mullvad.net/",
+     "what": "Privacy-focused VPN with anonymous accounts",
+     "starts_at": "See its own website",
+     "difference": "Flat price and anonymous account numbers, but a conventional VPN design."
+    },
+    {
+     "name": "Proton VPN",
+     "url": "https://protonvpn.com/",
+     "what": "VPN from the makers of Proton Mail",
+     "starts_at": "See its own website",
+     "difference": "Swiss VPN with a free tier and a large server network."
+    },
+    {
+     "name": "Tor Browser",
+     "url": "https://www.torproject.org/",
+     "what": "Free anonymity network and browser",
+     "starts_at": "See its own website",
+     "difference": "Free onion routing for browsing; no subscription."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is NymVPN?",
+    "a": "A VPN from Nym Technologies with a fast mode and an anonymous mode that routes traffic through the Nym mixnet."
+   },
+   {
+    "q": "How much does NymVPN cost?",
+    "a": "Nym lists plans from $2.39 a month and offers a 7-day free trial."
+   },
+   {
+    "q": "Where is Nym based?",
+    "a": "Switzerland, according to TechCrunch."
+   },
+   {
+    "q": "Who invested in Nym?",
+    "a": "Polychain Capital led a $6 million round in 2021, TechCrunch reported."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Nym homepage",
+    "url": "https://nym.com/"
+   },
+   {
+    "label": "NymVPN pricing and FAQ",
+    "url": "https://nym.com/pricing"
+   },
+   {
+    "label": "TechCrunch: Nym gets $6M for its anonymous overlay mixnet",
+    "url": "https://techcrunch.com/2021/07/16/nym-gets-6m-for-its-anonymous-overlay-mixnet-to-sell-privacy-as-a-service/"
+   },
+   {
+    "label": "Wired: Nym and internet anonymity",
+    "url": "https://www.wired.com/story/nym-privacy-anonymity-internet/"
+   },
+   {
+    "label": "Forbes: Your VPN may not be private",
+    "url": "https://www.forbes.com/sites/stevenehrlich/2024/10/22/your-vpn-may-not-be-private-blockchain-startup-nym-aims-to-cure-this/"
+   }
+  ]
+ }
+}

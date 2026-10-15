@@ -1,0 +1,149 @@
+{
+ "slug": "narvar",
+ "website": "https://corp.narvar.com/",
+ "excerpt": "Narvar is a San Francisco post-purchase platform for retailers: delivery promises, order tracking, notifications and returns. CEO Anisa Kumar since 2024.",
+ "content": "<p>Narvar sells post-purchase software to retailers and brands, covering what happens after a shopper clicks buy. Its products include Promise, which shows AI-powered delivery date estimates at checkout; Track, branded order-tracking pages; Notify, proactive delivery messages; Shield, returns and exchanges management with fraud controls; Secure, for protecting orders; and Assist, an AI assistant for order questions. Its website now describes these as agentic products and pitches intelligent personalisation beyond the purchase.</p><p>Narvar was founded in 2012 by Amit Sharma, a retail supply chain veteran who had worked at Apple, Walmart and Williams-Sonoma, Retail TouchPoints reported. TechCrunch covered a $10 million round in 2015 and a $22 million Series B in 2016. In August 2018 Narvar raised a $30 million Series C led by Accel, with Battery Ventures, Salesforce Ventures and Scale Venture Partners, bringing its total to $64 million; FreightWaves and Retail TouchPoints reported that the money would go into products and international growth. In October 2024 Narvar promoted chief customer officer Anisa Kumar, a former Levi's, Walmart and Target executive, to CEO, and Sharma moved to an advisory role, FashionUnited reported.</p><p>Narvar does not publish prices; retailers request a demo. It is built for mid-size and large retailers and brands shipping many orders, and competes with post-purchase and returns tools such as parcelLab, Loop Returns and AfterShip.</p><p><em>We have not used Narvar for this page. It brings together Narvar's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Retail post-purchase experience",
+  "platform": "Web (SaaS) and APIs",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Delivery promises, order tracking, notifications and returns for retailers",
+  "maker": {
+   "name": "Narvar",
+   "url": "https://corp.narvar.com/"
+  },
+  "team": [
+   {
+    "name": "Amit Sharma",
+    "role": "Founder; adviser since 2024"
+   },
+   {
+    "name": "Anisa Kumar",
+    "role": "CEO since October 2024"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/67925857df43acae16e8d057/67925857df43acae16e8e3ad_ea6918c428ae3c58011cf599e905ef9e_Meta%20Image%20-%20Homepage.webp",
+    "alt": "Narvar banner on dark blue: The number 1 platform for Intelligent Personalization Beyond Buy, with the Narvar logo",
+    "credit": "Image: Narvar (narvar.com)",
+    "w": 2401,
+    "h": 1255
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/67925857df43acae16e8d057/68c3d90a62e6e3e3cff40993_Track_Product%20Card.webp",
+    "alt": "Example Narvar tracking page for the retailer Athleta, showing an order on its way, a text-update sign-up and a winter sale offer",
+    "credit": "Image: Narvar (narvar.com)",
+    "w": 1248,
+    "h": 937
+   }
+  ],
+  "use_cases": [
+   "Showing accurate delivery dates at checkout",
+   "Branded order tracking pages",
+   "Proactive delivery notifications",
+   "Managing returns and exchanges and limiting returns fraud",
+   "Answering order questions with an AI assistant"
+  ],
+  "audience": {
+   "fit": [
+    "mid-size and large online retailers and brands",
+    "ecommerce and customer experience teams",
+    "retailers with high return volumes"
+   ],
+   "not_fit": [
+    "very small online shops that a Shopify tracking app can serve",
+    "businesses without physical shipments"
+   ]
+  },
+  "pricing": {
+   "intro": "Narvar does not publish prices; retailers request a demo and a quote.",
+   "url": "https://corp.narvar.com/",
+   "plans": [
+    {
+     "name": "Narvar platform",
+     "price": "Quote on request",
+     "detail": "Promise, Track, Notify, Shield, Secure, Assist"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Covers the whole post-purchase journey",
+   "Long track record with large retailers",
+   "AI-based delivery estimates and assistant"
+  ],
+  "cons": [
+   "No public pricing",
+   "Built for larger retailers"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Narvar. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "parcelLab",
+     "url": "https://parcellab.com/",
+     "what": "Post-purchase experience platform",
+     "starts_at": "See its own website",
+     "difference": "European rival covering tracking, notifications and returns."
+    },
+    {
+     "name": "Loop Returns",
+     "url": "https://www.loopreturns.com/",
+     "what": "Returns and exchanges for Shopify brands",
+     "starts_at": "See its own website",
+     "difference": "Focused on returns for Shopify merchants, with published plans."
+    },
+    {
+     "name": "AfterShip",
+     "url": "https://www.aftership.com/",
+     "what": "Order tracking and returns",
+     "starts_at": "See its own website",
+     "difference": "Self-serve tracking and returns with a free tier."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Narvar do?",
+    "a": "It provides post-purchase software for retailers: delivery estimates, tracking, notifications, returns and an AI assistant."
+   },
+   {
+    "q": "Who founded Narvar?",
+    "a": "Amit Sharma, in 2012. He moved to an advisory role in October 2024."
+   },
+   {
+    "q": "Who is Narvar's CEO?",
+    "a": "Anisa Kumar, promoted from chief customer officer in October 2024, FashionUnited reported."
+   },
+   {
+    "q": "How much has Narvar raised?",
+    "a": "$64 million by its 2018 Series C, led by Accel, according to Retail TouchPoints."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Narvar homepage",
+    "url": "https://corp.narvar.com/"
+   },
+   {
+    "label": "Retail TouchPoints: Narvar raises $30 million",
+    "url": "https://www.retailtouchpoints.com/features/financial-news/narvar-raises-30-million-aims-to-expand-global-footprint"
+   },
+   {
+    "label": "FreightWaves: Narvar snags $30 million",
+    "url": "https://www.freightwaves.com/news/narvar-snags-30-million-in-funding"
+   },
+   {
+    "label": "TechCrunch: Narvar raises $22 million",
+    "url": "https://techcrunch.com/2016/06/23/narvar-raises-22-million-to-help-internet-retailers-deliver-physical-goods-without-frustrating-customers/"
+   },
+   {
+    "label": "FashionUnited: Narvar names new chief executive officer",
+    "url": "https://fashionunited.com/executive/report/narvar-names-new-chief-executive-officer/2024101762440"
+   }
+  ]
+ }
+}

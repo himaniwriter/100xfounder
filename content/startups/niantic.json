@@ -1,0 +1,141 @@
+{
+ "slug": "niantic",
+ "website": "https://explore.scopely.com/",
+ "excerpt": "Niantic, maker of Pokémon GO, sold its games business to Scopely for $3.5 billion in 2025 and spun off Niantic Spatial. Its games now run as Scopely Explore.",
+ "content": "<p>Niantic made location-based augmented reality games that send players outside to explore the real world, including Ingress, Pokémon GO, Pikmin Bloom and Monster Hunter Now, plus the community app Campfire and Wayfarer, a tool for suggesting new map locations. It began as Niantic Labs, a project inside Google led by John Hanke, and was spun out as an independent company in 2015, TechCrunch reported. Pokémon GO became a global hit after its 2016 launch, and in November 2021 Niantic raised $300 million at a $9 billion valuation to build what it called a real-world metaverse.</p><p>In March 2025 the mobile game company Scopely agreed to buy Niantic's games division for $3.5 billion; Niantic said it would add $350 million in cash for a total value of $3.85 billion to its shareholders, TechCrunch reported. Pokémon GO had more than 20 million weekly active players at the time. All employees working on the games moved to Scopely, and Niantic's mapping and AR technology business became a separate company, Niantic Spatial, led by Hanke, with $250 million in cash ($200 million from Niantic and $50 million from Scopely). Niantic's old games website now redirects to Scopely Explore, which describes itself as formerly known as Niantic.</p><p>The games remain free to play with optional in-game purchases, now run by Scopely. Anyone interested in Niantic's 3D mapping and spatial computing technology should look at Niantic Spatial instead.</p><p><em>We have not used Niantic for this page. It brings together Niantic's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Mobile AR games (now Scopely Explore)",
+  "platform": "iOS and Android",
+  "starts_at": "Games are free to play with in-app purchases",
+  "schema_category": "GameApplication",
+  "summary_short": "Maker of Pokémon GO; games sold to Scopely in 2025, mapping spun off as Niantic Spatial",
+  "maker": {
+   "name": "Niantic",
+   "url": "https://explore.scopely.com/"
+  },
+  "team": [
+   {
+    "name": "John Hanke",
+    "role": "Founder; former Niantic CEO, now leads Niantic Spatial"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://lh3.googleusercontent.com/ZVsVBG5iNYwsES1pORRpjLY6B65e9sYTREBL6wFfgTEa2tUoielewXWefAJWxnoLDU8R05Xr5YDZKffmaDMxpF6aydY-GXh8-UjT3Hwzf8wP=s1600-rj",
+    "alt": "Scopely Explore logo over a photo of people walking through a city park, the brand that replaced Niantic's games division",
+    "credit": "Image: Scopely Explore (explore.scopely.com)",
+    "w": 1024,
+    "h": 512
+   },
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/John_Hanke_by_Gage_Skidmore.jpg/1280px-John_Hanke_by_Gage_Skidmore.jpg",
+    "alt": "Niantic founder John Hanke speaking into a microphone at San Diego Comic-Con in 2016",
+    "credit": "Photo: Gage Skidmore, CC BY-SA 3.0, via Wikimedia Commons",
+    "w": 1280,
+    "h": 1086
+   }
+  ],
+  "use_cases": [
+   "Playing Pokémon GO, Pikmin Bloom or Monster Hunter Now outdoors",
+   "Joining local community events through Campfire",
+   "Suggesting new real-world locations through Wayfarer"
+  ],
+  "audience": {
+   "fit": [
+    "players of location-based AR games",
+    "readers researching the Pokémon GO maker's history and sale"
+   ],
+   "not_fit": [
+    "anyone looking for Niantic's AR mapping technology, which now sits with Niantic Spatial"
+   ]
+  },
+  "pricing": {
+   "intro": "Niantic's games are free to play with optional in-app purchases. They are now operated by Scopely.",
+   "url": "https://explore.scopely.com/",
+   "plans": [
+    {
+     "name": "Pokémon GO, Pikmin Bloom, Monster Hunter Now",
+     "price": "Free to play",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Optional in-app purchases"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Created some of the most successful location-based games",
+   "Games continue under Scopely"
+  ],
+  "cons": [
+   "Niantic no longer exists as the games company; the brand is now Scopely Explore"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Niantic. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Scopely Explore",
+     "url": "https://explore.scopely.com/",
+     "what": "The former Niantic games team under Scopely",
+     "starts_at": "See its own website",
+     "difference": "Where Pokémon GO and the other games now live."
+    },
+    {
+     "name": "Niantic Spatial",
+     "url": "https://www.nianticspatial.com/",
+     "what": "3D mapping and spatial computing spun off from Niantic",
+     "starts_at": "See its own website",
+     "difference": "The continuing Niantic technology company, led by John Hanke."
+    },
+    {
+     "name": "Geocaching",
+     "url": "https://www.geocaching.com/",
+     "what": "Real-world treasure-hunting game",
+     "starts_at": "See its own website",
+     "difference": "Long-running outdoor exploration game without AR."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who owns Pokémon GO now?",
+    "a": "Scopely, which bought Niantic's games division for $3.5 billion in 2025. The team now operates as Scopely Explore."
+   },
+   {
+    "q": "What is Niantic Spatial?",
+    "a": "The mapping and AR technology company spun off from Niantic in 2025, led by John Hanke, with $250 million in cash."
+   },
+   {
+    "q": "Was Niantic part of Google?",
+    "a": "Yes. It started as Niantic Labs inside Google and became independent in 2015."
+   },
+   {
+    "q": "How much was Niantic worth?",
+    "a": "It was valued at $9 billion when it raised $300 million in 2021, TechCrunch reported."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Niantic is selling its games division to Scopely for $3.5B",
+    "url": "https://techcrunch.com/2025/03/12/pokemon-go-maker-niantic-is-selling-its-games-division-to-scopely-for-3-5b/"
+   },
+   {
+    "label": "Scopely: Scopely to acquire Niantic's games business",
+    "url": "https://www.scopely.com/en/news/scopely-to-acquire-niantic-games-business-which-includes-pokemon-go-one-of-the-most-successful-mobile-games-of-all-time"
+   },
+   {
+    "label": "TechCrunch: Niantic raises $300M at a $9B valuation",
+    "url": "https://techcrunch.com/2021/11/22/niantic-raises-300m-at-a-9b-valuation-to-build-the-real-world-metaverse/"
+   },
+   {
+    "label": "TechCrunch: Niantic Labs spun out of Google",
+    "url": "https://techcrunch.com/2015/08/12/niantic-labs-maker-of-ingress-spun-out-as-its-own-company/"
+   },
+   {
+    "label": "Scopely Explore (formerly Niantic)",
+    "url": "https://explore.scopely.com/"
+   }
+  ]
+ }
+}
