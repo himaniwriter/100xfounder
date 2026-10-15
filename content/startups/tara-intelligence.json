@@ -1,72 +1,136 @@
 {
- "slug": "tara-intelligence",
- "website": "https://tara.ai/",
- "excerpt": "Tara AI (Tara Intelligence) built an AI-assisted product management and sprint planning tool for software teams. Founders, YC history, funding, current status and alternatives.",
- "content": "<p>Tara AI, listed here as Tara Intelligence, made software for planning and tracking engineering work. TechCrunch described it in 2019 as a machine-learning platform that helps companies scope software projects, predict the tasks and engineering resources they need, and monitor progress, working alongside tools such as Jira and Slack. By early 2023 its website, as preserved by the Internet Archive, pitched it as a way to define, plan and track mission-critical product updates, with requirements, sprints, task tracking, docs and stand-ups in one place.</p><p>The company was founded by Iba Masood, its CEO, and Syed Ahmed. In a Y Combinator interview, Masood explained that the company first went through YC in the Winter 2015 batch with a careers platform for new graduates (known as Gradberry), grew out of research into analysing programmers' GitHub commits, and pivoted to product management, launching that product in 2017. TechCrunch reported that the founders relocated to Boston and that early customers included Cisco and Orange Silicon Valley, with about three-quarters of users non-technical.</p><p>Funding was modest. Masood told YC the company raised roughly $200,000 after YC and about $2.8 million after the pivot, announced as a seed round of around $3 million. In July 2019 it raised a $10 million Series A led by Aspect Ventures, with the Slack Fund, Y Combinator and Moment Ventures taking part, TechCrunch reported.</p><p><strong>Current status:</strong> when we checked in October 2026, tara.ai no longer showed the product; it redirected to a domain parking page. We found no announcement of a shutdown or acquisition, so treat the product as unavailable unless the company says otherwise. Teams looking for a similar tool should consider the alternatives below.</p><p><em>This page is research, not a review. We have not used Tara AI; facts come from the pages under Sources.</em></p>",
- "profile": {
-  "checked": "2026-10-15",
-  "category": "Product management and sprint planning software",
-  "platform": "Web app (no longer available at tara.ai)",
-  "starts_at": "Not available; website parked",
-  "schema_category": "BusinessApplication",
-  "summary_short": "AI-assisted sprint planning and product tracking for software teams (site now parked)",
-  "maker": {"name": "Tara AI", "url": "https://tara.ai/"},
-  "team": [
-   {"name": "Iba Masood", "role": "Co-founder and CEO"},
-   {"name": "Syed Ahmed", "role": "Co-founder"}
-  ],
-  "gallery": [
-   {"url": "https://web.archive.org/web/20230104041902im_/https://tara.ai/img/og-image-home.png", "w": 1200, "h": 628, "alt": "Tara logo in white on a blue background beside a screenshot of a sprint task timeline", "credit": "Image: Tara AI (tara.ai, January 2023), via the Internet Archive"},
-   {"url": "https://web.archive.org/web/20230104041902im_/https://tara.ai/_nuxt/img/sprint.acdc565.webp", "w": 856, "h": 507, "alt": "Tara sprint board showing Sprint 25 with tasks such as vendor interviews and an onboarding sequence, and a task detail panel", "credit": "Image: Tara AI (tara.ai, January 2023), via the Internet Archive"}
-  ],
-  "use_cases": [
-   "Writing product requirements and turning them into engineering tasks",
-   "Planning and running sprints",
-   "Tracking task progress and pull requests across a team",
-   "Estimating the work and people a software project needs"
-  ],
-  "audience": {
-   "fit": [
-    "readers researching Tara AI's history or a former Tara workspace",
-    "product and engineering managers comparing sprint-planning tools"
-   ],
-   "not_fit": [
-    "anyone hoping to sign up today: the product site is parked"
-   ]
-  },
-  "pricing": {
-   "intro": "No current pricing is available because tara.ai no longer shows the product. We did not find a pricing page to quote.",
-   "plans": [{"name": "Tara AI", "price": "Not available", "detail": "Website parked as of October 2026"}],
-   "url": "https://tara.ai/",
-   "checked": "2026-10-15"
-  },
-  "pros": [
-   "Combined requirements, sprints and tracking in one tool",
-   "Backed by Y Combinator, Aspect Ventures and the Slack Fund"
-  ],
-  "cons": [
-   "Product no longer available at its website",
-   "No public statement on its status that we could find"
-  ],
-  "alternatives": {
-   "intro": "Active tools for sprint planning and product tracking.",
-   "items": [
-    {"name": "Linear", "url": "https://linear.app/", "what": "Issue tracking and sprint (cycle) planning for software teams", "difference": "Fast, opinionated tracker popular with startups."},
-    {"name": "Jira", "url": "https://www.atlassian.com/software/jira", "what": "Atlassian's issue and project tracker", "difference": "Highly configurable and widely used in larger companies."},
-    {"name": "Shortcut", "url": "https://www.shortcut.com/", "what": "Project management for software teams", "difference": "Combines docs, stories and roadmaps."}
-   ]
-  },
-  "faq": [
-   {"q": "Is Tara AI still available?", "a": "Not at its website: tara.ai redirected to a domain parking page when we checked in October 2026. We found no official announcement about the company's status."},
-   {"q": "Who founded Tara AI?", "a": "Iba Masood (CEO) and Syed Ahmed."},
-   {"q": "How much did Tara AI raise?", "a": "A $10 million Series A in July 2019 led by Aspect Ventures, after roughly $3 million in earlier funding, according to TechCrunch and Y Combinator."},
-   {"q": "Was Tara AI in Y Combinator?", "a": "Yes. It joined YC's Winter 2015 batch with an earlier careers product before pivoting to product management."}
-  ],
-  "sources": [
-   {"label": "TechCrunch: Tara.ai nabs $10M (July 2019)", "url": "https://techcrunch.com/2019/07/01/tara-ai-which-uses-machine-learning-to-spec-out-and-manage-engineering-projects-nabs-10m/"},
-   {"label": "Y Combinator: Iba Masood of Tara on raising a Series A", "url": "https://www.ycombinator.com/blog/amber-atherton-of-zyper-and-iba-masood-of-tara-on-raising-a-series-a-as-a-female-founder"},
-   {"label": "Internet Archive: tara.ai homepage, January 2023", "url": "https://web.archive.org/web/20230104041902/https://tara.ai/"},
-   {"label": "Wikipedia: Tara AI", "url": "https://en.wikipedia.org/wiki/Tara_AI"}
-  ]
- }
+  "slug": "tara-intelligence",
+  "website": "",
+  "excerpt": "Tara AI (Tara Intelligence) built an AI-assisted product management and sprint planning tool for software teams. Founders, YC history, funding, current status and alternatives.",
+  "content": "<p>Tara AI, listed here as Tara Intelligence, made software for planning and tracking engineering work. TechCrunch described it in 2019 as a machine-learning platform that helps companies scope software projects, predict the tasks and engineering resources they need, and monitor progress, working alongside tools such as Jira and Slack. By early 2023 its website, as preserved by the Internet Archive, pitched it as a way to define, plan and track mission-critical product updates, with requirements, sprints, task tracking, docs and stand-ups in one place.</p><p>The company was founded by Iba Masood, its CEO, and Syed Ahmed. In a Y Combinator interview, Masood explained that the company first went through YC in the Winter 2015 batch with a careers platform for new graduates (known as Gradberry), grew out of research into analysing programmers' GitHub commits, and pivoted to product management, launching that product in 2017. TechCrunch reported that the founders relocated to Boston and that early customers included Cisco and Orange Silicon Valley, with about three-quarters of users non-technical.</p><p>Funding was modest. Masood told YC the company raised roughly $200,000 after YC and about $2.8 million after the pivot, announced as a seed round of around $3 million. In July 2019 it raised a $10 million Series A led by Aspect Ventures, with the Slack Fund, Y Combinator and Moment Ventures taking part, TechCrunch reported.</p><p><strong>Current status:</strong> when we checked in October 2026, tara.ai no longer showed the product; it redirected to a domain parking page. We found no announcement of a shutdown or acquisition, so treat the product as unavailable unless the company says otherwise. Teams looking for a similar tool should consider the alternatives below.</p><p><em>This page is research, not a review. We have not used Tara AI; facts come from the pages under Sources.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "Product management and sprint planning software",
+    "platform": "Web app (no longer available at tara.ai)",
+    "starts_at": "Not available; website parked",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI-assisted sprint planning and product tracking for software teams (site now parked)",
+    "maker": {
+      "name": "Tara AI"
+    },
+    "team": [
+      {
+        "name": "Iba Masood",
+        "role": "Co-founder and CEO"
+      },
+      {
+        "name": "Syed Ahmed",
+        "role": "Co-founder"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://web.archive.org/web/20230104041902im_/https://tara.ai/img/og-image-home.png",
+        "w": 1200,
+        "h": 628,
+        "alt": "Tara logo in white on a blue background beside a screenshot of a sprint task timeline",
+        "credit": "Image: Tara AI (tara.ai, January 2023), via the Internet Archive"
+      },
+      {
+        "url": "https://web.archive.org/web/20230104041902im_/https://tara.ai/_nuxt/img/sprint.acdc565.webp",
+        "w": 856,
+        "h": 507,
+        "alt": "Tara sprint board showing Sprint 25 with tasks such as vendor interviews and an onboarding sequence, and a task detail panel",
+        "credit": "Image: Tara AI (tara.ai, January 2023), via the Internet Archive"
+      }
+    ],
+    "use_cases": [
+      "Writing product requirements and turning them into engineering tasks",
+      "Planning and running sprints",
+      "Tracking task progress and pull requests across a team",
+      "Estimating the work and people a software project needs"
+    ],
+    "audience": {
+      "fit": [
+        "readers researching Tara AI's history or a former Tara workspace",
+        "product and engineering managers comparing sprint-planning tools"
+      ],
+      "not_fit": [
+        "anyone hoping to sign up today: the product site is parked"
+      ]
+    },
+    "pricing": {
+      "intro": "No current pricing is available because tara.ai no longer shows the product. We did not find a pricing page to quote.",
+      "plans": [
+        {
+          "name": "Tara AI",
+          "price": "Not available",
+          "detail": "Website parked as of October 2026"
+        }
+      ],
+      "checked": "2026-10-15"
+    },
+    "pros": [
+      "Combined requirements, sprints and tracking in one tool",
+      "Backed by Y Combinator, Aspect Ventures and the Slack Fund"
+    ],
+    "cons": [
+      "Product no longer available at its website",
+      "No public statement on its status that we could find"
+    ],
+    "alternatives": {
+      "intro": "Active tools for sprint planning and product tracking.",
+      "items": [
+        {
+          "name": "Linear",
+          "url": "https://linear.app/",
+          "what": "Issue tracking and sprint (cycle) planning for software teams",
+          "difference": "Fast, opinionated tracker popular with startups."
+        },
+        {
+          "name": "Jira",
+          "url": "https://www.atlassian.com/software/jira",
+          "what": "Atlassian's issue and project tracker",
+          "difference": "Highly configurable and widely used in larger companies."
+        },
+        {
+          "name": "Shortcut",
+          "url": "https://www.shortcut.com/",
+          "what": "Project management for software teams",
+          "difference": "Combines docs, stories and roadmaps."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is Tara AI still available?",
+        "a": "Not at its website: tara.ai redirected to a domain parking page when we checked in October 2026. We found no official announcement about the company's status."
+      },
+      {
+        "q": "Who founded Tara AI?",
+        "a": "Iba Masood (CEO) and Syed Ahmed."
+      },
+      {
+        "q": "How much did Tara AI raise?",
+        "a": "A $10 million Series A in July 2019 led by Aspect Ventures, after roughly $3 million in earlier funding, according to TechCrunch and Y Combinator."
+      },
+      {
+        "q": "Was Tara AI in Y Combinator?",
+        "a": "Yes. It joined YC's Winter 2015 batch with an earlier careers product before pivoting to product management."
+      }
+    ],
+    "sources": [
+      {
+        "label": "TechCrunch: Tara.ai nabs $10M (July 2019)",
+        "url": "https://techcrunch.com/2019/07/01/tara-ai-which-uses-machine-learning-to-spec-out-and-manage-engineering-projects-nabs-10m/"
+      },
+      {
+        "label": "Y Combinator: Iba Masood of Tara on raising a Series A",
+        "url": "https://www.ycombinator.com/blog/amber-atherton-of-zyper-and-iba-masood-of-tara-on-raising-a-series-a-as-a-female-founder"
+      },
+      {
+        "label": "Internet Archive: tara.ai homepage, January 2023",
+        "url": "https://web.archive.org/web/20230104041902/https://tara.ai/"
+      },
+      {
+        "label": "Wikipedia: Tara AI",
+        "url": "https://en.wikipedia.org/wiki/Tara_AI"
+      }
+    ]
+  }
 }

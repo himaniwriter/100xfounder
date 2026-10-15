@@ -1,70 +1,137 @@
 {
- "slug": "rapid-robotics",
- "website": "https://www.rapidrobotics.com/",
- "excerpt": "Rapid Robotics rented pre-trained factory robot arms to manufacturers for about $25,000 a year. Funding history, how it worked, its current status and alternatives.",
- "content": "<p>Rapid Robotics was a Bay Area startup that tried to make factory automation as easy as hiring a temporary worker. Its product, the Rapid Machine Operator, was a six-joint robotic arm inside a safety work cell, with computer vision and an iPad for manual control. TechCrunch reported in 2020 that it handled tasks such as part inspection, injection-moulding machine tending, pick-and-place and welding, and that factories could rent it for around $25,000 a year. The company said the robot could be deployed in hours, without programming or robotics expertise, which is the robotics-as-a-service model.</p><p>Early customers named in TechCrunch's coverage included Westec Plastics, a Bay Area plastics moulder, and TruePill, a pharmacy company that used the robots to fill and label prescription bottles. The company also targeted the automotive sector.</p><p>Rapid Robotics raised money quickly. TechCrunch reported a $5.5 million seed round in November 2020, led by Greycroft and Bee Partners, and a $12 million Series A in April 2021 led by New Enterprise Associates. In August 2021 it raised a $36.7 million Series B co-led by Kleiner Perkins and Tiger Global, at a $192.5 million valuation, bringing total funding to $54.2 million. Jordan Kretchmer was CEO.</p><p><strong>Current status:</strong> when we checked in October 2026, rapidrobotics.com redirected to a page offering the domain name for sale. We found no official announcement of a shutdown or acquisition, so treat the service as unavailable unless the company says otherwise. Manufacturers looking for similar rented or easy-to-deploy robots should consider the alternatives below.</p><p><em>This page is research, not a review. We have not used Rapid Robotics; facts come from the reporting under Sources and the company's archived website.</em></p>",
- "profile": {
-  "checked": "2026-10-15",
-  "category": "Factory automation (robotics as a service)",
-  "platform": "Robotic arm work cells rented to factories (no longer offered at its website)",
-  "starts_at": "About $25,000 a year (2020-21 reports); not currently offered",
-  "schema_category": "BusinessApplication",
-  "summary_short": "Pre-trained factory robot arms rented by the year; website domain now for sale",
-  "maker": {"name": "Rapid Robotics", "url": "https://www.rapidrobotics.com/"},
-  "team": [{"name": "Jordan Kretchmer", "role": "CEO"}],
-  "gallery": [
-   {"url": "https://web.archive.org/web/20221229025034im_/https://www.rapidrobotics.com/cached-images/containers/assets/schedule.webp/a9447ac154ea57602c7397e9f2f5d324.webp", "w": 855, "h": 855, "alt": "Red and black six-joint robotic arm with a black gripper, rendered on white", "credit": "Image: Rapid Robotics (rapidrobotics.com, December 2022), via the Internet Archive"},
-   {"url": "https://web.archive.org/web/20221229025034im_/https://www.rapidrobotics.com/cached-images/paths/img/use-cases-mobile.webp/60f29f0c5f9efaf687d59015e3dd23f2.webp", "w": 735, "h": 1307, "alt": "Illustration of a factory floor with several red robot arms in work cells beside machines and a few human workers", "credit": "Image: Rapid Robotics (rapidrobotics.com, December 2022), via the Internet Archive"}
-  ],
-  "use_cases": [
-   "Tending injection-moulding and other machines",
-   "Pick-and-place and packing tasks",
-   "Part inspection with computer vision",
-   "Filling and labelling bottles"
-  ],
-  "audience": {
-   "fit": [
-    "readers researching robotics-as-a-service startups",
-    "manufacturers comparing rented automation options"
-   ],
-   "not_fit": [
-    "anyone hoping to rent a Rapid Machine Operator today: the website domain is listed for sale"
-   ]
-  },
-  "pricing": {
-   "intro": "TechCrunch reported in 2020 and 2021 that the Rapid Machine Operator rented for about $25,000 a year. The service is not offered at the company's website today.",
-   "plans": [{"name": "Rapid Machine Operator (2020-21)", "price": "About $25,000/year", "detail": "Robotics-as-a-service rental, as reported"}],
-   "notes": ["Historical price from press reports, not a current offer."],
-   "url": "https://techcrunch.com/2021/08/18/rapid-robotics-raises-another-36-7m",
-   "checked": "2026-10-15"
-  },
-  "pros": [
-   "Rental model avoided a large up-front robot purchase",
-   "Pre-trained robots deployed in hours, the company said"
-  ],
-  "cons": [
-   "No longer available at its website",
-   "No public statement on the company's status that we found"
-  ],
-  "alternatives": {
-   "intro": "Active options for flexible factory automation.",
-   "items": [
-    {"name": "Formic", "url": "https://formic.co/", "what": "Robots-as-a-service for manufacturers", "difference": "Charges per hour of robot work."},
-    {"name": "Universal Robots", "url": "https://www.universal-robots.com/", "what": "Collaborative robot arms", "difference": "You buy the arm and integrate it, often through a partner."},
-    {"name": "Bright Machines", "url": "https://www.brightmachines.com/", "what": "Software-defined automated assembly cells", "difference": "Focused on electronics assembly lines."}
-   ]
-  },
-  "faq": [
-   {"q": "Is Rapid Robotics still operating?", "a": "Its website domain redirected to a domain-sale page when we checked in October 2026. We found no official statement on the company's status."},
-   {"q": "How much did Rapid Robotics charge?", "a": "About $25,000 a year to rent a Rapid Machine Operator, according to TechCrunch's 2020 and 2021 reports."},
-   {"q": "How much funding did Rapid Robotics raise?", "a": "$54.2 million in total, including a $36.7 million Series B in August 2021 at a $192.5 million valuation."},
-   {"q": "Who ran Rapid Robotics?", "a": "Jordan Kretchmer was CEO."}
-  ],
-  "sources": [
-   {"label": "TechCrunch: Rapid Robotics raises $5.5M (Nov 2020)", "url": "https://techcrunch.com/2020/11/18/rapid-robotics-raises-5-5m-for-pre-programmed-manufacturing-robots"},
-   {"label": "TechCrunch: Rapid raises $12M (April 2021)", "url": "https://techcrunch.com/2021/04/06/rapid-raises-12m-for-its-manufacturing-robotics"},
-   {"label": "TechCrunch: Rapid Robotics raises another $36.7M (Aug 2021)", "url": "https://techcrunch.com/2021/08/18/rapid-robotics-raises-another-36-7m"},
-   {"label": "Internet Archive: rapidrobotics.com, December 2022", "url": "https://web.archive.org/web/20221229025034/https://www.rapidrobotics.com/"}
-  ]
- }
+  "slug": "rapid-robotics",
+  "website": "",
+  "excerpt": "Rapid Robotics rented pre-trained factory robot arms to manufacturers for about $25,000 a year. Funding history, how it worked, its current status and alternatives.",
+  "content": "<p>Rapid Robotics was a Bay Area startup that tried to make factory automation as easy as hiring a temporary worker. Its product, the Rapid Machine Operator, was a six-joint robotic arm inside a safety work cell, with computer vision and an iPad for manual control. TechCrunch reported in 2020 that it handled tasks such as part inspection, injection-moulding machine tending, pick-and-place and welding, and that factories could rent it for around $25,000 a year. The company said the robot could be deployed in hours, without programming or robotics expertise, which is the robotics-as-a-service model.</p><p>Early customers named in TechCrunch's coverage included Westec Plastics, a Bay Area plastics moulder, and TruePill, a pharmacy company that used the robots to fill and label prescription bottles. The company also targeted the automotive sector.</p><p>Rapid Robotics raised money quickly. TechCrunch reported a $5.5 million seed round in November 2020, led by Greycroft and Bee Partners, and a $12 million Series A in April 2021 led by New Enterprise Associates. In August 2021 it raised a $36.7 million Series B co-led by Kleiner Perkins and Tiger Global, at a $192.5 million valuation, bringing total funding to $54.2 million. Jordan Kretchmer was CEO.</p><p><strong>Current status:</strong> when we checked in October 2026, rapidrobotics.com redirected to a page offering the domain name for sale. We found no official announcement of a shutdown or acquisition, so treat the service as unavailable unless the company says otherwise. Manufacturers looking for similar rented or easy-to-deploy robots should consider the alternatives below.</p><p><em>This page is research, not a review. We have not used Rapid Robotics; facts come from the reporting under Sources and the company's archived website.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "Factory automation (robotics as a service)",
+    "platform": "Robotic arm work cells rented to factories (no longer offered at its website)",
+    "starts_at": "About $25,000 a year (2020-21 reports); not currently offered",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Pre-trained factory robot arms rented by the year; website domain now for sale",
+    "maker": {
+      "name": "Rapid Robotics",
+      "url": "https://www.rapidrobotics.com/"
+    },
+    "team": [
+      {
+        "name": "Jordan Kretchmer",
+        "role": "CEO"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://web.archive.org/web/20221229025034im_/https://www.rapidrobotics.com/cached-images/containers/assets/schedule.webp/a9447ac154ea57602c7397e9f2f5d324.webp",
+        "w": 855,
+        "h": 855,
+        "alt": "Red and black six-joint robotic arm with a black gripper, rendered on white",
+        "credit": "Image: Rapid Robotics (rapidrobotics.com, December 2022), via the Internet Archive"
+      },
+      {
+        "url": "https://web.archive.org/web/20221229025034im_/https://www.rapidrobotics.com/cached-images/paths/img/use-cases-mobile.webp/60f29f0c5f9efaf687d59015e3dd23f2.webp",
+        "w": 735,
+        "h": 1307,
+        "alt": "Illustration of a factory floor with several red robot arms in work cells beside machines and a few human workers",
+        "credit": "Image: Rapid Robotics (rapidrobotics.com, December 2022), via the Internet Archive"
+      }
+    ],
+    "use_cases": [
+      "Tending injection-moulding and other machines",
+      "Pick-and-place and packing tasks",
+      "Part inspection with computer vision",
+      "Filling and labelling bottles"
+    ],
+    "audience": {
+      "fit": [
+        "readers researching robotics-as-a-service startups",
+        "manufacturers comparing rented automation options"
+      ],
+      "not_fit": [
+        "anyone hoping to rent a Rapid Machine Operator today: the website domain is listed for sale"
+      ]
+    },
+    "pricing": {
+      "intro": "TechCrunch reported in 2020 and 2021 that the Rapid Machine Operator rented for about $25,000 a year. The service is not offered at the company's website today.",
+      "plans": [
+        {
+          "name": "Rapid Machine Operator (2020-21)",
+          "price": "About $25,000/year",
+          "detail": "Robotics-as-a-service rental, as reported"
+        }
+      ],
+      "notes": [
+        "Historical price from press reports, not a current offer."
+      ],
+      "url": "https://techcrunch.com/2021/08/18/rapid-robotics-raises-another-36-7m",
+      "checked": "2026-10-15"
+    },
+    "pros": [
+      "Rental model avoided a large up-front robot purchase",
+      "Pre-trained robots deployed in hours, the company said"
+    ],
+    "cons": [
+      "No longer available at its website",
+      "No public statement on the company's status that we found"
+    ],
+    "alternatives": {
+      "intro": "Active options for flexible factory automation.",
+      "items": [
+        {
+          "name": "Formic",
+          "url": "https://formic.co/",
+          "what": "Robots-as-a-service for manufacturers",
+          "difference": "Charges per hour of robot work."
+        },
+        {
+          "name": "Universal Robots",
+          "url": "https://www.universal-robots.com/",
+          "what": "Collaborative robot arms",
+          "difference": "You buy the arm and integrate it, often through a partner."
+        },
+        {
+          "name": "Bright Machines",
+          "url": "https://www.brightmachines.com/",
+          "what": "Software-defined automated assembly cells",
+          "difference": "Focused on electronics assembly lines."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is Rapid Robotics still operating?",
+        "a": "Its website domain redirected to a domain-sale page when we checked in October 2026. We found no official statement on the company's status."
+      },
+      {
+        "q": "How much did Rapid Robotics charge?",
+        "a": "About $25,000 a year to rent a Rapid Machine Operator, according to TechCrunch's 2020 and 2021 reports."
+      },
+      {
+        "q": "How much funding did Rapid Robotics raise?",
+        "a": "$54.2 million in total, including a $36.7 million Series B in August 2021 at a $192.5 million valuation."
+      },
+      {
+        "q": "Who ran Rapid Robotics?",
+        "a": "Jordan Kretchmer was CEO."
+      }
+    ],
+    "sources": [
+      {
+        "label": "TechCrunch: Rapid Robotics raises $5.5M (Nov 2020)",
+        "url": "https://techcrunch.com/2020/11/18/rapid-robotics-raises-5-5m-for-pre-programmed-manufacturing-robots"
+      },
+      {
+        "label": "TechCrunch: Rapid raises $12M (April 2021)",
+        "url": "https://techcrunch.com/2021/04/06/rapid-raises-12m-for-its-manufacturing-robotics"
+      },
+      {
+        "label": "TechCrunch: Rapid Robotics raises another $36.7M (Aug 2021)",
+        "url": "https://techcrunch.com/2021/08/18/rapid-robotics-raises-another-36-7m"
+      },
+      {
+        "label": "Internet Archive: rapidrobotics.com, December 2022",
+        "url": "https://web.archive.org/web/20221229025034/https://www.rapidrobotics.com/"
+      }
+    ]
+  }
 }
