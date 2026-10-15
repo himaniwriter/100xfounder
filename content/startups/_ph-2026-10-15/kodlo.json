@@ -1,0 +1,422 @@
+{
+ "input": "https://www.producthunt.com/products/kodlo",
+ "final_url": "https://www.producthunt.com/products/kodlo",
+ "launch": {
+  "slug": "kodlo-2",
+  "name": "kōdlo",
+  "tagline": "End-to-end sales workspace with unified context",
+  "featuredAt": "2026-10-11T00:01:00-07:00",
+  "dailyRank": "2",
+  "weeklyRank": "24",
+  "points": 305,
+  "commentsCount": 63,
+  "pricingType": "free_options",
+  "description": "kōdlo finds prospects that fit your ICP and tells you how to warm each one up. Upload product catalogues and other docs to the Knowledge Hub, and its agent turns them into personalized messages, offers, deep searches and decks. Track client data, collaborate with your team, and manage tasks, all in one place. Connect Claude Desktop/ChatGPT Work or your code agent with kōdlo MCP to scale and orchestrate contexts.",
+  "makers": [
+   {
+    "name": "Andriana Oprsyko ",
+    "username": "andriana_oprysko",
+    "headline": "Co-founder kōdlo🐍"
+   },
+   {
+    "name": "Ivan Telnov",
+    "username": "ivan_telnov",
+    "headline": "CTO, AI/ML Architect, building kōdlo.ai "
+   },
+   {
+    "name": "Jakub Borkowski",
+    "username": "jr_borkowski",
+    "headline": "Founder at kōdlo | AI Consultant | GenAI"
+   },
+   {
+    "name": "Vitalii Hural",
+    "username": "vitalii_hural",
+    "headline": "Full-stack dev"
+   }
+  ],
+  "hunter": "Jonno Riekwel",
+  "media": [
+   {
+    "uuid": "ddca4282-7085-4b00-b624-b165e830226b.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "f93952dd-5f1a-4239-be1f-83d7fab45325.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/blPF88eqcKY?si=0-EslX6FOjjUBM_i"
+   },
+   {
+    "uuid": "2df04d30-fa51-4098-8111-d5de27ddd86f.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "8a2c58f6-6c78-41ff-a430-b42587682fdd.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "1a9e0a02-5f98-4517-80be-ccaf0466a7b7.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "9b23c628-ae82-454b-862b-8ec929f3b5f6.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "520130e6-e164-429a-bd63-12b7051532e0.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "97f29de4-2037-4be2-8e03-f018dd9731fc.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "ba0a8f75-0702-43b3-a809-9073af0dc05b.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "0e5f160d-f62a-40bc-ad40-8d4c951640fd.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   }
+  ],
+  "links": [
+   "kodlo.ai",
+   "app.kodlo.ai",
+   "www.linkedin.com",
+   "www.youtube.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    2
+   ]
+  ]
+ },
+ "product": {
+  "name": "kōdlo",
+  "slug": "kodlo",
+  "tagline": "End-to-end sales workspace with unified context",
+  "description": "kōdlo finds prospects that fit your ICP and tells you how to warm each one up. Upload product catalogues and other docs to the Knowledge Hub, and its agent turns them into personalized messages, offers, deep searches and decks. Track client data, collaborate with your team, and manage tasks, all in one place. Connect Claude Desktop/ChatGPT Work or your code agent with kōdlo MCP to scale and orchestrate contexts.",
+  "websiteUrl": "https://kodlo.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 460,
+  "linkedinUrl": "https://www.linkedin.com/company/kodlo/?viewAsMember=true",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/ddca4282-7085-4b00-b624-b165e830226b.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/2df04d30-fa51-4098-8111-d5de27ddd86f.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/8a2c58f6-6c78-41ff-a430-b42587682fdd.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/1a9e0a02-5f98-4517-80be-ccaf0466a7b7.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/9b23c628-ae82-454b-862b-8ec929f3b5f6.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/520130e6-e164-429a-bd63-12b7051532e0.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/97f29de4-2037-4be2-8e03-f018dd9731fc.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/ba0a8f75-0702-43b3-a809-9073af0dc05b.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/0e5f160d-f62a-40bc-ad40-8d4c951640fd.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5927801",
+   "depth": 0,
+   "author": "Andriana Oprsyko ",
+   "username": "andriana_oprysko",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 Andriana here, co-founder of kōdlo🐍 The Problem. Selling a complex product takes hours of prep. You jump between a few disconnected tools to research accounts, draft personalized outreach, and assemble pitch decks. Context gets lost, and you end up spending more time on prep than talking to buyers. The Solution. kōdlo is an end-to-end sales workspace that keeps the context for you. Find prospects, research them, and write messages, proposals and decks in one place. Everything you do there, from research and notes to your documents and past conversations, stays in kōdlo's memory, so each new piece of work builds on what it already knows. What makes it different? kōdlo is built on one shared memory that every agent can use. The agent also sees what you see. Chat sits on the left, your work on the right. On top of that sits everything you need to sell: prospecting, research, your own knowledge base, outreach, decks, a task tracker, team collaboration and scheduled work. Key features: 🎯 Find prospects with a reason. Describe who you sell to and kōdlo finds matching companies and decision makers. Each one comes with evidence for why it fits, like a funding round, a jo"
+  },
+  {
+   "id": "5939633",
+   "depth": 1,
+   "author": "Jakub Borkowski",
+   "username": "jr_borkowski",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "We built kōdlo to ban out of touch and blunt outreaches ☝️now you can also start establishing relationships at scale while keeping it meaningful. Excited to hear your feedback, The Team 🚀"
+  },
+  {
+   "id": "5940401",
+   "depth": 1,
+   "author": "Adrian Knoll",
+   "username": "knolladrian",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@andriana_oprysko &nbsp;Very cool product. Congrats on the launch! How do you see your advantage over your competitors, especially in the privacy-first EU market?"
+  },
+  {
+   "id": "5940427",
+   "depth": 2,
+   "author": "Andriana Oprsyko ",
+   "username": "andriana_oprysko",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@knolladrian &nbsp;thanks for question, Adrian! On competitors, kōdlo is a bit of an unusual product. It brings together a set of features you won’t find in one place anywhere else, and it stays simple to use. That last part matters a lot. You don’t need a technical background to get value from it. It’s built for salespeople, not engineers. On privacy, we’re a small, agile team, so we can be really flexible. If a company needs extra protection for its data, we can sign a DPA and all the related agreements and keep the data hosted only within the EU. We can also deploy kōdlo on-premise for a specific company, following the highest security standards for the EU market."
+  },
+  {
+   "id": "5940737",
+   "depth": 1,
+   "author": "Vipul Kumar",
+   "username": "vipul_kumar1280",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@andriana_oprysko &nbsp;Using your own Powerpoint template to the generated branded decks could save a lot of time. How the accurate have those signals been in finding the right decision of makers??"
+  },
+  {
+   "id": "5940816",
+   "depth": 2,
+   "author": "Andriana Oprsyko ",
+   "username": "andriana_oprysko",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@vipul_kumar1280 thanks, good call on the templates, and the signals help narrow down who to talk to, but you always make the final call on who to contact."
+  },
+  {
+   "id": "5939450",
+   "depth": 0,
+   "author": "Roop Reddy",
+   "username": "roopreddy",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Can the Knowledge Hub be updated by multiple team members, and are there permissions for keeping sensitive documents restricted? Congrats on the launch!"
+  },
+  {
+   "id": "5939490",
+   "depth": 1,
+   "author": "Ivan Telnov",
+   "username": "ivan_telnov",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@roopreddy &nbsp;you can have shared projects in KH as well as private ones."
+  },
+  {
+   "id": "5939666",
+   "depth": 0,
+   "author": "Hemendra Khatik",
+   "username": "hemendra_khatik",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I wonder if the agents get confused when I have many different versions of the same pitch deck in my hub. How does it know which one is the final one?"
+  },
+  {
+   "id": "5939695",
+   "depth": 1,
+   "author": "Ivan Telnov",
+   "username": "ivan_telnov",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hemendra_khatik &nbsp;Thanks, that’s a really interesting question, and there are a few scenarios to consider. Ultimately, if anything is ambiguous, the agent will ask you to clarify. KH doesn’t have built-in version control, but the agent uses an internal virtual file system (VFS) that tracks versions of the artifacts it works with where it fetches data from KH. So far, I haven’t run into issues with multiple versions of the same record in KH, but I’d love to hear about your experience so we can improve the solution!"
+  },
+  {
+   "id": "5939781",
+   "depth": 0,
+   "author": "Muhammad Ahmed",
+   "username": "aymi_malik",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "We are talking about uploading sensitive documents containing pricing and product information. How is this information being stored, and is it used for training models?"
+  },
+  {
+   "id": "5939804",
+   "depth": 1,
+   "author": "Jakub Borkowski",
+   "username": "jr_borkowski",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@aymi_malik &nbsp;Kōdlo can be powered by custom LLM deployments both in secure cloud and on your premises, all shipped in custom plans 🫡"
+  },
+  {
+   "id": "5939817",
+   "depth": 1,
+   "author": "Ivan Telnov",
+   "username": "ivan_telnov",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@aymi_malik &nbsp; Uploaded artifacts are stored in Google Cloud Platform (GCP) with domain isolation. You can find more details in our privacy policy: https://kodlo.ai/privacy-policy/ None of our users’ data is used for model training or data analysis. For stricter requirements, we offer an enterprise license, and kōdlo can be deployed on-premises."
+  },
+  {
+   "id": "5939099",
+   "depth": 0,
+   "author": "Nika",
+   "username": "busmark_w_nika",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "One suggestion –&nbsp;in the monthly tier –&nbsp;I would incorporate more items than in the free one because it psychologically looks like you offer more than in the free tier, so people have the feeling they pay for more value."
+  },
+  {
+   "id": "5939179",
+   "depth": 1,
+   "author": "Andriana Oprsyko ",
+   "username": "andriana_oprysko",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@busmark_w_nika &nbsp;Thanks Nika, that makes a lot of sense! 🙌 In our case it works a bit differently because it’s a free trial, not a fully free plan. So during the trial you get the same features, and the plans mostly differ in capacity. But you’re right about the psychology behind it, and we’ll keep it in mind for the next pricing and product changes. Really appreciate you taking the time to share this!"
+  },
+  {
+   "id": "5939465",
+   "depth": 0,
+   "author": "Himani Sah",
+   "username": "himani_sah1",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Congrats. Does the deck generator use custom layouts and styles or it works on top of preset templates?"
+  },
+  {
+   "id": "5939471",
+   "depth": 1,
+   "author": "Andriana Oprsyko ",
+   "username": "andriana_oprysko",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@himani_sah1 &nbsp;thank you! It works on your own company design, not preset templates. You upload your existing company deck and pick the slides you want to keep fixed, for example the opening slide and a closing thank you slide. kōdlo then builds a template from your design and uses it every time it generates a new presentation, so every deck looks like it came from your team."
+  },
+  {
+   "id": "5939494",
+   "depth": 1,
+   "author": "Ivan Telnov",
+   "username": "ivan_telnov",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@himani_sah1 &nbsp;Template extraction is a preview feature, and your feedback will be highly appreciated!"
+  },
+  {
+   "id": "5941172",
+   "depth": 0,
+   "author": "Jack Mo",
+   "username": "jackinlearning96",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "wondering what problems can your product solve?"
+  },
+  {
+   "id": "5941305",
+   "depth": 1,
+   "author": "Ivan Telnov",
+   "username": "ivan_telnov",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jackinlearning96 kōdlo is shared memory for your outreach. Your team and AI agents work from the same contacts, campaigns, generated content, market research and history, connected through MCP, so small teams and solo founders scale outreach without losing context."
+  },
+  {
+   "id": "5941951",
+   "depth": 1,
+   "author": "Andriana Oprsyko ",
+   "username": "andriana_oprysko",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jackinlearning96 &nbsp;hi Jack, great question! Selling complex products takes tons of prep, and jumping between separate tools wastes time and loses context. kōdlo fixes this by putting your entire workflow in one spot. It researches leads, drafts messages, and creates decks, keeping all deal context connected so you can focus on selling. We built it for ourselves first, closed deals with it, and now we’re opening it up to everyone! 🙌"
+  }
+ ],
+ "warning": "launch slug kodlo-2 != requested kodlo"
+}

@@ -1,0 +1,260 @@
+{
+ "slug": "kodlo",
+ "excerpt": "kōdlo is an AI sales workspace that finds ICP-fit prospects, drafts outreach and builds decks from your docs. 7-day trial, then from $49/month.",
+ "content": "<p>kōdlo is a sales workspace with an AI agent built in. You describe who you sell to and the agent interviews you to build an ideal customer profile, then finds matching companies and decision makers, each with the public signals and source links that explain why they fit, such as a funding round or a job posting. It runs deep research on each account, writes a cited brief, suggests how to warm the prospect up and drafts LinkedIn or email messages for you to edit and send yourself.</p><p>Everything sits on one shared memory: contacts and campaigns in a built-in CRM, a Knowledge Hub where you upload product catalogues, pricing and case studies, a task tracker, a ticket system, a note taker and scheduled jobs. The agent pulls facts from your documents with citations and can generate offers and pitch decks in your own company template (a preview feature), editable in kōdlo or exported as PPTX. Claude Desktop, ChatGPT, Claude Code and Codex can connect to the same data through kōdlo's MCP server. It runs in the browser at app.kodlo.ai.</p><p>kōdlo is operated by Reinode Software, a company registered in Warsaw, Poland, and its product makers on Product Hunt are Andriana Oprsyko, Ivan Telnov, Jakub Borkowski and Vitalii Hural. It launched on Product Hunt on 11 October 2026 and finished #2 for the day with 305 upvotes and 63 comments.</p><p><em>We have not tested kōdlo ourselves. This page brings together its official site, pricing page and privacy policy, its Product Hunt launch and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI sales tools",
+  "platform": "Web app, with an MCP server",
+  "starts_at": "7-day free trial, then $49/month + VAT",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI sales workspace: prospecting, research, outreach drafts, CRM and decks on one shared memory",
+  "maker": {
+   "name": "Andriana Oprsyko",
+   "url": "https://www.producthunt.com/@andriana_oprysko"
+  },
+  "team": [
+   {"name": "Andriana Oprsyko", "role": "Co-founder", "url": "https://www.producthunt.com/@andriana_oprysko"},
+   {"name": "Jakub Borkowski", "role": "Founder", "url": "https://www.producthunt.com/@jr_borkowski"},
+   {"name": "Ivan Telnov", "role": "CTO", "url": "https://www.producthunt.com/@ivan_telnov"},
+   {"name": "Vitalii Hural", "role": "Full-stack developer", "url": "https://www.producthunt.com/@vitalii_hural"}
+  ],
+  "ph": {
+   "rank": 2,
+   "votes": 305,
+   "comments": 63,
+   "followers": 460,
+   "launched": "2026-10-11",
+   "as_of": "2026-10-15"
+  },
+  "video_url": "https://www.youtube.com/watch?v=blPF88eqcKY",
+  "video_title": "kōdlo — end-to-end AI workspace for B2B sales",
+  "use_cases": [
+   "Building an ideal customer profile and a first prospect list from scratch",
+   "Researching each account and getting a cited brief before a sales call",
+   "Drafting personalised LinkedIn connection notes, emails and follow-ups",
+   "Answering buyer questions from your own pricing sheets and catalogues, with sources",
+   "Generating a proposal deck in your company's template",
+   "Running a weekly pipeline review as a scheduled job"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Andriana Oprsyko, kōdlo's co-founder, said selling a complex product takes hours of preparation spread across disconnected tools for account research, outreach and pitch decks, and that context gets lost between them, so salespeople spend more time preparing than talking to buyers.",
+    "kōdlo is the team's answer: one workspace where prospecting, research, messages, proposals and decks share a single memory that every agent can use, with chat on the left and your work on the right. In later replies she added that the team built it for itself first and closed deals with it before opening it to everyone."
+   ],
+   "attribution": "Andriana Oprsyko, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/kodlo?comment=5927801"
+  },
+  "audience": {
+   "fit": [
+    "sell a complex or high-ticket B2B product and spend hours preparing each account",
+    "are a solo founder or small sales team that wants prospecting, CRM and outreach in one tool",
+    "need EU hosting: core workspace data is hosted in Germany and Finland, and a DPA is available"
+   ],
+   "not_fit": [
+    "want a free-forever plan: there is a 7-day trial only",
+    "want outreach sent automatically: kōdlo drafts messages and you send them",
+    "need more than three seats without talking to sales: that needs the Custom plan"
+   ]
+  },
+  "pricing": {
+   "intro": "Every plan starts with a 7-day free trial. Prices are kōdlo's own, per month and excluding VAT; quarterly billing takes 15% off.",
+   "url": "https://kodlo.ai/pricing/",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free trial",
+     "price": "$0 for 7 days",
+     "detail": "1 seat, all features including ICP Builder, deep research, CRM, Knowledge Hub with OCR, MCP connection, note taker, scheduled jobs and Deck (beta)"
+    },
+    {
+     "name": "Starter",
+     "price": "$49/month + VAT ($43/month billed quarterly)",
+     "amount": 49,
+     "currency": "USD",
+     "detail": "1 seat, everything in the trial, Knowledge Hub OCR up to 1,000 pages a month"
+    },
+    {
+     "name": "Pro",
+     "price": "$199/month + VAT ($169/month billed quarterly)",
+     "amount": 199,
+     "currency": "USD",
+     "detail": "Up to 3 seats, workspace collaboration, four times the monthly limits, long-term memory, agent learning, OCR up to 10,000 pages a month"
+    },
+    {
+     "name": "Custom",
+     "price": "Quoted",
+     "detail": "Any seat count, custom AI agents and integrations, SSO, SLA, DPA and procurement support, dedicated onboarding"
+    }
+   ],
+   "notes": [
+    "Upgrades apply immediately and are prorated; downgrades take effect at the next renewal.",
+    "There is no self-checkout for Custom; kōdlo says it replies within 24 hours."
+   ]
+  },
+  "alternatives": {
+   "intro": "These four are on Product Hunt's alternatives list for kōdlo. Prices come from each product's own pricing page, checked on 15 October 2026; review scores are Product Hunt users'.",
+   "items": [
+    {
+     "name": "folk",
+     "url": "https://100xfounder.com/startup/folk/",
+     "what": "AI CRM for your entire sales motion",
+     "tags": ["CRM", "Email campaigns", "Contact enrichment"],
+     "starts_at": "Standard $24/member/month billed yearly ($30 monthly)",
+     "ph_rating": 4.8,
+     "ph_reviews": 81,
+     "ph_url": "https://www.producthunt.com/products/folk-2",
+     "difference": "A CRM first, with email campaigns, enrichment and a LinkedIn extension; it does not centre on an agent that writes cited research briefs and decks."
+    },
+    {
+     "name": "Apollo.io",
+     "url": "https://100xfounder.com/startup/apollo-io/",
+     "what": "Find and convert ideal buyers",
+     "tags": ["Lead database", "Sales engagement"],
+     "starts_at": "Free sign-up; see its pricing page for paid plans",
+     "ph_rating": 4.2,
+     "ph_reviews": 42,
+     "ph_url": "https://www.producthunt.com/products/apollo-io",
+     "difference": "Built around a large contact and company database for prospecting at volume, where kōdlo builds smaller, researched lists with reasons attached."
+    },
+    {
+     "name": "Jeeva AI",
+     "url": "https://www.jeeva.ai/",
+     "what": "Superhuman sales, powered by agentic AI",
+     "tags": ["AI SDR", "Sales automation"],
+     "starts_at": "Free; Growth $95/month billed annually",
+     "ph_rating": 4.7,
+     "ph_reviews": 53,
+     "ph_url": "https://www.producthunt.com/products/jeeva-ai",
+     "difference": "Focuses on automated multichannel outreach and email and phone lookups paid with credits, rather than a shared knowledge base and deck builder."
+    },
+    {
+     "name": "Clarify",
+     "url": "https://www.clarify.ai/",
+     "what": "The autonomous CRM that helps you sell more",
+     "tags": ["AI CRM", "Meeting notes"],
+     "starts_at": "Free; Starter $40/month billed annually",
+     "ph_rating": 4.9,
+     "ph_reviews": 10,
+     "ph_url": "https://www.producthunt.com/products/clarify-6",
+     "difference": "Charges for AI credits with unlimited seats and centres on meeting prep and deal updates, where kōdlo charges per plan and seat."
+    }
+   ],
+   "more": "Product Hunt also lists Success.ai, B2B Rocket, ZELIQ, Zaplify, Extrovert and Bitscale."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/kodlo/reviews",
+   "as_of": "2026-10-15"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [],
+    "asked": [
+     "What problems the product actually solves",
+     "Whether a paid tier should visibly include more than the free one (the maker explained it is a trial with the same features)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "in the monthly tier – I would incorporate more items than in the free one",
+     "author": "Nika",
+     "url": "https://www.producthunt.com/products/kodlo?comment=5939099"
+    },
+    {
+     "text": "wondering what problems can your product solve?",
+     "author": "Jack Mo",
+     "url": "https://www.producthunt.com/products/kodlo?comment=5941172"
+    }
+   ]
+  },
+  "pros": [
+   "Prospects come with the signals and source links behind each match",
+   "Prospecting, research, CRM, outreach drafts and decks share one memory",
+   "Decks follow your own company template and export to PPTX",
+   "MCP server lets Claude, ChatGPT, Claude Code or Codex use the same data",
+   "Core workspace data hosted in the EU, with a no-training policy and a DPA"
+  ],
+  "cons": [
+   "No free-forever plan, only a 7-day trial",
+   "More than three seats needs a quoted Custom plan",
+   "Template extraction for decks is a preview feature, and the Knowledge Hub has no built-in version control",
+   "Some processing, such as AI inference, file storage and web search, uses US-based sub-processors"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/kodlo",
+   "quotes": [
+    {
+     "author": "Nika",
+     "url": "https://www.producthunt.com/products/kodlo?comment=5939099",
+     "text": "Suggested the monthly tier should include more than the free one, so buyers feel they pay for more value.",
+     "reply": "Andriana Oprsyko replied that it is a free trial rather than a free plan: the trial has the same features and the plans differ mainly in capacity."
+    },
+    {
+     "author": "Jack Mo",
+     "url": "https://www.producthunt.com/products/kodlo?comment=5941172",
+     "text": "Asked what problems the product solves.",
+     "reply": "Ivan Telnov described it as shared memory for outreach: the team and AI agents work from the same contacts, campaigns, research and history, connected through MCP."
+    }
+   ],
+   "x": {
+    "none": "We found no posts about kōdlo on X yet.",
+    "search_url": "https://x.com/search?q=kodlo.ai&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is kōdlo?",
+    "a": "An AI sales workspace that builds your ideal customer profile, finds matching prospects with sources, researches them, drafts outreach and creates offers and decks from your own documents, with a CRM and task tracker in the same place."
+   },
+   {
+    "q": "How much does kōdlo cost?",
+    "a": "After a 7-day free trial, Starter is $49 a month and Pro (up to three seats) is $199 a month, both plus VAT. Quarterly billing takes 15% off; larger teams get a quoted Custom plan."
+   },
+   {
+    "q": "Is my data used to train AI models?",
+    "a": "No, according to kōdlo's privacy policy. Core workspace data is hosted in the EU (Hetzner, Germany and Finland); files are kept in Google Cloud Storage, and AI inference and web search use US-based providers bound by no-training terms. On Product Hunt the makers added that on-premise deployment is available for enterprise customers."
+   },
+   {
+    "q": "Can teammates share the Knowledge Hub?",
+    "a": "Yes. Ivan Telnov said on Product Hunt that the Knowledge Hub can hold shared projects as well as private ones. Collaboration features are on the Pro plan and above."
+   },
+   {
+    "q": "Do generated decks use my own design?",
+    "a": "Yes. Andriana Oprsyko explained that you upload an existing company deck and pick the slides to keep fixed; kōdlo builds a template from it. The team calls template extraction a preview feature."
+   },
+   {
+    "q": "Does kōdlo send messages for me?",
+    "a": "It drafts connection requests, emails and follow-ups; its own screenshots say messages are drafted in kōdlo and sent by you."
+   },
+   {
+    "q": "What are the alternatives to kōdlo?",
+    "a": "Product Hunt lists folk, Apollo.io, Jeeva AI and Clarify among others. They lean more towards CRM, large contact databases or automated outreach."
+   }
+  ],
+  "sources": [
+   {"label": "kōdlo official site", "url": "https://kodlo.ai/"},
+   {"label": "kōdlo pricing", "url": "https://kodlo.ai/pricing/"},
+   {"label": "kōdlo privacy policy", "url": "https://kodlo.ai/privacy-policy/"},
+   {"label": "kōdlo launch video on YouTube", "url": "https://www.youtube.com/watch?v=blPF88eqcKY"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/kodlo"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/kodlo/alternatives"},
+   {"label": "folk pricing", "url": "https://www.folk.app/pricing"},
+   {"label": "Apollo.io pricing", "url": "https://www.apollo.io/pricing"},
+   {"label": "Jeeva AI pricing", "url": "https://www.jeeva.ai/pricing"},
+   {"label": "Clarify pricing", "url": "https://www.clarify.ai/pricing"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/0e5f160d-f62a-40bc-ad40-8d4c951640fd.png?auto=format&fit=max&w=1400", "alt": "kōdlo introduction slide: end-to-end sales workspace with unified context, beside the agent chat and a contact record", "credit": "Image: kōdlo on Product Hunt", "w": 3810, "h": 2280},
+   {"url": "https://ph-files.imgix.net/ddca4282-7085-4b00-b624-b165e830226b.png?auto=format&fit=max&w=1400", "alt": "kōdlo overview: find prospects, plan warm-ups, use Knowledge Hub documents and build decks, with Claude, ChatGPT and Codex connected over MCP", "credit": "Image: kōdlo on Product Hunt", "w": 3810, "h": 2280},
+   {"url": "https://ph-files.imgix.net/8a2c58f6-6c78-41ff-a430-b42587682fdd.png?auto=format&fit=max&w=1400", "alt": "kōdlo discovery screen staging prospect candidates for confirmation, each with the reason it fits the ICP", "credit": "Image: kōdlo on Product Hunt", "w": 3810, "h": 2280},
+   {"url": "https://ph-files.imgix.net/1a9e0a02-5f98-4517-80be-ccaf0466a7b7.png?auto=format&fit=max&w=1400", "alt": "kōdlo drafting a personalised LinkedIn connection request for a prospect, to be sent by the user", "credit": "Image: kōdlo on Product Hunt", "w": 3810, "h": 2280},
+   {"url": "https://ph-files.imgix.net/9b23c628-ae82-454b-862b-8ec929f3b5f6.png?auto=format&fit=max&w=1400", "alt": "kōdlo Knowledge Hub answering a discount question with a citation to an uploaded pricing PDF", "credit": "Image: kōdlo on Product Hunt", "w": 3810, "h": 2280},
+   {"url": "https://ph-files.imgix.net/520130e6-e164-429a-bd63-12b7051532e0.png?auto=format&fit=max&w=1400", "alt": "kōdlo deck screen generating a client presentation from a brand template, exportable as PPTX", "credit": "Image: kōdlo on Product Hunt", "w": 3810, "h": 2280},
+   {"url": "https://ph-files.imgix.net/97f29de4-2037-4be2-8e03-f018dd9731fc.png?auto=format&fit=max&w=1400", "alt": "kōdlo contact record with a timeline of buying signals captured automatically", "credit": "Image: kōdlo on Product Hunt", "w": 3810, "h": 2280},
+   {"url": "https://ph-files.imgix.net/ba0a8f75-0702-43b3-a809-9073af0dc05b.png?auto=format&fit=max&w=1400", "alt": "kōdlo scheduled job confirming a weekly Monday pipeline review", "credit": "Image: kōdlo on Product Hunt", "w": 3810, "h": 2280}
+  ]
+ }
+}

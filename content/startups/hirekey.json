@@ -1,0 +1,318 @@
+{
+ "slug": "hirekey",
+ "excerpt": "HireKey checks your fit for a tech role, tailors your resume, coaches interviews by voice and tracks applications. Free plan; Premium $39 a month.",
+ "content": "<p>HireKey is an AI job-search tool for people applying to roles in tech. You add a job and your master resume, and it compares the two: which requirements your resume shows, which it misses, and whether the role is worth pursuing. It then rewrites your resume bullets for that job, showing each original line next to the tailored one so you approve every change; the site says tailoring should clarify real experience, not invent it. It also drafts cover letters and short company research briefs.</p><p>For interviews, HireKey generates recruiter-screen and hiring-manager questions from the job description and has a voice coach you answer out loud. The coach follows what you say, asks for more detail when your part in the work is unclear, and gives a debrief. On Product Hunt the co-founder said it uses the STAR structure, does not grade accent or pronunciation, and should not be treated as a check of technical accuracy. A job tracker with table and Kanban views keeps applications in stages from Not Applied to Offer.</p><p>HireKey was founded by Nela Davis, who says she spent 10 years in tech recruiting including at Microsoft, Amazon and Stripe, and Lance Davis Jr., who brings a background in sales. It launched on Product Hunt on 11 October 2026 and finished #1 for the day with 236 upvotes and 37 comments.</p><p><em>We have not tested HireKey ourselves. This page brings together HireKey's website, about and data-security pages, its Product Hunt launch and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Career and job search",
+  "platform": "Web app",
+  "starts_at": "Free plan; Premium $39/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Recruiter-informed AI tool for tech job seekers: role fit, resume tailoring, voice interview coach and job tracker",
+  "maker": {
+   "name": "Nela Davis",
+   "url": "https://www.producthunt.com/@founder92"
+  },
+  "team": [
+   {
+    "name": "Nela Davis",
+    "role": "Co-founder",
+    "url": "https://www.producthunt.com/@founder92"
+   },
+   {
+    "name": "Lance Davis Jr.",
+    "role": "Co-founder",
+    "url": "https://www.producthunt.com/@lance_davis_jr_"
+   },
+   {
+    "name": "Shahriar Hasan",
+    "role": "Maker; CMO, SEO and digital marketing strategist (Product Hunt headline)",
+    "url": "https://www.producthunt.com/@shahriardgm"
+   },
+   {
+    "name": "Altaf Hussain",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@altafali111"
+   }
+  ],
+  "ph": {
+   "rank": 1,
+   "votes": 236,
+   "comments": 37,
+   "followers": 616,
+   "launched": "2026-10-11",
+   "as_of": "2026-10-15"
+  },
+  "reviews": {
+   "count": 1,
+   "rating": 5.0,
+   "url": "https://www.producthunt.com/products/hirekey/reviews",
+   "as_of": "2026-10-15"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/60a3a6bd-4c57-4032-a556-bf6835b080c7.png?auto=format&fit=max&w=1400",
+    "alt": "HireKey 'See what tech recruiters see before you apply' screen with matched and missing keywords and a resume analysis",
+    "credit": "Image: HireKey on Product Hunt",
+    "w": 1585,
+    "h": 992
+   },
+   {
+    "url": "https://ph-files.imgix.net/e4591984-d53c-4434-a242-ac20c0fe8802.png?auto=format&fit=max&w=1400",
+    "alt": "HireKey role fit view with a job alignment score and resume effectiveness before and after tailoring",
+    "credit": "Image: HireKey on Product Hunt",
+    "w": 1586,
+    "h": 992
+   },
+   {
+    "url": "https://ph-files.imgix.net/4c5b3df3-696f-4719-b9b7-7e4e3e1d4d28.png?auto=format&fit=max&w=1400",
+    "alt": "HireKey bullet rewrites showing original resume lines next to tailored versions",
+    "credit": "Image: HireKey on Product Hunt",
+    "w": 1585,
+    "h": 992
+   },
+   {
+    "url": "https://ph-files.imgix.net/ec7f20ef-7435-47aa-adbe-8ef292a43ec2.png?auto=format&fit=max&w=1400",
+    "alt": "HireKey interview preparation screen with recruiter phone screen questions generated for a specific job",
+    "credit": "Image: HireKey on Product Hunt",
+    "w": 1585,
+    "h": 992
+   },
+   {
+    "url": "https://ph-files.imgix.net/3bc917f5-4b9c-4514-8f5e-00533823999a.png?auto=format&fit=max&w=1400",
+    "alt": "HireKey job tracker in Kanban view with columns from Not Applied to Offer, Rejected and Withdrawn",
+    "credit": "Image: HireKey on Product Hunt",
+    "w": 1585,
+    "h": 992
+   }
+  ],
+  "video_url": "https://youtu.be/M9ICHjfb_6A",
+  "video_title": "HireKey Demo | See What Tech Recruiters See Before You Apply",
+  "launch_story": {
+   "paragraphs": [
+    "Nela Davis says she spent 10 years recruiting for technical and non-technical roles and kept seeing qualified people passed over, either because their resume did not connect their experience to the role or because they struggled to explain it in an interview.",
+    "She and her co-founder built HireKey around that recruiting knowledge. The flow she described: add a job and your master resume, tailor the resume and see your gaps, practise answers out loud with the voice coach, and track each application by stage. She said a Chrome extension that captures job details automatically was coming for Premium users, and offered a free month of Premium to Product Hunt visitors at launch."
+   ],
+   "attribution": "Nela Davis, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/hirekey?comment=5914208"
+  },
+  "use_cases": [
+   "Checking how well your experience matches a job description before you apply",
+   "Rewriting resume bullets for a specific role while keeping them true to what you did",
+   "Practising recruiter-screen and hiring-manager answers out loud with feedback",
+   "Printing interview questions with tips to prepare on your own",
+   "Tracking several applications from Not Applied to Offer in one board"
+  ],
+  "audience": {
+   "fit": [
+    "apply for technical or non-technical roles at tech companies",
+    "know your work but find it hard to explain in interviews",
+    "juggle several applications and want one place to track them"
+   ],
+   "not_fit": [
+    "need feedback on English pronunciation or accent: the co-founder said the coach does not grade it",
+    "want a check of the technical accuracy of interview answers: the co-founder said not to rely on it for that",
+    "want an automatic job-capture tool today: the Chrome extension was announced as coming soon at launch"
+   ]
+  },
+  "pricing": {
+   "intro": "HireKey has a free plan and one paid plan, Premium. Prices are from HireKey's website and are shown with a $ sign.",
+   "url": "https://hirekey.io/#pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0/month",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "5 resume tailoring sessions, 5 interview practice sessions, 2 live voice coaching sessions, 5 cover letters and 5 company research briefs a month; unlimited job tracking"
+    },
+    {
+     "name": "Premium",
+     "price": "$39/month",
+     "amount": 39,
+     "currency": "USD",
+     "detail": "50 resume tailoring sessions, 50 interview practice sessions and 10 live voice coaching sessions a month; unlimited cover letters, company briefs and job tracking; pipeline intelligence and application insights"
+    }
+   ],
+   "notes": [
+    "Premium add-on packs: 5 voice sessions for $9.99, or 15 resume tailors for $9.99.",
+    "You choose Premium in Settings, Billing after signing up. At launch the co-founder offered one free month of Premium to Product Hunt visitors.",
+    "A free resume checker that reviews a resume on its own needs no account."
+   ]
+  },
+  "pros": [
+   "Built around a former tech recruiter's view of what hiring teams look for",
+   "Shows every tailored bullet next to the original so you approve each change",
+   "Voice coach for spoken interview practice, with a debrief",
+   "Useful free plan, including unlimited job tracking",
+   "Clear data pages: names its providers and deletes data within seven days of a request"
+  ],
+  "cons": [
+   "Premium at $39 a month costs more than some job-search suites",
+   "The coach does not assess pronunciation or the technical accuracy of answers",
+   "Its recruiter guidance comes from US tech hiring; the co-founder said it is not validated for every market",
+   "Jobs have to be added by hand until the announced Chrome extension ships"
+  ],
+  "opinions": {
+   "themes": {
+    "liked": [],
+    "asked": [
+     "Which feature the founder likes most (practising interviews out loud with the voice coach)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "Congrats on the launch! Whats your fav use case among all of them?",
+     "author": "KP",
+     "url": "https://www.producthunt.com/products/hirekey?comment=5939748"
+    }
+   ]
+  },
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/hirekey",
+   "quotes": [
+    {
+     "author": "KP",
+     "url": "https://www.producthunt.com/products/hirekey?comment=5939748",
+     "text": "Whats your fav use case among all of them?",
+     "reply": "Nela Davis said her favourite is practising interviews out loud with the voice coach, because people can know their work well and still freeze when asked to talk through it."
+    }
+   ],
+   "x": {
+    "none": "We found no posts about HireKey on X yet.",
+    "search_url": "https://x.com/search?q=hirekey.io&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is HireKey?",
+    "a": "An AI job-search tool for tech roles that checks your fit for a job, tailors your resume, drafts cover letters, coaches interview answers by voice and tracks your applications."
+   },
+   {
+    "q": "Is HireKey free?",
+    "a": "There is a free plan with monthly limits, such as 5 resume tailoring sessions and 2 voice coaching sessions, plus unlimited job tracking. Premium is $39 a month."
+   },
+   {
+    "q": "Does the voice coach judge my English or accent?",
+    "a": "No. The co-founder said on Product Hunt that it gives feedback on the content and structure of your answer, not accent, pronunciation or fluency, and that you can also type answers."
+   },
+   {
+    "q": "Does it check whether my technical answers are correct?",
+    "a": "It helps structure answers using STAR and points out where more detail is needed, but the co-founder said not to treat it as a definitive check of technical accuracy."
+   },
+   {
+    "q": "Will it invent experience on my resume?",
+    "a": "HireKey says tailoring is meant to clarify real experience, not invent qualifications or results, and you review every change."
+   },
+   {
+    "q": "What happens to my data?",
+    "a": "HireKey's data-security page says it uses Supabase, Railway and Vercel, OpenAI for AI features and Microsoft for coach voice playback. You can ask privacy@hirekey.io to delete your data, which it says happens within seven days."
+   },
+   {
+    "q": "What are the alternatives?",
+    "a": "Jobright AI, WonsultingAI, Teal and Resume Worded are other AI job-search and resume tools listed on Product Hunt."
+   }
+  ],
+  "alternatives": {
+   "intro": "These come from Product Hunt's alternatives list for HireKey. Prices come from each product's own pricing page, checked on 15 October 2026; review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Jobright AI",
+     "url": "https://jobright.ai/",
+     "what": "Your AI Job Search Copilot",
+     "tags": [
+      "Resume tools",
+      "Job boards"
+     ],
+     "starts_at": "See its pricing page",
+     "ph_rating": 4.8,
+     "ph_reviews": 12,
+     "ph_url": "https://www.producthunt.com/products/jobright-ai-2",
+     "difference": "Focuses on finding and matching jobs, autofilling applications and suggesting referral contacts, as well as tailoring resumes."
+    },
+    {
+     "name": "WonsultingAI",
+     "url": "https://www.wonsulting.com/",
+     "what": "Your Job Search Suite, Powered by AI",
+     "tags": [
+      "Resume tools",
+      "Mock interviews"
+     ],
+     "starts_at": "Free Starter plan; Premium $19.99/month",
+     "ph_rating": 5.0,
+     "ph_reviews": 6,
+     "ph_url": "https://www.producthunt.com/products/resumai-by-wonsulting",
+     "difference": "A cheaper Premium plan covering resume, cover letter, networking and interview prep tools, with full access to its InterviewAI."
+    },
+    {
+     "name": "Teal",
+     "url": "https://www.tealhq.com/",
+     "what": "Better Resume. Faster Search. More Offers.",
+     "tags": [
+      "Resume tools",
+      "Job boards"
+     ],
+     "starts_at": "See its pricing page",
+     "ph_rating": 5.0,
+     "ph_reviews": 1,
+     "ph_url": "https://www.producthunt.com/products/career-assist-by-teal",
+     "difference": "A broader career toolkit across resume building and job search; Product Hunt files it under job boards and professional networking too."
+    },
+    {
+     "name": "Resume Worded",
+     "url": "https://resumeworded.com/",
+     "what": "Resume Worded is a searchable database of real resume lines.",
+     "tags": [
+      "Resume tools"
+     ],
+     "starts_at": "See its pricing page",
+     "ph_rating": 3.6,
+     "ph_reviews": 12,
+     "ph_url": "https://www.producthunt.com/products/resume-worded",
+     "difference": "Centred on resume wording and scoring rather than interview practice or application tracking."
+    }
+   ],
+   "more": "Product Hunt also lists ResumeAI, Lemmi, ResumeUp.AI, HyreSnap and Flavored Resume, whose site says it was shut down on 31 August 2026."
+  },
+  "sources": [
+   {
+    "label": "HireKey official site and pricing",
+    "url": "https://hirekey.io/"
+   },
+   {
+    "label": "HireKey about page",
+    "url": "https://hirekey.io/about"
+   },
+   {
+    "label": "HireKey data security",
+    "url": "https://hirekey.io/data-security"
+   },
+   {
+    "label": "HireKey demo video",
+    "url": "https://youtu.be/M9ICHjfb_6A"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/hirekey"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/hirekey/alternatives"
+   },
+   {
+    "label": "Jobright AI",
+    "url": "https://jobright.ai/"
+   },
+   {
+    "label": "Wonsulting pricing",
+    "url": "https://www.wonsulting.com/pricing"
+   },
+   {
+    "label": "Flavored Resume",
+    "url": "https://www.flavoredresume.com/"
+   }
+  ]
+ }
+}
