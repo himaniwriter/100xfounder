@@ -3,14 +3,20 @@
 wordpress/deploy/deploy-hostinger-api.py, copied so astro/ stands alone).
 
   python3 upload.py push dist astro        upload dist/ to public_html/astro/ (index.html last)
+  python3 upload.py sync dist astro        upload only files whose hash changed since the last sync
+                                           (manifest: astro/.upload-manifest.json), then blank (zero-byte
+                                           index.html) every page uploaded before that is not in dist/
+                                           any more, so the .htaccess -s test hands it back to WordPress
   python3 upload.py htaccess on|off        add/remove the "/" -> /astro/index.html block in public_html/.htaccess
   python3 upload.py htaccess status        print whether the block is live
 
 The API token comes from the macOS Keychain (service 100xfounder-hostinger), or HOSTINGER_API_TOKEN
 in the environment. It is never printed or written to disk.
 """
+import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -26,20 +32,24 @@ UA = {'User-Agent': '100xfounder-astro/1.0', 'Accept': 'application/json'}
 HERE = os.path.dirname(os.path.abspath(__file__))
 BEGIN, END = '# BEGIN 100xFounder Astro', '# END 100xFounder Astro'
 
-# Serve the static home only for a plain anonymous GET/HEAD of "/"; everything else stays WordPress.
+# Serve a static page for a plain anonymous GET/HEAD of a trailing-slash URL when the build has a
+# non-empty astro{URI}index.html for it ("/" and every article). Anything not built (wp-admin, wp-json,
+# feeds, sitemaps, /page/2/, drafts) and every logged-in, commenter or preview request stays WordPress.
+# A zero-byte index.html (an unpublished or skipped post) fails -s, so WordPress answers (404/410).
 BLOCK = BEGIN + r'''
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]+\s/astro/index\.html[\s?]
-RewriteRule ^astro/index\.html$ / [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]+\s/astro/(?:[^\s?]*/)?index\.html[\s?]
+RewriteRule ^astro/(.*/)?index\.html$ /$1 [R=301,L]
 RewriteCond %{THE_REQUEST} ^[A-Z]+\s/astro/
 RewriteCond %{THE_REQUEST} !^[A-Z]+\s/astro/_astro/
 RewriteRule ^astro/ - [E=XF_ASTRO_NOINDEX:1]
 RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)$
 RewriteCond %{QUERY_STRING} ^$
-RewriteCond %{HTTP_COOKIE} !wordpress_logged_in [NC]
-RewriteCond %{DOCUMENT_ROOT}/astro/index.html -f
-RewriteRule ^$ /astro/index.html [L,E=XF_ASTRO_HOME:1]
+RewriteCond %{REQUEST_URI} ^/(?:[a-z0-9-]+/)?$
+RewriteCond %{HTTP_COOKIE} !(wordpress_logged_in|comment_author_|wp-postpass_) [NC]
+RewriteCond %{DOCUMENT_ROOT}/astro%{REQUEST_URI}index.html -s
+RewriteRule ^ /astro%{REQUEST_URI}index.html [L,E=XF_ASTRO_HOME:1]
 </IfModule>
 AddDefaultCharset UTF-8
 <IfModule mod_headers.c>
@@ -148,6 +158,58 @@ def push(src, dest, last='index.html'):
     return fails
 
 
+MANIFEST = os.path.join(HERE, '.upload-manifest.json')
+STAMP = re.compile(rb'<!-- astro-build: [^>]* -->')
+
+
+def digest(path):
+    with open(path, 'rb') as f:
+        return hashlib.sha256(STAMP.sub(b'', f.read())).hexdigest()  # the build stamp alone is no change
+
+
+def sync(src, dest):
+    """Upload changed files only (assets, then pages, the home last); blank pages that left the build."""
+    try:
+        with open(MANIFEST, encoding='utf-8') as f:
+            seen = json.load(f)
+    except (OSError, ValueError):
+        seen = {}
+    files = {}
+    for root, _, fs in os.walk(src):
+        for f in fs:
+            if not f.startswith('.'):
+                p = os.path.join(root, f)
+                files[os.path.relpath(p, src).replace(os.sep, '/')] = p
+    order = lambda rel: (rel.endswith('.html'), rel == 'index.html', rel)
+    todo = sorted((r for r in files if seen.get(r) != digest(files[r])), key=order)
+    # Pages uploaded before but gone from this build (unpublished, deleted or skipped by the gate).
+    gone = sorted(r for r, h in seen.items() if r.endswith('/index.html') and r not in files and h != 'blank')
+    if not todo and not gone:
+        print(dest, 'nothing changed')
+        return []
+    c = upload_creds()
+    fails = []
+    with tempfile.TemporaryDirectory() as tmp:
+        empty = os.path.join(tmp, 'empty')
+        open(empty, 'wb').close()
+        for rel in todo + gone:
+            local, h = (files[rel], digest(files[rel])) if rel in files else (empty, 'blank')
+            for _ in range(5):
+                try:
+                    upload(c, local, dest + '/' + rel)
+                    seen[rel] = h
+                    break
+                except BaseException:  # noqa: BLE001 - retry with fresh credentials
+                    time.sleep(5)
+                    c = upload_creds()
+            else:
+                fails.append(rel)
+            with open(MANIFEST, 'w', encoding='utf-8') as f:
+                json.dump(seen, f, indent=0, sort_keys=True)
+    print(dest, len(todo), 'uploaded,', len(gone), 'blanked', gone, 'fails:', fails, flush=True)
+    return fails
+
+
 def read_htaccess():
     status, d = api('GET', f'/api/hosting/v1/accounts/{USER}/domains/{DOMAIN}/files/content?path=.htaccess&max_lines=5000')
     if status != 200 or not isinstance(d, dict) or 'content' not in d:
@@ -211,8 +273,8 @@ def selftest():
 if __name__ == '__main__':
     selftest()
     args = sys.argv[1:]
-    if args[:1] == ['push'] and len(args) == 3:
-        sys.exit(1 if push(args[1], args[2]) else 0)
+    if args[:1] in (['push'], ['sync']) and len(args) == 3:
+        sys.exit(1 if (push if args[0] == 'push' else sync)(args[1], args[2]) else 0)
     elif args[:1] == ['htaccess'] and args[1:] in (['on'], ['off']):
         write_htaccess(args[1] == 'on')
     elif args == ['htaccess', 'status']:

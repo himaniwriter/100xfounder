@@ -1,13 +1,14 @@
 ---
 // WordPress renders <head> (SEO, schema, Consent Mode, GA4, AdSense), the header and the footer
 // (wp_footer scripts incl. theme.js); Astro renders only what goes inside <main>.
+// main_tail is the breadcrumb trail, which header.php prints right after <main id="main">.
 import { wp } from '../lib/wp.js';
-const { path = '/' } = Astro.props;
-const c = await wp('headless/chrome', { path });
+const { path = '/', chrome } = Astro.props;
+const c = chrome ?? await wp('headless/chrome', { path });
 const stamp = `<!-- astro-build: ${new Date().toISOString()} -->`;
 ---
 <!doctype html>
 <html lang={c.lang}>
 <head><Fragment set:html={c.head} /><meta name="generator" content="Astro"></head>
-<body class={c.body_class}><Fragment set:html={c.header} /><main id="main"><slot /><Fragment set:html={c.main_tail} /></main><Fragment set:html={c.footer} /><Fragment set:html={stamp} /></body>
+<body class={c.body_class}><Fragment set:html={c.header} /><main id="main"><Fragment set:html={c.main_tail} /><slot /></main><Fragment set:html={c.footer} /><Fragment set:html={stamp} /></body>
 </html>

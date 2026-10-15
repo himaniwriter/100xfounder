@@ -327,3 +327,167 @@ function xf_headless_home() {
     $out['built'] = gmdate('c');
     return $out;
 }
+
+/* ---- Route 2: articles (astro/src/pages/[...slug].astro mirrors single-post.php) ----
+ *
+ *   GET /wp-json/xf/v1/headless/posts          published post slugs + modified_gmt, for incremental builds
+ *   GET /wp-json/xf/v1/headless/post?slug=x    one article: WP's head/header/footer for its URL plus every
+ *                                              block single-post.php renders, in its order
+ *
+ * Built as a logged-out visitor, so [xf_reveal] hidden parts and anything private never get in.
+ * Cached per post + modified time + a generation that any post save bumps (related lists change).
+ */
+add_action('rest_api_init', function () {
+    register_rest_route('xf/v1', '/headless/posts', [
+        'methods' => 'GET',
+        'permission_callback' => '__return_true',
+        'callback' => 'xf_headless_posts',
+    ]);
+    register_rest_route('xf/v1', '/headless/post', [
+        'methods' => 'GET',
+        'permission_callback' => '__return_true',
+        'args' => ['slug' => ['type' => 'string', 'required' => true]],
+        'callback' => function (WP_REST_Request $r) {
+            $post = get_page_by_path(sanitize_title((string) $r['slug']), OBJECT, 'post');
+            if (!$post || $post->post_status !== 'publish' || post_password_required($post) || $post->post_password !== '') {
+                return new WP_REST_Response(['error' => 'not_found'], 404);
+            }
+            $key = 'xf_hl_post_' . $post->ID . '_' . md5($post->post_modified_gmt . '|' . (int) get_option('xf_hl_gen') . '|' . xf_headless_code_ver());
+            $data = get_transient($key);
+            if (!is_array($data)) {
+                $uid = get_current_user_id();
+                wp_set_current_user(0);
+                $path = (string) wp_parse_url(get_permalink($post), PHP_URL_PATH);
+                xf_headless_route($path);
+                $data = xf_headless_article($path, $post->ID);
+                wp_set_current_user($uid);
+                if (empty($data['error'])) {
+                    set_transient($key, $data, 6 * HOUR_IN_SECONDS);
+                }
+            }
+            $res = new WP_REST_Response($data, empty($data['error']) ? 200 : 404);
+            $res->header('Cache-Control', 'public, max-age=300');
+            return $res;
+        },
+    ]);
+});
+
+// Any post change can alter other articles' related lists, so start a new cache generation.
+add_action('save_post', function ($id, $p) {
+    if ($p->post_type === 'post' && !wp_is_post_revision($id)) {
+        update_option('xf_hl_gen', (int) get_option('xf_hl_gen') + 1, false);
+    }
+}, 10, 2);
+
+/** Changes whenever plugin or theme code is deployed, so a release never serves a stale render. */
+function xf_headless_code_ver() {
+    $t = 0;
+    foreach (array_merge(glob(__DIR__ . '/*.php') ?: [], glob(get_template_directory() . '/*.php') ?: [], glob(get_template_directory() . '/parts/*.php') ?: []) as $f) {
+        $t = max($t, (int) filemtime($f));
+    }
+    return $t;
+}
+
+function xf_headless_posts() {
+    global $wpdb;
+    $rows = $wpdb->get_results($wpdb->prepare(
+        "SELECT ID, post_name, post_modified_gmt FROM {$wpdb->posts} WHERE post_type = %s AND post_status = %s AND post_password = '' ORDER BY post_date_gmt DESC",
+        'post', 'publish'
+    ));
+    $out = [];
+    foreach ($rows as $r) {
+        $path = (string) wp_parse_url(get_permalink((int) $r->ID), PHP_URL_PATH);
+        // Only plain ASCII /slug/ URLs map 1:1 onto a static file the .htaccess rule can find.
+        if ($path === '/' . $r->post_name . '/' && preg_match('~^/[a-z0-9-]+/$~', $path)) {
+            $out[] = ['slug' => $r->post_name, 'path' => $path, 'modified_gmt' => $r->post_modified_gmt];
+        }
+    }
+    $res = new WP_REST_Response(['posts' => $out, 'count' => count($out), 'built' => gmdate('c')]);
+    $res->header('Cache-Control', 'no-cache');
+    return $res;
+}
+
+/** Everything single-post.php renders, field by field. Keep in step with that template. */
+function xf_headless_article($path, $id) {
+    if (!is_singular('post') || get_queried_object_id() !== (int) $id || !function_exists('xft_toc')) {
+        return ['error' => 'not_routed'];
+    }
+    $chrome = xf_headless_chrome($path); // renders the real template (head/robots/schema exactly as WP)
+    rewind_posts();
+    the_post();
+    $post = get_post();
+    $author_id = (int) $post->post_author;
+    $cat = xft_category($post);
+    [$content, $toc] = xft_toc(apply_filters('the_content', get_the_content()));
+    $credit = get_post_meta($post->ID, '_xf_image_credit', true) ?: wp_get_attachment_caption(get_post_thumbnail_id());
+    $hub = function_exists('xf_post_hub') ? xf_post_hub((int) get_post_meta($post->ID, '_xf_ai_source', true) ?: $post->ID) : '';
+    $tags = get_the_tags() ?: [];
+    $cats = get_the_category() ?: [];
+    $terms = null;
+    if ($tags || $cats) {
+        $terms = [];
+        foreach ((array) $cats as $c) {
+            if ($c->slug !== 'uncategorized') $terms[] = ['url' => esc_url_raw(get_category_link($c)), 'name' => esc_html($c->name)];
+        }
+        foreach ((array) $tags as $t) {
+            $terms[] = ['url' => esc_url_raw(get_tag_link($t)), 'name' => esc_html($t->name)];
+        }
+    }
+    $date = get_the_date('j M Y') . ' · ' . xft_read_time($post);
+    if (get_the_modified_time('U') > get_the_time('U') + DAY_IN_SECONDS) {
+        $date .= ' · Updated ' . get_the_modified_date('j M Y');
+    }
+    ob_start();
+    post_class();
+    $post_class = trim((string) ob_get_clean());
+    $related = xft_related_posts($post, 4);
+    $data = [
+        'chrome' => $chrome,
+        'id' => (int) $post->ID,
+        'path' => $path,
+        'modified_gmt' => $post->post_modified_gmt,
+        'post_class' => preg_match('~class="([^"]*)"~', $post_class, $m) ? $m[1] : '',
+        'cat' => $cat ? ['url' => esc_url_raw(get_category_link($cat)), 'name' => esc_html($cat->name)] : null,
+        'is_lead' => is_sticky($post->ID),
+        'title' => get_the_title(), // what the_title() prints
+        'dek' => has_excerpt() ? esc_html(get_the_excerpt()) : '',
+        'avatar' => get_avatar($author_id, 72, '', '', ['force_display' => false]) ?: esc_html(xft_initials(xft_author_name($post))),
+        'author' => ['url' => esc_url_raw(get_author_posts_url($author_id)), 'name' => esc_html(xft_author_name($post))],
+        'date' => get_the_date('c'),
+        'read_time' => esc_html(xft_read_time($post)),
+        'date_line' => esc_html($date),
+        'share' => function_exists('xf_share_bar_html') ? xf_share_bar_html(get_permalink(), get_the_title(), 'article') : '',
+        'image' => has_post_thumbnail() ? ['html' => xft_image($post, '21x10', 'full', true), 'credit' => $credit ? esc_html($credit) : ''] : null,
+        'toc' => array_map(function ($t) { return ['id' => $t['id'], 'text' => esc_html($t['text'])]; }, $toc),
+        'content_html' => $content,
+        'hub' => $hub ? ['url' => esc_url_raw(xf_hub_url($hub)), 'title' => esc_html(xf_hubs()[$hub]['title'])] : null,
+        'terms' => $terms,
+        'original' => esc_url_raw((string) get_post_meta($post->ID, '_xf_original_url', true)),
+        'related' => $related ? ['url' => esc_url_raw(xft_page_url('news', 'news')), 'items' => array_map(function ($p) {
+            return ['url' => esc_url_raw(get_permalink($p)), 'img' => xft_image($p, '3x2'), 'cat' => esc_html(xft_cat_name($p)), 'title' => esc_html(get_the_title($p))];
+        }, $related)] : null,
+        'reveal_probe' => xf_headless_reveal_probe($post->ID),
+        'built' => gmdate('c'),
+    ];
+    wp_reset_postdata();
+    return $data;
+}
+
+/**
+ * Hashes of 8-word runs of the hidden [xf_reveal] text, so the parity gate can prove none of it is on
+ * the page without the endpoint ever exposing the text itself.
+ */
+function xf_headless_reveal_probe($id) {
+    $block = function_exists('xf_reveal_block') ? xf_reveal_block($id) : null;
+    if (!$block) {
+        return [];
+    }
+    $text = strtolower(html_entity_decode(wp_strip_all_tags(strip_shortcodes($block['inner'])), ENT_QUOTES, 'UTF-8'));
+    preg_match_all('/[a-z0-9]+/', $text, $m);
+    $w = $m[0];
+    $out = [];
+    for ($i = 0; $i + 8 <= count($w); $i += 4) {
+        $out[] = substr(hash('sha256', implode(' ', array_slice($w, $i, 8))), 0, 16);
+    }
+    return array_values(array_unique($out));
+}

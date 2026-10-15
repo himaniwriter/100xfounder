@@ -32,7 +32,7 @@ export function capExternalLinks(html, path, homeHost) {
     try { host = strip(new URL(href).hostname); } catch { /* unparsable: treat as local */ }
     if (!host || host === home || host.endsWith('.' + home)) return all;
     if (/\brel=(["'])[^"']*\bsponsored\b/i.test(attrs) || /<img/i.test(inner)
-      || /^https?:\/\/(?:www\.)?(?:linkedin\.com\/sharing\/|x\.com\/intent\/|twitter\.com\/intent\/|wa\.me\/)/i.test(href)) return all;
+      || /^https?:\/\/(?:www\.)?(?:linkedin\.com\/sharing\/|x\.com\/intent\/|twitter\.com\/intent\/|wa\.me\/|t\.me\/share\/)/i.test(href)) return all;
     if (kept < keep) { kept++; return all; }
     if (/\bclass=(["'])[^"']*\b(?:btn|button)\b/i.test(attrs)) return '';
     return '<span class="xf-ext">' + inner.replace(/↗/g, '').trim() + '</span>';

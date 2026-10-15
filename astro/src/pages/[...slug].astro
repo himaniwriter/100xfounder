@@ -1,0 +1,80 @@
+---
+// Articles "/{slug}/". Mirrors wordpress/100xfounder-theme/single-post.php block by block; data comes from
+// GET /wp-json/xf/v1/headless/post?slug= (includes/headless.php), which also carries WP's own head, header
+// and footer for the article's URL. Text fields arrive HTML-escaped by WordPress (hence set:html); URLs
+// arrive raw. Keep this, the endpoint and single-post.php in step.
+import WpPage from '../layouts/WpPage.astro';
+import { wp } from '../lib/wp.js';
+
+export async function getStaticPaths() {
+  const { posts } = await wp('headless/posts', { t: Date.now() });
+  const only = (process.env.XF_ONLY || '').split(',').filter(Boolean);
+  const out = [];
+  const queue = posts.filter((p) => !only.length || only.includes(p.slug));
+  // A post that fails to load is left out of this build (WordPress keeps serving it); see deploy.sh.
+  await Promise.all(Array.from({ length: 4 }, async () => {
+    for (let p; (p = queue.shift());) {
+      try {
+        out.push({ params: { slug: p.slug }, props: { d: await wp('headless/post', { slug: p.slug }) } });
+      } catch (e) {
+        console.warn(`skip ${p.slug}: ${e.message}`);
+      }
+    }
+  }));
+  return out;
+}
+
+const { d } = Astro.props;
+---
+<WpPage path={d.path} chrome={d.chrome}>
+    <div class="prog" aria-hidden="true"></div>
+    <article class={d.post_class}>
+        <header class="wrap art-head">
+            <div class="in" style="display:flex;justify-content:center;gap:14px">
+                {d.cat && <a href={d.cat.url} class="tag" set:html={d.cat.name} />}
+                {d.is_lead && <span class="k" style="font-size:10.5px">Lead story</span>}
+            </div>
+            <h1 class="in" style="animation-delay:.06s" set:html={d.title} />
+            {d.dek && <p class="dek in" style="animation-delay:.12s" set:html={d.dek} />}
+            <div class="byline in" style="animation-delay:.18s">
+                <span class="avatar" set:html={d.avatar} />
+                <span><a href={d.author.url} set:html={d.author.name} /><span class="k" style="display:block;font-size:10.5px;margin-top:2px" set:html={d.date_line} /></span>
+            </div>
+            <Fragment set:html={d.share} />
+        </header>
+
+        {d.image && (
+            <figure class="wrap in" style="max-width:1120px;margin:48px auto 0;animation-delay:.24s">
+                <Fragment set:html={d.image.html} />
+                {d.image.credit && <figcaption class="k" style="margin-top:10px;font-size:10.5px" set:html={d.image.credit} />}
+            </figure>
+        )}
+
+        <div class="wrap art-layout">
+            <aside class="art-side">
+                {d.toc.length > 1 && (
+                    <Fragment>
+                        <div class="k" style="font-size:10.5px;margin-bottom:12px">In this story</div>
+                        <nav class="toc" aria-label="In this story">{d.toc.map((t) => <a href={'#' + t.id} set:html={t.text} />)}</nav>
+                    </Fragment>
+                )}
+            </aside>
+
+            <div class="body" data-quote-root>
+                <Fragment set:html={d.content_html} />
+                {d.hub && <div class="k hub-link" style="margin-top:32px">Part of: <a class="u" href={d.hub.url} set:html={d.hub.title} /></div>}
+                {d.terms && <div class="art-tags">{d.terms.map((t) => <a class="btn btn-sm" href={t.url} set:html={t.name} />)}</div>}
+                {d.original && <a href={d.original} class="k orig-link" target="_blank" rel="noopener nofollow">Original reporting ↗</a>}
+            </div>
+        </div>
+    </article>
+
+    {d.related && (
+        <section class="wrap" style="max-width:1120px;padding-top:88px">
+            <div class="sh"><h2>Related reading</h2><a href={d.related.url} class="k">All stories →</a></div>
+            <div class="grid-cards" style="padding-top:24px;gap:28px 24px">
+                {d.related.items.map((p) => <a href={p.url} style="display:block"><Fragment set:html={p.img} /><span class="tag" style="display:block;margin-top:12px" set:html={p.cat} /><span class="card-title"><span class="u" set:html={p.title} /></span></a>)}
+            </div>
+        </section>
+    )}
+</WpPage>

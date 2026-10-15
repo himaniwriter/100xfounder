@@ -1,15 +1,100 @@
 #!/usr/bin/env python3
 """Parity gate: the Astro build must carry the same SEO head and page outline as WordPress.
 
-Usage: python3 parity.py dist/index.html https://100xfounder.com/?nocache=1
-Exits 1 (and prints the differences) if any checked field differs. Stdlib only.
+  python3 parity.py dist/index.html https://100xfounder.com/?nocache=1   one page (the home)
+  python3 parity.py posts dist https://100xfounder.com                 every built article
+
+One page: exits 1 (and prints the differences) if any checked field differs.
+Articles: each is compared with WordPress (fetched with a query string, so WP renders it); a post with
+any difference is moved out of dist/ into dist-skipped/ so it is not uploaded and WordPress keeps
+serving it. Prints one line per post and exits 0 (the report is the output). Stdlib only.
 """
+import hashlib
 import html
 import json
+import os
 import re
+import shutil
 import sys
+import time
 import urllib.parse
 import urllib.request
+
+
+def text_of(fragment):
+    fragment = re.sub(r'<(script|style|noscript|svg)\b.*?</\1>', ' ', fragment, flags=re.S | re.I)
+    return html.unescape(re.sub(r'<[^>]+>', ' ', fragment))
+
+
+def shingles(s):
+    """8-word runs, hashed the way includes/headless.php hashes the hidden [xf_reveal] text."""
+    w = re.findall(r'[a-z0-9]+', text_of(s).lower())
+    return {hashlib.sha256(' '.join(w[i:i + 8]).encode()).hexdigest()[:16] for i in range(len(w) - 7)}
+
+
+def article_fields(s, host):
+    f = fields(s, host)
+    main = s[s.find('<main'):s.rfind('</main>')]
+    og = re.search(r'<meta\s+property=["\']og:image["\']\s+content=["\']([^"\']*)', s)
+    src = re.search(r'<details class="xf-sources">(.*?)</details>', main, re.S)
+    f.update({
+        'og_image': og.group(1) if og else None,
+        'sources': re.findall(r'href="([^"]+)"', src.group(1)) if src else [],
+        'words': len(text_of(main).split()),
+    })
+    return f
+
+
+def fetch(url):
+    req = urllib.request.Request(url, headers={'User-Agent': '100xfounder-parity/1.0'})
+    for i in range(3):
+        try:
+            return urllib.request.urlopen(req, timeout=60).read().decode('utf-8')
+        except Exception:  # noqa: BLE001
+            if i == 2:
+                raise
+            time.sleep(5)
+
+
+def check_post(built, slug, wp):
+    """Return the list of problems for one built article (empty = parity)."""
+    host = urllib.parse.urlsplit(wp).netloc
+    a_html = open(built, encoding='utf-8').read()
+    b_html = fetch('%s/%s/?nocache=%d' % (wp, slug, time.time()))
+    a, b = article_fields(a_html, host), article_fields(b_html, host)
+    bad = [k for k in a if k != 'words' and a[k] != b[k]]
+    if not b['words'] or abs(a['words'] - b['words']) > 0.02 * b['words']:
+        bad.append('words %d vs %d' % (a['words'], b['words']))
+    if not a['title'] or not a['canonical'] or not a['h1']:
+        bad.append('missing core fields')
+    probe = set(json.loads(fetch('%s/wp-json/xf/v1/headless/post?slug=%s' % (wp, slug))).get('reveal_probe') or [])
+    if probe & shingles(a_html):
+        bad.append('HIDDEN [xf_reveal] TEXT IN BUILD')
+    for k in bad:
+        if k in a:
+            bad[bad.index(k)] = '%s: astro=%s wp=%s' % (k, json.dumps(a[k], ensure_ascii=False)[:120], json.dumps(b[k], ensure_ascii=False)[:120])
+    return bad, a['words'], bool(probe)
+
+
+def check_posts(dist, wp):
+    wp = wp.rstrip('/')
+    skipped = os.path.join(os.path.dirname(os.path.abspath(dist)), 'dist-skipped')
+    shutil.rmtree(skipped, ignore_errors=True)
+    slugs = sorted(d for d in os.listdir(dist) if d != '_astro' and os.path.isfile(os.path.join(dist, d, 'index.html')))
+    ok = 0
+    for slug in slugs:
+        try:
+            bad, words, gated = check_post(os.path.join(dist, slug, 'index.html'), slug, wp)
+        except Exception as e:  # noqa: BLE001 - can't compare = don't upload
+            bad, words, gated = ['compare failed: %s' % e], 0, False
+        if bad:
+            os.makedirs(skipped, exist_ok=True)
+            shutil.move(os.path.join(dist, slug), os.path.join(skipped, slug))
+            print('SKIP %s\n     %s' % (slug, '\n     '.join(bad)), flush=True)
+        else:
+            ok += 1
+            print('ok   %s (%d words%s)' % (slug, words, ', gated list hidden' if gated else ''), flush=True)
+    print('ARTICLES: %d ok, %d skipped' % (ok, len(slugs) - ok))
 
 
 def fields(s, host):
@@ -48,6 +133,8 @@ def fields(s, host):
 
 
 def main():
+    if sys.argv[1:2] == ['posts']:
+        return check_posts(sys.argv[2], sys.argv[3])
     built, live = sys.argv[1], sys.argv[2]
     host = urllib.parse.urlsplit(live).netloc
     a = fields(open(built, encoding='utf-8').read(), host)

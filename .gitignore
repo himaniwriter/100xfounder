@@ -37,3 +37,6 @@ content/uploaded.json
 astro/node_modules/
 astro/dist/
 astro/.astro/
+astro/.upload-manifest.json
+astro/dist-skipped/
+astro/.deploy.lock/
