@@ -1,0 +1,76 @@
+{
+ "slug": "zipline",
+ "website": "https://www.zipline.com/",
+ "excerpt": "Zipline is a South San Francisco drone delivery company that flies medical supplies in Africa and food and retail orders in the US. Funding, history, use cases and alternatives.",
+ "content": "<p>Zipline is an American company that delivers goods by autonomous drone. It started in 2016 by flying blood and medical supplies to hospitals in Rwanda, and it now also delivers food, groceries and retail orders to homes in the United States. Bloomberg, in a report carried by Transport Topics, describes it as founded in 2014 and headquartered in South San Francisco, where Zipline says it builds its own hardware.</p><p>The company runs two kinds of aircraft. The original fixed-wing drone flies long distances and drops packages by parachute, which suits rural clinics and health systems. The newer Platform 2 drone, unveiled in 2023, hovers high above a home and lowers a small droid on a tether to place the package on a doorstep or patio; TechCrunch reported a service radius of about 10 miles from a dock. Keller Rinaudo Cliffton is co-founder and chief executive, according to TechCrunch.</p><p>Zipline's own site lists Walmart, Chipotle, Wendy's, Jimmy John's, Little Caesars, Crumbl and Popeyes among its US partners, and Rwanda, Ghana and the Dallas area among its locations. Its live counter showed close to two million deliveries and more than 125 million miles flown when we checked. FreightWaves reported that it has also flown in Kenya, Nigeria and Cote d'Ivoire.</p><p>On funding, FreightWaves reported a $330 million Series F in 2023 at a $4.2 billion valuation, bringing total funding to about $821 million. In January 2026 Bloomberg reported that Zipline raised more than $600 million at a $7.6 billion valuation from investors including Valor Equity Partners, Tiger Global, Fidelity and Baillie Gifford, to expand in the US.</p><p>Zipline does not sell drones to consumers or publish a price list. Shoppers order through a partner such as Walmart, and health systems and retailers contract with Zipline directly.</p><p><em>This page is research, not a review. We have not used Zipline's service; every fact comes from the pages listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Drone delivery and logistics",
+  "platform": "Autonomous delivery drones (Platform 1 and Platform 2)",
+  "starts_at": "Not published; sold through partners and contracts",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Autonomous drone delivery for medical supplies, food and retail orders",
+  "maker": {"name": "Zipline", "url": "https://www.zipline.com/"},
+  "team": [{"name": "Keller Rinaudo Cliffton", "role": "Co-founder and CEO"}],
+  "gallery": [
+   {"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Zipline_Drone_Launch.jpg/1280px-Zipline_Drone_Launch.jpg", "w": 1280, "h": 881, "alt": "A white and red Zipline fixed-wing drone just after launch from a metal catapult rail, with green hills behind", "credit": "Photo: Roksenhorn, CC BY-SA 4.0, via Wikimedia Commons (File:Zipline Drone Launch.jpg)"},
+   {"url": "https://www.zipline.com/og-default-v2.jpg", "w": 1200, "h": 630, "alt": "Zipline logo in white over a blue sky, with three people shading their eyes and looking up", "credit": "Image: Zipline (zipline.com)"}
+  ],
+  "use_cases": [
+   "Delivering blood, vaccines and medicines to remote hospitals and clinics",
+   "Home delivery of retail and grocery orders, for example through Walmart in the Dallas area",
+   "Restaurant food delivery for chains such as Chipotle and Wendy's",
+   "Government health-supply programmes in African countries"
+  ],
+  "audience": {
+   "fit": [
+    "health systems that need fast resupply to hard-to-reach facilities",
+    "retailers and restaurant chains that want short-range home delivery by air",
+    "shoppers who live inside a Zipline service area"
+   ],
+   "not_fit": [
+    "individuals who want to buy a drone: Zipline sells a delivery service, not hardware",
+    "people outside its service areas, which are limited to specific regions"
+   ]
+  },
+  "pricing": {
+   "intro": "Zipline does not publish prices. Consumers pay whatever the partner store or restaurant charges at checkout; businesses and health systems contract with Zipline directly.",
+   "plans": [
+    {"name": "Consumer delivery", "price": "Set by the partner", "detail": "Ordered through partners such as Walmart or Chipotle"},
+    {"name": "Business and health partnerships", "price": "Not published", "detail": "Contact Zipline"}
+   ],
+   "notes": ["No public price list was found on zipline.com."],
+   "url": "https://www.zipline.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Long operating record: medical deliveries in Rwanda since 2016",
+   "Tethered droid delivery puts packages on a doorstep without landing",
+   "Well funded, with a $7.6 billion valuation reported in 2026"
+  ],
+  "cons": [
+   "Available only in specific service areas",
+   "No public pricing"
+  ],
+  "alternatives": {
+   "intro": "Other drone delivery operators. Bloomberg notes Walmart also works with Wing, DroneUp and Flytrex.",
+   "items": [
+    {"name": "Wing", "url": "https://wing.com/", "what": "Alphabet's drone delivery company", "difference": "Owned by Google's parent and partners with Walmart and DoorDash."},
+    {"name": "Flytrex", "url": "https://www.flytrex.com/", "what": "Drone delivery service for suburban homes", "difference": "Focuses on food and retail delivery in US suburbs."},
+    {"name": "Amazon Prime Air", "url": "https://www.aboutamazon.com/news/tag/prime-air", "what": "Amazon's in-house drone delivery unit", "difference": "Delivers Amazon orders only."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Zipline do?", "a": "It delivers medical supplies, food and retail orders by autonomous drone, in Africa since 2016 and in parts of the US."},
+   {"q": "How does a Zipline drone drop a package?", "a": "The fixed-wing drone drops it by parachute. The Platform 2 drone hovers and lowers a small droid on a tether, which places the package within a small target area."},
+   {"q": "How much has Zipline raised?", "a": "FreightWaves put total funding at about $821 million after its 2023 Series F. Bloomberg reported a further raise of more than $600 million at a $7.6 billion valuation in January 2026."},
+   {"q": "Can I get Zipline delivery anywhere?", "a": "No. It works only in its service areas, such as parts of the Dallas region in the US, and through partner stores."}
+  ],
+  "sources": [
+   {"label": "Zipline: about", "url": "https://www.zipline.com/about"},
+   {"label": "Transport Topics (Bloomberg): Zipline valued at $7.6 billion", "url": "https://www.ttnews.com/articles/drone-delivery-zipline-76b"},
+   {"label": "FreightWaves: Zipline raises $330M at $4.2B valuation", "url": "https://www.freightwaves.com/news/drone-delivery-firm-zipline-raises-330m-at-4-2b-valuation"},
+   {"label": "TechCrunch: Zipline unveils droid for precise drone delivery", "url": "https://techcrunch.com/2023/03/15/zipline-unveils-cute-little-droid-to-make-drone-delivery-more-accurate"}
+  ]
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "slug": "valar-labs",
+ "website": "https://www.valarlabs.com/",
+ "excerpt": "Valar Labs builds AI tests that read routine tumour slides to predict how a cancer will respond to treatment, starting with Vesta for bladder cancer. Founders, funding and alternatives.",
+ "content": "<p>Valar Labs is a cancer diagnostics company that uses artificial intelligence to help doctors choose treatments. Its tests analyse digitised images of the tissue slides that hospitals already prepare when they diagnose a tumour, a field the company calls computational histology AI. From those images its models estimate how likely a patient's cancer is to respond to a given therapy, or how aggressive it is likely to be.</p><p>Its first product, Vesta Bladder, is aimed at bladder cancer. Valar Labs' site says it is the only bladder cancer diagnostic that predicts response to BCG, the standard first-line immunotherapy, using routine histology. According to the company's Series A announcement, Vesta flags patients who are unlikely to benefit from BCG and stratifies their risk of recurrence and progression; it was developed and validated on more than 1,000 patients across four continents and presented at the American Urological Association's 2024 meeting. The site also lists Vesta Prostate, with published validation work in metastatic hormone-sensitive prostate cancer using phase 3 trial data, and a product called Vitara. Tests are processed through a CLIA-certified laboratory in Houston, Texas, and doctors order them online.</p><p>The company was founded by Anirudh Joshi, Viswesh Krishna and Damir Vrabac, who met in 2020 in Andrew Ng's machine-learning group at Stanford, according to the accelerator Pear VC, whose PearX S21 programme they joined. It raised a $4.15 million seed round led by a16z Bio + Health, then a $22 million Series A in May 2024 co-led by DCVC and a16z, with Pear participating, for about $26 million in total. Valar Labs also works with pharmaceutical companies on research programmes.</p><p>Valar Labs does not publish prices; tests are ordered by clinicians through its portal.</p><p><em>This page is research, not medical advice or a review. Treatment decisions belong with a patient's oncologist. Facts come from the sources listed below.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI cancer diagnostics",
+  "platform": "Laboratory test ordered by clinicians (CLIA lab, Houston)",
+  "starts_at": "Not published; ordered through clinicians",
+  "schema_category": "HealthApplication",
+  "summary_short": "AI tests that read tumour slides to predict cancer treatment response",
+  "maker": {"name": "Valar Labs", "url": "https://www.valarlabs.com/"},
+  "team": [
+   {"name": "Anirudh Joshi", "role": "Co-founder"},
+   {"name": "Viswesh Krishna", "role": "Co-founder"},
+   {"name": "Damir Vrabac", "role": "Co-founder"}
+  ],
+  "gallery": [
+   {"url": "https://uploads-ssl.webflow.com/66154efc5c03aac7adbc3095/661560c9df2529f6dc74e788_opengraph.webp", "w": 1200, "h": 631, "alt": "Valar Labs logo on dark green beside stacked translucent layers, one patterned with white triangles and one with a purple tissue texture", "credit": "Image: Valar Labs (valarlabs.com)"}
+  ],
+  "use_cases": [
+   "Predicting whether a bladder cancer patient is likely to respond to BCG therapy",
+   "Risk-stratifying recurrence and progression in bladder cancer",
+   "Prognostic information in metastatic hormone-sensitive prostate cancer (Vesta Prostate)",
+   "Biomarker work for pharmaceutical research programmes"
+  ],
+  "audience": {
+   "fit": [
+    "urologists and oncologists treating bladder or prostate cancer",
+    "hospitals that want treatment-response information from existing slides without extra tissue",
+    "drug developers looking for AI biomarkers"
+   ],
+   "not_fit": [
+    "patients ordering a test directly: tests are ordered by clinicians",
+    "cancers outside the company's current bladder and prostate products"
+   ]
+  },
+  "pricing": {
+   "intro": "Valar Labs does not publish test prices. Clinicians order tests through its online portal; coverage and billing are not described on the public site.",
+   "plans": [{"name": "Vesta tests", "price": "Not published", "detail": "Ordered by clinicians via portal.valarlabs.com"}],
+   "url": "https://www.valarlabs.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Uses routine tissue slides, so no extra biopsy is needed",
+   "Validation on more than 1,000 patients presented at a major urology meeting",
+   "CLIA-certified laboratory"
+  ],
+  "cons": [
+   "Limited to bladder and prostate cancer so far",
+   "No public pricing or coverage information"
+  ],
+  "alternatives": {
+   "intro": "Other companies applying AI to pathology slides or building cancer biomarkers.",
+   "items": [
+    {"name": "ArteraAI", "url": "https://artera.ai/", "what": "AI prognostic and predictive tests from prostate biopsy images", "difference": "Focused on prostate cancer."},
+    {"name": "Paige", "url": "https://paige.ai/", "what": "AI software for digital pathology", "difference": "Sells pathology software to labs rather than a single treatment-response test."},
+    {"name": "Tempus", "url": "https://www.tempus.com/", "what": "Genomic testing and AI-driven precision medicine", "difference": "Broad molecular testing across many cancers."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Vesta?", "a": "Valar Labs' AI test for bladder cancer. It analyses routine tumour slides to predict whether a patient is unlikely to benefit from BCG therapy and to estimate recurrence and progression risk."},
+   {"q": "Who founded Valar Labs?", "a": "Anirudh Joshi, Viswesh Krishna and Damir Vrabac, who met at Stanford in 2020."},
+   {"q": "How much has Valar Labs raised?", "a": "About $26 million: a $4.15 million seed led by a16z Bio + Health and a $22 million Series A in May 2024 co-led by DCVC and a16z."},
+   {"q": "Can patients order a Valar Labs test?", "a": "Tests are ordered by clinicians through the company's portal. Patients should ask their oncologist or urologist."}
+  ],
+  "sources": [
+   {"label": "Valar Labs: homepage", "url": "https://www.valarlabs.com/"},
+   {"label": "DCVC: Valar Labs announces $22 million Series A (May 2024)", "url": "https://dcvc.com/press-releases/valar-labs-announces-22-million-series-a-to-advance-vesta-first-ai-diagnostic-test-to-predict-treatment-response-in-bladder-cancer-and-catalyze-expansion-in-other-cancers"},
+   {"label": "Pear VC: PearX S21 alum Valar Labs raises $22M", "url": "https://pear.vc/pearx-s21-alum-valar-labs-raises-22m-to-continue-building-ai-that-helps-oncologists-make-better-decisions/"}
+  ]
+ }
+}

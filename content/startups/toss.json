@@ -1,0 +1,73 @@
+{
+ "slug": "toss",
+ "website": "https://toss.im/",
+ "excerpt": "Toss is South Korea's financial super app from Viva Republica, combining money transfers, payments, Toss Bank and Toss Securities. Users, funding, IPO plans and alternatives.",
+ "content": "<p>Toss is a South Korean financial app made by Viva Republica. It started in 2015 as a simple way to send money between people, according to Retail Banker International, and has grown into what is often called a financial super app: one app for transfers, payments, banking, stock trading, loans, insurance comparison and credit scores. The Korea Herald reported in October 2024 that Toss had 28 million members and 19 million monthly active users as of June 2024.</p><p>Several businesses sit under the group. Toss Bank is an internet-only bank, Toss Securities is a mobile brokerage, and Toss Payments handles online payments for merchants. The Korea Herald reported that Toss Securities set up a US subsidiary, Toss Securities Americas, in July 2024. Toss also offers a buy now, pay later service, launched in March 2022.</p><p>Viva Republica was founded in 2013 by Lee Seung-gun, who remains its CEO. The company has raised large sums from Korean and international investors. Retail Banker International reported a $405 million Series G in December 2022 led by Tonic Private Equity, at a valuation of $7 billion (KRW 9.1 trillion), with existing backers including Korea Development Bank, Altos Ventures, Goodwater Capital and Bond Capital.</p><p>Viva Republica has been preparing to go public. In February 2024 it picked Korean underwriters for a domestic listing, but in October 2024 it halted that process and said it was considering a US listing instead, Korea JoongAng Daily reported. The same report said it posted an operating loss of 9.4 billion won in the first half of 2024, sharply narrower than a year earlier.</p><p>The Toss app is free to download. Fees apply to some services, such as card payments for merchants, trades and loans, and are shown in the app.</p><p><em>This page is research, not a review. We have not used Toss; facts come from the reporting listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Fintech super app (payments, banking, investing)",
+  "platform": "Android and iOS app (South Korea)",
+  "starts_at": "Free app; fees vary by service",
+  "schema_category": "FinanceApplication",
+  "summary_short": "South Korea's all-in-one finance app for transfers, banking, payments and stocks",
+  "maker": {"name": "Viva Republica", "url": "https://toss.im/"},
+  "team": [{"name": "Lee Seung-gun", "role": "Founder and CEO"}],
+  "gallery": [
+   {"url": "https://static.toss.im/homepage-static/newtoss/newtoss-og.jpg", "w": 1200, "h": 675, "alt": "Toss logo, a blue split-circle mark beside the word toss, on a pale blue gradient", "credit": "Image: Toss (toss.im)"},
+   {"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Toss_Logo_Primary.png/1280px-Toss_Logo_Primary.png", "w": 1280, "h": 640, "alt": "Toss primary logo: a blue folded-circle symbol and the word toss in dark letters on white", "credit": "Logo: Viva Republica, public domain, via Wikimedia Commons (File:Toss Logo Primary.png)"}
+  ],
+  "use_cases": [
+   "Sending money to friends and family in Korea",
+   "Banking with Toss Bank, an internet-only bank",
+   "Trading Korean and US stocks through Toss Securities",
+   "Paying online and taking payments as a merchant through Toss Payments",
+   "Checking credit scores and comparing loans and insurance"
+  ],
+  "audience": {
+   "fit": [
+    "people living in South Korea who want their finances in one app",
+    "Korean retail investors trading domestic and US stocks",
+    "Korean online merchants that need payment processing"
+   ],
+   "not_fit": [
+    "people outside South Korea: most services need a Korean account and phone number",
+    "anyone wanting an English-first app"
+   ]
+  },
+  "pricing": {
+   "intro": "The Toss app is free. Individual services such as trading, loans and merchant payments carry their own fees, shown in the app or on each subsidiary's site. We did not find a single official price list.",
+   "plans": [{"name": "Toss app", "price": "Free", "detail": "Service-specific fees shown in the app"}],
+   "url": "https://toss.im/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "One app for transfers, banking, investing and payments",
+   "Very large user base in Korea",
+   "Backed by long-standing global investors"
+  ],
+  "cons": [
+   "Korea-only for most services",
+   "No single public fee schedule across services"
+  ],
+  "alternatives": {
+   "intro": "Other Korean finance apps and super apps.",
+   "items": [
+    {"name": "KakaoBank", "url": "https://www.kakaobank.com/", "what": "Korean internet-only bank linked to KakaoTalk", "difference": "A listed internet bank tied to Korea's main messaging app."},
+    {"name": "Kakao Pay", "url": "https://www.kakaopay.com/", "what": "Payments and finance services from Kakao", "difference": "Built into KakaoTalk."},
+    {"name": "Naver Pay", "url": "https://pay.naver.com/", "what": "Payments and finance services from Naver", "difference": "Tied to Naver's search and shopping ecosystem."}
+   ]
+  },
+  "faq": [
+   {"q": "Who owns Toss?", "a": "Toss is run by Viva Republica, founded in 2013 by Lee Seung-gun, who is CEO."},
+   {"q": "How many people use Toss?", "a": "The Korea Herald reported 28 million members and 19 million monthly active users as of June 2024."},
+   {"q": "Is Toss going public?", "a": "Viva Republica halted a Korean IPO in October 2024 and said it was considering a US listing. Check current news for the latest status."},
+   {"q": "What is Toss valued at?", "a": "Its December 2022 Series G of $405 million valued it at $7 billion, Retail Banker International reported."}
+  ],
+  "sources": [
+   {"label": "Korea Herald: Viva Republica drops Korean IPO, eyes US (Oct 2024)", "url": "https://www.koreaherald.com/article/3835690"},
+   {"label": "Korea JoongAng Daily: Viva Republica considers US listing", "url": "https://www.koreajoongangdaily.com/business/viva-republica-considers-tossing-local-ipo-in-favor-of-us-listing/12117571"},
+   {"label": "Retail Banker International: Toss raises $405m in Series G", "url": "https://www.retailbankerinternational.com/news/toss-raises-405m-in-series-g/"},
+   {"label": "Toss: official site", "url": "https://toss.im/"}
+  ]
+ }
+}

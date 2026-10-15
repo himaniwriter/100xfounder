@@ -1,0 +1,70 @@
+{
+ "slug": "workrise",
+ "website": "https://www.rigup.com/",
+ "excerpt": "Workrise, which went back to its original name RigUp in September 2025, is an Austin source-to-pay and workforce platform for oil and gas companies. History, funding and alternatives.",
+ "content": "<p>Workrise is the former name of RigUp, an Austin, Texas company that sells software and services to the energy industry. It was founded in 2014 as RigUp, a marketplace for on-demand services and skilled labour in oil and gas. It renamed itself Workrise in early 2021 as it tried to expand into other skilled trades, and on 4 September 2025 it changed its name back to RigUp. In a post announcing the change, co-founder and executive chairman Xuan Yong called it a return to the company's roots in oil and gas, with the same team and the same company behind it.</p><p>Today RigUp describes itself as a source-to-pay solution built for energy. Its website lists vendor management (sourcing, onboarding, compliance and invoicing across what it says are more than 200 service categories), workforce staffing, capital project spend tracking, bid management and field services. Customer logos on the site include Chord Energy, Civitas Resources, Matador Resources and Gulfport Energy. Recent company news on the site covers the acquisition of Codeco-Vanoco Engineering and a licence for Shell's U-Lateral drilling technology in the US.</p><p>The company grew fast before it shrank. TechCrunch reported that it raised $300 million in May 2021 at a $2.9 billion valuation, when it had more than 600 employees and gross revenue of about $900 million in 2020. In April 2022 it laid off an undisclosed number of staff and exited verticals outside energy; it had already cut about a quarter of its corporate staff in 2020, during the pandemic.</p><p>RigUp does not publish prices. Its site says there are several ways to buy and asks buyers to book a demo.</p><p><em>This page is research, not a review. We have not used RigUp; facts come from the company's website and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Energy workforce and source-to-pay software",
+  "platform": "Web platform plus managed staffing services",
+  "starts_at": "Not published; demo on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Source-to-pay, vendor management and staffing for oil and gas companies (now RigUp)",
+  "maker": {"name": "RigUp (formerly Workrise)", "url": "https://www.rigup.com/"},
+  "team": [{"name": "Xuan Yong", "role": "Co-founder and executive chairman"}],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/63ee2e248c2a1605888432e8/68b87de183b19687649d298a_webclip.png", "w": 256, "h": 256, "alt": "RigUp icon: a light-blue gear shape with a white droplet in the centre", "credit": "Logo: RigUp (rigup.com)"}
+  ],
+  "use_cases": [
+   "Sourcing, onboarding and paying oilfield service vendors in one system",
+   "Staffing skilled field workers for drilling and completion projects",
+   "Tracking capital project spend",
+   "Running bids for oilfield services"
+  ],
+  "audience": {
+   "fit": [
+    "oil and gas operators managing many service vendors",
+    "energy companies that need contract field staff",
+    "procurement teams that want vendor compliance and invoicing in one place"
+   ],
+   "not_fit": [
+    "companies outside energy: RigUp exited other industries in 2022",
+    "buyers who want self-serve pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "RigUp does not publish prices. Its site says there are multiple ways to buy and directs buyers to a demo.",
+   "plans": [{"name": "Platform and services", "price": "Not published", "detail": "Quote after a demo"}],
+   "url": "https://www.rigup.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Built specifically for oil and gas vendor and labour workflows",
+   "Combines software with staffing services",
+   "Over a decade in the energy market"
+  ],
+  "cons": [
+   "No public pricing",
+   "Narrow focus on energy after exiting other verticals"
+  ],
+  "alternatives": {
+   "intro": "Other ways to run procurement and contractor management. These are broader tools, not energy-only.",
+   "items": [
+    {"name": "Coupa", "url": "https://www.coupa.com/", "what": "Business spend management and source-to-pay software", "difference": "Cross-industry procurement suite."},
+    {"name": "SAP Ariba", "url": "https://www.sap.com/products/spend-management/ariba-login.html", "what": "Procurement and supplier management from SAP", "difference": "Fits companies already running SAP."},
+    {"name": "ISNetworld", "url": "https://www.isnetworld.com/", "what": "Contractor and supplier compliance management", "difference": "Focuses on safety and compliance prequalification rather than staffing."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Workrise the same company as RigUp?", "a": "Yes. It was founded as RigUp in 2014, called itself Workrise from 2021, and went back to RigUp on 4 September 2025."},
+   {"q": "What does RigUp do?", "a": "It offers source-to-pay software, vendor management, workforce staffing, bid management and project spend tracking for energy companies."},
+   {"q": "How much was Workrise valued at?", "a": "TechCrunch reported a $2.9 billion valuation when it raised $300 million in May 2021."},
+   {"q": "Did Workrise have layoffs?", "a": "Yes. It cut about a quarter of corporate staff in 2020 and made further, undisclosed cuts in April 2022 while exiting non-energy verticals, TechCrunch reported."}
+  ],
+  "sources": [
+   {"label": "RigUp: Back to the future, Workrise is now RigUp", "url": "https://www.rigup.com/blog/back-to-the-future-workrise-is-now-rigup"},
+   {"label": "RigUp: homepage", "url": "https://www.rigup.com/"},
+   {"label": "TechCrunch: Workrise cuts staff, verticals after being valued at $2.9B", "url": "https://techcrunch.com/2022/04/05/workrise-cuts-staff-verticals-after-being-valued-at-2-9b-last-year"}
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "slug": "trusona",
+ "website": "https://www.trusona.com/",
+ "excerpt": "Trusona, an Arizona identity security company, sells ATO Protect, which verifies a person's identity before help-desk password resets, account recovery and wire transfers. History, funding and alternatives.",
+ "content": "<p>Trusona is an identity security company that helps organisations stop account takeover. Its main product today, ATO Protect, verifies that a person is who they claim to be at risky moments: when someone calls the IT help desk to reset a password or multi-factor login, recovers an account, joins as a new remote hire, or asks for a wire transfer. Trusona's website says it checks a person's ID against sources such as US motor-vehicle records, mobile network operators and LexisNexis, supports more than 2,500 ID types worldwide, and uses a patented anti-replay check to catch reused ID scans. It says it deliberately avoids selfie liveness and biometric checks, which it argues deepfakes can defeat, needs no app download or pre-registration, and stores no personal data.</p><p>The product comes in versions for IT help desks, customer service centres, HR teams, executives verifying each other, and an API with integrations for ServiceNow, Zendesk, Jira, Ivanti and Freshdesk. Customers and partners shown on the site include JetBlue, Clean Harbors and the University of Connecticut.</p><p>Trusona began with a different pitch. CyberScoop reported that the Arizona company was founded in 2015 and became known for passwordless login, where users scanned a QR code with their phone instead of typing a password; Microsoft led its $10 million Series B in 2017. In January 2020 Trusona raised a $20 million Series C led by Georgian Partners, with Akamai joining as a strategic investor and Kleiner Perkins, M12, OurCrowd and Seven Peaks Ventures returning, Help Net Security reported. CyberScoop put total funding at $35 million. Founder and CEO Ori Eisen previously worked on anti-fraud in financial services; the site also quotes adviser Frank Abagnale.</p><p>Trusona does not publish prices on its website.</p><p><em>This page is research, not a review. We have not tested ATO Protect; facts come from the pages under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Identity verification and account-takeover protection",
+  "platform": "Web-based verification flows and API",
+  "starts_at": "Not published; contact sales",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Identity checks before help-desk resets, account recovery and wire transfers",
+  "maker": {"name": "Trusona", "url": "https://www.trusona.com/"},
+  "team": [{"name": "Ori Eisen", "role": "Founder and CEO"}],
+  "gallery": [
+   {"url": "https://www.trusona.com/wp-content/uploads/2024/07/trusona-logo.webp", "w": 1920, "h": 729, "alt": "Trusona logo: a white T in a purple circle beside the word TRUSONA in dark and purple letters", "credit": "Logo: Trusona (trusona.com)"}
+  ],
+  "use_cases": [
+   "Verifying callers before an IT help desk resets a password or MFA device",
+   "Account recovery for customers who have lost access",
+   "Confirming the identity of remote job candidates and new hires",
+   "Executives verifying each other before approving wire transfers",
+   "Adding ID verification to ServiceNow, Zendesk or Jira workflows through an API"
+  ],
+  "audience": {
+   "fit": [
+    "IT help desks targeted by social-engineering password-reset attacks",
+    "call centres that need to confirm a caller's identity",
+    "HR teams hiring remotely who worry about impostor candidates"
+   ],
+   "not_fit": [
+    "individuals looking for a personal password manager",
+    "teams that want a fixed public price list"
+   ]
+  },
+  "pricing": {
+   "intro": "Trusona does not publish prices. Its site offers demos and contact with sales.",
+   "plans": [{"name": "ATO Protect", "price": "Not published", "detail": "Contact Trusona"}],
+   "url": "https://www.trusona.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Targets help-desk social engineering, a common breach route",
+   "No app download or pre-registration for the person being verified",
+   "Integrations with common service-desk tools"
+  ],
+  "cons": [
+   "No public pricing",
+   "Record checks such as DMV data are US-centric"
+  ],
+  "alternatives": {
+   "intro": "Other identity verification and help-desk security tools.",
+   "items": [
+    {"name": "Okta", "url": "https://www.okta.com/", "what": "Workforce and customer identity platform", "difference": "Broad single sign-on and MFA suite rather than a point verification product."},
+    {"name": "Persona", "url": "https://withpersona.com/", "what": "Identity verification platform", "difference": "Uses document and selfie checks across many use cases."},
+    {"name": "Nametag", "url": "https://getnametag.com/", "what": "Identity verification for help desks and account recovery", "difference": "Closest like-for-like help-desk focus."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Trusona ATO Protect?", "a": "A service that verifies a person's identity before high-risk actions such as password or MFA resets, account recovery and wire transfers."},
+   {"q": "Is Trusona still a passwordless login company?", "a": "It became known for passwordless QR-code login, but its website now focuses on ATO Protect identity verification."},
+   {"q": "Who founded Trusona?", "a": "Ori Eisen, who is founder and CEO. CyberScoop reported the company was founded in 2015 in Arizona."},
+   {"q": "How much funding has Trusona raised?", "a": "CyberScoop put the total at $35 million after a $20 million Series C in January 2020 led by Georgian Partners."}
+  ],
+  "sources": [
+   {"label": "Trusona: homepage", "url": "https://www.trusona.com/"},
+   {"label": "CyberScoop: Trusona raises $20 million Series C", "url": "https://cyberscoop.com/trusona-authentication-series-c/"},
+   {"label": "Help Net Security: Trusona raises $20M", "url": "https://www.helpnetsecurity.com/2020/01/15/trusona-financing/"}
+  ]
+ }
+}
