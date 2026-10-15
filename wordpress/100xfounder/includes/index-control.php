@@ -132,15 +132,33 @@ add_action('init', function () {
     if (!wp_next_scheduled('xf_index_control_hourly')) {
         wp_schedule_event(time() + 120, 'hourly', 'xf_index_control_hourly');
     }
-    // One-time: everything published before this module counts as already released.
-    if (get_option('xf_drip_baseline') !== '1') {
-        global $wpdb;
-        $types = "'" . implode("','", XF_DRIP_TYPES) . "'";
+    // One-time: everything already indexable counts as released; thin listings are not, so they drip once improved.
+    global $wpdb;
+    $types = "'" . implode("','", XF_DRIP_TYPES) . "'";
+    if (get_option('xf_drip_baseline') === false) {
         $wpdb->query("INSERT INTO {$wpdb->postmeta} (post_id, meta_key, meta_value)
             SELECT p.ID, '_xf_dripped', '1' FROM {$wpdb->posts} p
             LEFT JOIN {$wpdb->postmeta} m ON m.post_id = p.ID AND m.meta_key = '_xf_dripped'
-            WHERE p.post_type IN ($types) AND p.post_status IN ('publish','future','pending','draft') AND m.meta_id IS NULL"); // phpcs:ignore -- constants only
-        update_option('xf_drip_baseline', '1', true);
+            LEFT JOIN {$wpdb->postmeta} i ON i.post_id = p.ID AND i.meta_key = '_xf_indexable'
+            WHERE p.post_type IN ($types) AND p.post_status IN ('publish','future','pending','draft') AND m.meta_id IS NULL
+              AND (p.post_type <> 'xf_startup' OR i.meta_value = '1')"); // phpcs:ignore -- constants only
+        update_option('xf_drip_baseline', '2', true);
+    }
+    // Fix for the first baseline (2026-10-15), which also marked thin listings as released.
+    if (get_option('xf_drip_baseline') === '1') {
+        $wpdb->query("DELETE m FROM {$wpdb->postmeta} m JOIN {$wpdb->posts} p ON p.ID = m.post_id
+            LEFT JOIN {$wpdb->postmeta} i ON i.post_id = p.ID AND i.meta_key = '_xf_indexable'
+            WHERE m.meta_key = '_xf_dripped' AND p.post_type = 'xf_startup' AND (i.meta_value IS NULL OR i.meta_value <> '1')"); // phpcs:ignore
+        // Listings made rich after the drip went live (11:27 UTC) slipped through: give them drip slots now.
+        $late = $wpdb->get_col("SELECT p.ID FROM {$wpdb->posts} p
+            JOIN {$wpdb->postmeta} i ON i.post_id = p.ID AND i.meta_key = '_xf_indexable' AND i.meta_value = '1'
+            LEFT JOIN {$wpdb->postmeta} f ON f.post_id = p.ID AND f.meta_key = '_xf_index_from'
+            WHERE p.post_type = 'xf_startup' AND p.post_status = 'publish' AND f.meta_id IS NULL AND p.post_modified_gmt >= '2026-10-15 11:27:00'"); // phpcs:ignore
+        foreach ($late as $id) {
+            delete_post_meta((int) $id, '_xf_dripped');
+            xf_drip_assign((int) $id);
+        }
+        update_option('xf_drip_baseline', '2', true);
     }
 });
 
