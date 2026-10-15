@@ -1,0 +1,150 @@
+{
+ "slug": "workpay",
+ "website": "https://www.myworkpay.com/",
+ "excerpt": "Workpay is a Nairobi-based payroll, HR and Employer of Record platform for companies with teams across Africa, backed by Y Combinator, Norrsken22 and Visa.",
+ "content": "<p>Workpay is payroll and HR software for companies employing people in Africa. Its platform runs payroll, statutory tax and compliance filings, attendance and leave, benefits and salary payouts, and it offers payroll outsourcing and Employer of Record (EOR) services so a company can hire in a country where it has no local entity. Its website says more than 2,000 businesses use it, that it covers 54 African countries and over 50 currencies, and that it has processed payroll for 200,000+ employees.</p><p>The company is based in Nairobi, Kenya. Y Combinator's directory says it was founded in 2019 and joined YC in winter 2020, and lists Paul Kimani (cofounder and CEO) and Jackson Kibigo Kungu as founders. TechCrunch reported a $2.7 million pre-Series A in February 2023. In August 2024 TechCrunch reported a $5 million Series A led by Norrsken22 with Visa joining, alongside existing backers including Y Combinator. Workpay said it would spend the money on financial services for employees, AI features for performance management and hiring.</p><p>Workpay does not publish a price list. Its site asks companies to book a discovery call for a quote. Workpay is most relevant to employers with staff in Kenya and other African markets, where payroll rules, statutory deductions and payout methods such as mobile money differ from country to country. Global employers comparing it with Deel or Remote should check which countries Workpay covers with its own entities and which through partners.</p><p><em>We have not used Workpay for this page. It brings together Workpay's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Payroll and HR",
+  "platform": "Web, Android and iOS",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Payroll, compliance and Employer of Record platform for teams across Africa",
+  "maker": {
+   "name": "Workpay",
+   "url": "https://www.myworkpay.com/"
+  },
+  "team": [
+   {
+    "name": "Paul Kimani",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Jackson Kibigo Kungu",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/6127aba2d82aad1ff1b27831/6509f917462b67b24c689f15_best-payrool-software-provider-2022.avif",
+    "alt": "Round purple award badge reading African Excellence Awards 2022, Workpay, Best Payroll Software Provider 2022, winner",
+    "credit": "Image: Workpay (myworkpay.com)",
+    "w": 306,
+    "h": 306
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/6127aba2d82aad1ff1b27831/62a1c3c34f67b141cce23524_614b5389a200ce81c2a6a4ba_Rectangle%208961%20(3).avif",
+    "alt": "A smiling woman wearing a headset works at a laptop, from Workpay's website",
+    "credit": "Image: Workpay (myworkpay.com)",
+    "w": 1170,
+    "h": 1144
+   }
+  ],
+  "use_cases": [
+   "Running monthly payroll with local tax and statutory deductions",
+   "Hiring staff in another African country through Employer of Record",
+   "Tracking attendance and leave",
+   "Paying salaries out to bank and mobile money accounts",
+   "Offering employee benefits and perks"
+  ],
+  "audience": {
+   "fit": [
+    "companies with employees in Kenya and other African markets",
+    "employers hiring across several African countries without local entities",
+    "HR teams replacing spreadsheet payroll"
+   ],
+   "not_fit": [
+    "companies with no staff in Africa",
+    "buyers who want a public price list before talking to sales"
+   ]
+  },
+  "pricing": {
+   "intro": "Workpay does not publish prices on its website; it quotes after a discovery call.",
+   "url": "https://www.myworkpay.com/",
+   "plans": [
+    {
+     "name": "Payroll and HR platform",
+     "price": "Quote on request",
+     "detail": "Book a discovery call"
+    },
+    {
+     "name": "Employer of Record",
+     "price": "Quote on request",
+     "detail": "Hire in countries without a local entity"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Built for African payroll rules, currencies and payout methods",
+   "Covers both software and EOR services",
+   "Backed by YC, Norrsken22 and Visa"
+  ],
+  "cons": [
+   "No public pricing",
+   "Coverage claims are the company's own; check your specific country"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Workpay. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Deel",
+     "url": "https://www.deel.com/",
+     "what": "Global payroll and Employer of Record",
+     "starts_at": "See its own website",
+     "difference": "Global coverage well beyond Africa, priced per worker."
+    },
+    {
+     "name": "Remote",
+     "url": "https://remote.com/",
+     "what": "Global Employer of Record and payroll",
+     "starts_at": "See its own website",
+     "difference": "Global EOR provider with its own entities in many countries."
+    },
+    {
+     "name": "SeamlessHR",
+     "url": "https://seamlesshr.com/",
+     "what": "HR and payroll software from Nigeria",
+     "starts_at": "See its own website",
+     "difference": "African HR suite with a strong West African base."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Workpay do?",
+    "a": "It runs payroll, compliance, benefits and payouts for companies with staff in Africa, and offers Employer of Record services."
+   },
+   {
+    "q": "Where is Workpay based?",
+    "a": "Nairobi, Kenya, according to Y Combinator's directory."
+   },
+   {
+    "q": "Who invested in Workpay?",
+    "a": "Norrsken22 led a $5 million Series A in 2024 with Visa joining, TechCrunch reported; Y Combinator is an earlier backer."
+   },
+   {
+    "q": "How much does Workpay cost?",
+    "a": "It does not publish prices; you book a discovery call for a quote."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Workpay homepage",
+    "url": "https://www.myworkpay.com/"
+   },
+   {
+    "label": "Y Combinator: Workpay",
+    "url": "https://www.ycombinator.com/companies/workpay"
+   },
+   {
+    "label": "TechCrunch: Workpay lands Visa as investor in $5M round",
+    "url": "https://techcrunch.com/2024/08/22/kenyan-hr-and-payroll-startup-workpay-lands-visa-as-investor-in-5m-round/"
+   },
+   {
+    "label": "Citizen Digital: Workpay raises Ksh.645M Series A",
+    "url": "https://citizen.digital/tech/kenyan-hr-payroll-start-up-workpay-raises-ksh645m-series-a-funding-n348208"
+   }
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "slug": "xentral",
+ "website": "https://xentral.com/en",
+ "excerpt": "Xentral is a German ERP for e-commerce and product businesses, with published plans from €99 to €849 a month. Funding, who it suits and alternatives.",
+ "content": "<p>Xentral is cloud ERP software for online retailers and product companies. It connects to shops and marketplaces and handles the back office in one system: orders, inventory and warehouse, shipping, invoices, purchasing, returns and accounting exports such as DATEV for German bookkeeping. Its website pitches it at commerce businesses with roughly €1 million to €50 million in revenue and says AI agents and a co-pilot are included in every plan.</p><p>Xentral is a German company. Founder and CEO Benedikt Sauter told TechCrunch in 2021 that the software hooks into Shopify, eBay, Amazon, Magento, WooCommerce and CRM tools so small companies can run their back office in one place. In January 2021 it raised a $20 million Series A led by Sequoia, which TechCrunch said was Sequoia's first investment in Europe after opening there. In August 2021 Xentral announced a $75 million Series B led by Tiger Global and Meritech, with Sequoia, Visionaries Club and Freigeist also investing. At that point TechCrunch reported about 1,000 customers, most of them in Germany, including direct-to-consumer brands such as YFood, KoRo and Flyeralarm.</p><p>Xentral publishes its prices. Plans start at €99 a month for very small shops and run to €849 a month, with a custom Scale tier above that; every plan includes unlimited users. That makes it easy to compare with rivals such as JTL-Wawi or Odoo before booking a demo. It suits growing shops that sell across several channels and want orders, stock and invoices in one place; very small sellers may find a lighter order tool cheaper.</p><p><em>We have not used Xentral for this page. It brings together Xentral's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "ERP for e-commerce",
+  "platform": "Web (cloud)",
+  "starts_at": "From €99/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Cloud ERP for e-commerce: orders, inventory, shipping and invoicing in one system",
+  "maker": {
+   "name": "Xentral",
+   "url": "https://xentral.com/en"
+  },
+  "team": [
+   {
+    "name": "Benedikt Sauter",
+    "role": "Founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://xentral.com/apple-touch-icon.png",
+    "alt": "Xentral logo: a lavender X made of four curved strokes on white",
+    "credit": "Logo: Xentral (xentral.com)",
+    "w": 180,
+    "h": 180
+   },
+   {
+    "url": "https://eu-central-1-enterprise-euc1.graphassets.com/cmtx1pn9b00i507urhtsf4o7h/cmp1bwlva178v07uueip5kbla",
+    "alt": "Xentral promotional image: a shop owner holding a laptop beside an order screen and the Xentral AI icon",
+    "credit": "Image: Xentral (xentral.com)",
+    "w": 2085,
+    "h": 1809
+   }
+  ],
+  "use_cases": [
+   "Pulling orders from Shopify, Amazon and other channels into one system",
+   "Inventory and warehouse management, including pick and pack",
+   "Creating invoices, delivery notes and credit notes",
+   "Purchasing, returns and dunning",
+   "Exporting bookkeeping data to DATEV"
+  ],
+  "audience": {
+   "fit": [
+    "online shops and D2C brands in Germany and the wider EU",
+    "businesses outgrowing spreadsheets and shop-plugin workflows",
+    "teams that want unlimited users on a flat monthly plan"
+   ],
+   "not_fit": [
+    "very large enterprises that need SAP-scale customisation",
+    "businesses outside Europe that need local tax and accounting integrations Xentral may not offer"
+   ]
+  },
+  "pricing": {
+   "intro": "Xentral's pricing page lists these plans (monthly prices; annual billing is also offered).",
+   "url": "https://xentral.com/en/pricing",
+   "plans": [
+    {
+     "name": "Launch",
+     "price": "From €99/month",
+     "amount": 99,
+     "currency": "EUR",
+     "detail": "Up to €500k turnover and 1,200 orders a year; €0.30 per order"
+    },
+    {
+     "name": "Starter",
+     "price": "From €349/month",
+     "amount": 349,
+     "currency": "EUR",
+     "detail": "500 orders a month, unlimited users"
+    },
+    {
+     "name": "Business",
+     "price": "From €649/month",
+     "amount": 649,
+     "currency": "EUR",
+     "detail": "Adds automation, pick & pack, banking and API access"
+    },
+    {
+     "name": "Pro",
+     "price": "From €849/month",
+     "amount": 849,
+     "currency": "EUR",
+     "detail": "Adds quotes, purchase requests, dunning and cost centres"
+    },
+    {
+     "name": "Scale",
+     "price": "Custom",
+     "detail": "Highest API limits and volumes; contact sales"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Prices are public",
+   "Unlimited users on every plan",
+   "Built around e-commerce channels and German accounting (DATEV)"
+  ],
+  "cons": [
+   "Mainly focused on the German-speaking market",
+   "Per-order fees on the smallest plan"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Xentral. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "JTL-Wawi",
+     "url": "https://www.jtl-software.com/",
+     "what": "German merchandise management software for online retailers",
+     "starts_at": "See its own website",
+     "difference": "Long-established in German e-commerce, with an on-premise heritage."
+    },
+    {
+     "name": "Odoo",
+     "url": "https://www.odoo.com/",
+     "what": "Open-source suite of business apps including ERP",
+     "starts_at": "See its own website",
+     "difference": "Broader, modular suite that can be self-hosted."
+    },
+    {
+     "name": "Billbee",
+     "url": "https://www.billbee.io/",
+     "what": "Order management for small online sellers",
+     "starts_at": "See its own website",
+     "difference": "Lighter and cheaper for small shops that do not need a full ERP."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Xentral cost?",
+    "a": "Its pricing page lists plans from €99 a month (Launch) to €849 a month (Pro), plus a custom Scale tier."
+   },
+   {
+    "q": "Who founded Xentral?",
+    "a": "Benedikt Sauter is the founder and CEO, according to TechCrunch."
+   },
+   {
+    "q": "Who invested in Xentral?",
+    "a": "Sequoia led a $20 million Series A in January 2021; Tiger Global and Meritech led a $75 million Series B in August 2021."
+   },
+   {
+    "q": "Which shops does Xentral connect to?",
+    "a": "Sauter told TechCrunch it connects to Shopify, eBay, Amazon, Magento and WooCommerce, among others."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Xentral pricing",
+    "url": "https://xentral.com/en/pricing"
+   },
+   {
+    "label": "Xentral blog: $75M Series B",
+    "url": "https://xentral.com/en/blog/investment-tigerglobal-meritech"
+   },
+   {
+    "label": "TechCrunch: xentral raises $75M Series B",
+    "url": "https://techcrunch.com/2021/08/17/xentral-an-erp-platform-for-smbs-raises-75m-series-b-from-tiger-global-and-meritech/"
+   },
+   {
+    "label": "Silicon Canals: Sequoia-backed Xentral raises €63.7M",
+    "url": "https://siliconcanals.com/xentral-raises-63-7m/"
+   }
+  ]
+ }
+}

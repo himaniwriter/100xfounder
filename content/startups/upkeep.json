@@ -1,0 +1,163 @@
+{
+ "slug": "upkeep",
+ "website": "https://upkeep.com/",
+ "excerpt": "UpKeep is maintenance management (CMMS) software for work orders, preventive maintenance and assets, with plans from $24 per user a month. Pricing, funding and alternatives.",
+ "content": "<p>UpKeep is a computerised maintenance management system (CMMS): software that maintenance and facilities teams use to create and track work orders, schedule preventive maintenance, manage assets, parts and inventory, and report on downtime. It was built mobile-first so technicians can work from a phone on the shop floor, and it has added safety, training and an AI assistant called Nova. Its website now describes it as an AI-powered maintenance platform.</p><p>UpKeep is based in Los Angeles. Y Combinator's directory says it was founded in 2016 and went through YC in winter 2017. TechCrunch reported that founder Ryan Chan had worked at Trisep, a chemical manufacturer, where maintenance was still handled on paper because the plant's software only ran on desktop computers. In May 2020 UpKeep announced a $36 million Series B led by Insight Partners, with Emergence Capital, Battery Ventures, Y Combinator, Mucker Capital and FundersClub taking part; Insight said at the time that more than 2,000 paying businesses and 400,000 users were on the app.</p><p>UpKeep publishes its prices. The Essential plan costs $24 per user a month and Premium $55 per user a month; Professional and Enterprise are quoted. Each plan includes a monthly allowance of Nova AI credits, and paid setup and training packages are sold separately. UpKeep competes with MaintainX, Fiix and Limble, and suits teams moving off paper or spreadsheets as much as larger multi-site operations.</p><p><em>We have not used UpKeep for this page. It brings together UpKeep's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Maintenance management (CMMS)",
+  "platform": "Web, iOS and Android",
+  "starts_at": "$24 per user/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Mobile-first maintenance software for work orders, preventive maintenance and assets",
+  "maker": {
+   "name": "UpKeep",
+   "url": "https://upkeep.com/"
+  },
+  "team": [
+   {
+    "name": "Ryan Chan",
+    "role": "Founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upkeep.com/static/UpKeep_Feature@2x-d036c046c1e1e066da62e77cfb8299b5.png",
+    "alt": "UpKeep banner on red: the UpKeep logo, the line One Command Center for Maintenance & Reliability, and a laptop and phone showing the app",
+    "credit": "Image: UpKeep (upkeep.com)",
+    "w": 2400,
+    "h": 1254
+   },
+   {
+    "url": "https://www.datocms-assets.com/38028/1787178522-cmms.webp?auto=compress&fm=webp&w=1216",
+    "alt": "UpKeep preventive maintenance list showing scheduled tasks such as a quarterly conveyor PM and HVAC maintenance",
+    "credit": "Image: UpKeep (upkeep.com)",
+    "w": 1216,
+    "h": 1200
+   }
+  ],
+  "use_cases": [
+   "Creating, assigning and closing work orders from a phone",
+   "Scheduling preventive maintenance",
+   "Tracking assets, spare parts and inventory",
+   "Logging safety incidents",
+   "Reporting on downtime and maintenance costs"
+  ],
+  "audience": {
+   "fit": [
+    "maintenance teams in manufacturing, facilities and property",
+    "teams moving off paper or spreadsheets",
+    "multi-site operations that need one maintenance system"
+   ],
+   "not_fit": [
+    "households or very small businesses with a handful of assets",
+    "teams that need full enterprise asset management inside an ERP such as SAP"
+   ]
+  },
+  "pricing": {
+   "intro": "UpKeep's pricing page lists these plans for its maintenance product.",
+   "url": "https://upkeep.com/pricing/",
+   "plans": [
+    {
+     "name": "Essential",
+     "price": "$24 per user/month",
+     "amount": 24,
+     "currency": "USD",
+     "detail": "Unlimited work orders and locations; 250 Nova credits a month"
+    },
+    {
+     "name": "Premium",
+     "price": "$55 per user/month",
+     "amount": 55,
+     "currency": "USD",
+     "detail": "Adds PM scheduling, checklists, parts and inventory; 500 Nova credits"
+    },
+    {
+     "name": "Professional",
+     "price": "Quote",
+     "detail": "Offline mobile mode, request portal, full analytics history"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Quote",
+     "detail": "Multi-site, automation, API, SSO"
+    }
+   ],
+   "notes": [
+    "Setup and training packages are priced separately on the same page."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published prices and a free trial",
+   "Strong mobile app for technicians",
+   "Long-running product backed by Insight Partners and YC"
+  ],
+  "cons": [
+   "Per-user pricing grows with team size",
+   "Advanced features sit in quoted tiers"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with UpKeep. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "MaintainX",
+     "url": "https://www.getmaintainx.com/",
+     "what": "Mobile-first maintenance and work order software",
+     "starts_at": "See its own website",
+     "difference": "UpKeep's closest rival, also mobile-first."
+    },
+    {
+     "name": "Fiix",
+     "url": "https://fiixsoftware.com/",
+     "what": "CMMS from Rockwell Automation",
+     "starts_at": "See its own website",
+     "difference": "Backed by an industrial automation group."
+    },
+    {
+     "name": "Limble CMMS",
+     "url": "https://limblecmms.com/",
+     "what": "Maintenance management software",
+     "starts_at": "See its own website",
+     "difference": "Similar feature set aimed at mid-size maintenance teams."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is UpKeep?",
+    "a": "A CMMS: software for maintenance work orders, preventive maintenance, assets and inventory."
+   },
+   {
+    "q": "How much does UpKeep cost?",
+    "a": "Essential is $24 per user a month and Premium $55 per user a month; Professional and Enterprise are quoted."
+   },
+   {
+    "q": "Who founded UpKeep?",
+    "a": "Ryan Chan, according to TechCrunch and Y Combinator."
+   },
+   {
+    "q": "Who invested in UpKeep?",
+    "a": "Insight Partners led its $36 million Series B in 2020, with Emergence Capital, Battery Ventures and Y Combinator among the other investors."
+   }
+  ],
+  "sources": [
+   {
+    "label": "UpKeep pricing",
+    "url": "https://upkeep.com/pricing/"
+   },
+   {
+    "label": "Y Combinator: UpKeep",
+    "url": "https://www.ycombinator.com/companies/upkeep"
+   },
+   {
+    "label": "TechCrunch: UpKeep raises $36M Series B",
+    "url": "https://techcrunch.com/2020/05/12/upkeep-raises-36-million-series-b-to-help-facilities-and-maintenance-teams-go-mobile/"
+   },
+   {
+    "label": "Insight Partners: UpKeep raises $36M Series B",
+    "url": "https://www.insightpartners.com/ideas/upkeep-raises-36-million-series-b-to-reimagine-maintenance-and-facilities-management-software/"
+   }
+  ]
+ }
+}

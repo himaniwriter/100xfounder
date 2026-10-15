@@ -1,0 +1,148 @@
+{
+ "slug": "titan",
+ "website": "https://www.titan.com/",
+ "excerpt": "Titan is a New York wealth management firm for tech professionals, pairing clients with human advisors for equity compensation, tax and investment planning.",
+ "content": "<p>Titan is a US registered investment adviser that manages money for tech workers. Each client gets a dedicated human wealth advisor, and Titan handles investment management, equity compensation planning (stock options and RSUs), tax planning, financial planning and retirement. Its homepage says it manages $1.2 billion for more than 10,000 clients as of 30 September 2026, and that it was founded in 2017. Its about page lists Joe Percoco (co-CEO and cofounder) and Clay Gardner (co-CEO and chief investment officer).</p><p>Percoco and Gardner founded Titan in 2017, TechCrunch reported, and it began as a retail investment management platform aimed at millennials. In February 2021 it raised a $12.5 million Series A led by General Catalyst, with Sound Ventures, BoxGroup and Y Combinator among the other investors, and later that year it moved from the titanvest.com domain to titan.com. In August 2023 the US Securities and Exchange Commission charged Titan Global Capital Management with misleading advertising of hypothetical performance, including annualised returns as high as 2,700% for its crypto strategy, the first case under the SEC's amended marketing rule. Without admitting or denying the findings, Titan agreed to a censure and to pay $192,454 in disgorgement and prejudgment interest and an $850,000 civil penalty.</p><p>Titan does not show a fee schedule on its homepage; its FAQ answers questions about fees, and prospective clients speak with an advisor first. It is aimed at tech professionals with equity compensation rather than first-time investors with small balances.</p><p><em>We have not used Titan for this page. It brings together Titan's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Wealth management",
+  "platform": "Web, with a dedicated human advisor",
+  "starts_at": "Fees disclosed by Titan on enquiry",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Wealth management with a dedicated human advisor for tech professionals",
+  "maker": {
+   "name": "Titan",
+   "url": "https://www.titan.com/"
+  },
+  "team": [
+   {
+    "name": "Joe Percoco",
+    "role": "Cofounder and co-CEO"
+   },
+   {
+    "name": "Clay Gardner",
+    "role": "Cofounder, co-CEO and chief investment officer"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.titan.com/og/default.jpg",
+    "alt": "Titan banner: an overhead photo of people working at desks in a dim office with the line The wealth manager for tech professionals",
+    "credit": "Image: Titan (titan.com)",
+    "w": 1192,
+    "h": 630
+   },
+   {
+    "url": "https://www.titan.com/_next/image?url=%2Fservices%2Fdedicated-wealth-advisor.png&w=3840&q=75",
+    "alt": "Two men looking at a laptop together at a table in a brick-walled office, from Titan's dedicated wealth advisor page",
+    "credit": "Image: Titan (titan.com)",
+    "w": 1838,
+    "h": 1040
+   }
+  ],
+  "use_cases": [
+   "Planning what to do with RSUs and stock options",
+   "Managing an investment portfolio with an advisor",
+   "Tax planning around equity compensation",
+   "Retirement and household financial planning"
+  ],
+  "audience": {
+   "fit": [
+    "US tech employees with equity compensation",
+    "people who want a human advisor but a digital-first service",
+    "households with growing investable assets"
+   ],
+   "not_fit": [
+    "investors outside the US",
+    "people who want a free do-it-yourself brokerage app"
+   ]
+  },
+  "pricing": {
+   "intro": "Titan does not show a fee schedule on its homepage. Fees are covered in its FAQ and in the disclosures it gives clients; speak with Titan or read its SEC Form ADV before signing up.",
+   "url": "https://www.titan.com/",
+   "plans": [
+    {
+     "name": "Wealth management",
+     "price": "See Titan's fee disclosures",
+     "detail": "Dedicated advisor, investment management and planning"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Specialises in tech-industry equity compensation",
+   "Dedicated human advisor",
+   "SEC-registered investment adviser"
+  ],
+  "cons": [
+   "SEC censure and penalty in 2023 over misleading performance advertising",
+   "Fees are not shown on the homepage"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Titan. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Wealthfront",
+     "url": "https://www.wealthfront.com/",
+     "what": "Automated investing and cash accounts",
+     "starts_at": "See its own website",
+     "difference": "Robo-adviser without a dedicated human advisor."
+    },
+    {
+     "name": "Betterment",
+     "url": "https://www.betterment.com/",
+     "what": "Automated investing with optional advisors",
+     "starts_at": "See its own website",
+     "difference": "Robo-adviser with paid access to certified financial planners."
+    },
+    {
+     "name": "Facet",
+     "url": "https://facet.com/",
+     "what": "Flat-fee financial planning",
+     "starts_at": "See its own website",
+     "difference": "Membership-based planning with a dedicated planner."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Titan?",
+    "a": "A New York-based registered investment adviser that pairs tech professionals with a dedicated human wealth advisor."
+   },
+   {
+    "q": "Was Titan fined by the SEC?",
+    "a": "Yes. In August 2023 the SEC censured Titan over misleading hypothetical performance ads; it paid an $850,000 civil penalty plus $192,454 in disgorgement and interest, without admitting or denying the findings."
+   },
+   {
+    "q": "How much does Titan manage?",
+    "a": "Its homepage says $1.2 billion for more than 10,000 clients as of 30 September 2026."
+   },
+   {
+    "q": "Who founded Titan?",
+    "a": "Joe Percoco and Clay Gardner founded it in 2017, TechCrunch reported; both are now co-CEOs."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Titan homepage",
+    "url": "https://www.titan.com/"
+   },
+   {
+    "label": "Titan about page",
+    "url": "https://www.titan.com/about"
+   },
+   {
+    "label": "SEC press release 2023-153",
+    "url": "https://www.sec.gov/news/press-release/2023-153"
+   },
+   {
+    "label": "TechCrunch: Titan raises $12.5M Series A",
+    "url": "https://techcrunch.com/2021/02/16/2113297/amp/"
+   },
+   {
+    "label": "Domain Name Wire: Titan moves to Titan.com",
+    "url": "https://domainnamewire.com/?p=71111"
+   }
+  ]
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "slug": "vivodyne",
+ "website": "https://www.vivodyne.com/",
+ "excerpt": "Vivodyne grows lab-made human tissues in robotic labs to test drugs before clinical trials. Funding from Khosla Ventures, what it does and alternatives.",
+ "content": "<p>Vivodyne is a biotech company that grows human organ tissues in the lab and tests drug candidates on them, as an alternative to animal studies before human clinical trials. Its tissues grow on microfluidic chips it calls TissueDisks; robotic labs it calls HIVEs cultivate, dose and analyse thousands of tissues at a time and generate imaging, single-cell sequencing and protein data. Its website says each HIVE tests 10,000 human tissues at a time and that the data is used to train AI models of human biology. It works with pharmaceutical partners rather than selling a product to the public.</p><p>Andrei Georgescu is cofounder and CEO. In November 2023 Vivodyne announced a $38 million seed round led by Khosla Ventures, with CS Ventures, Bison Ventures, MBX Capital and Kairos Ventures; Pharmaceutical Technology reported that it had bio-engineered more than 20 human organ tissue types. In May 2025 it announced a $40 million Series A, again led by Khosla Ventures, with Lingotto Investment Management, Helena Capital and Fortius Ventures joining. STAT tied the raise to the FDA and NIH moving away from animal testing requirements. The company said it would open a 23,000-square-foot robotic lab in South San Francisco.</p><p>Vivodyne does not publish prices; drug developers contact it to set up a partnership. Its customers are pharmaceutical and biotech companies that want human data earlier in a drug programme; it is not a product individual researchers can buy off the shelf. Rivals such as Emulate and CN Bio sell organ-on-chip systems that labs run themselves.</p><p><em>We have not used Vivodyne for this page. It brings together Vivodyne's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Biotech (human tissue testing)",
+  "platform": "Laboratory services and data platform",
+  "starts_at": "Partnership pricing on request",
+  "schema_category": "Organization",
+  "summary_short": "Lab-grown human tissues and robotic labs for testing drugs before clinical trials",
+  "maker": {
+   "name": "Vivodyne",
+   "url": "https://www.vivodyne.com/"
+  },
+  "team": [
+   {
+    "name": "Andrei Georgescu",
+    "role": "Cofounder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/6a45b979f9fdb5736de79d49/6a515dd13e092c07bd2c3433_Opengraph.png",
+    "alt": "Vivodyne banner: false-colour microscope image of human tissue with the words Make biology computable",
+    "credit": "Image: Vivodyne (vivodyne.com)",
+    "w": 1280,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/6a45b979f9fdb5736de79d49/6a7f61203fe3f8f3d45d5ff8_SEM_grid_4mb.jpg",
+    "alt": "A grid of many electron-microscope images of lab-grown human tissue in purple and pink tones",
+    "credit": "Image: Vivodyne (vivodyne.com)",
+    "w": 2048,
+    "h": 1153
+   }
+  ],
+  "use_cases": [
+   "Testing drug candidates on human tissue before clinical trials",
+   "Finding and checking therapeutic targets",
+   "Predicting toxicity and efficacy in humans",
+   "Generating large human biological datasets for AI models"
+  ],
+  "audience": {
+   "fit": [
+    "pharmaceutical and biotech companies running preclinical programmes",
+    "drug developers looking for human-relevant data beyond animal models"
+   ],
+   "not_fit": [
+    "individual researchers looking for a product to buy off the shelf",
+    "anyone outside drug discovery"
+   ]
+  },
+  "pricing": {
+   "intro": "Vivodyne does not publish prices. It works with drug developers through partnerships.",
+   "url": "https://www.vivodyne.com/",
+   "plans": [
+    {
+     "name": "Partnership",
+     "price": "On request",
+     "detail": "Contact Vivodyne"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Backed twice by Khosla Ventures",
+   "High-throughput robotic testing on human tissue",
+   "Fits the regulatory shift away from animal testing"
+  ],
+  "cons": [
+   "No public pricing",
+   "Claims about predictive accuracy are the company's own"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Vivodyne. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Emulate",
+     "url": "https://emulatebio.com/",
+     "what": "Organ-on-a-chip systems for drug testing",
+     "starts_at": "See its own website",
+     "difference": "Sells organ-chip instruments that labs run themselves."
+    },
+    {
+     "name": "CN Bio",
+     "url": "https://cn-bio.com/",
+     "what": "Organ-on-a-chip and microphysiological systems",
+     "starts_at": "See its own website",
+     "difference": "UK maker of organ-on-chip systems for in-house use."
+    },
+    {
+     "name": "InSphero",
+     "url": "https://insphero.com/",
+     "what": "3D cell models for drug discovery",
+     "starts_at": "See its own website",
+     "difference": "Offers 3D tissue models and testing services, especially liver and pancreas."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Vivodyne do?",
+    "a": "It grows human organ tissues in robotic labs and tests drug candidates on them before clinical trials."
+   },
+   {
+    "q": "Who funds Vivodyne?",
+    "a": "Khosla Ventures led its $38 million seed round (2023) and its $40 million Series A (2025)."
+   },
+   {
+    "q": "Does Vivodyne replace animal testing?",
+    "a": "That is its stated aim; STAT reported the raise as US regulators move away from animal testing requirements."
+   },
+   {
+    "q": "Who runs Vivodyne?",
+    "a": "Andrei Georgescu is cofounder and CEO."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Vivodyne homepage",
+    "url": "https://www.vivodyne.com/"
+   },
+   {
+    "label": "Vivodyne: $38M seed led by Khosla Ventures",
+    "url": "https://www.vivodyne.com/blog/vivodyne-announces-38-million-seed-financing-led-by-khosla-ventures"
+   },
+   {
+    "label": "Pharmaceutical Technology: Vivodyne raises $38M",
+    "url": "https://www.pharmaceutical-technology.com/news/vivodyne-lab-grown-human-organs/"
+   },
+   {
+    "label": "Business Wire: Vivodyne $40 million funding",
+    "url": "https://www.businesswire.com/news/home/20250528498236/en/Vivodyne-to-Replace-Animal-Testing-With-$40-Million-Funding-to-Reverse-95-Clinical-Trial-Failure-Rate"
+   },
+   {
+    "label": "STAT: Vivodyne raises $40 million",
+    "url": "https://www.statnews.com/2025/05/29/animal-testing-alternatives-biotech-vivodyne-raises-40-million-for-organoid-research/"
+   }
+  ]
+ }
+}
