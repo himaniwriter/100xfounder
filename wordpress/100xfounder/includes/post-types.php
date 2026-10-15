@@ -18,7 +18,7 @@ function xf_register_post_types() {
         'has_archive' => false,
         'rewrite' => ['slug' => 'startup', 'with_front' => false],
         'menu_icon' => 'dashicons-rocket',
-        'supports' => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions'],
+        'supports' => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields'],
         'show_in_rest' => true,
     ]);
 
@@ -36,6 +36,14 @@ function xf_register_post_types() {
         'supports' => ['title', 'editor', 'excerpt', 'thumbnail'],
         'show_in_rest' => true,
     ]);
+
+    // Editable over REST so the profile routines can set the Visit button, PH link and tagline.
+    foreach (['_xf_website' => 'esc_url_raw', '_xf_ph_url' => 'esc_url_raw', '_xf_tagline' => 'sanitize_text_field'] as $key => $clean) {
+        register_post_meta('xf_startup', $key, [
+            'type' => 'string', 'single' => true, 'show_in_rest' => true, 'sanitize_callback' => $clean,
+            'auth_callback' => function () { return current_user_can('edit_posts'); },
+        ]);
+    }
 
     register_taxonomy('xf_industry', ['xf_startup'], [
         'labels' => ['name' => 'Industries', 'singular_name' => 'Industry'],

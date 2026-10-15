@@ -15,4 +15,4 @@ Written by the `ph-group-publish-outreach-daily` routine. One line per listing: 
 - asmi-ai-3: https://100xfounder.com/startup/asmi-ai-3/ (2026-10-15)
 
 Not added to outreach: ask-ad-manager-by-google-ads (only contact is press@google.com, a press desk, not a founder).
-Known gap: the website, Product Hunt link and tagline meta (_xf_website, _xf_ph_url, _xf_tagline) are not REST-registered, so these listings have no "Visit" button until they are set in WP admin or the plugin registers that meta.
+Fixed 2026-10-15: website, PH link and tagline set for all 10 (meta now REST-registered).
