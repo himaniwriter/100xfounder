@@ -199,37 +199,135 @@
     dlg.addEventListener('close', function () { if (opener) opener.focus(); });
   });
 
-  // 100X Meter on startup pages: animate the gauge in, then one tap per reader per day.
+  // 100X Meter: gauge, one tap per reader per day, the tap moment, level messages,
+  // and "Your 100X list" + streak kept only in this browser (localStorage, every call guarded).
+  var RM = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var meterDay = new Date().toDateString();
+  var ymd = function (d) { d = d || new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); };
+  var lsGet = function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } };
+  var lsSet = function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} };
+  var mine = function () { try { return JSON.parse(lsGet('xf_100x')) || {}; } catch (e) { return {}; } };
+  var esc = function (v) { return String(v).replace(/[&<>"']/g, function (c) { return '&#' + c.charCodeAt(0) + ';'; }); };
+  var lvlMsg = function (n) {
+    return n >= 100 ? 'Breakout. Readers pushed this one all the way.' : n >= 50 ? 'Half way to 100X. The crowd is noticing.'
+      : n >= 25 ? 'Picking up steam. Thanks for the push.' : n >= 10 ? 'Momentum building. Your tap counts.' : 'You’re early. First believers matter most.';
+  };
+  var remember = function (id, slug, name, lvl) {
+    var o = mine(), e = o[id] || { s: slug, n: name, l: lvl, d: [] }, t = ymd();
+    if (e.d.indexOf(t) < 0) e.d = e.d.concat(t).slice(-60);
+    o[id] = e; lsSet('xf_100x', JSON.stringify(o)); lsSet('xf_meter_' + id, meterDay);
+  };
+  // Startups backed in the last 7 days, and consecutive days (ending today or yesterday) with a tap.
+  var stats = function (o) {
+    var days = {}, wk = 0, from = ymd(new Date(Date.now() - 6 * 864e5)), k, n = 0, d = new Date();
+    for (k in o) { o[k].d.forEach(function (x) { days[x] = 1; }); if (o[k].d.some(function (x) { return x >= from; })) wk++; }
+    if (!days[ymd(d)]) d.setDate(d.getDate() - 1);
+    while (days[ymd(d)]) { n++; d.setDate(d.getDate() - 1); }
+    return { wk: wk, streak: n, all: Object.keys(o).length };
+  };
+  var sumLine = function (s) {
+    return (s.wk ? 'You’ve backed ' + s.wk + ' startup' + (s.wk > 1 ? 's' : '') + ' this week' : 'Your 100X list') + (s.streak > 1 ? ' · 🔥 ' + s.streak + '-day streak' : '');
+  };
+  var post = function (url, id, t, hp) {
+    return fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: +id, t: t, website: hp || '' }) }).then(function (r) { return r.json(); });
+  };
   var meterSet = function (m, n) {
     var arc = m.querySelector('.xf-meter__arc'), needle = m.querySelector('.xf-meter__needle');
     if (arc) arc.setAttribute('stroke-dasharray', n + ' 100');
     if (needle) needle.style.transform = 'rotate(' + (-90 + 1.8 * n) + 'deg)';
   };
-  var meterDay = new Date().toDateString();
+  var countUp = function (el, to) {
+    var from = +el.textContent || 0, t0 = performance.now();
+    if (RM || from === to) { el.textContent = to; return; }
+    (function step(t) { var p = Math.min(1, (t - t0) / 900); el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); })(t0);
+  };
+  // A short burst of gradient sparks off the end of the arc.
+  var sparks = function (m, n) {
+    var g = m.querySelector('.xf-meter__gauge svg');
+    if (RM || !g) return;
+    var r = g.getBoundingClientRect(), P = 30, k = r.width / 260, q = window.devicePixelRatio || 1, c = document.createElement('canvas'), x = c.getContext('2d'), a = Math.PI * (1 - n / 100), ps = [], f = 0, i, th, v;
+    c.className = 'xf-meter__fx'; c.width = (r.width + 2 * P) * q; c.height = (r.height + 2 * P) * q; c.style.width = r.width + 2 * P + 'px'; c.style.height = r.height + 2 * P + 'px';
+    g.parentNode.appendChild(c); x.scale(q, q);
+    for (i = 0; i < 24; i++) { th = Math.random() * 6.283; v = 1 + Math.random() * 3; ps.push([P + (130 + 110 * Math.cos(a)) * k, P + (130 - 110 * Math.sin(a)) * k, Math.cos(th) * v, Math.sin(th) * v - 1.6, ['#7c5cff', '#b07cff', '#ff6ad5', '#6a7bff', '#fff'][i % 5]]); }
+    (function tick() {
+      x.clearRect(0, 0, c.width, c.height); x.globalAlpha = 1 - f / 42;
+      ps.forEach(function (p) { p[0] += p[2]; p[1] += p[3]; p[3] += 0.12; x.fillStyle = p[4]; x.beginPath(); x.arc(p[0], p[1], 2.2, 0, 6.283); x.fill(); });
+      if (++f < 42) requestAnimationFrame(tick); else c.remove();
+    })();
+  };
   document.querySelectorAll('[data-meter]').forEach(function (m) {
-    var arc = m.querySelector('.xf-meter__arc');
+    var id = m.getAttribute('data-meter'), arc = m.querySelector('.xf-meter__arc'), btn = m.querySelector('[data-meter-tap]'), msg = m.querySelector('[data-meter-msg]'), lvlEl = m.querySelector('[data-meter-level]'), mineEl = m.querySelector('[data-meter-mine]');
     requestAnimationFrame(function () { requestAnimationFrame(function () { meterSet(m, arc ? +arc.getAttribute('data-to') : 0); }); });
-    var btn = m.querySelector('[data-meter-tap]');
-    try { if (btn && localStorage.getItem('xf_meter_' + m.getAttribute('data-meter')) === meterDay) { btn.disabled = true; btn.lastChild.textContent = 'Counted today'; } } catch (err) {}
+    var showMine = function () { var s = stats(mine()); if (mineEl && s.all) { mineEl.textContent = sumLine(s) + ' →'; mineEl.hidden = false; } };
+    var counted = function () { if (btn) { btn.disabled = true; btn.lastChild.textContent = 'Counted today'; } };
+    showMine();
+    if (lsGet('xf_meter_' + id) === meterDay) { counted(); if (msg) msg.textContent = lvlMsg(+lvlEl.textContent); }
     if (!btn) return;
     btn.addEventListener('click', function () {
-      var msg = m.querySelector('[data-meter-msg]'), hp = m.querySelector('.xf-hp');
+      var hp = m.querySelector('.xf-hp');
       btn.disabled = true;
-      var done = function () { btn.lastChild.textContent = 'Counted today'; var bd = m.querySelector('[data-meter-badge]'); if (bd) bd.src = bd.src.replace(/([?&]v=)\d*/, '$1' + Date.now()); try { localStorage.setItem('xf_meter_' + m.getAttribute('data-meter'), meterDay); } catch (err) {} };
-      fetch(m.getAttribute('data-endpoint'), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: +m.getAttribute('data-meter'), t: m.getAttribute('data-t'), website: hp ? hp.value : '' }) })
-        .then(function (r) { return r.json(); })
-        .then(function (d) {
-          var info = d && d.data && d.data.level !== undefined ? d.data : d;
-          if (info && typeof info.level === 'number') {
-            m.querySelector('[data-meter-level]').textContent = info.level;
-            m.querySelector('[data-meter-taps]').textContent = info.taps_30d;
-            meterSet(m, info.level);
-          }
-          if (d && typeof d.level === 'number') { done(); if (msg) msg.textContent = 'Thanks! Your tap is counted. Come back tomorrow to push it again.'; }
-          else if (d && d.code === 'already') { done(); if (msg) msg.textContent = d.message; }
-          else { btn.disabled = false; if (msg) msg.textContent = (d && d.message) || 'Could not save that. Please try again.'; }
-        })
-        .catch(function () { btn.disabled = false; if (msg) msg.textContent = 'Could not save that. Please try again.'; });
+      post(m.getAttribute('data-endpoint'), id, m.getAttribute('data-t'), hp && hp.value).then(function (d) {
+        var info = d && d.data && d.data.level !== undefined ? d.data : d, st = m.querySelector('[data-meter-stage]');
+        if (info && typeof info.level === 'number') {
+          countUp(lvlEl, info.level);
+          var tp = m.querySelector('[data-meter-taps]'); tp.textContent = info.taps_30d; tp.nextSibling.textContent = (info.taps_30d === 1 ? ' tap' : ' taps') + ' \u00b7 30 days';
+          meterSet(m, info.level);
+          if (st && info.stage) st.textContent = info.stage;
+        }
+        if (d && typeof d.level === 'number') {
+          m.classList.add('xf-meter--pop'); sparks(m, d.level);
+          if (navigator.vibrate) navigator.vibrate(12);
+          remember(id, m.getAttribute('data-slug'), m.getAttribute('data-name'), d.level);
+          var bd = m.querySelector('[data-meter-badge]'); if (bd) bd.src = bd.src.replace(/([?&]v=)\d*/, '$1' + Date.now());
+          counted(); showMine(); if (msg) msg.textContent = lvlMsg(d.level);
+        } else if (d && d.code === 'already') { lsSet('xf_meter_' + id, meterDay); counted(); if (msg) msg.textContent = d.message; }
+        else { btn.disabled = false; if (msg) msg.textContent = (d && d.message) || 'Could not save that. Please try again.'; }
+      }).catch(function () { btn.disabled = false; if (msg) msg.textContent = 'Could not save that. Please try again.'; });
+    });
+  });
+
+  // Leaderboard: tap straight from a row, and "Load more".
+  document.querySelectorAll('[data-lb]').forEach(function (lb) {
+    var note = lb.querySelector('[data-lb-msg]'), more = lb.querySelector('[data-lb-more]');
+    var mark = function () { lb.querySelectorAll('[data-lb-id]').forEach(function (r) { if (lsGet('xf_meter_' + r.getAttribute('data-lb-id')) === meterDay) { var b = r.querySelector('[data-lb-tap]'); b.disabled = true; b.classList.add('done'); } }); };
+    mark();
+    lb.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-lb-tap]'), r = b && b.closest('[data-lb-id]'), id;
+      if (!r) return;
+      id = r.getAttribute('data-lb-id'); b.disabled = true;
+      post(lb.getAttribute('data-endpoint'), id, r.getAttribute('data-t')).then(function (d) {
+        var ok = d && typeof d.level === 'number', info = ok ? d : d && d.data;
+        if (info && typeof info.level === 'number') { countUp(r.querySelector('[data-lb-level]'), info.level); r.querySelector('[data-lb-bar]').style.width = info.level + '%'; if (info.stage) r.querySelector('[data-lb-stage]').textContent = info.stage; }
+        if (ok) { remember(id, r.getAttribute('data-slug'), r.getAttribute('data-name'), d.level); b.classList.add('done'); if (navigator.vibrate) navigator.vibrate(12); }
+        else if (d && d.code === 'already') { lsSet('xf_meter_' + id, meterDay); b.classList.add('done'); } else b.disabled = false;
+        if (note) note.textContent = ok ? r.getAttribute('data-name') + ': ' + lvlMsg(d.level) : (d && d.message) || 'Could not save that. Please try again.';
+      }).catch(function () { b.disabled = false; });
+    });
+    if (more) more.addEventListener('click', function () {
+      more.disabled = true;
+      fetch(more.getAttribute('data-src') + '&offset=' + more.getAttribute('data-offset')).then(function (r) { return r.json(); }).then(function (d) {
+        lb.querySelector('[data-lb-list]').insertAdjacentHTML('beforeend', d.html || '');
+        more.setAttribute('data-offset', lb.querySelectorAll('[data-lb-id]').length); more.disabled = false; more.hidden = !d.more; mark();
+      }).catch(function () { more.disabled = false; });
+    });
+  });
+
+  // /my-100x/: the browser's own list, with today's levels and milestones crossed since backing.
+  document.querySelectorAll('[data-my100x]').forEach(function (box) {
+    var o = mine(), ids = Object.keys(o), s = stats(o), sum = document.querySelector('[data-my100x-sum]');
+    if (!ids.length) { box.querySelector('[data-my100x-empty]').hidden = false; return; }
+    if (sum) sum.textContent = ids.length + ' startup' + (ids.length > 1 ? 's' : '') + ' backed' + (s.wk ? ' · ' + s.wk + ' this week' : '') + (s.streak > 1 ? ' · 🔥 ' + s.streak + '-day streak' : '');
+    ids.sort(function (a, b) { return o[b].d[o[b].d.length - 1] > o[a].d[o[a].d.length - 1] ? 1 : -1; });
+    fetch(box.getAttribute('data-endpoint') + '?ids=' + ids.slice(0, 50).join(',')).then(function (r) { return r.json(); }).catch(function () { return {}; }).then(function (lv) {
+      var rows = '', notes = '';
+      ids.forEach(function (id) {
+        var e = o[id], v = lv[id], n = v ? v.level : null, ms = [100, 50, 25, 10].filter(function (x) { return n !== null && e.l < x && n >= x; })[0];
+        if (ms) notes += '<li>' + esc(v.name) + ' crossed ' + ms + 'X since you backed it. You were early.</li>';
+        rows += '<li class="xf-lb__row"><span class="xf-lb__rank mono">' + e.d.length + '×</span><a class="xf-lb__who" href="' + esc(v ? v.url : '/?s=' + encodeURIComponent(e.n)) + '"><span class="xf-lb__name"><b>' + esc(v ? v.name : e.n) + '</b><small>Last backed ' + esc(e.d[e.d.length - 1]) + '</small></span></a>'
+          + (v ? '<span class="xf-stage">' + esc(v.stage) + '</span><span class="xf-lb__bar"><span style="width:' + n + '%"></span></span><span class="xf-lb__lvl mono">' + n + 'X</span>' : '<span class="xf-lb__lvl mono">—</span>') + '</li>';
+      });
+      box.querySelector('[data-my100x-notes]').innerHTML = notes;
+      box.querySelector('[data-my100x-list]').innerHTML = rows;
     });
   });
 

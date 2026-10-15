@@ -65,7 +65,7 @@ $img = function ($file) { return function_exists('xf_brand_asset') ? xf_brand_as
         <p>Take the quiz again every month or so. A rising score is a simple record that the work is paying off, and a falling one is an early warning. You can download your result as a score card sized for Instagram and LinkedIn, or share a link on WhatsApp, X or LinkedIn so co-founders and mentors can take it too.</p>
 
         <h2>Where the meter on startup pages fits in</h2>
-        <p>Every startup listed on 100xFounder also has a 100X Meter on its page. That one works differently: readers push it up with one tap a day, so it shows how much buzz a launch has with our readers this month. It isn’t a rating. Star ratings on those pages come only from visitors’ own votes. Founders can embed their meter on their own site with a small badge that links back to their listing.</p>
+        <p>Every startup listed on 100xFounder also has a 100X Meter on its page. That one works differently: readers push it up with one tap a day, so it shows how much buzz a launch has with our readers this month. It isn’t a rating. Star ratings on those pages come only from visitors’ own votes. Founders can embed their meter on their own site with a small badge that links back to their listing. Read <a href="<?php echo esc_url(home_url('/100x-meter/')); ?>">What is the 100X Meter?</a> for how taps and stages work, or see who readers are backing on the <a href="<?php echo esc_url(home_url('/leaderboard/')); ?>">startup leaderboard</a>.</p>
 
         <h2>FAQ</h2>
         <h3>Is the 100X score free?</h3>

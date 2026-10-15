@@ -31,7 +31,7 @@ function xf_startup_card($post_id) {
         $badge,
         $spot,
         function_exists('xf_shark_tank_badge') ? xf_shark_tank_badge($post_id) : '',
-        ($taps = (int) get_post_meta($post_id, '_xf_meter_30d', true)) && function_exists('xf_meter_level') ? '<span class="xf-badge xf-badge--accent">⚡ ' . xf_meter_level($taps) . 'X</span>' : ''
+        ($taps = (int) get_post_meta($post_id, '_xf_meter_30d', true)) && function_exists('xf_meter_level') ? '<span class="xf-badge xf-badge--accent xf-chip-stage" data-stage="' . esc_attr(xf_meter_stage(xf_meter_level($taps))) . '" title="100X Meter · ' . esc_attr(xf_meter_stage(xf_meter_level($taps))) . ' stage">⚡ ' . xf_meter_level($taps) . 'X</span>' : ''
     );
 }
 

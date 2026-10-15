@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('XFT_VERSION', '2.6.2');
+define('XFT_VERSION', '2.7.3');
 
 require_once __DIR__ . '/inc-tabs.php';
 
@@ -211,6 +211,7 @@ function xft_nav_items() {
         $items[] = ['label' => 'Jobs', 'url' => home_url('/jobs/')];
     }
     $items[] = ['label' => 'Startups', 'url' => xft_page_url('directory', 'startups')];
+    $items[] = ['label' => 'Leaderboard', 'url' => home_url('/leaderboard/')];
     $items[] = ['label' => 'Blog', 'url' => xft_page_url('blog', 'blog')];
     return $items;
 }

@@ -40,6 +40,12 @@ function xf_meter_level($taps30) {
     return (int) min(100, round(100 * log(1 + $taps30) / log(1 + XF_METER_FULL)));
 }
 
+/** The quiz's bands (tools.js quizBand), so a listing and a founder's own score speak the same language. */
+function xf_meter_stage($level) {
+    $level = (int) $level;
+    return $level < 30 ? 'Early' : ($level < 60 ? 'Traction' : ($level < 85 ? 'Scaling' : 'Breakout'));
+}
+
 /** Recounts one startup's cached tap totals from the table. */
 function xf_meter_refresh($post_id) {
     global $wpdb;
@@ -86,6 +92,16 @@ add_action('rest_api_init', function () {
         'permission_callback' => '__return_true',
         'callback' => 'xf_meter_badge',
     ]);
+    register_rest_route('xf/v1', '/meter-levels', [
+        'methods' => 'GET',
+        'permission_callback' => '__return_true',
+        'callback' => 'xf_meter_levels',
+    ]);
+    register_rest_route('xf/v1', '/leaderboard', [
+        'methods' => 'GET',
+        'permission_callback' => '__return_true',
+        'callback' => 'xf_meter_board_rest',
+    ]);
     register_rest_route('xf/v1', '/score-report', [
         'methods' => 'POST',
         'permission_callback' => '__return_true',
@@ -112,6 +128,7 @@ function xf_meter_tap(WP_REST_Request $r) {
     if (xf_rate_limited('meter', 60, HOUR_IN_SECONDS)) {
         return new WP_Error('slow_down', 'Too many taps from this connection. Try again later.', ['status' => 429]);
     }
+    $old_level = xf_meter_level(get_post_meta($id, '_xf_meter_30d', true));
     $added = $wpdb->query($wpdb->prepare(
         'INSERT IGNORE INTO ' . xf_table('meter_votes') . ' (post_id, voter, day, created_at) VALUES (%d, %s, %s, %s)',
         $id, xf_rating_voter(), wp_date('Y-m-d'), xf_now()
@@ -126,7 +143,30 @@ function xf_meter_tap(WP_REST_Request $r) {
     if (!$added) {
         return new WP_Error('already', 'You already 100X’d this today. Come back tomorrow.', ['status' => 409, 'level' => xf_meter_level($taps), 'taps_30d' => $taps]);
     }
-    return rest_ensure_response(['level' => xf_meter_level($taps), 'taps_30d' => $taps]);
+    $level = xf_meter_level($taps);
+    do_action('xf_meter_tapped', $id, $old_level, $level, $taps);
+    return rest_ensure_response(['level' => $level, 'taps_30d' => $taps, 'stage' => xf_meter_stage($level)]);
+}
+
+/** Public, read-only: current level for up to 50 startups (the /my-100x/ list). */
+function xf_meter_levels(WP_REST_Request $r) {
+    $ids = array_slice(array_unique(array_filter(array_map('intval', explode(',', (string) $r->get_param('ids'))))), 0, 50);
+    sort($ids);
+    $key = 'xf_meter_lv_' . md5(implode(',', $ids));
+    $out = get_transient($key);
+    if (!is_array($out)) {
+        $out = [];
+        foreach ($ids as $id) {
+            if (get_post_type($id) === 'xf_startup' && get_post_status($id) === 'publish') {
+                $level = xf_meter_level(get_post_meta($id, '_xf_meter_30d', true));
+                $out[$id] = ['level' => $level, 'stage' => xf_meter_stage($level), 'name' => html_entity_decode(wp_strip_all_tags(get_the_title($id)), ENT_QUOTES, 'UTF-8'), 'url' => get_permalink($id)];
+            }
+        }
+        set_transient($key, $out, 5 * MINUTE_IN_SECONDS);
+    }
+    $res = rest_ensure_response((object) $out);
+    $res->header('Cache-Control', 'public, max-age=300');
+    return $res;
 }
 
 function xf_meter_badge(WP_REST_Request $r) {
@@ -188,7 +228,7 @@ function xf_meter_html($id) {
     $team = current_user_can('edit_posts');
     ob_start();
     ?>
-    <section class="xf-meter" aria-label="100X Meter" data-meter="<?php echo (int) $id; ?>" data-endpoint="<?php echo esc_url(rest_url('xf/v1/meter')); ?>" data-t="<?php echo esc_attr(xf_rating_token($url)); ?>">
+    <section class="xf-meter" aria-label="100X Meter" data-meter="<?php echo (int) $id; ?>" data-name="<?php echo esc_attr($name); ?>" data-slug="<?php echo esc_attr(get_post_field('post_name', $id)); ?>" data-endpoint="<?php echo esc_url(rest_url('xf/v1/meter')); ?>" data-t="<?php echo esc_attr(xf_rating_token($url)); ?>">
         <div class="xf-meter__gauge">
             <?php echo xf_meter_gauge_svg($level); // phpcs:ignore -- built from an integer ?>
             <div class="xf-meter__read" aria-live="polite">
@@ -198,7 +238,7 @@ function xf_meter_html($id) {
             <span class="xf-meter__scale" aria-hidden="true"><span>0</span><span>100X</span></span>
         </div>
         <div class="xf-meter__side">
-            <p class="xf-meter__eyebrow">100X Meter</p>
+            <p class="xf-meter__eyebrow">100X Meter <span class="xf-stage" data-meter-stage><?php echo esc_html(xf_meter_stage($level)); ?></span></p>
             <h3 class="xf-meter__title">Think <?php echo esc_html($name); ?> could go 100X?</h3>
             <p class="xf-meter__note" data-meter-msg>Give it a push. One tap per reader each day; the meter tracks buzz here, not quality.</p>
             <button type="button" class="xf-meter__btn" data-meter-tap<?php echo $team ? ' disabled title="Taps from the team are not counted"' : ''; ?>><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span>100X it</span></button>
@@ -212,7 +252,9 @@ function xf_meter_html($id) {
                 <img src="<?php echo esc_url(add_query_arg('v', $taps, $badge)); ?>" alt="<?php echo esc_attr($name); ?> 100X Meter badge" width="168" height="28" loading="lazy" data-meter-badge>
                 <button type="button" class="xf-meter__link" data-copy-link="<?php echo esc_attr($snippet); ?>">Copy badge code</button>
             </span>
+            <a class="xf-meter__link" href="<?php echo esc_url(home_url('/100x-meter/')); ?>">What's this?</a>
             <a class="xf-meter__link" href="<?php echo esc_url(home_url('/tools/startup-100x-score/')); ?>">Founder? Score your startup →</a>
+            <a class="xf-meter__mine" href="<?php echo esc_url(home_url('/my-100x/')); ?>" data-meter-mine hidden></a>
         </footer>
     </section>
     <?php
@@ -234,7 +276,7 @@ function xf_meter_leaderboard_html() {
     ob_start();
     ?>
     <section class="wrap" style="padding-top:88px">
-        <div class="sh"><h2>100X this week</h2><span class="k">Reader taps · 7 days</span></div>
+        <div class="sh"><h2>100X this week</h2><a class="k u" href="<?php echo esc_url(home_url('/leaderboard/')); ?>">Full leaderboard →</a></div>
         <div class="xf-board">
             <?php foreach ($ids as $i => $sid) :
                 $level = xf_meter_level(get_post_meta($sid, '_xf_meter_30d', true));
@@ -325,7 +367,164 @@ function xf_score_report(WP_REST_Request $r) {
     return ['ok' => true];
 }
 
+/* ---- Weekly snapshot: the leaderboard's ▲/▼ is the level change since the week began ---- */
+
+add_action('xf_index_control_hourly', function () {
+    $week = wp_date('o-W');
+    if (get_option('xf_meter_snap_week') === $week) {
+        return;
+    }
+    update_option('xf_meter_snap_week', $week, false);
+    $ids = get_posts(['post_type' => 'xf_startup', 'post_status' => 'publish', 'posts_per_page' => -1, 'fields' => 'ids', 'no_found_rows' => true, 'meta_key' => '_xf_meter_total', 'meta_compare' => 'EXISTS']);
+    foreach ($ids as $id) {
+        update_post_meta($id, '_xf_meter_prev', xf_meter_level(get_post_meta($id, '_xf_meter_30d', true)));
+    }
+}, 20);
+
+/* ---- /leaderboard/ ---- */
+
+/** Tab => [label, meta key ranked by, what the number means]. Launch day is Product Hunt's count, not ours. */
+function xf_meter_board_tabs() {
+    return [
+        'week' => ['This week', '_xf_meter_7d', 'taps this week'],
+        'month' => ['This month', '_xf_meter_30d', 'taps · 30 days'],
+        'all' => ['All time', '_xf_meter_total', 'taps all time'],
+        'launch' => ['Launch day', '_xf_votes', 'Product Hunt votes'],
+    ];
+}
+
+/** [tab, industry slug] from the request, both validated. */
+function xf_meter_board_args($src = null) {
+    $src = $src ?? $_GET; // phpcs:ignore WordPress.Security.NonceVerification -- read-only filters
+    $tab = sanitize_key((string) ($src['tab'] ?? 'week'));
+    $tab = isset(xf_meter_board_tabs()[$tab]) ? $tab : 'week';
+    $ind = sanitize_title((string) ($src['industry'] ?? ''));
+    return [$tab, $ind && term_exists($ind, 'xf_industry') ? $ind : ''];
+}
+
+/** Ranked startup ids (value > 0 only, nothing seeded) and whether more follow. */
+function xf_meter_board_ids($tab, $industry = '', $offset = 0, $limit = 25) {
+    $key = xf_meter_board_tabs()[$tab][1];
+    $args = [
+        'post_type' => 'xf_startup', 'post_status' => 'publish', 'fields' => 'ids', 'no_found_rows' => true,
+        'posts_per_page' => $limit + 1, 'offset' => max(0, (int) $offset),
+        'meta_key' => $key, 'orderby' => ['meta_value_num' => 'DESC', 'date' => 'DESC'],
+        'meta_query' => [['key' => $key, 'value' => 0, 'compare' => '>', 'type' => 'NUMERIC']],
+    ];
+    if ($industry) {
+        $args['tax_query'] = [['taxonomy' => 'xf_industry', 'field' => 'slug', 'terms' => $industry]];
+    }
+    $ids = get_posts($args);
+    return [array_slice($ids, 0, $limit), count($ids) > $limit];
+}
+
+/** Industries that have at least one startup ranked on this tab. */
+function xf_meter_board_industries($tab) {
+    $ids = xf_meter_board_ids($tab, '', 0, 500)[0];
+    if (!$ids) {
+        return [];
+    }
+    $terms = wp_get_object_terms($ids, 'xf_industry', ['orderby' => 'count', 'order' => 'DESC']);
+    return is_wp_error($terms) ? [] : $terms;
+}
+
+function xf_meter_board_row($id, $rank, $tab) {
+    $level = xf_meter_level(get_post_meta($id, '_xf_meter_30d', true));
+    $tabs = xf_meter_board_tabs();
+    $value = (int) get_post_meta($id, $tabs[$tab][1], true);
+    $prev = get_post_meta($id, '_xf_meter_prev', true);
+    $delta = $prev === '' ? 0 : $level - (int) $prev;
+    $url = get_permalink($id);
+    $name = get_the_title($id);
+    $team = current_user_can('edit_posts');
+    ob_start();
+    ?>
+    <li class="xf-lb__row<?php echo $rank <= 3 ? ' xf-lb__row--top' : ''; ?>" data-lb-id="<?php echo (int) $id; ?>" data-name="<?php echo esc_attr($name); ?>" data-slug="<?php echo esc_attr(get_post_field('post_name', $id)); ?>" data-t="<?php echo esc_attr(xf_rating_token($url)); ?>">
+        <span class="xf-lb__rank mono"><?php echo esc_html(str_pad((string) $rank, 2, '0', STR_PAD_LEFT)); ?></span>
+        <a class="xf-lb__who" href="<?php echo esc_url($url); ?>">
+            <?php echo xf_startup_logo_html($id, 40); // phpcs:ignore -- escaped inside ?>
+            <span class="xf-lb__name"><b><?php echo esc_html($name); ?></b><small><?php echo esc_html(wp_trim_words((string) get_post_meta($id, '_xf_tagline', true), 12)); ?></small></span>
+        </a>
+        <span class="xf-stage" data-lb-stage><?php echo esc_html(xf_meter_stage($level)); ?></span>
+        <span class="xf-lb__bar" aria-hidden="true"><span data-lb-bar style="width:<?php echo (int) $level; ?>%"></span></span>
+        <?php if ($tab === 'launch') : // Product Hunt's count leads here; our meter level is secondary. ?>
+            <span class="xf-lb__lvl mono"><?php echo esc_html(number_format_i18n($value)); ?><small>PH votes · <span data-lb-level><?php echo (int) $level; ?></span>X meter</small></span>
+        <?php else : ?>
+            <span class="xf-lb__lvl mono"><span data-lb-level><?php echo (int) $level; ?></span>X<?php if ($delta) : ?> <em class="<?php echo $delta > 0 ? 'up' : 'dn'; ?>" title="Change since last week"><?php echo esc_html(($delta > 0 ? '▲' : '▼') . abs($delta)); ?></em><?php endif; ?><small><?php echo esc_html(number_format_i18n($value) . ' ' . $tabs[$tab][2]); ?></small></span>
+        <?php endif; ?>
+        <button type="button" class="xf-lb__tap" data-lb-tap aria-label="<?php echo esc_attr('100X ' . $name); ?>"<?php echo $team ? ' disabled title="Taps from the team are not counted"' : ''; ?>><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></button>
+    </li>
+    <?php
+    return ob_get_clean();
+}
+
+/** Rows HTML for a slice; rank continues from the offset. */
+function xf_meter_board_rows($ids, $offset, $tab) {
+    $html = '';
+    foreach ($ids as $i => $id) {
+        $html .= xf_meter_board_row($id, $offset + $i + 1, $tab);
+    }
+    return $html;
+}
+
+function xf_meter_board_rest(WP_REST_Request $r) {
+    [$tab, $ind] = xf_meter_board_args($r->get_params());
+    $offset = max(0, min(1000, (int) $r->get_param('offset')));
+    [$ids, $more] = xf_meter_board_ids($tab, $ind, $offset);
+    $res = rest_ensure_response(['html' => xf_meter_board_rows($ids, $offset, $tab), 'more' => $more]);
+    $res->header('Cache-Control', 'public, max-age=300');
+    return $res;
+}
+
+/* ---- Pages: /100x-meter/ (explainer), /leaderboard/, /my-100x/ (private, browser-only list) ---- */
+
+add_action('init', function () {
+    if (get_option('xf_meter_pages') === '2' || (function_exists('xf_mutex_acquire') && !xf_mutex_acquire('meter_pages', 60))) {
+        return;
+    }
+    $pages = [
+        '100x-meter' => ['What is the 100X Meter?', 'How the 100X Meter on 100xFounder works: one tap a day per reader, the four stages, why it measures buzz and not quality, and how founders embed the badge.'],
+        'leaderboard' => ['Startup Leaderboard', 'The startups 100xFounder readers are backing this week, this month and all time on the 100X Meter, plus Product Hunt launch-day votes.'],
+        'my-100x' => ['Your 100X list', 'The startups you backed on the 100X Meter, kept only in this browser.'],
+    ];
+    foreach ($pages as $slug => [$title, $excerpt]) {
+        if (!get_page_by_path($slug)) {
+            wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => $title, 'post_name' => $slug, 'post_excerpt' => $excerpt, 'post_content' => '']);
+        }
+    }
+    update_option('xf_meter_pages', '2');
+}, 30);
+
+function xf_meter_is_private_page() {
+    return is_page('my-100x');
+}
+
+/** Leaderboard views with a tab or industry, and the private list, are noindex. Registered late so it runs after indexing.php's "index everything". */
+add_action('wp', function () {
+    add_filter('wp_robots', function ($robots) {
+        // phpcs:ignore WordPress.Security.NonceVerification -- read-only
+        if (xf_meter_is_private_page() || (is_page('leaderboard') && (isset($_GET['tab']) || isset($_GET['industry'])))) {
+            unset($robots['index'], $robots['max-image-preview']);
+            $robots['noindex'] = true;
+            $robots['follow'] = true;
+        }
+        return $robots;
+    }, PHP_INT_MAX);
+});
+
+add_filter('xf_page_allows_ads', function ($ok) {
+    return xf_meter_is_private_page() ? false : $ok;
+});
+
+add_filter('wp_sitemaps_posts_query_args', function ($args, $post_type) {
+    if ($post_type === 'page' && ($p = get_page_by_path('my-100x'))) {
+        $args['post__not_in'] = array_merge((array) ($args['post__not_in'] ?? []), [$p->ID]);
+    }
+    return $args;
+}, 10, 2);
+
 /* Self-check (WP_DEBUG only): the log scale's fixed points. */
 if (defined('WP_DEBUG') && WP_DEBUG) {
+    assert(xf_meter_stage(29) === 'Early' && xf_meter_stage(30) === 'Traction' && xf_meter_stage(85) === 'Breakout');
     assert(xf_meter_level(0) === 0 && xf_meter_level(1) === 11 && xf_meter_level(500) === 100 && xf_meter_level(5000) === 100);
 }

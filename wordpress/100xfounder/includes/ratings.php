@@ -52,7 +52,7 @@ function xf_ratings_install() {
 
 /** The address a rating belongs to: the page's canonical URL, or '' when the page takes no ratings. */
 function xf_rating_page_url() {
-    if (is_admin() || is_404() || is_search() || is_feed() || is_preview() || is_customize_preview()) {
+    if (is_admin() || is_404() || is_search() || is_feed() || is_preview() || is_customize_preview() || is_page('my-100x')) { // my-100x: a private, browser-only list
         return '';
     }
     $pages = get_option('xf_pages', []);
