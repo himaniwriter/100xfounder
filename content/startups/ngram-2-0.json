@@ -1,0 +1,311 @@
+{
+ "slug": "ngram-2-0",
+ "excerpt": "ngram is an AI video agent that turns a brief, documents or a screen recording into a narrated explainer, product demo or avatar video, with a plan you approve first. What's new in 2.0, credit pricing, alternatives.",
+ "content": "<p>ngram is an AI video tool for product, marketing and training teams. You describe the video you need, who it's for and the tone, or give it source material such as release notes, documents, web pages or a screen recording. ngram proposes a script and a production plan, and nothing is generated until you approve it. It then builds the video with narration, animated scenes, captions in your brand colours and, if you want one, an AI avatar presenter. You can change things by asking in chat, or edit scenes, text, music and captions on a timeline.</p><p>Version 2.0, launched on Product Hunt on 12 October 2026, centres on that brief-to-video flow: a plan you can approve or send back, source files as input, duration and format chosen at the start, saved earlier versions, a preview before the final MP4, a Chrome extension to start a brief from any web page, and a choice of AI model per video with its credit cost shown up front. ngram also analyses uploaded screen recordings to find the key moments for product walkthroughs. Exports are MP4 in 16:9, 9:16 or 1:1, and videos can be shared by link or embedded.</p><p>The launch finished #2 for the day on Product Hunt with 261 upvotes and 42 comments. ngram's team on Product Hunt includes Rishikesh Ranjan and Anish Muppalaneni.</p><p><em>We have not tested ngram ourselves. This page brings together its official site, its v2 feature page, pricing and terms, its Product Hunt page and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI video",
+  "platform": "Web app with Chrome extension",
+  "os": "Browser; Chrome extension and screen recorder available",
+  "starts_at": "Free (600 one-time credits); paid from $29/month",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "AI video agent that turns briefs, documents and screen recordings into narrated explainers and demos",
+  "maker": {
+   "name": "Rishikesh Ranjan",
+   "url": "https://www.producthunt.com/@ranjanrishikesh"
+  },
+  "team": [
+   {
+    "name": "Rishikesh Ranjan",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@ranjanrishikesh"
+   },
+   {
+    "name": "Anish Muppalaneni",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@anish_m"
+   }
+  ],
+  "ph": {
+   "rank": 2,
+   "votes": 261,
+   "comments": 42,
+   "followers": 499,
+   "launched": "2026-10-12",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Turning release notes or a changelog into a short product-update video",
+   "Making an onboarding or training video from a slide deck or documentation",
+   "Turning a screen recording into a narrated product walkthrough",
+   "Explaining a research paper's main findings on video",
+   "Sales and social clips in vertical or square formats"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Rishikesh Ranjan's pinned launch comment starts from a simple observation: a research paper, a slide deck or a product guide can hold everything someone needs to learn a topic, but turning it into a video still takes a separate round of scripting, recording and editing.",
+    "With ngram you bring the material, say who the video is for and choose how much detail to cover, and it writes the script and narration and builds animated scenes; the material and the depth you pick set the video's length. In the comments he added that a GitHub integration is coming to turn each pull request into a short explainer of what changed, starting with internal teams."
+   ],
+   "attribution": "Rishikesh Ranjan, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/ngram?comment=5912869"
+  },
+  "audience": {
+   "fit": [
+    "make product demos, onboarding, training or changelog videos without editing skills",
+    "want to review a script and plan before any credits are spent on generation",
+    "need on-brand output with your colours, fonts and logo"
+   ],
+   "not_fit": [
+    "need long videos on a free plan: Free includes up to 60 seconds of premium AI generation",
+    "want videos to update themselves when your product UI changes: today you upload a new recording",
+    "need published security certifications (none are stated)"
+   ]
+  },
+  "pricing": {
+   "intro": "ngram's plans give monthly credits shared across AI actions, in dollars. Annual billing is 20% off.",
+   "url": "https://www.ngram.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "600 one-time credits, up to 60 seconds of premium AI generation, 720p, unlimited exports and manual edits, 1 user"
+    },
+    {
+     "name": "Basic",
+     "price": "$29/month ($23.20/month billed yearly)",
+     "amount": 29,
+     "currency": "USD",
+     "detail": "3,000 credits a month, up to 300 seconds of premium AI a month, 720p, standard models"
+    },
+    {
+     "name": "Premium",
+     "price": "$59/month ($47.20/month billed yearly)",
+     "amount": 59,
+     "currency": "USD",
+     "detail": "10,000 credits a month, up to 1,000 seconds, 1080p, all advanced models; credits roll over one cycle"
+    },
+    {
+     "name": "Ultimate",
+     "price": "$299/month ($239.20/month billed yearly)",
+     "amount": 299,
+     "currency": "USD",
+     "detail": "50,000 credits a month, up to 5,000 seconds, 4K, unlimited brand kits, voices, avatars and teammates"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "currency": "USD",
+     "detail": "Organisation-wide security and controls"
+    }
+   ],
+   "notes": [
+    "Agentic editing costs 1 credit per second; AI video generation from 10 credits per second. The \"seconds\" are premium AI footage, not the final video length.",
+    "Extra credits: 1,000 for $40 on Free, $20 on Basic, $15 on Premium, $10 on Ultimate.",
+    "Refunds are pro-rated by the credits left unused in the current billing period; add-on and used credits are non-refundable (terms, section 8).",
+    "The pricing page is inconsistent about whether Basic credits roll over; its FAQ says they refresh monthly."
+   ]
+  },
+  "alternatives": {
+   "intro": "Synthesia is on Product Hunt's alternatives list; HeyGen and Descript are other common choices. Prices come from each product's own pricing page, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Synthesia",
+     "url": "https://www.synthesia.io/",
+     "what": "AI avatar video platform",
+     "starts_at": "Free (10 minutes a month, watermark); Starter $29/month or $18/month billed yearly",
+     "ph_rating": 3.9,
+     "ph_reviews": 24,
+     "difference": "Built around avatar presenters. ngram builds explainers and screencasts from a brief or recording, with avatars optional."
+    },
+    {
+     "name": "HeyGen",
+     "url": "https://www.heygen.com/",
+     "what": "AI avatar and video translation platform",
+     "starts_at": "Free (3 videos a month up to 1 minute); Creator $29/month",
+     "difference": "Strongest on avatars, voice cloning and translation. ngram focuses on product demos and onboarding from your own material."
+    },
+    {
+     "name": "Descript",
+     "url": "https://www.descript.com/",
+     "what": "Edit audio and video by editing the transcript",
+     "starts_at": "Free plan; see its pricing page for paid tiers",
+     "difference": "Edits footage you record. ngram generates the video from a brief, a contrast ngram's own FAQ makes."
+    }
+   ],
+   "more": "Product Hunt also lists OpusClip, RunwayML, VEED and Rizzle AI."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/ngram/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Turning screen recordings into narrated walkthroughs for feature updates",
+     "Turning research papers into videos"
+    ],
+    "asked": [
+     "Keeping videos in sync when the product UI changes (not yet; upload a new recording, and a GitHub integration is coming)",
+     "Keeping narration and visuals accurate to the source (review and correct in chat; check claims against the original)",
+     "Linking a video to a QR code on packaging (share pages keep the same link when you update the video)"
+    ],
+    "criticised": [
+     "Scepticism about AI avatars: one app founder said AI-generated people hurt conversions in their product; the maker said avatars are optional and worth testing"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Can ngram keep the video in sync when the product UI changes, or would you create a new one from the updated recording?",
+     "author": "Iman Koma",
+     "url": "https://www.producthunt.com/products/ngram?comment=5941454"
+    },
+    {
+     "text": "how do you make sure the narrations and visuals stay accurate to the original materials???",
+     "author": "Aryan Mehta",
+     "url": "https://www.producthunt.com/products/ngram?comment=5943743"
+    },
+    {
+     "text": "when we used AI-created people, users churn.",
+     "author": "Nika",
+     "url": "https://www.producthunt.com/products/ngram?comment=5943109"
+    },
+    {
+     "text": "Does ngram have the ability to link the video to a QR code?",
+     "author": "Annalese Hodges",
+     "url": "https://www.producthunt.com/products/ngram?comment=5943404"
+    }
+   ]
+  },
+  "pros": [
+   "You approve the script and plan before credits go on generation",
+   "Works from briefs, documents, web pages or screen recordings",
+   "Brand kit, captions and multiple aspect ratios",
+   "Earlier versions are kept, and share links stay the same when you update a video",
+   "Free plan with no card"
+  ],
+  "cons": [
+   "Credit pricing takes some working out, and generation costs at least 10 credits per second",
+   "Free plan covers only about a minute of premium AI generation",
+   "Videos don't yet update automatically when your product changes",
+   "The maker himself advises checking research-paper claims against the original before sharing",
+   "No security certifications stated"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/ngram?launch=ngram-2-0",
+   "x": {
+    "none": "We found no independent posts about ngram 2.0 on X to link yet. You can tag @askngram on a text-heavy X thread to turn it into a video, according to the maker.",
+    "search_url": "https://x.com/search?q=ngram%20video&f=live",
+    "profile_url": "https://x.com/askngram"
+   }
+  },
+  "faq": [
+   {
+    "q": "How much does ngram cost?",
+    "a": "There is a free plan with 600 one-time credits. Basic is $29 a month, Premium $59 and Ultimate $299, or 20% less billed yearly. Enterprise is custom."
+   },
+   {
+    "q": "Do I need my own footage or assets?",
+    "a": "No. ngram's FAQ says a text description is enough, though you can add files, web pages or screen recordings as source material."
+   },
+   {
+    "q": "Can I check the video before it's generated?",
+    "a": "Yes. ngram proposes a script and production plan that you can approve or send back for changes before production starts."
+   },
+   {
+    "q": "Does it keep videos up to date when my product changes?",
+    "a": "Not yet. The team said on Product Hunt that today you upload a new recording; keeping videos in sync and a GitHub integration that makes a video per pull request are coming."
+   },
+   {
+    "q": "Can I get a refund?",
+    "a": "ngram's terms offer refunds pro-rated by unused credits in the current billing period. Add-on credits and credits you've used aren't refunded."
+   },
+   {
+    "q": "How is ngram different from Loom or Descript?",
+    "a": "ngram's own FAQ says it builds a structured video from what you want to say, whereas Loom records your screen and Descript needs editing skills."
+   }
+  ],
+  "sources": [
+   {
+    "label": "ngram official site and FAQ",
+    "url": "https://www.ngram.com/"
+   },
+   {
+    "label": "ngram v2 features",
+    "url": "https://www.ngram.com/features/ngram-v2"
+   },
+   {
+    "label": "ngram pricing",
+    "url": "https://www.ngram.com/pricing"
+   },
+   {
+    "label": "ngram terms",
+    "url": "https://www.ngram.com/terms"
+   },
+   {
+    "label": "Product Hunt launch and discussion",
+    "url": "https://www.producthunt.com/products/ngram?launch=ngram-2-0"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/ngram/alternatives"
+   },
+   {
+    "label": "Synthesia pricing",
+    "url": "https://www.synthesia.io/pricing"
+   },
+   {
+    "label": "HeyGen pricing",
+    "url": "https://www.heygen.com/pricing"
+   },
+   {
+    "label": "Descript pricing",
+    "url": "https://www.descript.com/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/32eb3f0e-4924-4e4c-9df1-1bac6b3ee725.png?auto=format&fit=max&w=1400",
+    "alt": "ngram 'Your sources. A finished video.': a source list next to a generated explainer about why Earth has seasons"
+   },
+   {
+    "url": "https://ph-files.imgix.net/ee70a5db-71d8-4eee-8312-5c9120cb4e28.png?auto=format&fit=max&w=1400",
+    "alt": "ngram 'ngram understands your screencasts': uploading a screen recording to turn into a narrated walkthrough"
+   },
+   {
+    "url": "https://ph-files.imgix.net/dc191ecf-0f5e-4737-944b-7d6da6c8e2a7.png?auto=format&fit=max&w=1400",
+    "alt": "ngram 'Add an AI avatar to your story': choosing an AI presenter for a product video"
+   },
+   {
+    "url": "https://ph-files.imgix.net/ce923d25-ed13-4519-a8b8-6047d1ad30a3.png?auto=format&fit=max&w=1400",
+    "alt": "ngram 'Give your story a voice. And a rhythm.': voice and pacing settings for narration"
+   },
+   {
+    "url": "https://ph-files.imgix.net/9cf6b12d-413b-4286-9938-8f04aefc2584.png?auto=format&fit=max&w=1400",
+    "alt": "ngram 'A look for every explanation': a grid of visual styles such as technical diagrams, hand-drawn and kinetic type"
+   },
+   {
+    "url": "https://ph-files.imgix.net/041c1628-7031-45a5-a6bd-0ff499c08013.jpeg?auto=format&fit=max&w=1400",
+    "alt": "ngram title card 'Something worth explaining?' over an animated diagram of how load balancing works"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/32eb3f0e-4924-4e4c-9df1-1bac6b3ee725.png?auto=format&fit=max&w=1400",
+    "alt": "ngram 'Your sources. A finished video.': a source list next to a generated explainer about why Earth has seasons"
+   },
+   {
+    "url": "https://ph-files.imgix.net/ee70a5db-71d8-4eee-8312-5c9120cb4e28.png?auto=format&fit=max&w=1400",
+    "alt": "ngram 'ngram understands your screencasts': uploading a screen recording to turn into a narrated walkthrough"
+   },
+   {
+    "url": "https://ph-files.imgix.net/dc191ecf-0f5e-4737-944b-7d6da6c8e2a7.png?auto=format&fit=max&w=1400",
+    "alt": "ngram 'Add an AI avatar to your story': choosing an AI presenter for a product video"
+   }
+  ]
+ }
+}

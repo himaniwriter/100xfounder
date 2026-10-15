@@ -1,0 +1,122 @@
+{
+  "slug": "robynn-ai-self-improving-websites-2",
+  "ph_url": "https://www.producthunt.com/posts/robynn-ai-self-improving-websites-2",
+  "existing_listing_slug": null,
+  "website": "https://robynn.ai",
+  "excerpt": "Robynn AI connects to your live website, audits every page, proposes fixes you approve, publishes them and measures the result in Google Analytics every week.",
+  "content": "<p>Robynn AI is a tool for keeping a website improving after launch. You add two lines of JavaScript to an existing site (WordPress, Webflow, Next.js, Framer or any CMS) with no rebuild or migration. Robynn maps every page and audits it against your brand, your ideal customer profile, your competitors and your analytics, flagging problems such as broken links, stale pages, slipping rankings and pages AI assistants can't cite. You can also point at any element and describe a change in plain English.</p><p>Its Auto Loop works one goal per page, such as organic traffic, sign-ups or form fills. Robynn recommends one change with a reason, you approve it, it publishes, and seven days later it measures the result in Google Analytics; wins are kept and regressions rolled back. Robynn first builds a brand book of your voice, tone and design tokens and keeps new content to it. The plans also include a broader AI marketing toolkit with content drafts, brand and competitor monitors and campaigns.</p><p>Robynn's co-founders are Madhukar Kumar and Rafiq, who both worked at Interwoven, the company behind the TeamSite web content management system, according to Madhukar's Product Hunt post. Robynn launched there on 27 July 2026 and finished #5 for the day with 257 upvotes and 48 comments (as of 14 October 2026).</p><p><em>We have not tested Robynn ourselves. This page brings together its official site and pricing page, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Website optimisation and AI marketing",
+    "platform": "Web app with a JavaScript snippet for your site",
+    "starts_at": "Free 500 credits for 14 days; Starter $129/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Audits your live website, ships approved fixes and measures what improved",
+    "maker": {"name": "Madhukar Kumar", "url": "https://www.producthunt.com/@madhukar_kumar1"},
+    "team": [
+      {"name": "Madhukar Kumar", "role": "Co-founder", "url": "https://www.producthunt.com/@madhukar_kumar1"}
+    ],
+    "ph": {"rank": 5, "votes": 257, "comments": 48, "followers": 450, "launched": "2026-07-27", "as_of": "2026-10-14"},
+    "video_url": "https://youtu.be/fSzgVyVfQRs",
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/c02bd7d6-0732-4b5e-a505-1d60c31e3959.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Robynn AI on Product Hunt",
+       "alt": "Robynn 'Two lines of JavaScript. No migration.' with the script tag and a confirmation that 612 pages were crawled"},
+      {"url": "https://ph-files.imgix.net/151239aa-f01a-4a47-b80a-adb095a74657.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Robynn AI on Product Hunt",
+       "alt": "Robynn site audit with 61 findings ranked high to low, such as a weak hero headline and pages missing from llms.txt"},
+      {"url": "https://ph-files.imgix.net/9587486c-2cd6-4995-a2bd-325378e4621e.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Robynn AI on Product Hunt",
+       "alt": "Robynn 'Then it proves the change worked' results screen showing a sign-up goal measured 7 days after publishing, on a sample site"},
+      {"url": "https://ph-files.imgix.net/2f83ee4e-4059-4aa9-8551-22d716338e70.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Robynn AI on Product Hunt",
+       "alt": "Robynn loop of connect, audit, approve, publish and measure, repeating every 7 days until the goal is hit"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Madhukar Kumar says he and his co-founder Rafiq both worked at Interwoven, which built the first generation of web content management. That generation made websites possible to publish, but it fixed an assumption in place: a website is a project with an end date.",
+        "After launch day, he says, a site quietly decays, with broken links, stale pages, slipping rankings and now invisibility in ChatGPT answers. Robynn is built to keep the site improving instead."
+      ],
+      "attribution": "Madhukar Kumar, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/robynn-ai-self-improving-websites?comment=5651096"
+    },
+    "use_cases": [
+      "Auditing a marketing site for broken links, stale pages and missing AI-search signals",
+      "Testing one change a week on a key page against a sign-up or traffic goal",
+      "Making copy or layout changes by describing them in plain English",
+      "Producing on-brand content drafts from a stored brand book"
+    ],
+    "audience": {
+      "fit": [
+        "run a marketing site without a dedicated web team",
+        "want changes staged for approval rather than published automatically",
+        "already use Google Analytics to measure goals"
+      ],
+      "not_fit": [
+        "have a low-traffic site where a 7-day measurement window may be too noisy, a concern raised on Product Hunt",
+        "only want an SEO audit: the paid plans bundle a wider AI marketing toolkit"
+      ]
+    },
+    "pricing": {
+      "intro": "Robynn's plans are credit-based. Prices are in US dollars.",
+      "url": "https://robynn.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "500 credits that expire in 14 days (about two weeks of a growth plan); all features; one website"},
+        {"name": "Starter", "price": "$129/month", "amount": 129, "currency": "USD", "detail": "4,000 credits a month; weekly growth plan and audit; content drafts and site fixes; Rory AI marketer; one website and brand book"},
+        {"name": "Growth", "price": "$359/month", "amount": 359, "currency": "USD", "detail": "15,000 credits a month; brand and competitor monitors; agentic collections, campaigns and microsites; LinkedIn, X, HubSpot and WordPress connectors"},
+        {"name": "Enterprise", "price": "From $1,000/month", "detail": "1 million credits, quarterly audit and strategy, extra websites at $1,000 per website a month, optional fractional CMO services"}
+      ]
+    },
+    "alternatives": {
+      "intro": "Tools that cover parts of the same job. Prices are from each company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "Mutiny", "url": "https://www.mutinyhq.com/", "what": "AI website personalisation and experimentation for B2B marketing teams", "starts_at": "Free; Business $50/month",
+         "difference": "Focused on personalising pages for different visitors; Robynn runs a weekly fix-and-measure loop on the whole site."},
+        {"name": "Surfer", "url": "https://surferseo.com/", "what": "SEO and AI-search content optimisation and visibility tracking", "starts_at": "AI Search Analytics $82/month billed yearly",
+         "difference": "Helps you write and optimise content; it doesn't publish changes to your live site for you."}
+      ]
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/robynn-ai-self-improving-websites/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["Changes are staged for approval before anything publishes", "Closing the loop through Google Analytics and rolling back regressions"],
+        "asked": ["How it keeps a distinct brand voice (it builds a brand book first and generates in that voice)", "How it decides a change worked (measured against a goal you set per page in Google Analytics)", "How long it waits before judging (7 days per change; PostHog support was being added)"],
+        "criticised": ["One commenter noted that Google Analytics data is noisy and slow for lower-traffic sites"]
+      },
+      "quotes": [
+        {"text": "auto publishing would have been a hard no for me", "author": "Adam Kamaneh", "url": "https://www.producthunt.com/products/robynn-ai-self-improving-websites?comment=5669049"},
+        {"text": "My site has a pretty distinct tone, and I don't want fixes that flatten it.", "author": "Ramish Zaidi", "url": "https://www.producthunt.com/products/robynn-ai-self-improving-websites?comment=5667149"}
+      ]
+    },
+    "pros": [
+      "No rebuild: installs with a script tag on most sites",
+      "Nothing publishes without your approval; regressions roll back",
+      "Free audit and a 14-day free credit allowance"
+    ],
+    "cons": [
+      "Paid plans start at $129 a month",
+      "Weekly measurement may be noisy on low-traffic pages",
+      "Relies on Google Analytics for results (PostHog was in progress at launch)"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/robynn-ai-self-improving-websites",
+      "quotes": [
+        {"author": "Gal Dayan", "url": "https://www.producthunt.com/products/robynn-ai-self-improving-websites?comment=5670314", "text": "how long does Robynn wait before it calls a change a win or a regression?",
+         "reply": "Right now it is 7 days per change. We are also adding PostHog as an analytics/events collection and measurement."}
+      ],
+      "x": {"profile_url": "https://twitter.com/robynnaiapp", "search_url": "https://x.com/search?q=robynn.ai&f=live", "none": "Apart from Robynn's own account, we found no posts on X clearly about the product."}
+    },
+    "faq": [
+      {"q": "What is Robynn AI?", "a": "A tool that connects to your live website, audits it, proposes fixes you approve, publishes them and measures the result in Google Analytics, repeating every week."},
+      {"q": "How much does Robynn cost?", "a": "Free gives 500 credits for 14 days. Starter is $129 a month, Growth $359 a month and Enterprise from $1,000 a month."},
+      {"q": "Do I need to rebuild my site?", "a": "No. Robynn installs with a script tag and works with WordPress, Webflow, Next.js, Framer and other CMSs."},
+      {"q": "Does Robynn publish changes on its own?", "a": "No. Changes are staged and published only after you approve them."},
+      {"q": "How does it decide whether a change worked?", "a": "You set a goal per page in Google Analytics; Robynn measures for 7 days after publishing, keeps wins and rolls back regressions."}
+    ],
+    "sources": [
+      {"label": "Robynn AI official site", "url": "https://robynn.ai/"},
+      {"label": "Robynn AI pricing", "url": "https://robynn.ai/pricing"},
+      {"label": "Robynn AI press page", "url": "https://robynn.ai/press"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/robynn-ai-self-improving-websites?launch=robynn-ai-2"},
+      {"label": "Mutiny pricing", "url": "https://www.mutinyhq.com/pricing"},
+      {"label": "Surfer pricing", "url": "https://surferseo.com/pricing/"}
+    ]
+  }
+}

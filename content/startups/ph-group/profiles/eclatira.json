@@ -1,0 +1,94 @@
+{
+  "slug": "eclatira",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/eclatira",
+  "excerpt": "Eclatira is a developer engine for real-time conversational video agents that can talk, see through a camera or shared screen, and take actions through APIs, MCP servers and 3,000+ apps. What it does and alternatives.",
+  "content": "<p>Eclatira is a conversational video engine for developers. Instead of wiring together separate systems for voice, video, vision and actions, you connect one engine to your application, and your AI agent can hold a direct voice-to-voice conversation, see in real time through the user's camera or a shared screen, and take actions through your own APIs, MCP servers or more than 3,000 connected apps. Its launch images show an agent commenting on an object held up to a webcam and another reviewing a shop page during a screen share. Customer support agents that can act, not just answer, are one use case raised by commenters.</p><p>On Product Hunt, co-founder and CEO Moad Rahali Semlali said the engine supports about 100 languages and roughly 400 accents, is not tied to one language model, and does not store live camera or screen streams. Authentication for the app integrations is handled by a third-party integration provider. Eclatira launched on 26 September 2026 and finished #2 for the day with 287 points and 62 comments.</p><p><em>We have not tested Eclatira ourselves. Its website blocked our automated check, so this page is based on its Product Hunt launch and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Conversational video AI",
+    "platform": "Developer platform (API, MCP)",
+    "starts_at": "Product Hunt lists free options; see eclatira.com",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Engine for real-time video agents that talk, see a camera or screen, and take actions",
+    "maker": {"name": "Moad Rahali Semlali", "url": "https://www.producthunt.com/@moad_rahali_semlali"},
+    "team": [
+      {"name": "Moad Rahali Semlali", "role": "CEO & Co-founder (Product Hunt profile)", "url": "https://www.producthunt.com/@moad_rahali_semlali"},
+      {"name": "Rumaysaa Gilsenan", "role": "DevRel Engineer (Product Hunt profile)", "url": "https://www.producthunt.com/@rumaysaa_gilsenan"}
+    ],
+    "ph": {"rank": 2, "votes": 287, "comments": 62, "followers": 544, "launched": "2026-09-26", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/867b1089-8580-47b9-8cea-895e99be9356.png?auto=format&fit=max&w=1400", "w": 2752, "h": 1536,
+       "alt": "Eclatira demo of a live video call in which the agent describes an inflatable banana held up to the user's webcam", "credit": "Image: Eclatira via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/68302759-bceb-4788-b771-85b30cce8cb5.png?auto=format&fit=max&w=1400", "w": 2752, "h": 1536,
+       "alt": "Eclatira live screen-share session where the agent reads a shop page and answers whether a product pack is a good deal", "credit": "Image: Eclatira via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/ff6ae104-ebbc-4bbd-a523-f4b4e47e9445.png?auto=format&fit=max&w=1400", "w": 2752, "h": 1536,
+       "alt": "Eclatira diagram connecting an agent to any MCP server, any API and 3,000+ apps such as Slack, Shopify, Salesforce and HubSpot", "credit": "Image: Eclatira via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are a developer adding a live voice and video agent to your own app",
+        "need an agent that can see a user's camera or screen, for example in support or tutoring",
+        "want the agent to take actions in other apps without building each integration yourself"
+      ],
+      "not_fit": [
+        "want a no-code, ready-made chatbot rather than an engine to build with",
+        "need published pricing before you try it: we could not read Eclatira's site",
+        "need to choose the underlying model today: the founder said model selection is planned, not yet available"
+      ]
+    },
+    "pricing": {
+      "intro": "We could not read pricing on eclatira.com as of 14 October 2026 because the site blocked our automated check.",
+      "url": "https://eclatira.com/",
+      "plans": [],
+      "notes": [
+        "Product Hunt lists it as free options."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "LiveKit", "url": "https://livekit.io/", "what": "Open-source framework and cloud for building voice, video and physical AI agents", "starts_at": "Open source; see its pricing page",
+         "ph_rating": 4.97, "ph_reviews": 39,
+         "difference": "A lower-level, open-source framework you assemble yourself. Eclatira bundles voice, vision and actions in one engine."},
+        {"name": "Daily", "url": "https://www.daily.co/", "what": "Real-time voice, video and AI for developers, including the open-source Pipecat", "starts_at": "See its pricing page",
+         "ph_rating": 4.94, "ph_reviews": 18,
+         "difference": "Video infrastructure plus an agent framework. Eclatira adds ready connections to 3,000+ apps for actions."},
+        {"name": "ElevenLabs", "url": "https://elevenlabs.io/", "what": "AI voices, text to speech and voice agents", "starts_at": "Free plan; see its pricing page",
+         "ph_rating": 4.91, "ph_reviews": 218,
+         "difference": "Strong on voice. Eclatira's pitch is combining voice with live vision and actions."}
+      ],
+      "more": "Product Hunt also lists Video SDK and Vapi as alternatives."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/eclatira/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/eclatira",
+      "quotes": [
+        {"author": "Kruti Parekh", "text": "How does the product approach privacy when the agent has access to live camera or screen streams?",
+         "reply": "Moad Rahali Semlali: live streams are not stored today; any storage option would be off by default."},
+        {"author": "Dipanshu Kushwaha", "text": "Does it support multiple languages for voice interactions?",
+         "reply": "Moad Rahali Semlali: yes, 100 languages and about 400 accents."},
+        {"author": "Jack Hayes", "text": "dealing with separate vision and voice models was such a pain."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=eclatira&f=live"}
+    },
+    "faq": [
+      {"q": "What is Eclatira?", "a": "A developer engine for real-time conversational video agents that can talk, see through a camera or shared screen, and act through APIs, MCP servers and 3,000+ apps. It launched on Product Hunt on 26 September 2026."},
+      {"q": "Which languages does it speak?", "a": "The CEO said on Product Hunt it supports 100 languages and about 400 accents."},
+      {"q": "Does Eclatira record camera or screen streams?", "a": "The CEO said live streams are not stored, and any future storage option would be off by default."},
+      {"q": "Which AI model does it use?", "a": "The CEO said it is model-agnostic and switches between models; letting users choose the model is planned."},
+      {"q": "How are app integrations authenticated?", "a": "Through a third-party integration provider that handles authentication and permissions, according to the CEO."},
+      {"q": "How much does it cost?", "a": "We could not read Eclatira's pricing; Product Hunt lists it as free options."}
+    ],
+    "sources": [
+      {"label": "Eclatira official site", "url": "https://eclatira.com/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/eclatira"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/eclatira"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/eclatira/alternatives"},
+      {"label": "LiveKit", "url": "https://livekit.io/"},
+      {"label": "Daily", "url": "https://www.daily.co/"},
+      {"label": "ElevenLabs", "url": "https://elevenlabs.io/"}
+    ]
+  }
+}

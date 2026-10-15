@@ -1,0 +1,231 @@
+{
+  "slug": "weave-router-2-0",
+  "ph_url": "https://www.producthunt.com/posts/weave-router-2-0",
+  "existing_listing_slug": null,
+  "website": "https://weaveos.com/router",
+  "excerpt": "Weave Router sends each Claude Code, Codex or Cursor request to the cheapest model it expects to get it right. Open source to self-host; plans from $10/month.",
+  "content": "<p>Weave Router is a model router for coding agents, made by Weave, an engineering analytics company. You run one command and it points Claude Code, Codex and Cursor at the router, which reads every request the agent makes, scores how hard it is and sends it to the cheapest model it expects to handle it. Version 2.0 adds a complexity classifier that Weave says was trained on ten times the sessions of 1.0, cache-aware switching (it only moves to a cheaper model when the saving beats the cost of rebuilding the prompt cache), an escalation check that returns a stalled or looping task to a frontier model, and logic that uses flat-rate subscriptions you already own before paying per token.</p><p>Weave publishes its own benchmarks against a model it calls GPT-6 Astra: on a 66-task Terminal-Bench 4.0 set it reports 62.1% of tasks solved in two attempts against Astra's 60.6%, at roughly half the cost per trial and 2.2 times faster. On a 124-task codebase Q&amp;A set, it reports solving five fewer tasks than Astra at less than half the cost. These are the vendor's figures, not independent tests.</p><p>The router is open source under Apache-2.0 for self-hosting. Hosted coding plans are Code Max at $10 a month (open-source models only) and Code Boost at $100 a month (OpenAI, Anthropic and open-source models), with an on-premises Enterprise option. Weave's wider platform, which measures engineering output and AI usage, starts free and costs $50 per engineer a month on its Pro plan. Weave describes itself on Product Hunt as a YC W25 company; Weave Router 2.0 was the #1 product of the day there on 16 September 2026.</p><p>Weave Router 2.0 launched on Product Hunt on 16 September 2026 and finished #1 for the day, with 319 upvotes and 30 comments. It has 2 Product Hunt reviews averaging 4.5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Weave Router ourselves. This page brings together Weave's official site, pricing and terms, its Product Hunt page and the official pricing pages of comparable routers, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Developer tools",
+    "platform": "CLI and hosted router; self-hostable",
+    "starts_at": "Open source to self-host; Code Max $10/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Routes each coding-agent request to the cheapest model likely to get it right",
+    "use_cases": [
+      "Cutting the token bill of Claude Code, Codex or Cursor by sending simple turns to cheaper models",
+      "Making flat-rate Claude or ChatGPT subscriptions go further before paying per token",
+      "Running a model router inside your own infrastructure (Enterprise or self-hosted)",
+      "Comparing engineering output and AI usage across a team on the wider Weave platform"
+    ],
+    "audience": {
+      "fit": [
+        "spend heavily on frontier models through coding agents",
+        "use Claude Code, Codex or Cursor and want one command to set up routing",
+        "want an open-source router you can audit and self-host"
+      ],
+      "not_fit": [
+        "need every turn answered by one specific model for consistency",
+        "use a coding tool other than Claude Code, Codex or Cursor, which are the ones the installer detects",
+        "want independent benchmark results: the published figures are Weave's own"
+      ]
+    },
+    "pricing": {
+      "intro": "Weave Router has two hosted coding plans plus an Enterprise option, and the code is open source. Prices are from weaveos.com, in US dollars.",
+      "url": "https://weaveos.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Code Max",
+          "price": "$10/month",
+          "amount": 10,
+          "currency": "USD",
+          "detail": "Coding subscription with routing across open-source models only, aimed at indie developers"
+        },
+        {
+          "name": "Code Boost",
+          "price": "$100/month",
+          "amount": 100,
+          "currency": "USD",
+          "detail": "Access to OpenAI, Anthropic and open-source models, and makes existing Claude and Codex subscriptions go further"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "detail": "Router in your own infrastructure (on-premises) with hands-on deployment support"
+        }
+      ],
+      "notes": [
+        "The router page also describes a pay-per-use option at 5% of routed spend, and Apache-2.0 source code to self-host.",
+        "Weave's separate engineering-analytics platform has a free Starter plan and Pro at $50 per engineer per month."
+      ]
+    },
+    "alternatives": {
+      "intro": "Other model routers for AI and coding workloads. Prices come from each product's own pricing page, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/",
+          "what": "API gateway to 500+ models with auto-routing on paid tiers",
+          "starts_at": "Free tier; pay-as-you-go with a 5.5% platform fee",
+          "difference": "A general model marketplace and gateway; Weave Router is tuned for coding-agent turns and cache-aware switching."
+        },
+        {
+          "name": "Not Diamond",
+          "url": "https://www.notdiamond.ai/",
+          "what": "Model routing aimed at long-running coding-agent sessions",
+          "starts_at": "$0.05 per million tokens routed",
+          "difference": "Integrates with your existing gateway rather than acting as one; pay-as-you-go access is by application."
+        }
+      ]
+    },
+    "pros": [
+      "One command configures Claude Code, Codex and Cursor",
+      "Open source (Apache-2.0) and self-hostable",
+      "Cache-aware: avoids switching when rebuilding the cache would cost more",
+      "Sends stalled or looping tasks back to a frontier model",
+      "Low entry price at $10 a month for open-source models"
+    ],
+    "cons": [
+      "Benchmark results are self-reported",
+      "Cheaper models may behave differently from the frontier model in style and edge cases",
+      "Code Max routes across open-source models only"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/weave",
+      "x": {
+        "none": "We found no posts about Weave Router 2.0 on X to link yet.",
+        "search_url": "https://x.com/search?q=%22weave%20router%22&f=live",
+        "profile_url": "https://x.com/WorkWeave"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Weave Router?",
+        "a": "A model router for coding agents. It sits between Claude Code, Codex or Cursor and the model providers, scores each request and sends it to the cheapest model it expects to handle it, escalating to a frontier model when a task stalls."
+      },
+      {
+        "q": "How much does Weave Router cost?",
+        "a": "Code Max is $10 a month (open-source models only) and Code Boost is $100 a month (OpenAI, Anthropic and open-source models). Enterprise on-premises deployments are priced on request, and the code is open source if you want to host it yourself."
+      },
+      {
+        "q": "What changed in version 2.0?",
+        "a": "Weave lists a complexity classifier trained on ten times more sessions, cache-aware switching, an escalation classifier that returns failing tasks to a frontier model, and routing that uses subscriptions you already pay for first."
+      },
+      {
+        "q": "Does it really match frontier quality?",
+        "a": "Weave reports 62.1% versus 60.6% on a 66-task Terminal-Bench 4.0 set at about half the cost, but solving fewer tasks than the frontier model on a codebase Q&A set. These are the company's own benchmarks."
+      },
+      {
+        "q": "What are the alternatives?",
+        "a": "OpenRouter, a general model gateway with auto-routing, and Not Diamond, a routing service for coding agents. Weave Router differs by being open source and cache-aware."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Weave Router",
+        "url": "https://weaveos.com/router"
+      },
+      {
+        "label": "Weave official site",
+        "url": "https://weaveos.com/"
+      },
+      {
+        "label": "Weave pricing",
+        "url": "https://weaveos.com/pricing"
+      },
+      {
+        "label": "Weave terms",
+        "url": "https://weaveos.com/terms"
+      },
+      {
+        "label": "Product Hunt page and launch discussion",
+        "url": "https://www.producthunt.com/products/weave"
+      },
+      {
+        "label": "OpenRouter pricing",
+        "url": "https://openrouter.ai/pricing"
+      },
+      {
+        "label": "Not Diamond pricing",
+        "url": "https://www.notdiamond.ai/pricing"
+      },
+      {
+        "label": "Weave Router source code (GitHub)",
+        "url": "https://github.com/weave-os/router"
+      }
+    ],
+    "reviews": {
+      "count": 2,
+      "rating": 4.5,
+      "url": "https://www.producthunt.com/products/weave/reviews",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/ed123452-b778-4c04-9fa4-79d56ae64b9f.png?auto=format&fit=max&w=1400",
+        "alt": "Weave platform screen 'Learn when to use AI and when not to', rating pull requests as high, medium or low AI fit",
+        "credit": "Image: Weave on Product Hunt",
+        "w": 1721,
+        "h": 1029
+      },
+      {
+        "url": "https://ph-files.imgix.net/3b07563a-bfcc-44fd-b20b-72d0b250a96e.png?auto=format&fit=max&w=1400",
+        "alt": "Weave chart comparing human and AI code output week by week",
+        "credit": "Image: Weave on Product Hunt",
+        "w": 882,
+        "h": 496
+      },
+      {
+        "url": "https://ph-files.imgix.net/dfd3c315-6f0a-40bc-abc3-fc116a547297.png?auto=format&fit=max&w=1400",
+        "alt": "Weave chart of code turnover, the share of merged code overwritten within three months",
+        "credit": "Image: Weave on Product Hunt",
+        "w": 1371,
+        "h": 607
+      },
+      {
+        "url": "https://ph-files.imgix.net/f5cdc21f-eb93-487f-99a1-fa66aa190bfa.png?auto=format&fit=max&w=1400",
+        "alt": "Weave chart of bugs introduced per week, based on AI analysis of bug-fix pull requests",
+        "credit": "Image: Weave on Product Hunt",
+        "w": 900,
+        "h": 699
+      }
+    ],
+    "ph": {
+      "rank": 1,
+      "votes": 319,
+      "comments": 30,
+      "followers": 937,
+      "launched": "2026-09-16",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Steven",
+        "role": "Engineer #1 at Weave",
+        "url": "https://www.producthunt.com/@steventohme"
+      },
+      {
+        "name": "Drew Bailey",
+        "role": "Senior Software Engineer makes code fast",
+        "url": "https://www.producthunt.com/@drew_bailey"
+      },
+      {
+        "name": "Brennan Lupyrypa",
+        "role": "Founding GTM Engineer @ Weave (YC 25)",
+        "url": "https://www.producthunt.com/@brennan_lupyrypa"
+      },
+      {
+        "name": "Andrew Churchill",
+        "role": "Founder at Weave",
+        "url": "https://www.producthunt.com/@adchurch"
+      },
+      {
+        "name": "Adam Cohen",
+        "role": "Co-Founder @ Weave",
+        "url": "https://www.producthunt.com/@adambcohen"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes."
+}

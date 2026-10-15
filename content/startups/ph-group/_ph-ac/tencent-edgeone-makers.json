@@ -1,0 +1,132 @@
+{
+ "input": "https://www.producthunt.com/posts/tencent-edgeone-makers",
+ "final_url": "https://www.producthunt.com/products/tencent-edgeone-2?launch=tencent-edgeone-makers",
+ "launch": {
+  "slug": "tencent-edgeone-makers",
+  "featuredAt": "2026-06-24T00:01:00-07:00",
+  "dailyRank": "1",
+  "points": 613,
+  "commentsCount": 163,
+  "source": "launches page (no gallery/comments)",
+  "makers": [
+   {
+    "name": "xiaban",
+    "username": "xiaban",
+    "headline": "Developer of EdgeOne Makers"
+   },
+   {
+    "name": "Selmaliu",
+    "username": "leotw",
+    "headline": "Developer"
+   },
+   {
+    "name": "mushrooms",
+    "username": "mushrooms110",
+    "headline": null
+   },
+   {
+    "name": "c1avie",
+    "username": "c1avie",
+    "headline": "Cest la vie"
+   },
+   {
+    "name": "Tracy Lai",
+    "username": "tracy_lai222",
+    "headline": "Tencent EdgeOne Product Team"
+   },
+   {
+    "name": "Tobias Lau",
+    "username": "tobias_lau",
+    "headline": "Growth PM"
+   },
+   {
+    "name": "Zhuoli Jiang",
+    "username": "zhuoli_jiang",
+    "headline": "Everything about Security and Edge"
+   },
+   {
+    "name": "MapleShaw",
+    "username": "maple_shaw",
+    "headline": "Developer"
+   },
+   {
+    "name": "kassyke",
+    "username": "kassy_kane",
+    "headline": "Product Manager for EdgeOne Makers"
+   },
+   {
+    "name": "Kitty Lee",
+    "username": "kitty_lee1",
+    "headline": "Founder of the EdgeOne Product"
+   },
+   {
+    "name": "alina chang",
+    "username": "alina_chang",
+    "headline": "Product Manager at Tencent EdgeOne"
+   }
+  ]
+ },
+ "product": {
+  "name": "Tencent EdgeOne",
+  "slug": "tencent-edgeone-2",
+  "tagline": "Deliver Fastest and Most Secure Performance at the Edge",
+  "description": "Tencent EdgeOne is a cutting-edge global edge network platform engineered to optimize traffic routing, accelerate content delivery, and strengthen security across distributed environments. By seamlessly integrating CDN, DNS, WAF, DDoS protection, and intelligent route optimization, it delivers comprehensive security safeguards, superior network and application acceleration, advanced edge computing capabilities, and robust monitoring and operational analytics.",
+  "websiteUrl": "https://edgeone.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 2717,
+  "twitterUrl": "https://x.com/tencentcloudeo",
+  "linkedinUrl": "https://www.linkedin.com/company/tencentedgeone",
+  "postsCount": 2,
+  "screenshots": [
+   "https://ph-files.imgix.net/693d0df2-dfcb-4422-bc89-c6a86a5f120a.jpeg?auto=format&fit=crop",
+   "https://ph-files.imgix.net/a4f3af60-a6e7-4410-ba95-839c566e60b9.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/9e6ffbe8-2999-4c04-8824-d320f59b9d99.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/266a1acd-4d26-44b3-a4e0-2aefe69c0f07.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/7db0e17f-2730-4050-b8af-cde44c1f8c24.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/966dbad5-9845-454f-ad58-42ac90f9553f.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/4ab409f2-f355-43d3-b72e-72461c3fc7b6.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/91c42d0e-c461-4748-b70c-03a02b87a36a.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/f116382f-f36b-4816-832a-dd4d0c50d819.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/375e0e36-1029-479a-97bf-bac9f127a55d.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

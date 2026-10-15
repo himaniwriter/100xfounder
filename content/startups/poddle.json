@@ -1,0 +1,274 @@
+{
+ "slug": "poddle",
+ "excerpt": "Poddle is a free browser pickleball game where your phone, or one AirPod on a Mac, is the paddle. How it works, what you need, alternatives and what players said.",
+ "content": "<p>Poddle is a Wii Sports-style pickleball game that runs in a browser tab. Open poddleball.com on any computer or iPad, scan the QR code with your phone, and the phone becomes your paddle: you swing it and the game reads the motion. On a Mac you can use one AirPod as the paddle instead, through a small, free, open-source helper app that passes the AirPod's motion sensors to the game.</p><p>The game reads the swing itself. Speed and reach set the power, direction aims the shot, a scoop lobs it and a wrist cut adds spin. If you turn on your webcam, it tracks where you stand so you can move around the court; the site says the video is never recorded or sent. Without a camera, the game runs you to the ball. You can play Matt the bot at four levels, play friends online with a court code, run knockout tournaments for 4 to 16 players, watch live matches and, if you sign in, earn trophies and ranks.</p><p>Poddle was made by Daniel, who started it as a hackathon idea, and launched on Product Hunt on 4 October 2026, finishing #26 for the day with 67 upvotes. It is free, with no ads and no account required.</p><p><em>We have not played Poddle ourselves. This page brings together its official site and privacy policy, its Product Hunt page and the official pages of comparable games, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Browser games",
+  "platform": "Web browser plus phone",
+  "os": "Any computer or iPad with a current browser and WebGL; an iPhone or Android phone with a gyroscope",
+  "starts_at": "Free",
+  "schema_category": "GameApplication",
+  "summary_short": "Free browser pickleball game where your phone, or one AirPod on a Mac, is the paddle",
+  "maker": {
+   "name": "Daniel",
+   "url": "https://www.producthunt.com/@danrlt"
+  },
+  "team": [
+   {
+    "name": "Daniel",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@danrlt"
+   }
+  ],
+  "ph": {
+   "rank": 26,
+   "votes": 67,
+   "comments": 8,
+   "followers": 61,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "A quick motion-controlled game on a laptop or TV-connected computer without buying a console",
+   "Playing a friend online with a shared court code",
+   "Running a small pickleball tournament for a club or a group of friends",
+   "Practising against a bot at four difficulty levels"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Daniel says Poddle began as a last-minute hackathon idea: AirPods have motion sensors, so could one work as a pickleball paddle, the way Wii Sports used a remote? It worked better than expected. The team didn't win, but he kept building it and has been playing it with friends at university clubs since.",
+    "Most of his time went into making the swing feel right. A motion sensor knows how your hand turns but not where it is, so the game reads the swing itself, and a webcam handles where you stand. Phone support began as a shortcut for testing and stayed, because everyone already has a phone and it gets people playing faster than pairing AirPods."
+   ],
+   "attribution": "Daniel, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/poddle-3?comment=5918416"
+  },
+  "audience": {
+   "fit": [
+    "want a free, no-install motion game you can start in a browser in a minute",
+    "like Wii Sports-style games or play pickleball",
+    "want to play with friends in other places, or run a quick club tournament"
+   ],
+   "not_fit": [
+    "have a phone without a gyroscope: the phone paddle needs one",
+    "want to use AirPods on Windows or with older AirPods: the AirPod paddle needs a Mac on macOS 14 or later, Chrome, and AirPods Pro, 3, 4 or Max",
+    "want trophies without an account: guests can play but can't earn trophies or use friends and the leaderboard"
+   ]
+  },
+  "pricing": {
+   "intro": "Poddle is free. There is no paid plan and no in-app purchase on the site, and you don't need an account to play.",
+   "url": "https://poddleball.com/how-to-play.html",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Every mode; sign in with Google only if you want trophies, ranks and stats across devices"
+    }
+   ],
+   "notes": [
+    "The privacy policy says there are no ads, no third-party analytics and no tracking pixels, and that player data isn't sold.",
+    "Guest stats are deleted 90 days after your last match, and unused accounts after 24 months. Players must be 13 or over."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt's suggestions for Poddle are mostly unrelated browser games, so we picked two closer matches by search. Prices are what each product's own site states, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "AirConsole",
+     "url": "https://www.airconsole.com/",
+     "what": "Browser game platform where phones act as controllers for party games",
+     "starts_at": "Free with ad breaks; Hero subscription, see its Hero page",
+     "difference": "A library of many party games using on-screen phone buttons. It has no pickleball and no swing-the-phone paddle."
+    },
+    {
+     "name": "LiveWebTennis",
+     "url": "https://livewebtennis.com/",
+     "what": "Browser tennis and cricket game",
+     "starts_at": "Free, no download, no sign-in",
+     "difference": "Controlled by your webcam tracking your arm rather than by a phone or AirPod."
+    }
+   ],
+   "more": "Product Hunt lists Dino Game, Colonist.io, Sports Party, What The Duck!, Alto's Adventure, Flappy Royale, Reflex Rooster, Slice of Music, Pickleball Score Tracker and Compete as alternatives; most are not motion-controlled sports games."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/poddle-3/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "The Wii Sports feel of swinging to play",
+     "Pickleball on a computer without sitting still and moving a mouse"
+    ],
+    "asked": [
+     "Whether other sports are coming (the maker mentioned boxing with two AirPods, a rhythm game and swordplay)",
+     "How to start a game (press Quickplay in the main menu)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "Are you going to implement this with other sports?",
+     "author": "Noah Rauch",
+     "url": "https://www.producthunt.com/products/poddle-3?comment=5919485"
+    },
+    {
+     "text": "I absolutely love this, I recently bought a Wii to experience Wii sports",
+     "author": "Noah Rauch",
+     "url": "https://www.producthunt.com/products/poddle-3?comment=5919483"
+    },
+    {
+     "text": "I love pickleball this is so fun !!",
+     "author": "Mychaela",
+     "url": "https://www.producthunt.com/products/poddle-3?comment=5919695"
+    },
+    {
+     "text": "How to start a new game",
+     "author": "rohit jindal",
+     "url": "https://www.producthunt.com/products/poddle-3?comment=5919987"
+    }
+   ]
+  },
+  "pros": [
+   "Free, with no ads, no install and no account needed",
+   "Uses a phone you already own as the controller",
+   "Online play, a bot at four levels, tournaments and spectating",
+   "Webcam movement is optional, and the site says video never leaves your computer",
+   "The AirPod helper app is open source"
+  ],
+  "cons": [
+   "Needs a phone with a gyroscope, or a Mac with recent AirPods for the AirPod mode",
+   "Trophies, friends and the leaderboard need a Google sign-in",
+   "English only",
+   "Pickleball only for now"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/poddle-3",
+   "x": {
+    "none": "We found no posts about Poddle on X yet.",
+    "search_url": "https://x.com/search?q=poddleball&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Poddle free?",
+    "a": "Yes. Poddle's site says it is free and needs no account. Signing in with Google only adds trophies, ranks and stats across devices."
+   },
+   {
+    "q": "What do I need to play?",
+    "a": "A computer or iPad with a current browser and WebGL, plus an iPhone or Android phone with a gyroscope. A webcam is optional."
+   },
+   {
+    "q": "Can I use AirPods as the paddle?",
+    "a": "Yes, on a Mac running macOS 14 or later with Google Chrome and AirPods Pro, AirPods 3, AirPods 4 or AirPods Max, using the free, open-source Poddle Helper. AirPods 1 and 2 aren't supported."
+   },
+   {
+    "q": "How do I start a game?",
+    "a": "The maker's answer on Product Hunt: press Quickplay in the main menu and it puts you straight into a game against Matt the bot."
+   },
+   {
+    "q": "Does the webcam record me?",
+    "a": "No, according to the site: the camera only works out roughly where you stand, and the video is never recorded, saved or sent. Without a camera the game moves you to the ball automatically."
+   },
+   {
+    "q": "Will there be other sports?",
+    "a": "The maker said on Product Hunt that he is thinking about boxing with two AirPods, a rhythm game and something like Wii Sports swordplay. Nothing has been announced."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Poddle official site",
+    "url": "https://poddleball.com/"
+   },
+   {
+    "label": "Poddle: how to play and FAQ",
+    "url": "https://poddleball.com/how-to-play.html"
+   },
+   {
+    "label": "Poddle: no-download pickleball page",
+    "url": "https://poddleball.com/pickleball-no-download.html"
+   },
+   {
+    "label": "Poddle privacy policy",
+    "url": "https://poddleball.com/privacy.html"
+   },
+   {
+    "label": "Poddle Helper on GitHub",
+    "url": "https://github.com/danielrltan/poddle-helper"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/poddle-3"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/poddle-3/alternatives"
+   },
+   {
+    "label": "AirConsole Hero",
+    "url": "https://www.airconsole.com/hero"
+   },
+   {
+    "label": "LiveWebTennis",
+    "url": "https://livewebtennis.com/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/181ffe0e-86f5-4a0f-9569-a78c7a29a891.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Poddle title card reading 'Your phone is the paddle', with a phone showing the Poddle controller screen",
+    "w": 1280,
+    "h": 720
+   },
+   {
+    "url": "https://ph-files.imgix.net/980c81f6-0f5e-4092-8d1b-0e6d8755c988.png?auto=format&fit=max&w=1400",
+    "alt": "Poddle 'Scan. Swing. Play.': the getting-ready screen with a QR code to pair your phone as the paddle",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/43ad981e-b72b-4523-9b2b-9c0fad53f026.png?auto=format&fit=max&w=1400",
+    "alt": "Poddle 'Spin. Lob. Smash.': three shot types, each set by how you swing",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/e89ec917-98fd-49c3-878b-ee368ae74f5d.png?auto=format&fit=max&w=1400",
+    "alt": "Poddle 'Rally a friend online': an online match on a cartoon pickleball court",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/a2402bc0-0d1f-4254-b516-d2da725c850a.png?auto=format&fit=max&w=1400",
+    "alt": "Poddle 'Watch and react': spectating a live match and sending emojis",
+    "w": 1400,
+    "h": 838
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/181ffe0e-86f5-4a0f-9569-a78c7a29a891.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Poddle title card reading 'Your phone is the paddle', with a phone showing the Poddle controller screen",
+    "w": 1280,
+    "h": 720
+   },
+   {
+    "url": "https://ph-files.imgix.net/980c81f6-0f5e-4092-8d1b-0e6d8755c988.png?auto=format&fit=max&w=1400",
+    "alt": "Poddle 'Scan. Swing. Play.': the getting-ready screen with a QR code to pair your phone as the paddle",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/43ad981e-b72b-4523-9b2b-9c0fad53f026.png?auto=format&fit=max&w=1400",
+    "alt": "Poddle 'Spin. Lob. Smash.': three shot types, each set by how you swing",
+    "w": 1400,
+    "h": 838
+   }
+  ]
+ }
+}

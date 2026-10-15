@@ -1,0 +1,123 @@
+{
+  "slug": "reso-ai-2",
+  "ph_url": "https://www.producthunt.com/posts/reso-ai-2",
+  "existing_listing_slug": null,
+  "website": "https://www.resollm.ai",
+  "excerpt": "ReSO is a generative engine optimisation platform from New Delhi that tracks how brands appear in ChatGPT, Perplexity and Google AI answers and sets weekly fixes.",
+  "content": "<p>ReSO is a generative engine optimisation (GEO) platform: it helps brands show up when buyers ask AI tools such as ChatGPT, Perplexity and Google AI Overviews which product to choose. It builds a list of high-intent buyer questions for your category, tracks how often your brand and named competitors appear in the answers, and finds citation gaps. It then turns the audit into a weekly action plan: technical fixes to make your site easier for AI systems to read, and content written to be cited.</p><p>The founder said on Product Hunt that ReSO weighs more than 400 parameters to prioritise fixes, delivers 8 on-site fixes and 2 ready-to-publish content pieces a week, and that people still make the site changes themselves. The paid plan is $599 a month; a one-off free report is available on sign-up.</p><p>ReSO is run by ReSO AI Solutions Private Limited of New Delhi, according to its privacy policy. Its co-founders on Product Hunt are Swati Paliwal, who says she has led marketing for two decades, and Mohit Gupta. ReSO launched there on 10 October 2026 and finished #2 for the day and #5 for the week, with 495 upvotes and 43 comments (as of 14 October 2026).</p><p><em>We have not tested ReSO ourselves. This page brings together its official site, pricing page and privacy policy, its Product Hunt launch and the public pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI search visibility (GEO)",
+    "platform": "Web app",
+    "starts_at": "Free one-off report; $599/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Tracks and improves how your brand appears in ChatGPT, Perplexity and Google AI answers",
+    "maker": {"name": "Swati Paliwal", "url": "https://www.producthunt.com/@swati_paliwal"},
+    "team": [
+      {"name": "Swati Paliwal", "role": "Co-founder", "url": "https://www.producthunt.com/@swati_paliwal"},
+      {"name": "Mohit Gupta", "role": "Co-founder", "url": "https://www.producthunt.com/@mohit_gupta138"},
+      {"name": "Aanchal Dahiya", "role": "Head of customer success", "url": "https://www.producthunt.com/@aanchal_dahiya"},
+      {"name": "Bhawna Rathee", "role": "Marketing", "url": "https://www.producthunt.com/@bhawna_rathee"},
+      {"name": "Himani Sah", "role": "Maker", "url": "https://www.producthunt.com/@himani_sah1"}
+    ],
+    "ph": {"rank": 2, "votes": 495, "comments": 43, "followers": 1138, "launched": "2026-10-10", "as_of": "2026-10-14"},
+    "video_url": "https://youtu.be/D9v3aPPJgec",
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/bb9e3cf6-1bbf-40c4-825d-09bb20a409c4.png?auto=format&fit=max&w=1400", "w": 3810, "h": 2280, "credit": "Image: ReSO on Product Hunt",
+       "alt": "ReSO graphic 'Acquire customers from organic AI search' with a brand visibility table of buyer questions tracked across AI engines"},
+      {"url": "https://ph-files.imgix.net/1841ef25-9cbb-4c76-ad84-d899aecb8f06.png?auto=format&fit=max&w=1400", "w": 3810, "h": 2280, "credit": "Image: ReSO on Product Hunt",
+       "alt": "ReSO dashboard 'Your AI visibility trend, week over week' showing prompt coverage, visibility share and a trend chart by engine"},
+      {"url": "https://ph-files.imgix.net/31130b1d-edf4-4882-bfe1-99a0804d5f92.png?auto=format&fit=max&w=1400", "w": 3810, "h": 2280, "credit": "Image: ReSO on Product Hunt",
+       "alt": "ReSO 'Priority fixes that increase AI visibility' screen with a site score of 91 and this week's prioritised fixes"},
+      {"url": "https://ph-files.imgix.net/f21aab5c-70fc-4a05-bd79-103326182d68.png?auto=format&fit=max&w=1400", "w": 3810, "h": 2280, "credit": "Image: ReSO on Product Hunt",
+       "alt": "ReSO title card 'Be the answer when your buyers ask AI'"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Swati Paliwal says organic growth was her favourite channel in two decades of B2B and B2C marketing, until she noticed her own buying change: every serious purchase now started with a question to ChatGPT or Google AI.",
+        "When buyers ask AI which product to choose, she says only three to five brands make it into the answer, and every brand left out loses a potential customer. ReSO was built to audit that and fix it."
+      ],
+      "attribution": "Swati Paliwal, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/reso?comment=5892587"
+    },
+    "use_cases": [
+      "Finding out whether AI assistants recommend your brand for buyer questions in your category",
+      "Benchmarking your AI visibility against named competitors",
+      "Getting a weekly list of prioritised site fixes and content to publish"
+    ],
+    "audience": {
+      "fit": [
+        "are a founder, CMO or growth team that sells through considered purchases",
+        "can make site changes and publish content each week",
+        "want to track ChatGPT, Perplexity and Google AI Overviews together"
+      ],
+      "not_fit": [
+        "are a very small business: the founder said lighter plans for small companies are planned but the current paid plan is $599 a month",
+        "want the tool to change your site for you: people make the recommended changes"
+      ]
+    },
+    "pricing": {
+      "intro": "ReSO lists a free one-off report, a monthly plan and a custom scope. Prices are in US dollars.",
+      "url": "https://www.resollm.ai/pricing/",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free (one-off)", "price": "Free", "amount": 0, "currency": "USD", "detail": "A one-time AI visibility report on sign-up, 6 technical fixes and one blog written to be cited"},
+        {"name": "Monthly", "price": "$599/month", "amount": 599, "currency": "USD", "detail": "ChatGPT, Perplexity and Google AI Overviews; 30 prompts tracked; monthly report; intent scoring; citation and white-space gap analysis; 1 AI-optimised landing page and 5 blogs a month"},
+        {"name": "Custom", "price": "Custom", "detail": "Adds Claude, Copilot and Gemini; 75+ prompts; biweekly reports; competitor benchmarking; multi-region tracking; CMS publishing pipeline"}
+      ]
+    },
+    "alternatives": {
+      "intro": "Other AI search visibility tools. Their pricing pages did not render prices we could read on 14 October 2026.",
+      "items": [
+        {"name": "Peec AI", "url": "https://peec.ai/", "what": "Tracks brand visibility, position and sentiment across AI search engines", "starts_at": "See its pricing page",
+         "difference": "Focused on monitoring and analytics; ReSO adds weekly fixes and content production."},
+        {"name": "Profound", "url": "https://www.tryprofound.com/", "what": "AI visibility analytics for brands and agencies", "starts_at": "See its pricing page",
+         "difference": "Aimed at larger brands with deep analytics; ReSO bundles content and technical fixes into the plan."}
+      ]
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/reso/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["Giving specific actions, not just visibility data"],
+        "asked": ["How fixes are prioritised (400+ parameters with priority and severity, the founder said)", "How much happens without people (site changes still need a person)", "Whether AI traffic will show alongside GA4 and Search Console data (planned, not live at launch)", "Whether there will be cheaper plans for small companies (planned)"],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "Do you think AI search can beat google?", "author": "Shivam Kushwaha", "url": "https://www.producthunt.com/products/reso?comment=5938837"}
+      ]
+    },
+    "pros": [
+      "Free one-off visibility report",
+      "Weekly prioritised fixes plus ready-to-publish content",
+      "Tracks competitors and multiple AI engines"
+    ],
+    "cons": [
+      "$599 a month is steep for small businesses",
+      "You still make the site changes yourself",
+      "Analytics integration with GA4 and Search Console was not live at launch"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/reso",
+      "quotes": [
+        {"author": "Owais Khan", "url": "https://www.producthunt.com/products/reso?comment=5937771", "text": "Asked how ReSO turns visibility data into specific actions.",
+         "reply": "Swati Paliwal said ReSO gives 8 on-site fixes and 2 ready-to-publish content pieces every week, sorted by priority and based on gaps in the data."}
+      ],
+      "x": {"profile_url": "https://x.com/ReSOAI_AEO", "search_url": "https://x.com/search?q=resollm&f=live", "none": "Apart from ReSO's own account, we found no posts on X clearly about the product."}
+    },
+    "faq": [
+      {"q": "What is ReSO?", "a": "A generative engine optimisation platform that tracks how your brand appears in AI answers from ChatGPT, Perplexity and Google AI Overviews, and gives weekly fixes and content to improve it."},
+      {"q": "How much does ReSO cost?", "a": "There is a free one-off report on sign-up. The monthly plan is $599, and a custom scope adds more engines, prompts and competitor benchmarking."},
+      {"q": "Who makes ReSO?", "a": "ReSO AI Solutions Private Limited of New Delhi, co-founded by Swati Paliwal and Mohit Gupta."},
+      {"q": "Does ReSO change my website automatically?", "a": "No. The founder said a person still makes the recommended changes; ReSO tells you which issues to fix each week."},
+      {"q": "Which AI engines does it track?", "a": "ChatGPT, Perplexity and Google AI Overviews on the monthly plan; the custom scope adds Claude, Copilot and Gemini."}
+    ],
+    "sources": [
+      {"label": "ReSO official site", "url": "https://www.resollm.ai/"},
+      {"label": "ReSO pricing", "url": "https://www.resollm.ai/pricing/"},
+      {"label": "ReSO privacy policy", "url": "https://www.resollm.ai/privacy-policy/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/reso?launch=reso-ai-2"},
+      {"label": "Peec AI pricing", "url": "https://peec.ai/pricing"},
+      {"label": "Profound pricing", "url": "https://www.tryprofound.com/pricing"}
+    ]
+  }
+}

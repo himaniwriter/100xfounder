@@ -1,0 +1,127 @@
+{
+  "slug": "rindler",
+  "ph_url": "https://www.producthunt.com/posts/rindler",
+  "existing_listing_slug": null,
+  "website": "https://rindler.com",
+  "excerpt": "Rindler runs repetitive web work on the portals your team logs into, such as pulling records and submitting forms, from plain-English tasks. $1 per finished run.",
+  "content": "<p>Rindler automates the web work teams still do by hand on sites that have no API: signing into portals to pull records, download statements, check claim or order status and submit forms. You describe the task in plain English; Rindler goes to the real site, signs in when needed, completes the task and returns structured data, and you can put it on a schedule. Instead of a browser agent working out each page every time, Rindler maps each site ahead of time (its makers say more than 1,000 sites at launch) and repairs the map when pages change, so the same fields come back every run.</p><p>You set rules for what it may never do; the launch images show paying, changing card details and similar actions switched off, with every refusal logged. Developers can call it over an MCP server. Pricing is per finished run, $1 each, with monthly plans from $100.</p><p>Rindler was founded in 2025 by MIT classmates and is backed by Y Combinator, according to its site. The makers on Product Hunt are Michael Serrano and co-founder and CTO Arthur De Los Santos. Rindler launched there on 7 August 2026, hunted by Garry Tan, and finished #3 for the day with 235 upvotes and 21 comments (as of 14 October 2026). Rindler has since shifted its focus. On 15 October 2026 its home page no longer described the web-automation service; it says only that the team is building Maxxwell, which it calls 'the IDE for optimal tokenmaxxing', and links to maxxwell.dev, where Maxxwell is described as a free desktop app for managing several coding agents at once. Rindler's pricing, About and FAQ pages were still online with the plans below, but the home page no longer promotes the service, so confirm with the team that it is still sold before signing up.</p><p><em>We have not tested Rindler ourselves. This page brings together its official site, pricing, About and FAQ pages, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "Browser automation",
+    "platform": "Web app and MCP server",
+    "starts_at": "$100/month after a 7-day free trial",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Automates repetitive work on login-gated web portals from plain-English tasks",
+    "maker": {"name": "Michael Serrano", "url": "https://www.producthunt.com/@michael_serrano"},
+    "team": [
+      {"name": "Michael Serrano", "role": "Maker; ML researcher at MIT CSAIL", "url": "https://www.producthunt.com/@michael_serrano"},
+      {"name": "Arthur De Los Santos", "role": "Co-founder and CTO", "url": "https://www.producthunt.com/@arthurdls"}
+    ],
+    "ph": {"rank": 3, "votes": 235, "comments": 21, "followers": 518, "launched": "2026-08-07", "as_of": "2026-10-14"},
+    "video_url": "https://www.youtube.com/watch?v=V_nCIxYD-so",
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/e5f5ded9-53f3-4faa-83fd-1c4bd6ccab8d.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Rindler on Product Hunt",
+       "alt": "Rindler graphic 'One box. Ask for anything on a site you have connected.' with a message box for the agent"},
+      {"url": "https://ph-files.imgix.net/bc2f07b8-a8c6-45e5-9ee2-0bb38aa887a3.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Rindler on Product Hunt",
+       "alt": "Rindler permissions screen 'You decide what it is never allowed to do', with paying and changing card details set to never and a log of refusals"},
+      {"url": "https://ph-files.imgix.net/05358d8d-fddd-47ce-83cd-8b941348943c.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Rindler on Product Hunt",
+       "alt": "Rindler scheduled automations such as a nightly price check, filing a monthly statement and watching for a restock"},
+      {"url": "https://ph-files.imgix.net/6824ef80-529c-476e-94b6-df9caead0b67.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Rindler on Product Hunt",
+       "alt": "Rindler weekly summary of tasks done, actions stopped by your rules and sites connected"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Michael Serrano describes Rindler as a map of a website that an agent calls instead of reading the page. The map knows the site's screens, what you can do on each and what comes back, so your agent gets the same fields in the same shape every run.",
+        "He says the team builds each map once before anyone runs against it: an ingest step works out the site, a mapper drives it click by click to draft the map, and a fleet of agents checks it. They had mapped more than 1,000 sites at launch."
+      ],
+      "attribution": "Michael Serrano, maker, on Product Hunt",
+      "url": "https://www.producthunt.com/products/rindler?comment=5745164"
+    },
+    "use_cases": [
+      "Pulling records or statements from a supplier, carrier or payer portal every week",
+      "Checking claim or order status across login-gated sites",
+      "Submitting the same form on a portal that has no API",
+      "Letting your own agent call a site through Rindler's MCP server"
+    ],
+    "audience": {
+      "fit": [
+        "have staff re-keying data from portals that will never have an API",
+        "work in procurement, insurance, healthcare billing, recruiting or lending, the use cases its site lists",
+        "want predictable structured output rather than a general browsing agent"
+      ],
+      "not_fit": [
+        "only need occasional one-off scraping: plans start at $100 a month",
+        "want a self-serve tool for many sites cheaply: the Starter plan covers one login-gated site"
+      ]
+    },
+    "pricing": {
+      "intro": "Rindler charges for runs that finish: one run is one completed task, however many steps it takes. Prices are in US dollars.",
+      "url": "https://rindler.com/pricing",
+      "checked": "2026-10-15",
+      "plans": [
+        {"name": "Starter", "price": "$100/month", "amount": 100, "currency": "USD", "detail": "7-day free trial; 100 one-off runs a month; one login-gated site set up with you; access to every supported site; email support"},
+        {"name": "Teams", "price": "$1,000/month", "amount": 1000, "currency": "USD", "detail": "1,000 runs a month, one-off or scheduled; 10 login-gated sites; scheduled automations; team workspace"},
+        {"name": "Enterprise", "price": "Custom", "detail": "More sites, extra capacity, annual agreement billed monthly with a pilot first month, dedicated onboarding"}
+      ],
+      "notes": ["1 run = 1 finished task = $1, according to the pricing page; steps and time don't count.", "On 15 October 2026 these plans were still on rindler.com/pricing, but the home page promoted only Maxxwell, the team's new product. Confirm the service is still offered before paying."]
+    },
+    "alternatives": {
+      "intro": "Other tools that automate work in websites. Prices are from each company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "Skyvern", "url": "https://www.skyvern.com/", "what": "AI browser automation for forms, portals and workflows", "starts_at": "Free 5,000 credits; Hobby $29/month",
+         "difference": "A general AI browser agent priced by credits, with an open-source core; Rindler pre-maps each site and charges per finished run."},
+        {"name": "Browse AI", "url": "https://www.browse.ai/", "what": "No-code robots that extract and monitor website data", "starts_at": "Personal $19/month billed annually",
+         "difference": "Built mainly for scraping and monitoring public data; Rindler focuses on tasks inside login-gated portals."}
+      ]
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/rindler/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["Consistent fields in the same shape every run", "Working with the existing AI ecosystem rather than competing with it"],
+        "asked": ["Whether there is an SDK or TypeScript client (use the MCP server over HTTP with a bearer token, the makers said)", "What if a site blocks agent access (Rindler works the site the way a person does; there is no API access to grant)"],
+        "criticised": ["One commenter warned that a map that falls quietly out of date could return the right shape with wrong values"]
+      },
+      "quotes": [
+        {"text": "A map that's quietly a week behind still returns the right shape with a value read off the wrong element", "author": "Asad M.", "url": "https://www.producthunt.com/products/rindler?comment=5771820"},
+        {"text": "I'm always excited by products that make the entire AI ecosystem stronger rather than competing with every existing tool.", "author": "Angela Anna", "url": "https://www.producthunt.com/products/rindler?comment=5769687"}
+      ]
+    },
+    "pros": [
+      "Charges only for finished runs",
+      "Works on portals with no API, including behind logins",
+      "Rules for actions it must never take, with a log",
+      "MCP server for developers"
+    ],
+    "cons": [
+      "$100 a month minimum after the trial",
+      "Starter covers one login-gated site",
+      "The home page now promotes a different product, Maxxwell"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/rindler",
+      "quotes": [
+        {"author": "Dhiraj Wohra", "url": "https://www.producthunt.com/products/rindler?comment=5769968", "text": "what if the site has disabled Agentic access..",
+         "reply": "Michael Serrano said Rindler doesn't sit on an API or integration, so there is no access to grant; it works a site the way a person does."}
+      ],
+      "x": {"profile_url": "https://twitter.com/rindlerai", "search_url": "https://x.com/search?q=rindler&f=live", "none": "Apart from Rindler's own account, we found no posts on X clearly about the product."}
+    },
+    "faq": [
+      {"q": "What is Rindler?", "a": "A service that runs repetitive web tasks on the portals your team logs into, such as pulling records, downloading statements and submitting forms, from plain-English instructions."},
+      {"q": "Is Rindler still the team's main product?", "a": "Its home page now promotes Maxxwell, a desktop app for managing coding agents that the Rindler team is building. The Rindler pricing, About and FAQ pages are still online, but check with the team that the web-automation service is still offered."},
+      {"q": "How much does Rindler cost?", "a": "Starter is $100 a month for 100 runs after a 7-day free trial, Teams is $1,000 a month for 1,000 runs, and Enterprise is custom. A run is one finished task."},
+      {"q": "Who is behind Rindler?", "a": "Founders who met at MIT; the site says it was founded in 2025 and is backed by Y Combinator. On Product Hunt the makers are Michael Serrano and co-founder and CTO Arthur De Los Santos."},
+      {"q": "Can developers call Rindler from code?", "a": "Yes, through its MCP server over HTTP with a bearer token, according to the makers."},
+      {"q": "What happens when a site changes?", "a": "Rindler says it maps sites ahead of time and repairs workflows when pages change, and tells you when a run doesn't go through."}
+    ],
+    "sources": [
+      {"label": "Rindler home page", "url": "https://rindler.com/"},
+      {"label": "Rindler pricing", "url": "https://rindler.com/pricing"},
+      {"label": "Rindler About page", "url": "https://rindler.com/about"},
+      {"label": "Rindler FAQ", "url": "https://rindler.com/faq"},
+      {"label": "Maxxwell by Rindler", "url": "https://maxxwell.dev/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/rindler?launch=rindler"},
+      {"label": "Skyvern pricing", "url": "https://www.skyvern.com/pricing"},
+      {"label": "Browse AI pricing", "url": "https://www.browse.ai/pricing"}
+    ]
+  }
+}

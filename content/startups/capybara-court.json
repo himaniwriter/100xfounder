@@ -1,0 +1,266 @@
+{
+ "slug": "capybara-court",
+ "excerpt": "Capybara Court is a free beta app where two people each answer four sealed questions about a small argument and an AI capybara judge splits the fault. How it works, privacy and alternatives.",
+ "content": "<p>Capybara Court is a phone app for settling small, everyday arguments, such as who does the dishes or why the fan stayed on all night. Two people answer the same four questions about the dispute: what happened, what bothered them most, what the other person should do and what their own part was. Each side is sealed as soon as it is written, so neither person can read the other's answers. Only the judge, a cartoon capybara called Cappy, reads both.</p><p>The ruling opens on both phones at the same time. Cappy names what the quarrel was really about, splits the fault (never 100 to 0) and suggests one small, silly thing to do together. If you have nobody to summon, you can post your side to a public gallery with names covered and let strangers weigh in. Everything shreds itself 30 days after filing. There are no accounts, no ads and no trackers, and it works in English and Korean. Rulings are written by Google's Gemini model on Vertex AI.</p><p>Capybara Court is made by Jungsik Byun, a solo developer in Korea. It launched on Product Hunt on 4 October 2026 and finished #12 for the day with 94 upvotes. It is available on iPhone, Android and the web, and is free while in beta.</p><p><em>We have not tested Capybara Court ourselves. This page brings together its official site and privacy policy, its Product Hunt page and the official pages of comparable apps, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Relationships and games",
+  "platform": "iOS, Android and web",
+  "os": "iPhone and Android apps; no account needed",
+  "starts_at": "Free while in beta",
+  "schema_category": "GameApplication",
+  "summary_short": "Free app where an AI capybara judge reads both sides of a small argument and splits the fault",
+  "maker": {
+   "name": "Jungsik Byun",
+   "url": "https://www.producthunt.com/@jungsik_byun"
+  },
+  "team": [
+   {
+    "name": "Jungsik Byun",
+    "role": "Solo developer",
+    "url": "https://www.producthunt.com/@jungsik_byun"
+   }
+  ],
+  "ph": {
+   "rank": 12,
+   "votes": 94,
+   "comments": 7,
+   "followers": 105,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://www.youtube.com/watch?v=fT7mnZwHyP0",
+  "video_title": "Capybara Court launch film",
+  "use_cases": [
+   "Settling a small household argument with a partner or flatmate without either side feeling ganged up on",
+   "Getting each person's side down in writing before talking it through",
+   "Posting a petty grievance anonymously and seeing what strangers think",
+   "A light-hearted way to raise something that keeps annoying you"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Jungsik Byun, a solo developer working from Korea, says small arguments are awkward to raise and pile up when you let them go. He wanted a place where both people say their piece and a gentle third party sorts it out, so he built a courthouse for arguments too small for anywhere else.",
+    "He explained that the sealing is enforced by a database rule rather than a promise: each phone is refused permission to read the other's words, and only the judge on the server reads both. The server keeps the fault split between 25 and 75, and when a dispute reads like a real grievance rather than a petty one, Cappy writes a settlement with no winner instead of a verdict.",
+    "He was also clear about limits. Cappy is a cartoon, not a lawyer, doctor or counsellor, and if the court sees signs of harm, abuse or something urgent, it gives no verdict, publishes nothing and points to real help."
+   ],
+   "attribution": "Jungsik Byun, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/capybara-court?comment=5917992"
+  },
+  "audience": {
+   "fit": [
+    "want a playful, low-stakes way to settle small arguments with a partner, friend or flatmate",
+    "care about privacy: no account, no ads, and everything is deleted after 30 days",
+    "speak English or Korean"
+   ],
+   "not_fit": [
+    "are dealing with a serious conflict, abuse or a safety issue: the app says it is not a counsellor and will point you to real help instead of ruling",
+    "want a judge that can declare one side 100% at fault: the split is kept between 25 and 75 by design",
+    "need it on a device without the app stores: it is offered on iPhone and Android plus a website"
+   ]
+  },
+  "pricing": {
+   "intro": "Capybara Court is free while it is in beta. The site does not say what it will cost after the beta.",
+   "url": "https://capybara-court.web.app/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Beta",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "No accounts, no ads, no trackers"
+    }
+   ],
+   "notes": [
+    "No paid plan or post-beta price has been published. We did not check the app stores for in-app purchases."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt's suggestions here are mostly relationship and party apps. We compared the closest ones, plus Piece, which we found by search and which also settles couples' arguments with AI. Prices are what each product's own site states, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Piece",
+     "url": "https://thepiece.app/",
+     "what": "AI third party for small fights: each partner records their side and the app says who should apologise",
+     "starts_at": "Free on iOS and Android",
+     "difference": "Uses voice recordings on one shared phone and names who owes the apology. Capybara Court uses typed, sealed answers on separate phones and splits the fault."
+    },
+    {
+     "name": "Maia",
+     "url": "https://www.ourmaia.com/",
+     "what": "AI relationship coach for couples, with advice and date ideas",
+     "starts_at": "Pricing not published on its site",
+     "ph_rating": 5.0,
+     "ph_reviews": 2,
+     "difference": "An ongoing coaching chat rather than a one-off ruling on a single dispute."
+    },
+    {
+     "name": "Purpur",
+     "url": "https://feelpurpur.app/",
+     "what": "Therapy-style card game that helps couples talk",
+     "starts_at": "Free with in-app purchases; see its App Store listing",
+     "ph_rating": 4.8,
+     "ph_reviews": 4,
+     "difference": "Guided conversation prompts with no AI verdict. Its App Store listing shows conflicting subscription prices, so we have not quoted one."
+    }
+   ],
+   "more": "Product Hunt also lists Photobomb, Bit Sketchy!, Gas, Happy Couple, BeReal, Trendoline, BestInterest for Coparents and Papaya."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/capybara-court/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "The idea itself and the launch film"
+    ],
+    "asked": [
+     "How long each side's answers can be (four answers of up to 500 characters each)",
+     "Why the fault is never split further than 75 to 25"
+    ],
+    "criticised": [
+     "Android availability: at launch the Android app had only been released in Korea (the maker then opened it to every country)"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Love the idea, does it support long context arguments?",
+     "author": "Zuhair Naqvi",
+     "url": "https://www.producthunt.com/products/capybara-court?comment=5919580"
+    },
+    {
+     "text": "I want but it's not compatible with my OnePlus 9 5G",
+     "author": "Daniel L",
+     "url": "https://www.producthunt.com/products/capybara-court?comment=5919777"
+    }
+   ]
+  },
+  "pros": [
+   "Free during the beta, with no account, ads or trackers",
+   "Each side is sealed so neither person reads the other's answers",
+   "Everything is deleted 30 days after filing",
+   "Built-in safety: no verdict, and a pointer to real help, when it sees signs of harm",
+   "Works solo through an anonymous gallery with names masked"
+  ],
+  "cons": [
+   "No price announced for after the beta",
+   "Answers are short (up to 500 characters each), by design",
+   "Masking in the gallery is described by the maker as careful rather than perfect",
+   "English and Korean only"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/capybara-court",
+   "x": {
+    "none": "We found no posts about Capybara Court on X yet.",
+    "search_url": "https://x.com/search?q=%22Capybara%20Court%22&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Capybara Court free?",
+    "a": "Yes, while it is in beta. No price for after the beta has been published."
+   },
+   {
+    "q": "Can the other person read what I wrote?",
+    "a": "No. Each side is sealed when it is written; the maker says a database rule stops each phone reading the other's words, and only the AI judge reads both."
+   },
+   {
+    "q": "How long can my answers be?",
+    "a": "Each person answers four questions of up to 500 characters, about a page per side, according to the maker."
+   },
+   {
+    "q": "Why does the judge never give 100% of the blame to one person?",
+    "a": "The maker says this is deliberate. A 75 to 25 split already says the fight is mostly one person's, and the judge only hears two people's own versions, so a fuller split would claim more certainty than it has."
+   },
+   {
+    "q": "What happens to my data?",
+    "a": "Cases are deleted 30 days after filing, and withdrawing a case discards it at once. Rulings are made with Google's Gemini on Vertex AI, which the privacy policy says is not used for training. There is no email, phone number or password; crash reports are kept for 90 days."
+   },
+   {
+    "q": "Is it available outside Korea on Android?",
+    "a": "Yes. The maker said on Product Hunt that the Android app was first released only in Korea and that he opened it to every country after launch."
+   },
+   {
+    "q": "Who is it for?",
+    "a": "People aged 13 and over, according to the privacy policy; the public gallery is meant for adults."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Capybara Court official site",
+    "url": "https://capybara-court.web.app/"
+   },
+   {
+    "label": "Capybara Court privacy policy",
+    "url": "https://capybara-court.web.app/privacy"
+   },
+   {
+    "label": "Capybara Court on the App Store",
+    "url": "https://apps.apple.com/app/id6807852354"
+   },
+   {
+    "label": "Capybara Court on Google Play",
+    "url": "https://play.google.com/store/apps/details?id=com.tinygavel.tiny_gavel"
+   },
+   {
+    "label": "Capybara Court launch film",
+    "url": "https://www.youtube.com/watch?v=fT7mnZwHyP0"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/capybara-court"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/capybara-court/alternatives"
+   },
+   {
+    "label": "Piece",
+    "url": "https://thepiece.app/"
+   },
+   {
+    "label": "Maia",
+    "url": "https://www.ourmaia.com/"
+   },
+   {
+    "label": "Purpur",
+    "url": "https://feelpurpur.app/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/1bb47b56-0e36-4a20-b243-4f99a60e0a13.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Capybara Court title card with the capybara judge and the line 'Little disputes, gently settled.'"
+   },
+   {
+    "url": "https://ph-files.imgix.net/33e56fc8-d5f4-4e35-bf6f-a9580e92c331.png?auto=format&fit=max&w=1400",
+    "alt": "Capybara Court graphic 'Your partner can't read it.': a sealed answer card beside a phone showing that only the judge reads both sides"
+   },
+   {
+    "url": "https://ph-files.imgix.net/f0f47060-502f-4926-94ff-b12c71c79964.png?auto=format&fit=max&w=1400",
+    "alt": "A sample ruling, 'The Dishes Case' between Mina and Jun, with the sentence 'Later needs a clock', a small task for tonight and the fault split"
+   },
+   {
+    "url": "https://ph-files.imgix.net/d8b61f51-6aca-4bf7-9e04-0360841e60a7.png?auto=format&fit=max&w=1400",
+    "alt": "Capybara Court graphic 'Just you? That works too.' showing anonymous dispute notes pinned up on the public wall"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/1bb47b56-0e36-4a20-b243-4f99a60e0a13.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Capybara Court title card with the capybara judge and the line 'Little disputes, gently settled.'"
+   },
+   {
+    "url": "https://ph-files.imgix.net/33e56fc8-d5f4-4e35-bf6f-a9580e92c331.png?auto=format&fit=max&w=1400",
+    "alt": "Capybara Court graphic 'Your partner can't read it.': a sealed answer card beside a phone showing that only the judge reads both sides"
+   },
+   {
+    "url": "https://ph-files.imgix.net/f0f47060-502f-4926-94ff-b12c71c79964.png?auto=format&fit=max&w=1400",
+    "alt": "A sample ruling, 'The Dishes Case' between Mina and Jun, with the sentence 'Later needs a clock', a small task for tonight and the fault split"
+   }
+  ]
+ }
+}

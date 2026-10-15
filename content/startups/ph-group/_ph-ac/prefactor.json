@@ -1,0 +1,609 @@
+{
+ "input": "https://www.producthunt.com/posts/prefactor",
+ "final_url": "https://www.producthunt.com/products/prefactor?launch=prefactor",
+ "launch": {
+  "slug": "prefactor",
+  "name": "Prefactor",
+  "tagline": "Evaluate your AI Agents in real-time",
+  "featuredAt": "2026-07-28T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "2",
+  "points": 570,
+  "commentsCount": 191,
+  "pricingType": "free",
+  "description": "Most agents pass their evals and fail in production. \n\nPrefactor is the evaluation layer that closes the gap. \n\nWe score every agent run in real time, surface quality regressions and drift as they happen, and show engineering teams exactly how their agents are performing at scale. \n\nBuilt for the teams shipping agents to customers.",
+  "makers": [
+   {
+    "name": "Ethan Lee",
+    "username": "ethan_lee8",
+    "headline": "I like building :)"
+   },
+   {
+    "name": "Josh Gillies",
+    "username": "joshgillies",
+    "headline": "AI Engineer @ Prefactor"
+   },
+   {
+    "name": "Simon Russell",
+    "username": "simonrussell_au",
+    "headline": "Co-founder and CTO at Prefactor"
+   },
+   {
+    "name": "Mukil Cb",
+    "username": "rheu",
+    "headline": "Software developer"
+   },
+   {
+    "name": "Matt Doughty",
+    "username": "matt_doughty",
+    "headline": "Co-Founder and CEO of Prefactor.Tech."
+   },
+   {
+    "name": "Joseph Cholakyan",
+    "username": "joeys",
+    "headline": "Product Designer"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "a3db6429-c30c-4462-a6ff-d3896ad6d2c5.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "e43c0263-e8df-4697-a2b2-7817d04a2d57.png",
+    "type": "image",
+    "w": 2560,
+    "h": 1440,
+    "video": null
+   },
+   {
+    "uuid": "5666270e-9a5f-47d5-9a8f-cec13c15e089.png",
+    "type": "image",
+    "w": 3840,
+    "h": 2160,
+    "video": null
+   },
+   {
+    "uuid": "66f2a38e-2654-4946-b774-a8d8f02afdfe.png",
+    "type": "image",
+    "w": 3840,
+    "h": 2160,
+    "video": null
+   },
+   {
+    "uuid": "8825e809-65dc-490e-9702-8190c678a613.png",
+    "type": "image",
+    "w": 3840,
+    "h": 2160,
+    "video": null
+   },
+   {
+    "uuid": "1d8e4b56-f646-421a-b812-01875acb1647.png",
+    "type": "image",
+    "w": 3840,
+    "h": 2160,
+    "video": null
+   },
+   {
+    "uuid": "24f667f3-cc6a-4a97-9986-13dc6d4be5ab.png",
+    "type": "image",
+    "w": 2560,
+    "h": 1440,
+    "video": null
+   },
+   {
+    "uuid": "91f9ccde-b16b-470b-be0a-cf236f0506e1.png",
+    "type": "image",
+    "w": 2560,
+    "h": 1440,
+    "video": null
+   },
+   {
+    "uuid": "e3a4ee5a-87ea-4d4d-b879-dba16042f4cd.png",
+    "type": "image",
+    "w": 3840,
+    "h": 2160,
+    "video": null
+   },
+   {
+    "uuid": "098561d1-50c0-4255-94ab-76fe6c049e30.png",
+    "type": "image",
+    "w": 2560,
+    "h": 1440,
+    "video": null
+   },
+   {
+    "uuid": "96b190b6-586f-46b6-b882-266bcb08d9b2.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/jJnkSklhwgg"
+   }
+  ],
+  "links": [
+   "prefactor.tech",
+   "x.com",
+   "www.linkedin.com"
+  ],
+  "badges": [
+   [
+    "weekly",
+    2
+   ],
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "Prefactor",
+  "slug": "prefactor",
+  "tagline": "Catch your agents' mistakes before they reach customers",
+  "description": "We evaluate every step your agents take, live. Errors get caught as they happen. \n\nNot in a Slack thread at 1am on a Tuesday",
+  "websiteUrl": "https://prefactor.tech/producthunt",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 1393,
+  "twitterUrl": "https://x.com/prefactordev",
+  "linkedinUrl": "https://www.linkedin.com/company/prefactor/",
+  "instagramUrl": "",
+  "githubUrl": "",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5568918",
+   "depth": 0,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hi Product Hunt - Matt here, co-founder of Prefactor with Simon. We've been heads-down on this one for a while, so finally getting to show you is a real thrill. Let me start with the question this whole thing is built around: do you actually know what your agents are doing in production right now? For most teams we talk to, the honest answer is \"…not really.\" Your evals pass, everything's green , you ship - and then every real run vanishes into a black box . Quality quietly drifts. Risk creeps in. Costs climb. And eventually someone asks which of your agents are still doing their job, and the room goes quiet. That silence is the entire reason Prefactor exists. Gartner reckons 40%+ of agentic AI projects get scrapped by 2027 - and honestly, this gap is a big part of why. So we built the thing we kept wishing we had: Prefactor scores every run in production the moment it happens - quality, drift, risk - then wires those scores straight into action. A failing agent gets caught live, not charted three days later. How it actually works prefactor init - one command connects your workspace and discovers your agents across your runtimes. First traced run in under 5 minutes. Drop in the SDK"
+  },
+  {
+   "id": "5672263",
+   "depth": 1,
+   "author": "Stefan Knight",
+   "username": "stefan_knight",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@simon_russell1 &nbsp; @joshgillies &nbsp; @ethan_lee8 &nbsp; @rheu &nbsp; @joeys &nbsp; @rohanrecommends &nbsp; @rohanchaubey4 &nbsp; @matt_doughty &nbsp;Love this. I wouldn't leave my toddler home alone so why would I deploy an agent and not checkup on it. You get it. Cut through the agentic AI hype and solve the issues so we can actually get ROI on AI."
+  },
+  {
+   "id": "5672287",
+   "depth": 2,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@simon_russell1 &nbsp; @joshgillies &nbsp; @ethan_lee8 &nbsp; @rheu &nbsp; @joeys &nbsp; @rohanrecommends &nbsp; @rohanchaubey4 &nbsp; @stefan_knight &nbsp;Thanks Stefan. This is awesome to hear. How do you answer the question of what your agents are actually doing?"
+  },
+  {
+   "id": "5675868",
+   "depth": 1,
+   "author": "Flavio Riper",
+   "username": "flavio_riper",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats on the launch. The runtime enforcement piece stands out. One problem I keep running into with production agent evaluation is testing the evaluator itself. If an LLM judge, rubric, or source context changes, a score can move even when agent behavior does not. Do you bind each decision to the exact evaluator version and evidence used? Do you run negative controls that should fail when grounding or expected behavior is removed? That seems important for distinguishing an agent regression from an evaluation regression."
+  },
+  {
+   "id": "5679743",
+   "depth": 2,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@flavio_riper &nbsp;Hey Flavio, I think I missed this earlier today. Sorry! We give you the tools to do that yourself, but the core of what we have today is based on not using an LLM at all. Risk profiling runs over every run and is run against a defined set of criteria. The next phase of our roadmap is introducing evals as a first class asset inside the product so we can do exactly what you've just said. I would add that an eval is attached to a run in our model, so you see the outcome of the evalls inside the agent itself. You can then define the actual agent eval/ llm eval as its own separate instance. So you would be able to compare the changes in both over time. But really the idea is to give more context to the agent and what the agent can do."
+  },
+  {
+   "id": "5692504",
+   "depth": 3,
+   "author": "Flavio Riper",
+   "username": "flavio_riper",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@matt_doughty &nbsp; That makes sense. One thing I am still curious about: if an eval changes later, can you still see the exact version and criteria used for an older run? Otherwise comparisons could get a little slippery over time."
+  },
+  {
+   "id": "5725812",
+   "depth": 3,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@flavio_riper &nbsp;thanks for the comment. An eval would be created as an agent very likely, and you can then version control the agent, push it between envs but then easily track what has changed and the results off the back of it. You can also see spans inside the run that reflect the eval itself and the reaults."
+  },
+  {
+   "id": "5678811",
+   "depth": 1,
+   "author": "Reda Roqai chaoui",
+   "username": "reda_roqai_chaoui",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@matt_doughty &nbsp;I'm curious what types of agents benefit the most from this. Customer support, coding agents, research agents...?"
+  },
+  {
+   "id": "5679737",
+   "depth": 2,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@reda_roqai_chaoui &nbsp;hey Reda, we have some good use cases on voice agents, customer support, GTM workflows, multi step agent. We have spent less time on coding agents but did a POC for VS Code. We feel like today, there are a lot of solutions targeted at coding agents. I will add that the agents built for inside the SDLC are very much in our wheelhouse though."
+  },
+  {
+   "id": "5672692",
+   "depth": 0,
+   "author": "Ben Lang",
+   "username": "benln",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats Ethan and team!"
+  },
+  {
+   "id": "5672731",
+   "depth": 1,
+   "author": "Josh Gillies",
+   "username": "joshgillies",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@benln &nbsp;appreciate the support 🙏"
+  },
+  {
+   "id": "5672741",
+   "depth": 1,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@benln &nbsp;Thanks Ben!"
+  },
+  {
+   "id": "5672805",
+   "depth": 1,
+   "author": "Ethan Lee",
+   "username": "ethan_lee8",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@benln thanks Ben! 😁"
+  },
+  {
+   "id": "5675573",
+   "depth": 1,
+   "author": "Ethan Lee",
+   "username": "ethan_lee8",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@benln &nbsp;Thanks Ben! Appreciate the support 🙏"
+  },
+  {
+   "id": "5672400",
+   "depth": 0,
+   "author": "Abdullah Javaid",
+   "username": "abdullah_javaid3",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Ethan asked how people keep tabs on live agents, so here is my honest answer. I run scheduled agent jobs daily for SEO reporting and roughly one in three submits used to report success while the page never actually changed, so every job now ends by rereading the rendered result and comparing it against what the agent claimed. Mukil's question of did it actually do it or did it just say it did is the exact failure I kept measuring. Can an eval in Prefactor check an external side effect like that, the page actually updated or the row actually written, instead of scoring the run transcript?"
+  },
+  {
+   "id": "5672447",
+   "depth": 1,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@abdullah_javaid3 &nbsp;Thanks for your comment. Short answer: yes, and it's basically the loop you already built. The re-read-and-compare step becomes the eval signal. Your job verifies the real outcome (re-reads the rendered page, or queries the row) and emits that as a span, and the eval scores against that ground truth instead of the agent's self-reported \"success.\" So Prefactor never has to trust \"I did it\", it scores what actually landed. That's exactly Mukil's line: the transcript is the claim, the emitted outcome is the verification, and the eval only counts the second one. Your 1-in-3 false-success rate is precisely what surfaces once you're scoring outcomes instead of runs."
+  },
+  {
+   "id": "5673085",
+   "depth": 1,
+   "author": "Simon Russell",
+   "username": "simonrussell_au",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@abdullah_javaid3 &nbsp;Interesting question. Alongside the LLM activity you can store whatever you like; also you can store quality assessments against an individual run. Usually the goal is to understand what the success rate is, then use that information to improve the prompting and harness. For your situation a hybrid of prompting and deterministic assessment makes sense."
+  },
+  {
+   "id": "5679981",
+   "depth": 1,
+   "author": "Aryan Singhal",
+   "username": "aisinghal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@abdullah_javaid3 &nbsp;The 1-in-3 false success number is pretty crazy. how often does the re read catch something the transcript said was fine? and when it does catch one, is the fix usually a prompt change or was the tool call itself wrong? asking becuase i keep finding teams who built the same verification loop by hand and nobody talks about it."
+  },
+  {
+   "id": "5729945",
+   "depth": 2,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@abdullah_javaid3 &nbsp; @aisinghal &nbsp;so I have a similar set up with N8N. I've had to layer in confirmation screens and fail safes. I normally find that it's less that it fails regularly, more that it fails silently. I set up a Watcher Agent as a background worker, I see it's output in Prefactor, but the objective is to view every span coming out of my N8N in Prefactor. It then pings me on Slack whenever it stops working or something isn't quite right."
+  },
+  {
+   "id": "5731757",
+   "depth": 3,
+   "author": "Abdullah Javaid",
+   "username": "abdullah_javaid3",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@aisinghal &nbsp; @matt_doughty &nbsp;About 1 in 3, and it's almost never a prompt issue. Traced mine back to coordinate drift, a sidebar or ad rail loading late and shifting the layout after the screenshot I clicked from was taken. The click event fires so the transcript reads success, but it lands on the wrong element. That is why every job of mine now re reads the rendered page and diffs it against the claim before calling anything done."
+  },
+  {
+   "id": "5736711",
+   "depth": 3,
+   "author": "Aryan Singhal",
+   "username": "aisinghal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@matt_doughty &nbsp; @abdullah_javaid3 &nbsp; when you re read and find a mismatch, do you have the original page state from the run that broke, or do you re run it and hope it drifts the same way?"
+  },
+  {
+   "id": "5675407",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the \"too many tools / looping too frequently\" answer is close but not quite the failure mode I'd worry about most. we do voice agents at Dial, and the thing that never shows up in a transcript-based eval is time-to-respond. an agent can land a perfectly correct final answer and still lose the interaction because it took 4 seconds of dead air to get there and the caller hung up or talked over it. does Prefactor score per-turn latency as its own quality dimension, or is timing something teams have to instrument themselves as a custom span?"
+  },
+  {
+   "id": "5675451",
+   "depth": 1,
+   "author": "Ethan Lee",
+   "username": "ethan_lee8",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan &nbsp;That's a very interesting point Gal, would love for you to come test it and get your feedback. We actually have another user using Prefactor with their voice agents too. @simon_russell1 @joshgillies"
+  },
+  {
+   "id": "5676505",
+   "depth": 1,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan hey Gal, thanks for the comment. that's a really interesting insight. what we've found with voice agents is also the transcription isn't 100% either, so customers get supremely irritated when the voice to text to agent to voice model doesn't work properly. how are you handling that today?"
+  },
+  {
+   "id": "5676981",
+   "depth": 2,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@matt_doughty &nbsp;thanks Ethan, will do. on the transcription question - we don't trust the ASR output blindly, we use the confidence score off the streaming transcript and if it drops below a threshold on anything that matters (a name, a number, an amount) we have the agent read it back before acting on it rather than assuming it heard correctly. costs a beat of latency but it's cheaper than acting on a wrong digit. the harder case is when the ASR is confident and wrong, since there's no signal to catch that at all - that one we mostly catch downstream when the action fails or the user corrects us out loud. curious if Prefactor's eval layer has a way to flag \"confident but wrong\" transcription the same way it flags confident-but-wrong agent outputs, or if that's a different problem since the errors happen before the agent even runs"
+  },
+  {
+   "id": "5677597",
+   "depth": 1,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan there are two answers to this. 1) depends on how you're getting that data. directly through 11labs or through a livekit etc? As Livekit doesn't take all the meta data. 2) you'd define the quality and risk schema as tight as possible in the agent, so a) you know what you're looking for. and b) so that Prefacfor can pick up the error as it occurs/ as the call is being made, before the outcome is sent to the customer. If you're up for it, I'd love to get on a call and learn more about that workflow and where we could help you. Your problem is not unique, and voice agents are a tricky bunch because the level of trust and confidence the user gives the agent Vs a chatbot"
+  },
+  {
+   "id": "5736728",
+   "depth": 1,
+   "author": "Aryan Singhal",
+   "username": "aisinghal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@galdayan &nbsp;when you changed something upstream of it, prompt, model, tool schema, how did you check the read-back still fired on the calls it used to catch?"
+  },
+  {
+   "id": "5679723",
+   "depth": 0,
+   "author": "Grace Lee",
+   "username": "grace_lee26",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The part I’d be most curious about is how Prefactor connects transcript quality to real-world side effects. For agents, the scary failure is often not “bad answer in the log,” but “the system said it updated something and the external state never changed.” If an eval can check the rendered page, written row, sent message, or skipped action against the agent’s claim, that feels much closer to production trust than scoring the conversation alone."
+  },
+  {
+   "id": "5679775",
+   "depth": 1,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@grace_lee26 &nbsp;Hey Grace. Thanks for the comment. Annoyingly I wrote a world class response and then my browser reloaded and I lost it, so hopefully it's almost as good! :) We don't look at transcript quality as the core of our metrics. The agent run consists of the transcript, the tool calls, the behaviour and patterns it took, Our risk profiles are a great example of how we think about that. The risk profile is driven by the agent schema. eg, what can the agent do, what type of data can it access, what tools can it reach and what actions it can take. That's all defined up front. We then review the difference between what it's allowed to do and what it does. So in your example of the end state never changing, my assumption would be that that tool call would fail, it would get identified as a failure and you would be able to trace back to why that tool call has failed. Our system gives a lot of functionality out of the box but how you use it when you deploy an eval, is down the user. We will soon have evals as a first class item inside the platform and what you've highlighted would be a question at the forefront of how we don't just make another eval."
+  },
+  {
+   "id": "5679989",
+   "depth": 1,
+   "author": "Aryan Singhal",
+   "username": "aisinghal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@grace_lee26 &nbsp;hey im curious whether you've hit this yourself or it's the failure mode you'd expect. asking because someone in this thread measured it at 1 in 3 and i want to know if that's typical or an outlier."
+  },
+  {
+   "id": "5680182",
+   "depth": 1,
+   "author": "Simon Russell",
+   "username": "simonrussell_au",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@grace_lee26 &nbsp;To add onto what @matt_doughty said, you can also log the results of those checks against the agent instance/run and then use that to assess quality. It's not limited to just what the agent reports it's doing, anything you can instrument can be added to the trace."
+  },
+  {
+   "id": "5672402",
+   "depth": 0,
+   "author": "Rashad ",
+   "username": "rashad_builds",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Live mode stopping a run mid-breach is the feature I'd actually want. What happens to the agent's state/context at the moment it's stopped — does the next run pick up where it left off, or does it start clean? If a breach happens 20 steps into a long task, being able to see (or roll back to) exactly what the agent had built up right before the stop seems almost as valuable as the stop itself."
+  },
+  {
+   "id": "5672445",
+   "depth": 1,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@rashad_builds &nbsp;Hey mate, thanks for the comment. We stop via the span itself, and you can insert a HITL/ killswitch or another eval. So in that 20 step example, you see the whole flow which is stored as the instance (conversation/ run/ workflow) and at any point in that workflow, you can jump in."
+  },
+  {
+   "id": "5673066",
+   "depth": 1,
+   "author": "Simon Russell",
+   "username": "simonrussell_au",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@rashad_builds &nbsp;There are a few approaches -- but at the core of it all the actions are in Prefactor. So it would be entirely possible to reconstruct the context from that. (That's assuming you want it to continue -- usually it's more of a post-mortem thing)"
+  },
+  {
+   "id": "5674577",
+   "depth": 0,
+   "author": "Mittal Patel",
+   "username": "mittalpatel",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The \"tokenless until you actually need an LLM\" design is the part that stands out, most eval tools default to LLM-as-judge for everything and eat the cost whether it's warranted or not. Given you're scoring 100% of production traffic, curious how Prefactor handles agents that call other agents (sub-agent chains). Does a breach in a nested sub-agent bubble up and pause the parent run too, or does each agent in the chain get evaluated as its own isolated instance?"
+  },
+  {
+   "id": "5674646",
+   "depth": 1,
+   "author": "Josh Gillies",
+   "username": "joshgillies",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mittalpatel &nbsp;in the current design every agent whether it's a top-level agent or a sub-agent are treated as bespoke agents within Prefactor ie. they have their own identity, with spans attached to each of their own instances. So a breach in a sub-agent would only effect that agents run. You can of course decide whether that's also a stop condition for the parent, but that's very much up to the end user to decide. Admittedly sub-agents is something we've trialed a lot of design ideas for, and are admittedly not satisfied yet. That said we're always open to suggestions! What would your preference be for a case like this?"
+  },
+  {
+   "id": "5674664",
+   "depth": 1,
+   "author": "Matt Doughty",
+   "username": "matt_doughty",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mittalpatel &nbsp;Thanks for a great question. We treat everything as a chain. Every reaction, step, call. All in one view. Sub-agent break outs might occur in future versions if customers want it, but my gut tells me that people want to be able to see the whole workflow, subagents included. How they get represented is another question, but it doesnt make sense to cut them up."
+  }
+ ]
+}

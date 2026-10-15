@@ -1,0 +1,291 @@
+{
+  "slug": "visibai",
+  "ph_url": "https://www.producthunt.com/posts/visibai",
+  "existing_listing_slug": null,
+  "website": "https://getvisibai.com/",
+  "excerpt": "VisibAI checks whether ChatGPT, Perplexity, Claude and other AI assistants mention your business, scores it out of 100 and lists fixes. Free audit, from €29.",
+  "content": "<p>VisibAI is an AI visibility audit tool for small and medium businesses. You enter your website and industry, and it runs industry questions across AI assistants (ChatGPT, Perplexity, Claude, Gemini, Mistral and You.com, depending on plan), then records who appears and how often. You get a visibility score out of 100, a ranking against competitors and a prioritised list of fixes in plain English, such as unblocking AI crawlers in robots.txt or adding schema markup. A PDF report arrives by email, which VisibAI says takes under five minutes.</p><p>A free audit covers ChatGPT only with 20 queries and the top three issues, once every 90 days. A one-off Starter audit costs €29, Pro is €79 a month with competitor analysis and alerts, and Brand and Agency plans are €149 a month, the Agency plan adding white-label reports for up to 25 clients. The site also offers free tools such as an llms.txt generator and an AI crawler checker.</p><p>VisibAI's privacy policy says it is operated by Bianchi Web, and its terms are governed by Italian law. It says its database is hosted in the Supabase EU region, that audit data is never sold, and that queries are processed through OpenAI and Perplexity without being used for model training.</p><p>VisibAI was built by founder Francesco Bianchi. It launched on Product Hunt on 29 June 2026 and finished #4 for the day with 257 upvotes and 58 comments (as of 14 October 2026).</p><p><em>We have not tested VisibAI ourselves. This page brings together VisibAI's official site, pricing, privacy policy and terms, its Product Hunt launch and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Marketing and SEO",
+    "platform": "Web app",
+    "starts_at": "Free audit; one-off audit €29; Pro €79/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Audits whether AI assistants mention your business, with a 0–100 score and a fix list",
+    "maker": {
+      "name": "Francesco Bianchi",
+      "url": "https://www.producthunt.com/@francesco2689"
+    },
+    "use_cases": [
+      "Checking whether ChatGPT recommends your business for your industry",
+      "Comparing how often AI assistants mention you against competitors",
+      "Getting a plain-English list of fixes, such as robots.txt and schema changes",
+      "Agencies adding a white-label AI visibility report to client work",
+      "Tracking AI visibility monthly after making changes"
+    ],
+    "audience": {
+      "fit": [
+        "run a small or medium business and want a one-off check without a subscription",
+        "are a web agency that wants white-label AI visibility reports for clients",
+        "need an EU-hosted, GDPR-focused tool"
+      ],
+      "not_fit": [
+        "need statistically averaged tracking at enterprise scale: dedicated monitoring tools target that",
+        "want a guarantee of better AI visibility: the terms say no improvement is guaranteed",
+        "want every AI assistant on the free plan: it covers ChatGPT only"
+      ]
+    },
+    "pricing": {
+      "intro": "Prices are from VisibAI's own website, in euros. Annual plans are billed for 10 months and give 12.",
+      "url": "https://getvisibai.com/#pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "€0",
+          "amount": 0,
+          "currency": "EUR",
+          "detail": "1 audit per 90 days, ChatGPT only, 20 queries, visibility score, top 3 issues; no card needed"
+        },
+        {
+          "name": "Starter",
+          "price": "€29 one-off",
+          "amount": 29,
+          "currency": "EUR",
+          "detail": "1 audit, 4 AI platforms, 26 queries (104 AI checks), full fix list, PDF report"
+        },
+        {
+          "name": "Pro",
+          "price": "€79/month",
+          "amount": 79,
+          "currency": "EUR",
+          "detail": "Re-run on demand, 5 AI platforms (130 checks), competitor analysis, fix list and AI action plan, email alerts"
+        },
+        {
+          "name": "Brand",
+          "price": "€149/month",
+          "detail": "6 AI platforms (156 checks), AI accuracy audit, product-line and multi-region tracking, 10 saved competitors, fix files; arranged by contacting VisibAI"
+        },
+        {
+          "name": "Agency",
+          "price": "€149/month",
+          "detail": "White-label, up to 25 clients, 50 audits a month, up to 20 custom queries, agency dashboard, up to 10 team members; arranged by contacting VisibAI"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "detail": "Up to 8 AI platforms, unlimited audits, custom queries, dedicated SLA"
+        }
+      ],
+      "notes": [
+        "A Plus add-on for Brand and Agency costs €100 a month more (custom domain, no 'Powered by VisibAI' on PDFs, priority support).",
+        "A done-for-you service is offered from $179 a month.",
+        "Terms: 7-day refund window on first-time purchases; subscriptions can be cancelled any time and end with the billing period."
+      ]
+    },
+    "alternatives": {
+      "intro": "Other AI search visibility trackers, all of which VisibAI compares itself with on its site. Prices come from each tool's own pricing page, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "Otterly.ai",
+          "url": "https://otterly.ai/",
+          "what": "Monitors brand mentions and citations in AI search answers",
+          "starts_at": "Lite from $29/month (15 prompts); free trial",
+          "difference": "Subscription-based monitoring by prompt volume; no one-off audit."
+        },
+        {
+          "name": "Rankscale",
+          "url": "https://rankscale.ai/",
+          "what": "AI search visibility tracking and analytics",
+          "starts_at": "Essentials $17/month billed yearly; Pro $99/month with a 7-day free trial",
+          "difference": "Cheaper entry on a yearly plan, aimed at ongoing tracking rather than a single report."
+        },
+        {
+          "name": "Peec AI",
+          "url": "https://peec.ai/",
+          "what": "AI search analytics for marketing teams",
+          "starts_at": "See its pricing page",
+          "difference": "Built for marketing teams' continuous tracking rather than a quick one-off SMB audit."
+        }
+      ],
+      "more": "VisibAI's site also compares it with Semrush AI, Omnia and LLM Pulse."
+    },
+    "pros": [
+      "Free audit with no card needed",
+      "One-off €29 audit without a subscription",
+      "Plain-English fix list and PDF report",
+      "White-label plan for agencies",
+      "EU-hosted database and a no-data-selling policy"
+    ],
+    "cons": [
+      "Free plan covers ChatGPT only",
+      "Brand and Agency plans need contacting the company",
+      "No guarantee that following the fixes improves visibility",
+      "The operator is named only as Bianchi Web, without a postal address on the pages we read"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/visibai-ai-visibility-audit-tool",
+      "x": {
+        "none": "We found no posts about VisibAI on X to link yet.",
+        "search_url": "https://x.com/search?q=getvisibai&f=live"
+      },
+      "quotes": [
+        {
+          "author": "Mohsin Ali",
+          "url": "https://www.producthunt.com/products/visibai-ai-visibility-audit-tool?comment=5492521",
+          "text": "if chatgpt gives a different answer on next refresh, does it average the score?",
+          "reply": "Francesco Bianchi said each query is currently a single snapshot, not averaged; the score relies on patterns across 30 queries and 6 engines, and re-scans over time smooth the noise."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What does VisibAI do?",
+        "a": "It runs industry questions across AI assistants such as ChatGPT, Perplexity, Claude, Gemini, Mistral and You.com, and reports whether your business appears, with a score out of 100, a competitor ranking and a list of fixes."
+      },
+      {
+        "q": "How much does VisibAI cost?",
+        "a": "A free audit (ChatGPT only), a €29 one-off Starter audit, Pro at €79 a month, Brand and Agency at €149 a month, and custom Enterprise pricing."
+      },
+      {
+        "q": "How long does an audit take?",
+        "a": "VisibAI says the PDF report reaches your inbox in under five minutes."
+      },
+      {
+        "q": "Is VisibAI GDPR compliant?",
+        "a": "It says it is built for EU privacy law, hosts its database in the Supabase EU region, never sells audit data and lets you request deletion. Some processors outside the EEA are covered by Standard Contractual Clauses."
+      },
+      {
+        "q": "Can I get a refund?",
+        "a": "The terms give a 7-day refund window on first-time purchases if you are unhappy with the report; requests go to VisibAI by email."
+      },
+      {
+        "q": "What are the alternatives to VisibAI?",
+        "a": "Otterly.ai, Rankscale and Peec AI are subscription trackers for AI search visibility; VisibAI's difference is a free or one-off audit aimed at small businesses."
+      }
+    ],
+    "sources": [
+      {
+        "label": "VisibAI official site and pricing",
+        "url": "https://getvisibai.com/"
+      },
+      {
+        "label": "VisibAI privacy policy",
+        "url": "https://getvisibai.com/privacy"
+      },
+      {
+        "label": "VisibAI terms",
+        "url": "https://getvisibai.com/terms"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/visibai"
+      },
+      {
+        "label": "Otterly.ai pricing",
+        "url": "https://otterly.ai/pricing"
+      },
+      {
+        "label": "Rankscale pricing",
+        "url": "https://rankscale.ai/pricing"
+      },
+      {
+        "label": "Peec AI pricing",
+        "url": "https://peec.ai/pricing"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/products/visibai-ai-visibility-audit-tool?launch=visibai"
+      }
+    ],
+    "ph": {
+      "rank": 4,
+      "votes": 257,
+      "comments": 58,
+      "followers": 405,
+      "launched": "2026-06-29",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Francesco Bianchi",
+        "role": "Founder",
+        "url": "https://www.producthunt.com/@francesco2689"
+      }
+    ],
+    "video_url": "https://youtu.be/MT9hAYITA74",
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/e05e1269-79da-4877-ae5d-a3efa1da5051.png?auto=format&fit=max&w=1400",
+        "w": 2540,
+        "h": 1520,
+        "credit": "Image: VisibAI on Product Hunt",
+        "alt": "VisibAI graphic 'Are you in AI answers?' with a sample visibility score of 73/100 and logos of ChatGPT, Perplexity, Claude, Gemini, Mistral and You.com"
+      },
+      {
+        "url": "https://ph-files.imgix.net/251087d1-e773-4471-8113-d83774f71a31.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: VisibAI on Product Hunt",
+        "alt": "VisibAI example of ChatGPT listing digital marketing agencies in Milan with the note 'Your brand isn't mentioned'"
+      },
+      {
+        "url": "https://ph-files.imgix.net/7f97ee4e-1d18-4643-b9bc-0f4592cd080b.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: VisibAI on Product Hunt",
+        "alt": "VisibAI dashboard showing a visibility score broken down by AI platform and competitors appearing instead of you"
+      },
+      {
+        "url": "https://ph-files.imgix.net/7bbb926c-a540-4600-9d44-17b8a460707b.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: VisibAI on Product Hunt",
+        "alt": "VisibAI agency dashboard for running white-label audits for several clients with scores and status"
+      }
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Francesco Bianchi says he spent years selling SaaS across Europe and watched search move from Google to AI assistants. For years everyone optimised for Google; now people ask ChatGPT or Perplexity for a recommendation, and most businesses have no idea whether they appear.",
+        "He says a score alone doesn't help, so VisibAI pairs it with the fixes to make: what to change and who is being recommended instead."
+      ],
+      "attribution": "Francesco Bianchi, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/visibai-ai-visibility-audit-tool?comment=5324882"
+    },
+    "opinions": {
+      "themes": {
+        "liked": [
+          "Checking six AI platforms separately, since results differ by engine",
+          "Starting with a one-off audit instead of another monthly subscription"
+        ],
+        "asked": [
+          "How it handles AI answers changing between runs (each query is a single snapshot today; the score leans on patterns across 30 queries and 6 engines, and multi-sampling is planned)",
+          "How queries are chosen (generated from your industry and buyer context, split by funnel stage, and editable)",
+          "Whether reports show the raw answers behind the score (runs are timestamped and store the raw answers)",
+          "Whether it uses official APIs (yes, not scraping)"
+        ],
+        "criticised": [
+          "Commenters noted that single-shot answers are noisy and that the score shows no confidence band yet, which the founder acknowledged"
+        ]
+      },
+      "quotes": [
+        {
+          "text": "I like that this starts with a one-time audit instead of asking teams to commit to another monthly SEO tool.",
+          "author": "Felix Li",
+          "url": "https://www.producthunt.com/products/visibai-ai-visibility-audit-tool?comment=5490949"
+        },
+        {
+          "text": "visibility on ChatGPT vs Perplexity vs Claude can look completely different because each pulls from different sources",
+          "author": "Gal Dayan",
+          "url": "https://www.producthunt.com/products/visibai-ai-visibility-audit-tool?comment=5491131"
+        }
+      ]
+    },
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/visibai-ai-visibility-audit-tool/reviews",
+      "as_of": "2026-10-14"
+    }
+  }
+}

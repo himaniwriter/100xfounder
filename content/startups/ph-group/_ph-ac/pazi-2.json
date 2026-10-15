@@ -1,0 +1,407 @@
+{
+ "input": "https://www.producthunt.com/posts/pazi-2",
+ "final_url": "https://www.producthunt.com/products/pazi?launch=pazi-2",
+ "launch": {
+  "slug": "pazi-2",
+  "name": "Pazi",
+  "tagline": "Vibe code business operations",
+  "featuredAt": "2026-07-14T00:01:00-07:00",
+  "dailyRank": "2",
+  "weeklyRank": "2",
+  "points": 899,
+  "commentsCount": 132,
+  "pricingType": "free_options",
+  "description": "Pazi is an AI team for that idea you keep coming back to — a book, a shop, an app, a skill you want to sell. Tell Pazi what you're trying to do and it builds a team of agents around your idea and starts making things happen: a website, first outreach, content, the next step. Every time you come back, something has moved. You stay in control; your team does the rest alongside you, one real step at a time. Like vibe coding but for business operations.",
+  "makers": [
+   {
+    "name": "Zvonimir Sabljic",
+    "username": "zvonimir_sabljic1",
+    "headline": "Creator of open-source tool Pythagora "
+   },
+   {
+    "name": "Leon Ostrež",
+    "username": "leon_ostrez",
+    "headline": "Co-founder of Pythagora."
+   },
+   {
+    "name": "Liliia Shamrai",
+    "username": "liliiashamrai",
+    "headline": "Designing Pazi"
+   },
+   {
+    "name": "Kevin Kamau",
+    "username": "kevin_kamau",
+    "headline": "Growth ops at Pazi"
+   }
+  ],
+  "hunter": "Garry Tan",
+  "media": [
+   {
+    "uuid": "894cbea0-4ac1-4225-b2a8-95f7f1947f3f.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "19c2f196-01e1-4e04-83c7-4aaeb4544db5.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "306bce7a-d6a4-4016-ad89-6c14966b525b.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "2fce1365-951a-4175-80be-ad002e4d0a1d.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "a4170df0-6acf-4720-b33b-3a55d0c8a7fd.png",
+    "type": "image",
+    "w": 5080,
+    "h": 3040,
+    "video": null
+   },
+   {
+    "uuid": "c603dd26-8fe8-49c6-91f7-3f42faf63c9f.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=MtS5liK4KYM"
+   }
+  ],
+  "links": [
+   "pazi.ai",
+   "twitter.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "monthly",
+    2
+   ],
+   [
+    "weekly",
+    3
+   ],
+   [
+    "daily",
+    2
+   ]
+  ]
+ },
+ "product": {
+  "name": "Pazi",
+  "slug": "pazi",
+  "tagline": "Vibe code business operations",
+  "description": "Pazi is an AI team for that idea you keep coming back to — a book, a shop, an app, a skill you want to sell. Tell Pazi what you're trying to do and it builds a team of agents around your idea and starts making things happen: a website, first outreach, content, the next step. Every time you come back, something has moved. You stay in control; your team does the rest alongside you, one real step at a time. Like vibe coding but for business operations.",
+  "websiteUrl": "https://pazi.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 1860,
+  "twitterUrl": "https://twitter.com/pazidotai",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5484007",
+   "depth": 0,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 I'm Zvonimir, co-founder of Pazi. Some of you might know me from Pythagora / GPT Pilot - one of the first open-source coding agents, 33K GitHub ⭐ We built Pythagora thinking people wanted to build software. 100k users later, we realized building was just a means to an end. The moment the app was done, people didn't celebrate. They got stuck. \"Now what?\" The app was never the point. They didn't want to build applications. They wanted to be entrepreneurs. Every experienced founder knows the hard part comes after the build - getting it in front of people, seeing what lands, changing it, trying again. A business is just that loop, run a few hundred times until something works. So for the last 6 months we've been building Pazi to run that loop with you. You bring an idea. Pazi builds a team of agents around it and starts moving - and it doesn't wait for instructions. It tries something, sees what lands, adjusts, keeps going. Here's one real idea that one of our users started with: a prompt pack to sell on Gumroad. Pazi built her a team - a growth strategist, a content writer, a researcher - and got to work. The pack itself. A cover to drop into Canva, with the hex cod"
+  },
+  {
+   "id": "5573919",
+   "depth": 1,
+   "author": "Mohsin Ali",
+   "username": "mohsinproduct",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zvonimir_sabljic1 &nbsp;if the AI COO hallucinates a bad marketing strategy, does it flag low confidence before asking for human approval?"
+  },
+  {
+   "id": "5574265",
+   "depth": 2,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mohsinproduct &nbsp;great question!!! Yes, to some extent - it will flag that the campaign isn't performing and that it needs to course correct. Think of it like vibe coding today - everyone builds their own gating mechanisms for what is a good coding plan but in the end, you don't know if it will be able to 0 shot it until it tries and they you check results. This same way Pazi works."
+  },
+  {
+   "id": "5580498",
+   "depth": 1,
+   "author": "Vedran Rasic",
+   "username": "vedranrasic",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zvonimir_sabljic1 &nbsp;well done Zvone!"
+  },
+  {
+   "id": "5582254",
+   "depth": 2,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@vedranrasic &nbsp;Thank you!!! 🙏"
+  },
+  {
+   "id": "5580955",
+   "depth": 1,
+   "author": "Sourav Sanyal",
+   "username": "sourav_sanyal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zvonimir_sabljic1 &nbsp;You're a legend, still remember talking to you about lookup / Velo and our idea with you a while ago. Exciting stuff"
+  },
+  {
+   "id": "5582256",
+   "depth": 2,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@sourav_sanyal &nbsp;oh that's awesome!"
+  },
+  {
+   "id": "5581432",
+   "depth": 1,
+   "author": "Anna Ludwinowski",
+   "username": "anna_ludwinowski",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zvonimir_sabljic1 &nbsp;Congrats on the launch today AND hitting #1! This intro is genuinely refreshing, too. Most build-in-public posts lead with a feature list, and you led with the actual problem: the app was never the hard part, \"now what\" was. That's helpful insight. One thing I noticed was your positioning - there's the specific Gumroad example (the pricing research she didn't even ask for is a great detail), but then the framing jumps to \"no one will run their business operations by hand.\" Those feel like two different lanes: one that helps someone find their first customer, and one that runs a company. If you had to pick one, which one would it be?"
+  },
+  {
+   "id": "5582263",
+   "depth": 2,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@anna_ludwinowski &nbsp;great point! I'd say it's the opposite side of the same coin. The first user is only the first one out of, hopefully, many. At the moment before AI advances more, I'd say the more important is the first user."
+  },
+  {
+   "id": "5582069",
+   "depth": 1,
+   "author": "Artem Fedorovich",
+   "username": "artem_fedorovich",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@zvonimir_sabljic1 &nbsp;Hey Zvonimir. The line that lands for me is that ~75% of those 529 ideas were really \"get me customers,\" not \"build me an app.\" That matches what I see from the operator side, the build is rarely the bottleneck, distribution is. My question is about the Gumroad example where Pazi ran competitor pricing research she never asked for: where does that market data actually come from, and how do the agents decide it's solid enough to act on? That unprompted research is exactly the moment I'd either trust the tool or quietly back away, depending on whether it's grounded or guessed."
+  },
+  {
+   "id": "5582266",
+   "depth": 2,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@artem_fedorovich &nbsp;yea, you're right - the research is done both using Brave search API and browser use for all unindexed data. So far, I'm very satisfied with how it does research."
+  },
+  {
+   "id": "5580196",
+   "depth": 0,
+   "author": "Andras Czeizel",
+   "username": "andrasczeizel",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "\"The app was never the point. They wanted to be entrepreneurs.\" is a really strong insight. As a founder, I can relate to how much harder everything becomes after the product exists. getting customers, finding positioning, creating content, doing outreach, learning what works, then repeating the loop... that is where most ideas slow down. \"Vibe coding for business operations\" is a very clear way to frame Pazi :) The proactive part is what I would want to test most. how does Pazi decide what it can move forward on independently, and when it should stop and ask the founder before spending money, contacting someone, or changing direction?"
+  },
+  {
+   "id": "5580512",
+   "depth": 1,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@andrasczeizel &nbsp;thanks for the feedback - I'm glad it resonates. Re how it decides, truthfully, this is what we're exploring with users as well. In general, it stops whenever something meaningfully impacts the business - eg. full strategy change - but I think that this will end up like vibe coding today. We will just start to allow it to do more and more."
+  },
+  {
+   "id": "5591247",
+   "depth": 0,
+   "author": "Stacy Wycoff",
+   "username": "stacywycof83995",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The \"flag low confidence before asking for approval\" question above is the crux of this whole category, I think. I've been building something adjacent (an AI Chief of Staff for founders running more than one business) and the hardest part by far wasn't the automation, it was getting the system to admit when it's unsure instead of presenting a guess with the same confidence as a verified fact. Once I added explicit confidence grading instead of a single \"done\" state, trust from actual users went up more than any new capability did. Curious whether Pazi's course-correction messages to users distinguish \"this failed\" from \"this succeeded but I'm not fully sure why,\" those feel like very different signals."
+  },
+  {
+   "id": "5706443",
+   "depth": 1,
+   "author": "Leon Ostrež",
+   "username": "leon_ostrez",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@stacywycof83995 &nbsp;You’re right—those are very different signals. Pazi can surface uncertainty and ask for direction, but we don’t yet attach a consistent confidence grade to every outcome. Separating “failed,” “succeeded with evidence,” and “succeeded but unsure why” is a useful framing. Thanks for sharing what improved trust in your own product."
+  },
+  {
+   "id": "5580223",
+   "depth": 0,
+   "author": "Nuseir Yassin",
+   "username": "nuseir_yassin1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "I wonder what happens when the strategy isn't working. Does the team completely pivot on its own or ask first?"
+  },
+  {
+   "id": "5580477",
+   "depth": 1,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@nuseir_yassin1 &nbsp;Asks first. When changing the strategy completely, it consults with the user first."
+  },
+  {
+   "id": "5580657",
+   "depth": 0,
+   "author": "Cathy",
+   "username": "cathy_cc",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The part about getting stuck after the build is so true. Making the thing is often the easy part, getting people to actually care is where it gets messy. Curious how Pazi handles that first week after launch."
+  },
+  {
+   "id": "5581090",
+   "depth": 1,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@cathy_cc &nbsp;yes, exactly - the answer is the momentum. After a failed launch people lose motivation but AI doesn't so it needs to do a small step forward to regain motivation. I say that Pazi provides momentum - that's the goal."
+  },
+  {
+   "id": "5581183",
+   "depth": 0,
+   "author": "Lakshya Singh",
+   "username": "lakshya_singh",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Love it! I run an influencer marketing agency as well as an influencer discovery platform, and following up with creators and clients usually takes a lot of time and efforts from my team. This include scheduling outreaches, setting up sequences and sending newsletters. Do you think Pazi can help us to sort the communication for both the companies simultaneously? Right now, we are using a mix of 3 tools to sort the communications with users, creators and clients. PS - Really love the UX and I believe in the solution you are offering. Congrats and good luck with the launch!"
+  },
+  {
+   "id": "5581791",
+   "depth": 1,
+   "author": "Leon Ostrež",
+   "username": "leon_ostrez",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@lakshya_singh &nbsp;Thank you! Yes—you can set up each company as a separate business in Pazi, each with its own agents, context, and dashboard. Both teams can work simultaneously on outreach, follow-ups, newsletters, and scheduling, while your COO gives you one place to coordinate everything. We’d love to learn more about your current workflow and see how much of those three tools Pazi can consolidate."
+  },
+  {
+   "id": "5579030",
+   "depth": 0,
+   "author": "Med ALILUCH",
+   "username": "medal411",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats on the launch! When Pazi's agent team builds out first outreach/content for a niche idea, how does it handle domain-specific compliance stuff (e.g. regulated industries) - does it know when to flag \"this needs a human review\" vs just shipping it?"
+  },
+  {
+   "id": "5579214",
+   "depth": 1,
+   "author": "Zvonimir Sabljic",
+   "username": "zvonimir_sabljic1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@medal411 &nbsp;great question! It actually does very well with regulations because of the research agent that does compliance very well but it all comes down to the user. Pazi always asks for an approval until the user says it can do something on its own - then it just ships it."
+  }
+ ]
+}

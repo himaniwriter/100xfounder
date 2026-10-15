@@ -1,0 +1,81 @@
+{
+  "slug": "cue-by-manus",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/cue-by-manus",
+  "excerpt": "Cue by Manus gives each personal AI agent its own phone number, email address, payment card and computer to handle everyday tasks. What it does, how to get it and what launch-day users asked.",
+  "content": "<p>Cue is a personal-agent app from Manus, the company behind the Manus general AI agent. Each agent you create gets its own identity: a phone number to make and take calls and send messages, an email address, a wallet that pays with permissions you set, and a dedicated computer workspace. Cue says agents take the calls you forward to them and keep working after you log off. You can also bring several agents into one group chat to work together, for example on a trip itinerary, packing list and bookings.</p><p>The examples on its site are household admin: booking a pediatrician or flu shot, emailing a hotel about connecting rooms, finding urgent care that takes a given insurer, or booking a Taskrabbit tasker. Apps are offered for macOS, Windows and mobile. One Product Hunt commenter reported that the app needed an invite code at launch.</p><p>Cue launched on Product Hunt on 2 October 2026 and finished #11 for the day with 108 points and 4 comments (as of 14 October 2026).</p><p><em>We have not tested Cue ourselves. Giving an AI agent a phone number and a payment card means trusting it with real money and real conversations, so check its permission settings carefully. This page brings together Cue's official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Personal AI agents",
+    "platform": "macOS, Windows and mobile apps",
+    "starts_at": "Pricing not published",
+    "schema_category": "LifestyleApplication",
+    "summary_short": "Personal AI agents that each get their own phone number, email, wallet and computer",
+    "maker": {"name": "Tao Cheung", "url": "https://www.producthunt.com/@hidecloud"},
+    "ph": {"rank": 11, "votes": 108, "comments": 4, "followers": 94, "launched": "2026-10-02", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/a6152d3e-d978-40ba-a7c4-aecd124fba84.png?auto=format&fit=max&w=1400", "w": 2202, "h": 1272,
+       "alt": "Cue graphic 'Each agent has an identity' with four cards: Phone, Wallet, Computer and Mail", "credit": "Image: Cue by Manus via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/30b727c8-3cd8-4b08-82d6-03cad41f3db2.png?auto=format&fit=max&w=1400", "w": 2316, "h": 1636,
+       "alt": "Cue group chat titled Trip Planner where an itinerary assistant, packing assistant and booking assistant each reply about a Kyoto trip", "credit": "Image: Cue by Manus via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "spend a lot of time on calls, emails and bookings for a household and want to hand them off",
+        "want an assistant that can phone a clinic or email a hotel on your behalf rather than only drafting messages",
+        "are comfortable setting and reviewing permissions for payments"
+      ],
+      "not_fit": [
+        "can't get an invite: a Product Hunt commenter reported needing an invite code at launch",
+        "need published pricing before you start: we found none on cue.im",
+        "are uneasy about an AI making payments: commenters asked whether permissions are granted once or per transaction, and we found no public answer"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on cue.im as of 14 October 2026. Product Hunt lists Cue as having free options.",
+      "url": "https://cue.im/",
+      "checked": "2026-10-14",
+      "plans": [],
+      "notes": [
+        "Cue's legal terms and privacy policy are those of Manus (manus.im)."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Pally", "url": "https://pally.com/", "what": "Personal assistant you use over text messages", "starts_at": "Free; invitation-only VIP plan at $1,000/month", "ph_rating": 4.88, "ph_reviews": 16,
+         "difference": "You text one assistant. Cue gives each agent its own phone number, email, wallet and computer."},
+        {"name": "Lindy", "url": "https://www.lindy.ai/", "what": "AI assistant for work tasks", "starts_at": "$50 in free credits; Team from $49.99/month", "ph_rating": 4.57, "ph_reviews": 7,
+         "difference": "Aimed at work and business workflows; Cue's examples are personal and family admin."},
+        {"name": "BetterClaw", "url": "https://www.betterclaw.io/", "what": "Hosted platform to deploy an AI agent", "starts_at": "Basic $19/month; Pro $49; Business $149", "ph_rating": 5, "ph_reviews": 14,
+         "difference": "Bring-your-own-key agent hosting for technical users rather than a consumer app with built-in phone and payments."}
+      ],
+      "more": "Product Hunt also lists Martin (4.57 from 7 reviews) and Ace from Automat Workforce."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/cue-by-manus/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/cue-by-manus",
+      "quotes": [
+        {"author": "Raunaq Vaisoha", "text": "Downloaded it just to find that it needs an invite code :)"},
+        {"author": "Gal Dayan", "text": "Is that a one-time grant per capability (e.g. \"allow payments\" forever) or does it actually ask again for each individual action?"}
+      ],
+      "x": {"none": "We did not check X for this profile.", "profile_url": "https://x.com/CueAgents", "search_url": "https://x.com/search?q=%22Cue%20by%20Manus%22&f=live"}
+    },
+    "faq": [
+      {"q": "What is Cue by Manus?", "a": "An app from Manus for personal AI agents. Each agent has its own phone number, email address, wallet and computer workspace, so it can make calls, send emails and pay for things within permissions you set."},
+      {"q": "What can Cue agents do?", "a": "Cue's site gives examples such as booking appointments, emailing hotels, finding urgent care that takes your insurance, booking Taskrabbit help and comparing repair options. Agents can also work together in a group chat."},
+      {"q": "How much does Cue cost?", "a": "Cue does not publish prices on its site (checked 14 October 2026). Product Hunt lists it as having free options."},
+      {"q": "Which devices does Cue run on?", "a": "The site offers downloads for macOS and Windows and a mobile app."},
+      {"q": "Do I need an invite?", "a": "A Product Hunt commenter said the app asked for an invite code at launch. Cue's site does not mention invites."},
+      {"q": "How did Cue do on Product Hunt?", "a": "It launched on 2 October 2026 and finished #11 for the day with 108 points and 4 comments."}
+    ],
+    "sources": [
+      {"label": "Cue official site", "url": "https://cue.im/"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/cue-by-manus"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/cue-by-manus"},
+      {"label": "Pally pricing", "url": "https://pally.com/pricing"},
+      {"label": "Lindy pricing", "url": "https://www.lindy.ai/pricing"},
+      {"label": "BetterClaw pricing", "url": "https://www.betterclaw.io/pricing"}
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+ "slug": "google-embeddinggemma-2",
+ "excerpt": "EmbeddingGemma 2 is Google DeepMind's open, Apache 2.0 embedding model that puts text, code, images, video and audio into one vector space and is small enough to run on a phone. Specs, benchmarks as stated by Google, where to get it and alternatives.",
+ "content": "<p>EmbeddingGemma 2 is an open embedding model from Google DeepMind. An embedding model turns content into vectors so that software can search, cluster or classify it by meaning. EmbeddingGemma 2 does this for text (including code), images, video and audio in a single shared space of 768 dimensions, so a text query can find a photo and a voice memo can find a video clip, without a chain of separate captioning and speech-to-text models.</p><p>The model has 740 million parameters in total, split into modules: a 270M text backbone plus optional vision (170M) and audio (300M) encoders, so you load only what you need. Google says that, quantised on a Pixel 11 Pro, it needs about 191MB of memory for text alone and about 567MB for all modalities. It reads up to 8,192 tokens of input, four times its predecessor, and its vectors can be shortened to 512, 256 or 128 dimensions to save storage. It is built on the Gemma 4 architecture, understands more than 100 languages according to its model card, and runs offline. Google reports a jump on the MTEB code benchmark from 68.76 to 78.68 over the first EmbeddingGemma.</p><p>The weights are free under the Apache 2.0 licence, subject to Google's Gemma prohibited-use policy, and are available on Hugging Face and Kaggle, with tooling for Sentence Transformers, Transformers, Ollama, llama.cpp, vLLM, MLX and others. Google announced it on 6 October 2026; it was featured on Product Hunt on 12 October 2026 and finished #1 for the day with 300 upvotes.</p><p><em>We have not benchmarked EmbeddingGemma 2 ourselves. Figures on this page are Google's own, from its announcement and model card, and we say where each comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI models",
+  "platform": "Open-weights model (on-device, server or browser)",
+  "os": "Runs locally with Sentence Transformers, Transformers, Ollama, llama.cpp, vLLM, MLX, LiteRT, transformers.js and more",
+  "starts_at": "Free (Apache 2.0 open weights)",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Google DeepMind's open multimodal embedding model for text, code, images, video and audio, small enough for phones",
+  "maker": {
+   "name": "Google DeepMind",
+   "url": "https://huggingface.co/google/embeddinggemma-2"
+  },
+  "team": [
+   {
+    "name": "Google DeepMind",
+    "role": "Model authors",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
+   }
+  ],
+  "ph": {
+   "rank": 1,
+   "votes": 300,
+   "comments": 3,
+   "followers": 451,
+   "launched": "2026-10-12",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Private, offline semantic search over photos, videos, voice notes and documents on a phone",
+   "Retrieval for RAG pipelines that mix text, images and audio",
+   "Searching a local codebase or giving a coding agent code retrieval",
+   "Classification and clustering of content without sending data to a cloud API"
+  ],
+  "audience": {
+   "fit": [
+    "build search, RAG or recommendation features that must run on-device or offline",
+    "need one model for text, images, video and audio instead of a pipeline of several",
+    "want permissively licensed weights you can fine-tune and ship commercially"
+   ],
+   "not_fit": [
+    "want a hosted embeddings API with an SLA: Google lists Model Garden availability as coming soon and publishes no hosted price",
+    "run inference in float16: the model card warns this silently produces broken embeddings; use bfloat16 or float32",
+    "need equal quality in every language: the card says performance may vary across languages"
+   ]
+  },
+  "pricing": {
+   "intro": "EmbeddingGemma 2's weights are free to download and use under the Apache 2.0 licence, subject to the Gemma prohibited-use policy. Google has not published a price for any hosted version.",
+   "url": "https://huggingface.co/google/embeddinggemma-2",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Open weights",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Apache 2.0; download from Hugging Face or Kaggle; you pay only for your own compute"
+    }
+   ],
+   "notes": [
+    "Google's announcement says availability in its Gemini Enterprise Agent Platform Model Garden is coming soon; no price is listed."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other open embedding models. All three below are text-only, which is the main difference. Licences and specs come from each model's official Hugging Face page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "BGE-M3",
+     "url": "https://huggingface.co/BAAI/bge-m3",
+     "what": "BAAI's multilingual embedder with dense, multi-vector and sparse retrieval, up to 8,192 tokens",
+     "starts_at": "Free (MIT licence)",
+     "difference": "Text only, but combines three retrieval styles in one model."
+    },
+    {
+     "name": "Qwen3-Embedding",
+     "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+     "what": "Alibaba's embedding series from 0.6B to 8B parameters, 100+ languages",
+     "starts_at": "Free (Apache 2.0)",
+     "difference": "Text only (including programming languages), with a 32k-token context on the 0.6B model, four times EmbeddingGemma 2's."
+    },
+    {
+     "name": "Nomic Embed Text v2",
+     "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe",
+     "what": "Nomic's 475M-parameter mixture-of-experts embedder for about 100 languages",
+     "starts_at": "Free (Apache 2.0)",
+     "difference": "Text only, with no image, audio or video support."
+    }
+   ]
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/embeddinggemma-2/reviews",
+   "as_of": "2026-10-14"
+  },
+  "pros": [
+   "One model for text, code, images, video and audio",
+   "Small enough for phones; load only the encoders you need",
+   "Free Apache 2.0 weights with broad tooling support",
+   "Shorter vectors (512, 256 or 128 dimensions) to cut storage",
+   "Runs offline, keeping data on the device"
+  ],
+  "cons": [
+   "No published hosted API or price yet",
+   "Quality drops noticeably for multimodal content at 128 dimensions, according to the model card",
+   "Must not run in float16",
+   "Benchmark figures so far are Google's own"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/embeddinggemma-2?launch=google-embeddinggemma-2",
+   "x": {
+    "none": "We have not linked posts about EmbeddingGemma 2 on X yet.",
+    "search_url": "https://x.com/search?q=EmbeddingGemma%202&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is EmbeddingGemma 2 free?",
+    "a": "Yes. The weights are released under the Apache 2.0 licence, which allows commercial use, subject to Google's Gemma prohibited-use policy."
+   },
+   {
+    "q": "What can it embed?",
+    "a": "Text and code, images, video and audio, alone or combined, into one 768-dimension vector space."
+   },
+   {
+    "q": "How much memory does it need on a phone?",
+    "a": "Google says about 191MB for text only and about 567MB for the full multimodal model, quantised on a Pixel 11 Pro."
+   },
+   {
+    "q": "How long can the input be?",
+    "a": "Up to 8,192 tokens shared across modalities. Google gives rough equivalents of 5.5 minutes of audio, 29 images or 58 video frames."
+   },
+   {
+    "q": "Where do I download it?",
+    "a": "From Google's Hugging Face page or Kaggle. Google also points to GGUF builds for llama.cpp, LiteRT versions for on-device use and a WebGPU browser demo."
+   },
+   {
+    "q": "Which precision should I use?",
+    "a": "bfloat16 or float32. The model card warns that float16 returns NaN or degraded embeddings without an error."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Google blog: EmbeddingGemma 2 announcement",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
+   },
+   {
+    "label": "EmbeddingGemma 2 model card (Hugging Face)",
+    "url": "https://huggingface.co/google/embeddinggemma-2"
+   },
+   {
+    "label": "EmbeddingGemma 2 model card (Google AI for Developers)",
+    "url": "https://ai.google.dev/gemma/docs/embeddinggemma/model_card_2"
+   },
+   {
+    "label": "EmbeddingGemma 2 on Kaggle",
+    "url": "https://www.kaggle.com/models/google/embeddinggemma-2"
+   },
+   {
+    "label": "Gemma prohibited use policy",
+    "url": "https://ai.google.dev/gemma/prohibited_use_policy"
+   },
+   {
+    "label": "Product Hunt launch",
+    "url": "https://www.producthunt.com/products/embeddinggemma-2?launch=google-embeddinggemma-2"
+   },
+   {
+    "label": "BGE-M3 model page",
+    "url": "https://huggingface.co/BAAI/bge-m3"
+   },
+   {
+    "label": "Qwen3-Embedding-0.6B model page",
+    "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B"
+   },
+   {
+    "label": "Nomic Embed Text v2 model page",
+    "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/377e5470-e67b-4400-ab00-7563bc2105e8.png?auto=format&fit=max&w=1400",
+    "alt": "EmbeddingGemma 2 title card on a dark blue background"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/377e5470-e67b-4400-ab00-7563bc2105e8.png?auto=format&fit=max&w=1400",
+    "alt": "EmbeddingGemma 2 title card on a dark blue background"
+   }
+  ]
+ }
+}

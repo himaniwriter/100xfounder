@@ -1,0 +1,277 @@
+{
+  "slug": "propane",
+  "ph_url": "https://www.producthunt.com/posts/propane",
+  "existing_listing_slug": null,
+  "website": "https://www.usepropane.ai/",
+  "excerpt": "Propane collects customer feedback and context from 300+ tools into one shared canvas for product teams, then hands specs to coding and design agents.",
+  "content": "<p>Propane is a customer-intelligence tool for product teams. It pulls in what customers and competitors tell you from more than 300 tools, including support conversations, CRM notes, sales calls, meeting transcripts, Slack threads, issues, product analytics and billing and churn signals, and keeps one up-to-date view of each customer. Teams then shape ideas together on a shared canvas with the evidence attached, and can push the result straight to coding or design agents.</p><p>Pricing is a flat €50 a month for the whole platform with unlimited users, plus a usage charge for each company or competitor you index with new context that month. The first 100 companies and first 5 competitors each month are free.</p><p>Propane's makers on Product Hunt include founder Dennis Green-Lieber and co-founder John Acosta. Dennis says the founding team has built products for more than ten years at SaaS and deep-learning AI companies. Propane launched on Product Hunt on 24 June 2026, hunted by Ben Lang, and finished #2 for the day with 500 upvotes and 170 comments. It has 2 Product Hunt reviews averaging 5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Propane ourselves. This page brings together its official site and pricing page, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Customer feedback and product management",
+    "platform": "Web app",
+    "starts_at": "€50/month, unlimited users, plus usage",
+    "schema_category": "BusinessApplication",
+    "summary_short": "One always-current view of your customers for product teams and their agents",
+    "maker": {
+      "name": "Dennis Green-Lieber",
+      "url": "https://www.producthunt.com/@greenlieber"
+    },
+    "team": [
+      {
+        "name": "Dennis Green-Lieber",
+        "role": "Founder and CEO",
+        "url": "https://www.producthunt.com/@greenlieber",
+        "photo": "https://www.usepropane.ai/images/about/dennis.jpg",
+        "photo_credit": "Photo: Propane",
+        "photo_source_type": "company_website"
+      },
+      {
+        "name": "John Acosta",
+        "role": "Co-founder",
+        "url": "https://www.producthunt.com/@acostajohn",
+        "photo": "https://www.usepropane.ai/images/about/john.jpg",
+        "photo_credit": "Photo: Propane",
+        "photo_source_type": "company_website"
+      },
+      {
+        "name": "Ben Fleming",
+        "role": "Founding AI engineer",
+        "url": "https://www.producthunt.com/@benfleming"
+      },
+      {
+        "name": "Anders T.",
+        "role": "Founding designer",
+        "url": "https://www.producthunt.com/@atherkildsen"
+      },
+      {
+        "name": "Rasmus Bangsted Pedersen",
+        "role": "Engineering, design and product",
+        "url": "https://www.producthunt.com/@rasmusbp"
+      },
+      {
+        "name": "Nicolai Harms",
+        "role": "Software engineer",
+        "url": "https://www.producthunt.com/@nicolai_harms"
+      }
+    ],
+    "ph": {
+      "rank": 2,
+      "votes": 500,
+      "comments": 170,
+      "followers": 789,
+      "launched": "2026-06-24",
+      "as_of": "2026-10-14"
+    },
+    "video_url": "https://www.youtube.com/watch?v=I-h87kJRhvk",
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/2259907b-26bf-46c8-8741-6ff6225c79f6.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: Propane on Product Hunt",
+        "alt": "Propane graphic 'Up and running fast' with three steps: collect the context, collaborate on it as a team, commit it to code"
+      },
+      {
+        "url": "https://ph-files.imgix.net/e7d1ffae-64e6-4416-b424-7eada00fc7c9.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: Propane on Product Hunt",
+        "alt": "Propane 'Collect context automatically' graphic with integration logos and a competitor profile screen"
+      },
+      {
+        "url": "https://ph-files.imgix.net/624e3b21-3b97-4fc9-9103-947138258c97.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: Propane on Product Hunt",
+        "alt": "Propane 'Collaborate as a team' graphic showing a shared feature document with comments and highlighted evidence"
+      },
+      {
+        "url": "https://ph-files.imgix.net/26d10f8a-e3ec-461d-8217-a3bc178dbf82.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: Propane on Product Hunt",
+        "alt": "Propane 'Commit to execution' graphic with a 'Push to code' button and logos of coding and design tools"
+      }
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Dennis Green-Lieber says the founding team has built products for more than ten years at SaaS and deep-learning AI companies, and built Propane to fix their own problems: the way product teams work has hardly changed in years.",
+        "After going deep with hundreds of product teams, he says they found two camps, those stuck in legacy tools and those building everything from scratch, both doing 90% of the same work: collecting customer feedback, shaping and judging ideas, and handing off to coding agents."
+      ],
+      "attribution": "Dennis Green-Lieber, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/propane?comment=5460185"
+    },
+    "use_cases": [
+      "Bringing feedback from support, sales calls, CRM and Slack into one view per customer",
+      "Tracking what competitors are doing alongside customer requests",
+      "Planning features on a shared canvas with the evidence attached",
+      "Handing a finished spec to a coding or design agent"
+    ],
+    "audience": {
+      "fit": [
+        "run a product team whose customer feedback is scattered across many tools",
+        "want the whole company in the tool without paying per seat",
+        "already build with coding agents and want them to see customer context"
+      ],
+      "not_fit": [
+        "track thousands of accounts with frequent new context: the per-company charge adds up (the pricing page's example team of 20 pays €450 a month)",
+        "only need a simple feedback board or survey tool"
+      ]
+    },
+    "pricing": {
+      "intro": "Propane has one plan with everything included, plus a usage charge for new context. Prices are in euros.",
+      "url": "https://www.usepropane.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Platform",
+          "price": "€50/month",
+          "amount": 50,
+          "currency": "EUR",
+          "detail": "Unlimited users, every feature, unlimited integrations, free hands-on onboarding; no credit card to sign up"
+        },
+        {
+          "name": "Usage: companies",
+          "price": "€1 per company indexed with new context that month",
+          "detail": "First 100 companies each month free"
+        },
+        {
+          "name": "Usage: competitors",
+          "price": "€10 per competitor indexed with new context that month",
+          "detail": "First 5 competitors each month free"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "detail": "Migration and historical ingestion, custom integrations, SSO, invoice or PO billing, volume pricing"
+        }
+      ],
+      "notes": [
+        "No per-seat, token, storage or model-upgrade fees, according to the pricing page. A company is charged once a month however often its context updates; if nothing changes, nothing is charged."
+      ]
+    },
+    "alternatives": {
+      "intro": "Tools that also gather customer feedback for product teams. Prices are from each company's own pricing page on 14 October 2026.",
+      "items": [
+        {
+          "name": "Dovetail",
+          "url": "https://dovetail.com/",
+          "what": "Customer intelligence from calls, documents and surveys",
+          "starts_at": "Free; Enterprise custom",
+          "difference": "Strong on research analysis of calls and interviews; Propane adds a planning canvas and hand-off to coding agents."
+        },
+        {
+          "name": "Productboard",
+          "url": "https://www.productboard.com/",
+          "what": "Product management platform for feedback, prioritisation and roadmaps",
+          "starts_at": "See its pricing page",
+          "difference": "A long-established roadmap and prioritisation tool; Propane is built around automatically collected context for agents."
+        }
+      ]
+    },
+    "reviews": {
+      "count": 2,
+      "rating": 5,
+      "url": "https://www.producthunt.com/products/propane/reviews",
+      "as_of": "2026-10-14"
+    },
+    "opinions": {
+      "themes": {
+        "liked": [
+          "Multiplayer decision-making across product and other teams",
+          "Tackling how fragmented product work has become"
+        ],
+        "asked": [
+          "Where the line sits between automation and human product taste (the founder said vision and taste stay human; Propane supplies cleaner data)"
+        ],
+        "criticised": []
+      },
+      "quotes": [
+        {
+          "text": "Product work has become way too fragmented. How are you thinking about the line between automation and actual product taste?",
+          "author": "Marie Saxon",
+          "url": "https://www.producthunt.com/products/propane?comment=5479833"
+        },
+        {
+          "text": "The multiplayer part and how we can accelerate our decision making in Product and cross functionally is critical to get right",
+          "author": "Michael Auchenberg",
+          "url": "https://www.producthunt.com/products/propane?comment=5476703"
+        }
+      ]
+    },
+    "pros": [
+      "Unlimited users on a flat base fee",
+      "No token, storage or feature-tier charges",
+      "Collects from 300+ tools and tracks competitors too",
+      "Hands work straight to coding and design agents"
+    ],
+    "cons": [
+      "Usage charges scale with the number of active customer accounts",
+      "Priced in euros only",
+      "Newer than established product-management tools"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/propane",
+      "quotes": [
+        {
+          "author": "Marie Saxon",
+          "url": "https://www.producthunt.com/products/propane?comment=5479833",
+          "text": "How are you thinking about the line between automation and actual product taste?",
+          "reply": "Dennis Green-Lieber said humans are best at vision, taste and deciding how to solve things, while data and sources are where Propane helps."
+        }
+      ],
+      "x": {
+        "none": "We found no posts about Propane's product-team tool on X yet.",
+        "search_url": "https://x.com/search?q=usepropane&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Propane?",
+        "a": "A customer-intelligence tool that gathers feedback and context from 300+ tools into one view, lets product teams plan on a shared canvas and hands specs to coding or design agents."
+      },
+      {
+        "q": "How much does Propane cost?",
+        "a": "€50 a month for the full platform with unlimited users, plus €1 per company and €10 per competitor indexed with new context each month; the first 100 companies and 5 competitors are free."
+      },
+      {
+        "q": "Is there a free trial?",
+        "a": "You can sign up free without a credit card, according to the pricing page."
+      },
+      {
+        "q": "Does Propane charge per seat?",
+        "a": "No. Every plan has unlimited users."
+      },
+      {
+        "q": "Which tools does Propane connect to?",
+        "a": "Its site mentions HubSpot, Intercom and Slack among 300+ integrations covering support, CRM, calls, analytics, issues and billing."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Propane official site",
+        "url": "https://www.usepropane.ai/"
+      },
+      {
+        "label": "Propane pricing",
+        "url": "https://www.usepropane.ai/pricing"
+      },
+      {
+        "label": "Propane About page",
+        "url": "https://www.usepropane.ai/about"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/products/propane?launch=propane"
+      },
+      {
+        "label": "Dovetail pricing",
+        "url": "https://dovetail.com/pricing/"
+      },
+      {
+        "label": "Productboard pricing",
+        "url": "https://www.productboard.com/pricing/"
+      }
+    ]
+  }
+}

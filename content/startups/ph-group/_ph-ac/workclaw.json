@@ -1,0 +1,421 @@
+{
+ "input": "https://www.producthunt.com/posts/workclaw",
+ "final_url": "https://www.producthunt.com/products/workclaw?launch=workclaw",
+ "launch": {
+  "slug": "workclaw",
+  "name": "WorkClaw",
+  "tagline": "Collaborative, proactive AI coworkers who work in Slack",
+  "featuredAt": "2026-06-20T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "13",
+  "points": 352,
+  "commentsCount": 89,
+  "pricingType": "free_options",
+  "description": "Meet the AI team for your team. WorkClaws are collaborative, proactive AI coworkers who work in Slack and Microsoft Teams just like every other colleague. They're fully customizable to get work done your way by learning skills and routines.\n\nUnlike most AI products that pair one person with one assistant, WorkClaws can collaborate 24/7 with your whole team. Each Claw has a job title, a manager in your org chart, and a cloud-hosted ClawOS computer with the ability to access more than 3,000 apps.",
+  "makers": [
+   {
+    "name": "Ammon Brown",
+    "username": "ammonbrown",
+    "headline": "Jack of all trades, master of pun."
+   },
+   {
+    "name": "Will Ruben",
+    "username": "willruben",
+    "headline": "Founder, WorkClaw (Ex-IG, FB, Coinbase)"
+   },
+   {
+    "name": "Sierra Li-Xing Bustos",
+    "username": "sierra_li_xing_bustos",
+    "headline": "Branding and Creative at WorkClaw"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "8d27c8cf-988b-4d01-8a51-a0ded3e763d6.png",
+    "type": "image",
+    "w": 1600,
+    "h": 1000,
+    "video": null
+   },
+   {
+    "uuid": "c3392691-d674-4bd2-b7b0-4a0855ab7deb.png",
+    "type": "image",
+    "w": 1600,
+    "h": 1000,
+    "video": null
+   },
+   {
+    "uuid": "fefdb8d9-8670-4d8b-9f64-e90fc8b73dd9.png",
+    "type": "image",
+    "w": 1600,
+    "h": 1000,
+    "video": null
+   },
+   {
+    "uuid": "34ceb9fc-47af-4d42-860a-9dec9c9b0099.png",
+    "type": "image",
+    "w": 1600,
+    "h": 1000,
+    "video": null
+   },
+   {
+    "uuid": "3b66a545-2a0e-40d4-9cb5-3f63b127144b.png",
+    "type": "image",
+    "w": 1600,
+    "h": 1000,
+    "video": null
+   },
+   {
+    "uuid": "979e72ba-de5c-4dab-8226-56c410d86dc5.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=58XSs6qOvlo"
+   },
+   {
+    "uuid": "37b96782-d03e-4264-828f-3f03f4aeb1d6.png",
+    "type": "interactive_demo",
+    "w": 1200,
+    "h": 630,
+    "video": "https://app.arcade.software/share/CTNXZifHXaCOx82oMG13"
+   }
+  ],
+  "links": [
+   "www.workclaw.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "WorkClaw",
+  "slug": "workclaw",
+  "tagline": "Collaborative, proactive AI coworkers who work in Slack",
+  "description": "Meet the AI team for your team. WorkClaws are collaborative, proactive AI coworkers who work in Slack and Microsoft Teams just like every other colleague. They're fully customizable to get work done your way by learning skills and routines. Unlike most AI products that pair one person with one assistant, WorkClaws can collaborate 24/7 with your whole team. Each Claw has a job title, a manager in your org chart, and a cloud-hosted ClawOS computer with the ability to access more than 3,000 apps.",
+  "websiteUrl": "https://www.workclaw.com",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 763,
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/8d27c8cf-988b-4d01-8a51-a0ded3e763d6.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/c3392691-d674-4bd2-b7b0-4a0855ab7deb.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/fefdb8d9-8670-4d8b-9f64-e90fc8b73dd9.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/34ceb9fc-47af-4d42-860a-9dec9c9b0099.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/3b66a545-2a0e-40d4-9cb5-3f63b127144b.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5467547",
+   "depth": 0,
+   "author": "Moh",
+   "username": "moh_codokiai",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@willruben The challenge with AI teammates isn’t creating them, it’s managing them. If I create 10 Claws, who is responsible when something goes wrong? For example, one Claw researches, another executes, and a third communicates the result. How do customers track accountability and understand why a decision was made? I’m asking because I’ve seen teams struggle with ownership even between humans. Adding multiple AI workers seems powerful, but also introduces a new layer of management complexity. Have you found customers naturally adopting several specialized Claws, or do most end up relying on only a few core ones after the initial setup?"
+  },
+  {
+   "id": "5467835",
+   "depth": 1,
+   "author": "Ammon Brown",
+   "username": "ammonbrown",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@willruben &nbsp; @moh_codokiai &nbsp;Great question. It is actually a mix of both. A lot of customers will create a few specialized Claws and then one orchestrator Claw who is responsible for synthesizing their outputs and reporting to the customer. Many of our more successful implementations have specialized claws isolated from each other who can only interact with their orchestrator claw, but the human can set up the org chart however they like and choose which claws and humans on the team can talk to each other."
+  },
+  {
+   "id": "5468277",
+   "depth": 1,
+   "author": "Will Ruben",
+   "username": "willruben",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@moh_codokiai &nbsp;Great question. Many of our most successful claws are very specialized to the way their managers and companies like to get work done. You can also create a claw manager to help with the overhead of coordination since they can all talk to each other in the ClawChat app."
+  },
+  {
+   "id": "5467874",
+   "depth": 0,
+   "author": "Jibran Ahmed",
+   "username": "hunter_upscale",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The proactive part is the exciting and scary part in the same breath. A coworker who waits to be asked is safe; one that acts on its own across 3,000 apps can do the wrong thing at scale before anyone notices. I'd want to know what the approval and rollback model looks like for actions that touch money or customers, because that's the line between a helpful coworker and a very fast liability."
+  },
+  {
+   "id": "5468286",
+   "depth": 1,
+   "author": "Will Ruben",
+   "username": "willruben",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hunter_upscale &nbsp;we have a ton of security controls. you control which apps each claw gets and who can talk to each claw."
+  },
+  {
+   "id": "5468417",
+   "depth": 1,
+   "author": "Ammon Brown",
+   "username": "ammonbrown",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hunter_upscale &nbsp;You connect each app separately to each claw, so they can have their own set of apps that are just the ones they need to get their work done. You can also choose whether they are proactive or just respond when they are spoken to AND you can choose which channels they should be lurking in claw by claw."
+  },
+  {
+   "id": "5467597",
+   "depth": 0,
+   "author": "Abdul Rehman",
+   "username": "abod_rehman",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "How do two Claws avoid stepping on each other if they're working the same task? Also curious how long it takes to train one before it's actually useful day-to-day."
+  },
+  {
+   "id": "5467769",
+   "depth": 1,
+   "author": "Ammon Brown",
+   "username": "ammonbrown",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@abod_rehman &nbsp;Great question. They each run in a VM, so they are isolated to two separate tasks, but they can coordinate through chat and ClawMail, a backend messaging system. When they are working in Slack, you can control the Slack channels they are in and if two are in a channel, you invoke them by name and they can coordinate with each other there, too. In addition, they would typically not be assigned the same task, as you can control who can give each Claw tasks. We also recommend making them specialists - BloggerClaw, RecruiterClaw, etc."
+  },
+  {
+   "id": "5468280",
+   "depth": 1,
+   "author": "Will Ruben",
+   "username": "willruben",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@abod_rehman &nbsp;we have a skill library to help make training easy. We also help our customers with setting up claws, so feel free to reach out!"
+  },
+  {
+   "id": "5467642",
+   "depth": 0,
+   "author": "Harini Mukesh",
+   "username": "harini_mukesh",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The idea of having AI handle repetitive work is compelling, but what caught my attention is the focus on actual workflows rather than just chat. Curious…what's the most common task users automate first when they start using WorkClaw?"
+  },
+  {
+   "id": "5467810",
+   "depth": 1,
+   "author": "Ammon Brown",
+   "username": "ammonbrown",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@harini_mukesh &nbsp;It's hard to pin down just one task, but a lot of people do email triage, go to market, content writing and social media monitoring. Lots of task management and engineering work as well."
+  },
+  {
+   "id": "5468282",
+   "depth": 1,
+   "author": "Will Ruben",
+   "username": "willruben",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@harini_mukesh , most common tasks are research (news summaries, market research), analysis (connecting internal data sources), marketing (social media, blogging, ad management), and project management (making sure things get done)."
+  },
+  {
+   "id": "5470633",
+   "depth": 2,
+   "author": "Harini Mukesh",
+   "username": "harini_mukesh",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@willruben &nbsp; @ammonbrown Interesting that research and project management seem to be common starting points. I guess those are areas where people immediately feel the impact of saving time. Thanks for sharing, and all the best with WorkClaw!"
+  },
+  {
+   "id": "5467710",
+   "depth": 0,
+   "author": "Antonio Manuel",
+   "username": "antonio_manuel1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "This feels like it's solving for team level AI adoption rather than individual productivity which is a much harder go to market. How are you handling the internal champion problem i.e. who inside a company actually owns hiring and managing a Claw?"
+  },
+  {
+   "id": "5467825",
+   "depth": 1,
+   "author": "Ammon Brown",
+   "username": "ammonbrown",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@antonio_manuel1 &nbsp;That can actually be different for each Claw. There are multiple levels of admin controls. You can control who is on the team, which Claws they can access, and which Claws their Claws can access. In many cases, there will be multiple shared Claws as well as a personal Claw for various team members. I have access to five or six on our team, and I have one that is just my own."
+  },
+  {
+   "id": "5468283",
+   "depth": 1,
+   "author": "Will Ruben",
+   "username": "willruben",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@antonio_manuel1 , sometimes it happens bottoms up within a company and other times it's more top down where we get in touch with a leader or IT manager who is attracted to our admin and security controls to help roll out AI in a safe way to the whole org."
+  },
+  {
+   "id": "5467786",
+   "depth": 0,
+   "author": "Martí Carmona Serrat",
+   "username": "mcarmonas",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats on the launch! Do WorkClaw agents only do what they're told or do they feel like part of the team too, brainstorm, push back, have fun with people?"
+  },
+  {
+   "id": "5467826",
+   "depth": 1,
+   "author": "Ammon Brown",
+   "username": "ammonbrown",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mcarmonas &nbsp;They feel like they're part of the team in a lot of ways. When they interact on Slack, they can be proactive and are very conversational. You can define their personality and tone, and so they can be as goofy as you want them to be!"
+  },
+  {
+   "id": "5467859",
+   "depth": 2,
+   "author": "Martí Carmona Serrat",
+   "username": "mcarmonas",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@ammonbrown &nbsp;That's great to hear, I'll give it a try :)) Next week we are launching humalike(.ai), might be interesting for you!"
+  },
+  {
+   "id": "5467867",
+   "depth": 3,
+   "author": "Ammon Brown",
+   "username": "ammonbrown",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mcarmonas &nbsp;That looks great! The personality layer for agents. Following!"
+  },
+  {
+   "id": "5468431",
+   "depth": 1,
+   "author": "Ammon Brown",
+   "username": "ammonbrown",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mcarmonas &nbsp;Honestly, they mostly do what they are told. They can be amusing and goofy and we are working on refining their tone and allowing users to define it a bit better."
+  },
+  {
+   "id": "5468023",
+   "depth": 0,
+   "author": "Zachary DeWitt",
+   "username": "zachary_dewitt",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Love the idea! What are the most common use cases?"
+  },
+  {
+   "id": "5468293",
+   "depth": 1,
+   "author": "Will Ruben",
+   "username": "willruben",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Thanks @zachary_dewitt ! Most common use cases are research (news summaries, market research, writing reports how you like them), analysis (connecting internal data sources or accessing public data via subscriptions), marketing (social media, blogging, ad management), and project management (making sure things get done)."
+  },
+  {
+   "id": "5468409",
+   "depth": 1,
+   "author": "Ammon Brown",
+   "username": "ammonbrown",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@zachary_dewitt &nbsp;Social media, GTM, content creation, task management, and email triage, I would say. Although users keep coming up with new use cases all the time! Also... Notorious PLG... 🤣"
+  }
+ ]
+}

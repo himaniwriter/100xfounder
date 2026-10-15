@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 3459,
+  "date": "2026-10-11T12:31:00",
+  "date_gmt": "2026-10-11T07:01:00",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/ayven/",
+   "raw": "https://100xfounder.com/startup/ayven/"
+  },
+  "modified": "2026-10-11T12:31:00",
+  "modified_gmt": "2026-10-11T07:01:00",
+  "password": "",
+  "slug": "ayven",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/ayven/",
+  "title": {
+   "raw": "Ayven",
+   "rendered": "Ayven"
+  },
+  "content": {
+   "raw": "<p>Ayven drives your agenda. It means observing, cutting the work into pieces your team can take one at a time, putting an owner and a date on each, and filing them in Jira or YouTrack. Then it runs, tracks and talks about the work for weeks: asking whoever knows, waiting, chasing silence, moving work when someone is away. Your team answers in Slack and the board moves. Planning stops being the barrier and you ship your agenda like crazy.</p>\n",
+   "rendered": "<p>Ayven drives your agenda. It means observing, cutting the work into pieces your team can take one at a time, putting an owner and a date on each, and filing them in Jira or YouTrack. Then it runs, tracks and talks about the work for weeks: asking whoever knows, waiting, chasing silence, moving work when someone is away. Your team answers in Slack and the board moves. Planning stops being the barrier and you ship your agenda like crazy.</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "Carries and drives your team's agenda",
+   "rendered": "<p>Carries and drives your team&#8217;s agenda</p>\n",
+   "protected": false
+  },
+  "featured_media": 0,
+  "template": "",
+  "xf_industry": [
+   545,
+   659,
+   721
+  ],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "ayven",
+  "class_list": [
+   "post-3459",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "hentry",
+   "xf_industry-artificial-intelligence",
+   "xf_industry-messaging",
+   "xf_industry-productivity",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3459",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=3459"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=3459"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=3459"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3459"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3459"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3459"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3459"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3459"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3459"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

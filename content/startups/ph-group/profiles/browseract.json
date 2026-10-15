@@ -1,0 +1,220 @@
+{
+  "slug": "browseract",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/browseract",
+  "excerpt": "BrowserAct is a no-code AI web scraper and browser layer for AI agents: describe the data you want, it builds a tested bot, and re-runs cost a fraction of the build. Pricing, alternatives and both Product Hunt launches.",
+  "content": "<p>BrowserAct turns a plain-language request into a web scraper. You give it a website and describe the data you need (for example product names, prices and stock levels), its AI agent explores the site, works out the fields and builds a tested bot. Running that bot again costs about 6% of the build, according to its site, and returns a spreadsheet; if you need another column, you ask for it. The results can flow on to tools such as n8n and Make.</p><p>It is also pitched as a browser layer for AI agents. Bots run in managed cloud browsers, and BrowserAct handles CAPTCHAs, residential proxies, logged-in sites, form filling and file uploads, and says it repairs a bot when the page it scrapes changes. Developers can connect through MCP servers, an API and a CLI. You choose between an adaptive agent bot and a more predictable workflow bot.</p><p>BrowserAct is run by Hongkong Ziniao Technology Co., Limited, according to its terms, and its About page says the team has spent seven years on RPA and web automation and works from Hong Kong, Singapore, the US and elsewhere. It has launched twice on Product Hunt: BrowserAct on 25 June 2026, which finished #1 for the day with 544 points and 122 comments, and BrowserAct Cloud ('Scrape any data from any website with one prompt') on 14 August 2026, which finished #2 with 282 points and 38 comments.</p><p><em>We have not tested BrowserAct ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from. Scraping can be restricted by a website's terms and by data-protection law; check before you collect personal data.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Web scraping and browser automation",
+    "platform": "Cloud web app, with MCP, API and CLI",
+    "starts_at": "Free plan; paid from $16/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "No-code AI web scraper and browser layer for AI agents, with CAPTCHA and proxy handling built in",
+    "ph": {
+      "rank": 1,
+      "votes": 544,
+      "comments": 122,
+      "followers": 2249,
+      "launched": "2026-06-25",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/ad95ff15-5ed1-4cf5-97db-dbe984001729.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "BrowserAct prompt box 'What do you need from the web?' with a preview of a product-catalogue scraper bot, under the heading 'Extract data with one prompt'",
+        "credit": "Image: BrowserAct via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/be3b759b-d312-41c0-8ba0-6ef6c268eec2.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "BrowserAct timeline showing a scraper built, run, broken by a page change, repaired by the agent and run again, headed 'Build once. Run forever.'",
+        "credit": "Image: BrowserAct via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/58722dd1-cea6-461f-b5fa-a2d66b58b9bd.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "BrowserAct status panel listing CAPTCHA handled, proxy rotating, browser running and output ready, beside a 12,000-row dataset extraction",
+        "credit": "Image: BrowserAct via Product Hunt"
+      }
+    ],
+    "audience": {
+      "fit": [
+        "know exactly what web data you need but don't want to write or maintain a scraper",
+        "build AI agents that need to browse, click, fill forms or work inside logged-in sites",
+        "run the same data pull on a schedule and want it to keep working when pages change"
+      ],
+      "not_fit": [
+        "want to self-host an open-source browser agent: BrowserAct runs in its own managed cloud",
+        "need a large number of one-off builds: each new bot costs far more credits than re-running one",
+        "plan to collect personal data or scrape sites whose terms forbid it: the tool doesn't make that lawful"
+      ]
+    },
+    "pricing": {
+      "intro": "BrowserAct starts free, then charges monthly for a credit allowance. Prices are in US dollars; yearly billing saves 20%. Paid plans come with a 7-day free trial.",
+      "url": "https://www.browseract.com/pricing",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "200 credits on signup, 2 free agent builds, 2 simultaneous tasks, 5 free local browsers, community support"
+        },
+        {
+          "name": "Basic",
+          "price": "$16/month",
+          "amount": 16,
+          "currency": "USD",
+          "detail": "$13/month billed yearly. 10,000 credits a month, 10 simultaneous tasks, unlimited MCP servers, up to 5 static proxies"
+        },
+        {
+          "name": "Essential",
+          "price": "$70/month",
+          "amount": 70,
+          "currency": "USD",
+          "detail": "$56/month billed yearly. 50,000 credits a month, 20 simultaneous tasks, up to 25 static proxies"
+        },
+        {
+          "name": "Advanced",
+          "price": "$120/month",
+          "amount": 120,
+          "currency": "USD",
+          "detail": "$96/month billed yearly. 100,000 credits a month, 40 simultaneous tasks, up to 50 static proxies"
+        },
+        {
+          "name": "Custom",
+          "price": "Contact sales",
+          "amount": null,
+          "currency": "USD",
+          "detail": "Custom credit packages, concurrency and managed browser infrastructure"
+        }
+      ],
+      "notes": [
+        "Its home page example: building a bot used 320 credits, and each run of it 20 credits.",
+        "Extra credit packs can be bought on paid plans."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {
+          "name": "Browser Use",
+          "url": "https://browser-use.com",
+          "what": "Browser agents and remote browser infrastructure for your own agents",
+          "starts_at": "Pay as you go: browsers $0.02/hour, proxies $5/GB, agents at model cost + 20%",
+          "ph_rating": 5,
+          "ph_reviews": 15,
+          "difference": "No subscription: you pay per browser hour, proxy traffic and model use, and it is aimed at developers; BrowserAct is a no-code builder with monthly credit plans."
+        },
+        {
+          "name": "Apify",
+          "url": "https://apify.com",
+          "what": "Marketplace of ready-made scrapers ('Actors') and a platform to build your own",
+          "starts_at": "Free plan with $5 of usage; then pay as you go",
+          "ph_rating": 5,
+          "ph_reviews": 12,
+          "difference": "Huge library of ready-made scrapers plus the open-source Crawlee library; BrowserAct builds a custom bot from a prompt."
+        },
+        {
+          "name": "PhantomBuster",
+          "url": "https://phantombuster.com",
+          "what": "Automations for lead generation",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.79,
+          "ph_reviews": 28,
+          "difference": "Focused on sales prospecting automations rather than general web data extraction."
+        }
+      ],
+      "more": "Product Hunt also lists Browserbase and Skyvern, an open-source browser automation tool."
+    },
+    "reviews": {
+      "count": 1,
+      "rating": 5,
+      "url": "https://www.producthunt.com/products/browseract/reviews",
+      "as_of": "2026-10-14"
+    },
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/browseract",
+      "quotes": [
+        {
+          "author": "Wendy (BrowserAct team)",
+          "text": "A lot of people know exactly what data they need, but building and maintaining a scraper is a completely different skill set."
+        }
+      ],
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=browseract&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is BrowserAct?",
+        "a": "A no-code AI web scraping platform and browser layer for AI agents. You describe the data you need and it builds a tested bot that runs in managed cloud browsers. It launched on Product Hunt on 25 June 2026 and again as BrowserAct Cloud on 14 August 2026."
+      },
+      {
+        "q": "How much does BrowserAct cost?",
+        "a": "There is a free plan with 200 credits on signup and 2 agent builds. Paid plans are Basic at $16 a month, Essential at $70 and Advanced at $120, with 20% off for yearly billing and a 7-day free trial."
+      },
+      {
+        "q": "How do credits work?",
+        "a": "Building a bot costs more than running it. In BrowserAct's own example, a build used 320 credits and each run 20 credits, about 6% of the build."
+      },
+      {
+        "q": "Can BrowserAct handle CAPTCHAs and logins?",
+        "a": "Its site says it uses real browsers, handles CAPTCHAs and residential proxies, and can work inside logged-in sites."
+      },
+      {
+        "q": "Can I use BrowserAct from my own AI agent?",
+        "a": "Yes. Paid plans include unlimited MCP servers, and the site offers an API and a CLI. It also integrates with n8n and Make."
+      },
+      {
+        "q": "Who runs BrowserAct?",
+        "a": "Hongkong Ziniao Technology Co., Limited, according to its terms of service, which name CYBER BYET PTE. LTD. as the previous entity."
+      }
+    ],
+    "sources": [
+      {
+        "label": "BrowserAct official site",
+        "url": "https://www.browseract.com/"
+      },
+      {
+        "label": "BrowserAct pricing",
+        "url": "https://www.browseract.com/pricing"
+      },
+      {
+        "label": "About BrowserAct",
+        "url": "https://www.browseract.com/about-us"
+      },
+      {
+        "label": "BrowserAct terms of service",
+        "url": "https://www.browseract.com/terms-of-service"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/browseract"
+      },
+      {
+        "label": "Product Hunt reviews",
+        "url": "https://www.producthunt.com/products/browseract/reviews"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/browseract/alternatives"
+      },
+      {
+        "label": "Browser Use pricing",
+        "url": "https://browser-use.com/pricing"
+      },
+      {
+        "label": "Apify pricing",
+        "url": "https://apify.com/pricing"
+      }
+    ]
+  }
+}

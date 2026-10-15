@@ -1,0 +1,95 @@
+{
+  "slug": "agent-arena",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/agent-arena",
+  "excerpt": "Agent Arena (arena42.ai) by NetMind.AI is a public arena where AI agents register themselves, play games and challenges against each other and earn credits. What it is, who made it and launch-day comments.",
+  "content": "<p>Agent Arena, at arena42.ai, is a public platform where AI agents rather than people are the main users. You paste one line into your agent telling it to read the arena's skill.md file, and the agent registers itself and joins a match. Its home page lists live competitions such as stock prediction, paper portfolios, debates, bounties, Werewolf, Undercover, Texas Hold'em and tank battles, with replays and a leaderboard. Agents earn credits from a prize pool, and a weekly credit league settles each week. A separate Product Arena lets creators publish their own games and worlds that humans, agents or both can play.</p><p>It is built by NetMind.AI; its Founder and CEO, Kai Zou, is among the makers on Product Hunt. The team's pitch is that agents should earn trust through results in live, messy settings rather than polished benchmarks. A launch graphic says credits can be redeemed for NetMind API and GPU services, and a maker wrote that agents can also claim onchain rewards. Agent Arena launched on Product Hunt on 26 June 2026 and finished #1 for the day with 342 points and 70 comments.</p><p><em>We have not tested Agent Arena ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI agents",
+    "platform": "Web platform; works with any agent that can read a link",
+    "starts_at": "Free to join (Product Hunt lists it as free)",
+    "schema_category": "GameApplication",
+    "summary_short": "Public arena where AI agents compete in games and challenges and earn credits",
+    "maker": {"name": "Xiangpeng Wan", "url": "https://www.producthunt.com/@xiangpeng_wan"},
+    "team": [
+      {"name": "Kai Zou", "role": "Founder and CEO at NetMind.AI (Product Hunt profile)", "url": "https://www.producthunt.com/@kaizou_42"},
+      {"name": "Xiangpeng Wan", "role": "AI Researcher & Developer at NetMind.AI (Product Hunt profile)", "url": "https://www.producthunt.com/@xiangpeng_wan"},
+      {"name": "Siwen Chen", "role": "Product Strategy & GTM (Product Hunt profile)", "url": "https://www.producthunt.com/@siwen_demi369"}
+    ],
+    "ph": {"rank": 1, "votes": 342, "comments": 70, "followers": 707, "launched": "2026-06-26", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/2789752a-fbe1-430a-a9d1-2d603ff30770.jpeg?auto=format&fit=max&w=1400", "w": 1671, "h": 941,
+       "alt": "Agent Arena banner reading 'The first public arena for AI agents' over a lit-up colosseum in a city at night", "credit": "Image: Agent Arena via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/fefa5484-eceb-4290-9762-ed02b27c341d.jpeg?auto=format&fit=max&w=1400", "w": 3344, "h": 1882,
+       "alt": "Agent Arena graphic 'Agents compete and evolve. Create competitions.' with OpenClaw, Hermes, Codex and Claude Code agent cards", "credit": "Image: Agent Arena via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/eae2c43d-ef14-4ac9-8cd0-020cda817a7f.jpeg?auto=format&fit=max&w=1400", "w": 1672, "h": 941,
+       "alt": "Agent Arena graphic 'Create and earn. A living ecosystem.' saying credits can be redeemed for NetMind API and GPU services", "credit": "Image: Agent Arena via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "build or run an autonomous agent and want to see how it behaves against other agents in live settings",
+        "are curious how agents handle bluffing and social games such as Werewolf and Undercover",
+        "want to publish a game or world that agents can play"
+      ],
+      "not_fit": [
+        "need a controlled, reproducible benchmark for a production decision: commenters at launch questioned how results map to real-world tasks",
+        "are looking for a business tool with a contract and published pricing: the site lists no paid plans",
+        "want to avoid crypto: a maker mentioned onchain rewards as part of the system"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on arena42.ai as of 14 October 2026.",
+      "url": "https://arena42.ai/",
+      "plans": [],
+      "notes": [
+        "Product Hunt lists it as free.",
+        "Agents compete for credits from prize pools. A launch graphic says credits can be redeemed for NetMind API and GPU services."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Reiki by Web3Go", "url": "https://reiki.web3go.xyz/", "what": "Platform to create and monetise AI agents", "starts_at": "See its pricing page",
+         "ph_rating": 4.91, "ph_reviews": 201,
+         "difference": "About building and selling agents. Agent Arena is about putting existing agents into competitions."},
+        {"name": "Lyzr", "url": "https://www.lyzr.ai/", "what": "Agent SDKs and platform for taking enterprise AI agents to production", "starts_at": "See its pricing page",
+         "ph_rating": 5, "ph_reviews": 13,
+         "difference": "An enterprise toolkit for building agents, not a public competition space."},
+        {"name": "Google Antigravity", "url": "https://antigravity.google/", "what": "IDE for running and monitoring several coding agents at once", "starts_at": "See its pricing page",
+         "ph_rating": 4.65, "ph_reviews": 23,
+         "difference": "A developer tool for directing coding agents. Agent Arena pits agents against each other in games and challenges."}
+      ],
+      "more": "Product Hunt also lists Coarena by Coasty, an arena where agents compete on real-world work, and Benchspan, for running agent benchmarks."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/agent-arena/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/agent-arena",
+      "quotes": [
+        {"author": "Henry Habib", "text": "How are winners decided, and what stops agents from gaming the competitions?",
+         "reply": "Siwen Chen: each competition's own rules and success criteria decide winners, within shared platform-level constraints."},
+        {"author": "Mia Qiao", "text": "Is the arena meant for agents to compete on standardized tasks, or more for people to discover and discuss different agents?",
+         "reply": "Kai Zou: both, with reputation grounded in performance rather than popularity."},
+        {"author": "David", "text": "The arena that matters is the one with messy real inputs."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=arena42.ai&f=live"}
+    },
+    "faq": [
+      {"q": "What is Agent Arena?", "a": "A public platform at arena42.ai, built by NetMind.AI, where AI agents register themselves, compete in games and challenges and earn credits. It launched on Product Hunt on 26 June 2026."},
+      {"q": "How do I add my agent?", "a": "Paste the line the site gives you into your agent: it tells the agent to read arena42.ai/skill.md and follow the instructions, and the agent registers and joins a match."},
+      {"q": "Which agents can take part?", "a": "The site says any agent that can read a link. Launch graphics show OpenClaw, Hermes, Codex and Claude Code."},
+      {"q": "What can agents play?", "a": "The home page lists competitions including stock prediction, paper portfolios, debates, bounties, Werewolf, Undercover, Texas Hold'em, tank battles and a weekly credit league."},
+      {"q": "Does it cost anything?", "a": "Product Hunt lists Agent Arena as free, and the site publishes no pricing."},
+      {"q": "What are credits for?", "a": "Agents win credits in competitions. A launch graphic says they can be redeemed for NetMind API and GPU services."}
+    ],
+    "sources": [
+      {"label": "Agent Arena official site", "url": "https://arena42.ai/"},
+      {"label": "Agent Arena skill file", "url": "https://arena42.ai/skill.md"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/agent-arena"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/agent-arena"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/agent-arena/alternatives"},
+      {"label": "Lyzr", "url": "https://www.lyzr.ai/"}
+    ]
+  }
+}

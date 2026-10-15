@@ -1,0 +1,370 @@
+{
+ "input": "https://www.producthunt.com/posts/powabase",
+ "final_url": "https://www.producthunt.com/products/powabase?launch=powabase",
+ "launch": {
+  "slug": "powabase",
+  "name": "Powabase",
+  "tagline": "Build AI apps with Postgres, RAG, and agents",
+  "featuredAt": "2026-05-27T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "6",
+  "points": 404,
+  "commentsCount": 66,
+  "pricingType": "free",
+  "description": "Powabase is a backend-as-a-service for AI-native applications, combining Postgres, RAG, agents, memory, workflows, and automation primitives in one platform. It helps agencies and in-house IT teams build new AI apps or add AI automation to existing products without stitching together fragmented infrastructure. Designed to work seamlessly with modern coding agents, Powabase helps teams ship faster while building more robust, token-efficient systems.",
+  "makers": [
+   {
+    "name": "Hunter Zhao",
+    "username": "hunter_powabase",
+    "headline": "Founder of Powabase."
+   },
+   {
+    "name": "Michael Chang",
+    "username": "michael_t_chang",
+    "headline": "Software Engineer at Powabase.ai"
+   },
+   {
+    "name": "Xin Chen",
+    "username": "xin_chen17",
+    "headline": "Founding engineer of Powabase.ai"
+   },
+   {
+    "name": "Tony Zhang",
+    "username": "tonyzhangcy",
+    "headline": "Backend for AI apps. Built for agents."
+   }
+  ],
+  "hunter": "fmerian",
+  "media": [
+   {
+    "uuid": "6e304c87-40be-4f43-9e9a-5b2c4a06c609.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "c35f126a-a18f-421d-9493-ce0403d548b2.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "78d3c897-a4a1-42a8-accb-33e4a995e078.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "8916d5bc-7bfc-4079-9e8d-9905aa587dc5.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "bc033151-9c13-4fbe-a7fc-6658decff5c4.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "0c756a03-cfe9-48be-b014-f69cd25c7e82.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=PBTkGBIlrYM"
+   }
+  ],
+  "links": [
+   "powabase.ai",
+   "docs.powabase.ai",
+   "cookbook.powabase.ai",
+   "github.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "Powabase",
+  "slug": "powabase",
+  "tagline": "Build AI apps with Postgres, RAG, and agents",
+  "description": "Powabase is a backend-as-a-service for AI-native applications, combining Postgres, RAG, agents, memory, workflows, and automation primitives in one platform. It helps agencies and in-house IT teams build new AI apps or add AI automation to existing products without stitching together fragmented infrastructure. Designed to work seamlessly with modern coding agents, Powabase helps teams ship faster while building more robust, token-efficient systems.",
+  "websiteUrl": "https://powabase.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 936,
+  "githubUrl": "https://github.com/powabase-ai/cookbook",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5387632",
+   "depth": 0,
+   "author": "Hunter Zhao",
+   "username": "hunter_powabase",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 I'm Hunter, co-founder of Powabase . We've been running an AI dev shop since ChatGPT first came out, and after many client projects we noticed the same pattern repeating itself. Nearly every AI-native app ends up needing the same stack: Postgres, a vector store, RAG pipelines, an agent runtime, memory, auth, and file storage. Today you stitch that together from 6–8 tools, write a lot of glue code, and then watch your coding agent burn tokens navigating it. We've built ~100 production AI apps across regulated industries — finance, insurance, education, government — and the infra glue was always the slowest, most expensive part. So we abstracted it into a unified backend. Powabase is the backend we wished we'd had — and now every new AI project we take on ships in a fraction of the time. Powabase is that whole stack as one platform: Postgres + pgvector + file storage, provisioned per project in one click Standard Supabase features like auth and realtime A context engineering layer with multiple RAG algorithms that hits 98.7% on FinanceBench Supports OpenAI, Anthropic, Google, or open-source LLMs via OpenRouter Multimodal embeddings, rerankers, OCR, web search, web "
+  },
+  {
+   "id": "5405659",
+   "depth": 1,
+   "author": "Artur Brugeman",
+   "username": "arturbrugeman",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@tonyzhangcy &nbsp; @xin_chen17 &nbsp; @michael_t_chang &nbsp; @hunter_powabase &nbsp;The \"infra glue was the slowest, most expensive part\" framing is the honest reason this category exists, nobody's AI app died from a bad model, they died stitching six tools together. Since token-efficiency is the thread you keep pulling on, that's where I'd push: FinanceBench is clean and bounded, but a client's real knowledge base is messy, duplicated, and growing weekly. The hard part isn't retrieval quality on a benchmark, it's what the cost curve does at 10x the documents. Naive RAG either bloats context and quietly kills the token-efficiency claim, or over-prunes and misses the right chunk. So: as a project's corpus scales, does retrieval cost stay flat, and does precision hold on dirty data? That curve is the difference between a demo scoring 98% and a backend teams trust in production, and it's the one number that'd make \"token-efficient by design\" provable rather than aspirational."
+  },
+  {
+   "id": "5405983",
+   "depth": 2,
+   "author": "Michael Chang",
+   "username": "michael_t_chang",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tonyzhangcy &nbsp; @xin_chen17 &nbsp; @hunter_powabase &nbsp; @arturbrugeman &nbsp;You're naming the real tension — a benchmark isn't proof of production behavior. A few things we lean on: on retrieval cost, pgvector keeps vector search at ~O(log N) with HNSW, and rerankers cut through noise on the candidate set. On dirty data, the harder problem is upstream — one option is using custom metadata enrichment as a preprocessing step to extract structured signal before chunks ever hit the LLM. Precision still degrades with corpus noise, the question is how gracefully. Production signal we have outside FinanceBench: client app corpora in the 10K–700K-doc range, growing weekly. Powabase is designed to be extensible, and a lot of what gets built per-client ends up as a reusable primitive — that's been our pattern for handling the messier-than-benchmark cases. If you're working on something specific, would love to hear about it!"
+  },
+  {
+   "id": "5407129",
+   "depth": 1,
+   "author": "Rohan Chaubey",
+   "username": "rohanrecommends",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@tonyzhangcy &nbsp; @xin_chen17 &nbsp; @michael_t_chang &nbsp; @hunter_powabase &nbsp;Hunter and Tony reached out to me to get some initial feedback before the launch. When they showed me the product on the call, I instantly knew this is going to be a big hit on Product Hunt. Powabase feels like what Supabase did for startups in 2021 but for AI-native apps. Many congratulations. :)"
+  },
+  {
+   "id": "5407145",
+   "depth": 2,
+   "author": "Michael Chang",
+   "username": "michael_t_chang",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tonyzhangcy &nbsp; @xin_chen17 &nbsp; @hunter_powabase &nbsp; @rohanrecommends &nbsp;thanks for the support!"
+  },
+  {
+   "id": "5407164",
+   "depth": 2,
+   "author": "Hunter Zhao",
+   "username": "hunter_powabase",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tonyzhangcy &nbsp; @xin_chen17 &nbsp; @michael_t_chang &nbsp; @rohanrecommends &nbsp;Thanks for the encouragement Rohan! Really appreciate your feedback before our launch as well."
+  },
+  {
+   "id": "5407045",
+   "depth": 0,
+   "author": "Sounak Bhattacharya",
+   "username": "sounak_bhattacharya",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The \"token-efficient\" claim is the one I'd want unpacked, since it's doing a lot of work in the pitch. What's actually saving the tokens — pruning RAG context before it hits the model, caching tool schemas across calls, or something at the memory layer? It's the kind of thing that's easy to assert and hard to measure."
+  },
+  {
+   "id": "5407097",
+   "depth": 1,
+   "author": "Hunter Zhao",
+   "username": "hunter_powabase",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@sounak_bhattacharya &nbsp;There are two vectors where Powabase helps save tokens. During development, your coding agent relies much less on gluing open source frameworks and third party packages together. Powabase's native abstractions will work seamlessly together out of the box. Agentic RAG via properly designed ReAct orchestrations and integrated rerankers are much more efficient and accurate compared to naive RAG with zero-shot, straight-through context retrieval. The latter usually relies on stuffing the context, which results in context dilution and inflated input token count. If a reasoning model is used, extra reasoning tokens may be dedicated to \"filtering out\" unnecessary data. The caveat, of course, is if the agentic RAG system is designed poorly, then its token efficiency gains won't be as significant. We are also thinking about building a session cache for retrieved context so follow up queries in the same session would not necessitate agents to re-pull reference knowledge via RAG or tool calls. This would require careful configuration because the cached info may become obsolete throughout the lifecycle of the session."
+  },
+  {
+   "id": "5406565",
+   "depth": 0,
+   "author": "Asher Snyder",
+   "username": "asherraph",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Have mixed feelings with these PostgreSQL wrappers. I loved PostgreSQL before it was fashionable and would much prefer to bring my own PostgreSQL, and have clear RAG and other enforcement in N8N, Flowise, or equivalent, and leverage existing agents which can be spread through different infrastructures while maintaining their own memory, skills, knowledge base, etc., in some nice centralized place. Everything bundled, like Supabase's Edge functions feels like lock in to me. I know it can be run independently, but would prefer these workflows to flow independently of the data container. Though, there are clear benefits to current agentic limitations having it all be bundled together as it allows better tool, skill, and MCP usage without the agent getting too confused jumping between skills and workspaces. Looking forward to seeing how it all plays out. Good luck!!"
+  },
+  {
+   "id": "5406660",
+   "depth": 1,
+   "author": "Hunter Zhao",
+   "username": "hunter_powabase",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@asherraph &nbsp;Genuinely appreciate this. The tradeoffs you're naming are real, and I'd rather engage them than try to talk you out of your preferences. BYO Postgres is closer than it looks. Each project's Postgres is a normal Postgres — you get a direct connection string, your app tables live in the public (or your self-defined) schema (the AI features use a separate ai schema), and the self-hosted distribution runs as Docker Compose or Helm on your own infra. In self-hosted mode the \"data container\" literally is your Postgres. The lock-in surface is the ai schema and the service worker that maintains it — not the database underneath. The architecture you described is actually a supported pattern. Agents are reachable via API and MCP, and they call tools over HTTP or MCP. So one common setup: keep your orchestration in n8n / Flowise / whatever, and use Powabase as the centralized brain — knowledge bases, sessions, agent configs, and memory live there, but they're invoked from your existing workflows. The inverse works too: Powabase agents can call your n8n flows as custom tools. We tried to keep the layers composable rather than mandatory, so you can adopt one piece without swal"
+  },
+  {
+   "id": "5405677",
+   "depth": 0,
+   "author": "Florent Berrez",
+   "username": "fberrez1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The Postgres-native approach is interesting most RAG tooling treats the database as an afterthought rather than the foundation. Curious how you're handling vector indexing at scale: are you using pgvector under the hood, or did you build something custom? Would also love to know if the agent layer supports tool-calling across multiple data sources or just within a single Powabase instance."
+  },
+  {
+   "id": "5405868",
+   "depth": 1,
+   "author": "Hunter Zhao",
+   "username": "hunter_powabase",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@fberrez1 &nbsp;Yep, we are using pgvector under the hood. For multimodal content, we first convert the data into a text-based description using a VLM like Mistral OCR, then index the text. At retrieval time, the database searches the indexed text but pulls the original multimodal content (e.g., base 64 image) and feeds it as context to the LLM. Agent layer does support tool-calling across multiple data sources. Out-of-the-box tools interface mostly with built-in capabilities of the BaaS itself (e.g., sandbox code execution, permissioned db read/write, web search via Exa, web crawl via Firecrawl, etc.). You can connect custom tools or MCP servers to any agent or orchestrations to supplement its set of tools."
+  },
+  {
+   "id": "5405752",
+   "depth": 0,
+   "author": "Aarav Pittman",
+   "username": "aarav_pittman",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The biggest value honestly might not be speed, it’s reducing architectural chaos. AI stacks become fragmented unbeliveably fast 😅"
+  },
+  {
+   "id": "5405926",
+   "depth": 1,
+   "author": "Hunter Zhao",
+   "username": "hunter_powabase",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@aarav_pittman &nbsp;Indeed. A significant time sink during Powabase's design process was figuring out which available tools are best to include. There are so many out there and some optimize for performance while disregarding cost, some try to strike a good balance and aim at best value, and others make the pure open source free-to-use play. Example: VLM-based text extraction include LightOnOCR-2, Mistral, or PaddleOCR. This is the default approach for our RAG ETL pipeline. But if you know the source is all native text, you can opt into faster and cheaper non-VLM parsers like OpenDataLoader, PyMuPDF (fitz), or pdfplumber. We generally try to give developers a choice while setting default options to what we believe is the best value for most common use cases."
+  },
+  {
+   "id": "5406015",
+   "depth": 1,
+   "author": "Michael Chang",
+   "username": "michael_t_chang",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@aarav_pittman &nbsp;Yes! I've been building apps using Powabase as a backend, and it simplifies the management of all the different tools/integrations needed for an AI app"
+  },
+  {
+   "id": "5405759",
+   "depth": 0,
+   "author": "Maali Baali",
+   "username": "maali_baali",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Curious how opinionated Powabase is internally. Can teams swap components easily, or is the goal more of an integrated ecosystem experience?"
+  },
+  {
+   "id": "5405892",
+   "depth": 1,
+   "author": "Hunter Zhao",
+   "username": "hunter_powabase",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@maali_baali &nbsp;Great question! There's a trade off to abstraction level (convenience) vs. control. Powabase definitely tries to strike the best balance based on our own experience building across many use cases during our dev shop days. If your use case involves building AI-native apps with RAG or ReAct agent orchestrations, then you'll find Powabase quite easy to use out of the box. If your application needs something custom, you don't have to use the complete abstractions offered through Powabase. Instead, you can take relevant \"intermediaries\" and build a custom layer on top of those to better fit your design specifications. For example, if you need to supplement retrieved RAG context with metadata stored elsewhere, you can invoke the \"context_handler\" object to get you the content that normally \"would have been fed into the agent\", then enrich it with custom logic before forwarding it to your agent. If you share more about what you're trying to build, then we'd be happy to advise you on which features would be most relevant on Powabase!"
+  },
+  {
+   "id": "5406001",
+   "depth": 1,
+   "author": "Michael Chang",
+   "username": "michael_t_chang",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@maali_baali &nbsp;there's a lot of flexibility built into Powabase for processing data sources and indexing them in different ways. In our experience with building client apps, that's where you can get a lot of value from tuning for your use case, e.g. long vs. short documents, scanned vs. digital native PDFs, images vs text-heavy sources."
+  },
+  {
+   "id": "5406558",
+   "depth": 0,
+   "author": "Ozan",
+   "username": "ozandag",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the 'glue code between 6-8 tools' problem is real. spent way too many hours on that exact pattern before. curious how you handle the agent runtime side specifically — is there built-in support for tool calling and memory across conversation turns, or is that something you still wire up yourself?"
+  },
+  {
+   "id": "5406761",
+   "depth": 1,
+   "author": "Hunter Zhao",
+   "username": "hunter_powabase",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ozandag &nbsp;Yup, the agent orchestration we implemented follows Claude Code's architecture. We have many built-in tools with detailed configurations and permissions. Some of them rely on third party service providers like Exa and Firecrawl, but your Powabase credits cover their usage. You can also attach your own custom tools via API or MCP. All agent conversations are put in \"sessions\" so agents working in the same session can maintain memory. You have full visibility and control over database tables handling sessions and respective agent / orchestration runs. You can also see retrieved context and tool use / output if your agent uses RAG or tools. In general, there is no need to wire up anything yourself. If you have specific abstractions in mind that we don't currently support, please share them with me. We're always happy to build it in."
+  }
+ ]
+}

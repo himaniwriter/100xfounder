@@ -1,0 +1,187 @@
+{
+ "input": "https://www.producthunt.com/posts/ghost-core",
+ "final_url": "https://www.producthunt.com/products/ghost-core?launch=ghost-core",
+ "launch": {
+  "slug": "ghost-core",
+  "name": "Ghost Core",
+  "tagline": "A personal AI computer that runs entirely on-device",
+  "featuredAt": "2026-10-11T00:01:00-07:00",
+  "dailyRank": "4",
+  "weeklyRank": "36",
+  "points": 184,
+  "commentsCount": 5,
+  "pricingType": "payment_required",
+  "description": "Ghost Core is a personal AI computer that runs AI models on-device, connects to your apps, files, and devices, and builds continuous context to proactively help you.",
+  "makers": [],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "9a9099b7-9f5e-4afc-b122-198b94750a1c.png",
+    "type": "image",
+    "w": 2230,
+    "h": 1250,
+    "video": null
+   },
+   {
+    "uuid": "d75104bf-b5a1-4646-8a5e-fc6d98f34c09.png",
+    "type": "image",
+    "w": 2065,
+    "h": 1250,
+    "video": null
+   },
+   {
+    "uuid": "a2c329c7-be6b-4d66-883d-70eaf1d3a303.png",
+    "type": "image",
+    "w": 1956,
+    "h": 1250,
+    "video": null
+   },
+   {
+    "uuid": "dd993cd0-4c0a-42fa-9715-35f2d5d2c728.png",
+    "type": "image",
+    "w": 1925,
+    "h": 1250,
+    "video": null
+   },
+   {
+    "uuid": "b2aae33b-c6f4-4a92-80e1-ca43eaad9689.png",
+    "type": "image",
+    "w": 2121,
+    "h": 1250,
+    "video": null
+   },
+   {
+    "uuid": "e8cd5131-f005-438d-88f9-1420059b54a8.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=3_Q8J9cUlug"
+   }
+  ],
+  "links": [
+   "ghost.ai",
+   "x.com",
+   "twitter.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    4
+   ]
+  ]
+ },
+ "product": {
+  "name": "Ghost Core",
+  "slug": "ghost-core",
+  "tagline": "A personal AI computer that runs entirely on-device",
+  "description": "Ghost Core is a personal AI computer that runs AI models on-device, connects to your apps, files, and devices, and builds continuous context to proactively help you.",
+  "websiteUrl": "https://ghost.ai/",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 205,
+  "twitterUrl": "https://twitter.com/ghostai",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/9a9099b7-9f5e-4afc-b122-198b94750a1c.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/d75104bf-b5a1-4646-8a5e-fc6d98f34c09.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/a2c329c7-be6b-4d66-883d-70eaf1d3a303.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/dd993cd0-4c0a-42fa-9715-35f2d5d2c728.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/b2aae33b-c6f4-4a92-80e1-ca43eaad9689.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5930807",
+   "depth": 0,
+   "author": "Rohan Chaubey",
+   "username": "rohanrecommends",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "hunter"
+   ],
+   "text": "Ghost Core is a personal AI computer designed to keep your AI, data, and context on your own hardware. What makes it different: Core runs its models locally and continuously builds context from your apps, files, screen history, and connected devices, allowing its AI to act proactively rather than waiting for every prompt. Key features: • Run AI models entirely on-device • Connect to apps, files, and devices • Build continuous context over time • Work proactively without waiting for a prompt • Connect to wearables and smart-home devices • Use local models including Qwen, Gemma, and Muse-Glimmer • 64 GB DDR5 memory and 1 TB NVMe storage • NVIDIA RTX PRO 4000 Blackwell GPU with 24 GB GDDR7 ECC memory Who it's for: People who want a personal AI system with local intelligence, continuous context, and control over their data. Ghost Core is available to order for $3,499. Explore Ghost Core P.S. I hunt the latest and greatest launches in tech, SaaS and AI, follow to be notified → @rohanrecommends"
+  },
+  {
+   "id": "5941049",
+   "depth": 1,
+   "author": "Jung Hahn",
+   "username": "jung_hahn5",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "@rohanrecommends &nbsp;Keeping your files, screen history and context on hardware you own makes sense. If an AI is going to see everything you do, I’d want it to stay at home."
+  },
+  {
+   "id": "5939312",
+   "depth": 0,
+   "author": "André J",
+   "username": "alchemist_studio",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "VERY IMPRESSIVE investor list on their about page. Really excited about this one! I wonder if its possible to switch out the parts for newer ones into the future tho?"
+  },
+  {
+   "id": "5939896",
+   "depth": 0,
+   "author": "Lakshmanan Raman",
+   "username": "laskhmanan_raman",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Great product"
+  },
+  {
+   "id": "5939042",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "\"on-device\" answers where the model runs, not the question people actually care about, which is where the continuous context ends up. building ongoing context from screen history and connected apps means this box is accumulating the single most complete record of someone's life that's ever existed on one piece of hardware. that makes the threat model physical: stolen, seized, resold without being wiped, or just sitting in a house with other people who have access to it. what's the actual story on encryption at rest, and what happens to the context store if the device changes hands?"
+  }
+ ]
+}

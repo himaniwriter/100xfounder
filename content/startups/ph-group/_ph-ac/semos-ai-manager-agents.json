@@ -1,0 +1,287 @@
+{
+ "input": "https://www.producthunt.com/posts/semos-ai-manager-agents",
+ "final_url": "https://www.producthunt.com/products/semos-ai-manager-agents?launch=semos-ai-manager-agents",
+ "launch": {
+  "slug": "semos-ai-manager-agents",
+  "name": "Semos.ai Manager Agents",
+  "tagline": "AI agents purpose-built for managers ",
+  "featuredAt": "2026-09-29T00:01:00-07:00",
+  "dailyRank": "5",
+  "weeklyRank": "24",
+  "points": 183,
+  "commentsCount": 33,
+  "pricingType": "free_options",
+  "description": "Manager Agents learn from your meetings, then point you to what needs your attention next: the feedback that is overdue, the recognition you missed, the conflict you are avoiding, the growth talk that keeps slipping. You learn what works, what doesn't, and why, so you become better at leading your people.",
+  "makers": [
+   {
+    "name": "Ivana Maznevska",
+    "username": "ivana_m",
+    "headline": "AI Enthusiast"
+   },
+   {
+    "name": "Miodrag Stojanov",
+    "username": "miodragstojanov",
+    "headline": "Lead Engineer @ Semos Cloud "
+   },
+   {
+    "name": "Jovica Nastovski",
+    "username": "jovica_nastovski",
+    "headline": "Product Designer | Design Engineer"
+   },
+   {
+    "name": "Natasha Davidovska ",
+    "username": "natasha_davidovska",
+    "headline": "Product Marketing @ Semos.ai "
+   }
+  ],
+  "hunter": "Jonno Riekwel",
+  "media": [
+   {
+    "uuid": "6f910000-f53e-4608-b51c-14137a6b1c02.png",
+    "type": "image",
+    "w": 5104,
+    "h": 3064,
+    "video": null
+   },
+   {
+    "uuid": "c92d1d7a-3dc3-4d4c-a929-6cad581e22ea.png",
+    "type": "image",
+    "w": 5104,
+    "h": 3064,
+    "video": null
+   },
+   {
+    "uuid": "25903c7e-8cc1-49e4-af7a-f85cd8902a19.png",
+    "type": "image",
+    "w": 5104,
+    "h": 3064,
+    "video": null
+   },
+   {
+    "uuid": "f5604c7a-6d8c-4696-a56f-20229a1664a9.png",
+    "type": "image",
+    "w": 5104,
+    "h": 3064,
+    "video": null
+   },
+   {
+    "uuid": "5dc291a4-5ac7-41a2-b061-96ab492d5a0e.png",
+    "type": "image",
+    "w": 5104,
+    "h": 3064,
+    "video": null
+   },
+   {
+    "uuid": "bcdc5cc2-dfe4-4c7b-993b-0ee852567a68.png",
+    "type": "image",
+    "w": 5104,
+    "h": 3064,
+    "video": null
+   },
+   {
+    "uuid": "21c6b877-c310-4003-859d-673cd716ede4.png",
+    "type": "image",
+    "w": 5104,
+    "h": 3064,
+    "video": null
+   },
+   {
+    "uuid": "7ebd7615-82b7-4dc8-ba62-411576018c67.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/Rj-dN-gOM7c"
+   }
+  ],
+  "links": [
+   "semos.ai",
+   "x.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    5
+   ]
+  ]
+ },
+ "product": {
+  "name": "Semos.ai Manager Agents",
+  "slug": "semos-ai-manager-agents",
+  "tagline": "AI agents purpose-built for managers ",
+  "description": "Manager Agents learn from your meetings, then point you to what needs your attention next: the feedback that is overdue, the recognition you missed, the conflict you are avoiding, the growth talk that keeps slipping. You learn what works, what doesn't, and why, so you become better at leading your people.",
+  "websiteUrl": "https://semos.ai/",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 434,
+  "twitterUrl": "https://x.com/SemosCloud",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5785870",
+   "depth": 0,
+   "author": "Natasha Davidovska ",
+   "username": "natasha_davidovska",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 Our team has spent years building people and culture intelligence software for large enterprises at Semos Cloud. Working closely with those companies, we saw a gap in the tools available to help managers lead their teams. We wanted to give them something practical they could use in their everyday work. That became Manager Agents. Manager Agents learns from your meetings and helps with the parts of managing people that usually get pushed to the bottom of the list: feedback that’s overdue, recognition you almost missed, the conversation you’ve been avoiding, the growth talk that keeps slipping. This isn't just another AI chatbot. Specialized agents handle different parts of leading a team, all working from the same context pulled from your meetings, so the guidance stays grounded in your actual team rather than a generic answer. We also draw on behavioral science to shape the guidance, including how to give feedback and approach conversations with different people. A few things it does: 💬 Drafts feedback and recognition messages grounded in what actually happened in your meetings 🎯 Helps you prep for the hard conversations before you have them 📊 Gives you a real re"
+  },
+  {
+   "id": "5905208",
+   "depth": 1,
+   "author": "Ivana Maznevska",
+   "username": "ivana_m",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@natasha_davidovska &nbsp;So proud to be part of this team! The \"without an HRBP down the hall\" part is so real. That's most managers I know, including me. Can't wait to hear what everyone thinks 🚀"
+  },
+  {
+   "id": "5905455",
+   "depth": 1,
+   "author": "Dipanshu Kushwaha",
+   "username": "dipanshu_kushwaha5",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@natasha_davidovska &nbsp;Does it track patterns across multiple meetings over time ?"
+  },
+  {
+   "id": "5905855",
+   "depth": 0,
+   "author": "Sandy Diao",
+   "username": "sandy_leventh",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "on device processing or strict data encryption for sensitive leadership meetings is crucial here."
+  },
+  {
+   "id": "5906177",
+   "depth": 1,
+   "author": "Natasha Davidovska ",
+   "username": "natasha_davidovska",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@sandy_leventh &nbsp;Hey Sandy! Completely agree, and that's something we take seriously. Personal information is masked with PII masking before anything is passed to the AI models. On top of that, data is encrypted in transit, so meeting content is protected at every stage, not just when it's being processed. Thank you for your question, we appreciate it! 🙌"
+  },
+  {
+   "id": "5908544",
+   "depth": 2,
+   "author": "Sandy Diao",
+   "username": "sandy_leventh",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@natasha_davidovska &nbsp; that level of security gives me a lot of confidence in using this tool for high level discussions and knowing that personal information is masked properly makes all the difference"
+  },
+  {
+   "id": "5905779",
+   "depth": 0,
+   "author": "Luke Nick",
+   "username": "luke__nick",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I think remembering to give feedback is harder than people admit. Does it also suggest what kind of feedback to give?"
+  },
+  {
+   "id": "5905956",
+   "depth": 1,
+   "author": "Ivana Maznevska",
+   "username": "ivana_m",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@luke__nick &nbsp;Totally agree, Luke! And yes, it does. It drafts feedback based on what actually happened in your meetings, so it's specific rather than generic. It also draws on behavioral science to help you tailor how you say it to each person. You stay in control of the final message, it just gives you a strong starting point, based on Stanford’s 4Is framework. You can read more about the science behind here https://semos.ai/explore-agents-new/"
+  },
+  {
+   "id": "5905264",
+   "depth": 0,
+   "author": "Marius Holm",
+   "username": "mariusholm",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "How does the system distinguish between a real unresolved issue and something that was simply mentioned during a meeting?"
+  },
+  {
+   "id": "5905303",
+   "depth": 0,
+   "author": "Bastien Renard",
+   "username": "bastienrenard",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Does it help managers look back at previous conversations and see whether certain approaches led to better outcomes?"
+  },
+  {
+   "id": "5905813",
+   "depth": 0,
+   "author": "Jabari Zuri",
+   "username": "jabari_zuri",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "​how does semos.ai handle privacy when parsing sensitive one on one manager meetings?"
+  },
+  {
+   "id": "5905442",
+   "depth": 0,
+   "author": "Yang Liu",
+   "username": "yangliu44",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "How does the agent avoid jumping to conclusions when a conversation has ambiguous context?"
+  }
+ ]
+}

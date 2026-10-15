@@ -1,0 +1,222 @@
+{
+  "slug": "dupely",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/dupely",
+  "excerpt": "Dupely is a free browser extension and app for Amazon shoppers that finds identical products sold for less, flags fake discounts using 90 days of price history and rates sellers. What it does, limits and alternatives.",
+  "content": "<p>Dupely is a free shopping assistant for Amazon, available as a Chrome extension and as iOS and Android apps. Its makers built it after getting frustrated with duplicate listings, where the same product is sold under different brand names at different prices. When you land on a product page, Dupely looks at the images, specs, seller information and price to find identical listings and scores each match from 0 to 100 (its DupeScore or MatchScore). A feature called Trust This Price uses 90 days of price history to flag discounts that are not real, and seller badges show which sellers look credible. It also surfaces price drops, deals of the day and promo codes. A launch graphic lists checks for fake reviews and paid influencers as coming soon.</p><p>Dupely is made by Dupely, Inc. Its terms say the service is intended for use in the United States and that it is built for Amazon first, with more marketplaces planned. Co-founder and CTO Jacob Galajda said on Product Hunt that price history comes from several data vendors' APIs rather than real-time scraping. It launched on Product Hunt on 7 July 2026 and finished #4 for the day with 262 points and 116 comments.</p><p><em>We have not tested Dupely ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Shopping assistant",
+    "platform": "Chrome extension, iOS and Android apps",
+    "starts_at": "Free",
+    "schema_category": "ShoppingApplication",
+    "summary_short": "Free Amazon shopping assistant that finds identical products for less and flags fake discounts",
+    "maker": {
+      "name": "Jacob Galajda",
+      "url": "https://www.producthunt.com/@jacob_galajda"
+    },
+    "team": [
+      {
+        "name": "Jacob Galajda",
+        "role": "Co-founder and CTO (Product Hunt profile)",
+        "url": "https://www.producthunt.com/@jacob_galajda"
+      },
+      {
+        "name": "Ryan Butz",
+        "url": "https://www.producthunt.com/@ryanbutz"
+      },
+      {
+        "name": "Natalie Warden",
+        "role": "Creative Director (Product Hunt profile)",
+        "url": "https://www.producthunt.com/@natalie_warden"
+      }
+    ],
+    "ph": {
+      "rank": 4,
+      "votes": 262,
+      "comments": 116,
+      "followers": 505,
+      "launched": "2026-07-07",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/1f3e5b0b-6a72-4d69-a8d2-1fc83da135d5.png?auto=format&fit=max&w=1400",
+        "w": 2540,
+        "h": 1520,
+        "alt": "Dupely MatchScore gauge at 98% with checks for dupes, price manipulation and seller credibility live, and review and influencer checks coming soon",
+        "credit": "Image: Dupely via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/ef18447d-ec78-4fb8-97b4-51e667181d00.png?auto=format&fit=max&w=1400",
+        "w": 2540,
+        "h": 1520,
+        "alt": "Three Dupely phone screens: a product feed, a 'Same product, better price' start screen and a scan for better options",
+        "credit": "Image: Dupely via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/b57684be-4ec5-4e82-ab4b-ab1e83ea97ba.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Dupely 'Live on Android, iOS & Chrome' graphic with app store badges and app screens comparing matching listings",
+        "credit": "Image: Dupely via Product Hunt"
+      }
+    ],
+    "audience": {
+      "fit": [
+        "shop on Amazon in the US and suspect the same item is sold cheaper under another brand name",
+        "want to know whether a 'deal' is a real price drop before you buy",
+        "prefer to check seller credibility before ordering"
+      ],
+      "not_fit": [
+        "shop outside the US, including on Amazon.in: its terms say the service is intended for use in the United States",
+        "shop mainly on stores other than Amazon: it is built for Amazon first",
+        "want fake-review detection today: a launch graphic lists it as coming soon"
+      ]
+    },
+    "pricing": {
+      "intro": "Dupely is free. Its site offers the Chrome extension and the iOS and Android apps at no charge.",
+      "url": "https://www.dupely.io/",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "Chrome extension and iOS and Android apps"
+        }
+      ],
+      "notes": [
+        "Product Hunt lists it as free.",
+        "Its privacy policy says it collects activity data including referral clicks."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {
+          "name": "Honey",
+          "url": "https://www.joinhoney.com/",
+          "what": "Free extension that searches for coupons at 30,000+ sites",
+          "starts_at": "Free",
+          "ph_rating": 4.8,
+          "ph_reviews": 5,
+          "difference": "Focuses on coupon codes. Dupely focuses on identical cheaper listings and fake discounts."
+        },
+        {
+          "name": "Chestr",
+          "url": "https://www.getchestr.com/",
+          "what": "Free universal wishlist that alerts you to discounts at any store",
+          "starts_at": "Free",
+          "ph_rating": 5,
+          "ph_reviews": 16,
+          "difference": "Tracks prices on items you save across stores. Dupely compares listings on Amazon."
+        },
+        {
+          "name": "Faircado",
+          "url": "https://faircado.com/",
+          "what": "AI assistant that finds second-hand alternatives while you shop",
+          "starts_at": "See its site",
+          "ph_rating": 5,
+          "ph_reviews": 12,
+          "difference": "Points you to second-hand offers rather than identical new listings."
+        }
+      ],
+      "more": "Product Hunt also lists Beni and Reverse Dropshipping as alternatives."
+    },
+    "reviews": {
+      "count": 1,
+      "rating": 4,
+      "url": "https://www.producthunt.com/products/dupely/reviews",
+      "as_of": "2026-10-14"
+    },
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/dupely",
+      "quotes": [
+        {
+          "author": "Dipankar Sarkar",
+          "text": "Deciding two listings are the 'same product' is the whole game, and Amazon makes it ugly",
+          "reply": "Ryan Butz: it compares price per unit so it doesn't recommend a 90-count bottle against a 270-count one."
+        },
+        {
+          "author": "Bahar",
+          "text": "How do you actually get the 90 days of price history for every product?",
+          "reply": "Jacob Galajda: from several data vendors' APIs; there are some coverage gaps for small or niche brands."
+        },
+        {
+          "author": "Naime Fidanoğlu",
+          "text": "DupeScore saved me like $12 on a serum that's literally identical to the pricier one."
+        }
+      ],
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=dupely&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Dupely?",
+        "a": "A free Chrome extension and mobile app that finds identical Amazon products sold for less, flags fake discounts and rates sellers. It launched on Product Hunt on 7 July 2026."
+      },
+      {
+        "q": "Is Dupely free?",
+        "a": "Yes. The extension and apps are free, according to its site and Product Hunt."
+      },
+      {
+        "q": "What is DupeScore?",
+        "a": "A 0–100 score for how closely another listing matches the product you are viewing, based on images, specs, seller information and price."
+      },
+      {
+        "q": "How does Trust This Price work?",
+        "a": "It checks 90 days of price history to flag discounts that are not genuine. The makers say the data comes from third-party data vendors."
+      },
+      {
+        "q": "Does Dupely work in India?",
+        "a": "Its terms say the service is intended for use in the United States, and it is built for Amazon first."
+      },
+      {
+        "q": "Which stores does it support?",
+        "a": "Amazon for now. The site says more marketplaces are on the way."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Dupely official site",
+        "url": "https://www.dupely.io/"
+      },
+      {
+        "label": "Dupely terms of service",
+        "url": "https://www.dupely.io/terms/"
+      },
+      {
+        "label": "Dupely privacy policy",
+        "url": "https://www.dupely.io/privacy/"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/dupely"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/dupely"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/dupely/alternatives"
+      },
+      {
+        "label": "Honey",
+        "url": "https://www.joinhoney.com/"
+      },
+      {
+        "label": "Chestr",
+        "url": "https://www.getchestr.com/"
+      },
+      {
+        "label": "Faircado",
+        "url": "https://faircado.com/"
+      }
+    ]
+  }
+}

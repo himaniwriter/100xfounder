@@ -1,0 +1,210 @@
+{
+  "slug": "thumbmagic-5",
+  "ph_url": "https://www.producthunt.com/posts/thumbmagic-5",
+  "existing_listing_slug": null,
+  "website": "https://www.thumbmagic.co/",
+  "excerpt": "Thumbmagic makes YouTube, Shorts and Reels thumbnails with AI from a video link, upload or transcript. From $17/month billed yearly. Plans and alternatives.",
+  "content": "<p>Thumbmagic is an AI thumbnail maker for YouTube, Shorts, TikTok and Instagram Reels. You paste a YouTube link, upload a video or give a transcript; it picks out key moments, suggests layouts and generates several thumbnail options. You can then change the text, colours, background and facial expression in its editor without design skills, make variations for A/B tests, and export for each platform, up to 4K.</p><p>It offers templates aimed at creator niches such as gaming, with pages for Fortnite, Minecraft and Valorant, an \"avatar\" of your face to reuse across thumbnails, and on higher plans a feature that copies the style of a thumbnail you like. You can try it with 3 free thumbnails; paid plans start at $17 a month billed yearly for 100 thumbnails.</p><p>Thumbmagic's terms and privacy policy name TURBO STUDIO S.A.S., a company registered in Paris, France, as the operator. The site also carries the Submagic name, and sign-in and pricing live on Submagic's app.</p><p>Thumbmagic launched on Product Hunt on 23 June 2026 and finished #5 for the day, with 312 upvotes and 67 comments (as of 14 October 2026).</p><p><em>We have not tested Thumbmagic ourselves. This page brings together its official site, pricing page, terms and privacy policy, its Product Hunt listing and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "Design",
+    "platform": "Web app",
+    "starts_at": "3 free thumbnails; paid from $17/month billed yearly",
+    "schema_category": "DesignApplication",
+    "summary_short": "AI thumbnail maker for YouTube, Shorts and Reels that works from a video link",
+    "use_cases": [
+      "Making a thumbnail straight from a YouTube link or uploaded video",
+      "Trying several thumbnail variations for an A/B test",
+      "Reusing your own face across thumbnails with a saved avatar",
+      "Copying the style of a thumbnail you like for your own video",
+      "Agencies producing thumbnails for many channels each week"
+    ],
+    "audience": {
+      "fit": [
+        "publish often on YouTube, Shorts or Reels and have no designer",
+        "want several thumbnail options to test rather than one design",
+        "run a gaming or vlogging channel and want niche templates"
+      ],
+      "not_fit": [
+        "want a free plan: there are only paid plans, plus 3 free trial thumbnails",
+        "need refunds to be clear: the pricing page promises a 30-day money-back guarantee but the terms say purchases are non-refundable",
+        "mind a licence over your uploads: the terms let the company use your content as promotional case studies unless you opt out by email"
+      ]
+    },
+    "pricing": {
+      "intro": "Prices from Thumbmagic's pricing page on the Submagic app, in US dollars. The page has a Monthly/Yearly toggle ('Save 40%'); the yearly figures below are the ones shown in the page as served. For monthly-billed prices, see the official pricing page.",
+      "url": "https://app.submagic.co/thumbnail-generator/pricing",
+      "checked": "2026-10-15",
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "$17/month, billed yearly",
+          "amount": 17,
+          "currency": "USD",
+          "detail": "100 thumbnails a month, no watermark, 1 avatar, Starter templates, AI editing"
+        },
+        {
+          "name": "Pro",
+          "price": "$35/month, billed yearly",
+          "amount": 35,
+          "currency": "USD",
+          "detail": "500 thumbnails a month, up to 10 avatars, Pro templates, the replicate-a-thumbnail feature, 2x faster generation"
+        },
+        {
+          "name": "Business",
+          "price": "$59/month, billed yearly",
+          "amount": 59,
+          "currency": "USD",
+          "detail": "Unlimited thumbnails and avatars, 4x faster generation, AI filters and face expressions, priority support"
+        }
+      ],
+      "notes": [
+        "Free use: the pricing page says 'Try out with 3 free thumbnails. No credit card required.'",
+        "Refunds, pricing page (app.submagic.co/thumbnail-generator/pricing): 'No setup fees • Cancel anytime • 30-day money-back guarantee'.",
+        "Refunds, terms of use (thumbmagic.co/terms-of-use, section 7, 'Refunds', from operator TURBO STUDIO S.A.S.): 'All monthly and annually purchases are non-refundable.' The same section says cancellation takes effect at the end of the current payment period. The two pages disagree; ask the company before you pay."
+      ]
+    },
+    "alternatives": {
+      "intro": "Prices come from each product's own pricing page, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "Pikzels",
+          "url": "https://pikzels.com/",
+          "what": "AI tool for creating and testing YouTube thumbnails and titles",
+          "starts_at": "Premium $28/month billed yearly",
+          "difference": "Also writes and tests titles and analyses thumbnails, with credit-based pricing."
+        },
+        {
+          "name": "Canva",
+          "url": "https://www.canva.com/",
+          "what": "General online design tool with YouTube thumbnail templates",
+          "starts_at": "See its pricing page",
+          "difference": "You design the thumbnail yourself from templates rather than having AI generate it from your video."
+        }
+      ]
+    },
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/thumbmagic-3/reviews",
+      "as_of": "2026-10-14"
+    },
+    "pros": [
+      "Works from a YouTube link, an upload or a transcript",
+      "Several options per video plus variations for A/B tests",
+      "Niche templates for gaming and other creator types",
+      "Exports sized for each platform, up to 4K"
+    ],
+    "cons": [
+      "No free plan, only 3 free trial thumbnails",
+      "Pricing page and terms disagree on refunds",
+      "Terms give the company a licence to use your content in case studies unless you opt out",
+      "The site's click-through and cost-saving figures are its own claims"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/thumbmagic-3",
+      "x": {
+        "profile_url": "https://x.com/thumbmagic_co",
+        "none": "We found no posts about Thumbmagic on X yet, other than its own account.",
+        "search_url": "https://x.com/search?q=Thumbmagic&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Thumbmagic?",
+        "a": "An AI tool that generates thumbnails for YouTube, Shorts, TikTok and Reels from a video link, upload or transcript, with an editor to change text, colours, backgrounds and expressions."
+      },
+      {
+        "q": "How much does Thumbmagic cost?",
+        "a": "Billed yearly, Starter is $17 a month, Pro $35 and Business $59. They allow 100, 500 and unlimited thumbnails a month. Monthly billing is also offered; see the official pricing page for those prices."
+      },
+      {
+        "q": "Is there a free plan?",
+        "a": "There is no free plan, but the pricing page says you can try it with 3 free thumbnails and no credit card."
+      },
+      {
+        "q": "Can I get a refund?",
+        "a": "The two official pages disagree. The pricing page promises a '30-day money-back guarantee'; section 7 of the terms of use says 'All monthly and annually purchases are non-refundable.' Ask the company before you pay."
+      },
+      {
+        "q": "Who makes Thumbmagic?",
+        "a": "Its terms and privacy policy name TURBO STUDIO S.A.S., registered in Paris, France. The site also carries the Submagic name, and its app and pricing are hosted on Submagic's site."
+      },
+      {
+        "q": "What are the alternatives to Thumbmagic?",
+        "a": "Pikzels is another AI thumbnail and title tool; Canva has thumbnail templates you edit yourself."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Thumbmagic official site",
+        "url": "https://www.thumbmagic.co/"
+      },
+      {
+        "label": "Thumbmagic pricing",
+        "url": "https://app.submagic.co/thumbnail-generator/pricing"
+      },
+      {
+        "label": "Thumbmagic terms of use",
+        "url": "https://www.thumbmagic.co/terms-of-use"
+      },
+      {
+        "label": "Thumbmagic privacy policy",
+        "url": "https://www.thumbmagic.co/privacy"
+      },
+      {
+        "label": "Product Hunt: Thumbmagic launch",
+        "url": "https://www.producthunt.com/posts/thumbmagic-5"
+      },
+      {
+        "label": "Thumbmagic on X",
+        "url": "https://x.com/thumbmagic_co"
+      },
+      {
+        "label": "Pikzels pricing",
+        "url": "https://pikzels.com/pricing"
+      }
+    ],
+    "ph": {
+      "rank": 5,
+      "votes": 312,
+      "comments": 67,
+      "followers": 638,
+      "launched": "2026-06-23",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Max Chaplin",
+        "role": "Builder @ Submagic",
+        "url": "https://www.producthunt.com/@maxchaplin"
+      },
+      {
+        "name": "Shivam Gupta",
+        "role": "Head of Partnerships at Submagic",
+        "url": "https://www.producthunt.com/@shivamgco"
+      },
+      {
+        "name": "David Zitoun",
+        "role": "Co-Founder @submagic  🧡",
+        "url": "https://www.producthunt.com/@david_zitoun"
+      },
+      {
+        "name": "tsifei chan",
+        "role": "CTO @Submagic",
+        "url": "https://www.producthunt.com/@tsifeichan"
+      },
+      {
+        "name": "Lakshya Singh",
+        "role": "AI & Growth Consultant",
+        "url": "https://www.producthunt.com/@lakshya_singh"
+      },
+      {
+        "name": "Elie",
+        "role": "CMO @Submagic",
+        "url": "https://www.producthunt.com/@elie_lecha"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes."
+}

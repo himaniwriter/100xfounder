@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 1750,
+  "date": "2026-10-04T10:09:18",
+  "date_gmt": "2026-10-04T04:39:18",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/poddle/",
+   "raw": "https://100xfounder.com/startup/poddle/"
+  },
+  "modified": "2026-10-04T20:55:57",
+  "modified_gmt": "2026-10-04T15:25:57",
+  "password": "",
+  "slug": "poddle",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/poddle/",
+  "title": {
+   "raw": "Poddle",
+   "rendered": "Poddle"
+  },
+  "content": {
+   "raw": "<p>Swing your phone, play pickleball on any computer!</p>\n",
+   "rendered": "<p>Swing your phone, play pickleball on any computer!</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "Swing your phone, play pickleball on any computer!",
+   "rendered": "<p>Swing your phone, play pickleball on any computer!</p>\n",
+   "protected": false
+  },
+  "featured_media": 1757,
+  "template": "",
+  "xf_industry": [],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "poddle",
+  "class_list": [
+   "post-1750",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1750",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/media/1757"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=1750"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=1750"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=1750"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1750"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1750"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1750"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1750"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1750"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1750"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

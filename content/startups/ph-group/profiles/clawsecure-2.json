@@ -1,0 +1,90 @@
+{
+  "slug": "clawsecure-2",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/clawsecure-2",
+  "excerpt": "ClawSecure scans AI agent skills, MCP servers and CLI tools for malicious code and prompt-injection risks before you install them, free and without signup, with paid runtime monitoring from $9.99 a month. How it works, pricing and alternatives.",
+  "content": "<p>ClawSecure calls itself an antivirus for AI agents. The free part is a pre-install scanner: paste a GitHub link or a ClawHub URL, or upload a skill as a zip file, and within about 30 seconds it runs what it calls a 3-Layer Audit Protocol, checking more than 55 threat patterns including malicious code, prompt injection, behavioural threats and supply-chain risks. It needs no signup, and every scan produces a public report. The company says its checks cover all ten categories of the OWASP Top 10 for agentic applications.</p><p>The paid tiers add monitoring after you install. A local daemon watches your agent environment and sends component metadata, file hashes and configuration summaries (not, it says, your keys, credentials or source code) to ClawSecure's cloud, where an assistant it calls the AI CISO analyses them. Depending on the tier, that means mapping which tools can reach Gmail, GitHub, Slack or your files, spotting exposed API keys, flagging unusual agent behaviour in real time, and, at the top tier, monitoring processes, system calls and network traffic. It names Claude Code, OpenAI, Google Gemini, Cursor and OpenClaw among the agents it works with. Its site cites its own audit finding that 41% of top agent tools carry material risk.</p><p>This was ClawSecure's second Product Hunt launch, on 11 May 2026, and it finished #5 for the day with 243 points and 43 comments. Its terms note that scans are informational, not a guarantee that an agent is safe.</p><p><em>We have not tested ClawSecure ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI agent security",
+    "platform": "Web scanner, with a local monitoring daemon on paid plans",
+    "starts_at": "Free scanner; runtime monitoring from $9.99/month",
+    "schema_category": "SecurityApplication",
+    "summary_short": "Scans AI agent skills, MCP servers and CLI tools for threats before install, with paid runtime monitoring",
+    "ph": {"rank": 5, "votes": 243, "comments": 43, "followers": 1085, "launched": "2026-05-11", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/fffb49ad-c2da-4786-a7e3-878f19cecefa.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "ClawSecure banner 'You have no idea what your AI agents are actually doing' with an alerts dashboard and a robotic lobster mascot",
+       "credit": "Image: ClawSecure via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/3616c498-3129-43e3-94e7-7c557d8b4c3a.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "ClawSecure overview dashboard with an environment risk score of 67/100, components, unaudited items, active alerts and 24-hour activity",
+       "credit": "Image: ClawSecure via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/8cc511d7-93a6-4502-baa2-72a536d8fa66.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Diagram of the apps an agent can reach (messaging, payments, productivity, AI and developer tools) secured by ClawSecure, with the ten OWASP ASI risks listed",
+       "credit": "Image: ClawSecure via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "install community skills, MCP servers or CLI tools for agents like Claude Code, Cursor or OpenClaw and want a quick check first",
+        "run agents with access to your email, code and files and want to know what each tool can reach",
+        "are not a security specialist and want plain-language findings"
+      ],
+      "not_fit": [
+        "scan private or proprietary skills you don't want public: scan results for public open-source skills are published as shareable reports",
+        "need a formal security certification: ClawSecure's terms say scans are informational, not guarantees",
+        "need runtime monitoring today without a waitlist: the paid tiers were offered as early access when we checked"
+      ]
+    },
+    "pricing": {
+      "intro": "The scanner is free with no signup. Runtime monitoring has three paid tiers, in US dollars, shown at 'Founding Member' prices locked at signup next to higher list prices.",
+      "url": "https://www.clawsecure.ai/pricing",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "3-Layer Audit Protocol with 55+ threat patterns, OWASP ASI Top 10 coverage, a public report for every scan, Watchtower monitoring of community skills"},
+        {"name": "Shield", "price": "$9.99/month", "amount": 9.99, "currency": "USD", "detail": "Founding Member price (list $29). One-command install, runtime monitoring of new components, MCP and CLI permission mapping, exposed-key checks, dashboard, weekly digest"},
+        {"name": "Sentinel", "price": "$24.99/month", "amount": 24.99, "currency": "USD", "detail": "Founding Member price (list $79). Behavioural analysis, tool-call history, anomaly detection and real-time alerts"},
+        {"name": "Fortress", "price": "$79.99/month", "amount": 79.99, "currency": "USD", "detail": "Founding Member price (list $199). OS-level monitoring: processes, system calls and network traffic"}
+      ],
+      "notes": [
+        "Paid tiers carried 'Get Early Access' buttons when we checked.",
+        "ClawSecure says your API keys, credentials and source code never leave your machine on the paid tiers."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Aikido Security", "url": "https://aikido.dev", "what": "Application and cloud security suite for developers", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 5,
+         "difference": "Covers your own code, dependencies and cloud broadly; ClawSecure focuses on the agent tools you install."},
+        {"name": "Harden", "url": "https://harden.run", "what": "Security layer that controls what coding agents can do", "starts_at": "See its pricing page", "ph_rating": 4.5, "ph_reviews": 2,
+         "difference": "Controls coding-agent actions; ClawSecure starts with scanning components before install."},
+        {"name": "ZeroThreat.ai", "url": "https://zerothreat.ai", "what": "AI-powered automated pentesting for web apps and APIs", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 16,
+         "difference": "Tests your web apps and APIs for vulnerabilities rather than the AI agents on your machine."}
+      ],
+      "more": "Product Hunt also lists Arcjet (runtime security for AI agents you build) and Opencontroller by Lyzr (a control plane for governing agents)."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/clawsecure/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/clawsecure",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=clawsecure&f=live", "profile_url": "https://x.com/clawsecure"}
+    },
+    "faq": [
+      {"q": "What is ClawSecure?", "a": "A security scanner and monitor for AI agents. It checks skills, MCP servers and CLI tools for malicious code and prompt-injection risks before you install them, and offers paid runtime monitoring. Its second Product Hunt launch was on 11 May 2026."},
+      {"q": "Is ClawSecure free?", "a": "The pre-install scanner is free, with no signup or credit card. Runtime monitoring costs $9.99, $24.99 or $79.99 a month at the Founding Member prices shown when we checked."},
+      {"q": "What can I scan?", "a": "A GitHub link, a ClawHub URL, a skill name, or a zip file of up to 10MB, according to its home page."},
+      {"q": "Are scan results public?", "a": "Results for publicly available open-source skills are treated as public and shared through report URLs, according to its privacy policy."},
+      {"q": "Does ClawSecure see my keys or code?", "a": "It says no: on paid tiers the daemon sends component metadata, file hashes and configuration summaries, while API keys, credentials and source code stay on your machine."},
+      {"q": "Does a passing scan mean an agent is safe?", "a": "No. ClawSecure's terms say scans are informational, not certifications or guarantees, and should be one input among many."}
+    ],
+    "sources": [
+      {"label": "ClawSecure official site", "url": "https://www.clawsecure.ai/"},
+      {"label": "ClawSecure pricing", "url": "https://www.clawsecure.ai/pricing"},
+      {"label": "ClawSecure terms of service", "url": "https://www.clawsecure.ai/terms"},
+      {"label": "ClawSecure privacy policy", "url": "https://www.clawsecure.ai/privacy"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/clawsecure"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/clawsecure/alternatives"},
+      {"label": "Aikido Security", "url": "https://www.aikido.dev/"},
+      {"label": "Harden", "url": "https://harden.run/"}
+    ]
+  }
+}

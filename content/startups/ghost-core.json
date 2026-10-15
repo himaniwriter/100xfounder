@@ -1,0 +1,309 @@
+{
+ "slug": "ghost-core",
+ "excerpt": "Ghost Core is a $3,499 desktop computer that runs AI models at home, with no subscription. Specs, what it connects to, privacy, and alternatives.",
+ "content": "<p>Ghost Core is a desktop computer built to run a personal AI assistant entirely at home. It runs open models on its own GPU, connects to your apps, files, screen history, wearables and smart-home devices, and builds up context about your life over time so it can suggest things before you ask. Ghost says the conversational AI and its memory never rely on a remote AI model, and that there is no subscription. Core also exposes an endpoint compatible with the OpenAI Responses API, so its local models can power other apps, scripts and agents.</p><p>Inside is an NVIDIA RTX PRO 4000 Blackwell SFF Edition GPU with 24 GB of GDDR7 ECC memory, a 6-core AMD Ryzen 5 7600, 64 GB of DDR5 memory and a 1 TB NVMe SSD, in a brushed stainless-steel case. It ships with Qwen 3.8-Next, Qwen 3.8-27B, Gemma 4-31B and Muse-Glimmer-30B. You talk to it from a Mac, Windows or Linux computer or from an iPhone or Android phone. The price is $3,499 excluding VAT, and the first batch is scheduled to ship on 31 October.</p><p>Core is made by ZMJ, Inc., which trades as Ghost. Its about page lists Andreessen Horowitz, Abstract Ventures, Audacious, SV Angel and Z Fellows as backers. Core was hunted on Product Hunt by Rohan Chaubey and launched on 11 October 2026, finishing #4 for the day with 184 upvotes.</p><p><em>We have not tested Ghost Core ourselves. This page brings together Ghost's own product, support and privacy pages, its Product Hunt launch and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI hardware",
+  "platform": "Dedicated desktop computer, used from Mac, Windows, Linux, iPhone and Android",
+  "starts_at": "$3,499 one-off (excl. VAT), no subscription",
+  "schema_category": "ComputerHardware",
+  "summary_short": "A home AI computer that runs open models locally and builds context from your apps and devices",
+  "ph": {
+   "rank": 4,
+   "votes": 184,
+   "comments": 5,
+   "followers": 205,
+   "launched": "2026-10-11",
+   "as_of": "2026-10-15"
+  },
+  "video_url": "https://www.youtube.com/watch?v=3_Q8J9cUlug",
+  "video_title": "Introducing Core | The Personal AI Computer",
+  "use_cases": [
+   "Running a personal AI assistant whose memory stays on hardware you own",
+   "Getting proactive reminders drawn from your calendar, email, health and smart-home data",
+   "Serving local models to coding tools such as OpenCode or Codex through its OpenAI-compatible endpoint",
+   "Powering your own scripts and agents without per-token inference fees",
+   "Searching your own screen history and files with a local model"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Rohan Chaubey, who hunted Ghost Core on Product Hunt, introduced it as a personal AI computer meant to keep your AI, your data and its context on your own hardware. The point of difference, he wrote, is that Core runs its models locally and keeps building context from your apps, files, screen history and connected devices, so it can act without waiting for a prompt.",
+    "He listed the hardware (an RTX PRO 4000 Blackwell GPU with 24 GB of memory, 64 GB of DDR5 and a 1 TB NVMe drive), the local models including Qwen, Gemma and Muse-Glimmer, and support for wearables and smart-home devices. He pitched it at people who want local intelligence and control over their data, at $3,499."
+   ],
+   "attribution": "Rohan Chaubey, hunter, on Product Hunt",
+   "url": "https://www.producthunt.com/products/ghost-core?comment=5930807"
+  },
+  "audience": {
+   "fit": [
+    "want an always-on AI assistant without sending your data to a cloud AI lab",
+    "already run a home server or local models and want a ready-made box with a 24 GB workstation GPU",
+    "want to serve local models to your own apps and agents through a standard API"
+   ],
+   "not_fit": [
+    "want a cheap way to try AI: it costs $3,499 up front",
+    "need the biggest frontier models: it runs open models of roughly 27 to 31 billion parameters on a 24 GB GPU",
+    "don't want to manage permissions, connected accounts and data deletion yourself: the privacy policy puts much of that on the owner"
+   ]
+  },
+  "pricing": {
+   "intro": "Core is a one-off hardware purchase with no subscription. Prices are Ghost's own, in US dollars.",
+   "url": "https://ghost.ai/core",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Core",
+     "price": "$3,499 (excl. VAT)",
+     "amount": 3499,
+     "currency": "USD",
+     "detail": "RTX PRO 4000 Blackwell SFF (24 GB), Ryzen 5 7600, 64 GB DDR5, 1 TB NVMe; 1-year warranty, 30-day returns, free shipping for the first batch"
+    }
+   ],
+   "notes": [
+    "Ghost says the first batch is scheduled to ship on 31 October and that Core needs no subscription.",
+    "An internet connection is still needed for web search, email and software updates.",
+    "Ghost's founder posted on X that the first batch had sold out; check ghost.ai for current availability."
+   ]
+  },
+  "alternatives": {
+   "intro": "Nothing on Product Hunt's alternatives list is a dedicated box like Core. The closest are apps that run local models or build context from your screen on a computer you already own. Prices come from each product's own page, checked on 15 October 2026; review scores are Product Hunt users'.",
+   "items": [
+    {
+     "name": "screenpipe",
+     "url": "https://screenpipe.com/",
+     "what": "AI that records your computer work to power agents",
+     "tags": [
+      "Screen recording",
+      "AI agents",
+      "LLM memory"
+     ],
+     "starts_at": "Free on one device; Basic $21/month",
+     "ph_rating": 5.0,
+     "ph_reviews": 2,
+     "ph_url": "https://www.producthunt.com/products/screenpipe",
+     "difference": "Software that captures your screen, audio and meetings on the Mac, Windows or Linux machine you already have, rather than a separate computer."
+    },
+    {
+     "name": "GPT4All",
+     "url": "https://www.nomic.ai/gpt4all",
+     "what": "A private assistant chatbot that runs on your laptop",
+     "tags": [
+      "Local LLM",
+      "Open source"
+     ],
+     "starts_at": "Free download",
+     "ph_rating": 5.0,
+     "ph_reviews": 2,
+     "ph_url": "https://www.producthunt.com/products/gpt4all",
+     "difference": "Free desktop app for chatting with open models and your local documents; no continuous context or device connections."
+    },
+    {
+     "name": "NativeMind",
+     "url": "https://nativemind.app/",
+     "what": "Fully private, open-source, on-device AI assistant",
+     "tags": [
+      "Browser extension",
+      "Open source",
+      "Ollama"
+     ],
+     "starts_at": "Free for personal use",
+     "ph_rating": 5.0,
+     "ph_reviews": 12,
+     "ph_url": "https://www.producthunt.com/products/nativemind",
+     "difference": "Runs in your browser on top of Ollama models on your own computer; it works with tabs, PDFs and pages rather than your whole life."
+    },
+    {
+     "name": "Littlebird",
+     "url": "https://littlebird.ai/",
+     "what": "The AI assistant that already knows your work",
+     "tags": [
+      "AI assistant",
+      "Meeting notes"
+     ],
+     "starts_at": "Basic $0; see its pricing page for paid plans",
+     "ph_rating": 5.0,
+     "ph_reviews": 10,
+     "ph_url": "https://www.producthunt.com/products/littlebird",
+     "difference": "Builds context from your screen, apps and meetings like Core, but as an app with a free tier rather than a $3,499 machine."
+    }
+   ],
+   "more": "Product Hunt also lists Lyzr, Snaply, Klee, Unsloth, remio and Local."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/ghost-core/reviews",
+   "as_of": "2026-10-15"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "The product overall (one short comment)"
+    ],
+    "asked": [],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "Great product",
+     "author": "Lakshmanan Raman",
+     "url": "https://www.producthunt.com/products/ghost-core?comment=5939896"
+    }
+   ]
+  },
+  "pros": [
+   "No subscription: the hardware price is the whole cost Ghost lists",
+   "Models and memory run on the device, with no remote AI fallback for conversation or memory",
+   "A 24 GB workstation GPU and 64 GB of memory in a ready-built box",
+   "OpenAI Responses API-compatible endpoint for your own apps and agents",
+   "1-year warranty and 30-day returns"
+  ],
+  "cons": [
+   "$3,499 up front, before VAT",
+   "Limited to open models that fit a 24 GB GPU",
+   "Online features such as web search, phone calls and email still send task data to outside services",
+   "Erasing Core does not remove copies on paired phones, computers or backups, according to the privacy policy"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/ghost-core",
+   "x": {
+    "profile_url": "https://x.com/ghostai",
+    "search_url": "https://x.com/search?q=%22Ghost%20Core%22&f=live",
+    "posts": [
+     {
+      "author": "Ghost",
+      "url": "https://x.com/ghostai/status/2107162749675721173",
+      "note": "Ghost's post on why it is building personal intelligence that you own"
+     },
+     {
+      "author": "Zain Javaid",
+      "url": "https://x.com/zainmfj/status/2107146556176798081",
+      "note": "The Core launch video, linked from ghost.ai"
+     },
+     {
+      "author": "Zain Javaid",
+      "url": "https://x.com/zainmfj/status/2107270812051055001",
+      "note": "Post saying batch 1 of Core had sold out"
+     }
+    ]
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Ghost Core?",
+    "a": "A desktop computer that runs AI models at home. It connects to your apps, files, devices and wearables, builds context over time and acts proactively, with its AI and memory running on the device."
+   },
+   {
+    "q": "How much does Ghost Core cost?",
+    "a": "$3,499 excluding VAT, with no subscription. It comes with a 1-year warranty and 30-day returns, and the first batch ships free."
+   },
+   {
+    "q": "Does Core work without the cloud?",
+    "a": "Ghost says Core runs its AI and stores its memory locally, but you still need an internet connection for web search, email and software updates."
+   },
+   {
+    "q": "Can I use Core with my own apps or coding agents?",
+    "a": "Yes. Ghost says Core provides an endpoint compatible with the OpenAI Responses API, so you can point tools such as OpenCode or Codex, or your own scripts and agents, at its local models."
+   },
+   {
+    "q": "What can I talk to Core from?",
+    "a": "A Mac, Linux or Windows computer, or an iPhone or Android phone. It can also be given access to supported cameras, smart-home devices, wearables and apps."
+   },
+   {
+    "q": "When does it ship and what is in the box?",
+    "a": "Ghost says batch 1 is scheduled to ship on 31 October. The box contains Core, a power cable, a cleaning cloth and a setup guide."
+   },
+   {
+    "q": "What are the alternatives to Ghost Core?",
+    "a": "Apps that run on a computer you already own, such as screenpipe, GPT4All, NativeMind and Littlebird. None of them is a dedicated machine like Core."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Ghost home page",
+    "url": "https://ghost.ai/"
+   },
+   {
+    "label": "Ghost Core product page, specs and FAQ",
+    "url": "https://ghost.ai/core"
+   },
+   {
+    "label": "Ghost about page",
+    "url": "https://ghost.ai/about"
+   },
+   {
+    "label": "Ghost privacy policy",
+    "url": "https://ghost.ai/privacy"
+   },
+   {
+    "label": "Introducing Core (Ghost AI on YouTube)",
+    "url": "https://www.youtube.com/watch?v=3_Q8J9cUlug"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/ghost-core"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/ghost-core/alternatives"
+   },
+   {
+    "label": "screenpipe pricing",
+    "url": "https://screenpi.pe/pricing"
+   },
+   {
+    "label": "GPT4All",
+    "url": "https://www.nomic.ai/gpt4all"
+   },
+   {
+    "label": "NativeMind",
+    "url": "https://nativemind.app/"
+   },
+   {
+    "label": "Littlebird pricing",
+    "url": "https://littlebird.ai/pricing"
+   },
+   {
+    "label": "Zain Javaid on X: batch 1 sold out",
+    "url": "https://x.com/zainmfj/status/2107270812051055001"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/b2aae33b-c6f4-4a92-80e1-ca43eaad9689.png?auto=format&fit=max&w=1400",
+    "alt": "Exploded view of Ghost Core showing its steel case, motherboard, GPU and fans, with the four bundled models listed below",
+    "credit": "Image: Ghost Core on Product Hunt",
+    "w": 2121,
+    "h": 1250
+   },
+   {
+    "url": "https://ph-files.imgix.net/9a9099b7-9f5e-4afc-b122-198b94750a1c.png?auto=format&fit=max&w=1400",
+    "alt": "Ghost Core's GPU: NVIDIA RTX PRO 4000 Blackwell SFF Edition with 24 GB GDDR7 ECC memory and 432 GB/s bandwidth",
+    "credit": "Image: Ghost Core on Product Hunt",
+    "w": 2230,
+    "h": 1250
+   },
+   {
+    "url": "https://ph-files.imgix.net/d75104bf-b5a1-4646-8a5e-fc6d98f34c09.png?auto=format&fit=max&w=1400",
+    "alt": "Ghost Core's CPU: AMD Ryzen 5 7600 with 6 cores and 12 threads, over a board diagram",
+    "credit": "Image: Ghost Core on Product Hunt",
+    "w": 2065,
+    "h": 1250
+   },
+   {
+    "url": "https://ph-files.imgix.net/a2c329c7-be6b-4d66-883d-70eaf1d3a303.png?auto=format&fit=max&w=1400",
+    "alt": "Ghost Core's memory: two modules making up 64 GB of DDR5",
+    "credit": "Image: Ghost Core on Product Hunt",
+    "w": 1956,
+    "h": 1250
+   },
+   {
+    "url": "https://ph-files.imgix.net/dd993cd0-4c0a-42fa-9715-35f2d5d2c728.png?auto=format&fit=max&w=1400",
+    "alt": "Ghost Core's storage: a 1 TB NVMe SSD shown on the board diagram",
+    "credit": "Image: Ghost Core on Product Hunt",
+    "w": 1925,
+    "h": 1250
+   }
+  ]
+ }
+}

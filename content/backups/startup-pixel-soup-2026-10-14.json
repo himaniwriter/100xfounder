@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 1755,
+  "date": "2026-10-02T21:14:25",
+  "date_gmt": "2026-10-02T15:44:25",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/pixel-soup/",
+   "raw": "https://100xfounder.com/startup/pixel-soup/"
+  },
+  "modified": "2026-10-04T20:56:33",
+  "modified_gmt": "2026-10-04T15:26:33",
+  "password": "",
+  "slug": "pixel-soup",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/pixel-soup/",
+  "title": {
+   "raw": "Pixel Soup",
+   "rendered": "Pixel Soup"
+  },
+  "content": {
+   "raw": "<p>Dithered live wallpapers your Mac cooks up itself</p>\n",
+   "rendered": "<p>Dithered live wallpapers your Mac cooks up itself</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "Dithered live wallpapers your Mac cooks up itself",
+   "rendered": "<p>Dithered live wallpapers your Mac cooks up itself</p>\n",
+   "protected": false
+  },
+  "featured_media": 1768,
+  "template": "",
+  "xf_industry": [],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "pixel-soup",
+  "class_list": [
+   "post-1755",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1755",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/media/1768"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=1755"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=1755"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=1755"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1755"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1755"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1755"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1755"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1755"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1755"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

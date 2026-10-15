@@ -1,0 +1,140 @@
+{
+ "type": "post",
+ "slug": "gitlab-hiring-process-how-to-apply",
+ "title": "How to Get a Job at GitLab in 2026: The All-Remote Hiring Process",
+ "excerpt": "GitLab publishes its hiring process in a public handbook. Here are its seven stages, the merge-request technical interview, pay rules and India roles in 2026.",
+ "category": "careers-salary",
+ "tags": [
+  "GitLab",
+  "GitLab careers",
+  "remote jobs",
+  "how to apply",
+  "interview process",
+  "technical interview",
+  "Bengaluru jobs",
+  "2026"
+ ],
+ "content": "<p>GitLab has no headquarters to visit and no office to commute to: it is one of the world's largest all-remote companies, and it documents its hiring process in a public handbook. Getting a job there means applying to a specific posting, passing a 30-to-40-minute recruiter screen, completing an assessment or a merge-request-based technical interview for some roles, then team interviews, references and a background check. As of 4 October 2026, its official Greenhouse board lists 211 open roles, including 28 in India.</p>\n\n<p><em>100Xfounder is an independent site. This guide is not official, and we are not affiliated with or endorsed by GitLab. GitLab's handbook changes often, so check the live pages and confirm details with your recruiter.</em></p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>Seven published stages:</strong> application, screening call, assessment (some roles), technical interview (some roles), team interviews, references and an optional conversation with an employee resource group, then offer and background screening.</li>\n<li><strong>The engineering technical interview is a code review.</strong> You get a merge request at least 72 hours ahead, review it asynchronously, then spend 90 minutes on a video call improving it.</li>\n<li><strong>Location still matters.</strong> GitLab hires only in countries where it has a legal entity or an employer-of-record partner, and it does not sponsor visas, except for some candidates who already hold Dutch work permits.</li>\n<li><strong>India is growing.</strong> GitLab India Private Ltd employs staff directly, and current postings describe a Bengaluru support hub and India-based engineering and recruiting teams.</li>\n<li><strong>Beware of scams.</strong> Real GitLab recruiters write only from @gitlab.com addresses, interview only on Zoom and never ask for money.</li>\n</ul>\n\n<h2>What \"all-remote\" means for applicants</h2>\n<p>GitLab's <a href=\"https://handbook.gitlab.com/handbook/hiring/candidate-faq/\">candidate handbook</a> describes the company as a fully remote, global workforce with team members in more than 50 countries. There is no office to relocate to, so the question a recruiter asks is not \"can you move?\" but \"can we employ you where you live?\". GitLab's <a href=\"https://handbook.gitlab.com/handbook/people-group/employment-solutions/\">employment solutions page</a> answers that: it hires in countries where it has a legal entity without hiring restrictions, or a PEO (a professional employer organisation that employs people on its behalf). Where it has neither, it is not currently hiring. India is on the entity list as GitLab India Private Ltd, which employs team members directly.</p>\n<p>Two other rules surprise candidates. The screening call asks whether you need visa sponsorship, and the handbook says GitLab cannot proceed if you do, unless you already hold a work permit in the Netherlands. Its referral rules add that it does not transfer existing work permits. In practice, apply for roles open in the country where you already have the right to work.</p>\n<p>Remote work also changes what GitLab tests. Postings stress clear written communication, self-direction and asynchronous work, meaning you write things down and do not wait for meetings to make progress. A recent <a href=\"https://job-boards.greenhouse.io/gitlab/jobs/8775507002\">Intermediate Backend Engineer posting</a> for India calls GitLab \"remote-first\" and \"asynchronous\", and expects every team member to use AI in daily work.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Where GitLab is hiring now</h2>\n<p>We pulled GitLab's public Greenhouse feed on 4 October 2026. Of 211 roles, the largest groups were listed as remote in the US and Canada, followed by Bengaluru (26), the UK (15) and Germany (10), with smaller numbers in Poland, Singapore, Japan, Australia, France, the Netherlands, South Korea, Ireland and Israel.</p>\n<p>The 28 India roles (26 listed as \"Bangalore, India\" and two as \"Remote, India\") are worth a closer look, because they show GitLab building teams in India:</p>\n<ul>\n<li>A <a href=\"https://job-boards.greenhouse.io/gitlab/jobs/8629019002\">Director, Support role</a> to build a \"Bengaluru Center of Support\", an India-based regional support hub alongside GitLab's Americas and EMEA hubs. The posting calls it a remote-friendly role based in Bengaluru.</li>\n<li>A <a href=\"https://job-boards.greenhouse.io/gitlab/jobs/8726744002\">Director of Recruiting for Engineering and IT</a> to lead India-based recruiting, supporting 100 to 200 or more engineering and IT openings across India and the wider Asia-Pacific region.</li>\n<li>Engineering roles at intermediate, senior and staff levels: backend (Ruby on Rails and Go), frontend, site reliability, release engineering, database change management, an NLP role and several engineering managers. One staff role describes acting as the senior technical anchor for an India-based engineering group.</li>\n<li>Support engineers, a solutions architect for southern India, technical programme managers, a staff data analyst, and associate renewals and revenue operations roles that require full working rights in India.</li>\n</ul>\n<p>You can browse current openings on our <a href=\"/jobs/company/gitlab/\">GitLab jobs page</a>, which uses the same official feed.</p>\n\n<h2>What GitLab looks for</h2>\n<p>GitLab's <a href=\"https://handbook.gitlab.com/handbook/values/\">values</a> spell CREDIT: Collaboration, Results for Customers, Efficiency, Diversity, Inclusion and Belonging, Iteration, and Transparency. These are not decoration. The handbook links values competencies to job levels, and interviews probe them directly. The handbook defines iteration as doing the smallest valuable thing to get fast feedback, and says everything at GitLab is public by default. If you can show both in past work, say so.</p>\n<p>Engineering postings ask for production experience, sound judgement on security, reliability and performance, strong written communication, and practical AI fluency, including the ability to review and correct AI-generated code. GitLab also says many successful candidates do not meet every requirement and encourages people to apply anyway.</p>\n\n<!-- xf-image-3 -->\n\n<h2>The hiring process, stage by stage</h2>\n<p>The candidate handbook lists seven stages:</p>\n<ol>\n<li><strong>Application.</strong> Apply through GitLab's jobs page. GitLab says it aims to review every application but cannot reply to all of them.</li>\n<li><strong>Screening call.</strong> A recruiter call of 30 to 40 minutes, longer for some specialist roles. Expect questions on why GitLab, why you left past jobs, your experience with each listed skill, STAR-style examples, your location, visa needs, notice period and whether the salary range works for you. The recruiter waits five minutes; a no-show without notice is disqualified.</li>\n<li><strong>Assessment</strong>, for certain roles.</li>\n<li><strong>Technical interview</strong>, for certain roles (see below).</li>\n<li><strong>Team interviews.</strong> These may be behavioural, panel or technical. You can ask your recruiter which types to expect.</li>\n<li><strong>References and an optional TMRG connection.</strong> GitLab asks for three references, at least one a former manager. You can also opt in to talk with a member of a Team Member Resource Group (an employee community) to hear what working there is like.</li>\n<li><strong>Offer and background screening.</strong> Depending on your country, the background check starts alongside references or after the offer.</li>\n</ol>\n<p>Because interviewers sit in many time zones, GitLab asks for availability across at least two weeks to schedule team interviews. It processes only three of your applications at a time if you apply to several roles, and similar roles may carry a cooldown of six months or more after a rejection. If you clear the technical stage for an R&amp;D role and reapply within six months in the same job family, that technical feedback can be reused.</p>\n\n<h3>The merge-request technical interview</h3>\n<p>This is GitLab's most distinctive stage. According to its <a href=\"https://handbook.gitlab.com/handbook/hiring/interviewing/technical/\">technical interview guide</a>, you receive a link to a self-contained merge request against a small application built for the interview, at least 72 hours before your call. GitLab suggests spending up to an hour reviewing it as you would any contribution, and finishing at least 24 hours before the call so the interviewer can read your comments. The interview itself is a 90-minute video and screen-sharing session: you walk through your review, then write code to improve the merge request.</p>\n<p>The aim, GitLab says, is to see how you communicate asynchronously, how well you know the technology and how you collaborate. The exercises come from a curated bank, not live issues, and GitLab says it is open to an alternative assignment if a candidate objects. Its <a href=\"https://about.gitlab.com/jobs/ai-interview-process/\">AI guidelines</a> encourage transparent AI use in technical work, provided you can explain your prompts and decisions, but ask you not to read AI-produced answers during interviews.</p>\n\n<!-- xf-image-4 -->\n\n<h3>How interviewers score you</h3>\n<p>GitLab's <a href=\"https://handbook.gitlab.com/handbook/hiring/conducting-a-gitlab-interview/\">interviewer guide</a> is public too. It tells interviewers to spend 80 to 85% of the time on their own questions, using behavioural questions answered in STAR form (situation, task, action, result) and situational \"what would you do\" questions. Engineering scorecards include a level category, so an interviewer can say you performed at, for example, the senior or intermediate level. That can steer you to a better-matched role rather than a flat rejection. Interviews after the recruiter screen are on camera; the guide asks interviewers to watch for deepfake avatars and coaching.</p>\n\n<h2>How to stand out</h2>\n<ul>\n<li><strong>Write well.</strong> In an asynchronous company, your written review comments are evidence. Make them specific, kind and actionable.</li>\n<li><strong>Practise code review, not just coding.</strong> GitLab recommends reading its own code review guidelines before the technical interview. Review a few open-source merge requests to build the habit.</li>\n<li><strong>Use the product.</strong> Host a side project on GitLab and use issues, merge requests and CI/CD pipelines, so you can talk about the product from experience.</li>\n<li><strong>Prepare CREDIT stories.</strong> Have a STAR example for iteration (shipping small), transparency, results for customers and efficiency.</li>\n<li><strong>Check location eligibility first.</strong> Confirm your country is listed for the role and that you can work there without sponsorship.</li>\n<li><strong>Be honest about AI.</strong> Show how you use it and where you check its output, in line with GitLab's guidelines.</li>\n</ul>\n\n<h2>Pay, referrals and scams</h2>\n<p>GitLab's <a href=\"https://handbook.gitlab.com/handbook/total-rewards/compensation/\">compensation handbook</a> says it pays local market rates based on the cost of labour, not the cost of living. It sets ranges using Radford survey data for software companies. Outside the US, it uses major-metro data to build a single country-wide range, targeting the 50th percentile for most roles and the 75th for critical technical ones. Ranges typically run 20% below to 20% above the midpoint, and since 1 May 2026 every team member can see their own range. Total pay combines base salary, variable pay for some roles, and equity as RSUs. The screening call asks if the posted range suits you, and GitLab says offers are based on market pay, not your pay history. Indian readers can model take-home pay with our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a>; offers in India are often discussed as CTC (cost to company) in LPA (lakh rupees per annum).</p>\n<p>Referrals help, but GitLab's <a href=\"https://handbook.gitlab.com/handbook/hiring/referral-process/\">referral rules</a> distinguish a referral from an endorsement. A referral must come from someone who has worked with you or knows you well, and must be submitted for a specific open role; general referrals are not accepted.</p>\n<p>Finally, scams. In December 2025, GitLab <a href=\"https://about.gitlab.com/blog/new-wave-of-fake-job-scams-impersonating-recruiters/\">warned of fake recruiters</a> using lookalike domains, including gitlab[.]careers, and asking candidates to pay for equipment or certifications. GitLab says real recruiters use @gitlab.com addresses, interview only on Zoom and never request money. If a \"GitLab\" job is not on its official jobs page, treat it as suspect.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>GitLab is unusually transparent about how it hires, so you can prepare more precisely than for almost any other software company. The process rewards people who write clearly, review code well, iterate in small steps and work comfortably without a manager in the same room. For candidates in India it is a real option, with a legal entity, a growing support hub and engineering roles at several levels, provided you already have the right to work here.</p>\n\n<h2>FAQ</h2>\n<h3>How many interview rounds does GitLab have?</h3>\n<p>GitLab lists seven stages: application, screening call, an assessment and a technical interview for certain roles, team interviews, references, and offer with background screening. The number of team interviews varies by role.</p>\n<h3>What is the GitLab technical interview?</h3>\n<p>For engineering roles, you review a self-contained merge request sent at least 72 hours ahead, then join a 90-minute video call to walk through your review and write code to improve it.</p>\n<h3>Can I work for GitLab from India?</h3>\n<p>Yes, for roles open in India. GitLab employs people through GitLab India Private Ltd, and it had 28 India roles on 4 October 2026.</p>\n<h3>Does GitLab sponsor visas?</h3>\n<p>Generally no. The handbook says it cannot proceed with candidates who need sponsorship, except for some candidates who already hold a Dutch work permit.</p>\n<h3>Can I reapply after a rejection?</h3>\n<p>Yes. If you were rejected as insufficiently qualified, GitLab says you can reapply to the same position after six months, or sooner once you have gained the skills it flagged.</p>\n<h3>Can I use AI in GitLab interviews?</h3>\n<p>GitLab encourages transparent AI use in resumes and technical work, but asks candidates not to read AI-produced answers during live interviews.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>GitLab (Greenhouse job board), \"GitLab jobs API\", accessed 2026-10-04. <a href=\"https://boards-api.greenhouse.io/v1/boards/gitlab/jobs\">Link</a></li>\n<li>GitLab Handbook, \"Candidate Handbook Page\", updated 2026-08-26. <a href=\"https://handbook.gitlab.com/handbook/hiring/candidate-faq/\">Link</a></li>\n<li>GitLab Handbook, \"Technical Interviews\", updated 2026-08-19. <a href=\"https://handbook.gitlab.com/handbook/hiring/interviewing/technical/\">Link</a></li>\n<li>GitLab Handbook, \"Conducting a GitLab Interview\", updated 2026-03-02. <a href=\"https://handbook.gitlab.com/handbook/hiring/conducting-a-gitlab-interview/\">Link</a></li>\n<li>GitLab Handbook, \"GitLab Values\", updated 2026-08-27. <a href=\"https://handbook.gitlab.com/handbook/values/\">Link</a></li>\n<li>GitLab Handbook, \"Employment Solutions - Overview\", updated 2026-04-09. <a href=\"https://handbook.gitlab.com/handbook/people-group/employment-solutions/\">Link</a></li>\n<li>GitLab Handbook, \"Compensation\", updated 2026-09-13. <a href=\"https://handbook.gitlab.com/handbook/total-rewards/compensation/\">Link</a></li>\n<li>GitLab Handbook, \"Referral Program and Process\", updated 2025-10-14. <a href=\"https://handbook.gitlab.com/handbook/hiring/referral-process/\">Link</a></li>\n<li>GitLab, \"AI in our interview process\", accessed 2026-10-04. <a href=\"https://about.gitlab.com/jobs/ai-interview-process/\">Link</a></li>\n<li>GitLab Blog, \"What to know about a fake job scam impersonating GitLab\", 2025-12-10. <a href=\"https://about.gitlab.com/blog/new-wave-of-fake-job-scams-impersonating-recruiters/\">Link</a></li>\n<li>GitLab, \"Intermediate Backend Engineer, India\" job posting, accessed 2026-10-04. <a href=\"https://job-boards.greenhouse.io/gitlab/jobs/8775507002\">Link</a></li>\n<li>GitLab, \"Director, Support (Bengaluru)\" job posting, accessed 2026-10-04. <a href=\"https://job-boards.greenhouse.io/gitlab/jobs/8629019002\">Link</a></li>\n<li>GitLab, \"Director of Recruiting, Engineering &amp; IT, Bangalore India\" job posting, accessed 2026-10-04. <a href=\"https://job-boards.greenhouse.io/gitlab/jobs/8726744002\">Link</a></li>\n</ol>",
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Gitlab-founders.jpg/1920px-Gitlab-founders.jpg",
+   "alt": "GitLab co-founders Dmitriy Zaporozhets and Sid Sijbrandij standing together",
+   "caption": "GitLab co-founders Dmitriy Zaporozhets and Sid Sijbrandij. The company they started runs without a headquarters office.",
+   "credit": "Photo: GitLab / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Gitlab-founders.jpg"
+  },
+  {
+   "url": "https://live.staticflickr.com/2362/2159365780_334c321926_b.jpg",
+   "alt": "A home office desk with a computer set up beside a window",
+   "caption": "At an all-remote company, the question is whether GitLab can employ you where you live.",
+   "credit": "Photo: cogdogblog / Openverse (Flickr), CC0",
+   "license": "CC0",
+   "source_page": "https://www.flickr.com/photos/37996646802@N01/2159365780"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Outer_Ring_Road_from_Bangalore_Central_%287988561197%29.jpg/1920px-Outer_Ring_Road_from_Bangalore_Central_%287988561197%29.jpg",
+   "alt": "View over Bengaluru's Outer Ring Road with office buildings and traffic",
+   "caption": "GitLab's India roles include a new Bengaluru support hub and India-based engineering teams.",
+   "credit": "Photo: Ashwin Kumar / Wikimedia Commons, CC BY-SA 2.0",
+   "license": "CC BY-SA 2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Outer_Ring_Road_from_Bangalore_Central_(7988561197).jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Code_review_thread_on_GitLab.png",
+   "alt": "Screenshot of a threaded code review discussion on a GitLab merge request",
+   "caption": "GitLab's engineering technical interview starts with reviewing a merge request like this one.",
+   "credit": "Image: Lucas Werkmeister / Wikimedia Commons, CC BY 4.0",
+   "license": "CC BY 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Code_review_thread_on_GitLab.png"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/GitLab_running_14.3.0-pre_%282021-08%29.png",
+   "alt": "Screenshot of the GitLab web interface showing a project repository page",
+   "caption": "Using GitLab's own product for a side project gives you real examples for interviews.",
+   "credit": "Image: İsmail Arılık / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:GitLab_running_14.3.0-pre_(2021-08).png"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://boards-api.greenhouse.io/v1/boards/gitlab/jobs",
+   "publisher": "GitLab (Greenhouse job board)",
+   "date": "2026-10-04",
+   "claim": "211 roles worldwide on 4 Oct 2026; location mix (remote US/Canada largest, Bangalore 26, UK 15, Germany 10, others); 28 India roles (26 Bangalore, 2 Remote India); India role types; full working rights in India requirement; 'many successful candidates do not meet every requirement'"
+  },
+  {
+   "url": "https://handbook.gitlab.com/handbook/hiring/candidate-faq/",
+   "publisher": "GitLab Handbook",
+   "date": "2026-08-26",
+   "claim": "Seven interview stages; screening call length, questions, no-show rule; visa sponsorship policy; team interview types; scheduling across 2 weeks; 3 applications at a time; cooldowns and reapplication; technical feedback valid 6 months; three references incl. a manager; TMRG connection; background screening timing; 50+ countries"
+  },
+  {
+   "url": "https://handbook.gitlab.com/handbook/hiring/interviewing/technical/",
+   "publisher": "GitLab Handbook",
+   "date": "2026-08-19",
+   "claim": "Merge-request technical interview: 72 hours notice, up to an hour review, finish 24 hours before, 90-minute call, curated exercises, alternative assignment"
+  },
+  {
+   "url": "https://handbook.gitlab.com/handbook/hiring/conducting-a-gitlab-interview/",
+   "publisher": "GitLab Handbook",
+   "date": "2026-03-02",
+   "claim": "80-85% interviewer questions; STAR behavioural and situational questions; level category on engineering scorecards; on-camera interviews and deepfake checks"
+  },
+  {
+   "url": "https://handbook.gitlab.com/handbook/values/",
+   "publisher": "GitLab Handbook",
+   "date": "2026-08-27",
+   "claim": "CREDIT values; iteration as smallest valuable thing; public by default; values competencies linked to job levels"
+  },
+  {
+   "url": "https://handbook.gitlab.com/handbook/people-group/employment-solutions/",
+   "publisher": "GitLab Handbook",
+   "date": "2026-04-09",
+   "claim": "Hires only where it has an entity or PEO; GitLab India Private Ltd employs team members"
+  },
+  {
+   "url": "https://handbook.gitlab.com/handbook/total-rewards/compensation/",
+   "publisher": "GitLab Handbook",
+   "date": "2026-09-13",
+   "claim": "Cost-of-labour pay, Radford data, country-wide ranges outside US, 50th/75th percentile targets, -20%/+20% ranges, range visibility since 1 May 2026, RSUs"
+  },
+  {
+   "url": "https://handbook.gitlab.com/handbook/hiring/referral-process/",
+   "publisher": "GitLab Handbook",
+   "date": "2025-10-14",
+   "claim": "Referral vs endorsement; referral must be for a specific requisition; no work permit transfer support"
+  },
+  {
+   "url": "https://about.gitlab.com/jobs/ai-interview-process/",
+   "publisher": "GitLab",
+   "date": "2026-10-04",
+   "claim": "AI use guidelines for candidates (page undated; accessed date)"
+  },
+  {
+   "url": "https://about.gitlab.com/blog/new-wave-of-fake-job-scams-impersonating-recruiters/",
+   "publisher": "GitLab Blog",
+   "date": "2025-12-10",
+   "claim": "Fake recruiter scams; gitlab[.]careers; real recruiters use @gitlab.com, Zoom only, no money requests"
+  },
+  {
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8775507002",
+   "publisher": "GitLab",
+   "date": "2026-10-04",
+   "claim": "Remote-first, asynchronous; AI expected in daily workflows; Ruby/Rails or Go; AI fluency requirement"
+  },
+  {
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002",
+   "publisher": "GitLab",
+   "date": "2026-10-04",
+   "claim": "Bengaluru Center of Support, India-based regional hub peer to Americas and EMEA; remote-friendly role based in Bengaluru"
+  },
+  {
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8726744002",
+   "publisher": "GitLab",
+   "date": "2026-10-04",
+   "claim": "India-based recruiting for Engineering and IT; 100 to 200+ requisitions across India and APAC"
+  }
+ ]
+}

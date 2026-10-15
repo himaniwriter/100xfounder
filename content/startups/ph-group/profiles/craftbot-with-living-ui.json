@@ -1,0 +1,85 @@
+{
+  "slug": "craftbot-with-living-ui",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/craftbot-with-living-ui",
+  "excerpt": "CraftBot is an open-source, self-hostable AI agent that builds and runs its own small apps (\"Living UI\"). Free and hosted plans, alternatives and launch figures.",
+  "content": "<p>CraftBot is a general-purpose AI agent that you run on your own computer or in the cloud. You give it tasks in a chat or from the command line; it plans and carries them out, remembers your preferences, and can suggest and start tasks of its own (with your approval, its README says). It connects to Google Workspace, Slack, Notion, Zoom, Discord, Telegram and others, and supports MCP servers and Skills.</p><p>The feature behind this launch is Living UI, now also called Agent App in the project's README: describe an app such as a kanban board, CRM or dashboard, and CraftBot generates the data model, backend and React interface, runs it inside itself and can read and act on its data. The agent harness is open source under the MIT licence on GitHub, written mainly in Python, and works with OpenAI, Gemini, Claude, OpenRouter or local models through Ollama. A hosted version, CraftBot Live, is in beta.</p><p>CraftBot is made by CraftOS. \"CraftBot with Living UI\" was its second Product Hunt launch, on 13 May 2026, and finished #3 for the day with 272 points and 30 comments (as of 14 October 2026). The GitHub repository had 394 stars on 14 October 2026.</p><p><em>We have not tested CraftBot ourselves. This page brings together its GitHub repository, its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI agents",
+    "platform": "Self-hosted (Windows, macOS, Linux) or hosted CraftBot Live",
+    "os": "Self-hosting needs Python 3.10+ and Node.js 18+ for browser mode",
+    "starts_at": "Free (open source, or hosted Free plan); hosted Pro $19.90/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Open-source, self-hostable AI agent that builds and runs its own apps alongside your tasks",
+    "ph": {"rank": 3, "votes": 272, "comments": 30, "followers": 784, "launched": "2026-05-13", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/903cc58d-9a2e-4172-a529-75f68e665f28.png?auto=format&fit=max&w=1400", "w": 1280, "h": 720,
+       "alt": "CraftBot Living UI graphic: 'CraftBot builds, modifies, operates Living UI' beside a habit-tracker app running inside CraftBot", "credit": "Image: CraftOS via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/0bb41e17-ac57-4352-803a-c139c9dd4678.png?auto=format&fit=max&w=1400", "w": 1641, "h": 907,
+       "alt": "A Trading View app inside CraftBot with a stock chart, watchlist, news panel and screener, alongside tabs for other generated apps", "credit": "Image: CraftOS via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "want an always-on personal agent you can self-host and inspect, with the harness under the MIT licence",
+        "want to bring your own model key, or run a local model through Ollama",
+        "like the idea of the agent building small internal tools (a CRM, a kanban board, a dashboard) that it then operates"
+      ],
+      "not_fit": [
+        "are not comfortable with Python and the command line: self-hosting starts with cloning the repository",
+        "need a mature, production-grade service: the hosted CraftBot Live says it is in beta",
+        "want the agent to act without oversight: its README says proactive tasks are started with approval"
+      ]
+    },
+    "pricing": {
+      "intro": "The software is free and open source. CraftOS also sells a hosted version, CraftBot Live, with these plans in US dollars.",
+      "url": "https://craftbot.live/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Self-hosted", "price": "Free", "amount": 0, "currency": "USD", "detail": "MIT-licensed code on GitHub; you supply the machine and the model (your own API key or a local model)"},
+        {"name": "Free (hosted)", "price": "$0", "amount": 0, "currency": "USD", "detail": "1 always-on agent on shared compute, 1 GB workspace, your own LLM key or managed LLM at 6 calls a minute"},
+        {"name": "Pro", "price": "$19.90/month", "amount": 19.9, "currency": "USD", "detail": "3 always-on agents, dedicated compute, 5 GB workspace, 30 managed LLM calls a minute"},
+        {"name": "Max", "price": "$79.90/month", "amount": 79.9, "currency": "USD", "detail": "10 agents, 15 GB workspace, 60 managed LLM calls a minute"},
+        {"name": "Max+", "price": "$199.90/month", "amount": 199.9, "currency": "USD", "detail": "25 agents, 100 GB workspace, 120 managed LLM calls a minute and a dedicated support engineer"}
+      ],
+      "notes": [
+        "Managed LLM usage on the hosted plans runs on prepaid credits; with your own key you pay your model provider directly.",
+        "Plans can be cancelled any time, and the agent's workspace and memory persist after a downgrade, according to the pricing FAQ."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "BetterClaw", "url": "https://www.betterclaw.io/", "what": "Hosted platform to deploy an AI agent quickly", "starts_at": "Basic $19/month; Pro $49; Business $149", "ph_rating": 5, "ph_reviews": 14,
+         "difference": "A managed service where you bring your own model key; CraftBot can also be fully self-hosted from open-source code."},
+        {"name": "Manus", "url": "https://manus.im/", "what": "General agent that turns instructions into actions", "starts_at": "See its pricing page", "ph_rating": 4.44, "ph_reviews": 9,
+         "difference": "A closed, hosted agent. CraftBot's harness is MIT-licensed and can run locally with your own or local models."},
+        {"name": "Claude by Anthropic", "url": "https://www.anthropic.com/claude", "what": "AI assistant and model family", "starts_at": "See its pricing page", "ph_rating": 4.96, "ph_reviews": 1041,
+         "difference": "A model and assistant rather than a self-hosted agent; CraftBot can use Claude as one of its model providers."}
+      ],
+      "more": "Product Hunt also lists Google Antigravity (4.65 from 23 reviews) and GPTBots.ai (4.91 from 22 reviews)."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/craftbot/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/craftbot",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "profile_url": "https://twitter.com/craftos_team", "search_url": "https://x.com/search?q=CraftBot%20CraftOS&f=live"}
+    },
+    "faq": [
+      {"q": "What is CraftBot?", "a": "An AI agent from CraftOS that plans and carries out computer-based tasks, remembers your goals and can build and operate its own small apps (Living UI / Agent App). You can self-host it or use the hosted CraftBot Live."},
+      {"q": "Is CraftBot open source?", "a": "Yes. The repository CraftOS-dev/CraftBot on GitHub is under the MIT licence, according to GitHub."},
+      {"q": "How much does CraftBot cost?", "a": "Self-hosting is free. CraftBot Live has a free plan and paid plans at $19.90, $79.90 and $199.90 a month (pricing page, 14 October 2026)."},
+      {"q": "Which AI models does it support?", "a": "The README lists OpenAI, Google Gemini, Anthropic Claude and OpenRouter, plus local models through Ollama."},
+      {"q": "What is Living UI?", "a": "A feature where CraftBot generates an app from a sentence (for example a CRM or kanban board), scaffolding its data model, API and interface, then runs it and works with its data."},
+      {"q": "How did it do on Product Hunt?", "a": "\"CraftBot with Living UI\" launched on 13 May 2026 and finished #3 for the day with 272 points and 30 comments."}
+    ],
+    "sources": [
+      {"label": "CraftBot on GitHub", "url": "https://github.com/CraftOS-dev/CraftBot"},
+      {"label": "CraftBot Live", "url": "https://craftbot.live/"},
+      {"label": "CraftBot Live pricing", "url": "https://craftbot.live/pricing"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/craftbot"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/craftbot-with-living-ui"},
+      {"label": "BetterClaw pricing", "url": "https://www.betterclaw.io/pricing"}
+    ]
+  }
+}

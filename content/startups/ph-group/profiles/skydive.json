@@ -1,0 +1,327 @@
+{
+ "slug": "skydive",
+ "ph_url": "https://www.producthunt.com/posts/skydive",
+ "existing_listing_slug": null,
+ "website": "https://www.skydive.com/",
+ "excerpt": "Skydive builds AI agents with their own cloud computer that you reach in Slack, email or iMessage. Free pay-as-you-go plan; Starter $20/month.",
+ "content": "<p>Skydive lets you build AI agents that do work across your tools. You describe the job, and the agent gets its own computer in the cloud with a browser, terminal and file system, plus its own Slack bot, email inbox and phone number. You can talk to the same agent in Slack, email, iMessage, the web app, the Mac desktop app, a command-line tool or the API, and it keeps one identity and one memory across all of them. Agents connect to apps such as Gmail, GitHub, Notion, Linear, Intercom and Google Drive (the launch post says 900+), and where there is no integration the agent hands you its browser so you can log in.</p><p>Agents keep file-based memory in their own git repository, learn from corrections, and can run routines on a schedule or when something happens, so they keep working when your laptop is closed. Several agents can share context and hand work to each other. Credentials are injected through a proxy so the agent does not see raw tokens. Pricing is credit based: model usage is passed through at cost with no markup, and paid plans turn the plan fee into the same amount of usage credit.</p><p>Skydive is made by Create, the company behind the AI app builder Anything, and was started by Marcus Lowe and Dhruv Amin. It began as an internal engineering agent nicknamed \"Coworker\". Skydive launched on Product Hunt on 27 August 2026 and finished #1 for the day and #4 for the week, with 409 upvotes and 105 comments.</p><p><em>We have not tested Skydive ourselves. This page brings together its official site, documentation, pricing and blog, its Product Hunt launch and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agents",
+  "platform": "Web, Mac desktop app, Slack, email, iMessage, CLI and API",
+  "starts_at": "Free (pay as you go); Starter $20/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Build AI agent coworkers with their own cloud computer, reachable in Slack, email and iMessage",
+  "maker": {
+   "name": "Marcus Lowe",
+   "url": "https://www.producthunt.com/@themarcuslowe"
+  },
+  "team": [
+   {
+    "name": "Marcus Lowe",
+    "role": "Co-founder",
+    "url": "https://www.producthunt.com/@themarcuslowe"
+   },
+   {
+    "name": "Dhruv Amin",
+    "role": "Co-founder",
+    "url": "https://www.producthunt.com/@dhruvtruth"
+   },
+   {
+    "name": "Zaria Zinn",
+    "role": "Head of Marketing",
+    "url": "https://www.producthunt.com/@zariazinn"
+   },
+   {
+    "name": "Dylan",
+    "role": "Customer success and support",
+    "url": "https://www.producthunt.com/@dylan34"
+   },
+   {
+    "name": "Amy Fraser",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@amy_fraser1"
+   },
+   {
+    "name": "Rain Dong",
+    "role": "Designer",
+    "url": "https://www.producthunt.com/@rain_dong"
+   },
+   {
+    "name": "Philip Kim",
+    "role": "Mobile Engineer",
+    "url": "https://www.producthunt.com/@pgk1216"
+   },
+   {
+    "name": "Joshua Nam",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@joshua_nam"
+   }
+  ],
+  "ph": {
+   "rank": 1,
+   "votes": 409,
+   "comments": 105,
+   "followers": 858,
+   "launched": "2026-08-27",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://www.youtube.com/watch?v=t-e9DUjsDKo",
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/aa941090-e357-44a8-a87f-7d446573efc5.png?auto=format&fit=max&w=1400",
+    "alt": "'Meet Skydive' title card above a row of colourful puppet-style agent characters",
+    "credit": "Image: Skydive on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/ea20cecf-ba5a-410c-b80d-f2c20c163463.png?auto=format&fit=max&w=1400",
+    "alt": "Skydive activity feed showing agents' finished work, with the caption 'Real work happens in real tools'",
+    "credit": "Image: Skydive on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/52b35898-ce72-4e1b-8682-f5c6a01e1389.png?auto=format&fit=max&w=1400",
+    "alt": "A Skydive agent in a Slack #marketing channel delivering four Meta ad concepts, captioned 'Automation that never sleeps'",
+    "credit": "Image: Skydive on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/e56aca38-e423-48e2-810e-a2f9553c485f.png?auto=format&fit=max&w=1400",
+    "alt": "Skydive 'Team's agents' screen with agent cards such as Research Analyst and Customer Success, captioned 'Agents that work as a team'",
+    "credit": "Image: Skydive on Product Hunt",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Marcus Lowe, a co-founder, argues that everyone now has the same AI models but still has to prompt them well. In his view chatbots answer but leave the action to you and forget what you taught them, while workflow builders make you design and maintain every step.",
+    "Skydive is meant to sit between the two: you hire an agent for a job, describe it, and it works on its own cloud computer and codebase, picks up your skills or writing style when asked, and improves by learning from earlier conversations."
+   ],
+   "attribution": "Marcus Lowe, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/skydive?comment=5784841"
+  },
+  "use_cases": [
+   "An executive-assistant agent that handles your inbox and scheduling",
+   "A support agent that answers in Intercom or Slack",
+   "An engineering agent that debugs and opens pull requests",
+   "A marketing agent that makes ad creative and checks campaigns",
+   "Routines such as a morning digest or a weekly report"
+  ],
+  "audience": {
+   "fit": [
+    "want agents that act in your tools rather than only chat",
+    "work across Slack, email and phone and want one agent that remembers everything",
+    "prefer to describe the outcome instead of building workflows step by step"
+   ],
+   "not_fit": [
+    "need fixed, predictable automations: a workflow tool such as n8n may suit better",
+    "need a fixed monthly bill: usage draws down a credit balance and can need top-ups",
+    "need SSO, SAML or audit logs on a small budget: these are Enterprise-only"
+   ]
+  },
+  "pricing": {
+   "intro": "Skydive is subscription based. Paid plans include usage credit equal to the plan fee, and model usage is charged at cost with no markup. Prices are flat per workspace, not per seat.",
+   "url": "https://getskydive.com/docs/account/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0/month, pay as you go",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Starts with a small amount of credit, no card required; buy credit as you go; community support"
+    },
+    {
+     "name": "Starter",
+     "price": "$20/month",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "$20 of usage credit a month, unlimited agents and seats, email support. Yearly: $240 with $264 of credit"
+    },
+    {
+     "name": "Team",
+     "price": "$200/month",
+     "amount": 200,
+     "currency": "USD",
+     "detail": "$200 of usage credit a month, unlimited agents and seats, priority support. Yearly: $2,400 with $2,640 of credit"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "SSO and SAML, audit logs, advanced security, custom contracts, dedicated support"
+    }
+   ],
+   "notes": [
+    "Credit is spent on model usage (at cost), sandbox compute and metered services such as search and email. Extra credit starts at $50, and auto-refill and monthly spend caps are available.",
+    "If a workspace runs out of credit, agents drop to a limited free floor until more credit is added."
+   ]
+  },
+  "alternatives": {
+   "intro": "Like-for-like AI agent and automation tools, picked by us. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Lindy",
+     "url": "https://www.lindy.ai/",
+     "what": "No-code AI agents and assistants for email, meetings and business tasks",
+     "starts_at": "Free $50 of credits for 7 days; Team from $29.99 a month",
+     "difference": "Bills each active user and pools credits, while Skydive charges a flat workspace fee with model usage at cost."
+    },
+    {
+     "name": "Relevance AI",
+     "url": "https://relevanceai.com/",
+     "what": "Platform for building an 'AI workforce' of agents for sales and operations",
+     "starts_at": "Enterprise plan; talk to sales",
+     "difference": "Aimed at company-wide deployments sold through sales, while Skydive has self-serve plans from free."
+    },
+    {
+     "name": "n8n",
+     "url": "https://n8n.io/",
+     "what": "Workflow automation with AI steps, cloud or self-hosted",
+     "starts_at": "Starter €20 a month billed annually; self-hosted version on GitHub",
+     "difference": "You design each workflow step yourself, the approach Skydive's makers contrast their product with."
+    }
+   ]
+  },
+  "reviews": {
+   "count": 4,
+   "rating": 4.75,
+   "url": "https://www.producthunt.com/products/skydive/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Focusing on the outcome rather than writing prompts"
+    ],
+    "asked": [
+     "Whether it is chat-only (makers: there is a full web app, plus Slack, email, iMessage, desktop, CLI and API)",
+     "Whether access can be limited per agent (makers: each agent gets only the integrations it is given, and can be private, internal or external)",
+     "How it decides when to ask a human (makers: you set what each agent owns and what needs approval)",
+     "What it actually does, from a commenter who found the launch unclear"
+    ],
+    "criticised": []
+   },
+   "quotes": []
+  },
+  "pros": [
+   "One agent with shared memory across Slack, email, iMessage, web, desktop and terminal",
+   "Each agent has its own cloud computer, so it can browse, run code and host apps",
+   "Model usage billed at cost with no markup, and a free pay-as-you-go start",
+   "Per-agent access scoping and visibility settings; makers say it is SOC 2 compliant"
+  ],
+  "cons": [
+   "Costs depend on usage, so the monthly bill can vary",
+   "SSO, SAML and audit logs only on Enterprise",
+   "Many launch-day comments came from the team itself or were flagged by Product Hunt as likely AI-written, so independent feedback is thin",
+   "Agent memory is shared with everyone who talks to the agent, so it is not a place for secrets (its FAQ says so)"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/skydive",
+   "x": {
+    "posts": [
+     {
+      "url": "https://x.com/marcus_lowe/article/2090864253796294958",
+      "author": "Marcus Lowe (co-founder)",
+      "note": "'Introducing Skydive' launch article"
+     },
+     {
+      "url": "https://x.com/Av1dlive/article/2095913631766729159",
+      "author": "@Av1dlive",
+      "note": "Article on automating tasks with Skydive agents"
+     }
+    ],
+    "profile_url": "https://x.com/getskydive",
+    "search_url": "https://x.com/search?q=skydive.com&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Skydive?",
+    "a": "A tool for building AI agents that each have their own cloud computer, memory and identity. You reach them in Slack, email, iMessage, the web app, the Mac app, the CLI or the API, and they do multi-step work in your connected tools."
+   },
+   {
+    "q": "How much does Skydive cost?",
+    "a": "Free is $0 a month, pay as you go. Starter is $20 a month and Team is $200 a month, each including the same amount in usage credit. Enterprise is custom. Model usage is charged at cost."
+   },
+   {
+    "q": "Do I need to code?",
+    "a": "No. Its FAQ says most people build and run agents through conversation; the agents write and run code in their own sandbox."
+   },
+   {
+    "q": "Can I limit what an agent can access?",
+    "a": "Yes. Each agent only gets the integrations you give it, and it can be private, internal to your workspace or external. Credentials are injected through a proxy so the agent does not see raw tokens."
+   },
+   {
+    "q": "Does it work when my computer is off?",
+    "a": "Yes. Agents run in the cloud and can follow routines on a schedule or when an event happens."
+   },
+   {
+    "q": "Who makes Skydive?",
+    "a": "Create, the company behind the AI app builder Anything, founded by Marcus Lowe and Dhruv Amin, according to Skydive's blog."
+   },
+   {
+    "q": "What are the alternatives?",
+    "a": "Lindy for no-code AI assistants, Relevance AI for enterprise agent teams, and n8n if you prefer to build workflows step by step."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Skydive official site",
+    "url": "https://www.skydive.com/"
+   },
+   {
+    "label": "Skydive llms.txt (site overview)",
+    "url": "https://www.skydive.com/llms.txt"
+   },
+   {
+    "label": "Skydive billing and plans",
+    "url": "https://getskydive.com/docs/account/pricing"
+   },
+   {
+    "label": "Skydive FAQ",
+    "url": "https://getskydive.com/docs/get-started/faq"
+   },
+   {
+    "label": "Skydive docs: Welcome",
+    "url": "https://getskydive.com/docs/get-started/welcome"
+   },
+   {
+    "label": "Skydive docs: Enterprise",
+    "url": "https://getskydive.com/docs/workspaces/enterprise"
+   },
+   {
+    "label": "Skydive support",
+    "url": "https://getskydive.com/docs/support"
+   },
+   {
+    "label": "Introducing Skydive (blog)",
+    "url": "https://www.skydive.com/blog/introducing-skydive/"
+   },
+   {
+    "label": "When agents become teammates (blog)",
+    "url": "https://www.skydive.com/blog/teammates/"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/skydive"
+   },
+   {
+    "label": "Lindy pricing",
+    "url": "https://www.lindy.ai/pricing"
+   },
+   {
+    "label": "Relevance AI pricing",
+    "url": "https://relevanceai.com/pricing"
+   },
+   {
+    "label": "n8n pricing",
+    "url": "https://n8n.io/pricing/"
+   }
+  ]
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "slug": "kastra",
+ "ph_url": "https://www.producthunt.com/products/kastra",
+ "existing_listing_slug": null,
+ "website": "https://kastra.ai/",
+ "excerpt": "Kastra is a runtime authorization layer for AI agents: before Claude Code, Cursor, Codex or your own agents run a tool call, shell command or query, it returns allow, deny, redact or hold in under a millisecond. 15-day trial; Pro $19.99 per developer a month. Pricing and alternatives.",
+ "content": "<p>Kastra decides what AI agents are allowed to do before they do it. It sits in the execution path of prompts, tool calls, shell commands, database operations and API requests, evaluates each action against your policies in under a millisecond, and returns allow, deny, redact or hold. A hold sends the action to a person for approval, which the makers say completes in about a second through the desktop app, web console or macOS notifications. Each decision is recorded in a cryptographically chained audit trail.</p><p>Policies can be written in plain English, YAML or the console, for example blocking Stripe API keys from being sent to a model or holding a command that wipes a database table. Kastra Edge enforces policies on developer machines for Claude Code, Cursor, Codex and OpenClaw; production agents call the HTTP API, and an MCP server exposes governance data. Kastra Recon drafts policies from what your agents have already done. New policies can run in shadow mode, or be replayed against past decisions to see what would have changed, before they start blocking. The makers say the runtime and policy library are open source, while the enterprise control plane is commercial.</p><p>Kastra was built by Carlos Jimenez and Fernando Vintacourt. It launched on Product Hunt on 22 July 2026 and finished #3 for the day with 332 upvotes and 132 comments.</p><p><em>We have not tested Kastra ourselves. This page brings together Kastra's website and pricing page, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agent security",
+  "platform": "macOS app (Kastra Edge), HTTP API, CLI and MCP server",
+  "starts_at": "15-day trial; Pro $19.99 per developer/month",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Authorization layer that allows, denies or holds AI agent actions before they run",
+  "maker": {"name": "Carlos Jimenez", "url": "https://www.producthunt.com/@carlosjimenez1"},
+  "team": [
+   {"name": "Carlos Jimenez", "role": "Co-founder", "url": "https://www.producthunt.com/@carlosjimenez1"},
+   {"name": "Fernando Vintacourt", "role": "Co-founder", "url": "https://www.producthunt.com/@fernando_vintacourt"}
+  ],
+  "ph": {"rank": 3, "votes": 332, "comments": 132, "followers": 702, "launched": "2026-07-22", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/312b3c76-1890-412c-aecf-f17db87c78f1.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Kastra via Product Hunt", "alt": "Kastra console overview of AI agent actions evaluated and blocked, captioned 'Understand your AI agent's actions at run time'"},
+   {"url": "https://ph-files.imgix.net/00592068-cf0c-4c23-aee7-2dc0e3a2f39c.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Kastra via Product Hunt", "alt": "Kastra rules written in plain English, such as blocking Stripe keys from reaching a model and holding table truncation for approval"},
+   {"url": "https://ph-files.imgix.net/564cbdc4-5a1b-4fe2-be68-a83a4cccb26c.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Kastra via Product Hunt", "alt": "Kastra API key creation screen, captioned 'Protect every AI action with one integration'"},
+   {"url": "https://ph-files.imgix.net/78fd76b3-f544-42e5-b06c-9da1937ed6f0.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Kastra via Product Hunt", "alt": "Kastra Edge macOS app panel controlling coding agents locally"}
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Carlos Jimenez says that when he and Fernando Vintacourt deployed coding, support and infrastructure agents, the agents had credentials and access and nothing structural stopped them from running any action, even in production. Teams have authentication, logs, monitoring and evals, he wrote, but almost none have a layer that says a specific action cannot run before it runs.",
+    "Kastra is that layer: every action gets an allow or deny decision in under a millisecond, fast enough to make human approval practical. He invited developers to install Kastra Edge and scan what their coding agent had already done, with the scan staying on their machine."
+   ],
+   "attribution": "Carlos Jimenez, co-founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/kastra?comment=5581657"
+  },
+  "use_cases": [
+   "Blocking a coding agent from running destructive shell or database commands",
+   "Stopping secrets such as API keys from being sent to a model",
+   "Requiring human approval for high-risk agent actions",
+   "Keeping an audit trail of why each agent action was allowed",
+   "Testing new rules in shadow mode before enforcing them"
+  ],
+  "audience": {
+   "fit": [
+    "run Claude Code, Cursor, Codex or your own agents with access to real systems",
+    "need deterministic rules rather than prompt instructions to limit agents",
+    "need audit records for security or compliance teams"
+   ],
+   "not_fit": [
+    "only want to filter what a model writes: Kastra says it is the wrong tool for that",
+    "want a permanent free plan: after the trial it logs but stops blocking",
+    "need model routing or an identity provider replacement"
+   ]
+  },
+  "pricing": {
+   "intro": "Kastra offers a 15-day Pro trial without a card, then per-developer plans. Prices are in US dollars from Kastra's pricing page.",
+   "url": "https://kastra.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Pro", "price": "$19.99 per developer/month", "amount": 19.99, "currency": "USD", "detail": "1 developer, 1 machine, 1M decisions a month, 90-day audit retention, Recon and Edge, alerts and exports"},
+    {"name": "Team", "price": "$49.99 per developer/month (3-seat minimum)", "amount": 49.99, "currency": "USD", "detail": "10M decisions a month, 1-year+ retention, centrally enforced policies across machines"},
+    {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Self-hosted or private cloud, SSO/SAML, advanced RBAC, SLAs"}
+   ],
+   "notes": ["There is no permanent free tier; after the trial Kastra keeps logging decisions but stops blocking actions.", "A no-signup sandbox is available on the website."]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Permit.io, Arcjet and Harden among Kastra's alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "Permit.io", "url": "https://www.permit.io/", "what": "Permissions and authorization for applications and AI", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 6, "ph_url": "https://www.producthunt.com/products/permit-io", "difference": "A general authorization service for apps; Kastra intercepts agent tool calls and commands directly, including on developer machines."},
+    {"name": "Arcjet", "url": "https://arcjet.com/", "what": "Runtime security for the AI agents you build", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 2, "ph_url": "https://www.producthunt.com/products/arcjet", "difference": "Security built into your own app code; Kastra also governs off-the-shelf coding agents like Claude Code and Cursor."},
+    {"name": "Harden", "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif", "what": "Security layer for AI coding agents", "starts_at": "See its pricing page", "ph_rating": 4.5, "ph_reviews": 2, "ph_url": "https://www.producthunt.com/products/agent-integrity-foundation-aif", "difference": "Focused on coding agents; Kastra also covers production agents through its API."}
+   ],
+   "more": "Product Hunt also lists Lyzr and GraphBit."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/kastra/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Enforced rules instead of prompt instructions", "Checks before actions run, not after", "Clear explanations of prompts, commands and decisions"],
+    "asked": [
+     "What happens if Kastra is unreachable (fail-open or fail-closed can be chosen and tested per environment)",
+     "Whether nested tool calls are checked (each downstream call is evaluated separately)",
+     "Whether new policies can be dry-run (yes: shadow mode and replay against past decisions)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {"text": "That's not authorization, that's a suggestion.", "author": "Ramish Zaidi", "url": "https://www.producthunt.com/products/kastra?comment=5643159"},
+    {"text": "I've been burned by an agent calling a tool it shouldn't have.", "author": "Grayson Carter", "url": "https://www.producthunt.com/products/kastra?comment=5643330"},
+    {"text": "how the policy engine handles nested tool calls, where one authorized action triggers a second unauthorized one downstream.", "author": "Steven Granata", "url": "https://www.producthunt.com/products/kastra?comment=5643171"}
+   ]
+  },
+  "pros": [
+   "Deterministic allow, deny, redact or hold before actions run",
+   "Works with Claude Code, Cursor, Codex and OpenClaw",
+   "Shadow mode and replay to test policies safely",
+   "Audit trail with the matching policy for every decision"
+  ],
+  "cons": [
+   "No permanent free plan",
+   "Team plan needs at least three seats",
+   "Another component in the agent path that must stay available",
+   "Writing good policies takes effort"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/kastra",
+   "quotes": [
+    {"author": "Gal Dayan", "url": "https://www.producthunt.com/products/kastra?comment=5643089", "text": "Asked what happens when Kastra itself is unreachable.", "reply": "Carlos Jimenez said integrations can be set to fail open or fail closed and tested per environment before production."},
+    {"author": "Christian Mueller", "url": "https://www.producthunt.com/products/kastra?comment=5647259", "text": "Asked whether policies can be dry-run against past runs.", "reply": "Fernando Vintacourt said stored decisions can be replayed through a candidate policy, and shadow mode evaluates live traffic without blocking."}
+   ],
+   "x": {"none": "We found no posts about Kastra on X to link yet.", "search_url": "https://x.com/search?q=kastra.ai&f=live", "profile_url": "https://x.com/kastralabs"}
+  },
+  "faq": [
+   {"q": "What is Kastra?", "a": "A runtime authorization layer for AI agents that checks each action against your policies before it runs and returns allow, deny, redact or hold."},
+   {"q": "How much does Kastra cost?", "a": "Pro is $19.99 per developer a month and Team $49.99 per developer a month with three seats minimum, after a 15-day trial with no card. Enterprise is custom."},
+   {"q": "Which agents does it work with?", "a": "Kastra Edge covers Claude Code, Cursor, Codex and OpenClaw on developer machines; production agents use the HTTP API, including with the Anthropic and OpenAI SDKs."},
+   {"q": "Can I test a policy before it blocks anything?", "a": "Yes. Run it in shadow mode, or replay past decisions through it to see what would have changed."},
+   {"q": "Is Kastra open source?", "a": "The makers say the runtime and policy pack library are open source and the enterprise control plane is commercial."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists Lyzr, Permit.io, Arcjet, GraphBit and Harden."}
+  ],
+  "sources": [
+   {"label": "Kastra official site", "url": "https://kastra.ai/"},
+   {"label": "Kastra pricing", "url": "https://kastra.ai/pricing"},
+   {"label": "Kastra contact", "url": "https://kastra.ai/contact"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/kastra"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/kastra/alternatives"}
+  ]
+ }
+}

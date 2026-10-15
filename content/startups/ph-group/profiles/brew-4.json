@@ -1,0 +1,105 @@
+{
+  "slug": "brew-4",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/brew-4",
+  "excerpt": "Brew is an AI-native email platform: describe a campaign or automation in plain English and it builds on-brand emails, audiences and logic, then sends them or hands them to your existing ESP. Pricing, alternatives and launch-day questions.",
+  "content": "<p>Brew is an email marketing platform built around AI. You paste your website's address and Brew extracts your brand: logos, colours, fonts, images and the tone of your copy. After that you describe what you want, such as a welcome series for new signups, and Brew builds the emails on an infinite canvas, along with the audience, waits and branches for an automation. You can edit by hand or in chat, or start from a template, a Figma file, HTML or a forwarded email.</p><p>It sends from your own domain and checks deliverability before you send, with previews for Gmail, Outlook and Apple Mail. Automations can be triggered from Clerk, Stripe, Shopify or your own events. You can also run Brew from an AI agent: it has an MCP server that works in Claude, ChatGPT, Cursor and Grok. If you would rather keep your current email provider, Brew can push flows into Klaviyo or HubSpot; the co-founder said on Product Hunt that Klaviyo flows arrive as finished HTML blocks rather than editable drag-and-drop blocks.</p><p>Brew Emails Inc. was co-founded by Philip Sørensen, who says he previously led US growth at Revolut, with Thomas Park building the product. It launched on Product Hunt on 26 May 2026 and finished #1 for the day with 884 points and 148 comments.</p><p><em>We have not tested Brew ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Email marketing",
+    "platform": "Web app, with an MCP server for AI agents",
+    "starts_at": "Free plan; paid from $99/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI email platform that builds on-brand campaigns and automations from a plain-English prompt",
+    "maker": {"name": "Philip Sørensen", "url": "https://www.producthunt.com/@philip_sorensen"},
+    "team": [
+      {"name": "Philip Sørensen", "role": "Co-founder and CEO", "url": "https://www.producthunt.com/@philip_sorensen"},
+      {"name": "Thomas Park", "url": "https://www.producthunt.com/@thomas_park2"},
+      {"name": "Jessica Webb", "role": "Growth", "url": "https://www.producthunt.com/@jessica_w204"}
+    ],
+    "ph": {"rank": 1, "votes": 884, "comments": 148, "followers": 1798, "launched": "2026-05-26", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/2458b46a-0e59-4a5d-80a9-e71fce4579de.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Brew banner 'Turn Emails into Revenue' with three styles of the same welcome email for Clay",
+       "credit": "Image: Brew via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/8197b505-9641-470d-a77a-7eee388ed30e.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "A prompt asking Brew to create an email announcing a LiveFlow upgrade, the generated email, and LiveFlow's reported open and click-rate increases",
+       "credit": "Image: Brew via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/b3fa997f-33fb-4515-9bd1-a6ac6db51873.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Grid of branded marketing emails with a 'Make it personal' prompt being applied, under the heading 'Always on-brand'",
+       "credit": "Image: Brew via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are a founder or small marketing team that keeps putting off lifecycle email because building it takes too long",
+        "want emails that match your brand without a designer or hand-coded HTML",
+        "want to drive email from an AI agent such as Claude or Cursor through MCP"
+      ],
+      "not_fit": [
+        "rely on Klaviyo's drag-and-drop editor after export: flows arrive as finished HTML blocks, according to the co-founder",
+        "want to send from the free plan without branding: it adds a Brew watermark and caps sends at 1,000 a month",
+        "need SMS, social posting or event registration in the same tool: Brew's own comparison points those users to Constant Contact"
+      ]
+    },
+    "pricing": {
+      "intro": "Brew's plans include every feature; only the volume changes. Prices are in US dollars, and Brew says contacts are unlimited on every plan (you pay for sends).",
+      "url": "https://brew.new/pricing",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "500 AI credits and 1,000 email sends a month, unlimited sending domains, 3 brand workspaces, Brew watermark, basic AI models"},
+        {"name": "Growth", "price": "$99/month", "amount": 99, "currency": "USD", "detail": "10,000 AI credits and 50,000 sends a month, 10 brand workspaces, no watermark, latest AI models"},
+        {"name": "Pro", "price": "$249/month", "amount": 249, "currency": "USD", "detail": "25,000 AI credits and 200,000 sends a month, 50 brand workspaces, priority support"},
+        {"name": "Enterprise", "price": "Custom", "amount": null, "currency": "USD", "detail": "Custom credit and send volume, unlimited brand workspaces, dedicated account manager, migration support"}
+      ],
+      "notes": [
+        "Campaign, automation and transactional emails are included on every plan.",
+        "Brew's comparison pages say custom automations have no step or flow limits on any plan."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Loops", "url": "https://loops.so", "what": "Email platform for SaaS: marketing, product and transactional email", "starts_at": "Free plan; Growth from $49/month", "ph_rating": 4.93, "ph_reviews": 134,
+         "difference": "Priced by subscribed contacts rather than sends, and you design emails yourself; Brew generates them from your brand."},
+        {"name": "MailerLite", "url": "https://www.mailerlite.com", "what": "Email marketing with a drag-and-drop editor, landing pages and websites", "starts_at": "See its pricing page", "ph_rating": 4.58, "ph_reviews": 26,
+         "difference": "A broad marketing suite with an AI writing assistant, rather than an agent-first builder."},
+        {"name": "Mailmodo", "url": "https://mailmodo.com", "what": "Email marketing automation with AI agents and interactive AMP emails", "starts_at": "See its pricing page", "ph_rating": 4.83, "ph_reviews": 12,
+         "difference": "Known for interactive AMP emails; Brew's focus is on-brand design generated from your website."}
+      ],
+      "more": "Product Hunt also lists Selzy and Customer.io. Brew's site has comparison pages against Mailchimp, Klaviyo, HubSpot, Customer.io, Loops, ActiveCampaign, Brevo, Resend, SendGrid, Constant Contact and Kit."
+    },
+    "reviews": {"count": 3, "rating": 5, "url": "https://www.producthunt.com/products/brew-5/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/brew-5",
+      "quotes": [
+        {"author": "Priya K", "text": "When you push a generated multi-step flow to Klaviyo, does it map over as an editable drag-and-drop template",
+         "reply": "Philip Sørensen: today each message goes into Klaviyo as a production-ready HTML block, a deliberate choice to keep the design pixel-perfect."},
+        {"author": "Yurii Demchenko", "text": "how deep does the brand extraction go? wondering if it picks up fonts and spacing or mainly color and logo.",
+         "reply": "Thomas Park: it extracts logos, images, colours, fonts, links and brand information from any link."},
+        {"author": "Ohans Emmanuel", "text": "Been a happy Brew user for some time now. Incredible team and beautiful UX",
+         "reply": "Thomas Park: the team was building an MCP and expanding its API so any agent can use Brew."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=brew.new&f=live"}
+    },
+    "faq": [
+      {"q": "What is Brew?", "a": "An AI-native email platform. You describe a campaign or automation in plain English and Brew builds the on-brand emails, audience and logic, then sends them from your domain or exports them. It launched on Product Hunt on 26 May 2026."},
+      {"q": "Is Brew free?", "a": "There is a free plan with 500 AI credits and 1,000 email sends a month, with a Brew watermark. Paid plans are Growth at $99 a month and Pro at $249."},
+      {"q": "Can I keep my current email provider?", "a": "Yes. Brew says there is no lock-in: you can send from Brew or export. It integrates with Klaviyo and HubSpot, among others."},
+      {"q": "Does Brew work with AI agents?", "a": "Yes. Its MCP server gives an agent Brew's tools, from building an audience to scheduling a send, and works in Claude, ChatGPT, Cursor and Grok, according to its site."},
+      {"q": "How does Brew learn my brand?", "a": "You paste your website's URL and it extracts logos, images, colours, fonts, links and the tone of your copy. You can add rules for the agent on the brand page, the makers said on Product Hunt."},
+      {"q": "Who makes Brew?", "a": "Brew Emails Inc. Its co-founder and CEO is Philip Sørensen."}
+    ],
+    "sources": [
+      {"label": "Brew official site", "url": "https://brew.new/"},
+      {"label": "Brew pricing", "url": "https://brew.new/pricing"},
+      {"label": "Brew vs Constant Contact", "url": "https://brew.new/compare/brew-vs-constant-contact"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/brew-5"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/brew-5/launches/brew-4"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/brew-5/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/brew-5/alternatives"},
+      {"label": "Loops pricing", "url": "https://loops.so/pricing"},
+      {"label": "MailerLite pricing", "url": "https://www.mailerlite.com/pricing"},
+      {"label": "Mailmodo pricing", "url": "https://www.mailmodo.com/pricing/"}
+    ]
+  }
+}

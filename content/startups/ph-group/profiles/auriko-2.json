@@ -1,0 +1,105 @@
+{
+  "slug": "auriko-2",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/auriko-2",
+  "excerpt": "Auriko is an LLM gateway built by former quant traders that routes each request to the cheapest suitable provider, accounting for prompt caching, latency and reliability. Pricing, alternatives and launch comments.",
+  "content": "<p>Auriko is an AI gateway: one OpenAI-compatible API that sends your requests to models from OpenAI, Anthropic, Google, xAI, DeepSeek and many other providers. What sets it apart is how it picks the route. Its founders describe themselves as former quant traders, and Auriko treats inference providers like trading venues. For each request it builds a list of eligible providers, applies your hard limits (model, capabilities, budget, data policy), then scores the candidates on cost, latency, throughput and success rate. The cost model goes beyond list prices: it accounts for each provider's prompt-caching rules and your own usage pattern, and re-evaluates every request, including mid-session when a cache may have gone cold. If a provider errors or hits a rate limit before responding, Auriko falls back to the next-best route.</p><p>Auriko publishes its own benchmark claiming an average 30% cost reduction against direct providers and other routers; that is the company's own test. It also offers fallback routing, bring-your-own-keys, budget limits by workspace or API key, and an analytics dashboard. Its privacy policy says it is a zero-data-retention proxy that does not read, log or store prompts and responses, and does not train models on your data. The company is Auriko, Inc., a Delaware corporation. Auriko launched on Product Hunt on 9 July 2026 and finished #1 for the day with 387 points and 72 comments.</p><p><em>We have not tested Auriko ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "LLM gateway",
+    "platform": "API (OpenAI-compatible)",
+    "starts_at": "Free plan plus pay-as-you-go model costs; Pro $89/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "LLM gateway that routes each request to the cheapest suitable provider, cache-aware",
+    "maker": {"name": "Michael Yang", "url": "https://www.producthunt.com/@zxy_action1"},
+    "team": [
+      {"name": "Michael Yang", "role": "Founder (Product Hunt profile)", "url": "https://www.producthunt.com/@zxy_action1"},
+      {"name": "Charlie Gao", "role": "Co-founder (Product Hunt profile)", "url": "https://www.producthunt.com/@charlie_gao_"}
+    ],
+    "ph": {"rank": 1, "votes": 387, "comments": 72, "followers": 1274, "launched": "2026-07-09", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/6b9a6992-3259-4577-a458-f8182e87918f.png?auto=format&fit=max&w=1400", "w": 1600, "h": 900,
+       "alt": "Auriko request view showing the chosen provider, cost with and without caching, and a cost comparison against other providers for the same model", "credit": "Image: Auriko via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/ae3f2873-a590-4e4b-ba82-fa9aecdccd69.png?auto=format&fit=max&w=1400", "w": 1600, "h": 900,
+       "alt": "Auriko benchmark charts comparing its cumulative request cost with a routing peer and five model providers", "credit": "Image: Auriko via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/1a860255-a7b5-4306-b74c-51b644cb42db.png?auto=format&fit=max&w=1400", "w": 1600, "h": 900,
+       "alt": "Auriko graphic 'Access 200+ LLM models' with logos of model providers", "credit": "Image: Auriko via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "run AI agents or apps with large, repeated contexts where prompt-caching rules change the real cost",
+        "use open-weight models served by several providers and want the cheapest reliable one per request",
+        "want automatic failover and budget limits across providers behind one API"
+      ],
+      "not_fit": [
+        "need identical output every time from one fixed provider: commenters raised drift between providers serving the same model (Auriko says it lists models truthfully, including quantization, and lets you pin them)",
+        "use only one provider's models, where a router adds less",
+        "need features still in private beta: parts of the site are marked private beta"
+      ]
+    },
+    "pricing": {
+      "intro": "Auriko charges a platform fee plus the model providers' prices with no markup. Prices are in US dollars.",
+      "url": "https://www.auriko.ai/platform/pricing",
+      "plans": [
+        {"name": "Free", "price": "$0 + API costs", "amount": 0, "currency": "USD", "detail": "All models, no provider markup, bring-your-own-keys, cache-aware and fallback routing, routing strategies, 1K platform RPM, 10K BYOK RPM, 5M BYOK monthly cap"},
+        {"name": "Pro", "price": "$89/month + API costs", "amount": 89, "currency": "USD", "detail": "Deterministic routing, multiple API keys and seats, unlimited RPM and BYOK cap, email support; 14-day free trial, no card"},
+        {"name": "Enterprise", "price": "Custom", "detail": "SSO/SAML, custom SLA, dedicated support, invoice billing, custom routing policy"}
+      ],
+      "notes": [
+        "API usage is paid with pre-paid credits in US dollars, according to the terms.",
+        "Model providers' own prices pass through with 0% markup on every plan."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "LiteLLM", "url": "https://github.com/BerriAI/litellm", "what": "Open-source AI gateway and SDK for calling 100+ LLM APIs with cost tracking, load balancing and logging", "starts_at": "Free, open source",
+         "ph_rating": 5, "ph_reviews": 24,
+         "difference": "You host and configure it yourself. Auriko is a hosted service whose pitch is cost-aware routing that accounts for caching."},
+        {"name": "Eden AI", "url": "https://www.edenai.co/", "what": "One API to route between AI models for chat, OCR, speech, translation and more", "starts_at": "See its pricing page",
+         "ph_rating": 4.95, "ph_reviews": 21,
+         "difference": "Covers many AI task types beyond LLMs. Auriko focuses on LLM inference cost and routing."},
+        {"name": "Mistral AI", "url": "https://mistral.ai/", "what": "Model maker offering its own open and commercial models", "starts_at": "See its pricing page",
+         "ph_rating": 5, "ph_reviews": 42,
+         "difference": "A model provider rather than a router; Auriko could route to models like these."}
+      ],
+      "more": "Product Hunt also lists Respan and Merlin Unified API as alternatives."
+    },
+    "reviews": {"count": 3, "rating": 4.67, "url": "https://www.producthunt.com/products/auriko/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/auriko",
+      "quotes": [
+        {"author": "Gal Dayan", "text": "prompt caching usually rewards staying on the same provider for a session",
+         "reply": "Michael Yang: routing is re-evaluated on every request using the expected cost of the whole session, so cache state is taken into account."},
+        {"author": "Hazy", "text": "When the cheapest provider starts erroring or its latency spikes, does Auriko fail over inside the same request?",
+         "reply": "Michael Yang: yes, for retryable failures before a usable response it falls back to the next eligible path."},
+        {"author": "Ridhwik Vinod", "text": "Saving 40% on inference means nothing if my customer-facing outputs get worse",
+         "reply": "Michael Yang: you can pin the exact model, including quantization, and routing stays within those limits."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=auriko.ai&f=live"}
+    },
+    "faq": [
+      {"q": "What is Auriko?", "a": "An AI gateway with one OpenAI-compatible API that routes each LLM request to the provider it expects to be cheapest while meeting your quality, latency and policy limits. It launched on Product Hunt on 9 July 2026."},
+      {"q": "How does it save money?", "a": "It models each provider's prices, prompt-caching rules and your usage pattern, and scores routes per request. Auriko's own benchmark reports an average 30% saving; that is the company's claim."},
+      {"q": "How much does Auriko cost?", "a": "The Free plan costs nothing beyond model usage, which passes through at providers' prices with no markup. Pro is $89 a month with a 14-day free trial; Enterprise is custom."},
+      {"q": "Does Auriko store my prompts?", "a": "Its privacy policy says it is a zero-data-retention proxy: prompts and responses are not read, logged or stored, and routing uses metadata only."},
+      {"q": "Can I use my own API keys?", "a": "Yes. Auriko supports bring-your-own-keys, its platform keys, or both."},
+      {"q": "What happens if a provider fails?", "a": "For retryable errors such as rate limits, Auriko falls back to the next-best eligible route, according to its founder."}
+    ],
+    "sources": [
+      {"label": "Auriko official site", "url": "https://www.auriko.ai/"},
+      {"label": "Auriko pricing", "url": "https://www.auriko.ai/platform/pricing"},
+      {"label": "Auriko cost benchmark report", "url": "https://www.auriko.ai/reports/llm-cost-arbitrage"},
+      {"label": "About Auriko", "url": "https://www.auriko.ai/about"},
+      {"label": "Auriko privacy policy", "url": "https://www.auriko.ai/privacy"},
+      {"label": "Auriko terms", "url": "https://www.auriko.ai/terms"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/auriko-2"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/auriko"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/auriko/alternatives"},
+      {"label": "LiteLLM on GitHub", "url": "https://github.com/BerriAI/litellm"},
+      {"label": "Eden AI", "url": "https://www.edenai.co/"},
+      {"label": "Mistral AI", "url": "https://mistral.ai/"}
+    ]
+  }
+}

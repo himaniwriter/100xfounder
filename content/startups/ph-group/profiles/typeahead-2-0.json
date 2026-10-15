@@ -1,0 +1,225 @@
+{
+  "slug": "typeahead-2-0",
+  "ph_url": "https://www.producthunt.com/posts/typeahead-2-0",
+  "existing_listing_slug": null,
+  "website": "https://typeahead.ai/",
+  "excerpt": "Typeahead is AI autocomplete for every text field on a Mac, run by a local model so writing stays on your device. $96/year or $149 lifetime.",
+  "content": "<p>Typeahead suggests the rest of what you are typing in almost any Mac app, as grey text at your cursor. Press Tab to accept the whole suggestion, the right arrow for one word, or Esc to dismiss it. It works in Mail, Slack, Notion, Messages, Notes, Word, Obsidian and browsers, and is switched off in password fields, password managers and finance apps. You can set a writing style per app, such as professional in Mail and friendly in Slack, or describe your own in plain English, and it learns phrases you use often. You can review or delete what it has learned.</p><p>Suggestions come from a model that runs on your Mac: Gemma or Qwen, downloaded once, or your own GGUF model file. The company says your writing never leaves the Mac and the app has no telemetry; it reads nearby text through macOS Accessibility, needs no account, and works offline after setup. It needs macOS 14 or later, 8 GB of memory and about 4 GB of free space.</p><p>Typeahead is made by Noats Inc., whose terms are governed by California law. It costs $96 a year or $10 a month after a 14-day trial, or $149 once for a lifetime licence.</p><p>Typeahead launched on Product Hunt on 6 July 2026 and finished #2 for the day, with 421 upvotes and 74 comments. It has 6 Product Hunt reviews averaging 4.83 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Typeahead ourselves. This page brings together its official site, pricing page, terms and privacy policy, its Product Hunt listing and the official pages of comparable apps, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Writing",
+    "platform": "Mac app",
+    "os": "macOS 14 or later, 8 GB of memory, about 4 GB free space",
+    "starts_at": "$96/year, $10/month or $149 lifetime; 14-day trial",
+    "schema_category": "ProductivityApplication",
+    "summary_short": "AI autocomplete for every Mac app, run on a local model",
+    "use_cases": [
+      "Finishing emails and chat replies faster in any Mac app",
+      "Keeping a different tone per app, such as formal in Mail and casual in Slack",
+      "Reusing phrases you type often without a snippet tool",
+      "Writing with AI help offline",
+      "Using AI suggestions where cloud tools are not allowed for privacy reasons"
+    ],
+    "audience": {
+      "fit": [
+        "type a lot on a Mac across many apps",
+        "want AI help that keeps your text on your own machine",
+        "prefer paying once over a subscription"
+      ],
+      "not_fit": [
+        "use Windows, Linux, iPhone or iPad: it is a Mac app only",
+        "have a Mac with less than 8 GB of memory or macOS older than 14",
+        "want AI to draft whole messages for you: it completes what you are already writing"
+      ]
+    },
+    "pricing": {
+      "intro": "Prices from Typeahead's own pricing page, in US dollars (it also shows GBP, EUR, CAD and AUD).",
+      "url": "https://typeahead.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Yearly",
+          "price": "$96/year",
+          "amount": 96,
+          "currency": "USD",
+          "detail": "14-day free trial with a card; up to 3 Macs"
+        },
+        {
+          "name": "Monthly",
+          "price": "$10/month",
+          "amount": 10,
+          "currency": "USD",
+          "detail": "14-day free trial with a card; up to 3 Macs"
+        },
+        {
+          "name": "Lifetime",
+          "price": "$149 once",
+          "amount": 149,
+          "currency": "USD",
+          "detail": "All future updates; all your Macs"
+        }
+      ],
+      "notes": [
+        "A 30-day money-back guarantee covers the first payment on any plan, requested by email; later renewals are not covered (terms).",
+        "Cancelling during the trial means you are not charged."
+      ]
+    },
+    "alternatives": {
+      "intro": "Another local Mac autocomplete app, the suggestions built into macOS, and the best-known AI writing assistant. Prices come from each product's own pages, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "Cotypist",
+          "url": "https://cotypist.app/",
+          "what": "Mac app that predicts your next words in most apps, processed locally",
+          "starts_at": "Free for 100 completed words a day; see its site for Plus and Pro",
+          "difference": "Very similar idea with a free daily allowance; it needs an Apple silicon Mac."
+        },
+        {
+          "name": "macOS predictive text",
+          "url": "https://support.apple.com/guide/mac-help/",
+          "what": "Inline word and phrase suggestions built into macOS",
+          "starts_at": "Included with macOS",
+          "difference": "Free and built in, but completes words and short phrases rather than whole sentences in your style."
+        },
+        {
+          "name": "Grammarly",
+          "url": "https://www.grammarly.com/",
+          "what": "AI writing assistant that checks and rewrites text across apps",
+          "starts_at": "Free plan; see its pricing page for paid plans",
+          "difference": "Checks and rewrites text using cloud AI rather than suggesting the next words locally as you type."
+        }
+      ]
+    },
+    "reviews": {
+      "count": 6,
+      "rating": 4.83,
+      "url": "https://www.producthunt.com/products/typeahead/reviews",
+      "as_of": "2026-10-14"
+    },
+    "pros": [
+      "Works in nearly every Mac app with a text field",
+      "Runs on a local model; the company says your writing stays on your Mac",
+      "No account and works offline after setup",
+      "One-time lifetime licence available",
+      "Off in password managers and finance apps"
+    ],
+    "cons": [
+      "Mac only",
+      "Needs 8 GB of memory and about 4 GB of disk space for the model",
+      "The free trial needs a card",
+      "Its website's separate AI writing tools send text to Google's Gemini API (privacy policy)"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/typeahead",
+      "x": {
+        "profile_url": "https://x.com/TypeaheadAI",
+        "none": "We found no posts about Typeahead on X yet, other than its own account.",
+        "search_url": "https://x.com/search?q=typeahead.ai&f=live",
+        "related": [
+          {
+            "author": "Peter Steinberger",
+            "url": "https://x.com/steipete/status/2057040636449116222",
+            "note": "recommends Cotypist, a rival Mac autocomplete app"
+          }
+        ]
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Typeahead?",
+        "a": "A Mac app that shows AI suggestions for the rest of your sentence in almost any text field; press Tab to accept."
+      },
+      {
+        "q": "Does my writing leave my Mac?",
+        "a": "The company says no: suggestions come from a local model, and the app has no telemetry. Network use is for licence checks, updates and model downloads. Its website's separate AI tools do send text to Google's Gemini API."
+      },
+      {
+        "q": "How much does Typeahead cost?",
+        "a": "$96 a year or $10 a month after a 14-day free trial, or $149 once for a lifetime licence. Subscriptions cover up to 3 Macs; lifetime covers all your Macs."
+      },
+      {
+        "q": "What Mac do I need?",
+        "a": "macOS 14 or later, 8 GB of memory and about 4 GB of free space."
+      },
+      {
+        "q": "How is it different from Grammarly or ChatGPT?",
+        "a": "Those check or draft text separately; Typeahead suggests the next words in place as you type, in your own style."
+      },
+      {
+        "q": "Can I get a refund?",
+        "a": "Yes, within 30 days of your first payment on any plan, by emailing the company. Renewals are not covered."
+      },
+      {
+        "q": "What are the alternatives to Typeahead?",
+        "a": "Cotypist is a similar local Mac autocomplete app with a free daily allowance; macOS has basic predictive text built in; Grammarly is a cloud writing assistant."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Typeahead official site",
+        "url": "https://typeahead.ai/"
+      },
+      {
+        "label": "Typeahead pricing",
+        "url": "https://typeahead.ai/pricing"
+      },
+      {
+        "label": "Typeahead terms",
+        "url": "https://typeahead.ai/terms"
+      },
+      {
+        "label": "Typeahead privacy policy",
+        "url": "https://typeahead.ai/privacy"
+      },
+      {
+        "label": "Product Hunt: Typeahead 2.0 launch",
+        "url": "https://www.producthunt.com/posts/typeahead-2-0"
+      },
+      {
+        "label": "Product Hunt reviews",
+        "url": "https://www.producthunt.com/products/typeahead/reviews"
+      },
+      {
+        "label": "Cotypist",
+        "url": "https://cotypist.app/"
+      },
+      {
+        "label": "Grammarly plans",
+        "url": "https://www.grammarly.com/plans"
+      }
+    ],
+    "ph": {
+      "rank": 2,
+      "votes": 421,
+      "comments": 74,
+      "followers": 942,
+      "launched": "2026-07-06",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Sam Asante",
+        "role": "Entrepreneur - Investor",
+        "url": "https://www.producthunt.com/@samasante"
+      },
+      {
+        "name": "Hiten Shah",
+        "role": "CEO of Crazy Egg (est. 2005)",
+        "url": "https://www.producthunt.com/@hnshah"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/414e5383-9310-460a-b2c5-ed1e6ab7d25a.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Typeahead on Product Hunt",
+        "alt": "Typeahead graphic 'AI autocomplete for everything you write on your Mac' showing an email sentence being finished, with the note that it is 100% local"
+      },
+      {
+        "url": "https://ph-files.imgix.net/5d9d4175-4ccf-47ee-8fb7-44cb350f708a.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Typeahead on Product Hunt",
+        "alt": "Typeahead settings 'Write in your style. In every app.' with per-app writing styles such as friendly, professional, witty and concise"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes."
+}

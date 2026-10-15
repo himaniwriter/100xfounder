@@ -1,0 +1,130 @@
+{
+ "post": {
+  "id": 1746,
+  "date": "2026-10-04T01:17:47",
+  "date_gmt": "2026-10-03T19:47:47",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/capybara-court/",
+   "raw": "https://100xfounder.com/startup/capybara-court/"
+  },
+  "modified": "2026-10-04T01:17:47",
+  "modified_gmt": "2026-10-03T19:47:47",
+  "password": "",
+  "slug": "capybara-court",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/capybara-court/",
+  "title": {
+   "raw": "Capybara Court",
+   "rendered": "Capybara Court"
+  },
+  "content": {
+   "raw": "<p>Tiny disputes, gently settled by a capybara judge</p>\n",
+   "rendered": "<p>Tiny disputes, gently settled by a capybara judge</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "Tiny disputes, gently settled by a capybara judge",
+   "rendered": "<p>Tiny disputes, gently settled by a capybara judge</p>\n",
+   "protected": false
+  },
+  "featured_media": 0,
+  "template": "",
+  "xf_industry": [],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "capybara-court",
+  "class_list": [
+   "post-1746",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "hentry",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1746",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=1746"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=1746"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=1746"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1746"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1746"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1746"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1746"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1746"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1746"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

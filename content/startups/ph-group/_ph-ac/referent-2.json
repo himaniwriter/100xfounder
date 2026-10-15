@@ -1,0 +1,379 @@
+{
+ "input": "https://www.producthunt.com/posts/referent-2",
+ "final_url": "https://www.producthunt.com/products/referent?launch=referent-2",
+ "launch": {
+  "slug": "referent-2",
+  "name": "Referent",
+  "tagline": "The AI-native OS for modern law firms",
+  "featuredAt": "2026-08-30T00:01:00-07:00",
+  "dailyRank": "6",
+  "weeklyRank": "36",
+  "points": 159,
+  "commentsCount": 42,
+  "pricingType": "free_options",
+  "description": "Referent is AI-native legal practice management software. Legal AI agents handle the operational work while lawyers focus on clients and growth.",
+  "makers": [
+   {
+    "name": "George",
+    "username": "gproduct",
+    "headline": ""
+   },
+   {
+    "name": "Karol",
+    "username": "lptnbrg",
+    "headline": "Lead developer"
+   },
+   {
+    "name": "Alexandr Gulid",
+    "username": "alexgulid",
+    "headline": "Co-founder of the AI Lawyer project."
+   },
+   {
+    "name": "Nikita Shestakov",
+    "username": "nikita_shestakov1",
+    "headline": "CTO, building cutting edge AI tools "
+   },
+   {
+    "name": "Seva Rybakov",
+    "username": "seva_ry",
+    "headline": "Rock Star AI tech lead"
+   },
+   {
+    "name": "Vladyslav Kravchuk",
+    "username": "vlsv",
+    "headline": ""
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "ab9c73d8-4f3d-485b-b259-78ff0c4bea8e.jpeg",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "403a25cd-b2de-45b5-8b63-5303ba8668d4.jpeg",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "4cff537d-f81f-4d97-a63d-7b5c81cc4f19.jpeg",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "05e662be-7a39-47f0-a638-78bc154d03c0.jpeg",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "7ab3d111-8fc6-4576-bd83-874b5cee2ef0.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=VzfIO3bXjNI"
+   }
+  ],
+  "links": [
+   "referent.law",
+   "apps.apple.com",
+   "play.google.com",
+   "twitter.com",
+   "x.com",
+   "www.linkedin.com"
+  ],
+  "badges": []
+ },
+ "product": {
+  "name": "Referent",
+  "slug": "referent",
+  "tagline": "Legal AI Agents Platform for Lawyers and Law Firms",
+  "description": "Referent is AI-native legal practice management software for lawyers and law firms. It combines Legal AI, Legal CRM, client intake, matter management, documents, deadlines, email workflows, follow-ups, and billing prep to help turn any law firm into an AI-native law firm.",
+  "websiteUrl": "https://referent.law",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 677,
+  "twitterUrl": "https://twitter.com/referentlaw",
+  "linkedinUrl": "",
+  "instagramUrl": "",
+  "githubUrl": "",
+  "iosUrl": "https://www.producthunt.com/r/B7KIFJTM5MNYHT",
+  "androidUrl": "https://www.producthunt.com/r/PZ4BTDPQ7DAWTN",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5814877",
+   "depth": 0,
+   "author": "George",
+   "username": "gproduct",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hi Product Hunt, George here, founder of Referent. Almost four years ago, we launched AI Lawyer. Today it ranks #1 organically on Google for \"AI lawyer\" and has become the leading legal AI product for consumers. Tens of thousands of lawyers have used it, and their feedback kept pointing to the same gap. Legal tech had plenty of research and drafting tools. Legal CRM and legal practice management software were still stuck in the pre-AI era. So we built Referent, an AI-native legal CRM and legal practice management platform for solo and small law firms. We recently opened 20 spots for a closed beta. We received more than 450 applications in less than three weeks. That made the decision easy: we opened the beta to everyone. Lawyers and AI builders, we'd love your feedback. Try Referent: https://app.referent.law/signup Thanks to Rohan for hunting us and to the Product Hunt community for taking a look. Our team has worked hard to get Referent into yours hands."
+  },
+  {
+   "id": "5825063",
+   "depth": 1,
+   "author": "Rohan Chaubey",
+   "username": "rohanrecommends",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "hunter"
+   ],
+   "text": "@gproduct &nbsp;Many congrats, George and team! :) How I met the maker George reached out to me a week ago, and we had some initial conversations about the product and its positioning. Right away, I could tell he was building something thoughtful and practical. What does the product do Referent is an end-to-end platform for running a law firm. It goes beyond being just an AI lawyer by helping with intake, matter management, documents, deadlines, email workflows, follow-ups, CRM, and billing prep. Why I endorse it I’ve seen a lot of tools built for lawyers, but most solve only one part of the workflow. Referent stood out because it feels like a complete operating system for a law firm, and that full-stack approach is why I’m happy to endorse it. :)"
+  },
+  {
+   "id": "5825137",
+   "depth": 2,
+   "author": "George",
+   "username": "gproduct",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@rohanrecommends &nbsp;Thank you, Rohan. \"Operating system for a law firm\" is exactly it, and we Grateful you hunted us today!"
+  },
+  {
+   "id": "5831920",
+   "depth": 1,
+   "author": "Saksham Shukla",
+   "username": "saksham_shukla28",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "@gproduct &nbsp;The jump from an AI research tool to an AI-native practice management system makes a lot of sense. Curious about the “matter management” side, when something changes in an email or client conversation, can Referent automatically update the matter, deadlines or follow-ups, or does the lawyer still review and confirm those changes?"
+  },
+  {
+   "id": "5824783",
+   "depth": 0,
+   "author": "Tanjum 🔥 🚀🚀",
+   "username": "tanjum",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "We use Attio, and everyone's emails are integrated into the CRM. I can't imagine how lawyers, with their professional distortions, can give AI permission to read emails 💀 In any case, good luck with the PH, the product looks great, lawyers should check it out."
+  },
+  {
+   "id": "5825001",
+   "depth": 1,
+   "author": "George",
+   "username": "gproduct",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tanjum &nbsp;Fair point. Lawyers are even more careful than you think. That's why nothing goes out without the lawyer's OK. Thanks!"
+  },
+  {
+   "id": "5825009",
+   "depth": 1,
+   "author": "Alexandr Gulid",
+   "username": "alexgulid",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tanjum &nbsp;Most of them react the same way on the first call. Two things usually settle it: nothing goes to a client without the lawyer approving it, and every action lands in an audit log. Gmail and Outlook are both verified with Google and Microsoft, workspaces are isolated, and we don't train on customer data. Plenty of firms still start with a separate inbox for inquiries and widen it later. Thanks for the good luck."
+  },
+  {
+   "id": "5824671",
+   "depth": 0,
+   "author": "Amirul",
+   "username": "1mirul",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Sounds promising. Do you have an affiliate program? PM me, we have a huge network of legal contacts"
+  },
+  {
+   "id": "5824757",
+   "depth": 1,
+   "author": "Alexandr Gulid",
+   "username": "alexgulid",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@1mirul &nbsp;Thanks, I sent the details via DM. The program is live: referent.law/affiliate-program"
+  },
+  {
+   "id": "5824988",
+   "depth": 1,
+   "author": "George",
+   "username": "gproduct",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@1mirul &nbsp;The calculator on the program page shows the math. Looking forward to seeing your network there."
+  },
+  {
+   "id": "5824712",
+   "depth": 0,
+   "author": "Angela Anna",
+   "username": "angelaaa",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Nice alternative to Legora, especially considering the price"
+  },
+  {
+   "id": "5824773",
+   "depth": 1,
+   "author": "Alexandr Gulid",
+   "username": "alexgulid",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@angelaaa &nbsp;Thanks, we're a different layer than Legora. They do research and drafting. We run the operations around that work: intake, matters, deadline tracking, follow-ups."
+  },
+  {
+   "id": "5824984",
+   "depth": 1,
+   "author": "George",
+   "username": "gproduct",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@angelaaa &nbsp;Adding to what Alex said: we price for solo and small firms, not for BigLaw budgets. The average lawyer bills 2.9 hours of an 8-hour day, the rest is admin. That's the part we sell back."
+  },
+  {
+   "id": "5824789",
+   "depth": 0,
+   "author": "Darly Selby",
+   "username": "darly_selby",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Could firms also track workflows save the most staff time after adoption?"
+  },
+  {
+   "id": "5824837",
+   "depth": 1,
+   "author": "Alexandr Gulid",
+   "username": "alexgulid",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@darly_selby &nbsp;Not in terms of numbers. All agent actions are recorded in the activity log, so you can see what was done, but we don’t convert that into hours saved. However, I should add that before working on the project, we conducted research, and the answer was the same across the board: case intake, email management, data entry, and meeting deadlines."
+  },
+  {
+   "id": "5824993",
+   "depth": 1,
+   "author": "George",
+   "username": "gproduct",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@darly_selby &nbsp;I'd add this: firms in our beta didn't count saved hours. They just noticed free evenings. Intake used to be a 40-minute call. Now it's a link you send."
+  },
+  {
+   "id": "5824885",
+   "depth": 0,
+   "author": "Prince Kumar ",
+   "username": "prince__kumar",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "The biggest question for me would be privacy and permissions especially when multiple people work on sensitive matters. How granular are the access control between lawyers staff and individual matters?"
+  },
+  {
+   "id": "5825016",
+   "depth": 1,
+   "author": "George",
+   "username": "gproduct",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@prince__kumar &nbsp;Good question. Access works by roles, and agents only see what their user can see. Every action is logged with a name on it. Per-matter access is coming, it's the top ask from bigger firms. Happy to show it on a demo."
+  },
+  {
+   "id": "5825148",
+   "depth": 0,
+   "author": "Glenn Ryan",
+   "username": "glenn_ryan3",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I thought it was another AI legal drafting/researching, but this is the first time I've seen ai-native legal practice management. Cool, good luck on PH."
+  },
+  {
+   "id": "5825244",
+   "depth": 1,
+   "author": "Alexandr Gulid",
+   "username": "alexgulid",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@glenn_ryan3 &nbsp;That's the gap. Everyone went deep on research and drafting, nobody touched the software that actually runs the firm. Thanks, appreciate it."
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "input": "https://www.producthunt.com/posts/unabyss",
+ "final_url": "https://www.producthunt.com/products/unabyss?launch=unabyss",
+ "launch": {
+  "slug": "unabyss",
+  "featuredAt": "2026-05-25T00:01:00-07:00",
+  "dailyRank": "1",
+  "points": 705,
+  "commentsCount": 145,
+  "source": "launches page (no gallery/comments)",
+  "makers": [
+   {
+    "name": "Philip Kubinski",
+    "username": "philip_kubinski",
+    "headline": "co-founder @ Unabyss"
+   },
+   {
+    "name": "Stanisław Morawski",
+    "username": "malpunek",
+    "headline": "CTO @ Unabyss | Universal Context for AI"
+   },
+   {
+    "name": "Marcin Uchacz",
+    "username": "marcin_uchacz1",
+    "headline": "CEO @ unabyss.com"
+   },
+   {
+    "name": "Dominik Bartosik",
+    "username": "dominik_bartosik",
+    "headline": "Making AI remember · CPO · Unabyss.com"
+   }
+  ]
+ },
+ "product": {
+  "name": "Unabyss",
+  "slug": "unabyss",
+  "tagline": "MCP-native self-updating context layer for your AI",
+  "description": "Set it up once and never re-explain yourself to AI again. Connect the apps you use daily - Unabyss will extract, structure, and update your context automatically. Share it with any AI tool via MCP, with granular control over what each tool can see.",
+  "websiteUrl": "https://unabyss.com",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 2362,
+  "linkedinUrl": "https://www.linkedin.com/company/unabyss/",
+  "postsCount": 2,
+  "screenshots": [
+   "https://ph-files.imgix.net/fd1493ae-aeef-440f-8346-1a286c1b2718.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/1a4c0ae3-e0b8-4232-a2f5-061ebfbe6046.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/b304811b-a7dd-49b9-953b-0558487f834e.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/5664b20c-38fd-41d9-abf3-a3eb2331fa5d.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/1dcf9ff6-0763-46a6-ade2-5d0a143816a7.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

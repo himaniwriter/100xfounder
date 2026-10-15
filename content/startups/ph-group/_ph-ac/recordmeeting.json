@@ -1,0 +1,270 @@
+{
+ "input": "https://www.producthunt.com/posts/recordmeeting",
+ "final_url": "https://www.producthunt.com/products/recordmeeting?launch=recordmeeting",
+ "launch": {
+  "slug": "recordmeeting",
+  "name": "RecordMeeting",
+  "tagline": "Record and transcribe any calls without announcement",
+  "featuredAt": "2026-07-15T00:01:00-07:00",
+  "dailyRank": "9",
+  "weeklyRank": "35",
+  "points": 155,
+  "commentsCount": 28,
+  "pricingType": "free",
+  "description": "Records and transcribes your calls privately 🥷 No bots joining and No recording announcements. Get automatic transcripts, summaries, searchable notes, key points, and a shareable team link. Works with Google Meet, Zoom, WhatsApp, Microsoft Teams, Webex, Telegram, and Discord. Try it free today.",
+  "makers": [
+   {
+    "name": "Nathan",
+    "username": "nthglsn",
+    "headline": ""
+   },
+   {
+    "name": "Mathias GILSON",
+    "username": "mathias_gilson",
+    "headline": "Working on =>"
+   }
+  ],
+  "hunter": "Nathan",
+  "media": [
+   {
+    "uuid": "e2ee5f1a-f66d-4ddc-b714-4dd6b4596d1a.png",
+    "type": "image",
+    "w": 1280,
+    "h": 800,
+    "video": null
+   },
+   {
+    "uuid": "ead2ff7d-a04f-41dc-8d4a-37d61791c5e9.png",
+    "type": "image",
+    "w": 1280,
+    "h": 800,
+    "video": null
+   },
+   {
+    "uuid": "ab31f590-5725-493e-a5c0-3d99c9d44e78.png",
+    "type": "image",
+    "w": 1280,
+    "h": 800,
+    "video": null
+   },
+   {
+    "uuid": "206d3443-89f3-403f-be6e-9a99f382674c.png",
+    "type": "image",
+    "w": 1280,
+    "h": 800,
+    "video": null
+   },
+   {
+    "uuid": "59312fa6-25e3-49e4-8657-e750dd38ceee.png",
+    "type": "image",
+    "w": 1280,
+    "h": 800,
+    "video": null
+   }
+  ],
+  "links": [
+   "recordmeeting.com",
+   "workspace.google.com",
+   "chromewebstore.google.com"
+  ],
+  "badges": []
+ },
+ "product": {
+  "name": "RecordMeeting",
+  "slug": "recordmeeting",
+  "tagline": "Record and transcribe any calls without announcement",
+  "description": "Records and transcribes your calls privately 🥷 No bots joining and No recording announcements. Get automatic transcripts, summaries, searchable notes, key points, and a shareable team link. Works with Google Meet, Zoom, WhatsApp, Microsoft Teams, Webex, Telegram, and Discord. Try it free today.",
+  "websiteUrl": "https://recordmeeting.com",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 209,
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5466081",
+   "depth": 0,
+   "author": "Nathan",
+   "username": "nthglsn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt! Nathan here, founder of Qualtir. We built Record Meeting because most AI notetakers still send a bot into your call. That awkward \"Notetaker has joined\" moment kills the vibe on sales calls, interviews, and internal meetings. Record Meeting works differently. One click inside Google Meet. No bot joins the room. Full video, transcript, and AI summary after the call. Free tier gives you 20 recordings to try on real meetings. I'd love your feedback. What meeting would you record first? Sales, hiring, or internal sync?"
+  },
+  {
+   "id": "5590616",
+   "depth": 1,
+   "author": "Shekhar Upadhaya",
+   "username": "shekhar_upadhaya_1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@nthglsn &nbsp;How is this one different from the other such meeting recorders out there?"
+  },
+  {
+   "id": "5590894",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@nthglsn &nbsp;If you tried Record Meeting today, which single feature would make the biggest difference to your workflow: flawless speaker-separated transcripts, concise AI action-item summaries, or searchable video clips tied to the transcript; and why that one for your use case?"
+  },
+  {
+   "id": "5584437",
+   "depth": 0,
+   "author": "Brandon TK Beesman",
+   "username": "thys_beesman",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "How do you handle privacy and consent, especially since recordings happen without a visible bot?"
+  },
+  {
+   "id": "5588457",
+   "depth": 1,
+   "author": "Nathan",
+   "username": "nthglsn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@thys_beesman &nbsp;The recording is local to your machine so we can't ask for other participants consent, it's up to you to tell them."
+  },
+  {
+   "id": "5590311",
+   "depth": 1,
+   "author": "Samir Al-Battran",
+   "username": "albattran",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@thys_beesman &nbsp;I was going to say the same thing. It is illegal in many jurisdictions to record without consent (all party consent is required)"
+  },
+  {
+   "id": "5591240",
+   "depth": 1,
+   "author": "Yaroslav Stelmakh",
+   "username": "yaroslav_stelmakh",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@thys_beesman This is the right area to be explicit about IMO. A lightweight participant-facing consent/reminder option could help teams use it in stricter jurisdictions without losing the local/private workflow. Curious if you're thinking about policy controls per workspace?"
+  },
+  {
+   "id": "5588033",
+   "depth": 0,
+   "author": "Tülay Negiş",
+   "username": "negistulay10984",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "A custom dictionary for product names and team jargon would be huge, since auto transcription often mangles things like internal project names or client spellings and then the search and summary features carry those mistakes forward."
+  },
+  {
+   "id": "5588463",
+   "depth": 1,
+   "author": "Nathan",
+   "username": "nthglsn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@negistulay10984 &nbsp;Yes 100% It's coming soon in the next release!"
+  },
+  {
+   "id": "5588339",
+   "depth": 0,
+   "author": "Pablo Martín",
+   "username": "pablo_vegas",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Is there a time limit for meeting recordings?"
+  },
+  {
+   "id": "5588466",
+   "depth": 1,
+   "author": "Nathan",
+   "username": "nthglsn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@pablo_vegas &nbsp;1h max on the free plan and up to 6h on the paid plans"
+  },
+  {
+   "id": "5591549",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the consent thread here is the obvious question everyone's already asking, so I'll skip that. the part I'm more curious about is reliability, since this is local-only capture with no bot and presumably no cloud fallback. if my laptop sleeps, the meeting app crashes, or I close the lid halfway through a call, what happens to that recording, is there any partial-save/resume, or do I just lose the whole thing and have to explain to a client why there's no notes from the call I told them I was recording"
+  },
+  {
+   "id": "5591962",
+   "depth": 0,
+   "author": "Omri Ben-Shoham",
+   "username": "omri_ben_shoham1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the \"without announcement\" framing in the tagline is doing a lot of work here. a bunch of US states and plenty of countries require two-party consent to record a call, so silently recording someone isn't just a UX choice, it can be a legal problem depending on where the other person is sitting. does the app put any of that responsibility back on the user, like a warning when you start a recording, or is it fully hands-off and you're expected to already know your local laws"
+  },
+  {
+   "id": "5631089",
+   "depth": 0,
+   "author": "Clemente Lopez",
+   "username": "clemente_lopez1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Nathan, the bot-free capture is the strong half of this pitch, and \"without announcement\" is the risky half. Consent rules vary by state (two-party consent in California, for example), and in my field, healthcare, recording a call without notice can end a career. The product itself does not force misuse, but the framing invites it. I would lead with the clean capture and transcription quality, and make consent handling a visible feature instead of a workaround. Is there a mode that announces the recording or captures consent automatically? That single option would make this usable for regulated teams."
+  }
+ ]
+}

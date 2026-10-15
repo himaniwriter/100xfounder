@@ -1,0 +1,281 @@
+{
+ "input": "https://www.producthunt.com/posts/proxy-tester-by-scrapeops",
+ "final_url": "https://www.producthunt.com/products/proxy-benchmark-by-scrapeops?launch=proxy-tester-by-scrapeops",
+ "launch": {
+  "slug": "proxy-tester-by-scrapeops",
+  "name": "Proxy Tester by ScrapeOps",
+  "tagline": "Benchmark proxies for reliable, target-specific scraping",
+  "featuredAt": "2026-08-09T00:01:00-07:00",
+  "dailyRank": "4",
+  "weeklyRank": "33",
+  "points": 210,
+  "commentsCount": 12,
+  "pricingType": "free",
+  "description": "ScrapeOps Proxy Tester is a technical benchmarking platform for developers, scraping teams, data providers, SaaS companies, and AI agents selecting proxy infrastructure. Submit a target URL to test 20+ residential, datacenter, mobile, Proxy API, and unblocker configurations. It measures real-world success rate, latency, reliability, bandwidth, and estimated cost, then generates a use-case-specific ranking instead of relying on generic provider claims.",
+  "makers": [
+   {
+    "name": "Ian Kerins",
+    "username": "iankerins",
+    "headline": "Bootstrapping @ScrapeOps\n"
+   },
+   {
+    "name": "Joe Kearney",
+    "username": "joe_kearney",
+    "headline": "Building the future of data collection"
+   }
+  ],
+  "hunter": "Hiten Shah",
+  "media": [
+   {
+    "uuid": "0f9a383d-e951-4335-8a94-557bf2070e19.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "72bbfe5d-a89b-4052-b78b-79d0f5ab9551.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "b41a112a-94a6-4989-b05b-f83c9b11f5fd.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "7897a666-9f25-4bd5-a53a-b34e912a62f8.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "19fb7c67-3f24-4d4b-9059-2c1dadbec6ba.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "bae54832-41c4-4196-a95e-696f36192279.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "c3e4a21b-2a1b-4c3a-a391-f96847229e61.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "51660be1-d2e0-44f7-87cb-d90afee02e10.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "9f6287c2-f768-4dae-98de-243772792c87.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "f4154858-aa0e-4cde-ae1f-b1d0142881f6.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/GR67AIWkPn0"
+   }
+  ],
+  "links": [
+   "scrapeops.io",
+   "twitter.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    4
+   ]
+  ]
+ },
+ "product": {
+  "name": "Proxy Tester by ScrapeOps",
+  "slug": "proxy-benchmark-by-scrapeops",
+  "tagline": "Benchmark proxies for reliable, target-specific scraping",
+  "description": "ScrapeOps Proxy Tester is a technical benchmarking platform for developers, scraping teams, data providers, SaaS companies, and AI agents selecting proxy infrastructure. Submit a target URL to test 20+ residential, datacenter, mobile, Proxy API, and unblocker configurations. It measures real-world success rate, latency, reliability, bandwidth, and estimated cost, then generates a use-case-specific ranking instead of relying on generic provider claims.",
+  "websiteUrl": "https://scrapeops.io/proxy-providers/tester/",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 365,
+  "twitterUrl": "https://twitter.com/scrapeops",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5433934",
+   "depth": 0,
+   "author": "Ian Kerins",
+   "username": "iankerins",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 I'm Ian, one of the people behind ScrapeOps . Over the years, we've spoken with hundreds of developers building web scraping pipelines, and one question kept coming up: \"Which proxy provider should I actually use for this website?\" The frustrating part is that there isn't a universal answer. A provider that performs great on one target can perform poorly on another. Most teams end up buying credits, running manual tests, comparing logs, and spending days figuring it out. So we built Proxy Tester . Instead of relying on generic rankings or vendor claims, Proxy Tester lets you submit your target URL and benchmark multiple proxy providers against that specific target. Every benchmark compares: ✅ Success rate ⚡ Latency 💰 Estimated cost 📊 Overall value score ...then generates a custom report showing which provider performed best. Our goal was simple: Help developers make data-backed proxy decisions before spending money on proxy plans that may not work for their use case. Today, Proxy Tester: Benchmarks 20+ leading Proxy API, Residential, Datacenter and Unblocker proxy providers side by side Tests providers against your exact target URL Generates a free custom benchma"
+  },
+  {
+   "id": "5772936",
+   "depth": 0,
+   "author": "Akbar B",
+   "username": "akbar_b",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@iankerins \"There is no universal answer\" matches my experience exactly — I've watched a provider ace one retail site and get stonewalled by another with the same config, so benchmarking against the actual target URL is the right unit of measurement. Two things I'm curious about from running into this myself: does the benchmark measure sustained multi-request sessions, or single fetches? Some anti-bot setups bind the session to an IP, so a rotating residential pool can pass a one-off GET with flying colors and then fall apart the moment you need request three of a flow. And how do you handle staleness? Target sites update their WAF rules constantly, so a ranking from six weeks ago can be confidently wrong today. Are reports timestamped / re-run on a schedule, or is it fresh-per-request?"
+  },
+  {
+   "id": "5773087",
+   "depth": 1,
+   "author": "Ian Kerins",
+   "username": "iankerins",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Great question @akbar_b &nbsp; On staleness, the tester runs a live benchmark against the exact URL you provide, so the report is a snapshot of which providers are performing best for that target right now. Obviously, we can't predict when a target will change its WAF rules or when a provider's performance will shift. In our experience, though, the results generally hold up pretty well over time, often for weeks or even months, unless it's a particularly sensitive or fast-changing target. On sessions, the tester currently benchmarks individual requests rather than sustained multi-request sessions. So you're right that it wont currently capture cases where a provider performs well on a one-off request but struggles when you need to maintain the same identity/IP across a longer flow. That's definitely something we could look at adding. Right now, the primary focus is benchmarking access to public pages where complex session management isnt required, and answering the simpler question: for this exact URL, which providers are giving you the best performance right now?"
+  },
+  {
+   "id": "5774007",
+   "depth": 0,
+   "author": "Sabber Ahamed",
+   "username": "sabber_ahamed",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "target-specific benchmarking over generic rankings makes way more sense, proxy performance is so site-dependent. is the value score weighted evenly across success/latency/cost or can you tune it per use case?"
+  },
+  {
+   "id": "5774147",
+   "depth": 1,
+   "author": "Ian Kerins",
+   "username": "iankerins",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@sabber_ahamed &nbsp;The value score is currently weighted more toward cost. We group providers into performance tiers based on success rate and latency, then treat providers within the same tier as broadly comparable and rank them more heavily by cost. The thinking is that if one provider performs only 1–2% better but costs significantly more, that marginal improvement usually isn't worth the premium for a typical scraping workload. That said, it's good feedback. Allowing users to adjust the weighting between success rate, latency, and cost would make the score more useful for specialized cases, such as workloads where extremely low latency is essential. For general web scraping, though, the default weighting provides a fairly balanced comparison."
+  },
+  {
+   "id": "5775670",
+   "depth": 2,
+   "author": "Sabber Ahamed",
+   "username": "sabber_ahamed",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@iankerins &nbsp;tiering first then ranking by cost within the tier makes sense, keeps you from overreacting to a 1-2% noise gap. adjustable weighting for latency-critical workloads would be a nice add later."
+  },
+  {
+   "id": "5773821",
+   "depth": 0,
+   "author": "Rohan Chaubey",
+   "username": "rohanrecommends",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats on the launch, Ian. Good hunt, Hiten! A lot of SaaS data tools collect data from many different websites, but anti-bot systems such as Cloudflare can make scraping challenging. This tool is especially useful because it helps you identify the best proxy for a specific target website and use case, rather than relying on generic rankings."
+  },
+  {
+   "id": "5774148",
+   "depth": 1,
+   "author": "Ian Kerins",
+   "username": "iankerins",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@rohanrecommends &nbsp;Thanks for the feedback, Rohan. I completely agree. Where the tool really stands out is on difficult-to-scrape websites using anti-bot systems such as Cloudflare. The differences in performance and price can be massive. Depending on the target, you could end up paying 5-10X more simply because you chose the wrong provider. Unfortunately, the only way to know which provider works best is to test them all, especially as more websites adopt increasingly sophisticated anti-bot measures. The Proxy Tester gives you a quick way to find which providers deliver the best performance on your specific target at the lowest cost."
+  },
+  {
+   "id": "5773746",
+   "depth": 0,
+   "author": "Swaraj Sahu",
+   "username": "accustra",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Email for report. Naah.."
+  },
+  {
+   "id": "5774631",
+   "depth": 0,
+   "author": "Petr Kovacik",
+   "username": "petrkovacik",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "per-target proxy benchmarking is so usefull, no more guessing 👏 congrats!!"
+  },
+  {
+   "id": "5775118",
+   "depth": 0,
+   "author": "Tina Chhabra",
+   "username": "tina_chhabra",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "mixing models on one canvas instead of one chat locked to one model is the smart shape, different models are good at different turns and switching tabs kills the thread. curious how you keep a big board from becoming its own kind of mess, at some point an infinite canvas needs a way to collapse or summarize branches or it's just a prettier scroll."
+  }
+ ]
+}

@@ -1,0 +1,257 @@
+{
+ "slug": "pixel-soup",
+ "excerpt": "Pixel Soup is a Mac app that generates live, dithered wallpapers on your GPU, or dithers your own photos. Price, trial, requirements and alternatives.",
+ "content": "<p>Pixel Soup is a Mac app that makes your wallpaper for you. You pick a shape (eleven of them, such as Flow, Plasma, Aurora or Topo, or your own photo), a colour palette and a dither style, from Bayer patterns and halftone to ASCII and Benday dots. It draws the result live on your Mac's graphics chip and keeps it drifting gently behind your desktop icons, or freezes it as a still image. You can shuffle for a random new wallpaper, or let it serve a fresh one every hour or every day.</p><p>Wallpapers can be exported as PNGs at your display's size, 6K, iPhone size or a square, and the site allows commercial use of the exports. It supports several displays, pauses when windows cover the desktop and slows down in Low Power Mode. The app has no Dock icon, collects no data according to its privacy policy, and runs on macOS 14 Sonoma or later on Apple silicon and Intel Macs.</p><p>Pixel Soup is made by Madhav Oberoi and launched on Product Hunt on 4 October 2026, finishing #18 for the day with 71 upvotes. It is sold as a one-time purchase, both from its website and on the Mac App Store.</p><p><em>We have not tested Pixel Soup ourselves. This page brings together its official site, refund and privacy pages, its Product Hunt page and the official pages of comparable apps, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Wallpapers",
+  "platform": "Mac app",
+  "os": "macOS 14 Sonoma or later, Apple silicon and Intel",
+  "starts_at": "3-day free trial, then $4.99 once (launch price)",
+  "schema_category": "DesignApplication",
+  "summary_short": "Mac app that generates live, dithered wallpapers on your GPU or dithers your own photos",
+  "maker": {
+   "name": "Madhav Oberoi",
+   "url": "https://www.producthunt.com/@askmaddyy"
+  },
+  "team": [
+   {
+    "name": "Madhav Oberoi",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@askmaddyy"
+   }
+  ],
+  "ph": {
+   "rank": 18,
+   "votes": 71,
+   "comments": 5,
+   "followers": 42,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Giving your Mac a moving wallpaper that doesn't look like everyone else's",
+   "Turning a photo into a dithered, pixel-art style wallpaper",
+   "Exporting matching wallpapers for your iPhone or for design work",
+   "Getting a new wallpaper automatically every hour or day"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Madhav says he got bored of his Mac wallpaper and nothing he found felt like his own, so he built Pixel Soup. It makes wallpapers right on the Mac and keeps them gently moving behind the icons, or turns your own photos into dithered ones.",
+    "He launched it at $4.99 for launch week as a single payment with no subscription, pointed people to the free three-day trial, and asked what he should add next."
+   ],
+   "attribution": "Madhav, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/pixel-soup?comment=5915432"
+  },
+  "audience": {
+   "fit": [
+    "like retro, dithered or pixel-art visuals",
+    "want a live wallpaper without a subscription",
+    "care about privacy: the app collects no data, per its privacy policy"
+   ],
+   "not_fit": [
+    "want video or photo-realistic live wallpapers (Backdrop plays video wallpapers)",
+    "are on macOS 13 or older",
+    "want a free tool: after the 3-day trial it is a paid app"
+   ]
+  },
+  "pricing": {
+   "intro": "Pixel Soup is a one-time purchase with no subscription, in US dollars. A licence covers up to 3 of your Macs and includes updates.",
+   "url": "https://pixelsoup.app/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free trial",
+     "price": "$0 for 3 days",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "The full app, no account and no card (website download only)"
+    },
+    {
+     "name": "Licence (website)",
+     "price": "$4.99 once",
+     "amount": 4.99,
+     "currency": "USD",
+     "detail": "Shown on 14 October 2026 as the launch-week price; the site says the price then becomes $9.99. Up to 3 Macs, updates included"
+    },
+    {
+     "name": "Mac App Store",
+     "price": "$4.99 once",
+     "amount": 4.99,
+     "currency": "USD",
+     "detail": "Same app; updates through the App Store. No trial in the App Store version"
+    }
+   ],
+   "notes": [
+    "Website purchases can be refunded in full within 14 days with no reason needed; App Store purchases are refunded by Apple.",
+    "Website sales go through Dodo Payments, which handles tax.",
+    "The $4.99 launch price may change to $9.99 at any time, so check the site before buying."
+   ]
+  },
+  "alternatives": {
+   "intro": "Dynamic Wallpaper Club and Equinox are on Product Hunt's alternatives list; we added Backdrop as a live-wallpaper app. Prices are what each product's own site states, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Equinox",
+     "url": "https://equinoxmac.com/",
+     "what": "Free, open-source app for creating macOS Dynamic Desktop wallpapers that change with the sun, the time or light and dark mode",
+     "starts_at": "Free (MIT)",
+     "difference": "Builds image-based wallpapers that switch through the day; nothing is generated or animated live."
+    },
+    {
+     "name": "Dynamic Wallpaper Club",
+     "url": "https://dynamicwallpaper.club/",
+     "what": "Website for creating and sharing macOS Dynamic Wallpapers",
+     "starts_at": "Free, ad-supported",
+     "ph_rating": 5.0,
+     "ph_reviews": 1,
+     "difference": "Web-based and image-based with a community gallery; no live animation or dithering."
+    },
+    {
+     "name": "Backdrop",
+     "url": "https://cindori.com/backdrop",
+     "what": "Live 4K video wallpapers for the Mac desktop and lock screen, with a large library",
+     "starts_at": "Free download; subscription, see its pricing page",
+     "difference": "Plays video wallpapers on a subscription and needs macOS 15. Pixel Soup generates its own art for a one-time price."
+    }
+   ],
+   "more": "Product Hunt also lists bg AI, Clarity Wallpaper for Mac, Wallpaper Wizard, One4Wall, Irvue, Art4 and Aqueux Wallpapers."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/pixel-soup/reviews",
+   "as_of": "2026-10-14"
+  },
+  "pros": [
+   "One payment for up to 3 Macs, no subscription",
+   "Generates wallpapers itself, so no two need be the same",
+   "Exports PNGs for other screens, with commercial use allowed",
+   "Collects no data; the App Store version makes no network requests",
+   "Designed to be light on battery: pauses when covered and slows in Low Power Mode"
+  ],
+  "cons": [
+   "Paid after the 3-day trial; the launch price is due to double",
+   "Mac only",
+   "Very new, with no reviews on Product Hunt or the App Store yet",
+   "Dithered style only: it doesn't play video wallpapers"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/pixel-soup",
+   "x": {
+    "none": "We found no posts about Pixel Soup on X yet.",
+    "search_url": "https://x.com/search?q=%22Pixel%20Soup%22%20wallpaper&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "How much does Pixel Soup cost?",
+    "a": "On 14 October 2026 its site showed $4.99 as the launch-week price, after which it says the price is $9.99. It is a one-time payment for up to 3 Macs. The Mac App Store version was also $4.99."
+   },
+   {
+    "q": "Is there a free trial?",
+    "a": "Yes, 3 days of the full app with no account or card, for the version downloaded from the website."
+   },
+   {
+    "q": "Will it drain my battery?",
+    "a": "The site says it draws at a low frame rate, pauses when windows cover the desktop and slows in Low Power Mode. A still wallpaper costs nothing."
+   },
+   {
+    "q": "Does it work with several displays?",
+    "a": "Yes, each display at its own resolution."
+   },
+   {
+    "q": "Can I use the wallpapers elsewhere?",
+    "a": "Yes. Export a PNG at display size, 6K, iPhone size or a square, and use it anywhere, including commercially."
+   },
+   {
+    "q": "Can I get a refund?",
+    "a": "Website purchases have a full refund within 14 days, no reason needed. App Store purchases are refunded through Apple."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Pixel Soup official site, pricing and FAQ",
+    "url": "https://pixelsoup.app/"
+   },
+   {
+    "label": "Pixel Soup refunds",
+    "url": "https://pixelsoup.app/refunds"
+   },
+   {
+    "label": "Pixel Soup privacy policy",
+    "url": "https://pixelsoup.app/privacy"
+   },
+   {
+    "label": "Pixel Soup on the Mac App Store",
+    "url": "https://apps.apple.com/app/id6817796083"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/pixel-soup"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/pixel-soup/alternatives"
+   },
+   {
+    "label": "Equinox",
+    "url": "https://equinoxmac.com/"
+   },
+   {
+    "label": "Dynamic Wallpaper Club",
+    "url": "https://dynamicwallpaper.club/"
+   },
+   {
+    "label": "Backdrop by Cindori",
+    "url": "https://cindori.com/backdrop"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/3837a198-1f2b-43c7-acc9-f62e5784b938.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Pixel Soup graphic 'Infinite wallpapers. No two are ever the same.' with dithered wallpapers on screens",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://ph-files.imgix.net/276b0862-6b12-4910-8add-b53b69c57388.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Pixel Soup graphic 'Still or gently moving.' showing the app window with a 'Pick a bowl' list of wallpaper styles",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/1a5d4301-5000-4421-8859-90dd35699e9e.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Pixel Soup graphic 'Dither it your way.' comparing the same wallpaper in different dither styles",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/90f68db5-fa81-465d-8ad6-fce618d9bded.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Pixel Soup graphic 'Your whole wallpaper kitchen.' with a row of generated dithered wallpapers",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/3837a198-1f2b-43c7-acc9-f62e5784b938.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Pixel Soup graphic 'Infinite wallpapers. No two are ever the same.' with dithered wallpapers on screens",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://ph-files.imgix.net/276b0862-6b12-4910-8add-b53b69c57388.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Pixel Soup graphic 'Still or gently moving.' showing the app window with a 'Pick a bowl' list of wallpaper styles",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/1a5d4301-5000-4421-8859-90dd35699e9e.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Pixel Soup graphic 'Dither it your way.' comparing the same wallpaper in different dither styles",
+    "w": 1270,
+    "h": 760
+   }
+  ]
+ }
+}

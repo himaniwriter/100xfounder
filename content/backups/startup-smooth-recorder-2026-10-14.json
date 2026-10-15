@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 1753,
+  "date": "2026-10-04T00:06:22",
+  "date_gmt": "2026-10-03T18:36:22",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/smooth-recorder/",
+   "raw": "https://100xfounder.com/startup/smooth-recorder/"
+  },
+  "modified": "2026-10-04T20:56:12",
+  "modified_gmt": "2026-10-04T15:26:12",
+  "password": "",
+  "slug": "smooth-recorder",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/smooth-recorder/",
+  "title": {
+   "raw": "Smooth Recorder",
+   "rendered": "Smooth Recorder"
+  },
+  "content": {
+   "raw": "<p>Mac screen recordings that look edited when you hit stop</p>\n",
+   "rendered": "<p>Mac screen recordings that look edited when you hit stop</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "Mac screen recordings that look edited when you hit stop",
+   "rendered": "<p>Mac screen recordings that look edited when you hit stop</p>\n",
+   "protected": false
+  },
+  "featured_media": 1761,
+  "template": "",
+  "xf_industry": [],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "smooth-recorder",
+  "class_list": [
+   "post-1753",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1753",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/media/1761"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=1753"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=1753"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=1753"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1753"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1753"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1753"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1753"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1753"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1753"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

@@ -1,0 +1,98 @@
+{
+ "slug": "makersclaw",
+ "ph_url": "https://www.producthunt.com/products/makersclaw",
+ "existing_listing_slug": null,
+ "website": "https://www.makersclaw.com/",
+ "excerpt": "MakersClaw is a workspace of ready-made apps, each with its own AI agent and scheduled jobs, plus an agent that builds new apps from a sentence. 3-day trial, then from $23 a month billed yearly. Pricing, how credits work and alternatives.",
+ "content": "<p>MakersClaw is a workspace where apps come with AI agents built in. Its App Store lists more than 40 apps, such as a CRM, issue tracker, wiki, content calendar, blog post studio, weekly planner and rank tracker, and each app has an agent that can run scheduled jobs, for example drafting a weekly plan every Monday or a content report every Friday. A company wiki holds what your business knows, and every app and agent reads it. If no app fits, you can describe what you need and MakersClaw builds a new app or changes an existing one.</p><p>MakersClaw connects to more than 1,000 tools, and all plans include every app and every AI model; plans differ in monthly credits, which pay for agent work such as building an app, answering a question or running a scheduled job. Smarter models use more credits per step. When it launched on Product Hunt, MakersClaw described itself as AI employees that live in Slack, Teams and Telegram; its site now presents it as an app store and workspace for teams.</p><p>MakersClaw is operated by Cogaid Solutions Private Limited of Howrah, West Bengal, according to its imprint. It launched on Product Hunt on 16 June 2026 and finished #3 for the day with 417 upvotes and 60 comments.</p><p><em>We have not tested MakersClaw ourselves. This page brings together MakersClaw's website, pricing page and imprint, its Product Hunt page, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI workspace",
+  "platform": "Web",
+  "starts_at": "3-day trial; User plan $23/month billed yearly ($29 monthly)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Workspace of apps with built-in AI agents and scheduled jobs, plus an agent that builds new apps",
+  "maker": {"name": "Cogaid Solutions Private Limited", "url": "https://makersclaw.com/legal/imprint"},
+  "ph": {"rank": 3, "votes": 417, "comments": 60, "followers": 754, "launched": "2026-06-16", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/0b7e16b7-17ff-4093-86fc-02c2cdb31ebe.jpeg?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: MakersClaw via Product Hunt", "alt": "MakersClaw graphic 'Start with a goal. Build from there.' with tiles for apps, agents and automations"},
+   {"url": "https://ph-files.imgix.net/5620e90f-2cae-4369-bd32-e072268ea5f4.jpeg?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: MakersClaw via Product Hunt", "alt": "MakersClaw chat turning 'Help me launch my startup' into a research agent, launch planner and weekly update"},
+   {"url": "https://ph-files.imgix.net/2ce62349-19e3-467d-a20a-1522e522ac53.jpeg?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: MakersClaw via Product Hunt", "alt": "MakersClaw App Store with mini apps such as resume builder, pitch builder, cold email and founder LinkedIn"},
+   {"url": "https://ph-files.imgix.net/8820c9b9-7cb0-409d-969e-6568dca09410.jpeg?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: MakersClaw via Product Hunt", "alt": "MakersClaw graphic 'The AI OS for your startup' showing its desktop-style workspace"}
+  ],
+  "use_cases": [
+   "Replacing several separate tools (CRM, wiki, planner, issue tracker) with apps in one workspace",
+   "Scheduling agents to draft weekly plans, project health checks or content reports",
+   "Drafting blog posts, LinkedIn posts and newsletters from your own wiki and activity",
+   "Building a custom internal app by describing it in a sentence"
+  ],
+  "audience": {
+   "fit": [
+    "are a founder or small team that wants many work apps with AI agents in one place",
+    "want agents to run recurring jobs on a schedule",
+    "want to build small internal tools without code"
+   ],
+   "not_fit": [
+    "want to try it without a card: the trial needs one and converts to a paid plan unless cancelled",
+    "need deep, specialised features of tools like Salesforce or Jira",
+    "need predictable costs with heavy use of top models, which use more credits"
+   ]
+  },
+  "pricing": {
+   "intro": "Every MakersClaw plan includes every app, model and feature; plans differ in monthly credits. Prices are in US dollars before tax from MakersClaw's pricing page. Launch graphics mentioned 10,000 free credits for one person; the current page offers a 3-day trial with a card instead.",
+   "url": "https://makersclaw.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "User", "price": "$23/month billed yearly ($29 monthly)", "amount": 23, "currency": "USD", "detail": "15,000 credits a month; every app with its agent, scheduled jobs, 1,000+ tool connections, company wiki"},
+    {"name": "Builder", "price": "$47/month billed yearly ($59 monthly)", "amount": 47, "currency": "USD", "detail": "35,000 credits a month; live preview, safe edits with rollback, websites on your own domain"},
+    {"name": "Max", "price": "$95/month billed yearly ($119 monthly)", "amount": 95, "currency": "USD", "detail": "From 72,000 credits a month, lowest cost per credit, early access"}
+   ],
+   "notes": [
+    "3-day free trial on Individual plans; a card is required and you are charged when the trial ends unless you cancel.",
+    "Business plans (Team and Scale) need a work email and a claimed company domain; Enterprise is by arrangement.",
+    "Monthly credits do not roll over; top-up credits never expire."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Taskade, Pickaxe and GPTBots.ai among MakersClaw's alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "Taskade", "url": "https://www.taskade.com/", "what": "AI workspace that builds apps, agents and automations from a prompt", "starts_at": "See its pricing page", "ph_rating": 4.68, "ph_reviews": 109, "ph_url": "https://www.producthunt.com/products/taskade", "difference": "A similar prompt-to-app workspace; MakersClaw leads with a store of ready-made apps that each carry an agent."},
+    {"name": "Pickaxe", "url": "https://pickaxe.co/", "what": "Build AI agents and sell them", "starts_at": "See its pricing page", "ph_rating": 4.94, "ph_reviews": 17, "ph_url": "https://www.producthunt.com/products/pickaxe", "difference": "Aimed at building agents to sell to others; MakersClaw is a team workspace."},
+    {"name": "GPTBots.ai", "url": "https://www.gptbots.ai/", "what": "Platform for building AI agent teams for businesses", "starts_at": "See its pricing page", "ph_rating": 4.91, "ph_reviews": 22, "ph_url": "https://www.producthunt.com/products/gptbots-ai", "difference": "Agent and bot builder for businesses rather than a store of work apps."}
+   ],
+   "more": "Product Hunt also lists BetterClaw and Skydive."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/makersclaw/reviews", "as_of": "2026-10-14"},
+  "pros": [
+   "Every plan includes every app and every model",
+   "Agents run scheduled jobs inside each app",
+   "Build or change apps by describing them",
+   "Yearly billing saves 20%"
+  ],
+  "cons": [
+   "Card required for the 3-day trial",
+   "Credits run down faster on smarter models",
+   "Positioning has shifted since launch, so older descriptions may not match the product",
+   "No independent reviews on Product Hunt yet"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/makersclaw",
+   "x": {"none": "We found no posts about MakersClaw on X to link yet.", "search_url": "https://x.com/search?q=makersclaw&f=live"}
+  },
+  "faq": [
+   {"q": "What is MakersClaw?", "a": "A workspace of more than 40 apps, each with its own AI agent and scheduled jobs, plus an agent that builds new apps from a description."},
+   {"q": "How much does MakersClaw cost?", "a": "User is $23 a month billed yearly ($29 monthly), Builder $47 ($59) and Max from $95 ($119). There is a 3-day trial that needs a card."},
+   {"q": "What do credits pay for?", "a": "Agent work such as building or changing an app, answering a question or running a scheduled job. Smarter models use more credits per step."},
+   {"q": "Who runs MakersClaw?", "a": "Its imprint names Cogaid Solutions Private Limited, based in Howrah, West Bengal, India."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists Taskade, BetterClaw, Pickaxe, Skydive and GPTBots.ai."}
+  ],
+  "sources": [
+   {"label": "MakersClaw official site", "url": "https://makersclaw.com/"},
+   {"label": "MakersClaw pricing", "url": "https://makersclaw.com/pricing"},
+   {"label": "MakersClaw imprint", "url": "https://makersclaw.com/legal/imprint"},
+   {"label": "MakersClaw refund policy", "url": "https://makersclaw.com/legal/refunds"},
+   {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/makersclaw"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/makersclaw/alternatives"}
+  ]
+ }
+}

@@ -1,0 +1,328 @@
+URL: https://github.com/Hankaws/aperture
+TITLE: GitHub - Hankaws/aperture: An AI code editor that checks its own work. · GitHub
+META: An AI code editor that checks its own work. Contribute to Hankaws/aperture development by creating an account on GitHub.
+
+GitHub - Hankaws/aperture: An AI code editor that checks its own work. · GitHub 
+ Skip to content 
+ Navigation Menu
+ Sign in Appearance settings
+ Platform AI CODE CREATION GitHub Copilot Write better code with AI 
+ GitHub Copilot app Direct agents from issue to merge 
+ MCP Registry Integrate external tools 
+ DEVELOPER WORKFLOWS Actions Automate any workflow 
+ Codespaces Instant dev environments 
+ Issues Plan and track work 
+ Code Review Manage code changes 
+ Code Quality Enforce quality at merge 
+ APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities 
+ Code security Secure your code as you build 
+ Secret protection Stop leaks before they start 
+ EXPLORE Why GitHub 
+ Documentation 
+ Blog 
+ Changelog 
+ Marketplace 
+ View all features 
+ Solutions BY COMPANY SIZE Enterprises 
+ Small and medium teams 
+ Startups 
+ Nonprofits 
+ BY USE CASE App Modernization 
+ DevSecOps 
+ DevOps 
+ CI/CD 
+ View all use cases 
+ BY INDUSTRY Healthcare 
+ Financial services 
+ Manufacturing 
+ Government 
+ View all industries 
+ View all solutions 
+ Resources EXPLORE BY TOPIC AI 
+ Software Development 
+ DevOps 
+ Security 
+ View all topics 
+ EXPLORE BY TYPE Customer stories 
+ Events & webinars 
+ Ebooks & reports 
+ Business insights 
+ GitHub Skills 
+ SUPPORT & SERVICES Documentation 
+ Customer support 
+ Community forum 
+ Trust center 
+ Partners 
+ View all resources 
+ Open Source COMMUNITY GitHub Sponsors Fund open source developers 
+ PROGRAMS Security Lab 
+ Maintainer Community 
+ GitHub Stars 
+ Archive Program 
+ REPOSITORIES Topics 
+ Trending 
+ Collections 
+ Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform 
+ AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features 
+ Copilot for Business Enterprise-grade AI features 
+ Premium Support Enterprise-grade 24/7 support 
+ Pricing 
+ Search / 
+ Sign in 
+ Sign up Appearance settings
+ You signed in with another tab or window. Reload to refresh your session. 
+ You signed out in another tab or window. Reload to refresh your session. 
+ You switched accounts on another tab or window. Reload to refresh your session. 
+ Dismiss alert 
+ {{ message }}
+ Hankaws 
+ aperture 
+ Repository navigation
+ Code 
+ Issues 
+ Pull requests 1  ( 1 ) 
+ Actions 
+ Projects 
+ Security and quality 
+ Insights 
+ More items 
+ aperture 
+ Public 
+ Notifications You must be signed in to change notification settings 
+ Fork 0  ( 0 ) 
+ Star 7  ( 7 ) You must be signed in to star a repository 
+ About 
+ An AI code editor that checks its own work.
+ aperturesais.grok.me 
+ Resources 
+ Readme 
+ License 
+ Contributing 
+ Contributing 
+ Security policy 
+ Security policy 
+ Activity 
+ Stars 
+ 7 stars 
+ Watchers 
+ 1 watching 
+ Forks 
+ 0 forks 
+ Report repository 
+ main 
+ Branches Tags 
+ Go to file 
+ Code Open more actions menu 
+ Latest commit
+ History
+ 170 Commits 
+ 170 Commits 
+ Folders and files
+ Name Name Last commit message 
+ Last commit date 
+ .github/ workflows 
+ .github/ workflows 
+ .grok 
+ .grok 
+ docs 
+ docs 
+ migrations 
+ migrations 
+ public 
+ public 
+ screenshots 
+ screenshots 
+ scripts 
+ scripts 
+ server 
+ server 
+ src 
+ src 
+ .gitignore 
+ .gitignore 
+ .node_modules.lock 
+ .node_modules.lock 
+ .prettierrc 
+ .prettierrc 
+ AGENTS.md 
+ AGENTS.md 
+ AGENTS.project.md 
+ AGENTS.project.md 
+ CHANGELOG.md 
+ CHANGELOG.md 
+ CONTRIBUTING.md 
+ CONTRIBUTING.md 
+ LICENSE 
+ LICENSE 
+ README.md 
+ README.md 
+ SECURITY.md 
+ SECURITY.md 
+ THIRD_PARTY_NOTICES.md 
+ THIRD_PARTY_NOTICES.md 
+ eslint.config.mjs 
+ eslint.config.mjs 
+ package-lock.json 
+ package-lock.json 
+ package.json 
+ package.json 
+ startup.sh 
+ startup.sh 
+ tsconfig.json 
+ tsconfig.json 
+ vite.config.ts 
+ vite.config.ts 
+ View all files 
+ Repository files navigation
+ README 
+ Contributing 
+ License 
+ Security 
+ More items 
+ Aperture
+ An AI code editor that checks its own work. Composer plans a change and
+stages it as a diff. Every staged change is then checked before you apply it:
+it parses, its imports resolve, the TypeScript compiler passes, the page
+renders, and the tests pass. The tests run in your browser tab, free, in about a second.
+ ▶ Watch the 30-second demo on YouTube 
+ Demo: aperturesais.grok.me . It plays recorded runs. It does not call Grok, so it does not spend anyone's API quota. A key you add in Settings is yours alone.
+ Try it in a minute, no API key needed
+ Needs Node 22.6 or newer.
+ git clone https://github.com/Hankaws/aperture.git
+ cd aperture
+npm ci
+APERTURE_MODEL=replay VITE_AUTH_ENABLED=false npm run dev
+ Open http://localhost:8080/app and click Fix the off-by-one in listTasks ,
+then Build it . Watch the plan, the staged diff and the checks. The demo
+project ships with three known bugs and one failing test for each. The fix
+makes its own test pass, and the other two still fail, so the Tests check is
+amber: "already failing before this change", not blamed on the edit. Click the
+chip to see the run. The other two suggested tasks fix the other two bugs the
+same way.
+ APERTURE_MODEL=replay plays back recorded agent runs on the built-in demo
+project ( harbor-api ) instead of calling a model. It exercises the whole
+product and costs nothing. VITE_AUTH_ENABLED=false skips sign-in and uses a
+local in-process database (PGlite), so nothing else needs setting up.
+ What it does
+ Plan, then build. Composer reads the code, posts a plan, and waits for
+ Build it . You can reword, reorder, remove or add steps first. Edits
+arrive as staged diffs you keep or skip file by file. Nothing touches your
+files until you apply. Turn off Plan first to have Composer edit
+straight away; either way, nothing is applied until you Apply.
+ An agent board. Every run (its plan, Build it, the test runs and
+automatic fix that answer it) is one card: working, needs you, review or
+done, with background jobs alongside. Two runs with staged changes can be
+compared side by side, file by file (Ctrl/Cmd+J).
+ Background runs. Send a task with the clock button (or
+Ctrl/Cmd+Shift+Enter) and keep working; up to three run at once, 
+
+--- PRICING/PLANS PAGE https://github.com/pricing ---
+Pricing · Plans for every developer · GitHub 
+ Skip to content 
+ Navigation Menu
+ Sign in 
+ Platform AI CODE CREATION GitHub Copilot Write better code with AI 
+ GitHub Copilot app Direct agents from issue to merge 
+ MCP Registry Integrate external tools 
+ DEVELOPER WORKFLOWS Actions Automate any workflow 
+ Codespaces Instant dev environments 
+ Issues Plan and track work 
+ Code Review Manage code changes 
+ Code Quality Enforce quality at merge 
+ APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities 
+ Code security Secure your code as you build 
+ Secret protection Stop leaks before they start 
+ EXPLORE Why GitHub 
+ Documentation 
+ Blog 
+ Changelog 
+ Marketplace 
+ View all features 
+ Solutions BY COMPANY SIZE Enterprises 
+ Small and medium teams 
+ Startups 
+ Nonprofits 
+ BY USE CASE App Modernization 
+ DevSecOps 
+ DevOps 
+ CI/CD 
+ View all use cases 
+ BY INDUSTRY Healthcare 
+ Financial services 
+ Manufacturing 
+ Government 
+ View all industries 
+ View all solutions 
+ Resources EXPLORE BY TOPIC AI 
+ Software Development 
+ DevOps 
+ Security 
+ View all topics 
+ EXPLORE BY TYPE Customer stories 
+ Events & webinars 
+ Ebooks & reports 
+ Business insights 
+ GitHub Skills 
+ SUPPORT & SERVICES Documentation 
+ Customer support 
+ Community forum 
+ Trust center 
+ Partners 
+ View all resources 
+ Open Source COMMUNITY GitHub Sponsors Fund open source developers 
+ PROGRAMS Security Lab 
+ Maintainer Community 
+ GitHub Stars 
+ Archive Program 
+ REPOSITORIES Topics 
+ Trending 
+ Collections 
+ Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform 
+ AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features 
+ Copilot for Business Enterprise-grade AI features 
+ Premium Support Enterprise-grade 24/7 support 
+ Pricing 
+ Search / 
+ Sign in 
+ Sign up 
+ You signed in with another tab or window. Reload to refresh your session. 
+ You signed out in another tab or window. Reload to refresh your session. 
+ You switched accounts on another tab or window. Reload to refresh your session. 
+ Dismiss alert 
+ {{ message }}
+ Try GitHub, the complete developer platform
+ We get it, there's a lot you can do with GitHub.
+ That’s why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot,
+ and Advanced Security.
+ Start free for 30 days 
+ Free
+ The basics for individuals 
+and organizations
+ $ 
+ 0 
+ USD 
+ per month
+ $ 
+ 0 
+ USD 
+ per month
+ forever
+ Join for free
+ Unlimited public/private repositories
+ Host open source projects in public GitHub repositories, accessible via web or command line. Public repositories are accessible to anyone at GitHub.com.
+ Uh oh!
+ There was an error while loading. Please reload this page .
+ Dependabot security and version updates
+ Keep projects secure by automatically opening pull requests to update vulnerable dependencies and keep them up to date.
+ Uh oh!
+ There was an error while loading. Please reload this page .
+ 2,000 CI/CD minutes/month
+ Free for public repositories
+ Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.
+ Uh oh!
+ There was an error while loading. Please reload this page .
+ 500MB of Packages storage
+ Free for public repositories
+ Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.
+ Uh oh!
+ There was an error while loading. Please reload this 

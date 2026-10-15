@@ -1,0 +1,105 @@
+{
+  "slug": "launchreel",
+  "excerpt": "LaunchReel is a Claude Code plugin that edits talking-head videos and builds launch films from your code. Pricing, alternatives and what people said on launch day.",
+  "content": "<p>LaunchReel is a plugin for Claude Code, Anthropic's coding assistant, that edits video. It does two jobs. Give it a recording of yourself talking and it cuts the filler words, pauses and retakes, then adds captions and zooms. Or point it at your product's code and Claude writes a launch film or demo as code, scene by scene, with original music and a voiceover. Exports run 16:9 or 9:16, up to 4K.</p><p>What sets it apart from asking Claude to edit video directly is the Studio, an editing window that opens while Claude works. Pin a comment on any frame and Claude fixes just that spot, or click text to change its font, size or colour yourself without spending a prompt. According to its maker, your footage stays on your own machine.</p><p>It was made by Gajanan Rathod, who describes himself on Product Hunt as a video editor turned maker. LaunchReel launched there on 4 October 2026 and ranked #15 for the day with 81 upvotes and 12 comments (as of 7 October).</p><p><em>We have not tested LaunchReel ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-07",
+    "category": "Video editing",
+    "platform": "Claude Code plugin",
+    "os": "Requires Claude Code and Node.js 20 or newer",
+    "starts_at": "Free trial, then $19/month",
+    "schema_category": "MultimediaApplication",
+    "summary_short": "Claude Code plugin that edits talking-head videos and builds launch films from your code",
+    "maker": {"name": "Gajanan Rathod", "url": "https://www.producthunt.com/@gajanansr"},
+    "ph": {"rank": 15, "votes": 81, "comments": 12, "followers": 56, "launched": "2026-10-04", "as_of": "2026-10-07"},
+    "screenshots": [
+      {"url": "https://ph-files.imgix.net/b2076dcb-d0ba-470d-9551-43783918238a.jpeg?auto=format&fit=max&w=1400", "w": 1280, "h": 720,
+       "alt": "The LaunchReel Studio on a laptop: a video preview, a pinned comment thread with Claude, and a timeline with scene, voice, music and sound-effect tracks"},
+      {"url": "https://ph-files.imgix.net/5754120d-4459-4efc-8a8d-38e6ca3d4daf.png?auto=format&fit=max&w=1400", "w": 1200, "h": 630,
+       "alt": "LaunchReel graphic reading 'Talking-head videos edited by Claude', with the Studio showing a pinned comment 'tighten this cut'"},
+      {"url": "https://ph-files.imgix.net/ccda1d77-9e89-416e-9178-ed21ad267f79.png?auto=format&fit=max&w=1400", "w": 1200, "h": 630,
+       "alt": "LaunchReel graphic reading 'Claude writes the scenes. We make it a film.', with the Studio previewing a scene that says 'Ship it today.'"}
+    ],
+    "audience": {
+      "fit": [
+        "are a solo founder who needs a product video but can't pay an editor, which is the maker's own pitch",
+        "already use Claude Code and are comfortable installing a plugin from the terminal",
+        "want to fix one frame of a video without re-rendering and risking everything else"
+      ],
+      "not_fit": [
+        "don't use Claude Code or can't run Node.js 20+: it is a plugin, not a standalone app (the site points those visitors to a template-based generator)",
+        "want a single one-off video without a subscription: plans renew monthly, though you can cancel any time",
+        "need unlimited AI voiceover: the maker said on Product Hunt that voiceover generations are currently limited"
+      ]
+    },
+    "pricing": {
+      "intro": "LaunchReel is sold as a monthly subscription on its own site. Prices are in US dollars.",
+      "url": "https://launchreel.tech/#pricing",
+      "plans": [
+        {"name": "Free trial", "price": "$0", "amount": 0, "currency": "USD", "detail": "One full video with every feature, exported in 1080p with a small watermark and an end screen"},
+        {"name": "Creator", "price": "$19/month", "amount": 19, "currency": "USD", "detail": "5 videos a month, no watermark or end screen, 1080p export, talking-head recordings up to 5 minutes, up to 2 computers, original score and studio voices"},
+        {"name": "Pro", "price": "$49/month", "amount": 49, "currency": "USD", "detail": "20 videos a month, 2K and 4K export, recordings up to 10 minutes, up to 3 computers, new looks and features first"},
+        {"name": "Team", "price": "$149/month", "amount": 149, "currency": "USD", "detail": "80 videos a month, up to 10 computers, one invoice for the whole team"}
+      ],
+      "notes": [
+        "These prices are LaunchReel's only. The editing itself is done by Claude, which runs on your own Claude plan; edits you make by hand in the Studio don't use it (LaunchReel FAQ).",
+        "A \"video\" is one project. Fixing, re-rendering or re-voicing it in the same month doesn't count as another, and the count resets on the 1st.",
+        "At launch, the first 10 customers got 50% off the first three months of Creator and Pro with the code FOUNDING50. That offer may no longer be available.",
+        "Plans renew monthly and can be cancelled any time. Billing runs through the reseller Dodo Payments, which handles tax and invoices."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are the products Product Hunt lists as alternatives, plus one open-source tool that works the same way. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Descript", "url": "https://www.descript.com/", "what": "Edit video by editing its text transcript", "starts_at": "Free plan; paid from $16/month",
+         "ph_rating": 4.4, "ph_reviews": 41,
+         "difference": "A standalone app with its own AI tools, not a plugin inside Claude Code. The free plan covers 60 minutes of media a month, exported at 720p with a watermark."},
+        {"name": "Tella", "url": "https://www.tella.com/", "what": "Record your screen and polish product demos", "starts_at": "From $13/user/month",
+         "ph_rating": 4.8, "ph_reviews": 38,
+         "difference": "Built for recording and presenting demos, not for generating scenes from your code."},
+        {"name": "video-use", "url": "https://github.com/browser-use/video-use", "what": "Free, open-source Claude Code skill that edits raw footage into a finished video", "starts_at": "Free (MIT licence); needs an ElevenLabs API key",
+         "reviews": "28.3k stars on GitHub",
+         "difference": "The closest like-for-like option. It works from a prompt and writes edit/final.mp4. LaunchReel's own pitch is the Studio for pinned-frame fixes plus built-in music and voiceover."}
+      ],
+      "more": "Product Hunt also lists CapCut, VEED, FocuSee, Jupitrr AI and Visla as alternatives. Under \"Built with\", LaunchReel credits Remotion, the React-based video framework, which is free for individuals and companies of up to three people and needs a paid licence beyond that."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/launchreel-2/reviews", "as_of": "2026-10-07"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/launchreel-2",
+      "quotes": [
+        {"author": "Tom Nick", "text": "I like that there is still a studio to make your own edits instead of having to accept everything exactly as generated. That gives you a bit more control over the final result."},
+        {"author": "Justin Rockmore", "text": "Does a pinned fix count against the monthly video count?",
+         "reply": "No, pinned fixes are not counted. Voiceover generations are currently limited, while visual and sound-effect fixes are unlimited."}
+      ],
+      "x": {
+        "none": "We found no posts about LaunchReel on X yet.",
+        "search_url": "https://x.com/search?q=LaunchReel%20Claude%20Code&f=live",
+        "related": [
+          {"author": "Julian Goldie SEO", "url": "https://x.com/juliangoldieseo/status/2041222766423052780", "note": "recommends a free GitHub toolkit that lets Claude Code make videos from typed instructions"},
+          {"author": "Harman", "url": "https://x.com/itsharmanjot/status/2096129234913690110", "note": "shows a free Claude Code tool that turns a folder of raw clips into a finished, graded, subtitled video"},
+          {"author": "Peng", "url": "https://x.com/pengsonal/status/2105382584129909186", "note": "shares a free Claude Code skill for launch-style motion videos"}
+        ]
+      }
+    },
+    "faq": [
+      {"q": "What is LaunchReel?", "a": "A Claude Code plugin that edits talking-head recordings and makes launch videos and demos from your product's code. It was made by Gajanan Rathod and launched on Product Hunt on 4 October 2026."},
+      {"q": "How much does LaunchReel cost?", "a": "There is a free trial of one full video (1080p, with a small watermark and an end screen). Paid plans are Creator at $19 a month, Pro at $49 and Team at $149, billed monthly. Claude's own usage is separate and runs on your Claude plan."},
+      {"q": "Do I need Claude Code to use LaunchReel?", "a": "Yes. LaunchReel is a Claude Code plugin and needs Node.js 20 or newer. Its site points people who don't use Claude Code to a template-based generator instead."},
+      {"q": "Does fixing a frame cost another video?", "a": "No. According to LaunchReel, a video is one project, so fixing, re-rendering or re-voicing it in the same month doesn't use another. The maker added on Product Hunt that voiceover generations are currently limited."},
+      {"q": "Where does my footage go?", "a": "The maker says your footage stays on your machine. Talking-head projects keep working copies of your recording, about 0.07 GB per minute of 1080p, and LaunchReel tells you before it starts."},
+      {"q": "How do I cancel LaunchReel?", "a": "Any time. Your key keeps working until the end of the period you paid for, according to LaunchReel's FAQ."},
+      {"q": "How does LaunchReel compare with Descript?", "a": "Descript is a standalone app that edits video by editing its transcript, with a free plan and paid plans from $16 a month. LaunchReel works inside Claude Code and can also build videos from your code. See the comparison table above."}
+    ],
+    "sources": [
+      {"label": "LaunchReel official site", "url": "https://launchreel.tech/"},
+      {"label": "LaunchReel pricing", "url": "https://launchreel.tech/#pricing"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/launchreel-2"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/launchreel-2/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/launchreel-2/alternatives"},
+      {"label": "Descript pricing", "url": "https://www.descript.com/pricing"},
+      {"label": "Tella pricing", "url": "https://www.tella.com/pricing"},
+      {"label": "video-use on GitHub", "url": "https://github.com/browser-use/video-use"},
+      {"label": "Remotion licence", "url": "https://www.remotion.pro/license"}
+    ]
+  }
+}

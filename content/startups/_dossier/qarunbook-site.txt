@@ -1,0 +1,139 @@
+URL: https://qarunbook.com/
+TITLE: qarunbook (QA Runbook) — Testing, simplified and effective.
+META: qarunbook is an app testing runbook. Your AI writes the test plan from your code, your team or your AI works through it on web, Android and iOS, and a fix is never a pass until someone checks again.
+
+qarunbook (QA Runbook) — Testing, simplified and effective. 
+ qarunbook Product 
+ Use cases 
+ Resources 
+ Pricing Partners 
+ Sign in Start testing 
+ App testing. Easier to do. Easier to do well. 
+ Knowing what to test shouldn’t be harder than testing it.
+ qarunbook helps you create a clear test plan, work through it yourself, with your team, or with AI, and keep track of what needs fixing or checking again.
+ Less time figuring out how to test. More of your app properly checked.
+ Start testing your app Connect your AI 
+ Works with your AI and every platform you ship to
+ Claude Codex Cursor Any MCP client Web Android iOS Claude Codex Cursor Any MCP client Web Android iOS 
+ From “where do I start?” to a clear testing process. 
+ An app has plenty of things to check. Deciding what matters, explaining how to test it, and following up on problems can become a job of its own.
+ qarunbook brings that work together, so you can get on with testing.
+ 0 1
+ Know what to check.
+ Create your own test plan or get AI to help. Give each check clear steps and an expected result, so testing has a useful starting point.
+ 0 2
+ Work through it together.
+ Test on your own, bring in teammates, or connect your AI assistant. Keep the plan and results in one place as the work gets done.
+ 0 3
+ Give problems a proper follow-up.
+ Keep issues connected to the checks that found them. When something is fixed, check it again before calling it passed.
+ Built around how testing actually happens. On your own, as a team, or with AI. 
+ Whoever is doing the testing, the plan, the results and the follow-up stay in one place.
+ Problems stay with their checks
+ Every issue sits on the check that found it, with the platforms it affects. Raising one takes the pass away; when it’s fixed, the check waits for someone to look again.
+ The right access for each person
+ Someone can run one app and only test another. People see just the projects you give them, and a join link brings a whole group in at once.
+ A plan you can shape
+ Run /test-checklist and your AI drafts the checks from your app. Edit them, add your own, choose the platforms, or start from scratch.
+ Every app in one place
+ Each app keeps its own sections and platforms, so a web app, a driver app and a marketing site can all be tested side by side.
+ Connect your AI in about a minute. 
+ qarunbook works over MCP, so the assistant you already use can read the plan, help with testing, record results, and follow up on what it fixes.
+ Claude Code Claude & Cowork Codex Cursor 
+ claude mcp add qa-runbook --transport http https://qarunbook.com/api/mcp \
+ --header "Authorization: Bearer qarb_your_token_here"
+ Copy 
+ Create a workspace and this shows your own endpoint and token.
+ Then add the two skills
+ claude plugin marketplace add Ifeanyiejindu/qarunbook
+claude plugin install qarunbook@qarunbook
+ Copy 
+ /test-checklist
+ Looks through your app and drafts the test plan, with the checks already in it.
+ /qa-runbook
+ Works through the plan — on web and mobile — recording each result and checking fixes again.
+ Free to start. Flat pricing for teams. 
+ No card for the free plan, and no per-seat pricing on any of them — a workspace pays one price, however many people are on it.
+ See the full breakdown, and the FAQ, on the pricing page.
+ Monthly Yearly 
+ 2 months free 
+ Free
+ $0 / mo 
+ For one person testing one app, with every feature switched on.
+ 1 app, just you
+ 150 checks tested a month
+ 30 issues raised a month
+ 2 AI imports a month
+ Every integration: GitHub, GitLab, Linear, Jira, Slack, Microsoft Teams, Sentry, PostHog, email, webhooks and Zapier
+ MCP and both AI skills
+ API access
+ 2 GB of screenshots and recordings
+ Start testing 
+ Most popular Team
+ $29 / mo 
+ For a team testing several apps every release.
+ Unlimited testing — no monthly allowance
+ 15 apps
+ Up to 15 members
+ 50 GB of screenshots and recordings
+ Every integration: GitHub, GitLab, Linear, Jira, Slack, Microsoft Teams, Sentry, PostHog, email, webhooks and Zapier
+ MCP connection and both AI skills
+ Roles and join links for your team
+ API access
+ Start testing 
+ Business
+ $79 / mo 
+ For QA across a whole portfolio of apps and clients.
+ Unlimited testing — no monthly allowance
+ Unlimited apps
+ Up to 50 members
+ 250 GB of screenshots and recordings
+ Every integration: GitHub, GitLab, Linear, Jira, Slack, Microsoft Teams, Sentry, PostHog, email, webhooks and Zapier
+ MCP connection and both AI skills
+ Roles and join links for your team
+ API access
+ Start testing 
+ Enterprise
+ Custom 
+ Unlimited everything, invoiced, with terms that suit your procurement.
+ Unlimited apps and members
+ Unlimited storage
+ Every integration: GitHub, GitLab, Linear, Jira, Slack, Microsoft Teams, Sentry, PostHog, email, webhooks and Zapier
+ MCP connection and both AI skills
+ Invoiced billing
+ Talk to us at hello@qarunbook.com
+ API access
+ Contact us 
+ Prices in USD, before tax. Tax is added only where we’re registered to collect it. Cancel anytime.
+ Start testing your app. Begin with a clear plan. 
+ Create a workspace, add your first app, and bring in whoever helps you test.
+ Create a workspace Sign in 
+ Less time figuring out how to test. More of your app properly checked. 
+ Start with a clear plan today, and always know what needs fixing or checking again.
+ Start testing your app Connect your AI 
+ qarunbook App testing. Easier to do. Easier to do well.
+ Product
+ How it works 
+ Features 
+ Pricing 
+ For agencies 
+ AI testing 
+ Guides 
+ Templates 
+ Resources 
+ Developers
+ Connect your AI 
+ API docs 
+ Plugin on GitHub 
+ Account
+ Create a workspace 
+ Sign in 
+ Company
+ Partners 
+ Press kit 
+ Review us on G2 
+ Privacy 
+ Terms 
+ Contact 
+ © 2026 qarunbook · Made by Skill Seeds · hello@qarunbook.com 
+ Free plan available — no card required

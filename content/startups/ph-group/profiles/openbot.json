@@ -1,0 +1,249 @@
+{
+  "slug": "openbot",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/openbot-3",
+  "excerpt": "OpenBot is a free desktop and mobile app for running a team of AI agents (Codex, Claude Code, Gemini, Grok and more) on your own computer, using the AI plans you already pay for. Features, licence and alternatives.",
+  "content": "<p>OpenBot is a free app for running a team of AI agents on your own computer. Each agent gets a name, instructions and its own workspace; agents message each other, hand off tasks and share files, and you can put several of them in a shared channel with your teammates. Agents run on the AI tools you already have: Codex, Claude Code, Gemini, Grok, OpenCode, Cursor or Cline, or any OpenAI-compatible endpoint, Ollama or LM Studio. You can switch an agent to a different provider and it keeps its workspace and conversation. A built-in browser lets agents open and control web pages, and a queue holds new tasks while an agent is busy.</p><p>According to its site, workspaces, conversations, files and browser data stay on the computer that runs OpenBot rather than on the company's servers. Apps are available for macOS, Windows, Linux, iOS and Android. On Product Hunt, Kamil from the team said local models keep your prompts on your machine but the app still needs an internet connection, and that product analytics are on by default in the iOS app and can be turned off in settings. For teams, paid hosted servers run OpenBot on a Linux machine in the EU.</p><p>OpenBot's code is public on GitHub but is not open source. The repository was first published under the Apache 2.0 licence on 12 August 2026 and switched to the PolyForm Noncommercial License 1.0.0 on 20 August 2026, before the Product Hunt launch. OpenBot's own FAQ says you can read, change and run the code for any noncommercial purpose, that this is not an open-source licence as the OSI defines one, and that commercial use needs a separate licence.</p><p>OpenBot launched on Product Hunt on 6 October 2026 and finished #2 for the day, with 344 upvotes and 66 comments (as of 14 October 2026).</p><p><em>We have not tested OpenBot ourselves. This page brings together its official site, its hosted-server guide, its GitHub repository and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "AI agent workspace",
+    "platform": "macOS, Windows, Linux, iOS and Android",
+    "starts_at": "Free; hosted servers are paid",
+    "schema_category": "ProductivityApplication",
+    "summary_short": "Free app for running a team of AI agents on your own computer with the AI plans you already have",
+    "maker": {
+      "name": "Norbert Bodziony",
+      "url": "https://www.producthunt.com/@norbertbodziony"
+    },
+    "team": [
+      {
+        "name": "Norbert Bodziony",
+        "role": "Founder",
+        "url": "https://www.producthunt.com/@norbertbodziony"
+      },
+      {
+        "name": "Kamil",
+        "role": "Marketing and business",
+        "url": "https://www.producthunt.com/@kamil_cyrek"
+      }
+    ],
+    "ph": {
+      "rank": 2,
+      "votes": 344,
+      "comments": 66,
+      "followers": 911,
+      "launched": "2026-10-06",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/8cdecfc0-c5b9-4dee-8d6d-3d0331167a96.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: OpenBot via Product Hunt",
+        "alt": "OpenBot title card: no extra subscription, runs on your own machine, multiplayer"
+      },
+      {
+        "url": "https://ph-files.imgix.net/3203f65b-17f5-41b2-b66d-9e3de3828294.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: OpenBot via Product Hunt",
+        "alt": "OpenBot 'Bots that work without you': a chain of agents for research, outreach and enrichment triggered by a new sign-up in Slack"
+      },
+      {
+        "url": "https://ph-files.imgix.net/fb673312-c23a-4ae5-a2ee-0bc08bd69302.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "credit": "Image: OpenBot via Product Hunt",
+        "alt": "OpenBot comparison with Grok Bot listing local use, multiplayer, public code and no extra fees, as claimed by OpenBot"
+      }
+    ],
+    "use_cases": [
+      "Running several coding agents with different roles that hand work to each other",
+      "Sending tasks to agents on your desktop from your phone",
+      "Using local models through Ollama or LM Studio to keep prompts on your machine",
+      "Sharing the same agents with teammates in one channel",
+      "Letting an agent browse and act on websites in a built-in browser"
+    ],
+    "audience": {
+      "fit": [
+        "already pay for Claude, ChatGPT, Gemini or Grok and want to run several agents with them",
+        "want agent workspaces and files kept on your own computer",
+        "want to check on agents from your phone"
+      ],
+      "not_fit": [
+        "need to work fully offline: the team said the app requires an internet connection even with local models",
+        "want to reuse the code commercially: the GitHub licence is PolyForm Noncommercial, not an open-source licence such as MIT",
+        "work in a regulated field and cannot accept analytics by default (they can be switched off in the iOS app)"
+      ]
+    },
+    "pricing": {
+      "intro": "The app is free; your agents use the AI subscriptions or API keys you already have. Paid hosted servers are offered for teams that do not want to run their own machine.",
+      "url": "https://openbot.run/",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "OpenBot app",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "No hidden fees or locked features, according to the site"
+        },
+        {
+          "name": "Hosted server: Starter",
+          "price": "See OpenBot's site",
+          "currency": "USD",
+          "detail": "Up to 3 team members, 12 GB storage, base speed"
+        },
+        {
+          "name": "Hosted server: Standard",
+          "price": "See OpenBot's site",
+          "currency": "USD",
+          "detail": "Up to 10 members, 50 GB storage, twice Starter's speed"
+        },
+        {
+          "name": "Hosted server: Pro",
+          "price": "See OpenBot's site",
+          "currency": "USD",
+          "detail": "Up to 25 members, 100 GB storage, four times base speed"
+        }
+      ],
+      "notes": [
+        "Hosted servers run in the EU and do not include AI model access. Yearly billing saves 20%.",
+        "The team also offers to run OpenBot on a dedicated Mac mini by arrangement."
+      ]
+    },
+    "pros": [
+      "Free, using AI plans you already pay for",
+      "Data stays on the machine running OpenBot, according to the company",
+      "Agents keep their context when you switch provider",
+      "Apps for desktop and mobile, including Linux and Android"
+    ],
+    "cons": [
+      "Source-available, not open source: the PolyForm Noncommercial licence needs a separate licence for commercial use of the code",
+      "Needs an internet connection even with local models",
+      "Analytics on by default in the iOS app"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": [
+          "A local-first alternative to cloud assistants",
+          "Sending tasks from a phone",
+          "Easy enough for non-technical users, the team said"
+        ],
+        "asked": [
+          "Whether it works offline with local models (local models work, but an internet connection is required)",
+          "Whether agents can hand tasks to each other while keeping context (yes, via messages or shared channels)",
+          "Whether telemetry can be turned off (yes, in the iOS app's privacy settings)"
+        ],
+        "criticised": []
+      },
+      "quotes": [
+        {
+          "text": "Can I send tasks remotely from my phone? Check in on progress?",
+          "author": "Matt Gardner",
+          "url": "https://www.producthunt.com/products/openbot-3?comment=5925697"
+        },
+        {
+          "text": "How do you keep up with the changing tools?",
+          "author": "Jay Smith",
+          "url": "https://www.producthunt.com/products/openbot-3?comment=5926149"
+        }
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as OpenBot alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {
+          "name": "TypingMind",
+          "url": "https://www.producthunt.com/products/typing-mind",
+          "what": "Chat interface for many LLM providers, pay per API use",
+          "starts_at": "See its pricing page",
+          "ph_rating": 5,
+          "ph_reviews": 20,
+          "ph_url": "https://www.producthunt.com/products/typing-mind",
+          "difference": "A chat front end for models; OpenBot runs persistent agents that work in their own workspaces."
+        },
+        {
+          "name": "Flowise",
+          "url": "https://www.producthunt.com/products/build-llms-apps-easily",
+          "what": "Build AI agents visually",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.75,
+          "ph_reviews": 4,
+          "ph_url": "https://www.producthunt.com/products/build-llms-apps-easily",
+          "difference": "A visual builder for agent flows rather than a desktop app that runs existing coding agents."
+        },
+        {
+          "name": "GPTBots.ai",
+          "url": "https://www.producthunt.com/products/gptbots-ai",
+          "what": "Platform for building AI agent teams",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.91,
+          "ph_reviews": 22,
+          "ph_url": "https://www.producthunt.com/products/gptbots-ai",
+          "difference": "A hosted business platform; OpenBot runs on your own machine."
+        }
+      ],
+      "more": "Product Hunt also lists Claude and Sparks AI. OpenBot positions itself against Grok Bot."
+    },
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/openbot-3/reviews",
+      "as_of": "2026-10-14"
+    },
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/openbot-3",
+      "x": {
+        "none": "We found no posts about OpenBot on X to link yet.",
+        "search_url": "https://x.com/search?q=openbot.run&f=live",
+        "profile_url": "https://twitter.com/openbot_"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is OpenBot?",
+        "a": "A free app for running a team of AI agents on your own computer, using Codex, Claude Code, Gemini, Grok, OpenCode, Cursor, Cline or local models."
+      },
+      {
+        "q": "Is OpenBot free?",
+        "a": "Yes, the app is free. Your agents use the AI plans or keys you already pay for. Hosted servers for teams are paid."
+      },
+      {
+        "q": "Is OpenBot open source?",
+        "a": "No. Its code is public on GitHub under the PolyForm Noncommercial License 1.0.0, which allows reading, changing and running it only for noncommercial purposes; OpenBot's FAQ says commercial use needs a separate licence. The repository first used Apache 2.0 and switched on 20 August 2026, before the launch."
+      },
+      {
+        "q": "Can OpenBot run offline?",
+        "a": "Not fully. The team said on Product Hunt that it supports local models through Ollama and LM Studio but currently needs an internet connection."
+      },
+      {
+        "q": "Does OpenBot collect analytics?",
+        "a": "The team said product analytics are on by default in the iOS app and can be turned off under Settings, General, Privacy."
+      }
+    ],
+    "sources": [
+      {
+        "label": "OpenBot official site",
+        "url": "https://openbot.run/"
+      },
+      {
+        "label": "OpenBot hosted servers guide",
+        "url": "https://openbot.run/guides/openbot-hosted-servers"
+      },
+      {
+        "label": "OpenBot licence on GitHub",
+        "url": "https://github.com/nightly-labs/openbot/blob/main/LICENSE"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/openbot-3"
+      },
+      {
+        "label": "OpenBot LICENSE history on GitHub",
+        "url": "https://github.com/nightly-labs/openbot/commits/main/LICENSE"
+      }
+    ]
+  }
+}

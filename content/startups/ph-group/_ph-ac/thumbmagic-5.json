@@ -1,0 +1,104 @@
+{
+ "input": "https://www.producthunt.com/posts/thumbmagic-5",
+ "final_url": "https://www.producthunt.com/products/thumbmagic-3?launch=thumbmagic-5",
+ "launch": {
+  "slug": "thumbmagic-5",
+  "featuredAt": "2026-06-23T00:01:00-07:00",
+  "dailyRank": "5",
+  "points": 312,
+  "commentsCount": 67,
+  "source": "launches page (no gallery/comments)",
+  "makers": [
+   {
+    "name": "Max Chaplin",
+    "username": "maxchaplin",
+    "headline": "Builder @ Submagic"
+   },
+   {
+    "name": "Shivam Gupta",
+    "username": "shivamgco",
+    "headline": "Head of Partnerships at Submagic"
+   },
+   {
+    "name": "David Zitoun",
+    "username": "david_zitoun",
+    "headline": "Co-Founder @submagic  🧡"
+   },
+   {
+    "name": "tsifei chan",
+    "username": "tsifeichan",
+    "headline": "CTO @Submagic"
+   },
+   {
+    "name": "Lakshya Singh",
+    "username": "lakshya_singh",
+    "headline": "AI & Growth Consultant"
+   },
+   {
+    "name": "Elie",
+    "username": "elie_lecha",
+    "headline": "CMO @Submagic"
+   }
+  ]
+ },
+ "product": {
+  "name": "Thumbmagic",
+  "slug": "thumbmagic-3",
+  "tagline": "Generate viral YouTube & Reels thumbnails with AI",
+  "description": "AI-powered thumbnail generator for YouTube & Reels. Create, personalize, and edit thumbnails designed to drive more clicks and views, trusted by thousands of creators.",
+  "websiteUrl": "https://www.thumbmagic.co",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 638,
+  "twitterUrl": "https://twitter.com/thumbmagic_co",
+  "linkedinUrl": "",
+  "instagramUrl": "",
+  "githubUrl": "",
+  "postsCount": 2,
+  "screenshots": [
+   "https://ph-files.imgix.net/ffccbf21-d974-45b7-8cd4-7efecdba261e.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/04a0cc74-3372-4f89-a5f9-bcf9338fc42a.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/81884d99-1ee3-402c-ba1d-a0b44cf1e99c.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/97633f0e-7a7b-4c72-8af0-649e0183e1db.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/5c06e11d-0bea-48c3-a943-0e8b704ffb54.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

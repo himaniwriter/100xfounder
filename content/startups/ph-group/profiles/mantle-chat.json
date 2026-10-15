@@ -1,0 +1,131 @@
+{
+ "slug": "mantle-chat",
+ "ph_url": "https://www.producthunt.com/products/mantle-chat",
+ "existing_listing_slug": null,
+ "website": "https://mantle.chat/",
+ "excerpt": "Mantle Chat is a team chat app where teammates and AI models or agents work in the same channels: @mention GPT, Claude or Gemini, build shared agents, schedule tasks and connect tools. Free for up to 10 members; paid from $10 per member a month billed yearly. Pricing and alternatives.",
+ "content": "<p>Mantle Chat is a team messaging platform with AI built into the conversation. Teams work in Slack- or Discord-style channels, DMs and threads, and can @mention an AI model such as GPT, Claude, Gemini, Grok or DeepSeek, or a custom agent, in the middle of a discussion so everyone sees the answer. Agents can be built and shared across the team, trained on a shared knowledge base of documents, PDFs, images, code and CSV files, and connected to tools like Notion, Linear and Gmail. Tasks can run on a schedule or a trigger, and the app also has canvases, voice and video calls and screen sharing.</p><p>In a channel, an agent works with the shared channel history; turning a message into a thread gives it a separate context, so several agents can work in parallel. The founders said on Product Hunt that tools run with the credentials of the person who invoked the agent, or of whoever created a scheduled task. Separate workspaces keep projects or departments apart. Paid plans give access to 28 hosted models and differ mainly in AI credits per member.</p><p>Mantle Chat was co-founded by Katja Danilina and Ilia Barchugov. It launched on Product Hunt on 19 May 2026 and finished #4 for the day with 312 upvotes and 41 comments.</p><p><em>We have not tested Mantle Chat ourselves. This page brings together Mantle Chat's website, pricing, about and contact pages, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Team chat with AI",
+  "platform": "Web and desktop",
+  "starts_at": "Free for up to 10 members; Core $10 per member/month billed yearly",
+  "schema_category": "CommunicationApplication",
+  "summary_short": "Team chat where teammates, AI models and shared agents work in the same channels",
+  "maker": {"name": "Katja Danilina", "url": "https://www.producthunt.com/@katja_danilina"},
+  "team": [
+   {"name": "Katja Danilina", "role": "Co-founder", "url": "https://www.producthunt.com/@katja_danilina"},
+   {"name": "Ilia Barchugov", "role": "Co-founder", "url": "https://www.producthunt.com/@barchewbacca"},
+   {"name": "Kruti Parekh", "role": "Maker", "url": "https://www.producthunt.com/@krutiparekh16"}
+  ],
+  "ph": {"rank": 4, "votes": 312, "comments": 41, "followers": 531, "launched": "2026-05-19", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/62eafeb7-36a4-49c9-8708-7a55e715e8fa.png?auto=format&fit=max&w=1400", "w": 4400, "h": 2470, "credit": "Image: Mantle Chat via Product Hunt", "alt": "Mantle Chat channels: Claude replying with a Linear status update in a team channel alongside teammates"},
+   {"url": "https://ph-files.imgix.net/a9d03b3a-c5c1-4674-8e0e-d423cd19abeb.png?auto=format&fit=max&w=1400", "w": 4400, "h": 2470, "credit": "Image: Mantle Chat via Product Hunt", "alt": "Mantle Chat tasks screen scheduling an autonomous task to run daily"},
+   {"url": "https://ph-files.imgix.net/b7735b24-e69f-42cd-86a7-48bbed207522.png?auto=format&fit=max&w=1400", "w": 4400, "h": 2523, "credit": "Image: Mantle Chat via Product Hunt", "alt": "Mantle Chat custom email agent connected to Gmail answering a request in a chat"}
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Katja Danilina says the team built Mantle Chat because AI at work should feel collaborative rather than isolated. Talking to teams, they found people already used AI, but alone: messaging in Slack or Teams, AI in separate private chats, and a lot of copying in between.",
+    "Mantle Chat brings both into one workspace so the whole team can learn and work with AI together, with models and agents in shared channels, tasks that run on their own, and integrations with the tools teams already use."
+   ],
+   "attribution": "Katja Danilina, co-founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/mantle-chat?comment=5375911"
+  },
+  "use_cases": [
+   "Asking an AI model a question in a team channel so everyone sees the answer",
+   "Building shared agents that use the team's documents and connected tools",
+   "Scheduling agents, such as a daily summary of a Linear backlog",
+   "Keeping project or department knowledge separate in its own workspace"
+  ],
+  "audience": {
+   "fit": [
+    "are a small team that wants chat and AI in one place instead of Slack plus separate AI apps",
+    "want to use several AI models without separate subscriptions",
+    "want prompts and AI answers visible to the whole team"
+   ],
+   "not_fit": [
+    "rely on HubSpot or Zendesk integrations: the founder said these were planned, not available",
+    "need versioning of AI-assisted decisions: the founder said replays exist but versioning does not",
+    "are a large company tied to Slack or Teams"
+   ]
+  },
+  "pricing": {
+   "intro": "Mantle Chat has a free plan and per-member paid plans that differ mainly in AI credits. Prices are in US dollars, billed annually, from Mantle Chat's pricing page; annual billing saves 15% over monthly.",
+   "url": "https://mantle.chat/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "1,500 AI credits a month, efficient models, up to 10 members, 3 workspaces, 2 shared agents, 1 integration, 90-day history"},
+    {"name": "Core", "price": "$10 per member/month (billed $120 a year)", "amount": 10, "currency": "USD", "detail": "10,000 credits, all 28 hosted models and web search, scheduled tasks, 3 integrations, unlimited history; 14-day trial"},
+    {"name": "Plus", "price": "$25 per member/month (billed $300 a year)", "amount": 25, "currency": "USD", "detail": "25,000 credits, 10 integrations, SSO for 25+ members"},
+    {"name": "Max", "price": "$99 per member/month (billed $1,188 a year)", "amount": 99, "currency": "USD", "detail": "100,000 credits, 25 integrations, priority support"}
+   ],
+   "notes": [
+    "When credits run out, AI pauses but the workspace keeps working; 10,000 extra credits cost $12. Mantle says it never bills overage silently.",
+    "Enterprise plans add contracted usage, SCIM and audit logs."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Runbear, Sim and Kollab among Mantle Chat's alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "Runbear", "url": "https://runbear.io/", "what": "AI teammates that automate workflows inside Slack and Teams", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 8, "ph_url": "https://www.producthunt.com/products/runbear", "difference": "Adds agents to Slack or Teams; Mantle Chat replaces the chat app itself."},
+    {"name": "Sim", "url": "https://www.sim.ai/", "what": "Open-source workspace for AI agents and workflows", "starts_at": "See its pricing page", "ph_rating": 4.67, "ph_reviews": 6, "ph_url": "https://www.producthunt.com/products/sim-studio", "difference": "Workflow builder for agents, without team messaging at the centre."},
+    {"name": "Kollab", "url": "https://www.producthunt.com/products/kollab-2", "what": "Shared workspace where teams work with agents", "starts_at": "See its pricing page", "ph_url": "https://www.producthunt.com/products/kollab-2", "difference": "A similar team-plus-agents workspace; compare integrations and pricing."}
+   ],
+   "more": "Product Hunt also lists Claude and Velozity."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/mantle-chat/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["@mentioning AI in the same channel as teammates", "Shared AI context instead of isolated prompts"],
+    "asked": [
+     "How agents in the same channel keep context apart (threads have separate context)",
+     "Whose credentials shared agents use (the invoking user, or the creator for scheduled tasks)",
+     "Whether context persists across sessions (yes, via workspace and agent knowledge bases)",
+     "Whether HubSpot and Zendesk are coming (planned)"
+    ],
+    "criticised": ["No versioning of how AI-assisted decisions were reached"]
+   },
+   "quotes": [
+    {"text": "Love the \"@ the model in the same channel as your teammates\" framing, that's the part Slack-with-a-bot-bolted-on always got wrong.", "author": "Mahdi Nouri", "url": "https://www.producthunt.com/products/mantle-chat?comment=5382524"},
+    {"text": "when everyone's prompting Claude or GPT separately, institutional knowledge just evaporates.", "author": "Ansari Adin", "url": "https://www.producthunt.com/products/mantle-chat?comment=5381317"},
+    {"text": "Do you have any versioning or replay for how an AI-assisted decision was reached in a shared channel?", "author": "Dhiraj Patel", "url": "https://www.producthunt.com/products/mantle-chat?comment=5381771"}
+   ]
+  },
+  "pros": [
+   "Chat and many AI models in one shared workspace",
+   "Free plan for up to 10 members",
+   "Clear credit system with no silent overage billing",
+   "Per-user credentials for agents using connected tools"
+  ],
+  "cons": [
+   "Integrations are limited per person on lower plans (1 on Free, 3 on Core)",
+   "HubSpot and Zendesk integrations were not available at launch",
+   "Switching team chat apps is a big change for established teams",
+   "Free plan keeps only 90 days of history"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/mantle-chat",
+   "quotes": [
+    {"author": "Artur Brugeman", "url": "https://www.producthunt.com/products/mantle-chat?comment=5382861", "text": "Asked how a shared agent handles tools where teammates have different permissions.", "reply": "Katja Danilina said tools run with the credentials of the user who invoked the agent, or of the creator for scheduled tasks."},
+    {"author": "Mahdi Nouri", "url": "https://www.producthunt.com/products/mantle-chat?comment=5382524", "text": "Asked how parallel agents in one channel keep context apart.", "reply": "Katja Danilina said agents use channel context, and turning a message into a thread gives it a separate history."}
+   ],
+   "x": {"none": "We found no posts about Mantle Chat on X to link yet.", "search_url": "https://x.com/search?q=mantle.chat&f=live", "profile_url": "https://x.com/mantlechat"}
+  },
+  "faq": [
+   {"q": "What is Mantle Chat?", "a": "A team messaging app where teammates, AI models and shared AI agents work together in the same channels, with scheduled tasks, a knowledge base and tool integrations."},
+   {"q": "Is Mantle Chat free?", "a": "Yes, for up to 10 members with 1,500 AI credits a month and a selected set of models. Paid plans start at $10 per member a month billed yearly."},
+   {"q": "Which AI models can I use?", "a": "Paid plans include all 28 hosted models, including GPT, Claude, Gemini, Grok and DeepSeek; the free plan includes six."},
+   {"q": "What happens when credits run out?", "a": "AI pauses while the workspace keeps working. You can upgrade or buy 10,000 credits for $12."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists Claude, Sim, Velozity, Runbear and Kollab."}
+  ],
+  "sources": [
+   {"label": "Mantle Chat official site", "url": "https://mantle.chat/"},
+   {"label": "Mantle Chat pricing", "url": "https://mantle.chat/pricing"},
+   {"label": "About Mantle Chat", "url": "https://mantle.chat/about"},
+   {"label": "Mantle Chat contact", "url": "https://mantle.chat/contact"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/mantle-chat"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/mantle-chat/alternatives"}
+  ]
+ }
+}

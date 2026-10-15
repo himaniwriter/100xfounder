@@ -1,0 +1,101 @@
+{
+  "slug": "pushary-5",
+  "ph_url": "https://www.producthunt.com/posts/pushary-5",
+  "also_covers": ["https://www.producthunt.com/posts/pushary-4"],
+  "existing_listing_slug": null,
+  "website": "https://pushary.com",
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; the launch comments were not available, so there are no Product Hunt quotes.",
+  "excerpt": "Pushary sends your AI coding agents' permission requests to your phone or Mac so you can approve or deny them while away. Pricing from $9.99 a month.",
+  "content": "<p>Pushary is a control panel for AI agents. When an agent such as Claude Code, Codex, Cursor, Gemini CLI, Antigravity CLI or Hermes stops because it needs a permission or an answer, Pushary sends the question to your phone's lock screen, your Mac's notch, Slack or a web app. You tap approve, deny or answer, the agent carries on, and every decision is saved in an audit log. Per-tool policies can approve safe steps automatically and ask you only about ones you can't undo.</p><p>Setup is a single <code>npx</code> command on Mac, Windows or Linux, and you pair your iPhone or Android phone by scanning a QR code. There are also Partner plans for companies that want their own users to approve what their AI agent does, through TypeScript, Python, REST and MCP.</p><p>Pushary's founder on Product Hunt is Aadil Ghani. Pushary has launched there more than once: on 24 July 2026 it finished #2 for the day with 330 upvotes and 123 comments, and its 18 September 2026 launch of the native iPhone and Android apps finished #8 with 183 upvotes and 17 comments. It has 1 Product Hunt review, rated 5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Pushary ourselves. This page brings together its official site and pricing page, its Product Hunt pages and the public pricing page of a comparable tool, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI agent tools",
+    "platform": "Mac, Windows and Linux setup; iPhone, Android and Mac apps",
+    "starts_at": "$9.99/month after a 3-day free trial",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Approve or deny your AI agents' requests from your phone's lock screen",
+    "maker": {"name": "Aadil Ghani", "url": "https://www.producthunt.com/@aadilghani"},
+    "team": [
+      {"name": "Aadil Ghani", "role": "Founder", "url": "https://www.producthunt.com/@aadilghani"}
+    ],
+    "ph": {"rank": 8, "votes": 183, "comments": 17, "followers": 1297, "launched": "2026-09-18", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/82f7afba-2460-4b00-bca2-d6ea387490cb.png?auto=format&fit=max&w=1400", "credit": "Image: Pushary on Product Hunt",
+       "alt": "Pushary graphic 'approve your AI agents from your lock screen' with an iPhone lock-screen notification from Claude Code asking to run a database migration"},
+      {"url": "https://ph-files.imgix.net/689bebca-46c4-4181-8612-f051b4347ee6.png?auto=format&fit=max&w=1400", "credit": "Image: Pushary on Product Hunt",
+       "alt": "Pushary 'every agent, one inbox' graphic with a Fleet screen listing running agents and one that needs you"},
+      {"url": "https://ph-files.imgix.net/7c36c8ad-3747-4bd3-b330-4da55abb5daf.png?auto=format&fit=max&w=1400", "credit": "Image: Pushary on Product Hunt",
+       "alt": "Pushary 'every decision on the record' graphic with an audit list of approved and denied agent actions"},
+      {"url": "https://ph-files.imgix.net/41717d42-0321-4412-966d-f7e9df03133b.png?auto=format&fit=max&w=1400", "credit": "Image: Pushary on Product Hunt",
+       "alt": "Pushary 'one command' graphic showing the npx setup command and a QR code to connect your phone"}
+    ],
+    "use_cases": [
+      "Leaving a long Claude Code or Codex task running and approving its next step from your phone",
+      "Auto-approving safe agent actions while still being asked about deletes or deploys",
+      "Keeping an audit trail of every agent decision for a team",
+      "Letting your own product's users approve what your AI agent does (Partner plans)"
+    ],
+    "audience": {
+      "fit": [
+        "run coding agents on long tasks and walk away from your desk",
+        "want rules for which agent actions run on their own",
+        "need a shared record of approvals for a team or security review"
+      ],
+      "not_fit": [
+        "keep agents in full auto mode and never approve anything by hand",
+        "want a free tool: all plans are paid after a 3-day trial"
+      ]
+    },
+    "pricing": {
+      "intro": "Pushary's agent plans all include the phone app and the Mac app, with a 3-day free trial. Prices are in US dollars.",
+      "url": "https://pushary.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Agent", "price": "$9.99/month", "amount": 9.99, "currency": "USD", "detail": "One person, every agent; 5,000 notifications a month; permission policies; full MCP and API access; 30-day history"},
+        {"name": "Agent Pro", "price": "$19.99/month", "amount": 19.99, "currency": "USD", "detail": "Unlimited notifications, budgets, priority support, policy suggestions, 90-day history"},
+        {"name": "Team", "price": "$59.99/month", "amount": 59.99, "currency": "USD", "detail": "Up to 10 members, shared audit trail with export, weekly team digest, 365-day history"},
+        {"name": "Partner Launch", "price": "$99/month", "amount": 99, "currency": "USD", "detail": "For companies shipping an AI agent: up to 5,000 of your users and 25,000 approval requests a month"},
+        {"name": "Partner Growth", "price": "$299/month", "amount": 299, "currency": "USD", "detail": "Up to 25,000 of your users and 100,000 approval requests a month"}
+      ],
+      "notes": ["Cancel any time and switch plans whenever, according to the pricing page. Larger Partner and Enterprise plans are also listed."]
+    },
+    "alternatives": {
+      "intro": "A general-purpose option that also gets alerts to your phone. Price from its own site on 14 October 2026.",
+      "items": [
+        {"name": "ntfy", "url": "https://ntfy.sh/", "what": "Open-source service for sending push notifications to your phone from scripts", "starts_at": "Free; Supporter from $5/month billed annually",
+         "difference": "Sends one-way notifications you wire up yourself; Pushary is built for agents, with two-way approvals, policies and an audit trail."}
+      ]
+    },
+    "reviews": {"count": 1, "rating": 5, "url": "https://www.producthunt.com/products/pushary/reviews", "as_of": "2026-10-14"},
+    "pros": [
+      "Works with many coding agents from one setup",
+      "Approve from lock screen, Mac notch, Slack or the web",
+      "Policies auto-approve safe steps; audit log of every decision",
+      "One-command setup with QR pairing"
+    ],
+    "cons": [
+      "No free plan beyond the 3-day trial",
+      "Your computer has to stay on for phone approvals to reach a running agent",
+      "The base plan caps notifications at 5,000 a month"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/pushary",
+      "x": {"profile_url": "https://x.com/usepushary", "search_url": "https://x.com/search?q=pushary&f=live", "none": "Apart from Pushary's own account, we found no posts on X clearly about the product."}
+    },
+    "faq": [
+      {"q": "What is Pushary?", "a": "A control panel that sends your AI agents' permission requests and questions to your phone, Mac, Slack or the web, so you can approve or deny them while away."},
+      {"q": "How much does Pushary cost?", "a": "Agent is $9.99 a month, Agent Pro $19.99 and Team $59.99, each with a 3-day free trial. Partner plans for companies start at $99 a month."},
+      {"q": "Which agents does Pushary work with?", "a": "Claude Code, Codex, Cursor, Gemini CLI, Antigravity CLI, Hermes, Windsurf, Claude Cowork and any MCP agent, according to its site and Product Hunt page."},
+      {"q": "Does Pushary see my code?", "a": "Its site says Pushary sends the step that needs you, not your codebase."},
+      {"q": "How do I set it up?", "a": "Run one npx command on Mac, Windows or Linux, connect your agents, and pair your phone by scanning a QR code."}
+    ],
+    "sources": [
+      {"label": "Pushary official site", "url": "https://pushary.com/"},
+      {"label": "Pushary pricing", "url": "https://pushary.com/pricing"},
+      {"label": "Product Hunt product page", "url": "https://www.producthunt.com/products/pushary"},
+      {"label": "Product Hunt launches", "url": "https://www.producthunt.com/products/pushary/launches"},
+      {"label": "Product Hunt makers", "url": "https://www.producthunt.com/products/pushary/makers"},
+      {"label": "ntfy", "url": "https://ntfy.sh/"}
+    ]
+  }
+}

@@ -1,0 +1,293 @@
+{
+ "slug": "zaro",
+ "ph_url": "https://www.producthunt.com/posts/zaro",
+ "existing_listing_slug": null,
+ "website": "https://zaro.ai/",
+ "excerpt": "Zaro is a shared context layer for company AI: it keeps how the business runs as versioned, permissioned files that agents read and write. Pricing on request.",
+ "content": "<p>Zaro builds what it calls a shared context layer for a company's AI. Instead of each assistant or agent starting from scratch, Zaro keeps one current record of how the business runs, written as plain, readable files (playbooks, customer tiers, team roles, brand voice) that agents read from and write back to as they work. Nothing is overwritten, so you can read any file as it stood on a past date and roll it back; access is set per folder for people and automated work alike; and each answer can be traced to the file version it came from.</p><p>Zaro connects to more than 120 systems, including SharePoint, Microsoft 365, Teams, Salesforce, Confluence, Jira, Slack, Snowflake, Databricks, Google Drive and HubSpot, and offers an API, an open agent protocol and a scoped browser for systems with no API. Its security pages describe path-level permissions, controls on which tools an agent may call, live monitoring and an exportable audit trail, and say company context is never used to train others' models. Example uses on its site cover retail store performance, sales coaching from calls and deals, and multi-plant manufacturing decisions.</p><p>The site says the team comes from Convergence, PolyAI, Salesforce, Celonis, Lovable and Pigment, and lists Cherry and Hugging Face as backers. Zaro launched on Product Hunt on 25 June 2026, hunted by Rohan Chaubey, with the tagline 'Build agents & apps on top of your context with one prompt', and finished #3 for the day with 399 upvotes and 96 comments. Co-founder Michael Bajwa wrote there that he was previously part of the Convergence team through its acquisition by Salesforce. At that launch Zaro was pitched as a place to pull your scattered work from Gmail, Slack and notes into one place and build self-updating apps from it, with free options and credit-based pricing. Its website now sells a company-wide context layer that makes a business 'AI-ready', aimed at larger organisations, with no public prices or self-serve sign-up; you talk to the team.</p><p><em>We have not tested Zaro ourselves. This page brings together its official site, platform and security pages, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI agents",
+  "platform": "Web platform with API and connectors",
+  "starts_at": "Pricing not published",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Shared, versioned company context that AI agents read from and write back to",
+  "use_cases": [
+   "Giving every AI assistant in a company the same current playbooks and rules",
+   "Explaining why one store, region or plant outperforms another, with sources",
+   "Turning top sales reps' calls and deals into a playbook",
+   "Controlling which folders and tools an agent may read, call or change",
+   "Auditing what an AI read and wrote for a given answer"
+  ],
+  "audience": {
+   "fit": [
+    "run a mid-size or large company with knowledge spread across many systems",
+    "need answers your compliance team can trace to a source and version",
+    "want agents to share and update one body of company knowledge"
+   ],
+   "not_fit": [
+    "are a solo founder or small team looking for a self-serve tool with a public price",
+    "only need a chatbot over a few documents",
+    "want to try it today without talking to sales"
+   ]
+  },
+  "pricing": {
+   "intro": "Pricing not published. At its Product Hunt launch in June 2026 the co-founder said Zaro runs on credits, so you pay for what you use rather than per seat, and the listing showed free options; the current website asks you to talk to the team and lists no prices.",
+   "url": "https://zaro.ai/contact",
+   "checked": "2026-10-15",
+   "plans": []
+  },
+  "alternatives": {
+   "intro": "Other ways to give company AI shared knowledge. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Dust",
+     "url": "https://dust.tt/",
+     "what": "Platform for building AI agents on company data and tools",
+     "starts_at": "Free (500 credits); Pro €24 per seat a month",
+     "difference": "Self-serve agents over connected data; Zaro keeps a versioned, file-based record that agents also write back to."
+    },
+    {
+     "name": "Glean",
+     "url": "https://www.glean.com/",
+     "what": "Enterprise AI search and assistant across company apps",
+     "starts_at": "See its pricing page",
+     "difference": "Zaro's own site argues that knowledge graphs built from snapshots go stale, while it reads files directly as the work changes them."
+    }
+   ]
+  },
+  "pros": [
+   "Every piece of context is a readable, versioned file you can roll back",
+   "Folder-level permissions apply equally to people and agents",
+   "120+ connectors plus API, agent protocol and scoped browser",
+   "Answers trace back to the file version they came from"
+  ],
+  "cons": [
+   "No public pricing or self-serve sign-up",
+   "Aimed at larger companies rather than small teams",
+   "The product's focus has shifted since its Product Hunt launch"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/zaro",
+   "x": {
+    "search_url": "https://x.com/search?q=zaro.ai&f=live",
+    "posts": [
+     {
+      "url": "https://x.com/GrishinRobotics/status/2065035039109222717",
+      "author": "Grishin Robotics",
+      "note": "post about Zaro's pre-seed round and its idea that companies should own the context their AI agents create"
+     }
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Curious how you handle context that's messy or contradictory.",
+     "reply": "Zaro tries to surface conflicts between sources rather than silently pick a winner, because that is where automation does the wrong thing with full confidence.",
+     "author": "Gal Dayan",
+     "url": "https://www.producthunt.com/products/zaro?comment=5482810"
+    },
+    {
+     "text": "How does Zaro compare with tools like Zapier, Make, or Taskade when the workflow gets more complex?",
+     "reply": "Those tools are good for deterministic plumbing; Zaro works from the actual context and figures out the path, aiming at messier work that doesn't fit a clean diagram.",
+     "author": "Kate Ramakaieva",
+     "url": "https://www.producthunt.com/products/zaro?comment=5483272"
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Zaro?",
+    "a": "A shared context layer for company AI. It keeps one current, versioned record of how the business runs as readable files, which AI agents read from and write back to, with permissions and an audit trail."
+   },
+   {
+    "q": "Has Zaro changed since its Product Hunt launch?",
+    "a": "Yes. At its June 2026 launch the Product Hunt listing described a tool for pulling your scattered work (Gmail, Slack, notes) into one place and building self-updating apps from it, with free options. In October 2026 its website describes a shared context layer for company AI, sold to organisations through a conversation with the team."
+   },
+   {
+    "q": "How much does Zaro cost?",
+    "a": "Zaro does not publish prices. You talk to its team, which scopes one process first."
+   },
+   {
+    "q": "What does Zaro connect to?",
+    "a": "More than 120 systems including SharePoint, Microsoft 365, Teams, Outlook, Salesforce, Confluence, Jira, Slack, Snowflake, Databricks, Google Drive and HubSpot, plus an API, an open agent protocol and a scoped browser."
+   },
+   {
+    "q": "Is our data used to train models?",
+    "a": "Zaro's security page says company context stays in your workspace and is never used to train others' models."
+   },
+   {
+    "q": "What are the alternatives to Zaro?",
+    "a": "Dust for building AI agents on company data, or Glean for enterprise AI search."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Zaro official site",
+    "url": "https://zaro.ai/"
+   },
+   {
+    "label": "Zaro platform",
+    "url": "https://zaro.ai/platform"
+   },
+   {
+    "label": "Zaro security",
+    "url": "https://zaro.ai/security"
+   },
+   {
+    "label": "Zaro contact",
+    "url": "https://zaro.ai/contact"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/zaro"
+   },
+   {
+    "label": "Dust pricing",
+    "url": "https://dust.tt/home/pricing"
+   },
+   {
+    "label": "Glean pricing",
+    "url": "https://www.glean.com/pricing"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/zaro/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 3,
+   "votes": 399,
+   "comments": 96,
+   "followers": 1157,
+   "launched": "2026-06-25",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Michael Bajwa",
+    "role": "Co-founder of Zaro",
+    "url": "https://www.producthunt.com/@zaro_ai"
+   },
+   {
+    "name": "JY",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@jysta"
+   },
+   {
+    "name": "William Ross",
+    "role": "Founding forward-deployed engineer",
+    "url": "https://www.producthunt.com/@william_ross4"
+   },
+   {
+    "name": "Nikita Pokryshko",
+    "role": "Founding product engineer at Zaro",
+    "url": "https://www.producthunt.com/@elponi"
+   },
+   {
+    "name": "Sammy Taylor",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@sammy_taylor2"
+   },
+   {
+    "name": "timo",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@timoite"
+   },
+   {
+    "name": "Stefan Ross",
+    "role": "GTM leader",
+    "url": "https://www.producthunt.com/@stefan_ross"
+   },
+   {
+    "name": "zheng qian",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@zheng_qian1"
+   },
+   {
+    "name": "Ayman Elmezgueldi",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@ayman_elmezgueldi"
+   },
+   {
+    "name": "Yannis Karagiannidis",
+    "role": "Growth",
+    "url": "https://www.producthunt.com/@ykaragiannidis"
+   }
+  ],
+  "maker": {
+   "name": "Michael Bajwa",
+   "url": "https://www.producthunt.com/@zaro_ai"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/37091e78-ea2d-4f96-87d1-40cae53299ef.png?auto=format&fit=max&w=1400",
+    "alt": "Zaro graphic 'Give it all you've got' with a workspace of company files organised into folders such as Sales, Product and Compliance",
+    "credit": "Image: Zaro on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/c9c4dea0-d701-445a-b953-1c2500e07884.png?auto=format&fit=max&w=1400",
+    "alt": "Zaro graphic 'Describe it. Get it. A working app, not a prototype' with a prompt box and generated apps such as a revenue tracker",
+    "credit": "Image: Zaro on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/ada261c8-2e4b-40a1-934f-0beaa36b2602.png?auto=format&fit=max&w=1400",
+    "alt": "Zaro graphic 'Add agents. Set a schedule.' with sales pipeline agents next to a generated CRM pipeline app",
+    "credit": "Image: Zaro on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/0daf6365-a6ca-4314-a1e9-456d727b6d45.png?auto=format&fit=max&w=1400",
+    "alt": "Zaro answering a team question in chat by pointing to the relevant file",
+    "credit": "Image: Zaro on Product Hunt",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Michael Bajwa, Zaro's co-founder, says he was part of the Convergence team through its acquisition by Salesforce and left to build Zaro after seeing that context infrastructure needed rebuilding for a world where agents do real work.",
+    "He described Zaro at launch as an AI operations layer that takes on the repetitive work teams get stuck on (context-switching, manual handoffs between tools) so people can focus on what needs a human, and said it runs on credits rather than per-seat pricing."
+   ],
+   "attribution": "Michael Bajwa, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/zaro?comment=5479671"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Starting from the context people already have in Gmail and Slack instead of asking them to set it up",
+     "Building working apps by describing them"
+    ],
+    "asked": [
+     "How it handles messy or contradictory sources (it surfaces conflicts rather than silently picking one, the team says)",
+     "Whether there is manual control over what context an app uses (yes, alongside relevance, recency and source weighting)",
+     "How it compares with Zapier or Make (it aims at messier work rather than fixed flowcharts)",
+     "Whether non-technical teams can edit apps (yes, in natural language)"
+    ],
+    "criticised": [
+     "A commenter noted that credit-based pricing makes spend harder to predict and asked how to cap or forecast it"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Zaro starts from the other end: your context already exists across Gmail and Slack, so skip the setup and just describe what you need.",
+     "author": "Gal Dayan",
+     "url": "https://www.producthunt.com/products/zaro?comment=5482810"
+    },
+    {
+     "text": "Credits-based pay-for-what-you-use is the honest model, but it also means the better it gets the more it costs",
+     "author": "David",
+     "url": "https://www.producthunt.com/products/zaro?comment=5482443"
+    }
+   ]
+  },
+  "video_url": "https://www.youtube.com/watch?v=tk7WHlvaiIc",
+  "video_title": "Zaro launch video"
+ }
+}

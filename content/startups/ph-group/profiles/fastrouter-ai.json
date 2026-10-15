@@ -1,0 +1,119 @@
+{
+ "slug": "fastrouter-ai",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/fastrouter-ai",
+ "excerpt": "FastRouter.ai is an LLM gateway: one OpenAI-compatible API for 200+ models with routing, failover, budget caps, caching, evals and weekly cost insights. Free Starter plan, Pro $199/month, with $0 markup on model costs. Plans and alternatives.",
+ "content": "<p>FastRouter.ai is a gateway that sits between your app and the AI model providers. You call one OpenAI-compatible API, and FastRouter sends each request to one of 200+ models, choosing by cost, latency or throughput, retrying on another provider when one fails, and keeping logs, dashboards and alerts in one place. Teams can set spending caps and rate limits per organisation, project or API key, cache identical responses, add guardrails and run evaluations on real traffic.</p><p>The feature the team highlights is Insights: a weekly read-only pass over the traffic you route that returns a ranked list of changes, such as cheaper models of similar quality, prompt caching or flex-tier pricing, with the sampled requests and savings maths behind each. Its pricing page says model usage is passed through at zero markup; the paid plans charge for gateway limits, log retention and support, and the Enterprise plan can be self-hosted.</p><p>FastRouter.ai launched on Product Hunt on 5 October 2026, its first launch there, and finished #2 for the day with 338 upvotes and 51 comments.</p><p><em>We have not tested FastRouter.ai ourselves. This page brings together its official site, pricing page and documentation, its Product Hunt page and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI developer tools",
+  "platform": "Cloud API (managed), self-hosted on Enterprise",
+  "starts_at": "Free Starter plan; Pro $199/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "LLM gateway with one OpenAI-compatible API, routing, failover, budget caps and cost insights",
+  "maker": {"name": "Ritesh Prasad", "url": "https://www.producthunt.com/@ritprasad"},
+  "team": [
+   {"name": "Richie Fredicson", "role": "Maker", "url": "https://www.producthunt.com/@richie_fredicson"},
+   {"name": "Ritesh Prasad", "role": "Maker", "url": "https://www.producthunt.com/@ritprasad"},
+   {"name": "Andrej Gamser", "role": "Maker", "url": "https://www.producthunt.com/@andrej_gamser2"}
+  ],
+  "ph": {"rank": 2, "votes": 338, "comments": 51, "followers": 694, "launched": "2026-10-05", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Calling models from several providers through one OpenAI-compatible API",
+   "Failing over to another provider when one is down or rate-limited",
+   "Setting hard spending caps per team, project or API key",
+   "Finding cheaper models or caching opportunities from real traffic",
+   "Running the gateway inside your own cloud (Enterprise)"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Ritesh Prasad says the team built FastRouter because running AI in production meant juggling several SDKs, scattered dashboards and fragile failover, with no clear way to cut costs without hurting quality.",
+    "He presented routing as the starting point and what he calls routing intelligence as the difference: weekly cost recommendations backed by evals, alerts on latency or spend spikes to Slack or PagerDuty, per-request logs, evals on image and video output, and multimodal response caching. He said production customers save over $10,000 a month by acting on the recommendations."
+   ],
+   "attribution": "Ritesh Prasad, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/fastrouter-ai?comment=5911657"
+  },
+  "audience": {
+   "fit": [
+    "run AI features in production across more than one model provider",
+    "need spending caps, roles and alerts across several teams",
+    "want help finding cheaper models without guessing at quality"
+   ],
+   "not_fit": [
+    "make a handful of calls to a single model: a direct API key is simpler",
+    "need streams to survive a provider failure midway: the maker said failover only happens before the first token",
+    "want response caching or alerts on the free plan: those start on Pro"
+   ]
+  },
+  "pricing": {
+   "intro": "FastRouter.ai charges for the gateway, not the models: every plan passes model costs through at $0 markup. Prices are from its pricing page, in US dollars, billed monthly; annual billing saves 16%.",
+   "url": "https://fastrouter.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Starter", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "3 organisations, 3 members, up to 5 virtual model aliases, 1 BYOK key with 1M requests a month, 200K logs a month with 7-day retention, community and docs support"},
+    {"name": "Pro", "price": "$199/month", "amount": 199, "currency": "USD", "detail": "10 organisations, 20 members, up to 20 aliases, 10 BYOK keys and 5M requests a month, 1M logs with 60-day retention, response caching, tracing, guardrails, up to 10 alert rules, email support with 4-day SLA"},
+    {"name": "Business", "price": "$799/month", "amount": 799, "currency": "USD", "detail": "100 organisations and members, up to 100 aliases, 50 BYOK keys and 50M requests a month, 5M logs with 120-day retention, service-account keys, up to 50 alert rules, email support with 2-day SLA"},
+    {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Self-hosting on your own infrastructure, unlimited organisations and logs, negotiated BYOK and volume discounts, dedicated Slack and SLA; invoiced annually"}
+   ],
+   "notes": [
+    "The home page offers free credits to start, with no setup fee, monthly minimum or credit card.",
+    "At launch the team offered two months free through a Product Hunt page; check whether it is still live."
+   ]
+  },
+  "alternatives": {
+   "intro": "LiteLLM and Langfuse are on Product Hunt's alternatives list; OpenRouter is the gateway commenters compared it with. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "LiteLLM", "url": "https://www.litellm.ai/", "what": "Open-source library and proxy that standardises LLM APIs", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 24, "ph_url": "https://www.producthunt.com/products/litellm", "difference": "Open source and self-hosted by default; FastRouter is a managed service with cost insights and evals on top."},
+    {"name": "OpenRouter", "url": "https://openrouter.ai/", "what": "Model marketplace with one API for many LLMs", "starts_at": "See its pricing page", "difference": "The maker said FastRouter's difference is its routing intelligence: proactive cost audits, alerts and evals beyond a model marketplace."},
+    {"name": "Langfuse", "url": "https://langfuse.com/", "what": "Open-source LLM engineering platform for tracing, evals and prompts", "starts_at": "See its pricing page", "ph_rating": 4.98, "ph_reviews": 49, "ph_url": "https://www.producthunt.com/products/langfuse", "difference": "Observability and evals without routing traffic; FastRouter routes requests and adds observability."}
+   ],
+   "more": "Product Hunt also lists Eden AI, Mistral AI and Respan."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/fastrouter-ai/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Setting rate limits across many models in one place", "Grouping retries under the original request"],
+    "asked": ["Whether failover works when a provider is fully down (yes; the team linked a write-up of an Anthropic outage)", "Whether a failed stream continues on another model (no, failover happens only before the first token)", "Custom routing policies (yes, through virtual model aliases)", "How it differs from OpenRouter (cost audits, alerts and evals, per the maker)"],
+    "criticised": []
+   },
+   "quotes": []
+  },
+  "pros": [
+   "$0 markup on model costs on every plan",
+   "Free Starter plan with 1M BYOK requests a month",
+   "Hard budget caps, roles and alerts across teams",
+   "Weekly cost recommendations with evals to check quality",
+   "Self-hosting available on Enterprise"
+  ],
+  "cons": [
+   "Paid plans jump from $0 to $199 a month",
+   "Response caching, guardrails and alerts are not on the free plan",
+   "Failover does not rescue a stream that fails midway",
+   "No Product Hunt reviews yet"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/fastrouter-ai",
+   "x": {"none": "We found no posts about FastRouter.ai on X to link yet.", "search_url": "https://x.com/search?q=fastrouter&f=live", "profile_url": "https://twitter.com/fastrouterai"}
+  },
+  "faq": [
+   {"q": "What is FastRouter.ai?", "a": "An LLM gateway: one OpenAI-compatible API that routes requests across 200+ models with failover, budget caps, logging, caching, guardrails and evals."},
+   {"q": "How much does FastRouter.ai cost?", "a": "Starter is free; Pro is $199 a month and Business $799 a month; Enterprise is custom. Model usage is passed through at $0 markup, and annual billing saves 16%."},
+   {"q": "What happens when a provider goes down?", "a": "Requests are retried on another healthy provider. The maker said this happens before the first token is sent; if a stream has already started and fails, the error is passed back."},
+   {"q": "Can I set my own routing rules?", "a": "Yes. Virtual model aliases support random shuffle, lowest latency, highest throughput, lowest price, priority and category-based routing, according to the maker and docs."},
+   {"q": "Can I self-host it?", "a": "Yes, on the Enterprise plan, so prompts, logs and provider keys stay on your own infrastructure."},
+   {"q": "How is it different from OpenRouter?", "a": "The maker pointed to proactive cost audits with model-switch suggestions, real-time alerts and evals, rather than only a model marketplace."}
+  ],
+  "sources": [
+   {"label": "FastRouter.ai official site", "url": "https://fastrouter.ai/"},
+   {"label": "FastRouter.ai pricing", "url": "https://fastrouter.ai/pricing"},
+   {"label": "FastRouter.ai documentation", "url": "https://docs.fastrouter.ai/"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/fastrouter-ai"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/fastrouter-ai/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/3b979ba9-5552-44db-8c95-0c8df3a5d58e.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "FastRouter graphic 'Your AI bill can be 40% waste' with a bar showing routine tasks sent to premium models", "credit": "Image: FastRouter.ai via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/6d168268-b01b-4d53-85ff-a4f7c2fbc42d.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "FastRouter graphic 'Optimise across 150+ models with one API' listing Claude, GPT and Gemini models", "credit": "Image: FastRouter.ai via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/5912f3f6-cd2d-43c4-93d9-689ef6eae504.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "FastRouter budget screen with a team monthly spend, hard limit and per-team breakdown", "credit": "Image: FastRouter.ai via Product Hunt"}
+  ]
+ }
+}

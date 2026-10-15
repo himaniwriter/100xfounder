@@ -1,0 +1,309 @@
+{
+ "slug": "kudos-3-0",
+ "excerpt": "Kudos is a US money app that picks the best credit card for each purchase and, on Premium, has AI negotiate bills and cancel forgotten subscriptions. What's new in 3.0, pricing, refunds and alternatives.",
+ "content": "<p>Kudos is a money app for people in the US with several credit cards. Its free version picks the card that earns the most rewards for each purchase at more than 2 million merchants, adds extra cashback (Kudos Boost) at over 15,000 partner stores, surfaces card perks you may have forgotten, tracks balances and due dates and shows a free credit score. It works as an iPhone and Android app and a browser extension.</p><p>Kudos Premium adds the features this launch is built around: an AI agent that phones your providers to negotiate lower bills, automatic cancellation of subscriptions you no longer want (Kudos asks before cancelling anything), automatic activation of card-linked offers at American Express, Chase, Citi, Capital One and Bank of America, and an AI assistant, in beta, that answers questions about your spending and cards. Kudos 3.0, launched on Product Hunt on 12 October 2026, reorganised the app around a single \"Your wins\" total and a ranked \"next best move\". It finished #8 for the day with 119 upvotes.</p><p>Kudos is made by Kudos Technologies, Inc. of California, co-founded by Tikue Anazodo and Ahmad Ismail. It makes money partly from affiliate commissions, including on purchases through Boost and on credit-card applications, so its recommendations can involve paid relationships. It covers US cards and bills, so it is of little use to readers in India or elsewhere.</p><p><em>We have not tested Kudos ourselves. This page brings together Kudos's help centre, terms and App Store listing (its main website loads only in a browser), its Product Hunt page and the official pages of comparable apps, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Personal finance",
+  "platform": "iOS, Android and browser extension",
+  "os": "iOS/iPadOS 16.4 or later; Android; Chrome extension. US cards and providers",
+  "starts_at": "Free; Premium sold in the app (App Store lists $24.99/month or from $53.99/year)",
+  "schema_category": "FinanceApplication",
+  "summary_short": "US money app that picks the best credit card per purchase and, on Premium, negotiates bills and cancels subscriptions",
+  "maker": {
+   "name": "Tikue Anazodo",
+   "url": "https://www.producthunt.com/@tikue_anazodo1"
+  },
+  "team": [
+   {
+    "name": "Tikue Anazodo",
+    "role": "Co-founder",
+    "url": "https://www.producthunt.com/@tikue_anazodo1"
+   },
+   {
+    "name": "Ahmad Ismail",
+    "role": "Co-founder",
+    "url": "https://www.producthunt.com/@aikudos"
+   }
+  ],
+  "ph": {
+   "rank": 8,
+   "votes": 119,
+   "comments": 12,
+   "followers": 825,
+   "launched": "2026-10-12",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Using the right credit card at checkout to maximise rewards",
+   "Getting card-linked offers activated without doing it by hand at each bank",
+   "Having an AI agent call a provider to ask for a lower bill",
+   "Finding and cancelling subscriptions you forgot about",
+   "Seeing all card balances, due dates and credit score in one place"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Tikue Anazodo says he spent years in consumer payments at Microsoft, Google and Affirm, and kept noticing that people don't lose money because they're careless but because claiming it is a chore: the credit they forgot, the bill that crept up $40, the subscription they meant to cancel. In his words, most AI assistants launched this year help you spend, and Kudos is built to get money back.",
+    "Members told the team the app made them do too much of the work, so Kudos 3.0 was rebuilt around one question: what is the most valuable thing you can do with your money right now? He said Kudos never moves money without your OK, and that you keep all the savings from negotiations. The savings figures he quoted from early testing are the company's own and we have not verified them."
+   ],
+   "attribution": "Tikue Anazodo, co-founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/kudos-smart-wallet?comment=5940772"
+  },
+  "audience": {
+   "fit": [
+    "live in the US and carry several rewards credit cards",
+    "want card offers activated and bills negotiated without doing it yourself",
+    "are comfortable linking card and transaction data to an app"
+   ],
+   "not_fit": [
+    "live outside the US: the supported card issuers and bill providers are American",
+    "don't want to share purchase and card data (the App Store privacy label lists data linked to you, some used for tracking)",
+    "want to try Premium before paying: its terms say there's currently no free trial, though first-time yearly subscribers have a 90-day savings guarantee"
+   ]
+  },
+  "pricing": {
+   "intro": "The core Kudos app is free. Kudos does not publish Premium prices on its website; its terms say pricing may change. The prices below are the in-app purchases shown on its US App Store listing on 14 October 2026.",
+   "url": "https://apps.apple.com/us/app/kudos-put-your-wallet-to-work/id6443548838",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Card selection, Boost cashback, card perks, dashboard, credit score, checkout autofill"
+    },
+    {
+     "name": "Premium (monthly)",
+     "price": "$24.99/month",
+     "amount": 24.99,
+     "currency": "USD",
+     "detail": "App Store in-app purchase; the terms describe monthly billing as a legacy option"
+    },
+    {
+     "name": "Premium (yearly)",
+     "price": "$53.99 to $91.99/year",
+     "amount": 53.99,
+     "currency": "USD",
+     "detail": "The App Store lists several yearly price points; AI bill negotiation, subscription cancellation, offer auto-activation, Kudos AI (beta), 1.25x Boost"
+    },
+    {
+     "name": "Lifetime",
+     "price": "$190 to $199 once",
+     "amount": 190,
+     "currency": "USD",
+     "detail": "One-time payment; non-refundable and non-transferable"
+    }
+   ],
+   "notes": [
+    "No per-negotiation fee on Premium or Lifetime; the terms say you keep 100% of any savings.",
+    "Premium fees are generally non-refundable. First-time yearly subscribers can claim a full refund between day 90 and day 120 if Kudos hasn't saved them more than the subscription cost (90-Day Savings Guarantee). Contact Kudos before cancelling.",
+    "Boost points are not money until redeemed, redeem from 1,000 points, and expire unless you earn at least 10 points in each 365-day period. Non-Premium PayPal redemptions carry a $2.99 fee."
+   ]
+  },
+  "alternatives": {
+   "intro": "Rocket Money is on Product Hunt's alternatives list; MaxRewards and CardPointers are closer card-optimiser apps. Prices come from each product's own pages, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "MaxRewards",
+     "url": "https://www.maxrewards.com/",
+     "what": "Tracks rewards, benefits and card-linked offers and tells you which card to use",
+     "starts_at": "Platinum from $20/month or $240/year (pay what you want), 7-day trial",
+     "difference": "Card optimisation without a shopping-cashback programme or AI bill negotiation."
+    },
+    {
+     "name": "CardPointers",
+     "url": "https://cardpointers.com/",
+     "what": "Picks the right card for bonus categories and auto-adds offers from six major US issuers",
+     "starts_at": "Free (limited); CardPointers+ $99.99/year",
+     "difference": "Adds card offers without asking for your bank logins."
+    },
+    {
+     "name": "Rocket Money",
+     "url": "https://www.rocketmoney.com/",
+     "what": "Budgeting, subscription tracking and cancellation, and bill negotiation",
+     "starts_at": "Free plan; Premium on a choose-what-you-pay scale",
+     "ph_rating": 4.0,
+     "ph_reviews": 2,
+     "difference": "Charges a fee of 35 to 60% of first-year savings for bill negotiation, and doesn't pick cards for you."
+    }
+   ],
+   "more": "Product Hunt also lists Monarch, Honey, My Financé and Coupert."
+  },
+  "reviews": {
+   "count": 14,
+   "rating": 5.0,
+   "url": "https://www.producthunt.com/products/kudos-smart-wallet/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Automatic activation of card offers that are easy to miss",
+     "Cancelling forgotten subscriptions",
+     "An AI that actually phones the provider"
+    ],
+    "asked": [
+     "How it tells a forgotten subscription from one you rarely use but want (answer: it always asks before cancelling)",
+     "How card recommendations work when shopping on a phone (answer: through an optional Safari extension)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "The automatic card offer activation caught my eye. Those offers are easy to miss when you have to go looking for them yourself.",
+     "author": "Oleksii Sekundant",
+     "url": "https://www.producthunt.com/products/kudos-smart-wallet?comment=5941465"
+    },
+    {
+     "text": "How does Kudos tell \"forgotten\" from \"rarely used but wanted\"? Does it ask before cancelling every time?",
+     "author": "George Basov",
+     "url": "https://www.producthunt.com/products/kudos-smart-wallet?comment=5943242"
+    },
+    {
+     "text": "Wait, it actually calls the provider for you? Wonder how those conversations go lol.",
+     "author": "Sebastian",
+     "url": "https://www.producthunt.com/products/kudos-smart-wallet?comment=5941625"
+    },
+    {
+     "text": "The automatic subscription cancellation caught my attention.",
+     "author": "Magdalena Anderson",
+     "url": "https://www.producthunt.com/products/kudos-smart-wallet?comment=5941890"
+    }
+   ]
+  },
+  "pros": [
+   "Useful free tier for picking cards and tracking perks",
+   "Bill negotiation with no success fee on Premium; you keep the savings",
+   "Asks before cancelling any subscription",
+   "Negotiation calls come with a transcript and a short highlight clip, according to the co-founder",
+   "90-day savings guarantee for first-time yearly subscribers"
+  ],
+  "cons": [
+   "US only",
+   "Premium prices aren't published on the website, and the App Store lists several price points",
+   "Earns affiliate commissions, so recommendations can involve paid relationships",
+   "Requires sharing card and transaction data; some usage data is used for tracking per the App Store label",
+   "Premium fees and Lifetime purchases are generally non-refundable"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/kudos-smart-wallet?launch=kudos-3-0",
+   "x": {
+    "none": "We found no independent posts about Kudos 3.0 on X to link yet.",
+    "search_url": "https://x.com/search?q=joinkudos&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Kudos free?",
+    "a": "The core app is free: card selection, Boost cashback, perks, a dashboard and a credit score. Premium adds AI bill negotiation, subscription cancellation, offer activation and the AI assistant."
+   },
+   {
+    "q": "How much is Kudos Premium?",
+    "a": "Kudos doesn't publish the price on its website. On 14 October 2026 its US App Store listing showed $24.99 a month, yearly prices from $53.99 to $91.99, and lifetime access at $190 or $199."
+   },
+   {
+    "q": "Does Kudos cancel subscriptions without asking?",
+    "a": "No. The co-founder said on Product Hunt that you are always prompted before any subscription is cancelled."
+   },
+   {
+    "q": "How does the AI bill negotiation work?",
+    "a": "On Premium, Kudos's AI calls your provider to ask for a lower rate within your current plan. You must be the authorised account holder, calls may be recorded where legal, and results aren't guaranteed. There's no per-negotiation fee."
+   },
+   {
+    "q": "Can I get a refund?",
+    "a": "Premium fees are generally non-refundable. First-time yearly subscribers can claim a full refund between day 90 and day 120 if Kudos hasn't saved them more than the subscription cost. Lifetime purchases are non-refundable."
+   },
+   {
+    "q": "Does Kudos work in India?",
+    "a": "Not in a useful way. It is built for US credit cards, US issuers' offers and US bill providers."
+   },
+   {
+    "q": "How does Kudos make money?",
+    "a": "From Premium and Lifetime purchases and from affiliate commissions, including on Boost purchases and credit-card applications. Its terms say merchants may also pay to be featured."
+   }
+  ],
+  "sources": [
+   {
+    "label": "What is Kudos? (help centre)",
+    "url": "https://support.joinkudos.com/en/articles/12893121-what-is-kudos"
+   },
+   {
+    "label": "How does Kudos AI work? (help centre)",
+    "url": "https://support.joinkudos.com/en/articles/12893779-how-does-kudos-ai-work"
+   },
+   {
+    "label": "How AI bill negotiation works (help centre)",
+    "url": "https://support.joinkudos.com/en/articles/13764315-how-does-kudos-ai-bill-negotiation-work"
+   },
+   {
+    "label": "Kudos Premium 90-day savings guarantee",
+    "url": "https://support.joinkudos.com/en/articles/15170445-what-is-the-kudos-premium-90-day-savings-guarantee"
+   },
+   {
+    "label": "Kudos terms",
+    "url": "https://site.joinkudos.com/terms"
+   },
+   {
+    "label": "Kudos on the App Store",
+    "url": "https://apps.apple.com/us/app/kudos-put-your-wallet-to-work/id6443548838"
+   },
+   {
+    "label": "Product Hunt launch and discussion",
+    "url": "https://www.producthunt.com/products/kudos-smart-wallet?launch=kudos-3-0"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/kudos-smart-wallet/alternatives"
+   },
+   {
+    "label": "MaxRewards Platinum",
+    "url": "https://www.maxrewards.com/platinum"
+   },
+   {
+    "label": "CardPointers Pro",
+    "url": "https://cardpointers.com/pro/"
+   },
+   {
+    "label": "Rocket Money pricing (help centre)",
+    "url": "https://help.rocketmoney.com/en/articles/2217739-how-much-does-rocket-money-cost"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/7337b0a6-daa6-4650-9e14-7c5f3f0cae61.png?auto=format&fit=max&w=1400",
+    "alt": "Kudos graphic 'Kudos finds ways to save, then handles the work for you'"
+   },
+   {
+    "url": "https://ph-files.imgix.net/6e9807eb-6e25-4376-86a2-66fe10aca971.png?auto=format&fit=max&w=1400",
+    "alt": "KudosAI suggesting three actions: negotiate a bill that went up, activate card offers and cancel a duplicate subscription"
+   },
+   {
+    "url": "https://ph-files.imgix.net/72a5f971-ed4a-4fb8-8701-68473ecb7053.png?auto=format&fit=max&w=1400",
+    "alt": "Kudos' AI agent on a call negotiating a bill with the provider, shown as a live transcript"
+   },
+   {
+    "url": "https://ph-files.imgix.net/0e514412-eeba-4cf9-b9fd-6bce8f2d7a4c.png?auto=format&fit=max&w=1400",
+    "alt": "The Kudos app on a phone showing a bill negotiation in progress"
+   },
+   {
+    "url": "https://ph-files.imgix.net/e4dbebba-4fc3-4b40-a328-d6fd50728f16.png?auto=format&fit=max&w=1400",
+    "alt": "The Kudos app showing total earnings and card offers activated for the member"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/7337b0a6-daa6-4650-9e14-7c5f3f0cae61.png?auto=format&fit=max&w=1400",
+    "alt": "Kudos graphic 'Kudos finds ways to save, then handles the work for you'"
+   },
+   {
+    "url": "https://ph-files.imgix.net/6e9807eb-6e25-4376-86a2-66fe10aca971.png?auto=format&fit=max&w=1400",
+    "alt": "KudosAI suggesting three actions: negotiate a bill that went up, activate card offers and cancel a duplicate subscription"
+   },
+   {
+    "url": "https://ph-files.imgix.net/72a5f971-ed4a-4fb8-8701-68473ecb7053.png?auto=format&fit=max&w=1400",
+    "alt": "Kudos' AI agent on a call negotiating a bill with the provider, shown as a live transcript"
+   }
+  ]
+ }
+}

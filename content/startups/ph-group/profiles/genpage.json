@@ -1,0 +1,121 @@
+{
+ "slug": "genpage",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/genpage",
+ "excerpt": "GenPage builds AI landing pages for every ad, keyword, target account or prospect, personalises them with variables and A/B tests them on Autopilot. Free plan with 100 credits; Pro from $79/month billed yearly. GenPage 3.0 features, pricing and alternatives.",
+ "content": "<p>GenPage is an AI landing page platform for sales and marketing teams. The idea is that ads, outbound emails and account-based campaigns are targeted, but the click usually lands on a generic homepage. GenPage learns your brand from your website, decks and documents, then builds a dedicated page for each campaign, ad group, keyword, target company or even individual prospect, on your own domain. You choose which parts of a page stay fixed and which change through variables filled from your CRM, enrichment or ad data.</p><p>GenPage 3.0, the version launched, added a conversational page-building agent, a brand knowledge base, research into signals such as funding, hiring and news, Concierge to qualify visitors around the clock, MCP access in both directions, and Google Ads sync out of beta. Autopilot runs A/B tests on chosen sections against a conversion goal you set, and pages come with analytics, heatmaps, session replays and alerts. It connects to HubSpot, Salesforce, Clay and ad accounts, and pushes page URLs back to your CRM or sequencer. With this release GenPage added a free plan.</p><p>GenPage, Inc. is led by co-founder and CEO Samy Barbier with co-founder Ceyhun Cakir, and its footer says it is made in Seoul and Amsterdam. The 3.0 launch was its second on Product Hunt; it went live on 7 October 2026 and finished #2 for the day with 464 upvotes and 74 comments.</p><p><em>We have not tested GenPage ourselves. This page brings together its official site, pricing, contact and privacy pages and 3.0 announcement, its Product Hunt page and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Marketing",
+  "platform": "Web",
+  "starts_at": "Free (100 credits/month); Pro $79/month billed yearly",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI landing pages personalised for every ad, keyword, account or prospect, with automatic A/B testing",
+  "maker": {"name": "Samy Barbier", "url": "https://www.producthunt.com/@samy_barbier"},
+  "team": [
+   {"name": "Samy Barbier", "role": "Co-founder & CEO", "url": "https://www.producthunt.com/@samy_barbier"},
+   {"name": "Ceyhun Cakir", "role": "Co-founder", "url": "https://www.producthunt.com/@ceyhun_cakir"}
+  ],
+  "ph": {"rank": 2, "votes": 464, "comments": 74, "followers": 1099, "launched": "2026-10-07", "as_of": "2026-10-14"},
+  "use_cases": [
+   "A one-to-one landing page for every target account in an ABM campaign",
+   "A page for each Google Ads campaign, ad group or keyword",
+   "A personalised page for each prospect in a cold outreach list",
+   "A/B testing headlines or sections automatically against a conversion goal",
+   "Seeing which companies visit with analytics, heatmaps and replays"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Samy Barbier says GenPage's first Product Hunt launch had no AI: it gave each cold-email prospect their own landing page. After 3,400+ teams and 250,000+ pages, by his count, the team decided outbound was one symptom of a bigger problem: campaigns are personalised, then every click lands on the same generic homepage.",
+    "GenPage 3.0 is the answer he describes: pages built by conversation from a prompt, URL, screenshot or document, personalised with a Variables Agent, connected to HubSpot, Salesforce, Clay and ad accounts, and optimised by Autopilot. He also announced that GenPage is now free to start with 100 credits."
+   ],
+   "attribution": "Samy Barbier, co-founder and CEO, on Product Hunt",
+   "url": "https://www.producthunt.com/products/genpage?comment=5909985"
+  },
+  "audience": {
+   "fit": [
+    "run paid ads, ABM or outbound and send the clicks to a generic page",
+    "want many tailored pages without a designer and developer for each",
+    "need control over which copy stays approved and which is personalised"
+   ],
+   "not_fit": [
+    "need a single brochure website: GenPage is built for campaign pages",
+    "want Google and LinkedIn ads sync on a budget: the ads module is an add-on to the $249 Scale plan",
+    "need SSO, role-based access or EU data storage below the custom Ultimate plan"
+   ]
+  },
+  "pricing": {
+   "intro": "GenPage's pricing page shows prices billed yearly (two months free), in US dollars. Paid plans scale with credits; the figures below are each plan's starting point.",
+   "url": "https://www.genpage.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "100 credits a month, AI page builder, unlimited pages and campaigns, 1 user seat, AI enrichments, custom and AI variables, analytics and alerts, chat and email support"},
+    {"name": "Pro", "price": "From $79/month billed yearly", "amount": 79, "currency": "USD", "detail": "500 to 2,000 credits a month; unlimited seats, custom domains, no 'Made with GenPage' badge, MCP and API access, GTM and CRM integrations, priority support"},
+    {"name": "Scale", "price": "From $249/month billed yearly", "amount": 249, "currency": "USD", "detail": "2,500 to 20,000 credits a month; custom scripts and HTML editor, webhooks, SDK and BYOK, session replays and heatmaps, unlimited workspaces, onboarding; optional ads module for Google and LinkedIn Ads sync priced by ad spend"},
+    {"name": "Ultimate", "price": "Custom", "currency": "USD", "detail": "Custom credits, brand knowledge base, dedicated account manager, SSO, role-based access control, EU or US data storage"}
+   ],
+   "notes": [
+    "At launch the team offered 50% off paid plans with a Product Hunt code; that offer may have ended."
+   ]
+  },
+  "alternatives": {
+   "intro": "Unicorn Platform and Fibr AI are on Product Hunt's alternatives list; Mutiny is a personalisation tool GenPage publishes a comparison page for. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Mutiny", "url": "https://www.mutinyhq.com/", "what": "Website personalisation and ABM pages for B2B", "starts_at": "See its pricing page", "difference": "Personalises your existing website; GenPage generates separate campaign pages and tests them on Autopilot."},
+    {"name": "Fibr AI", "url": "https://fibr.ai/", "what": "Agentic web experience and personalisation platform", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 2, "ph_url": "https://www.producthunt.com/products/fibr", "difference": "Similar goal of matching pages to ads; compare integrations and pricing."},
+    {"name": "Unicorn Platform", "url": "https://unicornplatform.com/", "what": "Landing page builder for startups", "starts_at": "See its pricing page", "ph_rating": 4.85, "ph_reviews": 32, "ph_url": "https://www.producthunt.com/products/unicorn-platform", "difference": "A general page builder; GenPage focuses on many personalised campaign pages from CRM and ad data."}
+   ],
+   "more": "Product Hunt also lists Dora AI, Hudby.io and Permar AI."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/genpage/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Matching the page to the exact campaign", "Dynamic variables instead of generating every page in advance"],
+    "asked": ["How different the pages can be (any design, from a prompt, URL, screenshot, file, template or HTML)", "How it avoids breaking what already works (you choose static and dynamic sections)", "Whether pages are tailored per person or per campaign (either, as the team chooses)", "How regulated industries can review every word (scope controls and review before publishing)"],
+    "criticised": ["One commenter warned against letting AI publish pages without human review; the maker agreed and pointed to human-in-the-loop controls"]
+   },
+   "quotes": [
+    {"text": "Let's say I receive a marketing email in my inbox and I click the link, the page I go to would be tailored just for me?", "author": "Sara Ford", "url": "https://www.producthunt.com/products/genpage?comment=5928902"},
+    {"text": "The dynamic variable substitution makes sense.", "author": "Sara Ford", "url": "https://www.producthunt.com/products/genpage?comment=5933255"}
+   ]
+  },
+  "pros": [
+   "Free plan with unlimited pages and 100 credits a month",
+   "Pages live on your own domain and match your site",
+   "You decide which sections stay approved and which personalise",
+   "Autopilot A/B testing with analytics, heatmaps and replays",
+   "MCP, API and 40+ integrations"
+  ],
+  "cons": [
+   "Ads sync is an add-on to the $249 Scale plan",
+   "SSO and EU data storage only on the custom plan",
+   "Credit-based usage makes costs depend on volume",
+   "No Product Hunt reviews yet"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/genpage",
+   "x": {"none": "We found no posts about GenPage on X to link yet.", "search_url": "https://x.com/search?q=genpage&f=live", "profile_url": "https://twitter.com/genpageai"}
+  },
+  "faq": [
+   {"q": "What is GenPage?", "a": "An AI platform that builds and personalises landing pages for each ad, keyword, account or prospect, hosts them on your domain and A/B tests them automatically."},
+   {"q": "How much does GenPage cost?", "a": "Free gives 100 credits a month. Pro starts at $79 a month and Scale at $249 a month, billed yearly; Ultimate is custom. The ads module is an extra on Scale."},
+   {"q": "Is each page made for one person or one campaign?", "a": "Either. The maker said teams choose one page per campaign, versions per industry, or a unique page per person, using dynamic variables."},
+   {"q": "Will AI publish pages without review?", "a": "You decide what is static and what is dynamic, and can review variants before publishing; the maker said the team is in the human-in-the-loop camp."},
+   {"q": "What does GenPage connect to?", "a": "HubSpot, Salesforce, Clay, Google and LinkedIn ad accounts and 40+ other integrations, plus an API and MCP."},
+   {"q": "What are the alternatives?", "a": "Mutiny, Fibr AI and Unicorn Platform, with Dora AI, Hudby.io and Permar AI also on Product Hunt's list."}
+  ],
+  "sources": [
+   {"label": "GenPage official site", "url": "https://www.genpage.ai/"},
+   {"label": "GenPage pricing", "url": "https://www.genpage.ai/pricing"},
+   {"label": "GenPage 3.0 announcement", "url": "https://www.genpage.ai/blog/genpage-3.0-the-landing-page-revenue-engine-for-gtm-teams"},
+   {"label": "GenPage contact", "url": "https://www.genpage.ai/contact"},
+   {"label": "GenPage privacy policy", "url": "https://www.genpage.ai/company/privacy-policy"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/genpage"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/genpage/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/f8674594-3510-4fc2-bada-826498c15199.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "GenPage banner 'The easiest way to create 1:1 websites with AI' with stacked personalised page cards", "credit": "Image: GenPage via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/b33c5c44-3530-464a-9753-3f519c0006e6.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "GenPage diagram 'Built for outbound & inbound traffic' importing LinkedIn prospects and Google Ads keywords into generated pages", "credit": "Image: GenPage via Product Hunt"}
+  ]
+ }
+}

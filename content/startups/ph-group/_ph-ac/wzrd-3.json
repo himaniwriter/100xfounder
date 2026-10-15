@@ -1,0 +1,333 @@
+{
+ "input": "https://www.producthunt.com/posts/wzrd-3",
+ "final_url": "https://www.producthunt.com/products/wzrd?launch=wzrd-3",
+ "launch": {
+  "slug": "wzrd-3",
+  "name": "WZRD",
+  "tagline": "AI-native documents, slides, forms and sheets that talk back",
+  "featuredAt": "2026-09-22T00:01:00-07:00",
+  "dailyRank": "2",
+  "weeklyRank": "13",
+  "points": 286,
+  "commentsCount": 41,
+  "pricingType": null,
+  "description": "WZRD is for teams and creators working with documents, slides, forms and sheets. Upload existing work or create from a prompt, then turn it into an AI experience users can engage with. Forms collect answers by speaking or typing. Sheets explain numbers out loud. Slides walk people through the story. Documents engage every user. The output stays conversational and responsive.",
+  "makers": [
+   {
+    "name": "Alimo",
+    "username": "ealimohsen",
+    "headline": "Building stuff since 1997, Ex-Microsoft"
+   },
+   {
+    "name": "Mohd",
+    "username": "eyemohd",
+    "headline": null
+   }
+  ],
+  "hunter": "Jonno Riekwel",
+  "media": [
+   {
+    "uuid": "f092e01e-4adb-4c73-85b1-7e3518a807c9.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/lOSYTasWhJ0?si=MBeHP1YXk8BoKfYq"
+   },
+   {
+    "uuid": "5c0ecf8b-bc4d-4165-8a92-7c875eeb7acb.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "b25590d4-7640-4942-bd8a-e78ca0160276.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "ae708298-890d-4aab-875e-9df92c07c505.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "3a02333e-96e5-4663-881a-b0d3bb58029b.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "ae54dce4-6899-4b96-9e54-42d402e490ef.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "3a5d40fc-e95d-4ddd-8b18-c70578677adf.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "e651cce4-20ec-4e9e-af0c-4e6c16554061.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   }
+  ],
+  "links": [
+   "wzrd.to",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    2
+   ]
+  ]
+ },
+ "product": {
+  "name": "WZRD",
+  "slug": "wzrd",
+  "tagline": "AI-native documents, slides, forms and sheets that talk back",
+  "description": "WZRD is for teams and creators working with documents, slides, forms and sheets. Upload existing work or create from a prompt, then turn it into an AI experience users can engage with. Forms collect answers by speaking or typing. Sheets explain numbers out loud. Slides walk people through the story. Documents engage every user. The output stays conversational and responsive.",
+  "websiteUrl": "https://wzrd.to",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 628,
+  "twitterUrl": "https://x.com/wzrdto",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/5c0ecf8b-bc4d-4165-8a92-7c875eeb7acb.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/b25590d4-7640-4942-bd8a-e78ca0160276.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/ae708298-890d-4aab-875e-9df92c07c505.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/3a02333e-96e5-4663-881a-b0d3bb58029b.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/ae54dce4-6899-4b96-9e54-42d402e490ef.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/3a5d40fc-e95d-4ddd-8b18-c70578677adf.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/e651cce4-20ec-4e9e-af0c-4e6c16554061.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5886186",
+   "depth": 0,
+   "author": "Alimo",
+   "username": "ealimohsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt! I’m Ali, founder of WZRD. I discovered the internet in 1995 and started building websites when I was 12. After 25+ years building on the internet, one thing still feels strangely unchanged: We create information, then trap it inside static interfaces. About a year ago, my late brother and cofounder @eyemohd and I kept coming back to one question: What if your work could talk back? That question became WZRD. What is WZRD? WZRD turns documents, slides, forms and sheets into interactive AI experiences. Upload something you already have or start from a prompt. WZRD turns it into something people can speak to, type to, explore and share. Why is it different? Most AI tools help you create the file. WZRD changes what happens after creation. The output itself becomes conversational and responsive, so instead of simply scrolling through information, people can ask questions, get guided and interact with it. Who is it for? Founders, marketers, sales teams, consultants, educators and anyone who regularly creates or shares information through documents, presentations, forms or sheets. What can you do today? Upload your existing work or create from a prompt Build documents, sl"
+  },
+  {
+   "id": "5889612",
+   "depth": 1,
+   "author": "Dipanshu Kushwaha",
+   "username": "dipanshu_kushwaha5",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@eyemohd &nbsp; @ealimohsen &nbsp;Does it support multiple languages, especially when translating or analysing documents ?"
+  },
+  {
+   "id": "5889847",
+   "depth": 1,
+   "author": "Rohan Chaubey",
+   "username": "rohanrecommends",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@eyemohd &nbsp; @ealimohsen &nbsp;Many congratulations Ali on the launch. :) I was actually super impressed by the capabilities this has. It seems like we have a glamorous and more functional AI-native version of Google Docs, Slides, Forms, and Sheets. I look forward to importing some. I am sure your brother is very proud of you!!"
+  },
+  {
+   "id": "5889562",
+   "depth": 1,
+   "author": "Vipul Kumar",
+   "username": "vipul_kumar1280",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "@eyemohd &nbsp; @ealimohsen &nbsp;congrats launch! turning static the documents into the something people can actually talk to is a really intereseting idea and also the vioce interaction on the top of the existing work feels like a natural next steps. how well does the WZRD handle compex documents with lots of different informations??"
+  },
+  {
+   "id": "5887899",
+   "depth": 0,
+   "author": "Darly Selby",
+   "username": "darly_selby",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Does the AI actually adjust the story based on questions from the audience or is it mainly a guided presentation?"
+  },
+  {
+   "id": "5889160",
+   "depth": 1,
+   "author": "Alimo",
+   "username": "ealimohsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@darly_selby It responds to what people ask using the uploaded content, so they can explore what interests them rather than follow a fixed presentation."
+  },
+  {
+   "id": "5888946",
+   "depth": 0,
+   "author": "Taissa Maleh",
+   "username": "tmaleh_",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "This is pretty awesome since most of the times one job is performed by multiple people along the process, and that becomes the unified version &amp; SOP. What's the level of supervision a human has? Can a manager overwrite anything? And what is the final output it provides?"
+  },
+  {
+   "id": "5889165",
+   "depth": 1,
+   "author": "Alimo",
+   "username": "ealimohsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tmaleh_ Thanks, Taissa! You can guide the AI with instructions and review full conversation transcripts. The output is a shareable, interactive experience. What kind of manager override did you have in mind?"
+  },
+  {
+   "id": "5887900",
+   "depth": 0,
+   "author": "Jurgen Përgega",
+   "username": "jurgen_pergega",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Congrats on the launch! Can you combine multiple file types into one conversation?"
+  },
+  {
+   "id": "5889169",
+   "depth": 1,
+   "author": "Alimo",
+   "username": "ealimohsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jurgen_pergega Thanks, Jurgen! Right now you can add extra files as supporting knowledge, but combining a deck with its supporting spreadsheet in an interactive experience is a great idea."
+  },
+  {
+   "id": "5886926",
+   "depth": 0,
+   "author": "Sebastian",
+   "username": "sheikh_umair1",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "What happens when the original document has a lot of formatting or complicated tables? That seems like an interesting test for this."
+  },
+  {
+   "id": "5887180",
+   "depth": 1,
+   "author": "Alimo",
+   "username": "ealimohsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@sheikh_umair1 &nbsp;Good question. That’s definitely an interesting test case. We’re still improving how WZRD handles more complex formatting and tables, but would love to hear your feedback!"
+  },
+  {
+   "id": "5888139",
+   "depth": 0,
+   "author": "Muhammad Ahmed",
+   "username": "aymi_malik",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Is it possible for teams to personalize the conversational voice, or does everyone share an identical AI experience based on uploads? Btw, Congratulations @ealimohsen and team WZRD 🎊✌️"
+  },
+  {
+   "id": "5888146",
+   "depth": 1,
+   "author": "Alimo",
+   "username": "ealimohsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@aymi_malik &nbsp;Teams can personalize its tone and behavior through instructions, so each experience can feel different and different audio voices are available to choose from."
+  },
+  {
+   "id": "5887030",
+   "depth": 0,
+   "author": "Amy Bradley",
+   "username": "amybradley",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Can a team control what the AI is allowed to answer from a document?"
+  },
+  {
+   "id": "5887193",
+   "depth": 1,
+   "author": "Alimo",
+   "username": "ealimohsen",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@amybradley &nbsp;Yes, you can add instructions to guide what the AI should and shouldn’t answer from the document."
+  }
+ ]
+}

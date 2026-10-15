@@ -1,0 +1,312 @@
+{
+ "slug": "automations-in-perplexity-computer",
+ "excerpt": "Automations let Perplexity Computer run recurring work on a schedule or on Slack, Gmail, Outlook, Linear and GitHub triggers. Plans, credits, alternatives.",
+ "content": "<p>Automations is a feature of Perplexity Computer, Perplexity's agent that carries out tasks rather than only answering questions. An automation is a standing assignment: you describe a job once, and Computer runs it on a schedule or when something happens in Slack, Gmail, Outlook, Linear or GitHub. Conditions, such as a message from a particular sender, narrow which events start a run. Each run can see what earlier runs did, so a weekly competitor price check compares against last week's figures instead of starting from scratch.</p><p>You create one by describing it in Computer's prompt box or by choosing New Automation, then adding instructions, a trigger, the connected accounts and Projects it may use, and where the output should go. You decide which actions Computer may take alone and which need your review first, for example before it posts an update in Slack. The dashboard shows each automation's status and run history, including what triggered a run and what it produced, and lets you edit or pause it. Automations replace Perplexity's earlier Scheduled Tasks, which can be migrated.</p><p>Perplexity announced Automations on its blog on 29 September 2026. It was posted to Product Hunt under the Perplexity product page by hunter Rohan Chaubey and finished #3 for the day on 11 October 2026, with 193 upvotes and 3 comments.</p><p><em>We have not tested Automations in Perplexity Computer ourselves. This page brings together Perplexity's announcement, help center and pricing pages, the Product Hunt launch and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI agents and workflow automation",
+  "platform": "Feature of Perplexity Computer (web, iOS and Android)",
+  "starts_at": "Included with a paid Perplexity plan; Pro from $17/month billed annually",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Scheduled and event-triggered agents inside Perplexity Computer that remember earlier runs",
+  "maker": {
+   "name": "Perplexity",
+   "url": "https://www.perplexity.ai/"
+  },
+  "team": [
+   {
+    "name": "Rohan Chaubey",
+    "role": "Hunter of this launch on Product Hunt",
+    "url": "https://www.producthunt.com/@rohanrecommends"
+   }
+  ],
+  "ph": {
+   "rank": 3,
+   "votes": 193,
+   "comments": 3,
+   "followers": 5789,
+   "launched": "2026-10-11",
+   "as_of": "2026-10-15"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/9be448f1-f10c-4ae6-8173-20fdadea761c.png?auto=format&fit=max&w=1400",
+    "alt": "Title card reading 'Automate anything with Computer.' on a dark blue background",
+    "credit": "Image: Perplexity on Product Hunt",
+    "w": 3598,
+    "h": 1992
+   },
+   {
+    "url": "https://ph-files.imgix.net/ee29ba6b-9c87-46fb-b4e3-4f7eaabd0da1.png?auto=format&fit=max&w=1400",
+    "alt": "Perplexity Computer Automations start screen with a Create button and suggested automations such as an industry news digest and a morning Slack digest",
+    "credit": "Image: Perplexity on Product Hunt",
+    "w": 2998,
+    "h": 2088
+   },
+   {
+    "url": "https://ph-files.imgix.net/0593ea4a-ab3b-44e2-9c76-896af0ede84a.png?auto=format&fit=max&w=1400",
+    "alt": "Prompt box with the request 'Every Monday at 8am, review my Meta Ads against the previous week'",
+    "credit": "Image: Perplexity on Product Hunt",
+    "w": 3426,
+    "h": 1906
+   },
+   {
+    "url": "https://ph-files.imgix.net/492a721a-7fbf-43e2-a1ca-e665962a3b1c.png?auto=format&fit=max&w=1400",
+    "alt": "Title card reading 'Kick off automations with conditional triggers.'",
+    "credit": "Image: Perplexity on Product Hunt",
+    "w": 3486,
+    "h": 1918
+   },
+   {
+    "url": "https://ph-files.imgix.net/ef655bd8-9886-40b6-a396-66ad4eda8e01.png?auto=format&fit=max&w=1400",
+    "alt": "Prompt asking Computer to watch the #sales Slack channel for cancellations, service issues or blocked deals and write a report",
+    "credit": "Image: Perplexity on Product Hunt",
+    "w": 3448,
+    "h": 1928
+   },
+   {
+    "url": "https://ph-files.imgix.net/0eeb2808-af9d-40d4-b456-d36e139b8460.png?auto=format&fit=max&w=1400",
+    "alt": "A created 'Sales risk report' automation showing its Slack trigger, instructions, output and notification settings",
+    "credit": "Image: Perplexity on Product Hunt",
+    "w": 3546,
+    "h": 1944
+   },
+   {
+    "url": "https://ph-files.imgix.net/a7f0ad46-431e-4fa5-bfef-8ba2c780e9c7.png?auto=format&fit=max&w=1400",
+    "alt": "Abstract illustration of glowing panels connected by light trails",
+    "credit": "Image: Perplexity on Product Hunt",
+    "w": 1320,
+    "h": 743
+   },
+   {
+    "url": "https://ph-files.imgix.net/4d37ed0c-2655-4231-bcd7-186cd1213f7f.png?auto=format&fit=max&w=1400",
+    "alt": "Perplexity logo on a dark blue background",
+    "credit": "Image: Perplexity on Product Hunt",
+    "w": 3432,
+    "h": 1874
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Rohan Chaubey, who hunted the launch, described Automations as a way to turn recurring work into long-running agents that run on schedules or triggers and keep context over time, instead of treating every task as a fresh request.",
+    "He listed monitoring Slack, Gmail, Outlook, Linear and GitHub, drafting customer replies, finding missed updates, comparing competitor pricing, updating project decisions and sending work for human review. He said it is aimed at Computer users who manage ongoing work across projects and connected tools."
+   ],
+   "attribution": "Rohan Chaubey, hunter, on Product Hunt",
+   "url": "https://www.producthunt.com/products/perplexity-ai?comment=5913515"
+  },
+  "use_cases": [
+   "A weekly comparison of competitor prices that updates a spreadsheet and notes what changed since last time",
+   "Drafting customer replies in Gmail for a person to review before sending",
+   "Watching a Slack channel for cancellations or blocked deals and writing a risk report",
+   "Keeping a decision log up to date when a decision is posted in Slack",
+   "Opening a pull request when a Linear issue is labelled ready",
+   "Flagging missed updates or passed deadlines across projects"
+  ],
+  "audience": {
+   "fit": [
+    "already pay for Perplexity and want recurring research or follow-ups to run without a prompt each time",
+    "run work across Slack, Gmail, Outlook, Linear or GitHub and want an agent to react to events there",
+    "want a human-review step before an agent sends or posts anything"
+   ],
+   "not_fit": [
+    "are on the free Perplexity plan: Computer needs an active subscription",
+    "need predictable fixed costs: each run spends credits, and cost varies with how complex the task is",
+    "need precise, rule-based automations across many apps, where a dedicated workflow tool may suit better"
+   ]
+  },
+  "pricing": {
+   "intro": "Automations are part of Perplexity Computer, which needs a paid Perplexity subscription; Perplexity says any Computer user can use Automations. Watching for a trigger is free, and credits are spent only when a run executes. Prices are Perplexity's, in US dollars.",
+   "url": "https://www.perplexity.ai/hub/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Pro",
+     "price": "$17/month billed annually",
+     "amount": 17,
+     "currency": "USD",
+     "detail": "Computer access with a weekly allowance of Computer usage, no monthly credit pool, and a one-time 4,000-credit bonus for new subscribers that expires after about 30 days"
+    },
+    {
+     "name": "Max",
+     "price": "$200/month or $2,000/year ($167/month billed annually)",
+     "amount": 200,
+     "currency": "USD",
+     "detail": "10,000 Computer credits a month plus a one-time 35,000-credit bonus; default monthly spending cap of $200, adjustable up to $5,000. Brain, the memory system for Computer, is in preview for Max subscribers"
+    }
+   ],
+   "notes": [
+    "Perplexity prices extra credits at 100 credits for $1. Auto-refill is off by default; when switched on it tops up below 500 credits on Pro or 2,500 on Max.",
+    "If credits run out, active tasks pause rather than cancel. The older Scheduled Tasks guide says a skipped run can leave a task paused until you re-enable it.",
+    "Enterprise Pro starts at $40 a seat a month or $400 a year, per Perplexity's help center; Computer for Enterprise has its own help page."
+   ]
+  },
+  "pros": [
+   "Runs on events in Slack, Gmail, Outlook, Linear and GitHub as well as on a schedule",
+   "Each run builds on earlier runs instead of starting fresh",
+   "You choose which actions need your review before they happen",
+   "No credits are used while an automation is waiting for its trigger",
+   "Run history shows what triggered each run and what it produced"
+  ],
+  "cons": [
+   "Needs a paid Perplexity plan, and runs spend credits whose cost varies by task",
+   "Pro has a weekly usage allowance rather than a monthly credit pool, so heavy use points to the $200 Max plan",
+   "Limited to the connectors Perplexity supports for triggers",
+   "A run can be skipped if credits run low or a connector's authorisation expires"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/perplexity-ai",
+   "x": {
+    "search_url": "https://x.com/search?q=%22Perplexity%20Computer%22%20automations&f=live",
+    "profile_url": "https://x.com/perplexity_ai",
+    "posts": [
+     {
+      "author": "Perplexity (@perplexity_ai)",
+      "url": "https://x.com/perplexity_ai/status/2104976036274552963",
+      "note": "the official announcement of Automations in Perplexity Computer"
+     },
+     {
+      "author": "Aravind Srinivas (@AravSrinivas)",
+      "url": "https://x.com/AravSrinivas/status/2105003705724797358",
+      "note": "on setting up company automations with Perplexity Computer"
+     }
+    ]
+   }
+  },
+  "faq": [
+   {
+    "q": "What are Automations in Perplexity Computer?",
+    "a": "Standing assignments for Perplexity's Computer agent. You describe a job once and it runs on a schedule or when an event happens in Slack, Gmail, Outlook, Linear or GitHub, building on what earlier runs did."
+   },
+   {
+    "q": "Which Perplexity plan do I need?",
+    "a": "Computer needs an active paid subscription, and Perplexity says any Computer user can use Automations. Pro is $17 a month billed annually with a weekly Computer allowance; Max is $200 a month with 10,000 credits a month."
+   },
+   {
+    "q": "Do automations use credits while they wait?",
+    "a": "No. Perplexity says no credits are used while Computer watches for a trigger; credits are spent only when a run executes. 100 credits cost $1."
+   },
+   {
+    "q": "Can I change an automation later?",
+    "a": "Yes. The Automations dashboard lets you edit, pause, run now or delete an automation, and shows each run's trigger and result."
+   },
+   {
+    "q": "Can it act without asking me?",
+    "a": "Only where you allow it. You choose which actions Computer may take on its own and which need your review, and admins can limit connector permissions."
+   },
+   {
+    "q": "What happened to Scheduled Tasks?",
+    "a": "Automations replace them. Existing Scheduled Tasks appear in the Automations view and can be migrated when you open each one."
+   },
+   {
+    "q": "What are the alternatives?",
+    "a": "Zapier and Lindy are dedicated automation and AI-assistant tools; ChatGPT and Genspark are general AI assistants that Product Hunt lists as Perplexity alternatives."
+   }
+  ],
+  "alternatives": {
+   "intro": "Product Hunt's alternatives for Perplexity as a whole are search and assistant tools; we picked the two closest to agents, ChatGPT and Genspark, and added Zapier and Lindy, which focus on automation. Prices come from each product's own pricing page, checked on 15 October 2026; review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Zapier",
+     "url": "https://100xfounder.com/startup/zapier/",
+     "what": "No-code automation platform with Zaps and AI Agents",
+     "tags": [
+      "Workflow automation",
+      "AI agents"
+     ],
+     "starts_at": "Free (100 tasks a month); Professional from $19.99/month billed annually",
+     "difference": "Built around explicit trigger-and-action workflows; its Agents have a free allowance of 400 activities a month and are counted separately from tasks."
+    },
+    {
+     "name": "Lindy",
+     "url": "https://www.lindy.ai/",
+     "what": "AI assistant that works in Slack on inbox, meeting prep and scheduled routines",
+     "tags": [
+      "AI agents",
+      "Productivity"
+     ],
+     "starts_at": "$50 of free credits for 7 days; Team $29.99/month per active user",
+     "difference": "Sold as a standalone assistant priced per user, rather than as a feature of an AI search subscription."
+    },
+    {
+     "name": "ChatGPT",
+     "url": "https://chatgpt.com/",
+     "what": "Get answers. Find inspiration. Be more productive.",
+     "tags": [
+      "AI chatbots",
+      "LLMs"
+     ],
+     "starts_at": "See its pricing page",
+     "ph_rating": 4.9,
+     "ph_reviews": 752,
+     "ph_url": "https://www.producthunt.com/products/chatgpt",
+     "difference": "A general-purpose assistant for writing, coding and multimodal work; check OpenAI's own pages for its options for recurring work."
+    },
+    {
+     "name": "Genspark",
+     "url": "https://www.genspark.ai/",
+     "what": "Reinvent Search, the New AI Agent Engine",
+     "tags": [
+      "AI agents",
+      "Search"
+     ],
+     "starts_at": "See its pricing page",
+     "ph_rating": 4.4,
+     "ph_reviews": 12,
+     "ph_url": "https://www.producthunt.com/products/genspark",
+     "difference": "Product Hunt highlights its shareable Sparkpages and no-code multi-agent workflow builder."
+    }
+   ],
+   "more": "Product Hunt also lists Komo, Andi and xdge AI as Perplexity alternatives."
+  },
+  "sources": [
+   {
+    "label": "Perplexity blog: Computer adds Automations for ongoing work",
+    "url": "https://www.perplexity.ai/hub/blog/computer-adds-automations-for-ongoing-work"
+   },
+   {
+    "label": "Perplexity pricing",
+    "url": "https://www.perplexity.ai/hub/pricing"
+   },
+   {
+    "label": "Perplexity Help Center: What is Computer?",
+    "url": "https://www.perplexity.ai/help-center/en/articles/13837784-what-is-computer"
+   },
+   {
+    "label": "Perplexity Help Center: How credits work",
+    "url": "https://www.perplexity.ai/help-center/en/articles/13838041-how-credits-work-on-perplexity"
+   },
+   {
+    "label": "Perplexity Help Center: Perplexity Max",
+    "url": "https://www.perplexity.ai/help-center/en/articles/11680686-perplexity-max"
+   },
+   {
+    "label": "Perplexity Help Center: Which plan is right for you",
+    "url": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"
+   },
+   {
+    "label": "Perplexity Help Center: Scheduled Tasks in Computer",
+    "url": "https://www.perplexity.ai/help-center/en/articles/11521526-perplexity-tasks"
+   },
+   {
+    "label": "Product Hunt launch",
+    "url": "https://www.producthunt.com/products/perplexity-ai?launch=automations-in-perplexity-computer"
+   },
+   {
+    "label": "Product Hunt alternatives for Perplexity",
+    "url": "https://www.producthunt.com/products/perplexity-ai/alternatives"
+   },
+   {
+    "label": "Perplexity announcement on X",
+    "url": "https://x.com/perplexity_ai/status/2104976036274552963"
+   },
+   {
+    "label": "Zapier pricing",
+    "url": "https://zapier.com/pricing"
+   },
+   {
+    "label": "Lindy pricing",
+    "url": "https://www.lindy.ai/pricing"
+   }
+  ]
+ }
+}

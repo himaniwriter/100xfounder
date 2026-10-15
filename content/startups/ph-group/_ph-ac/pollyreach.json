@@ -1,0 +1,516 @@
+{
+ "input": "https://www.producthunt.com/posts/pollyreach",
+ "final_url": "https://www.producthunt.com/products/pollyreach?launch=pollyreach",
+ "launch": {
+  "slug": "pollyreach",
+  "name": "PollyReach",
+  "tagline": "Give your agent a real number and voice to make calls.",
+  "featuredAt": "2026-05-19T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "2",
+  "points": 784,
+  "commentsCount": 218,
+  "pricingType": "free",
+  "description": "Most AI phone tools are built for enterprises — APIs, workflows, sales automation. PollyReach is built for you. Give your AI a real phone number. Say \"book me a table for 7pm\" — it finds the number, makes the call, handles the conversation, and reports back with a summary, recording &amp; transcript. It also answers your phone 24/7 and screens spam. Works in 50+ languages.",
+  "makers": [
+   {
+    "name": "Sandy Liu",
+    "username": "sandy_liusy",
+    "headline": "Marketing"
+   },
+   {
+    "name": "Billy Chen",
+    "username": "billy_chen3",
+    "headline": "Founder & CEO at PollyReach and QuickCEP"
+   },
+   {
+    "name": "Gia Xu",
+    "username": "gia_xu",
+    "headline": "Building PollyReach.ai."
+   },
+   {
+    "name": "ys zheng",
+    "username": "ys_zheng",
+    "headline": "Co‑founder at PollyReach"
+   }
+  ],
+  "hunter": "Justin Jincaid",
+  "media": [
+   {
+    "uuid": "5d0fe004-cb72-41e2-8e97-34b8b667eecb.jpeg",
+    "type": "image",
+    "w": 1600,
+    "h": 900,
+    "video": null
+   },
+   {
+    "uuid": "542b44e8-6467-4d7e-ba2f-d01d1b408ed3.jpeg",
+    "type": "image",
+    "w": 1600,
+    "h": 900,
+    "video": null
+   },
+   {
+    "uuid": "ca5099d3-3d07-4b23-acd9-86ea1c83c75c.jpeg",
+    "type": "image",
+    "w": 1600,
+    "h": 900,
+    "video": null
+   },
+   {
+    "uuid": "432ebe33-334c-4469-b063-484c2f35e634.jpeg",
+    "type": "image",
+    "w": 1600,
+    "h": 900,
+    "video": null
+   },
+   {
+    "uuid": "837bc9a8-de32-4556-a2d8-dfbf94c00d8a.jpeg",
+    "type": "image",
+    "w": 1600,
+    "h": 900,
+    "video": null
+   },
+   {
+    "uuid": "254f830a-edb4-4eb3-ab4e-25cb9fbb07f7.jpeg",
+    "type": "image",
+    "w": 1600,
+    "h": 900,
+    "video": null
+   },
+   {
+    "uuid": "d227974d-6d73-4bb7-9851-f332a6d4f6e2.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/OF9EtYCiWoY"
+   }
+  ],
+  "links": [
+   "pollyreach.ai",
+   "twitter.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "monthly",
+    3
+   ],
+   [
+    "weekly",
+    2
+   ],
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "PollyReach",
+  "slug": "pollyreach",
+  "tagline": "Give your agent a real number and voice to make calls.",
+  "description": "Most AI phone tools are built for enterprises — APIs, workflows, sales automation. PollyReach is built for you. Give your AI a real phone number. Say \"book me a table for 7pm\" — it finds the number, makes the call, handles the conversation, and reports back with a summary, recording & transcript. It also answers your phone 24/7 and screens spam. Works in 50+ languages.",
+  "websiteUrl": "https://pollyreach.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 2144,
+  "twitterUrl": "https://twitter.com/pollyr89900",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5331981",
+   "depth": 0,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt! 👋 I'm Gia, maker of PollyReach. I'm the kind of person who'd rather text than call. But some things still require a phone call — and when the restaurant is full, you have to try the next one, and the next. In Japan, I wanted to book a small izakaya. No online reservation, just a phone number. I don't speak Japanese. That's when it clicked: AI speaks 50+ languages. Why can't it just make the call? So we built PollyReach — Your Agent gets its own real phone number and a real voice. It handles real conversations the way a personal assistant would — gets interrupted, responds naturally, waits on hold, navigates IVR menus, and knows when to push back and when to hang up. It calls for you Polly finds the number, dials, navigates phone menus, handles the conversation, and confirms the booking. You get a summary + recording + transcript. It answers for you Polly picks up 24/7 with a natural-sounding voice — screens spam, talks to real callers, takes messages, tags priority, and sends you a summary. You decide what's worth calling back. It works for your business One of our users manages 80+ rental properties — his AI assistant handles tenant calls, follows up with vendors"
+  },
+  {
+   "id": "5380948",
+   "depth": 1,
+   "author": "Mohsin Ali",
+   "username": "mohsinproduct",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@gia_xu &nbsp;any plans to add webhooks for automatic transcript routing?"
+  },
+  {
+   "id": "5381023",
+   "depth": 2,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mohsinproduct &nbsp;That’s a great idea! Could you share which platforms you’d like the transcripts to be sent to? We’ll add webhook support to our future roadmap accordingly."
+  },
+  {
+   "id": "5383170",
+   "depth": 3,
+   "author": "Peter Neyra",
+   "username": "peter_neyra",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@mohsinproduct &nbsp; @gia_xu &nbsp;Definitely deepgram. I've made myself a phone call transcriber that sends me debriefs within 10 seconds of ending the call, using Deepgram, with speaker diarisation. Lives natively in my Android phone app as the normal dialler."
+  },
+  {
+   "id": "5383456",
+   "depth": 3,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@peter_neyra &nbsp;Nice build 🙌 We've got transcription + diarisation in PollyReach too, so I'm just curious — what kind of calls are you mostly using yours for? Always cool to see how people put these tools to work in their own life."
+  },
+  {
+   "id": "5382849",
+   "depth": 1,
+   "author": "Artur Brugeman",
+   "username": "arturbrugeman",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@gia_xu &nbsp;Hey Gia, congrats on the launch 👋 We run ClawPark.ai (managed OpenClaw hosting platform) so we see a lot of agents shipped on this stack — PollyReach is one of the cleanest voice + phone integrations I've seen come through the ecosystem. Two quick things: On audio: is the realtime layer terminated at PollyReach infra (text shuttled to OpenClaw via MCP), or does the OpenClaw instance handle the audio itself? Different deployment stories, different threat models. Mind if I DM? We get a steady stream of ClawPark users asking about voice/phone integrations and PollyReach would be a natural recommendation. Worth comparing notes when you have a moment."
+  },
+  {
+   "id": "5383519",
+   "depth": 2,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@arturbrugeman &nbsp;Really appreciate the kind words and respect for what you're building at ClawPark！😊 On audio — Realtime layer terminates on PollyReach infra, agent talks to us via structured tool calls (text in, structured outcomes back) On the DM — Absolutely welcome! Looking forward to it and happy to compare notes on what your users typically want and how we can make PollyReach a smooth recommendation from your side."
+  },
+  {
+   "id": "5383284",
+   "depth": 1,
+   "author": "Midori Verity",
+   "username": "midori_verity",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@gia_xu &nbsp;- you won me over when you said it screens for spam calls!"
+  },
+  {
+   "id": "5383460",
+   "depth": 2,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@midori_verity &nbsp;Haha, glad that one hit 😄"
+  },
+  {
+   "id": "5383677",
+   "depth": 1,
+   "author": "Ivan Stakhov",
+   "username": "ivan_stakhov",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@gia_xu &nbsp;Congrats on the launch, Gia. This is a genuinely useful idea! I can already see it helping with restaurant bookings, travel, and small business calls. How do you make sure the agent doesn’t confirm the wrong thing when the conversation gets messy?"
+  },
+  {
+   "id": "5394272",
+   "depth": 2,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ivan_stakhov &nbsp;Thanks so much for your kind words and thoughtful question! We really appreciate you seeing the value across restaurant bookings, travel, and small‑business calls — those are exactly the real‑world use cases we built this for. No agent, human or AI, can be completely error‑free. But we take every measure to minimize risks as much as possible when conversations get complex."
+  },
+  {
+   "id": "5394708",
+   "depth": 1,
+   "author": "Daniel Baum",
+   "username": "daniel_baum",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@gia_xu &nbsp;This is really sick hahah. How does the credit system work?"
+  },
+  {
+   "id": "5397197",
+   "depth": 2,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@daniel_baum &nbsp;We convert real usage costs into credits, with different subscription plans offering different credit allocations. We also provide free starter credits for users."
+  },
+  {
+   "id": "5381932",
+   "depth": 0,
+   "author": "Zac Taylor",
+   "username": "zact",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "This is one of those products where the demo can be simple but the real test is annoying real life. Booking a table sounds easy until the place is closed, the number is stale, the person asks a follow-up question, or the bot has to negotiate between \"7pm\" and \"we only have 7:45.\" I’d love to see examples of failed or partial calls, not just successful ones. A useful agent should say “I called, they didn’t answer,” “they only had 8pm,” or “I wasn’t confident enough to confirm,” instead of pretending the task completed."
+  },
+  {
+   "id": "5383540",
+   "depth": 1,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@zact &nbsp;Great observation — you’re absolutely right that real‑world edge cases are where these agents truly get tested, far beyond simple ideal‑case demos. This is exactly the core problem we’ve built PollyReach around solving. We strictly report call outcomes as they actually happen, with full transparency: users get clear status labels (Confirmed · Voicemail · Declined · No answer), plus full call summaries, transcripts, and recordings for every call. We also proactively flag potential edge‑case scenarios for users ahead of calls(e.g., 6:30–7:30 if 7 PM is unavailable), though we’re still refining how we handle tricky real‑world exceptions. Most importantly, our AI never over‑claims success or pretends a task is completed when it isn’t."
+  },
+  {
+   "id": "5381594",
+   "depth": 0,
+   "author": "Nika",
+   "username": "busmark_w_nika",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Aren't you afraid that some people may use it for harmful purposes? E.g. automating the frauds (against banks and its users, or \"behaving like relatives\")? How can we protect / avoid such an usage?"
+  },
+  {
+   "id": "5381675",
+   "depth": 1,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@busmark_w_nika &nbsp;Genuinely good question — this is something we treat as a first-class design constraint, not a patch. Every outbound call goes through a multi-layer guardrail before it dials. We screen for impersonation, deceptive intent, and known abuse patterns; Polly is required to identify itself as an AI on every call (so it can't pose as a person or a relative); and there's an anti-harassment layer on top. Happy to go deeper privately if you're working on similar problems."
+  },
+  {
+   "id": "5398704",
+   "depth": 1,
+   "author": "ys zheng",
+   "username": "ys_zheng",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@busmark_w_nika &nbsp;We fully recognize potential misuse risks and have built multi-layer safeguards to prevent malicious use."
+  },
+  {
+   "id": "5381195",
+   "depth": 0,
+   "author": "Jocky",
+   "username": "jocky",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "What languages are actually solid right now? Curious about Japanese specifically since that's the founding story."
+  },
+  {
+   "id": "5381333",
+   "depth": 1,
+   "author": "ys zheng",
+   "username": "ys_zheng",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jocky &nbsp;Great question — and Japanese is absolutely our strongest, most polished language (founding story checks out!), plus a handful of others that are rock-solid right now."
+  },
+  {
+   "id": "5381486",
+   "depth": 2,
+   "author": "Jocky",
+   "username": "jocky",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@ys_zheng &nbsp;That's cool!"
+  },
+  {
+   "id": "5381417",
+   "depth": 1,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jocky &nbsp;Thanks. Right now our multilingual testing is still ongoing and not fully polished yet. We’ve primarily focused on English and Japanese. Regular conversational flow works well, though we’ve noticed pronunciation clarity can be spotty for long number sequences like phone numbers and we're still working on it."
+  },
+  {
+   "id": "5381494",
+   "depth": 2,
+   "author": "Jocky",
+   "username": "jocky",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@gia_xu &nbsp;Keep up! I think that's a common problem for all kinds of AI voice apps."
+  },
+  {
+   "id": "5382128",
+   "depth": 0,
+   "author": "Lakshminath Reddy Dondeti",
+   "username": "lakshminath_dondeti",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Quo answers phones. Does your software make calls? Will the agent identify itself as AI without prompting? Thanks. 🙏"
+  },
+  {
+   "id": "5382363",
+   "depth": 1,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@lakshminath_dondeti &nbsp;Yes to both — PollyReach is primarily outbound (with inbound as well), and our agent always self-identifies as an AI on every call by default, no prompt needed."
+  },
+  {
+   "id": "5398701",
+   "depth": 1,
+   "author": "ys zheng",
+   "username": "ys_zheng",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@lakshminath_dondeti &nbsp;Sure thing 🙏"
+  },
+  {
+   "id": "5380699",
+   "depth": 0,
+   "author": "Luke Pioneero",
+   "username": "luke_pioneero",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Interesting concept. My main question is how it handles calls where the other side gets suspicious or asks to speak to a real person — does it disclose that it's an AI? Would love to know more about how that's handled before fully committing."
+  },
+  {
+   "id": "5380785",
+   "depth": 1,
+   "author": "ys zheng",
+   "username": "ys_zheng",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@luke_pioneero &nbsp;Great question, this is fully taken care of in our workflow. First off, our AI is programmed to act naturally in conversations. Whenever the recipient grows suspicious, doubts the identity or directly requests to talk to a real human agent, the system will respond properly right away."
+  },
+  {
+   "id": "5381136",
+   "depth": 1,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@luke_pioneero &nbsp;Great question!! Yes, we will state at the beginning that we are an AI assistant representing the owner. If the caller explicitly refuses to communicate with AI, we will not follow up further and will notify the owner about the situation. For enterprise‑level clients, we support transferring calls to live human."
+  },
+  {
+   "id": "5380752",
+   "depth": 0,
+   "author": "Charlene Chen",
+   "username": "charlenechen_123",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Where do you find the number? Actually, I want to know the limit. What kind of tasks would be impossible to complete?"
+  },
+  {
+   "id": "5380762",
+   "depth": 1,
+   "author": "ys zheng",
+   "username": "ys_zheng",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@charlenechen_123 &nbsp; You can easily get and manage calling numbers directly inside the PollyReach platform. As for usage limits: We have reasonable daily outbound call volume limits to ensure stable service quality. In general, simple business outreach, customer follow-up and regular calling tasks are all fully supported. Only high-frequency bulk spam calling, massive robocalls and overly intensive continuous dialing will be restricted and cannot be completed normally."
+  },
+  {
+   "id": "5381063",
+   "depth": 1,
+   "author": "Gia Xu",
+   "username": "gia_xu",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@charlenechen_123 &nbsp;Thanks for your great question! We’ve integrated tools to source these phone numbers. Lots of government and business numbers are publicly available. At the moment, we don’t support real‑time payment during calls yet, so our agent can’t process deposits or payments mid‑call."
+  }
+ ]
+}

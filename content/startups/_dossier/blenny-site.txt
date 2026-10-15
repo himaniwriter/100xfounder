@@ -1,0 +1,101 @@
+URL: https://blenny.fi5h.xyz/
+TITLE: Blenny · Free, open-source menu bar organizer for macOS 27
+META: Free, open-source menu bar organizer for macOS 27. Keep everyday apps visible, reveal occasional ones with a click, and hide the rest. No Screen Recording.
+
+Blenny · Free, open-source menu bar organizer for macOS 27 
+ Skip to content 
+ Blenny
+ Surface 
+ Reef 
+ Organize 
+ Deep 
+ Safety 
+ Install 
+ Questions 
+ Download… 
+ Source on GitHub 
+ Sponsor Blenny 
+ Features 
+ How it works 
+ Safety 
+ Install 
+ FAQ 
+ The dive sounds better. Turn on sound for the water, the deep and a few small surprises. 
+ 0.0 m 
+ SURFACE
+ Blenny range 
+ Menu bar organizer · Only for macOS 27 
+ Too much at the surface. 
+ Every little app wants a spot in your menu bar. Blenny gives each one a depth instead: keep the essentials at the Surface, tuck the occasional ones into the Reef, and let the rest sink into the Deep.
+ Download for macOS
+ View source 
+ Free & open source · Apache-2.0 · Apple silicon · macOS 27
+ Scroll to go under 
+ 0 m
+ Surface · 0 – 3 m · Always visible
+ What you use stays in the sun. 
+ Surface apps keep their place in the menu bar while Blenny manages it. Wi‑Fi, battery, the one timer you actually check: they stay in the light, right where your eyes expect them.
+ Whole apps, not stray icons. Blenny works per application, so every icon an app owns moves together.
+ Order included. Arrange the Surface the way you read it, and keep that order after Stop or Quit.
+ Native and small. A Swift app for macOS 27 that sits quietly as one little fish in your menu bar.
+ Field note · 0 – 3 m Many blennies live right at the tide line. Some hop between tide pools and can breathe air for a while. 
+ 12 m
+ Reef · 3 – 20 m · Shown on reveal
+ The rest moves into the reef. 
+ Reef apps stay out of the way until you click the fish. Then they come up for a short reveal session and slip back when you are done. Like a blenny in its crevice: head out, watching, never in the way.
+ Try a reveal
+ Field note · 3 – 20 m A blenny claims one hole and defends it. Most of the time you only see its head, watching the water. 
+ 28 m
+ Slope · 20 – 35 m · Organize
+ Drag. Apply. Undo if you change your mind.
+ Draft first. Drag icons between Surface, Reef and Deep. Nothing touches your menu bar until you choose Apply.
+ One-step Undo. Undo Changes reverses the last Apply, visibility and order together.
+ Stop means stop. Stop or Quit releases Blenny's restrictions at once. Resume picks your saved setup back up.
+ No mouse required. Every icon has context-menu and accessibility actions for moving it.
+ Field note · 20 – 35 m Blenny diversity drops with depth. Past about 30 m you rarely meet one; the light turns blue and the reef thins out. 
+ 40 m
+ Deep · below 35 m · Always hidden
+ Some things belong below the reef. 
+ Deep apps stay out of the menu bar and out of every reveal session. They keep running and stay yours; they just stop asking for attention. Move them back up whenever you like.
+ 48 m · Built to be careful
+ Gentle with your Mac. 
+ Hands off your pointer
+ Blenny never moves the cursor, clicks for you or fakes a Command‑drag.
+ No Screen Recording
+ Blenny doesn't watch your screen, so it never asks for Screen Recording permission.
+ One careful writer
+ Every change runs through a single queue with a saved recovery record, one verification and at most one retry.
+ Fails closed
+ If the menu bar changed under it, Blenny stops and asks instead of writing again.
+ Recoverable
+ Interrupted changes keep a recovery record, so Recover Changes can finish or restore them.
+ Signed updates
+ Updates arrive through Sparkle, checked against Blenny's own key. Automatic checks stay off until you turn them on.
+ 52 m · Honest charts
+ What Blenny can't reach yet. 
+ Clock and Notification Center. While Blenny manages the menu bar, clicking the clock can't open Notification Center. Swipe left from the right edge of the trackpad instead.
+ Now Playing, Gaming and Wine. These system extras may disappear during management. Stop brings them back.
+ Some system items stay put. Siri, Time Machine and Control Center can't be sorted yet. Clock and the overflow arrow are fixed.
+ macOS has the last word. On a narrow screen the system's own overflow can still tuck away a Surface app.
+ Tested ground. Verified on macOS 27.0 (26A428) with Apple silicon. Other builds and display setups haven't been verified.
+ 56 m · Install
+ Four steps to the reef. 
+ Download the disk image from GitHub Releases .
+ Drag Blenny into Applications , eject the disk image and open the installed copy.
+ Allow the first launch. Blenny is self-signed and not notarized by Apple. If macOS blocks it, choose Open Anyway in System Settings › Privacy & Security ( Apple's guide ).
+ Grant Device Control when Blenny asks. That's it: no Screen Recording, no SIP changes.
+ Blenny 
+ Blenny 
+ Applications 
+ 58 m · Questions
+ Before you dive in. 
+ Is Blenny free? Yes. Blenny is free and open source under the Apache-2.0 license. If it earns a place in your menu bar, you can support it through GitHub Sponsors or Ko‑fi.
+ Why is it called Blenny? Blennies are small reef fish that live in holes and crevices and poke their heads out to watch the world. That is exactly how a Reef app should behave.
+ Which Macs does it support? macOS 27 or later on Apple silicon. There is no macOS 26 or Intel version.
+ What's the difference between Reef and Deep? Reef apps come up whenever you click the fish for a reveal session. Deep apps never do; they stay out of the menu bar until you move them to another area.
+ How do updates work? Use Check for Updates in Settings or in Blenny's menu. Automatic checks are off by default, and turning them on still doesn't install anything unattended.
+ How do I uninstall it? Finish or recover any running change, choose Stop, turn off Open Blenny at Login and quit. Then move Blenny to the Trash. The recovery and uninstall guide covers the details.
+ Something went wrong. Now what? Choose Stop to release Blenny's restrictions right away. If Blenny reports an unfinished change, use Recover Changes and keep its recovery data until it completes. Reproducible problems belong in GitHub Issues .
+ 60 m · Time to go back up
+ Download Blenny macOS 27 · Apple silicon 
+ GitHub

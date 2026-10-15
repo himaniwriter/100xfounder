@@ -1,0 +1,85 @@
+{
+ "input": "https://www.producthunt.com/posts/typeahead-2-0",
+ "final_url": "https://www.producthunt.com/products/typeahead?launch=typeahead-2-0",
+ "launch": {
+  "slug": "typeahead-2-0",
+  "featuredAt": "2026-07-06T00:01:00-07:00",
+  "dailyRank": "2",
+  "points": 421,
+  "commentsCount": 74,
+  "source": "launches page (no gallery/comments)",
+  "makers": [
+   {
+    "name": "Sam Asante",
+    "username": "samasante",
+    "headline": "Entrepreneur - Investor"
+   },
+   {
+    "name": "Hiten Shah",
+    "username": "hnshah",
+    "headline": "CEO of Crazy Egg (est. 2005)"
+   }
+  ]
+ },
+ "product": {
+  "name": "Typeahead",
+  "slug": "typeahead",
+  "tagline": "AI autocomplete for every app on your Mac",
+  "description": "Typeahead is the writing assistant that writes with you, not for you. It works in every text field on your Mac, helping you type faster and smarter with inline suggestions that appear as you write. It runs on a local AI model, works offline and keeps your writing on your device.",
+  "websiteUrl": "https://typeahead.ai",
+  "reviewsCount": 6,
+  "reviewsRating": 4.83,
+  "followersCount": 942,
+  "twitterUrl": "https://twitter.com/typeaheadai",
+  "linkedinUrl": "",
+  "instagramUrl": "",
+  "githubUrl": "",
+  "postsCount": 2,
+  "screenshots": [
+   "https://ph-files.imgix.net/414e5383-9310-460a-b2c5-ed1e6ab7d25a.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/b4929dfb-a97f-4789-8fb5-6130d748382f.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/5d9d4175-4ccf-47ee-8fb7-44cb350f708a.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/fde1023e-6a86-4460-b619-91afad5a53cc.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/d7a13b51-2191-41b8-bdaf-1fd3eea2e2f2.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/f1b1edc6-07f4-4a6e-884a-50b2224ab15d.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

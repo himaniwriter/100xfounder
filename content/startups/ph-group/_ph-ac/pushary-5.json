@@ -1,0 +1,82 @@
+{
+ "input": "https://www.producthunt.com/posts/pushary-5",
+ "final_url": "https://www.producthunt.com/products/pushary?launch=pushary-5",
+ "launch": {
+  "slug": "pushary-5",
+  "featuredAt": "2026-09-18T00:01:00-07:00",
+  "dailyRank": "8",
+  "points": 183,
+  "commentsCount": 17,
+  "source": "launches page (no gallery/comments)",
+  "makers": [
+   {
+    "name": "Aadil Ghani",
+    "username": "aadilghani",
+    "headline": "Founder"
+   }
+  ]
+ },
+ "product": {
+  "name": "Pushary",
+  "slug": "pushary",
+  "tagline": "Control panel for AI agents on your lock screen",
+  "description": "Your AI agents stop when they need a permission or an answer. Pushary puts that yes or no on your lock screen, so the work keeps moving while you are away. New in this launch: native iPhone and Android apps. Pair with your terminal by scanning a QR code, no key to paste. Approvals, questions, and task-done alerts from Claude Code, Codex, Cursor, Gemini CLI, Hermes, and Claude Cowork land in one inbox, with per-tool policies that auto-approve the safe stuff and an audit trail of every decision.",
+  "websiteUrl": "https://pushary.com",
+  "reviewsCount": 1,
+  "reviewsRating": 5,
+  "followersCount": 1297,
+  "twitterUrl": "https://x.com/usepushary",
+  "linkedinUrl": "https://www.linkedin.com/company/pushary",
+  "instagramUrl": "https://www.instagram.com/usepushary",
+  "githubUrl": "https://github.com/aadilghani1",
+  "iosUrl": "https://www.producthunt.com/r/LVH7RU5NLPSVKO",
+  "androidUrl": "https://www.producthunt.com/r/3WMX4NFC5ZZA5D",
+  "postsCount": 5,
+  "screenshots": [
+   "https://ph-files.imgix.net/82f7afba-2460-4b00-bca2-d6ea387490cb.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/689bebca-46c4-4181-8612-f051b4347ee6.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/7c36c8ad-3747-4bd3-b330-4da55abb5daf.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/41717d42-0321-4412-966d-f7e9df03133b.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/c5709422-8dfc-4791-9461-42942506baf4.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/75f504d5-8cc5-440b-8355-6d912f449521.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 1749,
+  "date": "2026-10-03T14:17:10",
+  "date_gmt": "2026-10-03T08:47:10",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/eat-train-feel/",
+   "raw": "https://100xfounder.com/startup/eat-train-feel/"
+  },
+  "modified": "2026-10-04T20:56:19",
+  "modified_gmt": "2026-10-04T15:26:19",
+  "password": "",
+  "slug": "eat-train-feel",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/eat-train-feel/",
+  "title": {
+   "raw": "Eat Train Feel",
+   "rendered": "Eat Train Feel"
+  },
+  "content": {
+   "raw": "<p>A coach for you Workouts, food, and how you feel</p>\n",
+   "rendered": "<p>A coach for you Workouts, food, and how you feel</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "A coach for you Workouts, food, and how you feel",
+   "rendered": "<p>A coach for you Workouts, food, and how you feel</p>\n",
+   "protected": false
+  },
+  "featured_media": 1763,
+  "template": "",
+  "xf_industry": [],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "eat-train-feel",
+  "class_list": [
+   "post-1749",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1749",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/media/1763"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=1749"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=1749"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=1749"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1749"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1749"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1749"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1749"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1749"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/1749"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

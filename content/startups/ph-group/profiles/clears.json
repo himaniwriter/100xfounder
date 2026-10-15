@@ -1,0 +1,91 @@
+{
+  "slug": "clears",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/clears",
+  "excerpt": "Clears is an agentic platform that takes engineering tickets from requirement to merged pull request. Pricing, alternatives and what people asked on launch day.",
+  "content": "<p>Clears is a platform for engineering teams that wants to automate software delivery, not just code writing. It sits above coding agents and coordinates them across the whole process: it triages incoming tickets, scopes them, writes the code and tests, and tracks each task on a board until it becomes a merged pull request. It connects to Jira, GitHub, Bitbucket, GitLab and Slack, and developers can drive it from their terminal through MCP.</p><p>Its co-founder and CEO, Tzahi Mor, wrote on Product Hunt that developers were coding faster with tools like Claude Code and Cursor, but their organisations were not shipping much faster, and that Clears targets the steps around the code. The company's site says it is SOC 2 certified and offers a self-hosted (VPC) option on its Enterprise plan.</p><p>Clears launched on Product Hunt on 17 August 2026 and finished #3 for the day with 349 points and 33 comments (as of 14 October 2026).</p><p><em>We have not tested Clears ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI software delivery",
+    "platform": "Web app, with an MCP connection for coding agents in the terminal",
+    "starts_at": "Free trial, then $89 per user/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Agentic platform that takes engineering tickets from requirement to merged pull request",
+    "maker": {"name": "Tzahi Mor", "url": "https://www.producthunt.com/@tzahimor"},
+    "team": [
+      {"name": "Tzahi Mor", "role": "Co-founder and CEO (per his Product Hunt profile)", "url": "https://www.producthunt.com/@tzahimor"},
+      {"name": "Jonathan Maor", "role": "Co-founder and CTO (per his Product Hunt profile)", "url": "https://www.producthunt.com/@jonathan_m06"},
+      {"name": "Daniel Nakash", "role": "Product manager (per his Product Hunt profile)", "url": "https://www.producthunt.com/@danielnakash"}
+    ],
+    "ph": {"rank": 3, "votes": 349, "comments": 33, "followers": 691, "launched": "2026-08-17", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/1ed758e9-04d5-4b96-9015-9ef436bab089.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Clears graphic reading 'Your Backlog, Delivered' beside a task board with Backlog, Running and Merged columns of tickets", "credit": "Image: Clears via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/06ed3453-0731-46e3-93c4-7f6969830ec8.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Clears slide titled 'Coding got faster. Software delivery didn't.' listing manual tools, human-gated steps and coordination cost", "credit": "Image: Clears via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "lead an engineering team whose developers already use coding agents but whose tickets still move slowly from requirement to release",
+        "work in Jira with GitHub, Bitbucket or GitLab and Slack, the integrations listed on the Pro plan",
+        "need a self-hosted option: the Enterprise plan includes deployment in your own VPC"
+      ],
+      "not_fit": [
+        "are a solo developer looking for an editor assistant: Clears is pitched at R&D organisations and priced per user",
+        "want a free tier: the site offers a free trial, then a paid Pro plan capped at 5 users",
+        "need publicly listed Enterprise prices: Enterprise is sold through a demo"
+      ]
+    },
+    "pricing": {
+      "intro": "Clears lists two plans on its own pricing page. Prices are in US dollars.",
+      "url": "https://www.clears.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free trial", "price": "$0", "amount": 0, "currency": "USD", "detail": "Full access, no credit card required"},
+        {"name": "Pro", "price": "$89 per user/month", "amount": 89, "currency": "USD", "detail": "Autonomous task orchestration, Jira, GitHub/Bitbucket/GitLab and Slack integrations, shared workspace, Slack support, up to 5 users"},
+        {"name": "Enterprise", "price": "Contact sales", "detail": "Everything in Pro plus unlimited team members, custom workflows, a dedicated customer engineer, priority support with SLAs, large-codebase analysis, deployment in your own VPC and tailored onboarding"}
+      ],
+      "notes": [
+        "The cost of the coding models the agents use is not covered on the pricing page; check with Clears before you budget.",
+        "Product Hunt lists Clears under \"free options\", which reflects the free trial."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are the products Product Hunt lists as alternatives. Most are coding agents that Clears says it coordinates rather than replaces. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Cursor", "url": "https://cursor.com/", "what": "AI coding agent and editor", "starts_at": "See its pricing page", "ph_rating": 4.96, "ph_reviews": 961,
+         "difference": "Works at the level of a developer's editor and terminal. Clears works at the team level, turning tickets into pull requests and tracking them on a board; its founder names Cursor as a tool its users already have."},
+        {"name": "Claude Code", "url": "https://www.anthropic.com/claude-code", "what": "Anthropic's command-line coding agent", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 781,
+         "difference": "A single coding agent. Clears can be driven from a coding agent's terminal over MCP and adds triage, context and orchestration around it."},
+        {"name": "Codex by OpenAI", "url": "https://chatgpt.com/codex", "what": "OpenAI's agent that builds, tests and debugs code", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 106,
+         "difference": "Another coding agent; Clears positions itself as the layer that coordinates such agents across the delivery process."}
+      ],
+      "more": "Product Hunt also lists Google Antigravity (4.65 from 23 reviews) and Augment Code (4.6 from 10 reviews)."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/clears/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/clears",
+      "quotes": [
+        {"author": "Priyanka Mandal", "text": "Validation still feels like a huge bottleneck. How far does Clears go on the QA side — unit tests, CI, system tests, E2E?",
+         "reply": "Jonathan Maor (co-founder): unit tests are written and run for every story, the build must pass and it circles back with CI; end-to-end testing already runs for some customers."},
+        {"author": "Aamir", "text": "Really like the idea of tackling the whole delivery process instead of just the coding part."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=clears.ai&f=live"}
+    },
+    "faq": [
+      {"q": "What is Clears?", "a": "An agentic execution platform for engineering teams. It coordinates AI agents, tools and workflows to take tickets from requirement to merged pull request, according to its website."},
+      {"q": "How much does Clears cost?", "a": "There is a free trial with full access and no credit card. The Pro plan costs $89 per user per month for up to 5 users; Enterprise is priced on request (Clears pricing page, checked 14 October 2026)."},
+      {"q": "Which tools does Clears integrate with?", "a": "The Pro plan lists Jira, GitHub, Bitbucket, GitLab and Slack. Developers can also connect their coding agent to Clears over MCP and run tasks from the terminal."},
+      {"q": "Does Clears write tests?", "a": "Its co-founder Jonathan Maor said on Product Hunt that unit tests are written and run for every story, the build has to pass and Clears checks CI; end-to-end testing runs for some customers."},
+      {"q": "Can Clears be self-hosted?", "a": "The Enterprise plan includes deployment in your own VPC, according to the pricing page."},
+      {"q": "How did Clears do on Product Hunt?", "a": "It launched on 17 August 2026 and finished #3 for the day with 349 points and 33 comments. It had no Product Hunt reviews as of 14 October 2026."}
+    ],
+    "sources": [
+      {"label": "Clears official site", "url": "https://www.clears.ai/"},
+      {"label": "Clears pricing", "url": "https://www.clears.ai/pricing"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/clears"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/clears"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/clears/alternatives"}
+    ]
+  }
+}

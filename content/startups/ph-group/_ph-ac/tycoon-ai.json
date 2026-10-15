@@ -1,0 +1,375 @@
+{
+ "input": "https://www.producthunt.com/posts/tycoon-ai",
+ "final_url": "https://www.producthunt.com/products/tycoon-us?launch=tycoon-ai",
+ "launch": {
+  "slug": "tycoon-ai",
+  "name": "Tycoon AI ",
+  "tagline": "Run one-person companies entirely with AI agents",
+  "featuredAt": "2026-05-21T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "6",
+  "points": 538,
+  "commentsCount": 111,
+  "pricingType": "free_options",
+  "description": "Tycoon.us enables you to run an entire company with AI agents, powered by Astra, an AI CEO, and 10+ ready-to-use AI agents you can choose from, from CMO who manages X to CTO who codes. Astra also manages Claude Code/Hermes. \n\nGive Astra a KPI or project, like “10x traffic this month,” or “launch onboarding flows.” She creates a plan, assigns agents, tracks progress, and asks for approval when needed.\n\nEvery agent is out of box, so no setup, coding, or API keys required.",
+  "makers": [
+   {
+    "name": "Richie Cheng",
+    "username": "richie_cheng",
+    "headline": "AI QA Engineer"
+   },
+   {
+    "name": "Nonexist",
+    "username": "nonexist",
+    "headline": "Fire Rajiv Ayyangar"
+   },
+   {
+    "name": "Xiaoyin Qu",
+    "username": "xiaoyin_qu3",
+    "headline": "founder, tycoon.us"
+   }
+  ],
+  "hunter": "Rajiv Ayyangar",
+  "media": [
+   {
+    "uuid": "64329f50-ad0a-4246-90f5-3fe90d0a6da1.png",
+    "type": "image",
+    "w": 1622,
+    "h": 970,
+    "video": null
+   },
+   {
+    "uuid": "1ce7f524-1597-48f8-88c2-305bafb26dfe.png",
+    "type": "image",
+    "w": 1546,
+    "h": 922,
+    "video": null
+   },
+   {
+    "uuid": "322d2c3d-ef8c-4830-a31d-e4681d428094.png",
+    "type": "image",
+    "w": 1316,
+    "h": 826,
+    "video": null
+   },
+   {
+    "uuid": "c34babb3-7736-45aa-94ed-2aca470c6dc5.png",
+    "type": "image",
+    "w": 1644,
+    "h": 1032,
+    "video": null
+   },
+   {
+    "uuid": "81d37af5-f31a-4c6f-90de-eab57911fc6e.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/KcUf1LuUiU4"
+   }
+  ],
+  "links": [
+   "tycoon.us",
+   "twitter.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "Tycoon AI ",
+  "slug": "tycoon-us",
+  "tagline": "Run one-person companies entirely with AI agents",
+  "description": "Tycoon.us enables you to run an entire company with AI agents, powered by Astra, an AI CEO, and 10+ ready-to-use AI agents you can choose from, from CMO who manages X to CTO who codes. Astra also manages Claude Code/Hermes. Give Astra a KPI or project, like “10x traffic this month,” or “launch onboarding flows.” She creates a plan, assigns agents, tracks progress, and asks for approval when needed. Every agent is out of box, so no setup, coding, or API keys required.",
+  "websiteUrl": "https://tycoon.us",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 1089,
+  "twitterUrl": "https://twitter.com/quxiaoyin",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5388686",
+   "depth": 0,
+   "author": "Xiaoyin Qu",
+   "username": "xiaoyin_qu3",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt, I’m Xiaoyin, founder of Tycoon.us A year ago, I became the first human CEO to be replaced by an AI CEO named Astra. At first, it sounded like a stunt. Then Astra helped run real companies: HeyBoss reached 100K+ users, and SkillBoss hit $1M ARR in 30 days. Tycoon is the productized version of that experiment. It gives one person an AI CEO and a full team of AI agents. You can text Astra your goals, ideas, or tasks. She turns them into structured work, assigns the right agents, reviews progress, and asks for approval when it matters. We built Tycoon for solo founders, indie hackers, and builders who want the operating power of a company without hiring managers, sitting in meetings, or coordinating everything manually. You can view the step-by-step walkthrough here:"
+  },
+  {
+   "id": "5389742",
+   "depth": 1,
+   "author": "Artem Fedorovich",
+   "username": "artem_fedorovich",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@xiaoyin_qu3 &nbsp;Hi Xiaoyin, congrats on the launch 🎉 The press run on Astra is wild, and the orchestrator model (one AI CEO managing specialized agents) is the right architecture in my view. Most \"AI company\" pitches are just one agent with a fancy title. The piece I want to understand: when Astra reviews the CTO agent's code or the CMO agent's campaign before bringing it to you, what is that review actually grounded in? Is it another LLM pass evaluating the output (which tends to be optimistic, the reviewer wants to approve), or is it grounded in something harder, tests passing, CI green, actual metric movement? Running a few agents in prod myself and the \"LLM reviews LLM\" loop is where confidence quietly inflates. The reviewer almost always likes the work."
+  },
+  {
+   "id": "5391363",
+   "depth": 2,
+   "author": "Alex Isa",
+   "username": "webappski",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@xiaoyin_qu3 &nbsp; @artem_fedorovich &nbsp; artem's \"LLM reviews LLM\" question hits coding tasks specifically hard — agent ships a feature, type-check passes, unit tests green, the commit message reads \"implemented cleanly, all tests pass.\" CI green. nobody actually ran the thing in a real environment, and the runtime bug only surfaces when someone uses the deployed code. even CI + tests grounding (the \"harder layer\" he asked about) isn't enough — needs the actual app running, or some observable signal in production. otherwise you've just moved the lie from the IDE to CI."
+  },
+  {
+   "id": "5392746",
+   "depth": 0,
+   "author": "George Sostak",
+   "username": "gsostak",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Hey @xiaoyin_qu3 , congrats on launch! I'm curious how Tycoon is different from opensource Paperclip? Also, another thing to mention, why Tycoon is mirroring human-first company chart if there are only AI employee? Your CEO can manage 50 engineers, 100 content creators and many more without extra \"C\" level. Going down the tree from CEO -&gt; CMO -&gt; Content manager -&gt; LinkedIn post writer causes the request requirements drift and unnecessary tokens burn."
+  },
+  {
+   "id": "5392883",
+   "depth": 1,
+   "author": "Xiaoyin Qu",
+   "username": "xiaoyin_qu3",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@gsostak &nbsp;We are purpose-built for tech companies and we are not a general framework. Astra and all team members have been trained by the same playbook that got us 1M ARR and 100K users. You can have it a try. I also I don't believe in paperclip's multi-level hierarchy. I think it's an old-school playbook. I believe in flat organizations that Astra can manage specialists to get it done. It's highly effective if you have it a try!"
+  },
+  {
+   "id": "5399055",
+   "depth": 2,
+   "author": "George Sostak",
+   "username": "gsostak",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@xiaoyin_qu3 &nbsp;Oh I see, thank you for the explanation! I was kind of missled by your screenshots where there are CTO, CMO..."
+  },
+  {
+   "id": "5391398",
+   "depth": 0,
+   "author": "Gaurika Gautam",
+   "username": "dreaming_eversince",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "This is really cool and terrifying at the same time. But I am curious how does the feedback loop works here. What I mean is that there is a hierarchy in real world company but for AI agents how does that work? Does it have designated AI agents for each role in company ?"
+  },
+  {
+   "id": "5391470",
+   "depth": 1,
+   "author": "Richie Cheng",
+   "username": "richie_cheng",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@dreaming_eversince &nbsp;Yes — there’s a real role structure. Astra acts as the AI CEO, and the specialists handle research, marketing, code, finance, legal, etc. The feedback loop happens in the task threads: your feedback stays attached to the work, and Astra watches active tasks and reroutes when needed."
+  },
+  {
+   "id": "5392906",
+   "depth": 1,
+   "author": "Xiaoyin Qu",
+   "username": "xiaoyin_qu3",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@dreaming_eversince &nbsp;You just talk to Astra. Astra will figure out who to delegate and bring you the result."
+  },
+  {
+   "id": "5391329",
+   "depth": 0,
+   "author": "Daris Esteban",
+   "username": "daris_esteban",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Really interesting concept. If a founder gives Astra a vague goal like grow revenue,how does the system break that into actionable workflows and measurable outcomes?"
+  },
+  {
+   "id": "5391510",
+   "depth": 1,
+   "author": "Richie Cheng",
+   "username": "richie_cheng",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@daris_esteban &nbsp;If the goal is too vague, Astra pushes for clarity first. Then she turns it into a real goal with a timeframe, a measurable signal, and the first few tasks that could move it forward. So “grow revenue” usually becomes something closer to “grow MRR by X by Y date,” then gets broken into concrete workflows the team can actually execute and track."
+  },
+  {
+   "id": "5392913",
+   "depth": 1,
+   "author": "Xiaoyin Qu",
+   "username": "xiaoyin_qu3",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@daris_esteban &nbsp;She looks into our competitors, your customers, doing customer research, test ways to boost traffic-conversion-retention."
+  },
+  {
+   "id": "5390960",
+   "depth": 0,
+   "author": "Colton Drake",
+   "username": "colton_drake",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Super interesting product direction. Can Tycoon integrate with existing startup stacks like Slack, Linear, HubSpot, or GitHub workflows?"
+  },
+  {
+   "id": "5391490",
+   "depth": 1,
+   "author": "Richie Cheng",
+   "username": "richie_cheng",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@colton_drake &nbsp;Yes for parts of the stack already — today we support tools like Slack, GitHub, Stripe, GA4, and PostHog. For broader PM/CRM coverage, we’re still expanding from there."
+  },
+  {
+   "id": "5392914",
+   "depth": 1,
+   "author": "Xiaoyin Qu",
+   "username": "xiaoyin_qu3",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@colton_drake &nbsp;yes! all of the four"
+  },
+  {
+   "id": "5391654",
+   "depth": 0,
+   "author": "Ajay Singh",
+   "username": "ajay_singh89",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Really impressive to see AI agents handling the full business ops stack. Curious how does Astra handle decisions that need brand context or tone? Like if a CMO agent is writing content, what's feeding it the company's voice? Excited to see where this goes"
+  },
+  {
+   "id": "5392239",
+   "depth": 1,
+   "author": "Darren",
+   "username": "darren_y_lu",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@ajay_singh89 &nbsp;Astra has access to all context of past and recurring tasks. It reads the past market research and track trajectory, so the context of the marketing development is continuous. Overtime, Astra also aligns the taste with business owner."
+  },
+  {
+   "id": "5392901",
+   "depth": 1,
+   "author": "Xiaoyin Qu",
+   "username": "xiaoyin_qu3",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ajay_singh89 &nbsp;yes it's based on memory of Astra and you .Astra can also proactively recommend brand context based on our winning playbook."
+  },
+  {
+   "id": "5394964",
+   "depth": 2,
+   "author": "Ajay Singh",
+   "username": "ajay_singh89",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@xiaoyin_qu3 &nbsp; That's a smart approach memory-driven brand alignment makes much more sense than static style guides. Does Astra learn faster with more usage, or is there an onboarding phase where you explicitly feed it your brand context upfront?"
+  },
+  {
+   "id": "5395281",
+   "depth": 3,
+   "author": "Xiaoyin Qu",
+   "username": "xiaoyin_qu3",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ajay_singh89 &nbsp;both"
+  },
+  {
+   "id": "5389656",
+   "depth": 0,
+   "author": "Harshal Chaudhary",
+   "username": "harshalvc_ai",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Really interesting idea. Curious how Astra handles quality expectations, since every founder may define “good enough” differently. Does it learn each user’s satisfaction bar from approvals, edits, and rejections over time, or can users explicitly set the quality standard for different types of work?"
+  },
+  {
+   "id": "5389800",
+   "depth": 1,
+   "author": "Richie Cheng",
+   "username": "richie_cheng",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@harshalvc_ai &nbsp;Great question. Right now we handle this through a mix of explicit standards + ongoing feedback. You can define things like brand voice, quality bar, constraints, and examples in workspace knowledge or directly in the task brief, and Astra routes that context to the right agent. Then your edits, pushback, and redos in the task thread stay attached to the work, so the team has that context going forward. For teams with very specific workflows, you can also create custom agents with their own role, process, and approval boundaries."
+  }
+ ]
+}

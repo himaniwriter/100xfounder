@@ -1,0 +1,278 @@
+{
+ "slug": "semos-ai-manager-agents",
+ "ph_url": "https://www.producthunt.com/posts/semos-ai-manager-agents",
+ "existing_listing_slug": null,
+ "website": "https://semos.ai/",
+ "excerpt": "Semos.ai Manager Agents are AI agents for people managers that learn from meetings to draft feedback and recognition. Free plan; Pro $39, Power $69.",
+ "content": "<p>Semos.ai Manager Agents is a set of AI agents for people managers. A Meeting Agent builds context from your meetings, and other agents use it: a Feedback Agent and a Recognition Agent draft messages based on what actually happened, an HRBP Agent helps structure difficult people conversations and their documentation, a Career &amp; Growth Agent prompts growth talks, a Culture Agent flags shifts in team sentiment, and a Company Agent tracks news about your sector. The aim is to point you to what needs attention, such as overdue feedback or recognition you missed, and to explain why each suggestion is made so you learn as you go.</p><p>Semos.ai says its guidance draws on Stanford's 4Is feedback framework, the Big Five personality traits and Hofstede's cultural dimensions. Its Product Hunt gallery shows Google Calendar and Outlook Calendar connections and scores for culture, feedback and recognition. There is a free plan with 250 AI credits, paid Pro and Power plans, and an Enterprise mode that adds SAP SuccessFactors and Workday integration, SSO and SCIM.</p><p>Semos.ai is part of Semos Cloud, which makes people and culture software for large companies; its privacy policy names the operator as Semos Software LLC, a Delaware company with an address in Lewisville, Texas. The product launched on Product Hunt on 29 September 2026 and finished #5 for the day with 183 upvotes and 33 comments. The makers listed are Ivana Maznevska, Miodrag Stojanov, Jovica Nastovski and Natasha Davidovska.</p><p><em>We have not tested Semos.ai Manager Agents ourselves. This page brings together its official site, pricing page and privacy policy, its Product Hunt launch and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "HR and people management",
+  "platform": "Web app",
+  "starts_at": "Free plan (250 credits); Pro $39",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI agents that learn from a manager's meetings and draft feedback, recognition and hard-conversation prep",
+  "maker": {
+   "name": "Ivana Maznevska",
+   "url": "https://www.producthunt.com/@ivana_m"
+  },
+  "team": [
+   {
+    "name": "Ivana Maznevska",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@ivana_m"
+   },
+   {
+    "name": "Miodrag Stojanov",
+    "role": "Lead Engineer at Semos Cloud",
+    "url": "https://www.producthunt.com/@miodragstojanov"
+   },
+   {
+    "name": "Jovica Nastovski",
+    "role": "Product Designer",
+    "url": "https://www.producthunt.com/@jovica_nastovski"
+   },
+   {
+    "name": "Natasha Davidovska",
+    "role": "Product Marketing at Semos.ai",
+    "url": "https://www.producthunt.com/@natasha_davidovska"
+   }
+  ],
+  "ph": {
+   "rank": 5,
+   "votes": 183,
+   "comments": 33,
+   "followers": 434,
+   "launched": "2026-09-29",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://youtu.be/Rj-dN-gOM7c",
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/6f910000-f53e-4608-b51c-14137a6b1c02.png?auto=format&fit=max&w=1400",
+    "alt": "Semos.ai home screen with cards for the Recognition, Feedback, Career & Growth, Company, Culture, HRBP and Meeting agents",
+    "credit": "Image: Semos.ai Manager Agents on Product Hunt",
+    "w": 5104,
+    "h": 3064
+   },
+   {
+    "url": "https://ph-files.imgix.net/25903c7e-8cc1-49e4-af7a-f85cd8902a19.png?auto=format&fit=max&w=1400",
+    "alt": "Semos.ai chat in which the Recognition Agent drafts a thank-you message to a dev team after a standup",
+    "credit": "Image: Semos.ai Manager Agents on Product Hunt",
+    "w": 5104,
+    "h": 3064
+   },
+   {
+    "url": "https://ph-files.imgix.net/f5604c7a-6d8c-4696-a56f-20229a1664a9.png?auto=format&fit=max&w=1400",
+    "alt": "Semos.ai Career & Growth Agent suggesting it is time for a growth conversation and drafting talking points",
+    "credit": "Image: Semos.ai Manager Agents on Product Hunt",
+    "w": 5104,
+    "h": 3064
+   },
+   {
+    "url": "https://ph-files.imgix.net/5dc291a4-5ac7-41a2-b061-96ab492d5a0e.png?auto=format&fit=max&w=1400",
+    "alt": "Semos.ai dashboards showing recognition frequency, culture health topics and a feedback leadership-style chart",
+    "credit": "Image: Semos.ai Manager Agents on Product Hunt",
+    "w": 5104,
+    "h": 3064
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Natasha Davidovska writes that the team spent years building people and culture software for large enterprises at Semos Cloud, and saw that managers lacked practical tools for leading their teams day to day. Manager Agents grew out of that.",
+    "She describes it as specialised agents that share one context drawn from your meetings, so the advice is about your actual team rather than generic. It drafts feedback and recognition, helps you prepare for hard conversations, and uses behavioural science to shape how you approach different people."
+   ],
+   "attribution": "Natasha Davidovska, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/semos-ai-manager-agents?comment=5785870"
+  },
+  "use_cases": [
+   "Drafting specific feedback after a meeting",
+   "Remembering to recognise good work on time",
+   "Preparing for a difficult or underperformance conversation",
+   "Planning career and growth talks with direct reports",
+   "Spotting shifts in team sentiment"
+  ],
+  "audience": {
+   "fit": [
+    "manage a team and have no HR business partner close at hand",
+    "want feedback and recognition drafts grounded in what was said in meetings",
+    "want to try an AI management coach on a free plan first"
+   ],
+   "not_fit": [
+    "need a full performance-review or OKR system: tools such as Lattice cover that",
+    "cannot let meeting content go to an AI service: the privacy policy lists LLM providers among its service providers",
+    "need HRIS integration on a self-serve plan: SAP SuccessFactors and Workday are Enterprise-only"
+   ]
+  },
+  "pricing": {
+   "intro": "Semos.ai's self-serve plans are credit based. Prices are shown with a $ sign; the page does not name the currency. The pricing page and the terms describe credit renewal differently; see the notes.",
+   "url": "https://semos.ai/pricing/",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Pricing page: '250 credits / 30 days' and '250 one-time credits' (about 5-10 'intelligence moments'); full access to the multi-agent leadership AI"
+    },
+    {
+     "name": "Pro",
+     "price": "$39",
+     "amount": 39,
+     "currency": "USD",
+     "detail": "Pricing page: '500 credits / 30 days' and '500 one-time credits' (about 15-20 moments); adaptive coaching, meeting summaries and actions"
+    },
+    {
+     "name": "Power",
+     "price": "$69",
+     "amount": 69,
+     "currency": "USD",
+     "detail": "Pricing page: '1000 credits / 30 days' and '1000 credits/month' (about 30-40 moments); higher meeting volume, priority access to new capabilities"
+    },
+    {
+     "name": "Enterprise Connected Mode",
+     "price": "Contact sales",
+     "detail": "SAP SuccessFactors and Workday integration, SSO, SCIM and AI governance, Google and Microsoft 365 data, company-wide analytics"
+    }
+   ],
+   "notes": [
+    "Extra credits ('Intelligence Boost'): $15 for 100 more, self-serve plans only. Payments go through Stripe.",
+    "Do credits renew? The pricing page (semos.ai/pricing) heads every plan '/ 30 days' but labels the Free and Pro credits 'one-time' and the Power credits 'credits/month'. The home page (semos.ai) calls the cost 'Self-serve, monthly'. The Manager AI Agent service terms say paid plans are subscriptions that 'renew automatically at the end of each billing period' (monthly or annual, chosen at checkout), and that Boost credits 'have no expiry date'. None of these pages says whether the free plan's 250 credits come back after 30 days."
+   ]
+  },
+  "alternatives": {
+   "intro": "Two like-for-like tools for managers, picked by us. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Fellow",
+     "url": "https://fellow.ai/",
+     "what": "AI meeting notes, 1:1 agendas and action items for teams",
+     "starts_at": "Free; Team $7 per user a month billed annually",
+     "difference": "A meeting assistant first, with notes and recordings, rather than agents that coach you on feedback and recognition."
+    },
+    {
+     "name": "Lattice",
+     "url": "https://lattice.com/",
+     "what": "Performance, goals and engagement platform with manager tools and an AI agent",
+     "starts_at": "From $4 per seat a month billed annually, $4,000 a year minimum",
+     "difference": "A company-wide HR platform bought by the organisation, while Semos.ai has a free self-serve plan for one manager."
+    }
+   ]
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/semos-ai-manager-agents/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Help for managers who have no HR business partner nearby (a maker's point that others echoed)"
+    ],
+    "asked": [
+     "Whether it tracks patterns across several meetings over time",
+     "Whether it suggests what feedback to give (makers: yes, drafted from your meetings and based on Stanford's 4Is framework)",
+     "How sensitive one-to-one meetings are kept private (makers: personal data is masked before it reaches the AI models and data is encrypted in transit)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "Does it track patterns across multiple meetings over time ?",
+     "author": "Dipanshu Kushwaha",
+     "url": "https://www.producthunt.com/products/semos-ai-manager-agents?comment=5905455"
+    }
+   ]
+  },
+  "pros": [
+   "Free plan to try it before paying",
+   "Advice is based on your own meetings, not generic tips",
+   "Explains why it suggests something, so you can learn from it",
+   "Backed by Semos Cloud, which already sells people software to large companies"
+  ],
+  "cons": [
+   "Credit-based plans; the pricing page labels some plan credits 'one-time' while the terms describe auto-renewing subscriptions",
+   "HRIS integrations and SSO only in Enterprise mode",
+   "Meeting content is processed by third-party AI providers",
+   "Many of the launch-day questions on Product Hunt were flagged as likely AI-written, so there is little independent feedback yet"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/semos-ai-manager-agents",
+   "x": {
+    "none": "We found no posts about Semos.ai Manager Agents on X apart from the company's own account.",
+    "profile_url": "https://x.com/SemosCloud",
+    "search_url": "https://x.com/search?q=semos.ai&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Semos.ai Manager Agents?",
+    "a": "A set of AI agents for people managers. A Meeting Agent learns from your meetings, and other agents use that context to draft feedback and recognition, prepare hard conversations, suggest growth talks and flag changes in team sentiment."
+   },
+   {
+    "q": "How much does it cost?",
+    "a": "The free plan is listed as 250 credits per 30 days, described on the same page as one-time credits. Pro is $39 with 500 credits and Power is $69 with 1,000 credits per 30 days; the terms say paid plans renew automatically each billing period. Extra credits cost $15 per 100 and do not expire. Enterprise mode is priced by sales."
+   },
+   {
+    "q": "Does it suggest what feedback to give?",
+    "a": "Yes. The makers say it drafts feedback from what happened in your meetings, based on Stanford's 4Is framework, and you edit the final message."
+   },
+   {
+    "q": "How does it handle private meeting content?",
+    "a": "A maker said on Product Hunt that personal information is masked before it goes to the AI models and data is encrypted in transit. The privacy policy says AI outputs are not used to retrain models unless stated, and lists encryption among its security measures."
+   },
+   {
+    "q": "Which calendars and HR systems does it connect to?",
+    "a": "Its Product Hunt gallery shows Google Calendar and Outlook Calendar. SAP SuccessFactors, Workday, Google and Microsoft 365 data connections are listed for Enterprise Connected Mode."
+   },
+   {
+    "q": "Who makes it?",
+    "a": "Semos.ai is part of Semos Cloud. Its privacy policy names Semos Software LLC, a Delaware company, as the operator."
+   },
+   {
+    "q": "What are the alternatives?",
+    "a": "Fellow for AI meeting notes and 1:1s, and Lattice for company-wide performance and engagement with manager tools."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Semos.ai official site",
+    "url": "https://semos.ai/"
+   },
+   {
+    "label": "Semos.ai pricing",
+    "url": "https://semos.ai/pricing/"
+   },
+   {
+    "label": "Semos.ai announcement",
+    "url": "https://semos.ai/announcement/"
+   },
+   {
+    "label": "Semos.ai privacy policy",
+    "url": "https://semos.ai/privacy-policy/"
+   },
+   {
+    "label": "Semos.ai contact page",
+    "url": "https://semos.ai/contact-us/"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/semos-ai-manager-agents"
+   },
+   {
+    "label": "Fellow pricing",
+    "url": "https://fellow.ai/pricing"
+   },
+   {
+    "label": "Lattice pricing",
+    "url": "https://lattice.com/pricing"
+   },
+   {
+    "label": "Semos.ai Manager AI Agent terms of service",
+    "url": "https://semos.ai/terms_of_manager_ai_agent_service/"
+   }
+  ]
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "slug": "fypro",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/fypro",
+ "excerpt": "Fypro reads a creator's TikTok account and builds a growth plan, scripts, AI product videos and a dropshipping storefront with a customer list the creator owns. Free plan; Pro $29/month; Max $200/month. How it works, pricing and alternatives.",
+ "content": "<p>Fypro is an AI tool for TikTok creators who want to sell to their followers. You enter your TikTok handle and connect through TikTok's official sign-in, and it analyses your niche, audience and best videos, then gives you a plan for what to post and what to sell. From there it suggests video ideas, breaks down why other videos went viral, writes scripts, and makes AI product and presenter videos. Its site says it runs on the Seedance 2.0 and 2.5 video models.</p><p>The selling side is a creator site: a brand page, link-in-bio or full store on a Fypro subdomain or your own domain, stocked with dropshipping products matched to your niche, with price and margin shown so you choose what goes live. Buyers' emails and purchase history land in an audience list you can export. Fypro says it never posts or changes your profile without permission and does not train AI models on your content. In the launch thread the team said automated email nurturing was not built yet, and that one TikTok account maps to one store.</p><p>Fypro is built by Caelith Inc., which its about page describes as an AI company in Southern California. It launched on Product Hunt on 2 July 2026, its first launch there, and finished #2 for the day with 559 upvotes and 234 comments.</p><p><em>We have not tested Fypro ourselves. This page brings together its official site, pricing, about page, terms and privacy policy, its Product Hunt page and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Creator commerce",
+  "platform": "Web, connected to TikTok (Instagram publishing mentioned)",
+  "starts_at": "Free plan; Pro $29/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI growth plan, videos and a dropshipping store for TikTok creators, with a customer list they own",
+  "maker": {"name": "Steven Zhou", "url": "https://www.producthunt.com/@steven_zhou8"},
+  "team": [
+   {"name": "Steven Zhou", "role": "Co-founder", "url": "https://www.producthunt.com/@steven_zhou8"},
+   {"name": "Mickey Qiu", "role": "Maker", "url": "https://www.producthunt.com/@mickeyqiu"},
+   {"name": "Shaoyin Wang", "role": "Maker", "url": "https://www.producthunt.com/@shaoyin_wang"},
+   {"name": "Zeya", "role": "Creator Success Manager", "url": "https://www.producthunt.com/@zeya"}
+  ],
+  "ph": {"rank": 2, "votes": 559, "comments": 234, "followers": 1412, "launched": "2026-07-02", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Getting an analysis of your TikTok account and a plan for what to post",
+   "Breaking down why a viral video worked and remaking its structure",
+   "Turning a product link into a shoppable AI video",
+   "Launching a creator store with niche-matched dropshipping products",
+   "Collecting buyers' emails in a list you can export"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Steven Zhou says Fypro is for creators who have built a real TikTok audience but have not turned that trust into a business of their own. You drop your handle, Fypro reads what is working, and it plans and builds your site, store and content for you to review before going live.",
+    "He stressed ownership: buyers' emails and purchase history stay with the creator, not just followers on a feed. In the thread he argued the creators who convert are the ones who send followers somewhere they own and sell products that fit their niche."
+   ],
+   "attribution": "Steven Zhou, co-founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/fypro?comment=5495495"
+  },
+  "audience": {
+   "fit": [
+    "have a TikTok following and no store or email list yet",
+    "want product ideas matched to your niche rather than random trending items",
+    "want AI help with scripts and product videos"
+   ],
+   "not_fit": [
+    "need automated email sequences: the team said nurture emails were still being built",
+    "run several TikTok accounts and want one store: today each account maps to its own store",
+    "mainly post on platforms other than TikTok: it is built for TikTok first"
+   ]
+  },
+  "pricing": {
+   "intro": "Fypro's pricing page lists three plans in US dollars. Plans include monthly credits for AI generation; store payments carry card fees.",
+   "url": "https://www.fypro.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "100 credits, 8 viral ideas for your niche, watermarked AI videos, starter creator site, up to 10 dropshipping products, 1 GB storage"},
+    {"name": "Pro", "price": "$29/month", "amount": 29, "currency": "USD", "detail": "600 credits a month, advanced account analysis, unlimited ideas, breakdowns and scripts, Seedance 2.0 video, no watermark, unlimited dropshipping products, payments on your site (card rates from 2.8% + $0.30), 300 GB storage"},
+    {"name": "Max", "price": "$200/month", "amount": 200, "currency": "USD", "detail": "7,000 credits a month, advanced AI models, card rates from 2.6% + $0.30, 2 TB storage"}
+   ],
+   "notes": [
+    "At launch the team offered a first month of Pro for $1 with a Product Hunt code; that offer may have ended.",
+    "Fypro's site says it is used by 30,000+ creators while its Product Hunt description says 2,000+; both are the company's own figures."
+   ]
+  },
+  "alternatives": {
+   "intro": "Beacons, FastMoss and Nas.com are on Product Hunt's alternatives list. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Beacons", "url": "https://beacons.ai/", "what": "Link-in-bio, store and media kit for creators", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 11, "ph_url": "https://www.producthunt.com/products/beacons", "difference": "A creator storefront and link-in-bio; Fypro adds TikTok account analysis, AI videos and dropshipping product picks."},
+    {"name": "FastMoss", "url": "https://www.fastmoss.com/", "what": "TikTok Shop analytics for sellers", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 13, "ph_url": "https://www.producthunt.com/products/fastmoss", "difference": "Data on TikTok Shop products and creators; Fypro builds the creator's own store and content."},
+    {"name": "Nas.com", "url": "https://nas.com/", "what": "Platform to launch and market an online store or community", "starts_at": "See its pricing page", "ph_rating": 4.93, "ph_reviews": 15, "ph_url": "https://www.producthunt.com/products/nas-io", "difference": "General creator business platform; Fypro starts from your TikTok data."}
+   ],
+   "more": "Product Hunt also lists Syllaby and TikTok."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/fypro/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Helping creators own an email list instead of relying on the platform", "Matching products to the creator's niche"],
+    "asked": ["Whether it is TikTok-only (mainly yes for now)", "Whether it helps nurture the email list (not yet; in development)", "How products are picked (niche matching, with review of price, margin and shipping before publishing)", "Multiple TikTok accounts (separate stores today)"],
+    "criticised": ["The team said its voice matching is closer to content style than to how a creator really talks"]
+   },
+   "quotes": [
+    {"text": "Eyeballs on TikTok aren't the same asset as email addresses on your own list.", "author": "Elias", "url": "https://www.producthunt.com/products/fypro?comment=5505714"},
+    {"text": "Does it just auto-match stuff from your niche without any approval step", "author": "Çiğdem", "url": "https://www.producthunt.com/products/fypro?comment=5501345"},
+    {"text": "Does Fypro treat each handle as its own separate store/email list, or is there a path to roll multiple accounts into one?", "author": "endian wang", "url": "https://www.producthunt.com/products/fypro?comment=5506890"}
+   ]
+  },
+  "pros": [
+   "Free plan to try the account analysis and starter site",
+   "Product picks show price and margin, and you approve them",
+   "Customer list is exportable and owned by the creator",
+   "Connects through TikTok's official sign-in; no password requested",
+   "Says it does not train AI models on your content"
+  ],
+  "cons": [
+   "No automated email nurturing yet, per the team",
+   "One store per TikTok account for now",
+   "Free-plan videos are watermarked",
+   "Card fees on store payments"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/fypro",
+   "x": {"none": "We found no posts about Fypro on X to link yet.", "search_url": "https://x.com/search?q=fypro&f=live", "profile_url": "https://twitter.com/fyproai"}
+  },
+  "faq": [
+   {"q": "What is Fypro?", "a": "An AI tool that analyses a TikTok account, plans and makes content, and builds a creator store stocked with niche-matched dropshipping products and an owned customer list."},
+   {"q": "How much does Fypro cost?", "a": "Free is $0 with 100 credits; Pro is $29 a month with 600 credits; Max is $200 a month with 7,000 credits. Store payments carry card fees from 2.8% + $0.30 on Pro."},
+   {"q": "Does it only work with TikTok?", "a": "It is built mainly for TikTok. Its about page says Instagram publishing is already built in, and the team said more platforms will follow."},
+   {"q": "Does Fypro pick and publish products without asking?", "a": "No. The team said it recommends products by niche and audience, and you review price, margin, inventory and shipping before pushing them to your store."},
+   {"q": "Can it send email campaigns to my list?", "a": "Not yet, according to the team at launch; subscribers land in an exportable audience list, and automated sequences were in development."},
+   {"q": "Who makes Fypro?", "a": "Caelith Inc., which its about page describes as an AI company in Southern California."}
+  ],
+  "sources": [
+   {"label": "Fypro official site", "url": "https://www.fypro.ai/"},
+   {"label": "Fypro pricing", "url": "https://www.fypro.ai/pricing"},
+   {"label": "Fypro about", "url": "https://www.fypro.ai/about"},
+   {"label": "Fypro terms of service", "url": "https://www.fypro.ai/legal/terms"},
+   {"label": "Fypro privacy policy", "url": "https://www.fypro.ai/legal/privacy"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/fypro"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/fypro/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/95c89492-b1c4-4b2e-beb6-c273a7a97eec.jpeg?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "alt": "Fypro graphic 'Drop your TikTok handle. Get a plan built around your account.' with a handle entry box", "credit": "Image: Fypro via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/a4381e27-6fa9-40a5-b606-69fbea177bdb.jpeg?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "alt": "Fypro TikTok creator growth plan showing followers, average views and strategy recommendations", "credit": "Image: Fypro via Product Hunt"}
+  ]
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "input": "https://www.producthunt.com/posts/wobo-2-0",
+ "final_url": "https://www.producthunt.com/products/wobo-ai?launch=wobo-2-0",
+ "launch": {
+  "slug": "wobo-ai-job-search",
+  "name": "Wobo - AI Job Search",
+  "featuredAt": "2026-06-15T00:01:00-07:00",
+  "dailyRank": "2",
+  "points": 314,
+  "commentsCount": 47,
+  "makers": [
+   {
+    "name": "Taha Keles",
+    "username": "taha_keles",
+    "headline": "Co-Founder of Wobo"
+   },
+   {
+    "name": "Serdar Aksoy",
+    "username": "serdaraksoy",
+    "headline": "Co-founder of Wobo.ai "
+   }
+  ],
+  "source": "launches page, matched by date and tagline (no gallery/comments)"
+ },
+ "product": {
+  "name": "Wobo AI",
+  "slug": "wobo-ai",
+  "tagline": "Your Personal AI Recruiter - Automate your job search ",
+  "description": "Meet Wobo: Your AI-powered job search assistant. Automating applications and finding matches tailored to your skills, Wobo makes job hunting effortless.",
+  "websiteUrl": "https://www.wobo.ai/?utm_source=producthunt&utm_medium=referral&utm_campaign=launch",
+  "reviewsCount": 2,
+  "reviewsRating": 5,
+  "followersCount": 1011,
+  "twitterUrl": "https://twitter.com/woboai",
+  "linkedinUrl": "https://www.linkedin.com/company/woboai",
+  "instagramUrl": "",
+  "githubUrl": "https://github.com/Wobo-ai",
+  "iosUrl": "https://www.producthunt.com/r/2M6UPH2JSNEBPF",
+  "postsCount": 4,
+  "screenshots": [
+   "https://ph-files.imgix.net/2c25fe46-3875-4bf6-ba88-39210962b9a8.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

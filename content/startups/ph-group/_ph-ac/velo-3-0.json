@@ -1,0 +1,134 @@
+{
+ "input": "https://www.producthunt.com/posts/velo-3-0",
+ "final_url": "https://www.producthunt.com/products/velo-4?launch=velo-3-0",
+ "launch": {
+  "slug": "velo-3-0",
+  "featuredAt": "2026-07-15T00:01:00-07:00",
+  "dailyRank": "2",
+  "points": 570,
+  "commentsCount": 147,
+  "source": "launches page (no gallery/comments)",
+  "makers": [
+   {
+    "name": "Tirth Nandha",
+    "username": "tirth_nandha1",
+    "headline": "developer"
+   },
+   {
+    "name": "Rucha Wele",
+    "username": "rucha_wele",
+    "headline": "Product marketer"
+   },
+   {
+    "name": "Ritu Parakh",
+    "username": "rituparakh",
+    "headline": "Growth Lead at Velo"
+   },
+   {
+    "name": "Myra Bhatia",
+    "username": "myrabhatia",
+    "headline": "Growth Marketing at Velo"
+   },
+   {
+    "name": "Shah Ronak ",
+    "username": "jpinkman",
+    "headline": "designer with first principles thinking"
+   },
+   {
+    "name": "Grege Rodrigues",
+    "username": "grege_rodrigues1",
+    "headline": null
+   },
+   {
+    "name": "Sundeep Joshi",
+    "username": "sundeepjoshi",
+    "headline": "Staff ML Engineer @ Velo "
+   },
+   {
+    "name": "Sunil Sharma",
+    "username": "sunil_sde",
+    "headline": "SDE-II @Velo"
+   },
+   {
+    "name": "Karan Soni",
+    "username": "soni_karan",
+    "headline": "Product Engineer @Velo"
+   },
+   {
+    "name": "Sourav Sanyal",
+    "username": "sourav_sanyal",
+    "headline": "Developer and startup enthusiast"
+   },
+   {
+    "name": "Ajay Kumar",
+    "username": "ajaykumar1018",
+    "headline": "Builder, Hacker - Computer Vision & AI"
+   },
+   {
+    "name": "Madalsa B",
+    "username": "madalsa_b",
+    "headline": null
+   },
+   {
+    "name": "Grege Rodrigues",
+    "username": "grege_rodrigues",
+    "headline": "Building @ Velo"
+   }
+  ]
+ },
+ "product": {
+  "name": "Velo",
+  "slug": "velo-4",
+  "tagline": "AI video infrastructure to explain, train, and sell faster",
+  "description": "Velo turns your raw screen recordings into watch-worthy, ready-to-share videos with AI. In seconds.",
+  "websiteUrl": "https://www.usevelo.ai",
+  "reviewsCount": 2,
+  "reviewsRating": 4.5,
+  "followersCount": 2603,
+  "twitterUrl": "https://x.com/sharewithvelo",
+  "postsCount": 3,
+  "screenshots": [
+   "https://ph-files.imgix.net/5404d921-245a-4566-a0c5-ecde259c54e5.jpeg?auto=format&fit=crop",
+   "https://ph-files.imgix.net/19b5f88f-091d-45cf-b4c9-9081e4fc6ef8.jpeg?auto=format&fit=crop",
+   "https://ph-files.imgix.net/bb1e7732-0a0f-4362-b6af-c977e5aa2dac.jpeg?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

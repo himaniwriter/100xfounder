@@ -24,3 +24,8 @@ tsconfig.tsbuildinfo
 .DS_Store
 .vscode/
 .vercel
+
+# Local WordPress created by wordpress/local/run-local.sh
+wordpress/local/.site/
+wordpress/design/og/*.html
+content/uploaded.json

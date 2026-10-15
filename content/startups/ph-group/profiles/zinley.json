@@ -1,0 +1,308 @@
+{
+ "slug": "zinley",
+ "ph_url": "https://www.producthunt.com/posts/zinley",
+ "existing_listing_slug": null,
+ "website": "https://zinley.com/",
+ "excerpt": "Zinley is a personal AI agent with its own email, phone line and cloud computer that handles calls, email and tasks within your rules. Free; Plus $20/month.",
+ "content": "<p>Zinley is a personal AI representative. It gets its own email inbox, a contact card and, for eligible accounts, a phone number, so other people can email or call your Zinley directly and it can reach them on your behalf. You talk to it through the web, desktop, iMessage, Telegram, SMS or voice, and it learns your people, preferences and open commitments, with a memory you can review and shape. It keeps its own calendar for follow-ups you can see and cancel, can share your screen with you in real time, and on paid plans has its own always-on cloud computer for builds, code and files.</p><p>You decide what Zinley handles on its own and what needs your approval, and you can pause its workflows from your phone. It connects to Gmail, Calendar, Notion, Figma and other apps, picks a model per task from providers including Anthropic, OpenAI, Google and xAI, and searches the web with sources.</p><p>The free plan includes 2,000 monthly credits plus a daily refresh, a dedicated email and an eligible 30-day phone-line trial. Plus is $20 a month, Pro $100 and Max $200, each with more credits, history and call capacity. The company is Zinley, Inc. Its Product Hunt makers include Jason Chen and Khoi Nguyen. Zinley launched there on 2 August 2026, hunted by Rohan Chaubey, and finished #1 for the day with 358 upvotes and 98 comments. In the discussion the team said Zinley tells callers it is an AI at the start of a call, and that when it doesn't know something about you it says it will check and keeps an open item until you answer.</p><p><em>We have not tested Zinley ourselves. This page brings together its official site, pricing and contact pages, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI assistants",
+  "platform": "Web, desktop, iMessage, Telegram, email and phone",
+  "starts_at": "Free (2,000 credits/month); Plus $20/month",
+  "schema_category": "ProductivityApplication",
+  "summary_short": "Personal AI agent with its own email, phone line and computer that acts within your rules",
+  "use_cases": [
+   "Screening and answering calls and emails on your behalf",
+   "Booking and following up on meetings without another prompt",
+   "Researching and drafting reports with cited web sources",
+   "Running code, builds or file tasks on its own cloud computer (paid plans)",
+   "Keeping track of people, promises and open loops"
+  ],
+  "audience": {
+   "fit": [
+    "get too many calls, emails and small follow-ups to handle yourself",
+    "want an assistant other people can contact directly",
+    "want to set clear limits on what an AI does without asking"
+   ],
+   "not_fit": [
+    "are uncomfortable with an AI speaking for you to other people",
+    "want a fixed monthly bill: work spends credits at different rates",
+    "need a phone line outside the eligibility rules for the free trial"
+   ]
+  },
+  "pricing": {
+   "intro": "Zinley's plans set capabilities and limits; credits pay for the work done. Prices are from zinley.com, in US dollars per month; annual billing gives two months free.",
+   "url": "https://zinley.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "2,000 monthly credits plus 10 daily, dedicated email, eligible 30-day phone trial, connections to Gmail, Calendar, Notion, Figma and more, 3 scheduled tasks, 1 day of history"
+    },
+    {
+     "name": "Plus",
+     "price": "$20/month",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "From 4,000 credits a month, its own always-on Zinley Computer, advanced search, video and music generation, 10 scheduled tasks, 1 week of history"
+    },
+    {
+     "name": "Pro",
+     "price": "$100/month",
+     "amount": 100,
+     "currency": "USD",
+     "detail": "From 20,000 credits a month, frontier models and priority processing, calls up to 60 minutes, 20 scheduled tasks, 1 month of history"
+    },
+    {
+     "name": "Max",
+     "price": "$200/month",
+     "amount": 200,
+     "currency": "USD",
+     "detail": "From 40,000 credits a month, unlimited call length with 20 calls at once, 50 scheduled tasks, 3 months of history"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Everything in Max with one credit pool and one invoice"
+    }
+   ],
+   "notes": [
+    "Larger monthly credit allowances can be chosen at checkout on Plus, Pro and Max.",
+    "Wallet credits never expire. Automatic $10 wallet top-ups are off by default and capped at $50 a day and $250 a month.",
+    "When credits run out, new work pauses by default."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other AI assistants that act on your behalf. Prices come from each product's own page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Lindy",
+     "url": "https://www.lindy.ai/",
+     "what": "AI assistant for email, meetings and workflows",
+     "starts_at": "Free with $50 of credits for 7 days; Team from $49.99/month per user",
+     "difference": "Built around your own inbox and calendar; Zinley also gets its own email address and phone number that others can contact."
+    },
+    {
+     "name": "Martin",
+     "url": "https://www.trymartin.com/",
+     "what": "AI personal assistant you text or call to handle email, calendar and reminders",
+     "starts_at": "See its pricing page",
+     "difference": "A personal assistant you message; Zinley adds a cloud computer and per-task model choice on paid plans."
+    }
+   ]
+  },
+  "pros": [
+   "Free plan with monthly and daily credits",
+   "Its own email, contact card and phone line, so others can reach it",
+   "Clear approval rules and the ability to pause it from your phone",
+   "Reviewable memory of people and commitments",
+   "Spending caps on automatic top-ups"
+  ],
+  "cons": [
+   "Credit-based billing makes costs harder to predict",
+   "Phone line on the free plan is a trial for eligible accounts only",
+   "An AI speaking for you can make mistakes in your name"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/zinley",
+   "x": {
+    "search_url": "https://x.com/search?q=zinley&f=live",
+    "posts": [
+     {
+      "url": "https://x.com/khoi_danny/status/2084688823024492990",
+      "author": "Khoi Nguyen",
+      "note": "introduces Zinley as an AI with its own phone number and email that handles calls, email and tasks"
+     }
+    ]
+   },
+   "quotes": [
+    {
+     "text": "someone who's done a bit of recon on you ... could call in pretending to be that trusted contact",
+     "reply": "A smooth conversation is not proven identity. Caller ID and email remain the main trust signal, and for anything above low stakes Zinley stays in a tighter lane or loops you in.",
+     "author": "Gal Dayan",
+     "url": "https://www.producthunt.com/products/zinley?comment=5734650"
+    },
+    {
+     "text": "where does that data live, who can access it, and what happens to it if you cancel the subscription",
+     "reply": "Memory lives in your account only, is not shared, sold or used to train a public model, can be edited or deleted from the dashboard, and is erased when you delete the account.",
+     "author": "Ansari Adin",
+     "url": "https://www.producthunt.com/products/zinley?comment=5737411"
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Zinley?",
+    "a": "A personal AI agent with its own email inbox, contact card and (for eligible accounts) phone number. It handles calls, email and tasks within rules you set and remembers your people and commitments."
+   },
+   {
+    "q": "How much does Zinley cost?",
+    "a": "There is a free plan with 2,000 monthly credits. Plus is $20 a month, Pro $100 and Max $200, with larger credit allowances available at checkout. Annual billing gives two months free."
+   },
+   {
+    "q": "How does Zinley decide what to do on its own?",
+    "a": "You set the boundaries: what it handles alone and what needs your approval. You can adjust or pause its workflows from your phone."
+   },
+   {
+    "q": "Why was I charged $10 more than once?",
+    "a": "Zinley's FAQ says automatic wallet top-ups buy a $10 pack each time your balance falls below the threshold, capped at $50 a day and $250 a month. You can turn them off under Billing & Usage."
+   },
+   {
+    "q": "Which AI models does it use?",
+    "a": "An Auto mode picks a model for each task from providers including Claude, GPT, Gemini and Grok. Higher plans unlock more capable models, and Pro and Max let you choose the top tier yourself."
+   },
+   {
+    "q": "What are the alternatives to Zinley?",
+    "a": "Lindy, an AI assistant for email and meetings, or Martin, an AI personal assistant you text or call."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Zinley official site",
+    "url": "https://zinley.com/"
+   },
+   {
+    "label": "Zinley pricing",
+    "url": "https://zinley.com/pricing"
+   },
+   {
+    "label": "Zinley contact",
+    "url": "https://zinley.com/contact"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/zinley"
+   },
+   {
+    "label": "Lindy pricing",
+    "url": "https://www.lindy.ai/pricing"
+   },
+   {
+    "label": "Martin",
+    "url": "https://www.trymartin.com/"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/zinley/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 1,
+   "votes": 358,
+   "comments": 98,
+   "followers": 693,
+   "launched": "2026-08-02",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Jason Chen",
+    "role": "Building the first AI representative",
+    "url": "https://www.producthunt.com/@jasonzinley"
+   },
+   {
+    "name": "Khoi Nguyen",
+    "role": "Building zinley.com",
+    "url": "https://www.producthunt.com/@kn1026"
+   },
+   {
+    "name": "Peter Bakas",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@peter_bakas"
+   },
+   {
+    "name": "Hoang Nghiem",
+    "role": "Software engineer",
+    "url": "https://www.producthunt.com/@hoangnm_zinley"
+   },
+   {
+    "name": "some4254",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@some4254"
+   },
+   {
+    "name": "Victoria Quynh Anh Nguyen",
+    "role": "Marketing",
+    "url": "https://www.producthunt.com/@victoria_quynh_anh_nguyen"
+   }
+  ],
+  "maker": {
+   "name": "Jason Chen",
+   "url": "https://www.producthunt.com/@jasonzinley"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/ec4bfdd2-777b-47fa-b70f-605c7539fe3a.png?auto=format&fit=max&w=1400",
+    "alt": "Zinley graphic 'Just CC it on your email' showing an email thread where Zinley proposes meeting times and attaches a brief",
+    "credit": "Image: Zinley on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://ph-files.imgix.net/92043f32-dcc4-486c-9bc8-b5f186750bbc.png?auto=format&fit=max&w=1400",
+    "alt": "Zinley graphic 'It remembers everyone' with a contact list and a profile of how Zinley reads one contact",
+    "credit": "Image: Zinley on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://ph-files.imgix.net/7f068c66-d70b-4014-a77d-40457225855f.png?auto=format&fit=max&w=1400",
+    "alt": "Zinley graphic 'It answers your calls. In your voice.' with a call transcript and recap in the dashboard",
+    "credit": "Image: Zinley on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Khoi Nguyen says most AI waits in a chat box, and Zinley was built as the opposite: a personal extension with its own phone number, email and computer that answers calls, handles email, books things, follows up and works inside your rules.",
+    "The aim, he wrote, is that the people around you can still reach 'you' when you are busy. He asked the community what they would hand off first and what would make them trust an AI with their number and inbox."
+   ],
+   "attribution": "Khoi Nguyen, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/zinley?comment=5725845"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Copying Zinley on an email to get a meeting booked",
+     "Auto routing simple questions to cheaper models",
+     "Thoughtful answers on trust and follow-ups"
+    ],
+    "asked": [
+     "Where it draws the line between acting alone and checking with you (anything above low stakes is kept in a tighter lane or looped back to you)",
+     "Whether a caller could spoof a trusted contact (caller ID and email remain the main trust signal, so high-stakes requests are not acted on just because a caller sounds right)",
+     "Where relationship memory is stored and what happens on cancellation (in your account only, not shared or used to train a public model, and erased when you delete the account)",
+     "Whether callers are told they are speaking to an AI (yes, at the start of the call)"
+    ],
+    "criticised": [
+     "A user measured that starting a new conversation costs about three times as many credits as continuing one, which limits the free plan; the maker agreed this needs fixing"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "I'd trust it fast on scheduling, slowly on anything that sounds like a commitment.",
+     "author": "Artem Fedorovich",
+     "url": "https://www.producthunt.com/products/zinley?comment=5734637"
+    },
+    {
+     "text": "the interruption tax is worse than the work itself.",
+     "author": "Aidan Quinn",
+     "url": "https://www.producthunt.com/products/zinley?comment=5736535"
+    },
+    {
+     "text": "starting a new conversation looks ~3x pricier than continuing one",
+     "author": "Naved Naik",
+     "url": "https://www.producthunt.com/products/zinley?comment=5738682"
+    }
+   ]
+  },
+  "video_url": "https://www.youtube.com/watch?v=wcdp_YeKvTM",
+  "video_title": "Zinley launch video"
+ }
+}

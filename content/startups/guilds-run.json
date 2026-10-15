@@ -1,0 +1,280 @@
+{
+ "slug": "guilds-run",
+ "excerpt": "guilds.run is an open-source, self-hosted platform for teams of AI agents where you can inspect every prompt, tool call and memory change. Licence, setup, planned hosted pricing and alternatives.",
+ "content": "<p>guilds.run runs standing teams of AI agents that you can see inside. A guild is a team of agents, each with its own role, model and tools, sharing a chat, notes and tables. Agents wake up on a schedule, through a routine, or when a person or another agent calls them. Every run keeps the exact prompt the model saw, every tool call and its result, every memory change and who wrote each note, so you can trace how one agent's mistake carried into the next agent's work.</p><p>A built-in assistant called Studio reads a live team's runs, notes and memory and drafts fixes for you to review; nothing changes until you publish. Each agent gets a sandboxed workspace with a terminal, reusable scripts and an optional browser. You can pick a different model for each agent, from Claude, GPT, Gemini and Grok to open-weight models through OpenRouter, DeepInfra or Ollama, using your own keys. Connectors include Notion, Gmail, Google Drive, GitHub and X, with Slack, Linear, Google Calendar and LinkedIn listed as coming soon. Teams can be exported as recipe files.</p><p>guilds.run is open source under the AGPL-3.0 licence and runs on your own machine with Docker. A hosted version is announced but not yet available. It is made by Cigale AI and launched on Product Hunt on 12 October 2026, finishing #4 for the day with 193 upvotes and 46 comments.</p><p><em>We have not tested guilds.run ourselves. This page brings together its official site, pricing page and GitHub README, its Product Hunt page and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agent platforms",
+  "platform": "Self-hosted web app (Docker); hosted version coming",
+  "os": "Self-hosting needs Docker; bring your own model API keys",
+  "starts_at": "Free to self-host; hosted version announced from $19/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Open-source, self-hosted platform for AI agent teams where every prompt and tool call is inspectable",
+  "maker": {
+   "name": "Emmanuel Chappat",
+   "url": "https://www.producthunt.com/@m4nuc"
+  },
+  "team": [
+   {
+    "name": "Emmanuel Chappat",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@m4nuc"
+   },
+   {
+    "name": "Vincent J.",
+    "role": "Co-founder, Cigale AI and guilds.run",
+    "url": "https://www.producthunt.com/@vincent_cigale"
+   },
+   {
+    "name": "Adel",
+    "role": "Co-founder, Cigale AI",
+    "url": "https://www.producthunt.com/@dadadel"
+   }
+  ],
+  "ph": {
+   "rank": 4,
+   "votes": 193,
+   "comments": 46,
+   "followers": 389,
+   "launched": "2026-10-12",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Running a team of agents for ongoing work such as growth, sales research or support",
+   "Tracing where a multi-agent workflow went wrong, run by run",
+   "Monitoring mentions across social platforms into a shared table (templates for this were promised at launch)",
+   "Mixing models, with a different model for each agent",
+   "Testing a workflow before letting agents run it for real"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Emmanuel Chappat says getting AI to handle long-running tasks reliably takes more than good prompts. It is a system-design problem: deciding how agents work together, anticipating edge cases, and being able to debug and tune things when they go wrong.",
+    "guilds.run is built to make the whole system understandable, so you can trace how mistakes spread between agents, fix the cause and check whether the fix worked. The team open-sourced it to see what others build and to share working teams for real use cases. At launch he announced two next steps: sharing recipes for whole agent teams, and a hosted mode."
+   ],
+   "attribution": "Emmanuel Chappat, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/guilds-run?comment=5938282"
+  },
+  "audience": {
+   "fit": [
+    "run multi-agent workflows and need to see exactly what each agent did",
+    "are comfortable self-hosting with Docker and using your own model keys",
+    "want open source and the freedom to choose a model per agent"
+   ],
+   "not_fit": [
+    "want a hosted service today: it is announced but not open yet",
+    "need Slack, Linear, Google Calendar or LinkedIn connectors now (listed as coming soon)",
+    "can't use AGPL-licensed software in your setup"
+   ]
+  },
+  "pricing": {
+   "intro": "Self-hosting is free under the AGPL-3.0 licence; you pay your model providers. A hosted plan is announced but not yet available.",
+   "url": "https://www.guilds.run/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Self-hosted",
+     "price": "Free (AGPL-3.0)",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Run it yourself with Docker; bring your own model API keys"
+    },
+    {
+     "name": "Hosted (coming soon)",
+     "price": "From $19/month (announced)",
+     "currency": "USD",
+     "detail": "Full product, sign-in with Google or an email link, team invites, public recipe directory; model usage on platform keys billed separately"
+    }
+   ],
+   "notes": [
+    "The running costs shown on example recipes (for example around $2.10 a day for an X growth team) are estimates of model usage, not plans.",
+    "Trial and refund terms are not published."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists LangChain, Langfuse, Dify and other AI infrastructure; we compared guilds.run with the closest agent-team tools. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "CrewAI",
+     "url": "https://www.crewai.com/",
+     "what": "Framework and platform for multi-agent crews",
+     "starts_at": "Basic free (50 workflow runs a month); Enterprise custom",
+     "difference": "A Python framework with a managed cloud. guilds.run is a self-hosted app with a UI, shared notes and tables, and full run records for each agent."
+    },
+    {
+     "name": "LangGraph and LangSmith",
+     "url": "https://www.langchain.com/",
+     "what": "LangChain's agent orchestration framework with hosted deployment and tracing",
+     "starts_at": "Developer $0 (1 seat); Plus $39 per seat a month",
+     "ph_rating": 4.9,
+     "ph_reviews": 115,
+     "difference": "Code-first for developers. guilds.run offers ready team templates and an operator app."
+    },
+    {
+     "name": "n8n",
+     "url": "https://n8n.io/",
+     "what": "Workflow automation with AI agent nodes, self-hostable",
+     "starts_at": "Starter €20/month billed yearly; free self-hosted Community Edition",
+     "difference": "Node-based automation with hundreds of integrations, rather than persistent agent teams with memory and run inspection."
+    }
+   ],
+   "more": "Product Hunt also lists Langfuse, Dify.AI, Helicone AI and GPTBots.ai."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/guilds-run/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Self-hosting plus visibility into every tool call, which commenters linked to trust",
+     "Debugging tools for people who aren't developers"
+    ],
+    "asked": [
+     "Coordinating agents across X, Reddit, LinkedIn and Instagram into one spreadsheet (templates promised)",
+     "Whether a hosted version is coming (yes, soon)",
+     "How it copes when agents on different models depend on each other's outputs",
+     "Whether you can test a workflow safely before it runs for real (yes)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "self hostable + you can see every tool call, thats what makes agents trustable imo",
+     "author": "Petr Kovacik",
+     "url": "https://www.producthunt.com/products/guilds-run?comment=5944306"
+    },
+    {
+     "text": "As more non-developers start building with AI, we'll need ways for them to understand and debug the systems they create.",
+     "author": "Dipanshu Kushwaha",
+     "url": "https://www.producthunt.com/products/guilds-run?comment=5941836"
+    },
+    {
+     "text": "Can I test a workflow safely before letting the agents run it for real?",
+     "author": "Rania Rimali",
+     "url": "https://www.producthunt.com/products/guilds-run?comment=5944446"
+    },
+    {
+     "text": "Could I use guilds run to coordinate multiple agents across X, Reddit, LinkedIn, and Instagram?",
+     "author": "Aleksandar Blazhev",
+     "url": "https://www.producthunt.com/products/guilds-run?comment=5943199"
+    }
+   ]
+  },
+  "pros": [
+   "Open source and free to self-host",
+   "Full record of prompts, tool calls and memory changes for every run",
+   "Different model per agent, including local models through Ollama",
+   "Studio drafts fixes from real runs, and nothing changes until you publish",
+   "Connectors are opt-in per organisation, team or agent"
+  ],
+  "cons": [
+   "Very new: the GitHub repository was created on 9 October 2026",
+   "Hosted version not available yet",
+   "Needs Docker and your own model keys",
+   "AGPL-3.0 licence may not suit every company",
+   "Several popular connectors are still coming soon"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/guilds-run",
+   "x": {
+    "none": "We found no independent posts about guilds.run on X to link yet. The team posts updates as @guildsrun.",
+    "search_url": "https://x.com/search?q=guilds.run&f=live",
+    "profile_url": "https://x.com/guildsrun"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is guilds.run free?",
+    "a": "Yes, to self-host. It is open source under the AGPL-3.0 licence and you pay only your model providers. A hosted version is announced from $19 a month but isn't open yet."
+   },
+   {
+    "q": "What do I need to run it?",
+    "a": "Docker. Clone the repository, run the setup script, start it with Docker Compose, open it in your browser and paste a model API key, as the README describes."
+   },
+   {
+    "q": "Which AI models can agents use?",
+    "a": "Claude, GPT, Gemini and Grok, and open-weight models such as Qwen, DeepSeek, Kimi, Llama, Mistral and GLM through OpenRouter, DeepInfra or Ollama. Each agent can use a different model."
+   },
+   {
+    "q": "Can I test a workflow before it runs for real?",
+    "a": "Yes. The maker said on Product Hunt that his co-founder does this all the time when building workflows."
+   },
+   {
+    "q": "Is there a hosted version?",
+    "a": "Not yet. The team says it is coming soon and invites people to leave an email on the site."
+   },
+   {
+    "q": "Who makes guilds.run?",
+    "a": "Cigale AI, according to the README."
+   }
+  ],
+  "sources": [
+   {
+    "label": "guilds.run official site",
+    "url": "https://www.guilds.run/"
+   },
+   {
+    "label": "guilds.run pricing",
+    "url": "https://www.guilds.run/pricing"
+   },
+   {
+    "label": "guilds.run on GitHub (README)",
+    "url": "https://github.com/CigaleAI/guilds"
+   },
+   {
+    "label": "guilds.run docs",
+    "url": "https://docs.guilds.run"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/guilds-run"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/guilds-run/alternatives"
+   },
+   {
+    "label": "CrewAI pricing",
+    "url": "https://www.crewai.com/pricing"
+   },
+   {
+    "label": "LangChain pricing",
+    "url": "https://www.langchain.com/pricing"
+   },
+   {
+    "label": "n8n pricing",
+    "url": "https://n8n.io/pricing/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/46c650f9-3fed-4338-9492-f6752be60af3.png?auto=format&fit=max&w=1400",
+    "alt": "guilds.run graphic 'Don't trust. Verify.' showing a team of agents as a connected graph"
+   },
+   {
+    "url": "https://ph-files.imgix.net/4db575b3-f33c-4555-a605-109c6f275341.png?auto=format&fit=max&w=1400",
+    "alt": "guilds.run graphic 'A coach that helps you tune the whole team' with a chat suggesting a prompt change and the edited prompt"
+   },
+   {
+    "url": "https://ph-files.imgix.net/5209f920-e7ec-42ba-86d6-7900fcf3e819.png?auto=format&fit=max&w=1400",
+    "alt": "guilds.run graphic 'Everything your agent sees, in the open' showing an agent's context, tool calls and output"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/46c650f9-3fed-4338-9492-f6752be60af3.png?auto=format&fit=max&w=1400",
+    "alt": "guilds.run graphic 'Don't trust. Verify.' showing a team of agents as a connected graph"
+   },
+   {
+    "url": "https://ph-files.imgix.net/4db575b3-f33c-4555-a605-109c6f275341.png?auto=format&fit=max&w=1400",
+    "alt": "guilds.run graphic 'A coach that helps you tune the whole team' with a chat suggesting a prompt change and the edited prompt"
+   },
+   {
+    "url": "https://ph-files.imgix.net/5209f920-e7ec-42ba-86d6-7900fcf3e819.png?auto=format&fit=max&w=1400",
+    "alt": "guilds.run graphic 'Everything your agent sees, in the open' showing an agent's context, tool calls and output"
+   }
+  ]
+ }
+}

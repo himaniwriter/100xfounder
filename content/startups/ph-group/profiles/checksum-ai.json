@@ -1,0 +1,101 @@
+{
+  "slug": "checksum-ai",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/checksum-ai",
+  "excerpt": "Checksum AI generates, runs and repairs end-to-end and API tests on every pull request, delivered as ordinary Playwright code in your repo, and tells real bugs from stale tests. How it works, how it is priced, alternatives and launch-day questions.",
+  "content": "<p>Checksum AI is a testing platform for teams whose code now changes faster than anyone can maintain the tests. Its agents write end-to-end and API tests for your application as standard Playwright code and commit them to your own repository through a normal pull request. They then run on every commit, pull request and deployment, alongside your existing CI/CD.</p><p>The main promise is in what happens when a test fails. Checksum classifies the failure as either a real bug or a stale test that broke because the app changed. Real bugs are reported; stale tests are healed automatically, and each fix arrives as a diff you can review rather than a silent rewrite. It works as a background agent, not a copilot: you ask for, say, 200 tests and it goes away and produces them. Because the tests are plain Playwright in your repo, you keep them if you stop using Checksum.</p><p>Checksum AI, Inc. was founded by Gal, its CEO, who says on Product Hunt that he lost whole sprints to test maintenance at a previous startup and earlier built machine-learning models for satellite data. It launched on Product Hunt on 20 August 2026 and finished #3 for the day with 203 points and 35 comments.</p><p><em>We have not tested Checksum AI ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Software testing",
+    "platform": "Cloud service working with your repo and CI/CD",
+    "starts_at": "Free 30-day trial; priced by number of tests maintained",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Generates, runs and self-heals Playwright end-to-end and API tests on every pull request",
+    "maker": {"name": "Gal", "url": "https://www.producthunt.com/@gver"},
+    "team": [
+      {"name": "Gal", "role": "Founder and CEO", "url": "https://www.producthunt.com/@gver"},
+      {"name": "Michelle Dailey", "url": "https://www.producthunt.com/@michelle_dailey"},
+      {"name": "Daniel Harkin", "url": "https://www.producthunt.com/@daniel_harkin"}
+    ],
+    "ph": {"rank": 3, "votes": 203, "comments": 35, "followers": 597, "launched": "2026-08-20", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/4c8b66eb-bbcb-485b-8685-a1293399644b.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Checksum feature health dashboard with auto-heal and test-detection panels, headed 'Detects, generates & auto-heals tests autonomously'",
+       "credit": "Image: Checksum AI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/85f87404-2fb1-4bc0-8963-13e061d889d6.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Checksum agent session log showing a completed test-generation pipeline with a 'Create Pull Request' button",
+       "credit": "Image: Checksum AI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/dc9ef34d-a340-4561-9321-7c1d6f6fd884.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Checksum test runs list and a scheduled-runs panel, headed 'Runs on every commit, PR, and deploy'",
+       "credit": "Image: Checksum AI via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "ship a lot of AI-written code and your end-to-end suite keeps breaking for reasons that aren't real bugs",
+        "want tests as standard Playwright in your own repo, with no proprietary format",
+        "run complex web apps or internal tools that nobody has time to test by hand"
+      ],
+      "not_fit": [
+        "need native mobile-app testing: Checksum's tests are Playwright (web) and API tests",
+        "want a published per-seat price: Checksum prices by the number of workflows it maintains and shows tiers, not prices",
+        "only need a handful of tests: the smallest tier is built around 50 maintained workflows"
+      ]
+    },
+    "pricing": {
+      "intro": "Checksum prices by the number of test workflows it maintains, with unlimited runs, healing and users. Its pricing page lists three tiers but no prices; each tier has a free 30-day trial.",
+      "url": "https://checksum.ai/product/pricing",
+      "plans": [
+        {"name": "Emerging", "price": "See pricing page", "amount": null, "currency": "USD", "detail": "50 CI/CD-ready end-to-end workflows maintained, autonomous healing, dedicated customer engineer, tests delivered as Playwright code to your repo"},
+        {"name": "Scaling", "price": "See pricing page", "amount": null, "currency": "USD", "detail": "200 workflows maintained, custom style guides, integration with your existing test setup, parallel execution"},
+        {"name": "Enterprise", "price": "See pricing page", "amount": null, "currency": "USD", "detail": "400+ workflows (custom volumes), API testing agent that chains 40+ steps, custom SLA and security review support"}
+      ],
+      "notes": [
+        "No per-seat or per-run fees, according to the pricing page.",
+        "Its 'results as a service' option includes a final check by a human engineer before tests are delivered.",
+        "Product Hunt lists Checksum as having free options."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "QA.tech", "url": "https://qa.tech/product/pr-testing", "what": "AI agents that run regression and exploratory tests on each pull request", "starts_at": "See its pricing page", "ph_rating": 4.29, "ph_reviews": 7,
+         "difference": "Tests your preview environment and posts a verdict to GitHub or GitLab; Checksum's focus is maintaining a Playwright suite you own."},
+        {"name": "TestMu AI", "url": "http://www.testmuai.com", "what": "Agentic quality-engineering platform for web, mobile, voice and chat", "starts_at": "See its pricing page", "ph_rating": 4.75, "ph_reviews": 12,
+         "difference": "A broad testing cloud including real devices and agent testing; Checksum is narrower, on web end-to-end and API tests."},
+        {"name": "DogQ", "url": "https://dogq.io", "what": "Testing tool that writes, heals and suggests tests", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 6,
+         "difference": "Similar promise on paper, but when we checked, dogq.io redirected to fively.dev, a software development agency, so check whether it is still offered."}
+      ],
+      "more": "Product Hunt also lists QApilot (mobile app testing) and Autosana (AI agents for end-to-end testing)."
+    },
+    "reviews": {"count": 1, "rating": 5, "url": "https://www.producthunt.com/products/checksum-ai/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/checksum-ai",
+      "quotes": [
+        {"author": "Hamza Afzal Butt", "text": "How do teams build confidence in auto healed tests without manually reviewing every change?",
+         "reply": "Michelle Dailey: every healed test lands as a diff you can review; teams check closely at first and relax once they see the same fixes repeat."},
+        {"author": "Sansa Grey", "text": "Playwright code staying in the repo is a nice choice. i do much rather have tests i can inspect and edit than another black-box- QA layer."},
+        {"author": "Michael Sand", "text": "Would you suggest using this for more elaborate claude code projects (full stack, hosted)?",
+         "reply": "Daniel Harkin: full-stack, hosted apps are what they test most, and setting up VPNs or proxies for internal tools is normal for them."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=checksum.ai&f=live"}
+    },
+    "faq": [
+      {"q": "What is Checksum AI?", "a": "A continuous testing platform from Checksum AI, Inc. that generates, runs and heals end-to-end and API tests on every pull request, as Playwright code in your repo. It launched on Product Hunt on 20 August 2026."},
+      {"q": "How is Checksum priced?", "a": "By the number of test workflows it maintains, with no per-seat or per-run fees. Tiers start at 50 workflows (Emerging), then 200 (Scaling) and 400+ (Enterprise). Prices are not shown on the page, and each tier has a free 30-day trial."},
+      {"q": "Do I keep the tests if I leave?", "a": "Yes. Tests are standard Playwright committed to your repository, so they stay with you, according to Checksum."},
+      {"q": "What does auto-healing mean?", "a": "When a test fails because the app changed rather than because of a bug, Checksum's agent fixes the test and opens a pull request for you to review."},
+      {"q": "Does it work with my CI/CD?", "a": "Checksum says it runs alongside your existing CI pipeline on every commit, pull request and deployment, and surfaces results in your pull requests."}
+    ],
+    "sources": [
+      {"label": "Checksum platform page", "url": "https://checksum.ai/product/platform"},
+      {"label": "Checksum pricing", "url": "https://checksum.ai/product/pricing"},
+      {"label": "Checksum for engineering teams", "url": "https://checksum.ai/solutions/engineering-teams"},
+      {"label": "Checksum privacy policy", "url": "https://checksum.ai/privacy-policy"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/checksum-ai"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/checksum-ai/launches/checksum-ai"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/checksum-ai/alternatives"},
+      {"label": "QA.tech PR testing", "url": "https://qa.tech/product/pr-testing"}
+    ]
+  }
+}

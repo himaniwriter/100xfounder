@@ -1,0 +1,329 @@
+{
+ "input": "https://www.producthunt.com/posts/reso-ai-2",
+ "final_url": "https://www.producthunt.com/products/reso?launch=reso-ai-2",
+ "launch": {
+  "slug": "reso-ai-2",
+  "name": "ReSO AI",
+  "tagline": "Get discovered & recommended when customers ask AI",
+  "featuredAt": "2026-10-10T00:01:00-07:00",
+  "dailyRank": "2",
+  "weeklyRank": "5",
+  "points": 495,
+  "commentsCount": 43,
+  "pricingType": "free",
+  "description": "ReSO is a generative engine optimization platform that helps brands show up in AI search results.\n\nIt’s built for founders, CMOs, and growth teams who want to turn buyer intent in ChatGPT, Perplexity, and Google AIO into visibility, citations, and traffic.\n\nWhat makes it different is that it doesn’t just track rankings, it analyzes intent, competitors, content gaps, and technical issues, then turns them into priority actions to improve AI recommendations.",
+  "makers": [
+   {
+    "name": "Swati Paliwal",
+    "username": "swati_paliwal",
+    "headline": "Founder Resollm.ai (AI agent for GEO)"
+   },
+   {
+    "name": "Mohit Gupta",
+    "username": "mohit_gupta138",
+    "headline": "Co-founder, ReSO"
+   },
+   {
+    "name": "Himani Sah",
+    "username": "himani_sah1",
+    "headline": "On the way to explore and learn"
+   },
+   {
+    "name": "Aanchal Dahiya",
+    "username": "aanchal_dahiya",
+    "headline": "Head of Customer Success, ReSO AI"
+   },
+   {
+    "name": "Bhawna Rathee",
+    "username": "bhawna_rathee",
+    "headline": "Marketing Executive at ReSo"
+   }
+  ],
+  "hunter": "Jonno Riekwel",
+  "media": [
+   {
+    "uuid": "f21aab5c-70fc-4a05-bd79-103326182d68.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "bb9e3cf6-1bbf-40c4-825d-09bb20a409c4.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "1841ef25-9cbb-4c76-ad84-d899aecb8f06.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "31130b1d-edf4-4882-bfe1-99a0804d5f92.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "9b97dcd7-ad05-4825-9e01-69aa2aaaf684.png",
+    "type": "image",
+    "w": 3810,
+    "h": 2280,
+    "video": null
+   },
+   {
+    "uuid": "22abc50c-c8a5-4705-9ca5-078cc08b1f82.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/D9v3aPPJgec?si=rs2CRqcVXwBFE1K1"
+   },
+   {
+    "uuid": "36d7aff5-8871-4641-ba77-19d965e4389b.png",
+    "type": "interactive_demo",
+    "w": 1200,
+    "h": 630,
+    "video": "https://app.arcade.software/share/pXwIaE3yp9XxZJv60KHb"
+   }
+  ],
+  "links": [
+   "www.resollm.ai",
+   "app.resollm.ai",
+   "www.linkedin.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "weekly",
+    5
+   ],
+   [
+    "daily",
+    2
+   ]
+  ]
+ },
+ "product": {
+  "name": "ReSO AI",
+  "slug": "reso",
+  "tagline": "Get discovered & recommended when customers ask AI",
+  "description": "ReSO is a generative engine optimization platform that helps brands show up in AI search results. It’s built for founders, CMOs, and growth teams who want to turn buyer intent in ChatGPT, Perplexity, and Google AIO into visibility, citations, and traffic. What makes it different is that it doesn’t just track rankings, it analyzes intent, competitors, content gaps, and technical issues, then turns them into priority actions to improve AI recommendations.",
+  "websiteUrl": "https://www.resollm.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 1138,
+  "twitterUrl": "https://x.com/https://x.com/ReSOAI_AEO",
+  "linkedinUrl": "https://www.linkedin.com/company/resollm-ai/",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5892587",
+   "depth": 0,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "👋 Hey Product Hunt! I'm Swati, Co-founder of ReSO! Having led marketing across B2B, B2C for 2 decades, organic has been my favorite revenue growth channel. Somewhere in the last two years I noticed my own buying behaviour change; every serious purchase started with a question to ChatGPT or Google AI.&nbsp; And when buyers ask AI \"which one should I choose?\" only 3-5 brands exist in the answer. In that moment every brand which is not in the answer loses a potential customer. The problem: When we started auditing brands, we kept finding the same thing; companies ranking on page 1 of Google that were near-invisible in AI answers, losing recommendations to smaller competitors. And the tools out there mostly tell you that you're invisible. Very few tell you why . Almost none tell you what to do about it today . So we built ReSO a custom agentic employee to own organic search growth channel, acquire customers &amp; drive revenue: 1️⃣ Discover : Find real questions your buyers ask AI, across every intent &amp; funnel stage (discovery, comparisons, alternatives, \"best X for Y\"…). 2️⃣ Measure : Runs the queries across ChatGPT, Perplexity &amp; Google AI Overviews, and shows exactly where yo"
+  },
+  {
+   "id": "5936751",
+   "depth": 1,
+   "author": "smitesh gambhir",
+   "username": "smits_gambhir",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@swati_paliwal congrats. many tools can identify visibility gaps. ReSo also promises to fix them. how does it decide which actions to prioritize and how much of the execution can happen without human intervention?"
+  },
+  {
+   "id": "5936913",
+   "depth": 2,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@smits_gambhir &nbsp;We have a list of &gt;400 parameters, which have attributed priority and severity. So on a case to case basis ReSO recommends the fixes. Human intervention is required to make the recommended changes on site. What ReSO does is tell you which issues to fix (week by week basis), why and how to fix them. As a team we also have biweekly meetings with all our users to guide them through the process"
+  },
+  {
+   "id": "5936741",
+   "depth": 0,
+   "author": "Emma Pugsley",
+   "username": "you_x_you_i",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Congratulations on the launch. ReSO AI sounds very comprehensive, and is being launched at a great time. I read some stats recently (from Adobe) that found e-commerce shoppers who start in AI search convert 23% more, stay on site 20% longer, and return fewer items. Who are you targeting? I think there’s a great opportunity for small brands to compete in AI search like they can’t with SEO, but your pricing seems more aimed at larger brands."
+  },
+  {
+   "id": "5936918",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@you_x_you_i &nbsp;I agree to the heart of the stats. The traffic that converts via AI search is high intent. And yes, AI search has made it possible for realtively smaller brands to make their mark. As for the pricing, we aim to come with lighter plans for small scale companies as well. Stay tuned for same."
+  },
+  {
+   "id": "5937709",
+   "depth": 0,
+   "author": "Muhammad Ahmed",
+   "username": "aymi_malik",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Is there integration between ReSO and GA4/ Search Console where traffic that is driven by AI appears alongside other traffic? Btw, Congratulations @swati_paliwal , @mohit_gupta138 and team ReSO AI 🎊🔼✌️"
+  },
+  {
+   "id": "5937865",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mohit_gupta138 &nbsp;&nbsp;Yes. The feature is not live yet though. Expect the same next month."
+  },
+  {
+   "id": "5937771",
+   "depth": 0,
+   "author": "Owais Khan",
+   "username": "owais_khan22",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Congrats @swati_paliwal on the launch, for most of the AI visibility tools I noticed they share lot of data and thesis but lacks in specific actions. How you guys are solving it?"
+  },
+  {
+   "id": "5937902",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@owais_khan22 &nbsp;That's our core. The data and all is the base of the actual actions. ReSO gives you 8 onsite fixes every week, week on week and 2 ready-to-publish content pieces. The fixes are sorted by priority as for most impact and the content is based on the gaps as cited by the 'data’ and based on fresh secondary research and are fully AI search optimised."
+  },
+  {
+   "id": "5938837",
+   "depth": 0,
+   "author": "Shivam Kushwaha",
+   "username": "shivam_kushwaha16",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@ReSO AI Do you think AI search can beat google?"
+  },
+  {
+   "id": "5941326",
+   "depth": 1,
+   "author": "Mohit Gupta",
+   "username": "mohit_gupta138",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@shivam_kushwaha16 &nbsp;The thing that people have to understand is that Google itself is part of the AI Search ecosystem now (AI Overviews to start with, AI Mode to dive deep in, Gemini as the LLM) So when we say AI Search Visibility its across the engines with Google being one of the top priorities."
+  },
+  {
+   "id": "5938393",
+   "depth": 0,
+   "author": "Stephen Blum",
+   "username": "stephenlb",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Just wanted to confirm that this is a reporting tool? Tracks and analyzes to provide strong insight, but doesn't actually \"do\" any work? There are many products that measure and monitor. This one looks like a strong contender in the group. For example, if I buy the ReOS AI, it doesn't actually magically make my ranking higher. ReOS AI gives me a list of \"tasks\" that I have to manually implement, right?"
+  },
+  {
+   "id": "5938718",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@stephenlb &nbsp;Reporting is only the 1st part of the tool but ReSO also does the work like selecting content topics that your website needs to publish to establish domain authority and actually writing the blog content.. all you have to do is publish the content.. The platform also tells you the exact changes that needs to be done on your website and once the changes are done then reaudits to confirm. In our premium subscription you will also get strategy call with our Customer success executives and backlinks created from high domain authority sites to yours"
+  },
+  {
+   "id": "5938929",
+   "depth": 0,
+   "author": "Dmitry Zakharov",
+   "username": "dmitry_zakharov_ai",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Good luck, Swati. What's your main competitive advantage?"
+  },
+  {
+   "id": "5940086",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@dmitry_zakharov_ai &nbsp;Our competitive advantage is that we have productized the playbooks that we have been using to get people to deliver actual results to people. Where many times the other products stop at great data tracking and analysis, that is but one out of three modules of ours, the other two being actual implementations recommended through that data analysis, which deliver actual impact."
+  }
+ ]
+}

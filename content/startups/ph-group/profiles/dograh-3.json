@@ -1,0 +1,95 @@
+{
+  "slug": "dograh-3",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/dograh-3",
+  "excerpt": "Dograh is an open-source, self-hostable platform for building AI phone agents, pitched as an alternative to Vapi and Retell. Pricing from 1¢ a minute, alternatives and what launch-day users asked.",
+  "content": "<p>Dograh is a platform for building voice AI agents that make and answer phone calls: booking appointments, qualifying leads or running payment reminders. You design the call flow in a visual builder, pick your speech-to-text, language model and text-to-speech providers (or a single speech-to-speech model), connect telephony such as Twilio, Plivo, Telnyx or Vonage, and add human transfer, QA and monitoring. You can also build agents from Claude Code, Codex or Cursor through its MCP server.</p><p>The whole platform is open source under the BSD 2-Clause licence and can be self-hosted with one command, with your own API keys or local models; the GitHub repository had about 5,900 stars on 14 October 2026. Dograh also runs a hosted cloud. The company behind it is Zansat Technologies Pvt Ltd, an Indian company, according to its terms of service, and its About page lists co-founders Pritesh Kumar and Abhishek Kumar and founding engineer Sabiha Khan.</p><p>Dograh launched on Product Hunt on 12 August 2026 and was #1 for the day with 585 points and 205 comments (as of 14 October 2026).</p><p><em>We have not tested Dograh ourselves. This page brings together its official site, its GitHub repository, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Voice AI agents",
+    "platform": "Self-hosted (open source) or Dograh Cloud",
+    "starts_at": "Free to self-host; cloud from 1¢/min platform fee",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Open-source, self-hostable platform for building AI phone agents, an alternative to Vapi",
+    "maker": {"name": "Pritesh Kumar", "url": "https://www.producthunt.com/@pritesh_kumar3"},
+    "team": [
+      {"name": "Pritesh Kumar", "role": "Co-founder (Dograh About page)", "url": "https://www.dograh.com/about"},
+      {"name": "Abhishek Kumar", "role": "Co-founder (Dograh About page)", "url": "https://www.dograh.com/about"},
+      {"name": "Sabiha Khan", "role": "Founding engineer (Dograh About page)", "url": "https://www.dograh.com/about"}
+    ],
+    "ph": {"rank": 1, "votes": 585, "comments": 205, "followers": 1789, "launched": "2026-08-12", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/59430999-5403-4040-8ed8-8fa94fc30d8c.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Dograh graphic 'Your keys, or Local models' with an AI Models Configuration panel choosing speech-to-text, LLM and text-to-speech providers", "credit": "Image: Dograh via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/76041dbf-66a8-4ba3-94bb-b2aeaf583dd8.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Dograh graphic 'Build agents via chat (MCP)' showing Claude Code creating an EMI reminder calling agent through the Dograh MCP server", "credit": "Image: Dograh via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are a developer or agency building phone agents and want to avoid per-minute platform lock-in",
+        "work in a regulated sector or region and need to self-host or deploy on-premises",
+        "want to mix providers (Deepgram, Sarvam, ElevenLabs, OpenAI, Gemini and others) or run local models"
+      ],
+      "not_fit": [
+        "want a ready-made agent with no setup: users on Product Hunt asked for more starter templates",
+        "don't want to run servers and need very high call concurrency on the cheapest tier (10 concurrent calls are included)",
+        "need a consumer voice assistant rather than a business calling platform"
+      ]
+    },
+    "pricing": {
+      "intro": "Dograh lists four options on its own pricing page. Model and telephony costs are separate unless you use Dograh's own models.",
+      "url": "https://www.dograh.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Open Source", "price": "Free", "amount": 0, "currency": "USD", "detail": "Full platform, self-hosted, no limits, BSD 2-Clause licence"},
+        {"name": "Pay as you go", "price": "1¢/min platform fee", "amount": 0.01, "currency": "USD", "detail": "Hosted cloud; bring your own keys or use Dograh Models; 10 concurrent calls included; credits from $5"},
+        {"name": "Committed volume", "price": "Custom", "detail": "Volume discounts on committed minutes, priority support"},
+        {"name": "Enterprise", "price": "Custom", "detail": "On-premises or private-cloud deployment, SSO/SAML, audit logs, dedicated account manager and custom SLAs"}
+      ],
+      "notes": [
+        "With your own keys you pay your speech, model and telephony providers directly."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Vapi", "url": "https://vapi.ai/", "what": "Voice AI platform for developers", "starts_at": "Pay per minute; $5 free credits to start", "ph_rating": 4.88, "ph_reviews": 25,
+         "difference": "A hosted, closed platform. Dograh positions itself as the open-source alternative you can self-host."},
+        {"name": "ElevenLabs", "url": "https://elevenlabs.io/", "what": "AI voices, speech and voice agents", "starts_at": "See its pricing page", "ph_rating": 4.91, "ph_reviews": 218,
+         "difference": "A voice-model company with its own agent product; Dograh can use ElevenLabs as one of its text-to-speech providers."},
+        {"name": "Inworld", "url": "https://inworld.ai/", "what": "Text-to-speech, speech-to-text and LLM routing", "starts_at": "On-demand from $25 per 1M TTS characters; Creator $25/month", "ph_rating": 5, "ph_reviews": 7,
+         "difference": "Supplies voice models; Dograh is the agent-building and telephony layer, and lists Inworld as a provider."}
+      ],
+      "more": "Product Hunt also lists Deepgram (4.94 from 82 reviews) and SigmaMind AI (4.93 from 14 reviews). Dograh also compares itself with Retell."
+    },
+    "reviews": {"count": 2, "rating": 5, "url": "https://www.producthunt.com/products/dograh/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/dograh",
+      "quotes": [
+        {"author": "Julian Ting", "text": "70+ languages with mid-call switching is a thoughtful feature, especially for real-world phone conversations."},
+        {"author": "kumar gautam", "text": "How is the latency handled for cascaded systems... if one of the api calls fails?",
+         "reply": "Abhishek Kumar: TTS and STT run over WebSockets with automatic retries, and fallback LLMs take over if the primary model is slow or fails."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "profile_url": "https://twitter.com/dograh_hq", "search_url": "https://x.com/search?q=dograh&f=live"}
+    },
+    "faq": [
+      {"q": "What is Dograh?", "a": "An open-source platform for building AI voice agents that make and take phone calls, with a visual flow builder, your choice of speech and language models, telephony, human transfer and monitoring."},
+      {"q": "Is Dograh free?", "a": "The open-source version is free to self-host with no limits. Dograh Cloud charges a platform fee from 1¢ a minute, with credits from $5 (pricing page, 14 October 2026)."},
+      {"q": "Who makes Dograh?", "a": "Zansat Technologies Pvt Ltd, an Indian company, according to its terms of service. Its About page lists co-founders Pritesh Kumar and Abhishek Kumar."},
+      {"q": "Which providers does it support?", "a": "Its site lists OpenAI, Gemini, Groq, OpenRouter, Azure, AWS, Deepgram, Sarvam, ElevenLabs, Cartesia, Twilio, Plivo, Telnyx, Vonage and others, plus local models."},
+      {"q": "Can I build agents from Claude Code?", "a": "Yes. Dograh ships an MCP server that works with Claude Code, Codex, Cursor and other MCP clients."},
+      {"q": "How does Dograh compare with Vapi?", "a": "Vapi is a hosted platform billed per minute. Dograh offers a similar hosted option but its whole platform is also open source and self-hostable."}
+    ],
+    "sources": [
+      {"label": "Dograh official site", "url": "https://www.dograh.com/"},
+      {"label": "Dograh pricing", "url": "https://www.dograh.com/pricing"},
+      {"label": "Dograh about", "url": "https://www.dograh.com/about"},
+      {"label": "Dograh terms of service", "url": "https://www.dograh.com/terms-of-service"},
+      {"label": "Dograh on GitHub", "url": "https://github.com/dograh-hq/dograh"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/dograh"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/dograh-3"},
+      {"label": "Vapi pricing", "url": "https://vapi.ai/pricing"},
+      {"label": "Inworld pricing", "url": "https://inworld.ai/pricing"}
+    ]
+  }
+}

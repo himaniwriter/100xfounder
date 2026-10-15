@@ -1,0 +1,127 @@
+{
+  "slug": "nautis",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/nautis",
+  "excerpt": "Nautis is an AI \"Chief of Staff\" workspace for founders that brings fundraising, finance, CRM, documents and daily operations into one place. Pricing from $49/month, alternatives and launch Q&A.",
+  "content": "<p>Nautis is a workspace for startup founders that tries to replace a stack of separate tools. Fundraising CRM, investor matching, data rooms, business plans and pitch-deck analysis, invoices and expenses, meetings, task boards, hiring and notes all sit in one app and share one data layer. On top of it runs an AI \"Chief of Staff\" that reads across those modules and sends a morning briefing on what needs attention, such as runway, overdue invoices or investors who have gone quiet.</p><p>The AI drafts actions, such as a reminder to a late-paying customer or a nudge to an investor, and you approve each one before anything leaves the workspace. Asked on Product Hunt how a shared AI brain respects permissions, founder Baltej Singh said access is still filtered by role, module and record, and that when an insight depends on data a user cannot see, the answer is regenerated from only what they are allowed to access. The company says your data never trains models and every AI action is logged.</p><p>Nautis launched on Product Hunt on 20 July 2026 and finished #2 for the day, with 406 upvotes and 103 comments (as of 14 October 2026).</p><p><em>We have not tested Nautis ourselves. This page brings together its official site, pricing, About and contact pages and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Startup operating system",
+    "platform": "Web app",
+    "starts_at": "14-day free trial, then from $49/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI-native workspace for founders covering fundraising, finance, CRM, documents and daily operations, with an AI Chief of Staff",
+    "maker": {"name": "Baltej Singh", "url": "https://www.producthunt.com/@baltejsingh88"},
+    "team": [
+      {"name": "Baltej Singh", "role": "Founder", "url": "https://www.producthunt.com/@baltejsingh88"}
+    ],
+    "ph": {"rank": 2, "votes": 406, "comments": 103, "followers": 830, "launched": "2026-07-20", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/313e23fa-4853-4364-a0a7-140903c45f90.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040, "credit": "Image: Nautis via Product Hunt",
+       "alt": "Nautis title card 'The AI-Native Operating System for Founders' with planning, pitching, fundraising, finance and execution labels"},
+      {"url": "https://ph-files.imgix.net/91a209e4-a18a-4fd3-b8e6-54d4569cf078.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040, "credit": "Image: Nautis via Product Hunt",
+       "alt": "Nautis graphic arguing that startups juggle 12 disconnected apps costing over $400 a month, as claimed by Nautis"},
+      {"url": "https://ph-files.imgix.net/7ac86763-dabe-4472-896a-cb83c197a614.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040, "credit": "Image: Nautis via Product Hunt",
+       "alt": "Nautis 'One Workspace. One Brain.' diagram linking fundraising CRM, meetings, task boards, pitch deck analyser, invoices and business plans"}
+    ],
+    "use_cases": [
+      "Getting a morning briefing on runway, overdue invoices and quiet investors",
+      "Tracking investor conversations and sending follow-ups you approve",
+      "Turning a pitch deck into an editable business plan",
+      "Keeping data rooms, documents and credentials in one place",
+      "Giving team members access only to the modules they need"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Baltej Singh says that after years around startups, building products and working with founders and investors, he kept seeing the same problem: a company's context is scattered across a dozen tools, so the founder ends up as the integration layer.",
+        "Nautis is his answer: one workspace where every module shares one data layer, so its AI Chief of Staff can see the deck, the numbers and the CRM together and act, with the founder approving each step."
+      ],
+      "attribution": "Baltej Singh, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/nautis?comment=5609039"
+    },
+    "audience": {
+      "fit": [
+        "are an early-stage founder running fundraising, finance and operations yourself",
+        "want an AI assistant that sees your real numbers rather than a blank chat window",
+        "want to approve every email or action the AI drafts"
+      ],
+      "not_fit": [
+        "already have a mature stack you are happy with: Nautis works best when it replaces those tools",
+        "need a dedicated accounting system: Nautis tracks invoices and expenses but is not sold as accounting software",
+        "want a free plan: there is a 14-day trial, then paid plans only"
+      ]
+    },
+    "pricing": {
+      "intro": "Nautis has three paid plans and a 14-day trial with no card. Prices are Nautis's, in US dollars; annual billing gives two months free, and the site mentions purchasing-power-parity pricing for some countries.",
+      "url": "https://getnautis.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Launch", "price": "$49/month", "amount": 49, "currency": "USD", "detail": "For a solo founder: 5 team members, 500 contacts, 5 data rooms, 5 business plans"},
+        {"name": "Voyage", "price": "$99/month", "amount": 99, "currency": "USD", "detail": "For a mid-size startup: 10 team members, 1,000 contacts, 10 data rooms"},
+        {"name": "Fleet", "price": "$129/month", "amount": 129, "currency": "USD", "detail": "For bigger startups: 25 team members, unlimited contacts, 25 data rooms"}
+      ],
+      "notes": [
+        "Every new workspace gets 14 days of Launch free, with no card and no automatic charge.",
+        "Plan changes are prorated."
+      ]
+    },
+    "pros": [
+      "One shared data layer across modules, so the AI sees the whole business",
+      "You approve every outgoing action",
+      "Role, module and record-level permissions, according to the founder",
+      "Free trial without a card"
+    ],
+    "cons": [
+      "Many modules means a lot to set up and migrate into",
+      "No free plan",
+      "No Product Hunt reviews yet"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["One shared context instead of isolated assistants", "Turning a pitch deck into a business plan", "Approvals before anything is sent"],
+        "asked": [
+          "How permissions work when every module shares one AI brain (role, module and record-level filters)",
+          "How the morning briefing decides what matters (missed deadlines, low runway, pending approvals, investor follow-ups)",
+          "What it takes over on day one (inbox triage, meeting summaries, investor follow-ups)"
+        ],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "The wall I hit isn't the model, it's shared state: getting one agent to actually see the deck, the cap table, and the CRM at the same time.", "author": "Aidan Christofferson", "url": "https://www.producthunt.com/products/nautis?comment=5625294"},
+        {"text": "Stripe, calendar and inbox in one brief would replace my first hour of the day.", "author": "Clemente Lopez", "url": "https://www.producthunt.com/products/nautis?comment=5634956"},
+        {"text": "Founder tooling usually fails by trying to replace judgment instead of protecting time.", "author": "Clemente Lopez", "url": "https://www.producthunt.com/products/nautis?comment=5631058"}
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as Nautis alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Taskade", "url": "https://www.taskade.com/", "what": "AI workspace for teams: projects, docs and agents", "starts_at": "See its pricing page", "ph_rating": 4.68, "ph_reviews": 109, "ph_url": "https://www.producthunt.com/products/taskade",
+         "difference": "A general team workspace; Nautis is built specifically around fundraising, finance and founder operations."},
+        {"name": "Claude", "url": "https://claude.ai/", "what": "Anthropic's AI assistant", "starts_at": "See its pricing page", "ph_rating": 4.96, "ph_reviews": 1041, "ph_url": "https://www.producthunt.com/products/claude",
+         "difference": "A general assistant you bring context to; Nautis keeps the business data inside its own modules."},
+        {"name": "Matilda Workspace", "url": "https://www.producthunt.com/products/matilda-workspace", "what": "All-in-one workspace with projects, docs, tables and chat", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 2, "ph_url": "https://www.producthunt.com/products/matilda-workspace",
+         "difference": "An all-in-one team workspace without Nautis's investor CRM and finance modules."}
+      ],
+      "more": "Product Hunt also lists Pre and Soloop as alternatives."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/nautis/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/nautis",
+      "x": {"none": "We found no posts about Nautis on X to link yet.", "search_url": "https://x.com/search?q=getnautis&f=live", "profile_url": "https://twitter.com/getnautis"}
+    },
+    "faq": [
+      {"q": "What is Nautis?", "a": "An AI-native operating system for startup founders: one workspace for fundraising, finance, CRM, documents, meetings, hiring and daily operations, with an AI Chief of Staff that reads across all of it."},
+      {"q": "How much does Nautis cost?", "a": "Launch is $49 a month, Voyage $99 and Fleet $129. Every new workspace starts with a 14-day trial of Launch with no card required, and annual billing gives two months free."},
+      {"q": "Does the AI send emails on its own?", "a": "No. According to Nautis, you approve every action before anything leaves your workspace."},
+      {"q": "Can team members see everything, including finance?", "a": "No. The founder said on Product Hunt that the data layer is shared but access is not: permissions are set by role, module and record."},
+      {"q": "Is my data used to train AI models?", "a": "Nautis says your data never trains models and every AI action is logged."}
+    ],
+    "sources": [
+      {"label": "Nautis official site", "url": "https://getnautis.com/"},
+      {"label": "Nautis pricing", "url": "https://getnautis.com/pricing"},
+      {"label": "Nautis About page", "url": "https://getnautis.com/about"},
+      {"label": "Nautis contact page", "url": "https://getnautis.com/contact"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/nautis"}
+    ]
+  }
+}

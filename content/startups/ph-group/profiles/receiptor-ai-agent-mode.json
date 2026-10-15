@@ -1,0 +1,99 @@
+{
+  "slug": "receiptor-ai-agent-mode",
+  "ph_url": "https://www.producthunt.com/posts/receiptor-ai-agent-mode",
+  "existing_listing_slug": null,
+  "website": "https://receiptor.ai",
+  "ph_data_partial": "This launch appears on Product Hunt as 'Agent Mode by Receiptor AI'. Stats came from the product's launches page; launch comments and the launch gallery were not available, so the gallery uses the product's own Product Hunt images and there are no comment quotes.",
+  "excerpt": "Receiptor AI finds receipts and invoices in your email, WhatsApp and iMessage, categorises them and files them into Xero or QuickBooks. Pricing from $29 a month.",
+  "content": "<p>Receiptor AI is a bookkeeping tool that collects receipts and invoices wherever they arrive: Gmail, Outlook or any IMAP inbox, WhatsApp, iMessage and bulk uploads. It extracts the data, assigns each document to the right business, categorises it against your chart of accounts and publishes it to Xero or QuickBooks with the original attached, or exports it to Drive, Dropbox, email, CSV, PDF or ZIP. It works in any language or currency.</p><p>Its Agent Mode, launched on Product Hunt as \"a bookkeeping assistant that runs receipt workflows end-to-end\", adds human-in-the-loop automation: when a receipt's business purpose isn't clear, Receiptor asks the right person a focused question on WhatsApp or in the app and uses the answer to finish the books and inform later decisions. Pricing is a monthly subscription for new receipts plus an optional one-off Retroactive Scan, priced per email, to recover old ones.</p><p>The Receiptor team on Product Hunt includes co-founder Luigi Fernandez Ortega. Agent Mode launched there on 29 June 2026 and finished #2 for the day with 494 upvotes and 99 comments; an earlier launch, Receiptor AI 2.0, was #1 on 2 September 2025. The product has 7 Product Hunt reviews averaging 5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Receiptor AI ourselves. This page brings together its official site and pricing page, its Product Hunt pages and the public pricing page of a comparable tool, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Bookkeeping and expense capture",
+    "platform": "Web app with email, WhatsApp and iMessage capture",
+    "starts_at": "From $29/month after a free trial",
+    "schema_category": "FinanceApplication",
+    "summary_short": "Finds, categorises and files every receipt and invoice into your accounting software",
+    "maker": {"name": "Luigi Fernandez Ortega", "url": "https://www.producthunt.com/@luigi_receiptorai"},
+    "team": [
+      {"name": "Luigi Fernandez Ortega", "role": "Co-founder", "url": "https://www.producthunt.com/@luigi_receiptorai"},
+      {"name": "Romeo Bellon", "role": "Maker", "url": "https://www.producthunt.com/@romeobellon"},
+      {"name": "Gvantsa Garmelia", "role": "Marketing", "url": "https://www.producthunt.com/@gvantsa_garmelia"}
+    ],
+    "ph": {"rank": 2, "votes": 494, "comments": 99, "followers": 1313, "launched": "2026-06-29", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/1dbb6787-4885-4647-aa42-85feddcaccbe.png?auto=format&fit=max&w=1400", "credit": "Image: Receiptor AI on Product Hunt",
+       "alt": "Receiptor AI graphic 'Bookkeeping just went hands-free' with receipts from Gmail, Outlook and WhatsApp flowing into Xero and QuickBooks, each tagged with vendor, date, amount and category"},
+      {"url": "https://ph-files.imgix.net/4d6c6ac8-7e74-493a-836d-de678f33a789.png?auto=format&fit=max&w=1400", "credit": "Image: Receiptor AI on Product Hunt",
+       "alt": "Receiptor AI graphic reading 'Try Receiptor AI free for 14 days'"}
+    ],
+    "use_cases": [
+      "Catching every receipt and invoice that arrives by email, WhatsApp or iMessage",
+      "Recovering a year or more of missing receipts from an inbox before tax time",
+      "Publishing categorised expenses to Xero or QuickBooks with the original attached",
+      "Accountants collecting clients' documents without chasing them"
+    ],
+    "audience": {
+      "fit": [
+        "run one or several small businesses and use Xero or QuickBooks",
+        "are an accountant or bookkeeper chasing clients for documents",
+        "have receipts scattered across inboxes and messaging apps"
+      ],
+      "not_fit": [
+        "only have a handful of receipts a month: the base plan is $29 a month",
+        "use accounting software other than Xero or QuickBooks and need a direct sync (exports to CSV, PDF and storage are available)"
+      ]
+    },
+    "pricing": {
+      "intro": "Receiptor sells a monthly subscription for new documents and a one-off Retroactive Scan for past emails. Prices are in US dollars, billed monthly; quarterly saves 10% and yearly gives 2 months free.",
+      "url": "https://receiptor.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Starter", "price": "$29/month", "amount": 29, "currency": "USD", "detail": "One business; unlimited email accounts and mobile scanners; accounting and forward exports; built-in automations; 50 documents captured, 500 items checked and 50 agent queries included; 1 accounting connection"},
+        {"name": "Growth", "price": "$79/month", "amount": 79, "currency": "USD", "detail": "Custom automations, workspaces, legal-entity matching, API, MCP and CLI access, webhooks; 250 documents, 2,500 items and 250 agent queries; 2 accounting connections"},
+        {"name": "Scale", "price": "$199/month", "amount": 199, "currency": "USD", "detail": "For multi-entity teams: 1,000 documents, 10,000 items and 1,000 agent queries; 5 accounting connections; 3 export destinations"},
+        {"name": "Retroactive Scan", "price": "From $0.012 per email (one-off)", "detail": "Scan a chosen inbox and date range for past receipts; you see a quote before paying"},
+        {"name": "Enterprise", "price": "Custom", "detail": "Tailored for more complex operations"}
+      ],
+      "notes": ["Over the included amounts: $0.04 per extra document captured, $0.03 per item checked, $0.01 per agent query and $12 per extra accounting connection, according to the pricing page."]
+    },
+    "alternatives": {
+      "intro": "Other receipt-capture tools that feed accounting software. Price from the company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "Hubdoc", "url": "https://www.hubdoc.com/", "what": "Document capture that extracts data from bills, receipts and statements, owned by Xero", "starts_at": "$12/month after a 30-day free trial",
+         "difference": "Cheaper and tied closely to Xero, but relies on you uploading or forwarding documents rather than searching inboxes and messaging apps for them."},
+        {"name": "Dext", "url": "https://dext.com/", "what": "Receipt and invoice capture for businesses and accountants", "starts_at": "See its pricing page",
+         "difference": "A long-established tool widely used by accounting firms."}
+      ]
+    },
+    "reviews": {"count": 7, "rating": 5, "url": "https://www.producthunt.com/products/receiptor-ai/reviews", "as_of": "2026-10-14"},
+    "pros": [
+      "Captures from email, WhatsApp, iMessage and uploads automatically",
+      "Asks a person when it isn't sure instead of guessing",
+      "Can recover years of old receipts in one scan",
+      "API, MCP and CLI access on Growth and above"
+    ],
+    "cons": [
+      "Usage beyond the included amounts is charged per unit",
+      "Retroactive scans are a separate purchase",
+      "Direct sync only to Xero and QuickBooks"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/receiptor-ai",
+      "x": {"profile_url": "https://x.com/receiptorai", "search_url": "https://x.com/search?q=receiptor.ai&f=live", "none": "Apart from Receiptor's own account, we found no posts on X clearly about Agent Mode."}
+    },
+    "faq": [
+      {"q": "What is Receiptor AI?", "a": "A bookkeeping tool that finds receipts and invoices in your email, WhatsApp and iMessage, categorises them and files them into Xero or QuickBooks with the original attached."},
+      {"q": "How much does Receiptor AI cost?", "a": "Starter is $29 a month, Growth $79 and Scale $199, after a free trial. Scanning old emails is a separate one-off Retroactive Scan from $0.012 per email."},
+      {"q": "What is Agent Mode?", "a": "Receiptor's assistant that runs receipt workflows end to end and asks a focused question on WhatsApp or in the app when it needs context, such as a receipt's business purpose."},
+      {"q": "Which accounting software does it support?", "a": "Xero and QuickBooks directly, plus exports to Google Drive, Dropbox, email, CSV, PDF or ZIP."},
+      {"q": "Can it find old receipts?", "a": "Yes, with a Retroactive Scan of a chosen inbox and date range; you get a quote before buying."}
+    ],
+    "sources": [
+      {"label": "Receiptor AI official site", "url": "https://receiptor.ai/"},
+      {"label": "Receiptor AI pricing", "url": "https://receiptor.ai/pricing"},
+      {"label": "Product Hunt product page", "url": "https://www.producthunt.com/products/receiptor-ai"},
+      {"label": "Product Hunt launches", "url": "https://www.producthunt.com/products/receiptor-ai/launches"},
+      {"label": "Hubdoc pricing", "url": "https://www.hubdoc.com/pricing"}
+    ]
+  }
+}

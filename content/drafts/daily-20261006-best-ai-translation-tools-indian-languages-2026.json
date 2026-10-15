@@ -1,0 +1,152 @@
+{
+  "type": "post",
+  "slug": "best-ai-translation-tools-indian-languages-2026",
+  "title": "Best AI translation tools in 2026, including Indian languages",
+  "excerpt": "Google, DeepL, Microsoft Translator, Sarvam AI and IndicTrans2 compared on Indian-language coverage, prices and privacy, checked on 6 October 2026.",
+  "category": "ai-news",
+  "tags": [
+    "AI translation",
+    "Google Translate",
+    "DeepL",
+    "Microsoft Translator",
+    "Sarvam AI",
+    "Indian languages",
+    "Bhashini",
+    "IndicTrans2"
+  ],
+  "content": "<p>The best AI translation tools in 2026 are Google Translate and Microsoft Translator for the widest Indian-language coverage, DeepL for polished European and Asian business text, and Sarvam AI for Indian languages, including colloquial and code-mixed Hinglish-style output. For free, self-hosted translation, AI4Bharat's IndicTrans2 covers all 22 scheduled Indian languages under the MIT licence. The latest change came on 1 October 2026, when DeepL moved Hindi and Tamil speech translation out of beta. Prices and language lists below come from each vendor's own pages as of 6 October 2026.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>Widest coverage:</strong> Google's Cloud Translation lists 22 Indian languages and Microsoft lists 22 Indian-language entries, including Bhojpuri, Dogri, Konkani and Maithili.</li>\n<li><strong>Cheapest API at scale:</strong> Microsoft charges $10 per million characters after a 2-million-character free tier. Google charges $20 after 500,000 free characters.</li>\n<li><strong>DeepL has gaps in India.</strong> It supports Hindi, Bengali, Tamil and nine more Indian languages, but not Kannada or Odia, and glossaries don't work for any of them.</li>\n<li><strong>Best for Indian nuance:</strong> Sarvam's Mayura model offers formal, colloquial and code-mixed modes, priced at ₹0.005 a character.</li>\n</ul>\n\n<h2>What changed this month</h2>\n<p>DeepL's <a href=\"https://developers.deepl.com/docs/resources/roadmap-and-release-notes\">release notes</a> show that on 1 October, Hindi, Tamil, Malay, Catalan and Galician moved from beta to general availability as source and target languages in its Voice API. There are two caveats. DeepL says transcription for these languages is still handled by external partners, and you must name the source language because auto-detection isn't supported. DeepL also shipped beta support for ten more document formats, including Markdown and YAML, on 29 September.</p>\n<p>The broader trend is that translation has moved from text boxes to live speech. Google began rolling out Gemini-powered translation and a beta of live speech-to-speech translation in December 2025, starting in the US and India, according to <a href=\"https://blog.google/products/search/gemini-capabilities-translation-upgrades/\">Google</a>. The beta works through headphones across more than 70 languages. OpenAI's API now lists gpt-realtime-translate for live translation at $0.034 per minute, according to <a href=\"https://developers.openai.com/api/docs/pricing\">its pricing page</a>.</p>\n\n<h2>Indian-language support at a glance</h2>\n<table>\n<thead><tr><th>Tool</th><th>Indian languages listed</th><th>Notable gaps or extras</th></tr></thead>\n<tbody>\n<tr><td>Google Cloud Translation</td><td>22</td><td>Adds Awadhi, Bhojpuri, Mizo; no Bodo, Kashmiri or Santali</td></tr>\n<tr><td>Microsoft Translator</td><td>22</td><td>Adds Bhojpuri, Chhattisgarhi; no Sanskrit or Santali</td></tr>\n<tr><td>DeepL</td><td>12</td><td>No Kannada or Odia; no glossaries for Indian languages</td></tr>\n<tr><td>Sarvam (sarvam-translate:v1)</td><td>22</td><td>All scheduled languages; formal mode only</td></tr>\n<tr><td>Sarvam (mayura:v1)</td><td>10 plus English</td><td>Colloquial and code-mixed modes</td></tr>\n<tr><td>AI4Bharat IndicTrans2</td><td>22</td><td>Open model under MIT; self-hosted</td></tr>\n</tbody>\n</table>\n<p>Counts are from <a href=\"https://docs.cloud.google.com/translate/docs/languages\">Google</a>, <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support\">Microsoft</a>, <a href=\"https://developers.deepl.com/docs/getting-started/supported-languages\">DeepL</a>, <a href=\"https://docs.sarvam.ai/api-reference-docs/text/translate-text\">Sarvam</a> and <a href=\"https://huggingface.co/ai4bharat/indictrans2-en-indic-1B\">AI4Bharat</a>. Nepali, Urdu and Sindhi are included where a vendor lists them as Indian-language support. The \"22 scheduled languages\" are those listed in the Eighth Schedule of India's Constitution.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Google Translate and Cloud Translation</h2>\n<p>For individuals, Google Translate is free on the web and in its apps. For developers, Cloud Translation offers three engines, priced on <a href=\"https://cloud.google.com/translate/pricing\">Google Cloud</a>:</p>\n<ul>\n<li><strong>Neural Machine Translation (NMT):</strong> the first 500,000 characters a month are free (applied as a $10 monthly credit), then $20 per million characters. Document translation of DOCX, PPT and PDF files costs $0.08 a page.</li>\n<li><strong>Translation LLM:</strong> $10 per million input characters plus $10 per million output characters, which Google describes as cost-equivalent to NMT.</li>\n<li><strong>Adaptive translation:</strong> an LLM that adapts to a handful of your example translations, at $25 per million characters in and $25 out.</li>\n</ul>\n<p>Google's <a href=\"https://docs.cloud.google.com/translate/docs/languages\">language list</a> covers more than 190 languages for NMT. The Indian ones are Assamese, Awadhi, Bengali, Bhojpuri, Dogri, Gujarati, Hindi, Kannada, Konkani, Maithili, Malayalam, Marathi, Meiteilon (Manipuri), Mizo, Nepali, Odia, Punjabi, Sanskrit, Sindhi, Tamil, Telugu and Urdu. The newer Translation LLM officially supports a shorter list that includes Hindi, Bengali, Gujarati, Kannada, Malayalam, Marathi, Punjabi, Tamil, Telugu and Urdu.</p>\n<p><strong>Best for:</strong> apps that need the long tail of languages, and teams already on Google Cloud.</p>\n\n<h2>DeepL: strong on business text, patchy on Indian languages</h2>\n<p>DeepL's paid Translator plans, listed on <a href=\"https://www.deepl.com/en/pro\">its pricing page</a> with annual billing in euros, are Individual at €7.49 a month (300,000 characters, 3 file translations), Team at €24.99 per user (1 million characters per user, 20 files), Business at €49.99 per user (unlimited characters under fair use, 100 files, translation memory) and custom-priced Enterprise. The free translator allows 50,000 characters and one file a month. DeepL says Pro content is stored only as long as needed to deliver the service and is never used to train its models.</p>\n<p>The catch for Indian users is in the <a href=\"https://developers.deepl.com/docs/getting-started/supported-languages\">developer documentation</a>. DeepL translates Assamese, Bengali, Gujarati, Hindi, Malayalam, Marathi, Nepali, Punjabi, Sanskrit, Tamil, Telugu and Urdu, but not Kannada or Odia. Glossaries, translation memory, style rules and text improvement aren't available for any of those Indian languages. If you need consistent product terms in Hindi, that's a real limit. DeepL's API pricing is shown in an interactive widget we couldn't verify, so it isn't quoted here.</p>\n<p><strong>Best for:</strong> English to and from European languages, Japanese and Chinese, legal and marketing copy, and teams that need data-handling assurances.</p>\n\n<!-- xf-image-3 -->\n\n<h2>Microsoft Translator: the widest Indian list and the lowest list price</h2>\n<p>Microsoft's <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support\">language table</a> lists Assamese, Bangla, Bhojpuri, Bodo, Chhattisgarhi, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sindhi, Tamil, Telugu and Urdu. LLM-based translation is available for Hindi, Bangla, Gujarati, Kannada, Malayalam, Marathi, Punjabi, Tamil, Telugu and Urdu. Most languages can also run in containers, which suits banks and government projects that can't send text to a public cloud.</p>\n<p>On price, the <a href=\"https://azure.microsoft.com/en-us/pricing/details/translator/\">Azure pricing page</a> gives a free tier of 2 million characters a month. Microsoft's <a href=\"https://prices.azure.com/api/retail/prices?$filter=armRegionName%20eq%20'eastus'%20and%20productName%20eq%20'Translator%20Text'\">retail price feed</a> lists the standard pay-as-you-go S1 tier at $10 per million characters in East US, document translation at $15 per million and custom-model translation at $40 per million.</p>\n<p><strong>Best for:</strong> high-volume text translation on a budget, Microsoft 365 and Azure shops, and regional languages such as Bodo, Dogri and Kashmiri.</p>\n\n<h2>Sarvam AI: built for how Indians actually write</h2>\n<p>Bengaluru's Sarvam AI offers two translation models through one API. According to <a href=\"https://docs.sarvam.ai/api-reference-docs/text/translate-text\">its documentation</a>, <strong>mayura:v1</strong> covers Bengali, English, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil and Telugu with automatic language detection. It offers four output styles: formal, classic-colloquial, modern-colloquial and code-mixed. Code-mixed output blends English words into Hindi or Tamil the way many people text. It accepts up to 1,000 characters per request and can return romanised or native-script text. <strong>sarvam-translate:v1</strong> covers all 22 scheduled Indian languages, including Bodo, Dogri, Kashmiri, Santali and Sanskrit, in formal mode only, with up to 2,000 characters per request.</p>\n<p>Translation and transliteration cost ₹0.005 per character on pay-as-you-go, which works out to ₹5,000 per million characters, falling to ₹0.004 on the Business tier, according to <a href=\"https://www.sarvam.ai/api-pricing\">Sarvam's pricing page</a>. Credits are shared with its speech and LLM APIs and don't expire. Sarvam has also released an open 4-billion-parameter Sarvam-Translate model, built on Google's Gemma 3, under the GPL-3.0 licence. Its <a href=\"https://huggingface.co/sarvamai/sarvam-translate\">model card</a> says it handles English to and from 22 Indian languages, with an 8,000-token context window for long documents. Indic-to-Indic translation has to pivot through English. GPL-3.0 is a copyleft licence, so check its distribution terms with counsel before shipping it inside a product. Sarvam is hiring; see <a href=\"/jobs/company/sarvam-ai/\">Sarvam AI jobs</a>.</p>\n<p><strong>Best for:</strong> customer messages, support chats and marketing aimed at Indian users, where tone and code-mixing matter.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Free and public options: IndicTrans2 and Bhashini</h2>\n<p>AI4Bharat's IndicTrans2 is the strongest free building block. Its 1-billion-parameter English-to-Indic model is released under the MIT licence and covers all 22 scheduled Indian languages, according to its <a href=\"https://huggingface.co/ai4bharat/indictrans2-en-indic-1B\">Hugging Face model card</a>. MIT permits commercial use, so startups can fine-tune it on their own domain data and host it in India.</p>\n<p>The government's Bhashini platform, run by the Digital India Bhashini Division under the Ministry of Electronics and IT, offers language services across 36 text and 23 voice languages, according to a <a href=\"https://www.pib.gov.in/PressReleasePage.aspx?PRID=2239132&reg=3&lang=1\">Press Information Bureau release</a> of 12 March 2026. The release says Bhashini runs more than 350 models, powers over 500 government websites and handles more than 15 million inferences a day. It now also hosts open-sourced Sarvam models. For startups building citizen-facing services, it's worth a look alongside the commercial APIs.</p>\n\n<h2>How to choose an AI translation tool</h2>\n<ul>\n<li><strong>Just need to read or reply to something:</strong> Google Translate (free) or DeepL's free tier.</li>\n<li><strong>Translating an app or website into many languages:</strong> Microsoft Translator at $10 per million characters, or Google NMT if you want Awadhi, Mizo or Sanskrit.</li>\n<li><strong>Brand voice in European markets:</strong> DeepL Team or Business, with glossaries.</li>\n<li><strong>Indian consumers and support teams:</strong> Sarvam Mayura for colloquial and code-mixed output, or sarvam-translate for the less common scheduled languages.</li>\n<li><strong>Sensitive data that must stay in-house:</strong> self-host IndicTrans2 (MIT) or run Microsoft's containers.</li>\n<li><strong>Live calls and events:</strong> DeepL Voice for Hindi and Tamil, OpenAI's gpt-realtime-translate at $0.034 a minute, or Google's live translate beta on Android.</li>\n</ul>\n<p><strong>Bottom line:</strong> No single tool wins every language pair. Build a test set of 50 to 100 real sentences from your own product in each target language, have a native speaker score each engine's output, and pick per language. You may well end up routing Hindi and Tamil to one engine and German or Japanese to another. If you work on language AI, browse our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs</a>.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Frequently asked questions</h2>\n<h3>Is DeepL better than Google Translate for Hindi?</h3>\n<p>DeepL supports Hindi, but without glossaries or translation memory, and it doesn't cover Kannada or Odia. Google and Microsoft cover more Indian languages. Test your own text, since quality varies by domain.</p>\n<h3>Which translator supports all 22 Indian languages?</h3>\n<p>Sarvam's sarvam-translate:v1 and AI4Bharat's IndicTrans2 both cover all 22 scheduled languages. Google and Microsoft each list 22 Indian-language entries, but each misses a few scheduled languages, such as Santali.</p>\n<h3>What is the cheapest translation API?</h3>\n<p>Among the services we checked, Microsoft Translator's S1 tier is $10 per million characters after a 2-million-character free tier, as of 6 October 2026. Google's NMT is $20 per million after 500,000 free characters.</p>\n<h3>Can AI translate Hinglish?</h3>\n<p>Sarvam's mayura:v1 model has a code-mixed output mode that mixes English words into Indian-language text the way people write in chats.</p>\n<h3>Does DeepL use my documents to train its AI?</h3>\n<p>Not on paid Pro plans. DeepL says Pro content is deleted after processing and never used for training.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>DeepL, <a href=\"https://developers.deepl.com/docs/resources/roadmap-and-release-notes\">\"Changelog\"</a>, 1 October 2026</li>\n<li>DeepL, <a href=\"https://developers.deepl.com/docs/getting-started/supported-languages\">\"Supported languages\"</a>, accessed 6 October 2026</li>\n<li>DeepL, <a href=\"https://www.deepl.com/en/pro\">\"DeepL Pro plans and pricing\"</a>, accessed 6 October 2026</li>\n<li>Google Cloud, <a href=\"https://cloud.google.com/translate/pricing\">\"Cloud Translation pricing\"</a>, accessed 6 October 2026</li>\n<li>Google Cloud, <a href=\"https://docs.cloud.google.com/translate/docs/languages\">\"Language support\"</a>, accessed 6 October 2026</li>\n<li>Google, <a href=\"https://blog.google/products/search/gemini-capabilities-translation-upgrades/\">\"Google Translate gets new Gemini AI translation models\"</a>, 12 December 2025</li>\n<li>Microsoft Azure, <a href=\"https://azure.microsoft.com/en-us/pricing/details/translator/\">\"Translator pricing\"</a>, accessed 6 October 2026</li>\n<li>Microsoft, <a href=\"https://prices.azure.com/api/retail/prices?$filter=armRegionName%20eq%20'eastus'%20and%20productName%20eq%20'Translator%20Text'\">\"Azure Retail Prices API: Translator Text, East US\"</a>, accessed 6 October 2026</li>\n<li>Microsoft Learn, <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support\">\"Language support: Translator\"</a>, updated 23 August 2026</li>\n<li>Sarvam AI, <a href=\"https://docs.sarvam.ai/api-reference-docs/text/translate-text\">\"Translate text API reference\"</a>, accessed 6 October 2026</li>\n<li>Sarvam AI, <a href=\"https://www.sarvam.ai/api-pricing\">\"API pricing\"</a>, accessed 6 October 2026</li>\n<li>Hugging Face / Sarvam AI, <a href=\"https://huggingface.co/sarvamai/sarvam-translate\">\"Sarvam-Translate model card\"</a>, accessed 6 October 2026</li>\n<li>Hugging Face / AI4Bharat, <a href=\"https://huggingface.co/ai4bharat/indictrans2-en-indic-1B\">\"IndicTrans2 En-Indic 1B model card\"</a>, accessed 6 October 2026</li>\n<li>Press Information Bureau, <a href=\"https://www.pib.gov.in/PressReleasePage.aspx?PRID=2239132&reg=3&lang=1\">\"Digital India BHASHINI Division: National Hub for Language Technologies Powers End-to-End AI at Population Scale\"</a>, 12 March 2026</li>\n<li>OpenAI, <a href=\"https://developers.openai.com/api/docs/pricing\">\"API pricing\"</a>, accessed 6 October 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Multilingual_notice_in_Bangalore%2C_India.jpg/1920px-Multilingual_notice_in_Bangalore%2C_India.jpg",
+      "alt": "Pharmacy notice in Bengaluru written in Kannada, Telugu, Bengali, English, Hindi and Tamil",
+      "caption": "A pharmacy notice in Bengaluru in six languages. Indian apps often need the same text in several scripts.",
+      "credit": "Photo: SlowPhoton / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Multilingual_notice_in_Bangalore,_India.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Moula_Ali_Railway_Station_Board.jpg/1920px-Moula_Ali_Railway_Station_Board.jpg",
+      "alt": "Station name board of Moula Ali railway station in Hyderabad, Telangana",
+      "caption": "Indian Railways boards show the same name in several scripts.",
+      "credit": "Photo: Vivek Gopu / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Moula_Ali_Railway_Station_Board.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Interpreting_booth_Europa_building%2C_European_Union%2C_Brussels_01.jpg/1920px-Interpreting_booth_Europa_building%2C_European_Union%2C_Brussels_01.jpg",
+      "alt": "Interpreting booth in the European Union's Europa building in Brussels",
+      "caption": "Live AI speech translation now competes with work once done only in interpreting booths like this.",
+      "credit": "Photo: FrDr / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Interpreting_booth_Europa_building,_European_Union,_Brussels_01.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Devanagari_INSCRIPT_Keyboard.JPG/1920px-Devanagari_INSCRIPT_Keyboard.JPG",
+      "alt": "Computer keyboard with Devanagari InScript characters printed on the keys",
+      "caption": "Devanagari typing on an InScript keyboard. Many users type Hindi in Roman script instead, which is why code-mixed translation matters.",
+      "credit": "Photo: Suresh Kumar Shukla / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Devanagari_INSCRIPT_Keyboard.JPG"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Imphal_International_Airport_%28%E2%80%9CImphal_Leikoi_Malang_Hithangpham%E2%80%9D_in_Meitei_language%29_in_Imphal%2C_the_capital_city_of_Manipur_state_of_India_01.jpg/1920px-Imphal_International_Airport_%28%E2%80%9CImphal_Leikoi_Malang_Hithangpham%E2%80%9D_in_Meitei_language%29_in_Imphal%2C_the_capital_city_of_Manipur_state_of_India_01.jpg",
+      "alt": "Imphal International Airport signage showing the airport's name in the Meitei language",
+      "caption": "Manipuri (Meitei) is one of the less common scheduled languages that only some tools cover.",
+      "credit": "Photo: Haoreima / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Imphal_International_Airport_(%E2%80%9CImphal_Leikoi_Malang_Hithangpham%E2%80%9D_in_Meitei_language)_in_Imphal,_the_capital_city_of_Manipur_state_of_India_01.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://developers.deepl.com/docs/resources/roadmap-and-release-notes",
+      "publisher": "DeepL",
+      "date": "2026-10-01",
+      "claim": "Hindi, Tamil, Malay, Catalan, Galician Voice API GA on 1 Oct; external transcription; no auto-detect; 29 Sep document formats beta"
+    },
+    {
+      "url": "https://developers.deepl.com/docs/getting-started/supported-languages",
+      "publisher": "DeepL",
+      "date": "2026-10-06",
+      "claim": "DeepL Indian languages list; no Kannada/Odia; no glossaries etc. for Indian languages"
+    },
+    {
+      "url": "https://www.deepl.com/en/pro",
+      "publisher": "DeepL",
+      "date": "2026-10-06",
+      "claim": "DeepL plan prices and limits; free limits; Pro data not used for training"
+    },
+    {
+      "url": "https://cloud.google.com/translate/pricing",
+      "publisher": "Google Cloud",
+      "date": "2026-10-06",
+      "claim": "NMT free 500k chars then $20/1M; document $0.08/page; Translation LLM $10+$10; adaptive $25+$25"
+    },
+    {
+      "url": "https://docs.cloud.google.com/translate/docs/languages",
+      "publisher": "Google Cloud",
+      "date": "2026-10-06",
+      "claim": "190+ NMT languages; Indian languages; Translation LLM language list"
+    },
+    {
+      "url": "https://blog.google/products/search/gemini-capabilities-translation-upgrades/",
+      "publisher": "Google",
+      "date": "2025-12-12",
+      "claim": "Gemini translation models; live speech translation beta, 70+ languages, US and India"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/pricing/details/translator/",
+      "publisher": "Microsoft Azure",
+      "date": "2026-10-06",
+      "claim": "Translator free tier 2M characters per month"
+    },
+    {
+      "url": "https://prices.azure.com/api/retail/prices?$filter=armRegionName%20eq%20'eastus'%20and%20productName%20eq%20'Translator%20Text'",
+      "publisher": "Microsoft (Azure Retail Prices API)",
+      "date": "2026-10-06",
+      "claim": "S1 $10/1M, document $15/1M, custom $40/1M characters"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support",
+      "publisher": "Microsoft Learn",
+      "date": "2026-08-23",
+      "claim": "Translator Indian languages, LLM translation and container support"
+    },
+    {
+      "url": "https://docs.sarvam.ai/api-reference-docs/text/translate-text",
+      "publisher": "Sarvam AI",
+      "date": "2026-10-06",
+      "claim": "mayura:v1 languages, modes, 1,000 chars; sarvam-translate:v1 22 languages, formal, 2,000 chars"
+    },
+    {
+      "url": "https://www.sarvam.ai/api-pricing",
+      "publisher": "Sarvam AI",
+      "date": "2026-10-06",
+      "claim": "Translation Rs 0.005/char pay-as-you-go, Rs 0.004 Business; universal credits"
+    },
+    {
+      "url": "https://huggingface.co/sarvamai/sarvam-translate",
+      "publisher": "Hugging Face / Sarvam AI",
+      "date": "2026-10-06",
+      "claim": "Sarvam-Translate GPL-3.0, Gemma 3 4B base, 22 Indian languages, English pivot, 8K context"
+    },
+    {
+      "url": "https://huggingface.co/ai4bharat/indictrans2-en-indic-1B",
+      "publisher": "Hugging Face / AI4Bharat",
+      "date": "2026-10-06",
+      "claim": "IndicTrans2 MIT licence, 22 scheduled languages, 1.1B parameters"
+    },
+    {
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2239132&reg=3&lang=1",
+      "publisher": "Press Information Bureau",
+      "date": "2026-03-12",
+      "claim": "Bhashini 36 text/23 voice languages, 350+ models, 500+ websites, 15M daily inferences, Sarvam models"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-06",
+      "claim": "gpt-realtime-translate $0.034 per minute"
+    }
+  ]
+}

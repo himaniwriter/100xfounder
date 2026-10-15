@@ -1,0 +1,175 @@
+{
+  "type": "post",
+  "slug": "how-to-get-a-job-at-sarvam-ai",
+  "title": "How to Get a Job at Sarvam AI in 2026: Roles, Process and Tips",
+  "excerpt": "Where Sarvam AI is hiring in October 2026, what its job posts ask for, what candidates report about build-style interviews and how to stand out.",
+  "category": "careers-salary",
+  "tags": [
+    "Sarvam AI",
+    "AI jobs",
+    "Bengaluru jobs",
+    "how to apply",
+    "interview process",
+    "sovereign AI",
+    "careers"
+  ],
+  "content": "<p>To get a job at Sarvam AI in 2026, apply through its own careers page, which lists every opening on an Ashby job board. On 4 October 2026 the board had 59 roles, almost all full-time and on-site in Bengaluru or Delhi. Candidates say Sarvam tests what you can build more than puzzle-solving. 100Xfounder is an independent site and is not affiliated with or endorsed by Sarvam. This guide covers where the company is hiring, what its job posts ask for, what candidates report about interviews and how to prepare.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>Sarvam's public Ashby board listed 59 open roles on 4 October 2026: 50 in Bengaluru and 9 in Delhi, all marked on-site.</li>\n<li>Engineering is the biggest group (17 roles). Sales and go-to-market, product, marketing, infrastructure, deployment engineering and model research follow.</li>\n<li>Eleven roles belong to \"Chanakya\", a vertical that sells to defence and strategic-sector clients and deploys to air-gapped and on-prem systems.</li>\n<li>Candidate reports describe practical build rounds and project deep dives rather than LeetCode-style coding tests. These are individual accounts, not an official process.</li>\n<li>Most posts ask for three or more years of experience. Junior candidates have a better shot at internships, developer relations and some research roles.</li>\n</ul>\n\n<h2>What Sarvam does and why it is hiring</h2>\n<p>Sarvam was founded in August 2023 by Vivek Raghavan and Pratyush Kumar, according to the <a href=\"https://www.sarvam.ai/about-us\">company's about page</a>. The page describes the goal as an AI platform \"developed, deployed, and governed entirely in India\". The company works across foundation models, inference infrastructure and products for businesses, developers and government.</p>\n<p>The past 18 months explain the hiring push. In April 2025 the government chose Sarvam from 67 applicants to build a sovereign large language model (LLM) under the IndiaAI Mission, with access to about 4,000 GPUs, <a href=\"https://www.medianama.com/2025/04/223-india-sovereign-llm-sarvam-ai-government-funding-not-open-source-but-proprietary/\">MediaNama reported</a>. On 18 February 2026, at the India AI Impact Summit, Sarvam launched two models it says it trained from scratch: Sarvam-30B and Sarvam-105B, according to <a href=\"https://www.businesstoday.in/tech-today/story/sarvam-ai-launches-30b-and-105b-open-source-models-516729-2026-02-18\">Business Today</a>. Two days later it released Indus, a chat app in beta, <a href=\"https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/\">TechCrunch reported</a>.</p>\n<p>Then the money arrived. On 15 June 2026 Sarvam raised $234 million in the first close of a Series B round at a $1.5 billion post-money valuation, with HCLTech putting in $150 million, according to <a href=\"https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/\">TechCrunch</a>. Before that it had raised $41 million across its seed and Series A rounds. TechCrunch reported that the new money would fund research into next-generation models for agentic AI, coding and cybersecurity, plus more compute. Of the 59 roles open on 4 October, 27 were posted after that round closed.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Where Sarvam is hiring right now</h2>\n<p>Sarvam's <a href=\"https://www.sarvam.ai/careers\">careers page</a> links to a single job board. It names two offices: Indiranagar in Bengaluru, and Delhi. We pulled the list from <a href=\"https://api.ashbyhq.com/posting-api/job-board/sarvam\">Sarvam's public Ashby job board</a> on 4 October 2026. Here is how the 59 roles split by department:</p>\n<table>\n<thead><tr><th>Department</th><th>Open roles</th><th>Examples</th></tr></thead>\n<tbody>\n<tr><td>Engineering</td><td>17</td><td>Backend, frontend, staff platform and data engineers, security, vision research</td></tr>\n<tr><td>Sales/GTM</td><td>9</td><td>Solution architects, account manager, partnerships lead, GTM for the Model API</td></tr>\n<tr><td>Product</td><td>8</td><td>PMs for growth, monetisation, models, on-device AI, Sarvam Studio; product designer</td></tr>\n<tr><td>Marketing</td><td>8</td><td>Product marketing, growth marketing, motion and visual design, two internships</td></tr>\n<tr><td>Infrastructure</td><td>7</td><td>Performance engineers for GPU kernels and inference, HPC SRE, DevOps</td></tr>\n<tr><td>Deployment Engineering</td><td>4</td><td>Agent engineer, deployment strategist, strategic deployment engineer</td></tr>\n<tr><td>Models</td><td>3</td><td>ML researcher and ML engineer (data) for foundation models; PM for Model APIs</td></tr>\n<tr><td>Other</td><td>3</td><td>Business development, IT lead, developer relations</td></tr>\n</tbody>\n</table>\n<p>Every role on the board was marked on-site, and 50 of the 59 were in Bengaluru. If you want to stay remote, Sarvam is a poor fit right now. On 4 October, eight of the nine Delhi roles sat inside the Chanakya vertical.</p>\n<p>You can browse the same openings, refreshed from the official feed, on our <a href=\"/jobs/company/sarvam-ai/\">Sarvam AI jobs page</a>. For similar roles at other companies, see <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs</a>.</p>\n\n<h3>What \"Chanakya\" roles involve</h3>\n<p>Chanakya is a separate vertical with its own engineers, data scientists, product manager and client-facing staff. The <a href=\"https://jobs.ashbyhq.com/sarvam/3e3b1ad5-99bb-42e6-9093-8953b89e552b\">Engagement Principal posting</a> says the team serves defence and strategic-sector clients. It wants people who understand defence procurement and can work with command-level stakeholders. The <a href=\"https://jobs.ashbyhq.com/sarvam/87d5a5af-ea7d-4b94-a0fa-81dc64e54907\">Strategic Deployment Engineer posting</a> says engineers there deploy Sarvam's stack in \"air-gapped, classified, and on-prem environments\". If you have worked with government, public-sector undertakings (PSUs) or regulated infrastructure, these roles fit you better than the core product teams.</p>\n\n<h2>What Sarvam looks for</h2>\n<p>Sarvam has no public \"how we hire\" page. Its job posts, though, say a lot about the bar. A few themes come up again and again.</p>\n<h3>Production experience over credentials</h3>\n<p>The <a href=\"https://jobs.ashbyhq.com/sarvam/36f89b00-2010-4d23-aae3-17a2f53d9eaa\">Agent Engineer posting</a> says it is hiring at several levels from three years of experience. It adds that years matter less than whether you have built something real users relied on and kept it working. The post treats AI agents as engineered code: versioned, reviewed and covered by tests, with evaluations that catch quality drift. Expect questions about how you would know a system had broken, not only how you built it.</p>\n<h3>Numbers you can defend</h3>\n<p>The product posts are blunt. The <a href=\"https://jobs.ashbyhq.com/sarvam/929e2e12-7a2f-4e28-9d27-f220910b2125\">Product Manager, Growth posting</a> asks for five or more years in product, with two to three of them owning growth or activation. It wants candidates who can describe one activation metric they moved: the baseline, what they shipped, and what did and did not work. It also expects PMs to write SQL themselves rather than wait for a data team.</p>\n<h3>Depth in one area, range across others</h3>\n<p>Research and infrastructure posts look for specialists. The <a href=\"https://jobs.ashbyhq.com/sarvam/255816b4-c44d-481c-a093-73ae114d1952\">Researcher, Vision posting</a> asks for a record of good research through papers, technical reports or shipped work. It lists a PhD or master's and papers at top venues as bonuses, not requirements. The <a href=\"https://jobs.ashbyhq.com/sarvam/e1dd678f-6e25-48b4-82d8-a1a7d10a78d6\">HPC infrastructure SRE post</a> says Sarvam wants \"a team of specialists rather than a set of identical generalists\", each with real depth in one area.</p>\n<h3>AI-first habits</h3>\n<p>Even the <a href=\"https://jobs.ashbyhq.com/sarvam/ef7f079b-6a1f-4b27-9cfb-a5f68fe825c7\">Marketing Intern posting</a> asks for fluency with modern AI tools and the ability to build workflows and automations with them. It invites applicants to attach work samples. The company describes its culture in the same posts: \"Everything we do is AI-first\", plus high ownership from the first day and a team that holds each other to a high bar.</p>\n\n<!-- xf-image-3 -->\n\n<h2>The hiring process: what we know and what candidates report</h2>\n<p>Sarvam has not published a standard interview loop, and it likely differs by team. Here is what is confirmed: you apply on the Ashby board, and every posting is full-time and on-site in a named city. Everything below comes from <strong>candidate reports</strong>. Treat these as one person's experience, not a guarantee.</p>\n<ol>\n<li><strong>Application and screening.</strong> One fresher, writing on <a href=\"https://devsunite.com/blog/getting-hired-at-sarvam-ai-my-fresher-interview-story\">Devs Unite</a> in September 2026, described a 30-minute first call. It was mostly a technical walk-through of their GitHub projects, with questions on design choices.</li>\n<li><strong>A practical build round.</strong> The same candidate reported a timed, proctored round of about two hours to build a small multilingual feature, with AI tools and outside resources allowed. A 2024 machine-learning engineer report on <a href=\"https://www.teamblind.com/post/sarvam-ai-mle-interview-experience-0p1vfx8n\">Blind</a> describes a 2.5-hour on-site screening task to build a speech component from scratch. External APIs were not allowed.</li>\n<li><strong>A technical defence or deep dive.</strong> The 2026 candidate said two engineers reviewed the code and asked how it would change with more languages or more data. The 2024 report describes an interview led by a team head that covered ML fundamentals, transformer architecture, a small coding task and Sarvam's own models.</li>\n<li><strong>Hiring manager conversation.</strong> The 2026 candidate described the last round as a conversation about motivation and approach, not more code.</li>\n</ol>\n<p>Both reports say no data structures and algorithms (DSA) round was asked. The 2026 candidate said the whole process took about three weeks from first call to offer. That is one data point. Senior, research and Chanakya roles may run differently.</p>\n\n<h3>Interview focus by role</h3>\n<p>Without an official loop, the best guide to each interview is the job post. Here is what to prepare, based on what each team says it needs.</p>\n<ul>\n<li><strong>Engineering and infrastructure:</strong> be ready to discuss reliability, idempotency, back-pressure, observability and cost. Performance posts such as the <a href=\"https://jobs.ashbyhq.com/sarvam/72783205-b637-4431-9a0e-676a8223b063\">GPU kernels role</a> name specific open-source projects, such as FlashAttention and vLLM. Know the ones named in your role.</li>\n<li><strong>Models and research:</strong> expect deep questions on training, evaluation and failure modes. Bring a paper, technical report or shipped model you can explain end to end.</li>\n<li><strong>Deployment and agent engineering:</strong> prepare a story about integrating AI into a messy legacy system, such as core banking or a government workflow. Explain how you measured whether it worked.</li>\n<li><strong>Product:</strong> bring before-and-after metrics, the experiments you ran and what you killed.</li>\n<li><strong>GTM, sales and Chanakya:</strong> prepare examples of enterprise or public-sector deals, RFP responses and proofs of concept you scoped.</li>\n</ul>\n\n<!-- xf-image-4 -->\n\n<h2>How to stand out</h2>\n<ol>\n<li><strong>Build something with Indian languages.</strong> Sarvam's whole pitch is AI that works for India. A public project that handles Hindi, Tamil, Kannada or another Indian language, with notes on what broke, speaks directly to the work. In the 2026 candidate report, the first call centred on a project like this.</li>\n<li><strong>Use Sarvam's own products before you apply.</strong> Its 30B and 105B models and the Indus app are public. Being able to say where they worked and failed for your use case is far more useful than generic enthusiasm.</li>\n<li><strong>Show evaluations, not demos.</strong> The agent and product posts stress measuring quality. Show the test set, metric or dashboard behind your project.</li>\n<li><strong>Match the experience band honestly.</strong> Most roles ask for three to ten years. If you are early in your career, look at the internships, the <a href=\"https://jobs.ashbyhq.com/sarvam/730c1766-ad62-4d5d-aa75-b5b0e03409aa\">Developer Relations Engineer</a> role (one to three years) and research roles that value strong shipped work.</li>\n<li><strong>Attach work samples where asked.</strong> Several marketing and design posts ask for them directly.</li>\n<li><strong>Be ready to move.</strong> Every role is on-site. If you would need to relocate to Bengaluru or Delhi, plan for it and say so plainly.</li>\n</ol>\n\n<h2>Referrals, pay and offers</h2>\n<p>Sarvam does not publish a referral programme or salary bands on its careers page. The postings we reviewed carried no pay ranges. Some product posts list \"competitive cash, meaningful equity, top-tier health insurance\" and a Bangalore office. One adds that internal hackathon winners get a PS5. Figures you see on job forums and careers sites are not confirmed by the company, so we have left them out.</p>\n<p>If you get an offer, work out the monthly take-home before you compare it with your current pay. In India, salaries are usually quoted as a yearly CTC (cost to company) in lakhs per annum (LPA; one lakh is ₹100,000). Our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a> converts CTC to take-home pay. If you are serving a notice period, the <a href=\"/tools/notice-period-buyout-calculator/\">notice period buyout calculator</a> helps you estimate the cost of leaving early. Tax rules change, so confirm the details with a qualified tax professional.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>Sarvam is one of the few Indian companies training large foundation models from scratch, and it now has unicorn-scale funding to hire. The bar in its job posts is high and practical: real production work, measured results and depth in one area. If you can show that, ideally on something built for Indian languages, you have a real case. If you need remote work or are looking for your first job outside an internship, the current openings will be harder to land.</p>\n\n<h2>FAQ</h2>\n<h3>Does Sarvam AI hire freshers?</h3>\n<p>Some, but few. On 4 October 2026 the board had two marketing internships, and one 2026 candidate report describes a fresher hire. Most full-time posts ask for three or more years of experience.</p>\n<h3>Is Sarvam AI remote-friendly?</h3>\n<p>Not for current openings. All 59 roles on its Ashby board were marked on-site, in Bengaluru or Delhi.</p>\n<h3>Does Sarvam ask LeetCode or DSA questions?</h3>\n<p>The candidate reports we found say there was no DSA round. They describe practical build tasks and deep technical discussions instead. Sarvam has not published an official format, and it may differ by role.</p>\n<h3>How long does Sarvam's hiring process take?</h3>\n<p>One candidate reported about three weeks from first call to offer. The company does not publish a timeline.</p>\n<h3>Where do I apply?</h3>\n<p>Use the official <a href=\"https://www.sarvam.ai/careers\">Sarvam careers page</a>, which links to its Ashby job board, or browse our <a href=\"/jobs/company/sarvam-ai/\">Sarvam AI jobs page</a>. Never pay anyone for a referral or interview slot.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Sarvam, <a href=\"https://www.sarvam.ai/careers\">\"Careers\"</a>, accessed 4 October 2026</li>\n<li>Sarvam (Ashby job board API), <a href=\"https://api.ashbyhq.com/posting-api/job-board/sarvam\">\"Sarvam job board postings\"</a>, accessed 4 October 2026</li>\n<li>Sarvam, <a href=\"https://www.sarvam.ai/about-us\">\"About us\"</a>, accessed 4 October 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/36f89b00-2010-4d23-aae3-17a2f53d9eaa\">\"Agent Engineer\"</a>, 20 August 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/929e2e12-7a2f-4e28-9d27-f220910b2125\">\"Product Manager, Growth\"</a>, 25 May 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/6390e602-7b98-4700-baa9-ced5be8b1651\">\"Product Manager, Monetization &amp; Retention\"</a>, 25 May 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/3e3b1ad5-99bb-42e6-9093-8953b89e552b\">\"Engagement Principal, Chanakya\"</a>, 17 April 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/87d5a5af-ea7d-4b94-a0fa-81dc64e54907\">\"Strategic Deployment Engineer, Chanakya\"</a>, 17 April 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/255816b4-c44d-481c-a093-73ae114d1952\">\"Researcher, Vision\"</a>, 17 April 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/e1dd678f-6e25-48b4-82d8-a1a7d10a78d6\">\"Infrastructure SRE - HPC\"</a>, 26 June 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/72783205-b637-4431-9a0e-676a8223b063\">\"Performance Engineer, Kernels\"</a>, 10 August 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/730c1766-ad62-4d5d-aa75-b5b0e03409aa\">\"Developer Relations Engineer - Developer Advocate\"</a>, 5 August 2026</li>\n<li>Sarvam (Ashby), <a href=\"https://jobs.ashbyhq.com/sarvam/ef7f079b-6a1f-4b27-9cfb-a5f68fe825c7\">\"Marketing Intern\"</a>, 17 September 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/\">\"Sarvam becomes India's newest AI unicorn with $234 million funding round led by HCLTech\"</a>, 15 June 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/\">\"India's Sarvam launches Indus AI chat app as competition heats up\"</a>, 20 February 2026</li>\n<li>Business Today, <a href=\"https://www.businesstoday.in/tech-today/story/sarvam-ai-launches-30b-and-105b-open-source-models-516729-2026-02-18\">\"Sarvam AI launches 30B and 105B open source models\"</a>, 18 February 2026</li>\n<li>MediaNama, <a href=\"https://www.medianama.com/2025/04/223-india-sovereign-llm-sarvam-ai-government-funding-not-open-source-but-proprietary/\">\"IndiaAI Mission funds Sarvam AI to develop sovereign LLM\"</a>, 29 April 2025</li>\n<li>Blind (candidate report), <a href=\"https://www.teamblind.com/post/sarvam-ai-mle-interview-experience-0p1vfx8n\">\"Sarvam AI MLE interview experience\"</a>, 13 June 2024</li>\n<li>Devs Unite (candidate report), <a href=\"https://devsunite.com/blog/getting-hired-at-sarvam-ai-my-fresher-interview-story\">\"Getting hired at Sarvam AI: my fresher interview story\"</a>, 1 September 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Bengaluru_Skyline_from_Tata_Promont.jpg/1920px-Bengaluru_Skyline_from_Tata_Promont.jpg",
+      "alt": "Bengaluru skyline with high-rise buildings seen from the Tata Promont towers",
+      "caption": "Most of Sarvam's open roles are in Bengaluru, where the company is headquartered.",
+      "credit": "Photo: Kushagra140 / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bengaluru_Skyline_from_Tata_Promont.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_002.png/1920px-NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_002.png",
+      "alt": "Close-up of an NVIDIA H100 data-centre GPU module",
+      "caption": "Under the IndiaAI Mission, Sarvam was given access to thousands of GPUs to train its models.",
+      "credit": "Photo: 极客湾Geekerwan / Wikimedia Commons, CC BY 3.0",
+      "license": "CC BY 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:NVIDIA_H100_(%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan)_002.png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Indiranagar_Shopping_Hundred_Feet_Road%2C_Indiranagar_Bangalore_by_night.JPG/1920px-Indiranagar_Shopping_Hundred_Feet_Road%2C_Indiranagar_Bangalore_by_night.JPG",
+      "alt": "Shops lit up at night on Hundred Feet Road in Indiranagar, Bengaluru",
+      "caption": "Sarvam's Bengaluru office is in Indiranagar, and every role on its board is on-site.",
+      "credit": "Photo: Indiranagar Seller / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Indiranagar_Shopping_Hundred_Feet_Road,_Indiranagar_Bangalore_by_night.JPG"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/M.G_Road_Metro%2C_Bengaluru.jpg/1920px-M.G_Road_Metro%2C_Bengaluru.jpg",
+      "alt": "M.G. Road metro station in Bengaluru with an elevated track and station signage",
+      "caption": "Public projects that handle Indian languages give candidates something concrete to discuss.",
+      "credit": "Photo: Sahilrathod / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:M.G_Road_Metro,_Bengaluru.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Connaught_Place%2C_New_Delhi_at_night.jpg/1920px-Connaught_Place%2C_New_Delhi_at_night.jpg",
+      "alt": "Colonnaded white buildings of Connaught Place in New Delhi lit up at night",
+      "caption": "Sarvam's Delhi openings sit mostly in its Chanakya vertical for strategic-sector clients.",
+      "credit": "Photo: Slyronit / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Connaught_Place,_New_Delhi_at_night.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.sarvam.ai/careers",
+      "publisher": "Sarvam",
+      "date": "2026-10-04",
+      "claim": "Single job board; Bengaluru (Indiranagar) and Delhi offices; roles full-time and on-site"
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/sarvam",
+      "publisher": "Sarvam (Ashby job board API)",
+      "date": "2026-10-04",
+      "claim": "59 open roles; department, location (50 Bengaluru, 9 Delhi), on-site, Chanakya counts, posting dates, experience bands"
+    },
+    {
+      "url": "https://www.sarvam.ai/about-us",
+      "publisher": "Sarvam",
+      "date": "2026-10-04",
+      "claim": "Founded August 2023 by Vivek Raghavan and Pratyush Kumar; mission of AI developed, deployed and governed in India"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/36f89b00-2010-4d23-aae3-17a2f53d9eaa",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-08-20",
+      "claim": "Agent Engineer: hiring from 3+ years; agents as code with evals; what matters more than years"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/929e2e12-7a2f-4e28-9d27-f220910b2125",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-05-25",
+      "claim": "PM Growth: 5+ years, 2-3 in growth; moved an activation metric; SQL; competitive cash, equity, health insurance"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/6390e602-7b98-4700-baa9-ced5be8b1651",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-05-25",
+      "claim": "Perks incl. Bangalore office and PS5 for internal hackathon winners"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/3e3b1ad5-99bb-42e6-9093-8953b89e552b",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-04-17",
+      "claim": "Chanakya vertical serves defence and strategic-sector clients; procurement knowledge"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/87d5a5af-ea7d-4b94-a0fa-81dc64e54907",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-04-17",
+      "claim": "Chanakya deployments in air-gapped, classified and on-prem environments"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/255816b4-c44d-481c-a093-73ae114d1952",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-04-17",
+      "claim": "Researcher, Vision: research track record; PhD/papers as bonus"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/e1dd678f-6e25-48b4-82d8-a1a7d10a78d6",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-06-26",
+      "claim": "Team of specialists rather than identical generalists"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/72783205-b637-4431-9a0e-676a8223b063",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-08-10",
+      "claim": "GPU kernels role names open-source projects such as FlashAttention and vLLM"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/730c1766-ad62-4d5d-aa75-b5b0e03409aa",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-08-05",
+      "claim": "Developer Relations Engineer asks for 1-3 years"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/sarvam/ef7f079b-6a1f-4b27-9cfb-a5f68fe825c7",
+      "publisher": "Sarvam (Ashby)",
+      "date": "2026-09-17",
+      "claim": "Marketing Intern: AI tool fluency, work samples; 'Everything we do is AI-first', ownership culture"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/",
+      "publisher": "TechCrunch",
+      "date": "2026-06-15",
+      "claim": "$234M first close of Series B at $1.5B post-money; HCLTech $150M; $41M raised previously; use of funds"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/",
+      "publisher": "TechCrunch",
+      "date": "2026-02-20",
+      "claim": "Indus chat app launched in beta"
+    },
+    {
+      "url": "https://www.businesstoday.in/tech-today/story/sarvam-ai-launches-30b-and-105b-open-source-models-516729-2026-02-18",
+      "publisher": "Business Today",
+      "date": "2026-02-18",
+      "claim": "Sarvam-30B and Sarvam-105B launched at India AI Impact Summit, trained from scratch"
+    },
+    {
+      "url": "https://www.medianama.com/2025/04/223-india-sovereign-llm-sarvam-ai-government-funding-not-open-source-but-proprietary/",
+      "publisher": "MediaNama",
+      "date": "2025-04-29",
+      "claim": "Selected from 67 applicants under IndiaAI Mission; about 4,000 GPUs"
+    },
+    {
+      "url": "https://www.teamblind.com/post/sarvam-ai-mle-interview-experience-0p1vfx8n",
+      "publisher": "Blind (candidate report)",
+      "date": "2024-06-13",
+      "claim": "MLE candidate report: 2.5-hour on-site build task, technical interview, no DSA"
+    },
+    {
+      "url": "https://devsunite.com/blog/getting-hired-at-sarvam-ai-my-fresher-interview-story",
+      "publisher": "Devs Unite (candidate report)",
+      "date": "2026-09-01",
+      "claim": "Fresher candidate report: screening call, proctored build round, technical defence, hiring manager round; about three weeks"
+    }
+  ]
+}

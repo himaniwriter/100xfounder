@@ -1,0 +1,91 @@
+{
+ "input": "https://www.producthunt.com/posts/zenabm-create-linkedin-ads-with-ai",
+ "final_url": "https://www.producthunt.com/products/zena-by-zenabm-linkedin-ads-ai-chatbot?launch=zenabm-create-linkedin-ads-with-ai",
+ "launch": {
+  "slug": "zenabm",
+  "name": "ZenABM",
+  "featuredAt": "2026-09-29T00:01:00-07:00",
+  "dailyRank": "3",
+  "points": 270,
+  "commentsCount": 72,
+  "makers": [
+   {
+    "name": "Michal Jackowski",
+    "username": "mjackowski",
+    "headline": "Founder @ ZenABM"
+   },
+   {
+    "name": "Emilia Korczyńska",
+    "username": "emilia_korczynska1",
+    "headline": "Co-founder @ ZenABM"
+   },
+   {
+    "name": "Nihal Ahamed",
+    "username": "nihal_ahamed1",
+    "headline": "Growth Marketer - Stitchflow "
+   }
+  ],
+  "source": "launches page, matched by date and tagline (no gallery/comments)"
+ },
+ "product": {
+  "name": "ZenABM",
+  "slug": "zena-by-zenabm-linkedin-ads-ai-chatbot",
+  "tagline": "Create, optimise & analyse LinkedIn Ads from any AI tool ",
+  "description": "Ditch copy-pasting into Campaign Manager! Create, launch & optimize your LinkedIn Ad Campaigns from your favourite AI tool (Claude, ChatGPT, Perplexity etc.) with ZenABM’s MCP server or natively with our AI Agent Zena - both equipped with 20+ expert skills and 96 tools! \n\n+Automate your reporting (including company engagements & revenue attribution with weekly & monthly reports produced by our AI Agents Zena. \n",
+  "websiteUrl": "https://zenabm.com/ai?utm_source=ph&utm_medium=launch&utm_campaign=create-launch-linkedin-ads-ai",
+  "reviewsCount": 4,
+  "reviewsRating": 5,
+  "followersCount": 624,
+  "twitterUrl": "https://x.com/_zenabm",
+  "linkedinUrl": "https://www.linkedin.com/company/zenabm",
+  "instagramUrl": "",
+  "githubUrl": "",
+  "postsCount": 2,
+  "screenshots": [
+   "https://ph-files.imgix.net/31808d41-258c-499c-98a6-242e5abdc873.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/9f1f13e7-600f-4157-888e-b31eb801e4e7.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/d5db059a-cce9-4415-96c0-912b14052145.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/0a93d6f1-1f83-42d9-8532-8a93fcae914b.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/dd95e08d-0f61-491b-8571-fa95ae37632f.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/c7d6e2d9-0dff-47d0-8a9b-3db1c7dbe36b.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "adomate",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/adomate",
+  "excerpt": "Adomate turns Meta ad data, competitor ads and customer reviews into ad concepts through workflows you build, each traceable to the data that triggered it. Pricing, alternatives and launch comments.",
+  "content": "<p>Adomate is a platform for making paid social ad creatives from data. It pulls in your own Meta ad account, competitors' ads from the Meta Ad Library and customer reviews from Trustpilot and Amazon. You then build workflows, starting from more than 20 templates, that turn a chosen data point (a winning ad, a competitor pattern or a single review) into branded ad concepts. You review the concepts on a board, like or skip them so it learns your taste, edit them in place and publish straight to Meta. Its main selling point is traceability: every concept links back to the data that triggered it.</p><p>Co-founders Simon Logghe (CEO) and Lucas Desard (CTO) first ran it as a service, making Meta ad creatives by hand for direct-to-consumer brands in Belgium and the Netherlands, according to Logghe's Product Hunt post. The company behind it is Whitespace BV of Ghent, Belgium, according to its privacy policy. Adomate launched on Product Hunt on 27 July 2026 and finished #1 for the day with 519 points and 109 comments.</p><p><em>We have not tested Adomate ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Ad creative",
+    "platform": "Web app",
+    "starts_at": "Free first ads, then from $99/month (annual) or $119/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Builds Meta ad concepts from ad data, competitor ads and reviews, each traceable to its source",
+    "maker": {"name": "Simon Logghe", "url": "https://www.producthunt.com/@s_logghe"},
+    "team": [
+      {"name": "Simon Logghe", "role": "CEO & Co-founder", "url": "https://www.producthunt.com/@s_logghe"},
+      {"name": "Lucas Desard", "role": "CTO & Co-founder", "url": "https://www.producthunt.com/@lucas_desard"}
+    ],
+    "ph": {"rank": 1, "votes": 519, "comments": 109, "followers": 1072, "launched": "2026-07-27", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/cb2c9bab-22c9-40c4-83c4-3bedf88219f1.png?auto=format&fit=max&w=1400", "w": 3810, "h": 2280,
+       "alt": "Adomate diagram: brand inputs and data sources (Meta ad account, Trustpilot, Amazon reviews, Meta Ad Library) feeding into generated ad creatives", "credit": "Image: Adomate via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/92c85e71-f4e1-4a58-8531-438f1ab4010f.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Adomate set-up steps: a Brand Brain and product catalogue, then a visual workflow editor that selects ads and schedules concept generation", "credit": "Image: Adomate via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/315350c2-bd58-4323-92b4-bb99c4f76e3f.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Adomate dataset of competitor skincare ads with filters, and an 'Enrich with AI' dialog adding a custom column", "credit": "Image: Adomate via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "run paid social on Meta for a direct-to-consumer brand and spend much of your week on creative research",
+        "want to see exactly which ad, metric or review an AI-generated concept came from",
+        "are an agency handling creative for several brands (the Agency plan covers up to 15)"
+      ],
+      "not_fit": [
+        "advertise mainly on LinkedIn or Google: data sources and publishing are Meta-centred today, and the founder called B2B sources a roadmap item",
+        "have a very small budget: paid plans start at $99 a month on annual billing",
+        "need video briefs today: the founder said at launch that video brief generation is on the roadmap"
+      ]
+    },
+    "pricing": {
+      "intro": "Adomate starts free, then has four plans. Prices shown on its site in dollars; quarterly billing saves 5% and annual billing gives 12 months for the price of 10.",
+      "url": "https://www.adomate.com/pricing",
+      "plans": [
+        {"name": "Free start", "price": "$0", "amount": 0, "currency": "USD", "detail": "Sign-up and onboarding free, first ads free (the home page says up to 40), no credit card"},
+        {"name": "Starter", "price": "$119/month", "amount": 119, "currency": "USD", "detail": "$99/month billed annually. Up to 140 ads a month (2,800 credits), 1 brand profile, 5 tracked competitors, Meta Ad Manager integration, unlimited seats"},
+        {"name": "Growth", "price": "$349/month", "amount": 349, "currency": "USD", "detail": "$291/month billed annually. Up to 500 ads a month, 5 brand profiles, 10 competitors, 10 brands tracked on Trustpilot, custom AI filters"},
+        {"name": "Agency", "price": "$1,799/month", "amount": 1799, "currency": "USD", "detail": "$1,499/month billed annually. Up to 2,500 ads a month, 15 brand profiles, unlimited competitors"},
+        {"name": "Scale", "price": "$2,999/month", "amount": 2999, "currency": "USD", "detail": "$2,499/month billed annually. Up to 5,000 ads a month, unlimited brand profiles, dedicated support"}
+      ],
+      "notes": [
+        "Credits: 20 credits make one ad, 1 credit scrapes 5 competitor ads or activates 25 data enrichments. Scraping your data is free.",
+        "When credits run out, generation pauses until you top up or the plan renews; data is kept.",
+        "Enterprise and white-label terms are by arrangement."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Creatify", "url": "https://creatify.ai/", "what": "AI video ad maker with avatars, URL-to-video, ad cloning and a competitor tracker", "starts_at": "See its pricing page",
+         "ph_rating": 4.3, "ph_reviews": 54,
+         "difference": "Strong on generating video ads. Adomate focuses on data-led concepts (mostly static) with a trace back to the triggering data point."},
+        {"name": "ADYOUNEED", "url": "https://www.adyouneed.com/", "what": "Platform to create and optimise ads, plus a hands-off managed service", "starts_at": "See its pricing page",
+         "ph_rating": 4.31, "ph_reviews": 36,
+         "difference": "Offers a managed service where its team runs campaigns. Adomate is self-serve and you build your own workflows."},
+        {"name": "IMGPT", "url": "https://www.img-pt.com/", "what": "Builds a brand profile from your website, generates Meta ads and runs the campaign", "starts_at": "No card to start; see its pricing page",
+         "ph_rating": 4.6, "ph_reviews": 5,
+         "difference": "Aims to automate the whole campaign. Adomate keeps the strategist in charge of which data drives each concept."}
+      ],
+      "more": "Product Hunt also lists Creatopy and GoMarble as alternatives."
+    },
+    "reviews": {"count": 1, "rating": 4, "url": "https://www.producthunt.com/products/adomate/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/adomate",
+      "quotes": [
+        {"author": "Artem Fedorovich", "text": "Generating 40 ad variants is easy; knowing which three to fund is the call agencies charge for.",
+         "reply": "Simon Logghe: spend data is one of the three data sources, so variants are only made from proven winners."},
+        {"author": "Akbar B", "text": "when a concept links back to a data trigger, does it point to the exact source item?",
+         "reply": "Simon Logghe: yes, generation currently starts from a single data point, such as one review; aggregated insights are on the roadmap."},
+        {"author": "Ridhwik Vinod", "text": "could this work for B2B where the ad account is LinkedIn and the reviews live on G2?",
+         "reply": "Simon Logghe: other platforms and data sources are on the roadmap; DTC was the first target."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=adomate&f=live"}
+    },
+    "faq": [
+      {"q": "What is Adomate?", "a": "A platform that turns Meta ad performance data, competitor ads and Trustpilot or Amazon reviews into ad concepts through workflows you set up, with each concept traceable to its source. It launched on Product Hunt on 27 July 2026."},
+      {"q": "How much does Adomate cost?", "a": "You can start free and your first ads are free. Paid plans run from Starter at $119 a month ($99 a month billed annually) to Scale at $2,999 a month."},
+      {"q": "What is a credit?", "a": "Adomate's metered unit: 20 credits generate one ad, one credit scrapes five competitor ads or activates 25 data enrichments. Scraping your data is free."},
+      {"q": "Can Adomate publish ads?", "a": "Yes. Its site says you can push approved concepts live to Meta in one click."},
+      {"q": "Does it work for B2B or LinkedIn ads?", "a": "Not yet. At launch the CEO said other platforms and B2B data sources are on the roadmap."},
+      {"q": "Who is behind Adomate?", "a": "Co-founders Simon Logghe (CEO) and Lucas Desard (CTO). The company is Whitespace BV, based in Ghent, Belgium, according to the privacy policy."}
+    ],
+    "sources": [
+      {"label": "Adomate official site", "url": "https://www.adomate.com/"},
+      {"label": "Adomate pricing", "url": "https://www.adomate.com/pricing"},
+      {"label": "About Adomate", "url": "https://www.adomate.com/about"},
+      {"label": "Adomate privacy policy", "url": "https://www.adomate.com/privacy-policy"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/adomate"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/adomate"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/adomate/alternatives"},
+      {"label": "Creatify", "url": "https://creatify.ai/"},
+      {"label": "ADYOUNEED", "url": "https://www.adyouneed.com/"},
+      {"label": "IMGPT", "url": "https://www.img-pt.com/"}
+    ]
+  }
+}

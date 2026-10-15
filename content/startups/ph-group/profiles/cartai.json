@@ -1,0 +1,99 @@
+{
+  "slug": "cartai",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/cartai",
+  "excerpt": "CartAI is a developer API whose AI agent completes real checkouts on live merchant websites, with no integration needed on the merchant's side, and pays through Visa and Mastercard agent rails. What it does, alternatives and launch-day questions.",
+  "content": "<p>CartAI is an API for the step most AI shopping agents can't finish: paying. Your app sends a product page URL, the buyer's shipping profile and a payment profile; CartAI's agent navigates the merchant's live site, places the order and reports back through webhooks when it starts, completes or fails. It works without the merchant doing any integration, and the company says the same approach covers subscription sign-ups, invoice payments and order submission on vendor portals and login-gated sites.</p><p>It is sold as four products behind one API: Catalog (search and live prices and stock across merchants), Checkouts (placing and tracking orders to confirmation), Payments (a hosted, PCI-compliant card session on Visa Intelligent Commerce and Mastercard Agent Pay, so card data never touches your servers) and Monetization (commissions on agent sales). Rather than trying to slip past bot detection, CartAI says it identifies its agent openly, working with Cloudflare, HUMAN, Akamai and others. It is not the merchant of record: the merchant still sets prices and handles fulfilment, support and returns, according to its terms.</p><p>CartAI, LLC is a Texas company founded by Manil Uppal, with Kunal Mestri as CTO, according to their Product Hunt profiles. It launched its developer release on Product Hunt on 21 July 2026 and finished #2 for the day with 391 points and 109 comments.</p><p><em>We have not tested CartAI ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Agentic commerce API",
+    "platform": "Developer API",
+    "starts_at": "Paid (pricing not published on its site)",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "API whose AI agent completes real checkouts on live merchant sites and pays on Visa and Mastercard agent rails",
+    "maker": {"name": "Manil Uppal", "url": "https://www.producthunt.com/@manil_uppal"},
+    "team": [
+      {"name": "Manil Uppal", "role": "Founder", "url": "https://www.producthunt.com/@manil_uppal"},
+      {"name": "Kunal Mestri", "role": "CTO", "url": "https://www.producthunt.com/@kunalmestri9"},
+      {"name": "Aman Gupta", "role": "Tech Lead", "url": "https://www.producthunt.com/@aman_gupta14"},
+      {"name": "Amit Uppal", "role": "Principal Software Engineer", "url": "https://www.producthunt.com/@amit_uppal"}
+    ],
+    "ph": {"rank": 2, "votes": 391, "comments": 109, "followers": 898, "launched": "2026-07-21", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/4694c11a-eefc-42cc-bbe9-a7cebfaec56d.jpeg?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "CartAI 'The AI agent that handles checkout': a single API call to its checkout endpoint and a confirmed $216 order from a live merchant",
+       "credit": "Image: CartAI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/12c7baff-4c31-4fe6-93e7-fff6b193e8be.jpeg?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "CartAI Catalog returning 40 colour variants with live stock and price from a single lipstick product URL",
+       "credit": "Image: CartAI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/744fb209-8f32-416e-9ee0-9a18a15b7053.jpeg?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "CartAI Payments panel showing Visa Intelligent Commerce and Mastercard Agent Pay as live, with card fields served from CartAI's hosted UI",
+       "credit": "Image: CartAI via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "build an AI shopping assistant or agent that has to actually place orders, not just recommend products",
+        "want to complete transactions on merchant sites that offer no API",
+        "want card data kept out of your own systems (PCI scope) while your agent pays"
+      ],
+      "not_fit": [
+        "are a shopper looking for an app: CartAI is an API for developers",
+        "need the price up front: it was not published on cartai.ai when we checked",
+        "need the agent to retry automatically when a merchant site glitches: the team says it fails the transaction instead of retrying"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on cartai.ai as of 14 October 2026.",
+      "url": "https://www.cartai.ai/",
+      "plans": [],
+      "notes": [
+        "Product Hunt lists CartAI as paid.",
+        "The founder said on Product Hunt that you can sign up and place a test order from the dashboard's test-link harness without building an integration first."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Most are payment platforms rather than checkout agents. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Prava", "url": "https://prava.space", "what": "Payments stack for AI agents, integrating Visa Intelligent Commerce", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 1,
+         "difference": "Focuses on letting agents pay; CartAI also navigates the merchant's site and places the order."},
+        {"name": "Stripe", "url": "https://stripe.com", "what": "Payments and financial infrastructure", "starts_at": "See its pricing page", "ph_rating": 4.95, "ph_reviews": 529,
+         "difference": "Accepts payments for your own business; CartAI buys from other merchants on your users' behalf."},
+        {"name": "PaymentKit", "url": "https://www.paymentkit.com/", "what": "Multi-processor billing and payment orchestration", "starts_at": "See its pricing page", "ph_rating": 4.93, "ph_reviews": 19,
+         "difference": "A billing platform for subscription businesses, not an agent that checks out on other sites."}
+      ],
+      "more": "Product Hunt also lists Dodo Payments and Paddle, both payment and merchant-of-record services."
+    },
+    "reviews": {"count": 2, "rating": 4.5, "url": "https://www.producthunt.com/products/cartai/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/cartai",
+      "quotes": [
+        {"author": "Gal Dayan", "text": "if the agent completes checkout but the price or stock changed",
+         "reply": "Kunal Mestri: the agent is treated like a human shopper; if a product goes out of stock or its price changes, it doesn't proceed silently."},
+        {"author": "Brandon TK Beesman", "text": "does the agent ever see or weigh that commission rate when ranking options?",
+         "reply": "Manil Uppal: no; the API takes a product URL the user has already chosen and only executes the order."},
+        {"author": "Waqas Baloch", "text": "what happens if a payment goes through but the site glitches before the confirmation shows up?",
+         "reply": "Aman Gupta: an order counts as successful only once the merchant confirms it; otherwise the whole transaction fails and is not retried."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=cartai.ai&f=live", "profile_url": "https://x.com/TheCartAI"}
+    },
+    "faq": [
+      {"q": "What is CartAI?", "a": "A developer API whose AI agent navigates live merchant websites and completes checkout, from CartAI, LLC of Texas. It launched on Product Hunt on 21 July 2026."},
+      {"q": "Do merchants need to integrate with CartAI?", "a": "No. CartAI says it completes checkout on any live merchant site with no merchant-side work."},
+      {"q": "How does CartAI handle payments?", "a": "Through a hosted, PCI-compliant session on Visa Intelligent Commerce and Mastercard Agent Pay, so card data never reaches your servers. Its privacy policy says raw card numbers are handled only by PCI-compliant vaulting partners."},
+      {"q": "Who handles returns and customer service?", "a": "The merchant. CartAI's terms say it is not the merchant of record, and the merchant handles pricing, fulfilment, support and returns. Orders carry the end customer's own contact details."},
+      {"q": "How much does CartAI cost?", "a": "Its site does not publish prices. Product Hunt lists it as paid."},
+      {"q": "How do I try it?", "a": "According to the founder, sign up in the developer portal and use the 'Share Test Link' harness on the dashboard to place a test order and watch the agent run."}
+    ],
+    "sources": [
+      {"label": "CartAI official site", "url": "https://www.cartai.ai/"},
+      {"label": "CartAI terms of service", "url": "https://www.cartai.ai/terms"},
+      {"label": "CartAI privacy policy", "url": "https://www.cartai.ai/privacy"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/cartai"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/cartai/launches/cartai"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/cartai/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/cartai/alternatives"},
+      {"label": "Prava", "url": "https://www.prava.space/"}
+    ]
+  }
+}

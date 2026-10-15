@@ -1,0 +1,301 @@
+{
+ "slug": "vaani-2",
+ "ph_url": "https://www.producthunt.com/posts/vaani-2",
+ "existing_listing_slug": null,
+ "website": "https://vaani.media",
+ "excerpt": "Vaani dubs videos into 40+ languages in the speaker's own cloned voice, with optional lip-sync. Free trial; plans from $49 a month. Pricing and alternatives.",
+ "content": "<p>Vaani is an AI dubbing tool for video. You upload an MP4 (up to 1080p), pick a target language, and get back the same video dubbed in that language. It clones the speaker's voice from the source audio itself, so there is no separate voice recording, and it keeps each speaker distinct in multi-speaker footage. Translation is described as scene-aware: it reads the context of each shot so idioms and tone can change with the scene. You can review and edit each line before rendering, and switch on lip-sync for talking-head shots, with a Normal and a Pro lip-sync engine.</p><p>It covers 13 Indic languages (Hindi, Tamil, Telugu, Kannada, Malayalam, Bengali, Marathi, Gujarati, Punjabi, Urdu, Odia, Sanskrit and Nepali) and 27 global languages. Vaani is aimed at YouTubers, brands, broadcasters, OTT platforms, EdTech companies and studios, and offers a REST API and webhooks on its Studio plan and above. A free trial gives 5 minutes of Indic and 2 minutes of global dubbing with no card; paid plans start at $49 a month.</p><p>The site names the product \"Vaani by Advant AI\", and its footer reads \"Strible Advantai\". Abhinav Mohan introduced himself on Product Hunt as Vaani's founder. Vaani launched on Product Hunt on 8 June 2026 and finished #3 for the day with 315 upvotes and 27 comments.</p><p><em>We have not tested Vaani ourselves. This page brings together its official site, pricing, privacy policy and terms, its Product Hunt launch and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI video dubbing",
+  "platform": "Web app with a developer API",
+  "starts_at": "Free trial (7 minutes); Creator $49/month",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "AI dubbing into 40+ languages in the speaker's own cloned voice, with optional lip-sync",
+  "maker": {
+   "name": "Abhinav Mohan",
+   "url": "https://www.producthunt.com/@abhinav_cinephile"
+  },
+  "team": [
+   {
+    "name": "Abhinav Mohan",
+    "role": "Founder, Vaani",
+    "url": "https://www.producthunt.com/@abhinav_cinephile"
+   },
+   {
+    "name": "Absalom Maxy",
+    "role": "Maker (Product Hunt headline: Creator)",
+    "url": "https://www.producthunt.com/@absalom_maxy"
+   }
+  ],
+  "ph": {
+   "rank": 3,
+   "votes": 315,
+   "comments": 27,
+   "followers": 658,
+   "launched": "2026-06-08",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://youtu.be/_5v93kwGXxE",
+  "use_cases": [
+   "Dubbing existing YouTube videos into Indian languages in your own voice",
+   "Localising short ads and brand videos for other markets",
+   "Turning a course library into several Indic languages without re-recording",
+   "Batch-dubbing a back catalogue for OTT or news teams",
+   "Adding dubbing to your own pipeline through the API and webhooks"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Abhinav Mohan says Vaani began with a personal video he wanted to share in a few languages beyond English. The tools he tried gave him flat, robotic voices and lip sync that slipped a few frames on every line, and he found that the creators and brand teams he spoke to were hitting the same problem.",
+    "He argues that a poor automatic dub can hurt a channel in new markets rather than help it, and built Vaani to keep the creator's own voice and meaning intact across languages. In replies he added that prosody carries over better in some language pairs (English to Spanish or Hindi) than others (English to Japanese or Mandarin), and that a single run now handles videos up to 30 minutes."
+   ],
+   "attribution": "Abhinav Mohan, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/vaani-2?comment=5432373"
+  },
+  "audience": {
+   "fit": [
+    "make videos in English or an Indian language and want them in other Indic or global languages",
+    "want the dub to sound like you rather than a stock AI narrator",
+    "run a studio, OTT or EdTech catalogue and need API access or batch dubbing"
+   ],
+   "not_fit": [
+    "only need subtitles: Vaani is built for full voice dubbing",
+    "need very regional humour or cultural references handled with no human check: the founder says those still need a review pass",
+    "want a cheap plan for occasional use: paid plans start at $49 a month"
+   ]
+  },
+  "pricing": {
+   "intro": "Vaani's plans as listed on its pricing page. Prices are shown with a $ sign; the page does not name the currency or show yearly prices.",
+   "url": "https://vaani.media/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free Trial",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "5 minutes of Indic and 2 minutes of global dubbing, no card required, one active project"
+    },
+    {
+     "name": "Creator",
+     "price": "$49/month",
+     "amount": 49,
+     "currency": "USD",
+     "detail": "30 minutes Indic, 15 minutes global and 5 minutes of lip-sync a month"
+    },
+    {
+     "name": "Studio",
+     "price": "$299/month",
+     "amount": 299,
+     "currency": "USD",
+     "detail": "200 minutes Indic, 100 minutes global, 30 minutes lip-sync, developer API and 5 team seats; the site calls it the most-picked plan"
+    },
+    {
+     "name": "Broadcast",
+     "price": "$1,499/month",
+     "amount": 1499,
+     "currency": "USD",
+     "detail": "900 minutes Indic, 450 minutes global, 150 minutes lip-sync, priority queue, 15 seats, API and webhooks"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "On-premise or private-cloud options, custom voice library, SLAs, SSO and audit logging"
+    }
+   ],
+   "notes": [
+    "Plans renew automatically; you can cancel any time and keep the plan to the end of the billing period. Use above your included minutes is billed at the per-minute rate on the pricing page (terms).",
+    "If a dub fails because of a bug on Vaani's side and can't be recovered within 24 hours, the credits are refunded; failures caused by unsupported source media are not (terms).",
+    "Parts of the app describe allowances in coins (for example 20 starter coins on the free trial and 100 coins a month on Creator) rather than minutes."
+   ]
+  },
+  "alternatives": {
+   "intro": "Three well-known AI dubbing tools. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "ElevenLabs",
+     "url": "https://elevenlabs.io/",
+     "what": "AI voice platform with automatic dubbing and a Dubbing Studio editor",
+     "starts_at": "Free plan; see its pricing page for paid plans",
+     "difference": "A broad voice platform where dubbing is paid from a shared credit pool; Vaani is built only for dubbing and focuses on Indic languages and lip-sync."
+    },
+    {
+     "name": "HeyGen",
+     "url": "https://www.heygen.com/",
+     "what": "AI video platform with video translation and lip-sync",
+     "starts_at": "Free; Creator $29/month",
+     "difference": "Cheaper entry plan and 175 languages and dialects on paid plans, but built around avatars and video creation as much as dubbing."
+    },
+    {
+     "name": "Rask AI",
+     "url": "https://www.rask.ai/",
+     "what": "AI video translation and dubbing with voice cloning and lip-sync",
+     "starts_at": "Free trial (3 minutes); Creator $39/month",
+     "difference": "The closest like-for-like rival, with a lower entry price; its pricing page lists lip-sync from the Creator Pro plan."
+    }
+   ]
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/vaani-2/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Keeping the speaker's own voice instead of a generic AI voice",
+     "Taking meaning and tone seriously, not only literal translation"
+    ],
+    "asked": [
+     "Whether users can review and change lines before export (the founder said a line-by-line editor existed for business customers and would launch separately; the site now lists line review before rendering)",
+     "How tone and pacing carry across languages (better in some language pairs than others, he said)",
+     "What content people dub first (short videos first, then longer pieces, he said)"
+    ],
+    "criticised": [
+     "One commenter asked whether messy audio, several speakers or music would waste the 7 free minutes on a bad first test (no reply shown)"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Most dubbing tools flatten the speaker into a generic AI voice, so holding the original timbre across 40+ languages is a real differentiator.",
+     "author": "Igor Gurovich",
+     "url": "https://www.producthunt.com/products/vaani-2?comment=5434005"
+    },
+    {
+     "text": "can users review the meaning/tone changes separately from the lip-sync render?",
+     "author": "Jim Jeffers",
+     "url": "https://www.producthunt.com/products/vaani-2?comment=5435064"
+    },
+    {
+     "text": "How consistent is that first render when the input is messy, multiple speakers, background music, fast cuts?",
+     "author": "Andrew Chernyshev",
+     "url": "https://www.producthunt.com/products/vaani-2?comment=5435841"
+    }
+   ]
+  },
+  "pros": [
+   "Clones the voice from your own video, with no separate recording",
+   "13 Indic languages alongside 27 global ones",
+   "Line review before rendering and optional lip-sync with two engines",
+   "Free trial with no card",
+   "Says it does not train models on your media"
+  ],
+  "cons": [
+   "Paid plans start at $49 a month, more than some rivals",
+   "The free trial is only 7 minutes in total",
+   "API access starts on the $299 Studio plan",
+   "No company address or legal entity details on the site"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/vaani-2",
+   "quotes": [
+    {
+     "author": "Igor Gurovich",
+     "url": "https://www.producthunt.com/products/vaani-2?comment=5434005",
+     "text": "Curious how you handle emotional prosody: does the clone carry tone and pacing across languages, or mostly the timbre?",
+     "reply": "Abhinav Mohan: it tries to carry tone and pacing too, but it works better from English to Spanish or Hindi than to Japanese or Mandarin."
+    }
+   ],
+   "x": {
+    "profile_url": "https://x.com/vaani_media",
+    "none": "We found no posts about Vaani on X to link yet.",
+    "search_url": "https://x.com/search?q=vaani.media&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Vaani?",
+    "a": "An AI dubbing tool. You upload a video and get it back dubbed in another language, in the original speaker's cloned voice, with optional lip-sync for talking-head shots."
+   },
+   {
+    "q": "How much does Vaani cost?",
+    "a": "There is a free trial with 5 minutes of Indic and 2 minutes of global dubbing and no card. Creator is $49 a month, Studio $299 a month and Broadcast $1,499 a month; Enterprise is custom-priced."
+   },
+   {
+    "q": "Which languages does it support?",
+    "a": "40+ in total: 13 Indic languages, including Hindi, Tamil, Telugu, Bengali and Marathi, and 27 global languages such as Spanish, French, German, Japanese and Arabic."
+   },
+   {
+    "q": "Can I check and edit the translation before it renders?",
+    "a": "Vaani's site says you can review and edit each line before rendering. At launch the founder said the full line-by-line editor was used with business customers and would launch separately."
+   },
+   {
+    "q": "How long can a video be?",
+    "a": "The founder said on Product Hunt that a single run handles videos up to 30 minutes and that longer videos can be added too."
+   },
+   {
+    "q": "Does Vaani train on my videos?",
+    "a": "No. Its privacy policy and terms say uploads are used only to produce your dubs and are not used to train models, and you own the outputs."
+   },
+   {
+    "q": "What are the alternatives to Vaani?",
+    "a": "ElevenLabs, HeyGen and Rask AI all offer AI dubbing with voice cloning; see the comparison above."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Vaani official site",
+    "url": "https://vaani.media/"
+   },
+   {
+    "label": "Vaani pricing",
+    "url": "https://vaani.media/pricing"
+   },
+   {
+    "label": "Vaani privacy policy",
+    "url": "https://vaani.media/privacy"
+   },
+   {
+    "label": "Vaani terms of service",
+    "url": "https://vaani.media/terms"
+   },
+   {
+    "label": "Product Hunt launch page and discussion",
+    "url": "https://www.producthunt.com/products/vaani-2?launch=vaani-2"
+   },
+   {
+    "label": "ElevenLabs pricing",
+    "url": "https://elevenlabs.io/pricing"
+   },
+   {
+    "label": "HeyGen pricing",
+    "url": "https://www.heygen.com/pricing"
+   },
+   {
+    "label": "Rask AI pricing",
+    "url": "https://www.rask.ai/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/8c5797a8-d54a-4f59-9098-d397aa94b419.png?auto=format&fit=max&w=1400",
+    "alt": "Vaani graphic 'Imagine your voice in forty+ languages' with a sketched microphone and language names",
+    "credit": "Image: Vaani on Product Hunt",
+    "w": 2540,
+    "h": 1520
+   },
+   {
+    "url": "https://ph-files.imgix.net/5b658366-1648-4b9e-b631-c3b4d9409d2f.png?auto=format&fit=max&w=1400",
+    "alt": "Vaani graphic of a channel's watch time split by language, headed 'Imagine your audience growing into every corner of the world'",
+    "credit": "Image: Vaani on Product Hunt",
+    "w": 2540,
+    "h": 1520
+   },
+   {
+    "url": "https://ph-files.imgix.net/738e9546-9562-40a0-a0d1-8ef517032f2a.png?auto=format&fit=max&w=1400",
+    "alt": "Sketch of the Vaani Studio screen: drop a video, pick languages, preview and render",
+    "credit": "Image: Vaani on Product Hunt",
+    "w": 2540,
+    "h": 1520
+   },
+   {
+    "url": "https://ph-files.imgix.net/24a10bfd-fa36-4192-b9fa-3fa1c3d61c80.png?auto=format&fit=max&w=1400",
+    "alt": "Sketch of Glot, Vaani's batch dub studio, sending several videos into several languages in one render",
+    "credit": "Image: Vaani on Product Hunt",
+    "w": 2540,
+    "h": 1520
+   }
+  ]
+ }
+}

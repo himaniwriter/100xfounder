@@ -1,0 +1,242 @@
+{
+ "slug": "zetik",
+ "ph_url": "https://www.producthunt.com/posts/zetik",
+ "existing_listing_slug": null,
+ "website": "https://www.zetik.com/",
+ "excerpt": "Zetik is a mobile AI agent that tracks any company, person or topic you name across news, podcasts, papers and GitHub, and briefs you when something moves.",
+ "content": "<p>Zetik is a personal news and intelligence agent for iPhone and Android. You tell it in one sentence what to watch (a company, a person, a sports team, a rumour or a niche topic) and it sets up a tracker in seconds, finds sources for it and alerts you only when something actually changes. You can pin sources you trust or connect your own.</p><p>It reads newsrooms, podcasts, blogs, GitHub, research papers and newsletters, and folds duplicate coverage of the same story into a single card that says what happened and why it matters, with every source attached. It also suggests related stories beyond what you follow. Zetik keeps a visible memory of what it has learned about you, which you can edit or delete, and reshapes the feed when you give plain-language feedback such as \"less celebrity coverage\". Briefings arrive as a feed, push alerts, a newsletter or RSS, and it can read stories aloud and cut the podcasts you follow into highlight clips.</p><p>Zetik is run by Newsbang, Inc., according to its privacy policy, and its builder on Product Hunt is Nathan. It launched there on 15 August 2026, hunted by Rohan Chaubey, and finished #4 for the day with 171 upvotes and 11 comments. The app is free to install; Google Play lists in-app purchases, but prices are not published on its website.</p><p><em>We have not tested Zetik ourselves. This page brings together its official site and privacy policy, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "News and research",
+  "platform": "iPhone and Android apps",
+  "os": "iOS, Android",
+  "starts_at": "Free to download; in-app purchases (prices not published)",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "AI agent that tracks anything you name and briefs you only when it moves",
+  "use_cases": [
+   "Following a company, competitor or product without checking the news daily",
+   "Tracking a research field across papers, GitHub and podcasts",
+   "Getting one card per story instead of twenty versions of it",
+   "Listening to audio briefings and podcast highlights",
+   "Watching a niche topic that mainstream news apps ignore"
+  ],
+  "audience": {
+   "fit": [
+    "keep up with fast-moving companies, people or fields and are tired of doomscrolling",
+    "want sources attached to every summary",
+    "prefer alerts only when something changes"
+   ],
+   "not_fit": [
+    "want a desktop or web app: Zetik is listed for iPhone and Android",
+    "need to know the subscription price before installing, as it is not published",
+    "prefer to pick and read sources yourself in a classic RSS reader"
+   ]
+  },
+  "pricing": {
+   "intro": "Pricing not published. Zetik is free to install from Google Play, where it lists in-app purchases, but neither its website nor the store page we checked lists plan prices.",
+   "url": "https://play.google.com/store/apps/details?id=com.newsbang",
+   "checked": "2026-10-14",
+   "plans": []
+  },
+  "alternatives": {
+   "intro": "Other ways to track news and topics. Prices come from each product's own page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Feedly",
+     "url": "https://feedly.com/",
+     "what": "RSS reader with AI features for tracking topics and companies",
+     "starts_at": "See its pricing page",
+     "difference": "You build the source list and read in a feed; Zetik finds sources itself and pushes you only real changes."
+    },
+    {
+     "name": "Google Alerts",
+     "url": "https://www.google.com/alerts",
+     "what": "Email alerts when new web results match a search",
+     "starts_at": "Free",
+     "difference": "Simple keyword matching with no summaries or de-duplication; Zetik folds coverage into one sourced card."
+    }
+   ]
+  },
+  "pros": [
+   "Set up a tracker in one sentence",
+   "Duplicate coverage folded into one card with every source attached",
+   "Visible, editable memory of your preferences",
+   "Reads beyond news: podcasts, papers, GitHub and newsletters",
+   "Feed, push, newsletter, RSS or audio delivery"
+  ],
+  "cons": [
+   "Prices for in-app purchases are not published on the website",
+   "Mobile apps only",
+   "Summaries are AI-generated, so important stories still need checking against the sources"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/zetik",
+   "x": {
+    "none": "We found no independent posts about Zetik on X to link yet.",
+    "search_url": "https://x.com/search?q=zetik&f=live",
+    "profile_url": "https://x.com/ZetikApp"
+   },
+   "quotes": [
+    {
+     "text": "if Zetik's filtering works off trackers I explicitly set up, how does it surface something genuinely outside those",
+     "reply": "Trackers guarantee coverage of what you declared; a separate Explore section matches your broader direction of interest, and anything worth keeping can be promoted to a tracker.",
+     "author": "Gal Dayan",
+     "url": "https://www.producthunt.com/products/zetik?comment=5788651"
+    },
+    {
+     "text": "How Zetik works different from Nbot?",
+     "reply": "NBot blends everything into one curated feed; Zetik keeps trackers, unfiltered trusted sources and Explore as separate layers.",
+     "author": "Power Valsha",
+     "url": "https://www.producthunt.com/products/zetik?comment=5789037"
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Zetik?",
+    "a": "A personal intelligence agent app. You name what to watch, and it reads news, podcasts, blogs, GitHub, papers and newsletters around the clock and briefs you when something changes, with sources attached."
+   },
+   {
+    "q": "How much does Zetik cost?",
+    "a": "The app is free to install and Google Play lists in-app purchases, but Zetik does not publish its prices on the website."
+   },
+   {
+    "q": "How is it different from ChatGPT or a news app?",
+    "a": "Zetik says an assistant waits to be asked and a feed gives you something to scroll, while Zetik reads for you continuously and comes to you only when something you care about moves."
+   },
+   {
+    "q": "Can I control what it learns about me?",
+    "a": "Yes. Its memory is visible and you can edit or delete any item, and plain-language feedback reshapes the feed."
+   },
+   {
+    "q": "What are the alternatives to Zetik?",
+    "a": "Feedly for a curated RSS reader with AI features, or Google Alerts for free keyword alerts."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Zetik official site",
+    "url": "https://www.zetik.com/"
+   },
+   {
+    "label": "Zetik official site (zetik.ai mirror)",
+    "url": "https://www.zetik.ai/"
+   },
+   {
+    "label": "Zetik privacy policy",
+    "url": "https://www.zetik.com/agreement/privacy-policy"
+   },
+   {
+    "label": "Zetik on Google Play",
+    "url": "https://play.google.com/store/apps/details?id=com.newsbang"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/zetik"
+   },
+   {
+    "label": "Feedly",
+    "url": "https://feedly.com/"
+   },
+   {
+    "label": "Google Alerts",
+    "url": "https://www.google.com/alerts"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/zetik/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 4,
+   "votes": 171,
+   "comments": 11,
+   "followers": 421,
+   "launched": "2026-08-15",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Nathan",
+    "role": "Builder of Zetik; AI product and growth",
+    "url": "https://www.producthunt.com/@nathan_ph"
+   }
+  ],
+  "maker": {
+   "name": "Nathan",
+   "url": "https://www.producthunt.com/@nathan_ph"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/1b767007-e72a-4d60-8646-0d96dd9ec777.png?auto=format&fit=max&w=1400",
+    "alt": "Zetik graphic 'Stop feeding the feed. Start commanding it.' with an intelligence cycle of collect, process, analyse and brief",
+    "credit": "Image: Zetik on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/2cef00fb-558c-461e-b97a-1048f8c7451f.png?auto=format&fit=max&w=1400",
+    "alt": "Zetik app screens: typing 'Track OpenAI for me' starts a tracker that lists matching stories",
+    "credit": "Image: Zetik on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/21b8871c-5a23-4ac8-ab37-383732cb0663.png?auto=format&fit=max&w=1400",
+    "alt": "Zetik graphic 'Signal doesn't live in headlines' with sources such as YouTube, podcasts, GitHub, Reddit, papers and news",
+    "credit": "Image: Zetik on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/a0841dd3-1661-46e6-9471-4107ab1fab3a.png?auto=format&fit=max&w=1400",
+    "alt": "Zetik daily brief laid out like an analyst memo: bottom line, what we know, assessment, debated views and what it means for you",
+    "credit": "Image: Zetik on Product Hunt",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Nathan, who built Zetik, says he hunts for good information every day and still misses things: out of every 100 posts he scrolls, maybe one or two are worth his time, and a single story is spread across news, X, Reddit, GitHub, arXiv and podcasts days apart.",
+    "His idea was that presidents and CEOs solved this long ago with staff who monitor the world and walk in with a brief, so why shouldn't everyone have an information agent? You tell Zetik what matters, by voice or text, and it spins up a tracker that collects, cross-checks, analyses and briefs you."
+   ],
+   "attribution": "Nathan, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/zetik?comment=5783196"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Tracking signal across formats, especially audio, rather than only RSS",
+     "Custom trackers that run in the background without manual searches"
+    ],
+    "asked": [
+     "How it surfaces things outside the topics you track (an Explore section matches your direction of interest, kept separate from trackers)",
+     "How it differs from NBot (it keeps trackers, trusted sources and Explore as separate layers rather than one blended feed)"
+    ],
+    "criticised": [
+     "A commenter warned that the best finds are often adjacent to your interests, which explicit trackers can miss"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "tracking the signal across formats (especially audio to text) instead of just RSS feeds makes a ton of sense.",
+     "author": "Merry",
+     "url": "https://www.producthunt.com/products/zetik?comment=5787745"
+    },
+    {
+     "text": "It runs in the background and keeps me posted without constant manual searches.",
+     "author": "Justin Jincaid",
+     "url": "https://www.producthunt.com/products/zetik?comment=5787475"
+    },
+    {
+     "text": "the best finds I've had were never things I already knew to track. they were adjacent to my interests, not inside them.",
+     "author": "Gal Dayan",
+     "url": "https://www.producthunt.com/products/zetik?comment=5788651"
+    }
+   ]
+  }
+ }
+}

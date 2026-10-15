@@ -1,0 +1,308 @@
+{
+ "input": "https://www.producthunt.com/posts/vaani-2",
+ "final_url": "https://www.producthunt.com/products/vaani-2?launch=vaani-2",
+ "launch": {
+  "slug": "vaani-2",
+  "name": "Vaani",
+  "tagline": "Lip-synced AI dubbing for creators, brands and studios",
+  "featuredAt": "2026-06-08T00:01:00-07:00",
+  "dailyRank": "3",
+  "weeklyRank": "16",
+  "points": 315,
+  "commentsCount": 27,
+  "pricingType": "free_options",
+  "description": "Vaani is a voice-preserving AI dubbing tool to help you dub in 40+ languages, in one go, at a fraction of the cost of a traditional dub session. Where other tools give you a generic AI voice and lips that drift off-beat, Vaani clones your voice, preserves your music, and holds the meaning across languages, with frame-accurate lip sync. Built for anyone creating videos, from creators and brands to media companies, OTTs and studios.",
+  "makers": [
+   {
+    "name": "Absalom Maxy",
+    "username": "absalom_maxy",
+    "headline": "Creator"
+   },
+   {
+    "name": "Abhinav Mohan",
+    "username": "abhinav_cinephile",
+    "headline": "Building Vaani, where AI feels human."
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "8c5797a8-d54a-4f59-9098-d397aa94b419.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "5b658366-1648-4b9e-b631-c3b4d9409d2f.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "738e9546-9562-40a0-a0d1-8ef517032f2a.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "24a10bfd-fa36-4192-b9fa-3fa1c3d61c80.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "63928b8f-376d-40b4-a32a-2ca008eb9413.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "c50aa88a-4a75-4a81-952c-253778148956.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "1861a629-fa96-4002-88e4-67c434b951a1.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/_5v93kwGXxE"
+   },
+   {
+    "uuid": "8df82a6d-b7af-4cb4-8c9c-36e90666010e.png",
+    "type": "interactive_demo",
+    "w": 1200,
+    "h": 630,
+    "video": "https://app.arcade.software/share/zfXKZAc2lBD70Md6PzPm"
+   }
+  ],
+  "links": [
+   "vaani.media"
+  ],
+  "badges": [
+   [
+    "daily",
+    3
+   ]
+  ]
+ },
+ "product": {
+  "name": "Vaani",
+  "slug": "vaani-2",
+  "tagline": "Lip-synced AI dubbing for creators, brands and studios",
+  "description": "Vaani is a voice-preserving AI dubbing tool to help you dub in 40+ languages, in one go, at a fraction of the cost of a traditional dub session. Where other tools give you a generic AI voice and lips that drift off-beat, Vaani clones your voice, preserves your music, and holds the meaning across languages, with frame-accurate lip sync. Built for anyone creating videos, from creators and brands to media companies, OTTs and studios.",
+  "websiteUrl": "https://vaani.media",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 658,
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5432373",
+   "depth": 0,
+   "author": "Abhinav Mohan",
+   "username": "abhinav_cinephile",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 I'm Abhinav Mohan, founder of Vaani. 🎬 How Vaani started I was working on a personal video project a while back and wanted to make it accessible in a few languages beyond English. So I went looking for a tool and was genuinely shocked at what came back. Voices that sounded like a customer-service IVR reading off a script. Lip sync that drifted two or three frames every line. Output that felt robotic in a way audiences clock instantly, even if they can't say why. I kept thinking someone must have solved this for serious creators by now. Turns out, not quite. Most tools optimise for speed and the lowest acceptable output, not for keeping your actual voice intact across languages. The more creators and brand teams I talked to, the clearer it became everyone was hitting the same wall. And the data backs it up: a well-made dub routinely outperforms the original by 2–3× in non-English markets. But bad auto-dubbing actually hurts creators in the global YouTube algorithm, watch time drops, ranking falls, and channels lose ground in markets they used to win. The wrong tool punishes you for trying to go global. That gap is exactly what we built Vaani for. ✨ What Vaani does"
+  },
+  {
+   "id": "5434070",
+   "depth": 1,
+   "author": "Nicole Hynek",
+   "username": "nicole_hynek",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@rohanrecommends &nbsp; @producthunt &nbsp; @abhinav_cinephile &nbsp;The voice-preserving approach is really interesting. A lot of AI dubbing tools get the translation done, but lose the creator's identity in the process. How are you handling cultural nuances and tone across different languages to make sure the dubbed version still feels authentic to the original content?"
+  },
+  {
+   "id": "5434368",
+   "depth": 2,
+   "author": "Abhinav Mohan",
+   "username": "abhinav_cinephile",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@rohanrecommends &nbsp; @producthunt &nbsp; @nicole_hynek &nbsp; Hi Nicole, cultural nuance is the harder half of this. Two things we lean on. The script step is not literal translation, we try to preserve intent and emotional weight so a joke can take a different shape in another language and still land. The voice clone tries to carry your cadence and emotional register, not just timbre, so the dub holds onto how you stressed words and paused. Where we still rely on humans. Very regional humor and specific cultural references still need a quick review pass. Happy to dig into a specific case if you have one in mind. Abhinav"
+  },
+  {
+   "id": "5435494",
+   "depth": 1,
+   "author": "Swati Paliwal",
+   "username": "swati_paliwal",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@rohanrecommends &nbsp; @producthunt &nbsp; @abhinav_cinephile &nbsp;Kudos. Are users allowed to edit every line or change them before exporting their final project?"
+  },
+  {
+   "id": "5435064",
+   "depth": 0,
+   "author": "Jim Jeffers",
+   "username": "jim_jeffers",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The creator-trust angle here is strong. Bad dubbing doesn’t just sound off; it can make the original creator feel less credible in a market they’re trying to enter. One workflow detail I’d care about: can users review the meaning/tone changes separately from the lip-sync render? For brand, education, and founder-led videos, the scary failure mode isn’t only “the lips drift,” it’s “the joke, caveat, or claim survived grammatically but not contextually.” If Vaani can show a lightweight line-by-line review before final export — original intent, localized wording, voice/tone note, then render — I think teams would trust it for much higher-stakes content than simple back-catalog translation."
+  },
+  {
+   "id": "5435225",
+   "depth": 1,
+   "author": "Abhinav Mohan",
+   "username": "abhinav_cinephile",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jim_jeffers &nbsp;Hi Jim, this is the sharpest framing of the problem I have read all day. The failure mode you described, joke or caveat or claim surviving grammar but losing context, is exactly the one we have been designing against. Lip drift is a known visual problem with a known fix. The semantic drift is the dangerous one because nothing in the dub looks wrong, it just lands wrong. On your workflow question. We do have an advanced editor (currently used with B2B customers) that gives a line level review pass before the lip sync render. The spec is close to what you sketched. Reviewers can see the original, the localized version, and approve or flag changes before the expensive part of the pipeline runs. We chose to launch the one click version first because the quality of the auto output is the headline most people need to see. But your read is the right one. Teams buying dubbing for brand or founder content care less about throughput and more about not getting it wrong, and a review layer is what makes that possible. The editor lands as a separate launch soon. Abhinav"
+  },
+  {
+   "id": "5435410",
+   "depth": 2,
+   "author": "Jim Jeffers",
+   "username": "jim_jeffers",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@abhinav_cinephile That “semantic drift” phrase is exactly it — nothing looks broken, but the creator’s actual judgment changed. Tiny future test I’d love to see: one original line + localized line + reviewer flag where the wording is grammatically fine but the caveat/joke/claim no longer feels like the creator would stand behind it. That is the layer that would make the editor feel trustworthy for founder/brand content."
+  },
+  {
+   "id": "5434809",
+   "depth": 0,
+   "author": "Thami Benjelloun",
+   "username": "thamibenjelloun",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Do you let users review and change individual lines before export, or is it mostly one click end to end?"
+  },
+  {
+   "id": "5435008",
+   "depth": 1,
+   "author": "Abhinav Mohan",
+   "username": "abhinav_cinephile",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@thamibenjelloun &nbsp; Hi Thami, the honest answer is nuanced. For most creators editing line by line is not actually useful. If you are a Hindi creator dubbing into French you likely do not speak French, so the only editing you can really do is fix brand names or specific English terms anyway. So we focused on making the auto translation good enough that you do not need to touch it. Brand names and cultural nuance preservation are handled inside the dub itself. We do have an advanced editor with full line by line control that we use with B2B customers (studios running whole catalog passes), but we chose to launch the one click version first because we wanted people to see the quality of the auto output first. The editor lands as a separate launch soon. Abhinav"
+  },
+  {
+   "id": "5435841",
+   "depth": 0,
+   "author": "Andrew Chernyshev",
+   "username": "and_bayleaf",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "You said the quality of the auto output is the thing people need to see first. How consistent is that first render when the input is messy, multiple speakers, background music, fast cuts? I'm curious whether a new user reliably hits the wow on clip one, or whether the result leans a lot on having clean source audio. If it does, do they find that out before they burn their 7 free minutes on the wrong test video?"
+  },
+  {
+   "id": "5436344",
+   "depth": 0,
+   "author": "Ansari Adin",
+   "username": "ansari_adin",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the 'holds the meaning across languages' claim is the hardest one to deliver on and the one that gets least attention in dubbing tool demos. most AI translation optimizes for literal accuracy and produces dubbed content that sounds technically correct but uses phrasing that a native speaker would never use. cultural meaning and idiomatic expression are different problems from translation quality. how are you handling localization beyond translation and is there a human review step for languages where the AI translation quality is lower"
+  },
+  {
+   "id": "5434005",
+   "depth": 0,
+   "author": "Igor Gurovich",
+   "username": "igorgurovich",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Voice preservation is the part I keep coming back to. Most dubbing tools flatten the speaker into a generic AI voice, so holding the original timbre across 40+ languages is a real differentiator. I work on voice AI for older adults, and we've found that a familiar-sounding voice changes how much people trust and engage with it, sometimes more than raw transcription accuracy. Curious how you handle emotional prosody: does the clone carry tone and pacing across languages, or mostly the timbre? Impressive that the lip sync stays frame-accurate at that scale."
+  },
+  {
+   "id": "5434373",
+   "depth": 1,
+   "author": "Abhinav Mohan",
+   "username": "abhinav_cinephile",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@igorgurovich &nbsp;Hi Igor, the older adults trust angle resonates, it is exactly the thing we keep landing on too. On prosody. We try to carry tone and pacing, not only timbre. The original audio is the source of expressive features and those get mapped into the target language. Honest caveat. It ports better in some pairs than others. English to Spanish or Hindi feels close to seamless. English to Japanese or Mandarin is harder because emotion is encoded differently in pitch and tone. We map as much as we can, more a translation of prosody than a clean copy. Thanks on the lip sync, that one took the most iterations. Abhinav"
+  },
+  {
+   "id": "5434938",
+   "depth": 0,
+   "author": "Marianna Tymchuk",
+   "username": "marianna_tymchuk",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Wishing you success with the launch! Out of curiosity, which type of content do users test first: short-form videos, ads, or long-form series?"
+  },
+  {
+   "id": "5435010",
+   "depth": 1,
+   "author": "Abhinav Mohan",
+   "username": "abhinav_cinephile",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@marianna_tymchuk &nbsp;Hi Marianna, thanks for the well wishes. The pattern we have seen so far is that creators tend to start with short form to validate the quality, then move into longer pieces once they trust the output. Ads tend to come in between, the production stakes are higher but the length is still small. On the long form side, we now handle up to 30 minutes in a single run, and longer videos can be added too. So once a creator is past the initial trust check, they can put a whole episode or feature through the pipeline. Curious what made you ask. Abhinav"
+  }
+ ]
+}

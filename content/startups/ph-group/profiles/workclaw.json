@@ -1,0 +1,276 @@
+{
+ "slug": "workclaw",
+ "ph_url": "https://www.producthunt.com/posts/workclaw",
+ "existing_listing_slug": null,
+ "website": "https://www.workclaw.com/",
+ "excerpt": "WorkClaw gives teams AI coworkers built on OpenClaw that work in Slack and Teams, each with a role, manager and cloud computer. Team plan $29/month.",
+ "content": "<p>WorkClaw lets a company hire AI coworkers, which it calls Workmates or Claws, that sit in Slack or Microsoft Teams next to the rest of the team. Each one has a job title, a manager in your org chart and its own cloud-hosted computer, and can reach more than 3,000 apps. Every workspace starts with a Team Assistant for questions, meeting summaries and reminders; you can then add ready-made roles such as a scheduling assistant, software engineer, outbound sales researcher, research analyst, recruiter, content marketer or data analyst, or build your own by chatting. Skills can be installed from a library or created and shared across the team.</p><p>WorkClaw is built on the open-source OpenClaw agent and adds controls on top: admins decide access, app connections and which skills can be installed, and credentials sit in a vault. The company says it is SOC 2 compliant. It is made by Workmate (Workmate Labs), whose privacy policy gives an address in Dover, Delaware.</p><p>Pricing is based on usage rather than seats. The Team plan is $29 a month with 30,000 credits, shared across unlimited users, and new teams get $100 of free credits without a card. Credits pay both for each Workmate's cloud computer (from 750 credits a day) and for AI usage. WorkClaw was founded by Will Ruben, whose Product Hunt headline lists past roles at Instagram, Facebook and Coinbase. It launched on Product Hunt on 20 June 2026, hunted by Rohan Chaubey, and finished #1 for the day with 352 upvotes and 89 comments.</p><p><em>We have not tested WorkClaw ourselves. This page brings together its official site, pricing page, blog and privacy policy, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agents",
+  "platform": "Slack and Microsoft Teams, with a web dashboard",
+  "starts_at": "Team $29/month (30,000 credits); $100 free credits to start",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI coworkers built on OpenClaw that work in Slack and Teams with their own cloud computer",
+  "use_cases": [
+   "A shared team assistant that answers questions from your docs and summarises meetings",
+   "A scheduling Workmate with its own email address that books meetings within your rules",
+   "Codebase Q&A, ticket drafts and PR summaries for an engineering team",
+   "Prospect research and outreach drafts for sales",
+   "Recurring reports and metric summaries from spreadsheets and dashboards"
+  ],
+  "audience": {
+   "fit": [
+    "work in Slack or Teams and want AI agents the whole team can use",
+    "like the idea of OpenClaw but want admin controls and hosting handled",
+    "prefer usage-based pricing to per-seat pricing"
+   ],
+   "not_fit": [
+    "need a predictable flat bill: always-on Workmates use credits every day",
+    "want to bring your own model key on the entry plan: that is a Business-plan feature",
+    "work outside Slack and Teams"
+   ]
+  },
+  "pricing": {
+   "intro": "WorkClaw prices by credits, not seats. Prices are from workclaw.com, in US dollars.",
+   "url": "https://www.workclaw.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Team",
+     "price": "$29/month",
+     "amount": 29,
+     "currency": "USD",
+     "detail": "30,000 credits a month shared across unlimited users, plus $100 of free credits per team; unlimited Workmates, pre-built and custom skills, Claude model access, 100+ integrations. 14-day free trial, no card"
+    },
+    {
+     "name": "Business",
+     "price": "Custom",
+     "detail": "Volume discounts, bring your own API key, dedicated infrastructure, DPA and SOC 2 reports, SLA, SSO, audit logs and role-based limits"
+    }
+   ],
+   "notes": [
+    "Top-ups: 20,000 credits for $20 at any time. Roughly $1 = 1,000 credits at the entry tier.",
+    "Each Workmate's cloud computer costs from 750 credits a day; Workmates can be paused.",
+    "Credits reset monthly on the Team plan. If you run out, Workmates pause until you top up.",
+    "Yearly billing saves about 20%."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other ways to build AI agents that work for a team. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Lindy",
+     "url": "https://www.lindy.ai/",
+     "what": "AI assistant and agent builder for email, meetings and workflows",
+     "starts_at": "Free with $50 of credits for 7 days; Team from $49.99/month per user",
+     "difference": "Bills every active user; WorkClaw has no per-seat price."
+    },
+    {
+     "name": "Relevance AI",
+     "url": "https://relevanceai.com/",
+     "what": "Platform for building teams of AI agents for sales, support and operations",
+     "starts_at": "See its pricing page",
+     "difference": "A builder platform with its own interface; WorkClaw's agents live inside Slack and Teams with their own computer."
+    }
+   ]
+  },
+  "pros": [
+   "No per-seat pricing; invite the whole team",
+   "$100 of free credits and a 14-day trial without a card",
+   "Ready-made roles plus custom skills you can share",
+   "Admin controls and a credential vault on top of OpenClaw",
+   "Workmates pause instead of overspending when credits run out"
+  ],
+  "cons": [
+   "Always-on Workmates cost credits daily, so bills scale with how many you run",
+   "Credits do not roll over on the Team plan",
+   "Bring-your-own-key and SSO are Business-plan only"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/workclaw",
+   "x": {
+    "search_url": "https://x.com/search?q=workclaw&f=live",
+    "profile_url": "https://x.com/workclaw",
+    "posts": [
+     {
+      "url": "https://x.com/arceyul/status/2064349621132873961",
+      "author": "arc.",
+      "note": "notes that you onboard WorkClaw like a person: title, manager, laptop and tool access, then repeat to build a team in Slack or Teams."
+     }
+    ]
+   },
+   "quotes": [
+    {
+     "text": "I'd want to know what the approval and rollback model looks like for actions that touch money or customers",
+     "reply": "Each app is connected to each Claw separately, and you choose whether a Claw is proactive or only answers when spoken to, and which channels it listens in.",
+     "author": "Jibran Ahmed",
+     "url": "https://www.producthunt.com/products/workclaw?comment=5467874"
+    },
+    {
+     "text": "If I create 10 Claws, who is responsible when something goes wrong?",
+     "reply": "Many customers set up specialised Claws plus one orchestrator Claw that combines their outputs and reports to a person; the human decides the org chart.",
+     "author": "Moh",
+     "url": "https://www.producthunt.com/products/workclaw?comment=5467547"
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is WorkClaw?",
+    "a": "A service for hiring AI coworkers (Workmates) that work in Slack or Microsoft Teams. Each has a role, a manager, its own cloud computer and access to thousands of apps, and they are built on the open-source OpenClaw agent."
+   },
+   {
+    "q": "How much does WorkClaw cost?",
+    "a": "The Team plan is $29 a month for 30,000 credits shared across unlimited users, with $100 of free credits to start. Extra credits are $20 per 20,000. Business plans are custom."
+   },
+   {
+    "q": "What uses credits?",
+    "a": "Both keeping a Workmate's cloud computer running (from 750 credits a day) and the AI work it does. Workmates can be paused when not needed."
+   },
+   {
+    "q": "What happens if I run out of credits?",
+    "a": "Workmates pause automatically with their context intact and resume after you top up or upgrade. There is no overdraft."
+   },
+   {
+    "q": "Is it secure enough for a company?",
+    "a": "WorkClaw says it is SOC 2 compliant, stores credentials in a vault, and lets admins control access, integrations and skill installs. Business plans add SSO, audit logs and dedicated infrastructure."
+   },
+   {
+    "q": "What are the alternatives to WorkClaw?",
+    "a": "Lindy, an AI assistant and agent builder billed per user, or Relevance AI, a platform for building agent teams."
+   }
+  ],
+  "sources": [
+   {
+    "label": "WorkClaw official site",
+    "url": "https://www.workclaw.com/"
+   },
+   {
+    "label": "WorkClaw pricing",
+    "url": "https://www.workclaw.com/pricing"
+   },
+   {
+    "label": "WorkClaw on Product Hunt (company blog)",
+    "url": "https://www.workclaw.com/blog/workclaw-on-product-hunt"
+   },
+   {
+    "label": "WorkClaw privacy policy",
+    "url": "https://www.workclaw.com/privacy"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/workclaw"
+   },
+   {
+    "label": "Lindy pricing",
+    "url": "https://www.lindy.ai/pricing"
+   },
+   {
+    "label": "Relevance AI pricing",
+    "url": "https://relevanceai.com/pricing"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/workclaw/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 1,
+   "votes": 352,
+   "comments": 89,
+   "followers": 763,
+   "launched": "2026-06-20",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Ammon Brown",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@ammonbrown"
+   },
+   {
+    "name": "Will Ruben",
+    "role": "Founder of WorkClaw (ex-Instagram, Facebook, Coinbase)",
+    "url": "https://www.producthunt.com/@willruben"
+   },
+   {
+    "name": "Sierra Li-Xing Bustos",
+    "role": "Branding and creative at WorkClaw",
+    "url": "https://www.producthunt.com/@sierra_li_xing_bustos"
+   }
+  ],
+  "maker": {
+   "name": "Ammon Brown",
+   "url": "https://www.producthunt.com/@ammonbrown"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/8d27c8cf-988b-4d01-8a51-a0ded3e763d6.png?auto=format&fit=max&w=1400",
+    "alt": "WorkClaw graphic 'An AI team for your team' with puppet-style Claw coworkers labelled with roles such as Operations Manager and UX Researcher",
+    "credit": "Image: WorkClaw on Product Hunt",
+    "w": 1600,
+    "h": 1000
+   },
+   {
+    "url": "https://ph-files.imgix.net/fefdb8d9-8670-4d8b-9f64-e90fc8b73dd9.png?auto=format&fit=max&w=1400",
+    "alt": "WorkClaw graphic 'works in the apps you already use' with a Claw mascot in a Slack workspace and app icons",
+    "credit": "Image: WorkClaw on Product Hunt",
+    "w": 1600,
+    "h": 1000
+   },
+   {
+    "url": "https://ph-files.imgix.net/c3392691-d674-4bd2-b7b0-4a0855ab7deb.png?auto=format&fit=max&w=1400",
+    "alt": "WorkClaw skills library with skills such as Competitive Analysis and Data Visualization",
+    "credit": "Image: WorkClaw on Product Hunt",
+    "w": 1600,
+    "h": 1000
+   },
+   {
+    "url": "https://ph-files.imgix.net/34ceb9fc-47af-4d42-860a-9dec9c9b0099.png?auto=format&fit=max&w=1400",
+    "alt": "WorkClaw settings 'Control how each Claw responds': only when mentioned or to any relevant message in a channel",
+    "credit": "Image: WorkClaw on Product Hunt",
+    "w": 1600,
+    "h": 1000
+   }
+  ],
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Focus on real team workflows rather than one person chatting with one assistant",
+     "Agents that feel like part of the team in Slack"
+    ],
+    "asked": [
+     "Who is accountable when several Claws hand work to each other (teams often add an orchestrator Claw that reports to a person)",
+     "What stops a proactive Claw doing the wrong thing across thousands of apps (apps are connected per Claw, and you choose whether it is proactive and which channels it listens in)",
+     "How two Claws avoid clashing on the same task (each runs in its own VM and they coordinate by chat)",
+     "What people automate first (research, analysis, marketing, email triage and project management)"
+    ],
+    "criticised": [
+     "A commenter warned that proactive agents can 'do the wrong thing at scale' and asked about approvals and rollback for actions touching money or customers"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "one that acts on its own across 3,000 apps can do the wrong thing at scale before anyone notices.",
+     "author": "Jibran Ahmed",
+     "url": "https://www.producthunt.com/products/workclaw?comment=5467874"
+    },
+    {
+     "text": "The challenge with AI teammates isn’t creating them, it’s managing them.",
+     "author": "Moh",
+     "url": "https://www.producthunt.com/products/workclaw?comment=5467547"
+    },
+    {
+     "text": "what caught my attention is the focus on actual workflows rather than just chat.",
+     "author": "Harini Mukesh",
+     "url": "https://www.producthunt.com/products/workclaw?comment=5467642"
+    }
+   ]
+  },
+  "video_url": "https://www.youtube.com/watch?v=58XSs6qOvlo",
+  "video_title": "WorkClaw launch video"
+ }
+}

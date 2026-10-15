@@ -1,0 +1,98 @@
+{
+  "slug": "badge-3",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/badge-3",
+  "excerpt": "Badge is a Bengaluru app whose AI agent collects anonymous reviews from your past colleagues and turns them into a Trust Score that unlocks startup jobs. How it works, who it suits, alternatives and launch-day questions.",
+  "content": "<p>Badge is a professional reputation app. Instead of a résumé or LinkedIn recommendations, it builds your profile from anonymous reviews written by people you have actually worked with. You give the app access to your phone contacts, its AI agent finds colleagues from the same organisations and asks them a few short questions about how you work. The reviewer answers out loud or taps yes/no, and Badge writes the review. The reviews add up to a Trust Score out of 100.</p><p>The score is also the key to Badge's own jobs board. According to its site, entry jobs open at the base score of 60 and better roles unlock at 75, 85 and 95, and applicants for a role are ranked by score. Giving reviews to others is the main way to raise your own. For hiring managers, the pitch is a quick reference check built from real co-workers' feedback. Badge says more than 1,500 engineers from companies such as Zomato, CRED and Razorpay are on it, and lists startups such as GetCrux and Lighthouz AI as hiring there.</p><p>Badge was founded by Lokesh Motwani, who says on Product Hunt that he has hired engineers for 15 years. Its contact page gives an address in Bengaluru. It launched on Product Hunt on 7 July 2026 and finished #1 for the day with 427 points and 241 comments.</p><p><em>We have not tested Badge ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Hiring and careers",
+    "platform": "iOS and Android app, with a website",
+    "starts_at": "Free (Product Hunt lists it as free)",
+    "schema_category": "BusinessApplication",
+    "summary_short": "App whose AI agent collects anonymous peer reviews from past colleagues and turns them into a Trust Score that unlocks jobs",
+    "maker": {"name": "Lokesh Motwani", "url": "https://www.producthunt.com/@lokesh_motwani1"},
+    "team": [
+      {"name": "Lokesh Motwani", "role": "Founder and CEO", "url": "https://www.producthunt.com/@lokesh_motwani1"},
+      {"name": "Nishant B", "role": "Product Engineer", "url": "https://www.producthunt.com/@m_nishant_1992"}
+    ],
+    "ph": {"rank": 1, "votes": 427, "comments": 241, "followers": 1059, "launched": "2026-07-07", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/dbc627d5-6d62-4487-b9ad-776f6050d830.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Badge graphic 'Get the best opportunities with your Badge' beside a laptop showing a profile with a Trust Score of 78/100 and feedback from peers",
+       "credit": "Image: Badge via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/2990103f-a1ab-4e9f-9c72-54ce66ae9ebd.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Side-by-side phones comparing an anonymous Badge peer review with a named LinkedIn recommendation",
+       "credit": "Image: Badge via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/ccbf0d51-9b56-4a85-b2f6-8ab433b86e34.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Badge's review assistant 'Echo' guiding an anonymous review in under two minutes with yes/no questions such as 'Does Lokesh write meaningful tests?'",
+       "credit": "Image: Badge via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are a software engineer or other professional who wants recruiters to see verified feedback, not just a résumé",
+        "are looking for startup jobs and are willing to give reviews to colleagues to raise your score",
+        "hire for a startup and want a quick read on how a candidate worked with former colleagues"
+      ],
+      "not_fit": [
+        "don't want to share your phone contacts: the agent uses them to find colleagues to ask (it is an optional permission, per the privacy policy)",
+        "want to choose exactly who reviews you: the makers say anyone verified at the same organisation can review you",
+        "need a formal background check: Badge collects anonymous peer opinions, which the makers expect to even out over 20–30 reviews"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on getbadge.app as of 14 October 2026.",
+      "url": "https://getbadge.app/",
+      "plans": [],
+      "notes": [
+        "Product Hunt lists Badge as free.",
+        "The site invites recruiters to a separate recruiters section but shows no prices for it."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. None works quite the same way; the closest overlap is in screening and referral-based hiring. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Zeko AI", "url": "https://zeko.ai/", "what": "Enterprise AI platform for evaluating candidates and verifying shortlists", "starts_at": "See its pricing page", "ph_rating": 4.67, "ph_reviews": 15,
+         "difference": "Sold to enterprise hiring teams (its site offers demos), and assesses candidates directly rather than collecting colleagues' reviews."},
+        {"name": "Peerlist", "url": "https://peerlist.io", "what": "Professional network for showing your work", "starts_at": "See its pricing page", "ph_rating": 4.64, "ph_reviews": 28,
+         "difference": "A public profile and network built around what you show yourself, not anonymous feedback from others."},
+        {"name": "Recrooit", "url": "https://www.producthunt.com/products/recrooit", "what": "Hiring through referrals", "starts_at": "See its pricing page", "ph_rating": 4.91, "ph_reviews": 11,
+         "difference": "Built around people referring candidates, while Badge builds a score from reviews of past work."}
+      ],
+      "more": "Product Hunt also lists WonsultingAI (AI job-search tools) and Foundire (automated first-round interviews)."
+    },
+    "reviews": {"count": 2, "rating": 5, "url": "https://www.producthunt.com/products/badge-3/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/badge-3",
+      "quotes": [
+        {"author": "Gal Dayan", "text": "a candidate can invite the 5 people who like them most out of a team of 30 and skip the rest.",
+         "reply": "Lokesh Motwani: the agent finds colleagues from your contact book and reaches out to all of them; reviews are verified when both people worked at the same organisation."},
+        {"author": "Hanife Erhal", "text": "The anonymous angle is clever, feels way more honest than the glowing recommendations people slap on LinkedIn.",
+         "reply": "Lokesh Motwani: for people who ignore the request, the AI agent sends the follow-ups."},
+        {"author": "Swati Paliwal", "text": "Anonymous feedback tends to be more honest, but it can also be more biased.",
+         "reply": "Lokesh Motwani: with a sample of 20–30 reviews, outliers should matter less."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=getbadge.app&f=live", "profile_url": "https://twitter.com/getbadgeapp"}
+    },
+    "faq": [
+      {"q": "What is Badge?", "a": "An app that collects anonymous reviews from people you have worked with, using an AI agent, and turns them into a Trust Score. The score unlocks jobs on Badge's own jobs board. It was founded by Lokesh Motwani and launched on Product Hunt on 7 July 2026."},
+      {"q": "How much does Badge cost?", "a": "Its site publishes no prices, and Product Hunt lists it as free."},
+      {"q": "How does the Trust Score unlock jobs?", "a": "According to Badge, every job unlocks at a score. Entry jobs open at the base score of 60, and better roles at 75, 85 and 95. Applicants to a role are ranked by score, and the score is recalculated live, so it can go down as well as up."},
+      {"q": "Are the reviews anonymous?", "a": "Yes. Badge says every review given or received is anonymous. Reviews count as verified when the reviewer and the person reviewed worked at the same organisation, according to the makers on Product Hunt."},
+      {"q": "Can I choose who reviews me?", "a": "Only partly. The makers say the agent finds colleagues in your contact book and reaches out to them; on iOS you can select some, but anyone can still review you using your LinkedIn or phone number."},
+      {"q": "What data does Badge collect?", "a": "Its privacy policy lists account details, work history, device contacts (with permission) to find colleagues, review content, voice recordings for audio feedback, and usage and device data. It says Badge does not sell personal information."},
+      {"q": "Where is Badge based?", "a": "Its contact page gives an address at WeWork Galaxy in Bengaluru, Karnataka."}
+    ],
+    "sources": [
+      {"label": "Badge official site", "url": "https://getbadge.app/"},
+      {"label": "Badge contact page", "url": "https://getbadge.app/contact"},
+      {"label": "Badge privacy policy", "url": "https://getbadge.app/privacy"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/badge-3"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/badge-3/launches/badge-3"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/badge-3/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/badge-3/alternatives"},
+      {"label": "Zeko AI", "url": "https://zeko.ai/"}
+    ]
+  }
+}

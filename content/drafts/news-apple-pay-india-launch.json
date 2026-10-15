@@ -1,0 +1,61 @@
+{
+  "type": "post",
+  "title": "Apple Pay launches in India with Axis Bank credit cards, but no UPI",
+  "excerpt": "Apple Pay went live in India on 30 September with Axis Bank Visa and Mastercard credit cards only. No UPI or RuPay yet. What launched and what it means.",
+  "content": "<p>Apple Pay launched in India on 30 September 2026, <a href=\"https://www.apple.com/in/newsroom/2026/09/apple-pay-launches-in-india/\">Apple announced</a>, with Axis Bank as its only launch partner. It works with Axis Bank's Visa and Mastercard credit cards, but not with UPI or RuPay cards, the two domestic rails that carry most of India's digital payments.</p>\n<h2>What launched</h2>\n<p>Apple Pay works on iPhone, iPad and Apple Watch, and Apple says Mac support is coming. Users add an eligible card through the Wallet app or the Axis Bank app. In shops, they tap the phone or watch on a contactless terminal and confirm with Face ID, Touch ID or the device passcode. Apple says no PIN or OTP (one-time password) is needed at checkout. It also works for online and in-app purchases.</p>\n<p>Apple says card numbers are not stored on the device or on its servers, and that it does not keep transaction details that can be traced back to the user. Merchants named at launch include Blinkit, Zomato, Croma, Reliance brands, Tata 1mg, Ixigo and Chaayos. Apple also listed payment providers BillDesk, Cashfree, Juspay, Mswipe, Paytm, PayU, Pine Labs and Razorpay.</p>\n<h2>Which banks and cards</h2>\n<p>For now, only Axis Bank credit cards on Visa and Mastercard are supported. Axis had 16.3 million credit cards outstanding at the end of August, out of 124 million across India, according to Reuters figures based on central bank data and <a href=\"https://gulfnews.com/business/banking/apple-pay-finally-launches-in-india-after-years-on-the-sidelines-but-theres-a-catch-1.500693857\">carried by Gulf News</a>. That puts roughly one in eight Indian credit cards within reach of Apple Pay.</p>\n<p>HDFC Bank, ICICI Bank and SBI Card are not supported at launch while commercial talks continue, <a href=\"https://techcrunch.com/2026/09/29/apple-pay-set-to-launch-in-india-with-axis-bank-today-sources-say/\">TechCrunch reported</a>. Citing people familiar with the talks, it said Apple was seeking about 0.2% of each transaction, a meaningful share of the margin banks and payment companies earn.</p>\n<h2>How it compares with UPI apps</h2>\n<p>UPI moves money directly between bank accounts, usually by scanning a QR code, and it is far bigger than India's card market. It handled 24.51 billion transactions worth ₹29.82 lakh crore in August 2026, according to <a href=\"https://www.businesstoday.in/technology/news/story/apple-pay-is-finally-in-india-but-can-it-challenge-upi-heres-what-you-need-to-know-558820-2026-09-30\">Business Today</a>. (One lakh crore is one trillion rupees.) PhonePe processed 11.19 billion of those transactions and Google Pay 7.91 billion, together about 78% of UPI volume, according to NPCI data cited by <a href=\"https://www.medianama.com/2026/09/223-apple-pay-india-upi-licence/\">MediaNama</a>.</p>\n<p>Apple Pay is a different product. It stores cards in a digital wallet and works where contactless card terminals or card checkouts already exist. In India, PhonePe and Google Pay are built mainly around UPI. So Apple Pay competes for card spending, which leans towards premium users, rather than for the everyday QR payments where UPI dominates. iPhones made up 28% of India's smartphone market by value in 2025, according to TechCrunch. Tarun Pathak of Counterpoint Research told Business Today that UPI will keep dominating everyday payments, while Apple Pay mainly strengthens Apple's own ecosystem.</p>\n<h2>The rules behind the timing</h2>\n<p>The Reserve Bank of India's <a href=\"https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12898&Mode=0\">directions on authenticating digital payments</a>, issued in September 2025 and in force since 1 April 2026, list device-native biometrics alongside OTPs and PINs as accepted ways to verify a payment. That gives Face ID-style checks clear standing for card payments. Separately, from 15 October a 0.4% merchant fee will apply to some UPI merchant payments above ₹2,000, according to <a href=\"https://inc42.com/buzz/with-upi-mdr-clarity-phonepe-eyes-ipo-by-march-2027/\">Inc42</a>. That narrows, slightly, the cost gap between UPI and cards for larger purchases.</p>\n<h2>What it means for Indian fintech</h2>\n<p>Payment gateways such as Razorpay, Pine Labs, Juspay and Cashfree gain a new checkout option, which could lift conversion among iPhone users. Card issuers now have a reason to compete for those customers, and banks left out of the launch may feel pressure to sign up. To offer UPI, Apple would need approval from NPCI, which runs UPI, a partner bank and compliance with data-localisation rules, MediaNama noted. NPCI's 30% cap on any single UPI app's market share takes effect on 31 December 2026, which could make room for new entrants. Apple has not said it plans to apply. Track fintech hiring on our <a href=\"/jobs/\">jobs board</a> and more stories in <a href=\"/news/\">news</a>.</p>\n<h2>Why it matters</h2>\n<p>Apple Pay will not threaten UPI soon, but it gives India's card ecosystem a polished tap-to-pay option just as UPI's own economics start to change. The deals that decide its reach are bank deals. If HDFC Bank, ICICI Bank and SBI Card sign up, Apple Pay becomes a real channel for premium spending. If they don't, it stays a niche feature for Axis cardholders.</p>",
+  "category": "fintech",
+  "tags": [
+    "Apple Pay",
+    "Apple",
+    "Axis Bank",
+    "UPI",
+    "Digital payments",
+    "PhonePe",
+    "Google Pay",
+    "RBI"
+  ],
+  "sources": [
+    {
+      "url": "https://www.apple.com/in/newsroom/2026/09/apple-pay-launches-in-india/",
+      "publisher": "Apple Newsroom (India)",
+      "date": "2026-09-30",
+      "claim": "Apple Pay launched in India 30 Sep 2026 with Axis Bank Visa/Mastercard credit cards; iPhone, iPad, Apple Watch, Mac coming soon; Face ID/Touch ID/passcode, no PIN or OTP; card add via Wallet or Axis app; privacy claims; named merchants and payment providers"
+    },
+    {
+      "url": "https://techcrunch.com/2026/09/29/apple-pay-set-to-launch-in-india-with-axis-bank-today-sources-say/",
+      "publisher": "TechCrunch",
+      "date": "2026-09-29",
+      "claim": "HDFC Bank, ICICI Bank, SBI Card not at launch amid commercial talks; RuPay excluded; Apple seeking ~0.2% per transaction (sources); iPhone 28% of India smartphone market by value in 2025"
+    },
+    {
+      "url": "https://gulfnews.com/business/banking/apple-pay-finally-launches-in-india-after-years-on-the-sidelines-but-theres-a-catch-1.500693857",
+      "publisher": "Gulf News (Reuters)",
+      "date": "2026-09-30",
+      "claim": "Axis Bank 16.3M credit cards outstanding end-August vs 124M in India (central bank data, via Reuters)"
+    },
+    {
+      "url": "https://www.businesstoday.in/technology/news/story/apple-pay-is-finally-in-india-but-can-it-challenge-upi-heres-what-you-need-to-know-558820-2026-09-30",
+      "publisher": "Business Today",
+      "date": "2026-09-30",
+      "claim": "UPI: 24.51B transactions worth Rs 29.82 lakh crore in August 2026; Counterpoint's Tarun Pathak on UPI dominance and Apple ecosystem"
+    },
+    {
+      "url": "https://www.medianama.com/2026/09/223-apple-pay-india-upi-licence/",
+      "publisher": "MediaNama",
+      "date": "2026-09-30",
+      "claim": "August 2026 NPCI data: PhonePe 11.19B, Google Pay 7.91B UPI transactions (~78% combined); NPCI 30% cap deadline 31 Dec 2026; UPI licence would need NPCI approval, PSP bank, data localisation"
+    },
+    {
+      "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12898&Mode=0",
+      "publisher": "Reserve Bank of India",
+      "date": "2025-09-25",
+      "claim": "Authentication mechanisms for digital payment transactions Directions, 2025: effective 1 April 2026; factors include OTP, PIN and device-native biometrics"
+    },
+    {
+      "url": "https://inc42.com/buzz/with-upi-mdr-clarity-phonepe-eyes-ipo-by-march-2027/",
+      "publisher": "Inc42",
+      "date": "2026-09-16",
+      "claim": "From 15 Oct 2026, 0.4% MDR on UPI merchant payments above Rs 2,000"
+    }
+  ]
+}

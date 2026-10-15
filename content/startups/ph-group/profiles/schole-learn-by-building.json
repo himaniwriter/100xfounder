@@ -1,0 +1,239 @@
+{
+  "slug": "schole-learn-by-building",
+  "ph_url": "https://www.producthunt.com/posts/schole-learn-by-building",
+  "existing_listing_slug": null,
+  "website": "https://schole.ai",
+  "excerpt": "Scholé builds personalised AI lessons around the tools and tasks people use at work. Free plan, Pro $99 a month, Teams $95 a person. Pricing and alternatives.",
+  "content": "<p>Scholé is an AI learning platform for people at work. Instead of a fixed course, it builds lessons around a learner's role, tools and pace, and picks a format for each part of a lesson from what its site calls 24 ways to learn: explanations, explainer videos and audio, slide decks, quizzes, code exercises with a checker, role-plays, and hands-on tasks done inside real tools such as Notion, Excel and PowerPoint. An assistant called Olé answers questions grounded in your own documents.</p><p>For teams, Scholé gives each employee a learning path and gives HR and L&amp;D leaders dashboards for completion, mastery and adoption that can be queried in plain language. It connects through APIs, webhooks and HRIS connectors, and can sit on top of an existing LMS. The site says it never trains on customer data, holds ISO 27001 certification with SOC 2 in progress, runs on Microsoft Azure, and teaches in English, French, German and Italian.</p><p>Scholé Inc. has offices in San Francisco and on the Unlimitrust Campus in Lausanne. Its about page describes it as a spin-out of UC Berkeley and EPFL's ML for Education lab, founded by Vinitra Swamy, PhD (CEO) and Paola Mejia, PhD (CTO), and says it has raised $3M from Ace Ventures, The House Fund and Fund F.</p><p>Scholé launched on Product Hunt on 24 September 2026 and finished #1 for the day, with 378 upvotes and 56 comments. It has 1 Product Hunt review averaging 5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Scholé ourselves. This page brings together its official site, pricing and about pages, its Product Hunt listing and the official pages of comparable platforms, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "AI learning and training",
+    "platform": "Web",
+    "starts_at": "Free; Pro $99/month",
+    "schema_category": "EducationalApplication",
+    "summary_short": "Personalised AI lessons built around the tools and tasks people use at work",
+    "maker": {
+      "name": "Scholé Inc.",
+      "url": "https://schole.ai/about"
+    },
+    "use_cases": [
+      "Learning a new AI tool or feature soon after it is announced",
+      "Giving each employee a training path tied to their role and tools",
+      "Practising skills with role-plays, scenarios and hands-on tasks in real tools",
+      "Tracking team completion and mastery for L&D reporting",
+      "Keeping AI literacy training records, which the site links to Article 4 of the EU AI Act"
+    ],
+    "audience": {
+      "fit": [
+        "professionals who want short, practical lessons on the tools they already use",
+        "HR and L&D teams that want per-person learning paths and progress dashboards",
+        "companies that already have an LMS and want a personalisation layer on top"
+      ],
+      "not_fit": [
+        "learners who want accredited university courses or degrees",
+        "people who need lessons in languages other than English, French, German or Italian",
+        "anyone wanting more than a taste for free: the free plan is limited to a lesson or two"
+      ]
+    },
+    "pricing": {
+      "intro": "Scholé has a free plan, a Pro plan for individuals and a Teams plan. Prices are as shown on its pricing page with a \"$\" sign; the page does not name the currency.",
+      "url": "https://schole.ai/pricing",
+      "checked": "2026-10-15",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "No credit card. Personalised learning path, Olé AI tutor, role-specific modules, limited audio and video formats, badges and community forum. Lesson limit: the Free plan card says 'Try any 2 lessons' (Olé AI tutor: 2 lessons; role-specific modules: 2 lessons), while the comparison table on the same page lists the Olé AI tutor as '1 Lesson' and lessons on demand as '1 Total'"
+        },
+        {
+          "name": "Pro",
+          "price": "$99/month",
+          "amount": 99,
+          "currency": "USD",
+          "detail": "Unlimited personalised lessons and Olé AI tutor, all audio and video formats, document upload"
+        },
+        {
+          "name": "Teams",
+          "price": "$95 per person/month (minimum 2; shown against a struck-through $119), or $950 per person/year",
+          "amount": 95,
+          "currency": "USD",
+          "detail": "Everything in Pro plus admin dashboard, seat management, team progress tracking, an AI coach based on your company knowledge base, scenario-based learning, priority onboarding and EU AI Act Article 4 training records. Extra people $75 a month"
+        }
+      ],
+      "notes": [
+        "More than 100 users: custom quote through a demo; volume discounts are offered for larger teams.",
+        "Cancellations, plan changes and refund requests go by email to team@schole.ai; the FAQ answers 'Can I get a refund?' with 'Yes'.",
+        "Billing: the pricing page has a monthly/yearly toggle, and its FAQ says 'Plans are annual, billed monthly', adding that paying once for the year saves more. The Teams FAQ says yearly payment gives 2 months free ($950 per person, $750 per additional person). Check the billing term at checkout."
+      ]
+    },
+    "alternatives": {
+      "intro": "Other ways to train staff with AI help. Prices come from each product's own pricing page, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "Sana Learn",
+          "url": "https://sanalabs.com/",
+          "what": "AI-powered learning platform covering LMS, LXP, authoring and virtual classroom",
+          "starts_at": "Quote only; plans start at 300 users",
+          "difference": "Built for large organisations that want a full LMS; Scholé sells to individuals and small teams too."
+        },
+        {
+          "name": "360Learning",
+          "url": "https://360learning.com/",
+          "what": "AI-powered learning management system for workforce upskilling and customer education",
+          "starts_at": "Team $8 per user/month (up to 100 users)",
+          "difference": "Cheaper per seat and focused on course authoring and delivery, rather than lessons generated around each person's tools."
+        },
+        {
+          "name": "Coursera for Teams",
+          "url": "https://www.coursera.org/business/teams",
+          "what": "Coursera's catalogue of courses and certificates for groups of 2 to 499 employees",
+          "starts_at": "See its pricing page",
+          "difference": "A large library of existing courses from universities and companies, rather than lessons built on the fly."
+        }
+      ]
+    },
+    "reviews": {
+      "count": 1,
+      "rating": 5,
+      "url": "https://www.producthunt.com/products/schole-2/reviews",
+      "as_of": "2026-10-14"
+    },
+    "pros": [
+      "Lessons adapt to a learner's role and tools instead of following one fixed course",
+      "Wide range of formats, including hands-on tasks inside real tools",
+      "Free plan with no credit card",
+      "Says it never trains on customer data and holds ISO 27001"
+    ],
+    "cons": [
+      "Pro at $99 a month is expensive for one person",
+      "The free plan allows only one or two lessons (the page gives both figures)",
+      "The pricing page contradicts itself on free lesson limits and annual billing",
+      "Four interface languages so far"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/schole-2",
+      "x": {
+        "none": "We found no posts about Scholé on X yet.",
+        "search_url": "https://x.com/search?q=schole.ai&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Scholé?",
+        "a": "An AI learning platform that builds personalised lessons around the tools, role and pace of each learner, with formats from short explanations to role-plays and hands-on tasks in real tools."
+      },
+      {
+        "q": "How much does Scholé cost?",
+        "a": "There is a free plan with no credit card. Pro is $99 a month. Teams is $95 per person a month (minimum two people) or $950 per person a year, and organisations over 100 users get a custom quote."
+      },
+      {
+        "q": "Does Scholé train AI models on my data?",
+        "a": "Its site says it never trains on customer data, runs encrypted on Microsoft Azure, holds ISO 27001 certification and is working towards SOC 2."
+      },
+      {
+        "q": "Can it work with our existing LMS?",
+        "a": "The site says it can sit on top of an existing LMS as a personalisation layer and connects through APIs, webhooks and HRIS connectors."
+      },
+      {
+        "q": "Which languages does Scholé support?",
+        "a": "English, French, German and Italian."
+      },
+      {
+        "q": "Who is behind Scholé?",
+        "a": "Scholé Inc., co-founded by Vinitra Swamy, PhD (CEO) and Paola Mejia, PhD (CTO). Its about page calls it a spin-out of UC Berkeley and EPFL's ML for Education lab."
+      },
+      {
+        "q": "What are the alternatives to Scholé?",
+        "a": "Sana Learn and 360Learning are AI-assisted learning platforms for companies, and Coursera for Teams offers a large ready-made course library."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Scholé official site",
+        "url": "https://schole.ai/"
+      },
+      {
+        "label": "Scholé pricing",
+        "url": "https://schole.ai/pricing"
+      },
+      {
+        "label": "Scholé about",
+        "url": "https://schole.ai/about"
+      },
+      {
+        "label": "Scholé contact",
+        "url": "https://schole.ai/contact"
+      },
+      {
+        "label": "Product Hunt listing",
+        "url": "https://www.producthunt.com/products/schole-2"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/schole-learn-by-building"
+      },
+      {
+        "label": "Sana pricing",
+        "url": "https://sanalabs.com/pricing"
+      },
+      {
+        "label": "360Learning pricing",
+        "url": "https://360learning.com/pricing/"
+      },
+      {
+        "label": "Coursera for Teams",
+        "url": "https://www.coursera.org/business/teams"
+      }
+    ],
+    "ph": {
+      "rank": 1,
+      "votes": 378,
+      "comments": 56,
+      "followers": 1509,
+      "launched": "2026-09-24",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Güneş Ozgün",
+        "role": "Product Engineer",
+        "url": "https://www.producthunt.com/@gunes_ozgun"
+      },
+      {
+        "name": "Eva Przybyla",
+        "role": "Where design meets code meets story",
+        "url": "https://www.producthunt.com/@whatevacreates"
+      },
+      {
+        "name": "Amine Ben Ahmed",
+        "role": "Engineer",
+        "url": "https://www.producthunt.com/@amine_ben_ahmed1"
+      },
+      {
+        "name": "Abhinand Shibu",
+        "role": "In love with edtech.",
+        "url": "https://www.producthunt.com/@abhinand_shibu"
+      },
+      {
+        "name": "Paola Mejia",
+        "role": "Co-founder",
+        "url": "https://www.producthunt.com/@paola_mejia"
+      },
+      {
+        "name": "Vinitra Swamy",
+        "role": "building Scholé AI, co-founder & ceo",
+        "url": "https://www.producthunt.com/@vinitra"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/1db0a530-e48f-4e2b-a03f-3cb06c536982.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Scholé on Product Hunt",
+        "alt": "Scholé AI billboard-style graphic 'Learning at your fingertips' with cartoon learning characters and a reaching hand"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes."
+}

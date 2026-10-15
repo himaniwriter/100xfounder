@@ -1,0 +1,224 @@
+{
+ "slug": "teachoo-2",
+ "ph_url": "https://www.producthunt.com/products/teachoo-2",
+ "existing_listing_slug": null,
+ "website": "https://teachoo.ai/",
+ "excerpt": "Teachoo is a free AI homework tutor from the iAsk team that guides students one question at a time instead of giving answers, with photo input and flashcards.",
+ "content": "<p>Teachoo is an AI homework helper that tries to teach rather than hand over answers. You type a problem or photograph a worksheet or whiteboard, and in its default Guide Me mode it asks one focused question at a time, gives feedback on each step and offers hints when you are stuck, so you reach the answer yourself. It covers maths, science, writing, history, logic puzzles and coding at any grade, draws graphs and labelled diagrams on the spot when a visual helps, and answers in the language you ask in, such as Spanish, Hindi or Arabic. There is also an option to explain a topic via a video.</p><p>Beyond single problems, Teachoo has flashcards: you write your own question-and-answer cards, the tutor quizzes you, grades what you type and schedules each card with spaced repetition. A progress page tracks solved sessions, accuracy and streaks.</p><p>The site says Teachoo is made by the makers of the iAsk AI answer engine. Its Product Hunt makers are Haylli Weintraub and Phillip DeRenzo; it launched there on 2 October 2026, hunted by Ben Lang, and finished #3 for the day with 253 upvotes and 15 comments. It should not be confused with teachoo.com, a separate Indian site for NCERT solutions and courses. It is free to use.</p><p><em>We have not tested Teachoo ourselves. This page brings together its official site and flashcards page, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Education",
+  "platform": "Web app",
+  "starts_at": "Free",
+  "schema_category": "EducationalApplication",
+  "summary_short": "AI tutor that guides students through homework one question at a time",
+  "use_cases": [
+   "Working through a maths or science problem step by step with hints",
+   "Photographing a worksheet and getting guided through the exact question",
+   "Seeing a graph or diagram drawn when a concept needs a visual",
+   "Learning in Hindi, Spanish, Arabic or another language",
+   "Revising with self-written flashcards and spaced repetition"
+  ],
+  "audience": {
+   "fit": [
+    "are a student who wants to understand homework rather than copy answers",
+    "are a parent looking for a tutor that doesn't just solve the problem",
+    "are an adult relearning school maths or science"
+   ],
+   "not_fit": [
+    "need a quick answer on a deadline: guided mode is slower by design",
+    "want board-specific NCERT solutions, which is what the similarly named teachoo.com offers",
+    "need school licences or teacher dashboards, which the site does not mention"
+   ]
+  },
+  "pricing": {
+   "intro": "Teachoo is free to use, according to its Product Hunt listing and its launch graphics. Its website has no pricing page and lists no paid plans.",
+   "url": "https://teachoo.ai/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Teachoo",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Guided tutoring, photo upload, visual explanations, flashcards and progress tracking"
+    }
+   ]
+  },
+  "alternatives": {
+   "intro": "Other AI tutors that guide rather than solve. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Khanmigo",
+     "url": "https://www.khanmigo.ai/",
+     "what": "Khan Academy's AI tutor and teaching assistant",
+     "starts_at": "$4/month or $44/year for learners and families",
+     "difference": "Tied to Khan Academy's course library; Teachoo works from any problem you type or photograph."
+    },
+    {
+     "name": "Photomath",
+     "url": "https://photomath.com/",
+     "what": "Maths app that solves photographed problems with step-by-step explanations",
+     "starts_at": "See its pricing page",
+     "difference": "Shows the worked solution for maths; Teachoo asks you questions to get you there and covers more subjects."
+    }
+   ]
+  },
+  "pros": [
+   "Free to use",
+   "Guides with questions and hints instead of giving the answer",
+   "Accepts photos of worksheets and whiteboards",
+   "Draws graphs and diagrams when needed",
+   "Works in many languages, including Hindi",
+   "Built-in spaced-repetition flashcards and progress tracking"
+  ],
+  "cons": [
+   "No information on how it is funded or whether paid plans will follow",
+   "Guided mode is slower when you just need to check an answer",
+   "Like any AI tutor, a wrong step can still be explained confidently"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/teachoo-2",
+   "x": {
+    "none": "We found no posts about Teachoo's AI tutor on X yet.",
+    "search_url": "https://x.com/search?q=teachoo.ai&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Teachoo?",
+    "a": "An AI homework helper that guides students step by step with questions, feedback and hints instead of giving the answer, across maths, science, writing, history, logic and coding."
+   },
+   {
+    "q": "Is Teachoo free?",
+    "a": "Yes. Its Product Hunt listing and launch graphics say Teachoo is free to use, and the website lists no paid plans."
+   },
+   {
+    "q": "Can I upload a photo of my homework?",
+    "a": "Yes. You can photograph a worksheet or whiteboard and Teachoo guides you through that exact problem."
+   },
+   {
+    "q": "Does it work in Hindi?",
+    "a": "The site says you can ask in Spanish, Hindi, Arabic or other languages and the whole lesson answers in your language."
+   },
+   {
+    "q": "Is this the same as teachoo.com?",
+    "a": "They are different websites. This Teachoo is at teachoo.ai and says it is made by the makers of iAsk; teachoo.com is an Indian site for NCERT solutions and courses."
+   },
+   {
+    "q": "What are the alternatives to Teachoo?",
+    "a": "Khanmigo, Khan Academy's AI tutor at $4 a month, or Photomath for step-by-step maths solutions."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Teachoo official site",
+    "url": "https://teachoo.ai/"
+   },
+   {
+    "label": "Teachoo flashcards",
+    "url": "https://teachoo.ai/flashcards"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/teachoo-2"
+   },
+   {
+    "label": "Khanmigo pricing",
+    "url": "https://www.khanmigo.ai/pricing"
+   },
+   {
+    "label": "Photomath",
+    "url": "https://photomath.com/"
+   },
+   {
+    "label": "Teachoo.com (separate company)",
+    "url": "https://www.teachoo.com/"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/teachoo-2/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 3,
+   "votes": 253,
+   "comments": 15,
+   "followers": 703,
+   "launched": "2026-10-02",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Haylli Weintraub",
+    "role": "Product enthusiast",
+    "url": "https://www.producthunt.com/@haylli_weintraub"
+   },
+   {
+    "name": "Phillip DeRenzo",
+    "role": "Maker; growth",
+    "url": "https://www.producthunt.com/@phillipderenzo"
+   }
+  ],
+  "maker": {
+   "name": "Haylli Weintraub",
+   "url": "https://www.producthunt.com/@haylli_weintraub"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/319ba9c4-e5f5-49a7-acf4-37a479285de2.png?auto=format&fit=max&w=1400",
+    "alt": "Teachoo graphic 'Meet your AI tutor': asked to solve x² − 5x + 6 = 0, it asks which two numbers multiply to 6 and add to −5",
+    "credit": "Image: Teachoo on Product Hunt",
+    "w": 5080,
+    "h": 3040
+   },
+   {
+    "url": "https://ph-files.imgix.net/7bc73e90-dd84-4674-8b49-516412eced92.png?auto=format&fit=max&w=1400",
+    "alt": "Teachoo graphic 'Work through it together': after the answer '2 and 3?' it points out the signs are wrong",
+    "credit": "Image: Teachoo on Product Hunt",
+    "w": 5080,
+    "h": 3040
+   },
+   {
+    "url": "https://ph-files.imgix.net/f0d375c1-a143-4a4d-8e3c-f3383af8866f.png?auto=format&fit=max&w=1400",
+    "alt": "Teachoo graphic 'Need a hint?' with a worked mini-example and Bigger hint and I'm Stuck buttons",
+    "credit": "Image: Teachoo on Product Hunt",
+    "w": 5080,
+    "h": 3040
+   },
+   {
+    "url": "https://ph-files.imgix.net/23aac09a-fb2a-4374-b808-b7503981acc5.png?auto=format&fit=max&w=1400",
+    "alt": "Teachoo graphic 'You've got it' confirming x = 2 or x = 3 and ending the session",
+    "credit": "Image: Teachoo on Product Hunt",
+    "w": 5080,
+    "h": 3040
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Phillip DeRenzo says Teachoo comes from the team behind iAsk.ai, which he says has handled nearly a billion searches. The problem they set out to solve is familiar: you read a clear explanation, think you have got it, and then have no idea where to start on the next problem.",
+    "Teachoo is their free AI tutor for that gap. You type a question or upload a photo, and it guides you through the reasoning one question at a time, responding to your attempts; Bigger hint gives another nudge and I'm Stuck explains the step. He also pointed to visual explanations, spaced-repetition flashcards and a progress dashboard."
+   ],
+   "attribution": "Phillip DeRenzo, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/teachoo-2?comment=5906435"
+  },
+  "video_url": "https://www.youtube.com/watch?v=BTL7ur207R4",
+  "video_title": "Teachoo demo video",
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Guiding students to understand rather than copy the answer"
+    ],
+    "asked": [
+     "Whether it can read a photo of a notebook or handwritten question (yes; clear handwriting and good light help)",
+     "How much help it gives at each step (it starts small and responds to what the student tries; Bigger hint and I'm Stuck add more)"
+    ],
+    "criticised": [
+     "One tester saw maths formatting shown as stray dollar signs, which the maker said they would look at"
+    ]
+   }
+  }
+ }
+}

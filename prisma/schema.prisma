@@ -512,3 +512,139 @@ model UserNotificationPreference {
 
   @@map("user_notification_preferences")
 }
+
+// ---------------------------------------------------------------------------
+// Launch discovery + founder outreach (Product Hunt import pipeline)
+// ---------------------------------------------------------------------------
+
+model LaunchProduct {
+  id               String              @id @default(uuid()) @db.Uuid
+  source           String              @default("producthunt")
+  externalId       String              @map("external_id")
+  slug             String              @unique
+  name             String
+  tagline          String
+  description      String?
+  websiteUrl       String?             @map("website_url")
+  sourceUrl        String              @map("source_url")
+  thumbnailUrl     String?             @map("thumbnail_url")
+  votesCount       Int                 @default(0) @map("votes_count")
+  commentsCount    Int                 @default(0) @map("comments_count")
+  topics           String[]            @default([])
+  launchedAt       DateTime            @map("launched_at")
+  featuredAt       DateTime?           @map("featured_at")
+  dailyRank        Int?                @map("daily_rank")
+  selectionReasons String[]            @default([]) @map("selection_reasons")
+  isPublished      Boolean             @default(true) @map("is_published")
+  contactsCheckedAt DateTime?          @map("contacts_checked_at")
+  createdAt        DateTime            @default(now()) @map("created_at")
+  updatedAt        DateTime            @updatedAt @map("updated_at")
+  contacts         OutreachContact[]
+  spotlights       FounderSpotlight[]
+
+  @@unique([source, externalId])
+  @@index([launchedAt(sort: Desc)])
+  @@index([isPublished, launchedAt(sort: Desc)])
+  @@map("launch_products")
+}
+
+model OutreachContact {
+  id                 String            @id @default(uuid()) @db.Uuid
+  productId          String            @db.Uuid @map("product_id")
+  email              String
+  name               String?
+  role               String?
+  twitterUrl         String?           @map("twitter_url")
+  linkedinUrl        String?           @map("linkedin_url")
+  discoveredFrom     String?           @map("discovered_from")
+  status             String            @default("new")
+  step               Int               @default(0)
+  nextSendAt         DateTime?         @map("next_send_at")
+  lastSentAt         DateTime?         @map("last_sent_at")
+  repliedAt          DateTime?         @map("replied_at")
+  token              String            @unique
+  notes              String?
+  createdAt          DateTime          @default(now()) @map("created_at")
+  updatedAt          DateTime          @updatedAt @map("updated_at")
+  product            LaunchProduct     @relation(fields: [productId], references: [id], onDelete: Cascade)
+  messages           OutreachMessage[]
+  spotlight          FounderSpotlight?
+
+  @@unique([productId, email])
+  @@index([status, nextSendAt])
+  @@index([email])
+  @@map("outreach_contacts")
+}
+
+model OutreachMessage {
+  id                String          @id @default(uuid()) @db.Uuid
+  contactId         String          @db.Uuid @map("contact_id")
+  step              Int
+  subject           String
+  body              String
+  providerMessageId String?         @map("provider_message_id")
+  status            String          @default("sent")
+  error             String?
+  sentAt            DateTime        @default(now()) @map("sent_at")
+  contact           OutreachContact @relation(fields: [contactId], references: [id], onDelete: Cascade)
+
+  @@index([contactId])
+  @@index([sentAt(sort: Desc)])
+  @@map("outreach_messages")
+}
+
+model OutreachSuppression {
+  email     String   @id
+  reason    String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("outreach_suppressions")
+}
+
+model FounderSpotlight {
+  id                String           @id @default(uuid()) @db.Uuid
+  productId         String           @db.Uuid @map("product_id")
+  contactId         String?          @unique @db.Uuid @map("contact_id")
+  slug              String           @unique
+  founderName       String           @map("founder_name")
+  role              String?
+  email             String
+  photoUrl          String?          @map("photo_url")
+  location          String?
+  storyOrigin       String           @map("story_origin")
+  storyProblem      String           @map("story_problem")
+  storyTraction     String?          @map("story_traction")
+  storyAdvice       String?          @map("story_advice")
+  storyNext         String?          @map("story_next")
+  twitterUrl        String?          @map("twitter_url")
+  linkedinUrl       String?          @map("linkedin_url")
+  instagramHandle   String?          @map("instagram_handle")
+  consentWebsite    Boolean          @default(false) @map("consent_website")
+  consentInstagram  Boolean          @default(false) @map("consent_instagram")
+  status            String           @default("submitted")
+  publishedAt       DateTime?        @map("published_at")
+  createdAt         DateTime         @default(now()) @map("created_at")
+  updatedAt         DateTime         @updatedAt @map("updated_at")
+  product           LaunchProduct    @relation(fields: [productId], references: [id], onDelete: Cascade)
+  contact           OutreachContact? @relation(fields: [contactId], references: [id], onDelete: SetNull)
+
+  @@index([status, publishedAt(sort: Desc)])
+  @@map("founder_spotlights")
+}
+
+model InstagramQueueItem {
+  id         String    @id @default(uuid()) @db.Uuid
+  kind       String
+  refKey     String    @unique @map("ref_key")
+  title      String
+  caption    String
+  slideCount Int       @map("slide_count")
+  payload    Json
+  status     String    @default("ready")
+  postedAt   DateTime? @map("posted_at")
+  createdAt  DateTime  @default(now()) @map("created_at")
+  updatedAt  DateTime  @updatedAt @map("updated_at")
+
+  @@index([status, createdAt(sort: Desc)])
+  @@map("instagram_queue_items")
+}

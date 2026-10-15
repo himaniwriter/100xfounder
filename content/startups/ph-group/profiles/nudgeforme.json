@@ -1,0 +1,126 @@
+{
+  "slug": "nudgeforme",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/nudgeforme",
+  "excerpt": "NudgeForMe scans your sent email for threads that never got a reply and drafts follow-ups in your own mailbox. Free plan, Pro at $39/month, privacy answers and alternatives.",
+  "content": "<p>NudgeForMe is an AI follow-up assistant for email. You connect a mailbox (Gmail, Google Workspace, Outlook, Microsoft 365, Yahoo, iCloud or any IMAP account) and it scans your sent conversations for threads where you were expecting an answer and did not get one: proposals, intros, invoices, approvals, scheduling. It lists those opportunities first, and for the ones you pick it writes a follow-up as a normal draft on the right thread in your mailbox, in your tone, for you to send, edit or delete.</p><p>It starts in draft mode, so nothing is sent unless you choose. On the Agency plan you can turn on automatic sending with sequences; co-founder Victoria Dash said on Product Hunt that it re-checks the mailbox before each send and stops on a reply, an out-of-office or a bounce. It reads the whole conversation rather than only counting days, to skip closing notes like \"thanks, talk soon\". She also said customer emails are not used to train models and only the threads you choose to monitor are retained.</p><p>NudgeForMe is built by the team behind Snoooz, an email tool that was #1 Product of the Day on Product Hunt three years earlier. NudgeForMe launched on 1 August 2026 and finished #1 for the day, with 276 upvotes and 61 comments (as of 14 October 2026).</p><p><em>We have not tested NudgeForMe ourselves. This page brings together its official site and pricing and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Email follow-up assistant",
+    "platform": "Web app connected to your mailbox",
+    "starts_at": "Free plan; Pro $39/month",
+    "schema_category": "CommunicationApplication",
+    "summary_short": "Finds sent emails that never got a reply and drafts follow-ups in your own mailbox",
+    "maker": {"name": "Victoria Dash", "url": "https://www.producthunt.com/@victoria_dash"},
+    "team": [
+      {"name": "Victoria Dash", "role": "Co-founder", "url": "https://www.producthunt.com/@victoria_dash"},
+      {"name": "Chitresh Singh", "role": "Co-founder", "url": "https://www.producthunt.com/@chitreshsingh"},
+      {"name": "Ali Nagi", "role": "Marketing director", "url": "https://www.producthunt.com/@alinagi"}
+    ],
+    "ph": {"rank": 1, "votes": 276, "comments": 61, "followers": 734, "launched": "2026-08-01", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/115820aa-c6ca-4484-b985-6101d54f4b28.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: NudgeForMe via Product Hunt",
+       "alt": "NudgeForMe 'Never miss a follow-up again' with a timeline from an unanswered proposal to a drafted nudge and the reply"},
+      {"url": "https://ph-files.imgix.net/ec4ccacb-6da8-41ad-9bd8-44d1dda81e40.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: NudgeForMe via Product Hunt",
+       "alt": "NudgeForMe three steps: connect your mailbox, review missed opportunities, draft the useful ones"},
+      {"url": "https://ph-files.imgix.net/e382eab7-0a49-4572-9f6b-88f85c6edece.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: NudgeForMe via Product Hunt",
+       "alt": "NudgeForMe showing an original email waiting three days for a reply next to the drafted follow-up, scored 92"}
+    ],
+    "use_cases": [
+      "Following up on proposals and quotes that went quiet",
+      "Chasing client approvals, files and invoices for agencies",
+      "Reviving investor intros and partnership conversations",
+      "Keeping candidate and hiring-manager threads moving for recruiters"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Co-founder Victoria Dash says that after launching Snoooz and processing millions of emails, the team kept seeing people lose leads, deals and partnerships not because they replied slowly but because they forgot to follow up.",
+        "NudgeForMe is the focused tool for that: it works from your actual sent mail rather than a CRM list, creates drafts in your mailbox, stops when someone replies and starts in draft mode. She asked the community what would make them trust an AI follow-up agent."
+      ],
+      "attribution": "Victoria Dash, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/nudgeforme?comment=5712362"
+    },
+    "audience": {
+      "fit": [
+        "send proposals, intros or invoices by email and lose track of who never replied",
+        "want AI help but insist on reviewing every email before it goes",
+        "run several client inboxes as an agency"
+      ],
+      "not_fit": [
+        "track all follow-ups in a CRM sequence tool already",
+        "will not let a service read your sent mail",
+        "need automatic sending on a budget: auto-send and sequences are on the $99 Agency plan"
+      ]
+    },
+    "pricing": {
+      "intro": "NudgeForMe has a free plan and two paid plans. Prices are NudgeForMe's, in US dollars.",
+      "url": "https://nudgeforme.com/#pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "1 mailbox, 100 drafts a month, 30-day lookback, drafts created manually, NudgeForMe branding"},
+        {"name": "Pro", "price": "$39/month ($390/year)", "amount": 39, "currency": "USD", "detail": "3 mailboxes, 1,000 drafts a month, 6-month lookback, automatic discovery and drafts, up to 5 follow-ups per opportunity, custom writing instructions, no branding"},
+        {"name": "Agency", "price": "From $99/month ($990/year)", "amount": 99, "currency": "USD", "detail": "From 6 mailboxes, 3 workspaces, 3 team members, 3,000 drafts a month, 1-year lookback, sequences, optional automatic sending, enrichment and web research"}
+      ],
+      "notes": [
+        "Agency scales to 50 mailboxes and 12,000 drafts a month; larger setups are by contact."
+      ]
+    },
+    "pros": [
+      "Draft mode by default; you approve every follow-up",
+      "Works from your real sent mail with almost any email provider",
+      "Re-checks for replies, out-of-office and bounces before sending, according to the team",
+      "Free plan to see what it finds"
+    ],
+    "cons": [
+      "Needs access to read your email conversations",
+      "Precision matters: commenters worried about too many low-value drafts",
+      "Automatic sending only on the Agency plan"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["The draft-first approach", "Context-based detection rather than a simple timer"],
+        "asked": [
+          "How it avoids flagging threads that were meant to end (it reads the conversation and skips closing notes and FYIs)",
+          "Whether it learns your voice (yes, from sent mail, plus custom instructions)",
+          "What happens to email content (not used for training; only monitored threads retained)",
+          "What if the person replied elsewhere before you send (it re-checks the mailbox before sending)"
+        ],
+        "criticised": ["The privacy page was hard to find; the team said it would surface it in onboarding"]
+      },
+      "quotes": [
+        {"text": "I really like the \"draft-first\" approach. It feels much more trustworthy than automatically sending follow-ups.", "author": "Irene Tomaini", "url": "https://www.producthunt.com/products/nudgeforme?comment=5724604"},
+        {"text": "Draft mode is the right default, and it also makes precision the entire product.", "author": "Asad M.", "url": "https://www.producthunt.com/products/nudgeforme?comment=5718600"},
+        {"text": "No training and no full-folder retention is the right shape.", "author": "Gal Dayan", "url": "https://www.producthunt.com/products/nudgeforme?comment=5725683"}
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as NudgeForMe alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Superhuman", "url": "https://superhuman.com/", "what": "Fast email client with reminders and AI", "starts_at": "See its pricing page", "ph_rating": 4.79, "ph_reviews": 91, "ph_url": "https://www.producthunt.com/products/superhuman",
+         "difference": "A full email client you switch to; NudgeForMe works inside the mailbox you already use."},
+        {"name": "Shortwave", "url": "https://www.shortwave.com/", "what": "AI-powered email client", "starts_at": "See its pricing page", "ph_rating": 4.68, "ph_reviews": 23, "ph_url": "https://www.producthunt.com/products/shortwave-6",
+         "difference": "Broad AI email client for Gmail; NudgeForMe does one job, finding and drafting missed follow-ups."},
+        {"name": "Slashy", "url": "https://www.producthunt.com/products/slashy-3", "what": "AI assistant that handles email for you", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 6, "ph_url": "https://www.producthunt.com/products/slashy-3",
+         "difference": "A general AI email assistant rather than a follow-up specialist."}
+      ],
+      "more": "Product Hunt also lists Hypertype and Polymail."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/nudgeforme/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/nudgeforme",
+      "x": {"none": "We found no posts about NudgeForMe on X to link yet.", "search_url": "https://x.com/search?q=nudgeforme&f=live"}
+    },
+    "faq": [
+      {"q": "What is NudgeForMe?", "a": "An AI tool that scans your sent email for conversations that never got a reply and writes follow-up drafts in your own mailbox. It is built by the team behind Snoooz."},
+      {"q": "How much does NudgeForMe cost?", "a": "Free for one mailbox and 100 drafts a month. Pro is $39 a month ($390 a year) and Agency starts at $99 a month ($990 a year)."},
+      {"q": "Will it send emails without asking me?", "a": "Not by default. It starts in draft mode. Automatic sending is optional on the Agency plan, and the team says it re-checks for replies, out-of-office messages and bounces before sending."},
+      {"q": "How does it know a thread needs a follow-up?", "a": "It reads the conversation to judge whether a reply was expected, rather than relying only on time, and skips closing notes, FYIs and newsletters, according to the co-founder."},
+      {"q": "Is my email used to train AI?", "a": "The co-founder said on Product Hunt that customer emails are not used to train models and that only the threads you choose to monitor are retained."}
+    ],
+    "sources": [
+      {"label": "NudgeForMe official site and pricing", "url": "https://nudgeforme.com/"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/nudgeforme"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/nudgeforme/alternatives"}
+    ]
+  }
+}

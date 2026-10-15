@@ -1,0 +1,308 @@
+{
+ "slug": "scrape-anything-by-context-dev",
+ "excerpt": "Scrape Anything is Context.dev's web-scraping endpoint: give it a URL and get clean Markdown, HTML, screenshots or structured data in one API call. Credits, pricing and alternatives.",
+ "content": "<p>Scrape Anything is a web-scraping endpoint from Context.dev, an API company that supplies web data to software and AI agents. You send a URL and choose the outputs you want, such as HTML, Markdown, screenshots, images or raw bytes, and Context.dev handles the browser rendering, anti-bot blocks, proxies and retries. Each output comes back in its own field from a single call, and all of them share one base charge. You can also extract data as JSON against your own schema, run browser actions and read PDFs with OCR.</p><p>It sits inside a wider API that uses the same key and credits: mapping and crawling sites (up to 500 pages per call), web and news search, AI answers, brand data such as logos and colours, people enrichment and website monitors with webhooks. There are official SDKs for TypeScript, Python, Ruby, Go and PHP, a CLI and an MCP server for AI agents. The service is hosted only.</p><p>Scrape Anything launched on Product Hunt on 12 October 2026, Context.dev's fourth launch there, and finished #9 for the day with 104 upvotes. Product Hunt lists Yahia Bakour and Nikhil Radosevich among the team.</p><p><em>We have not tested Context.dev ourselves. This page brings together its official site, pricing page and documentation, its Product Hunt page and the official pricing pages of comparable APIs, and says where each fact comes from. If you scrape other sites, their terms and robots rules still apply to you.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Web scraping API",
+  "platform": "API (REST, SDKs, CLI, MCP server)",
+  "os": "Hosted API; SDKs for TypeScript, Python, Ruby, Go and PHP",
+  "starts_at": "Free: 1,000 credits a month; paid from $19/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "API that turns any URL into clean Markdown, HTML, screenshots or structured data in one call",
+  "maker": {
+   "name": "Context.dev",
+   "url": "https://www.producthunt.com/products/context-dev"
+  },
+  "team": [
+   {
+    "name": "Yahia Bakour",
+    "role": "Team member listed on Product Hunt",
+    "url": "https://www.producthunt.com/@yahia_bakour3"
+   },
+   {
+    "name": "Nikhil Radosevich",
+    "role": "Team member listed on Product Hunt",
+    "url": "https://www.producthunt.com/@nikhilrado"
+   },
+   {
+    "name": "Beer van der Drift",
+    "role": "Team member listed on Product Hunt",
+    "url": "https://www.producthunt.com/@bdrift"
+   },
+   {
+    "name": "Aadithyan Rajesh",
+    "role": "Team member listed on Product Hunt",
+    "url": "https://www.producthunt.com/@aadithyanr"
+   }
+  ],
+  "ph": {
+   "rank": 9,
+   "votes": 104,
+   "comments": 5,
+   "followers": 2400,
+   "launched": "2026-10-12",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Feeding web pages to an AI agent or RAG pipeline as clean Markdown",
+   "Taking screenshots and HTML of a page in the same request",
+   "Extracting structured JSON from product or listing pages against your own schema",
+   "Crawling a documentation site into Markdown",
+   "Monitoring pages for changes and receiving webhooks"
+  ],
+  "audience": {
+   "fit": [
+    "build AI agents or data pipelines that need live web content",
+    "would rather not run your own headless browsers and proxies",
+    "want scraping, search and brand data under one API key and one credit balance"
+   ],
+   "not_fit": [
+    "must self-host your scraping (Context.dev is hosted only)",
+    "need a one-off data pull without a subscription: the pricing page says one-time lookups aren't supported",
+    "need LinkedIn data: a commenter asked and we found no answer on the launch page"
+   ]
+  },
+  "pricing": {
+   "intro": "Context.dev sells monthly credit plans in US dollars. A basic scrape costs 1 credit, with JavaScript rendering, anti-bot handling and proxies included. Paying yearly gives two months free.",
+   "url": "https://www.context.dev/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "1,000 credits a month, 1 concurrent request, 10 monitors, no card"
+    },
+    {
+     "name": "Developer",
+     "price": "$19/month",
+     "amount": 19,
+     "currency": "USD",
+     "detail": "7,500 credits a month, 10 concurrent requests; overage $2.20 per 1,000 credits"
+    },
+    {
+     "name": "Pro",
+     "price": "$99/month",
+     "amount": 99,
+     "currency": "USD",
+     "detail": "125,000 credits a month, 100 concurrent; overage $1.80 per 1,000; Slack support and spend controls"
+    },
+    {
+     "name": "Growth",
+     "price": "$299/month",
+     "amount": 299,
+     "currency": "USD",
+     "detail": "500,000 credits a month, 250 concurrent; overage $1.40 per 1,000; priority support"
+    },
+    {
+     "name": "Scale",
+     "price": "$499/month",
+     "amount": 499,
+     "currency": "USD",
+     "detail": "1,000,000 credits a month, 500 concurrent; overage $1.00 per 1,000; SSO/SAML"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "currency": "USD",
+     "detail": "2,000,000+ credits, SCIM, 99.9% uptime SLA, annual invoicing, MSA and DPA"
+    }
+   ],
+   "notes": [
+    "Credit costs: a scrape from 1 credit (2 with browser actions); JSON extraction adds 4; PDF OCR adds 1 per page; crawling 1 per page; AI answers 10 or 100; brand data 10; people enrichment 20 per match.",
+    "Most failed requests aren't billed, but 404 pages are charged the base price.",
+    "Eligible startups and nonprofits get 30% off an annual plan for 12 months.",
+    "Refund terms are not stated on the pricing page."
+   ]
+  },
+  "alternatives": {
+   "intro": "From Product Hunt's alternatives list plus ScrapingBee. Prices come from each product's own pricing page, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Firecrawl",
+     "url": "https://www.firecrawl.dev/",
+     "what": "Web scraping and crawling API that returns LLM-ready Markdown and JSON",
+     "starts_at": "Free 1,000 credits; Hobby $19/month ($16 yearly)",
+     "ph_rating": 5.0,
+     "ph_reviews": 17,
+     "difference": "The closest like-for-like option. Firecrawl charges for 403 and 404 error pages; Context.dev adds brand, people and news APIs under the same credits."
+    },
+    {
+     "name": "Apify",
+     "url": "https://apify.com/",
+     "what": "Platform of ready-made scrapers plus hosting for your own",
+     "starts_at": "Free ($5 of usage a month); Starter $19/month",
+     "ph_rating": 5.0,
+     "ph_reviews": 12,
+     "difference": "Bills by compute units and offers a marketplace of site-specific scrapers rather than one unified endpoint."
+    },
+    {
+     "name": "ScrapingBee",
+     "url": "https://www.scrapingbee.com/",
+     "what": "Scraping API that handles headless browsers and proxies",
+     "starts_at": "Hobby $19/month for 75,000 credits; 1,000 free trial credits",
+     "difference": "No permanent free plan, only trial credits, and its pricing page doesn't show the credit multipliers for JavaScript or premium proxies."
+    }
+   ],
+   "more": "Product Hunt also lists Databar.ai, Browser Use and Browserbase."
+  },
+  "reviews": {
+   "count": 19,
+   "rating": 5.0,
+   "url": "https://www.producthunt.com/products/context-dev/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Getting Markdown for reading and structured data for the next step from the same API"
+    ],
+    "asked": [
+     "Whether it works with LinkedIn, and whether it offers residential proxies and authentication",
+     "What the rate limits are (the pricing page lists concurrency per plan, from 1 to 500 requests)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "Markdown for reading and structured data for the next step, through the same API, makes sense.",
+     "author": "Oleksii Sekundant",
+     "url": "https://www.producthunt.com/products/context-dev?comment=5941489"
+    },
+    {
+     "text": "Does it work with LinkedIn? Do you offer residential proxies and authentication?",
+     "author": "Ilyas",
+     "url": "https://www.producthunt.com/products/context-dev?comment=5942731"
+    },
+    {
+     "text": "what are the rate limits ?",
+     "author": "Hrishikesh",
+     "url": "https://www.producthunt.com/products/context-dev?comment=5945433"
+    }
+   ]
+  },
+  "pros": [
+   "Free plan with 1,000 credits a month and no card",
+   "JavaScript rendering, anti-bot handling and proxies included in the base price",
+   "Several output formats from one call for one charge",
+   "Scraping, crawling, search, brand data and monitors under one key",
+   "SDKs in five languages plus an MCP server",
+   "Versioned API with at least 90 days' notice for breaking changes"
+  ],
+  "cons": [
+   "Hosted only, with no self-hosted option",
+   "404 pages are still billed",
+   "No one-off purchases; you need a plan",
+   "Launch questions about LinkedIn, proxies and authentication went unanswered on the page"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/context-dev?launch=scrape-anything-by-context-dev",
+   "x": {
+    "none": "We found no independent posts about Scrape Anything on X to link yet.",
+    "search_url": "https://x.com/search?q=context.dev%20scrape&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Context.dev free?",
+    "a": "There is a free plan with 1,000 credits a month, one concurrent request and no card. Paid plans start at $19 a month for 7,500 credits."
+   },
+   {
+    "q": "How much does one scrape cost?",
+    "a": "From 1 credit, including JavaScript rendering, anti-bot handling and proxies. Browser actions make it 2 credits, and JSON extraction adds 4."
+   },
+   {
+    "q": "What are the rate limits?",
+    "a": "Context.dev limits concurrency by plan: 1 request at a time on Free, 10 on Developer, 100 on Pro, 250 on Growth and 500 on Scale."
+   },
+   {
+    "q": "Am I charged for failed requests?",
+    "a": "Mostly not, according to the pricing FAQ. A 404 page is billed at the base price."
+   },
+   {
+    "q": "Which languages and tools does it support?",
+    "a": "A REST API, official SDKs for TypeScript, Python, Ruby, Go and PHP, a CLI and an MCP server for AI agents."
+   },
+   {
+    "q": "Is there a startup discount?",
+    "a": "Yes. Eligible startups and nonprofits get 30% off an annual paid plan for 12 months."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Context.dev official site",
+    "url": "https://www.context.dev/"
+   },
+   {
+    "label": "Context.dev pricing and FAQ",
+    "url": "https://www.context.dev/pricing"
+   },
+   {
+    "label": "Context.dev documentation",
+    "url": "https://docs.context.dev"
+   },
+   {
+    "label": "Context.dev API stability policy",
+    "url": "https://docs.context.dev/optimization/api-stability"
+   },
+   {
+    "label": "Context.dev startup discount",
+    "url": "https://www.context.dev/startups"
+   },
+   {
+    "label": "Product Hunt launch and discussion",
+    "url": "https://www.producthunt.com/products/context-dev?launch=scrape-anything-by-context-dev"
+   },
+   {
+    "label": "Product Hunt reviews",
+    "url": "https://www.producthunt.com/products/context-dev/reviews"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/context-dev/alternatives"
+   },
+   {
+    "label": "Firecrawl pricing",
+    "url": "https://www.firecrawl.dev/pricing"
+   },
+   {
+    "label": "Apify pricing",
+    "url": "https://apify.com/pricing"
+   },
+   {
+    "label": "ScrapingBee pricing",
+    "url": "https://www.scrapingbee.com/pricing/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/e84da2f2-820f-422e-9ff3-1ceec969ecfa.png?auto=format&fit=max&w=1400",
+    "alt": "Context.dev page 'Scrape literally Anything: turn any URL into clean, usable data in one API call'"
+   },
+   {
+    "url": "https://ph-files.imgix.net/1aafa44f-1c60-4d9e-9f4c-1e17dbb5ab0d.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Context.dev graphic showing one scrape call returning Markdown, bytes, screenshots, images or HTML"
+   },
+   {
+    "url": "https://ph-files.imgix.net/790e0376-dc83-4fc5-942c-03cb86139160.png?auto=format&fit=max&w=1400",
+    "alt": "Context.dev 'Choose your output' panel with format options such as HTML, Markdown, screenshot and images"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/e84da2f2-820f-422e-9ff3-1ceec969ecfa.png?auto=format&fit=max&w=1400",
+    "alt": "Context.dev page 'Scrape literally Anything: turn any URL into clean, usable data in one API call'"
+   },
+   {
+    "url": "https://ph-files.imgix.net/1aafa44f-1c60-4d9e-9f4c-1e17dbb5ab0d.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Context.dev graphic showing one scrape call returning Markdown, bytes, screenshots, images or HTML"
+   },
+   {
+    "url": "https://ph-files.imgix.net/790e0376-dc83-4fc5-942c-03cb86139160.png?auto=format&fit=max&w=1400",
+    "alt": "Context.dev 'Choose your output' panel with format options such as HTML, Markdown, screenshot and images"
+   }
+  ]
+ }
+}

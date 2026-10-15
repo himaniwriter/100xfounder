@@ -10,6 +10,7 @@ import type {
 } from "@/lib/blog/types";
 import { ensureBlogPostsSchema } from "@/lib/db-bootstrap";
 import { prisma } from "@/lib/prisma";
+import { fetchWordPressPosts } from "@/lib/wordpress/client";
 
 const MIN_PUBLIC_WORD_COUNT = 400;
 const LOW_QUALITY_PATTERNS = [
@@ -331,7 +332,10 @@ function readBlogPostsFromFile(): BlogPost[] {
 
 async function readMergedBlogPosts(): Promise<BlogPost[]> {
   const filePosts = readBlogPostsFromFile();
-  const databasePosts = await readBlogPostsFromDatabase();
+  const [databasePosts, wordpressPosts] = await Promise.all([
+    readBlogPostsFromDatabase(),
+    fetchWordPressPosts().then((posts) => posts.map(normalizeBlogPost)),
+  ]);
   const mergedBySlug = new Map<string, BlogPost>();
 
   filePosts.forEach((post) => {
@@ -339,6 +343,11 @@ async function readMergedBlogPosts(): Promise<BlogPost[]> {
   });
 
   databasePosts.forEach((post) => {
+    mergedBySlug.set(post.slug, post);
+  });
+
+  // WordPress is the editorial source of truth, so its posts win on slug clashes.
+  wordpressPosts.forEach((post) => {
     mergedBySlug.set(post.slug, post);
   });
 

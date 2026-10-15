@@ -76,6 +76,8 @@ const STATIC_ROUTES: StaticRoute[] = [
   { href: "/signals", label: "Signals", changeFrequency: "hourly", priority: 0.9 },
   { href: "/pricing", label: "Pricing", changeFrequency: "weekly", priority: 0.8 },
   { href: "/get-featured", label: "Get Featured", changeFrequency: "weekly", priority: 0.82 },
+  { href: "/launches", label: "Daily Startup Launches", changeFrequency: "daily", priority: 0.85 },
+  { href: "/spotlight", label: "Founder Spotlights", changeFrequency: "daily", priority: 0.85 },
   { href: "/interview-questionnaire", label: "Interview Questionnaire", changeFrequency: "weekly", priority: 0.78 },
   { href: "/guest-post-marketplace", label: "Guest Post Marketplace", changeFrequency: "weekly", priority: 0.76 },
   { href: "/guest-post-order", label: "Guest Post Order", changeFrequency: "weekly", priority: 0.75 },

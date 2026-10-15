@@ -1,0 +1,185 @@
+{
+  "slug": "ctruh-studio-2",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/ctruh-studio-2",
+  "excerpt": "Ctruh Studio is an Indian no-code platform that turns one product image into interactive 3D, AR, try-on and virtual-store experiences in the browser. What it does and what launch-day users asked.",
+  "content": "<p>Ctruh Studio is a browser-based, no-code platform for online sellers who want more than product photos. Upload one product image (or describe it in text) and its VersaAI model generates a 3D model in about a minute, which you can then publish as an interactive 3D viewer, an AR preview, a virtual try-on, a 3D configurator with product variants, an immersive virtual store or AI-generated marketing creatives. Its launch images show exports in GLB, USDZ, OBJ and FBX formats.</p><p>Ctruh is made by Ctruh Technologies Pvt. Ltd., an Indian company (the name is pronounced \"see-through\"), and its site title says \"As Seen on Shark Tank India\". It runs on its own browser 3D engine, Verse Engine; founder and CEO Vinay Agastya said on Product Hunt that the team built it from scratch instead of wrapping Three.js or Babylon, and that product pages load as normal 2D pages first so the 3D never blocks the critical rendering path.</p><p>Ctruh Studio launched on Product Hunt on 3 August 2026 and finished #2 for the day with 350 points and 85 comments (as of 14 October 2026).</p><p><em>We have not tested Ctruh Studio ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "3D, AR and XR commerce",
+    "platform": "Web app (browser)",
+    "starts_at": "Pricing not published",
+    "schema_category": "DesignApplication",
+    "summary_short": "No-code platform that turns one product image into 3D, AR, try-on and virtual-store experiences",
+    "maker": {
+      "name": "Vinay Agastya",
+      "url": "https://www.producthunt.com/@vinay_agastya9"
+    },
+    "team": [
+      {
+        "name": "Vinay Agastya",
+        "role": "Founder and CEO (per his Product Hunt profile)",
+        "url": "https://www.producthunt.com/@vinay_agastya9"
+      },
+      {
+        "name": "Sharun Kanan",
+        "role": "Director of GTM (per his Product Hunt launch comment)",
+        "url": "https://www.producthunt.com/@sharun_kanan"
+      }
+    ],
+    "ph": {
+      "rank": 2,
+      "votes": 350,
+      "comments": 85,
+      "followers": 1162,
+      "launched": "2026-08-03",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/ba339b16-7e7e-47fe-8c68-abe4ab70ad41.jpeg?auto=format&fit=max&w=1400",
+        "w": 5292,
+        "h": 3167,
+        "alt": "Ctruh Studio graphic 'One upload. Infinite possibilities.' with a tablet showing options for 3D Visualizer, AR Experience, 3D Configurator and Immersive Store using a red armchair",
+        "credit": "Image: Ctruh via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/b7f888e1-a2bc-494e-8eba-33100ea43f5b.jpeg?auto=format&fit=max&w=1400",
+        "w": 5292,
+        "h": 3167,
+        "alt": "Ctruh Studio graphic 'From image or text to stunning 3D' showing a headphone photo turned into a 3D model with GLB, USDZ, OBJ and FBX export options",
+        "credit": "Image: Ctruh via Product Hunt"
+      }
+    ],
+    "audience": {
+      "fit": [
+        "sell physical products online (furniture, fashion, homeware, ceramics) and want shoppers to rotate, place or try them before buying",
+        "have no 3D team: Ctruh says one image is enough to start",
+        "care about page speed: the founder described loading the 2D page first and the 3D afterwards"
+      ],
+      "not_fit": [
+        "need a published price before you sign up: we found no pricing page on its site",
+        "need full control over 3D modelling: Ctruh also makes a separate 3D Editor for that kind of work",
+        "want a desktop 3D modelling tool: Studio is a browser-based publishing platform for product experiences"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on ctruh.com as of 14 October 2026. The site asks you to sign up; Product Hunt lists Ctruh Studio as having free options.",
+      "url": "https://studio.ctruh.com/",
+      "checked": "2026-10-14",
+      "plans": [],
+      "notes": [
+        "Enterprise customers are directed to Ctruh's contact page (hello@ctruh.com)."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {
+          "name": "Tripo AI",
+          "url": "https://www.tripo3d.ai/",
+          "what": "AI 3D model generation from text or images",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.85,
+          "ph_reviews": 13,
+          "difference": "Focused on generating 3D models. Ctruh also packages them into AR, try-on, configurator and store experiences for shop pages."
+        },
+        {
+          "name": "Womp",
+          "url": "https://womp.com/",
+          "what": "Easy browser-based 3D design",
+          "starts_at": "Free Starter plan; Pro from $19/month",
+          "ph_rating": 4.71,
+          "ph_reviews": 7,
+          "difference": "A 3D design tool for making things yourself; Ctruh is aimed at turning existing product photos into shoppable experiences."
+        },
+        {
+          "name": "Assemblr Studio",
+          "url": "https://assemblrworld.com/",
+          "what": "Create interactive 3D and AR experiences",
+          "starts_at": "See its site",
+          "ph_rating": 5,
+          "ph_reviews": 2,
+          "difference": "A general 3D/AR creation tool, often used for education; Ctruh focuses on e-commerce."
+        }
+      ],
+      "more": "Product Hunt also lists Vectary (5.0 from 2 reviews) and Anything World (5.0 from 5 reviews)."
+    },
+    "reviews": {
+      "count": 1,
+      "rating": 5,
+      "url": "https://www.producthunt.com/products/ctruh-studio/reviews",
+      "as_of": "2026-10-14"
+    },
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/ctruh-studio",
+      "quotes": [
+        {
+          "author": "Puja Sharma",
+          "text": "I run a ceramics shop... Now I adjust roughness and reflectivity directly in the platform and the results are close enough to real photos."
+        },
+        {
+          "author": "Asad M.",
+          "text": "The spec I'd put on the page is mesh weight, not render quality. A configurator that takes 8 seconds on mobile 4G converts worse than the flat photo it replaced."
+        },
+        {
+          "author": "Greig Santos-Buch",
+          "text": "What does dropping a Studio experience onto a product page do to its Core Web Vitals?",
+          "reply": "Vinay Agastya: 3D never touches the critical rendering path; the page loads as a normal 2D page first."
+        }
+      ],
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=Ctruh&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Ctruh Studio?",
+        "a": "A no-code, browser-based platform from Ctruh Technologies that turns a product image or text description into a 3D model and publishes it as 3D viewers, AR previews, virtual try-ons, configurators, virtual stores and marketing creatives."
+      },
+      {
+        "q": "Is Ctruh an Indian company?",
+        "a": "Yes. Its site footer names Ctruh Technologies Pvt. Ltd., and the site title says \"As Seen on Shark Tank India\"."
+      },
+      {
+        "q": "How much does Ctruh Studio cost?",
+        "a": "Ctruh does not publish prices on its site (checked 14 October 2026). Product Hunt lists it as having free options."
+      },
+      {
+        "q": "Which 3D formats can it export?",
+        "a": "Its launch images show GLB, USDZ, OBJ and FBX export."
+      },
+      {
+        "q": "Will 3D slow down my product pages?",
+        "a": "The founder said on Product Hunt that pages load as normal 2D pages first and the 3D loads afterwards, so it stays out of the critical rendering path. We have not measured this."
+      },
+      {
+        "q": "How did Ctruh Studio do on Product Hunt?",
+        "a": "It launched on 3 August 2026 and finished #2 for the day with 350 points and 85 comments. It had one Product Hunt review (5 out of 5) as of 14 October 2026."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ctruh Studio",
+        "url": "https://studio.ctruh.com/"
+      },
+      {
+        "label": "Ctruh contact page",
+        "url": "https://www.ctruh.com/about/company/contact-us"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/ctruh-studio"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/ctruh-studio-2"
+      },
+      {
+        "label": "Womp pricing",
+        "url": "https://womp.com/pricing/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "slug": "prelint",
+  "ph_url": "https://www.producthunt.com/posts/prelint",
+  "existing_listing_slug": null,
+  "website": "https://prelint.com",
+  "excerpt": "Prelint reviews every pull request for the product decisions it makes, checks them against your docs and past decisions, and keeps a decision ledger. $1 per review.",
+  "content": "<p>Prelint reviews pull requests for product decisions rather than code quality. Coding agents can write code that passes review and CI but quietly changes how the product behaves: skipping a notification, changing invoice terms, adding a dependency nobody approved or inventing a requirement. Prelint posts a short \"decision review\" on each pull request listing the decisions the change makes and checks them against your architecture decision records (ADRs), docs, specs and earlier decisions. You agree, agree with concerns or disagree.</p><p>Every review is added to a decision ledger that records who made each decision, when, where it came from and whether a person or an AI made it. Your coding agents can search that ledger through a CLI or MCP before writing code. Prelint charges $1 per completed review with no seats or subscription, and open-source projects are free.</p><p>Prelint was founded by Wojtek Szkutnik, with co-founders Irka Pawlowski (CMO) and Krzysztof Kulig (CTO), according to their Product Hunt profiles. It launched there on 29 July 2026 and finished #1 for the day and the week, with 579 upvotes and 134 comments. It has 3 reviews on Product Hunt averaging 5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Prelint ourselves. This page brings together its official site and pricing page, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI code review",
+    "platform": "GitHub pull-request reviews, CLI and MCP",
+    "starts_at": "$1 per completed review ($10 free credit)",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Reviews each pull request for the product decisions it makes and keeps a decision ledger",
+    "maker": {"name": "Wojtek Szkutnik", "url": "https://www.producthunt.com/@wojtekszkutnik"},
+    "team": [
+      {"name": "Wojtek Szkutnik", "role": "Founder", "url": "https://www.producthunt.com/@wojtekszkutnik"},
+      {"name": "Irka Pawlowski", "role": "Co-founder and CMO", "url": "https://www.producthunt.com/@irka_pawlowski"},
+      {"name": "Krzysztof Kulig", "role": "Co-founder and CTO", "url": "https://www.producthunt.com/@krzysztof_kulig"}
+    ],
+    "ph": {"rank": 1, "votes": 579, "comments": 134, "followers": 1218, "launched": "2026-07-29", "as_of": "2026-10-14"},
+    "video_url": "https://youtu.be/u-ZZTCxKkrc",
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/452c6376-5262-4400-929e-0b9befe4b96e.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Prelint on Product Hunt",
+       "alt": "Prelint graphic 'AI code reviewers check if your code is technically correct. Prelint checks if it does the right thing' with a bot comment listing four product decisions in a billing change"},
+      {"url": "https://ph-files.imgix.net/97a72d41-0fd9-4d8d-95f7-33b5972480d7.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Prelint on Product Hunt",
+       "alt": "Prelint chart of findings by type, such as stale references, vendor conflicts, spec deviations and data safety"},
+      {"url": "https://ph-files.imgix.net/83cfbb87-d5e9-4690-a5fd-28316a8c2b1d.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Prelint on Product Hunt",
+       "alt": "Prelint CLI searching the decision ledger for 'pricing', returning recorded statements with their IDs"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Wojtek Szkutnik says coding agents now produce more code than most teams can properly review, and the bigger risk is not bad code but good code that quietly builds the wrong product.",
+        "He saw this on large production projects: a change would pass technical review and CI but skip an agreed architecture pattern, add an unapproved dependency, change a permission rule or invent a business requirement. Nobody had made that decision, yet it was now part of the product. Prelint is built to catch those decisions before they ship."
+      ],
+      "attribution": "Wojtek Szkutnik, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/prelint?comment=5621153"
+    },
+    "use_cases": [
+      "Catching AI-written changes that contradict your ADRs, specs or billing policy",
+      "Keeping a searchable record of who decided what, and whether an AI or a person made the call",
+      "Giving coding agents your past decisions as context before they write code",
+      "Reviewing decisions on a solo project shipped daily with Claude Code"
+    ],
+    "audience": {
+      "fit": [
+        "ship a lot of AI-written pull requests and can't review every product decision by hand",
+        "keep ADRs, specs or policy docs you want code checked against",
+        "prefer paying per review over per-seat subscriptions"
+      ],
+      "not_fit": [
+        "want line-by-line code-quality feedback: Prelint describes its job as checking whether code does the right thing, while other AI reviewers check whether it is technically correct",
+        "don't work with pull requests at all"
+      ]
+    },
+    "pricing": {
+      "intro": "Prelint charges per completed review from a prepaid balance. No seats, subscriptions or minimums. Prices are in US dollars.",
+      "url": "https://prelint.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Pay per review", "price": "$1 per completed review", "amount": 1, "currency": "USD", "detail": "Spec checks, decision compliance, inline findings and a summary comment on one pull request; $10 free credit at sign-up with no card"},
+        {"name": "Open source", "price": "Free", "amount": 0, "currency": "USD", "detail": "Open-source projects are free, according to the pricing page"}
+      ],
+      "notes": [
+        "Credits never expire. Top up any amount from $10 to $1,000; auto-recharge is on by default ($20 when the balance falls below $10) and can be changed or switched off.",
+        "Failed, cancelled and timed-out reviews are free, and CI bots never trigger reviews. Re-reviews after new commits cost $1 each.",
+        "Prelint says most teams spend $40 to $80 a month. You can set a monthly spending cap."
+      ]
+    },
+    "alternatives": {
+      "intro": "AI pull-request reviewers. They focus mainly on code correctness, which Prelint positions itself alongside. Prices are from each company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "CodeRabbit", "url": "https://www.coderabbit.ai/", "what": "AI code reviews in pull requests, the CLI, IDEs and agent loops", "starts_at": "Essentials $24/user/month billed annually ($30 monthly)",
+         "difference": "Per-seat pricing and a focus on code quality; Prelint checks product decisions against your docs and charges per review."},
+        {"name": "Greptile", "url": "https://www.greptile.com/", "what": "AI code reviewer that understands your whole codebase", "starts_at": "Free for 1 developer; Pro $30/seat/month",
+         "difference": "Reviews code with full-repository context and custom rules; it doesn't keep a ledger of product decisions."}
+      ]
+    },
+    "reviews": {"count": 3, "rating": 5, "url": "https://www.producthunt.com/products/prelint/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["The 'decision ledger, not a code reviewer' idea", "Catching your own documented decisions going stale against your code"],
+        "asked": ["Whether it helps a one-person company with no Slack, meetings or tickets (yes if you work with pull requests, the founder said)", "Whether promises made by support staff can count as decisions (the founder suggested support tools query Prelint's MCP instead)"],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "The \"decision ledger, not a code reviewer\" framing is the part I'd have paid for a year ago.", "author": "Rick Wise", "url": "https://www.producthunt.com/products/prelint?comment=5690627"},
+        {"text": "I had wrongly assumed drift was a coordination problem", "author": "Chris Mongeon", "url": "https://www.producthunt.com/products/prelint?comment=5693261"}
+      ]
+    },
+    "pros": [
+      "No seats or subscription: $1 per completed review",
+      "Free for open-source projects; credits never expire",
+      "Builds a searchable decision record that agents can query",
+      "Failed or cancelled reviews aren't charged"
+    ],
+    "cons": [
+      "Cost grows with the number of pull requests and re-reviews",
+      "Most useful when you have docs, ADRs or specs to check against",
+      "Not a replacement for code-quality review"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/prelint",
+      "quotes": [
+        {"author": "Rick Wise", "url": "https://www.producthunt.com/products/prelint?comment=5690627", "text": "Asked how Prelint helps a one-person company without Slack, meetings or tickets to learn from.",
+         "reply": "Wojtek Szkutnik said that if you work with pull requests you would still get a lot of value without those artefacts."}
+      ],
+      "x": {"profile_url": "https://twitter.com/prelint_ai", "search_url": "https://x.com/search?q=prelint&f=live", "none": "Apart from Prelint's own account, we found no posts on X clearly about the product."}
+    },
+    "faq": [
+      {"q": "What is Prelint?", "a": "A pull-request reviewer that lists the product decisions a change makes, checks them against your ADRs, docs and earlier decisions, and records them in a decision ledger."},
+      {"q": "How much does Prelint cost?", "a": "$1 per completed review from prepaid credits, with $10 free at sign-up and no card. Open-source projects are free. Prelint says most teams spend $40 to $80 a month."},
+      {"q": "Is Prelint a code reviewer?", "a": "Not in the usual sense. It checks whether code does the right thing for the product, alongside tools that check whether it is technically correct."},
+      {"q": "Is it useful for solo developers?", "a": "The founder says yes if you work with pull requests, even without Slack, meetings or tickets."},
+      {"q": "Can I cap spending?", "a": "Yes. You can set a monthly limit; reviews pause when it is reached."}
+    ],
+    "sources": [
+      {"label": "Prelint official site", "url": "https://prelint.com/"},
+      {"label": "Prelint pricing", "url": "https://prelint.com/pricing"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/prelint?launch=prelint"},
+      {"label": "CodeRabbit pricing", "url": "https://www.coderabbit.ai/pricing"},
+      {"label": "Greptile pricing", "url": "https://www.greptile.com/pricing"}
+    ]
+  }
+}

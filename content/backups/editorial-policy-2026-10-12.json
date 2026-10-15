@@ -1,0 +1,117 @@
+{
+ "id": 23,
+ "date": "2026-10-04T08:23:12",
+ "date_gmt": "2026-10-04T08:23:12",
+ "guid": {
+  "rendered": "https://100xfounder.com/editorial-policy/",
+  "raw": "https://100xfounder.com/editorial-policy/"
+ },
+ "modified": "2026-10-04T08:23:12",
+ "modified_gmt": "2026-10-04T08:23:12",
+ "password": "",
+ "slug": "editorial-policy",
+ "status": "publish",
+ "type": "page",
+ "link": "https://100xfounder.com/editorial-policy/",
+ "title": {
+  "raw": "Editorial Policy",
+  "rendered": "Editorial Policy"
+ },
+ "content": {
+  "raw": "<!-- wp:paragraph --><p>100xFounder covers startups, funding, launches, jobs and AI with one rule: <strong>every fact has a source</strong>. Each article lists its sources at the end, with the publisher, date and the claim each one supports.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">How we report</h2><!-- /wp:heading -->\n<!-- wp:list --><ul><li>We prefer primary sources: company announcements, regulatory filings, official data and on-the-record interviews.</li><li>We write in our own words and link to original reporting when we build on it.</li><li>Figures about people, such as net worth or compensation, are published only when a reliable source reports them, with the date.</li><li>Software may help us find and organise stories, and every article is reviewed and edited by a person before it is published.</li></ul><!-- /wp:list -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Founder verification</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>When we publish about a founder or company we invite them to check the facts and sources. Pages they confirm show a \"Verified\" mark; corrections they send are reviewed and applied openly.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Independence</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>Sponsored content is always labelled \"Sponsored\" and its links are marked as such. Advertisers and sponsors never decide what we cover or what we say.</p><!-- /wp:paragraph -->",
+  "rendered": "<p class=\"wp-block-paragraph\">100xFounder covers startups, funding, launches, jobs and AI with one rule: <strong>every fact has a source</strong>. Each article lists its sources at the end, with the publisher, date and the claim each one supports.</p>\n<h2 class=\"wp-block-heading\">How we report</h2>\n<ul class=\"wp-block-list\"><li>We prefer primary sources: company announcements, regulatory filings, official data and on-the-record interviews.</li><li>We write in our own words and link to original reporting when we build on it.</li><li>Figures about people, such as net worth or compensation, are published only when a reliable source reports them, with the date.</li><li>Software may help us find and organise stories, and every article is reviewed and edited by a person before it is published.</li></ul>\n<h2 class=\"wp-block-heading\">Founder verification</h2>\n<p class=\"wp-block-paragraph\">When we publish about a founder or company we invite them to check the facts and sources. Pages they confirm show a &#8220;Verified&#8221; mark; corrections they send are reviewed and applied openly.</p>\n<h2 class=\"wp-block-heading\">Independence</h2>\n<p class=\"wp-block-paragraph\">Sponsored content is always labelled &#8220;Sponsored&#8221; and its links are marked as such. Advertisers and sponsors never decide what we cover or what we say.</p>",
+  "protected": false,
+  "block_version": 1
+ },
+ "excerpt": {
+  "raw": "",
+  "rendered": "<p>100xFounder covers startups, funding, launches, jobs and AI with one rule: every fact has a source. Each article lists its sources at the end, with the publisher, date and the claim each one supports. How we report We prefer primary sources: company announcements, regulatory filings, official data and on-the-record interviews. We write in our own [&hellip;]</p>\n",
+  "protected": false
+ },
+ "author": 0,
+ "featured_media": 0,
+ "parent": 0,
+ "menu_order": 0,
+ "comment_status": "closed",
+ "ping_status": "closed",
+ "template": "",
+ "meta": {
+  "wpai_generated_summary": "",
+  "wpai_meta_description": "",
+  "footnotes": ""
+ },
+ "permalink_template": "https://100xfounder.com/%pagename%/",
+ "generated_slug": "editorial-policy",
+ "class_list": [
+  "post-23",
+  "page",
+  "type-page",
+  "status-publish",
+  "hentry"
+ ],
+ "_links": {
+  "self": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/23",
+    "targetHints": {
+     "allow": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+     ]
+    }
+   }
+  ],
+  "collection": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages"
+   }
+  ],
+  "about": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/types/page"
+   }
+  ],
+  "replies": [
+   {
+    "embeddable": true,
+    "href": "https://100xfounder.com/wp-json/wp/v2/comments?post=23"
+   }
+  ],
+  "version-history": [
+   {
+    "count": 0,
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/23/revisions"
+   }
+  ],
+  "wp:attachment": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=23"
+   }
+  ],
+  "wp:action-publish": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/23"
+   }
+  ],
+  "wp:action-unfiltered-html": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/23"
+   }
+  ],
+  "wp:action-assign-author": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/pages/23"
+   }
+  ],
+  "curies": [
+   {
+    "name": "wp",
+    "href": "https://api.w.org/{rel}",
+    "templated": true
+   }
+  ]
+ }
+}

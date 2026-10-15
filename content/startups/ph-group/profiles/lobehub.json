@@ -1,0 +1,100 @@
+{
+ "slug": "lobehub",
+ "ph_url": "https://www.producthunt.com/products/lobehub",
+ "existing_listing_slug": null,
+ "website": "https://lobehub.com/",
+ "excerpt": "LobeHub, the AI platform that grew out of LobeChat, launched CAO, a 'Chief Agent Operator' that assembles agent teams, runs Claude Code, Codex and OpenClaw in parallel in the cloud and sends a daily brief. Free plan; paid from $9.9 a month. Pricing and alternatives.",
+ "content": "<p>LobeHub is an AI platform for working with agents, which began as LobeChat, an open-source chatbot interface. Its Product Hunt launch introduced CAO, a Chief Agent Operator: you give it a goal and it assembles a team of agents from LobeHub's skills and MCP server marketplace, runs coding agents such as Claude Code, Codex and OpenClaw in parallel in the cloud, tracks the work as tasks, and sends you a daily brief instead of making you check each agent. Agents can also reach you in chat apps such as Slack, Discord, Telegram, WhatsApp, WeChat, Lark, LINE and iMessage.</p><p>Around CAO, LobeHub offers an agent builder that sets up an agent from one sentence, agent groups that work in parallel, shared Pages for writing with several agents, scheduled tasks, projects, team workspaces and an editable memory that learns how you work. It works with many models and lets you bring your own provider keys. The code is on GitHub under the LobeHub Community License, and LobeHub says the project has more than 700,000 GitHub stars across its repositories.</p><p>LobeHub is made by LobeHub LLC. The CAO launch was LobeHub's third on Product Hunt; it went live on 18 May 2026 and finished #1 for the day with 431 upvotes and 78 comments.</p><p><em>We have not tested LobeHub ourselves. This page brings together LobeHub's website, pricing and about pages, its GitHub licence, its Product Hunt page and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agents",
+  "platform": "Web, desktop app and chat apps",
+  "starts_at": "Free; paid plans from $9.9/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI agent platform whose CAO assembles and runs agent teams and reports in a daily brief",
+  "maker": {"name": "LobeHub LLC", "url": "https://lobehub.com/about"},
+  "ph": {"rank": 1, "votes": 431, "comments": 78, "followers": 2248, "launched": "2026-05-18", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/fc21c5c6-a867-4f5e-a10e-d94bbb5621d1.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1149, "credit": "Image: LobeHub via Product Hunt", "alt": "LobeHub 'Your Chief Agent Operator' graphic connecting chat apps, coding agents and specialist agents to a task list"},
+   {"url": "https://ph-files.imgix.net/7579db1e-8dc7-4c55-b84c-64149c6abd2f.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1149, "credit": "Image: LobeHub via Product Hunt", "alt": "LobeHub task board 'goal in, team out' with pending review, backlog and completed tasks"},
+   {"url": "https://ph-files.imgix.net/959224dc-623d-46ac-ac56-c3128eb9eef4.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1149, "credit": "Image: LobeHub via Product Hunt", "alt": "LobeHub Agent Bridge running a weekly GitHub issue triage task split into subtasks"},
+   {"url": "https://ph-files.imgix.net/06928814-190a-4a84-9e3b-5dfe1672c727.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1149, "credit": "Image: LobeHub via Product Hunt", "alt": "LobeHub daily brief summarising finished agent work with buttons to confirm each item"}
+  ],
+  "use_cases": [
+   "Handing a large backlog, such as hundreds of GitHub issues, to a team of agents",
+   "Running Claude Code, Codex and other agents in parallel in the cloud",
+   "Getting one daily report on agent work instead of checking many tabs",
+   "Talking to agents from Slack, Telegram, WhatsApp or other chat apps",
+   "Building agents with skills and MCP servers from a marketplace"
+  ],
+  "audience": {
+   "fit": [
+    "run several AI agents and want one place to assign, schedule and review their work",
+    "want agents to report through the chat apps you already use",
+    "want a choice of models and the option to bring your own keys"
+   ],
+   "not_fit": [
+    "only need a simple chat assistant: LobeHub's agent operations add complexity",
+    "need a standard open-source licence: the code is under the LobeHub Community License",
+    "need predictable costs for heavy use of top models: paid plans include a fixed number of messages per model"
+   ]
+  },
+  "pricing": {
+   "intro": "LobeHub has a free plan and three paid plans based on monthly credits. Prices are in US dollars from its pricing page; the plan cards show the lower figures and the comparison table lists higher monthly prices, with yearly totals matching the lower figures, so the lower price appears to be the yearly-billed rate.",
+   "url": "https://lobehub.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "500,000 credits a month, 15 MB file storage, email and community support"},
+    {"name": "Starter", "price": "$9.9/month ($12.9 monthly in the comparison table)", "amount": 9.9, "currency": "USD", "detail": "5M credits a month, 1 GB storage, Agent Memory, early access to new models"},
+    {"name": "Premium", "price": "$19.9/month ($24.9 monthly in the comparison table)", "amount": 19.9, "currency": "USD", "detail": "15M credits a month, 2 GB storage, priority email support"},
+    {"name": "Ultimate", "price": "$39.9/month ($49.9 monthly in the comparison table)", "amount": 39.9, "currency": "USD", "detail": "35M credits a month, 4 GB storage, priority chat and email support"}
+   ],
+   "notes": [
+    "Yearly billing is advertised at 20% off; extra credit packages can be bought on paid plans.",
+    "An Enterprise edition with a commercial licence, private models and self-hosted providers is priced on request (hello@lobehub.com)."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists MindPal, GPTBots.ai and Google Antigravity among LobeHub's alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "MindPal", "url": "https://mindpal.space/", "what": "Builds AI agents and multi-agent workflows from domain expertise", "starts_at": "See its pricing page", "ph_rating": 4.5, "ph_reviews": 36, "ph_url": "https://www.producthunt.com/products/mindpal-ai", "difference": "Workflow-builder approach; LobeHub's CAO assembles teams from a goal and also runs coding agents."},
+    {"name": "GPTBots.ai", "url": "https://www.gptbots.ai/", "what": "Platform for building AI agent teams for businesses", "starts_at": "See its pricing page", "ph_rating": 4.91, "ph_reviews": 22, "ph_url": "https://www.producthunt.com/products/gptbots-ai", "difference": "Business bot builder; LobeHub adds chat-app delivery and a daily brief for many agents."},
+    {"name": "Google Antigravity", "url": "https://antigravity.google/", "what": "IDE for running and monitoring several coding agents", "starts_at": "See its pricing page", "ph_rating": 4.65, "ph_reviews": 23, "ph_url": "https://www.producthunt.com/products/google-antigravity", "difference": "Focused on coding inside an IDE; LobeHub covers non-coding agents and runs agents in the cloud."}
+   ],
+   "more": "Product Hunt also lists Claude and Camel AGI."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/lobehub/reviews", "as_of": "2026-10-14"},
+  "pros": [
+   "Runs several coding agents in parallel in the cloud",
+   "Agents reachable through many chat apps",
+   "Large marketplace of skills and MCP servers",
+   "Free plan and the option to bring your own provider keys"
+  ],
+  "cons": [
+   "Pricing page shows two different sets of monthly prices",
+   "Paid plans cap messages for top models",
+   "Community licence rather than a standard open-source licence",
+   "Broad feature set may be more than a single user needs"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/lobehub",
+   "x": {"none": "We found no posts about LobeHub's CAO on X to link yet.", "search_url": "https://x.com/search?q=lobehub&f=live", "profile_url": "https://x.com/lobehub"}
+  },
+  "faq": [
+   {"q": "What is LobeHub's CAO?", "a": "A Chief Agent Operator: give it a goal and it assembles a team of agents, runs them (including Claude Code, Codex and OpenClaw) in parallel in the cloud and sends you a daily brief."},
+   {"q": "Is LobeHub free?", "a": "There is a free plan with 500,000 credits a month. Paid plans start at $9.9 a month on the plan cards."},
+   {"q": "Is LobeHub open source?", "a": "Its code is on GitHub under the LobeHub Community License, and an Enterprise edition is sold under a commercial licence."},
+   {"q": "Which chat apps can agents use?", "a": "LobeHub lists Slack, Discord, Telegram, WeChat, Feishu, Lark, LINE, QQ, iMessage and WhatsApp."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists Claude, MindPal, GPTBots.ai, Camel AGI and Google Antigravity."}
+  ],
+  "sources": [
+   {"label": "LobeHub official site", "url": "https://lobehub.com/"},
+   {"label": "LobeHub pricing", "url": "https://lobehub.com/pricing"},
+   {"label": "About LobeHub", "url": "https://lobehub.com/about"},
+   {"label": "LobeHub contact", "url": "https://lobehub.com/contact"},
+   {"label": "LobeHub licence on GitHub", "url": "https://github.com/lobehub/lobehub/blob/main/LICENSE"},
+   {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/lobehub"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/lobehub/alternatives"}
+  ]
+ }
+}

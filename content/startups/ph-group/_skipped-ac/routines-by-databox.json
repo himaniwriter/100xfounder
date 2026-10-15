@@ -1,0 +1,102 @@
+{
+  "slug": "routines-by-databox",
+  "ph_url": "https://www.producthunt.com/posts/routines-by-databox",
+  "existing_listing_slug": null,
+  "website": "https://databox.com",
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments and the launch gallery were not available, so the gallery uses Databox's product images on Product Hunt and there are no comment quotes.",
+  "excerpt": "Routines by Databox automatically surfaces important changes in your business data and turns them into reports, inside Databox's agentic analytics platform.",
+  "content": "<p>Routines is a feature of Databox, an analytics platform that brings performance data from across a business into one place with consistent metric definitions. Databox connects more than 130 tools, spreadsheets, databases and APIs, such as Google Ads, HubSpot, Salesforce and Stripe, into a governed \"semantic layer\" so every metric means the same thing. On top of that sit an AI Analyst you can ask questions in plain language, dashboards and reports, goals, and an MCP server so other AI tools can use the same data.</p><p>Routines automate the recurring part of analysis: they watch your data on a schedule, surface important changes and turn them into reports that explain what happened and why it matters, for example a board revenue recap every month. Databox has a free plan, with paid plans from $71 a month billed annually and a separate Agency plan.</p><p>Databox lists a Boston, Massachusetts address on its site and says it is trusted by more than 20,000 businesses. Its makers on Product Hunt include Davorin Gabrovec, founder and chief product officer. Routines launched there on 7 September 2026 and finished #4 for the day with 183 upvotes and 34 comments. Databox has 8 Product Hunt reviews averaging 4.75 out of 5 (as of 14 October 2026).</p><p><em>We have not tested Databox ourselves. This page brings together Databox's official site and pricing page, its Product Hunt pages and the public pricing page of a comparable tool, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Business analytics and reporting",
+    "platform": "Web app with iPhone and Android apps",
+    "starts_at": "Free plan; Analyst $71/month billed annually",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Automated routines that spot important changes in your business data and report them",
+    "maker": {"name": "Davorin Gabrovec", "url": "https://www.producthunt.com/@davorin"},
+    "team": [
+      {"name": "Davorin Gabrovec", "role": "Founder and CPO", "url": "https://www.producthunt.com/@davorin"},
+      {"name": "Grega Cej", "role": "AI product manager", "url": "https://www.producthunt.com/@grega_cej"},
+      {"name": "Jakob Zmrzlikar", "role": "AI engineer", "url": "https://www.producthunt.com/@jakobzmrzlikar"},
+      {"name": "Peter Caputa", "role": "Maker", "url": "https://www.producthunt.com/@pc4media"},
+      {"name": "Marcel Mumel", "role": "Maker", "url": "https://www.producthunt.com/@marcel_mumel"}
+    ],
+    "ph": {"rank": 4, "votes": 183, "comments": 34, "followers": 2746, "launched": "2026-09-07", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/764712a6-ec18-4ef7-8cfb-c564c4f708aa.png?auto=format&fit=max&w=1400", "credit": "Image: Databox on Product Hunt",
+       "alt": "Databox 'One set of trusted numbers for your team and your AI': integrations, semantic layer and data governance, with logos of connected tools"},
+      {"url": "https://ph-files.imgix.net/ef0a1a38-4a6b-4165-b446-1e9fdacd3e6c.png?auto=format&fit=max&w=1400", "credit": "Image: Databox on Product Hunt",
+       "alt": "Databox 'Performance visible to everyone who needs it' with a sample MRR performance report and dashboard"},
+      {"url": "https://ph-files.imgix.net/5cc5dec7-79bb-4246-b152-b0b02be1d535.png?auto=format&fit=max&w=1400", "credit": "Image: Databox on Product Hunt",
+       "alt": "Databox 'Analysis, reporting, and follow-up on autopilot' showing a scheduled board revenue recap pulling data from Google Ads, HubSpot and Salesforce"}
+    ],
+    "use_cases": [
+      "Getting a scheduled report when a key metric changes, without building it by hand each week",
+      "Asking an AI analyst questions about live business data",
+      "Giving AI tools governed company metrics through an MCP server",
+      "Agencies tracking performance across many clients"
+    ],
+    "audience": {
+      "fit": [
+        "pull numbers from many tools into recurring reports",
+        "want consistent metric definitions for both people and AI",
+        "run an agency reporting to several clients"
+      ],
+      "not_fit": [
+        "need only one data source and a simple dashboard: free tools may be enough",
+        "want a full data warehouse or BI modelling tool"
+      ]
+    },
+    "pricing": {
+      "intro": "Databox has a free plan and paid plans with a 14-day trial; annual billing saves 20%. Prices are in US dollars.",
+      "url": "https://databox.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "1 user, 3 data sources, 50 AI credits a month, AI Analyst, performance summaries, governed semantic layer"},
+        {"name": "Analyst", "price": "$71/month billed annually", "amount": 71, "currency": "USD", "detail": "1 user, 5 data sources, 150 AI credits a month, custom data integrations, MCP server, API access, hourly sync"},
+        {"name": "Team", "price": "From $199/month billed annually", "amount": 199, "currency": "USD", "detail": "For collaborative analytics and automated workflows; a larger Scale tier is $319/month billed annually"},
+        {"name": "Agency", "price": "From $79, billed annually, plus account packs", "detail": "For agencies managing performance across several clients"}
+      ]
+    },
+    "alternatives": {
+      "intro": "Other reporting tools for businesses and agencies. Price from the company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "AgencyAnalytics", "url": "https://agencyanalytics.com/", "what": "Client reporting dashboards for marketing agencies", "starts_at": "$20 per client per month billed annually",
+         "difference": "Priced per client and focused on agency reporting; Databox adds an AI analyst, routines and a semantic layer for AI tools."},
+        {"name": "Looker Studio", "url": "https://lookerstudio.google.com/", "what": "Google's dashboard and reporting tool", "starts_at": "See its pricing page",
+         "difference": "Strong for Google data sources but without built-in routines that write up changes for you."}
+      ]
+    },
+    "reviews": {"count": 8, "rating": 4.75, "url": "https://www.producthunt.com/products/databox/reviews", "as_of": "2026-10-14"},
+    "pros": [
+      "Free plan to start; 14-day trial on paid plans",
+      "130+ integrations with a shared metric layer",
+      "Routines and an AI analyst automate recurring reporting",
+      "MCP server and API for AI tools"
+    ],
+    "cons": [
+      "AI usage is limited by monthly credits",
+      "The free plan allows only 3 data sources and 1 user",
+      "Several plans and add-ons to choose between"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/databox",
+      "x": {"profile_url": "https://twitter.com/databoxhq", "search_url": "https://x.com/search?q=databox%20routines&f=live", "none": "Apart from Databox's own account, we found no posts on X clearly about Routines."}
+    },
+    "faq": [
+      {"q": "What is Routines by Databox?", "a": "A Databox feature that watches your business data on a schedule, surfaces important changes and turns them into reports explaining what happened and why."},
+      {"q": "How much does Databox cost?", "a": "There is a free plan. Analyst is $71 a month and Team starts at $199 a month, both billed annually; agencies have a separate plan from $79."},
+      {"q": "What data can Databox connect to?", "a": "More than 130 tools, spreadsheets, databases and APIs, such as Google Ads, HubSpot, Salesforce and Stripe."},
+      {"q": "Can other AI tools use Databox data?", "a": "Yes. Databox has an MCP server so AI tools can work from the same governed metrics."},
+      {"q": "Is there a free trial?", "a": "Yes, 14 days on paid plans, according to the pricing page."}
+    ],
+    "sources": [
+      {"label": "Databox official site", "url": "https://databox.com/"},
+      {"label": "Databox pricing", "url": "https://databox.com/pricing"},
+      {"label": "Databox About page", "url": "https://databox.com/about"},
+      {"label": "Product Hunt product page", "url": "https://www.producthunt.com/products/databox"},
+      {"label": "Product Hunt launches", "url": "https://www.producthunt.com/products/databox/launches"},
+      {"label": "AgencyAnalytics pricing", "url": "https://agencyanalytics.com/pricing"}
+    ]
+  }
+}

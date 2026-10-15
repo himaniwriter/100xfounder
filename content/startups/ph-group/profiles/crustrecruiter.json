@@ -1,0 +1,91 @@
+{
+  "slug": "crustrecruiter",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/crustrecruiter",
+  "also_covers": [{"name": "Crustimate", "ph_url": "https://www.producthunt.com/posts/crustimate"}],
+  "excerpt": "CrustRecruiter from Crustdata is a set of recruiting skills that turns Claude into a sourcing assistant on live people data. What it does, pricing and Crustdata's free Crustimate tool.",
+  "content": "<p>CrustRecruiter is a recruiting add-on for Claude from Crustdata, a Y Combinator-backed company that sells live people and company data through APIs, webhooks and MCP. Its launch images describe it as a suite of recruiting skills plus live data on more than a billion people, running inside Claude: you describe the role in plain language, or attach a job description, and Claude searches Crustdata's people data and returns a ranked shortlist with the reason each candidate fits.</p><p>On its recruiting page Crustdata says teams can pull candidate lists with full work history, score them against their own rules (its \"CrustScore\" uses more than 50 data points), keep watchlists and get alerts when a candidate changes jobs or gets promoted. Crustdata's About page lists three co-founders: Abhilash Chowdhary and Manmohit Grewal in San Francisco and Chris Pisarski in New York.</p><p>CrustRecruiter launched on Product Hunt on 11 June 2026 and finished #7 for the day with 205 points and 27 comments. A follow-up launch, \"Crustdata Recruiter\" (Claude skills for recruiters), followed on 15 July 2026. Crustdata also launched <strong>Crustimate</strong> on 15 May 2026 (#7, 161 points): a free tool that scores how findable your LinkedIn profile is to AI sourcing tools and suggests a rewritten headline and fixes.</p><p><em>We have not tested CrustRecruiter or Crustimate ourselves. This page brings together Crustdata's official site, its Product Hunt pages and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI recruiting and people data",
+    "platform": "Claude skills on Crustdata's API and MCP",
+    "starts_at": "Pricing not published; Crustimate is free",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Recruiting skills that turn Claude into a sourcing assistant on Crustdata's live people data",
+    "team": [
+      {"name": "Abhilash Chowdhary", "role": "Co-founder, San Francisco (Crustdata About page)", "url": "https://crustdata.com/about"},
+      {"name": "Manmohit Grewal", "role": "Co-founder, San Francisco (Crustdata About page)", "url": "https://crustdata.com/about"},
+      {"name": "Chris Pisarski", "role": "Co-founder, New York (Crustdata About page)", "url": "https://crustdata.com/about"}
+    ],
+    "ph": {"rank": 7, "votes": 205, "comments": 27, "followers": 2917, "launched": "2026-06-11", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/1d864854-76a1-4817-bf89-b22d72dbb2d3.jpeg?auto=format&fit=max&w=1400", "w": 2400, "h": 1200,
+       "alt": "Crustdata graphic 'Build your recruiting twin with Claude' beside a Claude chat returning a table of 47 matching ML engineer profiles", "credit": "Image: Crustdata via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/a27732e8-cef9-45db-9123-28821703be89.jpeg?auto=format&fit=max&w=1400", "w": 2400, "h": 1200,
+       "alt": "Crustdata graphic 'Prompt to find the candidates you'd actually call' showing a job description prompt and a ranked candidate list with match scores", "credit": "Image: Crustdata via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are a recruiter or sourcer who already works in Claude and wants candidate search inside it",
+        "want to score candidates against your own rules instead of a black-box ranking",
+        "want alerts when people on a watchlist change jobs or get promoted"
+      ],
+      "not_fit": [
+        "need a published price list: Crustdata's pricing page describes credit-based plans without amounts",
+        "want a full applicant-tracking system: this is sourcing and data, not interview or hiring workflow",
+        "are a job seeker: Crustdata's free Crustimate tool is the product aimed at you"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on crustdata.com as of 14 October 2026. The pricing page describes credit-based API plans, billed monthly or annually, and a monthly flat-file dataset, with enterprise pricing through sales.",
+      "url": "https://crustdata.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [],
+      "notes": [
+        "The recruiting page invites teams to \"get started for free\"; it does not say what the free start includes.",
+        "Crustimate, the LinkedIn profile scorer, is free and needs no login, according to its page.",
+        "Claude itself is separate and runs on your own Claude plan."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives to Crustdata. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Reverse Contact", "url": "https://www.reversecontact.com/", "what": "People and company data API for B2B teams", "starts_at": "Go $249/month; 100 free credits to try", "ph_rating": 4.86, "ph_reviews": 74,
+         "difference": "A data API with published plans and MCP and CLI access; it is not packaged as recruiting skills for Claude."},
+        {"name": "Apollo.io", "url": "https://www.apollo.io/", "what": "Sales intelligence and outreach platform", "starts_at": "See its pricing page", "ph_rating": 4.19, "ph_reviews": 42,
+         "difference": "Built for sales prospecting and outreach rather than candidate sourcing."},
+        {"name": "Clay", "url": "https://www.clay.com/", "what": "Data enrichment and personalised outbound", "starts_at": "See its pricing page", "ph_rating": 4.83, "ph_reviews": 40,
+         "difference": "Combines many data providers in a spreadsheet-style tool; Crustdata supplies its own live data and works inside Claude."}
+      ],
+      "more": "Product Hunt also lists Anysite.io (5.0 from 6 reviews) and ZELIQ (5.0 from 32 reviews). Crustdata's own site compares itself with Juicebox for recruiting."
+    },
+    "reviews": {"count": 1, "rating": 5, "url": "https://www.producthunt.com/products/crustdata-2/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/crustdata-2",
+      "quotes": [
+        {"author": "IMAD EL KHAFI", "text": "Optimizing for AI recruiters is the new SEO same game, different algorithm. Does it tell you what to change specifically or just give you a score?",
+         "reply": "Daniel Ahmadizadeh (Crustimate maker): it tells you what to change specifically."},
+        {"author": "Abdul Rehman", "text": "Have you tracked whether people who actually implement these fixes get more recruiter outreach?",
+         "reply": "Daniel Ahmadizadeh said they would start tracking it; his own profile score went from 52 to 78."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "profile_url": "https://twitter.com/crustdata", "search_url": "https://x.com/search?q=Crustdata%20recruiter&f=live"}
+    },
+    "faq": [
+      {"q": "What is CrustRecruiter?", "a": "A set of recruiting skills from Crustdata that lets Claude search live data on more than a billion people and return ranked candidate shortlists from a plain-language brief or job description."},
+      {"q": "Who makes it?", "a": "Crustdata, a Y Combinator company whose About page lists co-founders Abhilash Chowdhary, Manmohit Grewal and Chris Pisarski."},
+      {"q": "How much does it cost?", "a": "Crustdata does not publish prices. Its pricing page describes credit-based API plans billed monthly or annually, with enterprise pricing through sales."},
+      {"q": "What is Crustimate?", "a": "A free Crustdata tool that scores how visible your LinkedIn profile is to AI sourcing tools and suggests a rewritten headline and a fix list. It launched on Product Hunt on 15 May 2026."},
+      {"q": "How did CrustRecruiter do on Product Hunt?", "a": "It launched on 11 June 2026 and finished #7 for the day with 205 points and 27 comments. Crustdata as a whole had one Product Hunt review (5 out of 5) as of 14 October 2026."}
+    ],
+    "sources": [
+      {"label": "Crustdata official site", "url": "https://crustdata.com/"},
+      {"label": "Crustdata recruiting page", "url": "https://crustdata.com/solutions/recruiting"},
+      {"label": "Crustdata pricing", "url": "https://crustdata.com/pricing"},
+      {"label": "Crustdata about", "url": "https://crustdata.com/about"},
+      {"label": "Crustimate", "url": "https://tools.crustdata.com/crustimate"},
+      {"label": "Product Hunt: CrustRecruiter launch", "url": "https://www.producthunt.com/products/crustdata-2/launches/crustrecruiter"},
+      {"label": "Product Hunt: Crustimate", "url": "https://www.producthunt.com/products/findable-4"},
+      {"label": "Reverse Contact pricing", "url": "https://www.reversecontact.com/pricing"}
+    ]
+  }
+}

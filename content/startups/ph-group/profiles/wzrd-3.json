@@ -1,0 +1,255 @@
+{
+ "slug": "wzrd-3",
+ "ph_url": "https://www.producthunt.com/posts/wzrd-3",
+ "existing_listing_slug": null,
+ "website": "https://wzrd.to/",
+ "excerpt": "WZRD adds a voice AI layer to forms, docs, sheets and slides, so visitors can ask questions out loud and fill forms by speaking. Free plan; paid from $15/month.",
+ "content": "<p>WZRD puts a talking AI layer on top of forms, documents, sheets and slide decks. Instead of a static PDF or a long form, visitors get an experience that greets them, answers questions out loud, explains what a document means and guides them through a form by voice or typing, collecting files and answers along the way. You describe what you are building in plain language and WZRD drafts the questions, logic and flow, which you can edit before publishing. The company says it is live across more than 100 use cases, from lead capture and onboarding to intake, approvals and document collection.</p><p>Its newer interface organises work into rooms built from templates such as a sales room, classroom, data room or showroom, and rooms can also be created from Claude, Codex, Gemini, Lovable or Cursor through its MCP server. WZRD is operated by DOO Inc., according to its privacy policy, and was founded by Ali (Alimo on Product Hunt), who lists past work at Microsoft. It launched on Product Hunt on 22 September 2026, hunted by Jonno Riekwel, and finished #2 for the day with 286 upvotes and 41 comments. In replies there, the founder said the AI answers from your uploaded content rather than following a fixed script, that you can read full conversation transcripts, and that handling of complex formatting and tables is still being improved.</p><p>The free plan includes 30 one-time voice sessions and up to 5 projects with WZRD branding. Paid plans are Starter ($15 a month, 60 voice sessions), Maker ($29, 150 sessions) and Builder ($79, from 400 sessions), with a voice session counted in full as soon as it starts.</p><p><em>We have not tested WZRD ourselves. This page brings together its official site, pricing, about page and privacy policy, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Productivity",
+  "platform": "Web app",
+  "starts_at": "Free (30 voice sessions); Starter $15/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Voice AI layer that makes forms, docs, sheets and slides answer questions out loud",
+  "use_cases": [
+   "Lead-capture or intake forms that people can fill in by speaking",
+   "Policies or documents that explain themselves and answer questions",
+   "Slide decks that present and respond to viewers",
+   "Collecting documents and details in one guided flow",
+   "Sales or data rooms that buyers can query by voice"
+  ],
+  "audience": {
+   "fit": [
+    "have a form people abandon or a document people don't read",
+    "want a voice experience without engineers or code",
+    "run onboarding, intake or lead capture at volume"
+   ],
+   "not_fit": [
+    "need many long voice conversations on a small budget: sessions are capped per plan",
+    "want a plain form builder without AI or voice",
+    "need WZRD branding removed on the free plan"
+   ]
+  },
+  "pricing": {
+   "intro": "WZRD prices by voice sessions and projects. Prices are from wzrd.to, in US dollars, billed monthly; annual billing saves 20%.",
+   "url": "https://wzrd.to/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "30 voice sessions (one-time), up to 5 projects, standard templates and voices, WZRD branding"
+    },
+    {
+     "name": "Starter",
+     "price": "$15/month",
+     "amount": 15,
+     "currency": "USD",
+     "detail": "60 voice sessions a month, up to 3 users and 20 projects, premium form and sheet templates, branding removed, analytics"
+    },
+    {
+     "name": "Maker",
+     "price": "$29/month",
+     "amount": 29,
+     "currency": "USD",
+     "detail": "150 voice sessions a month, up to 10 users and 50 projects, premium voices"
+    },
+    {
+     "name": "Builder",
+     "price": "$79/month",
+     "amount": 79,
+     "currency": "USD",
+     "detail": "400 voice sessions a month (larger allowances available), unlimited users, up to 150 projects, priority support"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Unlimited projects, custom integrations, custom voice allowance and analytics"
+    }
+   ],
+   "notes": [
+    "A voice session counts in full the moment it starts. Sessions reset each billing cycle and do not carry over."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other tools for interactive forms and presentations. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Typeform",
+     "url": "https://www.typeform.com/",
+     "what": "Conversational forms, surveys and quizzes with AI features",
+     "starts_at": "Basic $39/month billed yearly",
+     "difference": "A mature form builder; WZRD's focus is on voice, letting people speak answers and ask questions out loud."
+    },
+    {
+     "name": "Gamma",
+     "url": "https://gamma.app/",
+     "what": "AI tool for generating presentations, documents and web pages",
+     "starts_at": "See its pricing page",
+     "difference": "Generates the deck or doc; WZRD makes the published file talk back to its audience."
+    }
+   ]
+  },
+  "pros": [
+   "Free plan to try voice experiences",
+   "Works across forms, docs, sheets and slides with one setup",
+   "Configured by describing what you want, no code",
+   "Can be driven from Claude, Codex, Cursor and other AI tools via MCP"
+  ],
+  "cons": [
+   "Voice sessions are capped, and a session counts as soon as it starts",
+   "Free sessions are a one-time allowance, not monthly",
+   "The product's interface has shifted towards rooms, so older guides may differ"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/wzrd",
+   "x": {
+    "none": "We found no posts about WZRD on X yet.",
+    "search_url": "https://x.com/search?q=wzrd.to&f=live",
+    "profile_url": "https://x.com/wzrdto"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is WZRD?",
+    "a": "An AI layer for forms, documents, sheets and slides that lets people talk to them: it answers questions out loud, explains content and guides people through forms by voice or text."
+   },
+   {
+    "q": "How much does WZRD cost?",
+    "a": "There is a free plan with 30 one-time voice sessions. Paid plans are Starter at $15 a month, Maker at $29 and Builder at $79, with Enterprise priced on request. Annual billing saves 20%."
+   },
+   {
+    "q": "What counts as a voice session?",
+    "a": "WZRD counts a session in full the moment it starts, whether or not it finishes. Sessions reset each billing cycle and don't carry over."
+   },
+   {
+    "q": "Do I need to code?",
+    "a": "No. You describe what you are building and WZRD drafts the questions, logic and flow, which you can edit before publishing."
+   },
+   {
+    "q": "Who runs WZRD?",
+    "a": "Its privacy policy says WZRD is a product of DOO Inc."
+   },
+   {
+    "q": "What are the alternatives to WZRD?",
+    "a": "Typeform for conversational forms, or Gamma for AI-made presentations and documents. Neither centres on voice the way WZRD does."
+   }
+  ],
+  "sources": [
+   {
+    "label": "WZRD official site",
+    "url": "https://wzrd.to/"
+   },
+   {
+    "label": "WZRD pricing",
+    "url": "https://wzrd.to/pricing"
+   },
+   {
+    "label": "About WZRD",
+    "url": "https://wzrd.to/about"
+   },
+   {
+    "label": "WZRD privacy policy",
+    "url": "https://wzrd.to/privacy"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/wzrd"
+   },
+   {
+    "label": "Typeform pricing",
+    "url": "https://www.typeform.com/pricing/"
+   },
+   {
+    "label": "Gamma pricing",
+    "url": "https://gamma.app/pricing"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/wzrd/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 2,
+   "votes": 286,
+   "comments": 41,
+   "followers": 628,
+   "launched": "2026-09-22",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Alimo",
+    "role": "Founder of WZRD; ex-Microsoft",
+    "url": "https://www.producthunt.com/@ealimohsen"
+   },
+   {
+    "name": "Mohd",
+    "role": "Co-founder",
+    "url": "https://www.producthunt.com/@eyemohd"
+   }
+  ],
+  "maker": {
+   "name": "Alimo",
+   "url": "https://www.producthunt.com/@ealimohsen"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/5c0ecf8b-bc4d-4165-8a92-7c875eeb7acb.png?auto=format&fit=max&w=1400",
+    "alt": "WZRD graphic 'Meet WZRD: docs, forms and pages people can talk to' with screens of slides and documents that answer questions",
+    "credit": "Image: WZRD on Product Hunt",
+    "w": 3810,
+    "h": 2280
+   },
+   {
+    "url": "https://ph-files.imgix.net/b25590d4-7640-4942-bd8a-e78ca0160276.png?auto=format&fit=max&w=1400",
+    "alt": "WZRD concept 'Documents that answer': a reader asks a consultancy proposal what it costs and gets the total from the document",
+    "credit": "Image: WZRD on Product Hunt",
+    "w": 3810,
+    "h": 2280
+   },
+   {
+    "url": "https://ph-files.imgix.net/ae708298-890d-4aab-875e-9df92c07c505.png?auto=format&fit=max&w=1400",
+    "alt": "WZRD concept 'Forms that adapt': a hiring intake form skips questions already answered",
+    "credit": "Image: WZRD on Product Hunt",
+    "w": 3810,
+    "h": 2280
+   },
+   {
+    "url": "https://ph-files.imgix.net/3a02333e-96e5-4663-881a-b0d3bb58029b.png?auto=format&fit=max&w=1400",
+    "alt": "WZRD concept 'Slides that talk back': a viewer asks a product launch deck what happens after launch",
+    "credit": "Image: WZRD on Product Hunt",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Ali, WZRD's founder, says he has been building websites since the 1990s, and that one thing still feels unchanged: people create information and then trap it in static interfaces. He and his co-founder kept returning to one question, what if your work could talk back, and that became WZRD.",
+    "He describes it as turning documents, slides, forms and sheets into interactive AI experiences that people can speak or type to, explore and share. Most AI tools help you create the file, he says; WZRD changes what happens after it is created. He aims it at founders, marketers, sales teams, consultants and educators."
+   ],
+   "attribution": "Alimo, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/wzrd?comment=5886186"
+  },
+  "video_url": "https://youtu.be/lOSYTasWhJ0",
+  "video_title": "WZRD launch video",
+  "opinions": {
+   "themes": {
+    "liked": [],
+    "asked": [
+     "Whether the AI adapts to audience questions or runs a fixed presentation (it answers from the uploaded content)",
+     "How much a manager can supervise (you guide it with instructions and can read full transcripts)",
+     "Whether several file types can be combined (extra files can be added as supporting knowledge)",
+     "How it copes with complex formatting and tables (the maker said this is still being improved)",
+     "Whether teams can control what the AI answers (yes, through instructions)"
+    ],
+    "criticised": []
+   }
+  }
+ }
+}

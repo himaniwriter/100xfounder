@@ -1,0 +1,128 @@
+{
+  "type": "post",
+  "slug": "amd-world-labs-acquisition-fei-fei-li",
+  "title": "AMD buys Fei-Fei Li's World Labs for $8.2B in stock: deal explained",
+  "excerpt": "AMD will pay about $8.2 billion in stock for World Labs, the world-model startup led by Fei-Fei Li. What it builds, the deal terms and why AMD wants it.",
+  "category": "ai-news",
+  "tags": [
+    "AMD",
+    "World Labs",
+    "Fei-Fei Li",
+    "world models",
+    "AI acquisitions",
+    "Nvidia",
+    "spatial intelligence",
+    "Lisa Su"
+  ],
+  "content": "<p>AMD has agreed to buy World Labs, the world-model startup founded by AI researcher Fei-Fei Li, in an all-stock deal valued at about $8.2 billion, <a href=\"https://newsroom.amd.com/news/amd-acquire-world-labs/\">the chipmaker announced</a> on 28 September 2026. Li will join AMD as executive vice president and chief scientist, reporting to CEO Lisa Su. AMD is buying a frontier model lab so it can see where AI workloads are heading, rather than leaving that knowledge to its customers and to Nvidia.</p>\n<h2>Key takeaways</h2>\n<ul>\n<li>AMD signed the merger agreement on 26 September and will pay about $8.2 billion in its own shares. The deal is expected to close by the end of 2026, subject to regulatory approval, according to <a href=\"https://www.sec.gov/Archives/edgar/data/2488/000000248826000182/amd-20260926.htm\">AMD's SEC filing</a>.</li>\n<li>World Labs builds \"world models\": AI that generates, reconstructs and simulates interactive 3D environments from text, images and video, and that can be used to train robots.</li>\n<li>The price is about 52% above the $5.4 billion valuation World Labs reportedly received in a $1 billion round in February, <a href=\"https://ca.finance.yahoo.com/news/amds-8-2b-world-labs-190257395.html\">PitchBook reported</a>. World Labs did not confirm that valuation at the time.</li>\n<li>The price is well above the roughly $4.9 billion AMD agreed to pay for server maker ZT Systems in 2024. It also suggests chipmakers now see model research as part of the hardware business.</li>\n</ul>\n<h2>What AMD is buying</h2>\n<p>World Labs is a San Francisco company that Li founded in 2024, <a href=\"https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/\">TechCrunch reported</a>. Li is a Stanford computer science professor best known for creating ImageNet, the image dataset that helped start the deep-learning boom of the 2010s. The startup came out of stealth in September 2024, according to PitchBook, with $230 million in funding, according to <a href=\"https://techcrunch.com/2026/02/18/world-labs-lands-200m-from-autodesk-to-bring-world-models-into-3d-workflows/\">TechCrunch</a>.</p>\n<p>Its work centres on what Li calls spatial intelligence: AI that understands and creates three-dimensional space, not just text or flat images. World Labs' <a href=\"https://www.worldlabs.ai/blog/amd-announcement\">own announcement</a> lists what the team has built:</p>\n<ul>\n<li><strong>Marble</strong>, its first product, released in November 2025. It creates persistent 3D worlds from text, images or video that users can move through, edit and download. <a href=\"https://siliconangle.com/2026/02/18/world-labs-closes-1b-investment-backed-nvidia-amd-autodesk/\">SiliconANGLE</a> reported that a companion tool called Chisel lets users refine scenes with plain-language instructions.</li>\n<li><strong>Atlas</strong>, a model World Labs describes as an \"omni model\" trained from scratch to predict new camera views from 2D images. It entered early access with selected partners on 1 September 2026, according to <a href=\"https://www.therundown.ai/news/amd-world-labs-acquisition-fei-fei-li\">The Rundown AI</a>.</li>\n<li><strong>SceniX</strong>, a robotics-simulation company World Labs acquired in July 2026, which it is using to build robot-training tools.</li>\n<li>An API platform and Spark, a JavaScript library for developers.</li>\n</ul>\n<p>Co-founders Justin Johnson and Ben Mildenhall will keep leading the World Labs team inside AMD, according to the company's post.</p>\n<!-- xf-image-2 -->\n<h2>The deal terms, confirmed and reported</h2>\n<p>Most of the core terms are confirmed in AMD's filing and press release. The valuation history comes from press reports.</p>\n<table>\n<thead><tr><th>Term</th><th>Detail</th><th>Status</th></tr></thead>\n<tbody>\n<tr><td>Price</td><td>About $8.2 billion, subject to customary adjustments</td><td>Confirmed (AMD 8-K)</td></tr>\n<tr><td>Payment</td><td>AMD common stock only, no cash</td><td>Confirmed (AMD 8-K)</td></tr>\n<tr><td>Share count</td><td>Set by AMD's 10-day volume-weighted average price on Nasdaq just before closing</td><td>Confirmed (AMD 8-K)</td></tr>\n<tr><td>Agreement signed</td><td>26 September 2026; announced 28 September</td><td>Confirmed (AMD 8-K)</td></tr>\n<tr><td>Expected close</td><td>By the end of 2026, subject to regulatory approvals</td><td>Confirmed (AMD release)</td></tr>\n<tr><td>Li's role</td><td>Executive vice president and chief scientist, reporting to Lisa Su</td><td>Confirmed (AMD release)</td></tr>\n<tr><td>Premium to last round</td><td>About 52% above a $5.4 billion valuation</td><td>Reported (PitchBook)</td></tr>\n</tbody>\n</table>\n<p>Because the price is fixed in dollars and paid in shares, World Labs' investors do not take the risk of AMD's stock moving before closing. The number of shares will rise or fall to match the $8.2 billion figure. AMD said it will issue the shares privately under US securities-law exemptions rather than through a public offering.</p>\n<p>The filing does not say whether US antitrust review is likely to be difficult. AMD is a large company buying a small private firm in a field where it has little market share, so the bigger closing risk may be keeping the research team together until the deal completes.</p>\n<h2>Why AMD wants a model lab</h2>\n<p>AMD's explanation is about its product roadmap. Its release says World Labs' expertise will give it deeper insight into how AI workloads are changing as AI moves into reasoning, robotics, simulation and what the industry calls physical AI. \"Building the compute platforms for the next generation of AI requires a deep understanding of how models are evolving,\" Lisa Su said in the announcement.</p>\n<p>There are three practical reasons behind that.</p>\n<h3>1. Design chips for workloads that are still emerging</h3>\n<p>Graphics processors (GPUs) and accelerators take years to design. A chipmaker that sees new workloads early, such as world models that need large amounts of 3D rendering, physics simulation and video generation at once, can build hardware for them sooner. World Labs said the move would get its research \"closer to the hardware\".</p>\n<h3>2. Match Nvidia's software and model layer</h3>\n<p>Nvidia already offers open-weight world models under its Cosmos brand, while AMD had released only text- and video-based models, TechCrunch noted. Nvidia's lead in AI chips rests heavily on its software ecosystem. Owning a respected model lab gives AMD research that runs on its own hardware first, plus models it can offer developers.</p>\n<h3>3. Physical AI may be the next source of demand</h3>\n<p>Self-driving cars, factory robots and humanoids need large amounts of training data that is hard to gather in the real world. World models can create that data synthetically, which is why TechCrunch described them as vital for putting AI on robotic platforms. If that market grows, the compute behind it is a large opportunity, and AMD wants to influence how it is built.</p>\n<!-- xf-image-3 -->\n<h2>A relationship that started earlier</h2>\n<p>The deal builds on an existing partnership. AMD and World Labs began an inference-optimisation and training partnership in 2025, and Li appeared at AMD's CES presentation in January 2026, TechCrunch reported. AMD also invested in World Labs' $1 billion round in February 2026, alongside Nvidia, Autodesk, Emerson Collective, Fidelity and Sea, according to <a href=\"https://www.worldlabs.ai/blog/funding-2026\">World Labs</a>. Autodesk put in $200 million of that round, TechCrunch reported.</p>\n<p>That means Nvidia, AMD's main rival, is among the investors in the company AMD is buying. In total, World Labs had raised about $1.29 billion according to PitchBook data, from investors including Andreessen Horowitz, NEA and Radical Ventures.</p>\n<h2>How it fits AMD's deal-making</h2>\n<p>AMD has been buying AI capabilities steadily. According to its <a href=\"https://www.sec.gov/Archives/edgar/data/2488/000000248825000012/amd-20241228.htm\">2024 annual report</a>, it completed the purchase of Finnish AI lab Silo AI for $665 million in cash in August 2024, to speed up the development of AI models on AMD hardware. In the same month it agreed to buy ZT Systems, a maker of AI server infrastructure for large cloud companies, in a cash-and-stock deal valued at about $4.9 billion. That deal was meant to help AMD sell complete AI rack systems.</p>\n<p>The pattern is clear. Silo AI brought model engineers, ZT Systems brought data-centre system design, and World Labs brings frontier research. Each deal moves AMD further from selling chips alone and closer to selling a full AI platform, which is the model Nvidia has used with great success.</p>\n<!-- xf-image-4 -->\n<h2>What it says about AI M&amp;A</h2>\n<p>Investors quoted by PitchBook read the deal as part of a wider trend in which large companies buy AI teams instead of building them. \"Building a team from scratch takes years, and the window to accelerate is now,\" said Ted Persson, a partner at EQT. Matt Hartman of Factorial Capital said AMD's choice to buy suggests teams like this are scarce.</p>\n<p>Not everyone is buying. Google is developing its own world model, Genie 3, and Nvidia continues to build Cosmos in-house, PitchBook noted. Nvidia and AMD have also invested in other world-model startups, including Odyssey and Decart. Investors are still putting money into the field: General Intuition, which uses video-game footage to train world models for robots, raised $220 million in September.</p>\n<p>For founders, the main lesson is that well-funded AI labs now have a realistic exit through strategic sale to infrastructure companies, not only through an IPO or a sale to a large AI lab. For engineers, world-model research is becoming a hiring priority at chip companies as well as AI labs. Browse current openings on our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs board</a>.</p>\n<h2>Bottom line</h2>\n<p>AMD is paying a premium for a small team and an early product line because it believes 3D simulation and robotics will be a major source of demand for AI compute, and it wants to shape that demand rather than react to it. The deal still has to close, the team has to stay, and Marble and Atlas have to keep improving inside a large company. If that happens, AMD gets something it has lacked against Nvidia: models of its own that run best on its hardware. For more AI deals and launches, follow our <a href=\"/news/\">news section</a>.</p>\n<!-- xf-image-5 -->\n<h2>Frequently asked questions</h2>\n<h3>How much is AMD paying for World Labs?</h3>\n<p>About $8.2 billion, paid entirely in AMD shares, according to AMD's 28 September 2026 announcement and its SEC filing.</p>\n<h3>What is a world model?</h3>\n<p>An AI model that generates or simulates interactive three-dimensional environments, including how objects in them behave, from prompts such as text, images or video. They are used for games, film, design and creating training data for robots.</p>\n<h3>What will Fei-Fei Li do at AMD?</h3>\n<p>She will become executive vice president and chief scientist, reporting to CEO Lisa Su, once the deal closes. The World Labs team will continue its model research inside AMD.</p>\n<h3>When will the deal close?</h3>\n<p>AMD expects it to close by the end of 2026, subject to regulatory approvals and other customary conditions.</p>\n<h3>What is World Labs' product Marble?</h3>\n<p>Marble, released in November 2025, creates persistent 3D worlds from text, images or video that users can explore, edit and download.</p>\n<h2>Sources</h2>\n<ol>\n<li>AMD, \"AMD to Acquire World Labs to Advance the Future of AI\", 28 September 2026. <a href=\"https://newsroom.amd.com/news/amd-acquire-world-labs/\">Link</a></li>\n<li>AMD (US SEC), \"Form 8-K: Item 3.02, Agreement and Plan of Merger with World Labs Technologies, Inc.\", 28 September 2026. <a href=\"https://www.sec.gov/Archives/edgar/data/2488/000000248826000182/amd-20260926.htm\">Link</a></li>\n<li>World Labs, \"World Labs is Joining AMD\", 28 September 2026. <a href=\"https://www.worldlabs.ai/blog/amd-announcement\">Link</a></li>\n<li>TechCrunch, \"AMD will acquire Fei-Fei Li's World Labs for $8.2B\", 28 September 2026. <a href=\"https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/\">Link</a></li>\n<li>PitchBook via Yahoo Finance, \"AMD's $8.2B World Labs deal signals buy-over-build era for world models\", 2 October 2026. <a href=\"https://ca.finance.yahoo.com/news/amds-8-2b-world-labs-190257395.html\">Link</a></li>\n<li>The Rundown AI, \"AMD agrees to buy Fei-Fei Li's World Labs for $8.2 billion\", 29 September 2026. <a href=\"https://www.therundown.ai/news/amd-world-labs-acquisition-fei-fei-li\">Link</a></li>\n<li>World Labs, \"World Labs Announces New Funding\", 18 February 2026. <a href=\"https://www.worldlabs.ai/blog/funding-2026\">Link</a></li>\n<li>TechCrunch, \"World Labs lands $1B, with $200M from Autodesk, to bring world models into 3D workflows\", 18 February 2026. <a href=\"https://techcrunch.com/2026/02/18/world-labs-lands-200m-from-autodesk-to-bring-world-models-into-3d-workflows/\">Link</a></li>\n<li>SiliconANGLE, \"World Labs closes $1B investment backed by Nvidia, AMD and Autodesk\", 18 February 2026. <a href=\"https://siliconangle.com/2026/02/18/world-labs-closes-1b-investment-backed-nvidia-amd-autodesk/\">Link</a></li>\n<li>AMD (US SEC), \"Form 10-K for fiscal year 2024\", February 2025. <a href=\"https://www.sec.gov/Archives/edgar/data/2488/000000248825000012/amd-20241228.htm\">Link</a></li>\n<li>Robotics &amp; Automation News, \"AMD to acquire World Labs in deal worth $8.2 billion\", 1 October 2026. <a href=\"https://roboticsandautomationnews.com/2026/10/01/amd-to-acquire-world-labs-in-deal-worth-8-2-billion/105389/\">Link</a></li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/2485_Augustine_Drive_headquarters_in_Santa_Clara%2C_California.jpg/1920px-2485_Augustine_Drive_headquarters_in_Santa_Clara%2C_California.jpg",
+      "alt": "Glass office building at 2485 Augustine Drive in Santa Clara, California",
+      "caption": "The Santa Clara office building that housed AMD's headquarters when photographed in 2020.",
+      "credit": "Photo: Coolcaesar / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2485_Augustine_Drive_headquarters_in_Santa_Clara,_California.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Fei-Fei_Li_at_AI_for_Good_2017.jpg",
+      "alt": "Fei-Fei Li speaking on stage at the AI for Good summit in 2017",
+      "caption": "Fei-Fei Li, World Labs' co-founder and CEO, will become AMD's chief scientist.",
+      "credit": "Photo: ITU Pictures / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fei-Fei_Li_at_AI_for_Good_2017.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/AMD_CEO_Lisa_Su_speaking_at_ORNL_2019-05-07.jpg/1920px-AMD_CEO_Lisa_Su_speaking_at_ORNL_2019-05-07.jpg",
+      "alt": "AMD CEO Lisa Su speaking at a lectern at Oak Ridge National Laboratory",
+      "caption": "Lisa Su says building AI compute requires understanding how models are evolving.",
+      "credit": "Photo: Genevieve Martin, OLCF at ORNL / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:AMD_CEO_Lisa_Su_speaking_at_ORNL_2019-05-07.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Halodi_Robotics%27_Perception_Engineer_With_a_Humanoid_Collaborative_Robot.jpg/1920px-Halodi_Robotics%27_Perception_Engineer_With_a_Humanoid_Collaborative_Robot.jpg",
+      "alt": "An engineer standing beside a wheeled humanoid robot in an office",
+      "caption": "Robots need large amounts of training data, which world models can generate in simulation.",
+      "credit": "Photo: Nicholas-halodi / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Halodi_Robotics%27_Perception_Engineer_With_a_Humanoid_Collaborative_Robot.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Frontier_Supercomputer_%281%29.jpg/1920px-Frontier_Supercomputer_%281%29.jpg",
+      "alt": "Rows of HPE Cray EX supercomputer cabinets of the Frontier system at Oak Ridge National Laboratory",
+      "caption": "The Frontier supercomputer at Oak Ridge, which Cray and AMD built. AMD wants its future AI systems shaped by frontier model research.",
+      "credit": "Photo: OLCF at ORNL / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Frontier_Supercomputer_(1).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/",
+      "publisher": "AMD",
+      "date": "2026-09-28",
+      "claim": "All-stock ~$8.2B deal, close by end-2026 subject to approvals, Li EVP and chief scientist reporting to Su, World Labs description, AMD rationale, Su and Li quotes"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000182/amd-20260926.htm",
+      "publisher": "US SEC (AMD Form 8-K)",
+      "date": "2026-09-28",
+      "claim": "Merger agreement signed 26 Sept 2026 for all equity of World Labs Technologies, Inc.; ~$8.2B in common stock subject to customary adjustments; share count via 10-day VWAP; Section 4(a)(2)/Rule 506 private issuance"
+    },
+    {
+      "url": "https://www.worldlabs.ai/blog/amd-announcement",
+      "publisher": "World Labs",
+      "date": "2026-09-28",
+      "claim": "Johnson and Mildenhall continue leading team; Marble, Atlas, SceniX (acquired July 2026), API platform and Spark; 'closer to the hardware' quote"
+    },
+    {
+      "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+      "publisher": "TechCrunch",
+      "date": "2026-09-28",
+      "claim": "Founded 2024; Li background; Marble use cases; 2025 partnership; Li at AMD CES; Nvidia Cosmos vs AMD's text/video models; world models and robotics"
+    },
+    {
+      "url": "https://ca.finance.yahoo.com/news/amds-8-2b-world-labs-190257395.html",
+      "publisher": "PitchBook via Yahoo Finance",
+      "date": "2026-10-02",
+      "claim": "52% premium to reported $5.4B Series C valuation; stealth exit Sept 2024; a16z, NEA, Radical; $1.29B raised; Persson and Hartman quotes; Genie 3, Cosmos; Odyssey, Decart; General Intuition $220M"
+    },
+    {
+      "url": "https://www.therundown.ai/news/amd-world-labs-acquisition-fei-fei-li",
+      "publisher": "The Rundown AI",
+      "date": "2026-09-29",
+      "claim": "Marble launched 12 Nov 2025; Atlas introduced 1 Sept 2026 in early access"
+    },
+    {
+      "url": "https://www.worldlabs.ai/blog/funding-2026",
+      "publisher": "World Labs",
+      "date": "2026-02-18",
+      "claim": "$1B round with AMD, Autodesk, Emerson Collective, Fidelity, NVIDIA, Sea"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/18/world-labs-lands-200m-from-autodesk-to-bring-world-models-into-3d-workflows/",
+      "publisher": "TechCrunch",
+      "date": "2026-02-18",
+      "claim": "Autodesk $200M; $230M at 2024 launch; valuation not confirmed; Marble released Nov 2025"
+    },
+    {
+      "url": "https://siliconangle.com/2026/02/18/world-labs-closes-1b-investment-backed-nvidia-amd-autodesk/",
+      "publisher": "SiliconANGLE",
+      "date": "2026-02-18",
+      "claim": "Marble features and Chisel editing tool"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248825000012/amd-20241228.htm",
+      "publisher": "US SEC (AMD Form 10-K FY2024)",
+      "date": "2025-02-05",
+      "claim": "Silo AI $665M all-cash, completed 9 Aug 2024; ZT Systems agreement 17 Aug 2024, ~$4.9B cash and stock"
+    },
+    {
+      "url": "https://roboticsandautomationnews.com/2026/10/01/amd-to-acquire-world-labs-in-deal-worth-8-2-billion/105389/",
+      "publisher": "Robotics & Automation News",
+      "date": "2026-10-01",
+      "claim": "Full text of AMD's statements and deal terms"
+    }
+  ]
+}

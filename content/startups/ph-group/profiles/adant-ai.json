@@ -1,0 +1,104 @@
+{
+  "slug": "adant-ai",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/adant-ai",
+  "excerpt": "AdAnt AI is a set of AI agents that research your niche on social media, write content strategies and make short-form video ads for TikTok, Instagram and YouTube. Pricing, alternatives and launch comments.",
+  "content": "<p>AdAnt AI is a workspace of AI agents for short-form social video. You drop in your product's URL and it researches what is working in your niche on TikTok, Instagram and YouTube, looks at the Meta ads your competitors are running, writes a content strategy and turns it into a batch of videos. You can also paste a link to an existing short and have it remade for your product, generate videos with an AI avatar, get fresh ideas on a schedule and, on the Pro plan, schedule posts (in beta). A plugin brings the research and creation workflows into ChatGPT, Codex and Claude.</p><p>AdAnt is operated by AnyLoop Inc, according to its own About page. Its co-founder and CEO, Iris Tu, wrote on Product Hunt that the team built it on the playbooks they used to grow their own products, which they say produced more than 50 million organic views. AdAnt AI launched on Product Hunt on 5 August 2026 and finished #1 for the day with 625 points and 90 comments. Its own site notes that generated videos need human review and that creative output alone does not prove business results.</p><p><em>We have not tested AdAnt AI ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Social media marketing",
+    "platform": "Web app, plus plugins for ChatGPT, Codex and Claude",
+    "starts_at": "Free trial credits, then from $15/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI agents that research your social niche and make short-form video ads",
+    "maker": {"name": "Iris Tu", "url": "https://www.producthunt.com/@iris_tu"},
+    "team": [
+      {"name": "Iris Tu", "role": "CEO and Co-founder (Product Hunt profile)", "url": "https://www.producthunt.com/@iris_tu"},
+      {"name": "Bin Sheng", "url": "https://www.producthunt.com/@anyt"}
+    ],
+    "ph": {"rank": 1, "votes": 625, "comments": 90, "followers": 1520, "launched": "2026-08-05", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/c5e40c1e-f537-42ad-a8eb-b98fe183b20b.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "AdAnt AI start screen reading 'Claude for viral, high-converting social ads', with a box to drop in a product URL", "credit": "Image: AdAnt AI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/75dfc9a1-4b91-49da-8a5e-b23146440f6d.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "AdAnt AI crawling a product page and mapping its niche into audience, offer and brand colours", "credit": "Image: AdAnt AI via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/579019e1-5c49-492b-afb4-c8cd74f6cd9c.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "AdAnt AI before-and-after graphic comparing a traditional product ad with creator-style short videos made from viral templates", "credit": "Image: AdAnt AI via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are a small product team that needs a steady flow of short-form videos for TikTok, Instagram Reels or YouTube Shorts",
+        "want research on what is working in your niche, and on competitors' Meta ads, before you make anything",
+        "already work in ChatGPT, Codex or Claude and want the workflow there through a plugin"
+      ],
+      "not_fit": [
+        "want to publish without checking: AdAnt's own site says generated videos need human review for accuracy and brand fit",
+        "dislike subscriptions: credit packs are only add-ons to a paid plan (a commenter raised this at launch and the maker said they would consider it)",
+        "need scheduled posting on the cheapest plan: it is only on Pro and Max, and still in beta"
+      ]
+    },
+    "pricing": {
+      "intro": "AdAnt sells monthly or yearly self-serve plans in US dollars, with a free trial on sign-up. Yearly billing gives two months free.",
+      "url": "https://adant.ai/pricing",
+      "plans": [
+        {"name": "Free trial", "price": "$0", "amount": 0, "currency": "USD", "detail": "40 credits on sign-up (the page values them at $10)"},
+        {"name": "Standard", "price": "$15/month", "amount": 15, "currency": "USD", "detail": "60 credits a month, up to 120 seconds of video, niche research, competitor Meta ads, scheduled idea agents, no watermark"},
+        {"name": "Pro", "price": "$39/month", "amount": 39, "currency": "USD", "detail": "150 credits a month, up to 300 seconds of video, everything in Standard plus scheduled posting (beta)"},
+        {"name": "Max", "price": "$99/month", "amount": 99, "currency": "USD", "detail": "400 credits a month, up to 800 seconds of video; larger Max tiers go up to 4,000 credits for $999/month"}
+      ],
+      "notes": [
+        "One-time credit packs (40 credits for $10, up to 320 for $80) never expire but can only be added to a paid plan.",
+        "Yearly prices: Standard $150, Pro $390, Max from $990.",
+        "A done-for-you Studio service costs $100–200 per video with a $5,000 monthly minimum.",
+        "At launch the maker described a single $39 plan and a 50-credit trial; the pricing page has changed since."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Syllaby", "url": "https://syllaby.io/", "what": "Faceless videos and AI avatar videos from ideas, with scripts, voice cloning and scheduling", "starts_at": "See its pricing page",
+         "ph_rating": 4.68, "ph_reviews": 25,
+         "difference": "A broad video-creation suite. AdAnt leads with niche and competitor research and remaking proven short-form formats for your product."},
+        {"name": "STORI", "url": "https://storiai.com/", "what": "AI that builds inbound marketing channels", "starts_at": "See its pricing page",
+         "ph_rating": 4.87, "ph_reviews": 83,
+         "difference": "Aimed at inbound channels generally rather than short-form video ads."},
+        {"name": "Publer", "url": "https://publer.io/", "what": "Create, schedule and analyse social posts on one platform", "starts_at": "Free to start; see its pricing page",
+         "ph_rating": 4.93, "ph_reviews": 55,
+         "difference": "A scheduling and management tool. It does not research your niche or generate the videos."}
+      ],
+      "more": "Product Hunt also lists Predis.ai and Promo.com as alternatives."
+    },
+    "reviews": {"count": 2, "rating": 5, "url": "https://www.producthunt.com/products/adant-ai/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/adant-ai",
+      "quotes": [
+        {"author": "Mingyang Dai", "text": "How current is the trend data? Social formats move quickly.",
+         "reply": "Iris Tu: an initial strategy looks at the past 3–6 months; weekly strategy focuses on the latest 1–2 months."},
+        {"author": "Bethany Gong", "text": "Can a brand give AdAnt its positioning, audience, and visual guidelines so the generated ideas stay on-brand?",
+         "reply": "Iris Tu: yes, they are saved under a product profile and referenced with @ when working with an agent."},
+        {"author": "Brent Vardy", "text": "I'm totally against subscription models, are you considering a pay-as-you-go model?"}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=AdAnt%20AI&f=live"}
+    },
+    "faq": [
+      {"q": "What is AdAnt AI?", "a": "A set of AI agents that research what works in your niche on TikTok, Instagram and YouTube, write content strategies and make short-form videos for your product. It launched on Product Hunt on 5 August 2026."},
+      {"q": "How much does AdAnt AI cost?", "a": "New accounts get 40 free credits. Paid plans are Standard at $15 a month, Pro at $39 and Max from $99, with yearly billing giving two months free."},
+      {"q": "Can it post for me?", "a": "Scheduled posting is in beta and included in Pro and Max, not Standard."},
+      {"q": "Does it work inside ChatGPT or Claude?", "a": "Yes. AdAnt offers a plugin that brings its research and creative workflows to ChatGPT, Codex and Claude through your AdAnt account."},
+      {"q": "Who runs AdAnt?", "a": "AnyLoop Inc, according to AdAnt's About page. Iris Tu is listed on Product Hunt as CEO and co-founder."},
+      {"q": "Do credits expire?", "a": "Monthly plan credits refresh each month. Extra one-time credit packs never expire, but you need a paid plan to buy them."}
+    ],
+    "sources": [
+      {"label": "AdAnt official site", "url": "https://adant.ai/"},
+      {"label": "AdAnt pricing", "url": "https://adant.ai/pricing"},
+      {"label": "About AdAnt", "url": "https://adant.ai/about"},
+      {"label": "AdAnt contact", "url": "https://adant.ai/contact"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/adant-ai"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/adant-ai"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/adant-ai/alternatives"},
+      {"label": "Syllaby", "url": "https://syllaby.io/"},
+      {"label": "Publer", "url": "https://publer.io/"}
+    ]
+  }
+}

@@ -10,6 +10,7 @@ const primaryNavLinks = [
   { label: "Signals", href: "/signals" },
   { label: "Blog", href: "/blog" },
   { label: "Startup", href: "/startups" },
+  { label: "Launches", href: "/launches" },
   { label: "Pricing", href: "/pricing" },
 ];
 

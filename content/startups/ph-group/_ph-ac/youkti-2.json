@@ -1,0 +1,420 @@
+{
+ "input": "https://www.producthunt.com/posts/youkti-2",
+ "final_url": "https://www.producthunt.com/products/youkti?launch=youkti-2",
+ "launch": {
+  "slug": "youkti-2",
+  "name": "Youkti ",
+  "tagline": "Finds who's ready to buy, then tells you what to do next ",
+  "featuredAt": "2026-09-12T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "10",
+  "points": 345,
+  "commentsCount": 51,
+  "pricingType": null,
+  "description": "Youkti keeps a memory of every account, conversation, and deal, then tells your sales team the exact next move: which deal is slipping, which dormant account just fired a signal, what to prep for tomorrow's meeting. Built for AEs, RevOps, and outbound reps. Contact data, buying signals, and intent are all free, no card, no meter.",
+  "makers": [
+   {
+    "name": "Ramana Abhishek",
+    "username": "ramana_abhishek",
+    "headline": "Co-Founder and CEO, Youkti"
+   },
+   {
+    "name": "Rashi Arora",
+    "username": "rashiaroraofficial",
+    "headline": "Marketing @Youkti"
+   },
+   {
+    "name": "Adithya Challa",
+    "username": "adithya_challa",
+    "headline": "Founding Engineer @Youkti."
+   },
+   {
+    "name": "RONAK BHOGAVALLI",
+    "username": "ronak_bhogavalli",
+    "headline": "Founding Marketing Manager @Youkti"
+   },
+   {
+    "name": "Jayadeep Vadlamani",
+    "username": "jayadeep_vadlamani",
+    "headline": "Founding Engineer @Youkti | Integrations"
+   },
+   {
+    "name": "Judith Kaushik",
+    "username": "judith_kaushik",
+    "headline": "Founding Engineer and CSM @ Youkti"
+   },
+   {
+    "name": "Pratik Dahale",
+    "username": "pratik_dahale",
+    "headline": "Founding Engineer - AI @Youkti"
+   }
+  ],
+  "hunter": "Jonno Riekwel",
+  "media": [
+   {
+    "uuid": "78a280bd-cc06-4531-8546-e148f16eaf8a.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "4c21bb81-2a7e-4b1c-8fc6-0b4c82dff0ee.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "895b81a2-2320-4600-a5e8-614429e468ea.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "32a729b9-26a0-4352-9c21-2664385f7a9d.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "bf615b30-0917-4efc-ae9d-0ee051bd4cfe.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "73ada1c8-c181-45af-a37f-90b0ce272728.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "4f8119b9-0dfe-4223-8585-6dba100874f0.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/bHV7GaHle7I?si=RrorpRoui7R9Vl6A"
+   }
+  ],
+  "links": [
+   "youkti.ai",
+   "www.linkedin.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "Youkti ",
+  "slug": "youkti",
+  "tagline": "Finds who's ready to buy, then tells you what to do next ",
+  "description": "Youkti keeps a memory of every account, conversation, and deal, then tells your sales team the exact next move: which deal is slipping, which dormant account just fired a signal, what to prep for tomorrow's meeting. Built for AEs, RevOps, and outbound reps. Contact data, buying signals, and intent are all free, no card, no meter.",
+  "websiteUrl": "https://youkti.ai/",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 757,
+  "linkedinUrl": "https://www.linkedin.com/company/youktiai/",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/78a280bd-cc06-4531-8546-e148f16eaf8a.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/4c21bb81-2a7e-4b1c-8fc6-0b4c82dff0ee.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/895b81a2-2320-4600-a5e8-614429e468ea.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/32a729b9-26a0-4352-9c21-2664385f7a9d.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/bf615b30-0917-4efc-ae9d-0ee051bd4cfe.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/73ada1c8-c181-45af-a37f-90b0ce272728.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5785937",
+   "depth": 0,
+   "author": "Ramana Abhishek",
+   "username": "ramana_abhishek",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt! 👋 I'm Ramana, founder of Youkti.&nbsp; We are here to change the GTM and sales industry.&nbsp; Youkti is an AI-enabled revenue action platform that remembers every account and tells your sales team what to do next. The data layer is free. Problem : Sales teams pay a fortune for data and still don't know what to do with it. Every feed metered by the credit, and a rep still opens their CRM on Monday guessing which account to work. Meanwhile deals slip quietly and nobody notices until the quarter closes. Solution : Youkti keeps a running memory of every account, conversation, and deal, then turn it into a daily list of specific moves. Which deal is at risk and why. Which dormant account just fired a signal. Which renewal needs a call before it's too late. Which stakeholder joined tomorrow's meeting and what you need ready. What makes us different : Youkti gives the data away. Our take is that data got cheap and good enough for everyone, so owning it stopped being an advantage. The hard part is knowing what to do next, and that's what Youkti excels at. Free, no card, no trial clock, no usage meter: Verified mobile numbers, direct dials not switchboards ($0.40 each app"
+  },
+  {
+   "id": "5858843",
+   "depth": 1,
+   "author": "Adithya Challa",
+   "username": "adithya_challa",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "I agree, @ramana_abhishek &nbsp; One thing I’ve really loved about building Youkti is seeing this shift from “here’s more data” to “here’s what you should do next.” The goal isn’t to give sales teams another dashboard to check. It’s to make the data they already have actually useful in the moment. That’s what we’ve been obsessed with building. 🚀"
+  },
+  {
+   "id": "5858913",
+   "depth": 1,
+   "author": "Jayadeep Vadlamani",
+   "username": "jayadeep_vadlamani",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ramana_abhishek &nbsp;Proud to be part of the Youkti journey! 🚀 Excited to see us rethinking how sales teams use data and AI to actually take action. Would love to hear everyone’s feedback and thoughts! 🙌"
+  },
+  {
+   "id": "5858924",
+   "depth": 1,
+   "author": "Judith Kaushik",
+   "username": "judith_kaushik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Agreed @ramana_abhishek &nbsp; The confidence it brings when presenting the platform to users and the responses we get after they use it, is so overwhelming. Users are not only finding it helpful , but in fact they also find it equally easy to adopt . @Youkti is proving its value and that too with data accessibility completely for free 🎉."
+  },
+  {
+   "id": "5858949",
+   "depth": 1,
+   "author": "Pratik Dahale",
+   "username": "pratik_dahale",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ramana_abhishek &nbsp;Excited to be part of this journey! 🚀 Proud of what we have built with Youkti. Would be great to hear your thoughts on the product."
+  },
+  {
+   "id": "5860266",
+   "depth": 1,
+   "author": "Angela Anna",
+   "username": "angelaaa",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@ramana_abhishek &nbsp;Best of luck"
+  },
+  {
+   "id": "5859111",
+   "depth": 0,
+   "author": "Muhammad Ahmed",
+   "username": "aymi_malik",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "With regard to contact data and intent being totally free, then what really is the business model in this case? Btw, Congratulations @ramana_abhishek @rashiaroraofficial &amp; team @Youkti 🎊✌️."
+  },
+  {
+   "id": "5859505",
+   "depth": 1,
+   "author": "Ramana Abhishek",
+   "username": "ramana_abhishek",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@aymi_malik - That's the whole point...you only pay for revenue outcomes and revenue actions. Youkti is the only platform where you will be paying for leads engaged, opportunities moved, dormand deals reactivated - and not how many contacts you enriched :)"
+  },
+  {
+   "id": "5859654",
+   "depth": 2,
+   "author": "Muhammad Ahmed",
+   "username": "aymi_malik",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@ramana_abhishek &nbsp;Outcome-based pricing is a novel approach, most pricing schemes are based on activity, rather than outcomes. Wondering how it works when things get complicated."
+  },
+  {
+   "id": "5859700",
+   "depth": 3,
+   "author": "Adithya Challa",
+   "username": "adithya_challa",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "You can signup right away for you to see it for yourself - https://youkti.ai/ @aymi_malik &nbsp;"
+  },
+  {
+   "id": "5859740",
+   "depth": 3,
+   "author": "Muhammad Ahmed",
+   "username": "aymi_malik",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@adithya_challa &nbsp;Sure :)"
+  },
+  {
+   "id": "5859647",
+   "depth": 0,
+   "author": "Titas",
+   "username": "cc_td",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Interesting piece of work. Do you think this is a good replacement of something like Hubspot? Also, how can I trust the action recommendations that come out of it?"
+  },
+  {
+   "id": "5859708",
+   "depth": 1,
+   "author": "Adithya Challa",
+   "username": "adithya_challa",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@cc_td &nbsp;We have Hubspot as a connector itself so you don't have to drastically change your pipeline. You can import all the companies, prospects into our platform in just few clicks. We use agentic based recommendations so it acts as per your company's requirements/ICP. Signup with us today if you want to see the results for yourself - https://youkti.ai/"
+  },
+  {
+   "id": "5860423",
+   "depth": 0,
+   "author": "Himani Sah",
+   "username": "himani_sah1",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Congrats. Have you seen reps trusting the recommendations? Is there a way to teach the AI our own sales process and voice?"
+  },
+  {
+   "id": "5860431",
+   "depth": 1,
+   "author": "Adithya Challa",
+   "username": "adithya_challa",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@himani_sah1 &nbsp;Yes out AI - Arya and be trained and taught via a set of company information and docs. We can also train it to understand the tone you use in your mails and chats so that it answers the same way you write!"
+  },
+  {
+   "id": "5860421",
+   "depth": 0,
+   "author": "Raghavendra Devadiga",
+   "username": "raghavendra_devadiga4",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Caught my attention on the leaderboard. May I ask how much can you customize the workflows when the desired sales process doesn't fit a standard playbook?"
+  },
+  {
+   "id": "5860429",
+   "depth": 1,
+   "author": "Adithya Challa",
+   "username": "adithya_challa",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@raghavendra_devadiga4 &nbsp;Well we have custom campaign builder for you to change campaigns and get the desired companies based on the signals you want. Moreover we also allow you to pick and choose sales stages so that you can view where your deal is stuck. We give the entire control to the user."
+  },
+  {
+   "id": "5859595",
+   "depth": 0,
+   "author": "Subhash Kanagamani",
+   "username": "subhash_kanagamani",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Would love to know how frequently the live buying signals refresh and how quickly those changes reach the rep."
+  },
+  {
+   "id": "5859607",
+   "depth": 1,
+   "author": "Ramana Abhishek",
+   "username": "ramana_abhishek",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@subhash_kanagamani &nbsp;- great question. We have daily, weekly, fortnightly and monthly refreshes happening across 45+ signal sources. Check them all out here: https://www.youkti.ai/signals Any specific signals you are looking for?"
+  },
+  {
+   "id": "5859119",
+   "depth": 0,
+   "author": "Charan Tej Kammara",
+   "username": "charan_tej_kammara",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "The sales person in me is excited. Free unlimited access to data opens a lot of doors for outbound. Excited to check it out. On a lighter note, the consumer in me is worried of how much more spam messages, calls, and emails I'd be getting."
+  },
+  {
+   "id": "5859151",
+   "depth": 1,
+   "author": "Adithya Challa",
+   "username": "adithya_challa",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@charan_tej_kammara &nbsp;Absolutely! It will be a game changer for you 💯"
+  },
+  {
+   "id": "5859517",
+   "depth": 1,
+   "author": "Ramana Abhishek",
+   "username": "ramana_abhishek",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@charan_tej_kammara &nbsp;- hahaha thats one way to see it ;) - I hope you get intro'd to some really amazing products and tech, and not be spammed!"
+  }
+ ]
+}

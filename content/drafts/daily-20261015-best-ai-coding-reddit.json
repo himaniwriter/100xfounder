@@ -1,0 +1,181 @@
+{
+ "type": "post",
+ "slug": "best-ai-coding-reddit",
+ "title": "Best AI for Coding: What Reddit Actually Recommends in 2026",
+ "excerpt": "We read 12 Reddit threads on AI coding tools. Here is what developers recommend, Codex vs Claude Code, India-specific takes and what the tools cost now.",
+ "category": "ai-news",
+ "tags": [
+  "best ai for coding reddit",
+  "codex",
+  "claude code",
+  "cursor",
+  "github copilot",
+  "developersindia",
+  "ai coding tools"
+ ],
+ "content": "<p>Ask Reddit for the best AI for coding in October 2026 and the answer has narrowed to two names: OpenAI's Codex and Anthropic's Claude Code. Codex wins most \"which should I pay for\" threads on value and usage limits, Claude Code still has the most loyal fans for planning and front-end work, and a growing group of Indian developers skip both for cheaper open-model setups such as OpenCode with DeepSeek.</p>\n<p><em>We read 12 Reddit threads from r/ChatGPTCoding, r/cursor, r/ClaudeAI and r/developersIndia (November 2025 to October 2026) — opinions are users', not ours.</em> 100xFounder is not affiliated with Reddit. Prices below come from vendors' own pages, checked on 15 October 2026.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>In the most recent \"Claude Code or Codex\" thread on r/developersIndia (July 2026), by our count about nine replies leaned Codex and five leaned Claude Code, mostly because of usage limits.</li>\n<li>Many experienced users run both: one model plans or reviews, the other writes the code.</li>\n<li>The loudest complaint about Claude in August 2026 was not code quality but tone and verbosity of its newest models.</li>\n<li>Indian developers care most about price: open-model tools, free or bundled offers, and Cursor's rupee plan came up repeatedly.</li>\n<li>Codex is included in every ChatGPT plan, from Free to Pro, according to OpenAI's pricing page.</li>\n</ul>\n\n<h2>How we read the threads</h2>\n<p>We searched r/ChatGPTCoding, r/cursor, r/ClaudeAI and r/developersIndia for threads from the past 12 months that asked which AI to use for coding, compared tools directly, or described day-to-day setups. We read the posts and their top replies through Reddit's public feeds, without logging in. Those feeds do not show vote counts, so we have not reported upvotes; where a thread showed its own size, such as an automatic summary posted after 200 comments, we say so.</p>\n<p>We counted a tool as \"recommended\" only when a reply clearly told the asker to use it or said it was the user's main tool. Counts are ours and approximate. Reddit is a self-selected, often US-heavy crowd of enthusiasts, so treat this as a picture of how keen users feel, not a benchmark. For a feature-by-feature comparison, read our standard guide to the best AI coding tools.</p>\n\n<h2>What Reddit recommends, tool by tool</h2>\n<h3>Codex: the value pick</h3>\n<p>Codex came up most often as the answer to \"what should I pay for\". In a November 2025 r/ChatGPTCoding thread comparing the then-new Claude Opus 4.5, Gemini 3 Pro and GPT-5.1-Codex, two users said a $20 ChatGPT Plus subscription gave them more Codex usage than they could use up in a week. One said they had never hit a limit with Codex but did hit Claude's five-hour cap.</p>\n<p>By July 2026 the same argument dominated r/developersIndia. In \"Claude code or Codex, which one is worth investing in?\", repliers called Codex's limits generous and said it reached the right answer in fewer turns. One summed up the split many described: <a href=\"https://www.reddit.com/r/developersIndia/comments/1v0yld3/claude_code_or_codex_which_one_is_worth_investing/oymsl5p/\">a user in r/developersIndia</a> wrote that \"for frontend claude code is better but for backend and implementation codex is better\".</p>\n<p>An August 2026 r/ChatGPTCoding post charting the best coding subscription under $20 drew a long argument about whether open-model plans from Chinese providers really beat the big two. One experienced reply said OpenAI's and Anthropic's own plans kept winning on usage, and that the open-weight hype was about quality, not cheap subscriptions.</p>\n<!-- xf-image-2 -->\n\n<h3>Claude Code: the planner's favourite, with a mood problem</h3>\n<p>Claude Code's supporters are fewer in \"what to buy\" threads but more emphatic. In the November 2025 thread, one heavy Codex user said Opus 4.5 had beaten it decisively, while warning that new models often seem to slip a little after launch. In July 2026 replies on r/developersIndia, fans said Claude has the better command-line tool and harness and is enough if you manage context carefully.</p>\n<p>The criticism is about behaviour. A January 2026 r/ChatGPTCoding experiment pitted Opus 4.5 against Codex 5.2 on the same real task and concluded neither won: the two worked best together. In the replies, <a href=\"https://www.reddit.com/r/ChatGPTCoding/comments/1q6m1ui/opus_45_headtohead_against_codex_52_xhigh_on_a/ny8omvd/\">a user in r/ChatGPTCoding</a> described it as \"Codex is obedient while Claude Code is a loose cannon\". Others said that variability helps when requirements are still fuzzy.</p>\n<p>By August 2026 the mood had soured for some. An r/ClaudeAI post titled \"Claude is Losing Me After Being Heavy User Since Release\" drew more than 200 comments, and the subreddit's automatic summary said most agreed that the newest models had become verbose and hard to work with, full of invented jargon. Some said they had moved to Codex, GPT or GLM; a minority said Claude's Fable 5 model was working fine for them.</p>\n\n<h3>Cursor: still liked, now complicated</h3>\n<p>Cursor, an AI-first code editor, drew warm comments in a December 2025 r/cursor thread on the best coding models, where users praised being able to switch between Opus for hard work, GPT-5.2 for some tough bugs and Cursor's own fast Composer model for quick edits. Gemini 3 Pro was widely criticised there for ignoring instructions, though one said it was strong in Google's Antigravity editor.</p>\n<p>The bigger Cursor story since then has been ownership. According to TechCrunch, SpaceX completed its $60 billion acquisition of Cursor in August 2026. The Free Press Journal reported on 29 August that OpenAI plans to end Cursor's access to its models, with a proposed shutoff date of 12 November 2026. The top posts on r/cursor this year follow both stories closely.</p>\n<!-- xf-image-3 -->\n\n<h3>Gemini, Antigravity, Copilot and the open-model crowd</h3>\n<p>Gemini rarely topped anyone's list for writing code, but it kept appearing as a second opinion: for UI work, for reviewing plans, and for architecture questions. GitHub Copilot barely featured; one user said it was where they started before moving to Cursor and then Claude Code. In September 2026, one r/developersIndia user argued that Claude and Codex subscriptions gave better value than Copilot for the same dollars.</p>\n<p>The fastest-growing answer in Indian threads was none of the big names. In \"Developers: What AI tools are you actually using day-to-day?\" (September 2026), OpenCode, an open-source coding agent, usually paired with low-cost DeepSeek models, came up about as often as Claude Code: roughly eight mentions each by our count, with Codex at about five and Cursor at three. One user said DeepSeek handled their CRUD-heavy work well for about $10 a month.</p>\n\n<h2>What Indian developers say</h2>\n<p>r/developersIndia threads read differently from US-heavy subreddits. Price is the first question, and many askers are students, freshers or freelancers paying from their own pocket. In July 2026 a user put the monthly cost of either Claude or Codex at about Rs 2,000, others pointed to cheaper or bundled routes, and two said they got Google's Antigravity through a Jio recharge offer. Those are users' reports; check current offers yourself.</p>\n<p>A common Indian pattern is to keep a paid tool for work and stitch together cheaper ones for personal projects. In an October 2026 thread asking whether Claude Pro is enough for freelancing, most replies said yes; one said Pro suits one or two clients and a bigger plan is needed for several at once.</p>\n<p>The other strand is anxiety. Posts such as \"Confession - I just talk to AI models and push code\" (May 2026) and \"Forget writing code, I do not work in an IDE anymore\" (September 2026) drew long discussions about juniors not learning, managers expecting faster delivery, and what review should look like. One reply in the September tools thread captured the cautious middle: <a href=\"https://www.reddit.com/r/developersIndia/comments/1wt2tmq/developers_what_ai_tools_are_you_actually_using/pcqmr4f/\">a user in r/developersIndia</a> said they \"wouldn't trust any of these tools fully end-to-end on anything touching prod without reviewing every step carefully\".</p>\n<p>If you are weighing what these tools mean for your career, our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs board</a> lists openings from official company careers pages, and our <a href=\"/jobs/engineering-jobs-in-bengaluru/\">Bengaluru engineering jobs</a> page tracks the city's biggest hiring market.</p>\n<!-- xf-image-4 -->\n\n<h2>Where Reddit agrees, and where it doesn't</h2>\n<p><strong>Agreement:</strong> no single tool wins everything. The advice repeated most often across threads was to pair models: Claude or Opus for planning and design discussion, Codex for implementation and code review, Gemini for a fresh view. Users also agree that agentic tools still need supervision, and that usage limits matter as much as raw quality.</p>\n<p><strong>Disagreement:</strong> whether Claude has got better or worse. Some r/developersIndia users said Claude produced silly errors and sent them in the wrong direction; others called it next level for coding. Users also split on whether cheap open-model plans are a real alternative or a false economy, with one r/ChatGPTCoding user arguing that a smarter, pricier model can cost less per finished task.</p>\n<p><strong>Common complaints:</strong> hitting five-hour or weekly limits, models that feel weaker weeks after launch, verbose replies, and agents that edit files they were told to leave alone.</p>\n\n<h2>What the tools cost now</h2>\n<p>Prices change often and several have moved since the older threads. These come from each vendor's own page on 15 October 2026; most publish only US dollar prices.</p>\n<table>\n<thead><tr><th>Tool</th><th>Plans (vendor page, 15 Oct 2026)</th></tr></thead>\n<tbody>\n<tr><td>Claude (Claude Code)</td><td>Free (no Claude Code); Pro $20 a month, or $17 a month billed annually ($200 upfront); Max from $100 a month. Claude Code included on Pro and Max.</td></tr>\n<tr><td>ChatGPT (Codex)</td><td>Codex included on Free, Go ($8), Plus ($20), Pro (from $100, with $200 and $500 tiers) and Business ($20 per user a month billed annually).</td></tr>\n<tr><td>GitHub Copilot</td><td>Free; Pro $10; Pro+ $39; Max $100 a month. Business and Enterprise through sales.</td></tr>\n<tr><td>Cursor</td><td>Free; Plus $8 (Grok models only); Premium $30; Super $100; Ultra $200 a month; Teams from $30 per user. Third-party models billed by usage on Premium and above.</td></tr>\n<tr><td>Google AI (Antigravity)</td><td>In India: AI Plus ₹399, AI Pro ₹1,950 and AI Ultra from ₹6,500 a month. Antigravity agent access starts on AI Pro.</td></tr>\n</tbody>\n</table>\n<p>India-specific pricing is thin. Google publishes rupee prices. TechCrunch reported in July 2026 that Cursor launched Cursor Start for India at ₹649 (about $7) a month, with Cursor's Composer 2.5 and Grok 4.5 models but not OpenAI's or Anthropic's frontier models; check Cursor's site for whether it is still offered alongside the new global plans.</p>\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>If you follow Reddit's crowd in late 2026, start with Codex through a ChatGPT plan you may already have, because it gives the most usage per rupee and handles implementation well. Add Claude Code if you do a lot of planning, front-end work or long design discussions, and be ready for its newer models' verbose style. If budget is tight, the r/developersIndia route of an open-source agent with cheaper models is worth a weekend's test. Whatever you pick, review every change before it ships: that is the one point every thread agreed on.</p>\n\n<h2>FAQ</h2>\n<h3>What is the best AI for coding according to Reddit?</h3>\n<p>In the threads we read, Codex and Claude Code were the two most recommended. Codex led on value and limits; Claude Code on planning and front-end work. Many users run both.</p>\n<h3>Is Codex better than Claude Code?</h3>\n<p>Reddit is split. Recent r/developersIndia threads leaned Codex for backend work and usage limits, while Claude fans praise its tooling and design discussions.</p>\n<h3>Is Codex free?</h3>\n<p>OpenAI's pricing page lists Codex on every ChatGPT plan, including Free, with higher limits on paid plans.</p>\n<h3>What do Indian developers use for AI coding?</h3>\n<p>Claude Code and Codex at work, and often cheaper setups such as OpenCode with DeepSeek models, Google Antigravity offers or Cursor's rupee plan for personal projects.</p>\n<h3>Is Claude Pro enough for freelancing?</h3>\n<p>Most r/developersIndia replies in October 2026 said yes; one said it suits one or two clients, not several.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Reddit r/ChatGPTCoding, <a href=\"https://www.reddit.com/r/ChatGPTCoding/comments/1p612yb/best_coding_llm_among_the_recent_releases_claude/\">\"Best coding LLM among the recent releases (Claude Opus 4.5 VS Gemini 3 Pro VS GPT5.1-Codex VS etc.)\"</a>, 25 November 2025</li>\n<li>Reddit r/cursor, <a href=\"https://www.reddit.com/r/cursor/comments/1plk607/current_generation_of_best_coding_models/\">\"Current generation of best coding models\"</a>, 13 December 2025</li>\n<li>Reddit r/ChatGPTCoding, <a href=\"https://www.reddit.com/r/ChatGPTCoding/comments/1q6m1ui/opus_45_headtohead_against_codex_52_xhigh_on_a/\">\"Opus 4.5 head-to-head against Codex 5.2 xhigh on a real task. Neither won.\"</a>, 7 January 2026</li>\n<li>Reddit r/ChatGPTCoding, <a href=\"https://www.reddit.com/r/ChatGPTCoding/comments/1qgg33n/the_value_of_200_a_month_ai_users/\">\"The value of $200 a month AI users\"</a>, 18 January 2026</li>\n<li>Reddit r/developersIndia, <a href=\"https://www.reddit.com/r/developersIndia/comments/1t3a5t9/confession_i_just_talk_to_ai_models_and_push_code/\">\"Confession - I just talk to AI models and push code\"</a>, 4 May 2026</li>\n<li>Reddit r/developersIndia, <a href=\"https://www.reddit.com/r/developersIndia/comments/1v0yld3/claude_code_or_codex_which_one_is_worth_investing/\">\"Claude code or Codex, which one is worth investing in ?\"</a>, 19 July 2026</li>\n<li>Reddit r/ChatGPTCoding, <a href=\"https://www.reddit.com/r/ChatGPTCoding/comments/1vqsfbt/updated_best_ai_coding_subscription_under_20/\">\"Updated best AI coding subscription under $20 after DeepSeek price hike.\"</a>, 17 August 2026</li>\n<li>Reddit r/ClaudeAI, <a href=\"https://www.reddit.com/r/ClaudeAI/comments/1vqsas9/claude_is_losing_me_after_being_heavy_user_since/\">\"Claude is Losing Me After Being Heavy User Since Release\"</a>, 17 August 2026</li>\n<li>Reddit r/developersIndia, <a href=\"https://www.reddit.com/r/developersIndia/comments/1w9rejd/forget_writing_code_i_do_not_work_in_an_ide/\">\"Forget writing code, I do not work in an IDE anymore\"</a>, 7 September 2026</li>\n<li>Reddit r/developersIndia, <a href=\"https://www.reddit.com/r/developersIndia/comments/1wlgmi2/continue_with_claude_pro_or_switch_to_codex_or/\">\"Continue with claude pro or switch to codex or some other agent?\"</a>, 20 September 2026</li>\n<li>Reddit r/developersIndia, <a href=\"https://www.reddit.com/r/developersIndia/comments/1wt2tmq/developers_what_ai_tools_are_you_actually_using/\">\"Developers: What AI tools are you actually using day-to-day?\"</a>, 29 September 2026</li>\n<li>Reddit r/developersIndia, <a href=\"https://www.reddit.com/r/developersIndia/comments/1x03kco/is_claude_pro_enough_for_freelancing_and_building/\">\"Is Claude Pro enough for freelancing and building a portfolio?\"</a>, 7 October 2026</li>\n<li>Anthropic, <a href=\"https://claude.com/pricing\">\"Claude pricing\"</a>, accessed 15 October 2026</li>\n<li>OpenAI, <a href=\"https://learn.chatgpt.com/docs/pricing\">\"Pricing\"</a>, accessed 15 October 2026</li>\n<li>GitHub, <a href=\"https://github.com/features/copilot/plans\">\"GitHub Copilot plans\"</a>, accessed 15 October 2026</li>\n<li>Cursor, <a href=\"https://cursor.com/pricing\">\"Pricing\"</a>, accessed 15 October 2026</li>\n<li>Google, <a href=\"https://gemini.google/in/subscriptions/\">\"Google AI plans (India)\"</a>, accessed 15 October 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/\">\"Cursor makes its biggest India push yet ahead of SpaceX acquisition with localized pricing\"</a>, 27 July 2026</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/\">\"SpaceX officially closes its Cursor acquisition\"</a>, 15 August 2026</li>\n<li>Free Press Journal, <a href=\"https://www.freepressjournal.in/business/openai-to-end-cursor-model-access-after-spacex-acquisition\">\"OpenAI to end Cursor model access after SpaceX acquisition\"</a>, 29 August 2026</li>\n</ol>\n",
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Programmer_at_work_%28Unsplash%29.jpg/1920px-Programmer_at_work_%28Unsplash%29.jpg",
+   "alt": "A programmer working at a desk with code on a large monitor",
+   "caption": "Reddit's coding threads have narrowed to two main choices: Codex and Claude Code.",
+   "credit": "Photo: Crew / Wikimedia Commons, CC0",
+   "license": "CC0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Programmer_at_work_(Unsplash).jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS_code_on_a_screen_%28Unsplash%29.jpg/1920px-CSS_code_on_a_screen_%28Unsplash%29.jpg",
+   "alt": "Close-up of CSS code on a computer screen, photographed in Vijayawada, India",
+   "caption": "Users often split the work: one model for front-end and planning, another for backend implementation.",
+   "credit": "Photo: Sai Kiran Anagani / Wikimedia Commons, CC0",
+   "license": "CC0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:CSS_code_on_a_screen_(Unsplash).jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Coder_screen_shot.webp/1920px-Coder_screen_shot.webp",
+   "alt": "A browser-based code editor showing a project's files and source code",
+   "caption": "AI-first editors such as Cursor let users switch between models inside one window.",
+   "credit": "Image: Wikideas1 / Wikimedia Commons, CC0",
+   "license": "CC0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Coder_screen_shot.webp"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Tech_Mahindra%2C_Electronic_City_Bangalore_campus.jpg/1920px-Tech_Mahindra%2C_Electronic_City_Bangalore_campus.jpg",
+   "alt": "The Tech Mahindra campus in Electronic City, Bengaluru",
+   "caption": "Electronic City, Bengaluru. Indian developers on Reddit weigh AI tools by price first.",
+   "credit": "Photo: HokuroN / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tech_Mahindra,_Electronic_City_Bangalore_campus.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Indic_Hackathon_2022_Hyderabad%2C_India_01.jpg/1920px-Indic_Hackathon_2022_Hyderabad%2C_India_01.jpg",
+   "alt": "Participants working on laptops on day one of the Indic Hackathon 2022 in Hyderabad",
+   "caption": "Students and freelancers often mix free and cheap tools for personal projects.",
+   "credit": "Photo: Suyash Dwivedi / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Indic_Hackathon_2022_Hyderabad,_India_01.jpg"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1p612yb/best_coding_llm_among_the_recent_releases_claude/",
+   "publisher": "Reddit r/ChatGPTCoding",
+   "date": "2025-11-25",
+   "claim": "Users on Opus 4.5 vs Codex vs Gemini 3; Codex limits on $20 plan; Gemini overwrites code"
+  },
+  {
+   "url": "https://www.reddit.com/r/cursor/comments/1plk607/current_generation_of_best_coding_models/",
+   "publisher": "Reddit r/cursor",
+   "date": "2025-12-13",
+   "claim": "r/cursor users on Opus cost, GPT-5.2, Gemini ignoring instructions, Composer for quick tasks"
+  },
+  {
+   "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1q6m1ui/opus_45_headtohead_against_codex_52_xhigh_on_a/",
+   "publisher": "Reddit r/ChatGPTCoding",
+   "date": "2026-01-07",
+   "claim": "Head-to-head: neither won; pairing models; 'obedient vs loose cannon' quote"
+  },
+  {
+   "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1qgg33n/the_value_of_200_a_month_ai_users/",
+   "publisher": "Reddit r/ChatGPTCoding",
+   "date": "2026-01-18",
+   "claim": "Debate on $200 plans and subsidies"
+  },
+  {
+   "url": "https://www.reddit.com/r/developersIndia/comments/1t3a5t9/confession_i_just_talk_to_ai_models_and_push_code/",
+   "publisher": "Reddit r/developersIndia",
+   "date": "2026-05-04",
+   "claim": "Indian developers on AI-written code, juniors not learning"
+  },
+  {
+   "url": "https://www.reddit.com/r/developersIndia/comments/1v0yld3/claude_code_or_codex_which_one_is_worth_investing/",
+   "publisher": "Reddit r/developersIndia",
+   "date": "2026-07-19",
+   "claim": "Codex vs Claude Code replies; Rs 2,000 cost; Jio Antigravity offer; frontend/backend quote"
+  },
+  {
+   "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1vqsfbt/updated_best_ai_coding_subscription_under_20/",
+   "publisher": "Reddit r/ChatGPTCoding",
+   "date": "2026-08-17",
+   "claim": "Subscription value under $20; open-model plans vs big two; cost per task"
+  },
+  {
+   "url": "https://www.reddit.com/r/ClaudeAI/comments/1vqsas9/claude_is_losing_me_after_being_heavy_user_since/",
+   "publisher": "Reddit r/ClaudeAI",
+   "date": "2026-08-17",
+   "claim": "200+ comment thread on Claude newest models' verbosity; users switching"
+  },
+  {
+   "url": "https://www.reddit.com/r/developersIndia/comments/1w9rejd/forget_writing_code_i_do_not_work_in_an_ide/",
+   "publisher": "Reddit r/developersIndia",
+   "date": "2026-09-07",
+   "claim": "Indian developers on Codex/Claude Code doing most coding; job anxiety"
+  },
+  {
+   "url": "https://www.reddit.com/r/developersIndia/comments/1wlgmi2/continue_with_claude_pro_or_switch_to_codex_or/",
+   "publisher": "Reddit r/developersIndia",
+   "date": "2026-09-20",
+   "claim": "Claude/Codex better value than Copilot (user view)"
+  },
+  {
+   "url": "https://www.reddit.com/r/developersIndia/comments/1wt2tmq/developers_what_ai_tools_are_you_actually_using/",
+   "publisher": "Reddit r/developersIndia",
+   "date": "2026-09-29",
+   "claim": "Daily tools: OpenCode+DeepSeek, Claude Code, Codex, Cursor counts; prod review quote"
+  },
+  {
+   "url": "https://www.reddit.com/r/developersIndia/comments/1x03kco/is_claude_pro_enough_for_freelancing_and_building/",
+   "publisher": "Reddit r/developersIndia",
+   "date": "2026-10-07",
+   "claim": "Claude Pro enough for freelancing replies"
+  },
+  {
+   "url": "https://claude.com/pricing",
+   "publisher": "Anthropic",
+   "date": "2026-10-15",
+   "claim": "Claude Free/Pro/Max prices; Claude Code on Pro and Max"
+  },
+  {
+   "url": "https://learn.chatgpt.com/docs/pricing",
+   "publisher": "OpenAI",
+   "date": "2026-10-15",
+   "claim": "Codex included on Free, Go $8, Plus $20, Pro from $100, Business $20"
+  },
+  {
+   "url": "https://github.com/features/copilot/plans",
+   "publisher": "GitHub",
+   "date": "2026-10-15",
+   "claim": "Copilot Free, Pro $10, Pro+ $39, Max $100"
+  },
+  {
+   "url": "https://cursor.com/pricing",
+   "publisher": "Cursor",
+   "date": "2026-10-15",
+   "claim": "Free, Plus $8, Premium $30, Super $100, Ultra $200, Teams $30+"
+  },
+  {
+   "url": "https://gemini.google/in/subscriptions/",
+   "publisher": "Google",
+   "date": "2026-10-15",
+   "claim": "AI Plus ₹399, AI Pro ₹1,950, AI Ultra from ₹6,500; Antigravity from AI Pro"
+  },
+  {
+   "url": "https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/",
+   "publisher": "TechCrunch",
+   "date": "2026-07-27",
+   "claim": "Cursor Start ₹649/month for India, Composer 2.5 and Grok 4.5, no OpenAI/Anthropic frontier models"
+  },
+  {
+   "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+   "publisher": "TechCrunch",
+   "date": "2026-08-15",
+   "claim": "SpaceX closed $60bn Cursor acquisition"
+  },
+  {
+   "url": "https://www.freepressjournal.in/business/openai-to-end-cursor-model-access-after-spacex-acquisition",
+   "publisher": "Free Press Journal",
+   "date": "2026-08-29",
+   "claim": "OpenAI proposed ending Cursor model access on 12 Nov 2026"
+  }
+ ]
+}
