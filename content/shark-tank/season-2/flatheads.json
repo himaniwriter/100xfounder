@@ -1,0 +1,111 @@
+{
+  "name": "Flatheads",
+  "slug": "flatheads",
+  "existing_listing_slug": null,
+  "website": "https://www.flatheads.in",
+  "tagline": "Bengaluru sneaker brand, now owned by Styched",
+  "industry_term": "fashion",
+  "excerpt": "Flatheads' founder turned down the only offer on Shark Tank India Season 2, sold out his stock after the episode, and the brand was later acquired by Styched.",
+  "content": "<p>Flatheads made lightweight casual sneakers and sold them online. It was run by Ganesh Balakrishnan in Bengaluru, who had put his own savings into the company after his co-founder left.</p><p>He pitched in Shark Tank India Season 2, Episode 5, valuing the company at ₹25 crore. Aman Gupta said the basics of the business were not in place. Peyush Bansal and Vineeta Singh offered ₹75 lakh for about a third of the company, a valuation of roughly ₹2.25 crore. Balakrishnan declined, saying he needed to rethink his priorities. Anupam Mittal praised his honesty.</p><p>The episode struck a chord with viewers. Balakrishnan wrote on LinkedIn that the brand had almost sold out its inventory in India within days. In July 2023, the apparel brand Styched acquired Flatheads in an all-equity deal, and relaunched the label later that year.</p><p>Flatheads is a reminder that a no-deal episode can still change a company's fate.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 5,
+    "ask_valuation": 250000000,
+    "deal": {
+      "made": false
+    },
+    "founders": [
+      "Ganesh Balakrishnan"
+    ],
+    "city": "Bengaluru",
+    "category": "Sneakers",
+    "pitch_summary": "Ganesh Balakrishnan pitched his struggling sneaker brand at a ₹25 crore valuation. He declined Peyush Bansal and Vineeta Singh's offer of ₹75 lakh for about a third of the company.",
+    "sources": [
+      {
+        "label": "Business Today: Once on the brink of failing, this Bengaluru-based start-up's shoes are now getting sold out (2023-01-09)",
+        "url": "https://www.businesstoday.in/entrepreneurship/story/shark-tank-india-2-once-on-the-brink-of-failing-this-bengaluru-based-start-ups-shoes-are-now-getting-sold-out-359427-2023-01-09"
+      },
+      {
+        "label": "afaqs: Flatheads 'sold out' in India after moving Shark Tank pitch by founder (2023-01-09)",
+        "url": "https://www.afaqs.com/news/mktg/after-moving-shark-tank-pitch-by-founder-flatheads-sold-out-in-india"
+      },
+      {
+        "label": "exchange4media: Refuses Shark Tank funding offer, but Ganesh Balakrishnan sells all Flatheads India stock",
+        "url": "https://www.exchange4media.com/media-tv-news/refuses-shark-tank-funding-offer-but-ganesh-balakrishnan-sells-all-flatheads-india-stock-124691.html"
+      },
+      {
+        "label": "Business Today: Shark Tank India 2 effect on Flatheads (2023-01-09)",
+        "url": "https://www.businesstoday.in/visualstories/corporates/shark-tank-india-2-effect-on-flatheads-from-no-deal-to-sold-out-shoes-17605-09-01-2023"
+      }
+    ]
+  },
+  "now": {
+    "status": "acquired",
+    "status_source": {
+      "label": "exchange4media: eComm brand Styched acquires Flatheads (2023-07)",
+      "url": "https://www.exchange4media.com/marketing-news/ecomm-brand-styched-acquires-flatheads-128599.html"
+    },
+    "notable_since_show": [
+      {
+        "date": "2023-07",
+        "event": "Styched acquired Flatheads in an all-equity deal and took over its operations.",
+        "source": {
+          "label": "exchange4media (2023-07)",
+          "url": "https://www.exchange4media.com/marketing-news/ecomm-brand-styched-acquires-flatheads-128599.html"
+        }
+      },
+      {
+        "date": "2023-11",
+        "event": "Styched relaunched the Flatheads sneaker label.",
+        "source": {
+          "label": "Outlook Startup: Styched relaunches sneaker brand Flatheads",
+          "url": "https://startup.outlookindia.com/sector/e-commerce/styched-relaunches-sneaker-brand-flatheads-the-shark-tank-sensation-after-landmark-acquisition-deal-news-9800"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "not closed",
+    "detail": "No deal was made on air; the founder declined the only offer.",
+    "source": {
+      "label": "Business Today (2023-01-09)",
+      "url": "https://www.businesstoday.in/entrepreneurship/story/shark-tank-india-2-once-on-the-brink-of-failing-this-bengaluru-based-start-ups-shoes-are-now-getting-sold-out-359427-2023-01-09"
+    }
+  },
+  "pitch_video": {
+    "youtube_id": "rZfmiy3XqX0",
+    "channel": "Shark Tank India",
+    "title": "Down, But Not Out! | Shark Tank India | Season 2 | Flatheads | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=rZfmiy3XqX0",
+    "upload_date": "2023-02-08"
+  },
+  "faq": [
+    {
+      "q": "Did Flatheads get a deal on Shark Tank India?",
+      "a": "No. The founder declined Peyush Bansal and Vineeta Singh's offer of ₹75 lakh for about a third of the company."
+    },
+    {
+      "q": "What happened to Flatheads after Shark Tank?",
+      "a": "Its stock sold out within days, and in July 2023 it was acquired by the apparel brand Styched."
+    },
+    {
+      "q": "Is Flatheads still in business?",
+      "a": "The brand was relaunched by its new owner, Styched, in late 2023."
+    },
+    {
+      "q": "Who founded Flatheads?",
+      "a": "Ganesh Balakrishnan ran the company and pitched it on the show."
+    }
+  ],
+  "lessons": [
+    "Honesty about a struggling business can win viewers even when it doesn't win investors.",
+    "A sold-out moment helps only if the company can restock; thin working capital limits what TV exposure can do.",
+    "An acquisition can be a good outcome for a brand that customers value but that lacks funding."
+  ],
+  "related_pitches": [
+    "snitch",
+    "recode"
+  ],
+  "notes": "Ask amount and equity (₹75 lakh for 3%) come only from Wikipedia and Leisurebyte; Wikipedia cites no outlet for the row, so they are left out (ask_valuation ₹25 cr from exchange4media). File is below the publishing bar. Offer stake reported as 33% (afaqs) or 33.3% (exchange4media). flatheads.in returned HTTP 402 on 2026-10-15, so no media."
+}

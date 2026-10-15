@@ -1,0 +1,111 @@
+{
+  "name": "Unstop",
+  "slug": "unstop",
+  "existing_listing_slug": null,
+  "website": "https://unstop.com",
+  "tagline": "Platform for student competitions, hiring challenges and jobs",
+  "industry_term": "career",
+  "excerpt": "Unstop turned down the biggest offer of Shark Tank India Season 2, ₹5 crore from Amit Jain, and took ₹2 crore from four sharks instead.",
+  "content": "<p>Unstop runs a platform where students and early-career professionals take part in competitions, hackathons and hiring challenges, and where companies recruit from those results. It was founded by Ankit Aggarwal.</p><p>In Shark Tank India Season 2, Episode 26, Aggarwal asked for ₹1 crore for 1%. Amit Jain offered ₹5 crore for 10%, which Business Today called the biggest offer in the show's history at that point. Aggarwal declined it to limit dilution and to bring more sharks on board, and settled for ₹2 crore for 4% from Amit Jain, Aman Gupta, Anupam Mittal and Namita Thapar. Vineeta Singh stayed out, citing a conflict of interest.</p><p>In August 2023, Inc42 reported that Unstop raised $5 million in its first institutional round, led by the Japanese job board Mynavi, with Coursera among the participants. Audited revenue and valuation have not been reported in the outlets we track.</p><p>The pitch is a study in negotiating: giving up a larger cheque in exchange for less dilution and a broader group of backers.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 26,
+    "ask_amount": 10000000,
+    "ask_equity": 1,
+    "ask_valuation": 1000000000,
+    "deal": {
+      "made": true,
+      "amount": 20000000,
+      "equity": 4,
+      "implied_valuation": 500000000,
+      "sharks": [
+        "Amit Jain",
+        "Aman Gupta",
+        "Anupam Mittal",
+        "Namita Thapar"
+      ],
+      "terms": "Turned down Amit Jain's earlier offer of ₹5 crore for 10%"
+    },
+    "founders": [
+      "Ankit Aggarwal"
+    ],
+    "category": "Hiring and competitions platform",
+    "pitch_summary": "Ankit Aggarwal asked for ₹1 crore for 1%. He declined Amit Jain's ₹5 crore for 10% and accepted ₹2 crore for 4% from four sharks.",
+    "sources": [
+      {
+        "label": "Business Today: Shark Tank India's biggest offer of Rs 5 Cr was rejected; here's why (2023-02-07)",
+        "url": "https://www.businesstoday.in/entrepreneurship/news/story/shark-tank-indias-biggest-offer-of-rs-5-cr-was-rejected-heres-why-369369-2023-02-07"
+      },
+      {
+        "label": "Shark Tank India (official YouTube): 'Unstop' full pitch, ask of Rs 1 crore for 1%",
+        "url": "https://www.youtube.com/watch?v=wgQdjlJRd2o"
+      },
+      {
+        "label": "SET India (official YouTube): Bharat Badal Raha Hai, Shark Tank India S2 Ep 26",
+        "url": "https://www.youtube.com/watch?v=7B9F6yHhmDs"
+      }
+    ]
+  },
+  "now": {
+    "status": "unknown",
+    "notable_since_show": [
+      {
+        "date": "2023-08",
+        "event": "Raised $5 million in its first institutional round, led by Mynavi, with Coursera, Venture Catalysts and 9Unicorns participating.",
+        "source": {
+          "label": "Inc42: Unstop Raises $5 Mn From Japan's Mynavi (2023-08-02)",
+          "url": "https://inc42.com/buzz/unstop-raises-5-mn-japans-mynavi-students-freshers-jobs"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "No report confirms the four sharks' shareholding after the episode."
+  },
+  "pitch_video": {
+    "youtube_id": "wgQdjlJRd2o",
+    "channel": "Shark Tank India",
+    "title": "'Unstop' में Invest करने के लिए Sharks के बीच हुई War! | Shark Tank India Season 2 | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=wgQdjlJRd2o",
+    "upload_date": "2023-04-28"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/unstop-s-pitch-1000208618",
+  "media": {
+    "logo": {
+      "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg",
+      "credit": "Logo: Unstop",
+      "source_url": "https://unstop.com/",
+      "source_type": "brand_site"
+    }
+  },
+  "faq": [
+    {
+      "q": "Did Unstop get a deal on Shark Tank India?",
+      "a": "Yes. It took ₹2 crore for 4% from Amit Jain, Aman Gupta, Anupam Mittal and Namita Thapar."
+    },
+    {
+      "q": "Why did Unstop reject ₹5 crore?",
+      "a": "The founder said he wanted less dilution and more sharks on the cap table."
+    },
+    {
+      "q": "Has Unstop raised money since the show?",
+      "a": "Yes. Inc42 reported a $5 million round led by Mynavi in August 2023."
+    },
+    {
+      "q": "What is Unstop's revenue?",
+      "a": "Audited revenue has not been reported in the outlets we track."
+    }
+  ],
+  "lessons": [
+    "A bigger cheque is not always the better offer; dilution and the number of backers matter too.",
+    "A marketplace that serves both students and employers can show the sharks two sides of demand.",
+    "Investor conflicts of interest are common on the show and can narrow the field."
+  ],
+  "related_pitches": [
+    "primebook",
+    "stage"
+  ],
+  "notes": "Inc42 Datalabs lists FY24/FY25 revenue, but no reported article; left out. Status left unknown because the latest approved-outlet report is from 2023."
+}

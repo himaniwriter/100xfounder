@@ -1,0 +1,117 @@
+{
+  "name": "Hoovu Fresh",
+  "slug": "hoovu-fresh",
+  "existing_listing_slug": null,
+  "website": "https://hoovufresh.com",
+  "tagline": "Farm-fresh puja flowers delivered to homes",
+  "industry_term": "e-commerce",
+  "excerpt": "Bengaluru sisters Yeshoda and Rhea Karuturi opened Shark Tank India Season 2 with Hoovu Fresh, their puja-flower brand, and left with a two-shark deal.",
+  "content": "<p>Hoovu Fresh sells fresh flowers for daily prayer and temple offerings, sourced from farms and packed to last longer than loose market flowers. It was started by sisters Yeshoda and Rhea Karuturi in Bengaluru.</p><p>The brand was the first pitch of Shark Tank India Season 2, which premiered on 2 January 2023. The founders asked for ₹80 lakh for 1% of the company. Two pairs of sharks bid. The founders took the offer from Aman Gupta and Peyush Bansal: ₹1 crore for 2%, which valued the business at ₹50 crore, lower than the ₹80 crore the founders had pitched but with more cash.</p><p>Hoovu Fresh has not published revenue or a new funding round in the outlets we track since the episode, so the panel below shows those figures as not publicly disclosed. Whether the on-air deal later closed on the same terms has not been reported either.</p><p>For a brand selling a daily, low-ticket product, the pitch was a lesson in choosing partners over headline valuation: the sisters accepted a lower valuation to bring in two consumer-brand founders.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 1,
+    "air_date": "2023-01-02",
+    "ask_amount": 8000000,
+    "ask_equity": 1,
+    "ask_valuation": 800000000,
+    "deal": {
+      "made": true,
+      "amount": 10000000,
+      "equity": 2,
+      "implied_valuation": 500000000,
+      "sharks": [
+        "Aman Gupta",
+        "Peyush Bansal"
+      ]
+    },
+    "founders": [
+      "Yeshoda Karuturi",
+      "Rhea Karuturi"
+    ],
+    "city": "Bengaluru",
+    "category": "Puja flowers",
+    "pitch_summary": "The Karuturi sisters pitched farm-sourced puja flowers with a longer shelf life. Two sets of sharks bid, and the founders chose Aman Gupta and Peyush Bansal's offer of ₹1 crore for 2%.",
+    "sources": [
+      {
+        "label": "Business Today: Shark Tank India Season 2 Episode 1 highlights (2023-01-03)",
+        "url": "https://www.businesstoday.in/visualstories/corporates/shark-tank-india-season-2-episode-1-highlights-recap-16953-03-01-2023"
+      },
+      {
+        "label": "Outlook Startup: Hoovu Fresh raises Rs 10 million from Aman Gupta and Peyush Bansal in Shark Tank (2023-01-04)",
+        "url": "https://startup.outlookindia.com/investors/hoovu-fresh-raises-rs-10-million-from-aman-gupta-and-peyush-bansal-in-shark-tank-news-7066"
+      },
+      {
+        "label": "IndiaRetailing: Floral startup Hoovu Fresh raises Rs 10 million (2023-01-03)",
+        "url": "https://www.indiaretailing.com/2023/01/03/d2c-buzz/news-funding-alert-floral-startup-hoovu-fresh-raises-10-million"
+      },
+      {
+        "label": "Shark Tank India (official YouTube): Shark Tank India S2 Ep. 1, Hoovu Fresh",
+        "url": "https://www.youtube.com/watch?v=tbI6wHRikQY"
+      }
+    ]
+  },
+  "now": {
+    "status": "unknown",
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "No report confirms that the on-air deal closed on the same terms."
+  },
+  "pitch_video": {
+    "youtube_id": "7au2SKfFqk8",
+    "channel": "Shark Tank India",
+    "title": "50 Crore Ka Valuation!!! | Shark Tank India | Hoovu | Season 2 | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=7au2SKfFqk8",
+    "upload_date": "2023-02-02"
+  },
+  "media": {
+    "logo": {
+      "url": "https://cdn.shopify.com/s/files/1/0054/5662/5728/files/8EBADE66-A9C3-4C5F-9B25-CC5BDB1A9A4D.png?height=628&pad_color=febd11&v=1683100007&width=1200",
+      "credit": "Logo: Hoovu Fresh",
+      "source_url": "https://hoovufresh.com/",
+      "source_type": "brand_site"
+    }
+  },
+  "social": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/hoovufresh",
+      "checked_date": "2026-10-15"
+    }
+  ],
+  "where_to_buy": [
+    {
+      "label": "Official store",
+      "url": "https://hoovufresh.com"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did Hoovu Fresh get a deal on Shark Tank India?",
+      "a": "Yes. In Season 2, Episode 1, Aman Gupta and Peyush Bansal offered ₹1 crore for 2%, and the founders accepted."
+    },
+    {
+      "q": "Who founded Hoovu Fresh?",
+      "a": "Sisters Yeshoda Karuturi and Rhea Karuturi, based in Bengaluru."
+    },
+    {
+      "q": "What is Hoovu Fresh's revenue?",
+      "a": "It has not been publicly disclosed in the reports we track."
+    },
+    {
+      "q": "Where can I buy Hoovu Fresh flowers?",
+      "a": "Through the brand's own website."
+    }
+  ],
+  "lessons": [
+    "Taking a lower valuation can make sense when the investors bring distribution or brand-building experience.",
+    "A daily-use product with repeat orders gives sharks a clear story about retention.",
+    "Competing offers let founders choose partners rather than just a number."
+  ],
+  "related_pitches": [
+    "perfora",
+    "paradyes"
+  ],
+  "notes": "Deal closure not confirmed. Inc42 Datalabs lists revenue figures (FY23/FY25) but they are database entries, not reported articles, so they are left out. Pre-show Rs 6.45 cr pre-Series A led by Sauce.vc (Dec 2022) was reported by Entrepreneur India, which is outside our list of outlets."
+}

@@ -1,0 +1,103 @@
+{
+  "name": "Paradyes",
+  "slug": "paradyes",
+  "existing_listing_slug": null,
+  "website": "https://paradyes.com",
+  "tagline": "Semi-permanent hair colour brand from Ahmedabad",
+  "industry_term": "consumer",
+  "excerpt": "Ahmedabad hair colour brand Paradyes set off a bidding war on Shark Tank India Season 2 and chose Aman Gupta and Vineeta Singh.",
+  "content": "<p>Paradyes sells semi-permanent hair colours in bright shades, aimed at young buyers who want to experiment without long-term damage. It is based in Ahmedabad and was founded by Yushika Jolly and Siddharth Raghuvanshi.</p><p>In Shark Tank India Season 2, Episode 9, the founders offered 1% for ₹65 lakh. Business Today reported sales of ₹3.5 crore for FY22. Every shark on the panel made an offer, from 4% to 5% for the same amount. The founders insisted on working with Aman Gupta and Vineeta Singh, and closed at ₹65 lakh for 2%, a ₹32.5 crore valuation. Anupam Mittal and Peyush Bansal withdrew, and the negotiation turned tense.</p><p>No later revenue, funding round or valuation for Paradyes has been reported in the outlets we track, so the panel shows those as not publicly disclosed.</p><p>The pitch shows a founder choosing specific partners, one of them running a beauty company, over a better-sounding number from others.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 9,
+    "ask_amount": 6500000,
+    "ask_equity": 1,
+    "ask_valuation": 650000000,
+    "deal": {
+      "made": true,
+      "amount": 6500000,
+      "equity": 2,
+      "implied_valuation": 325000000,
+      "sharks": [
+        "Aman Gupta",
+        "Vineeta Singh"
+      ]
+    },
+    "pitch_revenue": {
+      "value": 35000000,
+      "period": "FY22",
+      "label": "Sales"
+    },
+    "founders": [
+      "Yushika Jolly",
+      "Siddharth Raghuvanshi"
+    ],
+    "city": "Ahmedabad",
+    "category": "Hair colour",
+    "pitch_summary": "Paradyes pitched semi-permanent hair colours and asked ₹65 lakh for 1%. All the sharks bid, and the founders took Aman Gupta and Vineeta Singh's ₹65 lakh for 2%.",
+    "sources": [
+      {
+        "label": "Business Today: Sharks fight to get a stake in Ahmedabad-based hair colour brand Paradyes (2023-01-16)",
+        "url": "https://www.businesstoday.in/visualstories/corporates/shark-tank-india-2-sharks-fight-to-get-a-stake-in-ahmedabad-based-hair-colour-brand-paradyes-18486-16-01-2023"
+      },
+      {
+        "label": "SET India (official YouTube): Paradyes pitch, Ep no. 9, 1% for Rs 65 lakh",
+        "url": "https://www.youtube.com/watch?v=rxAI7CYgfqI"
+      },
+      {
+        "label": "Sony LIV: Shark Tank India Season 2 Episode 9, Invest In Lifestyle",
+        "url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/invest-in-lifestyle-1000204279"
+      }
+    ]
+  },
+  "now": {
+    "status": "unknown",
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "Inc42 Datalabs lists Aman Gupta and Vineeta Singh as investors from January 2023, but no reported article confirms the deal closed."
+  },
+  "pitch_video": {
+    "youtube_id": "L79UP7Nf70M",
+    "channel": "Shark Tank India",
+    "title": "India's first Semi-Permanent Hair Color Brand | Paradyes | Shark Tank India | Season 2 | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=L79UP7Nf70M",
+    "upload_date": "2023-02-25"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/invest-in-lifestyle-1000204279",
+  "where_to_buy": [
+    {
+      "label": "Official store",
+      "url": "https://paradyes.com"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did Paradyes get a deal on Shark Tank India?",
+      "a": "Yes. Aman Gupta and Vineeta Singh invested ₹65 lakh for 2% in Season 2, Episode 9."
+    },
+    {
+      "q": "Who founded Paradyes?",
+      "a": "Yushika Jolly and Siddharth Raghuvanshi, based in Ahmedabad."
+    },
+    {
+      "q": "What is Paradyes' revenue now?",
+      "a": "It has not been publicly disclosed in the reports we track."
+    },
+    {
+      "q": "Where can I buy Paradyes hair colour?",
+      "a": "On the brand's website."
+    }
+  ],
+  "lessons": [
+    "A bidding war gives founders leverage, but insisting on specific sharks can sour the room.",
+    "A shark with a company in the same category can be a strong partner, or a conflict; founders should weigh both.",
+    "Sharing real sales figures helps the sharks price the deal quickly."
+  ],
+  "related_pitches": [
+    "perfora",
+    "recode"
+  ],
+  "notes": "No now-data from approved outlets. Inc42 Datalabs lists about $80K funding in Jan 2023 with Aman Gupta and Vineeta Singh; database entry only."
+}

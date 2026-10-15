@@ -1,0 +1,119 @@
+{
+  "name": "JhaJi Store",
+  "slug": "jhaji-store",
+  "existing_listing_slug": null,
+  "website": "https://www.jhajistore.com",
+  "tagline": "Homemade Mithila pickles from Darbhanga, Bihar",
+  "industry_term": "food-drinks",
+  "excerpt": "JhaJi Achaar left Shark Tank India Season 1 without a deal, then won investment from Namita Thapar and Vineeta Singh months later.",
+  "content": "<p>JhaJi sells traditional homemade pickles from the Mithila region of Bihar, made with family recipes. Sisters-in-law Kalpana Jha and Uma Jha started it from Darbhanga and pitched in the fourth episode of Shark Tank India, aired on 23 December 2021.</p><p>They left without a deal. But the story did not end there: a study of company filings found that JhaJi was one of two rejected Season 1 businesses that later got shark money, with Namita Thapar and Vineeta Singh investing ₹30 lakh in September 2022.</p><p>Inc42's filing data shows revenue growing in FY25, with a small loss.</p>",
+  "shark_tank": {
+    "season": 1,
+    "episode": 4,
+    "air_date": "2021-12-23",
+    "deal": {
+      "made": false
+    },
+    "founders": [
+      "Kalpana Jha",
+      "Uma Jha"
+    ],
+    "city": "Darbhanga",
+    "category": "Pickles",
+    "pitch_summary": "Two sisters-in-law pitched homemade Mithila pickles sold online. They got no deal on the show but won shark investment months later.",
+    "sources": [
+      {
+        "label": "The Federal: Sharks of Season 1 invest in 27 out of 65 committed deals (PrivateCircle analysis of MCA filings), 19 Jul 2023",
+        "url": "https://thefederal.com/business/shark-tank-india-sharks-of-season-1-invest-in-27-out-of-65-committed-deals"
+      },
+      {
+        "label": "The Better India: How the Jha Sisters-In-Law are Taking Mithila's Traditional Pickles to the World, 28 Feb 2022",
+        "url": "https://thebetterindia.com/277097/sisters-in-law-bihar-mithila-mango-chilli-lemon-jhaji-pickles-shark-tank/"
+      },
+      {
+        "label": "SET India (official YouTube): Shark Tank India Ep 4, full episode, 23 December 2021",
+        "url": "https://www.youtube.com/watch?v=8tR8LAsjJHY"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Inc42 Datalabs: JhaJi Store financials (from statutory filings, accessed 2026-10-15)",
+      "url": "https://inc42.com/company/jhaji-store/financials/"
+    },
+    "latest_revenue": {
+      "value": 97000000,
+      "fiscal_year": "FY25",
+      "label": "Total revenue",
+      "date": "2026-10-15",
+      "source": {
+        "label": "Inc42 Datalabs: JhaJi Store financials (from statutory filings, accessed 2026-10-15)",
+        "url": "https://inc42.com/company/jhaji-store/financials/"
+      }
+    },
+    "latest_funding": {
+      "round": "Angel (Namita Thapar and Vineeta Singh, after the show)",
+      "amount": 3000000,
+      "date": "2022-09",
+      "source": {
+        "label": "The Federal: Sharks of Season 1 invest in 27 out of 65 committed deals (PrivateCircle analysis of MCA filings), 19 Jul 2023",
+        "url": "https://thefederal.com/business/shark-tank-india-sharks-of-season-1-invest-in-27-out-of-65-committed-deals"
+      }
+    },
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "not closed",
+    "detail": "No deal on air; Namita Thapar and Vineeta Singh invested ₹30 lakh jointly in September 2022, per filings analysed by PrivateCircle.",
+    "source": {
+      "label": "The Federal: Sharks of Season 1 invest in 27 out of 65 committed deals (PrivateCircle analysis of MCA filings), 19 Jul 2023",
+      "url": "https://thefederal.com/business/shark-tank-india-sharks-of-season-1-invest-in-27-out-of-65-committed-deals"
+    }
+  },
+  "pitch_video": {
+    "youtube_id": "EnIsM7WKS74",
+    "channel": "SET India",
+    "title": "Sharks पर चला ननद और भाभी के \"JhaJi\" अचार का जादू | Shark Tank India | Pitches",
+    "url": "https://www.youtube.com/watch?v=EnIsM7WKS74",
+    "upload_date": "2022-02-04"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/dplnk?schema=sony://asset/1000151108",
+  "media": {
+    "logo": {
+      "url": "https://www.jhajistore.com/cdn/shop/files/Logo_2_5eb93ac3-1014-45b1-a22e-0dec9c76b439.png?v=1640655442",
+      "credit": "Logo: JhaJi Store",
+      "source_url": "https://www.jhajistore.com/",
+      "source_type": "brand_site"
+    }
+  },
+  "where_to_buy": [
+    {
+      "label": "Official store",
+      "url": "https://www.jhajistore.com"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did JhaJi get a deal on Shark Tank India?",
+      "a": "Not on the show. Namita Thapar and Vineeta Singh invested later, in September 2022."
+    },
+    {
+      "q": "Is JhaJi still in business?",
+      "a": "Yes. It filed accounts for FY25 and sells through its own website."
+    },
+    {
+      "q": "What is JhaJi's revenue?",
+      "a": "Inc42's filing data shows total revenue of about ₹9.7 crore in FY25."
+    }
+  ],
+  "lessons": [
+    "Our analysis: a 'no' on TV is not final; following up with traction can turn sharks into investors later.",
+    "Our analysis: authentic regional food with a founder story travels well online."
+  ],
+  "related_pitches": [
+    "beyond-snack",
+    "bummer"
+  ],
+  "notes": "Ask (₹50 lakh for 10%) appears only on Wikipedia/blogs (a YourStory piece could not be fetched), so it is left out. Post-show amount conflicts: The Federal/PrivateCircle says ₹30 lakh (Sept 2022); Wikipedia and blogs say ₹85 lakh for 8.45% with Jharkhand Angels when they returned in Season 2; Inc42 Datalabs shows total funding $1.57M+. Episode 4 is confirmed by SET India's synopsis ('chemical-free pickle brand')."
+}

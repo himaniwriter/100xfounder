@@ -1,0 +1,113 @@
+{
+  "name": "PadCare Labs",
+  "slug": "padcare",
+  "existing_listing_slug": null,
+  "website": "https://www.padcarelabs.com",
+  "tagline": "Collection and recycling of used sanitary pads",
+  "industry_term": "sustainability",
+  "excerpt": "PadCare Labs, which collects and recycles used sanitary pads, drew a rush of offers on Shark Tank India Season 2 and raised ₹1 crore.",
+  "content": "<p>PadCare Labs installs bins that collect used sanitary pads in offices, factories and housing societies, and recycles the waste into reusable materials instead of sending it to landfill or incinerators. It was founded by Ajinkya Dhariya.</p><p>Dhariya pitched in Shark Tank India Season 2, Episode 23. The sharks competed to invest, and YourStory reported that the company raised ₹1 crore on the show. Inc42 later listed PadCare Labs among the 2023 investments of Namita Thapar and Vineeta Singh.</p><p>Since then the company has raised institutional money. Inc42 and Entrackr reported in February 2026 a pre-Series A round of ₹27.2 crore (about $3 million), a mix of equity and debt led by Zerodha's Rainmatter, with 3one4 Capital and Brigade REAP among the new investors. Revenue and valuation have not been reported in the outlets we track.</p><p>PadCare shows how a hygiene problem that is rarely discussed can become a fundable business when it serves companies' waste and sustainability obligations.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 23,
+    "deal": {
+      "made": true,
+      "amount": 10000000
+    },
+    "founders": [
+      "Ajinkya Dhariya"
+    ],
+    "category": "Sanitary waste recycling",
+    "pitch_summary": "Ajinkya Dhariya pitched a system to collect and recycle used sanitary pads. Several sharks competed to invest, and the company raised ₹1 crore.",
+    "sources": [
+      {
+        "label": "YourStory: This mechanical engineer has developed the world's first disposal and recycling system for sanitary pads (2023-02)",
+        "url": "https://yourstory.com/socialstory/2023/02/mechanical-engineer-world-first-disposal-recycling-system-sanitary-pads-shark-tank"
+      },
+      {
+        "label": "Inc42: Aman Gupta, Anupam Mittal & other sharks who backed Indian startups in 2023",
+        "url": "https://inc42.com/web-stories/sharks-who-backed-indian-startups-in-2023/"
+      },
+      {
+        "label": "Shark Tank India (official YouTube): Shark Tank India S2 Ep. 23, Padcare",
+        "url": "https://www.youtube.com/watch?v=9nY-6gwHvO0"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Entrackr: Clean-tech startup PadCare Labs raises $3 Mn led by Rainmatter (2026-02-10)",
+      "url": "https://entrackr.com/snippets/clean-tech-startup-padcare-labs-raises-3-mn-led-by-rainmatter-11094050"
+    },
+    "latest_funding": {
+      "round": "Pre-Series A (equity and debt)",
+      "amount": 272000000,
+      "date": "2026-02",
+      "source": {
+        "label": "Inc42: PadCare Raises $3 Mn to Scale Sanitary Waste Recycling Capacity (2026-02-10)",
+        "url": "https://inc42.com/buzz/padcare-raises-3-mn-to-scale-sanitary-waste-recycling-capacity/"
+      }
+    },
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "partly closed",
+    "detail": "Inc42 lists PadCare Labs among the 2023 investments of Namita Thapar and Vineeta Singh; the other sharks' participation is not confirmed.",
+    "source": {
+      "label": "Inc42 web story (2023)",
+      "url": "https://inc42.com/web-stories/sharks-who-backed-indian-startups-in-2023/"
+    }
+  },
+  "pitch_video": {
+    "youtube_id": "7q0cmPtpJRo",
+    "channel": "Shark Tank India",
+    "title": "Shark Anupam को पसंद आया \"Padcare\" का Sanitary Business | Shark Tank India Season 2 | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=7q0cmPtpJRo",
+    "upload_date": "2023-05-12"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/padcare-1000208162",
+  "media": {
+    "logo": {
+      "url": "https://www.padcarelabs.com/images/padcare-logo.png",
+      "credit": "Logo: PadCare Labs",
+      "source_url": "https://www.padcarelabs.com/",
+      "source_type": "brand_site"
+    }
+  },
+  "social": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/padcare",
+      "checked_date": "2026-10-15"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did PadCare get a deal on Shark Tank India?",
+      "a": "Yes. YourStory reported that it raised ₹1 crore on Season 2, Episode 23."
+    },
+    {
+      "q": "Has PadCare raised money since the show?",
+      "a": "Yes. It raised ₹27.2 crore in a pre-Series A round led by Rainmatter, reported in February 2026."
+    },
+    {
+      "q": "What is PadCare's revenue?",
+      "a": "It has not been publicly disclosed in the reports we track."
+    },
+    {
+      "q": "Who founded PadCare Labs?",
+      "a": "Ajinkya Dhariya."
+    }
+  ],
+  "lessons": [
+    "Selling to institutions (offices, factories, housing societies) can give a social-impact product a reliable revenue model.",
+    "A pitch that solves a widely felt but rarely discussed problem can trigger competition among investors.",
+    "Climate and impact investors became the natural next round after the show."
+  ],
+  "related_pitches": [
+    "janitri",
+    "medulance"
+  ],
+  "notes": "Ask (₹50 lakh for 2%), deal equity (4%) and the four sharks (Peyush, Namita, Vineeta, Anupam) come only from Wikipedia and blog recaps (Leisurebyte, dailyo); Wikipedia cites no outlet for the row, so they are left out. File is below the publishing bar (no ask). City (Pune) not sourced by an approved outlet."
+}

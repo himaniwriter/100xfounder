@@ -1,0 +1,83 @@
+{
+  "name": "Gear Head Motors",
+  "slug": "gear-head-motors",
+  "existing_listing_slug": null,
+  "website": "https://www.gearheadmotors.com",
+  "tagline": "Affordable electric bicycles and tricycles made in India",
+  "industry_term": "vehicles",
+  "excerpt": "Hyderabad e-cycle maker Gear Head Motors raised ₹1 crore from Aman Gupta and Peyush Bansal on Shark Tank India Season 2.",
+  "content": "<p>Gear Head Motors makes low-cost electric bicycles, with prices starting around ₹24,000 according to Business Today, and electric tricycles designed for people with disabilities. It was founded by Nikhil Gunda and V Sai Meher Krishna.</p><p>The founders rode their e-bikes onto the set in Shark Tank India Season 2, Episode 4, and several sharks tried them in the tank. Business Today reported that Aman Gupta and Peyush Bansal came on board for ₹1 crore for 7.5%, a valuation of ₹13.33 crore.</p><p>We could not find reports of the company's revenue, later funding or valuation in the outlets we track, so those are shown as not publicly disclosed. Whether the on-air deal closed on the same terms has also not been reported.</p><p>The pitch shows how a product that sharks can use on the spot, at a price point that is easy to understand, can carry a hardware business through a tough valuation discussion.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 4,
+    "deal": {
+      "made": true,
+      "amount": 10000000,
+      "equity": 7.5,
+      "implied_valuation": 133300000,
+      "sharks": [
+        "Aman Gupta",
+        "Peyush Bansal"
+      ]
+    },
+    "founders": [
+      "Nikhil Gunda",
+      "V Sai Meher Krishna"
+    ],
+    "category": "Electric bicycles",
+    "pitch_summary": "The founders demonstrated low-cost e-bikes and tricycles in the tank. Aman Gupta and Peyush Bansal invested ₹1 crore for 7.5%.",
+    "sources": [
+      {
+        "label": "Business Today: Shark Tank India 2 Episode 4, from snacks to EV bikes, sharks were all in (2023-01-06)",
+        "url": "https://www.businesstoday.in/visualstories/corporates/shark-tank-india-2-episode-4-from-snacks-to-ev-bikes-sharks-were-all-in-17298-06-01-2023"
+      },
+      {
+        "label": "Shark Tank India (official YouTube): Gear Head Motors full pitch",
+        "url": "https://www.youtube.com/watch?v=UqdH4QeSq58"
+      }
+    ]
+  },
+  "now": {
+    "status": "unknown",
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "No report confirms the deal closed on the on-air terms."
+  },
+  "pitch_video": {
+    "youtube_id": "UqdH4QeSq58",
+    "channel": "Shark Tank India",
+    "title": "Iss वाहन ne diya logo ko रोज़गार!!! | Shark Tank India | Season 2 | Gear Head Motors | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=UqdH4QeSq58",
+    "upload_date": "2023-02-07"
+  },
+  "faq": [
+    {
+      "q": "Did Gear Head Motors get a deal on Shark Tank India?",
+      "a": "Yes. Business Today reported ₹1 crore for 7.5% from Aman Gupta and Peyush Bansal."
+    },
+    {
+      "q": "How much do Gear Head e-bikes cost?",
+      "a": "Business Today reported prices starting around ₹24,000 at the time of the episode."
+    },
+    {
+      "q": "What is Gear Head Motors' revenue?",
+      "a": "It has not been publicly disclosed in the reports we track."
+    },
+    {
+      "q": "Who founded Gear Head Motors?",
+      "a": "Nikhil Gunda and V Sai Meher Krishna."
+    }
+  ],
+  "lessons": [
+    "Letting investors try the product can do more than a slide deck.",
+    "Hardware startups often accept heavier dilution than consumer brands with similar sales.",
+    "Products for underserved users, such as tricycles for people with disabilities, add an impact angle to a pitch."
+  ],
+  "related_pitches": [
+    "primebook",
+    "medulance"
+  ],
+  "notes": "Ask (₹75 lakh for 2%) comes only from Wikipedia and Leisurebyte; Wikipedia cites no outlet for the row, so it is left out. File is below the publishing bar. Deal equity conflict: Business Today 7.5% (₹13.33 cr valuation) vs Wikipedia/recaps 6.67%; Business Today used. Founders named by The Better India and Leisurebyte (Business Today names no founders). Pre-seed of Rs 6 cr from angels reported by Outlook Startup/Entrackr without a clear date; left out. City (Hyderabad) per The Better India only."
+}

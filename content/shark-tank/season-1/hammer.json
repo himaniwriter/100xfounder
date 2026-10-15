@@ -1,0 +1,104 @@
+{
+  "name": "Hammer",
+  "slug": "hammer",
+  "existing_listing_slug": null,
+  "website": "https://hammeronline.in",
+  "tagline": "Panipat audio and wearables brand: earbuds, headphones and smartwatches",
+  "industry_term": "consumer-electronics",
+  "excerpt": "Hammer, a Panipat audio and smartwatch brand, pitched on Shark Tank India Season 1, Episode 15, in the same category as shark Aman Gupta's boAt.",
+  "content": "<p>Hammer Lifestyle sells wireless earbuds, headphones, smartwatches and electric toothbrushes, mostly online. Rohit Nandwani founded it in Panipat, Haryana, and pitched it in the 15th episode of Shark Tank India, aired on 7 January 2022.</p><p>The pitch was notable because Hammer competes directly with boAt, the company of shark Aman Gupta. The Better India reported that Hammer got a ₹1 crore deal, though the equity reported for it differs between sources, so we leave the stake out.</p><p>Hammer is bootstrapped according to Inc42, and its filings show it was profitable in FY25 on revenue that grew slightly from the year before.</p>",
+  "shark_tank": {
+    "season": 1,
+    "episode": 15,
+    "air_date": "2022-01-07",
+    "deal": {
+      "made": true,
+      "amount": 10000000
+    },
+    "founders": [
+      "Rohit Nandwani"
+    ],
+    "city": "Panipat",
+    "category": "Audio and wearables",
+    "pitch_summary": "Rohit Nandwani pitched an affordable audio and smartwatch brand that competes with boAt. It left with a ₹1 crore deal.",
+    "sources": [
+      {
+        "label": "The Better India: Shark Tank India startups, where are they now (Hammer, Skippi, Get-A-Whey), 18 Feb 2023",
+        "url": "https://thebetterindia.com/311178/shark-tank-india-startups-where-are-they-now-hammer-skippi-get-a-whey"
+      },
+      {
+        "label": "SET India (official YouTube): Shark Tank India Ep 15, full episode, 7 January 2022",
+        "url": "https://www.youtube.com/watch?v=DFCZ60YbYxE"
+      },
+      {
+        "label": "Inc42 Datalabs: Hammer financials (from statutory filings, accessed 2026-10-15)",
+        "url": "https://inc42.com/company/hammer/financials/"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Inc42 Datalabs: Hammer financials (from statutory filings, accessed 2026-10-15)",
+      "url": "https://inc42.com/company/hammer/financials/"
+    },
+    "latest_revenue": {
+      "value": 388000000,
+      "fiscal_year": "FY25",
+      "label": "Total revenue",
+      "date": "2026-10-15",
+      "source": {
+        "label": "Inc42 Datalabs: Hammer financials (from statutory filings, accessed 2026-10-15)",
+        "url": "https://inc42.com/company/hammer/financials/"
+      }
+    },
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "We found no filing-based report confirming the shark investment; Inc42 lists the company as bootstrapped."
+  },
+  "pitch_video": {
+    "youtube_id": "yusTHTneDXI",
+    "channel": "Shark Tank India",
+    "title": "\"Hammer\" को लेके Aman और Anupam में क्यों छिड़ी War? | Shark Tank India Season 1 | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=yusTHTneDXI",
+    "upload_date": "2023-08-03"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/it-s-time-to-change-1000153121",
+  "media": {
+    "gallery": [
+      {
+        "url": "https://hammeronline.in/cdn/shop/files/Hammer_Bluetooth_Calling_Smartwatch_in_India.jpg?v=1654579569",
+        "alt": "Hammer Bluetooth calling smartwatch",
+        "credit": "Image: Hammer",
+        "source_url": "https://hammeronline.in/",
+        "source_type": "brand_site"
+      }
+    ]
+  },
+  "where_to_buy": [
+    {
+      "label": "Official store",
+      "url": "https://hammeronline.in"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did Hammer get a deal on Shark Tank India?",
+      "a": "Yes, a ₹1 crore deal was reported. Sources disagree on the stake."
+    },
+    {
+      "q": "Is Hammer profitable?",
+      "a": "Inc42's filing data shows a small profit in FY25 on total revenue of about ₹38.8 crore."
+    }
+  ],
+  "lessons": [
+    "Our analysis: pitching to a direct competitor is risky, but the clash itself made the episode memorable and drew attention to the brand.",
+    "Our analysis: staying bootstrapped and profitable is a valid path even after a TV deal."
+  ],
+  "related_pitches": [
+    "bummer"
+  ],
+  "notes": "Ask (₹30 lakh for 3%) and final stake/sharks (₹1 Cr for 40% from Aman Gupta per blogs; 15% per The Better India; Quora claims 25%) are not confirmed by a credible outlet, so ask and equity are left out. Inc42 Datalabs says 'Bootstrapped' and founded 2018 (blogs say 2019)."
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Nuutjob",
+  "slug": "nuutjob",
+  "existing_listing_slug": null,
+  "website": "https://www.nuutjob.com",
+  "tagline": "Ahmedabad brand of intimate hygiene products for men",
+  "industry_term": "personal-healthcare",
+  "excerpt": "Nuutjob, a male intimate hygiene brand founded by Ananya and Anushree Maloo, won ₹25 lakh for 20% on Shark Tank India Season 1.",
+  "content": "<p>Nuutjob sells intimate hygiene products for men, including an intimate wash, a deodoriser and a moisturiser. Ananya and Anushree Maloo from Ahmedabad bootstrapped it and launched online in July 2021, then pitched in the tenth episode of Shark Tank India, aired on 31 December 2021.</p><p>Two women pitching men's intimate care caught the sharks off guard, and the founders left with a deal of ₹25 lakh for 20%.</p><p>Inc42's filing data shows a small, profitable business in FY25 and lists it as bootstrapped.</p>",
+  "shark_tank": {
+    "season": 1,
+    "episode": 10,
+    "air_date": "2021-12-31",
+    "deal": {
+      "made": true,
+      "amount": 2500000,
+      "equity": 20,
+      "implied_valuation": 12500000
+    },
+    "founders": [
+      "Ananya Maloo",
+      "Anushree Maloo"
+    ],
+    "city": "Ahmedabad",
+    "category": "Men's intimate care",
+    "pitch_summary": "The Maloo sisters pitched intimate hygiene products for men, a category few brands addressed. They won ₹25 lakh for 20%.",
+    "sources": [
+      {
+        "label": "The Better India: Meet the Sisters Whose Solution For Male Hygiene Won Rs 25 Lakh On Shark Tank India, 18 Feb 2022",
+        "url": "https://thebetterindia.com/276525/nuutjob-sharktank-male-intimate-hygiene-anushree-ananya-maloo-woman-entrepreneurs/"
+      },
+      {
+        "label": "SET India (official YouTube): Shark Tank India Ep 10, full episode, 31 December 2021",
+        "url": "https://www.youtube.com/watch?v=LAKi48YSWqU"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Inc42 Datalabs: Nuutjob financials (from statutory filings, accessed 2026-10-15)",
+      "url": "https://inc42.com/company/nuutjob/financials/"
+    },
+    "latest_revenue": {
+      "value": 20000000,
+      "fiscal_year": "FY25",
+      "label": "Total revenue",
+      "date": "2026-10-15",
+      "source": {
+        "label": "Inc42 Datalabs: Nuutjob financials (from statutory filings, accessed 2026-10-15)",
+        "url": "https://inc42.com/company/nuutjob/financials/"
+      }
+    },
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "Inc42's filing-based profile lists Nuutjob as bootstrapped, so it is unclear whether the shark money was invested."
+  },
+  "pitch_video": {
+    "youtube_id": "lB5MBYnw788",
+    "channel": "SET India",
+    "title": "\"Nuutjob\" से Sharks शरमाए, पर हुआ Offers में Competition | Shark Tank India | Pitches",
+    "url": "https://www.youtube.com/watch?v=lB5MBYnw788",
+    "upload_date": "2022-02-09"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/passion-about-entrepreneurship-1000152189",
+  "where_to_buy": [
+    {
+      "label": "Official store",
+      "url": "https://www.nuutjob.com"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did Nuutjob get a deal on Shark Tank India?",
+      "a": "Yes, ₹25 lakh for 20% in Season 1, Episode 10."
+    },
+    {
+      "q": "Is Nuutjob still in business?",
+      "a": "Yes. It filed accounts for FY25, showing a small profit."
+    }
+  ],
+  "lessons": [
+    "Our analysis: an under-served niche plus a surprising founder story can win attention even with a small revenue base."
+  ],
+  "related_pitches": [
+    "peeschute",
+    "bummer"
+  ],
+  "notes": "Ask (₹25 lakh for 5%) and sharks (Aman Gupta, Namita Thapar, Peyush Bansal per blogs) are not confirmed by a credible outlet, so they are left out. Possible conflict: Inc42 Datalabs lists the company as bootstrapped."
+}

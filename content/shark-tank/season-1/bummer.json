@@ -1,0 +1,142 @@
+{
+  "name": "Bummer",
+  "slug": "bummer",
+  "existing_listing_slug": null,
+  "website": "https://bummer.in",
+  "tagline": "Ahmedabad innerwear and loungewear label built on micro-modal fabric",
+  "industry_term": "fashion",
+  "excerpt": "Bummer is an Ahmedabad innerwear brand that won backing from Aman Gupta and Namita Thapar in the fourth episode of Shark Tank India Season 1.",
+  "content": "<p>Bummer makes underwear and loungewear for young buyers, using micro-modal fabric rather than plain cotton. Founder Sulay Lavsi brought the Ahmedabad brand to the fourth episode of Shark Tank India's first season, which aired on 23 December 2021.</p><p>Two sharks, Aman Gupta of boAt and Namita Thapar of Emcure Pharmaceuticals, agreed to put in ₹75 lakh together for a 7.5% stake. Bummer had earlier raised a small seed cheque from Singapore's Beenext, so the show money was its second round.</p><p>Filings reported by Entrackr in March 2024 show a ₹9.25 crore pre-Series A1 round led by Gruhas Collective Consumer Fund, with Fluid Ventures joining, and name the two sharks among earlier investors. Revenue has grown since the show, but the company is still loss-making according to Inc42's filing data for FY25.</p><p>The case shows what a TV deal can and cannot do: it brought distribution and attention quickly, while profitability is still a work in progress.</p>",
+  "shark_tank": {
+    "season": 1,
+    "episode": 4,
+    "air_date": "2021-12-23",
+    "deal": {
+      "made": true,
+      "amount": 7500000,
+      "equity": 7.5,
+      "implied_valuation": 100000000,
+      "sharks": [
+        "Aman Gupta",
+        "Namita Thapar"
+      ]
+    },
+    "founders": [
+      "Sulay Lavsi"
+    ],
+    "city": "Ahmedabad",
+    "category": "Innerwear",
+    "pitch_summary": "Sulay Lavsi pitched a micro-modal innerwear brand aimed at buyers aged 18 to 34. Aman Gupta and Namita Thapar jointly backed it.",
+    "sources": [
+      {
+        "label": "Entrepreneur India: Shark Tank India Infuses INR 75 Lakh Into Bummer, 29 Dec 2021",
+        "url": "https://india.entrepreneur.com/finance/shark-tank-india-infuses-inr-75-lakh-into-bummer/410563"
+      },
+      {
+        "label": "SET India (official YouTube): Shark Tank India Ep 4, full episode, 23 December 2021",
+        "url": "https://www.youtube.com/watch?v=8tR8LAsjJHY"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Inc42 Datalabs: Bummer financials (from statutory filings, accessed 2026-10-15)",
+      "url": "https://inc42.com/company/bummer/financials/"
+    },
+    "latest_revenue": {
+      "value": 107000000,
+      "fiscal_year": "FY25",
+      "label": "Total revenue",
+      "date": "2026-10-15",
+      "source": {
+        "label": "Inc42 Datalabs: Bummer financials (from statutory filings, accessed 2026-10-15)",
+        "url": "https://inc42.com/company/bummer/financials/"
+      }
+    },
+    "latest_funding": {
+      "round": "Pre-Series A1",
+      "amount": 92500000,
+      "date": "2024-03",
+      "source": {
+        "label": "Entrackr: Nikhil Kamath-backed Gruhas Collective invests in Shark Tank fame Bummer, 8 Mar 2024",
+        "url": "https://entrackr.com/2024/03/exclusive-nikhil-kamath-backed-gruhas-invests-in-shark-tank-fame-bummer/"
+      }
+    },
+    "notable_since_show": [
+      {
+        "date": "2024-03",
+        "event": "Filings showed revenue from operations of ₹7.83 crore for FY23, about three times the previous year, alongside a wider loss.",
+        "source": {
+          "label": "Entrackr: Nikhil Kamath-backed Gruhas Collective invests in Shark Tank fame Bummer, 8 Mar 2024",
+          "url": "https://entrackr.com/2024/03/exclusive-nikhil-kamath-backed-gruhas-invests-in-shark-tank-fame-bummer/"
+        }
+      },
+      {
+        "date": "2024-03",
+        "event": "Raised ₹9.25 crore led by Gruhas Collective Consumer Fund, with Fluid Ventures Fund participating.",
+        "source": {
+          "label": "Entrackr: Nikhil Kamath-backed Gruhas Collective invests in Shark Tank fame Bummer, 8 Mar 2024",
+          "url": "https://entrackr.com/2024/03/exclusive-nikhil-kamath-backed-gruhas-invests-in-shark-tank-fame-bummer/"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "closed",
+    "detail": "Entrackr's 2024 report on Bummer's filings lists the ₹75 lakh from Aman Gupta and Namita Thapar among money already raised.",
+    "source": {
+      "label": "Entrackr: Nikhil Kamath-backed Gruhas Collective invests in Shark Tank fame Bummer, 8 Mar 2024",
+      "url": "https://entrackr.com/2024/03/exclusive-nikhil-kamath-backed-gruhas-invests-in-shark-tank-fame-bummer/"
+    }
+  },
+  "pitch_video": {
+    "youtube_id": "-YKPurvIpuY",
+    "channel": "SET India",
+    "title": "\"Bummer\" पे Sharks हुए Bummed Out | Shark Tank India | Pitches",
+    "url": "https://www.youtube.com/watch?v=-YKPurvIpuY",
+    "upload_date": "2022-02-04"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/dplnk?schema=sony://asset/1000151108",
+  "media": {
+    "gallery": [
+      {
+        "url": "https://bummer.in/cdn/shop/files/Yellow.png?v=1759730110",
+        "alt": "Bummer website share image",
+        "credit": "Image: Bummer",
+        "source_url": "https://bummer.in/",
+        "source_type": "brand_site"
+      }
+    ]
+  },
+  "where_to_buy": [
+    {
+      "label": "Official store",
+      "url": "https://bummer.in"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did Bummer get a deal on Shark Tank India?",
+      "a": "Yes. Aman Gupta and Namita Thapar jointly offered ₹75 lakh for 7.5% in Season 1, Episode 4, and later filings list them as investors."
+    },
+    {
+      "q": "Is Bummer still in business?",
+      "a": "Yes. It filed accounts for FY25 and sells through its own website."
+    },
+    {
+      "q": "What is Bummer's revenue?",
+      "a": "Inc42's filing data puts total revenue at about ₹10.7 crore in FY25, with a net loss."
+    }
+  ],
+  "lessons": [
+    "Our analysis: a clear material story (micro-modal instead of cotton) gave the sharks something concrete to back beyond branding.",
+    "Our analysis: a TV deal sped up distribution, but later filings show growth still needed outside capital and has not yet turned into profit."
+  ],
+  "related_pitches": [
+    "heart-up-my-sleeves",
+    "nuutjob"
+  ],
+  "notes": "Original ask (reported elsewhere as ₹75 lakh for 4%) appears only on Wikipedia and blogs (Shipway); Wikipedia's S1 table cites no source, so ask_amount/ask_equity are left out. Valuation ~₹46.5 Cr in Entrackr is TheKredible's estimate, so it is not used. Episode 4 is confirmed by SET India's synopsis ('micro modal made underwear brand')."
+}

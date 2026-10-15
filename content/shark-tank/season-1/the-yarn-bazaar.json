@@ -1,0 +1,104 @@
+{
+  "name": "The Yarn Bazaar",
+  "slug": "the-yarn-bazaar",
+  "existing_listing_slug": null,
+  "website": "https://www.theyarnbazaar.ai",
+  "tagline": "Managed B2B marketplace for buying and selling yarn",
+  "industry_term": "marketplace",
+  "excerpt": "The Yarn Bazaar, a B2B yarn-trading marketplace, raised ₹1 crore from four sharks on Shark Tank India Season 1.",
+  "content": "<p>The Yarn Bazaar runs a managed marketplace where textile businesses buy and sell yarn and check live prices and market trends. Founder and CEO Pratik Gadia pitched it on Shark Tank India's first season, asking for ₹50 lakh for 2%.</p><p>Four sharks, Peyush Bansal, Ashneer Grover, Anupam Mittal and Aman Gupta, came together for a ₹1 crore deal, which SET India called one of the rarest deals on the show.</p><p>Inc42's records show a further round in June 2023. Filings show revenue growing quickly in FY25, with a narrower loss.</p>",
+  "shark_tank": {
+    "season": 1,
+    "ask_amount": 5000000,
+    "ask_equity": 2,
+    "ask_valuation": 250000000,
+    "deal": {
+      "made": true,
+      "amount": 10000000,
+      "sharks": [
+        "Peyush Bansal",
+        "Ashneer Grover",
+        "Anupam Mittal",
+        "Aman Gupta"
+      ]
+    },
+    "founders": [
+      "Pratik Gadia"
+    ],
+    "category": "B2B yarn marketplace",
+    "pitch_summary": "Pratik Gadia pitched a marketplace to organise India's fragmented yarn trade and asked for ₹50 lakh for 2%. Four sharks joined a ₹1 crore deal.",
+    "sources": [
+      {
+        "label": "Textile Association (India): The Yarn Bazaar bags 1 Cr at Shark Tank India, 14 Jan 2022",
+        "url": "https://textileassociationindia.org/post/the-yarn-bazaar-bags-1-cr-at-shark-tank-india"
+      },
+      {
+        "label": "SET India (official YouTube): 'The Yarn Bazaar' pitch clip, 'demands 50 lakhs in return for 2% equity', 6 Feb 2023",
+        "url": "https://www.youtube.com/watch?v=b0OLZSNBZBQ"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Inc42 Datalabs: The Yarn Bazaar financials (from statutory filings, accessed 2026-10-15)",
+      "url": "https://inc42.com/company/the-yarn-bazaar/financials/"
+    },
+    "latest_revenue": {
+      "value": 633000000,
+      "fiscal_year": "FY25",
+      "label": "Total revenue",
+      "date": "2026-10-15",
+      "source": {
+        "label": "Inc42 Datalabs: The Yarn Bazaar financials (from statutory filings, accessed 2026-10-15)",
+        "url": "https://inc42.com/company/the-yarn-bazaar/financials/"
+      }
+    },
+    "notable_since_show": [
+      {
+        "date": "2023-06",
+        "event": "Raised about $1.83 million in an early-stage round with Equanimity Investments and others.",
+        "source": {
+          "label": "Inc42 Datalabs: The Yarn Bazaar funding (accessed 2026-10-15)",
+          "url": "https://inc42.com/company/the-yarn-bazaar/funding/"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "We found no filing-based report naming the sharks as shareholders."
+  },
+  "pitch_video": {
+    "youtube_id": "99_bHykXJYk",
+    "channel": "SET India",
+    "title": "Final Offer | 'The Yarn Bazaar' के Idea को मिला चार Sharks का Support | Shark Tank India | Pitches",
+    "url": "https://www.youtube.com/watch?v=99_bHykXJYk",
+    "upload_date": "2023-03-17"
+  },
+  "where_to_buy": [
+    {
+      "label": "Official site",
+      "url": "https://www.theyarnbazaar.ai"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did The Yarn Bazaar get a deal on Shark Tank India?",
+      "a": "Yes. Four sharks joined a ₹1 crore deal in Season 1."
+    },
+    {
+      "q": "What is The Yarn Bazaar's revenue?",
+      "a": "Inc42's filing data shows total revenue of about ₹63.3 crore in FY25, with a net loss."
+    }
+  ],
+  "lessons": [
+    "Our analysis: B2B marketplaces in unglamorous trades can grow revenue fast because order values are large.",
+    "Our analysis: a multi-shark deal signals broad conviction, which helps in later fundraising."
+  ],
+  "related_pitches": [
+    "bamboo-india"
+  ],
+  "notes": "BELOW PUBLISHING BAR: episode (13, 5 Jan 2022) appears only on Wikipedia; SET India's ep 13 synopsis does not name the brand. Deal equity (10%) appears only on Wikipedia, so it is left out. A ₹15 Cr pre-Series A (Outlook Startup, Jun 2023) could not be fetched; Inc42 Datalabs lists $1.83M on 18-19 Jun 2023. The pitch source is the Textile Association of India post (an industry body), not a major outlet."
+}

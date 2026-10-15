@@ -1,0 +1,132 @@
+{
+  "name": "Rubans",
+  "slug": "rubans",
+  "existing_listing_slug": null,
+  "website": "https://rubans.in",
+  "tagline": "Fashion jewellery brand sold online and in stores",
+  "industry_term": "fashion",
+  "excerpt": "Fashion jewellery brand Rubans took an equity-plus-debt deal from three sharks in Shark Tank India Season 2; in 2025 Ananta Capital bought a majority stake.",
+  "content": "<p>Rubans sells trend-led fashion jewellery such as earrings, necklaces and bracelets, mainly through online marketplaces, alongside its own stores. It was founded by Chinu Kala, who started with a single mall kiosk, and is run with Amit Kala.</p><p>In Shark Tank India Season 2, Episode 48, the founders asked for ₹1.5 crore for 0.5%. IANS reported that Namita Thapar, Aman Gupta and Vineeta Singh offered ₹1 crore for 1% plus ₹50 lakh of debt at 12% interest, and the founders accepted. Anupam Mittal objected to the debt portion.</p><p>In August 2025, the private equity firm Ananta Capital announced that it had acquired a majority stake in Fonte Fashions India, the company behind Rubans, and said the founders would continue to lead the brand. Rubans' revenue has not been reported in the outlets we track.</p><p>The Rubans story shows a founder-built brand moving from a TV deal to a control sale within about two and a half years.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 48,
+    "ask_amount": 15000000,
+    "ask_equity": 0.5,
+    "ask_valuation": 3000000000,
+    "deal": {
+      "made": true,
+      "amount": 10000000,
+      "equity": 1,
+      "implied_valuation": 1000000000,
+      "sharks": [
+        "Namita Thapar",
+        "Aman Gupta",
+        "Vineeta Singh"
+      ],
+      "terms": "Plus ₹50 lakh debt at 12% interest"
+    },
+    "founders": [
+      "Chinu Kala",
+      "Amit Kala"
+    ],
+    "category": "Fashion jewellery",
+    "pitch_summary": "Chinu Kala and Amit Kala asked ₹1.5 crore for 0.5%. Three sharks offered ₹1 crore for 1% plus ₹50 lakh of debt at 12%, and the founders accepted.",
+    "sources": [
+      {
+        "label": "IANS Life: Shark Tank India 2, jewellery brand co-owner impresses judges with her story of struggle",
+        "url": "https://ianslife.in/entertainment/shark-tank-india-2-jewellery-brand-co-owner-impresses-judges-her-story-struggle"
+      },
+      {
+        "label": "IndiaRetailing: Rubans raises funding on Shark Tank India",
+        "url": "https://www.indiaretailing.com/?p=159375"
+      },
+      {
+        "label": "Shark Tank India (official YouTube): Shark Tank India S2 Ep. 48, Rubans",
+        "url": "https://www.youtube.com/watch?v=Ope15rmoUOM"
+      },
+      {
+        "label": "Sony LIV: Shark Tank India Season 2 Episode 48",
+        "url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/pitchers-investments-and-businesses-1000212659"
+      }
+    ]
+  },
+  "now": {
+    "status": "acquired",
+    "status_source": {
+      "label": "The Week (PTI wire): Ananta Capital acquires majority stake in Rubans (2025-08-11)",
+      "url": "https://www.theweek.in/wire-updates/business/2025/08/11/dcm88-ananta-capital.html"
+    },
+    "notable_since_show": [
+      {
+        "date": "2025-08",
+        "event": "Ananta Capital acquired a majority stake in Fonte Fashions India, Rubans' parent; the founders continue to lead the brand.",
+        "source": {
+          "label": "The Week (PTI wire) (2025-08-11)",
+          "url": "https://www.theweek.in/wire-updates/business/2025/08/11/dcm88-ananta-capital.html"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "No report confirms the sharks' equity or debt was completed."
+  },
+  "pitch_video": {
+    "youtube_id": "4JUlHBjoTBE",
+    "channel": "Shark Tank India",
+    "title": "Namita ने \"Rubans\" Brand के Earrings पहन के बोला \"I Like It\" | Shark Tank India Season 2 | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=4JUlHBjoTBE",
+    "upload_date": "2023-07-16"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/pitchers-investments-and-businesses-1000212659",
+  "media": {
+    "logo": {
+      "url": "https://rubans.in/cdn/shop/files/website_banner_f959ab62-9b47-43fd-8931-81ab5c11dae3.png?v=1738781721",
+      "credit": "Logo: Rubans",
+      "source_url": "https://rubans.in/",
+      "source_type": "brand_site"
+    }
+  },
+  "social": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/rubans.in",
+      "checked_date": "2026-10-15"
+    }
+  ],
+  "where_to_buy": [
+    {
+      "label": "Official store",
+      "url": "https://rubans.in"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did Rubans get a deal on Shark Tank India?",
+      "a": "Yes. Namita Thapar, Aman Gupta and Vineeta Singh offered ₹1 crore for 1% plus ₹50 lakh of debt, and the founders accepted."
+    },
+    {
+      "q": "Who owns Rubans now?",
+      "a": "Ananta Capital acquired a majority stake in Rubans' parent company in August 2025; the founders continue to run the brand."
+    },
+    {
+      "q": "What is Rubans' revenue?",
+      "a": "It has not been reported in the outlets we track."
+    },
+    {
+      "q": "Where can I buy Rubans jewellery?",
+      "a": "On the brand's website, marketplaces and its stores."
+    }
+  ],
+  "lessons": [
+    "Debt in a Shark Tank deal lowers dilution but adds a repayment the business must cover from cash flow.",
+    "A founder story and a product sharks can try on the spot make a consumer pitch memorable.",
+    "Visibility from the show can be a stepping stone to a strategic or private-equity sale."
+  ],
+  "related_pitches": [
+    "snitch",
+    "paradyes"
+  ],
+  "notes": "Episode 48 per official YouTube and Sony LIV (Wikipedia's table groups it as 45). Ananta deal is a majority stake, so status is 'acquired'. Some outlets describe the Shark Tank outcome as ₹1.5 cr total (equity plus debt). City not sourced."
+}

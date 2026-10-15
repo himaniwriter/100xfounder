@@ -1,0 +1,154 @@
+{
+  "name": "Snitch",
+  "slug": "snitch",
+  "existing_listing_slug": null,
+  "website": "https://www.snitch.co.in",
+  "tagline": "Fast-fashion menswear brand, online and in stores",
+  "industry_term": "fashion",
+  "excerpt": "Menswear brand Snitch won an all-shark deal on Shark Tank India Season 2 and has since grown into one of India's larger D2C fashion labels.",
+  "content": "<p>Snitch sells trend-led menswear such as shirts, trousers and jackets, first online and now through its own stores. It was founded by Siddharth Dungarwal.</p><p>On Shark Tank India Season 2, Episode 20, which aired on 27 January 2023, Dungarwal asked for ₹1.5 crore for 0.5%, valuing Snitch at ₹300 crore. The sharks pushed back on the valuation, and he accepted an all-shark deal of ₹1.5 crore for 1.5%, which Entrackr reported as a ₹100 crore valuation.</p><p>Since then Snitch has raised much larger rounds. Inc42 reported in June 2025 that, according to its filing and a company statement, Snitch raised ₹338.4 crore in Series B funding led by 360 ONE Asset. In April 2026 the founder told Inc42 that operating revenue reached ₹900 crore in FY26, up about 80%; those numbers were unaudited. Inc42 also reported 115 stores at that time.</p><p>Snitch is one of the clearest examples of a Season 2 founder who accepted a lower on-air valuation and went on to raise at far higher ones.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 20,
+    "air_date": "2023-01-27",
+    "ask_amount": 15000000,
+    "ask_equity": 0.5,
+    "ask_valuation": 3000000000,
+    "deal": {
+      "made": true,
+      "amount": 15000000,
+      "equity": 1.5,
+      "implied_valuation": 1000000000,
+      "sharks": [
+        "Anupam Mittal",
+        "Aman Gupta",
+        "Namita Thapar",
+        "Vineeta Singh",
+        "Peyush Bansal",
+        "Amit Jain"
+      ],
+      "terms": "All-shark deal"
+    },
+    "founders": [
+      "Siddharth Dungarwal"
+    ],
+    "category": "Menswear",
+    "pitch_summary": "Siddharth Dungarwal pitched his fast-fashion menswear brand at a ₹300 crore valuation. The sharks valued it lower, and he took an all-shark deal of ₹1.5 crore for 1.5%.",
+    "sources": [
+      {
+        "label": "Shark Tank India (official YouTube): 'Snitch' full pitch, ask of Rs 1.5 crore for 0.5%",
+        "url": "https://www.youtube.com/watch?v=BpG42nDJCio"
+      },
+      {
+        "label": "SET India (official YouTube): Shark Tank India S2 Ep 20 teaser, 27 Jan 2023",
+        "url": "https://www.youtube.com/watch?v=Z5ehxbOr-Lk"
+      },
+      {
+        "label": "Sony LIV: An All Sharks Deal For Snitch",
+        "url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/an-all-sharks-deal-for-snitch-1000207428"
+      },
+      {
+        "label": "Entrackr: Snitch raises $40 Mn in Series B round (2025-06-02)",
+        "url": "https://entrackr.com/snippets/snitch-raises-40-mn-in-series-b-round-to-enter-quick-commerce-9327509"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Inc42: D2C Brand Snitch's FY26 Revenue Surges 80% To ₹900 Cr (2026-04-10)",
+      "url": "https://inc42.com/buzz/d2c-brand-snitchs-fy26-revenue-surges-80-to-%E2%82%B9900-cr/"
+    },
+    "latest_revenue": {
+      "value": 9000000000,
+      "fiscal_year": "FY26",
+      "label": "Operating revenue (unaudited, stated by the company)",
+      "date": "2026-04-10",
+      "source": {
+        "label": "Inc42 (2026-04-10)",
+        "url": "https://inc42.com/buzz/d2c-brand-snitchs-fy26-revenue-surges-80-to-%E2%82%B9900-cr/"
+      }
+    },
+    "latest_funding": {
+      "round": "Series B",
+      "amount": 3384000000,
+      "date": "2025-06",
+      "source": {
+        "label": "Inc42: D2C Fashion Brand Snitch Raises $40 Mn (MCA filing and company statement, 2025-06-02)",
+        "url": "https://inc42.com/buzz/d2c-apparel-brand-snitch-to-raise-inr-280-cr-from-360-asset-management-fund-others"
+      }
+    },
+    "notable_since_show": [
+      {
+        "date": "2026-04",
+        "event": "Inc42 reported 115 Snitch stores across India.",
+        "source": {
+          "label": "Inc42 (2026-04-10)",
+          "url": "https://inc42.com/buzz/d2c-brand-snitchs-fy26-revenue-surges-80-to-%E2%82%B9900-cr/"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "Entrackr's 2025 report says Snitch raised ₹1.5 crore on the show, but no filing confirming each shark's shareholding was found."
+  },
+  "pitch_video": {
+    "youtube_id": "BpG42nDJCio",
+    "channel": "Shark Tank India",
+    "title": "'Snitch' ने किया सभी Sharks को Invest करने पर मजबूर | Shark Tank India Season 2 | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=BpG42nDJCio",
+    "upload_date": "2023-06-28"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/an-all-sharks-deal-for-snitch-1000207428",
+  "media": {
+    "logo": {
+      "url": "https://www.snitch.co.in/cdn/shop/files/Untitled_design_cd2f2fb7-786d-4b7e-ac14-0c0a52ee1977.png?v=1721457636",
+      "credit": "Logo: Snitch",
+      "source_url": "https://www.snitch.co.in/",
+      "source_type": "brand_site"
+    }
+  },
+  "social": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/snitch.co.in",
+      "checked_date": "2026-10-15"
+    }
+  ],
+  "where_to_buy": [
+    {
+      "label": "Official store",
+      "url": "https://www.snitch.co.in"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did Snitch get a deal on Shark Tank India?",
+      "a": "Yes. It took an all-shark deal of ₹1.5 crore for 1.5% in Season 2, Episode 20."
+    },
+    {
+      "q": "What is Snitch's revenue now?",
+      "a": "The founder told Inc42 that FY26 operating revenue was ₹900 crore (unaudited)."
+    },
+    {
+      "q": "Has Snitch raised money since Shark Tank?",
+      "a": "Yes. Inc42 reported a ₹338.4 crore Series B led by 360 ONE Asset in 2025."
+    },
+    {
+      "q": "Where can I buy Snitch clothes?",
+      "a": "On the brand's website and in its own stores."
+    }
+  ],
+  "lessons": [
+    "Accepting a lower valuation for a full panel of investors brought visibility the brand later turned into larger rounds.",
+    "Fast product turnover is the core of a fast-fashion pitch; sharks probe inventory and margins.",
+    "Company-stated revenue should be read alongside audited filings when they appear."
+  ],
+  "related_pitches": [
+    "rubans",
+    "flatheads"
+  ],
+  "notes": "Sharks: Entrackr and Inc42 list six names (including Amit Jain) for the all-shark deal, although five sharks sit per episode; verify against the episode before publishing. FY26 revenue is unaudited and company-stated. Series B: Inc42's original filing-based figure was ₹278.93 cr; updated to ₹338.4 cr from a company statement. City not sourced."
+}

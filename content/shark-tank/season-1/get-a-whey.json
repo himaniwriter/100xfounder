@@ -1,0 +1,100 @@
+{
+  "name": "Get-A-Whey",
+  "slug": "get-a-whey",
+  "existing_listing_slug": null,
+  "tagline": "High-protein, low-calorie ice cream from Mumbai, now trading as Get-A-Way",
+  "industry_term": "food-drinks",
+  "excerpt": "Get-A-Whey pitched guilt-free ice cream on Shark Tank India Season 1, passed on the shark deal and was later acquired by Biryani By Kilo's parent.",
+  "content": "<p>Get-A-Whey (now Get-A-Way) makes low-calorie, high-protein frozen desserts such as ice creams, popsicles and kulfis. It was founded by Jash, Jimmy and Pashmi Shah, and pitched in the 21st episode of Shark Tank India's first season, aired on 17 January 2022, asking for ₹1 crore for 8%.</p><p>The pitch ended with a ₹1 crore offer on air, but the money did not come from the sharks: a 2023 analysis of company filings found that Get-A-Whey was one of six start-ups that passed on its Shark Tank deal and raised at a higher valuation elsewhere.</p><p>In 2022, Biryani By Kilo took a majority stake for $2 million. The brand kept operating on its own while using the buyer's cloud-kitchen network.</p>",
+  "shark_tank": {
+    "season": 1,
+    "episode": 21,
+    "air_date": "2022-01-17",
+    "ask_amount": 10000000,
+    "ask_equity": 8,
+    "ask_valuation": 125000000,
+    "deal": {
+      "made": true,
+      "amount": 10000000,
+      "terms": "Offer accepted on air; the founders later passed on it (see deal_closed)"
+    },
+    "founders": [
+      "Jash Shah",
+      "Jimmy Shah",
+      "Pashmi Shah"
+    ],
+    "category": "Frozen desserts",
+    "pitch_summary": "The founders pitched high-protein ice cream for health-conscious buyers and asked for ₹1 crore for 8%. A ₹1 crore deal was struck on air.",
+    "sources": [
+      {
+        "label": "SET India (official YouTube): Get-A-Whey pitch clip, 'ask for Rs. 1 crore for 8% of equity', Episode 21, 21 Dec 2022",
+        "url": "https://www.youtube.com/watch?v=hAmHOlSTIkY"
+      },
+      {
+        "label": "SET India (official YouTube): Shark Tank India Ep 21, full episode, 17 January 2022",
+        "url": "https://www.youtube.com/watch?v=Y_GaJwGKOZ4"
+      },
+      {
+        "label": "Business Standard: How have winners of Shark Tank India 1 fared so far, 1 Jan 2023",
+        "url": "https://www.business-standard.com/article/companies/business-bites-how-have-winners-of-shark-tank-india-1-fared-so-far-123010100470_1.html"
+      },
+      {
+        "label": "Inc42: Biryani By Kilo Acquires Frozen Dessert Startup Get-A-Way, 6 Dec 2022",
+        "url": "https://inc42.com/buzz/biryani-by-kilo-acquires-frozen-dessert-startup-get-a-way/"
+      }
+    ]
+  },
+  "now": {
+    "status": "acquired",
+    "status_source": {
+      "label": "Inc42: Biryani By Kilo Acquires Frozen Dessert Startup Get-A-Way, 6 Dec 2022",
+      "url": "https://inc42.com/buzz/biryani-by-kilo-acquires-frozen-dessert-startup-get-a-way/"
+    },
+    "notable_since_show": [
+      {
+        "date": "2022-12",
+        "event": "Biryani By Kilo took a majority stake for $2 million; the founders kept a minority stake and the brand runs independently.",
+        "source": {
+          "label": "Inc42: Biryani By Kilo Acquires Frozen Dessert Startup Get-A-Way, 6 Dec 2022",
+          "url": "https://inc42.com/buzz/biryani-by-kilo-acquires-frozen-dessert-startup-get-a-way/"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "not closed",
+    "detail": "A PrivateCircle study of MCA filings, reported by The Federal, lists Get a Whey among six start-ups that seemingly passed on the shark deal to raise at a higher valuation elsewhere.",
+    "source": {
+      "label": "The Federal: Sharks of Season 1 invest in 27 out of 65 committed deals (PrivateCircle analysis of MCA filings), 19 Jul 2023",
+      "url": "https://thefederal.com/business/shark-tank-india-sharks-of-season-1-invest-in-27-out-of-65-committed-deals"
+    }
+  },
+  "pitch_video": {
+    "youtube_id": "hAmHOlSTIkY",
+    "channel": "SET India",
+    "title": "Sharks ने दिखाया \"Get-A-Whey\" Ice Cream Company में अपना Interest | Shark Tank India",
+    "url": "https://www.youtube.com/watch?v=hAmHOlSTIkY",
+    "upload_date": "2022-12-21"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/game-changing-ideas-1000154911",
+  "faq": [
+    {
+      "q": "Did Get-A-Whey get a deal on Shark Tank India?",
+      "a": "A ₹1 crore deal was agreed on air, but filing data suggests the founders later passed on it."
+    },
+    {
+      "q": "Who owns Get-A-Whey now?",
+      "a": "Biryani By Kilo's parent, Sky Gate Hospitality, took a majority stake in 2022."
+    }
+  ],
+  "lessons": [
+    "Our analysis: an on-air deal is an option, not an obligation; the publicity alone can attract better terms.",
+    "Our analysis: a strategic buyer with distribution can be worth more to a food brand than a financial investor."
+  ],
+  "related_pitches": [
+    "skippi-ice-pops",
+    "beyond-snack"
+  ],
+  "notes": "Deal equity and sharks are not confirmed by a credible outlet: blogs/Outlook Startup say ₹1 Cr for 15% (Aman, Ashneer, Vineeta; Outlook fetch blocked); The Better India 2023 says 40%, which appears swapped with Hammer. BS 2023 says the brand 'had raised Rs 1 crore in Shark Tank India', which conflicts with The Federal/PrivateCircle (passed on the deal). Acquisition amount is in USD only, so latest_funding is left out. Website not confirmed."
+}
