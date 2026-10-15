@@ -1,0 +1,156 @@
+{
+ "slug": "veriff",
+ "website": "https://www.veriff.com/",
+ "excerpt": "Veriff is an Estonian identity verification company. What it does, its published per-verification pricing, funding history and alternatives.",
+ "content": "<p>Veriff is an identity verification company founded in Estonia in 2015. Businesses use it to check that a new user is a real person holding a genuine ID document, typically when opening an account, to meet know-your-customer (KYC) and anti-money-laundering rules or to stop fraud. The user takes a photo of their ID and a selfie or short video, and Veriff's system decides whether to approve, decline or send the case for review. TechCrunch described its distinguishing feature as AI-powered video verification, and SecurityWeek reported that it checks more than 1,000 data points.</p><p>Veriff raised a $69 million Series B in April 2021. In January 2022 it raised a $100 million Series C co-led by Tiger Global and Alkeon, with existing investors IVP and Accel, which TechCrunch reported valued it at $1.5 billion and brought total funding to $200 million. At the time it had offices in the US, UK, Spain and Estonia and more than 360 employees.</p><p>Unlike many verification vendors, Veriff publishes self-serve prices. Its pricing page lists three plans charged per verification with a monthly minimum: Essential (fully automated AI checks) at $0.80 per verification with a $49 monthly minimum, Plus (AI plus human verification specialists) at $1.39 with a $99 minimum, and Premium at $1.89 with a $209 minimum. Enterprise pricing is negotiated and aimed at more than 5,000 verifications a month. Add-ons include PEP and sanctions screening and ongoing monitoring, and a free trial covers up to 50 sessions.</p><p>Veriff suits fintechs, marketplaces, gaming, mobility and other companies that must verify users remotely. Very small projects may find the monthly minimum more than they need.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Identity verification (KYC)",
+  "platform": "Web",
+  "starts_at": "From $0.80 per verification, $49 monthly minimum",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI-powered identity and document verification for onboarding and KYC",
+  "maker": {
+   "name": "Veriff",
+   "url": "https://www.veriff.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Veriff_logo.svg/960px-Veriff_logo.svg.png",
+    "alt": "Veriff logo: the word veriff in dark green with a turquoise V-shaped mark",
+    "credit": "Image: Veriff, public domain, via Wikimedia Commons (File:Veriff logo.svg)",
+    "w": 960,
+    "h": 265
+   },
+   {
+    "url": "https://www.veriff.com/wp-content/uploads/2026/08/meta-image.jpg",
+    "alt": "A woman holding up a smartphone as if taking a selfie for an identity check",
+    "credit": "Image: Veriff (veriff.com)",
+    "w": 1017,
+    "h": 814
+   }
+  ],
+  "use_cases": [
+   "Verifying ID documents when users sign up",
+   "Meeting KYC and AML rules for financial services",
+   "Age verification",
+   "Screening customers against PEP and sanctions lists",
+   "Reducing fraud and fake accounts on marketplaces"
+  ],
+  "audience": {
+   "fit": [
+    "must verify customers' identities remotely",
+    "want published per-check pricing and a free trial",
+    "need human review as a backstop to AI decisions"
+   ],
+   "not_fit": [
+    "verify only a handful of people a month and would rather not pay a monthly minimum",
+    "need in-person verification"
+   ]
+  },
+  "pricing": {
+   "intro": "Veriff publishes self-serve pricing, charged per verification with a monthly minimum. A free trial covers up to 50 sessions.",
+   "plans": [
+    {
+     "name": "Essential",
+     "price": "$0.80 per verification",
+     "detail": "Fully automated AI; $49 monthly minimum"
+    },
+    {
+     "name": "Plus",
+     "price": "$1.39 per verification",
+     "detail": "AI plus verification specialists; $99 monthly minimum"
+    },
+    {
+     "name": "Premium",
+     "price": "$1.89 per verification",
+     "detail": "AI plus verification specialists; $209 monthly minimum"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Volume discounts; for 5,000+ verifications a month"
+    }
+   ],
+   "notes": [
+    "Add-ons per verification: PEP and sanctions check +$0.64, ongoing monitoring +$0.09, two-year data retention +$0.30."
+   ],
+   "url": "https://www.veriff.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published prices and a free trial",
+   "Choice of fully automated or human-assisted checks",
+   "Well funded, established vendor"
+  ],
+  "cons": [
+   "Monthly minimums on every plan",
+   "Add-ons raise the per-check cost"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Onfido (Entrust)",
+     "url": "https://onfido.com/",
+     "what": "Document and biometric identity verification",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Now part of Entrust; enterprise-focused."
+    },
+    {
+     "name": "Jumio",
+     "url": "https://www.jumio.com/",
+     "what": "Identity verification and AML screening",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Long-established enterprise KYC vendor."
+    },
+    {
+     "name": "Persona",
+     "url": "https://withpersona.com/",
+     "what": "Configurable identity verification platform",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Known for flexible, configurable verification flows."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does Veriff cost?",
+    "a": "From $0.80 per verification on the Essential plan with a $49 monthly minimum; Plus is $1.39 and Premium $1.89 per verification."
+   },
+   {
+    "q": "Is Veriff a unicorn?",
+    "a": "Yes. Its $100 million Series C in January 2022 valued it at $1.5 billion, according to TechCrunch."
+   },
+   {
+    "q": "Where is Veriff from?",
+    "a": "Estonia. It was founded there in 2015."
+   },
+   {
+    "q": "Does Veriff offer a free trial?",
+    "a": "Yes, covering up to 50 verification sessions."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Veriff pricing",
+    "url": "https://www.veriff.com/pricing"
+   },
+   {
+    "label": "TechCrunch: Veriff raises $100M Series C co-led by Tiger Global and Alkeon (26 Jan 2022)",
+    "url": "https://techcrunch.com/2022/01/26/identity-verification-provider-veriff-raises-100m-series-c-co-led-by-tiger-global-and-alkeon"
+   },
+   {
+    "label": "SecurityWeek: Identity verification firm Veriff raises $100 million",
+    "url": "https://www.securityweek.com/identity-verification-firm-veriff-raises-100-million"
+   },
+   {
+    "label": "Veriff official site",
+    "url": "https://www.veriff.com/"
+   }
+  ]
+ }
+}

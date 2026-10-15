@@ -1,0 +1,137 @@
+{
+ "slug": "torq",
+ "website": "https://torq.io/",
+ "excerpt": "Torq sells an AI security operations (SOC) and hyperautomation platform. Its 2026 Series D, what the product does and alternatives.",
+ "content": "<p>Torq makes software for security operations centres (SOCs). Security teams receive a constant flood of alerts from their tools; Torq's platform uses AI agents and automated workflows to triage those alerts, investigate them and take response actions, so analysts only handle the cases that need a person. Its homepage line sums up the pitch: every alert needs attention, but not every alert needs a human. It calls the approach agentic SecOps combined with hyperautomation.</p><p>The product has two main parts: a no-code and low-code workflow builder that connects to a company's existing security and IT tools, and an AI SOC layer with agents, one of which Torq calls Socrates, that work through cases and report back. Customers named by SiliconANGLE include Marriott International, PepsiCo, Procter & Gamble, Siemens, Uber and Virgin Atlantic.</p><p>Torq was founded in 2020. Its cofounder and chief executive is Ofer Smadari. On 11 January 2026 it announced a $140 million Series D at a $1.2 billion valuation, led by Merlin Ventures with existing investors Evolution Equity Partners, Notable Capital, Bessemer Venture Partners, Insight Partners and Greenfield Partners. SiliconANGLE reported that this brought its total funding to $332 million and that the money would go into wider adoption of the AI platform and its go-to-market work, including selling to the US federal government.</p><p>Torq does not publish prices. It sells to mid-size and large enterprises through demos and contracts. Small teams without a dedicated security operations function are unlikely to need it. Buyers comparing it with rivals usually look at how many of their existing tools it connects to and how much of the triage it can take over safely.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Security automation (AI SOC)",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI SOC platform with agents and no-code hyperautomation for security teams",
+  "maker": {
+   "name": "Torq",
+   "url": "https://torq.io/"
+  },
+  "gallery": [
+   {
+    "url": "https://torq.io/wp-content/uploads/2026/04/homnepage-featured.jpg",
+    "alt": "Torq banner: a chat panel from the Socrates AI agent above the line 'Every alert needs attention. Not every alert needs a human.'",
+    "credit": "Image: Torq (torq.io)",
+    "w": 1586,
+    "h": 914
+   },
+   {
+    "url": "https://torq.io/wp-content/uploads/2024/05/cropped-torq-favicon-black-180x180.png",
+    "alt": "Torq icon: three black horizontal bars of different lengths stacked like a stylised letter",
+    "credit": "Image: Torq (torq.io)",
+    "w": 180,
+    "h": 180
+   }
+  ],
+  "use_cases": [
+   "Automatically triaging and enriching security alerts",
+   "Investigating phishing reports and suspicious logins",
+   "Running response playbooks across security and IT tools",
+   "Reducing analyst workload in a SOC",
+   "Building custom security workflows without code"
+  ],
+  "audience": {
+   "fit": [
+    "run a security operations team handling large alert volumes",
+    "use many security tools that need to be connected",
+    "want AI agents to handle first-line triage"
+   ],
+   "not_fit": [
+    "are a small business without a security team",
+    "want a self-serve product with a published price"
+   ]
+  },
+  "pricing": {
+   "intro": "Torq does not publish prices; its site asks you to request a demo.",
+   "plans": [
+    {
+     "name": "Torq AI SOC platform",
+     "price": "Quote on request",
+     "detail": "Enterprise contracts"
+    }
+   ],
+   "notes": [],
+   "url": "https://torq.io/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Combines AI agents with a no-code workflow builder",
+   "Well funded after a 2026 Series D",
+   "Large enterprise customers"
+  ],
+  "cons": [
+   "No public pricing",
+   "Aimed at enterprises with established SOCs"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Tines",
+     "url": "https://www.tines.com/",
+     "what": "No-code workflow automation for security teams",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Strong in workflow automation; offers a free community edition."
+    },
+    {
+     "name": "Palo Alto Networks Cortex XSOAR",
+     "url": "https://www.paloaltonetworks.com/cortex/cortex-xsoar",
+     "what": "Security orchestration, automation and response (SOAR)",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Established SOAR from a large security vendor."
+    },
+    {
+     "name": "Splunk SOAR",
+     "url": "https://www.splunk.com/en_us/products/splunk-security-orchestration-and-automation.html",
+     "what": "SOAR within the Splunk security suite",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Fits teams already on Splunk."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Torq do?",
+    "a": "It automates security operations: AI agents and workflows triage, investigate and respond to security alerts."
+   },
+   {
+    "q": "How much has Torq raised?",
+    "a": "SiliconANGLE reported $332 million in total, including a $140 million Series D at a $1.2 billion valuation in January 2026."
+   },
+   {
+    "q": "How much does Torq cost?",
+    "a": "Torq does not publish prices; you request a demo."
+   }
+  ],
+  "sources": [
+   {
+    "label": "SiliconANGLE: Torq raises $140M at $1.2B valuation (11 Jan 2026)",
+    "url": "https://siliconangle.com/2026/01/11/torq-raises-140m-1-2b-valuation-scale-ai-driven-security-hyperautomation/"
+   },
+   {
+    "label": "Torq official site",
+    "url": "https://torq.io/"
+   },
+   {
+    "label": "Let's Data Science: Torq raises $140M at $1.2B valuation",
+    "url": "https://letsdatascience.com/news/torq-raises-140m-at-12b-valuation-75cb3388"
+   }
+  ],
+  "team": [
+   {
+    "name": "Ofer Smadari",
+    "role": "Cofounder and CEO"
+   }
+  ]
+ }
+}

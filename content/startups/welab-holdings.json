@@ -1,0 +1,151 @@
+{
+ "slug": "welab-holdings",
+ "website": "https://www.welab.co/",
+ "excerpt": "WeLab is a Hong Kong fintech group behind WeLab Bank, one of the city's first virtual banks, with lending businesses in Hong Kong and Indonesia.",
+ "content": "<p>WeLab is a Hong Kong financial technology group. It was founded in January 2013 by Simon Loong, Kelly Wong and Frances Kang, and Loong remains group chief executive. It began as an online consumer lender and is best known today as the parent of WeLab Bank, which received one of Hong Kong's first virtual banking licences in 2019 and operates as an app-only bank for retail customers.</p><p>The group also runs lending and banking businesses in Indonesia. Forbes reported that WeLab, together with Astra, bought a controlling stake in Bank Jasa Jakarta for $240 million, and that it operates the Maucash lending product there. WeLab became a unicorn after a 2017 funding round. Its backers over the years include Sequoia Capital, Allianz X, the International Finance Corporation and China Construction Bank, and Forbes put its total funding at about $900 million.</p><p>In 2019 WeLab raised a $156 million Series C, which FinTech Futures reported would fund the launch of WeLab Bank. In January 2026 the company announced a $220 million Series D, a mix of debt and equity, with investors including Prudential Hong Kong, Fubon Bank (Hong Kong), the Hong Kong Investment Corporation, TOM Group, Allianz X and HSBC. WeLab said it was the largest digital banking capital raise in Asia for 2025, and described WeLab Bank as the largest digital bank in Hong Kong by revenue. It did not disclose a valuation. The Asian Banker reported that WeLab Bank reached profitability in December 2024.</p><p>WeLab is not a software product you buy. For customers, WeLab Bank offers savings, deposits, loans and wealth products through its app, with fees set out in the bank's own tariff. It is relevant to readers following Asian digital banks and fintech.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Digital banking and lending",
+  "platform": "Android, iOS",
+  "starts_at": "Bank account: see WeLab Bank's fee schedule",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Hong Kong fintech group behind WeLab Bank and consumer lending apps in Asia",
+  "maker": {
+   "name": "WeLab",
+   "url": "https://www.welab.co/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.welab.bank/uploads/We_Lab_Bank_logo_en_b54140e004.png",
+    "alt": "WeLab Bank logo: an orange-to-pink W mark beside the words WeLab Bank in dark purple",
+    "credit": "Image: WeLab Bank (welab.bank)",
+    "w": 2580,
+    "h": 699
+   },
+   {
+    "url": "https://www.welab.bank/uploads/Homepage_lifemeetintelligence_en_1224_afe3df3819.png",
+    "alt": "Illustration of a robotic hand holding a phone with the WeLab Bank app and a large orange W logo in front",
+    "credit": "Image: WeLab Bank (welab.bank)",
+    "w": 630,
+    "h": 500
+   }
+  ],
+  "use_cases": [
+   "Opening an app-only bank account in Hong Kong",
+   "Saving and time deposits through a mobile bank",
+   "Personal loans through a digital lender",
+   "Tracking Asia's virtual banking sector"
+  ],
+  "audience": {
+   "fit": [
+    "live in Hong Kong and want an app-only bank",
+    "follow digital banking and fintech in Asia"
+   ],
+   "not_fit": [
+    "live outside Hong Kong or Indonesia: its services are local",
+    "are looking for a business software product"
+   ]
+  },
+  "pricing": {
+   "intro": "WeLab is a financial group, not a subscription product. WeLab Bank's account and loan terms and its fees are published by the bank itself; we have not quoted rates because they change often.",
+   "plans": [
+    {
+     "name": "WeLab Bank account",
+     "price": "See WeLab Bank's fee schedule",
+     "detail": "App-only retail bank in Hong Kong"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.welab.bank/en/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "One of Hong Kong's first licensed virtual banks",
+   "Backed by large financial institutions",
+   "Reported profitable at the bank level since December 2024"
+  ],
+  "cons": [
+   "Services limited to Hong Kong and Indonesia",
+   "Valuation and group financials are not public"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "ZA Bank",
+     "url": "https://bank.za.group/",
+     "what": "Hong Kong virtual bank",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Another of Hong Kong's first virtual banks, backed by ZhongAn."
+    },
+    {
+     "name": "Mox Bank",
+     "url": "https://mox.com/",
+     "what": "Hong Kong virtual bank",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Backed by Standard Chartered and partners."
+    },
+    {
+     "name": "Airstar Bank",
+     "url": "https://www.airstarbank.com/",
+     "what": "Hong Kong virtual bank",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Joint venture involving Xiaomi."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded WeLab?",
+    "a": "Simon Loong, Kelly Wong and Frances Kang, in January 2013. Loong is group CEO."
+   },
+   {
+    "q": "What is WeLab Bank?",
+    "a": "WeLab's Hong Kong virtual bank, which received one of the city's first virtual banking licences in 2019."
+   },
+   {
+    "q": "How much has WeLab raised recently?",
+    "a": "It announced a $220 million Series D in January 2026, made up of debt and equity."
+   },
+   {
+    "q": "Is WeLab profitable?",
+    "a": "The Asian Banker reported that WeLab Bank turned profitable in December 2024. Group-level figures are not public."
+   }
+  ],
+  "sources": [
+   {
+    "label": "WeLab Series D announcement via Antara News (Jan 2026)",
+    "url": "https://en.antaranews.com/news/400518/welab-completes-us220-million-series-d-strategic-financing-marking-the-largest-digital-banking-capital-raise-in-asia"
+   },
+   {
+    "label": "The Edge Singapore (Bloomberg): Prudential, HSBC take part in US$220m WeLab funding",
+    "url": "https://www.theedgesingapore.com/news/fintech/prudential-hsbc-take-part-us220m-welab-funding"
+   },
+   {
+    "label": "Forbes Australia: WeLab bets big on Indonesia",
+    "url": "https://www.forbes.com.au/news/innovation/with-900-million-in-funding-hong-kong-unicorn-welab-bets-big-on-indonesia/"
+   },
+   {
+    "label": "FinTech Futures: WeLab raises $156 million to launch WeLab Bank",
+    "url": "https://www.fintechfutures.com/bankingtech/hong-kong-s-fintech-welab-raises-156-million-to-launch-welab-bank-in-2020"
+   },
+   {
+    "label": "The Asian Banker: Simon Loong on WeLab's path to a profitable digital bank",
+    "url": "https://www.theasianbanker.com/updates-and-articles/simon-loong-charts-welab-s-journey-from-fintech-disruptor-to-profitable-digital-bank"
+   },
+   {
+    "label": "Wikipedia: WeLab",
+    "url": "https://en.wikipedia.org/wiki/WeLab"
+   }
+  ],
+  "team": [
+   {
+    "name": "Simon Loong",
+    "role": "Founder and Group CEO"
+   }
+  ]
+ }
+}

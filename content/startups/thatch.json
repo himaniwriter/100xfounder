@@ -1,0 +1,155 @@
+{
+ "slug": "thatch",
+ "website": "https://www.thatch.com/",
+ "excerpt": "Thatch helps US employers give staff a tax-free health budget (ICHRA) to buy their own insurance. Pricing from $230 a month, funding and alternatives.",
+ "content": "<p>Thatch is a US health benefits platform built around ICHRAs (individual coverage health reimbursement arrangements), which are now also called CHOICE arrangements. Instead of buying one group insurance plan for everyone, an employer gives each employee a tax-free monthly health budget. Employees use Thatch's marketplace to pick an individual insurance plan that suits them, and a Thatch card lets them spend any money left over on other medical costs. Thatch handles the administration, payroll integration, premium payments and compliance paperwork. It describes itself as a financial technology company; its insurance services are provided by Thatch Health Insurance Services LLC.</p><p>TechCrunch reported that Thatch was founded in October 2021 in San Francisco by Chris Ellis, its chief executive, and Adam Stevenson, its president. It raised a $38 million Series A led by General Catalyst, then a $40 million Series B in April 2025 led by Index Ventures, with a16z, General Catalyst, SemperVirens, PeopleTech Partners, The General Partnership and ADP Ventures. At that point it had 72 employees, had onboarded more than 1,000 companies in 18 months, and named customers including Dave's Hot Chicken and Jersey Mike's. QuickBooks embeds its ICHRA product.</p><p>On 16 September 2026 the law firm Latham & Watkins announced that it had advised Thatch on a $108 million Series C at a $1 billion post-money valuation, with investors including The General Partnership, Index Ventures, Scale Venture Partners, General Catalyst and Andreessen Horowitz.</p><p>Thatch publishes its prices. The Standard plan, for employers with 1 to 49 eligible employees, is $230 a month; the page's example for four employees is $45 per employee plus a $50 compliance fee. Larger employers get custom pricing with a 10-enrolled-employee minimum of $2,400 a year. It is a US-only service.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Health benefits (ICHRA)",
+  "platform": "Web",
+  "starts_at": "$230 a month (Standard, 1–49 eligible employees)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "ICHRA platform that gives employees a tax-free health budget to buy their own plan",
+  "maker": {
+   "name": "Thatch",
+   "url": "https://www.thatch.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://thatch.com/api/og/marketing?headline=Upgrade%20from%20health%20benefits%20to%20health%20budgets",
+    "alt": "Thatch banner reading 'Upgrade from health benefits to health budgets' beside an app screen showing a monthly allowance and plan details",
+    "credit": "Image: Thatch (thatch.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://thatch.com/v3/apple-touch-icon.png",
+    "alt": "Thatch icon: a white letter T on a red square",
+    "credit": "Image: Thatch (thatch.com)",
+    "w": 180,
+    "h": 180
+   }
+  ],
+  "use_cases": [
+   "Offering health benefits through an ICHRA instead of a group plan",
+   "Giving employees a monthly tax-free health budget",
+   "Letting staff choose their own individual insurance plan",
+   "Automating premium payments and compliance paperwork"
+  ],
+  "audience": {
+   "fit": [
+    "are a US employer, especially a small or multi-state one, that finds group plans expensive or rigid",
+    "want employees to pick their own coverage",
+    "run payroll on a platform Thatch integrates with, such as QuickBooks or ADP"
+   ],
+   "not_fit": [
+    "are outside the US",
+    "want a traditional group plan with one network for everyone"
+   ]
+  },
+  "pricing": {
+   "intro": "Thatch publishes its prices on its pricing page.",
+   "plans": [
+    {
+     "name": "Standard",
+     "price": "$230 a month",
+     "detail": "1–49 eligible employees; example: $45 per employee plus a $50 compliance fee"
+    },
+    {
+     "name": "Custom",
+     "price": "Custom pricing",
+     "detail": "50+ eligible employees; 10-enrolled-employee minimum at $2,400 a year"
+    }
+   ],
+   "notes": [
+    "Insurance premiums themselves are paid from the employer's health budget and are separate from Thatch's fee."
+   ],
+   "url": "https://www.thatch.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published pricing",
+   "Employees choose their own plan",
+   "Integrations with payroll platforms"
+  ],
+  "cons": [
+   "US only",
+   "Individual-market plan choice and prices vary a lot by state"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Take Command",
+     "url": "https://www.takecommandhealth.com/",
+     "what": "ICHRA and QSEHRA administration",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Long-running HRA administrator."
+    },
+    {
+     "name": "PeopleKeep",
+     "url": "https://www.peoplekeep.com/",
+     "what": "HRA administration software for small businesses",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Covers QSEHRA, ICHRA and other HRAs."
+    },
+    {
+     "name": "Gusto",
+     "url": "https://gusto.com/",
+     "what": "Payroll and benefits platform",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Offers benefits as part of payroll rather than as a specialist ICHRA platform."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is an ICHRA?",
+    "a": "An individual coverage health reimbursement arrangement: the employer gives employees tax-free money to buy their own individual health insurance."
+   },
+   {
+    "q": "How much does Thatch cost?",
+    "a": "The Standard plan is $230 a month for 1–49 eligible employees; larger employers get custom pricing."
+   },
+   {
+    "q": "How much has Thatch raised?",
+    "a": "A $38 million Series A, a $40 million Series B in April 2025, and a $108 million Series C at a $1 billion valuation in September 2026."
+   },
+   {
+    "q": "Who founded Thatch?",
+    "a": "Chris Ellis and Adam Stevenson, in October 2021, according to TechCrunch."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Thatch pricing",
+    "url": "https://www.thatch.com/pricing"
+   },
+   {
+    "label": "TechCrunch: Thatch raises $40M (3 Apr 2025)",
+    "url": "https://techcrunch.com/2025/04/03/thatch-raises-40m-to-give-employees-more-control-of-their-health-insurance-choices"
+   },
+   {
+    "label": "Latham & Watkins: Latham advises Thatch on Series C (16 Sept 2026)",
+    "url": "https://www.lw.com/en/news/2026/09/latham-advises-thatch-on-series-c"
+   },
+   {
+    "label": "Fierce Healthcare: Thatch secures $38M",
+    "url": "https://www.fiercehealthcare.com/health-tech/thatch-secures-38m-backed-a16z-and-general-catalyst-expand-ichra-benefits"
+   }
+  ],
+  "team": [
+   {
+    "name": "Chris Ellis",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Adam Stevenson",
+    "role": "Cofounder and President"
+   }
+  ]
+ }
+}

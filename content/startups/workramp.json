@@ -1,0 +1,144 @@
+{
+ "slug": "workramp",
+ "website": "https://www.confirm.com/scale-up/products/learn-up",
+ "excerpt": "WorkRamp, the learning platform for employee and customer training, was bought by Learning Pool in 2025 and is now sold by Confirm as Learn:Up and Academy.",
+ "content": "<p>WorkRamp is a learning management system (LMS): software a company uses to train its employees, onboard new hires and run training academies for customers and partners. It was founded in 2015 in San Francisco and went through Y Combinator. Its customers have included Canva, Sprout Social, Reddit and Box, according to the acquisition announcement.</p><p>On 15 October 2025 Learning Pool, a learning technology company headquartered in Derry, Northern Ireland and owned by Marlin Equity Partners, announced it had acquired WorkRamp. WorkRamp's chief executive, Ted Blosser, wrote that it would continue as a core product within Learning Pool's portfolio. In August 2026 Learning Pool rebranded itself as Confirm and launched what it calls a Workforce Enablement System. WorkRamp's two products were renamed at the same time: the Employee Learning Cloud became Learn:Up and the Customer Learning Cloud became Academy. The old workramp.com address now redirects to the Learn:Up page on confirm.com.</p><p>Learn:Up covers courses, learning paths, guides, resource libraries, events and SCORM content, plus AI role-play simulations where an employee practises a conversation, such as a sales call, with an AI character and gets feedback. Academy is the customer-facing version for training a company's users or partners. Confirm's other products include Perform (performance reviews), Engage (formerly WorkStep) and Create (formerly Elucidat, a course authoring tool).</p><p>Confirm's pricing page lists Learn:Up from $9 (or GBP 7) per user a month, billed annually, based on a 200-person company. Academy has no listed price. Existing WorkRamp customers should expect the Confirm name on contracts and help-centre pages; the help centre now publishes release notes under the Learn:Up and Academy names.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Learning management system",
+  "platform": "Web",
+  "starts_at": "From $9 per user a month (Learn:Up, billed annually)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Learning platform for employee and customer training, now Learn:Up and Academy from Confirm",
+  "maker": {
+   "name": "Confirm (formerly Learning Pool)",
+   "url": "https://www.confirm.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.confirm.com/wp-content/uploads/2026/07/SU-WR-02-1.avif",
+    "alt": "Learn:Up AI simulation: a video-call style practice session with an AI character, labelled AI simulations and AI-powered",
+    "credit": "Image: Confirm (confirm.com)",
+    "w": 1200,
+    "h": 970
+   },
+   {
+    "url": "https://www.confirm.com/wp-content/uploads/2026/07/landscape_learnup_admin_dashboard-1024x640.avif",
+    "alt": "Learn:Up admin dashboard with recently accessed items and buttons to create an AI simulation, guide, path, challenge, library, resource, event or SCORM course",
+    "credit": "Image: Confirm (confirm.com)",
+    "w": 1024,
+    "h": 640
+   }
+  ],
+  "use_cases": [
+   "Onboarding new employees",
+   "Sales and support enablement with AI role-play practice",
+   "Running a customer or partner training academy",
+   "Compliance training and tracking",
+   "Hosting SCORM courses built elsewhere"
+  ],
+  "audience": {
+   "fit": [
+    "are a growing or mid-market company that wants one LMS for employees and customers",
+    "train sales or support teams on conversations",
+    "want AI practice simulations built in"
+   ],
+   "not_fit": [
+    "need a free or open-source LMS",
+    "want a tool from an independent vendor rather than part of a larger suite"
+   ]
+  },
+  "pricing": {
+   "intro": "Confirm's pricing page lists Learn:Up from $9 / GBP 7 per user per month, billed annually, based on a 200-person company. Academy (the customer-training product) shows only a 'Get pricing' link.",
+   "plans": [
+    {
+     "name": "Learn:Up (formerly WorkRamp Employee Learning Cloud)",
+     "price": "From $9 per user a month",
+     "detail": "Billed annually; example based on 200 people"
+    },
+    {
+     "name": "Academy (formerly WorkRamp Customer Learning Cloud)",
+     "price": "Quote on request",
+     "detail": "No price listed"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.confirm.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Employee and customer training in one vendor",
+   "AI role-play simulations",
+   "Published starting price for Learn:Up"
+  ],
+  "cons": [
+   "Product names and branding changed twice in a year",
+   "Academy pricing is not published"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Docebo",
+     "url": "https://www.docebo.com/",
+     "what": "AI-powered learning platform for enterprises",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Larger enterprise LMS covering employee and external training."
+    },
+    {
+     "name": "Lessonly by Seismic",
+     "url": "https://seismic.com/",
+     "what": "Sales enablement and training within Seismic",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Fits teams already using Seismic for sales content."
+    },
+    {
+     "name": "TalentLMS",
+     "url": "https://www.talentlms.com/",
+     "what": "Cloud LMS for small and mid-size businesses",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Simpler and aimed at smaller teams."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Does WorkRamp still exist?",
+    "a": "The product does, under new names. Learning Pool bought WorkRamp in October 2025, then rebranded as Confirm in August 2026; WorkRamp's products are now Learn:Up and Academy."
+   },
+   {
+    "q": "How much does WorkRamp (Learn:Up) cost?",
+    "a": "Confirm lists Learn:Up from $9 per user a month, billed annually, based on a 200-person company."
+   },
+   {
+    "q": "Who used WorkRamp?",
+    "a": "The acquisition announcement named Canva, Sprout Social, Reddit and Box as customers."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Confirm: Learning Pool acquires WorkRamp (15 Oct 2025)",
+    "url": "https://www.confirm.com/blog/learning-pool-workramp-acquisition"
+   },
+   {
+    "label": "Confirm: Learn:Up product page",
+    "url": "https://www.confirm.com/scale-up/products/learn-up"
+   },
+   {
+    "label": "Confirm pricing",
+    "url": "https://www.confirm.com/pricing"
+   },
+   {
+    "label": "Retail Technology Innovation Hub: Learning Pool rebrands as Confirm (7 Aug 2026)",
+    "url": "https://retailtechinnovationhub.com/home/2026/8/7/connecting-the-dots-learning-pool-rebrands-as-confirm-and-announces-launch-of-workforce-enablement-system"
+   },
+   {
+    "label": "Y Combinator: WorkRamp",
+    "url": "https://ycombinator.com/companies/workramp"
+   }
+  ]
+ }
+}

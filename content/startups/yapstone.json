@@ -1,0 +1,139 @@
+{
+ "slug": "yapstone",
+ "website": "https://www.yapstone.com/",
+ "excerpt": "Yapstone processes card payments for vacation rental operators in the US and Europe. Its history, the Velo Payments deal and alternatives.",
+ "content": "<p>Yapstone is a payment processor for the short-term and vacation rental industry. Its website describes it as a payment facilitator and merchant of record: it takes card payments from guests on behalf of rental operators and property owners, carries the processing liability, and pays the money out. It sells this under two brands, VacationRentPayment for US operators and HolidayRentPayment for UK and European operators. The site claims PCI-DSS Level 1 certification, 25 years of experience in vacation rentals, 95% approval rates, 80% of disputed chargebacks won and 99.9% platform uptime; these are the company's own figures.</p><p>The company is based in Walnut Creek, California. It has changed hands more than once. Priority Technology Holdings' annual report for 2021 says a Priority subsidiary bought Yapstone's net assets in 2019 for $65.0 million in cash plus a non-controlling interest, and that substantially all of those assets were sold to a third party in the third quarter of 2020. In August 2023 the law firm Loeb & Loeb announced that it was advising Velo Payments, a business disbursements company, on an agreement to acquire Yapstone, which it called a leading payment processing platform in the short-term and vacation rental industry. The deal was expected to close in the third quarter of 2023, subject to approvals. Payments trade press reported that the plan was to combine Yapstone's payment-facilitator and money-services licences with Velo's disbursements technology.</p><p>Yapstone's site lists features such as split and multi-party payments, holding funds until a booking completes, early payouts to vendors and direct bank transfers. It does not publish rates; you contact its sales team for a quote. It is a niche provider: if you do not run rental properties, a general-purpose processor will fit better.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Payment processing for vacation rentals",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Card payment processing and payouts for vacation and holiday rental businesses",
+  "maker": {
+   "name": "Yapstone, Inc.",
+   "url": "https://www.yapstone.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.yapstone.com/hs-fs/hubfs/Yapstone_Black%2035%25-1.png?width=300&height=63&name=Yapstone_Black%2035%25-1.png",
+    "alt": "Yapstone wordmark in black with a yellow circle forming the letter o",
+    "credit": "Image: Yapstone (yapstone.com)",
+    "w": 300,
+    "h": 63
+   },
+   {
+    "url": "https://www.vacationrentpayment.com/hs-fs/hubfs/VacationRentPayment/1.%20brand/yapstone-vrp-neutral-white.png?width=150&height=59&name=yapstone-vrp-neutral-white.png",
+    "alt": "VacationRentPayment logo: large rounded letters VRP above the words Vacation Rent Payment, in off-white",
+    "credit": "Image: Yapstone (vacationrentpayment.com)",
+    "w": 149,
+    "h": 59
+   }
+  ],
+  "use_cases": [
+   "Taking guest card payments for vacation rental bookings",
+   "Splitting a booking payment between owner, manager and vendors",
+   "Holding funds until a stay is complete",
+   "Handling chargeback disputes for rental bookings"
+  ],
+  "audience": {
+   "fit": [
+    "manage vacation or holiday rental properties in the US, UK or Europe",
+    "want a processor that acts as merchant of record and handles chargebacks",
+    "need multi-party or split payouts"
+   ],
+   "not_fit": [
+    "run an ordinary online shop or SaaS business",
+    "want published, self-serve pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "Yapstone does not publish its processing rates. Its site invites operators to contact sales by phone or form for a quote.",
+   "plans": [
+    {
+     "name": "VacationRentPayment (US)",
+     "price": "Quote on request",
+     "detail": "Card processing and payouts for US rental operators"
+    },
+    {
+     "name": "HolidayRentPayment (UK and Europe)",
+     "price": "Quote on request",
+     "detail": "Same service for UK and European operators"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.yapstone.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Specialist in vacation rental payments",
+   "Acts as merchant of record",
+   "Split and delayed payouts built in"
+  ],
+  "cons": [
+   "No public rates",
+   "Niche: little reason to use it outside rentals"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Stripe",
+     "url": "https://stripe.com/",
+     "what": "General online payments platform",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Self-serve with published rates, but not specialised for rentals."
+    },
+    {
+     "name": "Adyen",
+     "url": "https://www.adyen.com/",
+     "what": "Enterprise payments platform",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Aimed at large merchants and marketplaces worldwide."
+    },
+    {
+     "name": "Hostaway",
+     "url": "https://www.hostaway.com/",
+     "what": "Vacation rental software with built-in payment options",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "A property management system rather than a standalone processor."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who owns Yapstone?",
+    "a": "In August 2023 Velo Payments agreed to acquire Yapstone, according to Loeb & Loeb, which advised Velo. The deal was expected to close in Q3 2023."
+   },
+   {
+    "q": "What is VacationRentPayment?",
+    "a": "Yapstone's payment service for US vacation rental operators; HolidayRentPayment is the UK and European version."
+   },
+   {
+    "q": "How much does Yapstone charge?",
+    "a": "It does not publish rates; you request a quote from its sales team."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Yapstone official site",
+    "url": "https://www.yapstone.com/"
+   },
+   {
+    "label": "Loeb & Loeb: represents Velo Payments in agreement to acquire YapStone (18 Aug 2023)",
+    "url": "https://www.loeb.com/en/newsevents/news/2023/08/loeb-loeb-represents-velo-payments-in-agreement-to-acquire-yapstone"
+   },
+   {
+    "label": "Payment Expert: Velo Payments enhances offering with YapStone acquisition (22 Aug 2023)",
+    "url": "https://paymentexpert.com/2023/08/22/velo-payments-enhances-offering-with-yapstone-acquisition/"
+   },
+   {
+    "label": "Priority Technology Holdings Form 10-K for 2021 (SEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1653558/000165355822000028/prth-20211231.htm"
+   }
+  ]
+ }
+}

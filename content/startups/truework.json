@@ -1,0 +1,134 @@
+{
+ "slug": "truework",
+ "website": "https://www.truework.com/",
+ "excerpt": "Truework verifies income and employment for mortgage lenders and others. Checkr agreed to acquire it in April 2025. What it does and alternatives.",
+ "content": "<p>Truework is a US platform that verifies a person's income and employment. Lenders, especially mortgage lenders, use it when underwriting a loan, and property managers and employers use it for rental and hiring checks. Its website calls it a unified VOIEA platform (verification of income, employment and assets) and claims it can verify 97% of US workers faster and at up to 50% lower cost; those are the company's own figures.</p><p>Truework's selling point is that it brings several ways of verifying a worker's income and employment together behind one service, so a lender does not have to try each source separately. Checkr, which now owns it, described Truework as the first provider to connect every major verification method into one platform, and said it uses AI and automation to make underwriting simpler.</p><p>On 17 April 2025 Checkr, the background-check company, announced that it had signed a definitive agreement to acquire Truework, expected to close in the second quarter of 2025. Checkr said Truework had thousands of customers, from small businesses to large financial institutions, including eight of the top ten US lenders by origination volume, and that the deal took Checkr into employment verification, which it called a multi-billion dollar market. Axios reported that Truework had raised a little over $125 million and was last valued at around $480 million, according to PitchBook. Financial terms were not disclosed. Truework's site now describes itself as a Checkr company.</p><p>Truework does not publish prices for lenders; you book a demo. Individuals whose employment is being verified do not pay. The service is US-only.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Income and employment verification",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Income and employment verification platform for lenders, now a Checkr company",
+  "maker": {
+   "name": "Truework (a Checkr company)",
+   "url": "https://www.truework.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/hmvi3d0t/production/be2d1de33956d5f5d72de11193a933229f03d87d-1200x632.png?rect=0,1,1200,630&w=1200&h=630",
+    "alt": "Truework logo with the line 'a checkr company' on a pale green background",
+    "credit": "Image: Truework (truework.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.sanity.io/images/hmvi3d0t/production/337d181522d1e11726710310b66ef2e960f71b44-1472x971.png?auto=format&fit=max&q=75&w=736",
+    "alt": "Illustration of a smiling older man in a cap in front of a house, with a pay document and icons for money and employment",
+    "credit": "Image: Truework (truework.com)",
+    "w": 736,
+    "h": 486
+   }
+  ],
+  "use_cases": [
+   "Verifying a mortgage applicant's income and employment",
+   "Checking a tenant's income before signing a lease",
+   "Employment verification for hiring",
+   "Reducing manual calls to employers' HR teams"
+  ],
+  "audience": {
+   "fit": [
+    "are a US mortgage lender, credit union or lender that verifies income",
+    "run property management with income checks",
+    "want several verification methods behind one integration"
+   ],
+   "not_fit": [
+    "operate outside the US",
+    "want a self-serve tool with published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Truework does not publish prices; its pricing page returns 'not found' and the site directs lenders to request a demo.",
+   "plans": [
+    {
+     "name": "Truework verification platform",
+     "price": "Quote on request",
+     "detail": "Priced per verification under contract"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.truework.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Combines payroll, database, document and manual verification",
+   "Used by most of the top ten US lenders, per Checkr",
+   "Backed by Checkr since 2025"
+  ],
+  "cons": [
+   "No public pricing",
+   "US only"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "The Work Number (Equifax)",
+     "url": "https://theworknumber.com/",
+     "what": "Employment and income verification database",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "The largest incumbent, built on employer-contributed payroll data."
+    },
+    {
+     "name": "Argyle",
+     "url": "https://argyle.com/",
+     "what": "Payroll-connected income and employment verification",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Focuses on consumer-permissioned payroll connections."
+    },
+    {
+     "name": "Plaid",
+     "url": "https://plaid.com/",
+     "what": "Financial data network with income verification products",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Broader fintech data platform rather than a verification specialist."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who owns Truework?",
+    "a": "Checkr. It signed an agreement to acquire Truework in April 2025, and Truework's site now calls itself a Checkr company."
+   },
+   {
+    "q": "What does Truework verify?",
+    "a": "Income, employment and assets, mainly for lenders and property managers."
+   },
+   {
+    "q": "How much does Truework cost?",
+    "a": "It does not publish prices; lenders request a demo."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Checkr: Checkr acquires Truework (17 Apr 2025)",
+    "url": "https://checkr.com/blog/checkr-acquires-truework"
+   },
+   {
+    "label": "Axios Pro: Checkr buys employment verification startup Truework",
+    "url": "https://www.axios.com/pro/fintech-deals/2025/04/17/checkr-employment-verification-truework"
+   },
+   {
+    "label": "HousingWire: Checkr to acquire employment verification platform Truework",
+    "url": "https://www.housingwire.com/articles/checkr-inc-to-acquire-employment-verification-platform-truework/"
+   },
+   {
+    "label": "Truework official site",
+    "url": "https://www.truework.com/"
+   }
+  ]
+ }
+}
