@@ -1,0 +1,72 @@
+{
+ "slug": "silk",
+ "website": "https://silk.us/",
+ "excerpt": "Silk, formerly Kaminario, sells a software-defined cloud data platform that speeds up databases and cuts storage costs on AWS, Azure and Google Cloud. History, funding and alternatives.",
+ "content": "<p>Silk is a cloud storage and data platform company. Its software sits between a public cloud's infrastructure and a customer's databases and applications, and its website pitches it as a cloud data platform for the AI era that runs input/output-heavy applications up to ten times faster at up to 70% lower cost. It works on Amazon Web Services, Microsoft Azure and Google Cloud. The site lists use cases including AI inference, predictable application performance, managing database copies for development and testing, and controlling cloud costs, and it targets database administrators and analytics teams.</p><p>Silk has a long history under another name. Blocks and Files reported that it began as Kaminario, founded in 2008 as an all-flash storage array vendor, which later became a software-defined storage company and then a cloud database accelerator. Kaminario renamed itself Silk in July 2020. (A Silk spokesperson told the publication that Silk itself dates from 2019.) The CEO is Dani Golan, described in the funding announcement as founder and CEO.</p><p>In July 2021 Silk raised $55 million, led by S Capital, with existing investors Sequoia Capital, Pitango, Globespan, Ibex and Vintage, and new investors including Clal Insurance, Bank Hapoalim, Meitav Dash and Menora Mivtachim. Blocks and Files put total funding at $313 million for the combined Kaminario and Silk entity, or $90 million for Silk alone.</p><p>Customers shown on Silk's site include Sentara Health, Wayfair, eToro, HealthEquity, Franciscan Health and SimCorp. The company cites customer results such as $2.8 million in annual storage savings at Franciscan and 32 times faster analytics at Sentara Health; these are the company's own figures. Silk does not list prices on its website; its packaging is sized to each workload, and buyers contact sales.</p><p><em>This page is research, not a review. We have not tested Silk; facts come from its website and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Cloud storage and database performance",
+  "platform": "Software on AWS, Microsoft Azure and Google Cloud",
+  "starts_at": "Not published; contact sales",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Software-defined cloud storage that speeds up databases on AWS, Azure and Google Cloud",
+  "maker": {"name": "Silk Technologies (formerly Kaminario)", "url": "https://silk.us/"},
+  "team": [{"name": "Dani Golan", "role": "Founder and CEO"}],
+  "gallery": [
+   {"url": "https://silk.us/hs-fs/hubfs/Silk_square_logo_125x125.jpg", "w": 125, "h": 125, "alt": "Silk logo: the word silk in white on a bright pink square", "credit": "Logo: Silk (silk.us)"},
+   {"url": "https://silk.us/hs-fs/hubfs/Artboard%201-1.png", "w": 297, "h": 237, "alt": "Pink-to-purple line illustration of a monitor showing a rising bar chart, a pie chart and a group of people", "credit": "Image: Silk (silk.us)"}
+  ],
+  "use_cases": [
+   "Speeding up I/O-heavy databases running in the public cloud",
+   "Reducing cloud storage costs for large databases",
+   "Creating database copies for development, testing and analytics",
+   "Keeping application performance predictable during cloud migration",
+   "Feeding data to AI inference workloads"
+  ],
+  "audience": {
+   "fit": [
+    "enterprises running large, performance-sensitive databases in AWS, Azure or Google Cloud",
+    "DBA teams that need fast database copies",
+    "healthcare, financial services and retail companies, which Silk targets"
+   ],
+   "not_fit": [
+    "small apps whose cloud provider's standard storage is already fast enough",
+    "buyers who want transparent list prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Silk's website describes packaging that scales with workloads but does not list prices. Buyers contact sales for a quote.",
+   "plans": [{"name": "Silk cloud data platform", "price": "Not published", "detail": "Sized per workload"}],
+   "url": "https://silk.us/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Works across the three major public clouds",
+   "No changes needed to the database or application, the company says",
+   "Large enterprise customers in healthcare and finance"
+  ],
+  "cons": [
+   "No public pricing",
+   "Performance and savings figures are vendor claims"
+  ],
+  "alternatives": {
+   "intro": "Other ways to run high-performance database storage in the cloud.",
+   "items": [
+    {"name": "NetApp Cloud Volumes ONTAP", "url": "https://www.netapp.com/cloud-services/cloud-volumes-ontap/", "what": "NetApp's storage software running in public clouds", "difference": "Mature enterprise storage features from a long-time vendor."},
+    {"name": "Pure Storage Cloud Block Store", "url": "https://www.purestorage.com/products/cloud-block-storage.html", "what": "Pure Storage's block storage software for AWS and Azure", "difference": "Extends Pure's on-premises arrays into the cloud."},
+    {"name": "Lightbits Labs", "url": "https://www.lightbitslabs.com/", "what": "Software-defined NVMe block storage", "difference": "Focuses on high-performance NVMe over TCP."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Silk the same company as Kaminario?", "a": "Yes. Kaminario renamed itself Silk in July 2020, Blocks and Files reported."},
+   {"q": "Which clouds does Silk support?", "a": "AWS, Microsoft Azure and Google Cloud."},
+   {"q": "How much has Silk raised?", "a": "It raised $55 million led by S Capital in July 2021. Blocks and Files put total funding at $313 million including the Kaminario years."},
+   {"q": "How much does Silk cost?", "a": "Silk does not publish prices; packaging is sized to each workload through sales."}
+  ],
+  "sources": [
+   {"label": "Silk: homepage", "url": "https://silk.us/"},
+   {"label": "Blocks and Files: Silk gets $55M (July 2021)", "url": "https://blocksandfiles.com/2021/07/07/silk-gets-55m-to-supercharge-databases-in-the-cloud/"},
+   {"label": "StorageNewsletter: Silk secures $55 million Series B", "url": "https://www.storagenewsletter.com/2021/07/08/silk-secures-55-million-in-series-b-financing-round/"}
+  ]
+ }
+}

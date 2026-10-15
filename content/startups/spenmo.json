@@ -1,0 +1,72 @@
+{
+ "slug": "spenmo",
+ "website": "https://spenmo.com/",
+ "excerpt": "Spenmo was a Singapore spend management startup for bill payments, corporate cards and reimbursements. Its website says it ceased operations on 14 August 2025. History and alternatives.",
+ "content": "<p>Spenmo was a Singapore company that sold spend management software to small and mid-sized businesses in Southeast Asia. Its product, as still described on its website, covered bill payments with document scanning and approval workflows, physical and virtual Visa corporate debit cards, employee reimbursements with multi-level approvals, and integrations with accounting tools such as Xero, NetSuite and QuickBooks. Payments and cards were provided through partners licensed by the Monetary Authority of Singapore; the site notes that Spenmo itself was not licensed under the Payment Services Act.</p><p><strong>Spenmo has shut down.</strong> A notice on spenmo.com says the company ceased business operations on 14 August 2025 at 23:59:59 Singapore time, that customer dashboard access was permanently disabled, and that support for existing tickets ended on 21 August 2025.</p><p>The years before the closure were turbulent. DealStreetAsia reported in early 2022 that Spenmo raised $85.35 million in a Series B led by Tiger Global. In October 2023 DealStreetAsia reported that it was shutting down its services in the Philippines, one of its main markets. Fintech News Singapore reported in June 2025 that the company had rebranded as Summit in July 2024, repositioning around accounts-payable automation, after co-founder Mohandass Kalaichelvan stepped down as CEO and his successor, Justin Choi, left after about a month. The same report said Summit laid off 24 of its 64 employees across Singapore, Indonesia and India, under CEO Jo-Ann Chung.</p><p>There is no Spenmo product to buy or price today. Businesses that relied on it will need another spend management or accounts-payable tool; some options are listed below.</p><p><em>This page is research, not a review. We never used Spenmo; facts come from its website and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Spend management (closed)",
+  "platform": "Web and mobile app (shut down August 2025)",
+  "starts_at": "No longer available",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Singapore spend management for bills, cards and claims; shut down in August 2025",
+  "maker": {"name": "Spenmo (Digital Services SG Five Pte. Ltd.)", "url": "https://spenmo.com/"},
+  "team": [
+   {"name": "Mohandass Kalaichelvan", "role": "Co-founder; former CEO"},
+   {"name": "Jo-Ann Chung", "role": "CEO and Chief Product Officer of Summit (2025)"}
+  ],
+  "gallery": [
+   {"url": "https://spenmo.com/hubfs/Spenmo%20New%20Logo/horizontal-1.png", "w": 1200, "h": 420, "alt": "Spenmo logo: an orange S-shaped arrow mark beside the word SPENMO in dark navy capitals", "credit": "Logo: Spenmo (spenmo.com)"},
+   {"url": "https://spenmo.com/hubfs/mindmap-v9.png", "w": 3717, "h": 1563, "alt": "Diagram of Spenmo's four products on dark blue: Bill Payments, Corporate Cards, Reimbursements and Integrations, each with a short description", "credit": "Image: Spenmo (spenmo.com)"}
+  ],
+  "use_cases": [
+   "Paying supplier bills with scanning and approval workflows (historical)",
+   "Issuing virtual and physical corporate debit cards (historical)",
+   "Handling employee expense claims (historical)",
+   "Syncing spend data to Xero, NetSuite or QuickBooks (historical)"
+  ],
+  "audience": {
+   "fit": [
+    "former customers checking what happened to the service",
+    "readers researching Southeast Asia's fintech market"
+   ],
+   "not_fit": [
+    "any business looking for a spend management tool today: Spenmo has closed"
+   ]
+  },
+  "pricing": {
+   "intro": "Spenmo ceased operations on 14 August 2025, so there are no current plans or prices.",
+   "plans": [{"name": "Spenmo", "price": "Not available", "detail": "Service closed"}],
+   "url": "https://spenmo.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Combined bills, cards and reimbursements in one tool while it operated",
+   "Integrated with common accounting software"
+  ],
+  "cons": [
+   "Shut down in August 2025, with dashboard access disabled",
+   "Exited the Philippines in 2023 and cut staff before closing"
+  ],
+  "alternatives": {
+   "intro": "Spend management tools that operate in Singapore and Southeast Asia. Check each provider's site for current coverage and pricing.",
+   "items": [
+    {"name": "Aspire", "url": "https://aspireapp.com/", "what": "Business account, cards and payables for SMEs", "difference": "Singapore-based, with multi-currency business accounts."},
+    {"name": "Volopay", "url": "https://www.volopay.com/", "what": "Corporate cards, bill payments and expense management", "difference": "Covers cards, payables and reimbursements across Asia-Pacific."},
+    {"name": "Mekari Expense", "url": "https://expense.mekari.com/", "what": "Expense and spend management", "difference": "Strong in Indonesia."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Spenmo still operating?", "a": "No. Spenmo's website says it ceased operations on 14 August 2025 and that dashboard access was permanently disabled."},
+   {"q": "What was Summit?", "a": "Spenmo rebranded as Summit in July 2024 and focused on accounts-payable automation, according to Fintech News Singapore."},
+   {"q": "How much did Spenmo raise?", "a": "DealStreetAsia reported an $85.35 million Series B led by Tiger Global in early 2022."},
+   {"q": "Who founded Spenmo?", "a": "Mohandass Kalaichelvan is named as co-founder and was CEO until 2024."}
+  ],
+  "sources": [
+   {"label": "Spenmo: closure notice (spenmo.com)", "url": "https://spenmo.com/"},
+   {"label": "Fintech News Singapore: Summit (formerly Spenmo) lays off staff (June 2025)", "url": "https://fintechnews.sg/112740/fintech/summit-layoff/"},
+   {"label": "DealStreetAsia: Spenmo raises $85.35m Series B led by Tiger Global", "url": "https://www.dealstreetasia.com/stories/spenmo-seriesb-tiger-global-276081"},
+   {"label": "DealStreetAsia: Spenmo shutting down services in the Philippines (Oct 2023)", "url": "https://media.dealstreetasia.com/stories/spenmo-philippines-366298"}
+  ]
+ }
+}

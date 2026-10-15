@@ -1,0 +1,78 @@
+{
+ "slug": "rutter",
+ "website": "https://www.rutter.com/",
+ "excerpt": "Rutter is a unified API that lets fintech and B2B software companies connect to their customers' accounting, commerce and payments systems through one integration. Pricing, funding and alternatives.",
+ "content": "<p>Rutter is a New York company that sells a unified API for business financial data. Instead of building and maintaining separate integrations with QuickBooks, Xero, NetSuite, Shopify, Stripe and dozens of other systems, a software company connects once to Rutter and reads or writes its customers' data through a single, consistent interface. Its website describes the mission as connecting the world's business data, with a focus on B2B financial products such as lending, business banking, spend management and accounts payable. Products listed on its site include accounting integrations, bank feeds for QuickBooks and Xero, and an embedded ERP offering.</p><p>Rutter was co-founded by Peter Zhou (CEO) and Eric Yu (CTO). When it announced its Series A on 15 March 2022, the company said it had been started about a year earlier and had 20 employees. It raised $27 million led by Andreessen Horowitz, for total funding of $29.5 million, with a16z's Kristina Shen joining the board; other backers included Basis Set Ventures, Comma Capital and Mantis, the fund of The Chainsmokers, along with angels such as Plaid CEO Zach Perret. In its own post, a16z compared Rutter to Plaid, saying it aimed to do for commerce data what Plaid did for fintech. Y Combinator also appears among the investor logos on Rutter's about page.</p><p>Rutter's site names customers and users including Ramp, Mercury, Airwallex, Payoneer, NorthOne, Parafin and Bench. In 2022 the startup Uncapped told Rutter its integration build time fell from several weeks to a few days.</p><p>Pricing is partly public. A free starter plan gives 30 days of building with sandbox data and trial access to QuickBooks, Xero, FreshBooks and Zoho Books integrations, with no credit card. The Full Access plan, which adds live production access and platforms such as NetSuite, QuickBooks Desktop and Sage Intacct, is quoted on request.</p><p><em>This page is research, not a review. We have not built on Rutter; facts come from its pages and a16z's announcement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Unified API for accounting and commerce data",
+  "platform": "Developer API",
+  "starts_at": "Free starter plan; production by quote",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "One API to connect to customers' accounting, commerce and payments platforms",
+  "maker": {"name": "Rutter", "url": "https://www.rutter.com/"},
+  "team": [
+   {"name": "Peter Zhou", "role": "Co-founder and CEO"},
+   {"name": "Eric Yu", "role": "Co-founder and CTO"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/6420a9777e674a070ce59910/661d2888d56c8de95ee460ac_feb65dcff93f06dcbddbc8fd0fa4fcd4_rutter-open-graph.png", "w": 1200, "h": 630, "alt": "Rutter banner on a purple gradient reading The Unified API for integrated B2B financial products, with the Rutter logo", "credit": "Image: Rutter (rutter.com)"}
+  ],
+  "use_cases": [
+   "Pulling a small business's accounting data for lending or underwriting",
+   "Pushing transactions into QuickBooks or Xero as bank feeds",
+   "Syncing expenses and bills from a spend management app to the customer's ledger",
+   "Reading orders and payouts from e-commerce and payment platforms",
+   "Adding ERP integrations such as NetSuite and Sage Intacct"
+  ],
+  "audience": {
+   "fit": [
+    "fintechs serving small and mid-sized businesses",
+    "B2B SaaS companies that need many accounting integrations quickly",
+    "business banks and lenders that underwrite from accounting data"
+   ],
+   "not_fit": [
+    "companies that need only one integration they can build themselves",
+    "teams that want a published production price list"
+   ]
+  },
+  "pricing": {
+   "intro": "From Rutter's pricing page, checked 15 October 2026. No dollar amounts are listed.",
+   "plans": [
+    {"name": "Free Starter", "price": "Free", "detail": "30 days of building, sandbox data, trial QuickBooks, Xero, FreshBooks and Zoho Books integrations"},
+    {"name": "Full Access", "price": "Custom quote", "detail": "Unlimited live production access, all platforms, onboarding and support"}
+   ],
+   "url": "https://www.rutter.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "One integration covers many accounting and commerce systems",
+   "Free sandbox to start building",
+   "Used by well-known fintechs such as Ramp and Mercury"
+  ],
+  "cons": [
+   "Production pricing is quote-only",
+   "Adds a third-party dependency between you and your customers' data"
+  ],
+  "alternatives": {
+   "intro": "Other unified APIs for accounting and business data.",
+   "items": [
+    {"name": "Codat", "url": "https://www.codat.io/", "what": "Unified API for small-business accounting, banking and commerce data", "difference": "UK-founded, with a strong lending and banking focus."},
+    {"name": "Merge", "url": "https://www.merge.dev/", "what": "Unified API across accounting, HR, CRM and ticketing", "difference": "Covers many software categories beyond finance."},
+    {"name": "Railz", "url": "https://www.railz.ai/", "what": "Accounting data API for financial institutions", "difference": "Aimed at banks and lenders."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Rutter do?", "a": "It gives software companies one API to read and write their customers' data in accounting, commerce and payments platforms."},
+   {"q": "Who founded Rutter?", "a": "Peter Zhou (CEO) and Eric Yu (CTO), according to Rutter's about page."},
+   {"q": "How much has Rutter raised?", "a": "It announced a $27 million Series A led by Andreessen Horowitz in March 2022, for $29.5 million in total at that time."},
+   {"q": "Is Rutter free?", "a": "A free starter plan covers 30 days of building with sandbox data. Live production use is priced by custom quote."}
+  ],
+  "sources": [
+   {"label": "Rutter: about", "url": "https://www.rutter.com/about"},
+   {"label": "Rutter: pricing", "url": "https://www.rutter.com/pricing"},
+   {"label": "Rutter: Series A announcement (March 2022)", "url": "https://www.rutter.com/blog/series-a"},
+   {"label": "a16z: Investing in Rutter", "url": "https://a16z.com/announcement/investing-in-rutter/"}
+  ]
+ }
+}
