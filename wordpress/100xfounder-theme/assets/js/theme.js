@@ -325,6 +325,15 @@
     var showMine = function () { var s = stats(mine()); if (mineEl && s.all) { mineEl.textContent = sumLine(s) + ' →'; mineEl.hidden = false; } };
     var counted = function () { if (btn) { btn.disabled = true; btn.lastChild.textContent = 'Counted today'; } };
     showMine();
+    // A static copy of this page (astro/) can be days old: show the current level, not the one it was built with.
+    var lvUrl = (m.getAttribute('data-endpoint') || '').replace(/meter$/, 'meter-levels');
+    if (lvUrl && lvlEl && window.fetch) fetch(lvUrl + '?ids=' + id).then(function (r) { return r.json(); }).then(function (o) {
+      var i = o && o[id], st = m.querySelector('[data-meter-stage]'), tp = m.querySelector('[data-meter-taps]');
+      if (!i || typeof i.level !== 'number' || i.level === +lvlEl.textContent) return;
+      lvlEl.textContent = i.level; if (arc) arc.setAttribute('data-to', i.level); meterSet(m, i.level);
+      if (st && i.stage) st.textContent = i.stage;
+      if (tp && typeof i.taps_30d === 'number') { tp.textContent = i.taps_30d; tp.nextSibling.textContent = (i.taps_30d === 1 ? ' tap' : ' taps') + ' \u00b7 30 days'; }
+    }).catch(function () {});
     if (lsGet('xf_meter_' + id) === meterDay) { counted(); if (msg) msg.textContent = lvlMsg(+lvlEl.textContent); }
     if (!btn) return;
     btn.addEventListener('click', function () {

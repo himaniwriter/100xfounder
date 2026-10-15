@@ -1,0 +1,19 @@
+---
+// Every other public route (startup listings, guides, events, pages, tools, archives, jobs...): the default
+// for anything without a native template. WordPress renders the page as a logged-out visitor
+// (GET /wp-json/xf/v1/headless/page, includes/headless.php) and this writes it out unchanged, so the
+// output matches WordPress exactly. astro/fetch.py fetches the pages incrementally into .cache/ and lists
+// them in .cache/build.json; with no list (fetch.py not run) this route builds nothing.
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import WpPage from '../layouts/WpPage.astro';
+
+export function getStaticPaths() {
+  const list = join(process.cwd(), '.cache', 'build.json'); // the build runs in astro/ (deploy.sh)
+  if (!existsSync(list)) return [];
+  return JSON.parse(readFileSync(list, 'utf8')).map((e) => ({ params: { path: e.path.replace(/^\/|\/$/g, '') }, props: { file: e.file } }));
+}
+
+const g = JSON.parse(readFileSync(Astro.props.file, 'utf8'));
+---
+<WpPage path={g.path} chrome={g}><Fragment set:html={g.main} /></WpPage>

@@ -40,3 +40,4 @@ astro/.astro/
 astro/.upload-manifest.json
 astro/dist-skipped/
 astro/.deploy.lock/
+astro/.cache/

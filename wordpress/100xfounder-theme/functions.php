@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('XFT_VERSION', '2.8.1');
+define('XFT_VERSION', '2.8.2');
 
 require_once __DIR__ . '/inc-tabs.php';
 

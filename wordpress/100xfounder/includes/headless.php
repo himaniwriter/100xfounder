@@ -491,3 +491,248 @@ function xf_headless_reveal_probe($id) {
     }
     return array_values(array_unique($out));
 }
+
+
+/* ---- Every other public route: generic pages (astro/src/pages/[...path].astro) ----
+ *
+ *   GET /wp-json/xf/v1/headless/urls?type=startup|single|page|archive|job|translation|all
+ *        public URLs with modified_gmt and a version ("ver") that changes when the page's render would
+ *        (post saved, drip/thin robots flipped, ratings or reviews changed; listings also every 3 hours)
+ *   GET /wp-json/xf/v1/headless/page?path=/startup/x/
+ *        WordPress's own render of that URL as a logged-out visitor, split into head, header, <main> and
+ *        footer. Only paths in the urls list are served, so drafts, previews, password-protected and
+ *        private pages (feature, unsubscribe, launch) never are. A page whose render mints a WordPress
+ *        nonce has per-request state and comes back as 409 (WordPress keeps serving it).
+ */
+add_action('rest_api_init', function () {
+    register_rest_route('xf/v1', '/headless/urls', [
+        'methods' => 'GET',
+        'permission_callback' => '__return_true',
+        'args' => ['type' => ['type' => 'string', 'default' => 'all']],
+        'callback' => function (WP_REST_Request $r) {
+            $type = sanitize_key((string) $r['type']);
+            $items = [];
+            foreach (xf_headless_url_index() as $path => $u) {
+                if ($type === 'all' || $u['type'] === $type) {
+                    $items[] = ['path' => $path] + $u;
+                }
+            }
+            $res = new WP_REST_Response(['urls' => $items, 'count' => count($items), 'code_ver' => xf_headless_code_ver(), 'built' => gmdate('c')]);
+            $res->header('Cache-Control', 'no-cache');
+            return $res;
+        },
+    ]);
+    register_rest_route('xf/v1', '/headless/page', [
+        'methods' => 'GET',
+        'permission_callback' => '__return_true',
+        'args' => ['path' => ['type' => 'string', 'required' => true]],
+        'callback' => 'xf_headless_page_rest',
+    ]);
+});
+
+/** Paths WordPress always serves itself: forms with per-request handling and private pages. */
+function xf_headless_private_paths() {
+    $out = ['/launch/', '/search/'];
+    foreach (['feature', 'unsubscribe'] as $key) {
+        $id = (int) (get_option('xf_pages', [])[$key] ?? 0);
+        if ($id) {
+            $out[] = (string) wp_parse_url(get_permalink($id), PHP_URL_PATH);
+        }
+    }
+    return $out;
+}
+
+/** True for a path the static rule can map onto astro{path}index.html. */
+function xf_headless_path_ok($path) {
+    return (bool) preg_match('~^/(?:[a-z0-9-]+/)+$~', $path) && !preg_match('~^/(?:wp-[^/]*|astro|feed|comments|page)/|/feed/$~', $path)
+        && !in_array($path, xf_headless_private_paths(), true);
+}
+
+/** path => [type, modified_gmt, ver] for every public URL; cached 10 minutes. */
+function xf_headless_url_index() {
+    $gen = (int) get_option('xf_hl_gen');
+    $key = 'xf_hl_urls_' . md5($gen . '|' . xf_headless_code_ver() . '|' . floor(time() / 600));
+    $out = get_transient($key);
+    if (is_array($out)) {
+        return $out;
+    }
+    global $wpdb;
+    $out = [];
+    $rated = [];
+    foreach ((array) $wpdb->get_results('SELECT path_hash, updated_at FROM ' . xf_table('ratings')) as $row) {
+        $rated[$row->path_hash] = $row->updated_at;
+    }
+    $reviewed = [];
+    foreach ((array) $wpdb->get_results('SELECT post_id, MAX(COALESCE(moderated_at, created_at)) AS t, COUNT(*) AS n FROM ' . xf_table('reviews') . " WHERE status = 'approved' GROUP BY post_id") as $row) {
+        $reviewed[(int) $row->post_id] = $row->t . '/' . $row->n;
+    }
+    $skip = ['post', 'attachment', 'xf_lead', 'xf_submission'];
+    $types = array_values(array_diff(get_post_types(['public' => true]), $skip));
+    $types[] = 'post'; // translations only (English articles have their own route)
+    $in = implode(',', array_fill(0, count($types), '%s'));
+    $rows = $wpdb->get_results($wpdb->prepare(
+        "SELECT p.ID, p.post_type, p.post_modified_gmt, l.meta_value AS lang FROM {$wpdb->posts} p
+         LEFT JOIN {$wpdb->postmeta} l ON l.post_id = p.ID AND l.meta_key = '_xf_ai_lang'
+         WHERE p.post_type IN ($in) AND p.post_status = 'publish' AND p.post_password = '' ORDER BY p.ID",
+        ...$types
+    ));
+    _prime_post_caches(array_map('intval', wp_list_pluck($rows, 'ID')), false, true);
+    $front = (int) get_option('page_on_front');
+    $latest = '';
+    foreach ($rows as $r) {
+        $latest = max($latest, $r->post_modified_gmt);
+        if ((int) $r->ID === $front || ($r->post_type === 'post' && !$r->lang)) {
+            continue;
+        }
+        $path = (string) wp_parse_url(get_permalink((int) $r->ID), PHP_URL_PATH);
+        if (!xf_headless_path_ok($path)) {
+            continue;
+        }
+        $type = $r->lang ? 'translation' : ($r->post_type === 'xf_startup' ? 'startup' : ($r->post_type === 'xf_job' ? 'job' : ($r->post_type === 'page' ? 'page' : 'single')));
+        $held = function_exists('xf_index_held') && xf_index_held((int) $r->ID) ? 'held' : 'open';
+        $out[$path] = ['type' => $type, 'modified_gmt' => $r->post_modified_gmt,
+            'ver' => substr(md5($r->post_modified_gmt . '|' . $held . '|' . ($rated[xf_rating_hash($path)] ?? '') . '|' . ($reviewed[(int) $r->ID] ?? '')), 0, 12)];
+    }
+    // Listings and virtual pages show other content: refresh on any change, and every 3 hours.
+    $listing = function ($url, $type) use (&$out, $latest, $rated) {
+        $path = is_string($url) ? (string) wp_parse_url($url, PHP_URL_PATH) : '';
+        if ($path && !isset($out[$path]) && xf_headless_path_ok($path)) {
+            $out[$path] = ['type' => $type, 'modified_gmt' => $latest,
+                'ver' => substr(md5($latest . '|' . ($rated[xf_rating_hash($path)] ?? '') . '|' . floor(time() / (3 * HOUR_IN_SECONDS))), 0, 12)];
+        }
+    };
+    foreach ($out as $path => $u) {
+        if ($u['type'] === 'page') { // pages list live data (leaderboard, events, funding tracker)
+            $out[$path]['ver'] = substr(md5($u['ver'] . '|' . $latest . '|' . floor(time() / (3 * HOUR_IN_SECONDS))), 0, 12);
+        }
+    }
+    $landing = get_transient('xf_landing_urls');
+    if (!is_array($landing) && function_exists('xf_landing_urls')) {
+        $landing = xf_landing_urls();
+        set_transient('xf_landing_urls', $landing, 6 * HOUR_IN_SECONDS);
+    }
+    foreach ((array) $landing as $u) {
+        $listing($u, 'page');
+    }
+    if (function_exists('xf_fr_sitemap_urls')) {
+        foreach (xf_fr_sitemap_urls() as $u) {
+            $listing($u['loc'], 'page');
+        }
+    }
+    foreach (['category', 'xf_industry', 'xf_stage', 'xf_company'] as $tax) {
+        if (taxonomy_exists($tax)) {
+            foreach ((array) get_terms(['taxonomy' => $tax, 'hide_empty' => true]) as $t) {
+                if ($t instanceof WP_Term) {
+                    $listing(get_term_link($t), 'archive');
+                }
+            }
+        }
+    }
+    foreach (get_users(['has_published_posts' => ['post'], 'fields' => 'ID']) as $uid) {
+        $listing(get_author_posts_url((int) $uid), 'archive');
+    }
+    set_transient($key, $out, 10 * MINUTE_IN_SECONDS);
+    return $out;
+}
+
+/** Like xf_headless_route(), but the routed query is the main query, so main-query hooks (pre_get_posts) apply. */
+function xf_headless_route_main($path) {
+    global $wp;
+    $_SERVER['REQUEST_URI'] = $path;
+    $_SERVER['QUERY_STRING'] = '';
+    unset($_SERVER['PATH_INFO'], $_SERVER['ORIG_PATH_INFO']);
+    $_GET = [];
+    $wp->parse_request();
+    $q = new WP_Query();
+    $GLOBALS['wp_the_query'] = $GLOBALS['wp_query'] = $q;
+    $q->query($wp->query_vars);
+    $wp->handle_404();
+    $wp->register_globals();
+    do_action_ref_array('wp', [&$wp]);
+}
+
+function xf_headless_page_rest(WP_REST_Request $r) {
+    $path = '/' . ltrim((string) wp_parse_url((string) $r['path'], PHP_URL_PATH), '/');
+    $index = xf_headless_url_index();
+    if (!isset($index[$path])) {
+        return new WP_REST_Response(['error' => 'not_found'], 404);
+    }
+    $key = 'xf_hl_page_' . md5($path . '|' . $index[$path]['ver'] . '|' . (int) get_option('xf_hl_gen') . '|' . xf_headless_code_ver());
+    $packed = get_transient($key);
+    $data = is_string($packed) ? json_decode((string) gzuncompress((string) base64_decode($packed)), true) : null;
+    if (!is_array($data)) {
+        $uid = get_current_user_id();
+        wp_set_current_user(0);
+        xf_headless_route_main($path);
+        $data = xf_headless_page($path);
+        wp_set_current_user($uid);
+        if (empty($data['error'])) {
+            $data += $index[$path];
+            // Compressed: a page is 50-150 KB of HTML and a full build asks for a few thousand.
+            set_transient($key, base64_encode(gzcompress((string) wp_json_encode($data), 6)), HOUR_IN_SECONDS);
+        }
+    }
+    $code = empty($data['error']) ? 200 : ($data['error'] === 'per_request_state' ? 409 : 404);
+    $res = new WP_REST_Response($data, $code);
+    $res->header('Cache-Control', 'no-cache');
+    return $res;
+}
+
+/** The routed URL rendered exactly as WordPress serves it to a visitor, split around <main>. */
+function xf_headless_page($path) {
+    if (is_404() || is_feed() || is_search() || is_preview() || is_front_page()) {
+        return ['error' => 'not_routed'];
+    }
+    if (is_singular()) {
+        $post = get_queried_object();
+        if (!$post || $post->post_status !== 'publish' || $post->post_password !== '' || strpos($path, (string) wp_parse_url(get_permalink($post), PHP_URL_PATH)) !== 0) { // /tools/x/ is the tools page
+            return ['error' => 'not_routed'];
+        }
+    }
+    $nonces = [];
+    $spy = function ($uid, $action) use (&$nonces) {
+        $nonces[] = $action;
+        return $uid;
+    };
+    $page = '';
+    $grab = function ($html) use (&$page) {
+        $page = (string) $html;
+        return $html;
+    };
+    add_filter('nonce_user_logged_out', $spy, 10, 2);
+    add_filter('wp_template_enhancement_output_buffer', $grab, PHP_INT_MAX);
+    xf_headless_chrome($path);
+    remove_filter('wp_template_enhancement_output_buffer', $grab, PHP_INT_MAX);
+    remove_filter('nonce_user_logged_out', $spy, 10);
+    // Script registration mints nonces it never prints; only a nonce that is on the page goes stale.
+    $nonces = array_values(array_filter(array_unique($nonces), function ($a) use ($page) {
+        return strpos($page, wp_create_nonce($a)) !== false;
+    }));
+    if ($nonces) {
+        return ['error' => 'per_request_state', 'nonces' => $nonces];
+    }
+    // What external-links.php does to every front-end page (it skips REST requests).
+    if (function_exists('xf_cap_external_links')) {
+        $page = xf_cap_external_links($page, xf_external_link_cap($path));
+    }
+    $open = stripos($page, '<main id="main">');
+    $close = strripos($page, '</main>');
+    if ($open === false || $close === false || !preg_match('~<head>(.*?)</head>~is', $page, $head)
+        || !preg_match('~<html\b[^>]*\blang="([^"]*)"~i', $page, $lang) || !preg_match('~<body\b[^>]*>~i', $page, $body, PREG_OFFSET_CAPTURE)) {
+        return ['error' => 'unparsed'];
+    }
+    $after = substr($page, $close + 7);
+    $end = strripos($after, '</body>');
+    return [
+        'path' => $path,
+        'lang' => $lang[1],
+        'body_class' => preg_match('~class="([^"]*)"~', $body[0][0], $c) ? $c[1] : '',
+        'head' => $head[1],
+        'header' => substr($page, $body[0][1] + strlen($body[0][0]), $open - $body[0][1] - strlen($body[0][0])),
+        'main_tail' => '',
+        'main' => substr($page, $open + 16, $close - $open - 16),
+        'footer' => $end === false ? $after : substr($after, 0, $end),
+        'reveal_probe' => is_singular() ? xf_headless_reveal_probe(get_queried_object_id()) : [],
+        'built' => gmdate('c'),
+    ];
+}

@@ -159,7 +159,7 @@ function xf_meter_levels(WP_REST_Request $r) {
         foreach ($ids as $id) {
             if (get_post_type($id) === 'xf_startup' && get_post_status($id) === 'publish') {
                 $level = xf_meter_level(get_post_meta($id, '_xf_meter_30d', true));
-                $out[$id] = ['level' => $level, 'stage' => xf_meter_stage($level), 'name' => html_entity_decode(wp_strip_all_tags(get_the_title($id)), ENT_QUOTES, 'UTF-8'), 'url' => get_permalink($id)];
+                $out[$id] = ['level' => $level, 'stage' => xf_meter_stage($level), 'taps_30d' => (int) get_post_meta($id, '_xf_meter_30d', true), 'name' => html_entity_decode(wp_strip_all_tags(get_the_title($id)), ENT_QUOTES, 'UTF-8'), 'url' => get_permalink($id)];
             }
         }
         set_transient($key, $out, 5 * MINUTE_IN_SECONDS);

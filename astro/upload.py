@@ -7,12 +7,15 @@ wordpress/deploy/deploy-hostinger-api.py, copied so astro/ stands alone).
                                            (manifest: astro/.upload-manifest.json), then blank (zero-byte
                                            index.html) every page uploaded before that is not in dist/
                                            any more, so the .htaccess -s test hands it back to WordPress
+  python3 upload.py blank .cache/stage-A.txt  upload a zero-byte index.html over every listed path that is live
+                                           (one stage's rollback: WordPress serves those URLs again)
   python3 upload.py htaccess on|off        add/remove the "/" -> /astro/index.html block in public_html/.htaccess
   python3 upload.py htaccess status        print whether the block is live
 
 The API token comes from the macOS Keychain (service 100xfounder-hostinger), or HOSTINGER_API_TOKEN
 in the environment. It is never printed or written to disk.
 """
+import concurrent.futures as cf
 import hashlib
 import json
 import os
@@ -20,6 +23,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -32,8 +36,8 @@ UA = {'User-Agent': '100xfounder-astro/1.0', 'Accept': 'application/json'}
 HERE = os.path.dirname(os.path.abspath(__file__))
 BEGIN, END = '# BEGIN 100xFounder Astro', '# END 100xFounder Astro'
 
-# Serve a static page for a plain anonymous GET/HEAD of a trailing-slash URL when the build has a
-# non-empty astro{URI}index.html for it ("/" and every article). Anything not built (wp-admin, wp-json,
+# Serve a static page for a plain anonymous GET/HEAD of a trailing-slash URL (any depth: /, /{slug}/,
+# /startup/{slug}/, /jobs/company/x/...) when the build has a non-empty astro{URI}index.html for it. Anything not built (wp-admin, wp-json,
 # feeds, sitemaps, /page/2/, drafts) and every logged-in, commenter or preview request stays WordPress.
 # A zero-byte index.html (an unpublished or skipped post) fails -s, so WordPress answers (404/410).
 BLOCK = BEGIN + r'''
@@ -46,7 +50,9 @@ RewriteCond %{THE_REQUEST} !^[A-Z]+\s/astro/_astro/
 RewriteRule ^astro/ - [E=XF_ASTRO_NOINDEX:1]
 RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)$
 RewriteCond %{QUERY_STRING} ^$
-RewriteCond %{REQUEST_URI} ^/(?:[a-z0-9-]+/)?$
+RewriteCond %{REQUEST_URI} ^/(?:[a-z0-9-]+/)*$
+RewriteCond %{REQUEST_URI} !^/(?:wp-[^/]*|astro|feed|comments)/
+RewriteCond %{REQUEST_URI} !/feed/$
 RewriteCond %{HTTP_COOKIE} !(wordpress_logged_in|comment_author_|wp-postpass_) [NC]
 RewriteCond %{DOCUMENT_ROOT}/astro%{REQUEST_URI}index.html -s
 RewriteRule ^ /astro%{REQUEST_URI}index.html [L,E=XF_ASTRO_HOME:1]
@@ -187,26 +193,75 @@ def sync(src, dest):
     if not todo and not gone:
         print(dest, 'nothing changed')
         return []
+    creds = [upload_creds()]
+    fails = []
+    lock = threading.Lock()
+    with tempfile.TemporaryDirectory() as tmp:
+        empty = os.path.join(tmp, 'empty')
+        open(empty, 'wb').close()
+
+        def one(rel):
+            local, h = (files[rel], digest(files[rel])) if rel in files else (empty, 'blank')
+            for i in range(5):
+                try:
+                    upload(creds[0], local, dest + '/' + rel)
+                    break
+                except BaseException:  # noqa: BLE001 - retry with fresh credentials, backing off
+                    time.sleep(5 * (i + 1))
+                    with lock:
+                        creds[0] = upload_creds()
+            else:
+                return fails.append(rel)
+            with lock:
+                seen[rel] = h
+                with open(MANIFEST, 'w', encoding='utf-8') as f:
+                    json.dump(seen, f, indent=0, sort_keys=True)
+
+        # Assets first, then pages 4 at a time, the home last, so no page points at a missing asset.
+        assets = [r for r in todo if not r.endswith('.html')]
+        pages = [r for r in todo + gone if r.endswith('.html') and r != 'index.html']
+        for rel in assets:
+            one(rel)
+        with cf.ThreadPoolExecutor(4) as ex:
+            list(ex.map(one, pages))
+        if 'index.html' in todo:
+            one('index.html')
+    print(dest, len(todo), 'uploaded,', len(gone), 'blanked', gone, 'fails:', fails, flush=True)
+    return fails
+
+
+def blank(listfile):
+    """Blank (zero-byte) every live page whose path is listed, so the .htaccess -s test hands it to WordPress."""
+    try:
+        with open(MANIFEST, encoding='utf-8') as f:
+            seen = json.load(f)
+    except (OSError, ValueError):
+        seen = {}
+    with open(listfile, encoding='utf-8') as f:
+        rels = [p.strip().strip('/') + '/index.html' for p in f if p.strip().strip('/')]
+    rels = [r for r in rels if seen.get(r) not in (None, 'blank')]
+    if not rels:
+        print('nothing live in', listfile)
+        return []
     c = upload_creds()
     fails = []
     with tempfile.TemporaryDirectory() as tmp:
         empty = os.path.join(tmp, 'empty')
         open(empty, 'wb').close()
-        for rel in todo + gone:
-            local, h = (files[rel], digest(files[rel])) if rel in files else (empty, 'blank')
+        for rel in rels:
             for _ in range(5):
                 try:
-                    upload(c, local, dest + '/' + rel)
-                    seen[rel] = h
+                    upload(c, empty, 'astro/' + rel)
+                    seen[rel] = 'blank'
                     break
                 except BaseException:  # noqa: BLE001 - retry with fresh credentials
                     time.sleep(5)
                     c = upload_creds()
             else:
                 fails.append(rel)
-            with open(MANIFEST, 'w', encoding='utf-8') as f:
-                json.dump(seen, f, indent=0, sort_keys=True)
-    print(dest, len(todo), 'uploaded,', len(gone), 'blanked', gone, 'fails:', fails, flush=True)
+    with open(MANIFEST, 'w', encoding='utf-8') as f:
+        json.dump(seen, f, indent=0, sort_keys=True)
+    print(len(rels) - len(fails), 'blanked, fails:', fails, flush=True)
     return fails
 
 
@@ -275,6 +330,8 @@ if __name__ == '__main__':
     args = sys.argv[1:]
     if args[:1] in (['push'], ['sync']) and len(args) == 3:
         sys.exit(1 if (push if args[0] == 'push' else sync)(args[1], args[2]) else 0)
+    elif args[:1] == ['blank'] and len(args) == 2:
+        sys.exit(1 if blank(args[1]) else 0)
     elif args[:1] == ['htaccess'] and args[1:] in (['on'], ['off']):
         write_htaccess(args[1] == 'on')
     elif args == ['htaccess', 'status']:
