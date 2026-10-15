@@ -185,11 +185,16 @@
   // Reading progress for browsers without scroll-driven animations.
   var prog = document.querySelector('.prog');
   if (prog && !(window.CSS && CSS.supports && CSS.supports('animation-timeline: scroll()'))) {
+    var h = 0, queued = false;
+    var measure = function () { h = document.documentElement.scrollHeight - window.innerHeight; };
     var tick = function () {
-      var h = document.documentElement.scrollHeight - window.innerHeight;
+      queued = false;
       prog.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, window.scrollY / h) : 0) + ')';
     };
-    window.addEventListener('scroll', tick, { passive: true });
+    measure();
+    window.addEventListener('resize', measure, { passive: true });
+    window.addEventListener('load', measure);
+    window.addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(tick); } }, { passive: true });
     tick();
   }
 
@@ -398,23 +403,28 @@
     });
   });
 
-  // Smooth scrolling for mouse and trackpad. Phones keep their own touch
-  // scrolling, and anyone who has asked their device for less motion gets the
-  // browser's ordinary scroll. Sideways scrollers (tables, photo strips) and
-  // ad frames are left alone, so they scroll and click exactly as before.
+  // Smooth scrolling for notched mouse wheels only. Trackpads and touch already
+  // have the system's own momentum; layering Lenis on top made reversing feel
+  // laggy, so they keep native scrolling. Lenis starts on the first wheel event
+  // that looks like a mouse notch (line mode, or a large whole-number step).
   if (window.Lenis && window.matchMedia &&
       !matchMedia('(prefers-reduced-motion: reduce)').matches &&
       matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    var lenis = new Lenis({
-      autoRaf: true,
-      lerp: 0.11,
-      smoothWheel: true,
-      allowNestedScroll: true,
-      anchors: { offset: -120 },
-      prevent: function (node) {
-        return !!(node && node.closest && node.closest('.xf-tablewrap, .strip, iframe, [data-lenis-prevent], .ins, ins.adsbygoogle'));
-      }
-    });
-    window.xfLenis = lenis;
+    var sniff = function (e) {
+      var notch = e.deltaMode === 1 || (e.deltaX === 0 && Math.abs(e.deltaY) >= 50 && e.deltaY % 1 === 0);
+      window.removeEventListener('wheel', sniff);
+      if (!notch) return;
+      window.xfLenis = new Lenis({
+        autoRaf: true,
+        lerp: 0.16,
+        smoothWheel: true,
+        allowNestedScroll: true,
+        anchors: { offset: -120 },
+        prevent: function (node) {
+          return !!(node && node.closest && node.closest('.xf-tablewrap, .strip, iframe, [data-lenis-prevent], .ins, ins.adsbygoogle'));
+        }
+      });
+    };
+    window.addEventListener('wheel', sniff, { passive: true });
   }
 })();
