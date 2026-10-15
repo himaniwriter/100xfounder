@@ -400,7 +400,8 @@ function xf_indexnow_submit(array $urls) {
 
 /** Published and updated pages are collected and sent in one batch a minute later (a job sync can publish hundreds). */
 add_action('transition_post_status', function ($new, $old, $post) {
-    if (($new !== 'publish' && $old !== 'publish') || !in_array($post->post_type, ['post', 'page', 'xf_startup', 'xf_spotlight', 'xf_event', 'xf_round', 'xf_job', 'xf_guide'], true) || !xf_indexnow_allowed()) {
+    if (($new !== 'publish' && $old !== 'publish') || !in_array($post->post_type, ['post', 'page', 'xf_startup', 'xf_spotlight', 'xf_event', 'xf_round', 'xf_job', 'xf_guide'], true) || !xf_indexnow_allowed()
+        || ($new === 'publish' && xf_is_noindexed($post->ID))) { // thin or drip-held pages are sent when released
         return;
     }
     $pending = (array) get_option('xf_indexnow_pending', []);

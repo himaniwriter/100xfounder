@@ -5,6 +5,8 @@ if (!defined('ABSPATH')) {
 
 /* -------------------------------------------------------------------------
  * Indexing policy (owner, 2026-10-09): every public page is indexable except
+ * [2026-10-15: thin pages and drip-held new pages are noindexed again by index-control.php, which runs after this.]
+ *
  * tag archives (/tag/…), which stay noindex,follow and out of the sitemap.
  * The only other exceptions are the private, token-based feature and
  * unsubscribe pages, which have no content of their own.
