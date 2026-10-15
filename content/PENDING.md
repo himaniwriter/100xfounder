@@ -67,7 +67,7 @@ Scheduled task `pending-work-2026-10-15` works through this list. Tick items off
 
 ## Status 2026-10-15 13:30
 
-- [x] Foley (A3): contact #44 is marked bounced (14 Oct 04:40) but has no send recorded (step 0, last_sent_at NULL) and no email_log row, so the bounce may be a false match. Owner decision: re-queue it or leave it suppressed.
+- [x] Foley (A3): real bounce. The campaign log shows it was emailed, and the new guarded /xf/v1/unsuppress refused to lift it. It stays suppressed.
 - [x] 10 PH-group profiles published today (see ph-group/_PUBLISHED.md). A second, overlapping 13:00 run was stopped before it published anything (pace stays 10/day). Website, PH link and tagline meta are now REST-registered and set for all 10, so Visit buttons work.
 - [x] wp-cron: the old 5-minute server job pointed to a missing path and never ran; replaced with /home/u840917216/domains/100xfounder.com/public_html/wp-cron.php.
 - [x] Outreach inbox sync works (scanned 7 messages, 0 from outreach addresses so far).

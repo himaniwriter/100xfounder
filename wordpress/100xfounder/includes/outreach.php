@@ -219,6 +219,36 @@ function xf_suppress_email($email, $reason) {
 }
 
 /**
+ * Lifts a 'bounced' mark from an address we never actually emailed (a false bounce match).
+ * Unsubscribes, and bounces after a real send, can never be lifted. Admins only:
+ * POST /xf/v1/unsuppress {email}.
+ */
+function xf_unsuppress_unsent_bounce($email) {
+    global $wpdb;
+    $email = strtolower(sanitize_email($email));
+    $reason = $wpdb->get_var($wpdb->prepare('SELECT reason FROM ' . xf_table('suppressions') . ' WHERE email = %s', $email));
+    if ($reason !== 'bounced') {
+        return new WP_Error('xf_not_bounced', 'Only a bounced address can be lifted (this one is: ' . ($reason ?: 'not suppressed') . ').', ['status' => 400]);
+    }
+    $sent = $wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM ' . xf_table('email_log') . " WHERE email = %s AND status IN ('sent','replied','bounced')", $email))
+        + $wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM ' . xf_table('contacts') . ' WHERE email = %s AND last_sent_at IS NOT NULL', $email));
+    if ($sent) {
+        return new WP_Error('xf_real_bounce', 'This address was emailed before, so the bounce is real; leaving it suppressed.', ['status' => 400]);
+    }
+    $wpdb->delete(xf_table('suppressions'), ['email' => $email]);
+    $wpdb->query($wpdb->prepare('UPDATE ' . xf_table('contacts') . " SET status = 'queued', next_send_at = %s, updated_at = %s WHERE email = %s AND status = 'bounced'", xf_now(), xf_now(), $email));
+    return ['email' => $email, 'lifted' => true];
+}
+
+add_action('rest_api_init', function () {
+    register_rest_route('xf/v1', '/unsuppress', [
+        'methods' => 'POST',
+        'permission_callback' => function () { return current_user_can('manage_options'); },
+        'callback' => function (WP_REST_Request $r) { return xf_unsuppress_unsent_bounce((string) $r->get_param('email')); },
+    ]);
+});
+
+/**
  * Reads the outreach mailbox over IMAP (needs PHP's imap extension) and reports
  * which of $emails replied and which bounced since $since (a Unix time).
  * Shared by the founder sequence and the campaign dashboard.
