@@ -1,0 +1,150 @@
+{
+ "slug": "onlinepajak",
+ "website": "https://www.online-pajak.com/",
+ "excerpt": "OnlinePajak is an Indonesian platform for tax payment and filing, e-invoicing and business transactions. Pricing, funding and alternatives.",
+ "content": "<p>OnlinePajak is an Indonesian financial technology company that helps businesses and individuals deal with tax. It was founded by Charles Guinot and launched in September 2015 as a web application for calculating, paying and reporting taxes on one platform. Indonesian tax rules and forms are complicated, and OnlinePajak's pitch is that a business can handle them, and the paperwork around them, from one place.</p><p>Its current website, in Indonesian, describes 'all business transactions in one platform'. Products include e-Faktur (VAT invoices) and e-BuPot (withholding tax slips), invoicing with e-signature and e-Meterai (digital duty stamps), payment of all major tax types such as PPh 21, PPh 23, PPh 25, PPN, the 0.5% final tax for small businesses and land and building tax, annual and periodic tax returns (SPT) for companies and individuals, reconciliation, invoice payment and collection, and invoice-based business financing. It also offers integrations and an API, and targets sectors including e-commerce and marketplaces, banking and financial services, and logistics. Logos on the site include BNI, Tokopedia, Amway and DANA.</p><p>In late 2017 OnlinePajak raised a Series A led by Alpha JWC Ventures with Sequoia India. In October 2018 it announced a Series B of more than $25 million led by an affiliate of Warburg Pincus, with Global Innovation Fund and Endeavor Catalyst and existing investors Alpha JWC, Sequoia India and Primedge. At the time it said it had more than 900,000 users and used a freemium model, with paid features such as invoicing and payroll.</p><p>OnlinePajak's pricing page lists a Standard plan at Rp5,000 per standard transaction using prepaid credits, or Rp25,000 when paying per transaction, plus a free trial quota that does not expire, and a Business plan with custom pricing through sales. It is relevant only to taxpayers in Indonesia.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Tax compliance and e-invoicing (Indonesia)",
+  "platform": "Web",
+  "starts_at": "Rp5,000 per standard transaction (prepaid)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Indonesian tax payment, filing and e-invoicing platform for businesses",
+  "maker": {
+   "name": "OnlinePajak",
+   "url": "https://www.online-pajak.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.online-pajak.com/wp-content/uploads/2026/06/OnlinePajak-Semua-Transaksi-dalam-Satu-Platform-1024x1024.png",
+    "alt": "OnlinePajak graphic showing invoice, e-Faktur, e-Bupot, e-Signature and e-Meterai documents connected to CRM, ERP, payment and cloud storage",
+    "credit": "Image: OnlinePajak (online-pajak.com)",
+    "w": 1024,
+    "h": 1024
+   },
+   {
+    "url": "https://www.online-pajak.com/wp-content/uploads/2023/01/cropped-favicon-180x180.png",
+    "alt": "OnlinePajak icon: a white broken circle on a red rounded square",
+    "credit": "Image: OnlinePajak (online-pajak.com)",
+    "w": 180,
+    "h": 180
+   }
+  ],
+  "use_cases": [
+   "Paying Indonesian taxes such as PPh 21, PPh 23 and PPN online",
+   "Issuing e-Faktur VAT invoices and e-BuPot slips",
+   "Filing annual and periodic tax returns (SPT)",
+   "Sending invoices with e-signature and e-Meterai",
+   "Invoice-based business financing"
+  ],
+  "audience": {
+   "fit": [
+    "run a business in Indonesia with regular tax filings",
+    "issue many VAT invoices",
+    "want tax payment and invoicing in one system"
+   ],
+   "not_fit": [
+    "are outside Indonesia",
+    "need tax advice rather than software"
+   ]
+  },
+  "pricing": {
+   "intro": "OnlinePajak's pricing page (in Indonesian) lists two plans.",
+   "plans": [
+    {
+     "name": "Standard",
+     "price": "Rp5,000 per standard transaction",
+     "detail": "With prepaid credits; Rp25,000 if paid per transaction; free trial quota that does not expire"
+    },
+    {
+     "name": "Business",
+     "price": "Custom",
+     "detail": "Contact sales"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.online-pajak.com/harga",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Covers payment, filing and invoicing in one place",
+   "Published per-transaction pricing",
+   "Long-running, well-backed company"
+  ],
+  "cons": [
+   "Indonesia only",
+   "Site and support mainly in Indonesian"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Pajakku",
+     "url": "https://www.pajakku.com/",
+     "what": "Indonesian tax application",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Another authorised Indonesian tax application provider."
+    },
+    {
+     "name": "Klikpajak (Mekari)",
+     "url": "https://klikpajak.id/",
+     "what": "Online tax filing and payment in Indonesia",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Part of Mekari, alongside its payroll and accounting software."
+    },
+    {
+     "name": "Jurnal by Mekari",
+     "url": "https://www.jurnal.id/",
+     "what": "Cloud accounting for Indonesian businesses",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Accounting first, with tax features."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does OnlinePajak do?",
+    "a": "It lets Indonesian businesses and individuals pay and report taxes, issue e-Faktur and e-BuPot, and manage invoices in one platform."
+   },
+   {
+    "q": "How much does OnlinePajak cost?",
+    "a": "Its Standard plan is Rp5,000 per standard transaction with prepaid credits (Rp25,000 per transaction otherwise); Business pricing is custom."
+   },
+   {
+    "q": "Who founded OnlinePajak?",
+    "a": "Charles Guinot, who launched it in 2015."
+   }
+  ],
+  "sources": [
+   {
+    "label": "OnlinePajak pricing (Harga)",
+    "url": "https://www.online-pajak.com/harga"
+   },
+   {
+    "label": "Digital News Asia: OnlinePajak raises over US$25mil in Series B (23 Oct 2018)",
+    "url": "https://www.digitalnewsasia.com/startups/onlinepajak-raises-over-us25mil-series-b-funding"
+   },
+   {
+    "label": "Endeavor: OnlinePajak raises $25 million Series B",
+    "url": "https://endeavor.org/stories/onlinepajak-raises-25-million-series-b-participation-endeavor-catalyst"
+   },
+   {
+    "label": "Digital News Asia: OnlinePajak raises Series A funding",
+    "url": "https://www.digitalnewsasia.com/startups/onlinepajak-raises-series-funding"
+   },
+   {
+    "label": "OnlinePajak official site",
+    "url": "https://www.online-pajak.com/"
+   }
+  ],
+  "team": [
+   {
+    "name": "Charles Guinot",
+    "role": "Founder and CEO"
+   }
+  ]
+ }
+}
