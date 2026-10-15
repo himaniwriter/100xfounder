@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 }
 
 define('XF_VERSION', '1.9.0');
-define('XF_DB_VERSION', '14');
+define('XF_DB_VERSION', '15');
 define('XF_FILE', __FILE__);
 define('XF_DIR', plugin_dir_path(__FILE__));
 define('XF_URL', plugin_dir_url(__FILE__));
@@ -33,6 +33,7 @@ if (is_readable(XF_DIR . 'includes/contacts.php')) { require_once XF_DIR . 'incl
 if (is_readable(XF_DIR . 'includes/outreach.php')) { require_once XF_DIR . 'includes/outreach.php'; }
 if (is_readable(XF_DIR . 'includes/outreach-dashboard.php')) { require_once XF_DIR . 'includes/outreach-dashboard.php'; }
 if (is_readable(XF_DIR . 'includes/outreach-ai.php')) { require_once XF_DIR . 'includes/outreach-ai.php'; }
+if (is_readable(XF_DIR . 'includes/outreach-inbox.php')) { require_once XF_DIR . 'includes/outreach-inbox.php'; }
 if (is_readable(XF_DIR . 'includes/spotlights.php')) { require_once XF_DIR . 'includes/spotlights.php'; }
 if (is_readable(XF_DIR . 'includes/instagram.php')) { require_once XF_DIR . 'includes/instagram.php'; }
 if (is_readable(XF_DIR . 'includes/instagram-templates.php')) { require_once XF_DIR . 'includes/instagram-templates.php'; }
@@ -67,8 +68,10 @@ if (is_readable(XF_DIR . 'includes/guides.php')) { require_once XF_DIR . 'includ
 if (is_readable(XF_DIR . 'includes/mcp.php')) { require_once XF_DIR . 'includes/mcp.php'; }
 if (is_readable(XF_DIR . 'includes/schema-pages.php')) { require_once XF_DIR . 'includes/schema-pages.php'; }
 if (is_readable(XF_DIR . 'includes/internal-links.php')) { require_once XF_DIR . 'includes/internal-links.php'; }
+if (is_readable(XF_DIR . 'includes/external-links.php')) { require_once XF_DIR . 'includes/external-links.php'; }
 if (is_readable(XF_DIR . 'includes/breadcrumbs.php')) { require_once XF_DIR . 'includes/breadcrumbs.php'; }
 if (is_readable(XF_DIR . 'includes/ai-content.php')) { require_once XF_DIR . 'includes/ai-content.php'; }
+if (function_exists('xf_ai_call') && is_readable(XF_DIR . 'includes/ai-research.php')) { require_once XF_DIR . 'includes/ai-research.php'; }
 if (is_readable(XF_DIR . 'includes/indexing.php')) { require_once XF_DIR . 'includes/indexing.php'; }
 if (is_readable(XF_DIR . 'includes/perf.php')) { require_once XF_DIR . 'includes/perf.php'; }
 

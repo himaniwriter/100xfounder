@@ -111,6 +111,9 @@ function xf_install_schema() {
     if (function_exists('xf_camp_install')) {
         xf_camp_install();
     }
+    if (function_exists('xf_inbox_install')) {
+        xf_inbox_install();
+    }
 
     update_option('xf_db_version', XF_DB_VERSION);
 }

@@ -20,7 +20,7 @@ The full plan is in `docs/PRD.md`. Its open questions and approval status are tr
 
 ## Owner decisions
 
-- **AI writing uses Claude Code skills** (`.claude/skills/`) running on the owner's Claude plan limits. **Exception (2026-10-12):** the in-dashboard AI module (`includes/ai-*.php`: translations into 10 languages and thin-page drafts) may call the Claude API, under a hard total budget of $90 enforced in code; drafts and translations need the owner's approval before they are indexed or published. **Extended 2026-10-14:** the same budget-guarded client also personalises outreach emails and writes up to two follow-ups (owner approval before AI-written emails send is on by default). No other paid AI API use.
+- **AI writing uses Claude Code skills** (`.claude/skills/`) running on the owner's Claude plan limits. **Exception (2026-10-12):** the in-dashboard AI module (`includes/ai-*.php`: translations into 10 languages and thin-page drafts) may call the Claude API, under a hard total budget of $90 enforced in code; drafts and translations need the owner's approval before they are indexed or published. **Extended 2026-10-14:** the same budget-guarded client also personalises outreach emails and writes up to two follow-ups (owner approval before AI-written emails send is on by default). **Extended 2026-10-15:** the dashboard "Research & refresh" tool (`includes/ai-research.php`) may use the same budget-guarded client, with web search, to research startup listings; its results are drafts that go live only after the owner approves them. No other paid AI API use.
 - **Payments are a manual invoice** (no payment gateway).
 - **Byline (2026-10-04):** articles publish under the pen name **Ishaan Vardhan** (author slug `ishaan-vardhan`). The bio says openly that it is the editorial desk's pen name. Never give it invented credentials, a fake photo or claimed first-hand experience.
 - **Newsletter:** signups are stored in WordPress (no sender yet).
@@ -47,7 +47,7 @@ The full plan is in `docs/PRD.md`. Its open questions and approval status are tr
 - **Outreach email must comply with CAN-SPAM, GDPR and the DPDP Act**: postal address, one-click unsubscribe, a low daily volume through Hostinger SMTP, and stop on reply.
 - **Minimum length and images (owner, 2026-10-15):** nothing shorter than 500 words, or with fewer than 2 images (featured image counts), is published: articles, guides, startup profiles and Shark Tank pages alike. `includes/sources.php` enforces it for posts and guides by moving a failing post to Pending review; the routines check profiles before publishing.
 - **No ads on thin or private pages.** Thin pages stay noindexed until they have real content.
-- **Credit and link sources.** Don't republish other outlets' articles; summarise in our own words with attribution.
+- **Credit sources.** Don't republish other outlets' articles; summarise in our own words with attribution. **External links (owner, 2026-10-15):** each page keeps only 0, 1 or 2 clickable external links (a fixed mix per URL); every other source, alternative or Product Hunt reference is named as plain text. `includes/external-links.php` enforces it at render time on all front-end pages; `rel="sponsored"` links, image links and share buttons are exempt. Write sources into content as usual; don't work around the cap.
 - **Never promise rankings.** Good indexing practice (sitemaps, IndexNow, the Indexing API for jobs only) speeds up discovery but doesn't guarantee rankings.
 
 ## Working conventions

@@ -19,7 +19,9 @@ import html
 import json
 import os
 import re
+import subprocess
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.parse
@@ -94,12 +96,11 @@ def company_site(listing_url):
         page = get(listing_url)[0].decode("utf-8", "replace")
     except Exception:  # noqa: BLE001
         return ""
-    for m in re.finditer(r'href=["\'](https?://[^"\']+)["\']', page):
-        url = html.unescape(m.group(1))
-        host = (urllib.parse.urlparse(url).hostname or "").lower()
-        if host and not any(host == b or host.endswith("." + b) for b in NOT_THE_COMPANY):
-            return url
-    return ""
+    # The "Visit <name>" button is the only link that is surely the company's own site.
+    m = re.search(r'<a\b[^>]*href=["\'](https?://[^"\']+)["\'][^>]*>\s*Visit ', page)
+    url = html.unescape(m.group(1)) if m else ""
+    host = (urllib.parse.urlparse(url).hostname or "").lower()
+    return url if host and not any(host == b or host.endswith("." + b) for b in NOT_THE_COMPANY) else ""
 
 
 def icon_candidates(site_url):
@@ -127,10 +128,21 @@ def icon_candidates(site_url):
     found.append((3, 0, urllib.parse.urljoin(final, "/favicon.ico")))
     seen, out = set(), []
     for _, _, url in sorted(found):
-        if url not in seen and not url.lower().split("?")[0].endswith(".svg"):
+        if url not in seen:
             seen.add(url)
             out.append(url)
     return out
+
+
+def to_png(body, svg):
+    """SVG (longest side 256px, aspect kept) or ICO converted to PNG with macOS sips; b"" if it fails."""
+    with tempfile.TemporaryDirectory() as d:
+        src, out = os.path.join(d, "in.svg" if svg else "in.ico"), os.path.join(d, "out.png")
+        open(src, "wb").write(body)
+        cmd = ["sips", "-s", "format", "png"] + (["-Z", "256"] if svg else []) + [src, "--out", out]
+        if subprocess.run(cmd, capture_output=True).returncode or not os.path.exists(out):
+            return b""
+        return open(out, "rb").read()
 
 
 def fetch_icon(urls):
@@ -141,9 +153,11 @@ def fetch_icon(urls):
         except Exception:  # noqa: BLE001
             continue
         ctype = ctype.split(";")[0].strip().lower()
+        if ctype == "image/svg+xml" or url.lower().split("?")[0].endswith(".svg") or ctype.endswith("icon"):
+            body, ctype = to_png(body, svg=not ctype.endswith("icon")), "image/png"  # WordPress takes neither SVG nor .ico
+            if not body:
+                continue
         if ctype not in OK_TYPES or len(body) < 700:
-            continue
-        if ctype.endswith("icon"):  # WordPress will not take a .ico upload
             continue
         size = image_size(body)
         if size:
@@ -174,10 +188,19 @@ def main():
         sys.exit("Set XF_WP_USER and XF_WP_APP_PASSWORD (or pass --dry-run).")
     auth = "Basic " + base64.b64encode(f"{user}:{pw}".encode()).decode()
 
-    listings = json.loads(get(
-        f"{site}/wp-json/wp/v2/xf_startup?per_page=100&_fields=id,slug,link,title,featured_media",
-        limit=4_000_000,
-    )[0].decode())
+    listings, page = [], 1
+    while True:
+        try:
+            batch = json.loads(get(
+                f"{site}/wp-json/wp/v2/xf_startup?per_page=100&page={page}&_fields=id,slug,link,title,featured_media",
+                limit=4_000_000,
+            )[0].decode())
+        except urllib.error.HTTPError:  # past the last page
+            break
+        listings += batch
+        if len(batch) < 100:
+            break
+        page += 1
     todo = [p for p in listings if not p.get("featured_media")][: a.limit]
     print(f"{len(listings)} startups, {len(todo)} without a logo\n")
 

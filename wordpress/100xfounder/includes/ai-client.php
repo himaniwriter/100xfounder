@@ -36,6 +36,8 @@ function xf_ai_setting_defaults() {
         'prices' => "claude-haiku-5-5|0.10|0.50\nclaude-sonnet-5-5|2.00|10.00\nclaude-opus-5-5|4.00|20.00",
         // A reply from a model not in the list is priced as the most expensive Claude model.
         'unknown_price' => '10|50',
+        // Web search server tool: $10 per 1,000 searches (Anthropic list price, 2026-10), on top of tokens.
+        'search_price' => 0.01,
         'languages' => implode("\n", [
             // URL folder | hreflang | native | name | og:locale. Country-style folders (/de-de/) by owner request, 2026-10-12.
             'de-de|de-DE|Deutsch|German|de_DE',
@@ -267,24 +269,33 @@ function xf_ai_route() {
 /**
  * One Claude call, guarded by the budget.
  *
- * @param array $a system, user, max_tokens, item_id, purpose, mock (callable(string $user): string)
- * @return array|WP_Error ['text', 'model', 'input_tokens', 'output_tokens', 'cost', 'stop_reason', 'usage_known']
+ * @param array $a system, user, max_tokens, item_id, purpose, mock (callable(string $user): string),
+ *                 and optionally model (overrides the setting), tools (server tools such as web search;
+ *                 direct route only), max_searches (searches booked in the reservation), extra_input
+ *                 (tokens added to the reservation for tool results), timeout (seconds)
+ * @return array|WP_Error ['text', 'model', 'input_tokens', 'output_tokens', 'cost', 'stop_reason', 'usage_known', 'search_requests']
  */
 function xf_ai_call(array $a) {
     global $wpdb;
     $route = xf_ai_route();
+    $tools = (array) ($a['tools'] ?? []);
+    if ($tools && $route === 'wp_ai_client') {
+        // The WP AI Client cannot send server tools; web research needs the direct key.
+        $route = (string) xf_ai_setting('api_key') !== '' ? 'direct' : '';
+    }
     if ($route === '') {
         return new WP_Error('xf_ai_config', 'Claude is not connected: activate the WordPress AI plugin with the Anthropic provider, or save an API key.');
     }
     if (xf_ai_setting('paused')) {
         return new WP_Error('xf_ai_paused', 'AI jobs are paused (AI content → Settings).');
     }
-    $model = (string) xf_ai_setting('model');
+    $model = (string) ($a['model'] ?? xf_ai_setting('model'));
+    $searches = max(0, (int) ($a['max_searches'] ?? 0));
     $system = (string) ($a['system'] ?? '');
     $user = (string) ($a['user'] ?? '');
     $max = max(256, min(16000, (int) ($a['max_tokens'] ?? xf_ai_setting('max_tokens'))));
-    $est_in = (int) ceil((xf_ai_tokens_est($system) + xf_ai_tokens_est($user)) * 1.1) + 20;
-    $reserve = xf_ai_cost($model, $est_in, $max);
+    $est_in = (int) ceil((xf_ai_tokens_est($system) + xf_ai_tokens_est($user)) * 1.1) + 20 + max(0, (int) ($a['extra_input'] ?? 0));
+    $reserve = xf_ai_cost($model, $est_in, $max) + $searches * xf_ai_search_price();
 
     // Check and reserve under one lock: two workers (cron, the dashboard button, a connection
     // test) must never both see the same "remaining" and together book past the budget.
@@ -315,11 +326,11 @@ function xf_ai_call(array $a) {
         @set_time_limit(300); // phpcs:ignore
     }
     if ($route === 'mock') {
-        $res = xf_ai_call_mock($model, $system, $user, $a['mock'] ?? null);
+        $res = xf_ai_call_mock($model, $system, $user, $a['mock'] ?? null, $tools ? $searches : 0);
     } elseif ($route === 'wp_ai_client') {
         $res = xf_ai_call_wp_client($model, $system, $user, $max);
     } else {
-        $res = xf_ai_call_direct($model, $system, $user, $max);
+        $res = xf_ai_call_direct($model, $system, $user, $max, $tools, (int) ($a['timeout'] ?? 150));
     }
 
     if (is_wp_error($res)) {
@@ -336,9 +347,10 @@ function xf_ai_call(array $a) {
 
     $used_model = $res['model'] ?: $model;
     if ($res['usage_known']) {
-        $cost = max(0, xf_ai_cost($used_model, $res['input_tokens'], $res['output_tokens']));
+        $n = (int) ($res['search_requests'] ?? 0);
+        $cost = max(0, xf_ai_cost($used_model, $res['input_tokens'], $res['output_tokens']) + $n * xf_ai_search_price());
         $status = 'final';
-        $note = $res['stop_reason'];
+        $note = $res['stop_reason'] . ($n ? ', ' . $n . ' web search(es)' : '');
     } else {
         $cost = max($reserve, xf_ai_cost($used_model, $est_in, $max));
         $res['input_tokens'] = $est_in;
@@ -356,6 +368,9 @@ function xf_ai_call(array $a) {
     if ($res['stop_reason'] === 'max_tokens') {
         return new WP_Error('xf_ai_truncated', 'The reply hit the output limit and was cut off; the unit will be retried.');
     }
+    if ($res['stop_reason'] === 'pause_turn') {
+        return new WP_Error('xf_ai_pause_turn', 'The research loop paused before finishing (too many tool steps); nothing usable came back.');
+    }
     if ($res['stop_reason'] === 'refusal') {
         return new WP_Error('xf_ai_refusal', 'Claude declined this request.');
     }
@@ -363,7 +378,7 @@ function xf_ai_call(array $a) {
 }
 
 /** Direct Messages API call with a key stored in the plugin settings. */
-function xf_ai_call_direct($model, $system, $user, $max) {
+function xf_ai_call_direct($model, $system, $user, $max, array $tools = [], $timeout = 150) {
     $body = [
         'model' => $model,
         'max_tokens' => $max,
@@ -371,6 +386,9 @@ function xf_ai_call_direct($model, $system, $user, $max) {
         'messages' => [['role' => 'user', 'content' => $user]],
         'output_config' => ['effort' => 'high'],
     ];
+    if ($tools) {
+        $body['tools'] = $tools;
+    }
     // No extended thinking for translation and rewriting: it only adds billed output tokens.
     if (strpos($model, 'haiku-5-5') !== false) {
         $body['thinking'] = ['type' => 'disabled'];
@@ -378,7 +396,7 @@ function xf_ai_call_direct($model, $system, $user, $max) {
         $body['thinking'] = ['type' => 'between_tools'];
     }
     $r = wp_remote_post('https://api.anthropic.com/v1/messages', [
-        'timeout' => 150,
+        'timeout' => max(30, min(290, (int) $timeout)),
         'headers' => [
             'x-api-key' => (string) xf_ai_setting('api_key'),
             'anthropic-version' => '2023-06-01',
@@ -409,7 +427,13 @@ function xf_ai_call_direct($model, $system, $user, $max) {
         'output_tokens' => (int) ($u['output_tokens'] ?? 0),
         'usage_known' => isset($u['input_tokens'], $u['output_tokens']),
         'stop_reason' => (string) ($json['stop_reason'] ?? ''),
+        'search_requests' => (int) ($u['server_tool_use']['web_search_requests'] ?? 0),
     ];
+}
+
+/** Dollars per web search. Never below the list price, so a bad setting can't book searches as free. */
+function xf_ai_search_price() {
+    return max(0.01, (float) xf_ai_setting('search_price'));
 }
 
 /**
@@ -500,7 +524,7 @@ function xf_ai_parse_wp_result($result) {
 }
 
 /** Local testing: no network, deterministic text, plausible usage numbers. */
-function xf_ai_call_mock($model, $system, $user, $mock) {
+function xf_ai_call_mock($model, $system, $user, $mock, $searches = 0) {
     $text = is_callable($mock) ? (string) call_user_func($mock, $user) : 'OK';
     return [
         'text' => $text,
@@ -509,6 +533,7 @@ function xf_ai_call_mock($model, $system, $user, $mock) {
         'output_tokens' => xf_ai_tokens_est($text),
         'usage_known' => true,
         'stop_reason' => 'end_turn',
+        'search_requests' => (int) $searches,
     ];
 }
 

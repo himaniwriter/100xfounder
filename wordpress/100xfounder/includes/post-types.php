@@ -18,7 +18,7 @@ function xf_register_post_types() {
         'has_archive' => false,
         'rewrite' => ['slug' => 'startup', 'with_front' => false],
         'menu_icon' => 'dashicons-rocket',
-        'supports' => ['title', 'editor', 'excerpt', 'thumbnail'],
+        'supports' => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions'],
         'show_in_rest' => true,
     ]);
 

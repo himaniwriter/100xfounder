@@ -164,6 +164,9 @@ function xf_ai_admin_page() {
         delete_transient('xf_ai_notice_' . get_current_user_id());
     }
     $tabs = ['overview' => 'Overview', 'languages' => 'Languages', 'thin' => 'Thin pages', 'settings' => 'Settings'];
+    if (function_exists('xf_ai_admin_research')) {
+        $tabs = array_slice($tabs, 0, 3, true) + ['research' => 'Research & refresh'] + $tabs;
+    }
     ?>
     <div class="wrap">
         <h1>AI content</h1>
@@ -180,6 +183,8 @@ function xf_ai_admin_page() {
             xf_ai_admin_languages();
         } elseif ($tab === 'thin') {
             xf_ai_admin_thin();
+        } elseif ($tab === 'research' && function_exists('xf_ai_admin_research')) {
+            xf_ai_admin_research();
         } elseif ($tab === 'settings') {
             xf_ai_admin_settings($s);
         } else {
