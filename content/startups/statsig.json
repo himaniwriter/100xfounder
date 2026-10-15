@@ -1,0 +1,162 @@
+{
+ "slug": "statsig",
+ "website": "https://www.statsig.com/",
+ "excerpt": "Statsig is an experimentation, feature flag and product analytics platform. OpenAI bought it in 2025 for $1.1 billion; Amplitude acquired the product in May 2026.",
+ "content": "<p>Statsig is a product development platform for running A/B tests and experiments, managing feature flags, product and web analytics, and session replays. Engineering and product teams use it to roll features out gradually, measure their effect on metrics and decide what to keep. Its pricing page says about 90% of its customers use it for free.</p><p>Statsig was founded by Vijaye Raji and is based in the Seattle area. In September 2025 OpenAI agreed to buy it in an all-stock deal worth $1.1 billion, a figure an OpenAI spokesperson confirmed to TechCrunch and which GeekWire said matched Statsig's valuation in a funding round that May. OpenAI was already a customer. Raji became OpenAI's CTO of Applications, overseeing product engineering for ChatGPT and Codex. Statsig then has a further chapter: a note added to its acquisition blog post says that Amplitude acquired Statsig on 5 May 2026. The original team stayed at OpenAI, while the product, brand and customers became part of Amplitude, and Statsig's homepage now describes it as part of the Amplitude family.</p><p>Statsig publishes its prices. The Developer plan is free and includes 2 million events a month and 50,000 session replays. Pro costs $150 a month with 5 million events included and $0.05 per 1,000 events after that, and Enterprise is quoted. Feature flag checks are unlimited on every plan. That makes it easy to try against rivals such as LaunchDarkly, Optimizely, PostHog and Amplitude's own experiment tools.</p><p><em>We have not used Statsig for this page. It brings together Statsig's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Experimentation and feature flags",
+  "platform": "Web, with SDKs for most languages",
+  "starts_at": "Free; Pro $150/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "A/B testing, feature flags, product analytics and session replay in one platform",
+  "maker": {
+   "name": "Statsig",
+   "url": "https://www.statsig.com/"
+  },
+  "team": [
+   {
+    "name": "Vijaye Raji",
+    "role": "Founder and former CEO (now at OpenAI)"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.statsig.com/images/og_image_q1_2025_rev1.png",
+    "alt": "Statsig banner: the Statsig logo next to product panels for metrics, new version results and a feature toggle for iOS and Android users",
+    "credit": "Image: Statsig (statsig.com)",
+    "w": 1200,
+    "h": 629
+   },
+   {
+    "url": "https://www.statsig.com/images/favicons/favicon256.png",
+    "alt": "Statsig logo: a white zigzag shape inside a dark grey circle",
+    "credit": "Logo: Statsig (statsig.com)",
+    "w": 256,
+    "h": 256
+   }
+  ],
+  "use_cases": [
+   "Running A/B tests and measuring their effect on metrics",
+   "Rolling out features gradually with feature flags",
+   "Product and web analytics",
+   "Watching session replays to see how users behave",
+   "Turning a feature off quickly if it causes problems"
+  ],
+  "audience": {
+   "fit": [
+    "product and engineering teams that ship often and want to measure each change",
+    "startups that need a generous free tier",
+    "companies with high event volumes that want usage-based pricing"
+   ],
+   "not_fit": [
+    "teams that only need simple website analytics",
+    "buyers wary of a product that has changed owners twice in a year"
+   ]
+  },
+  "pricing": {
+   "intro": "Statsig's pricing page lists these plans.",
+   "url": "https://www.statsig.com/pricing",
+   "plans": [
+    {
+     "name": "Developer",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "2M events/month, 50,000 session replays, unlimited seats"
+    },
+    {
+     "name": "Pro",
+     "price": "$150/month",
+     "amount": 150,
+     "currency": "USD",
+     "detail": "5M events included, then $0.05 per 1,000 events; 100,000 session replays"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Contact sales"
+    }
+   ],
+   "notes": [
+    "Flag and config checks are unlimited on all plans."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Generous free plan",
+   "Experimentation, flags, analytics and replays in one tool",
+   "Published usage-based prices"
+  ],
+  "cons": [
+   "Ownership changed twice: OpenAI in 2025, Amplitude in 2026",
+   "Costs grow with event volume"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Statsig. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "LaunchDarkly",
+     "url": "https://launchdarkly.com/",
+     "what": "Feature flag management",
+     "starts_at": "See its own website",
+     "difference": "The best-known feature flag platform, with experimentation as an add-on."
+    },
+    {
+     "name": "Optimizely",
+     "url": "https://www.optimizely.com/",
+     "what": "Experimentation and digital experience platform",
+     "starts_at": "See its own website",
+     "difference": "Long-standing A/B testing platform aimed at marketing and product teams."
+    },
+    {
+     "name": "PostHog",
+     "url": "https://posthog.com/",
+     "what": "Open-source product analytics suite",
+     "starts_at": "See its own website",
+     "difference": "Analytics, flags, experiments and replays, with a self-host option."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who owns Statsig?",
+    "a": "Amplitude acquired Statsig on 5 May 2026, according to Statsig. OpenAI had bought it in September 2025 and kept the original team."
+   },
+   {
+    "q": "How much did OpenAI pay for Statsig?",
+    "a": "$1.1 billion in stock, which OpenAI confirmed to TechCrunch."
+   },
+   {
+    "q": "Is Statsig free?",
+    "a": "Its Developer plan is free, with 2 million events a month. Pro costs $150 a month."
+   },
+   {
+    "q": "Who founded Statsig?",
+    "a": "Vijaye Raji, who became OpenAI's CTO of Applications after the acquisition."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Statsig pricing",
+    "url": "https://www.statsig.com/pricing"
+   },
+   {
+    "label": "Statsig blog: Statsig is joining OpenAI (with Amplitude note)",
+    "url": "https://www.statsig.com/blog/openai-acquisition"
+   },
+   {
+    "label": "TechCrunch: OpenAI acquires Statsig",
+    "url": "https://techcrunch.com/2025/09/02/openai-acquires-product-testing-startup-statsig-and-shakes-up-its-leadership-team/"
+   },
+   {
+    "label": "OpenAI: Vijaye Raji to become CTO of Applications",
+    "url": "https://openai.com/index/vijaye-raji-to-become-cto-of-applications-with-acquisition-of-statsig/"
+   },
+   {
+    "label": "GeekWire: OpenAI acquires Statsig for $1.1B",
+    "url": "https://www.geekwire.com/2025/openai-acquires-statsig-for-1-1b-names-ceo-to-key-exec-role-in-surprise-exit-for-seattle-area-unicorn/"
+   }
+  ]
+ }
+}

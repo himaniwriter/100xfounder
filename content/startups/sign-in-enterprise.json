@@ -1,0 +1,131 @@
+{
+ "slug": "sign-in-enterprise",
+ "website": "https://signinsolutions.com/signinenterprise",
+ "excerpt": "Sign In Enterprise, formerly Traction Guest, is visitor management software now part of Sign In Solutions, a PSG-backed company in St. Petersburg, Florida.",
+ "content": "<p>Sign In Enterprise is visitor management software for large organisations: it checks in visitors, contractors and employees at offices, plants and other sites, verifies identities, collects signed documents such as NDAs, screens people against watchlists, issues badges or QR codes, notifies hosts and keeps a record of who was on site. It was originally sold under the name Traction Guest.</p><p>Sign In Solutions, the company behind it, was launched in 2021 with funding from the growth equity firm PSG and is based in St. Petersburg, Florida, according to PSG. PSG says Sign In Solutions acquired Sign In App, Sign In Enterprise (formerly Traction Guest), ThreatSwitch and Pronestor, and PSG's site carries a news item headed PSG Acquires Traction Guest. The old tractionguest.com address now leads to a Sign In Solutions page saying Sign In Enterprise is now Sign In Solutions, which sells it alongside other workplace tools under one brand, with features such as pre-registration, identity verification, NDA signing, host notifications, sign-out and visitor reports. Purchase prices for these deals were not disclosed in the sources we found.</p><p>Sign In Solutions does not publish enterprise prices; organisations book a demo and get a quote. The product is aimed at companies with several sites and strict security or compliance needs, such as manufacturing, life sciences and corporate campuses. Smaller offices that only need a tablet sign-in screen usually look at cheaper self-serve tools such as Envoy or Sign In App.</p><p><em>We have not used Sign In Enterprise for this page. It brings together Sign In Enterprise's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Visitor management",
+  "platform": "Web, iPad kiosk and mobile",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Enterprise visitor management, formerly Traction Guest, now part of Sign In Solutions",
+  "maker": {
+   "name": "Sign In Enterprise",
+   "url": "https://signinsolutions.com/signinenterprise"
+  },
+  "gallery": [
+   {
+    "url": "https://signinsolutions.com/hs-fs/hubfs/vms01.png?width=900&height=630&name=vms01.png",
+    "alt": "Sign In Solutions visitor dashboard listing visitors, contractors and employees signed in at headquarters with approval ticks",
+    "credit": "Image: Sign In Solutions (signinsolutions.com)",
+    "w": 900,
+    "h": 630
+   },
+   {
+    "url": "https://signinsolutions.com/hubfs/process-prepare.png",
+    "alt": "Visitor pre-registration card showing identity verified and NDA signed, with buttons to upload ID, sign an NDA and watch a video",
+    "credit": "Image: Sign In Solutions (signinsolutions.com)",
+    "w": 975,
+    "h": 744
+   }
+  ],
+  "use_cases": [
+   "Checking in visitors and contractors at reception",
+   "Verifying identity and screening against watchlists",
+   "Collecting NDAs and safety acknowledgements before arrival",
+   "Notifying hosts when their visitor arrives",
+   "Keeping an audit trail of who was on site"
+  ],
+  "audience": {
+   "fit": [
+    "enterprises with many sites and security requirements",
+    "regulated industries that need visitor records for compliance",
+    "facilities and security teams"
+   ],
+   "not_fit": [
+    "small offices that only need a simple sign-in tablet",
+    "buyers who want self-serve sign-up and published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Sign In Solutions does not publish prices for Sign In Enterprise; it sells through demos and quotes.",
+   "url": "https://signinsolutions.com/signinenterprise",
+   "plans": [
+    {
+     "name": "Sign In Enterprise",
+     "price": "Quote on request",
+     "detail": "Book a demo"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Built for multi-site, security-conscious organisations",
+   "Part of a wider workplace suite",
+   "Backed by PSG"
+  ],
+  "cons": [
+   "The Traction Guest and Sign In Enterprise names are being folded into one brand",
+   "No public pricing"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Sign In Enterprise. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Envoy",
+     "url": "https://envoy.com/",
+     "what": "Visitor and workplace management",
+     "starts_at": "See its own website",
+     "difference": "Popular self-serve visitor management with published plans."
+    },
+    {
+     "name": "Proxyclick (Eptura)",
+     "url": "https://eptura.com/",
+     "what": "Visitor management within Eptura's workplace suite",
+     "starts_at": "See its own website",
+     "difference": "Enterprise visitor management from a large workplace software group."
+    },
+    {
+     "name": "Sign In App",
+     "url": "https://signinapp.com/",
+     "what": "Visitor sign-in for smaller sites",
+     "starts_at": "See its own website",
+     "difference": "Sister product in the same group, aimed at simpler needs."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Sign In Enterprise the same as Traction Guest?",
+    "a": "Yes. Traction Guest was renamed Sign In Enterprise after Sign In Solutions acquired it."
+   },
+   {
+    "q": "Who owns Sign In Enterprise?",
+    "a": "Sign In Solutions, which was launched in 2021 with funding from PSG, according to PSG."
+   },
+   {
+    "q": "What does it do?",
+    "a": "It manages visitor check-in, identity checks, document signing, host notifications and visitor records for large organisations."
+   },
+   {
+    "q": "How much does it cost?",
+    "a": "Prices are not published; Sign In Solutions quotes after a demo."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sign In Solutions: Sign In Enterprise (formerly Traction Guest)",
+    "url": "https://signinsolutions.com/signinenterprise"
+   },
+   {
+    "label": "PSG portfolio: Sign In Solutions",
+    "url": "https://www.psgequity.com/portfolio/sign-in-solutions"
+   },
+   {
+    "label": "Sign In Solutions homepage",
+    "url": "https://signinsolutions.com/"
+   }
+  ]
+ }
+}

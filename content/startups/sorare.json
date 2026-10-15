@@ -1,0 +1,162 @@
+{
+ "slug": "sorare",
+ "website": "https://sorare.com/",
+ "excerpt": "Sorare is a French fantasy sports game with officially licensed digital player cards for football and the NBA. Funding, layoffs, how it works and alternatives.",
+ "content": "<p>Sorare is a fantasy sports game in which players collect officially licensed digital cards of real athletes and line them up in weekly competitions scored on the athletes' real-life performances. Cards come in rarities and can be bought, sold and traded; scarcer cards are tokens on a blockchain, which made Sorare one of the best-known NFT games. It began with football and added the NBA in 2022, and TechCrunch reported a licensing deal with England's Premier League in January 2023.</p><p>Sorare is a French company led by cofounder and CEO Nicolas Julia. In September 2021 it raised a $680 million Series B led by SoftBank's Vision Fund 2 at a $4.3 billion valuation, with Atomico, Bessemer, D1 Capital, Eurazeo, IVP and Liontree joining Benchmark, Accel and Headline, TechCrunch reported. As the NFT market cooled, it cut jobs: TechCrunch reported in March 2024 that it had laid off about 13% of staff, including 22 people in New York, and that it had not raised money since 2021. In November 2025 The Big Whale reported that Sorare would cut around 35 of roughly 100 jobs and that cofounder and CTO Adrien Montfort was stepping back from daily operations, and Julia said the company was centralising everything in Paris. The Big Whale also reported a planned move of Sorare's cards to the Solana blockchain.</p><p>Sorare is free to play with common cards; you pay only if you buy rarer cards in auctions or from other players, so costs depend on how much you collect.</p><p><em>We have not used Sorare for this page. It brings together Sorare's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Fantasy sports game",
+  "platform": "Web, iOS and Android",
+  "starts_at": "Free to play; card prices vary",
+  "schema_category": "GameApplication",
+  "summary_short": "Fantasy sports with officially licensed digital player cards",
+  "maker": {
+   "name": "Sorare",
+   "url": "https://sorare.com/"
+  },
+  "team": [
+   {
+    "name": "Nicolas Julia",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Adrien Montfort",
+    "role": "Cofounder; stepped back as CTO in 2025"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Logo_de_Sorare.png",
+    "alt": "Sorare logo: a white star inside a circle followed by the word sorare on black",
+    "credit": "Logo: Sorare, by LightPronos, CC BY 4.0, via Wikimedia Commons",
+    "w": 1076,
+    "h": 254
+   },
+   {
+    "url": "https://frontend-assets.sorare.com/meta/social-picture-2022.png",
+    "alt": "Sorare social banner: the Sorare logo in white on a black background",
+    "credit": "Image: Sorare (sorare.com)",
+    "w": 1200,
+    "h": 600
+   }
+  ],
+  "use_cases": [
+   "Playing weekly fantasy football and basketball competitions",
+   "Collecting licensed digital cards of favourite players",
+   "Trading cards with other players",
+   "Following leagues such as the Premier League through a fantasy game"
+  ],
+  "audience": {
+   "fit": [
+    "sports fans who enjoy fantasy games and collecting",
+    "players comfortable buying digital collectibles",
+    "fans of leagues Sorare is licensed for"
+   ],
+   "not_fit": [
+    "anyone who wants a purely free fantasy game with no spending pressure",
+    "people uncomfortable with crypto-linked digital assets whose value can fall"
+   ]
+  },
+  "pricing": {
+   "intro": "Sorare is free to start; rarer cards are bought in auctions or from other players at market prices.",
+   "url": "https://sorare.com/",
+   "plans": [
+    {
+     "name": "Free to play",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Play with common cards"
+    },
+    {
+     "name": "Rare and scarcer cards",
+     "price": "Market prices",
+     "detail": "Bought in auctions or from other players"
+    }
+   ],
+   "notes": [
+    "Card values can go down as well as up; treat purchases as spending on a game, not an investment."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Officially licensed players and leagues",
+   "Free way to start playing",
+   "Large, long-running fantasy community"
+  ],
+  "cons": [
+   "Rarer cards can be expensive and lose value",
+   "Company has cut staff twice since 2024 as the NFT market cooled"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Sorare. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Fantasy Premier League",
+     "url": "https://fantasy.premierleague.com/",
+     "what": "The Premier League's official free fantasy game",
+     "starts_at": "See its own website",
+     "difference": "Free, season-long fantasy with no collectibles."
+    },
+    {
+     "name": "Dream11",
+     "url": "https://www.dream11.com/",
+     "what": "Indian fantasy sports platform",
+     "starts_at": "See its own website",
+     "difference": "Large Indian platform focused on cricket and other sports."
+    },
+    {
+     "name": "ESPN Fantasy",
+     "url": "https://fantasy.espn.com/",
+     "what": "Free fantasy leagues for US sports",
+     "starts_at": "See its own website",
+     "difference": "Traditional season-long fantasy leagues with friends."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Sorare free?",
+    "a": "You can play free with common cards. Rarer cards cost money and are bought in auctions or from other players."
+   },
+   {
+    "q": "How much is Sorare worth?",
+    "a": "Its 2021 Series B valued it at $4.3 billion, TechCrunch reported. It has not raised since, according to TechCrunch in 2024."
+   },
+   {
+    "q": "Has Sorare had layoffs?",
+    "a": "Yes: about 13% of staff in early 2024 (TechCrunch) and around 35 of roughly 100 jobs in November 2025 (The Big Whale)."
+   },
+   {
+    "q": "Which sports does Sorare cover?",
+    "a": "It began with football and added the NBA in 2022, both with official licences, according to TechCrunch."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sorare homepage",
+    "url": "https://sorare.com/"
+   },
+   {
+    "label": "TechCrunch: Sorare raises $680 million",
+    "url": "https://techcrunch.com/2021/09/20/sorare-raises-680-million-for-its-fantasy-sports-nft-game/"
+   },
+   {
+    "label": "TechCrunch: Sorare teams up with the Premier League",
+    "url": "https://techcrunch.com/2023/01/30/sorare-teams-up-with-the-premier-league-for-its-nft-fantasy-football-game/"
+   },
+   {
+    "label": "TechCrunch: Sorare teams up with the NBA",
+    "url": "https://techcrunch.com/2022/09/07/sorare-teams-up-with-nba-for-a-new-nft-fantasy-basketball-game/"
+   },
+   {
+    "label": "TechCrunch: Sorare lays off 13%",
+    "url": "https://techcrunch.com/2024/03/06/nft-fantasy-sports-startup-sorare-layoffs-web3-gaming/"
+   },
+   {
+    "label": "The Big Whale: Sorare to cut a third of its workforce",
+    "url": "https://www.thebigwhale.io/article/exclusive-sorare-to-cut-a-third-of-its-workforce"
+   }
+  ]
+ }
+}

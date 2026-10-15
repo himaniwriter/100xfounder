@@ -1,0 +1,135 @@
+{
+ "slug": "syndio",
+ "website": "https://synd.io/",
+ "excerpt": "Syndio is a Seattle pay equity platform that helps large employers find and fix unfair pay gaps and comply with pay transparency laws such as the EU directive.",
+ "content": "<p>Syndio makes pay equity software for large employers. Its platform analyses pay across a company to find gaps linked to gender, race or other characteristics that a legitimate factor such as role, level or location does not explain, suggests adjustments to close them, and keeps checking over time. It has added tools that check individual pay decisions, such as job offers, promotions and merit increases, at the moment they are made, and features for the EU Pay Transparency Directive, which requires employers in the EU to report and explain pay gaps. Its homepage says more than 350 global enterprises use it and that it governs over $1 trillion in pay.</p><p>Syndio is based in Seattle. In September 2021 it announced a $50 million Series C led by Bessemer Venture Partners, Emerson Collective and Voyager Capital, bringing its total funding to $83 million; the company said this followed a $17.1 million Series B earlier that year and a $7.5 million Series A in 2020, and GeekWire covered the round. In 2022 Syndio added more investors to the Series C, including WNBA champion Candace Parker, Operator Collective, Concrete Rose and Next Play Capital, according to the company.</p><p>Syndio does not publish prices; enterprises request a demo and a quote. It is built for HR, compensation, legal and finance teams at large companies, and is less relevant to small employers that can review pay in a spreadsheet. It competes with compensation tools such as Trusaic, Figures and the pay equity modules inside HR suites, so buyers usually compare the depth of the statistics and the legal reporting support.</p><p><em>We have not used Syndio for this page. It brings together Syndio's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Pay equity and compensation",
+  "platform": "Web (SaaS)",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Pay equity analysis and pay-decision governance for large employers",
+  "maker": {
+   "name": "Syndio",
+   "url": "https://synd.io/"
+  },
+  "gallery": [
+   {
+    "url": "https://synd.io/wp-content/uploads/2026/05/Syndio-Featured-Homepage.png",
+    "alt": "Syndio banner: a woman in a dark turtleneck beside the text Every pay decision, guided by humans, powered by AI",
+    "credit": "Image: Syndio (synd.io)",
+    "w": 1200,
+    "h": 628
+   },
+   {
+    "url": "https://synd.io/wp-content/uploads/2026/08/Social-Share-1200x630px-1200x628.png",
+    "alt": "Syndio banner on dark red: The hidden cost of ungoverned pay decisions, with a Read the research button",
+    "credit": "Image: Syndio (synd.io)",
+    "w": 1200,
+    "h": 628
+   }
+  ],
+  "use_cases": [
+   "Running a company-wide pay equity analysis",
+   "Calculating the cost of closing unexplained pay gaps",
+   "Checking job offers, promotions and raises for fairness before they go out",
+   "Preparing reports for the EU Pay Transparency Directive",
+   "Monitoring pay equity over time"
+  ],
+  "audience": {
+   "fit": [
+    "HR, compensation and legal teams at large employers",
+    "companies with staff in the EU preparing for pay transparency reporting",
+    "employers making public pay equity commitments"
+   ],
+   "not_fit": [
+    "small businesses with a few dozen employees",
+    "buyers who want self-serve sign-up and published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Syndio does not publish prices on its website; it sells through demos and quotes.",
+   "url": "https://synd.io/",
+   "plans": [
+    {
+     "name": "Syndio platform",
+     "price": "Quote on request",
+     "detail": "Request a demo"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Specialist in pay equity statistics",
+   "Covers new EU pay transparency rules",
+   "Used by more than 350 large employers, per the company"
+  ],
+  "cons": [
+   "No public pricing",
+   "Aimed at large enterprises"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Syndio. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Trusaic",
+     "url": "https://trusaic.com/",
+     "what": "Pay equity and ACA compliance software",
+     "starts_at": "See its own website",
+     "difference": "Combines pay equity analysis with US compliance reporting."
+    },
+    {
+     "name": "Figures",
+     "url": "https://figures.hr/",
+     "what": "Compensation benchmarking and pay transparency",
+     "starts_at": "See its own website",
+     "difference": "European compensation platform with pay transparency tools."
+    },
+    {
+     "name": "Pave",
+     "url": "https://www.pave.com/",
+     "what": "Compensation benchmarking and planning",
+     "starts_at": "See its own website",
+     "difference": "Focused on market pay data and compensation planning."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Syndio do?",
+    "a": "It analyses pay across a company to find and fix unexplained gaps, and checks individual pay decisions for fairness."
+   },
+   {
+    "q": "Where is Syndio based?",
+    "a": "Seattle, according to its funding announcements."
+   },
+   {
+    "q": "How much has Syndio raised?",
+    "a": "It said its $50 million Series C in 2021 brought total funding to $83 million."
+   },
+   {
+    "q": "Does Syndio help with the EU Pay Transparency Directive?",
+    "a": "Yes. Its website lists EU Pay Transparency Directive compliance as a feature."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Syndio homepage",
+    "url": "https://synd.io/"
+   },
+   {
+    "label": "Syndio: $50M Series C announcement",
+    "url": "https://synd.io/?p=8806"
+   },
+   {
+    "label": "GeekWire: Syndio raises $50M",
+    "url": "https://www.geekwire.com/2021/pay-equity-startup-syndio-raises-50m-companies-broaden-analysis-workplace-fairness/"
+   },
+   {
+    "label": "Syndio: Series C investment from Candace Parker and others",
+    "url": "https://synd.io/syndio-announces-series-c-investment-from-two-time-wnba-champion-candace-parker-with-double-down-from-operator-collective-concrete-rose-and-next-play-capital/"
+   }
+  ]
+ }
+}
