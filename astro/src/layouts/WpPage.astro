@@ -1,0 +1,13 @@
+---
+// WordPress renders <head> (SEO, schema, Consent Mode, GA4, AdSense), the header and the footer
+// (wp_footer scripts incl. theme.js); Astro renders only what goes inside <main>.
+import { wp } from '../lib/wp.js';
+const { path = '/' } = Astro.props;
+const c = await wp('headless/chrome', { path });
+const stamp = `<!-- astro-build: ${new Date().toISOString()} -->`;
+---
+<!doctype html>
+<html lang={c.lang}>
+<head><Fragment set:html={c.head} /><meta name="generator" content="Astro"></head>
+<body class={c.body_class}><Fragment set:html={c.header} /><main id="main"><slot /><Fragment set:html={c.main_tail} /></main><Fragment set:html={c.footer} /><Fragment set:html={stamp} /></body>
+</html>

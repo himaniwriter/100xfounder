@@ -79,6 +79,7 @@ if (is_readable(XF_DIR . 'includes/indexing.php')) { require_once XF_DIR . 'incl
 if (is_readable(XF_DIR . 'includes/index-control.php')) { require_once XF_DIR . 'includes/index-control.php'; }
 if (is_readable(XF_DIR . 'includes/perf.php')) { require_once XF_DIR . 'includes/perf.php'; }
 if (is_readable(XF_DIR . 'includes/backup.php')) { require_once XF_DIR . 'includes/backup.php'; }
+if (is_readable(XF_DIR . 'includes/headless.php')) { require_once XF_DIR . 'includes/headless.php'; }
 
 if (is_admin()) {
     if (is_readable(XF_DIR . 'includes/admin.php')) { require_once XF_DIR . 'includes/admin.php'; }
