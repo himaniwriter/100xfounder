@@ -61,7 +61,10 @@ def main():
         return
     res = call(site, auth, "POST", f"/xf/v1/startup-profile/{sid}",
                {"profile_b64": base64.b64encode(json.dumps(prof, ensure_ascii=False).encode()).decode(),
-                "content": d.get("content"), "excerpt": d.get("excerpt")})
+                "content": d.get("content"), "excerpt": d.get("excerpt"),
+                # Ignored by plugins older than the one that added `meta` to /xf/v1/startup-profile.
+                "meta": {"website": d.get("website") or (prof.get("sources") or [{}])[0].get("url"),
+                         "ph_url": d.get("ph_url"), "tagline": prof.get("summary_short")}})
     print(res)
 
 

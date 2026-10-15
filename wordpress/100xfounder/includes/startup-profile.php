@@ -217,6 +217,12 @@ add_action('rest_api_init', function () {
                     wp_update_post($update);
                 }
                 update_post_meta($id, '_xf_profile', wp_slash($json));
+                // Listings created over REST have no other way to get these (the meta isn't registered for REST).
+                foreach (['website' => 'esc_url_raw', 'ph_url' => 'esc_url_raw', 'tagline' => 'sanitize_text_field'] as $k => $clean) {
+                    if (!empty($body['meta'][$k]) && is_string($body['meta'][$k])) {
+                        update_post_meta($id, '_xf_' . $k, $clean($body['meta'][$k]));
+                    }
+                }
                 return rest_ensure_response(['id' => $id, 'link' => get_permalink($id), 'sections' => xf_profile_depth($profile), 'indexable' => get_post_meta($id, '_xf_indexable', true)]);
             },
         ],
