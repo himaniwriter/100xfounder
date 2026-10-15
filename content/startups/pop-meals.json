@@ -1,0 +1,134 @@
+{
+ "slug": "pop-meals",
+ "website": "https://www.popmeals.com.my/",
+ "excerpt": "Pop Meals, formerly dahmakan, is a Malaysian food brand selling affordable local meals for delivery, pickup and dine-in from its own central kitchen and outlets.",
+ "content": "<p>Pop Meals is a Malaysian food company that cooks and sells affordable, locally popular meals through its own app, for delivery, pickup and dine-in at its outlets. Unlike a delivery marketplace, it makes its own recipes and food in a central kitchen and runs its own technology and deliveries. Its website says the central kitchen, operated by Farm To Fork Sdn Bhd, is halal-certified by JAKIM, Malaysia's Department of Islamic Development.</p><p>The company started as dahmakan, a healthy gourmet meal delivery brand. Vulcan Post reported in February 2021 that after six years it had rebranded as Pop Meals late in 2020, dropping its healthy-food image for cheaper, more popular dishes and more locations, while keeping its model of making its own food, technology and deliveries. Vulcan Post said dahmakan had raised pre-Series A, Series A and Series B funding from investors including Partech, UpHonest Capital and the Korean delivery company Woowa Brothers, and had expanded into Thailand in 2018 by acquiring Polpa. Investor White Star Capital lists Pop Meals in its portfolio. In 2023 BFM reported that Pop Meals was expanding across Southeast Asia with more than 35 smart outlets, citing Crunchbase data of about $27 million raised over five rounds.</p><p>Pop Meals does not publish a fixed price list on its website; menu prices are shown in its app and at outlets, and it promotes vouchers and rewards on orders. It is an option for people in the parts of Malaysia it serves who want cheap local food from a single brand; customers wanting many restaurants in one app use marketplaces such as GrabFood or foodpanda.</p><p><em>We have not used Pop Meals for this page. It brings together Pop Meals's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Food delivery and restaurants",
+  "platform": "Android and iOS app, outlets",
+  "starts_at": "Menu prices shown in the app",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Affordable Malaysian meals from its own kitchen, for delivery, pickup and dine-in",
+  "maker": {
+   "name": "Pop Meals",
+   "url": "https://www.popmeals.com.my/"
+  },
+  "gallery": [
+   {
+    "url": "https://image.popcontent.link/metatag-images/dahmakanMalaysianMealDelivery.jpg",
+    "alt": "Pop Meals banner: the purple Pop Meals logo on yellow between two branded bowls of rice and noodle dishes",
+    "credit": "Image: Pop Meals (popmeals.com.my)",
+    "w": 1200,
+    "h": 675
+   },
+   {
+    "url": "https://image.popcontent.link/new-website/Landing+page/hero_meal_img.png",
+    "alt": "A plate of rice with fried chicken in a creamy sauce and cucumber slices, from Pop Meals' website",
+    "credit": "Image: Pop Meals (popmeals.com.my)",
+    "w": 902,
+    "h": 935
+   }
+  ],
+  "use_cases": [
+   "Ordering affordable Malaysian meals for delivery",
+   "Picking up food from a Pop Meals outlet",
+   "Dining in at an outlet",
+   "Using vouchers and rewards on orders"
+  ],
+  "audience": {
+   "fit": [
+    "people in the Malaysian areas Pop Meals serves",
+    "office workers looking for cheap, quick local meals",
+    "customers who want halal-certified food"
+   ],
+   "not_fit": [
+    "anyone outside its delivery areas",
+    "people who want a wide choice of restaurants in one app"
+   ]
+  },
+  "pricing": {
+   "intro": "Pop Meals does not publish a price list on its website; prices are shown in its app and at outlets.",
+   "url": "https://www.popmeals.com.my/",
+   "plans": [
+    {
+     "name": "Meals",
+     "price": "Shown in the app",
+     "detail": "Delivery, pickup and dine-in"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Low-priced local dishes",
+   "Own kitchen and deliveries, so quality is controlled end to end",
+   "Halal-certified central kitchen"
+  ],
+  "cons": [
+   "Single-brand menu, not a marketplace",
+   "Limited to the areas it serves"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Pop Meals. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "GrabFood",
+     "url": "https://www.grab.com/my/food/",
+     "what": "Food delivery marketplace from Grab",
+     "starts_at": "See its own website",
+     "difference": "Many restaurants in one app across Southeast Asia."
+    },
+    {
+     "name": "foodpanda",
+     "url": "https://www.foodpanda.my/",
+     "what": "Food delivery marketplace",
+     "starts_at": "See its own website",
+     "difference": "Wide restaurant choice across Malaysia."
+    },
+    {
+     "name": "ShopeeFood",
+     "url": "https://shopee.com.my/",
+     "what": "Food delivery inside the Shopee app",
+     "starts_at": "See its own website",
+     "difference": "Delivery marketplace linked to Shopee's shopping app."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Pop Meals the same as dahmakan?",
+    "a": "Yes. dahmakan rebranded as Pop Meals in late 2020, Vulcan Post reported."
+   },
+   {
+    "q": "Is Pop Meals halal?",
+    "a": "Its website says its central kitchen is halal-certified by JAKIM."
+   },
+   {
+    "q": "How does Pop Meals work?",
+    "a": "It cooks its own meals in a central kitchen and sells them through its app for delivery, pickup and dine-in."
+   },
+   {
+    "q": "Who invested in Pop Meals?",
+    "a": "Vulcan Post named investors including Partech, UpHonest Capital and Woowa Brothers; White Star Capital lists it in its portfolio."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Pop Meals homepage",
+    "url": "https://www.popmeals.com.my/"
+   },
+   {
+    "label": "Vulcan Post: Behind dahmakan's decision to revamp as Pop Meals",
+    "url": "https://vulcanpost.com/?p=733332"
+   },
+   {
+    "label": "BFM: Pop Meals wants to take Malaysian food global",
+    "url": "https://bfm.my/content/podcast/homegrown-fandb-startup-pop-meals-wants-to-take-malaysian-food-global"
+   },
+   {
+    "label": "White Star Capital: Pop Meals",
+    "url": "https://whitestarcapital.com/companies/pop-meals/"
+   }
+  ]
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "slug": "roofstock",
+ "website": "https://www.roofstock.com/",
+ "excerpt": "Roofstock is an Oakland platform for buying, managing and selling single-family rental homes, with Mynd and Stessa among its brands. Funding, layoffs and alternatives.",
+ "content": "<p>Roofstock is a platform for single-family rental (SFR) and build-to-rent investors. It started as an online marketplace where people could buy rental homes, often with tenants already in place, in markets far from where they live. It now describes itself as one place to run residential portfolios from acquisition to exit, with services for acquisitions, property management, asset management, dispositions and valuations. Its brands include Mynd for full-service property management, Stessa, free software for landlords to track rental income and expenses, and RentPrep for tenant screening. Its homepage claims 400,000 users, 50 markets and $10 billion transacted.</p><p>Roofstock is based in Oakland, California. In March 2022 it raised a $240 million Series E led by SoftBank Vision Fund 2 at a valuation just under $2 billion, with Khosla Ventures, Lightspeed and Bain Capital Ventures among its investors, CRETech reported. The housing slowdown hit soon after: HousingWire reported that it cut about 20% of staff in October 2022, and TechCrunch reported a second round of layoffs of about 27% in March 2023, when CEO Gary Beasley pointed to the difficult market and the need to reduce cash burn.</p><p>Roofstock does not publish one price list; its fees depend on the service, so check the relevant page before buying or listing a property. It suits investors who want to own US rental homes remotely, while local investors may prefer a local agent.</p><p><em>We have not used Roofstock for this page. It brings together Roofstock's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Real estate investing (single-family rentals)",
+  "platform": "Web",
+  "starts_at": "Fees vary by service",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Marketplace and services for buying, managing and selling single-family rental homes",
+  "maker": {
+   "name": "Roofstock",
+   "url": "https://www.roofstock.com/"
+  },
+  "team": [
+   {
+    "name": "Gary Beasley",
+    "role": "CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://images.ctfassets.net/6rqe4bgsojj5/5st87lo40nArOwlEKHuu3p/8058f7766ac8555051de93701ef68282/RS_Social_Share.png",
+    "alt": "Roofstock logo over a pale photo of a grey suburban house with a rising line chart",
+    "credit": "Image: Roofstock (roofstock.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://images.ctfassets.net/6rqe4bgsojj5/59VoMMT2p6WLbJ7k9nHw84/7d0f699bf204a136a599a801eafca43a/BSP_properties.png?w=1920&q=75&fm=webp",
+    "alt": "Roofstock property listings with prices and yield figures, and a filter for gross yield",
+    "credit": "Image: Roofstock (roofstock.com)",
+    "w": 3240,
+    "h": 2158
+   }
+  ],
+  "use_cases": [
+   "Buying single-family rental homes in other US markets",
+   "Selling a rental property, including with tenants in place",
+   "Hiring property management through Mynd",
+   "Tracking rental income and expenses with Stessa",
+   "Screening tenants with RentPrep"
+  ],
+  "audience": {
+   "fit": [
+    "individual investors who want US rental homes outside their own city",
+    "institutional investors building SFR or build-to-rent portfolios",
+    "landlords who want software and management in one place"
+   ],
+   "not_fit": [
+    "first-time buyers looking for a home to live in",
+    "investors outside the US unfamiliar with US property rules and taxes"
+   ]
+  },
+  "pricing": {
+   "intro": "Roofstock does not publish a single price list. Fees depend on whether you buy, sell or use management, screening or software services.",
+   "url": "https://www.roofstock.com/",
+   "plans": [
+    {
+     "name": "Stessa (landlord software)",
+     "price": "See stessa.com",
+     "detail": "Rental accounting and reporting"
+    },
+    {
+     "name": "Buying, selling and management",
+     "price": "Varies by service",
+     "detail": "Check each service's terms before committing"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Can buy rentals with tenants already in place",
+   "Full set of services from buying to management",
+   "Large investor base, per the company"
+  ],
+  "cons": [
+   "Cut staff twice in 2022 and 2023",
+   "Fees vary and are not on one page"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Roofstock. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Arrived",
+     "url": "https://arrived.com/",
+     "what": "Fractional investing in rental homes",
+     "starts_at": "See its own website",
+     "difference": "Buy shares in rental properties from small amounts instead of whole homes."
+    },
+    {
+     "name": "Mashvisor",
+     "url": "https://www.mashvisor.com/",
+     "what": "Rental property analytics",
+     "starts_at": "See its own website",
+     "difference": "Data and analysis tool for finding rental deals rather than a marketplace."
+    },
+    {
+     "name": "BiggerPockets",
+     "url": "https://www.biggerpockets.com/",
+     "what": "Real estate investor community and tools",
+     "starts_at": "See its own website",
+     "difference": "Education, forums and calculators for rental investors."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Roofstock?",
+    "a": "A platform for buying, managing and selling single-family rental homes, with brands including Mynd, Stessa and RentPrep."
+   },
+   {
+    "q": "Is Roofstock a unicorn?",
+    "a": "Its 2022 Series E, led by SoftBank Vision Fund 2, valued it at just under $2 billion."
+   },
+   {
+    "q": "Did Roofstock have layoffs?",
+    "a": "Yes: about 20% of staff in October 2022 and about 27% in March 2023, according to HousingWire and TechCrunch."
+   },
+   {
+    "q": "Where is Roofstock based?",
+    "a": "Oakland, California."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Roofstock homepage",
+    "url": "https://www.roofstock.com/"
+   },
+   {
+    "label": "TechCrunch: Roofstock cuts 27% of staff",
+    "url": "https://techcrunch.com/2023/03/22/roofstock-valued-at-1-9b-last-year-cuts-27-of-staff-in-second-round-of-layoffs/"
+   },
+   {
+    "label": "HousingWire: Roofstock cuts its workforce by 20%",
+    "url": "https://www.housingwire.com/articles/real-estate-unicorn-roofstock-cuts-its-workforce-by-20/"
+   },
+   {
+    "label": "CRETech: Roofstock hits $2B valuation",
+    "url": "https://cretech.com/news/single-family-rental-marketplace-roofstock-hits-2b-valuation"
+   }
+  ]
+ }
+}

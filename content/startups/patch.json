@@ -1,0 +1,140 @@
+{
+ "slug": "patch",
+ "website": "https://www.patch.io/",
+ "excerpt": "Patch is a San Francisco climate company that helps businesses buy carbon credits and plan climate strategy, now pitched as AI-native services. Funding and alternatives.",
+ "content": "<p>Patch started as an API and marketplace for carbon removal and offsets: companies could embed it in their products to measure emissions and buy anything from a gram to large volumes of carbon removal from vetted projects. It has since moved towards services. Its website now calls Patch an AI-native services company powering enterprises toward sustainable growth, and lists embedded climate strategy, carbon credit procurement through RFPs, carbon advisory, offtake agreements that fund new climate technology, and a programme called Radius for working with a company's network. It also publishes integrity and diligence guidance on how it vets carbon projects.</p><p>Patch is based in San Francisco. In September 2021 it announced a $20.75 million Series A led by Coatue, with Andreessen Horowitz, Version One and Pale Blue Dot also investing, and The Logic reported that cofounder Aaron Grunfeld is Canadian and that Patch had earlier raised $5.7 million across two seed rounds. In 2022 ESG Today reported a $55 million Series B led by Energize Ventures to scale its carbon markets business.</p><p>Patch does not publish prices for its services; companies talk to a climate strategist first. It is aimed at companies with climate targets that need help buying credible carbon credits, rather than at individuals. Buyers often compare it with other carbon credit platforms and advisers such as Watershed, Ceezer and Supercritical.</p><p><em>We have not used Patch for this page. It brings together Patch's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Carbon markets and climate services",
+  "platform": "Web platform and advisory",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Carbon credit procurement, climate strategy and advisory for companies",
+  "maker": {
+   "name": "Patch",
+   "url": "https://www.patch.io/"
+  },
+  "team": [
+   {
+    "name": "Aaron Grunfeld",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/6357008bb1dd16395e9e2e70/6a56b20381dbb5deb80a40af_Meta%20Image%20Home%20New.png",
+    "alt": "Patch logo in white over a blurred teal and green abstract background",
+    "credit": "Image: Patch (patch.io)",
+    "w": 1200,
+    "h": 627
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/6357008bb1dd16395e9e2e70/6ac391afae81b6022eae10bf_Nav%20thumbnail%20-%20Integrity%20and%20diligence.png",
+    "alt": "Cover of a Patch report titled Integrity and diligence over an aerial photo of waves",
+    "credit": "Image: Patch (patch.io)",
+    "w": 493,
+    "h": 327
+   }
+  ],
+  "use_cases": [
+   "Buying carbon removal and carbon credits through a managed RFP",
+   "Building a company climate strategy",
+   "Signing offtake agreements that fund new climate technology",
+   "Checking the quality of carbon projects"
+  ],
+  "audience": {
+   "fit": [
+    "companies with net-zero or climate targets",
+    "sustainability teams that need help choosing credible carbon projects",
+    "businesses that want to fund carbon removal at scale"
+   ],
+   "not_fit": [
+    "individuals offsetting personal travel",
+    "buyers who want a self-serve shop with fixed prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Patch does not publish prices; carbon credit costs depend on the project and volume, and services are quoted.",
+   "url": "https://www.patch.io/",
+   "plans": [
+    {
+     "name": "Patch services",
+     "price": "Quote on request",
+     "detail": "Talk to a climate strategist"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Combines carbon credit procurement with strategy and advisory",
+   "Publishes its integrity and diligence approach",
+   "Backed by Coatue, a16z and Energize Ventures"
+  ],
+  "cons": [
+   "No public pricing",
+   "Carbon credit quality remains debated across the market"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Patch. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Watershed",
+     "url": "https://watershed.com/",
+     "what": "Carbon accounting and climate platform",
+     "starts_at": "See its own website",
+     "difference": "Strong in emissions measurement and reporting."
+    },
+    {
+     "name": "Ceezer",
+     "url": "https://www.ceezer.earth/",
+     "what": "Carbon credit procurement platform",
+     "starts_at": "See its own website",
+     "difference": "European platform for buying and managing carbon credits."
+    },
+    {
+     "name": "Supercritical",
+     "url": "https://gosupercritical.com/",
+     "what": "Carbon removal marketplace",
+     "starts_at": "See its own website",
+     "difference": "Focused on carbon removal credits for businesses."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Patch do?",
+    "a": "It helps companies buy carbon credits and carbon removal, and provides climate strategy and advisory services."
+   },
+   {
+    "q": "Who invested in Patch?",
+    "a": "Coatue led its $20.75 million Series A in 2021; Energize Ventures led a $55 million Series B in 2022."
+   },
+   {
+    "q": "Is Patch a carbon offset marketplace?",
+    "a": "It began as an API and marketplace; it now describes itself as an AI-native climate services company."
+   },
+   {
+    "q": "Where is Patch based?",
+    "a": "San Francisco."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Patch homepage",
+    "url": "https://www.patch.io/"
+   },
+   {
+    "label": "Patch blog: Announcing our Series A",
+    "url": "https://patch.io/blog/announcing-our-series-a"
+   },
+   {
+    "label": "The Logic: Andreessen-backed Patch raises US$20.75M",
+    "url": "https://thelogic.co/briefing/andreessen-backed-patch-raises-us20-75m-in-series-a/"
+   },
+   {
+    "label": "ESG Today: Patch raises $55 million",
+    "url": "https://www.esgtoday.com/climate-tech-startup-patch-raises-55-million-to-scale-carbon-markets-business/"
+   }
+  ]
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "slug": "restaurant365",
+ "website": "https://www.restaurant365.com/",
+ "excerpt": "Restaurant365 is cloud back-office software for restaurants: accounting, inventory, scheduling and payroll. Valued above $1 billion in 2023. Pricing and alternatives.",
+ "content": "<p>Restaurant365 (R365) is back-office software for restaurants. It combines restaurant-specific accounting (accounts payable automation, banking, financial reporting, budgeting and bookkeeping) with inventory and purchasing (recipes, prep, ordering and receiving), workforce management (scheduling, sales forecasting, time and attendance, training and tip handling) and payroll and HR. Its website names Sbarro, Freddy's Frozen Custard, Black Bear Diner and Blaze Pizza as customers and says it serves everyone from single restaurants to franchise brands and accounting firms. It has also launched R365 AI for back-office work.</p><p>In 2023 Restaurant365 raised $135 million in a round co-led by KKR and L Catterton, with existing investors ICONIQ Growth and Bessemer Venture Partners, which pushed its valuation above $1 billion, Restaurant Dive reported. CEO Tony Smith said then that the company had recently passed $100 million in revenue. Its previous round was an $88 million Series C in 2019 led by ICONIQ. Built In Austin also covered the 2023 round.</p><p>Restaurant365 does not publish prices. Its pricing page describes modules for accounting, inventory and purchasing, workforce management and payroll and HR, and asks restaurants to request a custom quote. It mainly suits multi-unit restaurant groups and franchises that want accounting and operations in one system; a single small cafe may find a POS add-on or general bookkeeping tool enough. It is often compared with MarginEdge, Crunchtime and 7shifts, which each cover part of the same ground.</p><p><em>We have not used Restaurant365 for this page. It brings together Restaurant365's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Restaurant back-office software",
+  "platform": "Web and mobile",
+  "starts_at": "Custom quote",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Restaurant accounting, inventory, scheduling and payroll in one cloud platform",
+  "maker": {
+   "name": "Restaurant365",
+   "url": "https://www.restaurant365.com/"
+  },
+  "team": [
+   {
+    "name": "Tony Smith",
+    "role": "CEO (as of 2023)"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.restaurant365.com/wp-content/uploads/2022/06/R365-OG-Image-1.jpg",
+    "alt": "Restaurant365 website shown in a browser window on a blue background, headed End-to-End Restaurant Management Software",
+    "credit": "Image: Restaurant365 (restaurant365.com)",
+    "w": 1200,
+    "h": 640
+   },
+   {
+    "url": "https://www.restaurant365.com/wp-content/uploads/2026/09/image-tech-manager_tablet_at_bar-horizontal-iStock2162553391-1024x683.jpg",
+    "alt": "A restaurant manager in a suit checks a tablet at a bar counter",
+    "credit": "Image: Restaurant365 (restaurant365.com)",
+    "w": 1024,
+    "h": 683
+   }
+  ],
+  "use_cases": [
+   "Restaurant accounting and accounts payable",
+   "Inventory counts, recipe costing and purchasing",
+   "Staff scheduling with sales forecasts",
+   "Payroll and HR for hourly staff",
+   "Reporting food and labour costs across locations"
+  ],
+  "audience": {
+   "fit": [
+    "multi-location restaurant groups and franchises",
+    "restaurant accounting teams and outsourced bookkeepers",
+    "operators trying to control food and labour costs"
+   ],
+   "not_fit": [
+    "a single small cafe that only needs a POS",
+    "businesses outside the restaurant industry"
+   ]
+  },
+  "pricing": {
+   "intro": "Restaurant365 does not publish prices; its pricing page lists modules and offers a custom quote.",
+   "url": "https://www.restaurant365.com/pricing",
+   "plans": [
+    {
+     "name": "Accounting, Inventory, Workforce, Payroll and HR",
+     "price": "Custom quote",
+     "detail": "Choose the modules you need"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Built specifically for restaurants",
+   "Accounting and operations in one platform",
+   "Large, established customer base"
+  ],
+  "cons": [
+   "No public pricing",
+   "More system than a single small restaurant needs"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Restaurant365. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "MarginEdge",
+     "url": "https://www.marginedge.com/",
+     "what": "Restaurant invoice processing and cost control",
+     "starts_at": "See its own website",
+     "difference": "Lighter cost-control tool that works alongside existing accounting software."
+    },
+    {
+     "name": "Crunchtime",
+     "url": "https://www.crunchtime.com/",
+     "what": "Restaurant operations platform",
+     "starts_at": "See its own website",
+     "difference": "Aimed at large multi-unit chains."
+    },
+    {
+     "name": "7shifts",
+     "url": "https://www.7shifts.com/",
+     "what": "Restaurant scheduling and labour management",
+     "starts_at": "See its own website",
+     "difference": "Focused on scheduling and team management, with published plans."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Restaurant365 do?",
+    "a": "It combines restaurant accounting, inventory, scheduling, payroll and HR in one cloud platform."
+   },
+   {
+    "q": "How much does Restaurant365 cost?",
+    "a": "It does not publish prices; restaurants request a custom quote."
+   },
+   {
+    "q": "Is Restaurant365 a unicorn?",
+    "a": "Its $135 million round in 2023, co-led by KKR and L Catterton, valued it at more than $1 billion, Restaurant Dive reported."
+   },
+   {
+    "q": "Who uses Restaurant365?",
+    "a": "Its website names brands such as Sbarro, Freddy's Frozen Custard, Black Bear Diner and Blaze Pizza."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Restaurant365 pricing",
+    "url": "https://www.restaurant365.com/pricing"
+   },
+   {
+    "label": "Restaurant365 homepage",
+    "url": "https://www.restaurant365.com/"
+   },
+   {
+    "label": "Restaurant Dive: Restaurant365 raises $135M",
+    "url": "https://www.restaurantdive.com/news/restaurant365-raises-135m/650748/"
+   },
+   {
+    "label": "Built In Austin: Restaurant365 becomes tech unicorn",
+    "url": "https://www.builtinaustin.com/articles/restaurant365-raises-135m-1b-valuation"
+   }
+  ]
+ }
+}

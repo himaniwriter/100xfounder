@@ -1,0 +1,134 @@
+{
+ "slug": "pindrop-security",
+ "website": "https://www.pindrop.com/",
+ "excerpt": "Pindrop detects voice fraud and audio deepfakes in phone calls, contact centres and virtual meetings. It raised $100 million in debt in 2024. What it does and alternatives.",
+ "content": "<p>Pindrop makes voice security software. It analyses the audio, device and network signals in a phone call to authenticate genuine callers and flag fraudsters, mainly for companies with large contact centres. As voice cloning has spread, it has focused on deepfake detection: its Pindrop Pulse product identifies synthetic or AI-generated voices in real time, and its website now pitches deepfake defence for calls, virtual meetings and contact centres.</p><p>In July 2024 Pindrop announced $100 million in debt financing from Hercules Capital to develop its audio, voice and AI technology, SiliconANGLE and SecurityWeek reported. According to its announcement, the company had raised $218.3 million in venture equity since it was founded in 2011. It also said it had analysed 5.3 billion calls, helped prevent $2 billion in fraud losses and detected 104 million spoofed calls, and that contact centre fraud had risen 60% in two years; these are the company's own figures. Alongside Pulse it launched a deepfake warranty that reimburses eligible customers if its products miss a deepfake or synthetic-voice fraud.</p><p>Pindrop does not publish prices; it sells to enterprises through its sales team. It suits organisations that verify customers over the phone, while smaller companies usually rely on the fraud tools in their telephony provider. It competes with voice biometrics and fraud products from Nuance (Microsoft) and NICE, and with newer deepfake detection startups such as Reality Defender.</p><p><em>We have not used Pindrop for this page. It brings together Pindrop's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Voice security and deepfake detection",
+  "platform": "Cloud, integrated with contact centre platforms",
+  "starts_at": "Quote on request",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Caller authentication, voice fraud and audio deepfake detection for contact centres",
+  "maker": {
+   "name": "Pindrop",
+   "url": "https://www.pindrop.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/6a809521fc6b7dfa71f2e253/6aa81ccaeb903381abc44381_OpenGraph.png",
+    "alt": "Pindrop banner: the Pindrop logo and the line Catch the AI attacks your current stack is missing, beside a video-call panel flagging a participant",
+    "credit": "Image: Pindrop (pindrop.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/6a809521fc6b7dfa71f2e253/6ab6dfc3fce5c9415b9182d7_Report-Deepfake%20Readiness%20Index_featured%20CTA.png",
+    "alt": "A man's portrait half overlaid with an orange digital mesh, illustrating Pindrop's deepfake readiness report",
+    "credit": "Image: Pindrop (pindrop.com)",
+    "w": 1920,
+    "h": 2072
+   }
+  ],
+  "use_cases": [
+   "Authenticating callers to a contact centre",
+   "Detecting fraudsters and account takeover attempts by phone",
+   "Spotting AI-generated or cloned voices in real time",
+   "Checking participants in virtual meetings for deepfakes"
+  ],
+  "audience": {
+   "fit": [
+    "banks, insurers and retailers with large contact centres",
+    "security and fraud teams worried about voice cloning",
+    "companies that verify identity over the phone"
+   ],
+   "not_fit": [
+    "small businesses with low call volumes",
+    "buyers who want self-serve pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "Pindrop does not publish prices; it sells through its sales team.",
+   "url": "https://www.pindrop.com/",
+   "plans": [
+    {
+     "name": "Pindrop platform",
+     "price": "Quote on request",
+     "detail": "Authentication, fraud and deepfake detection"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Long track record in phone fraud detection",
+   "Real-time deepfake detection",
+   "Offers a deepfake warranty to eligible customers"
+  ],
+  "cons": [
+   "No public pricing",
+   "Performance figures are the company's own"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Pindrop. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Nuance Gatekeeper (Microsoft)",
+     "url": "https://www.nuance.com/",
+     "what": "Voice biometrics and fraud prevention",
+     "starts_at": "See its own website",
+     "difference": "Biometric authentication from Microsoft's Nuance unit."
+    },
+    {
+     "name": "NICE",
+     "url": "https://www.nice.com/",
+     "what": "Contact centre software with fraud prevention",
+     "starts_at": "See its own website",
+     "difference": "Fraud and authentication inside a large contact centre suite."
+    },
+    {
+     "name": "Reality Defender",
+     "url": "https://www.realitydefender.com/",
+     "what": "Deepfake detection platform",
+     "starts_at": "See its own website",
+     "difference": "Detects deepfakes across audio, video and images."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Pindrop do?",
+    "a": "It authenticates callers and detects fraud and audio deepfakes in phone calls, contact centres and virtual meetings."
+   },
+   {
+    "q": "How much funding has Pindrop raised?",
+    "a": "It said it had raised $218.3 million in venture equity, and in July 2024 it added $100 million in debt from Hercules Capital."
+   },
+   {
+    "q": "What is Pindrop Pulse?",
+    "a": "Its real-time audio deepfake detection product."
+   },
+   {
+    "q": "When was Pindrop founded?",
+    "a": "In 2011, according to its 2024 funding announcement."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Pindrop homepage",
+    "url": "https://www.pindrop.com/"
+   },
+   {
+    "label": "Pindrop press release: $100 million financing",
+    "url": "https://www.pindrop.com/press-release/pindrop-secures-one-hundred-million/"
+   },
+   {
+    "label": "SiliconANGLE: Pindrop raises $100M to fight deepfakes",
+    "url": "https://siliconangle.com/2024/07/17/pindrop-security-raises-100m-funding-fight-deepfakes-ai-powered-voice-authentication-tech/"
+   },
+   {
+    "label": "SecurityWeek: Pindrop raises $100 million",
+    "url": "https://www.securityweek.com/pindrop-security-raises-100-million-to-expand-deepfake-detection-technology/"
+   }
+  ]
+ }
+}
