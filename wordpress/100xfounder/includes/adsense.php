@@ -40,7 +40,7 @@ add_action('wp_head', function () {
     printf('<meta name="google-adsense-account" content="%s">' . "\n", esc_attr($client));
     printf(
         "<script>(function(){var d=0;function go(){if(d)return;d=1;var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s';document.head.appendChild(s);}"
-        . "addEventListener('load',function(){(window.requestIdleCallback||setTimeout)(go,2000)});['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,go,{once:true,passive:true})});})();</script>\n",
+        . "addEventListener('load',function(){window.requestIdleCallback?requestIdleCallback(go,{timeout:2000}):setTimeout(go,2000)});['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,go,{once:true,passive:true})});})();</script>\n",
         esc_js($client)
     );
 }, 2);
