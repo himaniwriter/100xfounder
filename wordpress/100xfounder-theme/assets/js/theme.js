@@ -210,12 +210,12 @@
     var arc = m.querySelector('.xf-meter__arc');
     requestAnimationFrame(function () { requestAnimationFrame(function () { meterSet(m, arc ? +arc.getAttribute('data-to') : 0); }); });
     var btn = m.querySelector('[data-meter-tap]');
-    try { if (btn && localStorage.getItem('xf_meter_' + m.getAttribute('data-meter')) === meterDay) { btn.disabled = true; btn.textContent = '✓ 100X’d today'; } } catch (err) {}
+    try { if (btn && localStorage.getItem('xf_meter_' + m.getAttribute('data-meter')) === meterDay) { btn.disabled = true; btn.lastChild.textContent = 'Counted today'; } } catch (err) {}
     if (!btn) return;
     btn.addEventListener('click', function () {
       var msg = m.querySelector('[data-meter-msg]'), hp = m.querySelector('.xf-hp');
       btn.disabled = true;
-      var done = function () { btn.textContent = '✓ 100X’d today'; try { localStorage.setItem('xf_meter_' + m.getAttribute('data-meter'), meterDay); } catch (err) {} };
+      var done = function () { btn.lastChild.textContent = 'Counted today'; var bd = m.querySelector('[data-meter-badge]'); if (bd) bd.src = bd.src.replace(/([?&]v=)\d*/, '$1' + Date.now()); try { localStorage.setItem('xf_meter_' + m.getAttribute('data-meter'), meterDay); } catch (err) {} };
       fetch(m.getAttribute('data-endpoint'), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: +m.getAttribute('data-meter'), t: m.getAttribute('data-t'), website: hp ? hp.value : '' }) })
         .then(function (r) { return r.json(); })
         .then(function (d) {

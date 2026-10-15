@@ -158,11 +158,21 @@ function xf_meter_badge_svg($level) {
 
 function xf_meter_gauge_svg($level) {
     $level = (int) $level;
-    return '<svg viewBox="0 0 260 150" aria-hidden="true" focusable="false">'
-        . '<defs><linearGradient id="xfmg" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset=".45" stop-color="#b07cff"/><stop offset=".8" stop-color="#ff6ad5"/><stop offset="1" stop-color="#6a7bff"/></linearGradient></defs>'
-        . '<path d="M20 130 A110 110 0 0 1 240 130" fill="none" stroke="var(--ln)" stroke-width="16" stroke-linecap="round"/>'
-        . '<path class="xf-meter__arc" d="M20 130 A110 110 0 0 1 240 130" fill="none" stroke="url(#xfmg)" stroke-width="16" stroke-linecap="round" pathLength="100" stroke-dasharray="0 100" data-to="' . $level . '"/>'
-        . '<g class="xf-meter__needle"><line x1="130" y1="130" x2="130" y2="40" stroke="var(--tx)" stroke-width="3" stroke-linecap="round"/><circle cx="130" cy="130" r="7" fill="var(--tx)"/></g>'
+    // Instrument scale: 21 ticks round the arc, longer at 0/25/50/75/100.
+    $ticks = '';
+    for ($i = 0; $i <= 20; $i++) {
+        $a = deg2rad(180 - 9 * $i);
+        $major = $i % 5 === 0;
+        $r1 = $major ? 119 : 122;
+        $ticks .= sprintf('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" class="%s"/>', 130 + $r1 * cos($a), 130 - $r1 * sin($a), 130 + 127 * cos($a), 130 - 127 * sin($a), $major ? 'xf-meter__tick xf-meter__tick--major' : 'xf-meter__tick');
+    }
+    return '<svg viewBox="0 0 260 140" aria-hidden="true" focusable="false">'
+        . '<defs><linearGradient id="xfmg" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset=".45" stop-color="#b07cff"/><stop offset=".8" stop-color="#ff6ad5"/><stop offset="1" stop-color="#6a7bff"/></linearGradient>'
+        . '<radialGradient id="xfmk"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#e9dcff"/><stop offset="1" stop-color="#b07cff" stop-opacity="0"/></radialGradient></defs>'
+        . $ticks
+        . '<path class="xf-meter__track" d="M20 130 A110 110 0 0 1 240 130" fill="none" stroke-width="12" stroke-linecap="round"/>'
+        . '<path class="xf-meter__arc" d="M20 130 A110 110 0 0 1 240 130" fill="none" stroke="url(#xfmg)" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="0 100" data-to="' . $level . '"/>'
+        . '<g class="xf-meter__needle"><circle cx="130" cy="20" r="13" fill="url(#xfmk)" opacity=".55"/><circle cx="130" cy="20" r="6" fill="#fff"/></g>'
         . '</svg>';
 }
 
@@ -178,27 +188,33 @@ function xf_meter_html($id) {
     $team = current_user_can('edit_posts');
     ob_start();
     ?>
-    <div class="xf-meter" data-meter="<?php echo (int) $id; ?>" data-endpoint="<?php echo esc_url(rest_url('xf/v1/meter')); ?>" data-t="<?php echo esc_attr(xf_rating_token($url)); ?>">
+    <section class="xf-meter" aria-label="100X Meter" data-meter="<?php echo (int) $id; ?>" data-endpoint="<?php echo esc_url(rest_url('xf/v1/meter')); ?>" data-t="<?php echo esc_attr(xf_rating_token($url)); ?>">
         <div class="xf-meter__gauge">
             <?php echo xf_meter_gauge_svg($level); // phpcs:ignore -- built from an integer ?>
-            <div class="xf-meter__read" aria-live="polite"><div class="xf-meter__num"><span data-meter-level><?php echo (int) $level; ?></span>X</div><div class="k xf-meter__sub">Taps, last 30 days: <span data-meter-taps><?php echo esc_html(number_format_i18n($taps)); ?></span></div></div>
+            <div class="xf-meter__read" aria-live="polite">
+                <div class="xf-meter__num"><span data-meter-level><?php echo (int) $level; ?></span><i>X</i></div>
+                <div class="xf-meter__sub"><span data-meter-taps><?php echo esc_html(number_format_i18n($taps)); ?></span> <?php echo esc_html(_n('tap', 'taps', $taps)); ?> · 30 days</div>
+            </div>
+            <span class="xf-meter__scale" aria-hidden="true"><span>0</span><span>100X</span></span>
         </div>
         <div class="xf-meter__side">
-            <div class="k">100X Meter</div>
-            <button type="button" class="xf-meter__btn" data-meter-tap<?php echo $team ? ' disabled title="Taps from the team are not counted"' : ''; ?>>⚡ 100X it</button>
+            <p class="xf-meter__eyebrow">100X Meter</p>
+            <h3 class="xf-meter__title">Think <?php echo esc_html($name); ?> could go 100X?</h3>
+            <p class="xf-meter__note" data-meter-msg>Give it a push. One tap per reader each day; the meter tracks buzz here, not quality.</p>
+            <button type="button" class="xf-meter__btn" data-meter-tap<?php echo $team ? ' disabled title="Taps from the team are not counted"' : ''; ?>><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span>100X it</span></button>
             <input class="xf-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
-            <p class="xf-meter__note" data-meter-msg>One tap per reader per day. Taps show how much buzz <?php echo esc_html($name); ?> has here; they aren’t a rating.</p>
-            <?php if ($stars) : ?>
-                <div class="xf-meter__chips"><span class="chip">Visitor rating <b><?php echo esc_html(number_format_i18n($stars['value'], 1)); ?></b>/5 · <?php echo esc_html(sprintf(_n('%s vote', '%s votes', $stars['count']), number_format_i18n($stars['count']))); ?></span></div>
-            <?php endif; ?>
-            <div class="xf-meter__embed">
-                <span class="k">Founders: embed your meter</span>
-                <img src="<?php echo esc_url($badge); ?>" alt="<?php echo esc_attr($name); ?> 100X Meter badge" width="168" height="28" loading="lazy">
-                <button type="button" class="chip" data-copy-link="<?php echo esc_attr($snippet); ?>">Copy embed code</button>
-                <a class="k u" href="<?php echo esc_url(home_url('/tools/startup-100x-score/')); ?>">Founder? Score your startup →</a>
-            </div>
         </div>
-    </div>
+        <footer class="xf-meter__foot">
+            <?php if ($stars) : ?>
+                <span>Visitor rating <b><?php echo esc_html(number_format_i18n($stars['value'], 1)); ?></b>/5 · <?php echo esc_html(sprintf(_n('%s vote', '%s votes', $stars['count']), number_format_i18n($stars['count']))); ?></span>
+            <?php endif; ?>
+            <span class="xf-meter__badge">
+                <img src="<?php echo esc_url(add_query_arg('v', $taps, $badge)); ?>" alt="<?php echo esc_attr($name); ?> 100X Meter badge" width="168" height="28" loading="lazy" data-meter-badge>
+                <button type="button" class="xf-meter__link" data-copy-link="<?php echo esc_attr($snippet); ?>">Copy badge code</button>
+            </span>
+            <a class="xf-meter__link" href="<?php echo esc_url(home_url('/tools/startup-100x-score/')); ?>">Founder? Score your startup →</a>
+        </footer>
+    </section>
     <?php
     return ob_get_clean();
 }
