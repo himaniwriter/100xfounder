@@ -1,0 +1,174 @@
+{
+ "slug": "maven",
+ "website": "https://maven.com/",
+ "excerpt": "Maven is a platform for live, cohort-based online courses taught by working experts in AI, product, leadership, design, engineering and business. Founded by Udemy and altMBA veterans; backed by a16z and First Round.",
+ "content": "<p>Maven hosts live online courses taught by practitioners rather than academics. Instead of pre-recorded video you watch alone, a Maven course runs over a few weeks with a group of students (a cohort) who meet live with the instructor, do projects and learn from each other. Its website describes live courses with real-world experts in AI, product, leadership, design, data and engineering, marketing and sales, and business and finance, plus free short Lightning Lessons. For instructors, Maven provides an all-in-one platform including course landing pages, and its teach page says experts keep about 90% of their revenue.</p><p>Maven was founded by Gagan Biyani, a co-founder of Udemy; Wes Kao, a co-founder of altMBA; and Shreyans Bhansali, who previously started Socratic, according to Andreessen Horowitz's investment announcement. TechCrunch reported in May 2021 that Maven raised a $20 million Series A led by a16z, seven months after emerging from stealth with a $4.3 million round led by First Round Capital and three months after a $750,000 equity crowdfunding round. a16z partner Andrew Chen joined the board.</p><p>Maven changed direction in 2022. TechCrunch reported that September that it would focus less on courses from online creators with big audiences and more on courses taught by star employees and operators from tech companies, after finding that a large following did not guarantee a successful course. TechCrunch put Maven's known funding at about $25 million, from investors including a16z, First Round Capital, Naval Ravikant, Sahil Lavingia, Li Jin and Arlan Hamilton.</p><p>For students, each course has its own price set by the instructor, shown on its landing page; Lightning Lessons are free. For teachers, Maven takes a share of course revenue rather than a subscription. This profile draws on Maven's own pages and published reporting. We have not taken a Maven course, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Cohort-based online courses",
+  "platform": "Web",
+  "starts_at": "Free Lightning Lessons; courses priced individually",
+  "schema_category": "EducationalApplication",
+  "summary_short": "Live, cohort-based courses taught by working experts in AI, product, leadership and more",
+  "maker": {
+   "name": "Maven",
+   "url": "https://maven.com/"
+  },
+  "team": [
+   {
+    "name": "Gagan Biyani",
+    "role": "Co-founder; co-founder of Udemy"
+   },
+   {
+    "name": "Wes Kao",
+    "role": "Co-founder; co-founder of altMBA"
+   },
+   {
+    "name": "Shreyans Bhansali",
+    "role": "Co-founder; previously started Socratic"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://d3fe4umbwqdrlj.cloudfront.net/global/Maven_SocialShare_2026.jpg",
+    "alt": "Maven banner on dark navy reading Unlock your career growth, with a green label saying Learn live from expert practitioners",
+    "credit": "Image: Maven",
+    "w": 1989,
+    "h": 1125
+   },
+   {
+    "url": "https://d3fe4umbwqdrlj.cloudfront.net/teach/2026/FeatureShowcase_1.png",
+    "alt": "Example Maven course landing page for Executive Communication and Influence for Senior ICs and Managers by Wes Kao, with a section menu down the side",
+    "credit": "Image: Maven",
+    "w": 1848,
+    "h": 1200
+   }
+  ],
+  "use_cases": [
+   "Taking a live course in AI, product management or leadership from a practitioner",
+   "Learning with a cohort of peers on a fixed schedule",
+   "Trying a free short Lightning Lesson before buying a course",
+   "Teaching your own course and handling payments and enrolment in one place"
+  ],
+  "audience": {
+   "fit": [
+    "are a tech professional who learns best in live sessions with peers",
+    "want courses from people currently doing the job",
+    "are an expert who wants to run a paid course without building the tools"
+   ],
+   "not_fit": [
+    "want a cheap, self-paced video library",
+    "need an accredited degree or certificate"
+   ]
+  },
+  "pricing": {
+   "intro": "Each Maven course sets its own price, shown on its landing page. Lightning Lessons are free. For instructors, Maven's teach page says experts keep 90% of sales.",
+   "plans": [
+    {
+     "name": "Lightning Lessons",
+     "price": "Free",
+     "detail": "Short free lessons from instructors"
+    },
+    {
+     "name": "Cohort courses",
+     "price": "Set by each instructor",
+     "detail": "Shown on each course page"
+    },
+    {
+     "name": "Teaching on Maven",
+     "price": "Revenue share",
+     "detail": "Experts keep 90% of sales, per the teach page"
+    }
+   ],
+   "notes": [
+    "Course prices vary by instructor."
+   ],
+   "url": "https://maven.com/teach",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Live teaching and peer cohorts",
+   "Instructors are working practitioners",
+   "Free Lightning Lessons to sample instructors"
+  ],
+  "cons": [
+   "Each course has its own price, so costs vary widely",
+   "Fixed schedules may not suit everyone"
+  ],
+  "alternatives": {
+   "intro": "Other ways to take or run online courses. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Reforge",
+     "url": "https://www.reforge.com/",
+     "what": "Programs and courses for product and growth professionals",
+     "tags": [
+      "Professional learning"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Membership model focused on product and growth."
+    },
+    {
+     "name": "Coursera",
+     "url": "https://www.coursera.org/",
+     "what": "Online courses and degrees from universities and companies",
+     "tags": [
+      "Online courses"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Mostly self-paced, with accredited options."
+    },
+    {
+     "name": "Teachable",
+     "url": "https://teachable.com/",
+     "what": "Platform for creators to sell online courses",
+     "tags": [
+      "Course platform"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Subscription tool for creators rather than a curated marketplace."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is a cohort-based course?",
+    "a": "A course where a group of students goes through the material together on a set schedule, with live sessions led by the instructor."
+   },
+   {
+    "q": "Who founded Maven?",
+    "a": "Gagan Biyani (Udemy co-founder), Wes Kao (altMBA co-founder) and Shreyans Bhansali (Socratic), according to a16z."
+   },
+   {
+    "q": "How much does a Maven course cost?",
+    "a": "Each instructor sets the price, shown on the course page. Lightning Lessons are free."
+   },
+   {
+    "q": "How much do Maven instructors earn?",
+    "a": "Maven's teach page says experts keep 90% of all sales."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Maven website",
+    "url": "https://maven.com/"
+   },
+   {
+    "label": "Maven: Teach on Maven",
+    "url": "https://maven.com/teach"
+   },
+   {
+    "label": "a16z: Investing in Maven (May 2021)",
+    "url": "https://a16z.com/announcement/investing-in-maven/"
+   },
+   {
+    "label": "TechCrunch: a16z bets millions on Maven (20 May 2021)",
+    "url": "https://techcrunch.com/2021/05/20/maven-series-a-a16z/"
+   },
+   {
+    "label": "TechCrunch: Maven pivots from creators to experts (13 Sep 2022)",
+    "url": "https://techcrunch.com/2022/09/13/mavens-a16z-backed-teaching-platform-pivots-from-creators-to-experts/"
+   }
+  ]
+ }
+}

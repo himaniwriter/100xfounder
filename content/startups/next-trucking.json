@@ -1,0 +1,157 @@
+{
+ "slug": "next-trucking",
+ "website": "https://nexttrucking.com/",
+ "excerpt": "NEXT Trucking was a Long Beach, California, digital freight marketplace connecting shippers with truckers, especially for port drayage. Backed by Sequoia and Brookfield, it explored a sale in 2023 and furloughed most staff in 2024.",
+ "content": "<p>NEXT Trucking built an online marketplace that matched shippers with truck drivers and carriers. Instead of phone calls and spreadsheets through traditional freight brokers, shippers posted loads and truckers found and booked work through NEXT's app. It became especially focused on drayage: moving shipping containers in and out of the ports of Los Angeles and Long Beach. Its website still describes the company as intelligent, frictionless freight and invites shippers and drivers to sign up.</p><p>TechCrunch reported in January 2018 that NEXT was founded by Lidia Yan and her husband Elton Chung, after Yan ran a family warehousing and brokerage business for electronics shipped from Asia and saw how hard it was to find reliable trucking. That month NEXT raised $21 million led by Sequoia Capital. In 2019 it raised a $97 million Series C led by Brookfield, which FreightWaves later said valued the company at $500 million; PitchBook data cited by FreightWaves put total funding above $262 million.</p><p><strong>Troubled since 2023.</strong> In June 2023 FreightWaves reported that NEXT had hired BG Strategic Advisors to explore strategic alternatives, including new funding or a sale. The report, citing The Information, said NEXT had lost $40 million before interest, taxes, depreciation and amortisation in 2021 and $21 million in 2022. In September 2024 FreightWaves reported that NEXT Trucking and its sister company Next Freight Solutions were on the brink of closure after furloughing about 18 of their 28 remaining workers in Long Beach, following the loss of key customers; former employees and carriers told FreightWaves that carriers had not been paid for some loads. We have not found a later public statement on the company's status. Its website was still online when we checked, but we could not confirm that it is actively taking freight.</p><p>NEXT never published a public rate card; freight was priced per load. This profile draws on published reporting and the company's website. We have not used the service, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Digital freight marketplace (status uncertain)",
+  "platform": "Web and mobile app",
+  "starts_at": "Per-load pricing; no public rate card",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Online marketplace matching shippers and truckers, focused on LA and Long Beach port drayage",
+  "maker": {
+   "name": "NEXT Trucking",
+   "url": "https://nexttrucking.com/"
+  },
+  "team": [
+   {
+    "name": "Lidia Yan",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Elton Chung",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://nexttrucking.com/wp-content/uploads/2023/09/cfbe4f6a0b977e3814ea4a89ff64b0ee-scaled-2.jpg",
+    "alt": "Stacked shipping containers in green, yellow, brown, red and teal, as used on NEXT Trucking's website",
+    "credit": "Image: NEXT Trucking website",
+    "w": 2560,
+    "h": 1707
+   },
+   {
+    "url": "https://nexttrucking.com/wp-content/uploads/2024/04/3360a705ff6f0fc68cef19f5bec1d33b-1536x1024-1.png",
+    "alt": "A smiling truck driver in a plaid shirt at the wheel of a truck cab, as used on NEXT Trucking's website",
+    "credit": "Image: NEXT Trucking website",
+    "w": 1536,
+    "h": 1024
+   }
+  ],
+  "use_cases": [
+   "Booking trucks to move containers from the ports of Los Angeles and Long Beach",
+   "Finding loads as an owner-operator or small carrier",
+   "A case study in digital freight brokerage after the 2021 freight boom"
+  ],
+  "audience": {
+   "fit": [
+    "research digital freight brokerage and drayage marketplaces",
+    "follow the trucking and freight-tech market"
+   ],
+   "not_fit": [
+    "need a freight partner with a confirmed, stable status today",
+    "operate outside the US"
+   ]
+  },
+  "pricing": {
+   "intro": "NEXT priced freight per load and did not publish a public rate card. Given reports of furloughs in 2024, confirm the company's status before booking.",
+   "plans": [
+    {
+     "name": "Freight booking",
+     "price": "Per load",
+     "detail": "No public rate card"
+    }
+   ],
+   "notes": [
+    "Status unconfirmed after FreightWaves' September 2024 report."
+   ],
+   "url": "https://nexttrucking.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Early mover in digital drayage at the LA and Long Beach ports",
+   "Raised large rounds from Sequoia and Brookfield"
+  ],
+  "cons": [
+   "Reported losses and a search for a buyer in 2023",
+   "Most staff furloughed in 2024; carriers reported unpaid loads"
+  ],
+  "alternatives": {
+   "intro": "Other digital freight marketplaces in the US. We have not compared them.",
+   "items": [
+    {
+     "name": "Uber Freight",
+     "url": "https://www.uberfreight.com/",
+     "what": "Digital freight brokerage and logistics platform",
+     "tags": [
+      "Digital freight"
+     ],
+     "starts_at": "Per load",
+     "difference": "Large national network."
+    },
+    {
+     "name": "DAT",
+     "url": "https://www.dat.com/",
+     "what": "Load board and freight market data for carriers and brokers",
+     "tags": [
+      "Load board"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Load board and rate data rather than a managed brokerage."
+    },
+    {
+     "name": "Loadsmart",
+     "url": "https://loadsmart.com/",
+     "what": "Digital freight brokerage and shipping software",
+     "tags": [
+      "Digital freight"
+     ],
+     "starts_at": "Per load",
+     "difference": "Combines brokerage with software for shippers and carriers."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded NEXT Trucking?",
+    "a": "Lidia Yan and her husband Elton Chung, according to TechCrunch."
+   },
+   {
+    "q": "How much did NEXT Trucking raise?",
+    "a": "Over $262 million in total, per PitchBook data cited by FreightWaves, including a $97 million Series C led by Brookfield in 2019."
+   },
+   {
+    "q": "Is NEXT Trucking still operating?",
+    "a": "Unclear. FreightWaves reported in September 2024 that it was on the brink of closure after furloughing most remaining workers. Its website was still online when we checked."
+   },
+   {
+    "q": "Did NEXT Trucking try to sell itself?",
+    "a": "Yes. In June 2023 FreightWaves reported it had hired BG Strategic Advisors to explore new funding or a sale."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: NEXT Trucking takes in a $21 million haul (28 Jan 2018)",
+    "url": "https://techcrunch.com/2018/01/28/trucking-logistics-company-next-trucking-takes-in-a-21-million-haul/"
+   },
+   {
+    "label": "VentureBeat: NEXT Trucking raises $97 million (2019)",
+    "url": "https://venturebeat.com/business/next-trucking-raises-97-million-to-streamline-freight-transport"
+   },
+   {
+    "label": "FreightWaves: NEXT Trucking eyes possible sale (Jun 2023)",
+    "url": "https://www.freightwaves.com/news/next-trucking-eyes-possible-sale-freighttech-experts-weigh-in"
+   },
+   {
+    "label": "FreightWaves: Digital freight broker furloughs workers after losing key customers (Sep 2024)",
+    "url": "https://www.freightwaves.com/news/digital-freight-broker-furloughs-workers-after-losing-key-customers"
+   },
+   {
+    "label": "NEXT Trucking website",
+    "url": "https://nexttrucking.com/"
+   }
+  ]
+ }
+}

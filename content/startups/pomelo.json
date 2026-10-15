@@ -1,0 +1,149 @@
+{
+ "slug": "pomelo",
+ "website": "https://www.pomelo.com/",
+ "excerpt": "Pomelo combined international money transfer with a credit card, letting US senders pay for remittances to the Philippines on credit and build credit history. Zepz, owner of WorldRemit and Sendwave, acquired it in January 2026.",
+ "content": "<p>Pomelo was a San Francisco fintech that built a credit card for sending money home. Instead of paying for a remittance from a bank account or with an expensive cash advance, a customer in the United States could send money to family abroad using the Pomelo Mastercard, then repay over time, while the payments helped build their US credit history. Its product was aimed mainly at migrants sending money to the Philippines. Pomelo said customers could also earn points on purchases and transfers, CFOtech reported. TechCrunch described the model as \"send now, pay later\".</p><p>Pomelo was founded by Eric Velasquez Frenkiel, its CEO. Its product launched in the Philippines in 2022. TechCrunch reported a $20 million seed round led by Founders Fund in 2022, and in April 2024 a $35 million Series A led by Vy Capital, a Dubai-based investment firm. Keith Rabois sat on Pomelo's board, and Kevin Hartz, a co-founder of Eventbrite and the money transfer service Xoom, was also a backer.</p><p><strong>Acquired by Zepz.</strong> In January 2026 Zepz, the parent company of the remittance brands WorldRemit and Sendwave, announced that it had acquired Pomelo's product and team, Fintech News Philippines and CFOtech reported. Zepz said the deal would help it expand beyond money transfer into cards, lending and credit building for cross-border communities, and called the Philippines one of its core markets. Financial terms were not disclosed. Zepz said Pomelo's product had been temporarily paused for customers while it was integrated into Zepz's roadmap, without giving a date for its return. Pomelo's own website no longer loads.</p><p>Because the product is paused, there is nothing to sign up for today. This profile draws on published reporting. We have not used the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Remittances on credit (acquired by Zepz)",
+  "platform": "iOS and Android app (paused)",
+  "starts_at": "Product paused after acquisition",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Credit card built for sending money to the Philippines; acquired by Zepz in 2026 and paused",
+  "maker": {
+   "name": "Pomelo (acquired by Zepz, January 2026)",
+   "url": "https://fintechnews.ph/69664/remittance/zepz-acquires-pomelo-credit-services-expansion/"
+  },
+  "team": [
+   {
+    "name": "Eric Velasquez Frenkiel",
+    "role": "Founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/6724fd3d7f55d5c3c0f18427/67859986ac30958a2077c4dd_pomelo-share.jpg",
+    "alt": "Two hands forming a heart shape around a teal Pomelo Mastercard, with US and Philippine flag icons in the corners",
+    "credit": "Image: Pomelo",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/6724fd3d7f55d5c3c0f18427/67742eec543906370359a739_webclip.png",
+    "alt": "Pomelo app icon: a pink pomelo-fruit outline with a leaf and four rounded segments inside",
+    "credit": "Image: Pomelo",
+    "w": 256,
+    "h": 256
+   }
+  ],
+  "use_cases": [
+   "Sending money from the US to family in the Philippines on credit (before the pause)",
+   "Building US credit history through remittance payments",
+   "A case study in credit-led remittance products"
+  ],
+  "audience": {
+   "fit": [
+    "follow remittance and cross-border fintech",
+    "send money to the Philippines and want to watch for the product's return under Zepz"
+   ],
+   "not_fit": [
+    "need to send money today: the product is paused",
+    "want a debit-funded transfer with no credit involved"
+   ]
+  },
+  "pricing": {
+   "intro": "Pomelo's product is paused while Zepz integrates it, so there are no current prices. Pomelo's website no longer loads.",
+   "plans": [
+    {
+     "name": "Pomelo card",
+     "price": "Not available",
+     "detail": "Paused after the Zepz acquisition"
+    }
+   ],
+   "notes": [
+    "Zepz has not given a date for the product's return."
+   ],
+   "url": "https://cfotech.com.au/story/zepz-buys-pomelo-to-add-credit-cards-to-remittances",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Combined remittances with credit building",
+   "Backed by Founders Fund and Vy Capital before its sale"
+  ],
+  "cons": [
+   "Product paused after the acquisition",
+   "Sending money on credit means repaying it later"
+  ],
+  "alternatives": {
+   "intro": "Other ways to send money from the US to the Philippines. We have not compared fees.",
+   "items": [
+    {
+     "name": "Remitly",
+     "url": "https://www.remitly.com/",
+     "what": "International money transfer app",
+     "tags": [
+      "Remittances"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Large remittance app; no credit product."
+    },
+    {
+     "name": "WorldRemit",
+     "url": "https://www.worldremit.com/",
+     "what": "Money transfer service from Zepz",
+     "tags": [
+      "Remittances"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Pomelo's new parent group's main remittance brand."
+    },
+    {
+     "name": "Wise",
+     "url": "https://wise.com/",
+     "what": "International transfers at the mid-market exchange rate",
+     "tags": [
+      "Remittances"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Transparent fees; funded from a bank account or card."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What happened to Pomelo?",
+    "a": "Zepz, owner of WorldRemit and Sendwave, acquired its product and team in January 2026 and paused the product while integrating it."
+   },
+   {
+    "q": "What did Pomelo do?",
+    "a": "It offered a credit card designed for remittances, letting US senders pay on credit and build credit history while sending money to the Philippines."
+   },
+   {
+    "q": "How much did Pomelo raise?",
+    "a": "A $20 million seed led by Founders Fund in 2022 and a $35 million Series A led by Vy Capital in 2024, TechCrunch reported."
+   },
+   {
+    "q": "Who founded Pomelo?",
+    "a": "Eric Velasquez Frenkiel, who was CEO."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Pomelo lands $35M Series A from Vy Capital, Founders Fund (22 Apr 2024)",
+    "url": "https://techcrunch.com/2024/04/22/pomelo-lands-35m-series-a-for-credit-focused-international-money-transfer-business/"
+   },
+   {
+    "label": "Fintech News Philippines: Zepz buys Pomelo (22 Jan 2026)",
+    "url": "https://fintechnews.ph/69664/remittance/zepz-acquires-pomelo-credit-services-expansion/"
+   },
+   {
+    "label": "CFOtech: Zepz buys Pomelo to add credit cards to remittances (22 Jan 2026)",
+    "url": "https://cfotech.com.au/story/zepz-buys-pomelo-to-add-credit-cards-to-remittances"
+   },
+   {
+    "label": "Internet Archive: pomelo.com (Feb 2026)",
+    "url": "https://web.archive.org/web/20260211183422/https://www.pomelo.com/"
+   }
+  ]
+ }
+}

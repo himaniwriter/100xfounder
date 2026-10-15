@@ -1,0 +1,164 @@
+{
+ "slug": "lime",
+ "website": "https://www.li.me/",
+ "excerpt": "Lime rents shared e-scooters and e-bikes by the minute in about 230 cities across 29 countries. Founded in 2017 and backed by Uber, it listed on Nasdaq (LIME) in July 2026 after pricing its IPO at $25 a share.",
+ "content": "<p>Lime runs shared electric scooters and electric bikes that people unlock with a phone app and ride for short trips around a city, paying for the time they use. Riders find a vehicle on the app's map, scan it to unlock, ride, and park where the city allows. Lime's vehicles can also be booked through the Uber app; that channel made up 14.3% of Lime's 2025 revenue, according to its IPO filing. Renaissance Capital, summarising Lime's IPO prospectus, reported that Lime describes itself as the largest global shared micromobility business, operating in about 230 cities across 29 countries at the end of 2025 and serving about 19 million riders that year, with roughly 27% market share across the countries it operates in and 37% in the US.</p><p>Lime was founded in 2017 and is based in San Francisco; its legal entity is Neutron Holdings. The Next Web reported that co-founder Brad Bao, chief executive Wayne Ting and president Joseph Kraus sold shares in the IPO. Uber owns more than 10% of Lime and guarantees some of its debt, The Next Web reported.</p><p><strong>Public since July 2026.</strong> Lime filed for a Nasdaq listing in May 2026. Its prospectus showed revenue of $886.7 million in 2025, up 29%, and a net loss of $59.3 million. On 30 June 2026 it priced its IPO at $25 a share, the midpoint of its range, raising about $174 million, and began trading on Nasdaq under the ticker LIME on 1 July, Renaissance Capital and The Next Web reported. Uber had indicated interest in buying up to $20 million of shares in the offering.</p><p>Ride prices vary by city and are shown in the Lime app before you unlock. Lime's website blocked our checks, so we do not quote prices. This profile draws on published reporting and IPO coverage. We have not tested the service, and nothing here is paid placement or investment advice.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Shared e-scooters and e-bikes",
+  "platform": "Mobile app (also bookable in the Uber app)",
+  "starts_at": "Pay per ride; prices vary by city and are shown in the app",
+  "schema_category": "TravelApplication",
+  "summary_short": "Shared e-scooters and e-bikes in about 230 cities; Nasdaq-listed since July 2026",
+  "maker": {
+   "name": "Lime (Neutron Holdings, Inc.)",
+   "url": "https://www.li.me/"
+  },
+  "team": [
+   {
+    "name": "Wayne Ting",
+    "role": "CEO"
+   },
+   {
+    "name": "Brad Bao",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Joseph Kraus",
+    "role": "President"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Frankfurt%2C_Germany_-_Lime_electric_kick_scooter.jpg/1280px-Frankfurt%2C_Germany_-_Lime_electric_kick_scooter.jpg",
+    "alt": "A white and green Lime electric kick scooter parked on a gravel path in a park in Frankfurt",
+    "credit": "Photo: Alexis Jazz, CC BY 4.0, via Wikimedia Commons",
+    "w": 1280,
+    "h": 1128
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lime_e-scooters_and_bike%2C_Kinsmen_Park%2C_Edmonton_04-21-2023.jpg/1280px-Lime_e-scooters_and_bike%2C_Kinsmen_Park%2C_Edmonton_04-21-2023.jpg",
+    "alt": "A row of green-handled Lime e-scooters and a Lime e-bike parked on grass at Kinsmen Park in Edmonton, with city towers behind",
+    "credit": "Photo: TagaSanPedroAko, CC BY-SA 4.0, via Wikimedia Commons",
+    "w": 1280,
+    "h": 720
+   }
+  ],
+  "use_cases": [
+   "Short trips across a city without a car",
+   "Getting from a train or bus stop to your final destination",
+   "Riding an e-bike for a longer commute without owning one",
+   "Booking a scooter or bike through the Uber app"
+  ],
+  "audience": {
+   "fit": [
+    "live in or visit one of the cities Lime serves",
+    "make short trips where walking is slow and driving is a hassle",
+    "do not want to own or store a bike or scooter"
+   ],
+   "not_fit": [
+    "need to carry heavy loads or passengers",
+    "live where shared scooters are not permitted"
+   ]
+  },
+  "pricing": {
+   "intro": "Lime's prices vary by city and are shown in the app before each ride. Lime's website blocked our checks, so we do not quote fees here.",
+   "plans": [
+    {
+     "name": "Pay per ride",
+     "price": "Shown in the app",
+     "detail": "Varies by city and vehicle type"
+    }
+   ],
+   "notes": [
+    "Check the Lime app for the price in your city before unlocking."
+   ],
+   "url": "https://www.li.me/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Available in about 230 cities across 29 countries",
+   "Scooters and e-bikes in one app, also bookable via Uber",
+   "Listed company with public financial reporting"
+  ],
+  "cons": [
+   "Still loss-making on a net-income basis",
+   "Prices and rules vary city by city"
+  ],
+  "alternatives": {
+   "intro": "Other shared scooter and bike services. Availability depends on the city.",
+   "items": [
+    {
+     "name": "Lyft bikes and scooters",
+     "url": "https://www.lyft.com/bikes",
+     "what": "Bike-share and scooter systems run by Lyft in US cities",
+     "tags": [
+      "Micromobility"
+     ],
+     "starts_at": "See its app",
+     "difference": "Runs docked city bike-share systems as well as dockless vehicles."
+    },
+    {
+     "name": "Dott",
+     "url": "https://ridedott.com/",
+     "what": "European shared e-scooter and e-bike operator",
+     "tags": [
+      "Micromobility"
+     ],
+     "starts_at": "See its app",
+     "difference": "Focused on Europe."
+    },
+    {
+     "name": "Voi",
+     "url": "https://www.voi.com/",
+     "what": "Swedish shared e-scooter and e-bike operator",
+     "tags": [
+      "Micromobility"
+     ],
+     "starts_at": "See its app",
+     "difference": "Strong in Nordic and European cities."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Lime a public company?",
+    "a": "Yes. It priced its IPO at $25 a share on 30 June 2026 and began trading on Nasdaq as LIME on 1 July 2026."
+   },
+   {
+    "q": "How many cities is Lime in?",
+    "a": "About 230 cities across 29 countries at the end of 2025, according to its prospectus as summarised by Renaissance Capital."
+   },
+   {
+    "q": "Is Lime profitable?",
+    "a": "Not on a net-income basis: its 2025 net loss was $59.3 million on revenue of $886.7 million."
+   },
+   {
+    "q": "How much does a Lime ride cost?",
+    "a": "It depends on the city; the app shows the price before you unlock."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Renaissance Capital: Lime prices IPO at the $25 midpoint (1 Jul 2026)",
+    "url": "https://www.renaissancecapital.com/IPO-Center/News/120184/E-scooter-rental-platform-Lime-prices-IPO-at-the-$25-midpoint"
+   },
+   {
+    "label": "The Next Web: Uber-backed Lime prices its IPO at $25 a share (1 Jul 2026)",
+    "url": "https://thenextweb.com/news/lime-ipo-priced-25-dollars-nasdaq"
+   },
+   {
+    "label": "Business Wire: Lime announces pricing of initial public offering (30 Jun 2026)",
+    "url": "https://www.businesswire.com/news/home/20260630995454/en/Lime-Announces-Pricing-of-Initial-Public-Offering"
+   },
+   {
+    "label": "Micromobility.io: Inside Lime's S-1 (Jun 2026)",
+    "url": "https://micromobility.io/news/886m-230-cities-and-an-ipo-filing---inside-limes-s-1"
+   },
+   {
+    "label": "Wikimedia Commons: Lime scooter photos",
+    "url": "https://commons.wikimedia.org/wiki/File:Frankfurt,_Germany_-_Lime_electric_kick_scooter.jpg"
+   }
+  ]
+ }
+}

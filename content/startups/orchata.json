@@ -1,0 +1,156 @@
+{
+ "slug": "orchata",
+ "website": "https://www.ycombinator.com/companies/orchata",
+ "excerpt": "Orchata was a Monterrey, Mexico, grocery delivery startup that promised 15-minute delivery from its own dark stores. Backed by Y Combinator, it raised a $4M seed in 2021; Y Combinator now lists it as inactive.",
+ "content": "<p>Orchata was a quick-commerce startup in Mexico. Its mobile app let shoppers order groceries and household items and have them delivered in about 15 minutes, with no substitutions and at supermarket prices. To hit that speed it ran its own network of micro-fulfilment centres, often called dark stores, with its own technology for fast picking and delivery. The archived app screenshots show categories such as drinks, fruit and vegetables, beer, bakery, snacks, dairy, cold cuts and frozen food.</p><p>TechCrunch reported in August 2021 that Orchata was founded in 2020 by Luis Mario Garcia, who grew up making deliveries for grocery stores in his neighbourhood, and Javier Gonzalez. The company was based in Monterrey, went through Y Combinator in 2020, and announced a $4 million seed round from Y Combinator, JAM Fund, FJ Labs, Venture Friends, Investo and Foundation Capital, plus angel investors. At that point it had been live for about four months and operated in two cities, and the founders described their ambition as building a Gopuff for Latin America. LAVCA covered the same round.</p><p>Competition was fierce. Rest of World reported in October 2021 on the race among Mexican startups and giants such as Rappi, Uber, Walmart and Amazon to deliver fastest, noting that ultra-fast delivery had quickly become something every delivery company offered and that Orchata's promise did not set it far apart from rivals.</p><p><strong>No longer operating.</strong> Y Combinator's company directory now lists Orchata as inactive, and orchata.com no longer serves the app's website. We found no public announcement explaining when or why it stopped. Images on this page are from Orchata's own website as archived in December 2022. This profile draws on published reporting and Y Combinator's directory, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Quick-commerce grocery delivery (inactive)",
+  "platform": "iOS and Android app (no longer operating)",
+  "starts_at": "Service no longer available",
+  "schema_category": "ShoppingApplication",
+  "summary_short": "Mexican 15-minute grocery delivery app run from its own dark stores; now inactive",
+  "maker": {
+   "name": "Orchata (inactive)",
+   "url": "https://www.ycombinator.com/companies/orchata"
+  },
+  "team": [
+   {
+    "name": "Luis Mario Garcia",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Javier Gonzalez",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://web.archive.org/web/20221206181853im_/https://orchata.com/static/main3-f8481d9ca0ded27bb89004581358a84f.png",
+    "alt": "Orchata app on a phone, showing a Spanish-language grocery menu with categories such as Bebidas, Frutas y Verduras, Cervezas y Licores and Botanas, and an Entrega 20 min badge",
+    "credit": "Image: Orchata, from its website as archived by the Internet Archive (Dec 2022)",
+    "w": 1080,
+    "h": 1080
+   },
+   {
+    "url": "https://web.archive.org/web/20221206181853im_/https://orchata.com/static/main-71e774175736f5ee3d57d9dba80934f5.png",
+    "alt": "A hand passing a brown paper Orchata delivery bag full of groceries and snacks to another hand",
+    "credit": "Image: Orchata, from its website as archived by the Internet Archive (Dec 2022)",
+    "w": 1080,
+    "h": 1080
+   }
+  ],
+  "use_cases": [
+   "Ordering groceries for delivery in about 15 minutes (when it operated)",
+   "A case study in Latin American quick commerce and dark stores"
+  ],
+  "audience": {
+   "fit": [
+    "research quick commerce and dark-store models in Latin America",
+    "follow Y Combinator-backed startups in Mexico"
+   ],
+   "not_fit": [
+    "want groceries delivered today: Orchata is no longer operating",
+    "want to invest in or partner with the company"
+   ]
+  },
+  "pricing": {
+   "intro": "Orchata is no longer operating, so there are no current prices. When it launched, it promised supermarket prices with no substitutions, TechCrunch reported.",
+   "plans": [
+    {
+     "name": "Orchata app",
+     "price": "Not available",
+     "detail": "Service inactive"
+    }
+   ],
+   "notes": [
+    "Y Combinator lists the company as inactive."
+   ],
+   "url": "https://www.ycombinator.com/companies/orchata",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Owned the full customer experience through its own dark stores",
+   "Backed by Y Combinator and well-known seed investors"
+  ],
+  "cons": [
+   "No longer operating",
+   "Faced much larger, well-funded delivery rivals"
+  ],
+  "alternatives": {
+   "intro": "Grocery and quick-delivery apps that operate in Mexico. We have not compared them.",
+   "items": [
+    {
+     "name": "Rappi",
+     "url": "https://www.rappi.com.mx/",
+     "what": "Latin American delivery super-app",
+     "tags": [
+      "Delivery"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Large regional super-app covering restaurants, groceries and more."
+    },
+    {
+     "name": "Uber Eats",
+     "url": "https://www.ubereats.com/mx",
+     "what": "Food and grocery delivery app operating in Mexico",
+     "tags": [
+      "Delivery"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Large international delivery platform."
+    },
+    {
+     "name": "Walmart Mexico (Walmart Express)",
+     "url": "https://www.walmart.com.mx/",
+     "what": "Supermarket chain with online grocery delivery",
+     "tags": [
+      "Supermarket"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Large incumbent retailer."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Orchata still operating?",
+    "a": "No. Y Combinator's directory lists it as inactive, and its website no longer serves the app."
+   },
+   {
+    "q": "What did Orchata do?",
+    "a": "It delivered groceries in Mexico in about 15 minutes from its own micro-fulfilment centres, at supermarket prices and with no substitutions."
+   },
+   {
+    "q": "Who founded Orchata?",
+    "a": "Luis Mario Garcia and Javier Gonzalez, in 2020, according to TechCrunch."
+   },
+   {
+    "q": "How much did Orchata raise?",
+    "a": "A $4 million seed round in August 2021 from investors including Y Combinator, JAM Fund, FJ Labs and Foundation Capital."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Orchata raises $4M, aims to build a Gopuff for Latin America (13 Aug 2021)",
+    "url": "https://techcrunch.com/2021/08/13/orchata-raises-4m-aims-to-build-a-gopuff-for-latin-america/"
+   },
+   {
+    "label": "Rest of World: The race to build Mexico's quickest delivery app (26 Oct 2021)",
+    "url": "https://restofworld.org/2021/ultra-fast-groceries-quickest-delivery-app-mexico/"
+   },
+   {
+    "label": "LAVCA: Orchata raised USD4m seed round (13 Aug 2021)",
+    "url": "https://www.lavca.org/mexican-on-demand-grocery-delivery-platform-orchata-raised-usd4m-seed-round/"
+   },
+   {
+    "label": "Y Combinator: Orchata (status inactive)",
+    "url": "https://www.ycombinator.com/companies/orchata"
+   },
+   {
+    "label": "Internet Archive: orchata.com (Dec 2022)",
+    "url": "https://web.archive.org/web/20221206181853/https://orchata.com/"
+   }
+  ]
+ }
+}
