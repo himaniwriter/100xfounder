@@ -332,6 +332,7 @@ function xf_admin_settings() {
             <?php endforeach; ?>
             <?php submit_button(); ?>
         </form>
+        <?php if (function_exists('xf_ig_settings_card')) { xf_ig_settings_card(); } ?>
 
         <h2>Daily schedule (hPanel cron job)</h2>
         <p>WordPress only runs scheduled tasks when someone visits the site. For a reliable daily run, add this in hPanel → Advanced → Cron Jobs, set to run once a day (e.g. 14:00):</p>

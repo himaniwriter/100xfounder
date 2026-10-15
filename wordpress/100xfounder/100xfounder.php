@@ -37,6 +37,7 @@ if (is_readable(XF_DIR . 'includes/outreach-inbox.php')) { require_once XF_DIR .
 if (is_readable(XF_DIR . 'includes/spotlights.php')) { require_once XF_DIR . 'includes/spotlights.php'; }
 if (is_readable(XF_DIR . 'includes/instagram.php')) { require_once XF_DIR . 'includes/instagram.php'; }
 if (is_readable(XF_DIR . 'includes/instagram-templates.php')) { require_once XF_DIR . 'includes/instagram-templates.php'; }
+if (is_readable(XF_DIR . 'includes/instagram-publish.php')) { require_once XF_DIR . 'includes/instagram-publish.php'; }
 if (is_readable(XF_DIR . 'includes/pipeline.php')) { require_once XF_DIR . 'includes/pipeline.php'; }
 if (is_readable(XF_DIR . 'includes/shortcodes.php')) { require_once XF_DIR . 'includes/shortcodes.php'; }
 if (is_readable(XF_DIR . 'includes/adsense.php')) { require_once XF_DIR . 'includes/adsense.php'; }

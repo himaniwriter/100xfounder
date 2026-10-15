@@ -1219,6 +1219,7 @@ function xf_ig_admin_card() {
         <p>Calendar from the playbook (IST): Mon roundup + AI tip · Tue founder story + launch · Wed news + founder story · Thu founder story + launch · Fri news + AI tip · Sat roundup · Sun best founder story.
             Queued daily at 00:05 IST<?php echo $last ? ' (last: ' . esc_html($last['day'] . ' → ' . implode('; ', $last['slots'])) . ')' : ''; ?>.
             <a class="button button-small" href="<?php echo esc_url(wp_nonce_url(admin_url('admin-post.php?action=xf_ig_calendar_now'), 'xf_ig_calendar_now')); ?>">Queue today's slots now</a></p>
+        <?php if (function_exists('xf_ig_autopost_status')) { xf_ig_autopost_status(); } ?>
         <p>Check the slides and caption, download, post on Instagram, then mark it posted. Founder stories from profiles need the founder's OK first.</p>
         <?php foreach (array_merge($queue, $done) as $item) : $payload = json_decode($item->payload, true) ?: []; ?>
             <div style="border-top:1px solid #ddd;padding:12px 0">
@@ -1227,6 +1228,7 @@ function xf_ig_admin_card() {
                 <em>(<?php echo esc_html($item->status); ?>)</em>
                 · Planned: <strong><?php echo esc_html(xf_ig_planned_label($item->planned_at ?? null)); ?></strong>
                 <?php if (!empty($payload['needs_founder_ok'])) : ?><span style="color:#b45309">· Get the founder's OK before posting</span><?php endif; ?>
+                <?php if (function_exists('xf_ig_item_controls')) { xf_ig_item_controls($item, $payload); } ?>
                 <br>
                 <a class="button button-small" href="<?php echo esc_url(xf_admin_action_url('ig_posted', ['id' => $item->id])); ?>">Mark posted</a>
                 <a class="button button-small" href="<?php echo esc_url(xf_admin_action_url('ig_skipped', ['id' => $item->id])); ?>">Skip</a>
