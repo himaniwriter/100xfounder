@@ -32,7 +32,7 @@ function xf_cap_external_links($html, $keep) {
     }
     $home = xf_strip_www(wp_parse_url(home_url(), PHP_URL_HOST));
     $kept = 0;
-    $main = preg_replace_callback('~<a\b([^>]*)>(.*?)</a>~is', function ($m) use (&$kept, $keep, $home) {
+    $main = preg_replace_callback('~<a\b([^>]*)>((?:(?!<a\b).)*?)</a>~is', function ($m) use (&$kept, $keep, $home) {
         if (!preg_match('~\bhref=(["\'])(https?://[^"\']+)\1~i', $m[1], $h)) {
             return $m[0];
         }
