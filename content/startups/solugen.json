@@ -1,0 +1,156 @@
+{
+ "slug": "solugen",
+ "website": "https://solugen.com/",
+ "excerpt": "Solugen is a Houston company that makes chemicals from biomass and other domestic feedstocks in its Bioforge plants, for energy, water treatment and defence uses. Founded in 2016; won a conditional $213.6M DOE loan guarantee in 2024.",
+ "content": "<p>Solugen is an industrial chemicals company based in Houston, Texas. Its Bioforge technology turns biomass into high-demand chemicals that were previously made from fossil fuels, in plants it calls Forges. Its first plant, Bioforge Houston, has been operating since 2021, according to InnovationMap. Solugen's website now describes the company as turning American feedstocks into critical materials for energy systems and national security, and lists four Forge types: Bioforge for organic acids used across oilfield operations, water treatment and corrosion protection; Terraforge for amines and aldehydes; Nitroforge for nitramine energetics used in well completions and mining; and Acroforge.</p><p>Solugen's company page says it was founded in 2016 by Gaurab Chakrabarti, a physician-scientist who is CEO, and Sean Hunt, the CTO, who holds a PhD in chemical engineering from MIT.</p><p>In June 2024 Solugen received a conditional commitment for a $213.6 million loan guarantee from the US Department of Energy's Loan Programs Office, Chemical Engineering magazine reported. The money is for Bioforge Marshall, a 500,000-square-foot plant in southwest Minnesota that broke ground in April 2024 and is a scaled-up version of the Houston plant. It is meant to make bio-based chemicals for wastewater treatment, construction, agriculture and energy, and Solugen said it expects the plant to cut annual carbon emissions by up to 18 million kilograms. The commitment was conditional on further technical, legal, environmental and financial conditions; we have not found confirmation that the loan has closed.</p><p>Solugen sells to industrial and government customers rather than consumers, and it does not publish prices. This profile draws on Solugen's own site and published reporting. Nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Bio-based industrial chemicals",
+  "platform": "Chemical manufacturing (B2B)",
+  "starts_at": "Industrial supply; prices not published",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Makes organic acids, amines and other chemicals from biomass in modular Bioforge plants",
+  "maker": {
+   "name": "Solugen",
+   "url": "https://solugen.com/company/"
+  },
+  "team": [
+   {
+    "name": "Gaurab Chakrabarti",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Sean Hunt",
+    "role": "Co-founder and CTO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://solugen.com/uploads/forge-bioforge-houston-aerial.jpg",
+    "alt": "Aerial view of Solugen's Bioforge Houston plant: steel process structures, white storage tanks and green-trimmed buildings",
+    "credit": "Image: Solugen",
+    "w": 2000,
+    "h": 1126
+   },
+   {
+    "url": "https://solugen.com/og/company.jpg",
+    "alt": "Top-down view of a dark industrial plant with tanks and pipework, overlaid with the text About Solugen: founders, leadership and investors",
+    "credit": "Image: Solugen",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Supplying organic acids for oilfield completions, production and produced water",
+   "Water and wastewater treatment chemicals",
+   "Chromium-free corrosion protection for aluminium and steel",
+   "Domestic supply of amines, aldehydes and energetics for energy and defence"
+  ],
+  "audience": {
+   "fit": [
+    "buy speciality or commodity chemicals for oil and gas, water treatment or manufacturing",
+    "want a domestic US supply of critical chemicals",
+    "follow industrial biotechnology and decarbonisation"
+   ],
+   "not_fit": [
+    "are a consumer: Solugen sells to industry and government",
+    "need small quantities from a catalogue with list prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Solugen does not publish prices. It supplies chemicals to industrial and government customers on negotiated terms.",
+   "plans": [
+    {
+     "name": "Industrial supply",
+     "price": "Not published",
+     "detail": "Contact Solugen"
+    }
+   ],
+   "notes": [
+    "No public price list on solugen.com when checked."
+   ],
+   "url": "https://solugen.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Makes chemicals from biomass and domestic feedstocks",
+   "Several Forge types serving energy, water and defence markets",
+   "Backed by a conditional DOE loan guarantee for its Minnesota plant"
+  ],
+  "cons": [
+   "DOE loan guarantee was conditional when announced",
+   "No public pricing"
+  ],
+  "alternatives": {
+   "intro": "Other companies making bio-based or lower-carbon chemicals. We have not compared products.",
+   "items": [
+    {
+     "name": "LanzaTech",
+     "url": "https://lanzatech.com/",
+     "what": "Gas fermentation that turns waste carbon into chemicals and fuels",
+     "tags": [
+      "Industrial biotech"
+     ],
+     "starts_at": "Not published",
+     "difference": "Uses industrial off-gases rather than plant sugars."
+    },
+    {
+     "name": "Genomatica (Geno)",
+     "url": "https://www.genomatica.com/",
+     "what": "Bio-based chemical and material ingredients",
+     "tags": [
+      "Industrial biotech"
+     ],
+     "starts_at": "Not published",
+     "difference": "Licenses fermentation processes for consumer-product ingredients."
+    },
+    {
+     "name": "Twelve",
+     "url": "https://www.twelve.co/",
+     "what": "Electrochemical conversion of CO2 into chemicals and fuels",
+     "tags": [
+      "Carbon transformation"
+     ],
+     "starts_at": "Not published",
+     "difference": "Starts from captured CO2 and electricity."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Solugen make?",
+    "a": "Chemicals such as organic acids, amines and aldehydes, made from biomass and other domestic feedstocks in its Forge plants."
+   },
+   {
+    "q": "Who founded Solugen?",
+    "a": "Gaurab Chakrabarti (CEO) and Sean Hunt (CTO), in 2016, according to Solugen's company page."
+   },
+   {
+    "q": "What is Bioforge Marshall?",
+    "a": "A 500,000-square-foot Solugen plant in southwest Minnesota, supported by a conditional $213.6 million DOE loan guarantee announced in June 2024."
+   },
+   {
+    "q": "Where is Solugen based?",
+    "a": "Houston, Texas, where its first plant, Bioforge Houston, has run since 2021."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Solugen website (Forges)",
+    "url": "https://solugen.com/"
+   },
+   {
+    "label": "Solugen: Company (founders and leadership)",
+    "url": "https://solugen.com/company/"
+   },
+   {
+    "label": "Chemical Engineering: Solugen announces $213-million DOE loan guarantee (18 Jun 2024)",
+    "url": "https://www.chemengonline.com/solugen-announces-213-million-doe-loan-to-construct-biomanufacturing-plant-in-minnesota/"
+   },
+   {
+    "label": "InnovationMap: Solugen secures $213.6M to support new facility (13 Jun 2024)",
+    "url": "https://houston.innovationmap.com/solugen-doe-loan-bioforge-marshall-2668519439.html"
+   }
+  ]
+ }
+}

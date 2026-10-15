@@ -1,0 +1,77 @@
+{
+ "slug": "synchron",
+ "website": "https://synchron.com/",
+ "excerpt": "Synchron is developing the Stentrode, a brain-computer interface implanted through a blood vessel rather than open brain surgery, to let people with paralysis control digital devices. It raised a $200M Series D in November 2025.",
+ "content": "<p>Synchron is a neurotechnology company building brain-computer interfaces (BCIs): implants that read signals from the brain so a person can control a computer or phone with their thoughts. Its first device, the Stentrode, is delivered like a stent. Doctors guide it through the jugular vein to a blood vessel next to the brain's motor cortex, so the procedure does not involve opening the skull. Synchron describes this approach as an interventional brain-computer interface, a category it says it created to scale neural interfaces to millions of people.</p><p>The Stentrode is aimed first at people living with paralysis, to restore their ability to communicate, use devices and act independently. It is not a product you can buy. Synchron's website states that the Synchron BCI System is an investigational device, that its clinical benefit has not been validated, and that it is not approved for commercial use anywhere; it is being assessed in clinical trials in the United States and Australia. Pulse 2.0 reported that Synchron has implanted the Stentrode in ten patients across those trials.</p><p>Tom Oxley is the founder and CEO, according to the company's November 2025 funding announcement. Synchron lists offices in New York, San Diego and Melbourne. In November 2025 it announced a $200 million Series D led by Double Point Ventures, with existing investors ARCH Ventures, Khosla Ventures, Bezos Expeditions, NTI and METIS taking part, bringing total funding to $345 million. The company said it would use the money to prepare the Stentrode for commercial launch, run pivotal trials, grow a Cognitive AI team in New York that trains models to decode brain signals, and develop a next-generation, higher-channel interface delivered by catheter.</p><p>This profile draws on Synchron's own site and published reporting. It is not medical advice. Nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Brain-computer interfaces (investigational)",
+  "platform": "Implantable medical device (in clinical trials)",
+  "starts_at": "Not for sale; investigational device in clinical trials",
+  "schema_category": "HealthApplication",
+  "summary_short": "Stentrode brain-computer interface implanted through a blood vessel, in clinical trials for paralysis",
+  "maker": {"name": "Synchron, Inc.", "url": "https://synchron.com/about"},
+  "team": [
+   {"name": "Tom Oxley", "role": "Founder and CEO"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.sanity.io/images/e828r2sn/production/f0d2685a7d7d3718f90179eac75db7a7e6990910-2400x1600.jpg?w=1600&fm=jpg", "alt": "A presenter in a dark sweater speaking on a dark stage beside a large white Synchron logo", "credit": "Image: Synchron", "w": 1600, "h": 1067},
+   {"url": "https://cdn.sanity.io/images/e828r2sn/production/1bb9ae8c8396f05b06c6b5a49b81970892d33508-1920x1080.jpg?w=1600&fm=jpg", "alt": "A smiling older man in glasses outdoors with a woman standing behind him, from Synchron's About page", "credit": "Image: Synchron", "w": 1600, "h": 900}
+  ],
+  "use_cases": [
+   "Letting people with paralysis control a computer or phone with their thoughts (in trials)",
+   "Restoring digital communication such as texting and email for people who cannot move",
+   "Research into decoding brain signals into digital commands with AI models"
+  ],
+  "audience": {
+   "fit": [
+    "live with severe paralysis and want to know about BCI clinical trials (check eligibility on Synchron's site)",
+    "follow neurotechnology and brain-computer interfaces",
+    "are a clinician or researcher in neurology or neurointervention"
+   ],
+   "not_fit": [
+    "want a consumer device: the Stentrode is investigational and not for sale",
+    "are looking for an approved treatment today"
+   ]
+  },
+  "pricing": {
+   "intro": "Synchron does not sell its device. Its website says the Synchron BCI System is investigational, its clinical benefit has not been validated, and it is not approved for commercial use in any geography. People can check whether they are eligible for its studies.",
+   "plans": [
+    {"name": "Synchron BCI System (Stentrode)", "price": "Not for sale", "detail": "Available only in clinical trials in the US and Australia"}
+   ],
+   "notes": ["Pricing not published; the device is investigational."],
+   "url": "https://synchron.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "No open brain surgery: implanted through a blood vessel",
+   "Well funded, with $345 million raised in total",
+   "Human trials under way in two countries"
+  ],
+  "cons": [
+   "Investigational; benefit not yet validated",
+   "Only ten patients implanted so far, per Pulse 2.0"
+  ],
+  "alternatives": {
+   "intro": "Other companies developing implantable brain-computer interfaces. All are investigational.",
+   "items": [
+    {"name": "Neuralink", "url": "https://neuralink.com/", "what": "Implantable BCI placed by a surgical robot", "tags": ["BCI"], "starts_at": "Not for sale", "difference": "Requires a craniectomy to place threads directly in brain tissue."},
+    {"name": "Precision Neuroscience", "url": "https://precisionneuro.io/", "what": "Thin-film brain surface electrode array", "tags": ["BCI"], "starts_at": "Not for sale", "difference": "Sits on the brain's surface, inserted through a small slit in the skull."},
+    {"name": "Blackrock Neurotech", "url": "https://blackrockneurotech.com/", "what": "Utah-array based neural implants", "tags": ["BCI"], "starts_at": "Not for sale", "difference": "Long-used research arrays that penetrate the cortex."}
+   ]
+  },
+  "faq": [
+   {"q": "How is the Stentrode implanted?", "a": "Through the jugular vein, like a stent, to a blood vessel next to the brain. Synchron says no open brain surgery is needed."},
+   {"q": "Can I buy Synchron's device?", "a": "No. Synchron says its BCI system is investigational and not approved for commercial use anywhere. It is available only in clinical trials."},
+   {"q": "How much has Synchron raised?", "a": "$345 million in total, including a $200 million Series D led by Double Point Ventures in November 2025."},
+   {"q": "Who founded Synchron?", "a": "Tom Oxley, who is also its CEO, according to the company's Series D announcement."}
+  ],
+  "sources": [
+   {"label": "Synchron website (device status and trials)", "url": "https://synchron.com/"},
+   {"label": "Synchron: About", "url": "https://synchron.com/about"},
+   {"label": "Business Wire: Synchron raises $200 million Series D (6 Nov 2025)", "url": "https://www.businesswire.com/news/home/20251106150841/en/Synchron-Raises-%24200-Million-Series-D-to-Advance-Brain-Computer-Interface-Technology"},
+   {"label": "Pulse 2.0: Synchron $200 million Series D closed", "url": "https://pulse2.com/synchron-200-million-series-d-closed-to-advance-commercial-brain-computer-interface-platform/"},
+   {"label": "NeuroNews International: Synchron raises US$200 million in Series D", "url": "https://neuronewsinternational.com/synchron-raises-us200-million-in-series-d-financing-to-advance-bci-technology/"}
+  ]
+ }
+}

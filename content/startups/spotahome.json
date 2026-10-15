@@ -1,0 +1,146 @@
+{
+ "slug": "spotahome",
+ "website": "https://www.spotahome.com/",
+ "excerpt": "Spotahome is a Madrid-based platform for renting furnished flats and rooms for a month or more, fully online, with verified landlords and payment protections. Founded in 2014.",
+ "content": "<p>Spotahome is an online platform for mid- to long-term rentals: furnished apartments, studios, rooms in shared flats and student residences that you rent by the month. It is built for people who need a home in another city without visiting first, such as students, interns and professionals relocating for work. Listings are booked online, and Spotahome sits between tenant and landlord to handle payment and some protections. Its homepage says it serves more than 180,000 tenants with more than 110,000 properties in over 800 cities.</p><p>Spotahome's \"how it works\" page explains the booking flow. You request a property, and you are only charged if the landlord confirms. Your first month's rent is passed to the landlord only 48 hours after you move in, and you have 24 hours after moving in to report a property that does not match its listing. Cancellation refunds depend on timing: a full refund 60 or more days before move-in, 50% at 30 to 59 days, and nothing within 29 days. The Spotahome fee itself is non-refundable once a booking is confirmed. The homepage also says that if a landlord cancels at the last minute, Spotahome will pay for a hotel while it finds an alternative, and that many listings are deposit-free.</p><p>The company is based in Madrid and was founded in 2014. Online Marketplaces reported in March 2023 that it had raised almost €100 million since then but had gone through several rounds of layoffs, including cutting up to 80% of jobs during the pandemic. CEO Alejandro Artacho told Spanish newspaper Expansión that losses would fall to €2 million in 2023 from €6 million in 2022 and that he expected the company to be fully profitable in 2024.</p><p>This profile draws on Spotahome's own pages and published reporting. We have not used the service, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Mid-term rental marketplace",
+  "platform": "Web",
+  "starts_at": "Rent per listing plus a Spotahome fee",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Book furnished flats and rooms by the month, fully online, with move-in protections",
+  "maker": {
+   "name": "Spotahome",
+   "url": "https://www.spotahome.com/"
+  },
+  "team": [
+   {
+    "name": "Alejandro Artacho",
+    "role": "CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://assets.spotahome.com/th_main.png",
+    "alt": "The spotahome wordmark in dark blue on a pale blue background",
+    "credit": "Image: Spotahome",
+    "w": 1500,
+    "h": 786
+   }
+  ],
+  "use_cases": [
+   "Renting a furnished flat for a semester abroad or internship",
+   "Finding a room in a shared flat before relocating for a job",
+   "Booking a monthly rental without visiting the property",
+   "Listing a furnished property for mid-term tenants as a landlord"
+  ],
+  "audience": {
+   "fit": [
+    "are a student, intern or professional moving to a new city for a few months or more",
+    "cannot visit properties in person before booking",
+    "want payment held until after you move in"
+   ],
+   "not_fit": [
+    "want a holiday rental for a few nights",
+    "want an unfurnished long-term lease signed directly with a landlord"
+   ]
+  },
+  "pricing": {
+   "intro": "You pay the monthly rent set by each landlord plus a Spotahome fee. The how-it-works page does not state the fee amount; it is shown during booking. You are charged only if the landlord confirms, and the first month's rent goes to the landlord 48 hours after move-in.",
+   "plans": [
+    {
+     "name": "Tenant booking",
+     "price": "Rent + Spotahome fee",
+     "detail": "Fee is non-refundable once confirmed; amount shown at booking"
+    },
+    {
+     "name": "Cancellation",
+     "price": "Refund depends on timing",
+     "detail": "Full refund 60+ days before move-in, 50% at 30–59 days, none within 29 days"
+    }
+   ],
+   "notes": [
+    "Terms as stated on Spotahome's how-it-works page when checked."
+   ],
+   "url": "https://www.spotahome.com/how-it-works",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Rent released to the landlord only after you move in",
+   "24-hour window to report a property that differs from its listing",
+   "Large inventory across many cities"
+  ],
+  "cons": [
+   "Spotahome fee is not refundable once confirmed",
+   "Fee amount is not published on the how-it-works page"
+  ],
+  "alternatives": {
+   "intro": "Other ways to rent a furnished place for a month or more. We have not compared fees.",
+   "items": [
+    {
+     "name": "HousingAnywhere",
+     "url": "https://housinganywhere.com/",
+     "what": "Mid- to long-term rental marketplace for students and professionals",
+     "tags": [
+      "Mid-term rentals"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Closest like-for-like rival in Europe."
+    },
+    {
+     "name": "Uniplaces",
+     "url": "https://www.uniplaces.com/",
+     "what": "Student accommodation marketplace",
+     "tags": [
+      "Student housing"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Focused on students."
+    },
+    {
+     "name": "Airbnb monthly stays",
+     "url": "https://www.airbnb.com/",
+     "what": "Short and monthly stays from hosts",
+     "tags": [
+      "Short stays"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Built around short stays; monthly stays are one option."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "When does Spotahome charge me?",
+    "a": "Only if the landlord confirms your booking, according to its how-it-works page."
+   },
+   {
+    "q": "When does the landlord get my first month's rent?",
+    "a": "48 hours after you move in."
+   },
+   {
+    "q": "Can I cancel a Spotahome booking?",
+    "a": "Before the landlord approves, there is no charge. After approval, you get a full refund 60+ days before move-in, 50% at 30–59 days and nothing within 29 days; the Spotahome fee is non-refundable."
+   },
+   {
+    "q": "Where is Spotahome based?",
+    "a": "Madrid. It was founded in 2014."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Spotahome homepage",
+    "url": "https://www.spotahome.com/"
+   },
+   {
+    "label": "Spotahome: How it works (fees, cancellation, protections)",
+    "url": "https://www.spotahome.com/how-it-works"
+   },
+   {
+    "label": "Online Marketplaces: Spotahome to reach profitability in 2024, says CEO (1 Mar 2023)",
+    "url": "https://www.onlinemarketplaces.com/articles/spotahome-to-reach-profitability-in-2024-says-ceo/"
+   }
+  ]
+ }
+}

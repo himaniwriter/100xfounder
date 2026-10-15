@@ -1,0 +1,176 @@
+{
+ "slug": "shogun",
+ "website": "https://getshogun.com/",
+ "excerpt": "Shogun is a no-code page builder, A/B testing and personalisation tool for Shopify and BigCommerce stores. Page Builder plans run from a free Draft Mode to $499/month.",
+ "content": "<p>Shogun helps online stores build and improve their pages without writing code. Its main product, Page Builder, is a drag-and-drop editor for Shopify and BigCommerce stores: merchants use it to customise their store's design and build pages visually instead of editing their theme's code. Shogun also sells A/B testing, so a store can split traffic between two versions of a page to see which sells better, and personalisation, which shows different content to different shoppers.</p><p>Finbarr Taylor is a co-founder of Shogun. In November 2018 Pulse 2.0 reported that Shogun, then led by Taylor as CEO, raised a $2.1 million seed round from Initialized Capital, Y Combinator and others, and had more than 6,000 clients. In June 2021 the company announced a $67.5 million Series C led by Insight Partners, with existing investors Initialized Capital, Accel and VMG Partners taking part, bringing its total funding to $114.5 million. At the time Shogun said it was trusted by more than 18,000 customers, including K-Swiss, Leesa, Rumpl, Beardbrand, MVMT and Fila, and that it also offered Shogun Frontend, a headless commerce product, which it planned to use the money to develop.</p><p>Shogun publishes prices. For Shopify, Page Builder has a free Draft Mode for exploring the builder, then Build at $39 a month, Grow at $199 and Advanced at $499, with about 20% off for annual billing. A/B testing and personalisation are priced separately and charged partly by monthly tracked users (each unique shopper who sees a page with an active test or personalised experience). Paid plans can be tried before you pay.</p><p>This profile draws on Shogun's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Ecommerce page builder",
+  "platform": "Shopify and BigCommerce app",
+  "starts_at": "Free Draft Mode; paid from $39/month",
+  "schema_category": "DesignApplication",
+  "summary_short": "No-code page builder, A/B testing and personalisation for Shopify and BigCommerce stores",
+  "maker": {
+   "name": "Shogun",
+   "url": "https://getshogun.com/"
+  },
+  "team": [
+   {
+    "name": "Finbarr Taylor",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/65f36a007b9322599125cdb7/661d5192ec41e77e6bec68bb_home_open_graph_image%20(2).webp",
+    "alt": "Shogun banner reading Create optimized shopping experiences that turn visitors into customers, beside a screenshot of the page builder editing a fashion store page",
+    "credit": "Image: Shogun",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/65f36a007b9322599125cdb7/6a68d395dece84099f6c8199_home_open_graph_image.webp",
+    "alt": "Shogun banner reading Sell more with better post-click experiences, beside a Shogun A/B Testing screen with a 50/50 traffic split control",
+    "credit": "Image: Shogun",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Building custom landing and product pages on Shopify without code",
+   "A/B testing two versions of a store page",
+   "Showing personalised content to different shopper segments",
+   "Creating campaign pages for launches and sales quickly"
+  ],
+  "audience": {
+   "fit": [
+    "run a Shopify or BigCommerce store and want custom pages without a developer",
+    "want to A/B test store pages",
+    "manage marketing campaigns that need new landing pages often"
+   ],
+   "not_fit": [
+    "use a different ecommerce platform",
+    "are happy with your theme's built-in sections"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices for Page Builder on Shopify from Shogun's official pricing page, billed monthly. Annual billing saves about 20%.",
+   "plans": [
+    {
+     "name": "Draft Mode",
+     "price": "$0/month",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Explore the page builder"
+    },
+    {
+     "name": "Build",
+     "price": "$39/month ($31 billed annually)",
+     "amount": 39,
+     "currency": "USD",
+     "detail": "For codelessly customising your online store"
+    },
+    {
+     "name": "Grow",
+     "price": "$199/month ($159 billed annually)",
+     "amount": 199,
+     "currency": "USD",
+     "detail": "More features for growing stores"
+    },
+    {
+     "name": "Advanced",
+     "price": "$499/month ($399 billed annually)",
+     "amount": 499,
+     "currency": "USD",
+     "detail": "For larger stores"
+    }
+   ],
+   "notes": [
+    "A/B Testing and Personalization are priced separately; A/B plans include a set number of monthly tracked users (MTUs).",
+    "Shogun offers bundles on request."
+   ],
+   "url": "https://getshogun.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Free Draft Mode to try the builder",
+   "Works with both Shopify and BigCommerce",
+   "A/B testing and personalisation from the same vendor"
+  ],
+  "cons": [
+   "Testing and personalisation cost extra",
+   "Higher tiers are expensive for small stores"
+  ],
+  "alternatives": {
+   "intro": "Other Shopify page builders. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "PageFly",
+     "url": "https://pagefly.io/",
+     "what": "Shopify page builder app",
+     "tags": [
+      "Page builder"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Shopify-only, with a free plan."
+    },
+    {
+     "name": "GemPages",
+     "url": "https://gempages.net/",
+     "what": "Shopify page builder with AI features",
+     "tags": [
+      "Page builder"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Shopify-only; positions itself on AI page generation."
+    },
+    {
+     "name": "Replo",
+     "url": "https://www.replo.app/",
+     "what": "Shopify landing page builder",
+     "tags": [
+      "Page builder"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Aimed at growth teams building many landing pages."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Shogun free?",
+    "a": "Shogun has a free Draft Mode for exploring the page builder. Paid Page Builder plans start at $39 a month."
+   },
+   {
+    "q": "Does Shogun work with BigCommerce?",
+    "a": "Yes. Its pricing page covers Shopify and BigCommerce."
+   },
+   {
+    "q": "How much funding has Shogun raised?",
+    "a": "$114.5 million in total as of its $67.5 million Series C led by Insight Partners in June 2021."
+   },
+   {
+    "q": "What is an MTU in Shogun's pricing?",
+    "a": "A monthly tracked user: each unique shopper who visits a page with an active A/B test or personalised experience in a month."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Shogun pricing page",
+    "url": "https://getshogun.com/pricing"
+   },
+   {
+    "label": "Shogun website",
+    "url": "https://getshogun.com/"
+   },
+   {
+    "label": "Insight Partners: Shogun raises $67.5 million in Series C funding (Jun 2021)",
+    "url": "https://www.insightpartners.com/ideas/shogun-raises-67-5-million-in-series-c-funding/"
+   },
+   {
+    "label": "Pulse 2.0: Shogun raises $2.1 million seed (Nov 2018)",
+    "url": "https://pulse2.com/shogun-raises-2-1-million/"
+   }
+  ]
+ }
+}
