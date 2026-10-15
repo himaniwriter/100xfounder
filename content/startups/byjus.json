@@ -1,0 +1,176 @@
+{
+ "slug": "byjus",
+ "website": "https://byjus.com/",
+ "excerpt": "BYJU'S is the Bengaluru edtech company behind The Learning App. Its parent, Think & Learn, has been in insolvency proceedings since 2024.",
+ "content": "<p>BYJU'S is an Indian education company best known for its K-12 learning app and exam-preparation courses. Its website today offers free study material and live videos for Classes 1 to 12, NCERT solutions, sample papers and preparation for exams such as IAS, CAT, bank exams and GATE.</p><p>KrAsia reported that BYJU'S started in 2011 as an offline tutoring business run by Byju Raveendran, a former engineer who first coached friends for the CAT exam, and that the company was incorporated as Think and Learn. According to the same report, the learning app for school students followed in 2015, about a month after a USD 25 million investment led by Sequoia.</p><p>At its peak the company was one of the world's most valuable edtech startups. TechCrunch reported in March 2022 that Raveendran put USD 400 million into an USD 800 million round, alongside Sumeru Ventures, Vitruvian Partners and BlackRock, and that the round valued BYJU'S at about USD 22 billion, citing a person familiar with the matter.</p><p>Since 2024 the parent company, Think & Learn Pvt Ltd, has been in corporate insolvency proceedings. LiveLaw reported that on 23 October 2024 the Supreme Court set aside an NCLAT order that had closed the insolvency case on the basis of a roughly Rs 158 crore settlement with the BCCI, which revived the process. Inc42 reported on 23 July 2026 that the NCLT had paused the bidding stage of the process until a hearing on 31 August, while the founders contested a INR 11,433 crore claim by the trustee for US term-loan lenders; the insolvency process itself continued.</p><p>BYJU'S does not publish course prices on its website. Anyone considering a paid course should check the company's current status and the refund terms in writing before paying. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Edtech",
+  "platform": "Android, iOS and web",
+  "starts_at": "Free study material; course prices not published",
+  "schema_category": "EducationalApplication",
+  "summary_short": "K-12 learning app and exam preparation; parent company in insolvency proceedings since 2024",
+  "maker": {
+   "name": "Think & Learn Pvt Ltd",
+   "url": "https://byjus.com/"
+  },
+  "team": [
+   {
+    "name": "Byju Raveendran",
+    "role": "Founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/BYJU%27S_logo.svg/1280px-BYJU%27S_logo.svg.png",
+    "alt": "BYJU'S wordmark logo",
+    "credit": "Image: BYJU'S, public domain, via Wikimedia Commons (File:BYJU'S logo.svg)",
+    "w": 1280,
+    "h": 304
+   },
+   {
+    "url": "https://cdn1.byjus.com/images/fb-share-button-k10-k12.png",
+    "alt": "BYJU'S promotional banner offering free downloads of NCERT solutions, question papers and sample papers for state boards, ICSE and CBSE",
+    "credit": "Image: BYJU'S, from byjus.com",
+    "w": 1200,
+    "h": 628
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Byju_Raveendran_taking_Asia%27s_biggest_live_class_at_M._Chinnaswamy_Stadium%2C_Bengaluru_in_2020.jpg",
+    "alt": "Byju Raveendran teaching at a lectern in front of a large audience in an indoor stadium in Bengaluru",
+    "credit": "Image: M.M. Santhil, CC0, via Wikimedia Commons (File:Byju Raveendran taking Asia's biggest live class at M. Chinnaswamy Stadium, Bengaluru in 2020.jpg)",
+    "w": 960,
+    "h": 640
+   }
+  ],
+  "use_cases": [
+   "Free NCERT solutions, sample papers and study material for Classes 1 to 12",
+   "Preparing for competitive exams such as CAT, GATE, bank exams and IAS",
+   "Watching recorded and live video lessons"
+  ],
+  "audience": {
+   "fit": [
+    "are a school student or parent looking for free NCERT solutions and practice papers",
+    "want video explanations of school topics"
+   ],
+   "not_fit": [
+    "want a long-term paid course without checking the company's insolvency status first",
+    "need published prices up front: BYJU'S does not list course fees on its site"
+   ]
+  },
+  "pricing": {
+   "intro": "BYJU'S does not publish course prices on its website. Study material such as NCERT solutions and sample papers is free after registration.",
+   "plans": [
+    {
+     "name": "Free study material",
+     "price": "Free with registration",
+     "detail": "PDF downloads and live videos for Classes 1-12"
+    },
+    {
+     "name": "Paid courses",
+     "price": "Not published",
+     "detail": "Ask the company for written fees and refund terms"
+    }
+   ],
+   "url": "https://byjus.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Large free library of NCERT solutions and practice papers",
+   "Covers school classes and several competitive exams"
+  ],
+  "cons": [
+   "Parent company has been in insolvency proceedings since 2024",
+   "No published course prices"
+  ],
+  "alternatives": {
+   "intro": "Other Indian learning platforms for school and exam preparation. Check each one's own pricing page.",
+   "items": [
+    {
+     "name": "PhysicsWallah",
+     "url": "https://www.pw.live/",
+     "what": "Online and offline coaching for school and competitive exams",
+     "tags": [
+      "Edtech",
+      "Test prep"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Known for low-priced courses; publishes batch prices on its site."
+    },
+    {
+     "name": "Unacademy",
+     "url": "https://unacademy.com/",
+     "what": "Online test-prep platform with live classes",
+     "tags": [
+      "Edtech",
+      "Test prep"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Focuses on competitive exams through subscriptions."
+    },
+    {
+     "name": "Vedantu",
+     "url": "https://www.vedantu.com/",
+     "what": "Live online tutoring for school students",
+     "tags": [
+      "Edtech",
+      "K-12"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Built around live online classes for school students."
+    },
+    {
+     "name": "Khan Academy",
+     "url": "https://www.khanacademy.org/",
+     "what": "Free non-profit learning platform",
+     "tags": [
+      "Edtech",
+      "Free"
+     ],
+     "starts_at": "Free",
+     "difference": "Free and non-profit, with no paid courses."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded BYJU'S?",
+    "a": "Byju Raveendran, who started it as an offline tutoring business in 2011, according to KrAsia."
+   },
+   {
+    "q": "Is BYJU'S in insolvency?",
+    "a": "Its parent, Think & Learn Pvt Ltd, has been in corporate insolvency proceedings since 2024. The Supreme Court revived the process in October 2024, and in July 2026 the NCLT paused the bidding stage while a lender claim is disputed."
+   },
+   {
+    "q": "What was BYJU'S valued at?",
+    "a": "TechCrunch reported a valuation of about USD 22 billion in a March 2022 funding round, citing a person familiar with the matter."
+   },
+   {
+    "q": "Does BYJU'S publish course prices?",
+    "a": "No. Its website does not list course fees."
+   }
+  ],
+  "sources": [
+   {
+    "label": "BYJU'S website",
+    "url": "https://byjus.com/"
+   },
+   {
+    "label": "KrAsia: The making of Byju's (11 Aug 2020)",
+    "url": "https://kr-asia.com/the-making-of-byjus-the-worlds-most-valuable-edtech-startup"
+   },
+   {
+    "label": "TechCrunch: Byju's founder backs startup in USD 800M round (11 Mar 2022)",
+    "url": "https://techcrunch.com/2022/03/11/byju-raveendran-invests-400-million-in-his-edtech-startup/"
+   },
+   {
+    "label": "LiveLaw: Supreme Court sets aside NCLAT order closing Byju's insolvency (23 Oct 2024)",
+    "url": "https://www.livelaw.in/top-stories/supreme-court-sets-aside-nclat-order-closing-insolvency-process-against-byjus-based-on-settlement-with-bcci-273311"
+   },
+   {
+    "label": "Inc42: NCLT stays BYJU'S insolvency bidding process (23 Jul 2026)",
+    "url": "https://inc42.com/buzz/nclt-stays-byjus-insolvency-bidding-process-till-august-31/"
+   }
+  ]
+ }
+}

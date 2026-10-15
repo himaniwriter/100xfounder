@@ -1,0 +1,192 @@
+{
+ "slug": "clevertap",
+ "website": "https://clevertap.com/",
+ "excerpt": "CleverTap is a customer engagement and retention platform for apps, founded in 2013. Plans start at USD 85 a month (Core) with a 30-day trial.",
+ "content": "<p>CleverTap is a customer engagement platform that apps and digital businesses use to segment users, send personalised messages across channels and measure retention. Its pricing page describes real-time behavioural segmentation, omnichannel campaigns, built-in experimentation and analytics, and AI features it calls CleverAI, with higher plans adding automated segmentation, send-time and channel optimisation, 1:1 personalisation and intent prediction.</p><p>CleverTap's About page says the company was founded in May 2013 by Sunil Thomas, Anand Jain and Suresh Kondamudi, and that the company is brought to you by WizRocket, Inc. It lists offices in San Francisco, New York, Bogota, Sao Paulo, London, Amsterdam, Dubai, Mumbai, Bengaluru, Vietnam, Jakarta and Singapore, and says the platform powered 10,000 apps as of April 2021.</p><p>On funding, the same page lists a seed round from Accel (2015), Series A to C rounds with Peak XV Partners, Accel and Tiger Global, and a USD 105 million Series D in August 2022 led by CDPQ. Entrackr's report on that round says it valued CleverTap at about USD 775 million. CleverTap also acquired Patch (October 2021) and Leanplum (August 2022).</p><p>Pricing is based on monthly active users or data points. The entry Core plan is listed at USD 85 a month (plus taxes, excluding add-ons) with a 30-day trial; Pro and Ultimate are quoted by sales. Channels such as WhatsApp, RCS and email are priced as add-ons. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Customer engagement and retention",
+  "platform": "Web dashboard with mobile and web SDKs",
+  "starts_at": "Core from USD 85/month after a 30-day trial",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Customer engagement platform: segmentation, omnichannel campaigns, analytics and AI personalisation",
+  "maker": {
+   "name": "CleverTap (WizRocket, Inc.)",
+   "url": "https://clevertap.com/about-us/"
+  },
+  "team": [
+   {
+    "name": "Sunil Thomas",
+    "role": "Cofounder",
+    "url": "https://clevertap.com/about-us/"
+   },
+   {
+    "name": "Anand Jain",
+    "role": "Cofounder and Chief Marketing Officer",
+    "url": "https://clevertap.com/about-us/"
+   },
+   {
+    "name": "Suresh Kondamudi",
+    "role": "Cofounder and CTO",
+    "url": "https://clevertap.com/about-us/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://clevertap.com/wp-content/uploads/2023/10/home-featured.png",
+    "alt": "CleverTap logo above the headline 'Unlock Limitless Customer Lifetime Value' on a white background",
+    "credit": "Image: CleverTap, from clevertap.com",
+    "w": 1024,
+    "h": 537
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/CleverTap_at_MAU_Vegas_2026.jpg/1280px-CleverTap_at_MAU_Vegas_2026.jpg",
+    "alt": "Two people standing in front of a CleverTap exhibition booth with a large blue CleverTap sign at the MAU Vegas 2026 expo",
+    "credit": "Image: Rosiestep, CC BY-SA 4.0, via Wikimedia Commons (File:CleverTap at MAU Vegas 2026.jpg)",
+    "w": 1280,
+    "h": 853
+   }
+  ],
+  "use_cases": [
+   "Segmenting app users by real-time behaviour",
+   "Running push, in-app, SMS, WhatsApp and email campaigns from one place",
+   "A/B testing messages and journeys",
+   "Measuring retention and lifecycle metrics",
+   "Personalising messages with AI"
+  ],
+  "audience": {
+   "fit": [
+    "run a consumer app or digital business and need retention campaigns across channels",
+    "want segmentation, messaging and analytics in one product rather than three tools",
+    "can start small: Core lists a published monthly price and a 30-day trial"
+   ],
+   "not_fit": [
+    "need a free plan: there is a trial, not a free tier",
+    "want all prices up front: Pro, Ultimate and channel add-ons are quoted by sales"
+   ]
+  },
+  "pricing": {
+   "intro": "CleverTap's own pricing page, checked on 15 October 2026. Pricing is based on monthly active users (MAU) or data points depending on the commercial model; prices exclude taxes and add-ons.",
+   "plans": [
+    {
+     "name": "Core",
+     "price": "From USD 85/month after a 30-day trial",
+     "amount": 85,
+     "currency": "USD",
+     "detail": "Omnichannel engagement, real-time segmentation, experimentation and analytics, 600+ promotional CleverAI tokens, 3-year data retention"
+    },
+    {
+     "name": "Pro",
+     "price": "Contact sales",
+     "detail": "Adds automated segmentation, send-time and channel optimisation, deeper insights; 3-year data retention"
+    },
+    {
+     "name": "Ultimate",
+     "price": "Contact sales",
+     "detail": "Adds 1:1 personalisation, agentic orchestration and intent prediction; up to 10-year data retention"
+    }
+   ],
+   "notes": [
+    "The page lists MAU bands from 5,000 to 100,000+ but does not say which band the USD 85 figure applies to.",
+    "Decisioning agents, WhatsApp, RCS and email are separately priced add-ons."
+   ],
+   "url": "https://clevertap.com/pricing/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published entry price and a 30-day trial",
+   "Segmentation, messaging and analytics in one platform",
+   "Offices across Asia, the Americas, Europe and the Middle East"
+  ],
+  "cons": [
+   "Pro and Ultimate prices are not published",
+   "Messaging channels are extra-cost add-ons"
+  ],
+  "alternatives": {
+   "intro": "Other customer engagement platforms. Prices are on each vendor's own page.",
+   "items": [
+    {
+     "name": "MoEngage",
+     "url": "https://www.moengage.com/",
+     "what": "Customer engagement platform for consumer brands",
+     "tags": [
+      "Customer engagement",
+      "Push",
+      "Analytics"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Also India-founded; similar omnichannel scope."
+    },
+    {
+     "name": "WebEngage",
+     "url": "https://webengage.com/",
+     "what": "Customer data and retention platform",
+     "tags": [
+      "Customer engagement",
+      "Retention"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Retention suite popular with Indian consumer brands."
+    },
+    {
+     "name": "Braze",
+     "url": "https://www.braze.com/",
+     "what": "Customer engagement platform",
+     "tags": [
+      "Customer engagement",
+      "Enterprise"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "US-listed vendor aimed at large enterprises."
+    },
+    {
+     "name": "OneSignal",
+     "url": "https://onesignal.com/",
+     "what": "Push, in-app, email and SMS messaging service",
+     "tags": [
+      "Push notifications",
+      "Messaging"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Messaging-first, with a free tier for smaller apps."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded CleverTap?",
+    "a": "Sunil Thomas, Anand Jain and Suresh Kondamudi, in May 2013, according to CleverTap's About page."
+   },
+   {
+    "q": "How much does CleverTap cost?",
+    "a": "Core is listed from USD 85 a month after a 30-day trial, excluding taxes and add-ons. Pro and Ultimate are quoted by sales."
+   },
+   {
+    "q": "How much funding has CleverTap raised?",
+    "a": "Its latest listed round is a USD 105 million Series D in August 2022, led by CDPQ; Entrackr reported a valuation of about USD 775 million."
+   },
+   {
+    "q": "Is there a free plan?",
+    "a": "No free plan is listed; Core has a 30-day trial before billing starts."
+   }
+  ],
+  "sources": [
+   {
+    "label": "CleverTap pricing",
+    "url": "https://clevertap.com/pricing/"
+   },
+   {
+    "label": "CleverTap About page (founders, offices, funding timeline)",
+    "url": "https://clevertap.com/about-us/"
+   },
+   {
+    "label": "Entrackr: CleverTap raises USD 105 Mn in Series D (Aug 2022)",
+    "url": "https://entrackr.com/2022/08/tiger-and-sequoia-backed-clevertap-raises-105-mn-in-series-d"
+   },
+   {
+    "label": "Wikimedia Commons: CleverTap at MAU Vegas 2026",
+    "url": "https://commons.wikimedia.org/wiki/File:CleverTap_at_MAU_Vegas_2026.jpg"
+   }
+  ]
+ }
+}

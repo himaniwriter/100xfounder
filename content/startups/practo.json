@@ -1,0 +1,185 @@
+{
+ "slug": "practo",
+ "website": "https://www.practo.com/",
+ "excerpt": "Practo helps patients find doctors, book appointments and consult online, and sells clinic software (Ray, Insta). Founded in 2008; online consults from Rs 199.",
+ "content": "<p>Practo is an Indian healthcare platform. For patients it offers a directory of doctors with appointment booking at more than 9,000 hospitals and clinics, online video consultations across 25+ specialities, lab tests with home sample collection, medicine delivery and Practo Plus health plans. For providers it sells Ray, practice management software it says is used by 10,000+ clinics, and Insta, a hospital information management system used by 500+ clients across 1,200+ facilities. Its site claims 30 crore+ patients a year and more than a lakh doctor partners.</p><p>Inc42 reported that Practo was founded in 2008 by Shashank ND, its cofounder and CEO, and Abhinav Lal. In August 2025 it reported Practo's first full year of operating profit: an operating EBITDA of INR 15 crore on revenue of INR 234 crore in FY25, against an EBITDA loss of INR 17 crore on INR 240 crore in FY24, and said the company had begun preparing to go public without giving a timeframe.</p><p>Practo publishes online consultation fees on its consult page. On 15 October 2026 the page said consultations start at Rs 199 and listed fees such as Rs 699 for a general physician, dermatologist or psychiatrist and Rs 799 for paediatrics. Booking an in-person appointment through the directory is free; you pay the doctor's own fee.</p><p>Online consultations don't replace emergency care: in an emergency, go to the nearest hospital. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Healthcare",
+  "platform": "Android, iOS and web; Ray and Insta for clinics and hospitals",
+  "starts_at": "Online consults from Rs 199",
+  "schema_category": "HealthApplication",
+  "summary_short": "Find doctors, book appointments, consult online, plus clinic and hospital software",
+  "maker": {
+   "name": "Practo",
+   "url": "https://www.practo.com/"
+  },
+  "team": [
+   {
+    "name": "Shashank ND",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Abhinav Lal",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Practo_Logo.png",
+    "alt": "Practo wordmark in light blue",
+    "credit": "Image: Uvberot, CC BY-SA 4.0, via Wikimedia Commons (File:Practo Logo.png)",
+    "w": 1059,
+    "h": 312
+   },
+   {
+    "url": "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_lab_tests.png",
+    "alt": "A gloved hand holding a blood sample tube, illustrating Practo's lab test booking",
+    "credit": "Image: Practo, from practo.com",
+    "w": 386,
+    "h": 337
+   }
+  ],
+  "use_cases": [
+   "Finding a doctor nearby and booking an appointment",
+   "Video consultation with a specialist",
+   "Booking lab tests with home sample collection",
+   "Running a clinic's appointments and records with Ray"
+  ],
+  "audience": {
+   "fit": [
+    "want to compare doctors and book appointments online in Indian cities",
+    "want a quick online consultation for a non-emergency problem",
+    "run a clinic or hospital and need practice or hospital software"
+   ],
+   "not_fit": [
+    "have a medical emergency",
+    "need a published price for Ray or Insta: those are quoted"
+   ]
+  },
+  "pricing": {
+   "intro": "Online consultation fees from Practo's consult page, checked on 15 October 2026. Fees for in-person appointments are set by each doctor.",
+   "plans": [
+    {
+     "name": "Online consultation",
+     "price": "From Rs 199",
+     "detail": "Offer price; the page doesn't say which specialities it covers"
+    },
+    {
+     "name": "General physician, dermatology, psychiatry, urology",
+     "price": "Rs 699",
+     "detail": "Online consultation"
+    },
+    {
+     "name": "Gynaecology",
+     "price": "Rs 749",
+     "detail": "Online consultation"
+    },
+    {
+     "name": "Paediatrics",
+     "price": "Rs 799",
+     "detail": "Online consultation"
+    },
+    {
+     "name": "Ray / Insta (for providers)",
+     "price": "On request",
+     "detail": "Clinic and hospital software"
+    }
+   ],
+   "url": "https://www.practo.com/consult",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Large doctor directory with online booking",
+   "Published online consultation fees",
+   "Software for clinics and hospitals as well as patients"
+  ],
+  "cons": [
+   "Provider software prices are not published",
+   "Not for emergencies"
+  ],
+  "alternatives": {
+   "intro": "Other Indian online health platforms. Fees are on each provider's own site.",
+   "items": [
+    {
+     "name": "Apollo 24|7",
+     "url": "https://www.apollo247.com/",
+     "what": "Online consultations, pharmacy and diagnostics",
+     "tags": [
+      "Telehealth",
+      "Pharmacy"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Backed by the Apollo hospital group."
+    },
+    {
+     "name": "Tata 1mg",
+     "url": "https://www.1mg.com/",
+     "what": "Online pharmacy, lab tests and consultations",
+     "tags": [
+      "Pharmacy",
+      "Lab tests"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Strongest on medicines and lab tests."
+    },
+    {
+     "name": "MediBuddy",
+     "url": "https://www.medibuddy.in/",
+     "what": "Online consultations and health benefits",
+     "tags": [
+      "Telehealth"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Common through employer health plans."
+    },
+    {
+     "name": "Eka Care",
+     "url": "https://www.eka.care/",
+     "what": "Health records and doctor booking app",
+     "tags": [
+      "Health records"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Focus on personal health records."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does a Practo online consultation cost?",
+    "a": "Practo's consult page lists consultations from Rs 199, with fees such as Rs 699 for a general physician and Rs 799 for paediatrics."
+   },
+   {
+    "q": "Who founded Practo?",
+    "a": "Shashank ND (CEO) and Abhinav Lal, in 2008."
+   },
+   {
+    "q": "Is Practo profitable?",
+    "a": "Inc42 reported an operating EBITDA of INR 15 crore on INR 234 crore revenue in FY25, its first full year of operating profit."
+   },
+   {
+    "q": "What is Practo Ray?",
+    "a": "Practice management software for clinics; Practo says 10,000+ clinics use it."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Practo About page",
+    "url": "https://www.practo.com/company/about"
+   },
+   {
+    "label": "Practo online consultation fees",
+    "url": "https://www.practo.com/consult"
+   },
+   {
+    "label": "Inc42: Practo turns profitable in FY25, revives IPO plans (5 Aug 2025)",
+    "url": "https://inc42.com/buzz/practo-turns-profitable-in-fy25-revives-ipo-plans"
+   },
+   {
+    "label": "Wikimedia Commons: Practo logo",
+    "url": "https://commons.wikimedia.org/wiki/File:Practo_Logo.png"
+   }
+  ]
+ }
+}

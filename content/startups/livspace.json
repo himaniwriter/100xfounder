@@ -1,0 +1,181 @@
+{
+ "slug": "livspace",
+ "website": "https://www.livspace.com/in",
+ "excerpt": "Livspace is a home interiors and renovation company founded in 2014. Modular interiors for a 1BHK start at Rs 3.62 lakh, per its site.",
+ "content": "<p>Livspace designs and builds home interiors. Its website offers modular interiors (kitchens, wardrobes and storage), full-home turnkey interiors, luxury and value ranges, and renovations, and says it has designed more than 1,00,000 homes across 100+ cities. It advertises a lifetime warranty with conditions and a 45-day move-in guarantee for kitchens, wardrobes and storage, and says full-home projects take about 90 days.</p><p>Inc42 reported that Livspace was founded in 2014 by Ramakant Sharma and Anuj Srivastava, and that the Singapore parent, Livspace Pte Ltd, has been putting money into its Indian arm as it moves its base back to India ahead of a planned IPO; in July 2025 the listing timeline was described as unclear. Onmanorama reported in February 2022 that Livspace became a unicorn after a USD 180 million round led by KKR, with Ikea, Jungle Ventures, Venturi Partners and Peugeot Investments, taking its total funding to about USD 450 million.</p><p>Unusually for this category, Livspace publishes starting prices for modular interiors in new homes: from Rs 3.62 lakh for a 1BHK to Rs 6.33 lakh for a 4BHK, and Rs 1.7 lakh for a modular kitchen. Final quotes depend on the design, materials and home size.</p><p>Read the warranty scope and the contract's timelines carefully: the site notes that conditions apply and that timelines can vary with material availability and design approvals. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Home interiors and renovation",
+  "platform": "Design consultations in 100+ Indian cities, online and in experience centres",
+  "starts_at": "1BHK modular interiors from Rs 3.62 lakh",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Home interior design and renovation, from modular kitchens to full-home turnkey projects",
+  "maker": {
+   "name": "Livspace",
+   "url": "https://www.livspace.com/in"
+  },
+  "team": [
+   {
+    "name": "Anuj Srivastava",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Ramakant Sharma",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://images.livspace-cdn.com/w:1024/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/homepage/v2-1675654701-1kKSt/desktop-1675655000-6H0mD/banner-1675655465-eXung/kitchen-homepage-banner-web-1689683306-uyQOf.jpg",
+    "alt": "A white U-shaped modular kitchen with wall cabinets, a chimney hood, pendant lights and a breakfast counter",
+    "credit": "Image: Livspace, from livspace.com",
+    "w": 1024,
+    "h": 439
+   },
+   {
+    "url": "https://images.livspace-cdn.com/w:1024/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/homepage/banner-1714034487-xNaST/home-desktop-1776762070-OcRy1.png",
+    "alt": "A pale blue modular kitchen with floor-to-ceiling cabinets, built-in ovens and white tiles",
+    "credit": "Image: Livspace, from livspace.com",
+    "w": 1024,
+    "h": 439
+   }
+  ],
+  "use_cases": [
+   "Designing and installing a modular kitchen",
+   "Wardrobes and storage for a new flat",
+   "Turnkey interiors for a whole home",
+   "Renovating an existing home"
+  ],
+  "audience": {
+   "fit": [
+    "have a new home and want design, materials and installation from one company",
+    "want published starting prices and a move-in guarantee for modular work"
+   ],
+   "not_fit": [
+    "want a single piece of furniture: Livspace works on projects",
+    "live outside the cities it serves"
+   ]
+  },
+  "pricing": {
+   "intro": "Starting prices from Livspace's homepage, checked on 15 October 2026. They cover modular interiors for new homes only; final quotes depend on design and materials.",
+   "plans": [
+    {
+     "name": "1 BHK",
+     "price": "From Rs 3.62 lakh",
+     "detail": "Modular interiors, new homes"
+    },
+    {
+     "name": "2 BHK",
+     "price": "From Rs 4.52 lakh",
+     "detail": "Modular interiors, new homes"
+    },
+    {
+     "name": "3 BHK",
+     "price": "From Rs 5.57 lakh",
+     "detail": "Modular interiors, new homes"
+    },
+    {
+     "name": "4 BHK",
+     "price": "From Rs 6.33 lakh",
+     "detail": "Modular interiors, new homes"
+    },
+    {
+     "name": "Modular kitchen",
+     "price": "From Rs 1.7 lakh",
+     "detail": "Kitchen only"
+    }
+   ],
+   "notes": [
+    "Livspace says a free consultation with a designer is available."
+   ],
+   "url": "https://www.livspace.com/in",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published starting prices",
+   "45-day move-in guarantee on modular work",
+   "Large scale: 1,00,000+ homes, 100+ cities (its own figures)"
+  ],
+  "cons": [
+   "Warranty and timelines come with conditions",
+   "Starting prices cover modular work in new homes only"
+  ],
+  "alternatives": {
+   "intro": "Other home-interior companies in India. Prices are on each company's own site.",
+   "items": [
+    {
+     "name": "HomeLane",
+     "url": "https://www.homelane.com/",
+     "what": "Home interiors company",
+     "tags": [
+      "Interiors"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Livspace's closest like-for-like rival."
+    },
+    {
+     "name": "DesignCafe",
+     "url": "https://www.designcafe.com/",
+     "what": "Home interiors company",
+     "tags": [
+      "Interiors"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Smaller player in the same model."
+    },
+    {
+     "name": "Bonito Designs",
+     "url": "https://www.bonito.in/",
+     "what": "Home interiors company",
+     "tags": [
+      "Interiors"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Focuses on custom interiors."
+    },
+    {
+     "name": "Urban Company",
+     "url": "https://www.urbancompany.com/",
+     "what": "Home services marketplace",
+     "tags": [
+      "Home services"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Better for single jobs such as painting or repairs."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much do Livspace interiors cost?",
+    "a": "Its site lists modular interiors for new homes from Rs 3.62 lakh (1BHK) to Rs 6.33 lakh (4BHK), and modular kitchens from Rs 1.7 lakh. Final quotes vary."
+   },
+   {
+    "q": "How long does a Livspace project take?",
+    "a": "It offers a 45-day move-in guarantee for kitchens, wardrobes and storage, and says full-home interiors take about 90 days; conditions apply."
+   },
+   {
+    "q": "Who founded Livspace?",
+    "a": "Anuj Srivastava and Ramakant Sharma, in 2014."
+   },
+   {
+    "q": "Is Livspace a unicorn?",
+    "a": "Yes. It crossed a USD 1 billion valuation after a USD 180 million KKR-led round in February 2022."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Livspace website (services, prices, guarantees)",
+    "url": "https://www.livspace.com/in"
+   },
+   {
+    "label": "Inc42: Livspace parent infuses INR 362 Cr into Indian arm (25 Jul 2025)",
+    "url": "https://inc42.com/buzz/exclusive-livspace-parent-infuses-inr-362-cr-into-indian-arm/"
+   },
+   {
+    "label": "Onmanorama: Livspace becomes India's 86th unicorn (8 Feb 2022)",
+    "url": "https://www.onmanorama.com/news/business/2022/02/08/home-renovation-platform-livspace-becomes-india-86th-unicorn.html"
+   }
+  ]
+ }
+}
