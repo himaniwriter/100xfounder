@@ -1,0 +1,190 @@
+{
+ "slug": "fivetran",
+ "website": "https://www.fivetran.com/",
+ "excerpt": "Fivetran moves data from apps and databases into warehouses automatically, priced on monthly active rows. The dbt Labs merger, its free plan and alternatives.",
+ "content": "<p>Fivetran is a managed data-movement service. It copies data from business applications, databases and files into a data warehouse or lake and keeps it in sync, without the customer writing or maintaining the pipelines. Its pricing page lists 700+ managed connectors, 200+ \"activation\" destinations for sending warehouse data back into tools such as Salesforce and HubSpot, and transformations built on dbt. It describes itself as the data foundation for AI.</p>\n<h2>The dbt Labs merger</h2>\n<p>On 13 October 2025 Fivetran agreed to merge with dbt Labs, the company behind dbt, a tool for transforming data inside a warehouse whose core edition, dbt Core, is open source. The all-stock deal completed on 1 June 2026. Fivetran's announcement says the combined company, initially operating as Fivetran + dbt Labs, serves more than 100,000 data teams. George Fraser remains CEO and dbt Labs' Tristan Handy is President. Alongside the completion it released an alpha of dbt Core v2.0, which open-sources the dbt Fusion engine under the Apache 2.0 licence, plus dbt State (preview), dbt Wizard (beta) and an open-source \"Agents Schema\" meant to give AI agents a shared context layer.</p>\n<h2>How pricing works</h2>\n<p>Fivetran does not publish a fixed price per plan. Connections are billed on monthly active rows (MAR): the number of distinct rows inserted, updated or deleted in a month, counted per connection. Unchanged rows and the initial historical sync are not counted, and the rate per million rows falls as volume rises. Standard connections with between 1 and 1 million MAR carry a $5 base charge. Transformations are billed per successful model run: the first 5,000 a month are free, then $0.01 each up to 30,000, falling to $0.002 above 100,000.</p>\n<p>The Free plan covers 500,000 MAR for connections, 3,500 MAR for activations and 5,000 model runs a month. Above that come Standard (unlimited users, 15-minute syncs, role-based access, REST API), Enterprise (1-minute syncs, enterprise database connectors, SCIM, hybrid deployment) and Business Critical (customer-managed keys, PCI DSS Level 1, private networking). As an example, Fivetran's pricing page shows a small company syncing four sources on Standard, including Marketo and Google Ads, for $511.15 a month. Annual contracts get discounts from 5% up to 22.6%.</p>\n<p><em>We have not tested Fivetran ourselves. This page brings together Fivetran's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "Data integration (ELT)",
+  "platform": "Managed cloud service, with hybrid deployment on Enterprise",
+  "starts_at": "Free up to 500,000 MAR; then usage-based",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Managed data movement from apps and databases into warehouses, now merged with dbt Labs",
+  "maker": {
+   "name": "Fivetran",
+   "url": "https://www.fivetran.com/"
+  },
+  "team": [
+   {
+    "name": "George Fraser",
+    "role": "CEO",
+    "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents"
+   },
+   {
+    "name": "Tristan Handy",
+    "role": "President (dbt Labs co-founder)",
+    "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/6130fa1501794ed4d11867ba/67c23d5d351a9c7aebc45be2_og-pricing.png",
+    "alt": "Fivetran pricing graphic reading 'Only pay for what you use', with an illustrated card printed 'I love Fivetran'",
+    "credit": "Image: Fivetran",
+    "w": 2304,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/6130fa1501794ed4d11867ba/6267492360c41b79149c466a_fivetran_OGI.png",
+    "alt": "The white Fivetran logo on a bright blue background",
+    "credit": "Image: Fivetran",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Centralise marketing, sales and finance data in a warehouse without building pipelines",
+   "Replicate production databases into an analytics warehouse",
+   "Send modelled warehouse data back into Salesforce or HubSpot (activations)",
+   "Run dbt transformations on a schedule next to ingestion"
+  ],
+  "audience": {
+   "fit": [
+    "want pipelines that someone else maintains and fixes when source APIs change",
+    "already use dbt and want ingestion and transformation from one vendor",
+    "have moderate volumes that fit the 500,000-row free tier or a usage bill"
+   ],
+   "not_fit": [
+    "want a published flat price per plan",
+    "move very large, frequently changing tables where monthly active rows add up",
+    "need a self-hosted open-source option"
+   ]
+  },
+  "pros": [
+   "Fully managed connectors",
+   "Free plan up to 500,000 monthly active rows",
+   "dbt transformations now from the same company"
+  ],
+  "cons": [
+   "No fixed plan prices; costs depend on row volume",
+   "$5 base charge per standard connection on paid plans",
+   "1-minute syncs and hybrid deployment need Enterprise"
+  ],
+  "pricing": {
+   "intro": "Fivetran's own pricing model, in US dollars. Plan prices are not listed; you pay for usage.",
+   "url": "https://www.fivetran.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "500,000 MAR for connections, 3,500 MAR for activations, 5,000 model runs a month, Standard features within those limits"
+    },
+    {
+     "name": "Standard",
+     "price": "Usage-based",
+     "detail": "Unlimited users, 15-minute syncs, 700+ connectors, dbt Core integration, RBAC, REST API, SSH tunnels"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Usage-based",
+     "detail": "1-minute syncs, enterprise database connectors, custom roles, SCIM, choice of cloud, hybrid deployment"
+    },
+    {
+     "name": "Business Critical",
+     "price": "Usage-based",
+     "detail": "Customer-managed encryption keys, PCI DSS Level 1, private networking"
+    }
+   ],
+   "notes": [
+    "Transformations: first 5,000 model runs free, then $0.01 up to 30,000, $0.007 up to 100,000, $0.002 above.",
+    "A $5 base charge applies to standard connections between 1 and 1M MAR (not on Free).",
+    "Annual contracts: discounts from 5% to 22.6%+ depending on list price."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other data-integration tools. Airbyte's prices are from its own pricing page; the others are described from their own sites.",
+   "items": [
+    {
+     "name": "Airbyte",
+     "url": "https://airbyte.com/",
+     "what": "Open-source data movement platform with 700+ connectors",
+     "starts_at": "Open source free; Cloud from $20/month",
+     "difference": "Can be self-hosted for free; cloud is priced in credits rather than monthly active rows."
+    },
+    {
+     "name": "Matillion",
+     "url": "https://www.matillion.com/",
+     "what": "Data integration and ETL platform with an agentic data team called Maia",
+     "starts_at": "See its pricing page",
+     "difference": "Stronger focus on building transformations visually and with its AI agent."
+    },
+    {
+     "name": "Estuary",
+     "url": "https://estuary.dev/",
+     "what": "Right-time platform for CDC, streaming and batch pipelines",
+     "starts_at": "See its pricing page",
+     "difference": "Centred on real-time change data capture."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Fivetran do?",
+    "a": "It automatically copies data from apps, databases and files into a warehouse or lake and keeps it in sync, and can also run dbt transformations and push data back into business tools."
+   },
+   {
+    "q": "How much does Fivetran cost?",
+    "a": "There is a free plan up to 500,000 monthly active rows. Above that you pay by usage: monthly active rows per connection, plus model runs for transformations."
+   },
+   {
+    "q": "What is MAR?",
+    "a": "Monthly active rows: distinct rows inserted, updated or deleted in a month. Unchanged rows and initial syncs do not count."
+   },
+   {
+    "q": "Did Fivetran merge with dbt Labs?",
+    "a": "Yes. The all-stock merger was announced on 13 October 2025 and completed on 1 June 2026. George Fraser is CEO and Tristan Handy is President."
+   },
+   {
+    "q": "Is dbt still open source?",
+    "a": "Fivetran says dbt Core v2.0, released in alpha with the merger, open-sources the dbt Fusion engine under Apache 2.0."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Fivetran official site",
+    "url": "https://www.fivetran.com/"
+   },
+   {
+    "label": "Fivetran pricing",
+    "url": "https://www.fivetran.com/pricing"
+   },
+   {
+    "label": "Fivetran press release, 1 Jun 2026: merger with dbt Labs complete",
+    "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents"
+   },
+   {
+    "label": "Business Wire, 13 Oct 2025: Fivetran and dbt Labs unite",
+    "url": "https://www.businesswire.com/news/home/20251013172495/en/Fivetran-and-dbt-Labs-Unite-to-Set-the-Standard-for-Open-Data-Infrastructure"
+   },
+   {
+    "label": "dbt Labs blog: merger announcement",
+    "url": "https://www.getdbt.com/blog/dbt-labs-and-fivetran-merge-announcement"
+   },
+   {
+    "label": "Airbyte pricing",
+    "url": "https://airbyte.com/pricing"
+   },
+   {
+    "label": "Matillion",
+    "url": "https://www.matillion.com/"
+   },
+   {
+    "label": "Estuary",
+    "url": "https://estuary.dev/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

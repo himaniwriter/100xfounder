@@ -1,0 +1,192 @@
+{
+ "slug": "databricks",
+ "website": "https://www.databricks.com/",
+ "excerpt": "Databricks sells a data and AI platform billed by usage. What it includes, how DBU pricing works, its 2026 funding and the alternatives.",
+ "content": "<p>Databricks is a data and AI company. It sells one platform for storing, processing and analysing an organisation's data, and for building AI applications and agents on top of that data. It was founded in 2013 and is based in San Francisco. Its About page says the founders are the original creators of the lakehouse architecture and of open-source projects including Apache Spark, Delta Lake and MLflow, and that more than 20,000 organisations use the platform, including 70% of the Fortune 500. Customers it names include Block, Comcast, Condé Nast, Rivian and Shell. Ali Ghodsi is co-founder and CEO.</p>\n<h2>What the platform includes</h2>\n<p>Databricks calls the whole product the Data Intelligence Platform. The product names it uses in 2026 include the Lakehouse (data warehousing and analytics), Unity Catalog for governance, Lakeflow for ingesting data and building pipelines, Lakebase (a serverless Postgres database), Genie (ask questions of your data in plain language), Agent Bricks for building AI agents, and Unity AI Gateway for controlling and tracking the cost of AI models. It runs in the public cloud; on Microsoft Azure the service is sold and billed by Microsoft as Azure Databricks.</p>\n<h2>Funding and scale</h2>\n<p>On 13 August 2026 Databricks said it had closed a $5 billion strategic funding round at a $190 billion valuation. Coatue led the round, with Blackstone, MGX, T. Rowe Price and new investor Sixth Street Growth taking part. In the same announcement the company said it had crossed a $7 billion revenue run-rate, with more than 80% year-on-year growth in its second quarter, that its data warehousing product had passed a $1.5 billion run-rate and Lakebase a $100 million run-rate, and that more than 1,000 customers spend over $1 million a year at run-rate. These are the company's own figures: Databricks is private and does not publish audited accounts. It said the new money will go into Lakebase, Genie and Unity AI Gateway. A month earlier, on 16 July, it had announced a signed term sheet at a $188 billion valuation.</p>\n<h2>How you pay</h2>\n<p>There is no flat subscription. Databricks bills by usage, measured in Databricks Units (DBUs), which it defines as a normalised unit of processing power, charged at per-second granularity. You can pay as you go, with usage billed monthly to a card and no upfront cost, or sign a committed-use contract for a discount. Storage and networking are charged separately by your cloud provider. A free trial with credits and a free edition for learning are offered.</p>\n<p><em>We have not tested Databricks ourselves. This page brings together Databricks's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "Data and AI platform",
+  "platform": "Cloud service on the major public clouds",
+  "starts_at": "Pay as you go, billed per second in DBUs",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Data and AI platform for warehousing, pipelines, analytics and AI agents, billed by usage",
+  "maker": {
+   "name": "Databricks",
+   "url": "https://www.databricks.com/"
+  },
+  "team": [
+   {
+    "name": "Ali Ghodsi",
+    "role": "Co-founder and CEO",
+    "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.databricks.com/sites/default/files/2026-08/08-2026-product-platform-og-1200x630.png",
+    "alt": "Databricks graphic 'The Databricks Data + AI Platform: Accelerate the agentic enterprise', with product labels such as Lakeflow, Unity Catalog, AI/BI and Lakehouse",
+    "credit": "Image: Databricks",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://www.databricks.com/sites/default/files/2023-11/databricks-og-universal.png",
+    "alt": "The Databricks logo, a stack of red layers beside the word databricks, on a light background with red geometric shapes",
+    "credit": "Image: Databricks",
+    "w": 1200,
+    "h": 628
+   }
+  ],
+  "use_cases": [
+   "Run a data warehouse and BI dashboards on the company's own data",
+   "Ingest data from business apps and databases and build pipelines (Lakeflow)",
+   "Let non-technical staff ask questions of data in plain language (Genie)",
+   "Build, govern and track the cost of AI agents on company data (Agent Bricks, Unity AI Gateway)",
+   "Train and track machine-learning models with tools such as the open-source MLflow"
+  ],
+  "audience": {
+   "fit": [
+    "are a mid-size or large organisation with data spread across systems and a data team to run the platform",
+    "want warehousing, data engineering, machine learning and AI agents governed in one place",
+    "already run on AWS, Azure or Google Cloud and are comfortable with usage-based billing"
+   ],
+   "not_fit": [
+    "want a fixed monthly price: costs depend on compute usage, plus storage and networking from your cloud provider",
+    "only need a few dashboards on a small database; a simpler BI tool will be cheaper to run",
+    "have no one to set up and manage a data platform"
+   ]
+  },
+  "pros": [
+   "One platform for data engineering, warehousing, ML and AI agents",
+   "Built on open-source projects its founders created (Spark, Delta Lake, MLflow)",
+   "Pay-as-you-go with no upfront cost; committed-use discounts for larger customers"
+  ],
+  "cons": [
+   "Usage pricing in DBUs is harder to predict than a flat subscription",
+   "Cloud storage and networking are billed separately by your provider",
+   "A broad platform with many products to learn"
+  ],
+  "pricing": {
+   "intro": "Databricks publishes its pricing model but not a single price: you pay for the compute you use, measured in DBUs, at rates that differ by product and cloud. Prices are in US dollars.",
+   "url": "https://www.databricks.com/product/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free trial",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Free access to the platform; some trials include credits, and the trial ends when they are used up. Your cloud provider still charges for resources such as compute if you connect your own account"
+    },
+    {
+     "name": "Free Edition / Community Edition",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Limited-functionality editions for learning Spark and data and AI tools"
+    },
+    {
+     "name": "Pay as you go",
+     "price": "Usage-based",
+     "detail": "Pay per second for the products you use, billed monthly to a card on file, no upfront cost"
+    },
+    {
+     "name": "Committed use",
+     "price": "Contact sales",
+     "detail": "Discounts for committing to a usage level; larger commitments bring larger discounts and can be spent across clouds"
+    }
+   ],
+   "notes": [
+    "A DBU (Databricks Unit) is Databricks' normalised unit of processing power; each product and cloud has its own rate on the Databricks price list.",
+    "Storage, networking and related costs depend on the services and cloud provider you choose.",
+    "Azure Databricks is priced and billed directly by Microsoft."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other cloud data platforms that are commonly compared with Databricks. Descriptions come from each product's own site; check their pricing pages for current rates.",
+   "items": [
+    {
+     "name": "Snowflake",
+     "url": "https://www.snowflake.com/en/",
+     "what": "AI Data Cloud for AI, data engineering, applications and analytics",
+     "starts_at": "See its pricing page",
+     "difference": "A separately managed data cloud rather than a platform that runs in your own cloud account; also usage-billed."
+    },
+    {
+     "name": "Microsoft Fabric",
+     "url": "https://www.microsoft.com/en-us/microsoft-fabric",
+     "what": "Microsoft's AI-powered analytics platform that unites data and services, including data science and data lakes",
+     "starts_at": "See its pricing page",
+     "difference": "Microsoft's own analytics suite. Note that Databricks itself is also sold on Azure, as Azure Databricks."
+    },
+    {
+     "name": "Amazon Redshift",
+     "url": "https://aws.amazon.com/redshift/",
+     "what": "Fully managed cloud data warehouse from AWS",
+     "starts_at": "See its pricing page",
+     "difference": "A data warehouse inside AWS rather than a multi-cloud platform that also covers ML and AI agents."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Databricks?",
+    "a": "A data and AI company, founded in 2013 and based in San Francisco, that sells the Data Intelligence Platform for data warehousing, data pipelines, analytics, machine learning and AI agents."
+   },
+   {
+    "q": "How much does Databricks cost?",
+    "a": "It is usage-based. You pay per second for the compute you use, measured in DBUs, either pay-as-you-go or through a discounted committed-use contract. Storage and networking are billed by your cloud provider. A free trial and free learning editions are available."
+   },
+   {
+    "q": "How much has Databricks raised, and what is it valued at?",
+    "a": "On 13 August 2026 Databricks said it had closed a $5 billion strategic round at a $190 billion valuation, led by Coatue."
+   },
+   {
+    "q": "Who runs Databricks?",
+    "a": "Ali Ghodsi is co-founder and CEO."
+   },
+   {
+    "q": "Is Databricks open source?",
+    "a": "The platform is a commercial service, but Databricks says its founders created open-source projects including Apache Spark, Delta Lake and MLflow, and it lists Unity Catalog as open source too."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Databricks official site",
+    "url": "https://www.databricks.com/"
+   },
+   {
+    "label": "Databricks pricing",
+    "url": "https://www.databricks.com/product/pricing"
+   },
+   {
+    "label": "About Databricks",
+    "url": "https://www.databricks.com/company/about-us"
+   },
+   {
+    "label": "Databricks press release, 13 Aug 2026: $5B round at $190B valuation",
+    "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+   },
+   {
+    "label": "Databricks press release, 16 Jul 2026: raising at $188B valuation",
+    "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-strategic-round-funding-188-billion-valuation"
+   },
+   {
+    "label": "Databricks Data Intelligence Platform",
+    "url": "https://www.databricks.com/product/data-intelligence-platform"
+   },
+   {
+    "label": "Snowflake",
+    "url": "https://www.snowflake.com/en/"
+   },
+   {
+    "label": "Microsoft Fabric",
+    "url": "https://www.microsoft.com/en-us/microsoft-fabric"
+   },
+   {
+    "label": "Amazon Redshift",
+    "url": "https://aws.amazon.com/redshift/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

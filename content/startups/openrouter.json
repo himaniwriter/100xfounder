@@ -1,0 +1,181 @@
+{
+ "slug": "openrouter",
+ "website": "https://openrouter.ai/",
+ "excerpt": "OpenRouter gives developers one API for 500+ AI models from 80+ providers. Its fees, free tier, the Stripe acquisition and alternatives.",
+ "content": "<p>OpenRouter gives developers a single API for calling large language models from many companies. You send requests to one OpenAI-compatible endpoint and choose a model by name, for example a model from OpenAI, Anthropic, Google, xAI or DeepSeek, and OpenRouter forwards the request to a provider that serves it. Because it sits in the middle, it can route around outages and rate limits with fallbacks and track spending across providers in one place. Its pricing page lists 500+ models from 80+ providers; Stripe's announcement, in August 2026, said 400+ models from more than 80 providers.</p>\n<p>OpenRouter's co-founder and CEO is Alex Atallah. TechCrunch reported in May 2026 that OpenRouter had 8 million users and was processing about 100 trillion tokens a month.</p>\n<h2>Funding and the Stripe deal</h2>\n<p>In May 2026 OpenRouter raised a $113 million Series B led by CapitalG, Alphabet's growth fund. The company did not disclose its valuation; TechCrunch cited The New York Times as reporting about $1.3 billion post-money. On 19 August 2026 Stripe announced it had agreed to acquire OpenRouter, to help businesses optimise how they route and pay for AI tokens. Stripe did not disclose the price, and the announcement names NVIDIA, Zoom and Lovable as existing OpenRouter users. We have not found a public statement that the deal has closed.</p>\n<h2>Pricing</h2>\n<p>OpenRouter does not mark up model prices: inference is billed at each provider's list price on every plan. It earns a platform fee on credit purchases instead: 5.5% on the Standard pay-as-you-go plan and 8% on Business, with discounts on Enterprise. A free tier gives access to 25+ free models from 4 providers, limited to 20 requests a minute and 50 a day; the daily cap rises to 1,000 once you have bought at least $10 of credits. If you bring your own provider keys (BYOK), the first $25,000 of list-price inference a month carries no fee, and above that OpenRouter charges 5% of what the request would have cost on OpenRouter.</p>\n<p><em>We have not tested OpenRouter ourselves. This page brings together OpenRouter's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "AI model gateway",
+  "platform": "API (OpenAI-compatible)",
+  "starts_at": "Free tier; 5.5% fee on credit purchases",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "One OpenAI-compatible API for hundreds of AI models from dozens of providers",
+  "maker": {
+   "name": "OpenRouter",
+   "url": "https://openrouter.ai/"
+  },
+  "team": [
+   {
+    "name": "Alex Atallah",
+    "role": "Co-founder and CEO",
+    "url": "https://stripe.com/newsroom/news/stripe-agrees-to-acquire-openrouter"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://openrouter.ai/dynamic-og?pathname=default&title=OpenRouter&description=The+unified+interface+for+every+model.+Find+the+best+models+%26+prices+for+your+prompts&v=2",
+    "alt": "OpenRouter card reading 'The unified interface for every model. Find the best models & prices for your prompts', with the OpenRouter logo",
+    "credit": "Image: OpenRouter",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://openrouter.ai/dynamic-og?title=Pricing&description=Transparent+pricing+for+OpenRouter.+Pay+only+for+what+you+use+with+access+to+500%2B+AI+models.+Free%2C+Standard%2C+Business%2C+and+Enterprise+plans+available.&v=2",
+    "alt": "OpenRouter pricing card: 'Pay only for what you use with access to 500+ AI models. Free, Standard, Business, and Enterprise plans available.'",
+    "credit": "Image: OpenRouter",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Call models from several AI companies through one API key",
+   "Fall back to another provider automatically when one is down or rate-limited",
+   "Compare models and prices before choosing one",
+   "Track AI spending across providers in one place",
+   "Try free models for prototypes"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer who wants to switch between models without rewriting code",
+    "want automatic fallbacks across providers",
+    "want one bill and usage view for many AI providers"
+   ],
+   "not_fit": [
+    "only ever use one provider and want to avoid the 5.5% credit fee",
+    "need everything self-hosted inside your own network; an open-source gateway such as LiteLLM can be self-hosted",
+    "rely on free models for production: they are capped at 50 requests a day without a $10 purchase"
+   ]
+  },
+  "pros": [
+   "Hundreds of models behind one OpenAI-compatible API",
+   "No markup on provider list prices",
+   "Free tier and generous BYOK allowance"
+  ],
+  "cons": [
+   "5.5% to 8% platform fee on credit purchases",
+   "Pending acquisition by Stripe may change terms over time",
+   "Free models are heavily rate-limited"
+  ],
+  "pricing": {
+   "intro": "OpenRouter's own fees. Model usage is billed at each provider's list price; fees apply to credit purchases.",
+   "url": "https://openrouter.ai/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "25+ free models from 4 providers; 20 requests/minute, 50/day (1,000/day after buying $10 of credits); no BYOK"
+    },
+    {
+     "name": "Standard (pay as you go)",
+     "price": "5.5% platform fee",
+     "detail": "500+ models from 80+ providers; provider rate limits passed through"
+    },
+    {
+     "name": "Business (pay as you go)",
+     "price": "8% platform fee",
+     "detail": "500+ models from 80+ providers"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Fee discounts available",
+     "detail": "Higher allowances; custom BYOK terms"
+    }
+   ],
+   "notes": [
+    "BYOK: first $25,000 of list-price inference a month free, then 5% of the equivalent OpenRouter cost, deducted from credits.",
+    "Failed requests count towards the free-model daily cap, and a negative balance blocks free models."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other ways to put many AI models behind one API. Descriptions come from each product's own site.",
+   "items": [
+    {
+     "name": "LiteLLM",
+     "url": "https://www.litellm.ai/",
+     "what": "Open-source AI gateway and LLM proxy behind one OpenAI-compatible key, with spend tracking and routing; 140+ providers",
+     "starts_at": "Open source",
+     "difference": "You host it yourself, even air-gapped, and use your own provider accounts."
+    },
+    {
+     "name": "Vercel AI Gateway",
+     "url": "https://vercel.com/ai-gateway",
+     "what": "Use hundreds of AI models without managing rate limits and API keys",
+     "starts_at": "See its pricing page",
+     "difference": "Built into Vercel's platform."
+    },
+    {
+     "name": "Cloudflare AI Gateway",
+     "url": "https://developers.cloudflare.com/ai-gateway/",
+     "what": "Analytics, caching, rate limiting and model fallback for AI applications",
+     "starts_at": "See its pricing page",
+     "difference": "A control layer in front of your own provider keys rather than a reseller of model access."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is OpenRouter?",
+    "a": "A single OpenAI-compatible API that lets developers call hundreds of AI models from dozens of providers, with routing, fallbacks and one bill."
+   },
+   {
+    "q": "Does OpenRouter charge more than the providers?",
+    "a": "Model usage is billed at the provider's list price. OpenRouter charges a platform fee on credit purchases: 5.5% on Standard and 8% on Business."
+   },
+   {
+    "q": "Is OpenRouter free?",
+    "a": "There is a free tier with 25+ free models, limited to 20 requests a minute and 50 a day (1,000 a day after buying $10 of credits)."
+   },
+   {
+    "q": "Is Stripe buying OpenRouter?",
+    "a": "Stripe announced on 19 August 2026 that it had agreed to acquire OpenRouter. It did not disclose the price."
+   },
+   {
+    "q": "Who runs OpenRouter?",
+    "a": "Alex Atallah is co-founder and CEO."
+   }
+  ],
+  "sources": [
+   {
+    "label": "OpenRouter official site",
+    "url": "https://openrouter.ai/"
+   },
+   {
+    "label": "OpenRouter pricing",
+    "url": "https://openrouter.ai/pricing"
+   },
+   {
+    "label": "Stripe newsroom, 19 Aug 2026: Stripe agrees to acquire OpenRouter",
+    "url": "https://stripe.com/newsroom/news/stripe-agrees-to-acquire-openrouter"
+   },
+   {
+    "label": "TechCrunch, 26 May 2026: OpenRouter more than doubles valuation to $1.3B",
+    "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year"
+   },
+   {
+    "label": "LiteLLM",
+    "url": "https://www.litellm.ai/"
+   },
+   {
+    "label": "Vercel AI Gateway",
+    "url": "https://vercel.com/ai-gateway"
+   },
+   {
+    "label": "Cloudflare AI Gateway docs",
+    "url": "https://developers.cloudflare.com/ai-gateway/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "slug": "heygen",
+ "website": "https://www.heygen.com/",
+ "excerpt": "HeyGen makes AI avatar videos, voice clones and video translations in the browser. Plans from free to $149 a month, its funding and alternatives such as Synthesia.",
+ "content": "<p>HeyGen is an AI video platform that runs in the browser. You type a script, pick an avatar, and HeyGen produces a video of that avatar speaking it. You can choose from more than 500 stock avatars or create your own: a custom video avatar of yourself, photo avatars made from a still image, and a clone of your voice. It also translates videos into other languages, with the free plan covering 30+ languages and paid plans 175+ languages and dialects. Its plans include access to the Avatar IV model. Business plans add team workspaces, comments, SCORM export for learning systems and integrations with tools such as HubSpot, Zapier, Make and n8n.</p>\n<h2>Funding</h2>\n<p>In June 2024 HeyGen announced a $60 million Series A led by Benchmark, whose partner Victor Lazarte joined its board, with Thrive Capital, BOND and SV Angel also investing. HeyGen said the round valued it at over $500 million, and Bloomberg reported the same $500 million valuation. In its announcement HeyGen said it had grown from $1 million to more than $35 million in annual recurring revenue in just over a year, had been profitable since the second quarter of 2023, and had over 40,000 paying business customers. Those are the company's own figures from 2024.</p>\n<h2>Plans and pricing</h2>\n<p>HeyGen sells monthly plans with a credit allowance that is spent across features; how many credits a video uses depends on the AI model, length and complexity. The <strong>Free</strong> plan allows three videos a month of up to one minute, exported at up to 1080p, with one custom video avatar, up to three photo avatars and one voice clone. <strong>Creator</strong> costs $29 a month ($24 a month billed annually, per HeyGen's FAQ) with 600 credits, videos up to 30 minutes, unlimited photo avatars, watermark removal and credit rollover. <strong>Pro</strong> starts at $49 a month for 1,000 credits and goes up to $4,300 a month for 100,000 credits, adding 4K export and editing of translated scripts. <strong>Business</strong> costs $149 a month plus $20 per seat, with 1,500 credits, 60-minute videos, SSO and team features. Enterprise is custom, with no maximum video length. Monthly subscribers' unused credits roll over for one extra month. An API is priced separately.</p>\n<p><em>We have not tested HeyGen ourselves. This page brings together HeyGen's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "AI video generation",
+  "platform": "Web app and API",
+  "starts_at": "Free; Creator $29/month",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "Browser-based AI video platform for avatars, voice clones and video translation",
+  "maker": {
+   "name": "HeyGen",
+   "url": "https://www.heygen.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/pdhqcmb1/production/9ba018976fca2ba4f7431d554d2e6510713ceb57-1200x630.jpg?fit=max&fm=png",
+    "alt": "HeyGen graphic with the HeyGen logo and the words 'AI avatar generator.' above a colourful glass-like arrow",
+    "credit": "Image: HeyGen",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.sanity.io/images/pdhqcmb1/production/170e1d983053e0d80a0e724303ac0787efd58551-1200x630.jpg?fit=max&fm=png",
+    "alt": "HeyGen graphic with the HeyGen logo and the line 'Be your best self, every time.'",
+    "credit": "Image: HeyGen",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Turn a script into a presenter video without filming",
+   "Create an avatar and voice clone of yourself for recurring videos",
+   "Translate an existing video into other languages",
+   "Produce training videos and export them to a learning system (SCORM, Business plan)",
+   "Generate personalised videos at scale through the API"
+  ],
+  "audience": {
+   "fit": [
+    "make frequent explainer, training or marketing videos and want to skip filming",
+    "need the same video in many languages",
+    "are a team that wants shared workspaces and LMS export (Business)"
+   ],
+   "not_fit": [
+    "need videos longer than one minute for free",
+    "need 4K on a budget: 4K export starts with Pro",
+    "are uncomfortable creating a digital likeness of yourself or others; check HeyGen's consent rules first"
+   ]
+  },
+  "pros": [
+   "Usable free plan with a custom avatar and voice clone",
+   "Wide language coverage for translation (175+ on paid plans)",
+   "Published prices for every self-serve plan"
+  ],
+  "cons": [
+   "Credits per video vary by model and length, so costs take estimating",
+   "Free videos are capped at one minute",
+   "Team seats on Business cost $20 each on top of the plan"
+  ],
+  "pricing": {
+   "intro": "HeyGen's own prices, in US dollars per month.",
+   "url": "https://www.heygen.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "3 videos a month up to 1 minute, up to 1080p, 500+ stock avatars, 1 custom video avatar, 3 photo avatars, 1 voice clone, 30+ languages"
+    },
+    {
+     "name": "Creator",
+     "price": "$29/month ($24/month annual)",
+     "amount": 29,
+     "currency": "USD",
+     "detail": "600 credits, videos up to 30 minutes, unlimited photo avatars, 175+ languages, no watermark, credit rollover"
+    },
+    {
+     "name": "Pro",
+     "price": "From $49/month",
+     "amount": 49,
+     "currency": "USD",
+     "detail": "1,000 credits at $49 up to 100,000 credits at $4,300; 4K export, translated-script editing, all advanced models"
+    },
+    {
+     "name": "Business",
+     "price": "$149/month + $20/seat",
+     "amount": 149,
+     "currency": "USD",
+     "detail": "1,500 credits, videos up to 60 minutes, SAML/SSO, workspace collaboration, SCORM export, LMS and automation integrations"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "No maximum video length, 10+ custom avatars, SCIM, invoice billing, dedicated success manager"
+    }
+   ],
+   "notes": [
+    "Credit cost varies by AI model, video duration and complexity.",
+    "Monthly subscribers' unused credits roll over for one more month; annual subscribers' credits accumulate until renewal.",
+    "API pricing is on a separate page."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other AI avatar video tools. Descriptions come from each company's own site; check their pricing pages for current rates.",
+   "items": [
+    {
+     "name": "Synthesia",
+     "url": "https://www.synthesia.io/",
+     "what": "AI video platform for business that says it is used by 90%+ of the Fortune 100, in 140+ languages",
+     "starts_at": "See its pricing page",
+     "difference": "Focused on corporate training and communication videos."
+    },
+    {
+     "name": "D-ID",
+     "url": "https://www.d-id.com/",
+     "what": "AI video platform for talking avatars and interactive, real-time visual agents",
+     "starts_at": "See its pricing page",
+     "difference": "Leans towards interactive avatars and agents, with an API."
+    },
+    {
+     "name": "Colossyan",
+     "url": "https://www.colossyan.com/",
+     "what": "AI video generator with avatars based on real actors",
+     "starts_at": "See its pricing page",
+     "difference": "Aimed mainly at workplace learning videos."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is HeyGen?",
+    "a": "A browser-based AI video platform that turns scripts into videos of speaking avatars, clones voices and translates videos into other languages."
+   },
+   {
+    "q": "Is HeyGen free?",
+    "a": "Yes. The free plan allows three videos a month of up to one minute, with one custom avatar and one voice clone."
+   },
+   {
+    "q": "How much does HeyGen cost?",
+    "a": "Creator is $29 a month ($24 billed annually), Pro starts at $49 a month and Business is $149 a month plus $20 per seat. Enterprise is custom."
+   },
+   {
+    "q": "How much funding has HeyGen raised?",
+    "a": "It raised a $60 million Series A led by Benchmark in June 2024 at a valuation HeyGen put at over $500 million."
+   },
+   {
+    "q": "How many languages does HeyGen support?",
+    "a": "30+ on the free plan and 175+ languages and dialects on paid plans."
+   }
+  ],
+  "sources": [
+   {
+    "label": "HeyGen official site",
+    "url": "https://www.heygen.com/"
+   },
+   {
+    "label": "HeyGen pricing",
+    "url": "https://www.heygen.com/pricing"
+   },
+   {
+    "label": "HeyGen blog: announcing our Series A",
+    "url": "https://www.heygen.com/blog/announcing-our-series-a"
+   },
+   {
+    "label": "Bloomberg, 20 Jun 2024: AI video startup HeyGen valued at $500 million",
+    "url": "https://www.bloomberg.com/news/articles/2024-06-20/ai-video-startup-heygen-valued-at-500-million-in-funding-round"
+   },
+   {
+    "label": "HeyGen AI avatars",
+    "url": "https://www.heygen.com/avatars"
+   },
+   {
+    "label": "Synthesia",
+    "url": "https://www.synthesia.io/"
+   },
+   {
+    "label": "D-ID",
+    "url": "https://www.d-id.com/"
+   },
+   {
+    "label": "Colossyan",
+    "url": "https://www.colossyan.com/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

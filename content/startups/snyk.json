@@ -1,0 +1,171 @@
+{
+ "slug": "snyk",
+ "website": "https://snyk.io/",
+ "excerpt": "Snyk is a developer security platform that scans code, dependencies, containers and AI-generated code. Plans from free to $25 a month, credits for enterprise, and alternatives.",
+ "content": "<p>Snyk is a security company that builds tools for developers. Its platform finds and helps fix vulnerabilities in the code a team writes, in the open-source packages it depends on, in container images and in infrastructure-as-code files, and it now presents itself as an AI Security Platform: an independent layer that checks AI-generated code, governs AI coding agents and secures applications that use AI. It plugs into developers' editors, command line, source-code hosting, CI/CD pipelines and AI coding assistants such as Claude Code, Cursor and Codex.</p>\n<p>Snyk was founded in 2015 and reached unicorn status in 2020, according to its About page. It is headquartered in Boston and lists offices in Bucharest, Cluj, Lisbon, London, Ottawa, San Francisco, Singapore, Sydney, Tel Aviv, Tokyo and Zürich. Customers named on its site include Google, Atlassian, Spotify, Snowflake, Twilio, Kroger, Manulife and Jaguar Land Rover.</p>\n<h2>What it scans</h2>\n<p>The plans page lists the products by what they check. Snyk Code is static analysis (SAST) of your own source code. Snyk Open Source is software composition analysis (SCA) of the packages you install. Container scans images, IaC scans infrastructure-as-code configuration, and Secrets looks for leaked keys. API &amp; Web tests running applications. A newer family called Evo covers AI security posture, coding-agent security and AI-driven penetration testing; Snyk says Evo is not available on the Free or Team plans.</p>\n<h2>Pricing</h2>\n<p>The Free plan costs nothing and covers SCA, SAST, IaC and Container scanning with editor, CLI and repository integrations, limited to 5 projects and 100 Snyk Code tests a month. Team starts at $25 a month, billed monthly at a flat rate for development teams of up to 10 developers, and raises the limits to 100 projects and 1,000 Code tests a month, with a Jira integration and next-business-day support. Enterprise is sold as a platform subscription with prepaid credits, where one credit equals one dollar. Each product burns credits at a published rate; Code and Open Source, for example, cost one credit per active contributor per day.</p>\n<p><em>We have not tested Snyk ourselves. This page brings together Snyk's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "Application security",
+  "platform": "Web app, IDE plugins, CLI and CI/CD integrations",
+  "starts_at": "Free; Team from $25/month",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Developer security platform for code, dependencies, containers, IaC and AI-generated code",
+  "maker": {
+   "name": "Snyk",
+   "url": "https://snyk.io/"
+  },
+  "gallery": [
+   {
+    "url": "https://res.cloudinary.com/snyk/image/upload/v1607608616/Marketing%20site%20assets/snyk-code-featured.png",
+    "alt": "Snyk Code graphic: a shield with a code symbol over a purple background of C source code",
+    "credit": "Image: Snyk",
+    "w": 1910,
+    "h": 1026
+   },
+   {
+    "url": "https://snyk.io/_next/static/immutable/media/default-social.1it2bxqetxg-k.png",
+    "alt": "The white Snyk wordmark on a black background with purple and orange dotted waves",
+    "credit": "Image: Snyk",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Find vulnerable open-source packages in a project and get upgrade fixes",
+   "Scan your own code for security flaws while you write it in the IDE",
+   "Check container images and infrastructure-as-code files before deploying",
+   "Review code produced by AI coding assistants such as Claude Code or Cursor",
+   "Find leaked secrets in repositories"
+  ],
+  "audience": {
+   "fit": [
+    "are a development team that wants security checks inside the editor, CLI and pull requests",
+    "have up to 10 developers and want a flat monthly price (Team)",
+    "use AI coding assistants and want their output checked"
+   ],
+   "not_fit": [
+    "need the Evo AI-security products on a small budget: they are Enterprise-only",
+    "have a large codebase on the Free plan: it stops at 5 projects and 100 Code tests a month",
+    "want a fixed price at enterprise scale: Enterprise usage is metered in credits"
+   ]
+  },
+  "pros": [
+   "Usable free plan covering four scan types",
+   "Integrates with IDEs, CLI, repositories, CI/CD and AI coding assistants",
+   "Published credit rate card for Enterprise"
+  ],
+  "cons": [
+   "Free plan limits are tight for more than a few projects",
+   "Team is aimed at teams of up to 10 developers",
+   "Credit-based enterprise billing needs forecasting"
+  ],
+  "pricing": {
+   "intro": "Snyk's own plans, in US dollars.",
+   "url": "https://snyk.io/plans/",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0/month",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "SCA, SAST, IaC and Container scanning; IDE, CLI and repository integrations; 5 projects; 100 Snyk Code tests a month"
+    },
+    {
+     "name": "Team",
+     "price": "From $25/month",
+     "amount": 25,
+     "currency": "USD",
+     "detail": "Flat monthly rate for teams of up to 10 developers; 100 projects; 1,000 Code tests a month; Jira integration; next-business-day support"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Contact sales",
+     "detail": "Platform subscription with prepaid credits (1 credit = $1) usable across Snyk products, including Evo"
+    }
+   ],
+   "notes": [
+    "Enterprise credit rates per day: Code and Open Source 1.0 per active contributor; IaC 0.33; Secrets 0.66; Container 0.33 per monitored image; API & Web 3.0 per provisioned target.",
+    "Evo AI pentesting costs 4,000 credits per assessment. Evo is not available on Free or Team."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other application-security platforms. Descriptions come from each product's own site; check their pricing pages for current rates.",
+   "items": [
+    {
+     "name": "Semgrep",
+     "url": "https://semgrep.dev/",
+     "what": "Application security platform with AI-assisted SAST, SCA and secrets detection",
+     "starts_at": "See its pricing page",
+     "difference": "Built around an extensible rules engine developers can write their own checks for."
+    },
+    {
+     "name": "GitHub Advanced Security",
+     "url": "https://github.com/security/advanced-security",
+     "what": "Built-in, AI-powered security for GitHub repositories and the software supply chain",
+     "starts_at": "See its pricing page",
+     "difference": "Lives inside GitHub, so it suits teams already hosting code there."
+    },
+    {
+     "name": "Checkmarx",
+     "url": "https://checkmarx.com/",
+     "what": "Agentic application security testing platform with hybrid scanning and AI agents",
+     "starts_at": "See its site",
+     "difference": "An enterprise AppSec suite, typically bought through sales."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Snyk do?",
+    "a": "It scans your code, open-source dependencies, container images, infrastructure-as-code and AI-generated code for security problems, and suggests fixes inside the tools developers already use."
+   },
+   {
+    "q": "Is Snyk free?",
+    "a": "Yes, there is a free plan with SCA, SAST, IaC and Container scanning, limited to 5 projects and 100 Snyk Code tests a month."
+   },
+   {
+    "q": "How much does Snyk cost?",
+    "a": "Team starts at $25 a month for up to 10 developers. Enterprise uses prepaid credits at $1 each, spent at a published daily rate per product."
+   },
+   {
+    "q": "Where is Snyk based?",
+    "a": "Boston, with offices in eleven other cities including London, Tel Aviv, Singapore and Tokyo. It was founded in 2015."
+   },
+   {
+    "q": "Does Snyk work with AI coding assistants?",
+    "a": "Snyk says it integrates with assistants including Claude Code, Cursor and Codex and validates AI-generated code."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Snyk official site",
+    "url": "https://snyk.io/"
+   },
+   {
+    "label": "Snyk plans and pricing",
+    "url": "https://snyk.io/plans/"
+   },
+   {
+    "label": "About Snyk",
+    "url": "https://snyk.io/about/"
+   },
+   {
+    "label": "Snyk Code",
+    "url": "https://snyk.io/product/snyk-code/"
+   },
+   {
+    "label": "Semgrep",
+    "url": "https://semgrep.dev/"
+   },
+   {
+    "label": "GitHub Advanced Security",
+    "url": "https://github.com/security/advanced-security"
+   },
+   {
+    "label": "Checkmarx",
+    "url": "https://checkmarx.com/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

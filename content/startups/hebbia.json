@@ -1,0 +1,167 @@
+{
+ "slug": "hebbia",
+ "website": "https://www.hebbia.com/",
+ "excerpt": "Hebbia builds AI agents for investors, bankers and lawyers that work through large sets of documents. Its products Matrix and Max, funding, pricing and alternatives.",
+ "content": "<p>Hebbia makes AI software for finance and professional-services firms. Its tools read and analyse large collections of documents, such as filings, earnings transcripts, data-room files and contracts, and turn them into structured answers and deliverables. Its homepage describes the platform as purpose-built AI trusted by investors, bankers, lawyers, consultants and Fortune 500 companies, and its solution pages cover investing, investment banking, legal and corporate finance.</p>\n<h2>Products</h2>\n<p>Hebbia sells two main products. <strong>Matrix</strong> is laid out as a grid: each row is a company or document and each column a question or research field, such as financials, leverage, shareholders or leadership changes, and AI agents fill in every cell and can produce slide-style outputs. <strong>Max</strong>, which Hebbia pitches as an AI analyst for deal teams, is a shared workspace where a team's AI work across thousands of files can be reused across the firm. Both connect to sources including SEC filings, earnings transcripts, FactSet, S&amp;P Capital IQ, PitchBook, Preqin, SharePoint, Box, Salesforce and Snowflake. Logos on Hebbia's site include Morgan Stanley, MetLife, Centerview, New Mountain Capital and Latham &amp; Watkins.</p>\n<h2>Founder and funding</h2>\n<p>Hebbia was founded by George Sivulka, its CEO, who started it while studying for a PhD in electrical engineering at Stanford, according to TechCrunch. In July 2024 it raised a $130 million Series B led by Andreessen Horowitz, with Index Ventures, Google Ventures and Peter Thiel also investing. TechCrunch reported a valuation of roughly $700 million and, citing a person with knowledge of the matter, said Hebbia had $13 million of annual recurring revenue and was profitable when it pitched investors; Sivulka declined to comment on revenue or profitability. Index Ventures wrote at the time that Hebbia's revenue had grown 15 times in 18 months and that, according to its founder, it was used by 30% of the top 50 asset managers by assets under management.</p>\n<h2>Pricing</h2>\n<p>Hebbia does not publish prices. Its website offers a demo request rather than self-serve sign-up, so pricing is agreed with its sales team.</p>\n<p><em>We have not tested Hebbia ourselves. This page brings together Hebbia's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "AI for finance and legal research",
+  "platform": "Web (enterprise)",
+  "starts_at": "Custom pricing (request a demo)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI agents that analyse filings, data rooms and contracts for investors, bankers and lawyers",
+  "maker": {
+   "name": "Hebbia",
+   "url": "https://www.hebbia.com/"
+  },
+  "team": [
+   {
+    "name": "George Sivulka",
+    "role": "Founder and CEO",
+    "url": "https://www.indexventures.com/perspectives/hebbia-raises-130m-in-series-b-funding-to-transform-how-businesses-put-data-to-work-with-ai/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.hebbia.com/static/img/max/og.jpg?w=1200&h=628&fit=fill&q=80&fm=jpg&fl=progressive",
+    "alt": "Hebbia Max graphic: the word MAX in large white serif letters above an arc of metallic bars on a blue-to-pink background",
+    "credit": "Image: Hebbia",
+    "w": 1200,
+    "h": 628
+   },
+   {
+    "url": "https://www.hebbia.com/static/img/og-fallback.jpg?w=1200&h=628&fit=fill&q=80&fm=jpg&fl=progressive",
+    "alt": "The white Hebbia logo on a black background with a curve of gold and black bars",
+    "credit": "Image: Hebbia",
+    "w": 1200,
+    "h": 628
+   }
+  ],
+  "use_cases": [
+   "Screen a list of companies against the same set of questions in a grid (Matrix)",
+   "Review a data room or a set of contracts during due diligence",
+   "Pull figures from filings and earnings transcripts into a comparison",
+   "Draft pitch or research materials from many source documents",
+   "Share a deal team's AI work across the firm (Max)"
+  ],
+  "audience": {
+   "fit": [
+    "work at an investment firm, bank, law firm or consultancy that reviews large document sets",
+    "already use data sources such as FactSet, Capital IQ or PitchBook and want AI on top",
+    "need the same questions answered across hundreds of documents"
+   ],
+   "not_fit": [
+    "are an individual or small team wanting self-serve sign-up and a public price",
+    "only need to chat with a few PDFs; a general AI assistant is enough",
+    "work outside finance, legal or corporate strategy, which its solutions target"
+   ]
+  },
+  "pros": [
+   "Grid format makes answers comparable across many documents",
+   "Connects to the data sources finance teams already pay for",
+   "Named users in banking, investing and law"
+  ],
+  "cons": [
+   "No published pricing or free trial",
+   "Sold through demos and sales",
+   "Built for finance and legal work, not general use"
+  ],
+  "pricing": {
+   "intro": "Hebbia does not publish prices.",
+   "url": "https://www.hebbia.com/demo",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Enterprise",
+     "price": "Contact sales",
+     "detail": "Request a demo; pricing is agreed with Hebbia's sales team"
+    }
+   ],
+   "notes": [
+    "The homepage's only call to action is 'Request a demo'; we found no public pricing page."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other AI research tools for finance and legal work. Descriptions come from each company's own site; none publishes simple self-serve prices for its enterprise product.",
+   "items": [
+    {
+     "name": "AlphaSense",
+     "url": "https://www.alpha-sense.com/",
+     "what": "Market intelligence and search platform across 500M+ documents",
+     "starts_at": "See its site",
+     "difference": "Brings its own large library of research and filings to search."
+    },
+    {
+     "name": "Rogo",
+     "url": "https://rogo.ai/",
+     "what": "AI partner for financial institutions and finance teams",
+     "starts_at": "See its site",
+     "difference": "Also aimed at banks and investors; compare workflows and data connections."
+    },
+    {
+     "name": "Harvey",
+     "url": "https://www.harvey.ai/",
+     "what": "AI software for legal and professional services: contract analysis, due diligence, compliance and litigation",
+     "starts_at": "See its site",
+     "difference": "Focused on law firms and legal teams rather than investors."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Hebbia do?",
+    "a": "It builds AI agents that read and analyse large sets of documents, such as filings, transcripts and contracts, for investors, bankers, lawyers and corporate teams."
+   },
+   {
+    "q": "What is Hebbia Matrix?",
+    "a": "A grid where rows are companies or documents and columns are questions; AI agents fill in each cell, so answers can be compared across many documents."
+   },
+   {
+    "q": "How much does Hebbia cost?",
+    "a": "Prices are not published. You request a demo and agree pricing with its sales team."
+   },
+   {
+    "q": "Who founded Hebbia?",
+    "a": "George Sivulka, its CEO, who started it while doing a PhD at Stanford."
+   },
+   {
+    "q": "How much has Hebbia raised?",
+    "a": "It raised a $130 million Series B led by Andreessen Horowitz in July 2024. TechCrunch reported a valuation of about $700 million."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Hebbia official site",
+    "url": "https://www.hebbia.com/"
+   },
+   {
+    "label": "Hebbia Matrix",
+    "url": "https://www.hebbia.com/matrix/"
+   },
+   {
+    "label": "Hebbia Max",
+    "url": "https://www.hebbia.com/max/"
+   },
+   {
+    "label": "Index Ventures, Jul 2024: Hebbia raises $130M Series B",
+    "url": "https://www.indexventures.com/perspectives/hebbia-raises-130m-in-series-b-funding-to-transform-how-businesses-put-data-to-work-with-ai/"
+   },
+   {
+    "label": "TechCrunch, 9 Jul 2024: Hebbia raised $130M at a $700M valuation",
+    "url": "https://techcrunch.com/2024/07/09/ai-startup-hebbia-rased-130m-at-a-700m-valuation-on-13-million-of-profitable-revenue"
+   },
+   {
+    "label": "AlphaSense",
+    "url": "https://www.alpha-sense.com/"
+   },
+   {
+    "label": "Rogo",
+    "url": "https://rogo.ai/"
+   },
+   {
+    "label": "Harvey",
+    "url": "https://www.harvey.ai/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

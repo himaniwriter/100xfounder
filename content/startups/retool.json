@@ -1,0 +1,186 @@
+{
+ "slug": "retool",
+ "website": "https://retool.com/",
+ "excerpt": "Retool is a platform for building internal tools, workflows and AI agents on your own data. Plans from free to $50 per builder a month, and the open-source alternatives.",
+ "content": "<p>Retool is a platform for building the internal software a company runs on: admin panels, dashboards, support consoles, approval tools and similar apps that staff use but customers never see. You assemble an app from ready-made components and connect it to your own databases, APIs and AI models, writing code only where you need to. Besides apps, Retool sells Workflows, which it describes as blocks of code, queries and AI actions arranged on an interactive canvas, and agents that are billed by the hour. It can run in Retool's cloud or be self-hosted on your own servers.</p>\n<p>The company says tens of thousands of companies use Retool, and its homepage says it is trusted by 10,000+ teams. Customers it names include Amazon, Adobe, Boeing, Lyft, Stripe, OpenAI, Pinterest, Databricks, DoorDash and Ramp. Its homepage quotes Ramp as saying it saved $8 million and more than 20,000 hours, and DoorDash $6 million and more than 36,000 hours; those are customer claims published by Retool. David Hsu is Retool's CEO.</p>\n<h2>How the pricing works</h2>\n<p>Retool charges per seat, with two kinds of seat. A <strong>builder</strong> creates and publishes apps, workflows and agents; an <strong>internal user</strong> only uses them. On the Team plan a builder costs $10 a month and an internal user $5 a month when billed annually ($12 and $7 monthly). Business costs $50 per builder and $15 per internal user a month on annual billing ($65 and $18 monthly) and adds audit logs, fine-grained permissions, portals and embedded apps. External users, such as customers or partners logging into a portal you built, are priced separately on Business: the first 50 are free, then the rate falls from $8 to $4 a user a month as numbers grow. Enterprise pricing is custom and adds single sign-on, source control and custom branding.</p>\n<p>The free plan allows up to five users, 500 workflow runs and 250 AI credits a month, with unlimited web and mobile apps. AI credits are pooled across the account, renew monthly and do not roll over. The same prices apply if you self-host, with a 100-user cap below Enterprise.</p>\n<p><em>We have not tested Retool ourselves. This page brings together Retool's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "Internal tool builder",
+  "platform": "Web (cloud or self-hosted)",
+  "starts_at": "Free for up to 5 users; Team from $10 per builder/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Build internal apps, workflows and AI agents on your own databases and APIs",
+  "maker": {
+   "name": "Retool",
+   "url": "https://retool.com/"
+  },
+  "team": [
+   {
+    "name": "David Hsu",
+    "role": "CEO",
+    "url": "https://retool.com/about"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/bclf52sw/production/a783e1c87ad1bd744bb44b6ecf8b1f61d6189b8b-1200x676.png",
+    "alt": "Retool Workflows graphic: a canvas of connected blocks such as startTrigger, a getLogs SQL query on Amazon S3 and a combineData JavaScript step, beside the text 'Develop blocks of code, queries, and AI actions on an interactive canvas'",
+    "credit": "Image: Retool",
+    "w": 1200,
+    "h": 676
+   },
+   {
+    "url": "https://retool-dot-com.s3.us-west-2.amazonaws.com/page-assets/homepage/homepage-meta-image.png",
+    "alt": "Retool homepage graphic reading 'Secure your vibe-coded apps', with glass-like app panels and a hand",
+    "credit": "Image: Retool",
+    "w": 1200,
+    "h": 676
+   }
+  ],
+  "use_cases": [
+   "Build an admin panel or support console on top of a production database",
+   "Automate a back-office process with scheduled workflows",
+   "Give operations teams a mobile app for field work",
+   "Add AI actions or an agent to an internal process",
+   "Build a customer or partner portal (Business plan, external users)"
+  ],
+  "audience": {
+   "fit": [
+    "are an engineering team that keeps getting asked for internal dashboards and admin tools",
+    "want apps connected directly to your own databases and APIs, with permissions and audit logs",
+    "need the option to self-host for security or compliance"
+   ],
+   "not_fit": [
+    "want a free tool for a large team: the free plan stops at five users",
+    "need SSO on a budget: SAML/OIDC single sign-on is listed under Enterprise",
+    "are building a public consumer app; Retool is aimed at internal and portal use"
+   ]
+  },
+  "pros": [
+   "Connects to many databases, APIs and LLMs",
+   "Cloud or self-hosted at the same per-seat prices",
+   "Cheap seats for people who only use apps ($5 a month on Team, annual)"
+  ],
+  "cons": [
+   "Single sign-on and source control are Enterprise features",
+   "Agents are billed by the hour on top of seats",
+   "AI credits do not roll over"
+  ],
+  "pricing": {
+   "intro": "Retool's own prices, per user per month in US dollars. The first figure is with annual billing, the second with monthly billing.",
+   "url": "https://retool.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Up to 5 users, 500 workflow runs/month, 5GB storage, 250 AI credits/month, up to 20 agent hours/month, unlimited web and mobile apps"
+    },
+    {
+     "name": "Team",
+     "price": "$10/builder + $5/internal user per month (annual); $12 + $7 monthly",
+     "amount": 10,
+     "currency": "USD",
+     "detail": "5,000 workflow runs/month, staging environment, app release versions, 1,000 AI credits/month"
+    },
+    {
+     "name": "Business",
+     "price": "$50/builder + $15/internal user per month (annual); $65 + $18 monthly",
+     "amount": 50,
+     "currency": "USD",
+     "detail": "Audit logging, rich permissions, portals and embedded apps, unlimited environments, external-user pricing, 3,000 AI credits/month"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "SAML/OIDC SSO, source control, custom branding, independent workspaces, platform APIs, volume discounts, dedicated support"
+    }
+   ],
+   "notes": [
+    "External users on Business: 0-50 free; 51-250 $8; 251-500 $6; over 500 $4 per user per month (annual billing).",
+    "Self-hosted Free, Team and Business plans use the same prices; Team and Business are capped at 100 users.",
+    "AI credits are pooled per account, renew monthly and do not roll over; Retool says bonus credits may change."
+   ]
+  },
+  "alternatives": {
+   "intro": "Open-source and low-code internal tool builders. Descriptions come from each product's own site; check their pricing pages for current rates.",
+   "items": [
+    {
+     "name": "Appsmith",
+     "url": "https://www.appsmith.com/",
+     "what": "Open-source low-code application platform for building custom internal software",
+     "starts_at": "See its pricing page",
+     "difference": "Open source, so the core can be self-hosted without a licence fee."
+    },
+    {
+     "name": "ToolJet",
+     "url": "https://www.tooljet.com/",
+     "what": "Open-source, AI-native low-code platform for internal tools, on ToolJet Cloud or self-hosted",
+     "starts_at": "See its pricing page",
+     "difference": "Open source, with AI, coding-agent and visual building options."
+    },
+    {
+     "name": "Budibase",
+     "url": "https://budibase.com/",
+     "what": "Build AI agents, chat and automated internal workflows",
+     "starts_at": "See its pricing page",
+     "difference": "Leans towards workflow automation and agents for business processes."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Retool used for?",
+    "a": "Building internal software such as admin panels, dashboards, support tools and approval flows, connected to your own databases, APIs and AI models. It also offers workflows and AI agents."
+   },
+   {
+    "q": "Is Retool free?",
+    "a": "There is a free plan for up to five users with 500 workflow runs a month. Larger teams need a paid plan."
+   },
+   {
+    "q": "How much does Retool cost?",
+    "a": "Team costs $10 per builder and $5 per internal user a month with annual billing; Business costs $50 and $15. Enterprise is custom."
+   },
+   {
+    "q": "Can I self-host Retool?",
+    "a": "Yes. Retool offers self-hosted Free, Team, Business and Enterprise plans; Team and Business are capped at 100 users."
+   },
+   {
+    "q": "Who runs Retool?",
+    "a": "David Hsu is the CEO."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Retool official site",
+    "url": "https://retool.com/"
+   },
+   {
+    "label": "Retool pricing",
+    "url": "https://retool.com/pricing"
+   },
+   {
+    "label": "About Retool",
+    "url": "https://retool.com/about"
+   },
+   {
+    "label": "Retool Workflows",
+    "url": "https://retool.com/workflows"
+   },
+   {
+    "label": "Appsmith",
+    "url": "https://www.appsmith.com/"
+   },
+   {
+    "label": "ToolJet",
+    "url": "https://www.tooljet.com/"
+   },
+   {
+    "label": "Budibase",
+    "url": "https://budibase.com/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

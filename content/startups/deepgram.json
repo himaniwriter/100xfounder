@@ -1,0 +1,180 @@
+{
+ "slug": "deepgram",
+ "website": "https://deepgram.com/",
+ "excerpt": "Deepgram sells speech-to-text, text-to-speech and voice agent APIs. Per-minute prices, $200 free credit, its 2026 Series C and the alternatives.",
+ "content": "<p>Deepgram is a voice AI company that sells its models to developers through APIs. Its three main products are speech-to-text (turning audio into text, either live or from recordings), text-to-speech, and a Voice Agent API that combines listening, speaking and a language model to run a whole spoken conversation. The current models are Nova-3 and Flux for speech-to-text and Aura for speech synthesis; Deepgram says Flux is built for conversations and that its text-to-speech latency can be as low as 80 milliseconds. Customers can use the models in real time or in batch, in Deepgram's cloud or self-hosted. Companies named on its homepage include Twilio, Cloudflare, IBM, Sierra, Granola, Vapi and Decagon.</p>\n<h2>Funding</h2>\n<p>On 13 January 2026 Deepgram announced a $130 million Series C at a $1.3 billion valuation, led by AVP. Existing investors including Alkeon, In-Q-Tel, Madrona, Tiger, Wing, Y Combinator and funds managed by BlackRock joined, and Twilio, ServiceNow Ventures, SAP and Citi Ventures were among the new investors. At the same time it announced it had acquired OfOne, a voice AI company for restaurant drive-throughs, whose technology now underpins Deepgram for Restaurants. TechCrunch reported co-founder and CEO Scott Stephenson as saying Deepgram did not need the money and was cash-flow positive the previous year.</p>\n<h2>Pricing</h2>\n<p>New accounts get $200 of free credit with no card required, then pay as they go with no minimum and no expiry. A Growth plan, from $4,000 a year in prepaid credit, cuts rates by up to 20%; Enterprise is custom. On pay-as-you-go, Nova-3 English speech-to-text costs $0.0043 a minute for recordings and $0.0048 a minute streaming (multilingual: $0.0052 and $0.0058). Flux streaming costs $0.0065 a minute in English and $0.0078 multilingual. Deepgram labels its streaming rates limited-time promotional prices. Aura-2 text-to-speech costs $0.030 per 1,000 characters, and the Voice Agent API $0.075 per minute of connection time.</p>\n<p><em>We have not tested Deepgram ourselves. This page brings together Deepgram's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "Voice AI API",
+  "platform": "API (cloud or self-hosted)",
+  "starts_at": "$200 free credit, then from $0.0043/minute",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Speech-to-text, text-to-speech and voice agent APIs for developers",
+  "maker": {
+   "name": "Deepgram",
+   "url": "https://deepgram.com/"
+  },
+  "team": [
+   {
+    "name": "Scott Stephenson",
+    "role": "Co-founder and CEO",
+    "url": "https://deepgram.com/learn/press-release-deepgram-raises-series-c"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/10fppwnn/production/0418428f854c966e333d3657f13fee40a205f914-1800x945.jpg",
+    "alt": "The white Deepgram wordmark on a black background with blue and green light at the bottom",
+    "credit": "Image: Deepgram",
+    "w": 1800,
+    "h": 945
+   },
+   {
+    "url": "https://cdn.sanity.io/images/10fppwnn/production/af2eaf69afd656cea3683953af56325c1681f8f3-1800x945.png",
+    "alt": "Deepgram pricing graphic: the Deepgram wordmark, a slash and a dollar icon labelled Pricing",
+    "credit": "Image: Deepgram",
+    "w": 1800,
+    "h": 945
+   }
+  ],
+  "use_cases": [
+   "Transcribe calls, meetings or media files",
+   "Add live captions or voice input to an app",
+   "Give an app a natural-sounding voice with text-to-speech",
+   "Build a phone or in-app voice agent with the Voice Agent API",
+   "Run speech models self-hosted for data-control reasons"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer building transcription, voice input or voice agents",
+    "want per-minute pricing with free credit to start",
+    "need the option to self-host speech models"
+   ],
+   "not_fit": [
+    "want a finished transcription app rather than an API",
+    "need predictable fixed monthly pricing: it is usage-based",
+    "rely on today's streaming rates long-term: Deepgram labels them promotional"
+   ]
+  },
+  "pros": [
+   "$200 free credit with no card",
+   "Low published per-minute rates",
+   "Speech-to-text, text-to-speech and voice agents from one vendor"
+  ],
+  "cons": [
+   "Streaming rates are marked as limited-time promotional",
+   "An API for developers, not an end-user app",
+   "Discounts need a prepaid Growth commitment from $4,000 a year"
+  ],
+  "pricing": {
+   "intro": "Deepgram's own prices, in US dollars. Pay-as-you-go rates shown; the Growth plan is cheaper.",
+   "url": "https://deepgram.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Pay As You Go",
+     "price": "$200 free credit, then usage",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "No minimums, no expiry, no card required to start"
+    },
+    {
+     "name": "Growth",
+     "price": "From $4,000/year prepaid",
+     "amount": 4000,
+     "currency": "USD",
+     "detail": "Up to 20% lower rates with prepaid annual credits"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Large volumes, deployment or support needs"
+    }
+   ],
+   "notes": [
+    "Speech-to-text, per minute (pay as you go): Nova-3 monolingual $0.0043 pre-recorded / $0.0048 streaming; Nova-3 multilingual $0.0052 / $0.0058; Flux streaming $0.0065 English / $0.0078 multilingual.",
+    "Text-to-speech: Aura-2 $0.030 and Aura-1 $0.0150 per 1,000 characters.",
+    "Voice Agent API (Standard): $0.075 per minute of connection time.",
+    "Streaming rates are labelled limited-time promotional rates."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other speech AI providers. Descriptions come from each company's own site; check their pricing pages for current rates.",
+   "items": [
+    {
+     "name": "AssemblyAI",
+     "url": "https://www.assemblyai.com/",
+     "what": "Speech AI models to transcribe and understand speech",
+     "starts_at": "See its pricing page",
+     "difference": "Focused on speech-to-text and speech understanding."
+    },
+    {
+     "name": "ElevenLabs",
+     "url": "https://elevenlabs.io/",
+     "what": "AI voice generator and voice agents platform with 5,000+ voices in 90+ languages",
+     "starts_at": "See its pricing page",
+     "difference": "Best known for voice generation and cloning; also offers agents."
+    },
+    {
+     "name": "Speechmatics",
+     "url": "https://www.speechmatics.com/",
+     "what": "Speech-to-text APIs for real conversations with accents, multiple speakers and multilingual speech",
+     "starts_at": "See its pricing page",
+     "difference": "Emphasises accent and multilingual accuracy."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Deepgram do?",
+    "a": "It provides APIs for speech-to-text, text-to-speech and complete voice agents, usable in the cloud or self-hosted."
+   },
+   {
+    "q": "How much does Deepgram cost?",
+    "a": "You get $200 of free credit, then pay as you go: for example $0.0043 a minute for Nova-3 transcription of recordings and $0.075 a minute for the Voice Agent API."
+   },
+   {
+    "q": "How much has Deepgram raised?",
+    "a": "It announced a $130 million Series C at a $1.3 billion valuation on 13 January 2026, led by AVP."
+   },
+   {
+    "q": "Can Deepgram be self-hosted?",
+    "a": "Yes. Deepgram says its models run in the cloud or self-hosted, in real time or batch."
+   },
+   {
+    "q": "Who runs Deepgram?",
+    "a": "Scott Stephenson is co-founder and CEO."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Deepgram official site",
+    "url": "https://deepgram.com/"
+   },
+   {
+    "label": "Deepgram pricing",
+    "url": "https://deepgram.com/pricing"
+   },
+   {
+    "label": "Deepgram press release, 13 Jan 2026: $130M Series C",
+    "url": "https://deepgram.com/learn/press-release-deepgram-raises-series-c"
+   },
+   {
+    "label": "TechCrunch, 13 Jan 2026: Deepgram raises $130M at $1.3B valuation",
+    "url": "https://techcrunch.com/2026/01/13/deepgram-raises-130m-at-1-3b-valuation-and-buys-a-yc-ai-startup/"
+   },
+   {
+    "label": "AssemblyAI",
+    "url": "https://www.assemblyai.com/"
+   },
+   {
+    "label": "ElevenLabs",
+    "url": "https://elevenlabs.io/"
+   },
+   {
+    "label": "Speechmatics",
+    "url": "https://www.speechmatics.com/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}
