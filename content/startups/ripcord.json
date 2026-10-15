@@ -1,0 +1,78 @@
+{
+ "slug": "ripcord",
+ "website": "https://www.ripcord.com/",
+ "excerpt": "Ripcord uses document-scanning robots and AI to turn paper records into searchable, structured data. History, funding, the VASTEC merger, use cases and alternatives.",
+ "content": "<p>Ripcord is a San Francisco company that digitises paper documents with robots and then extracts the data in them with AI. Its home page describes proprietary digitisation robotics that convert paper to digital files while keeping chain of custody, followed by AI that classifies documents and extracts, validates and enriches their data. The results are delivered through Canopy, its cloud content platform, or into a customer's existing systems. Ripcord's about page says the company was born at NASA research, and lists solutions for accounts receivable, energy, financial services, food and beverage, HR, insurance, manufacturing, the public sector and real estate.</p><p>Customers named on Ripcord's site include Coca-Cola bottlers, BP, UCLA, Waste Connections, MUFG Bank, Agilent, Daiwa Living and the US Internal Revenue Service. In 2022 Ripcord said it had advanced to phase two of an IRS pilot to digitise archived Form 709 gift-tax filings. Its case studies quote customer results, such as MUFG scanning 300 million pages; these are the company's own figures.</p><p>The company is venture-backed. On 16 April 2024 it announced $32 million in new funding from existing investors including Kleiner Perkins, GV (Google Ventures), Icon Ventures and Lux Capital, with Fujifilm Business Innovation, its joint-venture partner in Japan, taking equity. Ripcord said revenue grew 72% in 2023 and more than 95% in 2022, and that its generative-AI document platform, Docufai, entered beta in November 2023. In January 2025 it merged with VASTEC, a records digitisation and management provider with 18 years in government and enterprise work, to form Ripcord / VASTEC under CEO Sam Fahmy. Co-founder Kevin Hall is chief technology officer, and the advisers listed on the site include Apple co-founder Steve Wozniak.</p><p>Ripcord does not publish prices; projects are quoted after contacting the company.</p><p><em>This page is research, not a review. We have not used Ripcord; facts come from the company's own pages and press releases listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Robotic document digitisation and AI data extraction",
+  "platform": "Digitisation service plus Canopy cloud platform",
+  "starts_at": "Not published; quoted per project",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Robots scan paper records and AI turns them into structured, searchable data",
+  "maker": {"name": "Ripcord, Inc.", "url": "https://www.ripcord.com/"},
+  "team": [
+   {"name": "Sam Fahmy", "role": "President and CEO"},
+   {"name": "Kevin Hall", "role": "Co-founder and CTO"},
+   {"name": "Alex Fielding", "role": "Co-founder; board member"}
+  ],
+  "gallery": [
+   {"url": "https://www.ripcord.com/hubfs/Press%20Releases/Ripcord%20Standard%20PR%20Image%20(Large).png", "w": 3840, "h": 2160, "alt": "Ripcord logo, a dark and light teal parachute-like arc above the word RIPCORD, on a teal gradient", "credit": "Image: Ripcord (ripcord.com)"},
+   {"url": "https://blog.ripcord.com/hs-fs/hubfs/Press%20Releases/Press%20Release%20-%20Ripcord%20Closes%20$32M%20in%20New%20Funding%2c%20Fueling%20Next%20Phase%20of%20Growth%20and%20Innovation.jpg", "w": 3840, "h": 2160, "alt": "Ripcord announcement graphic on black reading $32 Million, new funding set to fuel growth and innovation in document robotics and AI", "credit": "Image: Ripcord (blog.ripcord.com)"}
+  ],
+  "use_cases": [
+   "Digitising large paper archives such as HR, insurance or tax files",
+   "Extracting structured data from invoices, contracts and forms",
+   "Making historical engineering or land records searchable",
+   "Moving records into a cloud content platform with chain of custody",
+   "Public-sector records digitisation"
+  ],
+  "audience": {
+   "fit": [
+    "enterprises and agencies with millions of pages of paper records",
+    "regulated industries that need chain of custody for documents",
+    "operations teams that want data, not just scanned images"
+   ],
+   "not_fit": [
+    "small offices with a few boxes of paper, where a desktop scanner may do",
+    "buyers who want an instant online price"
+   ]
+  },
+  "pricing": {
+   "intro": "Ripcord does not publish prices. Projects are scoped and quoted after contacting the company.",
+   "plans": [{"name": "Digitisation and Canopy platform", "price": "Not published", "detail": "Quoted per project"}],
+   "url": "https://www.ripcord.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Combines physical scanning robots with AI data extraction",
+   "Large enterprise and government references",
+   "Backed by Kleiner Perkins, GV and Lux Capital"
+  ],
+  "cons": [
+   "No public pricing",
+   "Results figures come from the company's own case studies"
+  ],
+  "alternatives": {
+   "intro": "Other ways to digitise documents and extract their data.",
+   "items": [
+    {"name": "Iron Mountain", "url": "https://www.ironmountain.com/", "what": "Records storage, scanning and information management", "difference": "Large incumbent that also stores physical records."},
+    {"name": "ABBYY", "url": "https://www.abbyy.com/", "what": "OCR and intelligent document processing software", "difference": "Software only; you supply the scanning."},
+    {"name": "Hyperscience", "url": "https://www.hyperscience.com/", "what": "AI document processing platform", "difference": "Focuses on automating data extraction from digital documents."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Ripcord do?", "a": "It uses robots to scan paper documents and AI to classify them and extract their data, delivered through its Canopy platform or into your systems."},
+   {"q": "Who runs Ripcord?", "a": "Sam Fahmy is president and CEO. Kevin Hall is co-founder and CTO."},
+   {"q": "How much funding has Ripcord raised recently?", "a": "It announced $32 million in new funding in April 2024 from investors including Kleiner Perkins, GV, Icon Ventures and Lux Capital."},
+   {"q": "Did Ripcord merge with another company?", "a": "Yes. It merged with VASTEC in January 2025 to form Ripcord / VASTEC."}
+  ],
+  "sources": [
+   {"label": "Ripcord: homepage", "url": "https://www.ripcord.com/"},
+   {"label": "Ripcord: about", "url": "https://www.ripcord.com/about"},
+   {"label": "Ripcord: closes $32M in new funding (April 2024)", "url": "https://blog.ripcord.com/resources/ripcord-closes-32m-in-new-funding-fueling-next-phase-of-growth-and-innovation"},
+   {"label": "Ripcord: Ripcord and VASTEC merge (January 2025)", "url": "https://blog.ripcord.com/resources/ripcord-and-vastec-merge-to-scale-advanced-ai-powered-robotic-document-digitization-and-records-management-solutions"},
+   {"label": "Ripcord: IRS taps Ripcord to digitise archived tax filings (2022)", "url": "https://blog.ripcord.com/resources/irs-taps-ripcord-to-digitize-archived-tax-filings-in-tech-pilot-program"}
+  ]
+ }
+}

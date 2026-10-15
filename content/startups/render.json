@@ -1,0 +1,78 @@
+{
+ "slug": "render",
+ "website": "https://render.com/",
+ "excerpt": "Render is a San Francisco cloud platform for deploying web apps, APIs, background workers, databases and static sites without managing servers. Free tier, funding and alternatives.",
+ "content": "<p>Render is a cloud application platform: developers connect a Git repository and Render builds and runs their code, handling servers, scaling, TLS certificates and deploys. It hosts web services, private services, background workers, cron jobs, static sites, managed PostgreSQL databases and a Redis-compatible key-value store. Its pitch, as SDxCentral summarised it, is to be a simpler and cheaper alternative to the big hyperscale clouds, and it says it is attracting workloads moving from AWS, Google Cloud and Azure.</p><p>Render's about page names Anurag Goel as founder and CEO, says the company is based in San Francisco with a remote team around the world, and puts total funding at $258 million. In January 2025 Render announced an $80 million Series C led by Georgian, with 01A and avra joining existing investors including Addition, Bessemer Venture Partners, General Catalyst and the South Park Commons Fund. At the time it said more than 2 million developers used the platform and more than 100,000 new developers joined each month, and that the money would go to enterprise features, AI-native compute infrastructure and global expansion.</p><p>Render has a free tier. According to its documentation, free web services spin down after 15 minutes without traffic and take about a minute to wake up; each workspace gets 750 free instance hours a month; and a free PostgreSQL database is capped at 1 GB and expires after 30 days unless upgraded. Paid instances are billed by the second according to instance size, with workspace plans that add team features. The pricing page also lists persistent disks at $0.25 per GB and 500 included build minutes a month before extra charges. Teams moving production infrastructure can apply for up to $10,000 in migration credits.</p><p><em>This page is research, not a review. We have not run production workloads on Render; facts come from its pages and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Cloud application hosting (platform as a service)",
+  "platform": "Web dashboard, Git-based deploys, CLI and API",
+  "starts_at": "Free tier; paid instances billed per second",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Deploy web apps, APIs, workers and Postgres from Git without managing servers",
+  "maker": {"name": "Render Services, Inc.", "url": "https://render.com/"},
+  "team": [{"name": "Anurag Goel", "role": "Founder and CEO"}],
+  "gallery": [
+   {"url": "https://cdn.sanity.io/images/hvk0tap5/production/a3528e77b010804af14908fab79f826d66437620-1600x900.png?fit=max&auto=format", "w": 1600, "h": 900, "alt": "Render banner on black reading Your fastest path to production, with purple and green glowing blocks on a grid", "credit": "Image: Render (render.com)"}
+  ],
+  "use_cases": [
+   "Deploying a web app or API straight from GitHub or GitLab",
+   "Running background workers and cron jobs",
+   "Hosting managed PostgreSQL and key-value stores",
+   "Serving static sites",
+   "Moving workloads off AWS, Google Cloud or Azure to a simpler platform"
+  ],
+  "audience": {
+   "fit": [
+    "startups and small teams that want Heroku-style simplicity",
+    "developers who want a free tier for hobby projects and prototypes",
+    "teams leaving hyperscale clouds to reduce operations work"
+   ],
+   "not_fit": [
+    "workloads needing specialised hyperscaler services or regions Render lacks",
+    "production apps that cannot tolerate free-tier spin-down (use a paid instance)"
+   ]
+  },
+  "pricing": {
+   "intro": "From Render's pricing page and free-tier documentation, checked 15 October 2026.",
+   "plans": [
+    {"name": "Free instances", "price": "$0/month", "detail": "750 instance hours a month; web services sleep after 15 minutes idle; free Postgres expires after 30 days"},
+    {"name": "Paid instances", "price": "Billed per second by instance size", "detail": "See render.com/pricing for current rates"},
+    {"name": "Persistent disks", "price": "$0.25 per GB", "detail": "Per month"}
+   ],
+   "notes": ["500 build minutes a month are included before extra charges.", "Up to $10,000 in migration credits for teams moving production infrastructure."],
+   "url": "https://render.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Simple Git-based deploys with managed infrastructure",
+   "Free tier for experiments",
+   "Large developer community: 2 million+ developers by early 2025"
+  ],
+  "cons": [
+   "Free services sleep and free databases expire",
+   "Fewer managed services than the big clouds"
+  ],
+  "alternatives": {
+   "intro": "Other developer-friendly hosting platforms.",
+   "items": [
+    {"name": "Heroku", "url": "https://www.heroku.com/", "what": "Salesforce's long-running platform as a service", "difference": "The original Git-push hosting platform."},
+    {"name": "Railway", "url": "https://railway.com/", "what": "Usage-billed app and database hosting", "difference": "Bills on resource usage with a visual project canvas."},
+    {"name": "Fly.io", "url": "https://fly.io/", "what": "Runs apps in micro-VMs close to users worldwide", "difference": "Focus on multi-region deployment."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Render free?", "a": "There is a free tier with 750 instance hours a month. Free web services sleep after 15 minutes idle and free Postgres databases expire after 30 days."},
+   {"q": "Who founded Render?", "a": "Anurag Goel, who is founder and CEO."},
+   {"q": "How much has Render raised?", "a": "Its about page says $258 million in total. It announced an $80 million Series C led by Georgian in January 2025."},
+   {"q": "Is Render an alternative to Heroku?", "a": "Yes. It offers similar Git-based deploys for web apps, workers and databases."}
+  ],
+  "sources": [
+   {"label": "Render: about", "url": "https://render.com/about"},
+   {"label": "Render: pricing", "url": "https://render.com/pricing"},
+   {"label": "Render docs: free instances", "url": "https://render.com/docs/free"},
+   {"label": "SDxCentral: Render secures $80M Series C (Jan 2025)", "url": "https://www.sdxcentral.com/news/render-secures-80m-series-c-funding-to-enhance-cloud-platform/"},
+   {"label": "Georgian: Why Georgian invested in Render", "url": "https://georgian.io/posts/why-georgian-invested-in-render"}
+  ]
+ }
+}

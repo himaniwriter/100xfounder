@@ -1,0 +1,72 @@
+{
+ "slug": "quell-tech",
+ "website": "https://playquell.com/",
+ "excerpt": "Quell was a London fitness-gaming startup whose wearable resistance-band controller turned workouts into the fantasy fighting game Shardfall. Funding, product and current status.",
+ "content": "<p>Quell was a London company that tried to turn home exercise into a video game. Players strapped on a harness with resistance bands attached to hand-held controllers, then punched, blocked and dodged to fight their way through a fantasy game called Shardfall on a PC, Mac or mobile screen. TechCrunch reported in 2020 that built-in sensors measured punch speed and accuracy and that the bands could be swapped to make the workout harder. The device was later marketed as Quell Impact.</p><p>The company was co-founded by Cameron Brookhouse, its CEO, and Doug Stidolph. Its 2020 Kickstarter raised £501,341, about $670,000, from nearly 3,000 backers. In December 2020 it raised a $3 million seed round from investors including Tencent, Khosla Ventures, Heartcore, Twitch co-founders Kevin Lin and Emmett Shear, and Naval Ravikant, TechCrunch reported, and said it planned to ship its first hardware by the end of 2021. In February 2023 it raised a $10 million Series A led by Tencent, bringing total funding to $15.6 million, according to Tech.eu, which also reported 10,000 pre-orders. TechCrunch put the pre-order price at $249, with shipping planned for 2023.</p><p><strong>Current status:</strong> when we checked in October 2026, the original quell.tech address no longer resolved, and the later product site, playquell.com, redirected to an unrelated betting website, which suggests the domain has lapsed. We found no official announcement about the company's status, so treat Quell's products and services as unavailable unless the company says otherwise. Backers and owners should check the Kickstarter page's updates for official news.</p><p><em>This page is research, not a review. We have not used Quell; facts come from the reporting listed under Sources and the company's archived website.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Fitness gaming hardware",
+  "platform": "Wearable resistance-band controller for PC, Mac and mobile",
+  "starts_at": "$249 pre-order price (2023); no longer sold at its website",
+  "schema_category": "GameApplication",
+  "summary_short": "Resistance-band fitness controller and fighting game Shardfall; website no longer active",
+  "maker": {"name": "Quell", "url": "https://playquell.com/"},
+  "team": [
+   {"name": "Cameron Brookhouse", "role": "Co-founder and CEO"},
+   {"name": "Doug Stidolph", "role": "Co-founder"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.shopify.com/s/files/1/0591/7225/7979/files/Quell_fitness_gaming.png?width=1600", "w": 1600, "h": 900, "alt": "Three people exercising with Quell's resistance-band harness and hand controllers: punching, lunging and jumping at home", "credit": "Image: Quell (playquell.com store assets)"},
+   {"url": "https://cdn.shopify.com/s/files/1/0591/7225/7979/files/Shardfall_fitness_gaming_mixed_reality_gaming.png?width=1600", "w": 1024, "h": 768, "alt": "A woman wearing Quell's harness punches toward a green spiky creature from the game Shardfall in a glowing fantasy forest", "credit": "Image: Quell (playquell.com store assets)"}
+  ],
+  "use_cases": [
+   "Resistance-band cardio and strength workouts at home",
+   "Playing the fitness fighting game Shardfall",
+   "Tracking punch speed and accuracy"
+  ],
+  "audience": {
+   "fit": [
+    "readers researching fitness-gaming startups",
+    "existing Quell owners and Kickstarter backers looking for its history"
+   ],
+   "not_fit": [
+    "anyone hoping to buy Quell today: its websites are no longer active"
+   ]
+  },
+  "pricing": {
+   "intro": "TechCrunch reported a $249 pre-order price in February 2023. The product is not offered at Quell's websites today.",
+   "plans": [{"name": "Quell controller and Shardfall (2023 pre-order)", "price": "$249", "amount": 249, "currency": "USD", "detail": "Historical pre-order price"}],
+   "notes": ["Historical price from press reports, not a current offer."],
+   "url": "https://techcrunch.com/2023/02/20/quells-gamified-home-fitness-tech-drums-up-10m",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Combined real resistance training with a full game",
+   "Strong early demand: Kickstarter and 10,000 pre-orders"
+  ],
+  "cons": [
+   "Websites no longer active",
+   "Long gap between the 2020 Kickstarter and planned shipping"
+  ],
+  "alternatives": {
+   "intro": "Active ways to make home workouts game-like.",
+   "items": [
+    {"name": "Ring Fit Adventure", "url": "https://www.nintendo.com/us/store/products/ring-fit-adventure-switch/", "what": "Nintendo Switch fitness adventure game with a resistance ring", "difference": "Widely available on a mainstream console."},
+    {"name": "Supernatural", "url": "https://www.getsupernatural.com/", "what": "VR fitness workouts on Meta Quest", "difference": "Subscription VR workouts with coaches."},
+    {"name": "FitXR", "url": "https://fitxr.com/", "what": "VR boxing, dance and HIIT classes", "difference": "Group-style VR fitness classes."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Quell still available?", "a": "Its websites were not active when we checked in October 2026: quell.tech did not resolve and playquell.com redirected to an unrelated site. We found no official statement."},
+   {"q": "What was Quell?", "a": "A wearable harness with resistance bands and hand controllers that let you play the fantasy fighting game Shardfall by exercising."},
+   {"q": "How much did Quell raise?", "a": "$15.6 million in total, including a $10 million Series A led by Tencent in February 2023, according to Tech.eu."},
+   {"q": "Who founded Quell?", "a": "Cameron Brookhouse (CEO) and Doug Stidolph."}
+  ],
+  "sources": [
+   {"label": "TechCrunch: Quell raises $3M (Dec 2020)", "url": "https://techcrunch.com/2020/12/07/quell-raises-3m-to-turn-home-fitness-into-a-game"},
+   {"label": "TechCrunch: Quell's gamified home fitness tech drums up $10M (Feb 2023)", "url": "https://techcrunch.com/2023/02/20/quells-gamified-home-fitness-tech-drums-up-10m"},
+   {"label": "Tech.eu: Tencent leads Quell's $10 million Series A", "url": "https://tech.eu/2023/02/20/quell-soothes-tencents/"},
+   {"label": "Internet Archive: playquell.com, January 2024", "url": "https://web.archive.org/web/20240101211326/https://playquell.com/"}
+  ]
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "slug": "power2sme",
+ "website": "https://www.power2sme.com/",
+ "excerpt": "Power2SME is a Gurugram B2B platform that pools raw-material demand from small manufacturers to buy steel, polymers, yarn and chemicals in bulk, with working-capital finance. History, funding and alternatives.",
+ "content": "<p>Power2SME is an Indian business-to-business platform that calls itself a buying club for small and medium enterprises. Small manufacturers usually buy raw materials in small lots through wholesalers and distributors, paying more than large companies. Power2SME aggregates demand from many SMEs and places bulk orders directly with manufacturers and suppliers, so members get closer to bulk prices. Inc42 described the model in 2017, and FinTech Global listed the materials sold through the platform as steel, polymers, yarns and chemicals. Its current website still carries the line India's First Buying Club for SMEs, with banners for textiles and yarn.</p><p>Finance is the other half of the business. Power2SME arranges working capital for members from banks and non-bank lenders to pay for materials bought on the platform. MediaNama reported in 2017 that the company ran three platforms: Power2SME for procurement, FinanSME for connecting SMEs with lenders, and SMEShops for industrial consumables.</p><p>The company is based in Gurugram and was founded in 2012 by R Narayan, its CEO, according to Inc42. Its investors include Inventus Capital Partners, Kalaari Capital, Accel and Infosys co-founder Nandan Nilekani. In September 2017 the International Finance Corporation, the World Bank Group's private-sector arm, invested $10 million, and weeks later Power2SME closed a $36 million Series E with IFC and its existing investors. FinTech Global put total funding at about $70 million after that round. At the time the company said it had more than 50,000 registered SMEs, operated in 14 states, was growing 2.6 times a year and had been profitable since November 2016.</p><p>Power2SME does not publish a price list. Material prices depend on the commodity and order, and are quoted on the platform.</p><p><em>This page is research, not a review. We have not bought through Power2SME; most of the reporting we found dates from 2017, so check the company for current details.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "B2B raw-material procurement and SME finance",
+  "platform": "Web platform with sales support (India)",
+  "starts_at": "Prices quoted per order",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Buying club that gets Indian SMEs bulk prices on raw materials, plus working capital",
+  "maker": {"name": "Power2SME", "url": "https://www.power2sme.com/"},
+  "team": [{"name": "R Narayan", "role": "Founder and CEO"}],
+  "gallery": [
+   {"url": "https://p2swebsite.s3.ap-southeast-1.amazonaws.com/images/mailerImages/marketing/textile_banner.jpg", "w": 1290, "h": 320, "alt": "Rolls of colourful fabric on shelves with a banner reading Buy textile at never before prices", "credit": "Image: Power2SME (power2sme.com)"},
+   {"url": "https://p2swebsite.s3.ap-southeast-1.amazonaws.com/images/mailerImages/marketing/yarn_banner.jpg", "w": 1290, "h": 320, "alt": "Spools of yarn in many colours with a banner reading Buy yarn at never before prices", "credit": "Image: Power2SME (power2sme.com)"}
+  ],
+  "use_cases": [
+   "Buying steel, polymers, yarn and chemicals at pooled bulk prices",
+   "Getting working capital from partner banks and NBFCs for raw-material purchases",
+   "Sourcing industrial consumables",
+   "Reducing dependence on local distributors"
+  ],
+  "audience": {
+   "fit": [
+    "small and medium manufacturers in India buying raw materials regularly",
+    "SMEs that need credit to fund material purchases",
+    "businesses in industrial hubs such as Gujarat, Maharashtra, Tamil Nadu and Delhi-NCR"
+   ],
+   "not_fit": [
+    "businesses outside India",
+    "very large buyers that already negotiate directly with mills"
+   ]
+  },
+  "pricing": {
+   "intro": "Power2SME does not publish a price list. Material prices depend on commodity, grade and order size, and financing terms depend on the lender.",
+   "plans": [{"name": "Raw-material orders", "price": "Quoted per order", "detail": "Bulk-pooled pricing"}],
+   "url": "https://www.power2sme.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Pooled buying gives small firms closer-to-bulk prices",
+   "Combines procurement with credit",
+   "Backed by IFC, Accel, Kalaari and Inventus"
+  ],
+  "cons": [
+   "No public pricing",
+   "Little recent public reporting on the company"
+  ],
+  "alternatives": {
+   "intro": "Other Indian B2B platforms for raw materials and SME procurement.",
+   "items": [
+    {"name": "OfBusiness", "url": "https://www.ofbusiness.com/", "what": "Raw-material procurement and credit for SMEs", "difference": "Large tech-led commerce and lending group."},
+    {"name": "Zetwerk", "url": "https://www.zetwerk.com/", "what": "Manufacturing and supply chain network", "difference": "Focuses on contract manufacturing."},
+    {"name": "Udaan", "url": "https://udaan.com/", "what": "B2B e-commerce for retailers and small businesses", "difference": "Broader trade marketplace rather than industrial inputs."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Power2SME?", "a": "A Gurugram-based B2B platform that pools SMEs' raw-material demand to buy in bulk and arranges working capital for those purchases."},
+   {"q": "Who founded Power2SME?", "a": "R Narayan founded it in 2012 and is CEO, according to Inc42."},
+   {"q": "How much funding has Power2SME raised?", "a": "About $70 million by 2017, including a $36 million Series E with IFC, according to FinTech Global."},
+   {"q": "What materials can you buy?", "a": "Reported categories include steel, polymers, yarns and chemicals, plus textiles and industrial consumables."}
+  ],
+  "sources": [
+   {"label": "Inc42: IFC invests in Power2SME (Sept 2017)", "url": "https://inc42.com/buzz/power2sme-ifc-sme/"},
+   {"label": "FinTech Global: Power2SME closes $36m Series E (Sept 2017)", "url": "https://fintech.global/2017/09/19/power2sme-closes-36m-series-e-funding-round/"},
+   {"label": "MediaNama: Power2SME funding (Sept 2017)", "url": "https://www.medianama.com/2017/09/223-power2sme-funding/"},
+   {"label": "Power2SME: official site", "url": "https://www.power2sme.com/"}
+  ]
+ }
+}
