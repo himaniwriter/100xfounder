@@ -1,0 +1,146 @@
+{
+ "slug": "watershed",
+ "website": "https://watershed.com/",
+ "excerpt": "Watershed is enterprise sustainability software for measuring emissions, filing climate disclosures and cutting carbon. Founded in San Francisco in 2019, it raised a $100M Series C at a $1.8B valuation in 2024.",
+ "content": "<p>Watershed is a software platform that helps large companies measure their greenhouse gas emissions, report them to regulators and investors, and reduce them. It pulls in a company's operational and supply-chain data, converts it into emissions figures using its own climate database, and produces audit-ready reports for frameworks such as corporate climate disclosure rules. It also offers tools for engaging suppliers and a marketplace for buying carbon removal and clean power. Its website now describes it as an enterprise sustainability AI platform.</p><p>Watershed was founded in 2019 and is based in San Francisco, according to ESG Today. Taylor Francis is a co-founder. In February 2024 the company announced a $100 million Series C led by Greenoaks, with Kleiner Perkins, Sequoia Capital, Elad Gil, Emerson Collective, Galvanize Climate Solutions and Neo among the existing investors taking part. The round valued Watershed at $1.8 billion, which ESG Today said would make it the most valuable climate software company in the world. Its previous round was a $70 million Series B in 2022. The company said it would use the money for emissions measurement, reporting and decarbonisation products and to expand in the UK and Europe.</p><p>ESG Today listed General Mills, Suncorp, Medline, BBVA, Paramount, Spotify and Klarna among its customers, along with four of the six largest US banks. Watershed also acquired CEDA, a greenhouse gas emissions database, and works with partners including KPMG, Accenture and ERM.</p><p>Watershed sells to enterprises through demos; it does not publish a price list. This profile is drawn from Watershed's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Carbon accounting and sustainability reporting",
+  "platform": "Web",
+  "starts_at": "Demo and quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Enterprise platform to measure emissions, file climate disclosures and decarbonise",
+  "maker": {
+   "name": "Watershed",
+   "url": "https://watershed.com/about-us"
+  },
+  "team": [
+   {
+    "name": "Taylor Francis",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/3ogo9b9g/production/585df129172025fc52864431eeddb9eb5fb2d645-1200x630.png",
+    "alt": "Watershed logo, a blue globe mark beside the word Watershed, on a cream background with soft blue and peach corners",
+    "credit": "Image: Watershed",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Measuring scope 1, 2 and 3 greenhouse gas emissions across operations and suppliers",
+   "Preparing audit-ready climate disclosures for regulators and investors",
+   "Engaging suppliers to collect their emissions data",
+   "Buying carbon removal and clean power through its marketplace",
+   "Planning and tracking a decarbonisation programme"
+  ],
+  "audience": {
+   "fit": [
+    "lead sustainability or finance at a large company facing mandatory climate disclosure",
+    "need supplier (scope 3) emissions, not just your own",
+    "want measurement, reporting and reduction in one system"
+   ],
+   "not_fit": [
+    "are a small business that needs a simple, self-serve carbon calculator",
+    "want a published price before booking a demo"
+   ]
+  },
+  "pricing": {
+   "intro": "Watershed does not publish pricing on its website. You book a demo and get a quote.",
+   "plans": [
+    {
+     "name": "Watershed platform",
+     "price": "Quote on request",
+     "detail": "Measurement, reporting, supplier engagement and decarbonisation tools"
+    }
+   ],
+   "notes": [
+    "No public pricing page existed when we checked."
+   ],
+   "url": "https://watershed.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Covers measurement, disclosure and reduction in one platform",
+   "Large enterprise customer base, including major banks",
+   "Owns the CEDA emissions database"
+  ],
+  "cons": [
+   "No published pricing",
+   "Built for enterprises rather than small businesses"
+  ],
+  "alternatives": {
+   "intro": "Other carbon accounting and sustainability reporting platforms. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Persefoni",
+     "url": "https://www.persefoni.com/",
+     "what": "Carbon accounting and climate disclosure software",
+     "tags": [
+      "Carbon accounting"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "A like-for-like rival in enterprise carbon accounting and disclosure."
+    },
+    {
+     "name": "Sweep",
+     "url": "https://www.sweep.net/",
+     "what": "Carbon and ESG data management platform",
+     "tags": [
+      "ESG reporting"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Positions itself around ESG and EU sustainability reporting as well as carbon."
+    },
+    {
+     "name": "Microsoft Sustainability Manager",
+     "url": "https://www.microsoft.com/en-us/sustainability/cloud",
+     "what": "Emissions tracking within Microsoft Cloud for Sustainability",
+     "tags": [
+      "ESG reporting"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Fits companies already standardised on Microsoft's cloud."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Watershed do?",
+    "a": "It helps companies measure their greenhouse gas emissions, prepare climate disclosures and plan reductions, using its own emissions database and software."
+   },
+   {
+    "q": "How much is Watershed valued at?",
+    "a": "$1.8 billion, after its $100 million Series C led by Greenoaks in February 2024, according to ESG Today."
+   },
+   {
+    "q": "Who uses Watershed?",
+    "a": "ESG Today listed customers including General Mills, BBVA, Paramount, Spotify and Klarna, and four of the six largest US banks."
+   },
+   {
+    "q": "How much does Watershed cost?",
+    "a": "It does not publish prices; you request a demo and quote."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Watershed website",
+    "url": "https://watershed.com/"
+   },
+   {
+    "label": "Watershed: About us",
+    "url": "https://watershed.com/about-us"
+   },
+   {
+    "label": "ESG Today: Corporate climate platform Watershed raises $100 million (1 Feb 2024)",
+    "url": "https://www.esgtoday.com/corporate-climate-platform-watershed-raises-100-million/"
+   },
+   {
+    "label": "Verdantix: Watershed raises $100 million in Series C funding",
+    "url": "https://www.verdantix.com/client-portal/blog/carbon-management-software-vendor-watershed-raises-100-million-dollars-in-series-c-funding"
+   }
+  ]
+ }
+}

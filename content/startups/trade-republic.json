@@ -1,0 +1,157 @@
+{
+ "slug": "trade-republic",
+ "website": "https://traderepublic.com/",
+ "excerpt": "Trade Republic is a Berlin-based licensed bank and broker app for investing, saving and card spending across Europe. Valued at €12.5B in a December 2025 secondary share sale.",
+ "content": "<p>Trade Republic is a European investing and banking app from Berlin. Its tagline is \"Invest, spend and bank\": customers invest in listed assets, hold cash that earns interest and spend with a Trade Republic card. The homepage advertises investing from €1, interest on cash (2.5% a year when we checked) and a card with no subscription fee that earns 1% \"Saveback\". The company operates as Trade Republic Bank GmbH, headquartered at Brunnenstraße in Berlin.</p><p>Its fee details are published in the app and in a pricing overview on its website, which opens from the homepage.</p><p>In December 2025 Trade Republic confirmed a secondary share sale of about €1.2 billion that valued it at €12.5 billion, according to Tech.eu and FinTech Futures. Existing investors including Founders Fund, Sequoia, Accel, TCV and Thrive Capital bought shares, and new investors including Wellington, Fidelity, Khosla Ventures and GIC joined. The deal raised no new money for the company; it gave early shareholders a way to sell. FinTech Futures reported that Trade Republic was last valued at about €5 billion after a €250 million Series C extension led by Ontario Teachers' Pension Plan in June 2022, and that the company says it has been profitable for three years and has more than 10 million customers with around €150 billion in assets.</p><p>Investing involves risk: the value of investments can fall as well as rise, and interest rates on cash change. This profile is not investment advice. It draws on Trade Republic's own site and published reporting. We have not tested the app, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Investing and banking app",
+  "platform": "iOS, Android and web",
+  "starts_at": "Invest from €1; card with no subscription fee",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Berlin bank and broker app for investing, savings plans, cash interest and card spending",
+  "maker": {
+   "name": "Trade Republic Bank GmbH",
+   "url": "https://traderepublic.com/en-de/about"
+  },
+  "team": [],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Trade_Republic_corporate_headquarter_in_Berlin.jpg/1280px-Trade_Republic_corporate_headquarter_in_Berlin.jpg",
+    "alt": "Trade Republic's headquarters in Berlin: a large corner building with a green domed turret, with cyclists and cars on the street in front",
+    "credit": "Photo: Lear 21, CC BY 4.0, via Wikimedia Commons",
+    "w": 1280,
+    "h": 1027
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/20260717_144601_Trade_Republic_card_%28cropped%29.jpg/1280px-20260717_144601_Trade_Republic_card_%28cropped%29.jpg",
+    "alt": "A silver mirrored Trade Republic payment card lying on the brown Deutsche Post envelope it arrived in",
+    "credit": "Photo: WrS.tm.pl, public domain, via Wikimedia Commons",
+    "w": 1280,
+    "h": 960
+   }
+  ],
+  "use_cases": [
+   "Investing small amounts, starting from €1",
+   "Holding cash that earns interest",
+   "Spending with a card that earns 1% Saveback",
+   "Keeping investing, saving and spending in one app"
+  ],
+  "audience": {
+   "fit": [
+    "live in a European country Trade Republic serves",
+    "want to start investing with small amounts",
+    "prefer one app for investing, cash and card spending"
+   ],
+   "not_fit": [
+    "live outside Trade Republic's European markets",
+    "want personal investment advice from your provider"
+   ]
+  },
+  "pricing": {
+   "intro": "Trade Republic's homepage advertises investing from €1, 2.5% a year interest on cash and a card with no subscription that pays 1% Saveback. Its full fee schedule opens in a pricing overview on the website and in the app; we could not load it as a page, so we do not quote per-trade fees here.",
+   "plans": [
+    {
+     "name": "Account and card",
+     "price": "No subscription fee for the card",
+     "detail": "1% Saveback on card spending, per the homepage"
+    },
+    {
+     "name": "Cash",
+     "price": "2.5% a year interest (when checked)",
+     "detail": "Rate set by Trade Republic and subject to change"
+    },
+    {
+     "name": "Investing",
+     "price": "From €1",
+     "detail": "Order fees listed in the official pricing overview"
+    }
+   ],
+   "notes": [
+    "Interest rates and fees change; check traderepublic.com before opening an account."
+   ],
+   "url": "https://traderepublic.com/en-de",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Low entry point: invest from €1",
+   "Investing, cash interest and card spending in one app",
+   "Profitable, according to the company"
+  ],
+  "cons": [
+   "Per-trade fees are not shown on the homepage itself",
+   "Cash interest rate can change"
+  ],
+  "alternatives": {
+   "intro": "Other low-cost European investing apps. We have not compared fees.",
+   "items": [
+    {
+     "name": "Scalable Capital",
+     "url": "https://de.scalable.capital/",
+     "what": "German broker with savings plans and a flat-rate trading subscription",
+     "tags": [
+      "Broker"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Offers a subscription plan for frequent traders."
+    },
+    {
+     "name": "Trading 212",
+     "url": "https://www.trading212.com/",
+     "what": "Commission-free investing app",
+     "tags": [
+      "Broker"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "UK- and EU-regulated broker with pies for automated investing."
+    },
+    {
+     "name": "Revolut",
+     "url": "https://www.revolut.com/",
+     "what": "Banking app with stock and crypto trading",
+     "tags": [
+      "Neobank"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Banking-first app where investing is one feature among many."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who runs Trade Republic?",
+    "a": "Trade Republic Bank GmbH, headquartered at Brunnenstraße 19-21 in Berlin, according to its website."
+   },
+   {
+    "q": "How much is Trade Republic worth?",
+    "a": "€12.5 billion, based on a roughly €1.2 billion secondary share sale confirmed in December 2025, according to Tech.eu and FinTech Futures. No new money went to the company."
+   },
+   {
+    "q": "How many customers does Trade Republic have?",
+    "a": "More than 10 million, with around €150 billion in assets, the company said at the time of the December 2025 deal."
+   },
+   {
+    "q": "What does Trade Republic charge?",
+    "a": "The homepage advertises investing from €1 and a card with no subscription fee. Order fees are listed in the official pricing overview."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Trade Republic homepage",
+    "url": "https://traderepublic.com/en-de"
+   },
+   {
+    "label": "Tech.eu: Trade Republic confirms decacorn status (17 Dec 2025)",
+    "url": "https://tech.eu/2025/12/17/trade-republic-confirms-decacorn-status-following-secondary-share-sale/"
+   },
+   {
+    "label": "FinTech Futures: Trade Republic hits €12.5bn valuation",
+    "url": "https://www.fintechfutures.com/venture-capital-funding/trade-republic-hits-12-5bn-valuation-following-1-2bn-secondary-share-sale"
+   },
+   {
+    "label": "Wikimedia Commons: Trade Republic headquarters and card photos",
+    "url": "https://commons.wikimedia.org/wiki/File:Trade_Republic_corporate_headquarter_in_Berlin.jpg"
+   }
+  ]
+ }
+}

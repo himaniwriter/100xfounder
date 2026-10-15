@@ -1,0 +1,77 @@
+{
+ "slug": "xbow",
+ "website": "https://xbow.com/",
+ "excerpt": "XBOW is an autonomous AI penetration-testing platform that finds and validates vulnerabilities with proof-of-concept exploits. It reached No. 1 on HackerOne's US leaderboard in 2025 and raised a $120M Series C in 2026.",
+ "content": "<p>XBOW is an offensive security platform that uses AI to do the work of a penetration tester. Instead of a person probing an application once a year, XBOW runs continuously, simulates real attacks against web applications, and reports only the vulnerabilities it can prove, each with a proof-of-concept exploit and remediation advice. Its site says more than 150 security teams use it, and that it can cover anything from a single application to thousands.</p><p>The company was founded by Oege de Moor, according to Help Net Security. It drew wide attention in 2025 when its AI system reached the number one spot on HackerOne's leaderboard, which Help Net Security described as the first time a machine outperformed all the human hackers on the bug-bounty platform. In June 2025 it raised a $75 million Series B led by Altimeter's Apoorv Agrawal, with Sequoia Capital and Nat Friedman participating, bringing its total funding to $117 million.</p><p>In March 2026 XBOW announced a $120 million Series C led by DFJ Growth and Northzone, which it said values the company at over $1 billion. Sofina, Alkeon Capital, Altimeter, NFDG Ventures and Sequoia Capital also took part. SecurityWeek reported that the round brought total funding to $237 million and that the money would go towards enterprise and international expansion.</p><p>XBOW is sold to security teams, not individuals. Its pricing page says pricing is scoped to each environment and is usage-based, scaling with coverage rather than a fixed annual engagement, and that it can be bought through the AWS, Google Cloud, Oracle and Microsoft marketplaces. No prices are published.</p><p>This profile draws on XBOW's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI penetration testing",
+  "platform": "Cloud platform",
+  "starts_at": "Quote on request (usage-based)",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Autonomous AI pentesting that validates each finding with a working exploit",
+  "maker": {"name": "XBOW", "url": "https://xbow.com/about"},
+  "team": [
+   {"name": "Oege de Moor", "role": "Founder (per Help Net Security)"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.sanity.io/images/1lq2ca9s/production/71b08e2cf105b7c62dbe007896960fe9fc6d5813-1200x630.png", "alt": "The white XBOW wordmark on a dark background with a faint green glow in the corner", "credit": "Image: XBOW", "w": 1200, "h": 630}
+  ],
+  "use_cases": [
+   "Running continuous penetration tests instead of a yearly manual engagement",
+   "Validating vulnerabilities with proof-of-concept exploits before they reach a ticket queue",
+   "Covering a large portfolio of web applications without adding security headcount",
+   "Buying offensive security testing through an existing cloud marketplace agreement"
+  ],
+  "audience": {
+   "fit": [
+    "lead an application security or red team at a company with many web apps",
+    "want findings that come with proof they can be exploited",
+    "already buy software through AWS, Google Cloud, Oracle or Microsoft marketplaces"
+   ],
+   "not_fit": [
+    "are an individual developer looking for a free scanner",
+    "need a fixed, published price before a sales call"
+   ]
+  },
+  "pricing": {
+   "intro": "XBOW's pricing page says pricing is scoped to your environment and is usage-based, scaling with coverage rather than a fixed annual engagement. No prices are listed; you request a quote.",
+   "plans": [
+    {"name": "XBOW platform", "price": "Quote on request", "detail": "Continuous coverage, validated findings with proof-of-concept exploits and remediation"}
+   ],
+   "notes": ["Available through the AWS, Google, Oracle and Microsoft cloud marketplaces, per the pricing page."],
+   "url": "https://xbow.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Reports come with a working exploit, which cuts false positives",
+   "Runs continuously rather than once a year",
+   "Track record on HackerOne's public leaderboard"
+  ],
+  "cons": [
+   "No published prices",
+   "Built for organisations, not individual researchers"
+  ],
+  "alternatives": {
+   "intro": "Other ways to run offensive security testing. We have not compared them hands-on.",
+   "items": [
+    {"name": "Horizon3.ai NodeZero", "url": "https://horizon3.ai/", "what": "Autonomous penetration testing for internal and external networks", "tags": ["Autonomous pentesting"], "starts_at": "See its own pricing page", "difference": "Focuses on network and infrastructure attack paths rather than web applications."},
+    {"name": "Pentera", "url": "https://pentera.io/", "what": "Automated security validation platform", "tags": ["Security validation"], "starts_at": "See its own pricing page", "difference": "Emulates attacks across the internal network and cloud; not AI-agent based in the same way."},
+    {"name": "HackerOne", "url": "https://www.hackerone.com/", "what": "Bug bounty and human-led pentest marketplace", "tags": ["Bug bounty", "Pentesting"], "starts_at": "See its own pricing page", "difference": "Uses human researchers; XBOW ranked on its leaderboard."}
+   ]
+  },
+  "faq": [
+   {"q": "What does XBOW do?", "a": "It runs autonomous, AI-driven penetration tests on applications and reports vulnerabilities only once it has validated them with a proof-of-concept exploit."},
+   {"q": "How much funding has XBOW raised?", "a": "$237 million in total, according to SecurityWeek: a $75 million Series B in June 2025 and a $120 million Series C in March 2026 that valued it at over $1 billion."},
+   {"q": "Did XBOW really top HackerOne?", "a": "Help Net Security reported that XBOW's AI reached the number one spot on HackerOne's leaderboard in 2025, the first time a machine had outranked all human hackers there."},
+   {"q": "How is XBOW priced?", "a": "On quote. Its pricing page says pricing is usage-based and scoped to your environment."}
+  ],
+  "sources": [
+   {"label": "XBOW website", "url": "https://xbow.com/"},
+   {"label": "XBOW pricing page", "url": "https://xbow.com/pricing"},
+   {"label": "Help Net Security: XBOW raises $75M after topping HackerOne (25 Jun 2025)", "url": "https://www.helpnetsecurity.com/2025/06/25/xbow-ai-funding/"},
+   {"label": "Business Wire: XBOW raises $120M to scale its autonomous hacker (18 Mar 2026)", "url": "https://www.businesswire.com/news/home/20260318258057/en/XBOW-Raises-$120M-to-Scale-its-Autonomous-Hacker"},
+   {"label": "SecurityWeek: XBOW raises $120M at $1B valuation", "url": "https://www.securityweek.com/autonomous-offensive-security-firm-xbow-raises-120m-at-1b-valuation/"}
+  ]
+ }
+}

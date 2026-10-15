@@ -1,0 +1,80 @@
+{
+ "slug": "vendease",
+ "website": "https://www.vendease.com/",
+ "excerpt": "Vendease is a Nigerian B2B food procurement platform for restaurants and hotels, now offering Lagos kitchens buy-now-pay-later stock, 7-day price locks and one consolidated invoice. Backed by Y Combinator, TLcom and Partech.",
+ "content": "<p>Vendease is a Nigerian startup that helps restaurants, hotels and other food businesses buy their supplies. Instead of dealing with several market traders and wholesalers, a kitchen orders proteins, seafood, produce, staples, oils and packaging from Vendease and gets one delivery and one invoice. Its website today focuses on Lagos: it delivers across Lekki, Victoria Island, Ikoyi, Ikate and other zones, holds each price for seven days, and offers buy-now-pay-later credit to verified operators, with a stated daily rate of 0.2% and up to ₦6 million of credit per account. Orders can be placed on the website or on WhatsApp.</p><p>TechCrunch reported in March 2021 that Vendease was founded by Tunde Kara, Olumide Fayankin, Gatumi Aliyu and Wale Oyepeju, friends who noticed favourite restaurants in Lagos and Accra closing and heard that unreliable, expensive food procurement was a big reason. The company was backed by Y Combinator. Before Vendease the founders had built an adtech startup for ride-hailing companies that did not last.</p><p>In September 2022 TechCabal reported that Vendease raised $30 million in equity and debt: a $20 million Series A co-led by TLcom Capital and Partech, plus $10 million of debt. At the time it said it was present in eight cities across Nigeria and Ghana, made bulk-buy deals with suppliers, warehoused food and guaranteed next-day delivery, and had moved more than 400,000 tonnes of food through its platform in the previous twelve months. TLcom's Andreata Muforo and Partech's Cyril Collon joined its board.</p><p>The current website describes a narrower, Lagos-focused service than the 2022 coverage; we have not found a public statement explaining the change. This profile draws on Vendease's own site and published reporting. We have not used the service, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "B2B food procurement",
+  "platform": "Web and WhatsApp ordering",
+  "starts_at": "Pay per order; credit at 0.2% a day for approved operators",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Food supplies for Lagos restaurants on credit, with 7-day price locks and one invoice",
+  "maker": {"name": "Vendease", "url": "https://www.vendease.com/"},
+  "team": [
+   {"name": "Tunde Kara", "role": "Co-founder and CEO"},
+   {"name": "Olumide Fayankin", "role": "Co-founder and COO (per TechCrunch, 2021)"},
+   {"name": "Gatumi Aliyu", "role": "Co-founder and Chief Product Officer (per TechCrunch, 2021)"},
+   {"name": "Wale Oyepeju", "role": "Co-founder and CTO (per TechCrunch, 2021)"}
+  ],
+  "gallery": [
+   {"url": "https://c76c7bbc41.mjedge.net/wp-content/uploads/tc/2022/09/Vendease-customer-1024x611.jpg", "alt": "Two people holding a crate of fresh produce beside a blue Vendease-branded delivery truck", "credit": "Image: Vendease (via TechCabal)", "w": 1024, "h": 611}
+  ],
+  "use_cases": [
+   "Buying proteins, seafood and fresh produce for a restaurant kitchen",
+   "Consolidating several suppliers into one weekly delivery and invoice",
+   "Stocking up on credit and paying after the food has sold",
+   "Costing a menu with prices locked for seven days"
+  ],
+  "audience": {
+   "fit": [
+    "run a restaurant, hotel or food business in Lagos",
+    "spend time chasing several suppliers and want one invoice",
+    "need short-term credit to stock your kitchen"
+   ],
+   "not_fit": [
+    "are outside Vendease's current Lagos delivery zones",
+    "are a household shopper: Vendease sells to businesses"
+   ]
+  },
+  "pricing": {
+   "intro": "Vendease publishes live per-item prices in its online catalogue (for example, per-kilogram prices for chicken), held for seven days. Its buy-now-pay-later credit for verified operators carries a stated rate of 0.2% a day, with up to ₦6 million of credit per account and approval in about 48 hours.",
+   "plans": [
+    {"name": "Pay per order", "price": "Catalogue prices", "detail": "Each item priced in the live catalogue; prices locked for 7 days"},
+    {"name": "Buy Now, Pay Later", "price": "0.2% a day", "detail": "For verified operators; up to ₦6M credit per account"}
+   ],
+   "notes": ["Figures as stated on vendease.com; delivery zones and terms may change."],
+   "url": "https://www.vendease.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "One supplier, one delivery and one invoice",
+   "Prices held for seven days",
+   "Credit lets kitchens pay after they sell"
+  ],
+  "cons": [
+   "Current service is limited to parts of Lagos",
+   "Credit costs 0.2% a day, which adds up over long terms"
+  ],
+  "alternatives": {
+   "intro": "Other ways African food businesses buy supplies. We have not compared prices.",
+   "items": [
+    {"name": "Twiga Foods", "url": "https://twiga.com/", "what": "Kenyan B2B food distribution platform", "tags": ["Food distribution"], "starts_at": "See its own site", "difference": "Serves retailers in Kenya rather than Nigerian restaurants."},
+    {"name": "Omnibiz", "url": "https://omnibiz.africa/", "what": "Nigerian B2B retail ordering and distribution platform", "tags": ["B2B commerce"], "starts_at": "See its own site", "difference": "Focused on neighbourhood retailers and FMCG goods."},
+    {"name": "Local wholesale markets", "url": "https://en.wikipedia.org/wiki/Mile_12_Market", "what": "Buying direct from markets such as Mile 12 in Lagos", "tags": ["Traditional"], "starts_at": "Negotiated", "difference": "Can be cheaper but needs staff time, cash and transport."}
+   ]
+  },
+  "faq": [
+   {"q": "Who founded Vendease?", "a": "Tunde Kara, Olumide Fayankin, Gatumi Aliyu and Wale Oyepeju, according to TechCrunch and TechCabal."},
+   {"q": "How much has Vendease raised?", "a": "TechCabal reported a $30 million round in September 2022: $20 million of Series A equity co-led by TLcom and Partech, plus $10 million of debt."},
+   {"q": "Where does Vendease deliver?", "a": "Its website lists Lagos zones including Lekki, Victoria Island, Ikoyi, Ikate, Yaba and Ikeja."},
+   {"q": "Does Vendease offer credit?", "a": "Yes. Verified operators can apply for buy-now-pay-later at a stated 0.2% daily rate, with up to ₦6 million per account."}
+  ],
+  "sources": [
+   {"label": "Vendease website (catalogue, delivery zones, credit terms)", "url": "https://www.vendease.com/"},
+   {"label": "TechCrunch: Backed by YC, Vendease is building Amazon Prime for restaurants in Africa (19 Mar 2021)", "url": "https://techcrunch.com/2021/03/19/backed-by-yc-vendease-is-building-amazon-prime-for-restaurants-in-africa/"},
+   {"label": "TechCabal: Vendease raises $30 million (26 Sep 2022)", "url": "https://techcabal.com/2022/09/26/vendease-raises-30-million-to-offer-procurement-services-across-africa/"},
+   {"label": "NextBillion: Vendease nabs $30 million led by Partech Africa and TLcom", "url": "https://nextbillion.net/news/vendease-a-food-procurement-platform-for-african-restaurants-nabs-30-million-led-by-partech-africa-and-tlcom/"}
+  ]
+ }
+}
