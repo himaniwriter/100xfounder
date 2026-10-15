@@ -1,0 +1,69 @@
+{
+ "slug": "namely",
+ "website": "https://namely.com/",
+ "excerpt": "Namely is HR, payroll and benefits software with managed services for mid-sized US companies, part of Vensure Employer Solutions since 2022. From $9 per employee per month.",
+ "content": "<p>Namely is a US human capital management (HCM) platform for small and mid-sized companies. Its core software covers HR records, onboarding, reporting, payroll, time and attendance and a mobile app, with add-on modules for benefits administration, applicant tracking with AI-assisted recruiting, performance management and compliance. Alongside the software it sells managed services: managed HR with dedicated consultants and handbook support, managed payroll that handles day-to-day processing, and managed benefits with brokerage services. Some packages also include large-group health benefits, workers' compensation plans and shared compliance liability, the kind of offering usually associated with a professional employer organisation (PEO).</p><h2>Merger with Vensure and PrismHR</h2><p>On 6 September 2022 Namely announced that it had merged with the organisation formed by combining Vensure Employer Services, one of the largest PEOs in the US, and PrismHR, which provides software to HR service providers. In the announcement, Vensure's CEO Alex Campos said the combined company had about 3,600 employees and served more than three million worksite employees. Namely's website now describes it as a Vensure Employer Solutions company. Terms were not disclosed.</p><h2>Pricing</h2><p>Namely lists four packages: NamelyNow, NamelyPlus, NamelyPlus People and NamelyComplete. Its pricing page says NamelyNow starts at $9 per employee per month; for the other packages and services, Namely quotes based on the modules, services and complexity required.</p><h2>Who it suits</h2><p>Namely suits US companies, roughly from growing startups to mid-sized firms, that want HR software and the option to hand payroll, benefits and HR administration to a managed service. Very large enterprises with complex global payroll needs may look at bigger HCM suites.</p><p><em>We have not tested Namely. This page is based on Namely's website and pricing page (checked 15 October 2026) and its September 2022 merger announcement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "HR, payroll and benefits (HCM)",
+  "platform": "Web and mobile app",
+  "starts_at": "$9 per employee per month (NamelyNow)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "HR, payroll and benefits software with managed services, part of Vensure",
+  "maker": {"name": "Namely (a Vensure Employer Solutions company)", "url": "https://namely.com/"},
+  "gallery": [
+   {"url": "https://namely.com/wp-content/uploads/2025/10/Namely-General-Feature.jpg", "alt": "Namely banner with the white Namely logo and the line A Vensure Employer Solutions Company on blue, beside two colleagues smiling at a laptop", "credit": "Image: Namely", "w": 1200, "h": 628},
+   {"url": "https://namely.com/wp-content/uploads/2025/02/home_2.png", "alt": "A man in glasses holding a pen and looking thoughtfully at a screen, from Namely's homepage", "credit": "Image: Namely", "w": 2393, "h": 1196}
+  ],
+  "use_cases": [
+   "Keeping employee records, time off and documents in one HR system",
+   "Running payroll and payroll tax filings",
+   "Managing open enrolment and benefits",
+   "Outsourcing HR, payroll or benefits administration to a managed service",
+   "Hiring with applicant tracking and AI-assisted workflows"
+  ],
+  "audience": {
+   "fit": [
+    "run HR at a US company from startup to mid-size",
+    "want software plus optional managed HR, payroll and benefits",
+    "want access to group benefits through a PEO-style package"
+   ],
+   "not_fit": [
+    "need payroll in many countries",
+    "are a very large enterprise needing a full global HCM suite"
+   ]
+  },
+  "pricing": {
+   "intro": "Namely publishes a starting price for its entry package; other packages are quoted.",
+   "plans": [
+    {"name": "NamelyNow", "price": "From $9 per employee per month", "amount": 9, "currency": "USD", "detail": "Entry package"},
+    {"name": "NamelyPlus", "price": "Quote on request", "detail": "Priced by modules and services"},
+    {"name": "NamelyPlus People", "price": "Quote on request", "detail": "Priced by modules and services"},
+    {"name": "NamelyComplete", "price": "Quote on request", "detail": "Priced by modules and services"}
+   ],
+   "notes": [],
+   "url": "https://namely.com/lp/pricing/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other HR and payroll platforms for US companies.",
+   "items": [
+    {"name": "Rippling", "url": "https://www.rippling.com/", "what": "HR, IT and finance platform with payroll", "tags": ["HCM", "Payroll"], "starts_at": "See its own pricing page", "difference": "Combines HR with IT and spend management."},
+    {"name": "Gusto", "url": "https://gusto.com/", "what": "Payroll, benefits and HR for small businesses", "tags": ["Payroll"], "starts_at": "See its own pricing page", "difference": "Popular with smaller businesses, with published plans."},
+    {"name": "Paylocity", "url": "https://www.paylocity.com/", "what": "HR and payroll software for mid-sized companies", "tags": ["HCM", "Payroll"], "starts_at": "See its own site", "difference": "Public company with a broad mid-market suite."}
+   ]
+  },
+  "faq": [
+   {"q": "Who owns Namely?", "a": "Namely merged with Vensure Employer Services and PrismHR in September 2022 and describes itself as a Vensure Employer Solutions company."},
+   {"q": "How much does Namely cost?", "a": "NamelyNow starts at $9 per employee per month; other packages are quoted."},
+   {"q": "Does Namely run payroll?", "a": "Yes. Payroll is part of its core platform, and it also offers managed payroll."},
+   {"q": "Is Namely a PEO?", "a": "Namely sells HR software and managed services; its package comparison lists items such as large group benefits, workers' comp plans and shared liability compliance."}
+  ],
+  "sources": [
+   {"label": "Namely website", "url": "https://namely.com/"},
+   {"label": "Namely pricing and packages", "url": "https://namely.com/lp/pricing/"},
+   {"label": "GlobeNewswire: Namely merges with Vensure Employer Services + PrismHR (6 Sep 2022)", "url": "https://www.globenewswire.com/news-release/2022/09/06/2510737/0/en/Namely-Merges-with-Vensure-Employer-Services-PrismHR.html"},
+   {"label": "Citybiz: Namely merges with Vensure Employer Services + PrismHR", "url": "https://www.citybiz.co/article/316046/namely-merges-with-vensure-employer-services-prismhr/"}
+  ]
+ }
+}

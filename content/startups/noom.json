@@ -1,0 +1,72 @@
+{
+ "slug": "noom",
+ "website": "https://www.noom.com/",
+ "excerpt": "Noom is a psychology-based weight and health app that now also offers GLP-1 medication programs and a free GLP-1 Companion. Prices, programs and alternatives.",
+ "content": "<p>Noom is a US digital health company known for its weight-loss app, which uses psychology-based lessons, food logging, coaching and habit tracking rather than strict diets. It describes itself as a behaviour change company used by millions. Over the past few years it has added medical programmes: Noom Med and the Noom GLP-1Rx programme give eligible members access to prescriptions such as compounded semaglutide through physician-led telehealth, alongside the app's nutrition, exercise and mindset coaching. In June 2026 Noom made its GLP-1 Companion free for anyone taking a GLP-1 medication, whatever their prescriber, with tools for protein intake, side effects, muscle preservation and habits. In its announcement Noom said that in its largest randomised controlled trial of the behaviour programme, members lost an average of 4.1% of body weight and kept losing for a year after the programme ended.</p><p>Its press releases carry a Princeton, New Jersey dateline. Geoff Cook, previously CEO of The Meet Group, became CEO in July 2023, succeeding co-founder Saeju Jeong, who moved to executive chairman, according to MobiHealthNews.</p><h2>Pricing</h2><p>Noom's prices depend on the programme and are shown at sign-up after a quiz. Athletech News reported in February 2026 that Noom's Microdose GLP-1Rx programme starts at $79 a month for eligible users for an initial period, and that the standard GLP-1Rx programme costs $199 a month plus tax on a 12-week subscription after the initial period. Medication programmes are not available in every US state. The GLP-1 Companion is free.</p><h2>Who it suits</h2><p>Noom suits adults who want structured, app-based help with eating habits and weight, and people already taking a GLP-1 who want support with nutrition and side effects. Anyone considering a prescription programme should speak to a clinician; Noom's medical programmes are only for eligible US patients.</p><p><em>This is not medical advice, and we have not tested Noom. This page is based on Noom's website and press release (June 2026), Athletech News and MobiHealthNews.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Digital weight-loss and health",
+  "platform": "iOS, Android and web",
+  "starts_at": "Free GLP-1 Companion; paid programs from $79/month (per Athletech News)",
+  "schema_category": "HealthApplication",
+  "summary_short": "Psychology-based weight-loss app with GLP-1 medication programs and a free GLP-1 Companion",
+  "maker": {"name": "Noom", "url": "https://www.noom.com/"},
+  "team": [
+   {"name": "Geoff Cook", "role": "CEO (since July 2023)", "url": "https://www.noom.com/in-the-news/noom-launches-free-version-of-its-powerful-glp-1-companion/"},
+   {"name": "Saeju Jeong", "role": "Co-founder; executive chairman from 2023", "url": "https://mobihealthnews.com/node/153270"}
+  ],
+  "gallery": [
+   {"url": "https://www.noom.com/tachyon/2026/06/image-1.png", "alt": "Three Noom app screens: a daily habits list, a form to log a GLP-1 injection and side effects, and Muscle Defense workout videos", "credit": "Image: Noom", "w": 1920, "h": 1080},
+   {"url": "https://avatars.githubusercontent.com/u/12076106?v=4", "alt": "The Noom wordmark in black capital letters on a white background", "credit": "Image: Noom, from its official GitHub account", "w": 460, "h": 460}
+  ],
+  "use_cases": [
+   "Building healthier eating habits with daily lessons and food logging",
+   "Getting support with protein, side effects and muscle while on a GLP-1",
+   "Accessing a physician-led GLP-1 medication programme (eligible US users)",
+   "Tracking steps, workouts and weight in one app",
+   "Keeping weight off after stopping a GLP-1"
+  ],
+  "audience": {
+   "fit": [
+    "want app-based coaching to change eating and activity habits",
+    "already take a GLP-1 and want free structured support",
+    "are an eligible US adult interested in a telehealth medication programme"
+   ],
+   "not_fit": [
+    "need in-person medical care or have an eating disorder",
+    "live outside the US and want the medication programmes"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices depend on the programme and are shown at sign-up. Figures below are as reported by Athletech News in February 2026.",
+   "plans": [
+    {"name": "GLP-1 Companion", "price": "Free", "amount": 0, "currency": "USD", "detail": "For anyone taking a GLP-1, regardless of prescriber"},
+    {"name": "Microdose GLP-1Rx", "price": "From $79/month", "amount": 79, "currency": "USD", "detail": "Initial period for eligible users; not in all states"},
+    {"name": "GLP-1Rx", "price": "$199/month + tax", "amount": 199, "currency": "USD", "detail": "12-week subscription after the initial period"}
+   ],
+   "notes": ["Noom's core weight programme is priced at checkout after a quiz; we could not read a fixed public price."],
+   "url": "https://www.noom.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other weight-management apps and programmes.",
+   "items": [
+    {"name": "WeightWatchers", "url": "https://www.weightwatchers.com/", "what": "Points-based weight programme with clinic options", "tags": ["Weight loss", "GLP-1"], "starts_at": "See its own pricing page", "difference": "Long-running points system plus its own clinical programme."},
+    {"name": "Omada Health", "url": "https://www.omadahealth.com/", "what": "Virtual chronic care for weight, diabetes and hypertension", "tags": ["Chronic care"], "starts_at": "Through employers and health plans", "difference": "Usually offered as a benefit rather than bought directly."},
+    {"name": "MyFitnessPal", "url": "https://www.myfitnesspal.com/", "what": "Calorie and nutrition tracking app", "tags": ["Food tracking"], "starts_at": "See its own pricing page", "difference": "Focused on tracking rather than coaching or prescriptions."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Noom free?", "a": "The GLP-1 Companion is free for anyone on a GLP-1. Noom's other programmes are paid, with prices shown at sign-up."},
+   {"q": "Does Noom prescribe GLP-1 medication?", "a": "Its GLP-1Rx and Noom Med programmes offer physician-led prescriptions to eligible users in supported US states."},
+   {"q": "Who is Noom's CEO?", "a": "Geoff Cook, who took over from co-founder Saeju Jeong in July 2023."},
+   {"q": "How much does Noom GLP-1Rx cost?", "a": "Athletech News reported $199 a month plus tax for the 12-week subscription, with a Microdose option from $79 for an initial period."}
+  ],
+  "sources": [
+   {"label": "Noom website", "url": "https://www.noom.com/"},
+   {"label": "Noom: Launches free version of its GLP-1 Companion (24 Jun 2026)", "url": "https://www.noom.com/in-the-news/noom-launches-free-version-of-its-powerful-glp-1-companion/"},
+   {"label": "Athletech News: Noom microdose GLP-1Rx program pricing and eligibility (23 Feb 2026)", "url": "https://athletechnews.com/noom-microdose-glp1-rx-program-pricing-eligibility/"},
+   {"label": "MobiHealthNews: Noom appoints new CEO (Jul 2023)", "url": "https://mobihealthnews.com/node/153270"}
+  ]
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "slug": "medgenome",
+ "website": "https://diagnostics.medgenome.com/",
+ "excerpt": "MedGenome is a Bengaluru genetic testing and genomics research company running South Asia's largest CAP-accredited genetic testing lab, with 1,300+ tests.",
+ "content": "<p>MedGenome is an Indian genomics company with headquarters in Bengaluru. Its diagnostics business offers more than 1,300 genetic tests across areas such as reproductive health (non-invasive prenatal screening, carrier screening, preimplantation testing), rare inherited disorders (whole exome and genome sequencing), newborn screening, neurology, nephrology, cardiology and eye genetics, oncology (hereditary cancer panels, liquid biopsy and minimal residual disease tests), infectious diseases and pharmacogenomics. It also offers research services and bioinformatics for single-cell genomics, genome sequencing, immune profiling and epigenomics. The company describes its Bengaluru facility as South Asia's largest CAP-accredited and NABL-certified genomics sequencing lab, and says it has sequenced more than 600,000 exomes and genomes and serves more than 600 locations in India and about 50 countries.</p><p>Inc42 reported that Sam Santhosh founded MedGenome in 2013 and was its chief executive in 2020, and that the company had built what it called the largest database of South Asian genome variants. MedGenome's leadership page now lists VL Ramprasad as CEO, Mahesh Pratapneni as co-founder and director, and Dr Amit Kakar as chairman, with Somasekar Seshagiri heading US operations.</p><h2>Funding</h2><p>In April 2020 MedGenome raised $55 million in a round led by LeapFrog Investments, with existing investors Sequoia Capital and Sofina, Inc42 reported, citing The Economic Times. GenomeWeb had reported a $4 million round in its early years.</p><h2>Pricing</h2><p>MedGenome does not publish a price list for its tests on its website. Tests are ordered through doctors and hospitals, and prices are quoted by MedGenome or the referring clinic.</p><h2>Who it suits</h2><p>MedGenome suits clinicians and hospitals in India and nearby regions that need genetic testing, and researchers and pharmaceutical companies that need sequencing and bioinformatics. Patients usually access its tests through a doctor's referral rather than directly.</p><p><em>This is not medical advice. This page is based on MedGenome's website and about page (checked 15 October 2026), Inc42 and GenomeWeb.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Genetic testing and genomics research",
+  "platform": "Laboratory services",
+  "starts_at": "Prices not published; ordered through clinicians",
+  "schema_category": "HealthApplication",
+  "summary_short": "Genetic testing and genomics research from a CAP-accredited lab in Bengaluru",
+  "maker": {"name": "MedGenome Labs Ltd.", "url": "https://diagnostics.medgenome.com/about-us/"},
+  "team": [
+   {"name": "Sam Santhosh", "role": "Founder (CEO in 2020)", "url": "https://inc42.com/?p=202959"},
+   {"name": "VL Ramprasad", "role": "Chief Executive Officer", "url": "https://diagnostics.medgenome.com/about-us/"},
+   {"name": "Mahesh Pratapneni", "role": "Co-founder and Director", "url": "https://diagnostics.medgenome.com/about-us/"}
+  ],
+  "gallery": [
+   {"url": "https://diagnostics.medgenome.com/wp-content/uploads/2026/07/MG-Generic-Banner_1.webp", "alt": "MedGenome banner reading Precision Diagnostics Backed by a Decade of Genomic Expertise, listing 6,00,000+ exomes and genomes sequenced and 1,300+ genetic tests", "credit": "Image: MedGenome", "w": 1920, "h": 780},
+   {"url": "https://diagnostics.medgenome.com/wp-content/uploads/2025/07/Banner-4.jpg", "alt": "MedGenome banner about its bioinformatics platform for single-cell genomics, genome sequencing, immune profiling and epigenomics, with a hand holding a glowing DNA icon", "credit": "Image: MedGenome", "w": 1920, "h": 780}
+  ],
+  "use_cases": [
+   "Non-invasive prenatal screening and carrier screening",
+   "Exome or genome sequencing to diagnose rare inherited disorders",
+   "Hereditary cancer testing and tumour profiling",
+   "Pathogen identification for infectious diseases",
+   "Sequencing and bioinformatics services for research"
+  ],
+  "audience": {
+   "fit": [
+    "are a clinician or hospital in India ordering genetic tests",
+    "are a researcher or pharma company needing sequencing and analysis",
+    "are a patient referred by a doctor for genetic testing"
+   ],
+   "not_fit": [
+    "want a consumer ancestry test",
+    "need a published price list before speaking to anyone"
+   ]
+  },
+  "pricing": {
+   "intro": "MedGenome does not publish test prices on its website. Tests are ordered through clinicians and quoted on request.",
+   "plans": [
+    {"name": "Clinical genetic tests", "price": "Quote on request", "detail": "1,300+ tests across specialities"},
+    {"name": "Research services", "price": "Quote on request", "detail": "Sequencing and bioinformatics"}
+   ],
+   "notes": [],
+   "url": "https://diagnostics.medgenome.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other genetic testing labs serving India.",
+   "items": [
+    {"name": "Strand Life Sciences", "url": "https://strandls.com/", "what": "Genomic diagnostics and bioinformatics", "tags": ["Genetic testing"], "starts_at": "See its own site", "difference": "Strong in cancer genomics and bioinformatics software."},
+    {"name": "Mapmygenome", "url": "https://mapmygenome.in/", "what": "Consumer and clinical genomics", "tags": ["Consumer genomics"], "starts_at": "See its own site", "difference": "Also sells direct-to-consumer genetic tests."},
+    {"name": "Neuberg Diagnostics", "url": "https://www.neubergdiagnostics.com/", "what": "Diagnostics chain with genomics services", "tags": ["Diagnostics"], "starts_at": "See its own site", "difference": "Broad pathology network with a genomics arm."}
+   ]
+  },
+  "faq": [
+   {"q": "What does MedGenome do?", "a": "It runs genetic testing for clinicians and sequencing and bioinformatics services for researchers, from a CAP-accredited lab in Bengaluru."},
+   {"q": "Who founded MedGenome?", "a": "Sam Santhosh founded it in 2013, according to Inc42; Mahesh Pratapneni is listed as co-founder."},
+   {"q": "Who is MedGenome's CEO?", "a": "VL Ramprasad, according to the company's about page."},
+   {"q": "How much has MedGenome raised?", "a": "Its April 2020 round was $55 million, led by LeapFrog Investments with Sequoia and Sofina."}
+  ],
+  "sources": [
+   {"label": "MedGenome website", "url": "https://diagnostics.medgenome.com/"},
+   {"label": "MedGenome: About us and leadership", "url": "https://diagnostics.medgenome.com/about-us/"},
+   {"label": "Inc42: MedGenome raises $55 Mn in fresh funding (Apr 2020)", "url": "https://inc42.com/?p=202959"},
+   {"label": "GenomeWeb: MedGenome raises $4M private financing round", "url": "https://www.genomeweb.com/informatics/medgenome-raises-4m-private-financing-round"}
+  ]
+ }
+}

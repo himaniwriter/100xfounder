@@ -1,0 +1,69 @@
+{
+ "slug": "matik",
+ "website": "https://www.matik.ai/",
+ "excerpt": "Matik automatically builds personalised presentations and documents from live company data in Google Slides or PowerPoint. Backed by Andreessen Horowitz.",
+ "content": "<p>Matik makes software that generates data-driven content automatically. Sales, customer success and marketing teams set up governed templates once; Matik then fills them with live data from sources such as a CRM or a data warehouse and produces native Google Slides or PowerPoint decks and other formats for each account. Typical outputs include quarterly business reviews, pricing proposals, renewal decks and personalised outreach. Its website, now at matik.ai, describes AI that builds the setup, structure, narrative and personalisation of a deck, while keeping figures grounded in real data queries and brand-approved templates. Content can be created from Matik's own interface, from the CRM or from Slack, and generation can be triggered by signals or schedules.</p><p>TechCrunch reported in 2021 that Matik was founded in 2019 by Nikola Mijic, its CEO, and Zak Stein, an early Box employee, and that it was based in San Francisco. Customers named at the time included Glassdoor, KeepTruckin, Handshake and Hover.</p><h2>Funding</h2><p>In October 2021 Matik raised a $20 million Series A led by Andreessen Horowitz, with Menlo Ventures, BoxGroup and Oceans Ventures, bringing total funding to just over $23 million, according to TechCrunch. Menlo Ventures, one of its investors, explained its investment in a post on its website.</p><h2>Pricing</h2><p>Matik does not publish prices on its website. Companies book a demo for a quote.</p><h2>Who it suits</h2><p>Matik suits sales, customer success and revenue operations teams that build many similar data-heavy decks, such as QBRs and proposals, and want them consistent and on brand. Teams that make a few one-off presentations may not need automation.</p><p><em>We have not tested Matik. This page is based on Matik's website, TechCrunch and Menlo Ventures.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Data-driven presentation automation",
+  "platform": "Web, with Google Slides, PowerPoint, CRM and Slack integrations",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Generates personalised decks and documents from live CRM and warehouse data",
+  "maker": {"name": "Matik", "url": "https://www.matik.ai/"},
+  "team": [
+   {"name": "Nikola Mijic", "role": "Co-founder and CEO", "url": "https://techcrunch.com/2021/10/13/matik-raises-20m-to-automate-the-process-of-creating-customized-presentations/"},
+   {"name": "Zak Stein", "role": "Co-founder", "url": "https://techcrunch.com/2021/10/13/matik-raises-20m-to-automate-the-process-of-creating-customized-presentations/"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/6169c25fc3b5f387dbc1b0ab/672c8fdcb72e6d3999cd7f45_Matik%20Logo%20On%20White%20Colored.png", "alt": "The Matik logo: a green circular arrow beside the word Matik in dark navy on white", "credit": "Image: Matik", "w": 1200, "h": 630},
+   {"url": "https://cdn.prod.website-files.com/6169c25fc3b5f387dbc1b0ab/6abbb1bbf25d45c59eb7cf7a_ai-buildsetup.webp", "alt": "Matik AI illustration with labels for setup, structure, narrative and personalization around a glowing green Matik symbol", "credit": "Image: Matik", "w": 1972, "h": 1092}
+  ],
+  "use_cases": [
+   "Generating quarterly business review decks for every customer",
+   "Building pricing proposals with live CRM data",
+   "Creating renewal and expansion decks for customer success",
+   "Producing personalised outreach content at scale",
+   "Keeping decks on brand with governed templates"
+  ],
+  "audience": {
+   "fit": [
+    "run sales, customer success or revenue operations",
+    "build many similar decks filled with account data",
+    "use Google Slides or PowerPoint with a CRM or data warehouse"
+   ],
+   "not_fit": [
+    "make a few one-off presentations",
+    "want a design tool for freeform slides"
+   ]
+  },
+  "pricing": {
+   "intro": "Matik does not publish prices; companies book a demo.",
+   "plans": [
+    {"name": "Matik platform", "price": "Quote on request", "detail": "Templates, data connections and AI generation"}
+   ],
+   "notes": [],
+   "url": "https://www.matik.ai/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other tools for automated or AI-built presentations.",
+   "items": [
+    {"name": "Rollstack", "url": "https://www.rollstack.com/", "what": "Automates slides and documents from BI dashboards", "tags": ["Report automation"], "starts_at": "See its own site", "difference": "Starts from BI tools such as Tableau and Looker."},
+    {"name": "Gamma", "url": "https://gamma.app/", "what": "AI tool for decks, documents and web pages", "tags": ["AI presentations"], "starts_at": "See its own pricing page", "difference": "General-purpose AI decks rather than data-driven templates."},
+    {"name": "Mutiny", "url": "https://www.mutinyhq.com/", "what": "AI sales assistant for personalised assets", "tags": ["Sales content"], "starts_at": "Free; Business $50/month", "difference": "Focus on decks, landing pages and deal rooms for sales teams."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Matik do?", "a": "It builds personalised Google Slides or PowerPoint decks and other content automatically from live company data."},
+   {"q": "Who founded Matik?", "a": "Nikola Mijic (CEO) and Zak Stein, in 2019."},
+   {"q": "Who has invested in Matik?", "a": "Andreessen Horowitz led its $20 million Series A in 2021, with Menlo Ventures, BoxGroup and Oceans Ventures."},
+   {"q": "How much does Matik cost?", "a": "Prices are not published; Matik quotes after a demo."}
+  ],
+  "sources": [
+   {"label": "Matik website", "url": "https://www.matik.ai/"},
+   {"label": "TechCrunch: Matik raises $20M (13 Oct 2021)", "url": "https://techcrunch.com/2021/10/13/matik-raises-20m-to-automate-the-process-of-creating-customized-presentations/"},
+   {"label": "Menlo Ventures: Our investment in Matik", "url": "https://menlovc.com/perspective/our-investment-in-matik-empowering-the-enterprise-with-data-driven-documents/"}
+  ]
+ }
+}
