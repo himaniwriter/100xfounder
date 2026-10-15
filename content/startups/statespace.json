@@ -1,0 +1,71 @@
+{
+ "slug": "statespace",
+ "website": "https://aimlabs.com/",
+ "excerpt": "Statespace (State Space Labs) is the New York company behind Aimlabs, the free aim trainer for first-person shooter players. Aimlabs+ costs from $7 a month.",
+ "content": "<p>Statespace, legally State Space Labs, Inc., is a New York company that makes Aimlabs (earlier written Aim Lab), a training app for players of first-person shooter games. Players run short exercises that test and train aiming skills such as flicking, tracking and reaction time, and Aimlabs measures each shot to show where they are improving. The website says Aimlabs has more than 40 million players, over 50,000 tasks and playlists, an AI-powered coach and profiles for 500 FPS games, and that it is an official partner of Valorant and Rainbow Six Siege. In 2026 it released Aimlabs 2.0. The old statespace.gg domain no longer resolves; the company now operates under the Aimlabs name.</p><p>GamesBeat reported that founder and CEO Wayne Mackey was a postdoctoral fellow in the Computational Neuroimaging Lab at New York University, and that the company draws on neuroscience for its training methods.</p><h2>Funding</h2><p>Statespace raised a $15 million Series A in 2020 led by Khosla Ventures, according to Esports Insider. TechCrunch reported a $29 million Series B in November 2020, when Aim Lab had passed 1.5 million monthly active users. In September 2021 it raised a $50 million Series C co-led by Khosla Ventures and Lux Capital, taking total funding past $98 million; GamesBeat said Aim Lab then had 5 million monthly active users and 20 million total players. Weeks later it acquired ProGuides, an esports coaching platform.</p><h2>Pricing</h2><p>Aimlabs is free to play. Its paid membership, Aimlabs+, costs $10 a month on a monthly plan, $9 a month billed every three months, or $7 a month billed every six months, and adds a sensitivity finder, guided training programmes, an AI aim coach, advanced metrics and a 50% discount in the Aimlabs shop.</p><p><em>We have not tested Aimlabs. This page is based on the Aimlabs website and membership page (checked 15 October 2026) and on GamesBeat, TechCrunch and Esports Insider.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Gaming aim trainer",
+  "platform": "PC (mouse and keyboard)",
+  "starts_at": "Free; Aimlabs+ from $7/month",
+  "schema_category": "GameApplication",
+  "summary_short": "Aimlabs, the AI-powered aim trainer for first-person shooter players",
+  "maker": {"name": "State Space Labs, Inc.", "url": "https://aimlabs.com/"},
+  "team": [{"name": "Wayne Mackey", "role": "Founder and CEO", "url": "https://firstmark.com/?p=17860928"}],
+  "gallery": [
+   {"url": "https://aimlabs.com/wp-content/uploads/2026/09/Aimlabs2.0_Epic_VideoCover_1920x1080.jpg", "alt": "The word AIMLABS in white with a large glowing 2.0 standing in front of it on a dark, misty stage", "credit": "Image: Aimlabs (State Space Labs)", "w": 1920, "h": 1080},
+   {"url": "https://aimlabs.com/wp-content/uploads/2025/04/15a2b6bd9e5a05481376630c986510a9-1024x633.png", "alt": "Aimlabs+ feature panels including Discovery, an AI coach message about overflicks, and metrics such as pace and shot timing", "credit": "Image: Aimlabs (State Space Labs)", "w": 1024, "h": 633}
+  ],
+  "use_cases": [
+   "Warming up aim before playing Valorant, Counter-Strike or other shooters",
+   "Finding the right mouse sensitivity for a game",
+   "Following a daily training plan matched to your skill level",
+   "Tracking aiming metrics such as overflicks, smoothness and reaction time",
+   "Practising on game-specific maps and tasks"
+  ],
+  "audience": {
+   "fit": [
+    "play competitive first-person shooters on PC",
+    "want structured, measurable aim practice",
+    "like to track progress against leaderboards"
+   ],
+   "not_fit": [
+    "mainly play on console",
+    "do not play shooter games"
+   ]
+  },
+  "pricing": {
+   "intro": "Aimlabs is free to play. Aimlabs+ is an optional membership.",
+   "plans": [
+    {"name": "Aimlabs", "price": "Free", "amount": 0, "currency": "USD", "detail": "Core training tasks and leaderboards"},
+    {"name": "Aimlabs+ monthly", "price": "$10/month", "amount": 10, "currency": "USD", "detail": "Renews every month"},
+    {"name": "Aimlabs+ 3 months", "price": "$9/month", "amount": 9, "currency": "USD", "detail": "Renews every 3 months"},
+    {"name": "Aimlabs+ 6 months", "price": "$7/month", "amount": 7, "currency": "USD", "detail": "Renews every 6 months"}
+   ],
+   "notes": ["Members also get 50% off items in the Aimlabs shop."],
+   "url": "https://aimlabs.com/aimlabs",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other aim trainers for FPS players.",
+   "items": [
+    {"name": "KovaaK's", "url": "https://www.kovaaks.com/", "what": "Aim trainer with a large library of community scenarios", "tags": ["Aim trainer"], "starts_at": "See its own store page", "difference": "Paid game with a deep custom-scenario community."},
+    {"name": "Aiming.Pro", "url": "https://aiming.pro/", "what": "Browser-based aim trainer", "tags": ["Aim trainer", "Browser"], "starts_at": "See its own site", "difference": "Runs in the browser without a download."},
+    {"name": "3D Aim Trainer", "url": "https://www.3daimtrainer.com/", "what": "Web and desktop aim trainer", "tags": ["Aim trainer"], "starts_at": "See its own site", "difference": "Lighter-weight option with web play."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Aimlabs free?", "a": "Yes, the core app is free. Aimlabs+ costs $7–$10 a month depending on the billing period."},
+   {"q": "Who makes Aimlabs?", "a": "State Space Labs, Inc., known as Statespace, a New York company founded by neuroscientist Wayne Mackey."},
+   {"q": "How much has Statespace raised?", "a": "More than $98 million by its $50 million Series C in September 2021, according to GamesBeat."},
+   {"q": "Which games does Aimlabs support?", "a": "Its website lists profiles for 500 FPS games and official partnerships with Valorant and Rainbow Six Siege."}
+  ],
+  "sources": [
+   {"label": "Aimlabs website", "url": "https://aimlabs.com/"},
+   {"label": "Aimlabs+ membership page", "url": "https://aimlabs.com/aimlabs"},
+   {"label": "GamesBeat (via FirstMark): Aim Lab maker Statespace raises $50M (Sep 2021)", "url": "https://firstmark.com/?p=17860928"},
+   {"label": "TechCrunch: Statespace raises $29 million Series B (12 Nov 2020)", "url": "https://techcrunch.com/2020/11/12/statespace-raises-29-million-series-b-tops-1-5-million-maus"},
+   {"label": "Esports Insider: Aim Lab parent Statespace raises $15M in Series A", "url": "https://esportsinsider.com/2020/05/statespace-15-million-series-a/"}
+  ]
+ }
+}

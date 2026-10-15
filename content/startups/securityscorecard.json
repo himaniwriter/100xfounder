@@ -1,0 +1,72 @@
+{
+ "slug": "securityscorecard",
+ "website": "https://securityscorecard.com/",
+ "excerpt": "SecurityScorecard rates the cybersecurity of companies and their suppliers from the outside, with A–F grades, and sells third-party risk management tools. Free account available.",
+ "content": "<p>SecurityScorecard is a cybersecurity company best known for security ratings. It looks at signals about an organisation's security that can be observed from outside, across several security dimensions, and turns them into a letter grade from A to F. TechCrunch explained in 2021 that the grades work like school grades and that any company can see its own scorecard for free, with suggestions for improving it. Businesses use the ratings to monitor the vendors and suppliers they depend on, which is known as third-party or supply chain risk management, and its website also lists cyber insurance as a use case.</p><p>Its current platform is called TITAN AI. The website lists packages named TITAN Watch for monitoring, TITAN Assess for security questionnaires, TITAN Secure for threat-informed findings and response, and TITAN MAX managed services, alongside threat intelligence and AI agents. The site says more than 25,000 organisations use SecurityScorecard.</p><p>CEO Aleksandr Yampolskiy and COO Sam Kassoumeh co-founded the company. Yampolskiy told TechCrunch the idea came from his time as a CISO and CTO, when he had no metrics to judge security.</p><h2>Funding</h2><p>On 18 March 2021 SecurityScorecard announced a $180 million Series E. New investors included Silver Lake Waterman, T. Rowe Price, Kayne Anderson Rudnick and Fitch Ventures, with existing backers including Evolution Equity Partners, Riverwood Capital, Intel Capital and GV. SiliconANGLE put total funding at about $292 million after the round.</p><h2>Pricing</h2><p>SecurityScorecard does not publish prices. Its pricing page offers a Free Forever account with a rating for your own domain, self-monitoring and basic reports, and a free trial of TITAN Watch; paid packages are priced mainly on how many organisations you monitor.</p><p><em>We have not tested SecurityScorecard. This page is based on its website and pricing page (checked 15 October 2026), TechCrunch and SiliconANGLE.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Security ratings and third-party risk",
+  "platform": "Web (SaaS)",
+  "starts_at": "Free account; paid packages quoted",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Outside-in security ratings and supply chain cyber risk management",
+  "maker": {"name": "SecurityScorecard", "url": "https://securityscorecard.com/"},
+  "team": [
+   {"name": "Aleksandr Yampolskiy", "role": "Co-founder and CEO", "url": "https://techcrunch.com/2021/03/18/securityscorecard-snags-180m-series-e-to-measure-a-companys-security-risk"},
+   {"name": "Sam Kassoumeh", "role": "Co-founder and COO", "url": "https://techcrunch.com/2021/03/18/securityscorecard-snags-180m-series-e-to-measure-a-companys-security-risk"}
+  ],
+  "gallery": [
+   {"url": "https://securityscorecard.com/wp-content/uploads/2026/03/SSC_Web_FI_Fallback-7.webp", "alt": "SecurityScorecard graphic reading Securing the world's supply chains beside a purple wireframe globe", "credit": "Image: SecurityScorecard", "w": 1500, "h": 845},
+   {"url": "https://securityscorecard.com/wp-content/uploads/2026/10/Homepage-ProductCards_1.webp", "alt": "A magenta product card labelled TITAN Watch with the line Foundational visibility of your ecosystem", "credit": "Image: SecurityScorecard", "w": 2083, "h": 2083}
+  ],
+  "use_cases": [
+   "Monitoring the security posture of vendors and suppliers",
+   "Checking and improving your own organisation's security rating",
+   "Automating security questionnaires for vendor assessments",
+   "Getting alerts when a supplier shows signs of a breach",
+   "Using ratings in cyber insurance underwriting"
+  ],
+  "audience": {
+   "fit": [
+    "run third-party risk or vendor management at a mid-size or large company",
+    "are a CISO who needs to report security posture to the board",
+    "want to see how your own company looks from the outside"
+   ],
+   "not_fit": [
+    "need internal vulnerability scanning or endpoint protection",
+    "work with only a handful of suppliers"
+   ]
+  },
+  "pricing": {
+   "intro": "SecurityScorecard does not publish prices. It offers a free account and a free trial; paid packages depend mainly on how many organisations you monitor.",
+   "plans": [
+    {"name": "Free Forever", "price": "Free", "amount": 0, "currency": "USD", "detail": "Rating for your own domain, self-monitoring dashboard, basic reports"},
+    {"name": "TITAN Watch / Assess / Secure", "price": "Quote on request", "detail": "Monitoring, questionnaires, threat-informed findings and response"},
+    {"name": "TITAN MAX", "price": "Quote on request", "detail": "Managed services; requires a platform subscription"}
+   ],
+   "notes": ["The homepage advertised a 14-day free trial of TITAN AI when we checked."],
+   "url": "https://securityscorecard.com/pricing/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other security ratings and third-party risk platforms.",
+   "items": [
+    {"name": "BitSight", "url": "https://www.bitsight.com/", "what": "Security ratings and cyber risk analytics", "tags": ["Security ratings"], "starts_at": "See its own site", "difference": "SecurityScorecard's closest rival in security ratings."},
+    {"name": "UpGuard", "url": "https://www.upguard.com/", "what": "Vendor risk and attack surface management", "tags": ["Vendor risk"], "starts_at": "See its own pricing page", "difference": "Publishes plan pricing and targets smaller teams too."},
+    {"name": "Black Kite", "url": "https://blackkite.com/", "what": "Third-party cyber risk intelligence", "tags": ["Vendor risk"], "starts_at": "See its own site", "difference": "Emphasises financial impact modelling of cyber risk."}
+   ]
+  },
+  "faq": [
+   {"q": "Is SecurityScorecard free?", "a": "There is a Free Forever account that shows your own rating; monitoring other organisations needs a paid package."},
+   {"q": "How are SecurityScorecard ratings calculated?", "a": "From externally observable security signals, turned into an A to F letter grade."},
+   {"q": "Who founded SecurityScorecard?", "a": "Aleksandr Yampolskiy (CEO) and Sam Kassoumeh (COO)."},
+   {"q": "How much has SecurityScorecard raised?", "a": "About $292 million in total after its $180 million Series E in March 2021, according to SiliconANGLE."}
+  ],
+  "sources": [
+   {"label": "SecurityScorecard website", "url": "https://securityscorecard.com/"},
+   {"label": "SecurityScorecard pricing", "url": "https://securityscorecard.com/pricing/"},
+   {"label": "TechCrunch: SecurityScorecard snags $180M Series E (18 Mar 2021)", "url": "https://techcrunch.com/2021/03/18/securityscorecard-snags-180m-series-e-to-measure-a-companys-security-risk"},
+   {"label": "SiliconANGLE: SecurityScorecard raises $180M (18 Mar 2021)", "url": "https://siliconangle.com/2021/03/18/security-ratings-firm-securityscorecard-raises-180m-global-expansion/"}
+  ]
+ }
+}

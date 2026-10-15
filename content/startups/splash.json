@@ -1,0 +1,149 @@
+{
+ "slug": "splash",
+ "website": "https://www.splashmusic.com/",
+ "excerpt": "Splash makes a music-making game on Roblox, a beat-making app and the Wemixed remix site. Formerly Popgun, it raised a $20.8M Series A in 2021.",
+ "content": "<p>Splash is a music technology company that builds games and tools for making music, aimed mainly at young creators. Its best-known product is Splash on Roblox, which the company calls the biggest music stage on Roblox: players skate, dance, make music with sound packs and perform live to other players in virtual clubs. Splash also has a stand-alone app with a library of sound packs and a beat-maker instrument, and Wemixed, a web platform where people make short mixes in seconds and build on each other's tracks. The company says it develops its own audio technology, including AI-powered virtual instruments, and it has created a virtual artist character called Kai.</p><p>PocketGamer.biz reported that Splash was founded in 2017 under the name Popgun and that Stephen Phillips was its CEO in 2021. Business News Australia described it as an Australian company. In 2021 PocketGamer.biz said the Roblox game had about 10 million monthly active users and that more than 7.8 million people had made music in it.</p><h2>Funding</h2><p>In November 2021 Splash announced a Series A of about $20.8 million co-led by Amazon's Alexa Fund and BITKRAFT Ventures, with Khosla Ventures and King River Capital, according to PocketGamer.biz and Digital Music News. Business News Australia reported the round as A$27 million. Splash said the money would go into AI-powered virtual instruments, community growth, partnerships and new venues in the game.</p><h2>Pricing</h2><p>Splash does not publish a price list on its website. The game is played inside Roblox, where any in-game purchases are shown, and Wemixed and the app are reached from Splash's site.</p><h2>Who it suits</h2><p>Splash suits teenagers and casual creators who want to make and share music in a game-like setting without learning a full music production program. Producers who need professional mixing tools will want a digital audio workstation instead.</p><p><em>We have not tested Splash. This page is based on the Splash website and on PocketGamer.biz, Digital Music News and Business News Australia.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Music creation game",
+  "platform": "Roblox, mobile app and web (Wemixed)",
+  "starts_at": "Prices not published",
+  "schema_category": "GameApplication",
+  "summary_short": "Make music and perform live in a Roblox game, plus a beat-making app and Wemixed",
+  "maker": {
+   "name": "Splash",
+   "url": "https://www.splashmusic.com/"
+  },
+  "team": [
+   {
+    "name": "Stephen Phillips",
+    "role": "CEO (2021)",
+    "url": "https://www.pocketgamer.biz/splash-20-million-roblox-music-game/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/608b897871ccafc166c3d0f3/648bf8d8be88fa270a64423a_thumb2023.jpg",
+    "alt": "The Splash logo, purple diamond shapes beside the word splash, over a dark graffiti-style background",
+    "credit": "Image: Splash",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/608b897871ccafc166c3d0f3/6498f85c967f83483959e2b6_splash_roblox_mockup-min.png",
+    "alt": "A phone showing the Splash Roblox game: a neon city with a skate park sign, a Splash venue and a player level counter",
+    "credit": "Image: Splash",
+    "w": 2616,
+    "h": 1420
+   }
+  ],
+  "use_cases": [
+   "Making beats and songs inside a Roblox game",
+   "Performing music live to other players in virtual clubs",
+   "Remixing other creators' tracks on Wemixed",
+   "Making beats on the go with the Splash app's sound packs"
+  ],
+  "audience": {
+   "fit": [
+    "are a Roblox player who likes music and performing",
+    "want to make music quickly without learning production software",
+    "enjoy remixing and collaborating with other creators online"
+   ],
+   "not_fit": [
+    "need professional recording, mixing and mastering tools",
+    "do not use Roblox or social music apps"
+   ]
+  },
+  "pricing": {
+   "intro": "Splash does not publish prices on its website. The game runs inside Roblox, which shows any in-game purchases.",
+   "plans": [
+    {
+     "name": "Splash on Roblox",
+     "price": "Not published",
+     "detail": "Played through Roblox"
+    },
+    {
+     "name": "Wemixed and the Splash app",
+     "price": "Not published",
+     "detail": "Linked from splashmusic.com"
+    }
+   ],
+   "notes": [
+    "We did not check in-game or in-app prices for this page."
+   ],
+   "url": "https://www.splashmusic.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other easy ways to make music for fun.",
+   "items": [
+    {
+     "name": "BandLab",
+     "url": "https://www.bandlab.com/",
+     "what": "Free online music studio and social network",
+     "tags": [
+      "Music creation"
+     ],
+     "starts_at": "Free",
+     "difference": "A fuller recording studio rather than a game."
+    },
+    {
+     "name": "GarageBand",
+     "url": "https://www.apple.com/mac/garageband/",
+     "what": "Apple's music app for Mac, iPhone and iPad",
+     "tags": [
+      "Music creation"
+     ],
+     "starts_at": "Free on Apple devices",
+     "difference": "Apple-only, without the multiplayer game layer."
+    },
+    {
+     "name": "Incredibox",
+     "url": "https://www.incredibox.com/",
+     "what": "Music game where you build songs with a band of beatboxers",
+     "tags": [
+      "Music game"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Single-player music toy rather than a live stage."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Splash?",
+    "a": "A company that makes a music-making game on Roblox, a beat-making app and the Wemixed remix platform."
+   },
+   {
+    "q": "Was Splash called Popgun?",
+    "a": "Yes. PocketGamer.biz reported that Splash was formerly known as Popgun and was founded in 2017."
+   },
+   {
+    "q": "Who invested in Splash?",
+    "a": "Its 2021 Series A was co-led by Amazon's Alexa Fund and BITKRAFT Ventures, with Khosla Ventures and King River Capital."
+   },
+   {
+    "q": "How much does Splash cost?",
+    "a": "Splash does not publish prices on its website; the game is played inside Roblox, which shows any purchases."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Splash website",
+    "url": "https://www.splashmusic.com/"
+   },
+   {
+    "label": "PocketGamer.biz: Splash raises $20 million for Roblox music game (2 Nov 2021)",
+    "url": "https://www.pocketgamer.biz/splash-20-million-roblox-music-game/"
+   },
+   {
+    "label": "Digital Music News: Roblox music game Splash Series A (2 Nov 2021)",
+    "url": "https://www.digitalmusicnews.com/2021/11/02/roblox-splash-series-a/"
+   },
+   {
+    "label": "Business News Australia: Splash raises $27m",
+    "url": "https://www.businessnewsaus.com.au/articles/splash-raises--27m-to-make-roblox-music-making-game-a-metaverse-megastar.html"
+   }
+  ]
+ }
+}

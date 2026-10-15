@@ -1,0 +1,70 @@
+{
+ "slug": "sword-health",
+ "website": "https://sword.com/",
+ "excerpt": "Sword Health sells AI-led digital physical therapy, women's health, cardiometabolic and mental health care to employers and health plans. Valued at $4 billion in 2025.",
+ "content": "<p>Sword Health, now branded simply as Sword, is a digital health company that started as a virtual physical therapist and now sells what it calls AI Care: programmes in which an AI care specialist named Phoenix guides members through sessions in the Sword app while licensed human clinicians oversee the care plan. Its website lists four programmes: Thrive for muscle and joint pain through digital physical therapy, Bloom for women's health from fertility to menopause, Pulse for cardiometabolic risks such as blood pressure, weight and glucose, and Mind for mental health. Sword sells to employers and health plans, which offer it to their members; individuals usually enrol through a benefit.</p><p>Virgílio Bento is the Portuguese company's founder and CEO. Tech.eu reported in June 2025 that Sword had more than 500,000 members across three continents, 6.5 million AI sessions completed since 2020 and more than 1,000 enterprise clients.</p><h2>Funding and deals</h2><p>On 17 June 2025 TechCrunch reported a $40 million round led by General Catalyst at a $4 billion valuation, up from $3 billion a year earlier, bringing total funding to $380 million. TechCrunch said Sword had a $240 million annual revenue run rate, was cash-flow positive, and that Bento was now aiming for an IPO around 2028. In August 2026 STAT reported, from a regulatory filing, that Sword planned to acquire Headspace, the mental health app; Sword's site now announces that it is acquiring Headspace.</p><h2>Pricing</h2><p>Sword does not publish prices. Employers and health plans buy it under contract; members get access through those benefits, and organisations contact Sword's sales team for terms.</p><h2>Who it suits</h2><p>It suits HR benefits teams and health plans looking to cut musculoskeletal, women's health, cardiometabolic or mental health costs. Individuals without a sponsoring employer or plan may find it harder to access.</p><p><em>We have not used Sword. This page is based on Sword's website, TechCrunch, Tech.eu and STAT.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Digital health and AI care",
+  "platform": "iOS and Android app with sensors and clinician oversight",
+  "starts_at": "Through employers and health plans",
+  "schema_category": "HealthApplication",
+  "summary_short": "AI-led physical therapy, women's health, cardiometabolic and mental health care for employers and health plans",
+  "maker": {"name": "Sword Health", "url": "https://sword.com/"},
+  "team": [{"name": "Virgílio Bento", "role": "Founder and CEO", "url": "https://techcrunch.com/?p=3019367"}],
+  "gallery": [
+   {"url": "https://a.storyblok.com/f/325797/7680x4320/3795084f9a/seo-image.jpg/m/1600x0", "alt": "The Sword logo above the line Artificial intelligence to heal our world on a soft multicoloured background", "credit": "Image: Sword Health", "w": 1600, "h": 837},
+   {"url": "https://a.storyblok.com/f/325797/1600x1066/b02d647990/40x-roi.jpg", "alt": "Cover of a Sword Thrive whitepaper titled Sword's AI Care drives 4.0x ROI, under a large 4.0x ROI heading", "credit": "Image: Sword Health", "w": 1600, "h": 1066}
+  ],
+  "use_cases": [
+   "Offering digital physical therapy for back, joint and muscle pain as an employee benefit",
+   "Supporting women's health from fertility to menopause",
+   "Helping members manage blood pressure, weight and glucose",
+   "Providing always-on mental health support with psychologist oversight",
+   "Reducing avoidable surgeries and ER visits for a health plan's members"
+  ],
+  "audience": {
+   "fit": [
+    "run benefits for a self-insured employer",
+    "are a health plan or national health system looking at digital care programmes",
+    "are an employee whose employer or plan already offers Sword"
+   ],
+   "not_fit": [
+    "want to buy care directly as an individual without a sponsoring employer or plan",
+    "need in-person physical therapy or emergency care"
+   ]
+  },
+  "pricing": {
+   "intro": "Sword does not publish prices. Employers and health plans contract with Sword; members usually access it through their benefits.",
+   "plans": [
+    {"name": "Thrive (pain and physical therapy)", "price": "Contract pricing", "detail": "Sold to employers and health plans"},
+    {"name": "Bloom (women's health)", "price": "Contract pricing", "detail": "Sold to employers and health plans"},
+    {"name": "Pulse (cardiometabolic)", "price": "Contract pricing", "detail": "Sold to employers and health plans"},
+    {"name": "Mind (mental health)", "price": "Contract pricing", "detail": "Sold to employers and health plans"}
+   ],
+   "notes": [],
+   "url": "https://sword.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other digital musculoskeletal and whole-person care providers sold through employers and plans.",
+   "items": [
+    {"name": "Hinge Health", "url": "https://www.hingehealth.com/", "what": "Digital physical therapy and pain care", "tags": ["Musculoskeletal care"], "starts_at": "Through employers and plans", "difference": "Sword's closest rival in digital physical therapy."},
+    {"name": "Omada Health", "url": "https://www.omadahealth.com/", "what": "Virtual care for diabetes, hypertension, weight and joints", "tags": ["Cardiometabolic", "MSK"], "starts_at": "Through employers and plans", "difference": "Stronger roots in diabetes and cardiometabolic care."},
+    {"name": "Lyra Health", "url": "https://www.lyrahealth.com/", "what": "Mental health benefits for employers", "tags": ["Mental health"], "starts_at": "Through employers", "difference": "Focused on mental health rather than physical therapy."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Sword Health?", "a": "A digital health company whose AI Care programmes cover pain and physical therapy, women's health, cardiometabolic health and mental health, with clinicians overseeing an AI care specialist."},
+   {"q": "Is Sword Health free?", "a": "Members usually get it through an employer or health plan; Sword does not publish prices for organisations."},
+   {"q": "How much is Sword Health worth?", "a": "TechCrunch reported a $4 billion valuation after a $40 million round led by General Catalyst in June 2025."},
+   {"q": "Is Sword buying Headspace?", "a": "STAT reported in August 2026 that Sword planned to acquire Headspace, and Sword's website says it is acquiring the company."}
+  ],
+  "sources": [
+   {"label": "Sword website", "url": "https://sword.com/"},
+   {"label": "TechCrunch: Sword Health raises $40M at $4B valuation (17 Jun 2025)", "url": "https://techcrunch.com/?p=3019367"},
+   {"label": "Tech.eu: Sword Health raises $40M at $4B valuation (17 Jun 2025)", "url": "https://tech.eu/2025/06/17/sword-health-raises-40m-at-4b-valuation-to-expand-ai-first-care-into-mental-health/"},
+   {"label": "STAT: Sword Health to acquire Headspace, per regulatory filing (25 Aug 2026)", "url": "https://www.statnews.com/2026/08/25/sword-health-to-acquire-headspace-per-regulatory-filing/"}
+  ]
+ }
+}

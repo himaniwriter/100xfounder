@@ -1,0 +1,72 @@
+{
+ "slug": "solana",
+ "website": "https://solana.com/",
+ "excerpt": "Solana is a high-throughput public blockchain used for payments, trading, stablecoins and crypto apps. How it works, what it costs to use, its history and alternatives.",
+ "content": "<p>Solana is a public blockchain designed for speed and low fees. Developers deploy programs (smart contracts) on it, and users pay small fees in its native token, SOL, to send transactions. Its website now presents Solana as a network for internet capital markets, payments and crypto applications, and lists uses ranging from decentralised finance and stablecoin payments to tokenised assets for institutions. In October 2026 the Solana Foundation announced a partnership with Samsung to deliver stablecoin transfers in Samsung Wallet on Galaxy devices in the US.</p><p>Solana grew out of Proof of History, a way of time-stamping transactions that Anatoly Yakovenko described in a 2017 draft white paper. He and Greg Fitzgerald published the official white paper and started a test network in 2018 under the company now called Solana Labs, and the mainnet beta launched in March 2020. The Solana Foundation, which supports the network's ecosystem and runs the solana.com site and the annual Breakpoint conference, was set up in 2020. In June 2021 Solana Labs raised $314 million in a private sale of SOL tokens led by Andreessen Horowitz and Polychain Capital, The Block reported, with Yakovenko saying the next phase was onboarding a billion users.</p><h2>Pricing</h2><p>Using Solana costs a transaction fee rather than a subscription. According to Solana's documentation, every transaction pays a base fee of 5,000 lamports (fractions of a SOL) per signature, half of which is burned and half paid to the validator. Users can add an optional priority fee to improve the chance their transaction is processed quickly during busy periods. The dollar cost depends on the price of SOL.</p><h2>Who it suits</h2><p>Solana suits developers building consumer crypto apps, payments or trading products that need high throughput and low fees, and institutions experimenting with stablecoins or tokenised assets. Anyone holding SOL should understand that crypto assets are volatile and that this page is not investment advice.</p><p><em>This page is based on solana.com, Solana's developer documentation and The Block's reporting.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Layer 1 blockchain",
+  "platform": "Public blockchain network",
+  "starts_at": "Per-transaction fee (5,000 lamports per signature base fee)",
+  "schema_category": "FinanceApplication",
+  "summary_short": "High-throughput public blockchain for payments, trading and crypto apps",
+  "maker": {"name": "Solana Foundation", "url": "https://solana.com/"},
+  "team": [
+   {"name": "Anatoly Yakovenko", "role": "Co-founder; CEO of Solana Labs", "url": "https://www.theblock.co/post/107749/solana-labs-raises-314-million-funding-a16z-polychain-capital"},
+   {"name": "Greg Fitzgerald", "role": "Co-founder", "url": "https://forklog.com/en/what-is-solana-sol/"}
+  ],
+  "gallery": [
+   {"url": "https://solana.com/social/solana.png", "alt": "The Solana logo, three stacked slanted bars in a green-to-purple gradient beside the word SOLANA, on a purple and green background", "credit": "Image: Solana Foundation", "w": 1200, "h": 630},
+   {"url": "https://solana.com/_next/image?url=%2Fsrc%2Fimg%2Findex%2Fhero-bg.webp&w=1920&q=75", "alt": "Abstract artwork from the Solana homepage: a glossy purple ribbon rising in waves across a dark purple and green background", "credit": "Image: Solana Foundation", "w": 1920, "h": 921}
+  ],
+  "use_cases": [
+   "Sending stablecoin payments with low fees",
+   "Building decentralised trading and lending apps",
+   "Launching tokens and NFTs",
+   "Settling tokenised assets for financial institutions",
+   "Building consumer apps that need many fast transactions"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer building a crypto app that needs high throughput",
+    "are a fintech or institution exploring stablecoin payments or tokenised assets",
+    "want low per-transaction costs compared with busier networks"
+   ],
+   "not_fit": [
+    "need a traditional, regulated payment rail with chargebacks",
+    "are uncomfortable with crypto price volatility"
+   ]
+  },
+  "pricing": {
+   "intro": "There is no subscription. Each transaction pays a small fee in SOL; the dollar cost depends on SOL's market price.",
+   "plans": [
+    {"name": "Base fee", "price": "5,000 lamports per signature", "detail": "Half burned, half paid to the validator"},
+    {"name": "Priority fee", "price": "Optional", "detail": "Set per transaction to improve scheduling during congestion; paid to the validator"}
+   ],
+   "notes": ["This page does not give investment advice. Crypto assets are volatile."],
+   "url": "https://solana.com/docs/core/fees",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other public blockchains for building apps.",
+   "items": [
+    {"name": "Ethereum", "url": "https://ethereum.org/", "what": "The largest smart-contract blockchain", "tags": ["Layer 1", "Smart contracts"], "starts_at": "Gas fees per transaction", "difference": "Larger ecosystem; most low-cost activity happens on layer-2 networks."},
+    {"name": "Sui", "url": "https://sui.io/", "what": "High-throughput layer 1 using the Move language", "tags": ["Layer 1"], "starts_at": "Gas fees per transaction", "difference": "Different programming model based on objects and Move."},
+    {"name": "Base", "url": "https://www.base.org/", "what": "Ethereum layer-2 network incubated by Coinbase", "tags": ["Layer 2"], "starts_at": "Gas fees per transaction", "difference": "Inherits security from Ethereum rather than running its own validator set."}
+   ]
+  },
+  "faq": [
+   {"q": "Who created Solana?", "a": "Anatoly Yakovenko, who described Proof of History in 2017, co-founded Solana Labs with Greg Fitzgerald."},
+   {"q": "When did Solana launch?", "a": "Its mainnet beta launched in March 2020."},
+   {"q": "How much does a Solana transaction cost?", "a": "A base fee of 5,000 lamports per signature, plus an optional priority fee; the dollar amount depends on SOL's price."},
+   {"q": "What is the difference between Solana Labs and the Solana Foundation?", "a": "Solana Labs is the company that first built the network; the Solana Foundation supports the wider ecosystem and runs solana.com and the Breakpoint conference."}
+  ],
+  "sources": [
+   {"label": "Solana website", "url": "https://solana.com/"},
+   {"label": "Solana docs: Fees", "url": "https://solana.com/docs/core/fees"},
+   {"label": "Solana news (Samsung Wallet partnership, Oct 2026)", "url": "https://solana.com/news"},
+   {"label": "The Block: Solana Labs raises $314 million (9 Jun 2021)", "url": "https://www.theblock.co/post/107749/solana-labs-raises-314-million-funding-a16z-polychain-capital"},
+   {"label": "ForkLog: What is Solana", "url": "https://forklog.com/en/what-is-solana-sol/"}
+  ]
+ }
+}

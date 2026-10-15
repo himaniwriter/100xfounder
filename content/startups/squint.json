@@ -1,0 +1,67 @@
+{
+ "slug": "squint",
+ "website": "https://www.squint.ai/",
+ "excerpt": "Squint uses AI and augmented reality to turn factory workers' know-how into step-by-step guides on a phone or tablet. It raised a $40M Series B in 2025.",
+ "content": "<p>Squint is a software company that helps manufacturers capture and share how expert workers do their jobs. A worker records a task, such as changing over a packaging line or servicing a machine, and Squint's AI documents it automatically as a step-by-step procedure. Other workers then follow that guide on a phone or tablet, with augmented reality placing instructions over the equipment in front of them, and AI agents give real-time guidance to cut errors. Squint now describes its product as industrial intelligence, and its website lists uses in quality and scrap reduction, maintenance and uptime, standardisation and compliance, and workforce training, across automotive, food and beverage, consumer goods, oil and gas, energy and heavy industry.</p><p>Devin Bhushan, a former Splunk executive, founded the company and is its CEO. In an interview with Fortune he said the company's biggest competitor is physical binders of paper procedures. SiliconANGLE reported that PepsiCo uses Squint in bottling and packaging plants and said training times were cut in half, and that Michelin uses it to standardise complex assembly across its plants; Manufacturing Today also named Ford as a customer.</p><h2>Funding</h2><p>On 12 August 2025 Squint announced a $40 million Series B co-led by The Westly Group and TCV, with earlier investors Sequoia Capital and Menlo Ventures taking part. Fortune reported a $265 million valuation, and SiliconANGLE put total funding at more than $59 million. The company said it would use the money to improve its AI and expand into industries such as energy and logistics.</p><h2>Pricing</h2><p>Squint does not publish prices. Its website asks companies to book a demo.</p><h2>Who it suits</h2><p>Squint fits operations, quality and training leaders at plants that depend on experienced staff and paper-based procedures. It is less relevant to office businesses or very small workshops.</p><p><em>We have not tested Squint. This page is based on Squint's website and on Fortune, SiliconANGLE and Manufacturing Today.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Industrial AI and AR work instructions",
+  "platform": "Mobile app and web",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI and AR that turn expert factory work into step-by-step guides",
+  "maker": {"name": "Squint", "url": "https://www.squint.ai/"},
+  "team": [{"name": "Devin Bhushan", "role": "Founder and CEO", "url": "https://www.fortune.com/2025/08/12/exclusive-squint-raises-40-million-at-265-million-valuation-to-modernize-manufacturing-for-companies-like-pepsi-and-michelin"}],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/650d89844a661d79c18d6d47/698e278a895cd8ac4b5a8425_(x2).png", "alt": "The white Squint logo over a blue halftone photo of a worker wearing safety glasses", "credit": "Image: Squint", "w": 2400, "h": 1260},
+   {"url": "https://cdn.prod.website-files.com/650d89844a661d79c18d6d47/6a7db69638c1bfbb8d177dc3_Frame%202147239168.avif", "alt": "Gloved hands holding a rugged tablet that shows two workers in hard hats and ear protection inspecting industrial pipework", "credit": "Image: Squint", "w": 538, "h": 606}
+  ],
+  "use_cases": [
+   "Recording an expert's procedure and turning it into a step-by-step guide automatically",
+   "Training new line workers with AR instructions on a phone",
+   "Standardising assembly or changeover steps across several plants",
+   "Keeping maintenance on schedule with guided checklists",
+   "Reducing scrap and keeping audit records for compliance"
+  ],
+  "audience": {
+   "fit": [
+    "run operations, quality or training at a manufacturing or energy site",
+    "rely on paper procedures or a few experienced experts",
+    "need to onboard new workers quickly across several plants"
+   ],
+   "not_fit": [
+    "are an office-based business",
+    "want a self-serve tool with published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Squint does not publish prices. Companies book a demo to get a quote.",
+   "plans": [
+    {"name": "Squint platform", "price": "Quote on request", "detail": "Mobile apps, AI-generated procedures and industrial agents"}
+   ],
+   "notes": [],
+   "url": "https://www.squint.ai/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other digital work-instruction and frontline tools for manufacturing.",
+   "items": [
+    {"name": "Augmentir", "url": "https://www.augmentir.com/", "what": "Connected worker platform with AI-based training and work instructions", "tags": ["Connected worker"], "starts_at": "See its own site", "difference": "Emphasises skills tracking and worker performance data."},
+    {"name": "Poka", "url": "https://www.poka.io/", "what": "Factory worker app for instructions, training and communication", "tags": ["Connected worker"], "starts_at": "See its own site", "difference": "Combines instructions with team communication."},
+    {"name": "Dozuki", "url": "https://www.dozuki.com/", "what": "Visual work instruction software", "tags": ["Work instructions"], "starts_at": "See its own site", "difference": "Focused on building visual standard work documents."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Squint do?", "a": "It captures how experienced workers do tasks, uses AI to turn that into step-by-step procedures, and delivers them on mobile devices with augmented reality."},
+   {"q": "Who uses Squint?", "a": "Coverage of its 2025 round named PepsiCo, Michelin and Ford as customers."},
+   {"q": "How much has Squint raised?", "a": "More than $59 million, including a $40 million Series B in August 2025 that Fortune said valued it at $265 million."},
+   {"q": "How much does Squint cost?", "a": "Prices are not published; Squint quotes after a demo."}
+  ],
+  "sources": [
+   {"label": "Squint website", "url": "https://www.squint.ai/"},
+   {"label": "Fortune: Squint raises $40 million at $265 million valuation (12 Aug 2025)", "url": "https://www.fortune.com/2025/08/12/exclusive-squint-raises-40-million-at-265-million-valuation-to-modernize-manufacturing-for-companies-like-pepsi-and-michelin"},
+   {"label": "SiliconANGLE: Squint gets $40M funding (12 Aug 2025)", "url": "https://siliconangle.com/2025/08/12/squint-gets-40m-funding-accelerate-human-machine-collaboration-manufacturing/"},
+   {"label": "Manufacturing Today: Squint lands $40M", "url": "https://manufacturing-today.com/news/squint-lands-40m-to-transform-factory-floors-for-pepsico-and-michelin/"}
+  ]
+ }
+}
