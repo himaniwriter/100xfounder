@@ -19,7 +19,7 @@ if ($tool) {
             '@type' => 'WebApplication',
             'name' => $tool['title'],
             'url' => home_url('/tools/' . $tool['slug'] . '/'),
-            'applicationCategory' => 'FinanceApplication',
+            'applicationCategory' => $tool['app_category'] ?? 'FinanceApplication',
             'operatingSystem' => 'Any',
             'offers' => ['@type' => 'Offer', 'price' => '0', 'priceCurrency' => 'INR'],
             'description' => $tool['desc'],
@@ -32,6 +32,7 @@ $tool_icons = [
     'in-hand-salary-calculator' => '<rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/>',
     'salary-hike-calculator' => '<path d="M4 17l6-6 4 4 6-7"/><path d="M14 8h6v6"/>',
     'notice-period-buyout-calculator' => '<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>',
+    'startup-100x-score' => '<path d="M4 17a8 8 0 0 1 16 0"/><path d="M12 17l4-5"/>',
 ];
 
 get_header();
@@ -131,6 +132,7 @@ if (!$tool) : ?>
         <p style="font-size:14px;color:var(--t3)">Assumes basic = 50% of CTC, PF capped at ₹3,000 a month, ₹2,500 professional tax and, for the old regime, ₹1.5L of 80C.</p>
     </div>
 </section>
+<?php elseif ($tool['slug'] === 'startup-100x-score') : get_template_part('parts/tool-100x-score'); ?>
 <?php else : ?>
 <section class="wrap tool-grid" data-tool="notice">
     <div class="tool-in">
@@ -162,6 +164,10 @@ if (!$tool) : ?>
         <?php foreach ($tools as $slug => $t) : if ($slug === $tool['slug']) continue; ?><a class="chip" href="<?php echo esc_url($hub . $slug . '/'); ?>"><?php echo esc_html($t['short']); ?></a><?php endforeach; ?>
         <a class="chip" href="<?php echo esc_url(home_url('/jobs/')); ?>">Browse jobs</a>
     </div>
+    <?php if ($tool['slug'] === 'startup-100x-score') : ?>
+    <p class="k" style="margin-top:32px;font-size:10.5px;max-width:760px;line-height:1.7">A self-assessment to help you prioritise, not an investment view or a valuation. Your answers stay in your browser unless you ask us to email the report.</p>
+    <?php else : ?>
     <p class="k" style="margin-top:32px;font-size:10.5px;max-width:760px;line-height:1.7">Estimate only, not tax or legal advice. Slabs, the ₹75,000 / ₹50,000 standard deduction, the Section 87A rebate (up to ₹12 lakh taxable income in the new regime, ₹5 lakh in the old), surcharge and 4% cess follow the Income-tax Act, 2025 for tax year 2026-27 (unchanged by Budget 2026); the PF cap uses the ₹25,000 wage ceiling in force from 17 September 2026. Sources: <a class="u" href="https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1" target="_blank" rel="noopener nofollow">Income Tax Department</a>, <a class="u" href="https://www.indiabudget.gov.in/" target="_blank" rel="noopener nofollow">Union Budget 2026-27</a>, <a class="u" href="https://www.epfindia.gov.in/" target="_blank" rel="noopener nofollow">EPFO</a>. Your payslip may differ (allowances, perks, state PT rules).</p>
+    <?php endif; ?>
 </section>
 <?php get_footer();

@@ -150,6 +150,8 @@ echo xft_photo_strip(xft_event_strip_items(), 'Upcoming startup events', 'events
 </section>
 <?php endif; ?>
 
+<?php echo function_exists('xf_meter_leaderboard_html') ? xf_meter_leaderboard_html() : ''; // phpcs:ignore -- escaped inside ?>
+
 <?php
 $top_launches = post_type_exists('xf_startup') ? get_posts(['post_type' => 'xf_startup', 'posts_per_page' => 5, 'meta_key' => '_xf_launch_day', 'orderby' => ['meta_value' => 'DESC', 'date' => 'DESC']]) : [];
 $ig = [];

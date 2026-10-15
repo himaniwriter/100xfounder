@@ -32,6 +32,14 @@ function xf_tools() {
             'group' => 'Careers',
             'seo_title' => 'Notice Period Buyout Calculator (India)',
         ],
+        'startup-100x-score' => [
+            'title' => 'How 100X is your startup?',
+            'short' => '100X score',
+            'desc' => 'Answer 10 quick questions on traction, team and market and get a 0–100X startup score, your three biggest levers and a card to share.',
+            'group' => 'Founders',
+            'seo_title' => 'How 100X is your startup? Free startup score',
+            'app_category' => 'BusinessApplication',
+        ],
     ];
 }
 

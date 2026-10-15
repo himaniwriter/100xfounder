@@ -150,4 +150,131 @@
     nb.addEventListener('input', renderNotice);
     renderNotice();
   }
+
+  /* ---- Startup 100X score (quiz). Weights add up to 100; nothing leaves the browser unless the reader asks for the email. ---- */
+  var QUIZ = [
+    ['Stage', 'Where is the product today?', [['Idea', 2], ['Building the MVP', 4], ['Live with first users', 7], ['Paying customers', 10]], 'Get to paying customers: one paying user teaches you more than a long waitlist.'],
+    ['Revenue', 'Monthly revenue right now?', [['None yet', 1], ['Under ₹1 lakh', 5], ['₹1–10 lakh', 9], ['Over ₹10 lakh', 12]], 'Put a price on it this month, even a small one, and see who pays.'],
+    ['Growth', 'Average monthly growth over the last 3 months?', [['Flat or not tracked', 2], ['Under 5%', 5], ['5–15%', 10], ['Over 15%', 14]], 'Pick one weekly growth number, track it, and run one experiment a week to move it.'],
+    ['Retention', 'Of users who joined 3 months ago, how many still use it?', [['Not sure', 1], ['Under 10%', 4], ['10–40%', 8], ['Over 40%', 12]], 'Call five users who stopped using it and fix the top reason before building anything new.'],
+    ['Team', 'Who is building it?', [['Solo, part-time', 2], ['Solo, full-time', 5], ['2+ full-time founders', 8], ['Founders plus first hires', 10]], 'Find a full-time co-founder or first hire who covers your weakest skill.'],
+    ['Distribution', 'How do new users find you?', [['Not sure yet', 2], ['Word of mouth', 6], ['One channel that works', 8], ['Several channels', 10]], 'Ask where your last 20 customers came from and double down on the top source.'],
+    ['Funding', 'How much runway do you have?', [['Under 3 months', 1], ['3–9 months', 3], ['9–18 months', 5], ['18+ months or profitable', 6]], 'Cut spend or bring in revenue until you have at least 12 months of runway.'],
+    ['Moat', 'What stops a copycat?', [['Nothing yet', 1], ['Speed and execution', 4], ['Own data or tech', 7], ['Network effects or switching costs', 8]], 'Write down what gets better for users as you grow, and build towards it.'],
+    ['Market', 'How big is the problem you solve?', [['Small niche', 2], ['Sizeable niche', 5], ['Large market', 7], ['Large and growing fast', 9]], 'Size the market bottom-up: how many buyers, and what each would pay a year.'],
+    ['Speed', 'How often do you ship to users?', [['Monthly or slower', 2], ['Every 2 weeks', 5], ['Every week', 7], ['Several times a week', 9]], 'Ship something users can see every week, even if it is small.']
+  ];
+  /** picks: one option index (or -1) per question → {score, done, tips}. */
+  function quizScore(picks) {
+    var score = 0, done = 0, gaps = [];
+    QUIZ.forEach(function (q, i) {
+      var max = q[2][q[2].length - 1][1];
+      if (picks[i] < 0) return;
+      var pts = q[2][picks[i]][1];
+      score += pts; done++;
+      gaps.push([pts / max, i]);
+    });
+    gaps.sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; });
+    return { score: score, done: done === QUIZ.length, tips: gaps.slice(0, 3).map(function (g) { return QUIZ[g[1]][3]; }) };
+  }
+  var quizBand = function (n) { return n < 30 ? 'Early' : n < 60 ? 'Traction' : n < 85 ? 'Scaling' : 'Breakout'; };
+  console.assert(quizScore(QUIZ.map(function (q) { return q[2].length - 1; })).score === 100 && quizScore(QUIZ.map(function () { return -1; })).score === 0, 'quiz weights must add up to 100');
+
+  var mq = $('[data-tool="meter100x"]');
+  if (mq) {
+    var picks = QUIZ.map(function () { return -1; });
+    var box = $('[data-quiz]', mq), last = null;
+    var esc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    var setGauge = function (n) {
+      var arc = mq.querySelector('.xf-meter__arc'), needle = mq.querySelector('.xf-meter__needle');
+      if (arc) arc.setAttribute('stroke-dasharray', n + ' 100');
+      if (needle) needle.style.transform = 'rotate(' + (-90 + 1.8 * n) + 'deg)';
+    };
+    var renderQuiz = function () {
+      box.innerHTML = QUIZ.map(function (q, i) {
+        return '<fieldset class="xf-quiz__q"><legend><span class="k">' + (i + 1) + ' · ' + q[0] + '</span><br>' + esc(q[1]) + '</legend><div class="xf-quiz__opts">' +
+          q[2].map(function (o, j) { return '<button type="button" class="xf-quiz__opt" data-q="' + i + '" data-o="' + j + '" aria-pressed="' + (picks[i] === j) + '">' + esc(o[0]) + '</button>'; }).join('') + '</div></fieldset>';
+      }).join('');
+    };
+    var renderResult = function () {
+      var r = quizScore(picks);
+      last = r;
+      $('[data-q-score]', mq).textContent = r.score;
+      $('[data-q-answered]', mq).textContent = picks.filter(function (p) { return p >= 0; }).length;
+      $('[data-q-band]', mq).textContent = r.done ? quizBand(r.score) : 'Answer all 10';
+      setGauge(r.score);
+      $('[data-q-done]', mq).hidden = !r.done;
+      if (!r.done) return;
+      $('[data-q-tips]', mq).innerHTML = r.tips.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
+      var url = location.origin + location.pathname, text = 'My startup scored ' + r.score + 'X on the 100X score. How 100X is yours?';
+      $('[data-q-share="wa"]', mq).href = 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url);
+      $('[data-q-share="x"]', mq).href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url);
+      $('[data-q-share="li"]', mq).href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
+    };
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-q]');
+      if (!b) return;
+      picks[+b.getAttribute('data-q')] = +b.getAttribute('data-o');
+      b.parentNode.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      renderResult();
+    });
+
+    /* Score card: 1080×1350 PNG in the site's style. */
+    var wrapText = function (ctx, t, x, y, w, lh) {
+      var words = t.split(' '), line = '';
+      words.forEach(function (wd) {
+        if (ctx.measureText(line + wd).width > w && line) { ctx.fillText(line.trim(), x, y); y += lh; line = ''; }
+        line += wd + ' ';
+      });
+      ctx.fillText(line.trim(), x, y);
+      return y + lh;
+    };
+    var drawCard = function (r) {
+      var c = document.createElement('canvas'); c.width = 1080; c.height = 1350;
+      var x = c.getContext('2d');
+      var grad = function (x0, x1) { var g = x.createLinearGradient(x0, 0, x1, 0); g.addColorStop(0, '#7c5cff'); g.addColorStop(.45, '#b07cff'); g.addColorStop(.8, '#ff6ad5'); g.addColorStop(1, '#6a7bff'); return g; };
+      x.fillStyle = '#0b0b0c'; x.fillRect(0, 0, 1080, 1350);
+      var glow = x.createRadialGradient(900, 120, 0, 900, 120, 700); glow.addColorStop(0, 'rgba(124,92,255,.45)'); glow.addColorStop(1, 'rgba(124,92,255,0)');
+      x.fillStyle = glow; x.fillRect(0, 0, 1080, 1350);
+      x.fillStyle = grad(0, 1080); x.fillRect(0, 0, 1080, 8);
+      x.fillStyle = '#b07cff'; x.font = '500 30px "Geist Mono", monospace'; x.fillText('MY STARTUP’S 100X SCORE', 80, 130);
+      x.lineCap = 'round'; x.lineWidth = 44;
+      x.strokeStyle = '#232326'; x.beginPath(); x.arc(540, 560, 300, Math.PI, 2 * Math.PI); x.stroke();
+      x.strokeStyle = grad(240, 840); x.beginPath(); x.arc(540, 560, 300, Math.PI, Math.PI * (1 + Math.max(.001, r.score / 100))); x.stroke();
+      x.textAlign = 'center'; x.fillStyle = grad(330, 750); x.font = '700 190px Inter, sans-serif'; x.fillText(r.score + 'X', 540, 560);
+      x.fillStyle = '#f2f2ef'; x.font = '500 34px "Geist Mono", monospace'; x.fillText(quizBand(r.score).toUpperCase(), 540, 625);
+      x.textAlign = 'left'; x.fillStyle = '#8c8c88'; x.font = '500 28px "Geist Mono", monospace'; x.fillText('BIGGEST LEVERS', 80, 760);
+      var y = 820; x.font = '400 36px Inter, sans-serif';
+      r.tips.forEach(function (t, i) { x.fillStyle = '#b07cff'; x.fillText((i + 1) + '.', 80, y); x.fillStyle = '#d6d6d2'; y = wrapText(x, t, 130, y, 870, 48) + 22; });
+      x.fillStyle = '#f2f2ef'; x.font = '700 44px Inter, sans-serif'; x.fillText('100xFounder', 80, 1230);
+      x.fillStyle = '#8c8c88'; x.font = '500 26px "Geist Mono", monospace'; x.fillText('100xfounder.com/tools/startup-100x-score', 80, 1280);
+      return c;
+    };
+    $('[data-q-png]', mq).addEventListener('click', function () {
+      if (!last || !last.done) return;
+      (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () {
+        drawCard(last).toBlob(function (blob) {
+          var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'my-100x-score-' + last.score + 'x.png';
+          document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+        }, 'image/png');
+      });
+    });
+
+    var form = $('[data-q-mail]', mq);
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = form.elements, msg = $('[data-q-mail-msg]', form), btn = form.querySelector('button[type=submit]');
+      btn.disabled = true; msg.textContent = 'Sending…';
+      fetch(form.getAttribute('data-endpoint'), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({
+        name: f.name.value, email: f.email.value, website: f.website.value, token: form.getAttribute('data-token'),
+        consent_request: f.consent_request.checked, consent_news: f.consent_news.checked, score: last.score, tips: last.tips
+      }) }).then(function (r) { return r.json(); }).then(function (d) {
+        if (d && d.ok) { msg.textContent = 'Done. Your report is on its way to ' + f.email.value + '.'; form.reset(); }
+        else { btn.disabled = false; msg.textContent = (d && d.message) || 'Could not send that. Please try again.'; }
+      }).catch(function () { btn.disabled = false; msg.textContent = 'Could not send that. Please try again.'; });
+    });
+
+    renderQuiz();
+    renderResult();
+  }
 })();

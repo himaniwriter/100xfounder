@@ -199,6 +199,40 @@
     dlg.addEventListener('close', function () { if (opener) opener.focus(); });
   });
 
+  // 100X Meter on startup pages: animate the gauge in, then one tap per reader per day.
+  var meterSet = function (m, n) {
+    var arc = m.querySelector('.xf-meter__arc'), needle = m.querySelector('.xf-meter__needle');
+    if (arc) arc.setAttribute('stroke-dasharray', n + ' 100');
+    if (needle) needle.style.transform = 'rotate(' + (-90 + 1.8 * n) + 'deg)';
+  };
+  var meterDay = new Date().toDateString();
+  document.querySelectorAll('[data-meter]').forEach(function (m) {
+    var arc = m.querySelector('.xf-meter__arc');
+    requestAnimationFrame(function () { requestAnimationFrame(function () { meterSet(m, arc ? +arc.getAttribute('data-to') : 0); }); });
+    var btn = m.querySelector('[data-meter-tap]');
+    try { if (btn && localStorage.getItem('xf_meter_' + m.getAttribute('data-meter')) === meterDay) { btn.disabled = true; btn.textContent = '✓ 100X’d today'; } } catch (err) {}
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var msg = m.querySelector('[data-meter-msg]'), hp = m.querySelector('.xf-hp');
+      btn.disabled = true;
+      var done = function () { btn.textContent = '✓ 100X’d today'; try { localStorage.setItem('xf_meter_' + m.getAttribute('data-meter'), meterDay); } catch (err) {} };
+      fetch(m.getAttribute('data-endpoint'), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: +m.getAttribute('data-meter'), t: m.getAttribute('data-t'), website: hp ? hp.value : '' }) })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          var info = d && d.data && d.data.level !== undefined ? d.data : d;
+          if (info && typeof info.level === 'number') {
+            m.querySelector('[data-meter-level]').textContent = info.level;
+            m.querySelector('[data-meter-taps]').textContent = info.taps_30d;
+            meterSet(m, info.level);
+          }
+          if (d && typeof d.level === 'number') { done(); if (msg) msg.textContent = 'Thanks! Your tap is counted. Come back tomorrow to push it again.'; }
+          else if (d && d.code === 'already') { done(); if (msg) msg.textContent = d.message; }
+          else { btn.disabled = false; if (msg) msg.textContent = (d && d.message) || 'Could not save that. Please try again.'; }
+        })
+        .catch(function () { btn.disabled = false; if (msg) msg.textContent = 'Could not save that. Please try again.'; });
+    });
+  });
+
   // Smooth scrolling for mouse and trackpad. Phones keep their own touch
   // scrolling, and anyone who has asked their device for less motion gets the
   // browser's ordinary scroll. Sideways scrollers (tables, photo strips) and

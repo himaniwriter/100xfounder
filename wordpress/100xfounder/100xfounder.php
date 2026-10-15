@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 }
 
 define('XF_VERSION', '1.9.0');
-define('XF_DB_VERSION', '15');
+define('XF_DB_VERSION', '16');
 define('XF_FILE', __FILE__);
 define('XF_DIR', plugin_dir_path(__FILE__));
 define('XF_URL', plugin_dir_url(__FILE__));
@@ -60,6 +60,7 @@ if (is_readable(XF_DIR . 'includes/discovery.php')) { require_once XF_DIR . 'inc
 if (is_readable(XF_DIR . 'includes/crawl.php')) { require_once XF_DIR . 'includes/crawl.php'; }
 if (is_readable(XF_DIR . 'includes/ratings.php')) { require_once XF_DIR . 'includes/ratings.php'; }
 if (is_readable(XF_DIR . 'includes/startup-reviews.php')) { require_once XF_DIR . 'includes/startup-reviews.php'; }
+if (is_readable(XF_DIR . 'includes/meter.php')) { require_once XF_DIR . 'includes/meter.php'; }
 if (is_readable(XF_DIR . 'includes/popup.php')) { require_once XF_DIR . 'includes/popup.php'; }
 if (is_readable(XF_DIR . 'includes/gated-list.php')) { require_once XF_DIR . 'includes/gated-list.php'; }
 if (is_readable(XF_DIR . 'includes/queue.php')) { require_once XF_DIR . 'includes/queue.php'; }

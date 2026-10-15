@@ -25,6 +25,12 @@ while (have_posts()) :
             </div>
         <?php endif; ?>
     </section>
+    <?php if (has_post_thumbnail()) : $credit = get_post_meta($id, '_xf_image_credit', true) ?: wp_get_attachment_caption(get_post_thumbnail_id()); ?>
+        <figure class="wrap in" style="max-width:1120px;margin:0 auto 40px;animation-delay:.2s">
+            <?php echo xft_image(get_post(), '21x10', 'full', true); // phpcs:ignore ?>
+            <?php if ($credit) : ?><figcaption class="k" style="margin-top:10px;font-size:10.5px"><?php echo esc_html($credit); ?></figcaption><?php endif; ?>
+        </figure>
+    <?php endif; ?>
     <div class="hl"></div>
     <section class="wrap" style="padding-top:48px;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
         <article class="job-body entry" style="flex:999 1 560px;min-width:0">

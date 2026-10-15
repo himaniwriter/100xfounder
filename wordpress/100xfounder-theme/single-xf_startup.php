@@ -133,6 +133,7 @@ while (have_posts()) :
             <?php if (!empty($maker['name'])) : ?><div><div class="k" style="font-size:10px">Made by</div><div class="v"><?php echo !empty($maker['url']) ? '<a class="u" href="' . esc_url($maker['url']) . '" target="_blank" rel="nofollow noopener">' . esc_html($maker['name']) . '</a>' : esc_html($maker['name']); ?></div></div><?php endif; ?>
             <?php if (!empty($phs['votes'])) : ?><div><div class="k" style="font-size:10px">Launch day</div><div class="v"><?php echo esc_html(trim((!empty($phs['rank']) ? '#' . $phs['rank'] . ' · ' : '') . number_format_i18n((int) $phs['votes']) . ' upvotes')); ?></div></div><?php endif; ?>
         </div>
+        <?php echo function_exists('xf_meter_html') ? xf_meter_html($id) : ''; // phpcs:ignore -- escaped inside ?>
         <?php if (count($jump) > 1) : ?>
             <nav class="sp-jump k" aria-label="On this page">
                 <?php foreach ($jump as $anchor => $label) : ?><a href="#<?php echo esc_attr($anchor); ?>"><?php echo esc_html($label); ?></a><?php endforeach; ?>

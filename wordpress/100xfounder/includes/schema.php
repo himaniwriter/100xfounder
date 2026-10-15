@@ -105,6 +105,9 @@ function xf_install_schema() {
     if (function_exists('xf_ratings_install')) {
         xf_ratings_install();
     }
+    if (function_exists('xf_meter_install')) {
+        xf_meter_install();
+    }
     if (function_exists('xf_reviews_install')) {
         xf_reviews_install();
     }
