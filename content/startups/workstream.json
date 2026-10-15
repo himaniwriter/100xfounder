@@ -1,0 +1,71 @@
+{
+ "slug": "workstream",
+ "website": "https://www.workstream.us/",
+ "excerpt": "Workstream is HR, hiring and payroll software for businesses with hourly workers, such as restaurants and retail. What it does, plans and alternatives.",
+ "content": "<p>Workstream is a San Francisco company that makes HR and payroll software for businesses that employ hourly workers, with a strong focus on restaurants, retail and healthcare. It started as a text-based hiring tool: TechCrunch reported in 2021 that Workstream had been working on recruitment for hourly workers since 2017, letting candidates apply and schedule interviews by text. Its website now covers the wider employee life cycle: applicant tracking and AI voice and video screening, mobile onboarding with documents and I-9/E-Verify, team chat, time clocks and shift scheduling, full-service payroll, benefits administration and labour-law compliance alerts.</p><p>Desmond Lim is Workstream's co-founder and CEO. TechCrunch reported that, at the time of its 2021 raise, Workstream had 1,500 customers across about 10,000 stores, naming McDonald's, Subway and Jamba Juice among them.</p><h2>Funding</h2><p>In August 2021 Workstream raised a $48 million Series B co-led by BOND and Coatue, with Zoom's Eric Yuan and DoorDash's Tony Xu among the backers; its earlier $10 million Series A was led by Founders Fund. In September 2022 the company announced a further $60 million, led by GGV Capital, which took the Series B to $108 million.</p><h2>Pricing</h2><p>Workstream's pricing page lists four tiers, Hiring, Essentials, All-in-one and Premium, each including the one before, plus add-ons for time and scheduling, ACA and benefits, and compliance. No prices are shown; every tier asks you to get in touch for a quote.</p><p><em>We have not used Workstream. This page is based on Workstream's website and pricing page (checked 15 October 2026), TechCrunch's 2021 report and the company's 2022 funding announcement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "HR and payroll for hourly teams",
+  "platform": "Web and mobile apps",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Hiring, onboarding, scheduling and payroll for restaurants, retail and other hourly employers",
+  "maker": {"name": "Workstream", "url": "https://www.workstream.us/"},
+  "team": [{"name": "Desmond Lim", "role": "Co-founder and CEO", "url": "https://techcrunch.com/2021/08/26/workstreams-text-based-recruitment-tool-gets-a-48m-bet-from-bond-and-beyond/"}],
+  "gallery": [
+   {"url": "https://www.workstream.us/hs-fs/hubfs/Workstream_2026/images/restaurant%20grade%20desk.webp?width=2000&name=restaurant%20grade%20desk.webp", "alt": "Workstream product screens: a payroll breakdown table, a compliance summary card and a VoiceAI interview screening card", "credit": "Image: Workstream", "w": 1999, "h": 631},
+   {"url": "https://www.workstream.us/hs-fs/hubfs/Workstream_2026/images/Frame%202117249904.webp?width=2000&name=Frame%202117249904.webp", "alt": "Two Workstream feature panels: a payroll AI assistant answering questions, and a VoiceAI interview screen showing a 74% match score", "credit": "Image: Workstream", "w": 1998, "h": 767}
+  ],
+  "use_cases": [
+   "Hiring hourly staff quickly with text-to-apply, AI screening and automatic interview scheduling",
+   "Onboarding new hires on mobile, including tax forms, I-9 and E-Verify",
+   "Running payroll across several locations or EINs from one login",
+   "Scheduling shifts and tracking time",
+   "Getting alerts about labour-law compliance by location"
+  ],
+  "audience": {
+   "fit": [
+    "run restaurants, retail stores or healthcare sites with many hourly employees",
+    "hire frequently and want candidates to apply and book interviews by text",
+    "want hiring, HR and payroll in one US-focused system"
+   ],
+   "not_fit": [
+    "have mostly salaried office staff",
+    "need payroll outside the US",
+    "want to see published prices before talking to sales"
+   ]
+  },
+  "pricing": {
+   "intro": "Workstream does not publish prices. Its four tiers each include the one below, and every tier is quoted on request.",
+   "plans": [
+    {"name": "Hiring", "price": "Quote on request", "detail": "Applicant tracking, VoiceAI and VideoAI screening, text-to-apply, job posting"},
+    {"name": "Essentials", "price": "Quote on request", "detail": "Adds mobile onboarding, documents and signatures, W-4/I-9/E-Verify, team chat"},
+    {"name": "All-in-one", "price": "Quote on request", "detail": "Adds full-service payroll, tax filing, POS integration and compliance monitoring"},
+    {"name": "Premium", "price": "Quote on request", "detail": "Adds ACA tracking, benefits enrolment and custom integrations"}
+   ],
+   "notes": ["Add-ons: Time & Scheduling, ACA & Benefits, and Workstream Compliance.", "The pricing page advertised up to 8 months free on payroll plans when we checked; terms apply."],
+   "url": "https://www.workstream.us/pricing",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other HR and hiring tools used by hourly employers.",
+   "items": [
+    {"name": "Homebase", "url": "https://www.joinhomebase.com/", "what": "Scheduling, time clock, hiring and payroll for small businesses", "tags": ["Scheduling", "Payroll"], "starts_at": "See its own pricing page", "difference": "Starts with scheduling and time tracking for small teams."},
+    {"name": "7shifts", "url": "https://www.7shifts.com/", "what": "Restaurant scheduling and team management", "tags": ["Restaurants", "Scheduling"], "starts_at": "See its own pricing page", "difference": "Built specifically around restaurant scheduling."},
+    {"name": "Fountain", "url": "https://www.fountain.com/", "what": "High-volume hiring platform for frontline workers", "tags": ["Hiring"], "starts_at": "See its own pricing page", "difference": "Focused on hiring rather than payroll."}
+   ]
+  },
+  "faq": [
+   {"q": "Who is Workstream for?", "a": "Employers of hourly workers, especially restaurants, retail and healthcare, according to its website."},
+   {"q": "How much does Workstream cost?", "a": "It does not publish prices; all four tiers are quoted on request."},
+   {"q": "How much funding has Workstream raised?", "a": "A $10 million Series A led by Founders Fund and a Series B that reached $108 million in September 2022."},
+   {"q": "Does Workstream do payroll?", "a": "Yes. Full-service payroll and tax filing are part of its All-in-one tier."}
+  ],
+  "sources": [
+   {"label": "Workstream website", "url": "https://www.workstream.us/"},
+   {"label": "Workstream pricing", "url": "https://www.workstream.us/pricing"},
+   {"label": "TechCrunch: Workstream's text-based recruitment tool gets a $48M bet (26 Aug 2021)", "url": "https://techcrunch.com/2021/08/26/workstreams-text-based-recruitment-tool-gets-a-48m-bet-from-bond-and-beyond/"},
+   {"label": "Business Wire: Workstream raises additional $60M, extending Series B to $108M (29 Sep 2022)", "url": "https://www.businesswire.com/news/home/20220929005130/en/Workstream-Raises-Additional-%2460M-Extending-Series-B-Round-to-%24108M"}
+  ]
+ }
+}

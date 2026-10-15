@@ -1,0 +1,72 @@
+{
+ "slug": "time-is-ltd",
+ "website": "https://timeisltd.com/",
+ "excerpt": "Time is Ltd. is a Prague-based collaboration analytics platform that measures how teams spend time across email, calendars, chat and meetings.",
+ "content": "<p>Time is Ltd. makes collaboration analytics software. It connects to the tools a company already uses, such as Google Workspace, Microsoft 365, Zoom and Slack, and turns the metadata about meetings, emails, chats and focus time into dashboards for managers. Its website sells three packages around that data: an HR solution aimed at engagement and attrition, a sales solution that looks at how revenue teams spend time with clients, and an operations solution about collaboration and working patterns. The product shows, for example, how much time a department spends in meetings, how much focus time people get, and which teams collaborate across the company. In 2023 the company launched Collaboration Analytics 2.0 with more than 200 metrics and a data platform and API so customers can send the data into tools such as Google BigQuery or Tableau. Its site navigation also notes that its Org Chart product is now part of Unaric Solutions.</p><p>Time is Ltd. is based in Prague. Tech.eu reported that it was founded by Jan Rezab and Cyril Höschl; TechCrunch noted that Rezab previously founded the social media analytics company Socialbakers. In June 2021 it raised a $5.6 million late-seed round led by Mike Chalfen of Chalfen Ventures, with Illuminate Financial, Accel and Acequia Capital, and Ulf Zetterberg, founder of Seal Software, joined as president and co-founder. TechCrunch named the Czech e-grocery group Rohlik as a customer at the time. In 2022 the company added Zoom analytics.</p><h2>Pricing</h2><p>Time is Ltd. does not publish prices on its website. It offers a demo and quotes plans on request.</p><h2>Who it suits</h2><p>It fits HR, operations and sales leaders at mid-size and large companies that want data on hybrid work, meeting load and collaboration. Small teams, or companies uncomfortable analysing employee collaboration metadata, may not need it.</p><p><em>We have not tested Time is Ltd. This page is based on its website and on TechCrunch, Tech.eu and Business Wire.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Collaboration analytics",
+  "platform": "Web (SaaS)",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Analytics on meetings, email, chat and focus time from your collaboration tools",
+  "maker": {"name": "Time is Ltd.", "url": "https://timeisltd.com/"},
+  "team": [
+   {"name": "Jan Rezab", "role": "Co-founder", "url": "https://tech.eu/2021/06/10/prague-based-company-collaboration-analytics-platform-time-is-ltd-raises-5-6-million-in-seed-round/"},
+   {"name": "Cyril Höschl", "role": "Co-founder", "url": "https://tech.eu/2021/06/10/prague-based-company-collaboration-analytics-platform-time-is-ltd-raises-5-6-million-in-seed-round/"},
+   {"name": "Ulf Zetterberg", "role": "President and co-founder (joined 2021)", "url": "https://techcrunch.com/2021/06/10/productivity-startup-time-is-ltd-raises-5-6m-to-be-the-google-analytics-for-company-time"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/619a180914095862aa097cff/62d555a6e587ca40a1b33f96_OG-image-1.png", "alt": "The Time is Ltd. logo, an hourglass symbol and wordmark, in front of a colourful burst of small triangles", "credit": "Image: Time is Ltd.", "w": 1200, "h": 630},
+   {"url": "https://cdn.prod.website-files.com/619a180914095862aa097cff/638884272b13792d30866e88_analytics.webp", "alt": "Time is Ltd. analytics dashboard showing time allocation, how and where people collaborate, and a heat map of collaboration between departments", "credit": "Image: Time is Ltd.", "w": 1920, "h": 1300}
+  ],
+  "use_cases": [
+   "Measuring how much time teams spend in meetings versus focus time",
+   "Spotting collaboration silos between departments",
+   "Tracking engagement signals linked to attrition for HR",
+   "Seeing how sales teams spend time with clients",
+   "Exporting collaboration data to BigQuery or Tableau through an API"
+  ],
+  "audience": {
+   "fit": [
+    "lead HR, operations or sales at a mid-size or large company",
+    "run hybrid or distributed teams and want data on how work happens",
+    "use Google Workspace or Microsoft 365 plus Zoom or Slack"
+   ],
+   "not_fit": [
+    "are a small team where meeting load is easy to see directly",
+    "do not want to analyse collaboration metadata about employees"
+   ]
+  },
+  "pricing": {
+   "intro": "Time is Ltd. does not publish prices; plans are quoted after a demo.",
+   "plans": [
+    {"name": "HR, Sales and Operations solutions", "price": "Quote on request", "detail": "Book a demo on its website"}
+   ],
+   "notes": [],
+   "url": "https://timeisltd.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other workplace and collaboration analytics tools.",
+   "items": [
+    {"name": "Microsoft Viva Insights", "url": "https://www.microsoft.com/en-us/microsoft-viva/insights", "what": "Productivity and wellbeing insights built into Microsoft 365", "tags": ["Workplace analytics"], "starts_at": "See its own pricing page", "difference": "Works mainly inside the Microsoft ecosystem."},
+    {"name": "Worklytics", "url": "https://www.worklytics.co/", "what": "People analytics from collaboration tool data", "tags": ["People analytics"], "starts_at": "See its own site", "difference": "Similar approach with a focus on HR analytics."},
+    {"name": "Clockwise", "url": "https://www.getclockwise.com/", "what": "AI calendar assistant that protects focus time", "tags": ["Calendar"], "starts_at": "See its own pricing page", "difference": "Changes calendars to create focus time rather than reporting on it."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Time is Ltd. measure?", "a": "How time is spent across meetings, email, chat and calls, using metadata from tools such as Google Workspace, Microsoft 365, Zoom and Slack."},
+   {"q": "Who founded Time is Ltd.?", "a": "Jan Rezab and Cyril Höschl, according to Tech.eu; Ulf Zetterberg joined as president and co-founder in 2021."},
+   {"q": "How much has Time is Ltd. raised?", "a": "It announced a $5.6 million late-seed round in June 2021, led by Chalfen Ventures."},
+   {"q": "How much does it cost?", "a": "Prices are not published; the company quotes after a demo."}
+  ],
+  "sources": [
+   {"label": "Time is Ltd. website", "url": "https://timeisltd.com/"},
+   {"label": "TechCrunch: Time is Ltd. raises $5.6M (10 Jun 2021)", "url": "https://techcrunch.com/2021/06/10/productivity-startup-time-is-ltd-raises-5-6m-to-be-the-google-analytics-for-company-time"},
+   {"label": "Tech.eu: Prague-based Time is Ltd. raises $5.6 million in seed round", "url": "https://tech.eu/2021/06/10/prague-based-company-collaboration-analytics-platform-time-is-ltd-raises-5-6-million-in-seed-round/"},
+   {"label": "Business Wire: Time is Ltd. debuts Zoom Analytics (24 May 2022)", "url": "https://www.businesswire.com/news/home/20220524005056/en/Time-is-Ltd.-Debuts-Zoom-Analytics-to-Offer-Businesses-Enhanced-Meeting-Insights"},
+   {"label": "Training Industry: Time is Ltd. launches Analytics 2.0", "url": "https://trainingindustry.com/press-release/measurement-and-analytics/time-is-ltd-launches-analytics-2-0-data-platform-to-improve-employee-engagement/"}
+  ]
+ }
+}

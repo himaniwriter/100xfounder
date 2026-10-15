@@ -1,0 +1,72 @@
+{
+ "slug": "traba",
+ "website": "https://traba.work/",
+ "excerpt": "Traba supplies vetted shift workers to US warehouses, distribution centres and factories, and now sells AI tools for industrial operations. Founded in 2021.",
+ "content": "<p>Traba is a US labour marketplace for the industrial supply chain. Businesses such as warehouses, distribution centres, food producers, third-party logistics firms and manufacturers post shifts; background-checked workers pick them up through Traba's app. Its website says it has around 400,000 US work-eligible, background-checked workers, a 98% show rate, one to two days' average time to fill, and 24/7 support with cover for no-shows. Traba now describes itself as an AI operating layer for the industrial supply chain: in June 2026 it launched Neo, software that it says helps operations teams with labour forecasting and shift planning.</p><p>TechCrunch reported in 2022 that Mike Shebat and Akshay Buddiga founded Traba in 2021. Shebat, the CEO, had worked as a warehouse manager at McMaster-Carr and in Uber's early Uber Eats team; Buddiga had worked at Zenefits and Fanatics. At that point Traba had about 12,000 workers on the platform and required a minimum of $13 an hour.</p><h2>Funding</h2><p>Traba raised a $20 million Series A in July 2022 led by Khosla Ventures, with Founders Fund and General Catalyst among the participants, at a $120 million post-money valuation, according to TechCrunch. In October 2023 Refresh Miami reported a further $22 million round led by Founders Fund, with Khosla participating, and described Traba as Miami-based.</p><h2>Pricing</h2><p>Traba does not publish rates on its website. TechCrunch reported that companies pay only for shifts actually filled through the platform, invoiced from approved timesheets; worker pay rates vary by job.</p><h2>Who it suits</h2><p>Traba fits operations managers in light-industrial businesses whose staffing needs rise and fall, such as peak seasons in e-commerce fulfilment. It is less relevant to office roles or businesses outside the US.</p><p><em>We have not used Traba. This page draws on Traba's website, TechCrunch, Refresh Miami and Traba's June 2026 press release.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Industrial staffing marketplace",
+  "platform": "Web and mobile apps",
+  "starts_at": "Pay per filled shift (rates not published)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "On-demand vetted workers and AI planning tools for warehouses and factories",
+  "maker": {"name": "Traba", "url": "https://traba.work/"},
+  "team": [
+   {"name": "Mike Shebat", "role": "Co-founder and CEO", "url": "https://techcrunch.com/2022/07/07/traba-raises-20m-to-match-contractors-with-events-and-warehouse-work/"},
+   {"name": "Akshay Buddiga", "role": "Co-founder", "url": "https://techcrunch.com/2022/07/07/traba-raises-20m-to-match-contractors-with-events-and-warehouse-work/"}
+  ],
+  "gallery": [
+   {"url": "https://framerusercontent.com/images/Vf0LERZm0wo9jb84EtG1RLPOQE.png", "alt": "The white Traba wordmark on a navy background above the line Labor and intelligence for the industrial supply chain", "credit": "Image: Traba", "w": 1200, "h": 630},
+   {"url": "https://framerusercontent.com/images/WOB3aMmUU6wvkRfb0gQzFzjntpI.webp?width=2048&height=1365", "alt": "A worker in a plaid shirt hanging a quilted jacket on a display in a clothing store", "credit": "Image: Traba", "w": 2048, "h": 1365}
+  ],
+  "use_cases": [
+   "Filling warehouse and fulfilment shifts during peak season",
+   "Covering no-shows at a distribution centre at short notice",
+   "Staffing food production and packaging lines",
+   "Building a consistent pool of repeat workers for one facility",
+   "Forecasting labour needs and planning shifts with Traba's Neo software"
+  ],
+  "audience": {
+   "fit": [
+    "run a US warehouse, distribution centre, 3PL or manufacturing plant",
+    "have staffing needs that change week to week",
+    "want vetted workers without signing up with a traditional agency"
+   ],
+   "not_fit": [
+    "need office or professional staff",
+    "operate outside the US",
+    "want published hourly rates before contacting sales"
+   ]
+  },
+  "pricing": {
+   "intro": "Traba does not publish rates. Businesses pay for shifts that are filled, invoiced from approved timesheets.",
+   "plans": [
+    {"name": "Staffing marketplace", "price": "Per filled shift", "detail": "Rates depend on role and location; quoted by Traba"},
+    {"name": "Neo (AI operations software)", "price": "Not published", "detail": "Launched June 2026"}
+   ],
+   "notes": ["In 2022 TechCrunch reported a $13 an hour minimum for workers on the platform; we have not found a current figure."],
+   "url": "https://traba.work/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other on-demand staffing platforms for hourly industrial work.",
+   "items": [
+    {"name": "Instawork", "url": "https://www.instawork.com/", "what": "Marketplace for hourly shifts in hospitality, warehousing and events", "tags": ["Shift staffing"], "starts_at": "See its own site", "difference": "Broader mix of hospitality and events work."},
+    {"name": "Wonolo", "url": "https://www.wonolo.com/", "what": "On-demand staffing for warehouses, delivery and events", "tags": ["Shift staffing"], "starts_at": "See its own site", "difference": "Long-running US marketplace with a similar model."},
+    {"name": "Jobandtalent", "url": "https://www.jobandtalent.com/", "what": "Digital temporary staffing agency in Europe and the US", "tags": ["Temp staffing"], "starts_at": "See its own site", "difference": "Employs temp workers directly in several countries."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Traba do?", "a": "It connects light-industrial businesses with vetted shift workers, and sells AI software for planning labour and operations."},
+   {"q": "Who founded Traba?", "a": "Mike Shebat (CEO) and Akshay Buddiga, in 2021, according to TechCrunch."},
+   {"q": "How much does Traba charge?", "a": "Rates are not published; businesses pay for filled shifts and get a quote from Traba."},
+   {"q": "Who has invested in Traba?", "a": "Khosla Ventures led its 2022 Series A and Founders Fund led a $22 million round in October 2023."}
+  ],
+  "sources": [
+   {"label": "Traba website", "url": "https://traba.work/"},
+   {"label": "TechCrunch: Traba raises $20M to match contractors with events and warehouse work (7 Jul 2022)", "url": "https://techcrunch.com/2022/07/07/traba-raises-20m-to-match-contractors-with-events-and-warehouse-work/"},
+   {"label": "Refresh Miami: Traba raises $22M led by Founders Fund (Oct 2023)", "url": "https://refreshmiami.com/news/traba-raises-22m-led-by-founders-fund-more-expansion-on-the-way/"},
+   {"label": "PR Newswire: Traba launches Neo (June 2026)", "url": "https://www.prnewswire.com/news-releases/traba-launches-neo--ai-that-decides-acts-and-runs-your-operation-with-you-302804816.html"}
+  ]
+ }
+}

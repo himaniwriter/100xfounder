@@ -1,0 +1,70 @@
+{
+ "slug": "truv",
+ "website": "https://truv.com/",
+ "excerpt": "Truv verifies income, employment and assets through consumer-permissioned payroll and bank data. Checkr announced it had acquired Truv in August 2026.",
+ "content": "<p>Truv is a US company that verifies a person's income, employment and assets using data the consumer gives permission to share. Instead of collecting pay stubs, a lender or agency sends the applicant a Truv link; the applicant logs in to their payroll provider, employer or bank, and Truv returns the verified data through an API. Its website lists products for mortgage lending (including income, employment and asset verification and employment reverification), consumer and auto lending, tenant and background screening, retail banking (such as direct deposit switching) and the public sector, where it verifies income for benefits programmes. It also offers document upload and document fraud detection for cases where a direct connection is not possible.</p><h2>Acquisition by Checkr</h2><p>On 18 August 2026 the background-check company Checkr announced that it had acquired Truv. Terms were not disclosed. Checkr said the deal strengthens its mortgage business and marks its entry into government work through benefits eligibility checks, since Truv already serves state agencies running social services programmes. Checkr said Truv's network reaches 96% of the US workforce. Kirill Klokov is Truv's co-founder and CEO. HousingWire and PYMNTS covered the deal.</p><h2>Pricing</h2><p>Truv's pricing page names three plans, Launch, Professional and Enterprise, but shows no dollar figures. It says Truv charges per successful connection, however many times the data is pulled afterwards, that pay-as-you-go has no spending minimum, and that annual commitments on Professional and Enterprise come with guaranteed savings of 35% and 70% or more respectively. Exact rates come from sales.</p><h2>Who it suits</h2><p>Truv is built for mortgage lenders, consumer and auto lenders, screening companies, banks and government agencies in the US that verify income at volume. It is not a consumer app; individuals meet it only when a lender or agency sends them a link.</p><p><em>This page draws on Truv's website and pricing page (checked 15 October 2026), Checkr's announcement and coverage in HousingWire and PYMNTS.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Income and employment verification API",
+  "platform": "API and web dashboard",
+  "starts_at": "Pay-as-you-go per successful connection",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Consumer-permissioned income, employment and asset verification, now part of Checkr",
+  "maker": {"name": "Truv (part of Checkr)", "url": "https://truv.com/"},
+  "team": [{"name": "Kirill Klokov", "role": "Co-founder and CEO", "url": "https://checkr.com/resources/articles/checkr-acquires-truv"}],
+  "gallery": [
+   {"url": "https://truv.com/og-images/og-home.png", "alt": "Truv banner reading Unlock the power of open finance, beside a phone screen for choosing an income source and a card showing verified employment and income", "credit": "Image: Truv", "w": 2400, "h": 1260},
+   {"url": "https://truv.com/images/home-main-app-3.png", "alt": "Illustration of the Truv flow: a lender asks to verify income, the applicant picks an income source such as ADP or Walmart on a phone, and verified employment and income appear", "credit": "Image: Truv", "w": 2145, "h": 2211}
+  ],
+  "use_cases": [
+   "Verifying a mortgage applicant's income, employment and assets",
+   "Checking income for personal and auto loans without pay stubs",
+   "Verifying income for tenant screening",
+   "Confirming eligibility for benefits programmes such as Medicaid or SNAP",
+   "Letting bank customers switch their direct deposit"
+  ],
+  "audience": {
+   "fit": [
+    "are a US lender, screener, bank or agency that verifies income at volume",
+    "want to reduce document fraud and manual pay-stub review",
+    "can integrate an API or a supported loan origination system"
+   ],
+   "not_fit": [
+    "are an individual looking to check your own credit",
+    "operate outside the US"
+   ]
+  },
+  "pricing": {
+   "intro": "Truv names three plans but does not publish dollar prices. It charges per successful connection.",
+   "plans": [
+    {"name": "Launch", "price": "Pay-as-you-go", "detail": "Developer tools, dashboard and test credentials; no spending minimum"},
+    {"name": "Professional", "price": "Annual commitment", "detail": "Truv states 35%+ guaranteed savings"},
+    {"name": "Enterprise", "price": "Annual commitment", "detail": "Truv states 70%+ guaranteed savings"}
+   ],
+   "notes": ["Volume discounts depend on contract length and minimum monthly commitment."],
+   "url": "https://truv.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other income and employment verification providers.",
+   "items": [
+    {"name": "The Work Number (Equifax)", "url": "https://theworknumber.com/", "what": "Employer-contributed employment and income database", "tags": ["Employment verification"], "starts_at": "See its own site", "difference": "Relies on data employers share with Equifax rather than consumer logins."},
+    {"name": "Argyle", "url": "https://argyle.com/", "what": "Consumer-permissioned payroll data API", "tags": ["Payroll API"], "starts_at": "See its own pricing page", "difference": "A close like-for-like rival in payroll connectivity."},
+    {"name": "Plaid", "url": "https://plaid.com/", "what": "Bank and payroll data connections for fintech apps", "tags": ["Open finance"], "starts_at": "See its own pricing page", "difference": "Broader open-banking platform beyond income checks."}
+   ]
+  },
+  "faq": [
+   {"q": "Who owns Truv?", "a": "Checkr announced on 18 August 2026 that it had acquired Truv. Terms were not disclosed."},
+   {"q": "How does Truv verify income?", "a": "The applicant logs in to their payroll provider, employer or bank through a Truv link, and Truv returns the verified data to the lender or agency."},
+   {"q": "How much does Truv cost?", "a": "It charges per successful connection; exact prices are not published, and annual plans come with stated savings."},
+   {"q": "Who is Truv's CEO?", "a": "Kirill Klokov, its co-founder."}
+  ],
+  "sources": [
+   {"label": "Truv website", "url": "https://truv.com/"},
+   {"label": "Truv pricing", "url": "https://truv.com/pricing"},
+   {"label": "Checkr: Checkr acquires Truv (18 Aug 2026)", "url": "https://checkr.com/resources/articles/checkr-acquires-truv"},
+   {"label": "HousingWire: Checkr acquires Truv", "url": "https://housingwire.com/articles/checkr-acquires-truv-mortgage-government-income-verification"},
+   {"label": "PYMNTS: Checkr buys Truv", "url": "https://pymnts.com/authentication/2026/checkr-buys-truv-to-expand-identity-verification-for-mortgage-and-government"}
+  ]
+ }
+}

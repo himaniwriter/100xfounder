@@ -1,0 +1,70 @@
+{
+ "slug": "zum",
+ "website": "https://www.ridezum.com/",
+ "excerpt": "Zum runs school bus services and student transportation software for US school districts, including electric bus fleets. TPG invested $100 million in 2026.",
+ "content": "<p>Zum is a US student transportation company. Its website describes services for home-to-school transport, charter trips and electrification, plus software for districts, all tied together in what it calls the Connected Mobility Experience (CMX): apps and dashboards for parents, students, drivers and district teams, a cloud platform, operations tools, and the yards, buses and charging equipment that run it. Ritu Narayan is listed by the company as founder and CEO.</p><p>The company works directly with school districts. In 2022, School Bus Fleet reported that the Los Angeles Unified School District awarded Zum a contract valued at more than $400 million, with the aim of moving part of the district's fleet toward electric vehicles. In 2024 Bloomberg covered the launch of what it called the first fully electric school bus fleet in the US, which Zum operates in Oakland. Zum's own newsroom lists later items such as an electric school bus rollout in San Francisco and expansion to New York, which it describes as its 19th state.</p><h2>Funding</h2><p>Reuters reported on 16 April 2026 that TPG's Rise Fund was investing $100 million in Zum at a valuation of around $1.7 billion, up from $1.3 billion in its 2024 Series E round. Reuters said the deal brought Zum's total capital raised to $430 million and that Zum served more than 4,500 schools across 17 states at the time. The money is meant for expansion into more states and further work on the CMX platform.</p><h2>Pricing</h2><p>Zum does not publish prices. Districts buy its services through contracts and procurement, so costs depend on routes, fleet and scope.</p><p><em>We have not used Zum's services. This page draws on Zum's website and newsroom, and on Reuters, School Bus Fleet and Bloomberg reporting, each linked below.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Student transportation",
+  "platform": "School bus operations plus web and mobile apps",
+  "starts_at": "Contract pricing for school districts",
+  "schema_category": "BusinessApplication",
+  "summary_short": "School bus services, electric fleets and student transport software for US districts",
+  "maker": {"name": "Zum", "url": "https://www.ridezum.com/"},
+  "team": [{"name": "Ritu Narayan", "role": "Founder and CEO", "url": "https://www.ridezum.com/press-release/tpg-invests-100-million-in-student-mobility-company-zum/"}],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/6a1995c6d385efb57cc11597/6aab45c648077e014b844503_6aa8268b6d12b9d8f4ab4f4f_SF_EV.jpeg", "alt": "A Zum-branded electric charging unit standing between two yellow school buses", "credit": "Image: Zum", "w": 1280, "h": 720},
+   {"url": "https://cdn.prod.website-files.com/6a1995c6d385efb57cc11597/6a5f6cd812e7e723fb7bdfc7_6a1995c6d385efb57cc1195d_ZUM_cmx-PR_PHOTOS-04-1%2520(1).jpeg", "alt": "Students stepping off a yellow school bus next to a green Zum sign, with a Zum CMX label in the corner", "credit": "Image: Zum", "w": 2552, "h": 1300}
+  ],
+  "use_cases": [
+   "Outsourcing home-to-school bus routes for a school district",
+   "Giving parents real-time visibility of their child's bus through an app",
+   "Moving a district's bus fleet to electric vehicles with charging infrastructure",
+   "Booking charter buses for school trips",
+   "Using routing and operations software alongside a district's own fleet"
+  ],
+  "audience": {
+   "fit": [
+    "run transportation for a US school district and want a contracted operator",
+    "plan to electrify school buses and need charging and fleet operations together",
+    "want one system for routes, driver apps and parent notifications"
+   ],
+   "not_fit": [
+    "are an individual family looking to book a ride: Zum contracts with schools and districts",
+    "operate outside the US states Zum serves"
+   ]
+  },
+  "pricing": {
+   "intro": "Zum does not publish a price list. Services are sold to school districts and schools under contracts, so the cost depends on routes, vehicles and the services chosen.",
+   "plans": [
+    {"name": "Home-to-school transportation", "price": "Contract pricing", "detail": "Quoted per district"},
+    {"name": "Software (CMX)", "price": "Contract pricing", "detail": "Apps, dashboards and routing tools"},
+    {"name": "Charter trips", "price": "Quote on request", "detail": "Booked through Zum's charter page"}
+   ],
+   "notes": ["Public contracts such as Los Angeles Unified's are reported in the press; we quote only what was reported."],
+   "url": "https://www.ridezum.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other ways districts handle student transport. We have not compared contract prices.",
+   "items": [
+    {"name": "First Student", "url": "https://firststudentinc.com/", "what": "Large school bus contractor in North America", "tags": ["School bus operator"], "starts_at": "Contract pricing", "difference": "A long-established bus operator rather than a software-led company."},
+    {"name": "HopSkipDrive", "url": "https://www.hopskipdrive.com/", "what": "Rides for students in smaller vehicles, booked by schools", "tags": ["Student rides"], "starts_at": "Contract pricing", "difference": "Uses vetted drivers in cars and vans rather than full-size buses."},
+    {"name": "Transfinder", "url": "https://www.transfinder.com/", "what": "Routing and fleet software for school transportation departments", "tags": ["Routing software"], "starts_at": "See its own site", "difference": "Software only, for districts that run their own buses."}
+   ]
+  },
+  "faq": [
+   {"q": "Who founded Zum?", "a": "Ritu Narayan, who is listed by Zum as its founder and CEO."},
+   {"q": "How much has Zum raised?", "a": "Reuters reported in April 2026 that TPG's $100 million investment brought Zum's total capital raised to $430 million, at a valuation of around $1.7 billion."},
+   {"q": "Does Zum run electric school buses?", "a": "Yes. Bloomberg covered its all-electric fleet in Oakland in 2024, and Zum's newsroom lists an electric bus rollout in San Francisco."},
+   {"q": "Can parents book Zum directly?", "a": "Zum's home-to-school service is contracted by districts and schools; parents use its app to follow the rides their school has arranged."}
+  ],
+  "sources": [
+   {"label": "Zum website", "url": "https://www.ridezum.com/"},
+   {"label": "Zum press release: TPG invests $100 million in Zum", "url": "https://www.ridezum.com/press-release/tpg-invests-100-million-in-student-mobility-company-zum/"},
+   {"label": "Reuters via MarketScreener: TPG to invest $100 million in student mobility company Zum (16 Apr 2026)", "url": "https://www.marketscreener.com/news/tpg-to-invest-100-million-in-student-mobility-company-zum-ce7e50ddde8df024"},
+   {"label": "School Bus Fleet: L.A. schools award $400M transportation contract to Zum", "url": "https://www.schoolbusfleet.com/news/l-a-schools-award-400m-transportation-contract-to-zum"},
+   {"label": "Bloomberg: The US is getting its first fully electric school bus fleet (May 2024)", "url": "https://www.bloomberg.com/news/videos/2024-05-24/the-us-is-getting-first-fully-electric-school-bus-fleet-video"}
+  ]
+ }
+}

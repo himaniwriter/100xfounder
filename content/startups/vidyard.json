@@ -1,0 +1,74 @@
+{
+ "slug": "vidyard",
+ "website": "https://www.vidyard.com/",
+ "excerpt": "Vidyard is a Canadian video platform for sales and marketing teams: screen recording, video messages, AI avatars and hosting. Free plan; Starter from $59/seat/month.",
+ "content": "<p>Vidyard is a business video platform from Kitchener, Ontario. Sales, marketing and customer teams use it to record screen and camera videos, send them in email or LinkedIn messages, host videos on websites and see who watched. In recent years it has added AI features: AI avatars that can speak a script in a person's likeness, and a Video Agent add-on that generates personalised videos automatically. Its website also lists video hosting, video hubs and integrations with CRM and marketing automation tools.</p><p>The University of Waterloo reports that Michael Litt and Devon Galloway met as systems design engineering undergraduates there and built the company that became Vidyard. In January 2016 Vidyard raised a US$35 million Series C led by Battery Ventures, with existing investor Bessemer Venture Partners taking part. In April 2024 it announced a US$15 million round led by Export Development Canada; BetaKit reported that the round closed the previous summer as an uncapped convertible note and brought total funding to nearly US$91 million.</p><h2>Pricing</h2><p>Vidyard's pricing page lists four plans. Free costs nothing and needs no card, with limits such as five videos a month and recordings up to 30 minutes. Starter is US$59 per seat per month billed annually, or US$89 per seat month to month, with unlimited recording, full analytics and a branded sharing page. Teams and Enterprise are custom-priced and billed by invoice, adding CRM integrations, team analytics and SSO. AI video generation needs the Video Agent add-on, priced separately.</p><h2>Who it suits</h2><p>Vidyard fits B2B sales and marketing teams that already send a lot of email and want short personal videos with viewing data. Teams who mostly need internal video messages may find simpler tools enough.</p><p><em>We have not tested Vidyard. Prices were checked on its pricing page on 15 October 2026; company history comes from the University of Waterloo, BetaKit and Vidyard's own announcement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Video messaging for sales and marketing",
+  "platform": "Web, Chrome extension, desktop apps",
+  "starts_at": "Free; Starter $59/seat/month billed annually",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Record, send and track videos for sales and marketing, with AI avatars",
+  "maker": {"name": "Vidyard", "url": "https://www.vidyard.com/"},
+  "team": [
+   {"name": "Michael Litt", "role": "Co-founder", "url": "https://uwaterloo.ca/engineering/news/alumni-founders-vidyard-announce-35m-raised"},
+   {"name": "Devon Galloway", "role": "Co-founder", "url": "https://uwaterloo.ca/engineering/news/alumni-founders-vidyard-announce-35m-raised"}
+  ],
+  "gallery": [
+   {"url": "https://www.vidyard.com/wp-content/themes/vidyard-fp/assets/img/social/vidyard-social-v2.webp?v=1789483430", "alt": "Vidyard banner reading Video for every customer moment beside a screenshot of the Vidyard video library", "credit": "Image: Vidyard", "w": 1200, "h": 630},
+   {"url": "https://www.vidyard.com/wp-content/uploads/video-demo-featured-1024x584-1.webp", "alt": "A Gmail message titled Hey Shaun! Here's a meeting followup! with an embedded personal video from the sender", "credit": "Image: Vidyard", "w": 1024, "h": 584}
+  ],
+  "use_cases": [
+   "Recording a screen and camera video to follow up after a sales call",
+   "Embedding personal videos in prospecting emails and seeing who watched",
+   "Generating personalised videos at scale with AI avatars",
+   "Hosting product and marketing videos on a website with analytics",
+   "Sharing video data with a CRM such as Salesforce or HubSpot"
+  ],
+  "audience": {
+   "fit": [
+    "are on a B2B sales, marketing or customer success team",
+    "send many emails and want viewer analytics on video",
+    "want AI avatars to create personalised videos without filming each one"
+   ],
+   "not_fit": [
+    "only need occasional internal screen recordings",
+    "want a consumer video editor"
+   ]
+  },
+  "pricing": {
+   "intro": "Vidyard publishes prices for Free and Starter; Teams and Enterprise are custom.",
+   "plans": [
+    {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "5 videos a month, recordings up to 30 minutes, 15 AI videos, 3 AI avatars"},
+    {"name": "Starter", "price": "$59/seat/month billed annually ($89 monthly)", "amount": 59, "currency": "USD", "detail": "Unlimited recording, full analytics, branded sharing page"},
+    {"name": "Teams", "price": "Custom", "detail": "CRM and marketing automation integrations, team analytics; billed by invoice"},
+    {"name": "Enterprise", "price": "Custom", "detail": "Unlimited integrations, SSO user management"}
+   ],
+   "notes": ["AI video generation at scale needs the separately priced Video Agent add-on."],
+   "url": "https://www.vidyard.com/pricing/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other video messaging tools for business.",
+   "items": [
+    {"name": "Loom", "url": "https://www.loom.com/", "what": "Async screen and camera recording, now part of Atlassian", "tags": ["Video messaging"], "starts_at": "See its own pricing page", "difference": "More focused on internal team communication."},
+    {"name": "BombBomb", "url": "https://bombbomb.com/", "what": "Video email for sales and real estate teams", "tags": ["Video email"], "starts_at": "See its own pricing page", "difference": "Centred on video inside email campaigns."},
+    {"name": "Sendspark", "url": "https://www.sendspark.com/", "what": "Personalised video for outbound sales", "tags": ["AI video", "Sales"], "starts_at": "See its own pricing page", "difference": "Built around personalising one recording for many prospects."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Vidyard free?", "a": "There is a free plan with five videos a month and recordings up to 30 minutes. Paid plans start with Starter at $59 per seat per month billed annually."},
+   {"q": "Who founded Vidyard?", "a": "Michael Litt and Devon Galloway, University of Waterloo engineering graduates."},
+   {"q": "How much funding has Vidyard raised?", "a": "BetaKit reported total funding of nearly US$91 million after a US$15 million round led by Export Development Canada, announced in April 2024."},
+   {"q": "Does Vidyard have AI avatars?", "a": "Yes. The free plan includes three custom AI avatars, and the Video Agent add-on generates AI videos at scale."}
+  ],
+  "sources": [
+   {"label": "Vidyard website", "url": "https://www.vidyard.com/"},
+   {"label": "Vidyard pricing", "url": "https://www.vidyard.com/pricing/"},
+   {"label": "University of Waterloo: Alumni founders at Vidyard announce $35M raised (26 Jan 2016)", "url": "https://uwaterloo.ca/engineering/news/alumni-founders-vidyard-announce-35m-raised"},
+   {"label": "BetaKit: Vidyard rolls out AI avatars after securing funding from EDC", "url": "https://betakit.com/vidyard-rolls-out-ai-avatars-after-securing-funding-from-edc-and-existing-backers/"},
+   {"label": "Business Wire: Vidyard unveils personalized AI avatars (16 Apr 2024)", "url": "https://www.businesswire.com/news/home/20240416565871/en/Vidyard-Unveils-Industry-First-Hyper-Realistic-Personalized-AI-Avatars-to-Scale-Sales-and-Marketing-Video-Communications"}
+  ]
+ }
+}

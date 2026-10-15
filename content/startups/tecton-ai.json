@@ -1,0 +1,70 @@
+{
+ "slug": "tecton-ai",
+ "website": "https://www.tecton.ai/",
+ "excerpt": "Tecton built a real-time feature platform for machine learning. Databricks agreed to acquire its assets in August 2025, and tecton.ai now redirects to Databricks.",
+ "content": "<p>Tecton was a San Francisco company that built a feature platform, often called a feature store, for machine learning. A feature store turns raw data from databases, event streams and logs into the inputs (features) that models use, keeps a consistent history of them for training, and serves fresh values to models in production with low latency. Tecton's customers used it for real-time uses such as fraud detection, risk scoring and recommendations. Its founders, Mike Del Balso, Kevin Stumpf and Jeremy Hermann, had worked on machine learning infrastructure at Uber before starting the company in 2019.</p><h2>Funding</h2><p>Tecton raised about $160 million in total. Its last round, a $100 million Series C in 2022, was led by Kleiner Perkins with Databricks and Snowflake Ventures as strategic investors, alongside earlier backers Andreessen Horowitz and Sequoia Capital, according to AI Magazine. Verdict reported that the company had been valued at $900 million in that round and had about 90 employees.</p><h2>Acquisition by Databricks</h2><p>In August 2025 Databricks announced a deal to acquire Tecton. Databricks CEO Ali Ghodsi told Reuters that Tecton's technology and team could strengthen Agent Bricks, Databricks' product for building AI agents, by feeding them real-time data. Financial terms were not disclosed. The law firm Fenwick, which advised Databricks, described the deal as an agreement to acquire the assets of Tecton. When we checked in October 2026, tecton.ai redirected to the Databricks website.</p><h2>Pricing</h2><p>Tecton no longer sells a standalone product with a public price list. Databricks prices its own platform separately.</p><h2>What this means for users</h2><p>Teams looking for Tecton-style real-time feature serving would now look at Databricks itself, or at independent options such as the open-source Feast project.</p><p><em>This page is based on reporting by Outlook Business (citing Reuters), Verdict, Techstrong.ai and AI Magazine, and on Fenwick's deal note.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Machine learning feature platform",
+  "platform": "Cloud (now part of Databricks)",
+  "starts_at": "No longer sold separately",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Real-time feature store for machine learning, acquired by Databricks in 2025",
+  "maker": {"name": "Tecton (assets acquired by Databricks)", "url": "https://www.databricks.com/"},
+  "team": [
+   {"name": "Mike Del Balso", "role": "Co-founder", "url": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/databricks-to-buy-machine-learning-start-up-tecton-in-acquisition-spree"},
+   {"name": "Kevin Stumpf", "role": "Co-founder", "url": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/databricks-to-buy-machine-learning-start-up-tecton-in-acquisition-spree"},
+   {"name": "Jeremy Hermann", "role": "Co-founder", "url": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/databricks-to-buy-machine-learning-start-up-tecton-in-acquisition-spree"}
+  ],
+  "gallery": [
+   {"url": "https://avatars.githubusercontent.com/u/43869869?v=4", "alt": "Tecton's logo mark: two orange angular shapes on a black background", "credit": "Image: Tecton, from its official GitHub account (github.com/tecton-ai)", "w": 290, "h": 290},
+   {"url": "https://www.databricks.com/sites/default/files/2023-11/databricks-og-universal.png", "alt": "The Databricks logo on a pale background with orange geometric shapes", "credit": "Image: Databricks", "w": 1200, "h": 628}
+  ],
+  "use_cases": [
+   "Serving fresh features to fraud detection models in milliseconds",
+   "Keeping training and production features consistent",
+   "Building real-time risk scoring and recommendation systems",
+   "Feeding real-time context to AI agents (the reason Databricks gave for the deal)"
+  ],
+  "audience": {
+   "fit": [
+    "are an existing Databricks customer needing real-time feature serving",
+    "researching the history of feature stores and MLOps tooling"
+   ],
+   "not_fit": [
+    "want to buy Tecton as a standalone product: it is no longer sold that way",
+    "are not running production machine learning models"
+   ]
+  },
+  "pricing": {
+   "intro": "Tecton is no longer sold as a separate product. Its website now redirects to Databricks, which publishes its own pricing.",
+   "plans": [
+    {"name": "Tecton", "price": "Not sold separately", "detail": "Technology folded into Databricks after the 2025 deal"}
+   ],
+   "notes": [],
+   "url": "https://www.databricks.com/product/pricing",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other ways to build and serve ML features.",
+   "items": [
+    {"name": "Feast", "url": "https://feast.dev/", "what": "Open-source feature store", "tags": ["Open source", "Feature store"], "starts_at": "Free, open source", "difference": "Self-hosted; you run the infrastructure."},
+    {"name": "Hopsworks", "url": "https://www.hopsworks.ai/", "what": "Feature store and AI lakehouse platform", "tags": ["Feature store"], "starts_at": "See its own pricing page", "difference": "Independent platform that can run on-premises or in the cloud."},
+    {"name": "Databricks Feature Store", "url": "https://www.databricks.com/", "what": "Feature engineering and serving inside Databricks", "tags": ["Feature store", "Lakehouse"], "starts_at": "See its own pricing page", "difference": "Where Tecton's technology now lives."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Tecton still available?", "a": "Not as a standalone product. Databricks agreed to acquire Tecton's assets in August 2025, and tecton.ai now redirects to Databricks."},
+   {"q": "How much did Databricks pay for Tecton?", "a": "The terms were not disclosed."},
+   {"q": "Who founded Tecton?", "a": "Mike Del Balso, Kevin Stumpf and Jeremy Hermann, who had built machine learning infrastructure at Uber."},
+   {"q": "What is a feature store?", "a": "A system that computes, stores and serves the input data (features) machine learning models use, in both training and production."}
+  ],
+  "sources": [
+   {"label": "Outlook Business: Databricks to buy machine learning start-up Tecton (23 Aug 2025)", "url": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/databricks-to-buy-machine-learning-start-up-tecton-in-acquisition-spree"},
+   {"label": "Verdict: Databricks is to acquire Tecton", "url": "https://www.verdict.co.uk/news/databricks-is-to-acquire-tecton/"},
+   {"label": "Techstrong.ai: Databricks to acquire Tecton to bolster AI agents", "url": "https://techstrong.ai/features/databricks-to-acquire-tecton-to-bolster-ai-agents/"},
+   {"label": "Fenwick: Represents Databricks in acquisition of the assets of Tecton", "url": "https://www.fenwick.com/insights/experience/fenwick-represents-databricks-in-acquisition-of-the-assets-of-tecton"},
+   {"label": "AI Magazine: Tecton raises US$100mn", "url": "https://aimagazine.com/ai-strategy/tecton-raises-us-100mn-to-accelerate-ai-development"}
+  ]
+ }
+}

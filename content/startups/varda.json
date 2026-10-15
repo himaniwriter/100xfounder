@@ -1,0 +1,72 @@
+{
+ "slug": "varda",
+ "website": "https://www.varda.com/",
+ "excerpt": "Varda Space Industries flies small capsules that process materials, such as drug crystals, in orbit and return them to Earth. It raised a $187M Series C in 2025.",
+ "content": "<p>Varda Space Industries describes itself as a microgravity-enabled life sciences company that processes materials in orbit and returns them to Earth. It builds its W-Series spacecraft and reentry capsules in-house. The idea, as CNBC explained, is that drug ingredients can crystallise differently without gravity, which could lead to new formulations that are hard to make on the ground. Varda's site lists three markets: biopharma companies interested in microgravity crystallisation, microgravity research, and government customers who use the capsules as a hypersonic testbed for reentry and orbital flight testing. Its contact page gives an address in El Segundo, California.</p><p>Varda's first mission, W-1, launched in June 2023 on a SpaceX rideshare and grew crystals of the HIV drug ritonavir in orbit. After waiting for a commercial reentry licence from the US Federal Aviation Administration, the capsule landed at the Utah Test and Training Range in February 2024, which Space Explored reported as a first for a commercial company. Rocket Lab built the spacecraft buses for several missions. At the time of its 2025 raise, CNBC reported that Varda had completed three launch-and-return missions, with a fourth in orbit; its website has since announced the launch of W-8 and W-9.</p><h2>Funding</h2><p>On 10 July 2025 Varda announced a $187 million Series C led by Natural Capital and Shrug Capital, with Founders Fund, Peter Thiel, Khosla Ventures, Caffeinated Capital, Lux Capital and others, bringing total funding to $329 million. CEO Will Bruey said the money would raise flight cadence and build out a pharmaceutical lab. Fierce Pharma reported that Varda had opened a 10,000-square-foot lab in El Segundo to work on crystallising biologics such as monoclonal antibodies.</p><h2>Pricing</h2><p>Varda does not publish prices. Missions and research partnerships are arranged by contacting its biopharma, government or research teams.</p><p><em>This page draws on Varda's website and on CNBC, Fierce Pharma, Space Explored and Rocket Lab's announcements.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Space manufacturing and reentry",
+  "platform": "W-Series orbital capsules",
+  "starts_at": "Contract pricing",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Orbital capsules that make drug crystals in microgravity and bring them back to Earth",
+  "maker": {"name": "Varda Space Industries", "url": "https://www.varda.com/"},
+  "team": [
+   {"name": "Will Bruey", "role": "CEO", "url": "https://www.nbcnewyork.com/news/business/money-report/space-startup-varda-raises-187-million-in-funding-to-make-drugs-in-orbit/6331672/"},
+   {"name": "Adrian Radocea", "role": "Chief Science Officer", "url": "https://www.nbcnewyork.com/news/business/money-report/space-startup-varda-raises-187-million-in-funding-to-make-drugs-in-orbit/6331672/"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/69737782e8f70a763e5f85d4/6982fee85f22aa4de2a260b2_6b69c889f13087fc46c07f7db80559ce_social_facebook.jpg", "alt": "The orange Varda Space Industries logo over a blue and orange relief map of mountains", "credit": "Image: Varda Space Industries", "w": 1200, "h": 630},
+   {"url": "https://cdn.prod.website-files.com/69737782e8f70a763e5f85d4/69861cf62a8dea95c3072ec3_capsule.webp", "alt": "A scorched Varda reentry capsule resting on a desert floor after landing, shown in orange and blue tones", "credit": "Image: Varda Space Industries", "w": 1024, "h": 768}
+  ],
+  "use_cases": [
+   "Crystallising drug ingredients in microgravity to look for new forms",
+   "Testing heat shields, navigation and sensors on a real reentry at hypersonic speed",
+   "Running microgravity research experiments and getting samples back",
+   "Studying crystallisation of biologics such as monoclonal antibodies"
+  ],
+  "audience": {
+   "fit": [
+    "are a pharmaceutical company exploring new crystal forms of a drug",
+    "are a government or defence programme needing hypersonic reentry test flights",
+    "run microgravity research that needs samples returned to Earth"
+   ],
+   "not_fit": [
+    "need launch services only: Varda sells capsule missions, not rockets",
+    "want a quick, low-budget experiment with published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Varda does not publish prices. Missions are arranged with its biopharma, government and research teams.",
+   "plans": [
+    {"name": "Biopharma programmes", "price": "Contract pricing", "detail": "Contact pharma@varda.com"},
+    {"name": "Government testbed", "price": "Contract pricing", "detail": "Contact testbed@varda.com"},
+    {"name": "Microgravity research", "price": "Contract pricing", "detail": "Via Varda's research page"}
+   ],
+   "notes": [],
+   "url": "https://www.varda.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other companies offering in-space processing or reentry.",
+   "items": [
+    {"name": "Space Forge", "url": "https://www.spaceforge.com/", "what": "UK company developing returnable satellites for in-space manufacturing of materials", "tags": ["In-space manufacturing"], "starts_at": "See its own site", "difference": "Focused on semiconductor materials rather than pharmaceuticals."},
+    {"name": "The Exploration Company", "url": "https://www.exploration.space/", "what": "European developer of reusable space capsules", "tags": ["Reentry capsules"], "starts_at": "See its own site", "difference": "Building larger capsules for cargo and stations."},
+    {"name": "Redwire", "url": "https://redwirespace.com/", "what": "Space infrastructure company with in-space biotech payloads", "tags": ["Microgravity research"], "starts_at": "See its own site", "difference": "Runs experiments on the International Space Station rather than free-flying capsules."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Varda make?", "a": "Small spacecraft and reentry capsules that process materials, such as drug crystals, in orbit and return them to Earth."},
+   {"q": "When did Varda's first capsule land?", "a": "W-1 landed at the Utah Test and Training Range in February 2024 after launching in June 2023."},
+   {"q": "How much has Varda raised?", "a": "$329 million in total after a $187 million Series C announced in July 2025, led by Natural Capital and Shrug Capital."},
+   {"q": "Who runs Varda?", "a": "Will Bruey is CEO, according to CNBC's July 2025 report."}
+  ],
+  "sources": [
+   {"label": "Varda Space Industries website", "url": "https://www.varda.com/"},
+   {"label": "CNBC via NBC New York: Space startup Varda raises $187 million (10 Jul 2025)", "url": "https://www.nbcnewyork.com/news/business/money-report/space-startup-varda-raises-187-million-in-funding-to-make-drugs-in-orbit/6331672/"},
+   {"label": "Fierce Pharma: Varda reels in $187M Series C", "url": "https://www.fiercepharma.com/manufacturing/varda-reels-187m-series-c-money-advance-drug-manufacturing-space"},
+   {"label": "Space Explored: Varda capsule recovery in Utah (Feb 2024)", "url": "https://spaceexplored.com/2024/02/25/varda-space-pioneers-space-manufacturing-with-landmark-capsule-recovery/"},
+   {"label": "Business Wire: Rocket Lab's third Pioneer spacecraft for Varda (13 May 2025)", "url": "https://www.businesswire.com/news/home/20250513132144/en/Two-Earth-Return-Missions-in-Two-Months-Rocket-Lab-Demonstrates-Rapid-Re-entry-Capability-with-Third-Pioneer-Spacecraft-for-Varda-Space-Industries"}
+  ]
+ }
+}
