@@ -1,0 +1,72 @@
+{
+ "slug": "questdb",
+ "website": "https://questdb.com/",
+ "excerpt": "QuestDB is an open-source time-series database built for low-latency ingestion and SQL queries, with a paid Enterprise edition. Free under Apache 2.0.",
+ "content": "<p>QuestDB is a time-series database: a database designed for data that arrives as a stream of timestamped events, such as market ticks, sensor readings or application metrics. Its website says it ingests millions of events per second, computes on live data in milliseconds and keeps years of history, queried with ordinary SQL. Newer versions store older data as Parquet files on object storage, so one query can span recent \"hot\" data and cheaper \"cold\" storage. The company says it began in electronic foreign-exchange trading, that its core is open source under the Apache 2.0 licence, and that it is used in production at tier-1 banks. Its site shows about 17,300 stars on GitHub.</p><p>QuestDB's about page gives 2019 as its founding year. Nicolas Hourcard is co-founder and CEO and Vlad Ilyushchenko is co-founder; in a company blog post, Hourcard wrote that he met Ilyushchenko at a fintech startup, where Ilyushchenko had been building the project for five years. TechCrunch reported that QuestDB went through Y Combinator's summer 2020 batch.</p><h2>Funding</h2><p>In November 2021 QuestDB announced a $12 million Series A from 468 Capital and Uncorrelated Ventures, with angels including Alexis Ohanian; TechCrunch said that brought total funding to $14.3 million, including a $2.3 million seed round in 2020.</p><h2>Pricing</h2><p>QuestDB open source is free to download and run under the Apache 2.0 licence. QuestDB Enterprise adds high availability with replication and automatic failover, single sign-on, role-based access control and audit logs, tiered storage to Parquet, deployment on cloud, on-premises or in your own cloud account, and SLA-backed support. Enterprise prices are not published; there is a free Enterprise trial and a contact-sales form.</p><h2>Who it suits</h2><p>QuestDB suits engineers in trading, crypto, energy, IoT and observability who need fast ingestion and SQL over large volumes of time-stamped data. Teams with ordinary transactional data will be better served by a general-purpose database.</p><p><em>We have not benchmarked QuestDB. This page is based on its website, enterprise and about pages (checked 15 October 2026), its blog and TechCrunch.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Time-series database",
+  "platform": "Self-hosted; Enterprise on cloud, on-premises or your own cloud",
+  "starts_at": "Free open source; Enterprise by quote",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Open-source time-series database with fast ingestion and SQL",
+  "maker": {"name": "QuestDB", "url": "https://questdb.com/about-us/"},
+  "team": [
+   {"name": "Nicolas Hourcard", "role": "Co-founder and CEO", "url": "https://techcrunch.com/2021/11/03/questdb-snares-12m-series-a-with-hosted-version-on-the-horizon/"},
+   {"name": "Vlad Ilyushchenko", "role": "Co-founder", "url": "https://questdb.com/blog/2022/01/03/two-year-journey-raising-15m-venture-capital/"}
+  ],
+  "gallery": [
+   {"url": "https://questdb.com/images/og.png", "alt": "QuestDB banner in pink and white on a dark background reading The live stream and the complete record, unified, with the QuestDB logo", "credit": "Image: QuestDB", "w": 1200, "h": 630},
+   {"url": "https://avatars.githubusercontent.com/u/52297642?v=4", "alt": "QuestDB's logo, a pink stylised letter Q on a dark navy square", "credit": "Image: QuestDB, from its official GitHub account", "w": 460, "h": 460}
+  ],
+  "use_cases": [
+   "Storing and querying market data and trades in real time",
+   "Collecting IoT and sensor readings at high volume",
+   "Keeping application and infrastructure metrics for analysis",
+   "Running SQL over recent and archived data in one query",
+   "Archiving older time-series data cheaply as Parquet"
+  ],
+  "audience": {
+   "fit": [
+    "are an engineer handling millions of time-stamped events",
+    "work in trading, crypto, energy or industrial IoT",
+    "want SQL rather than a custom query language"
+   ],
+   "not_fit": [
+    "need a general transactional database for an app",
+    "want a fully managed service with published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "The open-source edition is free. Enterprise is quoted; a free Enterprise trial is offered.",
+   "plans": [
+    {"name": "QuestDB Open Source", "price": "Free", "amount": 0, "currency": "USD", "detail": "Apache 2.0 licence, self-hosted"},
+    {"name": "QuestDB Enterprise", "price": "Quote on request", "detail": "Replication and failover, SSO/RBAC, audit logs, tiered Parquet storage, SLA support"}
+   ],
+   "notes": [],
+   "url": "https://questdb.com/enterprise/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other time-series and analytical databases.",
+   "items": [
+    {"name": "TimescaleDB (TigerData)", "url": "https://www.tigerdata.com/", "what": "Time-series extension for PostgreSQL", "tags": ["Time-series", "PostgreSQL"], "starts_at": "See its own pricing page", "difference": "Builds on Postgres, so it fits existing Postgres stacks."},
+    {"name": "InfluxDB", "url": "https://www.influxdata.com/", "what": "Time-series database for metrics and IoT", "tags": ["Time-series"], "starts_at": "See its own pricing page", "difference": "Large ecosystem for monitoring and telemetry."},
+    {"name": "ClickHouse", "url": "https://clickhouse.com/", "what": "Open-source column-oriented analytics database", "tags": ["Analytics", "Open source"], "starts_at": "See its own pricing page", "difference": "General analytics engine rather than time-series specific."}
+   ]
+  },
+  "faq": [
+   {"q": "Is QuestDB free?", "a": "Yes. The core database is open source under Apache 2.0. QuestDB Enterprise is a paid edition with pricing on request."},
+   {"q": "Who founded QuestDB?", "a": "Nicolas Hourcard (CEO) and Vlad Ilyushchenko; the company gives 2019 as its founding year."},
+   {"q": "Does QuestDB use SQL?", "a": "Yes, it is queried with SQL, including over data tiered to Parquet storage."},
+   {"q": "How much has QuestDB raised?", "a": "TechCrunch reported $14.3 million in total after its $12 million Series A in November 2021."}
+  ],
+  "sources": [
+   {"label": "QuestDB website", "url": "https://questdb.com/"},
+   {"label": "QuestDB Enterprise", "url": "https://questdb.com/enterprise/"},
+   {"label": "QuestDB: About", "url": "https://questdb.com/about-us/"},
+   {"label": "QuestDB blog: Our two-year journey raising $15M", "url": "https://questdb.com/blog/2022/01/03/two-year-journey-raising-15m-venture-capital/"},
+   {"label": "TechCrunch: QuestDB snares $12M Series A (3 Nov 2021)", "url": "https://techcrunch.com/2021/11/03/questdb-snares-12m-series-a-with-hosted-version-on-the-horizon/"}
+  ]
+ }
+}

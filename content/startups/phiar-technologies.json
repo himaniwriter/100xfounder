@@ -1,0 +1,67 @@
+{
+ "slug": "phiar-technologies",
+ "website": "https://www.ycombinator.com/companies/phiar",
+ "excerpt": "Phiar built AI-powered augmented reality navigation for drivers on phones and in-car screens. Y Combinator lists it as acquired; reports name Google as the buyer.",
+ "content": "<p>Phiar Technologies was a Bay Area startup that built augmented reality navigation for driving. Instead of a flat map, its software used a phone or in-car camera feed and drew directions directly onto the live view of the road, while its AI detected lanes, vehicles and other traffic in real time. Y Combinator's profile describes it as building the first AI-powered AR navigation driving software, running on smartphones and in-vehicle displays. According to a 2022 report republished by the Japanese tech outlet BRIDGE, its products were a Spatial-AI Engine and a Mobility AR Engine; it sold to businesses such as fleets, ran proof-of-concept tests with car makers including Nissan, and worked with partners such as Panasonic Automotive, Bosch, TomTom and HERE.</p><p>Phiar was founded in 2017 and went through Y Combinator's Summer 2018 batch. BRIDGE reported that its founders were Chen-Ping Yu, a computer vision researcher who had been a postdoctoral researcher at Harvard, and James Briscoe. In 2021 Gene Karshenboym, who had led Google's Android automotive platform, became CEO, and Yu moved to the board.</p><h2>Funding</h2><p>BRIDGE reported that Phiar raised a $2.5 million seed round from investors including Y Combinator, Norwest Venture Partners and Mayfield, and a $12 million Series A in September 2021 led by State Farm Ventures.</p><h2>Acquisition</h2><p>Phiar's Y Combinator profile now lists the company as acquired, and links to a December 2022 news headline saying Google acquired the startup; BRIDGE also reported the acquisition by Google in September 2022. We have not found an announcement from Google with terms, and none were reported. Phiar's former website, phiar.net, no longer resolves.</p><h2>Pricing</h2><p>Phiar sold its software to businesses and did not publish prices. It is no longer offered as a standalone product.</p><p><em>This page is based on Phiar's Y Combinator profile, BRIDGE's 2022 report and Phiar's GitHub account. Details of the acquisition beyond these reports are not public.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AR navigation for driving",
+  "platform": "Smartphones and in-vehicle displays (no longer sold)",
+  "starts_at": "No longer sold",
+  "schema_category": "TravelApplication",
+  "summary_short": "AI-powered augmented reality driving navigation, reported acquired by Google in 2022",
+  "maker": {"name": "Phiar Technologies", "url": "https://www.ycombinator.com/companies/phiar"},
+  "team": [
+   {"name": "Chen-Ping Yu", "role": "Co-founder; later board director", "url": "https://www.ycombinator.com/companies/phiar"},
+   {"name": "James Briscoe", "role": "Co-founder", "url": "https://thebridge.jp/2022/09/phiar-acquired-by-google/"},
+   {"name": "Gene Karshenboym", "role": "CEO from 2021", "url": "https://thebridge.jp/2022/09/phiar-acquired-by-google/"}
+  ],
+  "gallery": [
+   {"url": "https://avatars.githubusercontent.com/u/63265038?v=4", "alt": "Phiar's logo, a blue-green map pin with a white phi symbol, over a dark street map with a green route", "credit": "Image: Phiar, from its official GitHub account", "w": 180, "h": 180},
+   {"url": "https://bookface-images.s3.amazonaws.com/small_logos/bb16323014c9e8250a467c58cc43f377d1919cf9.png", "alt": "Phiar's logo: a blue-to-green map pin containing a white phi symbol", "credit": "Image: Phiar, via its Y Combinator profile", "w": 150, "h": 150}
+  ],
+  "use_cases": [
+   "Showing turn-by-turn directions overlaid on a live camera view of the road",
+   "Detecting lanes, vehicles and pedestrians for driver guidance",
+   "Adding AR navigation to car makers' in-vehicle displays",
+   "Guiding fleet drivers to exact depot and delivery locations"
+  ],
+  "audience": {
+   "fit": [
+    "are researching AR navigation and in-car AI startups",
+    "follow Y Combinator mobility companies and their exits"
+   ],
+   "not_fit": [
+    "want to buy or download Phiar today: it is no longer sold"
+   ]
+  },
+  "pricing": {
+   "intro": "Phiar sold to businesses without public prices and is no longer offered.",
+   "plans": [
+    {"name": "Phiar AR navigation", "price": "No longer sold", "detail": "Company reported acquired in 2022"}
+   ],
+   "notes": [],
+   "url": "https://www.ycombinator.com/companies/phiar",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other AR and advanced navigation products for drivers.",
+   "items": [
+    {"name": "Google Maps Live View", "url": "https://www.google.com/maps/", "what": "AR walking directions in Google Maps", "tags": ["AR navigation"], "starts_at": "Free", "difference": "Built into Google Maps; mainly for walking."},
+    {"name": "WayRay", "url": "https://wayray.com/", "what": "Holographic AR head-up displays for cars", "tags": ["Automotive AR"], "starts_at": "See its own site", "difference": "Hardware-based head-up displays rather than camera software."},
+    {"name": "HERE Navigation", "url": "https://www.here.com/", "what": "Navigation software and maps for car makers", "tags": ["Automotive navigation"], "starts_at": "See its own site", "difference": "Large map and navigation supplier to automakers."}
+   ]
+  },
+  "faq": [
+   {"q": "What did Phiar do?", "a": "It built AI-powered augmented reality navigation that overlays directions on a live view of the road."},
+   {"q": "Was Phiar acquired?", "a": "Its Y Combinator profile lists it as acquired, and reports in 2022 named Google as the buyer. No terms were published."},
+   {"q": "Who founded Phiar?", "a": "Chen-Ping Yu and James Briscoe, in 2017, according to BRIDGE and Y Combinator."},
+   {"q": "How much did Phiar raise?", "a": "BRIDGE reported a $2.5 million seed and a $12 million Series A led by State Farm Ventures in 2021."}
+  ],
+  "sources": [
+   {"label": "Y Combinator: Phiar company profile", "url": "https://www.ycombinator.com/companies/phiar"},
+   {"label": "BRIDGE: Phiar acquired by Google (22 Sep 2022, Japanese)", "url": "https://thebridge.jp/2022/09/phiar-acquired-by-google/"},
+   {"label": "Phiar on GitHub", "url": "https://github.com/phiar"}
+  ]
+ }
+}

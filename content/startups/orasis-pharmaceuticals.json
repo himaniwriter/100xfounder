@@ -1,0 +1,67 @@
+{
+ "slug": "orasis-pharmaceuticals",
+ "website": "https://orasis-pharma.com/",
+ "excerpt": "Orasis Pharmaceuticals makes Qlosi, an FDA-approved prescription eye drop for presbyopia (age-related blurry near vision), available in the US through BlinkRx.",
+ "content": "<p>Orasis Pharmaceuticals is an eye care drug company focused on presbyopia, the age-related loss of near focus. Its product, Qlosi (pilocarpine hydrochloride ophthalmic solution 0.4%), is a preservative-free prescription eye drop. Ophthalmology Times explained that it works by narrowing the pupil, creating a pinhole effect that increases depth of field so close-up text looks sharper. The Qlosi website says one drop in each eye can be repeated after two to three hours, used daily or as needed up to twice a day, for an effect that can last up to eight hours.</p><p>The US Food and Drug Administration approved Qlosi on the basis of two Phase 3 trials, NEAR-1 and NEAR-2, which enrolled more than 600 patients; Orasis announced the approval on 18 October 2023. At the time Elad Kedar was CEO and Paul Smith was president and chief operating officer, and the company said it expected Qlosi to be available in the US in the first half of 2024. Orasis's website now says Qlosi is available by prescription in the US through the pharmacy service BlinkRx. In 2026 the company announced that refills had reached 49.1% and that it was focusing on eye care professionals rather than telehealth, and it said it had filed a new drug application in Australia for a presbyopia drop called BESKA.</p><h2>Pricing</h2><p>Orasis does not publish Qlosi's price on its company site. At approval, Smith told reporters that Qlosi would be a cash-pay product, meaning patients pay directly rather than through insurance, according to Eyes On Eyecare's Glance. The Qlosi website mentions savings offers and a satisfaction guarantee, with terms on the site.</p><h2>Who it suits</h2><p>Qlosi is for adults with presbyopia who want an alternative to reading glasses for part of the day, after an eye doctor confirms it is suitable. It is not a cure, and the label warns about dim vision and care when driving at night.</p><p><em>This is not medical advice. This page is based on the Orasis and Qlosi websites (checked 15 October 2026) and coverage in Ophthalmology Times and Glance.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Ophthalmic pharmaceuticals",
+  "platform": "Prescription eye drop (US)",
+  "starts_at": "Prescription, cash-pay; price not published",
+  "schema_category": "HealthApplication",
+  "summary_short": "Maker of Qlosi, an FDA-approved eye drop for age-related blurry near vision",
+  "maker": {"name": "Orasis Pharmaceuticals", "url": "https://orasis-pharma.com/"},
+  "team": [
+   {"name": "Elad Kedar", "role": "CEO (at FDA approval, 2023)", "url": "https://www.ophthalmologytimes.com/view/fda-approves-pilocarpine-hydrochloride-ophthalmic-solution-for-treatment-of-presbyopia"},
+   {"name": "Paul Smith", "role": "President and COO (2023)", "url": "https://www.ophthalmologytimes.com/view/fda-approves-pilocarpine-hydrochloride-ophthalmic-solution-for-treatment-of-presbyopia"}
+  ],
+  "gallery": [
+   {"url": "https://orasis-pharma.com/hubfs/raw_assets/public/orasis-website/images/qlosi-beauty-shot.jpg", "alt": "A purple Qlosi pilocarpine HCl ophthalmic solution 0.4% box and a single-dose vial on a wooden desk beside a laptop and coffee cup", "credit": "Image: Orasis Pharmaceuticals", "w": 675, "h": 1200},
+   {"url": "https://orasis-pharma.com/hubfs/raw_assets/public/orasis-website/images/home-hero-bg.jpg", "alt": "A woman reading a menu without glasses at a sunny outdoor café table, from the Orasis homepage", "credit": "Image: Orasis Pharmaceuticals", "w": 1920, "h": 927}
+  ],
+  "use_cases": [
+   "Reading menus, phones and labels without reading glasses for part of the day",
+   "Using an as-needed drop for close work",
+   "Giving eye care professionals a prescription option for presbyopia"
+  ],
+  "audience": {
+   "fit": [
+    "are an adult with presbyopia and want an alternative to readers some of the time",
+    "are an eye care professional treating near-vision loss"
+   ],
+   "not_fit": [
+    "need clear vision while driving at night or in poor light",
+    "live outside the US: Qlosi is sold by prescription in the US"
+   ]
+  },
+  "pricing": {
+   "intro": "Qlosi is a prescription, cash-pay product. Orasis does not publish a price on its company site.",
+   "plans": [
+    {"name": "Qlosi (pilocarpine HCl 0.4%)", "price": "Not published", "detail": "Prescription; filled through BlinkRx"}
+   ],
+   "notes": ["Savings programmes and a satisfaction guarantee are described on qlosi.com with their own terms."],
+   "url": "https://qlosi.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other ways to manage presbyopia. Talk to an eye doctor about which is right for you.",
+   "items": [
+    {"name": "Vuity (AbbVie)", "url": "https://www.vuity.com/", "what": "Pilocarpine 1.25% prescription eye drop for presbyopia", "tags": ["Eye drop"], "starts_at": "See its own site", "difference": "Higher-strength pilocarpine drop from AbbVie."},
+    {"name": "Reading glasses", "url": "https://www.aao.org/eye-health/diseases/what-is-presbyopia", "what": "Standard correction for presbyopia", "tags": ["Glasses"], "starts_at": "Varies", "difference": "No drug effects; works whenever worn."},
+    {"name": "Multifocal contact lenses", "url": "https://www.aao.org/eye-health/diseases/what-is-presbyopia", "what": "Contacts that correct near and distance vision", "tags": ["Contact lenses"], "starts_at": "Varies", "difference": "All-day correction without drops."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Qlosi?", "a": "A prescription eye drop of pilocarpine hydrochloride 0.4% approved by the FDA for presbyopia in adults."},
+   {"q": "When was Qlosi approved?", "a": "Orasis announced FDA approval on 18 October 2023."},
+   {"q": "How long does Qlosi last?", "a": "Its effect can last up to eight hours, with an optional second dose two to three hours after the first."},
+   {"q": "How do I get Qlosi?", "a": "With a prescription from an eye care professional, filled through BlinkRx in the US."}
+  ],
+  "sources": [
+   {"label": "Orasis Pharmaceuticals website", "url": "https://orasis-pharma.com/"},
+   {"label": "Qlosi website", "url": "https://qlosi.com/"},
+   {"label": "Ophthalmology Times: FDA approves pilocarpine HCl ophthalmic solution for presbyopia (18 Oct 2023)", "url": "https://www.ophthalmologytimes.com/view/fda-approves-pilocarpine-hydrochloride-ophthalmic-solution-for-treatment-of-presbyopia"},
+   {"label": "Glance (Eyes On Eyecare): FDA approves Orasis's Qlosi for presbyopia", "url": "https://glance.eyesoneyecare.com/stories/2023-10-18/fda-approves-orasis-s-qlosi-for-presbyopia/"}
+  ]
+ }
+}

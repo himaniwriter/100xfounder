@@ -1,0 +1,73 @@
+{
+ "slug": "s0cure",
+ "website": "https://www.socure.com/",
+ "excerpt": "Socure verifies identities and screens for fraud for banks, fintechs and government. Self-serve plans start with $1,000 in free monthly credits, then from $0.80 per check.",
+ "content": "<p>Socure is a US identity verification and fraud prevention company. When someone opens a bank account, applies for a card, signs up to a marketplace or claims a government benefit, Socure checks that the person is real and is who they say they are, using data about names, addresses, phone numbers and emails, document and selfie checks, and machine learning models that score the risk of identity fraud, synthetic identities and first-party fraud. Its platform, RiskOS, adds decisioning and orchestration so companies can combine Socure's checks with other data sources and rules. The website lists uses from consumer and business onboarding to login, bank account verification, contact centres, age assurance, watchlist screening and workforce verification, and says Socure has more than 3,000 customers.</p><p>Johnny Ayers founded Socure in 2012 and is its CEO, according to Finovate. Socure's site gives its address as Incline Village, Nevada.</p><h2>Funding and acquisitions</h2><p>In November 2021 Socure raised a $450 million Series E at a $4.5 billion valuation, led by Accel and funds advised by T. Rowe Price, with Bain Capital Ventures and Tiger Global joining. In October 2024 it agreed to buy the risk-decisioning company Effectiv for $136 million. On 27 August 2026 Socure announced a strategic growth investment at a $5.2 billion valuation led by Summit Partners, with Goldman Sachs Alternatives, Wells Fargo and Docusign, together with the acquisition of Fravity, an agentic operations platform that it is folding into RiskOS.</p><h2>Pricing</h2><p>Socure publishes prices for its self-serve tier, Socure Launch: $1,000 of free credits each month, then $0.80 per document verification, $0.90 for document verification plus watchlist screening, $1.00 for KYC, fraud and watchlist checks with a document step-up, and $1.30 when pre-fill is added. Socure Enterprise uses volume-based pricing through sales.</p><h2>Who it suits</h2><p>Socure fits banks, fintechs, marketplaces, gaming and crypto firms, and government agencies that must verify identities at sign-up and keep fraud down. Small businesses that only need occasional ID checks may find simpler tools enough.</p><p><em>We have not tested Socure. This page is based on Socure's website, pricing page (checked 15 October 2026) and press releases, and on Finovate.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Identity verification and fraud prevention",
+  "platform": "API, hosted flows and RiskOS platform",
+  "starts_at": "$1,000 free monthly credits, then from $0.80 per check",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Identity verification, fraud scoring and risk decisioning for onboarding and beyond",
+  "maker": {"name": "Socure", "url": "https://www.socure.com/"},
+  "team": [{"name": "Johnny Ayers", "role": "Founder and CEO", "url": "https://finovate.com/socure-locks-in-450-million-in-series-e-funding-earns-valuation-of-4-5-billion/"}],
+  "gallery": [
+   {"url": "https://www.socure.com/images/PR-News-Page-Socure-Logo-2.png", "alt": "The white Socure logo, two stacked diamond shapes beside the word Socure, on an orange dotted background", "credit": "Image: Socure", "w": 1264, "h": 960},
+   {"url": "https://media.socure.com/app/uploads/2026/02/bank-account-verification.png", "alt": "A phone screen from a banking app showing a Link your bank account step with a Connect instantly button, illustrating Socure's bank account verification", "credit": "Image: Socure", "w": 2340, "h": 1000}
+  ],
+  "use_cases": [
+   "Verifying identity when a customer opens a bank or fintech account",
+   "Checking government ID documents and selfies",
+   "Scoring applications for synthetic identity and first-party fraud",
+   "Screening customers against sanctions and watchlists",
+   "Verifying bank accounts and businesses during onboarding"
+  ],
+  "audience": {
+   "fit": [
+    "are a bank, fintech, crypto exchange or marketplace with KYC obligations",
+    "run a government benefits programme that must verify applicants",
+    "want to combine identity, fraud and compliance checks in one decision engine"
+   ],
+   "not_fit": [
+    "only need an occasional ID check for a small business",
+    "operate mainly outside the regions Socure covers (check its international options)"
+   ]
+  },
+  "pricing": {
+   "intro": "Socure Launch is self-serve with published per-evaluation prices; Socure Enterprise is quoted.",
+   "plans": [
+    {"name": "Socure Launch free credits", "price": "$1,000 free each month", "detail": "Applied before per-evaluation charges"},
+    {"name": "Document Verification", "price": "$0.80 per evaluation", "amount": 0.8, "currency": "USD", "detail": "Socure Launch"},
+    {"name": "DocV + Watchlist", "price": "$0.90 per evaluation", "amount": 0.9, "currency": "USD", "detail": "Socure Launch"},
+    {"name": "KYC + Fraud + Watchlist, DocV step-up", "price": "$1.00 per evaluation", "amount": 1, "currency": "USD", "detail": "Socure Launch"},
+    {"name": "Prefill, KYC + Fraud + Watchlist, DocV step-up", "price": "$1.30 per evaluation", "amount": 1.3, "currency": "USD", "detail": "Socure Launch"},
+    {"name": "Socure Enterprise", "price": "Quote on request", "detail": "Usage-based with volume discounts"}
+   ],
+   "notes": [],
+   "url": "https://www.socure.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other identity verification and fraud providers.",
+   "items": [
+    {"name": "Persona", "url": "https://withpersona.com/", "what": "Configurable identity verification platform", "tags": ["KYC", "Identity"], "starts_at": "See its own pricing page", "difference": "Strong on configurable verification flows."},
+    {"name": "Alloy", "url": "https://www.alloy.com/", "what": "Identity and fraud decisioning for banks and fintechs", "tags": ["Decisioning"], "starts_at": "See its own site", "difference": "Orchestrates many third-party data sources; competes with RiskOS."},
+    {"name": "Onfido (Entrust)", "url": "https://onfido.com/", "what": "Document and biometric identity verification", "tags": ["Document verification"], "starts_at": "See its own site", "difference": "Known mainly for document and selfie checks."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Socure do?", "a": "It verifies people's identities and scores fraud risk for companies and agencies, mostly at account opening, through its RiskOS platform."},
+   {"q": "How much does Socure cost?", "a": "The self-serve Socure Launch tier includes $1,000 of free monthly credits, then charges $0.80–$1.30 per evaluation; Enterprise is quoted."},
+   {"q": "How much is Socure worth?", "a": "Socure announced a strategic investment at a $5.2 billion valuation, led by Summit Partners, on 27 August 2026."},
+   {"q": "Who founded Socure?", "a": "Johnny Ayers, who is also CEO; the company was founded in 2012."}
+  ],
+  "sources": [
+   {"label": "Socure website", "url": "https://www.socure.com/"},
+   {"label": "Socure pricing", "url": "https://www.socure.com/pricing"},
+   {"label": "Socure: Strategic growth investment at $5.2B valuation and Fravity acquisition (27 Aug 2026)", "url": "https://www.socure.com/news-and-press/strategic-growth-investment-fravity-acquisition"},
+   {"label": "Finovate: Socure locks in $450 million Series E (9 Nov 2021)", "url": "https://finovate.com/socure-locks-in-450-million-in-series-e-funding-earns-valuation-of-4-5-billion/"},
+   {"label": "Finovate: Socure acquires Effectiv for $136 million (24 Oct 2024)", "url": "https://finovate.com/socure-acquires-real-time-risk-decisioning-company-effectiv-for-136-million/"}
+  ]
+ }
+}

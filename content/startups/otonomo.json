@@ -1,0 +1,64 @@
+{
+ "slug": "otonomo",
+ "website": "https://www.geturgently.com/",
+ "excerpt": "Otonomo ran a platform for connected-car data. It merged into roadside assistance company Urgently in 2023, and Agero agreed to buy Urgently in 2026.",
+ "content": "<p>Otonomo Technologies was an Israeli company that built a platform for connected-car data. Urgently's filings with the US Securities and Exchange Commission describe Otonomo's business as an automotive data platform connecting car manufacturers, drivers, insurers and service providers, turning anonymised mobility data into business insights. Third-party analytics tools were built on its data; one example on Wikimedia Commons shows Los Angeles traffic analysed in the xyzt.ai platform.</p><p>Otonomo listed on Nasdaq in 2021 through a merger with a special purpose acquisition company, but its market value fell sharply afterwards.</p><h2>Merger with Urgently</h2><p>In February 2023 Otonomo agreed to an all-stock merger with Urgently, a US digital roadside assistance company; S&P Global Mobility reported that Urgently holders would own about 67% of the combined company and Otonomo holders about 33%. The deal closed on 19 October 2023, when Otonomo became a wholly owned subsidiary of Urgently, which then traded on Nasdaq as ULY. Urgently's filings show Otonomo contributing about $3.3 million in revenue in the first half of 2024.</p><h2>Agero deal</h2><p>On 13 March 2026 Agero, a driver assistance services company, announced an agreement to acquire Urgently for $5.50 a share in cash through a tender offer. Urgently's website now says it has joined forces with Agero.</p><h2>Pricing</h2><p>Otonomo's data services were sold under contract and it never published a price list. It is no longer marketed as a separate brand; Urgently's website focuses on roadside assistance software.</p><p><em>This page is based on Urgently's SEC filings and website, S&P Global Mobility's report on the merger and Agero's announcement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Connected vehicle data",
+  "platform": "Data platform and APIs (no longer marketed separately)",
+  "starts_at": "No longer sold separately",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Connected-car data platform, merged into Urgently in 2023",
+  "maker": {"name": "Otonomo (part of Urgently)", "url": "https://www.geturgently.com/"},
+  "gallery": [
+   {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Otonomo-losangeles2-v2.jpg/1280px-Otonomo-losangeles2-v2.jpg", "alt": "The xyzt.ai analytics interface showing car traffic data over a dark map of Los Angeles, with filters and a timeline", "credit": "Image: Xyzt.ai, CC BY-SA 4.0, via Wikimedia Commons (File:Otonomo-losangeles2-v2.jpg)", "w": 1280, "h": 720},
+   {"url": "https://cdn.prod.website-files.com/68c848447dfcb52d240975b2/68d6b97a0874314e753f9d03_city.png", "alt": "Illustration of a white model city with purple location pins above the buildings, from Urgently's website", "credit": "Image: Urgently", "w": 1400, "h": 513}
+  ],
+  "use_cases": [
+   "Giving fleets location and diagnostics data from their vehicles",
+   "Supplying driving data to insurers",
+   "Providing anonymised traffic data to cities and analytics firms",
+   "Feeding vehicle data into roadside assistance (Urgently's stated reason for the merger)"
+  ],
+  "audience": {
+   "fit": [
+    "are researching connected-car data companies and their outcomes",
+    "follow automotive SPACs and mergers"
+   ],
+   "not_fit": [
+    "want to buy Otonomo data today as a standalone service"
+   ]
+  },
+  "pricing": {
+   "intro": "Otonomo sold data access under contract and published no price list. It is no longer marketed on its own.",
+   "plans": [
+    {"name": "Otonomo data platform", "price": "No longer sold separately", "detail": "Part of Urgently since October 2023"}
+   ],
+   "notes": [],
+   "url": "https://www.sec.gov/Archives/edgar/data/1603652/000095017025039411/uly-20241231.htm",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other connected-vehicle data providers.",
+   "items": [
+    {"name": "Wejo", "url": "https://www.wejo.com/", "what": "Connected vehicle data company", "tags": ["Vehicle data"], "starts_at": "See its own site", "difference": "A UK rival that also went public via SPAC."},
+    {"name": "Smartcar", "url": "https://smartcar.com/", "what": "API to connect apps to cars with owner permission", "tags": ["Vehicle API"], "starts_at": "See its own pricing page", "difference": "Developer API where drivers grant access to their own car."},
+    {"name": "INRIX", "url": "https://inrix.com/", "what": "Traffic and mobility analytics", "tags": ["Traffic data"], "starts_at": "See its own site", "difference": "Focused on traffic and road analytics for cities and businesses."}
+   ]
+  },
+  "faq": [
+   {"q": "What happened to Otonomo?", "a": "It merged with Urgently in an all-stock deal that closed on 19 October 2023 and became an Urgently subsidiary."},
+   {"q": "Who owns Urgently now?", "a": "Agero announced on 13 March 2026 that it had agreed to buy Urgently for $5.50 a share; Urgently's site says it has joined Agero."},
+   {"q": "What did Otonomo do?", "a": "It ran an automotive data platform that connected car makers, drivers, insurers and service providers and turned anonymised mobility data into business insights."},
+   {"q": "Was Otonomo a public company?", "a": "Yes. It listed on Nasdaq in 2021 through a SPAC merger before combining with Urgently."}
+  ],
+  "sources": [
+   {"label": "Urgently Inc. Form 10-K for 2024 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1603652/000095017025039411/uly-20241231.htm"},
+   {"label": "Urgently Inc. Form 10-Q for Q1 2024 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1603652/000095017024059514/uly-20240331.htm"},
+   {"label": "S&P Global Mobility: Otonomo to merge with Urgently in an all-stock transaction", "url": "https://autotechinsight.spglobal.com/news/5269533/otonomo-to-merge-with-urgently-in-an-all-stock-transaction"},
+   {"label": "Agero: Agero acquires Urgently (Mar 2026)", "url": "https://blog.agero.com/agero-acquires-urgently"},
+   {"label": "Urgently website", "url": "https://www.geturgently.com/"}
+  ]
+ }
+}

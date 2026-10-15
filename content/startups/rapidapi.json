@@ -1,0 +1,71 @@
+{
+ "slug": "rapidapi",
+ "website": "https://rapidapi.com/",
+ "excerpt": "RapidAPI (later Rapid) ran the world's largest public API marketplace. Nokia bought its technology and R&D team in 2024, and it now runs as Nokia API Hub.",
+ "content": "<p>RapidAPI built an API hub: a marketplace where developers could find, test and pay for thousands of third-party APIs with one account and one key, and where API providers could list and earn money from their own APIs. Alongside the public marketplace it sold an enterprise hub that lets companies design, build, test and share APIs internally and with partners. The company later shortened its name to Rapid. Iddo Gino founded it and led it as CEO; TechCrunch reported in March 2022 that the marketplace was used by 4 million developers, after adding a million in the previous year.</p><h2>Funding</h2><p>On 23 March 2022 RapidAPI announced a $150 million Series D led by SoftBank's Vision Fund 2 at a $1 billion valuation, with Andreessen Horowitz, M12 (Microsoft's venture fund), Viola Growth and others, according to TechCrunch and Globes. Its Series C a year earlier had valued it at about $355 million. Gino later stepped down as CEO and was replaced by finance chief Marc Friend.</p><h2>Acquisition by Nokia</h2><p>On 13 November 2024 Nokia announced that it had acquired Rapid's technology assets, including what it called the world's largest API hub, and its research and development unit. Financial terms were not disclosed. Nokia said it would combine Rapid's API hub with its Network as Code platform so telecom operators can offer 5G and 4G network APIs to Rapid's developer base. When we checked rapidapi.com in October 2026, the site described itself as Nokia API Hub, previously known as Rapid.</p><h2>Pricing</h2><p>Using the hub to browse APIs is free; each API on the public marketplace sets its own plans, including free tiers and paid subscriptions, and providers publish those prices on their API pages. The enterprise hub is sold through Nokia.</p><p><em>This page is based on Nokia's press release, the rapidapi.com website, and reporting by TechCrunch and Globes.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "API marketplace and hub",
+  "platform": "Web",
+  "starts_at": "Free to browse; each API sets its own price",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Public API marketplace and enterprise API hub, now Nokia API Hub",
+  "maker": {"name": "Nokia (formerly Rapid / RapidAPI)", "url": "https://rapidapi.com/"},
+  "team": [
+   {"name": "Iddo Gino", "role": "Founder and former CEO", "url": "https://techcrunch.com/2022/03/23/rapidapi-nabs-150m-at-a-1b-valuation-with-its-api-marketplace-now-used-by-4m-developers"},
+   {"name": "Marc Friend", "role": "CEO of Rapid at the time of the Nokia deal", "url": "https://www.nokia.com/newsroom/nokia-acquires-rapid-technology-and-rd-unit-to-strengthen-development-of-network-api-solutions-and-ecosystem/"}
+  ],
+  "gallery": [
+   {"url": "https://avatars.githubusercontent.com/u/16919504?v=4", "alt": "Rapid's logo: a white rounded letter R on a blue circle", "credit": "Image: Rapid, from its official GitHub account (now Nokia (Rapid))", "w": 460, "h": 460},
+   {"url": "https://content.presspage.com/uploads/3180/55ca9144-8a44-4bc0-8c04-1eb63b3d59ce/cf1920_purple-gradient-n-amp.png?24987", "alt": "Nokia's white N symbol on a purple gradient, the image Nokia used for its Rapid acquisition announcement", "credit": "Image: Nokia", "w": 1779, "h": 1000}
+  ],
+  "use_cases": [
+   "Finding and testing third-party APIs from one place",
+   "Using one key and one bill for several APIs",
+   "Listing and monetising your own API",
+   "Sharing internal APIs across a company with an enterprise hub",
+   "Offering telecom network APIs to developers (Nokia's plan for the hub)"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer looking for ready-made APIs",
+    "publish an API and want a marketplace to sell it",
+    "are a telecom operator exploring network API exposure through Nokia"
+   ],
+   "not_fit": [
+    "need a full API gateway for production traffic management",
+    "want a vendor independent of Nokia"
+   ]
+  },
+  "pricing": {
+   "intro": "The hub has no single price. Browsing is free, and every API provider sets its own plans on its API page.",
+   "plans": [
+    {"name": "Public hub", "price": "Free to browse", "detail": "Each API has its own free and paid plans"},
+    {"name": "Enterprise hub", "price": "Quote on request", "detail": "Sold through Nokia"}
+   ],
+   "notes": [],
+   "url": "https://rapidapi.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other places to find, manage or publish APIs.",
+   "items": [
+    {"name": "Postman API Network", "url": "https://www.postman.com/explore", "what": "Public directory of APIs inside Postman", "tags": ["API directory"], "starts_at": "See its own pricing page", "difference": "Tied to Postman's API testing tool."},
+    {"name": "APILayer", "url": "https://apilayer.com/", "what": "Marketplace of ready-made APIs", "tags": ["API marketplace"], "starts_at": "See its own site", "difference": "Smaller catalogue run by one company."},
+    {"name": "Kong Konnect", "url": "https://konghq.com/", "what": "API gateway and developer portal", "tags": ["API management"], "starts_at": "See its own pricing page", "difference": "Focused on running and governing your own APIs."}
+   ]
+  },
+  "faq": [
+   {"q": "Does RapidAPI still exist?", "a": "Its hub now runs as Nokia API Hub. Nokia acquired Rapid's technology and R&D team on 13 November 2024."},
+   {"q": "How much did Nokia pay for Rapid?", "a": "The terms were not disclosed."},
+   {"q": "Who founded RapidAPI?", "a": "Iddo Gino, who was CEO until he was replaced by Marc Friend."},
+   {"q": "Is RapidAPI free?", "a": "Browsing is free; each API on the marketplace has its own pricing."}
+  ],
+  "sources": [
+   {"label": "Nokia: Nokia acquires Rapid technology and R&D unit (13 Nov 2024)", "url": "https://www.nokia.com/newsroom/nokia-acquires-rapid-technology-and-rd-unit-to-strengthen-development-of-network-api-solutions-and-ecosystem/"},
+   {"label": "rapidapi.com (Nokia API Hub)", "url": "https://rapidapi.com/"},
+   {"label": "TechCrunch: RapidAPI nabs $150M at a $1B valuation (23 Mar 2022)", "url": "https://techcrunch.com/2022/03/23/rapidapi-nabs-150m-at-a-1b-valuation-with-its-api-marketplace-now-used-by-4m-developers"},
+   {"label": "Globes: API platform RapidAPI raises $150m at $1b valuation", "url": "https://en.globes.co.il/en/article-1001406829"}
+  ]
+ }
+}

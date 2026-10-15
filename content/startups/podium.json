@@ -1,0 +1,68 @@
+{
+ "slug": "podium",
+ "website": "https://www.podium.com/",
+ "excerpt": "Podium is a Utah company selling an AI Employee, messaging, reviews and payments to local businesses such as car dealerships and home services. Pricing is by quote.",
+ "content": "<p>Podium is a Utah software company for local businesses. It started with tools for collecting online reviews and talking to customers by text, then added payments; TechCrunch reported in 2020 that Podium let its customers take payments inside text conversations, with processing through Stripe. Today the company leads with what it calls an AI Employee: an assistant that answers calls, texts and web chats around the clock, qualifies leads, books appointments and re-engages past customers. Its website offers industry versions for auto dealerships, home services, aesthetics and retail, and says more than 60,000 businesses use Podium.</p><p>Eric Rea is Podium's CEO. TechCrunch reported in March 2020 that 43,000 businesses used Podium at the time.</p><h2>Funding</h2><p>Podium raised $125 million at a valuation of about $1.5 billion in April 2020, and on 15 November 2021 TechCrunch reported a $201 million round that valued the company at $3 billion post-money. Rea told Bloomberg then that Podium had well over $100 million in annual recurring revenue.</p><h2>Pricing</h2><p>Podium does not publish prices. Its pricing page says plans are built around each business's needs and asks you to talk to sales; the AI Employee can be added to any plan, and onboarding, phone and chat support and customer success managers are included in every plan.</p><h2>Who it suits</h2><p>Podium suits local businesses that live on inbound leads and appointments, such as car dealers, home service companies, med spas and retailers, and that struggle to answer every call and message quickly. Online-only businesses or companies that sell mainly to other businesses may find it less relevant.</p><p><em>We have not tested Podium. This page is based on Podium's website and pricing page (checked 15 October 2026) and TechCrunch reporting from 2020 and 2021.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Customer messaging and AI for local businesses",
+  "platform": "Web and mobile apps",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI Employee, texting, reviews and payments for local businesses",
+  "maker": {"name": "Podium", "url": "https://www.podium.com/"},
+  "team": [{"name": "Eric Rea", "role": "CEO", "url": "https://techcrunch.com/2021/11/15/utahs-podium-raises-pre-ipo-round-boosting-its-valuation-to-3-billion/"}],
+  "gallery": [
+   {"url": "https://framerusercontent.com/images/RhxY5NHZ4tQvQVmy5EC6BZ5zBQ.png", "alt": "The white Podium logo on a dark background with faint circular lines", "credit": "Image: Podium", "w": 1200, "h": 630},
+   {"url": "https://framerusercontent.com/images/ccFpaxn48ltvXN7ZeIvNrhk07M.png?width=1686&height=1800", "alt": "Diagram of Podium's AI Employee taking a phone call, a text message and a web chat at different times of day, all feeding into a How can we help you? prompt", "credit": "Image: Podium", "w": 1686, "h": 1800}
+  ],
+  "use_cases": [
+   "Answering every inbound call, text and web chat, including after hours",
+   "Booking service appointments at a car dealership",
+   "Following up with old leads and past customers automatically",
+   "Requesting reviews from customers by text",
+   "Collecting payments through text messages"
+  ],
+  "audience": {
+   "fit": [
+    "run a car dealership, home services company, med spa or retail store",
+    "miss calls and messages from leads after hours",
+    "want texting, reviews and payments in one tool"
+   ],
+   "not_fit": [
+    "run an online-only business without local customers",
+    "want published prices before a sales call"
+   ]
+  },
+  "pricing": {
+   "intro": "Podium does not publish prices. Plans are quoted by its sales team.",
+   "plans": [
+    {"name": "Podium plans", "price": "Quote on request", "detail": "Built around each business's needs"},
+    {"name": "AI Employee", "price": "Quote on request", "detail": "Can be added to any plan"}
+   ],
+   "notes": ["Onboarding, phone and chat support and customer success managers are included in every plan, according to the pricing page."],
+   "url": "https://www.podium.com/pricing/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other customer messaging and review tools for local businesses.",
+   "items": [
+    {"name": "Birdeye", "url": "https://birdeye.com/", "what": "Reviews, listings and messaging for multi-location businesses", "tags": ["Reviews", "Messaging"], "starts_at": "See its own pricing page", "difference": "Stronger on review and listing management across many locations."},
+    {"name": "Weave", "url": "https://www.getweave.com/", "what": "Phones, texting and payments for healthcare practices", "tags": ["Healthcare", "Messaging"], "starts_at": "See its own pricing page", "difference": "Built mainly for dental, optometry and medical offices."},
+    {"name": "Broadly", "url": "https://broadly.com/", "what": "Reviews, web chat and payments for small businesses", "tags": ["Reviews"], "starts_at": "See its own pricing page", "difference": "Aimed at smaller service businesses."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Podium?", "a": "Software for local businesses that combines an AI Employee for calls, texts and chats with review requests, messaging and payments."},
+   {"q": "How much does Podium cost?", "a": "Podium does not publish prices; plans are quoted by its sales team."},
+   {"q": "How much is Podium worth?", "a": "TechCrunch reported a $3 billion post-money valuation after a $201 million round in November 2021."},
+   {"q": "Who runs Podium?", "a": "Eric Rea is CEO."}
+  ],
+  "sources": [
+   {"label": "Podium website", "url": "https://www.podium.com/"},
+   {"label": "Podium pricing", "url": "https://www.podium.com/pricing/"},
+   {"label": "TechCrunch: Utah's Podium raises pre-IPO round at $3 billion valuation (15 Nov 2021)", "url": "https://techcrunch.com/2021/11/15/utahs-podium-raises-pre-ipo-round-boosting-its-valuation-to-3-billion/"},
+   {"label": "TechCrunch: Podium rolls out payments (2 Mar 2020)", "url": "https://techcrunch.com/2020/03/02/podium-rolls-out-payments-for-its-customer-focused-local-business-saas-service/"}
+  ]
+ }
+}

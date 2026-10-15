@@ -1,0 +1,73 @@
+{
+ "slug": "reputation-com",
+ "website": "https://reputation.com/",
+ "excerpt": "Reputation (Reputation.com) helps multi-location brands manage reviews, listings, surveys and AI search visibility. Plans from $80 per location per month.",
+ "content": "<p>Reputation, long known as Reputation.com, makes software for brands with many locations, such as car dealer networks, healthcare groups, property managers and hotel chains. Its platform pulls customer signals into one place: online reviews and AI-assisted responses, business listings and local SEO, location pages, customer surveys, social media, and insights that show sentiment and what to fix. It also offers Reputation IQ, which answers questions about customer feedback with AI, a single Rep Score metric, and tools aimed at how brands appear in AI search answers, which it calls GEO readiness.</p><p>TechCrunch reported in 2019 that Michael Fertik founded the company in 2006 as ReputationDefender, a service for individuals, and that it later sold its consumer business and pivoted to enterprises. At that point it served three of the top five car makers, more than 10,000 US car dealerships and 250 healthcare customers. Its leadership page lists Joe Burton as CEO, and its board includes investors from Bessemer Venture Partners, Kleiner Perkins, Marlin Equity, Ascension Ventures and Icon Ventures.</p><h2>Funding</h2><p>In August 2019 Reputation.com raised $30 million in equity led by Ascension Ventures, its second round since the pivot, according to TechCrunch.</p><h2>Pricing</h2><p>Reputation publishes per-location prices. Rep Core costs $80 per location per month and covers review management and business listings. Rep Core + Pulse costs $115 per location per month and adds AI insights, an AI reputation manager and basic surveys. Rep Core + Surveys costs $150 per location per month with advanced surveys and outreach campaigns. Enterprise plans for 125 or more locations are quoted, and add-ons such as social, competitive insights and managed services are priced on request.</p><h2>Who it suits</h2><p>It suits multi-location businesses that want reviews, listings and feedback across all sites in one dashboard. A single shop with one location may find lighter tools enough.</p><p><em>We have not tested Reputation. This page is based on its website, pricing and leadership pages (checked 15 October 2026) and TechCrunch.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Reputation and customer experience management",
+  "platform": "Web (SaaS)",
+  "starts_at": "$80 per location per month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Reviews, listings, surveys and AI search visibility for multi-location brands",
+  "maker": {"name": "Reputation", "url": "https://reputation.com/"},
+  "team": [
+   {"name": "Joe Burton", "role": "CEO", "url": "https://reputation.com/our-leadership"},
+   {"name": "Michael Fertik", "role": "Founder", "url": "https://techcrunch.com/2019/08/20/reputation-com-nabs-30m-more-to-help-enterprises-manage-their-profiles-online"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/68f14ae7c649d87c7fb35781/69499190bc979ee1d2f31653_Platform-Overview-1460x854.png", "alt": "Collage of Reputation dashboard panels including a reputation score of 719, location comparisons, survey counts and listing details", "credit": "Image: Reputation", "w": 1460, "h": 854},
+   {"url": "https://cdn.prod.website-files.com/68f14ae7c649d87c7fb35781/6945a5c5874e387900b22d97_Website-UI-Illustrations-500x350_Listing-Detials-AI.png", "alt": "Illustration of a Listing Details by AI panel with fields for address, phone number, categories and website, and a sentiment-by-AI bar", "credit": "Image: Reputation", "w": 500, "h": 350}
+  ],
+  "use_cases": [
+   "Requesting and responding to reviews across hundreds of locations",
+   "Keeping business listings accurate on search, maps and AI assistants",
+   "Running customer surveys and spotting issues early",
+   "Comparing locations against local competitors",
+   "Reporting one reputation score to leadership"
+  ],
+  "audience": {
+   "fit": [
+    "run marketing or customer experience for a multi-location brand",
+    "work in automotive, healthcare, property management or hospitality",
+    "want reviews, listings and surveys in one platform"
+   ],
+   "not_fit": [
+    "run a single small business with few reviews",
+    "need consumer reputation help for an individual: Reputation sold its consumer business"
+   ]
+  },
+  "pricing": {
+   "intro": "Reputation publishes per-location monthly prices for three plans; Enterprise is quoted.",
+   "plans": [
+    {"name": "Rep Core", "price": "$80/location/month", "amount": 80, "currency": "USD", "detail": "Review management with AI responses, business listings and SEO"},
+    {"name": "Rep Core + Pulse", "price": "$115/location/month", "amount": 115, "currency": "USD", "detail": "Adds AI insights, AI Reputation Manager, Pulse Analytics, basic surveys"},
+    {"name": "Rep Core + Surveys", "price": "$150/location/month", "amount": 150, "currency": "USD", "detail": "Advanced surveys, email survey requests, outreach campaigns"},
+    {"name": "Enterprise", "price": "Quote on request", "detail": "For 125+ locations"}
+   ],
+   "notes": ["Add-ons such as Social Suite, Competitive Insights and Managed Services are priced on request."],
+   "url": "https://reputation.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other reputation and review management platforms.",
+   "items": [
+    {"name": "Birdeye", "url": "https://birdeye.com/", "what": "Reviews, listings and messaging for local businesses", "tags": ["Reviews", "Listings"], "starts_at": "See its own pricing page", "difference": "Adds messaging and payments for local teams."},
+    {"name": "Yext", "url": "https://www.yext.com/", "what": "Listings and brand knowledge management", "tags": ["Listings"], "starts_at": "See its own pricing page", "difference": "Stronger roots in listings and structured brand data."},
+    {"name": "Podium", "url": "https://www.podium.com/", "what": "AI employee, messaging and reviews for local businesses", "tags": ["Messaging", "Reviews"], "starts_at": "Quote on request", "difference": "Focused on lead conversion for single and small groups of locations."}
+   ]
+  },
+  "faq": [
+   {"q": "How much does Reputation cost?", "a": "From $80 per location per month for Rep Core, up to $150 for Rep Core + Surveys; Enterprise plans are quoted."},
+   {"q": "Who founded Reputation.com?", "a": "Michael Fertik, who started it in 2006 as ReputationDefender."},
+   {"q": "Who is Reputation's CEO?", "a": "Joe Burton, according to the company's leadership page."},
+   {"q": "Does Reputation help individuals?", "a": "No. It sold its consumer business and now serves companies."}
+  ],
+  "sources": [
+   {"label": "Reputation website", "url": "https://reputation.com/"},
+   {"label": "Reputation pricing", "url": "https://reputation.com/pricing"},
+   {"label": "Reputation: Leadership", "url": "https://reputation.com/our-leadership"},
+   {"label": "TechCrunch: Reputation.com nabs $30M more (20 Aug 2019)", "url": "https://techcrunch.com/2019/08/20/reputation-com-nabs-30m-more-to-help-enterprises-manage-their-profiles-online"}
+  ]
+ }
+}
