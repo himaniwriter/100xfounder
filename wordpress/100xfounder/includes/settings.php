@@ -50,6 +50,7 @@ function xf_setting_defaults() {
         'founders_community_url' => '',
         'leads_sheet_url' => '',
         'launch_auto_approve' => 1,
+        'meter_milestone_emails' => 1,
     ];
 }
 

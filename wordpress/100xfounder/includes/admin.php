@@ -236,6 +236,9 @@ function xf_settings_fields() {
         'Launch submissions' => [
             'launch_auto_approve' => ['Auto-approve launch submissions after 10 minutes if I haven\'t reviewed them', 'checkbox', 'Only new launches that pass every check: the website answers over https, the domain is not already listed, no shortener, adult or gambling terms, no disposable email. Claims of existing listings always wait for you. Auto-approved listings are marked in 100xFounder → Launches and Startups, so you can still unpublish them.'],
         ],
+        '100X Meter' => [
+            'meter_milestone_emails' => ['Milestone emails to founders', 'checkbox', 'When a startup first crosses 10X, 25X, 50X or 100X, queue one short template email (no AI) to the contact address its company publishes, with the listing link, badge code and share card. Sent with the founder outreach campaigns: same switch, daily cap, dry run, unsubscribe and stop-on-reply.'],
+        ],
         'Events' => [
             'event_feeds' => ['Public event calendars (ICS)', 'textarea', 'One iCal/ICS URL per line, e.g. a Luma calendar or a Meetup group feed. New events are imported daily as Pending for your review.'],
         ],

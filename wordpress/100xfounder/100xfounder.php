@@ -61,6 +61,7 @@ if (is_readable(XF_DIR . 'includes/crawl.php')) { require_once XF_DIR . 'include
 if (is_readable(XF_DIR . 'includes/ratings.php')) { require_once XF_DIR . 'includes/ratings.php'; }
 if (is_readable(XF_DIR . 'includes/startup-reviews.php')) { require_once XF_DIR . 'includes/startup-reviews.php'; }
 if (is_readable(XF_DIR . 'includes/meter.php')) { require_once XF_DIR . 'includes/meter.php'; }
+if (is_readable(XF_DIR . 'includes/meter-growth.php')) { require_once XF_DIR . 'includes/meter-growth.php'; }
 if (is_readable(XF_DIR . 'includes/popup.php')) { require_once XF_DIR . 'includes/popup.php'; }
 if (is_readable(XF_DIR . 'includes/gated-list.php')) { require_once XF_DIR . 'includes/gated-list.php'; }
 if (is_readable(XF_DIR . 'includes/queue.php')) { require_once XF_DIR . 'includes/queue.php'; }
