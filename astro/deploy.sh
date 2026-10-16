@@ -21,7 +21,7 @@ trap 'rmdir .deploy.lock' EXIT
 [[ -n "${XF_STAGES:-}" && "${SKIP_UPLOAD:-}" != 1 ]] && { echo "XF_STAGES is for trial builds; set SKIP_UPLOAD=1 (live stages come from stages.txt)." >&2; exit 1; }
 [[ -d node_modules ]] || npm ci --no-audit --no-fund
 rm -rf dist dist-skipped
-STAGES="${XF_STAGES:-$(tr -d ' \n' < stages.txt 2>/dev/null || true)}"
+STAGES="${XF_STAGES:-$(tr -s ' \n' ',' < stages.txt 2>/dev/null | sed 's/^,//;s/,$//' || true)}"
 python3 fetch.py "$WP_URL" "${STAGES:-none}"   # incremental: only changed or week-old renders are refetched
 XF_WP_URL="$WP_URL" npm run build --silent
 
