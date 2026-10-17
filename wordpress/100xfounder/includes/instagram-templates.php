@@ -1209,19 +1209,24 @@ function xf_ig_planned_label($utc) {
 function xf_ig_admin_card() {
     global $wpdb;
     $table = xf_table('ig_queue');
-    $queue = $wpdb->get_results("SELECT * FROM $table WHERE status = 'ready' ORDER BY planned_at IS NULL, planned_at ASC, created_at DESC LIMIT 14");
-    $done = $wpdb->get_results("SELECT * FROM $table WHERE status <> 'ready' ORDER BY updated_at DESC LIMIT 4");
+    // Only work still to do: ready (including failed attempts) and rows stuck mid-post. Posted and skipped live on their own page.
+    $queue = $wpdb->get_results("SELECT * FROM $table WHERE status IN ('ready','posting') ORDER BY planned_at IS NULL, planned_at ASC, created_at DESC LIMIT 14");
+    $counts = $wpdb->get_results("SELECT status, COUNT(*) n FROM $table WHERE status IN ('posted','skipped') GROUP BY status", OBJECT_K);
     $last = get_option('xf_ig_last_calendar');
     $zip = class_exists('ZipArchive');
     ?>
     <div class="card" style="max-width:none">
-        <h2>Instagram queue</h2>
+        <h2>Instagram queue
+            <span style="font-size:13px;font-weight:normal;margin-left:10px">
+                <a href="<?php echo esc_url(admin_url('admin.php?page=xf-ig-posted')); ?>">Posted (<?php echo (int) ($counts['posted']->n ?? 0); ?>) →</a> ·
+                <a href="<?php echo esc_url(admin_url('admin.php?page=xf-ig-posted&view=skipped')); ?>">Skipped (<?php echo (int) ($counts['skipped']->n ?? 0); ?>)</a>
+            </span></h2>
         <p>Calendar from the playbook (IST): Mon roundup + AI tip · Tue founder story + launch · Wed news + founder story · Thu founder story + launch · Fri news + AI tip · Sat roundup · Sun best founder story.
             Queued daily at 00:05 IST<?php echo $last ? ' (last: ' . esc_html($last['day'] . ' → ' . implode('; ', $last['slots'])) . ')' : ''; ?>.
             <a class="button button-small" href="<?php echo esc_url(wp_nonce_url(admin_url('admin-post.php?action=xf_ig_calendar_now'), 'xf_ig_calendar_now')); ?>">Queue today's slots now</a></p>
         <?php if (function_exists('xf_ig_autopost_status')) { xf_ig_autopost_status(); } ?>
         <p>Check the slides and caption, download, post on Instagram, then mark it posted. Founder stories from profiles need the founder's OK first.</p>
-        <?php foreach (array_merge($queue, $done) as $item) : $payload = json_decode($item->payload, true) ?: []; ?>
+        <?php foreach ($queue as $item) : $payload = json_decode($item->payload, true) ?: []; ?>
             <div style="border-top:1px solid #ddd;padding:12px 0">
                 <strong><?php echo esc_html($item->title); ?></strong>
                 <code><?php echo esc_html($item->kind); ?></code>
@@ -1245,7 +1250,7 @@ function xf_ig_admin_card() {
                 <button type="button" class="button button-small" onclick="var b=this;navigator.clipboard.writeText(b.previousElementSibling.value).then(function(){b.textContent='Copied';});">Copy caption</button>
             </div>
         <?php endforeach; ?>
-        <?php if (!$queue && !$done) : ?><p>Nothing queued yet.</p><?php endif; ?>
+        <?php if (!$queue) : ?><p>Nothing left to post.</p><?php endif; ?>
     </div>
     <?php
 }

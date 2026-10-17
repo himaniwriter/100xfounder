@@ -203,8 +203,8 @@ function xf_ig_publish($item) {
     return ['id' => (string) $p['id'], 'permalink' => is_wp_error($m) ? '' : (string) ($m['permalink'] ?? '')];
 }
 
-/** Claims, posts and records one item. Returns true or WP_Error (error saved on the row). */
-function xf_ig_post_item($item) {
+/** Claims, posts and records one item. Returns true or WP_Error (error saved on the row). $via: 'auto' or 'post_now'. */
+function xf_ig_post_item($item, $via = 'auto') {
     global $wpdb;
     $table = xf_table('ig_queue');
     // Claim the row first so an overlapping run can never post it twice. updated_at keys the preview cache, so it stays.
@@ -224,7 +224,13 @@ function xf_ig_post_item($item) {
     unset($payload['ig_error']);
     $payload['ig_media_id'] = $r['id'];
     $payload['ig_permalink'] = $r['permalink'];
-    $wpdb->update($table, ['status' => 'posted', 'posted_at' => xf_now(), 'payload' => wp_json_encode($payload)], ['id' => $item->id]);
+    $wpdb->update($table, [
+        'status' => 'posted', 'posted_at' => xf_now(), 'payload' => wp_json_encode($payload), 'posted_via' => $via,
+        'ig_media_id' => $r['id'], 'ig_permalink' => $r['permalink'], 'verify_status' => '', 'verify_note' => '',
+    ], ['id' => $item->id]);
+    if (function_exists('xf_ig_verify_item')) {
+        xf_ig_verify_item((int) $item->id);
+    }
     return true;
 }
 
@@ -506,7 +512,7 @@ add_action('admin_post_xf_ig_review', function () {
     if ($blocker !== '') {
         xf_ig_redirect('Not posted: ' . $blocker . '.', $back);
     }
-    $r = xf_ig_post_item($item);
+    $r = xf_ig_post_item($item, 'post_now');
     xf_ig_redirect(is_wp_error($r) ? 'Instagram post failed: ' . $r->get_error_message() : 'Posted to Instagram.', $back);
 });
 

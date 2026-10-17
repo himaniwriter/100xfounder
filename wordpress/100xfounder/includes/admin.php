@@ -35,7 +35,8 @@ add_action('admin_post_xf_admin', function () {
         case 'ig_skipped':
         case 'ig_ready':
             $status = substr($do, 3);
-            $wpdb->update(xf_table('ig_queue'), ['status' => $status, 'posted_at' => $status === 'posted' ? xf_now() : null, 'updated_at' => xf_now()], ['id' => $id]);
+            $wpdb->update(xf_table('ig_queue'), ['status' => $status, 'posted_at' => $status === 'posted' ? xf_now() : null, 'updated_at' => xf_now()]
+                + ($status === 'posted' ? ['posted_via' => 'manual', 'verify_status' => '', 'verify_note' => ''] : []), ['id' => $id]);
             break;
         case 'stop_contact':
             $wpdb->update(xf_table('contacts'), ['status' => 'paused', 'next_send_at' => null, 'updated_at' => xf_now()], ['id' => $id]);
