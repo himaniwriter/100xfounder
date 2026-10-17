@@ -137,12 +137,12 @@ def icon_candidates(site_url):
     return out
 
 
-def to_png(body, svg):
-    """SVG (longest side 256px, aspect kept) or ICO converted to PNG with macOS sips; b"" if it fails."""
+def to_png(body, svg, size=256):
+    """SVG (longest side `size` px, aspect kept) or ICO converted to PNG with macOS sips; b"" if it fails."""
     with tempfile.TemporaryDirectory() as d:
         src, out = os.path.join(d, "in.svg" if svg else "in.ico"), os.path.join(d, "out.png")
         open(src, "wb").write(body)
-        cmd = ["sips", "-s", "format", "png"] + (["-Z", "256"] if svg else []) + [src, "--out", out]
+        cmd = ["sips", "-s", "format", "png"] + (["-Z", str(size)] if svg else []) + [src, "--out", out]
         if subprocess.run(cmd, capture_output=True).returncode or not os.path.exists(out):
             return b""
         return open(out, "rb").read()
