@@ -24,10 +24,32 @@ KW = {
     'startup-100x-score': ('startup score', [
         r'100x score', r'startup scorecard', r'startup assessment', r'startup readiness', r'score (?:your|my) startup',
         r'startup health check', r'startup evaluation', r'startup self assessment', r'how 100x is your startup']),
+    'ai-token-cost-calculator': ('token cost calculator', [
+        r'llm api cost calculator', r'api cost calculator', r'token calculator', r'(?:claude|openai|gemini|llm) api cost', r'cost per (?:million )?tokens?',
+        r'price per million tokens', r'llm pricing', r'api pricing', r'token costs?', r'token pricing']),
+    'runway-calculator': ('runway calculator', [
+        r'cash runway', r'financial runway', r'burn rate calculator', r'startup runway', r'burn rate', r'months of runway', r'zero cash date', r'default alive', r'runway']),
+    'cap-table-calculator': ('cap table calculator', [
+        r'equity dilution calculator', r'dilution calculator', r'safe calculator', r'convertible (?:note|debt) calculator', r'option pool calculator',
+        r'cap table', r'dilution', r'ownership after']),
+    'cofounder-equity-split-calculator': ('co founder equity split calculator', [
+        r'cofounder equity (?:split )?calculator', r'founders? equity calculator', r'equity split between (?:co ?)?founders', r'(?:co ?)?founder equity split',
+        r'equity split', r'split equity']),
+    'ai-roi-calculator': ('ai roi calculator', [
+        r'ai (?:agent|automation|chatbot) roi calculator', r'roi of ai', r'ai roi', r'return on (?:ai|investment)', r'payback period', r'roi calculator', r'hours saved']),
+    'saas-metrics-calculator': ('ltv cac calculator', [
+        r'saas metrics calculator', r'ltv (?:to )?cac(?: ratio)?', r'cac calculation', r'mrr calculator', r'arr calculation', r'nrr calculator',
+        r'churn rate calculator', r'payback period calculator', r'rule of 40', r'saas metrics']),
+    'startup-cost-calculator': ('startup cost calculator', [
+        r'business startup cost calculator', r'startup costs?', r'cost to start a (?:business|startup)', r'startup budget', r'how much does it cost to start', r'cost of starting']),
+    'esop-calculator': ('esop calculator', [
+        r'esop calculation', r'esop vesting calculator', r'esop tax(?:ation)?', r'esop value', r'stock options? calculator', r'vesting schedule', r'esops?']),
+    'gpu-cost-calculator': ('gpu cost calculator', [
+        r'(?:aws|azure) gpu cost calculator', r'gpu pricing', r'h100 price per hour', r'gpu cloud costs?', r'cost per gpu hour', r'price per gpu hour', r'gpu hours?', r'gpu costs?']),
 }
 
 def norm(t):
-    return re.sub(r'\s+', ' ', re.sub(r'[-‐-—]', ' ', t.lower()))
+    return re.sub(r'\s+', ' ', re.sub(r'[-:‐-—]', ' ', t.lower()))
 
 def load(slug):
     php = ("define('ABSPATH','/');$c=include $argv[1];echo json_encode($c);")

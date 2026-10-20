@@ -19,7 +19,31 @@ if ($tool && ($file = locate_template('parts/tools/' . $tool['slug'] . '.php')))
     $content = is_array($content) ? $content : [];
 }
 $brand = function_exists('xf_brand_asset') ? xf_brand_asset('') : '';
-$fill = function ($html) use ($brand) { return str_replace('{{brand}}', esc_url($brand), $html); };
+$prices = ($pf = locate_template('parts/tools/prices.php')) ? include $pf : [];
+$price_table = function ($kind) use ($prices) {
+    if (empty($prices[$kind])) {
+        return '';
+    }
+    $date = wp_date('j F Y', strtotime($prices['checked']));
+    $rows = '';
+    if ($kind === 'llm') {
+        $head = '<tr><th>Provider</th><th>Model</th><th>Input</th><th>Cached input</th><th>Output</th></tr>';
+        foreach ($prices['llm'] as $m) {
+            $rows .= sprintf('<tr><td>%s</td><td>%s%s</td><td>$%s</td><td>$%s</td><td>$%s</td></tr>', esc_html($m[0]), esc_html($m[1]), $m[5] ? ' <em>(' . esc_html($m[5]) . ')</em>' : '', esc_html(rtrim(rtrim(number_format($m[2], 3), '0'), '.')), esc_html(rtrim(rtrim(number_format($m[3], 3), '0'), '.')), esc_html(rtrim(rtrim(number_format($m[4], 3), '0'), '.')));
+        }
+        $cap = 'US dollars per million tokens, standard (non-batch) rates. Prices as of ' . $date . ' from ' . implode(', ', array_keys($prices['llm_sources'])) . ' official pricing pages.';
+    } else {
+        $head = '<tr><th>Cloud</th><th>Instance</th><th>GPUs</th><th>Per hour</th><th>Per GPU-hour</th></tr>';
+        foreach ($prices['gpu'] as $g) {
+            $rows .= sprintf('<tr><td>%s</td><td>%s</td><td>%d × %s</td><td>$%s</td><td>$%s</td></tr>', esc_html($g[0]), esc_html($g[1]), (int) $g[2], esc_html($g[3]), esc_html(number_format($g[4], 2)), esc_html(number_format($g[4] / $g[2], 2)));
+        }
+        $cap = 'US dollars, on-demand Linux list prices in US East. Prices as of ' . $date . ' from the AWS and Azure pricing pages.';
+    }
+    return '<table><thead>' . $head . '</thead><tbody>' . $rows . '</tbody></table><p class="k" style="text-transform:none;letter-spacing:0">' . esc_html($cap) . '</p>';
+};
+$fill = function ($html) use ($brand, $price_table) {
+    return str_replace(['{{brand}}', '{{llm_prices}}', '{{gpu_prices}}'], [esc_url($brand), $price_table('llm'), $price_table('gpu')], $html);
+};
 
 if ($tool) {
     add_action('wp_head', function () use ($tool, $content, $file, $fill) {
@@ -95,7 +119,7 @@ if (!$tool) : ?>
 <section class="wrap" style="padding-top:80px;padding-bottom:48px">
     <div class="k in"><span class="ac">Free tools</span> · Runs in your browser · Nothing to sign up for</div>
     <h1 class="display in" style="animation-delay:.08s">Numbers that<br>help you decide.</h1>
-    <p class="in" style="max-width:620px;margin-top:22px;font-size:18px;line-height:1.6;color:var(--t2);animation-delay:.16s">Calculators for salaries, hikes and job switches in India. Your numbers never leave this page.</p>
+    <p class="in" style="max-width:620px;margin-top:22px;font-size:18px;line-height:1.6;color:var(--t2);animation-delay:.16s">Calculators for salaries and job switches in India, for founders' runway, equity and SaaS numbers, and for AI costs. Your numbers never leave this page.</p>
 </section>
 <div class="hl"></div>
 <section class="wrap" style="padding-top:40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px">
@@ -155,10 +179,11 @@ if (!$tool) : ?>
         </details>
     </div>
     <div class="result" aria-live="polite">
-        <div><div class="k">In-hand per month · <span id="ih-regime">New regime</span></div><div class="big" id="ih-monthly" style="margin-top:12px">₹0</div></div>
+        <p class="tl-err" data-err role="alert" hidden></p>
+        <div><div class="k">In-hand per month · <span id="ih-regime">New regime</span></div><div class="big" id="ih-monthly" data-out style="margin-top:12px">₹0</div></div>
         <div style="display:flex;gap:28px;flex-wrap:wrap" class="mono">
-            <span><span class="k">Yearly</span><br><span id="ih-yearly" style="font-size:18px">₹0</span></span>
-            <span><span class="k">Tax as % of CTC</span><br><span id="ih-rate" style="font-size:18px">0%</span></span>
+            <span><span class="k">Yearly</span><br><span id="ih-yearly" data-out style="font-size:18px">₹0</span></span>
+            <span><span class="k">Tax as % of CTC</span><br><span id="ih-rate" data-out style="font-size:18px">0%</span></span>
         </div>
         <div>
             <div class="splitbar" aria-hidden="true"><span id="bar-hand" style="background:var(--tx)"></span><span id="bar-tax" style="background:var(--ac)"></span><span id="bar-pf" style="background:#c56bff"></span><span id="bar-other" style="background:#4aa8ff"></span></div>
@@ -180,18 +205,20 @@ if (!$tool) : ?>
         <label style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--t2);margin-top:12px"><input id="hk-old" type="checkbox"> Use the old tax regime</label>
     </div>
     <div class="result" aria-live="polite">
-        <div><div class="k">Extra in-hand per month</div><div class="big" id="hk-diff" style="margin-top:12px">₹0</div></div>
+        <p class="tl-err" data-err role="alert" hidden></p>
+        <div><div class="k">Extra in-hand per month</div><div class="big" id="hk-diff" data-out style="margin-top:12px">₹0</div></div>
         <div>
-            <div class="br"><span style="color:var(--t2)">New CTC</span><span class="mono" id="hk-new"></span></div>
-            <div class="br"><span style="color:var(--t2)">Hike</span><span class="mono" id="hk-pct"></span></div>
-            <div class="br"><span style="color:var(--t2)">In-hand per month now</span><span class="mono" id="hk-before"></span></div>
-            <div class="br"><span style="color:var(--t2)">In-hand per month after</span><span class="mono" id="hk-after"></span></div>
-            <div class="br"><span style="color:var(--t2)">Share of the raise you keep</span><span class="mono" id="hk-take"></span></div>
+            <div class="br"><span style="color:var(--t2)">New CTC</span><span class="mono" id="hk-new" data-out></span></div>
+            <div class="br"><span style="color:var(--t2)">Hike</span><span class="mono" id="hk-pct" data-out></span></div>
+            <div class="br"><span style="color:var(--t2)">In-hand per month now</span><span class="mono" id="hk-before" data-out></span></div>
+            <div class="br"><span style="color:var(--t2)">In-hand per month after</span><span class="mono" id="hk-after" data-out></span></div>
+            <div class="br"><span style="color:var(--t2)">Share of the raise you keep</span><span class="mono" id="hk-take" data-out></span></div>
         </div>
         <p style="font-size:14px;color:var(--t3)">Assumes basic = 50% of CTC, PF capped at ₹3,000 a month, ₹2,500 professional tax and, for the old regime, ₹1.5L of 80C.</p>
     </div>
 </section>
 <?php elseif ($tool['slug'] === 'startup-100x-score') : get_template_part('parts/tool-100x-score'); ?>
+<?php elseif (locate_template('parts/tools/calc-' . $tool['slug'] . '.php')) : get_template_part('parts/tools/calc-' . $tool['slug']); ?>
 <?php else : ?>
 <section class="wrap tool-grid" data-tool="notice">
     <div class="tool-in">
@@ -207,10 +234,11 @@ if (!$tool) : ?>
         <select id="nb-days" class="fld" style="font-size:16px;color:var(--tx)"><option value="30">30 days</option><option value="26">26 working days</option></select>
     </div>
     <div class="result" aria-live="polite">
-        <div><div class="k">Buyout amount</div><div class="big" id="nb-amount" style="margin-top:12px">₹0</div></div>
+        <p class="tl-err" data-err role="alert" hidden></p>
+        <div><div class="k">Buyout amount</div><div class="big" id="nb-amount" data-out style="margin-top:12px">₹0</div></div>
         <div>
-            <div class="br"><span style="color:var(--t2)">Days left to buy out</span><span class="mono" id="nb-remaining"></span></div>
-            <div class="br"><span style="color:var(--t2)">Rate</span><span class="mono" id="nb-perday"></span></div>
+            <div class="br"><span style="color:var(--t2)">Days left to buy out</span><span class="mono" id="nb-remaining" data-out></span></div>
+            <div class="br"><span style="color:var(--t2)">Rate</span><span class="mono" id="nb-perday" data-out></span></div>
         </div>
         <p style="font-size:14px;color:var(--t3)">Your employment contract decides the rule. Many employers accept leave set-off or early release; ask HR in writing. New employers often reimburse the buyout as a joining bonus, so ask for it during the offer.</p>
     </div>
@@ -225,6 +253,9 @@ foreach ($tools as $slug => $t) {
 $sections = $content['sections'] ?? [];
 $howto = $content['howto'] ?? null;
 ?>
+<?php if ($tool['slug'] !== 'startup-100x-score' && function_exists('xf_calc_consent')) : ?>
+<div class="wrap" data-calc-lead data-slug="<?php echo esc_attr($tool['slug']); ?>" data-endpoint="<?php echo esc_url(rest_url('xf/v1/calc-lead')); ?>" data-token="<?php echo esc_attr(function_exists('xf_join_token') ? xf_join_token() : ''); ?>" data-consent="<?php echo esc_attr(xf_calc_consent()); ?>"></div>
+<?php endif; ?>
 <div class="hl" style="margin-top:56px"></div>
 <div class="wrap tl-body">
     <details class="tl-side" open data-tl-side>

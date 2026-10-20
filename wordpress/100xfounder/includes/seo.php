@@ -58,7 +58,7 @@ function xf_page_description($key) {
         'funding' => 'A tracker of startup funding rounds, with the amount, stage, investors and a source for every round.',
         'launch' => 'Launch your startup on 100xFounder for free. Add your product, logo and screenshots; we check every launch and email you the live link.',
         'submit' => 'Submit your startup, launch, news or press release to 100xFounder. An editor reads every submission.',
-        'tools' => 'Free calculators for Indian salaried professionals: in-hand salary from CTC, salary hike and notice period buyout.',
+        'tools' => 'Free calculators for professionals and founders: in-hand salary, salary hike, notice buyout, runway, cap table, ESOP, SaaS metrics and AI costs.',
         'guides' => 'How to apply at top companies hiring in India: the hiring process, interview rounds and tips, with sources.',
     ];
     return $map[$key] ?? '';
@@ -165,7 +165,7 @@ function xf_brand_photo_html($slot, $ratio = '16x10', $eager = false) {
 /** The bundled 1200x630 card for this section of the site, or the owner's default image. */
 function xf_brand_social_image() {
     if (function_exists('xf_current_tool') && ($tool = xf_current_tool())) {
-        return xf_brand_asset('og-tool-' . $tool['slug'] . '.png');
+        return xf_brand_asset(file_exists(XF_DIR . 'assets/brand/og-tool-' . $tool['slug'] . '.png') ? 'og-tool-' . $tool['slug'] . '.png' : 'og-tools.png');
     }
     if (is_singular('xf_job') || is_tax('xf_company')) {
         return xf_brand_asset('og-jobs.png');
