@@ -37,3 +37,14 @@ while (!gzeof($gz)) {
 }
 gzclose($gz);
 WP_CLI::log("Imported $n statements, $fail failed.");
+
+// The SQLite driver stores every literal '%' as wpdb's placeholder hash; turn it back into '%'.
+// CHAR(37) is '%': writing a literal % here would be re-escaped the same way.
+$h = $wpdb->placeholder_escape();
+$fixed = 0;
+foreach ([$wpdb->posts => ['post_title', 'post_content', 'post_excerpt'], $wpdb->postmeta => ['meta_value'], $wpdb->options => ['option_value'], $wpdb->terms => ['name'], $wpdb->term_taxonomy => ['description'], $wpdb->comments => ['comment_content']] as $t => $cols) {
+    foreach ($cols as $c) {
+        $fixed += (int) $wpdb->query("UPDATE $t SET $c = REPLACE($c, '$h', CHAR(37)) WHERE INSTR($c, '$h') > 0");
+    }
+}
+WP_CLI::log("Restored % in $fixed rows.");

@@ -19,6 +19,11 @@ while (have_posts()) :
     $ph = (string) $m['ph_url'];
     $industry = wp_get_post_terms($id, 'xf_industry', ['fields' => 'names']);
     $category = $p['category'] ?? ($industry[0] ?? '');
+    // Category links to its industry archive (internal linking); profile text may differ from the term, so fall back to the first assigned industry.
+    $cat_term = $category ? get_term_by('name', $category, 'xf_industry') : false;
+    if (!$cat_term) { $assigned = wp_get_post_terms($id, 'xf_industry'); $cat_term = $assigned[0] ?? false; }
+    $cat_url = $cat_term && !is_wp_error($cat_term) ? get_term_link($cat_term) : '';
+    $cat_url = is_wp_error($cat_url) ? '' : $cat_url;
     $launched = xft_long_date($m['launch_day'] ?: get_post_meta($id, '_xf_launch_date', true));
     $maker = $p['maker'] ?? [];
     $phs = $p['ph'] ?? [];
@@ -128,7 +133,7 @@ while (have_posts()) :
     <section class="wrap" style="padding-top:32px">
         <div class="facts in">
             <?php if ($launched) : ?><div><div class="k" style="font-size:10px">Launched</div><div class="v"><?php echo esc_html($launched); ?></div></div><?php endif; ?>
-            <?php if ($category) : ?><div><div class="k" style="font-size:10px">Category</div><div class="v"><?php echo esc_html($category); ?></div></div><?php endif; ?>
+            <?php if ($category) : ?><div><div class="k" style="font-size:10px">Category</div><div class="v"><?php if ($cat_url) : ?><a href="<?php echo esc_url($cat_url); ?>"><?php echo esc_html($category); ?></a><?php else : echo esc_html($category); endif; ?></div></div><?php endif; ?>
             <?php if ($price !== '') : ?><div><div class="k" style="font-size:10px">Price</div><div class="v"><?php echo esc_html($price); ?></div></div><?php endif; ?>
             <?php if (!empty($p['platform'])) : ?><div><div class="k" style="font-size:10px">Works with</div><div class="v"><?php echo esc_html($p['platform']); ?></div></div><?php endif; ?>
             <?php if (!empty($maker['name'])) : ?><div><div class="k" style="font-size:10px">Made by</div><div class="v"><?php echo !empty($maker['url']) ? '<a class="u" href="' . esc_url($maker['url']) . '" target="_blank" rel="nofollow noopener">' . esc_html($maker['name']) . '</a>' : esc_html($maker['name']); ?></div></div><?php endif; ?>

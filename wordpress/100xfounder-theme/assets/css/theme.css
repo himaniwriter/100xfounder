@@ -242,6 +242,10 @@ a:hover .ph img{transform:scale(1.05);filter:saturate(1)}
 .footer-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(160px,100%),1fr));gap:32px;padding-bottom:48px}
 .footer-cols div{display:flex;flex-direction:column;gap:10px;font-size:14px}
 .wordmark{font-size:clamp(64px,15vw,220px);font-weight:700;letter-spacing:-.07em;line-height:.8;color:#18181b;user-select:none;white-space:nowrap}
+/* Footer wordmark shimmer: a soft violet light sweeps across the dark letters; stops under reduced motion. */
+.wordmark{background:linear-gradient(100deg,#18181b 35%,#3b2d5c 46%,#b07cff 50%,#3b2d5c 54%,#18181b 65%) 0 0/300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:xf-shimmer 7s ease-in-out infinite}
+@keyframes xf-shimmer{0%{background-position:100% 0}60%,100%{background-position:0 0}}
+.facts .v a{color:inherit;text-decoration:underline;text-decoration-color:var(--ln2);text-underline-offset:4px}.facts .v a:hover{text-decoration-color:var(--ac)}
 .footer-bottom{padding-top:22px;padding-bottom:30px;font-size:11px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--ln)}
 .footer-bottom a:hover{color:var(--tx)}
 
@@ -384,7 +388,7 @@ a:hover .ph img{transform:scale(1.05);filter:saturate(1)}
 @keyframes xf-flow-alt{from{background-position:0% 50%}to{background-position:100% 50%}}
 body{background-image:radial-gradient(1100px 420px at 50% -220px,rgba(124,92,255,.22),transparent 65%);background-repeat:no-repeat}
 .ac:focus-visible{-webkit-text-fill-color:currentColor}
-@media (prefers-reduced-motion:reduce){.ac,.hl,.ticker .label,.prog{animation:none}}
+@media (prefers-reduced-motion:reduce){.ac,.hl,.ticker .label,.prog,.wordmark{animation:none}}
 /* Home without news yet: jobs + tools take the lead slot. */
 .home-start{display:flex;flex-wrap:wrap;gap:36px 48px;align-items:flex-start;padding-top:40px}
 .home-start .job-mini{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--ln)}

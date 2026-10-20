@@ -37,7 +37,7 @@ $company = [
     <div class="wrap" style="overflow:hidden"><div class="wordmark" aria-hidden="true"><?php echo esc_html(get_bloginfo('name') ?: '100Xfounder'); ?></div></div>
     <div class="wrap k footer-bottom">
         <span>© <?php echo esc_html(wp_date('Y') . ' ' . get_bloginfo('name')); ?>. Startup news, launches and founder stories from India &amp; the US.</span>
-        <span><a href="<?php echo esc_url(xft_page_url('privacy', 'privacy-policy')); ?>">Privacy</a> · <a href="<?php echo esc_url(xft_page_url('terms', 'terms')); ?>">Terms</a> · <a href="<?php echo esc_url(xft_page_url('corrections', 'corrections-policy')); ?>">Corrections</a> · <a href="<?php echo esc_url(xft_page_url('sitemap', 'sitemap')); ?>">Sitemap</a></span>
+        <span><a href="<?php echo esc_url(xft_page_url('privacy', 'privacy-policy')); ?>">Privacy</a> · <a href="<?php echo esc_url(xft_page_url('terms', 'terms')); ?>">Terms</a> · <a href="<?php echo esc_url(xft_page_url('corrections', 'corrections-policy')); ?>">Corrections</a> · <a href="<?php echo esc_url(xft_page_url('copyright', 'copyright-policy')); ?>">Copyright</a> · <a href="<?php echo esc_url(xft_page_url('sitemap', 'sitemap')); ?>">Sitemap</a></span>
     </div>
 </footer>
 <?php wp_footer(); ?>

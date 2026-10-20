@@ -159,6 +159,24 @@ HTML
 <!-- wp:paragraph --><p>Tell us what you'd like to promote on the <a href="/contact/">contact page</a> and we'll send prices and an invoice.</p><!-- /wp:paragraph -->
 HTML
         ],
+        'copyright' => ['Copyright & DMCA Policy', 'copyright-policy', <<<HTML
+<!-- wp:paragraph --><p><em>Last updated: {$date}</em></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The articles, guides, startup profiles, calculators, graphics and data compilations on {$host} are original work of {$site} and are protected by copyright. All rights reserved.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">What you may do</h2><!-- /wp:heading -->
+<!-- wp:list --><ul><li>Link to any page.</li><li>Quote a short excerpt (a sentence or two) with clear credit to {$site} and a link to the original page.</li><li>Share pages using the share buttons on the site.</li></ul><!-- /wp:list -->
+<!-- wp:heading --><h2 class="wp-block-heading">What needs our written permission</h2><!-- /wp:heading -->
+<!-- wp:list --><ul><li>Republishing an article, guide or profile in full or in substantial part, on a website, app, newsletter or social account.</li><li>Rewriting, spinning, translating or otherwise repurposing our articles into new content, including with AI tools.</li><li>Copying our original graphics, charts, calculator content or data compilations.</li><li>Scraping the site, or using its content to build datasets or to train or fine-tune AI models.</li></ul><!-- /wp:list -->
+<!-- wp:paragraph --><p>To ask for permission or a licence, email <a href="mailto:{$email}">{$email}</a>.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">How we enforce it</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>When we find our work copied or repurposed without permission, we ask the site to remove it. If it stays up, we send takedown notices under the US Digital Millennium Copyright Act (17 U.S.C. § 512) and equivalent laws in other countries to the hosting provider, to search engines such as Google and Bing, and to the platforms involved.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">Material that isn't ours</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Facts themselves are not owned by anyone. Images credited to other creators are used under their licences, which still apply. Quotes belong to their speakers and publishers, and trademarks and logos belong to their owners.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">If you think we used your work</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Email <a href="mailto:{$email}">{$email}</a> with the subject "Copyright notice" and include:</p><!-- /wp:paragraph -->
+<!-- wp:list {"ordered":true} --><ol><li>The work you believe was infringed.</li><li>The exact URL of the material on our site.</li><li>Your name, address, phone number and email.</li><li>A statement that you have a good-faith belief the use is not authorised by the owner, its agent or the law.</li><li>A statement, under penalty of perjury, that the information in your notice is accurate and that you are the owner or authorised to act for the owner.</li><li>Your physical or electronic signature.</li></ol><!-- /wp:list -->
+<!-- wp:paragraph --><p>We review every complete notice promptly and remove or correct material that infringes. If we remove something you posted, you may send a counter-notice with the details required by 17 U.S.C. § 512(g). We remove the content of repeat infringers.</p><!-- /wp:paragraph -->
+HTML
+        ],
         'disclaimer' => ['Disclaimer', 'disclaimer', <<<HTML
 <!-- wp:paragraph --><p>Information on {$site} is for general information only and is not investment, legal or financial advice. Listings and spotlights are not endorsements. We are not affiliated with Product Hunt. This website displays advertising, and we may earn money from ads shown on our pages; advertising never influences which products we list.</p><!-- /wp:paragraph -->
 HTML
