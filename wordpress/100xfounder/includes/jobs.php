@@ -704,13 +704,13 @@ add_filter('the_content', function ($content) {
 /* ---- Job page SEO: indexability, title and description from structured fields ---- */
 
 /** Jobs older than this stop being indexed and leave the sitemap. */
-const XF_JOB_INDEX_DAYS = 30;
+const XF_JOB_INDEX_DAYS = 14; // trimmed from 30 (owner, 2026-10-20)
 
 /** Role/city landing pages need this many open jobs to be indexed; company pages need XF_COMPANY_INDEX_MIN. */
 const XF_LANDING_INDEX_MIN = 10;
-const XF_COMPANY_INDEX_MIN = 5;
+const XF_COMPANY_INDEX_MIN = 10; // raised from 5 (owner, 2026-10-20)
 
-/** True when a job page should be indexed: published, not expired, posted in the last 30 days. */
+/** True when a job page should be indexed: published, not expired, posted in the last XF_JOB_INDEX_DAYS days. */
 function xf_job_is_indexable($id) {
     $id = (int) $id;
     if (get_post_type($id) !== 'xf_job' || get_post_status($id) !== 'publish' || get_post_meta($id, '_xf_expired', true)) {
@@ -863,7 +863,7 @@ add_filter('wp_robots', function ($robots) {
     return $robots;
 }, 20);
 
-/** The xf_job sitemap lists only open jobs from the last 30 days. */
+/** The xf_job sitemap lists only open jobs from the last XF_JOB_INDEX_DAYS days. */
 add_filter('wp_sitemaps_posts_query_args', function ($args, $post_type) {
     if ($post_type === 'xf_job') {
         $args['date_query'] = [['after' => gmdate('Y-m-d H:i:s', time() - XF_JOB_INDEX_DAYS * DAY_IN_SECONDS), 'column' => 'post_date_gmt', 'inclusive' => true]];

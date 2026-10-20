@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
  *    page, which crawlers otherwise follow.
  */
 
-const XF_MIN_CATEGORY_POSTS = 3;
+const XF_MIN_CATEGORY_POSTS = 10; // raised from 3 (owner, 2026-10-20): thin archives stay out of the index
 
 /** Is this archive too thin to be worth a place in Google's index? */
 function xf_is_thin_archive() {

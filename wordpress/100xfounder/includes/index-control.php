@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
 
 const XF_DRIP_PER_DAY = 20;
 const XF_DRIP_TYPES = ['xf_startup', 'xf_guide', 'xf_spotlight'];
-const XF_THIN_TYPES = ['post', 'xf_guide', 'xf_spotlight'];
+const XF_THIN_TYPES = ['post', 'xf_guide', 'xf_spotlight', 'xf_event', 'xf_job']; // events and jobs added 2026-10-20 (owner)
 
 /** Thin, or waiting for its drip slot: either way not for Google yet. */
 function xf_index_held($post_id) {
@@ -175,7 +175,7 @@ add_action('xf_index_control_hourly', function () {
     if ($urls && function_exists('xf_indexnow_submit')) {
         xf_indexnow_submit($urls);
     }
-    foreach (get_posts(['post_type' => XF_THIN_TYPES, 'post_status' => 'publish', 'posts_per_page' => 300, 'fields' => 'ids',
+    foreach (get_posts(['post_type' => XF_THIN_TYPES, 'post_status' => 'publish', 'posts_per_page' => 2000, // word count only; covers all events and jobs in one run 'fields' => 'ids',
         'meta_query' => [['key' => '_xf_thin', 'compare' => 'NOT EXISTS']]]) as $id) {
         xf_refresh_thin_flag($id);
     }
