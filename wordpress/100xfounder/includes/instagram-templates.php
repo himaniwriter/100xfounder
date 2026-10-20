@@ -117,6 +117,8 @@ function xf_ig_queue($kind, $ref_key, $title, $caption, array $slides, array $ex
     }
     $id = xf_ig_upsert($kind, $ref_key, $title, $caption, count($slides), $payload);
     if ($id) {
+        // Re-read: the upsert may have re-applied the owner's improvements to the payload.
+        $payload = json_decode((string) $wpdb->get_var($wpdb->prepare('SELECT payload FROM ' . xf_table('ig_queue') . ' WHERE id = %d', $id)), true) ?: $payload;
         $payload['slide_urls'] = array_map(function ($n) use ($id) { return xf_slide_url($id, $n); }, array_keys($slides));
         $wpdb->update(xf_table('ig_queue'), ['payload' => wp_json_encode($payload)], ['id' => $id]);
     }
@@ -1196,7 +1198,7 @@ function xf_ig_draw_body($img, array $c, array $s, $o, $compact = false) {
     return $y;
 }
 
-/* ---- Admin: queue card, zip download, run-now ---- */
+/* ---- Admin: zip download, run-now (the queue itself is in instagram-admin.php) ---- */
 
 function xf_ig_planned_label($utc) {
     if (!$utc) {
@@ -1205,63 +1207,13 @@ function xf_ig_planned_label($utc) {
     return (new DateTimeImmutable($utc, new DateTimeZone('UTC')))->setTimezone(new DateTimeZone('Asia/Kolkata'))->format('D j M, H:i') . ' IST';
 }
 
-/** Instagram queue card for the dashboard: previews, planned time, caption copy, zip, posted/skip. */
-function xf_ig_admin_card() {
-    global $wpdb;
-    $table = xf_table('ig_queue');
-    // Only work still to do: ready (including failed attempts) and rows stuck mid-post. Posted and skipped live on their own page.
-    $queue = $wpdb->get_results("SELECT * FROM $table WHERE status IN ('ready','posting') ORDER BY planned_at IS NULL, planned_at ASC, created_at DESC LIMIT 14");
-    $counts = $wpdb->get_results("SELECT status, COUNT(*) n FROM $table WHERE status IN ('posted','skipped') GROUP BY status", OBJECT_K);
-    $last = get_option('xf_ig_last_calendar');
-    $zip = class_exists('ZipArchive');
-    ?>
-    <div class="card" style="max-width:none">
-        <h2>Instagram queue
-            <span style="font-size:13px;font-weight:normal;margin-left:10px">
-                <a href="<?php echo esc_url(admin_url('admin.php?page=xf-ig-posted')); ?>">Posted (<?php echo (int) ($counts['posted']->n ?? 0); ?>) →</a> ·
-                <a href="<?php echo esc_url(admin_url('admin.php?page=xf-ig-posted&view=skipped')); ?>">Skipped (<?php echo (int) ($counts['skipped']->n ?? 0); ?>)</a>
-            </span></h2>
-        <p>Calendar from the playbook (IST): Mon roundup + AI tip · Tue founder story + launch · Wed news + founder story · Thu founder story + launch · Fri news + AI tip · Sat roundup · Sun best founder story.
-            Queued daily at 00:05 IST<?php echo $last ? ' (last: ' . esc_html($last['day'] . ' → ' . implode('; ', $last['slots'])) . ')' : ''; ?>.
-            <a class="button button-small" href="<?php echo esc_url(wp_nonce_url(admin_url('admin-post.php?action=xf_ig_calendar_now'), 'xf_ig_calendar_now')); ?>">Queue today's slots now</a></p>
-        <?php if (function_exists('xf_ig_autopost_status')) { xf_ig_autopost_status(); } ?>
-        <p>Check the slides and caption, download, post on Instagram, then mark it posted. Founder stories from profiles need the founder's OK first.</p>
-        <?php foreach ($queue as $item) : $payload = json_decode($item->payload, true) ?: []; ?>
-            <div style="border-top:1px solid #ddd;padding:12px 0">
-                <strong><?php echo esc_html($item->title); ?></strong>
-                <code><?php echo esc_html($item->kind); ?></code>
-                <em>(<?php echo esc_html($item->status); ?>)</em>
-                · Planned: <strong><?php echo esc_html(xf_ig_planned_label($item->planned_at ?? null)); ?></strong>
-                <?php if (!empty($payload['needs_founder_ok'])) : ?><span style="color:#b45309">· Get the founder's OK before posting</span><?php endif; ?>
-                <?php if (function_exists('xf_ig_item_controls')) { xf_ig_item_controls($item, $payload); } ?>
-                <br>
-                <a class="button button-small" href="<?php echo esc_url(xf_admin_action_url('ig_posted', ['id' => $item->id])); ?>">Mark posted</a>
-                <a class="button button-small" href="<?php echo esc_url(xf_admin_action_url('ig_skipped', ['id' => $item->id])); ?>">Skip</a>
-                <?php if ($zip) : ?><a class="button button-small" href="<?php echo esc_url(wp_nonce_url(admin_url('admin-post.php?action=xf_ig_zip&id=' . (int) $item->id), 'xf_ig_zip_' . (int) $item->id)); ?>">Download slides (zip)</a><?php endif; ?>
-                <?php if (!empty($payload['url'])) : ?><a href="<?php echo esc_url($payload['url']); ?>" target="_blank" rel="noopener">Source page</a><?php endif; ?>
-                <div style="display:flex;gap:8px;overflow-x:auto;margin:8px 0">
-                    <?php for ($n = 0; $n < (int) $item->slide_count; $n++) : ?>
-                        <a href="<?php echo esc_url(xf_slide_url($item->id, $n)); ?>" target="_blank" rel="noopener" title="Slide <?php echo (int) $n + 1; ?>">
-                            <img src="<?php echo esc_url(xf_slide_url($item->id, $n)); ?>" width="128" height="160" loading="lazy" style="border-radius:4px;border:1px solid #ddd" alt="">
-                        </a>
-                    <?php endfor; ?>
-                </div>
-                <textarea readonly rows="7" class="large-text" onclick="this.select()"><?php echo esc_textarea($item->caption); ?></textarea>
-                <button type="button" class="button button-small" onclick="var b=this;navigator.clipboard.writeText(b.previousElementSibling.value).then(function(){b.textContent='Copied';});">Copy caption</button>
-            </div>
-        <?php endforeach; ?>
-        <?php if (!$queue) : ?><p>Nothing left to post.</p><?php endif; ?>
-    </div>
-    <?php
-}
-
 add_action('admin_post_xf_ig_calendar_now', function () {
     if (!current_user_can('manage_options') || !check_admin_referer('xf_ig_calendar_now')) {
         wp_die('Not allowed', '', ['response' => 403]);
     }
     $out = xf_ig_run_calendar();
     set_transient('xf_notice_' . get_current_user_id(), 'Instagram calendar: ' . ($out ? implode('; ', array_map(function ($k, $v) { return "$k $v"; }, array_keys($out), $out)) : 'no slots today'), 60);
-    wp_safe_redirect(admin_url('admin.php?page=xf'));
+    wp_safe_redirect(xf_ig_tab_url('queue'));
     exit;
 });
 

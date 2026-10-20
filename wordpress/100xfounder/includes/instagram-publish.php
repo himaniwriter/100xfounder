@@ -18,7 +18,7 @@ const XF_IG_FOUNDER_KINDS = ['spotlight', 'founder_story'];
 /* ---- Settings and token ---- */
 
 function xf_ig_opt($key) {
-    $defaults = ['ig_user_id' => '', 'ig_autopost' => 0, 'ig_slots' => '09:30,19:30', 'ig_max_per_day' => 2];
+    $defaults = ['ig_user_id' => '', 'ig_autopost' => 0, 'ig_slots' => '09:30,19:30', 'ig_max_per_day' => 2, 'ig_improve_minutes' => 120];
     $v = xf_get_setting($key);
     return $v === null ? $defaults[$key] : $v;
 }
@@ -249,6 +249,13 @@ function xf_ig_next_item($now) {
     return null;
 }
 
+/** Items posted since midnight IST (auto, Post now and marked by hand all count toward the daily maximum). */
+function xf_ig_posted_today($now = null) {
+    global $wpdb;
+    $midnight = (new DateTimeImmutable('@' . ($now ?? time())))->setTimezone(new DateTimeZone('Asia/Kolkata'))->setTime(0, 0)->getTimestamp();
+    return (int) $wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM ' . xf_table('ig_queue') . " WHERE status = 'posted' AND posted_at >= %s", gmdate('Y-m-d H:i:s', $midnight)));
+}
+
 /** Cron (every 15 min): posts one approved item when a slot is due. Returns a status line. */
 function xf_ig_autopost_tick($now = null) {
     global $wpdb;
@@ -260,8 +267,7 @@ function xf_ig_autopost_tick($now = null) {
     if ($slot === '') {
         return 'no slot due';
     }
-    $midnight = (new DateTimeImmutable('@' . $now))->setTimezone(new DateTimeZone('Asia/Kolkata'))->setTime(0, 0)->getTimestamp();
-    $today = (int) $wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM ' . xf_table('ig_queue') . " WHERE status = 'posted' AND posted_at >= %s", gmdate('Y-m-d H:i:s', $midnight)));
+    $today = xf_ig_posted_today($now);
     if ($today >= max(1, (int) xf_ig_opt('ig_max_per_day'))) {
         update_option('xf_ig_last_slot', $slot, false);
         return "daily maximum reached ($today)";
@@ -295,7 +301,7 @@ function xf_ig_maybe_refresh_token($now = null) {
     $body = is_wp_error($res) ? [] : (json_decode(wp_remote_retrieve_body($res), true) ?: []);
     if (empty($body['access_token'])) {
         $why = is_wp_error($res) ? $res->get_error_message() : (string) ($body['error']['message'] ?? 'HTTP ' . wp_remote_retrieve_response_code($res));
-        update_option('xf_ig_alert', 'Instagram token refresh failed (' . $why . '). The token expires on ' . wp_date('j M Y', (int) $t['expires']) . ': generate a new one and paste it under Settings → Instagram (auto-post).', false);
+        update_option('xf_ig_alert', 'Instagram token refresh failed (' . $why . '). The token expires on ' . wp_date('j M Y', (int) $t['expires']) . ': generate a new one and paste it under 100xFounder → Instagram → Settings.', false);
         return 'failed';
     }
     $t['token'] = (string) $body['access_token'];
@@ -381,6 +387,9 @@ function xf_ig_settings_card() {
                     <p class="description">Comma-separated 24-hour times, e.g. 09:30,19:30. A slot missed by more than 3 hours is skipped.</p></td></tr>
             <tr><th scope="row"><label for="xf_ig_max">Maximum posts per day</label></th>
                 <td><input type="number" min="1" max="10" id="xf_ig_max" name="ig_max_per_day" value="<?php echo (int) xf_ig_opt('ig_max_per_day'); ?>"></td></tr>
+            <tr><th scope="row"><label for="xf_ig_improve_minutes">"Improve" API fallback after (minutes)</label></th>
+                <td><input type="number" min="5" max="10080" id="xf_ig_improve_minutes" name="ig_improve_minutes" value="<?php echo (int) xf_ig_opt('ig_improve_minutes'); ?>">
+                    <p class="description">Claude Code handles improvement requests first. Requests still waiting after this long go to the Claude API (only when it is connected, within the AI budget).</p></td></tr>
         </table>
         <?php submit_button('Save Instagram settings', 'secondary'); ?>
     </form>
@@ -409,6 +418,7 @@ add_action('admin_post_xf_ig_settings', function () {
         'ig_autopost' => empty($_POST['ig_autopost']) ? 0 : 1,
         'ig_slots' => $slots ? implode(',', $slots) : '09:30,19:30',
         'ig_max_per_day' => min(10, max(1, isset($_POST['ig_max_per_day']) ? absint($_POST['ig_max_per_day']) : 2)),
+        'ig_improve_minutes' => min(10080, max(5, isset($_POST['ig_improve_minutes']) ? absint($_POST['ig_improve_minutes']) : 120)),
     ]);
     $token = preg_replace('/\s+/', '', isset($_POST['ig_token']) ? sanitize_text_field(wp_unslash($_POST['ig_token'])) : '');
     if ($token !== '') {
@@ -416,7 +426,7 @@ add_action('admin_post_xf_ig_settings', function () {
         update_option('xf_ig_token', ['token' => $token, 'saved' => time(), 'expires' => time() + 60 * DAY_IN_SECONDS], false);
         delete_option('xf_ig_alert');
     }
-    xf_ig_redirect('Instagram settings saved.' . ($token !== '' ? ' New token stored: use "Test connection" to check it.' : ''), admin_url('admin.php?page=xf-settings#xf-ig-autopost'));
+    xf_ig_redirect('Instagram settings saved.' . ($token !== '' ? ' New token stored: use "Test connection" to check it.' : ''), xf_ig_tab_url('settings'));
 });
 
 add_action('admin_post_xf_ig_test', function () {
@@ -424,7 +434,7 @@ add_action('admin_post_xf_ig_test', function () {
         wp_die('Not allowed', '', ['response' => 403]);
     }
     $me = xf_ig_api('GET', 'me', ['fields' => 'user_id,username,account_type']);
-    $back = admin_url('admin.php?page=xf-settings#xf-ig-autopost');
+    $back = xf_ig_tab_url('settings');
     if (is_wp_error($me)) {
         xf_ig_redirect('Instagram connection failed: ' . $me->get_error_message(), $back);
     }
@@ -443,14 +453,14 @@ add_action('admin_post_xf_ig_test', function () {
     xf_ig_redirect('Instagram connected: @' . $t['username'] . ' (' . ($t['account_type'] ?: 'account type not returned') . ').' . $note, $back);
 });
 
-/* ---- Admin: per-item approval, consent and "Post now" in the queue card ---- */
+/* ---- Admin: per-item approval, consent and "Post now" in the queue tab ---- */
 
 /** One-line status for the top of the queue card. */
 function xf_ig_autopost_status() {
     $t = xf_ig_token();
     $on = $t && xf_ig_opt('ig_autopost');
     echo '<p><strong>Auto-post:</strong> ' . esc_html($on ? 'on at ' . xf_ig_opt('ig_slots') . ' IST, up to ' . (int) xf_ig_opt('ig_max_per_day') . ' a day, approved items only' : ($t ? 'off' : 'not connected'))
-        . ' · <a href="' . esc_url(admin_url('admin.php?page=xf-settings#xf-ig-autopost')) . '">Instagram settings</a></p>';
+        . ' · <a href="' . esc_url(xf_ig_tab_url('settings')) . '">Instagram settings</a></p>';
 }
 
 function xf_ig_item_controls($item, array $payload) {
@@ -491,7 +501,7 @@ add_action('admin_post_xf_ig_review', function () {
     if (!current_user_can('manage_options') || !check_admin_referer('xf_ig_review_' . $id)) {
         wp_die('Not allowed', '', ['response' => 403]);
     }
-    $back = admin_url('admin.php?page=xf');
+    $back = xf_ig_tab_url('queue') . '#xf-ig-row-' . $id;
     $table = xf_table('ig_queue');
     $item = $wpdb->get_row($wpdb->prepare("SELECT * FROM $table WHERE id = %d", $id));
     if (!$item || $item->status !== 'ready') {

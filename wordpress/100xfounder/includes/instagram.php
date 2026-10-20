@@ -14,15 +14,26 @@ function xf_ig_hashtags() {
 function xf_ig_upsert($kind, $ref_key, $title, $caption, $slide_count, array $payload) {
     global $wpdb;
     $table = xf_table('ig_queue');
-    $existing = $wpdb->get_var($wpdb->prepare("SELECT id FROM $table WHERE ref_key = %s", $ref_key));
+    $existing = $wpdb->get_row($wpdb->prepare("SELECT id, caption, payload FROM $table WHERE ref_key = %s", $ref_key));
+    if ($existing) {
+        // The owner's caption edit and slide-text improvements survive a content rebuild (approval still resets: new content, new OK).
+        $old = json_decode((string) $existing->payload, true) ?: [];
+        if (!empty($old['ig_caption_manual'])) {
+            $caption = $existing->caption;
+            $payload['ig_caption_manual'] = $old['ig_caption_manual'];
+        }
+        if (!empty($old['ig_patch']) && function_exists('xf_ig_apply_ops')) {
+            $payload = xf_ig_apply_ops($payload, (array) $old['ig_patch']);
+        }
+    }
     $data = [
         'title' => $title, 'caption' => $caption, 'slide_count' => $slide_count,
         'payload' => wp_json_encode($payload), 'updated_at' => xf_now(),
     ];
     if ($existing) {
         // Refresh content but keep the posted/skipped status.
-        $wpdb->update($table, $data, ['id' => $existing]);
-        return (int) $existing;
+        $wpdb->update($table, $data, ['id' => $existing->id]);
+        return (int) $existing->id;
     }
     $wpdb->insert($table, $data + ['kind' => $kind, 'ref_key' => $ref_key, 'status' => 'ready', 'created_at' => xf_now()]);
     return (int) $wpdb->insert_id;

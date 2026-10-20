@@ -124,6 +124,9 @@ function xf_install_schema() {
     if (function_exists('xf_inbox_install')) {
         xf_inbox_install();
     }
+    if (function_exists('xf_ig_improve_install')) {
+        xf_ig_improve_install();
+    }
 
     update_option('xf_db_version', XF_DB_VERSION);
 }

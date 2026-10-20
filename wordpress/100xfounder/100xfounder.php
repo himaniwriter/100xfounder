@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 }
 
 define('XF_VERSION', '1.9.0');
-define('XF_DB_VERSION', '17');
+define('XF_DB_VERSION', '18');
 define('XF_FILE', __FILE__);
 define('XF_DIR', plugin_dir_path(__FILE__));
 define('XF_URL', plugin_dir_url(__FILE__));
@@ -39,6 +39,8 @@ if (is_readable(XF_DIR . 'includes/instagram.php')) { require_once XF_DIR . 'inc
 if (is_readable(XF_DIR . 'includes/instagram-templates.php')) { require_once XF_DIR . 'includes/instagram-templates.php'; }
 if (is_readable(XF_DIR . 'includes/instagram-publish.php')) { require_once XF_DIR . 'includes/instagram-publish.php'; }
 if (is_readable(XF_DIR . 'includes/instagram-posted.php')) { require_once XF_DIR . 'includes/instagram-posted.php'; }
+if (is_readable(XF_DIR . 'includes/instagram-improve.php')) { require_once XF_DIR . 'includes/instagram-improve.php'; }
+if (is_readable(XF_DIR . 'includes/instagram-admin.php')) { require_once XF_DIR . 'includes/instagram-admin.php'; }
 if (is_readable(XF_DIR . 'includes/pipeline.php')) { require_once XF_DIR . 'includes/pipeline.php'; }
 if (is_readable(XF_DIR . 'includes/shortcodes.php')) { require_once XF_DIR . 'includes/shortcodes.php'; }
 if (is_readable(XF_DIR . 'includes/adsense.php')) { require_once XF_DIR . 'includes/adsense.php'; }

@@ -200,15 +200,11 @@ add_action('admin_notices', function () {
     $n = (int) get_option('xf_ig_posted_alert');
     if ($n && current_user_can('manage_options')) {
         echo '<div class="notice notice-error"><p>' . esc_html(sprintf(_n('%d posted Instagram item could not be found on Instagram (deleted or never posted).', '%d posted Instagram items could not be found on Instagram (deleted or never posted).', $n), $n))
-            . ' <a href="' . esc_url(admin_url('admin.php?page=xf-ig-posted')) . '">Review the posted list</a></p></div>';
+            . ' <a href="' . esc_url(xf_ig_tab_url('posted')) . '">Review the posted list</a></p></div>';
     }
 });
 
-/* ---- Admin page ---- */
-
-add_action('admin_menu', function () {
-    add_submenu_page('xf', 'Instagram posted', 'Instagram posted', 'manage_options', 'xf-ig-posted', 'xf_ig_posted_page');
-}, 20);
+/* ---- Admin: Posted and Skipped tabs of 100xFounder → Instagram (instagram-admin.php) ---- */
 
 function xf_ig_ist($utc, $format = 'j M Y, H:i') {
     return $utc ? (new DateTimeImmutable($utc, new DateTimeZone('UTC')))->setTimezone(new DateTimeZone('Asia/Kolkata'))->format($format) . ' IST' : '—';
@@ -230,13 +226,13 @@ function xf_ig_verify_badge($row) {
     return '<strong style="color:' . esc_attr($color) . '">' . esc_html($label) . '</strong>';
 }
 
-function xf_ig_posted_page() {
+function xf_ig_posted_page($view = 'posted') {
     global $wpdb;
     if (!current_user_can('manage_options')) {
         return;
     }
     $table = xf_table('ig_queue');
-    $view = isset($_GET['view']) && $_GET['view'] === 'skipped' ? 'skipped' : 'posted';
+    $view = $view === 'skipped' ? 'skipped' : 'posted';
     $rows = $wpdb->get_results($wpdb->prepare("SELECT * FROM $table WHERE status = %s ORDER BY " . ($view === 'posted' ? 'posted_at' : 'updated_at') . ' DESC LIMIT 200', $view));
     $tz = new DateTimeZone('Asia/Kolkata');
     $now = new DateTimeImmutable('now', $tz);
@@ -250,11 +246,7 @@ function xf_ig_posted_page() {
     $has_token = (bool) xf_ig_token();
     $post = admin_url('admin-post.php');
     ?>
-    <div class="wrap">
-        <h1>Instagram posted</h1>
-        <p><a href="<?php echo esc_url(admin_url('admin.php?page=xf')); ?>">← Instagram queue</a> ·
-            <?php if ($view === 'posted') : ?><strong>Posted</strong> · <a href="<?php echo esc_url(admin_url('admin.php?page=xf-ig-posted&view=skipped')); ?>">Skipped</a>
-            <?php else : ?><a href="<?php echo esc_url(admin_url('admin.php?page=xf-ig-posted')); ?>">Posted</a> · <strong>Skipped</strong><?php endif; ?></p>
+    <div>
         <div class="card" style="max-width:none">
             <p>Posted this week: <strong><?php echo (int) $week; ?></strong> · this month: <strong><?php echo (int) $month; ?></strong> ·
                 verified: <strong style="color:#16a34a"><?php echo (int) $verified; ?></strong> · unverified: <strong style="color:#b32d2e"><?php echo (int) ($total - $verified); ?></strong> ·
@@ -326,7 +318,7 @@ add_action('admin_post_xf_ig_posted', function () {
     }
     $table = xf_table('ig_queue');
     $row = $id ? $wpdb->get_row($wpdb->prepare("SELECT * FROM $table WHERE id = %d", $id)) : null;
-    $back = admin_url('admin.php?page=xf-ig-posted' . ($row && $row->status === 'skipped' ? '&view=skipped' : ''));
+    $back = xf_ig_tab_url($row && $row->status === 'skipped' ? 'skipped' : 'posted');
     if ($do !== 'sync' && !$row) {
         xf_ig_redirect('That Instagram item no longer exists.', $back);
     }

@@ -35,6 +35,7 @@ add_action('admin_post_xf_admin', function () {
         case 'ig_skipped':
         case 'ig_ready':
             $status = substr($do, 3);
+            $back = function_exists('xf_ig_tab_url') ? xf_ig_tab_url('queue') : $back;
             $wpdb->update(xf_table('ig_queue'), ['status' => $status, 'posted_at' => $status === 'posted' ? xf_now() : null, 'updated_at' => xf_now()]
                 + ($status === 'posted' ? ['posted_via' => 'manual', 'verify_status' => '', 'verify_note' => ''] : []), ['id' => $id]);
             break;
@@ -104,7 +105,6 @@ function xf_admin_dashboard() {
     $contacts = xf_table('contacts');
     $by_status = $wpdb->get_results("SELECT status, COUNT(*) n FROM $contacts GROUP BY status", OBJECT_K);
     $sent_24h = (int) $wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM ' . xf_table('messages') . " WHERE status = 'sent' AND sent_at >= %s", gmdate('Y-m-d H:i:s', time() - DAY_IN_SECONDS)));
-    $queue = $wpdb->get_results('SELECT * FROM ' . xf_table('ig_queue') . " ORDER BY FIELD(status,'ready','posted','skipped'), created_at DESC LIMIT 12");
     $recent = $wpdb->get_results("SELECT * FROM $contacts ORDER BY updated_at DESC LIMIT 40");
     $pending = (int) wp_count_posts('xf_spotlight')->pending;
     $last_run = get_option('xf_last_run');
@@ -171,28 +171,7 @@ function xf_admin_dashboard() {
             </table>
         </div>
 
-        <?php if (function_exists('xf_ig_admin_card')) : xf_ig_admin_card(); else : ?>
-        <div class="card" style="max-width:none">
-            <h2>Instagram queue</h2>
-            <p>Download the slides, copy the caption, post on Instagram, then mark it posted.</p>
-            <?php foreach ($queue as $item) : ?>
-                <div style="border-top:1px solid #ddd;padding:12px 0">
-                    <strong><?php echo esc_html($item->title); ?></strong> <em>(<?php echo esc_html($item->status); ?>)</em>
-                    <a class="button button-small" href="<?php echo esc_url(xf_admin_action_url('ig_posted', ['id' => $item->id])); ?>">Mark posted</a>
-                    <a class="button button-small" href="<?php echo esc_url(xf_admin_action_url('ig_skipped', ['id' => $item->id])); ?>">Skip</a>
-                    <div style="display:flex;gap:8px;overflow-x:auto;margin:8px 0">
-                        <?php for ($n = 0; $n < (int) $item->slide_count; $n++) : ?>
-                            <a href="<?php echo esc_url(xf_slide_url($item->id, $n, true)); ?>" title="Download slide <?php echo (int) $n + 1; ?>">
-                                <img src="<?php echo esc_url(xf_slide_url($item->id, $n)); ?>" width="128" height="160" loading="lazy" style="border-radius:4px;border:1px solid #ddd" alt="">
-                            </a>
-                        <?php endfor; ?>
-                    </div>
-                    <textarea readonly rows="6" class="large-text" onclick="this.select()"><?php echo esc_textarea($item->caption); ?></textarea>
-                </div>
-            <?php endforeach; ?>
-            <?php if (!$queue) : ?><p>Nothing queued yet.</p><?php endif; ?>
-        </div>
-        <?php endif; ?>
+        <?php if (function_exists('xf_ig_dashboard_summary')) { xf_ig_dashboard_summary(); } ?>
     </div>
     <?php
 }
@@ -336,7 +315,8 @@ function xf_admin_settings() {
             <?php endforeach; ?>
             <?php submit_button(); ?>
         </form>
-        <?php if (function_exists('xf_ig_settings_card')) { xf_ig_settings_card(); } ?>
+        <h2 id="xf-ig-autopost">Instagram (auto-post)</h2>
+        <p>Moved to <a href="<?php echo esc_url(admin_url('admin.php?page=xf-instagram&tab=settings')); ?>">100xFounder → Instagram → Settings</a>.</p>
 
         <h2>Daily schedule (hPanel cron job)</h2>
         <p>WordPress only runs scheduled tasks when someone visits the site. For a reliable daily run, add this in hPanel → Advanced → Cron Jobs, set to run once a day (e.g. 14:00):</p>
