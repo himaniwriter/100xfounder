@@ -22,37 +22,46 @@
     if (income > 5000000) return .10;
     return 0;
   };
-
-  /** Annual tax (incl. 4% cess) on taxable income under a regime. */
-  function incomeTax(taxable, regime) {
-    taxable = Math.max(0, taxable);
+  /** Slab tax after the Section 87A rebate (and its marginal relief in the new regime), before surcharge and cess. */
+  var baseTax = function (taxable, regime) {
     var tax = slabTax(taxable, regime === 'new' ? NEW : OLD);
     if (regime === 'new') {
-      if (taxable <= 1200000) tax = 0; // Section 87A rebate
-      else tax = Math.min(tax, taxable - 1200000); // marginal relief just above ₹12L
-    } else if (taxable <= 500000) {
-      tax = 0;
+      if (taxable <= 1200000) return 0; // rebate: no tax up to ₹12 lakh
+      return Math.min(tax, taxable - 1200000); // marginal relief just above ₹12 lakh
     }
-    tax += tax * surchargeRate(taxable, regime);
+    return taxable <= 500000 ? 0 : tax;
+  };
+
+  /** Annual tax (incl. surcharge with marginal relief, and 4% cess) on taxable income under a regime. */
+  function incomeTax(taxable, regime) {
+    taxable = Math.max(0, taxable);
+    var base = baseTax(taxable, regime);
+    var tax = base * (1 + surchargeRate(taxable, regime));
+    // Marginal relief: tax + surcharge may not exceed the tax at the threshold plus the income above it.
+    [50000000, 20000000, 10000000, 5000000].some(function (th) {
+      if (taxable <= th) return false;
+      tax = Math.min(tax, baseTax(th, regime) * (1 + surchargeRate(th, regime)) + (taxable - th));
+      return true;
+    });
     return tax * 1.04;
   }
 
   /** CTC → take-home, with the assumptions shown on the page. */
   function salary(o) {
     var ctc = Math.max(0, o.ctc);
-    var basic = ctc * o.basicPct;
+    var basic = ctc * Math.min(1, Math.max(.1, o.basicPct)); // basic is kept between 10% and 100% of CTC
     var pfMonthlyCap = o.pfCap ? 3000 : Infinity;
     var pf = Math.min(basic * 0.12, pfMonthlyCap * 12); // each side
     var gratuity = basic * 0.0481;
     var gross = Math.max(0, ctc - pf - gratuity);
-    var pt = gross > 0 ? Math.min(o.pt, gross) : 0;
+    var pt = Math.min(o.pt, gross);
     var taxable;
     if (o.regime === 'new') {
       taxable = gross - 75000;
     } else {
-      var hra = basic * (o.metro ? .5 : .4);
-      var rent = o.rent * 12;
-      var hraExempt = rent > 0 ? Math.max(0, Math.min(hra, rent - basic * .1, basic * (o.metro ? .5 : .4))) : 0;
+      // HRA paid is assumed to equal the exempt cap (50% / 40% of basic), but never more than the gross left after basic.
+      var hra = Math.min(basic * (o.metro ? .5 : .4), Math.max(0, gross - basic));
+      var hraExempt = Math.max(0, Math.min(hra, o.rent * 12 - basic * .1));
       var c80 = Math.min(150000, Math.max(o.deductions, pf));
       taxable = gross - 50000 - hraExempt - c80 - pt;
     }
@@ -61,7 +70,29 @@
     return { ctc: ctc, basic: basic, gross: gross, pf: pf, gratuity: gratuity, pt: pt, taxable: Math.max(0, taxable), tax: tax, inHand: inHand };
   }
 
+  /** Hike: new CTC from a % (or % from a new CTC) and the change in yearly take-home, same assumptions as the page states. */
+  function hike(o) {
+    var next = o.mode === 'pct' ? o.cur * (1 + o.pct / 100) : o.next;
+    var pct = o.mode === 'pct' ? o.pct : (o.cur ? (next / o.cur - 1) * 100 : 0);
+    next = Math.max(0, next);
+    var base = { regime: o.regime, metro: true, rent: 0, deductions: 150000, pt: 2500, basicPct: .5, pfCap: true };
+    var a = salary(Object.assign({ ctc: o.cur }, base)), b = salary(Object.assign({ ctc: next }, base));
+    return { cur: o.cur, next: next, pct: pct, before: a.inHand, after: b.inHand, keep: next !== o.cur ? (b.inHand - a.inHand) / (next - o.cur) * 100 : 0 };
+  }
+
+  /** Notice buyout: unserved days (after leave set-off) × monthly pay ÷ divisor. */
+  function notice(o) {
+    var served = Math.min(o.served, o.total);
+    var leave = Math.min(o.leave, o.total - served);
+    var remaining = Math.max(0, o.total - served - leave);
+    var perDay = o.monthly / o.divisor;
+    return { remaining: remaining, perDay: perDay, amount: perDay * remaining };
+  }
+
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
+  /* Tool pages: the grouped tools sidebar collapses to a dropdown on phones. */
+  var side = $('[data-tl-side]');
+  if (side && window.matchMedia && matchMedia('(max-width:860px)').matches) side.open = false;
   var num = function (el) { return Math.max(0, parseFloat(String(el.value).replace(/[^0-9.]/g, '')) || 0); };
 
   /* ---- In-hand salary ---- */
@@ -72,7 +103,8 @@
       ih.querySelectorAll('[data-' + name + ']').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-' + name) === String(value) ? 'true' : 'false'); });
     };
     var render = function () {
-      var r = salary({ ctc: num($('#ctc', ih)), regime: state.regime, metro: state.metro, rent: num($('#rent', ih)), deductions: num($('#ded', ih)), pt: num($('#pt', ih)), basicPct: num($('#basic', ih)) / 100 || .5, pfCap: $('#pfcap', ih).checked });
+      var opts = function (regime) { return { ctc: num($('#ctc', ih)), regime: regime, metro: state.metro, rent: num($('#rent', ih)), deductions: num($('#ded', ih)), pt: num($('#pt', ih)), basicPct: num($('#basic', ih)) / 100 || .5, pfCap: $('#pfcap', ih).checked }; };
+      var r = salary(opts(state.regime));
       $('#ih-monthly', ih).textContent = inr(r.inHand / 12);
       $('#ih-yearly', ih).textContent = inr(r.inHand);
       $('#ih-rate', ih).textContent = (r.ctc ? (r.tax / r.ctc * 100) : 0).toFixed(1) + '%';
@@ -88,7 +120,7 @@
       $('#bar-pf', ih).style.width = (r.pf * 2 / total * 100) + '%';
       $('#bar-other', ih).style.width = ((r.gratuity + r.pt) / total * 100) + '%';
       ih.querySelectorAll('[data-old-only]').forEach(function (el) { el.hidden = state.regime !== 'old'; });
-      var other = salary({ ctc: r.ctc, regime: state.regime === 'new' ? 'old' : 'new', metro: state.metro, rent: num($('#rent', ih)), deductions: num($('#ded', ih)), pt: num($('#pt', ih)), basicPct: num($('#basic', ih)) / 100 || .5, pfCap: $('#pfcap', ih).checked });
+      var other = salary(opts(state.regime === 'new' ? 'old' : 'new'));
       var diff = other.inHand - r.inHand;
       $('#ih-compare', ih).textContent = Math.abs(diff) < 12 ? 'Both regimes give about the same take-home.' :
         (diff > 0 ? 'The ' + (state.regime === 'new' ? 'old' : 'new') + ' regime would give you about ' + inr(diff / 12) + ' more a month.' :
@@ -110,21 +142,15 @@
   var hk = $('[data-tool="hike"]');
   if (hk) {
     var renderHike = function () {
-      var cur = num($('#cur', hk));
-      var pct = parseFloat($('#pct', hk).value) || 0;
-      var next = num($('#newctc', hk));
       var mode = $('#mode-pct', hk).checked ? 'pct' : 'ctc';
-      if (mode === 'pct') { next = cur * (1 + pct / 100); } else { pct = cur ? (next / cur - 1) * 100 : 0; }
-      var regime = $('#hk-old', hk).checked ? 'old' : 'new';
-      var base = { regime: regime, metro: true, rent: 0, deductions: 150000, pt: 2500, basicPct: .5, pfCap: true };
-      var a = salary(Object.assign({ ctc: cur }, base));
-      var b = salary(Object.assign({ ctc: next }, base));
-      $('#hk-new', hk).textContent = inr(next);
-      $('#hk-pct', hk).textContent = pct.toFixed(1) + '%';
-      $('#hk-before', hk).textContent = inr(a.inHand / 12);
-      $('#hk-after', hk).textContent = inr(b.inHand / 12);
-      $('#hk-diff', hk).textContent = '+' + inr(Math.max(0, b.inHand - a.inHand) / 12);
-      $('#hk-take', hk).textContent = (next > cur ? ((b.inHand - a.inHand) / (next - cur) * 100) : 0).toFixed(0) + '%';
+      var r = hike({ cur: num($('#cur', hk)), pct: parseFloat($('#pct', hk).value) || 0, next: num($('#newctc', hk)), mode: mode, regime: $('#hk-old', hk).checked ? 'old' : 'new' });
+      var signed = function (n) { return (n < 0 ? '−' : '+') + inr(Math.abs(n)); };
+      $('#hk-new', hk).textContent = inr(r.next);
+      $('#hk-pct', hk).textContent = r.pct.toFixed(1) + '%';
+      $('#hk-before', hk).textContent = inr(r.before / 12);
+      $('#hk-after', hk).textContent = inr(r.after / 12);
+      $('#hk-diff', hk).textContent = signed((r.after - r.before) / 12);
+      $('#hk-take', hk).textContent = r.next !== r.cur ? r.keep.toFixed(0) + '%' : '–';
       hk.querySelector('[data-pct-field]').hidden = mode !== 'pct';
       hk.querySelector('[data-ctc-field]').hidden = mode !== 'ctc';
     };
@@ -136,16 +162,10 @@
   var nb = $('[data-tool="notice"]');
   if (nb) {
     var renderNotice = function () {
-      var monthly = num($('#nb-salary', nb));
-      var total = num($('#nb-total', nb));
-      var served = Math.min(num($('#nb-served', nb)), total);
-      var leave = Math.min(num($('#nb-leave', nb)), total - served);
-      var divisor = $('#nb-days', nb).value === '26' ? 26 : 30;
-      var remaining = Math.max(0, total - served - leave);
-      var amount = monthly / divisor * remaining;
-      $('#nb-remaining', nb).textContent = remaining + ' days';
-      $('#nb-amount', nb).textContent = inr(amount);
-      $('#nb-perday', nb).textContent = inr(monthly / divisor) + ' per day';
+      var r = notice({ monthly: num($('#nb-salary', nb)), total: num($('#nb-total', nb)), served: num($('#nb-served', nb)), leave: num($('#nb-leave', nb)), divisor: $('#nb-days', nb).value === '26' ? 26 : 30 });
+      $('#nb-remaining', nb).textContent = (+r.remaining.toFixed(1)).toLocaleString('en-IN') + (r.remaining === 1 ? ' day' : ' days');
+      $('#nb-amount', nb).textContent = inr(r.amount);
+      $('#nb-perday', nb).textContent = inr(r.perDay) + ' per day';
     };
     nb.addEventListener('input', renderNotice);
     renderNotice();
@@ -276,4 +296,6 @@
     renderQuiz();
     renderResult();
   }
+
+  if (typeof module === 'object' && module.exports) module.exports = { incomeTax: incomeTax, salary: salary, hike: hike, notice: notice, quizScore: quizScore }; // for tests/tools.test.js
 })();

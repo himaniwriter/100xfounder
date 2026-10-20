@@ -29,7 +29,7 @@ function xf_tools() {
             'title' => 'Notice period buyout calculator',
             'short' => 'Notice buyout',
             'desc' => 'Work out what it costs to buy out the rest of your notice period, and what a new employer would need to cover.',
-            'group' => 'Careers',
+            'group' => 'Job switch',
             'seo_title' => 'Notice Period Buyout Calculator (India)',
         ],
         'startup-100x-score' => [

@@ -11,20 +11,74 @@ $tools = xf_tools();
 $tool = xf_current_tool();
 $hub = home_url('/tools/');
 
+/* Below-the-fold SEO content for a tool: parts/tools/<slug>.php returns h1, lede, features,
+   sections, howto, faq and sources (format: content/calculators/REFERENCE.md). */
+$content = [];
+if ($tool && ($file = locate_template('parts/tools/' . $tool['slug'] . '.php'))) {
+    $content = include $file;
+    $content = is_array($content) ? $content : [];
+}
+$brand = function_exists('xf_brand_asset') ? xf_brand_asset('') : '';
+$fill = function ($html) use ($brand) { return str_replace('{{brand}}', esc_url($brand), $html); };
+
 if ($tool) {
-    add_action('wp_head', function () use ($tool) {
-        printf('<meta name="description" content="%s">' . "\n", esc_attr($tool['desc']));
-        $ld = [
-            '@context' => 'https://schema.org',
+    add_action('wp_head', function () use ($tool, $content, $file, $fill) {
+        $url = home_url('/tools/' . $tool['slug'] . '/');
+        $plain = function ($t) { return trim(preg_replace('/\s+/', ' ', wp_strip_all_tags((string) $t))); };
+        $image = null;
+        foreach ($content['sections'] ?? [] as $sec) {
+            if (preg_match('/<img[^>]+src="([^"]+)"/', $fill($sec['html']), $m)) { $image = html_entity_decode($m[1]); break; }
+        }
+        $graph = [];
+        $page = [
+            '@type' => !empty($content['faq']) ? ['WebPage', 'FAQPage'] : 'WebPage',
+            '@id' => $url . '#webpage',
+            'url' => $url,
+            'name' => $tool['seo_title'],
+            'description' => $tool['desc'],
+            'inLanguage' => 'en-IN',
+            'dateModified' => gmdate('c', (int) filemtime($file ?: __FILE__)),
+            'about' => ['@id' => $url . '#app'],
+        ];
+        if ($image) {
+            $page['primaryImageOfPage'] = ['@type' => 'ImageObject', 'url' => $image, 'width' => 1600, 'height' => 900];
+        }
+        if (!empty($content['faq'])) {
+            $page['mainEntity'] = array_map(function ($f) use ($plain) {
+                return ['@type' => 'Question', 'name' => $plain($f['q']), 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $plain($f['a'])]];
+            }, $content['faq']);
+        }
+        $graph[] = $page;
+        // No aggregateRating: tools have no visitor votes (CLAUDE.md: ratings only from real votes).
+        $graph[] = array_filter([
             '@type' => 'WebApplication',
-            'name' => $tool['title'],
-            'url' => home_url('/tools/' . $tool['slug'] . '/'),
+            '@id' => $url . '#app',
+            'name' => $content['h1'] ?? $tool['title'],
+            'url' => $url,
+            'description' => $tool['desc'],
             'applicationCategory' => $tool['app_category'] ?? 'FinanceApplication',
             'operatingSystem' => 'Any',
+            'browserRequirements' => 'Requires JavaScript',
+            'isAccessibleForFree' => true,
+            'inLanguage' => 'en-IN',
+            'image' => $image,
+            'featureList' => $content['features'] ?? null,
             'offers' => ['@type' => 'Offer', 'price' => '0', 'priceCurrency' => 'INR'],
-            'description' => $tool['desc'],
-        ];
-        echo '<script type="application/ld+json">' . wp_json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
+            'publisher' => ['@type' => 'Organization', 'name' => get_bloginfo('name'), 'url' => home_url('/')],
+        ]);
+        if (!empty($content['howto']['steps'])) {
+            $graph[] = [
+                '@type' => 'HowTo',
+                '@id' => $url . '#how-to',
+                'name' => $plain($content['howto']['h2']),
+                'description' => $plain($content['howto']['intro'] ?? ''),
+                'tool' => ['@type' => 'HowToTool', 'name' => $content['h1'] ?? $tool['title']],
+                'step' => array_map(function ($st, $i) use ($plain, $url) {
+                    return ['@type' => 'HowToStep', 'position' => $i + 1, 'name' => $plain($st['name']), 'text' => $plain($st['text']), 'url' => $url . '#how-to-step-' . ($i + 1)];
+                }, $content['howto']['steps'], array_keys($content['howto']['steps'])),
+            ];
+        }
+        echo '<script type="application/ld+json">' . wp_json_encode(['@context' => 'https://schema.org', '@graph' => $graph], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
     });
 }
 
@@ -60,11 +114,16 @@ if (!$tool) : ?>
 </section>
 <?php get_footer(); return; endif; ?>
 
-<section class="wrap" style="padding-top:28px;padding-bottom:36px">
-    <h1 class="display" style="margin-top:0;font-size:clamp(36px,5vw,64px)"><?php echo esc_html($tool['title']); ?></h1>
-    <p style="max-width:660px;margin-top:16px;font-size:17px;line-height:1.6;color:var(--t2)"><?php echo esc_html($tool['desc']); ?></p>
+<nav class="tl-switch" aria-label="Free tools">
+    <div class="wrap tl-switch__in">
+        <?php foreach ($tools as $slug => $t) : ?><a href="<?php echo esc_url($hub . $slug . '/'); ?>"<?php echo $slug === $tool['slug'] ? ' aria-current="page"' : ''; ?>><?php echo esc_html($t['short']); ?></a><?php endforeach; ?>
+        <a href="<?php echo esc_url($hub); ?>">All tools</a>
+    </div>
+</nav>
+<section class="wrap tl-head">
+    <h1 class="tl-h1"><?php echo esc_html($content['h1'] ?? $tool['title']); ?></h1>
+    <p class="tl-lede"><?php echo esc_html($content['lede'] ?? $tool['desc']); ?></p>
 </section>
-<div class="hl"></div>
 
 <?php if ($tool['slug'] === 'in-hand-salary-calculator') : ?>
 <section class="wrap tool-grid" data-tool="in-hand">
@@ -90,7 +149,7 @@ if (!$tool) : ?>
                 <label class="k" for="basic">Basic pay, % of CTC</label>
                 <div class="fld"><input id="basic" inputmode="numeric" value="50"><span class="mono" style="color:var(--t3)">%</span></div>
                 <label class="k" for="pt">Professional tax, yearly (₹)</label>
-                <div class="fld"><input id="pt" inputmode="numeric" value="2400"></div>
+                <div class="fld"><input id="pt" inputmode="numeric" value="2500"></div>
                 <label style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--t2)"><input id="pfcap" type="checkbox" checked> PF capped at ₹3,000 a month (₹25,000 wage ceiling from 17 Sep 2026)</label>
             </div>
         </details>
@@ -158,16 +217,87 @@ if (!$tool) : ?>
 </section>
 <?php endif; ?>
 
-<section class="wrap" style="padding-top:56px">
-    <div class="sh"><h2>More free tools</h2><a class="k u" href="<?php echo esc_url($hub); ?>">All tools →</a></div>
-    <div style="display:flex;flex-wrap:wrap;gap:8px;padding-top:18px">
-        <?php foreach ($tools as $slug => $t) : if ($slug === $tool['slug']) continue; ?><a class="chip" href="<?php echo esc_url($hub . $slug . '/'); ?>"><?php echo esc_html($t['short']); ?></a><?php endforeach; ?>
-        <a class="chip" href="<?php echo esc_url(home_url('/jobs/')); ?>">Browse jobs</a>
-    </div>
-    <?php if ($tool['slug'] === 'startup-100x-score') : ?>
-    <p class="k" style="margin-top:32px;font-size:10.5px;max-width:760px;line-height:1.7">A self-assessment to help you prioritise, not an investment view or a valuation. Your answers stay in your browser unless you ask us to email the report.</p>
-    <?php else : ?>
-    <p class="k" style="margin-top:32px;font-size:10.5px;max-width:760px;line-height:1.7">Estimate only, not tax or legal advice. Slabs, the ₹75,000 / ₹50,000 standard deduction, the Section 87A rebate (up to ₹12 lakh taxable income in the new regime, ₹5 lakh in the old), surcharge and 4% cess follow the Income-tax Act, 2025 for tax year 2026-27 (unchanged by Budget 2026); the PF cap uses the ₹25,000 wage ceiling in force from 17 September 2026. Sources: <a class="u" href="https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1" target="_blank" rel="noopener nofollow">Income Tax Department</a>, <a class="u" href="https://www.indiabudget.gov.in/" target="_blank" rel="noopener nofollow">Union Budget 2026-27</a>, <a class="u" href="https://www.epfindia.gov.in/" target="_blank" rel="noopener nofollow">EPFO</a>. Your payslip may differ (allowances, perks, state PT rules).</p>
-    <?php endif; ?>
-</section>
+<?php
+$groups = [];
+foreach ($tools as $slug => $t) {
+    $groups[$t['group']][$slug] = $t;
+}
+$sections = $content['sections'] ?? [];
+$howto = $content['howto'] ?? null;
+?>
+<div class="hl" style="margin-top:56px"></div>
+<div class="wrap tl-body">
+    <details class="tl-side" open data-tl-side>
+        <summary class="k">All free tools</summary>
+        <nav aria-label="Tools by category">
+            <?php foreach ($groups as $group => $items) : ?>
+                <p class="k tl-side__g"><?php echo esc_html($group); ?></p>
+                <ul>
+                    <?php foreach ($items as $slug => $t) : ?><li><a href="<?php echo esc_url($hub . $slug . '/'); ?>"<?php echo $slug === $tool['slug'] ? ' aria-current="page"' : ''; ?>><?php echo esc_html($t['short']); ?></a></li><?php endforeach; ?>
+                </ul>
+            <?php endforeach; ?>
+            <p class="k tl-side__g">More for your career</p>
+            <ul>
+                <li><a href="<?php echo esc_url(home_url('/jobs/')); ?>">Jobs in India</a></li>
+                <li><a href="<?php echo esc_url(home_url('/guides/')); ?>">How to apply guides</a></li>
+                <li><a href="<?php echo esc_url(home_url('/funding-tracker/')); ?>">Funding tracker</a></li>
+            </ul>
+        </nav>
+    </details>
+
+    <article class="prose tl-content">
+        <?php foreach ($sections as $i => $sec) : ?>
+            <section id="<?php echo esc_attr($sec['id']); ?>">
+                <h2><?php echo esc_html($sec['h2']); ?></h2>
+                <?php echo wp_kses_post($fill($sec['html'])); ?>
+            </section>
+            <?php if ($i === 0 && $howto) : ?>
+            <section id="how-to">
+                <h2><?php echo esc_html($howto['h2']); ?></h2>
+                <?php if (!empty($howto['intro'])) : ?><p><?php echo esc_html($howto['intro']); ?></p><?php endif; ?>
+                <ol class="tl-steps">
+                    <?php foreach ($howto['steps'] as $n => $st) : ?><li id="how-to-step-<?php echo (int) $n + 1; ?>"><strong><?php echo esc_html($st['name']); ?>.</strong> <?php echo esc_html($st['text']); ?></li><?php endforeach; ?>
+                </ol>
+            </section>
+            <?php endif; ?>
+        <?php endforeach; ?>
+
+        <section id="related-tools">
+            <h2>Related free tools</h2>
+            <ul class="tl-related">
+                <?php foreach ($tools as $slug => $t) : if ($slug === $tool['slug']) continue; ?>
+                    <li><a href="<?php echo esc_url($hub . $slug . '/'); ?>"><?php echo esc_html($t['title']); ?></a>: <?php echo esc_html($t['desc']); ?></li>
+                <?php endforeach; ?>
+                <li><a href="<?php echo esc_url(home_url('/jobs/')); ?>">Jobs in India</a>: open roles from official company career pages, updated daily.</li>
+            </ul>
+        </section>
+
+        <?php if (!empty($content['faq'])) : ?>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <?php foreach ($content['faq'] as $f) : ?>
+                <h3><?php echo esc_html($f['q']); ?></h3>
+                <p><?php echo wp_kses($f['a'], ['a' => ['href' => true], 'strong' => [], 'em' => []]); ?></p>
+            <?php endforeach; ?>
+        </section>
+        <?php endif; ?>
+
+        <?php if (!empty($content['sources'])) : ?>
+        <section id="sources">
+            <h2>Sources</h2>
+            <ol class="tl-sources">
+                <?php foreach ($content['sources'] as $src) : ?>
+                    <li><?php echo esc_html($src['publisher']); ?>, <a href="<?php echo esc_url($src['url']); ?>" rel="noopener nofollow" target="_blank">“<?php echo esc_html($src['title']); ?>”</a><?php echo !empty($src['date']) ? ', ' . esc_html($src['date']) : ''; ?></li>
+                <?php endforeach; ?>
+            </ol>
+        </section>
+        <?php endif; ?>
+
+        <?php if ($tool['slug'] === 'startup-100x-score') : ?>
+        <p class="k tl-note">A self-assessment to help you prioritise, not an investment view or a valuation. Your answers stay in your browser unless you ask us to email the report.</p>
+        <?php else : ?>
+        <p class="k tl-note">Estimate only, not tax or legal advice. Slabs, the ₹75,000 / ₹50,000 standard deduction, the Section 87A rebate (up to ₹12 lakh taxable income in the new regime, ₹5 lakh in the old) with marginal relief, surcharge with marginal relief and the 4% cess follow the Income-tax Act, 2025 for tax year 2026-27 (rates unchanged by the Finance Act, 2026); the PF cap uses the ₹25,000 wage ceiling in force from 17 September 2026. Your payslip may differ (allowances, perks, state professional tax rules). Confirm your tax with a qualified professional or on incometax.gov.in.</p>
+        <?php endif; ?>
+    </article>
+</div>
 <?php get_footer();

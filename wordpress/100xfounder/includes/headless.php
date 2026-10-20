@@ -382,7 +382,7 @@ add_action('save_post', function ($id, $p) {
 /** Changes whenever plugin or theme code is deployed, so a release never serves a stale render. */
 function xf_headless_code_ver() {
     $t = 0;
-    foreach (array_merge(glob(__DIR__ . '/*.php') ?: [], glob(get_template_directory() . '/*.php') ?: [], glob(get_template_directory() . '/parts/*.php') ?: []) as $f) {
+    foreach (array_merge(glob(__DIR__ . '/*.php') ?: [], glob(get_template_directory() . '/*.php') ?: [], glob(get_template_directory() . '/parts/*.php') ?: [], glob(get_template_directory() . '/parts/*/*.php') ?: []) as $f) {
         $t = max($t, (int) filemtime($f));
     }
     return $t;

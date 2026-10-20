@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('XF_VERSION', '1.9.0');
+define('XF_VERSION', '1.9.1');
 define('XF_DB_VERSION', '18');
 define('XF_FILE', __FILE__);
 define('XF_DIR', plugin_dir_path(__FILE__));
