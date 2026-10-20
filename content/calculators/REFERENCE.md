@@ -47,7 +47,7 @@ Two blocks:
 |---|---|
 | Tool-switcher bar | `.tl-switch`: all tools as pills, current one marked `aria-current`, plus "All tools" |
 | H1 + tool in the first fold | H1 with the exact keyword, a one-line value statement, then the calculator with its result shown immediately |
-| Left sidebar grouped by category | `.tl-side`: tools grouped by `group` in `xf_tools()` (Salary, Job switch, Founders) + career links; sticky on desktop, a collapsible dropdown on phones |
+| Left sidebar grouped by category | `.tl-side`: tools grouped by `group` in `xf_tools()` (Salary & jobs, Founders, AI) + career links; sticky on desktop, a collapsible dropdown on phones |
 | Long-form below the tool | What it is → How to use (steps) → How it's calculated (formula + worked table) → Examples → deeper sections → Tips and common mistakes → Related tools → FAQ → Sources |
 | `["WebPage","FAQPage"]`, ImageObject, BreadcrumbList | Same node shape (`primaryImageOfPage`, `mainEntity`, `dateModified`, `about` → the app); BreadcrumbList comes from `includes/breadcrumbs.php` (one per page) |
 | WebApplication | Same properties, `operatingSystem: "Any"`, `offers` price 0 INR, `isAccessibleForFree`, `featureList`, `publisher` |
@@ -59,7 +59,7 @@ Two blocks:
 
 - Tool list, groups, SEO title and meta description: `wordpress/100xfounder/includes/tools.php` (`xf_tools()`).
 - Template, schema and navigation: `wordpress/100xfounder-theme/page-tools.php`; styles `.tl-*` in `assets/css/theme.css`.
-- Calculator maths: `wordpress/100xfounder-theme/assets/js/tools.js`; hand-checked cases in `content/calculators/tools.test.js` (`node content/calculators/tools.test.js`).
+- Calculator maths: `wordpress/100xfounder-theme/assets/js/tools.js`; hand-checked cases in `wordpress/100xfounder-theme/assets/js/tools.test.js` (`node wordpress/100xfounder-theme/assets/js/tools.test.js`); markup for newer tools in `parts/tools/calc-<slug>.php`; LLM and GPU prices in `parts/tools/prices.php`.
 - Content per tool: `wordpress/100xfounder-theme/parts/tools/<slug>.php`, returning `h1`, `lede`, `features`, `sections` (each `id`, `h2`, `html`; `{{brand}}` = plugin brand-asset URL), `howto` (`h2`, `intro`, `steps[name,text]`), `faq[q,a]`, `sources[publisher,title,url,date]`.
 - Diagrams: `content/calculators/make_images.py` → `wordpress/100xfounder/assets/brand/tool-*.png`.
 - Word count and keyword stats: `python3 content/calculators/measure.py <slug>`.
