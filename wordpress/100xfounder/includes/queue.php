@@ -96,7 +96,12 @@ function xf_attach_images($post_id, array $images, $title) {
 
 /** Creates a pending draft from a skill's payload. Returns the post ID or WP_Error. */
 function xf_create_draft(array $d, $author_id) {
-    $type = in_array($d['type'] ?? 'post', ['post', 'xf_round', 'xf_event', 'xf_guide'], true) ? $d['type'] : 'post';
+    // Byline policy: every piece runs under the pen name, never the API account's own name.
+    $pen = get_user_by('slug', 'ishaan-vardhan');
+    if ($pen) {
+        $author_id = $pen->ID;
+    }
+    $type =in_array($d['type'] ?? 'post', ['post', 'xf_round', 'xf_event', 'xf_guide'], true) ? $d['type'] : 'post';
     $title = sanitize_text_field((string) ($d['title'] ?? ''));
     $content = wp_kses_post((string) ($d['content'] ?? ''));
     if (mb_strlen($title) < 8 || (in_array($type, ['post', 'xf_guide'], true) && str_word_count(wp_strip_all_tags($content)) < 150)) {

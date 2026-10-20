@@ -176,7 +176,8 @@ def main():
             content = re.sub(r"<!-- xf-image-\d+ -->", "", content)
             if "xf-disclosure" not in content:
                 content += DISCLOSURE
-            upd = {"content": content, "status": "future" if when > dt.datetime.now(dt.timezone.utc) else "publish",
+            # Byline is always the pen name (user 1, ishaan-vardhan), never the API account's own name.
+            upd = {"content": content, "author": int(os.environ.get("XF_AUTHOR_ID", "1")), "status": "future" if when > dt.datetime.now(dt.timezone.utc) else "publish",
                    "date_gmt": when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")}
             if p.get("slug"):
                 upd["slug"] = slug_without_year(p["slug"])
