@@ -299,6 +299,16 @@ function xf_render_spotlight_slide($spotlight_id, $n) {
 /** GD image for slide $n of a queue row, whatever its kind. */
 function xf_ig_item_image($item, $n) {
     $payload = json_decode($item->payload, true) ?: [];
+    if ($item->kind === 'upload') {
+        // A finished post the owner uploaded (Create tab): its slides are files, not templates.
+        $rel = (string) ($payload['files'][$n] ?? '');
+        $path = trailingslashit(wp_upload_dir()['basedir']) . $rel;
+        if ($rel === '' || strpos($rel, '..') !== false || !is_readable($path)) {
+            return null;
+        }
+        $img = @imagecreatefromjpeg($path);
+        return $img ?: null;
+    }
     if ($item->kind === 'daily_digest') {
         return xf_render_digest_slide($payload, $n);
     }

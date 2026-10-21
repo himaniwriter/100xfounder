@@ -401,6 +401,16 @@ function xf_ig_create_tab() {
         <p class="description">Founder stories can't post until you tick "Founder consent received" on the item.</p>
         <h3>100X Meter weekly climbers</h3>
         <?php $form('meter', 'Create meter weekly'); ?>
+        <h3>Upload a finished post</h3>
+        <form method="post" action="<?php echo esc_url($post); ?>" enctype="multipart/form-data" style="margin:0 0 14px;display:grid;gap:8px;max-width:640px">
+            <input type="hidden" name="action" value="xf_ig_upload">
+            <?php wp_nonce_field('xf_ig_upload'); ?>
+            <label>Title (for the queue) <input type="text" name="title" class="regular-text" required maxlength="120"></label>
+            <label>Slides, in order (1–10 JPEG or PNG, 1080×1350 recommended) <input type="file" name="slides[]" accept="image/jpeg,image/png" multiple required></label>
+            <label>Caption <textarea name="caption" rows="6" class="large-text" maxlength="2200" required></textarea></label>
+            <span><button class="button">Queue upload</button></span>
+        </form>
+        <p class="description">For posts designed outside the site (content/instagram/render.py). Files are sorted by name, so slide-1, slide-2 … keep their order. The item still needs approval before it can post.</p>
     </div>
     <?php
 }
@@ -443,4 +453,59 @@ add_action('admin_post_xf_ig_create', function () {
         xf_ig_redirect('Nothing created: there isn\'t enough real data for this item' . $why . '.', xf_ig_tab_url('create'));
     }
     xf_ig_redirect('Queued item #' . (int) $id . '.', xf_ig_tab_url('queue') . '#xf-ig-row-' . (int) $id);
+});
+
+/* ---- Create tab: queue a finished post uploaded by the owner ---- */
+
+add_action('admin_post_xf_ig_upload', function () {
+    if (!current_user_can('manage_options') || !check_admin_referer('xf_ig_upload')) {
+        wp_die('Not allowed', '', ['response' => 403]);
+    }
+    $back = xf_ig_tab_url('create');
+    $f = $_FILES['slides'] ?? null; // phpcs:ignore -- each file is validated below
+    $title = sanitize_text_field(wp_unslash($_POST['title'] ?? ''));
+    $caption = sanitize_textarea_field(wp_unslash($_POST['caption'] ?? ''));
+    if (!$f || !is_array($f['name']) || $title === '' || $caption === '') {
+        xf_ig_redirect('Add a title, a caption and at least one slide.', $back);
+    }
+    $order = $f['name'];
+    natcasesort($order); // slide-1, slide-2 … slide-10
+    if (count($order) > 10) {
+        xf_ig_redirect('Instagram allows at most 10 slides.', $back);
+    }
+    $up = wp_upload_dir();
+    $dir = 'xf-ig-uploads/';
+    if (!wp_mkdir_p($up['basedir'] . '/' . $dir)) {
+        xf_ig_redirect('Could not create uploads/xf-ig-uploads/.', $back);
+    }
+    if (!file_exists($up['basedir'] . '/' . $dir . 'index.php')) {
+        file_put_contents($up['basedir'] . '/' . $dir . 'index.php', "<?php\n// Silence is golden.\n");
+    }
+    $files = [];
+    foreach (array_keys($order) as $i) {
+        $tmp = (string) $f['tmp_name'][$i];
+        if ((int) $f['error'][$i] !== UPLOAD_ERR_OK || !is_uploaded_file($tmp) || (int) $f['size'][$i] > 12 * MB_IN_BYTES) {
+            xf_ig_redirect('A slide failed to upload or is over 12 MB.', $back);
+        }
+        $info = @getimagesize($tmp);
+        $type = $info[2] ?? 0;
+        $img = $type === IMAGETYPE_JPEG ? @imagecreatefromjpeg($tmp) : ($type === IMAGETYPE_PNG ? @imagecreatefrompng($tmp) : null);
+        if (!$img) {
+            xf_ig_redirect('Slides must be JPEG or PNG images.', $back);
+        }
+        // Instagram takes JPEG only: flatten onto the brand background and re-encode.
+        $out = imagecreatetruecolor(imagesx($img), imagesy($img));
+        imagefill($out, 0, 0, imagecolorallocate($out, 11, 11, 12));
+        imagecopy($out, $img, 0, 0, 0, 0, imagesx($img), imagesy($img));
+        $name = $dir . bin2hex(random_bytes(12)) . '.jpg';
+        $ok = imagejpeg($out, $up['basedir'] . '/' . $name, 92);
+        imagedestroy($img);
+        imagedestroy($out);
+        if (!$ok) {
+            xf_ig_redirect('Could not save a slide.', $back);
+        }
+        $files[] = $name;
+    }
+    $id = xf_ig_upsert('upload', 'upload:' . bin2hex(random_bytes(6)), $title, $caption, count($files), ['files' => $files, 'uploaded_by' => wp_get_current_user()->user_login]);
+    xf_ig_redirect('Queued upload #' . (int) $id . ' (' . count($files) . ' slides). Approve it, then post.', xf_ig_tab_url('queue') . '#xf-ig-row-' . (int) $id);
 });
