@@ -1,0 +1,106 @@
+{
+ "slides": [
+  {
+   "layout": "cover",
+   "img": "terminal.jpg",
+   "credit": "Photo: RuinDig/Yuki Uchida / Wikimedia Commons, CC BY 4.0",
+   "pos": "50% 45%",
+   "h1": [
+    "Ramp and Brex: a ",
+    "$44B",
+    " round and a bank buyout"
+   ],
+   "h1_size": 92,
+   "deck": "Capital One closed its *$5.15B* Brex deal. Here is the US CFO stack in 2026.",
+   "foot": [
+    "100xfounder.com",
+    "Swipe for the numbers →"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "flatiron.jpg",
+   "credit": "Ramp is based in New York · Photo: Kidfly182 / Wikimedia Commons, CC BY 4.0",
+   "pos": "50% 50%",
+   "label": "Ramp",
+   "h1": [
+    "Ramp ",
+    "raised",
+    " $750 million"
+   ],
+   "h1_size": 88,
+   "cards": [
+    {
+     "k": "Valuation",
+     "v": "$44B",
+     "s": "Series F, 4 June 2026"
+    },
+    {
+     "k": "Customers",
+     "v": "70,000+",
+     "s": "Per lead investor GIC"
+    },
+    {
+     "k": "Led by",
+     "v": "ICONIQ · GIC · Ontario Teachers'",
+     "vsize": 40,
+     "s": "$200 billion in annual purchase volume",
+     "wide": true
+    }
+   ],
+   "foot": [
+    "Sources: GIC, Ramp",
+    "→"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "capitalone.jpg",
+   "credit": "Capital One HQ, McLean · Photo: MatthewBenson / Wikimedia Commons, CC BY 2.0",
+   "pos": "50% 40%",
+   "big": "$5.15B",
+   "big_label": "Capital One's price for Brex",
+   "h1": [
+    "Well ",
+    "below",
+    " its 2021 valuation"
+   ],
+   "h1_size": 76,
+   "deck": "Brex was valued at *$12.3 billion* in 2021. The sale closed on 7 April 2026.",
+   "foot": [
+    "Source: Payments Dive",
+    "→"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "nasdaq.jpg",
+   "credit": "Nasdaq, Times Square · Photo: ajay_suresh / Wikimedia Commons, CC BY 2.0",
+   "pos": "50% 35%",
+   "label": "The rest of the stack",
+   "h1": [
+    "Who else ",
+    "owns",
+    " the CFO stack"
+   ],
+   "h1_size": 84,
+   "cards": [
+    {
+     "k": "Mercury",
+     "v": "$5.2B",
+     "s": "Raised $200M in May 2026 after conditional approval for a US bank charter"
+    },
+    {
+     "k": "Navan",
+     "v": "−20%",
+     "s": "Listed on Nasdaq in October 2025; fell about 20% on day one"
+    }
+   ],
+   "cta": "Full story, with every source:",
+   "foot": [
+    "Sources in the article",
+    "Link in bio"
+   ]
+  }
+ ]
+}
