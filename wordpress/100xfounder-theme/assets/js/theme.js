@@ -312,7 +312,7 @@
     var r = g.getBoundingClientRect(), P = 30, k = r.width / 260, q = window.devicePixelRatio || 1, c = document.createElement('canvas'), x = c.getContext('2d'), a = Math.PI * (1 - n / 100), ps = [], f = 0, i, th, v;
     c.className = 'xf-meter__fx'; c.width = (r.width + 2 * P) * q; c.height = (r.height + 2 * P) * q; c.style.width = r.width + 2 * P + 'px'; c.style.height = r.height + 2 * P + 'px';
     g.parentNode.appendChild(c); x.scale(q, q);
-    for (i = 0; i < 24; i++) { th = Math.random() * 6.283; v = 1 + Math.random() * 3; ps.push([P + (130 + 110 * Math.cos(a)) * k, P + (130 - 110 * Math.sin(a)) * k, Math.cos(th) * v, Math.sin(th) * v - 1.6, ['#7c5cff', '#b07cff', '#ff6ad5', '#6a7bff', '#fff'][i % 5]]); }
+    for (i = 0; i < 24; i++) { th = Math.random() * 6.283; v = 1 + Math.random() * 3; ps.push([P + (130 + 110 * Math.cos(a)) * k, P + (130 - 110 * Math.sin(a)) * k, Math.cos(th) * v, Math.sin(th) * v - 1.6, ['#7c5cff', '#b07cff', '#7c8cff', '#6a7bff', '#fff'][i % 5]]); }
     (function tick() {
       x.clearRect(0, 0, c.width, c.height); x.globalAlpha = 1 - f / 42;
       ps.forEach(function (p) { p[0] += p[2]; p[1] += p[3]; p[3] += 0.12; x.fillStyle = p[4]; x.beginPath(); x.arc(p[0], p[1], 2.2, 0, 6.283); x.fill(); });

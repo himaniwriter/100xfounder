@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('XFT_VERSION', '2.9.1');
+define('XFT_VERSION', '3.0.0');
 
 require_once __DIR__ . '/inc-tabs.php';
 
@@ -39,8 +39,8 @@ add_action('wp_enqueue_scripts', function () {
 
 add_action('wp_head', function () {
     $uri = get_template_directory_uri();
-    echo '<link rel="preload" href="' . esc_url($uri . '/assets/fonts/inter-400.woff2') . '" as="font" type="font/woff2" crossorigin>' . "\n";
-    echo '<link rel="preload" href="' . esc_url($uri . '/assets/fonts/inter-600.woff2') . '" as="font" type="font/woff2" crossorigin>' . "\n";
+    echo '<link rel="preload" href="' . esc_url($uri . '/assets/fonts/poppins-400-latin.woff2') . '" as="font" type="font/woff2" crossorigin>' . "\n";
+    echo '<link rel="preload" href="' . esc_url($uri . '/assets/fonts/poppins-500-latin.woff2') . '" as="font" type="font/woff2" crossorigin>' . "\n";
     echo '<meta name="theme-color" content="#0b0b0c">' . "\n";
 }, 1);
 

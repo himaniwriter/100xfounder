@@ -32,8 +32,9 @@ The full plan is in `docs/PRD.md`. Its open questions and approval status are tr
 
 - **Source of truth:** the owner's design canvas, https://claude.ai/artifact/1M6rZmasXRJJTQ7LxcreH8 ("100Xfounder Revamp"). It's a dark editorial portal:
   - colours: `#0b0b0c` background, `#f2f2ef` text, violet accent `#b07cff` (owner switched from orange on 2026-10-04)
-  - type: Inter, plus Geist Mono for labels
-  - signature: an animated purple gradient (`#7c5cff → #b07cff → #ff6ad5 → #6a7bff`) on the hairline divider, accent labels, ticker and progress bar; it stops under `prefers-reduced-motion`
+  - type (owner, 2026-10-21): **Poppins only, plus one Playfair Display italic highlight word** (`<em>` in a heading or `.hw`). No bold anywhere: Poppins 500 also serves weights 600–900. Inter and Geist Mono are retired. Fonts are self-hosted in the theme's `assets/fonts/`.
+  - signature: an animated violet-to-blue gradient (`#7c5cff → #b07cff → #7c8cff → #6a7bff`; pink was removed on 2026-10-21) on the hairline divider, accent labels, ticker and progress bar; it stops under `prefers-reduced-motion`
+  - the same rules, written as tokens, are in the "100xFounder Poster System" design system (https://claude.ai/artifact/BeybNxgwCj7wBoMzuRkXTW)
 - **Build:** a custom WordPress theme (`wordpress/100xfounder-theme/`) that matches it closely. The plugin holds the logic.
 - **New pages:** design them on the same canvas first and get approval, then build.
 - **Sample content:** never publish the canvas's sample headlines or numbers. Live pages show only real, sourced content.

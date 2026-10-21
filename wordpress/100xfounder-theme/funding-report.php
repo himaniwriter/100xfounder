@@ -22,13 +22,13 @@ $names = function (array $ids) use ($by_id, $round_link) {
 };
 ?>
 <style>
-.fr .xf-table{font-size:14px;min-width:600px}.fr details .xf-table,.fr .fr-mom{min-width:0}.fr .xf-table th{font-family:'Geist Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);font-weight:400}
+.fr .xf-table{font-size:14px;min-width:600px}.fr details .xf-table,.fr .fr-mom{min-width:0}.fr .xf-table th{font-family:Poppins,system-ui,sans-serif;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);font-weight:400}
 .fr .xf-table td.n,.fr .xf-table th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .fr .xf-table a{color:var(--tx);text-decoration:underline;text-decoration-color:var(--ln2);text-underline-offset:3px}.fr .xf-table a:hover{text-decoration-color:var(--ac)}
 .fr-sec{padding-top:56px}.fr-sec h2{margin:0;font-size:24px;letter-spacing:-.02em}
 .fr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:40px 48px;margin-top:22px}
 .fr-chart h3{margin:0 0 14px;font-size:17px}.fr-svg{display:block;max-width:560px;height:auto;overflow:visible}
-.fr-l{fill:var(--tx);font:500 14px Inter,system-ui,sans-serif}.fr-v{fill:var(--t2);font:12px 'Geist Mono',monospace}
+.fr-l{fill:var(--tx);font:500 14px Poppins,system-ui,sans-serif}.fr-v{fill:var(--t2);font:12px Poppins,system-ui,sans-serif}
 .fr-track{fill:var(--bg2)}.fr-bar{fill:var(--ac)}
 .fr details{margin-top:12px}.fr summary{cursor:pointer;color:var(--t2);font-size:13px}.fr summary:hover{color:var(--tx)}
 .fr-note{border:1px solid var(--ln2);padding:16px 18px;margin-top:22px;color:var(--t2);font-size:14px;line-height:1.6;max-width:760px}

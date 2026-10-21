@@ -187,7 +187,7 @@ function xf_meter_badge_svg($level) {
     $level = (int) $level;
     return '<svg xmlns="http://www.w3.org/2000/svg" width="168" height="28" viewBox="0 0 168 28" role="img" aria-label="100xFounder 100X Meter: ' . $level . 'X">'
         . '<title>100xFounder 100X Meter: ' . $level . 'X</title>'
-        . '<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset=".5" stop-color="#b07cff"/><stop offset="1" stop-color="#ff6ad5"/></linearGradient></defs>'
+        . '<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset=".5" stop-color="#b07cff"/><stop offset="1" stop-color="#7c8cff"/></linearGradient></defs>'
         . '<rect x=".5" y=".5" width="167" height="27" rx="7" fill="#0b0b0c" stroke="#303035"/>'
         . '<text x="12" y="18.5" fill="#f2f2ef" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600">⚡ 100xFounder</text>'
         . '<rect x="112" y="5" width="50" height="18" rx="5" fill="url(#g)"/>'
@@ -207,7 +207,7 @@ function xf_meter_gauge_svg($level) {
         $ticks .= sprintf('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" class="%s"/>', 130 + $r1 * cos($a), 130 - $r1 * sin($a), 130 + 127 * cos($a), 130 - 127 * sin($a), $major ? 'xf-meter__tick xf-meter__tick--major' : 'xf-meter__tick');
     }
     return '<svg viewBox="0 0 260 140" aria-hidden="true" focusable="false">'
-        . '<defs><linearGradient id="xfmg" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset=".45" stop-color="#b07cff"/><stop offset=".8" stop-color="#ff6ad5"/><stop offset="1" stop-color="#6a7bff"/></linearGradient>'
+        . '<defs><linearGradient id="xfmg" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset=".45" stop-color="#b07cff"/><stop offset=".8" stop-color="#7c8cff"/><stop offset="1" stop-color="#6a7bff"/></linearGradient>'
         . '<radialGradient id="xfmk"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#e9dcff"/><stop offset="1" stop-color="#b07cff" stop-opacity="0"/></radialGradient></defs>'
         . $ticks
         . '<path class="xf-meter__track" d="M20 130 A110 110 0 0 1 240 130" fill="none" stroke-width="12" stroke-linecap="round"/>'

@@ -976,9 +976,9 @@ function xf_ig_draw($img, $text, $style, $max, $min, $x, $y, $width, $max_lines,
     return $y + (int) ($size * ($lh - 1) * 2);
 }
 
-/** Horizontal hairline in the brand gradient (#7c5cff → #b07cff → #ff6ad5 → #6a7bff). */
+/** Horizontal hairline in the brand gradient (#7c5cff → #b07cff → #7c8cff → #6a7bff). */
 function xf_ig_gradient_line($img, $x1, $x2, $y, $h = 4) {
-    $stops = [[124, 92, 255], [176, 124, 255], [255, 106, 213], [106, 123, 255]];
+    $stops = [[124, 92, 255], [176, 124, 255], [124, 140, 255], [106, 123, 255]];
     $span = max(1, $x2 - $x1);
     for ($x = $x1; $x <= $x2; $x++) {
         $t = ($x - $x1) / $span * 3;

@@ -687,22 +687,22 @@
     var drawCard = function (r) {
       var c = document.createElement('canvas'); c.width = 1080; c.height = 1350;
       var x = c.getContext('2d');
-      var grad = function (x0, x1) { var g = x.createLinearGradient(x0, 0, x1, 0); g.addColorStop(0, '#7c5cff'); g.addColorStop(.45, '#b07cff'); g.addColorStop(.8, '#ff6ad5'); g.addColorStop(1, '#6a7bff'); return g; };
+      var grad = function (x0, x1) { var g = x.createLinearGradient(x0, 0, x1, 0); g.addColorStop(0, '#7c5cff'); g.addColorStop(.45, '#b07cff'); g.addColorStop(.8, '#7c8cff'); g.addColorStop(1, '#6a7bff'); return g; };
       x.fillStyle = '#0b0b0c'; x.fillRect(0, 0, 1080, 1350);
       var glow = x.createRadialGradient(900, 120, 0, 900, 120, 700); glow.addColorStop(0, 'rgba(124,92,255,.45)'); glow.addColorStop(1, 'rgba(124,92,255,0)');
       x.fillStyle = glow; x.fillRect(0, 0, 1080, 1350);
       x.fillStyle = grad(0, 1080); x.fillRect(0, 0, 1080, 8);
-      x.fillStyle = '#b07cff'; x.font = '500 30px "Geist Mono", monospace'; x.fillText('MY STARTUP’S 100X SCORE', 80, 130);
+      x.fillStyle = '#b07cff'; x.font = '500 30px Poppins, monospace'; x.fillText('MY STARTUP’S 100X SCORE', 80, 130);
       x.lineCap = 'round'; x.lineWidth = 44;
       x.strokeStyle = '#232326'; x.beginPath(); x.arc(540, 560, 300, Math.PI, 2 * Math.PI); x.stroke();
       x.strokeStyle = grad(240, 840); x.beginPath(); x.arc(540, 560, 300, Math.PI, Math.PI * (1 + Math.max(.001, r.score / 100))); x.stroke();
-      x.textAlign = 'center'; x.fillStyle = grad(330, 750); x.font = '700 190px Inter, sans-serif'; x.fillText(r.score + 'X', 540, 560);
-      x.fillStyle = '#f2f2ef'; x.font = '500 34px "Geist Mono", monospace'; x.fillText(quizBand(r.score).toUpperCase(), 540, 625);
-      x.textAlign = 'left'; x.fillStyle = '#8c8c88'; x.font = '500 28px "Geist Mono", monospace'; x.fillText('BIGGEST LEVERS', 80, 760);
-      var y = 820; x.font = '400 36px Inter, sans-serif';
+      x.textAlign = 'center'; x.fillStyle = grad(330, 750); x.font = '400 190px Poppins, sans-serif'; x.fillText(r.score + 'X', 540, 560);
+      x.fillStyle = '#f2f2ef'; x.font = '500 34px Poppins, monospace'; x.fillText(quizBand(r.score).toUpperCase(), 540, 625);
+      x.textAlign = 'left'; x.fillStyle = '#8c8c88'; x.font = '500 28px Poppins, monospace'; x.fillText('BIGGEST LEVERS', 80, 760);
+      var y = 820; x.font = '400 36px Poppins, sans-serif';
       r.tips.forEach(function (t, i) { x.fillStyle = '#b07cff'; x.fillText((i + 1) + '.', 80, y); x.fillStyle = '#d6d6d2'; y = wrapText(x, t, 130, y, 870, 48) + 22; });
-      x.fillStyle = '#f2f2ef'; x.font = '700 44px Inter, sans-serif'; x.fillText('100xFounder', 80, 1230);
-      x.fillStyle = '#8c8c88'; x.font = '500 26px "Geist Mono", monospace'; x.fillText('100xfounder.com/tools/startup-100x-score', 80, 1280);
+      x.fillStyle = '#f2f2ef'; x.font = '500 44px Poppins, sans-serif'; x.fillText('100xFounder', 80, 1230);
+      x.fillStyle = '#8c8c88'; x.font = '500 26px Poppins, monospace'; x.fillText('100xfounder.com/tools/startup-100x-score', 80, 1280);
       return c;
     };
     $('[data-q-png]', mq).addEventListener('click', function () {
