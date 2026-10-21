@@ -1046,3 +1046,17 @@ html.xf-pop-open{overflow:hidden}
 /* Highlight word: one Playfair Display italic word in a headline (design system "100xFounder Poster System"). */
 h1 em,h2 em,h1 .hw,h2 .hw,.hw{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:600;letter-spacing:-.01em;background:linear-gradient(90deg,#b07cff,#7c8cff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
+
+/* /join/: link-in-bio page, phone-first. */
+.jn-head{max-width:640px;text-align:center;padding-top:40px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.jn-logo{height:24px;width:auto;margin-bottom:6px}
+.jn-head .page-title{margin:0;font-size:clamp(32px,7vw,52px);line-height:1.05}
+.jn-head .muted{font-size:17px;line-height:1.6;margin:0;max-width:520px}
+.jn-list{max-width:640px;display:flex;flex-direction:column;gap:14px;padding-top:32px;padding-bottom:72px}
+.jn-card{border:1px solid var(--ln);border-radius:18px;background:var(--bg2);padding:22px}
+.jn-card h2{font-size:24px;font-weight:400;margin:8px 0 6px;letter-spacing:-.02em}
+.jn-card p{margin:0;color:var(--t2);line-height:1.6}
+.jn-btn{margin-top:16px;width:100%;justify-content:center;height:48px}
+.jn-stories{list-style:none;margin:10px 0 0;padding:0}
+.jn-stories li{border-top:1px solid var(--ln)}.jn-stories li:first-child{border-top:0}
+.jn-stories a{display:block;padding:12px 0;line-height:1.4}

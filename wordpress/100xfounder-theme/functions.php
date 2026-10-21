@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('XFT_VERSION', '3.0.3');
+define('XFT_VERSION', '3.0.4');
 
 require_once __DIR__ . '/inc-tabs.php';
 
@@ -613,3 +613,15 @@ function xft_interviews_html($exclude = []) {
     }
     return $out . '</div></section>';
 }
+
+/** Creates the /join/ page (Instagram link in bio) once; page-join.php renders it. */
+add_action('init', function () {
+    if (get_option('xft_join_page') || !current_user_can('edit_pages') && !wp_doing_cron()) {
+        return;
+    }
+    $p = get_page_by_path('join');
+    $id = $p ? $p->ID : wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Join 100xFounder', 'post_name' => 'join', 'post_content' => '']);
+    if ($id && !is_wp_error($id)) {
+        update_option('xft_join_page', (int) $id, false);
+    }
+});
