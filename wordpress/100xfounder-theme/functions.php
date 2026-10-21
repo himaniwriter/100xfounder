@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('XFT_VERSION', '3.0.1');
+define('XFT_VERSION', '3.0.2');
 
 require_once __DIR__ . '/inc-tabs.php';
 
@@ -227,7 +227,8 @@ function xft_sector_links() {
     $links = [];
     foreach ($sectors as $slug => $name) {
         $term = get_term_by('slug', $slug, 'category');
-        if ($term) {
+        // Empty sections stay out of the menu until they have a story (owner, 2026-10-21).
+        if ($term && $term->count > 0) {
             $links[] = ['label' => $term->name, 'url' => get_category_link($term), 'slug' => $slug];
         }
     }
