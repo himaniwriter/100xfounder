@@ -1,0 +1,118 @@
+{
+ "slides": [
+  {
+   "layout": "cover",
+   "img": "nithin.jpg",
+   "credit": "Photo: Karthik Rangappa / Wikimedia Commons, CC BY 2.0",
+   "pos": "50% 30%",
+   "label": "Founder story · Nithin Kamath",
+   "h1": [
+    "He ",
+    "bootstrapped",
+    " his way into broking"
+   ],
+   "h1_size": 84,
+   "deck": "Nithin Kamath started Zerodha in 2010 with *no outside investors*, and it pioneered discount broking in India.",
+   "foot": [
+    "100xfounder.com",
+    "Swipe for the story →"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "charts.jpg",
+   "credit": "Photo: unknown author (Pxhere) / Wikimedia Commons, CC0",
+   "pos": "50% 50%",
+   "shade": 0.8,
+   "label": "Before Zerodha",
+   "h1": [
+    "A trader at ",
+    "17",
+    ""
+   ],
+   "h1_size": 110,
+   "deck": "He began trading stocks in the late 1990s. After the dotcom bust, he worked at a call centre to fund it.",
+   "cards": [
+    {
+     "k": "In his words",
+     "v": "“I spent four years at a call center, making unsolicited calls to people in the US.”",
+     "vsize": 38,
+     "s": "Nithin Kamath on X, May 2024",
+     "wide": true
+    }
+   ],
+   "foot": [
+    "Source: Business Today",
+    "→"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "nse.jpg",
+   "credit": "NSE, Mumbai · Photo: Ganesh Dhamodkar / Wikimedia Commons, CC BY-SA 4.0",
+   "pos": "50% 40%",
+   "label": "15 August 2010",
+   "h1": [
+    "Zerodha starts ",
+    "without",
+    " much money"
+   ],
+   "h1_size": 84,
+   "deck": "It ran on NSE NOW, the exchange's free trading platform, and NSE waived its *~₹5 lakh* membership fee.",
+   "cards": [
+    {
+     "k": "Equity delivery",
+     "v": "₹0",
+     "s": "Brokerage today"
+    },
+    {
+     "k": "Intraday & F&O",
+     "v": "₹20",
+     "s": "Flat per order, or 0.03% if lower"
+    }
+   ],
+   "foot": [
+    "Sources: Zerodha, nithinkamath.me",
+    "→"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "bengaluru.jpg",
+   "credit": "Bengaluru · Photo: Saad Faruque / Wikimedia Commons, CC BY-SA 2.0",
+   "pos": "50% 50%",
+   "big": "1.8 Cr+",
+   "big_label": "Clients, per Zerodha (Oct 2026)",
+   "h1": [
+    "Zerodha at ",
+    "16",
+    ""
+   ],
+   "h1_size": 96,
+   "deck": "Zerodha says it handles *over 15%* of Indian retail trading volumes.",
+   "foot": [
+    "Source: zerodha.com/about",
+    "→"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "bse.jpg",
+   "credit": "BSE, Mumbai · Photo: Niyantha Shekhar / Wikimedia Commons, CC BY 2.0",
+   "pos": "50% 35%",
+   "label": "The lesson",
+   "h1": [
+    "“",
+    "Boring",
+    " is usually better.”"
+   ],
+   "h1_size": 100,
+   "deck": "“If it takes more than two sentences to explain how a product makes money and where the risk sits, you should probably stay away.”",
+   "cta": "Nithin Kamath, on his blog, 14 Sep 2026",
+   "foot": [
+    "Source: nithinkamath.me",
+    "Link in bio"
+   ]
+  }
+ ]
+}

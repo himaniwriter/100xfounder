@@ -3,7 +3,7 @@
 
     python3 content/instagram/render.py content/instagram/<post>/post.json
 
-Writes <post>/slide-N.png next to the spec. Images in the spec are paths relative to the spec's folder.
+Writes <post>/slide-N.png next to the spec, then the shared end slide (end-slide/end.png) as the last slide unless "end": false. Images in the spec are paths relative to the spec's folder.
 Rules (design system "100xFounder Poster System"): Poppins + one Playfair italic highlight word,
 no bold weights, violet-to-blue gradient, centred wordmark, a different credited image on every slide.
 
@@ -136,6 +136,12 @@ def main(spec_path):
         print(png)
     for name in ("fonts", "brand"):
         shutil.rmtree(folder / name, ignore_errors=True)
+    # Every post ends with the shared founders' circle slide unless the spec says "end": false.
+    end = HERE / "end-slide" / "end.png"
+    if spec.get("end", True) and end.exists() and folder != end.parent:
+        last = folder / f"slide-{len(spec['slides']) + 1}.png"
+        shutil.copyfile(end, last)
+        print(last, "(end slide)")
 
 
 if __name__ == "__main__":
