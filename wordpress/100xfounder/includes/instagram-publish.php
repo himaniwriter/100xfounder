@@ -175,8 +175,17 @@ function xf_ig_publish($item) {
         return $urls;
     }
     $caption = xf_ig_clean_caption($item->caption);
+    // Collaborator invites (up to 3 usernames): Instagram notifies them and, if they accept, the post shows on their profile.
+    $payload = json_decode((string) $item->payload, true) ?: [];
+    $collab = array_slice(array_values(array_filter((array) ($payload['collaborators'] ?? []))), 0, 3);
+    $with = function (array $args) use ($collab) {
+        return $collab ? $args + ['collaborators' => wp_json_encode($collab)] : $args;
+    };
     if (count($urls) === 1) {
-        $c = xf_ig_api('POST', $user . '/media', ['image_url' => $urls[0], 'caption' => $caption]);
+        $c = xf_ig_api('POST', $user . '/media', $with(['image_url' => $urls[0], 'caption' => $caption]));
+        if (is_wp_error($c) && $collab) { // an invalid or private handle must not block the post
+            $c = xf_ig_api('POST', $user . '/media', ['image_url' => $urls[0], 'caption' => $caption]);
+        }
     } else {
         $children = [];
         foreach ($urls as $url) {
@@ -186,7 +195,10 @@ function xf_ig_publish($item) {
             }
             $children[] = (string) $child['id'];
         }
-        $c = xf_ig_api('POST', $user . '/media', ['media_type' => 'CAROUSEL', 'children' => implode(',', $children), 'caption' => $caption]);
+        $c = xf_ig_api('POST', $user . '/media', $with(['media_type' => 'CAROUSEL', 'children' => implode(',', $children), 'caption' => $caption]));
+        if (is_wp_error($c) && $collab) {
+            $c = xf_ig_api('POST', $user . '/media', ['media_type' => 'CAROUSEL', 'children' => implode(',', $children), 'caption' => $caption]);
+        }
     }
     if (is_wp_error($c)) {
         return $c;

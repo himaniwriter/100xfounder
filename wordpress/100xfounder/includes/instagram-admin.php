@@ -74,6 +74,7 @@ function xf_ig_admin_page() {
         'posted' => 'Posted (' . $n('posted') . ')',
         'skipped' => 'Skipped (' . $n('skipped') . ')',
         'create' => 'Create',
+        'dms' => 'DMs',
         'settings' => 'Settings',
     ];
     $tab = isset($_GET['tab']) ? sanitize_key(wp_unslash($_GET['tab'])) : 'queue';
@@ -105,6 +106,8 @@ function xf_ig_admin_page() {
             echo '</div>';
         } elseif ($tab === 'create') {
             xf_ig_create_tab();
+        } elseif ($tab === 'dms' && function_exists('xf_ig_dm_tab')) {
+            xf_ig_dm_tab();
         } else {
             xf_ig_settings_card();
         }
@@ -408,6 +411,7 @@ function xf_ig_create_tab() {
             <label>Title (for the queue) <input type="text" name="title" class="regular-text" required maxlength="120"></label>
             <label>Slides, in order (1–10 JPEG or PNG, 1080×1350 recommended) <input type="file" name="slides[]" accept="image/jpeg,image/png" multiple required></label>
             <label>Caption <textarea name="caption" rows="6" class="large-text" maxlength="2200" required></textarea></label>
+            <label>Collaborators (optional, up to 3 Instagram usernames, comma separated) <input type="text" name="collaborators" class="regular-text" placeholder="founder_handle, startup_handle"></label>
             <span><button class="button">Queue upload</button></span>
         </form>
         <p class="description">For posts designed outside the site (content/instagram/render.py). Files are sorted by name, so slide-1, slide-2 … keep their order. The item still needs approval before it can post.</p>
@@ -506,6 +510,7 @@ add_action('admin_post_xf_ig_upload', function () {
         }
         $files[] = $name;
     }
-    $id = xf_ig_upsert('upload', 'upload:' . bin2hex(random_bytes(6)), $title, $caption, count($files), ['files' => $files, 'uploaded_by' => wp_get_current_user()->user_login]);
+    $collab = array_slice(array_values(array_filter(array_map(function ($h) { return preg_replace('/[^A-Za-z0-9._]/', '', ltrim(trim($h), '@')); }, explode(',', (string) wp_unslash($_POST['collaborators'] ?? '')) ))), 0, 3);
+    $id = xf_ig_upsert('upload', 'upload:' . bin2hex(random_bytes(6)), $title, $caption, count($files), ['files' => $files, 'collaborators' => $collab, 'uploaded_by' => wp_get_current_user()->user_login]);
     xf_ig_redirect('Queued upload #' . (int) $id . ' (' . count($files) . ' slides). Approve it, then post.', xf_ig_tab_url('queue') . '#xf-ig-row-' . (int) $id);
 });

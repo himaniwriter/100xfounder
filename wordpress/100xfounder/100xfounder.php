@@ -41,6 +41,7 @@ if (is_readable(XF_DIR . 'includes/instagram-publish.php')) { require_once XF_DI
 if (is_readable(XF_DIR . 'includes/instagram-posted.php')) { require_once XF_DIR . 'includes/instagram-posted.php'; }
 if (is_readable(XF_DIR . 'includes/instagram-improve.php')) { require_once XF_DIR . 'includes/instagram-improve.php'; }
 if (is_readable(XF_DIR . 'includes/instagram-admin.php')) { require_once XF_DIR . 'includes/instagram-admin.php'; }
+if (is_readable(XF_DIR . 'includes/instagram-dm.php')) { require_once XF_DIR . 'includes/instagram-dm.php'; }
 if (is_readable(XF_DIR . 'includes/pipeline.php')) { require_once XF_DIR . 'includes/pipeline.php'; }
 if (is_readable(XF_DIR . 'includes/shortcodes.php')) { require_once XF_DIR . 'includes/shortcodes.php'; }
 if (is_readable(XF_DIR . 'includes/adsense.php')) { require_once XF_DIR . 'includes/adsense.php'; }
