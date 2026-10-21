@@ -28,6 +28,12 @@ add_filter('wp_robots', function ($robots) {
             return $robots; // Keeps the private-page noindex set in post-types.php.
         }
     }
+    if (is_page('join')) { // the Instagram link-in-bio doorway: no content of its own
+        unset($robots['index'], $robots['max-image-preview']);
+        $robots['noindex'] = true;
+        $robots['follow'] = true;
+        return $robots;
+    }
     unset($robots['noindex'], $robots['nofollow'], $robots['none']);
     $robots['max-image-preview'] = 'large';
     return $robots;
@@ -60,6 +66,15 @@ add_action('pre_get_posts', function (WP_Query $q) {
 add_filter('wp_sitemaps_taxonomies_query_args', function ($args, $taxonomy) {
     if (in_array($taxonomy, ['xf_industry', 'xf_stage'], true)) {
         $args['hide_empty'] = true;
+    }
+    return $args;
+}, 10, 2);
+
+// Keep the noindexed /join/ page out of the sitemap.
+add_filter('wp_sitemaps_posts_query_args', function ($args, $post_type) {
+    $join = $post_type === 'page' ? get_page_by_path('join') : null;
+    if ($join) {
+        $args['post__not_in'] = array_merge((array) ($args['post__not_in'] ?? []), [$join->ID]);
     }
     return $args;
 }, 10, 2);

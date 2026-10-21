@@ -2,10 +2,8 @@
 /**
  * /join/: the Instagram link-in-bio page (owner, 2026-10-21). Every post's end slide
  * points here: the founders' WhatsApp community, the weekly 8am brief, a free launch,
- * and today's stories. Kept out of search (noindex): it is a doorway, not content.
+ * and today's stories. Kept out of search and the sitemap (includes/indexing.php): it is a doorway, not content.
  */
-add_filter('wp_robots', function ($r) { return array_merge($r, ['noindex' => true, 'follow' => true]); }, 99);
-
 get_header();
 $wa = function_exists('xf_join_url') ? xf_join_url() : '';
 $launch = function_exists('xft_page_url') ? xft_page_url('launch', 'launch') : home_url('/launch/');
