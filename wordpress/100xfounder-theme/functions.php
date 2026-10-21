@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('XFT_VERSION', '3.0.2');
+define('XFT_VERSION', '3.0.3');
 
 require_once __DIR__ . '/inc-tabs.php';
 
@@ -91,6 +91,9 @@ function xft_category($post) {
 }
 
 function xft_cat_name($post) {
+    if (get_post_type($post) === 'xf_spotlight') {
+        return 'Founder interview';
+    }
     $cat = xft_category($post);
     return $cat ? $cat->name : 'News';
 }
@@ -164,11 +167,30 @@ function xft_query_posts(array $args) {
 }
 
 /** The lead story: newest sticky post, else the newest post with an image. */
+/** Founder interviews: posts in Founder Stories plus published founder spotlights, newest first. */
+function xft_interview_posts($count = 3) {
+    $posts = [];
+    $cat = get_term_by('slug', 'founder-stories', 'category');
+    if ($cat && $cat->count > 0) {
+        $posts = get_posts(['posts_per_page' => $count, 'post_status' => 'publish', 'cat' => $cat->term_id, 'ignore_sticky_posts' => true]);
+    }
+    if (post_type_exists('xf_spotlight')) {
+        $posts = array_merge($posts, get_posts(['post_type' => 'xf_spotlight', 'post_status' => 'publish', 'posts_per_page' => $count]));
+    }
+    usort($posts, function ($a, $b) { return strcmp($b->post_date_gmt, $a->post_date_gmt); });
+    return array_slice($posts, 0, $count);
+}
+
 function xft_lead_post() {
     $sticky = array_filter((array) get_option('sticky_posts'));
     if ($sticky) {
         $p = xft_query_posts(['posts_per_page' => 1, 'post__in' => $sticky]);
         if ($p) return $p[0];
+    }
+    // A founder interview from the last 7 days leads the home page (owner, 2026-10-21).
+    $iv = xft_interview_posts(1);
+    if ($iv && strtotime($iv[0]->post_date_gmt . ' UTC') > time() - 7 * DAY_IN_SECONDS) {
+        return $iv[0];
     }
     $p = xft_query_posts(['posts_per_page' => 1, 'meta_key' => '_thumbnail_id']);
     if ($p) return $p[0];
@@ -222,13 +244,15 @@ function xft_is_current($url) {
     return $path !== '/' && strpos($here, $path) === 0;
 }
 
+/** Sections with fewer posts than this stay out of the menu and off the home page until they grow (owner, 2026-10-21). */
+const XFT_MIN_SECTION_POSTS = 3;
+
 function xft_sector_links() {
     $sectors = function_exists('xf_sector_categories') ? xf_sector_categories() : [];
     $links = [];
     foreach ($sectors as $slug => $name) {
         $term = get_term_by('slug', $slug, 'category');
-        // Empty sections stay out of the menu until they have a story (owner, 2026-10-21).
-        if ($term && $term->count > 0) {
+        if ($term && $term->count >= XFT_MIN_SECTION_POSTS) {
             $links[] = ['label' => $term->name, 'url' => get_category_link($term), 'slug' => $slug];
         }
     }
@@ -568,4 +592,24 @@ function xft_data_table(array $headers, array $rows, $label = 'Table') {
 function xft_long_date($date) {
     $ts = $date ? strtotime((string) $date) : 0;
     return $ts ? wp_date('j F Y', $ts) : '';
+}
+
+/** Home, second fold: the latest founder interviews. Empty (no section) until one is published. */
+function xft_interviews_html($exclude = []) {
+    $items = array_values(array_filter(xft_interview_posts(4), function ($p) use ($exclude) { return !in_array($p->ID, (array) $exclude, true); }));
+    if (!$items) {
+        return '';
+    }
+    $items = array_slice($items, 0, 3);
+    $cat = get_term_by('slug', 'founder-stories', 'category');
+    $all = $cat && $cat->count > 0 ? get_category_link($cat) : (function_exists('xft_page_url') ? xft_page_url('spotlights', 'spotlights') : home_url('/spotlights/'));
+    $out = '<section class="wrap" style="padding-top:88px"><div class="sh"><h2>Founder <em>interviews</em></h2><a class="k u" href="' . esc_url($all) . '">All interviews →</a></div>'
+        . '<div style="padding-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:28px 24px">';
+    foreach ($items as $p) {
+        $out .= '<a href="' . esc_url(get_permalink($p)) . '" class="rv" style="display:block">' . xft_image($p, '16x10')
+            . '<span class="tag" style="display:block;margin-top:12px">Founder interview</span>'
+            . '<span class="card-title"><span class="u">' . esc_html(get_the_title($p)) . '</span></span>'
+            . '<span class="k" style="display:block;margin-top:8px;font-size:10.5px">' . esc_html(get_the_date('j M Y', $p)) . '</span></a>';
+    }
+    return $out . '</div></section>';
 }

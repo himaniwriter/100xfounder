@@ -141,6 +141,8 @@ echo xft_photo_strip(xft_event_strip_items(), 'Upcoming startup events', 'events
 </section>
 <?php endif; ?>
 
+<?php echo xft_interviews_html($exclude); // phpcs:ignore -- escaped inside ?>
+
 <?php echo xft_ad(); // phpcs:ignore ?>
 
 <?php $rounds = function_exists('xf_recent_rounds') ? xf_recent_rounds(6) : []; if ($rounds) : ?>
@@ -198,7 +200,7 @@ $used = $exclude;
 foreach ($candidates as $slug) {
     if (count($blocks) >= 12) break;
     $term = get_term_by('slug', $slug, 'category');
-    if (!$term || !$term->count) continue;
+    if (!$term || $term->count < (defined('XFT_MIN_SECTION_POSTS') ? XFT_MIN_SECTION_POSTS : 1)) continue;
     $posts = xft_query_posts(['posts_per_page' => 5, 'cat' => $term->term_id, 'post__not_in' => $used]);
     if (count($posts) >= 1) {
         $blocks[] = [$term, $posts];

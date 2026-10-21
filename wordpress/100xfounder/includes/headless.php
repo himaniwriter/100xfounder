@@ -230,6 +230,7 @@ function xf_headless_home() {
         ];
     }
     $out['newsletter'] = xft_newsletter();
+    $out['interviews'] = function_exists('xft_interviews_html') ? xft_interviews_html($exclude) : '';
     $out['ad'] = xft_ad();
 
     $rounds = function_exists('xf_recent_rounds') ? xf_recent_rounds(6) : [];
@@ -273,7 +274,7 @@ function xf_headless_home() {
     foreach ($candidates as $slug) {
         if (count($blocks) >= 12) break;
         $term = get_term_by('slug', $slug, 'category');
-        if (!$term || !$term->count) continue;
+        if (!$term || $term->count < (defined('XFT_MIN_SECTION_POSTS') ? XFT_MIN_SECTION_POSTS : 1)) continue;
         $posts = xft_query_posts(['posts_per_page' => 5, 'cat' => $term->term_id, 'post__not_in' => $used]);
         if (count($posts) >= 1) {
             $first = array_shift($posts);

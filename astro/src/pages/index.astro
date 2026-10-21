@@ -51,6 +51,8 @@ const ig = d.instagram;
     </aside>
 </section>
 
+{d.interviews && <Fragment set:html={d.interviews} />}
+
 <Fragment set:html={d.ad} />
 
 {d.funding && (
