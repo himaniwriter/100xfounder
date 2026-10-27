@@ -25,7 +25,7 @@ if ($ranked && $tab === 'week' && !$ind) {
         foreach ($ids as $i => $id) {
             $ld['itemListElement'][] = ['@type' => 'ListItem', 'position' => $i + 1, 'url' => get_permalink($id), 'name' => get_the_title($id)];
         }
-        echo '<script type="application/ld+json">' . wp_json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
+        echo '<script type="application/ld+json">' . wp_json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) . '</script>' . "\n";
     });
 }
 
