@@ -18,25 +18,22 @@ OUT = ROOT / 'wordpress/100xfounder/assets/brand'
 CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
 CSS = '''
-@font-face{font-family:Inter;src:url(FONTS/inter-400.woff2);font-weight:400}
-@font-face{font-family:Inter;src:url(FONTS/inter-500.woff2);font-weight:500}
-@font-face{font-family:Inter;src:url(FONTS/inter-600.woff2);font-weight:600}
-@font-face{font-family:Inter;src:url(FONTS/inter-700.woff2);font-weight:700}
-@font-face{font-family:'Geist Mono';src:url(FONTS/geist-mono-500.woff2);font-weight:500}
-:root{--bg:#0b0b0c;--bg2:#121214;--ln:#232326;--ln2:#303035;--tx:#f2f2ef;--t2:#a6a6a2;--t3:#8c8c88;--ac:#b07cff;--ac2:#ff6ad5;--ac3:#6a7bff}
+@font-face{font-family:Poppins;src:url(FONTS/poppins-400-latin-ext.woff2);font-weight:400}
+@font-face{font-family:Poppins;src:url(FONTS/poppins-500-latin-ext.woff2);font-weight:500}
+:root{--bg:#0b0b0c;--bg2:#121214;--ln:#232326;--ln2:#303035;--tx:#f2f2ef;--t2:#a6a6a2;--t3:#8c8c88;--ac:#b07cff;--ac2:#7c8cff;--ac3:#6a7bff}
 *{box-sizing:border-box;margin:0}
 html,body{width:1600px;height:1000px;background:var(--bg);overflow:hidden}
-body{font-family:Inter,system-ui,sans-serif;color:var(--tx);-webkit-font-smoothing:antialiased;padding:64px;position:relative}
-body::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,#7c5cff,#b07cff,#ff6ad5,#6a7bff)}
-.k{font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
-h1{font-size:50px;line-height:1.05;letter-spacing:-.035em;font-weight:700;margin:14px 0 8px}
+body{font-family:Poppins,system-ui,sans-serif;color:var(--tx);-webkit-font-smoothing:antialiased;padding:64px;position:relative}
+body::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,#7c5cff,#b07cff,#7c8cff,#6a7bff)}
+.k{font-family:Poppins,sans-serif;font-size:18px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+h1{font-size:50px;line-height:1.05;letter-spacing:-.035em;font-weight:500;margin:14px 0 8px}
 .sub{font-size:22px;color:var(--t2);margin-bottom:26px}
 table{width:100%;border-collapse:collapse;font-size:21px}
-th{text-align:left;font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);padding:12px 14px;border-bottom:1px solid var(--ln2)}
+th{text-align:left;font-family:Poppins,sans-serif;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);padding:12px 14px;border-bottom:1px solid var(--ln2)}
 td{padding:14px;border-bottom:1px solid var(--ln);color:#d6d6d2}
 td strong{color:var(--tx)}
-.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:16px;background:linear-gradient(90deg,#7c5cff,#ff6ad5);color:#fff}
-.foot{position:absolute;left:64px;right:64px;bottom:28px;display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:15px;color:var(--t3)}
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:16px;background:linear-gradient(90deg,#7c5cff,#7c8cff);color:#fff}
+.foot{position:absolute;left:64px;right:64px;bottom:28px;display:flex;justify-content:space-between;font-family:Poppins,sans-serif;font-size:15px;color:var(--t3)}
 '''.replace('FONTS', FONTS)
 
 

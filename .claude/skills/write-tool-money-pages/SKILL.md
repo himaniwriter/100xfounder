@@ -49,7 +49,7 @@ Targets: is {tool} free, {tool} free plan/trial, {tool} coupon / coupon code / d
 
 ## Minimums (owner rules)
 - 1,200+ words (alternatives), 900+ (pricing) — well over the 500-word gate, and earning the length.
-- 2+ images: original comparison graphics (`content/render-graphics.py` style: dark theme, Inter, purple gradient) or openly licensed images. Never the tool's own screenshots or logo.
+- 2+ images: original comparison graphics (`content/render-graphics.py` style: dark theme, Poppins, violet-to-blue gradient) or openly licensed images. Never the tool's own screenshots or logo.
 - Every fact sourced, with sources listed at the end.
 
 ## Output and upload
