@@ -37,54 +37,51 @@ IMAGES = [
 ]
 
 CSS = '''
-@font-face{font-family:Inter;src:url(FONTS/inter-400.woff2);font-weight:400}
-@font-face{font-family:Inter;src:url(FONTS/inter-500.woff2);font-weight:500}
-@font-face{font-family:Inter;src:url(FONTS/inter-600.woff2);font-weight:600}
-@font-face{font-family:Inter;src:url(FONTS/inter-700.woff2);font-weight:700}
-@font-face{font-family:Geist Mono;src:url(FONTS/geist-mono-500.woff2);font-weight:500}
+@font-face{font-family:Poppins;src:url(FONTS/poppins-400-latin-ext.woff2);font-weight:400}
+@font-face{font-family:Poppins;src:url(FONTS/poppins-500-latin-ext.woff2);font-weight:500}
 *{box-sizing:border-box;margin:0}
 html,body{width:1200px;height:630px;overflow:hidden;background:#0b0b0c}
-body{font-family:Inter;color:#f2f2ef;-webkit-font-smoothing:antialiased;position:relative}
+body{font-family:Poppins;color:#f2f2ef;-webkit-font-smoothing:antialiased;position:relative}
 .bg{position:absolute;inset:0;background:
  radial-gradient(520px 420px at 92% 18%,rgba(124,92,255,.42),transparent 70%),
- radial-gradient(460px 380px at 78% 105%,rgba(255,106,213,.30),transparent 70%),
+ radial-gradient(460px 380px at 78% 105%,rgba(124,140,255,.30),transparent 70%),
  radial-gradient(600px 400px at -5% 110%,rgba(106,123,255,.18),transparent 70%)}
 .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(900px 600px at 80% 40%,#000 20%,transparent 75%)}
-.hl{position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,#7c5cff,#b07cff,#ff6ad5,#6a7bff)}
+.hl{position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,#7c5cff,#b07cff,#7c8cff,#6a7bff)}
 .wrap{position:absolute;left:72px;top:64px;bottom:60px;width:640px;display:flex;flex-direction:column}
-.k{font-family:'Geist Mono';font-size:20px;letter-spacing:.12em;text-transform:uppercase;color:#b07cff;display:flex;align-items:center;gap:12px}
-.k:before{content:"";width:28px;height:2px;background:linear-gradient(90deg,#7c5cff,#ff6ad5)}
-h1{font-size:68px;line-height:1.02;letter-spacing:-.045em;font-weight:700;margin-top:30px}
-g{background:linear-gradient(90deg,#9b7bff,#ff6ad5 60%,#8a96ff);-webkit-background-clip:text;color:transparent}
+.k{font-family:Poppins;font-size:20px;letter-spacing:.12em;text-transform:uppercase;color:#b07cff;display:flex;align-items:center;gap:12px}
+.k:before{content:"";width:28px;height:2px;background:linear-gradient(90deg,#7c5cff,#7c8cff)}
+h1{font-size:68px;line-height:1.02;letter-spacing:-.045em;font-weight:500;margin-top:30px}
+g{background:linear-gradient(90deg,#9b7bff,#7c8cff 60%,#8a96ff);-webkit-background-clip:text;color:transparent}
 p{font-size:25px;line-height:1.4;color:#a6a6a2;margin-top:24px;letter-spacing:-.01em}
-.foot{margin-top:auto;display:flex;align-items:center;gap:14px;font-weight:700;font-size:28px;letter-spacing:-.035em}
-.dom{position:absolute;right:72px;bottom:72px;font-family:'Geist Mono';font-weight:500;font-size:19px;color:#8c8c88;letter-spacing:.02em}
+.foot{margin-top:auto;display:flex;align-items:center;gap:14px;font-weight:500;font-size:28px;letter-spacing:-.035em}
+.dom{position:absolute;right:72px;bottom:72px;font-family:Poppins;font-weight:500;font-size:19px;color:#8c8c88;letter-spacing:.02em}
 .art{position:absolute;right:56px;top:96px;width:400px;height:440px;display:flex;align-items:center;justify-content:center}
-.glyph{font-size:300px;font-weight:700;letter-spacing:-.06em;line-height:1;background:linear-gradient(160deg,#c9b2ff 0%,#b07cff 35%,#ff6ad5 75%,#6a7bff);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 30px 60px rgba(176,124,255,.35));position:relative}
+.glyph{font-size:300px;font-weight:500;letter-spacing:-.06em;line-height:1;background:linear-gradient(160deg,#c9b2ff 0%,#b07cff 35%,#7c8cff 75%,#6a7bff);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 30px 60px rgba(176,124,255,.35));position:relative}
 .glyph small{font-size:140px;position:absolute;right:-70px;top:10px}
 .panel{background:rgba(18,18,20,.72);border:1px solid #303035;border-radius:18px;backdrop-filter:blur(6px)}
 .cards{position:relative;width:380px;height:400px}
 .card{position:absolute;left:calc(var(--i)*14px);top:calc(var(--i)*92px);width:340px;height:76px;border-radius:14px;background:rgba(18,18,20,.82);border:1px solid #303035;display:grid;grid-template-columns:44px 1fr auto;grid-template-rows:1fr 1fr;column-gap:14px;padding:14px 16px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
-.card b{grid-row:1/3;border-radius:10px;background:linear-gradient(135deg,#7c5cff,#ff6ad5);opacity:calc(1 - var(--i)*.18)}
+.card b{grid-row:1/3;border-radius:10px;background:linear-gradient(135deg,#7c5cff,#7c8cff);opacity:calc(1 - var(--i)*.18)}
 .card span{height:10px;border-radius:5px;background:#3a3a40;align-self:center;width:85%}
 .card span.s{width:55%;background:#2a2a2f}
 .card em{grid-row:1/3;grid-column:3;align-self:center;width:58px;height:26px;border-radius:13px;border:1px solid #b07cff;opacity:.8}
 .tiles{display:grid;grid-template-columns:repeat(5,64px);gap:14px;transform:rotate(-8deg)}
 .tiles i{height:64px;border-radius:14px;border:1px solid #303035;background:rgba(18,18,20,.7)}
-.tiles i:nth-child(7),.tiles i:nth-child(13){background:linear-gradient(135deg,#7c5cff,#ff6ad5);border:0;box-shadow:0 0 40px rgba(176,124,255,.5)}
+.tiles i:nth-child(7),.tiles i:nth-child(13){background:linear-gradient(135deg,#7c5cff,#7c8cff);border:0;box-shadow:0 0 40px rgba(176,124,255,.5)}
 .tiles i:nth-child(3),.tiles i:nth-child(19){background:linear-gradient(135deg,#6a7bff,#b07cff);border:0;opacity:.75}
 .tiles i:nth-child(10){border-color:#b07cff}
 .bars{display:flex;align-items:flex-end;gap:16px;height:340px;padding:0 10px;border-bottom:1px solid #303035}
-.bars i{width:34px;height:calc(var(--h)*1%);border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,#ff6ad5,#7c5cff 70%,rgba(124,92,255,.25))}
+.bars i{width:34px;height:calc(var(--h)*1%);border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,#7c8cff,#7c5cff 70%,rgba(124,92,255,.25))}
 .bars i:not(:last-child){opacity:.55}
-.bars i:last-child{box-shadow:0 0 50px rgba(255,106,213,.55)}
+.bars i:last-child{box-shadow:0 0 50px rgba(124,140,255,.55)}
 .cal{display:grid;grid-template-columns:repeat(7,42px);gap:10px;padding:26px;border-radius:20px;background:rgba(18,18,20,.8);border:1px solid #303035}
 .cal i{height:42px;border-radius:10px;background:#1b1b1f}
-.cal i.on{background:linear-gradient(135deg,#7c5cff,#ff6ad5);box-shadow:0 0 30px rgba(255,106,213,.45)}
-.ring{width:300px;height:300px;border-radius:50%;border:16px solid #232326;position:relative;background:conic-gradient(from 0deg,#7c5cff,#ff6ad5 62%,transparent 62%);-webkit-mask:radial-gradient(circle,transparent 118px,#000 119px)}
+.cal i.on{background:linear-gradient(135deg,#7c5cff,#7c8cff);box-shadow:0 0 30px rgba(124,140,255,.45)}
+.ring{width:300px;height:300px;border-radius:50%;border:16px solid #232326;position:relative;background:conic-gradient(from 0deg,#7c5cff,#7c8cff 62%,transparent 62%);-webkit-mask:radial-gradient(circle,transparent 118px,#000 119px)}
 .ring .hand{display:none}
 .doc{width:330px;height:400px;border-radius:20px;background:rgba(18,18,20,.82);border:1px solid #303035;padding:34px;display:flex;flex-direction:column;gap:20px;transform:rotate(4deg);box-shadow:0 30px 60px rgba(0,0,0,.4)}
-.doc b{height:120px;border-radius:12px;background:linear-gradient(135deg,#7c5cff,#ff6ad5 70%,#6a7bff)}
+.doc b{height:120px;border-radius:12px;background:linear-gradient(135deg,#7c5cff,#7c8cff 70%,#6a7bff)}
 .doc span{height:12px;border-radius:6px;background:#3a3a40}
 .doc span.s{width:60%;background:#2a2a2f}
 '''.replace('FONTS', FONTS)
@@ -108,7 +105,7 @@ for name, kicker, title, sub, art in IMAGES:
     shot(name, page(body, 1200, 630), 1200, 630)
 
 # Square logo for Organization schema: the wordmark on the brand background.
-logo = f'''<div class="bg" style="background:radial-gradient(360px 360px at 85% 0%,rgba(124,92,255,.55),transparent 70%),radial-gradient(360px 360px at 0% 100%,rgba(255,106,213,.35),transparent 70%)"></div>
+logo = f'''<div class="bg" style="background:radial-gradient(360px 360px at 85% 0%,rgba(124,92,255,.55),transparent 70%),radial-gradient(360px 360px at 0% 100%,rgba(124,140,255,.35),transparent 70%)"></div>
 <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><img src="{WORDMARK}" style="width:420px"></div>'''
 shot('logo-512', page(logo, 512, 512), 512, 512)
 # Favicon / app icon: the X from the wordmark (og/x-glyph.png, cropped from it) on a rounded dark tile.
@@ -122,7 +119,7 @@ CARDS = [('card-jobs', 'jobs'), ('card-tool-in-hand-salary-calculator', 'rupee')
          ('card-tool-notice-period-buyout-calculator', 'clock'), ('card-tools', 'tools'), ('card-news', 'doc'),
          ('card-launches', 'rocket'), ('card-events', 'cal'), ('card-default', 'grid')]
 for name, art in CARDS:
-    body = f'''<div class="bg" style="background:radial-gradient(700px 520px at 78% 12%,rgba(124,92,255,.5),transparent 70%),radial-gradient(620px 460px at 18% 105%,rgba(255,106,213,.32),transparent 70%),radial-gradient(500px 400px at 0% 0%,rgba(106,123,255,.2),transparent 70%)"></div>
+    body = f'''<div class="bg" style="background:radial-gradient(700px 520px at 78% 12%,rgba(124,92,255,.5),transparent 70%),radial-gradient(620px 460px at 18% 105%,rgba(124,140,255,.32),transparent 70%),radial-gradient(500px 400px at 0% 0%,rgba(106,123,255,.2),transparent 70%)"></div>
 <div class="grid" style="mask-image:radial-gradient(900px 700px at 50% 50%,#000 25%,transparent 80%)"></div>
 <div class="art" style="left:0;right:0;top:0;bottom:0;width:auto;height:auto;transform:scale(1.55)">{ART[art]}</div>'''
     shot(name, page(body, 1600, 1000), 1600, 1000)
