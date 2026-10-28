@@ -1,0 +1,105 @@
+{
+  "slug": "articos",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/articos",
+  "excerpt": "Articos runs synthetic user research: AI personas matched to your customers react to your messaging, landing pages and A/B variants in about 30 minutes, now also inside Claude and ChatGPT through Articos MCP. Pricing, alternatives and launch comments.",
+  "content": "<p>Articos is a synthetic user research tool. Instead of recruiting real people, you describe your audience and Articos interviews simulated personas matched to your ideal customer, one at a time, to answer a research question. It offers four kinds of study: user interviews, message testing, landing-page tests and A/B tests of copy or pages. Each produces a report, and Articos says a study takes about 30 minutes. It is aimed at SaaS teams, agencies, consultants and founders who would otherwise skip research because a traditional study costs thousands of dollars and takes weeks.</p><p>The company's central claim is accuracy: Articos says that across 46 studies its findings matched published research from the Baymard Institute and Nielsen Norman Group about 86% of the time, and it publishes its methodology. That is Articos's own benchmark; we have not checked it. Simulated buyers can tell you which way to lean, but its makers said on Product Hunt that this is not a replacement for a real test once you are live.</p><p>Articos launched on Product Hunt on 2 September 2026 and finished #3 for the day with 394 points. A second launch, Articos MCP, followed on 13 October 2026 and finished #1 with 313 points and 91 comments. It lets you run the same simulated audiences from inside Claude, ChatGPT, Cursor and other AI assistants, and is included in the paid plans. Founder and CEO Shaheer Gadit and Owais Khan are the makers listed on Product Hunt.</p><p><em>We have not tested Articos ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "User research",
+    "platform": "Web app, plus an MCP server for Claude, ChatGPT and Cursor",
+    "starts_at": "14-day free trial, then from $79/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Synthetic user research: AI personas matched to your customers test your messaging and pages",
+    "maker": {"name": "Shaheer Gadit", "url": "https://www.producthunt.com/@shaheergadit"},
+    "team": [
+      {"name": "Shaheer Gadit", "role": "Founder and CEO (Product Hunt profile)", "url": "https://www.producthunt.com/@shaheergadit"},
+      {"name": "Owais Khan", "role": "Marketing & Growth (Product Hunt profile)", "url": "https://www.producthunt.com/@owais_khan22"}
+    ],
+    "ph": {"rank": 3, "votes": 394, "comments": 53, "followers": 1979, "launched": "2026-09-02", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/d79b9e47-1437-4d08-959c-1a524f7b584d.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Articos banner 'Launch with confidence, not gut instinct' with simulated persona cards around the steps discover, validate, ideate and optimise", "credit": "Image: Articos via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/ac838340-1c64-4c19-95fa-ec935629fe16.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Articos screen 'Pick your research type' with four options: user interviews, landing page test, message testing and A/B test", "credit": "Image: Articos via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/0ab5349c-fb7e-4cae-bca5-4727e60482d1.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Articos simulated persona card for a product manager at a cybersecurity SaaS company, under the claim '86% accurate vs Baymard and Nielsen Norman'", "credit": "Image: Articos via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "need a quick read on headlines, positioning or landing pages before you spend on ads or a launch",
+        "are an agency or consultant who wants research behind client recommendations (Pro adds white-label delivery)",
+        "already write copy in Claude or ChatGPT and want feedback there through the MCP"
+      ],
+      "not_fit": [
+        "need evidence from real customers: the makers say it does not replace a live test",
+        "work in a niche where published usability research is thin, since the accuracy claim is benchmarked against Baymard and Nielsen Norman studies",
+        "want a single study without a plan: after the trial, research is sold through monthly plans and credit top-ups"
+      ]
+    },
+    "pricing": {
+      "intro": "Articos sells monthly plans in credits, with a free trial. One study uses about 400 credits. Prices are in US dollars.",
+      "url": "https://www.articos.com/pricing",
+      "plans": [
+        {"name": "Free trial", "price": "$0", "amount": 0, "currency": "USD", "detail": "14 days with 1,000 credits (about 2 studies), no credit card"},
+        {"name": "Starter", "price": "$79/month", "amount": 79, "currency": "USD", "detail": "3,000 credits a month (about 7 studies) plus 1,200 launch bonus credits, MCP access, interviews, message and A/B testing, reports"},
+        {"name": "Pro", "price": "$199/month", "amount": 199, "currency": "USD", "detail": "7,000 credits a month (about 17 studies) plus 3,000 launch bonus credits, for agencies with white-label delivery"}
+      ],
+      "notes": [
+        "Monthly credits reset each billing cycle; top-up credits carry forward.",
+        "The bonus credits are a launch offer and may end.",
+        "The home page puts the cost at from $8 per study on a monthly plan or $14.50 on an on-demand pack.",
+        "Custom plans are available on request."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Sprig", "url": "https://sprig.com/", "what": "Enterprise survey and research platform run by AI agents", "starts_at": "See its pricing page",
+         "ph_rating": 5, "ph_reviews": 8,
+         "difference": "Researches your real users through surveys and studies. Articos simulates your audience instead."},
+        {"name": "Dovetail", "url": "https://dovetail.com/", "what": "Customer insights hub, now with 'Digital Twins' built from real customer data", "starts_at": "See its pricing page",
+         "ph_rating": 4.46, "ph_reviews": 13,
+         "difference": "Its digital twins are built from your own customer data. Articos generates personas from your audience description."},
+        {"name": "User Persona Generator", "url": "https://founderpal.ai/user-persona-generator", "what": "Free tool that writes user personas", "starts_at": "Free, no email required (its site says)",
+         "ph_rating": 4.74, "ph_reviews": 19,
+         "difference": "Creates personas only. Articos interviews them and tests your pages and copy against them."}
+      ],
+      "more": "Product Hunt also lists Kraftful and TheySaid as alternatives. Articos's own site carries comparison pages against tools such as Wynter, Synthetic Users, UserTesting and Maze."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/articos/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/articos",
+      "quotes": [
+        {"author": "Etienne Lescot", "text": "So you can do A/B testing without doing A/B testing right?",
+         "reply": "Owais Khan: pretty much, without the traffic or the wait, but not a replacement for a real test once you are live."},
+        {"author": "Jitendra Bhatt", "text": "how does Articos measure it's 86 % of human accuracy?",
+         "reply": "Owais Khan: by asking the same questions as published Baymard and Nielsen Norman studies; findings matched about 86% of the time."},
+        {"author": "Chris Messina", "text": "This is the kind of MCP that doubles or triples the value and convenience of a product like this."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=articos&f=live"}
+    },
+    "faq": [
+      {"q": "What is Articos?", "a": "A synthetic user research tool that tests your messaging, positioning and landing pages against AI personas matched to your ideal customer. It launched on Product Hunt on 2 September 2026."},
+      {"q": "What is Articos MCP?", "a": "A second launch, on 13 October 2026, that lets you run Articos's simulated audiences from inside Claude, ChatGPT, Cursor and other assistants. It is included in the Starter and Pro plans."},
+      {"q": "How accurate is it?", "a": "Articos says its findings matched published Baymard Institute and Nielsen Norman Group research about 86% of the time across 46 studies. That is the company's own benchmark, and its methodology is published on its site."},
+      {"q": "How much does Articos cost?", "a": "A 14-day free trial includes 1,000 credits, about two studies. Starter is $79 a month and Pro $199 a month; one study uses about 400 credits."},
+      {"q": "Does it replace real A/B testing?", "a": "No. Its makers describe it as a check before you spend, not a replacement for a live test."},
+      {"q": "How long does a study take?", "a": "Articos says about 30 minutes from question to report."}
+    ],
+    "sources": [
+      {"label": "Articos official site", "url": "https://www.articos.com/"},
+      {"label": "Articos pricing", "url": "https://www.articos.com/pricing"},
+      {"label": "Articos methodology", "url": "https://www.articos.com/science-and-methodology"},
+      {"label": "Articos demo and contact", "url": "https://www.articos.com/demo"},
+      {"label": "Product Hunt launch (Articos)", "url": "https://www.producthunt.com/posts/articos"},
+      {"label": "Product Hunt launch (Articos MCP)", "url": "https://www.producthunt.com/posts/articos-mcp"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/articos"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/articos/alternatives"},
+      {"label": "Sprig", "url": "https://sprig.com/"},
+      {"label": "Dovetail", "url": "https://dovetail.com/"},
+      {"label": "User Persona Generator", "url": "https://founderpal.ai/user-persona-generator"}
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+ "slug": "orderful",
+ "website": "https://www.orderful.com/",
+ "excerpt": "Orderful is a cloud EDI platform that connects suppliers with retailers and logistics partners. Plans from $99 a month. Funding, who it suits and alternatives.",
+ "content": "<p>Orderful is a modern, cloud-based EDI (electronic data interchange) platform. EDI is the decades-old standard that retailers, distributors, manufacturers and logistics companies use to exchange purchase orders, invoices, shipping notices and other documents. Orderful offers an API and connectors to business systems such as ERPs, onboarding of trading partners, validation against each partner's rules, and tools such as retail-compliant UCC-128 shipping labels, with the aim of making EDI faster to set up and easier to fix when something breaks.</p><p>Founder and CEO Erik Kiser started Orderful in 2017, FreightWaves reported. In 2021 Orderful announced a $19 million Series B led by GLP Capital Partners, with Andreessen Horowitz and Initialized Capital, saying it brought total funding above $32 million and would expand its EDI network and its sales and engineering teams. In December 2024 it announced a further $15 million growth round led by NewRoad Capital Partners.</p><p>Orderful publishes its prices. Shipping labels start at $99 a month, Web EDI fulfilment for businesses new to EDI costs $189 a month per trading partner, and the integrated API plan starts at $399 a month. Larger plans are quoted. It suits brands and suppliers that must trade electronically with big retailers such as those shown on its site, and logistics companies exchanging load tenders and status messages. It competes with SPS Commerce, TrueCommerce and Cleo, which also run large EDI networks.</p><p><em>We have not used Orderful for this page. It brings together Orderful's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "EDI and B2B integration",
+  "platform": "Cloud API and web app",
+  "starts_at": "From $99/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Cloud EDI platform with an API for trading with retailers and logistics partners",
+  "maker": {
+   "name": "Orderful",
+   "url": "https://www.orderful.com/"
+  },
+  "team": [
+   {
+    "name": "Erik Kiser",
+    "role": "Founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.orderful.com/cms/og-image.png",
+    "alt": "Orderful banner: a white asterisk-style logo on a bright red and orange gradient",
+    "credit": "Image: Orderful (orderful.com)",
+    "w": 2400,
+    "h": 1260
+   },
+   {
+    "url": "https://www.orderful.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhomepage-hero-dark.21kzl7-sx0zzh.png&w=2048&q=75",
+    "alt": "Orderful diagram: connect an ERP, select trading partners from a grid of retailer logos, and get automatic EDI compliance",
+    "credit": "Image: Orderful (orderful.com)",
+    "w": 1568,
+    "h": 1220
+   }
+  ],
+  "use_cases": [
+   "Exchanging purchase orders, invoices and shipping notices with retailers",
+   "Onboarding new trading partners quickly",
+   "Printing retail-compliant UCC-128 labels",
+   "Connecting an ERP to EDI through an API",
+   "Exchanging load tenders and status updates in logistics"
+  ],
+  "audience": {
+   "fit": [
+    "consumer brands and suppliers selling to large retailers",
+    "logistics and freight companies",
+    "developers who want an API instead of a traditional EDI system"
+   ],
+   "not_fit": [
+    "businesses that never trade with partners requiring EDI",
+    "very small sellers who only need a marketplace integration"
+   ]
+  },
+  "pricing": {
+   "intro": "Orderful's pricing page lists these plans.",
+   "url": "https://www.orderful.com/pricing",
+   "plans": [
+    {
+     "name": "Labels",
+     "price": "From $99/month",
+     "amount": 99,
+     "currency": "USD",
+     "detail": "Retail-compliant UCC-128 labels via API"
+    },
+    {
+     "name": "Web EDI Fulfillment",
+     "price": "$189/month per trading partner",
+     "amount": 189,
+     "currency": "USD",
+     "detail": "Webforms for businesses starting with EDI"
+    },
+    {
+     "name": "Integrated",
+     "price": "From $399/month",
+     "amount": 399,
+     "currency": "USD",
+     "detail": "API for EDI with system-of-record connectors"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published prices",
+   "API-first approach to EDI",
+   "Backed by a16z and GLP Capital Partners"
+  ],
+  "cons": [
+   "Per-partner pricing adds up with many trading partners",
+   "EDI projects still need partner testing"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Orderful. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "SPS Commerce",
+     "url": "https://www.spscommerce.com/",
+     "what": "Retail EDI network and fulfilment",
+     "starts_at": "See its own website",
+     "difference": "Large, established retail EDI network."
+    },
+    {
+     "name": "TrueCommerce",
+     "url": "https://www.truecommerce.com/",
+     "what": "EDI and supply chain integration",
+     "starts_at": "See its own website",
+     "difference": "Broad EDI suite for suppliers of all sizes."
+    },
+    {
+     "name": "Cleo",
+     "url": "https://www.cleo.com/",
+     "what": "B2B integration and EDI platform",
+     "starts_at": "See its own website",
+     "difference": "Integration platform covering EDI, APIs and file transfer."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Orderful do?",
+    "a": "It provides a cloud EDI platform and API for exchanging business documents with retailers and logistics partners."
+   },
+   {
+    "q": "How much does Orderful cost?",
+    "a": "Labels from $99 a month, Web EDI $189 a month per trading partner, and the integrated API plan from $399 a month."
+   },
+   {
+    "q": "Who founded Orderful?",
+    "a": "Erik Kiser, in 2017, according to FreightWaves."
+   },
+   {
+    "q": "Who invested in Orderful?",
+    "a": "GLP Capital Partners led its $19 million Series B with Andreessen Horowitz and Initialized Capital; NewRoad Capital Partners led a $15 million round in 2024."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Orderful pricing",
+    "url": "https://www.orderful.com/pricing"
+   },
+   {
+    "label": "Orderful: $19M Series B",
+    "url": "https://www.orderful.com/blog/orderful-secures-19m-in-series-b-funding-to-power-global-trade"
+   },
+   {
+    "label": "FreightWaves: Orderful raises $19M",
+    "url": "https://www.freightwaves.com/news/orderful-raises-19m-to-simplify-edi-integrations-for-logistics-community"
+   },
+   {
+    "label": "Pulse 2.0: Orderful raises $15 million",
+    "url": "https://pulse2.com/orderful-15-million-raised-to-transform-b2b-integration-with-its-edi-platform/"
+   }
+  ]
+ }
+}

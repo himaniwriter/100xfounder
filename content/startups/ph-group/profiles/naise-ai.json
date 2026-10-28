@@ -1,0 +1,133 @@
+{
+  "slug": "naise-ai",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/naise-ai",
+  "excerpt": "Naise AI is a Singapore-built marketing agent that runs social media, influencer and PR work from one brief. Pricing from $59.90/month, alternatives and launch-day questions.",
+  "content": "<p>Naise AI (pronounced \"nice\") is a marketing tool that tries to do the work as well as suggest it. It has three agents: a social media agent that finds trending topics, drafts posts and images and schedules them on a content calendar; an influencer agent for finding creators, checking for fake followers and tracking campaign deliverables; and a PR agent that builds media lists and monitors news about your brand. It keeps a memory of your brand guidelines and tone so that you do not have to explain them in every prompt.</p><p>Two free tools sit at the front: a social audit that grades an Instagram profile on its last 30 posts, and a brand audit that crawls a website for brand, SEO and AI-search gaps. Nothing is published until you approve it, co-founder Roy Kek said on Product Hunt, and agencies can run several brands as separate workspaces in one account. The company says it is headquartered in Singapore.</p><p>Naise AI launched on Product Hunt on 23 September 2026 and finished #2 for the day, with 366 upvotes and 84 comments (as of 14 October 2026).</p><p><em>We have not tested Naise AI ourselves. This page brings together its official site, pricing, About and contact pages and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI marketing agent",
+    "platform": "Web app",
+    "starts_at": "3-day free trial, then from $59.90/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI marketing teammate that runs social media, influencer and PR work from one brief",
+    "maker": {"name": "Roy Kek", "url": "https://www.producthunt.com/@roy_kek"},
+    "team": [
+      {"name": "Roy Kek", "role": "Co-founder", "url": "https://www.producthunt.com/@roy_kek"},
+      {"name": "Andika Fadhilah", "role": "Marketing strategist", "url": "https://www.producthunt.com/@andika_fadhilah"}
+    ],
+    "ph": {"rank": 2, "votes": 366, "comments": 84, "followers": 739, "launched": "2026-09-23", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/e9f3a549-c88d-4ffe-9933-4275b04a1455.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Naise AI via Product Hunt",
+       "alt": "Naise AI brand audit screen: enter a website and get a brand profile, competitor analysis and social presence report"},
+      {"url": "https://ph-files.imgix.net/ae3b49a0-252f-41c5-8e21-8e7c51ea3a33.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Naise AI via Product Hunt",
+       "alt": "Naise AI social media agent dashboard with a content calendar, a recent post and brand voice settings"},
+      {"url": "https://ph-files.imgix.net/252fd9b4-c261-4275-9ee4-afacbaba11a5.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Naise AI via Product Hunt",
+       "alt": "Naise AI social audit grading content pillars and comparing post formats with competitors"},
+      {"url": "https://ph-files.imgix.net/8cd1833c-c423-4fb0-8904-ec9d44c10eef.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Naise AI via Product Hunt",
+       "alt": "Naise AI graphic contrasting a generic AI chat with Naise's persistent brand memory"}
+    ],
+    "use_cases": [
+      "Auditing an Instagram profile or a brand's website before planning content",
+      "Building a month's content calendar, captions and images from one brief",
+      "Finding influencers and tracking what they deliver",
+      "Building a media list and monitoring news coverage of your brand",
+      "Running several client brands from one agency account"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Co-founder Roy Kek pitched Naise AI at people who know their business but not what their social media should say: which content pillars, which topics, and how to turn attention into customers.",
+        "He described a loop: learn the brand, research competitors, trends and news, work out which hooks and formats perform, create scripts, captions and images, then schedule and learn from results. He said it connects directly to social accounts and uses models focused on marketing data."
+      ],
+      "attribution": "Roy Kek, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/naise-ai?comment=5886853"
+    },
+    "audience": {
+      "fit": [
+        "are a founder or small team without a marketing hire",
+        "run an agency with several client brands and want them in separate workspaces",
+        "want social, influencer and PR work in one tool instead of several"
+      ],
+      "not_fit": [
+        "need audience-overlap analysis for influencers: Roy Kek said on Product Hunt it is not available yet",
+        "want approvals in Slack or Teams: approval currently happens in the Naise dashboard, with chat integration on the roadmap",
+        "do not want to add a card for a trial: the free trial needs one and billing starts automatically"
+      ]
+    },
+    "pricing": {
+      "intro": "Every plan includes all the agents; plans differ by campaigns per month and AI usage. Prices are Naise AI's, in US dollars.",
+      "url": "https://naise.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Entry", "price": "$59.90/month ($45.90/month billed annually)", "amount": 59.9, "currency": "USD", "detail": "2 campaigns a month, standard AI usage, unlimited creator reach and outreach"},
+        {"name": "Middle", "price": "$119/month ($89.90/month billed annually)", "amount": 119, "currency": "USD", "detail": "6 campaigns a month, 3x AI usage"},
+        {"name": "Advanced", "price": "$199/month ($149.90/month billed annually)", "amount": 199, "currency": "USD", "detail": "16 campaigns a month, 8x AI usage"},
+        {"name": "Enterprise", "price": "Priced per organisation", "currency": "USD", "detail": "Higher volumes, more markets or custom terms"}
+      ],
+      "notes": [
+        "Every plan starts with a 3-day free trial. You add a card to begin, and billing starts automatically unless you cancel before it ends.",
+        "The social audit and brand audit can be run free after signing up with a verified email."
+      ]
+    },
+    "pros": [
+      "All agents are included in every plan",
+      "Keeps a persistent memory of your brand voice",
+      "Nothing is published without your approval, according to the co-founder",
+      "Multiple brands per account for agencies"
+    ],
+    "cons": [
+      "Trial needs a card and converts automatically",
+      "No influencer audience-overlap analysis yet",
+      "Approvals only inside the dashboard for now",
+      "No Product Hunt reviews yet"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["Vetting real influencers", "The performance feedback loop", "Usefulness for people creating content for several brands"],
+        "asked": [
+          "Whether there is an approval step before posting (yes, in the dashboard)",
+          "Whether agencies can manage several brands in one account (yes, as workspaces)",
+          "Whether it detects fake followers (in the pipeline, said the co-founder; the site now lists a fake follower checker)",
+          "How it works for small niches such as immigration (you can add specific competitors to benchmark against)"
+        ],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "I create content for a few brands, Naise could come in handy.", "author": "Raghav Mehra", "url": "https://www.producthunt.com/products/naise-ai?comment=5891207"}
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as Naise AI alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Publer", "url": "https://publer.com/", "what": "Create, schedule and analyse social posts on one platform", "starts_at": "See its pricing page", "ph_rating": 4.93, "ph_reviews": 55, "ph_url": "https://www.producthunt.com/products/publer",
+         "difference": "A scheduling tool you drive yourself; Naise adds research, influencer and PR agents."},
+        {"name": "STORI", "url": "https://www.producthunt.com/products/stori-ai-beta", "what": "AI that builds your inbound channels", "starts_at": "See its pricing page", "ph_rating": 4.87, "ph_reviews": 83, "ph_url": "https://www.producthunt.com/products/stori-ai-beta",
+         "difference": "Focused on inbound content; Naise also covers influencer outreach and PR."},
+        {"name": "Blaze", "url": "https://www.producthunt.com/products/blaze-5", "what": "Done-for-you AI marketing", "starts_at": "See its pricing page", "ph_rating": 4.44, "ph_reviews": 18, "ph_url": "https://www.producthunt.com/products/blaze-5",
+         "difference": "A similar all-in-one AI marketing pitch; compare channels covered and approval controls."}
+      ],
+      "more": "Product Hunt also lists Narrato and Highperformr.ai as alternatives."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/naise-ai/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/naise-ai",
+      "x": {"none": "We found no posts about Naise AI on X to link yet.", "search_url": "https://x.com/search?q=naise.ai&f=live", "profile_url": "https://twitter.com/naise_ai"}
+    },
+    "faq": [
+      {"q": "What is Naise AI?", "a": "An AI marketing tool with social media, influencer and PR agents that research, draft, schedule and report from one brief, while remembering your brand voice. It is built in Singapore."},
+      {"q": "How much does Naise AI cost?", "a": "Entry is $59.90 a month ($45.90 billed annually), Middle $119 ($89.90 annually) and Advanced $199 ($149.90 annually). Every plan has a 3-day free trial that needs a card."},
+      {"q": "Does Naise AI post without my approval?", "a": "No. Co-founder Roy Kek said on Product Hunt that nothing is published until you or your team approve it in the dashboard."},
+      {"q": "Can an agency manage several brands?", "a": "Yes. Each brand gets its own workspace within one account, according to the co-founder."},
+      {"q": "Does Naise AI work for niche industries?", "a": "The co-founder said you can add specific competitors or adjacent accounts to benchmark against when there is little general content in your niche."},
+      {"q": "What are the alternatives to Naise AI?", "a": "Product Hunt lists STORI, Blaze, Publer, Narrato and Highperformr.ai."}
+    ],
+    "sources": [
+      {"label": "Naise AI official site", "url": "https://naise.ai/"},
+      {"label": "Naise AI pricing", "url": "https://naise.ai/pricing"},
+      {"label": "Naise AI About page", "url": "https://naise.ai/about"},
+      {"label": "Naise AI contact page", "url": "https://naise.ai/contact"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/naise-ai"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/naise-ai/alternatives"}
+    ]
+  }
+}

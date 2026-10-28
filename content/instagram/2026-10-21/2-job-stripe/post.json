@@ -1,0 +1,33 @@
+{
+ "slides": [
+  {
+   "layout": "cover",
+   "logo": "stripe-company-logo.png",
+   "label": "Now hiring · Bengaluru",
+   "h1": [
+    "Stripe is hiring a ",
+    "Software Engineer",
+    ", Payin"
+   ],
+   "h1_size": 92,
+   "deck": "On-site, full-time, mid level. Posted 20 October on Stripe's own careers page.",
+   "cards": [
+    {
+     "k": "Location",
+     "v": "Bengaluru",
+     "s": "On-site"
+    },
+    {
+     "k": "Type",
+     "v": "Full-time",
+     "s": "Mid level · pay not disclosed"
+    }
+   ],
+   "cta": "How to apply, and more startup jobs:",
+   "foot": [
+    "Source: Stripe careers",
+    "Link in bio"
+   ]
+  }
+ ]
+}

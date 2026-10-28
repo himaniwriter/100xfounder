@@ -1,0 +1,124 @@
+{
+  "name": "Medulance",
+  "slug": "medulance",
+  "existing_listing_slug": null,
+  "website": "https://medulance.com",
+  "tagline": "App-based ambulance and emergency response network",
+  "industry_term": "healthcare",
+  "excerpt": "Ambulance network Medulance turned down ₹5 crore and took a ₹2 crore deal from three sharks on Shark Tank India Season 2.",
+  "content": "<p>Medulance runs an emergency response network that connects patients with ambulances through an app and helpline, working with private ambulance operators and corporate and hospital clients. It was started in 2017 by Pranav Bajaj and Ravjot Singh Arora.</p><p>In Shark Tank India Season 2, Episode 35, the founders asked for ₹2 crore for 1%. The sharks first offered ₹5 crore for 5%. The founders declined and accepted ₹2 crore for 2% from Namita Thapar, Aman Gupta and Peyush Bansal, a ₹100 crore valuation, as reported by Business Standard (ANI). It was the company's first outside funding.</p><p>In April 2024 YourStory reported a $3 million Series A led by Alkemi Growth Capital, with Aman Gupta and Namita Thapar participating. In September 2026 Inc42 reported a further ₹24 crore Series A2 round led by Auxano Capital; the company claimed a fleet of more than 15,000 ambulances in over 500 cities. Revenue for recent years has not been reported in the outlets we track.</p><p>Medulance shows founders choosing lower dilution over a bigger headline cheque.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 35,
+    "ask_amount": 20000000,
+    "ask_equity": 1,
+    "ask_valuation": 2000000000,
+    "deal": {
+      "made": true,
+      "amount": 20000000,
+      "equity": 2,
+      "implied_valuation": 1000000000,
+      "sharks": [
+        "Namita Thapar",
+        "Aman Gupta",
+        "Peyush Bansal"
+      ],
+      "terms": "Founders declined an earlier offer of ₹5 crore for 5%"
+    },
+    "founders": [
+      "Pranav Bajaj",
+      "Ravjot Singh Arora"
+    ],
+    "category": "Ambulance services",
+    "pitch_summary": "The founders asked ₹2 crore for 1% for their ambulance network. They declined ₹5 crore for 5% and accepted ₹2 crore for 2% from three sharks.",
+    "sources": [
+      {
+        "label": "Business Standard (ANI): Medulance wins Rs 2 cr deal on Shark Tank India Season 2 at valuation of Rs 100 cr (2023-02-20)",
+        "url": "https://www.business-standard.com/content/press-releases-ani/emergency-response-provider-medulance-wins-rs-2-cr-deal-on-shark-tank-india-season-2-at-valuation-of-rs-100-cr-123022000597_1.html"
+      },
+      {
+        "label": "YourStory (Hindi): Medulance gets Rs 2 crore funding on Shark Tank",
+        "url": "https://yourstory.com/hindi/emergency-response-provider-medulance-wins-rs2cr-deal-shark-tank-india-season2-valuation-r100cr-saved-10-lakh-lives"
+      },
+      {
+        "label": "Shark Tank India (official YouTube): 'Medulance' full pitch, ask of 2 crore for 1%",
+        "url": "https://www.youtube.com/watch?v=SlniuqPDFdI"
+      },
+      {
+        "label": "Sony LIV: Shark Tank India Season 2 Episode 35, Business Ideas Ka Pitara",
+        "url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/business-ideas-ka-pitara-1000209891"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Inc42: Medulance Raises ₹24 Cr To Expand Emergency Response Network (2026-09-04)",
+      "url": "https://inc42.com/buzz/medulance-raises-%E2%82%B924-cr-to-expand-emergency-response-network/"
+    },
+    "latest_funding": {
+      "round": "Series A2",
+      "amount": 240000000,
+      "date": "2026-09",
+      "source": {
+        "label": "Inc42 (2026-09-04)",
+        "url": "https://inc42.com/buzz/medulance-raises-%E2%82%B924-cr-to-expand-emergency-response-network/"
+      }
+    },
+    "notable_since_show": [
+      {
+        "date": "2024-04",
+        "event": "Raised a $3 million Series A led by Alkemi Growth Capital, with Aman Gupta and Namita Thapar among the participants.",
+        "source": {
+          "label": "YourStory: Healthcare provider Medulance secures $3M in Series A funding",
+          "url": "https://yourstory.com/2024/04/medulance-secures-3-million-series-a-funding-healthcare-ambulances"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "closed",
+    "detail": "Aman Gupta and Namita Thapar were reported as participants in Medulance's 2024 Series A, which indicates they became shareholders.",
+    "source": {
+      "label": "YourStory (2024-04)",
+      "url": "https://yourstory.com/2024/04/medulance-secures-3-million-series-a-funding-healthcare-ambulances"
+    }
+  },
+  "pitch_video": {
+    "youtube_id": "SlniuqPDFdI",
+    "channel": "Shark Tank India",
+    "title": "'Medulance' का Valuation सुनकर Sharks हुए Shock! | Shark Tank India Season 2 | Full Pitch",
+    "url": "https://www.youtube.com/watch?v=SlniuqPDFdI",
+    "upload_date": "2023-05-16"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/business-ideas-ka-pitara-1000209891",
+  "faq": [
+    {
+      "q": "Did Medulance get a deal on Shark Tank India?",
+      "a": "Yes. Namita Thapar, Aman Gupta and Peyush Bansal invested ₹2 crore for 2%."
+    },
+    {
+      "q": "Why did Medulance turn down ₹5 crore?",
+      "a": "The founders preferred less dilution and took ₹2 crore for 2% instead of ₹5 crore for 5%."
+    },
+    {
+      "q": "Has Medulance raised money since Shark Tank?",
+      "a": "Yes. A $3 million Series A in 2024 and a ₹24 crore Series A2 in 2026."
+    },
+    {
+      "q": "What is Medulance's revenue?",
+      "a": "Recent revenue has not been reported in the outlets we track."
+    }
+  ],
+  "lessons": [
+    "Bootstrapping to profitability before the show gave the founders leverage to refuse a larger offer.",
+    "When sharks follow on in later rounds, it is a strong sign the TV deal turned into a real partnership.",
+    "Fleet size claims are company figures; regulators and customers judge response times."
+  ],
+  "related_pitches": [
+    "janitri",
+    "padcare"
+  ],
+  "notes": "Fleet and city counts are company claims. Business Standard page is an ANI press release. City (Delhi) not sourced in the approved outlets fetched."
+}

@@ -1,0 +1,159 @@
+{
+ "slug": "starburst-data",
+ "website": "https://www.starburst.io/",
+ "excerpt": "Starburst sells a commercial, managed and self-managed version of the open-source Trino SQL engine for querying data where it lives. Pricing, funding and alternatives.",
+ "content": "<p>Starburst Data, which now brands itself simply as Starburst, sells a data analytics platform built on Trino, the open-source distributed SQL query engine. The idea is federation: instead of copying every dataset into one warehouse first, analysts write ordinary SQL that runs across data where it already sits, such as object storage like Amazon S3, relational databases like PostgreSQL and MySQL, and data lakes. SiliconANGLE describes the company as selling a commercial distribution of Trino. Starburst's own site now calls it an enterprise intelligence platform and adds AI features alongside querying, ingestion and governance.</p><p>Starburst offers its software two ways: managed in the cloud, or self-managed in a company's own environment. Its website shows customer logos including British Airways, Comcast, Lockheed Martin, Optum, RBC and S&amp;P Global.</p><p>On funding, Starburst announced a $250 million Series D on 9 February 2022 at a $3.35 billion valuation, led by Alkeon Capital with Altimeter and B Capital Group, and existing investors Andreessen Horowitz, Coatue, Index Ventures and Salesforce Ventures. SiliconANGLE reported that the round brought total funding to $414 million, that the company said it was profitable, and that CEO and co-founder Justin Borgman talked of a possible IPO within three years. The Boston Globe called it a Boston data firm that nearly tripled its valuation.</p><p>Pricing is published. When we checked, there was a free-forever tier with up to three clusters, and paid tiers billed per compute credit: Pro from $0.50 a credit, Enterprise from $0.75 and Mission-Critical from $1.00. A credit is a fixed unit of compute; for example, Starburst says a two-worker cluster uses 12 credits an hour on every tier. New accounts get a 30-day trial with $500 of compute.</p><p><em>This page is research, not a review. We have not tested Starburst; facts come from its pages and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Data lakehouse and federated SQL analytics",
+  "platform": "Managed cloud service or self-managed",
+  "starts_at": "Free tier; paid from $0.50 per credit",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Commercial Trino platform for SQL analytics across data where it lives",
+  "maker": {
+   "name": "Starburst Data, Inc.",
+   "url": "https://www.starburst.io/"
+  },
+  "team": [
+   {
+    "name": "Justin Borgman",
+    "role": "Co-founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.starburst.io/wp-content/uploads/2026/09/brand-starburst-feature-image.png",
+    "w": 1200,
+    "h": 628,
+    "alt": "Starburst's white radiating starburst logo mark on a purple-to-black gradient",
+    "credit": "Image: Starburst (starburst.io)"
+   },
+   {
+    "url": "https://polaris-eosin-two.vercel.app/_next/static/media/federate-sql.6dea3091.png",
+    "w": 2366,
+    "h": 1412,
+    "alt": "Starburst query editor running one SQL query that joins tables from PostgreSQL, MySQL and S3 catalogs, with a catalog tree on the left",
+    "credit": "Image: Starburst (served on starburst.io)"
+   }
+  ],
+  "use_cases": [
+   "Querying data across S3, databases and data lakes with one SQL statement",
+   "Running a managed Trino cluster without operating it yourself",
+   "Applying fine-grained access controls to shared data",
+   "Ingesting streaming data into the lake"
+  ],
+  "audience": {
+   "fit": [
+    "data teams with data spread across many systems and clouds",
+    "companies that already use open-source Trino and want support or a managed service",
+    "enterprises that need governance and access control on shared data"
+   ],
+   "not_fit": [
+    "small teams whose data already lives in one warehouse",
+    "people who want a spreadsheet-style BI tool rather than a query engine"
+   ]
+  },
+  "pricing": {
+   "intro": "From Starburst's pricing page, checked 15 October 2026. Paid tiers are billed per compute credit; credit consumption is the same on every tier.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "detail": "Free forever; up to 3 clusters"
+    },
+    {
+     "name": "Pro",
+     "price": "From $0.50 per credit",
+     "detail": "Flexible execution modes, streaming ingest"
+    },
+    {
+     "name": "Enterprise",
+     "price": "From $0.75 per credit",
+     "detail": "Advanced autoscaling, fine-grained access control, PrivateLink"
+    },
+    {
+     "name": "Mission-Critical",
+     "price": "From $1.00 per credit",
+     "detail": "Top support and uptime; contact sales"
+    }
+   ],
+   "notes": [
+    "30-day trial with $500 of compute. Annual commitments may get discounts. AI (AIDA) token usage is billed separately on higher tiers."
+   ],
+   "url": "https://www.starburst.io/pricing/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Built on widely used open-source Trino",
+   "Free tier and published per-credit prices",
+   "Managed or self-managed deployment"
+  ],
+  "cons": [
+   "Credit-based billing needs monitoring to predict costs",
+   "Federated queries can be slower than data already loaded into a tuned warehouse"
+  ],
+  "alternatives": {
+   "intro": "Other query engines and lakehouse platforms.",
+   "items": [
+    {
+     "name": "Trino (open source)",
+     "url": "https://trino.io/",
+     "what": "The open-source distributed SQL engine Starburst builds on",
+     "difference": "Free, but you run and support it yourself."
+    },
+    {
+     "name": "Databricks",
+     "url": "https://www.databricks.com/",
+     "what": "Data and AI lakehouse platform",
+     "difference": "Spark-based platform with notebooks and ML tooling."
+    },
+    {
+     "name": "Dremio",
+     "url": "https://www.dremio.com/",
+     "what": "Lakehouse query engine for Apache Iceberg",
+     "difference": "Also federates queries, with its own engine."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Starburst the same as Trino?",
+    "a": "No. Trino is the open-source query engine; Starburst sells a commercial platform built on it, as a managed service or self-managed software."
+   },
+   {
+    "q": "Does Starburst have a free plan?",
+    "a": "Yes. The free tier allows up to three clusters, and new accounts get a 30-day trial with $500 of compute."
+   },
+   {
+    "q": "How much is Starburst valued at?",
+    "a": "Its February 2022 Series D of $250 million valued it at $3.35 billion."
+   },
+   {
+    "q": "Who runs Starburst?",
+    "a": "Justin Borgman, co-founder and CEO."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Starburst: pricing",
+    "url": "https://www.starburst.io/pricing/"
+   },
+   {
+    "label": "Starburst: homepage",
+    "url": "https://www.starburst.io/"
+   },
+   {
+    "label": "Starburst: announces $250M Series D",
+    "url": "https://www.starburst.io/blog/starburst-announces-250m-series-d/"
+   },
+   {
+    "label": "SiliconANGLE: Starburst's $250M round boosts valuation to $3.35B",
+    "url": "https://siliconangle.com/2022/02/09/starburst-250m-funding-round-boosts-valuation-3-35b/"
+   },
+   {
+    "label": "Boston Globe: Boston data firm nearly triples valuation",
+    "url": "https://www.bostonglobe.com/2022/02/09/business/boston-data-firm-nearly-triples-valuation-after-raising-250-million"
+   }
+  ]
+ }
+}

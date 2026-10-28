@@ -1,0 +1,144 @@
+{
+  "slug": "pazi-2",
+  "ph_url": "https://www.producthunt.com/posts/pazi-2",
+  "existing_listing_slug": null,
+  "website": "https://pazi.ai",
+  "excerpt": "Pazi builds a team of AI agents around a business idea and keeps it moving: website, outreach, content and ads. Pricing, alternatives and launch-day feedback.",
+  "content": "<p>Pazi is an AI service for people with a business idea they keep coming back to: a book, a shop, an app or a course. You describe the idea and Pazi sets up a team of AI agents around it, led by a \"COO\" agent, with specialists for marketing, sales, engineering and product. The agents then work on the next steps, such as a website, first outreach, content and a social calendar, and report progress on a dashboard Pazi calls Business Pulse. Its makers describe it as \"vibe coding for business operations\".</p><p>Instead of buying credits, you choose how much \"funding\" goes into your business balance each month, and the agents spend it on tasks, chat, images, web search, posts and ads. Pazi hosts the websites it builds for free. According to its terms and privacy policy, Pazi is operated by Pythagora Technologies Incorporated, the company behind the open-source coding agent GPT Pilot.</p><p>The co-founders on Product Hunt are Zvonimir Sabljic and Leon Ostrež. Pazi launched there on 14 July 2026, was hunted by Garry Tan and finished #2 for the day and #2 for the month of July, with 899 upvotes and 132 comments (as of 14 October 2026).</p><p><em>We have not tested Pazi ourselves. This page brings together its official site, pricing page, terms and privacy policy, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI agents for small business",
+    "platform": "Web app",
+    "starts_at": "Free plan; paid plans add $25 to $500 of monthly funding",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Builds a team of AI agents around your business idea and keeps it moving",
+    "maker": {"name": "Zvonimir Sabljic", "url": "https://www.producthunt.com/@zvonimir_sabljic1"},
+    "team": [
+      {"name": "Zvonimir Sabljic", "role": "Co-founder; creator of the open-source tool Pythagora", "url": "https://www.producthunt.com/@zvonimir_sabljic1"},
+      {"name": "Leon Ostrež", "role": "Co-founder", "url": "https://www.producthunt.com/@leon_ostrez"},
+      {"name": "Liliia Shamrai", "role": "Design", "url": "https://www.producthunt.com/@liliiashamrai"},
+      {"name": "Kevin Kamau", "role": "Growth operations", "url": "https://www.producthunt.com/@kevin_kamau"}
+    ],
+    "ph": {"rank": 2, "votes": 899, "comments": 132, "followers": 1860, "launched": "2026-07-14", "as_of": "2026-10-14"},
+    "video_url": "https://www.youtube.com/watch?v=MtS5liK4KYM",
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/19c2f196-01e1-4e04-83c7-4aaeb4544db5.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040, "credit": "Image: Pazi on Product Hunt",
+       "alt": "Pazi graphic 'Your AI gets to work' with an org chart: you as founder, a Pazi COO agent, and marketing, engineering, sales and product agents"},
+      {"url": "https://ph-files.imgix.net/306bce7a-d6a4-4016-ad89-6c14966b525b.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040, "credit": "Image: Pazi on Product Hunt",
+       "alt": "Pazi graphic 'Your Business Keeps Moving Forward' showing a dashboard with a COO update, a revenue goal bar and a list of ongoing work"},
+      {"url": "https://ph-files.imgix.net/2fce1365-951a-4175-80be-ad002e4d0a1d.png?auto=format&fit=max&w=1400", "w": 5080, "h": 3040, "credit": "Image: Pazi on Product Hunt",
+       "alt": "Pazi graphic 'Turn an idea into a business' with a prompt box reading 'I want to launch a startup app and get my first 100 users' and example ideas"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Zvonimir Sabljic says that after Pythagora, his earlier coding agent, reached about 100,000 users, the team noticed people got stuck once their app was built. What they wanted was a business, and the hard part was what came after: getting in front of people, seeing what works and trying again.",
+        "He describes Pazi as the tool for that loop. You bring an idea, it builds a team of agents around it and starts moving without waiting for instructions, trying things and adjusting. He gave the example of a user selling a prompt pack on Gumroad, for whom Pazi set up a growth strategist, a content writer and a researcher."
+      ],
+      "attribution": "Zvonimir Sabljic, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/pazi?comment=5484007"
+    },
+    "use_cases": [
+      "Turning a side-project idea (a book, a shop, a course) into a first website and launch plan",
+      "Getting a first round of outreach and content out after an app is built",
+      "Running a social media content calendar with automated posts",
+      "Running several small businesses from one account, each with its own agents and dashboard"
+    ],
+    "audience": {
+      "fit": [
+        "have an idea but no team, and want AI agents to propose and carry out the next steps",
+        "built an app and are stuck on finding the first users",
+        "are happy to approve agent actions rather than do every task yourself"
+      ],
+      "not_fit": [
+        "want a fixed price per task: the pricing FAQ says there is no way yet to set a spending limit for a single task",
+        "work in a regulated field and want fully automatic publishing: the makers say Pazi asks for approval until you tell it a kind of action can go ahead on its own",
+        "only need a website builder or a coding agent"
+      ]
+    },
+    "pricing": {
+      "intro": "Pazi has one plan with a choice of how much funding goes into your business balance each month. Prices are in US dollars.",
+      "url": "https://pazi.ai/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "The plan your account returns to after cancelling; it keeps any remaining balance"},
+        {"name": "$25 funding", "price": "$25/month", "amount": 25, "currency": "USD", "detail": "$25 added to your business balance each month; top-ups need a $50 plan or higher"},
+        {"name": "$50 funding (recommended)", "price": "$50/month", "amount": 50, "currency": "USD", "detail": "$50 a month of balance, multiple businesses, unlimited agents, up to 50 business emails a month, team invites, roadmap, automated social posts, top-ups"},
+        {"name": "$100 funding", "price": "$100/month", "amount": 100, "currency": "USD", "detail": "$100 added to your business balance each month"},
+        {"name": "$200 funding", "price": "$200/month", "amount": 200, "currency": "USD", "detail": "$200 added to your business balance each month"},
+        {"name": "$500 funding", "price": "$500/month", "amount": 500, "currency": "USD", "detail": "$500 added to your business balance each month"}
+      ],
+      "notes": [
+        "Paying yearly saves 20%, according to the pricing page.",
+        "Unused balance rolls over. Funding is shared across all your businesses and can be spent on chat, tasks, content and ads; new accounts also get a one-time ad credit.",
+        "Websites Pazi builds are hosted free; balance is used only when Pazi does work.",
+        "Top-ups are one-off purchases. Checkout runs through Stripe and accepts cards, Link, Apple Pay, Google Pay and some local methods."
+      ]
+    },
+    "alternatives": {
+      "intro": "Tools that also sell a team of AI \"employees\" for small businesses. Prices are from each company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "Sintra AI", "url": "https://sintra.ai/", "what": "A set of 12 AI helpers for social media, SEO, support, sales and more", "starts_at": "From $15.60/month on a 12-month plan (sale price)",
+         "difference": "Fixed role-based helpers with 250 monthly credits, rather than a team built around one business idea and funded by a spending balance."},
+        {"name": "Marblism", "url": "https://www.marblism.com/", "what": "AI employees for email, social media, lead generation, SEO, calls and websites", "starts_at": "$24/month billed yearly, $44 monthly",
+         "difference": "One flat price for a fixed set of named assistants; Pazi's cost depends on how much funding you give your agents."},
+        {"name": "Lindy", "url": "https://www.lindy.ai/", "what": "An AI assistant that automates work across email, Slack and business tools", "starts_at": "Free $50 trial credit; Team from $49.99/month",
+         "difference": "Aimed at teams automating existing workflows, not at starting a new business from an idea."}
+      ]
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/pazi/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["The focus on what happens after a product is built: finding customers, not writing code", "Separate businesses each with their own agents and dashboard"],
+        "asked": ["Whether the agents flag low confidence before acting (partly: it flags campaigns that aren't working; makers say confidence grades are not consistent yet)", "Whether it pivots strategy on its own (no, it asks first)", "How it handles compliance in regulated niches (it asks for approval until you allow an action to run on its own)"],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "I wonder what happens when the strategy isn't working. Does the team completely pivot on its own or ask first?", "author": "Nuseir Yassin", "url": "https://www.producthunt.com/products/pazi?comment=5580223"},
+        {"text": "Making the thing is often the easy part, getting people to actually care is where it gets messy.", "author": "Cathy", "url": "https://www.producthunt.com/products/pazi?comment=5580657"}
+      ]
+    },
+    "pros": [
+      "Free plan, and websites it builds are hosted at no cost",
+      "Unused monthly balance rolls over",
+      "Asks before changing strategy or acting on its own",
+      "Several businesses can share one account and balance"
+    ],
+    "cons": [
+      "No per-task spending limit yet, according to its own FAQ",
+      "Top-ups are only available on plans of $50 a month or more",
+      "The makers say confidence grading of results is still incomplete"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/pazi",
+      "quotes": [
+        {"author": "Nuseir Yassin", "url": "https://www.producthunt.com/products/pazi?comment=5580223", "text": "Does the team completely pivot on its own or ask first?", "reply": "Asks first. When changing the strategy completely, it consults with the user first."},
+        {"author": "Lakshya Singh", "url": "https://www.producthunt.com/products/pazi?comment=5581183", "text": "Asked whether Pazi could handle creator outreach, sequences and newsletters for two businesses.", "reply": "Leon Ostrež replied that each company can be set up as a separate business with its own agents, context and dashboard."}
+      ],
+      "x": {
+        "profile_url": "https://x.com/pazidotai",
+        "search_url": "https://x.com/search?q=pazi.ai&f=live",
+        "none": "Apart from Pazi's own account, we found no posts on X that were clearly about the product."
+      }
+    },
+    "faq": [
+      {"q": "What is Pazi?", "a": "An AI service that builds a team of agents around your business idea and works on the next steps, such as a website, outreach, content and ads. It is operated by Pythagora Technologies Incorporated and launched on Product Hunt on 14 July 2026."},
+      {"q": "How much does Pazi cost?", "a": "There is a Free plan. Paid plans are priced by how much funding you add each month: $25, $50 (recommended), $100, $200 or $500, with 20% off when paying yearly. Unused balance rolls over."},
+      {"q": "Does Pazi act without asking me?", "a": "The makers say Pazi asks for approval until you tell it a type of action can go ahead on its own, and it consults you before a complete change of strategy."},
+      {"q": "Can I run more than one business in Pazi?", "a": "Yes. Each business gets its own agents, context and dashboard, and funding is shared across them."},
+      {"q": "Does Pazi train AI models on my data?", "a": "Its privacy policy says it does not use business data, files, conversations or agent outputs to train or fine-tune its own general-purpose AI models."},
+      {"q": "What are the alternatives to Pazi?", "a": "Sintra AI, Marblism and Lindy also sell AI assistants for business work. See the comparison above."}
+    ],
+    "sources": [
+      {"label": "Pazi official site", "url": "https://pazi.ai/"},
+      {"label": "Pazi pricing", "url": "https://pazi.ai/pricing"},
+      {"label": "Pazi privacy policy", "url": "https://pazi.ai/privacy"},
+      {"label": "Pazi terms of service", "url": "https://pazi.ai/terms"},
+      {"label": "Pazi contact page", "url": "https://pazi.ai/contact"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/pazi?launch=pazi-2"},
+      {"label": "Sintra AI pricing", "url": "https://sintra.ai/pricing"},
+      {"label": "Marblism pricing", "url": "https://www.marblism.com/pricing"},
+      {"label": "Lindy pricing", "url": "https://www.lindy.ai/pricing"},
+      {"label": "Pazi on X", "url": "https://x.com/pazidotai"}
+    ]
+  }
+}

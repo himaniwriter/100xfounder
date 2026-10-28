@@ -1,0 +1,275 @@
+{
+ "slug": "hexis-cloud",
+ "excerpt": "Hexis by Bevel is an open-source \"company brain\" that gives a team and its AI agents shared, owner-approved knowledge, skills and tools through one MCP connection. Hexis Cloud is the hosted version. Pricing and alternatives.",
+ "content": "<p>Hexis is a shared knowledge layer for a team and all of its AI agents. It holds three things. Context is company knowledge where every page has an owner and changes go live only when the owner approves, with every version kept. Skills are reusable instructions for agents that anyone can suggest changes to in the browser; it starts with 58 ready-made ones. Tools are hundreds of services, such as HubSpot, Notion, Jira, Linear, Google Drive, GitHub, Gmail and Zendesk, reached through a single MCP connection, with keys kept on the server so agents never see a credential.</p><p>Access rules can be set per folder, file, skill and tool for both people and their agents, and audit logs show which agent used what. Everything is stored as commits in a git repository you control. Hexis works with Claude, ChatGPT, Cursor, Claude Code, Codex and any agent that speaks MCP. The software is open source under the Apache-2.0 licence and can be self-hosted with Docker.</p><p>Hexis Cloud, launched on Product Hunt on 12 October 2026, is the hosted version, made because many teams, especially non-technical ones, needed help running it themselves. It finished #7 for the day with 124 upvotes. Hexis is made by Bevel (Bevelites GmbH, Munich), the team behind the UTCP tool-calling protocol; Product Hunt lists co-founder Juan Viera Garcia and Ali Raza as its makers.</p><p><em>We have not tested Hexis ourselves. This page brings together its official site, its GitHub README, its Product Hunt page and the official pricing pages of comparable products, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agent infrastructure",
+  "platform": "Hosted web app or self-hosted (Docker)",
+  "os": "Browser; self-hosting needs Docker Compose and a git repository",
+  "starts_at": "Free for up to 3 people; Team €10 per person a month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Open-source company brain that gives a team's AI agents shared knowledge, skills and tools through one MCP",
+  "maker": {
+   "name": "Bevel",
+   "url": "https://www.producthunt.com/products/bevel-software"
+  },
+  "team": [
+   {
+    "name": "Juan Viera Garcia",
+    "role": "Co-founder",
+    "url": "https://www.producthunt.com/@jvieragarcia"
+   },
+   {
+    "name": "Ali Raza",
+    "role": "Building Bevel and UTCP",
+    "url": "https://www.producthunt.com/@aliraza36580"
+   }
+  ],
+  "ph": {
+   "rank": 7,
+   "votes": 124,
+   "comments": 13,
+   "followers": 500,
+   "launched": "2026-10-12",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://youtu.be/RjOWRz4E0ZU",
+  "video_title": "Hexis demo",
+  "use_cases": [
+   "Giving every AI agent on a team the same approved company facts",
+   "Letting non-technical colleagues improve shared agent skills, with an owner approving changes",
+   "Connecting agents to many tools through one MCP endpoint without handing out API keys",
+   "Restricting which people and agents can see a folder, file, skill or tool",
+   "Keeping an audit trail of which agent used which tool"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Juan Viera Garcia says the team had a great time building and open-sourcing Hexis, but after the first launch they noticed that many people needed help hosting it. Because Hexis is especially useful for non-technical teams, they decided to offer a hosted version, Hexis Cloud.",
+    "In the comments, Ali Raza, who builds Bevel and UTCP, explained why a central brain rather than a code repository: many teams began by keeping rules and skills in git, but non-technical colleagues increasingly work on skills, tools like GitHub aren't intuitive for them, and repositories can't restrict access file by file. In Hexis, skills also carry explicit versions."
+   ],
+   "attribution": "Juan Viera Garcia and Ali Raza, Bevel, on Product Hunt",
+   "url": "https://www.producthunt.com/products/bevel-software?comment=5941256"
+  },
+  "audience": {
+   "fit": [
+    "run several AI agents across a team and want them working from the same approved context",
+    "need access control, audit logs and data you own in git",
+    "want open source you can self-host, with a hosted option"
+   ],
+   "not_fit": [
+    "are a single user who just wants chat memory",
+    "don't use MCP-capable agents",
+    "want to self-host but can't run Docker and manage a git repository"
+   ]
+  },
+  "pricing": {
+   "intro": "Hexis Cloud is priced per person in euros, excluding VAT. The open-source version is free to self-host.",
+   "url": "https://www.bevel.software/hexis",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "€0",
+     "amount": 0,
+     "currency": "EUR",
+     "detail": "Up to 3 people; context, skills, tools and access rules; hosted for you"
+    },
+    {
+     "name": "Team",
+     "price": "€10 per person a month (excl. VAT)",
+     "amount": 10,
+     "currency": "EUR",
+     "detail": "Everything in Free; add or remove seats any time and pay only for seats used"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "currency": "EUR",
+     "detail": "Uptime and support SLAs, help with security and compliance reviews, rollout support"
+    },
+    {
+     "name": "Self-hosted",
+     "price": "Free (Apache-2.0)",
+     "amount": 0,
+     "currency": "EUR",
+     "detail": "Run it yourself with Docker Compose and your own git repository"
+    }
+   ],
+   "notes": [
+    "Trial, refund and annual-billing terms are not stated on the product page.",
+    "The page does not list security certifications such as SOC 2 or ISO 27001."
+   ]
+  },
+  "alternatives": {
+   "intro": "Composio is on Product Hunt's alternatives list; Mem0 and Glean cover other parts of the same need. Prices come from each product's own pricing page, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Composio",
+     "url": "https://composio.dev/",
+     "what": "Connects AI agents to 1,500+ third-party tools, handling authentication and triggers",
+     "starts_at": "Hobby free (100,000 tool calls a month); Pro $29/month",
+     "ph_rating": 5.0,
+     "ph_reviews": 10,
+     "difference": "Covers the tools layer only, without an owner-approved company knowledge base or shared skills."
+    },
+    {
+     "name": "Mem0",
+     "url": "https://mem0.ai/",
+     "what": "Memory layer for AI agents and apps that stores and retrieves information across conversations",
+     "starts_at": "Hobby free; Starter $19/month",
+     "difference": "Memory per user or app through an API, rather than governed team knowledge plus skills and tool access."
+    },
+    {
+     "name": "Glean",
+     "url": "https://www.glean.com/",
+     "what": "Enterprise AI platform for search, answers and agents across company tools",
+     "starts_at": "Pricing not published (demo on request)",
+     "difference": "Closed, sold through enterprise sales. Hexis is open source, self-hostable and free for up to 3 people."
+    }
+   ],
+   "more": "Product Hunt also lists Lyzr, Switch, GraphBit and Opengeni."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/bevel-software/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "A hosted option, since hosting was the blocker after the first launch",
+     "Making it easier for the people who write a team's skills to take part"
+    ],
+    "asked": [
+     "Which agents can use it (answer: any agent that speaks MCP or UTCP)",
+     "How versions work when skills live centrally instead of in a repository (answer: skills have explicit versions)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "Hosting was clearly the blocker, and it's nice to see it fixed.",
+     "author": "Mishaal Rashid",
+     "url": "https://www.producthunt.com/products/bevel-software?comment=5942332"
+    },
+    {
+     "text": "A hosted option should make it easier for the people writing the team's skills to get involved.",
+     "author": "Oleksii Sekundant",
+     "url": "https://www.producthunt.com/products/bevel-software?comment=5941497"
+    },
+    {
+     "text": "Agents and clients used by Hexis at the moment: Claude, ChatGPT, Cursor, or custom agents? Anyone who can speak MCP?",
+     "author": "Muhammad Ahmed",
+     "url": "https://www.producthunt.com/products/bevel-software?comment=5942097"
+    }
+   ]
+  },
+  "pros": [
+   "Open source (Apache-2.0), with free self-hosting",
+   "Free hosted plan for up to 3 people",
+   "Owner approval and version history for knowledge and skills",
+   "One MCP endpoint for many tools; credentials stay on the server",
+   "Access rules down to a single file, plus audit logs",
+   "Data stored as git commits in a repository you control"
+  ],
+  "cons": [
+   "Needs MCP-capable agents to be useful",
+   "Self-hosting requires Docker and git administration",
+   "No security certifications listed on the product page",
+   "Priced in euros per person, which grows with team size"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/bevel-software?launch=hexis-cloud",
+   "x": {
+    "none": "We found no independent posts about Hexis Cloud on X to link yet.",
+    "search_url": "https://x.com/search?q=hexis%20bevel&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Hexis free?",
+    "a": "The hosted version is free for up to 3 people, and the open-source version is free to self-host under Apache-2.0. The Team plan is €10 per person a month, excluding VAT."
+   },
+   {
+    "q": "Which AI agents work with Hexis?",
+    "a": "Claude, ChatGPT, Cursor, Claude Code, Codex and any other agent that speaks MCP; a reply in the Product Hunt discussion added that agents using UTCP work too."
+   },
+   {
+    "q": "Do agents see my API keys?",
+    "a": "No, according to Bevel. Keys stay on the Hexis server and agents reach tools through Hexis's MCP endpoint."
+   },
+   {
+    "q": "Why not just keep skills in a git repository?",
+    "a": "Bevel's answer on Product Hunt: non-technical colleagues increasingly work on skills and find tools like GitHub hard to use, and repositories can't restrict access file by file. Hexis still stores everything as git commits in a repository you control."
+   },
+   {
+    "q": "Who makes Hexis?",
+    "a": "Bevel (Bevelites GmbH, Munich), the team behind the UTCP tool-calling protocol."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Hexis by Bevel official page and pricing",
+    "url": "https://www.bevel.software/hexis"
+   },
+   {
+    "label": "Hexis on GitHub (README)",
+    "url": "https://github.com/Bevel-Software/Hexis"
+   },
+   {
+    "label": "Hexis demo video",
+    "url": "https://youtu.be/RjOWRz4E0ZU"
+   },
+   {
+    "label": "Product Hunt launch and discussion",
+    "url": "https://www.producthunt.com/products/bevel-software?launch=hexis-cloud"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/bevel-software/alternatives"
+   },
+   {
+    "label": "Composio pricing",
+    "url": "https://composio.dev/pricing"
+   },
+   {
+    "label": "Mem0 pricing",
+    "url": "https://mem0.ai/pricing"
+   },
+   {
+    "label": "Glean pricing",
+    "url": "https://www.glean.com/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/644fa568-f125-4c57-a28d-2cf79c783eeb.png?auto=format&fit=max&w=1400",
+    "alt": "Hexis graphic 'One company brain for all your AI agents' above the Hexis workspace"
+   },
+   {
+    "url": "https://ph-files.imgix.net/ea8229cd-ef5d-45c1-95ee-f24cbaa75d4c.png?auto=format&fit=max&w=1400",
+    "alt": "Hexis graphic 'Do your AI agents know how your company works?' beside an agent answering from a shared company page"
+   },
+   {
+    "url": "https://ph-files.imgix.net/9945b229-ff3f-4824-86e5-50c8839dd0bd.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Hexis setup step 4, 'Connect your agent (any agent)', over the Hexis knowledge view"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/644fa568-f125-4c57-a28d-2cf79c783eeb.png?auto=format&fit=max&w=1400",
+    "alt": "Hexis graphic 'One company brain for all your AI agents' above the Hexis workspace"
+   },
+   {
+    "url": "https://ph-files.imgix.net/ea8229cd-ef5d-45c1-95ee-f24cbaa75d4c.png?auto=format&fit=max&w=1400",
+    "alt": "Hexis graphic 'Do your AI agents know how your company works?' beside an agent answering from a shared company page"
+   },
+   {
+    "url": "https://ph-files.imgix.net/9945b229-ff3f-4824-86e5-50c8839dd0bd.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Hexis setup step 4, 'Connect your agent (any agent)', over the Hexis knowledge view"
+   }
+  ]
+ }
+}

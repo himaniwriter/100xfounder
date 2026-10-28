@@ -1,0 +1,67 @@
+{
+ "slides": [
+  {
+   "layout": "cover",
+   "label": "Founder story · Nykaa",
+   "big": "49",
+   "big_label": "Her age when she started Nykaa in 2012",
+   "h1": ["From banker to ", "billionaire", " founder"],
+   "h1_size": 92,
+   "deck": "Falguni Nayar left investment banking to sell beauty online. In *2021* Nykaa went public.",
+   "foot": ["100xfounder.com", "Swipe →"]
+  },
+  {
+   "layout": "bg",
+   "img": "kotak.jpg",
+   "credit": "Photo: Ask27 / Wikimedia Commons, CC BY-SA 4.0",
+   "pos": "50% 30%",
+   "shade": 0.84,
+   "label": "Before Nykaa",
+   "h1": ["18 years at ", "Kotak", ""],
+   "h1_size": 100,
+   "deck": "She ran Kotak Mahindra's investment bank as managing director and took companies like *DLF*, *Tech Mahindra* and *IDFC* public.",
+   "foot": ["Source: Fortune, Feb 2022", "→"]
+  },
+  {
+   "layout": "bg",
+   "img": "makeup.jpg",
+   "credit": "Photo: Jennie Robinson Faber / Wikimedia Commons, CC BY 2.0",
+   "pos": "30% 50%",
+   "shade": 0.84,
+   "label": "The start, 2012",
+   "h1": ["She bet on ", "beauty", ""],
+   "h1_size": 100,
+   "deck": "People told her to sell electronics or fashion online. India had few department stores, so Nykaa served the whole country from *one or two warehouses*.",
+   "cards": [
+    {"k": "Founded", "v": "2012", "s": "Beauty e-commerce"},
+    {"k": "Raised before IPO", "v": "$77M", "s": "2012 to 2021"}
+   ],
+   "foot": ["Source: Fortune, Feb 2022", "→"]
+  },
+  {
+   "layout": "bg",
+   "img": "nse.jpg",
+   "credit": "Photo: Ganesh Dhamodkar / Wikimedia Commons, CC BY-SA 4.0",
+   "pos": "50% 40%",
+   "shade": 0.84,
+   "big": "79%",
+   "big_label": "Listing-day premium, 10 Nov 2021",
+   "h1": ["Nykaa ", "goes public", ""],
+   "h1_size": 88,
+   "deck": "Shares opened at *₹2,018* on the NSE against a ₹1,125 issue price. The IPO was subscribed more than *82 times*.",
+   "foot": ["Source: Business Today", "→"]
+  },
+  {
+   "layout": "bg",
+   "img": "mumbai.jpg",
+   "credit": "Photo: Cididity Hat / Wikimedia Commons, CC BY-SA 3.0",
+   "pos": "45% 50%",
+   "shade": 0.8,
+   "label": "Falguni Nayar to Fortune, Feb 2022",
+   "h1": ["Give yourself a ", "chance", ""],
+   "h1_size": 96,
+   "deck": "“When we started, I knew some aspects of the business, but I didn’t know beauty, I didn’t know retail. And I gave myself a chance.”",
+   "foot": ["Source: Fortune", "Link in bio"]
+  }
+ ]
+}

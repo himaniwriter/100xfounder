@@ -1,0 +1,72 @@
+{
+ "slug": "scratchpad",
+ "website": "https://www.scratchpad.com/",
+ "excerpt": "Scratchpad is a faster interface to Salesforce for sales teams: pipeline sheets, bulk updates, deal changes and notes that save to Salesforce. $16–$20 per user a month.",
+ "content": "<p>Scratchpad is a San Francisco software company that builds a workspace on top of Salesforce for sales teams. Instead of clicking through Salesforce pages, reps and managers work in Scratchpad's own views, and every change writes straight back to Salesforce, which stays the system of record. Its website lists spreadsheet-style and Kanban views of any Salesforce object, a view of what changed on each deal, bulk updates to fix missing next steps or stale close dates, free-form sales notes that save to the right opportunity, and a heads-up display and Chrome extension reachable with a keyboard shortcut from any tab. It connects through the Salesforce API and inherits each user's Salesforce permissions, and says it is SOC 2 Type 2 compliant.</p><p>Pouyan Salehi is co-founder and CEO. VentureBeat reported that he co-founded the company in 2019 with Cyrus Karbassiyoon; the two had previously co-founded the outbound sales startup PersistIQ.</p><h2>Funding</h2><p>Crunchbase News reported Scratchpad's $13 million Series A, led by Craft Ventures. In January 2022 Scratchpad announced a $33 million Series B, again led by Craft Ventures with Accel participating, bringing total funding to $49 million. At the time it said it had tens of thousands of users at thousands of companies, naming customers such as Algolia, Ironclad, Quora, Twilio, Udemy and Vanta.</p><h2>Pricing</h2><p>Scratchpad has one plan with every feature: $20 per user per month billed monthly, or $16 per user per month billed annually. New teams get a 30-day free trial with no feature limits.</p><h2>Who it suits</h2><p>It suits account executives, sales managers and RevOps teams who live in Salesforce and want faster pipeline updates and cleaner data. Teams on HubSpot or another CRM cannot use it, since it works only with Salesforce.</p><p><em>We have not tested Scratchpad. This page is based on Scratchpad's website, pricing page (checked 15 October 2026) and funding announcement, and on VentureBeat and Crunchbase News.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Salesforce workspace for sales teams",
+  "platform": "Web app and Chrome extension",
+  "starts_at": "$16/user/month billed annually",
+  "schema_category": "BusinessApplication",
+  "summary_short": "A faster way to update and review Salesforce pipeline, with notes that save to Salesforce",
+  "maker": {"name": "Scratchpad", "url": "https://www.scratchpad.com/"},
+  "team": [
+   {"name": "Pouyan Salehi", "role": "Co-founder and CEO", "url": "https://www.scratchpad.com/blog/scratchpad-raises-33-million-series-b-funding"},
+   {"name": "Cyrus Karbassiyoon", "role": "Co-founder", "url": "https://venturebeat.com/business/scratchpad-a-productivity-workspace-for-salesforce-raises-33m"}
+  ],
+  "gallery": [
+   {"url": "https://www.scratchpad.com/opengraph-image", "alt": "Scratchpad banner on a pale lilac background reading The best interface to Salesforce", "credit": "Image: Scratchpad", "w": 1200, "h": 630},
+   {"url": "https://www.scratchpad.com/design/916b975efae7eb76b2728416183556da.webp", "alt": "Scratchpad sheet view listing open opportunities with close dates and next steps, connected to Salesforce", "credit": "Image: Scratchpad", "w": 1518, "h": 798}
+  ],
+  "use_cases": [
+   "Updating stages, close dates and next steps for many deals in one sheet",
+   "Reviewing what changed on each deal before a pipeline meeting",
+   "Taking call notes that save to the right Salesforce opportunity",
+   "Cleaning up missing or stale Salesforce fields in bulk",
+   "Opening Salesforce data from any browser tab with a shortcut"
+  ],
+  "audience": {
+   "fit": [
+    "are an account executive or sales manager who works in Salesforce daily",
+    "run RevOps and want reps to keep Salesforce data current",
+    "find the standard Salesforce interface slow for pipeline reviews"
+   ],
+   "not_fit": [
+    "use HubSpot or another CRM: Scratchpad works with Salesforce",
+    "need a full replacement CRM"
+   ]
+  },
+  "pricing": {
+   "intro": "One plan with every feature included, and a 30-day free trial.",
+   "plans": [
+    {"name": "Scratchpad (annual)", "price": "$16/user/month billed annually", "amount": 16, "currency": "USD", "detail": "All features"},
+    {"name": "Scratchpad (monthly)", "price": "$20/user/month", "amount": 20, "currency": "USD", "detail": "All features, billed monthly"}
+   ],
+   "notes": ["Free trial: every feature for 30 days."],
+   "url": "https://www.scratchpad.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other tools that sit on top of a CRM for sales teams.",
+   "items": [
+    {"name": "Clari", "url": "https://www.clari.com/", "what": "Revenue forecasting and pipeline inspection", "tags": ["Forecasting"], "starts_at": "See its own site", "difference": "Built around forecasting and revenue analytics for leaders."},
+    {"name": "People.ai", "url": "https://people.ai/", "what": "Captures sales activity into the CRM automatically", "tags": ["Activity capture"], "starts_at": "See its own site", "difference": "Focuses on logging activity automatically rather than manual updates."},
+    {"name": "Salesforce (standard UI)", "url": "https://www.salesforce.com/", "what": "Salesforce's own list views and Kanban", "tags": ["CRM"], "starts_at": "Included with Salesforce", "difference": "No extra tool, but slower for bulk edits."}
+   ]
+  },
+  "faq": [
+   {"q": "Does Scratchpad replace Salesforce?", "a": "No. Salesforce stays the system of record; Scratchpad is the interface, and every change writes back to Salesforce."},
+   {"q": "How much does Scratchpad cost?", "a": "$20 per user per month billed monthly, or $16 billed annually, with a 30-day free trial."},
+   {"q": "Who founded Scratchpad?", "a": "Pouyan Salehi (CEO) and Cyrus Karbassiyoon, in 2019, according to VentureBeat."},
+   {"q": "Who has invested in Scratchpad?", "a": "Craft Ventures led its Series A and its $33 million Series B in 2022; Accel also invested."}
+  ],
+  "sources": [
+   {"label": "Scratchpad website", "url": "https://www.scratchpad.com/"},
+   {"label": "Scratchpad pricing", "url": "https://www.scratchpad.com/pricing"},
+   {"label": "Scratchpad: raises $33 million Series B (Jan 2022)", "url": "https://www.scratchpad.com/blog/scratchpad-raises-33-million-series-b-funding"},
+   {"label": "VentureBeat: Scratchpad raises $33M", "url": "https://venturebeat.com/business/scratchpad-a-productivity-workspace-for-salesforce-raises-33m"},
+   {"label": "Crunchbase News: Scratchpad lands $13M", "url": "https://news.crunchbase.com/sales-marketing/scratchpad-lands-13m-to-organize-sales-professionals-workspaces/"}
+  ]
+ }
+}

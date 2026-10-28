@@ -1,0 +1,134 @@
+{
+  "type": "post",
+  "slug": "best-ai-workflow-automation-tools",
+  "title": "Best AI workflow automation tools in 2026: Zapier, Make and n8n",
+  "excerpt": "Zapier, Make, n8n, Gumloop and Power Automate compared for startups: AI agent features, prices checked 8 October 2026, self-hosting and what to pick.",
+  "category": "saas",
+  "tags": [
+    "workflow automation",
+    "AI agents",
+    "Zapier",
+    "Make",
+    "n8n",
+    "Gumloop",
+    "Power Automate",
+    "no-code"
+  ],
+  "content": "<p>For most startups, the best AI workflow automation tool in October 2026 is Zapier if you want the most app connections with the least setup, Make if you want visual control at a lower price, and n8n if you have an engineer and want to self-host for free or keep data on your own servers. Gumloop suits teams building AI agents first and workflows second, while Microsoft Power Automate makes sense only if you already run on Microsoft 365. The month's warning sign: Relay.app, an AI automation tool, now shows a notice saying it shut down in September 2026 and permanently deleted all accounts, workflows and run history, according to <a href=\"https://relay.app/\">its website</a>, checked on 8 October 2026.</p>\n\n<p>All prices below come from vendor pricing pages checked on 8 October 2026. They change often, and most tools price by usage, so model your own volume before choosing.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>Every major platform now offers AI agents on top of classic \"when this happens, do that\" workflows: Zapier Agents, Make AI Agents, n8n's agent and AI nodes, and Gumloop's agent builder.</li>\n<li>The cheapest paid entry points are Make at $9 a month, Zapier Pro at $19.99 a month billed annually, and n8n Cloud Starter at €20 a month billed annually. n8n's Community edition is free if you host it yourself.</li>\n<li>Pricing units differ: Zapier counts tasks, Make counts credits, n8n counts whole workflow executions, and Gumloop counts credits. The same workflow can cost very different amounts.</li>\n<li>Relay.app's shutdown is a reminder to export your workflows and avoid building critical operations on a single small vendor without a fallback.</li>\n</ul>\n\n<h2>What AI workflow automation means in 2026</h2>\n<p>Classic automation connects apps with fixed rules: a new form entry creates a CRM contact and posts in Slack. AI automation adds two layers. First, AI steps inside a workflow, such as summarising an email, classifying a support ticket or extracting fields from an invoice. Second, <strong>agents</strong>: an AI model that is given a goal and a set of tools and decides which steps to take.</p>\n<p>Agents are more flexible but less predictable, and they cost more per run because each decision uses a model. For a startup the sensible pattern is fixed workflows for anything that touches money or customers, and agents for research, triage and drafting where a human checks the result. Many tools now also connect to AI assistants through the Model Context Protocol; our <a href=\"/model-context-protocol-mcp-explained/\">MCP explainer</a> covers how that works.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Zapier: the widest app coverage and the easiest start</h2>\n<p><strong>Best for:</strong> non-technical founders, marketing and sales teams, and anyone who needs an obscure app connected today.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Zapier's free plan includes 100 tasks a month, according to <a href=\"https://zapier.com/pricing\">Zapier's pricing page</a>. Professional starts at $19.99 a month billed annually ($29.99 monthly) for 750 tasks, and Team starts at $69 a month billed annually ($103.50 monthly) for 2,000 tasks. Zapier says annual billing is 33% cheaper. Enterprise pricing is arranged through sales and adds a bring-your-own-model option.</p>\n<p><strong>AI features:</strong> all plans include basic access to Zapier Agents, Chatbots, Canvas and Zapier MCP. The free plan's Copilot (which builds Zaps from a description) has a daily message limit; paid plans make it unlimited. Zapier says its agents can work across more than 9,000 apps, according to its <a href=\"https://zapier.com/agents\">Agents page</a>.</p>\n<p><strong>Key limits:</strong> per-task pricing gets expensive at volume. Every successful action step counts as a task, though triggers, filters and failed steps do not, according to <a href=\"https://help.zapier.com/hc/en-us/articles/8496196837261-How-is-task-usage-measured-in-Zapier\">Zapier's help centre</a>. A busy multi-step workflow can use up 750 tasks quickly.</p>\n\n<h2>Make: visual control at the lowest paid price</h2>\n<p><strong>Best for:</strong> operations people who want to see branching logic on a canvas, and cost-conscious teams running many small automations.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Make's free plan includes up to 1,000 credits a month but caps you at two active scenarios, a 15-minute minimum interval between runs and five minutes of execution time, according to <a href=\"https://www.make.com/en/pricing\">Make's pricing page</a>. The paid Make plan starts at $9 a month for 5,000 credits, removes the scenario cap and allows 40-minute executions; paying annually saves 15% or more. Most actions use one credit, while some AI features use more.</p>\n<p><strong>AI features:</strong> Make AI Agents are listed on all plans (labelled beta on the pricing page). Agents run inside Make's visual builder with a reasoning panel showing each decision, and can use models from OpenAI, Anthropic, Google, Mistral and others across more than 3,000 apps, according to <a href=\"https://www.make.com/en/ai-agents\">Make's AI agents page</a>.</p>\n<p><strong>Key limits:</strong> the canvas takes longer to learn than Zapier's step list, and the free plan's two-scenario cap is tight.</p>\n\n<!-- xf-image-3 -->\n\n<h2>n8n: self-host for free, or pay per execution</h2>\n<p><strong>Best for:</strong> startups with at least one engineer, data-sensitive teams that want workflows on their own servers, and heavy users whose workflows have many steps.</p>\n<p><strong>Self-hosting:</strong> n8n's Community edition is free to self-host. n8n describes itself as fair-code, distributed under its Sustainable Use License and a separate Enterprise licence, with source code always visible, according to the <a href=\"https://github.com/n8n-io/n8n\">n8n GitHub repository</a>, which lists more than 1,500 integrations. Without a licence key, a self-hosted install runs as Community edition; adding a Business or Enterprise key unlocks those editions, according to <a href=\"https://docs.n8n.io/hosting/\">n8n's hosting docs</a>. The fair-code licence is not the same as an open-source licence, so read it if you plan to resell n8n as a service.</p>\n<p>n8n is frank that self-hosting needs technical skill. Its <a href=\"https://docs.n8n.io/choose-n8n/\">guide to choosing a version</a> recommends n8n Cloud for people without technical expertise and says self-hosting takes longer to set up. You also own backups, upgrades and security.</p>\n<p><strong>Cloud pricing as of 8 October 2026:</strong> Starter is €20 a month billed annually for 2,500 executions, Pro is €50 a month billed annually for 10,000 executions, and Business is €667 a month billed annually for 40,000 executions and is self-hosted only, according to <a href=\"https://n8n.io/pricing/\">n8n's pricing page</a>; the page says annual billing saves 17%. All plans include unlimited users and workflows, and agents, MCP and AI nodes. Crucially, n8n charges per workflow execution regardless of how many steps it has, which makes long workflows far cheaper than on per-step pricing.</p>\n<p><strong>Key limits:</strong> the learning curve is steep for non-developers, and Business overages are billed at €4,000 per extra 300,000 executions.</p>\n\n<h2>Gumloop: built for AI agents first</h2>\n<p><strong>Best for:</strong> growth, sales and content teams that want to build AI agents across their tools and choose between many models.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Gumloop Pro starts at $37 a month with a 14-day free trial and includes 20,000 credits a month, unlimited agents and seats, more than 35 models and the option to bring your own API keys, according to <a href=\"https://www.gumloop.com/pricing\">Gumloop's pricing page</a>. Enterprise is custom and adds single sign-on, audit logs and virtual private cloud options. Gumloop also offers its own MCP server and a command-line tool.</p>\n<p><strong>Key limits:</strong> there is no permanent free plan listed, and Gumloop labels its classic workflows as \"legacy\", a sign the product is moving firmly towards agents.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Microsoft Power Automate: for companies already on Microsoft 365</h2>\n<p><strong>Best for:</strong> teams that run on Outlook, Teams, SharePoint and Excel, and businesses that need desktop automation of older Windows software (robotic process automation, or RPA).</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Power Automate Premium costs $15 per user a month paid yearly and includes cloud flows and attended desktop flows, according to <a href=\"https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing\">Microsoft's pricing page</a>. Unattended automation costs $150 per bot a month (Process) or $215 per bot a month with a Microsoft-hosted virtual machine (Hosted Process). There is a 30-day free trial. Microsoft sells Copilot Studio agent capacity separately through prepaid credits.</p>\n<p><strong>Key limits:</strong> licensing is complex, and the per-user model is poor value for a five-person startup that does not already live in Microsoft's ecosystem.</p>\n\n<h2>Relay.app: why a shutdown matters to your choice</h2>\n<p>As of 8 October 2026, its homepage states it shut down in September 2026, that all accounts, workflows and run history were permanently deleted, and points to an archived July 2026 version of the site. If you are still searching for Relay, Zapier and Make are the closest no-code replacements.</p>\n<p>The wider lesson for founders: keep a written description or export of every critical workflow, store important data in your own systems rather than only inside the automation tool, and prefer vendors with a clear export path. With n8n you can self-host, which removes this risk at the cost of maintenance.</p>\n\n<h2>Which automation tool should a startup pick?</h2>\n<table>\n<thead><tr><th>Pick this</th><th>If you…</th><th>Paid entry price (8 Oct 2026)</th><th>Free option</th></tr></thead>\n<tbody>\n<tr><td>Zapier</td><td>want the most integrations and the gentlest learning curve</td><td>$19.99/month billed annually, 750 tasks</td><td>100 tasks a month</td></tr>\n<tr><td>Make</td><td>want visual branching logic at the lowest price</td><td>$9/month, 5,000 credits</td><td>1,000 credits, 2 active scenarios</td></tr>\n<tr><td>n8n</td><td>have an engineer, run long workflows or need data on your own servers</td><td>€20/month billed annually, 2,500 executions</td><td>Community edition, self-hosted</td></tr>\n<tr><td>Gumloop</td><td>are building AI agents across sales, growth or content</td><td>$37/month, 20,000 credits</td><td>14-day trial</td></tr>\n<tr><td>Power Automate</td><td>already run on Microsoft 365 or need Windows RPA</td><td>$15/user/month paid yearly</td><td>30-day trial</td></tr>\n</tbody>\n</table>\n\n<!-- xf-image-5 -->\n\n<h2>How to choose without overspending</h2>\n<ol>\n<li><strong>Count your volume in each tool's unit.</strong> A workflow with a trigger and five actions that runs 1,000 times a month uses about 5,000 tasks on Zapier and at least 5,000 credits on Make, but 1,000 executions on n8n.</li>\n<li><strong>Start with one painful workflow</strong>, such as lead routing or invoice capture, and measure hours saved before automating more.</li>\n<li><strong>Keep humans on the money.</strong> Let agents draft, classify and research; let fixed workflows, or people, send payments and customer emails.</li>\n<li><strong>Check data handling.</strong> Customer data passes through every model call. If you handle health, finance or children's data, self-hosting n8n or an enterprise plan may be required.</li>\n<li><strong>Plan for exit.</strong> Document each workflow outside the tool.</li>\n</ol>\n<p>If you are hiring someone to own this work, automation and AI operations roles now appear regularly on our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs board</a>. For the rest of the stack, see our guide to <a href=\"/best-ai-tools-for-startups/\">AI tools for startups</a>.</p>\n\n<h2>Bottom line</h2>\n<p>Start on Zapier's or Make's free plan to prove one workflow is worth automating. Move to Make if cost matters and your team is comfortable with a canvas, stay on Zapier if speed and app coverage matter more, and switch to n8n once an engineer is available and your volumes grow. Use Gumloop if agents, not workflows, are the main job, and Power Automate only if Microsoft already runs your company. Whichever you pick, keep copies of your workflows: when Relay.app closed, everything that lived only inside it was deleted.</p>\n\n<h2>FAQ</h2>\n<h3>Is n8n free?</h3>\n<p>The self-hosted Community edition is free under n8n's Sustainable Use License. n8n Cloud starts at €20 a month billed annually for 2,500 executions as of 8 October 2026.</p>\n<h3>Zapier or Make: which is cheaper?</h3>\n<p>Make is usually cheaper. Its paid plan starts at $9 a month for 5,000 credits, while Zapier Professional starts at $19.99 a month billed annually for 750 tasks.</p>\n<h3>What happened to Relay.app?</h3>\n<p>Relay.app's website says it shut down in September 2026 and permanently deleted all accounts, workflows and run history.</p>\n<h3>Do these tools have AI agents?</h3>\n<p>Yes. Zapier, Make, n8n and Gumloop all offer AI agents as of October 2026, and Microsoft sells agents through Copilot Studio alongside Power Automate.</p>\n<h3>Can I self-host Zapier or Make?</h3>\n<p>Neither Zapier's nor Make's pricing page lists a self-hosted option. Of the tools in this guide, only n8n offers one.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Relay.app, \"Relay.app has shut down\", accessed 8 October 2026, <a href=\"https://relay.app/\">relay.app</a></li>\n<li>Zapier, \"Pricing\", accessed 8 October 2026, <a href=\"https://zapier.com/pricing\">zapier.com/pricing</a></li>\n<li>Zapier, \"Zapier Agents\", accessed 8 October 2026, <a href=\"https://zapier.com/agents\">zapier.com/agents</a></li>\n<li>Make, \"Pricing\", accessed 8 October 2026, <a href=\"https://www.make.com/en/pricing\">make.com</a></li>\n<li>Make, \"AI Agents\", accessed 8 October 2026, <a href=\"https://www.make.com/en/ai-agents\">make.com</a></li>\n<li>n8n, \"Pricing\", accessed 8 October 2026, <a href=\"https://n8n.io/pricing/\">n8n.io/pricing</a></li>\n<li>n8n, \"n8n-io/n8n repository README\", accessed 8 October 2026, <a href=\"https://github.com/n8n-io/n8n\">github.com</a></li>\n<li>n8n, \"Hosting n8n\", accessed 8 October 2026, <a href=\"https://docs.n8n.io/hosting/\">docs.n8n.io</a></li>\n<li>n8n, \"Choose your n8n\", accessed 8 October 2026, <a href=\"https://docs.n8n.io/choose-n8n/\">docs.n8n.io</a></li>\n<li>Zapier, \"How is task usage measured in Zapier?\", accessed 8 October 2026, <a href=\"https://help.zapier.com/hc/en-us/articles/8496196837261-How-is-task-usage-measured-in-Zapier\">help.zapier.com</a></li>\n<li>Gumloop, \"Pricing\", accessed 8 October 2026, <a href=\"https://www.gumloop.com/pricing\">gumloop.com/pricing</a></li>\n<li>Microsoft, \"Power Automate pricing\", accessed 8 October 2026, <a href=\"https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing\">microsoft.com</a></li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Factory_Automation_Robotics_Palettizing_Bread.jpg/1920px-Factory_Automation_Robotics_Palettizing_Bread.jpg",
+      "alt": "Orange industrial robot arms stack crates of bread on a bakery production line",
+      "caption": "Software automation follows the same idea as factory robots: repeatable steps done without manual work.",
+      "credit": "Photo: KUKA Roboter GmbH, Bachmann / Wikimedia Commons, Public domain",
+      "license": "Public domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Factory_Automation_Robotics_Palettizing_Bread.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Middle-aged_woman_working_on_laptop_at_home.jpg/1920px-Middle-aged_woman_working_on_laptop_at_home.jpg",
+      "alt": "A woman works on a laptop at home",
+      "caption": "Zapier and Make are built for non-technical users who want to connect their apps.",
+      "credit": "Photo: Shixart1985 / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Middle-aged_woman_working_on_laptop_at_home.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Startup_Village_workshop_3.jpg/1920px-Startup_Village_workshop_3.jpg",
+      "alt": "Participants at a technology workshop at Startup Village in Kochi, Kerala",
+      "caption": "Small teams get the most from automation when one person owns the workflows.",
+      "credit": "Photo: Netha Hussain / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Startup_Village_workshop_3.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/FANUC_6-axis_welding_robots.jpg/1920px-FANUC_6-axis_welding_robots.jpg",
+      "alt": "A yellow FANUC industrial welding robot arm working along a metal beam on a factory floor",
+      "caption": "Fixed workflows behave like industrial robots: the same steps every time. AI agents add judgement, and unpredictability.",
+      "credit": "Photo: Phasmatisnox / Wikimedia Commons, CC BY 3.0",
+      "license": "CC BY 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:FANUC_6-axis_welding_robots.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Wikimedia_Foundation_Servers-8055_02.jpg/1920px-Wikimedia_Foundation_Servers-8055_02.jpg",
+      "alt": "Close-up of rack-mounted servers with blue, green and orange network cables",
+      "caption": "Keeping workflows and data on your own infrastructure removes the risk of a vendor shutting down.",
+      "credit": "Photo: Victorgrigas / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Servers-8055_02.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://relay.app/",
+      "publisher": "Relay.app",
+      "date": "2026-10-08",
+      "claim": "Relay.app has shut down"
+    },
+    {
+      "url": "https://zapier.com/pricing",
+      "publisher": "Zapier",
+      "date": "2026-10-08",
+      "claim": "Pricing"
+    },
+    {
+      "url": "https://zapier.com/agents",
+      "publisher": "Zapier",
+      "date": "2026-10-08",
+      "claim": "Zapier Agents"
+    },
+    {
+      "url": "https://www.make.com/en/pricing",
+      "publisher": "Make",
+      "date": "2026-10-08",
+      "claim": "Pricing"
+    },
+    {
+      "url": "https://www.make.com/en/ai-agents",
+      "publisher": "Make",
+      "date": "2026-10-08",
+      "claim": "AI Agents"
+    },
+    {
+      "url": "https://n8n.io/pricing/",
+      "publisher": "n8n",
+      "date": "2026-10-08",
+      "claim": "Pricing"
+    },
+    {
+      "url": "https://github.com/n8n-io/n8n",
+      "publisher": "n8n",
+      "date": "2026-10-08",
+      "claim": "n8n-io/n8n repository README"
+    },
+    {
+      "url": "https://docs.n8n.io/hosting/",
+      "publisher": "n8n",
+      "date": "2026-10-08",
+      "claim": "Hosting n8n"
+    },
+    {
+      "url": "https://docs.n8n.io/choose-n8n/",
+      "publisher": "n8n",
+      "date": "2026-10-08",
+      "claim": "Choose your n8n"
+    },
+    {
+      "url": "https://help.zapier.com/hc/en-us/articles/8496196837261-How-is-task-usage-measured-in-Zapier",
+      "publisher": "Zapier",
+      "date": "2026-10-08",
+      "claim": "How is task usage measured in Zapier?"
+    },
+    {
+      "url": "https://www.gumloop.com/pricing",
+      "publisher": "Gumloop",
+      "date": "2026-10-08",
+      "claim": "Pricing"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing",
+      "publisher": "Microsoft",
+      "date": "2026-10-08",
+      "claim": "Power Automate pricing"
+    }
+  ]
+}

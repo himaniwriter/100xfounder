@@ -1,0 +1,162 @@
+{
+ "slug": "zeroheight",
+ "website": "https://zeroheight.com/",
+ "excerpt": "zeroheight is a London design system platform where product teams document, manage and measure their design systems. Free plan, Starter at $49 per editor a month, and Enterprise.",
+ "content": "<p>zeroheight is a platform for documenting and running a design system: the shared set of components, design tokens, patterns and guidelines that keeps a company's products looking and behaving the same. Teams write their guidelines in zeroheight, pull in components and tokens from design tools such as Figma and from code, and publish one styleguide that designers, engineers and, increasingly, AI coding tools can all read. Its website now describes it as a design system platform for teams and AI agents and lists an MCP server so AI assistants can query the system.</p><p>The company is based in London. Y Combinator's directory says it was founded in 2015, went through YC in summer 2019, and lists Jerome de Lafargue as founder and CEO and Robin Tindale as cofounder. In August 2021 TechCrunch reported a $10 million Series A led by Tribe Capital, with Adobe, Y Combinator, FundersClub and Expa taking part, and said zeroheight counted Adobe and United Airlines among more than 1,300 customers at the time. The company used the round to expand to the San Francisco Bay Area.</p><p>zeroheight publishes its prices. There is a free plan for one editor and one styleguide, a Starter plan for up to five editors at $49 per editor a month (prices exclude sales tax; paying yearly saves 15%), and an Enterprise plan with custom pricing. It also publishes an annual Design Systems Report based on a survey of design system teams.</p><p><em>We have not used zeroheight for this page. It brings together zeroheight's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Design systems",
+  "platform": "Web",
+  "starts_at": "Free plan; Starter $49 per editor/month",
+  "schema_category": "DesignApplication",
+  "summary_short": "Design system documentation and management platform for product teams",
+  "maker": {
+   "name": "zeroheight",
+   "url": "https://zeroheight.com/"
+  },
+  "team": [
+   {
+    "name": "Jerome de Lafargue",
+    "role": "Founder and CEO"
+   },
+   {
+    "name": "Robin Tindale",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cmszeroheight.wpenginepowered.com/wp-content/uploads/2025/07/Property-1Documentationmenu-1.png",
+    "alt": "zeroheight documentation site with a dark red header, menu items for Foundation, Components and Patterns, and coloured cards for patterns and resources",
+    "credit": "Image: zeroheight (zeroheight.com)",
+    "w": 1698,
+    "h": 1245
+   },
+   {
+    "url": "https://cmszeroheight.wpenginepowered.com/wp-content/uploads/2025/07/Property-1Managementmenu-1.png",
+    "alt": "zeroheight dashboard greeting a user, with recently viewed styleguide pages and a count of pages without a design block",
+    "credit": "Image: zeroheight (zeroheight.com)",
+    "w": 1698,
+    "h": 1245
+   }
+  ],
+  "use_cases": [
+   "Publishing a single styleguide for a company's design system",
+   "Documenting components with live code and design examples side by side",
+   "Syncing design tokens between Figma and code repositories",
+   "Measuring how often the styleguide is viewed and searched",
+   "Giving AI coding assistants design-system context through an MCP server"
+  ],
+  "audience": {
+   "fit": [
+    "design system teams at mid-size and large companies with several products",
+    "designers and front-end engineers who need one shared reference",
+    "teams already working in Figma and a component library"
+   ],
+   "not_fit": [
+    "a solo designer or a small startup without a design system yet",
+    "teams that only need open-source component previews, which Storybook covers for free"
+   ]
+  },
+  "pricing": {
+   "intro": "zeroheight lists three plans on its pricing page.",
+   "url": "https://zeroheight.com/pricing",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "1 editor, 1 styleguide, 1 token set"
+    },
+    {
+     "name": "Starter",
+     "price": "$49 per editor/month",
+     "amount": 49,
+     "currency": "USD",
+     "detail": "Up to 5 editors, 2 styleguides; 14-day free trial"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Advanced management and dedicated support; contact sales"
+    }
+   ],
+   "notes": [
+    "Prices exclude sales tax. The page says yearly billing saves 15%."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published prices and a free plan to try it",
+   "Connects design tools and code in one place",
+   "Long track record: founded in 2015 and YC-backed"
+  ],
+  "cons": [
+   "Per-editor pricing adds up for larger teams",
+   "Value depends on already having a design system to document"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with zeroheight. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Supernova",
+     "url": "https://www.supernova.io/",
+     "what": "Design system platform for documentation and tokens",
+     "starts_at": "See its own website",
+     "difference": "A direct rival covering documentation, tokens and code generation."
+    },
+    {
+     "name": "Knapsack",
+     "url": "https://www.knapsack.cloud/",
+     "what": "Enterprise design system platform",
+     "starts_at": "See its own website",
+     "difference": "Aimed at large enterprises running design systems across many products."
+    },
+    {
+     "name": "Storybook",
+     "url": "https://storybook.js.org/",
+     "what": "Open-source tool for building and documenting UI components",
+     "starts_at": "See its own website",
+     "difference": "Free and code-first; documents components but not a full design system with guidelines."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is zeroheight used for?",
+    "a": "Documenting and managing a design system: guidelines, components and design tokens, published as one styleguide for designers and engineers."
+   },
+   {
+    "q": "Is zeroheight free?",
+    "a": "It has a free plan for one editor and one styleguide. The Starter plan is $49 per editor a month and Enterprise is custom-priced."
+   },
+   {
+    "q": "Who founded zeroheight?",
+    "a": "Y Combinator lists Jerome de Lafargue as founder and CEO and Robin Tindale as cofounder. The company was founded in 2015 in London."
+   },
+   {
+    "q": "How much funding has zeroheight raised?",
+    "a": "TechCrunch reported a $10 million Series A led by Tribe Capital in August 2021."
+   }
+  ],
+  "sources": [
+   {
+    "label": "zeroheight pricing",
+    "url": "https://zeroheight.com/pricing"
+   },
+   {
+    "label": "zeroheight homepage",
+    "url": "https://zeroheight.com/"
+   },
+   {
+    "label": "Y Combinator: zeroheight",
+    "url": "https://www.ycombinator.com/companies/zeroheight"
+   },
+   {
+    "label": "TechCrunch: zeroheight raises $10M led by Tribe Capital",
+    "url": "https://techcrunch.com/2021/08/06/zeroheight-raises-10m-round-led-by-tribe-capital-to-scale-designops-for-ux-teams/"
+   }
+  ]
+ }
+}

@@ -1,0 +1,330 @@
+{
+ "slug": "smooth-recorder",
+ "excerpt": "Smooth Recorder is a native Mac screen recorder that adds auto zooms, a smooth cursor and on-device captions as you record. Price, alternatives and what Product Hunt users said.",
+ "content": "<p>Smooth Recorder is a native macOS app for recording product demos and tutorials. As you record, it zooms in where you click, smooths the cursor, makes captions on your Mac and puts the result on a background, so the clip looks edited when you press stop. You can cut the video by deleting words from its transcript, and the same capture shortcut also takes screenshots, scrolling captures, GIFs and text from the screen.</p><p>It is sold as a one-time licence rather than a subscription and needs macOS 15 or later. According to its site, captions, text recognition and redaction run on your Mac and nothing is uploaded.</p><p>Smooth Recorder was made by Mohd Anas and launched on Product Hunt on 4 October 2026, where it finished #3 for the day with 252 upvotes and 22 comments.</p><p><em>We have not tested Smooth Recorder ourselves. This page brings together its official site, its Product Hunt page and the official pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Screen recording",
+  "platform": "Mac app",
+  "os": "macOS 15 Sequoia or later",
+  "starts_at": "$19 one time (early access)",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "Native Mac screen recorder that adds auto zooms, a smooth cursor and on-device captions as you record",
+  "maker": {
+   "name": "Mohd Anas",
+   "url": "https://www.producthunt.com/@mdanassaif"
+  },
+  "team": [
+   {
+    "name": "Mohd Anas",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@mdanassaif"
+   }
+  ],
+  "ph": {
+   "rank": 3,
+   "votes": 252,
+   "comments": 22,
+   "followers": 312,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Recording a product demo or walkthrough that needs zooms and captions without a separate editing pass",
+   "Making short tutorials and cutting mistakes by deleting words from the transcript",
+   "Taking screenshots for docs or social posts, with redaction of emails, cards or API keys before sharing",
+   "Capturing long pages with scrolling capture, or turning a short clip into a GIF"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Mohd Anas says he built Smooth Recorder because recording a product demo was always the easy part. The editing took him about an hour each time: zooming into clicks, hiding a shaky cursor, adding captions and placing the clip on a background so it didn't look like a raw screen recording.",
+    "His answer was an app that does those steps while you record. At launch he listed auto zoom that follows the cursor, 3D tilt during zooms (new in version 1.1), a smooth cursor, a camera bubble, captions generated on the Mac with transcript editing, and one-shortcut screenshots placed on a wallpaper. He stressed that it is a native SwiftUI app, not a web app in a window.",
+    "He launched it in early access at $9 once, with no subscription and no account, and asked people what they record and what to build next. That first tier has since sold out; see the pricing below."
+   ],
+   "attribution": "Mohd Anas, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/smooth-recorder?comment=5917886"
+  },
+  "audience": {
+   "fit": [
+    "make demos or tutorials on a Mac and want them to look edited without opening a video editor",
+    "prefer paying once over a monthly subscription",
+    "want captions, text recognition and redaction to stay on your own Mac"
+   ],
+   "not_fit": [
+    "use Windows: it is Mac only for now (the maker says Windows is on the roadmap)",
+    "are on macOS 14 or older: it needs macOS 15 or later",
+    "want the option of a refund: its terms say all sales are final, and there is no trial"
+   ]
+  },
+  "pricing": {
+   "intro": "Smooth Recorder is sold as a lifetime licence with a single payment, in US dollars. There is no subscription and no account.",
+   "url": "https://smoothrecorder.com/#pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Early access (first 100 buyers)",
+     "price": "$9 one time",
+     "currency": "USD",
+     "detail": "Sold out: the site shows all 100 claimed"
+    },
+    {
+     "name": "Early access (next 100 buyers)",
+     "price": "$19 one time",
+     "amount": 19,
+     "currency": "USD",
+     "detail": "The current price on 14 October 2026. Includes every update during early access; one licence works on one Mac at a time"
+    },
+    {
+     "name": "Regular price",
+     "price": "$69 one time",
+     "currency": "USD",
+     "detail": "The price the site says applies after early access"
+    }
+   ],
+   "notes": [
+    "No free trial is offered on the site.",
+    "All sales are final, according to the FAQ and the terms of sale. The maker asks buyers to email if something isn't working.",
+    "The terms say the early-access price you pay stays your lifetime price even after the public price rises.",
+    "To move the licence to another Mac, deactivate it in Settings, then License. Payments are handled by Dodo Payments."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists these as alternatives. Prices come from each product's own pricing page, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Screen Studio",
+     "url": "https://screen.studio/",
+     "what": "Mac screen recorder that adds smooth cursor movement and automatic zooms after you record",
+     "starts_at": "$9/month billed yearly, or $29 month to month",
+     "ph_rating": 4.9,
+     "ph_reviews": 189,
+     "ph_url": "https://www.producthunt.com/products/screen-studio/reviews",
+     "difference": "A subscription with every feature in every plan, plus shareable links. Smooth Recorder is a one-time purchase and keeps everything on your Mac."
+    },
+    {
+     "name": "FocuSee",
+     "url": "https://focusee.imobie.com/",
+     "what": "Auto-zoom screen recorder for Mac and Windows with AI editing tools",
+     "starts_at": "Standard $49.99/year or $19.99/month; Advanced one-time $199.99",
+     "ph_rating": 4.6,
+     "ph_reviews": 39,
+     "ph_url": "https://www.producthunt.com/products/focusee/reviews",
+     "difference": "Runs on Windows as well as Mac and offers money-back guarantees (60 days on yearly plans). Smooth Recorder is Mac only with no refunds."
+    },
+    {
+     "name": "CleanShot X",
+     "url": "https://cleanshot.com/",
+     "what": "Long-running Mac app for screenshots and screen recordings, with its own cloud",
+     "starts_at": "Basic $35 once (one year of updates); Pro $10/user/month billed yearly",
+     "ph_rating": 4.9,
+     "ph_reviews": 55,
+     "ph_url": "https://www.producthunt.com/products/cleanshot/reviews",
+     "difference": "Screenshot-first with cloud sharing and a 30-day money-back guarantee. It does not centre on auto-zoom demo videos or transcript editing."
+    }
+   ],
+   "more": "Product Hunt also lists Tella, Xnapper, Phia, Screen Charm and Supercut as alternatives."
+  },
+  "reviews": {
+   "count": 3,
+   "rating": 5.0,
+   "url": "https://www.producthunt.com/products/smooth-recorder/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Recordings that already look edited, thanks to auto zoom and the smooth cursor",
+     "Editing video by editing the transcript",
+     "Native, local processing and a one-time price"
+    ],
+    "asked": [
+     "Whether it can record a voice-over (it can: pick a microphone from the recording bar)",
+     "How on-device captions cope with an Indian English accent and long recordings",
+     "Whether a zoom can be moved after recording, and how it compares with CleanShot",
+     "Whether a Windows version is coming"
+    ],
+    "criticised": [
+     "A small grab area for dragging clip edges on the timeline",
+     "An undo button that reverts all edits on a clip without asking first",
+     "Clicking a clip on the timeline doesn't always select it"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Smooth Recorder genuinely holds its own against them and in a few areas, I actually prefer it.",
+     "author": "Aleksandar Blazhev (hunter)",
+     "url": "https://www.producthunt.com/products/smooth-recorder?comment=5918540"
+    },
+    {
+     "text": "I love the product and bought it.",
+     "author": "Moritz Schultz",
+     "url": "https://www.producthunt.com/products/smooth-recorder?comment=5922977"
+    },
+    {
+     "text": "I just lost like 30 minutes of cutting work because I understood the undo button to be a \"undo your last action\"",
+     "author": "Moritz Schultz",
+     "url": "https://www.producthunt.com/products/smooth-recorder?comment=5922977"
+    },
+    {
+     "text": "How do the on device captions hold up on a long recording with an accent, say Indian English?",
+     "author": "Sagar Deore",
+     "url": "https://www.producthunt.com/products/smooth-recorder?comment=5919667"
+    },
+    {
+     "text": "Can a zoom be moved after the fact?",
+     "author": "Justin Rockmore",
+     "url": "https://www.producthunt.com/products/smooth-recorder?comment=5919556"
+    }
+   ]
+  },
+  "pros": [
+   "One-time licence, no subscription or account",
+   "Auto zoom, smooth cursor, captions and backgrounds applied while you record",
+   "Cut the video by deleting words from the transcript; filler words and pauses removed in one click",
+   "Captions, text recognition and redaction run locally on your Mac",
+   "Screenshots, scrolling captures, GIFs and text capture from the same shortcut",
+   "Frequent updates: nine releases listed in the changelog by 12 October 2026"
+  ],
+  "cons": [
+   "Mac only, and needs macOS 15 or later",
+   "No free trial and no refunds",
+   "One licence covers one Mac at a time",
+   "Early users reported timeline editing rough edges, including an undo that reverts all edits on a clip (the maker said fixes are coming)"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/smooth-recorder",
+   "x": {
+    "none": "We found no posts about Smooth Recorder on X yet.",
+    "search_url": "https://x.com/search?q=%22Smooth%20Recorder%22&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "How much does Smooth Recorder cost?",
+    "a": "On 14 October 2026 it cost $19 once in early access, for the next 100 buyers. The first 100 licences at $9 are sold out, and the site gives $69 as the regular price. There is no subscription."
+   },
+   {
+    "q": "Is there a free trial or a refund?",
+    "a": "No. The site offers no trial, and its terms say all sales are final. The maker asks you to email if something isn't working."
+   },
+   {
+    "q": "Which Macs does it run on?",
+    "a": "Macs running macOS 15 Sequoia or later. One licence works on one Mac at a time, and you can deactivate it in Settings to move it."
+   },
+   {
+    "q": "Can I add a voice-over?",
+    "a": "Yes. The maker explained on Product Hunt that when you pick an area to record, you click the mic chip on the bar under it and choose your microphone."
+   },
+   {
+    "q": "Do captions work offline, and with an Indian English accent?",
+    "a": "Captions are made on your Mac. On macOS 26, the first time you make captions it downloads Apple's speech model, then works offline. The maker suggests setting your Mac's language and region to English (India) for the Indian English model. You can click any caption to fix a word."
+   },
+   {
+    "q": "Is there a Windows version?",
+    "a": "Not yet. The maker said on Product Hunt that Windows is on the roadmap but the focus for now is the Mac version."
+   },
+   {
+    "q": "How is it different from Screen Studio?",
+    "a": "Smooth Recorder's own FAQ says the main differences are the one-time price instead of a subscription and the built-in screenshot, scrolling-capture and text-capture tools. Screen Studio costs $9 a month billed yearly or $29 month to month."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Smooth Recorder official site and FAQ",
+    "url": "https://smoothrecorder.com/"
+   },
+   {
+    "label": "Smooth Recorder pricing",
+    "url": "https://smoothrecorder.com/#pricing"
+   },
+   {
+    "label": "Smooth Recorder terms of sale",
+    "url": "https://smoothrecorder.com/terms"
+   },
+   {
+    "label": "Smooth Recorder changelog",
+    "url": "https://smoothrecorder.com/changelog"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/smooth-recorder"
+   },
+   {
+    "label": "Product Hunt reviews",
+    "url": "https://www.producthunt.com/products/smooth-recorder/reviews"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/smooth-recorder/alternatives"
+   },
+   {
+    "label": "Product Hunt launch history",
+    "url": "https://www.producthunt.com/products/smooth-recorder/launches"
+   },
+   {
+    "label": "Screen Studio pricing",
+    "url": "https://screen.studio/#pricing"
+   },
+   {
+    "label": "FocuSee pricing",
+    "url": "https://focusee.imobie.com/pricing.htm?os=mac"
+   },
+   {
+    "label": "CleanShot X pricing",
+    "url": "https://cleanshot.com/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/c56b0f3b-6e01-4c9d-ae2a-ca522c69b66f.png?auto=format&fit=max&w=1400",
+    "alt": "Smooth Recorder graphic 'Record Beautiful Demos Without Editing' over its website and a MacBook",
+    "w": 1400,
+    "h": 796
+   },
+   {
+    "url": "https://ph-files.imgix.net/4b8059e5-67eb-403a-bd14-5e9f262a194b.png?auto=format&fit=max&w=1400",
+    "alt": "Smooth Recorder graphic 'Record beautiful demos. Without editing.' showing the editor with a zoomed recording and the settings sidebar",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/5c0f94be-f32d-401d-9581-a9ed706baa5e.png?auto=format&fit=max&w=1400",
+    "alt": "Smooth Recorder graphic 'Zooms where you click', with each click shown as a zoom curve on the timeline",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/240e4b7a-52d6-4eaf-9893-074ccade4402.png?auto=format&fit=max&w=1400",
+    "alt": "Smooth Recorder graphic 'Everything, one click away': the recordings library opening from the notch",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/4ab03a5d-d192-43ba-bf2b-9f962fd6aa20.png?auto=format&fit=max&w=1400",
+    "alt": "Smooth Recorder graphic showing a fan of the background wallpapers that sit behind screenshots and recordings",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/c56b0f3b-6e01-4c9d-ae2a-ca522c69b66f.png?auto=format&fit=max&w=1400",
+    "alt": "Smooth Recorder graphic 'Record Beautiful Demos Without Editing' over its website and a MacBook",
+    "w": 1400,
+    "h": 796
+   },
+   {
+    "url": "https://ph-files.imgix.net/4b8059e5-67eb-403a-bd14-5e9f262a194b.png?auto=format&fit=max&w=1400",
+    "alt": "Smooth Recorder graphic 'Record beautiful demos. Without editing.' showing the editor with a zoomed recording and the settings sidebar",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/5c0f94be-f32d-401d-9581-a9ed706baa5e.png?auto=format&fit=max&w=1400",
+    "alt": "Smooth Recorder graphic 'Zooms where you click', with each click shown as a zoom curve on the timeline",
+    "w": 1270,
+    "h": 760
+   }
+  ]
+ }
+}

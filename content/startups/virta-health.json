@@ -1,0 +1,169 @@
+{
+ "slug": "virta-health",
+ "website": "https://www.virtahealth.com/",
+ "excerpt": "Virta Health is a US virtual clinic that treats type 2 diabetes and obesity with a nutrition-first approach, paid for mainly by employers and health plans. Valued at $2B after a $133M Series E in 2021.",
+ "content": "<p>Virta Health is a virtual medical clinic in the United States that treats type 2 diabetes, prediabetes and obesity. Its approach is nutrition-first: members get a personalised eating plan, remote monitoring, coaching and medical supervision through an app, and a medical team adjusts diabetes medication as their numbers change. Virta says it works with or without GLP-1 drugs and describes its mission as reversing metabolic disease in one billion people.</p><p>Virta's leadership page names Sami Inkinen as co-founder and chief executive, with Stephen Phinney, MD, PhD (former chief medical officer) and Jeff Volek, PhD (former chief science officer) as the other co-founders.</p><p>Most members get Virta through an employer or health plan. Its FAQ says there is no fee to apply, that people covered through an employer-sponsored health plan pay no treatment cost, and that others may qualify for up to a 60% discount based on household size and income.</p><p>In April 2021 Virta raised $133 million in a Series E led by Tiger Global, which Fierce Biotech reported valued the company at $2 billion. That came a few months after a $65 million Series D in December 2020. The company said the money would fund research, product development and demand from employers, health plans and government buyers. Outcome figures Virta publishes come from its own research.</p><p>This profile is drawn from Virta's own pages and published reporting. It is not medical advice. We have not used the service, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Virtual diabetes and obesity care",
+  "platform": "iOS, Android and web (US only)",
+  "starts_at": "No treatment cost if covered by your employer plan",
+  "schema_category": "HealthApplication",
+  "summary_short": "Virtual clinic for type 2 diabetes and weight loss using a nutrition-first approach",
+  "maker": {
+   "name": "Virta Health",
+   "url": "https://www.virtahealth.com/about"
+  },
+  "team": [
+   {
+    "name": "Sami Inkinen",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Stephen Phinney, MD, PhD",
+    "role": "Co-founder; former Chief Medical Officer"
+   },
+   {
+    "name": "Jeff Volek, PhD",
+    "role": "Co-founder; former Chief Science Officer"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/63b87f2b736a4604d643dbd4/67003dfe5c3a8066786563cc_Open%20Graph%20-%20Homepage.jpg",
+    "alt": "Virta banner reading Take back control of your health, above a family of four walking hand in hand on a boardwalk by a lake",
+    "credit": "Image: Virta Health",
+    "w": 1120,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/63b87f2b736a4604d643dbd4/647e648b315875f2e34cd87b_Open%20Graph%20-%20About%20Virta.jpg",
+    "alt": "Virta banner reading Reverse your diagnosis, rediscover your spark, above an older man and a young girl gardening among white flowers",
+    "credit": "Image: Virta Health",
+    "w": 1120,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Lowering blood sugar and reducing diabetes medication under medical supervision",
+   "Losing weight with a personalised nutrition plan, with or without GLP-1 drugs",
+   "Preventing type 2 diabetes after a prediabetes diagnosis",
+   "Offering a diabetes and obesity benefit to employees or health plan members"
+  ],
+  "audience": {
+   "fit": [
+    "live in the US with type 2 diabetes, prediabetes or obesity",
+    "get health cover through an employer or plan that partners with Virta",
+    "want a diet-led approach with a medical team watching your medication"
+   ],
+   "not_fit": [
+    "live outside the United States",
+    "do not want to change your diet substantially; the programme is nutrition-first"
+   ]
+  },
+  "pricing": {
+   "intro": "Virta does not publish a list price. Its FAQ says there is no fee to apply, that people covered through an employer-sponsored health plan pay no treatment cost, and that others may qualify for up to a 60% discount off the annual cost based on household size and income.",
+   "plans": [
+    {
+     "name": "Through an employer or health plan",
+     "price": "No treatment cost",
+     "detail": "Per Virta's FAQ, for people covered by a partnering employer-sponsored plan"
+    },
+    {
+     "name": "Self-pay",
+     "price": "Not published",
+     "detail": "Income-based discounts of up to 60% may apply"
+    }
+   ],
+   "notes": [
+    "Check eligibility on Virta's site; coverage depends on your employer or plan."
+   ],
+   "url": "https://www.virtahealth.com/faq",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Often free to members through their employer or health plan",
+   "Medical supervision for reducing diabetes medication",
+   "Large published research programme"
+  ],
+  "cons": [
+   "US only",
+   "Self-pay price not published"
+  ],
+  "alternatives": {
+   "intro": "Other virtual programmes for diabetes and weight. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Omada Health",
+     "url": "https://www.omadahealth.com/",
+     "what": "Virtual care for diabetes, prediabetes, hypertension and weight",
+     "tags": [
+      "Digital health"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Broader chronic-condition programme, also sold mainly through employers and plans."
+    },
+    {
+     "name": "Livongo (Teladoc Health)",
+     "url": "https://www.teladochealth.com/",
+     "what": "Connected glucose meter and coaching for diabetes",
+     "tags": [
+      "Digital health"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Centres on remote glucose monitoring rather than a diet-led reversal plan."
+    },
+    {
+     "name": "Noom",
+     "url": "https://www.noom.com/",
+     "what": "App-based weight-loss programme",
+     "tags": [
+      "Weight loss"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Consumer self-pay app focused on weight and behaviour change."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded Virta Health?",
+    "a": "Sami Inkinen (CEO), Stephen Phinney, MD, PhD, and Jeff Volek, PhD, according to Virta's leadership page."
+   },
+   {
+    "q": "Is Virta free?",
+    "a": "For people covered through a partnering employer-sponsored health plan, Virta's FAQ says there is no treatment cost. Others may qualify for an income-based discount."
+   },
+   {
+    "q": "How much has Virta raised?",
+    "a": "Its most recent reported round was a $133 million Series E in April 2021, led by Tiger Global, which valued it at $2 billion according to Fierce Biotech."
+   },
+   {
+    "q": "Does Virta work with GLP-1 drugs?",
+    "a": "Virta says its programme works with or without GLP-1 medications."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Virta Health: About",
+    "url": "https://www.virtahealth.com/about"
+   },
+   {
+    "label": "Virta Health: Leadership",
+    "url": "https://www.virtahealth.com/leadership"
+   },
+   {
+    "label": "Virta Health: FAQ (cost and eligibility)",
+    "url": "https://www.virtahealth.com/faq"
+   },
+   {
+    "label": "Fierce Biotech: Virta Health hits $2B valuation with $133M funding (2021)",
+    "url": "https://www.fiercebiotech.com/medtech/virta-health-hits-2b-valuation-133m-funding-to-expand-reach-diabetes-reversing-platform"
+   },
+   {
+    "label": "MobiHealthNews: Virta Health lands $133M (2021)",
+    "url": "https://www.mobihealthnews.com/news/digital-diabetes-company-virta-health-lands-133m-reverse-diabetes"
+   }
+  ]
+ }
+}

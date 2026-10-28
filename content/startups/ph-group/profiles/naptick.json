@@ -1,0 +1,127 @@
+{
+  "slug": "naptick",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/naptick-ai-sleep-companion",
+  "excerpt": "Naptick is a $349 bedside device with an AI sleep coach, light therapy, 1,000+ soundscapes and room sensors, designed to keep your phone out of bed. Price, features and alternatives.",
+  "content": "<p>Naptick is a bedside sleep device built around one idea: you should not need your phone in bed. It looks like a small lamp and combines four things. An AI sleep coach called Nap that you talk to when your mind will not switch off; a library of more than 1,000 soundscapes, meditations and white, pink and brown noise; warm light that dims you down at night and brightens at dawn instead of an alarm; and sensors that track CO₂, air quality, temperature, humidity, light and noise and give your room a score out of 100.</p><p>It can also lock distracting apps on your phone at the press of a button, and syncs with a wearable. On Product Hunt the team said the voice feature has no wake word, and that journal entries you speak are remembered and can be read later in the app. The company says the device was designed with sleep scientists; its Product Hunt team includes a scientific and clinical adviser.</p><p>Naptick launched on Product Hunt on 14 May 2026 and finished #2 for the day, with 474 upvotes and 112 comments (as of 14 October 2026).</p><p><em>We have not tested Naptick ourselves. This page brings together its official site, product and support pages and its Product Hunt page, and says where each fact comes from. Naptick is a consumer gadget, not a medical device; talk to a doctor about a sleep disorder.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Sleep device",
+    "platform": "Bedside hardware with a companion app",
+    "starts_at": "$349 (preorder)",
+    "schema_category": "HealthApplication",
+    "summary_short": "Phone-free bedside sleep device with an AI coach, light therapy, soundscapes and room sensors",
+    "maker": {"name": "Anubhab Goel", "url": "https://www.producthunt.com/@anubhab_goel1"},
+    "team": [
+      {"name": "Anubhab Goel", "role": "Co-founder and CEO", "url": "https://www.producthunt.com/@anubhab_goel1"},
+      {"name": "Nadeem Shaikh", "role": "Co-founder", "url": "https://www.producthunt.com/@nadeem_naptick"},
+      {"name": "Vinaya Kansal", "role": "Co-founder", "url": "https://www.producthunt.com/@vinaya_kansal"},
+      {"name": "Aman Malhotra", "role": "Founding engineer", "url": "https://www.producthunt.com/@aman_malhotra5"},
+      {"name": "Swathy Karamchedu", "role": "Scientific and clinical adviser", "url": "https://www.producthunt.com/@swathy_k1"}
+    ],
+    "ph": {"rank": 2, "votes": 474, "comments": 112, "followers": 1264, "launched": "2026-05-14", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/787249bf-5cd9-4f3f-bdea-f0d1781c5547.png?auto=format&fit=max&w=1400", "w": 1448, "h": 1086, "credit": "Image: Naptick via Product Hunt",
+       "alt": "Naptick device on a bedside table with room readings for temperature, humidity, air quality, noise and CO2, and a tip to play white noise"}
+    ],
+    "use_cases": [
+      "Winding down for bed without scrolling your phone",
+      "Talking through a racing mind at night with an AI coach",
+      "Falling asleep to soundscapes or white, pink and brown noise",
+      "Waking up to gradual light instead of an alarm",
+      "Checking whether CO₂, temperature or noise in your bedroom is hurting your sleep"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Founder Anubhab Goel described Naptick as an AI sleep companion that brings agents to sleep: a bedside device, an AI coach, circadian light, adaptive soundscapes, app-locking and room sensing working together to help people fall asleep.",
+        "In the comments the team explained that the light follows a sunrise and sunset pattern and stays below recommended night-time levels during wind-down, that the device started with Apple Watch data, and that people using Oura, WHOOP and Garmin asked for support too."
+      ],
+      "attribution": "Anubhab Goel and the Naptick team on Product Hunt",
+      "url": "https://www.producthunt.com/products/naptick-ai-sleep-companion?comment=5352598"
+    },
+    "audience": {
+      "fit": [
+        "doomscroll in bed and want a device that replaces the phone at night",
+        "want to see whether your bedroom's air, noise or temperature is affecting your sleep",
+        "already wear a sleep tracker and want something that acts on the data"
+      ],
+      "not_fit": [
+        "need treatment for a sleep disorder: this is a consumer device, not a medical one",
+        "live outside the US and want the free shipping and returns the site describes for US orders",
+        "want the cheapest option: an app like Endel or a basic sunrise lamp costs far less"
+      ]
+    },
+    "pricing": {
+      "intro": "Naptick is a one-off hardware purchase; the site says the app, AI coach and soundscape library are included with no subscription. Price in US dollars.",
+      "url": "https://www.naptick.com/product.html",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Naptick device", "price": "$349", "amount": 349, "currency": "USD", "detail": "Device in Sand Beige or Sky Blue with USB-C power; app included free"}
+      ],
+      "notes": [
+        "Sold as a preorder. When we checked, the product page said batches 1 and 2 had sold out and batch 3 ships in August 2026.",
+        "The site lists free US shipping, a 60-night money-back guarantee and a one-year warranty."
+      ]
+    },
+    "pros": [
+      "No subscription: the AI coach and soundscapes come with the device",
+      "Phone-free design with one-button app locking",
+      "Room sensors for CO₂, air quality, temperature, humidity, light and noise",
+      "No wake word on the device, according to the founder",
+      "60-night money-back guarantee"
+    ],
+    "cons": [
+      "$349 up front, sold as a preorder in batches",
+      "Not a medical device",
+      "No Product Hunt reviews yet"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["The phone-free design", "Combining hardware and AI for sleep"],
+        "asked": [
+          "Whether the night light disturbs sleep (it switches off after wind-down and stays below recommended levels before, said the clinical adviser)",
+          "Whether it offers guidance or only light and sound (both, including voice conversation)",
+          "Integration with Apple Watch, Oura and other trackers",
+          "How spoken journal entries are stored (remembered by the device and readable in the app)"
+        ],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "This phone free design seems intentional. How easy is it to actually fight the urge to grab your phone in the middle of the night?", "author": "Abdul Rehman", "url": "https://www.producthunt.com/products/naptick-ai-sleep-companion?comment=5366109"},
+        {"text": "Combining hardware with AI for sleep is an interesting approach.", "author": "Rivra", "url": "https://www.producthunt.com/products/naptick-ai-sleep-companion?comment=5366219"},
+        {"text": "How do you minimize the light intrusion from the device nightlight? Any science on this?", "author": "Zolani Matebese", "url": "https://www.producthunt.com/products/naptick-ai-sleep-companion?comment=5366368"}
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as Naptick alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Endel", "url": "https://endel.io/", "what": "Personalised soundscapes app for sleep and focus", "starts_at": "See its pricing page", "ph_rating": 4.88, "ph_reviews": 42, "ph_url": "https://www.producthunt.com/products/endel",
+         "difference": "App only, so it runs on the phone Naptick tries to keep out of your bed; no light or room sensors."},
+        {"name": "Remy AI", "url": "https://www.producthunt.com/products/remy-ai", "what": "AI app to help you sleep and recover better", "starts_at": "See its pricing page", "ph_rating": 4.9, "ph_reviews": 58, "ph_url": "https://www.producthunt.com/products/remy-ai",
+         "difference": "Software coaching without dedicated bedside hardware."},
+        {"name": "RISE", "url": "https://www.risescience.com/", "what": "Sleep and energy app based on your sleep debt and circadian rhythm", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 2, "ph_url": "https://www.producthunt.com/products/rise-science",
+         "difference": "Plans your day around sleep data; Naptick acts on the bedroom itself."}
+      ],
+      "more": "Product Hunt also lists Brain.fm and Zucklight as alternatives."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/naptick-ai-sleep-companion/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/naptick-ai-sleep-companion",
+      "x": {"none": "We found no posts about Naptick on X to link yet.", "search_url": "https://x.com/search?q=naptick&f=live"}
+    },
+    "faq": [
+      {"q": "What is Naptick?", "a": "A bedside sleep device with an AI sleep coach called Nap, more than 1,000 soundscapes, light therapy and sensors that score your bedroom from 0 to 100. It is designed to keep your phone out of bed."},
+      {"q": "How much does Naptick cost?", "a": "$349 on its website, sold as a preorder. The app, AI coach and soundscape library are included with no subscription."},
+      {"q": "Does the night light keep you awake?", "a": "The team's clinical adviser said on Product Hunt that the light switches off after the wind-down routine and stays below the recommended night-time maximum in the hour before bed."},
+      {"q": "Is Naptick always listening?", "a": "The founder said on Product Hunt that the device has no wake word, as a privacy choice."},
+      {"q": "Does Naptick work with my sleep tracker?", "a": "The site says it syncs with your wearable. The founder said it began with Apple Watch and that users asked for Oura, WHOOP and Garmin support."}
+    ],
+    "sources": [
+      {"label": "Naptick official site", "url": "https://www.naptick.com/"},
+      {"label": "Naptick product page and price", "url": "https://www.naptick.com/product.html"},
+      {"label": "Naptick support and FAQ", "url": "https://www.naptick.com/support.html"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/naptick-ai-sleep-companion"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/naptick-ai-sleep-companion/alternatives"}
+    ]
+  }
+}

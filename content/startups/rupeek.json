@@ -1,0 +1,153 @@
+{
+ "slug": "rupeek",
+ "website": "https://rupeek.com/",
+ "excerpt": "Rupeek is a Bengaluru online gold loan platform that arranges loans through partner banks. How it works, funding, its 2024 down round and alternatives.",
+ "content": "<p>Rupeek is an Indian fintech company that arranges gold loans, where you pledge gold jewellery as security for a loan. It was founded in 2015 in Bengaluru by Sumit Maniyar and Ashwin Soni. Rupeek is not itself the bank: loans are made by partner lenders such as Federal Bank, and the gold is kept in the partner bank's vault. Its website says the gold is insured by The New India Assurance Company while it is in Rupeek's process.</p><p>Customers can book an appointment at a partner bank branch, where a Rupeek loan manager values the gold and the money is transferred before the customer leaves, or use the doorstep service in supported cities. The site advertises gold loans in about 30 minutes for select schemes, online repayment, part-release of gold, and a 'Shift your loan' option to move an existing gold loan from another lender. It also promotes a Rupeek Gold Card with 0% interest for up to 45 days, for select schemes.</p><p>Rupeek raised money from Accel, Sequoia Capital India (now Peak XV), GGV Capital, Bertelsmann and Binny Bansal, among others; Inc42 put its total funding at more than $164 million. In 2022 it was valued at about $600 million. In May 2024 Inc42 reported that it raised INR 51 crore from 360 One Large Value Fund and BlackSoil at a valuation of about INR 1,785 crore ($213 million), a 64.5% fall: a down round. Entrackr reported in June 2024 that Elevation Capital put in a further INR 125 crore. For FY23 Inc42 reported operating revenue of INR 88.9 crore and a net loss of INR 281.6 crore.</p><p>Rupeek's homepage description advertises rates from 0.55% without stating the period; the actual rate depends on the lender, scheme and loan amount, so check the loan offer before pledging gold.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Gold loans (fintech)",
+  "platform": "Android, iOS and web",
+  "starts_at": "Rates depend on lender and scheme",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Online gold loans through partner banks, at home or at a branch",
+  "maker": {
+   "name": "Rupeek Fintech Pvt Ltd",
+   "url": "https://rupeek.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://assets.rupeek.com/website/images/social-share-rupeek.jpg",
+    "alt": "Rupeek banner reading 'Sone pe loan, Right from home!' with partner bank logos, beside a smiling couple looking at a tablet",
+    "credit": "Image: Rupeek (rupeek.com)",
+    "w": 2135,
+    "h": 1043
+   },
+   {
+    "url": "https://assets.rupeek.com/website/images/headers/192x192.png",
+    "alt": "Rupeek icon: a white stylised R and rupee sign on an orange circle",
+    "credit": "Image: Rupeek (rupeek.com)",
+    "w": 192,
+    "h": 192
+   }
+  ],
+  "use_cases": [
+   "Taking a loan against gold jewellery",
+   "Moving an existing gold loan to a lower rate",
+   "Getting short-term credit quickly without income documents",
+   "Repaying and releasing gold online"
+  ],
+  "audience": {
+   "fit": [
+    "own gold jewellery and need a short-term loan in a city Rupeek serves",
+    "want the gold held by a bank rather than a pawnbroker",
+    "want to compare an existing gold loan's rate"
+   ],
+   "not_fit": [
+    "do not want to pledge gold",
+    "live in an area Rupeek and its partner banks do not serve"
+   ]
+  },
+  "pricing": {
+   "intro": "Rupeek does not publish a single rate card on its homepage. Its page description advertises rates from 0.55% without stating the period, and a Gold Card with 0% interest for up to 45 days on select schemes. Actual rates depend on the partner lender, scheme and loan amount.",
+   "plans": [
+    {
+     "name": "Gold loan",
+     "price": "Rate depends on lender and scheme",
+     "detail": "Loan made by a partner bank; gold kept in the bank's vault"
+    },
+    {
+     "name": "Rupeek Gold Card",
+     "price": "0% interest up to 45 days",
+     "detail": "Select schemes, geographies and lenders only"
+    }
+   ],
+   "notes": [],
+   "url": "https://rupeek.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Gold stored in partner banks' vaults and insured",
+   "Branch or doorstep options",
+   "Loan transfer option for existing gold loans"
+  ],
+  "cons": [
+   "Headline rates apply only to select schemes",
+   "Company valuation fell sharply in 2024"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Muthoot Finance",
+     "url": "https://www.muthootfinance.com/",
+     "what": "India's largest gold loan NBFC",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Large branch network; lends directly rather than through partner banks."
+    },
+    {
+     "name": "Manappuram Finance",
+     "url": "https://www.manappuram.com/",
+     "what": "Gold loan NBFC",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Large branch network and online gold loans."
+    },
+    {
+     "name": "indiagold",
+     "url": "https://www.indiagold.co/",
+     "what": "Online gold loans and digital gold",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Another startup offering doorstep gold loans."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who lends the money in a Rupeek gold loan?",
+    "a": "Partner banks such as Federal Bank; Rupeek arranges the loan and the gold is kept in the bank's vault."
+   },
+   {
+    "q": "Who founded Rupeek?",
+    "a": "Sumit Maniyar and Ashwin Soni, in 2015, according to Inc42."
+   },
+   {
+    "q": "Is my gold insured with Rupeek?",
+    "a": "Rupeek's site says the gold is insured by The New India Assurance Company during the process."
+   },
+   {
+    "q": "What is Rupeek's valuation?",
+    "a": "Inc42 reported about INR 1,785 crore ($213 million) in its May 2024 round, down 64.5% from 2022."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Rupeek official site",
+    "url": "https://rupeek.com/"
+   },
+   {
+    "label": "Inc42: Rupeek raises INR 51 Cr in a down round (14 May 2024)",
+    "url": "https://inc42.com/?p=457087"
+   },
+   {
+    "label": "Entrackr: Rupeek raises $15 Mn from Elevation (June 2024)",
+    "url": "https://entrackr.com/2024/06/rupeek-raises-15-mn-from-elevation-readies-for-secondary"
+   },
+   {
+    "label": "Business Standard: Rupeek raises $60 mn from Binny Bansal, GGV Capital and others",
+    "url": "https://www.business-standard.com/article/pti-stories/rupeek-raises-60mn-from-binny-bansal-ggv-capital-and-others-120022501219_1.html"
+   }
+  ],
+  "team": [
+   {
+    "name": "Sumit Maniyar",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Ashwin Soni",
+    "role": "Cofounder"
+   }
+  ]
+ }
+}

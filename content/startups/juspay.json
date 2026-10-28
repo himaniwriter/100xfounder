@@ -1,0 +1,178 @@
+{
+ "slug": "juspay",
+ "website": "https://juspay.io/",
+ "excerpt": "Juspay is a Bengaluru payments infrastructure company (checkout, payment orchestration, UPI stack, open-source Hyperswitch) founded in 2012.",
+ "content": "<p>Juspay builds payment infrastructure for large merchants and banks. Its website lists HyperCheckout, payment orchestration (routing payments across several gateways), checkout experience, payouts, tokenisation, offers, Lotuspay and a UPI suite for merchants called UPI 360. It also maintains Hyperswitch, a payments orchestration platform whose community edition can be self-hosted from its GitHub repository.</p><p>Juspay's site claims more than USD 1 trillion in annual total processed volume, more than 300 million transactions a day, 99.999% uptime and 500+ enterprise customers, and names brands such as IndiGo, Swiggy, BigBasket, Tata CLiQ and Amazon Pay in its testimonials.</p><p>Inc42 reported that Juspay was founded in 2012 by Vimal Kumar and Ramanathan RV; the company's newsroom names Sheetal Lalwani as cofounder and COO. On 7 April 2025 Juspay announced a USD 60 million Series D, a mix of primary and secondary investment, led by Kedaara Capital with existing investors SoftBank and Accel. Juspay did not state a valuation. Inc42 reported FY24 operating revenue of INR 319.32 crore, up 49.6%, and a loss of INR 97.54 crore.</p><p>Juspay does not publish prices. Its products are sold to enterprises through its sales team, and Hyperswitch's self-hosted community edition is free to start with. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Payments infrastructure",
+  "platform": "APIs and SDKs for web and mobile",
+  "starts_at": "Enterprise pricing on request; Hyperswitch community edition free to self-host",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Payment orchestration, checkout and UPI infrastructure for enterprises and banks",
+  "maker": {
+   "name": "Juspay Technologies",
+   "url": "https://juspay.io/"
+  },
+  "team": [
+   {
+    "name": "Vimal Kumar",
+    "role": "Founder"
+   },
+   {
+    "name": "Ramanathan RV",
+    "role": "Founder"
+   },
+   {
+    "name": "Sheetal Lalwani",
+    "role": "Cofounder and COO",
+    "url": "https://juspay.io/newsroom/juspay-secures-usd60-million-investment-round-led-by-kedaara-capital"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/9sed75bn/production/a6a92973a383382076cf906fcca7f9b8675951b7-2640x1490.png",
+    "alt": "Diagram of a payment orchestrator: experience, integration and infrastructure feed into a central 'Payment Orchestrator', which routes to four payment gateways labelled PG A to PG D",
+    "credit": "Image: Juspay, from juspay.io",
+    "w": 2640,
+    "h": 1490
+   }
+  ],
+  "use_cases": [
+   "Routing payments across several gateways to raise success rates",
+   "Running a branded checkout on web and app",
+   "Card tokenisation and 3DS authentication",
+   "Bulk payouts",
+   "UPI acceptance for merchants and banks"
+  ],
+  "audience": {
+   "fit": [
+    "are a large merchant or bank processing high payment volumes",
+    "use more than one payment gateway and want one layer to route between them",
+    "want an open-source orchestration option you can self-host (Hyperswitch)"
+   ],
+   "not_fit": [
+    "are a small business that just needs a payment gateway: a gateway such as Razorpay or Cashfree is simpler",
+    "want self-serve published pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "Juspay does not publish prices; its site directs buyers to 'Schedule a call'. The Hyperswitch pricing page lists three options without prices.",
+   "plans": [
+    {
+     "name": "Juspay products",
+     "price": "Contact sales",
+     "detail": "HyperCheckout, orchestration, payouts, tokenisation, UPI 360"
+    },
+    {
+     "name": "Hyperswitch Self-Host Community Edition",
+     "price": "Free to start ('Start Building for Free')",
+     "detail": "Self-hosted from the juspay/hyperswitch GitHub repository"
+    },
+    {
+     "name": "Hyperswitch Enterprise Edition / Cloud",
+     "price": "Contact sales",
+     "detail": "Self-hosted enterprise or Juspay-hosted cloud"
+    }
+   ],
+   "url": "https://hyperswitch.io/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Very large stated scale: 300M+ transactions a day",
+   "Works across many gateways rather than replacing them",
+   "Open-source orchestration option"
+  ],
+  "cons": [
+   "No published pricing",
+   "Built for enterprises; overkill for small merchants"
+  ],
+  "alternatives": {
+   "intro": "Other payment companies Indian merchants use. Prices are on each provider's own page.",
+   "items": [
+    {
+     "name": "Razorpay",
+     "url": "https://razorpay.com/",
+     "what": "Payment gateway and business banking",
+     "tags": [
+      "Payment gateway"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "A gateway with self-serve signup and published rates."
+    },
+    {
+     "name": "PayU",
+     "url": "https://payu.in/",
+     "what": "Payment gateway",
+     "tags": [
+      "Payment gateway"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Gateway and checkout for Indian merchants."
+    },
+    {
+     "name": "Cashfree Payments",
+     "url": "https://www.cashfree.com/",
+     "what": "Payment gateway and payouts",
+     "tags": [
+      "Payment gateway",
+      "Payouts"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Gateway with strong payouts focus."
+    },
+    {
+     "name": "Stripe",
+     "url": "https://stripe.com/",
+     "what": "Global payments platform",
+     "tags": [
+      "Payments",
+      "Global"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Global gateway; Juspay orchestrates across gateways like it."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded Juspay?",
+    "a": "Inc42 names Vimal Kumar and Ramanathan RV as founders (2012); Juspay's newsroom names Sheetal Lalwani as cofounder and COO."
+   },
+   {
+    "q": "Is Juspay a payment gateway?",
+    "a": "Not mainly. It provides checkout, orchestration and UPI infrastructure that sits across gateways and banks."
+   },
+   {
+    "q": "How much did Juspay raise in 2025?",
+    "a": "USD 60 million in a Series D led by Kedaara Capital, announced on 7 April 2025, with SoftBank and Accel."
+   },
+   {
+    "q": "Is Hyperswitch open source?",
+    "a": "Hyperswitch's pricing page offers a free self-hosted community edition and links to the juspay/hyperswitch GitHub repository; check the repository for licence terms."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Juspay website",
+    "url": "https://juspay.io/in"
+   },
+   {
+    "label": "Juspay newsroom: USD 60 million round led by Kedaara Capital (7 Apr 2025)",
+    "url": "https://juspay.io/newsroom/juspay-secures-usd60-million-investment-round-led-by-kedaara-capital"
+   },
+   {
+    "label": "Inc42: Juspay seeks funding to enter unicorn race (27 Jan 2025)",
+    "url": "https://inc42.com/buzz/juspay-seeks-150-mn-funding-to-enter-unicorn-race/"
+   },
+   {
+    "label": "Entrackr: Juspay secures USD 60 Mn",
+    "url": "https://entrackr.com/news/juspay-secures-60-mn-from-kedaara-softbank-and-accel-8934673"
+   },
+   {
+    "label": "Hyperswitch pricing",
+    "url": "https://hyperswitch.io/pricing"
+   }
+  ]
+ }
+}

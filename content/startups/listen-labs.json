@@ -1,0 +1,145 @@
+{
+ "slug": "listen-labs",
+ "website": "https://listenlabs.ai/",
+ "excerpt": "Listen Labs runs AI-moderated customer interviews and analyses them for brands. Ribbit Capital led its $69 million Series B in January 2026.",
+ "content": "<p>Listen Labs is an AI-first customer research platform. An AI interviewer runs one-to-one conversations with real people, asking follow-up questions as a human researcher would, and the platform then analyses and summarises the results: preferences between concepts, emotional reactions, ranked choices, hesitation moments and gaps between what people say and do. Its website lists uses such as pricing tests, consumer journey maps, multi-market research, brand tracking, concept and prototype testing, creative testing and usability testing, for insight teams, brand marketers, product managers, UX researchers and agencies.</p><p>Listen Labs was cofounded by Alfred Wahlforss and Florian Juengermann, according to investor Pear VC. In January 2026 it announced a $69 million Series B led by Ribbit Capital, with Evantic and existing investors Sequoia Capital, Conviction and Pear VC; Pear said that took total funding to $100 million, and Research Live reported that it followed a $27 million Series A in 2025. The company said it had grown annualised revenue fifteen-fold in nine months, had interviewed more than a million people, and counted Microsoft, Sweetgreen, Perplexity and Robinhood as customers; these figures are the company's own.</p><p>Listen Labs does not publish prices; companies book a demo. It suits research and product teams that run many studies and want results in days rather than weeks, and competes with survey and research platforms such as Qualtrics, UserTesting and Outset.</p><p><em>We have not used Listen Labs for this page. It brings together Listen Labs's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI customer research",
+  "platform": "Web",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI-moderated customer interviews with automatic analysis for brands",
+  "maker": {
+   "name": "Listen Labs",
+   "url": "https://listenlabs.ai/"
+  },
+  "team": [
+   {
+    "name": "Alfred Wahlforss",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Florian Juengermann",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://framerusercontent.com/images/dbvdE5wpNAcvbsmVZtbg44jdcY.png",
+    "alt": "Listen Labs logo in white on a bright blue background",
+    "credit": "Image: Listen Labs (listenlabs.ai)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://image.mux.com/MFAGgLX345z1iANIZfwk8waEapJfwxEajukatmq00ojQ/thumbnail.webp?time=0&width=1080",
+    "alt": "Portrait of a woman in a green sweater against a blue backdrop, a still from a video on Listen Labs' homepage",
+    "credit": "Image: Listen Labs (listenlabs.ai)",
+    "w": 1080,
+    "h": 1440
+   }
+  ],
+  "use_cases": [
+   "Running AI-moderated customer interviews at scale",
+   "Testing concepts, prototypes and ad creative",
+   "Pricing and brand tracking studies",
+   "Usability testing",
+   "Research across several markets and languages"
+  ],
+  "audience": {
+   "fit": [
+    "consumer insights and brand teams",
+    "product managers and UX researchers",
+    "research agencies running many studies"
+   ],
+   "not_fit": [
+    "teams that need only a simple survey tool",
+    "buyers who want published self-serve prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Listen Labs does not publish prices; companies book a demo.",
+   "url": "https://listenlabs.ai/",
+   "plans": [
+    {
+     "name": "Listen Labs platform",
+     "price": "Quote on request",
+     "detail": "Book a demo"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Combines interviews and analysis in one tool",
+   "Fast turnaround compared with traditional research",
+   "Backed by Ribbit Capital and Sequoia"
+  ],
+  "cons": [
+   "No public pricing",
+   "Customer and growth figures are the company's own"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Listen Labs. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Qualtrics",
+     "url": "https://www.qualtrics.com/",
+     "what": "Survey and experience management platform",
+     "starts_at": "See its own website",
+     "difference": "Enterprise survey platform with AI features."
+    },
+    {
+     "name": "UserTesting",
+     "url": "https://www.usertesting.com/",
+     "what": "Human insight and usability testing",
+     "starts_at": "See its own website",
+     "difference": "Recorded user tests with real people."
+    },
+    {
+     "name": "Outset",
+     "url": "https://outset.ai/",
+     "what": "AI-moderated research interviews",
+     "starts_at": "See its own website",
+     "difference": "Close rival in AI-led interviews."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Listen Labs do?",
+    "a": "It runs AI-moderated interviews with real people and analyses the answers for brands and product teams."
+   },
+   {
+    "q": "How much has Listen Labs raised?",
+    "a": "Pear VC said its $69 million Series B in January 2026 took total funding to $100 million."
+   },
+   {
+    "q": "Who founded Listen Labs?",
+    "a": "Alfred Wahlforss and Florian Juengermann, according to Pear VC."
+   },
+   {
+    "q": "Who uses Listen Labs?",
+    "a": "The company names Microsoft, Sweetgreen, Perplexity and Robinhood among its customers."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Listen Labs homepage",
+    "url": "https://listenlabs.ai/"
+   },
+   {
+    "label": "Pear VC: Listen Labs raises $69M Series B",
+    "url": "https://pear.vc/listen-labs-series-b/"
+   },
+   {
+    "label": "Research Live: Listen Labs raises $69m",
+    "url": "https://www.research-live.com/article/news/listen-labs-raises-69m/id/5146023"
+   },
+   {
+    "label": "CustomerThink: Listen Labs raises $69 million Series B",
+    "url": "https://customerthink.com/?p=1075298"
+   }
+  ]
+ }
+}

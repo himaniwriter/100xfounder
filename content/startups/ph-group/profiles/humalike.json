@@ -1,0 +1,96 @@
+{
+ "slug": "humalike",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/humalike-2",
+ "excerpt": "Humalike builds a behaviour layer for AI agents: turn-taking, proactiveness, group social norms and memory of people, offered as APIs, a Hermes Agent plugin and AI NPCs for GTA roleplay servers. Free developer tier; Pro $0.002 per interaction. What it does and alternatives.",
+ "content": "<p>Humalike works on the part of AI agents that capable models still get wrong: behaving naturally around people. Its site lists the skills it builds as turn-taking (knowing when to speak, wait or interrupt), proactiveness, the social norms and in-jokes of a group, memory of people rather than sessions, and awareness of events in a chat, game or room. It sells these as APIs for companions, gaming characters and hardware, and publishes research, including two papers on arXiv about AI in group conversations.</p><p>Humalike has launched on Product Hunt three times. The first, on 1 July 2026, introduced the social layer for AI agents and finished #2 for the day with 457 upvotes and 163 comments. Humalike x Hermes, on 22 July 2026, was a social intelligence plugin for the Hermes Agent and finished #1 with 462 upvotes and 90 comments. A third launch, Humalike x GTA RP, brought its AI NPCs to Grand Theft Auto roleplay servers; we could not retrieve that launch's figures from Product Hunt.</p><p>The AI NPCs product gives roleplay servers characters with their own identity, personality and persistent memory: they recognise players, react to clothing, weapons, gunfire and game events, decide what to reveal or hide, and can be organised into gangs, EMS teams or businesses that share memories. Humalike is the trading name of Soofte, Inc., according to its legal pages, which also say it is GDPR compliant, with SOC 2 Type II and ISO 27001 in progress.</p><p><em>We have not tested Humalike ourselves. This page brings together Humalike's official site, pricing, NPC and legal pages, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agent infrastructure",
+  "platform": "API, Hermes Agent plugin and game-server NPCs",
+  "starts_at": "Free developer tier; Pro $0.002 per interaction",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Behaviour layer that gives AI agents turn-taking, proactiveness and social memory",
+  "maker": {"name": "Humalike (Soofte, Inc.)", "url": "https://humalike.ai/"},
+  "ph": {"rank": 2, "votes": 457, "comments": 163, "followers": 1840, "launched": "2026-07-01", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Making an AI participant in a group chat speak at the right moments",
+   "Giving companions memory of people across conversations",
+   "Running AI NPCs on a GTA roleplay server that remember players",
+   "Adding social skills to a Hermes Agent through a plugin",
+   "Building hardware assistants that know when to act or wait"
+  ],
+  "audience": {
+   "fit": [
+    "build AI companions, game characters or group-chat agents",
+    "find your agent technically capable but socially awkward",
+    "run a roleplay game server and want characters that remember players"
+   ],
+   "not_fit": [
+    "need a finished end-user chatbot: Humalike sells a behaviour layer and NPC service",
+    "need SOC 2 or ISO 27001 certification today: both are listed as in progress",
+    "want the GTA NPC product's price: the pricing page covers the API only"
+   ]
+  },
+  "pricing": {
+   "intro": "Humalike's pricing page lists usage-based API plans in US dollars.",
+   "url": "https://humalike.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Developer", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "10,000 interactions a month, basic social engine, community support"},
+    {"name": "Pro", "price": "$0.002 per interaction", "amount": 0.002, "currency": "USD", "detail": "Unlimited interactions, advanced timing and interruptions, persistent memory, priority email support"},
+    {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Volume discounts, custom SLA, dedicated solutions engineer, on-premise options"}
+   ],
+   "notes": [
+    "The AI NPC product for game servers is sold through a contact form; its prices are not on the pricing page."
+   ]
+  },
+  "alternatives": {
+   "intro": "Inworld and CopilotKit are on Product Hunt's alternatives list; Convai is another platform for conversational game characters. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Inworld", "url": "https://inworld.ai/", "what": "Voice AI, text-to-speech and LLM routing, known for game characters", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 7, "ph_url": "https://www.producthunt.com/products/inworld-ai", "difference": "Strong on voice and character tooling; Humalike focuses on timing, proactiveness and group social behaviour."},
+    {"name": "CopilotKit", "url": "https://www.copilotkit.ai/", "what": "Framework for connecting agents to users in apps", "starts_at": "See its pricing page", "ph_rating": 4.71, "ph_reviews": 7, "ph_url": "https://www.producthunt.com/products/copilotkit", "difference": "Puts agents into app interfaces; Humalike shapes how agents behave socially."},
+    {"name": "Convai", "url": "https://convai.com/", "what": "Conversational AI characters for games and virtual worlds", "starts_at": "See its pricing page", "difference": "Comparable for game NPCs; Humalike's NPC product is aimed at roleplay servers with shared group memories."}
+   ],
+   "more": "Product Hunt also lists Claude, Switch and Vapi."
+  },
+  "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/humalike-2/reviews", "as_of": "2026-10-14"},
+  "pros": [
+   "Free developer tier with 10,000 interactions a month",
+   "Simple per-interaction pricing on Pro",
+   "Research published openly on arXiv",
+   "NPCs with persistent memory and group relationships"
+  ],
+  "cons": [
+   "SOC 2 and ISO 27001 still in progress",
+   "NPC product pricing not published",
+   "Relies on several third-party AI providers, listed on its sub-processors page"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/humalike-2",
+   "x": {"none": "We found no posts about Humalike on X to link yet.", "search_url": "https://x.com/search?q=humalike&f=live", "profile_url": "https://twitter.com/humalike"}
+  },
+  "faq": [
+   {"q": "What is Humalike?", "a": "A company building a behaviour layer for AI agents: turn-taking, proactiveness, group social norms, memory of people and awareness of events, offered as APIs and products."},
+   {"q": "How much does Humalike cost?", "a": "The Developer tier is free with 10,000 interactions a month; Pro is $0.002 per interaction; Enterprise is custom."},
+   {"q": "What is Humalike x GTA RP?", "a": "Humalike's AI NPCs for Grand Theft Auto roleplay servers: characters with their own personality and memory that recognise players, react to game events and can form gangs or businesses."},
+   {"q": "What is Humalike x Hermes?", "a": "A social intelligence plugin for the Hermes Agent, launched on Product Hunt on 22 July 2026."},
+   {"q": "Is my data safe?", "a": "Humalike says it is GDPR compliant and encrypts data in transit and at rest, with SOC 2 Type II and ISO 27001 in progress. Its sub-processors page lists the AI providers used."}
+  ],
+  "sources": [
+   {"label": "Humalike official site", "url": "https://humalike.ai/"},
+   {"label": "Humalike pricing", "url": "https://humalike.ai/pricing"},
+   {"label": "Humalike AI NPCs", "url": "https://humalike.ai/npc"},
+   {"label": "Humalike cookie policy", "url": "https://humalike.ai/legal/cookies"},
+   {"label": "Humalike sub-processors", "url": "https://humalike.ai/legal/subprocessors"},
+   {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/humalike-2"},
+   {"label": "Product Hunt launch: Humalike x Hermes", "url": "https://www.producthunt.com/products/humalike-2?launch=humalike-x-hermes"},
+   {"label": "Product Hunt launch: Humalike x GTA RP", "url": "https://www.producthunt.com/products/humalike-2?launch=humalike-x-gta-rp"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/humalike-2/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/4a0a48fd-89c5-4041-9391-36be8a007716.jpeg?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Humalike graphic 'AI still feels like AI. Smart isn't enough.' beside stiff agent chat replies", "credit": "Image: Humalike via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/cb26ffd1-a6b2-4a8f-9fcf-8918d176325d.jpeg?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Humalike statement 'we build what makes AI fit in among humans, not just answer them'", "credit": "Image: Humalike via Product Hunt"}
+  ]
+ }
+}

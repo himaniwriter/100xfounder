@@ -1,0 +1,331 @@
+{
+ "input": "https://www.producthunt.com/posts/wisry-3",
+ "final_url": "https://www.producthunt.com/products/wisry?launch=wisry-3",
+ "launch": {
+  "slug": "wisry-3",
+  "name": "Wisry ",
+  "tagline": "Clone the ads already winning in your market, at scale",
+  "featuredAt": "2026-09-11T00:01:00-07:00",
+  "dailyRank": "3",
+  "weeklyRank": "13",
+  "points": 283,
+  "commentsCount": 47,
+  "pricingType": "payment_required",
+  "description": "AI agents that run the whole play: scan the Meta and TikTok ad libraries for the ads already winning in your market, clone them into your brand as static and video ads, and launch to Meta and Google, optimized for ROAS. Winning ads, without the guesswork.",
+  "makers": [
+   {
+    "name": "Ruta Jaskunaite",
+    "username": "ruta_jaskunaite",
+    "headline": "Building Wisry · AI ads for DTC brands"
+   },
+   {
+    "name": "Fardad Zand",
+    "username": "fardaddy",
+    "headline": "Serial entrepreneur"
+   },
+   {
+    "name": "Mohammad Mahini",
+    "username": "m_mahini",
+    "headline": "AI Builder @ Wisry.ai"
+   },
+   {
+    "name": "Kasra Vafaey",
+    "username": "kazzv",
+    "headline": "Chief of Agents & Product @ Wisry.ai"
+   },
+   {
+    "name": "Alireza Ghods",
+    "username": "alireza_ghods1",
+    "headline": null
+   },
+   {
+    "name": "Kruti Parekh",
+    "username": "krutiparekh16",
+    "headline": ""
+   }
+  ],
+  "hunter": "Jonno Riekwel",
+  "media": [
+   {
+    "uuid": "ddf37319-b496-4b8a-8dcd-494dc6f989b7.png",
+    "type": "image",
+    "w": 1621,
+    "h": 970,
+    "video": null
+   },
+   {
+    "uuid": "9d9be0f1-3d36-456a-be57-038662c63a62.png",
+    "type": "image",
+    "w": 1672,
+    "h": 941,
+    "video": null
+   },
+   {
+    "uuid": "a4c042d3-4514-4505-847a-e5b13889bab9.png",
+    "type": "image",
+    "w": 1622,
+    "h": 970,
+    "video": null
+   },
+   {
+    "uuid": "a2abca18-da82-4a4b-bddd-e5c3cebb78d9.png",
+    "type": "image",
+    "w": 1672,
+    "h": 941,
+    "video": null
+   },
+   {
+    "uuid": "615dad81-3279-4e4e-91f0-3c5d6dba52de.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "31505ece-222c-42b8-b497-2c8db74aa437.png",
+    "type": "image",
+    "w": 1621,
+    "h": 970,
+    "video": null
+   },
+   {
+    "uuid": "af18fa0a-bf8b-4ae7-a31f-b1fc2eb9e43f.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/OZn2Z7KxX3E?si=z6uy126SpqktC72n"
+   },
+   {
+    "uuid": "fa7c5eff-30d2-4632-9dbc-749b8ab1c662.gif",
+    "type": "interactive_demo",
+    "w": 1920,
+    "h": 973,
+    "video": "https://demo.storylane.com/share/sb2ryojkgqok"
+   }
+  ],
+  "links": [
+   "WISRY.AI",
+   "twitter.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    3
+   ]
+  ]
+ },
+ "product": {
+  "name": "Wisry ",
+  "slug": "wisry",
+  "tagline": "Clone the ads already winning in your market, at scale",
+  "description": "AI agents that run the whole play: scan the Meta and TikTok ad libraries for the ads already winning in your market, clone them into your brand as static and video ads, and launch to Meta and Google, optimized for ROAS. Winning ads, without the guesswork.",
+  "websiteUrl": "https://WISRY.AI",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 462,
+  "twitterUrl": "https://twitter.com/wisry_ai",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/ddf37319-b496-4b8a-8dcd-494dc6f989b7.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/9d9be0f1-3d36-456a-be57-038662c63a62.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/a4c042d3-4514-4505-847a-e5b13889bab9.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/a2abca18-da82-4a4b-bddd-e5c3cebb78d9.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/615dad81-3279-4e4e-91f0-3c5d6dba52de.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/31505ece-222c-42b8-b497-2c8db74aa437.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5856076",
+   "depth": 0,
+   "author": "Maciej Baron",
+   "username": "maciej_baron",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I am not trying to sound too cynical, but is \"cloning\" here just, well, unashamingly stealing other people's work? It makes sense to research your competitors and see what works and what doesn't – that's part of marketing. But framing it as \"cloning\" is a bit on the nose, don't you think?"
+  },
+  {
+   "id": "5856133",
+   "depth": 1,
+   "author": "Ruta Jaskunaite",
+   "username": "ruta_jaskunaite",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@maciej_baron &nbsp;Not cynical, it's the right question, and the word is doing us no favours here. What gets reused is the format: the hook type, the pacing, where the proof sits, how it closes. Nothing else crosses over. No footage, no copy, no product shots, no brand assets. The output is your product, your script, your footage or avatar. Formats aren't anyone's property, and marketers have kept swipe files of them for decades. We just made that step fast and showed the sources. Where I'd push back a little: \"research your competitors and see what works\" is exactly what the research step is. Cloning is what happens after, when you take the format and build your own ad on it. On the naming, fair. \"Clone\" is the word people search for, which is why it's on the page. If you've got a better one, I'm genuinely open."
+  },
+  {
+   "id": "5857979",
+   "depth": 0,
+   "author": "Maryam Shafaqat",
+   "username": "maryam_shafaqat2",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I work on ads for three smaller direct-to-consumer brands, and the issue that gets me going is that which Sansa brought up the possibility of everybody having identical-looking creatives. While @ruta_jaskunaite solution of citing sources definitely goes a long way, I would need to see the platform actually warning me of saturated formats in my industry."
+  },
+  {
+   "id": "5858222",
+   "depth": 1,
+   "author": "Ruta Jaskunaite",
+   "username": "ruta_jaskunaite",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@maryam_shafaqat2 &nbsp;That's a genuinely good feature request, and honestly we don't have it as a warning today. What you do get right now: the research view shows, for every format it ranks, how many variants is has, and how long it's been live. So a format with 17 variants running for 60+ days in your niche is visible as saturated, but you have to read it, the tool doesn't flag it. Turning that into an explicit \"this format is crowded in your industry, here's a less used one that's still performing\" is a small step from where we are, and you've just moved it up the list. If you're up for it, I'd love to show you what the research view looks like for one of your three brands and hear where you'd want the line drawn."
+  },
+  {
+   "id": "5858323",
+   "depth": 0,
+   "author": "Don Sevcik",
+   "username": "don_bro1",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I have a one-man online business and my problem has never been financial; it has always been creativity. I cannot afford a marketing company and I am not a video editor. This would be the exact solution I have been looking for if it really does take me from seeing a competitor’s good ad to having mine running."
+  },
+  {
+   "id": "5858413",
+   "depth": 1,
+   "author": "Ruta Jaskunaite",
+   "username": "ruta_jaskunaite",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@don_bro1 &nbsp;Don, you're exactly who we built it for. It does take you from that ad to yours running, and you don't touch an editor: the agents research, write, build the cut, and publish to your ad account. If something's off you tell the agent in chat and it fixes it. The honest caveat: the first cut is a strong draft, not magic. Expect to make a few changes before you launch. Send me your store URL, here or at ruta@wisry.ai , and I'll run one so you can judge it on your own product."
+  },
+  {
+   "id": "5858331",
+   "depth": 0,
+   "author": "Julie Hsu",
+   "username": "jui_nath1",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I appreciate that you're seeking the failures rather than just votes of approval. Honest feedback from me: in fashion, there's more going on to make the ad successful than the hook structure, which is why the \"skeleton\" of the hook may not translate as well in visually-focused niches as it would in gadget ads."
+  },
+  {
+   "id": "5858423",
+   "depth": 1,
+   "author": "Ruta Jaskunaite",
+   "username": "ruta_jaskunaite",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jui_nath1 &nbsp;Fair point, and that's why the clone isn't just the hook. Wisry reads the whole ad: pacing, shot rhythm, mood, how the product is shown, how it closes. Then it rebuilds that around your garments, your palette and your type, for video as much as for statics. Which brand are you working on? Happy to run one and show you rather than argue it."
+  },
+  {
+   "id": "5857969",
+   "depth": 0,
+   "author": "Mehwish Rafiq",
+   "username": "mehwish_rafiq",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I've wasted real money waiting for creators to create hits that have never happened. It seems like an automatic research-to-release, with references, is the only sincere effort to address the problem, rather than just making the process go faster."
+  },
+  {
+   "id": "5858224",
+   "depth": 1,
+   "author": "Ruta Jaskunaite",
+   "username": "ruta_jaskunaite",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mehwish_rafiq &nbsp;Thanks Mehwish, you've put it better than our landing page does. Faster guessing is still guessing. The thing that actually changes the odds is starting from evidence, and being able to see the evidence. Sorry about the money spent waiting on creators. That exact loop is why the avatar and script steps exist, so the first draft is out the same day and the creator budget goes to what's already proven to work. If you want to run one of your products through it, I'll happily look at the output with you."
+  },
+  {
+   "id": "5858078",
+   "depth": 0,
+   "author": "Keo Sar",
+   "username": "keo_nha_cai32",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "How does Wisry deal with advertisements that depend greatly on the likeness of an individual? While regeneration of footage and avatars looks promising on paper, likeness is much harder to deal with than music and copy."
+  },
+  {
+   "id": "5858238",
+   "depth": 1,
+   "author": "Ruta Jaskunaite",
+   "username": "ruta_jaskunaite",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@keo_nha_cai32 Good one, and the honest answer has a limit in it. We never recreate the person from a source ad that isn't yours. The presenter in your version is either one of our own avatars or your own footage. The agent picks by role and audience fit, not by resemblance, so you don't end up with a lookalike of someone's founder or a creator. If it's your own ad, that's different. You keep your footage and your people, and just change the hook, the script or the format. That's the fastest way to make variations of something that already works for you. Where it bites: if someone else's ad works mainly because of who's in it, a known face, a founder people trust, the clone won't carry that. What transfers is the format and the argument, not the person. For most DTC ads that's fine, because the format is doing the work. For a celebrity-led ad it isn't."
+  },
+  {
+   "id": "5858208",
+   "depth": 0,
+   "author": "Jacqui Lillyman Dencic",
+   "username": "98win10",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Interested to know how it deals with those niches wherein all competitors are showing nearly identical ads. Is there any mechanism for this by the tool?"
+  },
+  {
+   "id": "5858244",
+   "depth": 1,
+   "author": "Ruta Jaskunaite",
+   "username": "ruta_jaskunaite",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@98win10 &nbsp;Same question Maryam raised further up, so honest answer again: there isn't an automatic \"this niche is saturated\" mechanism yet. It's now near the top of the list because of this thread. What you can do today: the research view shows how many variants, and for how long this ad is run, so a crowded format is visible. From there you can point the agent at a format from an adjacent category instead, or keep the winning structure and have it fan out different hooks and angles, which is usually where the differentiation comes from anyway. Which niche are you in?"
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "slug": "nomagic",
+ "website": "https://nomagic.ai/",
+ "excerpt": "Nomagic is a Polish company making AI-powered robots for warehouse picking, packing and sorting. Funding, customers and alternatives.",
+ "content": "<p>Nomagic is a Warsaw-based robotics company that builds AI-driven robotic arms for warehouses. Its robots pick individual items, pack them and sort them, jobs that are hard to automate because products vary so much in shape and packaging. Its site now describes this as physical AI for end-to-end warehouse automation in the world's most complex warehouses. Tech.eu reported that the systems include 24/7 AI-based monitoring and a remote operations platform, so a small team can keep many robots running around the clock.</p><p>The company was started in 2017 by Kacper Nowicki, its chief executive, Marek Cygan and Tristan d'Orgeval. It serves retailers, e-commerce distributors, manufacturers and third-party logistics providers; customer logos on its site include ASOS, Arvato, Brack.Alltron, apo.com and BestSecret.</p><p>In February 2025 Nomagic raised a $44 million Series B led by the venture arm of the European Bank for Reconstruction and Development, with existing investors Khosla Ventures and Almaz Capital, including venture debt previously signed with the European Investment Bank. The EBRD said its money would support product development, sales and marketing, and Nowicki said the plan was to expand deployments across Europe over two years. Startup press reported a further $10 million Series B extension in early 2026 led by Cogito Capital Partners, bringing total funding to over $84 million, aimed at growth in the US and work on vision-language-action models.</p><p>Nomagic does not publish prices. Warehouse robots are usually sold through a project that starts with a site assessment; buyers should ask about pricing models such as robot-as-a-service versus purchase.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Warehouse robotics",
+  "platform": "Robotic systems with remote monitoring",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI robots that pick, pack and sort items in e-commerce and logistics warehouses",
+  "maker": {
+   "name": "Nomagic",
+   "url": "https://nomagic.ai/"
+  },
+  "gallery": [
+   {
+    "url": "https://nomagic.ai/wp-content/uploads/2026/03/CQ1A0514_grade-1024x683.jpg",
+    "alt": "An engineer working on a laptop next to a white Nomagic robotic arm with a gripper over a tote of items",
+    "credit": "Image: Nomagic (nomagic.ai)",
+    "w": 1024,
+    "h": 683
+   },
+   {
+    "url": "https://nomagic.ai/wp-content/uploads/2026/03/cropped-nomagic_favicon_48px-180x180.png",
+    "alt": "Nomagic icon: white linked circles like a molecule on a green square",
+    "credit": "Image: Nomagic (nomagic.ai)",
+    "w": 180,
+    "h": 180
+   }
+  ],
+  "use_cases": [
+   "Automating item picking in e-commerce fulfilment",
+   "Packing orders with robotic arms",
+   "Sorting items for outbound orders",
+   "Running warehouse operations around the clock"
+  ],
+  "audience": {
+   "fit": [
+    "run a high-volume e-commerce or 3PL warehouse",
+    "struggle to hire for picking and packing roles",
+    "handle a wide variety of products"
+   ],
+   "not_fit": [
+    "run a small stockroom",
+    "need a ready-made off-the-shelf product with a list price"
+   ]
+  },
+  "pricing": {
+   "intro": "Nomagic does not publish prices; deployments start with a conversation and site assessment.",
+   "plans": [
+    {
+     "name": "Nomagic robotic systems",
+     "price": "Quote on request",
+     "detail": "Picking, packing and sorting"
+    }
+   ],
+   "notes": [],
+   "url": "https://nomagic.ai/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Handles varied items with AI",
+   "Backed by EBRD, Khosla Ventures and others",
+   "Remote monitoring keeps robots running 24/7"
+  ],
+  "cons": [
+   "No public pricing",
+   "Requires a warehouse integration project"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Covariant",
+     "url": "https://covariant.ai/",
+     "what": "AI for robotic picking",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "AI models for picking robots."
+    },
+    {
+     "name": "RightHand Robotics",
+     "url": "https://www.righthandrobotics.com/",
+     "what": "Robotic piece-picking",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "US piece-picking robots for fulfilment."
+    },
+    {
+     "name": "Ocado Intelligent Automation",
+     "url": "https://www.ocadointelligentautomation.com/",
+     "what": "Warehouse automation and robotic picking",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Part of Ocado Group's automation business."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Nomagic make?",
+    "a": "AI-powered robotic arms that pick, pack and sort items in warehouses."
+   },
+   {
+    "q": "Where is Nomagic based?",
+    "a": "Warsaw, Poland."
+   },
+   {
+    "q": "How much has Nomagic raised?",
+    "a": "A $44 million Series B in February 2025 and a reported $10 million extension in 2026, for more than $84 million in total."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Tech.eu: Polish robotics startup Nomagic secures $44M Series B (26 Feb 2025)",
+    "url": "https://tech.eu/2025/02/26/polish-robotics-startup-nomagic-secures-44m-series-b/"
+   },
+   {
+    "label": "EBRD: EBRD invests in Polish robotics company Nomagic",
+    "url": "https://www.ebrd.com/home/news-and-events/news/2025/ebrd-invests-in-polish-based-robotics-company-nomagic.html"
+   },
+   {
+    "label": "The Recursive: Nomagic Series B extension",
+    "url": "https://therecursive.com/?p=43912"
+   },
+   {
+    "label": "Nomagic official site",
+    "url": "https://nomagic.ai/"
+   }
+  ],
+  "team": [
+   {
+    "name": "Kacper Nowicki",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Marek Cygan",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Tristan d'Orgeval",
+    "role": "Cofounder"
+   }
+  ]
+ }
+}

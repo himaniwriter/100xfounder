@@ -1,0 +1,218 @@
+{
+  "type": "post",
+  "slug": "model-context-protocol-mcp-explained",
+  "title": "Model Context Protocol (MCP) explained: what it is and why it won",
+  "excerpt": "What the Model Context Protocol is, how hosts, clients and servers work, why OpenAI, Google and Microsoft adopted it, and the security risks teams must manage.",
+  "category": "in-depth",
+  "tags": [
+    "Model Context Protocol",
+    "MCP",
+    "Anthropic",
+    "OpenAI",
+    "AI agents",
+    "AI security",
+    "Linux Foundation",
+    "developer tools"
+  ],
+  "content": "<p>The Model Context Protocol (MCP) is an open standard that lets an AI app such as Claude, ChatGPT, Gemini, Copilot or Cursor plug into outside tools and data through one shared interface, so nobody has to build a custom integration for every pairing of model and service. Anthropic released it in November 2024. Within about a year OpenAI, Google, Microsoft, AWS and GitHub had all adopted it, and in December 2025 Anthropic handed it to a Linux Foundation fund, which is why most AI tools now support it.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>MCP is a client-server protocol that runs on JSON-RPC 2.0. AI apps act as hosts, and they connect to MCP servers that expose tools, resources and prompts.</li>\n<li>It went from Anthropic's launch on 25 November 2024 to adoption by OpenAI (March 2025), Google (April 2025), Microsoft, GitHub, AWS and Cloudflare.</li>\n<li>Since December 2025 MCP has been governed under the Agentic AI Foundation, a directed fund of the Linux Foundation. The current spec revision is dated 28 July 2026 and makes the protocol stateless.</li>\n<li>The main risks are prompt injection, tool poisoning and over-broad tokens.</li>\n</ul>\n\n<h2>What MCP is, in plain terms</h2>\n<p>The official docs compare MCP to a USB-C port for AI applications: one standard socket that lets any compliant app connect to any compliant data source or tool, <a href=\"https://modelcontextprotocol.io/docs/getting-started/intro\">according to the Model Context Protocol website</a>. Instead of a custom connector for every chatbot-and-service pairing, a company builds one server and every MCP-capable assistant can use it.</p>\n<p>Anthropic launched the protocol on 25 November 2024 with three pieces: the specification and SDKs, support for local MCP servers in the Claude Desktop apps, and an open-source repository of ready-made servers for Google Drive, Slack, GitHub, Git, Postgres and Puppeteer, <a href=\"https://www.anthropic.com/news/model-context-protocol\">according to Anthropic</a>. At launch it named Block and Apollo as early adopters, along with developer-tool makers Zed, Replit, Codeium and Sourcegraph.</p>\n\n<h2>How MCP works: hosts, clients and servers</h2>\n<p>MCP has three roles. The <strong>host</strong> is the AI application the user sees, such as a chat app or an IDE. Inside it, the host runs one <strong>client</strong> per connection, and each client talks to exactly one <strong>server</strong>. A server is a small program or web service that exposes a particular capability, such as your files, a CRM or a payments API, <a href=\"https://modelcontextprotocol.io/specification/2025-06-18/architecture\">according to the MCP architecture spec</a>.</p>\n<p>The design is deliberate. Servers should be easy to build and combine, but no server can read the whole conversation or see into other servers: the host keeps the chat history and enforces security boundaries. Each side declares its features, and only mutually agreed capabilities are used.</p>\n<p>All messages are JSON-RPC 2.0, a lightweight format for remote procedure calls, <a href=\"https://modelcontextprotocol.io/specification/latest\">according to the specification</a>.</p>\n<h3>The building blocks: tools, resources and prompts</h3>\n<p>Servers can offer three kinds of feature:</p>\n<ul>\n<li><strong>Tools:</strong> functions the AI model can call, such as \"create an issue\" or \"run this query\".</li>\n<li><strong>Resources:</strong> context and data that the user or the model can read.</li>\n<li><strong>Prompts:</strong> templated messages and workflows that users can start.</li>\n</ul>\n<p>Clients can offer features to servers in return. The main one today is <strong>elicitation</strong>, which lets a server ask the user for more information partway through a task. Elicitation was added in the 2025-06-18 revision, <a href=\"https://modelcontextprotocol.io/specification/2025-06-18/changelog\">according to the changelog</a>. Two older client features, <strong>sampling</strong> (letting a server borrow the host's model) and <strong>roots</strong> (telling a server which folders it may use), were deprecated in the 2026-07-28 revision along with logging. They keep working for at least 12 months, but new implementations should avoid them, <a href=\"https://modelcontextprotocol.io/specification/2026-07-28/changelog\">according to the 2026-07-28 changelog</a>.</p>\n<!-- xf-image-2 -->\n\n<h3>Transports: local stdio and remote Streamable HTTP</h3>\n<p>With <strong>stdio</strong>, the client launches the server as a local subprocess and the two exchange messages over standard input and output, which suits tools that run on your own laptop. With <strong>Streamable HTTP</strong>, the server is an independent process that can serve many clients over HTTP POST and GET, optionally streaming responses with Server-Sent Events, <a href=\"https://modelcontextprotocol.io/specification/2025-06-18/basic/transports\">according to the transport spec</a>. The spec requires HTTP servers to validate the Origin header to block DNS-rebinding attacks, and it recommends that local servers bind only to localhost.</p>\n<p>Streamable HTTP replaced the original HTTP+SSE transport in the 2025-03-26 revision, which also added an authorization framework based on OAuth 2.1 and annotations that mark whether a tool is read-only or destructive, <a href=\"https://modelcontextprotocol.io/specification/2025-03-26/changelog\">according to the 2025-03-26 changelog</a>.</p>\n\n<h2>How the spec has changed since 2024</h2>\n<p>MCP ships dated revisions rather than version numbers. The main milestones, drawn from the official changelogs:</p>\n<table>\n<thead><tr><th>Revision</th><th>Headline changes</th></tr></thead>\n<tbody>\n<tr><td>2024-11-05</td><td>First public version, launched alongside Anthropic's announcement</td></tr>\n<tr><td>2025-03-26</td><td>OAuth 2.1 authorization, Streamable HTTP, tool annotations</td></tr>\n<tr><td>2025-06-18</td><td>Elicitation, structured tool output, stricter OAuth token rules</td></tr>\n<tr><td>2025-11-25</td><td>Experimental tasks, simpler client registration, formal governance</td></tr>\n<tr><td>2026-07-28</td><td>Stateless protocol without sessions; tasks become an extension; roots, sampling and logging deprecated</td></tr>\n</tbody>\n</table>\n<p>The 2026-07-28 revision is the biggest rewrite so far. Every request now carries its own protocol version and client capabilities, so servers no longer need to hold per-connection state. That makes MCP servers easier to run behind ordinary load balancers, <a href=\"https://modelcontextprotocol.io/specification/2026-07-28/changelog\">according to the changelog</a>. The release also formalised optional extensions, including Tasks, MCP Apps for interactive UI inside chats, and enterprise-managed authorization, <a href=\"https://blog.modelcontextprotocol.io/posts/2026-07-28/\">according to the MCP blog</a>. The 2025-11-25 entries come from <a href=\"https://modelcontextprotocol.io/specification/2025-11-25/changelog\">the 2025-11-25 changelog</a>.</p>\n<p>Next on the roadmap, published on 22 August 2026, are HTTP-only transport (including for local servers) and stronger agent identity for enterprises, <a href=\"https://blog.modelcontextprotocol.io/posts/mcp-roadmap/\">according to the MCP blog</a>.</p>\n\n<h2>Why every AI tool supports MCP</h2>\n<p>Adoption came fast, and largely from Anthropic's competitors:</p>\n<ul>\n<li><strong>OpenAI</strong> added MCP support to its Agents SDK in March 2025 and said support for the ChatGPT desktop app and the Responses API would follow, <a href=\"https://techcrunch.com/2025/03/26/openai-adopts-rival-anthropics-standard-for-connecting-ai-models-to-data/\">according to TechCrunch</a>. At DevDay in October 2025 it previewed an Apps SDK that shares context through MCP, <a href=\"https://www.infoq.com/news/2025/10/openai-dev-day\">according to InfoQ</a>.</li>\n<li><strong>Google:</strong> Google DeepMind CEO Demis Hassabis said in April 2025 that Gemini models and the Gemini SDK would support MCP, <a href=\"https://techcrunch.com/2025/04/09/google-says-itll-embrace-anthropics-standard-for-connecting-ai-models-to-data/\">according to TechCrunch</a>. In December 2025 Google Cloud launched fully managed remote MCP servers for Google Maps, BigQuery, Compute Engine and Kubernetes Engine, <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services\">according to Google Cloud</a>.</li>\n<li><strong>Microsoft</strong> set out plans at Build in May 2025 for MCP support in Windows 11, including a registry of vetted servers and least-privilege controls, <a href=\"https://blogs.windows.com/windowsexperience/2025/05/19/securing-the-model-context-protocol-building-a-safer-agentic-future-on-windows/\">according to the Windows Experience Blog</a>. MCP support in VS Code became generally available in version 1.102 on 14 July 2025, <a href=\"https://github.blog/changelog/2025-07-14-model-context-protocol-mcp-support-in-vs-code-is-generally-available/\">according to GitHub</a>.</li>\n<li><strong>Cloudflare</strong> launched tooling for hosting remote MCP servers with OAuth in March 2025, <a href=\"https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/\">according to Cloudflare</a>.</li>\n<li><strong>AWS</strong> previewed a managed remote AWS MCP Server in November 2025. It can call more than 15,000 AWS APIs under IAM permissions, <a href=\"https://aws.amazon.com/about-aws/whats-new/2025/11/aws-mcp-server\">according to AWS</a>.</li>\n</ul>\n<p>The logic is network effects: every new assistant needed MCP to reach existing servers, and every SaaS company could reach all assistants with one server. By December 2025 there were more than 10,000 active public MCP servers and over 97 million monthly SDK downloads across Python and TypeScript, <a href=\"https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation\">according to Anthropic</a>. By July 2026 the Tier 1 SDKs were close to half a billion downloads a month, and the TypeScript and Python SDKs had each passed one billion total downloads, <a href=\"https://blog.modelcontextprotocol.io/posts/2026-07-28/\">according to the MCP maintainers</a>. These are the project's own figures.</p>\n<!-- xf-image-3 -->\n\n<h2>Who runs MCP now: the Agentic AI Foundation and the Registry</h2>\n<p>On 9 December 2025 Anthropic donated MCP to the Agentic AI Foundation (AAIF), a directed fund under the Linux Foundation, <a href=\"https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation\">according to Anthropic</a>. Anthropic, Block and OpenAI co-founded the AAIF, with support from Google, Microsoft, AWS, Cloudflare and Bloomberg. Block's Goose agent and OpenAI's AGENTS.md joined as the other founding projects. Anthropic said MCP's existing governance model would stay in place. Neutral ownership makes MCP easier for enterprises and rivals to bet on.</p>\n<p>Finding servers is the other half of the story. The official MCP Registry launched in preview on 8 September 2025 at registry.modelcontextprotocol.io as an open catalogue and API for public servers, <a href=\"https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/\">according to the MCP blog</a>. Companies can build public or private \"sub-registries\" on top of it, and the community can flag spam, impersonation or malicious servers for removal. At launch the maintainers warned that the preview came with no guarantee that data would be preserved.</p>\n\n<h2>Security risks: prompt injection, tool poisoning and token scope</h2>\n<p>The specification itself warns that tools amount to arbitrary code execution and that hosts must get user consent before calling any tool, <a href=\"https://modelcontextprotocol.io/specification/latest\">according to the specification</a>.</p>\n<h3>Tool poisoning and rug pulls</h3>\n<p>In April 2025, Invariant Labs showed that a malicious server can hide instructions in a tool's description. The model reads them, but the user never sees them. In its demo against Cursor, a poisoned \"add\" tool tried to read the user's SSH key and MCP config file, <a href=\"https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks\">according to Invariant Labs</a>. The researchers also described \"rug pulls\", where a server changes its tool descriptions after the user has approved it, and \"shadowing\", where one server's description changes how the agent uses a trusted server. They recommend showing full tool descriptions, pinning server versions and isolating servers.</p>\n<h3>Prompt injection and the lethal trifecta</h3>\n<p>Developer Simon Willison describes a \"lethal trifecta\": an agent that has access to private data, is exposed to untrusted content and can communicate externally can be tricked into leaking data. MCP makes that combination easy to assemble by accident when users mix servers from different sources, <a href=\"https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/\">according to his analysis</a>. Microsoft listed cross-prompt injection, credential leakage and tool poisoning among the threats its Windows design is meant to contain, <a href=\"https://blogs.windows.com/windowsexperience/2025/05/19/securing-the-model-context-protocol-building-a-safer-agentic-future-on-windows/\">according to Microsoft</a>.</p>\n<h3>Tokens and authorization</h3>\n<p>For remote servers, authorization in MCP is optional but standardised. Over HTTP it follows OAuth 2.1 with PKCE, while local stdio servers are expected to read credentials from their environment instead. Clients must name the server a token is intended for, and servers must reject tokens issued for anyone else, <a href=\"https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization\">according to the authorization spec</a>. The security guidance bans \"token passthrough\", where a server forwards a user's token straight to a downstream API. It also advises starting with minimal scopes and asking for more only when a sensitive action actually requires it, because a stolen token with broad scopes can unlock everything, <a href=\"https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices\">according to the security best practices</a>.</p>\n<!-- xf-image-4 -->\n\n<h2>How founders and teams can use or build MCP servers</h2>\n<p>A practical path for startups:</p>\n<ol>\n<li><strong>Use before you build.</strong> Connect your team's assistant or IDE to official servers from the vendors you already use, such as GitHub, cloud providers and databases. In company-managed VS Code setups, an administrator has to enable the \"MCP servers in Copilot\" policy first, because it is off by default, <a href=\"https://github.blog/changelog/2025-07-14-model-context-protocol-mcp-support-in-vs-code-is-generally-available/\">according to GitHub</a>.</li>\n<li><strong>Ship a server for your product.</strong> If customers ask how to use your product from ChatGPT or Claude, an MCP server is the answer. Official SDKs exist for TypeScript, Python, C#, Go, Rust and Ruby (Tier 1), Java (Tier 2), and Swift, PHP and Kotlin (Tier 3), <a href=\"https://modelcontextprotocol.io/docs/sdk\">according to the MCP website</a>.</li>\n<li><strong>Go remote for non-developers.</strong> A hosted Streamable HTTP server with OAuth lets anyone sign in and connect, not just engineers running local stdio servers.</li>\n<li><strong>Design small tools with tight scopes.</strong> Expose narrow, well-named tools, mark destructive ones, request the fewest OAuth scopes you can, and never forward user tokens downstream.</li>\n<li><strong>List it.</strong> Publish to the official MCP Registry so clients and sub-registries can find your server.</li>\n</ol>\n<p>Agent-building teams want engineers who know tool design, OAuth and prompt-injection defences. Browse current <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs</a>, or roles at <a href=\"/jobs/company/anthropic/\">Anthropic</a> and <a href=\"/jobs/company/openai/\">OpenAI</a>, two of the companies behind the AAIF.</p>\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>MCP won because it solved a boring, expensive integration problem and Anthropic gave it away early. For founders, an MCP server is becoming as standard as a public API. Security is the open question: the protocol sets consent and OAuth rules, but it cannot stop a model obeying a poisoned instruction. That falls to the teams building hosts and servers. Follow the latest AI infrastructure stories on our <a href=\"/news/\">news page</a>.</p>\n\n<h2>FAQ</h2>\n<h3>Who created MCP and who owns it now?</h3>\n<p>Anthropic created it and open-sourced it in November 2024. In December 2025 it donated the protocol to the Agentic AI Foundation, a directed fund under the Linux Foundation.</p>\n<h3>Does ChatGPT support MCP?</h3>\n<p>Yes. OpenAI added MCP to its Agents SDK in March 2025, and the MCP website now lists ChatGPT among the clients that support it.</p>\n<h3>What is the difference between an MCP server and an API?</h3>\n<p>An API is product-specific. An MCP server exposes capabilities as standard tools, resources and prompts that any MCP client can use without custom code.</p>\n<h3>Is MCP safe to use?</h3>\n<p>It can be, with care. Install servers only from sources you trust, review tool permissions, avoid giving one agent private data, untrusted input and outbound access all at once, and use OAuth with narrow scopes.</p>\n<h3>What is the latest MCP spec version?</h3>\n<p>As of October 2026, the latest revision is 2026-07-28. It made the protocol stateless and deprecated the roots, sampling and logging features.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Anthropic, \"<a href=\"https://www.anthropic.com/news/model-context-protocol\">Introducing the Model Context Protocol</a>\", 2024-11-25</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/docs/getting-started/intro\">What is the Model Context Protocol (MCP)?</a>\", 2026-10-04 (accessed)</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/specification/latest\">Specification (revision 2026-07-28)</a>\", 2026-07-28</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/specification/2025-06-18/architecture\">Architecture (revision 2025-06-18)</a>\", 2025-06-18</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/specification/2025-06-18/basic/transports\">Transports (revision 2025-06-18)</a>\", 2025-06-18</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/specification/2025-03-26/changelog\">Key changes, revision 2025-03-26</a>\", 2025-03-26</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/specification/2025-06-18/changelog\">Key changes, revision 2025-06-18</a>\", 2025-06-18</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/specification/2025-11-25/changelog\">Key changes, revision 2025-11-25</a>\", 2025-11-25</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/specification/2026-07-28/changelog\">Key changes, revision 2026-07-28</a>\", 2026-07-28</li>\n<li>MCP Blog, \"<a href=\"https://blog.modelcontextprotocol.io/posts/2026-07-28/\">The 2026-07-28 Specification</a>\", 2026-07-28</li>\n<li>MCP Blog, \"<a href=\"https://blog.modelcontextprotocol.io/posts/mcp-roadmap/\">The New MCP Roadmap</a>\", 2026-08-22</li>\n<li>TechCrunch, \"<a href=\"https://techcrunch.com/2025/03/26/openai-adopts-rival-anthropics-standard-for-connecting-ai-models-to-data/\">OpenAI adopts rival Anthropic&#x27;s standard for connecting AI models to data</a>\", 2025-03-26</li>\n<li>InfoQ, \"<a href=\"https://www.infoq.com/news/2025/10/openai-dev-day\">OpenAI DevDay 2025 announcements</a>\", 2025-10-10</li>\n<li>TechCrunch, \"<a href=\"https://techcrunch.com/2025/04/09/google-says-itll-embrace-anthropics-standard-for-connecting-ai-models-to-data/\">Google to embrace Anthropic&#x27;s standard for connecting AI models to data</a>\", 2025-04-09</li>\n<li>Google Cloud, \"<a href=\"https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services\">Announcing official MCP support for Google services</a>\", 2025-12-11</li>\n<li>Microsoft Windows Experience Blog, \"<a href=\"https://blogs.windows.com/windowsexperience/2025/05/19/securing-the-model-context-protocol-building-a-safer-agentic-future-on-windows/\">Securing the Model Context Protocol: building a safer agentic future on Windows</a>\", 2025-05-19</li>\n<li>GitHub Changelog, \"<a href=\"https://github.blog/changelog/2025-07-14-model-context-protocol-mcp-support-in-vs-code-is-generally-available/\">Model Context Protocol (MCP) support in VS Code is generally available</a>\", 2025-07-14</li>\n<li>Cloudflare, \"<a href=\"https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/\">Build and deploy Remote Model Context Protocol (MCP) servers to Cloudflare</a>\", 2025-03-25</li>\n<li>AWS, \"<a href=\"https://aws.amazon.com/about-aws/whats-new/2025/11/aws-mcp-server\">AWS announces a preview of the AWS MCP Server</a>\", 2025-11-30</li>\n<li>Anthropic, \"<a href=\"https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation\">Donating the Model Context Protocol and establishing the Agentic AI Foundation</a>\", 2025-12-09</li>\n<li>MCP Blog, \"<a href=\"https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/\">Introducing the MCP Registry</a>\", 2025-09-08</li>\n<li>Invariant Labs, \"<a href=\"https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks\">MCP Security Notification: Tool Poisoning Attacks</a>\", 2025-04-01</li>\n<li>Simon Willison, \"<a href=\"https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/\">The lethal trifecta for AI agents</a>\", 2025-06-16</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization\">Authorization (revision 2025-11-25)</a>\", 2025-11-25</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices\">Security Best Practices (revision 2025-11-25)</a>\", 2025-11-25</li>\n<li>Model Context Protocol, \"<a href=\"https://modelcontextprotocol.io/docs/sdk\">SDKs</a>\", 2026-10-04 (accessed)</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/USB-C_cable_2017_A.jpg/1280px-USB-C_cable_2017_A.jpg",
+      "alt": "White cable with a USB-A plug on one end and a USB-C plug on the other, coiled on a wooden table",
+      "caption": "MCP's own docs compare the protocol to a USB-C port: one standard connector for many devices.",
+      "credit": "Photo: Fructibus / Wikimedia Commons, CC0 1.0",
+      "license": "CC0 1.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:USB-C_cable_2017_A.jpg"
+    },
+    {
+      "url": "https://live.staticflickr.com/8572/16480450157_718471e4be_b.jpg",
+      "alt": "Dense bundle of blue, grey, green, red and yellow Ethernet cables plugged into a network switch",
+      "caption": "Each MCP client holds a dedicated one-to-one connection to a single server.",
+      "credit": "Photo: Open Grid Scheduler / Grid Engine / Openverse (Flickr), CC0 1.0",
+      "license": "CC0 1.0",
+      "source_page": "https://www.flickr.com/photos/29155878@N03/16480450157"
+    },
+    {
+      "url": "https://live.staticflickr.com/3096/2340202215_77aae06ebc_b.jpg",
+      "alt": "Rows of telecom and server equipment racks in a brightly lit data centre",
+      "caption": "Cloud providers including AWS and Google Cloud now run managed remote MCP servers.",
+      "credit": "Photo: Robert Scoble / Openverse (Flickr), CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://www.flickr.com/photos/35034363287@N01/2340202215"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/System_Lock_%2866747475%29.jpeg/1280px-System_Lock_%2866747475%29.jpeg",
+      "alt": "Glowing padlock icon over lines of program code on a blue circuit-style background",
+      "caption": "Tool poisoning and prompt injection are the main security risks when connecting agents to MCP servers.",
+      "credit": "Photo: Yuri Samoilov / Wikimedia Commons, CC BY 3.0",
+      "license": "CC BY 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:System_Lock_(66747475).jpeg"
+    },
+    {
+      "url": "https://live.staticflickr.com/65535/47994682357_cf5fe5e569_b.jpg",
+      "alt": "Person typing on a laptop showing a code editor and a terminal window",
+      "caption": "Official SDKs in languages from TypeScript and Python to Go and Rust make building an MCP server a small project.",
+      "credit": "Photo: gdsteam / Openverse (Flickr), CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://www.flickr.com/photos/93332172@N03/47994682357"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/model-context-protocol",
+      "publisher": "Anthropic",
+      "date": "2024-11-25",
+      "claim": "MCP launch, components (spec, SDKs, Claude Desktop local servers, server repo), pre-built servers and early adopters"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/docs/getting-started/intro",
+      "publisher": "Model Context Protocol",
+      "date": "2026-10-04",
+      "claim": "USB-C analogy, example uses, client support (Claude, ChatGPT, VS Code, Cursor); page accessed 4 Oct 2026"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/latest",
+      "publisher": "Model Context Protocol",
+      "date": "2026-07-28",
+      "claim": "JSON-RPC 2.0, hosts/clients/servers, tools/resources/prompts, elicitation, extensions, LSP inspiration, security principles"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
+      "publisher": "Model Context Protocol",
+      "date": "2025-06-18",
+      "claim": "Host/client/server roles, 1:1 client-server, isolation design principles, capability negotiation"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/transports",
+      "publisher": "Model Context Protocol",
+      "date": "2025-06-18",
+      "claim": "stdio and Streamable HTTP, Origin validation, bind to localhost"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-03-26/changelog",
+      "publisher": "Model Context Protocol",
+      "date": "2025-03-26",
+      "claim": "OAuth 2.1 authorization framework, Streamable HTTP replacing HTTP+SSE, tool annotations"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/changelog",
+      "publisher": "Model Context Protocol",
+      "date": "2025-06-18",
+      "claim": "Elicitation, structured tool output, servers as OAuth resource servers, RFC 8707 resource indicators"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/changelog",
+      "publisher": "Model Context Protocol",
+      "date": "2025-11-25",
+      "claim": "Experimental tasks, Client ID Metadata Documents, incremental scope consent, formal governance"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/changelog",
+      "publisher": "Model Context Protocol",
+      "date": "2026-07-28",
+      "claim": "Stateless protocol, no sessions, MRTR, tasks as extension, Roots/Sampling/Logging deprecated, 12-month deprecation window"
+    },
+    {
+      "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+      "publisher": "MCP Blog",
+      "date": "2026-07-28",
+      "claim": "Tier 1 SDKs near half a billion monthly downloads; TypeScript and Python SDKs past 1 billion total downloads; extensions incl. MCP Apps"
+    },
+    {
+      "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+      "publisher": "MCP Blog",
+      "date": "2026-08-22",
+      "claim": "Five roadmap priorities incl. HTTP transport unification and agent identity"
+    },
+    {
+      "url": "https://techcrunch.com/2025/03/26/openai-adopts-rival-anthropics-standard-for-connecting-ai-models-to-data/",
+      "publisher": "TechCrunch",
+      "date": "2025-03-26",
+      "claim": "OpenAI Agents SDK MCP support; ChatGPT desktop and Responses API planned"
+    },
+    {
+      "url": "https://www.infoq.com/news/2025/10/openai-dev-day",
+      "publisher": "InfoQ",
+      "date": "2025-10-10",
+      "claim": "Apps SDK sharing context via MCP; AgentKit Connector Registry"
+    },
+    {
+      "url": "https://techcrunch.com/2025/04/09/google-says-itll-embrace-anthropics-standard-for-connecting-ai-models-to-data/",
+      "publisher": "TechCrunch",
+      "date": "2025-04-09",
+      "claim": "Hassabis: Gemini models and SDK to support MCP"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services",
+      "publisher": "Google Cloud",
+      "date": "2025-12-11",
+      "claim": "Managed remote MCP servers for Maps, BigQuery, GCE, GKE; Model Armor"
+    },
+    {
+      "url": "https://blogs.windows.com/windowsexperience/2025/05/19/securing-the-model-context-protocol-building-a-safer-agentic-future-on-windows/",
+      "publisher": "Microsoft Windows Experience Blog",
+      "date": "2025-05-19",
+      "claim": "Windows MCP plans, threat list, registry and least-privilege controls"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-07-14-model-context-protocol-mcp-support-in-vs-code-is-generally-available/",
+      "publisher": "GitHub Changelog",
+      "date": "2025-07-14",
+      "claim": "MCP GA in VS Code 1.102; admin policy off by default"
+    },
+    {
+      "url": "https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/",
+      "publisher": "Cloudflare",
+      "date": "2025-03-25",
+      "claim": "Remote vs local servers; OAuth provider library, McpAgent, mcp-remote"
+    },
+    {
+      "url": "https://aws.amazon.com/about-aws/whats-new/2025/11/aws-mcp-server",
+      "publisher": "AWS",
+      "date": "2025-11-30",
+      "claim": "Managed remote MCP server; 15,000+ AWS APIs; IAM and CloudTrail"
+    },
+    {
+      "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
+      "publisher": "Anthropic",
+      "date": "2025-12-09",
+      "claim": "Donation to AAIF under Linux Foundation; co-founders and supporters; 10,000+ public servers; 97M+ monthly SDK downloads"
+    },
+    {
+      "url": "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+      "publisher": "MCP Blog",
+      "date": "2025-09-08",
+      "claim": "Registry preview, open source, sub-registries, moderation, no durability guarantees"
+    },
+    {
+      "url": "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks",
+      "publisher": "Invariant Labs",
+      "date": "2025-04-01",
+      "claim": "Tool poisoning, rug pulls, shadowing; Cursor demo; mitigations"
+    },
+    {
+      "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+      "publisher": "Simon Willison",
+      "date": "2025-06-16",
+      "claim": "Private data + untrusted content + external communication; MCP mixing risk"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization",
+      "publisher": "Model Context Protocol",
+      "date": "2025-11-25",
+      "claim": "Authorization optional; HTTP transports; OAuth 2.1; PKCE; RFC 8707 audience binding; stdio uses environment credentials"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices",
+      "publisher": "Model Context Protocol",
+      "date": "2025-11-25",
+      "claim": "Token passthrough forbidden, confused deputy, local server consent, scope minimization"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/docs/sdk",
+      "publisher": "Model Context Protocol",
+      "date": "2026-10-04",
+      "claim": "Official SDK languages and tiers; page accessed 4 Oct 2026"
+    }
+  ]
+}

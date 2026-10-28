@@ -1,0 +1,79 @@
+{
+ "slug": "mmhmm",
+ "website": "https://www.airtime.com/",
+ "excerpt": "mmhmm, the video presentation app from Evernote founder Phil Libin, renamed itself Airtime in April 2025. Airtime's Camera, Creator, Recorder and Stacks tools cost $12/month after a 14-day free trial.",
+ "content": "<p>mmhmm was a video app launched in 2020, during the pandemic, by Phil Libin, the former CEO of Evernote. It let people improve how they looked and presented on video calls: removing or replacing backgrounds, putting themselves next to their slides like a TV presenter, and recording presentations to share later. It worked as a virtual camera, so it could be used inside Zoom, Google Meet, Microsoft Teams and other meeting apps. In July 2021 TechCrunch reported that mmhmm had raised a fresh $100 million, first reported by Bloomberg, taking its total funding to around $140 million when the company was just over a year old.</p><p><strong>Now called Airtime.</strong> In April 2025 TechCrunch reported that mmhmm had taken the name Airtime as its official company name and launched a toolkit for online meetings under that brand. Airtime Creator, which lets you appear on screen alongside your slides as you present, is effectively the successor to the original mmhmm product. Airtime Camera lets you design or tint your background, add a logo and react with visuals or GIFs in calls on Zoom, Teams, Meet, Webex and other services. Existing mmhmm users saw the app's name and icon change to Airtime. The old mmhmm.app domain now redirects to airtime.com.</p><p>Airtime's website describes it as essential tools for video at work and lists four tools in one subscription: Camera, Recorder, Creator and Stacks. Its pricing page says an Individual plan costs $12 a month billed monthly or $10 a month billed annually, with unlimited videos and custom looks for video calls. A Teams plan costs the same per seat and adds an admin dashboard, centralised billing and single sign-on with Apple or Google; an Enterprise plan adds priority support and access to its SOC 2 report. New users get a 14-day free trial with unlimited access to Creator, Camera and Stacks.</p><p>This profile draws on Airtime's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Video presentation and virtual camera (now Airtime)",
+  "platform": "Desktop app; works with Zoom, Teams, Meet and Webex",
+  "starts_at": "14-day free trial, then $10–12/month",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "Video presentation and virtual camera tools from Phil Libin; renamed Airtime in 2025",
+  "maker": {"name": "Airtime (formerly mmhmm)", "url": "https://www.airtime.com/"},
+  "team": [
+   {"name": "Phil Libin", "role": "Founder; former CEO of Evernote"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.sanity.io/images/nvxtjwht/airtime/142a9f2195b272ac6f6327ff1afac029a0d6eec5-1200x630.png", "alt": "Airtime banner on a dark navy background reading Essential tools for video at work, with the Airtime logo", "credit": "Image: Airtime", "w": 1200, "h": 630},
+   {"url": "https://cdn.sanity.io/images/nvxtjwht/airtime/9e58244fb45f38d17c00628f47d3b6db2449faa2-1200x630.png", "alt": "Airtime pricing page banner with the word Pricing and the teal Airtime mark on a light grey background", "credit": "Image: Airtime", "w": 1200, "h": 630}
+  ],
+  "use_cases": [
+   "Presenting slides with yourself on screen in Zoom, Teams or Meet",
+   "Customising your video-call background and adding a company logo",
+   "Recording and sharing presentation videos asynchronously",
+   "Giving a team consistent branded looks on video calls"
+  ],
+  "audience": {
+   "fit": [
+    "present on video calls often and want a more polished look",
+    "record presentation videos for colleagues or customers",
+    "manage a team that wants consistent branded video calls"
+   ],
+   "not_fit": [
+    "only need the basic background blur built into your meeting app",
+    "want a free tool for the long term: Airtime is a subscription after the trial"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices from Airtime's official pricing page. All plans follow a 14-day free trial with unlimited access to Creator, Camera and Stacks.",
+   "plans": [
+    {"name": "Individual", "price": "$12/month, or $10/month billed annually", "amount": 12, "currency": "USD", "detail": "Camera, Recorder, Creator and Stacks; unlimited videos; custom looks"},
+    {"name": "Teams", "price": "$12/month per seat, or $10/month per seat billed annually", "amount": 12, "currency": "USD", "detail": "Adds admin dashboard, centralised billing, SSO with Apple or Google"},
+    {"name": "Enterprise", "price": "Contact sales", "detail": "Priority support, SOC 2 report, onboarding help"}
+   ],
+   "notes": ["mmhmm.app now redirects to airtime.com."],
+   "url": "https://www.airtime.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Works inside the meeting apps you already use",
+   "Four tools in one subscription",
+   "Published, simple pricing"
+  ],
+  "cons": [
+   "Paid after the 14-day trial",
+   "The rename from mmhmm can make older guides confusing"
+  ],
+  "alternatives": {
+   "intro": "Other tools for presenting and recording on video. We have not compared them hands-on.",
+   "items": [
+    {"name": "Loom", "url": "https://www.loom.com/", "what": "Screen and camera recording for async video", "tags": ["Async video"], "starts_at": "See its own pricing page", "difference": "Focused on quick recorded messages rather than live-call looks."},
+    {"name": "Prezi Video", "url": "https://prezi.com/video/", "what": "Presentation graphics overlaid on your camera", "tags": ["Presentations"], "starts_at": "See its own pricing page", "difference": "From the Prezi presentation company."},
+    {"name": "OBS Studio", "url": "https://obsproject.com/", "what": "Free, open-source streaming and recording software with a virtual camera", "tags": ["Open source"], "starts_at": "Free", "difference": "Very flexible but much more technical to set up."}
+   ]
+  },
+  "faq": [
+   {"q": "What happened to mmhmm?", "a": "It renamed itself Airtime in April 2025, TechCrunch reported. The mmhmm app became Airtime, and Airtime Creator is the successor to the original mmhmm product."},
+   {"q": "Who founded mmhmm?", "a": "Phil Libin, the former CEO of Evernote."},
+   {"q": "How much does Airtime cost?", "a": "$12 a month, or $10 a month billed annually, after a 14-day free trial, per its pricing page."},
+   {"q": "Does Airtime work with Zoom?", "a": "Yes. Its pricing page says it works on Zoom, Microsoft Teams, Google Meet, Webex and more."}
+  ],
+  "sources": [
+   {"label": "TechCrunch: Evernote founder's video startup mmhmm becomes Airtime (24 Apr 2025)", "url": "https://techcrunch.com/2025/04/24/evernote-founders-video-startup-mmhmm-becomes-airtime-launches-new-products/"},
+   {"label": "TechCrunch: Mmhmm raises $100M (7 Jul 2021)", "url": "https://techcrunch.com/2021/07/07/mmhmm-raises-100m-which-is-a-fun-thing-to-say-to-people-who-dont-follow-tech/"},
+   {"label": "Airtime pricing page", "url": "https://www.airtime.com/pricing"},
+   {"label": "Airtime website", "url": "https://www.airtime.com/"}
+  ]
+ }
+}

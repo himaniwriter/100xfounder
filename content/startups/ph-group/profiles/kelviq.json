@@ -1,0 +1,133 @@
+{
+ "slug": "kelviq",
+ "ph_url": "https://www.producthunt.com/products/kelviq",
+ "existing_listing_slug": null,
+ "website": "https://www.kelviq.com/",
+ "excerpt": "Kelviq is a merchant of record and billing platform for SaaS, AI and digital products: payments, global tax, subscriptions, usage-based billing, license keys and payouts for 3.5% + 40¢ per transaction. Fees, how it compares with Stripe and Paddle, and alternatives.",
+ "content": "<p>Kelviq is a monetisation platform for software, AI and digital products. As the merchant of record it is the legal seller, so it collects and remits sales tax, VAT and GST, and handles fraud, chargebacks and compliance on your behalf. On top of payments and checkout in local currencies, it offers subscriptions, usage-based billing that meters events such as AI tokens or API calls in real time, credits, feature entitlements tied to plans, digital file delivery and license keys. Pricing models can be flat, per seat, per token, tiered, credit-based or hybrid, and changed without code changes.</p><p>Kelviq charges per successful transaction with no setup or monthly fee: 2.9% + 40¢ on your first $5,000 of sales, then 3.5% + 40¢, plus 1.5% for non-US cards and 0.7% on recurring charges. It uses Stripe for core payment processing, pays out on a rolling seven-day basis, and the team says individuals can sign up without a company, including in India through Stripe Connect. It can help migrate products, customers and subscriptions from Stripe, Paddle or Lemon Squeezy.</p><p>Kelviq was founded by Alok Vats, Sachin Neravath and Geo Jacob; the founders previously built ParityDeals and the open-source lightGallery. It launched on Product Hunt on 12 May 2026 and finished #1 for the day with 520 upvotes and 84 comments.</p><p><em>We have not tested Kelviq ourselves. This page brings together Kelviq's website, pricing and about pages, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Payments and billing",
+  "platform": "Web platform with API and SDKs",
+  "starts_at": "No monthly fee; 3.5% + 40¢ per transaction",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Merchant of record with usage-based billing, tax and license keys for SaaS and AI products",
+  "maker": {"name": "Sachin Neravath", "url": "https://www.producthunt.com/@sachinchoolur"},
+  "team": [
+   {"name": "Alok Vats", "role": "Co-founder, product", "url": "https://www.producthunt.com/@alokvats"},
+   {"name": "Sachin Neravath", "role": "Co-founder, engineering", "url": "https://www.producthunt.com/@sachinchoolur"},
+   {"name": "Geo Jacob", "role": "Co-founder, engineering", "url": "https://www.producthunt.com/@geojacobm6"}
+  ],
+  "ph": {"rank": 1, "votes": 520, "comments": 84, "followers": 862, "launched": "2026-05-12", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/463397a2-5105-404d-941e-acda5b72d01e.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Kelviq via Product Hunt", "alt": "Kelviq overview dashboard with revenue, subscribers, MRR and churn, captioned 'Stop building billing. Start shipping product'"},
+   {"url": "https://ph-files.imgix.net/48ac58ef-453b-4b95-bfab-8f147caf8d8e.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Kelviq via Product Hunt", "alt": "Kelviq usage view splitting AI token cost into input and output tokens"},
+   {"url": "https://ph-files.imgix.net/24e27eee-f9ba-43e7-89f2-71d128406498.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Kelviq via Product Hunt", "alt": "Kelviq checkout adding French VAT to a license purchase, with payment method logos"},
+   {"url": "https://ph-files.imgix.net/aaa70824-d109-4be3-bce7-c0dcd8ff347e.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Kelviq via Product Hunt", "alt": "Kelviq pricing models: subscriptions, usage-based billing, one-time payments, flat rate plus overage and pay as you go"}
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Sachin Neravath says the team kept seeing the same problem through their earlier product, ParityDeals: adding a payment gateway is easy, but building everything around it is not. Charging for features, seats, usage or AI tokens usually means webhook listeners, subscription tables, usage tracking and feature flags, and pricing ends up tied to your code.",
+    "Kelviq is meant to replace that with one system: Kelviq as merchant of record for tax in 100+ countries, any pricing model configured in minutes, digital delivery and license keys, and real-time metering of usage."
+   ],
+   "attribution": "Sachin Neravath, co-founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/kelviq?comment=5346975"
+  },
+  "use_cases": [
+   "Selling a SaaS or AI product worldwide without registering for foreign tax IDs",
+   "Charging for AI tokens, API calls or compute with real-time metering",
+   "Selling downloads or software with automatic license keys",
+   "Changing plans, limits and feature access without code deployments",
+   "Moving from Stripe, Paddle or Lemon Squeezy to a single billing stack"
+  ],
+  "audience": {
+   "fit": [
+    "sell software, AI or digital products to customers in many countries",
+    "need usage-based or hybrid pricing without building metering yourself",
+    "are an individual founder, including in India, who wants a merchant of record without a company"
+   ],
+   "not_fit": [
+    "sell mobile app subscriptions through Apple or Google: in-app purchases are not supported yet",
+    "only need payment processing and handle tax yourself: plain Stripe is cheaper per transaction",
+    "need automatic tracking of AI model vendor price changes: the team said that is manual for now"
+   ]
+  },
+  "pricing": {
+   "intro": "Kelviq has no plans or monthly fee; it charges per successful transaction. Figures are from Kelviq's pricing page in US dollars.",
+   "url": "https://www.kelviq.com/pricing/",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "First $5,000 of sales", "price": "2.9% + 40¢ per transaction", "amount": 0, "currency": "USD", "detail": "Applies until total processed volume reaches $5,000"},
+    {"name": "Standard", "price": "3.5% + 40¢ per transaction", "amount": 0, "currency": "USD", "detail": "Payments, merchant of record, tax, billing, metering and entitlements; unlimited seats, no setup or monthly fee"}
+   ],
+   "notes": [
+    "Extra fees: +1.5% for international (non-US) cards and +0.7% on recurring subscription charges.",
+    "Payouts on a rolling 7-day basis; Enterprise partners can negotiate faster schedules.",
+    "API calls and metering events are not charged."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Polar, Dodo Payments, Paddle and Stripe among Kelviq's alternatives. Review scores are Product Hunt users' own; check each provider's pricing page for current fees.",
+   "items": [
+    {"name": "Paddle", "url": "https://www.paddle.com/", "what": "Merchant of record for digital products and SaaS", "starts_at": "See its pricing page", "ph_rating": 4.84, "ph_reviews": 58, "ph_url": "https://www.producthunt.com/products/paddle", "difference": "The established merchant of record; Kelviq leads with usage metering and entitlements for AI products."},
+    {"name": "Polar", "url": "https://polar.sh/", "what": "Open-source monetisation platform for developers", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 55, "ph_url": "https://www.producthunt.com/products/polar-6", "difference": "Open source and developer-focused; Kelviq is closed source with built-in license keys and migration help."},
+    {"name": "Dodo Payments", "url": "https://dodopayments.com/", "what": "Payments and billing for AI, SaaS and digital products", "starts_at": "See its pricing page", "ph_rating": 4.88, "ph_reviews": 32, "ph_url": "https://www.producthunt.com/products/dodo-payments", "difference": "A close like-for-like merchant of record; compare fees and supported payout countries."}
+   ],
+   "more": "Product Hunt also lists Stripe and PaymentKit."
+  },
+  "reviews": {"count": 1, "rating": 5, "url": "https://www.producthunt.com/products/kelviq/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Handling the AI side of billing", "Responsive team support"],
+    "asked": [
+     "How payouts work for Indian founders (Stripe Connect onboarding; individuals supported)",
+     "Whether EU reverse-charge VAT is automatic (yes, with a valid VAT ID)",
+     "Whether saved cards can move from Lemon Squeezy (only if the provider supports PCI-compliant export)",
+     "Whether App Store subscriptions are supported (not yet)"
+    ],
+    "criticised": ["The 3.5% + 40¢ rate is higher than Stripe's processing fee alone, though it includes tax and merchant of record"]
+   },
+   "quotes": [
+    {"text": "Does Kelviq handle reverse-charge VAT for B2B sales within the EU automatically (valid VAT ID = no tax charged)?", "author": "Francesco Bianchi", "url": "https://www.producthunt.com/products/kelviq?comment=5359283"},
+    {"text": "Many Indian founders have been struggling with Paddle and Lemon Squeezy suddenly closing accounts or having strict entity requirements.", "author": "Abhijith Babu", "url": "https://www.producthunt.com/products/kelviq?comment=5360538"},
+    {"text": "Does it support App Store subscriptions?", "author": "IMAD EL KHAFI", "url": "https://www.producthunt.com/products/kelviq?comment=5360073"}
+   ]
+  },
+  "pros": [
+   "One fee covers payments, tax, merchant of record, billing and metering",
+   "No monthly fee, setup fee or per-seat charge",
+   "Usage-based billing and entitlements built in",
+   "Accepts individual founders without a registered company"
+  ],
+  "cons": [
+   "Surcharges for non-US cards (+1.5%) and recurring charges (+0.7%)",
+   "No Apple or Google in-app purchase support",
+   "Saved cards can only be migrated if your current provider allows PCI-compliant export",
+   "A young company compared with Paddle or Stripe"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/kelviq",
+   "quotes": [
+    {"author": "Abhijith Babu", "url": "https://www.producthunt.com/products/kelviq?comment=5360538", "text": "Asked how payouts work for Indian users.", "reply": "Sachin Neravath said payouts go through Stripe Connect, onboarding takes about five minutes, and you do not need a company."},
+    {"author": "Fabio Viola", "url": "https://www.producthunt.com/products/kelviq?comment=5359922", "text": "Asked about migrating subscriptions and license keys from Lemon Squeezy or Paddle.", "reply": "Sachin Neravath said products, customers, subscriptions and license keys can be moved; saved cards only if the old provider supports PCI-compliant export."}
+   ],
+   "x": {"none": "We found no posts about Kelviq on X to link yet.", "search_url": "https://x.com/search?q=kelviq&f=live"}
+  },
+  "faq": [
+   {"q": "How much does Kelviq cost?", "a": "No monthly fee. 2.9% + 40¢ per transaction on your first $5,000 of sales, then 3.5% + 40¢, plus 1.5% on non-US cards and 0.7% on recurring charges."},
+   {"q": "Is Kelviq a merchant of record?", "a": "Yes. Kelviq is the legal seller and handles global sales tax, VAT, GST, fraud and chargebacks."},
+   {"q": "Can I use Kelviq as an individual in India?", "a": "The team says yes: you do not need a company, and payouts go to your bank account through Stripe Connect."},
+   {"q": "Does it support usage-based billing for AI products?", "a": "Yes. It meters events such as tokens or API calls in real time and supports credits, overages and hybrid pricing."},
+   {"q": "Can I migrate from Stripe or Paddle?", "a": "Kelviq says it can migrate products, plans, customers and subscriptions, and saved payment methods where the old provider supports PCI-compliant migration."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists Polar, Dodo Payments, PaymentKit, Paddle and Stripe."}
+  ],
+  "sources": [
+   {"label": "Kelviq official site", "url": "https://www.kelviq.com/"},
+   {"label": "Kelviq pricing", "url": "https://www.kelviq.com/pricing/"},
+   {"label": "About Kelviq", "url": "https://www.kelviq.com/about-us/"},
+   {"label": "Kelviq contact", "url": "https://www.kelviq.com/contact-us/"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/kelviq"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/kelviq/alternatives"}
+  ]
+ }
+}

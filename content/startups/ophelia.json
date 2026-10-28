@@ -1,0 +1,145 @@
+{
+ "slug": "ophelia",
+ "website": "https://ophelia.com/",
+ "excerpt": "Ophelia is a New York telehealth provider that treats opioid use disorder with Suboxone (buprenorphine) by video. Self-pay price, insurance, states, funding and alternatives.",
+ "content": "<p>Ophelia is a US telehealth company that treats opioid addiction from home. Patients meet a licensed clinician by video and, if eligible, are prescribed buprenorphine (best known by the brand name Suboxone), a medication that eases cravings and withdrawal. Ophelia calls this medication-assisted treatment. HIT Consultant reported that its care model adapts the Massachusetts Collaborative Care Model to telemedicine, pairing each patient with a team that includes a prescribing clinician, a nurse and a care coordinator.</p><p>Ophelia's pricing page says its self-pay plan costs $245 a month and covers all clinician video calls, Suboxone medication management if eligible, seven-day-a-week support from the care team, comfort medication for withdrawal symptoms, and treatment of depression, anxiety and insomnia. Ophelia is in network with many insurers, including Medicaid, Medicare, Cigna, Humana, Blue Cross Blue Shield plans, Anthem and UnitedHealthcare, depending on state. When we checked, it listed care as available in California, Connecticut, Delaware, Florida, Maine, Maryland, Montana, New Jersey, New York, Pennsylvania, Texas, Vermont, Virginia and Washington.</p><p>The company is based in New York City and was co-founded by CEO Zack Gray. In December 2021 it raised a $50 million Series B led by Tiger Global, with Menlo Ventures, General Catalyst, Refactor Capital and others, seven months after a $15 million Series A, for total funding of $68 million, HIT Consultant reported. In 2023 Ophelia published a study in The American Journal of Drug and Alcohol Abuse of 1,378 patients in New York and Pennsylvania, which found 56.4% were still in treatment after 180 days; this is the company's own research.</p><p><em>This page is research, not medical advice or a review. If you or someone you know is struggling with opioid use, talk to a doctor or call the SAMHSA National Helpline at 1-800-662-4357 in the US.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Telehealth addiction treatment",
+  "platform": "Video visits and app messaging (US)",
+  "starts_at": "$245/month self-pay; insurance accepted",
+  "schema_category": "HealthApplication",
+  "summary_short": "Online Suboxone treatment for opioid use disorder by video, with insurance or self-pay",
+  "maker": {
+   "name": "Ophelia Health",
+   "url": "https://ophelia.com/"
+  },
+  "team": [
+   {
+    "name": "Zack Gray",
+    "role": "Co-founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/63235599a30434033ca3d1c3/6359831a03a10433db8c0f43_ophelia-opengraph.webp",
+    "w": 1200,
+    "h": 630,
+    "alt": "The word Ophelia in pale lilac serif letters on a dark, softly blurred background",
+    "credit": "Image: Ophelia (ophelia.com)"
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/63235599a30434033ca3d1c3/6346c5fd8c1babe39d6c271f_ophelia-webclip.png",
+    "w": 256,
+    "h": 256,
+    "alt": "Ophelia icon: a lilac serif letter O on black",
+    "credit": "Logo: Ophelia (ophelia.com)"
+   }
+  ],
+  "use_cases": [
+   "Starting buprenorphine (Suboxone) treatment for opioid use disorder from home",
+   "Ongoing medication management with a clinician by video",
+   "Support from a care team seven days a week",
+   "Treatment of co-occurring depression, anxiety or insomnia"
+  ],
+  "audience": {
+   "fit": [
+    "adults with opioid use disorder in the states Ophelia serves",
+    "people who find in-person clinics hard to reach or want privacy",
+    "patients with Medicaid, Medicare or a commercial plan in Ophelia's network"
+   ],
+   "not_fit": [
+    "anyone in a medical emergency: call 911",
+    "people outside Ophelia's states",
+    "patients who need inpatient detox or methadone, which Ophelia's model does not describe"
+   ]
+  },
+  "pricing": {
+   "intro": "From Ophelia's insurance and pricing page, checked 15 October 2026.",
+   "plans": [
+    {
+     "name": "Self-pay",
+     "price": "$245/month",
+     "amount": 245,
+     "currency": "USD",
+     "detail": "Video visits, Suboxone management if eligible, 7-day support, comfort medication, mental health treatment"
+    },
+    {
+     "name": "Insurance",
+     "price": "Depends on plan",
+     "detail": "In network with Medicaid, Medicare and many commercial insurers, by state"
+    }
+   ],
+   "url": "https://ophelia.com/insurance-and-pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Treatment from home with a dedicated care team",
+   "Accepts Medicaid, Medicare and many commercial plans",
+   "Clear self-pay price"
+  ],
+  "cons": [
+   "Available only in certain states",
+   "Retention figures come from company-sponsored research"
+  ],
+  "alternatives": {
+   "intro": "Other telehealth providers for opioid use disorder. Check each one's state coverage and insurance.",
+   "items": [
+    {
+     "name": "Bicycle Health",
+     "url": "https://www.bicyclehealth.com/",
+     "what": "Online Suboxone treatment",
+     "difference": "Operates in many states with insurance and self-pay."
+    },
+    {
+     "name": "Workit Health",
+     "url": "https://www.workithealth.com/",
+     "what": "Telehealth addiction treatment for opioids and alcohol",
+     "difference": "Also treats alcohol use disorder."
+    },
+    {
+     "name": "Boulder Care",
+     "url": "https://www.boulder.care/",
+     "what": "Telehealth opioid and alcohol treatment",
+     "difference": "Focus on Medicaid patients."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does Ophelia cost?",
+    "a": "The self-pay plan is $245 a month. Many Medicaid, Medicare and commercial plans are accepted, depending on state."
+   },
+   {
+    "q": "Does Ophelia prescribe Suboxone?",
+    "a": "Yes, if a clinician finds it appropriate. Ophelia's plan includes Suboxone medication management for eligible patients."
+   },
+   {
+    "q": "Which states does Ophelia serve?",
+    "a": "Its pricing page listed California, Connecticut, Delaware, Florida, Maine, Maryland, Montana, New Jersey, New York, Pennsylvania, Texas, Vermont, Virginia and Washington when we checked."
+   },
+   {
+    "q": "Who runs Ophelia?",
+    "a": "Co-founder and CEO Zack Gray. The company raised a $50 million Series B led by Tiger Global in December 2021."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Ophelia: insurance and pricing",
+    "url": "https://ophelia.com/insurance-and-pricing"
+   },
+   {
+    "label": "HIT Consultant: Ophelia raises $50M (Dec 2021)",
+    "url": "https://hitconsultant.net/2021/12/14/ophelia-opioid-use-disorder-funding/"
+   },
+   {
+    "label": "PR Newswire: Study on telemedicine buprenorphine retention (April 2023)",
+    "url": "https://www.prnewswire.com/news-releases/study-more-opioid-addiction-patients-stay-in-treatment-when-offered-buprenorphine-via-telemedicine-301795104.html"
+   },
+   {
+    "label": "Ophelia: press",
+    "url": "https://ophelia.com/press"
+   }
+  ]
+ }
+}

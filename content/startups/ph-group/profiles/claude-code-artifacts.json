@@ -1,0 +1,172 @@
+{
+  "slug": "claude-code-artifacts",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/claude-code-artifacts",
+  "excerpt": "Artifacts in Claude Code turn a coding session into a live web page (a PR walkthrough, incident timeline or dashboard) that updates as the work goes on and can be shared inside your organisation. What it does, who can use it and alternatives.",
+  "content": "<p>Claude Code is Anthropic's coding agent. In June 2026 Anthropic added artifacts to it: on request, Claude Code turns the work in a session into a live, interactive web page. Examples from Anthropic's announcement include a pull-request walkthrough, an incident timeline with suspect commits and an error-rate chart, a dashboard you can filter and sort, a dependency licence audit, or a map of how a service fits together. The page is built from the session's full context (your codebase, connected tools and the conversation), so there are no data sources to wire up.</p><p>Artifacts update in place. Each time Claude Code republishes, the open page refreshes for everyone viewing it, every version is kept at the same link with a history you can restore from, and a gallery lists all your artifacts. They are private to the author by default and can be shared with teammates or the whole organisation, but only signed-in members of your organisation can open them; they cannot be made public. Admins control access, retention and compliance reporting.</p><p>Anthropic announced the feature on 18 June 2026. On Product Hunt it was the second launch on the product page for the redesigned Claude Code desktop app, which lets you run several coding sessions in parallel. The artifacts launch went out on 19 June 2026 and finished #1 for the day with 468 points and 15 comments.</p><p><em>We have not tested artifacts in Claude Code ourselves. This page brings together Anthropic's announcement, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI coding tools",
+    "platform": "Claude Code CLI and desktop app; pages open in any browser",
+    "starts_at": "Included with Claude Team and Enterprise plans (beta)",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Turns a Claude Code session into a live, shareable web page that updates as the work progresses",
+    "ph": {
+      "rank": 1,
+      "votes": 468,
+      "comments": 15,
+      "followers": 1584,
+      "launched": "2026-06-19",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/c58edf73-a3c8-4fe9-978f-570326c84efd.png?auto=format&fit=max&w=1400",
+        "w": 2570,
+        "h": 1504,
+        "alt": "Title card with Claude Code's pixel mascot and the words 'Artifacts, now available'",
+        "credit": "Image: Anthropic via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/b2d40cdd-64d5-432c-8761-5d79e47d5b27.png?auto=format&fit=max&w=1400",
+        "w": 3074,
+        "h": 1664,
+        "alt": "An artifact's share menu in the browser with 'Always share latest version', version 2, sharing with everyone at an organisation and a 'Copy link' button",
+        "credit": "Image: Anthropic via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/5b9a143d-a429-42f4-bbfb-5af30b36a58e.png?auto=format&fit=max&w=1400",
+        "w": 2456,
+        "h": 1380,
+        "alt": "A message to a colleague sharing an artifact link that explains what caused a dip in exports",
+        "credit": "Image: Anthropic via Product Hunt"
+      }
+    ],
+    "audience": {
+      "fit": [
+        "work in a team on a Claude Team or Enterprise plan and already use Claude Code",
+        "spend time writing status updates, incident notes or PR explanations for colleagues",
+        "want a shareable view of an investigation that keeps itself current as the agent works"
+      ],
+      "not_fit": [
+        "are on an individual Free, Pro or Max plan: at launch the beta was for Team and Enterprise organisations",
+        "need to share pages publicly or with clients outside your organisation: artifacts can't be made public",
+        "don't use Claude Code: artifacts are built from a Claude Code session"
+      ]
+    },
+    "pricing": {
+      "intro": "Artifacts are not sold separately. At launch, Anthropic said they were in beta for Claude Team and Enterprise organisations, from the Claude Code CLI and desktop app.",
+      "url": "https://claude.com/pricing",
+      "plans": [],
+      "notes": [
+        "For reference, Claude's pricing page lists individual plans (Free, Pro at $17/month with annual billing or $20 monthly, and Max from $100/month), with Claude Code included from Pro. Team and Enterprise are priced on separate tabs.",
+        "Viewing an artifact needs no Claude Code install, but viewers must be signed-in members of your organisation."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "Product Hunt lists other AI coding agents as alternatives; none of the pages we checked describes the same live, shareable session pages. Review scores are Product Hunt users' own.",
+      "items": [
+        {
+          "name": "Cursor",
+          "url": "https://cursor.com",
+          "what": "AI coding agent and editor, with desktop, CLI and cloud agents",
+          "starts_at": "Free plan; Plus $8/month",
+          "ph_rating": 4.96,
+          "ph_reviews": 961,
+          "difference": "A full AI code editor; Claude Code's artifacts are about sharing what an agent session found with people who don't open the code."
+        },
+        {
+          "name": "Kilo Code",
+          "url": "https://kilo.ai",
+          "what": "Open-source coding agent for VS Code, the terminal and a desktop app, with 500+ models",
+          "starts_at": "Free with your own keys; Teams $15/user/month",
+          "ph_rating": 4.96,
+          "ph_reviews": 51,
+          "difference": "Open source and model-agnostic, with no markup on models; artifacts are tied to Claude and Anthropic's organisation controls."
+        },
+        {
+          "name": "Google Antigravity",
+          "url": "https://www.producthunt.com/products/google-antigravity",
+          "what": "IDE for running and monitoring several coding agents at once",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.65,
+          "ph_reviews": 23,
+          "difference": "Comparable to the redesigned Claude Code desktop app's parallel sessions rather than to artifacts specifically."
+        }
+      ],
+      "more": "Product Hunt also lists opencode and Claude Code itself."
+    },
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/claude-redesigned/reviews",
+      "as_of": "2026-10-14"
+    },
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/claude-redesigned",
+      "quotes": [],
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=%22Claude%20Code%22%20artifacts&f=live",
+        "profile_url": "https://twitter.com/claudeai"
+      }
+    },
+    "faq": [
+      {
+        "q": "What are artifacts in Claude Code?",
+        "a": "Live web pages that Claude Code builds from a coding session, such as a PR walkthrough, an incident page or a dashboard. They update in place as the session continues. Anthropic announced them on 18 June 2026."
+      },
+      {
+        "q": "Who can use Claude Code artifacts?",
+        "a": "At launch, the beta was available to Claude Team and Enterprise organisations, from the Claude Code CLI and desktop app."
+      },
+      {
+        "q": "Can I share an artifact publicly?",
+        "a": "No. Artifacts are private to their author by default and can be shared with teammates or the whole organisation, but only signed-in members of the organisation can view them."
+      },
+      {
+        "q": "What happens when an artifact is updated?",
+        "a": "Each publish becomes a new version at the same link. Open pages refresh in place, and you can restore earlier versions from the history."
+      },
+      {
+        "q": "Do I need to connect data sources?",
+        "a": "No. According to Anthropic, Claude Code builds the page from what the session already has: your codebase, connected tools and the conversation."
+      },
+      {
+        "q": "Can admins control artifacts?",
+        "a": "Yes. Admins get an organisation-level toggle, role-based access, retention policies and visibility through the compliance API."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Anthropic: Claude Code now supports artifacts",
+        "url": "https://claude.com/blog/artifacts-in-claude-code"
+      },
+      {
+        "label": "Anthropic: Redesigning Claude Code on desktop",
+        "url": "https://claude.com/resources/articles/claude-code-desktop-redesign"
+      },
+      {
+        "label": "Claude pricing",
+        "url": "https://claude.com/pricing"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/claude-redesigned"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/claude-redesigned/alternatives"
+      },
+      {
+        "label": "Cursor pricing",
+        "url": "https://cursor.com/pricing"
+      },
+      {
+        "label": "Kilo pricing",
+        "url": "https://kilo.ai/pricing"
+      }
+    ]
+  }
+}

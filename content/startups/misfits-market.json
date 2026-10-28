@@ -1,0 +1,149 @@
+{
+ "slug": "misfits-market",
+ "website": "https://www.misfitsmarket.com/",
+ "excerpt": "Misfits Market delivers discounted 'imperfect' and surplus groceries across the US. How it works, acquisitions, funding and alternatives.",
+ "content": "<p>Misfits Market is a US online grocery service built around food that traditional retailers turn down: fruit and vegetables with cosmetic flaws, surplus stock and odd sizes, as well as meat, dairy, pantry goods and its own Odds and Ends brand of rescued items such as bacon ends. Abhi Ramesh started it in Philadelphia in 2018, and it now delivers across much of the US. A June 2025 report by WPVI (6abc) said shoppers can save as much as 30% to 50% compared with traditional stores. Its mission statement is about building a better food system by fighting food waste and supporting sustainable farming.</p><p>Customers shop during a weekly window; Misfits Market starts the cart with suggested items to help meet the order minimum, and you are charged for what is in the cart when the window closes. A Flex Plan lets customers order only when they choose. Its FAQ mentions an $8.99 alcohol service fee for wine orders but does not list the order minimum or delivery fee on that page.</p><p>In 2021 Misfits Market raised a $200 million Series C led by Accel and D1 Capital, which valued it at more than $1 billion and brought total funding to $301 million, according to TechCrunch. In 2022 it bought its rival Imperfect Foods. In May 2025 it acquired The Rounds, a delivery startup that had raised $66 million from investors including Andreessen Horowitz and First Round Capital; TechCrunch reported that the deal brought partnerships with apartment operators such as AvalonBay, Greystar and Related, and quoted Ramesh saying the market is ripe for consolidation.</p><p>Misfits Market only delivers in the US, and the exact delivery area depends on your ZIP code.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Online grocery delivery",
+  "platform": "Web and app (US)",
+  "starts_at": "Pay per order; order minimum applies",
+  "schema_category": "ShoppingApplication",
+  "summary_short": "Online grocer selling imperfect and surplus produce and pantry items at a discount",
+  "maker": {
+   "name": "Misfits Market",
+   "url": "https://www.misfitsmarket.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://img-cdn.misfitsmarket.com/melodious-taiyaki-9pkr2z/Z1Nq9pbqstJ98MA7_Text_preview.png",
+    "alt": "A Misfits Market cardboard box surrounded by vegetables, fruit, packaged snacks and meat on a yellow background",
+    "credit": "Image: Misfits Market (misfitsmarket.com)",
+    "w": 2400,
+    "h": 1260
+   },
+   {
+    "url": "https://img-cdn.misfitsmarket.com/melodious-taiyaki-9pkr2z/aVQ_n3NYClf9otMe_Better_Right_Desktop.png",
+    "alt": "Two Misfits Market panels: hands holding an oddly shaped pepper, an egg and a tomato ('Make a difference by fighting food waste'), and rescued pantry items ('Get the best for less')",
+    "credit": "Image: Misfits Market (misfitsmarket.com)",
+    "w": 890,
+    "h": 890
+   }
+  ],
+  "use_cases": [
+   "Weekly grocery delivery at lower prices",
+   "Buying organic produce with cosmetic flaws",
+   "Reducing household food waste",
+   "Stocking up on discounted pantry items"
+  ],
+  "audience": {
+   "fit": [
+    "live in a US area Misfits Market delivers to",
+    "care more about price and food waste than perfect-looking produce",
+    "plan groceries weekly"
+   ],
+   "not_fit": [
+    "live outside the US",
+    "need same-day or on-demand delivery"
+   ]
+  },
+  "pricing": {
+   "intro": "There is no membership price list on Misfits Market's FAQ. You pay for the groceries in your cart each week; an order minimum and delivery fee apply but are shown at checkout rather than on the FAQ page.",
+   "plans": [
+    {
+     "name": "Weekly grocery orders",
+     "price": "Pay per order",
+     "detail": "Charged when your weekly shopping window closes; order minimum applies"
+    },
+    {
+     "name": "Flex Plan",
+     "price": "Pay per order",
+     "detail": "Orders only when you build one"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.misfitsmarket.com/faq",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Discounts of 30–50% versus stores, per 6abc",
+   "Helps reduce food waste",
+   "Wide range beyond produce"
+  ],
+  "cons": [
+   "Order minimum and fees not shown on the FAQ",
+   "US only; weekly windows rather than on demand"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Imperfect Foods",
+     "url": "https://www.imperfectfoods.com/",
+     "what": "Imperfect grocery delivery",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Now owned by Misfits Market."
+    },
+    {
+     "name": "Hungry Harvest",
+     "url": "https://www.hungryharvest.net/",
+     "what": "Rescued produce delivery",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Smaller regional rescued-produce service."
+    },
+    {
+     "name": "Thrive Market",
+     "url": "https://thrivemarket.com/",
+     "what": "Online membership grocery for natural and organic products",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Membership model focused on pantry and organic goods."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Misfits Market?",
+    "a": "A US online grocer selling imperfect and surplus produce and other groceries at a discount."
+   },
+   {
+    "q": "Does Misfits Market own Imperfect Foods?",
+    "a": "Yes, it bought Imperfect Foods in 2022."
+   },
+   {
+    "q": "How much can you save?",
+    "a": "6abc reported savings of as much as 30% to 50% compared with traditional stores."
+   },
+   {
+    "q": "Who founded Misfits Market?",
+    "a": "Abhi Ramesh, in Philadelphia in 2018."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Misfits Market acquires The Rounds (30 May 2025)",
+    "url": "https://techcrunch.com/2025/05/30/grocery-platform-misfits-market-acquires-the-rounds-to-further-its-mission-of-reducing-food-waste"
+   },
+   {
+    "label": "6abc: Philadelphia-born Misfits Market offering big discounts on imperfect groceries (9 June 2025)",
+    "url": "https://6abc.com/post/saving-6abc-philadelphia-born-misfits-market-offering-big-discounts-imperfect-groceries-nationwide/16707644/"
+   },
+   {
+    "label": "Misfits Market FAQ",
+    "url": "https://www.misfitsmarket.com/faq"
+   },
+   {
+    "label": "TechCrunch: Misfits Market raises $200M Series C",
+    "url": "https://techcrunch.com/?p=2141605"
+   }
+  ],
+  "team": [
+   {
+    "name": "Abhi Ramesh",
+    "role": "Founder and CEO"
+   }
+  ]
+ }
+}

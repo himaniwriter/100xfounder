@@ -1,0 +1,122 @@
+{
+ "type": "post",
+ "slug": "india-us-founder-playbook-cross-border",
+ "title": "India-US founder playbook 2026: structure, hiring and US sales",
+ "excerpt": "Where to incorporate, why startups are reverse flipping to India, the H-1B fee's status and how to sell into the US: a sourced cross-border guide for 2026.",
+ "category": "global",
+ "tags": [
+  "Cross-border startups",
+  "India-US",
+  "Reverse flip",
+  "Delaware",
+  "H-1B",
+  "SaaS",
+  "Go-to-market",
+  "GCC"
+ ],
+ "content": "<p>Building a startup that sells to US customers from an Indian base, or a US startup with an engineering team in India, is now a common pattern rather than an exception. The playbook in 2026 comes down to four decisions: where to incorporate, where to hire, how to sell into the US, and how to stay flexible as rules on visas, tariffs and company structure keep changing.</p>\n<p>This guide walks through each decision using current, sourced information, including the recent wave of Indian startups \"reverse flipping\" back to India and the state of the US H-1B fee. It is a starting point, not legal or tax advice.</p>\n<h2>Key takeaways</h2>\n<ul>\n<li>North America accounted for about 46% of the global SaaS market in 2024, according to data cited by JM Financial, so the US is the default first export market for most Indian software startups.</li>\n<li>Many Indian startups that set up US or Singapore parent companies are now moving them back to India. Razorpay, PhonePe, Groww, Zepto and Dream11 have completed this \"reverse flip\", and a faster merger route introduced in September 2024 has made it simpler.</li>\n<li>India has 2,117 global capability centres (GCCs) employing 2.36 million people, according to the Zinnov–Nasscom 2026 report, a sign of how deep the talent market is for US companies hiring in India.</li>\n<li>The $100,000 fee on new H-1B petitions announced in September 2025 is currently blocked by a court order, according to USCIS, but the government has said it plans to collect it if that changes.</li>\n</ul>\n<h2>Why India-US is the default corridor</h2>\n<p>For software startups the logic is simple: the biggest customers are in the US, and a large share of engineering talent is in India. JM Financial's July 2025 study of about 250 Indian SaaS companies with at least $10 million in annual recurring revenue (ARR) found the cohort's revenue grew at 24% a year to more than $15 billion in FY24 (April 2023 to March 2024), with 36 companies above $100 million in ARR and the group profitable overall at a 6.5% EBITDA margin, according to <a href=\"https://jmflresearch.com/JMnew/JMCRM/analystreports/pdf/SaaS_18July25.pdf\">its report</a>. The same report cites Precedence Research data putting North America at about 46% of the global SaaS market in 2024, and notes that later-stage funding rounds have supported Indian companies' expansion into the US and Europe.</p>\n<p>The talent flow runs the other way too. The <a href=\"https://zinnov.com/centers-of-excellence/zinnov-nasscom-india-gcc-landscape-2026-report/\">Zinnov–Nasscom India GCC Landscape Report 2026</a> counts 2,117 GCCs, the in-house technology and operations centres that multinationals run in India, across 3,728 units, employing 2.36 million people and generating $98.4 billion in revenue in FY26. That is the competition for talent any startup hiring engineers in India faces, and it is also the reason US companies keep opening Indian offices.</p>\n<p>AI companies are following the same path. Anthropic opened a Bengaluru office in February 2026 and said India is the second-largest market for its Claude.ai product, according to its <a href=\"https://anthropic.com/news/bengaluru-office-partnerships-across-india\">announcement</a>.</p>\n<!-- xf-image-2 -->\n<h2>Decision 1: where to incorporate</h2>\n<h3>The case for a US parent (the \"flip\")</h3>\n<p>For years, Indian startups targeting US customers and investors set up a US holding company, usually in Delaware, with the Indian company as a subsidiary. Delaware says more than 2 million business entities and more than 66% of Fortune 500 companies have made it their legal home, according to the <a href=\"https://corp.delaware.gov/aboutagency/\">Delaware Division of Corporations</a>. US investors know its corporate law, and accelerators often expect it.</p>\n<p>Setting one up is cheap. Stripe Atlas, for example, charges a one-time $500 fee covering Delaware incorporation, state filing fees, an EIN (US tax ID), the 83(b) election filing and the first year of registered agent service, then $100 a year, according to <a href=\"https://stripe.com/atlas\">Stripe's Atlas page</a> (checked 4 October 2026). The cost that matters is not the filing fee but the ongoing compliance in two countries: US and Indian tax filings, transfer pricing between the parent and subsidiary, and Indian foreign exchange rules.</p>\n<h3>Indian rules on investing abroad</h3>\n<p>Indian founders and companies investing in a foreign entity fall under the Overseas Investment Rules notified on 22 August 2022. They allow most overseas investment without prior approval, but restrict structures where the foreign entity has more than two layers of subsidiaries investing back into India, and limit overseas direct investment in startups to an Indian company's internal accruals or an individual's own funds, according to law firm <a href=\"https://elplaw.in/leadership/government-revamps-overseas-investment-rules-allows-investment-in-financial-services-deferred-payment-of-consideration-other-changes/\">Economic Laws Practice</a>. Founders should get structure reviewed by a chartered accountant and lawyer before they flip.</p>\n<h3>The reverse flip</h3>\n<p>The bigger trend now runs the other way. Startups that flipped abroad are moving their parent companies back to India, often with an Indian stock market listing in mind. Razorpay completed its reverse flip in May 2025, merging its overseas parent, Razorpay Inc., into its Indian company, and PhonePe, Zepto, Dream11 and Groww had already completed theirs, according to <a href=\"https://entrackr.com/news/razorpay-completes-reverse-flip-to-india-9317267\">Entrackr</a>. Entrackr also listed Meesho, Pine Labs, Eruditus, Livspace, Mensa and KreditBee as awaiting approvals at that time.</p>\n<p>The rules have become friendlier. In September 2024, the Ministry of Corporate Affairs amended the merger rules to let a foreign holding company merge into its wholly owned Indian subsidiary through the faster \"fast-track\" route, according to law firm <a href=\"https://corporate.cyrilamarchandblogs.com/2025/09/aa-ab-laut-chalein-key-considerations-for-reverse-flips/\">Cyril Amarchand Mangaldas</a>. It estimates the fast-track route takes three to four months, against five to 14 months for the tribunal route, and names Dream11 and Razorpay as fast-track examples. The same analysis flags issues founders should plan for: shareholder tax on the move, migrating employee stock options, foreign investment rules including Press Note 3, and sector approvals from regulators such as the RBI.</p>\n<h3>What to choose</h3>\n<p>This is our reading of the trend, not legal advice. If you expect to raise mostly from US funds and may sell to a US acquirer, a US parent still makes sense. If you expect to list in India, as many Indian consumer and fintech companies now do, starting with an Indian parent avoids an expensive reverse flip later. Either way, decide early: unwinding a structure after several funding rounds is slow and can trigger large tax bills.</p>\n<!-- xf-image-3 -->\n<h2>Decision 2: where to hire</h2>\n<p>Most India-US startups split roles by function. Engineering, product, design, support and finance operations often sit in India; sales leadership, enterprise account executives and customer-facing solutions roles often sit in the US, near buyers.</p>\n<h3>Hiring in India</h3>\n<p>The GCC boom means you compete with large multinationals for senior engineers. Salary structures also differ: Indian offers are quoted as CTC (cost to company) in LPA, or lakh per annum, where one lakh is ₹100,000, and take-home pay is lower than CTC after provident fund, tax and other deductions. Our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a> helps translate offers, and you can see who is hiring in <a href=\"/jobs/engineering-jobs-in-bengaluru/\">engineering jobs in Bengaluru</a>.</p>\n<h3>Moving people to the US</h3>\n<p>Relocating Indian employees to the US has become harder to plan. A September 2025 presidential proclamation required a $100,000 payment for certain new H-1B petitions filed from 21 September 2025. According to <a href=\"https://www.uscis.gov/newsroom/alerts/presidential-proclamation-on-restriction-on-entry-of-certain-nonimmigrant-workers\">USCIS</a>, a federal court in Massachusetts vacated the agency's implementing guidance on 8 June 2026, and the government's request to pause that order was denied on appeal; DHS says it will comply but still plans to collect the payment if the order is lifted. Founders should treat US relocation as uncertain and budget for alternatives such as hiring US-based staff for customer-facing roles. Confirm any immigration decision with a qualified US immigration lawyer.</p>\n<!-- xf-image-4 -->\n<h2>Decision 3: how to sell into the US</h2>\n<p>This section is our analysis, drawing on the reports above.</p>\n<h3>Start with a narrow, high-value segment</h3>\n<p>Indian SaaS companies that have reached scale often started by solving a specific problem, sometimes an Indian one first, and then took it global, as JM Financial notes of companies such as Perfios and CleverTap. Pick one US customer segment where your product is clearly better and where buyers can sign without a long procurement process.</p>\n<h3>Price for US value, staff for US time zones</h3>\n<p>The cross-border advantage is pricing in dollars while running much of the cost base in rupees. That only works if support and sales cover US hours. Many teams run an overlapping shift in India and keep at least one senior person in the US for meetings, events and closing deals.</p>\n<h3>Earn trust quickly</h3>\n<p>US enterprise buyers expect security reviews, data protection terms and reference customers. A SOC 2 report, US-hosted data where required, clear contracts under US law and a few named US logos often matter more than product features in early deals.</p>\n<h3>Use partner ecosystems</h3>\n<p>Marketplaces and integrations with large platforms shorten the path to US customers. Building on the tools your buyers already use, from cloud marketplaces to finance and CRM systems, gives you distribution you would otherwise have to buy with sales headcount.</p>\n<h2>Decision 4: plan for policy volatility</h2>\n<p>Rules affecting India-US businesses have moved quickly in the past year. The H-1B fee is one example. Trade is another: in February 2026 the US and India announced an interim deal that cut US tariffs on Indian goods from 50% to 18%, but law firm <a href=\"https://www.morganlewis.com/pubs/2026/02/us-india-trade-deal-cuts-tariffs-eases-tensions\">Morgan Lewis</a> noted the framework was short on specifics and made no explicit provision for services or digital trade. For software companies, tariffs on goods matter less, but D2C and hardware founders shipping to the US should check current US Customs rates before pricing.</p>\n<p>Practical steps: keep your corporate structure simple, avoid depending on a single visa route for key people, and review your contracts' tax and data clauses each year.</p>\n<!-- xf-image-5 -->\n<h2>Bottom line</h2>\n<p>The India-US model works because it pairs the world's largest software market with one of its deepest engineering talent pools. What has changed by 2026 is the structure around it: more Indian companies want an Indian parent so they can list at home, US work visas are less predictable, and trade rules shift quickly. Founders who make the incorporation decision deliberately, hire by function rather than by location habit, and build US trust early are best placed. For more on who is raising and hiring, see our <a href=\"/funding-tracker/\">funding tracker</a> and <a href=\"/jobs/\">jobs board</a>.</p>\n<p><em>This article is general information, not legal, tax, immigration or investment advice. Confirm your situation with a qualified professional and official sources.</em></p>\n<h2>FAQ</h2>\n<h3>Should an Indian startup incorporate in Delaware?</h3>\n<p>It depends on where you plan to raise money and list. A Delaware parent suits startups expecting US investors and a US exit. Startups planning an Indian IPO increasingly keep or move their parent company to India.</p>\n<h3>What is a reverse flip?</h3>\n<p>It is when a startup with a foreign parent company, usually in the US or Singapore, moves that parent back to India, typically through a merger or share swap. Razorpay, PhonePe, Groww, Zepto and Dream11 have done this.</p>\n<h3>How long does a reverse flip take?</h3>\n<p>Cyril Amarchand Mangaldas estimates three to four months via the fast-track merger route introduced in September 2024, and five to 14 months via the tribunal route, depending on circumstances.</p>\n<h3>Is the $100,000 H-1B fee in effect?</h3>\n<p>According to USCIS, a court order currently blocks the implementing guidance, but DHS says it plans to collect the payment if the order is lifted. Check USCIS for the latest position.</p>\n<h3>How much does it cost to set up a US company?</h3>\n<p>Filing costs are low. Stripe Atlas, for example, charges $500 for Delaware incorporation and first-year registered agent service, then $100 a year. Ongoing tax and compliance in both countries cost more.</p>\n<h2>Sources</h2>\n<ol>\n<li>JM Financial, <a href=\"https://jmflresearch.com/JMnew/JMCRM/analystreports/pdf/SaaS_18July25.pdf\">\"India's SaaS: Taking Wings\" (thematic research)</a>, 18 July 2025</li>\n<li>Zinnov and Nasscom, <a href=\"https://zinnov.com/centers-of-excellence/zinnov-nasscom-india-gcc-landscape-2026-report/\">\"India GCC Landscape Report 2026\"</a>, 2026</li>\n<li>Anthropic, <a href=\"https://anthropic.com/news/bengaluru-office-partnerships-across-india\">\"Bengaluru office and partnerships across India\"</a>, 16 February 2026</li>\n<li>Delaware Division of Corporations, <a href=\"https://corp.delaware.gov/aboutagency/\">\"About the Division of Corporations\"</a>, accessed 4 October 2026</li>\n<li>Stripe, <a href=\"https://stripe.com/atlas\">\"Stripe Atlas\"</a>, accessed 4 October 2026</li>\n<li>Economic Laws Practice, <a href=\"https://elplaw.in/leadership/government-revamps-overseas-investment-rules-allows-investment-in-financial-services-deferred-payment-of-consideration-other-changes/\">\"Government revamps overseas investment rules\"</a>, August 2022</li>\n<li>Entrackr, <a href=\"https://entrackr.com/news/razorpay-completes-reverse-flip-to-india-9317267\">\"Razorpay completes reverse flip to India\"</a>, 29 May 2025</li>\n<li>Cyril Amarchand Mangaldas, <a href=\"https://corporate.cyrilamarchandblogs.com/2025/09/aa-ab-laut-chalein-key-considerations-for-reverse-flips/\">\"Aa Ab Laut Chalein!: Key Considerations for 'Reverse Flips'\"</a>, 25 September 2025</li>\n<li>USCIS, <a href=\"https://www.uscis.gov/newsroom/alerts/presidential-proclamation-on-restriction-on-entry-of-certain-nonimmigrant-workers\">\"Presidential Proclamation on Restriction on Entry of Certain Nonimmigrant Workers\"</a>, accessed 4 October 2026</li>\n<li>Morgan Lewis, <a href=\"https://www.morganlewis.com/pubs/2026/02/us-india-trade-deal-cuts-tariffs-eases-tensions\">\"US-India Trade Deal Cuts Tariffs, Eases Tensions\"</a>, 17 February 2026</li>\n</ol>",
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/San_Francisco_skyline_of_April_2017_seen_from_Treasure_Island.jpg/1920px-San_Francisco_skyline_of_April_2017_seen_from_Treasure_Island.jpg",
+   "alt": "The San Francisco skyline across the bay, seen from Treasure Island",
+   "caption": "The US is the largest market for Indian software startups selling abroad.",
+   "credit": "Photo: Dllu / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:San_Francisco_skyline_of_April_2017_seen_from_Treasure_Island.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Bhagmane_Tech_Park.jpg/1920px-Bhagmane_Tech_Park.jpg",
+   "alt": "Office towers at Bagmane Tech Park in Bengaluru",
+   "caption": "India has more than 2,000 global capability centres, many of them in Bengaluru tech parks.",
+   "credit": "Photo: Prathapwagle / Wikimedia Commons, CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Bhagmane_Tech_Park.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Delaware_Legislative_Hall_Dover_DSC_3463_ad_%28cropped%29.JPG/1920px-Delaware_Legislative_Hall_Dover_DSC_3463_ad_%28cropped%29.JPG",
+   "alt": "The red-brick Delaware Legislative Hall in Dover",
+   "caption": "More than two million business entities, and most Fortune 500 companies, are incorporated in Delaware.",
+   "credit": "Photo: Adavyd / Wikimedia Commons, CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Delaware_Legislative_Hall_Dover_DSC_3463_ad_(cropped).JPG"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Terminal_2_Departure_of_Kempegowda_International_Airport.jpg/1920px-Terminal_2_Departure_of_Kempegowda_International_Airport.jpg",
+   "alt": "The departures area of Terminal 2 at Kempegowda International Airport, Bengaluru",
+   "caption": "Moving staff between India and the US has become harder to plan since the 2025 H-1B proclamation.",
+   "credit": "Photo: Sameer2905 / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Terminal_2_Departure_of_Kempegowda_International_Airport.jpg"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/ITPL_Bangalore_1.jpg/1920px-ITPL_Bangalore_1.jpg",
+   "alt": "The International Tech Park in Whitefield, Bengaluru",
+   "caption": "Many India-US startups keep engineering and operations in Indian tech hubs while selling in the US.",
+   "credit": "Photo: Rameshng / Wikimedia Commons, CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:ITPL_Bangalore_1.jpg"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://jmflresearch.com/JMnew/JMCRM/analystreports/pdf/SaaS_18July25.pdf",
+   "publisher": "JM Financial",
+   "date": "2025-07-18",
+   "claim": "~250 Indian SaaS firms: >$15B revenue FY24, 24% CAGR FY19-24, 36 at $100M+ ARR, 6.5% EBITDA margin; North America ~46% of global SaaS 2024 (Precedence Research); US/EMEA expansion; Perfios, CleverTap"
+  },
+  {
+   "url": "https://zinnov.com/centers-of-excellence/zinnov-nasscom-india-gcc-landscape-2026-report/",
+   "publisher": "Zinnov and Nasscom",
+   "date": "2026-03-31",
+   "claim": "2,117 GCCs, 3,728 units, 2.36M talent, $98.4B revenue FY26"
+  },
+  {
+   "url": "https://anthropic.com/news/bengaluru-office-partnerships-across-india",
+   "publisher": "Anthropic",
+   "date": "2026-02-16",
+   "claim": "Bengaluru office opened; India second-largest Claude.ai market"
+  },
+  {
+   "url": "https://corp.delaware.gov/aboutagency/",
+   "publisher": "Delaware Division of Corporations",
+   "date": "2026-10-04",
+   "claim": "More than 2 million entities; more than 66% of Fortune 500"
+  },
+  {
+   "url": "https://stripe.com/atlas",
+   "publisher": "Stripe",
+   "date": "2026-10-04",
+   "claim": "Atlas $500 one-time incl. Delaware incorporation, filing fees, EIN, 83(b), first-year registered agent; $100/year after"
+  },
+  {
+   "url": "https://elplaw.in/leadership/government-revamps-overseas-investment-rules-allows-investment-in-financial-services-deferred-payment-of-consideration-other-changes/",
+   "publisher": "Economic Laws Practice",
+   "date": "2022-08-22",
+   "claim": "Overseas Investment Rules notified 22 Aug 2022; automatic route; two-layer restriction; startup ODI only from internal accruals/own funds"
+  },
+  {
+   "url": "https://entrackr.com/news/razorpay-completes-reverse-flip-to-india-9317267",
+   "publisher": "Entrackr",
+   "date": "2025-05-29",
+   "claim": "Razorpay reverse flip via amalgamation of Razorpay Inc.; PhonePe, Zepto, Dream11, Groww completed; Meesho, Pine Labs, Eruditus, Livspace, Mensa, KreditBee awaiting"
+  },
+  {
+   "url": "https://corporate.cyrilamarchandblogs.com/2025/09/aa-ab-laut-chalein-key-considerations-for-reverse-flips/",
+   "publisher": "Cyril Amarchand Mangaldas",
+   "date": "2025-09-25",
+   "claim": "Fast-track route since Sept 2024 (Rule 25A), 3-4 months vs 5-14 months NCLT; Dream11 and Razorpay examples; ESOP, Press Note 3, sector approvals, tax"
+  },
+  {
+   "url": "https://www.uscis.gov/newsroom/alerts/presidential-proclamation-on-restriction-on-entry-of-certain-nonimmigrant-workers",
+   "publisher": "USCIS",
+   "date": "2026-10-04",
+   "claim": "$100,000 payment for new H-1B petitions from 21 Sept 2025; guidance vacated 8 June 2026 by Massachusetts court; stay denied; DHS plans to collect if lifted"
+  },
+  {
+   "url": "https://www.morganlewis.com/pubs/2026/02/us-india-trade-deal-cuts-tariffs-eases-tensions",
+   "publisher": "Morgan Lewis",
+   "date": "2026-02-17",
+   "claim": "Interim deal cut US tariffs on Indian goods from 50% to 18%; short on specifics; no explicit services/digital provisions"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "slug": "mixhalo",
+ "website": "https://www.mixhalo.com/",
+ "excerpt": "Mixhalo streams live-event audio and real-time translation to attendees' phones with no extra hardware. DeepL acquired Mixhalo in June 2026.",
+ "content": "<p>Mixhalo is a San Francisco audio technology company. It takes sound straight from a venue's mixing desk and streams it with very low delay to attendees' smartphones, so people can listen through their own headphones. Its website describes it as an AI-enabled digital audio platform for live events with a zero-hardware approach, used for \"silent\" sessions, live interpretation, transcription and summaries. Mixhalo Translate delivers real-time translated audio and captions for conferences, where speakers and audiences often do not share a language. TechCrunch reported that Mixhalo started out improving concert sound and later moved into sports and live events, with its technology used at Metallica and Sting shows as well as MLB and NASCAR events.</p><p>Mixhalo was founded in 2016 by Incubus guitarist Mike Einziger, violinist Ann Marie Simpson-Einziger and Vik Singh, who is CEO. TechCrunch reported that it raised more than $39 million from investors including Fortress Investment Group, Founders Fund, Defy Partners and Cowboy Ventures.</p><h2>Acquisition by DeepL</h2><p>On 17 June 2026 the German translation company DeepL announced it had acquired Mixhalo; terms were not disclosed. DeepL said it would bring Mixhalo's ultra-low-latency audio into DeepL Voice, its real-time voice translation product, so it can work at large live events, and would open a Bay Area office. Mixhalo was already a DeepL customer, using it as its main translation engine. Mixhalo's website now says it is part of DeepL.</p><h2>Pricing</h2><p>Mixhalo does not publish prices. Event organisers and venues contact its sales team for a quote.</p><h2>Who it suits</h2><p>It suits conference organisers who need live interpretation or silent sessions, and venues, leagues and artists who want to offer better audio to fans. Small meetings may not need a dedicated platform.</p><p><em>We have not used Mixhalo. This page is based on Mixhalo's website and on TechCrunch and Tech.eu coverage of the DeepL deal.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Live event audio and translation",
+  "platform": "Smartphone app and web, streamed from the venue",
+  "starts_at": "Quote on request",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "Low-latency live audio and real-time translation to attendees' phones, now part of DeepL",
+  "maker": {"name": "Mixhalo (part of DeepL)", "url": "https://www.mixhalo.com/"},
+  "team": [
+   {"name": "Vik Singh", "role": "Co-founder and CEO", "url": "https://techcrunch.com/2026/06/17/deepl-acquires-mixhalo-for-live-event-audio-streaming-and-translation"},
+   {"name": "Mike Einziger", "role": "Co-founder", "url": "https://techcrunch.com/2026/06/17/deepl-acquires-mixhalo-for-live-event-audio-streaming-and-translation"},
+   {"name": "Ann Marie Simpson-Einziger", "role": "Co-founder", "url": "https://techcrunch.com/2026/06/17/deepl-acquires-mixhalo-for-live-event-audio-streaming-and-translation"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/61c3246005c3f53a04f615ae/6a329ae267a8b47242e24be4_Mixhalo-Billboard-2-1200x627%20(1).jpeg", "alt": "The DeepL and Mixhalo logos side by side over an aerial view of the San Francisco waterfront at dusk", "credit": "Image: Mixhalo", "w": 1920, "h": 1080},
+   {"url": "https://cdn.prod.website-files.com/61c3246005c3f53a04f615ae/652dd5d775e4e33666ad9c12_Mixhalo%20Translate.png", "alt": "The Mixhalo Translate wordmark in bright green", "credit": "Image: Mixhalo", "w": 862, "h": 114}
+  ],
+  "use_cases": [
+   "Live interpretation of conference talks into attendees' languages",
+   "Running silent sessions at expos where several talks happen side by side",
+   "Streaming soundboard-quality concert audio to fans' headphones",
+   "Providing live audio and commentary at sports events",
+   "Real-time transcription and summaries of sessions"
+  ],
+  "audience": {
+   "fit": [
+    "organise multilingual conferences or large expos",
+    "run a venue, league or tour that wants better audio for fans",
+    "want interpretation without renting headsets and booths"
+   ],
+   "not_fit": [
+    "host small meetings where a video call's captions are enough",
+    "want a consumer translation app for personal use"
+   ]
+  },
+  "pricing": {
+   "intro": "Mixhalo does not publish prices; events are quoted by its sales team.",
+   "plans": [
+    {"name": "Mixhalo for events", "price": "Quote on request", "detail": "Live audio, interpretation, transcription and summaries"}
+   ],
+   "notes": [],
+   "url": "https://www.mixhalo.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other live translation and event audio tools.",
+   "items": [
+    {"name": "Wordly", "url": "https://www.wordly.ai/", "what": "AI live translation and captions for meetings and events", "tags": ["Live translation"], "starts_at": "See its own pricing page", "difference": "Software-only interpretation focused on captions and audio."},
+    {"name": "Interprefy", "url": "https://www.interprefy.com/", "what": "Remote simultaneous interpretation platform", "tags": ["Interpretation"], "starts_at": "See its own site", "difference": "Combines human interpreters with AI options."},
+    {"name": "DeepL Voice", "url": "https://www.deepl.com/", "what": "DeepL's real-time voice translation", "tags": ["Voice translation"], "starts_at": "See its own pricing page", "difference": "The parent product Mixhalo's technology now feeds into."}
+   ]
+  },
+  "faq": [
+   {"q": "Who owns Mixhalo?", "a": "DeepL, which announced the acquisition on 17 June 2026. Terms were not disclosed."},
+   {"q": "Who founded Mixhalo?", "a": "Mike Einziger of Incubus, violinist Ann Marie Simpson-Einziger and Vik Singh, in 2016."},
+   {"q": "Do attendees need special hardware?", "a": "No. Mixhalo streams to attendees' own smartphones and headphones."},
+   {"q": "How much funding did Mixhalo raise?", "a": "More than $39 million, from investors including Founders Fund and Fortress Investment Group, according to TechCrunch."}
+  ],
+  "sources": [
+   {"label": "Mixhalo website", "url": "https://www.mixhalo.com/"},
+   {"label": "TechCrunch: DeepL acquires Mixhalo (17 Jun 2026)", "url": "https://techcrunch.com/2026/06/17/deepl-acquires-mixhalo-for-live-event-audio-streaming-and-translation"},
+   {"label": "Tech.eu: DeepL acquires US audio streaming business Mixhalo (17 Jun 2026)", "url": "https://tech.eu/2026/06/17/deepl-acquires-us-audio-stadium-streaming-business-mixhalo/"},
+   {"label": "Speech Technology: DeepL acquires Mixhalo", "url": "https://www.speechtechmag.com/Articles/News/Speech-Technology-News/DeepL-Acquires-Mixhalo-175809.aspx"}
+  ]
+ }
+}

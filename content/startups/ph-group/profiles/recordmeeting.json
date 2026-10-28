@@ -1,0 +1,115 @@
+{
+  "slug": "recordmeeting",
+  "ph_url": "https://www.producthunt.com/posts/recordmeeting",
+  "existing_listing_slug": null,
+  "website": "https://recordmeeting.com",
+  "excerpt": "RecordMeeting records and transcribes Google Meet, Zoom and Teams calls without a bot joining, then gives AI notes and a share link. Pricing and alternatives.",
+  "content": "<p>RecordMeeting is a meeting recorder that runs in your browser (as a Chrome extension or Google Workspace add-on) instead of sending a bot into the call. One click starts recording; afterwards you get the full video, a transcript, AI meeting notes and summaries, and a link to share with your team. Its site lists Google Meet, Zoom, Microsoft Teams, Webex, Telegram, WhatsApp and Discord, and you can chat with your recordings to find what was said.</p><p>Because no bot joins and other participants are not notified, the maker said on Product Hunt that the recording stays on your own machine and it is up to you to tell others you are recording. Call-recording laws differ by country and, in the US, by state: some places allow a call to be recorded with one participant's consent, while others require every participant's consent. Several commenters raised this and asked for a consent reminder. Check the rules that apply where you and each participant are before recording.</p><p>RecordMeeting is made by Qualtir, according to its site and its founder Nathan's Product Hunt comment. It launched on Product Hunt on 15 July 2026 and finished #9 for the day with 155 upvotes and 28 comments (as of 14 October 2026).</p><p><em>We have not tested RecordMeeting ourselves. This page brings together its official site and pricing page, its Product Hunt launch and the public pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "Meeting recording and transcription",
+    "platform": "Chrome extension and Google Workspace add-on",
+    "starts_at": "Free plan; Pro $9/month billed yearly",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Records and transcribes video calls without a bot joining the meeting",
+    "maker": {"name": "Nathan", "url": "https://www.producthunt.com/@nthglsn"},
+    "team": [
+      {"name": "Nathan", "role": "Founder of Qualtir", "url": "https://www.producthunt.com/@nthglsn"},
+      {"name": "Mathias Gilson", "role": "Maker", "url": "https://www.producthunt.com/@mathias_gilson"}
+    ],
+    "ph": {"rank": 9, "votes": 155, "comments": 28, "followers": 209, "launched": "2026-07-15", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/ead2ff7d-a04f-41dc-8d4a-37d61791c5e9.png?auto=format&fit=max&w=1400", "w": 1280, "h": 800, "credit": "Image: RecordMeeting on Product Hunt",
+       "alt": "RecordMeeting graphic 'Works with the meeting platforms you use': Google Meet, WhatsApp, Zoom, Discord, Webex, Teams and Telegram"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Nathan, founder of Qualtir, says most AI notetakers still send a bot into your call, and the \"Notetaker has joined\" moment spoils sales calls, interviews and internal meetings.",
+        "RecordMeeting works with one click inside Google Meet, with no bot joining, and gives you the full video, a transcript and an AI summary after the call."
+      ],
+      "attribution": "Nathan, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/recordmeeting?comment=5466081"
+    },
+    "use_cases": [
+      "Keeping notes of sales calls, customer interviews or hiring interviews",
+      "Recording internal stand-ups and sharing a summary link with the team",
+      "Searching past meetings by chatting with the recordings"
+    ],
+    "audience": {
+      "fit": [
+        "dislike notetaker bots joining your calls",
+        "mostly meet on Google Meet, Zoom or Teams from a browser",
+        "want a low-cost recorder with unlimited recordings"
+      ],
+      "not_fit": [
+        "work where every participant must consent to recording and you can't reliably tell everyone yourself",
+        "need team-wide policy controls on consent, which a commenter asked about and the launch did not offer"
+      ]
+    },
+    "pricing": {
+      "intro": "RecordMeeting lists three plans; yearly billing saves 30%. Prices are in US dollars. Paid plans have a 30-day money-back guarantee.",
+      "url": "https://recordmeeting.com/pricing",
+      "checked": "2026-10-15",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "5 unlocked recordings (older ones stay open, newer ones lock), recordings up to 1 hour, AI notes, full transcription, downloads, chat with recordings"},
+        {"name": "Pro", "price": "$9/month billed yearly", "amount": 9, "currency": "USD", "detail": "Unlimited recordings up to 6 hours each, AI notes, transcription, downloads, chat"},
+        {"name": "Enterprise", "price": "$15/seat/month billed yearly", "amount": 15, "currency": "USD", "detail": "Everything in Pro plus organisations, folders, team management, shared billing and priority support"}
+      ],
+      "notes": ["At launch the maker said the free tier gave 20 recordings; the pricing page now says 5."]
+    },
+    "alternatives": {
+      "intro": "Other AI meeting notetakers. Prices are from each company's own pricing page on 14 October 2026.",
+      "items": [
+        {"name": "Granola", "url": "https://www.granola.ai/", "what": "AI meeting notes that work from your device without a bot joining", "starts_at": "Basic free; Business $14/user/month",
+         "difference": "Focused on notes rather than full video recordings."},
+        {"name": "Fathom", "url": "https://www.fathom.ai/", "what": "AI notetaker that records and summarises calls", "starts_at": "Free plan with unlimited recordings; Team $15/user/month billed annually",
+         "difference": "Joins as a visible notetaker, which RecordMeeting avoids; its free plan has unlimited recordings."}
+      ]
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/recordmeeting/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["No bot joining the call"],
+        "asked": ["How privacy and consent work without a visible bot (it is up to the user to tell others)", "How it differs from other recorders", "Whether there is a time limit (1 hour on Free, 6 hours on paid plans, per the pricing page)"],
+        "criticised": ["Several commenters noted that some places, including some US states, require every participant's consent to record a call, and suggested a consent reminder or announcement option"]
+      },
+      "quotes": [
+        {"text": "How do you handle privacy and consent, especially since recordings happen without a visible bot?", "author": "Brandon TK Beesman", "url": "https://www.producthunt.com/products/recordmeeting?comment=5584437"},
+        {"text": "A custom dictionary for product names and team jargon would be huge", "author": "Tülay Negiş", "url": "https://www.producthunt.com/products/recordmeeting?comment=5588033"}
+      ]
+    },
+    "pros": [
+      "No bot joins the meeting",
+      "Unlimited recordings on Pro at a low price",
+      "Works across many meeting and messaging platforms",
+      "30-day money-back guarantee"
+    ],
+    "cons": [
+      "Telling participants, and getting consent where the law requires it, is left to you",
+      "Free plan keeps only 5 recordings unlocked",
+      "A custom vocabulary for names and jargon was still 'coming soon' at launch"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/recordmeeting",
+      "quotes": [
+        {"author": "Brandon TK Beesman", "url": "https://www.producthunt.com/products/recordmeeting?comment=5584437", "text": "How do you handle privacy and consent, especially since recordings happen without a visible bot?",
+         "reply": "The recording is local to your machine so we can't ask for other participants consent, it's up to you to tell them."}
+      ],
+      "x": {"none": "We found no posts about RecordMeeting on X yet.", "search_url": "https://x.com/search?q=recordmeeting.com&f=live"}
+    },
+    "faq": [
+      {"q": "What is RecordMeeting?", "a": "A browser-based meeting recorder that records and transcribes calls without a bot joining, then gives AI notes and a share link. It is made by Qualtir."},
+      {"q": "How much does RecordMeeting cost?", "a": "Free for 5 unlocked recordings of up to an hour. Pro is $9 a month and Enterprise $15 per seat a month, both billed yearly."},
+      {"q": "Is it legal to record without telling people?", "a": "It depends on where you and the other participants are. Some places allow a call to be recorded with one participant's consent; others require every participant's consent. RecordMeeting does not notify other participants, and the maker says telling them is up to you, so check the rules that apply before recording."},
+      {"q": "Which platforms does it work with?", "a": "Google Meet, Zoom, Microsoft Teams, Webex, Telegram, WhatsApp and Discord, according to its site."},
+      {"q": "Is there a recording time limit?", "a": "1 hour per recording on Free and 6 hours on paid plans."}
+    ],
+    "sources": [
+      {"label": "RecordMeeting official site", "url": "https://recordmeeting.com/"},
+      {"label": "RecordMeeting pricing", "url": "https://recordmeeting.com/pricing"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/recordmeeting?launch=recordmeeting"},
+      {"label": "Granola pricing", "url": "https://www.granola.ai/pricing"},
+      {"label": "Fathom pricing", "url": "https://www.fathom.ai/pricing"}
+    ]
+  }
+}

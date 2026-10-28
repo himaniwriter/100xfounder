@@ -1,0 +1,159 @@
+{
+ "slug": "healthkart",
+ "website": "https://www.healthkart.com/",
+ "excerpt": "HealthKart is an Indian online and offline store for supplements and sports nutrition, home to brands such as MuscleBlaze and HK Vitals. Founded in 2011.",
+ "content": "<p>HealthKart sells sports nutrition, vitamins and supplements, Ayurvedic and herbal products, health foods and fitness gear online and through its own stores. Its website promotes brands including MuscleBlaze, HK Vitals, TrueBasics, Gritzo, bGREEN and MB Z Verse, and says every product it sells is 100% original and authentic.</p><p>Business Today reported that HealthKart was founded in 2011, originally as HealthKartPlus, by Sameer Maheshwari, its founder and CEO, and Prashant Tandon. In December 2022 the company announced USD 135 million in growth funding led by Temasek, with A91 Partners and Kae Capital. At the time it said its annual revenue run rate was above Rs 1,000 crore, and Business Today counted more than 140 HealthKart-branded offline stores.</p><p>There is no subscription to buy: you pay the listed price for each product. HealthKart runs a loyalty programme called HK Premium and a cashback balance called HK Cash, credited after the 7-day return window, but its homepage does not publish an HK Premium price.</p><p>Supplements are not a substitute for medical advice; check with a doctor before starting one, especially if you take medication. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Health and nutrition e-commerce",
+  "platform": "Web, Android, iOS and retail stores",
+  "starts_at": "Pay per product; no subscription needed",
+  "schema_category": "ShoppingApplication",
+  "summary_short": "Online and offline store for supplements and sports nutrition, with its own brands like MuscleBlaze",
+  "maker": {
+   "name": "HealthKart",
+   "url": "https://www.healthkart.com/"
+  },
+  "team": [
+   {
+    "name": "Sameer Maheshwari",
+    "role": "Founder and CEO"
+   },
+   {
+    "name": "Prashant Tandon",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://img1.hkrtcdn.com/19684/bnr_1968360_o.png",
+    "alt": "HealthKart category tile titled 'Ayurveda & Herbs' showing two bottles of green coffee bean capsules",
+    "credit": "Image: HealthKart, from healthkart.com",
+    "w": 525,
+    "h": 525
+   }
+  ],
+  "use_cases": [
+   "Buying whey protein, creatine and other sports nutrition",
+   "Buying multivitamins, fish oil and other daily supplements",
+   "Shopping Ayurvedic and herbal products",
+   "Picking up products at a HealthKart store"
+  ],
+  "audience": {
+   "fit": [
+    "want supplements sold directly by the brands' own store, with an authenticity promise",
+    "prefer to buy online but also want physical stores"
+   ],
+   "not_fit": [
+    "need medical guidance: HealthKart is a store, not a clinic",
+    "want a pharmacy for prescription medicines"
+   ]
+  },
+  "pricing": {
+   "intro": "HealthKart prices each product individually; there is no subscription. The HK Premium loyalty programme's price is not shown on the homepage.",
+   "plans": [
+    {
+     "name": "Products",
+     "price": "Listed per product",
+     "detail": "Prices shown on each product page"
+    },
+    {
+     "name": "HK Premium",
+     "price": "Not published on the homepage",
+     "detail": "Loyalty benefits on HealthKart's websites and stores"
+    },
+    {
+     "name": "HK Cash",
+     "price": "Free",
+     "detail": "Cashback points credited after the 7-day return period"
+    }
+   ],
+   "url": "https://www.healthkart.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Wide range from its own brands and others",
+   "Online plus 140+ stores (as of December 2022)",
+   "Authenticity promise on every product"
+  ],
+  "cons": [
+   "HK Premium price not shown on the homepage",
+   "Mostly its own brands are promoted"
+  ],
+  "alternatives": {
+   "intro": "Other places to buy supplements in India. Prices are on each store's own site.",
+   "items": [
+    {
+     "name": "Nutrabay",
+     "url": "https://nutrabay.com/",
+     "what": "Online supplement store",
+     "tags": [
+      "Supplements",
+      "E-commerce"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Online-only multi-brand supplement store."
+    },
+    {
+     "name": "Tata 1mg",
+     "url": "https://www.1mg.com/",
+     "what": "Online pharmacy and health store",
+     "tags": [
+      "Pharmacy",
+      "Supplements"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Also sells prescription medicines and lab tests."
+    },
+    {
+     "name": "Amazon",
+     "url": "https://www.amazon.in/",
+     "what": "General marketplace",
+     "tags": [
+      "Marketplace"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Third-party sellers, so check authenticity per listing."
+    },
+    {
+     "name": "Myprotein",
+     "url": "https://www.myprotein.co.in/",
+     "what": "Sports nutrition brand store",
+     "tags": [
+      "Sports nutrition"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "A single brand's own store."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who owns HealthKart?",
+    "a": "It was founded in 2011 by Sameer Maheshwari (founder and CEO) and Prashant Tandon; investors include Temasek, A91 Partners and Kae Capital."
+   },
+   {
+    "q": "Which brands does HealthKart own?",
+    "a": "Its site promotes MuscleBlaze, HK Vitals, TrueBasics, Gritzo, bGREEN and MB Z Verse."
+   },
+   {
+    "q": "Does HealthKart have physical stores?",
+    "a": "Yes. Business Today counted more than 140 HealthKart-branded stores in December 2022, and the site has a store locator."
+   },
+   {
+    "q": "What is HK Cash?",
+    "a": "Cashback points that HealthKart adds to your account once an order's 7-day return period ends."
+   }
+  ],
+  "sources": [
+   {
+    "label": "HealthKart website",
+    "url": "https://www.healthkart.com/"
+   },
+   {
+    "label": "Business Today: Temasek leads USD 135 Mn round in HealthKart (5 Dec 2022)",
+    "url": "https://www.businesstoday.in/latest/corporate/story/temasek-leads-135-mn-funding-round-in-omnichannel-nutrition-start-up-healthkart-355311-2022-12-05"
+   }
+  ]
+ }
+}

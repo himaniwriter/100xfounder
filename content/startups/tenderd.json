@@ -1,0 +1,145 @@
+{
+ "slug": "tenderd",
+ "website": "https://tenderd.com/",
+ "excerpt": "Tenderd is a Dubai-based AI platform for tracking and managing heavy equipment and vehicle fleets, backed by A.P. Moller Holding and Y Combinator.",
+ "content": "<p>Tenderd (styled TENDERD) makes AI-powered fleet and equipment management software for heavy industry such as construction, energy, logistics and infrastructure. It connects vehicles and machinery to one platform for real-time GPS tracking and geofencing, safety monitoring, equipment allocation, predictive maintenance, fuel and energy tracking, emissions monitoring, cost tracking and reports. The aim is to raise how much of the time expensive equipment is actually used and to cut fuel use and emissions.</p><p>The company is based in the United Arab Emirates. Y Combinator's directory says it was founded in 2018 and went through YC in summer 2018, and names Arjun Mohan as founder. Wamda reported a $5.8 million seed round in 2019, led by Y Combinator and BECO Capital. In June 2024 Tenderd closed a $30 million Series A led by A.P. Moller Holding, the investment company behind Maersk, with new investors Quadri Ventures and Saurya Prakash and existing investors Wa'ed Ventures, Nakhla Ventures, SOMA Capital and Liquid 2 Ventures, Wamda and Enterprise reported. Wamda said the money would go into technology and international expansion.</p><p>Tenderd does not publish prices; its website asks companies to book a demo. It is a fit for large operators with mixed fleets of machines and vehicles, especially in the Gulf region, and competes with telematics and fleet platforms such as Samsara and Trimble.</p><p><em>We have not used Tenderd for this page. It brings together Tenderd's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Fleet and equipment management",
+  "platform": "Web and mobile, with telematics",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI fleet and heavy-equipment management for construction, energy and logistics",
+  "maker": {
+   "name": "Tenderd",
+   "url": "https://tenderd.com/"
+  },
+  "team": [
+   {
+    "name": "Arjun Mohan",
+    "role": "Founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://tenderd.com/wp-content/uploads/2026/01/Tenderd-Logo.png",
+    "alt": "Tenderd logo: white curved strokes forming an abstract symbol on an orange square",
+    "credit": "Logo: Tenderd (tenderd.com)",
+    "w": 1182,
+    "h": 1183
+   },
+   {
+    "url": "https://tenderd.com/wp-content/uploads/2025/02/DB32.jpg.webp",
+    "alt": "A large crane vessel with two cranes at sea, shown in a customer section of Tenderd's website",
+    "credit": "Image: Tenderd (tenderd.com)",
+    "w": 976,
+    "h": 390
+   }
+  ],
+  "use_cases": [
+   "Tracking heavy equipment and vehicles in real time",
+   "Planning which machines go to which site",
+   "Predictive maintenance and scheduling",
+   "Monitoring fuel use and emissions",
+   "Tracking equipment costs and reports"
+  ],
+  "audience": {
+   "fit": [
+    "construction, energy and infrastructure companies with large machine fleets",
+    "logistics operators with mixed fleets",
+    "companies that report on emissions"
+   ],
+   "not_fit": [
+    "small businesses with a few cars",
+    "buyers who want self-serve sign-up and published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Tenderd does not publish prices on its website; it asks companies to book a demo.",
+   "url": "https://tenderd.com/",
+   "plans": [
+    {
+     "name": "Tenderd platform",
+     "price": "Quote on request",
+     "detail": "Book a demo"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Built for heavy equipment, not just cars and trucks",
+   "Includes emissions and fuel monitoring",
+   "Backed by A.P. Moller Holding and YC"
+  ],
+  "cons": [
+   "No public pricing",
+   "Strongest presence in the Gulf region"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Tenderd. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Samsara",
+     "url": "https://www.samsara.com/",
+     "what": "Connected operations and fleet telematics",
+     "starts_at": "See its own website",
+     "difference": "Large global telematics platform covering vehicles and equipment."
+    },
+    {
+     "name": "Trimble",
+     "url": "https://www.trimble.com/",
+     "what": "Construction technology and fleet solutions",
+     "starts_at": "See its own website",
+     "difference": "Long-established construction technology supplier."
+    },
+    {
+     "name": "Tenna",
+     "url": "https://www.tenna.com/",
+     "what": "Construction equipment tracking",
+     "starts_at": "See its own website",
+     "difference": "US-focused equipment tracking for contractors."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Tenderd do?",
+    "a": "It provides AI-powered software to track and manage heavy equipment and vehicle fleets, including maintenance, fuel and emissions."
+   },
+   {
+    "q": "Who founded Tenderd?",
+    "a": "Arjun Mohan, according to Y Combinator and Wamda. The company was founded in 2018."
+   },
+   {
+    "q": "How much has Tenderd raised?",
+    "a": "It raised a $5.8 million seed round in 2019 and a $30 million Series A led by A.P. Moller Holding in June 2024, Wamda reported."
+   },
+   {
+    "q": "Where is Tenderd based?",
+    "a": "In the United Arab Emirates (Dubai)."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Tenderd homepage",
+    "url": "https://tenderd.com/"
+   },
+   {
+    "label": "Y Combinator: TENDERD",
+    "url": "https://www.ycombinator.com/companies/tenderd"
+   },
+   {
+    "label": "Wamda: Tenderd secures $30 million Series A",
+    "url": "https://www.wamda.com/2024/06/tenderd-secures-30-million-series-a-led-ap-moller"
+   },
+   {
+    "label": "Wamda: Dubai-based Tenderd raises $5.8 million seed",
+    "url": "https://www.wamda.com/en/2019/06/dubai-based-tenderd-raises-58-million-seed"
+   },
+   {
+    "label": "Enterprise: Tenderd closes $30 mn Series A",
+    "url": "https://enterpriseam.com/uae/2024/06/12/uae-based-contech-tenderd-closes-usd-30-mn-series-a-funding-round/"
+   }
+  ]
+ }
+}

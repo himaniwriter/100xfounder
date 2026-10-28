@@ -1,0 +1,626 @@
+{
+ "input": "https://www.producthunt.com/posts/skydive",
+ "final_url": "https://www.producthunt.com/products/skydive?launch=skydive",
+ "launch": {
+  "slug": "skydive",
+  "name": "Skydive",
+  "tagline": "Build cloud agents that work across your tools",
+  "featuredAt": "2026-08-27T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "4",
+  "points": 409,
+  "commentsCount": 105,
+  "pricingType": "free_options",
+  "description": "Build cloud agent coworkers that take on real, multi-step work across the tools you already use. Describe the outcome you want, and Skydive creates a working agent in minutes. No code, no prompt engineering, no workflow wiring required. Skydive agents live in your stack, execute repeatable work, and get sharper over time.",
+  "makers": [
+   {
+    "name": "Zaria Zinn",
+    "username": "zariazinn",
+    "headline": "Head of Marketing @ Skydive"
+   },
+   {
+    "name": "Dylan",
+    "username": "dylan34",
+    "headline": "Customer Success and Support @Anything"
+   },
+   {
+    "name": "Genevieve Tankosich",
+    "username": "genevieve_tankosich",
+    "headline": "Social Media Manager"
+   },
+   {
+    "name": "Leo Acevedo",
+    "username": "leojr",
+    "headline": null
+   },
+   {
+    "name": "Eldar Gilmanov",
+    "username": "eldarverse",
+    "headline": "Designer, builder"
+   },
+   {
+    "name": "Rain Dong",
+    "username": "rain_dong",
+    "headline": "Designer"
+   },
+   {
+    "name": "Vento Li",
+    "username": "vento_li1",
+    "headline": "Software Engineer at Anything"
+   },
+   {
+    "name": "Philip Kim",
+    "username": "pgk1216",
+    "headline": "Mobile Engineer at Anything/Skydive"
+   },
+   {
+    "name": "Brendan Teo",
+    "username": "brendan_teo",
+    "headline": "Frontend Engineer at Anything"
+   },
+   {
+    "name": "Arnav Surve",
+    "username": "asurve",
+    "headline": "I code"
+   },
+   {
+    "name": "Joshua Nam",
+    "username": "joshua_nam",
+    "headline": "Building"
+   },
+   {
+    "name": "Dhruv Amin",
+    "username": "dhruvtruth",
+    "headline": "Co-Founder @ Anything"
+   },
+   {
+    "name": "James Pulec",
+    "username": "james_pulec",
+    "headline": "Full Stack Dev"
+   },
+   {
+    "name": "Marcus Lowe",
+    "username": "themarcuslowe",
+    "headline": null
+   },
+   {
+    "name": "Amy Fraser",
+    "username": "amy_fraser1",
+    "headline": "people person @ skydive "
+   }
+  ],
+  "hunter": "Ben Lang",
+  "media": [
+   {
+    "uuid": "aa941090-e357-44a8-a87f-7d446573efc5.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "f8325615-2971-4e4c-83bc-1c3b129aa804.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "ea20cecf-ba5a-410c-b80d-f2c20c163463.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "52b35898-ce72-4e1b-8682-f5c6a01e1389.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "e56aca38-e423-48e2-810e-a2f9553c485f.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "2f10ded8-bcf5-4db2-b7bf-d7282e4bb0f9.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=t-e9DUjsDKo"
+   }
+  ],
+  "links": [
+   "skydive.com",
+   "twitter.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "weekly",
+    4
+   ],
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "Skydive",
+  "slug": "skydive",
+  "tagline": "Build cloud agents that work across your tools",
+  "description": "Build cloud agent coworkers that take on real, multi-step work across the tools you already use. Describe the outcome you want, and Skydive creates a working agent in minutes. No code, no prompt engineering, no workflow wiring required. Skydive agents live in your stack, execute repeatable work, and get sharper over time.",
+  "websiteUrl": "https://skydive.com",
+  "reviewsCount": 4,
+  "reviewsRating": 4.75,
+  "followersCount": 858,
+  "twitterUrl": "https://twitter.com/getskydive",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5784841",
+   "depth": 0,
+   "author": "Marcus Lowe",
+   "username": "themarcuslowe",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt! I'm Marcus, Co-founder of Skydive 👋 The problem Everyone has access to the same AI models now, but you still have to prompt AI tools to get good results. I've seen one too many terminals built for managing Claude Code instances. Today's tools usually fall into two camps: 💬 Chatbots answer questions and generate content, but you still have to take action yourself. They forget what you taught them the last time you worked together. ⚡ Workflow builders automate repetitive processes, but you have to design every step, maintain the logic, and update it whenever something changes. Skydive is designed to actually help you grow your business by autonomously taking action throughout your company. Meet Skydive Skydive lets you hire AI agents that take on real responsibilities across your company. Describe the job, and your agent gets to work. Your agent has it's own codebase and computer in the cloud, but you never have to think about it. It just works. If you want it to use your skills, you just tell it to. If you want it to learn to write like you, it can do that too. It also self-improves over time by learning from previous conversations. 🖥️ Every agent has its own compu"
+  },
+  {
+   "id": "5817936",
+   "depth": 1,
+   "author": "Rohan Chaubey",
+   "username": "rohanrecommends",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@themarcuslowe &nbsp;Congrats on the launch. Help me understand, is it chat only or chat-first? I mean to ask, is there also a web app from where we can control the agents?"
+  },
+  {
+   "id": "5818041",
+   "depth": 2,
+   "author": "Zaria Zinn",
+   "username": "zariazinn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@themarcuslowe &nbsp; @rohanrecommends &nbsp;Hey Rohan! Yep, there’s a full web app where you can create, manage, and talk to your agents. You can also talk to them from Slack, email, iMessage, or the desktop app."
+  },
+  {
+   "id": "5819158",
+   "depth": 3,
+   "author": "Amy Fraser",
+   "username": "amy_fraser1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@themarcuslowe &nbsp; @rohanrecommends &nbsp; @zariazinn &nbsp;The best part (imo) about agent comms is the multi-platform element: I can ping my Skydive agent in Slack about a task or project, then text them about the same thing from my phone when I'm running out the door - and then pick it up in web-app later. The persistent memory architecture for each agent that maintains across all the places I already am is outrageously useful"
+  },
+  {
+   "id": "5819312",
+   "depth": 1,
+   "author": "Dhruv Amin",
+   "username": "dhruvtruth",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@rohanrecommends Dhruv here another co-founder. We made it so you can talk to your agents everywhereee Slack email text web desktop app CLI TUI API So just make an agent. Train it by chatting with it where you work. Then set up some routines (background work) by telling it what to do always. When you want to give it feedback grab the closest way to talk. It's the same agent everywhere"
+  },
+  {
+   "id": "5818191",
+   "depth": 1,
+   "author": "Jurgen Përgega",
+   "username": "jurgen_pergega",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "@themarcuslowe &nbsp;Skipping the chat terminal to focus on persistent background execution hits a real operational need. Congrats on the launch! 🚀"
+  },
+  {
+   "id": "5818562",
+   "depth": 2,
+   "author": "Zaria Zinn",
+   "username": "zariazinn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@themarcuslowe &nbsp; @jurgen_pergega &nbsp;Thanks so much Jurgen!"
+  },
+  {
+   "id": "5819159",
+   "depth": 2,
+   "author": "Amy Fraser",
+   "username": "amy_fraser1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@themarcuslowe &nbsp; @jurgen_pergega &nbsp;we agree! Thank you Jurgen!"
+  },
+  {
+   "id": "5817962",
+   "depth": 0,
+   "author": "Himani Sah",
+   "username": "himani_sah1",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Congrats. Are we able to control permissions to agents? Example, access to production tools and company data?"
+  },
+  {
+   "id": "5818064",
+   "depth": 1,
+   "author": "Zaria Zinn",
+   "username": "zariazinn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@himani_sah1 &nbsp;Yes! You can control exactly what each agent has access to (tools, data, repos, etc). Each agent is isolated and access can be revoked at any time."
+  },
+  {
+   "id": "5818575",
+   "depth": 1,
+   "author": "Rain Dong",
+   "username": "rain_dong",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@himani_sah1 &nbsp;Yes! You can also set privacy level for each agent - private to yourself, internal to your company, or open to public in sales use cases."
+  },
+  {
+   "id": "5819187",
+   "depth": 1,
+   "author": "Amy Fraser",
+   "username": "amy_fraser1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@himani_sah1 &nbsp;In terms of access to anything that might have exposure/sensitivity risk, I've found that my Skydive agents have a (reassuring) foundation of diligence + proactivity. if you're trying to connect to a tool outside of our oAuth integration stack, they'll guide you through the process of storing API keys/tokens in their secrets panel, will verbalize when login details (for example) shouldn't be shared over chat, and will suggest when it's safer for them to open their browser for you to plug in credentials yourself. with trust being paramount in agentic tooling, Skydive's soc2 compliance is also key here! @marcuslowe_ @dhruvtruth"
+  },
+  {
+   "id": "5819322",
+   "depth": 1,
+   "author": "Dhruv Amin",
+   "username": "dhruvtruth",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@himani_sah1 Yes on multiple levels: 1. Multi agent. Each agent only gets the integrations and access it needs vs everything. This helps scoping and access rejection. Agents can collaborate like humans do with different access and rules 2. Visibility: each agent can be set to internal, private, or external. Internal: By default, all agents are internal. That means only people in your workspace can talk to the agent. If we don't know who the person is, we'll do an identity check before we let them talk to it. Private: that means the agent can only talk to you. And only you can see it. External: this is the most dangerous setting. But it's your choice to flip it when you feel your agent is well trained. It means that anyone can talk to your agent from anywhere where you expose them. There's many reasons you might want this (EAs, Customer Support, etc) but: Biggest hack is usually this: you give your agent an integration and someone prompt hacks it for access. So be careful. 3. We're SOC2, CASA, Google Limited Data Use compliant, going for many other compliance certifications. Our goal is for this to be used across the entire company, with built-in team controls, admin controls. We al"
+  },
+  {
+   "id": "5818657",
+   "depth": 0,
+   "author": "Dylan",
+   "username": "dylan34",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "While my customer facing support agents will always be my favorite part of my workday, its the niche agents like ChargeKnight (Stripe Disputes Manager) and Alfie (Affiliate Fraud Prevention and Payments Manager) that win for me on those areas of the business I care about but don't work in daily. They build expertise off best practices (white papers on Stripe Disputes) from external sources and adopt them into our company - Chargeknight even pays for himself, he returns more cash to us than he costs to operate by a factor of 2-4x Alfie identified spoofing in our affiliate program with pending payouts of over 18k. The vigilance of Skydive agents helping me around the clock is just unbeatable."
+  },
+  {
+   "id": "5818902",
+   "depth": 1,
+   "author": "Zaria Zinn",
+   "username": "zariazinn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@dylan34 &nbsp;Dylan you are such a pioneer user of agents, it's incredible!"
+  },
+  {
+   "id": "5818929",
+   "depth": 1,
+   "author": "Rain Dong",
+   "username": "rain_dong",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@dylan34 &nbsp;forever impressed by how you can create specialized agents on Skydive and your customer support crew Dylan!"
+  },
+  {
+   "id": "5819247",
+   "depth": 1,
+   "author": "Philip Kim",
+   "username": "pgk1216",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@dylan34 &nbsp;thats why u the goat"
+  },
+  {
+   "id": "5819266",
+   "depth": 0,
+   "author": "Amanda O'Connor",
+   "username": "amanda_o_connor1",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Congrats on your launch but I need to understand what it's all about and how it can help me"
+  },
+  {
+   "id": "5819288",
+   "depth": 1,
+   "author": "Rain Dong",
+   "username": "rain_dong",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@amanda_o_connor1 &nbsp;It's an agent builder that lets you create any agent you want! Each agent has a cloud computer and persistent memory, and can run background automations to self-improve. Common use cases include personal assistants, engineers, social media managers, and more!"
+  },
+  {
+   "id": "5819327",
+   "depth": 1,
+   "author": "Dhruv Amin",
+   "username": "dhruvtruth",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@amanda_o_connor1 Just sign up ! Feel free to reach out to support @ skydive if you need help"
+  },
+  {
+   "id": "5819374",
+   "depth": 1,
+   "author": "Zaria Zinn",
+   "username": "zariazinn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@amanda_o_connor1 &nbsp;Great question Amanda! Basically you can use Skydive to create AI agents that can connect to the tools you use like gmail, notion, github, and more. By connecting to those tools, your agents can complete real tasks for you. Things like serving as a personal assistant (managing your email &amp; calendar), becoming an engineer (pushing prs), or designing mocks in figma. They have their own computer they can use to browse the web or host/create files. Really you name it, the agents can probably help. You can chat with them on iMessage, email, or Slack and they will have the same memory/personality across all surfaces. It's basically like hiring a coworker!"
+  },
+  {
+   "id": "5820420",
+   "depth": 1,
+   "author": "Amy Fraser",
+   "username": "amy_fraser1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@amanda_o_connor1 &nbsp;Hey Amanda! I think the best way to envision how Skydive could work for you is: think of one recurring thing you do that eats an hour of your every day, and isn't the fun part of your job/life. That's your first agent. Then, how would that task invariably lead to something else that feels like an inefficient use of your time? Maybe your first agent handles your inbox, and your second agent handles the scheduling comms for meetings or appointments. I found that once I started thinking in terms of 'what do I not like doing?' my Skydive agent roles were easy to dream up, and the beauty of Skydive is that you can create them in a simple click :)"
+  },
+  {
+   "id": "5817993",
+   "depth": 0,
+   "author": "Anant Gupta",
+   "username": "iamanantgupta",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "How does the tool decide when to rely on an agent and when to ask human input? Or that totally depends on the task?"
+  },
+  {
+   "id": "5818069",
+   "depth": 1,
+   "author": "Zaria Zinn",
+   "username": "zariazinn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@iamanantgupta &nbsp;You get to decide. You can tell each agent what it owns, when it should check with you, and what requires approval. So it depends on the task and how you’ve set up your agent."
+  },
+  {
+   "id": "5818619",
+   "depth": 1,
+   "author": "Joshua Nam",
+   "username": "joshua_nam",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@iamanantgupta You can think of these agents as new hires! They are fully autonomous and take work to completion, but only to the degree you want them to. If there are key pieces that you would like review or transparency with, just ask! The clearer you are about what you want and need, the better the agent will be for you. Like a new hire, they get smarter and better overtime as they learn more about your standards and conventions!"
+  },
+  {
+   "id": "5819325",
+   "depth": 1,
+   "author": "Dhruv Amin",
+   "username": "dhruvtruth",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@iamanantgupta We try to make the agents take action intelligently but when they don't know they'll ask you"
+  },
+  {
+   "id": "5820427",
+   "depth": 1,
+   "author": "Amy Fraser",
+   "username": "amy_fraser1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@iamanantgupta &nbsp;totally up to you! agent behavior shifts in direct correlation to your training / ergo trust in them. i had every agent 'check w me before anything goes external' at first and have unwound that lane by lane over time. you don't have to design the escalation rules up front - correct an agent once when it overreaches (or over-asks) and that judgement becomes stickier over time."
+  },
+  {
+   "id": "5817913",
+   "depth": 0,
+   "author": "zeeshan aslam",
+   "username": "zeeshan_aslam2",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I like that the focus is on outcomes rather than prompt writing. Not everyone wants to spend time figuring out the perfect instructions."
+  },
+  {
+   "id": "5818086",
+   "depth": 1,
+   "author": "Zaria Zinn",
+   "username": "zariazinn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@zeeshan_aslam2 &nbsp;Exactly, you should be able to give it the outcome and let it figure out how to get there."
+  },
+  {
+   "id": "5818933",
+   "depth": 1,
+   "author": "Rain Dong",
+   "username": "rain_dong",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@zeeshan_aslam2 &nbsp;I hear you! Now I don't worry about the first prompt anymore and instead ask my Skydive agents how to achieve goals themselves - and they just go make progress proactively!"
+  },
+  {
+   "id": "5819331",
+   "depth": 1,
+   "author": "Dhruv Amin",
+   "username": "dhruvtruth",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@zeeshan_aslam2 Who cares about the prompt? Did it do the work??"
+  },
+  {
+   "id": "5820433",
+   "depth": 1,
+   "author": "Amy Fraser",
+   "username": "amy_fraser1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@zeeshan_aslam2 &nbsp;outcome-first is what made Skydive usable for me! i'm in GTM (not prompt eng) + as soon as i got comfortable with just saying what I wanted vs writing it step by step, my agents learned + performed better. my opening prompt is a single (often ambiguous) sentence now"
+  },
+  {
+   "id": "5818613",
+   "depth": 0,
+   "author": "Philip Kim",
+   "username": "pgk1216",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "pro tip: make an agent that looks similar to you and train them to talk and work like you. then tell your coworkers to go through the agent before escalating to you. congratulations you just made your personal assistant."
+  },
+  {
+   "id": "5818904",
+   "depth": 1,
+   "author": "Zaria Zinn",
+   "username": "zariazinn",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@pgk1216 &nbsp;It's so fun to make agents that feel like you!"
+  },
+  {
+   "id": "5818939",
+   "depth": 1,
+   "author": "Rain Dong",
+   "username": "rain_dong",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@pgk1216 &nbsp;can't count the number of times someone's been in a meeting and we just pinged their agent for the file"
+  },
+  {
+   "id": "5820437",
+   "depth": 1,
+   "author": "Amy Fraser",
+   "username": "amy_fraser1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@pgk1216 &nbsp;also how fun is it to meet your (human) co-worker's personal agent and they're a mini-me version of your co-worker."
+  }
+ ]
+}

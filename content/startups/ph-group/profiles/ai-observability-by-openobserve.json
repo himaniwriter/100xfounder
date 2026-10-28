@@ -1,0 +1,93 @@
+{
+  "slug": "ai-observability-by-openobserve",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/ai-observability-by-openobserve",
+  "excerpt": "AI Observability by OpenObserve traces AI agents and LLM calls, scores quality on live traffic and tracks token cost, inside the open-source OpenObserve platform. Pricing, alternatives and launch details.",
+  "content": "<p>OpenObserve is an open-source observability platform for logs, metrics and traces, pitched as a cheaper alternative to Datadog and Elasticsearch. Its AI Observability feature, launched on Product Hunt, adds monitoring for AI agents and LLM applications. Every agent request is recorded as a distributed trace, and an agent graph maps the models, tools, sub-agents and services it calls, colour-coded by error rate. You can replay a whole conversation turn by turn, see where cost, tokens and latency went, and run online evaluations that score live traffic for relevance, hallucination, toxicity and bias, using an LLM judge with your own provider. Reviewed traces can be turned into test datasets.</p><p>Because it is OpenTelemetry-native, it works with anything that emits standard gen_ai spans, including the OpenAI and Anthropic SDKs, LangChain, Gemini, Bedrock and Ollama, and the LLM traces sit next to the rest of your system's telemetry. OpenObserve is billed per GB rather than per span or seat, and can run in its cloud, self-hosted or in your own cloud. The company, OpenObserve Inc., is based in Menlo Park, California and was founded in 2022, according to its site. The launch went live on 10 September 2026 and finished #2 for the day with 304 points and 113 comments.</p><p><em>We have not tested OpenObserve ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Observability",
+    "platform": "Cloud, self-hosted or bring-your-own-cloud",
+    "starts_at": "Open source free; Cloud from $0.50/GB ingested",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "OpenTelemetry-native tracing, cost tracking and live evaluations for AI agents and LLM apps",
+    "ph": {"rank": 2, "votes": 304, "comments": 113, "followers": 1019, "launched": "2026-09-10", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/f6fb2519-7a43-4a0b-b548-3683633195db.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "OpenObserve agent graph mapping each agent's tool, model and sub-agent calls, captioned 'See exactly what your agents are doing'", "credit": "Image: OpenObserve via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/d98294a1-057e-4355-b65b-c07644e24b8d.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "OpenObserve LLM dashboard with total cost, tokens, traces, latency and cost trend by model", "credit": "Image: OpenObserve via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/eebb945a-8d88-4f2b-841c-526bae4d45e4.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "OpenObserve evaluation health view listing scorers such as answer relevance, coherence, bias and hallucination with their status", "credit": "Image: OpenObserve via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "run AI agents or LLM features in production and want their traces next to your logs, metrics and infrastructure data",
+        "have agents that produce hundreds of spans per request and don't want to pay per span",
+        "need to self-host or keep data in your own cloud or bucket"
+      ],
+      "not_fit": [
+        "want a lightweight, LLM-only tool and have no use for a full observability platform",
+        "can't send OpenTelemetry data: instrumentation runs through standard OpenTelemetry",
+        "need the AI SRE agent and AI assistant on the basic cloud plan: on the pricing page they appear in the Enterprise feature list"
+      ]
+    },
+    "pricing": {
+      "intro": "OpenObserve Cloud is pay-as-you-go per GB, with no per-host or per-seat fees. Prices are in US dollars.",
+      "url": "https://openobserve.ai/pricing/",
+      "plans": [
+        {"name": "Open Source (self-hosted)", "price": "Free", "amount": 0, "currency": "USD", "detail": "AGPL-3.0 open-source edition, free forever"},
+        {"name": "Self-Hosted Enterprise", "price": "Free up to 50 GB/day", "amount": 0, "currency": "USD", "detail": "Free for up to 50 GB of ingestion per day"},
+        {"name": "Cloud Professional", "price": "$0.50/GB ingested", "amount": 0.5, "currency": "USD", "detail": "Plus $0.01/GB queried, billed monthly. Logs, metrics, traces, RUM, session replay and error tracking. Includes 15 months of metrics retention and 30 days for other data. 14-day free trial, no card"},
+        {"name": "Enterprise", "price": "Custom", "detail": "Volume discounts, bring-your-own-bucket retention, AI SRE agent, AI assistant, SSO, RBAC, SLAs"}
+      ],
+      "notes": [
+        "The $0.50/GB ingestion price includes a 30% discount for an annual commitment.",
+        "Extra retention for logs, traces and other non-metrics data costs $0.02 per GB per additional 30 days."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "SigNoz", "url": "https://signoz.io/", "what": "Open-source, OpenTelemetry-native observability for traces, metrics and logs", "starts_at": "Free to start; usage-based pricing",
+         "ph_rating": 5, "ph_reviews": 3,
+         "difference": "The closest like-for-like: also open source, OpenTelemetry-native and positioned against Datadog, with cloud and self-hosted options."},
+        {"name": "Middleware", "url": "https://middleware.io/", "what": "Full-stack cloud observability with an AI SRE agent and LLM observability", "starts_at": "See its pricing page",
+         "ph_rating": 5, "ph_reviews": 6,
+         "difference": "A hosted observability suite. OpenObserve has an open-source core you can self-host."},
+        {"name": "Better Stack", "url": "https://betterstack.com/", "what": "Logs, tracing, uptime monitoring, incident management and status pages", "starts_at": "See its pricing page",
+         "ph_rating": 4.91, "ph_reviews": 11,
+         "difference": "Strong on uptime, on-call and status pages. OpenObserve's launch focuses on agent tracing and live LLM evaluations."}
+      ],
+      "more": "Product Hunt also lists Datadog and Axiom as alternatives."
+    },
+    "reviews": {"count": 6, "rating": 5, "url": "https://www.producthunt.com/products/openobserve/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/openobserve",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=OpenObserve%20LLM&f=live"}
+    },
+    "faq": [
+      {"q": "What is AI Observability by OpenObserve?", "a": "A part of the OpenObserve platform that traces AI agents and LLM calls, tracks cost and tokens, and scores quality on live traffic. It launched on Product Hunt on 10 September 2026."},
+      {"q": "Which frameworks and models does it support?", "a": "Anything that emits OpenTelemetry gen_ai spans. OpenObserve lists integrations including the OpenAI and Anthropic SDKs, LangChain, Google Gemini, Amazon Bedrock, Mistral, Ollama, DeepSeek and vLLM."},
+      {"q": "How much does OpenObserve cost?", "a": "The open-source edition is free, and the self-hosted Enterprise edition is free up to 50 GB a day. OpenObserve Cloud costs $0.50 per GB ingested and $0.01 per GB queried, with a 14-day free trial."},
+      {"q": "Can it evaluate LLM output?", "a": "Yes. Online evaluations score spans, traces or sessions with built-in scorers for relevance, hallucination, toxicity and bias, using an LLM judge with your own provider or your own scorer."},
+      {"q": "Is OpenObserve open source?", "a": "Yes. Its core is licensed under AGPL-3.0, according to its pricing page."},
+      {"q": "How does it compare with Datadog?", "a": "OpenObserve charges per GB with no per-host or per-seat fees, has an open-source core and can be self-hosted. Its own comparison claims it is several times cheaper; that is OpenObserve's claim."}
+    ],
+    "sources": [
+      {"label": "OpenObserve AI & LLM observability", "url": "https://openobserve.ai/ai-llm-monitoring/"},
+      {"label": "OpenObserve official site", "url": "https://openobserve.ai/"},
+      {"label": "OpenObserve pricing", "url": "https://openobserve.ai/pricing/"},
+      {"label": "About OpenObserve", "url": "https://openobserve.ai/about/"},
+      {"label": "OpenObserve enterprise licence", "url": "https://openobserve.ai/legal/enterprise-license/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/ai-observability-by-openobserve"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/openobserve"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/openobserve/alternatives"},
+      {"label": "SigNoz", "url": "https://signoz.io/"},
+      {"label": "Middleware", "url": "https://middleware.io/"},
+      {"label": "Better Stack", "url": "https://betterstack.com/"}
+    ]
+  }
+}

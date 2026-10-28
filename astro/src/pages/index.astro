@@ -1,0 +1,161 @@
+---
+// Home "/". Mirrors wordpress/100xfounder-theme/front-page.php section by section; data comes from
+// GET /wp-json/xf/v1/headless/home (includes/headless.php). Text fields arrive HTML-escaped by
+// WordPress (hence set:html); URLs arrive raw. Keep this, the endpoint and front-page.php in step.
+import WpPage from '../layouts/WpPage.astro';
+import { wp } from '../lib/wp.js';
+const d = await wp('headless/home');
+const t = d.top;
+const ig = d.instagram;
+---
+<WpPage path="/">
+<section class="wrap" style="padding-top:28px;padding-bottom:28px">
+    <h1 class="k" style="margin:0 0 14px;display:flex;align-items:center;gap:10px;font-weight:400"><span class="dot"></span>Today in Indian &amp; US startups</h1>
+    <div class="pillars">
+        {d.pillars.map((p) => <a href={p.url} class="pc" style={`animation-delay:${p.delay}s`}><span class="pw" set:html={p.word} /><span class="meta" set:html={p.meta} /></a>)}
+    </div>
+</section>
+<div class="hl"></div>
+<Fragment set:html={d.event_strip} />
+
+<section class="wrap" style="padding-top:36px;display:flex;flex-wrap:wrap;gap:36px 40px;align-items:flex-start">
+    <aside style="flex:1 1 250px;order:1;min-width:0">
+        <div class="sh"><h2>Latest</h2><a class="k u" href={t.latest.url}>{t.latest.label}</a></div>
+        {t.latest.items.map((p) => (
+            <a href={p.url} class="row latest-item">
+                <span style="display:flex;gap:10px;align-items:baseline"><span class="mono age" set:html={p.age} /><span class="tag" set:html={p.tag} /></span>
+                <span class="t"><span class="u" set:html={p.title} /></span>
+            </a>
+        ))}
+    </aside>
+
+    <div class="o-lead" style="flex:2.2 1 480px;order:2;min-width:0">
+        <a href={t.lead.url} class="rv" style="display:block">
+            <Fragment set:html={t.lead.img} />
+            <span style="display:flex;gap:12px;margin-top:18px"><span class="tag" set:html={t.lead.tag} /><span class="k" style="font-size:10.5px" set:html={t.lead.k} /></span>
+            <span class="lead-title"><span class="u" set:html={t.lead.title} /></span>
+            <span class="dek" set:html={t.lead.dek} />
+            <span class="k" style="display:block;margin-top:12px;font-size:11px" set:html={'By ' + t.lead.by} />
+        </a>
+        {t.cards.length > 0 && (
+            <div style="margin-top:28px;padding-top:24px;border-top:1px solid var(--ln);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:24px">
+                {t.cards.map((p) => <a href={p.url} class="rv" style="display:block"><Fragment set:html={p.img} /><span class="tag" style="display:block;margin-top:12px" set:html={p.tag} /><span class="card-title"><span class="u" set:html={p.title} /></span><span class="k" style="display:block;margin-top:8px;font-size:10.5px" set:html={p.meta} /></a>)}
+            </div>
+        )}
+    </div>
+
+    <aside style="flex:1 1 260px;order:3;min-width:0">
+        <div class="sh"><h2 set:html={t.side.h2} /><span class="k" set:html={t.side.k} /></div>
+        {t.side.items.map((p, i) => <a href={p.url} class="row pop-item"><span class="n">{i + 1}</span><span><span class="t"><span class="u" set:html={p.title} /></span><span class="k" style="display:block;margin-top:6px;font-size:10.5px" set:html={p.sub} /></span></a>)}
+        <div id="newsletter"><Fragment set:html={d.newsletter} /></div>
+    </aside>
+</section>
+
+{d.interviews && <Fragment set:html={d.interviews} />}
+
+<Fragment set:html={d.ad} />
+
+{d.funding && (
+<section class="wrap" style="padding-top:88px">
+    <div class="sh"><h2>Funding tracker</h2><a class="k u" href={d.funding.url}>Full tracker →</a></div>
+    <Fragment set:html={d.funding.rows} />
+</section>
+)}
+
+<Fragment set:html={d.leaderboard} />
+
+{(d.launches.items.length > 0 || ig) && (
+<section class="wrap" style="padding-top:88px;display:flex;flex-wrap:wrap;gap:40px">
+    {d.launches.items.length > 0 && (
+    <div style="flex:999 1 560px;min-width:0">
+        <div class="sh"><h2>Top launches</h2><a class="k u" href={d.launches.url}>Launches →</a></div>
+        {d.launches.items.map((l) => (
+            <a href={l.url} class="row" style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--ln)">
+                <span class="mono" style="width:36px;font-size:22px;color:var(--t3);letter-spacing:-.04em" set:html={l.n} />
+                <span style="flex:1;min-width:0"><span style="display:block;font-size:17px;font-weight:600;letter-spacing:-.015em"><span class="u" set:html={l.title} /></span><span style="display:block;font-size:14px;color:var(--t2);margin-top:3px" set:html={l.tagline} /></span>
+                {l.industry && <span class="tag hs" style="color:var(--t2)" set:html={l.industry} />}
+                {l.votes > 0 && <span class="k hs" style="width:84px;text-align:right;font-size:10.5px">{l.votes} votes</span>}
+            </a>
+        ))}
+    </div>
+    )}
+    {ig && (
+    <div style="flex:1 1 300px">
+        <div class="sh"><h2>On Instagram</h2><a class="k u" href={ig.url} target="_blank" rel="noopener" set:html={'@' + ig.handle} /></div>
+        <div class="ig-grid">
+            {ig.items.map((g) => <a href={ig.url} target="_blank" rel="noopener" class="ph ph-1x1"><img src={g.img} alt={g.alt} loading="lazy"><span class="k" set:html={g.label} /></a>)}
+        </div>
+    </div>
+    )}
+</section>
+)}
+
+{d.blocks.length > 0 && (
+<Fragment>
+<section class="wrap" style="padding-top:88px"><div class="sh"><h2>In pictures</h2><a class="k u" href={d.news_url}>All stories →</a></div></section>
+<Fragment set:html={d.story_strip} />
+
+<section class="wrap" style="padding-top:88px"><div class="sh"><h2>Every section</h2><a class="k u" href={d.news_url}>All news →</a></div></section>
+<section class="wrap" style="padding-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:40px 32px">
+    {d.blocks.map((b) => (
+        <div class="rv">
+            <div class="sh"><h2 set:html={b.name} /><a class="k u" href={b.url}>More</a></div>
+            <a href={b.first.url} style="display:block;padding-top:16px"><Fragment set:html={b.first.img} /><span style="display:block;margin-top:12px;font-size:19px;line-height:1.28;font-weight:600;letter-spacing:-.02em"><span class="u" set:html={b.first.title} /></span><span class="k" style="display:block;margin-top:8px;font-size:10.5px" set:html={b.first.age + ' ago'} /></a>
+            {b.rest.map((p) => <a href={p.url} class="row" style="display:block;padding:13px 0;border-top:1px solid var(--ln);margin-top:14px;font-size:15px;line-height:1.38;font-weight:500"><span class="u" set:html={p.title} /><span class="k" style="display:block;margin-top:5px;font-size:10.5px" set:html={p.age + ' ago'} /></a>)}
+        </div>
+    ))}
+</section>
+</Fragment>
+)}
+
+{(d.events.rows || d.hiring.items.length > 0) && (
+<section class="wrap" style="padding-top:88px;display:flex;flex-wrap:wrap;gap:40px">
+    {d.events.rows && (
+    <div style="flex:1 1 380px;min-width:0">
+        <div class="sh"><h2>Startup events</h2><a class="k u" href={d.events.url}>Calendar →</a></div>
+        <Fragment set:html={d.events.rows} />
+    </div>
+    )}
+    {d.hiring.items.length > 0 && (
+    <div style="flex:1.3 1 460px;min-width:0">
+        <div class="sh"><h2>Startups hiring</h2><a class="k u" href={d.hiring.url}>Job board →</a></div>
+        {d.hiring.items.map((j) => (
+            <a href={j.url} class="row" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--ln)">
+                <Fragment set:html={j.mark} />
+                <span style="flex:2 1 220px;min-width:0"><span style="display:block;font-size:16px;font-weight:600;letter-spacing:-.015em"><span class="u" set:html={j.title} /></span><span style="display:block;font-size:13px;color:var(--t2);margin-top:2px" set:html={j.sub} /></span>
+                {j.sal && <span class="mono" style="font-size:13px" set:html={j.sal} />}
+                <span class="mono" style="font-size:11px;color:var(--t3);width:24px;text-align:right" set:html={j.age} />
+            </a>
+        ))}
+    </div>
+    )}
+</section>
+)}
+
+{d.blog.items.length > 0 && (
+<section class="wrap" style="padding-top:88px">
+    <div class="sh"><h2>From the blog</h2><a class="k u" href={d.blog.url}>All stories →</a></div>
+    <div class="grid-cards" style="padding-top:24px">
+        {d.blog.items.map((p) => <a href={p.url} class="rv" style="display:block"><Fragment set:html={p.img} /><span class="tag" style="display:block;margin-top:14px" set:html={p.cat} /><span class="card-title"><span class="u" set:html={p.title} /></span><span class="k" style="display:block;margin-top:8px;font-size:10.5px" set:html={p.meta} /></a>)}
+    </div>
+</section>
+)}
+
+{d.guides.items.length > 0 && (
+<section class="wrap" style="padding-top:88px">
+    <div class="sh"><h2>Latest guides &amp; explainers</h2><a class="k u" href={d.guides.url}>Every article →</a></div>
+    <div class="grid-cards" style="padding-top:24px">
+        {d.guides.items.map((p) => <a href={p.url} class="rv" style="display:block"><Fragment set:html={p.img} /><span class="tag" style="display:block;margin-top:14px" set:html={p.cat} /><span class="card-title"><span class="u" set:html={p.title} /></span><span class="k" style="display:block;margin-top:8px;font-size:10.5px" set:html={p.read} /></a>)}
+    </div>
+</section>
+)}
+
+<section class="wrap" style="padding-top:100px">
+    <div class="contribute">
+        <div style="flex:1 1 380px"><div class="k">Contribute</div><h2>Got news the ecosystem should hear?</h2><p style="margin:14px 0 0;font-size:16px;line-height:1.6;color:var(--t2);max-width:440px">Every submission is read by an editor. The good ones go on the front page, and the best go on Instagram too.</p></div>
+        <div style="flex:1 1 420px">
+            {d.contribute.map((o) => <a href={o.url} class="row opt"><span><span style="display:block;font-size:17px;font-weight:600;letter-spacing:-.015em" set:html={o.title} /><span style="display:block;font-size:14px;color:var(--t2);margin-top:3px" set:html={o.sub} /></span><Fragment set:html={d.arrow} /></a>)}
+        </div>
+    </div>
+</section>
+</WpPage>

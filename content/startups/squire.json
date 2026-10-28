@@ -1,0 +1,163 @@
+{
+ "slug": "squire",
+ "website": "https://getsquire.com/",
+ "excerpt": "Squire is booking, payments and shop-management software built for barbershops, with a client app for booking barbers. Founded in New York in 2016; valued at $750M in 2021.",
+ "content": "<p>Squire makes software for barbershops. Its shop app, SQUIRE Commander, describes an all-in-one platform for running a barbershop: appointment scheduling and online booking (including booking from Instagram), point of sale with Apple Pay and card readers, product and service sales, inventory, payroll, gift cards and loyalty, a waitlist, barber bios and marketing texts and emails to clients. Its customer app, SQUIRE, lets people find barbers near them, check availability, book a time and pay for the cut and tip with a card on file.</p><p>Squire was launched in 2016 in New York by Songe LaRon and Dave Salvant, according to TechCrunch; Forbes described the pair as a former corporate lawyer and a finance professional who left those careers to build the company. TechCrunch reported in June 2020 that Squire had raised a $34 million Series B led by CRV just before barbershops were shut down by the pandemic, after an $8 million Series A led by Trinity Ventures. When shops closed, Squire waived subscription fees and helped barbers sell gift cards online.</p><p>As shops reopened, demand for digital booking and payments grew. In July 2021 Fortune reported that Squire raised $60 million in a Series D that tripled its valuation to $750 million; the round was led by Tiger Global. Fortune noted that Squire's revenues had plummeted at the start of stay-at-home orders before recovering as barbershops went digital.</p><p>Squire's website could not be loaded for this profile, so we could not check its current plans or prices on the official pricing page and do not quote any. Ask Squire for a demo or quote. This profile draws on published reporting and Squire's App Store listings. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Barbershop management and booking software",
+  "platform": "iOS, Android and web",
+  "starts_at": "See Squire's pricing page",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Booking, payments and shop management for barbershops, plus a client booking app",
+  "maker": {
+   "name": "Squire Technologies, Inc.",
+   "url": "https://getsquire.com/"
+  },
+  "team": [
+   {
+    "name": "Songe LaRon",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Dave Salvant",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/2d/95/46/2d954694-5dea-5c4b-e3e6-3eadec0aef5b/63d0d7c6-a0f9-4f0b-8472-4bebf43cde9d_3.1_0_iOS__U00285.5_U0029.png/600x1066bb.png",
+    "alt": "Black-and-white photo of a barber trimming a client's hair with clippers, with the word SQUIRE across the middle",
+    "credit": "Image: Squire, from its App Store listing",
+    "w": 600,
+    "h": 1066
+   },
+   {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/e2/b5/fd/e2b5fdd4-a9c1-0d56-5ad1-24c08fd48618/77cd831d-0ef8-41d5-9380-e53c86218914_3.2_0_iOS__U00285.5_U0029.png/600x1066bb.png",
+    "alt": "Squire app screenshot headed Book your favorite barbers, showing a Choose a professional screen with barber cards and availability",
+    "credit": "Image: Squire, from its App Store listing",
+    "w": 600,
+    "h": 1066
+   }
+  ],
+  "use_cases": [
+   "Letting clients find and book a specific barber online, in an app or from Instagram",
+   "Taking payments at the chair with Apple Pay, chip or swipe",
+   "Managing schedules, payroll and inventory for a shop",
+   "Running gift cards, loyalty and marketing texts and emails",
+   "Managing several shop locations from one system"
+  ],
+  "audience": {
+   "fit": [
+    "own or manage a barbershop, from one chair to several locations",
+    "want booking and payments built for barbers rather than general salons",
+    "want clients to book a named barber from their phone"
+   ],
+   "not_fit": [
+    "run a spa, nail salon or gym: Squire is built for barbershops",
+    "want published prices before a demo (we could not load them)"
+   ]
+  },
+  "pricing": {
+   "intro": "We could not load Squire's official website or pricing page when preparing this profile, so we do not quote plans or prices. Check getsquire.com or ask Squire for a quote.",
+   "plans": [
+    {
+     "name": "Squire for barbershops",
+     "price": "See official pricing",
+     "detail": "Booking, payments, POS and shop management"
+    }
+   ],
+   "notes": [
+    "Prices not quoted because we could not verify them on the official page."
+   ],
+   "url": "https://getsquire.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Built specifically for barbershops",
+   "Client app for booking a chosen barber",
+   "Well-funded company with a long track record in the niche"
+  ],
+  "cons": [
+   "Prices not verified on the official site for this profile",
+   "Less suited to other beauty businesses"
+  ],
+  "alternatives": {
+   "intro": "Other booking and payments software used by barbers. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Booksy",
+     "url": "https://booksy.com/",
+     "what": "Booking app and marketplace for barbers and salons",
+     "tags": [
+      "Booking",
+      "Marketplace"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Large consumer marketplace across beauty services."
+    },
+    {
+     "name": "Square Appointments",
+     "url": "https://squareup.com/us/en/appointments",
+     "what": "Appointment booking tied to Square payments",
+     "tags": [
+      "Booking",
+      "Payments"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "General-purpose booking from a payments company."
+    },
+    {
+     "name": "theCut",
+     "url": "https://thecut.co/",
+     "what": "Booking and payments app for barbers",
+     "tags": [
+      "Barbers"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Aimed more at independent barbers than whole shops."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded Squire?",
+    "a": "Songe LaRon and Dave Salvant, who launched it in New York in 2016, according to TechCrunch."
+   },
+   {
+    "q": "How much is Squire valued at?",
+    "a": "Fortune reported a $750 million valuation after a $60 million Series D in July 2021."
+   },
+   {
+    "q": "Is Squire only for barbershops?",
+    "a": "It is built specifically for barbershops and barbers."
+   },
+   {
+    "q": "How much does Squire cost?",
+    "a": "We could not verify current prices on Squire's official site; check getsquire.com or request a quote."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Squire balances clean fades with the coronavirus (26 Jun 2020)",
+    "url": "https://techcrunch.com/2020/06/26/squire-haircuts-coronavirus-crv-34-million-series-b/"
+   },
+   {
+    "label": "Fortune: As barbershops boom, Squire Technologies draws a $750 million valuation (28 Jul 2021)",
+    "url": "https://fortune.com/2021/07/28/as-barbershops-boom-squire-technologies-draws-a-750-million-valuation/"
+   },
+   {
+    "label": "Forbes: How a corporate lawyer and a finance guy built a $750 million barbershop app (29 Oct 2021)",
+    "url": "https://www.forbes.com/sites/amyfeldman/2021/10/29/how-a-corporate-lawyer-and-a-finance-guy-ditched-the-rat-race-to-build-a-750-million-barbershop-app/"
+   },
+   {
+    "label": "Apple App Store: SQUIRE app",
+    "url": "https://apps.apple.com/us/app/squire/id957644357"
+   },
+   {
+    "label": "Apple App Store: SQUIRE Commander (shop app)",
+    "url": "https://apps.apple.com/us/app/squire-commander/id1254375220"
+   }
+  ]
+ }
+}

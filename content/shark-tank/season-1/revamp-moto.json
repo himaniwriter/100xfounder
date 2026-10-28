@@ -1,0 +1,125 @@
+{
+  "name": "Revamp Moto",
+  "slug": "revamp-moto",
+  "existing_listing_slug": null,
+  "website": "https://revampmoto.com",
+  "tagline": "Nashik maker of modular electric two-wheelers with swappable attachments",
+  "industry_term": "automotive",
+  "excerpt": "Nashik EV maker Revamp Moto raised ₹1 crore from Aman Gupta and Anupam Mittal on Shark Tank India Season 1.",
+  "content": "<p>Revamp Moto builds a modular electric two-wheeler, the Buddie, whose swappable attachments (child seat, back rack, insulated box, carrier) let one vehicle serve families, delivery riders and small traders. Co-founder and CEO Pritesh Mahajan pitched it in the fifth episode of Shark Tank India, aired on 24 December 2021, asking for ₹1 crore for 1%.</p><p>Aman Gupta and Anupam Mittal invested ₹1 crore for 1.5%. The Better India reports that Ashneer Grover and Peyush Bansal each added ₹50 lakh after the show.</p><p>Inc42's records list a pre-seed round in May 2022 and a seed round in June 2024. Filings show revenue was still very small in FY24 with a sizeable loss, as is common for a hardware start-up before scale.</p>",
+  "shark_tank": {
+    "season": 1,
+    "episode": 5,
+    "air_date": "2021-12-24",
+    "ask_amount": 10000000,
+    "ask_equity": 1,
+    "ask_valuation": 1000000000,
+    "deal": {
+      "made": true,
+      "amount": 10000000,
+      "equity": 1.5,
+      "implied_valuation": 666666667,
+      "sharks": [
+        "Aman Gupta",
+        "Anupam Mittal"
+      ],
+      "terms": "Ashneer Grover and Peyush Bansal reportedly added ₹50 lakh each after the show"
+    },
+    "founders": [
+      "Pritesh Mahajan"
+    ],
+    "city": "Nashik",
+    "category": "Electric two-wheelers",
+    "pitch_summary": "Pritesh Mahajan pitched a modular EV that turns into a mini-store or delivery vehicle. Aman Gupta and Anupam Mittal took 1.5% for ₹1 crore.",
+    "sources": [
+      {
+        "label": "The Better India: Raising Rs 1 Crore on Shark Tank, EV Startup Builds India's First 'Transformable' EV, 11 Jan 2023",
+        "url": "https://thebetterindia.com/308491/india-first-transformable-ev-buddie-revamp-moto-raises-investment-on-shark-tank-india/"
+      },
+      {
+        "label": "SET India (official YouTube): Shark Tank India Ep 5, 24 December 2021 ('will they invest a crore for 1 percent equity?')",
+        "url": "https://www.youtube.com/watch?v=7Xyr1vT7xnc"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Inc42 Datalabs: Revamp Moto financials (from statutory filings, accessed 2026-10-15)",
+      "url": "https://inc42.com/company/revamp-moto/financials/"
+    },
+    "latest_revenue": {
+      "value": 2190000,
+      "fiscal_year": "FY24",
+      "label": "Total revenue",
+      "date": "2026-10-15",
+      "source": {
+        "label": "Inc42 Datalabs: Revamp Moto financials (from statutory filings, accessed 2026-10-15)",
+        "url": "https://inc42.com/company/revamp-moto/financials/"
+      }
+    },
+    "notable_since_show": [
+      {
+        "date": "2022-05",
+        "event": "Raised about $1 million in a pre-seed round; Inc42 lists Aman Gupta and Anupam Mittal among its investors.",
+        "source": {
+          "label": "Inc42 Datalabs: Revamp Moto funding (accessed 2026-10-15)",
+          "url": "https://inc42.com/company/revamp-moto/funding/"
+        }
+      },
+      {
+        "date": "2024-06",
+        "event": "Raised an undisclosed seed round.",
+        "source": {
+          "label": "Inc42 Datalabs: Revamp Moto funding (accessed 2026-10-15)",
+          "url": "https://inc42.com/company/revamp-moto/funding/"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "closed",
+    "detail": "Inc42's records name Aman Gupta and Anupam Mittal among Revamp Moto's investors, and The Better India reports two more sharks joined after the show.",
+    "source": {
+      "label": "Inc42 Datalabs: Revamp Moto funding (accessed 2026-10-15)",
+      "url": "https://inc42.com/company/revamp-moto/funding/"
+    }
+  },
+  "pitch_video": {
+    "youtube_id": "7-M-eSnwFG4",
+    "channel": "Sony LIV",
+    "title": "\"Revamp Moto\" की Bike को Anupam और Aman ने Ride करके किया Examine | Shark Tank India",
+    "url": "https://www.youtube.com/watch?v=7-M-eSnwFG4",
+    "upload_date": "2022-08-17"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/hunt-for-interesting-businesses-1000151244",
+  "where_to_buy": [
+    {
+      "label": "Official site",
+      "url": "https://revampmoto.com"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did Revamp Moto get a deal on Shark Tank India?",
+      "a": "Yes. Aman Gupta and Anupam Mittal invested ₹1 crore for 1.5% in Season 1, Episode 5."
+    },
+    {
+      "q": "Is Revamp Moto still operating?",
+      "a": "Yes. It filed accounts for FY24 and raised a seed round in June 2024."
+    },
+    {
+      "q": "What is Revamp Moto's revenue?",
+      "a": "Inc42's filing data shows total revenue of about ₹21.9 lakh in FY24, with a net loss."
+    }
+  ],
+  "lessons": [
+    "Our analysis: designing for micro-entrepreneurs' real jobs, not just commuting, gave the product a clear buyer.",
+    "Our analysis: a high on-air valuation can still work when the sharks believe in the long hardware runway, but revenue takes years to follow."
+  ],
+  "related_pitches": [
+    "booz-scooters"
+  ],
+  "notes": "Ask comes from SET India's official synopsis ('invest a crore for 1 percent equity'). Implied valuation computed from the reported deal (₹1 Cr / 1.5%)."
+}

@@ -1,0 +1,472 @@
+{
+ "input": "https://www.producthunt.com/posts/perfai-security",
+ "final_url": "https://www.producthunt.com/products/perfai-security-for-vibe-coded-apps?launch=perfai-security",
+ "launch": {
+  "slug": "perfai-security",
+  "name": "Perfai Security",
+  "tagline": "Find & fix live vulnerabilities in Vibe Apps with 1-prompt.",
+  "featuredAt": "2026-07-09T00:01:00-07:00",
+  "dailyRank": "3",
+  "weeklyRank": "23",
+  "points": 278,
+  "commentsCount": 123,
+  "pricingType": "free",
+  "description": "Autonomous access control security for Vibe-coded apps. Our platform finds and fixes live vulnerabilities in your vibe-apps built on Replit, Lovable, Claude Code, Cursor, and other AI-coding tools. 1-prompt makes your app production-ready in minutes without requiring security expertise.",
+  "makers": [
+   {
+    "name": "Qutub Syed",
+    "username": "qutub_syed",
+    "headline": "VP of Product & GTM"
+   },
+   {
+    "name": "liyaquath ali",
+    "username": "liyaquath_ali",
+    "headline": "AppSec Engineer at Perfai Security"
+   },
+   {
+    "name": "Atef A. Ahmed",
+    "username": "atefa7med",
+    "headline": null
+   },
+   {
+    "name": "Intesar Mohammed",
+    "username": "intesar_mohammed1",
+    "headline": "Autonomous App Security"
+   },
+   {
+    "name": "Mihir Shaik",
+    "username": "mihir_shaik",
+    "headline": "Software engineer"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "65178bb0-a7f2-4644-907f-46c676e5d8f7.png",
+    "type": "image",
+    "w": 4656,
+    "h": 2786,
+    "video": null
+   },
+   {
+    "uuid": "35c92acd-f478-4725-a1ea-d9eeccbea5a5.png",
+    "type": "image",
+    "w": 4656,
+    "h": 2786,
+    "video": null
+   },
+   {
+    "uuid": "a9fe15c1-cfce-4418-a8be-86cba9f0c1b4.png",
+    "type": "image",
+    "w": 4656,
+    "h": 2786,
+    "video": null
+   },
+   {
+    "uuid": "2637afda-4400-417d-b65e-efccd73deaee.png",
+    "type": "image",
+    "w": 4656,
+    "h": 2786,
+    "video": null
+   },
+   {
+    "uuid": "5e7bbdb0-2c76-4af3-ae66-253927b8654e.png",
+    "type": "image",
+    "w": 4656,
+    "h": 2786,
+    "video": null
+   },
+   {
+    "uuid": "53ffe3f2-2f0a-43ce-9314-cba0e28754f4.png",
+    "type": "image",
+    "w": 4656,
+    "h": 2786,
+    "video": null
+   },
+   {
+    "uuid": "0f8d1c76-95ca-4aec-8b54-0e9102345b93.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/tbFdkcoE8vw"
+   }
+  ],
+  "links": [
+   "perfai.ai",
+   "x.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    3
+   ]
+  ]
+ },
+ "product": {
+  "name": "Perfai Security",
+  "slug": "perfai-security-for-vibe-coded-apps",
+  "tagline": "Find & fix live vulnerabilities in Vibe Apps with 1-prompt.",
+  "description": "Autonomous access control security for Vibe-coded apps. Our platform finds and fixes live vulnerabilities in your vibe-apps built on Replit, Lovable, Claude Code, Cursor, and other AI-coding tools. 1-prompt makes your app production-ready in minutes without requiring security expertise.",
+  "websiteUrl": "https://perfai.ai",
+  "reviewsCount": 3,
+  "reviewsRating": 4.33,
+  "followersCount": 672,
+  "twitterUrl": "https://x.com/PerfaiSecurity",
+  "linkedinUrl": "",
+  "instagramUrl": "",
+  "githubUrl": "",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5445514",
+   "depth": 0,
+   "author": "Qutub Syed",
+   "username": "qutub_syed",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt!&nbsp; 👋 Qutub here from Perfai Security . &nbsp; Over the last 18 months, I've found vibe-coders — including myself — opening Replit, Lovable, Cursor, Copilot, Claude Code (any of the various AI-coding tools) and within a few hours, they have something that looks and functions like a real product , with login, dashboards, payments, database records, admin screens, user roles, and the foundations for handling customer data. &nbsp; And that's awesome because the app looks finished! But that's when the serious builders ask: \"Is this actually safe to put on the internet?\" The Problem Every app has permissions about who can do what. Customer X should only see X's own data, not someone else's. A normal user should not gain admin access. These permissions are also called access controls. The problem is that even a small app will have thousands of access controls. Here is the simple math: 6 Roles x 10 Data x 100 Actions =&gt; 6,000+ access controls These access controls live in three places: the app pages people click on, the API endpoints (where the app sends and gets data), and the database (where the data is stored). AI tools build apps fast. But they skip most of thes"
+  },
+  {
+   "id": "5540108",
+   "depth": 1,
+   "author": "Rohan Chaubey",
+   "username": "rohanrecommends",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "hunter"
+   ],
+   "text": "@qutub_syed &nbsp;Many congratulations Qutub, Intesar and team on the launch! :) How I met the maker: I met Qutub a few weeks ago when he pitched me the product. We had a few back-and-forth conversations on the messaging and assets before the launch was ready to go live, and I really enjoyed brainstorming and discussing it with him. What is the product? Perfai Security is an autonomous security platform for vibe-coded apps. It finds and fixes live access-control vulnerabilities in apps built with tools like Replit, Lovable, Claude Code, Cursor, and other AI coding platforms. Why I endorse it? I endorse it because it tackles a real problem for modern builders: shipping fast often means shipping blind on security. Perfai makes it much easier to catch and fix vulnerabilities before they reach users, without needing a security expert on hand. Enter your vibe-coded app's URL and find vulnerabilities in minutes : https://perfai.ai/"
+  },
+  {
+   "id": "5544920",
+   "depth": 1,
+   "author": "Ahmed Faiz",
+   "username": "ahmedperfai",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@qutub_syed &nbsp; @intesar_mohammed1 Great launch. AI makes apps easy to build, but permission mistakes cause most data‑privacy leaks . Even small apps have thousands of access checks. Perfai Security helps builders — and bug‑bounty hunters — find these issues fast."
+  },
+  {
+   "id": "5544944",
+   "depth": 2,
+   "author": "Intesar Mohammed",
+   "username": "intesar_mohammed1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "&nbsp; @ahmedperfai &nbsp; Thank you! You nailed it. Permission mistakes are the #1 cause of data leaks, and even small apps have thousands of access checks. Way too many to test by hand. That's exactly what Perfai does. Just enter your app URL and our AI agents test every role and permission combo for you. You get a pentest-style report with proof for every issue found. We also do drift detection, so if new issues show up as your app changes, you'll know."
+  },
+  {
+   "id": "5545351",
+   "depth": 1,
+   "author": "Sam Hosseini",
+   "username": "sam_hosseini",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@qutub_syed &nbsp;Congratulations Intesar and the team on the launch! I met Intesar and the team at AI DevSummit 2026 a couple months ago. We are a stealth startup that hadn't done any formal security testing, and Intesar offered to help. That conversation turned into a real engagement. Perfai is an autonomous security platform that finds and fixes live vulnerabilities in AI-built apps. It maps your full attack surface: UI workflows, API endpoints, token security, privacy compliance, and runs hundreds of tests simultaneously across OWASP and its own AI-native framework, and tells you exactly what to fix. Why I endorse it: Because it delivered real findings, fast. Across two test runs on our platform, Perfai executed 258 automated tests(240 security tests across 7 API endpoints and 11 UI workflows, plus 18 privacy tests) and surfaced 6 high-severity issues we didn't know about: 2 security vulnerabilities (missing RBAC and rate limiting) and 4 privacy compliance gaps (missing GDPR user rights endpoints). What impressed me most was the follow-through. Intesar and the team facilitated multiple reruns as we addressed each finding, confirming fixes were holding before marking them resolv"
+  },
+  {
+   "id": "5547591",
+   "depth": 1,
+   "author": "Kutlwano Melamu",
+   "username": "kutlwano_melamu",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@qutub_syed &nbsp;Congrats on the launch! nice niche \"Vibe-coded apps\""
+  },
+  {
+   "id": "5541854",
+   "depth": 0,
+   "author": "Anand Thakkar",
+   "username": "anand_thakkar1",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Scanning live deployed vibe apps rather than static source is the right call. Most tools miss runtime behavior entirely. We've run into situations where AI-generated code introduces subtle auth gaps that only surface under specific API call sequences. How does your scanner handle stateful multi-step exploits? Can it chain requests across endpoints to trigger a vulnerability that no single request would expose?"
+  },
+  {
+   "id": "5542376",
+   "depth": 1,
+   "author": "Atef A. Ahmed",
+   "username": "atefa7med",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@anand_thakkar1 &nbsp;that's exactly the right question, and yes 🔥. It's one of the biggest reasons we built the Vision Agent. Instead of looking at isolated endpoints, it learns how your app actually works by mapping the workflows and request sequences it uses, like create → update → approve → read The Security Agent then replays those flows and mutates them to uncover things like multi step privilege escalation, state transition abuse, creating an object as role A and accessing it as role B, or skipping an approval step a few calls earlier. These are the kinds of stateful authorization issues that only show up across a sequence of requests, so most scanners never see them. Every finding comes with the exact request chain needed to reproduce it. Business logic chaining is an area we're continuing to push hard on. Give it a try and see what sequences it surfaces in your app. It's free: perfai.ai"
+  },
+  {
+   "id": "5543223",
+   "depth": 1,
+   "author": "Intesar Mohammed",
+   "username": "intesar_mohammed1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@anand_thakkar1 &nbsp;Great question! This is exactly why we test live apps instead of just code. Some auth bugs only show up when requests happen in a certain order, and code scanners can't see that. Yes, we handle multi-step exploits. Our Security Agent learns how your app works, then chains requests across endpoints and roles. For example, it logs in as a low-level user, grabs an object ID from one endpoint, and tries to use it somewhere else. That's how we catch bugs no single request would find. On average, Perfai finds dozens of critical vulnerabilities and active data leaks, and it fixes them instantly too. Full coverage across UI, API, data, and roles, at a fraction of pentest cost. Try it free at perfai.ai . Just enter your app URL to start. We're also giving away 50% discount codes for the launch. If you need extra credits or help onboarding your app, reach out to me anytime. Happy to help!"
+  },
+  {
+   "id": "5541359",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the \"mutate an object you own to reach one you don't\" part is what caught my attention. if that attack succeeds against a live production app, the agent didn't just find the vulnerability, it exploited it for real against real data. is there a safe/sandboxed mode where the mutation attempts happen against a snapshot or shadow copy, or does running this against a production app with real customers mean you're accepting some risk of the test itself causing the exact damage you're trying to prevent"
+  },
+  {
+   "id": "5541690",
+   "depth": 1,
+   "author": "Qutub Syed",
+   "username": "qutub_syed",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan &nbsp;great question, you decide what Perfai Security points at. You hand us any base path or app URL. The aggressive, state-changing pass runs against a staging environment, a preview deploy, or a clone/snapshot, not necessarily your live prod. The blast radius is your call, not ours. And even then, proving an access-control break almost never requires destroying data. For \"mutate an object you own to reach one you don't,\" the vuln is proven the moment the system authorizes the cross-boundary action for the wrong principal... making the 'authorization' the finding. We assert that the boundary is crossable but we don't complete the destruction to prove it. So the check never depends on a destructive write, and anything genuinely state-changing you route to the staging/clone URL you give us. You can sign up free at perfai.ai (or 50% off the Pro plan with our Product Hunt discount) and I'd be happy to connect and walk you through pointing it at a staging clone."
+  },
+  {
+   "id": "5543259",
+   "depth": 1,
+   "author": "Intesar Mohammed",
+   "username": "intesar_mohammed1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan &nbsp;Really good question. You're right that this is where most testing tools get risky. Perfai Security is production-safe, unlike regular pentesting. Here's why: We don't run injection attacks at all. Those are the tests that can damage your app, database, logs, APIs, containers, and third-party integrations. We focus on access control testing, which is safe by design. The agent also uses its own test accounts, not real customer accounts. When it checks if it can reach data it shouldn't, it's testing if the door opens, not pulling customer data. For risky actions like updates or deletes, it only tests against objects it created itself. Real records are never touched. So the test itself won't cause the damage it's trying to prevent. That safety is core to how we built it. Try it free at perfai.ai and get a full pentest-style report of your app. We're giving away 50% discount codes for the launch too. If you need extra credits or help onboarding, just reach out. Happy to help!"
+  },
+  {
+   "id": "5544460",
+   "depth": 2,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@intesar_mohammed1 &nbsp;that boundary-crossable-not-destructive distinction is clever. one thing I'm wondering: since the agent only tests against objects it created itself, could that miss bugs that only trigger on real customer data shapes, like an IDOR that depends on a specific ID encoding or a legacy record format from before some migration? or does the agent seed test objects that mimic whatever data patterns it finds in the app already"
+  },
+  {
+   "id": "5544675",
+   "depth": 3,
+   "author": "Intesar Mohammed",
+   "username": "intesar_mohammed1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan &nbsp; Sharp question, and you've spotted the real trade-off in safe production testing. Here's how we close that gap: the agent doesn't test from just one account. It signs up dozens of role accounts across multiple tenants, so we're recreating the real shape of your app: many users, many roles, many tenant boundaries. IDOR bugs are cross-account by nature, like tenant A reaching tenant B's objects. With dozens of accounts in play, those boundaries get tested from every angle, using real IDs your app actually generated. Since the accounts sign up through your real flows, the objects they create follow your app's real ID encoding and data patterns, not synthetic fakes. You're right that a truly one-off legacy record from an old migration is harder to cover safely, and honestly, no production-safe tool can poke at real customer records without becoming the risk itself. What we can promise: every ID scheme and data shape your app produces today gets tested across role and tenant boundaries, and drift detection catches new patterns as they ship."
+  },
+  {
+   "id": "5545005",
+   "depth": 3,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@intesar_mohammed1 &nbsp;that's a fair boundary to draw honestly, most tools would oversell that last mile. quick one on \"drift detection catches new patterns as they ship\" - what's the actual signal there? is it watching for new endpoint shapes/ID formats showing up in traffic, or does it need a redeploy/rescan to notice the app changed?"
+  },
+  {
+   "id": "5543257",
+   "depth": 0,
+   "author": "Valeria",
+   "username": "hi_i_am_mimo",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The three-places framing (app pages, API endpoints, DB) is the right mental model — most scanners only check the frontend guard and miss the API and row-level gaps. When the 1-prompt fix runs, does it patch the actual authz logic in my codebase (and where: API middleware vs a DB row-level policy), or does it just flag and hand me a diff to apply myself? And to exercise authenticated endpoints for broken access control, how does it get in without me handing over production credentials?"
+  },
+  {
+   "id": "5543508",
+   "depth": 1,
+   "author": "Intesar Mohammed",
+   "username": "intesar_mohammed1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hi_i_am_mimo &nbsp; Great breakdown, and you're right. Frontend guards get all the attention while API and row-level gaps leak the real data. On fixes: you stay in control. The Fix Agent doesn't push code behind your back. Each finding comes with a one-prompt fix you run in your own code agent, like \"Fix Critical\" or \"Fix #2\". The fix targets where the flaw actually lives, so an unprotected endpoint gets patched in your API authz logic, and a row-level gap gets fixed at the data layer. You review before anything ships. Fast, but never blind. On access: no production credentials needed in most cases. Our agents sign up their own test accounts, just like a real user would. Then they test what those accounts can and cannot reach across UI, API, and data. You only provide accounts if your app doesn't support sign-up, like invite-only apps. And since we skip injection attacks entirely, testing is production-safe. Drift detection keeps it going as your app changes, so coverage never goes stale. Try it free at perfai.ai and get a full pentest-style report. We're giving away 50% discount codes for the launch too. Need extra credits or help onboarding? Just reach out. Happy to help!"
+  },
+  {
+   "id": "5545144",
+   "depth": 2,
+   "author": "Valeria",
+   "username": "hi_i_am_mimo",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@intesar_mohammed1 &nbsp;That production-safe angle (self-signup test accounts, skipping injection) is what makes it actually runnable against a live app. One boundary question: self-signup covers a single account privilege escalation, but the nastier gaps are cross-tenant — org A reading org B rows via IDOR. Does the agent provision multiple accounts across separate tenants to test that horizontally, or is it scoped to what one signed-up account can reach?"
+  },
+  {
+   "id": "5545167",
+   "depth": 3,
+   "author": "Intesar Mohammed",
+   "username": "intesar_mohammed1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hi_i_am_mimo &nbsp; Great question, and you're right that cross-tenant gaps are the nastiest ones. Here's how we cover the full boundary map: Cross-tenant: Our agents provision OrgA and OrgB as separate tenants, then check if one org can read or change the other's data. IDOR, BOLA, cross-org access, all tested horizontally. Same tenant: Inside each org, we test if User1 can reach User2's private data. Think one teammate reading another's records they shouldn't see. Roles: We provision Role1 through RoleN and test every role against every action and data object. That covers vertical privilege escalation, like a viewer doing admin actions. Drift: Apps change fast, so we keep testing as you ship. A new gap in any of these areas gets caught, not left sitting unnoticed. Every issue comes with proof of the exact request that crossed the boundary, in a pentest-style report."
+  },
+  {
+   "id": "5542406",
+   "depth": 0,
+   "author": "Tarık",
+   "username": "tarkb3lu",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Ran it on a small Replit app and it flagged an exposed API key plus a sketchy redirect I genuinely missed, super easy fix flow. Wish I'd had this a few months ago when I shipped something embarrassingly broken."
+  },
+  {
+   "id": "5542711",
+   "depth": 1,
+   "author": "Atef A. Ahmed",
+   "username": "atefa7med",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tarkb3lu &nbsp;Thanks for sharing that.. an exposed API key and an open redirect are exactly the kind of issues that can slip through when you're shipping quickly with AI. It's usually not carelessness, just not having time to inspect every endpoint and flow. Glad Perfai caught them in one pass. If you've got a larger app with multiple roles and real user data, that's where it starts finding the more interesting access control issues too. Give it a run and see what it turns up. Thanks again for sharing the results!"
+  },
+  {
+   "id": "5543265",
+   "depth": 1,
+   "author": "Intesar Mohammed",
+   "username": "intesar_mohammed1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@tarkb3lu &nbsp;This is awesome to hear! Thanks for sharing. An exposed API key and a sketchy redirect are exactly the kind of bugs that slip through when you ship fast. Glad the fix flow made it easy too. That's the goal: find it, fix it, move on. And don't feel bad about the earlier app. Almost every vibe-coded app we test has issues like this. You're ahead of the game now. If you want to scan more apps, the free tier is there, and we're giving away 50% discount codes for the launch. Every scan comes with a full pentest-style report. Need extra credits or help onboarding another app? Just reach out. Happy to help!"
+  },
+  {
+   "id": "5540640",
+   "depth": 0,
+   "author": "Jared Salois",
+   "username": "jared_salois",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Tools like this are usually judged by what they catch, but the harder part is what slips through. Do you have a sense of that side - cases where something looked clean but was found later? That would matter more to me than the total number of vulnerabilities found. Congrats on the launch!"
+  },
+  {
+   "id": "5541110",
+   "depth": 1,
+   "author": "Qutub Syed",
+   "username": "qutub_syed",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hello @jared_salois I'm particularly excited to answer your question!&nbsp; Raw vuln counts are a vanity metric. And you're right... what slips through is the real test. A few ways we attack the false-negative problem head-on: We measure against a known denominator. The Vision Agent enumerates the full access-control matrix (roles × objects × actions), so we report coverage (what share of that surface we actually exercised) not just a pile of findings. You see what we tested, not only what we caught. Gaps are reported as gaps , never as green. An auth wall we couldn't cross, or a path we lacked credentials for, or a flow needing business context we can't infer (\"this discount should never apply to enterprise SKUs\"), etc. All those surface as explicit coverage gaps , not a false \"clean.\" \"Looked clean, found later\" is a first-class case. Every deploy gets re-tested, and as our attack models improve, we re-scan existing apps. So yesterday's \"clean\" can legitimately become today's finding. Coverage is a living thing, not a one-time snapshot. And every finding is exploit-verified , so what you do get isn't diluted by false positives. We'd rather hand you an honest \"here's what we didn'"
+  },
+  {
+   "id": "5543281",
+   "depth": 1,
+   "author": "Intesar Mohammed",
+   "username": "intesar_mohammed1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jared_salois &nbsp; Thank you! And this is one of the best questions we've gotten. Honest answer: yes, things can slip through. No tool catches everything, and anyone who says otherwise is selling you something. Here's how we think about it. We're focused on access control, so bugs outside that scope (like injection or business logic errors) are not what we hunt. Within access control, our coverage comes from testing every role against every data type and action, so the misses tend to be edge cases like flows the agent couldn't reach, not whole categories. When a customer or pentester finds something we missed, we treat it as a bug in our system. We add it to our test framework so every app we scan after that gets checked for it. That feedback loop is how our coverage grows. If you want to see for yourself, try the free tier at perfai.ai . You get a full pentest-style report, so you can compare it against your own findings. We're giving 50% discount codes for the launch too. Need extra credits or onboarding help? Just reach out!"
+  },
+  {
+   "id": "5540824",
+   "depth": 0,
+   "author": "Roop Reddy",
+   "username": "roopreddy",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Can Perfai detect business logic vulnerabilities, or is it mainly focused on authorization issues? BTW, congrats on shipping.."
+  },
+  {
+   "id": "5541020",
+   "depth": 1,
+   "author": "Qutub Syed",
+   "username": "qutub_syed",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@roopreddy &nbsp;thank you, and great distinction to draw. Access control is business logic. It's the highest-value slice of it, and the one missed most often. So that's where we go deepest: BOLA/BFLA/IDOR, privilege escalation, cross-tenant isolation, multi-step workflow authz. But we don't test at the \"is there an auth check?\" level. The Vision Agent builds a semantic model of your app with the roles, objects, actions, state ... all taken into account. And our Security Agent can reason about the intended rules and then try to break them, such as: skip a workflow step replay a state transition mutate an object you own to reach one you don't chain a privilege escalation That's all 'logic'-level attacking. Pure economic-logic abuse (price/coupon/quota manipulation, business-invariant races) is what we're expanding into next. Want to see what it flags on yours? You can use our discount code to get 50% off on the Pro plan (in pinned comment)"
+  },
+  {
+   "id": "5543271",
+   "depth": 1,
+   "author": "Intesar Mohammed",
+   "username": "intesar_mohammed1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@roopreddy &nbsp; Thank you! Great question. Our core focus is access control: roles, permissions, and data exposure across UI, API, and data layers. That's where most real-world breaches happen. But there's a lot of overlap with business logic. Since our agents learn your app's actual workflows, they catch logic gaps tied to access, like skipping steps in a flow to reach data you shouldn't, or performing actions your role shouldn't allow. Pure business logic bugs like pricing errors aren't our focus today, but the access side of logic flaws is well covered. Try it free at perfai.ai and see what it finds. You get a full pentest-style report with every scan. We're also giving away 50% discount codes for the launch. If you need extra credits or help onboarding your app, just reach out. Happy to help!"
+  }
+ ]
+}

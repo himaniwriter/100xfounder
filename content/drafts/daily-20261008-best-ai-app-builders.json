@@ -1,0 +1,176 @@
+{
+  "type": "post",
+  "slug": "best-ai-app-builders",
+  "title": "Best AI app builders in 2026: Lovable vs Bolt, Replit, v0 and more",
+  "excerpt": "Lovable, Bolt.new, Replit, v0, Google AI Studio and Bubble compared for non-developers: prices checked 8 October 2026, limits, and which to pick.",
+  "category": "ai-news",
+  "tags": [
+    "AI app builders",
+    "vibe coding",
+    "Lovable",
+    "Bolt.new",
+    "Replit",
+    "v0",
+    "Google AI Studio",
+    "no-code"
+  ],
+  "content": "<p>The best AI app builder for most non-developers in October 2026 is Lovable if you want a polished web app with a database and sign-in, Bolt.new if you want more control over the code for the same money, and Replit if your idea needs a heavier backend or several people working on it. Google AI Studio is the cheapest way to try the idea because building there is free, while v0 suits founders who already plan to host on Vercel. The market moved again this month: on 7 October 2026 Lovable added credit limits and alerts for shared workspaces, and on 2 October 2026 Replit added new OpenAI and Anthropic models to its agent, according to the two companies' changelogs. Prices below come from vendor pages checked on 8 October 2026.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>\"Vibe coding\" tools turn a written description into a working app with screens, a database and hosting. They are different from coding assistants such as Cursor or Claude Code, which we cover in our <a href=\"/best-ai-for-coding/\">best AI for coding</a> guide.</li>\n<li>Entry paid plans cluster at $25 to $30 a month: Lovable Pro is $25, Bolt Pro is $25, v0 Plus is $30 per user, and Replit Core is $20 ($18 billed annually).</li>\n<li>Every tool meters usage with credits or tokens, so the monthly price is a floor, not a ceiling. Big projects use more per message.</li>\n<li>Firebase Studio no longer accepts new users. Google points newcomers to Google AI Studio instead.</li>\n<li>None of these tools makes an app secure by default. Lovable's own documentation says you remain responsible for your app's security.</li>\n</ul>\n\n<h2>What an AI app builder is, and who it is for</h2>\n<p>An AI app builder is a browser-based tool where you describe what you want (\"a booking app for my yoga studio with a login and a payments page\") and an agent writes the code, previews it and publishes it. You refine it by chatting, and the better tools also set up a database, user accounts and hosting.</p>\n<p>They suit three kinds of people best: founders testing an idea before hiring engineers, operators building internal tools such as dashboards or approval forms, and designers or product managers who want a clickable prototype that actually works.</p>\n<p>The category is now large and well funded. Lovable raised $400 million at a $13.3 billion valuation on 12 August 2026, and apps built on it receive more than 900 million visits a month, according to <a href=\"https://tech.eu/2026/08/12/lovables-valuation-doubles-to-13bn-as-raises-400m/\">Tech.eu</a>.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Lovable: the easiest start for non-technical founders</h2>\n<p><strong>Best for:</strong> founders who have never opened a terminal and want a good-looking web app with sign-in and a database.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> the free plan gives 5 build credits a day, capped at 30 a month, plus 20 monthly Cloud credits, according to <a href=\"https://docs.lovable.dev/introduction/subscription-plans\">Lovable's plan documentation</a>. Pro starts at $25 a month for 100 credits ($250 a year, about $21 a month), and Business starts at $50 a month for 100 credits ($500 a year). Paid plans keep the 5 daily build credits on top. Top-ups cost $15 per 50 credits on Pro and $30 per 50 on Business, according to <a href=\"https://docs.lovable.dev/introduction/plans-and-credits\">Lovable's credits page</a>.</p>\n<p>Lovable prices by credits, not seats: workspaces allow unlimited members who share one pool, according to its <a href=\"https://lovable.dev/pricing\">pricing page FAQ</a>. The same page gives sample costs, from 0.50 credits for a small style change to 1.70 credits for a landing page with generated images. Monthly plan credits expire two months after they are issued.</p>\n<p><strong>Key limits:</strong> code editing, custom domains and user roles need Pro; single sign-on and internal publishing need Business. Credits go quickly on large apps. The new admin controls added on 7 October 2026 let workspace owners cap usage and get alerts, according to the <a href=\"https://docs.lovable.dev/changelog\">Lovable changelog</a>, which matters if several people share one plan.</p>\n\n<h2>Bolt.new: more code control at the same price</h2>\n<p><strong>Best for:</strong> semi-technical founders who want to see and edit the code, and teams that want hosting and a database bundled in.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Bolt's free plan includes a 300,000-token daily limit and 1 million tokens a month, with Bolt branding on published sites, according to <a href=\"https://bolt.new/pricing\">Bolt's pricing page</a>. Pro is $25 a month billed monthly and starts at 10 million tokens a month with no daily limit; unused tokens roll over. Teams is $30 per member a month. Bolt says yearly billing saves up to 28%.</p>\n<p>Bolt is made by StackBlitz and runs the whole development environment in your browser tab. Its <a href=\"https://support.bolt.new/account-and-subscription/tokens\">token documentation</a> explains that tokens are used when Bolt reads, reasons about and builds your project, so larger projects cost more per message. A useful detail: you can edit code by hand in Code View without spending tokens.</p>\n<p><strong>Key limits:</strong> token use grows with project size, so long-running projects get more expensive. The free daily allowance does not accumulate: an unused day resets to 300,000, not double.</p>\n\n<!-- xf-image-3 -->\n\n<h2>Replit: best when the app needs a real backend</h2>\n<p><strong>Best for:</strong> apps that need more than a front end and a database, teams with several collaborators, and founders who expect to hand the code to engineers later.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Replit Core is $20 a month, or $18 a month billed annually, and includes $20 of usage toward more powerful models, according to <a href=\"https://replit.com/pricing\">Replit's pricing page</a>. Pro is $100 a month ($90 billed annually), with 10 parallel agents, up to 15 collaborators and database rollback for up to 28 days. Enterprise is custom.</p>\n<p>The free Starter plan includes daily Agent credits up to a monthly cap and one free published app, which goes down automatically after 30 days, according to <a href=\"https://docs.replit.com/billing/plans\">Replit's plan documentation</a>. Starter apps carry a \"Made with Replit\" badge and use the lighter build mode only.</p>\n<p><strong>What's new:</strong> on 2 October 2026 Replit added GPT-6.1 Sol and Claude Sonnet 5.5 to the models its agent can use and introduced workspace settings for company-wide policy, according to its <a href=\"https://docs.replit.com/updates\">updates page</a>.</p>\n<p><strong>Key limits:</strong> Replit is a full development environment, so it shows more technical detail than Lovable. That helps later but can overwhelm a first-time builder.</p>\n\n<h2>v0 by Vercel: best for polished front ends on Next.js</h2>\n<p><strong>Best for:</strong> founders and product managers who want a clean, modern interface and plan to host on Vercel, often with a developer joining soon.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> v0's free plan has a limit of 7 messages a day, according to <a href=\"https://v0.app/pricing\">v0's pricing page</a>. Plus is $30 per user a month with $30 of monthly credits and $2 of free daily credits on login. Business is $100 per user a month with the same credit structure and training opt-out by default. Enterprise is custom and adds single sign-on.</p>\n<p>v0 builds on Next.js, React, Tailwind CSS and shadcn/ui, and publishes to Vercel from the chat window, according to <a href=\"https://v0.app/docs/faqs\">v0's FAQ</a>. It can connect to GitHub and open pull requests, which makes the handover to an engineer simpler than with most rivals.</p>\n<p><strong>Key limits:</strong> it is tied to one stack and one host. If you do not want Next.js on Vercel, look elsewhere.</p>\n\n<h2>Google AI Studio (and what happened to Firebase Studio)</h2>\n<p><strong>Best for:</strong> trying an idea at zero cost, and builders who want Google's Firebase database and sign-in behind their app.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Google says AI Studio usage is free of charge in all available regions, according to the <a href=\"https://ai.google.dev/gemini-api/docs/pricing\">Gemini API pricing page</a>. The same page notes that on the free tier, content is used to improve Google's products; on the paid API tier it is not. Do not paste customer data into a free-tier project.</p>\n<p>At Google I/O on 19 May 2026, Google said AI Studio could deploy to Cloud Run with one click, without a payment method for your first two Firebase-enabled apps on its new Google Cloud Starter Tier, and could generate Kotlin Android apps, according to the <a href=\"https://firebase.blog/posts/2026/05/google-io-2026-announcements\">Firebase blog</a>.</p>\n<p><strong>Firebase Studio is closing.</strong> Google stopped new sign-ups and new workspaces on 22 June 2026 and will shut Firebase Studio on 22 March 2027, deleting remaining data, according to its <a href=\"https://firebase.google.com/docs/studio/migrating-project\">migration notice</a>. Google recommends AI Studio for browser-based building and Antigravity for code-first work. Firestore, Authentication and App Hosting keep running.</p>\n<p><strong>Key limits:</strong> the free tier's data terms make it unsuitable for sensitive work, and production apps still need a Google Cloud billing account beyond the starter allowance.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Bubble: when you want to edit visually, not by chatting</h2>\n<p><strong>Best for:</strong> non-developers who want to understand and change their app on a visual canvas after the AI's first draft, including native mobile apps.</p>\n<p><strong>Pricing as of 8 October 2026:</strong> Bubble's free plan includes 50,000 workload units a month but only a development version with one editor, according to <a href=\"https://bubble.io/pricing\">Bubble's pricing page</a>. To go live you need Starter at $59 a month, Growth at $209 or Team at $549, each billed annually. Mobile build submissions to app stores are capped by plan, from 5 a month on Starter to 20 on Team.</p>\n<p>Bubble's AI app generator builds a first version of a web or mobile app from a description, and you then edit it in the visual editor; Bubble says it can submit native iOS and Android apps to the App Store and Google Play, according to its <a href=\"https://bubble.io/ai-app-generator\">AI app generator page</a>.</p>\n<p><strong>Key limits:</strong> Bubble is the most expensive option to go live, and your app lives on Bubble's platform rather than as code you can take elsewhere.</p>\n\n<h2>Which AI app builder should you pick?</h2>\n<table>\n<thead><tr><th>Pick this</th><th>If you…</th><th>Paid plan from (8 Oct 2026)</th><th>Free plan</th></tr></thead>\n<tbody>\n<tr><td>Lovable</td><td>are non-technical and want a polished web app with sign-in fast</td><td>$25/month (100 credits)</td><td>5 build credits a day, up to 30 a month</td></tr>\n<tr><td>Bolt.new</td><td>want to see and edit the code without paying for tokens</td><td>$25/month (10M tokens)</td><td>300K tokens a day, 1M a month</td></tr>\n<tr><td>Replit</td><td>need a heavier backend or several collaborators</td><td>$20/month ($18 annually)</td><td>Daily Agent credits; 1 app for 30 days</td></tr>\n<tr><td>v0</td><td>want a Next.js front end hosted on Vercel</td><td>$30/user/month</td><td>7 messages a day</td></tr>\n<tr><td>Google AI Studio</td><td>want to test an idea at no cost with Firebase behind it</td><td>Free to build; hosting billed by Google Cloud</td><td>Yes, but data may be used to improve Google products</td></tr>\n<tr><td>Bubble</td><td>prefer a visual editor and need native mobile apps</td><td>$59/month billed annually</td><td>Development version only</td></tr>\n</tbody>\n</table>\n<p>A practical approach for a founder: build the first version on a free plan in two tools, show both to five potential customers, and pay only for the one you keep. Once you have users, read our wider list of <a href=\"/best-ai-tools-for-startups/\">AI tools for startups</a> for the rest of the stack.</p>\n\n<h2>The risks nobody puts on the pricing page</h2>\n<p><strong>Security.</strong> AI-written code is often insecure. Veracode's 2025 GenAI Code Security Report found that AI-generated code introduced security flaws in 45% of 80 coding tasks across more than 100 models, according to <a href=\"https://sdtimes.com/security/ai-generated-code-poses-major-security-risks-in-nearly-half-of-all-development-tasks-veracode-research-reveals/\">SD Times</a>. Lovable now runs a quick scan (database access rules, vulnerable packages, exposed MCP servers) and a deeper code scan, but its <a href=\"https://docs.lovable.dev/features/security\">security documentation</a> says these \"cannot guarantee complete security\" and recommends a professional review for apps that handle sensitive data. If your app stores customer details or takes payments, pay a developer to review it before launch.</p>\n<p><strong>Costs that grow with the app.</strong> Credits and tokens are spent per message, and bigger projects cost more per message on Bolt and Lovable.</p>\n<p><strong>Lock-in.</strong> Lovable lists Git sync even on its free plan and v0 lists GitHub sync, which keeps an exit open; check the export options of any tool before you commit. Bubble apps stay on Bubble. Firebase Studio's closure is a reminder that even large vendors retire products; keep your code and data exportable.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>For a first product, start with Lovable or Bolt.new on a free plan and expect to pay about $25 a month once you are building seriously. Move to Replit when you need a heavier backend or a team, and use v0 if your future engineers will work in Next.js. Use Google AI Studio for free experiments, not customer data. Whatever you choose, keep a copy of the code in your own repository, cap your monthly spend, and get a human security review before real users sign up. To see what other founders are shipping with these tools, browse our <a href=\"/launches/\">launches</a> page.</p>\n\n<h2>FAQ</h2>\n<h3>What is vibe coding?</h3>\n<p>Vibe coding means building software by describing what you want in plain language and letting an AI agent write and change the code. The AI app builders in this guide are designed for that style of work.</p>\n<h3>Can I build an app with AI without knowing how to code?</h3>\n<p>Yes, for prototypes and simple apps. Lovable, Bolt.new and Bubble are built for non-developers. For anything that handles payments or personal data, get a developer to review security before launch.</p>\n<h3>Which AI app builder is free?</h3>\n<p>All six have a free option as of 8 October 2026. Google AI Studio is free to use, while Lovable, Bolt, Replit and v0 give limited daily credits, tokens or messages. Bubble's free plan cannot publish a live app.</p>\n<h3>Is Firebase Studio shutting down?</h3>\n<p>Yes. Google disabled new sign-ups on 22 June 2026 and will shut Firebase Studio on 22 March 2027. It recommends Google AI Studio or Antigravity instead.</p>\n<h3>Lovable or Bolt: which is better?</h3>\n<p>Both start at $25 a month. Lovable is simpler for non-technical users and prices by shared credits; Bolt gives more direct code access and lets you edit code without spending tokens.</p>\n<h3>Do I own the code these tools generate?</h3>\n<p>Check each vendor's terms before you build. Lovable and v0 both list GitHub or Git sync on their plans, so you can keep a copy of the code under your own account.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Lovable, \"Changelog\", 7 October 2026, <a href=\"https://docs.lovable.dev/changelog\">docs.lovable.dev/changelog</a></li>\n<li>Lovable, \"Subscription plans\", accessed 8 October 2026, <a href=\"https://docs.lovable.dev/introduction/subscription-plans\">docs.lovable.dev</a></li>\n<li>Lovable, \"Plans and credits\", accessed 8 October 2026, <a href=\"https://docs.lovable.dev/introduction/plans-and-credits\">docs.lovable.dev</a></li>\n<li>Lovable, \"Pricing\", accessed 8 October 2026, <a href=\"https://lovable.dev/pricing\">lovable.dev/pricing</a></li>\n<li>Lovable, \"Security\", accessed 8 October 2026, <a href=\"https://docs.lovable.dev/features/security\">docs.lovable.dev</a></li>\n<li>Bolt, \"Pricing\", accessed 8 October 2026, <a href=\"https://bolt.new/pricing\">bolt.new/pricing</a></li>\n<li>Bolt, \"Tokens\", accessed 8 October 2026, <a href=\"https://support.bolt.new/account-and-subscription/tokens\">support.bolt.new</a></li>\n<li>Replit, \"Pricing\", accessed 8 October 2026, <a href=\"https://replit.com/pricing\">replit.com/pricing</a></li>\n<li>Replit, \"Plans\", accessed 8 October 2026, <a href=\"https://docs.replit.com/billing/plans\">docs.replit.com</a></li>\n<li>Replit, \"Updates\", 2 October 2026, <a href=\"https://docs.replit.com/updates\">docs.replit.com/updates</a></li>\n<li>Vercel, \"v0 pricing\", accessed 8 October 2026, <a href=\"https://v0.app/pricing\">v0.app/pricing</a></li>\n<li>Vercel, \"v0 FAQs\", accessed 8 October 2026, <a href=\"https://v0.app/docs/faqs\">v0.app/docs/faqs</a></li>\n<li>Google, \"Gemini Developer API pricing\", accessed 8 October 2026, <a href=\"https://ai.google.dev/gemini-api/docs/pricing\">ai.google.dev</a></li>\n<li>Firebase, \"What's new from Firebase at Google I/O 2026\", 19 May 2026, <a href=\"https://firebase.blog/posts/2026/05/google-io-2026-announcements\">firebase.blog</a></li>\n<li>Firebase, \"Firebase Studio sunset and project migration\", accessed 8 October 2026, <a href=\"https://firebase.google.com/docs/studio/migrating-project\">firebase.google.com</a></li>\n<li>Bubble, \"Pricing\", accessed 8 October 2026, <a href=\"https://bubble.io/pricing\">bubble.io/pricing</a></li>\n<li>Bubble, \"AI app generator\", accessed 8 October 2026, <a href=\"https://bubble.io/ai-app-generator\">bubble.io/ai-app-generator</a></li>\n<li>Tech.eu, \"Lovable's valuation doubles to $13.3BN as raises new funds\", 12 August 2026, <a href=\"https://tech.eu/2026/08/12/lovables-valuation-doubles-to-13bn-as-raises-400m/\">tech.eu</a></li>\n<li>SD Times, \"AI-generated code poses major security risks in nearly half of all development tasks, Veracode research reveals\", 30 July 2025, <a href=\"https://sdtimes.com/security/ai-generated-code-poses-major-security-risks-in-nearly-half-of-all-development-tasks-veracode-research-reveals/\">sdtimes.com</a></li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Young_woman_working_on_laptop_and_writing_at_home.jpg/1920px-Young_woman_working_on_laptop_and_writing_at_home.jpg",
+      "alt": "A woman with curly hair works on a laptop and takes notes at a wooden kitchen table",
+      "caption": "Most AI app builders run in the browser, so a first version can be built from a laptop at home.",
+      "credit": "Photo: Shixart1985 / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Young_woman_working_on_laptop_and_writing_at_home.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Wikimania_2014_-_Day_1_-_Hackathon_participants_05.JPG/1920px-Wikimania_2014_-_Day_1_-_Hackathon_participants_05.JPG",
+      "alt": "A hackathon participant types on a laptop at a table while others talk in the background",
+      "caption": "Hackathons were once the fastest way to get a prototype built; AI app builders now compress that work into hours.",
+      "credit": "Photo: Gaelle Berton / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wikimania_2014_-_Day_1_-_Hackathon_participants_05.JPG"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Startup_Village_workshop_1.jpg/1920px-Startup_Village_workshop_1.jpg",
+      "alt": "A presenter points at code projected on a wall during a workshop at Startup Village in Kochi, Kerala",
+      "caption": "A workshop at Startup Village, Kochi. Tools like Replit show the code they write, which helps when a developer joins later.",
+      "credit": "Photo: Netha Hussain / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Startup_Village_workshop_1.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Tom_Kristian_Abel_pitching_at_Fellin_H%C3%A4kk_hackathon_2026.jpg/1920px-Tom_Kristian_Abel_pitching_at_Fellin_H%C3%A4kk_hackathon_2026.jpg",
+      "alt": "A hackathon participant holding a microphone and a laptop pitches an idea in front of a flip chart",
+      "caption": "Founders increasingly pitch with a working prototype rather than slides.",
+      "credit": "Photo: Maido Parv / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tom_Kristian_Abel_pitching_at_Fellin_H%C3%A4kk_hackathon_2026.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Music_player_app_on_smartphone.jpg/1920px-Music_player_app_on_smartphone.jpg",
+      "alt": "A hand holds a smartphone showing a music player app",
+      "caption": "Bubble and Google AI Studio can also produce mobile apps, not only websites.",
+      "credit": "Photo: Santeri Viinamäki / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Music_player_app_on_smartphone.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://docs.lovable.dev/changelog",
+      "publisher": "Lovable",
+      "date": "2026-10-07",
+      "claim": "Changelog"
+    },
+    {
+      "url": "https://docs.lovable.dev/introduction/subscription-plans",
+      "publisher": "Lovable",
+      "date": "2026-10-08",
+      "claim": "Subscription plans"
+    },
+    {
+      "url": "https://docs.lovable.dev/introduction/plans-and-credits",
+      "publisher": "Lovable",
+      "date": "2026-10-08",
+      "claim": "Plans and credits"
+    },
+    {
+      "url": "https://lovable.dev/pricing",
+      "publisher": "Lovable",
+      "date": "2026-10-08",
+      "claim": "Pricing"
+    },
+    {
+      "url": "https://docs.lovable.dev/features/security",
+      "publisher": "Lovable",
+      "date": "2026-10-08",
+      "claim": "Security"
+    },
+    {
+      "url": "https://bolt.new/pricing",
+      "publisher": "Bolt",
+      "date": "2026-10-08",
+      "claim": "Pricing"
+    },
+    {
+      "url": "https://support.bolt.new/account-and-subscription/tokens",
+      "publisher": "Bolt",
+      "date": "2026-10-08",
+      "claim": "Tokens"
+    },
+    {
+      "url": "https://replit.com/pricing",
+      "publisher": "Replit",
+      "date": "2026-10-08",
+      "claim": "Pricing"
+    },
+    {
+      "url": "https://docs.replit.com/billing/plans",
+      "publisher": "Replit",
+      "date": "2026-10-08",
+      "claim": "Plans"
+    },
+    {
+      "url": "https://docs.replit.com/updates",
+      "publisher": "Replit",
+      "date": "2026-10-02",
+      "claim": "Updates"
+    },
+    {
+      "url": "https://v0.app/pricing",
+      "publisher": "Vercel",
+      "date": "2026-10-08",
+      "claim": "v0 pricing"
+    },
+    {
+      "url": "https://v0.app/docs/faqs",
+      "publisher": "Vercel",
+      "date": "2026-10-08",
+      "claim": "v0 FAQs"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "publisher": "Google",
+      "date": "2026-10-08",
+      "claim": "Gemini Developer API pricing"
+    },
+    {
+      "url": "https://firebase.blog/posts/2026/05/google-io-2026-announcements",
+      "publisher": "Firebase",
+      "date": "2026-05-19",
+      "claim": "What's new from Firebase at Google I/O 2026"
+    },
+    {
+      "url": "https://firebase.google.com/docs/studio/migrating-project",
+      "publisher": "Firebase",
+      "date": "2026-10-08",
+      "claim": "Firebase Studio sunset and project migration"
+    },
+    {
+      "url": "https://bubble.io/pricing",
+      "publisher": "Bubble",
+      "date": "2026-10-08",
+      "claim": "Pricing"
+    },
+    {
+      "url": "https://bubble.io/ai-app-generator",
+      "publisher": "Bubble",
+      "date": "2026-10-08",
+      "claim": "AI app generator"
+    },
+    {
+      "url": "https://tech.eu/2026/08/12/lovables-valuation-doubles-to-13bn-as-raises-400m/",
+      "publisher": "Tech.eu",
+      "date": "2026-08-12",
+      "claim": "Lovable's valuation doubles to $13.3BN as raises new funds"
+    },
+    {
+      "url": "https://sdtimes.com/security/ai-generated-code-poses-major-security-risks-in-nearly-half-of-all-development-tasks-veracode-research-reveals/",
+      "publisher": "SD Times",
+      "date": "2025-07-30",
+      "claim": "AI-generated code poses major security risks in nearly half of all development tasks, Veracode research reveals"
+    }
+  ]
+}

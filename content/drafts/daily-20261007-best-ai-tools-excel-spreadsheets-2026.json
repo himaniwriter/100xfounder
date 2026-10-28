@@ -1,0 +1,164 @@
+{
+  "type": "post",
+  "slug": "best-ai-tools-excel-spreadsheets-2026",
+  "title": "Best AI tools for Excel and spreadsheets in 2026, compared",
+  "excerpt": "Copilot in Excel, Gemini in Sheets, ChatGPT and Claude for Excel, Julius and Rows compared on what they do, what they cost and how they handle your data.",
+  "category": "ai-news",
+  "tags": [
+    "AI for Excel",
+    "Copilot in Excel",
+    "Gemini in Google Sheets",
+    "ChatGPT for Excel",
+    "Claude for Excel",
+    "spreadsheets",
+    "Julius AI",
+    "Rows"
+  ],
+  "content": "<p>The best AI tool for Excel in 2026 depends on the spreadsheet you already use and the plan you already pay for. Microsoft's Copilot with Agent Mode is the natural pick inside Excel. Gemini is built into Google Sheets. ChatGPT and Claude both now run as add-ins inside Excel, and ChatGPT also works in Sheets. Specialist tools such as Julius and Rows suit analysis outside the spreadsheet. One change this autumn: Microsoft retired its in-cell COPILOT function on 14 September 2026. Prices and features below were checked on vendor pages as of October 2026.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>Already on Microsoft 365?</strong> Copilot in Excel is included from Microsoft 365 Personal ($9.99 a month), and Agent Mode can build and edit whole workbooks.</li>\n<li><strong>On Google Workspace?</strong> Gemini in Sheets can build spreadsheets from a prompt, fill columns and run the =AI() function. It needs Business Standard or above, or a Google AI Pro plan.</li>\n<li><strong>Financial modelling:</strong> ChatGPT for Excel and Claude for Excel both link answers to specific cells and keep formulas intact. Claude's add-in needs a paid Claude plan.</li>\n<li><strong>Privacy:</strong> OpenAI and Anthropic say their business plans don't train on your content by default, and Microsoft's business Copilot plans include Enterprise Data Protection. Retention, audit logs and prompt-injection risks still differ, so check before you upload client data.</li>\n</ul>\n\n<h2>What changed in spreadsheet AI this year</h2>\n<p>In 2026, spreadsheet assistants moved from suggesting formulas to editing the workbook themselves. Microsoft made <a href=\"https://techcommunity.microsoft.com/blog/excelblog/agent-mode-in-excel-is-now-generally-available-on-desktop/4457408\">Agent Mode generally available</a> in Excel for Windows, Mac and the web on 27 January 2026. OpenAI launched <a href=\"https://openai.com/index/chatgpt-for-excel/\">ChatGPT for Excel</a> in beta on 5 March, added Google Sheets in April and opened both to all ChatGPT plans on 5 May. Google rolled out end-to-end spreadsheet building in Gemini for Sheets from 22 April, according to the <a href=\"https://workspaceupdates.googleblog.com/2026/04/build-and-edit-complex-spreadsheets-with-Gemini-in-Google-Sheets.html\">Workspace Updates blog</a>. Anthropic's <a href=\"https://support.claude.com/en/articles/12650343-use-claude-for-excel\">Claude for Excel</a> is now generally available on paid Claude plans.</p>\n<p>One feature has gone. Microsoft's <a href=\"https://support.microsoft.com/en-us/excel/functions/copilot-function\">support page</a> says the COPILOT function, which let you write AI prompts in a cell, stopped working on 14 September 2026. It had only ever been offered to preview programme members. When old workbooks recalculate, those cells show a #NAME? error, though previously calculated results stay cached. Microsoft points users to the Copilot pane instead. If your team built sheets around =COPILOT(), check them now.</p>\n\n<!-- xf-image-2 -->\n\n<h3>The options at a glance</h3>\n<table>\n<thead><tr><th>Tool</th><th>Works in</th><th>Best for</th><th>Entry price (Oct 2026)</th></tr></thead>\n<tbody>\n<tr><td>Copilot in Excel (Agent Mode)</td><td>Excel web, Windows, Mac</td><td>Teams already on Microsoft 365</td><td>Microsoft 365 Personal $9.99/month; Copilot Business add-on $18/user/month (promo)</td></tr>\n<tr><td>Gemini in Google Sheets</td><td>Google Sheets</td><td>Workspace teams, bulk text tasks with =AI()</td><td>Google AI Pro $19.99/month; Workspace Business Standard (₹1,080/user/month in India)</td></tr>\n<tr><td>ChatGPT for Excel and Sheets</td><td>Excel, Google Sheets</td><td>Building and explaining models in plain language</td><td>Available on all ChatGPT plans; Plus $20/month</td></tr>\n<tr><td>Claude for Excel</td><td>Excel web, Windows, Mac</td><td>Auditing and updating complex financial models</td><td>Claude Pro $20/month ($17 billed annually)</td></tr>\n<tr><td>Julius</td><td>Web app</td><td>Analysing exported files and databases</td><td>Plus $20/month ($16 billed annually)</td></tr>\n<tr><td>Rows</td><td>Web spreadsheet</td><td>AI-assisted reports with live data integrations</td><td>Plus $8/user/month</td></tr>\n</tbody>\n</table>\n\n<h2>Copilot in Excel: the default for Microsoft 365 users</h2>\n<p>Copilot now does most spreadsheet chores. Microsoft's <a href=\"https://support.microsoft.com/en-us/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a\">getting-started guide</a> says it can add, rename and delete sheets, write formulas and calculations across sheets, and create charts and PivotTables. It can also sort, filter and apply conditional formatting, pull in web information with citations, and run custom skills for repeated tasks. It works on Windows, Mac, the web and mobile, with files on OneDrive, SharePoint or your own computer.</p>\n<p>Agent Mode is the bigger change. You describe an outcome, such as a loan calculator with a payment schedule, and Copilot plans the steps, edits the workbook and checks the result. When Microsoft announced general availability in January, it added web search and a model switcher between OpenAI and Anthropic models. It was available to commercial Microsoft 365 Copilot licences and to Personal, Family and Premium subscribers. Microsoft said at the time that Personal and Family plans use an AI credit model, and that Agent Mode wasn't yet available in the EU or UK.</p>\n<p><strong>Pricing, as of October 2026.</strong> For individuals, Microsoft 365 Personal costs $9.99 a month and includes Copilot in Word, Excel and PowerPoint. Family costs $12.99 a month, but Copilot is for the subscription owner only. Premium costs $19.99 a month and adds what Microsoft calls agentic features, including advanced research and analytics. These prices come from Microsoft's <a href=\"https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products\">plan comparison page</a>. For businesses with up to 300 users, the <a href=\"https://www.microsoft.com/en-us/microsoft-365/copilot/pricing\">Copilot pricing page</a> lists the Microsoft 365 Copilot Business add-on at $18 per user per month, down from $21. That is a first-year promotion for annual commitments made between 1 July and 31 December 2026. Bundles with Copilot built in cost $23.50 (Business Standard) and $32 (Business Premium) per user per month, paid yearly. Business plans include Enterprise Data Protection.</p>\n\n<!-- xf-image-3 -->\n\n<h2>Gemini in Google Sheets: best for Workspace teams</h2>\n<p>Google's April update lets Gemini build an entire spreadsheet from a prompt, edit alongside you, and create advanced pivot tables and complex formulas. It can also pull data from across Workspace apps. Google reports a 70.48% success rate on complex spreadsheet tasks. That is Google's own figure, and it means roughly three in ten hard tasks still need fixing. At launch the feature was US English only. It is available on Workspace Business Standard and Plus, Enterprise Standard and Plus, certain AI add-ons, and the consumer Google AI Pro and Ultra plans.</p>\n<p>Two smaller tools suit everyday work better. <strong>Fill with Gemini</strong> completes a column from a single example or a prompt. Google <a href=\"https://workspaceupdates.googleblog.com/2026/04/effortlessly-automate-data-entry-in-Google-Sheets-using-Fill-with-Gemini.html\">says</a> it made 100-cell tasks nine times faster than manual entry in a 95-person study. The <strong>AI function</strong> (=AI() or =Gemini()) generates text, summarises, categorises, scores sentiment and fetches current facts from Google Search, cell by cell. Google's <a href=\"https://support.google.com/docs/answer/15820999?hl=en\">help page</a> lists its limits. It returns text only, it only sees the ranges you pass to it, it can't be undone (only regenerated), and it can't be nested inside other functions.</p>\n<p><strong>Pricing.</strong> Consumers get it through Google AI Pro at $19.99 a month, according to Google's <a href=\"https://gemini.google/subscriptions/\">subscription page</a>. Businesses need Workspace. In India, Google's <a href=\"https://workspace.google.com/pricing\">pricing page</a> lists Business Standard at ₹1,080 per user per month (₹864 with an introductory discount for up to 20 users). Business Starter, at ₹270, includes Gemini in Gmail and the Gemini app but not the full Gemini features in Docs and Sheets.</p>\n\n<h2>ChatGPT and Claude add-ins for Excel</h2>\n<h3>ChatGPT for Excel and Google Sheets</h3>\n<p>OpenAI's add-in sits in a sidebar inside Excel or Sheets. It can build or update models from a plain-language request, run scenarios, and explain how sheets and formulas connect. It can also trace errors and show how assumptions flow through a model. OpenAI says each answer links to the exact cells it used or changed. ChatGPT asks permission before editing, and you can undo steps. OpenAI's launch post also lists its limits. Some responses take longer, outputs may need formatting cleanup, and complex formulas or edge cases may still need fixing by hand.</p>\n<p>The add-ins are available on all ChatGPT plans, and the <a href=\"https://chatgpt.com/pricing/\">ChatGPT pricing page</a> shows usage rising on higher tiers. Plus costs $20 a month and Business $25 per user monthly, according to OpenAI's <a href=\"https://learn.chatgpt.com/docs/pricing\">plan page</a>. In Enterprise and Edu workspaces the add-in is off until an admin enables it. Finance teams get extra value from the integrations OpenAI announced alongside it, including Moody's, Dow Jones Factiva and MSCI.</p>\n\n<!-- xf-image-4 -->\n\n<h3>Claude for Excel: careful work on complex models</h3>\n<p>Anthropic's add-in is aimed at analysts who inherit large models. According to <a href=\"https://support.claude.com/en/articles/12650343-use-claude-for-excel\">Anthropic's documentation</a>, it answers questions about a workbook with clickable cell-level citations. It can change assumptions such as a discount rate while keeping formula links intact, trace errors like #REF! to their source, and populate templates or build new models. It also handles native tasks such as sorting, filtering, PivotTable edits, conditional formatting and data-validation dropdowns. Connectors bring in data from S&amp;P Global, LSEG and Daloopa, and it shares context with Claude in PowerPoint, Word and Outlook.</p>\n<p>The fine print matters. Claude for Excel runs on Excel for the web, Windows with a Microsoft 365 subscription, and Mac. It doesn't run on Excel 2016 or 2019 perpetual licences, the iPad or Android. It can't work with data tables, macros or VBA. Anthropic says not to use it for final client deliverables without human review, or for audit-critical calculations without checking them. It costs nothing extra on Claude Pro, which is $20 a month or $17 billed annually, according to <a href=\"https://claude.com/pricing\">Claude's pricing page</a>. Max starts at $100 a month.</p>\n\n<h2>Specialist tools: Julius and Rows</h2>\n<p>If your data lives in exports, databases or SaaS tools rather than one workbook, a separate analysis tool can be easier. <strong>Julius</strong> analyses uploaded files and connected sources, and produces charts, reports and dashboards. Its <a href=\"https://julius.ai/pricing\">pricing page</a> lists Plus at $20 a month ($16 billed annually) and Pro at $45 ($37 annually). Business costs $450 a month ($375 annually) for up to 50 members and adds Postgres, BigQuery and Snowflake connectors. Julius lists SOC 2 Type II compliance.</p>\n<p><strong>Rows</strong>, which says it has joined Superhuman, is a web spreadsheet with AI built in and data integrations. Its <a href=\"https://rows.com/pricing\">pricing page</a> lists a free plan with five AI tasks a month. Plus costs $8 per user per month with 200 AI tasks. Pro costs $79 a month plus $8 per user, with 1,000 AI tasks. Annual billing lowers both.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Data privacy: what to check before you upload</h2>\n<ul>\n<li><strong>Training:</strong> OpenAI says ChatGPT Business and Enterprise don't train on business data by default, while individual plans offer an opt-out. Anthropic's pricing page says the same of its Team plan, and lists training as opt-out on individual plans. Microsoft's business Copilot plans include Enterprise Data Protection.</li>\n<li><strong>Retention and audit:</strong> Anthropic says Claude for Excel deletes inputs and outputs on its backend within 30 days, and keeps chat history in your browser. It doesn't inherit an organisation's custom retention settings, and it isn't included in Enterprise audit logs, though Compliance API coverage is in public beta.</li>\n<li><strong>Prompt injection:</strong> Anthropic warns that downloaded templates and vendor files can contain hidden instructions that try to extract or change data. Use any agentic add-in only on spreadsheets you trust, and review each confirmation before it runs.</li>\n<li><strong>Region:</strong> some features launch region by region. Microsoft's January note excluded the EU and UK for consumer Agent Mode, and OpenAI's March beta excluded EU users on Plus and Pro. Check availability in your country before you roll anything out.</li>\n</ul>\n<p>Indian companies handling customer personal data should also check their obligations under the Digital Personal Data Protection Act. Confirm the details with a qualified legal adviser.</p>\n\n<h2>Bottom line</h2>\n<p>Start with the tool that already lives in your spreadsheet. That means Copilot with Agent Mode for Microsoft 365, and Gemini for Google Sheets. Add ChatGPT or Claude when you work on complex financial models and want cell-linked explanations. Choose Julius or Rows when the data sits outside a single workbook. Whatever you pick, treat AI-built formulas like a junior analyst's work: check the logic, test edge cases and keep a clean copy. For finance automation beyond spreadsheets, see our guide to <a href=\"/ai-accounting-bookkeeping-startups-2026/\">AI accounting and bookkeeping tools for startups</a>. For a wider stack, see the <a href=\"/best-ai-tools-for-startups-2026/\">best AI tools for startups</a>.</p>\n\n<h2>FAQ</h2>\n<h3>Which AI is best for Excel?</h3>\n<p>For most Microsoft 365 users, Copilot with Agent Mode. For financial model auditing, Claude for Excel or ChatGPT for Excel, both of which link answers to specific cells.</p>\n<h3>Is Copilot in Excel free?</h3>\n<p>No. It comes with Microsoft 365 Personal ($9.99 a month), Family and Premium, and with Microsoft's business Copilot plans and add-ons.</p>\n<h3>What happened to the COPILOT function in Excel?</h3>\n<p>Microsoft retired it on 14 September 2026. Cells that used it show #NAME? when the workbook recalculates. Microsoft recommends the Copilot pane instead.</p>\n<h3>Can I use ChatGPT in Google Sheets?</h3>\n<p>Yes. OpenAI's ChatGPT add-in for Google Sheets became generally available on all plans on 5 May 2026.</p>\n<h3>Is it safe to put company data into AI spreadsheet tools?</h3>\n<p>Use business plans that exclude training by default, check retention and audit settings, and only run agentic add-ins on files you trust, because of prompt-injection risks.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Microsoft, <a href=\"https://techcommunity.microsoft.com/blog/excelblog/agent-mode-in-excel-is-now-generally-available-on-desktop/4457408\">\"Agent Mode in Excel is now generally available on desktop\"</a>, 27 January 2026</li>\n<li>Microsoft, <a href=\"https://support.microsoft.com/en-us/excel/functions/copilot-function\">\"COPILOT function\"</a>, accessed 7 October 2026</li>\n<li>Microsoft, <a href=\"https://support.microsoft.com/en-us/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a\">\"Get started with Copilot in Excel\"</a>, accessed 7 October 2026</li>\n<li>Microsoft, <a href=\"https://www.microsoft.com/en-us/microsoft-365/copilot/pricing\">\"Microsoft Copilot plans and pricing for business\"</a>, accessed 7 October 2026</li>\n<li>Microsoft, <a href=\"https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products\">\"Compare Microsoft 365 plans\"</a>, accessed 7 October 2026</li>\n<li>OpenAI, <a href=\"https://openai.com/index/chatgpt-for-excel/\">\"Introducing ChatGPT for Excel and new financial data integrations\"</a>, 5 March 2026, updated 5 May 2026</li>\n<li>OpenAI, <a href=\"https://chatgpt.com/pricing/\">\"ChatGPT pricing\"</a>, accessed 7 October 2026</li>\n<li>OpenAI, <a href=\"https://learn.chatgpt.com/docs/pricing\">\"Pricing\" (ChatGPT Work and Codex)</a>, accessed 7 October 2026</li>\n<li>Google Workspace Updates, <a href=\"https://workspaceupdates.googleblog.com/2026/04/build-and-edit-complex-spreadsheets-with-Gemini-in-Google-Sheets.html\">\"Build and edit complex spreadsheets with Gemini in Google Sheets\"</a>, 22 April 2026</li>\n<li>Google Workspace Updates, <a href=\"https://workspaceupdates.googleblog.com/2026/04/effortlessly-automate-data-entry-in-Google-Sheets-using-Fill-with-Gemini.html\">\"Effortlessly automate data entry in Google Sheets using Fill with Gemini\"</a>, 22 April 2026</li>\n<li>Google, <a href=\"https://support.google.com/docs/answer/15820999?hl=en\">\"Use the AI function in Google Sheets\"</a>, accessed 7 October 2026</li>\n<li>Google, <a href=\"https://workspace.google.com/pricing\">\"Google Workspace pricing\" (India)</a>, accessed 7 October 2026</li>\n<li>Google, <a href=\"https://gemini.google/subscriptions/\">\"Google AI Plus, Pro and Ultra\"</a>, accessed 7 October 2026</li>\n<li>Anthropic, <a href=\"https://support.claude.com/en/articles/12650343-use-claude-for-excel\">\"Use Claude for Excel\"</a>, accessed 7 October 2026</li>\n<li>Anthropic, <a href=\"https://claude.com/pricing\">\"Claude pricing\"</a>, accessed 7 October 2026</li>\n<li>Julius AI, <a href=\"https://julius.ai/pricing\">\"Pricing\"</a>, accessed 7 October 2026</li>\n<li>Rows, <a href=\"https://rows.com/pricing\">\"Pricing\"</a>, accessed 7 October 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/SDDC_Logistics_Division_takes_Property_Accountability_to_the_next_level_110804-A-IU332-001.jpg/1920px-SDDC_Logistics_Division_takes_Property_Accountability_to_the_next_level_110804-A-IU332-001.jpg",
+      "alt": "Staff sergeant entering equipment data into a spreadsheet on a desktop computer",
+      "caption": "Manual data entry like this is what spreadsheet AI tools such as Fill with Gemini and Agent Mode aim to cut.",
+      "credit": "Photo: Mark Diamond / Wikimedia Commons, Public domain",
+      "license": "Public domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:SDDC_Logistics_Division_takes_Property_Accountability_to_the_next_level_110804-A-IU332-001.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Seattle_City_Light_worker_with_office_machine%2C_1954.jpg/1920px-Seattle_City_Light_worker_with_office_machine%2C_1954.jpg",
+      "alt": "Office worker in 1954 operating a large IBM accounting machine at Seattle City Light",
+      "caption": "An IBM accounting machine at Seattle City Light in 1954. Spreadsheet automation has a long history.",
+      "credit": "Photo: Seattle Municipal Archives / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Seattle_City_Light_worker_with_office_machine,_1954.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg/1920px-Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg",
+      "alt": "Exterior of Building 92 on Microsoft's campus in Redmond, Washington",
+      "caption": "Building 92 on Microsoft's Redmond campus. Copilot's Agent Mode is now available in Excel for Windows, Mac and the web.",
+      "credit": "Photo: Jiaqian AirplaneFan / Wikimedia Commons, CC BY 3.0",
+      "license": "CC BY 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Outside_Googleplex_in_Mountain_View%2C_California.jpg/1920px-Outside_Googleplex_in_Mountain_View%2C_California.jpg",
+      "alt": "Buildings and grounds outside Google's headquarters in Mountain View, California",
+      "caption": "Google's headquarters in Mountain View. Gemini can now build whole Google Sheets from a prompt.",
+      "credit": "Photo: David Nagle / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Outside_Googleplex_in_Mountain_View,_California.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/ASC_Leiden_-_Rwanda_2021_-_037_-_Screen_shot_of_a_spreadsheet_for_books_with_their_price_-_Kigali.jpg/1920px-ASC_Leiden_-_Rwanda_2021_-_037_-_Screen_shot_of_a_spreadsheet_for_books_with_their_price_-_Kigali.jpg",
+      "alt": "Computer screen showing a retail spreadsheet listing books and their prices",
+      "caption": "Inventory and pricing sheets like this are common first projects for AI spreadsheet assistants.",
+      "credit": "Photo: Gerard van de Bruinhorst / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:ASC_Leiden_-_Rwanda_2021_-_037_-_Screen_shot_of_a_spreadsheet_for_books_with_their_price_-_Kigali.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://techcommunity.microsoft.com/blog/excelblog/agent-mode-in-excel-is-now-generally-available-on-desktop/4457408",
+      "publisher": "Microsoft",
+      "date": "2026-01-27",
+      "claim": "Agent Mode GA on web/Windows/Mac; web search; OpenAI/Anthropic model switcher; commercial Copilot and Personal/Family/Premium; AI credits; not yet EU/UK"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/excel/functions/copilot-function",
+      "publisher": "Microsoft",
+      "date": "2026-10-07",
+      "claim": "COPILOT function retired 14 Sept 2026; preview only; #NAME? on recalc; cached results; use Copilot pane"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a",
+      "publisher": "Microsoft",
+      "date": "2026-10-07",
+      "claim": "Copilot in Excel capabilities, platforms, file locations"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-365/copilot/pricing",
+      "publisher": "Microsoft",
+      "date": "2026-10-07",
+      "claim": "Copilot Business add-on $18 promo from $21 (1 Jul-31 Dec 2026, first year, annual, up to 300 users); Business Standard with Copilot $23.50; Business Premium with Copilot $32; Enterprise Data Protection"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products",
+      "publisher": "Microsoft",
+      "date": "2026-10-07",
+      "claim": "Personal $9.99/mo, Family $12.99/mo (AI for owner only), Premium $19.99/mo with agentic research and analytics"
+    },
+    {
+      "url": "https://openai.com/index/chatgpt-for-excel/",
+      "publisher": "OpenAI",
+      "date": "2026-03-05",
+      "claim": "Beta 5 Mar; Sheets beta 22 Apr; GA all plans 5 May; features, cell links, asks permission, undo; limitations; Enterprise/Edu off by default; EU exclusion for Plus/Pro in beta; Enterprise data not used for training; Moody's, Factiva, MSCI"
+    },
+    {
+      "url": "https://chatgpt.com/pricing/",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "Excel, Word, PowerPoint and Google Sheets extensions by plan; training opt-out on individual plans"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-07",
+      "claim": "Plus $20; Business $20 annual/$25 monthly"
+    },
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/04/build-and-edit-complex-spreadsheets-with-Gemini-in-Google-Sheets.html",
+      "publisher": "Google",
+      "date": "2026-04-22",
+      "claim": "Build/edit spreadsheets with Gemini; 70.48% success rate; eligible editions; US English only"
+    },
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/04/effortlessly-automate-data-entry-in-Google-Sheets-using-Fill-with-Gemini.html",
+      "publisher": "Google",
+      "date": "2026-04-22",
+      "claim": "Fill with Gemini 9x faster for 100-cell tasks, 95-participant study"
+    },
+    {
+      "url": "https://support.google.com/docs/answer/15820999?hl=en",
+      "publisher": "Google",
+      "date": "2026-10-07",
+      "claim": "=AI()/=Gemini() function uses and limitations"
+    },
+    {
+      "url": "https://workspace.google.com/pricing",
+      "publisher": "Google",
+      "date": "2026-10-07",
+      "claim": "India: Business Starter Rs 270, Business Standard Rs 1,080 (Rs 864 intro, up to 20 users); Gemini features by plan"
+    },
+    {
+      "url": "https://gemini.google/subscriptions/",
+      "publisher": "Google",
+      "date": "2026-10-07",
+      "claim": "Google AI Pro $19.99/month"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/12650343-use-claude-for-excel",
+      "publisher": "Anthropic",
+      "date": "2026-10-07",
+      "claim": "Claude for Excel features, plans, supported/unsupported versions, limitations, data handling (30-day deletion, local history, no custom retention, no audit logs, Compliance API beta), prompt-injection warning"
+    },
+    {
+      "url": "https://claude.com/pricing",
+      "publisher": "Anthropic",
+      "date": "2026-10-07",
+      "claim": "Pro $17 annual/$20 monthly; Max from $100; model training opt-out"
+    },
+    {
+      "url": "https://julius.ai/pricing",
+      "publisher": "Julius AI",
+      "date": "2026-10-07",
+      "claim": "Plus $16 annual/$20 monthly; Pro $37/$45; Business $375/$450 up to 50 members; data connectors; SOC 2 Type II"
+    },
+    {
+      "url": "https://rows.com/pricing",
+      "publisher": "Rows",
+      "date": "2026-10-07",
+      "claim": "Joined Superhuman; Free 5 AI tasks; Plus $8/user (200 tasks); Pro $79 + $8/user (1,000 tasks)"
+    }
+  ]
+}

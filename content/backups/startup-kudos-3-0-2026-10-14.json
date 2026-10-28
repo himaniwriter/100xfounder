@@ -1,0 +1,141 @@
+{
+ "post": {
+  "id": 3493,
+  "date": "2026-10-12T12:31:00",
+  "date_gmt": "2026-10-12T07:01:00",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/kudos-3-0/",
+   "raw": "https://100xfounder.com/startup/kudos-3-0/"
+  },
+  "modified": "2026-10-12T12:31:00",
+  "modified_gmt": "2026-10-12T07:01:00",
+  "password": "",
+  "slug": "kudos-3-0",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/kudos-3-0/",
+  "title": {
+   "raw": "Kudos 3.0",
+   "rendered": "Kudos 3.0"
+  },
+  "content": {
+   "raw": "<p>Most money apps show you charts. Kudos does the work. Your home shows Your wins, one number for everything Kudos has earned or saved you, and your next best money move. Most people don&#039;t know their cards come with personalized offers they have to turn on by hand. Kudos activates them for you: about $800/yr in offers in early testing. Our AI also calls providers to lower your bills ($216/yr per negotiation) and cancels subscriptions you forgot ($247/yr each). You keep 100% of the savings.</p>\n",
+   "rendered": "<p>Most money apps show you charts. Kudos does the work. Your home shows Your wins, one number for everything Kudos has earned or saved you, and your next best money move. Most people don&#039;t know their cards come with personalized offers they have to turn on by hand. Kudos activates them for you: about $800/yr in offers in early testing. Our AI also calls providers to lower your bills ($216/yr per negotiation) and cancels subscriptions you forgot ($247/yr each). You keep 100% of the savings.</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "The AI that finds money you're missing and gets it back",
+   "rendered": "<p>The AI that finds money you&#8217;re missing and gets it back</p>\n",
+   "protected": false
+  },
+  "featured_media": 0,
+  "template": "",
+  "xf_industry": [
+   734,
+   545,
+   735,
+   550,
+   736
+  ],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "kudos-3-0",
+  "class_list": [
+   "post-3493",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "hentry",
+   "xf_industry-android",
+   "xf_industry-artificial-intelligence",
+   "xf_industry-chrome-extensions",
+   "xf_industry-fintech",
+   "xf_industry-personal-finance",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3493",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=3493"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=3493"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=3493"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3493"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3493"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3493"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3493"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3493"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3493"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

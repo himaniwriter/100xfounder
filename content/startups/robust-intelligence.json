@@ -1,0 +1,67 @@
+{
+ "slug": "robust-intelligence",
+ "website": "https://www.robustintelligence.com/",
+ "excerpt": "Robust Intelligence built a platform to test and protect AI models from threats such as prompt injection and data poisoning. Cisco completed its acquisition in September 2024.",
+ "content": "<p>Robust Intelligence was an AI security company. Its platform tested machine learning and generative AI models before deployment and then checked the inputs and outputs of AI applications in production, to catch problems such as prompt injection, jailbreaking and data poisoning. SiliconANGLE described it as protecting AI models and the data they use across the whole development-to-production lifecycle, with automated model assessment and risk mitigation. Its GitHub profile summed up the mission as secure deployment of artificial intelligence. Yaron Singer and Kojin Oshiba co-founded the company, according to FinTech Global.</p><h2>Acquisition by Cisco</h2><p>On 26 August 2024 Cisco announced that it intended to acquire Robust Intelligence. In a Cisco blog post, Tom Gillis, who led Cisco's security business, said the deal would help Cisco protect customers' AI applications against emerging threats, and on 24 September 2024 Cisco updated the post to say the acquisition was complete. The price was not disclosed. FinTech Global reported that Robust Intelligence had raised $44 million and had been valued at over $200 million before the deal; Cisco had also invested through Cisco Investments, SiliconANGLE noted. Robust Intelligence's technology now sits within Cisco's security products, and robustintelligence.com redirects to a Cisco page explaining that Robust Intelligence is part of Cisco, under its AI Defense product.</p><h2>Pricing</h2><p>Robust Intelligence is no longer sold as a separate product, and it never published a price list. Cisco sells its AI security capabilities through its own sales channels.</p><h2>What this means for buyers</h2><p>Organisations looking for what Robust Intelligence offered, such as AI model validation and an AI firewall for generative AI applications, would now evaluate Cisco AI Defense or independent AI security vendors.</p><p><em>This page is based on Cisco's announcement and on SiliconANGLE and FinTech Global coverage of the deal.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI security",
+  "platform": "Now part of Cisco security products",
+  "starts_at": "No longer sold separately",
+  "schema_category": "SecurityApplication",
+  "summary_short": "AI model testing and protection, acquired by Cisco in 2024",
+  "maker": {"name": "Robust Intelligence (acquired by Cisco)", "url": "https://blogs.cisco.com/news/fortifying-the-future-of-security-for-ai-cisco-announces-intent-to-acquire-robust-intelligence"},
+  "team": [
+   {"name": "Yaron Singer", "role": "Co-founder", "url": "https://fintech.global/2024/08/28/cisco-enhances-ai-security-capabilities-with-robust-intelligence-acquisition/"},
+   {"name": "Kojin Oshiba", "role": "Co-founder", "url": "https://fintech.global/2024/08/28/cisco-enhances-ai-security-capabilities-with-robust-intelligence-acquisition/"}
+  ],
+  "gallery": [
+   {"url": "https://blogs.cisco.com/gcs/ciscoblogs/1/2024/08/RI-Logo-Featured-600x200-2.jpg", "alt": "The Cisco logo and the Robust Intelligence logo joined by a plus sign, above the text Cisco to acquire Robust Intelligence", "credit": "Image: Cisco", "w": 600, "h": 200},
+   {"url": "https://avatars.githubusercontent.com/u/42975454?v=4", "alt": "Robust Intelligence's logo mark: a black line drawing of a hexagonal cube", "credit": "Image: Robust Intelligence, from its official GitHub account", "w": 460, "h": 460}
+  ],
+  "use_cases": [
+   "Testing AI models for vulnerabilities before deployment",
+   "Blocking prompt injection and jailbreak attempts against generative AI apps",
+   "Detecting data poisoning in training data",
+   "Monitoring AI model inputs and outputs in production"
+  ],
+  "audience": {
+   "fit": [
+    "are researching AI security tools and the companies behind them",
+    "are a Cisco customer looking at AI Defense"
+   ],
+   "not_fit": [
+    "want to buy Robust Intelligence on its own: it is now part of Cisco"
+   ]
+  },
+  "pricing": {
+   "intro": "Robust Intelligence is no longer sold on its own. Its technology is part of Cisco's security portfolio.",
+   "plans": [
+    {"name": "Robust Intelligence", "price": "Not sold separately", "detail": "Acquisition completed September 2024"}
+   ],
+   "notes": [],
+   "url": "https://blogs.cisco.com/news/fortifying-the-future-of-security-for-ai-cisco-announces-intent-to-acquire-robust-intelligence",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other AI security vendors.",
+   "items": [
+    {"name": "Cisco AI Defense", "url": "https://www.cisco.com/", "what": "Cisco's AI security product, which includes Robust Intelligence technology", "tags": ["AI security"], "starts_at": "See its own site", "difference": "The successor product inside Cisco."},
+    {"name": "HiddenLayer", "url": "https://hiddenlayer.com/", "what": "Security platform for AI models", "tags": ["AI security"], "starts_at": "See its own site", "difference": "Independent vendor focused on model protection."},
+    {"name": "Lakera", "url": "https://www.lakera.ai/", "what": "Guardrails against prompt injection for generative AI apps", "tags": ["AI security", "LLM"], "starts_at": "See its own site", "difference": "Focused on runtime protection of LLM applications."}
+   ]
+  },
+  "faq": [
+   {"q": "Who owns Robust Intelligence?", "a": "Cisco. It announced the deal on 26 August 2024 and said on 24 September 2024 that the acquisition was complete."},
+   {"q": "How much did Cisco pay?", "a": "The price was not disclosed."},
+   {"q": "Who founded Robust Intelligence?", "a": "Yaron Singer and Kojin Oshiba."},
+   {"q": "What did Robust Intelligence do?", "a": "It tested AI models for weaknesses and protected AI applications in production against threats such as prompt injection and data poisoning."}
+  ],
+  "sources": [
+   {"label": "Cisco blog: Cisco announces intent to acquire Robust Intelligence (26 Aug 2024, updated 24 Sep 2024)", "url": "https://blogs.cisco.com/news/fortifying-the-future-of-security-for-ai-cisco-announces-intent-to-acquire-robust-intelligence"},
+   {"label": "SiliconANGLE: Cisco snaps up AI security startup Robust Intelligence (27 Aug 2024)", "url": "https://siliconangle.com/2024/08/27/cisco-snaps-ai-model-data-security-startup-robust-intelligence/"},
+   {"label": "FinTech Global: Cisco enhances AI security with Robust Intelligence acquisition (28 Aug 2024)", "url": "https://fintech.global/2024/08/28/cisco-enhances-ai-security-capabilities-with-robust-intelligence-acquisition/"},
+   {"label": "Robust Intelligence on GitHub", "url": "https://github.com/robustintelligence"}
+  ]
+ }
+}

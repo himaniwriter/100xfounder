@@ -1,0 +1,167 @@
+{
+ "slug": "prisma",
+ "website": "https://www.prisma.io/",
+ "excerpt": "Prisma makes the open-source Prisma ORM for TypeScript plus Prisma Postgres and Prisma Compute hosting. Free plan, paid plans from $10 a month. Funding and alternatives.",
+ "content": "<p>Prisma is a developer tools company best known for Prisma ORM, an open-source object-relational mapper for Node.js and TypeScript. Developers describe their data model in a schema file, and Prisma generates a type-safe client for querying the database, plus tools for schema migrations. The company has since added hosted products: Prisma Postgres, a managed PostgreSQL database, and Prisma Compute, which its website says hosts TypeScript apps (Node.js, Bun or Next.js) next to the database and has been generally available since August 2026. Its homepage now pitches it as agent infrastructure for TypeScript and notes that any Postgres client works, so the ORM is optional.</p><p>Prisma started out as a Berlin and San Francisco startup building a GraphQL data layer. In May 2018 TechCrunch reported a $4.5 million seed round led by Kleiner Perkins and said cofounder and CEO Johannes Schickling planned to grow the team and open a San Francisco office; Kleiner Perkins announced the same round. The company later shifted from GraphQL to the ORM and hosted database products it sells today, and its website advertises an AI developer conference in San Francisco on 26 October 2026.</p><p>Prisma publishes usage-based prices. The Free plan costs $0 and includes 1 million Compute requests and 200,000 Postgres operations a month. Starter is $10 a month, Pro $49 a month and Business $129 a month, each with larger included usage and per-unit charges above it. The ORM itself remains free and open source.</p><p><em>We have not used Prisma for this page. It brings together Prisma's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Developer tools (ORM and database hosting)",
+  "platform": "Open-source library; cloud hosting",
+  "starts_at": "Free; paid plans from $10/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Open-source TypeScript ORM plus hosted Postgres and app hosting",
+  "maker": {
+   "name": "Prisma",
+   "url": "https://www.prisma.io/"
+  },
+  "team": [
+   {
+    "name": "Johannes Schickling",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.prisma.io/og.png",
+    "alt": "Prisma banner with the Prisma logo and the line Your TypeScript app, from prompt to production, over a pastel rainbow stripe",
+    "credit": "Image: Prisma (prisma.io)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://www.prisma.io/brand/database-3d.png",
+    "alt": "3D illustration of a database: a stack of shiny silver, gold, teal and pink discs",
+    "credit": "Image: Prisma (prisma.io)",
+    "w": 560,
+    "h": 560
+   }
+  ],
+  "use_cases": [
+   "Type-safe database queries in TypeScript and Node.js apps",
+   "Defining a data model and running schema migrations",
+   "Hosting a managed PostgreSQL database",
+   "Deploying TypeScript apps next to their database",
+   "Giving AI coding agents a database and runtime"
+  ],
+  "audience": {
+   "fit": [
+    "TypeScript and Node.js developers",
+    "startups that want a database and hosting with a free tier",
+    "teams that like schema-first data modelling"
+   ],
+   "not_fit": [
+    "teams outside the JavaScript and TypeScript ecosystem",
+    "developers who prefer writing raw SQL or a lighter query builder"
+   ]
+  },
+  "pricing": {
+   "intro": "Prisma's pricing page lists usage-based plans for Prisma Compute and Prisma Postgres.",
+   "url": "https://www.prisma.io/pricing",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0/month",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "1M Compute requests, 200k Postgres operations, 2 GB storage"
+    },
+    {
+     "name": "Starter",
+     "price": "$10/month",
+     "amount": 10,
+     "currency": "USD",
+     "detail": "5M requests and 1M operations included, then usage-based"
+    },
+    {
+     "name": "Pro",
+     "price": "$49/month",
+     "amount": 49,
+     "currency": "USD",
+     "detail": "20M requests and 10M operations included"
+    },
+    {
+     "name": "Business",
+     "price": "$129/month",
+     "amount": 129,
+     "currency": "USD",
+     "detail": "100M requests and 50M operations included"
+    }
+   ],
+   "notes": [
+    "Prisma ORM is open source and free to use with any database."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Free, open-source ORM with strong TypeScript types",
+   "Generous free hosting tier",
+   "Published, usage-based prices"
+  ],
+  "cons": [
+   "Usage-based bills can grow with traffic",
+   "The ORM adds a layer some teams prefer to avoid"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Prisma. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Drizzle ORM",
+     "url": "https://orm.drizzle.team/",
+     "what": "Lightweight TypeScript ORM",
+     "starts_at": "See its own website",
+     "difference": "SQL-like, lighter-weight alternative popular with TypeScript developers."
+    },
+    {
+     "name": "Neon",
+     "url": "https://neon.com/",
+     "what": "Serverless Postgres",
+     "starts_at": "See its own website",
+     "difference": "Managed Postgres with branching; pairs with any ORM."
+    },
+    {
+     "name": "Supabase",
+     "url": "https://supabase.com/",
+     "what": "Postgres development platform",
+     "starts_at": "See its own website",
+     "difference": "Postgres with auth, storage and APIs built in."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Prisma free?",
+    "a": "Prisma ORM is free and open source. Hosted Prisma Postgres and Compute have a free plan; paid plans start at $10 a month."
+   },
+   {
+    "q": "What is Prisma Postgres?",
+    "a": "Prisma's managed PostgreSQL database service."
+   },
+   {
+    "q": "Who founded Prisma?",
+    "a": "Johannes Schickling is a cofounder; TechCrunch described him as CEO when Prisma raised its 2018 seed round."
+   },
+   {
+    "q": "Do I have to use Prisma ORM with Prisma Postgres?",
+    "a": "No. Prisma's homepage says any Postgres client works and the ORM is optional."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Prisma homepage",
+    "url": "https://www.prisma.io/"
+   },
+   {
+    "label": "Prisma pricing",
+    "url": "https://www.prisma.io/pricing"
+   },
+   {
+    "label": "TechCrunch: Prisma raises $4.5M seed led by Kleiner Perkins",
+    "url": "https://techcrunch.com/2018/05/15/prisma/"
+   },
+   {
+    "label": "Kleiner Perkins: Prisma raises $4.5M seed",
+    "url": "https://kleinerperkins.com/perspectives/prisma-raises-4-5m-seed-round-led-by-kleiner-perkins"
+   }
+  ]
+ }
+}

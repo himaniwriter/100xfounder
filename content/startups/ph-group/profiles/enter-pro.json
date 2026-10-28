@@ -1,0 +1,272 @@
+{
+  "slug": "enter-pro",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/enter-pro",
+  "excerpt": "Enter Pro is Converge AI's app builder: describe an app, website or AI agent and it plans, builds, previews and deploys it, with database, auth, hosting and payments built in. What it does, Agent Builder, pricing status and alternatives.",
+  "content": "<p>Enter Pro is an AI app builder from Converge AI. You describe what you want, and its coding agent plans the work, writes the code and deploys it, while a visual editor shows the result as it changes. It covers websites, internal tools, portals, dashboards and AI agents, and its Product Hunt listing says databases, authentication, hosting, payments, analytics and localization are built in, so a project can go live without wiring up separate services.</p><p>Converge AI's site describes Enter Pro as one product in a wider suite that also includes Framia Pro, a creative and marketing studio, and Converge Work. Besides the browser editor, the site mentions Enter Code for the terminal and an Enter CLI for connecting other AI agents, plus a library of community templates, components and reusable skills. The launch introduced Agent Builder, which turns a described workflow into an agent you can publish as a link, inside your product, in Slack or Lark, or through an SDK.</p><p>Enter Pro launched on Product Hunt on 27 August 2026, its first launch there, and finished #2 for the day with 364 upvotes and 66 comments. Converge AI's pricing page lists a free tier and paid plans from $20 a month, with credits shared across its products.</p><p><em>We have not tested Enter Pro ourselves. This page brings together Converge AI's official site, Enter Pro's Product Hunt page and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "AI app builder",
+    "platform": "Web, with a terminal tool (Enter Code) and CLI",
+    "starts_at": "Free tier; paid from $20/month ($17/month billed yearly)",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "AI app builder that plans, codes and deploys apps and agents with backend, auth and payments built in",
+    "maker": {
+      "name": "Eric Zhang",
+      "url": "https://www.producthunt.com/@eric_zhang25"
+    },
+    "team": [
+      {
+        "name": "Eric Zhang",
+        "role": "Maker",
+        "url": "https://www.producthunt.com/@eric_zhang25"
+      },
+      {
+        "name": "Zhongsheng Ji",
+        "role": "Maker",
+        "url": "https://www.producthunt.com/@wh1isper"
+      }
+    ],
+    "ph": {
+      "rank": 2,
+      "votes": 364,
+      "comments": 66,
+      "followers": 980,
+      "launched": "2026-08-27",
+      "as_of": "2026-10-14"
+    },
+    "use_cases": [
+      "Building a website, portal or internal tool from a description",
+      "Turning a recurring task such as support answers or account research into an AI agent",
+      "Publishing an agent in Slack, Lark, a web page or your own product",
+      "Letting non-engineers ship small changes like landing pages",
+      "Starting from community templates and components instead of a blank project"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Eric Zhang says Enter began early in the year as an experiment to see whether the platform could build itself. The team's blog CMS was the first thing made entirely inside it; after GitHub import arrived, they moved their main repository in, and the forum, internal admin system and landing pages followed, some shipped by non-technical teammates.",
+        "He says the team kept repeating the same weekly work, such as support answers and account research, and turned it into agents. That became Agent Builder, the launch's headline feature: describe an agent, test it in a live preview, then publish it as a link, inside a product, in Slack or Lark, or through an SDK."
+      ],
+      "attribution": "Eric Zhang, maker, on Product Hunt",
+      "url": "https://www.producthunt.com/products/enter-pro?comment=5802139"
+    },
+    "audience": {
+      "fit": [
+        "want one place to build, host and run an app instead of stitching services together",
+        "want to turn repeated team workflows into AI agents you can publish in Slack or Lark",
+        "have mixed teams where product and design people ship small changes themselves"
+      ],
+      "not_fit": [
+        "want a large team on a mid-tier plan: the pricing page lists up to 2 members on Pro and 5 on Ultimate",
+        "want a quick one-off prototype only: a reviewer noted the breadth takes time to learn",
+        "need fast generation: one reviewer found it slower than expected"
+      ]
+    },
+    "pricing": {
+      "intro": "Enter Pro is billed through Converge AI's plans, in US dollars. Credits work across all Converge products, and the page says LLM models are billed at list price.",
+      "url": "https://converge.ai/pricing",
+      "checked": "2026-10-15",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "amount": 0,
+          "currency": "USD",
+          "detail": "One-time credits valid for 7 days, limited model access, no custom domain, GitHub sync or code export"
+        },
+        {
+          "name": "Basic",
+          "price": "$20/month",
+          "amount": 20,
+          "currency": "USD",
+          "detail": "$17/month billed yearly. 1,500 credits a month, all models, custom domain, GitHub sync, code export, unlimited projects, 1 member"
+        },
+        {
+          "name": "Pro",
+          "price": "$40/month",
+          "amount": 40,
+          "currency": "USD",
+          "detail": "$34/month billed yearly. 4,000 credits a month (larger credit options on the card), workspace collaboration for up to 2 members"
+        },
+        {
+          "name": "Ultimate",
+          "price": "$190/month",
+          "amount": 190,
+          "currency": "USD",
+          "detail": "$152/month billed yearly. 20,000 credits a month, up to 5 members, early access to new models and features, priority support"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "detail": "Custom security, credits and onboarding"
+        }
+      ],
+      "notes": [
+        "New workspaces may get a discounted first month: the monthly cards showed Basic at $16 (new users only) and Pro at $32 for the first month. The Ultimate card also showed a 20%-off first month ($152), but the page's FAQ says 'Ultimate does not include a first-month discount'; both are on converge.ai/pricing.",
+        "In the launch thread the maker said the Pro plan supports up to 20 workspace members; the pricing page now lists up to 2 members on Pro and up to 5 on Ultimate.",
+        "At launch the maker offered 400 bonus credits to the first 300 new Product Hunt users; that offer was time-limited."
+      ]
+    },
+    "alternatives": {
+      "intro": "Lovable, Base44 and Taskade are on Product Hunt's alternatives list for Enter Pro. Review scores are Product Hunt users' own.",
+      "items": [
+        {
+          "name": "Lovable",
+          "url": "https://lovable.dev/",
+          "what": "AI full-stack app builder",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.71,
+          "ph_reviews": 211,
+          "ph_url": "https://www.producthunt.com/products/lovable",
+          "difference": "The best-known prompt-to-app tool; the Enter Pro maker said his product focuses more on running the app and agents after the first build."
+        },
+        {
+          "name": "Base44",
+          "url": "https://base44.com/",
+          "what": "No-code builder for full apps from a prompt",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.44,
+          "ph_reviews": 41,
+          "ph_url": "https://www.producthunt.com/products/base44",
+          "difference": "Also bundles backend and hosting; Enter Pro adds an agent builder and ties into Converge AI's other products."
+        },
+        {
+          "name": "Taskade",
+          "url": "https://www.taskade.com/",
+          "what": "Workspace that generates apps, agents and automations from a prompt",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.68,
+          "ph_reviews": 109,
+          "ph_url": "https://www.producthunt.com/products/taskade",
+          "difference": "Starts from team workspaces and tasks rather than code; Enter Pro is closer to a coding agent with an editor."
+        }
+      ],
+      "more": "Product Hunt also lists Heizen and InsForge."
+    },
+    "reviews": {
+      "count": 2,
+      "rating": 4.5,
+      "url": "https://www.producthunt.com/products/enter-pro/reviews",
+      "as_of": "2026-10-14"
+    },
+    "opinions": {
+      "themes": {
+        "liked": [
+          "Going beyond prompt-to-prototype to deployment and agents in one workspace",
+          "The team building its own CMS, forum and admin tools on the platform"
+        ],
+        "asked": [
+          "How it differs from Lovable and Base44 (the maker pointed to running the business after the build)",
+          "Whether teams get version history (the maker said yes, with diffs and reverts)",
+          "Whether you can start from an existing app (the maker pointed to templates and design kits)"
+        ],
+        "criticised": [
+          "Generation felt slower than expected to one reviewer",
+          "A lot to understand at first, according to one reviewer"
+        ]
+      },
+      "quotes": [
+        {
+          "text": "It goes beyond the usual \"prompt to prototype\" experience.",
+          "author": "Harini Mukesh",
+          "url": "https://www.producthunt.com/products/enter-pro/reviews?review=610641"
+        },
+        {
+          "text": "The generation felt a little slower than I expected, especially given how much it's handling under the hood.",
+          "author": "Rohan Chaubey",
+          "url": "https://www.producthunt.com/products/enter-pro/reviews?review=621480"
+        }
+      ]
+    },
+    "pros": [
+      "Database, auth, hosting, payments, analytics and localization built in",
+      "Agent Builder publishes agents to Slack, Lark, the web or an SDK",
+      "Version history with diffs and reverts, according to the maker",
+      "Browser editor plus terminal (Enter Code) and CLI options"
+    ],
+    "cons": [
+      "Pricing page contradicts itself on Ultimate's first-month discount",
+      "A broad product that takes time to learn, per one reviewer",
+      "Slower generation reported by one reviewer"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/enter-pro",
+      "x": {
+        "none": "We found no posts about Enter Pro on X to link yet.",
+        "search_url": "https://x.com/search?q=Enter%20Pro%20converge&f=live",
+        "profile_url": "https://x.com/enterproai"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Enter Pro?",
+        "a": "An AI app builder from Converge AI that plans, writes and deploys apps, websites and AI agents, with database, auth, hosting, payments and analytics built in."
+      },
+      {
+        "q": "How much does Enter Pro cost?",
+        "a": "Converge AI's pricing page lists a free tier with one-time credits, Basic at $20 a month, Pro at $40 and Ultimate at $190 (less when billed yearly), plus custom Enterprise plans. New workspaces may get a discounted first month on Basic or Pro."
+      },
+      {
+        "q": "How is it different from Lovable or Base44?",
+        "a": "The maker said those tools are good at the first build, while Enter Pro focuses on running the app afterwards and shares context with Converge AI's other products."
+      },
+      {
+        "q": "Can several people work on one project?",
+        "a": "The maker said team workspaces support role-based access, several agent sessions on one project at once, and full version history with diffs and reverts. The maker also said Pro supports up to 20 members, but the pricing page now lists up to 2 members on Pro and up to 5 on Ultimate."
+      },
+      {
+        "q": "What is Agent Builder?",
+        "a": "A feature that turns a described workflow into an AI agent you test in a live preview and publish as a link, a web agent, inside your product, in Slack or Lark, or through an SDK."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Converge AI official site",
+        "url": "https://converge.ai/"
+      },
+      {
+        "label": "Enter Pro official site",
+        "url": "https://enter.converge.ai/"
+      },
+      {
+        "label": "Product Hunt page and launch discussion",
+        "url": "https://www.producthunt.com/products/enter-pro"
+      },
+      {
+        "label": "Product Hunt reviews",
+        "url": "https://www.producthunt.com/products/enter-pro/reviews"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/enter-pro/alternatives"
+      },
+      {
+        "label": "Converge AI pricing",
+        "url": "https://converge.ai/pricing"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/3f9f66f3-f330-4eb9-b1b2-7ac4321515e3.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Enter Pro banner 'The AI-native platform to build and scale your apps' surrounded by sample app screens",
+        "credit": "Image: Enter Pro via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/63c7ec2f-5401-4796-8351-8ee15a57c421.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Enter Pro graphic 'The Full Stack Infrastructure, Built In' listing payments, analytics, cloud, agents, AI and i18n",
+        "credit": "Image: Enter Pro via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/71fcb8b0-d57b-456a-93f1-5ac8fa2f0d1a.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Enter Pro agent screen with finance, operations and sales agents and a revenue summary reply",
+        "credit": "Image: Enter Pro via Product Hunt"
+      }
+    ]
+  }
+}

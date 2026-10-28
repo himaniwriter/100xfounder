@@ -1,0 +1,77 @@
+{
+ "slug": "nooks",
+ "website": "https://www.nooks.ai/",
+ "excerpt": "Nooks is an AI sales platform with a parallel AI dialer, sequencing, buying signals and coaching for outbound sales teams. Founders, funding, pricing and alternatives.",
+ "content": "<p>Nooks makes software for sales development and account teams, the people who call and email prospects to book meetings. Its best-known product is the AI Dialer, which, according to Pulse 2's summary of the 2024 launch, finds phone numbers, skips answering machines, leaves voicemails, does pre-call research, takes notes and suggests whom to call next. Nooks' website now describes itself as revenue infrastructure for reps and agents and lists four products: the AI Dialer, AI Sequencing for multi-channel outreach across email, calls and social, Signals and Intelligence for buying signals and account insights, and AI Coaching, which scores calls and lets reps practise against simulated prospects. It also offers AI agents for outbound, inbound, deal management, expansion and coaching work. Nooks integrates with tools such as Salesforce, HubSpot, Outreach, Salesloft and Gong, and data providers such as Apollo and ZoomInfo.</p><p>The company was started in late 2020 by Dan Lee (CEO), Rohan Suri and Nikhil Cheerla as a virtual office for remote teams, Nooks says, and pivoted to sales after noticing that sales teams were its most engaged users. In October 2024 it raised a $43 million Series B led by Kleiner Perkins, with existing investors Lachy Groom and Tola Capital, bringing total funding to $70 million.</p><p>Nooks' website says more than 1,800 teams use it, showing logos such as Notion, Vercel, HubSpot, Intercom, Deel and Rippling, and cites customer results such as a 25% increase in meetings at Drata. These are the company's own figures.</p><p>Nooks does not publish prices. Its pricing page asks teams to request a custom quote; it also runs a partner programme that pays up to $5,000 per referred deal.</p><p><em>This page is research, not a review. We have not used Nooks; facts come from its website and the reporting listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI sales dialer and sales engagement",
+  "platform": "Web app with CRM and sales-tool integrations",
+  "starts_at": "Custom quote",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI dialer, sequencing, buying signals and coaching for outbound sales teams",
+  "maker": {"name": "Nooks", "url": "https://www.nooks.ai/"},
+  "team": [
+   {"name": "Dan Lee", "role": "Co-founder and CEO"},
+   {"name": "Rohan Suri", "role": "Co-founder"},
+   {"name": "Nikhil Cheerla", "role": "Co-founder"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/697107c16c913fd77cf0aacd/6aa823230f9441ce33e42e21_2ca1b2d801530249b4257af9d0c29fb4_nooks-open-graph.webp", "w": 1200, "h": 630, "alt": "Nooks logo in pink on white beside a pink dot-matrix pattern", "credit": "Image: Nooks (nooks.ai)"}
+  ],
+  "use_cases": [
+   "Parallel dialing prospects with automatic voicemail detection",
+   "Running multi-channel outreach sequences across email, phone and social",
+   "Spotting buying signals and researching target accounts",
+   "Coaching reps with call scoring and AI roleplay",
+   "Delegating outbound and inbound tasks to AI agents"
+  ],
+  "audience": {
+   "fit": [
+    "SDR and BDR teams that make many outbound calls",
+    "sales leaders who want coaching and call analytics in one tool",
+    "teams already using Salesforce or HubSpot and a sequencing tool"
+   ],
+   "not_fit": [
+    "solo founders who need a cheap self-serve dialer",
+    "businesses that do not sell by phone or email outreach"
+   ]
+  },
+  "pricing": {
+   "intro": "Nooks does not publish prices. Its pricing page asks teams to request a custom quote.",
+   "plans": [{"name": "Nooks platform", "price": "Custom quote", "detail": "AI Dialer, Sequencing, Signals and Coaching"}],
+   "notes": ["Partner programme pays up to $5,000 per referred deal."],
+   "url": "https://www.nooks.ai/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Dialer, sequencing, signals and coaching in one platform",
+   "Integrates with major CRMs and sales tools",
+   "Used by many well-known software companies"
+  ],
+  "cons": [
+   "No public pricing",
+   "Results figures are vendor-reported"
+  ],
+  "alternatives": {
+   "intro": "Other sales dialers and engagement platforms.",
+   "items": [
+    {"name": "Orum", "url": "https://www.orum.com/", "what": "AI parallel dialer for sales teams", "difference": "Closest like-for-like parallel dialer."},
+    {"name": "Outreach", "url": "https://www.outreach.io/", "what": "Sales engagement and sequencing platform", "difference": "Broader sales execution suite."},
+    {"name": "Salesloft", "url": "https://www.salesloft.com/", "what": "Sales engagement and cadence platform", "difference": "Established sequencing and forecasting tool."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Nooks?", "a": "An AI sales platform with a parallel AI dialer, outreach sequencing, buying signals, coaching and AI agents."},
+   {"q": "How much does Nooks cost?", "a": "Nooks does not publish prices; its pricing page offers a custom quote."},
+   {"q": "Who founded Nooks?", "a": "Dan Lee, Rohan Suri and Nikhil Cheerla, in late 2020."},
+   {"q": "How much has Nooks raised?", "a": "$70 million in total after a $43 million Series B led by Kleiner Perkins in October 2024."}
+  ],
+  "sources": [
+   {"label": "Nooks: homepage", "url": "https://www.nooks.ai/"},
+   {"label": "Nooks: pricing", "url": "https://www.nooks.ai/pricing"},
+   {"label": "Nooks: Series B announcement (Oct 2024)", "url": "https://www.nooks.ai/blog-posts/series-b"},
+   {"label": "Pulse 2: Nooks raises $43 million Series B", "url": "https://pulse2.com/nooks-ai-sales-assistant-platform-raises-43-million-series-b"}
+  ]
+ }
+}

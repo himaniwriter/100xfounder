@@ -1,0 +1,86 @@
+{
+  "slug": "chatcut-2",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/chatcut-2",
+  "excerpt": "ChatCut is an AI video editor you instruct in plain language, on the web, on desktop or as a plugin inside ChatGPT, Codex and Claude Code, with every change kept on a real timeline. Pricing, alternatives and Product Hunt figures.",
+  "content": "<p>ChatCut is a video editor with an AI agent built in. You tell it what you want, for example 'find the highlights and add B-roll to my video', and it reads your footage, transcript and timeline, then makes the edit: structural cuts, captions, B-roll, music, voiceover, stock footage and motion graphics such as animated charts and timelines. Every change stays on an ordinary multi-track timeline, so you can still adjust it by hand.</p><p>You can use it in a browser, as a desktop app for Mac (Apple Silicon and Intel) and Windows, or from an AI assistant: ChatCut offers plugins for ChatGPT and Codex and for Claude Code, and its pricing page says some features are free when used through Codex, Claude and WorkBuddy. It also generates video, images and music with third-party models, which its site lists as Seedance, Kling, MiniMax, GPT Image and Nano Banana. ChatCut's terms say it does not use your media to train AI models.</p><p>ChatCut Inc. is registered in Texas, with an address in Austin. This launch, 'Your AI video editor in ChatGPT, desktop, and web', was one of three ChatCut launches on Product Hunt; it went out on 10 July 2026 and finished #1 for the day with 431 points and 106 comments.</p><p><em>We have not tested ChatCut ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Video editing",
+    "platform": "Web, Mac and Windows apps, and plugins for ChatGPT, Codex and Claude Code",
+    "starts_at": "Free with 5 credits; paid from $42/month billed annually",
+    "schema_category": "MultimediaApplication",
+    "summary_short": "AI video editor you instruct in plain language, on the web, desktop or inside ChatGPT and Claude Code",
+    "ph": {"rank": 1, "votes": 431, "comments": 106, "followers": 2354, "launched": "2026-07-10", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/597a580f-83d8-4ed8-a86f-10572fefd6af.png?auto=format&fit=max&w=1400", "w": 1070, "h": 760,
+       "alt": "ChatCut editor with an AI chat panel planning motion graphics, a sound-effects library, a video preview and a multi-track timeline, headed 'Your AI video editor - in ChatGPT, desktop, and web'",
+       "credit": "Image: ChatCut via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "make talking-head, creator or explainer videos and would rather describe edits than do them by hand",
+        "already work in ChatGPT, Codex or Claude Code and want to edit video from there",
+        "want AI-generated clips, music and motion graphics in the same timeline as your footage"
+      ],
+      "not_fit": [
+        "want to export long videos for free: the free plan caps web exports at 60 minutes in total and gives 5 credits",
+        "need a Linux desktop app: ChatCut lists downloads for Mac and Windows only",
+        "prefer a one-off purchase: the paid tiers are subscriptions with monthly credit allowances"
+      ]
+    },
+    "pricing": {
+      "intro": "ChatCut sells monthly credit allowances. The prices below are the annual-billing rates shown on its pricing page, in US dollars, next to higher crossed-out prices; the site was advertising a limited-time discount when we checked.",
+      "url": "https://chatcut.io/pricing",
+      "plans": [
+        {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "5 free credits, no card needed. Basic editing and exports, AI images, motion graphics, captions and music, AI avatars and voice-clone previews; web exports up to 60 minutes in total"},
+        {"name": "200 credits a month", "price": "$42/month billed annually", "amount": 42, "currency": "USD", "detail": "Shown against $50 (16% off). For example up to 500 seconds of Seedance 2.5 video or 1,000 motion-graphics clips, 2 cloned voices, all agent editing features, no export limit"},
+        {"name": "400 credits a month", "price": "$49/month billed annually", "amount": 49, "currency": "USD", "detail": "Shown against $100 (51% off). Twice the allowances of the 200-credit tier, 4 cloned voices"},
+        {"name": "800 credits a month", "price": "$98/month billed annually", "amount": 98, "currency": "USD", "detail": "Shown against $200 (51% off). Four times the 200-credit allowances, 8 cloned voices"}
+      ],
+      "notes": [
+        "The page also mentions 1,200 and 2,000 credits a month without showing their prices.",
+        "Credits pay for generated video, images, music and motion graphics; how far they go depends on the model.",
+        "Some features are free when you use ChatCut through Codex, Claude or WorkBuddy, according to the pricing page."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Descript", "url": "https://www.descript.com", "what": "Edit video and podcasts by editing the transcript", "starts_at": "Hobbyist from $16/person/month billed annually", "ph_rating": 4.39, "ph_reviews": 41,
+         "difference": "Edits mainly through the transcript and its own AI tools; ChatCut is driven by an agent you talk to and can run inside ChatGPT or Claude Code."},
+        {"name": "CapCut", "url": "https://apps.apple.com/us/app/capcut/id1500855883", "what": "Free all-in-one video editing app from ByteDance, popular for short-form video", "starts_at": "Free, with in-app purchases", "ph_rating": 4.35, "ph_reviews": 43,
+         "difference": "A manual editor with templates and effects, not an agent that makes the edit for you."},
+        {"name": "Jupitrr AI", "url": "https://jupitrr.com", "what": "Video marketing tool for coaches and consultants", "starts_at": "See its pricing page", "ph_rating": 4.78, "ph_reviews": 37,
+         "difference": "Built around a niche (coaches' marketing videos), while ChatCut is a general editor."}
+      ],
+      "more": "Product Hunt also lists Augie Studio and Visla."
+    },
+    "reviews": {"count": 2, "rating": 4.5, "url": "https://www.producthunt.com/products/chatcut-ai-video-editor/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/chatcut-ai-video-editor",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=chatcut&f=live", "profile_url": "https://twitter.com/chatcutapp"}
+    },
+    "faq": [
+      {"q": "What is ChatCut?", "a": "An AI video editor from ChatCut Inc. of Austin, Texas. You describe edits in plain language and its agent makes them on a real, editable timeline. This launch went out on Product Hunt on 10 July 2026."},
+      {"q": "Can I use ChatCut inside ChatGPT or Claude Code?", "a": "Yes. ChatCut offers a plugin for ChatGPT and Codex and another for Claude Code, as well as web and desktop apps."},
+      {"q": "Is ChatCut free?", "a": "There is a free plan with 5 credits and web exports up to 60 minutes in total. Paid tiers with 200, 400 or 800 credits a month were priced at $42, $49 and $98 a month billed annually when we checked."},
+      {"q": "Which AI models does ChatCut use for generation?", "a": "Its site lists Seedance 2.5 and 2.0, Kling 3.0, MiniMax H3, GPT Image 2 and Nano Banana 2, among others."},
+      {"q": "Does ChatCut train AI on my videos?", "a": "No. Its terms of service say it does not use user media to train AI models."},
+      {"q": "Which desktop systems does it support?", "a": "macOS on Apple Silicon and Intel, and Windows, according to its site."}
+    ],
+    "sources": [
+      {"label": "ChatCut official site", "url": "https://chatcut.io/"},
+      {"label": "ChatCut pricing", "url": "https://chatcut.io/pricing"},
+      {"label": "ChatCut contact", "url": "https://chatcut.io/contact"},
+      {"label": "ChatCut terms of service", "url": "https://chatcut.io/terms"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/chatcut-ai-video-editor"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/chatcut-ai-video-editor/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/chatcut-ai-video-editor/alternatives"},
+      {"label": "Descript pricing", "url": "https://www.descript.com/pricing"},
+      {"label": "CapCut on the App Store", "url": "https://apps.apple.com/us/app/capcut-photo-video-editor/id1500855883"}
+    ]
+  }
+}

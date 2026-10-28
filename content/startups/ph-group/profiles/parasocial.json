@@ -1,0 +1,115 @@
+{
+  "slug": "parasocial",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/parasocial",
+  "excerpt": "Parasocial is a free podcast player for iPhone, iPad, Mac and CarPlay with instant new-episode alerts, smart playlists, tags and shareable deep links. Features and alternatives such as Overcast and Pocket Casts.",
+  "content": "<p>Parasocial is a podcast player for iPhone, iPad, Mac and CarPlay from a studio called Super Simple. It is free and needs no account; your library syncs anonymously through iCloud. Founder Paul Geller, a self-described podcast addict, says its server is told the moment a show publishes, so new episodes download to your device straight away instead of waiting for the app to poll. Your library is read from a database on the device, so searching tens of thousands of episodes stays fast, and one search box covers your own library and published shows.</p><p>Instead of stars, you save episodes with tags. Smart playlists are built from rules, such as all episodes of chosen shows sorted newest first, with priority shows pinned to the top. Playback goes up to 2.5x, with Trim Gaps to cut silences, a Voice Boost for unmastered audio, and custom intro and outro skips per show or playlist. You can share a clip as a deep link that opens at that point for other Parasocial users or in a web player for everyone else. It imports OPML from other apps, including playlists and progress where the export includes them.</p><p>Parasocial launched on Product Hunt on 2 September 2026 and finished #6 for the day, with 204 upvotes and 23 comments (as of 14 October 2026).</p><p><em>We have not tested Parasocial ourselves. This page brings together its official site and support page and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Podcast player",
+    "platform": "iPhone, iPad, Mac and CarPlay",
+    "os": "iOS, iPadOS and macOS",
+    "starts_at": "Free",
+    "schema_category": "MultimediaApplication",
+    "summary_short": "Free native podcast player with instant new-episode downloads, smart playlists, tags and shareable deep links",
+    "maker": {"name": "Paul Geller", "url": "https://www.producthunt.com/@paulgeller"},
+    "team": [
+      {"name": "Paul Geller", "role": "Founder", "url": "https://www.producthunt.com/@paulgeller"}
+    ],
+    "ph": {"rank": 6, "votes": 204, "comments": 23, "followers": 642, "launched": "2026-09-02", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/ef35b35d-4272-45d4-a307-a8a77f9df55b.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Parasocial via Product Hunt",
+       "alt": "Parasocial onboarding screen on an iPhone, captioned 'Easy onboarding and advanced OPML import'"},
+      {"url": "https://ph-files.imgix.net/cdcf4628-5dea-47a8-b9d6-136dec71a783.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Parasocial via Product Hunt",
+       "alt": "Parasocial playback settings on an iPhone, listing speed up to 2.5x, Smart Speed, Voice Boost and intro and outro skips"}
+    ],
+    "use_cases": [
+      "Getting daily shows downloaded the moment they publish",
+      "Keeping comedy, history and news in separate rule-based playlists",
+      "Saving and tagging favourite episodes instead of starring them",
+      "Sharing a moment from a long episode as a link that opens at that point",
+      "Moving a library over from Overcast, Pocket Casts or another app via OPML"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Paul Geller says he listens in bed and digs through decades-old archives, so he needed a sleep timer that works, audio processing that rescues unmastered tape, and new episodes on his phone the second they publish. Having paid for every other player, he built his own.",
+        "He highlighted three things: instant new-episode notifications from the server, tags in place of stars, and sharing with deep links for Parasocial users and web links for everyone else."
+      ],
+      "attribution": "Paul Geller, founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/parasocial?comment=5798623"
+    },
+    "audience": {
+      "fit": [
+        "listen to many podcasts on Apple devices and want new episodes immediately",
+        "want an app that works without creating an account",
+        "share podcast moments with friends"
+      ],
+      "not_fit": [
+        "use Android or Windows: it is for iPhone, iPad, Mac and CarPlay",
+        "want podcasts that are exclusive to Spotify: Parasocial plays published podcast feeds",
+        "do not use iCloud: sync runs through your Apple account"
+      ]
+    },
+    "pricing": {
+      "intro": "Parasocial's site says the app is free with no subscription needed.",
+      "url": "https://parasocial.fm/",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Parasocial", "price": "Free", "amount": 0, "currency": "USD", "detail": "No subscription or account needed"}
+      ],
+      "notes": []
+    },
+    "pros": [
+      "Free, with no account required",
+      "New episodes arrive as soon as they publish, according to the founder",
+      "Fast on-device library and search",
+      "Imports OPML, including playlists and progress from apps that export them"
+    ],
+    "cons": [
+      "Apple platforms only",
+      "Tags are private for now, the founder said",
+      "Sharing links were \"a tiny bit finicky\" around launch, the founder admitted"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["Bookmarks and tags for saving moments from long episodes", "An indie player built out of the founder's own frustration"],
+        "asked": [
+          "How flexible smart playlist rules are",
+          "Whether shared clips are audio files or links (deep links, with a web player for non-users)",
+          "Whether there is an import from Downcast"
+        ],
+        "criticised": []
+      },
+      "quotes": []
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as Parasocial alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Overcast", "url": "https://overcast.fm/", "what": "Powerful, simple podcast app for iOS", "starts_at": "See its site", "ph_rating": 5, "ph_reviews": 2, "ph_url": "https://www.producthunt.com/products/overcast",
+         "difference": "A long-established iOS player with similar gap-trimming and voice features; Parasocial adds instant publish alerts and social sharing."},
+        {"name": "Pocket Casts", "url": "https://pocketcasts.com/", "what": "Cross-platform podcast player", "starts_at": "See its site", "ph_rating": 5, "ph_reviews": 3, "ph_url": "https://www.producthunt.com/products/pocket-casts-7",
+         "difference": "Runs on Android and the web too; Parasocial is Apple-only."},
+        {"name": "Snipd", "url": "https://www.snipd.com/", "what": "Highlight and discover moments in podcasts with AI", "starts_at": "See its pricing page", "ph_rating": 4.69, "ph_reviews": 16, "ph_url": "https://www.producthunt.com/products/snipd",
+         "difference": "Focused on AI highlights and notes from episodes."}
+      ],
+      "more": "Product Hunt also lists Podurama and Matter."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/parasocial/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/parasocial",
+      "x": {"none": "We found no posts about Parasocial on X to link yet.", "search_url": "https://x.com/search?q=parasocial.fm&f=live"}
+    },
+    "faq": [
+      {"q": "What is Parasocial?", "a": "A free podcast player for iPhone, iPad, Mac and CarPlay that downloads new episodes as soon as they publish, organises shows with smart playlists and tags, and lets you share moments with deep links."},
+      {"q": "Is Parasocial free?", "a": "Yes. Its site says it is free with no subscription needed, and no account is required."},
+      {"q": "Can I move my podcasts from Overcast or Pocket Casts?", "a": "Yes. Parasocial imports standard OPML, and from apps that write extended OPML it also brings playlists, priorities, played state and progress."},
+      {"q": "How does sync work?", "a": "Anonymously through iCloud. Both devices need to be signed in to the same Apple account with iCloud on."},
+      {"q": "Is Parasocial on Android?", "a": "No. It is available for iPhone, iPad, Mac and CarPlay."}
+    ],
+    "sources": [
+      {"label": "Parasocial official site", "url": "https://parasocial.fm/"},
+      {"label": "Parasocial support page", "url": "https://parasocial.fm/support"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/parasocial"}
+    ]
+  }
+}

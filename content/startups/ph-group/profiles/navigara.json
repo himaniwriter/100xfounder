@@ -1,0 +1,124 @@
+{
+  "slug": "navigara",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/navigara",
+  "excerpt": "Navigara measures what AI coding tools add to an engineering team and ties token spend to roadmap items. Pricing from $7 per developer, how it scores code, and alternatives.",
+  "content": "<p>Navigara is an engineering analytics platform for the AI-coding era. It reads your Git history, uses a language model to understand what each merged change did, and scores the work by its complexity rather than by lines or commits, so cutting 400 lines to 40 can score higher than adding 400. It calls that score Engineering Throughput Value (ETV) and splits it into features, maintenance, fixes and documentation, measured against your team's own pre-AI baseline.</p><p>Connected to Jira or Linear and to your AI coding licences, it then shows what your token spend went on: work tied to a roadmap item, work with a ticket but no initiative, and work with no stated outcome. Higher plans add nightly checks on what slows coding agents down, routing of routine tasks to cheaper models, and team AI budgets that move with what each team delivers. It can run as cloud software, with an on-premises collector, or fully on-premises with your own models, co-founder Jirka Bachel said on Product Hunt.</p><p>Navigara, Inc. has offices in San Francisco and Prague, according to its site. It launched on Product Hunt on 24 August 2026 and finished #4 for the day, with 285 upvotes and 38 comments (as of 14 October 2026).</p><p><em>We have not tested Navigara ourselves. This page brings together its official site, pricing, About and contact pages and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Engineering analytics",
+    "platform": "Cloud SaaS or on-premises",
+    "starts_at": "14-day free trial; paid from $7 per developer/month",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Measures the engineering capacity AI coding tools add and ties AI token spend to roadmap items",
+    "maker": {"name": "Jirka Bachel", "url": "https://www.producthunt.com/@bachel"},
+    "team": [
+      {"name": "Jirka Bachel", "role": "Co-founder and CEO", "url": "https://www.producthunt.com/@bachel"},
+      {"name": "Peter Malina", "role": "Co-founder and CTPO", "url": "https://www.producthunt.com/@petomalina"}
+    ],
+    "ph": {"rank": 4, "votes": 285, "comments": 38, "followers": 616, "launched": "2026-08-24", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/766df954-51e0-4234-85cc-004d105252e4.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Navigara via Product Hunt",
+       "alt": "Navigara 'Measure how much more engineering your AI bought' with a capacity chart comparing engineers on payroll with effective capacity"},
+      {"url": "https://ph-files.imgix.net/1c233e6f-e022-4541-b437-e3120c8c3853.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Navigara via Product Hunt",
+       "alt": "Navigara work-mix chart splitting a month's AI spend into features, maintenance, tests, docs and fixes"},
+      {"url": "https://ph-files.imgix.net/09e48918-a84b-4d16-9ae3-6c4ce8d5aa17.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520, "credit": "Image: Navigara via Product Hunt",
+       "alt": "Navigara spend-alignment chart showing how much AI spend went to roadmap-aligned versus unaligned work"}
+    ],
+    "use_cases": [
+      "Showing a board or CFO what AI coding tools added in engineering capacity",
+      "Seeing how much AI spend went to roadmap work versus unplanned work",
+      "Routing routine tasks to cheaper models",
+      "Setting team AI budgets that follow what each team delivers",
+      "Benchmarking a team against its own pre-AI baseline"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Jirka Bachel says he spent years as a CTO trusting velocity charts and cycle times, until a CFO asked whether Claude was producing real value for almost $150k a month, and the honest answer was \"we think so\".",
+        "So the team built a way to score merged work by complexity and tested it on open source first. They then found that much of the code produced inside companies did not move the roadmap, and connected token spend to initiatives, epics and tickets to show it."
+      ],
+      "attribution": "Jirka Bachel, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/navigara?comment=5797974"
+    },
+    "audience": {
+      "fit": [
+        "lead an engineering team with a large AI coding bill you need to justify",
+        "plan work in Jira or Linear and want spend mapped to roadmap items",
+        "work in a regulated company that needs on-premises or air-gapped deployment"
+      ],
+      "not_fit": [
+        "are a small team without meaningful AI spend: the value is in large budgets",
+        "want simple DORA or cycle-time dashboards: Navigara scores code complexity instead",
+        "worry about engineers gaming a complexity score: a reviewer raised this and wanted guardrails"
+      ]
+    },
+    "pricing": {
+      "intro": "Navigara prices per developer per month, with a free trial and custom enterprise deals. Prices are Navigara's, in US dollars.",
+      "url": "https://navigara.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Explore", "price": "Free 14-day trial", "amount": 0, "currency": "USD", "detail": "Full Pro access on your repositories, up to 1,000 pull requests analysed"},
+        {"name": "Measure", "price": "From $7/developer/month", "amount": 7, "currency": "USD", "detail": "Performance analysis against your pre-AI year, per-developer and per-team reports; cloud; teams up to 30 developers"},
+        {"name": "Pro", "price": "From $30/developer/month", "amount": 30, "currency": "USD", "detail": "Adds AI ROI, agent speed checks, Jira/Linear roadmap alignment, adaptive token limits, model routing, CapEx/OpEx reporting and peer benchmarking"},
+        {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "On-premises or air-gapped deployment, SSO/SAML, SCIM, audit logs, SLA and a guided pilot"}
+      ],
+      "notes": [
+        "A one-off AI ROI report is offered for $4,500, delivered in five days from access."
+      ]
+    },
+    "pros": [
+      "Scores work by complexity, so clean-up and refactors are not counted as zero output",
+      "Maps AI spend to roadmap items in Jira or Linear",
+      "On-premises and air-gapped options using your own models",
+      "Low entry price for the measurement-only plan"
+    ],
+    "cons": [
+      "A complexity score could be gamed with cosmetic refactors, a reviewer warned",
+      "Measure plan is limited to 30 developers",
+      "The ROI features need the Pro plan"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["Scoring by complexity reduction instead of raw lines", "Splitting work into features, maintenance, fixes and docs", "Connecting AI spend to the roadmap"],
+        "asked": ["How private code is protected (cloud, on-premises collector or fully on-premises)", "Whether the method works for frontend, backend, DevOps and data teams (differences fade as projects stabilise, the CTPO said)"],
+        "criticised": ["Possible gaming of the complexity metric"]
+      },
+      "quotes": [
+        {"text": "Navigara's angle of tying token cost to specific roadmap items and flagging off-roadmap work is a different category.", "author": "Gal Dayan (4/5 review)", "url": "https://www.producthunt.com/products/navigara/reviews?review=607641"},
+        {"text": "Once engineers know complexity-reduction is being scored, it's an easy target to game with cosmetic refactors.", "author": "Gal Dayan (4/5 review)", "url": "https://www.producthunt.com/products/navigara/reviews?review=607641"}
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as Navigara alternatives. Review scores are Product Hunt users' own. Several are AI coding tools themselves rather than analytics rivals.",
+      "items": [
+        {"name": "Typo", "url": "https://www.producthunt.com/products/typo-3", "what": "Engineering analytics for faster deployments and productive teams", "starts_at": "See its pricing page", "ph_rating": 4.96, "ph_reviews": 25, "ph_url": "https://www.producthunt.com/products/typo-3",
+         "difference": "A delivery-metrics dashboard; Navigara centres on AI spend and complexity-scored output."},
+        {"name": "Weave", "url": "https://www.producthunt.com/products/weave", "what": "Machine-learning models to measure and optimise engineering work", "starts_at": "See its pricing page", "ph_rating": 4.5, "ph_reviews": 2, "ph_url": "https://www.producthunt.com/products/weave",
+         "difference": "The closest like-for-like rival in measuring engineering output with AI."},
+        {"name": "Cursor", "url": "https://cursor.com/", "what": "AI coding agent and editor", "starts_at": "See its pricing page", "ph_rating": 4.96, "ph_reviews": 961, "ph_url": "https://www.producthunt.com/products/cursor",
+         "difference": "A tool you would measure with Navigara rather than a replacement for it."}
+      ],
+      "more": "Product Hunt also lists Codex and Kilo Code."
+    },
+    "reviews": {"count": 1, "rating": 4, "url": "https://www.producthunt.com/products/navigara/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/navigara",
+      "x": {"none": "We found no posts about Navigara on X to link yet.", "search_url": "https://x.com/search?q=navigara&f=live"}
+    },
+    "faq": [
+      {"q": "What is Navigara?", "a": "An engineering analytics platform that scores merged code by complexity, measures the capacity AI coding tools add against your pre-AI baseline, and ties AI token spend to roadmap items in Jira or Linear."},
+      {"q": "How much does Navigara cost?", "a": "There is a free 14-day trial covering up to 1,000 pull requests. Measure starts at $7 per developer a month, Pro at $30, and Enterprise is custom. A one-off AI ROI report costs $4,500."},
+      {"q": "Does my source code leave my network?", "a": "Not if you choose. The co-founder said on Product Hunt that Navigara can run fully on-premises with your own models, or with an on-premises collector."},
+      {"q": "What is ETV?", "a": "Engineering Throughput Value, Navigara's score for merged work, based on how complex the change was rather than how many lines or commits it took."},
+      {"q": "Who makes Navigara?", "a": "Navigara, Inc., founded by Jirka Bachel (CEO) and Peter Malina (CTPO), with offices in San Francisco and Prague."}
+    ],
+    "sources": [
+      {"label": "Navigara AI ROI page", "url": "https://navigara.com/product/ai-roi"},
+      {"label": "Navigara pricing", "url": "https://navigara.com/pricing"},
+      {"label": "Navigara About page", "url": "https://navigara.com/about"},
+      {"label": "Navigara contact page", "url": "https://navigara.com/contact"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/navigara"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/navigara/reviews"}
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+ "slug": "ribbon-health",
+ "website": "https://h1.com/",
+ "excerpt": "Ribbon Health built provider directory data and APIs for health plans and digital health companies. H1 acquired it in January 2025.",
+ "content": "<p>Ribbon Health was a US healthcare data company founded in 2016. It built a database and API of US healthcare providers: which doctors practise where, which insurance plans they accept, their specialties and how to reach them. Health insurers, provider groups and digital health companies used Ribbon to power 'find a doctor' tools and to keep their provider directories accurate, a long-running problem in US healthcare. Fierce Healthcare reported that Ribbon had more than 50 customers and that its API supported provider searches used by 20 to 25 million people a year. Its backers included General Catalyst, Andreessen Horowitz, BoxGroup and Rock Health.</p><p>On 8 January 2025 H1, a healthcare data company whose customers had mainly been life-sciences firms, announced that it had acquired Ribbon Health. The agreement was signed on 12 December 2024 and paid in a mix of cash and stock; the price was not disclosed. H1 said Ribbon's platform would become part of its product family as H1 for Health Plans & Digital Health, giving insurers, providers and digital health companies accurate, real-time provider data. Ribbon's cofounder and chief executive, Nate Maslak, said combining Ribbon's provider data and software with H1's clinical insights would help people get the best possible care. In the same announcement H1 added former FDA Commissioner Stephen Hahn to its board.</p><p>Ribbon's own website no longer loads. The product continues under H1's name, so this listing points to H1. H1 does not publish prices for its health-plan products; buyers request a demo. Existing Ribbon API customers should check their contracts and documentation with H1, since the product name and owner have changed.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Healthcare provider data (acquired)",
+  "platform": "Web",
+  "starts_at": "Sold by H1; pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Provider data API for finding the right doctor; now part of H1",
+  "maker": {
+   "name": "H1 (acquirer)",
+   "url": "https://h1.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://avatars.githubusercontent.com/u/35243169?v=4",
+    "alt": "Ribbon Health illustration: a person repairing pipes inside a pale green medical cross, standing on a stepladder",
+    "credit": "Image: Ribbon Health (GitHub: ribbonhealth)",
+    "w": 460,
+    "h": 460
+   },
+   {
+    "url": "https://h1.com/wp-content/uploads/2025/01/Project-Lego-PR-Web-Header.png",
+    "alt": "H1 press release banner, 'H1 Builds on Its Mission to Connect the World with the Right Doctors in 2025', with photos of doctors and patients",
+    "credit": "Image: H1 (h1.com)",
+    "w": 1200,
+    "h": 625
+   }
+  ],
+  "use_cases": [
+   "Powering a health plan's 'find a doctor' search",
+   "Keeping provider directories accurate",
+   "Matching patients with in-network providers in digital health apps"
+  ],
+  "audience": {
+   "fit": [
+    "run a US health plan, provider group or digital health product that needs provider data",
+    "followed Ribbon and want to know where its product went"
+   ],
+   "not_fit": [
+    "are a patient looking for a doctor directly",
+    "work outside the US healthcare system"
+   ]
+  },
+  "pricing": {
+   "intro": "Ribbon is now sold by H1 as H1 for Health Plans & Digital Health. H1 does not publish prices; buyers request a demo.",
+   "plans": [
+    {
+     "name": "H1 for Health Plans & Digital Health",
+     "price": "Quote on request",
+     "detail": "Ribbon's former provider data platform"
+    }
+   ],
+   "notes": [],
+   "url": "https://h1.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Provider data combined with H1's clinical data",
+   "Established API used by health plans and digital health firms"
+  ],
+  "cons": [
+   "No longer an independent product",
+   "No public pricing"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Veda",
+     "url": "https://vedadata.com/",
+     "what": "Provider data automation for health plans",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Focuses on cleaning and maintaining provider directory data."
+    },
+    {
+     "name": "Availity",
+     "url": "https://www.availity.com/",
+     "what": "Health information network with provider data management",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Large network connecting payers and providers."
+    },
+    {
+     "name": "Defacto Health",
+     "url": "https://www.defactohealth.com/",
+     "what": "Provider data and network analytics",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Provider data for network management."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who bought Ribbon Health?",
+    "a": "H1, which announced the acquisition on 8 January 2025."
+   },
+   {
+    "q": "What happened to Ribbon's product?",
+    "a": "It became H1 for Health Plans & Digital Health."
+   },
+   {
+    "q": "How much did H1 pay for Ribbon Health?",
+    "a": "The price was not disclosed; it was a mix of cash and stock."
+   }
+  ],
+  "sources": [
+   {
+    "label": "H1: H1 acquires Ribbon Health (press release, 8 Jan 2025)",
+    "url": "https://h1.com/press/h1-welcomes-former-fda-commissioner-to-board-of-directors-acquires-ribbon-health-and-unveils-2025-product-roadmap/"
+   },
+   {
+    "label": "Fierce Healthcare: H1 acquires Ribbon Health",
+    "url": "https://www.fiercehealthcare.com/health-tech/h1-acquires-ribbon-health-expand-its-reach-health-plan-digital-health-markets"
+   },
+   {
+    "label": "Healthcare Finance News: H1 acquires data management company Ribbon Health",
+    "url": "https://www.healthcarefinancenews.com/news/h1-acquires-data-management-company-ribbon-health"
+   },
+   {
+    "label": "Healthcare Innovation: Tech firm H1 acquires Ribbon Health",
+    "url": "https://www.hcinnovationgroup.com/finance-revenue-cycle/mergers-acquisitions/news/55259786/tech-firm-h1-acquires-ribbon-health"
+   }
+  ],
+  "team": [
+   {
+    "name": "Nate Maslak",
+    "role": "Cofounder and former CEO"
+   }
+  ]
+ }
+}

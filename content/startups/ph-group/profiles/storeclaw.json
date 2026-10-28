@@ -1,0 +1,337 @@
+{
+ "slug": "storeclaw",
+ "ph_url": "https://www.producthunt.com/posts/storeclaw",
+ "existing_listing_slug": null,
+ "website": "https://www.storeclaw.ai/",
+ "excerpt": "StoreClaw connects AI agents to Shopify, Amazon and other stores to suggest and, with approval, make changes. Free plan; Pro from $19.90/month.",
+ "content": "<p>StoreClaw is an AI assistant for online sellers. You connect your stores and channels (the site shows Shopify, Amazon, WooCommerce, eBay, Wix, TikTok and social accounts) and then ask it, in chat, how the business is doing. Its agents run skills for product research, listing writing, SEO and visibility in AI search, ad audits, sales and stock analytics, store design and social content. It also proposes plans on its own, such as rewriting weak product titles, and carries them out only after you approve them.</p><p>Connections use OAuth and are read-only by default; write access is granted only when you set up an action. The privacy policy says conversation data, files and task instructions are not used to train AI models. There is a forever-free plan with daily credits, and paid plans from $19.90 a month; new accounts get 300 credits.</p><p>StoreClaw is made by StoreClaw Inc., a Delaware corporation according to its privacy policy. It launched on Product Hunt on 20 May 2026, hunted by Chris Messina, and finished #1 for the day and the week and #2 for the month, with 784 upvotes and 272 comments.</p><p><em>We have not tested StoreClaw ourselves. This page brings together its official site, pricing, help centre and privacy policy, its Product Hunt launch and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "E-commerce",
+  "platform": "Web, with a mobile app and a Slack integration",
+  "starts_at": "Free plan; Pro $19.90/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI agents that analyse your online stores and make approved changes to listings, SEO and ads",
+  "maker": {
+   "name": "Marina",
+   "url": "https://www.producthunt.com/@marina_jiang1"
+  },
+  "team": [
+   {
+    "name": "Marina",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@marina_jiang1"
+   },
+   {
+    "name": "Xiaomin Zhou",
+    "role": "Head of Product",
+    "url": "https://www.producthunt.com/@xiaomin_zhou"
+   },
+   {
+    "name": "Satomi",
+    "role": "Senior product manager",
+    "url": "https://www.producthunt.com/@satomi_yu"
+   },
+   {
+    "name": "Lena Pan",
+    "role": "Multimodal and market research",
+    "url": "https://www.producthunt.com/@lena_pan2026"
+   },
+   {
+    "name": "Steven Zhou",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@steven_zhou8"
+   },
+   {
+    "name": "Zhiyuan Hu",
+    "role": "Digital growth strategist",
+    "url": "https://www.producthunt.com/@phoenixhu"
+   }
+  ],
+  "ph": {
+   "rank": 1,
+   "votes": 784,
+   "comments": 272,
+   "followers": 2056,
+   "launched": "2026-05-20",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Asking how sales are going across several stores at once",
+   "Running a store health check that flags weak titles or rising cart abandonment",
+   "Bulk-rewriting product titles, meta descriptions and alt text",
+   "Auditing ad spend and bids on marketplaces",
+   "Tracking whether ChatGPT, Perplexity and AI Overviews cite your products"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Steven Zhou, one of the makers, wrote that the team had struggled to describe the product: words such as copilot, assistant or platform felt like an apology for what it does, and hunter Chris Messina's phrase, a collection of agents that know how to sell, fitted better.",
+    "He stressed that StoreClaw's proactive plans come with reasoning: the agent explains why it thinks a listing needs rewriting before asking for approval, so even a rejected plan tells you something new about your store."
+   ],
+   "attribution": "Steven Zhou, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/storeclaw?comment=5383611"
+  },
+  "audience": {
+   "fit": [
+    "sell on several platforms, such as Shopify and Amazon, and want one place to ask about them",
+    "want an AI to suggest changes but keep approval over what goes live",
+    "want to start free before paying"
+   ],
+   "not_fit": [
+    "want a tool that only reads your data: write actions are the point, although they need approval",
+    "need published team pricing: team plans are quote-only",
+    "want to measure AI-search results precisely: a maker said that is still noisy"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices are from StoreClaw's pricing page, in US dollars, billed monthly. The page offers yearly billing with a 20% saving but does not show yearly prices.",
+   "url": "https://www.storeclaw.ai/pricing/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "50 credits refreshed daily, one task at a time; no credit card"
+    },
+    {
+     "name": "Pro",
+     "price": "$19.90/month",
+     "amount": 19.9,
+     "currency": "USD",
+     "detail": "6,000 credits a month plus 100 daily, up to 10 tasks at once"
+    },
+    {
+     "name": "Max",
+     "price": "$39.90/month",
+     "amount": 39.9,
+     "currency": "USD",
+     "detail": "12,000 credits a month plus 100 daily, up to 10 tasks at once"
+    },
+    {
+     "name": "Ultra",
+     "price": "$199.90/month",
+     "amount": 199.9,
+     "currency": "USD",
+     "detail": "60,000 credits a month plus 100 daily, up to 10 tasks at once"
+    },
+    {
+     "name": "Team",
+     "price": "Contact sales",
+     "currency": "USD",
+     "detail": "Shared store profiles, role-based permissions and activity logs"
+    }
+   ],
+   "notes": [
+    "New accounts get 300 free credits; extra credits can be bought from billing settings. When credits run out, scheduled tasks pause until the next refresh.",
+    "You can cancel at any time and keep the plan until the end of the billing period. No refund policy is stated on the pricing page."
+   ]
+  },
+  "alternatives": {
+   "intro": "Two widely used options for sellers. Prices come from each product's own page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Shopify Sidekick",
+     "url": "https://www.shopify.com/magic",
+     "what": "Shopify's built-in AI assistant for store set-up, copy, discounts, reports and admin tasks",
+     "starts_at": "Included with Shopify plans (limits vary by plan)",
+     "difference": "Works only inside Shopify, with no Amazon or eBay connection, but costs nothing extra if you already pay for Shopify."
+    },
+    {
+     "name": "Helium 10",
+     "url": "https://www.helium10.com/",
+     "what": "Amazon seller toolkit for product research, keywords, listings, ads and analytics",
+     "starts_at": "Platinum $129/month, or $99/month billed yearly",
+     "difference": "Deeper Amazon-specific data and tools, but you act on its output yourself rather than approving an agent's changes."
+    }
+   ]
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/storeclaw/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Approval before any change goes live",
+     "Working directly in the store instead of copying output into Shopify",
+     "Connecting several sales platforms in one place"
+    ],
+    "asked": [
+     "How detailed the approval controls are (makers: changes in one session need one confirmation; low-impact work can run automatically)",
+     "How it handles new products with no sales history (makers: category baselines and public signals at first)",
+     "How it measures visibility in AI search over time",
+     "Whether bulk changes can be rolled back (makers: version history and monitoring)"
+    ],
+    "criticised": [
+     "Several technical questions were answered with a request to email support rather than in the thread"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "The approval-before-execution model is the right call for commerce. A rogue agent silently changing prices or running a discount would be a nightmare.",
+     "author": "Bhuvika Mehta",
+     "url": "https://www.producthunt.com/products/storeclaw?comment=5391400"
+    },
+    {
+     "text": "Does StoreClaw have a learning period, or does it optimize from day one using a pre-trained baseline?",
+     "author": "Jocky",
+     "url": "https://www.producthunt.com/products/storeclaw?comment=5383941"
+    },
+    {
+     "text": "A senior operator knows when not to optimize aggressively because of seasonality, inventory risk, brand positioning, etc.",
+     "author": "Surabhi Minocha",
+     "url": "https://www.producthunt.com/products/storeclaw?comment=5384674"
+    }
+   ]
+  },
+  "pros": [
+   "Free plan with daily credits and no card needed",
+   "Connects many platforms, including Shopify, Amazon, WooCommerce, eBay and Wix",
+   "Changes need your approval; connections are read-only by default",
+   "Privacy policy says your data is not used to train AI models",
+   "Low starting price for paid plans"
+  ],
+  "cons": [
+   "Credit-based usage makes monthly cost harder to predict",
+   "Yearly and team prices are not shown",
+   "Pricing page FAQ mentions a Starter plan that is not listed",
+   "Measuring AI-search impact is still imprecise, by the makers' own account"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/storeclaw",
+   "quotes": [
+    {
+     "author": "Bhuvika Mehta",
+     "url": "https://www.producthunt.com/products/storeclaw?comment=5391400",
+     "text": "Does it batch suggestions into one 'approve all,' or does each action (price change, inventory reorder, promo) get its own confirmation?",
+     "reply": "Satomi said every change needs confirmation; changes made in one session are confirmed once, and separate sessions need separate confirmations."
+    },
+    {
+     "author": "Jocky",
+     "url": "https://www.producthunt.com/products/storeclaw?comment=5383941",
+     "text": "Curious how it handles a new SKU with zero sales history.",
+     "reply": "Steven Zhou said it starts from category benchmarks and public signals such as search trends and competitor listings, then shifts to your own data."
+    }
+   ],
+   "x": {
+    "none": "We found no posts about StoreClaw on X yet.",
+    "search_url": "https://x.com/search?q=storeclaw&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is StoreClaw?",
+    "a": "An AI platform for online sellers. It connects to your stores and channels, answers questions about your business and runs agents that suggest and, with your approval, make changes to listings, SEO, ads and more."
+   },
+   {
+    "q": "How much does StoreClaw cost?",
+    "a": "There is a free plan with 50 credits a day. Paid plans are Pro at $19.90, Max at $39.90 and Ultra at $199.90 a month; team plans are priced on request. New accounts get 300 credits."
+   },
+   {
+    "q": "Which platforms does it connect to?",
+    "a": "The site and gallery show Shopify, Amazon, WooCommerce, eBay, Wix, TikTok Shop and social accounts, plus a Slack integration."
+   },
+   {
+    "q": "Will it change my store without asking?",
+    "a": "Connections are read-only by default. The makers said modifications need your confirmation, and you can let low-impact work run automatically while pricing, stock and budget changes wait for review."
+   },
+   {
+    "q": "Can it work with new products that have no sales history?",
+    "a": "The makers said it starts from category benchmarks and public signals such as search trends and competitor listings, then moves to your own numbers as data builds up."
+   },
+   {
+    "q": "Does StoreClaw train AI on my data?",
+    "a": "Its privacy policy says it does not use your conversations, files or task instructions to train AI models, and that any future change would be opt-in."
+   },
+   {
+    "q": "What are the alternatives to StoreClaw?",
+    "a": "Shopify Sidekick, which is included with Shopify plans, and Helium 10 for Amazon sellers."
+   }
+  ],
+  "sources": [
+   {
+    "label": "StoreClaw official site",
+    "url": "https://www.storeclaw.ai/"
+   },
+   {
+    "label": "StoreClaw pricing",
+    "url": "https://www.storeclaw.ai/pricing/"
+   },
+   {
+    "label": "StoreClaw about",
+    "url": "https://www.storeclaw.ai/about/"
+   },
+   {
+    "label": "StoreClaw help centre",
+    "url": "https://www.storeclaw.ai/help-center/"
+   },
+   {
+    "label": "StoreClaw privacy policy",
+    "url": "https://www.storeclaw.ai/privacy/"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/storeclaw"
+   },
+   {
+    "label": "Shopify Sidekick",
+    "url": "https://www.shopify.com/magic"
+   },
+   {
+    "label": "Helium 10 pricing",
+    "url": "https://www.helium10.com/pricing/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/571326ca-9fec-4d0e-8076-a9712221f8ea.jpeg?auto=format&fit=max&w=1400",
+    "alt": "StoreClaw home screen with a chat box and the tagline 'Grow your store profits with agents that know how to sell'",
+    "credit": "Image: StoreClaw on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://ph-files.imgix.net/113b4e68-a2f4-410c-a0fd-30daa6a779d9.jpeg?auto=format&fit=max&w=1400",
+    "alt": "StoreClaw Connectors screen with Shopify, Amazon, Wix, WooCommerce, eBay and TikTok Shop connected",
+    "credit": "Image: StoreClaw on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://ph-files.imgix.net/f8e3b307-8d9f-440a-b0b2-b4e5206386b5.jpeg?auto=format&fit=max&w=1400",
+    "alt": "StoreClaw store health check for a sample pet store, scoring 58 out of 100 with four active issues",
+    "credit": "Image: StoreClaw on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://ph-files.imgix.net/e5cf6382-98a7-4811-a507-5fa4343e6e76.jpeg?auto=format&fit=max&w=1400",
+    "alt": "StoreClaw weekly operations brief with Approve buttons next to each suggested change",
+    "credit": "Image: StoreClaw on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/571326ca-9fec-4d0e-8076-a9712221f8ea.jpeg?auto=format&fit=max&w=1400",
+    "alt": "StoreClaw home screen with a chat box and the tagline 'Grow your store profits with agents that know how to sell'",
+    "credit": "Image: StoreClaw on Product Hunt"
+   },
+   {
+    "url": "https://ph-files.imgix.net/113b4e68-a2f4-410c-a0fd-30daa6a779d9.jpeg?auto=format&fit=max&w=1400",
+    "alt": "StoreClaw Connectors screen with Shopify, Amazon, Wix, WooCommerce, eBay and TikTok Shop connected",
+    "credit": "Image: StoreClaw on Product Hunt"
+   },
+   {
+    "url": "https://ph-files.imgix.net/f8e3b307-8d9f-440a-b0b2-b4e5206386b5.jpeg?auto=format&fit=max&w=1400",
+    "alt": "StoreClaw store health check for a sample pet store, scoring 58 out of 100 with four active issues",
+    "credit": "Image: StoreClaw on Product Hunt"
+   }
+  ]
+ }
+}

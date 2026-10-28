@@ -1,0 +1,181 @@
+{
+  "slug": "gauth",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/gauth-ai-course",
+  "excerpt": "Gauth, the AI study app formerly called Gauthmath, added Unlimited Digital Canvas to its AI Course: lessons play out on one continuous whiteboard where students can pause and ask the AI tutor questions. What it does, availability and alternatives.",
+  "content": "<p>Gauth is an AI study platform for students, formerly called Gauthmath. It started with step-by-step help on maths homework from a photo or typed question and now covers more subjects, with AI explanations, a service that connects students with human tutors and a course product called Gauth AI Course. Gauth says it has passed 200 million downloads since 2020; that figure is the company's own.</p><p>The Product Hunt launch was Unlimited Digital Canvas, a whiteboard view inside Gauth AI Course. Instead of slides or a chat thread, a lesson is laid out on one continuous board: chapters open side by side as the narration plays, notes are written in step with the AI voice, and you can zoom from the whole concept map down to one formula. A student can pause and ask a question, and the AI tutor answers on the board under that step. According to Gauth's press release, it went live in the history and maths libraries, premium courses add 3D simulations and animations, and students can turn their own topic or an uploaded document into a lesson with quick checks. Lessons can be exported as a PDF or shared by link.</p><p>Unlimited Digital Canvas was Gauth AI Course's second Product Hunt launch. It went live on 2 October 2026 and finished #1 for the day with 415 upvotes and 91 comments.</p><p><em>We have not tested Gauth ourselves. This page brings together Gauth's official site and about page, its launch press release, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "AI education",
+    "platform": "Web, iOS and Android",
+    "starts_at": "Pricing not published",
+    "schema_category": "EducationalApplication",
+    "summary_short": "AI study app whose courses now run on one continuous whiteboard with an AI tutor you can interrupt",
+    "maker": {
+      "name": "Gauth",
+      "url": "https://www.gauth.com/aboutus"
+    },
+    "ph": {
+      "rank": 1,
+      "votes": 415,
+      "comments": 91,
+      "followers": 1999,
+      "launched": "2026-10-02",
+      "as_of": "2026-10-14"
+    },
+    "use_cases": [
+      "Following a maths or history lesson as one zoomable board instead of slides",
+      "Pausing a lesson to ask the AI tutor about a specific step",
+      "Turning your own notes or an uploaded document into an interactive lesson",
+      "Exporting a finished lesson as a PDF for revision",
+      "Checking homework steps with Gauth's step-by-step solver"
+    ],
+    "audience": {
+      "fit": [
+        "are a school or college student who learns better from visual, step-by-step explanations",
+        "want to ask questions in the middle of a lesson rather than in a separate chat",
+        "want to turn your own study material into a guided lesson"
+      ],
+      "not_fit": [
+        "need every subject now: the canvas launched in the history and maths libraries",
+        "want element-level Q&A or 3D assets in personal lessons: Gauth says those come later",
+        "want answers without doing the work: Gauth says it supports learning and is not a substitute for students' own work"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on gauth.com as of 15 October 2026: the site has no pricing page and its course catalogue shows no prices. Gauth's press release refers to premium courses, so some content is paid.",
+      "url": "https://www.gauth.com/",
+      "checked": "2026-10-15",
+      "plans": [],
+      "notes": []
+    },
+    "alternatives": {
+      "intro": "Brilliant, Brainly and Super Teacher are on Product Hunt's alternatives list. Review scores are Product Hunt users' own.",
+      "items": [
+        {
+          "name": "Brilliant",
+          "url": "https://brilliant.org/",
+          "what": "Interactive lessons in maths, science and coding",
+          "starts_at": "See its pricing page",
+          "ph_url": "https://www.producthunt.com/products/brilliant",
+          "difference": "Hand-built interactive courses; Gauth generates lessons, including from your own documents, with an AI tutor on the board."
+        },
+        {
+          "name": "Brainly",
+          "url": "https://brainly.com/",
+          "what": "Homework help with community and AI answers",
+          "starts_at": "See its pricing page",
+          "ph_url": "https://www.producthunt.com/products/brainly",
+          "difference": "Question-and-answer homework help; Gauth's canvas is a structured lesson format."
+        },
+        {
+          "name": "Super Teacher",
+          "url": "https://www.producthunt.com/products/super-teacher",
+          "what": "AI tutor for children",
+          "starts_at": "See its pricing page",
+          "ph_rating": 4.77,
+          "ph_reviews": 13,
+          "ph_url": "https://www.producthunt.com/products/super-teacher",
+          "difference": "Aimed at younger learners; Gauth spans school and college subjects."
+        }
+      ],
+      "more": "Product Hunt also lists maths.ai and TutorAI."
+    },
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/gauth-ai-course/reviews",
+      "as_of": "2026-10-14"
+    },
+    "pros": [
+      "Lessons on one zoomable board rather than slides or chat",
+      "AI tutor answers questions in place, under the step",
+      "Can turn your own topic or document into a lesson",
+      "PDF export and link sharing; sessions resume where you left off"
+    ],
+    "cons": [
+      "Launched only in the history and maths libraries",
+      "Some promised features (element-level Q&A, 3D in personal lessons) are not out yet",
+      "No published pricing on its site"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/gauth-ai-course",
+      "x": {
+        "none": "We found no posts about Gauth's Unlimited Digital Canvas on X to link yet.",
+        "search_url": "https://x.com/search?q=Gauth%20canvas&f=live",
+        "profile_url": "https://twitter.com/gauth_ai"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Gauth Unlimited Digital Canvas?",
+        "a": "A whiteboard view in Gauth AI Course where a lesson unfolds on one continuous board with synced narration and notes, and an AI tutor answers questions directly on the board."
+      },
+      {
+        "q": "Which subjects does it cover?",
+        "a": "Gauth's press release says it is live in the history and maths libraries, with premium courses in subjects such as maths, physics and biology adding 3D simulations and animations."
+      },
+      {
+        "q": "Is Gauth free?",
+        "a": "Gauth's site does not publish prices. Its press release mentions premium courses, so some content is paid."
+      },
+      {
+        "q": "Can I use my own notes?",
+        "a": "Yes. Gauth says students can turn a personal topic or an uploaded document into an interactive lesson with narration, board notes and quick checks."
+      },
+      {
+        "q": "Is Gauth the same as Gauthmath?",
+        "a": "Yes. Gauth's about page says Gauthmath was renamed Gauth in 2024 as it added more subjects."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Gauth official site",
+        "url": "https://www.gauth.com/"
+      },
+      {
+        "label": "Gauth about us",
+        "url": "https://www.gauth.com/aboutus"
+      },
+      {
+        "label": "Gauth press release (PR Newswire, via Morningstar)",
+        "url": "https://www.morningstar.com/news/pr-newswire/20261001cn57751/gauth-launches-unlimited-digital-canvas-gives-students-one-continuous-whiteboard-to-visualize-explore-and-understand-complex-topics"
+      },
+      {
+        "label": "Product Hunt launch page",
+        "url": "https://www.producthunt.com/p/gauth-ai-course/gauth-unlimited-digital-canvas"
+      },
+      {
+        "label": "Product Hunt alternatives",
+        "url": "https://www.producthunt.com/products/gauth-ai-course/alternatives"
+      },
+      {
+        "label": "Gauth Academy course catalogue",
+        "url": "https://www.gauth.com/course"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/38dfe037-c39d-43db-8896-12c16d71c8df.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Gauth graphic 'Turn Any Subject Into An Interactive AI Course' with a laptop showing the courses page",
+        "credit": "Image: Gauth via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/973422b3-cbf1-4b9e-956e-7f48b9484f2d.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Gauth graphic 'Or Start From A Course Already Built For You' with algebra units and a parallelogram quiz",
+        "credit": "Image: Gauth via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/9888d970-6b7f-45e1-a1ab-fa20f4f77ec2.png?auto=format&fit=max&w=1400",
+        "w": 1270,
+        "h": 760,
+        "alt": "Gauth graphic 'Not A Wall Of Text. A Visual Lesson' with an Industrial Revolution history course",
+        "credit": "Image: Gauth via Product Hunt"
+      }
+    ]
+  }
+}

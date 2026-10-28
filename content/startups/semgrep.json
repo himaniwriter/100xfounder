@@ -1,0 +1,185 @@
+{
+ "slug": "semgrep",
+ "website": "https://semgrep.dev/",
+ "excerpt": "Semgrep is a code security platform built on an open-source static analysis engine: SAST, dependency (SCA) and secrets scanning with AI triage. Free for small teams; raised a $100M Series D in 2025.",
+ "content": "<p>Semgrep is an application security platform that scans source code for vulnerabilities. It grew out of an open-source static analysis engine, also called Semgrep, which developers can extend with their own rules. The commercial platform adds three main products: Semgrep Code for static application security testing (SAST), Semgrep Supply Chain for finding vulnerable or malicious open-source dependencies, and Semgrep Secrets for hard-coded credentials. Newer products include Semgrep Guardian, which scans AI-generated code as it is written, and AI-powered detection, triage and suggested fixes. Its About page says it has powered more than 75 million source-code security scans.</p><p>Semgrep was founded in 2017 by Drew Dennison, Isaac Evans and Luke O'Malley, according to its About page; Isaac Evans is CEO. In February 2025 the company announced a $100 million Series D led by Menlo Ventures, with existing investors Felicis Ventures, Harpoon Ventures, Lightspeed Venture Partners, Redpoint Ventures and Sequoia Capital participating. Crunchbase News reported that it was the largest round of the year so far in application security, and that Semgrep had raised $204 million in total, according to the company.</p><p>Semgrep publishes its prices. The Free edition covers up to 10 repositories and 10 contributors and includes Code and Supply Chain scanning plus a small number of AI credits. The Teams plan is priced per contributor per month: $30 for Code, $30 for Supply Chain and $15 for Secrets, and adds cross-file analysis with Pro rules, more AI credits and single sign-on. Enterprise pricing is custom. The open-source Community Edition engine remains free to run yourself.</p><p>This profile draws on Semgrep's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Application security (SAST, SCA, secrets)",
+  "platform": "Cloud platform, CLI and CI/CD; open-source engine",
+  "starts_at": "Free for up to 10 contributors; Teams from $15/contributor/month",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Code, dependency and secrets scanning with AI triage, built on an open-source static analysis engine",
+  "maker": {
+   "name": "Semgrep, Inc.",
+   "url": "https://semgrep.dev/about/"
+  },
+  "team": [
+   {
+    "name": "Isaac Evans",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Drew Dennison",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Luke O'Malley",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://semgrep.dev/assets/content/global/blog-thumbnail-default.png",
+    "alt": "Semgrep logo, three linked green rings and the word Semgrep, on a dark navy background with green line patterns in the corners",
+    "credit": "Image: Semgrep",
+    "w": 1366,
+    "h": 768
+   }
+  ],
+  "use_cases": [
+   "Scanning source code for security bugs in pull requests and CI",
+   "Finding vulnerable or malicious open-source dependencies",
+   "Detecting hard-coded secrets such as API keys",
+   "Writing custom rules to enforce a team's own coding standards",
+   "Triaging and fixing findings with AI assistance"
+  ],
+  "audience": {
+   "fit": [
+    "run application security or platform engineering for a software team",
+    "want developer-friendly scanning that runs in pull requests",
+    "want to write custom rules, or start free with a small team"
+   ],
+   "not_fit": [
+    "need dynamic testing of running applications (DAST) rather than code scanning",
+    "have no access to your application's source code"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices from Semgrep's official pricing page, per contributor per month.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Up to 10 repositories and 10 contributors; Code and Supply Chain; 60 AI credits"
+    },
+    {
+     "name": "Teams: Code (SAST)",
+     "price": "$30/contributor/month",
+     "amount": 30,
+     "currency": "USD",
+     "detail": "Cross-file analysis with Pro rules, AI triage, SSO"
+    },
+    {
+     "name": "Teams: Supply Chain (SCA)",
+     "price": "$30/contributor/month",
+     "amount": 30,
+     "currency": "USD",
+     "detail": "Dependency vulnerability and malware detection"
+    },
+    {
+     "name": "Teams: Secrets",
+     "price": "$15/contributor/month",
+     "amount": 15,
+     "currency": "USD",
+     "detail": "Hard-coded secrets detection"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Contact sales"
+    }
+   ],
+   "notes": [
+    "The open-source Semgrep Community Edition engine is free to self-run."
+   ],
+   "url": "https://semgrep.dev/pricing/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Free tier for small teams and a free open-source engine",
+   "Custom rules for a team's own standards",
+   "Published per-contributor pricing"
+  ],
+  "cons": [
+   "Costs scale with the number of contributors",
+   "Static analysis only; pair with other tools for runtime testing"
+  ],
+  "alternatives": {
+   "intro": "Other code security scanners. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Snyk",
+     "url": "https://snyk.io/",
+     "what": "Developer security platform for code, dependencies, containers and IaC",
+     "tags": [
+      "SAST",
+      "SCA"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Broader coverage of containers and infrastructure as code."
+    },
+    {
+     "name": "GitHub Advanced Security (CodeQL)",
+     "url": "https://github.com/security/advanced-security",
+     "what": "Code scanning, secret scanning and dependency review in GitHub",
+     "tags": [
+      "SAST",
+      "Secrets"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Built into GitHub; CodeQL queries are more complex to write."
+    },
+    {
+     "name": "SonarQube",
+     "url": "https://www.sonarsource.com/products/sonarqube/",
+     "what": "Code quality and security analysis",
+     "tags": [
+      "Code quality",
+      "SAST"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Combines code quality metrics with security checks."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Semgrep free?",
+    "a": "The open-source Community Edition is free, and the hosted Free edition covers up to 10 repositories and 10 contributors. Paid Teams plans are per contributor."
+   },
+   {
+    "q": "How much does Semgrep cost?",
+    "a": "Teams pricing is $30 per contributor per month for Code, $30 for Supply Chain and $15 for Secrets, per its pricing page. Enterprise is custom."
+   },
+   {
+    "q": "Who founded Semgrep?",
+    "a": "Drew Dennison, Isaac Evans and Luke O'Malley, in 2017. Isaac Evans is CEO."
+   },
+   {
+    "q": "How much funding has Semgrep raised?",
+    "a": "$204 million in total, including a $100 million Series D led by Menlo Ventures in February 2025, according to Crunchbase News."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Semgrep: About",
+    "url": "https://semgrep.dev/about/"
+   },
+   {
+    "label": "Semgrep pricing page",
+    "url": "https://semgrep.dev/pricing/"
+   },
+   {
+    "label": "Crunchbase News: Semgrep locks down $100M Series D (Feb 2025)",
+    "url": "https://news.crunchbase.com/cybersecurity/application-startup-semgrep-fundraise-menlo/"
+   },
+   {
+    "label": "Nasdaq: Application security startup Semgrep locks down $100M Series D",
+    "url": "https://www.nasdaq.com/articles/application-security-startup-semgrep-locks-down-100m-series-d"
+   }
+  ]
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "slug": "second-front-systems",
+ "website": "https://www.secondfront.com/",
+ "excerpt": "Second Front Systems (2F) runs Game Warden, a pre-accredited DevSecOps platform that helps software companies get DoD and FedRAMP authorization to sell to the US government.",
+ "content": "<p>Second Front Systems, known as 2F, helps commercial software companies sell to the US government and its allies. Before software can run on government networks it needs an authority to operate (ATO) or FedRAMP authorisation, which traditionally takes a long time and a lot of compliance work. Second Front's answer is a pre-accredited platform: a vendor deploys its application on 2F's already-authorised environment and inherits much of the security paperwork, rather than building its own from scratch.</p><p>The main product is Game Warden, a DevSecOps platform. Second Front's product page says Game Warden is authorised for US Department of Defense deployment at Impact Levels 2 through 6 and on the top secret JWICS network, is certified at FedRAMP High, and can get applications through a DoD ATO or FedRAMP authorisation in as little as 90 days, including routes that do not need a government sponsor. It deploys to the customer's preferred cloud, with partnerships with AWS, Google Cloud and Microsoft. Other products include Frontier, for deploying and updating software on edge devices such as drones and vehicles in low-connectivity settings, and Workshop.</p><p>Customers cited by the company include Cohere, which in May 2026 said it achieved FedRAMP High authorisation through Game Warden in under 90 days by inheriting Second Front's controls. In January 2025 Second Front announced a partnership with Saab, Inc. to deploy and update edge systems such as the Enforcer 3.1 autonomous test vessel.</p><p>Second Front's about page says it was founded by former Marines frustrated by how slow government buying hurt front-line troops, and that it is a venture-backed public benefit company. Tyler Sweatt is CEO and chairman; the board includes Martha McSally as an independent director. The company also cites a place in Deloitte's 2024 Technology Fast 500 for North America.</p><p>Second Front does not publish prices. Its site says accreditation costs a fraction of the traditional route and asks vendors to get in touch.</p><p><em>This page is research, not a review. We have not used Game Warden; facts come from Second Front's pages and the press release listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Government software accreditation (DevSecOps)",
+  "platform": "Managed DevSecOps platform on AWS, Google Cloud and Microsoft Azure",
+  "starts_at": "Not published; contact sales",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Pre-accredited platform that gets commercial software DoD and FedRAMP authorised faster",
+  "maker": {
+   "name": "Second Front Systems",
+   "url": "https://www.secondfront.com/"
+  },
+  "team": [
+   {
+    "name": "Tyler Sweatt",
+    "role": "CEO and chairman"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.secondfront.com/wp-content/uploads/2024/11/2F-Open-Graph-Default.jpg",
+    "w": 2400,
+    "h": 1260,
+    "alt": "Second Front banner reading Powering software for the free world, beside an illustration of workers in yellow engine-like tubes",
+    "credit": "Image: Second Front Systems (secondfront.com)"
+   }
+  ],
+  "use_cases": [
+   "Getting a commercial SaaS product a DoD authority to operate",
+   "Reaching FedRAMP High authorisation by inheriting existing controls",
+   "Hosting software for classified and unclassified government networks",
+   "Deploying and updating software on drones, vehicles and other edge devices",
+   "Entering UK and European defence markets"
+  ],
+  "audience": {
+   "fit": [
+    "software startups that want to sell to the US Department of Defense or federal agencies",
+    "AI and SaaS companies that need FedRAMP authorisation without a sponsor",
+    "defence contractors deploying software to edge systems"
+   ],
+   "not_fit": [
+    "companies with no plans to sell to government",
+    "buyers looking for a self-serve price list"
+   ]
+  },
+  "pricing": {
+   "intro": "Second Front does not publish prices. Its site says accreditation costs a fraction of the traditional route and asks vendors to contact the company.",
+   "plans": [
+    {
+     "name": "Game Warden",
+     "price": "Not published",
+     "detail": "Contact Second Front"
+    }
+   ],
+   "url": "https://www.secondfront.com/products/game-warden/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Authorised from IL2 to IL6 plus FedRAMP High",
+   "Can avoid the need for a government sponsor",
+   "Works across the major cloud providers"
+  ],
+  "cons": [
+   "No public pricing",
+   "Timelines and savings figures are the company's own claims"
+  ],
+  "alternatives": {
+   "intro": "Other routes to government cloud authorisation for software vendors.",
+   "items": [
+    {
+     "name": "Palantir FedStart",
+     "url": "https://www.palantir.com/offerings/fedstart/",
+     "what": "Lets software companies run inside Palantir's accredited environment",
+     "difference": "Backed by Palantir's own government authorisations."
+    },
+    {
+     "name": "AWS GovCloud (US)",
+     "url": "https://aws.amazon.com/govcloud-us/",
+     "what": "Amazon's isolated cloud regions for US government workloads",
+     "difference": "Infrastructure only; the vendor still has to earn its own authorisation."
+    },
+    {
+     "name": "Platform One (US Air Force)",
+     "url": "https://p1.dso.mil/",
+     "what": "Government-run DevSecOps services",
+     "difference": "Run by the government itself rather than a vendor."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Game Warden?",
+    "a": "Second Front's DevSecOps platform, authorised for DoD Impact Levels 2 to 6 and JWICS and certified at FedRAMP High, which vendors use to inherit compliance controls."
+   },
+   {
+    "q": "How fast can Second Front get software authorised?",
+    "a": "The company claims a DoD ATO or FedRAMP authorisation in as little as 90 days. Cohere said it reached FedRAMP High in under 90 days through Game Warden."
+   },
+   {
+    "q": "Who runs Second Front Systems?",
+    "a": "Tyler Sweatt is CEO and chairman, according to the company's about page."
+   },
+   {
+    "q": "Who founded Second Front?",
+    "a": "The company says it was founded by former Marines; its about page does not name them."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Second Front: about",
+    "url": "https://www.secondfront.com/about/"
+   },
+   {
+    "label": "Second Front: Game Warden",
+    "url": "https://www.secondfront.com/products/game-warden/"
+   },
+   {
+    "label": "Business Wire: Cohere achieves FedRAMP High authorization through Second Front (May 2026)",
+    "url": "https://www.businesswire.com/news/home/20260512242074/en/Cohere-Achieves-FedRAMP-High-Authorization-Through-Second-Front-Expanding-Secure-AI-Access-for-Federal-Agencies"
+   },
+   {
+    "label": "Second Front: partnership with Saab (Jan 2025)",
+    "url": "https://www.secondfront.com/resources/news/second-front-systems-partners-with-saab/"
+   }
+  ]
+ }
+}

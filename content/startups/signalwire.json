@@ -1,0 +1,169 @@
+{
+ "slug": "signalwire",
+ "website": "https://signalwire.com/",
+ "excerpt": "SignalWire, from the creators of FreeSWITCH, sells programmable voice, messaging, video and AI voice agents. Published per-minute pricing, funding and alternatives.",
+ "content": "<p>SignalWire is a communications platform for developers: an API company in the same category as Twilio and Vonage. Developers use it to build phone and SMS features, video calls, contact centres and, increasingly, AI voice agents that answer and make calls. Its site calls it the communications control plane, with voice, messaging, video and AI on one programmable platform.</p><p>The company was founded by the creators and main maintainers of FreeSWITCH, a widely used open-source telephony engine, and Anthony Minessale is its cofounder and chief executive. It announced an $11.5 million Series A in August 2019 led by Storm Ventures, with Samsung NEXT and Sequoia Scouts. In June 2021 it announced a $30 million Series B led by Prosperity7 Ventures, taking its total funding to $41.6 million; T-Mobile Ventures and Deutsche Telekom later joined the round as strategic investors.</p><p>SignalWire publishes pay-as-you-go prices. Its AI Agent runtime costs $0.16 a minute, with voice transport billed on top, and the company says most customers pay roughly $0.163 to $0.168 a minute all-in for standard calls. US voice is $0.0066 a minute inbound and $0.008 outbound for local numbers, and $0.003 a minute for SIP or WebRTC. US SMS on local (10DLC) numbers is $0.00415 per segment, WhatsApp messages are $0.005 each, and a local phone number is $0.50 a month. Video conferencing is $0.0045 per participant-minute at 720p.</p><p>SignalWire suits developers and telecom teams building voice products, especially those who know FreeSWITCH or want AI voice agents with low latency. Teams that want a no-code phone system should look at a business phone service instead.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Communications APIs (CPaaS)",
+  "platform": "Web",
+  "starts_at": "AI agents $0.16/min; US voice from $0.003/min (SIP)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Programmable voice, messaging, video and AI voice agents on one platform",
+  "maker": {
+   "name": "SignalWire, Inc.",
+   "url": "https://signalwire.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://framerusercontent.com/images/c6q8yLEL4t6nAs7piHQXEGUV4.png",
+    "alt": "SignalWire logo, a blue and pink S-shaped mark beside the word SignalWire, on a dark blue background with pink and blue glows",
+    "credit": "Image: SignalWire (signalwire.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://framerusercontent.com/images/aRLaWIxFv9g8y4LBrWbDrDMhues.png",
+    "alt": "SignalWire icon: two blue and two pink rounded bars arranged in an S shape",
+    "credit": "Image: SignalWire (signalwire.com)",
+    "w": 2000,
+    "h": 2000
+   }
+  ],
+  "use_cases": [
+   "Building AI voice agents that answer or make phone calls",
+   "Adding calling and SMS to an app",
+   "Running a programmable contact centre",
+   "Embedding video calls",
+   "Connecting existing phone systems over SIP"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer or telecom team building voice or messaging features",
+    "know FreeSWITCH or run telephony infrastructure",
+    "want published per-minute pricing for AI voice agents"
+   ],
+   "not_fit": [
+    "want a ready-made business phone system without coding",
+    "need only occasional SMS from a no-code tool"
+   ]
+  },
+  "pricing": {
+   "intro": "SignalWire publishes pay-as-you-go prices on its pricing page. US prices shown; carrier pass-through fees may apply to messages.",
+   "plans": [
+    {
+     "name": "AI Agent runtime",
+     "price": "$0.16 per minute",
+     "detail": "Voice transport billed separately; about $0.163–$0.168/min all-in for standard calls"
+    },
+    {
+     "name": "Voice (US local)",
+     "price": "$0.0066/min in, $0.008/min out",
+     "detail": "SIP and WebRTC $0.003/min"
+    },
+    {
+     "name": "SMS (US local 10DLC)",
+     "price": "$0.00415 per segment",
+     "detail": "WhatsApp $0.005 per message"
+    },
+    {
+     "name": "Phone numbers",
+     "price": "$0.50 a month",
+     "detail": "Local; toll-free $0.80 a month"
+    },
+    {
+     "name": "Video conferencing API",
+     "price": "$0.0045 per participant-minute",
+     "detail": "720p; 1080p is $0.009"
+    }
+   ],
+   "notes": [],
+   "url": "https://signalwire.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published, low per-minute prices",
+   "Built by the FreeSWITCH team",
+   "Voice, messaging, video and AI agents in one platform"
+  ],
+  "cons": [
+   "Developer-focused; needs engineering work",
+   "Smaller than Twilio, with fewer third-party tutorials"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Twilio",
+     "url": "https://www.twilio.com/",
+     "what": "Communications APIs for voice, SMS, email and video",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "The largest CPaaS provider with the biggest ecosystem."
+    },
+    {
+     "name": "Vonage API",
+     "url": "https://www.vonage.com/communications-apis/",
+     "what": "Communications APIs",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Owned by Ericsson; similar breadth."
+    },
+    {
+     "name": "Telnyx",
+     "url": "https://telnyx.com/",
+     "what": "Communications APIs on its own private network",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Also targets AI voice agents with its own network."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who makes SignalWire?",
+    "a": "The creators and maintainers of the open-source FreeSWITCH telephony engine; Anthony Minessale is cofounder and CEO."
+   },
+   {
+    "q": "How much do SignalWire AI agents cost?",
+    "a": "$0.16 a minute for the AI runtime plus voice transport; SignalWire says most customers pay about $0.163–$0.168 a minute in total."
+   },
+   {
+    "q": "How much has SignalWire raised?",
+    "a": "$41.6 million by its 2021 Series B, which later added T-Mobile Ventures and Deutsche Telekom."
+   },
+   {
+    "q": "Is SignalWire a Twilio alternative?",
+    "a": "Yes. It offers comparable voice, SMS and video APIs with its own pricing."
+   }
+  ],
+  "sources": [
+   {
+    "label": "SignalWire pricing",
+    "url": "https://signalwire.com/pricing"
+   },
+   {
+    "label": "SignalWire: $11.5M Series A led by Storm Ventures",
+    "url": "https://signalwire.com/blogs/press/signalwire-secures-11-5m-series-a-financing-round-led-by-storm-ventures"
+   },
+   {
+    "label": "SignalWire: $30 million Series B led by Prosperity7 Ventures",
+    "url": "https://signalwire.com/blogs/press/signalwire-secures-30-million-series-b-led-by-prosperity7-ventures-to-build-infrastructure-for-telecom-2-0"
+   },
+   {
+    "label": "SignalWire: Deutsche Telekom invests in SignalWire",
+    "url": "https://signalwire.com/blogs/press/deutsche-telekom-invests-in-signalwire-a-pioneer-in-ultra-low-latency-programmable-video-and-voice-communications"
+   },
+   {
+    "label": "eeNews Europe: SignalWire secures $30 million Series B",
+    "url": "https://www.eenewseurope.com/en/signalwire-secures-30-million-series-b-funding-for-telecom-2-0/"
+   }
+  ],
+  "team": [
+   {
+    "name": "Anthony Minessale",
+    "role": "Cofounder and CEO"
+   }
+  ]
+ }
+}

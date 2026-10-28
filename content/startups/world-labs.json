@@ -1,0 +1,190 @@
+{
+ "slug": "world-labs",
+ "website": "https://www.worldlabs.ai/",
+ "excerpt": "World Labs, Fei-Fei Li's spatial intelligence company, makes Marble, which turns text, images and video into 3D worlds. Marble's prices, its funding and the pending AMD deal.",
+ "content": "<p>World Labs builds what it calls spatial intelligence: AI world models that perceive, generate and reason about three-dimensional worlds. Its first product, Marble, creates detailed 3D environments you can move through, edit and export from text prompts, images, videos, 360-degree panoramas or a rough 3D layout. Worlds can be expanded and combined, and exported as Gaussian splats or meshes for game engines and other 3D tools. A separate World API lets developers generate worlds in their own software.</p><p>The company was founded in 2024 by Fei-Fei Li, a Stanford computer scientist, with Justin Johnson, Christoph Lassner and Ben Mildenhall. Li is chief executive. It came out of stealth in 2024 with $230 million of funding that valued it at $1 billion, Bloomberg reported, and in January 2026 Bloomberg reported funding talks at about a $5 billion valuation.</p><p>Marble opened in beta in September 2025 and became generally available on 12 November 2025. It is used for entertainment and creative work and for building simulated environments to train robots.</p><p>On 28 September 2026 World Labs announced it is joining AMD. AMD agreed to buy the company in an all-stock deal valued at about $8.2 billion; Li is to join AMD as executive vice president and chief scientist. The deal is expected to close by the end of 2026, subject to regulatory approval, so World Labs remains independent until then and Marble's plans could change afterwards.</p><p>Marble has a free plan and three paid tiers billed monthly, with credits that each action uses up.</p><p><em>We have not used Marble for this page. It brings together Marble's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "3D world generation (AI)",
+  "platform": "Web app (Marble) and World API",
+  "starts_at": "Free; Standard $20/month",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "Spatial intelligence company whose Marble app generates editable 3D worlds",
+  "maker": {
+   "name": "World Labs",
+   "url": "https://www.worldlabs.ai/"
+  },
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Fei-Fei_Li_at_AI_for_Good_2017.jpg",
+    "w": 909,
+    "h": 1350,
+    "alt": "World Labs co-founder and CEO Fei-Fei Li speaking at a lectern at the AI for Good Global Summit in 2017",
+    "credit": "Photo: ITU Pictures, CC BY 2.0, via Wikimedia Commons"
+   },
+   {
+    "url": "https://www.worldlabs.ai/opengraph-image.png",
+    "w": 1200,
+    "h": 678,
+    "alt": "World Labs illustration of a miniature machine-like world holding a glass globe, with the words World Labs, Spatial Intelligence",
+    "credit": "Image: World Labs (worldlabs.ai)"
+   }
+  ],
+  "use_cases": [
+   "Generating 3D scenes for games, film previsualisation and VR",
+   "Turning a photo or panorama into an explorable 3D world",
+   "Building simulated environments for robot training",
+   "Exporting splats and meshes into existing 3D pipelines"
+  ],
+  "team": [
+   {
+    "name": "Fei-Fei Li",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Justin Johnson",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Christoph Lassner",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Ben Mildenhall",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "game, VR and film creators who want 3D environments quickly",
+    "robotics teams that need varied simulated scenes",
+    "developers who want world generation through an API"
+   ],
+   "not_fit": [
+    "people who need precise CAD or architectural models",
+    "commercial users on a budget: commercial rights start on the Pro plan"
+   ]
+  },
+  "pricing": {
+   "intro": "Marble's plans from its pricing page and documentation, in US dollars per month. Each action uses credits; a basic world from one image uses about 1,580 credits. The World API is billed separately with prepaid credits.",
+   "url": "https://marble.worldlabs.ai/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "7,000 credits a month, up to about 4 world generations; no exports"
+    },
+    {
+     "name": "Standard",
+     "price": "$20/month",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "20,000 credits, up to about 12 worlds; splat exports and collider meshes"
+    },
+    {
+     "name": "Pro",
+     "price": "$35/month",
+     "amount": 35,
+     "currency": "USD",
+     "detail": "40,000 credits, up to about 25 worlds; textured mesh (GLB) export and commercial rights"
+    },
+    {
+     "name": "Max",
+     "price": "$95/month",
+     "amount": 95,
+     "currency": "USD",
+     "detail": "120,000 credits, up to about 75 worlds"
+    }
+   ],
+   "notes": [
+    "Paid plans can buy top-up credits.",
+    "Prices may change after AMD's acquisition closes."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other world-model and 3D generation tools.",
+   "items": [
+    {
+     "name": "Google DeepMind Genie",
+     "url": "https://deepmind.google/",
+     "what": "Google DeepMind's interactive world model research",
+     "difference": "Generates playable worlds frame by frame rather than exportable 3D assets."
+    },
+    {
+     "name": "Luma AI",
+     "url": "https://lumalabs.ai/",
+     "what": "AI video and 3D capture",
+     "difference": "Known for video generation and capturing real scenes in 3D."
+    },
+    {
+     "name": "NVIDIA Cosmos",
+     "url": "https://www.nvidia.com/en-us/ai/cosmos/",
+     "what": "World foundation models for physical AI",
+     "difference": "Aimed at robotics and autonomous-vehicle developers."
+    },
+    {
+     "name": "Physical Intelligence",
+     "url": "https://www.pi.website/",
+     "what": "Foundation models for robot control",
+     "difference": "Controls real robots rather than generating worlds."
+    }
+   ]
+  },
+  "pros": [
+   "Free plan to try",
+   "Exports to standard 3D formats",
+   "Multiple input types, from text to video"
+  ],
+  "cons": [
+   "Commercial rights need the Pro plan",
+   "Pending AMD acquisition adds uncertainty about the product's future"
+  ],
+  "faq": [
+   {
+    "q": "Is Marble free?",
+    "a": "Yes, there is a free plan with 7,000 credits a month, enough for about four worlds, but it cannot export. Paid plans run from $20 to $95 a month."
+   },
+   {
+    "q": "Who founded World Labs?",
+    "a": "Fei-Fei Li, Justin Johnson, Christoph Lassner and Ben Mildenhall founded it in 2024. Li is the CEO."
+   },
+   {
+    "q": "Is AMD buying World Labs?",
+    "a": "Yes. AMD agreed on 28 September 2026 to buy World Labs in an all-stock deal valued at about $8.2 billion, expected to close by the end of 2026."
+   },
+   {
+    "q": "What can I export from Marble?",
+    "a": "Standard adds Gaussian splat exports and collider meshes; Pro adds high-quality textured mesh (GLB) export and commercial rights."
+   }
+  ],
+  "sources": [
+   {
+    "label": "World Labs website",
+    "url": "https://www.worldlabs.ai/"
+   },
+   {
+    "label": "Marble pricing",
+    "url": "https://marble.worldlabs.ai/pricing"
+   },
+   {
+    "label": "World Labs docs: subscriptions and billing",
+    "url": "https://docs.worldlabs.ai/marble/support/account-billing"
+   },
+   {
+    "label": "Data Center Knowledge: AMD to acquire World Labs for $8.2B",
+    "url": "https://datacenterknowledge.com/data-center-chips/amd-to-acquire-world-labs-for-8-2b-to-advance-ai-models-and-robotics"
+   },
+   {
+    "label": "Financier Worldwide: AMD to acquire World Labs",
+    "url": "https://www.financierworldwide.com/fw-news/2026/10/1/amd-to-acquire-world-labs-in-82bn-all-stock-deal"
+   },
+   {
+    "label": "Bloomberg: World Labs in funding talks at $5 billion valuation",
+    "url": "https://bloomberg.com/news/articles/2026-01-23/fei-fei-li-s-ai-startup-world-labs-in-funding-talks-at-5-billion-valuation"
+   }
+  ]
+ }
+}

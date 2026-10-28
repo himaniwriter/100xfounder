@@ -1,0 +1,111 @@
+{
+  "slug": "mintlify-workflows",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/mintlify",
+  "excerpt": "Mintlify Workflows lets an AI agent keep your documentation in sync with your code, on a schedule or on every push. How it works, Mintlify pricing and alternatives.",
+  "content": "<p>Mintlify is a documentation platform used for developer docs, API references and knowledge bases. Workflows, which Mintlify launched on Product Hunt as \"self-updating knowledge bases\", is its feature for keeping those docs current without someone remembering to do it. You give an agent a trigger and instructions; when it runs, it checks what changed and either commits a docs update or opens a pull request for your team to review.</p><p>Mintlify's own blog describes two kinds of trigger: a push to a repository or branch, and a schedule. Typical jobs it lists are drafting changelogs, catching docs that drifted from the code, checking for broken links, style audits and tracking which translations have fallen behind. Instructions are written in Markdown, so they live in version control with the rest of your docs. On the current pricing page the feature appears as Automations, a Pro and Enterprise feature that costs 250 credits per update and nothing when there is nothing to update.</p><p>Mintlify Workflows launched on Product Hunt on 21 May 2026 and finished #2 for the day, with 336 upvotes and 40 comments (as of 14 October 2026). Mintlify itself has 86 reviews on Product Hunt.</p><p><em>We have not tested Mintlify ourselves. This page brings together Mintlify's site, pricing page and blog and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Documentation platform",
+    "platform": "Web app, Git sync and desktop app",
+    "starts_at": "Free Starter plan; Pro from $450/month billed annually",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "AI agent workflows that keep Mintlify documentation in sync with your code on push or on a schedule",
+    "ph": {"rank": 2, "votes": 336, "comments": 40, "followers": 2288, "launched": "2026-05-21", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/b0db73f1-324c-4a7c-bffd-3df1e570273d.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Mintlify via Product Hunt",
+       "alt": "Mintlify desktop app graphic 'Built for people who live in their docs' showing a workspace sidebar and an 'Ask agent' page"},
+      {"url": "https://ph-files.imgix.net/ea40d363-70e2-4e01-b46b-cf13c2bd1dab.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Mintlify via Product Hunt",
+       "alt": "Mintlify analytics screen 'Understand how people and agents use your docs' with a traffic chart"},
+      {"url": "https://ph-files.imgix.net/150027ba-9d3a-40d5-a1df-e675e14c1c45.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080, "credit": "Image: Mintlify via Product Hunt",
+       "alt": "Mintlify desktop app with several docs open in tabs, captioned 'Manage multiple projects and docs at the same time'"}
+    ],
+    "use_cases": [
+      "Drafting a docs update when a pull request changes user-facing behaviour",
+      "Writing a weekly changelog from merged code",
+      "Running scheduled checks for broken links or outdated code examples",
+      "Flagging translations that have fallen behind the source language",
+      "Applying a style guide across the whole docs site"
+    ],
+    "audience": {
+      "fit": [
+        "already host your docs on Mintlify and keep them in Git",
+        "ship often and find your docs drift behind the product",
+        "want agent changes to go through pull-request review rather than publish directly"
+      ],
+      "not_fit": [
+        "are on the free Starter plan: automations, agent and assistant credits are not included",
+        "have a small budget: Pro is $450 a month billed annually",
+        "want a self-hosted or open-source docs tool"
+      ]
+    },
+    "pricing": {
+      "intro": "Workflows (shown as Automations on the pricing page) need Mintlify Pro or Enterprise. Prices are Mintlify's, in US dollars.",
+      "url": "https://www.mintlify.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Starter", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "5 editor seats, custom domain, web editor, authentication, MCP server and API playground; no agent or automations"},
+        {"name": "Pro", "price": "$450/month billed annually ($540 monthly)", "amount": 450, "currency": "USD", "detail": "Unlimited editor seats, agent, assistant, automations, preview deployments and admin APIs; 10,000 credits a month, then $0.01 per credit"},
+        {"name": "Enterprise", "price": "Contact sales", "currency": "USD", "detail": "SSO, SCIM and role-based access, performance SLA, advanced insights, migration and support"}
+      ],
+      "notes": [
+        "Each automation update costs 250 credits and is free when nothing needs updating.",
+        "Pro has a 14-day trial with 5,000 credits and no credit card required."
+      ]
+    },
+    "pros": [
+      "Changes can arrive as pull requests, so your usual review process still applies",
+      "Instructions are Markdown files kept in version control",
+      "Runs on code pushes or on a schedule",
+      "No charge for a run when nothing needs updating"
+    ],
+    "cons": [
+      "Not available on the free plan",
+      "Pro is expensive for small teams",
+      "Only useful if your docs are hosted on Mintlify",
+      "Agent drafts still need a person to review them"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["Clean design out of the box", "Markdown and OpenAPI-based docs", "Easy setup for developers"],
+        "asked": [],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "Mintlify allows us to have beautiful and clear documentation, managed in markdown.", "author": "Mark Phelps (review of Mintlify)", "url": "https://www.producthunt.com/products/mintlify/reviews?review=281357"},
+        {"text": "Mintlify's flexible pricing plans have allowed us to maintain a high level of customization in our documentation.", "author": "Alec Erasmus (review of Mintlify)", "url": "https://www.producthunt.com/products/mintlify/reviews?review=276531"}
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as Mintlify alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "GitBook", "url": "https://www.gitbook.com/", "what": "Docs platform for product and API documentation", "starts_at": "See its pricing page", "ph_rating": 4.65, "ph_reviews": 23, "ph_url": "https://www.producthunt.com/products/gitbookio",
+         "difference": "The closest hosted rival; compare its AI and Git-sync features with Mintlify's automations."},
+        {"name": "Docusaurus", "url": "https://docusaurus.io/", "what": "Open-source static site generator for documentation", "starts_at": "Free, open source", "ph_rating": 4.88, "ph_reviews": 26, "ph_url": "https://www.producthunt.com/products/docusaurus",
+         "difference": "Free and self-hosted, but has no built-in agent to keep docs updated."},
+        {"name": "Slite", "url": "https://slite.com/", "what": "Self-maintaining internal knowledge base", "starts_at": "See its pricing page", "ph_rating": 4.83, "ph_reviews": 18, "ph_url": "https://www.producthunt.com/products/slite",
+         "difference": "Aimed at internal team knowledge rather than public developer docs tied to a code repository."}
+      ],
+      "more": "Product Hunt also lists Notice and Archbee as alternatives."
+    },
+    "reviews": {"count": 86, "rating": 5, "url": "https://www.producthunt.com/products/mintlify/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/mintlify",
+      "x": {"none": "We have not linked posts about Mintlify Workflows on X yet.", "search_url": "https://x.com/search?q=mintlify%20workflows&f=live", "profile_url": "https://twitter.com/mintlify"}
+    },
+    "faq": [
+      {"q": "What are Mintlify Workflows?", "a": "Agent-run jobs that keep Mintlify docs up to date. They run on a push to your repository or on a schedule, and either commit changes or open a pull request for review. The pricing page calls the feature Automations."},
+      {"q": "How much do Mintlify Workflows cost?", "a": "They need the Pro plan ($450 a month billed annually, or $540 monthly) or Enterprise. Each update uses 250 credits; Pro includes 10,000 credits a month, with overages at $0.01 per credit. A run with nothing to update is free."},
+      {"q": "Is there a free Mintlify plan?", "a": "Yes. Starter is free for 5 editor seats with a custom domain and the web editor, but it does not include the agent or automations."},
+      {"q": "Will the agent publish changes without review?", "a": "You choose. Mintlify says changes can be committed directly or opened as a pull request for your team to review."},
+      {"q": "What are the alternatives to Mintlify?", "a": "Product Hunt lists GitBook, Docusaurus, Slite, Notice and Archbee."}
+    ],
+    "sources": [
+      {"label": "Mintlify official site", "url": "https://www.mintlify.com/"},
+      {"label": "Mintlify pricing", "url": "https://www.mintlify.com/pricing"},
+      {"label": "Mintlify blog: Automations", "url": "https://www.mintlify.com/blog/automations"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/mintlify"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/mintlify/reviews"}
+    ]
+  }
+}

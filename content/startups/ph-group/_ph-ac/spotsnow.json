@@ -1,0 +1,390 @@
+{
+ "input": "https://www.producthunt.com/posts/spotsnow",
+ "final_url": "https://www.producthunt.com/products/spotsnow?launch=spotsnow",
+ "launch": {
+  "slug": "spotsnow",
+  "name": "SpotsNow",
+  "tagline": "Track who's advertising across podcasts w/ campaign insights",
+  "featuredAt": "2026-05-28T00:01:00-07:00",
+  "dailyRank": "2",
+  "weeklyRank": "5",
+  "points": 472,
+  "commentsCount": 67,
+  "pricingType": "free",
+  "description": "Track who's advertising on every podcast, what they're spending, and where their campaigns are running — then buy open inventory directly from publishers, all in one place. The competitive intelligence layer for podcast ads.",
+  "makers": [
+   {
+    "name": "Abhishek Thory",
+    "username": "abhishek_thory",
+    "headline": "Founding Engineer @Spotsnow"
+   },
+   {
+    "name": "Jeremy Boudinet",
+    "username": "boudinet",
+    "headline": "Your boy."
+   },
+   {
+    "name": "Aiza Arcilla",
+    "username": "aizuh",
+    "headline": "Media & Campaign Ops"
+   },
+   {
+    "name": "Dishant Miyani",
+    "username": "dishant_miyani18",
+    "headline": "Developer by profession, I build things"
+   },
+   {
+    "name": "Keshav Bagaade",
+    "username": "kshvbgde",
+    "headline": "design engineer"
+   },
+   {
+    "name": "Cam Pritchard",
+    "username": "campritchard",
+    "headline": "CEO and cofounder of SpotsNow. "
+   },
+   {
+    "name": "Sargam Poudel",
+    "username": "sargampoudel",
+    "headline": "I make machine work the way I want"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "98e060c1-583f-46e2-98ab-819228bb31fa.png",
+    "type": "image",
+    "w": 9600,
+    "h": 4800,
+    "video": null
+   },
+   {
+    "uuid": "78191890-86f0-4fcc-8f9a-37c4867a32a4.png",
+    "type": "image",
+    "w": 9600,
+    "h": 4800,
+    "video": null
+   },
+   {
+    "uuid": "6e75a758-c061-4f3d-af04-fcc83ef54c0d.png",
+    "type": "image",
+    "w": 9600,
+    "h": 4800,
+    "video": null
+   },
+   {
+    "uuid": "1a0c6927-f5e1-491f-b4eb-4109cdc010c7.png",
+    "type": "image",
+    "w": 9600,
+    "h": 4800,
+    "video": null
+   },
+   {
+    "uuid": "5a2f5b07-a58c-48b1-bd8e-c5d97829c0a2.png",
+    "type": "image",
+    "w": 3420,
+    "h": 1960,
+    "video": null
+   },
+   {
+    "uuid": "b7b5d02d-4f31-4e52-afe9-867d3216b412.png",
+    "type": "image",
+    "w": 3420,
+    "h": 1958,
+    "video": null
+   },
+   {
+    "uuid": "89a48407-b8e9-46e5-88c2-c29f356023cd.png",
+    "type": "image",
+    "w": 3420,
+    "h": 1952,
+    "video": null
+   },
+   {
+    "uuid": "ef11815f-02d5-43f6-a449-df32cf50957e.png",
+    "type": "image",
+    "w": 1275,
+    "h": 842,
+    "video": null
+   },
+   {
+    "uuid": "2e7552cc-9398-42df-bb3f-5ee8d5959567.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/EDOK9M1n7nY"
+   }
+  ],
+  "links": [
+   "spotsnow.io"
+  ],
+  "badges": [
+   [
+    "weekly",
+    5
+   ],
+   [
+    "daily",
+    2
+   ]
+  ]
+ },
+ "product": {
+  "name": "SpotsNow",
+  "slug": "spotsnow",
+  "tagline": "Track who's advertising across podcasts w/ campaign insights",
+  "description": "Track who's advertising on every podcast, what they're spending, and where their campaigns are running — then buy open inventory directly from publishers, all in one place. The competitive intelligence layer for podcast ads.",
+  "websiteUrl": "https://spotsnow.io",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 1125,
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5364263",
+   "depth": 0,
+   "author": "Cam Pritchard",
+   "username": "campritchard",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 Cam here, founder of SpotsNow. Here's a thing that's always bothered me about podcast advertising: it's one of the only major ad channels where you can't easily answer the basic competitive questions. Who's advertising on my favorite show? What's BetterHelp actually spending on podcasts this quarter? Which new brands just started testing the channel? Which shows are over-indexed on CPG vs. fintech vs. DTC? The data exists. But it's been locked behind enterprise contracts, the UIs feel like 2014, and there's no way to act on what you learn without leaving the tool and writing a bunch of emails. SpotsNow is the version I wanted: Free access to podcast ad spend data across 60,000 shows, with a modern interface that doesn't make you fight it, and (the part I'm genuinely most excited about) a built-in marketplace of open inventory so the second you spot a show that fits your campaign, you can actually request a spot from the publisher right there. A few things we'd love help with today: 1. If you research podcast ads: spotsnow.io is open. Pull up your favorite advertiser or your own brand. Tell us what you wish were there. 2. If you've built Competitor Intelligence to"
+  },
+  {
+   "id": "5408030",
+   "depth": 1,
+   "author": "Ada Johnsen",
+   "username": "ada_johnsen",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@campritchard &nbsp;this is useful angle for podcast ads. The hard part is not only seeing who is advertising where but understanding whether a show is actually a good fit before reaching out. I like that you connect the research side with open inventory. How do you currently estimate fit or confidence for a brand/category match across different podcast shows?"
+  },
+  {
+   "id": "5408883",
+   "depth": 1,
+   "author": "Rohan Chaubey",
+   "username": "rohanrecommends",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "hunter"
+   ],
+   "text": "@campritchard &nbsp;Cam, Jeremy, and the SpotsNow team, many congratulations on the launch. :) How I met the makers I first met the SpotsNow team on a call where they walked me through the product in detail, and it quickly turned into more of a deep-dive than a demo. Their clarity of thinking around podcast ads and the ambition they brought to the roadmap stood out immediately. What is SpotsNow SpotsNow gives you competitive intelligence on podcast ads: you can see who’s advertising on which shows, what they’re spending, and how campaigns are distributed across podcasts. On top of that, it lets you move from research to action by buying open inventory directly from publishers in the same interface. Why I endorse it During the walkthrough, I asked if we could plug SpotsNow’s data into models like Claude to ask specific questions and surface podcast ad opportunities faster... the team confirmed it’s not just possible, it’s very much how they think about the product’s future. The combination of rich data, a clean experience, and a team that’s both ambitious and execution-focused made it an easy decision for me to hunt this product. I’m genuinely happy to see the Product Hunt community"
+  },
+  {
+   "id": "5409816",
+   "depth": 2,
+   "author": "Ankur Jeswani",
+   "username": "ankur_jeswani",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@campritchard &nbsp; @rohanrecommends &nbsp;How do I connect it to Claude and ask questions?"
+  },
+  {
+   "id": "5409825",
+   "depth": 3,
+   "author": "Keshav Bagaade",
+   "username": "kshvbgde",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "hey @ankur_jeswani , you can book a call here to know more on how to connect to Claude: https://cal.com/spotsnow-partnerships-fzfmgm/spotsnow-demo-call"
+  },
+  {
+   "id": "5407384",
+   "depth": 0,
+   "author": "Yannik Galetto",
+   "username": "yannikga",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Also from my side, congrats on the launch, Cam! I agree, the marketplace angle is what makes this genuinely different Quick question: how do you handle attribution for shows that don't use promo codes? Curious if you rely on self-reported data from brands or if there's some crawling/inference magic happening under the hood."
+  },
+  {
+   "id": "5408320",
+   "depth": 1,
+   "author": "Cam Pritchard",
+   "username": "campritchard",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@yannikga &nbsp;great question - we have built in audio pixels. So you can track to the dollar. The pixels are what makes podcasts incredible to advertise on vs. other influencers. Shows put the pixel into the audio file and you just add them to your website (like Meta pixels). Sharing a couple of product shots."
+  },
+  {
+   "id": "5407627",
+   "depth": 0,
+   "author": "Ferdi Sigona",
+   "username": "ferdi_sigona",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats on launching, Cam! Not coming at this as someone who's built competitive-intel tools, more as the \"researches podcast ads / pull up your brand\" person you mentioned. I'm getting an iOS app ready to launch and came at this as a would-be buyer: pulling up specific brands and shows works very well. And I'm excited to try the marketplace features too. One observation that might be relevant to the taxonomy work you said you're investing in: my instinct as a buyer was to navigate by theme — \"relationships,\" \"dating,\" \"wellness\" — to find shows that fit my app. That's not how the tool thinks (it's organized around industry tags / specific advertisers, which makes sense once it clicks)."
+  },
+  {
+   "id": "5408093",
+   "depth": 1,
+   "author": "Dishant Miyani",
+   "username": "dishant_miyani18",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ferdi_sigona &nbsp;Hey Ferdi, we have the audience interest based campaign generation as well as their discovery for the discounted spots, you can either auto generate the campaign for you brand based on your website and demographics + audience interest on https://spotsnow.io or you can discover the discounted spots in here https://spotsnow.io/browse"
+  },
+  {
+   "id": "5408735",
+   "depth": 0,
+   "author": "Natalia Iankovych",
+   "username": "natalia_iankovych",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Very interesting! Can I see not just where a specific company is advertising, but where companies in a whole industry are advertising? In particular, I need to understand where travel startups place their ads and which exact ones they use. Is that possible?"
+  },
+  {
+   "id": "5408746",
+   "depth": 1,
+   "author": "Abhishek Thory",
+   "username": "abhishek_thory",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@natalia_iankovych &nbsp;Yes, totally. You can search by brands, industries, or podcast categories — whatever fits your use case. For travel startups, you can see which companies are advertising, where they’re placing ads, and the specific podcasts they’re using. Here you can find the top brands spending in this category: https://spotsnow.io/industry/leisure,%20travel%20&amp;%20tourism And here are the top podcasts and YouTubers in the leisure category: https://spotsnow.io/top-podcasts-&amp;-youtubers/leisure You can also enter your own brand and create a campaign. We’ll analyze your brand and help find the best podcasts for you to advertise on"
+  },
+  {
+   "id": "5408759",
+   "depth": 2,
+   "author": "Natalia Iankovych",
+   "username": "natalia_iankovych",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@abhishek_thory &nbsp;Very cool! Once we launch our own startup, we’ll become your clients ;)"
+  },
+  {
+   "id": "5408787",
+   "depth": 3,
+   "author": "Abhishek Thory",
+   "username": "abhishek_thory",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@natalia_iankovych &nbsp;We’ll be ready for you when you launch. Good luck with the startup. And feel free to reach out anytime if you want to explore podcast ads early."
+  },
+  {
+   "id": "5408136",
+   "depth": 0,
+   "author": "Lakshminath Reddy Dondeti",
+   "username": "lakshminath_dondeti",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Do you measure business outcomes in addition to impressions, views, and clicks?"
+  },
+  {
+   "id": "5408332",
+   "depth": 1,
+   "author": "Dishant Miyani",
+   "username": "dishant_miyani18",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@lakshminath_dondeti &nbsp;Yep, we already support this. SpotsNow has tracking system that you can configure directly inside the platform. The goal is to make attribution and performance tracking seamless!"
+  },
+  {
+   "id": "5408285",
+   "depth": 0,
+   "author": "Zakaria empire",
+   "username": "zakaria_empire",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "GG pour le launch Rohan 🚀 Question rapide : comment vous gérez la partie qualification des créateurs côté SpotsNow ? On voit que 80% des galères sur les plateformes UGC viennent pas du matching, mais du fait que l’agent/outillage derrière plante à l’étape vérification des briefs + envoi auto. On a réglé ça avec [Nom de ton outil] et le taux de réponse des créateurs est passé de 22% à 68%. Tu penses que c’est un problème que vous allez toucher aussi en scalant ?"
+  },
+  {
+   "id": "5408426",
+   "depth": 1,
+   "author": "Abhishek Thory",
+   "username": "abhishek_thory",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@olivier_jury &nbsp;Merci, Oliver. Nous disposons d'un processus complet de vérification et de gestion des créateurs. Ainsi, les créateurs procèdent d'abord à leur vérification, après quoi ils ont accès à la plateforme."
+  },
+  {
+   "id": "5408475",
+   "depth": 1,
+   "author": "Zakaria empire",
+   "username": "zakaria_empire",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@abhishek_thory Olivier’s right - verification is where UGC platforms break down. The pain is worse when you manage 10+ creator accounts. Most tools make you re-verify for every client. We built Supaboard to centralize verification + account management so you verify once, then switch across clients. Abhishek, how do you handle creators working with multiple brands on SpotsNow?"
+  },
+  {
+   "id": "5409098",
+   "depth": 0,
+   "author": "Samir Asadov",
+   "username": "samir_asadov",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The \"data exists but was locked behind enterprise contracts\" framing is exactly the gap I keep seeing in adjacent markets too. Coming from finance content creation — I run the ModeLoop Podcast on Spotify ( https://open.spotify.com/show/0m1oR8AyQv17DVpc5MmirG ) — the thing podcasters in any niche struggle with isn't measuring downloads, it's understanding the competitive ad picture in their category. SpotsNow giving the publisher side the \"who else is being advertised on shows in your topic\" view would be a meaningful unlock — and the open-inventory marketplace closes the loop nicely. Curious if you're planning category-level benchmarks (e.g. average CPM ranges by topic vertical) for smaller publishers who don't have direct comps."
+  }
+ ]
+}

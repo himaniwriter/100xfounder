@@ -1,0 +1,74 @@
+{
+ "slug": "shipbob",
+ "website": "https://www.shipbob.com/",
+ "excerpt": "ShipBob runs e-commerce fulfilment for online brands: storage, pick and pack, shipping and returns across its warehouse network. Pricing is quote-based.",
+ "content": "<p>ShipBob is a Chicago company that handles order fulfilment for e-commerce brands. A brand sends its inventory to ShipBob's fulfilment centres; when a customer orders from the brand's online store or marketplace channel, ShipBob picks, packs and ships the order and handles returns. Its website pitches fast delivery promises such as two-day shipping, branded unboxing, omnichannel and international fulfilment, and spreading inventory across its network to cut shipping costs and times. It also offers B2B and wholesale fulfilment, kitting, and its own warehouse management system for brands that run their own warehouses, plus integrations with e-commerce platforms and ERPs such as NetSuite.</p><p>Dhruv Saxena (CEO) and Divey Gulati founded ShipBob. When it raised its Series E in 2021, TechCrunch reported that it worked with some 5,000 e-commerce businesses and ran around 20 fulfilment centres across the US, Canada, Europe and Australia, with plans for 10 more.</p><h2>Funding</h2><p>On 29 June 2021 ShipBob announced a $200 million Series E led by Bain Capital Ventures, valuing it at more than $1 billion, double its Series D valuation from September 2020. Built In Chicago reported that SoftBank, Menlo Ventures and Hyde Park Venture Partners also took part.</p><h2>Pricing</h2><p>ShipBob does not publish rates. Its pricing page says all quotes are customised and lists the standard fee types: receiving, storage, pick and pack, shipping (which depends on weight, size, destination and speed) and a flat fee per return. It says its software and integrations are free for customers and that standard boxes, mailers and labels are included at no charge, while kitting and B2B/EDI work are quoted separately.</p><h2>Who it suits</h2><p>ShipBob suits direct-to-consumer brands that have outgrown packing orders themselves and want a network of warehouses without running one. Very small sellers with only a few orders a month may find a quote-based 3PL more than they need.</p><p><em>We have not used ShipBob. This page is based on ShipBob's website and pricing page (checked 15 October 2026), TechCrunch and Built In Chicago.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "E-commerce fulfilment (3PL)",
+  "platform": "Fulfilment network plus web dashboard",
+  "starts_at": "Custom quote",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Outsourced warehousing, pick and pack, shipping and returns for online brands",
+  "maker": {"name": "ShipBob", "url": "https://www.shipbob.com/"},
+  "team": [
+   {"name": "Dhruv Saxena", "role": "Co-founder and CEO", "url": "https://techcrunch.com/2021/06/29/shipbob-nabs-200m-at-a-1b-valuation-to-help-e-commerce-companies-run-logistics-like-amazons"},
+   {"name": "Divey Gulati", "role": "Co-founder", "url": "https://techcrunch.com/2021/06/29/shipbob-nabs-200m-at-a-1b-valuation-to-help-e-commerce-companies-run-logistics-like-amazons"}
+  ],
+  "gallery": [
+   {"url": "https://www.shipbob.com/wp-content/uploads/2026/08/bdc7b053507f5cd15183b3e6138e3d37.png", "alt": "The ShipBob logo, a blue box outline beside the ShipBob wordmark, on a dark navy background", "credit": "Image: ShipBob", "w": 1200, "h": 628},
+   {"url": "https://www.shipbob.com/wp-content/uploads/2019/12/fulfillment-center-shipbob.jpg?w=1280px", "alt": "Tall blue warehouse racks stacked with cardboard boxes on pallets along a long aisle, from a ShipBob article about fulfilment centres", "credit": "Image: ShipBob", "w": 1280, "h": 550}
+  ],
+  "use_cases": [
+   "Outsourcing pick, pack and ship for an online store or marketplace",
+   "Offering two-day delivery by placing stock in several warehouses",
+   "Handling returns for an online brand",
+   "Fulfilling wholesale and retail (B2B) orders alongside direct orders",
+   "Running your own warehouse on ShipBob's warehouse management software"
+  ],
+  "audience": {
+   "fit": [
+    "run a direct-to-consumer e-commerce brand with steady order volume",
+    "want faster delivery without building your own warehouses",
+    "sell across several channels and want inventory in one place"
+   ],
+   "not_fit": [
+    "ship only a handful of orders a month",
+    "need published per-order rates before talking to sales"
+   ]
+  },
+  "pricing": {
+   "intro": "ShipBob's pricing is quote-based. Its pricing page lists the fee types but not the amounts.",
+   "plans": [
+    {"name": "Receiving", "price": "Quoted", "detail": "Charged when inventory arrives"},
+    {"name": "Storage", "price": "Quoted", "detail": "Based on space used"},
+    {"name": "Pick and pack", "price": "Quoted", "detail": "Per order"},
+    {"name": "Shipping", "price": "Varies", "detail": "By weight, size, destination and service level"},
+    {"name": "Returns", "price": "Flat fee (amount not published)", "detail": "Applied when a return reaches a fulfilment centre"}
+   ],
+   "notes": ["Software and integrations are free for customers.", "Standard boxes, mailers, tape and labels are included; kitting and B2B/EDI are quoted separately.", "ShipBob's WMS is priced on a separate page."],
+   "url": "https://www.shipbob.com/pricing/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other fulfilment options for online brands.",
+   "items": [
+    {"name": "Amazon Multi-Channel Fulfillment", "url": "https://supplychain.amazon.com/", "what": "Amazon's fulfilment for orders from other sales channels", "tags": ["Fulfilment"], "starts_at": "See its own pricing page", "difference": "Uses Amazon's network; branded packaging options are limited."},
+    {"name": "ShipMonk", "url": "https://www.shipmonk.com/", "what": "E-commerce fulfilment provider", "tags": ["3PL"], "starts_at": "See its own pricing page", "difference": "Similar 3PL model with its own warehouse network."},
+    {"name": "Red Stag Fulfillment", "url": "https://redstagfulfillment.com/", "what": "Fulfilment for heavy and high-value products", "tags": ["3PL"], "starts_at": "See its own pricing page", "difference": "Specialises in large, heavy or valuable items."}
+   ]
+  },
+  "faq": [
+   {"q": "How much does ShipBob cost?", "a": "ShipBob does not publish rates; it quotes receiving, storage, pick and pack, shipping and returns fees for each customer."},
+   {"q": "Who founded ShipBob?", "a": "Dhruv Saxena, the CEO, and Divey Gulati."},
+   {"q": "How much is ShipBob worth?", "a": "Its $200 million Series E in June 2021 valued it at more than $1 billion."},
+   {"q": "Does ShipBob charge for its software?", "a": "Its pricing page says the software and integrations are free for fulfilment customers; its standalone WMS is priced separately."}
+  ],
+  "sources": [
+   {"label": "ShipBob website", "url": "https://www.shipbob.com/"},
+   {"label": "ShipBob pricing", "url": "https://www.shipbob.com/pricing/"},
+   {"label": "TechCrunch: ShipBob nabs $200M at a $1B+ valuation (29 Jun 2021)", "url": "https://techcrunch.com/2021/06/29/shipbob-nabs-200m-at-a-1b-valuation-to-help-e-commerce-companies-run-logistics-like-amazons"},
+   {"label": "Built In Chicago: ShipBob raises $200M Series E", "url": "https://www.builtinchicago.org/articles/shipbob-200m-series-e-hiring"}
+  ]
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "slug": "stacker",
+ "website": "https://stacker.ai/",
+ "excerpt": "Stacker is a London company that began as a no-code tool for turning spreadsheets into apps and now sells an AI platform for internal tools, CRMs and dashboards.",
+ "content": "<p>Stacker started as a no-code tool that turned a spreadsheet or database, such as Google Sheets, Airtable, a SQL database or Salesforce, into a working web app with logins and permissions, so business teams could build internal tools and customer portals without developers. Its website now calls it an AI-native application platform for building internal tools, CRMs and dashboards, with AI agents that do tasks such as summaries, CRM updates, outbound email, research and media generation, connected to more than 2,000 integrations.</p><p>Stacker is based in London. Y Combinator's directory says it was founded in 2017, went through YC in summer 2020, and lists Michael Skelly as founder. Tech.eu reported a £1 million seed round in 2019 led by Pentech, describing it as founded by three British developers. TechCrunch reported a $1.7 million round in January 2021 and, in August 2021, a $20 million Series A led by Andreessen Horowitz with Initialized Capital, Y Combinator and Pentech, bringing its total to about $23 million.</p><p>Stacker publishes its prices. There is one plan with every feature, sold by monthly credits: it starts at $50 a month for 250 credits, rising to $2,000 a month for 10,000 credits, with no per-seat fees. New accounts get $100 of free credits without a credit card. Simple tasks use 1 to 3 credits and larger projects 20 to 50.</p><p><em>We have not used Stacker for this page. It brings together Stacker's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Internal tools and AI agents",
+  "platform": "Web",
+  "starts_at": "$50/month (250 credits); $100 free trial credits",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI platform for building internal tools, CRMs, dashboards and customer portals",
+  "maker": {
+   "name": "Stacker",
+   "url": "https://stacker.ai/"
+  },
+  "team": [
+   {
+    "name": "Michael Skelly",
+    "role": "Founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://webfiles.stacker.ai/stacker_slack_logo.png",
+    "alt": "Stacker logo: a white geometric mark of two stacked, interlocking shapes on black",
+    "credit": "Logo: Stacker (stacker.ai)",
+    "w": 512,
+    "h": 512
+   },
+   {
+    "url": "https://stacker.ai/media-generation-example.png",
+    "alt": "Example of AI media generation from Stacker's website: an ad for a fictional lip and cheek tint brand called LUMA",
+    "credit": "Image: Stacker (stacker.ai)",
+    "w": 819,
+    "h": 1024
+   }
+  ],
+  "use_cases": [
+   "Building an internal tool or CRM on top of existing data",
+   "Creating customer or partner portals",
+   "Automating CRM updates and summaries with AI agents",
+   "Generating reports and dashboards",
+   "Drafting outbound emails and research"
+  ],
+  "audience": {
+   "fit": [
+    "operations and business teams without developers",
+    "small and mid-size companies that want one tool shared by the whole team",
+    "teams with data in spreadsheets, Airtable or Salesforce"
+   ],
+   "not_fit": [
+    "engineering teams that prefer to build tools in code",
+    "anyone who needs predictable per-seat pricing rather than credits"
+   ]
+  },
+  "pricing": {
+   "intro": "Stacker's pricing page lists a single plan sold by monthly credits.",
+   "url": "https://stacker.ai/pricing",
+   "plans": [
+    {
+     "name": "Free trial",
+     "price": "$100 in credits",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "No credit card required"
+    },
+    {
+     "name": "Standard",
+     "price": "From $50/month",
+     "amount": 50,
+     "currency": "USD",
+     "detail": "250 credits; up to 10,000 credits for $2,000/month"
+    }
+   ],
+   "notes": [
+    "No per-seat charge; the whole team shares credits. Monthly credits reset each cycle.",
+    "The page labels current prices as early-bird pricing."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "No per-seat pricing",
+   "Free trial credits without a card",
+   "Connects to a large number of data sources"
+  ],
+  "cons": [
+   "Credit-based pricing makes costs harder to predict",
+   "The product has changed a lot from its no-code origins"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Stacker. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Retool",
+     "url": "https://retool.com/",
+     "what": "Platform for building internal tools",
+     "starts_at": "See its own website",
+     "difference": "Developer-oriented, with code where you need it."
+    },
+    {
+     "name": "Softr",
+     "url": "https://www.softr.io/",
+     "what": "No-code apps and portals on top of Airtable and other data",
+     "starts_at": "See its own website",
+     "difference": "Closest to Stacker's original no-code portal product."
+    },
+    {
+     "name": "Glide",
+     "url": "https://www.glideapps.com/",
+     "what": "No-code apps from spreadsheets",
+     "starts_at": "See its own website",
+     "difference": "Builds apps from spreadsheets, with a strong mobile focus."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Stacker?",
+    "a": "An AI platform for building internal tools, CRMs, dashboards and portals on your existing data. It began as a no-code spreadsheet-to-app builder."
+   },
+   {
+    "q": "How much does Stacker cost?",
+    "a": "From $50 a month for 250 credits, with $100 of free trial credits. There are no per-seat fees."
+   },
+   {
+    "q": "Who founded Stacker?",
+    "a": "Y Combinator lists Michael Skelly as founder; Tech.eu said the company was founded by three British developers."
+   },
+   {
+    "q": "Who invested in Stacker?",
+    "a": "Andreessen Horowitz led its $20 million Series A in 2021, TechCrunch reported."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Stacker pricing",
+    "url": "https://stacker.ai/pricing"
+   },
+   {
+    "label": "Y Combinator: Stacker",
+    "url": "https://www.ycombinator.com/companies/stacker"
+   },
+   {
+    "label": "TechCrunch: Stacker raises $20M Series A",
+    "url": "https://techcrunch.com/2021/08/18/stacker-raises-20m-series-a-for-no-code-software-tool-for-business-units/"
+   },
+   {
+    "label": "TechCrunch: Stacker raises $1.7M",
+    "url": "https://techcrunch.com/2021/01/26/stacker-raises-1-7m-to-help-nocoders-build-apps-from-spreadsheets/"
+   },
+   {
+    "label": "Tech.eu: Stacker raises £1 million seed",
+    "url": "https://tech.eu/2019/10/22/stacker-raises-1-million-seed-to-enable-anyone-to-build-their-own-app/"
+   }
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "slug": "pass-designer",
+ "excerpt": "Pass Designer is Apple's free beta Mac app for designing Apple Wallet passes and previewing them exactly as iPhone and Apple Watch show them. Requirements, what it does and alternatives.",
+ "content": "<p>Pass Designer is a Mac app from Apple for designing Apple Wallet passes, such as boarding passes, event tickets, coupons, store cards and membership cards. You start from one of Apple's templates or your own design, and a live preview shows the pass exactly as it will appear on iPhone and Apple Watch, using the same rendering as iOS and watchOS.</p><p>It covers six pass styles, including the new poster-style generic pass, and generates eight barcode types, from QR and PDF417 to EAN-13. You can edit colours and fields, add images at the sizes each pass needs, and edit the semantic tags that let Siri Suggestions, Calendar and Maps understand a boarding pass or event ticket. It validates your pass as you work, flagging missing keys, and can build a backward-compatible version for older iOS releases.</p><p>Pass Designer saves a pass template, not a finished pass. To give a pass to customers, you sign it with an Apple-issued certificate from an Apple developer account, using Apple's Pass Builder package or by hand. Apple introduced Pass Designer at WWDC26 and still labels it a beta. It appeared on Product Hunt on 4 October 2026, under Apple's product page, with 112 upvotes.</p><p><em>We have not tested Pass Designer ourselves. This page brings together Apple's product page, documentation and WWDC session, its Product Hunt listing and the official pages of comparable services, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Developer tools",
+  "platform": "Mac app (beta)",
+  "os": "macOS 27 or later; Apple Account sign-in to download",
+  "starts_at": "Free beta",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Apple's free beta Mac app for designing and previewing Apple Wallet passes",
+  "maker": {
+   "name": "Apple",
+   "url": "https://developer.apple.com/pass-designer/"
+  },
+  "ph": {
+   "votes": 112,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Designing a boarding pass, event ticket, coupon, store card or membership card for Apple Wallet",
+   "Previewing exactly how a pass will look on iPhone and Apple Watch before you ship it",
+   "Adding semantic tags so Siri Suggestions, Calendar and Maps can use a boarding pass or ticket",
+   "Checking a pass for missing or unexpected fields before signing it"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer or designer building Apple Wallet passes for an airline, venue, shop or membership scheme",
+    "already have, or can get, access to an Apple developer account with a Pass Type ID certificate",
+    "want an accurate preview without writing pass JSON by hand"
+   ],
+   "not_fit": [
+    "need Google Wallet or Samsung Wallet passes too: Pass Designer is for Apple Wallet only (PassKit, Passcreator and Pass2U cover several wallets)",
+    "want a hosted service that issues and updates passes for you: Pass Designer only designs templates",
+    "can't run macOS 27"
+   ]
+  },
+  "pricing": {
+   "intro": "Pass Designer is a free download from Apple's developer site. Apple does not state a price for the tool.",
+   "url": "https://developer.apple.com/pass-designer/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Beta",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Sign in with an Apple Account; if prompted, complete the free registration and accept the Apple Developer Agreement"
+    }
+   ],
+   "notes": [
+    "Distributing real passes requires signing them with an Apple-issued certificate tied to an Apple developer account. Creating that certificate needs the Account Holder or Admin role. Check Apple's developer programme page for membership costs.",
+    "Pass Designer saves a .pkpasstemplate bundle, which is not a signed pass. Signing is done with Apple's Pass Builder package or manually."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists no alternatives for this launch. These are services that also create Apple Wallet passes; prices are what each one's own pricing page states, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "PassKit",
+     "url": "https://passkit.com/",
+     "what": "Hosted platform for creating, issuing and updating Apple Wallet and Google Wallet passes",
+     "starts_at": "Platform fee plus pass volume; see its pricing page",
+     "difference": "Hosts, issues and updates passes and supports Google Wallet. Pass Designer is a free design tool for Apple Wallet only."
+    },
+    {
+     "name": "Passcreator",
+     "url": "https://www.passcreator.com/en/",
+     "what": "Web service for loyalty cards, tickets, gift and membership cards on Apple, Google and Samsung Wallet",
+     "starts_at": "Free plan with 5 active registrations; paid tiers via its pricing page",
+     "difference": "Web-based, works across three wallets and bills by passes saved to devices."
+    },
+    {
+     "name": "Pass2U",
+     "url": "https://www.pass2u.net/",
+     "what": "Create, distribute and update wallet passes with loyalty, redemption and analytics",
+     "starts_at": "50 free credits; pay-as-you-go from $50 for 8,000 credits; Premium from $39/month",
+     "difference": "Hosted distribution billed by credits or active passes."
+    }
+   ]
+  },
+  "pros": [
+   "Free, from Apple",
+   "Preview uses the same rendering as iOS and watchOS",
+   "Validation flags missing or unexpected pass fields as you work",
+   "Semantic tags editable without code, with automatic backward-compatible versions",
+   "Generates eight barcode types in the app"
+  ],
+  "cons": [
+   "Still a beta, and needs macOS 27 or later",
+   "Apple Wallet only",
+   "Produces unsigned templates; signing and distribution need a developer account and separate tooling",
+   "No hosting, issuing or updating of passes"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/apple?launch=pass-designer",
+   "x": {
+    "none": "We found no posts about Pass Designer on X to link yet.",
+    "search_url": "https://x.com/search?q=%22Pass%20Designer%22%20Wallet&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Pass Designer free?",
+    "a": "Yes. It is a free beta download from Apple's developer site; you sign in with an Apple Account and accept the Apple Developer Agreement if prompted."
+   },
+   {
+    "q": "What do I need to run it?",
+    "a": "A Mac running macOS 27 or later."
+   },
+   {
+    "q": "Does Pass Designer sign passes?",
+    "a": "No. It saves a .pkpasstemplate bundle. You sign and build the pass with Apple's Pass Builder package or manually, using an Apple-issued certificate from your developer account."
+   },
+   {
+    "q": "Which pass types does it support?",
+    "a": "Six: boarding pass (air, train, boat, bus or generic), coupon, generic, store card, event ticket and the new poster-style generic pass."
+   },
+   {
+    "q": "Which images does a pass need?",
+    "a": "PNG files at 2x and 3x; the app tells you which images each pass type needs. Apple's documentation lists sizes such as a 38 by 38 point icon."
+   },
+   {
+    "q": "Where can I see it demonstrated?",
+    "a": "In Apple's WWDC26 session \"What's new in Wallet\" (session 209), which covers Pass Designer from 5:47 to 10:40."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Pass Designer (Apple Developer)",
+    "url": "https://developer.apple.com/pass-designer/"
+   },
+   {
+    "label": "Creating a pass with Pass Designer (Apple documentation)",
+    "url": "https://developer.apple.com/documentation/walletpasses/creating-a-pass-with-pass-designer"
+   },
+   {
+    "label": "WWDC26 session 209: What's new in Wallet",
+    "url": "https://developer.apple.com/videos/play/wwdc2026/209/"
+   },
+   {
+    "label": "Apple Wallet: get started",
+    "url": "https://developer.apple.com/wallet/get-started/"
+   },
+   {
+    "label": "Create Wallet identifiers and certificates",
+    "url": "https://developer.apple.com/help/account/capabilities/create-wallet-identifiers-and-certificates/"
+   },
+   {
+    "label": "Product Hunt launch under Apple",
+    "url": "https://www.producthunt.com/products/apple?launch=pass-designer"
+   },
+   {
+    "label": "PassKit pricing",
+    "url": "https://passkit.com/pricing/"
+   },
+   {
+    "label": "Passcreator",
+    "url": "https://www.passcreator.com/en/"
+   },
+   {
+    "label": "Pass2U pricing",
+    "url": "https://www.pass2u.net/pricing"
+   }
+  ]
+ }
+}

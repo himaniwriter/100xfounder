@@ -1,0 +1,199 @@
+{
+ "slug": "mux",
+ "website": "https://www.mux.com/",
+ "excerpt": "Mux is a video API for developers: upload, encode, stream live and on-demand video and measure playback quality with Mux Data. Free tier available; valued at over $1B after a 2021 Series D.",
+ "content": "<p>Mux gives software teams video infrastructure through an API. Instead of building their own encoding, storage and delivery pipeline, developers send video to Mux and get back a stream they can play in their app or website, for both on-demand video and live streaming. Mux also offers video performance analytics, and its plans include Mux Robots units for automated video tasks. Its website pitches it as a way to ship high-performance, cost-effective video in minutes, for websites, platforms and AI workflows.</p><p>Mux was founded in 2015 by Jon Dahl, Steve Heffernan, Matthew McClure and Adam Brown, according to Wikipedia. Dahl and Heffernan had earlier founded Zencoder, a cloud encoding company sold to Brightcove in 2012. Mux went through Y Combinator in 2016 and is based in San Francisco; Dahl is CEO. In April 2021 Mux raised a Series D of about $105 million led by Coatue, with Accel, Andreessen Horowitz and Cobalt returning and Dragoneer joining, which valued the company at over $1 billion, Pulse 2.0 and Streaming Media reported. The company said the money would help it hire and ship features that let developers add live and on-demand video without managing infrastructure.</p><p>Mux publishes usage-based pricing. A free plan includes 100,000 delivery minutes a month and up to 10 stored videos, on-demand only. A pay-as-you-go plan adds live video and unlimited storage with a $20 monthly usage credit. Credit-based plans cost $20 a month for $100 of credit (Launch) and $500 a month for $1,000 of credit (Scale), after which usage billing applies; enterprise plans add volume discounts, SLAs and 24/7 support. No credit card is needed to start.</p><p>This profile draws on Mux's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Video API and streaming infrastructure",
+  "platform": "API and SDKs (web, iOS, Android)",
+  "starts_at": "Free tier; credit plans from $20/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "API for encoding, streaming and analysing live and on-demand video",
+  "maker": {
+   "name": "Mux, Inc.",
+   "url": "https://www.mux.com/"
+  },
+  "team": [
+   {
+    "name": "Jon Dahl",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Steve Heffernan",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Matthew McClure",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Adam Brown",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/2ejqxsnu/production/168691e89496a8f38a96f9804b97590d50266384-1344x896.png",
+    "alt": "Black-and-white photo of a laptop playing a video of a woman, with an on-screen prompt asking Interested in hearing more? and a Continue button",
+    "credit": "Image: Mux",
+    "w": 1344,
+    "h": 896
+   },
+   {
+    "url": "https://cdn.sanity.io/images/2ejqxsnu/production/afe7aa10af7f1718cf7464931bca1d48f14d0695-1344x896.jpg",
+    "alt": "Black-and-white photo of hands holding a phone that plays a short vertical video of a woman in a polka-dot top inside an app",
+    "credit": "Image: Mux",
+    "w": 1344,
+    "h": 896
+   }
+  ],
+  "use_cases": [
+   "Adding on-demand video upload and playback to an app",
+   "Live streaming events or classes from a product",
+   "Measuring video performance with Mux's analytics",
+   "Automating video processing workflows",
+   "Replacing an in-house encoding and CDN pipeline"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer adding video to a website, app or platform",
+    "want usage-based pricing without building video infrastructure",
+    "need analytics on how video actually plays for users"
+   ],
+   "not_fit": [
+    "want a no-code video hosting site for marketing videos",
+    "have very predictable huge volumes where your own CDN deals may be cheaper"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices from Mux's official pricing page. No credit card is required to start.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "100K delivery minutes and 100K Mux Robots units a month, up to 10 stored videos, on-demand only"
+    },
+    {
+     "name": "Pay as you go",
+     "price": "Usage-based, with $20 monthly credit",
+     "detail": "On-demand and live video, no storage limit"
+    },
+    {
+     "name": "Launch",
+     "price": "$20/month for $100 credit",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "Usage billing after credits are used"
+    },
+    {
+     "name": "Scale",
+     "price": "$500/month for $1,000 credit",
+     "amount": 500,
+     "currency": "USD",
+     "detail": "Usage billing after credits are used"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Talk to sales",
+     "detail": "Volume discounts over $3K a month, SLAs, 24/7 support"
+    }
+   ],
+   "notes": [
+    "Credit plans include 100K delivery minutes and 100K Mux Robots units a month."
+   ],
+   "url": "https://www.mux.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Generous free tier and published pricing",
+   "Live and on-demand video plus analytics in one API",
+   "Founders with deep video infrastructure experience"
+  ],
+  "cons": [
+   "Costs grow with usage beyond plan credits",
+   "Developer-focused; needs engineering work"
+  ],
+  "alternatives": {
+   "intro": "Other video APIs and streaming platforms. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Cloudflare Stream",
+     "url": "https://www.cloudflare.com/products/cloudflare-stream/",
+     "what": "Video storage, encoding and delivery from Cloudflare",
+     "tags": [
+      "Video API"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Bundled with Cloudflare's network and pricing."
+    },
+    {
+     "name": "api.video",
+     "url": "https://api.video/",
+     "what": "Video API for upload, live streaming and delivery",
+     "tags": [
+      "Video API"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "European-based like-for-like rival."
+    },
+    {
+     "name": "AWS Elemental MediaConvert",
+     "url": "https://aws.amazon.com/mediaconvert/",
+     "what": "File-based video transcoding on AWS",
+     "tags": [
+      "Encoding"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Lower-level building block; you assemble the pipeline."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Does Mux have a free plan?",
+    "a": "Yes: 100,000 delivery minutes a month and up to 10 stored videos, on-demand only, per its pricing page."
+   },
+   {
+    "q": "Who founded Mux?",
+    "a": "Jon Dahl, Steve Heffernan, Matthew McClure and Adam Brown, in 2015, according to Wikipedia. Dahl and Heffernan previously founded Zencoder."
+   },
+   {
+    "q": "Is Mux a unicorn?",
+    "a": "Yes. Its 2021 Series D of about $105 million, led by Coatue, valued it at over $1 billion."
+   },
+   {
+    "q": "Does Mux support live streaming?",
+    "a": "Yes, on paid and pay-as-you-go plans; the free plan is on-demand only."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Mux pricing page",
+    "url": "https://www.mux.com/pricing"
+   },
+   {
+    "label": "Mux website",
+    "url": "https://www.mux.com/"
+   },
+   {
+    "label": "Pulse 2.0: Mux $105 million Series D and over $1 billion valuation (2021)",
+    "url": "https://pulse2.com/mux-105-million-series-d-funding-and-over-1-billion-valuation/"
+   },
+   {
+    "label": "Streaming Media: Mux raises $105 million in Series D",
+    "url": "https://streamingmedia.com/Articles/News/Online-Video-News/Mux-Raises-$105-Million-in-Series-D-Funding-146614.aspx"
+   },
+   {
+    "label": "Y Combinator blog: Mux",
+    "url": "https://www.ycombinator.com/blog/mux/"
+   },
+   {
+    "label": "Wikipedia: Mux (company)",
+    "url": "https://en.wikipedia.org/wiki/Mux_(company)"
+   }
+  ]
+ }
+}

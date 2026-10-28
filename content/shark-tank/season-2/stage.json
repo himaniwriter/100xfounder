@@ -1,0 +1,165 @@
+{
+  "name": "STAGE",
+  "slug": "stage",
+  "existing_listing_slug": null,
+  "website": "https://www.stage.in",
+  "tagline": "Streaming platform for films and shows in Indian dialects",
+  "industry_term": "video-streaming",
+  "excerpt": "STAGE, an OTT app for Indian dialect content such as Haryanvi, raised a mix of equity and debt from three sharks in Shark Tank India Season 2.",
+  "content": "<p>STAGE is a subscription streaming app built around regional dialects, starting with Haryanvi films, series and music. Its founders, Vinay Singhal, Parveen Singhal and Shashank Vaishnav, previously built the content site WittyFeed.</p><p>On Shark Tank India Season 2, Episode 3, the founders asked for ₹3 crore for 1%. They left with ₹3 crore in equity and debt at a ₹250 crore valuation from Namita Thapar, Aman Gupta and Peyush Bansal, according to Business Today. Half of the money, ₹1.5 crore, was debt, which Business Today later reported carried 18% interest, the highest rate offered that season.</p><p>Since the show, STAGE's filings show fast growth. Entrackr reported revenue from operations of ₹111 crore for FY25, based on documents filed with the Registrar of Companies, up from ₹18 crore a year earlier, while losses also grew. Inc42 reported in December 2024 that the company was raising ₹84.61 crore in Series B shares, led by Goodwater Capital and Blume Ventures.</p><p>The pitch is a reminder that a high asking valuation can still close when part of the cheque is structured as debt.</p>",
+  "shark_tank": {
+    "season": 2,
+    "episode": 3,
+    "ask_amount": 30000000,
+    "ask_equity": 1,
+    "ask_valuation": 3000000000,
+    "deal": {
+      "made": true,
+      "amount": 15000000,
+      "equity": 0.6,
+      "implied_valuation": 2500000000,
+      "sharks": [
+        "Namita Thapar",
+        "Aman Gupta",
+        "Peyush Bansal"
+      ],
+      "terms": "Plus ₹1.5 crore debt; Business Today reported the interest rate as 18%"
+    },
+    "founders": [
+      "Vinay Singhal",
+      "Parveen Singhal",
+      "Shashank Vaishnav"
+    ],
+    "category": "Regional OTT streaming",
+    "pitch_summary": "The founders pitched a dialect-first streaming app and asked for ₹3 crore for 1%. Three sharks invested ₹3 crore split between equity and debt at a ₹250 crore valuation.",
+    "sources": [
+      {
+        "label": "Outlook: Shark Tank India: Vinay Kumar Singhal hopes for funds for his regional contents' OTT platform",
+        "url": "https://www.outlookindia.com/art-entertainment/-shark-tank-india-vinay-kumar-singhal-hopes-for-funds-for-his-regional-contents-ott-platform-news-250835"
+      },
+      {
+        "label": "Business Today: How these co-founders fought depression, bounced back to build a Rs 250 crore company (2023-01-05)",
+        "url": "https://www.businesstoday.in/entrepreneurship/story/shark-tank-india-2-how-these-co-founders-fought-depression-bounced-back-to-build-a-rs-250-crore-company-359003-2023-01-05"
+      },
+      {
+        "label": "Business Today: 'Keep hustling,' says boAt's Aman Gupta to STAGE founders (2023-01-06)",
+        "url": "https://www.businesstoday.in/latest/corporate/story/shark-tank-india-2-keep-hustling-says-boats-aman-gupta-to-stage-founders-359143-2023-01-06"
+      },
+      {
+        "label": "Business Today: 'Are they sharks or loan sharks?' Every 3rd deal on Shark Tank India is a debt deal (2023-03-06)",
+        "url": "https://www.businesstoday.in/entrepreneurship/news/story/are-they-sharks-or-loan-sharks-every-3rd-deal-on-shark-tank-india-is-a-debt-deal-372398-2023-03-06"
+      },
+      {
+        "label": "SET India (official YouTube): Shark Tank India 2, Ep 3 full episode",
+        "url": "https://www.youtube.com/watch?v=YW58a21pb8M"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Entrackr: OTT platform Stage's revenue jumps 6X to Rs 111 Cr in FY25 (2026-02-14)",
+      "url": "https://entrackr.com/fintrackr/ott-platform-stages-revenue-jumps-6x-to-rs-111-cr-in-fy25-11106217"
+    },
+    "latest_revenue": {
+      "value": 1110000000,
+      "fiscal_year": "FY25",
+      "label": "Revenue from operations",
+      "date": "2026-02-14",
+      "source": {
+        "label": "Entrackr: OTT platform Stage's revenue jumps 6X to Rs 111 Cr in FY25 (RoC filings)",
+        "url": "https://entrackr.com/fintrackr/ott-platform-stages-revenue-jumps-6x-to-rs-111-cr-in-fy25-11106217"
+      }
+    },
+    "latest_funding": {
+      "round": "Series B (preferential issue)",
+      "amount": 846100000,
+      "date": "2024-12",
+      "source": {
+        "label": "Inc42: OTT Platform STAGE To Raise INR 84.61 Cr Via Preferential Issue (2024-12-13)",
+        "url": "https://inc42.com/?p=490531"
+      }
+    },
+    "notable_since_show": [
+      {
+        "date": "2025-03",
+        "event": "Entrackr reported a $12.5 million Series B led by Goodwater Capital and Blume Ventures, including some secondary sales by angel investors.",
+        "source": {
+          "label": "Entrackr: Regional OTT app Stage raises $12.5 Mn in Series B (2025-03-21)",
+          "url": "https://entrackr.com/snippets/regional-ott-app-stage-raises-125-mn-in-series-b-8876590"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "No report confirms whether the sharks' equity and debt were completed after the episode."
+  },
+  "pitch_video": {
+    "youtube_id": "L7bUXiHE9Hs",
+    "channel": "SET India",
+    "title": "'Stage' Ki Business Story Sunkar Sharks Ko Aagaye Goosebumps! | Shark Tank India 2 | Pitches",
+    "url": "https://www.youtube.com/watch?v=L7bUXiHE9Hs",
+    "upload_date": "2023-05-31"
+  },
+  "media": {
+    "logo": {
+      "url": "https://www.stage.in/images/homepage_meta_image.jpg",
+      "credit": "Logo: STAGE",
+      "source_url": "https://www.stage.in/",
+      "source_type": "brand_site"
+    }
+  },
+  "social": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/stage.in",
+      "checked_date": "2026-10-15"
+    }
+  ],
+  "where_to_buy": [
+    {
+      "label": "STAGE app and website",
+      "url": "https://www.stage.in"
+    }
+  ],
+  "shark_quotes": [
+    {
+      "shark": "Aman Gupta",
+      "quote": "Six of my businesses tanked and that is when boAt was made.",
+      "source": {
+        "label": "Business Today (2023-01-06)",
+        "url": "https://www.businesstoday.in/latest/corporate/story/shark-tank-india-2-keep-hustling-says-boats-aman-gupta-to-stage-founders-359143-2023-01-06"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did STAGE get a deal on Shark Tank India?",
+      "a": "Yes. Namita Thapar, Aman Gupta and Peyush Bansal put in ₹3 crore split between equity and debt, at a ₹250 crore valuation."
+    },
+    {
+      "q": "What is STAGE's revenue?",
+      "a": "Entrackr reported revenue from operations of ₹111 crore for FY25, based on Registrar of Companies filings."
+    },
+    {
+      "q": "Is STAGE still operating?",
+      "a": "Yes. Its FY25 filings were reported in February 2026, and it raised a Series B round in 2024–25."
+    },
+    {
+      "q": "Who founded STAGE?",
+      "a": "Vinay Singhal, Parveen Singhal and Shashank Vaishnav."
+    }
+  ],
+  "lessons": [
+    "A debt component let the sharks accept a valuation close to the founders' ask while limiting their equity risk.",
+    "A defined niche (dialect content) gave the founders a clear answer to competition from large OTT platforms.",
+    "Growth since the show came with rising losses, which shows that a funded content business still burns cash on production."
+  ],
+  "related_pitches": [
+    "unstop",
+    "snitch"
+  ],
+  "notes": "Equity/debt split: Business Today reports ₹3 cr total at ₹250 cr valuation and a ₹1.5 cr debt component, so equity is ₹1.5 cr = 0.6% (arithmetic). Interest rate conflict: Business Today 18%, Wikipedia 12%; we show Business Today's figure. Episode 3 confirmed by SET India official episode upload description."
+}

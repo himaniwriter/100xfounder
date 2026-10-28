@@ -1,0 +1,138 @@
+{
+ "slug": "neoway",
+ "website": "https://www.neoway.com.br/",
+ "excerpt": "Neoway is a Brazilian data and analytics company owned by B3, the Brazilian stock exchange, since 2021. What it does and alternatives.",
+ "content": "<p>Neoway is a data and analytics company from Florianópolis, Brazil. Its website, in Portuguese, calls it the largest data and analytics company in Brazil and says it helps businesses become more efficient and cut costs using data analytics and artificial intelligence. In practice it gathers and links large amounts of public and private data about Brazilian companies and people, and sells products built on it for credit decisions, marketing and sales prospecting, fraud prevention and compliance. Customer logos on its site include Banco Inter, BTG Pactual, Hapvida, General Mills, Creditas and Zenvia.</p><p>Startupi reported that Neoway was founded in 2002 by Jaime de Paula and moved into big data in 2012. In October 2021 B3, the company that runs Brazil's stock exchange, agreed to buy Neoway for R$1.8 billion, which Latin Lawyer reported as about US$325 million, and set aside up to R$200 million over five years to invest in its growth. At the time Neoway had about 450 employees and more than 500 business customers. B3 said it wanted to build Brazil's largest data hub and expand products in credit, retail, compliance and capital markets. The deal needed approval from CADE, the competition authority, and CVM, the securities regulator; B3 announced that it had been approved, and Gunderson Dettmer, which advised Neoway, dates the completed acquisition to 24 December 2021. Neoway now describes itself as 'uma empresa B3' (a B3 company) and runs as a separately managed business.</p><p>Neoway does not publish prices. It sells to companies, mostly large Brazilian firms, through its sales team.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Data and analytics (Brazil)",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Brazilian big data and analytics company, part of B3",
+  "maker": {
+   "name": "Neoway (a B3 company)",
+   "url": "https://www.neoway.com.br/"
+  },
+  "gallery": [
+   {
+    "url": "https://blog.neoway.com.br/wp-content/uploads/2022/10/logo-neoway-b3.png",
+    "alt": "Neoway logo in dark blue with an orange curved mark, and the line 'Uma empresa B3' (a B3 company)",
+    "credit": "Image: Neoway (blog.neoway.com.br)",
+    "w": 250,
+    "h": 118
+   },
+   {
+    "url": "https://blog.neoway.com.br/wp-content/uploads/2021/11/favicon-300x300.png",
+    "alt": "Neoway icon: two crossing orange curved lines",
+    "credit": "Image: Neoway (blog.neoway.com.br)",
+    "w": 300,
+    "h": 300
+   }
+  ],
+  "use_cases": [
+   "Credit analysis using company and consumer data in Brazil",
+   "Finding and prioritising sales prospects",
+   "Fraud prevention and compliance checks (KYC)",
+   "Market and location analytics"
+  ],
+  "audience": {
+   "fit": [
+    "are a large company operating in Brazil",
+    "need enriched data on Brazilian companies and consumers",
+    "work in credit, compliance or B2B sales"
+   ],
+   "not_fit": [
+    "do not operate in Brazil",
+    "want self-serve tools with published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Neoway does not publish prices; its site directs businesses to talk to sales.",
+   "plans": [
+    {
+     "name": "Neoway data and analytics",
+     "price": "Quote on request",
+     "detail": "Enterprise contracts"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.neoway.com.br/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Large Brazilian data coverage",
+   "Backed by B3",
+   "Long track record with big Brazilian companies"
+  ],
+  "cons": [
+   "Brazil-focused and mostly in Portuguese",
+   "No public pricing"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Serasa Experian",
+     "url": "https://www.serasaexperian.com.br/",
+     "what": "Credit bureau and data in Brazil",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "The largest credit bureau in Brazil."
+    },
+    {
+     "name": "Boa Vista (Equifax)",
+     "url": "https://www.boavistaservicos.com.br/",
+     "what": "Credit data in Brazil",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Credit bureau now owned by Equifax."
+    },
+    {
+     "name": "Econodata",
+     "url": "https://www.econodata.com.br/",
+     "what": "B2B prospecting data on Brazilian companies",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Focused on sales prospecting."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who owns Neoway?",
+    "a": "B3, the operator of Brazil's stock exchange, which completed the acquisition in December 2021."
+   },
+   {
+    "q": "How much did B3 pay for Neoway?",
+    "a": "R$1.8 billion (about US$325 million)."
+   },
+   {
+    "q": "What does Neoway do?",
+    "a": "It sells data and analytics on Brazilian companies and consumers for credit, sales, fraud prevention and compliance."
+   }
+  ],
+  "sources": [
+   {
+    "label": "B3: B3 e Neoway (announcement)",
+    "url": "https://www.b3.com.br/pt_br/noticias/b3-e-neoway.htm"
+   },
+   {
+    "label": "Startupi: B3 adquire empresa de dados e analytics por R$ 1,8 bilhão (Oct 2021)",
+    "url": "https://startupi.com.br/2021/10/b3-adquire-empresa-de-dados-e-analytics-por-r-18-bilhao/"
+   },
+   {
+    "label": "Latin Lawyer: B3 pays US$325 million for data analytics company",
+    "url": "https://latinlawyer.com/article/b3-pays-us325-million-data-analytics-company"
+   },
+   {
+    "label": "Gunderson Dettmer: Neoway acquisition by B3 (24 Dec 2021)",
+    "url": "https://www.gunder.com/news/neoway-acquisition-by-b3/"
+   },
+   {
+    "label": "Neoway official site",
+    "url": "https://www.neoway.com.br/"
+   }
+  ]
+ }
+}

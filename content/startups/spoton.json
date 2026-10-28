@@ -1,0 +1,160 @@
+{
+ "slug": "spoton",
+ "website": "https://www.spoton.com/",
+ "excerpt": "SpotOn is a US point-of-sale and software company for restaurants and small businesses, valued at $3.6 billion in 2022. Pricing, what it does and alternatives.",
+ "content": "<p>SpotOn makes point-of-sale (POS) systems and software for restaurants, bars and small businesses in the United States. Its restaurant platform covers ordering and payments, table layouts, menu management, online ordering, reservations, team management, reporting and AI profit analysis, and it sells handheld and countertop hardware. It also offers a separate point-of-sale package for retail and service businesses.</p><p>SpotOn raised money quickly during 2021 and 2022. TechCrunch reported a $125 million Series D led by Andreessen Horowitz in May 2021 that tripled its valuation to $1.875 billion. In September 2021 it announced a $300 million Series E led by Andreessen Horowitz at a $3.15 billion valuation and used part of it to buy Appetize, a point-of-sale provider for stadiums and other large venues. In May 2022 it raised another $300 million in a Series F led by Dragoneer Investment Group at a $3.6 billion valuation; Restaurant Business quoted Zach Hyman as co-CEO and said SpotOn had raised more than any other private restaurant technology company the year before.</p><p>SpotOn publishes its restaurant pricing. Its All-In plan costs $0 a station per month with hardware included, and makes its money from card processing (2.79% plus 20 cents for card-present payments, 3.79% plus 20 cents keyed), with processing minimums and a two-year minimum term. Higher tiers add software features for a monthly fee. Restaurants often compare it with Toast, Square and Clover.</p><p><em>We have not used SpotOn for this page. It brings together SpotOn's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Restaurant POS",
+  "platform": "POS hardware, web and mobile",
+  "starts_at": "$0/station/month on the All-In plan (processing fees apply)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Point-of-sale, ordering and payments for restaurants and small businesses",
+  "maker": {
+   "name": "SpotOn",
+   "url": "https://www.spoton.com/"
+  },
+  "team": [
+   {
+    "name": "Zach Hyman",
+    "role": "Co-CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.spoton.com/images/og-image.png",
+    "alt": "SpotOn point-of-sale hardware: a large black countertop screen with a smaller customer-facing card terminal",
+    "credit": "Image: SpotOn (spoton.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://www.spoton.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fspoton-pos-restaurant-pos.db434b31.png&w=1920&q=75",
+    "alt": "A server taps a SpotOn POS screen showing menu items with photos, on a restaurant counter",
+    "credit": "Image: SpotOn (spoton.com)",
+    "w": 1920,
+    "h": 1127
+   }
+  ],
+  "use_cases": [
+   "Taking orders and payments at the table or counter",
+   "Online ordering and delivery",
+   "Reservations and table management",
+   "Staff scheduling and team management",
+   "Sales and profit reporting"
+  ],
+  "audience": {
+   "fit": [
+    "full-service and quick-service restaurants in the US",
+    "bars, breweries and venues",
+    "operators who want hardware and software from one supplier with 24/7 support"
+   ],
+   "not_fit": [
+    "businesses outside the United States",
+    "restaurants that want to avoid multi-year processing contracts"
+   ]
+  },
+  "pricing": {
+   "intro": "SpotOn's restaurant pricing page lists an All-In plan and higher tiers.",
+   "url": "https://www.spoton.com/pricing/",
+   "plans": [
+    {
+     "name": "All-In",
+     "price": "$0/station per month",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Hardware included; card present 2.79% + $0.20, keyed 3.79% + $0.20; 2-year minimum term"
+    },
+    {
+     "name": "Essentials and higher tiers",
+     "price": "See pricing page",
+     "detail": "More software features for a monthly fee"
+    }
+   ],
+   "notes": [
+    "Processing minimums apply on the All-In plan.",
+    "A separate pricing page covers small retail and service businesses."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Low upfront cost on the All-In plan",
+   "Restaurant-specific features and 24/7 support",
+   "Well funded"
+  ],
+  "cons": [
+   "Card processing fees and a two-year term on the free-software plan",
+   "US only"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with SpotOn. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Toast",
+     "url": "https://pos.toasttab.com/",
+     "what": "Restaurant point-of-sale and management platform",
+     "starts_at": "See its own website",
+     "difference": "The largest restaurant-specific POS in the US, publicly listed."
+    },
+    {
+     "name": "Square for Restaurants",
+     "url": "https://squareup.com/us/en/point-of-sale/restaurants",
+     "what": "Square's restaurant POS",
+     "starts_at": "See its own website",
+     "difference": "Self-serve setup and flat processing rates from a large payments company."
+    },
+    {
+     "name": "Clover",
+     "url": "https://www.clover.com/",
+     "what": "POS from Fiserv",
+     "starts_at": "See its own website",
+     "difference": "Sold through banks and resellers, with many app add-ons."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does SpotOn cost?",
+    "a": "The All-In plan is $0 a station per month with hardware included; you pay card processing fees (2.79% + 20 cents card-present) on a two-year term."
+   },
+   {
+    "q": "How much is SpotOn worth?",
+    "a": "Its May 2022 Series F valued it at $3.6 billion, Restaurant Business and Business Wire reported."
+   },
+   {
+    "q": "What did SpotOn buy?",
+    "a": "It acquired Appetize, a POS provider for stadiums and large venues, in 2021."
+   },
+   {
+    "q": "Is SpotOn only for restaurants?",
+    "a": "No. It also sells a point-of-sale package for small retail and service businesses."
+   }
+  ],
+  "sources": [
+   {
+    "label": "SpotOn restaurant pricing",
+    "url": "https://www.spoton.com/pricing/"
+   },
+   {
+    "label": "TechCrunch: SpotOn raises $125M Series D",
+    "url": "https://techcrunch.com/?p=2157460"
+   },
+   {
+    "label": "Business Wire: SpotOn $300M Series E at $3.15B",
+    "url": "https://www.businesswire.com/news/home/20210913005193/en/SpotOn-Raises-%24300-Million-in-Series-E-Funding-Led-by-Andreessen-Horowitz-Transaction-Values-Company-at-%243.15-Billion"
+   },
+   {
+    "label": "Business Wire: SpotOn $300M Series F at $3.6B",
+    "url": "https://www.businesswire.com/news/home/20220518005983/en/SpotOn-Raises-300-Million-in-Series-F-Funding-Led-by-Dragoneer-Investment-Group-Transaction-Values-Company-at-3.6-Billion"
+   },
+   {
+    "label": "Restaurant Business: SpotOn raises $300M for the second time in a year",
+    "url": "https://www.restaurantbusinessonline.com/technology/pos-provider-spoton-raises-300m-second-time-year"
+   },
+   {
+    "label": "PYMNTS: SpotOn acquires Appetize",
+    "url": "https://www.pymnts.com/partnerships/2021/spoton-acquires-pos-provider-appetize/"
+   }
+  ]
+ }
+}

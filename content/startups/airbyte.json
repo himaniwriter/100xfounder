@@ -1,0 +1,189 @@
+{
+ "slug": "airbyte",
+ "website": "https://airbyte.com/",
+ "excerpt": "Airbyte is an open-source data movement platform with 700+ connectors. Cloud plans from $20 a month, how credits work, and alternatives such as Fivetran.",
+ "content": "<p>Airbyte is an open-source data movement platform. It copies data from the systems a business uses, such as databases, SaaS apps and files, into warehouses, data lakes, vector databases and AI agents, a pattern usually called ELT (extract, load, transform). Its homepage says it can run pipelines across 700+ connectors. It also pitches itself as a context layer for production AI agents: connected sources feed a queryable store so that agents can reason across systems without stitching APIs together at run time, and it offers an MCP Gateway for that purpose.</p>\n<p>Airbyte was started by Michel Tricot, its CEO, and Jean Lafleur, its COO. Its About page says the two joined Y Combinator's W20 batch in January 2020 and built the first version between July and September 2020 with six connectors. The company now reports 700+ data replication connectors and 50+ agent connectors, 25,000 companies using Airbyte (including 20% of the Fortune 500), 2 million pipelines synced a day, more than 1,300 open-source contributors, 20,000+ GitHub stars and $181 million raised. Those figures are Airbyte's own.</p>\n<h2>Open source or cloud</h2>\n<p>You can run Airbyte yourself from its GitHub repository (Airbyte Core), or pay for the managed cloud. Cloud pricing is credit-based. <strong>Standard</strong> starts at $20 a month with 5 credits included and extra credits at $5 each; syncs can run at most once an hour and support is by portal without an SLA. <strong>Plus</strong> sells fixed monthly packages, from 40 credits for $189 up to 2,000 credits for $4,999, with SSO, 15-minute syncs, two workspaces and a 24-hour support SLA; overage is $5 a credit. Airbyte's own calculator notes that at 40 credits Plus ($189) works out cheaper than Standard ($195). Both have a 14-day free trial.</p>\n<p><strong>Pro</strong> and <strong>Enterprise Flex</strong> are priced by capacity, in \"Data Workers\" (dedicated compute units), rather than by volume, and are quoted by sales. Pro adds multiple workspaces, role-based access control and syncs as often as every five minutes; Enterprise Flex adds on-premises, multi-region and hybrid deployment, with Airbyte running the control plane while data stays inside your own boundary.</p>\n<p><em>We have not tested Airbyte ourselves. This page brings together Airbyte's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "Data integration (ELT)",
+  "platform": "Open source (self-hosted) or managed cloud",
+  "starts_at": "Open source; Cloud from $20/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Open-source data movement platform with 700+ connectors for warehouses, lakes and AI agents",
+  "maker": {
+   "name": "Airbyte",
+   "url": "https://airbyte.com/"
+  },
+  "team": [
+   {
+    "name": "Michel Tricot",
+    "role": "Co-founder and CEO",
+    "url": "https://airbyte.com/company/about-us"
+   },
+   {
+    "name": "Jean Lafleur",
+    "role": "Co-founder and COO",
+    "url": "https://airbyte.com/company/about-us"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://airbyte.com/images/opengraph-infrastructure-platform-data-ai.png",
+    "alt": "Airbyte graphic reading 'The Infrastructure Platform for Data and AI' on a dark background with purple light lines",
+    "credit": "Image: Airbyte",
+    "w": 1024,
+    "h": 538
+   },
+   {
+    "url": "https://airbyte.com/images/6f9554e014e912ca3b18906cc630e15a28e69ce3.jpg",
+    "alt": "Group photo of the Airbyte team, about seventy people, in an office lobby",
+    "credit": "Photo: Airbyte",
+    "w": 1600,
+    "h": 963
+   }
+  ],
+  "use_cases": [
+   "Sync SaaS, database and file data into a data warehouse or lake",
+   "Load documents into a vector database for an AI application",
+   "Give AI agents governed access to company data through connectors or the MCP Gateway",
+   "Run data pipelines on your own infrastructure with the open-source edition"
+  ],
+  "audience": {
+   "fit": [
+    "want an open-source option you can self-host and extend",
+    "need a long tail of connectors, including ones you build yourself",
+    "want predictable cloud costs through fixed credit packages (Plus)"
+   ],
+   "not_fit": [
+    "need syncs more often than hourly on the cheapest cloud plan (Standard is limited to one hour)",
+    "want enterprise support without a sales conversation: Pro and Enterprise Flex are quoted",
+    "have no one to operate it if you self-host"
+   ]
+  },
+  "pros": [
+   "Open-source core you can run for free on your own servers",
+   "700+ connectors, plus agent connectors and an MCP Gateway",
+   "Published cloud prices for Standard and Plus"
+  ],
+  "cons": [
+   "Standard cloud syncs at most hourly",
+   "Credit-based cloud pricing needs estimating",
+   "Capacity-based Pro and Enterprise pricing is not published"
+  ],
+  "pricing": {
+   "intro": "Airbyte's own prices, in US dollars per month.",
+   "url": "https://airbyte.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Open Source (Airbyte Core)",
+     "price": "Free to self-host",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Run it yourself from the GitHub repository"
+    },
+    {
+     "name": "Standard",
+     "price": "From $20/month",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "5 credits included, extra credits $5 each; fully managed; max 1-hour sync frequency; portal support without SLA; 14-day trial"
+    },
+    {
+     "name": "Plus",
+     "price": "From $189/month (40 credits)",
+     "amount": 189,
+     "currency": "USD",
+     "detail": "Packages up to 2,000 credits for $4,999/month; SSO, 15-minute syncs, 2 workspaces, 24-hour support SLA; overage $5/credit; 14-day trial"
+    },
+    {
+     "name": "Pro",
+     "price": "Custom",
+     "detail": "Capacity-based (Data Workers); multiple workspaces, SSO, RBAC, syncs up to every 5 minutes, premium support"
+    },
+    {
+     "name": "Enterprise Flex",
+     "price": "Custom",
+     "detail": "Everything in Pro plus on-premises, multi-region and hybrid deployment with an Airbyte-managed control plane"
+    }
+   ],
+   "notes": [
+    "Plus packages: 40 credits $189, 100 $449, 250 $999, 500 $1,799, 1,000 $3,199, 2,000 $4,999 a month."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other data-integration tools. Descriptions come from each product's own site; Fivetran's prices are from its own pricing page.",
+   "items": [
+    {
+     "name": "Fivetran",
+     "url": "https://www.fivetran.com/",
+     "what": "Managed, automated data movement with 700+ connectors, now merged with dbt Labs",
+     "starts_at": "Free plan up to 500,000 monthly active rows; then usage-based",
+     "difference": "Fully managed and priced on monthly active rows; no self-hosted open-source edition."
+    },
+    {
+     "name": "Meltano",
+     "url": "https://meltano.com/",
+     "what": "ETL platform for analytics engineers with 500+ connectors and flat pricing",
+     "starts_at": "See its pricing page",
+     "difference": "Also open-source rooted; pitches flat, predictable pricing."
+    },
+    {
+     "name": "Estuary",
+     "url": "https://estuary.dev/",
+     "what": "Right-time data platform that unifies CDC, streaming, batch and ETL pipelines",
+     "starts_at": "See its pricing page",
+     "difference": "Built around real-time change data capture and streaming."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Airbyte free?",
+    "a": "The open-source edition, Airbyte Core, is free to self-host. The managed cloud starts at $20 a month."
+   },
+   {
+    "q": "How many connectors does Airbyte have?",
+    "a": "Airbyte says it has 700+ data replication connectors and 50+ agent connectors."
+   },
+   {
+    "q": "How does Airbyte Cloud pricing work?",
+    "a": "Standard and Plus use credits: Standard starts at $20 a month with 5 credits; Plus sells monthly packages from 40 credits for $189. Pro and Enterprise Flex are priced by capacity and quoted by sales."
+   },
+   {
+    "q": "Who founded Airbyte?",
+    "a": "Michel Tricot (CEO) and Jean Lafleur (COO), who went through Y Combinator's W20 batch in 2020."
+   },
+   {
+    "q": "Airbyte or Fivetran?",
+    "a": "Airbyte has a self-hostable open-source edition and credit-based cloud plans; Fivetran is fully managed and priced on monthly active rows, with a free plan up to 500,000 rows."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Airbyte official site",
+    "url": "https://airbyte.com/"
+   },
+   {
+    "label": "Airbyte pricing",
+    "url": "https://airbyte.com/pricing"
+   },
+   {
+    "label": "About Airbyte",
+    "url": "https://airbyte.com/company/about-us"
+   },
+   {
+    "label": "Fivetran pricing",
+    "url": "https://www.fivetran.com/pricing"
+   },
+   {
+    "label": "Meltano",
+    "url": "https://meltano.com/"
+   },
+   {
+    "label": "Estuary",
+    "url": "https://estuary.dev/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "slug": "safebreach",
+ "website": "https://www.safebreach.com/",
+ "excerpt": "SafeBreach is a breach and attack simulation (BAS) and exposure validation platform that safely runs real attacker techniques against your defences. Founded in 2014; offices in Sunnyvale and Tel Aviv.",
+ "content": "<p>SafeBreach makes security software that tests whether an organisation's defences actually stop attacks. Instead of waiting for a real breach or an annual penetration test, its platform continuously runs genuine but safe hacker behaviours against an organisation's security controls, then shows where they fall short and how to prioritise fixes. This category is known as breach and attack simulation (BAS). SafeBreach now describes its product as an exposure validation platform that combines BAS with attack path validation, and positions it for continuous threat exposure management (CTEM), including validating AI attack surfaces and AI-driven remediation. SecurityWeek reported in 2020 that its playbook contained more than 13,000 breach behaviours, and the company publishes research as its Hacker's Playbook.</p><p>SafeBreach was founded in 2014 by CEO Guy Bejerano and CTO Itzik Kotler, veterans of the Israeli Air Force and the IDF's Unit 8200 intelligence corps, according to Globes. The company has offices in Sunnyvale, California, and Tel Aviv. Its About page says the founders wanted to combine the mindset of a CISO with the toolset of a hacker.</p><p>SafeBreach raised a $15 million Series A in 2016 and a $15 million Series B in 2018. In April 2020 it closed a $19 million Series C led by OCV Partners, with Sequoia Capital, Deutsche Telekom Capital Partners, DNX Ventures, Hewlett Packard Pathfinder and PayPal participating, taking total funding past $50 million, SecurityWeek and Globes reported. In November 2021 it announced a $53.5 million Series D led by Sonae IM and Israel Growth Partners, which it said brought total funding to over $106 million. In April 2026 it launched an AI-powered CTEM product built around its Helm AI agent.</p><p>SafeBreach sells to enterprises through demos and does not publish prices. This profile draws on SafeBreach's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Breach and attack simulation / exposure validation",
+  "platform": "Enterprise security platform (cloud and on-premises simulators)",
+  "starts_at": "Demo and quote on request",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Continuously and safely simulates real attacks to test whether your security controls work",
+  "maker": {
+   "name": "SafeBreach",
+   "url": "https://www.safebreach.com/about-safebreach/"
+  },
+  "team": [
+   {
+    "name": "Guy Bejerano",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Itzik Kotler",
+    "role": "Co-founder and CTO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.safebreach.com/wp-content/uploads/2026/08/home-platform.webp",
+    "alt": "SafeBreach homepage illustration of a white lunar-lander-style module with magenta windows, standing on four legs",
+    "credit": "Image: SafeBreach",
+    "w": 1917,
+    "h": 1536
+   },
+   {
+    "url": "https://www.safebreach.com/wp-content/uploads/2025/02/01-03-validate-sol-brief-hero.webp",
+    "alt": "Teal and blue graphic of concentric circles ringed with check marks over a blurred dashboard, from SafeBreach's Validate solution brief",
+    "credit": "Image: SafeBreach",
+    "w": 720,
+    "h": 409
+   }
+  ],
+  "use_cases": [
+   "Testing whether firewalls, endpoint and email security actually block known attacks",
+   "Validating defences against a newly reported threat within days",
+   "Finding and prioritising attack paths an intruder could take",
+   "Running a continuous threat exposure management (CTEM) programme",
+   "Showing the board measurable evidence of security posture"
+  ],
+  "audience": {
+   "fit": [
+    "run a security team at a large enterprise with many security controls",
+    "want continuous evidence that defences work, not a yearly test",
+    "are building a CTEM programme"
+   ],
+   "not_fit": [
+    "are a small business without a dedicated security team",
+    "need application code scanning rather than control validation"
+   ]
+  },
+  "pricing": {
+   "intro": "SafeBreach does not publish prices. Its site asks prospective customers to request a demo.",
+   "plans": [
+    {
+     "name": "SafeBreach platform",
+     "price": "Quote on request",
+     "detail": "Breach and attack simulation, attack path validation and CTEM"
+    }
+   ],
+   "notes": [
+    "No public pricing page when checked."
+   ],
+   "url": "https://www.safebreach.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Long track record in breach and attack simulation",
+   "Large, regularly updated library of attack behaviours",
+   "Covers validation, attack paths and remediation in one platform"
+  ],
+  "cons": [
+   "No published pricing",
+   "Built for large enterprises"
+  ],
+  "alternatives": {
+   "intro": "Other breach and attack simulation and exposure validation tools. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Pentera",
+     "url": "https://pentera.io/",
+     "what": "Automated security validation platform",
+     "tags": [
+      "Security validation"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Emulates real attacks across the network in an automated pentest style."
+    },
+    {
+     "name": "AttackIQ",
+     "url": "https://www.attackiq.com/",
+     "what": "Breach and attack simulation platform",
+     "tags": [
+      "BAS"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Closely mapped to the MITRE ATT&CK framework."
+    },
+    {
+     "name": "Cymulate",
+     "url": "https://cymulate.com/",
+     "what": "Exposure management and security validation platform",
+     "tags": [
+      "BAS",
+      "CTEM"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Like-for-like rival in BAS and CTEM."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is breach and attack simulation?",
+    "a": "Software that safely mimics real attacker techniques inside your environment to check whether your security controls detect and block them."
+   },
+   {
+    "q": "Who founded SafeBreach?",
+    "a": "Guy Bejerano (CEO) and Itzik Kotler (CTO), in 2014, according to Globes."
+   },
+   {
+    "q": "How much funding has SafeBreach raised?",
+    "a": "Over $106 million, according to the company's November 2021 Series D announcement of $53.5 million led by Sonae IM and Israel Growth Partners."
+   },
+   {
+    "q": "How much does SafeBreach cost?",
+    "a": "It does not publish prices; you request a demo."
+   }
+  ],
+  "sources": [
+   {
+    "label": "SafeBreach website",
+    "url": "https://www.safebreach.com/"
+   },
+   {
+    "label": "SafeBreach: About",
+    "url": "https://www.safebreach.com/about-safebreach/"
+   },
+   {
+    "label": "SecurityWeek: SafeBreach raises $19 million (2020)",
+    "url": "https://www.securityweek.com/breach-and-attack-simulation-firm-safebreach-raises-19-million/"
+   },
+   {
+    "label": "Globes: Israeli cybersecurity co SafeBreach raises $19m (16 Apr 2020)",
+    "url": "https://en.globes.co.il/en/article-israeli-cybersecurity-co-safebreach-raises-19m-1001325469"
+   },
+   {
+    "label": "Cyware: SafeBreach closes $53.5 million Series D (Nov 2021)",
+    "url": "https://social.cyware.com/news/safebreach-closes-535-million-series-d-in-new-funding-to-fuel-momentum-f23a7a28"
+   },
+   {
+    "label": "SafeBreach: Launches AI-powered CTEM solution (22 Apr 2026)",
+    "url": "https://www.safebreach.com/pressroom/safebreach-launches-ai-powered-ctem-solution/"
+   }
+  ]
+ }
+}

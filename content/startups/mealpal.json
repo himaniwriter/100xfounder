@@ -1,0 +1,154 @@
+{
+ "slug": "mealpal",
+ "website": "https://www.mealpal.com/",
+ "excerpt": "MealPal is a lunch membership app: pre-order discounted meals from nearby restaurants and skip the queue. How it works, history and alternatives.",
+ "content": "<p>MealPal is a membership app for weekday lunch. Members reserve a meal in advance from a participating restaurant near their office, then walk in at the chosen time and pick it up without waiting in line. Its homepage promises 'insane prices, unlimited options' and shows examples such as a New York salad with a retail price of $13.50 offered at $5.99, a 56% saving. Meals are served on weekdays, excluding holidays; in the US and Canada tax and fees are extra, and the price per meal depends on the plan chosen. MealPal also has plans for hybrid workers who are in the office only some days, and corporate programmes for employers.</p><p>The company was founded in 2016 by Mary Biggins and Katie Ghelli, according to SmartCompany; Biggins was previously a cofounder of ClassPass. MealPal is based in New York. In 2019 SmartCompany reported that it operated in the US, Canada, the UK, Singapore, France and New Zealand, had launched in Sydney and Melbourne in 2017, and was switching its Australian business from a fixed number of meals a month to a membership marketplace with meal prices from $6.99 to $10.99, which let it add more than 100 restaurants. Earlier, HospitalityTech's report on its Seattle launch described plans of 12 or 20 meals a month.</p><p>MealPal does not publish one global price list: the price per meal and the plans shown vary by city and change over time, so check the app for your city. The model works best for office workers in dense business districts with many participating restaurants.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Lunch ordering membership",
+  "platform": "iOS, Android and web",
+  "starts_at": "Meals shown from $5.99 (plan-dependent)",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Membership for discounted weekday lunches from nearby restaurants, picked up without queuing",
+  "maker": {
+   "name": "MealPal, Inc.",
+   "url": "https://www.mealpal.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://corporate.mealpal.com/assets/landing_page_meal-b9bef057abd988bda2e1b6b334404d792b21f08ef7b4a13fe2e1e92315178a9d.png",
+    "alt": "A white plate with a grain bowl, broccoli, kale salad, guacamole and a pot of green sauce, with a fork",
+    "credit": "Image: MealPal (corporate.mealpal.com)",
+    "w": 609,
+    "h": 340
+   },
+   {
+    "url": "https://www.mealpal.com/icons/icon-512x512.png?v=f6c0cc925160ebd9cad3474e4baeb4b9",
+    "alt": "MealPal icon: a white letter M on a red circle",
+    "credit": "Image: MealPal (mealpal.com)",
+    "w": 512,
+    "h": 512
+   }
+  ],
+  "use_cases": [
+   "Getting a cheaper lunch near the office",
+   "Skipping the lunchtime queue",
+   "Lunch plans for hybrid workers",
+   "Employer-paid lunch programmes"
+  ],
+  "audience": {
+   "fit": [
+    "work in an office in a city where MealPal operates",
+    "eat lunch out several days a week",
+    "are flexible about which restaurant you eat from"
+   ],
+   "not_fit": [
+    "work from home most days",
+    "want dinner or delivery: MealPal is weekday pick-up lunch"
+   ]
+  },
+  "pricing": {
+   "intro": "MealPal's price per meal depends on the plan and city; the homepage shows examples from $5.99 per meal in New York. Tax and fees are extra in the US and Canada.",
+   "plans": [
+    {
+     "name": "Lunch plans",
+     "price": "From $5.99 a meal (example shown for New York)",
+     "detail": "Price per meal varies by plan and city"
+    },
+    {
+     "name": "Hybrid worker plans",
+     "price": "Shown in the app",
+     "detail": "For people in the office a few days a week"
+    },
+    {
+     "name": "Corporate programmes",
+     "price": "Quote on request",
+     "detail": "Employer-paid lunch"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.mealpal.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Large discounts against menu prices",
+   "Pick-up without queuing",
+   "Plans for hybrid workers"
+  ],
+  "cons": [
+   "Prices vary by city and plan; no single public price list",
+   "Only useful near participating restaurants on weekdays"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Too Good To Go",
+     "url": "https://www.toogoodtogo.com/",
+     "what": "App for buying surplus food from restaurants and shops",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Surplus food at a discount rather than planned lunches."
+    },
+    {
+     "name": "Uber Eats",
+     "url": "https://www.ubereats.com/",
+     "what": "Food delivery and pickup",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Any time and delivery, but usually at full price plus fees."
+    },
+    {
+     "name": "ezCater",
+     "url": "https://www.ezcater.com/",
+     "what": "Workplace catering and employee meal programmes",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "For employer-paid group or individual meals."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How does MealPal work?",
+    "a": "You reserve a weekday lunch in advance from a nearby participating restaurant and pick it up at your chosen time without queuing."
+   },
+   {
+    "q": "How much does MealPal cost?",
+    "a": "It depends on your plan and city; the homepage shows examples from $5.99 per meal in New York, with tax and fees extra."
+   },
+   {
+    "q": "Who founded MealPal?",
+    "a": "Mary Biggins and Katie Ghelli, in 2016."
+   }
+  ],
+  "sources": [
+   {
+    "label": "MealPal official site",
+    "url": "https://www.mealpal.com/"
+   },
+   {
+    "label": "SmartCompany: MealPal ditches subscription model in Australia (8 July 2019)",
+    "url": "https://www.smartcompany.com.au/startupsmart/mealpal-ditches-subscription-model-pivot/"
+   },
+   {
+    "label": "SmartCompany: MealPal launches in Sydney",
+    "url": "https://www.smartcompany.com.au/hospitality/us-food-subscription-startup-mealpal-launches-sydney-take-advantage-australias-melting-pot-cuisines/"
+   },
+   {
+    "label": "HospitalityTech: MealPal launches in Seattle",
+    "url": "https://hospitalitytech.com/mealpal-launches-seattle"
+   }
+  ],
+  "team": [
+   {
+    "name": "Mary Biggins",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Katie Ghelli",
+    "role": "Cofounder"
+   }
+  ]
+ }
+}

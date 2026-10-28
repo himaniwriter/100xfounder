@@ -1,0 +1,113 @@
+{
+  "slug": "proxy-tester-by-scrapeops",
+  "ph_url": "https://www.producthunt.com/posts/proxy-tester-by-scrapeops",
+  "existing_listing_slug": null,
+  "website": "https://scrapeops.io/proxy-providers/tester/",
+  "excerpt": "ScrapeOps Proxy Tester benchmarks 20+ proxy providers against the exact site you want to scrape and emails a ranked report on success rate, speed and cost. Free.",
+  "content": "<p>Proxy Tester is a free tool from ScrapeOps, a web-scraping tools company, for choosing a proxy provider. Instead of relying on generic rankings, you enter the page you actually want to scrape and how often and how much you plan to scrape it. The tester sends requests through more than 20 residential, datacenter, mobile, proxy-API and unblocker services, checks that each \"successful\" response is a real page and not a ban or CAPTCHA page, and emails you a ranked report, usually in about 5 to 20 minutes.</p><p>The report covers success rate, average latency of successful requests, bandwidth or API credits used, the cheapest plan from each provider that fits your volume, and an estimated cost per million pages. The makers say the value ranking groups providers into performance tiers first and then ranks them mainly by cost within each tier.</p><p>The makers on Product Hunt are Ian Kerins, who describes himself as bootstrapping ScrapeOps, and Joe Kearney. Proxy Tester launched there on 9 August 2026, hunted by Hiten Shah, and finished #4 for the day with 210 upvotes and 12 comments (as of 14 October 2026). ScrapeOps also sells its own proxy aggregator, which appears in the benchmark alongside other providers.</p><p><em>We have not tested Proxy Tester ourselves. This page brings together the tool's own page, ScrapeOps' site and its Product Hunt launch, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Web scraping tools",
+    "platform": "Web app",
+    "starts_at": "Free",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Benchmarks 20+ proxy providers against the exact site you want to scrape",
+    "maker": {"name": "Ian Kerins", "url": "https://www.producthunt.com/@iankerins"},
+    "team": [
+      {"name": "Ian Kerins", "role": "Maker, ScrapeOps", "url": "https://www.producthunt.com/@iankerins"},
+      {"name": "Joe Kearney", "role": "Maker", "url": "https://www.producthunt.com/@joe_kearney"}
+    ],
+    "ph": {"rank": 4, "votes": 210, "comments": 12, "followers": 365, "launched": "2026-08-09", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/0f9a383d-e951-4335-8a94-557bf2070e19.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: ScrapeOps on Product Hunt",
+       "alt": "ScrapeOps Proxy Tester overview: enter a target URL, run benchmarks, compare results in a success-rate chart, choose the best provider"},
+      {"url": "https://ph-files.imgix.net/b41a112a-94a6-4989-b05b-f83c9b11f5fd.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: ScrapeOps on Product Hunt",
+       "alt": "Proxy Tester configuration step asking how often and how many pages a month you scrape, with optional extra domains"},
+      {"url": "https://ph-files.imgix.net/7897a666-9f25-4bd5-a53a-b34e912a62f8.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: ScrapeOps on Product Hunt",
+       "alt": "Sample Proxy Tester report with a success-rate comparison chart and a table of providers' success rate, latency, credits and price"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Ian Kerins says that after talking with hundreds of developers building scraping pipelines, the same question kept coming up: which proxy provider should I use for this website? There is no universal answer, because a provider that works well on one site can do badly on another.",
+        "Most teams end up buying credits, running manual tests and comparing logs for days. Proxy Tester is meant to replace that: you submit your target URL and benchmark many providers at once."
+      ],
+      "attribution": "Ian Kerins, maker, on Product Hunt",
+      "url": "https://www.producthunt.com/products/proxy-benchmark-by-scrapeops?comment=5433934"
+    },
+    "use_cases": [
+      "Choosing a proxy provider for a hard-to-scrape site behind anti-bot protection",
+      "Checking whether a cheaper provider performs as well on your target",
+      "Estimating the monthly cost of scraping a site at your volume"
+    ],
+    "audience": {
+      "fit": [
+        "run scraping pipelines and pay for proxies",
+        "scrape sites protected by anti-bot systems such as Cloudflare",
+        "want a comparison based on your own target, not vendor claims"
+      ],
+      "not_fit": [
+        "don't want to give an email address: reports are sent by email, which one commenter disliked",
+        "need a fully independent benchmark: ScrapeOps' own aggregator is one of the providers tested"
+      ]
+    },
+    "pricing": {
+      "intro": "The tool's own FAQ says the Proxy Tester is free. No credit card is needed.",
+      "url": "https://scrapeops.io/proxy-providers/tester/",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Proxy Tester", "price": "Free", "amount": 0, "currency": "USD", "detail": "Benchmark 20+ providers against your target URL; ranked report by email in about 5 to 20 minutes"}
+      ],
+      "notes": ["ScrapeOps sells other products, such as its proxy aggregator, separately; its site offers 1,000 free requests to try it."]
+    },
+    "alternatives": {
+      "intro": "The usual alternative is testing providers by hand with trial credits. Some publishers also run general proxy benchmarks.",
+      "items": [
+        {"name": "Manual testing with provider trials", "url": "https://scrapeops.io/proxy-providers/", "what": "Buying or using trial credits from several providers and comparing logs yourself", "starts_at": "Depends on each provider's trial",
+         "difference": "Exact for your setup but slow; the makers say it often takes teams days."}
+      ],
+      "more": "Proxy Tester's sample report compares providers such as Zyte API, Scrape.do, ScraperAPI, Scrapfly and Bright Data alongside ScrapeOps."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/proxy-benchmark-by-scrapeops/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["Benchmarking against the real target URL instead of generic rankings", "Grouping providers by performance tier before ranking by cost"],
+        "asked": ["How fresh results are (each report is a live snapshot for your URL at that moment)", "Whether the value score can be weighted differently (currently weighted toward cost; one commenter asked for adjustable weighting)"],
+        "criticised": ["One commenter objected to having to give an email address to get the report"]
+      },
+      "quotes": [
+        {"text": "target-specific benchmarking over generic rankings makes way more sense, proxy performance is so site-dependent.", "author": "Sabber Ahamed", "url": "https://www.producthunt.com/products/proxy-benchmark-by-scrapeops?comment=5774007"},
+        {"text": "I've watched a provider ace one retail site and get stonewalled by another with the same config", "author": "Akbar B", "url": "https://www.producthunt.com/products/proxy-benchmark-by-scrapeops?comment=5772936"}
+      ]
+    },
+    "pros": [
+      "Free, with no credit card",
+      "Tests on your actual target and validates that responses aren't ban pages",
+      "Estimates cost per million pages at your volume"
+    ],
+    "cons": [
+      "Reports arrive by email",
+      "ScrapeOps' own aggregator is among the providers ranked",
+      "Results are a snapshot and can change when a site updates its defences"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/proxy-benchmark-by-scrapeops",
+      "quotes": [
+        {"author": "Sabber Ahamed", "url": "https://www.producthunt.com/products/proxy-benchmark-by-scrapeops?comment=5774007", "text": "is the value score weighted evenly across success/latency/cost or can you tune it per use case?",
+         "reply": "Ian Kerins said it is weighted more toward cost: providers are grouped into performance tiers by success rate and latency, then ranked mainly by cost within a tier."}
+      ],
+      "x": {"profile_url": "https://twitter.com/scrapeops", "search_url": "https://x.com/search?q=scrapeops%20proxy%20tester&f=live", "none": "Apart from ScrapeOps' own account, we found no posts on X clearly about Proxy Tester."}
+    },
+    "faq": [
+      {"q": "What is ScrapeOps Proxy Tester?", "a": "A free tool that benchmarks 20+ proxy providers against the page you want to scrape and emails a ranked report on success rate, latency and cost."},
+      {"q": "How much does it cost?", "a": "It is free, according to the tool's own FAQ, and needs no credit card."},
+      {"q": "How long does a test take?", "a": "About 5 to 20 minutes, according to the tool's page."},
+      {"q": "How are providers ranked?", "a": "The maker says providers are grouped into tiers by success rate and latency, then ranked mainly by cost within each tier."},
+      {"q": "Are results permanent?", "a": "No. Each report is a live snapshot for your URL; a site's anti-bot rules or a provider's performance can change later."}
+    ],
+    "sources": [
+      {"label": "Proxy Tester page", "url": "https://scrapeops.io/proxy-providers/tester/"},
+      {"label": "ScrapeOps terms of service", "url": "https://scrapeops.io/terms-of-service/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/proxy-benchmark-by-scrapeops?launch=proxy-tester-by-scrapeops"}
+    ]
+  }
+}

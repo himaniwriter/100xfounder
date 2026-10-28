@@ -1,0 +1,72 @@
+URL: https://www.thinkingorbs.com/
+TITLE: Thinking Orbs - AI Status Indicator Components for React
+META: Thinking Orbs is a React component library of well-crafted, animated orbs for AI: thinking, searching, compacting and more status indicators. Free, open source.
+
+Thinking Orbs - AI Status Indicator Components for React 
+ Orbs 
+ Installation 
+ Usage 
+ Thinking Orbs Dray 
+ Playground Sponsor 38 Light 
+ Thinking Orbs for AI Interfaces 
+ A component library of well-crafted, animated AI status indicators for React. No dependencies, 3.8 KB gzipped.
+ $ npm i @yogesharc/thinking-orbs 
+ Copy prompt Built by Yogesh MIT License 
+ The login page keeps redirecting to itself. Can you fix it?
+ Read middleware.ts 
+ Edited middleware.ts + 3 - 1 
+ Bash pnpm test 
+ Working 
+ Working 
+ Reasoning 
+ Searching 
+ Searching · Lighthouse 
+ Working · Gyro 
+ Background Tasks 
+ Reasoning · Twins 
+ Background Tasks · Spiral 
+ Retrying 
+ Compacting 
+ Compacting · Squeeze 
+ Compacting · Fuse 
+ Retrying · Surge 
+ Waiting 
+ Base 
+ Installation
+ Install Thinking Orbs from npm, or copy the React component into your project with shadcn. The React orb needs nothing but React, and the plain JS one needs nothing at all.
+ npm pnpm yarn bun shadcn 
+ $ npm i @yogesharc/thinking-orbs Copy prompt 
+ Usage
+ Import the Orb component and give it a state, and optionally a variant.
+ React JS 
+ import { Orb } from "@yogesharc/thinking-orbs" ;
+ export function Thinking() {
+ return (
+ < span className = "flex items-center gap-2 text-sm" >
+ < Orb state = "reasoning" />
+ Thinking
+ </ span >
+ );
+} 
+ Props
+ All optional 
+ Prop Type Default Description 
+ state OrbState "base" What the agent is doing. 
+ variant OrbVariant "default" Which look of that state. 
+ size number 20 Width and height in px. 
+ speed number 1 Speed multiplier. 
+ shape OrbShape — Another form, from @yogesharc/thinking-orbs/shapes. 
+ render OrbRender — Another way to draw it, from @yogesharc/thinking-orbs/renders. 
+ density number 1 Dot count multiplier. 
+ dotSize number 1 Dot size multiplier. 
+ tilt number 20 Viewing angle from above, in degrees. 
+ paused boolean false Freezes the animation. 
+ label string — Name for screen readers. 
+ className string — Tint it with text-* classes. 
+ Shapes and renders
+ The core ships one shape and one render. Other shapes and ways of drawing it are opt-in, so only what you import lands in your bundle. Try them all in the playground .
+ import { Orb } from "@yogesharc/thinking-orbs" ;
+ import { cube } from "@yogesharc/thinking-orbs/shapes" ;
+ import { halftone } from "@yogesharc/thinking-orbs/renders" ;
+< Orb state = "working" shape ={cube} render ={halftone} /> 
+ llms.txt

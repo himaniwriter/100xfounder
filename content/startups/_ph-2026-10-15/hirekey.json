@@ -1,0 +1,334 @@
+{
+ "input": "https://www.producthunt.com/products/hirekey",
+ "final_url": "https://www.producthunt.com/products/hirekey",
+ "launch": {
+  "slug": "hirekey-2",
+  "name": "HireKey",
+  "tagline": "Your recruiter-informed AI copilot for tech job search",
+  "featuredAt": "2026-10-11T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "21",
+  "points": 236,
+  "commentsCount": 37,
+  "pricingType": "free_options",
+  "description": "HireKey is a recruiter-informed AI job-search co-pilot for tech job seekers who want to apply strategically &amp; interview with confidence. It helps you assess your role fit, tailor resumes, communicate experience &amp; track applications. Unlike basic ATS tools, HireKey combines AI with 10 years of recruiting experience at Microsoft, Amazon &amp; Stripe, plus practice out loud with an interactive AI voice coach that responds to your answers &amp; provides real-time interview feedback.",
+  "makers": [
+   {
+    "name": "Nela Davis",
+    "username": "founder92",
+    "headline": "Building a smarter way to job search"
+   },
+   {
+    "name": "Shahriar Hasan",
+    "username": "shahriardgm",
+    "headline": "CMO | SEO & Digital Marketing Strategist"
+   },
+   {
+    "name": "Lance Davis Jr.",
+    "username": "lance_davis_jr_",
+    "headline": "Building tools for what I once needed."
+   },
+   {
+    "name": "Altaf Hussain",
+    "username": "altafali111",
+    "headline": null
+   }
+  ],
+  "hunter": "Jonno Riekwel",
+  "media": [
+   {
+    "uuid": "586457d1-e416-4f5c-8f53-6b8bd91db72a.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/M9ICHjfb_6A"
+   },
+   {
+    "uuid": "60a3a6bd-4c57-4032-a556-bf6835b080c7.png",
+    "type": "image",
+    "w": 1585,
+    "h": 992,
+    "video": null
+   },
+   {
+    "uuid": "e4591984-d53c-4434-a242-ac20c0fe8802.png",
+    "type": "image",
+    "w": 1586,
+    "h": 992,
+    "video": null
+   },
+   {
+    "uuid": "4c5b3df3-696f-4719-b9b7-7e4e3e1d4d28.png",
+    "type": "image",
+    "w": 1585,
+    "h": 992,
+    "video": null
+   },
+   {
+    "uuid": "ec7f20ef-7435-47aa-adbe-8ef292a43ec2.png",
+    "type": "image",
+    "w": 1585,
+    "h": 992,
+    "video": null
+   },
+   {
+    "uuid": "3bc917f5-4b9c-4514-8f5e-00533823999a.png",
+    "type": "image",
+    "w": 1585,
+    "h": 992,
+    "video": null
+   }
+  ],
+  "links": [
+   "hirekey.io"
+  ],
+  "badges": [
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "HireKey",
+  "slug": "hirekey",
+  "tagline": "Your recruiter-informed AI copilot for tech job search",
+  "description": "HireKey is a recruiter-informed AI job-search co-pilot for tech job seekers who want to apply strategically & interview with confidence. It helps you assess your role fit, tailor resumes, communicate experience & track applications. Unlike basic ATS tools, HireKey combines AI with 10 years of recruiting experience at Microsoft, Amazon & Stripe, plus practice out loud with an interactive AI voice coach that responds to your answers & provides real-time interview feedback.",
+  "websiteUrl": "https://hirekey.io",
+  "reviewsCount": 1,
+  "reviewsRating": 5,
+  "followersCount": 616,
+  "twitterUrl": "",
+  "linkedinUrl": "",
+  "instagramUrl": "",
+  "githubUrl": "",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/60a3a6bd-4c57-4032-a556-bf6835b080c7.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/e4591984-d53c-4434-a242-ac20c0fe8802.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/4c5b3df3-696f-4719-b9b7-7e4e3e1d4d28.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/ec7f20ef-7435-47aa-adbe-8ef292a43ec2.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/3bc917f5-4b9c-4514-8f5e-00533823999a.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5914208",
+   "depth": 0,
+   "author": "Nela Davis",
+   "username": "founder92",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt! 👋 I’m Nela, co-founder of HireKey I spent 10 years recruiting for technical and non-technical roles at Microsoft, Amazon, and Stripe, to name a few. I reviewed thousands of resumes and interviewed thousands of candidates. Time and time again, I saw qualified people get passed over simply because their resumes didn’t connect their experience to the role, or because they struggled to explain that experience in an interview. They had the right skills, but hiring managers weren’t seeing the connection. That stayed with me because many of those people were incredibly talented, genuine people whom I had to give the unfortunate news of rejection, which is honestly the worst part of recruiting. So, we built HireKey around the recruiting knowledge I’d gathered over those 10 years, giving job seekers access to the perspective from the other side of the hiring table. HireKey helps you assess how your experience fits a role, tailor your resume, practice interviews with an interactive AI voice coach, and track your applications in one place. How it works 1. Add the job and your master resume. Find a role you want to apply for and add its title, company, location, and job descr"
+  },
+  {
+   "id": "5945868",
+   "depth": 1,
+   "author": "Neeraj Nathany",
+   "username": "neerajnathany",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "Congratulations on the launch, Nela! 🎉 Finishing at #1 is a wonderful result, and it makes sense — ten years of recruiting on the other side of the table is exactly the perspective job seekers never get to see. The interview practice part sounds like the piece that would help people most!"
+  },
+  {
+   "id": "5940381",
+   "depth": 0,
+   "author": "Enio Aguiar",
+   "username": "wwenioaguiar",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "I'm a junior backend dev in Brazil applying for remote roles, both local and international. Two questions: does the recruiter input carry over to hiring outside big US tech, and does the voice coach give feedback to non-native English speakers, or only on the content of the answer?"
+  },
+  {
+   "id": "5940477",
+   "depth": 1,
+   "author": "Nela Davis",
+   "username": "founder92",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@wwenioaguiar thank you, and great questions. Our recruiter perspective comes from US tech, but HireKey looks at the requirements of the specific role you’re applying to. Showing relevant backend work and being clear about what you personally built can help across markets. We haven’t validated every recommendation against Brazilian hiring practices, so I wouldn’t claim the guidance is universal. For English interview practice, you can answer the voice coach out loud. It gives feedback on the content and structure of your answer, including how clearly you explain your actions and results. It doesn’t grade your accent, pronunciation, or fluency, and speech recognition can sometimes mishear words. You can also type your answer. Are you applying to roles with English interviews, Portuguese interviews, or both? This can help us prioritize language features."
+  },
+  {
+   "id": "5940514",
+   "depth": 2,
+   "author": "Enio Aguiar",
+   "username": "wwenioaguiar",
+   "ai": "High",
+   "score": null,
+   "badges": [
+    "ai_generated"
+   ],
+   "text": "@founder92 &nbsp;Thanks for the straight answer, the \"not universal\" part is useful to know. So far all my applications have been in Portuguese, for Brazilian companies. The international roles I want to try next interview in English, and that's where a voice coach would help. Feedback on how clearly I explain what I built is the part I need most: my projects are solo, and it's easy to either undersell them or explain every detail. If you add pronunciation feedback later, non-native speakers would be a big group to test it with."
+  },
+  {
+   "id": "5940531",
+   "depth": 1,
+   "author": "Nela Davis",
+   "username": "founder92",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@wwenioaguiar that balance between underselling a solo project and explaining every detail is exactly what I’d want the coach to help with. If you try an English practice question, I’d love to hear where the feedback helps and where it falls short. I’d also be happy to spend 15–20 minutes talking through one of your project answers and sharing my recruiter perspective. Your experience would help us improve HireKey too. If you’re interested, email me at hello@hirekey.io . And thank you for the thoughtful offer to help test pronunciation feedback if we build it."
+  },
+  {
+   "id": "5939250",
+   "depth": 0,
+   "author": "Khaild Naseem",
+   "username": "khaildnaseem",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Does the voice coach evaluate answer structure as well as technical accuracy?"
+  },
+  {
+   "id": "5939299",
+   "depth": 1,
+   "author": "Nela Davis",
+   "username": "founder92",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@khaildnaseem &nbsp;Yes on structure. The coach helps you work through an answer using STAR and points out where you could add clarity or detail. I wouldn’t treat it as a definitive check of technical accuracy, though. However, if we get enough interest or feature requests for technical interviews with accuracy evaluation criteria, we are open to exploring and building."
+  },
+  {
+   "id": "5940470",
+   "depth": 0,
+   "author": "David Odukoya",
+   "username": "davidoduk",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "Great product and congrats on the launch! In an increasingly crowded space, I think this is the first product I've seen that stays with the applicant through the whole process, from application to interview practice. How does the voice coach adapt to different personalities, industries, fields?"
+  },
+  {
+   "id": "5940538",
+   "depth": 1,
+   "author": "Nela Davis",
+   "username": "founder92",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@davidoduk thank you. Keeping the steps connected was a big part of why we built HireKey. The interview questions for recruiter screen and hiring manager interviews are generated around the specific role and job description, so practice can reflect different fields. For the voice interview coach, during an answer, the voice coach follows what you actually say and asks for more detail when your contribution, decisions, or results aren’t clear. It doesn’t profile your personality or try to make everyone sound the same. The goal is to help you explain your own experience with enough substance for an interviewer to understand it."
+  },
+  {
+   "id": "5940034",
+   "depth": 0,
+   "author": "Ayush",
+   "username": "gladcode",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "How about adding MCP to this, mostly I use AI to apply for the jobs, and its really pain for me adding each job on this platform after applying, so if it could have MCP, AI can do that for me, and I can use it more efficiently."
+  },
+  {
+   "id": "5940457",
+   "depth": 1,
+   "author": "Nela Davis",
+   "username": "founder92",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@gladcode you’re right that adding every job by hand is a pain. We’re almost done building a Chrome extension (it wasn't ready to go live by today's launch date). We are aiming to launch it within the next two weeks, and it will let you auto capture a job posting into HireKey without retyping it. The idea is to get the job into HireKey before you apply, so you can check the fit and tailor your resume for that role first and use your tailored resume to apply. Your MCP suggestion is interesting too, especially if your AI assistant could bring a job into HireKey at that point in the process. Which AI tool are you using today?"
+  },
+  {
+   "id": "5939283",
+   "depth": 0,
+   "author": "Sebastian",
+   "username": "sheikh_umair1",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "The number of tabs I keep open while job hunting is ridiculous."
+  },
+  {
+   "id": "5939314",
+   "depth": 1,
+   "author": "Nela Davis",
+   "username": "founder92",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@sheikh_umair1 &nbsp;the job search tab collection gets out of hand fast 😅 I’ve personally experienced “I’ll come back to this one” turn into 15 open roles. That’s exactly the kind of chaos we wanted the Job Tracker to help with."
+  },
+  {
+   "id": "5939748",
+   "depth": 0,
+   "author": "KP",
+   "username": "thisiskp_",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats on the launch! Whats your fav use case among all of them?"
+  },
+  {
+   "id": "5939790",
+   "depth": 1,
+   "author": "Nela Davis",
+   "username": "founder92",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@thisiskp_ &nbsp;Thank you. I have a soft spot for interviews, so for me it's the ability to practice interviewing out loud with the interview voice coach. Even speaking from my own experience, you can know your work inside out and still freeze when someone asks you to talk through it. I love that people can get real interview practice before the actual interview."
+  }
+ ],
+ "warning": "launch slug hirekey-2 != requested hirekey"
+}

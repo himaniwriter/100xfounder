@@ -1,0 +1,351 @@
+{
+ "slug": "spotsnow",
+ "ph_url": "https://www.producthunt.com/posts/spotsnow",
+ "existing_listing_slug": null,
+ "website": "https://spotsnow.io",
+ "excerpt": "SpotsNow shows which brands advertise on which podcasts and lets you book host-read spots. Free plan; Starter $89, Intelligence $349 per user.",
+ "content": "<p>SpotsNow is a platform for podcast advertising. You can look up a brand and see which shows it has advertised on and roughly what it spends, look up a show and see its recent advertisers and ad load, or browse by industry. To act on what you find, you enter your website and budget, and SpotsNow ranks shows by predicted conversion for your audience, builds a campaign and sends booking requests to the hosts. You pay only once a host accepts, and discounted last-minute spots are listed separately. Results can be tracked with audio pixels that shows place in their episodes.</p><p>The site says it covers more than 59,000 shows. A paid Intelligence plan connects the data to Claude, ChatGPT or Cursor through an MCP connector so you can ask questions in plain language, and SpotsNow Pro is a managed service that plans and negotiates campaigns for a fee of 12% of ad spend (15% under $30,000 a month).</p><p>SpotsNow is run by Drop Station Inc. (doing business as Station and SpotsNow), based in Chattanooga, Tennessee, according to its privacy policy. Cam Pritchard, its CEO and co-founder, launched it on Product Hunt on 28 May 2026, where it finished #2 for the day and #5 for the week with 472 upvotes and 67 comments.</p><p><em>We have not tested SpotsNow ourselves. This page brings together its official site, pricing and privacy policy, its Product Hunt launch and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Advertising",
+  "platform": "Web app, with an MCP connector for Claude, ChatGPT and Cursor",
+  "starts_at": "Free plan; Starter $89 per user",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Podcast ad intelligence and a marketplace for booking host-read podcast spots",
+  "maker": {
+   "name": "Cam Pritchard",
+   "url": "https://www.producthunt.com/@campritchard"
+  },
+  "team": [
+   {
+    "name": "Cam Pritchard",
+    "role": "CEO and co-founder",
+    "url": "https://www.producthunt.com/@campritchard"
+   },
+   {
+    "name": "Abhishek Thory",
+    "role": "Founding engineer",
+    "url": "https://www.producthunt.com/@abhishek_thory"
+   },
+   {
+    "name": "Jeremy Boudinet",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@boudinet"
+   },
+   {
+    "name": "Aiza Arcilla",
+    "role": "Media and campaign operations",
+    "url": "https://www.producthunt.com/@aizuh"
+   },
+   {
+    "name": "Dishant Miyani",
+    "role": "Developer",
+    "url": "https://www.producthunt.com/@dishant_miyani18"
+   },
+   {
+    "name": "Keshav Bagaade",
+    "role": "Design engineer",
+    "url": "https://www.producthunt.com/@kshvbgde"
+   },
+   {
+    "name": "Sargam Poudel",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@sargampoudel"
+   }
+  ],
+  "ph": {
+   "rank": 2,
+   "votes": 472,
+   "comments": 67,
+   "followers": 1125,
+   "launched": "2026-05-28",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://youtu.be/EDOK9M1n7nY",
+  "use_cases": [
+   "Seeing which podcasts a competitor sponsors and roughly what it spends",
+   "Finding the brands that advertise in an industry, such as travel",
+   "Building a first podcast campaign from your website and budget",
+   "Booking discounted last-minute host-read spots",
+   "Tracking podcast ad results with audio pixels",
+   "Asking podcast ad questions in Claude or ChatGPT through the MCP connector"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Cam Pritchard says podcast advertising was one of the few big ad channels where basic competitive questions were hard to answer: who advertises on a show, what a brand spends, which brands are new to the channel. In his view the data existed but sat behind enterprise contracts and dated tools, and acting on it meant leaving the tool to write emails.",
+    "He describes SpotsNow as the version he wanted: free access to podcast ad spend data across about 60,000 shows, a modern interface, and a built-in marketplace so you can request a spot from a publisher as soon as you find a show that fits. He asked researchers to look up a brand and say what was missing."
+   ],
+   "attribution": "Cam Pritchard, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/spotsnow?comment=5364263"
+  },
+  "audience": {
+   "fit": [
+    "want to see where competitors or a whole industry advertise on podcasts",
+    "are a brand or agency planning a first host-read podcast campaign",
+    "want to fill a campaign with discounted last-minute spots",
+    "use Claude or ChatGPT and want to query podcast ad data there (Intelligence plan)"
+   ],
+   "not_fit": [
+    "need audited spend figures: the site does not explain how spend is estimated",
+    "want to browse shows by audience theme rather than by industry or advertiser: one commenter found that awkward",
+    "need pricing for the Team plan up front: it is quote-only"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices are from SpotsNow's subscribe page, in US dollars per user; the page lists monthly credit allowances but does not say whether the per-user price is monthly. A free trial is mentioned without a length.",
+   "url": "https://spotsnow.io/subscribe",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0 per user",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "20 credits a month; browse all shows with limited profile information; a profile page costs 1 credit and a campaign plan 3"
+    },
+    {
+     "name": "Starter",
+     "price": "$89 per user",
+     "amount": 89,
+     "currency": "USD",
+     "detail": "50 credits a month; Campaign Planner and search across SpotsNow"
+    },
+    {
+     "name": "Intelligence",
+     "price": "$349 per user",
+     "amount": 349,
+     "currency": "USD",
+     "detail": "Unlimited credits; Claude and ChatGPT MCP connector with unlimited queries"
+    },
+    {
+     "name": "Team",
+     "price": "Contact us",
+     "currency": "USD",
+     "detail": "For agencies and networks: multiple accounts, custom agents and integrations"
+    },
+    {
+     "name": "SpotsNow Pro (managed)",
+     "price": "12% of ad spend (15% under $30K a month)",
+     "currency": "USD",
+     "detail": "Planning, negotiation, briefs, attribution set-up and reporting; $5K minimum spend, no retainer and no markup on show rates"
+    }
+   ],
+   "notes": [
+    "Ad spots themselves are paid only after the host accepts the campaign; a declined request costs nothing.",
+    "Last-minute spots are advertised at up to 67% off."
+   ]
+  },
+  "alternatives": {
+   "intro": "Two established podcast advertising tools, each with a different focus. Prices come from each product's own site, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Magellan AI",
+     "url": "https://www.magellan.ai/",
+     "what": "Podcast ad intelligence, media planning, ad verification and measurement",
+     "starts_at": "Pricing not published; book a demo",
+     "difference": "An established enterprise tool covering several countries and broadcast radio, without a self-serve booking marketplace."
+    },
+    {
+     "name": "Podscribe",
+     "url": "https://podscribe.com/",
+     "what": "Podcast, streaming and radio ad measurement and attribution",
+     "starts_at": "$250/month platform fee plus $1.50 CPM for the first 2M podcast impressions",
+     "difference": "Focused on measuring campaigns you already run, priced by impressions, rather than on discovering and booking shows."
+    }
+   ]
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/spotsnow/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Free access to data that used to need an enterprise contract",
+     "Linking research with booking open inventory",
+     "Looking up specific brands and shows"
+    ],
+    "asked": [
+     "How attribution works for shows without promo codes (audio pixels, the founder said)",
+     "Whether you can see where a whole industry advertises (yes, by industry or category)",
+     "How to connect the data to Claude (makers pointed to a demo call; the site now lists an MCP connector)",
+     "Whether it measures business outcomes, not just impressions (makers said tracking can be set up in the platform)"
+    ],
+    "criticised": [
+     "Shows are organised by industry and advertiser, not by audience themes such as dating or wellness"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Pulling up specific brands and shows works very well.",
+     "author": "Ferdi Sigona",
+     "url": "https://www.producthunt.com/products/spotsnow?comment=5407627"
+    },
+    {
+     "text": "How do you handle attribution for shows that don't use promo codes?",
+     "author": "Yannik Galetto",
+     "url": "https://www.producthunt.com/products/spotsnow?comment=5407384"
+    },
+    {
+     "text": "I need to understand where travel startups place their ads and which exact ones they use. Is that possible?",
+     "author": "Natalia Iankovych",
+     "url": "https://www.producthunt.com/products/spotsnow?comment=5408735"
+    }
+   ]
+  },
+  "pros": [
+   "Free plan to look up brands and shows",
+   "Covers more than 59,000 shows, per the site",
+   "Research and booking in one place; you pay for a spot only once the host accepts",
+   "Audio pixel tracking for results",
+   "MCP connector for Claude, ChatGPT and Cursor on the Intelligence plan"
+  ],
+  "cons": [
+   "The site does not explain how ad spend is estimated",
+   "Intelligence plan is $349 per user, and the billing period is not stated",
+   "Team plan pricing is quote-only",
+   "Organised by industry and advertiser rather than audience theme"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/spotsnow",
+   "quotes": [
+    {
+     "author": "Yannik Galetto",
+     "url": "https://www.producthunt.com/products/spotsnow?comment=5407384",
+     "text": "How do you handle attribution for shows that don't use promo codes?",
+     "reply": "Cam Pritchard said SpotsNow uses audio pixels that shows add to their audio files, which advertisers pair with a pixel on their own website."
+    },
+    {
+     "author": "Natalia Iankovych",
+     "url": "https://www.producthunt.com/products/spotsnow?comment=5408735",
+     "text": "Can I see not just where a specific company is advertising, but where companies in a whole industry are advertising?",
+     "reply": "Abhishek Thory said you can search by brand, industry or podcast category, and pointed to the travel industry page."
+    }
+   ],
+   "x": {
+    "search_url": "https://x.com/search?q=spotsnow&f=live",
+    "posts": [
+     {
+      "url": "https://x.com/CampbellPritch1/status/2013977016119234992",
+      "author": "Campbell Pritchard",
+      "text": "Launch post describing SpotsNow as a way for agencies to spend last-minute budget and for shows to fill unsold host-read spots."
+     }
+    ]
+   }
+  },
+  "faq": [
+   {
+    "q": "What is SpotsNow?",
+    "a": "A podcast advertising platform that shows which brands advertise on which podcasts and roughly what they spend, and lets you plan and book host-read ad spots with the shows."
+   },
+   {
+    "q": "Is SpotsNow free?",
+    "a": "There is a free plan with 20 credits a month. Starter is $89 per user and Intelligence $349 per user; Team pricing is on request. The managed Pro service charges 12% of ad spend (15% under $30,000 a month)."
+   },
+   {
+    "q": "How does SpotsNow track podcast ad results?",
+    "a": "With audio pixels: shows place a pixel in the audio file and you add a matching pixel to your website, as the founder explained on Product Hunt."
+   },
+   {
+    "q": "Can I see where a whole industry advertises?",
+    "a": "Yes. The makers said you can search by brand, industry or podcast category, for example travel."
+   },
+   {
+    "q": "Can I use SpotsNow data in Claude or ChatGPT?",
+    "a": "Yes, on the Intelligence plan, through an MCP connector that also works with Cursor. SpotsNow says the connection is read-only and that it does not train on your data."
+   },
+   {
+    "q": "When do I pay for an ad spot?",
+    "a": "Only after the host accepts your campaign. If a host declines, you owe nothing and can request another show."
+   },
+   {
+    "q": "What are the alternatives to SpotsNow?",
+    "a": "Magellan AI for enterprise podcast ad intelligence and measurement, and Podscribe for usage-priced podcast ad measurement."
+   }
+  ],
+  "sources": [
+   {
+    "label": "SpotsNow official site",
+    "url": "https://spotsnow.io/"
+   },
+   {
+    "label": "SpotsNow for advertisers",
+    "url": "https://spotsnow.io/for-advertisers"
+   },
+   {
+    "label": "SpotsNow plans",
+    "url": "https://spotsnow.io/subscribe"
+   },
+   {
+    "label": "SpotsNow Pro",
+    "url": "https://spotsnow.io/pro"
+   },
+   {
+    "label": "SpotsNow Intelligence",
+    "url": "https://spotsnow.io/intelligence"
+   },
+   {
+    "label": "SpotsNow privacy policy",
+    "url": "https://spotsnow.io/privacy"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/spotsnow"
+   },
+   {
+    "label": "Magellan AI",
+    "url": "https://www.magellan.ai/"
+   },
+   {
+    "label": "Podscribe pricing",
+    "url": "https://podscribe.com/pricing"
+   },
+   {
+    "label": "Campbell Pritchard's launch post on X",
+    "url": "https://x.com/CampbellPritch1/status/2013977016119234992"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/78191890-86f0-4fcc-8f9a-37c4867a32a4.png?auto=format&fit=max&w=1400",
+    "alt": "SpotsNow graphic 'Find the highest converting shows for you' with a suggested campaign of 21 shows",
+    "credit": "Image: SpotsNow on Product Hunt",
+    "w": 9600,
+    "h": 4800
+   },
+   {
+    "url": "https://ph-files.imgix.net/6e75a758-c061-4f3d-af04-fcc83ef54c0d.png?auto=format&fit=max&w=1400",
+    "alt": "SpotsNow graphic 'Set up a campaign in minutes' showing the Confirm Campaign screen with instant bookings and custom quotes",
+    "credit": "Image: SpotsNow on Product Hunt",
+    "w": 9600,
+    "h": 4800
+   },
+   {
+    "url": "https://ph-files.imgix.net/b7b5d02d-4f31-4e52-afe9-867d3216b412.png?auto=format&fit=max&w=1400",
+    "alt": "SpotsNow Recent Campaigns tab showing which brands advertised on a show week by week",
+    "credit": "Image: SpotsNow on Product Hunt",
+    "w": 3420,
+    "h": 1958
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/78191890-86f0-4fcc-8f9a-37c4867a32a4.png?auto=format&fit=max&w=1400",
+    "alt": "SpotsNow graphic 'Find the highest converting shows for you' with a suggested campaign of 21 shows",
+    "credit": "Image: SpotsNow on Product Hunt"
+   },
+   {
+    "url": "https://ph-files.imgix.net/6e75a758-c061-4f3d-af04-fcc83ef54c0d.png?auto=format&fit=max&w=1400",
+    "alt": "SpotsNow graphic 'Set up a campaign in minutes' showing the Confirm Campaign screen with instant bookings and custom quotes",
+    "credit": "Image: SpotsNow on Product Hunt"
+   },
+   {
+    "url": "https://ph-files.imgix.net/b7b5d02d-4f31-4e52-afe9-867d3216b412.png?auto=format&fit=max&w=1400",
+    "alt": "SpotsNow Recent Campaigns tab showing which brands advertised on a show week by week",
+    "credit": "Image: SpotsNow on Product Hunt"
+   }
+  ]
+ }
+}

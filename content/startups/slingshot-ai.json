@@ -1,0 +1,81 @@
+{
+ "slug": "slingshot-ai",
+ "website": "https://slingshotai.com/",
+ "excerpt": "Slingshot AI is a New York mental health research lab that makes Ash, an AI app for talking through stress, anxiety and relationships. It launched Ash publicly in July 2025 with $93M raised.",
+ "content": "<p>Slingshot AI is a company building AI for mental health. It describes itself as a mental health research lab building a foundation model for psychology, with the mission of using AI to make mental health care more accessible. Its consumer product is Ash, an app you can talk or text with about stress, anxiety, relationships or a bad day. Ash's website says it remembers your stories, preferences and progress so conversations pick up where they left off, offers weekly insights that link today's situation to patterns over time, and is designed as a private, judgment-free space.</p><p>Slingshot says it set out to build its psychology model in January 2024. In July 2025 it announced the public launch of Ash alongside an extension of its Series A co-led by Radical Ventures and Forerunner Ventures, joining earlier investors a16z, Felicis and Menlo Ventures and bringing total funding to $93 million, according to its Business Wire announcement and Pulse 2.0. At launch Ash was offered as a free app on iOS and Android, after about 18 months of development and a beta with tens of thousands of users. Pulse 2.0 reported that, unlike general-purpose assistants, Ash uses a specialised psychological model trained on a large behavioural health dataset covering several therapeutic approaches. Coverage named Daniel Cahn as co-founder and CEO and Neil Parikh as co-founder and president.</p><p>Ash is not a crisis service or a substitute for emergency care. Its website says Ash is not designed to be used in a crisis and that anyone in crisis should seek professional help or a crisis line. Slingshot positions Ash as a complement to human clinicians rather than a replacement.</p><p>This profile draws on Slingshot's and Ash's own pages and published reporting. It is not medical advice. We have not tested the app, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI for mental health",
+  "platform": "iOS, Android and web",
+  "starts_at": "Free to download",
+  "schema_category": "HealthApplication",
+  "summary_short": "Ash, an AI app for talking through stress, anxiety and relationships, built on a psychology-specific model",
+  "maker": {"name": "Slingshot AI Inc", "url": "https://slingshotai.com/"},
+  "team": [
+   {"name": "Daniel Cahn", "role": "Co-founder and CEO"},
+   {"name": "Neil Parikh", "role": "Co-founder and President"}
+  ],
+  "gallery": [
+   {"url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a0/50/56/a0505695-15a9-20c2-88a8-ff04b657b56a/ash-appstore-01-untangle-1320x2868.png/600x1304bb.jpg", "alt": "Ash app store image: the word Ash above a line drawing of a walking figure whose head is a tangle of scribbles, captioned Untangle your thoughts", "credit": "Image: Slingshot AI, from Ash's App Store listing", "w": 600, "h": 1304},
+   {"url": "https://framerusercontent.com/images/nAgyWnqNpDrx3wdUcQGslqJvp6w.png", "alt": "The slingshot AI wordmark in white over a blurred blue, orange and yellow gradient", "credit": "Image: Slingshot AI", "w": 1200, "h": 630},
+   {"url": "https://framerusercontent.com/images/9AcZJyICevtVVL9vPJdPtQt7O44.png", "alt": "The word Ash in dark serif type over a soft pink, yellow and green pastel background", "credit": "Image: Slingshot AI", "w": 1200, "h": 630}
+  ],
+  "use_cases": [
+   "Talking through stress, anxiety or a bad day by voice or text",
+   "Reflecting on relationship problems in a private space",
+   "Spotting patterns over time with weekly insights",
+   "Keeping up support between sessions with a human therapist"
+  ],
+  "audience": {
+   "fit": [
+    "want somewhere private to talk through everyday stress or worries",
+    "find it hard to get or afford regular therapy and want extra support",
+    "like voice or text conversations that remember context"
+   ],
+   "not_fit": [
+    "are in crisis: Ash says it is not designed for crisis use; contact a crisis line or emergency services",
+    "need diagnosis or medication, which require a licensed clinician"
+   ]
+  },
+  "pricing": {
+   "intro": "Ash is listed as free on the Apple App Store and was launched as a free iOS and Android app, per Slingshot's July 2025 announcement. Ash's website does not show a subscription price.",
+   "plans": [
+    {"name": "Ash app", "price": "Free to download", "detail": "iOS, Android and a web app"}
+   ],
+   "notes": ["Check the app for any in-app purchases or future paid features."],
+   "url": "https://www.talktoash.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Free to download",
+   "Model built specifically for psychology rather than a general chatbot",
+   "Clear statement that it is not for crisis use"
+  ],
+  "cons": [
+   "Not a replacement for a licensed therapist",
+   "AI mental health tools are still new and evidence is limited"
+  ],
+  "alternatives": {
+   "intro": "Other digital mental health support apps. We have not compared them hands-on.",
+   "items": [
+    {"name": "Wysa", "url": "https://www.wysa.com/", "what": "AI chatbot for mental wellbeing with optional human coaching", "tags": ["Mental health", "AI"], "starts_at": "See its own pricing page", "difference": "Offers paid sessions with human coaches alongside the AI."},
+    {"name": "Headspace", "url": "https://www.headspace.com/", "what": "Meditation, mindfulness and mental health app", "tags": ["Mental health"], "starts_at": "See its own pricing page", "difference": "Centres on guided meditation content and therapy access in some markets."},
+    {"name": "BetterHelp", "url": "https://www.betterhelp.com/", "what": "Online therapy with licensed therapists", "tags": ["Therapy"], "starts_at": "See its own pricing page", "difference": "Human therapists rather than an AI."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Ash?", "a": "An AI app from Slingshot AI for talking through stress, anxiety, relationships and other everyday mental health concerns, by voice or text."},
+   {"q": "Is Ash free?", "a": "It is listed as free on the App Store and was launched as a free app for iOS and Android."},
+   {"q": "Can Ash help in a crisis?", "a": "No. Ash's website says it is not designed to be used in a crisis; people in crisis should seek professional help or a crisis line."},
+   {"q": "How much has Slingshot AI raised?", "a": "$93 million in total as of its July 2025 announcement, from investors including a16z, Felicis, Menlo, Radical Ventures and Forerunner Ventures."}
+  ],
+  "sources": [
+   {"label": "Slingshot AI website", "url": "https://slingshotai.com/"},
+   {"label": "Ash website", "url": "https://www.talktoash.com/"},
+   {"label": "Business Wire: Slingshot launches Ash, the first AI designed for therapy (22 Jul 2025)", "url": "https://www.businesswire.com/news/home/20250722566346/en/Slingshot-Launches-Ash-the-First-AI-Designed-for-Therapy"},
+   {"label": "Pulse 2.0: Slingshot reveals $93 million in funding and launches Ash", "url": "https://pulse2.com/slingshot-reveals-93-million-in-funding-and-launches-ash/"},
+   {"label": "Behavioral Health Business: With $93M raised, Slingshot AI debuts AI-powered therapy service", "url": "https://bhbusiness.com/2025/07/22/with-93m-raised-slingshot-slingshot-ai-debuts-ai-powered-therapy-service/"},
+   {"label": "Apple App Store: Ash - AI for Mental Health", "url": "https://apps.apple.com/us/app/ash-ai-for-mental-health/id6474862947"}
+  ]
+ }
+}

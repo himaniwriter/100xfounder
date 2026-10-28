@@ -1,0 +1,83 @@
+{
+ "slug": "yotpo",
+ "website": "https://www.yotpo.com/",
+ "excerpt": "Yotpo is an e-commerce marketing platform for product reviews, user-generated content and loyalty programmes. Pricing, history, funding and alternatives.",
+ "content": "<p>Yotpo is a marketing software company for online stores. Its best-known product collects customer reviews after a purchase and shows them, with photos and ratings, on the store's product pages. Alongside reviews it sells a loyalty and referrals product for points, tiers and referral rewards, and a newer service it calls AI Visibility, aimed at how brands appear in AI-powered search and shopping assistants. Its homepage pitches the platform at e-commerce brands, and it is widely used by Shopify merchants.</p><p>Calcalist reports that Yotpo was founded in 2011 by Tomer Tagrin and Omri Cohen. Globes described the company in 2020 as having offices in Tel Aviv, Yokneam, New York, London and Sofia, and about 500 employees. At the time its products also included visual user-generated content and SMS marketing.</p><p>Funding came in several rounds. Globes reported a $75 million Series E in August 2020 at a valuation of nearly $1 billion, bringing total funding to $176 million. Calcalist reported a $230 million Series F in March 2021, led by Bessemer Venture Partners and Tiger Global, at a $1.4 billion valuation. After hiring heavily during the pandemic e-commerce boom, Yotpo laid off 70 people, about 9% of its staff, in November 2022, citing the economic slowdown.</p><p>Pricing is public for the entry tiers. When we checked, the Reviews product had a limited free plan for up to 50 orders a month, a Starter plan at $89 a month and a Pro plan at $169 a month, with Premium and Enterprise priced by quote. Loyalty has a free plan and paid tiers from $199 a month. Bundles of both products are offered at a discount.</p><p><em>This page is research, not a review. We have not used Yotpo; the facts come from Yotpo's own pages and the reporting listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "E-commerce reviews and loyalty software",
+  "platform": "Web app with Shopify and other e-commerce integrations",
+  "starts_at": "Free plan; Reviews Starter $89/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Product reviews, user-generated content and loyalty programmes for online stores",
+  "maker": {"name": "Yotpo", "url": "https://www.yotpo.com/"},
+  "team": [
+   {"name": "Tomer Tagrin", "role": "Co-founder and CEO"},
+   {"name": "Omri Cohen", "role": "Co-founder"}
+  ],
+  "gallery": [
+   {"url": "https://www.yotpo.com/wp-content/uploads/2024/02/SEO-HP@2x-1024x536.png", "w": 1024, "h": 536, "alt": "Yotpo wordmark in white on a solid blue background", "credit": "Image: Yotpo (yotpo.com)"},
+   {"url": "https://www.yotpo.com/apple-touch-icon.png", "w": 180, "h": 180, "alt": "Yotpo app icon: a white lower-case y in a blue circle", "credit": "Logo: Yotpo (yotpo.com)"}
+  ],
+  "use_cases": [
+   "Collecting product reviews by email after each order",
+   "Showing star ratings, photos and review summaries on product pages",
+   "Running a points, tiers and referral loyalty programme",
+   "Syndicating reviews to retailers and Google seller ratings on higher plans"
+  ],
+  "audience": {
+   "fit": [
+    "Shopify and other e-commerce brands that want reviews and loyalty from one vendor",
+    "growing stores that can use the free plan first and upgrade later",
+    "larger brands that need review syndication and roles and permissions"
+   ],
+   "not_fit": [
+    "very small shops on a tight budget once they pass 50 orders a month",
+    "businesses without an online store"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices from Yotpo's pricing page, checked 15 October 2026.",
+   "plans": [
+    {"name": "Reviews Free", "price": "$0", "detail": "Limited plan for up to 50 orders a month"},
+    {"name": "Reviews Starter", "price": "$89/month", "amount": 89, "currency": "USD", "detail": "Up to 500 orders a month; branded review collection and display"},
+    {"name": "Reviews Pro", "price": "$169/month", "amount": 169, "currency": "USD", "detail": "Adds seller ratings and AI writing and display features"},
+    {"name": "Reviews Premium and Enterprise", "price": "Custom quote", "detail": "Syndication, analytics, dedicated success manager"},
+    {"name": "Loyalty and Referrals", "price": "Free plan; paid from $199/month", "detail": "Tiers not itemised on the page"}
+   ],
+   "notes": ["Bundles of Reviews and Loyalty are offered at a lower combined price; the page does not list bundle prices."],
+   "url": "https://www.yotpo.com/pricing/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Free plans for both reviews and loyalty",
+   "Reviews and loyalty under one vendor",
+   "Public prices for the entry tiers"
+  ],
+  "cons": [
+   "Starter and Pro are capped at 500 orders a month",
+   "Top tiers need a sales quote"
+  ],
+  "alternatives": {
+   "intro": "Other review and loyalty tools for online stores. Check each vendor's pricing page for current plans.",
+   "items": [
+    {"name": "Judge.me", "url": "https://judge.me/", "what": "Product reviews app for Shopify and other platforms", "difference": "Positions itself as a low-cost reviews tool."},
+    {"name": "Okendo", "url": "https://www.okendo.io/", "what": "Reviews, loyalty and surveys for Shopify brands", "difference": "Shopify-focused customer marketing suite."},
+    {"name": "Bazaarvoice", "url": "https://www.bazaarvoice.com/", "what": "Ratings, reviews and UGC for brands and retailers", "difference": "Aimed at large brands with retail syndication networks."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Yotpo free?", "a": "Partly. Reviews has a limited free plan for up to 50 orders a month and Loyalty has a free plan. Paid Reviews plans start at $89 a month."},
+   {"q": "Who founded Yotpo?", "a": "Tomer Tagrin and Omri Cohen founded it in 2011, according to Calcalist."},
+   {"q": "How much is Yotpo valued at?", "a": "Its March 2021 Series F of $230 million valued it at $1.4 billion, Calcalist reported. We found no newer priced round."},
+   {"q": "Does Yotpo work with Shopify?", "a": "Yes. Yotpo is a Shopify partner and its apps install on Shopify stores."}
+  ],
+  "sources": [
+   {"label": "Yotpo: pricing", "url": "https://www.yotpo.com/pricing/"},
+   {"label": "Yotpo: homepage", "url": "https://www.yotpo.com/"},
+   {"label": "Calcalist: Yotpo lays off 70 employees", "url": "https://www.calcalistech.com/ctechnews/article/hy00chefus"},
+   {"label": "Globes: Yotpo raises $75m at valuation of nearly $1b", "url": "https://en.globes.co.il/en/article-1001338242"},
+   {"label": "Shopify Partners blog: Beyond the Build, Yotpo", "url": "https://www.shopify.com/partners/blog/beyond-the-build-yotpo"}
+  ]
+ }
+}

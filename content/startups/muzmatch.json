@@ -1,0 +1,147 @@
+{
+ "slug": "muzmatch",
+ "website": "https://muzz.com/us/en/",
+ "excerpt": "Muzz, formerly Muzmatch, is a London Muslim marriage and dating app founded by Shahzad Younas. Free to match and chat, with a paid Gold upgrade.",
+ "content": "<p>Muzz (formerly Muzmatch) is a dating and marriage app for Muslims. Members create profiles, swipe and match, chat, and can make video and voice calls without sharing their phone number, with privacy options such as blurring photos until there is a match (as TechCrunch described in 2017) and including a chaperone, or wali, in conversations. Its website says it is always free to see profiles, match, chat and marry on Muzz, and it sells a paid Gold membership with extra features. It also runs events and has launched Muzz Social, a social network for Muslims.</p><p>Shahzad Younas founded the app and runs it as CEO; the company is headquartered in London. UKTN reported in 2024 that Muzz was the first Muslim-focused startup backed by Y Combinator, had raised more than $9 million from investors including FJ Labs and Luxor Capital, and said it had 10 million members and that more than half a million people had married after meeting on it. TechCrunch covered Muzmatch's YC debut in 2017 and a $7 million Series A in 2019. The app has since rebranded as Muzz; its homepage now claims 20 million Muslim members and more than a million success stories, figures that are the company's own.</p><p>Muzz is free to download and use for the core features. Muzz Gold, the paid tier, costs money and is priced in the app by country and subscription length; we did not find a public price list.</p><p><em>We have not used Muzz for this page. It brings together Muzz's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Dating and marriage app",
+  "platform": "iOS, Android and web",
+  "starts_at": "Free; Muzz Gold priced in the app",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Muslim marriage and dating app with free matching and chat",
+  "maker": {
+   "name": "Muzz",
+   "url": "https://muzz.com/us/en/"
+  },
+  "team": [
+   {
+    "name": "Shahzad Younas",
+    "role": "Founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.muzz.com/website-v4/img/seo/web-image-desktop-v2.webp",
+    "alt": "Muzz banner on pink: the white butterfly Muzz logo between phones showing a couple's photo and a member profile",
+    "credit": "Image: Muzz (muzz.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://muzz.com/_next/image/?url=https%3A%2F%2Fcdn.muzz.com%2Fwebsite-v4%2Fimg%2Fmockups%2Findex-v3%2Fen-US%2Fmatch.png&w=1920&q=75",
+    "alt": "Two Muzz app screens: a man's profile card and a pink screen announcing You and Aaliyah matched",
+    "credit": "Image: Muzz (muzz.com)",
+    "w": 857,
+    "h": 981
+   }
+  ],
+  "use_cases": [
+   "Finding a Muslim partner for marriage",
+   "Chatting and video calling matches without sharing a phone number",
+   "Involving a guardian in conversations",
+   "Joining Muzz events and the Muzz Social community"
+  ],
+  "audience": {
+   "fit": [
+    "single Muslims looking for marriage",
+    "people who want privacy controls such as photo blurring",
+    "Muslims in the UK, US and other markets Muzz serves"
+   ],
+   "not_fit": [
+    "people looking for casual dating",
+    "non-Muslims"
+   ]
+  },
+  "pricing": {
+   "intro": "Muzz is free for profiles, matching, chat and calls. Muzz Gold is a paid upgrade priced in the app.",
+   "url": "https://muzz.com/us/en/",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "See profiles, match, chat and call"
+    },
+    {
+     "name": "Muzz Gold",
+     "price": "Shown in the app",
+     "detail": "Extra features; price varies by country and length"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Built around Muslim values and marriage intent",
+   "Core features are free",
+   "Privacy options such as photo blurring and guardians"
+  ],
+  "cons": [
+   "Gold pricing is not published",
+   "User and marriage numbers are the company's own claims"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Muzz. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Salams",
+     "url": "https://salams.app/",
+     "what": "Muslim marriage and dating app",
+     "starts_at": "See its own website",
+     "difference": "Direct rival aimed at the same audience."
+    },
+    {
+     "name": "Hinge",
+     "url": "https://hinge.co/",
+     "what": "Mainstream dating app",
+     "starts_at": "See its own website",
+     "difference": "Relationship-focused but not faith-specific."
+    },
+    {
+     "name": "Shaadi.com",
+     "url": "https://www.shaadi.com/",
+     "what": "South Asian matrimony site",
+     "starts_at": "See its own website",
+     "difference": "Matrimonial service across communities, popular in South Asia."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Muzz the same as Muzmatch?",
+    "a": "Yes. Muzmatch rebranded as Muzz."
+   },
+   {
+    "q": "Is Muzz free?",
+    "a": "Yes for profiles, matching, chat and calls. Muzz Gold is an optional paid upgrade."
+   },
+   {
+    "q": "Who founded Muzz?",
+    "a": "Shahzad Younas, who is also CEO."
+   },
+   {
+    "q": "Was Muzz backed by Y Combinator?",
+    "a": "Yes. UKTN reported it was the first Muslim-focused startup backed by YC."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Muzz homepage",
+    "url": "https://muzz.com/us/en/"
+   },
+   {
+    "label": "UKTN: Muzz founder Shahzad Younas interview",
+    "url": "https://www.uktech.news/news/founder-interviews/muzz-founder-shahzad-younas-20240322"
+   },
+   {
+    "label": "TechCrunch: YC-backed muzmatch",
+    "url": "https://techcrunch.com/2017/08/03/yc-backed-muzmatch-definitely-doesnt-want-to-be-tinder-for-muslims/"
+   },
+   {
+    "label": "TechCrunch: muzmatch adds $7M",
+    "url": "https://techcrunch.com/2019/07/26/muzmatch-adds-7m-to-swipe-right-on-muslim-majority-markets/"
+   }
+  ]
+ }
+}

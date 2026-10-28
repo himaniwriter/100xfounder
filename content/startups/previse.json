@@ -1,0 +1,67 @@
+{
+ "slug": "previse",
+ "website": "https://previse.co/en-gb/",
+ "excerpt": "Previse is a London fintech that started with InstantPay for faster supplier payments and now turns B2B transaction data into AI insights for finance teams.",
+ "content": "<p>Previse is a London financial technology company. It first became known for InstantPay, which TechCrunch described in 2020 as a way for large corporate buyers to pay suppliers quickly: machine learning looks at historical data to predict which invoices can safely be paid straight away and which are higher risk and need a manual check. At the time Previse said it processed about 100,000 invoices a day.</p><p>Its website now presents a broader data platform for finance teams. Previse connects to a company's ERP, accounts payable and receivable, source-to-pay, billing and CRM systems with no-code plugins, matches and monitors the data continuously, and turns it into analysis such as customer and supplier risk tracking, supply chain health checks, cash flow and liquidity management, fraud and error checks, and spend categorisation. Packaged products include SmartPay for automated early payments, SmartAccept for supplier enablement and SmartPlan for card programme forecasting, alongside consulting. It sells to enterprises, financial institutions and fintechs, and lists sites for the UK (covering EMEA and APAC) and the USA.</p><p>Paul Christensen founded Previse in 2016 and was its CEO when it raised money in 2020, according to TechCrunch.</p><h2>Funding</h2><p>Previse raised a $7 million Series A in 2018 led by Augmentum Fintech and Bessemer Venture Partners, UKTN reported. In April 2020 it raised $11 million led by Reefknot Investments and Mastercard, with Bessemer, Hambro Perks and Augmentum returning, taking total funding past $21.8 million, according to TechCrunch and Tech.eu.</p><h2>Pricing</h2><p>Previse does not publish prices. Its website asks companies to schedule a demo.</p><h2>Who it suits</h2><p>Previse suits finance, procurement and treasury teams at large companies, and banks or fintechs running supplier payment or card programmes, that want insight from transaction data spread across several systems. Small businesses are not its target.</p><p><em>We have not tested Previse. This page is based on its website (checked 15 October 2026) and on TechCrunch, Tech.eu and UKTN.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "B2B payments data and analytics",
+  "platform": "Web (SaaS) with ERP integrations",
+  "starts_at": "Quote on request",
+  "schema_category": "FinanceApplication",
+  "summary_short": "AI insights from B2B transaction data, from the makers of InstantPay",
+  "maker": {"name": "Previse", "url": "https://previse.co/en-gb/"},
+  "team": [{"name": "Paul Christensen", "role": "Founder; CEO in 2020", "url": "https://techcrunch.com/2020/04/15/financial-tech-startup-previse-raises-11-million-to-help-suppliers-get-paid-faster"}],
+  "gallery": [
+   {"url": "https://previse.co/en-gb/wp-content/uploads/sites/3/2024/11/connect__hero.png", "alt": "Diagram of Previse connecting source-to-pay, accounts receivable, ERP, accounts payable, billing and CRM systems into customer and supplier intelligence tables", "credit": "Image: Previse", "w": 1024, "h": 576},
+   {"url": "https://previse.co/en-gb/wp-content/uploads/sites/3/2024/11/decide__hero.png", "alt": "Previse illustration linking customer and supplier intelligence to insights on cash flow, stability and growth, and supply chain resilience, exported to Excel, Power BI and Azure", "credit": "Image: Previse", "w": 1024, "h": 576}
+  ],
+  "use_cases": [
+   "Paying approved suppliers early with automated decisions",
+   "Monitoring customer and supplier risk from transaction data",
+   "Checking supply chain health and spotting fraud or errors",
+   "Forecasting card programme spend",
+   "Getting one view of customers and suppliers across several ERPs"
+  ],
+  "audience": {
+   "fit": [
+    "run finance, procurement or treasury at a large company",
+    "are a bank or fintech running supplier payment or card programmes",
+    "have transaction data spread across several ERPs and systems"
+   ],
+   "not_fit": [
+    "run a small business with simple accounts payable",
+    "want self-serve software with published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Previse does not publish prices. Companies schedule a demo.",
+   "plans": [
+    {"name": "Platform and packaged solutions (SmartPay, SmartAccept, SmartPlan)", "price": "Quote on request", "detail": "Plus bespoke consulting"}
+   ],
+   "notes": [],
+   "url": "https://previse.co/en-gb/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other tools for supplier payments and finance data.",
+   "items": [
+    {"name": "Taulia (SAP)", "url": "https://taulia.com/", "what": "Working capital and early payment programmes", "tags": ["Supply chain finance"], "starts_at": "See its own site", "difference": "Part of SAP, focused on early payment and supply chain finance."},
+    {"name": "C2FO", "url": "https://c2fo.com/", "what": "Marketplace for early invoice payment", "tags": ["Early payment"], "starts_at": "See its own site", "difference": "Suppliers bid discounts for early payment."},
+    {"name": "Sievo", "url": "https://sievo.com/", "what": "Procurement and spend analytics", "tags": ["Spend analytics"], "starts_at": "See its own site", "difference": "Focused on procurement spend analysis."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Previse do?", "a": "It turns B2B transaction data from ERP and other finance systems into insights and automation, and it offers early supplier payment tools such as SmartPay."},
+   {"q": "What was InstantPay?", "a": "Previse's product that used machine learning to decide which supplier invoices could be paid immediately."},
+   {"q": "Who founded Previse?", "a": "Paul Christensen, in 2016."},
+   {"q": "Who has invested in Previse?", "a": "Mastercard, Reefknot Investments, Bessemer Venture Partners, Hambro Perks and Augmentum Fintech, among others."}
+  ],
+  "sources": [
+   {"label": "Previse website", "url": "https://previse.co/en-gb/"},
+   {"label": "TechCrunch: Previse raises $11 million (15 Apr 2020)", "url": "https://techcrunch.com/2020/04/15/financial-tech-startup-previse-raises-11-million-to-help-suppliers-get-paid-faster"},
+   {"label": "Tech.eu: Previse scores $11 million (16 Apr 2020)", "url": "https://tech.eu/2020/04/16/uk-fintech-startup-previse-scores-11-million-to-help-suppliers-invoices-get-paid/"},
+   {"label": "UKTN: Previse closes $7m Series A (Aug 2018)", "url": "https://www.uktech.news/news/investment-news/fintech-startup-PREvise-closes-7m-SERIES-a-20180820"}
+  ]
+ }
+}

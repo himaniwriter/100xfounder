@@ -1,0 +1,242 @@
+{
+  "type": "post",
+  "slug": "best-ai-video-generators-2026",
+  "title": "Best AI video generators in 2026: Veo, Runway, Kling, Pika, HeyGen",
+  "excerpt": "Sora is gone. We compare Google Veo and Omni, Runway, Kling, Pika, Synthesia and HeyGen on models, pricing as of 4 October 2026 and commercial-use terms.",
+  "category": "in-depth",
+  "tags": [
+    "AI video",
+    "Google Veo",
+    "Gemini Omni",
+    "Runway",
+    "Kling",
+    "Pika",
+    "HeyGen",
+    "Synthesia"
+  ],
+  "content": "<p>The best AI video generators in 2026 are Google's Gemini Omni and Veo 3.1, Runway Gen-4.5, Kling 3.0 (with Kling 4.0 rolling out now), and Pika for cinematic clips, plus Synthesia and HeyGen for presenter-style avatar videos. OpenAI's Sora, last year's headline act, is gone: the app closed in April 2026 and its API was switched off on 24 September. Here is what each costs as of 4 October 2026 and what its terms allow.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li><strong>Sora is discontinued.</strong> The app closed on 26 April 2026 and the API on 24 September.</li>\n<li><strong>Google has the broadest offer.</strong> Omni Flash comes with every paid Google AI plan, Veo 3.1 is sold by the second, and Google Vids is free.</li>\n<li><strong>Licensing differs more than quality.</strong> Pika and HeyGen keep commercial rights off their free plans. Kling's general terms bar commercial use of outputs without written permission. Runway and Synthesia don't claim ownership of what you make.</li>\n</ul>\n\n<h2>What happened to OpenAI Sora</h2>\n<p>OpenAI released Sora 2 alongside an invite-only iOS app called Sora on 30 September 2025, according to <a href=\"https://techcrunch.com/2025/09/30/openai-is-launching-the-sora-app-its-own-tiktok-competitor-alongside-the-sora-2-model\">TechCrunch</a>. It opened in the US and Canada. Its \"cameos\" feature let people verify themselves with a short recording, then let friends put that likeness into generated scenes.</p>\n<p>The run was short. OpenAI said on 24 March 2026 that it was closing Sora, and <a href=\"https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/\">TechCrunch</a> reported that the company gave no reason. It reported downloads falling from 3.3 million in November to 1.1 million in February. The app and website closed on 26 April 2026, according to <a href=\"https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/\">The Decoder</a>. OpenAI's <a href=\"https://developers.openai.com/api/docs/deprecations\">deprecations page</a> says the Videos API and all Sora 2 models were removed on 24 September 2026, with no replacement.</p>\n<p>Sora is here as a warning: if your work depends on one vendor's model, keep your prompts and source files and know where you would move. If you want to build these models rather than buy them, see roles at <a href=\"/jobs/company/openai/\">OpenAI</a> and our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs</a> board.</p>\n\n<!-- xf-image-2 -->\n\n<h2>The cinematic generators, tool by tool</h2>\n<h3>Google: Gemini Omni, Veo 3.1 and Flow</h3>\n<p>Google now has two video model families. The newer is Gemini Omni, announced at I/O on 20 May 2026 as a model that turns text, image, video or audio references into video, according to <a href=\"https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/\">Google's I/O round-up</a>. Omni Flash went to paid Google AI subscribers worldwide through the Gemini app and Flow, Google's AI filmmaking studio, and is free in YouTube Shorts Remix for adults. Google's <a href=\"https://ai.google.dev/gemini-api/docs/video\">Gemini API guide</a> now makes Omni Flash the default, keeping Veo 3.1 for native audio, extension and first-and-last-frame control.</p>\n<p>Veo 3.1 itself dates from 15 October 2025. According to the <a href=\"https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/\">Google Developers Blog</a>, it added richer audio, reference images and scene extension past a minute. Google added a cheaper Veo 3.1 Lite on Vertex AI, its cloud platform, on 4 April 2026, according to <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/veo-3-1-lite-and-a-new-veo-upscaling-capability-on-vertex-ai\">Google Cloud</a>. Google's <a href=\"https://deepmind.google/models/veo/\">Veo page</a> lists 1080p and 4K output.</p>\n<p><strong>Pricing as of 4 October 2026:</strong></p>\n<ul>\n<li><strong>Consumer plans:</strong> Google's <a href=\"https://gemini.google/us/subscriptions/?hl=en\">US plans page</a> lists AI Plus at $4.99 a month with 200 Flow credits and Gemini Omni Flash. AI Pro is $19.99 with 1,000 Flow credits and a limited trial of Veo 3.1 Lite. AI Ultra starts at $99.99, with a $199.99 top tier, and comes with 10,000 or 25,000 credits and the highest Veo 3.1 access. In India the same tiers cost ₹399, ₹1,950, and ₹6,500 or ₹19,500 a month.</li>\n<li><strong>Developers:</strong> the <a href=\"https://ai.google.dev/gemini-api/docs/pricing\">Gemini API pricing page</a> (updated 1 October 2026) charges per second of video. Veo 3.1 costs $0.40 at 720p or 1080p and $0.60 at 4K. Veo 3.1 Fast costs $0.10, $0.12 or $0.30, and Veo 3.1 Lite costs $0.05 or $0.08 with no 4K. Veo has no free API tier.</li>\n<li><strong>Free:</strong> since 23 September 2026, anyone with a personal Google or Workspace account can make 1080p clips in Google Vids with a Flash-Lite version of Gemini Omni 1.1, according to <a href=\"https://www.androidauthority.com/google-vids-omni-flash-lite-3714767/\">Android Authority</a>.</li>\n</ul>\n<p><strong>Licensing and labels:</strong> Google's <a href=\"https://policies.google.com/terms?hl=en-US\">Terms of Service</a> (effective 30 July 2026) say Google won't claim ownership of content you generate. Google still gets a licence to use it to run and improve services. Every Veo and Omni video carries SynthID, Google's invisible watermark. Google also added C2PA Content Credentials, an industry standard that records a file's origin and edits.</p>\n\n<h3>Runway Gen-4.5</h3>\n<p>Runway released Gen-4.5 on 1 December 2025. At launch it ranked first on the Artificial Analysis text-to-video benchmark with an Elo score of 1,247, according to <a href=\"https://runway.com/research/introducing-runway-gen-4.5\">Runway</a>. Runway admits objects can still appear or vanish.</p>\n<p><strong>Pricing as of 4 October 2026</strong>, from <a href=\"https://runway.com/pricing\">Runway's pricing page</a>: the Free plan gives 125 credits once. Standard is $15 a month, or $12 a month billed yearly, for 625 credits a month. Pro is $35 ($28 yearly) for 2,250 credits, and Max is $95 ($76 yearly) for 9,500 credits. Gen-4.5 uses 12 credits per second, so Standard covers about 52 seconds of Gen-4.5 video a month. Paid plans have no watermarks. They also include Kling 3.0 and other third-party models.</p>\n<p><strong>Licensing:</strong> Runway's <a href=\"https://runway.com/terms-of-use\">terms of use</a> (updated 15 September 2026) say it does not claim ownership of your inputs or outputs and does not restrict commercial use, as long as you follow the agreement. You do give Runway a perpetual, irrevocable licence to use inputs and outputs to train and improve its models.</p>\n\n<h3>Kling 3.0 and Kling 4.0</h3>\n<p>Kling belongs to Chinese short-video firm Kuaishou. Kling 3.0 launched on 5 February 2026 with Video 3.0, Video 3.0 Omni and two image models, according to Kuaishou's <a href=\"https://www.globenewswire.com/news-release/2026/02/05/3232837/0/en/kling-ai-launches-3-0-model-ushering-in-an-era-where-everyone-can-be-a-director.html\">press release</a>. It makes clips of up to 15 seconds with native audio in English, Chinese, Japanese, Korean and Spanish. Kuaishou said Kling had more than 60 million creators.</p>\n<p>Kling 4.0 is next. According to <a href=\"https://kling.ai/blog/kling-4-ai-video-model\">Kling's blog</a>, early access began on 28 September 2026 and the full model launches in October. It makes 3- to 30-second clips at up to 4K, with 10-bit HDR \"coming soon\". It accepts up to 10 keyframes. We could not read Kling's consumer prices, so check them in the app.</p>\n<p><strong>Licensing:</strong> read Kling's terms closely. Its <a href=\"https://kling.ai/docs/user-policy\">terms of service</a> (updated 21 April 2026) say you own the intellectual property in your content. They also say you may not use outputs for commercial purposes without Kling's written permission, and that outputs must be labelled as made with Kling AI. Kling has separate paid-service terms we could not retrieve, so confirm what your plan allows.</p>\n\n<!-- xf-image-3 -->\n\n<h3>Pika</h3>\n<p>Pika is now a multi-model studio. Its <a href=\"https://pika.art/\">homepage</a> describes a rebuilt \"new Pika\" announced on 17 September 2026. It brings video, image and sound together and offers Pika 2.5 alongside third-party models such as Seedance 2.5 and Google's Omni Flash.</p>\n<p><strong>Pricing as of 4 October 2026</strong>, from <a href=\"https://pika.art/pricing\">Pika's pricing page</a>: Free has no monthly credits (you buy packs). Starter is $10 a month ($8 yearly) for 900 credits. Creator is $35 ($28) for 3,150 credits, and Fancy runs $95 to $880 ($76 to $704) from 8,550 credits. All plans are watermark-free. Only Creator, Fancy and Enterprise include a commercial licence.</p>\n<p><strong>Licensing:</strong> Pika's <a href=\"https://pika.art/terms-of-service\">terms</a> (updated 4 August 2026) say you keep your outputs. Use is personal and non-commercial unless your plan expressly allows commercial use. Outside enterprise deals, Pika may train on anonymised or aggregated data.</p>\n\n<h2>Avatar tools: Synthesia and HeyGen</h2>\n<p>Synthesia and HeyGen put a lifelike presenter on screen to read your script, which suits training, sales and localised explainers.</p>\n<h3>Synthesia</h3>\n<p><a href=\"https://www.synthesia.io/pricing\">Synthesia's pricing page</a> lists a free Basic plan with 10 minutes of video a month and a Synthesia watermark. Starter is $29 a month billed monthly, with 1,250 credits (about 12 minutes of video) and no logo. Pro is $89 a month with 6,000 credits (about 60 minutes) and five personal avatars. Its <a href=\"https://www.synthesia.io/legal/customer-terms-of-service\">customer terms</a> (effective 20 July 2026) say customers own their output. Anyone whose likeness or voice becomes a custom avatar must be of legal age and give \"free and informed consent\". Synthesia's <a href=\"https://www.synthesia.io/features/avatars\">avatars page</a> says personal avatars need a live on-camera consent check that cannot be uploaded or skipped.</p>\n<h3>HeyGen</h3>\n<p><a href=\"https://www.heygen.com/pricing\">HeyGen's pricing page</a> lists a Free plan with three videos a month of up to one minute each, with access to its Avatar IV model. Creator is $29 a month with 600 credits, videos up to 30 minutes, 1080p export and no watermark. Pro is $49 with 1,000 credits and 4K export. Business is $149 a month plus $20 per seat. HeyGen's <a href=\"https://www.heygen.com/terms\">terms</a> (updated 23 July 2026) assign ownership of output to users on paid plans. Free-plan users get only a revocable, non-commercial licence. The terms ban uploading images of people without their consent, and HeyGen's <a href=\"https://www.heygen.com/avatars\">avatars page</a> says custom avatars need verified consent from the person being recreated.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Comparison table</h2>\n<table>\n<thead><tr><th>Tool</th><th>Latest model (date)</th><th>Entry paid price</th><th>Free tier</th><th>Commercial use</th></tr></thead>\n<tbody>\n<tr><td>OpenAI Sora</td><td>Sora 2 (30 Sep 2025)</td><td>Discontinued</td><td>None</td><td>App closed 26 Apr 2026; API removed 24 Sep 2026</td></tr>\n<tr><td>Google (Gemini app, Flow, Vids, API)</td><td>Gemini Omni Flash (20 May 2026); Veo 3.1 (15 Oct 2025)</td><td>AI Plus $4.99/mo; API from $0.05/sec</td><td>Omni 1.1 Flash-Lite in Google Vids</td><td>Google doesn't claim ownership; SynthID on every clip</td></tr>\n<tr><td>Runway</td><td>Gen-4.5 (1 Dec 2025)</td><td>Standard $15/mo ($12 yearly)</td><td>125 one-time credits</td><td>Not restricted; Runway may train on outputs</td></tr>\n<tr><td>Kling</td><td>Kling 3.0 (5 Feb 2026); 4.0 in early access</td><td>Not on pages we could read</td><td>Check the app</td><td>General terms require written permission and a Kling label</td></tr>\n<tr><td>Pika</td><td>\"New Pika\" (17 Sep 2026)</td><td>Starter $10/mo</td><td>Credit packs only</td><td>Creator plan ($35/mo) and above</td></tr>\n<tr><td>Synthesia</td><td>Avatar platform</td><td>Starter $29/mo</td><td>10 min/month, watermarked</td><td>Customer owns output; avatar consent required</td></tr>\n<tr><td>HeyGen</td><td>Avatar IV</td><td>Creator $29/mo</td><td>3 videos/month, 1 min each</td><td>Paid plans only</td></tr>\n</tbody>\n</table>\n<p>Prices in US dollars as of 4 October 2026. Compare seconds of output, not plan prices.</p>\n\n<h2>How to choose</h2>\n<ul>\n<li><strong>You need short cinematic shots for ads or social:</strong> try Google's Gemini Omni Flash through an AI Plus or Pro plan, then compare it with Runway Gen-4.5. Runway also includes Kling 3.0.</li>\n<li><strong>You are building a product:</strong> the Gemini API has clear per-second rates, from $0.05 a second for Veo 3.1 Lite at 720p. Sora's API ended on six months' notice, so design for swapping models.</li>\n<li><strong>You need talking-head training or sales videos:</strong> choose Synthesia or HeyGen. HeyGen's $49 Pro plan adds 4K export; Synthesia's Pro plan gives about an hour of video a month.</li>\n<li><strong>You are on a zero budget:</strong> Google Vids is free; HeyGen's free plan and Pika's free and Starter plans exclude commercial use.</li>\n<li><strong>You do client work:</strong> confirm commercial rights and save a copy of the terms on the day you publish.</li>\n</ul>\n<p>We track releases on our <a href=\"/launches/\">launches page</a> and in <a href=\"/news/\">news</a>.</p>\n\n<h2>Risks: deepfakes, consent and copyright</h2>\n<p><strong>Likeness and deepfakes.</strong> Sora showed how fast realistic faces get misused: TechCrunch reported unauthorised deepfakes of Martin Luther King Jr. and Robin Williams on the app. Never upload someone's face or voice without their written permission.</p>\n<p><strong>Disclosure rules.</strong> Article 50 of the EU AI Act requires providers of systems that generate synthetic audio, image or video to mark outputs in a machine-readable way. Anyone publishing a deepfake must disclose it. <a href=\"https://artificialintelligenceact.eu/article/50/\">ArtificialIntelligenceAct.eu</a> lists 2 August 2026 as the application date.</p>\n<p><strong>Copyright in your output.</strong> Owning an output under a vendor's terms is not the same as holding copyright in it. On 29 January 2025 the <a href=\"https://www.copyright.gov/newsnet/2025/1060.html\">US Copyright Office</a> concluded that prompts alone do not make someone the author of an AI output. Protection needs enough human expressive input. Where rights matter, confirm with a qualified IP lawyer.</p>\n<p><strong>Training on your work.</strong> Runway, Kling and Pika (outside enterprise deals) all take licences to use what you upload and generate to improve their models. Don't put confidential footage into consumer plans.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>In 2026, staying power, licence terms and consent matter as much as clip quality. Google offers the widest range of entry points, Runway the most flexible workspace, and Kling the longest clips once 4.0 ships, though its commercial terms need checking. For presenter videos, Synthesia and HeyGen are the safer choice.</p>\n\n<h2>FAQ</h2>\n<h3>Is OpenAI Sora still available?</h3>\n<p>No. The Sora app and website closed on 26 April 2026, and OpenAI removed the Sora 2 models and Videos API from its API on 24 September 2026.</p>\n<h3>Which AI video generator is free?</h3>\n<p>Google Vids makes free 1080p clips for personal Google accounts. Runway, Synthesia and HeyGen have limited free tiers.</p>\n<h3>Can I use AI-generated videos commercially?</h3>\n<p>It depends on the tool and plan. Runway doesn't restrict commercial use, and HeyGen and Pika allow it only on qualifying paid plans. Kling's general terms require written permission. Check the current terms before you publish.</p>\n<h3>Can I make an AI avatar of someone else?</h3>\n<p>Only with their consent. Synthesia requires a live on-camera consent check, and HeyGen requires verified consent from the person being recreated.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2025/09/30/openai-is-launching-the-sora-app-its-own-tiktok-competitor-alongside-the-sora-2-model\">\"OpenAI is launching the Sora app, its own TikTok competitor, alongside the Sora 2 model\"</a>, 30 September 2025</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/\">\"OpenAI's Sora was the creepiest app on your phone — now it's shutting down\"</a>, 24 March 2026</li>\n<li>The Decoder, <a href=\"https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/\">\"OpenAI sets two-stage Sora shutdown with app closing April 2026 and API following in September\"</a>, 28 March 2026</li>\n<li>OpenAI, <a href=\"https://developers.openai.com/api/docs/deprecations\">\"Deprecations\"</a>, accessed 4 October 2026</li>\n<li>Google, <a href=\"https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/\">\"100 things we announced at Google I/O 2026\"</a>, 20 May 2026</li>\n<li>Google AI for Developers, <a href=\"https://ai.google.dev/gemini-api/docs/video\">\"Video generation\"</a>, accessed 4 October 2026</li>\n<li>Google Developers Blog, <a href=\"https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/\">\"Introducing Veo 3.1 and new creative capabilities in the Gemini API\"</a>, 15 October 2025</li>\n<li>Google Cloud, <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/veo-3-1-lite-and-a-new-veo-upscaling-capability-on-vertex-ai\">\"Veo 3.1 Lite and a new Veo upscaling capability on Vertex AI\"</a>, 4 April 2026</li>\n<li>Google DeepMind, <a href=\"https://deepmind.google/models/veo/\">\"Veo\"</a>, accessed 4 October 2026</li>\n<li>Google, <a href=\"https://gemini.google/us/subscriptions/?hl=en\">\"Google AI plans\"</a>, accessed 4 October 2026</li>\n<li>Google AI for Developers, <a href=\"https://ai.google.dev/gemini-api/docs/pricing\">\"Gemini Developer API pricing\"</a>, updated 1 October 2026</li>\n<li>Android Authority, <a href=\"https://www.androidauthority.com/google-vids-omni-flash-lite-3714767/\">\"Google's Omni video generator is now free to try in Vids\"</a>, 23 September 2026</li>\n<li>Google, <a href=\"https://policies.google.com/terms?hl=en-US\">\"Google Terms of Service\"</a>, effective 30 July 2026</li>\n<li>Runway, <a href=\"https://runway.com/research/introducing-runway-gen-4.5\">\"Introducing Runway Gen-4.5\"</a>, 1 December 2025</li>\n<li>Runway, <a href=\"https://runway.com/pricing\">\"Pricing\"</a>, accessed 4 October 2026</li>\n<li>Runway, <a href=\"https://runway.com/terms-of-use\">\"Terms of Use\"</a>, updated 15 September 2026</li>\n<li>Kuaishou Technology via GlobeNewswire, <a href=\"https://www.globenewswire.com/news-release/2026/02/05/3232837/0/en/kling-ai-launches-3-0-model-ushering-in-an-era-where-everyone-can-be-a-director.html\">\"Kling AI Launches 3.0 Model, Ushering in an Era Where Everyone Can Be a Director\"</a>, 5 February 2026</li>\n<li>Kling AI, <a href=\"https://kling.ai/blog/kling-4-ai-video-model\">\"Inside Kling 4.0: A Complete Guide to AI Video Creation\"</a>, 30 September 2026</li>\n<li>Kling AI, <a href=\"https://kling.ai/docs/user-policy\">\"Kling AI Terms of Service\"</a>, updated 21 April 2026</li>\n<li>Pika, <a href=\"https://pika.art/\">\"Pika\" homepage</a>, accessed 4 October 2026</li>\n<li>Pika, <a href=\"https://pika.art/pricing\">\"Pricing\"</a>, accessed 4 October 2026</li>\n<li>Pika, <a href=\"https://pika.art/terms-of-service\">\"Terms of Service\"</a>, updated 4 August 2026</li>\n<li>Synthesia, <a href=\"https://www.synthesia.io/pricing\">\"Pricing\"</a>, accessed 4 October 2026</li>\n<li>Synthesia, <a href=\"https://www.synthesia.io/legal/customer-terms-of-service\">\"Customer Terms of Service\"</a>, effective 20 July 2026</li>\n<li>Synthesia, <a href=\"https://www.synthesia.io/features/avatars\">\"AI Avatars\"</a>, accessed 4 October 2026</li>\n<li>HeyGen, <a href=\"https://www.heygen.com/pricing\">\"Pricing\"</a>, accessed 4 October 2026</li>\n<li>HeyGen, <a href=\"https://www.heygen.com/terms\">\"Terms of Service\"</a>, updated 23 July 2026</li>\n<li>HeyGen, <a href=\"https://www.heygen.com/avatars\">\"AI Avatars\"</a>, accessed 4 October 2026</li>\n<li>US Copyright Office, <a href=\"https://www.copyright.gov/newsnet/2025/1060.html\">\"Copyright Office Releases Part 2 of Artificial Intelligence Report\"</a>, 29 January 2025</li>\n<li>ArtificialIntelligenceAct.eu, <a href=\"https://artificialintelligenceact.eu/article/50/\">\"Article 50: Transparency Obligations for Providers and Deployers of Certain AI Systems\"</a>, accessed 4 October 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Alexa_Mini_LF.jpg/1920px-Alexa_Mini_LF.jpg",
+      "alt": "ARRI Alexa Mini LF digital cinema camera mounted on a crane arm",
+      "caption": "AI video generators now compete with footage shot on professional cinema cameras like this one.",
+      "credit": "Photo: Rémi sim / Wikimedia Commons, CC BY 4.0",
+      "license": "CC BY 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alexa_Mini_LF.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1920px-BalticServers_data_center.jpg",
+      "alt": "Rows of server racks in a data centre aisle",
+      "caption": "Video generation needs a lot of computing power, which makes it expensive to run at consumer scale.",
+      "credit": "Photo: BalticServers.com / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Swarajati_Timeline_%E2%80%93_Editing_Files_%284%29.jpg/1920px-Swarajati_Timeline_%E2%80%93_Editing_Files_%284%29.jpg",
+      "alt": "Video editing software timeline open on a computer screen",
+      "caption": "Most AI clips still end up on an editing timeline before they are published.",
+      "credit": "Photo: Kinanthi Nugroho / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Swarajati_Timeline_%E2%80%93_Editing_Files_(4).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Green_screen_studio_%2825113564876%29.jpg/1920px-Green_screen_studio_%2825113564876%29.jpg",
+      "alt": "Home video studio with a green screen backdrop, lights and a camera",
+      "caption": "Avatar tools like Synthesia and HeyGen replace much of the traditional presenter shoot.",
+      "credit": "Photo: Colin and Sarah Northway / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Green_screen_studio_(25113564876).jpg"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/DigiDoug_DeepFake_at_TED2019.jpg/1920px-DigiDoug_DeepFake_at_TED2019.jpg",
+      "alt": "DigiDoug, a real-time digital human of researcher Doug Roble, shown on stage at TED2019",
+      "caption": "DigiDoug, a digital double of Doug Roble, at TED2019. Consent matters whenever a real face is recreated.",
+      "credit": "Photo: Steve Jurvetson / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:DigiDoug_DeepFake_at_TED2019.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://techcrunch.com/2025/09/30/openai-is-launching-the-sora-app-its-own-tiktok-competitor-alongside-the-sora-2-model",
+      "publisher": "TechCrunch",
+      "date": "2025-09-30",
+      "claim": "Sora 2 and Sora app launch date, invite-only iOS app in US/Canada, cameos feature"
+    },
+    {
+      "url": "https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/",
+      "publisher": "TechCrunch",
+      "date": "2026-03-24",
+      "claim": "OpenAI announced Sora shutdown, no reason given; downloads fell 3.3M (Nov) to 1.1M (Feb); deepfakes of MLK Jr. and Robin Williams"
+    },
+    {
+      "url": "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/",
+      "publisher": "The Decoder",
+      "date": "2026-03-28",
+      "claim": "Sora app and web closed 26 April 2026; API ending 24 September 2026"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "publisher": "OpenAI",
+      "date": "2026-10-04",
+      "claim": "Videos API and Sora 2 models removed from API on 24 September 2026; no replacement listed"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "publisher": "Google",
+      "date": "2026-05-20",
+      "claim": "Gemini Omni announcement, Omni Flash availability to AI Plus/Pro/Ultra and YouTube Shorts Remix, SynthID and C2PA Content Credentials"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/video",
+      "publisher": "Google AI for Developers",
+      "date": "2026-10-04",
+      "claim": "Gemini Omni Flash is the default video model in the Gemini API; Veo 3.1 for native audio, extension, frame control"
+    },
+    {
+      "url": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/",
+      "publisher": "Google Developers Blog",
+      "date": "2025-10-15",
+      "claim": "Veo 3.1 launch date and capabilities"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/veo-3-1-lite-and-a-new-veo-upscaling-capability-on-vertex-ai",
+      "publisher": "Google Cloud",
+      "date": "2026-04-04",
+      "claim": "Veo 3.1 Lite on Vertex AI as most cost-effective Veo model"
+    },
+    {
+      "url": "https://deepmind.google/models/veo/",
+      "publisher": "Google DeepMind",
+      "date": "2026-10-04",
+      "claim": "Veo 3.1 1080p and 4K output; SynthID marking"
+    },
+    {
+      "url": "https://gemini.google/us/subscriptions/?hl=en",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "Google AI Plus/Pro/Ultra US prices, Flow credits, Omni Flash and Veo access; INR prices from Indian page"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "publisher": "Google AI for Developers",
+      "date": "2026-10-01",
+      "claim": "Veo 3.1, Fast and Lite per-second API prices; no free tier"
+    },
+    {
+      "url": "https://www.androidauthority.com/google-vids-omni-flash-lite-3714767/",
+      "publisher": "Android Authority",
+      "date": "2026-09-23",
+      "claim": "Free Gemini Omni 1.1 Flash-Lite video generation in Google Vids at 1080p with SynthID"
+    },
+    {
+      "url": "https://policies.google.com/terms?hl=en-US",
+      "publisher": "Google",
+      "date": "2026-07-30",
+      "claim": "Google won't claim ownership of generated content; licence to operate and improve services"
+    },
+    {
+      "url": "https://runway.com/research/introducing-runway-gen-4.5",
+      "publisher": "Runway",
+      "date": "2025-12-01",
+      "claim": "Gen-4.5 release date, Artificial Analysis rank and 1,247 Elo, known limitations"
+    },
+    {
+      "url": "https://runway.com/pricing",
+      "publisher": "Runway",
+      "date": "2026-10-04",
+      "claim": "Runway plan prices, credits, 12 credits/sec for Gen-4.5, no watermarks on paid plans, Kling 3.0 included"
+    },
+    {
+      "url": "https://runway.com/terms-of-use",
+      "publisher": "Runway",
+      "date": "2026-09-15",
+      "claim": "Runway does not claim ownership or restrict commercial use; licence to train on inputs/outputs"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/02/05/3232837/0/en/kling-ai-launches-3-0-model-ushering-in-an-era-where-everyone-can-be-a-director.html",
+      "publisher": "Kuaishou Technology (GlobeNewswire)",
+      "date": "2026-02-05",
+      "claim": "Kling 3.0 models, 15-second clips, native audio languages, 60M+ creators"
+    },
+    {
+      "url": "https://kling.ai/blog/kling-4-ai-video-model",
+      "publisher": "Kling AI",
+      "date": "2026-09-30",
+      "claim": "Kling 4.0 early access 28 Sep 2026, October launch, 3-30 s clips, 4K, HDR coming soon, 10 keyframes"
+    },
+    {
+      "url": "https://kling.ai/docs/user-policy",
+      "publisher": "Kling AI",
+      "date": "2026-04-21",
+      "claim": "Users own IP; no commercial use of output without written permission; output must be labelled Kling AI; licence to Kling incl. model improvement"
+    },
+    {
+      "url": "https://pika.art/",
+      "publisher": "Pika",
+      "date": "2026-10-04",
+      "claim": "New Pika announced 17 Sep 2026; Pika 2.5, Seedance 2.5, Omni Flash models"
+    },
+    {
+      "url": "https://pika.art/pricing",
+      "publisher": "Pika",
+      "date": "2026-10-04",
+      "claim": "Pika plan prices, credits, no watermark, commercial licence only on Creator and above"
+    },
+    {
+      "url": "https://pika.art/terms-of-service",
+      "publisher": "Pika",
+      "date": "2026-08-04",
+      "claim": "Users retain outputs; non-commercial unless plan permits; training on anonymised/aggregated data"
+    },
+    {
+      "url": "https://www.synthesia.io/pricing",
+      "publisher": "Synthesia",
+      "date": "2026-10-04",
+      "claim": "Synthesia Basic/Starter/Pro prices, credits, minutes, watermark on free plan, personal avatars"
+    },
+    {
+      "url": "https://www.synthesia.io/legal/customer-terms-of-service",
+      "publisher": "Synthesia",
+      "date": "2026-07-20",
+      "claim": "Customer owns output; avatar subjects must be of legal age and give free and informed consent"
+    },
+    {
+      "url": "https://www.synthesia.io/features/avatars",
+      "publisher": "Synthesia",
+      "date": "2026-10-04",
+      "claim": "Live on-camera consent verification for personal avatars"
+    },
+    {
+      "url": "https://www.heygen.com/pricing",
+      "publisher": "HeyGen",
+      "date": "2026-10-04",
+      "claim": "HeyGen Free/Creator/Pro/Business prices, limits, watermark removal, 4K on Pro"
+    },
+    {
+      "url": "https://www.heygen.com/terms",
+      "publisher": "HeyGen",
+      "date": "2026-07-23",
+      "claim": "Paid plans own output; free plan personal non-commercial licence; no uploading images of people without consent"
+    },
+    {
+      "url": "https://www.heygen.com/avatars",
+      "publisher": "HeyGen",
+      "date": "2026-10-04",
+      "claim": "Custom avatars require verified consent"
+    },
+    {
+      "url": "https://www.copyright.gov/newsnet/2025/1060.html",
+      "publisher": "US Copyright Office",
+      "date": "2025-01-29",
+      "claim": "Prompts alone insufficient for copyright in AI outputs; human expressive input required"
+    },
+    {
+      "url": "https://artificialintelligenceact.eu/article/50/",
+      "publisher": "ArtificialIntelligenceAct.eu",
+      "date": "2026-10-04",
+      "claim": "EU AI Act Article 50 marking and deepfake disclosure; application date 2 August 2026"
+    }
+  ]
+}

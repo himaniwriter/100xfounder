@@ -1,0 +1,132 @@
+{
+ "slug": "slintel",
+ "website": "https://6sense.com/platform/sales-intelligence/",
+ "excerpt": "Slintel was a technographic and buyer-intelligence data company. 6sense acquired it in October 2021, and its data now ships inside 6sense's sales intelligence product.",
+ "content": "<p>Slintel sold B2B buyer intelligence: technographic data on which software tools companies use, signals about which companies were in the market to buy, and business contact data. Sales and marketing teams used it to build target account lists, prioritise prospects and personalise outreach. At the time of its sale, 6sense said Slintel captured more than 60 attributes across 15 million companies every week and that its revenue had grown 500% year on year.</p><p>Slintel raised money from Indian and global investors. Venture Intelligence, which tracks Indian deals, reported that between December 2019 and June 2021 it raised more than INR 185 crore from GGV Capital, Stellaris Venture Partners, Accel India and Sequoia Capital India. On 5 October 2021 6sense, the US account engagement platform, announced it had acquired Slintel, shortly after buying Fortella; the price was not disclosed, Demand Gen Report noted. 6sense said Slintel's data would feed audience building, AI predictions and account prioritisation in its platform.</p><p>Slintel no longer exists as a separate product. Its old website now redirects to 6sense's sales intelligence page, and its data is sold as part of 6sense, which does not publish prices. So anyone looking for Slintel today is really evaluating 6sense against other sales intelligence vendors such as ZoomInfo, Apollo.io and HG Insights. This page records what Slintel was and where it went, using 6sense's own announcement and trade press coverage of the deal.</p><p><em>We have not used Slintel for this page. It brings together Slintel's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Sales intelligence (acquired)",
+  "platform": "Web (now part of 6sense)",
+  "starts_at": "Sold as part of 6sense; quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Technographic and buyer-intent data, now part of 6sense",
+  "maker": {
+   "name": "Slintel",
+   "url": "https://6sense.com/platform/sales-intelligence/"
+  },
+  "gallery": [
+   {
+    "url": "https://6sense.com/wp-content/uploads/2025/03/6sense-primary-meta-d.png",
+    "alt": "6sense logo in white on a dark teal and blue gradient",
+    "credit": "Image: 6sense (6sense.com), which acquired Slintel",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://6sense.com/wp-content/uploads/2026/06/Sales-Intelligence-Image-1-Hero.png",
+    "alt": "A woman working at a laptop at a wooden table, framed by a teal hexagon, from 6sense's sales intelligence page",
+    "credit": "Image: 6sense (6sense.com)",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "use_cases": [
+   "Finding companies that use a particular software tool",
+   "Spotting accounts that show buying intent",
+   "Building target account lists for sales and marketing",
+   "Finding business contacts at target accounts"
+  ],
+  "audience": {
+   "fit": [
+    "B2B sales and marketing teams already using or evaluating 6sense",
+    "companies that sell software and target users of specific tools"
+   ],
+   "not_fit": [
+    "anyone looking for a standalone Slintel subscription, which no longer exists",
+    "small teams that want a cheap self-serve contact database"
+   ]
+  },
+  "pricing": {
+   "intro": "Slintel is no longer sold separately. Its data comes with 6sense, which does not publish prices.",
+   "url": "https://6sense.com/platform/sales-intelligence/",
+   "plans": [
+    {
+     "name": "6sense Sales Intelligence",
+     "price": "Quote on request",
+     "detail": "Includes the former Slintel data"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Its data now sits inside a larger account engagement platform",
+   "Technographic data was its specialty"
+  ],
+  "cons": [
+   "No longer available on its own",
+   "6sense pricing is not public"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Slintel. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "ZoomInfo",
+     "url": "https://www.zoominfo.com/",
+     "what": "B2B contact and company data",
+     "starts_at": "See its own website",
+     "difference": "The largest B2B data vendor, with technographic and intent data."
+    },
+    {
+     "name": "Apollo.io",
+     "url": "https://www.apollo.io/",
+     "what": "Sales intelligence and engagement",
+     "starts_at": "See its own website",
+     "difference": "Self-serve contact database with published prices and a free plan."
+    },
+    {
+     "name": "HG Insights",
+     "url": "https://hginsights.com/",
+     "what": "Technographic intelligence",
+     "starts_at": "See its own website",
+     "difference": "Specialist in data on what technology companies use and spend on."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What happened to Slintel?",
+    "a": "6sense acquired it in October 2021. Its website now redirects to 6sense, and the data is sold inside 6sense's platform."
+   },
+   {
+    "q": "What did Slintel do?",
+    "a": "It provided technographic data, buyer-intent signals and business contacts for B2B sales and marketing teams."
+   },
+   {
+    "q": "Who invested in Slintel?",
+    "a": "GGV Capital, Stellaris Venture Partners, Accel India and Sequoia Capital India, Venture Intelligence reported."
+   },
+   {
+    "q": "How much did 6sense pay for Slintel?",
+    "a": "The price was not disclosed."
+   }
+  ],
+  "sources": [
+   {
+    "label": "6sense press release: 6sense acquires Slintel",
+    "url": "https://www.newswire.ca/news-releases/6sense-acquires-slintel-to-provide-the-most-comprehensive-b2b-buyer-intelligence-and-ai-powered-insights-available-on-the-market-830433558.html"
+   },
+   {
+    "label": "Demand Gen Report: 6sense acquires Slintel",
+    "url": "https://www.demandgenreport.com/industry-news/6sense-acquires-slintel-to-enhance-intent-analysis-capabilities/7018/"
+   },
+   {
+    "label": "Venture Intelligence: Slintel acquired by 6sense",
+    "url": "https://news.ventureintelligence.com/private-equity/saas-analytics-co-slintel-acquired-by-usbased-6sense"
+   },
+   {
+    "label": "6sense sales intelligence (where slintel.com now points)",
+    "url": "https://6sense.com/platform/sales-intelligence/"
+   }
+  ]
+ }
+}

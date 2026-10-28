@@ -1,0 +1,76 @@
+{
+ "slug": "streamsets",
+ "website": "https://www.ibm.com/products/streamsets",
+ "excerpt": "StreamSets is a low-code platform for building streaming data pipelines. Software AG bought it in 2022 and IBM acquired it in July 2024; it is now IBM StreamSets.",
+ "content": "<p>StreamSets makes software for building data pipelines: the plumbing that moves data continuously from sources such as databases, applications, logs and message queues into data warehouses, data lakes and analytics tools. Its pitch has always been that pipelines can be designed visually, with a drag-and-drop canvas, and that they cope with data drift, meaning changes in the structure of incoming data that would break hand-written code. Today it is sold as IBM StreamSets.</p><p>IBM's product page describes a low-code interface for designing and deploying streaming pipelines, prebuilt processors that detect and adapt to data drift, support for structured, semi-structured and unstructured data, and a Python SDK. It can run as a software-as-a-service on AWS, Azure or Google Cloud, in a customer's own cloud account or virtual private cloud, or on the customer's own servers. IBM lists use cases such as fraud detection, customer 360 views, operational event processing and streaming data for AI, and it now sits inside IBM's watsonx.data integration family.</p><p>StreamSets has changed hands twice. In March 2022 RTInsights reported that Software AG had agreed to buy the company for €524 million (about $582 million), giving the German software firm entry into cloud data integration; Girish Pancha was StreamSets' CEO at the time. On 1 July 2024 IBM completed its purchase of StreamSets and webMethods from Software AG. IBM's press release said it would offer StreamSets as a premium feature in watsonx.data alongside DataStage and Databand, and that the two products together served more than 1,500 companies. IBM's quarterly filing with the US Securities and Exchange Commission puts the price for both at about $2.3 billion in cash.</p><p>IBM does not publish StreamSets prices on its product page. It offers a free trial and asks buyers to contact sales.</p><p><em>This page is research, not a review. We have not tested StreamSets; facts come from IBM's pages, an SEC filing and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Data integration and streaming pipelines",
+  "platform": "SaaS on AWS, Azure or Google Cloud; self-managed or on-premises",
+  "starts_at": "Free trial; pricing from IBM sales",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Low-code streaming data pipelines, now part of IBM watsonx.data integration",
+  "maker": {"name": "IBM (formerly StreamSets Inc.)", "url": "https://www.ibm.com/products/streamsets"},
+  "team": [{"name": "Girish Pancha", "role": "CEO of StreamSets at the 2022 Software AG acquisition"}],
+  "gallery": [
+   {"url": "https://web.archive.org/web/20240102104832im_/https://streamsets.b-cdn.net/wp-content/uploads/integration-pipelines-control-hub.png", "w": 1538, "h": 674, "alt": "StreamSets Control Hub pipeline canvas: a Snowflake pipeline with connected stages for a query consumer, data processing and a Snowflake destination", "credit": "Image: StreamSets (streamsets.com, January 2024), via the Internet Archive"},
+   {"url": "https://web.archive.org/web/20240102104832im_/https://streamsets.b-cdn.net/wp-content/uploads/StreamSets-softwareAG-full-color-crop.svg", "w": 222, "h": 63, "alt": "StreamSets logo, a blue swirl mark beside the word StreamSets, with the line A Software AG Company", "credit": "Logo: StreamSets (streamsets.com, January 2024), via the Internet Archive"}
+  ],
+  "use_cases": [
+   "Streaming database changes into a cloud data warehouse such as Snowflake or Databricks",
+   "Building pipelines with a visual canvas instead of hand-written code",
+   "Handling schema changes (data drift) without broken pipelines",
+   "Feeding real-time data to fraud detection and customer 360 systems",
+   "Moving data across hybrid and multi-cloud environments"
+  ],
+  "audience": {
+   "fit": [
+    "data engineering teams in large enterprises, especially existing IBM customers",
+    "companies running hybrid or on-premises data infrastructure",
+    "teams that want visual pipeline design with a Python SDK for automation"
+   ],
+   "not_fit": [
+    "small teams wanting transparent self-serve pricing",
+    "projects that only need simple batch copies between two SaaS tools"
+   ]
+  },
+  "pricing": {
+   "intro": "IBM does not list StreamSets prices on its product page. It offers a free trial and directs buyers to sales for a quote.",
+   "plans": [
+    {"name": "Free trial", "price": "Free", "detail": "Trial of IBM StreamSets"},
+    {"name": "IBM StreamSets", "price": "Contact sales", "detail": "SaaS or self-managed deployment"}
+   ],
+   "url": "https://www.ibm.com/products/streamsets",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Visual pipeline design with drift handling",
+   "Runs in IBM's cloud SaaS, your own cloud or on-premises",
+   "Backed by IBM's support and integration with DataStage and watsonx.data"
+  ],
+  "cons": [
+   "No public pricing",
+   "Two ownership changes since 2022 may concern some buyers"
+  ],
+  "alternatives": {
+   "intro": "Other data integration and streaming pipeline tools.",
+   "items": [
+    {"name": "Fivetran", "url": "https://www.fivetran.com/", "what": "Managed connectors that load data into warehouses", "difference": "Fully managed ELT with usage-based pricing."},
+    {"name": "Airbyte", "url": "https://airbyte.com/", "what": "Open-source data integration platform", "difference": "Open-source core you can self-host."},
+    {"name": "Confluent", "url": "https://www.confluent.io/", "what": "Data streaming platform built on Apache Kafka", "difference": "Event streaming backbone rather than a visual pipeline designer."}
+   ]
+  },
+  "faq": [
+   {"q": "Who owns StreamSets?", "a": "IBM. It completed the acquisition of StreamSets and webMethods from Software AG on 1 July 2024."},
+   {"q": "How much did IBM pay for StreamSets?", "a": "IBM's SEC filing puts the price for StreamSets and webMethods together at about $2.3 billion in cash."},
+   {"q": "What does StreamSets do?", "a": "It lets data teams design, run and monitor data pipelines through a low-code canvas, including real-time streaming pipelines."},
+   {"q": "Is there a free version of StreamSets?", "a": "IBM offers a free trial. Ongoing use is priced through IBM sales."}
+  ],
+  "sources": [
+   {"label": "IBM: StreamSets product page", "url": "https://www.ibm.com/products/streamsets"},
+   {"label": "IBM Newsroom: IBM completes acquisition of StreamSets and webMethods (July 2024)", "url": "https://newsroom.ibm.com/2024-07-01-IBM-Completes-Acquisition-of-StreamSets-and-webMethods,-Bolstering-its-Automation,-Data-and-AI-Portfolios"},
+   {"label": "IBM Form 10-Q, Q3 2024 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114324000049/ibm-20240930.htm"},
+   {"label": "RTInsights: Software AG acquires StreamSets (March 2022)", "url": "https://www.rtinsights.com/software-ag-streamsets-data-integration-acquisition/"}
+  ]
+ }
+}

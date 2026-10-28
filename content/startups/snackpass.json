@@ -1,0 +1,144 @@
+{
+ "slug": "snackpass",
+ "website": "https://www.snackpass.co/",
+ "excerpt": "Snackpass started as a social food-ordering app for college towns and now also runs a creator marketing network for local restaurants and brands.",
+ "content": "<p>Snackpass began in 2017 as a pickup-ordering app for restaurants near college campuses, with a social twist: friends could see where each other ordered, send gifts and earn rewards. TechCrunch reported in 2019 that it was founded by Kevin Tan and Jamie Marshall and had raised a $21 million Series A led by Andrew Chen of Andreessen Horowitz, attracted by its retention and its plan to expand from colleges to dense cities.</p><p>In 2021 Snackpass announced a $70 million Series B led by Craft Ventures, which QSR Magazine reported valued the company at more than $400 million. At the time it described itself as a social e-commerce platform for restaurants.</p><p>Its current website shows two businesses. The first is commerce: ordering and point of sale for restaurants across the Snackpass app, online and in store. The second, which leads the homepage, is a creator network. Local food creators apply to join, find paid collaborations with nearby restaurants and brands, and post about places they genuinely like; brands can have Snackpass run their creator programme for them. The restaurants shown on the site are mostly bubble tea shops, cafes and casual restaurants, such as Sharetea, Super Duper Burgers and California Fish Grill. We could not find news coverage of the creator business, so the description here comes from Snackpass's own site.</p><p>The app is free for customers. Snackpass does not publish prices for its restaurant software or creator marketing services; businesses book a demo or apply for access. Restaurants comparing it with other systems should ask for the full fee structure, including card processing and any commission on app orders, before switching.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Restaurant ordering and creator marketing",
+  "platform": "iOS, Android, web and in-store kiosks",
+  "starts_at": "Free app for customers; business pricing on request",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Ordering, point of sale and a creator network that connects local restaurants with creators",
+  "maker": {
+   "name": "Snackpass",
+   "url": "https://www.snackpass.co/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.snackpass.co/og-card.jpg",
+    "alt": "Snackpass logo, a white noodle-bowl icon beside the word Snackpass, on a bright blue gradient",
+    "credit": "Image: Snackpass (snackpass.co)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://www.snackpass.co/v2/assets/logo-lockup-blue.png",
+    "alt": "Snackpass logo lockup in blue: a rounded square app icon with a bowl, next to the word Snackpass",
+    "credit": "Image: Snackpass (snackpass.co)",
+    "w": 573,
+    "h": 120
+   }
+  ],
+  "use_cases": [
+   "Ordering pickup food from local restaurants",
+   "Running restaurant point of sale and online ordering",
+   "Finding paid collaborations as a food creator",
+   "Running a local creator marketing programme for a restaurant brand"
+  ],
+  "audience": {
+   "fit": [
+    "run a cafe, bubble tea shop or quick-service restaurant in a US city or college town",
+    "are a local food creator looking for paid collaborations",
+    "want ordering, POS and marketing from one vendor"
+   ],
+   "not_fit": [
+    "are outside the US",
+    "need enterprise POS for a large restaurant chain"
+   ]
+  },
+  "pricing": {
+   "intro": "The Snackpass app is free for customers. Snackpass does not publish prices for its ordering and POS software or its creator marketing services.",
+   "plans": [
+    {
+     "name": "Customer app",
+     "price": "Free",
+     "detail": "Pay for your order"
+    },
+    {
+     "name": "Restaurant ordering and POS",
+     "price": "Quote on request",
+     "detail": "Book a demo"
+    },
+    {
+     "name": "Creator marketing for brands",
+     "price": "Quote on request",
+     "detail": "Apply for access"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.snackpass.co/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Combines ordering, POS and creator marketing",
+   "Strong presence with campus and casual restaurants",
+   "Well-funded investors"
+  ],
+  "cons": [
+   "No public business pricing",
+   "Creator business is new and little independent reporting exists"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Toast",
+     "url": "https://pos.toasttab.com/",
+     "what": "Restaurant point of sale and online ordering",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Larger POS platform for restaurants of all sizes."
+    },
+    {
+     "name": "Square for Restaurants",
+     "url": "https://squareup.com/us/en/point-of-sale/restaurants",
+     "what": "POS and online ordering",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Self-serve with published pricing."
+    },
+    {
+     "name": "Popular Pays",
+     "url": "https://popularpays.com/",
+     "what": "Creator marketing platform",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Creator marketplace for brands generally, not local restaurants."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded Snackpass?",
+    "a": "Kevin Tan and Jamie Marshall, in 2017, according to TechCrunch."
+   },
+   {
+    "q": "How much has Snackpass raised?",
+    "a": "Its last announced round was a $70 million Series B in 2021, led by Craft Ventures."
+   },
+   {
+    "q": "What is the Snackpass creator network?",
+    "a": "A programme on its site where local creators find paid collaborations with restaurants and brands, which Snackpass can also run for brands."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Snackpass official site",
+    "url": "https://www.snackpass.co/"
+   },
+   {
+    "label": "TechCrunch: Snackpass raises $21M Series A (19 Dec 2019)",
+    "url": "https://techcrunch.com/2019/12/19/snackpass/"
+   },
+   {
+    "label": "QSR Magazine: Snackpass announces $70M Series B",
+    "url": "https://www.qsrmagazine.com/news/snackpass-announces-70m-series-b-funding-round"
+   },
+   {
+    "label": "Gunderson Dettmer: Snackpass raises $70M Series B",
+    "url": "https://www.gunder.com/news/snackpass-raises-70m-series-b-financing"
+   }
+  ]
+ }
+}

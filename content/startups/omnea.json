@@ -1,0 +1,70 @@
+{
+ "slug": "omnea",
+ "website": "https://www.omnea.co/",
+ "excerpt": "Omnea is a London-founded AI procurement platform that runs intake, approvals, supplier risk and source-to-pay workflows with AI agents. Raised a $20M Series A led by Accel.",
+ "content": "<p>Omnea is procurement software. It sits between employees who want to buy something and the finance, legal, security and procurement teams that must approve it, and automates the full supplier lifecycle from intake to renewal. The company now calls its product the Agentic Operating System for Procurement: AI agents handle steps such as intake, document review, approvals, supplier performance and risk mitigation, while human procurement and finance officers stay in control. Omnea says it connects to existing systems rather than replacing them; its Series A announcement described it working alongside tools such as Coupa, SAP Ariba and NetSuite, and launching expanded AI features and third-party risk management products.</p><p>Omnea was founded in 2022 by Ben Freeman, its CEO, and Ben Allen. The founding team came from the cybersecurity company Tessian, which Proofpoint acquired in 2023. Omnea's announcement said it takes an average of six months and more than 11 stakeholders for a new tool to go from identification to purchase, the problem it set out to fix.</p><h2>Funding</h2><p>On 14 October 2024 Omnea announced a $20 million Series A led by Accel, with First Round Capital and Point Nine, which had led a previously unannounced $5 million seed round. Angels included former Workday CTO David Clarke, former Stripe COO Claire Hughes Johnson and Asana COO Anne Raimondi. The company said its revenue had grown eightfold in the previous year and that it planned to triple headcount and open in the US; Tech.eu named customers including AlphaSights, McAfee, Onfido and TeamViewer.</p><h2>Pricing</h2><p>Omnea does not publish prices. Its website asks companies to book a demo.</p><h2>Who it suits</h2><p>Omnea suits procurement, finance and IT leaders at mid-sized and large companies where buying software and services involves many reviewers and suppliers. Small businesses with a handful of suppliers are unlikely to need it.</p><p><em>We have not tested Omnea. This page is based on Omnea's website and Series A press release and on Tech.eu.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Procurement software",
+  "platform": "Web (SaaS)",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI agents for procurement intake, approvals, supplier risk and source-to-pay",
+  "maker": {"name": "Omnea", "url": "https://www.omnea.co/"},
+  "team": [
+   {"name": "Ben Freeman", "role": "Co-founder and CEO", "url": "https://www.omnea.co/press-release/series-a-announcement"},
+   {"name": "Ben Allen", "role": "Co-founder", "url": "https://www.omnea.co/press-release/series-a-announcement"}
+  ],
+  "gallery": [
+   {"url": "https://framerusercontent.com/assets/KD14DjlLQWwsBspqat2ZYFHW5I.png", "alt": "Omnea banner reading The Agentic OS For Procurement, surrounded by labels for a 4th party agent, mitigation agent, approval agent and doc review agent", "credit": "Image: Omnea", "w": 2400, "h": 1260},
+   {"url": "https://framerusercontent.com/images/AuSpyaJRJYLcLgTfrBg8dWGz1c.jpg?width=1150&height=1150", "alt": "Five members of the Omnea team and a small dog sitting on wooden benches outside an office, from Omnea's Series A announcement", "credit": "Image: Omnea", "w": 1150, "h": 1150}
+  ],
+  "use_cases": [
+   "Giving employees one intake form for every new purchase request",
+   "Routing approvals across finance, legal, security and procurement",
+   "Reviewing supplier contracts and documents with AI",
+   "Assessing third-party and fourth-party supplier risk",
+   "Tracking renewals and supplier performance"
+  ],
+  "audience": {
+   "fit": [
+    "run procurement, finance or IT at a mid-sized or large company",
+    "have many stakeholders involved in each purchase",
+    "already use Coupa, SAP Ariba or NetSuite and want a better front end"
+   ],
+   "not_fit": [
+    "are a small business with few suppliers",
+    "want self-serve software with published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Omnea does not publish prices. Companies book a demo to get a quote.",
+   "plans": [
+    {"name": "Omnea platform", "price": "Quote on request", "detail": "Intake, approvals, supplier risk and AI agents"}
+   ],
+   "notes": [],
+   "url": "https://www.omnea.co/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other procurement orchestration and source-to-pay tools.",
+   "items": [
+    {"name": "Zip", "url": "https://ziphq.com/", "what": "Procurement orchestration and intake-to-pay platform", "tags": ["Procurement"], "starts_at": "See its own site", "difference": "Omnea's closest US rival in procurement orchestration."},
+    {"name": "Coupa", "url": "https://www.coupa.com/", "what": "Business spend management suite", "tags": ["Source-to-pay"], "starts_at": "See its own site", "difference": "Full source-to-pay suite that Omnea often works alongside."},
+    {"name": "Vendr", "url": "https://www.vendr.com/", "what": "SaaS buying and negotiation platform", "tags": ["SaaS buying"], "starts_at": "See its own site", "difference": "Focused on software purchasing and price benchmarks."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Omnea do?", "a": "It automates procurement, from purchase intake and approvals to supplier risk and renewals, using AI agents."},
+   {"q": "Who founded Omnea?", "a": "Ben Freeman (CEO) and Ben Allen, in 2022."},
+   {"q": "How much has Omnea raised?", "a": "A $5 million seed round and a $20 million Series A led by Accel, announced in October 2024."},
+   {"q": "Does Omnea replace Coupa or SAP Ariba?", "a": "Omnea says it works alongside existing systems such as Coupa, SAP Ariba and NetSuite."}
+  ],
+  "sources": [
+   {"label": "Omnea website", "url": "https://www.omnea.co/"},
+   {"label": "Omnea: Omnea raises $20M Series A (14 Oct 2024)", "url": "https://www.omnea.co/press-release/series-a-announcement"},
+   {"label": "Tech.eu: Omnea raises $20M for AI-powered procurement (15 Oct 2024)", "url": "https://tech.eu/2024/10/15/omnea-raises-20m-for-ai-powered-procurement-and-supplier-risk-management/"},
+   {"label": "Finextra: Omnea raises $20 million Series A", "url": "https://finextra.com/pressarticle/102710/omnea-raises-20-million-series-a"}
+  ]
+ }
+}

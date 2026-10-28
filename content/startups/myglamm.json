@@ -1,0 +1,130 @@
+{
+ "slug": "myglamm",
+ "website": "https://www.myglamm.com/",
+ "excerpt": "MyGlamm, the Indian beauty brand behind the Good Glamm Group, has been in an insolvency process since September 2025. What happened.",
+ "content": "<p>MyGlamm is an Indian direct-to-consumer beauty brand selling make-up, skincare and personal care products online. Outlook Business dates it to 2017. Under founder Darpan Sanghvi, the company renamed itself the Good Glamm Group in 2021 and became a 'house of brands', buying beauty, wellness and content businesses including POPxo, ScoopWhoop, BabyChakra, The Moms Co., Organic Harvest and Sirona. Inc42 reported that the group raised more than $350 million from investors including Amazon, Accel and Prosus, and was valued at over $1.2 billion at its peak.</p><p>The roll-up ran into trouble. Inc42 reported in July 2025 that sales had fallen to about a tenth of FY24 levels, that audited financials had not been filed for two years, that employees had gone unpaid for months, and that venture-debt lenders had taken control of the finances. In January 2025 representatives of Accel, Prosus and Bessemer left the board. Sirona was sold back to its founders for Rs 150 crore, against a Rs 450 crore purchase price, and ScoopWhoop was sold for Rs 18 to 20 crore. In July 2025 Sanghvi said lenders had enforced their charges and that the group's brands would be sold one by one, and promised a restitution fund for vendors and shareholders.</p><p>On 12 September 2025 the Mumbai bench of the National Company Law Tribunal admitted an insolvency application by HSBC against Sanghvi Beauty & Technologies, the company behind MyGlamm, starting a corporate insolvency resolution process (CIRP). Insolvency and Bankruptcy Board of India records show a resolution professional inviting expressions of interest for the MyGlamm business in November 2025, with resolution plans due by 24 February 2026, and creditor claims still being updated in August 2026. The myglamm.com website now shows the CIRP portal instead of a shop. We have not found a final outcome.</p><p>MyGlamm is on 100xFounder as a case study in a fast-growing Indian D2C company that over-expanded.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Beauty and personal care (in insolvency)",
+  "platform": "Online store (now replaced by an insolvency notice)",
+  "starts_at": "Not currently selling",
+  "schema_category": "Organization",
+  "summary_short": "Indian beauty brand at the centre of the Good Glamm Group; under insolvency resolution since 2025",
+  "maker": {
+   "name": "Sanghvi Beauty & Technologies Pvt Ltd",
+   "url": "https://www.myglamm.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://avatars.githubusercontent.com/u/98470509?v=4",
+    "alt": "Good Glamm Group icon: a white serif letter G on black, from the group's official GitHub account",
+    "credit": "Image: The Good Glamm Group (GitHub: goodglamm)",
+    "w": 460,
+    "h": 460
+   }
+  ],
+  "use_cases": [
+   "Understanding what happened to MyGlamm and the Good Glamm Group",
+   "Following India's D2C beauty sector",
+   "Tracking an insolvency case as a creditor or buyer"
+  ],
+  "audience": {
+   "fit": [
+    "follow Indian startups and D2C brands",
+    "are a creditor, vendor or potential buyer following the CIRP"
+   ],
+   "not_fit": [
+    "want to buy MyGlamm products: the website is not selling"
+   ]
+  },
+  "pricing": {
+   "intro": "Not applicable: myglamm.com currently shows the insolvency resolution portal, not a shop.",
+   "plans": [],
+   "notes": [],
+   "url": "https://www.myglamm.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Was once one of India's best-funded beauty startups"
+  ],
+  "cons": [
+   "Under a corporate insolvency resolution process since September 2025",
+   "Group brands being sold individually"
+  ],
+  "alternatives": {
+   "intro": "Indian beauty brands and stores that sell similar products.",
+   "items": [
+    {
+     "name": "Nykaa",
+     "url": "https://www.nykaa.com/",
+     "what": "Beauty retailer and own brands",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "India's largest beauty e-commerce company, listed on stock exchanges."
+    },
+    {
+     "name": "SUGAR Cosmetics",
+     "url": "https://in.sugarcosmetics.com/",
+     "what": "D2C make-up brand",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Similar direct-to-consumer make-up brand."
+    },
+    {
+     "name": "Lakmé",
+     "url": "https://www.lakmeindia.com/",
+     "what": "Make-up and skincare brand from Hindustan Unilever",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Long-established mass-market brand."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What happened to MyGlamm?",
+    "a": "Its company, Sanghvi Beauty & Technologies, entered a corporate insolvency resolution process on 12 September 2025 after HSBC's application was admitted by NCLT Mumbai."
+   },
+   {
+    "q": "Is the Good Glamm Group shut down?",
+    "a": "Its founder said in July 2025 that lenders had enforced their charges and the brands would be sold individually."
+   },
+   {
+    "q": "Can I still buy from myglamm.com?",
+    "a": "No. The site now shows the insolvency resolution portal."
+   },
+   {
+    "q": "How much did Good Glamm Group raise?",
+    "a": "More than $350 million, according to Inc42, with a peak valuation above $1.2 billion."
+   }
+  ],
+  "sources": [
+   {
+    "label": "IBBI: corporate insolvency process records for Sanghvi Beauty & Technologies",
+    "url": "https://www.ibbi.gov.in/claims/inner-process/U72900PN2015PTC156163"
+   },
+   {
+    "label": "Inc42: The fall of Good Glamm Group (7 July 2025)",
+    "url": "https://inc42.com/?p=521776"
+   },
+   {
+    "label": "Outlook Business: Good Glamm Group breaks up, lenders enforce charge (23 July 2025)",
+    "url": "https://www.outlookbusiness.com/news/goodglamm-group-breaks-up-lenders-enforce-charge-brands-to-be-sold-individually"
+   },
+   {
+    "label": "Storyboard18: Good Glamm Group to be split up",
+    "url": "https://www.storyboard18.com/how-it-works/good-glamm-group-to-be-split-up-as-ceo-darpan-sanghvi-takes-responsibility-for-collapse-76385.htm"
+   },
+   {
+    "label": "MyGlamm website (CIRP portal)",
+    "url": "https://www.myglamm.com/"
+   }
+  ],
+  "team": [
+   {
+    "name": "Darpan Sanghvi",
+    "role": "Founder"
+   }
+  ]
+ }
+}

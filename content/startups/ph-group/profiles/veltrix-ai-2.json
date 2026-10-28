@@ -1,0 +1,287 @@
+{
+  "slug": "veltrix-ai-2",
+  "ph_url": "https://www.producthunt.com/posts/veltrix-ai-2",
+  "existing_listing_slug": null,
+  "website": "https://veltrix.com",
+  "excerpt": "Veltrix AI connects QuickBooks, Xero, Shopify, HubSpot and more, and answers questions about cash, margins and revenue in plain English. From $49/month.",
+  "content": "<p>Veltrix AI is a finance copilot for small businesses and their accountants. You connect tools such as QuickBooks, Xero, Square, Shopify, HubSpot, Google Drive, Google Workspace and Microsoft 365, which the site says takes about two minutes with no CSV exports, and then ask questions in plain English, for example why revenue changed. Answers cite where the numbers came from, say when data is missing and suggest next steps, and you can save an answer as a dashboard, such as ad spend against revenue or cash by quarter.</p><p>Each time you log in, Veltrix checks your books and flags issues like duplicate charges, figures that do not reconcile and bills open for more than 70 days. Access is read-only: it cannot change your books, move money or act on its own, and you can disconnect any source at any time. The site says it does not replace an accountant; it does the first pass and the accountant brings judgement. A free Business Health Check is also offered.</p><p>Veltrix is run by NetSky AI, Inc., which lists an address in Delaware, USA. Its About page names Manfred Swarovski as CEO and co-founder and Mykola Svystun as CTO and co-founder, with a remote team across the US and Europe. Plans start at $49 a month after a 14-day free trial. It has launched on Product Hunt more than once, including as Veltrix AI for E-commerce, and has 11 reviews there averaging 4.91 out of 5.</p><p>Veltrix AI launched on Product Hunt on 5 June 2026 and finished #4 for the day, with 242 upvotes and 47 comments. It has 11 Product Hunt reviews averaging 4.91 out of 5 (as of 14 October 2026). A second launch, Veltrix AI for E-commerce, on 2 October 2026 finished #2 for the day with 308 upvotes and 42 comments.</p><p><em>We have not tested Veltrix AI ourselves. This page brings together its official site, pricing page, About page and privacy policy, its Product Hunt listing and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI finance",
+    "platform": "Web app",
+    "starts_at": "14-day free trial, then $49/month",
+    "schema_category": "FinanceApplication",
+    "summary_short": "Read-only AI finance copilot that answers questions about cash, margins and revenue from your connected tools",
+    "maker": {
+      "name": "Veltrix (NetSky AI, Inc.)",
+      "url": "https://veltrix.com/about-us"
+    },
+    "use_cases": [
+      "Asking why revenue or margins changed this month without building a report",
+      "Spotting duplicate charges, unreconciled figures and overdue bills at login",
+      "Comparing ad spend with revenue for an online shop on Shopify or Square",
+      "Saving answers as dashboards, such as cash by quarter or top customers",
+      "Giving an accountant a faster first pass over a client's books"
+    ],
+    "audience": {
+      "fit": [
+        "run a small business or online shop on QuickBooks, Xero, Shopify, Square or HubSpot",
+        "want answers about cash and margins without building spreadsheets or dashboards",
+        "are an accountant looking at several clients' numbers (Pro and Enterprise add multi-workspace management)"
+      ],
+      "not_fit": [
+        "want software that does bookkeeping or pays bills: Veltrix is read-only",
+        "want an AI to replace your accountant: the site says it does not",
+        "need a cheap tool for occasional questions: there is no free plan after the trial"
+      ]
+    },
+    "pricing": {
+      "intro": "Prices are from Veltrix's own pricing page, shown in dollars and billed monthly. Each self-serve plan has a 14-day free trial, and you can upgrade, downgrade or cancel at any time.",
+      "url": "https://veltrix.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "$49/month",
+          "amount": 49,
+          "currency": "USD",
+          "detail": "500 AI units and 10 Deep Thinking analyses a month, up to 3 data sources, 5 saved dashboards, 10 uploaded files; no team members"
+        },
+        {
+          "name": "Core",
+          "price": "$99/month",
+          "amount": 99,
+          "currency": "USD",
+          "detail": "1,000 AI units and 50 Deep Thinking analyses a month, up to 5 data sources and 5 team members, 10 dashboards, 20 files, one managed dataset"
+        },
+        {
+          "name": "Pro",
+          "price": "$199/month",
+          "amount": 199,
+          "currency": "USD",
+          "detail": "1,500 AI units and 150 Deep Thinking analyses a month, unlimited data sources, up to 10 team members, up to 50 dashboards, multi-workspace management, priority support"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "detail": "Advanced permissions, multiple workspaces, client portfolios, custom data sources, onboarding and dedicated support"
+        }
+      ],
+      "notes": [
+        "AI units are used whenever Veltrix does AI work, such as answering a question, building a dashboard or customising a report.",
+        "No annual prices are listed."
+      ]
+    },
+    "alternatives": {
+      "intro": "Other tools that turn accounting data into reports and answers. Prices come from each product's own pricing page, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "Digits",
+          "url": "https://digits.com/",
+          "what": "AI-powered accounting software that automates bookkeeping, reconciliation and reporting",
+          "starts_at": "Essentials $65/month",
+          "difference": "Does the bookkeeping itself; Veltrix only reads your existing books and tools."
+        },
+        {
+          "name": "Fathom",
+          "url": "https://www.fathomhq.com/",
+          "what": "Financial analysis, reporting, cash-flow forecasting and consolidation on top of Xero, QuickBooks and MYOB",
+          "starts_at": "See its pricing page",
+          "difference": "Built mainly for accountants producing reports for many companies; Veltrix centres on plain-English questions for business owners."
+        }
+      ],
+      "more": "General AI chatbots can analyse exported spreadsheets; Veltrix's FAQ says the difference is that it connects to your tools directly and shows its sources."
+    },
+    "reviews": {
+      "count": 11,
+      "rating": 4.91,
+      "url": "https://www.producthunt.com/products/veltrix-ai/reviews",
+      "as_of": "2026-10-14"
+    },
+    "pros": [
+      "Read-only access: it cannot change books or move money",
+      "Connects common small-business tools in minutes without CSV exports",
+      "Answers show their sources and say when data is missing",
+      "Flags duplicate charges, unreconciled figures and old unpaid bills at login",
+      "14-day free trial on every self-serve plan"
+    ],
+    "cons": [
+      "No free plan after the trial",
+      "Starter allows no team members and only 3 data sources",
+      "Usage is capped by monthly AI units",
+      "No annual pricing listed"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/veltrix-ai",
+      "x": {
+        "none": "We found no posts about Veltrix AI on X yet.",
+        "search_url": "https://x.com/search?q=veltrix.com&f=live",
+        "profile_url": "https://x.com/_veltrixai"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is Veltrix AI?",
+        "a": "A finance copilot that connects to your accounting, sales and payment tools and answers questions about your business in plain English, with sources and suggested next steps."
+      },
+      {
+        "q": "How much does Veltrix cost?",
+        "a": "Starter is $49 a month, Core $99 and Pro $199, each after a 14-day free trial. Enterprise is priced on request."
+      },
+      {
+        "q": "Which tools does it connect to?",
+        "a": "Its FAQ names QuickBooks, Xero, Square, HubSpot, Shopify, Google Drive, Google Workspace and Microsoft 365."
+      },
+      {
+        "q": "Can Veltrix change my books or move money?",
+        "a": "No. The site says access is read-only, it cannot act on its own, and you can disconnect any source at any time."
+      },
+      {
+        "q": "Does it replace my accountant?",
+        "a": "No. Veltrix says it handles the first pass and your accountant provides judgement and advice."
+      },
+      {
+        "q": "Is it suitable for e-commerce?",
+        "a": "It connects to Shopify and Square and can compare things like ad spend against revenue; it launched on Product Hunt as Veltrix AI for E-commerce."
+      },
+      {
+        "q": "What are the alternatives?",
+        "a": "Digits for AI bookkeeping, Fathom for accountant-style reporting and forecasting, or a general chatbot with exported data."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Veltrix official site and FAQ",
+        "url": "https://veltrix.com/"
+      },
+      {
+        "label": "Veltrix pricing",
+        "url": "https://veltrix.com/pricing"
+      },
+      {
+        "label": "Veltrix About us",
+        "url": "https://veltrix.com/about-us"
+      },
+      {
+        "label": "Veltrix privacy policy",
+        "url": "https://veltrix.com/privacy-policy"
+      },
+      {
+        "label": "Product Hunt: Veltrix AI",
+        "url": "https://www.producthunt.com/products/veltrix-ai"
+      },
+      {
+        "label": "Product Hunt launch: Veltrix AI",
+        "url": "https://www.producthunt.com/posts/veltrix-ai-2"
+      },
+      {
+        "label": "Product Hunt launch: Veltrix AI for E-commerce",
+        "url": "https://www.producthunt.com/posts/veltrix-ai-for-e-commerce"
+      },
+      {
+        "label": "Digits pricing",
+        "url": "https://digits.com/pricing"
+      },
+      {
+        "label": "Fathom pricing",
+        "url": "https://www.fathomhq.com/pricing"
+      }
+    ],
+    "ph": {
+      "rank": 4,
+      "votes": 242,
+      "comments": 47,
+      "followers": 961,
+      "launched": "2026-06-05",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Bohdan Sitarskyi",
+        "role": "Account Manager at @VeltrixAI",
+        "url": "https://www.producthunt.com/@bohdan_sitar"
+      },
+      {
+        "name": "Roman Zayac",
+        "role": "Maker",
+        "url": "https://www.producthunt.com/@roman_zayac1"
+      },
+      {
+        "name": "Maksym Shcherbakov",
+        "role": "Software engineer at Veltrix AI",
+        "url": "https://www.producthunt.com/@maksym_shcherbakov1"
+      },
+      {
+        "name": "Vitalii Andrieiev",
+        "role": "Dev",
+        "url": "https://www.producthunt.com/@vitalii_andrieiev"
+      },
+      {
+        "name": "Mark Dellemann",
+        "role": "Get Clean, Audited Data with AI",
+        "url": "https://www.producthunt.com/@_mkcd_"
+      },
+      {
+        "name": "Oleksandr Drohomyretskyi",
+        "role": "Software Engineer at Veltrix AI",
+        "url": "https://www.producthunt.com/@oleksandr_drohomyretskyi2"
+      },
+      {
+        "name": "Pedro C",
+        "role": "AI Engineer @ Veltrix",
+        "url": "https://www.producthunt.com/@pco_veltrix"
+      },
+      {
+        "name": "Mykola Svystun",
+        "role": "CTO @ Veltrix",
+        "url": "https://www.producthunt.com/@mykola_svystun"
+      },
+      {
+        "name": "Nazar Parashchuk",
+        "role": "Project Manager at @veltrix",
+        "url": "https://www.producthunt.com/@nazar_parashchuk"
+      },
+      {
+        "name": "Manfred Swarovski",
+        "role": "CEO and Founder @VeltrixAI",
+        "url": "https://www.producthunt.com/@veltrixms"
+      },
+      {
+        "name": "Roman Zayac",
+        "role": "QA engineer at @Veltrix AI",
+        "url": "https://www.producthunt.com/@roman_zayac"
+      },
+      {
+        "name": "NIckolas",
+        "role": "Product Designer",
+        "url": "https://www.producthunt.com/@miki_niki"
+      },
+      {
+        "name": "Pavlo Buidenkov",
+        "role": "Tech Engineer 🛠️ at Veltrix AI 📈",
+        "url": "https://www.producthunt.com/@pavlo_buidenkov"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/1fe90239-857b-4c43-b652-cc95a34799bd.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Veltrix AI on Product Hunt",
+        "alt": "Veltrix 'See what needs attention now' with sample alerts about cash, overdue invoices and a duplicate software charge"
+      },
+      {
+        "url": "https://ph-files.imgix.net/ef064269-1d33-4a08-8ee8-b608de21b262.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Veltrix AI on Product Hunt",
+        "alt": "Veltrix 'Connect the tools you already use': QuickBooks, Xero, HubSpot, Square and Shopify"
+      },
+      {
+        "url": "https://ph-files.imgix.net/125c75e1-19b0-4552-8f86-14f22898134b.png?auto=format&fit=max&w=1400",
+        "credit": "Image: Veltrix AI on Product Hunt",
+        "alt": "Veltrix 'Ask AI about your business numbers' with example questions such as 'Can we make payroll this Friday?'"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes.",
+  "also_covers": [
+    "https://www.producthunt.com/posts/veltrix-ai-for-e-commerce"
+  ]
+}

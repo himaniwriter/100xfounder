@@ -1,0 +1,152 @@
+{
+ "slug": "tala",
+ "website": "https://tala.co/",
+ "excerpt": "Tala is a US-headquartered digital lender serving people with little credit history in Kenya, Mexico, the Philippines and other markets. How it works, funding and alternatives.",
+ "content": "<p>Tala is a financial services company that lends money through a mobile app to people who have little or no formal credit history. Instead of a traditional credit score, it uses data from a customer's phone and machine learning to decide whether to lend and how much. Wikipedia describes it as an American financial infrastructure company that extends credit and other services to people in Latin America, Asia and East Africa; it is headquartered in Santa Monica, California. Its founder and chief executive is Shivani Siroya.</p><p>Tala's own materials list its markets as Kenya, Mexico, the Philippines, India, Panama and Guatemala. Its homepage describes a 'money app for the majority' that bridges digital and cash systems so customers can manage credit, savings and other money tasks in one app. A March 2026 profile in the Philippine Star reported that Tala has delivered about $7 billion in credit to more than 13 million people, a figure that comes from the company.</p><p>In 2019 Tala raised a $110 million Series D led by RPS Ventures, along with about $100 million of debt financing for its loan book, as Built In and Entrepreneur India reported at the time. Other backers over the years include PayPal Ventures. Forbes reported in 2025 that Tala had sharply cut lending during a downturn, then grown it again, and was expanding to new countries including Peru.</p><p>Tala does not have a public price list. Loan amounts, fees and repayment periods depend on the country and the borrower, and are shown in the app before a loan is accepted. As with any short-term lending app, borrowers should compare the total cost of credit before accepting.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Digital lending and financial services",
+  "platform": "Android",
+  "starts_at": "Loan terms shown in the app; vary by country",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Mobile app offering instant credit and money tools to people underserved by banks",
+  "maker": {
+   "name": "Tala",
+   "url": "https://tala.co/"
+  },
+  "gallery": [
+   {
+    "url": "https://tala.co/wp-content/uploads/2024/03/Featured-Image_2.png",
+    "alt": "Tala banner reading 'Unleashing the economic power of the Global Majority' beside a phone showing an approved credit offer in the Tala app",
+    "credit": "Image: Tala (tala.co)",
+    "w": 1024,
+    "h": 644
+   },
+   {
+    "url": "https://tala.co/wp-content/uploads/2021/10/cropped-tala-favicon.png?w=180",
+    "alt": "Tala icon: an orange triangle beside a teal arch shape",
+    "credit": "Image: Tala (tala.co)",
+    "w": 180,
+    "h": 180
+   }
+  ],
+  "use_cases": [
+   "Getting a small loan without a formal credit history",
+   "Building a repayment record to unlock larger loans",
+   "Managing credit and savings in one app",
+   "Following fintech for financial inclusion in emerging markets"
+  ],
+  "audience": {
+   "fit": [
+    "live in one of Tala's markets and lack access to bank credit",
+    "need small, short-term loans on a phone",
+    "follow fintech and financial inclusion"
+   ],
+   "not_fit": [
+    "live outside its markets",
+    "can borrow more cheaply from a bank or credit union"
+   ]
+  },
+  "pricing": {
+   "intro": "Tala does not publish a single price list. Loan amounts, fees and terms vary by country and borrower and are shown in the app before you accept.",
+   "plans": [
+    {
+     "name": "Tala app",
+     "price": "Free to download",
+     "detail": "Loan fees and terms shown in the app"
+    }
+   ],
+   "notes": [],
+   "url": "https://tala.co/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Lends to people without a credit score",
+   "Mobile-first and fast",
+   "Long-running company with large institutional backers"
+  ],
+  "cons": [
+   "Short-term digital credit can be expensive compared with bank loans",
+   "Availability limited to specific countries"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Branch",
+     "url": "https://branch.co/",
+     "what": "Mobile lending app in emerging markets",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Operates in some of the same markets, including Kenya and India."
+    },
+    {
+     "name": "M-Shwari",
+     "url": "https://www.safaricom.co.ke/",
+     "what": "Savings and loans through Safaricom's M-Pesa in Kenya",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Built into M-Pesa rather than a separate lending app."
+    },
+    {
+     "name": "GCash GLoan",
+     "url": "https://www.gcash.com/",
+     "what": "Loans within the GCash e-wallet in the Philippines",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Part of the Philippines' largest e-wallet."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded Tala?",
+    "a": "Shivani Siroya, who is also its chief executive."
+   },
+   {
+    "q": "Where does Tala operate?",
+    "a": "Its materials list Kenya, Mexico, the Philippines, India, Panama and Guatemala."
+   },
+   {
+    "q": "How does Tala decide who gets a loan?",
+    "a": "It uses data from the customer's phone and machine learning rather than a traditional credit score."
+   },
+   {
+    "q": "How much does a Tala loan cost?",
+    "a": "Fees and terms vary by country and borrower and are shown in the app; there is no single public price list."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Tala official site",
+    "url": "https://tala.co/"
+   },
+   {
+    "label": "Wikipedia: Tala Finance",
+    "url": "https://en.wikipedia.org/wiki/Tala_Finance"
+   },
+   {
+    "label": "Built In: Tala raises $110M Series D (2019)",
+    "url": "https://builtin.com/articles/tala-receives-110m-series-d-funding"
+   },
+   {
+    "label": "Entrepreneur India: Tala raises $110 million in Series D",
+    "url": "https://india.entrepreneur.com/news-and-trends/california-based-and-paypal-backed-microcredit-messiah/338506"
+   },
+   {
+    "label": "Philippine Star: How Tala's Shivani Siroya is changing the future of credit (22 Mar 2026)",
+    "url": "https://www.philstar.com/business/2026/03/22/2515909/how-talas-shivani-siroya-changing-future-credit/amp/"
+   },
+   {
+    "label": "Forbes Colombia: Tala's global expansion (Sept 2025, Spanish)",
+    "url": "https://forbes.co/2025/09/25/editors-picks/asi-esta-fintech-de-microcreditos-no-rentable-apuesta-fuerte-por-la-expansion-global/"
+   }
+  ],
+  "team": [
+   {
+    "name": "Shivani Siroya",
+    "role": "Founder and CEO"
+   }
+  ]
+ }
+}

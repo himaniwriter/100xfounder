@@ -1,0 +1,149 @@
+{
+ "slug": "rebank",
+ "website": "https://www.usecaribou.com/",
+ "excerpt": "Rebank was a Y Combinator-backed business banking layer for startups. It has since become Caribou, a transfer pricing and international tax platform; rebanknow.com now redirects there.",
+ "content": "<p>Rebank started as a digital banking layer for fast-growing companies. Rather than being a bank itself, it ran on top of a company's existing business bank accounts, giving finance teams one interface for their accounts and cheaper payments. In December 2019 TechCrunch reported that the Y Combinator graduate raised a $2.8 million seed round led by ADV, with Y Combinator, Oriza Ventures and angel investors including Jude Gomila. Co-founder and CEO Juan Andrade told TechCrunch that companies faced two major problems: clunky banking interfaces and unnecessarily expensive payments. Andrade had earlier built card products at the London payments company Ukash, and co-founder Simon White had been a systems engineer at Unisys and Thales.</p><p><strong>Now Caribou.</strong> Rebank no longer operates under that name. Its old domain, rebanknow.com, now redirects to usecaribou.com, and Y Combinator's company directory says Caribou was formerly Rebank (YC Winter 2019). The founders explain on that page that building Rebank, which they describe as the first open banking product for global businesses, showed them that companies were going international earlier than law and accounting firms could keep up with. Caribou is that next product.</p><p>Caribou describes itself as transfer pricing software with the experts built in. Transfer pricing covers how related companies in a group, in different countries, charge each other. Caribou says it designs a company's transfer pricing, documents it and keeps it compliant as the business grows, so it holds up with auditors, investors and new markets. Y Combinator's page calls it an autonomous tax firm that also checks for legal risks, R&amp;D credits and accidental tax exposure, with Juan Andrade as founder and a team based in Lisbon.</p><p>Caribou does not publish prices; its site offers a free assessment. This profile draws on Caribou's and Y Combinator's pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Startup banking (now Caribou: transfer pricing and international tax)",
+  "platform": "Web",
+  "starts_at": "Free assessment; pricing not published",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Former startup banking layer, now Caribou: transfer pricing software with tax experts built in",
+  "maker": {
+   "name": "Caribou (formerly Rebank)",
+   "url": "https://www.ycombinator.com/companies/caribou"
+  },
+  "team": [
+   {
+    "name": "Juan Andrade",
+    "role": "Co-founder; CEO of Rebank and founder of Caribou"
+   },
+   {
+    "name": "Simon White",
+    "role": "Co-founder of Rebank (per TechCrunch, 2019)"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.usecaribou.com/social-preview.png",
+    "alt": "Caribou banner on a cream background reading Get transfer pricing right, without becoming an expert, transfer pricing software with the experts built in",
+    "credit": "Image: Caribou",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Setting up transfer pricing between a company's entities in different countries",
+   "Producing transfer pricing documentation that holds up in an audit",
+   "Checking for accidental tax exposure as a startup expands abroad",
+   "Finding R&D tax credits"
+  ],
+  "audience": {
+   "fit": [
+    "run finance at a startup with entities in more than one country",
+    "need transfer pricing done without hiring a large advisory firm",
+    "want ongoing monitoring as you add markets"
+   ],
+   "not_fit": [
+    "are looking for Rebank's original banking product, which no longer operates under that name",
+    "run a single-entity business with no cross-border group structure"
+   ]
+  },
+  "pricing": {
+   "intro": "Caribou does not publish prices on its website. It offers a free assessment.",
+   "plans": [
+    {
+     "name": "Caribou",
+     "price": "Not published",
+     "detail": "Free assessment offered on the homepage"
+    }
+   ],
+   "notes": [
+    "Rebank's 2019-era banking product pricing is no longer relevant."
+   ],
+   "url": "https://www.usecaribou.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Software plus tax experts in one service",
+   "Built for startups going international early",
+   "Y Combinator-backed team"
+  ],
+  "cons": [
+   "No published pricing",
+   "The original Rebank banking product is no longer offered under that name"
+  ],
+  "alternatives": {
+   "intro": "Other ways to handle transfer pricing. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Big Four advisory firms",
+     "url": "https://en.wikipedia.org/wiki/Big_Four_accounting_firms",
+     "what": "Transfer pricing services from Deloitte, PwC, EY and KPMG",
+     "tags": [
+      "Advisory"
+     ],
+     "starts_at": "Quoted per engagement",
+     "difference": "Traditional advisory, usually aimed at larger companies."
+    },
+    {
+     "name": "Taxually",
+     "url": "https://www.taxually.com/",
+     "what": "Cross-border VAT compliance software",
+     "tags": [
+      "Tax compliance"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Focuses on VAT rather than transfer pricing."
+    },
+    {
+     "name": "Pilot",
+     "url": "https://pilot.com/",
+     "what": "Bookkeeping, tax and CFO services for startups",
+     "tags": [
+      "Accounting"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "General startup accounting rather than transfer pricing specialism."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What happened to Rebank?",
+    "a": "It became Caribou. Y Combinator's directory says Caribou was formerly Rebank (W19), and rebanknow.com now redirects to usecaribou.com."
+   },
+   {
+    "q": "What does Caribou do?",
+    "a": "It provides transfer pricing software with tax experts built in, designing, documenting and maintaining a company's transfer pricing."
+   },
+   {
+    "q": "Who founded Rebank?",
+    "a": "Juan Andrade and Simon White, according to TechCrunch's 2019 report on its $2.8 million seed round."
+   },
+   {
+    "q": "How much does Caribou cost?",
+    "a": "Prices are not published; the site offers a free assessment."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Rebank raises $2.8M (17 Dec 2019)",
+    "url": "https://techcrunch.com/2019/12/17/rebank/"
+   },
+   {
+    "label": "Y Combinator: Caribou (formerly Rebank, W19)",
+    "url": "https://www.ycombinator.com/companies/caribou"
+   },
+   {
+    "label": "Caribou website",
+    "url": "https://www.usecaribou.com/"
+   },
+   {
+    "label": "EU-Startups: London-based Rebank raises €2 million (Dec 2019)",
+    "url": "https://www.eu-startups.com/2019/12/london-based-rebank-raises-2-million-euro-to-simplify-banking-for-businesses/"
+   }
+  ]
+ }
+}

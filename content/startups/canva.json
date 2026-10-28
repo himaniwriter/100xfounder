@@ -1,0 +1,183 @@
+{
+ "slug": "canva",
+ "website": "https://www.canva.com/",
+ "excerpt": "Canva is a Sydney-based online design platform for non-designers, with a free plan and paid Pro, Business and Enterprise tiers. Scale, funding, who it suits and alternatives.",
+ "content": "<p>Canva is an online design platform built for people who are not professional designers. You start from a template or a blank page and make social media posts, presentations, documents, videos, posters and websites with drag-and-drop editing and a large library of photos, graphics and fonts. It runs in the browser and as desktop and mobile apps.</p><p>The company was founded by Melanie Perkins, Cliff Obrecht and Cameron Adams and is headquartered in Sydney, Australia. Perkins is chief executive and Obrecht chief operating officer.</p><p>Canva is one of the largest privately held software companies. In August 2025 it ran a share sale for current and former employees at a valuation of $42 billion, with investors including Fidelity and JPMorgan's asset management arm buying, Bloomberg reported. In February 2026 TechCrunch reported, from the company, that Canva had more than 265 million monthly active users and over 31 million paying users in 2025, and that Obrecht said annual recurring revenue reached $4 billion by the end of the year. Canva has not announced plans for a stock market listing.</p><p>In March 2024 Canva bought Serif, the British maker of the Affinity apps for professional designers, and said at the time it had no plans to change Affinity's subscription-free model. That deal pushed Canva toward professional and enterprise customers, alongside its Business and Enterprise plans.</p><p>Canva has a free plan. Its paid plans are Pro, Business and Enterprise, and Canva says prices depend on where you are and how many people are on the plan, so check its pricing page in your own country.</p><p><em>We have not used Canva for this page. It brings together Canva's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Graphic design",
+  "platform": "Web, Windows, macOS, iOS and Android",
+  "starts_at": "Free plan; paid plans priced by country",
+  "schema_category": "DesignApplication",
+  "summary_short": "Online design platform with templates for social posts, presentations, documents and video",
+  "maker": {
+   "name": "Canva",
+   "url": "https://www.canva.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/2019_-_Centre_Stage_-_Day_1_DF1_8618_%2849019350536%29.jpg/1280px-2019_-_Centre_Stage_-_Day_1_DF1_8618_%2849019350536%29.jpg",
+    "w": 1200,
+    "h": 790,
+    "alt": "Canva co-founder and CEO Melanie Perkins (right) on stage with Bolt CEO Markus Villig at Web Summit 2019 in Lisbon",
+    "credit": "Photo: Web Summit, CC BY 2.0, via Wikimedia Commons"
+   },
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Homepage_of_CANVA_Website_magnified_on_logo_with_magnifying_glass_%2853147379985%29.jpg/1280px-Homepage_of_CANVA_Website_magnified_on_logo_with_magnifying_glass_%2853147379985%29.jpg",
+    "w": 1200,
+    "h": 800,
+    "alt": "A magnifying glass held over the Canva logo on Canva's homepage in a web browser",
+    "credit": "Photo: Jernej Furman, CC BY 2.0, via Wikimedia Commons"
+   }
+  ],
+  "use_cases": [
+   "Social media posts and stories from templates",
+   "Presentations and pitch decks",
+   "Flyers, posters and other print designs",
+   "Short videos and simple websites",
+   "Brand kits so a team keeps the same fonts, colours and logos"
+  ],
+  "team": [
+   {
+    "name": "Melanie Perkins",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Cliff Obrecht",
+    "role": "Co-founder and COO"
+   },
+   {
+    "name": "Cameron Adams",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "founders, marketers and small teams who need good-looking content without a designer",
+    "teachers, students and non-profits making presentations and handouts",
+    "companies that want a shared brand kit everyone can use"
+   ],
+   "not_fit": [
+    "product teams designing app interfaces with components and developer handoff, where Figma is the usual choice",
+    "professional print, photo retouching or vector illustration work, which is what Affinity and similar desktop tools are for"
+   ]
+  },
+  "pricing": {
+   "intro": "Canva's pricing page lists Free, Pro, Business and Enterprise plans. Canva's help centre says prices depend on your location and the number of people on the plan, and its pricing page did not load for our checker, so we do not quote figures here.",
+   "url": "https://www.canva.com/pricing/",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Canva's free plan"
+    },
+    {
+     "name": "Pro",
+     "price": "See pricing page",
+     "detail": "Single-person paid plan"
+    },
+    {
+     "name": "Business",
+     "price": "See pricing page",
+     "detail": "Paid plan for teams, billed per person"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Contact Canva",
+     "detail": "For large organisations"
+    }
+   ],
+   "notes": [
+    "Prices vary by country; check the page from where you are."
+   ]
+  },
+  "alternatives": {
+   "intro": "Tools often compared with Canva.",
+   "items": [
+    {
+     "name": "Figma",
+     "url": "https://www.figma.com/",
+     "what": "Collaborative interface design and prototyping",
+     "starts_at": "Free Starter; Professional Full seat $16/month",
+     "difference": "Built for product designers and developer handoff rather than template-based marketing content."
+    },
+    {
+     "name": "Adobe Express",
+     "url": "https://www.adobe.com/express/",
+     "what": "Adobe's template-based quick design app",
+     "difference": "Adobe's direct answer to Canva, tied into Adobe's fonts and stock library."
+    },
+    {
+     "name": "Microsoft Designer",
+     "url": "https://designer.microsoft.com/",
+     "what": "Microsoft's AI-assisted design app",
+     "difference": "Part of Microsoft's Copilot and Microsoft 365 offering."
+    }
+   ]
+  },
+  "pros": [
+   "Very easy to start with, using thousands of templates",
+   "A free plan covers a lot of everyday design",
+   "Works on the web, desktop and phones"
+  ],
+  "cons": [
+   "Prices vary by country, so it is hard to compare without checking the page yourself",
+   "Not designed for interface design or professional print production"
+  ],
+  "faq": [
+   {
+    "q": "Is Canva free?",
+    "a": "Canva has a free plan. Its paid plans are Pro, Business and Enterprise, priced by country and number of people."
+   },
+   {
+    "q": "Who founded Canva?",
+    "a": "Melanie Perkins, Cliff Obrecht and Cameron Adams. Perkins is the chief executive and Obrecht the chief operating officer."
+   },
+   {
+    "q": "How much is Canva worth?",
+    "a": "Its most recent reported price was a $42 billion valuation in an employee share sale in August 2025, according to Bloomberg. Canva is private, so there is no market price."
+   },
+   {
+    "q": "How many people use Canva?",
+    "a": "Canva told TechCrunch it had more than 265 million monthly active users and over 31 million paying users in 2025."
+   },
+   {
+    "q": "Does Canva own Affinity?",
+    "a": "Yes. Canva bought Serif, the maker of the Affinity design apps, in March 2024."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Canva pricing (plan names)",
+    "url": "https://www.canva.com/pricing/"
+   },
+   {
+    "label": "Canva Help Centre: billing for Canva Business",
+    "url": "https://www.canva.com/en_in/help/canva-business-billing/"
+   },
+   {
+    "label": "Bloomberg Law: Canva begins share sale at $42 billion valuation",
+    "url": "https://news.bloomberglaw.com/antitrust/canva-begins-share-sale-at-42-billion-valuation-in-road-to-ipo"
+   },
+   {
+    "label": "Fortune: Canva employee share sale",
+    "url": "https://fortune.com/2025/08/22/canva-billionaire-founders-minting-overnight-millionaires-employee-share-sale"
+   },
+   {
+    "label": "TechCrunch: Canva gets to $4B in revenue",
+    "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises/"
+   },
+   {
+    "label": "9to5Mac: Canva acquires the Affinity apps",
+    "url": "https://9to5mac.com/2024/03/26/canva-acquires-affinity-apps/"
+   },
+   {
+    "label": "Forbes Australia: Canva acquires Affinity",
+    "url": "https://www.forbes.com.au/news/innovation/canva-acquires-affinity-software/"
+   }
+  ]
+ }
+}

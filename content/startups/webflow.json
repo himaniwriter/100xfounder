@@ -1,0 +1,180 @@
+{
+ "slug": "webflow",
+ "website": "https://webflow.com/",
+ "excerpt": "Webflow is a visual website builder with hosting and a CMS, used by designers and marketing teams. Plans and prices from its own page, funding history and alternatives.",
+ "content": "<p>Webflow lets you design and publish professional websites visually. You lay out pages on a canvas much as you would in a design tool, and Webflow writes the HTML, CSS and JavaScript behind them. It includes hosting, a content management system (CMS) for blogs and other collections, animations and interactions, localisation, and newer AI and search-optimisation features. Marketing teams can then edit content without touching the design.</p><p>Webflow was founded in 2012 by Vlad Magdalin, his brother Sergie Magdalin and Bryant Chou, and is based in San Francisco. Vlad Magdalin was the company's first CEO. Linda Tong, who joined as its first chief operating officer in 2022, later became chief executive, and Magdalin moved to the role of chief innovation officer while continuing to chair the board, Webflow announced on its blog.</p><p>The company raised a $140 million Series B in January 2021 at a $2.1 billion valuation, then a $120 million Series C in 2022 at a $4 billion valuation, led by Y Combinator's Continuity fund with CapitalG, Accel, Silversmith and Draper Associates taking part.</p><p>Pricing is split into site plans, paid per website, and workspace plans for the team building them. A free Starter site lets you try Webflow on a webflow.io address.</p><p><em>We have not used Webflow for this page. It brings together Webflow's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Website builder",
+  "platform": "Web",
+  "starts_at": "Free Starter site; Basic $15/month billed yearly",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Visual website builder with hosting, CMS and interactions for designers and marketers",
+  "maker": {
+   "name": "Webflow, Inc.",
+   "url": "https://webflow.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/686294e263eb7e215bd232f7/6a048234cec10a58c38e1758_webflow-og.jpg",
+    "w": 2400,
+    "h": 1256,
+    "alt": "The Webflow logo surrounded by panels from the Webflow Designer: code, style settings, a colour picker and page layouts",
+    "credit": "Image: Webflow (webflow.com)"
+   }
+  ],
+  "use_cases": [
+   "Marketing websites that designers build and marketers update",
+   "Blogs and resource libraries on the built-in CMS",
+   "Landing pages with custom animations",
+   "Agency and freelancer client sites"
+  ],
+  "team": [
+   {
+    "name": "Linda Tong",
+    "role": "CEO"
+   },
+   {
+    "name": "Vlad Magdalin",
+    "role": "Co-founder, chief innovation officer and board chair"
+   },
+   {
+    "name": "Sergie Magdalin",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Bryant Chou",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "designers who want full visual control without hand-coding",
+    "marketing teams that need to publish and edit pages without engineers",
+    "agencies building many client sites"
+   ],
+   "not_fit": [
+    "people who want the simplest possible template site: tools such as Squarespace or Wix are quicker to learn",
+    "complex web applications with heavy custom back-end logic",
+    "large online shops, where a dedicated e-commerce platform may fit better"
+   ]
+  },
+  "pricing": {
+   "intro": "Site plans from Webflow's pricing page, in US dollars, with yearly billing (the page says yearly saves up to 40%). Workspace plans for teams are priced separately.",
+   "url": "https://webflow.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Starter",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "webflow.io domain, 2 static pages, limited CMS, 1 GB bandwidth, 50 form submissions"
+    },
+    {
+     "name": "Basic",
+     "price": "$15/month, billed yearly",
+     "amount": 15,
+     "currency": "USD",
+     "detail": "Custom domain, 300 static pages, 10 GB bandwidth, unlimited form submissions"
+    },
+    {
+     "name": "Premium",
+     "price": "From $25/month, billed yearly",
+     "amount": 25,
+     "currency": "USD",
+     "detail": "Adds the Webflow CMS, site search and code components; bandwidth tiers from 50 GB"
+    },
+    {
+     "name": "Team",
+     "price": "$2,500/month, annual contract",
+     "amount": 2500,
+     "currency": "USD",
+     "detail": "Localisation, publishing workflows, governance and priority support"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Contact sales",
+     "detail": "Custom roles, advanced governance and enhanced SLAs"
+    }
+   ],
+   "notes": [
+    "Usage beyond a plan's allowance (for example bandwidth or requests) is billed at overage rates listed on the pricing page."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other ways to build a professional website.",
+   "items": [
+    {
+     "name": "Framer",
+     "url": "https://www.framer.com/",
+     "what": "Design-led website builder",
+     "difference": "Feels closer to a design tool and is popular for startup landing pages."
+    },
+    {
+     "name": "WordPress",
+     "url": "https://wordpress.org/",
+     "what": "Open-source content management system",
+     "difference": "Free software you host yourself, with a huge plugin library, but you manage hosting and updates."
+    },
+    {
+     "name": "Wix",
+     "url": "https://www.wix.com/",
+     "what": "Template-based website builder",
+     "difference": "Easier for beginners, with less fine-grained design control."
+    },
+    {
+     "name": "Figma Sites",
+     "url": "https://www.figma.com/sites/",
+     "what": "Publish websites straight from Figma",
+     "difference": "Newer, and made for teams already designing in Figma."
+    }
+   ]
+  },
+  "pros": [
+   "Fine-grained visual control that produces clean code",
+   "Hosting, CMS and interactions in one place",
+   "A free plan to learn on"
+  ],
+  "cons": [
+   "Steeper learning curve than template builders",
+   "Costs add up across site plans, workspace plans and usage overages"
+  ],
+  "faq": [
+   {
+    "q": "Is Webflow free?",
+    "a": "You can build on a free Starter site with a webflow.io address, two static pages and limited CMS. A custom domain needs a paid site plan."
+   },
+   {
+    "q": "How much does Webflow cost?",
+    "a": "Basic is $15 a month and Premium starts at $25 a month, both billed yearly, according to Webflow's pricing page on 15 October 2026."
+   },
+   {
+    "q": "Who founded Webflow?",
+    "a": "Vlad Magdalin, Sergie Magdalin and Bryant Chou founded Webflow in 2012."
+   },
+   {
+    "q": "Who runs Webflow now?",
+    "a": "Linda Tong is CEO. Co-founder Vlad Magdalin became chief innovation officer and remains board chair."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Webflow pricing",
+    "url": "https://webflow.com/pricing"
+   },
+   {
+    "label": "Webflow blog: Linda Tong as new CEO",
+    "url": "https://webflow.com/blog/announcing-new-ceo-linda-tong"
+   },
+   {
+    "label": "CMSWire: Webflow valued at $4B after $120M Series C",
+    "url": "https://www.cmswire.com/digital-experience/webflows-valuation-climbs-to-4b-after-120m-series-c-investment"
+   },
+   {
+    "label": "Global Venturing: Webflow Series C and earlier rounds",
+    "url": "https://globalventuring.com/corporate/webflow-absorbs-120m-series-c"
+   }
+  ]
+ }
+}

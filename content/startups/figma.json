@@ -1,0 +1,186 @@
+{
+ "slug": "figma",
+ "website": "https://www.figma.com/",
+ "excerpt": "Figma is a browser-based design and prototyping platform that went public on the NYSE in July 2025. What it does, what it costs, who it suits and the main alternatives.",
+ "content": "<p>Figma is a design platform that runs in the browser, so a whole team can work on the same file at once: designers draw interfaces, product managers leave comments and developers inspect the finished screens. It was founded in 2012 by Dylan Field and Evan Wallace and is based in San Francisco.</p><p>The product has grown well beyond its original interface-design editor. FigJam, an online whiteboard, launched in April 2021; Dev Mode, a view built for developers, followed in June 2023; and Figma Slides arrived in beta in June 2024. At its Config conference in May 2025 Figma introduced four more products: Figma Sites for publishing websites, Figma Make for turning prompts into working prototypes, Figma Buzz for marketing assets and Figma Draw for illustration.</p><p>Two events shaped the company's recent history. In September 2022 Adobe agreed to buy Figma for about $20 billion. The two companies called the deal off on 18 December 2023, saying they saw no clear path to approval from the European Commission and the UK's Competition and Markets Authority, and Adobe paid Figma a $1 billion termination fee. Figma then listed on the New York Stock Exchange under the ticker FIG. It priced its initial public offering at $33 a share, above its range, and the shares began trading on 31 July 2025.</p><p>Pricing is per seat, and the kind of seat matters: a Full seat has full access to every Figma product, a Dev seat gets Dev Mode, FigJam, Slides, Buzz and Specs with view-and-comment access to design files, and a Collab seat gets FigJam, Slides, Buzz and Specs with view-and-comment access. There is a free Starter plan with unlimited drafts. AI features draw on a monthly allowance of AI credits that differs by plan and seat.</p><p><em>We have not used Figma for this page. It brings together Figma's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Design and prototyping",
+  "platform": "Web, macOS and Windows desktop apps",
+  "starts_at": "Free Starter plan; Professional Full seat $16/month",
+  "schema_category": "DesignApplication",
+  "summary_short": "Browser-based design, prototyping and whiteboarding platform for product teams",
+  "maker": {
+   "name": "Figma, Inc.",
+   "url": "https://www.figma.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1280px-Figma-logo.svg.png",
+    "w": 1200,
+    "h": 1800,
+    "alt": "Figma's logo: five rounded shapes in orange, coral, purple, blue and green",
+    "credit": "Logo: Figma, via Wikimedia Commons (public domain)"
+   },
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Dylan_Field_TechCrunch_Disrupt_2022_1435088532.jpg/1280px-Dylan_Field_TechCrunch_Disrupt_2022_1435088532.jpg",
+    "w": 1200,
+    "h": 800,
+    "alt": "Figma co-founder and CEO Dylan Field, in a Figma T-shirt, on stage with TechCrunch reporter Ron Miller at TechCrunch Disrupt 2022",
+    "credit": "Photo: TechCrunch, CC BY 2.0, via Wikimedia Commons"
+   }
+  ],
+  "use_cases": [
+   "Designing app and website interfaces with a shared component library",
+   "Clickable prototypes for user testing and stakeholder reviews",
+   "Handing designs to developers with measurements and code snippets in Dev Mode",
+   "Workshops, retros and diagrams on the FigJam whiteboard",
+   "Publishing simple websites with Figma Sites"
+  ],
+  "team": [
+   {
+    "name": "Dylan Field",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Evan Wallace",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "product and UX designers who work alongside engineers and want one shared source of truth",
+    "teams that want designers, PMs and developers commenting in the same file instead of passing exports around",
+    "companies that need design systems with shared components across many files"
+   ],
+   "not_fit": [
+    "people who only need a quick social post or flyer from a template: a tool like Canva is quicker for that",
+    "print and photo-editing work, which Figma is not built for",
+    "teams that must work fully offline, since Figma is built around cloud files"
+   ]
+  },
+  "pricing": {
+   "intro": "Figma sells seats by type (Full, Dev and Collab) on four plans. Prices below are in US dollars as shown on Figma's pricing page; Organization and Enterprise are billed annually.",
+   "url": "https://www.figma.com/pricing/",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Starter",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Limited access to Figma products, unlimited drafts, UI kits and templates, 150 AI credits a day up to 500 a month"
+    },
+    {
+     "name": "Professional",
+     "price": "$16/month per Full seat",
+     "amount": 16,
+     "currency": "USD",
+     "detail": "Dev seat $12/month, Collab seat $3/month; Full seats include 3,000 AI credits a month"
+    },
+    {
+     "name": "Organization",
+     "price": "$55/month per Full seat, billed annually",
+     "amount": 55,
+     "currency": "USD",
+     "detail": "Dev seat $25/month, Collab seat $5/month; Full seats include 3,500 AI credits a month"
+    },
+    {
+     "name": "Enterprise",
+     "price": "$90/month per Full seat, billed annually",
+     "amount": 90,
+     "currency": "USD",
+     "detail": "Dev seat $35/month, Collab seat $5/month; Full seats include 4,250 AI credits a month"
+    }
+   ],
+   "notes": [
+    "Professional has a monthly or annual toggle; the page we read showed one set of Professional prices, so check the page for the monthly-billing figure.",
+    "Dev and Collab seats on every paid plan include 500 AI credits a month."
+   ]
+  },
+  "alternatives": {
+   "intro": "Tools people often weigh against Figma. Prices are each company's own, where we checked them.",
+   "items": [
+    {
+     "name": "Canva",
+     "url": "https://www.canva.com/",
+     "what": "Template-led design for social posts, presentations and marketing",
+     "difference": "Aimed at non-designers and marketing content rather than product interface design."
+    },
+    {
+     "name": "Miro",
+     "url": "https://miro.com/",
+     "what": "Online whiteboard for workshops and planning",
+     "starts_at": "Free; Starter $8 per member/month billed annually",
+     "difference": "Competes with FigJam rather than Figma's interface-design editor."
+    },
+    {
+     "name": "Webflow",
+     "url": "https://webflow.com/",
+     "what": "Visual website builder with hosting and a CMS",
+     "starts_at": "Free Starter site; Basic $15/month billed yearly",
+     "difference": "Builds and hosts production websites; overlaps with Figma Sites, not with Figma's design editor."
+    },
+    {
+     "name": "Penpot",
+     "url": "https://penpot.app/",
+     "what": "Open-source design and prototyping tool",
+     "difference": "Open source and can be self-hosted, for teams that want to own their design tooling."
+    }
+   ]
+  },
+  "pros": [
+   "Real-time collaboration in the browser, with no files to send around",
+   "A free plan that is enough to learn the tool",
+   "One suite covers design, whiteboarding, developer handoff, slides and simple sites"
+  ],
+  "cons": [
+   "Seat types and AI credits make the bill harder to predict than a single per-user price",
+   "Organization and Enterprise are billed annually only"
+  ],
+  "faq": [
+   {
+    "q": "Is Figma free?",
+    "a": "Yes, the Starter plan is free, with unlimited drafts and a small daily allowance of AI credits. Paid plans start with Professional at $16 a month per Full seat, according to Figma's pricing page on 15 October 2026."
+   },
+   {
+    "q": "Who founded Figma?",
+    "a": "Dylan Field and Evan Wallace founded Figma in 2012. Field is the chief executive."
+   },
+   {
+    "q": "Is Figma a public company?",
+    "a": "Yes. Figma listed on the New York Stock Exchange under the ticker FIG. Its IPO was priced at $33 a share and trading began on 31 July 2025."
+   },
+   {
+    "q": "What happened to Adobe's deal to buy Figma?",
+    "a": "Adobe agreed to buy Figma for about $20 billion in 2022, but the two called it off in December 2023 over regulatory hurdles in Europe and the UK, and Adobe paid Figma a $1 billion termination fee."
+   },
+   {
+    "q": "What is the difference between Full, Dev and Collab seats?",
+    "a": "A Full seat has full access to all Figma products. A Dev seat gets Dev Mode, FigJam, Slides, Buzz and Specs plus view-and-comment access to design files. A Collab seat gets FigJam, Slides, Buzz and Specs plus view-and-comment access. Each is priced separately."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Figma pricing",
+    "url": "https://www.figma.com/pricing/"
+   },
+   {
+    "label": "Figma: pricing of its initial public offering",
+    "url": "https://www.figma.com/blog/ipo-pricing/"
+   },
+   {
+    "label": "Technology Magazine: Adobe and Figma terminate merger agreement",
+    "url": "https://technologymagazine.com/articles/adobe-and-figma-mutually-agree-to-terminate-merger-agreement"
+   },
+   {
+    "label": "IPOScoop: Figma's NYSE debut",
+    "url": "https://www.iposcoop.com/?p=35937"
+   },
+   {
+    "label": "Wikipedia: Figma (founding and product history)",
+    "url": "https://en.wikipedia.org/wiki/Figma"
+   }
+  ]
+ }
+}

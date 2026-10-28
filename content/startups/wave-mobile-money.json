@@ -1,0 +1,164 @@
+{
+ "slug": "wave-mobile-money",
+ "website": "https://www.wave.com/en/",
+ "excerpt": "Wave is a mobile money service in Senegal, Côte d'Ivoire and other African markets: free deposits, withdrawals and bill payments, and transfers for a 1% fee.",
+ "content": "<p>Wave is a mobile money app for people in Francophone West Africa and other African markets. Users deposit and withdraw cash through a network of agents, pay bills, buy airtime and send money to other people from their phone. Its website says deposits, withdrawals and bill payments are free and that sending money costs 1%.</p><p>Wave grew out of Sendwave, a remittance company that Drew Durbin and Lincoln Quirk founded in 2014 and that WorldRemit later bought, TechCrunch reported. Wave's own about page names Durbin as cofounder and CEO and says its mission is to make Africa the first cashless continent. In September 2021 Wave raised a $200 million Series A at a $1.7 billion valuation, jointly led by Sequoia Heritage, Founders Fund, Stripe and Ribbit Capital, which TechCrunch called the largest Series A in the region; at the time Wave said it was the largest mobile money player in Senegal. In July 2022 it cut about 15% of its staff, TechCrunch reported. In mid-2025 TechCabal reported a $137 million debt round led by Rand Merchant Bank with British International Investment, Finnfund and Norfund.</p><p>Wave earns money mainly from its 1% transfer fee rather than subscriptions; there is no paid plan. Fees and availability can differ by country, so check the app in your market. Wave competes with operator-run services such as Orange Money and MTN MoMo, and its low transfer fee is the main reason people switch.</p><p><em>We have not used Wave for this page. It brings together Wave's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Mobile money",
+  "platform": "Android and iOS app, agent network and card",
+  "starts_at": "Free deposits and withdrawals; 1% to send",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Low-fee mobile money for deposits, transfers and bill payments in West Africa",
+  "maker": {
+   "name": "Wave",
+   "url": "https://www.wave.com/en/"
+  },
+  "team": [
+   {
+    "name": "Drew Durbin",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Lincoln Quirk",
+    "role": "Cofounder of Sendwave, Wave's predecessor"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.wave.com/img/favicon.png",
+    "alt": "Wave logo: a cartoon penguin waving on a light blue rounded square",
+    "credit": "Logo: Wave (wave.com)",
+    "w": 192,
+    "h": 192
+   },
+   {
+    "url": "https://www.wave.com/en/testimonials/firmin/photo_hu6457daaf7fe5220dc93497a2065b631c_1471637_510x510_resize_q90_bgffffff_box_2.jpg",
+    "alt": "A Wave customer standing by a road holding up a yellow Wave card",
+    "credit": "Image: Wave (wave.com)",
+    "w": 510,
+    "h": 510
+   }
+  ],
+  "use_cases": [
+   "Sending money to family and friends",
+   "Depositing and withdrawing cash through Wave agents",
+   "Paying electricity and other bills",
+   "Buying mobile airtime",
+   "Receiving payments as a small business"
+  ],
+  "audience": {
+   "fit": [
+    "people in Wave's markets who send money often",
+    "people without a bank account who want a cheap digital wallet",
+    "small merchants who accept payments by phone"
+   ],
+   "not_fit": [
+    "anyone outside the countries Wave operates in",
+    "people who need international remittances from abroad, which is a separate service"
+   ]
+  },
+  "pricing": {
+   "intro": "Wave's homepage states its fees.",
+   "url": "https://www.wave.com/en/",
+   "plans": [
+    {
+     "name": "Deposits and withdrawals",
+     "price": "Free",
+     "amount": 0,
+     "currency": "XOF",
+     "detail": "Through Wave agents"
+    },
+    {
+     "name": "Bill payments",
+     "price": "Free",
+     "detail": "As stated on Wave's homepage"
+    },
+    {
+     "name": "Sending money",
+     "price": "1% of the amount sent",
+     "detail": "Per transfer"
+    }
+   ],
+   "notes": [
+    "Fees can differ by country; check the app in your market."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Low, simple fees",
+   "Large agent network in its core markets",
+   "Well funded, with equity and debt backing"
+  ],
+  "cons": [
+   "Only available in certain African countries",
+   "Cash in and out depends on agent availability"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Wave. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Orange Money",
+     "url": "https://www.orange.com/",
+     "what": "Mobile money from the Orange telecom group",
+     "starts_at": "See its own website",
+     "difference": "The incumbent mobile money service in much of Francophone Africa."
+    },
+    {
+     "name": "MTN MoMo",
+     "url": "https://www.mtn.com/",
+     "what": "Mobile money from MTN",
+     "starts_at": "See its own website",
+     "difference": "Operator-run mobile money with wide reach across Africa."
+    },
+    {
+     "name": "M-Pesa",
+     "url": "https://www.safaricom.co.ke/",
+     "what": "Mobile money from Safaricom and Vodacom",
+     "starts_at": "See its own website",
+     "difference": "The best-known mobile money service, strongest in East Africa."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does Wave charge?",
+    "a": "Its homepage says deposits, withdrawals and bill payments are free and sending money costs 1%."
+   },
+   {
+    "q": "Who founded Wave?",
+    "a": "Drew Durbin, Wave's cofounder and CEO. Wave grew out of Sendwave, which Durbin and Lincoln Quirk founded in 2014."
+   },
+   {
+    "q": "Is Wave a unicorn?",
+    "a": "Yes. Its $200 million Series A in 2021 valued it at $1.7 billion, according to TechCrunch."
+   },
+   {
+    "q": "Is Wave the same as Sendwave?",
+    "a": "No. Sendwave, the remittance app, was sold to WorldRemit; Wave is the separate mobile money company."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Wave homepage (fees)",
+    "url": "https://www.wave.com/en/"
+   },
+   {
+    "label": "Wave about page",
+    "url": "https://www.wave.com/en/about/"
+   },
+   {
+    "label": "TechCrunch: $200M in African fintech Wave at $1.7B valuation",
+    "url": "https://techcrunch.com/2021/09/06/sequoia-heritage-stripe-and-others-invest-200m-in-african-fintech-wave-at-1-7b-valuation/"
+   },
+   {
+    "label": "TechCrunch: Wave cut 15% of its staff",
+    "url": "https://techcrunch.com/2022/07/13/wave-a-stripe-backed-african-fintech-valued-at-1-7-billion-cut-15-of-its-staff-in-june/"
+   },
+   {
+    "label": "TechCabal: Wave raises $137 million debt",
+    "url": "https://techcabal.com/2025/06/30/wave-raises-137-milion/"
+   }
+  ]
+ }
+}

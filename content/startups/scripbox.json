@@ -1,0 +1,160 @@
+{
+ "slug": "scripbox",
+ "website": "https://scripbox.com/",
+ "excerpt": "Scripbox is an Indian online wealth manager offering mutual fund investing, financial planning, PMS and fee-based advisory. Regular-fund investing is free; direct-fund advisory starts at 0.8% a year for portfolios over ₹50 lakh.",
+ "content": "<p>Scripbox is an Indian digital wealth management company. Today its website describes Scripbox Wealth as offering portfolio management services (PMS), specialised investment funds (SIF), mutual fund distribution and fee-based advisory, and says it has been helping families towards financial freedom since 2012. Its app and website offer unbiased fund recommendations, personalised portfolio construction, continuous fund monitoring with exit alerts, goal-based financial planning and a Smart Withdraw tool designed to reduce tax on withdrawals, with access to more than 2,000 mutual funds for Indian residents, NRIs and OCIs.</p><p>Inc42 reported that Scripbox was founded in 2012 and simplifies mutual fund investing for salaried professionals; Atul Shinghal leads it as founder. Accel has backed it since its 2015 Series A. YourStory reported that in early 2019 Scripbox raised Rs 151 crore in a Series C led by Accel, with Omidyar Network and NLI Investment Fund participating. Inc42 later reported a $10.5 million Series D from existing investors Accel, NLI Investment Fund and KPB Family Trust. In January 2022 LetsVenture reported that Scripbox raised $21 million in debt and equity led by Accel, with Shinghal telling The Economic Times the money would go into acquiring customers and partnering with independent financial advisers.</p><p>Scripbox publishes its fees. Investing in regular mutual funds costs nothing directly, because Scripbox earns commission from fund houses (AMCs). For direct mutual funds, its fee-based advisory plan is for portfolios above ₹50 lakh and starts at 0.8% of the portfolio a year, plus GST, payable quarterly, with a minimum fee that may apply.</p><p>Mutual fund investments are subject to market risk. This profile is not investment advice. It draws on Scripbox's own pages and published reporting. We have not used the service, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Wealth management and mutual funds",
+  "platform": "Web, Android and iOS",
+  "starts_at": "Free for regular funds; advisory from 0.8% a year",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Mutual fund investing, financial planning, PMS and fee-based advisory for Indian investors",
+  "maker": {
+   "name": "Scripbox",
+   "url": "https://scripbox.com/"
+  },
+  "team": [
+   {
+    "name": "Atul Shinghal",
+    "role": "Founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://d112mhujhbz2ri.cloudfront.net/next-assets/images/png/product-meta/default-og-image.png",
+    "alt": "Scripbox banner reading Grow wealth, achieve goals, invest in the best mutual funds, with orange hot-air balloons and a phone showing a portfolio value chart",
+    "credit": "Image: Scripbox",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Investing in recommended mutual funds through SIPs",
+   "Building a goal-based financial plan for retirement, education or a home",
+   "Getting fee-based advice on a direct mutual fund portfolio above ₹50 lakh",
+   "Withdrawing from funds tax-efficiently with Smart Withdraw",
+   "Investing in India as an NRI or OCI"
+  ],
+  "audience": {
+   "fit": [
+    "are a salaried professional in India who wants guided mutual fund investing",
+    "want goal-based planning rather than picking funds yourself",
+    "have a larger portfolio and prefer paying a transparent advisory fee for direct funds"
+   ],
+   "not_fit": [
+    "want to trade individual stocks actively",
+    "want direct-fund advice on a portfolio under ₹50 lakh"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices from Scripbox's official pricing page.",
+   "plans": [
+    {
+     "name": "Regular",
+     "price": "₹0 a month",
+     "amount": 0,
+     "currency": "INR",
+     "detail": "Invest in regular mutual funds; Scripbox earns commission from AMCs"
+    },
+    {
+     "name": "Direct (fee-based advisory)",
+     "price": "From 0.8% of portfolio a year + GST",
+     "detail": "For portfolios above ₹50 lakh; payable quarterly; a minimum fee may apply"
+    }
+   ],
+   "notes": [
+    "Both plans include fund recommendations, portfolio construction, monitoring and financial planning, per the pricing page."
+   ],
+   "url": "https://scripbox.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Clear, published fee structure",
+   "Goal-based planning and monitoring included",
+   "Serves NRIs and OCIs"
+  ],
+  "cons": [
+   "On the free plan, Scripbox is paid by commission from fund houses",
+   "Direct advisory needs a portfolio above ₹50 lakh"
+  ],
+  "alternatives": {
+   "intro": "Other Indian mutual fund and wealth platforms. We have not compared fees.",
+   "items": [
+    {
+     "name": "Zerodha Coin",
+     "url": "https://coin.zerodha.com/",
+     "what": "Direct mutual fund investing from Zerodha",
+     "tags": [
+      "Mutual funds",
+      "Direct"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Do-it-yourself direct funds without advisory."
+    },
+    {
+     "name": "Groww",
+     "url": "https://groww.in/",
+     "what": "Investing app for mutual funds and stocks",
+     "tags": [
+      "Mutual funds",
+      "Stocks"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Self-directed app covering stocks as well as funds."
+    },
+    {
+     "name": "Kuvera",
+     "url": "https://kuvera.in/",
+     "what": "Direct mutual fund and goal-planning platform",
+     "tags": [
+      "Mutual funds",
+      "Direct"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Direct funds with free goal planning tools."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Scripbox free?",
+    "a": "Investing in regular mutual funds through Scripbox costs ₹0 directly; Scripbox earns commission from the fund houses. Fee-based advisory for direct funds starts at 0.8% a year plus GST."
+   },
+   {
+    "q": "Who founded Scripbox?",
+    "a": "Inc42 and The Economic Times (via LetsVenture) name Atul Shinghal as founder; the company was founded in 2012."
+   },
+   {
+    "q": "Who has invested in Scripbox?",
+    "a": "Accel has led several rounds; Omidyar Network, NLI Investment Fund and KPB Family Trust have also invested, according to YourStory and Inc42."
+   },
+   {
+    "q": "Can NRIs use Scripbox?",
+    "a": "Yes. Its pricing page lists support for Indian, NRI and OCI accounts."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Scripbox website",
+    "url": "https://scripbox.com/"
+   },
+   {
+    "label": "Scripbox pricing page",
+    "url": "https://scripbox.com/pricing"
+   },
+   {
+    "label": "Inc42: Scripbox raises $10.5 Mn as part of Series D round",
+    "url": "https://inc42.com/buzz/exclusive-scripbox-raises-10-5-mn-as-part-of-series-d-round/"
+   },
+   {
+    "label": "YourStory: Scripbox raises Rs 151 Cr led by Accel (Jan 2019)",
+    "url": "https://yourstory.com/2019/01/scripbox-raises-151-crore-existing-investor-accel-partners/"
+   },
+   {
+    "label": "LetsVenture: Scripbox raises $21 million led by Accel (Jan 2022)",
+    "url": "https://lvxventures.com/news/scripbox-raises-21-million-in-funding-round-led-by-accel-partners"
+   }
+  ]
+ }
+}

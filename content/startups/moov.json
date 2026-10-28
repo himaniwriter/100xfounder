@@ -1,0 +1,156 @@
+{
+ "slug": "moov",
+ "website": "https://moov.io/",
+ "excerpt": "Moov is a US payments platform for software companies: card acceptance, ACH, wallets and payouts through one API. Published pricing, funding and alternatives.",
+ "content": "<p>Moov is a US payments infrastructure company. Software platforms use its API to accept card and bank payments from their customers, hold money in wallets and send it out again as payouts, which matters for businesses such as marketplaces, lending platforms and vertical software that move money between several parties. Its site calls it the payments platform powering choice, built for technical teams. Customers shown on its site include Jack Henry, LoanPro, Trimble, Valon, Canopy and Super Dispatch.</p><p>Moov was founded in 2018 by Wade Arnold, who earlier sold the banking technology startup Banno to Jack Henry & Associates; its roots are in open-source banking software. Fortune reported in January 2023 that Moov had raised a $45 million Series B led by Commerce Ventures, with Andreessen Horowitz, Bain Capital Ventures, Sorenson Ventures and Visa, which was investing for the first time. That brought total funding to $77.5 million, after a $5.5 million seed round in August 2020 and a $27 million Series A in December 2020. The company then had 72 employees.</p><p>Moov publishes its prices. Standard pricing is pay-as-you-go with no setup fees and a $500 monthly minimum. US card acceptance costs interchange plus 0.60% plus 15 cents per charge (0.50% plus 15 cents for Tap to Pay), international cards add 1.5%, and disputes are $15. Same-day ACH is 40 cents a transfer and next-day ACH 25 cents, with $5 per return. Monthly fees include $5 per business for a merchant processing account, $2 for PCI compliance and 50 cents per active wallet. Custom pricing is available for high volumes.</p><p>Moov suits software companies building payments into their products in the US. Small merchants who just want to take cards will find simpler options.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Payments infrastructure",
+  "platform": "Web",
+  "starts_at": "Interchange+ + 0.60% + 15¢ per card charge; $500 monthly minimum",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Payments API for accepting, storing and sending money inside software platforms",
+  "maker": {
+   "name": "Moov Financial",
+   "url": "https://moov.io/"
+  },
+  "gallery": [
+   {
+    "url": "https://moov.io/images/social/moov-share-image.png",
+    "alt": "Moov wordmark in bold white letters on a dark blue-green swirling background",
+    "credit": "Image: Moov (moov.io)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://moov.io/images/dashboard-transfers.webp",
+    "alt": "Moov dashboard showing a completed $1,000 transfer with source and destination details and a transfer timeline",
+    "credit": "Image: Moov (moov.io)",
+    "w": 2388,
+    "h": 1638
+   }
+  ],
+  "use_cases": [
+   "Accepting card and ACH payments inside a software platform",
+   "Paying out to sellers, contractors or borrowers",
+   "Holding funds in wallets for users",
+   "Running multi-party payment flows",
+   "Taking in-person payments with Tap to Pay"
+  ],
+  "audience": {
+   "fit": [
+    "are a US software company embedding payments",
+    "move money between several parties",
+    "want published, interchange-plus pricing"
+   ],
+   "not_fit": [
+    "are a small merchant processing under the $500 monthly minimum",
+    "operate outside the US"
+   ]
+  },
+  "pricing": {
+   "intro": "Moov publishes pay-as-you-go pricing with a $500 monthly minimum; custom pricing is available for high volume.",
+   "plans": [
+    {
+     "name": "Card acceptance (US)",
+     "price": "Interchange+ + 0.60% + 15¢",
+     "detail": "Tap to Pay: Interchange+ + 0.50% + 15¢; international cards +1.5%"
+    },
+    {
+     "name": "ACH",
+     "price": "25¢ next-day, 40¢ same-day",
+     "detail": "$5 per return; $15 per unauthorised return"
+    },
+    {
+     "name": "Monthly fees",
+     "price": "$500 minimum",
+     "detail": "Plus $5 merchant account and $2 PCI per business; 50¢ per active wallet"
+    },
+    {
+     "name": "Custom",
+     "price": "Contact sales",
+     "detail": "For high payment volume"
+    }
+   ],
+   "notes": [],
+   "url": "https://moov.io/pricing/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Published, transparent pricing",
+   "Acceptance, wallets and payouts in one API",
+   "Backed by Visa and top fintech investors"
+  ],
+  "cons": [
+   "$500 monthly minimum",
+   "US only"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Stripe Connect",
+     "url": "https://stripe.com/connect",
+     "what": "Payments for platforms and marketplaces",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "The most widely used platform payments product."
+    },
+    {
+     "name": "Adyen for Platforms",
+     "url": "https://www.adyen.com/platforms",
+     "what": "Embedded payments for platforms",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Global coverage for large platforms."
+    },
+    {
+     "name": "Dwolla",
+     "url": "https://www.dwolla.com/",
+     "what": "ACH and bank transfer API",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Focused on bank transfers rather than cards."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does Moov charge?",
+    "a": "US card charges cost interchange plus 0.60% plus 15¢; ACH is 25¢ next-day or 40¢ same-day; standard pricing has a $500 monthly minimum."
+   },
+   {
+    "q": "Who founded Moov?",
+    "a": "Wade Arnold, in 2018."
+   },
+   {
+    "q": "How much has Moov raised?",
+    "a": "$77.5 million by its $45 million Series B in January 2023, according to Fortune."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Moov pricing",
+    "url": "https://moov.io/pricing/"
+   },
+   {
+    "label": "Fortune: Fintech Moov raises $45 million with Visa and Andreessen Horowitz (31 Jan 2023)",
+    "url": "https://fortune.com/2023/01/31/fintech-moov-45-million-raise-visa-andreessen-horowitz"
+   },
+   {
+    "label": "Finextra: Moov Financial raises $45m",
+    "url": "https://www.finextra.com/pressarticle/95614/moov-financial-raises-45m"
+   },
+   {
+    "label": "Moov official site",
+    "url": "https://moov.io/"
+   }
+  ],
+  "team": [
+   {
+    "name": "Wade Arnold",
+    "role": "Cofounder and CEO"
+   }
+  ]
+ }
+}

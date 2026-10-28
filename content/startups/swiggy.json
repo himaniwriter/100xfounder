@@ -1,0 +1,189 @@
+{
+ "slug": "swiggy",
+ "website": "https://www.swiggy.com/",
+ "excerpt": "Swiggy is a Bengaluru food delivery and quick-commerce company (Instamart, Dineout, Swiggy One), listed on the NSE and BSE since November 2024.",
+ "content": "<p>Swiggy is an Indian convenience platform best known for restaurant food delivery. Its corporate site says it launched food delivery in 2014 and quick commerce in 2020, and has since added Instamart and Genie (2020), the Swiggy One membership (2021), Dineout, which it acquired in 2022, Swiggy Minis (2022), a co-branded HDFC Bank credit card (2023), and Bolt and Swiggy Scenes (2024). The same page says the platform crossed 120 million ever-transacting users in 2025.</p><p>Inc42 reported that Swiggy was founded in 2014 by Sriharsha Majety, Nandan Reddy and Rahul Jaimini. Jaimini stepped back from his role as cofounder and CTO in May 2020 to cofound the edtech company Pesto, staying on as a shareholder and board member. Swiggy's corporate site lists Majety as Managing Director and Group CEO, Rohit Kapoor as CEO of the food marketplace and Rahul Bothra as CFO, and says Nandita Sinha became CEO of Instamart from 3 August 2026.</p><p>Swiggy went public in November 2024. Entrepreneur India reported a price band of INR 371 to INR 390 a share and a total issue of about INR 11,327.43 crore, made up of a INR 4,499 crore fresh issue and an offer for sale by existing shareholders. Business Today reported that the shares listed on 13 November 2024 at Rs 420 on the NSE, 7.69% above the Rs 390 issue price, and at Rs 412 on the BSE.</p><p>For customers, Swiggy is a free app: you pay for the food or groceries you order plus any delivery, platform or packaging charges shown at checkout. The paid Swiggy One membership adds delivery and discount benefits; its price is shown in the app rather than on a public pricing page. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Food delivery and quick commerce",
+  "platform": "Android, iOS and web",
+  "starts_at": "Free app; you pay per order",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Food delivery, Instamart quick commerce and Dineout table booking in one app",
+  "maker": {
+   "name": "Swiggy Limited",
+   "url": "https://www.swiggy.com/corporate/"
+  },
+  "team": [
+   {
+    "name": "Sriharsha Majety",
+    "role": "Cofounder, Managing Director and Group CEO"
+   },
+   {
+    "name": "Nandan Reddy",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Rahul Jaimini",
+    "role": "Cofounder; former CTO (stepped back in May 2020)"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png",
+    "alt": "Swiggy logo: a white map-pin shaped S above the word SWIGGY on an orange background",
+    "credit": "Image: Swiggy, public domain, via Wikimedia Commons (File:Swiggy logo.png)",
+    "w": 259,
+    "h": 194
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Swiggy_delivery_partner.jpg/1280px-Swiggy_delivery_partner.jpg",
+    "alt": "A Swiggy delivery partner in an orange jacket riding an electric scooter with an orange delivery box on a Bengaluru street",
+    "credit": "Image: SerChevalerie, CC0, via Wikimedia Commons (File:Swiggy delivery partner.jpg)",
+    "w": 1280,
+    "h": 720
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/SUN_Mobility_Swiggy_Bike.png/1280px-SUN_Mobility_Swiggy_Bike.png",
+    "alt": "A Swiggy rider with an orange delivery bag beside a white electric scooter at a SUN Mobility battery-swap station",
+    "credit": "Image: Eshshiv, CC0, via Wikimedia Commons (File:SUN Mobility Swiggy Bike.png)",
+    "w": 1280,
+    "h": 875
+   }
+  ],
+  "use_cases": [
+   "Ordering restaurant food for delivery",
+   "Getting groceries and household items delivered in minutes through Instamart",
+   "Booking a restaurant table and dining offers through Dineout",
+   "Finding events through Swiggy Scenes",
+   "Bundling delivery benefits across food and Instamart with a Swiggy One membership"
+  ],
+  "audience": {
+   "fit": [
+    "live in one of the Indian cities Swiggy serves and want restaurant food delivered",
+    "want groceries and essentials in one app alongside food",
+    "order often enough that a delivery membership could pay for itself"
+   ],
+   "not_fit": [
+    "live outside India: Swiggy is an India-only service",
+    "want a fixed price list before installing: fees and membership prices are shown in the app"
+   ]
+  },
+  "pricing": {
+   "intro": "Swiggy does not publish a price list on its website. The app is free; each order shows the item prices and any delivery, platform or packaging fees at checkout. The price of the Swiggy One membership is shown in the app.",
+   "plans": [
+    {
+     "name": "Swiggy app",
+     "price": "Free to download",
+     "detail": "Pay per order; fees shown at checkout"
+    },
+    {
+     "name": "Swiggy One membership",
+     "price": "Shown in the app",
+     "detail": "Delivery and discount benefits across food and Instamart; launched in 2021 per Swiggy's corporate timeline"
+    }
+   ],
+   "notes": [
+    "We could not find an official public page listing current Swiggy One prices, so none are quoted here."
+   ],
+   "url": "https://www.swiggy.com/corporate/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Food, quick commerce, dining out and events in one account",
+   "Large network: Swiggy reports 120 million+ ever-transacting users (2025)",
+   "Listed company, so financial results are public through stock-exchange filings"
+  ],
+  "cons": [
+   "Fees and membership prices are only visible inside the app",
+   "India only"
+  ],
+  "alternatives": {
+   "intro": "Other ways to get food or groceries delivered in India. We have not compared prices, which change by city and order.",
+   "items": [
+    {
+     "name": "Zomato",
+     "url": "https://www.zomato.com/",
+     "what": "Restaurant discovery and food delivery app",
+     "tags": [
+      "Food delivery",
+      "Dining out"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Swiggy's closest rival in food delivery; Blinkit, from the same group, competes with Instamart."
+    },
+    {
+     "name": "Zepto",
+     "url": "https://www.zeptonow.com/",
+     "what": "Quick-commerce grocery delivery app",
+     "tags": [
+      "Quick commerce"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Groceries only; no restaurant food delivery."
+    },
+    {
+     "name": "Blinkit",
+     "url": "https://blinkit.com/",
+     "what": "Quick-commerce grocery delivery app",
+     "tags": [
+      "Quick commerce"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Competes with Instamart rather than Swiggy's food business."
+    },
+    {
+     "name": "Magicpin",
+     "url": "https://magicpin.in/",
+     "what": "Local offers and food delivery app",
+     "tags": [
+      "Food delivery",
+      "Local offers"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Smaller food-delivery player focused on local merchant offers."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded Swiggy?",
+    "a": "Sriharsha Majety, Nandan Reddy and Rahul Jaimini, in 2014, according to Inc42. Majety is the Managing Director and Group CEO."
+   },
+   {
+    "q": "Is Swiggy a listed company?",
+    "a": "Yes. Its shares listed on the NSE and BSE on 13 November 2024 after an IPO priced at Rs 390 a share."
+   },
+   {
+    "q": "What is Instamart?",
+    "a": "Swiggy's quick-commerce service for groceries and household items, launched in 2020."
+   },
+   {
+    "q": "How much does Swiggy One cost?",
+    "a": "Swiggy shows the membership price in its app; we did not find an official public price page, so we don't quote one."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Swiggy corporate site (timeline and leadership)",
+    "url": "https://www.swiggy.com/corporate/"
+   },
+   {
+    "label": "Inc42: Swiggy CTO Rahul Jaimini exits to cofound Pesto (7 May 2020)",
+    "url": "https://inc42.com/buzz/swiggy-cto-rahul-jaimini-will-join-pesto-as-cofounder"
+   },
+   {
+    "label": "Entrepreneur India: Swiggy IPO price band and issue size",
+    "url": "https://india.entrepreneur.com/news-and-trends/swiggy-set-to-launch-ipo-on-november-6-2024-with-price/482126"
+   },
+   {
+    "label": "Business Today: Swiggy shares list at a premium (13 Nov 2024)",
+    "url": "https://www.businesstoday.in/markets/company-stock/story/swiggy-shares-surprise-on-market-debut-stock-lists-at-8-premium-453551-2024-11-13"
+   },
+   {
+    "label": "Wikimedia Commons: Swiggy images",
+    "url": "https://commons.wikimedia.org/wiki/File:Swiggy_delivery_partner.jpg"
+   }
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "slug": "meesho",
+ "website": "https://www.meesho.com/",
+ "excerpt": "Meesho is an Indian e-commerce marketplace for low-priced products that does not charge sellers commission. Founded in 2015, listed on NSE and BSE since December 2025.",
+ "content": "<p>Meesho is an Indian online marketplace focused on low-priced, everyday products such as clothing, home goods and accessories, sold by small businesses. Inc42 reported in July 2026 that Meesho does not charge sellers a commission on each order; it earns from logistics and fulfilment (including its own logistics arm, Valmo), cost-per-click seller advertising and other seller services. The same report said it works with more than 9.6 lakh sellers and has more than 264 million annual transacting users, with FY26 revenue from operations of Rs 12,626 crore.</p><p>TechCrunch reported in 2018 that Meesho was founded in 2015 by Vidit Aatrey, its CEO, and Sanjeev Barnwal, both IIT Delhi graduates, and that it graduated from Y Combinator in 2016. It began as a way for resellers to share product catalogues with friends and family over WhatsApp, before becoming a marketplace in its own right.</p><p>Meesho went public in December 2025. Entrackr reported that the shares listed on 10 December 2025 at Rs 162.5 on the NSE, 46% above the Rs 111 issue price. The Rs 5,421 crore IPO combined a Rs 4,250 crore fresh issue with a Rs 1,171 crore offer for sale.</p><p>For shoppers the app is free and each product shows its own price. Sellers should read Meesho's current seller terms on its supplier site before listing. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "E-commerce marketplace",
+  "platform": "Android, iOS and web",
+  "starts_at": "Free for shoppers; no per-order seller commission",
+  "schema_category": "ShoppingApplication",
+  "summary_short": "Low-price e-commerce marketplace for small sellers, with no per-order seller commission",
+  "maker": {
+   "name": "Meesho Limited",
+   "url": "https://www.meesho.com/"
+  },
+  "team": [
+   {
+    "name": "Vidit Aatrey",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Sanjeev Barnwal",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Meesho_Logo_Full.png",
+    "alt": "Meesho app icon: the word meesho in white on a pink rounded square",
+    "credit": "Image: Meesho, public domain, via Wikimedia Commons (File:Meesho Logo Full.png)",
+    "w": 800,
+    "h": 800
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Homepage_of_MEESHO_Website_magnified_on_logo_with_magnifying_glass_%2853147448918%29.jpg/1280px-Homepage_of_MEESHO_Website_magnified_on_logo_with_magnifying_glass_%2853147448918%29.jpg",
+    "alt": "A magnifying glass over the Meesho website's logo and address bar showing meesho.com on a computer screen",
+    "credit": "Image: Jernej Furman, CC BY 2.0, via Wikimedia Commons (File:Homepage of MEESHO Website magnified on logo with magnifying glass (53147448918).jpg)",
+    "w": 1280,
+    "h": 853
+   }
+  ],
+  "use_cases": [
+   "Buying low-priced clothing, home and lifestyle products",
+   "Selling online as a small business without a per-order commission",
+   "Reselling products to your own network"
+  ],
+  "audience": {
+   "fit": [
+    "shop on a budget and are fine with unbranded or small-brand products",
+    "are a small seller who wants to reach buyers across India without paying commission per order"
+   ],
+   "not_fit": [
+    "want premium or big-brand products",
+    "want very fast delivery in big cities: quick-commerce apps are faster"
+   ]
+  },
+  "pricing": {
+   "intro": "Meesho is free for shoppers; each product shows its price. Inc42 reports that sellers pay no per-order commission, and Meesho instead earns from logistics, seller advertising and other services. Seller terms are on Meesho's supplier site.",
+   "plans": [
+    {
+     "name": "Shopping",
+     "price": "Free app; pay per product",
+     "detail": "Delivery charges, if any, shown at checkout"
+    },
+    {
+     "name": "Selling",
+     "price": "No per-order commission (per Inc42)",
+     "detail": "Optional paid advertising; logistics charges apply"
+    }
+   ],
+   "notes": [
+    "Meesho's supplier site blocked our automated check, so seller fees are taken from Inc42's July 2026 report rather than the site itself."
+   ],
+   "url": "https://supplier.meesho.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Very low prices",
+   "No per-order commission for sellers",
+   "Listed company with public results"
+  ],
+  "cons": [
+   "Quality varies between sellers",
+   "Seller costs come through logistics and ads instead of commission"
+  ],
+  "alternatives": {
+   "intro": "Other Indian marketplaces. Prices and seller fees are on each platform's own site.",
+   "items": [
+    {
+     "name": "Flipkart",
+     "url": "https://www.flipkart.com/",
+     "what": "General e-commerce marketplace",
+     "tags": [
+      "Marketplace"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Broader range including electronics and big brands."
+    },
+    {
+     "name": "Shopsy",
+     "url": "https://www.shopsy.in/",
+     "what": "Flipkart's value e-commerce app",
+     "tags": [
+      "Marketplace",
+      "Value"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Flipkart's direct answer to Meesho."
+    },
+    {
+     "name": "Amazon",
+     "url": "https://www.amazon.in/",
+     "what": "General e-commerce marketplace",
+     "tags": [
+      "Marketplace"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Wider range and faster delivery in many cities."
+    },
+    {
+     "name": "Myntra",
+     "url": "https://www.myntra.com/",
+     "what": "Fashion e-commerce",
+     "tags": [
+      "Fashion"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Branded fashion at higher price points."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Does Meesho charge sellers commission?",
+    "a": "Inc42 reports that it does not charge a per-order commission; it earns from logistics, seller advertising and other services."
+   },
+   {
+    "q": "Who founded Meesho?",
+    "a": "Vidit Aatrey (CEO) and Sanjeev Barnwal, in 2015."
+   },
+   {
+    "q": "Is Meesho listed?",
+    "a": "Yes. It listed on the NSE and BSE on 10 December 2025 after an IPO priced at Rs 111 a share."
+   },
+   {
+    "q": "How big is Meesho?",
+    "a": "Inc42 reported more than 264 million annual transacting users, more than 9.6 lakh sellers and FY26 revenue of Rs 12,626 crore."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Meesho website",
+    "url": "https://www.meesho.com/"
+   },
+   {
+    "label": "Inc42: Decoding Meesho's zero-commission model (17 Jul 2026)",
+    "url": "https://inc42.com/features/decoding-meesho-business-model-seller-centric-revenue-engine/"
+   },
+   {
+    "label": "TechCrunch: Meesho raises USD 50M (5 Nov 2018)",
+    "url": "https://techcrunch.com/2018/11/05/meesho-raises-50-millon/"
+   },
+   {
+    "label": "Entrackr: Meesho debuts at 46% premium (10 Dec 2025)",
+    "url": "https://entrackr.com/news/meesho-debuts-on-stock-exchanges-at-46-premium-to-issue-price-10897355"
+   }
+  ]
+ }
+}

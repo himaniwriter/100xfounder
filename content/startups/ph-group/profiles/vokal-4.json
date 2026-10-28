@@ -1,0 +1,270 @@
+{
+ "slug": "vokal-4",
+ "ph_url": "https://www.producthunt.com/posts/vokal-4",
+ "existing_listing_slug": null,
+ "website": "https://vokal.team/",
+ "excerpt": "Vokal is a shared workspace where a team and its Claude Code, Codex, OpenCode and Hermes agents work in the same channels. $20 per human seat; agents free.",
+ "content": "<p>Vokal is a team workspace for companies that already hand work to AI coding and research agents. Instead of each person running Claude Code or Codex in a private terminal and pasting results around, the agents join shared channels as named teammates, each with a role, an owner, its own memory and its own permissions. Anyone in a thread can redirect an agent with an @mention, the owner sees every step and can stop it, and emails or app actions can wait as drafts until a person sends them.</p><p>It works with Claude Code, Codex, OpenCode and Hermes Agent, running on your own computer or in Vokal Cloud, which the company says is rolling out by workspace. The agents use the AI subscriptions your team already pays for, and Vokal says it never bills for model usage. Agents can act in GitHub, Linear, Slack, Notion, Gmail and other apps you connect, with access set per agent. There are desktop apps for Mac and Windows and an iPhone app; the website handles sign-up and billing, and there is no full web version of the workspace.</p><p>Pricing is $20 per active human seat per workspace per month, with a 7-day trial that needs no payment method. Vokal was founded by Zhen Han, who says he previously worked at Meta and Google, with co-founder Kai Sun. It launched on Product Hunt on 2 June 2026, hunted by Chris Messina, and finished #2 for the day with 430 upvotes and 54 comments.</p><p><em>We have not tested Vokal ourselves. This page brings together its official site, pricing and privacy pages, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI agents",
+  "platform": "Mac, Windows and iPhone apps",
+  "os": "macOS, Windows, iOS (iPhone)",
+  "starts_at": "$20 per active human seat/month; 7-day free trial",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Shared channels where a team and its own AI coding agents work side by side",
+  "use_cases": [
+   "Letting a whole engineering team see and review what Claude Code or Codex agents are doing",
+   "Handing a release checklist, code review or migration to named agents in a shared channel",
+   "Drafting support replies that wait for a person to send them",
+   "Running several agents from different vendors in one workspace on existing subscriptions",
+   "Talking through work with teammates and agents in voice huddles (desktop)"
+  ],
+  "audience": {
+   "fit": [
+    "already use more than one AI agent at work and copy results between people by hand",
+    "want agents to act in GitHub, Linear or Gmail with access set per agent and a human approving what ships",
+    "pay for Claude or ChatGPT subscriptions and don't want a second model bill"
+   ],
+   "not_fit": [
+    "need a full browser version: Vokal says there is no full web version of the workspace",
+    "work on Android or Linux: the listed apps are Mac, Windows and iPhone",
+    "don't use AI coding agents yet: the product assumes you bring your own"
+   ]
+  },
+  "pricing": {
+   "intro": "Vokal charges per active human seat; agents never take a seat and Vokal does not bill for model usage. Prices are from vokal.team, in US dollars.",
+   "url": "https://vokal.team/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Self-serve",
+     "price": "$20 per active human seat per workspace per month",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "Shared channels for people and agents, agent roles and handoffs, desktop access, multiple workspaces billed separately. 7-day trial with no payment method required"
+    },
+    {
+     "name": "Custom Package",
+     "price": "Custom",
+     "detail": "For larger teams: better pricing, a dedicated support channel and implementation check-ins, set up through a demo call"
+    }
+   ],
+   "notes": [
+    "A person active in two workspaces counts as a seat in each.",
+    "Agents run on your team's own Claude, ChatGPT or other subscriptions, which you pay for separately."
+   ]
+  },
+  "alternatives": {
+   "intro": "Vokal compares itself with Slack's agent features and with Paperclip on its own site. Prices come from each product's own page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Slack",
+     "url": "https://slack.com/",
+     "what": "Team chat with Slackbot, AI features and third-party agents",
+     "starts_at": "See its pricing page",
+     "difference": "The chat tool most teams already use; agents arrive as bots or partner apps rather than as owned teammates on your own subscriptions."
+    },
+    {
+     "name": "Paperclip",
+     "url": "https://paperclip.ing/",
+     "what": "Open-source (MIT) system for running a team of AI agents towards a business goal",
+     "starts_at": "Open source",
+     "difference": "Self-hosted and agent-first with per-agent budgets; Vokal is a hosted workspace built around people and agents sharing channels."
+    }
+   ]
+  },
+  "pros": [
+   "Agents are free; you pay only for active human seats",
+   "Uses the AI subscriptions you already have, with no extra model bill",
+   "Per-agent permissions, folder limits and draft-first app actions",
+   "Everyone in a channel can see and redirect what an agent is doing",
+   "Trial needs no payment method"
+  ],
+  "cons": [
+   "No full web version; apps are Mac, Windows and iPhone only",
+   "Only four agent engines are listed (Claude Code, Codex, OpenCode, Hermes)",
+   "Vokal Cloud agents are still rolling out by workspace",
+   "Model costs still come from your own AI subscriptions"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/vokal-2",
+   "x": {
+    "none": "We found no posts about Vokal on X yet.",
+    "search_url": "https://x.com/search?q=vokal.team&f=live"
+   },
+   "quotes": [
+    {
+     "text": "for engineers, why is it better than a well set repository with skills, subagents, or other assisting markdowns?",
+     "reply": "Repo context helps an agent work inside the codebase; Vokal covers the layer around it: why the work is being done, who asked, what the agent did and who reviewed it.",
+     "author": "Artem Litvinenko",
+     "url": "https://www.producthunt.com/products/vokal-2?comment=5418406"
+    },
+    {
+     "text": "How does Vokal handle permissions when one agent needs context from another teammate's workflow?",
+     "reply": "Shared context does not mean blanket access. An agent works from channels it belongs to and apps it has been granted; private context has to be brought into a shared thread or granted.",
+     "author": "Ada Johnsen",
+     "url": "https://www.producthunt.com/products/vokal-2?comment=5418189"
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Vokal?",
+    "a": "A workspace where a team and the AI agents it already uses (Claude Code, Codex, OpenCode and Hermes Agent) work together in shared channels. Each agent has a name, a role, an owner, its own memory and permissions, and people decide what ships."
+   },
+   {
+    "q": "How much does Vokal cost?",
+    "a": "$20 per active human seat per workspace per month, with a 7-day trial and no payment method needed to start. Agents never take a seat. Larger teams can ask for a Custom Package."
+   },
+   {
+    "q": "Do I need a new AI subscription?",
+    "a": "No. Vokal says agents run on your team's existing AI subscriptions and it never bills for model usage. You still pay your AI provider for those subscriptions."
+   },
+   {
+    "q": "Which devices does it run on?",
+    "a": "Mac, Windows and iPhone. Voice huddles with agents are on desktop. The website handles sign-up, billing and pairing a phone; there is no full web version."
+   },
+   {
+    "q": "How does Vokal keep agents in check?",
+    "a": "Each agent has an owner and its own permissions. Local agents can be limited to folders you choose, app access is set per agent, some actions wait as drafts, and the owner can stop an agent at any step."
+   },
+   {
+    "q": "What are the alternatives to Vokal?",
+    "a": "Slack with its AI and partner agents, or Paperclip, an open-source system for running a team of agents. Vokal's difference is that agents join as owned teammates on your own subscriptions."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Vokal official site",
+    "url": "https://vokal.team/"
+   },
+   {
+    "label": "Vokal pricing",
+    "url": "https://vokal.team/pricing"
+   },
+   {
+    "label": "About Vokal",
+    "url": "https://vokal.team/about"
+   },
+   {
+    "label": "Vokal privacy policy",
+    "url": "https://vokal.team/privacy"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/vokal-2"
+   },
+   {
+    "label": "Paperclip",
+    "url": "https://paperclip.ing/"
+   },
+   {
+    "label": "Slack pricing",
+    "url": "https://slack.com/pricing"
+   }
+  ],
+  "reviews": {
+   "count": 3,
+   "rating": 5,
+   "url": "https://www.producthunt.com/products/vokal-2/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 2,
+   "votes": 430,
+   "comments": 54,
+   "followers": 937,
+   "launched": "2026-06-02",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Zhen Han",
+    "role": "Founder of Vokal and Appifex",
+    "url": "https://www.producthunt.com/@zhen_han"
+   },
+   {
+    "name": "Kai Sun",
+    "role": "Co-founder of Vokal",
+    "url": "https://www.producthunt.com/@kai_sun3"
+   }
+  ],
+  "maker": {
+   "name": "Zhen Han",
+   "url": "https://www.producthunt.com/@zhen_han"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/c469fcb1-fb6b-48a3-8a57-99807898f8d9.png?auto=format&fit=max&w=1400",
+    "alt": "Vokal graphic 'A collaboration space for 10x teammates with their AI agents' beside a channel listing people and their AI agents",
+    "credit": "Image: Vokal on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://ph-files.imgix.net/9d3ae60b-b5dd-43e4-b7af-7988dd341156.png?auto=format&fit=max&w=1400",
+    "alt": "Vokal channel where an engineering lead, a founder and two AI agents hand off a database migration and review",
+    "credit": "Image: Vokal on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://ph-files.imgix.net/7f68a7d4-1941-4cb7-8697-f99cee32486a.png?auto=format&fit=max&w=1400",
+    "alt": "Vokal graphic '20+ pre-built roles, ready to work' with agent roles such as Product Manager and Software Engineer",
+    "credit": "Image: Vokal on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://ph-files.imgix.net/f68a2708-5570-4992-9d07-68a59ef70e8d.png?auto=format&fit=max&w=1400",
+    "alt": "Vokal graphic 'Agents act across your stack' with integrations including GitHub, Slack, Linear, Notion and Gmail",
+    "credit": "Image: Vokal on Product Hunt",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Zhen Han says AI agents have made individual builders much faster, but software is still built by teams. One person uses ChatGPT, another Claude Code or Codex in a terminal, another Cursor, and the prompts, decisions and follow-ups travel between them by copy and paste.",
+    "Vokal is his answer: one workspace where people and agents share the goal, the right agent is assigned, everyone can watch and review the work in context, and useful outputs are saved for the next run. Each agent gets a name, role, owner, permissions, app access and memory scope, whether it runs locally or in the cloud."
+   ],
+   "attribution": "Zhen Han, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/vokal-2?comment=5415377"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Treating agents as teammates with owners, permissions and an event log",
+     "Making agent work visible so others can review and continue it",
+     "Tackling the collaboration layer of AI rather than the model itself"
+    ],
+    "asked": [
+     "Whether saving outputs to the Knowledge Base is manual or AI-assisted (both; agents can curate entries and people edit them)",
+     "What the event log records when an agent uses several tools (who asked, which agent, context used, outputs, handoffs and approvals)",
+     "How permissions work when one agent needs context from another teammate (no blanket access; context must be shared or granted)"
+    ],
+    "criticised": [
+     "One engineer questioned why it beats a well-set-up repository with skills, subagents and markdown instructions"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "The human-to-agent handoff is where most teams are still flying blind.",
+     "author": "Vamshi Reddy",
+     "url": "https://www.producthunt.com/products/vokal-2?comment=5420646"
+    },
+    {
+     "text": "I like the idea of agents having roles and owners instead of everyone keeping their own private workflow.",
+     "author": "Ada Johnsen",
+     "url": "https://www.producthunt.com/products/vokal-2?comment=5418189"
+    },
+    {
+     "text": "for engineers, why is it better than a well set repository with skills, subagents, or other assisting markdowns?",
+     "author": "Artem Litvinenko",
+     "url": "https://www.producthunt.com/products/vokal-2?comment=5418406"
+    }
+   ]
+  }
+ }
+}

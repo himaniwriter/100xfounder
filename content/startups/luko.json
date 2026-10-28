@@ -1,0 +1,69 @@
+{
+ "slug": "luko",
+ "website": "https://www.fr.luko.eu/",
+ "excerpt": "Luko was a French neo-insurer for home insurance. After financial trouble in 2023, Allianz Direct bought its business for €4.3M in 2024; it now runs as Luko by Allianz Direct.",
+ "content": "<p>Luko was a French insurtech founded in 2018 by Raphaël Vullierme and Benoît Bourdel. It sold home insurance online in France. TechCrunch reported that it had raised €72 million since its creation and sold some 230,000 policies, mostly digital home insurance in France.</p><h2>Financial trouble and sale</h2><p>Luko ran into difficulty in 2023 after a planned Series C fell through. Its holding company, Demain ES, entered accelerated safeguard proceedings in June 2023 to deal with about €45 million of debt. The UK insurer Admiral agreed to buy Luko but backed out in October 2023, and the business then went through a court-supervised process in which several insurers bid. In January 2024 Allianz Direct, the digital-first subsidiary of Allianz, won approval to take over Luko's French home insurance business for €4.3 million (around $4.65 million), TechCrunch reported, taking on all 112 staff of the entities covered, Demain ES and Luko Cover. Allianz Direct said it planned to invest a further €25 million and keep using the Luko brand.</p><h2>Luko today</h2><p>The Luko website now operates as Luko by Allianz Direct, an online insurer offering home, car and travel insurance in France, with sign-up in a couple of minutes, according to the site.</p><h2>Pricing</h2><p>Premiums depend on the property, the cover chosen and the customer, so Luko by Allianz Direct quotes online rather than publishing fixed prices.</p><h2>Who it suits</h2><p>Luko by Allianz Direct suits people living in France who want to buy and manage home, car or travel insurance online. It is not available outside France.</p><p><em>This page is based on TechCrunch and Sifted reporting on Luko's sale and on the Luko by Allianz Direct website (checked 15 October 2026).</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Home insurance (insurtech)",
+  "platform": "Web and mobile app (France)",
+  "starts_at": "Online quote",
+  "schema_category": "FinanceApplication",
+  "summary_short": "French digital home insurer, now Luko by Allianz Direct",
+  "maker": {"name": "Luko by Allianz Direct", "url": "https://www.fr.luko.eu/"},
+  "team": [
+   {"name": "Raphaël Vullierme", "role": "Co-founder", "url": "https://techcrunch.com/?p=2657062"},
+   {"name": "Benoît Bourdel", "role": "Co-founder", "url": "https://techcrunch.com/?p=2657062"}
+  ],
+  "gallery": [
+   {"url": "https://www.fr.luko.eu/dam/images/component-images/main-teaser-home/homepage@M-v2.jpg", "alt": "A smiling woman in a blue car holding up a phone showing a Luko by Allianz Direct car insurance screen, with a passenger beside her", "credit": "Image: Luko by Allianz Direct", "w": 720, "h": 488},
+   {"url": "https://www.fr.luko.eu/dam/images/component-images/product-list/assurance-habitation@T@M.jpg", "alt": "A couple on a sofa in a bright Parisian-style apartment, the woman holding a blue piggy bank, illustrating home insurance", "credit": "Image: Luko by Allianz Direct", "w": 817, "h": 600}
+  ],
+  "use_cases": [
+   "Buying home insurance online in France",
+   "Getting car or travel insurance from the same provider",
+   "Managing a policy and claims digitally"
+  ],
+  "audience": {
+   "fit": [
+    "rent or own a home in France and want to insure it online",
+    "prefer managing insurance in an app"
+   ],
+   "not_fit": [
+    "live outside France",
+    "want to invest in or deal with the original Luko company, which was sold"
+   ]
+  },
+  "pricing": {
+   "intro": "Premiums are quoted online for each customer; there is no fixed price list.",
+   "plans": [
+    {"name": "Home insurance (assurance habitation)", "price": "Online quote", "detail": "France"},
+    {"name": "Car insurance (assurance auto)", "price": "Online quote", "detail": "France"},
+    {"name": "Travel insurance (assurance voyage)", "price": "Online quote", "detail": "France"}
+   ],
+   "notes": [],
+   "url": "https://www.fr.luko.eu/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other digital home insurers in France.",
+   "items": [
+    {"name": "Leocare", "url": "https://leocare.eu/", "what": "Mobile-first French insurer for home, car and phone", "tags": ["Insurtech"], "starts_at": "See its own site", "difference": "One of the bidders for Luko in 2023."},
+    {"name": "Lovys", "url": "https://www.lovys.com/", "what": "Modular online insurance in France", "tags": ["Insurtech"], "starts_at": "See its own site", "difference": "Bundles several covers in one subscription."},
+    {"name": "Allianz Direct", "url": "https://www.allianzdirect.fr/", "what": "Allianz's direct online insurance arm", "tags": ["Direct insurer"], "starts_at": "See its own site", "difference": "Luko's new owner."}
+   ]
+  },
+  "faq": [
+   {"q": "What happened to Luko?", "a": "After financial difficulties in 2023, its French home insurance business was bought by Allianz Direct for €4.3 million in January 2024."},
+   {"q": "Does Luko still exist?", "a": "The brand continues as Luko by Allianz Direct, offering home, car and travel insurance in France."},
+   {"q": "Who founded Luko?", "a": "Raphaël Vullierme and Benoît Bourdel, in 2018."},
+   {"q": "How much had Luko raised?", "a": "About €72 million, according to TechCrunch."}
+  ],
+  "sources": [
+   {"label": "TechCrunch: Allianz Direct takes over Luko (25 Jan 2024)", "url": "https://techcrunch.com/?p=2657062"},
+   {"label": "Sifted: Allianz Direct to buy Luko", "url": "https://sifted.eu/articles/allianz-direct-luko-5m/"},
+   {"label": "Atlas Magazine: Allianz acquiert Luko", "url": "https://www.atlas-mag.net/fr/articles/allianz-acquiert-luko"},
+   {"label": "Luko by Allianz Direct website", "url": "https://www.fr.luko.eu/"}
+  ]
+ }
+}

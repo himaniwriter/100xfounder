@@ -1,0 +1,148 @@
+{
+ "slug": "truepill",
+ "website": "https://rx.fuzehealth.com/",
+ "excerpt": "Truepill was a white-label digital pharmacy for telehealth brands. It merged with LetsGetChecked in 2024 and now operates as FuzeRx, part of Fuze Health.",
+ "content": "<p>Truepill was a business-to-business digital pharmacy. Telehealth companies and direct-to-consumer health brands used its API and pharmacies to fill and ship prescriptions under their own brand, and it later added telehealth and at-home testing services. Fierce Healthcare reported that it started out as the pharmacy fulfilment backbone for brands such as Hims and Nurx. Y Combinator's directory says it was founded in 2017, went through YC in summer 2017, and names Sid Viswanathan as a founder.</p><p>Truepill grew quickly during the pandemic. In October 2021 it raised a $142 million Series D at a $1.6 billion valuation, with existing investors Initialized Capital and TI Platform Management taking part, Fierce Healthcare and MobiHealthNews reported. In 2024 home testing company LetsGetChecked acquired Truepill, and in May 2025 the combined business launched as Fuze Health, GenomeWeb reported. Truepill's old website now redirects to FuzeRx, Fuze Health's pharmacy service, and Y Combinator lists Truepill's status as acquired. Separately, the UK health platform Phlo bought Truepill's UK arm.</p><p>FuzeRx describes itself as pharmacy services built for life sciences companies, payers and providers: home dispensing, a virtual pharmacy, hub services and white-label pharmacy through an API, with insurance, FSA/HSA and savings-card payments. It does not publish prices; partners contact the sales team. So this page describes a brand that no longer exists on its own: anyone looking for Truepill's services today should look at FuzeRx.</p><p><em>We have not used Truepill for this page. It brings together Truepill's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Digital pharmacy (acquired)",
+  "platform": "API and pharmacy services",
+  "starts_at": "Partner pricing on request (now FuzeRx)",
+  "schema_category": "MedicalBusiness",
+  "summary_short": "White-label digital pharmacy, now part of Fuze Health as FuzeRx",
+  "maker": {
+   "name": "Truepill",
+   "url": "https://rx.fuzehealth.com/"
+  },
+  "team": [
+   {
+    "name": "Sid Viswanathan",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/68a5de8ba20e7edfabbcbffb/68f1260ef60f0c163c5bb69a_Website%20Home.png",
+    "alt": "FuzeRx banner on dark green: a hand holding a Fuze Health pill bottle beside the words FuzeRx, The Future of Pharmacy",
+    "credit": "Image: Fuze Health (rx.fuzehealth.com)",
+    "w": 2400,
+    "h": 1260
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/68a5de8ba20e7edfabbcbffb/68ed6403ee34e6d7dd58754c_VirtualPharmacy.png",
+    "alt": "A phone showing a white-label prescription manager screen with refill and pricing options, next to pill bottles and a tube",
+    "credit": "Image: Fuze Health (rx.fuzehealth.com)",
+    "w": 2727,
+    "h": 1908
+   }
+  ],
+  "use_cases": [
+   "White-label prescription fulfilment for telehealth brands",
+   "Home delivery of medication",
+   "Pharmacy API integration for digital health apps",
+   "Hub services for pharmaceutical manufacturers"
+  ],
+  "audience": {
+   "fit": [
+    "telehealth and digital health companies that need a pharmacy partner",
+    "pharmaceutical companies looking for direct-to-patient dispensing",
+    "payers and providers adding home delivery"
+   ],
+   "not_fit": [
+    "individual patients looking for a consumer pharmacy app",
+    "anyone outside the United States"
+   ]
+  },
+  "pricing": {
+   "intro": "Truepill's services now run as FuzeRx, which does not publish prices.",
+   "url": "https://rx.fuzehealth.com/",
+   "plans": [
+    {
+     "name": "FuzeRx pharmacy services",
+     "price": "On request",
+     "detail": "Contact Fuze Health"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Well-known pharmacy partner for telehealth brands",
+   "Now part of a larger company with testing and pharmacy",
+   "API-first integration"
+  ],
+  "cons": [
+   "Truepill no longer operates as an independent brand",
+   "No public pricing"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Truepill. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Alto Pharmacy",
+     "url": "https://alto.com/",
+     "what": "Digital pharmacy with same-day delivery",
+     "starts_at": "See its own website",
+     "difference": "Now also part of Fuze Health, focused on direct-to-patient delivery."
+    },
+    {
+     "name": "Capsule",
+     "url": "https://www.capsule.com/",
+     "what": "Digital pharmacy with same-day delivery",
+     "starts_at": "See its own website",
+     "difference": "Consumer-facing pharmacy in several US cities."
+    },
+    {
+     "name": "Amazon Pharmacy",
+     "url": "https://pharmacy.amazon.com/",
+     "what": "Amazon's online pharmacy",
+     "starts_at": "See its own website",
+     "difference": "Consumer pharmacy rather than a white-label partner."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What happened to Truepill?",
+    "a": "LetsGetChecked acquired it in 2024, and the combined company launched as Fuze Health in May 2025. Truepill's pharmacy now runs as FuzeRx."
+   },
+   {
+    "q": "What did Truepill do?",
+    "a": "It filled and shipped prescriptions for telehealth and health brands under their own names, through an API."
+   },
+   {
+    "q": "How much was Truepill valued at?",
+    "a": "Its $142 million Series D in October 2021 valued it at $1.6 billion, Fierce Healthcare reported."
+   },
+   {
+    "q": "Who founded Truepill?",
+    "a": "Y Combinator names Sid Viswanathan as a founder; the company was founded in 2017."
+   }
+  ],
+  "sources": [
+   {
+    "label": "FuzeRx (Truepill's website now redirects here)",
+    "url": "https://rx.fuzehealth.com/"
+   },
+   {
+    "label": "Y Combinator: Truepill",
+    "url": "https://www.ycombinator.com/companies/truepill"
+   },
+   {
+    "label": "Fierce Healthcare: Truepill's $142M Series D",
+    "url": "https://www.fiercehealthcare.com/digital-health/truepill-s-142m-series-d-boosts-valuation-to-1-6b-as-it-expands-reach-to-health"
+   },
+   {
+    "label": "MobiHealthNews: Digital pharmacy Truepill scores $142M",
+    "url": "https://www.mobihealthnews.com/news/digital-pharmacy-truepill-scores-142m"
+   },
+   {
+    "label": "GenomeWeb: Fuze Health launch",
+    "url": "https://www.genomeweb.com/node/638796"
+   },
+   {
+    "label": "LaingBuisson: Phlo acquires Truepill's UK arm",
+    "url": "https://www.laingbuissonnews.com/healthcare-markets-content/uk-digital-pharmacy-market-consolidates-with-phlo-acquisition/"
+   }
+  ]
+ }
+}

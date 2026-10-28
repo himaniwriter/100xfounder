@@ -1,0 +1,166 @@
+{
+ "slug": "coinswitch",
+ "website": "https://coinswitch.co/",
+ "excerpt": "CoinSwitch is a Bengaluru crypto trading app registered with FIU-India, offering spot, futures and options on 400+ coins. Founded in 2017.",
+ "content": "<p>CoinSwitch is an Indian crypto investing and trading app. Its website lists spot trading, crypto futures and options settled in INR, Web3 coins, API trading, SmartInvest strategies, a monthly crypto SIP, crypto deposits and CoinSwitch Alpha for high-net-worth and institutional investors. It says it offers 400+ coins, that it is registered with the Financial Intelligence Unit - India (FIU-IND) and holds ISO/IEC 27001:2022 certification, and that the app is trusted by 2 crore+ users.</p><p>The Block reported that CoinSwitch was founded in 2017 as a global aggregator of crypto exchanges and launched its India exchange operations through CoinSwitch Kuber in June 2020. Entrepreneur India names its cofounders as Ashish Singhal, Vimal Sagar Tiwari and Govind Soni, with Singhal as CEO. On 1 October 2026 it reported that CoinSwitch turned profitable on an adjusted EBITDA basis in FY26, with revenue up 150% to INR 324.19 crore and adjusted EBITDA of INR 86.38 crore.</p><p>In October 2021 CoinSwitch raised USD 260 million in a Series C round led by Andreessen Horowitz (a16z) and Coinbase Ventures, with existing investors Paradigm, Ribbit Capital, Sequoia Capital India and Tiger Global, at a valuation of USD 1.9 billion, according to The Block. At the time the company claimed more than 10 million users.</p><p>CoinSwitch's homepage describes its pricing as transparent and says API trading has zero fees, but it does not publish a fee table there; trading fees are shown in the app. Crypto is volatile and high-risk, and nothing on this page is investment advice. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Crypto trading",
+  "platform": "Android, iOS and web",
+  "starts_at": "Free app; trading fees shown in the app",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Indian crypto app for spot, futures and options trading on 400+ coins, settled in INR",
+  "maker": {
+   "name": "CoinSwitch",
+   "url": "https://coinswitch.co/"
+  },
+  "team": [
+   {
+    "name": "Ashish Singhal",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Govind Soni",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Vimal Sagar Tiwari",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://files.coinswitch.co/cs_kuber/banners/1025x500+(1).jpg",
+    "alt": "CoinSwitch banner with the headline 'India's First Crypto App with 2.5 Crore+ Users', App Store and Google Play badges, FIU registered and ISO/IEC 27001 marks, and a phone showing the app",
+    "credit": "Image: CoinSwitch, from coinswitch.co",
+    "w": 1025,
+    "h": 500
+   }
+  ],
+  "use_cases": [
+   "Buying and selling crypto in INR",
+   "Trading crypto futures and options",
+   "Investing a fixed amount every month through a crypto SIP",
+   "Automated trading through the API"
+  ],
+  "audience": {
+   "fit": [
+    "are an Indian resident who wants to buy crypto with rupees on an FIU-registered platform",
+    "want spot, futures and options in one app"
+   ],
+   "not_fit": [
+    "can't afford to lose what you invest: crypto prices are highly volatile",
+    "want a published fee schedule before signing up: fees are shown in the app"
+   ]
+  },
+  "pricing": {
+   "intro": "CoinSwitch's homepage does not publish a fee table. It describes 'transparent pricing', custom fee structures for HNIs and institutions, and zero fees for API trading. Trading fees for each order are shown in the app.",
+   "plans": [
+    {
+     "name": "Retail app",
+     "price": "Free to download",
+     "detail": "Trading fees shown per order in the app"
+    },
+    {
+     "name": "API trading",
+     "price": "Zero fees (per CoinSwitch)",
+     "detail": "Automated trading"
+    },
+    {
+     "name": "HNI and institutional",
+     "price": "Custom fees",
+     "detail": "Through CoinSwitch Alpha"
+    }
+   ],
+   "url": "https://coinswitch.co/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Registered with FIU-India",
+   "Spot, futures, options and SIPs in one app",
+   "Backed by a16z, Coinbase Ventures, Tiger Global and others (2021)"
+  ],
+  "cons": [
+   "No public fee table on the homepage",
+   "Crypto carries high risk of loss"
+  ],
+  "alternatives": {
+   "intro": "Other Indian crypto exchanges. Fees are on each exchange's own site or app.",
+   "items": [
+    {
+     "name": "CoinDCX",
+     "url": "https://coindcx.com/",
+     "what": "Indian crypto exchange",
+     "tags": [
+      "Crypto exchange"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "CoinSwitch's largest domestic rival."
+    },
+    {
+     "name": "Mudrex",
+     "url": "https://mudrex.com/",
+     "what": "Crypto investing app",
+     "tags": [
+      "Crypto",
+      "Investing"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Smaller app aimed at simple crypto investing."
+    },
+    {
+     "name": "ZebPay",
+     "url": "https://zebpay.com/",
+     "what": "Indian crypto exchange",
+     "tags": [
+      "Crypto exchange"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "One of the older Indian exchanges."
+    },
+    {
+     "name": "WazirX",
+     "url": "https://wazirx.com/",
+     "what": "Indian crypto exchange",
+     "tags": [
+      "Crypto exchange"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Check its current status before using it."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is CoinSwitch registered in India?",
+    "a": "Its website says it is registered with the Financial Intelligence Unit - India (FIU-IND)."
+   },
+   {
+    "q": "Who founded CoinSwitch?",
+    "a": "Ashish Singhal (CEO), Govind Soni and Vimal Sagar Tiwari, in 2017."
+   },
+   {
+    "q": "How much funding has CoinSwitch raised?",
+    "a": "Its October 2021 Series C raised USD 260 million at a USD 1.9 billion valuation, according to The Block, bringing total funding past USD 300 million."
+   },
+   {
+    "q": "What fees does CoinSwitch charge?",
+    "a": "Fees are shown in the app; the homepage does not publish a fee table. CoinSwitch says API trading has zero fees."
+   }
+  ],
+  "sources": [
+   {
+    "label": "CoinSwitch website",
+    "url": "https://coinswitch.co/"
+   },
+   {
+    "label": "The Block: CoinSwitch Kuber raises USD 260M Series C (6 Oct 2021)",
+    "url": "https://www.theblock.co/news/deals/2021-10-06-indian-crypto-exchange-coinswitch-kuber-series-c-funding-a16z-unicorn-119600"
+   },
+   {
+    "label": "Entrepreneur India: CoinSwitch turns profitable as FY26 revenue jumps 150% (1 Oct 2026)",
+    "url": "https://india.entrepreneur.com/business-news/coinswitch-turns-profitable-as-fy26-revenue-jumps-150"
+   }
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "slug": "overwolf",
+ "website": "https://www.overwolf.com/",
+ "excerpt": "Overwolf is a Tel Aviv platform for in-game apps and mods: overlay apps for PC games, the CurseForge mod hub, Tebex game-server stores and Nitro ads. Free for players; creators earn revenue.",
+ "content": "<p>Overwolf builds tools and a marketplace for people who make add-ons for video games. Developers use its software development kit to build overlay apps and desktop apps that run alongside PC games such as League of Legends, Valorant, Fortnite and Counter-Strike 2, using web technologies like HTML and JavaScript. Players download those apps from Overwolf's app store. Overwolf also runs CurseForge, a large hub for game mods, which it acquired from Twitch in June 2020; Tebex, a platform for selling items on private game servers, which it bought in 2022; and Nitro, a gaming-focused advertising business for websites, acquired in 2024. Its website says it serves more than 178,000 in-game creators, 113 million monthly active users and 1,500 supported games, with 33 billion downloads a year.</p><p>Overwolf was founded in September 2009 by Uri Marchand, Gil Or, Alon Rabinowitz and Nir Finkelstein, according to Wikipedia; Marchand is CEO. In March 2021 it raised a $52.5 million Series C co-led by Griffin Gaming Partners and Insight Partners at a $200 million valuation, Globes reported. At that time TechCrunch reported that the platform had about 30,000 creators and 18 million monthly users, that revenue had grown 300% in a year, and that Overwolf was launching CurseForge Core, an SDK that lets studios build mod support directly into their games. Marchand told TechCrunch the company wanted to be what YouTube is for YouTubers. Wikipedia lists a $75 million Series D in November 2021 and about $149 million raised in total.</p><p>Overwolf's website pitches its tools to creators as ways to make a living: building and monetising mods, creating in-game and online stores for games and servers, and adding ads to gaming websites. It does not publish a single price list on its homepage.</p><p>This profile draws on Overwolf's own site and published reporting. We have not tested the platform, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "In-game apps and mods platform",
+  "platform": "Windows desktop (PC games), web",
+  "starts_at": "Pricing not published",
+  "schema_category": "GameApplication",
+  "summary_short": "Platform to build, share and monetise in-game overlay apps and mods, including CurseForge and Tebex",
+  "maker": {
+   "name": "Overwolf Ltd.",
+   "url": "https://www.overwolf.com/"
+  },
+  "team": [
+   {
+    "name": "Uri Marchand",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Gil Or",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Alon Rabinowitz",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Nir Finkelstein",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.overwolf.com/system/modules/com.overwolf.website/resources/img/ow_facebook.jpg",
+    "alt": "Overwolf banner reading The Guild for In-Game Creators beside a dark fantasy castle lit in red",
+    "credit": "Image: Overwolf",
+    "w": 2400,
+    "h": 1260
+   },
+   {
+    "url": "https://www.overwolf.com/pages/homepage/img/home/create-with-us/create-with-us-mods.webp",
+    "alt": "Glowing shield emblem with two crossed hammers on a dark background, from Overwolf's mod your favourite game section",
+    "credit": "Image: Overwolf",
+    "w": 544,
+    "h": 443
+   }
+  ],
+  "use_cases": [
+   "Building an in-game overlay app for a PC game with HTML and JavaScript",
+   "Publishing and monetising mods through CurseForge",
+   "Adding official mod support to a game with the CurseForge API and SDK",
+   "Running a store for a private game server through Tebex",
+   "Monetising a gaming website with ads through Nitro"
+  ],
+  "audience": {
+   "fit": [
+    "build apps, mods or tools for PC games",
+    "run a game studio that wants mod support or in-game stores",
+    "play PC games and want companion apps or mods"
+   ],
+   "not_fit": [
+    "play mainly on consoles, where overlays and mods are limited",
+    "want published, all-in pricing before signing up"
+   ]
+  },
+  "pricing": {
+   "intro": "Overwolf does not publish a single price list on its homepage. Its tools are aimed at helping creators earn through mods, stores, payments and ads.",
+   "plans": [
+    {
+     "name": "Overwolf platform",
+     "price": "Not published",
+     "detail": "Creator and studio terms vary by product (CurseForge, Tebex, Nitro)"
+    }
+   ],
+   "notes": [
+    "Individual apps may offer their own paid subscriptions."
+   ],
+   "url": "https://www.overwolf.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Large audience: 113 million monthly active users, per the company",
+   "Owns CurseForge, one of the biggest mod hubs",
+   "Several ways for creators to earn"
+  ],
+  "cons": [
+   "No single published price list",
+   "Focused on PC gaming"
+  ],
+  "alternatives": {
+   "intro": "Other places to build or find mods and game add-ons. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Nexus Mods",
+     "url": "https://www.nexusmods.com/",
+     "what": "Mod hosting site and mod manager",
+     "tags": [
+      "Mods"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Independent mod hub with a premium membership."
+    },
+    {
+     "name": "Steam Workshop",
+     "url": "https://steamcommunity.com/workshop/",
+     "what": "Valve's mod and user-content hub inside Steam",
+     "tags": [
+      "Mods"
+     ],
+     "starts_at": "Free",
+     "difference": "Built into Steam for games that support it."
+    },
+    {
+     "name": "mod.io",
+     "url": "https://mod.io/",
+     "what": "Cross-platform mod support for game studios",
+     "tags": [
+      "Mods",
+      "Studios"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Aimed at studios adding mods on consoles as well as PC."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How does Overwolf make money for creators?",
+    "a": "Its website describes tools to monetise mods, run in-game and online stores, take payments and add ads to gaming websites."
+   },
+   {
+    "q": "Does Overwolf own CurseForge?",
+    "a": "Yes. It acquired CurseForge from Twitch in June 2020."
+   },
+   {
+    "q": "Who founded Overwolf?",
+    "a": "Uri Marchand, Gil Or, Alon Rabinowitz and Nir Finkelstein, in 2009. Marchand is CEO."
+   },
+   {
+    "q": "How much has Overwolf raised?",
+    "a": "About $149 million in total, according to Wikipedia, including a $52.5 million Series C in March 2021 and a $75 million Series D in November 2021."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Overwolf website",
+    "url": "https://www.overwolf.com/"
+   },
+   {
+    "label": "TechCrunch: Overwolf raises $52.5M (16 Mar 2021)",
+    "url": "https://techcrunch.com/2021/03/16/overwolf-raises-52-5m-for-its-platform-to-build-distribute-and-monetize-in-game-user-generated-content/"
+   },
+   {
+    "label": "Globes: Israeli gaming platform co Overwolf raises $52.5m (16 Mar 2021)",
+    "url": "https://en.globes.co.il/en/article-israeli-gaming-platform-co-overwolf-raises-525m-1001364282"
+   },
+   {
+    "label": "VentureBeat: Overwolf acquires Tebex for $29M",
+    "url": "https://venturebeat.com/games/overwolf-acquires-tebex-for-29m-so-players-can-monetize-private-servers/"
+   },
+   {
+    "label": "Wikipedia: Overwolf",
+    "url": "https://en.wikipedia.org/wiki/Overwolf"
+   }
+  ]
+ }
+}

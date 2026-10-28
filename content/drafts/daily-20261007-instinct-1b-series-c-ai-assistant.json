@@ -1,0 +1,122 @@
+{
+  "type": "post",
+  "slug": "instinct-1b-series-c-ai-assistant",
+  "title": "Instinct raises $1B at $10B valuation for its personal AI agent",
+  "excerpt": "AI agent startup Instinct raised $1B from Sequoia, Benchmark and Coatue at a $10B valuation. Its product, its rivals Muse and Underdog, and the risks.",
+  "category": "funding",
+  "tags": [
+    "Instinct",
+    "AI agents",
+    "Sequoia",
+    "Benchmark",
+    "Coatue",
+    "Meta Muse",
+    "Underdog",
+    "consumer AI"
+  ],
+  "content": "<p>Instinct, a San Francisco startup that runs a personal AI agent you text or call to get errands done, has raised $1 billion at a $10 billion valuation. Sequoia Capital, Benchmark and Coatue invested, according to the company's <a href=\"https://www.morningstar.com/news/business-wire/20260928153437/instinct-raises-1-billion-in-series-c-funding-from-sequoia-benchmark-and-coatue-at-10-billion-valuation\">announcement</a> on 28 September 2026. <a href=\"https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/\">TechCrunch</a> reported it as a Series C. The round came about a month after Instinct was valued at $2.5 billion, and the product is still invite-only.</p>\n<p>The deal is the clearest sign yet that investors think the next big consumer AI product will be an agent that acts for you, not a chatbot. Meta launched a rival, Muse, three weeks earlier. A new privacy-first competitor, Underdog, opened its beta on 6 October.</p>\n<h2>Key takeaways</h2>\n<ul>\n<li>Instinct raised $1 billion from Sequoia, Benchmark and Coatue at a $10 billion valuation, announced on 28 September 2026.</li>\n<li>That is four times the $2.5 billion valuation reported in late August. Forbes Australia reported the company was valued at about $50 million in the spring.</li>\n<li>The product is an AI agent that uses its own phone number and computer to book, buy, cancel and coordinate for users. It is still invite-only.</li>\n<li>Rivals include Meta's Muse, launched on 8 September with paid plans of $20 and $100 a month, and Underdog from Conway Research, which runs on the user's own device.</li>\n<li>Privacy is the main open question. Early reports flagged broad data rights in Instinct's terms, which TechCrunch says have since been updated.</li>\n</ul>\n<h2>The round and the investors</h2>\n<p>Instinct's press release says it raised \"an additional $1 billion\" from Sequoia Capital, Benchmark Capital and Coatue. The $10 billion valuation is in the release headline. Founder Noah Shinn said the funding will help bring the product to more people. He described Instinct as an agent built to handle \"the deeply personal nuances of everyday life\".</p>\n<p>The speed of the climb is unusual even for AI. Here is how the valuation built up, according to reports at each step:</p>\n<table>\n<thead><tr><th>When</th><th>Round</th><th>Valuation</th><th>Led or joined by</th></tr></thead>\n<tbody>\n<tr><td>Spring 2026</td><td>Early round</td><td>About $50 million (Forbes Australia)</td><td>Conviction, Greenoaks</td></tr>\n<tr><td>Early August 2026</td><td>Series A, $75 million</td><td>More than $500 million (Forbes Australia)</td><td>Kleiner Perkins</td></tr>\n<tr><td>Late August 2026</td><td>Series B, $250 million (reported)</td><td>$2.5 billion</td><td>Index Ventures, Benchmark</td></tr>\n<tr><td>28 September 2026</td><td>Series C, $1 billion</td><td>$10 billion</td><td>Sequoia, Benchmark, Coatue</td></tr>\n</tbody>\n</table>\n<p>Reports differ on the Series B. <a href=\"https://siliconangle.com/?p=832069\">SiliconANGLE</a> and <a href=\"https://pulse2.com/instinct-raises-250-million-at-2-5-billion-valuation-as-ai-assistant-goes-viral-in-silicon-valley/\">Pulse 2.0</a> reported $250 million, co-led by Index Ventures and Benchmark. TechCrunch's Series C story put it at $350 million. Pulse 2.0 said Instinct had raised about $350 million in total including the Series B, which may explain the gap. Benchmark is the only investor named in both of the last two rounds.</p>\n<!-- xf-image-2 -->\n<h2>Who is behind Instinct</h2>\n<p>Shinn is 23, according to Pulse 2.0. He left Northeastern University and was previously a research scientist at Sierra, the enterprise AI agent company led by former OpenAI board chair Bret Taylor. SiliconANGLE reported that the legal entity behind Instinct is Spear Street Technology Inc. The product has been in private beta since February 2026.</p>\n<p>The early investors are well-known AI backers. <a href=\"https://www.forbes.com.au/news/investing/vcs-are-so-obsessed-with-this-ai-assistant-that-its-valuation-jumped-fivefold-in-weeks/\">Forbes Australia</a> reported that Pranav Reddy of Conviction led the first cheque, Neil Mehta of Greenoaks also backed it early, and Mamoon Hamid of Kleiner Perkins led the Series A. Sheel Mohnot, quoted by Forbes Australia, called it \"OpenClaw for normal people\". OpenClaw is the open-source agent that went viral in early 2026. Its creator, Peter Steinberger, <a href=\"https://euronews.com/next/2026/02/16/austrian-creator-of-viral-openclaw-joins-openai-to-build-next-generation-of-ai-agents\">joined OpenAI in February</a> to work on personal agents.</p>\n<h2>What the product does</h2>\n<p>Instinct has no app of its own, TechCrunch reported. Users text or call it, and it uses its own phone and computer to finish tasks from start to finish. The company's examples include planning a road trip, ordering groceries and cancelling forgotten subscriptions. Testers quoted by Pulse 2.0 used it to answer email, coordinate calendars, arrange transport, compare insurance and search for apartments. One user reportedly used it to buy a house.</p>\n<p>The September announcement listed four recent additions:</p>\n<ul>\n<li><strong>Instinct Concierge</strong>, a higher-touch service for phone calls and harder bookings, such as a restaurant that takes no online reservations or a dentist's cancellation list.</li>\n<li><strong>Trusted Person Network</strong>, which lets one user's Instinct talk to friends' Instincts to coordinate plans and share files.</li>\n<li><strong>Location sharing</strong> over iMessage, so the agent can make suggestions when a user arrives somewhere.</li>\n<li><strong>Privacy and safety features</strong>: isolated sandboxes, short-lived local credentials, signed tool execution, and a checking system meant to catch hallucinations before the agent acts.</li>\n</ul>\n<p>The service is free while in early access, Pulse 2.0 reported. Forbes Australia said the company may later charge a subscription or show ads. Neither has been confirmed.</p>\n<!-- xf-image-3 -->\n<h2>The competition: Muse, Underdog and the OpenClaw effect</h2>\n<p><strong>Meta's Muse</strong> is the best-funded rival. Meta launched it in the US on 8 September 2026, <a href=\"https://www.khaleejtimes.com/business/tech/meta-muse-ai-agent-rollout\">Reuters reported</a>. It is available through a Muse app or WhatsApp. A basic version is free, and plans cost $20 a month or $100 a month for heavier use. According to <a href=\"https://www.iclarified.com/102030/meta-launches-muse-a-personal-ai-agent-that-handles-everyday-tasks\">iClarified</a>, Muse runs each user's tasks in a dedicated cloud virtual machine. A separate monitoring agent reviews outbound activity, and Muse asks for approval before sensitive actions such as sending email or paying. TechCrunch noted Muse has been downloaded millions of times and reached the top of US app store charts. That kind of distribution is something a 23-year-old founder cannot buy.</p>\n<p><strong>Underdog</strong>, from Conway Research, takes the opposite approach. It runs entirely on the user's computer, so no personal data goes to a server, <a href=\"https://techcrunch.com/2026/10/06/silicon-valleys-ai-wunderkind-launches-underdog-the-most-private-instinct-muse-competitor-yet/\">TechCrunch reported</a> on 6 October. Founder Sigil Wen, a Thiel Fellow, has backing from Andreessen Horowitz, Khosla Ventures, Hummingbird, SV Angel and the Anthology Fund. The Anthology Fund is a partnership between Menlo Ventures and Anthropic. The amount raised was not disclosed. Underdog is free, available on Mac and Windows in an invite-only beta, and plans to earn a small cut of payments made through Stripe.</p>\n<p><strong>Open-source and do-it-yourself agents</strong> such as OpenClaw, and earlier products like Manus, which SiliconANGLE mentioned as competitors, showed demand for agents that act. They also showed that most people won't set up and run one themselves. That gap between capability and ease of use is the market Instinct and Muse are chasing.</p>\n<!-- xf-image-4 -->\n<h2>The consumer AI agent funding race</h2>\n<p>Instinct's round is part of a much larger flow. <a href=\"https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/\">Crunchbase News</a> counted $159 billion of global venture funding in July–September 2026. AI companies took $102 billion of it, or 64%. A record 27 companies raised rounds of $1 billion or more, about a third of all venture money in the quarter. Instinct joined that group within months of starting its beta.</p>\n<p>Investors are paying ahead of the evidence. Instinct has not published revenue or retention data, and the product is still invite-only. The bet rests on three ideas:</p>\n<ul>\n<li><strong>Agents may replace apps as the main interface.</strong> If people ask one assistant to book, buy and cancel, the company running that assistant controls a lot of commerce.</li>\n<li><strong>Trust builds over time.</strong> An agent with your email, calendar and payment details gets more useful the more it knows. That makes switching hard once a user commits.</li>\n<li><strong>Timing.</strong> Meta's launch confirms that big platforms see this as a major category. Venture firms want a stake in an independent challenger before the market settles.</li>\n</ul>\n<h2>The risks</h2>\n<p><strong>Privacy and control.</strong> Forbes Australia reported that Instinct's early terms gave it \"perpetual and irrevocable\" rights to store user data for model training. It also reported that one user said the agent kept email access after being disconnected. TechCrunch says the privacy policy has since been updated. Anyone giving an agent access to their inbox and payment methods should read the current terms.</p>\n<p><strong>Mistakes with real costs.</strong> Jason Yeh, an early user, reported that the agent made a restaurant booking he had not authorised, which carried a $200 cancellation fee, according to Forbes Australia. An agent that spends money for you needs strong approval steps. Meta has built approval for sensitive actions into Muse.</p>\n<p><strong>Platform dependence.</strong> Instinct works over text messages, phone calls and iMessage. Those channels are controlled by carriers and Apple. Meta, by contrast, owns WhatsApp.</p>\n<!-- xf-image-5 -->\n<h2>Why it matters</h2>\n<p>A $10 billion valuation for an invite-only product with no public metrics is a bet on a category, not on proven results. Instinct, Muse and Underdog stand for three different models: a fast-growing independent agent, a platform giant's agent and an on-device private agent. Which one people trust with their money and messages will shape consumer AI for the next few years. For founders, including those building in India, the takeaway is that agents that complete real tasks, carefully and with clear user approval, are where investor money is heading. Follow new launches on our <a href=\"/launches/\">launches page</a>, track rounds on the <a href=\"/funding-tracker/\">funding tracker</a>, and find agent-building roles on our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs board</a>.</p>\n<h2>Frequently asked questions</h2>\n<h3>How much did Instinct raise and at what valuation?</h3>\n<p>$1 billion at a $10 billion valuation, from Sequoia Capital, Benchmark and Coatue, announced on 28 September 2026. TechCrunch reported it as a Series C.</p>\n<h3>Who founded Instinct?</h3>\n<p>Noah Shinn, a former research scientist at Sierra, the AI agent company led by Bret Taylor. Pulse 2.0 reported that he is 23.</p>\n<h3>How does Instinct work?</h3>\n<p>You text or call it, and it uses its own phone and computer to complete tasks such as booking restaurants, ordering groceries, making calls and cancelling subscriptions. It is in invite-only early access.</p>\n<h3>Is Instinct free?</h3>\n<p>During early access, yes, according to Pulse 2.0. The company has not announced pricing. Meta's rival Muse has a free tier and paid plans at $20 and $100 a month.</p>\n<h3>What is Underdog?</h3>\n<p>A personal AI assistant from Conway Research, led by Sigil Wen. It runs fully on the user's own computer for privacy. It launched an invite-only beta on 6 October 2026 with backing from Andreessen Horowitz and Khosla Ventures, among others.</p>\n<h3>Is Instinct available in India?</h3>\n<p>The company has not announced country availability. Access is invite-only through its website.</p>\n<h2>Sources</h2>\n<ol>\n<li>Instinct via Business Wire (Morningstar), \"Instinct Raises $1 Billion in Series C Funding from Sequoia, Benchmark and Coatue at $10 Billion Valuation\", 28 September 2026. <a href=\"https://www.morningstar.com/news/business-wire/20260928153437/instinct-raises-1-billion-in-series-c-funding-from-sequoia-benchmark-and-coatue-at-10-billion-valuation\">Link</a></li>\n<li>TechCrunch, \"Viral AI agent Instinct raises $1B Series C at a $10B valuation\", 28 September 2026. <a href=\"https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/\">Link</a></li>\n<li>SiliconANGLE, \"Consumer-focused AI assistant startup Instinct reportedly raising $250M\", 27 August 2026. <a href=\"https://siliconangle.com/?p=832069\">Link</a></li>\n<li>Pulse 2.0, \"Instinct Raises $250 Million At $2.5 Billion Valuation As AI Assistant Goes Viral In Silicon Valley\", 27 August 2026. <a href=\"https://pulse2.com/instinct-raises-250-million-at-2-5-billion-valuation-as-ai-assistant-goes-viral-in-silicon-valley/\">Link</a></li>\n<li>Forbes Australia, \"VCs are so obsessed with this AI assistant that its valuation jumped fivefold in weeks\", 27 August 2026. <a href=\"https://www.forbes.com.au/news/investing/vcs-are-so-obsessed-with-this-ai-assistant-that-its-valuation-jumped-fivefold-in-weeks/\">Link</a></li>\n<li>Reuters via Khaleej Times, \"Meta launches AI agent 'Muse' that can access other apps to send emails, make payments\", 9 September 2026. <a href=\"https://www.khaleejtimes.com/business/tech/meta-muse-ai-agent-rollout\">Link</a></li>\n<li>iClarified, \"Meta Launches Muse, a Personal AI Agent That Handles Everyday Tasks\", 9 September 2026. <a href=\"https://www.iclarified.com/102030/meta-launches-muse-a-personal-ai-agent-that-handles-everyday-tasks\">Link</a></li>\n<li>TechCrunch, \"Silicon Valley's AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet\", 6 October 2026. <a href=\"https://techcrunch.com/2026/10/06/silicon-valleys-ai-wunderkind-launches-underdog-the-most-private-instinct-muse-competitor-yet/\">Link</a></li>\n<li>Euronews, \"Austrian creator of viral OpenClaw joins OpenAI to build next generation of AI agents\", 16 February 2026. <a href=\"https://euronews.com/next/2026/02/16/austrian-creator-of-viral-openclaw-joins-openai-to-build-next-generation-of-ai-agents\">Link</a></li>\n<li>Crunchbase News, \"Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up\", 5 October 2026. <a href=\"https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/\">Link</a></li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Woman_using_an_iPhone.jpg/1920px-Woman_using_an_iPhone.jpg",
+      "alt": "A woman holding and scrolling on an iPhone",
+      "caption": "Instinct has no app of its own: users text or call the agent, which completes tasks on their behalf.",
+      "credit": "Photo: Kristin Hardwick / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Woman_using_an_iPhone.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Sand_Hill_Road_-_1_Mile.jpg/1920px-Sand_Hill_Road_-_1_Mile.jpg",
+      "alt": "A road sign on Sand Hill Road in Menlo Park, California, home to many venture capital firms",
+      "caption": "Sand Hill Road, where many of the venture firms in the race to fund AI agents are based.",
+      "credit": "Photo: Aaron Parecki / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sand_Hill_Road_-_1_Mile.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Table_reservation_marker_at_Tunnicliff%27s_Tavern.jpg/1920px-Table_reservation_marker_at_Tunnicliff%27s_Tavern.jpg",
+      "alt": "A reserved sign on a table at a restaurant in Washington, DC",
+      "caption": "Booking restaurants that take no online reservations is one of the tasks Instinct Concierge is pitched for.",
+      "credit": "Photo: Ser Amantio di Nicolao / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Table_reservation_marker_at_Tunnicliff%27s_Tavern.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Meta_Platforms_Headquarters_Menlo_Park_California.jpg/1920px-Meta_Platforms_Headquarters_Menlo_Park_California.jpg",
+      "alt": "The entrance sign of Meta Platforms headquarters in Menlo Park, California",
+      "caption": "Meta launched its Muse agent in the US on 8 September 2026, with free and paid plans.",
+      "credit": "Photo: LPS.1 / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Meta_Platforms_Headquarters_Menlo_Park_California.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Skyline_of_San_Francisco_from_Embarcadero_%28July_2022%29.jpg/1920px-Skyline_of_San_Francisco_from_Embarcadero_%28July_2022%29.jpg",
+      "alt": "The San Francisco skyline seen from the Embarcadero waterfront",
+      "caption": "Instinct is based in San Francisco, as is Conway Research's Underdog.",
+      "credit": "Photo: Benoît Prieur / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Skyline_of_San_Francisco_from_Embarcadero_(July_2022).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.morningstar.com/news/business-wire/20260928153437/instinct-raises-1-billion-in-series-c-funding-from-sequoia-benchmark-and-coatue-at-10-billion-valuation",
+      "publisher": "Instinct via Business Wire",
+      "date": "2026-09-28",
+      "claim": "$1B from Sequoia, Benchmark, Coatue at $10B; Shinn quote; product features (Concierge, Trusted Person Network, location sharing, privacy measures); early access; SF base"
+    },
+    {
+      "url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+      "publisher": "TechCrunch",
+      "date": "2026-09-28",
+      "claim": "Series C label, no app/works by text, Series B reported as $350M, Muse downloads and app store rank, privacy policy updated"
+    },
+    {
+      "url": "https://siliconangle.com/?p=832069",
+      "publisher": "SiliconANGLE",
+      "date": "2026-08-27",
+      "claim": "$250M at $2.5B co-led by Index and Benchmark, Spear Street Technology Inc., Sierra background, Manus and OpenClaw competitors"
+    },
+    {
+      "url": "https://pulse2.com/instinct-raises-250-million-at-2-5-billion-valuation-as-ai-assistant-goes-viral-in-silicon-valley/",
+      "publisher": "Pulse 2.0",
+      "date": "2026-08-27",
+      "claim": "Shinn age 23, left Northeastern, ~$350M raised incl. Series B, private beta Feb 2026, free, use cases incl. house purchase"
+    },
+    {
+      "url": "https://www.forbes.com.au/news/investing/vcs-are-so-obsessed-with-this-ai-assistant-that-its-valuation-jumped-fivefold-in-weeks/",
+      "publisher": "Forbes Australia",
+      "date": "2026-08-27",
+      "claim": "~$50M early valuation, Conviction/Greenoaks, $75M Kleiner Perkins Series A at $500M+, Mohnot quote, terms and user complaints, possible monetisation"
+    },
+    {
+      "url": "https://www.khaleejtimes.com/business/tech/meta-muse-ai-agent-rollout",
+      "publisher": "Reuters (via Khaleej Times)",
+      "date": "2026-09-09",
+      "claim": "Muse launch 8 Sept, US only, app or WhatsApp, free tier, $20 and $100 plans"
+    },
+    {
+      "url": "https://www.iclarified.com/102030/meta-launches-muse-a-personal-ai-agent-that-handles-everyday-tasks",
+      "publisher": "iClarified",
+      "date": "2026-09-09",
+      "claim": "Muse Secure VM, monitoring agent, approval for sensitive actions"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/06/silicon-valleys-ai-wunderkind-launches-underdog-the-most-private-instinct-muse-competitor-yet/",
+      "publisher": "TechCrunch",
+      "date": "2026-10-06",
+      "claim": "Underdog by Conway Research, Sigil Wen, on-device, investors, Mac/Windows beta, free, Stripe payments revenue, amount undisclosed"
+    },
+    {
+      "url": "https://euronews.com/next/2026/02/16/austrian-creator-of-viral-openclaw-joins-openai-to-build-next-generation-of-ai-agents",
+      "publisher": "Euronews",
+      "date": "2026-02-16",
+      "claim": "OpenClaw creator Peter Steinberger joins OpenAI"
+    },
+    {
+      "url": "https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/",
+      "publisher": "Crunchbase News",
+      "date": "2026-10-05",
+      "claim": "Q3 2026 $159B VC, AI $102B (64%), 27 $1B+ rounds, a third of capital"
+    }
+  ]
+}

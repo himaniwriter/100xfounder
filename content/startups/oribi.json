@@ -1,0 +1,133 @@
+{
+ "slug": "oribi",
+ "website": "https://news.linkedin.com/2022/february/acquisition-of-oribi",
+ "excerpt": "Oribi was an Israeli web analytics and marketing attribution startup. LinkedIn acquired it in 2022 and folded the technology into its ads platform.",
+ "content": "<p>Oribi was a Tel Aviv startup that made web analytics and marketing attribution simple enough for small and mid-size companies to use without developers or analysts. Founded in 2016 by Iris Shoor, it tracked visitor behaviour automatically, without manual event tagging, and showed which channels, campaigns and pages led to sign-ups and purchases. TechCrunch described its aim as making it easier for smaller companies to build and run customised analytics to measure the impact of their marketing. It had raised almost $28 million across four rounds.</p><p>On 28 February 2022 LinkedIn, part of Microsoft, announced that it was acquiring Oribi. LinkedIn said the team's analytics expertise would speed up its attribution technology across its businesses, helping customers measure website conversions with automated tags and code-free technology, and that it would open its first office in Israel, in Tel Aviv, as part of the deal. Terms were not disclosed; TechCrunch reported, citing sources, that LinkedIn paid $80 million to $90 million, and Calcalist put the figure at $80 million. Shoor and several Oribi staff joined LinkedIn.</p><p>Oribi no longer operates as a separate product, and we have not found a standalone sign-up. Be careful with the old oribi.io domain: when we checked it on 15 October 2026 it was showing unrelated online-casino content, so this listing links to LinkedIn's acquisition announcement instead. If you want attribution for LinkedIn ads today, LinkedIn's own Campaign Manager tools are where Oribi's technology went.</p><p>Oribi remains a useful case study of a focused Israeli SaaS startup bought for its team and technology by a large platform.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Marketing analytics (acquired)",
+  "platform": "Discontinued as a standalone product",
+  "starts_at": "Discontinued",
+  "schema_category": "BusinessApplication",
+  "summary_short": "No-code web analytics and marketing attribution, acquired by LinkedIn in 2022",
+  "maker": {
+   "name": "LinkedIn (acquirer)",
+   "url": "https://business.linkedin.com/marketing-solutions"
+  },
+  "gallery": [
+   {
+    "url": "https://web.archive.org/web/2021id_/https://assets.oribi.io/website/common/oribi-og.jpg",
+    "alt": "Archived Oribi banner: its antelope-head logo and wordmark above analytics cards showing sign-up rates, a payment funnel and channel results",
+    "credit": "Image: Oribi, via the Internet Archive (2021 capture of oribi.io)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://avatars.githubusercontent.com/u/21098356?v=4",
+    "alt": "Oribi icon: a stylised geometric antelope head in brown and beige",
+    "credit": "Image: Oribi (GitHub: oribi)",
+    "w": 100,
+    "h": 100
+   }
+  ],
+  "use_cases": [
+   "Understanding what happened to Oribi",
+   "Researching marketing attribution tools",
+   "Following Israeli startup acquisitions"
+  ],
+  "audience": {
+   "fit": [
+    "were an Oribi user or are researching attribution tools",
+    "follow martech acquisitions"
+   ],
+   "not_fit": [
+    "want to sign up for Oribi: it is no longer offered on its own"
+   ]
+  },
+  "pricing": {
+   "intro": "Not applicable: Oribi is no longer sold as a standalone product.",
+   "plans": [],
+   "notes": [],
+   "url": "https://news.linkedin.com/2022/february/acquisition-of-oribi",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Was known for no-code, automatic event tracking"
+  ],
+  "cons": [
+   "Discontinued as a standalone product",
+   "Old domain now shows unrelated content"
+  ],
+  "alternatives": {
+   "intro": "Web analytics and attribution tools people use instead.",
+   "items": [
+    {
+     "name": "Google Analytics 4",
+     "url": "https://marketingplatform.google.com/about/analytics/",
+     "what": "Free web and app analytics",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Free and widespread, but more complex to set up."
+    },
+    {
+     "name": "Mixpanel",
+     "url": "https://mixpanel.com/",
+     "what": "Product and event analytics",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Strong product analytics with a free tier."
+    },
+    {
+     "name": "Plausible Analytics",
+     "url": "https://plausible.io/",
+     "what": "Privacy-friendly, simple web analytics",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Lightweight and cookie-free, with paid plans."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who bought Oribi?",
+    "a": "LinkedIn, in a deal announced on 28 February 2022."
+   },
+   {
+    "q": "How much did LinkedIn pay for Oribi?",
+    "a": "Terms were not disclosed; TechCrunch's sources put it at $80 million to $90 million."
+   },
+   {
+    "q": "Is oribi.io still Oribi?",
+    "a": "No. When we checked in October 2026 the domain showed unrelated casino content; avoid it."
+   },
+   {
+    "q": "Who founded Oribi?",
+    "a": "Iris Shoor, in 2016."
+   }
+  ],
+  "sources": [
+   {
+    "label": "LinkedIn: Acquisition of Oribi (Feb 2022)",
+    "url": "https://news.linkedin.com/2022/february/acquisition-of-oribi"
+   },
+   {
+    "label": "TechCrunch: LinkedIn acquires Israeli web analytics startup Oribi (28 Feb 2022)",
+    "url": "https://techcrunch.com/2022/02/28/linkedin-acquires-israeli-web-analytics-startup-oribi-to-expand-its-marketing-technology"
+   },
+   {
+    "label": "Axios: LinkedIn acquires Israeli marketing analytics company Oribi",
+    "url": "https://www.axios.com/linkedin-acquires-oribi-israeli-marketing-analytics-company-af41fc2d-3508-40af-8693-56c5877c3935.html"
+   },
+   {
+    "label": "Globes: LinkedIn buys Israeli marketing analytics co Oribi",
+    "url": "https://en.globes.co.il/en/article-linkedin-buys-israeli-marketing-analytics-co-oribi-1001403837"
+   }
+  ],
+  "team": [
+   {
+    "name": "Iris Shoor",
+    "role": "Founder"
+   }
+  ]
+ }
+}

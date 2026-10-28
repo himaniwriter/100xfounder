@@ -1,0 +1,189 @@
+{
+ "id": 714,
+ "date": "2026-10-04T15:37:47",
+ "date_gmt": "2026-10-04T10:07:47",
+ "guid": {
+  "rendered": "https://100xfounder.com/?p=714",
+  "raw": "https://100xfounder.com/?p=714"
+ },
+ "modified": "2026-10-07T09:07:43",
+ "modified_gmt": "2026-10-07T03:37:43",
+ "password": "",
+ "slug": "in-hand-salary-from-ctc",
+ "status": "publish",
+ "type": "post",
+ "link": "https://100xfounder.com/in-hand-salary-from-ctc/",
+ "title": {
+  "raw": "How to calculate in-hand salary from CTC in India (2026)",
+  "rendered": "How to calculate in-hand salary from CTC in India (2026)"
+ },
+ "content": {
+  "raw": "<p>An Indian job offer usually quotes a CTC, short for cost to company: the total amount the employer expects to spend on you in a year. It is often written in LPA, or lakh per annum, where one lakh is \u20b91,00,000. A \"12 LPA\" offer means a CTC of \u20b912,00,000 a year. What lands in your bank account each month, your in-hand or take-home pay, is noticeably lower. This guide explains where the difference goes and walks through a \u20b912 LPA example line by line.</p>\n\n<h2>What goes into your CTC</h2>\n\n<p>Salary structures vary by employer, but most CTC letters are built from the same blocks:</p>\n\n<ul>\n<li>Basic pay: the fixed core of your salary, fully taxable. PF, gratuity and often HRA are calculated as a percentage of it.</li>\n<li>House rent allowance (HRA): commonly set at 40\u201350% of basic. Part of it can be tax-free if you pay rent, but only in the old tax regime.</li>\n<li>Special allowance: the balancing figure that makes the components add up to your CTC. It is fully taxable.</li>\n<li>Employer PF contribution: 12% of your PF wages, paid into your Employees' Provident Fund account by the employer. It counts in CTC but never reaches your bank account each month.</li>\n<li>Gratuity: a lump sum paid when you leave after qualifying service, worked out as 15 days' wages for each completed year. Many employers set aside about 4.81% of basic for it in CTC (15 days out of a 26-day month, spread over 12 months). Permanent employees generally qualify after five years; since the labour codes took effect on 21 November 2025, fixed-term employees qualify after one year.</li>\n<li>Variable pay: a performance bonus, often paid yearly or quarterly. It is included in CTC at its target value, but the amount you receive depends on ratings and company results.</li>\n<li>Insurance and other benefits: group health or life insurance premiums, employer NPS contributions, meal cards and similar perks. Some of these have value, but they are not cash in hand.</li>\n</ul>\n\n<p>One rule shapes the split. The Code on Wages, in force since 21 November 2025, defines \"wages\" as basic pay, dearness allowance and retaining allowance. If excluded items such as HRA and other allowances make up more than 50% of total pay, the excess is added back to wages for calculating gratuity and other benefits. That is one reason many employers now keep basic at around half of pay.</p>\n\n<h2>What comes out of your gross salary</h2>\n\n<p>Start with gross salary: CTC minus the employer's PF contribution, gratuity and any non-cash benefits. Three deductions then come out of it:</p>\n\n<ul>\n<li>Employee PF: another 12% of your PF wages, taken from your pay and matched by the employer. Some employers calculate PF on your full basic. Others calculate it only on the statutory wage ceiling, which rose from \u20b915,000 to \u20b925,000 a month on 17 September 2026. At the new ceiling, the deduction is \u20b93,000 a month.</li>\n<li>Professional tax: a state tax on employment, capped by the Constitution at \u20b92,500 a year. Karnataka and Maharashtra, for example, charge \u20b9200 a month and \u20b9300 in February. Not every state levies it.</li>\n<li>Income tax (TDS): your employer estimates your tax for the year under the regime you declare, then deducts it in equal instalments as tax deducted at source. If you don't declare a regime, the new one is used.</li>\n</ul>\n\n<h2>How to calculate it, step by step</h2>\n\n<ol>\n<li>Take your CTC and remove the items that are never paid monthly: employer PF, gratuity, insurance premiums and variable pay. What remains is your fixed gross salary.</li>\n<li>Subtract your own PF contribution and professional tax.</li>\n<li>Work out annual income tax. In the new regime, taxable income is gross salary minus the \u20b975,000 standard deduction. Apply the slabs (nil up to \u20b94 lakh, then 5% steps up to 30% above \u20b924 lakh), the rebate that makes taxable income up to \u20b912 lakh tax-free, and the 4% cess.</li>\n<li>Subtract the tax and divide by 12.</li>\n</ol>\n\n<h2>Worked example: \u20b912 LPA</h2>\n\n<p>Assumptions: basic is 50% of CTC, HRA is 50% of basic, PF is calculated at the new \u20b925,000 statutory ceiling, the gratuity provision is 4.81% of basic, professional tax is \u20b92,500 a year (as in Karnataka or Maharashtra), there is no variable pay, and you choose the new tax regime.</p>\n\n<table>\n<thead><tr><th>Component</th><th>Yearly</th><th>Monthly</th></tr></thead>\n<tbody>\n<tr><td>Basic pay</td><td>\u20b96,00,000</td><td>\u20b950,000</td></tr>\n<tr><td>HRA</td><td>\u20b93,00,000</td><td>\u20b925,000</td></tr>\n<tr><td>Special allowance (balancing figure)</td><td>\u20b92,35,140</td><td>\u20b919,595</td></tr>\n<tr><td>Gross salary</td><td>\u20b911,35,140</td><td>\u20b994,595</td></tr>\n<tr><td>Employer PF (12% of \u20b925,000)</td><td>\u20b936,000</td><td>\u20b93,000</td></tr>\n<tr><td>Gratuity provision (4.81% of basic)</td><td>\u20b928,860</td><td>\u20b92,405</td></tr>\n<tr><td>CTC</td><td>\u20b912,00,000</td><td>\u20b91,00,000</td></tr>\n</tbody>\n</table>\n\n<p>Now the deductions:</p>\n\n<table>\n<thead><tr><th>From gross salary</th><th>Yearly</th><th>Monthly</th></tr></thead>\n<tbody>\n<tr><td>Gross salary</td><td>\u20b911,35,140</td><td>\u20b994,595</td></tr>\n<tr><td>Employee PF</td><td>\u2212\u20b936,000</td><td>\u2212\u20b93,000</td></tr>\n<tr><td>Professional tax</td><td>\u2212\u20b92,500</td><td>\u2212\u20b9200 (\u20b9300 in February)</td></tr>\n<tr><td>Income tax (new regime)</td><td>Nil</td><td>Nil</td></tr>\n<tr><td>In-hand pay</td><td>\u20b910,96,640</td><td>\u20b991,395 (\u20b991,295 in February)</td></tr>\n</tbody>\n</table>\n\n<p>Why no tax? Taxable income is \u20b911,35,140 \u2212 \u20b975,000 = \u20b910,60,140. Slab tax on that is \u20b926,014 (\u20b920,000 on \u20b94\u20138 lakh plus 10% of \u20b92,60,140), but taxable income is under \u20b912 lakh, so the rebate of up to \u20b960,000 cancels it. Roughly 91% of this CTC reaches your account as monthly cash. The rest is mostly retirement savings: \u20b972,000 a year goes into your PF from both sides, and gratuity builds up if you stay long enough.</p>\n\n<p>For comparison, the same salary under the old regime gives a different answer. Assume \u20b920,000 a month in rent in Bengaluru (now one of the eight cities with a 50% HRA limit), \u20b91.5 lakh of section 123 investments and \u20b925,000 of health insurance. The HRA exemption is \u20b91,80,000 and taxable income is \u20b97,27,640. Tax with cess comes to \u20b960,349, about \u20b95,000 a month more than the new regime.</p>\n\n<h2>Common gotchas</h2>\n\n<ul>\n<li>PF on full basic. If your employer calculates PF on the full \u20b950,000 basic instead of the ceiling, each side becomes \u20b96,000 a month. In the example, gross falls to \u20b910,99,140 and in-hand to about \u20b985,387 a month, around \u20b96,000 less. Your PF savings grow by \u20b972,000 a year, but your monthly cash shrinks.</li>\n<li>The September 2026 PF change. If your PF was \u20b91,800 a month because it was calculated on the old \u20b915,000 ceiling, it can rise to \u20b93,000 under the new \u20b925,000 ceiling. Ask payroll how they are applying it, because that \u20b91,200 moves from your take-home pay into PF.</li>\n<li>Variable pay is not monthly pay. If \u20b91.2 lakh of a \u20b912 lakh CTC is a target bonus, take it out before dividing by 12. That cuts your monthly cash by about \u20b910,000, and the bonus is taxed in the month it is paid.</li>\n<li>One-time items inflate CTC. Joining bonuses, relocation and retention pay are sometimes added to first-year CTC, often with a clawback if you leave early. Ask for the fixed component separately.</li>\n<li>Insurance and gratuity are not cash. They have real value, but don't count them when you plan rent or EMIs.</li>\n<li>Old-regime TDS without proofs. If you declare the old regime but don't submit rent receipts and investment proofs by your employer's deadline, payroll may recover the extra tax in the last months of the year, usually January to March.</li>\n<li>Two employers in one year. Each employer gives you the full slab benefit, so TDS can fall short and you may owe tax when you file. Give your new employer your previous salary details.</li>\n</ul>\n\n<p>To skip the arithmetic, enter your CTC in our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a>. It lets you change the basic share, PF and professional tax, and it compares both regimes. If you are weighing an offer, the <a href=\"/tools/salary-hike-calculator/\">salary hike calculator</a> shows how much of a raise reaches your monthly pay.</p>\n\n<h2>Frequently asked questions</h2>\n\n<h3>How much in-hand salary will I get on \u20b912 LPA?</h3>\n<p>With the assumptions above, about \u20b991,400 a month in the new regime, with no income tax. If PF is on full basic, it is closer to \u20b985,400. Variable pay, insurance premiums deducted from salary and your state's professional tax all move the figure.</p>\n\n<h3>Is CTC the same as gross salary?</h3>\n<p>No. Gross salary is what you are paid before your own deductions. CTC also includes the employer's PF contribution, gratuity and benefits such as insurance, which never reach your bank account each month.</p>\n\n<h3>Why do employers keep basic at around 50%?</h3>\n<p>Under the Code on Wages, if allowances make up more than half of total pay, the excess is added back to \"wages\" for calculating gratuity and other benefits. A basic of about half of pay keeps the structure in line. A higher basic means higher PF and gratuity, but lower monthly cash.</p>\n\n<h3>Do I get gratuity if I leave after two years?</h3>\n<p>Usually not, if you are a permanent employee: the general rule is five years of continuous service. Fixed-term employees became eligible after one year when the labour codes took effect. Check your offer letter to see whether gratuity is counted in your CTC.</p>\n\n<h3>Which tax regime gives a higher in-hand salary?</h3>\n<p>For most salaried people up to about \u20b912.75 lakh of salary, the new regime, because the tax is nil. Above that, it depends on your rent, investments and loans. Our explainer comparing the new and old regimes for 2026-27 works through examples at \u20b910 lakh to \u20b930 lakh.</p>\n\n<p>This guide is general information, not tax or financial advice. Please confirm your own case with a chartered accountant (CA).</p>",
+  "rendered": "<p>An Indian job offer usually quotes a CTC, short for cost to company: the total amount the employer expects to spend on you in a year. It is often written in LPA, or lakh per annum, where one lakh is \u20b91,00,000. A &#8220;12 LPA&#8221; offer means a CTC of \u20b912,00,000 a year. What lands in your bank account each month, your in-hand or take-home pay, is noticeably lower. This guide explains where the difference goes and walks through a \u20b912 LPA example line by line.</p>\n<h2>What goes into your CTC</h2>\n<p>Salary structures vary by employer, but most CTC letters are built from the same blocks:</p>\n<ul>\n<li>Basic pay: the fixed core of your salary, fully taxable. PF, gratuity and often HRA are calculated as a percentage of it.</li>\n<li>House rent allowance (HRA): commonly set at 40\u201350% of basic. Part of it can be tax-free if you pay rent, but only in the old tax regime.</li>\n<li>Special allowance: the balancing figure that makes the components add up to your CTC. It is fully taxable.</li>\n<li>Employer PF contribution: 12% of your PF wages, paid into your Employees&#8217; Provident Fund account by the employer. It counts in CTC but never reaches your bank account each month.</li>\n<li>Gratuity: a lump sum paid when you leave after qualifying service, worked out as 15 days&#8217; wages for each completed year. Many employers set aside about 4.81% of basic for it in CTC (15 days out of a 26-day month, spread over 12 months). Permanent employees generally qualify after five years; since the labour codes took effect on 21 November 2025, fixed-term employees qualify after one year.</li>\n<li>Variable pay: a performance bonus, often paid yearly or quarterly. It is included in CTC at its target value, but the amount you receive depends on ratings and company results.</li>\n<li>Insurance and other benefits: group health or life insurance premiums, employer NPS contributions, meal cards and similar perks. Some of these have value, but they are not cash in hand.</li>\n</ul>\n<p>One rule shapes the split. The Code on Wages, in force since 21 November 2025, defines &#8220;wages&#8221; as basic pay, dearness allowance and retaining allowance. If excluded items such as HRA and other allowances make up more than 50% of total pay, the excess is added back to wages for calculating gratuity and other benefits. That is one reason many employers now keep basic at around half of pay.</p>\n<h2>What comes out of your gross salary</h2>\n<p>Start with gross salary: CTC minus the employer&#8217;s PF contribution, gratuity and any non-cash benefits. Three deductions then come out of it:</p>\n<ul>\n<li>Employee PF: another 12% of your PF wages, taken from your pay and matched by the employer. Some employers calculate PF on your full basic. Others calculate it only on the statutory wage ceiling, which rose from \u20b915,000 to \u20b925,000 a month on 17 September 2026. At the new ceiling, the deduction is \u20b93,000 a month.</li>\n<li>Professional tax: a state tax on employment, capped by the Constitution at \u20b92,500 a year. Karnataka and Maharashtra, for example, charge \u20b9200 a month and \u20b9300 in February. Not every state levies it.</li>\n<li>Income tax (TDS): your employer estimates your tax for the year under the regime you declare, then deducts it in equal instalments as tax deducted at source. If you don&#8217;t declare a regime, the new one is used.</li>\n</ul>\n<h2>How to calculate it, step by step</h2>\n<ol>\n<li>Take your CTC and remove the items that are never paid monthly: employer PF, gratuity, insurance premiums and variable pay. What remains is your fixed gross salary.</li>\n<li>Subtract your own PF contribution and professional tax.</li>\n<li>Work out annual income tax. In the new regime, taxable income is gross salary minus the \u20b975,000 standard deduction. Apply the slabs (nil up to \u20b94 lakh, then 5% steps up to 30% above \u20b924 lakh), the rebate that makes taxable income up to \u20b912 lakh tax-free, and the 4% cess.</li>\n<li>Subtract the tax and divide by 12.</li>\n</ol>\n<h2>Worked example: \u20b912 LPA</h2>\n<p>Assumptions: basic is 50% of CTC, HRA is 50% of basic, PF is calculated at the new \u20b925,000 statutory ceiling, the gratuity provision is 4.81% of basic, professional tax is \u20b92,500 a year (as in Karnataka or Maharashtra), there is no variable pay, and you choose the new tax regime.</p>\n<div class=\"xf-tablewrap\" tabindex=\"0\" role=\"group\" aria-label=\"Table, scrollable sideways\"><table class=\"xf-dt\" style=\"--cols:3\">\n<thead>\n<tr>\n<th scope=\"col\">Component</th>\n<th scope=\"col\">Yearly</th>\n<th scope=\"col\">Monthly</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">Basic pay</th>\n<td>\u20b96,00,000</td>\n<td>\u20b950,000</td>\n</tr>\n<tr>\n<th scope=\"row\">HRA</th>\n<td>\u20b93,00,000</td>\n<td>\u20b925,000</td>\n</tr>\n<tr>\n<th scope=\"row\">Special allowance (balancing figure)</th>\n<td>\u20b92,35,140</td>\n<td>\u20b919,595</td>\n</tr>\n<tr>\n<th scope=\"row\">Gross salary</th>\n<td>\u20b911,35,140</td>\n<td>\u20b994,595</td>\n</tr>\n<tr>\n<th scope=\"row\">Employer PF (12% of \u20b925,000)</th>\n<td>\u20b936,000</td>\n<td>\u20b93,000</td>\n</tr>\n<tr>\n<th scope=\"row\">Gratuity provision (4.81% of basic)</th>\n<td>\u20b928,860</td>\n<td>\u20b92,405</td>\n</tr>\n<tr>\n<th scope=\"row\">CTC</th>\n<td>\u20b912,00,000</td>\n<td>\u20b91,00,000</td>\n</tr>\n</tbody>\n</table></div><p class=\"xf-tablehint\" aria-hidden=\"true\">Scroll the table sideways &rarr;</p>\n<p>Now the deductions:</p>\n<div class=\"xf-tablewrap\" tabindex=\"0\" role=\"group\" aria-label=\"Table, scrollable sideways\"><table class=\"xf-dt\" style=\"--cols:3\">\n<thead>\n<tr>\n<th scope=\"col\">From gross salary</th>\n<th scope=\"col\">Yearly</th>\n<th scope=\"col\">Monthly</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">Gross salary</th>\n<td>\u20b911,35,140</td>\n<td>\u20b994,595</td>\n</tr>\n<tr>\n<th scope=\"row\">Employee PF</th>\n<td>\u2212\u20b936,000</td>\n<td>\u2212\u20b93,000</td>\n</tr>\n<tr>\n<th scope=\"row\">Professional tax</th>\n<td>\u2212\u20b92,500</td>\n<td>\u2212\u20b9200 (\u20b9300 in February)</td>\n</tr>\n<tr>\n<th scope=\"row\">Income tax (new regime)</th>\n<td>Nil</td>\n<td>Nil</td>\n</tr>\n<tr>\n<th scope=\"row\">In-hand pay</th>\n<td>\u20b910,96,640</td>\n<td>\u20b991,395 (\u20b991,295 in February)</td>\n</tr>\n</tbody>\n</table></div><p class=\"xf-tablehint\" aria-hidden=\"true\">Scroll the table sideways &rarr;</p>\n<p>Why no tax? Taxable income is \u20b911,35,140 \u2212 \u20b975,000 = \u20b910,60,140. Slab tax on that is \u20b926,014 (\u20b920,000 on \u20b94\u20138 lakh plus 10% of \u20b92,60,140), but taxable income is under \u20b912 lakh, so the rebate of up to \u20b960,000 cancels it. Roughly 91% of this CTC reaches your account as monthly cash. The rest is mostly retirement savings: \u20b972,000 a year goes into your PF from both sides, and gratuity builds up if you stay long enough.</p>\n<p>For comparison, the same salary under the old regime gives a different answer. Assume \u20b920,000 a month in rent in Bengaluru (now one of the eight cities with a 50% HRA limit), \u20b91.5 lakh of section 123 investments and \u20b925,000 of health insurance. The HRA exemption is \u20b91,80,000 and taxable income is \u20b97,27,640. Tax with cess comes to \u20b960,349, about \u20b95,000 a month more than the new regime.</p>\n<h2>Common gotchas</h2>\n<ul>\n<li>PF on full basic. If your employer calculates PF on the full \u20b950,000 basic instead of the ceiling, each side becomes \u20b96,000 a month. In the example, gross falls to \u20b910,99,140 and in-hand to about \u20b985,387 a month, around \u20b96,000 less. Your PF savings grow by \u20b972,000 a year, but your monthly cash shrinks.</li>\n<li>The September 2026 PF change. If your PF was \u20b91,800 a month because it was calculated on the old \u20b915,000 ceiling, it can rise to \u20b93,000 under the new \u20b925,000 ceiling. Ask payroll how they are applying it, because that \u20b91,200 moves from your take-home pay into PF.</li>\n<li>Variable pay is not monthly pay. If \u20b91.2 lakh of a \u20b912 lakh CTC is a target bonus, take it out before dividing by 12. That cuts your monthly cash by about \u20b910,000, and the bonus is taxed in the month it is paid.</li>\n<li>One-time items inflate CTC. Joining bonuses, relocation and retention pay are sometimes added to first-year CTC, often with a clawback if you leave early. Ask for the fixed component separately.</li>\n<li>Insurance and gratuity are not cash. They have real value, but don&#8217;t count them when you plan rent or EMIs.</li>\n<li>Old-regime TDS without proofs. If you declare the old regime but don&#8217;t submit rent receipts and investment proofs by your employer&#8217;s deadline, payroll may recover the extra tax in the last months of the year, usually January to March.</li>\n<li>Two employers in one year. Each employer gives you the full slab benefit, so TDS can fall short and you may owe tax when you file. Give your new employer your previous salary details.</li>\n</ul>\n<p>To skip the arithmetic, enter your CTC in our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a>. It lets you change the basic share, PF and professional tax, and it compares both regimes. If you are weighing an offer, the <a href=\"/tools/salary-hike-calculator/\">salary hike calculator</a> shows how much of a raise reaches your monthly pay.</p>\n<h2>Frequently asked questions</h2>\n<h3>How much in-hand salary will I get on \u20b912 LPA?</h3>\n<p>With the assumptions above, about \u20b991,400 a month in the new regime, with no income tax. If PF is on full basic, it is closer to \u20b985,400. Variable pay, insurance premiums deducted from salary and your state&#8217;s professional tax all move the figure.</p>\n<h3>Is CTC the same as gross salary?</h3>\n<p>No. Gross salary is what you are paid before your own deductions. CTC also includes the employer&#8217;s PF contribution, gratuity and benefits such as insurance, which never reach your bank account each month.</p>\n<h3>Why do employers keep basic at around 50%?</h3>\n<p>Under the Code on Wages, if allowances make up more than half of total pay, the excess is added back to &#8220;wages&#8221; for calculating gratuity and other benefits. A basic of about half of pay keeps the structure in line. A higher basic means higher PF and gratuity, but lower monthly cash.</p>\n<h3>Do I get gratuity if I leave after two years?</h3>\n<p>Usually not, if you are a permanent employee: the general rule is five years of continuous service. Fixed-term employees became eligible after one year when the labour codes took effect. Check your offer letter to see whether gratuity is counted in your CTC.</p>\n<h3>Which tax regime gives a higher in-hand salary?</h3>\n<p>For most salaried people up to about \u20b912.75 lakh of salary, the new regime, because the tax is nil. Above that, it depends on your rent, investments and loans. Our explainer comparing the new and old regimes for 2026-27 works through examples at \u20b910 lakh to \u20b930 lakh.</p>\n<p>This guide is general information, not tax or financial advice. Please confirm your own case with a chartered accountant (CA).</p>\n",
+  "protected": false,
+  "block_version": 0
+ },
+ "excerpt": {
+  "raw": "What goes into CTC, what comes out as PF, professional tax and TDS, and a line-by-line \u20b912 LPA example showing your real monthly take-home pay in 2026.",
+  "rendered": "<p>What goes into CTC, what comes out as PF, professional tax and TDS, and a line-by-line \u20b912 LPA example showing your real monthly take-home pay in 2026.</p>\n",
+  "protected": false
+ },
+ "author": 1,
+ "featured_media": 0,
+ "comment_status": "open",
+ "ping_status": "open",
+ "sticky": false,
+ "template": "",
+ "format": "standard",
+ "meta": {
+  "wpai_generated_summary": "",
+  "wpai_meta_description": "",
+  "footnotes": ""
+ },
+ "categories": [
+  13
+ ],
+ "tags": [
+  82,
+  83,
+  88,
+  89,
+  87,
+  86,
+  85,
+  84
+ ],
+ "permalink_template": "https://100xfounder.com/%postname%/",
+ "generated_slug": "how-to-calculate-in-hand-salary-from-ctc-in-india-2026",
+ "class_list": [
+  "post-714",
+  "post",
+  "type-post",
+  "status-publish",
+  "format-standard",
+  "hentry",
+  "category-reports",
+  "tag-ctc",
+  "tag-in-hand-salary",
+  "tag-income-tax",
+  "tag-jobs-in-india",
+  "tag-professional-tax",
+  "tag-provident-fund",
+  "tag-salary-structure",
+  "tag-take-home-pay"
+ ],
+ "_links": {
+  "self": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714",
+    "targetHints": {
+     "allow": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+     ]
+    }
+   }
+  ],
+  "collection": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts"
+   }
+  ],
+  "about": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/types/post"
+   }
+  ],
+  "author": [
+   {
+    "embeddable": true,
+    "href": "https://100xfounder.com/wp-json/wp/v2/users/1"
+   }
+  ],
+  "replies": [
+   {
+    "embeddable": true,
+    "href": "https://100xfounder.com/wp-json/wp/v2/comments?post=714"
+   }
+  ],
+  "version-history": [
+   {
+    "count": 1,
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714/revisions"
+   }
+  ],
+  "predecessor-version": [
+   {
+    "id": 715,
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714/revisions/715"
+   }
+  ],
+  "wp:attachment": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=714"
+   }
+  ],
+  "wp:term": [
+   {
+    "taxonomy": "category",
+    "embeddable": true,
+    "href": "https://100xfounder.com/wp-json/wp/v2/categories?post=714"
+   },
+   {
+    "taxonomy": "post_tag",
+    "embeddable": true,
+    "href": "https://100xfounder.com/wp-json/wp/v2/tags?post=714"
+   }
+  ],
+  "wp:action-publish": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714"
+   }
+  ],
+  "wp:action-unfiltered-html": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714"
+   }
+  ],
+  "wp:action-sticky": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714"
+   }
+  ],
+  "wp:action-assign-author": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714"
+   }
+  ],
+  "wp:action-create-categories": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714"
+   }
+  ],
+  "wp:action-assign-categories": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714"
+   }
+  ],
+  "wp:action-create-tags": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714"
+   }
+  ],
+  "wp:action-assign-tags": [
+   {
+    "href": "https://100xfounder.com/wp-json/wp/v2/posts/714"
+   }
+  ],
+  "curies": [
+   {
+    "name": "wp",
+    "href": "https://api.w.org/{rel}",
+    "templated": true
+   }
+  ]
+ }
+}

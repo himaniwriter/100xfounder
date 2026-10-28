@@ -1,0 +1,378 @@
+{
+ "input": "https://www.producthunt.com/posts/visibai",
+ "final_url": "https://www.producthunt.com/products/visibai-ai-visibility-audit-tool?launch=visibai",
+ "launch": {
+  "slug": "visibai",
+  "name": "VisibAI",
+  "tagline": "Are you in AI answers? Find out and fix it in minutes",
+  "featuredAt": "2026-06-29T00:01:00-07:00",
+  "dailyRank": "4",
+  "weeklyRank": "23",
+  "points": 257,
+  "commentsCount": 58,
+  "pricingType": "free_options",
+  "description": "VisibAI shows whether your business appears when people ask AI for recommendations, and helps you fix it. It runs queries across six AI platforms (ChatGPT, Perplexity, Claude, Gemini, Mistral, You.com), scores your visibility 0-100, reveals which competitors show up instead, and returns a prioritized fix list plus ready-to-ship fix files and a branded report. One-off audits or monthly tracking. White-label for agencies. EU-hosted and GDPR-native.",
+  "makers": [
+   {
+    "name": "Francesco Bianchi",
+    "username": "francesco2689",
+    "headline": "Founder | Building VisibAI\n\n\n\n"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "e05e1269-79da-4877-ae5d-a3efa1da5051.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "251087d1-e773-4471-8113-d83774f71a31.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "7f97ee4e-1d18-4643-b9bc-0f4592cd080b.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "7bbb926c-a540-4600-9d44-17b8a460707b.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "f27d6d51-6345-4c56-9852-adf454f16307.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "b912479c-dba9-487e-bf3c-501a77a28059.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/MT9hAYITA74"
+   }
+  ],
+  "links": [
+   "getvisibai.com",
+   "www.instagram.com",
+   "www.linkedin.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    4
+   ]
+  ]
+ },
+ "product": {
+  "name": "VisibAI",
+  "slug": "visibai-ai-visibility-audit-tool",
+  "tagline": "Are you in AI answers? Find out and fix it in minutes",
+  "description": "VisibAI shows whether your business appears when people ask AI for recommendations, and helps you fix it. It runs queries across six AI platforms (ChatGPT, Perplexity, Claude, Gemini, Mistral, You.com), scores your visibility 0-100, reveals which competitors show up instead, and returns a prioritized fix list plus ready-to-ship fix files and a branded report. One-off audits or monthly tracking. White-label for agencies. EU-hosted and GDPR-native.",
+  "websiteUrl": "https://getvisibai.com",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 405,
+  "linkedinUrl": "https://www.linkedin.com/company/getvisibai/",
+  "instagramUrl": "https://www.instagram.com/visibai?igsh=MTdudWRpaXZ5NzQ0YQ==",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/e05e1269-79da-4877-ae5d-a3efa1da5051.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/251087d1-e773-4471-8113-d83774f71a31.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/7f97ee4e-1d18-4643-b9bc-0f4592cd080b.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/7bbb926c-a540-4600-9d44-17b8a460707b.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/f27d6d51-6345-4c56-9852-adf454f16307.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5324882",
+   "depth": 0,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hi everyone 👋 I'm Francesco, founder of VisibAI. I spent years selling SaaS across Europe and watched search behaviour move from Google to AI assistants. VisibAI tells you whether ChatGPT, Perplexity, Claude and other AI assistants recommend your business when someone asks for one. Then it shows you exactly how to improve. The problem: for years everyone optimised for Google. Now people open ChatGPT or Perplexity and just ask for a recommendation, and most businesses have no idea whether they show up in those answers. The solution: a score on its own does not help, so we give you the full benchmark. VisibAI runs automated queries across six AI platforms (ChatGPT, Perplexity, Claude, Gemini, Mistral, You.com ) and shows you: a visibility score from 0 to 100 how often you are mentioned or cited which competitors appear instead of you Then it tells you how to fix it: a prioritised fix list, ready-to-use fix files (robots.txt, schema, FAQ), and an AI action plan. The benefit: you stop guessing. You see where you stand against competitors in AI answers, and you get concrete steps to climb. Start with a free audit, run a one-off report with no subscription, or go monthly for ongoing trac"
+  },
+  {
+   "id": "5492521",
+   "depth": 1,
+   "author": "Mohsin Ali",
+   "username": "mohsinproduct",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@francesco2689 &nbsp;how do you handle non determinism in llm answers like if chatgpt gives a different answer on next refresh, does it average the score?"
+  },
+  {
+   "id": "5493016",
+   "depth": 2,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@mohsinproduct &nbsp; Good question. Right now it’s a single-shot snapshot per query, not averaged across multiple runs, so you’re right that a refresh can shift individual answers. We handle the variance two ways: the score leans on patterns across 30 queries and 6 engines rather than any one answer, so a single flip moves it only slightly, and we re-scan over time so you see the trend rather than treating one run as absolute. Multi-sampling each query and averaging into the score is high on the build list, it’s the cleanest fix for exactly this, and it’s coming."
+  },
+  {
+   "id": "5493156",
+   "depth": 3,
+   "author": "Mohsin Ali",
+   "username": "mohsinproduct",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@francesco2689 &nbsp;makes sense"
+  },
+  {
+   "id": "5491528",
+   "depth": 0,
+   "author": "Henry",
+   "username": "sablekithq",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Really like the framing here. The thing I keep running into with AI visibility is that \"not showing up\" almost always traces back to plain old ranking and authority. From what I've seen the answer engines mostly pull from pages already sitting in the top 20 for a query, so a page down at position 40 can be perfectly structured and still never get cited. Does VisibAI separate those two cases? As in \"you're invisible because your content isn't quotable\" vs \"you're invisible because you're not ranking high enough to be in the pool yet.\" The fix is completely different depending on which one it is, and that's the part I'd personally find most useful."
+  },
+  {
+   "id": "5491590",
+   "depth": 1,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@sablekithq today VisibAI tells you that you’re missing from a query and who got cited instead, and it splits results by engine, which gets you partway. The grounded engines (Perplexity, Google’s AI) do live retrieval where your ranking/authority point bites hardest, you’re not even in the candidate pool. The memory-mode engines lean on trained knowledge, where brand presence and being written-about matters more than today’s SERP position. So the per-platform spread is already a soft signal: weak everywhere usually means an authority/pool problem; fine on the memory engines but missing on the retrieval ones points more at quotability and freshness. What it does not do yet is label it for you in plain terms: “you’re not in the pool” vs “you’re in the pool but not quotable.” That’s exactly the diagnosis layer I want to build, and it’s the natural pairing with the source-tracking work (seeing which page/rank the engine actually pulled). Once we know the cited source’s position, we can tell you whether the gap is a ranking job or a content/structure job, instead of handing you a generic fix list."
+  },
+  {
+   "id": "5491131",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the six-platform sweep is the right call - visibility on ChatGPT vs Perplexity vs Claude can look completely different because each pulls from different sources with different recency windows. a score of 60 on one and 20 on another tells you something specific and actionable. the part I'm most curious about: when you show \"how to fix it\" - is that primarily schema/llms.txt/content changes, or are you also surfacing the competitor citations that are showing up instead of you? knowing who's displacing you in AI answers is probably the most valuable signal for figuring out what content you're actually missing."
+  },
+  {
+   "id": "5491295",
+   "depth": 1,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan You nailed why the per-platform split matters, a 60 on one engine and 20 on another isn’t noise, it’s a content/recency signal you can act on. On the fix side: both, and you’re right that the competitor angle is the sharper one. We surface the technical layer (schema, llms.txt, AI-crawler access, FAQ), but we also show which competitors are getting named instead of you, per query. That’s the part that tells you what content you’re actually missing, if a rival keeps showing up on “best X for Y” and you don’t, that’s your gap, made concrete. Where I want to push next is going one level deeper: not just who’s displacing you, but which source the engine pulled them from, so the fix moves from “write about this topic” to “you need presence on this specific page/platform.” That’s the build I’m prioritizing. Sounds like you’d have a sharp opinion on it, would welcome it."
+  },
+  {
+   "id": "5492169",
+   "depth": 0,
+   "author": "Jared Salois",
+   "username": "jared_salois",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The interesting part isn't the score, it's knowing what to do next and whether it actually worked. How do you decide which queries to test so they reflect real buyer behavior? And once a team implements the fixes, what's the feedback loop? AI visibility doesn't have a Search Console equivalent, so I'm curious how you help teams know they're actually improving. Congrats on the launch!"
+  },
+  {
+   "id": "5492325",
+   "depth": 1,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jared_salois &nbsp;two great questions =) Queries: we generate them from your industry, sub-category and buyer context, then split by funnel stage (awareness, consideration, decision) so they mirror how real buyers actually ask, not just branded terms. You can edit or add your own before the run. Feedback loop: you're right there's no Search Console for this, so we are it. We re-scan over time and show which queries flipped and on which engine after you apply fixes. The clean before/after attribution is the piece I'm actively tightening right now, since proving it worked is the whole point."
+  },
+  {
+   "id": "5492289",
+   "depth": 0,
+   "author": "Noctis Leonard",
+   "username": "noctis06",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The hard part with a visibility score like this is LLM nondeterminism — ask ChatGPT the same recommendation query twice and you can get different brands back. Do you sample each query multiple times and average into the 0-100, or is it a single-shot snapshot? And are the six platforms hit through official APIs or logged-in scraping, since that changes whether the result matches what a real signed-in user actually sees."
+  },
+  {
+   "id": "5492335",
+   "depth": 1,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@noctis06 &nbsp;thank you for your comment! Sampling: single-shot snapshot today, not averaged. You're right that non-determinism means one run isn't gospel, so multi-sampling and averaging is high on my list. For now we re-scan over time to smooth the noise. Access: official APIs, not scraping. Reproducible and clean, but it's the API model's answer, not a pixel-perfect match to a signed-in app session. Treat it as a consistent proxy for the model's knowledge."
+  },
+  {
+   "id": "5494608",
+   "depth": 2,
+   "author": "Noctis Leonard",
+   "username": "noctis06",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Makes sense — official APIs over scraping is the right call for reproducibility, and framing it as a proxy for the model's knowledge rather than a live signed-in session is honest. On the re-scan-over-time approach: do you surface the variance to the user, or just the latest smoothed score? A confidence band would tell me whether a 1-point move is real movement or just run-to-run noise."
+  },
+  {
+   "id": "5495209",
+   "depth": 3,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@noctis06 &nbsp; Spot on, and you've named the exact gap. Right now we surface the latest score and the trend line, but not a variance or confidence band, so today a 1-point move and real movement look the same, which isn't good enough. A confidence interval is the right answer, and it's the natural payoff of the multi-sampling work: once each query is sampled several times, we get a distribution per query, which gives both a more stable score and the band around it to tell signal from run-to-run noise. That's the direction this is heading. Appreciate you pushing on it, this is exactly the kind of rigor the category needs."
+  },
+  {
+   "id": "5490949",
+   "depth": 0,
+   "author": "Felix Li",
+   "username": "novamaker01",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "I like that this starts with a one-time audit instead of asking teams to commit to another monthly SEO tool. My main trust question is reproducibility: does the report show the exact prompts, platform, timestamp, and raw answers behind the score so a team can verify what changed after applying fixes?"
+  },
+  {
+   "id": "5491041",
+   "depth": 1,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hi @novamaker01 👋 Exactly why I led with the one-off, thanks for naming it. Honest state: every run is timestamped, stores the raw AI answers behind each query, and shows which queries you appeared in per platform, so the score traces back to real responses, not a black box. The piece I’m finishing: a clean prompt-by-platform grid and a proper before/after diff, so when you re-run after fixes you see exactly which queries flipped and where. The diff logic’s already in the engine, I just need to wire the UI. It’s near the top of the list because verification is the whole point. Run one and I’ll pull your raw per-query results by hand, would value your eye on whether the format hits your team’s bar."
+  },
+  {
+   "id": "5491277",
+   "depth": 1,
+   "author": "Aykhan Nazaraliyev",
+   "username": "aykhan_nazaraliyev",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@novamaker01 &nbsp;hey, i went with the one-time angle and agree that it's better that way."
+  },
+  {
+   "id": "5490638",
+   "depth": 0,
+   "author": "Florent Duthoit",
+   "username": "florent_duthoit",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Hey, Congrats for the launch. Quick feedback on my first test so far: 30% of my traffic is coming from GEO/AEO We've done quite extensive work on that and continue But from what your app tell us: score 49/100 And everything is 0% , not passed, etc. I don't believe that nothing can be found about us and we get 49/100 score. How is this related? Like I literally didn't learn anything from it and will not be willing to go further or even paid for that yet. Hope that's helping you guys improve!"
+  },
+  {
+   "id": "5490700",
+   "depth": 1,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hi @florent_duthoit Really appreciate this, this is exactly the kind of feedback that makes the product better, so thank you for taking the time. You’ve spotted a real UX gap. There are two different things on that screen and we’re not separating them clearly enough: 1. The 0-100 score = how often the AI engines actually name you in answers to buyer-intent queries. Yours at 49 means you’re showing up in a fair chunk of them. 2. The checks showing 0%/not passed = technical optimization items (schema, AI-crawler access, llms.txt, etc.). Those are “headroom,” not “nobody can find you.” You can rank well today and still have those unticked. So the two aren’t contradictory, but the way we present them makes it look like they are. That’s on us to fix, and you’ve just bumped it up the list. That said: if you’re already pulling 30% from GEO/AEO, a 49 sounds low to me, and I’d genuinely like to dig into your specific run. Can you DM me francesco@getvisibai.com the URL you audited (or drop it here)? I’ll pull the raw query results and tell you exactly which queries you appeared in and which you didn’t. If something’s miscounting, I want to find it. Either way, thanks for stress-testing it. T"
+  },
+  {
+   "id": "5490863",
+   "depth": 2,
+   "author": "Florent Duthoit",
+   "username": "florent_duthoit",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@francesco2689 &nbsp;Done! Thanks for taking time as well, appreciate that you appreciate raw feedback and get involved into it :)"
+  },
+  {
+   "id": "5492311",
+   "depth": 3,
+   "author": "Francesco Bianchi",
+   "username": "francesco2689",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@florent_duthoit &nbsp;just replied back to your email"
+  },
+  {
+   "id": "5491282",
+   "depth": 1,
+   "author": "Aykhan Nazaraliyev",
+   "username": "aykhan_nazaraliyev",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@florent_duthoit &nbsp;i'd appreciate the feedback as well!"
+  }
+ ]
+}

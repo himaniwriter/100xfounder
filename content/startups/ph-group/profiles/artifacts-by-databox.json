@@ -1,0 +1,95 @@
+{
+  "slug": "artifacts-by-databox",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/artifacts-by-databox",
+  "excerpt": "Databox is an analytics platform with a built-in AI Analyst. Its Artifacts feature turns a question about your business data into a ready-to-share report, deck, dashboard or interactive doc. What it does, pricing and alternatives.",
+  "content": "<p>Databox is an analytics and reporting platform that pulls performance data from more than 130 tools, spreadsheets, databases and APIs into shared metrics, dashboards and goals. It says more than 20,000 businesses use it. Its AI Analyst, called Genie, answers questions about that data in plain language and explains what is driving a number.</p><p>Artifacts, the feature launched on Product Hunt, is what the AI Analyst produces when you ask for something to share. Ask for a report, a slide deck, a dashboard or an interactive doc and it builds one from your connected data. You can share an artifact by link with no login needed, download it as a PDF or HTML file, or turn the prompt into a Routine that delivers a fresh version with current data on a schedule, such as a monthly board revenue recap. Databox also runs an MCP server, so tools such as Claude can query the same governed data. Artifacts launched on 27 July 2026 and finished #2 for the day with 408 points and 88 comments. Databox's leadership listed on its site includes CEO Peter Caputa IV and President and CPO Davorin Gabrovec.</p><p><em>We have not tested Databox ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Business analytics",
+    "platform": "Web app, with an MCP server",
+    "starts_at": "Free plan; paid from $71/month billed annually",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Databox's AI Analyst turns questions about your data into shareable reports, decks and dashboards",
+    "team": [
+      {"name": "Peter Caputa IV", "role": "CEO", "url": "https://databox.com/about"},
+      {"name": "Davorin Gabrovec", "role": "President & CPO", "url": "https://databox.com/about"}
+    ],
+    "ph": {"rank": 2, "votes": 408, "comments": 88, "followers": 2746, "launched": "2026-07-27", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/5cc5dec7-79bb-4246-b152-b0b02be1d535.png?auto=format&fit=max&w=1400", "w": 2144, "h": 1280,
+       "alt": "Databox graphic 'Analysis, reporting, and follow-up on autopilot' showing a scheduled Board Revenue Recap built from Google Ads, HubSpot and Salesforce data", "credit": "Image: Databox via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/ef0a1a38-4a6b-4165-b446-1e9fdacd3e6c.png?auto=format&fit=max&w=1400", "w": 2144, "h": 1280,
+       "alt": "Databox MRR performance report with a written summary above charts of MRR growth and new MRR", "credit": "Image: Databox via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/764712a6-ec18-4ef7-8cfb-c564c4f708aa.png?auto=format&fit=max&w=1400", "w": 2144, "h": 1280,
+       "alt": "Databox graphic 'One set of trusted numbers for your team and your AI' with integration logos feeding a data and semantic platform", "credit": "Image: Databox via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "are an agency or growing business that sends recurring performance reports to clients or leadership",
+        "pull metrics from many marketing, sales and finance tools and want them in one place",
+        "want an AI assistant such as Claude to query governed business metrics through MCP"
+      ],
+      "not_fit": [
+        "need Artifacts on the free plan: the Analyst plan lists Artifacts among what it adds over Free",
+        "work from a single data warehouse and want a full BI tool with SQL, where Metabase or similar may fit better",
+        "need more than 3 data sources for free: the free plan allows 1 user and 3 sources"
+      ]
+    },
+    "pricing": {
+      "intro": "Databox has a free plan and paid plans you can trial for 14 days. Annual billing saves 20%. Prices are in US dollars.",
+      "url": "https://databox.com/pricing",
+      "plans": [
+        {"name": "Free", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "1 user, 3 data sources, 50 AI credits a month, AI Analyst (Genie), performance summaries, governed semantic layer"},
+        {"name": "Analyst", "price": "$71/month billed annually", "amount": 71, "currency": "USD", "detail": "1 user, 5 data sources, 150 AI credits a month; adds custom integrations, Artifacts, pre-built skills, MCP server and API access"},
+        {"name": "Team (Core)", "price": "$199/month billed annually", "amount": 199, "currency": "USD", "detail": "3 users, 10 data sources; built for collaborative analytics and AI workflows"},
+        {"name": "Team (Scale)", "price": "$319/month billed annually", "amount": 319, "currency": "USD", "detail": "Higher capacity for growing teams"}
+      ],
+      "notes": [
+        "Monthly billing costs more; the prices above are annual rates.",
+        "Databox also offers implementation services for AI and agentic analytics."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Metabase", "url": "https://www.metabase.com/", "what": "Open-source BI and embedded analytics with AI features", "starts_at": "Open source; see its pricing page",
+         "ph_rating": 4.92, "ph_reviews": 24,
+         "difference": "Open source and built around querying your own databases. Databox focuses on ready-made integrations with business tools and AI-made reports."},
+        {"name": "Narrative BI", "url": "https://www.narrative.bi/", "what": "Turns data into written narratives", "starts_at": "See its pricing page",
+         "ph_rating": 5, "ph_reviews": 7,
+         "difference": "Also writes up data in plain language; Databox adds dashboards, goals and a semantic layer."},
+        {"name": "Datatera.ai", "url": "https://datatera.ai/", "what": "Enterprise document processing that turns documents into structured data", "starts_at": "See its site",
+         "ph_rating": 4.9, "ph_reviews": 20,
+         "difference": "Extracts data from documents rather than reporting on business metrics."}
+      ],
+      "more": "Product Hunt also lists Ada.im and Basedash as alternatives."
+    },
+    "reviews": {"count": 8, "rating": 4.75, "url": "https://www.producthunt.com/products/databox/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/databox",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=Databox%20artifacts&f=live"}
+    },
+    "faq": [
+      {"q": "What are Databox Artifacts?", "a": "Reports, slide decks, dashboards or interactive docs that Databox's AI Analyst builds from your connected data when you ask. They launched on Product Hunt on 27 July 2026."},
+      {"q": "How do I share an artifact?", "a": "By a link anyone can open without logging in, or as a PDF or HTML download, according to Databox."},
+      {"q": "Can artifacts update automatically?", "a": "Yes. You can turn a prompt into a Routine that delivers a fresh artifact with current data on a schedule you set."},
+      {"q": "How much does Databox cost?", "a": "There is a free plan. Paid plans start at $71 a month billed annually (Analyst), with Team plans from $199 a month billed annually. Paid plans can be trialled for 14 days."},
+      {"q": "Does Databox work with Claude or other AI tools?", "a": "Databox runs an MCP server, included from the Analyst plan, so AI tools can query your Databox data."},
+      {"q": "How many integrations does Databox have?", "a": "More than 130 tools, spreadsheets, databases and APIs, according to its site."}
+    ],
+    "sources": [
+      {"label": "Databox AI Analyst (Artifacts)", "url": "https://databox.com/ai-analyst"},
+      {"label": "Databox official site", "url": "https://databox.com/"},
+      {"label": "Databox pricing", "url": "https://databox.com/pricing"},
+      {"label": "About Databox", "url": "https://databox.com/about"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/artifacts-by-databox"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/databox"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/databox/alternatives"},
+      {"label": "Metabase", "url": "https://www.metabase.com/"},
+      {"label": "Datatera.ai", "url": "https://datatera.ai/"}
+    ]
+  }
+}

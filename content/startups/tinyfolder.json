@@ -1,0 +1,267 @@
+{
+ "slug": "tinyfolder",
+ "excerpt": "TinyFolder adds custom app folders to the Mac Dock: one click opens a folder of apps above its tile. Free plan, Pro prices on the website and App Store, and alternatives.",
+ "content": "<p>TinyFolder is a Mac app that adds app folders to the Dock, something the Mac Dock can't do on its own. You pick a set of apps, pin the folder, and one click opens it right above its Dock tile. The folder's icon is built from the apps inside, so you can see what it holds at a glance.</p><p>Most of the app is about design. A live editor lets you choose glass, colour or texture, icon, list or large-tile layouts, icon size, labels and living effects such as snow and drifting light, with 64 built-in presets. Each folder can also have its own keyboard shortcut. TinyFolder launches apps only: you can't drop files onto the apps inside a folder, and apps that are running still appear in the Dock, as macOS requires.</p><p>There are two editions. The Mac App Store version is limited to one folder in the Dock, because App Store rules only let an app change its own Dock icon. The version downloaded from tinyfolder.app can pin as many folders as you like. TinyFolder is designed and built by Sergey Filkov and launched on Product Hunt on 4 October 2026, finishing #16 for the day with 75 upvotes.</p><p><em>We have not tested TinyFolder ourselves. This page brings together its official site, its Mac App Store listing, its Product Hunt page and the official pages of comparable apps, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Mac utilities",
+  "platform": "Mac app",
+  "os": "Direct download: macOS 13 or later, Apple silicon and Intel. App Store: macOS 13.1 or later, Apple silicon",
+  "starts_at": "Free (1 folder); Lifetime Pro $21 on the website",
+  "schema_category": "UtilitiesApplication",
+  "summary_short": "Mac app that adds custom, designable app folders to the Dock",
+  "maker": {
+   "name": "Sergey Filkov",
+   "url": "https://tinyfolder.app/"
+  },
+  "team": [
+   {
+    "name": "Sergey Filkov",
+    "role": "Designer and developer",
+    "url": "https://tinyfolder.app/"
+   }
+  ],
+  "ph": {
+   "rank": 16,
+   "votes": 75,
+   "comments": 1,
+   "followers": 50,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Grouping apps you use once a week into one Dock folder to keep the Dock short",
+   "Replacing Launchpad, which macOS Tahoe removed, with folders you design",
+   "Opening a group of work apps with a keyboard shortcut"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Sergey Filkov says his Dock kept growing, with apps he opens once a week sitting next to the ones he uses all day. On an iPhone you would make a folder, but the Mac Dock can't. The nearest option was a stack of aliases next to the Trash, and with macOS Tahoe even Launchpad was gone.",
+    "So he built TinyFolder: pick your apps, pin the folder, and one click opens it above the tile. He explained the one constraint up front: the App Store sandbox only lets an app change its own Dock icon, so the App Store version gives you one folder, while the version from tinyfolder.app pins as many as you like. It is free to start, needs no account and works offline."
+   ],
+   "attribution": "Sergey Filkov, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/tinyfolder?comment=5916025"
+  },
+  "audience": {
+   "fit": [
+    "have a crowded Dock and want folders like on an iPhone",
+    "miss Launchpad after upgrading to macOS Tahoe",
+    "like to customise how your Mac looks"
+   ],
+   "not_fit": [
+    "want several folders from the Mac App Store version: it allows one; use the direct download instead",
+    "want a launcher for files and documents: TinyFolder opens apps only",
+    "use an Intel Mac and want the App Store edition: that one is Apple silicon only"
+   ]
+  },
+  "pricing": {
+   "intro": "TinyFolder is free to start. Pro prices differ between the version sold on its website and the Mac App Store version. Prices are in US dollars.",
+   "url": "https://tinyfolder.app/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Starter",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "1 folder with up to 4 apps, Liquid Glass style, pin to Dock, no account, no time limit"
+    },
+    {
+     "name": "Lifetime Pro, 2 Macs (website)",
+     "price": "$21 once (launch price, was $32)",
+     "amount": 21,
+     "currency": "USD",
+     "detail": "Unlimited folders and apps, the full design studio, 64 presets, 4 icon packs, global shortcuts and future updates. 7-day money-back guarantee"
+    },
+    {
+     "name": "Yearly Pro (App Store)",
+     "price": "$9.99/year",
+     "amount": 9.99,
+     "currency": "USD",
+     "detail": "In-app purchase in the Mac App Store edition, which is limited to one Dock folder"
+    },
+    {
+     "name": "Lifetime Pro (App Store)",
+     "price": "$29.99 once",
+     "amount": 29.99,
+     "currency": "USD",
+     "detail": "In-app purchase in the Mac App Store edition; includes every style pack. Style packs are also sold separately at $4.99 each"
+    }
+   ],
+   "notes": [
+    "The website's $21 price is a launch deal \"while the launch price lasts\".",
+    "Website purchases are processed by Paddle; you activate the licence with your email and key. App Store purchases and refunds go through Apple.",
+    "App Store prices are the US prices shown on 14 October 2026."
+   ]
+  },
+  "alternatives": {
+   "intro": "From Product Hunt's alternatives list. Prices are what each product's own site or App Store listing states, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "DockFix",
+     "url": "https://www.dockfix.app/",
+     "what": "Replaces the macOS Dock with a customisable one",
+     "starts_at": "€14.99 once, 7-day free trial",
+     "ph_rating": 3.5,
+     "ph_reviews": 2,
+     "difference": "Replaces the whole Dock. TinyFolder keeps Apple's Dock and adds folders to it."
+    },
+    {
+     "name": "Launchie",
+     "url": "https://www.launchie.app/",
+     "what": "Launchpad-style full-screen app grid for macOS 26",
+     "starts_at": "Free; Pro $2.99/month, $7.99/year or $14.99 once (App Store)",
+     "difference": "A full-screen grid opened with a shortcut rather than a folder in the Dock. It needs macOS 26."
+    },
+    {
+     "name": "Kickfolder",
+     "url": "https://apps.apple.com/us/app/kickfolder/id6759238538",
+     "what": "Folders, files and apps that slide down from the top edge of the screen",
+     "starts_at": "$2.99 (App Store)",
+     "ph_rating": 5.0,
+     "ph_reviews": 1,
+     "difference": "Lives at the top edge, including the notch, and handles files too. It needs macOS 26.2 or later."
+    }
+   ],
+   "more": "Product Hunt also lists Alfred, Docky, DockFlow, LaunchOS, Dockify and Launchy."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/tinyfolder/reviews",
+   "as_of": "2026-10-14"
+  },
+  "pros": [
+   "Adds real app folders to Apple's own Dock",
+   "Free plan with no account and no time limit",
+   "Deep visual customisation with a live preview",
+   "Website licence covers 2 Macs, with a 7-day money-back guarantee",
+   "Works offline; folder contents and styling are never uploaded, according to the privacy policy"
+  ],
+  "cons": [
+   "The App Store edition allows only one folder in the Dock",
+   "Pro prices differ by where you buy it",
+   "Launches apps only, not files",
+   "The App Store edition sends anonymous usage counts unless you switch them off"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/tinyfolder",
+   "x": {
+    "none": "We found no posts about TinyFolder on X yet.",
+    "search_url": "https://x.com/search?q=TinyFolder&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is TinyFolder free?",
+    "a": "Yes, for one folder with up to four apps, with no time limit and no account. Pro unlocks unlimited folders and the full design tools."
+   },
+   {
+    "q": "Why does the App Store version allow only one folder?",
+    "a": "The maker says the App Store sandbox only lets an app change its own Dock icon, so each copy can show one folder. The version from tinyfolder.app can pin as many folders as you like."
+   },
+   {
+    "q": "How much is TinyFolder Pro?",
+    "a": "On the website, Lifetime Pro for 2 Macs was $21 once on 14 October 2026, a launch price down from $32. In the Mac App Store, Pro is $9.99 a year or $29.99 once."
+   },
+   {
+    "q": "Do running apps still show in the Dock?",
+    "a": "Yes. macOS shows running apps in the Dock; TinyFolder saves space for the apps that aren't running."
+   },
+   {
+    "q": "Can I get a refund?",
+    "a": "Website purchases have a 7-day, no-questions money-back guarantee. App Store purchases are refunded through Apple."
+   },
+   {
+    "q": "Which Macs does it run on?",
+    "a": "The direct download needs macOS 13 or later and runs on Apple silicon and Intel. The App Store edition needs macOS 13.1 or later on Apple silicon."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TinyFolder official site, pricing and FAQ",
+    "url": "https://tinyfolder.app/"
+   },
+   {
+    "label": "TinyFolder privacy policy",
+    "url": "https://tinyfolder.app/privacy"
+   },
+   {
+    "label": "TinyFolder on the Mac App Store",
+    "url": "https://apps.apple.com/us/app/tinyfolder-dock-organizer/id6803158470?mt=12"
+   },
+   {
+    "label": "Product Hunt page and launch comment",
+    "url": "https://www.producthunt.com/products/tinyfolder"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/tinyfolder/alternatives"
+   },
+   {
+    "label": "DockFix pricing",
+    "url": "https://www.dockfix.app/pricing"
+   },
+   {
+    "label": "Launchie on the App Store",
+    "url": "https://apps.apple.com/us/app/launchie-app-launcher/id6752657468"
+   },
+   {
+    "label": "Kickfolder on the App Store",
+    "url": "https://apps.apple.com/us/app/kickfolder/id6759238538"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/f833e6d5-b4aa-4c09-902b-ef63fddf14a8.jpeg?auto=format&fit=max&w=1400",
+    "alt": "TinyFolder graphic 'All your apps. One TinyFolder.' with a glass folder of apps opened above the Mac Dock",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://ph-files.imgix.net/e10732e4-b7d5-4b85-bb22-1443c7b34ec9.png?auto=format&fit=max&w=1400",
+    "alt": "TinyFolder's builder, 'Design your folder in a powerful builder', with app picker, live preview and style settings",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/81dd4a1e-c5dd-4f44-b21a-7823f27dd9f4.png?auto=format&fit=max&w=1400",
+    "alt": "TinyFolder graphic 'From liquid glass to playful themes' showing folder styles including fur, glass and animal-print textures",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/57922bac-627a-4c08-aa45-d8eb77f62dd7.png?auto=format&fit=max&w=1400",
+    "alt": "TinyFolder graphic 'Beautiful app folders in your Dock': a folder of apps opened above its Dock tile",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/1f5f07ae-698c-4bc0-9a10-ee023707cbfa.png?auto=format&fit=max&w=1400",
+    "alt": "TinyFolder graphic 'Stunning on any desktop' showing the folder builder in light and dark appearance",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/f833e6d5-b4aa-4c09-902b-ef63fddf14a8.jpeg?auto=format&fit=max&w=1400",
+    "alt": "TinyFolder graphic 'All your apps. One TinyFolder.' with a glass folder of apps opened above the Mac Dock",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://ph-files.imgix.net/e10732e4-b7d5-4b85-bb22-1443c7b34ec9.png?auto=format&fit=max&w=1400",
+    "alt": "TinyFolder's builder, 'Design your folder in a powerful builder', with app picker, live preview and style settings",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/81dd4a1e-c5dd-4f44-b21a-7823f27dd9f4.png?auto=format&fit=max&w=1400",
+    "alt": "TinyFolder graphic 'From liquid glass to playful themes' showing folder styles including fur, glass and animal-print textures",
+    "w": 1270,
+    "h": 760
+   }
+  ]
+ }
+}

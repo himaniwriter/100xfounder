@@ -1,0 +1,168 @@
+{
+ "slug": "researchgate",
+ "website": "https://www.researchgate.net/",
+ "excerpt": "ResearchGate is a free professional network where scientists share papers, ask questions and follow research. Founded in 2008 and based in Berlin; backers include Bill Gates, Benchmark and Goldman Sachs.",
+ "content": "<p>ResearchGate is a professional network for scientists and researchers. Members build a profile around their publications, connect with colleagues, discover research and collaborate; an early version of the site described itself as free of charge and designed to meet researchers' needs. It is free for researchers to join. ResearchGate's own press releases in 2025 described the site as used by more than 25 million researchers to share and discover research, build their networks and advance their careers. Publishers can also pay to place their journals' articles on the platform through a programme called Journal Home; in February 2025, for example, the open access publisher MDPI expanded its Journal Home partnership from 10 to 200 journals.</p><p>ResearchGate was founded in 2008 by Ijad Madisch, a virologist, with Sören Hofmayer and Horst Fickenscher. VentureBeat reported that the company started in Boston and moved to Berlin, where it is based, and that Madisch is CEO. Its early funding came from Benchmark and Founders Fund. In June 2013 VentureBeat reported a $35 million round led by Bill Gates and Tenaya Capital, with Dragoneer Investment Group and Thrive Capital joining, when the site had about 2.9 million members in 193 countries. GeekWire reported in 2017 that ResearchGate had raised a further $52.6 million from investors including the Wellcome Trust, Goldman Sachs Investment Partners and Four Rivers Group, with Bill Gates investing again.</p><p>For researchers the core service costs nothing. Publishers pay for Journal Home partnerships.</p><p>This profile draws on published reporting and ResearchGate's partnership announcements; ResearchGate's own pages blocked our checks. We have not tested the service, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Professional network for researchers",
+  "platform": "Web",
+  "starts_at": "Free for researchers",
+  "schema_category": "SocialNetworkingApplication",
+  "summary_short": "Free network where researchers share papers, follow colleagues and track reads and citations",
+  "maker": {
+   "name": "ResearchGate GmbH",
+   "url": "https://www.researchgate.net/"
+  },
+  "team": [
+   {
+    "name": "Ijad Madisch",
+    "role": "Co-founder and CEO",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/2/26/Ijad_Madisch_-_Hy%21_Summit_2014.jpg",
+    "photo_credit": "Photo: Dan Taylor, CC BY 2.0, via Wikimedia Commons",
+    "photo_source_type": "commons"
+   },
+   {
+    "name": "Sören Hofmayer",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Horst Fickenscher",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Ijad_Madisch_-_Hy%21_Summit_2014.jpg",
+    "alt": "ResearchGate co-founder and CEO Ijad Madisch, in glasses, a grey beanie and a hooded jacket, speaking on stage at Hy! Summit in Berlin in 2014",
+    "credit": "Photo: Dan Taylor, CC BY 2.0, via Wikimedia Commons",
+    "w": 684,
+    "h": 1024
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Researchgate_Screenshot.jpg",
+    "alt": "Early ResearchGate homepage in green and white, describing it as a free professional network for scientists, with login and sign-up boxes",
+    "credit": "Image: ResearchGATE GmbH (Sören Hofmayer), CC BY-SA 3.0, via Wikimedia Commons",
+    "w": 661,
+    "h": 405
+   }
+  ],
+  "use_cases": [
+   "Building a public profile of your publications as a researcher",
+   "Discovering new research in your field",
+   "Connecting and collaborating with other researchers",
+   "Placing a publisher's journal articles in front of researchers through Journal Home"
+  ],
+  "audience": {
+   "fit": [
+    "are a researcher, academic or PhD student who wants a visible publication profile",
+    "want to follow new work and connect with others in your field",
+    "are a publisher looking to reach researchers"
+   ],
+   "not_fit": [
+    "need a full-text database with guaranteed licensed access",
+    "want a general professional network outside science"
+   ]
+  },
+  "pricing": {
+   "intro": "ResearchGate is free for researchers. Publishers can pay for Journal Home partnerships; business pricing is not published.",
+   "plans": [
+    {
+     "name": "Researchers",
+     "price": "Free",
+     "detail": "Profile, publications, questions and statistics"
+    },
+    {
+     "name": "Publishers (Journal Home)",
+     "price": "Not published",
+     "detail": "Paid partnership to place journals on the platform"
+    }
+   ],
+   "notes": [
+    "ResearchGate's own pages could not be loaded for this check; free status is as described in its press materials and reporting."
+   ],
+   "url": "https://www.researchgate.net/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Free for researchers",
+   "Very large community (25M+ researchers, per the company)",
+   "Read and citation statistics for your work"
+  ],
+  "cons": [
+   "Business pricing not published",
+   "Our checks could not load ResearchGate's own pages"
+  ],
+  "alternatives": {
+   "intro": "Other places researchers share and discover work. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Academia.edu",
+     "url": "https://www.academia.edu/",
+     "what": "Paper-sharing network for academics",
+     "tags": [
+      "Academic network"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Similar model with a paid Premium tier."
+    },
+    {
+     "name": "Google Scholar",
+     "url": "https://scholar.google.com/",
+     "what": "Free academic search engine with author profiles",
+     "tags": [
+      "Search"
+     ],
+     "starts_at": "Free",
+     "difference": "Search and citation profiles without a social network."
+    },
+    {
+     "name": "ORCID",
+     "url": "https://orcid.org/",
+     "what": "Free persistent identifier for researchers",
+     "tags": [
+      "Identifier"
+     ],
+     "starts_at": "Free",
+     "difference": "Non-profit researcher ID used by publishers and funders."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is ResearchGate free?",
+    "a": "Yes, for researchers. Publishers can pay for Journal Home partnerships."
+   },
+   {
+    "q": "Who founded ResearchGate?",
+    "a": "Ijad Madisch, Sören Hofmayer and Horst Fickenscher, in 2008. Madisch is CEO."
+   },
+   {
+    "q": "Who has invested in ResearchGate?",
+    "a": "Investors reported by VentureBeat and GeekWire include Benchmark, Founders Fund, Bill Gates, Tenaya Capital, the Wellcome Trust and Goldman Sachs Investment Partners."
+   },
+   {
+    "q": "How many people use ResearchGate?",
+    "a": "More than 25 million researchers, according to ResearchGate's 2025 press materials."
+   }
+  ],
+  "sources": [
+   {
+    "label": "VentureBeat: ResearchGate raises $35M led by Bill Gates (Jun 2013)",
+    "url": "https://venturebeat.com/business/researchgate-bill-gates"
+   },
+   {
+    "label": "GeekWire: ResearchGate funding with Bill Gates (2017)",
+    "url": "https://www.geekwire.com/2017/researchgate-funding-bill-gates/"
+   },
+   {
+    "label": "ALPSP: ResearchGate expands MDPI partnership to 200 open access journals (Feb 2025)",
+    "url": "https://www.alpsp.org/news-publications/industry-news/researchgate-expands-mdpi-partnership-to-200-scholarly-open-access-journals"
+   },
+   {
+    "label": "Wikimedia Commons: Ijad Madisch photo and early ResearchGate screenshot",
+    "url": "https://commons.wikimedia.org/wiki/File:Ijad_Madisch_-_Hy!_Summit_2014.jpg"
+   }
+  ]
+ }
+}

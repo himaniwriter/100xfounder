@@ -1,0 +1,143 @@
+{
+ "slug": "physical-intelligence",
+ "website": "https://www.pi.website/",
+ "excerpt": "Physical Intelligence (π) builds general-purpose AI models that control robots. Its π0 to π0.7 models, open-source openpi release, Pi API beta and $5.6 billion valuation.",
+ "content": "<p>Physical Intelligence, which writes its name as π, is a company building foundation models for robots. Its goal, in its own words, is a model that can control any robot to do any task. Its models are vision-language-action models (VLAs): they take in camera images and an instruction and output the motor actions a robot arm or mobile robot should take.</p><p>The company was founded in 2024 by former Google DeepMind researchers and academics from Stanford and UC Berkeley, SiliconANGLE reported. Karol Hausman is chief executive; Sergey Levine and Lachy Groom are also co-founders.</p><p>Its research has moved quickly. It announced π0, its first generalist policy, in October 2024, and released π0's code and weights as open source on 4 February 2025 in a project called openpi. π0.5, announced on 22 April 2025, could control a mobile robot to tidy a kitchen or bedroom it had never seen. π*0.6, in November 2025, added learning from experience with reinforcement learning, and π0.7, in April 2026, is described by the company as a steerable model with a step change in generalisation. On 13 October 2026 it opened a Pi API beta, letting outside teams upload data, fine-tune its models and run hosted inference on their own robots; access is through a waitlist.</p><p>It raised $400 million in November 2024 at a valuation above $2 billion, with Jeff Bezos, Lux Capital and Sequoia among investors, then $600 million in November 2025 at $5.6 billion, led by Alphabet's growth fund CapitalG, Bloomberg reported. In March 2026 Bloomberg reported talks to raise about $1 billion more at above $11 billion; we found no confirmation that the round closed.</p><p>There is no public pricing. The Pi API is in beta behind a waitlist, and the open-source openpi models are free to download.</p><p><em>This page is research, not a review: Physical Intelligence has no product we could try. It brings together Physical Intelligence's own website and the reporting linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Robotics AI",
+  "platform": "Robot foundation models; open-source openpi; Pi API (beta)",
+  "starts_at": "No public pricing; openpi models are free",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "General-purpose AI models that let robots perform many physical tasks",
+  "maker": {
+   "name": "Physical Intelligence",
+   "url": "https://www.pi.website/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.pi.website/images/pi0-og.png",
+    "w": 1200,
+    "h": 630,
+    "alt": "Physical Intelligence title card for π0, 'Our First Generalist Policy', with faint drawings of robot arms",
+    "credit": "Image: Physical Intelligence (pi.website)"
+   },
+   {
+    "url": "https://www.pi.website/images/pi05/og.png",
+    "w": 1200,
+    "h": 630,
+    "alt": "Physical Intelligence title card for π0.5, 'a VLA with Open-World Generalization', over a faint model diagram",
+    "credit": "Image: Physical Intelligence (pi.website)"
+   }
+  ],
+  "use_cases": [
+   "Research on general-purpose robot control with the open-source openpi models",
+   "Fine-tuning a robot policy on your own data through the Pi API beta",
+   "Mobile manipulation such as tidying an unfamiliar kitchen or bedroom (research demos)"
+  ],
+  "team": [
+   {
+    "name": "Karol Hausman",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Sergey Levine",
+    "role": "Co-founder"
+   },
+   {
+    "name": "Lachy Groom",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "robotics researchers and startups that want a strong base model to fine-tune",
+    "hardware teams that want to skip building robot intelligence from scratch",
+    "anyone following the race to build robot foundation models"
+   ],
+   "not_fit": [
+    "consumers looking for a home robot: π makes models, not robots",
+    "teams that need a supported commercial product today, since the API is still in beta"
+   ]
+  },
+  "alternatives": {
+   "intro": "Other groups building general-purpose robot AI.",
+   "items": [
+    {
+     "name": "Skild AI",
+     "url": "https://www.skild.ai/",
+     "what": "General-purpose robot brain",
+     "difference": "Another venture-backed robot foundation-model startup."
+    },
+    {
+     "name": "NVIDIA Isaac GR00T",
+     "url": "https://developer.nvidia.com/isaac/gr00t",
+     "what": "NVIDIA's foundation models for humanoid robots",
+     "difference": "Tied into NVIDIA's simulation tools and hardware."
+    },
+    {
+     "name": "Google DeepMind Gemini Robotics",
+     "url": "https://deepmind.google/models/gemini-robotics/",
+     "what": "Gemini-based models for robot control",
+     "difference": "From Google DeepMind, built on the Gemini models."
+    },
+    {
+     "name": "World Labs",
+     "url": "https://www.worldlabs.ai/",
+     "what": "World models and 3D world generation",
+     "starts_at": "Marble: free; paid from $20/month",
+     "difference": "Builds simulated worlds, including for robot training, rather than robot control policies."
+    }
+   ]
+  },
+  "pros": [
+   "Open-sourced π0 weights and code",
+   "Rapid, well-documented research releases",
+   "Aims at one model for many robot types"
+  ],
+  "cons": [
+   "No generally available paid product yet",
+   "Results so far are mostly research demonstrations"
+  ],
+  "faq": [
+   {
+    "q": "What is Physical Intelligence?",
+    "a": "A company founded in 2024 that builds AI models that let robots of many kinds perform many physical tasks."
+   },
+   {
+    "q": "Is π0 open source?",
+    "a": "Yes. Physical Intelligence released π0's code and weights on 4 February 2025 in its openpi project, which also includes π0-FAST and π0.5."
+   },
+   {
+    "q": "Can I use Physical Intelligence's models commercially?",
+    "a": "It opened a Pi API beta on 13 October 2026 with a waitlist. No public pricing has been published."
+   },
+   {
+    "q": "How much has Physical Intelligence raised?",
+    "a": "It raised $400 million in November 2024 and $600 million in November 2025 at a $5.6 billion valuation, led by CapitalG, Bloomberg reported."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Physical Intelligence website and research",
+    "url": "https://www.pi.website/"
+   },
+   {
+    "label": "Physical Intelligence: open-sourcing π0",
+    "url": "https://pi.website/blog/openpi"
+   },
+   {
+    "label": "SiliconANGLE: Physical Intelligence raises $600M",
+    "url": "https://siliconangle.com/2025/11/20/jeff-bezos-backed-physical-intelligence-raises-600m-improve-ai-robot-brains/"
+   },
+   {
+    "label": "Bloomberg: Physical Intelligence valued at $5.6 billion",
+    "url": "https://www.bloomberg.com/news/articles/2025-11-20/robotics-startup-physical-intelligence-valued-at-5-6-billion-in-new-funding"
+   },
+   {
+    "label": "TechCrunch: Physical Intelligence reportedly in talks to raise $1B",
+    "url": "https://techcrunch.com/2026/03/27/physical-intelligence-is-reportedly-in-talks-to-raise-1-billion-again/"
+   }
+  ]
+ }
+}

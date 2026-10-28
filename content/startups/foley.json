@@ -1,0 +1,286 @@
+{
+ "slug": "foley",
+ "excerpt": "Foley is a voice to-do list: say what needs doing and it files the task with project, date and reminder, asking when it isn't sure. Free desktop app with your own AI key, Foley Pro at $8 a month. Platforms, privacy and alternatives.",
+ "content": "<p>Foley is a to-do list you talk to. Press a shortcut, or tap on your phone or watch, and say one or several things that need doing. Foley turns them into tasks with the project, date and reminder filled in, and shows you what it understood before the tasks land. It reads time the way people say it, such as \"next Tuesday morning\", and when a request could mean two different tasks it asks which one instead of guessing. To change plans, you say so (\"move Sam's review to 4 PM\") and it moves the task. Ask it to plan your day or what to work on first, and it answers from your own list.</p><p>Tasks live in projects, folders and checklists with links, notes, attachments and \"blocked by\" dependencies, and Foley keeps your original words next to what it changed so you can undo a capture. It runs on Mac, Windows, iPhone, iPad, Android, Apple Watch, Wear OS and the web, and can connect to Google Calendar, Slack, ChatGPT and coding agents such as Claude. The desktop app is free with no account if you bring your own OpenRouter key; Foley Pro runs the AI for you and syncs your devices.</p><p>Foley is made by Hanamori Labs, LLC, and was built by José Airosa, a software engineer of more than 25 years. It launched on Product Hunt on 11 October 2026 and finished #9 for the day with 105 upvotes and 26 comments.</p><p><em>We have not tested Foley ourselves. This page brings together its official site, pricing, privacy policy and terms, its Product Hunt page and the official pricing pages of comparable apps, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Productivity",
+  "platform": "Mac, Windows, iOS, Android, Apple Watch, Wear OS and web",
+  "os": "Mac (Apple silicon and Intel), Windows 64-bit, iPhone and iPad, Android, watchOS 10+, Wear OS 3+, web",
+  "starts_at": "Free with your own AI key; Foley Pro $8/month",
+  "schema_category": "ProductivityApplication",
+  "summary_short": "Voice to-do list that files tasks with dates and reminders and asks when it isn't sure",
+  "maker": {
+   "name": "José Airosa",
+   "url": "https://www.producthunt.com/@joseairosa"
+  },
+  "team": [
+   {
+    "name": "José Airosa",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@joseairosa"
+   }
+  ],
+  "ph": {
+   "rank": 9,
+   "votes": 105,
+   "comments": 26,
+   "followers": 143,
+   "launched": "2026-10-11",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Capturing tasks out loud mid-meeting, in the car or on a walk",
+   "Adding a reminder from your Apple Watch or Wear OS watch without taking out your phone",
+   "Rescheduling tasks by saying what changed",
+   "Asking for a plan for the day based on your own list",
+   "Sharing a family or team project, such as appointments or school tasks"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "José Airosa says he kept losing tasks he said out loud: mid-meeting, in the car, walking the dog. Foley is the to-do list he wanted for that: you talk, and it files.",
+    "He highlighted that it handles time the way people say it, asks when it isn't sure instead of guessing, moves tasks when plans change, and plans your day from your own list. He launched it with the free desktop app on your own OpenRouter key and Foley Pro on the web, and asked people to tell him what it got wrong. In the comments he added that he and his wife use shared projects for appointments and their children's school."
+   ],
+   "attribution": "José Airosa, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/foley?comment=5920828"
+  },
+  "audience": {
+   "fit": [
+    "think of tasks while away from the keyboard and lose them",
+    "wear an Apple Watch or Wear OS watch and want to capture tasks from it",
+    "want a free local to-do app and are happy to use your own AI key"
+   ],
+   "not_fit": [
+    "need end-to-end encryption of synced data: the privacy policy says the server copy is not end-to-end encrypted",
+    "want your tasks to live in ClickUp or another project tool: a commenter asked and we saw no answer",
+    "want AI features for free without an API key: that needs your own key or Foley Pro"
+   ]
+  },
+  "pricing": {
+   "intro": "Foley's desktop app is free; Foley Pro adds hosted AI, sync and sharing. Prices are the website's, in US dollars; app-store prices may differ.",
+   "url": "https://foleyapp.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Foley (free)",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Local desktop task management, no sign-in; AI features use your own key, and your AI provider charges you for that usage"
+    },
+    {
+     "name": "Foley Pro",
+     "price": "$8/month or $72/year",
+     "amount": 8,
+     "currency": "USD",
+     "detail": "Foley-managed AI with no personal key, an account that syncs across devices, and sharing. Launch offer shown: $4 for the first month"
+    }
+   ],
+   "notes": [
+    "Subscriptions renew automatically and can be cancelled any time; you keep access to the end of the period. Part-periods aren't refunded except where the law requires (terms).",
+    "App Store and Google Play purchases are refunded by Apple or Google. Tax is added at checkout where applicable."
+   ]
+  },
+  "alternatives": {
+   "intro": "Todoist is on Product Hunt's alternatives list; TickTick and Superlist are other popular to-do apps with AI or voice features. Prices come from each product's own pricing page, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Todoist",
+     "url": "https://www.todoist.com/",
+     "what": "Established to-do and task manager with a voice capture feature called Ramble",
+     "starts_at": "Free Beginner plan; see its pricing page for Pro and Business",
+     "ph_rating": 4.8,
+     "ph_reviews": 56,
+     "difference": "A mature task manager with team workspaces, where voice is one feature rather than the main way in."
+    },
+    {
+     "name": "TickTick",
+     "url": "https://ticktick.com/",
+     "what": "To-do list, calendar and habit tracker",
+     "starts_at": "Free; Premium $49.99/year",
+     "difference": "Cheaper yearly premium, but not built around voice capture that asks clarifying questions."
+    },
+    {
+     "name": "Superlist",
+     "url": "https://www.superlist.com/",
+     "what": "Task lists and notes with AI, including voice task capture",
+     "starts_at": "Free; Basic $5 per person a month",
+     "difference": "Team-oriented with AI meeting notes; its free plan lists macOS, iOS, Android and web but no Windows or watch app."
+    }
+   ],
+   "more": "Product Hunt also lists BeforeSunset AI, Twos and Morgen."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/foley/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Capturing tasks from an Apple Watch",
+     "Organising thoughts without typing",
+     "A clean interface"
+    ],
+    "asked": [
+     "Whether it copes when plans change (yes, and it asks if a request is ambiguous)",
+     "Whether tasks can sync to ClickUp or other project tools (no answer shown)"
+    ],
+    "criticised": [
+     "One commenter reported that the hello@foleyapp.com address bounced (no reply shown on the page)"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Using an Apple Watch to capture tasks is a nice touch. Sometimes pulling out your phone is already too much friction.",
+     "author": "Thomas Bennett",
+     "url": "https://www.producthunt.com/products/foley?comment=5939457"
+    },
+    {
+     "text": "Finally an assistant can help organize the chaos in my head without making me type everything out.",
+     "author": "Oscar Bennett",
+     "url": "https://www.producthunt.com/products/foley?comment=5939436"
+    },
+    {
+     "text": "can it handle task well even when plans change?",
+     "author": "Shivam Kushwaha",
+     "url": "https://www.producthunt.com/products/foley?comment=5939241"
+    },
+    {
+     "text": "can the created tasks also be synced to desire PM tools like clickup",
+     "author": "Techxeni",
+     "url": "https://www.producthunt.com/products/foley?comment=5939707"
+    }
+   ]
+  },
+  "pros": [
+   "Free desktop app with no account, using your own AI key",
+   "Asks a question rather than guessing when a request is ambiguous",
+   "Available on almost every platform, including Windows and both watch platforms",
+   "Keeps your original words and lets you undo a capture",
+   "Says it does not train any model on what you say"
+  ],
+  "cons": [
+   "Synced data is not end-to-end encrypted",
+   "Voice audio is sent to an AI service for transcription",
+   "No integration with project tools such as ClickUp mentioned",
+   "AI features need either your own key or a subscription"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/foley",
+   "x": {
+    "none": "We found no posts about Foley on X to link yet.",
+    "search_url": "https://x.com/search?q=foleyapp&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Foley free?",
+    "a": "The desktop app is free with no account, but AI features need your own OpenRouter key, which your AI provider charges for. Foley Pro is $8 a month or $72 a year and runs the AI for you."
+   },
+   {
+    "q": "Which devices does Foley run on?",
+    "a": "Mac, Windows, iPhone and iPad, Android, Apple Watch (watchOS 10+), Wear OS 3+ and the web, which also covers Linux and Chromebooks."
+   },
+   {
+    "q": "Does it cope when my plans change?",
+    "a": "Yes. You say what changed and Foley moves the task; the maker added on Product Hunt that it asks a follow-up when a request is ambiguous."
+   },
+   {
+    "q": "What happens to my voice?",
+    "a": "The audio is sent to an AI service to be transcribed, then the transcript is organised into tasks. Foley says it does not train any model on what you say. The desktop app can keep capture audio locally, which you can turn off."
+   },
+   {
+    "q": "Is my data end-to-end encrypted?",
+    "a": "No. Foley's privacy policy says the server copy is encrypted with keys managed by Cloudflare but is not end-to-end encrypted."
+   },
+   {
+    "q": "Can I cancel and get a refund?",
+    "a": "You can cancel any time and keep access until the period ends. Foley doesn't refund part-periods except where the law requires; store purchases are refunded by Apple or Google."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Foley official site",
+    "url": "https://foleyapp.com/"
+   },
+   {
+    "label": "Foley pricing",
+    "url": "https://foleyapp.com/pricing"
+   },
+   {
+    "label": "Foley privacy policy",
+    "url": "https://foleyapp.com/privacy"
+   },
+   {
+    "label": "Foley terms",
+    "url": "https://foleyapp.com/terms"
+   },
+   {
+    "label": "Foley support",
+    "url": "https://foleyapp.com/support"
+   },
+   {
+    "label": "Foley downloads",
+    "url": "https://foleyapp.com/download?platform=all"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/foley"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/foley/alternatives"
+   },
+   {
+    "label": "Todoist pricing",
+    "url": "https://www.todoist.com/pricing"
+   },
+   {
+    "label": "TickTick Premium",
+    "url": "https://ticktick.com/about/upgrade"
+   },
+   {
+    "label": "Superlist pricing",
+    "url": "https://www.superlist.com/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/d42ac1f8-55cf-4b4d-97ce-e18370a116d9.png?auto=format&fit=max&w=1400",
+    "alt": "Foley graphic 'Foley files it.' with a phone showing the All tasks list"
+   },
+   {
+    "url": "https://ph-files.imgix.net/73c4fab9-283d-49d3-abf7-71756a4de152.png?auto=format&fit=max&w=1400",
+    "alt": "Foley graphic 'Just say it.' with a phone recording a spoken task"
+   },
+   {
+    "url": "https://ph-files.imgix.net/474af6b1-129e-480d-9b25-84d6b5086c18.png?auto=format&fit=max&w=1400",
+    "alt": "Foley turning 'Remind me to call Mum on Sunday at six' into a task with the date set"
+   },
+   {
+    "url": "https://ph-files.imgix.net/8a72b1c7-cabe-4fe9-9adf-a38d337f1a5b.png?auto=format&fit=max&w=1400",
+    "alt": "Foley graphic 'Two calls. Which one?' showing it asking a follow-up question instead of guessing"
+   },
+   {
+    "url": "https://ph-files.imgix.net/969bbb80-1fa7-482d-a13d-5d99d7a540b8.png?auto=format&fit=max&w=1400",
+    "alt": "Foley graphic 'Before you put it down' with the app on desktop, phone and Apple Watch"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/d42ac1f8-55cf-4b4d-97ce-e18370a116d9.png?auto=format&fit=max&w=1400",
+    "alt": "Foley graphic 'Foley files it.' with a phone showing the All tasks list"
+   },
+   {
+    "url": "https://ph-files.imgix.net/73c4fab9-283d-49d3-abf7-71756a4de152.png?auto=format&fit=max&w=1400",
+    "alt": "Foley graphic 'Just say it.' with a phone recording a spoken task"
+   },
+   {
+    "url": "https://ph-files.imgix.net/474af6b1-129e-480d-9b25-84d6b5086c18.png?auto=format&fit=max&w=1400",
+    "alt": "Foley turning 'Remind me to call Mum on Sunday at six' into a task with the date set"
+   }
+  ]
+ }
+}

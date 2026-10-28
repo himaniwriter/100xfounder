@@ -1,0 +1,104 @@
+{
+  "slug": "acme-bot",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/acme-bot",
+  "excerpt": "ACME.BOT is an AI blog agent that interviews you before it writes, then researches, drafts and publishes SEO articles in your voice. Pricing, alternatives and launch-day comments.",
+  "content": "<p>ACME.BOT is an AI agent that runs a company blog from research to publishing. Its pitch is that it does not write from scratch: before drafting a post it asks you a few questions by chat, from your phone if you like, and builds the article around your answers, your documents and your brand voice. It then handles the keyword research, content calendar, illustrations and diagrams, internal links and metadata, and publishes to your CMS on a schedule, either automatically or after your approval.</p><p>It was built by Abhishek Iyer, who says on the site and on Product Hunt that he left a job as a search infrastructure engineer at Google to build products as an indie maker. The service is operated by FreeText AI Pte. Ltd., a company incorporated in Singapore, according to its terms. ACME.BOT launched on Product Hunt on 22 July 2026 and finished #5 for the day with 197 points and 52 comments.</p><p><em>We have not tested ACME.BOT ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI SEO writing",
+    "platform": "Web app, with chat access through Telegram and email",
+    "starts_at": "100 free credits, then $79 per agent a month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI blog agent that interviews you first, then researches, writes and publishes SEO posts",
+    "maker": {"name": "Abhishek Iyer", "url": "https://www.producthunt.com/@abhishek_iyer"},
+    "team": [
+      {"name": "Abhishek Iyer", "role": "Maker; former search infrastructure engineer at Google (his own account on acme.bot and Product Hunt)", "url": "https://www.producthunt.com/@abhishek_iyer"},
+      {"name": "Dyuti", "url": "https://www.producthunt.com/@dyuti"}
+    ],
+    "ph": {"rank": 5, "votes": 197, "comments": 52, "followers": 276, "launched": "2026-07-22", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/e53bceda-9b30-4622-8ec4-6320f647b947.png?auto=format&fit=max&w=1400", "w": 830, "h": 831,
+       "alt": "Pixel-art graphic reading 'ACME.BOT writes non-commodity content', with a typewriter, a reporter's notebook and a robot hand writing notes", "credit": "Image: ACME.BOT via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/70767b1e-e1d7-453c-af38-304e864e4c11.png?auto=format&fit=max&w=1400", "w": 1254, "h": 1254,
+       "alt": "Pixel-art graphic of a studio microphone reading 'ACME.BOT interviews you for your take'", "credit": "Image: ACME.BOT via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/9da4ae00-9355-4455-9493-b4583aa2bd50.png?auto=format&fit=max&w=1400", "w": 1254, "h": 1254,
+       "alt": "Pixel-art graphic 'On the go, human in the loop' showing the ACME.BOT chat on a laptop and Telegram on a phone, with icons for interviews, knowledge base and approval gates", "credit": "Image: ACME.BOT via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "run a small or mid-sized company blog and have expertise to share but no time to write",
+        "want posts built on your own numbers and opinions rather than generic AI drafts",
+        "manage several blogs or client sites: each blog gets its own agent, knowledge base and voice"
+      ],
+      "not_fit": [
+        "want a one-off article tool without a subscription: paid use is billed monthly per blog",
+        "won't take part in the interviews: the product is designed around your answers",
+        "need annual billing today: the pricing page says it is not available yet"
+      ]
+    },
+    "pricing": {
+      "intro": "ACME.BOT has one plan, priced per agent (one agent per blog or website). Prices are in US dollars.",
+      "url": "https://acme.bot/pricing",
+      "plans": [
+        {"name": "Free start", "price": "$0", "amount": 0, "currency": "USD", "detail": "100 credits to try, enough to draft a first article; no credit card"},
+        {"name": "Agent", "price": "$79/agent/month", "amount": 79, "currency": "USD", "detail": "2,500 credits a month (around 25 articles), research, interviews, brand voice, illustrations, technical SEO and CMS publishing"}
+      ],
+      "notes": [
+        "$79 is an introductory price (listed down from $99). The site says it will rise later and early subscribers keep their rate.",
+        "A full post typically uses about 80–100 credits. Extra credits can be bought and stay valid for a year.",
+        "First-time subscribers can ask for a full refund within 7 days of their first payment. Plans renew monthly and can be cancelled any time.",
+        "Annual billing is not available yet."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Writesonic", "url": "https://writesonic.com/", "what": "AI search visibility and content platform", "starts_at": "7-day free trial; see its pricing page",
+         "ph_rating": 4.42, "ph_reviews": 53,
+         "difference": "Focused on visibility in AI search tools such as ChatGPT, with content and citation work. It does not interview you for first-hand material."},
+        {"name": "Scalenut", "url": "https://www.scalenut.com/", "what": "AI SEO platform for planning, writing and optimising content", "starts_at": "See its pricing page",
+         "ph_rating": 5, "ph_reviews": 17,
+         "difference": "A toolkit you operate across the content lifecycle, plus expert-led services, rather than an agent that runs the blog for you."},
+        {"name": "Speedy", "url": "https://speedybrand.io/", "what": "AI content marketing for blogs, social posts and ads", "starts_at": "3-day free trial; see its pricing page",
+         "ph_rating": 5, "ph_reviews": 10,
+         "difference": "Covers social and ads as well as blogs. ACME.BOT is blog-only and built around interviews."}
+      ],
+      "more": "Product Hunt also lists Surfer and Blazly SEO as alternatives."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/acme-bot/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/acme-bot",
+      "quotes": [
+        {"author": "Gal Dayan", "text": "the feature list has a \"Humanizer\" line right next to the EEAT/no-slop pitch, and those two things sit a bit awkwardly together.",
+         "reply": "Abhishek Iyer: the humanizer is meant to iron out awkward phrasing; beating AI detection is a side effect, not the goal."},
+        {"author": "Omri Ben-Shoham", "text": "how long is a typical interview session though?",
+         "reply": "Abhishek Iyer: the default is short, but it offers to go further, and all interviews feed the knowledge base so they add up over time."},
+        {"author": "Mitalee Rao", "text": "how can I make it work for my custom built blog?",
+         "reply": "Abhishek Iyer: if the blog uses GitHub and Markdown, there is a GitHub connector."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=acme.bot&f=live"}
+    },
+    "faq": [
+      {"q": "What is ACME.BOT?", "a": "An AI blog agent that interviews you by chat, reads your documents and then researches, writes and publishes SEO articles in your voice. It launched on Product Hunt on 22 July 2026."},
+      {"q": "How much does ACME.BOT cost?", "a": "You can start with 100 free credits and no card. The paid plan is an introductory $79 per agent (one blog) a month, with 2,500 credits, about 25 articles."},
+      {"q": "How long are the interviews?", "a": "The site describes three questions on chat taking a few minutes. The maker said on Product Hunt that the default is short but it can go longer if you want."},
+      {"q": "Which platforms can it publish to?", "a": "Its site and terms mention publishing to CMSs including WordPress and Shopify, and the maker mentioned a GitHub connector for Markdown blogs."},
+      {"q": "Is there a refund?", "a": "Yes. First-time subscribers can request a full refund within 7 days of their first payment by emailing the company."},
+      {"q": "Who makes ACME.BOT?", "a": "Abhishek Iyer, a former Google search infrastructure engineer. The service is operated by FreeText AI Pte. Ltd. in Singapore."}
+    ],
+    "sources": [
+      {"label": "ACME.BOT official site", "url": "https://acme.bot/"},
+      {"label": "ACME.BOT pricing", "url": "https://acme.bot/pricing"},
+      {"label": "ACME.BOT contact", "url": "https://acme.bot/contact"},
+      {"label": "ACME.BOT terms and privacy", "url": "https://acme.bot/terms"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/acme-bot"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/acme-bot"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/acme-bot/alternatives"},
+      {"label": "Writesonic", "url": "https://writesonic.com/"},
+      {"label": "Scalenut", "url": "https://www.scalenut.com/"},
+      {"label": "Speedy", "url": "https://speedybrand.io/"}
+    ]
+  }
+}

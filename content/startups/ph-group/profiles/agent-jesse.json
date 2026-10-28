@@ -1,0 +1,158 @@
+{
+ "slug": "agent-jesse",
+ "ph_url": "https://www.producthunt.com/products/jesse-2",
+ "existing_listing_slug": null,
+ "website": "https://agentjesse.ai/",
+ "excerpt": "Agent Jesse is a sales prospecting tool from Floworks that searches the live web for companies and people matching a plain-English description, instead of a stored contact database. Free plan with 1,000 credits; paid plans from $9 a month. Pricing, alternatives and launch feedback.",
+ "content": "<p>Agent Jesse is a prospecting tool for sales and marketing teams. Instead of filtering a stored contact database, you describe the buyers you want in plain English, such as companies that just opened a new facility or hired a new head of sales, and Jesse searches public web sources at the time you run the query. It returns matching companies with the source and a short rationale, can find decision-makers at those companies, and can add verified emails and phone numbers for credits. It also offers lookalike searches based on a list that worked for you, and daily lead alerts.</p><p>Jesse is built by Floworks Technologies, Inc., which also makes Alisha, an AI email SDR. The free plan includes 1,000 credits, live people and company search, saved lists and one daily alert. Paid plans run from $9 to $100 a month and add more credits, CSV export, lookalikes and enrichment; the Business plan adds API, MCP server and n8n access. CRM integrations such as HubSpot and Salesforce are listed as coming soon, with CSV export available now.</p><p>Jesse launched on Product Hunt on 18 June 2026 and finished #3 for the day, with 428 upvotes and 97 comments. Floworks co-founders Sudipta Biswas and Sarthak Shrivastava and CTO Ritesh Kumar answered questions in the thread.</p><p><em>We have not tested Agent Jesse ourselves. This page brings together its official site, pricing and about pages, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Sales prospecting",
+  "platform": "Web app, API, MCP server and n8n",
+  "starts_at": "Free plan with 1,000 credits; Pro $9/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Searches the live web for B2B leads described in plain English, instead of a stored database",
+  "maker": {
+   "name": "Sudipta Biswas",
+   "url": "https://www.producthunt.com/@sudipta_biswas4"
+  },
+  "team": [
+   {"name": "Sudipta Biswas", "role": "Co-founder", "url": "https://www.producthunt.com/@sudipta_biswas4"},
+   {"name": "Sarthak Shrivastava", "role": "Co-founder", "url": "https://www.producthunt.com/@sarthak_shrivastava2"},
+   {"name": "Ritesh Kumar", "role": "CTO", "url": "https://www.producthunt.com/@ritesh2503"}
+  ],
+  "ph": {
+   "rank": 3,
+   "votes": 428,
+   "comments": 97,
+   "followers": 1282,
+   "launched": "2026-06-18",
+   "as_of": "2026-10-14"
+  },
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/12e0ad28-a75f-4692-8660-9934ccbb7edd.png?auto=format&fit=max&w=1400", "w": 1280, "h": 853, "credit": "Image: Jesse via Product Hunt", "alt": "Agent Jesse company search results for banks facing debt recovery challenges, with source, relevance score and rationale for each company"},
+   {"url": "https://ph-files.imgix.net/ebb5dd2d-376d-4a87-abcd-a48425887f89.png?auto=format&fit=max&w=1400", "w": 1280, "h": 853, "credit": "Image: Jesse via Product Hunt", "alt": "Agent Jesse lookalike screen: extend a recent search or paste a seed list of companies to find similar ones"},
+   {"url": "https://ph-files.imgix.net/9aa3b7c1-7b7d-41f9-97f8-b37f1ea3162a.png?auto=format&fit=max&w=1400", "w": 1280, "h": 853, "credit": "Image: Jesse via Product Hunt", "alt": "Agent Jesse contact search summary showing matches per role and a button to enrich role matches with credits"}
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Sudipta Biswas, co-founder of Floworks, writes that his first startup failed because the team could not crack sales, and that building lead lists stayed painful at Floworks too: by the time a list was ready, many people had changed roles and the signals were out of date.",
+    "He pitched Jesse as a search engine for finding your next customers: it searches the live web on every query rather than reselling a database scraped once. You describe the buyer in plain English and Jesse suggests which signals to look for. According to him, more than 1,200 teams had signed up by launch day, and he asked founders and sales leaders for feedback."
+   ],
+   "attribution": "Sudipta Biswas, co-founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/jesse-2?comment=5457615"
+  },
+  "use_cases": [
+   "Finding companies that show a buying trigger, such as a new sales leader, a funding round or a new facility",
+   "Finding the decision-makers inside a list of target accounts",
+   "Building a lookalike list from customers or searches that already worked",
+   "Getting a daily alert with fresh leads for a saved search",
+   "Feeding leads into your own tools through the API, MCP server or n8n"
+  ],
+  "audience": {
+   "fit": [
+    "sell to niche or event-driven segments that stored databases cover poorly",
+    "want to describe your ideal buyer in a sentence instead of building filter stacks",
+    "want a free plan to try live-web prospecting before paying"
+   ],
+   "not_fit": [
+    "need native CRM sync today: HubSpot, Salesforce and other integrations are listed as coming soon",
+    "need prospects who leave little public trace online, since results depend on what has been published",
+    "want to verify every result before spending credits: launch commenters asked for more visible sources and names in the free trial"
+   ]
+  },
+  "pricing": {
+   "intro": "Agent Jesse has a free plan and three monthly paid plans, priced in US dollars on its own pricing page. Annual billing is advertised as saving 22%.",
+   "url": "https://agentjesse.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "1,000 credits, people and company search, saved lists, 1 alert per day"},
+    {"name": "Pro", "price": "$9/month", "amount": 9, "currency": "USD", "detail": "1,000 credits a month, 3 alerts a day, CSV export, lookalike searches, email and phone enrichment"},
+    {"name": "Business", "price": "$29/month", "amount": 29, "currency": "USD", "detail": "8,000 credits a month, plus MCP server, n8n and API access"},
+    {"name": "Max", "price": "$100/month", "amount": 100, "currency": "USD", "detail": "30,000 credits a month and priority support"}
+   ],
+   "notes": [
+    "Credit costs on the pricing page: a search is 10 credits, an email 5 credits and a phone number 30 credits (email included).",
+    "Custom plans are available on request."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Apollo.io, Jeeva AI and Clearbit among Jesse's alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "Apollo.io", "url": "https://www.apollo.io/", "what": "Sales platform with a large B2B contact database, filters and outreach sequences", "starts_at": "See its pricing page", "ph_rating": 4.19, "ph_reviews": 42, "ph_url": "https://www.producthunt.com/products/apollo-io", "difference": "Filter-based search over a stored database plus built-in sequencing, where Jesse runs a fresh web search per query."},
+    {"name": "Jeeva AI", "url": "https://www.producthunt.com/products/jeeva-ai", "what": "Agentic AI sales assistant for prospecting and outreach", "starts_at": "See its pricing page", "ph_rating": 4.68, "ph_reviews": 53, "ph_url": "https://www.producthunt.com/products/jeeva-ai", "difference": "Covers outreach as well as prospecting; Jesse focuses on finding and enriching leads and leaves outreach to other tools."},
+    {"name": "Clearbit", "url": "https://clearbit.com/", "what": "B2B data and enrichment for sales and marketing", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 8, "ph_url": "https://www.producthunt.com/products/clearbit", "difference": "Enriches records you already have from its own data; Jesse discovers new accounts from public web signals."}
+   ],
+   "more": "Product Hunt also lists Success.ai and ZELIQ."
+  },
+  "reviews": {
+   "count": 3,
+   "rating": 4.5,
+   "url": "https://www.producthunt.com/products/jesse-2/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Plain-English search built around buying signals rather than static filters",
+     "Smaller, more relevant lists that allow deeper personalisation"
+    ],
+    "asked": [
+     "What 'live internet' means in practice (the team says it researches public sources at query time, so results are limited to what has been published)",
+     "Whether there is an n8n or MCP integration (yes, both, plus an API)"
+    ],
+    "criticised": [
+     "The free trial reported contacts found but did not show names, which made results hard to verify",
+     "A search for SMBs returned much larger companies",
+     "Confusion between the Jesse and Floworks names"
+    ]
+   },
+   "quotes": [
+    {"text": "I'm curious what \"live internet\" actually means in practice for sales data specifically.", "author": "Florent Berrez", "url": "https://www.producthunt.com/products/jesse-2?comment=5462266"},
+    {"text": "I went through the process and asked for SMBs, but the results included companies with valuations around $2 billion.", "author": "Mo Efazati", "url": "https://www.producthunt.com/products/jesse-2?comment=5463529"},
+    {"text": "stale data means you contact someone who already churned or moved jobs. live search means you might miss someone who exists but just isn't visible online yet.", "author": "Ansari Adin", "url": "https://www.producthunt.com/products/jesse-2?comment=5465106"},
+    {"text": "it would be useful to help the prospect verify that the company name and details are not an LLM's hallucinations.", "author": "Siddharth Mathur", "url": "https://www.producthunt.com/products/jesse-2?comment=5467926"}
+   ]
+  },
+  "pros": [
+   "Searches public web sources at query time rather than a stored database",
+   "Plain-English prompts, with a prompt library of signal-based searches",
+   "Free plan with 1,000 credits and no card required",
+   "API, MCP server and n8n access on the $29 Business plan"
+  ],
+  "cons": [
+   "CRM and outreach integrations were still listed as coming soon",
+   "Results depend on what has been made public online",
+   "Credits run down quickly with enrichment: a phone number costs 30 credits",
+   "Launch commenters wanted clearer sources and visible names to check results"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/jesse-2",
+   "quotes": [
+    {"author": "Florent Berrez", "url": "https://www.producthunt.com/products/jesse-2?comment=5462266", "text": "Asked whether Jesse pulls from public sources in real time or from a database refreshed on a schedule.", "reply": "Ritesh Kumar replied that searches run live research over public sources at query time, so freshness is limited only by what has been published."},
+    {"author": "Siddharth Mathur", "url": "https://www.producthunt.com/products/jesse-2?comment=5467926", "text": "Asked for names and sources in the free trial so results can be checked.", "reply": "Sarthak Shrivastava said an update would show named people, roles, company names and source links."}
+   ],
+   "x": {
+    "none": "We found no posts about Agent Jesse on X to link yet.",
+    "search_url": "https://x.com/search?q=agentjesse&f=live"
+   }
+  },
+  "faq": [
+   {"q": "What is Agent Jesse?", "a": "A prospecting tool from Floworks that searches public web sources for companies and people matching a plain-English description of your ideal buyer, then enriches them with emails and phone numbers."},
+   {"q": "Is Agent Jesse free?", "a": "There is a free plan with 1,000 credits, live search, saved lists and one daily alert. Paid plans are $9, $29 and $100 a month."},
+   {"q": "How fresh is the data?", "a": "The team says each search researches public sources when you run it, rather than reading a stored snapshot. Anything not yet published online will not appear."},
+   {"q": "Does it integrate with my CRM?", "a": "CSV export, an API, an MCP server and n8n are available (API, MCP and n8n on the Business plan). HubSpot, Salesforce, Instantly and others are listed as coming soon."},
+   {"q": "How do credits work?", "a": "According to the pricing page, a search costs 10 credits, an email 5 credits and a phone number 30 credits, with the email included."},
+   {"q": "What are the alternatives to Agent Jesse?", "a": "Product Hunt lists Apollo.io, Jeeva AI, Clearbit, Success.ai and ZELIQ. Apollo and Clearbit rely on stored data; Jeeva AI also handles outreach."}
+  ],
+  "sources": [
+   {"label": "Agent Jesse official site", "url": "https://agentjesse.ai/"},
+   {"label": "Agent Jesse pricing", "url": "https://agentjesse.ai/pricing"},
+   {"label": "About Agent Jesse", "url": "https://agentjesse.ai/about"},
+   {"label": "Agent Jesse for GTM teams", "url": "https://agentjesse.ai/use-cases/gtm-teams"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/jesse-2"},
+   {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/jesse-2/reviews"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/jesse-2/alternatives"}
+  ]
+ }
+}

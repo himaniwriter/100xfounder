@@ -1,0 +1,182 @@
+{
+ "slug": "miro",
+ "website": "https://miro.com/",
+ "excerpt": "Miro is an online whiteboard for team workshops, planning and diagrams. Pricing from its own page, its $17.5 billion 2022 valuation, the 2026 Bending Spoons deal and alternatives.",
+ "content": "<p>Miro is an online whiteboard. A team opens a shared, endless canvas and fills it with sticky notes, diagrams, flowcharts, mind maps, kanban boards and wireframes, either together in real time or one person at a time. It is widely used for workshops, retrospectives, product planning and brainstorming, and has AI features that run on monthly credits.</p><p>The company was founded in 2011 as RealtimeBoard by Andrey Khusid and Oleg Shardin, who earlier ran a design agency together, and was later renamed Miro. Khusid is the chief executive.</p><p>On 5 January 2022 Miro announced a $400 million Series C at a post-money valuation of $17.5 billion, bringing its total funding to $476 million. Investors in the round included ICONIQ Growth, Accel, Atlassian, Dragoneer, GIC, Salesforce Ventures and TCV.</p><p>In September 2026 Bending Spoons, the Italian technology company, agreed to buy Miro in an all-cash deal at an enterprise value of $1.355 billion, roughly $1.79 billion in equity once Miro's net cash is counted. Sifted noted that this is nearly 90% below the 2022 valuation. The deal needs regulatory approval and was expected to close in the fourth quarter of 2026; until then Miro remains an independent company.</p><p>Miro has a free plan that keeps your three most recent boards editable, and paid plans charged per member.</p><p><em>We have not used Miro for this page. It brings together Miro's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Online whiteboard",
+  "platform": "Web, Windows, macOS, iOS and Android",
+  "starts_at": "Free; Starter $8 per member/month billed annually",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Online whiteboard for team workshops, planning, diagrams and brainstorming",
+  "maker": {
+   "name": "Miro",
+   "url": "https://miro.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://framerusercontent.com/assets/Bab0War93Jeq5MpDPwqKFiyI.png",
+    "w": 1200,
+    "h": 630,
+    "alt": "Miro's logo, three slanted dark-blue strokes forming an M, on a yellow background",
+    "credit": "Image: Miro (miro.com)"
+   },
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/2022_-_Centre_Stage_RC0_9337_%2852472293611%29.jpg/1280px-2022_-_Centre_Stage_RC0_9337_%2852472293611%29.jpg",
+    "w": 1200,
+    "h": 800,
+    "alt": "Miro co-founder and CEO Andrey Khusid shown on the big screen during a Centre Stage session at Web Summit 2022 in Lisbon",
+    "credit": "Photo: Web Summit, CC BY 2.0, via Wikimedia Commons"
+   }
+  ],
+  "use_cases": [
+   "Remote workshops and retrospectives with sticky notes and voting",
+   "Product roadmaps, user-journey maps and wireframes",
+   "Flowcharts, org charts and architecture diagrams",
+   "Brainstorming and mind maps"
+  ],
+  "team": [
+   {
+    "name": "Andrey Khusid",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Oleg Shardin",
+    "role": "Co-founder"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "remote and hybrid teams that run workshops or planning sessions online",
+    "product, design and agile teams mapping ideas before they build",
+    "facilitators who want templates for retros, journey maps and brainstorming"
+   ],
+   "not_fit": [
+    "anyone who needs pixel-precise interface design: use a design tool such as Figma",
+    "heavy free users, since only the three most recent boards stay editable on the free plan",
+    "buyers who want certainty about ownership: the pending Bending Spoons acquisition could change the product or plans"
+   ]
+  },
+  "pricing": {
+   "intro": "Miro charges per member. The figures below are the annual-billing prices shown on its pricing page; the page says annual billing saves 20% but did not show monthly-billing figures for us.",
+   "url": "https://miro.com/pricing/",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Unlimited boards, but only the three most recent stay editable; 10 AI credits a month; 100 MCP calls a day"
+    },
+    {
+     "name": "Starter",
+     "price": "$8 per member/month, billed annually",
+     "amount": 8,
+     "currency": "USD",
+     "detail": "Unlimited and private boards, 25 AI credits per member a month, visitors can edit"
+    },
+    {
+     "name": "Business",
+     "price": "$20 per member/month, billed annually",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "Adds 50 AI credits per member a month, unlimited workspaces and guests, and SSO; 14-day free trial"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "For 30 or more members; pooled AI credits from 2,500 a month, SCIM, audit logs and data residency options"
+    }
+   ]
+  },
+  "alternatives": {
+   "intro": "Other whiteboards and visual collaboration tools.",
+   "items": [
+    {
+     "name": "FigJam (Figma)",
+     "url": "https://www.figma.com/figjam/",
+     "what": "Figma's online whiteboard",
+     "difference": "Lives next to Figma's design files, so it suits teams already designing in Figma."
+    },
+    {
+     "name": "Lucid (Lucidspark and Lucidchart)",
+     "url": "https://lucid.co/",
+     "what": "Whiteboarding plus formal diagramming",
+     "difference": "Stronger on structured diagrams such as flowcharts and network maps."
+    },
+    {
+     "name": "Mural",
+     "url": "https://www.mural.co/",
+     "what": "Visual collaboration whiteboard",
+     "difference": "Focuses on facilitated workshops for large organisations."
+    },
+    {
+     "name": "Loom",
+     "url": "https://www.loom.com/",
+     "what": "Async video messages",
+     "starts_at": "Free Starter; Business $18 per user/month",
+     "difference": "Replaces meetings with recorded video rather than a shared canvas; often used alongside a whiteboard."
+    }
+   ]
+  },
+  "pros": [
+   "Very flexible canvas with many templates",
+   "Usable for free, with paid plans at a modest per-member price",
+   "Enterprise features such as SSO, SCIM and data residency"
+  ],
+  "cons": [
+   "Free plan limits you to three editable boards",
+   "The pending sale to Bending Spoons adds uncertainty about future plans and pricing"
+  ],
+  "faq": [
+   {
+    "q": "Is Miro free?",
+    "a": "Yes. The free plan lets you create and share unlimited boards, but only your three most recent boards stay editable."
+   },
+   {
+    "q": "How much does Miro cost?",
+    "a": "Starter is $8 and Business $20 per member a month, billed annually, per Miro's pricing page on 15 October 2026. Enterprise is custom-priced for 30 or more members."
+   },
+   {
+    "q": "Who founded Miro?",
+    "a": "Andrey Khusid and Oleg Shardin founded it in 2011 as RealtimeBoard. Khusid is the CEO."
+   },
+   {
+    "q": "Is Miro being acquired?",
+    "a": "Bending Spoons agreed in September 2026 to buy Miro at an enterprise value of $1.355 billion. The deal was expected to close in the fourth quarter of 2026, subject to regulatory approvals."
+   },
+   {
+    "q": "What was Miro's highest valuation?",
+    "a": "$17.5 billion post-money, set by its $400 million Series C in January 2022."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Miro pricing",
+    "url": "https://miro.com/pricing/"
+   },
+   {
+    "label": "Miro newsroom: $400M Series C",
+    "url": "https://miro.com/newsroom/miro-series-c"
+   },
+   {
+    "label": "Sifted: Bending Spoons to buy Miro",
+    "url": "https://sifted.eu/articles/bending-spoons-to-buy-miro/"
+   },
+   {
+    "label": "Latham & Watkins: advises Bending Spoons on Miro acquisition",
+    "url": "https://www.lw.com/en/news/2026/09/latham-advises-bending-spoons-in-acquisition-of-miro"
+   },
+   {
+    "label": "Reworked: Bending Spoons acquires Miro",
+    "url": "https://www.reworked.co/collaboration-productivity/bending-spoons-acquires-miro-for-136b/"
+   },
+   {
+    "label": "Wikipedia: Miro (founding history)",
+    "url": "https://en.wikipedia.org/wiki/Miro_(collaboration_platform)"
+   }
+  ]
+ }
+}

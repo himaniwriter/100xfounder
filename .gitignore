@@ -24,3 +24,20 @@ tsconfig.tsbuildinfo
 .DS_Store
 .vscode/
 .vercel
+
+# Local WordPress created by wordpress/local/run-local.sh
+wordpress/local/.site/
+wordpress/design/og/*.html
+content/uploaded.json
+
+# Live-site backups (database + code), never committed
+/backups/
+
+# Astro front end (build output and dependencies)
+astro/node_modules/
+astro/dist/
+astro/.astro/
+astro/.upload-manifest.json
+astro/dist-skipped/
+astro/.deploy.lock/
+astro/.cache/

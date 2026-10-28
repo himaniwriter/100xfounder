@@ -1,0 +1,169 @@
+{
+ "slug": "ramp",
+ "website": "https://ramp.com/",
+ "excerpt": "Ramp combines corporate cards, expenses, bill pay and accounting automation for US businesses. Its free and paid plans, funding to a $44 billion valuation, and alternatives.",
+ "content": "<p>Ramp is a finance platform for businesses. It started with corporate cards and has grown to cover expense management, travel booking, bill payments, procurement, accounting automation and business banking, with AI tools that collect receipts, code transactions and flag spending outside policy.</p><p>Ramp was founded in 2019 by Eric Glyman, its chief executive, and Karim Atiyeh, its chief technology officer. The two had earlier built Paribus, a consumer savings app that Capital One bought in 2016.</p><p>Its valuation has climbed quickly. In November 2025 it raised $300 million at a $32 billion valuation, and in June 2026 it announced a $750 million round led by ICONIQ, GIC and Ontario Teachers' Pension Plan at a $44 billion valuation, saying it had passed $1 billion in annualised revenue, according to FinTech Futures. In October 2026 Bloomberg reported that Ramp had raised about $1.85 billion more at roughly a $60 billion pre-money valuation, led by Dragoneer and Thrive Capital; Ramp declined to comment and had not announced it.</p><p>Ramp has been built for US companies. With its June 2026 round it said it planned to bring its corporate card and spend tools to UK and European companies.</p><p>There are three plans. Ramp Free costs nothing per user; Ramp Plus adds more automation and controls for $15 per user a month, with a 30-day free trial; and Enterprise is custom-priced.</p><p><em>We have not used Ramp for this page. It brings together Ramp's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Spend management",
+  "platform": "Web, iOS and Android",
+  "starts_at": "Free; Plus $15 per user/month",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Corporate cards, expenses, bill pay and accounting automation for businesses",
+  "maker": {
+   "name": "Ramp Business Corporation",
+   "url": "https://ramp.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/SF_Muni_route_22_trolleybus_with_Ramp_ad.jpg/1280px-SF_Muni_route_22_trolleybus_with_Ramp_ad.jpg",
+    "w": 1200,
+    "h": 800,
+    "alt": "A San Francisco Muni route 22 trolleybus wrapped in a yellow Ramp advertisement reading 'Modern finance runs on Ramp.'",
+    "credit": "Photo: Han Zheng, CC BY-SA 2.0, via Wikimedia Commons"
+   },
+   {
+    "url": "https://next.ramp.com/assets/images/default-og-image.jpg",
+    "w": 2400,
+    "h": 1260,
+    "alt": "Ramp promotional image showing a black Ramp corporate card, transaction amounts, a spending chart and a reimbursement notice",
+    "credit": "Image: Ramp (ramp.com)"
+   }
+  ],
+  "use_cases": [
+   "Issuing corporate cards with per-card limits and controls",
+   "Automatic receipt matching and expense reports",
+   "Paying vendor bills by ACH, card, check or wire",
+   "Syncing coded transactions to QuickBooks Online or Xero",
+   "Booking business travel within a company policy"
+  ],
+  "team": [
+   {
+    "name": "Eric Glyman",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Karim Atiyeh",
+    "role": "Co-founder and CTO"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "US startups and companies that want cards, expenses and bill pay in one system",
+    "finance teams that want to cut manual receipt chasing and coding",
+    "companies on QuickBooks or Xero looking for automated bookkeeping"
+   ],
+   "not_fit": [
+    "companies outside the US: check Ramp's eligibility first, since its UK and European launch was only announced in 2026",
+    "sole traders who just need a personal-style card"
+   ]
+  },
+  "pricing": {
+   "intro": "Ramp's pricing page lists three plans. Prices are per user per month in US dollars.",
+   "url": "https://ramp.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0/month per user",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Unlimited cards, expenses via SMS or Slack, travel booking, bill pay, invoices, basic accounting rules, QuickBooks Online and Xero integrations"
+    },
+    {
+     "name": "Plus",
+     "price": "$15/month per user",
+     "amount": 15,
+     "currency": "USD",
+     "detail": "More automation and controls; 30-day free trial; procurement available as an add-on"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom, annual billing",
+     "detail": "Workday and Oracle Fusion integrations, local-currency cards in 30+ countries, dedicated support and implementation services"
+    }
+   ],
+   "notes": [
+    "Ramp says Plus can be paid by ACH or with rewards earned on the Ramp card."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other spend-management platforms.",
+   "items": [
+    {
+     "name": "Brex",
+     "url": "https://www.brex.com/",
+     "what": "Corporate cards and spend management",
+     "difference": "Ramp's closest rival, with a strong push into global companies."
+    },
+    {
+     "name": "Navan",
+     "url": "https://navan.com/",
+     "what": "Travel booking and expense management",
+     "difference": "Started from corporate travel and added expenses."
+    },
+    {
+     "name": "Expensify",
+     "url": "https://www.expensify.com/",
+     "what": "Expense reports and receipt scanning",
+     "difference": "Long-standing expense tool with its own card."
+    },
+    {
+     "name": "Bill.com (BILL)",
+     "url": "https://www.bill.com/",
+     "what": "Accounts payable and receivable automation",
+     "difference": "Focused on bills and invoices rather than cards."
+    }
+   ]
+  },
+  "pros": [
+   "A genuinely free core plan",
+   "Cards, expenses, bills and accounting in one product",
+   "Heavy use of automation to reduce manual finance work"
+  ],
+  "cons": [
+   "Built for US companies first",
+   "Advanced controls and integrations need Plus or Enterprise"
+  ],
+  "faq": [
+   {
+    "q": "Is Ramp free?",
+    "a": "Yes. Ramp Free costs $0 per user. Ramp Plus is $15 per user a month and Enterprise is custom-priced, per Ramp's pricing page on 15 October 2026."
+   },
+   {
+    "q": "Who founded Ramp?",
+    "a": "Eric Glyman (CEO) and Karim Atiyeh (CTO) founded Ramp in 2019."
+   },
+   {
+    "q": "How much is Ramp worth?",
+    "a": "Ramp announced a $44 billion valuation in June 2026. Bloomberg reported in October 2026 a new raise at about $60 billion pre-money, which Ramp had not confirmed."
+   },
+   {
+    "q": "Can Indian companies use Ramp?",
+    "a": "Ramp has been built for US companies; check its eligibility rules. Its Enterprise plan lists local-currency card issuing in 30+ countries for global companies."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Ramp pricing",
+    "url": "https://ramp.com/pricing"
+   },
+   {
+    "label": "FinTech Futures: Ramp raises $750m at $44bn",
+    "url": "https://www.fintechfutures.com/venture-capital-funding/ramp-raises-750m"
+   },
+   {
+    "label": "FinTech Futures: Ramp reportedly hits $60bn valuation",
+    "url": "https://www.fintechfutures.com/venture-capital-funding/ramp-reportedly-hits-60bn-valuation-in-1.85bn-funding-round"
+   },
+   {
+    "label": "Yahoo Finance / TechCrunch: Ramp after reaching $32B",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/ramp-talks-hit-40b-valuation-231143039.html"
+   },
+   {
+    "label": "Al-Monitor: Karim Atiyeh and Paribus",
+    "url": "https://www.al-monitor.com/originals/2025/07/meet-karim-attiyeh-youngest-arab-american-billionaire-lebanese-origin"
+   }
+  ]
+ }
+}

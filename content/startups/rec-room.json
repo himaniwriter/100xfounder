@@ -1,0 +1,130 @@
+{
+ "slug": "rec-room",
+ "website": "https://recroom.com/",
+ "excerpt": "Rec Room was a free social VR and cross-platform game where players built and shared rooms. It shut down on 1 June 2026; Snap acquired selected assets.",
+ "content": "<p>Rec Room was a free-to-play social game and creation platform, playable in virtual reality headsets and on ordinary screens. Players met in shared rooms, played mini-games such as paintball and quests, and built their own rooms and games with in-game tools, earning money through a token economy. It was one of the best-known social VR platforms and, the company said, reached more than 150 million players and creators over its life.</p><p>Rec Room was founded in 2016. At its peak it was richly funded: PocketGamer.biz reported a $145 million round at a $3.5 billion valuation. Growth did not turn into profit. After laying off roughly half its staff, the company announced in March 2026 that it would close, saying it had never worked out how to make Rec Room a sustainably profitable business because costs always overwhelmed revenue. Token purchases stopped on 1 May 2026, creators stopped earning token rewards after 18 May, and all servers, the rec.net website and the Rec Room Studio tools went offline at noon Pacific time on 1 June 2026. Road to VR, citing GeekWire, reported that Snap acquired selected assets and that some staff joined Specs Inc., Snap's subsidiary working on augmented reality glasses.</p><p>Rec Room can no longer be played or bought, and its website now shows only a holding page, so there is nothing to price. This page is kept as a record of what the platform was. Players who want something similar can look at VRChat, Roblox or Horizon Worlds, which offer comparable social spaces and creator tools.</p><p><em>We have not used Rec Room for this page. It brings together Rec Room's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Social VR game (closed)",
+  "platform": "Was on VR headsets and PC (Steam), among others",
+  "starts_at": "Closed on 1 June 2026",
+  "schema_category": "GameApplication",
+  "summary_short": "Social VR and creation game, shut down on 1 June 2026",
+  "maker": {
+   "name": "Rec Room",
+   "url": "https://recroom.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/471710/header.jpg?t=1780346660",
+    "alt": "Rec Room key art: four cartoon avatars in jackets and hats around the orange Rec Room logo",
+    "credit": "Image: Rec Room, via its Steam store page",
+    "w": 460,
+    "h": 215
+   },
+   {
+    "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/471710/ss_3b8cec2a31e3fa241c2009f0effcae7535c31a09.1920x1080.jpg?t=1780346660",
+    "alt": "Rec Room screenshot: an avatar in a helmet holding a paintball gun behind a hay bale on a sunny outdoor course",
+    "credit": "Image: Rec Room, via its Steam store page",
+    "w": 1920,
+    "h": 1080
+   }
+  ],
+  "use_cases": [
+   "Hanging out with friends in shared virtual rooms (until June 2026)",
+   "Playing user-made and official mini-games",
+   "Building rooms and games with in-game tools",
+   "Earning tokens as a creator"
+  ],
+  "audience": {
+   "fit": [
+    "readers researching the history of social VR"
+   ],
+   "not_fit": [
+    "anyone looking to play: the game closed on 1 June 2026"
+   ]
+  },
+  "pricing": {
+   "intro": "Rec Room closed on 1 June 2026. It had been free to play, with optional token purchases, which stopped on 1 May 2026.",
+   "url": "https://recroom.com/",
+   "plans": [
+    {
+     "name": "Rec Room",
+     "price": "Closed",
+     "detail": "Servers went offline on 1 June 2026"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Reached more than 150 million players, per the company",
+   "Strong creator tools and cross-platform play while it ran"
+  ],
+  "cons": [
+   "Shut down on 1 June 2026",
+   "Never became profitable, the company said"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Rec Room. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "VRChat",
+     "url": "https://hello.vrchat.com/",
+     "what": "Social VR platform",
+     "starts_at": "See its own website",
+     "difference": "The largest remaining social VR world, with user-made avatars and worlds."
+    },
+    {
+     "name": "Roblox",
+     "url": "https://www.roblox.com/",
+     "what": "User-generated game platform",
+     "starts_at": "See its own website",
+     "difference": "Massive cross-platform creation platform, mostly played outside VR."
+    },
+    {
+     "name": "Horizon Worlds",
+     "url": "https://www.meta.com/horizon-worlds/",
+     "what": "Meta's social VR platform",
+     "starts_at": "See its own website",
+     "difference": "Meta's own social and creation space for Quest headsets."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Rec Room shutting down?",
+    "a": "It already has: servers went offline at noon Pacific time on 1 June 2026."
+   },
+   {
+    "q": "Why did Rec Room close?",
+    "a": "The company said it never worked out how to make it sustainably profitable; costs kept exceeding revenue."
+   },
+   {
+    "q": "Who bought Rec Room?",
+    "a": "Snap acquired selected assets, and some staff joined Snap's Specs Inc. subsidiary, according to GeekWire via Road to VR."
+   },
+   {
+    "q": "How many people played Rec Room?",
+    "a": "The company said more than 150 million players and creators."
+   }
+  ],
+  "sources": [
+   {
+    "label": "PocketGamer.biz: Rec Room to shut down",
+    "url": "https://www.pocketgamer.biz/rec-room-to-shut-down-after-failing-to-achieve-profitability-from-150m-players"
+   },
+   {
+    "label": "Road to VR: Rec Room closing, assets reportedly acquired by Snap",
+    "url": "https://roadtovr.com/rec-room-shutdown-snap-acquisition-2026/"
+   },
+   {
+    "label": "GamingOnLinux: Rec Room is shutting down in June",
+    "url": "https://www.gamingonlinux.com/2026/03/virtual-hangout-game-rec-room-is-shutting-down-in-june"
+   },
+   {
+    "label": "Rec Room on Steam",
+    "url": "https://store.steampowered.com/app/471710/Rec_Room/"
+   }
+  ]
+ }
+}

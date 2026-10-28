@@ -1,0 +1,306 @@
+{
+ "slug": "yansu",
+ "ph_url": "https://www.producthunt.com/posts/yansu",
+ "existing_listing_slug": null,
+ "website": "https://yansu.app/",
+ "excerpt": "Yansu is a desktop AI that watches how you work, turns it into knowledge and builds automations without prompts. Mac, Windows, Linux; free plan, Pro $20.",
+ "content": "<p>Yansu is a desktop AI from Isoform Inc. that tries to work without being asked. It observes your desktop activity through screenshots and your messaging apps, distils what it sees into structured knowledge about how you work, and then offers handoffs and automations based on the patterns it finds. Examples on its site include a daily digest that pulls updates from Jira, Notion and Sheets, monitoring AI spend across providers, and drafting tickets from meeting action items.</p><p>It can also use the computer in the background with a virtual cursor of its own, opening apps, filling forms and filing tickets without taking over your mouse. Yansu runs on macOS 13 or later, Windows 10 or later and Linux (Ubuntu 20.04+), connects to Slack, Microsoft Teams, Feishu, Discord, Telegram, WhatsApp and WeChat, and picks a model per task from Anthropic, OpenAI and Google. Isoform says observations, memory and automations are stored locally on your device, nothing leaves it without your permission, your data is not used for training, and it holds SOC 2 Type II and ISO 27001 certifications; a maker added on Product Hunt that sensitive details are redacted on the device and only redacted, structured context goes to the cloud model.</p><p>Its Product Hunt makers include Bo, who describes himself as one of its builders, and yetone. It launched on Product Hunt on 25 May 2026 and finished #3 for the day with 338 upvotes and 80 comments. There is a free plan; paid plans are Pro ($20 a month), Studio ($100) and Max ($200), with Enterprise adding shared team memory and SSO. Yansu has changed direction twice. Isoform introduced it in November 2025 as 'the serious coding platform'; at its May 2026 Product Hunt launch it was 'AI that learns how you work and turns it into software', spotting repeated tasks and turning them into apps and automations; and its site now describes a proactive desktop AI that builds memory, hands off tasks and runs automations, including background computer use.</p><p><em>We have not tested Yansu ourselves. This page brings together its official site, Isoform's privacy policy, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Productivity",
+  "platform": "Desktop app for Mac, Windows and Linux",
+  "os": "macOS 13+ (Apple silicon and Intel), Windows 10+, Linux (Ubuntu 20.04+, x64 and ARM64)",
+  "starts_at": "Free; Pro $20/month",
+  "schema_category": "ProductivityApplication",
+  "summary_short": "Desktop AI that learns how you work and builds automations without prompts",
+  "use_cases": [
+   "A daily digest that combines updates from Jira, Notion and Sheets",
+   "Monitoring AI spend across providers",
+   "Drafting tickets from meeting action items",
+   "Capturing team knowledge and decisions as you work",
+   "Filling forms and filing tickets in the background without taking your cursor"
+  ],
+  "audience": {
+   "fit": [
+    "repeat the same desktop routines and don't want to write automations yourself",
+    "want an assistant that keeps its memory on your own device",
+    "work across chat apps such as Slack, Teams, Feishu or WeChat"
+   ],
+   "not_fit": [
+    "are not comfortable with software that takes screenshots of your work",
+    "want to control exactly when AI acts: Yansu is designed to act without prompts",
+    "need many automations on the free plan, which allows about 2"
+   ]
+  },
+  "pricing": {
+   "intro": "Yansu's plans differ by how many handoffs, automations and memories they allow (the site gives approximate numbers). Prices are from yansu.app, in US dollars per month.",
+   "url": "https://yansu.app/#pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "About 2 handoffs, 2 automations and 2 memories"
+    },
+    {
+     "name": "Pro",
+     "price": "$20/month",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "About 5 handoffs, 5 automations and 50 memories"
+    },
+    {
+     "name": "Studio",
+     "price": "$100/month",
+     "amount": 100,
+     "currency": "USD",
+     "detail": "About 25 handoffs, 25 automations and 250 memories (marked best value)"
+    },
+    {
+     "name": "Max",
+     "price": "$200/month",
+     "amount": 200,
+     "currency": "USD",
+     "detail": "About 50 handoffs, 50 automations and 500 memories"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Shared team memory, unlimited members, team management, SSO/SAML, custom retention and compliance, dedicated account manager"
+    }
+   ]
+  },
+  "alternatives": {
+   "intro": "Other ways to capture what you do on screen or automate routine work. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Screenpipe",
+     "url": "https://screenpi.pe/",
+     "what": "Records your screen and audio locally and shares context with AI tools",
+     "starts_at": "Free; Basic $21/month",
+     "difference": "Gives you a searchable personal history to feed into Claude or Codex; Yansu goes further and proposes and runs automations itself."
+    },
+    {
+     "name": "Zapier",
+     "url": "https://zapier.com/",
+     "what": "Workflow automation across thousands of apps, with AI agents",
+     "starts_at": "Free; Professional from $19.99/month",
+     "difference": "You design the automations; Yansu tries to spot them from how you work."
+    }
+   ]
+  },
+  "pros": [
+   "Runs on Mac, Windows and Linux, including ARM",
+   "Memory, knowledge and automations stay on your device, per Isoform",
+   "Background computer use without taking over your cursor",
+   "Free plan to try it"
+  ],
+  "cons": [
+   "Relies on screenshots of your work, which some teams will not allow",
+   "Plan limits are given only as approximate numbers",
+   "The product has changed direction since its first release as a coding platform"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/yansu",
+   "x": {
+    "none": "We found no recent posts about Yansu's proactive desktop app on X yet.",
+    "search_url": "https://x.com/search?q=yansu%20isoform&f=live",
+    "profile_url": "https://x.com/isoformai"
+   },
+   "quotes": [
+    {
+     "text": "how do you handle privacy and user control while continuously observing screens and understanding intent?",
+     "reply": "Local text and vision models redact passwords, tokens, contact details, payment and identity data and protected app windows on the device; the cloud model only receives redacted, structured context.",
+     "author": "Abdul Rehman",
+     "url": "https://www.producthunt.com/products/yansu?comment=5399115"
+    },
+    {
+     "text": "how do you prevent Yansu from becoming overbearing or making incorrect assumptions about user intent without explicit input?",
+     "reply": "It asks permission before major decisions and explains why, and a nightly 'dreaming' step reflects on the day's learning.",
+     "author": "Imogen Wallace",
+     "url": "https://www.producthunt.com/products/yansu?comment=5399204"
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Yansu?",
+    "a": "A desktop AI from Isoform that observes how you work, turns it into structured knowledge, and builds handoffs and automations without you having to prompt it."
+   },
+   {
+    "q": "Has Yansu changed since it launched?",
+    "a": "Yes. Isoform introduced Yansu in November 2025 as a coding platform. At its May 2026 Product Hunt launch it was pitched as AI that learns how you work and turns it into apps and automations. Its website now describes a proactive desktop AI that observes your work and acts on it with handoffs, automations and background computer use."
+   },
+   {
+    "q": "How much does Yansu cost?",
+    "a": "There is a free plan. Pro is $20 a month, Studio $100 and Max $200, each allowing more handoffs, automations and memories. Enterprise is priced on request."
+   },
+   {
+    "q": "Is my data private?",
+    "a": "Isoform says observations, memory and automations are stored on your device and your data is not used for training, and it states SOC 2 Type II and ISO 27001 certification. On Product Hunt a maker added that sensitive details are redacted on the device first and the cloud model receives only redacted, structured context, never raw screens."
+   },
+   {
+    "q": "Which platforms does it support?",
+    "a": "macOS 13+ on Apple silicon and Intel, Windows 10+, and Linux (Ubuntu 20.04+) on x64 and ARM64."
+   },
+   {
+    "q": "Do I need to know how to code?",
+    "a": "No. Yansu's FAQ says no programming or technical background is required."
+   },
+   {
+    "q": "What are the alternatives to Yansu?",
+    "a": "Screenpipe for a local record of your screen that AI tools can use, or Zapier for automations you design yourself."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Yansu official site",
+    "url": "https://yansu.app/"
+   },
+   {
+    "label": "Isoform privacy policy",
+    "url": "https://isoform.ai/privacy-policy"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/yansu"
+   },
+   {
+    "label": "Isoform on X",
+    "url": "https://x.com/isoformai"
+   },
+   {
+    "label": "Screenpipe pricing",
+    "url": "https://screenpi.pe/pricing"
+   },
+   {
+    "label": "Zapier pricing",
+    "url": "https://zapier.com/pricing"
+   },
+   {
+    "label": "Isoform on X: Yansu as an AI coding platform (November 2025)",
+    "url": "https://x.com/i/status/1986101253903208829"
+   },
+   {
+    "label": "Isoform blog: Introducing Yansu, the serious coding platform",
+    "url": "https://isoform.ai/blog/introducing-yansu-the-serious-coding-platform"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/yansu/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 3,
+   "votes": 338,
+   "comments": 80,
+   "followers": 701,
+   "launched": "2026-05-25",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Bo",
+    "role": "Builder of Yansu (Isoform)",
+    "url": "https://www.producthunt.com/@bozhao"
+   },
+   {
+    "name": "Jeremy Xu",
+    "role": "Product designer",
+    "url": "https://www.producthunt.com/@jeremy_xu3"
+   },
+   {
+    "name": "Rita L",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@taro666"
+   },
+   {
+    "name": "yetone",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@yetone"
+   }
+  ],
+  "maker": {
+   "name": "Bo",
+   "url": "https://www.producthunt.com/@bozhao"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/3ce3774a-1e42-48b8-9e74-d89b30f42baf.png?auto=format&fit=max&w=1400",
+    "alt": "Yansu graphic 'Other AI waits. Yansu ships.' with its desktop chat window and small generated tools such as a currency converter and Pomodoro timer",
+    "credit": "Image: Yansu on Product Hunt",
+    "w": 6344,
+    "h": 3968
+   },
+   {
+    "url": "https://ph-files.imgix.net/3842f399-fd04-4fc6-b26b-046da1075664.png?auto=format&fit=max&w=1400",
+    "alt": "Yansu graphic 'Every problem deserves its own app' showing a shelf of generated mini-apps called crystals",
+    "credit": "Image: Yansu on Product Hunt",
+    "w": 6344,
+    "h": 3968
+   },
+   {
+    "url": "https://ph-files.imgix.net/6ddce43b-224d-4390-9e66-3029f3d5b4dd.png?auto=format&fit=max&w=1400",
+    "alt": "Yansu daily activity view with active time, activity by hour, top applications and a summary of the day's topics",
+    "credit": "Image: Yansu on Product Hunt",
+    "w": 6344,
+    "h": 3968
+   },
+   {
+    "url": "https://ph-files.imgix.net/958a9c67-abcc-477c-b203-18d2e7adc5da.png?auto=format&fit=max&w=1400",
+    "alt": "Yansu scheduled automation that searches for software release news each morning and sends a digest via Slack",
+    "credit": "Image: Yansu on Product Hunt",
+    "w": 6344,
+    "h": 3968
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Bo, one of Yansu's builders, describes a vision of bespoke software at scale: software tailored to each person that changes as they do. The obstacles, he says, are that most people lack the time to build tools for themselves, and those who do must keep tinkering to get them right.",
+    "Yansu's answer is to reverse the usual relationship, so the software acts and the person reacts. It watches your screen to understand what you are trying to do without being told, builds and refines knowledge about you, and proactively creates tools, takes over tasks through Hand-Off and schedules automations."
+   ],
+   "attribution": "Bo, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/yansu?comment=5397958"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "The idea of software that changes with you",
+     "Scheduled automations based on daily patterns"
+    ],
+    "asked": [
+     "How privacy works while it observes the screen (sensitive data is redacted on the device before anything reaches the cloud model, the makers say)",
+     "What happens when a Hand-Off does the wrong task (it takes a conservative approach and hands over only when there is little ambiguity or the action is very repetitive)",
+     "How long before the first useful automation (usually after a task is repeated a few times, within a day or a few days)",
+     "Whether it learns across users (not today; a team feature is planned)"
+    ],
+    "criticised": [
+     "A commenter pointed out that inferring intent is probabilistic, so some hand-offs will confidently do the wrong task"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Observing my screen and inferring intent is the impressive part, but inference is probabilistic.",
+     "author": "Artem Fedorovich",
+     "url": "https://www.producthunt.com/products/yansu?comment=5399306"
+    },
+    {
+     "text": "the idea of software drifting with you is powerful.",
+     "author": "James Carter",
+     "url": "https://www.producthunt.com/products/yansu?comment=5399226"
+    },
+    {
+     "text": "how do you prevent Yansu from becoming overbearing or making incorrect assumptions about user intent without explicit input?",
+     "author": "Imogen Wallace",
+     "url": "https://www.producthunt.com/products/yansu?comment=5399204"
+    }
+   ]
+  },
+  "video_url": "https://www.youtube.com/watch?v=0uuIulWc3g0",
+  "video_title": "Yansu launch video"
+ }
+}

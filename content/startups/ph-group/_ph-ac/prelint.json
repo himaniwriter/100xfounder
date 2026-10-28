@@ -1,0 +1,328 @@
+{
+ "input": "https://www.producthunt.com/posts/prelint",
+ "final_url": "https://www.producthunt.com/products/prelint?launch=prelint",
+ "launch": {
+  "slug": "prelint",
+  "name": "Prelint",
+  "tagline": "Prevent product drift in AI-written code",
+  "featuredAt": "2026-07-29T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "1",
+  "points": 579,
+  "commentsCount": 134,
+  "pricingType": "free_options",
+  "description": "AI writes your code at 10× speed. Prelint makes sure it's the right code - it reviews every PR against your ADRs, docs and past decisions, and catches product drift before it ships.\n\nOn teams using several AI reviewers, ~40% of the issues fixed before merge are caught by Prelint.",
+  "makers": [
+   {
+    "name": "Wojtek Szkutnik",
+    "username": "wojtekszkutnik",
+    "headline": "founder at @prelint_ai"
+   },
+   {
+    "name": "Irka Pawlowski",
+    "username": "irka_pawlowski",
+    "headline": "CMO, co-founder, growth @ Prelint"
+   },
+   {
+    "name": "Krzysztof Kulig",
+    "username": "krzysztof_kulig",
+    "headline": "CTO & co-founder @ prelint"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "452c6376-5262-4400-929e-0b9befe4b96e.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "97a72d41-0fd9-4d8d-95f7-33b5972480d7.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "83cfbb87-d5e9-4690-a5fd-28316a8c2b1d.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "a1585687-af71-4e6a-addf-66453fb07920.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/u-ZZTCxKkrc"
+   }
+  ],
+  "links": [
+   "prelint.com",
+   "twitter.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "weekly",
+    1
+   ],
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "Prelint",
+  "slug": "prelint",
+  "tagline": "Prevent product drift in AI-written code",
+  "description": "AI writes your code at 10× speed. Prelint makes sure it's the right code - it reviews every PR against your ADRs, docs and past decisions, and catches product drift before it ships. On teams using several AI reviewers, ~40% of the issues fixed before merge are caught by Prelint.",
+  "websiteUrl": "https://prelint.com",
+  "reviewsCount": 3,
+  "reviewsRating": 5,
+  "followersCount": 1218,
+  "twitterUrl": "https://twitter.com/prelint_ai",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5621153",
+   "depth": 0,
+   "author": "Wojtek Szkutnik",
+   "username": "wojtekszkutnik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hi Product Hunt, I’m Wojtek, one of the founders of Prelint. Coding agents now produce more code than most teams can properly review. The obvious risk is bad code, but the more dangerous risk is good code that quietly builds the wrong product. We saw this repeatedly in large production projects when we started using agents. A change would clear technical review, pass CI, yet still skip the transactional outbox pattern, introduce an unapproved dependency, change a permission rule or invent a business requirement. Nobody had made that decision, but it was now part of the product. Prelint catches these decisions before they ship. It reads each change alongside your specifications, tickets and existing product context, then explains what the agent decided, what the consequences are and how difficult the choice will be to reverse. Your team can approve, correct or replace the decision, and Prelint carries that context into the next piece of work. If you work with ADRs, our clients say it is the best tool they found for enforcing them with agents. On teams running Prelint alongside other AI reviewers, ~40% of the review comments that actually get fixed come from Prelint. We started in Gi"
+  },
+  {
+   "id": "5692329",
+   "depth": 1,
+   "author": "Martin Herran",
+   "username": "martin_herran",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@wojtekszkutnik &nbsp;Awesome! I've actually been having this conversation on social media these past few days. In my opinion, human code review should be gradually replaced by tools like this. I think a good methodology would be to gather functional requirements with their different scenarios and ensure that the tests fully cover them. Have you considered this as a possible workflow for the tool?"
+  },
+  {
+   "id": "5693011",
+   "depth": 2,
+   "author": "Wojtek Szkutnik",
+   "username": "wojtekszkutnik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@martin_herran &nbsp;Prelint is one of the best tools out there for helping your agents structure your functional requirements based on your startup's ontology :)"
+  },
+  {
+   "id": "5690107",
+   "depth": 0,
+   "author": "Jernej Jan Kočica",
+   "username": "jernej_jan_kocica",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The decisions I never see in an ADR are the ones that were made to a customer. Support creates them constantly. Someone asks when the renewal reminder goes out, support answers before the charge, and that is now a promise a few hundred people are holding you to. It lives in a support thread and nowhere an agent can read. A PR that moves that email passes every doc in the repo and still contradicts what those people were told. The expensive kind too, because the customers already know the old answer. Does your ingestion pull anything from the support side, or is ground truth engineering artifacts only?"
+  },
+  {
+   "id": "5690620",
+   "depth": 1,
+   "author": "Wojtek Szkutnik",
+   "username": "wojtekszkutnik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "This is super insightful, thanks Jernej! We've built for it but haven't had a client approach it from this angle YET. I would reverse the workflow: ideally, the tool support uses like Intercom would use our MCP to understand how the product works, then suggest the right answer to the support team from the get-go. BUT I can imagine sometimes the feature is not there yet but the customer support message is a signal - sort of \"we'll do our best to make it happen\". We don't integrate directly with support tools yet (my original thinking was that very rarely support would include any authoritative decisions) but the moment this lands in any tools we integrate with (anything Atlassian, Notion, Linear) we note it as a speculative remark. Something that doesn't drive the product but a small signal in case a decision is being made in this area by an agent."
+  },
+  {
+   "id": "5692884",
+   "depth": 2,
+   "author": "Jernej Jan Kočica",
+   "username": "jernej_jan_kocica",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@wojtekszkutnik &nbsp;Agreed on the reverse direction. Support asking the ledger at answer time beats catching it in a PR a month later. One nuance on speculative. A Slack remark is a wish, a sent support answer is already an obligation. Docs record what we intend, support records what we promised, and the promise is the one with people holding you to it. Can your ledger hold a decision whose source is an answer that already went out, or does everything enter as a proposal?"
+  },
+  {
+   "id": "5690627",
+   "depth": 0,
+   "author": "Rick Wise",
+   "username": "rickwise",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The \"decision ledger, not a code reviewer\" framing is the part I'd have paid for a year ago. One gap I'd want to understand. Every ingestion source you've described is an artefact of a team — Slack, meetings, tickets, ADRs. I run a one-person company and I have none of those. Nine months of architectural decisions exist only in AI chat transcripts and in commit messages I wrote to myself. There's no PR either; changes go straight to main. So: is the CLI a first-class path for the no-PR case, or a fallback for the GitHub flow? And is there any way to seed the ledger from conversation history rather than from repo artefacts? The decisions I most want caught are the ones I made at 11pm in a chat window and had forgotten I'd made by the following week."
+  },
+  {
+   "id": "5692845",
+   "depth": 1,
+   "author": "Wojtek Szkutnik",
+   "username": "wojtekszkutnik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Good questions Rick! I think if you worked with PRs (for granularity and parallelization, deployment reasons) you would find a lot of value from Prelint without the artifacts. My favourite thing when I was a one man show starting the coding on Prelint was being able to get a good grasp on all decisions the agents were making on my behalf in these changes. A lot of solo developers are moving to PR-driven workflows also because they have sentry/infrastructure monitoring agents that get fixes ready when they sleep - in this case Prelint is excellent because it significantly improves the feedback loop - you wake up to a better PR. So so far I've been betting on this. You can definitely use the CLI as an aid for your agents - this will help with the context but less with the enforcement. I would be super interested in understanding your workflow and seeing how Prelint fits into the picture. It's definitely not our standard use case and maybe this is what makes it so interesting for me. If you would be so kind to drop me a note at wojtek(at)prelint.com I would love to jump on a call early next week to explore."
+  },
+  {
+   "id": "5693054",
+   "depth": 2,
+   "author": "Jacob Sherwood",
+   "username": "jacob_sherwood",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@wojtekszkutnik &nbsp;I was going to come here with similar questions. Many of my projects are solo. This is all very helpful and I plan to try out Prelint!"
+  },
+  {
+   "id": "5693723",
+   "depth": 3,
+   "author": "Wojtek Szkutnik",
+   "username": "wojtekszkutnik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jacob_sherwood &nbsp;Please do and feel free to e-mail me anytime for an onboarding session or questions! :)"
+  },
+  {
+   "id": "5693261",
+   "depth": 0,
+   "author": "Chris Mongeon",
+   "username": "cmvermont",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Super interesting. I'm one person shipping with Claude Code daily. I had wrongly assumed drift was a coordination problem: several people, nobody reading each other's decisions. But what i found is that my own documented decisions go stale against my own code, and then they propagate. Two from this month. A task in my tracker carried an explicit \"do not do X without first verifying Y\" warning. I wrote the checklist for that exact task without reading its notes, and caught it only when I went to close the task afterward. Separately, my canonical brand doc described a logo treatment that the actual shipped asset files contradicted. The doc was wrong for weeks and seeded the wrong version into an outgoing email template before I noticed. Neither was an agent going rogue. Both were correct-looking work built on a confidently stated stale premise. So my question: your supersession detection sounds aimed at documents contradicting each other. Does it handle a document contradicting the artifact it describes? The rotten context that actually cost me was doc versus reality, not doc versus doc, and the docs were the ones asserting loudest."
+  },
+  {
+   "id": "5693588",
+   "depth": 1,
+   "author": "Wojtek Szkutnik",
+   "username": "wojtekszkutnik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Thanks, Chris! Your case is a textbook example of what Prelint does. But in all honesty, you'll also find a lot of value in our Decision Review as such - sometimes it's not about contradictions, just helps you understand and object to decisions that the agents made on your behalf."
+  },
+  {
+   "id": "5693432",
+   "depth": 0,
+   "author": "Kenneth John Saracho",
+   "username": "cannetjam",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "\"Good code that quietly builds the wrong product\" is uncomfortably specific to something I have sitting in my own guidelines file right now: a component that fetches data directly instead of going through a hook, flagged months ago as a known violation, still not fixed because it passed review and works fine. That's the exact gap you're describing: nothing was broken, so nothing forced the conversation. Question: when Prelint flags a decision, does it also catch pre-existing drift already merged, or only new changes in the current PR?"
+  },
+  {
+   "id": "5693591",
+   "depth": 1,
+   "author": "Wojtek Szkutnik",
+   "username": "wojtekszkutnik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Thanks, Kenneth - good question! In your specific case it will flag it whenever you have a change touching this file/module or ADR."
+  },
+  {
+   "id": "5693699",
+   "depth": 0,
+   "author": "Anuj",
+   "username": "getosmo",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The decision ledger is the right object, and it inherits the failure mode of every artifact that becomes authoritative: the entries nobody re-checks are the ones everybody trusts most. We hit the small version of this. A comment in our planner said the model was gpt-4o long after it had been switched to Haiku. Nothing broke, tests passed, the code was correct, and every human and every agent that read that file afterwards inherited a decision no one had made. The wrongness was invisible precisely because the artifact was doing its job. Weighting by authority makes this sharper rather than softer. The entries that most need an expiry are exactly the ones the weighting protects, and an agent reading your ledger will trust it more than it trusts the code, which is the correct behaviour right up until the entry is stale. So: does an entry ever get demoted, and what evidence demotes it? Ours are append-only, never deleted, because deleting a rule reopens the bug class it was written to prevent, so a retired entry leaves a tombstone pointing at the audit that killed it. The ledger records the deaths, not just the decisions."
+  },
+  {
+   "id": "5696643",
+   "depth": 1,
+   "author": "Wojtek Szkutnik",
+   "username": "wojtekszkutnik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Thanks Anuj! We never delete them, but they are superseded when: 1. The source is superseded (new code or new docs overrides the original anchor) 2. There is a very clear decision to override or supersede a prior decision (eg a product call says: \"I know we've been doing X so far but from today onwards we're doing Y and it's final\" 3. There is a clear timeline attached to it eg \"Until Sep 20 we need to support feature X, afterwards we are free to phase it out\""
+  },
+  {
+   "id": "5685428",
+   "depth": 0,
+   "author": "Ramish Zaidi",
+   "username": "ramish_saje",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "My honest question: how much setup does this need before it's useful? A lot of \"review your PRs against your docs\" tools sound great until you realize the doc structure has to be near-perfect first."
+  },
+  {
+   "id": "5685614",
+   "depth": 1,
+   "author": "Wojtek Szkutnik",
+   "username": "wojtekszkutnik",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Thanks for the thoughtful question, Ramish! My honest answer: it has a big impact from the start but it compounds over time. We're a different animal to most reviewers - we think of ourselves as a \"decision ledger\" ultimately more than \"check code vs docs\" - I honestly think most technical code reviewers that can do it will get commoditized by the next generations of the frontier models - same as all the \"company brain\" startups. With us the main advantage is that it's not a \"local skill run\" that semantically checks your code against context but we construct a whole \"decision ledger\" describing your businesses ontology. Why it's helpful from the start: There are a lot of things that our pipeline understands from your code, built in docs and behaviors - eg we will understand your compliance requirements even if you don't specifically mention HIPAA, SOC or ISO, we extract code design patterns that we later enforce. Prelint also understands the gravity and authority of statements - so compared to a simple grep job it can weigh decisions made in different contexts differently - eg it will put a different weight on decisions made by agents vs humans. We do provide some technical code f"
+  }
+ ]
+}

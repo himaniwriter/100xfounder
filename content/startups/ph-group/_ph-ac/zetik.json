@@ -1,0 +1,251 @@
+{
+ "input": "https://www.producthunt.com/posts/zetik",
+ "final_url": "https://www.producthunt.com/products/zetik?launch=zetik",
+ "launch": {
+  "slug": "zetik",
+  "name": "Zetik",
+  "tagline": "A chief of staff in your pocket",
+  "featuredAt": "2026-08-15T00:01:00-07:00",
+  "dailyRank": "4",
+  "weeklyRank": "38",
+  "points": 171,
+  "commentsCount": 11,
+  "pricingType": "free_options",
+  "description": "Presidents and CEOs get strategy teams. You get… doomscrolling? Meet Zetik: an AI agent team running a full intelligence cycle — collect, filter, analyze, brief — across podcasts, papers, code, tweets &amp; news, 24/7. It tracks whatever matters to you, in near real time.",
+  "makers": [
+   {
+    "name": "Nathan",
+    "username": "nathan_ph",
+    "headline": "AI product & growth"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "1b767007-e72a-4d60-8646-0d96dd9ec777.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "2cef00fb-558c-461e-b97a-1048f8c7451f.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "21b8871c-5a23-4ac8-ab37-383732cb0663.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "a0841dd3-1661-46e6-9471-4107ab1fab3a.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   },
+   {
+    "uuid": "531bdd04-157e-437e-8ed2-af3ac7b916b1.png",
+    "type": "image",
+    "w": 1270,
+    "h": 760,
+    "video": null
+   }
+  ],
+  "links": [
+   "www.zetik.com",
+   "apps.apple.com",
+   "play.google.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    4
+   ]
+  ]
+ },
+ "product": {
+  "name": "Zetik",
+  "slug": "zetik",
+  "tagline": "A chief of staff in your pocket",
+  "description": "Presidents and CEOs get strategy teams. You get… doomscrolling? Meet Zetik: an AI agent team running a full intelligence cycle — collect, filter, analyze, brief — across podcasts, papers, code, tweets & news, 24/7. It tracks whatever matters to you, in near real time.",
+  "websiteUrl": "https://www.zetik.com",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 421,
+  "iosUrl": "https://www.producthunt.com/r/J4KJAIOMPYDNN4",
+  "androidUrl": "https://www.producthunt.com/r/VO3KBNUX7N5AVQ",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/1b767007-e72a-4d60-8646-0d96dd9ec777.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/2cef00fb-558c-461e-b97a-1048f8c7451f.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/21b8871c-5a23-4ac8-ab37-383732cb0663.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/a0841dd3-1661-46e6-9471-4107ab1fab3a.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/531bdd04-157e-437e-8ed2-af3ac7b916b1.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5788651",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "I do a version of this manually for work - scanning a lot of early-stage stuff fast - and the part I'd worry about with \"the 1-2 things worth knowing find me, the other 98 never do\" is that the best finds I've had were never things I already knew to track. they were adjacent to my interests, not inside them. if Zetik's filtering works off trackers I explicitly set up, how does it surface something genuinely outside those - a new category I didn't know existed yet - versus getting really good at recall on topics I already told it mattered"
+  },
+  {
+   "id": "5789143",
+   "depth": 1,
+   "author": "Nathan",
+   "username": "nathan_ph",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan &nbsp; This is the sharpest critique of intent-based filtering, and honestly the fair one. Pure recall on declared topics would just make you very well-informed about yesterday's interests. Our take: the problem with attention-driven feeds isn't that they show you unexpected things — it's that you can't tell genuine serendipity from engagement bait. So we don't try to eliminate discovery; we separate it and make it legible. Trackers are the recall layer — guaranteed coverage of what you've declared matters. But the engine isn't confined to them. It's also scanning at the level of broad directions: mining what's emerging in general — new categories, shifts, potential opportunities — including things that don't map to any topic you've set up. That surfaces in Explore, which deliberately matches your direction of interest rather than your exact topics: if you track AI infrastructure, you might see something forming in adjacent territory you'd never have named as a tracker — which is exactly where you said your best finds come from. If something there earns a promotion, it becomes a tracker; if not, it never pollutes your core feed. We're not claiming an algorithm knows your "
+  },
+  {
+   "id": "5789586",
+   "depth": 2,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@nathan_ph &nbsp;honestly it's not that deliberate - no promotion pipeline, just a gut check every few days on whether something I bookmarked \"adjacent\" actually earned a real look or just felt novel in the moment. the failure mode I watch for is the opposite of yours: I'll flag something as a new category and then never revisit it, so it just sits there feeling like coverage without ever being checked against anything. the Explore-to-tracker promotion path you described is basically the fix for that - it forces a decision point instead of letting adjacent stuff pile up unexamined. I might actually steal that structure for my own list."
+  },
+  {
+   "id": "5783196",
+   "depth": 0,
+   "author": "Nathan",
+   "username": "nathan_ph",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "👋 Hey Product Hunt! I'm Nathan, the builder of Zetik. Honest origin story: I hunt for quality information every day — and still miss things that matter. Out of every 100 posts I scroll, maybe 1–2 are actually worth my time. And the signal is everywhere. A story starts in the news, the best take is on X, the real discussion is on Reddit, the technical proof is on GitHub or arXiv, and the best explanation might show up in a podcast three days later. Piecing it all together is a part-time job. Staying informed shouldn't depend on how much time you have to scroll. Then it clicked: presidents and CEOs solved this problem a long time ago. They don't read everything themselves. They have staff who monitor the world, kill the noise, connect the dots, and walk in with a brief. It's 2026. I use coding agents every day. Why shouldn't everyone have an information agent? So we built Zetik — your own chief information staff. 🎙️ Tell it what matters to you. Say it out loud or type it in. Zetik spins up a tracker and continuously follows the web for you — collecting, cross-checking, analyzing, and briefing you on what actually matters. 📡 It follows the signal, not just the source. X, Reddit, YouTu"
+  },
+  {
+   "id": "5792457",
+   "depth": 1,
+   "author": "Maksym Shcherbakov",
+   "username": "maksym_shcherbakov1",
+   "ai": "High",
+   "score": null,
+   "badges": [],
+   "text": "@nathan_ph &nbsp; sorry mb Im not in context, but what's really different between GPT scheduled task and your app?"
+  },
+  {
+   "id": "5789037",
+   "depth": 0,
+   "author": "Power Valsha",
+   "username": "power_valsha",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "This reminds me of @NBot , I have been using it for around 6 months. How Zetik works different from Nbot?"
+  },
+  {
+   "id": "5789149",
+   "depth": 1,
+   "author": "Nathan",
+   "username": "nathan_ph",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@power_valsha &nbsp;Fair question! Main difference: NBot blends everything into one curated feed. Zetik keeps layers separate — trackers guarantee your declared topics, trusted sources can stay unfiltered, and Explore matches your direction of interest, not literal topics, so new categories can still find you."
+  },
+  {
+   "id": "5787745",
+   "depth": 0,
+   "author": "Merry",
+   "username": "ruhezhou",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Usually skeptical of 'info agent' launches, but tracking the signal across formats (especially audio to text) instead of just RSS feeds makes a ton of sense. Setting up my first topic now!"
+  },
+  {
+   "id": "5788537",
+   "depth": 1,
+   "author": "Nathan",
+   "username": "nathan_ph",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ruhezhou &nbsp;Exactly the bet we made — so much signal lives in podcasts and video that never hits a feed. Would love to hear how your first topic goes!"
+  },
+  {
+   "id": "5787475",
+   "depth": 0,
+   "author": "Justin Jincaid",
+   "username": "justin2025",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "I like the idea. I was skeptical at first, but the custom tracker feature works really well for keeping an eye on industry updates I care about. It runs in the background and keeps me posted without constant manual searches. Will leave a review after a few days."
+  },
+  {
+   "id": "5787499",
+   "depth": 1,
+   "author": "Nathan",
+   "username": "nathan_ph",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@justin2025 &nbsp;Thank you so much for the feedback! I'm thrilled to hear the custom tracker is saving you time. Take your time testing it out—looking forward to your review."
+  }
+ ]
+}

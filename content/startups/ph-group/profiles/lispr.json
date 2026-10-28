@@ -1,0 +1,135 @@
+{
+ "slug": "lispr",
+ "ph_url": "https://www.producthunt.com/products/lispr",
+ "existing_listing_slug": null,
+ "website": "https://lispr.ai/",
+ "excerpt": "Lispr is push-to-talk dictation and translation for Mac and Windows: hold a key, speak, and the text lands at your cursor in any app. Free with 60 minutes a week; Pro $79 a year or $7.99 a month. Privacy, pricing and alternatives.",
+ "content": "<p>Lispr is a voice dictation app for macOS and Windows. You hold a key, speak and let go, and your words are typed wherever the cursor is: a chat, an email, a code editor, a browser field or a terminal. It recognises about 99 languages and follows you if you switch language mid-sentence. Holding a second, translation key while you speak makes Lispr type a translation instead, into any of 32 languages. Lispr says the median time from releasing the key to text on screen is about 0.35 seconds for dictation and 0.7 seconds for translation.</p><p>The microphone stays off until you hold the key. According to Lispr's press kit, audio is transcribed and then discarded, no recording is kept on a server by default and none of it is used to train a model; your personal vocabulary and dictation history are stored on your device. The free plan needs no account and includes 60 dictation minutes a week; Lispr Pro removes the cap and adds AI formatting for paragraphs and lists.</p><p>Lispr is built by Codebridge Technology, Inc., a software company founded in 2021 and led by co-founders Konstantin Karpushin (CEO) and Myroslav Budzanivskyi (CTO). It launched on Product Hunt on 9 July 2026 and finished #5 for the day with 238 upvotes and 56 comments.</p><p><em>We have not tested Lispr ourselves. This page brings together Lispr's website, pricing, about and press pages, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Voice dictation",
+  "platform": "Mac and Windows",
+  "os": "macOS 11+ (Apple silicon and Intel), Windows 10+",
+  "starts_at": "Free (60 min/week); Pro $79/year or $7.99/month",
+  "schema_category": "ProductivityApplication",
+  "summary_short": "Push-to-talk dictation and translation that types at your cursor in any app",
+  "maker": {"name": "Konstantin Karpushin", "url": "https://www.producthunt.com/@konstantin_karpushin1"},
+  "team": [
+   {"name": "Konstantin Karpushin", "role": "Co-founder and CEO", "url": "https://www.producthunt.com/@konstantin_karpushin1", "photo": "https://lispr.ai/press/assets/konstantin-karpushin.jpg", "photo_credit": "Photo: Lispr", "photo_source_type": "company_site"},
+   {"name": "Myroslav Budzanivskyi", "role": "Co-founder and CTO", "url": "https://www.producthunt.com/@myroslav_budzanivskyi", "photo": "https://lispr.ai/press/assets/myroslav-budzanivskyi.jpg", "photo_credit": "Photo: Lispr", "photo_source_type": "company_site"},
+   {"name": "Nelli Kovalchuk", "role": "Marketing", "url": "https://www.producthunt.com/@nelli_kovalchuk"}
+  ],
+  "ph": {"rank": 5, "votes": 238, "comments": 56, "followers": 573, "launched": "2026-07-09", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/84b633c6-f72a-4da6-b849-8379a459cbf7.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160, "credit": "Image: Lispr via Product Hunt", "alt": "Lispr graphic 'Talk. It types itself. In any language.'"},
+   {"url": "https://ph-files.imgix.net/2b6c196c-e993-4ea3-9fe6-8c770a6b35eb.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160, "credit": "Image: Lispr via Product Hunt", "alt": "Lispr typing a dictated reply into an email while the Option key is held"},
+   {"url": "https://ph-files.imgix.net/acf7a993-7467-470c-ba7f-1b32f5960bbf.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160, "credit": "Image: Lispr via Product Hunt", "alt": "Lispr dictation history window and menu-bar controls"},
+   {"url": "https://ph-files.imgix.net/4bf228e5-3bec-4125-a2f6-7a22216f5eeb.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160, "credit": "Image: Lispr via Product Hunt", "alt": "Lispr dictation language menu with automatic detection and a long list of languages"}
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Konstantin Karpushin says he was Lispr's first user. His day is spent in Claude Code sessions, client emails and Teams threads, and he found that dictating rather than typing let him give AI tools far more context. The tools he tried needed large model downloads, accounts, subscriptions or were too slow, so the Codebridge team built their own.",
+    "Translation keys came from the team's own life as a Ukrainian company working in English with clients, with many staff living abroad in a third language. He highlighted the 346 ms median latency, the small download with no model file, and that the microphone is off until you hold the key."
+   ],
+   "attribution": "Konstantin Karpushin, co-founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/lispr?comment=5530367"
+  },
+  "use_cases": [
+   "Dictating long prompts to Claude, ChatGPT or Cursor instead of typing them",
+   "Drafting Slack messages and emails without the keyboard",
+   "Speaking in one language and having the translation typed in another",
+   "Writing in Notion, Google Docs or any text field",
+   "Taking notes during lectures or calls"
+  ],
+  "audience": {
+   "fit": [
+    "write a lot across many apps on Mac or Windows",
+    "work in more than one language and switch mid-sentence",
+    "want dictation without creating an account or downloading a large model"
+   ],
+   "not_fit": [
+    "need fully offline dictation: audio is sent to Lispr's servers for transcription",
+    "want filler words and stutters cleaned up automatically on the free plan: a reviewer noted it types exactly what you say",
+    "use Linux, iPhone or Android"
+   ]
+  },
+  "pricing": {
+   "intro": "Lispr has a free plan with a weekly allowance and a Pro plan without limits. Prices are in US dollars from Lispr's pricing page.",
+   "url": "https://lispr.ai/pricing/",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Free", "price": "$0", "amount": 0, "currency": "USD", "detail": "60 dictation minutes a week (resets Monday), ~99 languages, translation into 32, personal dictionary, local history"},
+    {"name": "Pro", "price": "$79/year or $7.99/month", "amount": 79, "currency": "USD", "detail": "Unlimited dictation, AI formatting (paragraphs, lists, concise mode), all devices under one account"}
+   ],
+   "notes": [
+    "Regional pricing from $44.90 a year in selected countries, based on your card's country.",
+    "New installs get a 30-day Pro trial with no card. Payments are handled by Paddle, with a 14-day money-back guarantee on first purchases.",
+    "Lispr says dictation, translation, the dictionary and history will never move behind a paywall."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Wispr Flow, superwhisper and Aqua Voice among Lispr's alternatives. Review scores are Product Hunt users' own; check each app's pricing page for current prices.",
+   "items": [
+    {"name": "Wispr Flow", "url": "https://wisprflow.ai/", "what": "AI voice dictation that edits and polishes what you say", "starts_at": "See its pricing page", "ph_rating": 4.75, "ph_reviews": 81, "ph_url": "https://www.producthunt.com/products/wisprflow", "difference": "Cleans up and rewrites speech; Lispr types what you said and adds hold-to-translate keys."},
+    {"name": "superwhisper", "url": "https://superwhisper.com/", "what": "Voice-to-text for Mac and iPhone", "starts_at": "See its pricing page", "ph_rating": 4.91, "ph_reviews": 22, "ph_url": "https://www.producthunt.com/products/superwhisper", "difference": "Supports on-device models and iPhone; Lispr uses cloud transcription with no model download, on Mac and Windows."},
+    {"name": "Aqua Voice", "url": "https://aquavoice.com/", "what": "Fast voice input for Mac and Windows", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 16, "ph_url": "https://www.producthunt.com/products/aqua", "difference": "A close like-for-like on the same platforms; Lispr's distinguishing feature is translation keys."}
+   ],
+   "more": "Product Hunt also lists TalkTastic and Typeless."
+  },
+  "reviews": {"count": 4, "rating": 4.75, "url": "https://www.producthunt.com/products/lispr/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Low latency", "No account needed and the microphone off until the key is held", "Works in any text field, including terminals"],
+    "asked": [
+     "Where the custom vocabulary is stored (only on your device, the maker said)",
+     "Whether vocabulary can be moved to a new computer (not yet; an export option was promised)",
+     "How it handles technical jargon (a vocabulary that you can edit and that grows from your dictations)"
+    ],
+    "criticised": ["No option to strip filler words", "Accuracy with heavy jargon, accents or fast speech", "No shortcut to switch language"]
+   },
+   "quotes": [
+    {"text": "is that vocabulary list stored purely on-device, or does it live server-side somewhere tied to an install id", "author": "Gal Dayan", "url": "https://www.producthunt.com/products/lispr?comment=5541393"},
+    {"text": "Does hold to talk work in any text field system wide, or is it per app?", "author": "Henry Jung", "url": "https://www.producthunt.com/products/lispr?comment=5542149"},
+    {"text": "Wondering how it handles contexts like coding tools versus marketing or social writing", "author": "Xuefei Mei", "url": "https://www.producthunt.com/products/lispr?comment=5538634"}
+   ]
+  },
+  "pros": [
+   "Free plan with no account and 60 minutes a week",
+   "Hold-to-translate into 32 languages",
+   "Small download with no local model",
+   "Vocabulary and history stay on your device"
+  ],
+  "cons": [
+   "Needs an internet connection; audio goes to Lispr's servers",
+   "AI formatting is Pro-only",
+   "No mobile or Linux app",
+   "Vocabulary does not yet transfer to a new computer"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/lispr",
+   "quotes": [
+    {"author": "Gal Dayan", "url": "https://www.producthunt.com/products/lispr?comment=5541393", "text": "Asked whether the learned vocabulary is stored on the server.", "reply": "Konstantin Karpushin said it is a local file on your device with no server copy."},
+    {"author": "Henry Jung", "url": "https://www.producthunt.com/products/lispr?comment=5542149", "text": "Asked whether hold-to-talk works system-wide.", "reply": "Myroslav Budzanivskyi said it works anywhere you can place a cursor, including Electron apps, browsers and terminals."}
+   ],
+   "x": {"none": "We found no posts about Lispr on X to link yet.", "search_url": "https://x.com/search?q=lispr&f=live", "profile_url": "https://x.com/lispr_ai"}
+  },
+  "faq": [
+   {"q": "Is Lispr free?", "a": "Yes, with 60 dictation minutes a week and no account. Pro is $79 a year or $7.99 a month for unlimited minutes and AI formatting."},
+   {"q": "Which systems does Lispr run on?", "a": "macOS 11 or later on Apple silicon and Intel, and Windows 10 or later."},
+   {"q": "Does Lispr keep my audio?", "a": "According to its press kit, audio is transcribed and then discarded; by default no recording is kept on a server or used for training."},
+   {"q": "Does it work in every app?", "a": "The makers say it works in any field where you can place a cursor, including browsers, Electron apps and terminals."},
+   {"q": "Can it learn names and jargon?", "a": "Yes. You can add terms to a vocabulary, and an auto-grow option learns spellings from your recent dictations. The list stays on your device."},
+   {"q": "What are the alternatives to Lispr?", "a": "Product Hunt lists Wispr Flow, superwhisper, Aqua Voice, TalkTastic and Typeless."}
+  ],
+  "sources": [
+   {"label": "Lispr official site", "url": "https://lispr.ai/"},
+   {"label": "Lispr pricing", "url": "https://lispr.ai/pricing/"},
+   {"label": "About Lispr", "url": "https://lispr.ai/about/"},
+   {"label": "Lispr press kit", "url": "https://lispr.ai/press/"},
+   {"label": "Lispr privacy policy", "url": "https://lispr.ai/legal/privacy/"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/lispr"},
+   {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/lispr/reviews"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/lispr/alternatives"}
+  ]
+ }
+}

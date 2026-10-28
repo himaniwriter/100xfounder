@@ -1,0 +1,167 @@
+{
+ "slug": "teleport",
+ "website": "https://goteleport.com/",
+ "excerpt": "Teleport is an infrastructure identity platform that gives engineers, machines and AI agents secure access to servers, Kubernetes, databases and cloud. Founded in 2015 in Oakland; valued at $1.1B in 2022.",
+ "content": "<p>Teleport is a security platform for getting into infrastructure: servers, Kubernetes clusters, databases, cloud consoles and internal web apps. Instead of shared passwords, long-lived SSH keys and VPNs, it gives every engineer, machine, workload and, increasingly, AI agent a short-lived cryptographic identity, then grants access based on that identity and records what happened. Its website now calls it the AI infrastructure identity company and groups its products into zero trust access, machine and workload identity, identity governance, identity security and an agentic identity framework.</p><p>Teleport's About page says the company was founded in 2015 and is headquartered in Oakland, California. Its co-founders are Ev Kontsevoy, the CEO, Alexander Klizhentas, the CTO, and Taylor Wakefield, the COO. The legal entity is Gravitational Inc. Teleport began as an open-source project, and the company's 2022 funding coverage described an open-source access plane combining connectivity, authentication, authorisation and audit.</p><p>In May 2022 Teleport announced a $110 million Series C led by Bessemer Venture Partners, with Insight Partners joining existing investors Kleiner Perkins and S28 Capital. DevOps.com reported that the round valued Teleport at $1.1 billion, and the company said it brought total funding to $169 million and that revenue had nearly tripled from 2020 to 2021. In 2026 its homepage carried an announcement of a strategic partnership with Cisco.</p><p>Teleport can run as a managed cloud service or self-hosted, on premises or in a hybrid setup. Its pricing page says pricing is usage-based, by active users and protected resources, and gives no list prices. This profile draws on Teleport's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Infrastructure access and identity security",
+  "platform": "Cloud or self-hosted (Linux, Kubernetes)",
+  "starts_at": "Quote on request (usage-based)",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Identity-based access to servers, Kubernetes, databases and cloud for people, machines and AI agents",
+  "maker": {
+   "name": "Teleport (Gravitational Inc.)",
+   "url": "https://goteleport.com/about/"
+  },
+  "team": [
+   {
+    "name": "Ev Kontsevoy",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Alexander Klizhentas",
+    "role": "Co-founder and CTO"
+   },
+   {
+    "name": "Taylor Wakefield",
+    "role": "Co-founder and COO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://goteleport.com/static/og-image.png",
+    "alt": "Teleport logo, a white gear-like mark and the word Teleport, on a purple background with faint network lines",
+    "credit": "Image: Teleport",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://goteleport.com/_uploads/UIL_graphic_desktop_4b9d6ed1c3.png",
+    "alt": "Teleport diagram of stacked purple layers labelled Unified Identity Layer, Zero Trust Access, Machine and Workload Identity, Identity Governance, Identity Security and Agentic Identity Framework",
+    "credit": "Image: Teleport",
+    "w": 1094,
+    "h": 1140
+   }
+  ],
+  "use_cases": [
+   "Replacing shared SSH keys and VPNs with short-lived certificates",
+   "Giving engineers just-in-time access to Kubernetes clusters and databases",
+   "Recording and auditing sessions on production infrastructure for compliance",
+   "Issuing identities to services, CI/CD pipelines and AI agents",
+   "Running access controls across cloud and on-premises infrastructure"
+  ],
+  "audience": {
+   "fit": [
+    "run platform, DevOps or security for a company with many servers, clusters and databases",
+    "need audit trails of infrastructure access for compliance",
+    "want to remove long-lived credentials from engineers and machines"
+   ],
+   "not_fit": [
+    "run a handful of servers where simple SSH is enough",
+    "need a published price before a sales conversation"
+   ]
+  },
+  "pricing": {
+   "intro": "Teleport's pricing page says pricing is usage-based: you pay for active users and protected resources. It can be deployed on premises, in the cloud or in a hybrid setup. No list prices are published; you request pricing.",
+   "plans": [
+    {
+     "name": "Teleport Cloud",
+     "price": "Quote on request",
+     "detail": "Managed by Teleport; usage-based"
+    },
+    {
+     "name": "Teleport self-hosted",
+     "price": "Quote on request",
+     "detail": "Run on your own infrastructure; usage-based"
+    }
+   ],
+   "notes": [
+    "Priced by active users and protected resources, per the official page."
+   ],
+   "url": "https://goteleport.com/pricing/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Short-lived certificates instead of static keys and passwords",
+   "Covers servers, Kubernetes, databases, apps and cloud in one product",
+   "Cloud or self-hosted deployment"
+  ],
+  "cons": [
+   "No published list prices",
+   "A substantial platform to roll out for small teams"
+  ],
+  "alternatives": {
+   "intro": "Other tools for privileged and infrastructure access. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "StrongDM",
+     "url": "https://www.strongdm.com/",
+     "what": "Infrastructure access and privileged access management",
+     "tags": [
+      "Access"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Proxy-based access with a policy engine."
+    },
+    {
+     "name": "HashiCorp Boundary",
+     "url": "https://www.boundaryproject.io/",
+     "what": "Identity-based remote access to infrastructure",
+     "tags": [
+      "Access",
+      "Open source"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Part of the HashiCorp toolset; pairs with Vault for secrets."
+    },
+    {
+     "name": "CyberArk",
+     "url": "https://www.cyberark.com/",
+     "what": "Enterprise privileged access management",
+     "tags": [
+      "PAM"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Traditional enterprise PAM vendor with password vaulting."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded Teleport?",
+    "a": "Ev Kontsevoy (CEO), Alexander Klizhentas (CTO) and Taylor Wakefield (COO), in 2015, according to Teleport's About page."
+   },
+   {
+    "q": "How much is Teleport valued at?",
+    "a": "DevOps.com reported a $1.1 billion valuation after its $110 million Series C led by Bessemer Venture Partners in May 2022."
+   },
+   {
+    "q": "How is Teleport priced?",
+    "a": "Usage-based, by active users and protected resources. Teleport does not publish list prices."
+   },
+   {
+    "q": "Can Teleport be self-hosted?",
+    "a": "Yes. The pricing page says it can run on premises, in the cloud or in a hybrid setup."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Teleport: About",
+    "url": "https://goteleport.com/about/"
+   },
+   {
+    "label": "Teleport pricing page",
+    "url": "https://goteleport.com/pricing/"
+   },
+   {
+    "label": "DevOps.com: Teleport raises $110 million Series C at $1.1 billion valuation (May 2022)",
+    "url": "https://devops.com/teleport-raises-110-million-series-c-at-1-1-billion-valuation-led-by-bessemer-venture-partners-with-participation-from-new-investor-insight-partners/"
+   },
+   {
+    "label": "Gunderson Dettmer: Bessemer leads $110M Series C financing of Teleport",
+    "url": "https://www.gunder.com/news/bessemer-venture-partners-leads-110m-series-c-financing-of-teleport"
+   }
+  ]
+ }
+}

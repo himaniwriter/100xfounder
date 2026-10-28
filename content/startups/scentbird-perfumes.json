@@ -1,0 +1,79 @@
+{
+ "slug": "scentbird-perfumes",
+ "website": "https://www.scentbird.com/",
+ "excerpt": "Scentbird is a US perfume subscription that sends a month's supply of a designer fragrance in an 8 ml vial. Pricing, history, funding and alternatives.",
+ "content": "<p>Scentbird is a fragrance subscription service in the United States. Instead of buying a full bottle, subscribers pick a designer or niche perfume or cologne each month and receive about a month's supply in a small vial that fits a reusable travel spray case. TechCrunch described the format in 2015 as an 8 ml bottle of roughly 120 sprays. The catalogue has grown from about 500 fragrances in 2018, Beauty Independent reported, to about 900 designer and indie scents in Modern Retail's 2025 coverage; Scentbird's own site has advertised over 1,000. Brands shown on its pages include Gucci, Burberry, Dolce &amp; Gabbana, Versace and Prada.</p><p>Cosmetics Business reported that Scentbird was founded in 2014 by Mariya Nurislamova, Sergei Gusev, Andrei Rebrov and Rachel ten Brink; Beauty Matter gives the launch year as 2013. Nurislamova is CEO. The company went through Y Combinator. In May 2018 it raised an $18.6 million Series A led by Goodwater Capital, with Y Combinator, FundersClub and others, and said it had more than 250,000 subscribers and was profitable. Beauty Matter put total funding at $28.7 million.</p><p>Scentbird has since broadened. In October 2022 it bought Drift, a car air freshener subscription with more than 60,000 subscribers, its first acquisition. Modern Retail reported in December 2025 that Scentbird made more than $100 million in revenue in 2024, citing the Business of Fashion, and that it was building a licensing programme with exclusive fragrances for Marvel, Strawberry Shortcake and a John Wick car freshener with Drift.</p><p>On pricing: Scentbird's homepage in late 2025 listed the subscription at $17.95 a month, with a discounted first month of $8.97 as an introductory offer. Prices change, and its site blocked our checks in October 2026, so confirm the current price on scentbird.com.</p><p><em>This page is research, not a review. We have not subscribed; facts come from the sources listed below.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Fragrance subscription",
+  "platform": "Web and app subscription, shipped in the US",
+  "starts_at": "$17.95/month (late-2025 site)",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Monthly designer perfume and cologne in an 8 ml vial, delivered by subscription",
+  "maker": {"name": "Scentbird Inc.", "url": "https://www.scentbird.com/"},
+  "team": [{"name": "Mariya Nurislamova", "role": "Co-founder and CEO"}],
+  "gallery": [
+   {"url": "https://cdn.scentbird.com/og/cover.png", "w": 1200, "h": 630, "alt": "Two people embracing, each holding a small fragrance vial, above a strip of brand names: Gucci, Burberry, Dolce & Gabbana, Versace and Prada", "credit": "Image: Scentbird (scentbird.com)"},
+   {"url": "https://cdn.scentbird.com/frontbird2/images/vial-step-1_ae0df5.jpg", "w": 633, "h": 780, "alt": "A Dolce & Gabbana Light Blue sample vial with a gold cap beside a grey Scentbird travel spray case, under the words Order delivered", "credit": "Image: Scentbird (scentbird.com)"}
+  ],
+  "use_cases": [
+   "Trying designer fragrances before buying a full bottle",
+   "Rotating a different perfume or cologne each month",
+   "Carrying a small refillable travel spray",
+   "Gifting a fragrance subscription",
+   "Car scent subscriptions through Scentbird-owned Drift"
+  ],
+  "audience": {
+   "fit": [
+    "people who like to try many fragrances without buying full bottles",
+    "travellers who want a small spray in a bag",
+    "US shoppers comfortable with a monthly subscription"
+   ],
+   "not_fit": [
+    "people who use one signature scent heavily: a full bottle may be cheaper per millilitre",
+    "shoppers outside Scentbird's shipping countries"
+   ]
+  },
+  "pricing": {
+   "intro": "Scentbird's homepage as archived in December 2025 listed the subscription at $17.95 a month, with the first month at $8.97 as a promotion. The live site blocked our check in October 2026, so confirm current prices on scentbird.com.",
+   "plans": [
+    {"name": "Monthly fragrance subscription", "price": "$17.95/month", "amount": 17.95, "currency": "USD", "detail": "One fragrance a month in a small vial (late-2025 price)"},
+    {"name": "First month offer", "price": "$8.97", "detail": "Introductory discount shown in late 2025"}
+   ],
+   "notes": ["In 2018 Beauty Independent reported a price of $14.95 a month; prices have risen since."],
+   "url": "https://www.scentbird.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Large catalogue of designer and niche fragrances",
+   "Low monthly cost compared with a full bottle",
+   "Reusable travel case"
+  ],
+  "cons": [
+   "Recurring charge until cancelled",
+   "Small vials cost more per millilitre than full bottles"
+  ],
+  "alternatives": {
+   "intro": "Other ways to sample or subscribe to fragrances.",
+   "items": [
+    {"name": "Scent Box", "url": "https://www.scentbox.com/", "what": "Monthly designer fragrance subscription", "difference": "Similar monthly vial model."},
+    {"name": "Luckyscent", "url": "https://www.luckyscent.com/", "what": "Niche fragrance retailer with samples", "difference": "Buy individual samples or full bottles without a subscription."},
+    {"name": "Sephora", "url": "https://www.sephora.com/", "what": "Beauty retailer selling travel sizes and samples", "difference": "One-off purchases rather than a subscription."}
+   ]
+  },
+  "faq": [
+   {"q": "How much is Scentbird?", "a": "Its homepage listed $17.95 a month in late 2025, with a discounted first month. Check scentbird.com for the current price."},
+   {"q": "How much perfume do you get?", "a": "About a month's supply in a small vial; TechCrunch described it as 8 ml, roughly 120 sprays."},
+   {"q": "Who founded Scentbird?", "a": "Mariya Nurislamova, Sergei Gusev, Andrei Rebrov and Rachel ten Brink, according to Cosmetics Business. Nurislamova is CEO."},
+   {"q": "Does Scentbird own other brands?", "a": "Yes. It bought the car air freshener subscription Drift in October 2022."}
+  ],
+  "sources": [
+   {"label": "Cosmetics Business: Scentbird lands $18.6m funding (2018)", "url": "https://cosmeticsbusiness.com/scentbird-lands-18-6m-funding-to-boost-market-expansion--143085"},
+   {"label": "Beauty Independent: Scentbird fundraising (2018)", "url": "https://orbit.beautyindependent.com/article/scentbird-fragrance-subscription-digital-perfume-fundraising-round-investment"},
+   {"label": "TechCrunch: Y Combinator-backed Scentbird (2015)", "url": "https://techcrunch.com/2015/08/10/y-combinator-backed-scentbird-aims-to-help-men-smell-better"},
+   {"label": "Beauty Matter: Drift acquired by Scentbird (2022)", "url": "https://www.beautymatter.com/articles/car-air-freshener-brand-drift-acquired-by-scentbird"},
+   {"label": "Modern Retail: How Scentbird is building its IP licensing program (Dec 2025)", "url": "https://www.modernretail.co/retailers/how-scentbird-is-building-its-ip-licensing-program-from-john-wick-to-strawberry-shortcake/"},
+   {"label": "Internet Archive: scentbird.com homepage, December 2025", "url": "https://web.archive.org/web/20251230224359/https://www.scentbird.com/"}
+  ]
+ }
+}

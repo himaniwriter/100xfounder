@@ -1,0 +1,139 @@
+{
+ "type": "post",
+ "slug": "ai-tools-small-business-india",
+ "title": "Best AI Tools for Small Businesses in India: Which AI to Use for What",
+ "excerpt": "Which AI tools Indian small businesses should use for WhatsApp chat, GST accounts, regional languages, marketing and support, with ₹ prices and DPDP duties.",
+ "category": "ai-news",
+ "tags": [
+  "ai tools small business",
+  "whatsapp business api",
+  "zoho books",
+  "tallyprime",
+  "sarvam ai",
+  "dpdp act",
+  "msme india"
+ ],
+ "content": "<p>For most small businesses in India, the best AI tools are the ones built into software you already need. Use a WhatsApp Business API provider with an AI agent for customer chat, Zoho Books or TallyPrime for GST-ready accounts that now read invoices for you, Sarvam AI for Indian-language voice and translation, and a ₹270-a-month Google Workspace or ₹399 ChatGPT Go seat for writing and marketing. This guide, checked against vendors' pricing pages on 14 October 2026, sorts the options by job and adds what India's data protection law expects of you once customer data starts flowing through AI.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li><strong>WhatsApp:</strong> Meta now charges per template message. Replies inside the 24-hour customer service window are free, so an AI agent that answers incoming questions costs far less than one that sends campaigns.</li>\n<li><strong>Accounting:</strong> Zoho Books has a free plan for businesses with revenue up to ₹25 lakh. TallyPrime 7.1 adds an AI feature that turns scanned purchase invoices into entries you approve before they are saved.</li>\n<li><strong>Indian languages:</strong> Sarvam AI's speech-to-text covers 22 Indian languages plus English, at ₹0.49 a minute on pay-as-you-go.</li>\n<li><strong>Compliance:</strong> the DPDP Rules, notified on 14 November 2025, give businesses 18 months to comply. Customer data you feed into AI tools falls under them.</li>\n</ul>\n\n<h2>How to choose: start from the job, not the tool</h2>\n<p>A shop, clinic, agency or D2C brand (a brand selling direct to consumers online) rarely needs a general \"AI platform\". It needs one of six jobs done faster: answering customers on WhatsApp, keeping GST-compliant books, writing posts and product copy, talking to customers in their own language, handling support tickets, and occasionally voice. The sections below take each job in turn. They name tools that publish their prices, in rupees where the vendor lists them, so you can work out the monthly bill before you sign up. For a wider list aimed at venture-backed teams, see our guide to the <a href=\"/best-ai-tools-for-startups/\">best AI tools for startups</a>. This piece sticks to what a small owner-run business would actually pay for.</p>\n\n<h2>WhatsApp customer chat: the AI agent and Meta's pricing</h2>\n<p>Because customers already message businesses on WhatsApp, it is often the first place AI pays off. There are two routes.</p>\n<h3>The WhatsApp Business app</h3>\n<p>The WhatsApp Business app on Android and iOS covers a product catalogue and replies when you are away. Meta's product page also promotes a \"Business AI\" agent that answers questions and captures leads inside the chat, <a href=\"https://whatsappbusiness.com/products/business-app/\">according to WhatsApp Business</a>. Meta's page does not give a price or say which countries have it, so check inside your app. The app suits one owner with one phone.</p>\n<h3>The WhatsApp Business Platform (API) with an AI agent</h3>\n<p>Once several staff share one number, or you want a bot trained on your price list and FAQs, you need the API through a provider. Meta's pricing changed on 1 July 2025: it now charges per delivered template message, not per conversation, <a href=\"https://developers.facebook.com/docs/whatsapp/pricing/\">according to Meta's developer documentation</a>. The parts that matter for a small business:</p>\n<ul>\n<li>Free-form replies, including AI-written ones, are free while a customer service window is open. That window lasts 24 hours from the customer's last message.</li>\n<li>Utility templates, such as order updates, are also free inside that window. Marketing, utility and authentication templates sent outside it are charged by category and country.</li>\n<li>If a customer messages you from a click-to-WhatsApp ad and you reply within 24 hours, a 72-hour window opens in which all messages are free.</li>\n<li>Meta raised India's marketing rate from 1 January 2026. It also started billing eligible Indian customers in rupees, and asks them to move their WhatsApp Business accounts to rupee billing by 31 December 2026.</li>\n</ul>\n<p>Meta's page also lists a separate pricing policy for \"AI Providers\" using the platform, effective 16 February 2026 and updated on 12 May 2026. Before you build, ask your provider whether it applies to your setup.</p>\n<p>As one example of provider pricing, AiSensy lists a WhatsApp AI Agent Builder add-on at ₹1,350 a month (₹1,215 a month on annual billing) with 1,000 AI messages a month and answers drawn from your own knowledge base, <a href=\"https://www.aisensy.com/pricing\">according to AiSensy</a>. Its drag-and-drop chatbot builder is ₹2,500 a month. Both sit on top of a base plan, and WhatsApp message charges are recharged separately. AiSensy's page lists them at ₹1.09 per marketing message and ₹0.145 per utility or authentication message. Ask any provider for its markup over Meta's rate card before you commit.</p>\n\n<!-- xf-image-2 -->\n\n<h2>GST invoicing and accounting: Zoho Books vs TallyPrime</h2>\n<p>For accounts, AI is useful mainly for reading bills and receipts so nobody has to type them in. Both of the big Indian options now do this.</p>\n<h3>Zoho Books</h3>\n<p>Zoho Books' India pricing, excluding taxes, runs from a free plan to ₹7,999 a month per organisation on annual billing, <a href=\"https://www.zoho.com/in/books/pricing/\">according to Zoho</a>:</p>\n<table>\n<thead><tr><th>Plan</th><th>Annual billing (₹/month)</th><th>Monthly billing (₹/month)</th><th>Users</th><th>Receipt autoscans/month</th></tr></thead>\n<tbody>\n<tr><td>Free</td><td>0</td><td>0</td><td>1 + 1 accountant</td><td>50</td></tr>\n<tr><td>Standard</td><td>749</td><td>899</td><td>3</td><td>200</td></tr>\n<tr><td>Professional</td><td>1,499</td><td>1,799</td><td>5</td><td>200</td></tr>\n<tr><td>Premium</td><td>2,999</td><td>3,599</td><td>10</td><td>1,000</td></tr>\n<tr><td>Elite</td><td>4,999</td><td>5,999</td><td>15</td><td>1,000</td></tr>\n<tr><td>Ultimate</td><td>7,999</td><td>9,599</td><td>25</td><td>1,000</td></tr>\n</tbody>\n</table>\n<p>The free plan is open to businesses with annual revenue up to ₹25 lakh (₹2.5 million). It includes GST reports and filing, and allows up to 1,000 invoices a year. E-invoicing is listed from the Standard plan. Extra document autoscans are sold in packs of 50.</p>\n<h3>TallyPrime</h3>\n<p>Tally's own cost guide, dated 13 July 2026, lists TallyPrime Silver (one user) at ₹22,500 and Gold (unlimited users on a local network) at ₹67,500, each a one-time licence plus 18% GST with a year of software updates included, <a href=\"https://tallysolutions.com/business-guides/tallyprime-total-cost-of-ownership-india/\">according to Tally Solutions</a>. You can also rent it, at ₹750 a month for Silver or ₹2,250 for Gold. Renewing updates after the first year costs ₹4,500 a year on Silver. Those renewals matter, because they deliver the GST rule changes.</p>\n<p>The AI addition is in TallyPrime 7.1. Its \"Docs by Ira\" feature reads scanned or uploaded purchase invoices, purchase orders, delivery challans (goods delivery notes) and credit or debit notes, then drafts the entries for you, <a href=\"https://tallysolutions.com/?p=201730\">according to Tally</a>. Tally says you review every entry before it is saved, and claims it cuts processing time by up to 80%. That claim is the vendor's own, so test it on a month of your own bills.</p>\n<p><strong>Which to pick:</strong> if your accountant already works in Tally, staying there avoids friction. If you are starting fresh, are under ₹25 lakh in revenue and want everything in a browser, Zoho Books' free plan is the lower-risk start. For tax treatment, confirm with a qualified chartered accountant; software does not replace one.</p>\n\n<!-- xf-image-3 -->\n\n<h2>Indian-language content and voice: Sarvam AI</h2>\n<p>If your customers prefer Hindi, Tamil, Marathi or Bengali, general-purpose chatbots will draft text for you, but voice and accurate translation need specialised models. Sarvam AI publishes rupee pricing for its APIs, <a href=\"https://www.sarvam.ai/api-pricing\">according to Sarvam AI</a>:</p>\n<ul>\n<li><strong>Speech to text:</strong> ₹0.49 a minute for real-time or batch transcription, and ₹0.59 a minute with speaker separation. Its Saaras v4 model covers 22 Indian languages plus English, <a href=\"https://docs.sarvam.ai/api-reference-docs/getting-started/models\">according to Sarvam's documentation</a>.</li>\n<li><strong>Text to speech:</strong> ₹3 per 1,000 characters for Bulbul v3, or ₹2 for the faster Bulbul v4 Flash. Bulbul v3 speaks 10 Indian languages plus English.</li>\n<li><strong>Translation:</strong> ₹2 per 1,000 characters, or ₹5 for whole documents. The Mayura model covers the same 11 languages.</li>\n<li><strong>Chat model:</strong> Sarvam 105B costs ₹15 per million input tokens and ₹60 per million output tokens. A token is roughly a short word or part of one.</li>\n</ul>\n<p>New accounts get free credits that do not expire. These are developer APIs, so a non-technical owner will usually use them through an agency or a no-code tool rather than directly. A practical use is an IVR (automated phone menu) or WhatsApp voice-note bot that understands callers in their own language and replies in it. Get a native speaker to check any customer-facing translation before it goes live.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Marketing copy and everyday writing</h2>\n<p>For social posts, product descriptions, email campaigns and quotes, a general assistant is enough. There are three sensible price points:</p>\n<ul>\n<li><strong>ChatGPT Go at ₹399 a month:</strong> launched for India in August 2025 with ten times the free tier's message, image and file-upload limits, payable by UPI, <a href=\"https://techcrunch.com/2025/08/18/openai-launches-a-sub-5-chatgpt-plan-in-india\">TechCrunch reported</a>.</li>\n<li><strong>Google AI Plus at ₹399 a month</strong> (₹199 for the first six months for new users): higher Gemini limits, 200 GB of storage and sharing with up to five family members, <a href=\"https://techcrunch.com/2025/12/10/google-launches-sub-5-ai-plus-plan-in-india-to-compete-with-chatgpt-go\">TechCrunch reported</a>. It is a consumer plan, so it suits a sole proprietor more than a team.</li>\n<li><strong>Google Workspace with Gemini:</strong> Business Starter costs ₹270 per user a month on an annual plan and includes Gemini in Gmail, <a href=\"https://workspace.google.com/intl/en_in/pricing.html\">according to Google</a>. Business Standard lists at ₹1,080, with an introductory ₹864 for up to 20 users in the first 12 months, and puts Gemini into Docs, Sheets, Slides, Drive and Meet. Google says Starter and higher plans include enterprise-grade security and privacy for the Gemini app. Its cheapest Base plan does not.</li>\n</ul>\n<p>That last point matters more than the price gap. Once staff paste customer lists or invoices into an assistant, a business account with admin controls beats a personal one. Our <a href=\"/tools/\">free tools</a> page has calculators that help with pricing and salary decisions alongside these subscriptions.</p>\n\n<h2>Customer support desks with AI</h2>\n<p>If you handle support by email or web chat rather than WhatsApp, a help desk with a built-in AI agent can answer routine questions and route the rest. Freshworks publishes Freshdesk's prices in US dollars only: $19 per agent a month for Growth, $55 for Pro and $89 for Enterprise, billed annually, <a href=\"https://www.freshworks.com/freshdesk/pricing/\">according to Freshworks</a>. Each plan includes 500 Freddy AI Agent sessions, then charges $49 per 100 sessions. An email session counts every AI reply within 72 hours of a customer's first email. The Freddy AI Copilot assistant for human agents costs $29 per agent a month on Pro and Enterprise. There is no permanent free plan, only a 14-day trial.</p>\n<p>For a three-person team on Growth, that is $57 a month before extra AI sessions. Set it against the hours your team currently spends answering \"where is my order\" by hand.</p>\n\n<!-- xf-image-5 -->\n\n<h2>DPDP Act: what using AI tools means for your data duties</h2>\n<p>The Digital Personal Data Protection Act, 2023 applies to any business that collects customers' personal data digitally. Its rules were notified on 14 November 2025 with an eighteen-month phased compliance period, <a href=\"https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117695301.pdf\">according to the Press Information Bureau</a>. In the Act's language your business is usually the \"Data Fiduciary\", the one deciding why and how data is used. An AI vendor processing chats or invoices on your behalf is a \"Data Processor\", but the duties sit with you. According to the government's explainer, that means:</p>\n<ul>\n<li><strong>Clear consent notices:</strong> each must be a separate, plain notice stating the specific purpose for which you collect personal data. If a WhatsApp bot collects names, numbers and addresses, say why.</li>\n<li><strong>Security safeguards:</strong> failing to keep reasonable safeguards can draw a penalty of up to ₹250 crore (₹2.5 billion).</li>\n<li><strong>Breach notification:</strong> you must tell affected people without delay, in plain language, and failing to notify can draw up to ₹200 crore.</li>\n<li><strong>Customer rights:</strong> people can ask to access, correct, update or erase their data, and you must respond within 90 days.</li>\n<li><strong>A contact point:</strong> show contact details for data queries, either a designated officer or a Data Protection Officer.</li>\n</ul>\n<p>In practice, read each AI vendor's data-processing terms, switch off model training on your customer data where the vendor allows it, give access only to staff who need it, and keep a simple record of which tools hold which customer data. This is general information, not legal advice. Confirm your obligations with a qualified lawyer or the official text published by MeitY.</p>\n\n<h2>A starter stack by budget</h2>\n<table>\n<thead><tr><th>Budget</th><th>Chat</th><th>Accounts</th><th>Writing</th></tr></thead>\n<tbody>\n<tr><td>Near zero</td><td>WhatsApp Business app</td><td>Zoho Books Free (revenue up to ₹25 lakh)</td><td>Free tiers of ChatGPT or Gemini</td></tr>\n<tr><td>Around ₹2,000–3,000 a month</td><td>API provider + AI agent add-on (from ₹1,215/month annual at AiSensy) + message charges</td><td>Zoho Books Standard (₹749/month annual) or TallyPrime Silver rental (₹750/month + GST)</td><td>Google Workspace Starter (₹270/user/month)</td></tr>\n<tr><td>Growing team</td><td>API + help desk with AI agent</td><td>Zoho Books Professional or TallyPrime Gold</td><td>Workspace Standard, plus Sarvam APIs for regional voice</td></tr>\n</tbody>\n</table>\n\n<h2>Bottom line</h2>\n<p>Do not buy AI as a separate product. Turn on the AI features in your WhatsApp, accounting and email tools first, measure the hours they save over a month, and only then add specialised services such as Indian-language voice. Keep the DPDP Act in view from the start, because the consent notices and vendor checks are much easier to set up now than to retrofit when the rules fully apply. To see what new tools Indian founders are shipping, browse our <a href=\"/launches/\">launches</a> page.</p>\n\n<h2>FAQ</h2>\n<h3>Which AI is best for WhatsApp customer service in India?</h3>\n<p>For one owner, the WhatsApp Business app is usually enough. For a team or a bot trained on your FAQs, use the WhatsApp Business Platform through a provider that offers an AI agent, and remember that replies within 24 hours of a customer's message are free.</p>\n<h3>Does Tally have AI?</h3>\n<p>Yes. TallyPrime 7.1 includes Docs by Ira, which reads purchase invoices and similar documents and drafts entries that you review before saving.</p>\n<h3>Is Zoho Books free for small businesses?</h3>\n<p>Zoho's India pricing page lists a free plan for one user plus one accountant, for businesses with annual revenue up to ₹25 lakh, with GST reports and up to 1,000 invoices a year.</p>\n<h3>Which AI tools support Indian languages?</h3>\n<p>Sarvam AI's APIs cover 22 Indian languages for speech-to-text and 10 for text-to-speech and translation, alongside English, with published rupee pricing.</p>\n<h3>Do I need customer consent before using AI on their data?</h3>\n<p>Under the DPDP framework you need a clear, purpose-specific consent notice when you collect personal data, and you stay responsible for vendors that process it for you. Check the details with a lawyer.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Meta for Developers, <a href=\"https://developers.facebook.com/docs/whatsapp/pricing/\">\"Pricing on the WhatsApp Business Platform\"</a>, accessed 2026-10-14</li>\n<li>WhatsApp Business, <a href=\"https://whatsappbusiness.com/products/business-app/\">\"WhatsApp Business app\"</a>, accessed 2026-10-14</li>\n<li>AiSensy, <a href=\"https://www.aisensy.com/pricing\">\"Pricing\"</a>, accessed 2026-10-14</li>\n<li>Zoho, <a href=\"https://www.zoho.com/in/books/pricing/\">\"Zoho Books pricing (India)\"</a>, accessed 2026-10-14</li>\n<li>Tally Solutions, <a href=\"https://tallysolutions.com/business-guides/tallyprime-total-cost-of-ownership-india/\">\"The total cost of TallyPrime in India\"</a>, 2026-07-13</li>\n<li>Tally Solutions, <a href=\"https://tallysolutions.com/?p=201730\">\"What’s new in TallyPrime 7.1\"</a>, accessed 2026-10-14</li>\n<li>Sarvam AI, <a href=\"https://www.sarvam.ai/api-pricing\">\"API pricing\"</a>, accessed 2026-10-14</li>\n<li>Sarvam AI, <a href=\"https://docs.sarvam.ai/api-reference-docs/getting-started/models\">\"Models\"</a>, accessed 2026-10-14</li>\n<li>Google Workspace, <a href=\"https://workspace.google.com/intl/en_in/pricing.html\">\"Pricing (India)\"</a>, accessed 2026-10-14</li>\n<li>Freshworks, <a href=\"https://www.freshworks.com/freshdesk/pricing/\">\"Freshdesk pricing\"</a>, accessed 2026-10-14</li>\n<li>Press Information Bureau, <a href=\"https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117695301.pdf\">\"DPDP Rules, 2025 Notified\"</a>, 2025-11-17</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2025/08/18/openai-launches-a-sub-5-chatgpt-plan-in-india\">\"OpenAI launches a sub-$5 ChatGPT plan in India\"</a>, 2025-08-18</li>\n<li>TechCrunch, <a href=\"https://techcrunch.com/2025/12/10/google-launches-sub-5-ai-plus-plan-in-india-to-compete-with-chatgpt-go\">\"Google launches sub-$5 AI Plus plan in India to compete with ChatGPT Go\"</a>, 2025-12-10</li>\n</ol>",
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Shopkeeper_-_Indian_Market.jpg/1920px-Shopkeeper_-_Indian_Market.jpg",
+   "alt": "A shopkeeper at his stall in Chickpet Bazaar, Bengaluru, on a busy morning",
+   "caption": "Small traders such as those in Bengaluru's Chickpet Bazaar are the audience for low-cost AI tools.",
+   "credit": "Photo: RioRiyoRio / Wikimedia Commons, CC BY 4.0",
+   "license": "CC BY 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Shopkeeper_-_Indian_Market.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Whatsapp_texting.jpg/1920px-Whatsapp_texting.jpg",
+   "alt": "A person typing a WhatsApp message on a smartphone",
+   "caption": "Replies inside WhatsApp's 24-hour customer service window are free under Meta's per-message pricing.",
+   "credit": "Photo: Helar Lukats / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Whatsapp_texting.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kirana_shop.jpg",
+   "alt": "Shelves of packaged goods in a kirana grocery shop in Vasai, Mumbai",
+   "caption": "Invoice-reading AI in Zoho Books and TallyPrime cuts manual bill entry for shops like this kirana store.",
+   "credit": "Photo: Renzilde / Wikimedia Commons, CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kirana_shop.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Trilingual_Signboard_at_Bhubaneswar_Airport_having_text_in_Odia%2C_Hindi_and_English.jpg/1920px-Trilingual_Signboard_at_Bhubaneswar_Airport_having_text_in_Odia%2C_Hindi_and_English.jpg",
+   "alt": "A free Wi-Fi signboard at Bhubaneswar airport written in Odia, Hindi and English",
+   "caption": "Customers across India read and speak many languages; Indian-language AI models aim to serve them.",
+   "credit": "Photo: କଳିଙ୍ଗପୁତ୍ର / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Trilingual_Signboard_at_Bhubaneswar_Airport_having_text_in_Odia,_Hindi_and_English.jpg"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Dantewada_Yuva_BPO.jpg/1920px-Dantewada_Yuva_BPO.jpg",
+   "alt": "Staff working at computers in the Yuva BPO centre in Dantewada, Chhattisgarh",
+   "caption": "AI agents in help desks handle routine questions so support staff can take the harder ones.",
+   "credit": "Photo: Samuel.Wsx / Wikimedia Commons, CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Dantewada_Yuva_BPO.jpg"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://developers.facebook.com/docs/whatsapp/pricing/",
+   "publisher": "Meta for Developers",
+   "date": "2026-10-14",
+   "claim": "Per-message pricing since 1 Jul 2025; free service window; utility in window free; 72-hour CTWA window; India marketing rate change 1 Jan 2026; INR billing, migrate by 31 Dec 2026; AI Providers policy 16 Feb 2026, updated 12 May 2026"
+  },
+  {
+   "url": "https://whatsappbusiness.com/products/business-app/",
+   "publisher": "WhatsApp Business",
+   "date": "2026-10-14",
+   "claim": "Business app features; Business AI agent that answers questions and captures leads"
+  },
+  {
+   "url": "https://www.aisensy.com/pricing",
+   "publisher": "AiSensy",
+   "date": "2026-10-14",
+   "claim": "AI Agent Builder ₹1,350/₹1,215 per month, 1,000 AI messages; chatbot builder ₹2,500; message charges separate, ₹1.09 marketing, ₹0.145 utility/authentication"
+  },
+  {
+   "url": "https://www.zoho.com/in/books/pricing/",
+   "publisher": "Zoho",
+   "date": "2026-10-14",
+   "claim": "Zoho Books India plan prices, users, autoscans, free plan ₹25 lakh revenue threshold, GST reports, e-invoicing from Standard"
+  },
+  {
+   "url": "https://tallysolutions.com/business-guides/tallyprime-total-cost-of-ownership-india/",
+   "publisher": "Tally Solutions",
+   "date": "2026-07-13",
+   "claim": "TallyPrime Silver ₹22,500, Gold ₹67,500 + 18% GST; rental ₹750/₹2,250 per month; TSS renewal ₹4,500/year Silver"
+  },
+  {
+   "url": "https://tallysolutions.com/?p=201730",
+   "publisher": "Tally Solutions",
+   "date": "2026-10-14",
+   "claim": "TallyPrime 7.1 Docs by Ira reads purchase invoices, POs, delivery challans, credit/debit notes; review before save; up to 80% time saving claim"
+  },
+  {
+   "url": "https://www.sarvam.ai/api-pricing",
+   "publisher": "Sarvam AI",
+   "date": "2026-10-14",
+   "claim": "STT ₹0.49/min, ₹0.59 with diarization; TTS ₹3 (Bulbul v3), ₹2 (v4 Flash) per 1,000 chars; translate ₹2, docs ₹5; Sarvam 105B ₹15/₹60 per 1M tokens; free credits"
+  },
+  {
+   "url": "https://docs.sarvam.ai/api-reference-docs/getting-started/models",
+   "publisher": "Sarvam AI",
+   "date": "2026-10-14",
+   "claim": "Saaras v4 22 Indian languages + English; Bulbul v3, Mayura, Sarvam-105B 10 Indian languages + English"
+  },
+  {
+   "url": "https://workspace.google.com/intl/en_in/pricing.html",
+   "publisher": "Google Workspace",
+   "date": "2026-10-14",
+   "claim": "India prices: Starter ₹270, Standard ₹1,080 (₹864 intro), Base ₹99; Gemini features and privacy by plan"
+  },
+  {
+   "url": "https://www.freshworks.com/freshdesk/pricing/",
+   "publisher": "Freshworks",
+   "date": "2026-10-14",
+   "claim": "Freshdesk Growth $19, Pro $55, Enterprise $89; 500 AI Agent sessions, $49 per 100; Copilot $29; 14-day trial"
+  },
+  {
+   "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117695301.pdf",
+   "publisher": "Press Information Bureau",
+   "date": "2025-11-17",
+   "claim": "DPDP Rules notified 14 Nov 2025; 18-month phased compliance; consent notices; breach notification; penalties ₹250 crore/₹200 crore; 90-day response; contact point; Data Fiduciary/Processor definitions"
+  },
+  {
+   "url": "https://techcrunch.com/2025/08/18/openai-launches-a-sub-5-chatgpt-plan-in-india",
+   "publisher": "TechCrunch",
+   "date": "2025-08-18",
+   "claim": "ChatGPT Go ₹399/month in India, 10x limits, UPI"
+  },
+  {
+   "url": "https://techcrunch.com/2025/12/10/google-launches-sub-5-ai-plus-plan-in-india-to-compete-with-chatgpt-go",
+   "publisher": "TechCrunch",
+   "date": "2025-12-10",
+   "claim": "Google AI Plus ₹399/month, ₹199 for six months, 200 GB, five family members"
+  }
+ ]
+}

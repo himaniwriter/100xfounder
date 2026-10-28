@@ -1,0 +1,131 @@
+{
+ "slug": "voiceops",
+ "website": "https://www.voiceops.com/",
+ "excerpt": "Voiceops analyses customer phone calls with AI for B2C companies, surfacing coaching, compliance and product insights. Funding, use cases and alternatives.",
+ "content": "<p>Voiceops is an AI platform that analyses customer phone calls for consumer-facing (B2C) businesses. Its site says most data tells you what happened while customer conversations tell you why, and the product listens to calls, extracts patterns and sends the findings to the people who can act on them. A feature it calls Synthesis pushes those insights into a team's existing workflows.</p><p>The uses Voiceops lists are practical: finding the tactics of top-performing reps so others can copy them, seeing how customers react to messaging, spotting competitor mentions and product gaps, flagging compliance problems and highlighting customers at risk of leaving. In a case study on its site, Truehold says its quality-assurance coverage went from about 2% of calls to 100%, and first-call conversion from 31% to 51%. These are the customer's and company's own figures.</p><p>In March 2025 Voiceops announced a $5 million seed round co-led by Bonfire Ventures and Twelve Below, with Precursor Ventures, Not Boring Capital, Village Global, Kearny Jackson, Mana Ventures and Four Acres Capital taking part, and former Airbnb executive Varsha Rao investing as an angel. The company said the money would go into product development, sales and marketing, and a new New York office. The announcement was written by Ethan Barhydt, who describes building earlier startups in the same space.</p><p>Voiceops does not publish prices; you book a demo. It says it can be set up in days. It is aimed at consumer-facing companies with sales or service teams that handle a high volume of calls, rather than at individuals.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Conversation intelligence",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI call analysis that turns customer conversations into coaching, QA and business insight",
+  "maker": {
+   "name": "Voiceops, Inc.",
+   "url": "https://www.voiceops.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/677e212e69df600d0a08b485/682e2d35baa4b83ae5c67161_Graph.png",
+    "alt": "Voiceops wordmark in black: a gear-shaped speech bubble icon followed by the word voiceops",
+    "credit": "Image: Voiceops (voiceops.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/677e212e69df600d0a08b485/678abf9d93b7a8f0a08812f3_voiceops_webclip.png",
+    "alt": "Voiceops icon: a black gear with a white speech bubble in the centre",
+    "credit": "Image: Voiceops (voiceops.com)",
+    "w": 256,
+    "h": 256
+   }
+  ],
+  "use_cases": [
+   "Scoring every sales or service call for quality assurance",
+   "Coaching reps on what top performers do differently",
+   "Flagging compliance issues in calls",
+   "Spotting churn risk and competitor mentions",
+   "Feeding customer insights to product and marketing teams"
+  ],
+  "audience": {
+   "fit": [
+    "run a B2C sales or service team that handles many phone calls",
+    "review only a small sample of calls today",
+    "need compliance monitoring on calls"
+   ],
+   "not_fit": [
+    "handle few calls or mostly text-based support",
+    "want a self-serve tool with a published price"
+   ]
+  },
+  "pricing": {
+   "intro": "Voiceops does not publish prices. Its site asks you to book a demo.",
+   "plans": [
+    {
+     "name": "Voiceops platform",
+     "price": "Quote on request",
+     "detail": "Pricing not published"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.voiceops.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Analyses every call rather than a sample",
+   "Insights pushed into existing workflows",
+   "Customer case study with before-and-after figures"
+  ],
+  "cons": [
+   "No public pricing",
+   "Small, seed-stage company"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Gong",
+     "url": "https://www.gong.io/",
+     "what": "Revenue intelligence and call recording platform",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Mostly used by B2B sales teams; much larger company."
+    },
+    {
+     "name": "Observe.AI",
+     "url": "https://www.observe.ai/",
+     "what": "AI platform for contact centres",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Built for large contact centres, with voice AI agents as well as QA."
+    },
+    {
+     "name": "CallMiner",
+     "url": "https://callminer.com/",
+     "what": "Conversation analytics for contact centres",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Long-established enterprise speech analytics vendor."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Voiceops do?",
+    "a": "It uses AI to analyse customer calls and turn them into coaching, QA, compliance and business insights for B2C companies."
+   },
+   {
+    "q": "How much funding has Voiceops raised?",
+    "a": "It announced a $5 million seed round in March 2025, co-led by Bonfire Ventures and Twelve Below."
+   },
+   {
+    "q": "How much does Voiceops cost?",
+    "a": "Pricing is not published; you book a demo for a quote."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Voiceops official site",
+    "url": "https://www.voiceops.com/"
+   },
+   {
+    "label": "Voiceops: raises $5M to help businesses learn from every conversation",
+    "url": "https://www.voiceops.com/news/voiceops-seed-funding"
+   },
+   {
+    "label": "ACCESS Newswire: Voiceops raises $5 million (26 Mar 2025)",
+    "url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/voiceops-raises-5-million-to-transform-customer-conversations-in-1005691"
+   }
+  ]
+ }
+}

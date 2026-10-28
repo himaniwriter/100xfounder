@@ -1,0 +1,73 @@
+{
+ "slug": "sky-mavis",
+ "website": "https://www.skymavis.com/",
+ "excerpt": "Sky Mavis is the Vietnamese studio behind Axie Infinity and the Ronin gaming blockchain. Funding, the 2022 Ronin bridge hack, products and alternatives.",
+ "content": "<p>Sky Mavis is a games and blockchain company best known for Axie Infinity, a game built around collectible creatures called axies that players own as NFTs. TechCrunch has described it as a Vietnamese gaming studio; its corporate entity is Sky Mavis Pte Ltd. Its website says it builds virtual worlds and the infrastructure behind them, with the aim of introducing people to crypto through nostalgic games and practical apps.</p><p>Besides the Axie Infinity games, including Origins and Homeland, Sky Mavis runs Ronin, an Ethereum-compatible blockchain for games with player-owned economies, which its website calls the top gaming blockchain by all-time NFT volume. It also offers the Mavis Market marketplace, the Mavis Hub game launcher and developer tools under the Mavis Ecosystem name.</p><p>Axie Infinity was one of the biggest hits of the 2021 play-to-earn boom. When Sky Mavis announced a $152 million Series B led by Andreessen Horowitz in October 2021, with Accel and Paradigm, The Block reported that Axie had more than 1.8 million daily active users that August, and that The Information had put the valuation near $3 billion. CEO Trung Nguyen was quoted on the round.</p><p>In March 2022 the Ronin bridge, which moves assets between Ronin and Ethereum, was drained of about $625 million in ether and USDC, described at the time as the largest crypto heist to date. TechCrunch reported that the attacker obtained five of the nine validator keys needed to approve withdrawals, and Sky Mavis blamed its small validator set. US officials later linked the theft to North Korea's Lazarus Group. In April 2022 Sky Mavis raised $150 million in a round led by Binance, which together with its own cash it used to reimburse affected users, and it expanded the number of validators. CoinDesk reported in 2023 that Ronin moved to a delegated proof-of-stake system.</p><p>Axie Infinity's games are free to download; players may buy axies and other in-game NFTs, and Ronin charges network fees.</p><p><em>This page is research, not a review or investment advice. We have not played these games for this page.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Blockchain gaming (Axie Infinity, Ronin)",
+  "platform": "PC and mobile games; Ronin blockchain",
+  "starts_at": "Free to download; optional NFT purchases",
+  "schema_category": "GameApplication",
+  "summary_short": "Studio behind Axie Infinity and the Ronin gaming blockchain",
+  "maker": {"name": "Sky Mavis Pte Ltd", "url": "https://www.skymavis.com/"},
+  "team": [{"name": "Trung Nguyen", "role": "CEO"}],
+  "gallery": [
+   {"url": "https://cdn.skymavis.com/skymavis-home/public//homepage/about-us-1.jpg", "w": 768, "h": 848, "alt": "Six Sky Mavis team members with lanyards gathered around a desk in an office, looking at a screen", "credit": "Photo: Sky Mavis (skymavis.com)"},
+   {"url": "https://cdn.skymavis.com/skymavis-home/public//homepage/axie-logo.png", "w": 173, "h": 96, "alt": "Axie Infinity logo: orange jagged AXIE lettering above the word INFINITY in blue, with a small blue diamond emblem", "credit": "Logo: Sky Mavis (skymavis.com)"}
+  ],
+  "use_cases": [
+   "Playing Axie Infinity games such as Origins and Homeland",
+   "Buying and trading axies and other game NFTs on Mavis Market",
+   "Building games with player-owned economies on the Ronin blockchain",
+   "Launching blockchain games through Mavis Hub"
+  ],
+  "audience": {
+   "fit": [
+    "players interested in blockchain games with tradable assets",
+    "game studios looking for a gaming-focused blockchain",
+    "readers researching the play-to-earn era and its aftermath"
+   ],
+   "not_fit": [
+    "anyone looking for a guaranteed income: in-game asset prices can fall sharply",
+    "players who want games without crypto wallets or NFTs"
+   ]
+  },
+  "pricing": {
+   "intro": "Axie Infinity games are free to download. Optional purchases of axies and other NFTs are priced by the market, and Ronin transactions carry network fees. There is no subscription.",
+   "plans": [{"name": "Axie Infinity", "price": "Free to download", "detail": "Optional NFT purchases at market prices"}],
+   "url": "https://www.skymavis.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "One of the best-known blockchain games",
+   "Runs its own gaming blockchain and marketplace",
+   "Reimbursed users after the 2022 bridge hack"
+  ],
+  "cons": [
+   "The 2022 Ronin bridge hack cost about $625 million",
+   "Game economies depend on volatile crypto prices"
+  ],
+  "alternatives": {
+   "intro": "Other blockchain gaming companies and networks.",
+   "items": [
+    {"name": "Immutable", "url": "https://www.immutable.com/", "what": "Blockchain gaming platform and games publisher", "difference": "Builds on Ethereum scaling technology and backs many studios."},
+    {"name": "Animoca Brands", "url": "https://www.animocabrands.com/", "what": "Web3 games and investment group (The Sandbox and others)", "difference": "Portfolio company with many games and stakes."},
+    {"name": "Gala Games", "url": "https://gala.com/", "what": "Blockchain games platform", "difference": "Runs its own chain and a catalogue of games."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Sky Mavis?", "a": "The company behind Axie Infinity and the Ronin blockchain, described by TechCrunch as a Vietnamese gaming studio."},
+   {"q": "What happened in the Ronin hack?", "a": "In March 2022 an attacker obtained five of nine validator keys and drained about $625 million from the Ronin bridge. US officials linked it to North Korea's Lazarus Group."},
+   {"q": "Were users reimbursed?", "a": "Sky Mavis raised $150 million in a Binance-led round in April 2022 and said that, with its own cash, it would reimburse all affected users."},
+   {"q": "How much was Sky Mavis valued at?", "a": "The Information reported a valuation near $3 billion at the time of its $152 million Series B in October 2021."}
+  ],
+  "sources": [
+   {"label": "Sky Mavis: homepage", "url": "https://www.skymavis.com/"},
+   {"label": "The Block: Axie Infinity creator announces $152 million Series B (Oct 2021)", "url": "https://www.theblock.co/post/119521/axie-infinity-nft-series-b-funding-a16z"},
+   {"label": "TechCrunch: Axie Infinity creator raises $150M to compensate Ronin hack victims (Apr 2022)", "url": "https://techcrunch.com/2022/04/06/axie-infinity-creator-raises-150m-round-to-compensate-victims-of-625m-ronin-hack/"},
+   {"label": "TechCrunch: US officials link North Korean Lazarus hackers to $625M theft", "url": "https://techcrunch.com/2022/04/15/us-officials-link-north-korean-lazarus-hackers-to-625m-axie-infinity-crypto-theft/"},
+   {"label": "CoinDesk: Ronin overhauls tech a year after hack (2023)", "url": "https://www.coindesk.com/tech/2023/03/30/axie-infinitys-ronin-blockchain-overhauls-tech-expands-to-new-ip-on-anniversary-of-600m-hack"}
+  ]
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "slug": "tibber",
+ "website": "https://tibber.com/",
+ "excerpt": "Tibber is a Nordic digital electricity supplier whose app automates EV charging and heating around hourly prices. Countries, funding, use cases and alternatives.",
+ "content": "<p>Tibber is a digital electricity company founded in 2016 by Edgeir Vårdal Aksnes, from Norway, and Daniel Lindén, from Sweden. It sells electricity to households, but its pitch is the app on top: Tibber connects the big energy users in a home, such as an electric car charger, heat pump or heating system, and switches them on when power is cheap and off when it is expensive. Its website says it exists to drive energy independence away from fossil fuels and to make homeowners active participants in the energy transition.</p><p>The current website describes three main pieces. Flexible tariffs offer either dynamic pricing tied to the spot market in 15-minute intervals or, where available, a fixed tariff with a 12-month price guarantee. Automation shifts consumption to the cheapest hours. Grid Rewards briefly pauses or starts charging to help balance the grid during renewable surpluses or shortages, and pays the user for each event. The site links to local versions for Germany, the Netherlands and Norway.</p><p>Tibber has raised venture money from well-known investors. TechCrunch reported in March 2019 that Founders Fund led a $12 million Series A. In November 2020 Tibber closed a $65 million Series B jointly led by Balderton and Eight Roads Ventures, with Founders Fund returning, according to Balderton's announcement. At that time it said it had more than 100,000 paying households in Norway, Sweden and Germany, mostly won through referrals, and planned to enter the Netherlands in 2021. It also said it does not aim to profit from the electricity its customers use.</p><p>Prices depend on country, region and tariff type, and are quoted on Tibber's local sites. We did not find a single public price list to quote.</p><p><em>This page is research, not a review. We have not been a Tibber customer; facts come from the pages listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Smart electricity supplier and home energy app",
+  "platform": "Android and iOS app with smart-home and EV integrations",
+  "starts_at": "Varies by country and tariff",
+  "schema_category": "UtilitiesApplication",
+  "summary_short": "Electricity supplier whose app shifts EV charging and heating to cheap hours",
+  "maker": {"name": "Tibber", "url": "https://tibber.com/"},
+  "team": [
+   {"name": "Edgeir Vårdal Aksnes", "role": "Co-founder"},
+   {"name": "Daniel Lindén", "role": "Co-founder"}
+  ],
+  "gallery": [
+   {"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Tibber-Logo.svg/1280px-Tibber-Logo.svg.png", "w": 1280, "h": 593, "alt": "Tibber logo: a black outlined lightning bolt and the word tibber on a turquoise background", "credit": "Logo: Tibber, public domain, via Wikimedia Commons (File:Tibber-Logo.svg)"},
+   {"url": "https://tibber.com/apple-touch-icon.png", "w": 192, "h": 192, "alt": "Tibber app icon: a black lightning bolt outline on a turquoise rounded square", "credit": "Logo: Tibber (tibber.com)"}
+  ],
+  "use_cases": [
+   "Buying household electricity on an hourly or 15-minute spot price",
+   "Charging an electric car automatically in the cheapest hours",
+   "Scheduling heat pumps and heating around price swings",
+   "Earning Grid Rewards for letting Tibber briefly adjust charging",
+   "Tracking home electricity use in real time"
+  ],
+  "audience": {
+   "fit": [
+    "households in Tibber's markets with an EV, heat pump or other large flexible load",
+    "people comfortable with spot-price electricity and automation",
+    "smart-home users who want their devices to react to prices"
+   ],
+   "not_fit": [
+    "households outside Tibber's countries",
+    "people who want a fixed price and no app involvement, where a fixed tariff is not offered"
+   ]
+  },
+  "pricing": {
+   "intro": "Tibber's prices depend on country, region and tariff. Dynamic tariffs follow the spot market; a fixed tariff with a 12-month guarantee is available in some regions. Prices are quoted on each country site.",
+   "plans": [
+    {"name": "Dynamic tariff", "price": "Spot price plus Tibber's charges", "detail": "Priced in 15-minute intervals; varies by country"},
+    {"name": "Fixed tariff", "price": "Quoted by region", "detail": "12-month price guarantee where available"}
+   ],
+   "notes": ["We did not find a single public price list on tibber.com to quote."],
+   "url": "https://tibber.com/en",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Automates charging and heating around cheap hours",
+   "Pays users for grid-balancing events",
+   "Backed by Founders Fund, Balderton and Eight Roads"
+  ],
+  "cons": [
+   "Spot pricing can mean expensive hours if devices are not flexible",
+   "Only available in a few European countries"
+  ],
+  "alternatives": {
+   "intro": "Other smart or dynamic electricity options in Europe.",
+   "items": [
+    {"name": "Octopus Energy", "url": "https://octopus.energy/", "what": "Electricity supplier with smart and agile tariffs", "difference": "Large UK-based supplier also active in Germany and other countries."},
+    {"name": "1KOMMA5°", "url": "https://1komma5grad.com/", "what": "Solar, heat pumps and an energy management system", "difference": "Sells and installs hardware along with a dynamic tariff."},
+    {"name": "Rabot Energy", "url": "https://www.rabot.energy/", "what": "German dynamic electricity tariff with an app", "difference": "Focused on the German market."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Tibber?", "a": "A digital electricity supplier with an app that automates EV charging and heating to use power when it is cheapest."},
+   {"q": "Which countries is Tibber in?", "a": "Its website links to local sites for Germany, the Netherlands and Norway. In 2020 it also served Sweden."},
+   {"q": "Who founded Tibber?", "a": "Edgeir Vårdal Aksnes and Daniel Lindén founded it in 2016."},
+   {"q": "How much has Tibber raised?", "a": "TechCrunch reported a $12 million Series A in 2019 led by Founders Fund, and Balderton announced a $65 million Series B in November 2020."}
+  ],
+  "sources": [
+   {"label": "Tibber: homepage", "url": "https://tibber.com/en"},
+   {"label": "Balderton: Tibber closes $65M funding (Nov 2020)", "url": "https://www.balderton.com/news/tibber-closes-65m-funding-to-help-more-customers-lower-their-energy-bills-and-consumption/"},
+   {"label": "TechCrunch: Founders Fund invests in Tibber (2019)", "url": "https://techcrunch.com/2019/03/19/founders-fund-investors-in-tibber-a-norwegian-ai-to-smartly-manage-energy"},
+   {"label": "Tech.eu: Tibber raises $65 million", "url": "https://tech.eu/2020/11/17/tibber-series-b/"}
+  ]
+ }
+}

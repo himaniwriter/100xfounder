@@ -1,0 +1,135 @@
+{
+ "slug": "observe-ai",
+ "website": "https://www.observe.ai/",
+ "excerpt": "Observe.AI sells AI agents, agent assist and conversation analytics for customer contact centres. Products, funding and alternatives.",
+ "content": "<p>Observe.AI is a software company for customer contact centres. Its site describes purpose-built AI agents in one customer-experience platform: voice AI agents that answer and handle calls, chat agents, real-time assistance for human agents during calls, conversation analytics, automated quality assurance and workflow orchestration, with governance features aimed at large and regulated contact centres. The company is incorporated as Z21 Labs Inc.</p><p>On 26 March 2025 Observe.AI made its VoiceAI agents generally available. SiliconANGLE reported that they can handle anything from simple FAQs to multi-step tasks such as booking a flight or renewing a subscription, use a mix of custom and third-party models including small task-specific ones, connect to CRM and help-desk systems through more than 200 prebuilt connectors, remove personal information before storage, and can be deployed as private instances. The company claims the agents can cut contact-centre costs by up to 80% in some cases and says more than 350 organisations use its platform; both are company figures. In November 2025 Gartner named it a Cool Vendor in customer service and support technology. Customer logos on its site include DoorDash, DailyPay, Accolade and JG Wentworth.</p><p>Observe.AI raised a $54 million Series B led by Menlo Ventures and, in April 2022, a $125 million Series C led by SoftBank Vision Fund 2 with Zoom among the participants, taking its total funding past $210 million. We found no later funding announcement.</p><p>Observe.AI does not publish prices; it sells enterprise contracts after a demo. It suits contact centres with dozens to thousands of agents rather than small support teams.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Contact centre AI",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Voice and chat AI agents, real-time agent assist and QA for contact centres",
+  "maker": {
+   "name": "Observe.AI (Z21 Labs Inc.)",
+   "url": "https://www.observe.ai/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/5caac3a8d636b7cfc2606d35/67253fc31c716c840bab91c1_OG%20Image.jpg",
+    "alt": "Observe.AI logo, a black sound-wave mark and the words OBSERVE·AI, on a bright yellow background",
+    "credit": "Image: Observe.AI (observe.ai)",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/5caac3a8d636b7cfc2606d35/6786bed796ada207c1066414_Webclip.jpg",
+    "alt": "Observe.AI icon: a black stylised sound wave of vertical and horizontal bars on yellow",
+    "credit": "Image: Observe.AI (observe.ai)",
+    "w": 256,
+    "h": 256
+   }
+  ],
+  "use_cases": [
+   "Automating inbound calls with voice AI agents",
+   "Real-time guidance for human agents on calls",
+   "Scoring calls for quality assurance",
+   "Analysing conversations for compliance and trends",
+   "Handling chat with AI agents"
+  ],
+  "audience": {
+   "fit": [
+    "run a contact centre with high call volumes",
+    "work in a regulated industry needing QA and PII controls",
+    "want voice AI agents alongside human agents"
+   ],
+   "not_fit": [
+    "have a small support team",
+    "want self-serve pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "Observe.AI does not publish prices; it sells enterprise contracts after a demo.",
+   "plans": [
+    {
+     "name": "Observe.AI platform",
+     "price": "Quote on request",
+     "detail": "AI agents, agent assist, QA and analytics"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.observe.ai/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Voice AI agents, agent assist and QA in one platform",
+   "200+ prebuilt integrations",
+   "Privacy features such as PII removal"
+  ],
+  "cons": [
+   "No public pricing",
+   "Cost-saving figures are the company's own"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "NICE CXone",
+     "url": "https://www.nice.com/",
+     "what": "Contact centre platform with AI",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Full contact-centre suite from a large incumbent."
+    },
+    {
+     "name": "Cresta",
+     "url": "https://cresta.com/",
+     "what": "Real-time AI for contact centre agents",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Strong in real-time agent guidance."
+    },
+    {
+     "name": "Voiceops",
+     "url": "https://www.voiceops.com/",
+     "what": "AI call analysis for B2C companies",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Smaller, focused on call insights rather than AI agents."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Observe.AI do?",
+    "a": "It provides AI agents, real-time agent assist, QA and conversation analytics for contact centres."
+   },
+   {
+    "q": "How much has Observe.AI raised?",
+    "a": "More than $210 million, including a $125 million Series C led by SoftBank Vision Fund 2 in 2022."
+   },
+   {
+    "q": "How much does Observe.AI cost?",
+    "a": "It does not publish prices; you request a demo."
+   }
+  ],
+  "sources": [
+   {
+    "label": "SiliconANGLE: Observe.AI extends its contact center platform with VoiceAI agents (26 Mar 2025)",
+    "url": "https://siliconangle.com/2025/03/26/observe-ai-extends-contact-center-platform-new-voiceai-agents/"
+   },
+   {
+    "label": "Business Wire: Observe.AI raises $125M Series C (12 Apr 2022)",
+    "url": "https://www.businesswire.com/news/home/20220412005208/en/Observe.AI-Raises-%24125M-Series-C-to-Usher-in-AI-Empowered-Era-for-Contact-Centers"
+   },
+   {
+    "label": "Entrepreneur India: Observe.AI bags $54 Mn in Series B led by Menlo Ventures",
+    "url": "https://india.entrepreneur.com/?p=41531"
+   },
+   {
+    "label": "Observe.AI official site",
+    "url": "https://www.observe.ai/"
+   }
+  ]
+ }
+}

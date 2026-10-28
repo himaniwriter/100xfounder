@@ -1,0 +1,114 @@
+{
+ "slug": "harden",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/agent-integrity-foundation-aif",
+ "excerpt": "Harden AIF (Agentic Integrity Foundation) is a free, local firewall for AI coding agents: it checks each tool call from Claude Code, Codex, Cursor or Gemini CLI before it runs and blocks secret leaks or risky commands. How it works, what it sends home and alternatives.",
+ "content": "<p>Harden AIF, short for Agentic Integrity Foundation, is a security layer that sits between an AI coding agent and your machine. It hooks into Claude Code, Codex, Cursor, Gemini CLI and Kiro, with a bridge for OpenClaw and Hermes, and checks each shell, Python, Node or MCP tool call before it executes. A call can be allowed, rewritten to a safer version, or blocked with the evidence shown and a nudge for the agent to retry safely. Its main job, according to its trust page, is to stop an agent from reading a secret and sending it somewhere it shouldn't, or reaching for a destructive command.</p><p>Everything runs locally: a daemon listens on your machine only, decisions and the audit trail stay in a local database, and there is no account or sign-in. Harden says it sends only anonymous counters (version, OS, which agents are connected and block counts), which you can inspect before sending or switch off with one environment variable. It installs with one command and has a local dashboard. The trust page is candid about limits: this v0.x release targets careless agents, not deliberately evasive or prompt-injected ones, and the software is closed source.</p><p>Harden AIF launched on Product Hunt on 9 September 2026, its first launch there, and finished #2 for the day with 391 upvotes and 109 comments.</p><p><em>We have not tested Harden AIF ourselves. This page brings together Harden's official site, its GitHub README and trust page, its Product Hunt page, reviews and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI developer security",
+  "platform": "Local command-line tool and dashboard for coding agents",
+  "starts_at": "Free",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Free local firewall that checks AI coding agents' tool calls before they run",
+  "maker": {"name": "Pushpak Pujari", "url": "https://www.producthunt.com/@pushpak_pujari1"},
+  "team": [
+   {"name": "Pushpak Pujari", "role": "Founder", "url": "https://www.producthunt.com/@pushpak_pujari1"},
+   {"name": "pushpendre rastogi", "role": "CTO", "url": "https://www.producthunt.com/@pushpendre_rastogi"},
+   {"name": "Kartik Rawat", "role": "Founder Office", "url": "https://www.producthunt.com/@kartikrawatt"},
+   {"name": "Rishav", "role": "Founding AI Engineer", "url": "https://www.producthunt.com/@rishav99"}
+  ],
+  "ph": {"rank": 2, "votes": 391, "comments": 109, "followers": 1403, "launched": "2026-09-09", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Letting Claude Code or Codex work unattended with a check on every command",
+   "Stopping an agent from reading .env files or secrets and sending them out",
+   "Catching risky npx installs or destructive shell commands before they run",
+   "Replacing hand-maintained hook scripts and pattern matchers",
+   "Reviewing an audit trail of what an agent tried to do"
+  ],
+  "audience": {
+   "fit": [
+    "hand bigger tasks to coding agents and worry about what they run",
+    "want checks that stay on your machine rather than a hosted monitor",
+    "maintain your own Claude hooks or dangerous-pattern lists today"
+   ],
+   "not_fit": [
+    "need protection against a deliberately compromised or prompt-injected agent: Harden says that is outside this release's claims",
+    "require open-source security tools: AIF is closed source",
+    "want uncertain calls blocked by default: the team said unsure calls are currently allowed and logged"
+   ]
+  },
+  "pricing": {
+   "intro": "Harden AIF is free. Its trust page commits that core pre-execution secret-flow blocking on your machine is free forever; features outside that core are labelled 'Preview — included free today' and could change later.",
+   "url": "https://aif.harden.run/trust.md",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "AIF", "price": "Free", "amount": 0, "currency": "USD", "detail": "Local pre-execution checks for supported agents, block-and-steer, local dashboard and audit trail, no account"}
+   ],
+   "notes": [
+    "The team said on Product Hunt that it is free for individual developers.",
+    "The trust page mentions adversarial-grade analysis as a possible future paid capability."
+   ]
+  },
+  "alternatives": {
+   "intro": "Arcjet and HOL Guard are on Product Hunt's alternatives list; Claude Code's own hooks are the do-it-yourself option commenters mentioned. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Arcjet", "url": "https://arcjet.com/", "what": "Runtime security for AI agents you are building", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 2, "ph_url": "https://www.producthunt.com/products/arcjet", "difference": "Protects agents inside your own application; Harden guards the coding agents on your development machine."},
+    {"name": "HOL Guard", "url": "https://www.producthunt.com/products/hol-guard", "what": "Firewall for AI agents", "starts_at": "See its pricing page", "ph_url": "https://www.producthunt.com/products/hol-guard", "difference": "Similar idea; compare which agents and languages each covers."},
+    {"name": "Claude Code hooks", "url": "https://docs.anthropic.com/en/docs/claude-code/hooks", "what": "Built-in hooks for running your own checks before tool calls", "starts_at": "Included with Claude Code", "difference": "Free and flexible but you write and maintain the rules; Harden supplies the analysis and covers several agents."}
+   ],
+   "more": "Product Hunt also lists mcpgawk, EDAMAME Security and SolonGate."
+  },
+  "reviews": {"count": 2, "rating": 4.5, "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Running fully locally", "One-command setup that flags risky calls without hand-written rules"],
+    "asked": ["What it does when unsure (currently allows and logs)", "Whether it inspects the scripts a command runs (yes, plus files, dependencies and session history)", "Whether it covers install steps such as npx (yes, if they go through the agent's tool flow)"],
+    "criticised": ["Thin documentation at launch; the docs were bundled inside the app"]
+   },
+   "quotes": [
+    {"text": "It runs entirely local so nothing about my repo or tool output leaves my machine.", "author": "Gal Dayan", "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif/reviews?review=621341"},
+    {"text": "Setup was a single install and it started flagging risky tool calls immediately without me having to write any rules by hand.", "author": "Gal Dayan", "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif/reviews?review=621341"}
+   ]
+  },
+  "pros": [
+   "Free, with a written commitment that core blocking stays free",
+   "Decisions made locally; no account or sign-in",
+   "Covers Claude Code, Codex, Cursor, Gemini CLI and Kiro",
+   "Inspects the scripts behind a command, not just the command",
+   "Telemetry is minimal, inspectable and can be turned off"
+  ],
+  "cons": [
+   "Not designed to stop deliberately adversarial agents in this release",
+   "Closed source",
+   "Uncertain calls are allowed by default for now",
+   "Early v0.x software with limited documentation"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/agent-integrity-foundation-aif",
+   "x": {"none": "We found no posts about Harden AIF on X to link yet.", "search_url": "https://x.com/search?q=harden.run&f=live", "profile_url": "https://x.com/hardenrun"}
+  },
+  "faq": [
+   {"q": "What is Harden AIF?", "a": "A local firewall for AI coding agents that checks each tool call before it runs and allows it, makes it safer or blocks it."},
+   {"q": "Is Harden free?", "a": "Yes. Its trust page says core pre-execution secret-flow blocking on your machine is free forever; other features are free previews for now."},
+   {"q": "Which agents does it support?", "a": "Claude Code, Codex, Cursor (IDE and CLI), Gemini CLI and Kiro through hooks, plus OpenClaw and Hermes through a bridge process."},
+   {"q": "Does my code leave my machine?", "a": "No, according to Harden: decisions are made by a local daemon, and only anonymous counters such as version, OS and block counts are sent, which you can opt out of."},
+   {"q": "What happens when it isn't sure a call is safe?", "a": "The team said it currently allows and logs the call so as not to slow developers down, and is working on feedback that asks the agent to proceed more safely."},
+   {"q": "How do I install it?", "a": "The README gives a one-line install script, then aif configure, aif demo and aif show for the local dashboard."}
+  ],
+  "sources": [
+   {"label": "Harden official site", "url": "https://harden.run/"},
+   {"label": "Harden AIF on GitHub", "url": "https://github.com/hardenrun/aif"},
+   {"label": "Harden AIF trust page", "url": "https://aif.harden.run/trust.md"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif"},
+   {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif/reviews"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif/alternatives"},
+   {"label": "Claude Code hooks documentation", "url": "https://docs.anthropic.com/en/docs/claude-code/hooks"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/fbfffcf5-e79b-4b67-b0b9-029ae846ca2a.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Harden AIF dashboard showing tool calls checked before execution across connected agents", "credit": "Image: Harden via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/97fc2dfa-85d2-465d-8d39-b30b22bfec86.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Harden AIF session view: every tool call allowed, made safe or blocked", "credit": "Image: Harden via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/fa1dd5f2-1dd9-499c-a74d-aa475e9c1740.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Harden diagram 'AIF runs locally so your code stays private' with agents, tool commands and protected resources", "credit": "Image: Harden via Product Hunt"}
+  ]
+ }
+}

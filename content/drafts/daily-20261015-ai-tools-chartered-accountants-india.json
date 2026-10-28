@@ -1,0 +1,146 @@
+{
+ "type": "post",
+ "slug": "ai-tools-chartered-accountants-india",
+ "title": "AI Tools for Chartered Accountants in India: GST, Tally and Drafting",
+ "excerpt": "Which AI tools Indian CAs can use for GST reconciliation, Tally entries and notice drafting, with vendor prices, ICAI's CA GPT and DPDP data cautions.",
+ "category": "fintech",
+ "tags": [
+  "ai tools for ca",
+  "chartered accountants",
+  "icai ca gpt",
+  "gst reconciliation",
+  "tallyprime",
+  "vyapar taxone",
+  "dpdp act",
+  "tax professionals india"
+ ],
+ "content": "<p>The AI tools that help a chartered accountant's practice in India today are mostly built into GST, accounting and reconciliation software, not standalone chatbots. As of 15 October 2026, the useful set is narrow: ICAI's own CA GPT for research, reconciliation tools such as Vyapar TaxOne (formerly Suvit) and Clear GST for GSTR-2B and purchase-register matching, Tally's Docs by Ira for turning client invoices into draft vouchers, and a general assistant on a business plan for drafting. The bigger question is what client data you can safely put into them.</p>\n\n<h2>Key takeaways</h2>\n<ul>\n<li>ICAI launched CA GPT on 1 July 2024 and offers it free to all members; by November 2024 it said more than 70,000 members were using it.</li>\n<li>For GST work, AI is most useful in reconciliation: matching supplier invoices against GSTR-2B and the purchase register, and flagging mismatches for a human to decide.</li>\n<li>Prices published by vendors range from about ₹1 a page (Tally's Docs by Ira packs) to ₹10,000 a year (Vyapar TaxOne's unlimited plan), plus 18% GST.</li>\n<li>We found no ICAI rule that bans or approves specific AI tools, but the confidentiality duty in the Chartered Accountants Act still applies to anything you upload.</li>\n<li>The DPDP Rules, notified on 14 November 2025, phase in over 18 months; penalties for failing to protect personal data can reach ₹250 crore.</li>\n</ul>\n\n<h2>What AI actually does in a CA practice</h2>\n<p>A practice's hours go into data entry, reconciliation with government records, returns, and drafting. AI helps most with entry, reconciliation and drafting: tools read invoices and bank statements, propose ledger entries, suggest which purchase invoice matches which line in GSTR-2B, and produce first drafts of letters and notice replies.</p>\n<p>None of them take responsibility. Every tool below drafts something for review or suggests matches you accept or reject, which is the right design for a profession whose signature carries legal weight. If software posts entries or files returns without a human step, treat that as a warning sign.</p>\n<p>This article covers tools for practice workflows. If you are a founder choosing bookkeeping software for your own company, or a shop owner looking for everyday AI tools, our other guides cover those separately; for the latest AI and startup developments, see our <a href=\"/news/\">news section</a>.</p>\n\n<h2>ICAI's own tools: CA GPT and the AI portal</h2>\n<p>The Institute of Chartered Accountants of India (ICAI), which regulates the profession, has moved faster on AI than many expected. According to an ICAI press release dated 25 November 2024, CA GPT was launched on 1 July 2024 and is available free of cost to all members. The same release said more than 70,000 members were actively using it and had generated over 2.5 lakh (250,000) prompts, and that a separate GPT for CA students had more than 50,000 users.</p>\n<p>CA GPT is not one model but a set of specialised assistants. The November 2024 release counts 19 of them: 16 built from ICAI committee material, plus GPTs for UAE VAT, UAE corporate tax, the Constitution of India, and a new Industry Forum. That Industry Forum, launched at a webinar on 24 November 2024, holds the FY 2023-24 annual reports of 5,000 listed companies, linked to more than 70 industry GPTs. That is a useful starting point for benchmarking a client against listed peers.</p>\n<p>An article on ICAI's AI portal describes CA GPT as a \"fenced\" tool developed with OpenAI and trained on ICAI material. The portal itself, at ai.icai.org, now carries a use-case library, a prompt library, AI certificate courses (AICA Level-1 and Level-2) and a survey on AI adoption in CA offices.</p>\n<p>The prompt library is practical. One entry, filed under indirect tax and GST, is a prompt for drafting replies to GST show-cause notices, DRC-01 and DRC-01A intimations, scrutiny notices, refund queries and input tax credit (ITC) mismatch demands. It returns a covering letter, a point-wise reply mapped to evidence, and legal submissions. The entry names ChatGPT as the model it was written for. It does not carry any warning about checking citations or removing client details, so add those steps yourself.</p>\n<!-- xf-image-2 -->\n\n<h2>GST reconciliation: where AI saves the most time</h2>\n<p>Reconciling a client's purchase register with GSTR-2B (the auto-drafted statement of input tax credit from suppliers' filings) is repetitive, high-volume work, which makes it the clearest case for automation.</p>\n<h3>Vyapar TaxOne (formerly Suvit)</h3>\n<p>Suvit, an accounting-automation tool that works with Tally, now sells under the Vyapar TaxOne name; its old pricing page redirects to the new one. According to the TaxOne pricing page, checked on 15 October 2026, there is a single Unlimited Plan at ₹10,000 a year, shown as half of a ₹20,000 list price, with GST charged on top and a 7-day free trial that needs no card.</p>\n<p>The plan covers unlimited bank statements (Excel, PDF and scanned PDF), unlimited sales and purchase entries from Excel, PDF, images or the GST API, ledger and item masters, and a transfer from Vyapar to Tally. The page lists GST reconciliation and filing as a core module.</p>\n<p>Who it suits: small and mid-sized practices whose clients keep books in Tally and send a mix of PDFs, photos and bank statements every month.</p>\n<h3>Clear GST</h3>\n<p>Clear (formerly ClearTax) aims its GST software at CAs, tax experts and larger businesses. Its product page describes an AI-powered reconciliation engine that suggests invoice matches, which you accept or reject, and lets you link or de-link invoice pairs. It also supports the Invoice Management System (IMS), the GST portal feature where recipients accept, reject or hold supplier invoices, with what the page calls smart recommended IMS actions. You can pull GSTR-2A and 2B data across months and file across GSTINs from one screen at PAN level.</p>\n<p>The page claims the software can match 10,000 documents in a minute using more than 150 fuzzy-logic rules; treat that as a vendor figure. Clear does not publish prices for this product, so expect a sales call and a quote. It suits firms handling clients with many GSTINs or high invoice volumes, where PAN-level views matter more than price.</p>\n\n<h2>Turning client paperwork into entries: Tally's Docs by Ira</h2>\n<p>For practices that still key purchase invoices into TallyPrime, Tally Solutions now sells an AI add-on. According to its TallyIra page, the first product, Docs by Ira, reads invoices scanned in the TallyIra phone app or imported in TallyPrime, extracts the party, invoice number, date, amounts, GST and line items, flags mismatches or missing details, maps parties and items to existing masters, catches duplicate invoices, and creates draft vouchers in bulk, up to 10 files per upload.</p>\n<p>The page is explicit that nothing posts to TallyPrime without the user's review and approval, and says documents are used only to do the job and are not used to train models for anyone else's benefit.</p>\n<p>Docs by Ira needs a TallyPrime licence in India with an active Tally Software Services (TSS) subscription, on Release 7.1 or later. Each eligible serial number gets 100 free pages once. After that, the page lists a Regular pack of 200 pages at ₹200 and a Pro pack of 3,000 pages at ₹3,000, each valid for a year, plus 18% GST. That works out to about ₹1 a page.</p>\n<p>For context, Tally's own pricing page lists TallyPrime Silver (single user) at ₹750 a month, ₹8,100 a year or ₹22,500 for a lifetime licence, and Gold (multi-user) at ₹2,250 a month, ₹24,300 a year or ₹67,500 lifetime, all plus 18% GST.</p>\n<!-- xf-image-3 -->\n<h3>When the client is on Zoho Books</h3>\n<p>Zoho's Indian pricing page lists a free plan for one user plus one accountant, so you can join a client's books as the accountant. Paid plans start at ₹749 a month billed annually and include receipt autoscans (200 a month on Standard), with prices excluding local taxes.</p>\n\n<h2>Drafting: notices, memos and client letters</h2>\n<p>General-purpose assistants are useful for first drafts of notice replies, engagement and management letters, and plain-language explanations of a tax position for clients.</p>\n<p>The plan matters more than the model, because consumer and business plans treat your data differently. Anthropic's pricing page, checked on 15 October 2026, lists model training on content as opt-out on its individual Free, Pro and Max plans, and states no model training on your content by default for its Team plan, which costs $20 per seat a month on annual billing or $25 monthly, for 2 to 150 seats. OpenAI's pricing page lists ChatGPT Business at $20 per user a month billed annually for two or more users, or $25 monthly. Google's Indian plans page lists Google AI Pro at ₹1,950 a month.</p>\n<p>Whatever you use, three rules keep drafting safe:</p>\n<ul>\n<li><strong>Remove identifiers first.</strong> Replace names, PAN, GSTIN, Aadhaar and bank details with placeholders before pasting a notice or a ledger extract.</li>\n<li><strong>Check every citation.</strong> Section numbers, rule numbers, circulars and case names must be verified against the official text before anything is filed.</li>\n</ul>\n\n<h2>What ICAI has said, and the rule that already applies</h2>\n<p>ICAI's public position is encouragement: it built CA GPT, runs AI courses and publishes prompts and use cases. As of 15 October 2026 we did not find an ICAI circular or standard that lists approved AI tools, bans particular ones, or sets specific rules for uploading client data to them. If one is issued, it will take precedence over anything here.</p>\n<p>That does not leave a gap. The Chartered Accountants Act, 1949 already treats it as professional misconduct for a member in practice to disclose information acquired in the course of a professional engagement to anyone other than the client, without the client's consent or a legal requirement (clause 1, Part I of the Second Schedule). Uploading a client's unredacted ledger or notice to a third-party service is a disclosure to that service. Whether it breaches the clause will depend on the facts and on what your engagement letter says, which is why it makes sense to add a short AI clause to engagement letters and get the client's written consent.</p>\n<!-- xf-image-4 -->\n\n<h2>DPDP Act: the data-privacy side</h2>\n<p>Practice files are full of personal data: PAN and Aadhaar numbers, salary slips and bank statements. India's Digital Personal Data Protection Act, 2023 governs how that data is handled. According to a Press Information Bureau backgrounder dated 17 November 2025, the government notified the DPDP Rules on 14 November 2025, with an 18-month period for phased compliance.</p>\n<p>The same backgrounder sets out the penalty ceilings: up to ₹250 crore for a data fiduciary that fails to keep reasonable security safeguards, up to ₹200 crore for failing to notify the Data Protection Board or affected people of a breach, and up to ₹50 crore for other violations. Crore means 10 million. The Act defines a data fiduciary as whoever decides why and how personal data is processed, and a data processor as an entity that processes it on a fiduciary's behalf.</p>\n<p>A CA firm may be a fiduciary for some data and a processor for clients' data; an AI vendor receiving uploads will usually be the firm's processor. Three steps follow:</p>\n<ul>\n<li>Know where each tool stores and processes data, and whether it uses your uploads to train models. Get it in writing.</li>\n<li>Upload only what the task needs. A reconciliation tool needs invoice data, not the client's Aadhaar card.</li>\n<li>Have a breach plan. The Rules require affected individuals to be told without delay, in plain language.</li>\n</ul>\n<p>This is a summary, not legal advice. Confirm your firm's obligations with a qualified data-protection lawyer and the official text of the Act and Rules.</p>\n\n<h2>A sensible starting stack for a small practice</h2>\n<table>\n<thead><tr><th>Task</th><th>Tool</th><th>Published price (checked 15 Oct 2026)</th></tr></thead>\n<tbody>\n<tr><td>Research on standards, ICAI material, listed-company reports</td><td>ICAI CA GPT</td><td>Free for ICAI members</td></tr>\n<tr><td>Bank statements and invoices into Tally, GST reconciliation</td><td>Vyapar TaxOne</td><td>₹10,000 a year + GST</td></tr>\n<tr><td>High-volume GSTR-2B and IMS matching across GSTINs</td><td>Clear GST</td><td>Not published; quote on request</td></tr>\n<tr><td>Invoices into draft TallyPrime vouchers</td><td>Docs by Ira</td><td>₹200 per 200 pages + GST (needs active TSS)</td></tr>\n<tr><td>Drafting replies, letters and memos</td><td>A business-tier assistant (for example Claude Team or ChatGPT Business)</td><td>From $20 per seat a month, billed annually</td></tr>\n</tbody>\n</table>\n<p>Start with one workflow, usually monthly GST reconciliation for your largest clients, and measure the hours saved over two cycles before adding the next tool. Hiring staff to run them? Our <a href=\"/jobs/\">jobs board</a> lists roles from official careers pages, and the <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a> helps set an offer.</p>\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>For an Indian CA practice, AI is already worth paying for in reconciliation and data entry, where tools suggest and humans approve, and it is useful for first drafts. It is not a substitute for professional judgement, and the confidentiality and DPDP duties make careless uploading the main risk. Pick tools that keep a human approval step, use business plans that do not train on your content, strip identifiers before you paste, and record client consent in the engagement letter.</p>\n<p>Prices change often; confirm them on vendor sites. This is not tax, legal or professional advice: confirm your obligations with ICAI guidance, the official statutes and a qualified professional.</p>\n\n<h2>FAQ</h2>\n<h3>Is CA GPT free for chartered accountants?</h3>\n<p>Yes. ICAI says it has been free for all members since 1 July 2024.</p>\n<h3>Which AI tool is best for GSTR-2B reconciliation?</h3>\n<p>Vyapar TaxOne publishes a flat ₹10,000-a-year plan suited to Tally-based practices; Clear GST, priced on request, suits clients with many GSTINs and high volumes.</p>\n<h3>Can I upload client data to ChatGPT or Claude?</h3>\n<p>Only with care: the CA Act bars disclosing client information without consent. Use a business plan, remove identifiers and record consent.</p>\n<h3>Has ICAI issued rules on using AI?</h3>\n<p>We found no ICAI circular approving or banning specific AI tools as of 15 October 2026. Existing confidentiality rules still apply.</p>\n<h3>Does Tally have AI now?</h3>\n<p>Yes. Docs by Ira prepares draft TallyPrime vouchers from invoices, sold in page packs.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>ICAI Public Relations Committee, <a href=\"https://icai.org/post/prc-icai-unveils-groundbreaking-ca-gpt-platform\">\"ICAI unveils groundbreaking CA GPT platform\"</a>, 25 November 2024</li>\n<li>ICAI AI portal, <a href=\"https://ai.icai.org/articles_details.php?id=48\">\"ICAI Embraces Artificial Intelligence with Launch of CA GPT\"</a>, accessed 15 October 2026</li>\n<li>ICAI AI portal, <a href=\"https://ai.icai.org\">\"AI at ICAI\" home page</a>, accessed 15 October 2026</li>\n<li>ICAI AI portal, <a href=\"https://ai.icai.org/prompt_details.php?id=33\">\"AI-Based GST Notice &amp; SCN Reply Drafting Prompt for Chartered Accountants\"</a>, accessed 15 October 2026</li>\n<li>The Chartered Accountants Act, 1949, <a href=\"https://www.advocatekhoj.com/library/bareacts/charteredaccountants/schedule2part1.php\">Second Schedule, Part I</a>, accessed 15 October 2026</li>\n<li>Press Information Bureau, <a href=\"https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117695301.pdf\">\"DPDP Rules, 2025 Notified\"</a>, 17 November 2025</li>\n<li>Vyapar TaxOne, <a href=\"https://taxone.vyapar.com/pricing\">\"Pricing\"</a>, accessed 15 October 2026</li>\n<li>Clear, <a href=\"https://cleartax.in/s/gst-software\">\"GST software\"</a>, accessed 15 October 2026</li>\n<li>Tally Solutions, <a href=\"https://tallysolutions.com/tally-ira/\">\"TallyIra: Docs by Ira\"</a>, accessed 15 October 2026</li>\n<li>Tally Solutions, <a href=\"https://tallysolutions.com/buy-tally/\">\"Buy TallyPrime\"</a>, accessed 15 October 2026</li>\n<li>Zoho, <a href=\"https://www.zoho.com/in/books/pricing/\">\"Zoho Books pricing (India)\"</a>, accessed 15 October 2026</li>\n<li>Anthropic, <a href=\"https://claude.com/pricing\">\"Claude pricing\"</a>, accessed 15 October 2026</li>\n<li>OpenAI, <a href=\"https://learn.chatgpt.com/docs/pricing\">\"Pricing\"</a>, accessed 15 October 2026</li>\n<li>Google, <a href=\"https://gemini.google/in/subscriptions/\">\"Google AI plans (India)\"</a>, accessed 15 October 2026</li>\n</ol>\n",
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Goods_and_Services_Tax_%28GST%29_Bhavan%2C_Thiruvananthapuram.jpg/1920px-Goods_and_Services_Tax_%28GST%29_Bhavan%2C_Thiruvananthapuram.jpg",
+   "alt": "The main office building of GST Bhavan near the Kerala secretariat in Thiruvananthapuram",
+   "caption": "GST Bhavan in Thiruvananthapuram. Reconciling client data with GST records is where AI saves practices the most time.",
+   "credit": "Photo: Amitbalani / Wikimedia Commons, CC0",
+   "license": "CC0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Goods_and_Services_Tax_(GST)_Bhavan,_Thiruvananthapuram.jpg"
+  },
+  {
+   "url": "https://live.staticflickr.com/65535/51405962975_b42617b390_b.jpg",
+   "alt": "A ballpoint pen resting on a printed income tax return form",
+   "caption": "AI assistants can draft notice replies and letters, but every citation still needs checking by the CA who signs.",
+   "credit": "Photo: Ivan Radic / Openverse (Flickr), CC BY 2.0",
+   "license": "CC BY 2.0",
+   "source_page": "https://www.flickr.com/photos/26344495@N05/51405962975"
+  },
+  {
+   "url": "https://live.staticflickr.com/3130/2693815369_d554854cf9_b.jpg",
+   "alt": "A stack of paper invoices on a desk",
+   "caption": "Invoice-reading tools such as Docs by Ira turn paper and PDF bills into draft vouchers for review.",
+   "credit": "Photo: cybrgrl / Openverse (Flickr), CC BY 2.0",
+   "license": "CC BY 2.0",
+   "source_page": "https://www.flickr.com/photos/84387590@N00/2693815369"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Aaykar_Bhavan%2C_Income_Tax_Department%2C_Pune.jpg/1920px-Aaykar_Bhavan%2C_Income_Tax_Department%2C_Pune.jpg",
+   "alt": "Aaykar Bhavan, the Income Tax Department building near Sadhu Vaswani Chowk in Pune",
+   "caption": "Aaykar Bhavan, Pune. Client tax files hold personal data covered by both CA confidentiality rules and the DPDP Act.",
+   "credit": "Photo: DesiBoy101 / Wikimedia Commons, CC BY 4.0",
+   "license": "CC BY 4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Aaykar_Bhavan,_Income_Tax_Department,_Pune.jpg"
+  },
+  {
+   "url": "https://live.staticflickr.com/172/374113131_5f820f6c10_b.jpg",
+   "alt": "A single open laptop on an office desk",
+   "caption": "Start with one workflow, such as monthly GST reconciliation, before adding more tools.",
+   "credit": "Photo: cogdogblog / Openverse (Flickr), CC0 1.0",
+   "license": "CC0 1.0",
+   "source_page": "https://www.flickr.com/photos/37996646802@N01/374113131"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://icai.org/post/prc-icai-unveils-groundbreaking-ca-gpt-platform",
+   "publisher": "ICAI Public Relations Committee",
+   "date": "2024-11-25",
+   "claim": "CA GPT launched 1 Jul 2024, free to all members; 70,000+ members, 2.5 lakh prompts; 50,000+ students; 19 GPTs; Industry Forum with FY24 reports of 5,000 listed companies, 70+ GPTs, launched 24 Nov 2024"
+  },
+  {
+   "url": "https://ai.icai.org/articles_details.php?id=48",
+   "publisher": "ICAI AI portal",
+   "date": "2026-10-15",
+   "claim": "CA GPT is a fenced tool developed with OpenAI, trained on ICAI material"
+  },
+  {
+   "url": "https://ai.icai.org",
+   "publisher": "ICAI AI portal",
+   "date": "2026-10-15",
+   "claim": "Portal sections: use cases, prompt library, AICA Level-1/2 courses, AI adoption survey"
+  },
+  {
+   "url": "https://ai.icai.org/prompt_details.php?id=33",
+   "publisher": "ICAI AI portal",
+   "date": "2026-10-15",
+   "claim": "GST notice/SCN reply drafting prompt; covers DRC-01/01A, ASMT, RFD, ITC mismatch; lists ChatGPT; no verification caution"
+  },
+  {
+   "url": "https://www.advocatekhoj.com/library/bareacts/charteredaccountants/schedule2part1.php",
+   "publisher": "Chartered Accountants Act, 1949 (bare act text)",
+   "date": "2026-10-15",
+   "claim": "Clause (1), Part I, Second Schedule: disclosing engagement information without client consent is misconduct"
+  },
+  {
+   "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117695301.pdf",
+   "publisher": "Press Information Bureau",
+   "date": "2025-11-17",
+   "claim": "DPDP Rules notified 14 Nov 2025; 18-month phased compliance; penalties up to ₹250/200/50 crore; definitions of fiduciary and processor; breach notification to individuals"
+  },
+  {
+   "url": "https://taxone.vyapar.com/pricing",
+   "publisher": "Vyapar TaxOne",
+   "date": "2026-10-15",
+   "claim": "Formerly Suvit; Unlimited plan ₹10,000/yr (from ₹20,000) + GST; 7-day trial; features"
+  },
+  {
+   "url": "https://cleartax.in/s/gst-software",
+   "publisher": "Clear",
+   "date": "2026-10-15",
+   "claim": "AI-powered reconciliation suggestions, IMS actions, PAN-level filing, 10,000 documents a minute, 150+ fuzzy rules; no published price"
+  },
+  {
+   "url": "https://tallysolutions.com/tally-ira/",
+   "publisher": "Tally Solutions",
+   "date": "2026-10-15",
+   "claim": "Docs by Ira features, requirements (Release 7.1+, active TSS), 100 free pages, ₹200/200 pages and ₹3,000/3,000 pages + 18% GST, review before posting, no training for others"
+  },
+  {
+   "url": "https://tallysolutions.com/buy-tally/",
+   "publisher": "Tally Solutions",
+   "date": "2026-10-15",
+   "claim": "TallyPrime Silver and Gold prices + 18% GST"
+  },
+  {
+   "url": "https://www.zoho.com/in/books/pricing/",
+   "publisher": "Zoho",
+   "date": "2026-10-15",
+   "claim": "Free plan 1 user + 1 accountant; Standard ₹749/mo annual; receipt autoscans 200/mo; prices exclude local taxes"
+  },
+  {
+   "url": "https://claude.com/pricing",
+   "publisher": "Anthropic",
+   "date": "2026-10-15",
+   "claim": "Team $20/seat annual, $25 monthly, 2-150 seats, no training on content by default; individual plans opt-out"
+  },
+  {
+   "url": "https://learn.chatgpt.com/docs/pricing",
+   "publisher": "OpenAI",
+   "date": "2026-10-15",
+   "claim": "ChatGPT Business $20/user/month annual (2+ users), $25 monthly"
+  },
+  {
+   "url": "https://gemini.google/in/subscriptions/",
+   "publisher": "Google",
+   "date": "2026-10-15",
+   "claim": "Google AI Pro ₹1,950/month in India"
+  }
+ ]
+}

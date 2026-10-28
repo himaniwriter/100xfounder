@@ -1,0 +1,81 @@
+{
+  "name": "Booz Scooters",
+  "slug": "booz-scooters",
+  "existing_listing_slug": null,
+  "tagline": "Ahmedabad electric kick-scooter fleet for campuses and gated communities",
+  "industry_term": "transportation",
+  "excerpt": "Booz Scooters, an Ahmedabad electric scooter rental business, pitched in the very first episode of Shark Tank India.",
+  "content": "<p>Booz runs fleets of electric kick scooters for short trips inside private spaces such as campuses and gated communities. Founder Rutvij Dasadia pitched it in the first episode of Shark Tank India, aired on 20 December 2021, asking for ₹40 lakh for 15%.</p><p>Accounts of the final deal disagree, and none comes from an outlet we rely on, so we do not state the outcome.</p><p>The business continues as Booz Mobility. In September 2024 it signed a partnership with EMotorad, which became the exclusive supplier of kick scooters for its fleet.</p>",
+  "shark_tank": {
+    "season": 1,
+    "episode": 1,
+    "air_date": "2021-12-20",
+    "ask_amount": 4000000,
+    "ask_equity": 15,
+    "ask_valuation": 26666667,
+    "deal": {},
+    "founders": [
+      "Rutvij Dasadia"
+    ],
+    "city": "Ahmedabad",
+    "category": "Electric scooter rental",
+    "pitch_summary": "Rutvij Dasadia pitched electric scooter rentals for private campuses and asked for ₹40 lakh for 15%.",
+    "sources": [
+      {
+        "label": "SET India (official YouTube): Booz Scooters pitch clip, 'asks for Rs. 40 Lakhs for 15% equity', 14 Mar 2023",
+        "url": "https://www.youtube.com/watch?v=GYI5NYMyGBU"
+      },
+      {
+        "label": "SET India (official YouTube): Shark Tank India Ep 1, 20 December 2021 (Booz Scooters led by Rutvij Dasadia)",
+        "url": "https://www.youtube.com/watch?v=XZILVVqt_HI"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Autocar Professional: EMotorad partners with Booz Mobility to supply electric kick scooters, 25 Sep 2024",
+      "url": "https://www.autocarpro.in/news/emotorad-partners-with-booz-mobility-to-supply-electric-kick-scooters-for-fleet-operations-122748"
+    },
+    "notable_since_show": [
+      {
+        "date": "2024-09",
+        "event": "Partnered with EMotorad, which became the exclusive supplier of electric kick scooters for the Booz Mobility fleet.",
+        "source": {
+          "label": "Autocar Professional: EMotorad partners with Booz Mobility to supply electric kick scooters, 25 Sep 2024",
+          "url": "https://www.autocarpro.in/news/emotorad-partners-with-booz-mobility-to-supply-electric-kick-scooters-for-fleet-operations-122748"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "We found no credible report of the final terms or of an investment being completed."
+  },
+  "pitch_video": {
+    "youtube_id": "GYI5NYMyGBU",
+    "channel": "SET India",
+    "title": "Most Explosive | क्या 'Booz Scooters' का Idea करेगा Sharks को High? | Shark Tank India",
+    "url": "https://www.youtube.com/watch?v=GYI5NYMyGBU",
+    "upload_date": "2023-03-14"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/badlegi-business-ki-tasveer-1000150631",
+  "faq": [
+    {
+      "q": "What did Booz ask for on Shark Tank India?",
+      "a": "₹40 lakh for 15% of the company, in Season 1, Episode 1."
+    },
+    {
+      "q": "Is Booz still operating?",
+      "a": "Yes, as Booz Mobility; it announced a scooter supply partnership with EMotorad in September 2024."
+    }
+  ],
+  "lessons": [
+    "Our analysis: a narrow, controlled operating area (campuses, gated communities) makes shared micro-mobility easier to run than open streets."
+  ],
+  "related_pitches": [
+    "revamp-moto"
+  ],
+  "notes": "BELOW PUBLISHING BAR: deal.made not sourced. Wikipedia lists ₹40 lakh for 50% with Ashneer Grover and Vineeta Singh; StartupWired gives different terms and founders. No credible outlet found. Website not confirmed. Swap candidate."
+}

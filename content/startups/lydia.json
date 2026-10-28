@@ -1,0 +1,80 @@
+{
+ "slug": "lydia",
+ "website": "https://sumeria.eu/en/",
+ "excerpt": "Lydia is France's popular peer-to-peer payment app, launched in 2013. In 2024 its banking side became Sumeria, a free online bank account that pays interest; lydia-app.com now redirects to sumeria.eu.",
+ "content": "<p>Lydia started in 2013 as a mobile app for paying friends and running shared money pots, and it became so common in France that \"je te fais un Lydia\" entered everyday speech. Maddyness reported in April 2025 that the Lydia app has 8 million users, mostly in France, and that the company had raised a total of €235 million, with its last round valuing it at a little over €1 billion. Cyril Chiche is co-founder and leads the group, Lydia Solutions.</p><p><strong>Banking became Sumeria.</strong> On 2 April 2024 Lydia split its services into two apps: Lydia for payments between friends and money pots, and Lydia Comptes for banking. On 15 May 2024 Lydia Comptes was renamed Sumeria, and its two million users moved to the new app, Journal du Net reported. Sumeria is an online bank account that pays interest on the current account, which Chiche described as a first for a French player, along with a card and an assisted savings programme called Sumeria+. The Lydia app continues separately for paying friends. lydia-app.com, the address on this listing, now redirects to sumeria.eu.</p><p>Sumeria's About page says the group has 7 million users, 250 employees and offices in Paris, Lyon, Nantes and Bordeaux, with Cyril Chiche as president. Its homepage says the basic Sumeria account is free provided you make at least one eligible transaction every two months, that the card is free and has no foreign transaction fees, that current accounts earn 2% a year for the first three months and then 1%, and that deposits are protected by France's Deposit Guarantee Fund up to €100,000. Paid plans add more features. Maddyness reported that Chiche was considering all options over five years, including a stock market listing.</p><p>Rates and conditions change, so check the official site before opening an account. This profile draws on Sumeria's own pages and published reporting. We have not tested the service, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Peer-to-peer payments and online banking (Lydia and Sumeria)",
+  "platform": "iOS and Android",
+  "starts_at": "Free basic account (with one eligible transaction every two months)",
+  "schema_category": "FinanceApplication",
+  "summary_short": "French payment app Lydia and its banking spin-off Sumeria, an interest-paying online account",
+  "maker": {"name": "Lydia Solutions (Lydia and Sumeria)", "url": "https://sumeria.eu/en/about/"},
+  "team": [
+   {"name": "Cyril Chiche", "role": "Co-founder; President of Lydia Solutions"}
+  ],
+  "gallery": [
+   {"url": "https://sumeria.eu/wp-content/uploads/2026/06/3884f82ea50b09fe0b7f603f4014aa44f74f1c7d-1024x768.jpg", "alt": "A phone leaning on a grey ledge showing the Sumeria app with a green card and a list of recent transactions", "credit": "Image: Sumeria", "w": 1024, "h": 768},
+   {"url": "https://sumeria.eu/wp-content/uploads/2025/11/website_img.png", "alt": "Sumeria app icon, a dark teal rounded square, on a pale blue-grey background", "credit": "Image: Sumeria", "w": 1200, "h": 630}
+  ],
+  "use_cases": [
+   "Paying friends back and splitting bills with Lydia",
+   "Running a shared money pot for a gift or trip",
+   "Opening a free online current account that earns interest with Sumeria",
+   "Paying abroad with no foreign transaction fees on the Sumeria card",
+   "Saving with Sumeria's assisted savings programme"
+  ],
+  "audience": {
+   "fit": [
+    "live in France and pay friends back often",
+    "want a free online bank account that earns interest",
+    "travel and want a card without foreign transaction fees"
+   ],
+   "not_fit": [
+    "live outside France: both apps are aimed mainly at French users",
+    "want a branch-based bank"
+   ]
+  },
+  "pricing": {
+   "intro": "From Sumeria's homepage. The basic account is free if you make at least one eligible transaction every two months; paid plans exist for more features. Interest rates are set by Sumeria and can change.",
+   "plans": [
+    {"name": "Sumeria basic account", "price": "Free", "detail": "Free card, no foreign transaction fees; at least one eligible transaction every two months"},
+    {"name": "Interest on current account", "price": "2% a year for 3 months, then 1%", "detail": "As advertised on the homepage when checked"},
+    {"name": "Paid plans", "price": "See sumeria.eu", "detail": "More features for a monthly fee"}
+   ],
+   "notes": ["Deposits are protected by France's Fonds de Garantie des Dépôts up to €100,000, per the homepage."],
+   "url": "https://sumeria.eu/en/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Lydia is widely used for paying friends in France",
+   "Sumeria's basic account and card are free",
+   "Interest on the current account"
+  ],
+  "cons": [
+   "Mainly for French users",
+   "Interest rate drops after the first three months"
+  ],
+  "alternatives": {
+   "intro": "Other payment apps and online banks in France. We have not compared them hands-on.",
+   "items": [
+    {"name": "Revolut", "url": "https://www.revolut.com/", "what": "Banking app with cards, transfers and savings", "tags": ["Neobank"], "starts_at": "See its own pricing page", "difference": "Pan-European with multi-currency accounts."},
+    {"name": "Wero", "url": "https://wero-wallet.eu/", "what": "European bank-backed mobile payment wallet", "tags": ["P2P payments"], "starts_at": "See its own site", "difference": "Run by a consortium of European banks for instant transfers."},
+    {"name": "Boursobank", "url": "https://www.boursobank.com/", "what": "French online bank", "tags": ["Online bank"], "starts_at": "See its own pricing page", "difference": "Established French online bank with a full product range."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Lydia now Sumeria?", "a": "Partly. In May 2024 Lydia's banking app, Lydia Comptes, was renamed Sumeria. The Lydia app continues for paying friends and money pots."},
+   {"q": "Is Sumeria free?", "a": "The basic account and card are free if you make at least one eligible transaction every two months, per its homepage. Paid plans add more."},
+   {"q": "How many people use Lydia?", "a": "Maddyness reported 8 million Lydia users in April 2025; Sumeria's About page lists 7 million users for the group."},
+   {"q": "Who runs Lydia and Sumeria?", "a": "Cyril Chiche, co-founder and president of Lydia Solutions."}
+  ],
+  "sources": [
+   {"label": "Sumeria: About (Lydia history and key figures)", "url": "https://sumeria.eu/en/about/"},
+   {"label": "Sumeria homepage (account terms and rates)", "url": "https://sumeria.eu/en/"},
+   {"label": "Journal du Net: Lydia Comptes devient Sumeria (15 May 2024)", "url": "https://www.journaldunet.com/fintech/1530369-lydia-comptes-devient-sumeria-une-neobanque-qui-remunere-les-comptes-courants/"},
+   {"label": "Maddyness: Cyril Chiche interview (2 Apr 2025)", "url": "https://www.maddyness.com/2025/04/02/cyril-chiche-lydia-on-envisage-tout-dici-5-ans-dont-une-entree-en-bourse/"}
+  ]
+ }
+}

@@ -1,0 +1,447 @@
+{
+ "input": "https://www.producthunt.com/posts/zinley",
+ "final_url": "https://www.producthunt.com/products/zinley?launch=zinley",
+ "launch": {
+  "slug": "zinley",
+  "name": "Zinley",
+  "tagline": "Your Personal AI Representative for calls, email, and tasks",
+  "featuredAt": "2026-08-02T00:01:00-07:00",
+  "dailyRank": "1",
+  "weeklyRank": "15",
+  "points": 358,
+  "commentsCount": 98,
+  "pricingType": "free_options",
+  "description": "Most AI waits inside a chat. Zinley is reachable by you and the people around you. With its own phone number and email, it answers calls, handles email, books things, and gets work done within your rules. It remembers your people and relationships, then reports back in your language. Not another chatbot. A second you that shows up.",
+  "makers": [
+   {
+    "name": "Jason Chen",
+    "username": "jasonzinley",
+    "headline": "Building the First AI Representative"
+   },
+   {
+    "name": "Khoi Nguyen",
+    "username": "kn1026",
+    "headline": "Building zinley.com"
+   },
+   {
+    "name": "Peter Bakas",
+    "username": "peter_bakas",
+    "headline": null
+   },
+   {
+    "name": "Hoang Nghiem",
+    "username": "hoangnm_zinley",
+    "headline": "Software Engineer"
+   },
+   {
+    "name": "some4254",
+    "username": "some4254",
+    "headline": "Building"
+   },
+   {
+    "name": "Victoria Quynh Anh Nguyen",
+    "username": "victoria_quynh_anh_nguyen",
+    "headline": "Marketing"
+   }
+  ],
+  "hunter": "Rohan Chaubey",
+  "media": [
+   {
+    "uuid": "29fdef64-b213-4aa7-85c5-ad13c0fba45a.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "7f068c66-d70b-4014-a77d-40457225855f.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "ec4bfdd2-777b-47fa-b70f-605c7539fe3a.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "92043f32-dcc4-486c-9bc8-b5f186750bbc.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "996f0db6-45ad-474d-b50a-d5b67ad2ba46.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "c5d583eb-193d-4135-8c8c-9c6f29d48018.png",
+    "type": "image",
+    "w": 1920,
+    "h": 1080,
+    "video": null
+   },
+   {
+    "uuid": "907e9cd4-b6dc-4c87-b650-9e0a99aff480.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://www.youtube.com/watch?v=wcdp_YeKvTM&feature=youtu.be"
+   }
+  ],
+  "links": [
+   "zinley.com",
+   "discord.gg",
+   "x.com",
+   "www.linkedin.com",
+   "x.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    1
+   ]
+  ]
+ },
+ "product": {
+  "name": "Zinley",
+  "slug": "zinley",
+  "tagline": "Your Personal AI Representative for calls, email, and tasks",
+  "description": "Most AI waits inside a chat. Zinley is reachable by you and the people around you. With its own phone number and email, it answers calls, handles email, books things, and gets work done within your rules. It remembers your people and relationships, then reports back in your language. Not another chatbot. A second you that shows up.",
+  "websiteUrl": "https://zinley.com/",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 693,
+  "twitterUrl": "https://x.com/MeetZinley",
+  "linkedinUrl": "https://www.linkedin.com/company/meet-zinley",
+  "postsCount": 1,
+  "screenshots": [
+   "https://ph-files.imgix.net/29fdef64-b213-4aa7-85c5-ad13c0fba45a.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/7f068c66-d70b-4014-a77d-40457225855f.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/ec4bfdd2-777b-47fa-b70f-605c7539fe3a.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/92043f32-dcc4-486c-9bc8-b5f186750bbc.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/996f0db6-45ad-474d-b50a-d5b67ad2ba46.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/c5d583eb-193d-4135-8c8c-9c6f29d48018.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5725845",
+   "depth": 0,
+   "author": "Khoi Nguyen",
+   "username": "kn1026",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt 👋 Maker here. Most AI waits in a chat box. We built the opposite. Zinley is your personal extension — own phone number, email, and computer. It answers calls, handles email, books stuff, follows up, and gets work done inside your rules. Remembers your people. Reports back in your language. Not another chatbot. We extend you so the people around you can actually reach “you” when you’re busy. Curious what you’d hand off first — and what would make you trust an AI with your number and inbox. Here all day. Roast us. — Khoi + team"
+  },
+  {
+   "id": "5734637",
+   "depth": 1,
+   "author": "Artem Fedorovich",
+   "username": "artem_fedorovich",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@kn1026 &nbsp;Handing calls and email to an AI rep is the nervous part from the buyer side, one weird reply to a prospect and the trust is gone. Where do you draw the line on what it does autonomously versus flags for you? I'd trust it fast on scheduling, slowly on anything that sounds like a commitment."
+  },
+  {
+   "id": "5735924",
+   "depth": 2,
+   "author": "some4254",
+   "username": "some4254",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@kn1026 &nbsp; @artem_fedorovich &nbsp;Yes we try to from knowledge of the people and knowledge of us, Zinley understands what kind of the information it can disclose or automated. For the type of information that Zinley aren't sure or aren't sure owner would want to disclose, Zinley will reach back to the user to get confirmation. And since Zinley has the capabilities to call and email itself, it is than able to autonomously reach back and talk to the user with the correct information from the owner"
+  },
+  {
+   "id": "5734650",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the caller-ID angle is what worries me more than prompt injection - if part of how Zinley decides \"is this a known relationship\" leans on caller ID or the from-address, both are trivially spoofable. someone who's done a bit of recon on you (knows your assistant's name, knows a real contact's number) could call in pretending to be that trusted contact and get bumped into the more autonomous tier before Zinley ever has to guess anything risky. is there any out-of-band verification for \"this really is the person Zinley thinks it is,\" or does trust level still ultimately trace back to caller ID/email address matching a stored contact?"
+  },
+  {
+   "id": "5735590",
+   "depth": 1,
+   "author": "some4254",
+   "username": "some4254",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan &nbsp;Hi, yes actually Zinley when talking to the user actively review if there is anything weird about what they are saying: Are they probing private things? Are they asking stuff that aren't consistent with what Zinley know about that person? The understanding of the people help us not just make the conversation more proactive but also make Zinley able to detect, flag and close off these situations where the caller doesn't seem to be genuine or consistent with Zinley knowledge of them."
+  },
+  {
+   "id": "5736312",
+   "depth": 2,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@some4254 &nbsp;that covers content-level weirdness, but doesn't quite answer the identity question - if the conversation itself is consistent (caller knows the right names, right context) because someone actually did their homework, would Zinley still fall back to caller-ID/email as the trust signal? that's the part that'd worry me for anything above low-stakes tasks."
+  },
+  {
+   "id": "5737073",
+   "depth": 3,
+   "author": "Khoi Nguyen",
+   "username": "kn1026",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@some4254 &nbsp; @galdayan &nbsp;yeah — smooth conversation ≠ proven identity. Knowing the right names is homework, not auth. Caller ID / email is still the primary trust signal. For anything above low-stakes, Zinley doesn’t treat “sounds legit” as enough — it stays in a tighter lane or loops you in before acting. High-stakes shouldn’t ride on vibes."
+  },
+  {
+   "id": "5737411",
+   "depth": 0,
+   "author": "Ansari Adin",
+   "username": "ansari_adin",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "\"Remembers your people and relationships\" is the feature that makes this feel genuinely personal but it's also the feature that raises the most questions about what's being stored and for how long. If Zinley is building a relationship graph from your calls and emails, where does that data live, who can access it, and what happens to it if you cancel the subscription or the company shuts down? That's not a hypothetical concern for something that's actively learning about your professional relationships."
+  },
+  {
+   "id": "5739488",
+   "depth": 1,
+   "author": "Khoi Nguyen",
+   "username": "kn1026",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ansari_adin &nbsp;fair question — memory is the product and the risk. Where it lives: your account only, in our backend (per-user People docs). Not shared across users, not sold, not used to train a public model off your graph. Who can access: you + the agent acting for you. Staff doesn’t browse relationship graphs for fun. Control today: inspect, edit, delete people/facts from the dashboard. Cancel/delete account runs erasure (fence so leftovers don’t resurrect). Honest gap: full portable export of the whole graph is still on the list — delete/edit exist; “take my graph and leave” isn’t as clean as it should be yet. If we shut down, same problem every cloud product has — we’re not going to pretend that’s solved by a slogan. Happy to go deeper on any piece."
+  },
+  {
+   "id": "5734334",
+   "depth": 0,
+   "author": "Jernej Jan Kočica",
+   "username": "jernej_jan_kocica",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the boundary question above got answered in terms of actions. who is asking, what permissions, whether it creates a new commitment. what that does not cover is the assertions. is minh free on thursday. did he agree to the earlier price. has he seen my email. none of those create a commitment and all of them pass a permission check, but a wrong answer is a statement of fact about you that the other person then acts on. the risk sits in what it claims about you, not in what it does. we run voice agents on the support side and the pattern is the same there, the wrong answer never sounds wrong. a call makes it harder, because there is no undo and no re-reading. in email a wrong sentence sits in the thread and you can correct it. on a call the other person hangs up with a belief and you never find out which one they left with. so the thing i would want tuned is not the autonomy slider, it is what it is allowed to say when it does not know. \"he has not told me\" is fine. inferring from history that you probably agreed is where it goes wrong, and it will sound equally confident either way. what does ming say today when someone asks a direct question about you that it has no record of?"
+  },
+  {
+   "id": "5735628",
+   "depth": 1,
+   "author": "some4254",
+   "username": "some4254",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@jernej_jan_kocica &nbsp;We know that when AI is representative, truth becomes ever increasingly important. Thus, for the kind of information about the owner that Zinley doesn't know, Zinley will directly inform the caller that it will check with the user on that knowledge and send a follow up notfication/ email to us to confirm these details after the call. These are specifically the type of situations where Zinley should hand off the questions to the owner to follow up later rather than just trying to answer everything directly on the call :&gt;"
+  },
+  {
+   "id": "5736130",
+   "depth": 2,
+   "author": "Jernej Jan Kočica",
+   "username": "jernej_jan_kocica",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@some4254 &nbsp;that is the right shape, and the second half of it is the part i would watch. \"i will check with him and come back to you\" is itself a promise made in your name, so the call now ends with an open commitment instead of a wrong answer. better trade, but only if something closes it. a notification you can swipe away and a real open item look identical to the caller, and from their side a follow up that never arrives is worse than being told you did not know. does that follow up exist as something with a state on it, or is it a nudge in your inbox?"
+  },
+  {
+   "id": "5736184",
+   "depth": 3,
+   "author": "Khoi Nguyen",
+   "username": "kn1026",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@some4254 &nbsp; @jernej_jan_kocica &nbsp;yeah that’s the failure mode. “I’ll check” with nothing behind it is worse than just saying you don’t know. It’s a real open item with state — shows up in Overview, stays open until you answer, then Zinley actually calls/emails them back. Not a swipe-away ping."
+  },
+  {
+   "id": "5736767",
+   "depth": 3,
+   "author": "Jernej Jan Kočica",
+   "username": "jernej_jan_kocica",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@some4254 &nbsp; @kn1026 &nbsp;that is the right build. an open item that stays open until it is answered and then actually goes back out is the whole difference, since from the caller's side a real item and a ping look identical until one of them arrives. good launch, and you had clearly thought about this part already."
+  },
+  {
+   "id": "5734441",
+   "depth": 0,
+   "author": "Richard Acheampong ",
+   "username": "richatsealedvault",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congratulations on your launch. From a fellow founder's perspective, it must be an incredible amount of work and hours of coding to bring the world an \"AI secretary\" to answer calls and emails. I have a few questions about privacy as I could not find your privacy policy. Do you give consent (disclaimers) to callers that conversation is being recorded? What is your solution to a single source of compromise since zinley gets deep access to email clients? and finally zinley booking things, sending emails, and answering calls autonomously means mistakes may be unchecked or possibly prompt-injection manipulation attacks are likely; what guardrails/audit trail exist for irreversible actions?"
+  },
+  {
+   "id": "5736187",
+   "depth": 1,
+   "author": "Khoi Nguyen",
+   "username": "kn1026",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@richatsealedvault &nbsp;Appreciate the founder questions — these are the right ones. Privacy policy: zinley.com/privacy (we’ll surface it clearer on the PH page too). On calls: Zinley discloses it’s an AI rep at the start. Recording/consent follows your settings + local rules — we don’t silently record and ship transcripts around. Email: least privilege + scoped access, not “own your whole life forever.” Revoke anytime. We’re not a black box sitting on full mailbox keys with no controls. Irreversible actions (send, book, pay, outbound call): confirm-first by default, full action log, and human-in-the-loop when it’s outside your rules or confidence is low. Prompt-injection is a real threat model for us — untrusted email/call content can’t freely authorize external side effects. Happy to go deeper on any of these."
+  },
+  {
+   "id": "5736649",
+   "depth": 2,
+   "author": "Richard Acheampong ",
+   "username": "richatsealedvault",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@kn1026 &nbsp;thanks for your prompt answers to my concerns. Best of wishes on Zinley. I know it's the beginning and your team would polish out any unforeseen 'knocks'. Cheers!"
+  },
+  {
+   "id": "5737077",
+   "depth": 3,
+   "author": "Khoi Nguyen",
+   "username": "kn1026",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@richatsealedvault &nbsp;Thanks!"
+  },
+  {
+   "id": "5737212",
+   "depth": 2,
+   "author": "Anna Ludwinowski",
+   "username": "anna_ludwinowski",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@richatsealedvault &nbsp; @kn1026 &nbsp;Congrats on the launch! The \"CC Zinley and the meeting gets booked\" example sold me faster than any of the phone number stuff. What's interesting to me is the problem underneath this isn't really \"too busy,\" it's \"unreachable at the wrong moment\" - the call you'd have lost, not the to-do list you didn't get to. Is that the wedge you're building the whole pitch around, or just one of a few you're still testing?"
+  },
+  {
+   "id": "5739481",
+   "depth": 3,
+   "author": "Khoi Nguyen",
+   "username": "kn1026",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@richatsealedvault &nbsp; @anna_ludwinowski &nbsp; yeah the CC-and-it-books bit lands harder than the phone demo for a lot of people. And you’re right — it’s not “too busy.” It’s missing the thing that only shows up when you’re not there. That’s the wedge. Everything else is just another way in."
+  },
+  {
+   "id": "5736535",
+   "depth": 0,
+   "author": "Aidan Quinn",
+   "username": "aidanquinn",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats Khoi! 🎉 You asked, so here's my answer. What I'd hand off first: inbound email triage and scheduling. I run LemmeBuyIt, a shopping and product intelligence platform, mostly solo, and the interruption tax is worse than the work itself. Every \"quick question\" email costs me 20 minutes of focus. An extension that answers the routine stuff inside my rules and only escalates what actually needs me would be worth real money. The phone number part is bolder and honestly where I'd wait. Question: when it doesn't know something mid-call, does it improvise or does it gracefully punt to \"I'll have him get back to you\"? That answer decides everything for me. Upvoted!"
+  },
+  {
+   "id": "5737079",
+   "depth": 1,
+   "author": "Khoi Nguyen",
+   "username": "kn1026",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@aidanquinn &nbsp;Appreciate this — and yeah, interruption tax is brutal when you’re solo. On the mid-call question: it punts. No improvising facts. “I’ll check with Khoi and get back to you,” then it becomes a real open item until you answer, and Zinley follows up. Wrong answer is worse than a clean hold. Email triage + scheduling first makes total sense. Phone can wait until trust is there."
+  },
+  {
+   "id": "5738682",
+   "depth": 0,
+   "author": "Naved Naik",
+   "username": "naiknaved09",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Congrats! The bit that impressed me: I gave it a genuinely hard technical question and Auto answered on a cheap fast model rather than the priciest one, and naming the chat got routed to something cheaper still. Most tools just run everything on one expensive model. One curiosity: starting a new conversation looks ~3x pricier than continuing one, which on the free plan is ~6 handoffs a day. Since the product is built around lots of small handoffs, that seems worth a look. Happy to share numbers."
+  },
+  {
+   "id": "5739492",
+   "depth": 1,
+   "author": "Khoi Nguyen",
+   "username": "kn1026",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@naiknaved09 &nbsp;appreciate you actually poking Auto like that — yeah, route by job, not “always the biggest model.” And you’re right on new vs continue. Fresh thread pays cold context; continue rides cache/history so it should be cheaper. ~3x is a real smell if the product is lots of small handoffs. Send the numbers — we want free plan to survive a normal day of “quick hand this off,” not punish starting clean threads."
+  },
+  {
+   "id": "5740973",
+   "depth": 2,
+   "author": "Naved Naik",
+   "username": "naiknaved09",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@kn1026 &nbsp;Thanks Khoi. Numbers below, all from your own credit ledger: New conversation + a one-word \"hi\": 1.58 credits Complex follow-up in an existing thread: 0.56 credits So opening a thread is ~2.8× a real question. On the 10-credit free day, that's ~6 fresh conversations before the wall. The 1.4-credit chunk on turn 1 is fixed setup (system prompt, tools, memory bootstrap), paid in full each new thread. Turn 2 dropping to 0.40 is your caching/warm session working, so the fix is attacking the turn-1 constant, not per-turn cost. One honest caveat: I only measured a few turns, and I couldn't see from outside whether that setup prefix is prompt-cached across a user's threads, if it isn't, caching it is probably a bigger lever than anything above. The activation number you'd want is what share of free users hit the wall before they've felt the product work."
+  }
+ ]
+}

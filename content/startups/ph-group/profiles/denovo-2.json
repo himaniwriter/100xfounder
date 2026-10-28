@@ -1,0 +1,86 @@
+{
+  "slug": "denovo-2",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/denovo-2",
+  "excerpt": "Denovo is an AI business builder that turns a one-line idea or a vibe-coded app into a website with Stripe payments, then runs email outreach and Meta ads. What it does and what launch-day users asked.",
+  "content": "<p>Denovo pitches itself as the step after vibe coding: getting customers. You describe a business idea in one line, paste an existing website, or attach a CV, deck or plan. Denovo first pressure-tests the idea on market, competition and pricing and gives a go, refine or no-go verdict. It then generates a website, branding and marketing assets wired to Stripe, and runs a growth engine: email outreach, content and Meta ad campaigns. You can ask it \"how's business?\" for revenue and next steps.</p><p>Its founder, Saverio Pulizzi, answered several practical questions on Product Hunt. Founders choose between Denovo's built-in Stripe Connect and their own Stripe account; ad campaigns pass through \"decision gates\" so the founder controls what goes live; and automated email outreach runs from the founder's own connected Gmail account, capped at 30 emails a day. Denovo says users keep full ownership and IP of their ideas, and claims more than 15,000 businesses have been built on it.</p><p>Denovo's About page describes Pulizzi as co-founder and CEO, formerly at Meta and working on generative AI since 2018. Denovo launched on Product Hunt on 29 July 2026 and finished #3 for the day with 297 points and 72 comments (as of 14 October 2026).</p><p><em>We have not tested Denovo ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI business builder",
+    "platform": "Web app",
+    "starts_at": "Pricing not published",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI that turns an idea or vibe-coded app into a Stripe-ready site and runs outreach and ads",
+    "maker": {"name": "Saverio Pulizzi", "url": "https://www.producthunt.com/@saverio_pulizzi3"},
+    "team": [{"name": "Saverio Pulizzi", "role": "Co-founder and CEO (Denovo About page)", "url": "https://www.denovo.dev/about"}],
+    "ph": {"rank": 3, "votes": 297, "comments": 72, "followers": 577, "launched": "2026-07-29", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/109284d6-e821-4d94-8cda-d71b5ffe17fa.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Denovo slide 'Step 1: Type your business idea' with a woman at a laptop and a one-line prompt for a subscription meal-planning service", "credit": "Image: Denovo via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/1e2f109a-80d2-4d4b-979e-d0820f560f6b.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Denovo slide 'Step 2: Get feedback on your business idea' showing a Go, Refine or No-go verdict card", "credit": "Image: Denovo via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "have built an app (or have an idea) and are stuck on marketing and first customers",
+        "want the website, payments, outreach and ads in one place rather than five tools",
+        "want to keep control: the founder says campaigns pass through approval gates"
+      ],
+      "not_fit": [
+        "need to see prices up front: the pricing page was password-protected when we checked",
+        "plan high-volume cold email: outreach runs from your Gmail and is capped at 30 emails a day, the founder said",
+        "already have a working marketing stack and only need a website builder"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on denovo.dev as of 14 October 2026: the pricing page said it was temporarily private. Product Hunt lists Denovo as free.",
+      "url": "https://www.denovo.dev/pricing",
+      "checked": "2026-10-14",
+      "plans": [],
+      "notes": [
+        "The founder mentioned a free trial in a Product Hunt reply.",
+        "Ad spend on Meta and Stripe's payment fees are separate costs."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Lovable", "url": "https://lovable.dev/", "what": "AI app and website builder", "starts_at": "See its pricing page", "ph_rating": 4.71, "ph_reviews": 211,
+         "difference": "Builds the software. Denovo's pitch is what comes after: payments, outreach, ads and revenue tracking."},
+        {"name": "Nas.com", "url": "https://nas.com/", "what": "Launch and market an online store", "starts_at": "Pro $20.75/month billed yearly", "ph_rating": 4.93, "ph_reviews": 15,
+         "difference": "A storefront for selling products with AI customer-finding; Denovo also validates the idea and generates the brand and business plan."},
+        {"name": "Elsa by M1-project", "url": "https://www.m1-project.com/", "what": "AI marketing assistant for audience research and strategy", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 13,
+         "difference": "Helps plan marketing; Denovo also builds the site and runs the campaigns."}
+      ],
+      "more": "Product Hunt also lists Marketing Strategy Generator (5.0 from 4 reviews) and Hudby.io (4.98 from 46 reviews)."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/denovo-business-manager/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/denovo-business-manager",
+      "quotes": [
+        {"author": "Gal Dayan", "text": "When the growth engine sets up a Meta ads campaign on its own, does it launch and start charging the card right away?",
+         "reply": "Saverio Pulizzi: Denovo uses decision gates so founders are always in control of what goes live."},
+        {"author": "Priya K", "text": "How are you handling domain warmups so the automated outreach emails don't instantly hit spam folders?",
+         "reply": "Saverio Pulizzi: founders connect a Gmail account and the system sends no more than 30 emails a day."},
+        {"author": "Os Ishmael", "text": "Denovo is taking on a lot though. Idea validation, branding, websites, payments, ads, lead generation, reporting."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "profile_url": "https://x.com/denovodev", "search_url": "https://x.com/search?q=denovo.dev&f=live"}
+    },
+    "faq": [
+      {"q": "What is Denovo?", "a": "An AI business builder. From a one-line idea, a website link or a document, it validates the idea, builds a website and brand wired to Stripe, and runs outreach, content and ad campaigns."},
+      {"q": "How much does Denovo cost?", "a": "Denovo's pricing page was temporarily private when we checked on 14 October 2026, so we can't quote prices. Product Hunt lists it as free, and the founder mentioned a free trial."},
+      {"q": "Does Denovo spend money on ads without asking?", "a": "The founder said on Product Hunt that decision gates keep founders in control of what goes live."},
+      {"q": "Can I use my own Stripe account?", "a": "Yes. The founder said founders can choose Denovo's built-in Stripe Connect or their own Stripe account."},
+      {"q": "Who owns what I build?", "a": "Denovo's site says you keep full ownership and IP of your ideas."},
+      {"q": "How did Denovo do on Product Hunt?", "a": "It launched on 29 July 2026 and finished #3 for the day with 297 points and 72 comments."}
+    ],
+    "sources": [
+      {"label": "Denovo official site", "url": "https://www.denovo.dev/lp/run"},
+      {"label": "Denovo about", "url": "https://www.denovo.dev/about"},
+      {"label": "Denovo pricing (private when checked)", "url": "https://www.denovo.dev/pricing"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/denovo-business-manager"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/denovo-2"},
+      {"label": "Nas.com pricing", "url": "https://nas.com/solopreneur/pricing"}
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+ "slug": "singlestore",
+ "website": "https://www.singlestore.com/",
+ "excerpt": "SingleStore (formerly MemSQL) is a San Francisco real-time database for apps, analytics and AI. Vector Capital took majority ownership in 2025. Pricing and alternatives.",
+ "content": "<p>SingleStore is a distributed SQL database built to handle transactions and analytics in one engine, so applications can write data and query it in real time without copying it to a separate warehouse. It supports vector search for AI applications alongside ordinary SQL, and is offered as a managed cloud service called Helios on AWS, Azure and Google Cloud, or as self-managed software. Its website pitches it as the real-time database for AI, apps and analytics. TechTarget lists MongoDB and Couchbase among its competitors.</p><p>The company was founded as MemSQL and rebranded as SingleStore in 2020. TechCrunch has described Nikita Shamgunov, who later founded Neon, as a MemSQL founder who served as its CTO and then CEO. SingleStore is based in San Francisco and led by CEO Raj Verma. TechCrunch reported in September 2021 that it raised $80 million at a $940 million valuation. In September 2025 SingleStore agreed to a growth buyout in which private equity firm Vector Capital took majority ownership, TechTarget reported; Verma stayed as CEO and long-term investors including Dell Technologies Capital and Google Ventures stayed on. TechTarget noted that the company had recently reported 34% growth in annual recurring revenue.</p><p>SingleStore publishes prices for its cloud. A Shared workspace is free for evaluation and development, and the Standard edition for production starts at $0.99 an hour; larger editions and self-managed licences are priced on the same page or through sales.</p><p><em>We have not used SingleStore for this page. It brings together SingleStore's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Database",
+  "platform": "Cloud (AWS, Azure, Google Cloud) and self-managed",
+  "starts_at": "Free shared workspace; Standard from $0.99/hour",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Distributed SQL database for real-time transactions, analytics and vector search",
+  "maker": {
+   "name": "SingleStore",
+   "url": "https://www.singlestore.com/"
+  },
+  "team": [
+   {
+    "name": "Raj Verma",
+    "role": "CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/h3bp8c98/production/699dd956d8065a81e7428432f8adab2ab8c4c20f-1200x630.png",
+    "alt": "SingleStore logo, a white radial burst of short bars beside the word SingleStore, on a dark grey background",
+    "credit": "Image: SingleStore (singlestore.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://www.singlestore.com/icons/icon-512x512.png",
+    "alt": "SingleStore icon: a circle of black bars radiating outwards on white",
+    "credit": "Logo: SingleStore (singlestore.com)",
+    "w": 512,
+    "h": 512
+   }
+  ],
+  "use_cases": [
+   "Real-time analytics dashboards on live data",
+   "Applications that need fast reads and writes at scale",
+   "Vector search for AI and retrieval applications",
+   "Replacing a separate transactional database and analytics warehouse",
+   "Ingesting streaming data from Kafka and other sources"
+  ],
+  "audience": {
+   "fit": [
+    "engineering teams building data-intensive or real-time applications",
+    "companies running analytics on fresh operational data",
+    "AI teams that want vector and SQL queries in one database"
+   ],
+   "not_fit": [
+    "small apps that a single Postgres or MySQL instance handles comfortably",
+    "teams that want a purely serverless, pay-per-query service"
+   ]
+  },
+  "pricing": {
+   "intro": "SingleStore's pricing page lists editions for its Helios cloud and self-managed software.",
+   "url": "https://www.singlestore.com/pricing/",
+   "plans": [
+    {
+     "name": "Shared",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "One free workspace for evaluation and development"
+    },
+    {
+     "name": "Standard",
+     "price": "From $0.99/hour",
+     "amount": 0.99,
+     "currency": "USD",
+     "detail": "General-purpose production workloads"
+    },
+    {
+     "name": "Premium, Dedicated and self-managed",
+     "price": "See pricing page",
+     "detail": "Larger workloads and on-premise use"
+    }
+   ],
+   "notes": [
+    "Prices depend on cloud provider and region."
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Transactions, analytics and vectors in one database",
+   "Free tier and published hourly prices",
+   "Runs on all three major clouds or self-managed"
+  ],
+  "cons": [
+   "Now majority-owned by a private equity firm",
+   "Can be more than small projects need"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with SingleStore. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "ClickHouse",
+     "url": "https://clickhouse.com/",
+     "what": "Open-source columnar analytics database",
+     "starts_at": "See its own website",
+     "difference": "Very fast analytics, but not built for transactional workloads."
+    },
+    {
+     "name": "CockroachDB",
+     "url": "https://www.cockroachlabs.com/",
+     "what": "Distributed SQL database",
+     "starts_at": "See its own website",
+     "difference": "Focused on resilient transactional workloads."
+    },
+    {
+     "name": "MongoDB Atlas",
+     "url": "https://www.mongodb.com/atlas",
+     "what": "Managed document database",
+     "starts_at": "See its own website",
+     "difference": "Document model rather than SQL, with vector search."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is SingleStore the same as MemSQL?",
+    "a": "Yes. MemSQL rebranded as SingleStore in 2020."
+   },
+   {
+    "q": "Who owns SingleStore?",
+    "a": "Vector Capital took majority ownership in a growth buyout announced in September 2025; CEO Raj Verma stayed on, TechTarget reported."
+   },
+   {
+    "q": "Is SingleStore free?",
+    "a": "Its Shared cloud workspace is free for evaluation and development. Production Standard workspaces start at $0.99 an hour."
+   },
+   {
+    "q": "What is SingleStore used for?",
+    "a": "Real-time applications and analytics, and vector search for AI, in one SQL database."
+   }
+  ],
+  "sources": [
+   {
+    "label": "SingleStore pricing",
+    "url": "https://www.singlestore.com/pricing/"
+   },
+   {
+    "label": "SingleStore homepage",
+    "url": "https://www.singlestore.com/"
+   },
+   {
+    "label": "TechTarget: SingleStore agrees to growth buyout",
+    "url": "https://www.techtarget.com/searchdatamanagement/news/366630612/SingleStore-agrees-to-growth-buyout-by-private-equity-firm"
+   },
+   {
+    "label": "TechCrunch: SingleStore raises $80M at a $940M valuation",
+    "url": "https://techcrunch.com/2021/09/08/real-time-database-platform-singlestore-raises-80m-more-now-at-a-940m-valuation/"
+   },
+   {
+    "label": "TechCrunch: Neon founder previously founded MemSQL",
+    "url": "https://techcrunch.com/2023/08/01/neon-a-relational-database-startup-lands-30m-investment/"
+   }
+  ]
+ }
+}

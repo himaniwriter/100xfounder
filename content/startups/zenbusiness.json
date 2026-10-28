@@ -1,0 +1,72 @@
+{
+ "slug": "zenbusiness",
+ "website": "https://www.zenbusiness.com/",
+ "excerpt": "ZenBusiness helps US entrepreneurs form an LLC or corporation and stay compliant, with plans from $0 plus state fees. Pricing, history and alternatives.",
+ "content": "<p>ZenBusiness is an Austin, Texas company that helps people in the US start and run a small business. Its core service is business formation: it checks whether a name is available, prepares the Articles of Organization or Incorporation and files them with the state. Around that it sells compliance filings, registered agent service, an EIN application, domain and email, and other add-ons, and it offers a free AI guide called Velo that it says helps owners plan, file and stay on top of deadlines.</p><p>According to its About page, Ross Buhrdorf and Shanaz Hemmati co-founded ZenBusiness in 2015; Buhrdorf is its founder and CEO. The company says it has helped launch more than 950,000 businesses.</p><h2>Funding</h2><p>In November 2021 ZenBusiness announced a $200 million Series C at a $1.7 billion valuation, led by Oak HC/FT with SoftBank Vision Fund 2 and existing investors Cathay Innovation and Greycroft. The announcement also said investor Mark Cuban would join as an advocate and spokesperson.</p><h2>Pricing</h2><p>ZenBusiness publishes three formation plans. Starter costs $0 plus state fees and does not renew. Pro costs $199 plus state fees and renews at $199 a year, adding one-day processing, ongoing state compliance filings and an EIN. Premium costs $299 plus state fees and renews at $299 a year, adding a domain with privacy, a business email address and extra compliance protection. State filing fees are separate and vary by state.</p><h2>Who it suits</h2><p>It is aimed at first-time founders, freelancers and side businesses in the US that want filings handled for them. People forming a company outside the US, or founders who are comfortable filing directly with their Secretary of State, may not need it.</p><p><em>We have not used ZenBusiness. This page is based on its own website and pricing page (checked 15 October 2026) and its Series C announcement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Business formation and compliance",
+  "platform": "Web",
+  "starts_at": "$0 plus state fees",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Form a US LLC or corporation and keep up with state compliance",
+  "maker": {"name": "ZenBusiness", "url": "https://www.zenbusiness.com/about/"},
+  "team": [
+   {"name": "Ross Buhrdorf", "role": "Co-founder and CEO", "url": "https://www.zenbusiness.com/about/"},
+   {"name": "Shanaz Hemmati", "role": "Co-founder", "url": "https://www.zenbusiness.com/about/"}
+  ],
+  "gallery": [
+   {"url": "https://res.cloudinary.com/zenbusiness/q_auto,c_crop,w_1200,h_630,g_center/v20230308/shared-assets/logo/zen-social-share-default.png", "alt": "ZenBusiness logo, a green circle with the letters zb, above the tagline Business is complicated. We make it easy.", "credit": "Image: ZenBusiness", "w": 1200, "h": 630},
+   {"url": "https://res.cloudinary.com/zenbusiness/q_auto,w_1200,h_630,c_auto,g_auto/v1/shared-assets/stk/pricing-prod-hero-dt.png", "alt": "A laptop showing the ZenBusiness dashboard with notes for LLC formation completed, invoice sent and payment received", "credit": "Image: ZenBusiness", "w": 1200, "h": 630}
+  ],
+  "use_cases": [
+   "Forming an LLC in any US state without filing the paperwork yourself",
+   "Incorporating a C-corp or electing S-corp tax status",
+   "Getting an EIN and keeping up with annual state reports",
+   "Setting up a business domain and email alongside formation",
+   "Planning a new business with the free Velo AI guide"
+  ],
+  "audience": {
+   "fit": [
+    "are starting a small business, side business or freelance practice in the US",
+    "want someone to prepare and file formation documents and track compliance deadlines",
+    "prefer a bundle of formation, EIN and compliance in one account"
+   ],
+   "not_fit": [
+    "are incorporating outside the US",
+    "are happy to file directly with the state and want to avoid annual renewals"
+   ]
+  },
+  "pricing": {
+   "intro": "ZenBusiness lists three formation plans. State filing fees are extra and vary by state.",
+   "plans": [
+    {"name": "Starter", "price": "$0 + state fees", "amount": 0, "currency": "USD", "detail": "Standard 7–10 day processing; does not renew"},
+    {"name": "Pro", "price": "$199 + state fees", "amount": 199, "currency": "USD", "detail": "Renews at $199/yr; 1-day processing, ongoing state compliance filings, EIN"},
+    {"name": "Premium", "price": "$299 + state fees", "amount": 299, "currency": "USD", "detail": "Renews at $299/yr; adds domain with privacy and business email"}
+   ],
+   "notes": ["The Starter plan includes a first year of compliance service that ZenBusiness says renews at $199 a year."],
+   "url": "https://www.zenbusiness.com/pricing-formation-plans/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other US business formation services. Prices change often, so check each provider's own page.",
+   "items": [
+    {"name": "LegalZoom", "url": "https://www.legalzoom.com/", "what": "Online legal services including LLC formation", "tags": ["Formation", "Legal documents"], "starts_at": "See its own pricing page", "difference": "Broader legal services such as wills and trademarks."},
+    {"name": "Bizee", "url": "https://bizee.com/", "what": "LLC formation service", "tags": ["Formation"], "starts_at": "See its own pricing page", "difference": "Focused on formation and registered agent service."},
+    {"name": "Stripe Atlas", "url": "https://stripe.com/atlas", "what": "Delaware company formation for startups", "tags": ["Startup incorporation"], "starts_at": "See its own pricing page", "difference": "Built for venture-style startups, including founders outside the US."}
+   ]
+  },
+  "faq": [
+   {"q": "Is ZenBusiness really free?", "a": "The Starter formation plan is $0, but you still pay the state's filing fee, and some services renew annually."},
+   {"q": "Who founded ZenBusiness?", "a": "Ross Buhrdorf and Shanaz Hemmati, in 2015, according to the company's About page."},
+   {"q": "How much has ZenBusiness raised?", "a": "Its November 2021 Series C was $200 million at a $1.7 billion valuation, led by Oak HC/FT."},
+   {"q": "What is Velo?", "a": "ZenBusiness's free AI guide for planning and running a small business."}
+  ],
+  "sources": [
+   {"label": "ZenBusiness: About", "url": "https://www.zenbusiness.com/about/"},
+   {"label": "ZenBusiness: Formation plan pricing", "url": "https://www.zenbusiness.com/pricing-formation-plans/"},
+   {"label": "ZenBusiness: Products and pricing", "url": "https://www.zenbusiness.com/pricing-products/"},
+   {"label": "Business Wire: ZenBusiness raises $200M in Series C (9 Nov 2021)", "url": "https://www.businesswire.com/news/home/20211109005672/en/zenbusiness-raises-200m-in-series-c-funding-from-oak-hcft-and-softbank-vision-fund-2-to-empower-entrepreneurs-to-create-successful-businesses"}
+  ]
+ }
+}

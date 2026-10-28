@@ -1,0 +1,165 @@
+{
+ "slug": "zenoti",
+ "website": "https://www.zenoti.com/",
+ "excerpt": "Zenoti is cloud software for salons, spas, medspas, barbershops and gyms: booking, point of sale, payroll, marketing and AI agents, sold on quote. Valued past $1 billion in 2020.",
+ "content": "<p>Zenoti makes cloud software that runs beauty, wellness and fitness businesses: salons, spas, medspas, barbershops, gyms and health clubs. Its website says more than 30,000 businesses in these industries use it. The core product, which Zenoti now calls Zenoti OS, covers the appointment book, online booking, point of sale and payments, memberships and packages, gift cards, loyalty programmes, inventory, payroll and commissions, and marketing automation. On top of that it sells what it calls an AI Workforce: an AI receptionist that answers calls and books appointments, an AI lead manager, an AI digital marketer and an AI concierge for rebooking and upsells.</p><p>The company is headquartered in Bellevue, Washington. TechCrunch described it in December 2020 as a ten-year-old startup founded and run by Sudheer Koneru, when it raised a $160 million Series D led by Advent International, with Tiger Global and Steadview Partners joining. Koneru told TechCrunch that the round valued Zenoti at well past $1 billion, and TechCrunch put its total funding at about $251 million. YourStory covered the same round as Zenoti entering the unicorn club. Spa Business reported in 2021 that Zenoti raised a further $80 million, led by TPG, as an extension of that Series D, taking its valuation to nearly $1.5 billion.</p><p>Zenoti is built for multi-location and franchise operators as much as single shops: its site has separate sections for franchise management, business intelligence and reputation management. It is sold through demos and quotes rather than self-serve sign-up, and its pricing page lists what each plan covers but no prices.</p><p>This profile is put together from Zenoti's own pages and published reporting. We have not tested the software, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Salon, spa and fitness management software",
+  "platform": "Web, iOS and Android",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Booking, POS, payroll, marketing and AI agents for salons, spas, medspas and gyms",
+  "maker": {
+   "name": "Zenoti",
+   "url": "https://www.zenoti.com/company/about-us"
+  },
+  "team": [
+   {
+    "name": "Sudheer Koneru",
+    "role": "Founder and CEO (per TechCrunch, 2020)"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/10yku790/production/054f0965df0436944046c4832cddbf7635e0a186-1200x630.jpg",
+    "alt": "Zenoti banner reading AI-Powered Salon, Spa, Medspa and Fitness Software, with an AI insights chart and a woman receiving a facial",
+    "credit": "Image: Zenoti",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.sanity.io/images/10yku790/production/b1bf20758c5fd1c2938df6b9f5961308bf6da8bb-1924x1234.png",
+    "alt": "Zenoti screenshot: an AI Receptionist live-call panel confirming an eyebrow appointment, over a colour-coded appointment book for several staff",
+    "credit": "Image: Zenoti",
+    "w": 1924,
+    "h": 1234
+   }
+  ],
+  "use_cases": [
+   "Taking online bookings and managing the appointment book across locations",
+   "Running point of sale, payments, memberships, packages and gift cards",
+   "Calculating payroll, commissions and tips for stylists and therapists",
+   "Answering phone calls and booking appointments with an AI receptionist",
+   "Running a franchise with central reporting and reputation management"
+  ],
+  "audience": {
+   "fit": [
+    "run a salon, spa, medspa, barbershop, gym or health club",
+    "operate several locations or a franchise and want one system for all of them",
+    "want booking, payments, payroll and marketing from one vendor"
+   ],
+   "not_fit": [
+    "want to see a price before talking to sales: Zenoti quotes each plan",
+    "run a business outside beauty, wellness and fitness"
+   ]
+  },
+  "pricing": {
+   "intro": "Zenoti's pricing page lists what is included in Zenoti OS and its AI Workforce for each business type (salon and spa, medspa, fitness, barbershop) but publishes no prices. Every plan says \"Get a Quote\".",
+   "plans": [
+    {
+     "name": "Zenoti OS",
+     "price": "Quote on request",
+     "detail": "Operations, transactions and client interactions: appointment book, payroll, POS, payments, memberships, online booking, marketing"
+    },
+    {
+     "name": "AI Workforce",
+     "price": "Quote on request",
+     "detail": "AI receptionist, AI lead manager, AI digital marketer, AI concierge"
+    }
+   ],
+   "notes": [
+    "Prices were not published on the official pricing page when we checked."
+   ],
+   "url": "https://www.zenoti.com/pricing-zenoti",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "One system for booking, POS, payroll and marketing",
+   "Built for multi-location and franchise operators",
+   "Separate product tracks for salons, medspas, gyms and barbershops"
+  ],
+  "cons": [
+   "No published prices",
+   "Likely more than a single-chair salon needs"
+  ],
+  "alternatives": {
+   "intro": "Other software for salons, spas and fitness businesses. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Mindbody",
+     "url": "https://www.mindbodyonline.com/",
+     "what": "Booking and business software for fitness and wellness studios",
+     "tags": [
+      "Fitness",
+      "Wellness"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Stronger roots in fitness studios and classes; has a consumer booking marketplace."
+    },
+    {
+     "name": "Fresha",
+     "url": "https://www.fresha.com/",
+     "what": "Booking platform and marketplace for salons and spas",
+     "tags": [
+      "Salons",
+      "Marketplace"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Aimed more at independent salons, with a consumer booking marketplace."
+    },
+    {
+     "name": "Boulevard",
+     "url": "https://www.joinblvd.com/",
+     "what": "Client experience platform for salons, spas and medspas",
+     "tags": [
+      "Salons",
+      "Medspas"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Focused on premium salons and medspas in the US."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded Zenoti?",
+    "a": "Sudheer Koneru, who TechCrunch named as founder and CEO in its 2020 report on the company's Series D."
+   },
+   {
+    "q": "Is Zenoti a unicorn?",
+    "a": "Yes. Its $160 million Series D in December 2020 valued it at well past $1 billion, according to TechCrunch, and Spa Business reported a valuation of nearly $1.5 billion after a 2021 extension led by TPG."
+   },
+   {
+    "q": "How much does Zenoti cost?",
+    "a": "Zenoti does not publish prices. Its pricing page asks you to request a quote for each plan."
+   },
+   {
+    "q": "What kinds of businesses use Zenoti?",
+    "a": "Salons, spas, medspas, barbershops, gyms and health clubs. Its website says more than 30,000 such businesses use it."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Zenoti website",
+    "url": "https://www.zenoti.com/"
+   },
+   {
+    "label": "Zenoti pricing page",
+    "url": "https://www.zenoti.com/pricing-zenoti"
+   },
+   {
+    "label": "TechCrunch: Zenoti becomes a unicorn with $160 million funding round (14 Dec 2020)",
+    "url": "https://techcrunch.com/2020/12/14/zenoti-becomes-a-unicorn-with-160-million-funding-round/"
+   },
+   {
+    "label": "YourStory: Zenoti enters unicorn club with $160M Series D (Dec 2020)",
+    "url": "https://yourstory.com/2020/12/funding-alert-zenoti-enters-unicorn-club-series-d-investment-advent-international"
+   },
+   {
+    "label": "Spa Business: Zenoti raises US$80m, valuation nearly US$1.5bn (2021)",
+    "url": "https://www.spabusiness.com/wellness-news/Zenoti-raises-US80m-funding-and-increases-valuation-to-nearly-US15bn/347930"
+   }
+  ]
+ }
+}

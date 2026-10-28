@@ -1,0 +1,42 @@
+{
+ "slides": [
+  {
+   "layout": "cover",
+   "label": "For founders only",
+   "h1": [
+    "Build ",
+    "with",
+    " people who are building too"
+   ],
+   "h1_size": 88,
+   "deck": "Join the *100xFounder founders' circle*. Funding rounds, launches and hiring news reach you first, and you get a private group of founders who share what is working.",
+   "cards": [
+    {
+     "k": "Private community",
+     "v": "Founders' WhatsApp",
+     "vsize": 44,
+     "s": "Invite-only. Ask, share, hire and get warm intros."
+    },
+    {
+     "k": "The 8am brief",
+     "v": "Weekly email",
+     "vsize": 44,
+     "s": "New launches and funding rounds, once a week. Free."
+    },
+    {
+     "k": "Building something?",
+     "v": "Launch it free on 100xfounder.com",
+     "vsize": 36,
+     "s": "Get listed, get a founder spotlight, get featured here.",
+     "wide": true
+    }
+   ],
+   "cta": "Comment *FOUNDER* and we'll DM you how to get featured, or tap the *link in bio*:",
+   "foot": [
+    "Free · Unsubscribe anytime",
+    "Link in bio"
+   ]
+  }
+ ],
+ "end": false
+}

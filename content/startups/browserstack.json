@@ -1,0 +1,203 @@
+{
+ "slug": "browserstack",
+ "website": "https://www.browserstack.com/",
+ "excerpt": "BrowserStack is a cloud testing platform for websites and apps on real browsers and devices. Founded in 2011; Live plans from USD 29/month billed annually.",
+ "content": "<p>BrowserStack lets developers and QA teams test websites and mobile apps on real browsers and real iOS and Android devices in the cloud, instead of keeping their own device lab. Its products include Live (manual cross-browser testing), Automate (running Selenium, Playwright and other automated tests in the cloud), app testing, visual testing, accessibility testing and test management, and it now advertises a set of AI agents for testing work. Its company page cites 3,500+ real devices and browsers, 21 data centres and more than 50,000 customers in 135+ countries.</p><p>BrowserStack's company page says Ritesh Arora (cofounder and CEO) and Nakul Aggarwal (cofounder and CTO) founded it in 2011. Its June 2021 press release announced a USD 200 million Series B at a USD 4 billion valuation, led by BOND with Insight Partners and existing investor Accel, and described the company as profitable since its inception. It had earlier raised a USD 50 million Series A from Accel in 2018.</p><p>Prices are published. On 15 October 2026 the pricing page listed Live Desktop at USD 29 a month and Live Desktop & Mobile at USD 39 a month for a single user, and Automate from USD 59 a month (Chrome Desktop), all billed annually; a Freelancer plan costs USD 19 month-to-month or USD 12.50 a month billed annually. Team, enterprise and volume plans cost more or are quoted.</p><p>This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Software testing",
+  "platform": "Web app with CI/CD integrations and SDKs",
+  "starts_at": "Live from USD 29/month billed annually",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Cloud testing on real browsers and devices: manual, automated, visual and accessibility testing",
+  "maker": {
+   "name": "BrowserStack",
+   "url": "https://www.browserstack.com/company"
+  },
+  "team": [
+   {
+    "name": "Ritesh Arora",
+    "role": "Cofounder and CEO",
+    "url": "https://www.browserstack.com/company"
+   },
+   {
+    "name": "Nakul Aggarwal",
+    "role": "Cofounder and CTO",
+    "url": "https://www.browserstack.com/company"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://bstackprod.kinsta.cloud/wp-content/themes/browserstack/img/ai-agents-dropdown-promo@2x.webp",
+    "alt": "BrowserStack graphic with '20+ AI Agents' in a gradient circle surrounded by small testing icons",
+    "credit": "Image: BrowserStack, from browserstack.com",
+    "w": 552,
+    "h": 420
+   }
+  ],
+  "use_cases": [
+   "Checking a website on Safari, Chrome, Edge and Firefox across operating systems",
+   "Testing a mobile app on real iPhones and Android phones",
+   "Running automated Selenium or Playwright suites in parallel from CI",
+   "Catching visual regressions and accessibility issues"
+  ],
+  "audience": {
+   "fit": [
+    "ship websites or apps that must work across many browsers and devices",
+    "want to run automated tests in parallel without maintaining a device lab",
+    "need published per-user prices to budget"
+   ],
+   "not_fit": [
+    "only test on one browser you already have",
+    "need a permanently free tier for ongoing use"
+   ]
+  },
+  "pricing": {
+   "intro": "From BrowserStack's pricing page, checked on 15 October 2026. Most prices are per month billed annually; annual billing is advertised as saving up to 25%.",
+   "plans": [
+    {
+     "name": "Freelancer",
+     "price": "USD 19 month-to-month (USD 12.50/month billed annually)",
+     "amount": 19,
+     "currency": "USD",
+     "detail": "100 minutes of Live testing, 1 user"
+    },
+    {
+     "name": "Live Desktop",
+     "price": "USD 29/month, billed annually",
+     "amount": 29,
+     "currency": "USD",
+     "detail": "Single user, manual desktop browser testing"
+    },
+    {
+     "name": "Live Desktop & Mobile",
+     "price": "USD 39/month, billed annually",
+     "amount": 39,
+     "currency": "USD",
+     "detail": "Single user, desktop and mobile"
+    },
+    {
+     "name": "Automate Chrome Desktop",
+     "price": "USD 59/month, billed annually",
+     "amount": 59,
+     "currency": "USD",
+     "detail": "Automated testing"
+    },
+    {
+     "name": "Automate Desktop & Mobile",
+     "price": "USD 175/month, billed annually",
+     "amount": 175,
+     "currency": "USD",
+     "detail": "Automated testing"
+    },
+    {
+     "name": "Team Ultimate",
+     "price": "USD 375/month, billed annually",
+     "amount": 375,
+     "currency": "USD",
+     "detail": "Pack of 15 testing products"
+    },
+    {
+     "name": "Enterprise and volume",
+     "price": "Contact sales",
+     "detail": ""
+    }
+   ],
+   "notes": [
+    "The page also lists Live Team (USD 150/month) and Team Pro (USD 249/month), billed annually."
+   ],
+   "url": "https://www.browserstack.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Real devices rather than emulators",
+   "Published prices for individuals and teams",
+   "Profitable since inception, per the company"
+  ],
+  "cons": [
+   "Annual billing needed for the lowest prices",
+   "Costs rise quickly with parallel automated tests"
+  ],
+  "alternatives": {
+   "intro": "Other cross-browser and device testing options. Prices are on each vendor's own page.",
+   "items": [
+    {
+     "name": "LambdaTest",
+     "url": "https://www.lambdatest.com/",
+     "what": "Cloud cross-browser and app testing",
+     "tags": [
+      "Testing",
+      "Cloud"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Close like-for-like rival, also India-founded."
+    },
+    {
+     "name": "Sauce Labs",
+     "url": "https://saucelabs.com/",
+     "what": "Cloud testing platform",
+     "tags": [
+      "Testing",
+      "Enterprise"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Long-standing enterprise-focused rival."
+    },
+    {
+     "name": "Playwright",
+     "url": "https://playwright.dev/",
+     "what": "Open-source browser automation framework",
+     "tags": [
+      "Open source",
+      "Automation"
+     ],
+     "starts_at": "Free (open source)",
+     "difference": "Free framework you run yourself; no real-device cloud."
+    },
+    {
+     "name": "AWS Device Farm",
+     "url": "https://aws.amazon.com/device-farm/",
+     "what": "Device testing service on AWS",
+     "tags": [
+      "Testing",
+      "Cloud"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Pay-as-you-go device testing inside AWS."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does BrowserStack cost?",
+    "a": "Live starts at USD 29 a month billed annually for one user, and a Freelancer plan costs USD 19 month-to-month. Automate starts at USD 59 a month billed annually."
+   },
+   {
+    "q": "Who founded BrowserStack?",
+    "a": "Ritesh Arora (CEO) and Nakul Aggarwal (CTO), in 2011."
+   },
+   {
+    "q": "Does BrowserStack use real devices?",
+    "a": "Yes. It says it runs 3,500+ real devices and browsers across 21 data centres."
+   },
+   {
+    "q": "What is BrowserStack's valuation?",
+    "a": "USD 4 billion at its USD 200 million Series B in June 2021, the latest valuation it has announced."
+   }
+  ],
+  "sources": [
+   {
+    "label": "BrowserStack pricing",
+    "url": "https://www.browserstack.com/pricing"
+   },
+   {
+    "label": "BrowserStack company page",
+    "url": "https://www.browserstack.com/company"
+   },
+   {
+    "label": "BrowserStack press release: USD 200M Series B at USD 4B valuation (16 Jun 2021)",
+    "url": "https://www.browserstack.com/press/browserstack-closes-200-million-in-series-b-funding-at-a-4-billion-valuation"
+   }
+  ]
+ }
+}

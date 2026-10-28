@@ -1,0 +1,82 @@
+{
+ "slug": "timescale",
+ "website": "https://www.tigerdata.com/",
+ "excerpt": "Timescale, now called Tiger Data, makes TimescaleDB, the open-source time-series extension for PostgreSQL, and the managed Tiger Cloud. Valued at over $1B after a $110M Series C led by Tiger Global.",
+ "content": "<p>Timescale is the company behind TimescaleDB, an open-source extension that turns PostgreSQL into a database for time-series data: metrics, sensor readings, prices, events and other data that arrives with a timestamp. You keep using ordinary SQL and the Postgres ecosystem, while TimescaleDB adds automatic partitioning by time, compression and fast aggregation over large volumes. The company also runs Tiger Cloud, a managed PostgreSQL service, and sells TimescaleDB Enterprise for self-managed, on-premises and edge deployments.</p><p><strong>Renamed Tiger Data.</strong> In 2025 the company changed its name from Timescale to Tiger Data. In a post announcing the change, co-founders Ajay Kulkarni and Mike Freedman said the company had grown beyond a time-series database and wanted to build a faster PostgreSQL for modern analytical and agentic workloads; the open-source extension keeps the TimescaleDB name, and the tiger had been the company's mascot since 2017. The legal entity remains Timescale, Inc., doing business as Tiger Data, and timescale.com now redirects to tigerdata.com.</p><p>Its About page says the founders started in 2015 by building an IoT platform and then built TimescaleDB so Postgres could handle machine data at scale. Kulkarni is founder and CEO, and Freedman is founder and CTO. In its Series C announcement the company said it had raised $110 million led by Tiger Global, with Benchmark, New Enterprise Associates, Redpoint Ventures, Icon Ventures and Two Sigma Ventures participating, valuing it at over $1 billion and bringing total funding to more than $180 million. It reported over 500 paying customers at the time. Today its site lists customers such as Polymarket and Linktree.</p><p>Tiger Cloud is priced by usage, with a 30-day free trial; prices are below. This profile draws on Tiger Data's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Time-series PostgreSQL database",
+  "platform": "Cloud (AWS, Azure), self-managed and open source",
+  "starts_at": "Tiger Cloud compute from $30/month; 30-day free trial",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "TimescaleDB open-source time-series Postgres extension and the managed Tiger Cloud",
+  "maker": {"name": "Timescale, Inc. (d/b/a Tiger Data)", "url": "https://www.tigerdata.com/about"},
+  "team": [
+   {"name": "Ajay Kulkarni", "role": "Co-founder and CEO"},
+   {"name": "Mike Freedman", "role": "Co-founder and CTO"}
+  ],
+  "gallery": [
+   {"url": "https://www.tigerdata.com/images/social.png", "alt": "Tiger Data logo, a black tiger-head roundel with the words Tiger Data, Creators of TimescaleDB, on a yellow-green gradient", "credit": "Image: Tiger Data", "w": 2400, "h": 1260},
+   {"url": "https://blog-cms.tigerdata.com/blog/content/images/2026/04/year-of-the-tiger.png", "alt": "Illustration of a rising line chart on a yellow grid with the Tiger Data tiger-head logo in the middle, from the company's Year of the Tiger funding post", "credit": "Image: Tiger Data", "w": 2000, "h": 1125}
+  ],
+  "use_cases": [
+   "Storing and querying metrics, IoT sensor data and events in PostgreSQL",
+   "Running real-time analytics dashboards on time-stamped data",
+   "Tracking financial and crypto price history",
+   "Compressing large time-series tables to cut storage costs",
+   "Combining vector and keyword search with relational data in Postgres"
+  ],
+  "audience": {
+   "fit": [
+    "already use PostgreSQL and need it to handle large time-series workloads",
+    "collect machine, IoT or observability data at scale",
+    "want an open-source core with the option of a managed cloud"
+   ],
+   "not_fit": [
+    "need a non-SQL document or key-value store",
+    "have small datasets that plain Postgres already handles well"
+   ]
+  },
+  "pricing": {
+   "intro": "Tiger Cloud is priced by compute and storage, with a 30-day free trial. The figures below are from the official pricing page; storage prices are stated on the page as an effective price based on 5x compression.",
+   "plans": [
+    {"name": "Performance", "price": "Compute from $30/month", "amount": 30, "currency": "USD", "detail": "Storage $0.177/GB-month effective; up to 4 database services, 8 CPU and 32 GB memory per service"},
+    {"name": "Scale", "price": "Compute from $36/month", "amount": 36, "currency": "USD", "detail": "Storage $0.212/GB-month effective; unlimited services, read replicas, tiered storage, private networking"},
+    {"name": "Enterprise", "price": "Contact sales", "detail": "Up to 64 CPU and 256 GB memory per service, advanced security"}
+   ],
+   "notes": ["TimescaleDB itself remains open source and free to self-host.", "Available on AWS and Azure, per the pricing page."],
+   "url": "https://www.tigerdata.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Plain SQL and the full PostgreSQL ecosystem",
+   "Open-source core you can self-host",
+   "Published, usage-based cloud pricing"
+  ],
+  "cons": [
+   "Name change from Timescale to Tiger Data may confuse search and docs",
+   "Cloud costs grow with compute and storage"
+  ],
+  "alternatives": {
+   "intro": "Other databases for time-series and analytics. We have not compared them hands-on.",
+   "items": [
+    {"name": "InfluxDB", "url": "https://www.influxdata.com/", "what": "Purpose-built time-series database", "tags": ["Time-series"], "starts_at": "See its own pricing page", "difference": "Not built on PostgreSQL."},
+    {"name": "ClickHouse", "url": "https://clickhouse.com/", "what": "Open-source columnar analytics database", "tags": ["Analytics"], "starts_at": "See its own pricing page", "difference": "Column store aimed at analytics rather than a Postgres extension."},
+    {"name": "QuestDB", "url": "https://questdb.com/", "what": "Open-source time-series database with SQL", "tags": ["Time-series"], "starts_at": "See its own pricing page", "difference": "Its own engine with SQL support, not Postgres."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Timescale the same as Tiger Data?", "a": "Yes. The company renamed itself Tiger Data in 2025. The open-source extension is still called TimescaleDB."},
+   {"q": "Is TimescaleDB free?", "a": "TimescaleDB remains open source. The managed Tiger Cloud is paid, with a 30-day free trial."},
+   {"q": "How much does Tiger Cloud cost?", "a": "Compute starts at $30 a month on the Performance plan and $36 on Scale, plus storage, according to the official pricing page."},
+   {"q": "Who founded Timescale?", "a": "Ajay Kulkarni (CEO) and Mike Freedman (CTO)."}
+  ],
+  "sources": [
+   {"label": "Tiger Data: About", "url": "https://www.tigerdata.com/about"},
+   {"label": "Tiger Data pricing page", "url": "https://www.tigerdata.com/pricing"},
+   {"label": "Tiger Data blog: Timescale is now Tiger Data", "url": "https://www.tigerdata.com/blog/timescale-becomes-tigerdata"},
+   {"label": "Tiger Data blog: Year of the Tiger, $110 million Series C", "url": "https://www.tigerdata.com/blog/year-of-the-tiger-110-million-to-build-the-future-of-data-for-developers-worldwide"},
+   {"label": "Pulse 2.0: Timescale $110 million Series C and over $1 billion valuation (Mar 2022)", "url": "https://pulse2.com/timescale-110-million-series-c-funding-and-over-1-billion-valuation"}
+  ]
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "slug": "mesa",
+ "ph_url": "https://www.producthunt.com/products/mesa",
+ "existing_listing_slug": null,
+ "website": "https://www.getmesa.com/",
+ "excerpt": "MESA turns plain-English requests into Shopify automations across 100+ apps: describe the workflow to its AI assistant Yedric and it builds the triggers, conditions and actions. Free plan with 50 tasks; paid from $12 a month. Pricing, debugging and alternatives.",
+ "content": "<p>MESA is a workflow automation platform for ecommerce teams, made by ShopPad, which has built Shopify apps since 2012. You describe a task in plain language, such as giving each new customer a unique discount code or pushing orders to Google Sheets, and MESA's AI assistant, Yedric, asks a few clarifying questions and builds the workflow. You can then change it by chatting with Yedric or by editing steps, conditions and filters in a visual builder. MESA connects to more than 100 apps, including Shopify, Etsy, Google Sheets, Klaviyo, QuickBooks, Slack, Claude and ChatGPT, has more than 400 templates, and also handles generic webhooks, APIs and FTP for systems outside commerce.</p><p>Workflows can pause for human approval before acting, for example before publishing an AI-written product description. When something breaks, MESA offers step-by-step logs, failure notifications, a Time Travel feature for replaying runs and workflow tests to check a fix before it goes live. An MCP server lets Claude and ChatGPT reach your store data through MESA. According to MESA, more than 3,000 ecommerce teams use it.</p><p>MESA was co-founded by Aaron Wadler and Ryan O'Donnell. It launched on Product Hunt on 7 May 2026 and finished #2 for the day with 208 upvotes and 41 comments.</p><p><em>We have not tested MESA ourselves. This page brings together MESA's website, pricing, about and contact pages, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Ecommerce automation",
+  "platform": "Shopify app and web",
+  "starts_at": "Free (50 tasks/month); Basic $12/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Builds Shopify automations across 100+ apps from a plain-English description",
+  "maker": {"name": "Aaron Wadler", "url": "https://www.producthunt.com/@aaroneous"},
+  "team": [
+   {"name": "Aaron Wadler", "role": "Co-founder", "url": "https://www.producthunt.com/@aaroneous"},
+   {"name": "Ryan O'Donnell", "role": "Co-founder", "url": "https://www.producthunt.com/@ryan_odonnell"},
+   {"name": "Shannon Torchia", "role": "Maker", "url": "https://www.producthunt.com/@shannon_torchia"},
+   {"name": "Darryl Norris", "role": "Integrations", "url": "https://www.producthunt.com/@itsdarrylnorris"}
+  ],
+  "ph": {"rank": 2, "votes": 208, "comments": 41, "followers": 411, "launched": "2026-05-07", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/23dc20e8-a37a-42b2-902d-82b2460f5eae.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: MESA via Product Hunt", "alt": "MESA's assistant Yedric setting up a workflow to create unique discount codes for new Shopify customers"},
+   {"url": "https://ph-files.imgix.net/e5cedf5e-b372-4e7b-bd85-66d12c724a47.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: MESA via Product Hunt", "alt": "MESA workflow builder: customer created, create price rule, send message"},
+   {"url": "https://ph-files.imgix.net/6fe398dc-90b9-4a6c-9e99-f1a9c3e38990.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: MESA via Product Hunt", "alt": "MESA approvals queue holding AI-written product descriptions for a person to approve or deny"}
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Aaron Wadler opened by asking merchants what their Shopify store should be doing automatically but isn't, and said the list he hears is long: routing priority or wholesale orders differently, syncing orders and products to Google Sheets without breaking, follow-ups after specific purchases and cleaning messy tags and data.",
+    "MESA's answer is to let merchants describe those jobs in plain English and have the automation built for them, with the option to adjust it later by chat or in the builder."
+   ],
+   "attribution": "Aaron Wadler, co-founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/mesa?comment=5328253"
+  },
+  "use_cases": [
+   "Routing priority, VIP or wholesale orders to the warehouse differently",
+   "Syncing orders, customers and products to Google Sheets or QuickBooks",
+   "Tagging orders and customers automatically based on rules",
+   "Generating product descriptions with AI and approving them before they go live",
+   "Connecting Shopify to non-commerce systems through webhooks and APIs"
+  ],
+  "audience": {
+   "fit": [
+    "run a Shopify store and repeat the same order, inventory or fulfilment tasks",
+    "have outgrown Shopify Flow for complex workflows",
+    "want automation without writing code, with free setup help"
+   ],
+   "not_fit": [
+    "need very high-volume, low-latency syncs on the cheapest plans (4 requests a second, one worker)",
+    "do not use Shopify and want a general-purpose automation tool with more connectors",
+    "want unlimited runs on a small budget: tasks are capped per plan"
+   ]
+  },
+  "pricing": {
+   "intro": "MESA prices by tasks per month, with unlimited workflows on every plan. Prices are in US dollars from MESA's pricing page; paid plans start with a 7-day trial.",
+   "url": "https://www.getmesa.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Starter", "price": "$0", "amount": 0, "currency": "USD", "detail": "50 tasks a month, templates, free setup session, email and chat support"},
+    {"name": "Basic", "price": "$12/month", "amount": 12, "currency": "USD", "detail": "500 tasks a month"},
+    {"name": "Flex", "price": "$29/month", "amount": 29, "currency": "USD", "detail": "10,000 tasks a month"},
+    {"name": "Pro", "price": "$99/month", "amount": 99, "currency": "USD", "detail": "50,000 tasks a month, 2 parallel workers"},
+    {"name": "Unlimited", "price": "$299/month", "amount": 299, "currency": "USD", "detail": "Unlimited tasks, 4 parallel workers, longer logs"}
+   ],
+   "notes": [
+    "Extra tasks cost $0.01 each; premium tasks over the allowance cost $0.02.",
+    "After the 7-day trial the saved card is charged on day 8 unless you cancel.",
+    "Custom plans for high-volume stores and agencies."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Zapier, Make and Relay.app among MESA's alternatives. Review scores are Product Hunt users' own; check each tool's pricing page for current prices.",
+   "items": [
+    {"name": "Zapier", "url": "https://zapier.com/", "what": "General-purpose app automation", "starts_at": "See its pricing page", "ph_rating": 4.72, "ph_reviews": 67, "ph_url": "https://www.producthunt.com/products/zapier", "difference": "Far more connectors across all software; MESA is built around Shopify data and store operations."},
+    {"name": "Make", "url": "https://www.make.com/", "what": "Visual automation and AI orchestration", "starts_at": "See its pricing page", "ph_rating": 4.76, "ph_reviews": 45, "ph_url": "https://www.producthunt.com/products/make-4", "difference": "A visual builder for any workflow; MESA leads with plain-English building and free setup help for merchants."},
+    {"name": "Relay.app", "url": "https://www.relay.app/", "what": "AI agents and workflow automation with human-in-the-loop steps", "starts_at": "See its pricing page", "ph_rating": 4.95, "ph_reviews": 43, "ph_url": "https://www.producthunt.com/products/relay-app", "difference": "General business automation; MESA specialises in ecommerce."}
+   ],
+   "more": "Product Hunt also lists Albato and Trace."
+  },
+  "reviews": {"count": 1, "rating": 5, "url": "https://www.producthunt.com/products/mesa/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Replaying a run after a fix (Time Travel) and testing before going live", "Clarifying questions before building a workflow"],
+    "asked": [
+     "How to edit an AI-built workflow (chat with Yedric or edit in the builder)",
+     "Whether it works beyond Shopify (yes: webhooks, APIs, FTP and other systems)",
+     "How failures are debugged during a flash sale (alerts, step logs and replay)",
+     "Whether Etsy and Shopify inventory sync in real time (no answer shown)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {"text": "What does the debugging UX look like when the automation breaks at 2am during a flash sale?", "author": "Elian Bazan", "url": "https://www.producthunt.com/products/mesa?comment=5349595"},
+    {"text": "if it gets 80% right but the conditions or logic need tweaking, are you back to re-prompting and hoping it lands", "author": "Devanand Babu", "url": "https://www.producthunt.com/products/mesa?comment=5349361"},
+    {"text": "does the inventory sync work in real-time across etsy and shopify?", "author": "Priya K", "url": "https://www.producthunt.com/products/mesa?comment=5349151"}
+   ]
+  },
+  "pros": [
+   "Builds workflows from plain English, with a visual builder for changes",
+   "Free setup session on every plan",
+   "Approval steps before sensitive actions",
+   "Replay and test tools for fixing broken runs"
+  ],
+  "cons": [
+   "Low task allowance on the free and $12 plans",
+   "Rate limits and single worker on lower plans",
+   "Trial charges your card on day 8 unless cancelled",
+   "Mainly suited to Shopify merchants"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/mesa",
+   "quotes": [
+    {"author": "Devanand Babu", "url": "https://www.producthunt.com/products/mesa?comment=5349361", "text": "Asked how you edit a workflow the AI got mostly right.", "reply": "Darryl Norris said you can ask Yedric to update it or change it manually in the workflow builder."},
+    {"author": "Ethan Shargorodsky", "url": "https://www.producthunt.com/products/mesa?comment=5348937", "text": "Asked whether MESA handles non-Shopify webhooks.", "reply": "Aaron Wadler said it works with arbitrary webhooks, APIs, FTP and external systems."}
+   ],
+   "x": {"none": "We found no posts about MESA on X to link yet.", "search_url": "https://x.com/search?q=getmesa&f=live", "profile_url": "https://twitter.com/getmesa"}
+  },
+  "faq": [
+   {"q": "What is MESA?", "a": "A workflow automation platform for Shopify and ecommerce teams that builds automations from plain-English descriptions, made by ShopPad."},
+   {"q": "How much does MESA cost?", "a": "Free for 50 tasks a month; Basic $12, Flex $29, Pro $99 and Unlimited $299 a month."},
+   {"q": "Can I edit a workflow MESA's AI built?", "a": "Yes, by asking the assistant Yedric or by editing it in the visual workflow builder."},
+   {"q": "Does it work with tools outside Shopify?", "a": "Yes. It connects to 100+ apps and supports generic webhooks, APIs and FTP."},
+   {"q": "What happens when a workflow fails?", "a": "MESA can alert your team, shows step-by-step logs, and lets you test a fix and replay runs."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists Zapier, Albato, Make, Trace and Relay.app."}
+  ],
+  "sources": [
+   {"label": "MESA official site", "url": "https://www.getmesa.com/"},
+   {"label": "MESA pricing", "url": "https://www.getmesa.com/pricing"},
+   {"label": "About MESA", "url": "https://www.getmesa.com/about"},
+   {"label": "MESA contact", "url": "https://www.getmesa.com/contact"},
+   {"label": "MESA privacy policy", "url": "https://www.getmesa.com/privacy"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/mesa"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/mesa/alternatives"}
+  ]
+ }
+}

@@ -1,0 +1,130 @@
+{
+  "slug": "oasis",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/oasis-6",
+  "excerpt": "Oasis is a team workspace where people and AI agents such as Claude Code and Devin work together in shared rooms with a common memory. Free plan, paid from $19/month, and alternatives.",
+  "content": "<p>Oasis is a workspace where a team and its AI agents work together. Work happens in rooms, group chats where people and agents (Claude Code, Devin, Codex and others, plus agents you build) can be mentioned and handed tasks. Humans and agents can also edit the same document, spreadsheet or codebase live in the room. Everything said in a room becomes shared memory for the agents in it, so when you swap an agent or upgrade a model, the new one picks up where the last left off.</p><p>Access works like Slack channels: you choose which agents belong to each room, and that membership decides what they can see, co-founder Stefano Delmanto explained on Product Hunt. He described Oasis's edge over team features from OpenAI and Anthropic as neutrality across models plus its memory, and said it can suggest cheaper or open-source models for a task. There are web, desktop and mobile apps and a library of prebuilt agents.</p><p>Oasis, Inc. launched Oasis on Product Hunt on 13 August 2026; it finished #6 for the day with 238 upvotes and 23 comments (as of 14 October 2026).</p><p><em>We have not tested Oasis ourselves. This page brings together its official site, pricing and About pages and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Human and AI agent workspace",
+    "platform": "Web, Mac desktop and mobile",
+    "starts_at": "Free plan; paid from $19/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Shared rooms where teams and AI agents work together with a common, compounding memory",
+    "maker": {"name": "Stefano Delmanto", "url": "https://www.producthunt.com/@stefano_delmanto"},
+    "team": [
+      {"name": "Stefano Delmanto", "role": "Maker", "url": "https://www.producthunt.com/@stefano_delmanto"},
+      {"name": "Naveen", "role": "Co-founder", "url": "https://www.producthunt.com/@naveensharma"},
+      {"name": "Jayson Tian", "role": "Maker", "url": "https://www.producthunt.com/@jaysontian"}
+    ],
+    "ph": {"rank": 6, "votes": 238, "comments": 23, "followers": 310, "launched": "2026-08-13", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/c47b852b-3021-4ec6-84d3-37f122d3c7d6.png?auto=format&fit=max&w=1400", "w": 6600, "h": 3951, "credit": "Image: Oasis via Product Hunt",
+       "alt": "Oasis 'Collaborate in real time... and on the same page': a room chat beside a shared pricing-strategy document edited by people and agents"},
+      {"url": "https://ph-files.imgix.net/4533eb51-83af-447a-a036-f6623f73bac7.png?auto=format&fit=max&w=1400", "w": 6600, "h": 3951, "credit": "Image: Oasis via Product Hunt",
+       "alt": "Oasis prebuilt agent library with cards such as a cold email personaliser and a Zendesk ticket triage agent"},
+      {"url": "https://ph-files.imgix.net/8021975f-f7ab-4310-8d3d-e28b13de0602.png?auto=format&fit=max&w=1400", "w": 6600, "h": 3951, "credit": "Image: Oasis via Product Hunt",
+       "alt": "Oasis 'Built for every team' with a marketing room where Claude and another agent turn launch notes into campaign copy"}
+    ],
+    "use_cases": [
+      "Handing engineering tasks to Claude Code or Devin in a shared room the whole team can see",
+      "Turning launch notes into campaign briefs and copy with marketing agents",
+      "Editing a document or spreadsheet live with people and agents together",
+      "Scheduling agents to run recurring work",
+      "Switching models without losing the context agents have built up"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Stefano Delmanto says agents are getting good but working with them is broken: each lives somewhere different, in a browser tab, a terminal or another app, and none of them share context.",
+        "Oasis puts people and agents in the same rooms so that conversations, decisions and files become knowledge every agent can use, and the workspace learns how the team works over time."
+      ],
+      "attribution": "Stefano Delmanto, Oasis, on Product Hunt",
+      "url": "https://www.producthunt.com/products/oasis-6?comment=5778549"
+    },
+    "audience": {
+      "fit": [
+        "use several AI agents across a team and want them to share context",
+        "want to switch between models or providers without starting over",
+        "need admin controls, SSO and audit logs as the team grows (Pro and up)"
+      ],
+      "not_fit": [
+        "live in Slack or Teams and do not want another chat app: a commenter asked about integration and we saw no answer",
+        "work alone with one assistant",
+        "need frontier models on the free plan: it covers open-source models only"
+      ]
+    },
+    "pricing": {
+      "intro": "Oasis has a free plan and paid plans with included usage credit. Prices are Oasis's, in US dollars. The pricing page offers a full refund if you do not like it.",
+      "url": "https://joinoasis.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "Up to 3 seats, 10 integrations, 10 scheduled rooms a month, open-source models"},
+        {"name": "Starter", "price": "$19/month", "amount": 19, "currency": "USD", "detail": "Up to 10 seats, 25 integrations, 20 scheduled rooms, all models with $19 of usage included and pay-as-you-go above it"},
+        {"name": "Pro", "price": "$199/month", "amount": 199, "currency": "USD", "detail": "Up to 50 seats, 50 integrations, 50 scheduled rooms, policies, admin, exports, SSO and audit, $199 of usage included"},
+        {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Unlimited seats, integrations and scheduled rooms, data residency and dedicated support"}
+      ],
+      "notes": [
+        "Seats count both humans and agents.",
+        "You can bring your own API keys, and Oasis says it does not train on your data."
+      ]
+    },
+    "pros": [
+      "Works with agents from many vendors in one place",
+      "Shared memory survives model and agent swaps",
+      "Room-level permissions decide what each agent can see",
+      "Free plan for up to 3 seats"
+    ],
+    "cons": [
+      "Another chat workspace alongside Slack or Teams",
+      "Frontier models need a paid plan",
+      "No Product Hunt reviews yet"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["One place where agents share context instead of starting from zero"],
+        "asked": [
+          "How permissions and memory work across many agents (room membership decides access)",
+          "Its moat against OpenAI and Anthropic team features (model neutrality and memory)",
+          "Whether it integrates with Slack or Microsoft Teams (no answer on the page)"
+        ],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "Running agents across separate tools means every one of them starts from zero, so nothing you learn in one place ever compounds.", "author": "Alina Petrova", "url": "https://www.producthunt.com/products/oasis-6?comment=5783998"},
+        {"text": "What is your moat? Oai and Anthropic are working on team features.", "author": "Michael Vavilov", "url": "https://www.producthunt.com/products/oasis-6?comment=5782717"},
+        {"text": "Teams are already communicating somewhere (for example, we use Slack). Do you have integration tools for Slack or Microsoft Teams?", "author": "Natalia Iankovych", "url": "https://www.producthunt.com/products/oasis-6?comment=5786084"}
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as Oasis alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Switch", "url": "https://www.producthunt.com/products/switch-11", "what": "Brings any AI agent into Slack, Teams and Discord", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 7, "ph_url": "https://www.producthunt.com/products/switch-11",
+         "difference": "Puts agents into the chat tools you already use instead of a new workspace."},
+        {"name": "Den", "url": "https://www.producthunt.com/products/den", "what": "\"Cursor for knowledge workers\"", "starts_at": "See its pricing page", "ph_rating": 4.73, "ph_reviews": 15, "ph_url": "https://www.producthunt.com/products/den",
+         "difference": "An AI workspace for documents and knowledge work; Oasis centres on multi-agent rooms."},
+        {"name": "MindPal", "url": "https://www.producthunt.com/products/mindpal-ai", "what": "Turns expertise into AI agents and multi-agent workflows", "starts_at": "See its pricing page", "ph_rating": 4.5, "ph_reviews": 36, "ph_url": "https://www.producthunt.com/products/mindpal-ai",
+         "difference": "Builds agent workflows; Oasis is a shared space for people and existing agents."}
+      ],
+      "more": "Product Hunt also lists Claude and Nonilion."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/oasis-6/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/oasis-6",
+      "x": {"none": "We found no posts about Oasis on X to link yet.", "search_url": "https://x.com/search?q=joinoasis&f=live", "profile_url": "https://x.com/oasishq"}
+    },
+    "faq": [
+      {"q": "What is Oasis?", "a": "A workspace where teams and AI agents work together in shared rooms. Conversations and files become memory every agent in the room can use."},
+      {"q": "How much does Oasis cost?", "a": "Free for up to 3 seats with open-source models. Starter is $19 a month and Pro $199 a month, each with that amount of usage credit included. Enterprise is custom."},
+      {"q": "Which agents work in Oasis?", "a": "Its site shows Claude Code, Devin and Codex among others, plus a library of prebuilt agents, custom agents and local agents you connect."},
+      {"q": "Can I limit what each agent sees?", "a": "Yes. Agents only see the rooms they are members of, much like Slack channels, according to the team."},
+      {"q": "Does Oasis train on my data?", "a": "Its pricing page lists no training on your data on every plan."}
+    ],
+    "sources": [
+      {"label": "Oasis official site", "url": "https://joinoasis.com/"},
+      {"label": "Oasis pricing", "url": "https://joinoasis.com/pricing"},
+      {"label": "Oasis About page", "url": "https://joinoasis.com/about"},
+      {"label": "Oasis for teams", "url": "https://joinoasis.com/product/teams"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/oasis-6"}
+    ]
+  }
+}

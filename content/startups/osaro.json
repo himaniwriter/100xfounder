@@ -1,0 +1,75 @@
+{
+ "slug": "osaro",
+ "website": "https://www.osaro.com/",
+ "excerpt": "OSARO is a San Francisco company whose machine-learning software lets warehouse robots pick, bag, kit and depalletise items. Products, funding and alternatives.",
+ "content": "<p>OSARO builds AI software and robotic systems for warehouses and distribution centres. Its machine-learning vision lets industrial robot arms handle tasks that used to need people because every item looks different: picking individual products out of totes, putting orders into bags, assembling kits and unloading pallets. The company's about page lists OSARO SightWorks, its vision and control software, alongside robotic piece-picking, bagging, kitting and depalletisation systems and a post-installation support programme called HyperCare. Its systems work with existing automation such as automated storage and retrieval systems, mobile robots and conveyors, The Robot Report noted.</p><p>OSARO was founded in 2015, according to The Robot Report, and is based at 500 3rd Street in San Francisco. Its co-founders are Derik Pridmore, the CEO, who the company says was an early investor in DeepMind and Clarifai, and Michael Kahane, the CTO. OSARO lists four granted US patents. The Robot Report reported in 2021 that it had dozens of customers across five continents and deployments in seven countries.</p><p>On funding, OSARO announced a $16 million Series B in 2019 with investors including King River Capital, Alpha Intelligence Capital and Founders Fund, bringing total funding to $29.3 million. In August 2021 it raised a $30 million Series C led by Octave Ventures, with J17 Capital, Tomales Bay Capital and existing investors AME Cloud Ventures, iRobot, King River Capital and Founders Fund, for total funding of $67.5 million.</p><p>OSARO does not publish prices. Systems are scoped for each warehouse and quoted after a consultation.</p><p><em>This page is research, not a review. We have not tested OSARO's robots; facts come from its website and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Warehouse robotics and machine-learning vision",
+  "platform": "Robotic work cells with OSARO SightWorks software",
+  "starts_at": "Not published; quoted per site",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI vision that lets warehouse robots pick, bag, kit and depalletise varied items",
+  "maker": {"name": "OSARO", "url": "https://www.osaro.com/"},
+  "team": [
+   {"name": "Derik Pridmore", "role": "Co-founder and CEO"},
+   {"name": "Michael Kahane", "role": "Co-founder and CTO"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/68701c86565deda53fa2f1b0/689b7dba4fb355240c709d20_fa794174b97060bf5673b4a01e8eefb3_OSARO%20-%20Website%20-%20Global_Open%20Graph.png", "w": 1200, "h": 630, "alt": "OSARO logo with the line Automation That Adapts in Real Time, beside photos of yellow robot arms working in warehouses", "credit": "Image: OSARO (osaro.com)"}
+  ],
+  "use_cases": [
+   "Robotic piece-picking of mixed products for e-commerce orders",
+   "Automatic bagging of orders for shipping",
+   "Kitting several items into one package",
+   "Depalletising mixed cases",
+   "Adding vision-guided picking to existing ASRS, conveyors and mobile robots"
+  ],
+  "audience": {
+   "fit": [
+    "e-commerce and third-party logistics warehouses with many different SKUs",
+    "operations teams short of labour for picking and packing",
+    "sites that already use automated storage or conveyors"
+   ],
+   "not_fit": [
+    "small stockrooms where a robot cell would not pay back",
+    "buyers wanting off-the-shelf pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "OSARO does not publish prices. Systems are scoped for each warehouse and quoted by the company.",
+   "plans": [{"name": "Robotic systems and SightWorks", "price": "Not published", "detail": "Contact OSARO"}],
+   "url": "https://www.osaro.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Machine-learning vision handles varied, unregistered items",
+   "Integrates with existing warehouse automation",
+   "Deployments on several continents"
+  ],
+  "cons": [
+   "No public pricing",
+   "Needs integration work at each site"
+  ],
+  "alternatives": {
+   "intro": "Other AI robotics companies for warehouse picking.",
+   "items": [
+    {"name": "Covariant", "url": "https://covariant.ai/", "what": "AI models for robotic picking", "difference": "Focus on a general robotics foundation model."},
+    {"name": "RightHand Robotics", "url": "https://righthandrobotics.com/", "what": "Piece-picking robot systems", "difference": "Builds its own grippers and picking cells."},
+    {"name": "Plus One Robotics", "url": "https://plusonerobotics.com/", "what": "Vision software for parcel handling robots", "difference": "Strong in parcel induction with human-in-the-loop support."}
+   ]
+  },
+  "faq": [
+   {"q": "What does OSARO do?", "a": "It makes machine-learning vision software and robotic systems for warehouse picking, bagging, kitting and depalletising."},
+   {"q": "Who founded OSARO?", "a": "Derik Pridmore (CEO) and Michael Kahane (CTO). The Robot Report dates the founding to 2015."},
+   {"q": "How much has OSARO raised?", "a": "$67.5 million by August 2021, after a $30 million Series C led by Octave Ventures."},
+   {"q": "Where is OSARO based?", "a": "San Francisco, at 500 3rd Street, according to its website."}
+  ],
+  "sources": [
+   {"label": "OSARO: about", "url": "https://www.osaro.com/about"},
+   {"label": "The Robot Report: OSARO raises $30M Series C (Aug 2021)", "url": "https://www.therobotreport.com/osaro-raises-30-m-series-c-round/"},
+   {"label": "Business Wire: OSARO raises $30 million Series C led by Octave Ventures", "url": "https://www.businesswire.com/news/home/20210818005229/en/OSARO-Raises-%2430-Million-Series-C-Round-Led-by-Octave-Ventures"},
+   {"label": "Converge Digest: OSARO raises $16M (2019)", "url": "https://convergedigest.com/osaro-raises-16m-for-industrial/"}
+  ]
+ }
+}

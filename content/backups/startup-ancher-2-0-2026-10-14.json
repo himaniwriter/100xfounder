@@ -1,0 +1,137 @@
+{
+ "post": {
+  "id": 3491,
+  "date": "2026-10-12T12:31:00",
+  "date_gmt": "2026-10-12T07:01:00",
+  "guid": {
+   "rendered": "https://100xfounder.com/startup/ancher-2-0/",
+   "raw": "https://100xfounder.com/startup/ancher-2-0/"
+  },
+  "modified": "2026-10-12T12:31:00",
+  "modified_gmt": "2026-10-12T07:01:00",
+  "password": "",
+  "slug": "ancher-2-0",
+  "status": "publish",
+  "type": "xf_startup",
+  "link": "https://100xfounder.com/startup/ancher-2-0/",
+  "title": {
+   "raw": "Ancher 2.0",
+   "rendered": "Ancher 2.0"
+  },
+  "content": {
+   "raw": "<p>Ancher is an AI knowledge workspace that turns everything you read, watch, and save into work you can actually use. Capture articles, videos, PDFs, posts, and ideas without organizing folders. Ancher connects related knowledge, lets you search and ask questions across your sources, and helps turn what you&#039;ve learned into research briefs, reports, presentations, and content in your own voice. Your saved knowledge becomes more useful every time you add to it.</p>\n",
+   "rendered": "<p>Ancher is an AI knowledge workspace that turns everything you read, watch, and save into work you can actually use. Capture articles, videos, PDFs, posts, and ideas without organizing folders. Ancher connects related knowledge, lets you search and ask questions across your sources, and helps turn what you&#039;ve learned into research briefs, reports, presentations, and content in your own voice. Your saved knowledge becomes more useful every time you add to it.</p>\n",
+   "protected": false,
+   "block_version": 0
+  },
+  "excerpt": {
+   "raw": "Turn everything you read and save into work you can ship",
+   "rendered": "<p>Turn everything you read and save into work you can ship</p>\n",
+   "protected": false
+  },
+  "featured_media": 0,
+  "template": "",
+  "xf_industry": [
+   732,
+   721,
+   731
+  ],
+  "xf_stage": [
+   465
+  ],
+  "permalink_template": "https://100xfounder.com/startup/%pagename%/",
+  "generated_slug": "ancher-2-0",
+  "class_list": [
+   "post-3491",
+   "xf_startup",
+   "type-xf_startup",
+   "status-publish",
+   "hentry",
+   "xf_industry-notes",
+   "xf_industry-productivity",
+   "xf_industry-writing",
+   "xf_stage-just-launched"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3491",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/types/xf_startup"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/media?parent=3491"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "xf_industry",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_industry?post=3491"
+    },
+    {
+     "taxonomy": "xf_stage",
+     "embeddable": true,
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_stage?post=3491"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3491"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3491"
+    }
+   ],
+   "wp:action-create-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3491"
+    }
+   ],
+   "wp:action-assign-xf_industry": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3491"
+    }
+   ],
+   "wp:action-create-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3491"
+    }
+   ],
+   "wp:action-assign-xf_stage": [
+    {
+     "href": "https://100xfounder.com/wp-json/wp/v2/xf_startup/3491"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "profile": []
+}

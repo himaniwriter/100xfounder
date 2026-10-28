@@ -1,0 +1,143 @@
+{
+ "slug": "sourcegraph",
+ "website": "https://sourcegraph.com/",
+ "excerpt": "Sourcegraph makes code search and code understanding tools for large engineering teams. Its Enterprise pricing, the Amp spin-out and alternatives.",
+ "content": "<p>Sourcegraph makes tools for searching and understanding large codebases. Engineers at companies with many repositories use it to find every place a function is used, follow references across projects, and plan large changes. Its site now describes the goal as giving humans and AI agents complete context to understand, oversee and evolve their code, and customers shown there include Reddit, Canva, Dropbox, HubSpot, Stripe and Indeed.</p><p>The company was founded by Quinn Slack and Beyang Liu. For several years it also sold an AI coding assistant called Cody. Wikipedia reports that new Cody accounts were stopped in July 2025 when the company released Amp, an AI coding agent. On 2 December 2025 Amp announced that it was spinning out of Sourcegraph as a separate company, Amp Inc., which it said was already profitable. Reporting on the split said Quinn Slack moved to lead Amp, Sourcegraph's Dan Adler became Sourcegraph's chief executive, and the investors Craft, Redpoint, Sequoia, Goldcrest and Andreessen Horowitz sit on both boards.</p><p>After the split, Sourcegraph concentrates on enterprise code search, code navigation and batch changes across many repositories, with AI features included in its enterprise plan. Its pricing page lists a single Enterprise plan starting at $16,000 a year, a minimum annual contract that includes credits for AI features and scales with team size.</p><p>Sourcegraph is a fit for organisations with large or many codebases, often in regulated industries, that need code search across GitHub, GitLab, Bitbucket and other hosts. A solo developer is better served by the search built into their editor or code host.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Code search and code intelligence",
+  "platform": "Web",
+  "starts_at": "Enterprise from $16K a year",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Code search and code understanding for large codebases, for developers and AI agents",
+  "maker": {
+   "name": "Sourcegraph, Inc.",
+   "url": "https://sourcegraph.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://storage.googleapis.com/marketing-site-static-assets-prod/og-image-homepage.webp",
+    "alt": "Sourcegraph banner reading 'Take control of your codebase' above a dark screenshot of its agentic search and code review interface",
+    "credit": "Image: Sourcegraph (sourcegraph.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sourcegraph-screenshot-2021-dark-mode.png/960px-Sourcegraph-screenshot-2021-dark-mode.png",
+    "alt": "Sourcegraph code search results in dark mode, listing matching code snippets from several repositories with highlights",
+    "credit": "Image: Vitaly Zdanevich, CC BY-SA 4.0, via Wikimedia Commons (File:Sourcegraph-screenshot-2021-dark-mode.png)",
+    "w": 960,
+    "h": 540
+   }
+  ],
+  "use_cases": [
+   "Searching code across thousands of repositories",
+   "Finding all uses of an API before changing it",
+   "Running large-scale changes across repositories",
+   "Giving AI coding agents context about a big codebase",
+   "Onboarding engineers to an unfamiliar codebase"
+  ],
+  "audience": {
+   "fit": [
+    "are an engineering organisation with many repositories or a monorepo",
+    "need self-hosted or compliant code search",
+    "want code context for AI tools at enterprise scale"
+   ],
+   "not_fit": [
+    "are a solo developer or small team: the plan starts at $16K a year",
+    "want the Amp coding agent (now a separate company)"
+   ]
+  },
+  "pricing": {
+   "intro": "Sourcegraph's pricing page lists one plan.",
+   "plans": [
+    {
+     "name": "Enterprise",
+     "price": "From $16K a year",
+     "detail": "Minimum annual contract; includes AI feature credits; scales with team size"
+    }
+   ],
+   "notes": [],
+   "url": "https://sourcegraph.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Search across many code hosts and repositories",
+   "Strong at large-scale code changes",
+   "Enterprise deployment options"
+  ],
+  "cons": [
+   "High entry price for small teams",
+   "Product line changed after the Amp spin-out"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "GitHub code search",
+     "url": "https://github.com/features/code-search",
+     "what": "Code search built into GitHub",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Free for GitHub-hosted code but limited to GitHub."
+    },
+    {
+     "name": "OpenGrok",
+     "url": "https://oracle.github.io/opengrok/",
+     "what": "Open-source code search and cross-reference engine",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Free and self-hosted, with a simpler feature set."
+    },
+    {
+     "name": "Amp",
+     "url": "https://ampcode.com/",
+     "what": "AI coding agent spun out of Sourcegraph",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "An agent for writing code rather than a code search platform."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does Sourcegraph cost?",
+    "a": "Its Enterprise plan starts at $16,000 a year, including credits for AI features."
+   },
+   {
+    "q": "What happened to Cody?",
+    "a": "Wikipedia reports new Cody accounts were stopped in July 2025, when Sourcegraph launched Amp."
+   },
+   {
+    "q": "Is Amp part of Sourcegraph?",
+    "a": "Not any more. Amp spun out as a separate company, Amp Inc., in December 2025."
+   },
+   {
+    "q": "Who founded Sourcegraph?",
+    "a": "Quinn Slack and Beyang Liu."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sourcegraph pricing",
+    "url": "https://sourcegraph.com/pricing"
+   },
+   {
+    "label": "Amp: Amp Inc. spin-out announcement (2 Dec 2025)",
+    "url": "https://ampcode.com/news/amp-inc"
+   },
+   {
+    "label": "Tessl: Sourcegraph spins out AI coding agent Amp as a standalone company",
+    "url": "https://tessl.io/blog/sourcegraph-spins-out-ai-coding-agent-amp-as-a-standalone-company/"
+   },
+   {
+    "label": "Wikipedia: Sourcegraph",
+    "url": "https://en.wikipedia.org/wiki/Sourcegraph"
+   },
+   {
+    "label": "Sourcegraph official site",
+    "url": "https://sourcegraph.com/"
+   }
+  ]
+ }
+}

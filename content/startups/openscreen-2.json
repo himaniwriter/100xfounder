@@ -1,0 +1,290 @@
+{
+ "slug": "openscreen-2",
+ "excerpt": "OpenScreen is a free, MIT-licensed screen recorder and editor for Windows, macOS and Linux with click-planned zooms, transcript editing, local captions and an AI agent that can make the edits. What's new in v2, requirements and alternatives.",
+ "content": "<p>OpenScreen is a free, open-source screen recorder and video editor for Windows, macOS and Linux, in the style of Screen Studio. It records your cursor as data, so you can restyle it after the take, and plans zooms from your clicks by a fixed rule, grouping nearby clicks into one shot. You can add a 3D camera move, device frames, animated backgrounds and a webcam overlay with background blur or removal, blur out emails or keys, and export MP4 or GIF in seven aspect ratios with no watermark and no account.</p><p>Version 2 adds editing by transcript (delete a word or a silence and the cut lands on the timeline), captions transcribed on your own machine with a bundled Whisper model, a native GPU renderer, five cursor themes with 3D versions, and AI editing: describe the edit and an agent makes it as ordinary, undoable changes. You bring your own key for Claude, OpenAI, Gemini, OpenRouter or a compatible endpoint, and the maker says a local MCP server lets Claude Code or another agent do the edit. There is also a command-line tool so scripts and coding agents can record, edit and render. OpenScreen has no upload feature and no analytics, though it does make a few network calls, for fonts, the one-time caption-model download and update checks.</p><p>OpenScreen began as Siddharth Vaddem's side project. After he archived it, Etienne Lescot took it over with his approval; the maker says 137 people have contributed. OpenScreen 2 launched on Product Hunt on 11 October 2026 and finished #5 for the day with 168 upvotes.</p><p><em>We have not tested OpenScreen ourselves. This page brings together its official site, FAQ and docs, its GitHub repository, its Product Hunt page and the official pages of comparable recorders, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Screen recording",
+  "platform": "Windows, macOS and Linux desktop app",
+  "os": "macOS 13+ (Apple silicon and Intel), Windows 10 1903+ x64, Linux x64 with PipeWire; 8 GB RAM (16 GB recommended)",
+  "starts_at": "Free (MIT licence)",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "Free, open-source screen recorder and editor with click-planned zooms, transcript editing and an AI editing agent",
+  "maker": {
+   "name": "Etienne Lescot",
+   "url": "https://www.producthunt.com/@etienne_lescot1"
+  },
+  "team": [
+   {
+    "name": "Etienne Lescot",
+    "role": "Maintainer",
+    "url": "https://www.producthunt.com/@etienne_lescot1"
+   },
+   {
+    "name": "Benjamin Freeman",
+    "role": "Listed as a maker on Product Hunt",
+    "url": "https://www.producthunt.com/@beetix"
+   },
+   {
+    "name": "David Jayan",
+    "role": "Developer",
+    "url": "https://www.producthunt.com/@david_jayan"
+   }
+  ],
+  "ph": {
+   "rank": 5,
+   "votes": 168,
+   "comments": 16,
+   "followers": 201,
+   "launched": "2026-10-11",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Recording product demos and tutorials that look edited on the first take",
+   "Cutting a recording by deleting words from its transcript",
+   "Adding captions in many languages without uploading anything",
+   "Letting Claude Code or another agent tidy up a recording",
+   "Scripting recordings and renders from the command line"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Etienne Lescot explains that OpenScreen started as Siddharth Vaddem's side project, a free alternative to Screen Studio. When Siddharth archived it in June, Etienne took it over with his approval, and version 2 is the result of four months of work since then.",
+    "He listed what's new: a local MCP server so Claude Code or another agent can do the edit, zooms planned from your clicks as shots rather than one per click, transcript-based cutting with local captions, a webcam beside or above the recording with background blur or removal, a native GPU renderer that he says exports about 15 times faster on their reference laptop, and a 3D camera and cursor themes. He asked people what they make demos with today and what OpenScreen would need for them to switch."
+   ],
+   "attribution": "Etienne Lescot, maintainer, on Product Hunt",
+   "url": "https://www.producthunt.com/products/openscreen-2?comment=5902185"
+  },
+  "audience": {
+   "fit": [
+    "make demos or tutorials and want Screen Studio-style results for free, including commercial use",
+    "use Windows or Linux, where Screen Studio isn't available",
+    "want recording, captions and rendering to happen on your own machine",
+    "work with AI coding agents and want them to edit or script recordings"
+   ],
+   "not_fit": [
+    "need shareable cloud links: OpenScreen has no upload feature",
+    "use Windows or Linux on ARM64: there are no packaged builds",
+    "want a fully offline app: it still checks for updates and downloads its caption model once",
+    "want a signed Windows installer outside the Microsoft Store: the .exe isn't code-signed"
+   ]
+  },
+  "pricing": {
+   "intro": "OpenScreen is free and open source under the MIT licence, for personal and commercial use. There is no paid tier, no account and no watermark.",
+   "url": "https://getopenscreen.com/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Open source",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Every feature, no paywall, no usage caps"
+    }
+   ],
+   "notes": [
+    "AI editing is off by default and uses your own API key; your AI provider bills you directly, and OpenScreen does not publish those prices.",
+    "Install from the Microsoft Store, winget, Homebrew, a signed macOS disk image, or Linux packages (AppImage, .deb, .rpm, .pacman, Nix)."
+   ]
+  },
+  "alternatives": {
+   "intro": "Screen Studio is on Product Hunt's alternatives list; Cap and Recordly are open-source recorders in the same space. Prices come from each product's own site, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Screen Studio",
+     "url": "https://screen.studio/",
+     "what": "Mac screen recorder with automatic zooms and smooth cursor",
+     "starts_at": "$9/month billed yearly, or $29 month to month",
+     "ph_rating": 4.9,
+     "ph_reviews": 189,
+     "ph_url": "https://www.producthunt.com/products/screen-studio/reviews",
+     "difference": "Mac only and paid, but adds shareable links and cloud transcripts."
+    },
+    {
+     "name": "Cap",
+     "url": "https://cap.so/",
+     "what": "Open-source screen recorder with an editor and cloud sharing",
+     "starts_at": "Free for personal use; commercial licence $29/year or $58 once; Cap Pro $12 per user a month",
+     "difference": "Commercial use needs a paid licence; OpenScreen is free for commercial use but has no cloud sharing."
+    },
+    {
+     "name": "Recordly",
+     "url": "https://www.recordly.dev/",
+     "what": "Open-source app for demos with auto-zoom, smooth cursor, webcam and timeline editing",
+     "starts_at": "Free (open source)",
+     "difference": "Started as a fork of OpenScreen, the maintainer says; its homepage doesn't advertise a built-in AI editing agent or a CLI."
+    }
+   ],
+   "more": "Product Hunt also lists Tella, FocuSee, Supercut and Descript."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/openscreen-2/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Windows, Mac and Linux support",
+     "No account and no watermark"
+    ],
+    "asked": [
+     "How general-purpose AI models compare with specialised video AI for editing (it depends on the agent and model)",
+     "Whether the agent checks rendered frames or works only from the transcript and click log (no answer shown)",
+     "How it differs from Recordly (Recordly began as a fork of OpenScreen)"
+    ],
+    "criticised": [
+     "Redoing zooms by hand after every retake is the pain point one commenter wants solved"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "I like that it works on Windows, Mac, and Linux. No accounts or watermark is a nice bonus too.",
+     "author": "Freya",
+     "url": "https://www.producthunt.com/products/openscreen-2?comment=5939643"
+    },
+    {
+     "text": "What makes me switch is not having to redo the zooms by hand after every retake.",
+     "author": "Joer Temple",
+     "url": "https://www.producthunt.com/products/openscreen-2?comment=5941796"
+    },
+    {
+     "text": "how does Claude/CharGPT compare in edit quality with specialized video editing ai?",
+     "author": "Artur Kuznetsov",
+     "url": "https://www.producthunt.com/products/openscreen-2?comment=5939046"
+    },
+    {
+     "text": "I use Screen Studio a while, then switched to Record, now, I I'd like to try OpenScreen!",
+     "author": "Mostafa Soufi",
+     "url": "https://www.producthunt.com/products/openscreen-2?comment=5940306"
+    }
+   ]
+  },
+  "pros": [
+   "Free and MIT-licensed, including for commercial use",
+   "Runs on Windows, macOS and Linux",
+   "Recording, captions and rendering happen locally; no analytics",
+   "Transcript editing and an AI agent that makes undoable edits",
+   "Command-line tool for scripts and coding agents",
+   "Large contributor base: 137 people, according to the maintainer"
+  ],
+  "cons": [
+   "No cloud sharing or links",
+   "No ARM64 builds for Windows or Linux",
+   "Windows .exe isn't code-signed (the Microsoft Store build is)",
+   "Transcript cuts are looser outside English and French, the maintainer says, and there's no review step yet beyond undo",
+   "Some network calls despite local processing"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/openscreen-2",
+   "x": {
+    "none": "We found no posts about OpenScreen 2 on X to link yet.",
+    "search_url": "https://x.com/search?q=getopenscreen&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is OpenScreen free for commercial use?",
+    "a": "Yes. It is MIT-licensed, with no paid tier and no watermark; you keep the licence's copyright notice, and the licence says nothing about your videos."
+   },
+   {
+    "q": "Does it work offline?",
+    "a": "Recording, transcription and rendering are local, but the FAQ says it loads Google Fonts at launch, downloads the caption model once, checks for updates and contacts your AI provider if you connect one."
+   },
+   {
+    "q": "How does the AI editing work?",
+    "a": "It is off by default. With your own key for Claude, OpenAI, Gemini, OpenRouter or a compatible endpoint, the agent reads the transcript and timeline and makes ordinary, undoable edits. The maintainer says a local MCP server also lets Claude Code or another agent do the edit."
+   },
+   {
+    "q": "How does it decide where to zoom?",
+    "a": "By a fixed rule, not AI. The maintainer explained that a click joins the current zoom if it comes within 3 seconds of the last one and the zoom can still frame them all; otherwise it starts a new shot."
+   },
+   {
+    "q": "Is it the original OpenScreen project?",
+    "a": "It is the approved continuation. Siddharth Vaddem created it and archived the original repository; development moved to the getopenscreen organisation with his approval."
+   },
+   {
+    "q": "Which systems does it support?",
+    "a": "macOS 13 or later on Apple silicon and Intel (recording the microphone needs macOS 15), Windows 10 version 1903 or later on x64, and x64 Linux with PipeWire."
+   }
+  ],
+  "sources": [
+   {
+    "label": "OpenScreen official site",
+    "url": "https://getopenscreen.com/"
+   },
+   {
+    "label": "OpenScreen FAQ",
+    "url": "https://getopenscreen.com/docs/faq/"
+   },
+   {
+    "label": "OpenScreen AI editing docs",
+    "url": "https://getopenscreen.com/docs/ai-editing/"
+   },
+   {
+    "label": "OpenScreen CLI docs",
+    "url": "https://getopenscreen.com/docs/cli/"
+   },
+   {
+    "label": "OpenScreen installation docs",
+    "url": "https://getopenscreen.com/docs/installation/"
+   },
+   {
+    "label": "OpenScreen on GitHub",
+    "url": "https://github.com/getopenscreen/openscreen"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/openscreen-2"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/openscreen-2/alternatives"
+   },
+   {
+    "label": "Screen Studio pricing",
+    "url": "https://screen.studio/#pricing"
+   },
+   {
+    "label": "Cap pricing",
+    "url": "https://cap.so/pricing"
+   },
+   {
+    "label": "Recordly",
+    "url": "https://www.recordly.dev/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/a659ccbc-ac42-4960-82c5-4278fbeaba73.jpeg?auto=format&fit=max&w=1400",
+    "alt": "OpenScreen 2 title card with the editor window"
+   },
+   {
+    "url": "https://ph-files.imgix.net/2d16496d-7dff-4bde-bd62-254d1c956c30.png?auto=format&fit=max&w=1400",
+    "alt": "An AI agent in a terminal editing a recording beside the OpenScreen editor and timeline"
+   },
+   {
+    "url": "https://ph-files.imgix.net/a3e9d20a-1863-4099-95fa-471fdd8fcb9e.png?auto=format&fit=max&w=1400",
+    "alt": "The OpenScreen editor with a zoomed recording, background options and the timeline"
+   },
+   {
+    "url": "https://ph-files.imgix.net/d445996e-d90f-47af-805b-f5fd9ce2ceab.png?auto=format&fit=max&w=1400",
+    "alt": "OpenScreen graphic 'Free, open-source screen recorder and video editor' for Windows, macOS and Linux, MIT licensed"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/a659ccbc-ac42-4960-82c5-4278fbeaba73.jpeg?auto=format&fit=max&w=1400",
+    "alt": "OpenScreen 2 title card with the editor window"
+   },
+   {
+    "url": "https://ph-files.imgix.net/2d16496d-7dff-4bde-bd62-254d1c956c30.png?auto=format&fit=max&w=1400",
+    "alt": "An AI agent in a terminal editing a recording beside the OpenScreen editor and timeline"
+   },
+   {
+    "url": "https://ph-files.imgix.net/a3e9d20a-1863-4099-95fa-471fdd8fcb9e.png?auto=format&fit=max&w=1400",
+    "alt": "The OpenScreen editor with a zoomed recording, background options and the timeline"
+   }
+  ]
+ }
+}

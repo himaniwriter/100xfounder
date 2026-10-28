@@ -1,0 +1,121 @@
+{
+ "slug": "honen",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/honen",
+ "excerpt": "Honen, from the StudyFetch team, turns a company's docs, recordings and knowledge base into AI-led training courses with simulations, quizzes and a voice tutor, and updates them when the source material changes. Team plan $20/seat/month (10-seat minimum). Features and alternatives.",
+ "content": "<p>Honen is an AI platform for employee training. You drag in training documents, call recordings or videos, connect a knowledge source such as Google Drive, or just type a topic, and it builds a full course: lessons in nine formats including reading, flashcards, quizzes, lectures, podcasts, comics and games, AI-generated video lessons and a voice tutor. Practice comes as projects, such as a mock client call graded against a rubric or a screen-share walkthrough of a software tool. Admins assign courses, track progress and can ask a course agent why learners are struggling with a topic.</p><p>Its main pitch is that courses keep up with the company. Courses are tied to a team knowledge base, so when docs or processes change the course can be updated, with full version history and rollback; the team said a person always approves what reaches learners. Courses can be shared as a link or a branded site, exported as SCORM to an existing LMS, and the same knowledge base can be served to AI agents over MCP. Honen's pricing page says it is SOC 2 Type II certified and that it does not train AI on customer content.</p><p>Honen is built by StudyFetch, which says it has taught more than 8 million students. It launched on Product Hunt on 8 June 2026, its first launch there, and finished #1 for the day with 505 upvotes and 112 comments.</p><p><em>We have not tested Honen ourselves. This page brings together Honen's official site, pricing and about pages, its Product Hunt page, reviews and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Employee training",
+  "platform": "Web, with SCORM and LMS delivery",
+  "starts_at": "$20/seat/month (minimum 10 seats)",
+  "schema_category": "EducationalApplication",
+  "summary_short": "AI-built employee training courses that stay in sync with your company's docs",
+  "maker": {"name": "Ryan Trattner", "url": "https://www.producthunt.com/@ryan_trattner"},
+  "team": [
+   {"name": "Esan Durrani", "role": "CEO & Cofounder, StudyFetch", "url": "https://www.producthunt.com/@esan_durrani"},
+   {"name": "Ryan Trattner", "role": "Maker", "url": "https://www.producthunt.com/@ryan_trattner"},
+   {"name": "Joshua Leggett", "role": "COO, StudyFetch", "url": "https://www.producthunt.com/@joshua_leggett"},
+   {"name": "Kiran Desai", "role": "CMO, StudyFetch", "url": "https://www.producthunt.com/@kiran_desai2"},
+   {"name": "Phillip J", "role": "Director of product", "url": "https://www.producthunt.com/@pj_in_pjs"}
+  ],
+  "ph": {"rank": 1, "votes": 505, "comments": 112, "followers": 1171, "launched": "2026-06-08", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Turning messy onboarding docs into a structured course",
+   "Building a sales ramp with graded mock client calls",
+   "Keeping compliance or SOP training current as documents change",
+   "Exporting courses to an existing LMS through SCORM",
+   "Giving staff and AI agents the same knowledge base"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Ryan Trattner says StudyFetch had helped 8 million students learn, and Honen brings what the team learned to businesses. The problem he describes is companies spending heavily on generic training that is half-stale by the time a course is finished.",
+    "He presented Honen as automated learning infrastructure: build a course in seconds from your docs or a topic, send it by link or into your LMS, keep learners engaged with personalised formats and hands-on projects, and let admins ask the course agent what is going wrong. He also announced a collaboration with NVIDIA to bring AI training to students and professionals."
+   ],
+   "attribution": "Ryan Trattner, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/honen?comment=5420339"
+  },
+  "audience": {
+   "fit": [
+    "run onboarding or training and your internal courses keep going out of date",
+    "have training material spread across docs, recordings and tools",
+    "need practice exercises, not just quizzes"
+   ],
+   "not_fit": [
+    "are a solo learner: the Team plan starts at 10 seats",
+    "need SSO, audit logs or LTI integration without an enterprise contract",
+    "want fully automatic publishing without review: the team designs it for human approval"
+   ]
+  },
+  "pricing": {
+   "intro": "Honen's pricing page lists two plans, in US dollars.",
+   "url": "https://honen.com/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "Team", "price": "$20/seat/month (minimum 10 seats, $200/month)", "amount": 20, "currency": "USD", "detail": "Unlimited AI course creation from your files, all nine learning formats, AI video lessons, voice AI tutor, certificates, shared workspace, assignments and analytics, SCORM export and shareable course sites, knowledge base, Slack and Teams notifications"},
+    {"name": "Enterprise", "price": "Custom", "currency": "USD", "detail": "Bulk pricing over 100 seats; SSO/SAML and SCIM, roles and audit logs, LMS/LTI 1.3 and custom domains, knowledge-base chatbot in Slack, Teams and SMS, API, MCP server and custom connectors, dedicated success manager"}
+   ],
+   "notes": [
+    "In the launch thread a maker said small-business pricing could be just under $10 per seat per month; the pricing page now shows $20 per seat for Team."
+   ]
+  },
+  "alternatives": {
+   "intro": "Creatium, EverLearns Studio and Mini Course Generator are on Product Hunt's alternatives list. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Creatium", "url": "https://www.creatium.com/", "what": "Interactive learning content creator", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 10, "ph_url": "https://www.producthunt.com/products/creatium", "difference": "Focuses on authoring interactive lessons; Honen adds a knowledge base that keeps courses current and team analytics."},
+    {"name": "EverLearns Studio", "url": "https://everlearns.com/", "what": "Turns material into a course in minutes", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 6, "ph_url": "https://www.producthunt.com/products/everlearns-studio", "difference": "Fast course generation; Honen is built around company training, roleplays and assignments."},
+    {"name": "Mini Course Generator", "url": "https://minicoursegenerator.com/", "what": "Mini-courses for marketing and training", "starts_at": "See its pricing page", "ph_rating": 4.73, "ph_reviews": 15, "ph_url": "https://www.producthunt.com/products/mini-course-generator", "difference": "Short courses, often for marketing; Honen targets ongoing workforce training."}
+   ],
+   "more": "Product Hunt also lists GoIT LMS and Learn.xyz."
+  },
+  "reviews": {"count": 1, "rating": 4, "url": "https://www.producthunt.com/products/honen/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Courses that update when source docs change", "Version history with rollback per cohort", "Purpose-built for team onboarding rather than individual study"],
+    "asked": ["How it measures retention beyond completion (project-based learning and mastery tracking)", "How updates reach learners mid-course (revisions with deploy and rollback)", "Human oversight for compliance content (nothing goes live without approval unless you choose)", "Small-business pricing"],
+    "criticised": ["A commenter questioned whether course quality holds for judgment-heavy topics, not just factual recall"]
+   },
+   "quotes": [
+    {"text": "Honen feels purpose-built for onboarding a whole team, not just one person digesting docs.", "author": "Ulykbek Asylbek", "url": "https://www.producthunt.com/products/honen/reviews?review=566729"},
+    {"text": "Internal courses always go stale because nobody maintains them.", "author": "Oluwatoyin Riliwan Sunday", "url": "https://www.producthunt.com/products/honen?comment=5435515"},
+    {"text": "Seconds to generate something is easy. seconds to generate something an employee would actually learn from is much harder.", "author": "Ansari Adin", "url": "https://www.producthunt.com/products/honen?comment=5436333"}
+   ]
+  },
+  "pros": [
+   "Courses built from your own docs, recordings and knowledge base",
+   "Updates with version history and human approval",
+   "Graded roleplays and software walkthroughs",
+   "SCORM export and LMS delivery",
+   "SOC 2 Type II and no AI training on your content, per its site"
+  ],
+  "cons": [
+   "10-seat minimum on the Team plan",
+   "SSO, audit logs and custom domains need Enterprise",
+   "Quality on judgment-heavy topics is unproven, a commenter noted"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/honen",
+   "x": {"none": "We found no posts about Honen on X to link yet.", "search_url": "https://x.com/search?q=honen.com&f=live", "profile_url": "https://twitter.com/honencourses"}
+  },
+  "faq": [
+   {"q": "What is Honen?", "a": "An AI platform that turns a company's documents, recordings and knowledge into interactive training courses with simulations, quizzes and an AI tutor, and keeps them updated."},
+   {"q": "How much does Honen cost?", "a": "The Team plan is $20 per seat per month with a minimum of 10 seats ($200 a month). Enterprise is custom, with bulk pricing over 100 seats."},
+   {"q": "What happens when our docs change?", "a": "Courses are tied to your knowledge base and can be updated as it changes. The team said each course is a revision you can deploy or roll back, and a person approves updates before learners see them."},
+   {"q": "Can I use it with our existing LMS?", "a": "Yes. Team includes SCORM export, and Enterprise adds LTI 1.3 integration."},
+   {"q": "Who makes Honen?", "a": "StudyFetch, the study app company, which says it has taught more than 8 million students."}
+  ],
+  "sources": [
+   {"label": "Honen official site", "url": "https://honen.com/"},
+   {"label": "Honen pricing", "url": "https://honen.com/pricing"},
+   {"label": "Honen about", "url": "https://honen.com/about"},
+   {"label": "Honen support", "url": "https://honen.com/support"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/honen"},
+   {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/honen/reviews"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/honen/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/ac3232b7-1a90-4a9d-9ced-086e2c4cabfb.jpeg?auto=format&fit=max&w=1400", "w": 3608, "h": 2160, "alt": "Honen graphic 'Train & upskill your team in seconds' with the course assistant reading sources and drafting an outline", "credit": "Image: Honen via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/d72bda7d-5981-479d-9e0f-20a946868054.jpeg?auto=format&fit=max&w=1400", "w": 3608, "h": 2160, "alt": "Honen graphic 'Deploy courses that are engaging and effective' with a lesson on AI agents and tools", "credit": "Image: Honen via Product Hunt"}
+  ]
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "slug": "mio",
+ "website": "https://www.m.io/",
+ "excerpt": "Mio connects Google Chat, Microsoft Teams and Slack so people on different chat platforms can message, share files and see each other's directories.",
+ "content": "<p>Mio makes interoperability software for workplace chat. It relays messages in real time between Google Chat, Microsoft Teams and Slack, so a company that uses more than one platform, or works with partners on another one, can talk without everyone switching apps. Its products cover directory sync (so users can find each other across platforms), chat sync, external chat sync with other organisations, calendar sync and file sync. Its website names frontline workers, mergers and acquisitions, long-term coexistence of two platforms and avoiding vendor lock-in as the main uses.</p><p>According to its about page, Mio started in 2018, when large companies were increasingly using two or more messaging apps internally, and began with chat interoperability before adding identity management, file sharing and meeting features. It describes itself as a Google partner that works with the Google Workspace team on collaboration between Google Workspace, Microsoft Teams and Slack. Mio's site lists customer logos including large enterprises. We did not find recent independent press coverage of its funding, so this page sticks to what the company itself publishes.</p><p>Mio publishes how its pricing works but not the price per user. Only people who need cross-platform chat need a licence; licences are charged per user per month with a minimum one-year commitment, the price depends on which platforms are connected and how many users there are, and there is a flat one-time implementation fee of $10,000. It suits IT teams at companies running Google Workspace alongside Microsoft 365 or Slack, for example after a merger.</p><p><em>We have not used Mio for this page. It brings together Mio's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Chat interoperability",
+  "platform": "Cloud, connecting Google Chat, Microsoft Teams and Slack",
+  "starts_at": "Per user per month, quoted; $10,000 implementation fee",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Message, file and directory sync between Google Chat, Microsoft Teams and Slack",
+  "maker": {
+   "name": "Mio",
+   "url": "https://www.m.io/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/62ccccd9c505ff91c1a567f4/661420a0aac8dd6caf4b0f1f_mio-website-preview.png",
+    "alt": "Mio banner: the Mio logo beside a Google Chat window and a Microsoft Teams window showing the same synced conversation",
+    "credit": "Image: Mio (m.io)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/62ccccd9c505ff91c1a567f4/660bd21ea7512325092f5806_interop-1.webp",
+    "alt": "Diagram of connected circles with people's avatars, documents, GIFs and chat icons on black, illustrating cross-platform collaboration",
+    "credit": "Image: Mio (m.io)",
+    "w": 704,
+    "h": 964
+   }
+  ],
+  "use_cases": [
+   "Messaging between Microsoft Teams and Google Chat users",
+   "Connecting Slack and Teams during a merger",
+   "Chatting with external partners on another platform",
+   "Syncing user directories and calendars across platforms",
+   "Sharing files across chat platforms"
+  ],
+  "audience": {
+   "fit": [
+    "IT teams at companies running two chat platforms",
+    "organisations going through a merger or acquisition",
+    "companies working closely with partners on other platforms"
+   ],
+   "not_fit": [
+    "small teams that all use one chat app",
+    "buyers who want self-serve monthly pricing without a one-year commitment"
+   ]
+  },
+  "pricing": {
+   "intro": "Mio's pricing page explains how it charges but quotes the per-user price on request.",
+   "url": "https://www.m.io/pricing",
+   "plans": [
+    {
+     "name": "Mio licence",
+     "price": "Per user per month, quoted",
+     "detail": "Only users who need cross-platform chat; minimum one-year commitment"
+    },
+    {
+     "name": "Implementation",
+     "price": "$10,000 one-time",
+     "amount": 10000,
+     "currency": "USD",
+     "detail": "White-glove onboarding"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Connects the three main workplace chat platforms",
+   "Only users who need it require a licence",
+   "Works closely with Google Workspace"
+  ],
+  "cons": [
+   "Per-user price is not published",
+   "$10,000 implementation fee and one-year minimum"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Mio. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Slack Connect",
+     "url": "https://slack.com/connect",
+     "what": "Slack's shared channels between organisations",
+     "starts_at": "See its own website",
+     "difference": "Works only when both sides use Slack."
+    },
+    {
+     "name": "Microsoft Teams external access",
+     "url": "https://www.microsoft.com/microsoft-teams/",
+     "what": "Teams federation with other organisations",
+     "starts_at": "See its own website",
+     "difference": "Built into Teams, but only Teams-to-Teams or limited Skype interop."
+    },
+    {
+     "name": "Matrix bridges",
+     "url": "https://matrix.org/",
+     "what": "Open-source chat bridging",
+     "starts_at": "See its own website",
+     "difference": "Self-hosted bridges between chat networks, more technical to run."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Mio do?",
+    "a": "It syncs messages, files, directories and calendars between Google Chat, Microsoft Teams and Slack."
+   },
+   {
+    "q": "How much does Mio cost?",
+    "a": "Licences are priced per user per month with a one-year minimum, quoted on request, plus a $10,000 one-time implementation fee."
+   },
+   {
+    "q": "When did Mio start?",
+    "a": "Its about page says it began in 2018."
+   },
+   {
+    "q": "Do all employees need a Mio licence?",
+    "a": "No. Only users who need cross-platform chat need one, according to Mio's pricing page."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Mio homepage",
+    "url": "https://www.m.io/"
+   },
+   {
+    "label": "Mio about page",
+    "url": "https://www.m.io/about"
+   },
+   {
+    "label": "Mio pricing",
+    "url": "https://www.m.io/pricing"
+   }
+  ]
+ }
+}

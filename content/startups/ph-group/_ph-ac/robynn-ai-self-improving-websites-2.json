@@ -1,0 +1,306 @@
+{
+ "input": "https://www.producthunt.com/posts/robynn-ai-self-improving-websites-2",
+ "final_url": "https://www.producthunt.com/products/robynn-ai-self-improving-websites?launch=robynn-ai-self-improving-websites-2",
+ "launch": {
+  "slug": "robynn-ai-2",
+  "name": "Robynn AI",
+  "tagline": "Websites that improve and heal with self-learning",
+  "featuredAt": "2026-07-27T00:01:00-07:00",
+  "dailyRank": "5",
+  "weeklyRank": "23",
+  "points": 257,
+  "commentsCount": 48,
+  "pricingType": "free_options",
+  "description": "Your website starts decaying the day it ships. Broken links, stale pages, slipping rankings, invisible to ChatGPT.\n\nRobynn connects to your live site — no rebuild, no migration.\n\nIt audits every page against your brand, ICP, and competitors, then proposes evidence-backed fixes.\n\nPoint at any element, describe a change in plain English. Agents stage it, you approve, Robynn publishes and measures what moved in GA.\n\nWins get reinforced. Regressions roll back.\n\nFirst audit is free.",
+  "makers": [
+   {
+    "name": "Madhukar Kumar",
+    "username": "madhukar_kumar1",
+    "headline": "Developer turned growth marketer"
+   }
+  ],
+  "hunter": "H",
+  "media": [
+   {
+    "uuid": "9587486c-2cd6-4995-a2bd-325378e4621e.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "c02bd7d6-0732-4b5e-a505-1d60c31e3959.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "151239aa-f01a-4a47-b80a-adb095a74657.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "2f83ee4e-4059-4aa9-8551-22d716338e70.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "73e4dc04-f3f4-4611-a146-32eb9672cd6e.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "8d759982-40a2-41fe-a8aa-eb615614f7ec.png",
+    "type": "image",
+    "w": 2540,
+    "h": 1520,
+    "video": null
+   },
+   {
+    "uuid": "5b260002-28d8-4b54-a826-11be007b7013.jpeg",
+    "type": "video",
+    "w": 200,
+    "h": 113,
+    "video": "https://youtu.be/fSzgVyVfQRs"
+   }
+  ],
+  "links": [
+   "robynn.ai",
+   "twitter.com",
+   "x.com",
+   "www.linkedin.com"
+  ],
+  "badges": [
+   [
+    "daily",
+    5
+   ]
+  ]
+ },
+ "product": {
+  "name": "Robynn AI",
+  "slug": "robynn-ai-self-improving-websites",
+  "tagline": "Websites that improve and heal with self-learning",
+  "description": "Your website starts decaying the day it ships. Broken links, stale pages, slipping rankings, invisible to ChatGPT. Robynn connects to your live site — no rebuild, no migration. It audits every page against your brand, ICP, and competitors, then proposes evidence-backed fixes. Point at any element, describe a change in plain English. Agents stage it, you approve, Robynn publishes and measures what moved in GA. Wins get reinforced. Regressions roll back. First audit is free.",
+  "websiteUrl": "https://robynn.ai",
+  "reviewsCount": 0,
+  "reviewsRating": 0,
+  "followersCount": 450,
+  "twitterUrl": "https://twitter.com/robynnaiapp",
+  "linkedinUrl": "https://www.linkedin.com/company/robynn",
+  "postsCount": 1,
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": [
+  {
+   "id": "5651096",
+   "depth": 0,
+   "author": "Madhukar Kumar",
+   "username": "madhukar_kumar1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "Hey Product Hunt! 👋 Madhukar here, co-founder of Robynn. My co-founder, Rafiq and I both worked at Interwoven, the company behind the first generation of web content management (TeamSite/LiveSite — still running inside OpenText decades later). That generation made websites possible to publish. But it froze an assumption in place: a website is a project with an end date. Launch day is the finish line, and then the site quietly decays — broken links, stale pages, rankings that slip, and now invisibility in ChatGPT answers nobody is watching for. Big companies solve this with people: web engineers, agencies, SEO retainers. Small teams get a to-do list that never shrinks. Robynn is that engineering muscle for every marketing team. Connect your existing site (no rebuild, no migration), get a continuous diagnosis against your brand and ICP, point at anything and describe the change in plain English. Agents rewrite and stage it; nothing goes live until you approve. Then we measure what moved in GA — wins get reinforced, regressions roll back. The design principle we won't budge on: the machine does the labor, you keep the judgment. The first diagnosis is free and takes minutes. Would love"
+  },
+  {
+   "id": "5678496",
+   "depth": 1,
+   "author": "Manish Gupta",
+   "username": "mg2200",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "@madhukar_kumar1 &nbsp;congrats on the launch! Can't wait to see this scale. Good luck!!"
+  },
+  {
+   "id": "5667149",
+   "depth": 0,
+   "author": "Ramish Zaidi",
+   "username": "ramish_saje",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "I'm curious how it handles brand voice specifically. My site has a pretty distinct tone, and I don't want fixes that flatten it."
+  },
+  {
+   "id": "5668859",
+   "depth": 1,
+   "author": "Madhukar Kumar",
+   "username": "madhukar_kumar1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ramish_saje &nbsp;Robynn builds a brand book initially (voice, tone, design tokens) and any new generation is in that voice. For content including images anything Robynn does always stick to that brand book (aka brand.md) but users can override with sub-brands and personal style at point of generation."
+  },
+  {
+   "id": "5670365",
+   "depth": 1,
+   "author": "Madhukar Kumar",
+   "username": "madhukar_kumar1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@ramish_saje &nbsp; see example. We build a brand context first seeded with public knowledge then you the user can steer it and put it on auto-reflections mode. This is what is used for all recommendations and other tasks in the platform"
+  },
+  {
+   "id": "5667178",
+   "depth": 0,
+   "author": "Hamza Afzal Butt",
+   "username": "hamza_afzal_butt",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "How does Robynn decide whether a change genuinely improved performance before reinforcing it?"
+  },
+  {
+   "id": "5668874",
+   "depth": 1,
+   "author": "Madhukar Kumar",
+   "username": "madhukar_kumar1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@hamza_afzal_butt &nbsp;You connect your google analytics at each page so any change is measured against a set goal for example, organic traffic, form fills etc."
+  },
+  {
+   "id": "5670314",
+   "depth": 0,
+   "author": "Gal Dayan",
+   "username": "galdayan",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "the wins-get-reinforced, regressions-roll-back loop is the interesting part to me. GA signal is noisy and slow, especially for a lower-traffic site where a real ranking or conversion shift can take weeks to separate from normal variance. how long does Robynn wait before it calls a change a win or a regression, and does that window scale with the site's traffic volume so a small site doesn't get a false rollback from noise alone"
+  },
+  {
+   "id": "5670355",
+   "depth": 1,
+   "author": "Madhukar Kumar",
+   "username": "madhukar_kumar1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@galdayan &nbsp;Right now it is 7 days per change. We are also adding PostHog as an analytics/events collection and measurement."
+  },
+  {
+   "id": "5669049",
+   "depth": 0,
+   "author": "Adam Kamaneh",
+   "username": "adamkamaneh",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Staging changes for approval before anything publishes is the detail that makes this usable on a real site, auto publishing would have been a hard no for me. Closing the loop through Google Analytics and rolling back regressions on its own is a nice touch. What actually triggers a rollback, is there a minimum traffic threshold before it decides a change hurt performance?"
+  },
+  {
+   "id": "5669226",
+   "depth": 1,
+   "author": "Madhukar Kumar",
+   "username": "madhukar_kumar1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@adamkamaneh &nbsp;Yes you can set a goal at each page that is measurable like organic traffic, bounce rate etc. If the results are negative it triggers learning and rollback."
+  },
+  {
+   "id": "5667379",
+   "depth": 0,
+   "author": "Andras Czeizel",
+   "username": "andrasczeizel",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "The \"website starts decaying the day it ships\" framing is painfully accurate. as someone preparing a product launch, I know how quickly pages, copy, links, SEO, and docs can fall behind once the team moves on to the next thing. I like that Robynn works on the existing site instead of forcing a rebuild, and the stage -&gt; approve -&gt; measure -&gt; rollback loop feels like the right balance between automation and control. Curious how it decides which changes are actually worth proposing instead of turning every small issue into more work for the team :)"
+  },
+  {
+   "id": "5669253",
+   "depth": 1,
+   "author": "Madhukar Kumar",
+   "username": "madhukar_kumar1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@andrasczeizel &nbsp;We built our agent with a lot of learnings from my own personal career as a CMO (and former PM) that is now codified into its skills and workflow. In addition, recently we added a self-learning loop at the org level. As you use it for other things like content generation or even campaigns, those rules and reflections are put back into website recommendations."
+  },
+  {
+   "id": "5667821",
+   "depth": 0,
+   "author": "Anant Gupta",
+   "username": "iamanantgupta",
+   "ai": null,
+   "score": null,
+   "badges": [],
+   "text": "Continuous improvement feels much more realistic than treating websites as one-time projects. 👏 Do you have plans for multiple websites?"
+  },
+  {
+   "id": "5669208",
+   "depth": 1,
+   "author": "Madhukar Kumar",
+   "username": "madhukar_kumar1",
+   "ai": null,
+   "score": null,
+   "badges": [
+    "maker"
+   ],
+   "text": "@iamanantgupta &nbsp;Yes, we do support multiple websites out of the box."
+  }
+ ],
+ "warning": "launch slug robynn-ai-2 != requested robynn-ai-self-improving-websites-2"
+}

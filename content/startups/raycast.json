@@ -1,0 +1,178 @@
+{
+ "slug": "raycast",
+ "website": "https://www.raycast.com/",
+ "excerpt": "Raycast is a keyboard launcher with extensions, clipboard history, snippets and built-in AI, for Mac, Windows and iOS. Free and paid plans, and alternatives.",
+ "content": "<p>Raycast is a launcher: press a keyboard shortcut, type, and open apps, files and commands without reaching for the mouse. It runs on Mac and Windows, and there is an iOS version too. Beyond launching, it bundles several everyday utilities in one app: clipboard history, window management, snippets that expand short keywords into longer text, quicklinks and hotkeys. An Extension Store adds commands for other apps such as Linear, Spotify, Slack and Notion, so you can act in them from the launcher, and developers can build and publish their own extensions. Raycast AI brings chat and AI commands into the same window and works with the tools you already use.</p>\n<p>Raycast's homepage cites a 99.8% crash-free rate, a Slack community of 37,000 members and 90,000 followers on X. It does not publish user numbers or funding on the pages we checked.</p>\n<h2>Free and paid plans</h2>\n<p>The core launcher is free. The Free plan includes the core features, thousands of extensions, custom extensions and developer tools, three months of clipboard history and five notes, but no Raycast AI. Paid plans for individuals add AI and are sold in three sizes that differ mainly in AI credits and model access. <strong>Pro</strong> costs $10 a month or $96 a year with 500 AI credits a month, bring-your-own-key support, cloud sync, dictation, custom themes, a translator and unlimited clipboard history and notes, but not the top-tier AI models. <strong>Plus</strong> costs $20 a month ($192 a year) with 3,000 credits and top-tier models, and <strong>Max</strong> $50 a month ($480 a year) with 7,500 credits.</p>\n<p>Teams pay per user: Teams Free costs nothing and allows shared commands, quicklinks and snippets within limits; Teams Pro is $15 a user a month, Teams Plus $25 and Teams Max $65, mirroring the individual credit levels. Enterprise is custom and adds an AI Control Center (organisation-wide AI switches, approved providers, your own keys) plus SAML, SCIM and other admin controls. AI credits expire 60 days after each monthly grant, and students get 50% off Pro.</p>\n<p><em>We have not tested Raycast ourselves. This page brings together Raycast's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "Productivity launcher",
+  "platform": "macOS, Windows and iOS",
+  "starts_at": "Free; Pro $10/month",
+  "schema_category": "UtilitiesApplication",
+  "summary_short": "Keyboard launcher with extensions, clipboard history, snippets and built-in AI",
+  "maker": {
+   "name": "Raycast",
+   "url": "https://www.raycast.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.raycast.com/opengraph-image-pwu6ef.png?opengraph-image.1f-98etzkaz5s.png",
+    "alt": "Raycast graphic 'Your shortcut to everything.' showing the Raycast window searching files for '.heic' with a preview panel",
+    "credit": "Image: Raycast",
+    "w": 2400,
+    "h": 1260
+   },
+   {
+    "url": "https://www.raycast.com/_next/static/immutable/media/opengraph-image.2rnnjb4kz31ry.png",
+    "alt": "Raycast Extension Store graphic with app icons including Figma, Notion, Spotify, Slack and Google",
+    "credit": "Image: Raycast",
+    "w": 2400,
+    "h": 1260
+   }
+  ],
+  "use_cases": [
+   "Open apps, files and system commands from the keyboard",
+   "Search clipboard history and paste earlier items",
+   "Expand short keywords into full text with snippets",
+   "Control apps such as Linear, Slack or Spotify through extensions",
+   "Ask an AI model a question without opening a browser (paid plans)"
+  ],
+  "audience": {
+   "fit": [
+    "live on the keyboard and want one launcher instead of several small utilities",
+    "want AI chat a shortcut away and are happy paying for credits",
+    "are a team that wants shared snippets and commands"
+   ],
+   "not_fit": [
+    "want AI on the free plan: Raycast AI starts with Pro",
+    "need top-tier AI models on the $10 Pro plan: they start with Plus",
+    "are happy with the launcher built into your operating system"
+   ]
+  },
+  "pros": [
+   "Free plan covers the core launcher and thousands of extensions",
+   "Several utilities (clipboard, windows, snippets) in one app",
+   "Clear, published prices for individuals and teams"
+  ],
+  "cons": [
+   "No AI on the free plan",
+   "AI credits expire 60 days after each grant",
+   "Top-tier AI models need Plus or Max"
+  ],
+  "pricing": {
+   "intro": "Raycast's own prices, in US dollars. Annual prices are shown where Raycast lists them.",
+   "url": "https://www.raycast.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Core features, thousands of extensions, custom extensions, 3-month clipboard history, 5 notes; no Raycast AI"
+    },
+    {
+     "name": "Pro",
+     "price": "$10/month or $96/year",
+     "amount": 10,
+     "currency": "USD",
+     "detail": "Raycast AI with 500 credits a month, BYO key, cloud sync, dictation, custom themes, unlimited clipboard history and notes; no top-tier models"
+    },
+    {
+     "name": "Plus",
+     "price": "$20/month or $192/year",
+     "amount": 20,
+     "currency": "USD",
+     "detail": "Everything in Pro, 3,000 credits a month, top-tier AI models"
+    },
+    {
+     "name": "Max",
+     "price": "$50/month or $480/year",
+     "amount": 50,
+     "currency": "USD",
+     "detail": "Everything in Pro, 7,500 credits a month, top-tier AI models"
+    },
+    {
+     "name": "Teams Pro / Plus / Max",
+     "price": "$15 / $25 / $65 per user/month",
+     "amount": 15,
+     "currency": "USD",
+     "detail": "Per-user team plans with 500 / 3,000 / 7,500 credits per user, unlimited shared items, private store"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "AI Control Center, SAML and SCIM, domain capture, 2FA enforcement, extension and IP allow-lists"
+    }
+   ],
+   "notes": [
+    "Teams Free costs $0 and is not a trial: unlimited members, 5 shared commands, 30 shared quicklinks and 30 shared snippets.",
+    "AI credits expire 60 days after each monthly grant; top-up credits expire after 12 months.",
+    "Students get 50% off Pro."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other keyboard launchers. Descriptions come from each product's own site.",
+   "items": [
+    {
+     "name": "Alfred",
+     "url": "https://www.alfredapp.com/",
+     "what": "Productivity app for macOS with hotkeys, keywords, text expansion and custom actions through its Powerpack",
+     "starts_at": "See its site",
+     "difference": "Mac only; custom workflows come with the paid Powerpack."
+    },
+    {
+     "name": "LaunchBar",
+     "url": "https://obdev.at/products/launchbar/",
+     "what": "Mac launcher that gives keyboard access to every corner of your Mac",
+     "starts_at": "See its site",
+     "difference": "Long-running Mac launcher without a built-in AI subscription."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Raycast free?",
+    "a": "Yes. The Free plan includes the launcher, thousands of extensions, clipboard history for three months and snippets. Raycast AI needs a paid plan."
+   },
+   {
+    "q": "How much is Raycast Pro?",
+    "a": "$10 a month or $96 a year, with 500 AI credits a month. Plus ($20) and Max ($50) add more credits and top-tier models."
+   },
+   {
+    "q": "Does Raycast work on Windows?",
+    "a": "Yes. Raycast lists Mac and Windows versions and an iOS app."
+   },
+   {
+    "q": "What are Raycast extensions?",
+    "a": "Add-ons from the Raycast Store that let you control other apps, such as Linear, Slack, Spotify or Notion, from the launcher. Developers can publish their own."
+   },
+   {
+    "q": "Do Raycast AI credits roll over?",
+    "a": "No. Credits expire 60 days after each monthly grant; purchased top-ups last 12 months."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Raycast official site",
+    "url": "https://www.raycast.com/"
+   },
+   {
+    "label": "Raycast pricing",
+    "url": "https://www.raycast.com/pricing"
+   },
+   {
+    "label": "Raycast Store",
+    "url": "https://www.raycast.com/store"
+   },
+   {
+    "label": "Alfred",
+    "url": "https://www.alfredapp.com/"
+   },
+   {
+    "label": "LaunchBar",
+    "url": "https://obdev.at/products/launchbar/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

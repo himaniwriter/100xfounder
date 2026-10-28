@@ -1,0 +1,167 @@
+{
+ "slug": "mobikwik",
+ "website": "https://www.mobikwik.com/",
+ "excerpt": "MobiKwik is a Gurugram fintech (wallet, UPI, pay later, payment gateway) founded in 2009 and listed on the NSE and BSE since December 2024.",
+ "content": "<p>MobiKwik, run by One MobiKwik Systems Ltd, is an Indian digital payments and financial services company. It started as a mobile wallet for recharges and bill payments and now describes itself as a digital banking platform for consumers and merchants. Inc42 reported that its revenue comes from consumer payments, buy now, pay later (BNPL) and payment gateway services, and that it launched a sound box for merchants called Vibe.</p><p>Bipin Preet Singh started MobiKwik in August 2009 and Upasana Taku joined about five months later, according to a 2016 Outlook Business profile, which describes how banks were reluctant to partner with the young company and how the first deal took nine months to close. Singh is the CEO and Taku the COO. Inc42 reported that the company joined the unicorn club in October 2021.</p><p>MobiKwik listed on 18 December 2024. Inc42 reported that the INR 572 crore IPO, entirely a fresh issue, was oversubscribed 119.38 times, and that the shares listed at INR 442.25 on the BSE and INR 440 on the NSE, a premium of about 58% over the INR 279 issue price.</p><p>The MobiKwik app is free to download; any charges for specific services, such as interest on credit products, are shown in the app and the product terms. Check those terms before using credit. This profile is put together from the company's own pages and published reporting. We have not tested the product for this page, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Fintech and digital payments",
+  "platform": "Android, iOS and web",
+  "starts_at": "Free app; product charges shown in the app",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Wallet, UPI, bill payments, pay-later credit and a payment gateway for merchants",
+  "maker": {
+   "name": "One MobiKwik Systems Ltd",
+   "url": "https://www.mobikwik.com/"
+  },
+  "team": [
+   {
+    "name": "Bipin Preet Singh",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Upasana Taku",
+    "role": "Cofounder and COO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Minister_of_State_for_Communications_%28Independent_Charge%29_and_Railways%2C_Shri_Manoj_Sinha_launching_the_%E2%80%9CBSNL-Mobikwik_Payment_App%E2%80%9D%2C_in_New_Delhi_on_August_17%2C_2017.jpg/1280px-thumbnail.jpg",
+    "alt": "Minister Manoj Sinha and others on stage holding up large cut-outs of phones showing the BSNL-MobiKwik payment app at its launch in New Delhi, August 2017",
+    "credit": "Image: Ministry of Communications, Government of India, GODL-India, via Wikimedia Commons (BSNL-MobiKwik Payment App launch, 17 August 2017)",
+    "w": 1280,
+    "h": 860
+   }
+  ],
+  "use_cases": [
+   "Paying with UPI or the MobiKwik wallet",
+   "Mobile recharges and bill payments",
+   "Buy now, pay later credit",
+   "Accepting payments as a merchant through the payment gateway or a sound box"
+  ],
+  "audience": {
+   "fit": [
+    "want one app for UPI, wallet, recharges and bills",
+    "are a merchant looking for a payment gateway or sound box"
+   ],
+   "not_fit": [
+    "want to borrow without reading the credit terms carefully",
+    "need banking services outside India"
+   ]
+  },
+  "pricing": {
+   "intro": "MobiKwik does not publish a price list on its website. The consumer app is free; charges for credit and other products are shown in the app and product terms. Merchant pricing is on request.",
+   "plans": [
+    {
+     "name": "Consumer app",
+     "price": "Free to download",
+     "detail": "UPI, wallet, recharges and bills"
+    },
+    {
+     "name": "Credit (pay later)",
+     "price": "See product terms in the app",
+     "detail": "Interest and fees vary"
+    },
+    {
+     "name": "Merchant products",
+     "price": "On request",
+     "detail": "Payment gateway and Vibe sound box"
+    }
+   ],
+   "url": "https://www.mobikwik.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Payments, credit and merchant tools from one company",
+   "Listed company with public results",
+   "Long track record since 2009"
+  ],
+  "cons": [
+   "No published price list",
+   "Credit products carry interest and fees"
+  ],
+  "alternatives": {
+   "intro": "Other Indian payment apps. Charges are on each provider's own site or app.",
+   "items": [
+    {
+     "name": "Paytm",
+     "url": "https://paytm.com/",
+     "what": "Payments and financial services app",
+     "tags": [
+      "Payments",
+      "UPI"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Larger listed rival with a similar wallet-to-fintech path."
+    },
+    {
+     "name": "PhonePe",
+     "url": "https://www.phonepe.com/",
+     "what": "UPI payments app",
+     "tags": [
+      "UPI",
+      "Payments"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "India's largest UPI app by volume."
+    },
+    {
+     "name": "Google Pay",
+     "url": "https://pay.google.com/intl/en_in/about/",
+     "what": "UPI payments app",
+     "tags": [
+      "UPI"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Simple UPI payments from Google."
+    },
+    {
+     "name": "Razorpay",
+     "url": "https://razorpay.com/",
+     "what": "Payment gateway",
+     "tags": [
+      "Payment gateway"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Alternative for the merchant side only."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded MobiKwik?",
+    "a": "Bipin Preet Singh (CEO), who started it in 2009, and Upasana Taku (COO), who joined about five months later."
+   },
+   {
+    "q": "Is MobiKwik listed?",
+    "a": "Yes. It listed on the BSE and NSE on 18 December 2024 after an IPO priced at INR 279 a share."
+   },
+   {
+    "q": "Is MobiKwik free?",
+    "a": "The app is free to download. Credit products carry interest and fees shown in their terms."
+   },
+   {
+    "q": "What does MobiKwik offer merchants?",
+    "a": "A payment gateway and a sound box called Vibe, according to Inc42."
+   }
+  ],
+  "sources": [
+   {
+    "label": "MobiKwik website",
+    "url": "https://www.mobikwik.com/"
+   },
+   {
+    "label": "Inc42: MobiKwik shares list at 58.5% premium (18 Dec 2024)",
+    "url": "https://inc42.com/buzz/mobikwik-shares-list-at-58-5-premium-over-ipo-issue-price"
+   },
+   {
+    "label": "Outlook Business: E-wallet zealot (6 Oct 2016)",
+    "url": "https://www.outlookbusiness.com/magazine/story/e-wallet-zealot-3080"
+   },
+   {
+    "label": "Wikimedia Commons: BSNL-MobiKwik payment app launch (2017)",
+    "url": "https://commons.wikimedia.org/wiki/File:The_Minister_of_State_for_Communications_(Independent_Charge)_and_Railways,_Shri_Manoj_Sinha_launching_the_%E2%80%9CBSNL-Mobikwik_Payment_App%E2%80%9D,_in_New_Delhi_on_August_17,_2017.jpg"
+   }
+  ]
+ }
+}

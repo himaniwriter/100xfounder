@@ -1,0 +1,250 @@
+{
+ "slug": "thinking-orbs",
+ "excerpt": "Thinking Orbs is a free, MIT-licensed React library of animated orbs that show what an AI agent is doing: thinking, searching, compacting and more. Features, install and alternatives.",
+ "content": "<p>Thinking Orbs is a small React component library of animated status indicators for AI interfaces. Each orb shows a state an AI agent goes through, such as working, reasoning, searching, retrying, waiting or compacting its context, so users can see what the agent is doing instead of watching a generic spinner.</p><p>The library has 8 states, 15 variants, 5 shapes (sphere, cube, octahedron, tetrahedron and torus) and 8 render styles, from dots to halftone and mesh. It has no dependencies and is 3.8 KB gzipped, and shapes and styles you don't import stay out of your bundle. Orbs take the current text colour, hold still for people who prefer reduced motion, and can carry a screen-reader label. It works in React 18 or later, or in plain JavaScript through a separate vanilla entry point, and you can also copy the source into your project with the shadcn CLI.</p><p>Thinking Orbs is made by Yogesh and is free under the MIT licence. It launched on Product Hunt on 4 October 2026 and finished #11 for the day with 89 upvotes.</p><p><em>We have not tested Thinking Orbs ourselves. This page brings together its official site, its npm and GitHub pages, its Product Hunt page and the official pages of comparable libraries, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "UI components",
+  "platform": "React library (also plain JavaScript)",
+  "os": "React 18 or later; vanilla JS build available",
+  "starts_at": "Free (MIT licence)",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Free React library of animated orbs that show what an AI agent is doing",
+  "maker": {
+   "name": "Yogesh",
+   "url": "https://www.producthunt.com/@yogesharc"
+  },
+  "team": [
+   {
+    "name": "Yogesh",
+    "role": "Founder",
+    "url": "https://www.producthunt.com/@yogesharc"
+   }
+  ],
+  "ph": {
+   "rank": 11,
+   "votes": 89,
+   "comments": 3,
+   "followers": 73,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Showing distinct states in an AI chat or agent UI: thinking, searching, retrying, compacting, waiting",
+   "Replacing a generic loading spinner with a status indicator that matches the agent's step",
+   "Adding an animated indicator to a non-React page with the vanilla JavaScript build"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Yogesh introduced Thinking Orbs as a set of animated status orbs for AI agents, designed with attention to every state and variant. His pitch was coverage: enough states, variants, shapes and render styles to match every step an agent goes through and fit different design styles, installed with a single npm command."
+   ],
+   "attribution": "Yogesh, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/thinking-orbs?comment=5916839"
+  },
+  "audience": {
+   "fit": [
+    "build AI chat or agent interfaces in React and want clearer status feedback",
+    "care about bundle size: no dependencies and 3.8 KB gzipped",
+    "want accessible motion that respects reduced-motion settings"
+   ],
+   "not_fit": [
+    "need a full chat UI kit with message lists and inputs (see prompt-kit or AI Elements)",
+    "need a mature, long-supported library: the npm package was at version 0.1.1 on 14 October 2026"
+   ]
+  },
+  "pricing": {
+   "intro": "Thinking Orbs is free and open source under the MIT licence. There is no paid tier.",
+   "url": "https://www.thinkingorbs.com/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Open source",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "MIT licence; install from npm or copy the source with the shadcn CLI"
+    }
+   ],
+   "notes": [
+    "The maker accepts optional sponsorship through Patreon."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt's alternatives here are general React UI kits. We compared Thinking Orbs with libraries made for AI interfaces instead. All three are free; details come from each project's own site or repository, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "prompt-kit",
+     "url": "https://www.prompt-kit.com/",
+     "what": "shadcn-based components for AI apps: prompt input, chat container, messages, reasoning, loaders and streaming responses",
+     "starts_at": "Free (MIT)",
+     "difference": "A full chat UI kit with a general-purpose loader. Thinking Orbs is a single dependency-free component with a separate animation for each agent state."
+    },
+    {
+     "name": "AI Elements",
+     "url": "https://elements.ai-sdk.dev/",
+     "what": "Vercel's React components for AI apps, built on shadcn/ui",
+     "starts_at": "Free to install",
+     "difference": "Expects Next.js, the AI SDK, shadcn/ui and Tailwind. Thinking Orbs needs only React, or nothing at all with the vanilla build."
+    },
+    {
+     "name": "LangUI",
+     "url": "https://www.langui.dev/",
+     "what": "60+ free copy-paste Tailwind components for ChatGPT-style interfaces",
+     "starts_at": "Free (MIT)",
+     "ph_rating": 5.0,
+     "ph_reviews": 2,
+     "difference": "Copy-paste chat layouts with no npm package and no animated state indicators."
+    }
+   ],
+   "more": "Product Hunt lists general UI kits as alternatives: Radix UI, HeroUI, Chakra UI, Material UI, Blueprint, gluestack and Blockies Animate."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/thinking-orbs/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Giving compacting and retrying their own states, which most agent UIs leave out"
+    ],
+    "asked": [],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "Compacting and retrying as their own states is the detail most agent UIs forget.",
+     "author": "Sagar Deore",
+     "url": "https://www.producthunt.com/products/thinking-orbs?comment=5919675"
+    }
+   ]
+  },
+  "pros": [
+   "Free and MIT-licensed",
+   "No dependencies and 3.8 KB gzipped; unused shapes and styles aren't bundled",
+   "States made for AI agents, including compacting and retrying",
+   "Respects reduced-motion settings and supports screen-reader labels",
+   "Works without React through the vanilla build"
+  ],
+  "cons": [
+   "Very new: version 0.1.1 on npm",
+   "Does one thing; you still need your own chat UI",
+   "No user reviews on Product Hunt yet"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/thinking-orbs",
+   "x": {
+    "none": "We found no posts about Thinking Orbs on X from other users yet. The maker is on X.",
+    "search_url": "https://x.com/search?q=%22thinking%20orbs%22&f=live",
+    "profile_url": "https://x.com/yogesharc"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Thinking Orbs free?",
+    "a": "Yes. It is open source under the MIT licence, with no paid tier. The maker accepts optional Patreon sponsorship."
+   },
+   {
+    "q": "How do I install it?",
+    "a": "Run npm i @yogesharc/thinking-orbs (pnpm, yarn and bun also work), or copy the source into your project with the shadcn CLI as described on the site."
+   },
+   {
+    "q": "Can I use it without React?",
+    "a": "Yes. A vanilla JavaScript entry point mounts an orb on any page and can pause, play or remove it."
+   },
+   {
+    "q": "Which states does it include?",
+    "a": "Working, reasoning, searching, background, retrying, compacting, waiting and a base state, with 15 variants between them."
+   },
+   {
+    "q": "Is it accessible?",
+    "a": "Orbs hold still when the user prefers reduced motion. Give an orb a label and screen readers announce it; without one it is hidden from assistive technology."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Thinking Orbs official site",
+    "url": "https://www.thinkingorbs.com/"
+   },
+   {
+    "label": "Thinking Orbs docs for LLMs",
+    "url": "https://www.thinkingorbs.com/llms.txt"
+   },
+   {
+    "label": "Thinking Orbs on npm",
+    "url": "https://www.npmjs.com/package/@yogesharc/thinking-orbs"
+   },
+   {
+    "label": "Thinking Orbs on GitHub",
+    "url": "https://github.com/yogesharc/thinking-orbs"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/thinking-orbs"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/thinking-orbs/alternatives"
+   },
+   {
+    "label": "prompt-kit on GitHub",
+    "url": "https://github.com/ibelick/prompt-kit"
+   },
+   {
+    "label": "AI Elements on GitHub",
+    "url": "https://github.com/vercel/ai-elements"
+   },
+   {
+    "label": "LangUI",
+    "url": "https://www.langui.dev/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/34855ea3-053f-4989-a611-8f680cd319e2.png?auto=format&fit=max&w=1400",
+    "alt": "Thinking Orbs title card: four dotted spherical orbs above the line 'Well-crafted status indicators for AI interfaces'",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://ph-files.imgix.net/76414e12-b77f-4cdc-b12f-668f0e90e5a9.png?auto=format&fit=max&w=1400",
+    "alt": "The Thinking Orbs site showing a grid of orbs labelled with agent states such as thinking and searching",
+    "w": 1400,
+    "h": 787
+   },
+   {
+    "url": "https://ph-files.imgix.net/661481e0-ce1b-4e96-a482-4e5f648ef177.png?auto=format&fit=max&w=1400",
+    "alt": "The Thinking Orbs playground: one orb in the centre with a list of states on the left and style controls on the right",
+    "w": 1400,
+    "h": 787
+   },
+   {
+    "url": "https://ph-files.imgix.net/72ee4690-c5e5-4a29-97a9-643a2cf58a8a.png?auto=format&fit=max&w=1400",
+    "alt": "The Thinking Orbs playground showing a ring-shaped orb variant with its settings panel",
+    "w": 1400,
+    "h": 787
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/34855ea3-053f-4989-a611-8f680cd319e2.png?auto=format&fit=max&w=1400",
+    "alt": "Thinking Orbs title card: four dotted spherical orbs above the line 'Well-crafted status indicators for AI interfaces'",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://ph-files.imgix.net/76414e12-b77f-4cdc-b12f-668f0e90e5a9.png?auto=format&fit=max&w=1400",
+    "alt": "The Thinking Orbs site showing a grid of orbs labelled with agent states such as thinking and searching",
+    "w": 1400,
+    "h": 787
+   },
+   {
+    "url": "https://ph-files.imgix.net/661481e0-ce1b-4e96-a482-4e5f648ef177.png?auto=format&fit=max&w=1400",
+    "alt": "The Thinking Orbs playground: one orb in the centre with a list of states on the left and style controls on the right",
+    "w": 1400,
+    "h": 787
+   }
+  ]
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "slug": "scale-ai",
+ "website": "https://scale.com/",
+ "excerpt": "Scale AI supplies AI training data, model evaluation and AI agents for companies and governments. What it does, the Meta deal, its new CEO and alternatives.",
+ "content": "<p>Scale AI is a San Francisco company, founded in 2016, that helps organisations build and deploy AI. It started as a supplier of high-quality training data for machine-learning teams, and that is still a large part of the business: its About page says AI models have been trained on 15 billion human decisions gathered through Scale and that it has paid $1 billion to contributors around the world. It now also sells model evaluation and red-teaming, and AI applications and agents for businesses and the public sector. The company says it has more than 1,000 employees, and customers named on its About page include Meta, Cohere, Adept, Cisco and TIME.</p>\n<h2>Products</h2>\n<p>Scale groups its work into three parts. The Scale Data Engine produces and labels the data used to train and fine-tune models. The GenAI portfolio covers building and evaluating generative AI for enterprises, including what it describes as rigorous model evaluations and red-teaming to measure, benchmark and improve AI performance. Scale Donovan is its line of AI agents for the public sector, aimed at public-sector organisations.</p>\n<h2>Meta's investment and the leadership change</h2>\n<p>On 12 June 2025 Scale announced a significant new investment from Meta Platforms, which broadened the two companies' commercial partnership and left Meta with a minority stake. Scale said the deal valued it at over $29 billion. At the same time its founder and CEO, Alexandr Wang, left to work on Meta's AI efforts, while remaining a director on Scale's board, and the board named chief strategy officer Jason Droege interim CEO.</p>\n<p>On 30 July 2026 Reuters reported that Scale had named Francis deSouza as chief executive, effective 10 August. DeSouza was previously chief operating officer and president of security products at Google Cloud, and before that president and CEO of the genomics company Illumina. Droege was to work with him during the transition. Scale's About page now lists deSouza as CEO.</p>\n<h2>Pricing</h2>\n<p>Scale does not publish prices. Its pricing page is a booking form for a one-to-one introductory call, so the cost of data, evaluation or Donovan work is set per project with its sales team.</p>\n<p><em>We have not tested Scale AI ourselves. This page brings together Scale AI's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "AI training data and evaluation",
+  "platform": "Managed service and enterprise software",
+  "starts_at": "Custom pricing (book a call)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI training data, model evaluation and AI agents for enterprises and governments",
+  "maker": {
+   "name": "Scale AI",
+   "url": "https://scale.com/"
+  },
+  "team": [
+   {
+    "name": "Francis deSouza",
+    "role": "CEO (from 10 August 2026)",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/07/31/scale-ai-taps-former-google-cloud-executive-as-ceo"
+   },
+   {
+    "name": "Alexandr Wang",
+    "role": "Founder; left in June 2025 to work on Meta's AI efforts, remains a board director",
+    "url": "https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution"
+   },
+   {
+    "name": "Jason Droege",
+    "role": "Interim CEO, June 2025 to August 2026",
+    "url": "https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://scale.com/static/images/og_scale_home_v1.png",
+    "alt": "Scale logo on a dark green background with the line 'Reliable AI Systems for the World's Most Important Decisions'",
+    "credit": "Image: Scale AI",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://scale.com/api/og/eyJ0aXRsZSI6IkRvbm92YW46IEFJIEFnZW50cyBmb3IgdGhlIFB1YmxpYyBTZWN0b3IiLCJpbWFnZSI6Ii9zdGF0aWMvaW1nL3Jlc2tpbi9oZWFkZXJzL2Rvbm92YW4ud2VicCIsInYiOiJjMDRmNzAxYyJ9.jpg",
+    "alt": "Scale graphic 'Donovan: AI Agents for the Public Sector', showing a man in a dim operations room in front of several monitors with maps and video feeds",
+    "credit": "Image: Scale AI",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Source labelled training and fine-tuning data for AI models",
+   "Evaluate and red-team a model before release",
+   "Build AI applications and agents for an enterprise",
+   "Deploy AI agents for public-sector work (Donovan)"
+  ],
+  "audience": {
+   "fit": [
+    "are an AI lab or large company that needs human-produced training or evaluation data at volume",
+    "need independent evaluation and red-teaming of generative AI models",
+    "are a public-sector organisation looking at AI agents"
+   ],
+   "not_fit": [
+    "want self-serve pricing you can see before talking to sales",
+    "are a small team labelling a few thousand images; a self-serve labelling tool is simpler",
+    "need a product you can sign up for and try today without a sales call"
+   ]
+  },
+  "pros": [
+   "Long track record in AI training data, with named customers such as Meta and Cohere",
+   "Covers data, evaluation and applications in one company",
+   "Dedicated public-sector product (Donovan)"
+  ],
+  "cons": [
+   "No published prices",
+   "Leadership changed twice between June 2025 and August 2026",
+   "Meta, an AI developer itself, holds a minority stake, which some buyers may weigh"
+  ],
+  "pricing": {
+   "intro": "Scale AI does not publish prices. Work is quoted per project after an introductory call.",
+   "url": "https://scale.com/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Custom",
+     "price": "Contact sales",
+     "detail": "Book a one-to-one intro call to get a quote for data, evaluation or application work"
+    }
+   ],
+   "notes": [
+    "The pricing page contains only a booking form; no plan names or rates are listed."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other companies that supply AI training data and evaluation. Descriptions come from each company's own site; none of them publishes a simple price list for this work.",
+   "items": [
+    {
+     "name": "Surge AI",
+     "url": "https://surgehq.ai/",
+     "what": "Human data and expertise for training frontier AI models",
+     "starts_at": "See its site",
+     "difference": "Focuses on human-written data for AI labs; does not sell government AI agents."
+    },
+    {
+     "name": "Labelbox",
+     "url": "https://labelbox.com/",
+     "what": "Training environments and expert data for frontier AI labs, plus agents for engineering and research teams",
+     "starts_at": "See its pricing page",
+     "difference": "Also known for its data-labelling software, which teams can run themselves."
+    },
+    {
+     "name": "Snorkel AI",
+     "url": "https://snorkel.ai/",
+     "what": "Specialised training data, benchmarks and evaluation environments for frontier models and agents",
+     "starts_at": "See its site",
+     "difference": "Emphasises expert data and evaluation for high-stakes domains."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Scale AI do?",
+    "a": "It produces training data for AI models, evaluates and red-teams models, and builds AI applications and agents for businesses and governments, including its public-sector product Donovan."
+   },
+   {
+    "q": "Who is Scale AI's CEO?",
+    "a": "Francis deSouza, a former Google Cloud COO and former Illumina CEO, took over on 10 August 2026, according to Reuters. Jason Droege had been interim CEO since June 2025."
+   },
+   {
+    "q": "Does Meta own Scale AI?",
+    "a": "No. Scale said in June 2025 that Meta made a significant investment and holds a minority stake. Scale's founder, Alexandr Wang, left to work on Meta's AI efforts but stayed on Scale's board."
+   },
+   {
+    "q": "What is Scale AI valued at?",
+    "a": "Scale said the June 2025 Meta deal valued it at over $29 billion. It has not announced a newer valuation that we found."
+   },
+   {
+    "q": "How much does Scale AI cost?",
+    "a": "Prices are not published; you book a call and get a quote."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Scale AI official site",
+    "url": "https://scale.com/"
+   },
+   {
+    "label": "About Scale",
+    "url": "https://scale.com/about"
+   },
+   {
+    "label": "Scale pricing (contact page)",
+    "url": "https://scale.com/pricing"
+   },
+   {
+    "label": "Scale Donovan",
+    "url": "https://scale.com/donovan"
+   },
+   {
+    "label": "Scale blog, 12 Jun 2025: next phase of company evolution (Meta investment)",
+    "url": "https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution"
+   },
+   {
+    "label": "Reuters via The Star, 31 Jul 2026: Scale AI taps former Google Cloud executive as CEO",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/07/31/scale-ai-taps-former-google-cloud-executive-as-ceo"
+   },
+   {
+    "label": "Surge AI",
+    "url": "https://surgehq.ai/"
+   },
+   {
+    "label": "Labelbox",
+    "url": "https://labelbox.com/"
+   },
+   {
+    "label": "Snorkel AI",
+    "url": "https://snorkel.ai/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

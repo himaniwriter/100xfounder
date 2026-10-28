@@ -1,0 +1,166 @@
+{
+ "slug": "apollo-io",
+ "website": "https://www.apollo.io/",
+ "excerpt": "Apollo.io is a sales platform with a large B2B contact database, email sequences, a dialer and AI research. Its plans and credits, funding and the main alternatives.",
+ "content": "<p>Apollo.io is a sales intelligence and engagement platform. Sales teams use it to search a large database of companies and business contacts by filters such as industry, size and job title, find verified emails and phone numbers, and then reach out through email sequences and a built-in dialer. It also handles meeting scheduling, call recording, CRM enrichment and, increasingly, AI research and AI-written outreach. It has extensions for Gmail and Salesforce.</p><p>The company was set up in 2015 and its co-founder, Tim Zheng, is chief executive. Zheng has said he built the first version for his own prospecting after other tools fell short, and later spun it off as its own company.</p><p>In August 2023 Apollo raised a $100 million Series D led by Bain Capital Ventures, with Sequoia Capital, Tribe Capital and Nexus Venture Partners, at a $1.6 billion valuation, TechCrunch reported. At the time Apollo said it worked with more than 500,000 companies and had grown revenue ninefold in two years. Its pricing page now says more than 600,000 companies use it.</p><p>Pricing is per seat and runs on credits, which pay for actions such as revealing an email or phone number. Unused credits expire at the end of each billing cycle. There is a free plan, and annual billing saves 24% according to the pricing page.</p><p>One caution for users in India and Europe: tools like Apollo hold personal contact data, so check that your outreach meets your local rules, such as India's DPDP Act or the GDPR.</p><p><em>We have not used Apollo.io for this page. It brings together Apollo.io's own website and pricing page and reporting from the outlets linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Sales intelligence",
+  "platform": "Web, Chrome extension",
+  "starts_at": "Free; Basic $49 per seat/month billed annually",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Sales platform with a B2B contact database, email sequences, dialer and AI research",
+  "maker": {
+   "name": "Apollo.io",
+   "url": "https://www.apollo.io/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.apollo.io/og-images/home.jpg",
+    "w": 2400,
+    "h": 1260,
+    "alt": "The Apollo logo, a starburst and the word Apollo, on a bright yellow and pastel background",
+    "credit": "Image: Apollo.io (apollo.io)"
+   }
+  ],
+  "use_cases": [
+   "Building prospect lists by industry, company size and job title",
+   "Running multi-step email sequences with A/B tests",
+   "Calling prospects from the browser with the built-in dialer",
+   "Enriching CRM records in Salesforce or HubSpot"
+  ],
+  "team": [
+   {
+    "name": "Tim Zheng",
+    "role": "Co-founder and CEO"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "B2B founders and small sales teams doing their own outbound",
+    "sales development reps who want data and outreach in one tool",
+    "teams that want to start free before paying per seat"
+   ],
+   "not_fit": [
+    "consumer businesses, since the data is about companies and professionals",
+    "teams that are not ready to manage consent and opt-out rules for cold outreach"
+   ]
+  },
+  "pricing": {
+   "intro": "Apollo's pricing page lists four plans, per seat, with annual billing shown (annual saves 24%). Credits are granted per seat per year and do not roll over.",
+   "url": "https://www.apollo.io/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "900 credits per seat a year, granted monthly; 2 sequences; basic filters"
+    },
+    {
+     "name": "Basic",
+     "price": "$49 per seat/month, billed annually",
+     "amount": 49,
+     "currency": "USD",
+     "detail": "30,000 credits per seat a year; unlimited sequences; email warmup; CRM integrations"
+    },
+    {
+     "name": "Professional",
+     "price": "$79 per seat/month, billed annually",
+     "amount": 79,
+     "currency": "USD",
+     "detail": "48,000 credits per seat a year; A/Z testing; AI lead scoring; 4,000 minutes of call recording"
+    },
+    {
+     "name": "Organization",
+     "price": "$119 per seat/month, billed annually (minimum 3 seats)",
+     "amount": 119,
+     "currency": "USD",
+     "detail": "72,000 credits per seat a year; 12 intent topics; 8,000 minutes of call recording"
+    }
+   ],
+   "notes": [
+    "Add-ons include Inbound (from $119 per team a month) and an Advanced Dialer ($119 per team a month), billed annually. Prices exclude taxes."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other B2B data and sales engagement tools.",
+   "items": [
+    {
+     "name": "ZoomInfo",
+     "url": "https://www.zoominfo.com/",
+     "what": "B2B contact and company data platform",
+     "difference": "Enterprise-focused, sold by quote."
+    },
+    {
+     "name": "Lusha",
+     "url": "https://www.lusha.com/",
+     "what": "Contact data via a browser extension",
+     "difference": "Lighter tool focused on finding contact details."
+    },
+    {
+     "name": "Outreach",
+     "url": "https://www.outreach.io/",
+     "what": "Sales engagement platform",
+     "difference": "Sequences and forecasting without a built-in contact database."
+    },
+    {
+     "name": "HubSpot Sales Hub",
+     "url": "https://www.hubspot.com/products/sales",
+     "what": "CRM with sales tools",
+     "difference": "A full CRM first, with prospecting features added."
+    }
+   ]
+  },
+  "pros": [
+   "A usable free plan",
+   "Data and outreach in one product",
+   "Published per-seat prices"
+  ],
+  "cons": [
+   "Credits expire each billing cycle",
+   "Cold outreach with bought data carries legal and deliverability risk"
+  ],
+  "faq": [
+   {
+    "q": "Is Apollo.io free?",
+    "a": "Yes. The free plan includes 900 credits per seat a year, granted monthly, and two sequences."
+   },
+   {
+    "q": "How much does Apollo.io cost?",
+    "a": "Basic is $49, Professional $79 and Organization $119 per seat a month, billed annually, according to Apollo's pricing page on 15 October 2026."
+   },
+   {
+    "q": "Who founded Apollo.io?",
+    "a": "Tim Zheng, the CEO, co-founded the company, which was set up in 2015."
+   },
+   {
+    "q": "How much is Apollo.io worth?",
+    "a": "Its August 2023 Series D valued it at $1.6 billion, TechCrunch reported."
+   },
+   {
+    "q": "Do unused Apollo credits roll over?",
+    "a": "No. Apollo says unused credits expire at the end of each billing cycle."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Apollo.io pricing",
+    "url": "https://www.apollo.io/pricing"
+   },
+   {
+    "label": "TechCrunch: Apollo.io bags $100M at a $1.6B valuation",
+    "url": "https://techcrunch.com/2023/08/29/apollo-io-a-full-stack-sales-tech-platform-bags-100m-at-a-1-6b-valuation/amp/"
+   },
+   {
+    "label": "SiliconANGLE: Apollo now worth $1.6B",
+    "url": "https://siliconangle.com/2023/08/29/sales-intelligence-startup-apollo-now-worth-1-6b-100m-round/"
+   },
+   {
+    "label": "Crunchbase News: Apollo.io funding",
+    "url": "https://news.crunchbase.com/sales-marketing/apollo-io-funding-sales-tech-unicorn/"
+   }
+  ]
+ }
+}

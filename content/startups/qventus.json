@@ -1,0 +1,134 @@
+{
+ "slug": "qventus",
+ "website": "https://www.qventus.com/",
+ "excerpt": "Qventus sells AI operational assistants that automate hospital work such as surgical scheduling and discharge planning. KKR led its $105 million Series D in 2025.",
+ "content": "<p>Qventus makes AI software for hospital operations. Rather than supporting clinical decisions, its \"AI teammates\" take on operational work: filling operating room time and growing surgical volume, planning patient discharges early so beds free up, managing inpatient capacity and staffing, and coordinating the many handoffs inside a health system. Its website quotes Allina Health on gains in robotic and spine surgery volumes, and says health systems can co-develop new AI operational assistants with it through an AI Solution Factory.</p><p>In January 2025 Qventus announced a $105 million Series D led by KKR, made up of $85 million in equity and $20 million in venture debt, with Bessemer Venture Partners and new strategic investors including Northwestern Medicine, HonorHealth and Allina Health, Business Wire and Healthcare IT Today reported. The company said its technology was used by more than 115 hospitals and health systems and that it would use the money to bring AI assistants into more care settings, building on its Surgical Growth and Inpatient Capacity products. MedCity News covered the round as part of a wave of healthcare AI investment.</p><p>Qventus does not publish prices; hospitals contact its sales team. Its buyers are health systems in the United States, and it competes with operations tools from LeanTaaS and with capacity and scheduling features built into electronic health record systems.</p><p><em>We have not used Qventus for this page. It brings together Qventus's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Healthcare operations AI",
+  "platform": "Cloud, integrated with hospital EHR systems",
+  "starts_at": "Quote on request",
+  "schema_category": "MedicalBusiness",
+  "summary_short": "AI assistants that automate hospital operations such as surgical scheduling and discharge planning",
+  "maker": {
+   "name": "Qventus",
+   "url": "https://www.qventus.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://www.qventus.com/wp-content/uploads/2025/04/Default-Preview-Image.png",
+    "alt": "Qventus logo in purple with the line Your AI teammates to automate hospital operations",
+    "credit": "Image: Qventus (qventus.com)",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://www.qventus.com/wp-content/uploads/2024/10/Inpatient-care.png",
+    "alt": "A nurse helps an older man walking with a frame in a hospital corridor, with a label reading aggressive, early, accurate discharge plans",
+    "credit": "Image: Qventus (qventus.com)",
+    "w": 1007,
+    "h": 940
+   }
+  ],
+  "use_cases": [
+   "Filling unused operating room time and growing surgical volume",
+   "Planning discharges early to free up beds",
+   "Managing inpatient capacity and patient flow",
+   "Automating operational handoffs between hospital teams"
+  ],
+  "audience": {
+   "fit": [
+    "US hospitals and health systems",
+    "operations, perioperative and capacity management teams",
+    "health systems that want to co-develop AI tools"
+   ],
+   "not_fit": [
+    "small clinics or practices",
+    "anyone looking for clinical diagnosis software"
+   ]
+  },
+  "pricing": {
+   "intro": "Qventus does not publish prices; health systems contact sales.",
+   "url": "https://www.qventus.com/",
+   "plans": [
+    {
+     "name": "Qventus platform",
+     "price": "Quote on request",
+     "detail": "Surgical Growth, Inpatient Capacity and other solutions"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Focused on operations rather than clinical decisions",
+   "Used by more than 115 hospitals and health systems, per the company",
+   "Backed by KKR and health systems themselves"
+  ],
+  "cons": [
+   "No public pricing",
+   "Results depend on integration with each hospital's systems"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Qventus. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "LeanTaaS",
+     "url": "https://leantaas.com/",
+     "what": "Capacity management software for hospitals",
+     "starts_at": "See its own website",
+     "difference": "Strong in operating room, infusion centre and bed capacity."
+    },
+    {
+     "name": "Epic",
+     "url": "https://www.epic.com/",
+     "what": "Electronic health record with operations tools",
+     "starts_at": "See its own website",
+     "difference": "Many hospitals use their EHR's own capacity and scheduling modules."
+    },
+    {
+     "name": "Hospital IQ",
+     "url": "https://www.hospiq.com/",
+     "what": "Hospital operations analytics",
+     "starts_at": "See its own website",
+     "difference": "Capacity and staffing analytics for health systems."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Qventus do?",
+    "a": "It provides AI assistants that automate hospital operations such as surgical scheduling, discharge planning and capacity management."
+   },
+   {
+    "q": "Who invested in Qventus?",
+    "a": "KKR led its $105 million Series D in January 2025, with Bessemer Venture Partners and health systems including Northwestern Medicine."
+   },
+   {
+    "q": "How many hospitals use Qventus?",
+    "a": "More than 115 hospitals and health systems, the company said in January 2025."
+   },
+   {
+    "q": "How much does Qventus cost?",
+    "a": "It does not publish prices."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Qventus homepage",
+    "url": "https://www.qventus.com/"
+   },
+   {
+    "label": "Business Wire: Qventus announces $105 million Series D led by KKR",
+    "url": "https://www.businesswire.com/news/home/20250113993134/en/Qventus-Announces-$105-Million-Investment-Series-D-Led-by-KKR"
+   },
+   {
+    "label": "Healthcare IT Today: Qventus $105 million Series D",
+    "url": "https://www.healthcareittoday.com/2025/02/20/qventus-announces-105-million-investment-series-d-led-by-kkr/"
+   },
+   {
+    "label": "MedCity News: healthcare AI investment",
+    "url": "https://medcitynews.com/2025/01/healthcare-ai-investment/"
+   }
+  ]
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "slug": "paymongo",
+ "website": "https://www.paymongo.com/",
+ "excerpt": "PayMongo is a BSP-regulated Philippine payment gateway for cards, GCash, Maya, QR Ph and online banking. Fees, founders, funding and alternatives.",
+ "content": "<p>PayMongo is a payments company in the Philippines that lets businesses accept money online and in store. Through a single account, merchants can take Visa and Mastercard cards, e-wallets such as GCash, Maya, GrabPay and ShopeePay, QR Ph codes, direct online banking from banks like BDO, BPI and UnionBank, and buy-now-pay-later through BillEase. It offers an API and e-commerce plugins for developers, plus no-code payment links and pages, and adds payouts, a storefront product and fraud screening. Its about page says it is regulated by the Bangko Sentral ng Pilipinas, is based in Bonifacio Global City, Taguig, and serves more than 350,000 businesses.</p><p>PayMongo was founded in May 2019. TechCrunch named its co-founders as Francis Plaza (CEO), Jaime Hing III (CTO) and Luis Sia (chief commercial officer). The company went through Y Combinator. Its $12 million Series A in 2020 was led by Stripe, and in February 2022 it raised a $31 million Series B with new investors including JAM Fund, ICCP-SBI Venture Partners and Kaya Founders, and returning backers Global Founders Capital and SOMA Capital, bringing total funding to just under $46 million. At the time it said it would add disbursements, lending, buy-now-pay-later and recurring payments, and explore expansion in Southeast Asia. Its about page also lists Founders Fund among its investors.</p><p>Fees are published. When we checked, there was no setup fee. QR Ph cost 1.34% per transaction, local cards 3.125% plus ₱13.39, international cards 4.02% plus ₱13.39, GCash 2.23%, Maya 1.79%, GrabPay 1.96%, ShopeePay 1.70%, and direct online banking 0.71% or ₱13.39, all before VAT. Payouts cost ₱10 each through InstaPay or PESONet, and the online storefront costs ₱349 a month.</p><p><em>This page is research, not a review. We have not processed payments with PayMongo; facts come from its pages and TechCrunch.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Payment gateway (Philippines)",
+  "platform": "API, e-commerce plugins, payment links and dashboard",
+  "starts_at": "No setup fee; per-transaction fees from 0.71%",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Philippine payment gateway for cards, GCash, Maya, QR Ph and online banking",
+  "maker": {"name": "PayMongo Philippines, Inc.", "url": "https://www.paymongo.com/"},
+  "team": [
+   {"name": "Francis Plaza", "role": "Co-founder and CEO"},
+   {"name": "Jaime Hing III", "role": "Co-founder and CTO"},
+   {"name": "Luis Sia", "role": "Co-founder and chief commercial officer"}
+  ],
+  "gallery": [
+   {"url": "https://www.paymongo.com/images/og/og-image.png", "w": 1200, "h": 630, "alt": "PayMongo logo: a dark green angular P mark beside the word paymongo on a pale mint background", "credit": "Image: PayMongo (paymongo.com)"}
+  ],
+  "use_cases": [
+   "Accepting cards and e-wallets on a website or app",
+   "Taking QR Ph payments in a physical store",
+   "Sending payment links over chat or social media",
+   "Paying out to suppliers, sellers or staff via InstaPay and PESONet",
+   "Adding payments to e-commerce platforms through plugins"
+  ],
+  "audience": {
+   "fit": [
+    "Philippine micro, small and medium businesses selling online",
+    "startups that want one API for local payment methods",
+    "social sellers who need simple payment links"
+   ],
+   "not_fit": [
+    "businesses without a Philippine entity or customers",
+    "very high-volume merchants that can negotiate direct bank acquiring"
+   ]
+  },
+  "pricing": {
+   "intro": "From PayMongo's pricing page, checked 15 October 2026. Rates exclude VAT.",
+   "plans": [
+    {"name": "Setup", "price": "Free", "detail": "One-time account activation"},
+    {"name": "QR Ph", "price": "1.34%", "detail": "In store or online"},
+    {"name": "Local cards", "price": "3.125% + ₱13.39", "detail": "Visa, Mastercard"},
+    {"name": "GCash", "price": "2.23%", "detail": "Per transaction"},
+    {"name": "Maya", "price": "1.79%", "detail": "Per transaction"},
+    {"name": "Direct online banking", "price": "0.71% or ₱13.39", "detail": "BDO, UnionBank, BPI, Landbank, Metrobank"}
+   ],
+   "notes": ["International cards 4.02% + ₱13.39; GrabPay 1.96%; ShopeePay 1.70%; BillEase 1.34%.", "Payouts ₱10 each; Storefront ₱349 a month."],
+   "url": "https://www.paymongo.com/en/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Covers the main Philippine payment methods in one account",
+   "Published fees with no setup cost",
+   "Regulated by the Bangko Sentral ng Pilipinas"
+  ],
+  "cons": [
+   "Card fees are relatively high at 3.125% plus a fixed fee",
+   "Focused on the Philippines"
+  ],
+  "alternatives": {
+   "intro": "Other ways for Philippine businesses to accept payments.",
+   "items": [
+    {"name": "Xendit", "url": "https://www.xendit.co/en-ph/", "what": "Payment gateway across Southeast Asia", "difference": "Operates in several countries, including the Philippines and Indonesia."},
+    {"name": "Maya Business", "url": "https://www.maya.ph/business", "what": "Payments for businesses from the Maya group", "difference": "Bank-backed acquirer with terminals and online checkout."},
+    {"name": "DragonPay", "url": "https://www.dragonpay.ph/", "what": "Long-running Philippine online payment gateway", "difference": "Strong in over-the-counter and bank transfer payments."}
+   ]
+  },
+  "faq": [
+   {"q": "How much does PayMongo charge?", "a": "No setup fee. Per-transaction fees range from 0.71% for direct online banking to 3.125% plus ₱13.39 for local cards, before VAT."},
+   {"q": "Is PayMongo regulated?", "a": "Yes. Its about page says PayMongo Philippines, Inc. is regulated by the Bangko Sentral ng Pilipinas."},
+   {"q": "Who founded PayMongo?", "a": "Francis Plaza, Jaime Hing III and Luis Sia, in 2019."},
+   {"q": "Who has invested in PayMongo?", "a": "Stripe led its 2020 Series A, and its 2022 $31 million Series B included JAM Fund, ICCP-SBI Venture Partners and Kaya Founders."}
+  ],
+  "sources": [
+   {"label": "PayMongo: pricing", "url": "https://www.paymongo.com/en/pricing"},
+   {"label": "PayMongo: about", "url": "https://www.paymongo.com/en/about"},
+   {"label": "TechCrunch: PayMongo gets $31M Series B (Feb 2022)", "url": "https://techcrunch.com/2022/02/20/philippines-payment-gateway-paymongo-gets-31m-series-b-will-explore-regional-expansion"},
+   {"label": "Electronic Payments International: PayMongo Series B", "url": "https://www.electronicpaymentsinternational.com/news/paymongo-series-b-round"}
+  ]
+ }
+}

@@ -1,0 +1,150 @@
+{
+ "slug": "maintainx",
+ "website": "https://www.getmaintainx.com/",
+ "excerpt": "MaintainX is a mobile-first maintenance (CMMS) and asset management platform, now an Autodesk company. Published pricing, funding and alternatives.",
+ "content": "<p>MaintainX is maintenance and asset management software (a CMMS and EAM) for industrial and frontline teams. Technicians use its mobile app to receive work orders, follow checklists and inspections, log what they did and report problems; managers use it to schedule preventive maintenance, track assets and parts, and see where downtime comes from. Its site says it helps industrial teams reduce downtime and optimise asset performance with AI insights, and shows customers such as Carrier and Norfolk Southern. It was founded in San Francisco in 2018.</p><p>In July 2025 MaintainX announced a $150 million Series D that valued it at $2.5 billion, with Bessemer Venture Partners and Bain Capital Ventures among the investors. Verdantix named it a market leader in its 2025 Green Quadrant for industrial CMMS. On 28 May 2026 Autodesk announced a definitive agreement to buy MaintainX for about $3.6 billion in cash, the largest acquisition in Autodesk's history, saying MaintainX was expected to exceed $135 million in annualised recurring revenue in 2026. Autodesk said MaintainX would sit in a new Autodesk Operations Solutions unit alongside Tandem, FlexSim and Fusion Operations. MaintainX's website now carries 'An Autodesk Company' in its branding and a banner announcing that it has joined Autodesk.</p><p>MaintainX publishes its prices. The Basic plan is free for unlimited time. Essential costs $20 per user a month billed annually ($25 monthly), Premium $65 per user a month billed annually ($75 monthly), and Enterprise is custom. A user is anyone with a login who works in the app; requester accounts, for people who only report problems, are free. Paid plans have a free trial.</p><p>MaintainX suits manufacturing plants, facilities, hospitality, food production and other operations with equipment to look after and technicians on the floor.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Maintenance software (CMMS/EAM)",
+  "platform": "Web, iOS and Android",
+  "starts_at": "Free Basic plan; Essential $20 per user a month (annual)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Work orders, inspections and asset management for frontline maintenance teams",
+  "maker": {
+   "name": "MaintainX (an Autodesk company)",
+   "url": "https://www.getmaintainx.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/65ae6673d2c6ecb99ee249d1/681b8310818b79f3733cac55_aeeeac35719db2ed5f25b948bb19edad_open-graph-image_work-orders_en.webp",
+    "alt": "MaintainX banner, 'An Autodesk Company', with the line 'Intelligent maintenance and asset management' beside a phone showing a repair work order for an industrial washer",
+    "credit": "Image: MaintainX (getmaintainx.com)",
+    "w": 2400,
+    "h": 1260
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/65ae6673d2c6ecb99ee249d1/6614e79c93cd2cbe7d24bace_webClip-9.png",
+    "alt": "MaintainX icon: an X made of a dark navy chevron and a bright blue chevron",
+    "credit": "Image: MaintainX (getmaintainx.com)",
+    "w": 256,
+    "h": 256
+   }
+  ],
+  "use_cases": [
+   "Creating and assigning maintenance work orders",
+   "Scheduling preventive maintenance",
+   "Running digital inspections and checklists",
+   "Tracking assets, parts and downtime",
+   "Letting any employee report a problem for free"
+  ],
+  "audience": {
+   "fit": [
+    "run maintenance for a plant, facility or fleet",
+    "have technicians who work from phones",
+    "want to start free and pay per user later"
+   ],
+   "not_fit": [
+    "have no physical equipment to maintain",
+    "need a full ERP rather than maintenance software"
+   ]
+  },
+  "pricing": {
+   "intro": "MaintainX publishes per-user pricing; requester accounts are free.",
+   "plans": [
+    {
+     "name": "Basic",
+     "price": "Free",
+     "detail": "Free forever"
+    },
+    {
+     "name": "Essential",
+     "price": "$20 per user a month (annual)",
+     "detail": "$25 billed monthly; free trial"
+    },
+    {
+     "name": "Premium",
+     "price": "$65 per user a month (annual)",
+     "detail": "$75 billed monthly; free trial"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Demo with sales"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.getmaintainx.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Free plan and published prices",
+   "Mobile-first for technicians",
+   "Backed by Autodesk"
+  ],
+  "cons": [
+   "Per-user pricing adds up for large teams",
+   "Product direction may change under Autodesk"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "UpKeep",
+     "url": "https://www.onupkeep.com/",
+     "what": "Mobile-first CMMS",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Similar mobile CMMS with published plans."
+    },
+    {
+     "name": "Fiix (Rockwell Automation)",
+     "url": "https://fiixsoftware.com/",
+     "what": "Cloud CMMS",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Owned by Rockwell Automation."
+    },
+    {
+     "name": "Limble",
+     "url": "https://limblecmms.com/",
+     "what": "CMMS for maintenance teams",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Mobile CMMS popular with mid-size teams."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "How much does MaintainX cost?",
+    "a": "Basic is free; Essential is $20 and Premium $65 per user a month billed annually; Enterprise is custom."
+   },
+   {
+    "q": "Who owns MaintainX?",
+    "a": "Autodesk agreed to buy it for about $3.6 billion in May 2026, and MaintainX now brands itself an Autodesk company."
+   },
+   {
+    "q": "Is there a free version of MaintainX?",
+    "a": "Yes, the Basic plan is free, and requester accounts are free on all plans."
+   }
+  ],
+  "sources": [
+   {
+    "label": "MaintainX pricing",
+    "url": "https://www.getmaintainx.com/pricing"
+   },
+   {
+    "label": "Nasdaq (PR Newswire): Autodesk to acquire MaintainX (28 May 2026)",
+    "url": "https://www.nasdaq.com/press-release/autodesk-acquire-maintainx-advancing-unified-platform-operations-2026-05-28"
+   },
+   {
+    "label": "SiliconANGLE: Autodesk to acquire MaintainX for $3.6 billion",
+    "url": "https://siliconangle.com/2026/05/28/autodesk-acquire-maintainx-3-6-billion-push-operations/"
+   },
+   {
+    "label": "Verdantix: MaintainX raises $150 million in Series D",
+    "url": "https://www.verdantix.com/venture/blog/it-s-got-the-x-factor--maintainx-raises--150-million-dollars-in-series-d-funding"
+   }
+  ]
+ }
+}

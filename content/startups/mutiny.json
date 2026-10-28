@@ -1,0 +1,69 @@
+{
+ "slug": "mutiny",
+ "website": "https://www.mutinyhq.com/",
+ "excerpt": "Mutiny started as no-code website personalisation for B2B marketers and now sells an AI sales assistant that builds personalised decks, pages and deal rooms. Free plan; Business $50/month.",
+ "content": "<p>Mutiny is a software company for B2B go-to-market teams. It became known for no-code website personalisation: its 2022 funding announcement described a platform that plugs into a company's existing data and website and uses AI to show different versions of the site to different visitors, so marketers could tailor pages to target accounts. Mutiny now describes itself as the sales assistant built for customer-facing work. Its website says sales and marketing teams use it to create on-brand personalised assets, such as decks, interactive landing pages and deal rooms that update with the deal, and to see who viewed them. It offers templates (\"blueprints\") for prospecting, account-based marketing landing pages, meeting recaps, demo pre-reads, case studies, proposals, business cases and expansion plans, plus Routines that automate recurring work and integrations with tools such as Salesforce, Outreach and Salesloft.</p><p>Jaleh Rezaei is Mutiny's co-founder and CEO.</p><h2>Funding</h2><p>In April 2022 Mutiny announced a $50 million Series B co-led by Tiger Global and Insight Partners, with earlier investors Sequoia Capital, Cowboy Ventures and Uncork Capital taking part, according to Insight Partners' release and Silicon Legal Strategy, which advised Cowboy Ventures.</p><h2>Pricing</h2><p>Mutiny's pricing page lists three plans. Free costs $0 for up to five team members, with five daily AI credits per seat (up to 30 a month), five templates and a mutiny.app domain. Business costs $50 a month for 50 credits, with unlimited team members, templates and integrations, a custom subdomain, visitor intelligence and password-protected assets. Enterprise starts at $40,000 a year and adds SSO, custom credit limits, a Salesforce integration, custom contract terms and a dedicated growth strategist.</p><h2>Who it suits</h2><p>Mutiny suits account executives, sales leaders and account-based marketing teams in B2B companies that send many tailored decks and pages. Consumer businesses or teams that rarely send sales collateral may not need it.</p><p><em>We have not tested Mutiny. This page is based on Mutiny's website and pricing page (checked 15 October 2026) and its 2022 funding announcement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI sales assistant and personalisation",
+  "platform": "Web",
+  "starts_at": "Free; Business $50/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI sales assistant for personalised decks, landing pages and deal rooms",
+  "maker": {"name": "Mutiny", "url": "https://www.mutinyhq.com/"},
+  "team": [{"name": "Jaleh Rezaei", "role": "Co-founder and CEO", "url": "https://www.insightpartners.com/?p=6995"}],
+  "gallery": [
+   {"url": "https://framerusercontent.com/assets/rX6lSVagakDXpOpmwgYVyCZE438.png", "alt": "The Mutiny wordmark with a small prompt box reading Prep me for my meetings today, above the line The sales assistant built for customer-facing work", "credit": "Image: Mutiny", "w": 2672, "h": 1616},
+   {"url": "https://avatars.githubusercontent.com/u/38998388?v=4", "alt": "The Mutiny logo in dark purple script with a jagged flag-like shape above it", "credit": "Image: Mutiny, from its official GitHub account", "w": 300, "h": 300}
+  ],
+  "use_cases": [
+   "Building a personalised pitch deck or proposal for a prospect",
+   "Creating account-based marketing landing pages for target accounts",
+   "Sending a deal room that updates as the deal progresses",
+   "Writing meeting recaps and demo pre-reads",
+   "Seeing which stakeholders viewed your assets"
+  ],
+  "audience": {
+   "fit": [
+    "are an account executive or sales leader at a B2B company",
+    "run account-based marketing programmes",
+    "send many tailored decks, pages and proposals"
+   ],
+   "not_fit": [
+    "sell mainly to consumers",
+    "rarely create sales collateral"
+   ]
+  },
+  "pricing": {
+   "intro": "Mutiny publishes three plans; usage is measured in AI credits.",
+   "plans": [
+    {"name": "Free", "price": "$0/month", "amount": 0, "currency": "USD", "detail": "Up to 5 team members, 5 daily credits per seat (up to 30/month), 5 templates"},
+    {"name": "Business", "price": "$50/month", "amount": 50, "currency": "USD", "detail": "50 credits a month, unlimited team members and templates, custom subdomain"},
+    {"name": "Enterprise", "price": "From $40,000/year", "amount": 40000, "currency": "USD", "detail": "SSO, Salesforce integration, custom credit limits, dedicated growth strategist"}
+   ],
+   "notes": ["Higher credit tiers are available on the Business plan."],
+   "url": "https://www.mutinyhq.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other tools for personalised sales content.",
+   "items": [
+    {"name": "Gamma", "url": "https://gamma.app/", "what": "AI tool for decks, documents and web pages", "tags": ["AI presentations"], "starts_at": "See its own pricing page", "difference": "General-purpose AI decks rather than sales-specific workflows."},
+    {"name": "Matik", "url": "https://www.matik.ai/", "what": "Data-driven presentation automation", "tags": ["Sales content"], "starts_at": "See its own site", "difference": "Generates decks from live CRM and warehouse data."},
+    {"name": "Dock", "url": "https://www.dock.us/", "what": "Digital sales rooms", "tags": ["Deal rooms"], "starts_at": "See its own pricing page", "difference": "Focused on shared deal workspaces with buyers."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Mutiny free?", "a": "There is a free plan for up to five team members with limited daily credits. Business costs $50 a month."},
+   {"q": "Does Mutiny still do website personalisation?", "a": "Its website now leads with an AI sales assistant for personalised assets, including landing pages for account-based marketing."},
+   {"q": "Who founded Mutiny?", "a": "Jaleh Rezaei is co-founder and CEO."},
+   {"q": "How much has Mutiny raised?", "a": "It announced a $50 million Series B in April 2022, co-led by Tiger Global and Insight Partners."}
+  ],
+  "sources": [
+   {"label": "Mutiny website", "url": "https://www.mutinyhq.com/"},
+   {"label": "Mutiny pricing", "url": "https://www.mutinyhq.com/pricing"},
+   {"label": "Insight Partners: Mutiny raises $50M Series B (Apr 2022)", "url": "https://www.insightpartners.com/?p=6995"},
+   {"label": "Silicon Legal Strategy: Cowboy Ventures joins Mutiny's $50MM round", "url": "https://www.siliconlegal.com/?p=20007"}
+  ]
+ }
+}

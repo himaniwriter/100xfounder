@@ -1,0 +1,137 @@
+{
+ "slug": "sprig",
+ "website": "https://sprig.com/",
+ "excerpt": "Sprig is an enterprise survey and user research platform that uses AI agents to design surveys and analyse results. Funding, pricing model and alternatives.",
+ "content": "<p>Sprig is a user research platform that product teams use to ask their users questions at the right moment: short surveys inside a web or mobile app, plus link and email surveys. It started in 2019 as UserLeap, founded by Ryan Glasgow, who had earlier been an early product manager at the website builder Weebly, and renamed itself Sprig in 2021.</p><p>Its site now calls Sprig an enterprise survey platform powered by agents. The pitch is that AI agents help design a survey, adapt questions to each respondent, run the statistical analysis and turn the results into a report, so teams get from a question to an answer faster. Surveys can be sent by link, email, on the web or inside mobile apps. Customer logos on its site include Figma, DoorDash, Notion and Clay.</p><p>TechCrunch reported in August 2022 that Sprig had raised $30 million from existing investors including Andreessen Horowitz, Accel and First Round Capital, plus Elad Gil, with Figma Ventures as a new investor, taking its total funding to about $90 million. Glasgow said the money would go into new products, sales and marketing, and integrations. We found no later funding announcement.</p><p>Sprig does not list prices. Its pricing page describes a single enterprise platform priced on the total number of survey responses, the research features you switch on and the channels you use, with onboarding and support included; you book a demo for a quote. That makes it a fit for companies with a dedicated research or product function rather than a solo founder who needs a quick survey.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "User research and surveys",
+  "platform": "Web",
+  "starts_at": "Custom pricing by response volume",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Enterprise survey platform with AI agents for in-product research",
+  "maker": {
+   "name": "Sprig Technologies, Inc.",
+   "url": "https://sprig.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69c2fd5f6882434c7781fd39_meta-img-new.png",
+    "alt": "Sprig wordmark in black on a peach-to-lavender gradient",
+    "credit": "Image: Sprig (sprig.com)",
+    "w": 2400,
+    "h": 1260
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3c481128dde2351373d4_favicon.png",
+    "alt": "Sprig icon: a dark grey letter S on a yellow square",
+    "credit": "Image: Sprig (sprig.com)",
+    "w": 180,
+    "h": 180
+   }
+  ],
+  "use_cases": [
+   "Running in-app surveys at key moments in a product",
+   "Measuring satisfaction after a feature launch",
+   "Collecting feedback by link or email",
+   "Letting AI draft surveys and summarise results",
+   "Building research reports for product teams"
+  ],
+  "audience": {
+   "fit": [
+    "are a product or research team at a mid-size or large company",
+    "want in-product surveys tied to user behaviour",
+    "run research continuously rather than once"
+   ],
+   "not_fit": [
+    "need a free or cheap one-off survey tool",
+    "want published self-serve pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "Sprig does not publish prices. Its pricing page says cost scales with total survey responses, the research capabilities you activate and the deployment channels (link, email, web or mobile); enterprise onboarding and support are included.",
+   "plans": [
+    {
+     "name": "Enterprise platform",
+     "price": "Quote on request",
+     "detail": "Priced by responses, features and channels"
+    }
+   ],
+   "notes": [],
+   "url": "https://sprig.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "In-product surveys across web and mobile",
+   "AI agents for survey design and analysis",
+   "Backed by well-known investors"
+  ],
+  "cons": [
+   "No public pricing or free plan listed",
+   "Aimed at larger teams"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Qualtrics",
+     "url": "https://www.qualtrics.com/",
+     "what": "Enterprise experience management and surveys",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Broader and more established; heavier to set up."
+    },
+    {
+     "name": "Maze",
+     "url": "https://maze.co/",
+     "what": "Product research and usability testing",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Stronger on prototype and usability tests."
+    },
+    {
+     "name": "Hotjar Surveys",
+     "url": "https://www.hotjar.com/",
+     "what": "On-site surveys and behaviour analytics",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Cheaper and simpler; part of Contentsquare."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Sprig the same as UserLeap?",
+    "a": "Yes. UserLeap renamed itself Sprig in 2021."
+   },
+   {
+    "q": "How much does Sprig cost?",
+    "a": "Prices are not published; cost depends on survey responses, features and channels, and you book a demo for a quote."
+   },
+   {
+    "q": "Who founded Sprig?",
+    "a": "Ryan Glasgow, previously a product manager at Weebly."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sprig official site",
+    "url": "https://sprig.com/"
+   },
+   {
+    "label": "Sprig pricing",
+    "url": "https://sprig.com/pricing"
+   },
+   {
+    "label": "TechCrunch: Sprig raises $30M (2 Aug 2022)",
+    "url": "https://techcrunch.com/2022/08/02/sprig-raises-30m-to-help-companies-gauge-users-reactions-to-products"
+   }
+  ],
+  "team": [
+   {
+    "name": "Ryan Glasgow",
+    "role": "Founder and CEO"
+   }
+  ]
+ }
+}

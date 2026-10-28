@@ -1,0 +1,69 @@
+{
+ "slug": "newfront",
+ "website": "https://www.newfront.com/",
+ "excerpt": "Newfront is a San Francisco insurance and benefits brokerage built on its own technology. WTW acquired it in a deal worth up to $1.3 billion, completed in January 2026.",
+ "content": "<p>Newfront is an insurance brokerage. It helps businesses buy commercial insurance, such as property, casualty, cyber, executive risk and aviation cover, and helps employers run employee benefits and retirement plans, which it groups under Total Rewards. What set it apart from traditional brokers was its own software: clients get dashboards and data about their policies, claims and costs, and the company says it uses technology, including AI, to lower clients' total cost of risk. Newfront describes itself as a modern brokerage working across more than 20 industries, and WTW called it a San Francisco-based, top-40 US broker with strengths in technology, fintech and life sciences clients. Spike Lipkin is its co-founder and CEO.</p><h2>Acquisition by WTW</h2><p>On 10 December 2025 the global broker WTW agreed to buy Newfront. Financier Worldwide reported that the deal was worth up to $1.3 billion: $1.05 billion up front, made up of about $900 million in cash and $150 million in equity for Newfront employee-shareholders, plus up to $250 million more, mostly in equity, if Newfront meets performance targets. WTW said Newfront had grown organic revenue at a 20% compound annual rate from 2018 to 2024. On 27 January 2026 Newfront announced that WTW had completed the acquisition. Newfront's Business Insurance arm is now part of WTW's Risk & Broking segment and its Total Rewards arm part of WTW's Health, Wealth & Career segment, and Lipkin joined WTW to lead integration, client development, talent and technology. Newfront's website now says it has officially joined WTW.</p><h2>Pricing</h2><p>Newfront does not charge a published price. Like other brokers, it is typically paid through commissions or fees on the insurance and benefits it places, agreed client by client.</p><h2>Who it suits</h2><p>Newfront suits US mid-market companies, especially in technology, fintech and life sciences, that want a broker for business insurance and employee benefits with strong data tools. Individuals looking for personal car or home insurance are not its focus.</p><p><em>This page is based on Newfront's website and announcements, WTW's deal announcement and Financier Worldwide.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Insurance and benefits brokerage",
+  "platform": "Brokerage with client web platform",
+  "starts_at": "Broker compensation agreed per client",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Tech-led business insurance and benefits broker, part of WTW since 2026",
+  "maker": {"name": "Newfront (part of WTW)", "url": "https://www.newfront.com/"},
+  "team": [{"name": "Spike Lipkin", "role": "Co-founder and CEO", "url": "https://www.newfront.com/news/wtw-completes-acquisition-of-newfront"}],
+  "gallery": [
+   {"url": "https://images.ctfassets.net/m4mgwg0yt3ze/3JS4MPJdhYBdAe232VGAbN/bae91f28f9bd72939808783d0d71a8f7/share-image-v2.jpg", "alt": "The NEWFRONT wordmark in bright pink on a dark background with faint wave-shaped grid lines", "credit": "Image: Newfront", "w": 2400, "h": 1260},
+   {"url": "https://images.ctfassets.net/m4mgwg0yt3ze/42UGEnPS7ruEglXFt39Pd2/220829921564a71f45f050430b6353f9/Newfrontiers.jpeg?w=1600", "alt": "Two colleagues in an office looking at a laptop screen together, from Newfront's website", "credit": "Image: Newfront", "w": 1600, "h": 1067}
+  ],
+  "use_cases": [
+   "Buying business insurance such as property, casualty, cyber and D&O cover",
+   "Running employee health benefits and retirement plans",
+   "Seeing policies, claims and costs in one client dashboard",
+   "Getting insurance help ahead of an IPO or major transaction",
+   "Reducing a company's total cost of risk"
+  ],
+  "audience": {
+   "fit": [
+    "run finance or HR at a US mid-market company",
+    "work in technology, fintech or life sciences",
+    "want a broker with strong data and client technology"
+   ],
+   "not_fit": [
+    "are an individual looking for personal car or home insurance",
+    "want a fixed published price"
+   ]
+  },
+  "pricing": {
+   "intro": "Brokers are usually paid commissions or fees on the coverage they place; Newfront does not publish a price list.",
+   "plans": [
+    {"name": "Business Insurance", "price": "Agreed per client", "detail": "Now part of WTW Risk & Broking"},
+    {"name": "Total Rewards (benefits and retirement)", "price": "Agreed per client", "detail": "Now part of WTW Health, Wealth & Career"}
+   ],
+   "notes": [],
+   "url": "https://www.newfront.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other brokers serving US businesses.",
+   "items": [
+    {"name": "WTW", "url": "https://www.wtwco.com/", "what": "Global insurance broker and advisory firm", "tags": ["Broker"], "starts_at": "Agreed per client", "difference": "Newfront's new parent company."},
+    {"name": "Marsh", "url": "https://www.marsh.com/", "what": "Global insurance broker", "tags": ["Broker"], "starts_at": "Agreed per client", "difference": "One of the largest brokers worldwide."},
+    {"name": "Vouch", "url": "https://www.vouch.us/", "what": "Insurance for startups", "tags": ["Startup insurance"], "starts_at": "See its own site", "difference": "Focused on venture-backed startups with online quotes."}
+   ]
+  },
+  "faq": [
+   {"q": "Who owns Newfront?", "a": "WTW, which completed its acquisition in January 2026."},
+   {"q": "How much did WTW pay for Newfront?", "a": "Up to $1.3 billion: $1.05 billion up front and up to $250 million more tied to performance, according to Financier Worldwide."},
+   {"q": "Who runs Newfront?", "a": "Co-founder and CEO Spike Lipkin, who joined WTW with the team."},
+   {"q": "What does Newfront do?", "a": "It is a broker for business insurance, employee benefits and retirement services, with its own client technology."}
+  ],
+  "sources": [
+   {"label": "Newfront website", "url": "https://www.newfront.com/"},
+   {"label": "Newfront: WTW completes acquisition of Newfront (27 Jan 2026)", "url": "https://www.newfront.com/news/wtw-completes-acquisition-of-newfront"},
+   {"label": "Newfront: Newfront's next chapter, joining WTW", "url": "https://newfront.com/news/newfront-next-chapter-joining-wtw"},
+   {"label": "Financier Worldwide: WTW strikes Newfront deal (11 Dec 2025)", "url": "https://www.financierworldwide.com/fw-news/2025/12/11/wtw-strikes-newfront-deal"},
+   {"label": "WTW press release via Nasdaq: WTW to acquire Newfront", "url": "https://www.nasdaq.com/press-release/wtw-acquire-newfront-specialized-broker-combining-deep-expertise-and-cutting-edge"}
+  ]
+ }
+}

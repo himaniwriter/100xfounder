@@ -1,0 +1,75 @@
+{
+ "slug": "playco",
+ "website": "https://www.play.co/",
+ "excerpt": "Playco is a Tokyo-based instant-play games company founded by Zynga co-founder Justin Waldron and Michael Carter. It debuted in 2020 with a $100 million Series A at a $1 billion valuation.",
+ "content": "<p>Playco describes itself as the world's first instant-play gaming company. Its idea is that a game should start the moment someone taps a link, inside the apps people already use, with no download or install, and that friends should be able to play together straight away. According to its launch press release, Playco built a browser-based streaming game engine meant to run across messaging apps, cloud streaming, Google Play Instant and iOS App Clips, and planned free-to-play games paid for by in-game purchases and opt-in advertising. Its about page names Facebook, LINE, Zoom, Microsoft and Discord among the platforms it works with.</p><p>The founders bring long gaming and web histories. Michael Carter, co-founder and CEO, previously co-founded Game Closure, the studio behind the Facebook instant game EverWing, and Playco's site credits him with work on the HTML5 WebSocket standard. Justin Waldron, co-founder and president, co-founded Zynga in 2007. Takeshi Otsuka, a co-founder and executive producer, led Japan's Mobage platform, and Teddy Cross is co-founder and chief product officer.</p><p>Playco launched publicly on 21 September 2020 with a $100 million Series A at a valuation of just over $1 billion, making it a unicorn before releasing a game. The round was led by Josh Buckley and Sequoia Capital Global Equities, and TheWrap reported other backers including Will Smith's Dreamers VC, Sozo Ventures, Caffeinated Capital, the Makers Fund, Digital Garage and Taizo Son's Mistletoe. The company announced launch partnerships with Facebook, LINE Messenger, Rakuten Viber and Snapchat, and said it was based in Tokyo, incorporated in Delaware and distributed-first.</p><p>Playco's games are free to play; it does not sell subscriptions, and its site lists no current titles or prices.</p><p><em>This page is research, not a review. We have not played Playco games; facts come from the company's pages and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Instant-play social games",
+  "platform": "Browser-based games inside messaging and social apps",
+  "starts_at": "Free to play",
+  "schema_category": "GameApplication",
+  "summary_short": "Instant-play multiplayer games that run inside messaging apps without installs",
+  "maker": {"name": "Playco", "url": "https://www.play.co/"},
+  "team": [
+   {"name": "Michael Carter", "role": "Co-founder and CEO"},
+   {"name": "Justin Waldron", "role": "Co-founder and president"},
+   {"name": "Takeshi Otsuka", "role": "Co-founder, executive producer and SVP"},
+   {"name": "Teddy Cross", "role": "Co-founder and chief product officer"}
+  ],
+  "gallery": [
+   {"url": "https://cdn.prod.website-files.com/5ef5b52561b705cdd979275e/5f6bf7aa03bbe535e0b56505_Open%20Graph%20Image.png", "w": 1200, "h": 630, "alt": "Playco logo: a black-and-white arrow cursor with the word PLAYCO inside it, on a yellow background", "credit": "Image: Playco (play.co)"}
+  ],
+  "use_cases": [
+   "Starting a multiplayer game from a link inside a messaging app",
+   "Playing with friends without installing an app",
+   "Social games for platforms such as Facebook, LINE and Discord"
+  ],
+  "audience": {
+   "fit": [
+    "casual players who want quick games with friends in chat apps",
+    "platforms looking for instant games partners",
+    "readers following the instant-games and HTML5 gaming space"
+   ],
+   "not_fit": [
+    "players looking for big console or PC titles",
+    "anyone wanting a list of current Playco games: its site names none"
+   ]
+  },
+  "pricing": {
+   "intro": "Playco's games are free to play, with revenue planned from in-game purchases and opt-in advertising, according to its launch release. There is no subscription.",
+   "plans": [{"name": "Playco games", "price": "Free to play", "detail": "Optional in-game purchases and ads"}],
+   "url": "https://www.play.co/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "No install needed to start playing",
+   "Experienced founders from Zynga, Game Closure and Mobage",
+   "Well funded at launch"
+  ],
+  "cons": [
+   "Its website lists no current games",
+   "Depends on partner platforms for distribution"
+  ],
+  "alternatives": {
+   "intro": "Other instant and web-game platforms.",
+   "items": [
+    {"name": "Poki", "url": "https://poki.com/", "what": "Web game portal with thousands of free browser games", "difference": "A destination site rather than games inside chat apps."},
+    {"name": "CrazyGames", "url": "https://www.crazygames.com/", "what": "Free browser game platform", "difference": "Hosts games from many developers."},
+    {"name": "Discord Activities", "url": "https://discord.com/", "what": "Games and activities played inside Discord voice calls", "difference": "Built into one chat platform."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Playco?", "a": "A Tokyo-based company making instant-play games that start from a link inside social and messaging apps, without installs."},
+   {"q": "Who founded Playco?", "a": "Michael Carter (CEO), Zynga co-founder Justin Waldron, Takeshi Otsuka and Teddy Cross."},
+   {"q": "How much did Playco raise?", "a": "A $100 million Series A in September 2020 at a valuation of just over $1 billion, led by Josh Buckley and Sequoia Capital Global Equities."},
+   {"q": "Are Playco games free?", "a": "Yes. Its games are free to play, with optional in-game purchases and ads."}
+  ],
+  "sources": [
+   {"label": "Playco: about", "url": "https://www.play.co/about"},
+   {"label": "Playco: launch press release (Sept 2020)", "url": "https://www.play.co/press/press-release-200921-en"},
+   {"label": "TheWrap: Playco raises $100 million from investors including Will Smith", "url": "https://www.thewrap.com/mobile-gaming-startup-playco-raises-100-million-from-investors-including-will-smith/"},
+   {"label": "AVCJ: Japan gaming start-up raises Series A, hits $1B valuation", "url": "https://www.avcj.com/avcj/news/3021137/japan-gaming-start-up-raises-series-a-hits-usd1b-valuation"}
+  ]
+ }
+}

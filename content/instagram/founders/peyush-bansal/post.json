@@ -1,0 +1,136 @@
+{
+ "slides": [
+  {
+   "layout": "cover",
+   "img": "peyush.jpg",
+   "credit": "Photo: Ajayrwat / Wikimedia Commons, CC BY-SA 4.0",
+   "pos": "40% 30%",
+   "label": "Founder story · Lenskart",
+   "h1": [
+    "He left Microsoft to sell ",
+    "glasses",
+    " online"
+   ],
+   "h1_size": 88,
+   "deck": "How *Peyush Bansal* went from nearly a year at a US job to co-founding Lenskart, now listed in India.",
+   "foot": [
+    "100xfounder.com",
+    "Swipe for the story →"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "microsoft.jpg",
+   "credit": "Microsoft's Redmond campus · Photo: Jonathan Schilling / Wikimedia Commons, CC BY-SA 4.0",
+   "pos": "50% 50%",
+   "label": "Before Lenskart",
+   "h1": [
+    "Engineering, then ",
+    "Microsoft",
+    ""
+   ],
+   "h1_size": 92,
+   "cards": [
+    {
+     "k": "Studied",
+     "v": "McGill",
+     "s": "Engineering degree, Canada"
+    },
+    {
+     "k": "First job",
+     "v": "Microsoft",
+     "s": "In the US, for close to a year"
+    },
+    {
+     "k": "Back in India",
+     "v": "Nov 2007",
+     "s": "Put in ₹25 lakh and started SearchMyCampus, a student classifieds site, in January 2008",
+     "wide": true
+    }
+   ],
+   "foot": [
+    "Source: Forbes India",
+    "→"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "eyeglasses.jpg",
+   "credit": "Photo: Poojasasikumar / Wikimedia Commons, CC BY-SA 4.0",
+   "pos": "50% 50%",
+   "shade": 0.88,
+   "label": "The start",
+   "h1": [
+    "A US store first, then ",
+    "Lenskart",
+    ""
+   ],
+   "h1_size": 84,
+   "deck": "In June 2009 the team started *Flyrr*, an online eyewear store for US buyers. When US suppliers let customers down, they tried the model in India.",
+   "cards": [
+    {
+     "k": "Lenskart launched",
+     "v": "Nov 2010",
+     "s": "Started by selling contact lenses online"
+    },
+    {
+     "k": "Co-founders",
+     "v": "4",
+     "s": "Peyush Bansal, Amit Chaudhary, Sumeet Kapahi, Neha Bansal"
+    }
+   ],
+   "foot": [
+    "Source: Forbes India",
+    "→"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "bse.jpg",
+   "credit": "BSE, Mumbai · Photo: Kumar Appaiah / Wikimedia Commons, CC BY-SA 3.0",
+   "pos": "50% 30%",
+   "big": "28x",
+   "big_label": "IPO subscribed, November 2025",
+   "h1": [
+    "Lenskart ",
+    "listed",
+    " on 10 Nov 2025"
+   ],
+   "h1_size": 76,
+   "cards": [
+    {
+     "k": "Raised in IPO",
+     "v": "₹7,279 cr",
+     "s": "Fresh issue plus offer for sale"
+    },
+    {
+     "k": "Issue price",
+     "v": "₹402",
+     "s": "Opened at ₹395 on the NSE"
+    }
+   ],
+   "foot": [
+    "Source: Business Standard",
+    "→"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "store.jpg",
+   "credit": "Lenskart, Vijayawada · Photo: Saishna96 / Wikimedia Commons, CC BY-SA 4.0",
+   "pos": "40% 50%",
+   "label": "The lesson, in his words",
+   "h1": [
+    "“I was always customer-obsessed but not ",
+    "employee-obsessed",
+    ". It was a big mistake.”"
+   ],
+   "h1_size": 70,
+   "deck": "*Peyush Bansal*, to Forbes India, September 2022",
+   "foot": [
+    "Source: Forbes India",
+    "Link in bio"
+   ]
+  }
+ ]
+}

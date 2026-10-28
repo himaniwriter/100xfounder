@@ -1,0 +1,157 @@
+{
+ "slug": "silo",
+ "website": "https://www.usesilo.com/",
+ "excerpt": "Silo is cloud ERP and financing software for produce companies: shippers, distributors, packers and growers. It raised $132M in 2023, including a $100M credit line.",
+ "content": "<p>Silo is a San Francisco software company for the perishable food supply chain. Its website describes it as a cloud-based ERP built specifically for produce companies, meaning shippers, distributors, packers and growers. The platform is organised into modules: a produce-specific ERP for buying, selling, inventory, packing and logistics; labour and asset management for crews, productivity and equipment costs; and payments and financial operations. Silo also highlights tools for FSMA 204, the US Food and Drug Administration's food traceability rule, which requires extra record-keeping for many fresh foods.</p><p>Silo began with a different emphasis. Our older listing described it as a wholesale food marketplace, and in 2023 Food Industry Executive described it as a fintech platform for distributors and grower-shippers, offering Instant Pay working capital, a Cash Advance programme and Silo Finance for cash-flow visibility. The company was founded in 2018, and Ashton Braun is co-founder and CEO.</p><h2>Funding</h2><p>On 12 July 2023 Silo announced $132 million in new capital: a $32 million Series C led by Koch Disruptive Technologies, with Andreessen Horowitz, Haystack, Tribe Capital, Collate Capital and Moore Capital, plus $100 million from First Citizens Bank to fund its Cash Advance programme. Silo said its total funding had reached $272 million, with Jefferies and Initialized Capital among earlier investors. The law firm Wilson Sonsini, which advised Silo, later reported a further $35 million investment from Koch Disruptive Technologies that closed in December 2023.</p><h2>Pricing</h2><p>Silo does not publish prices. Its website asks produce businesses to book a demo.</p><h2>Who it suits</h2><p>Silo is built for produce shippers, distributors, packers and growers that want one system for operations, accounting and payments, especially those preparing for FSMA 204 traceability. It is not aimed at restaurants, grocers buying retail volumes or businesses outside fresh produce.</p><p><em>We have not used Silo. This page is based on Silo's website and on Food Industry Executive's report of its 2023 funding.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "ERP for the produce industry",
+  "platform": "Cloud software",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Cloud ERP, payments and financing for produce shippers, distributors, packers and growers",
+  "maker": {
+   "name": "Silo",
+   "url": "https://www.usesilo.com/"
+  },
+  "team": [
+   {
+    "name": "Ashton Braun",
+    "role": "Co-founder and CEO",
+    "url": "https://foodindustryexecutive.com/2023/07/silo-lands-132-million-to-support-the-food-supply-chain/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://static.wixstatic.com/media/051d60_4bc52337c388437eb147d68b71e5433f~mv2.png",
+    "alt": "Silo's site icon: dark green rectangular blocks separated by thin white lines",
+    "credit": "Image: Silo",
+    "w": 360,
+    "h": 360
+   },
+   {
+    "url": "https://static.wixstatic.com/media/051d60_2bed638fcc17475b9fefc8c1fe0a50f0~mv2.jpg",
+    "alt": "A crate full of long green peppers, from Silo's website",
+    "credit": "Image: Silo",
+    "w": 2067,
+    "h": 1581
+   }
+  ],
+  "use_cases": [
+   "Running buying, selling, inventory and packing for a produce distributor in one system",
+   "Keeping FSMA 204 traceability records for fresh produce",
+   "Tracking labour crews and equipment costs",
+   "Handling payments and getting visibility of cash flow",
+   "Accessing working capital through Silo's financing programmes"
+  ],
+  "audience": {
+   "fit": [
+    "are a US produce shipper, distributor, packer or grower",
+    "are replacing spreadsheets or a generic ERP with one built for produce",
+    "need to prepare for FSMA 204 traceability rules"
+   ],
+   "not_fit": [
+    "run a restaurant or retail store",
+    "work outside fresh produce and perishables"
+   ]
+  },
+  "pricing": {
+   "intro": "Silo does not publish prices. Produce businesses book a demo to get a quote.",
+   "plans": [
+    {
+     "name": "Diversified ERP",
+     "price": "Quote on request",
+     "detail": "Produce-specific operations modules"
+    },
+    {
+     "name": "Labor and Asset Management",
+     "price": "Quote on request",
+     "detail": "Crews, productivity and equipment"
+    },
+    {
+     "name": "Payments & Financial Ops",
+     "price": "Quote on request",
+     "detail": "Payments and financing"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.usesilo.com/schedule-demo",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other software used by produce and fresh food distributors.",
+   "items": [
+    {
+     "name": "Famous Software",
+     "url": "https://www.famoussoftware.com/",
+     "what": "ERP for the fresh produce industry",
+     "tags": [
+      "Produce ERP"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Long-established produce accounting and operations software."
+    },
+    {
+     "name": "Produce Pro",
+     "url": "https://www.producepro.com/",
+     "what": "ERP for perishable food distributors",
+     "tags": [
+      "Produce ERP"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Focused on wholesale distribution of perishables."
+    },
+    {
+     "name": "NetSuite",
+     "url": "https://www.netsuite.com/",
+     "what": "General cloud ERP from Oracle",
+     "tags": [
+      "ERP"
+     ],
+     "starts_at": "See its own site",
+     "difference": "General-purpose ERP that needs adapting for produce."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Silo do?",
+    "a": "It sells cloud ERP software for produce companies, covering operations, labour and assets, and payments, with tools for FSMA 204 traceability."
+   },
+   {
+    "q": "Who founded Silo?",
+    "a": "Ashton Braun is co-founder and CEO; the company was founded in 2018."
+   },
+   {
+    "q": "How much has Silo raised?",
+    "a": "Silo said in July 2023 that its total funding had reached $272 million, after a $32 million Series C and a $100 million facility from First Citizens Bank."
+   },
+   {
+    "q": "How much does Silo cost?",
+    "a": "Prices are not published; Silo quotes after a demo."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Silo website",
+    "url": "https://www.usesilo.com/"
+   },
+   {
+    "label": "Silo: FSMA 204 compliance",
+    "url": "https://www.usesilo.com/fsma-204-compliance"
+   },
+   {
+    "label": "Food Industry Executive: Silo lands $132 million (Jul 2023)",
+    "url": "https://foodindustryexecutive.com/2023/07/silo-lands-132-million-to-support-the-food-supply-chain/"
+   },
+   {
+    "label": "Built In SF: Silo bagged $132M (17 Jul 2023)",
+    "url": "https://www.builtinsf.com/articles/san-francisco-tech-news-071723"
+   },
+   {
+    "label": "Wilson Sonsini: advises Silo Technologies on $35 million investment (Dec 2023)",
+    "url": "https://ecvc.wsgr.com/news/wilson-sonsini-advises-silo-technologies-on-dollar35-million-investment"
+   }
+  ]
+ }
+}

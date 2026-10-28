@@ -1,0 +1,152 @@
+{
+ "slug": "may-mobility",
+ "website": "https://maymobility.com/",
+ "excerpt": "May Mobility is an Ann Arbor autonomous ride-hail company running driverless Toyota Siennas with Lyft and others. It agreed in 2026 to go public via a $1.4B SPAC.",
+ "content": "<p>May Mobility develops self-driving technology and runs autonomous ride-hail and shuttle services, using modified Toyota Sienna minivans. Rather than launching robotaxis city-wide, it has followed what TechCrunch called a gentle on-ramp: on-demand shuttles and pooled rides on campuses and along simpler routes, then broader ride-hail. In February 2025 it launched its first fully driverless commercial service in Peachtree Corners, Georgia, and it offers rides through Lyft in Atlanta. Its website calls itself an autonomous ride-hail technology company.</p><p>May Mobility is based in Ann Arbor, Michigan, and was founded in 2017. Cofounder and CEO Edwin Olson previously led Ford's autonomous driving research and co-directed autonomous driving work at the Toyota Research Institute, TechCrunch reported. Toyota led a $50 million investment in 2019. On 16 September 2026 May Mobility announced it would go public by merging with the special purpose acquisition company ACP Holdings Acquisition Corp, in a deal that could raise more than $300 million at a $1.4 billion valuation, TechCrunch and Reuters reported; Reuters said it would list on Nasdaq. TechCrunch said it then operated in three US locations, including Lyft in Atlanta and services in Eden Prairie and Grand Rapids, Minnesota.</p><p>Riders pay the fare shown in the Lyft app or the local service's app; May Mobility does not sell directly to consumers and does not publish a price list. Its business customers are cities, transit agencies and ride-hail partners, and it competes with Waymo, Zoox and other robotaxi developers.</p><p><em>We have not used May Mobility for this page. It brings together May Mobility's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Autonomous vehicles and ride-hail",
+  "platform": "Autonomous Toyota Sienna fleet, via Lyft and local apps",
+  "starts_at": "Fares set per ride by the service",
+  "schema_category": "Organization",
+  "summary_short": "Driverless ride-hail and shuttle technology, offered through Lyft and local services",
+  "maker": {
+   "name": "May Mobility",
+   "url": "https://maymobility.com/"
+  },
+  "team": [
+   {
+    "name": "Edwin Olson",
+    "role": "Cofounder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://maymobility.imgix.net/May-Mobility-Home-Introduction.png?auto=format%2Ccompress&q=35&fit=crop&crop=faces%2Ccenter&w=1200",
+    "alt": "A white and green May Mobility autonomous minivan with roof sensors driving on a tree-lined street",
+    "credit": "Image: May Mobility (maymobility.com)",
+    "w": 600,
+    "h": 450
+   },
+   {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/May_Mobility_Autonomous_Vehicle_%2853782987340%29.jpg/1280px-May_Mobility_Autonomous_Vehicle_%2853782987340%29.jpg",
+    "alt": "A May Mobility autonomous Toyota Sienna in green and white livery parked on a Detroit street",
+    "credit": "Photo: City of Detroit, public domain, via Wikimedia Commons",
+    "w": 1280,
+    "h": 854
+   }
+  ],
+  "use_cases": [
+   "Driverless ride-hail rides through Lyft in Atlanta",
+   "On-demand autonomous shuttles for cities and campuses",
+   "Pooled microtransit routes for transit agencies"
+  ],
+  "audience": {
+   "fit": [
+    "cities and transit agencies looking at autonomous microtransit",
+    "ride-hail platforms adding autonomous vehicles",
+    "riders in May Mobility's service areas"
+   ],
+   "not_fit": [
+    "riders outside its few service areas",
+    "buyers wanting to purchase a self-driving car"
+   ]
+  },
+  "pricing": {
+   "intro": "May Mobility does not publish consumer prices. Riders pay the fare shown in Lyft or the local service app; cities and partners contract directly.",
+   "url": "https://maymobility.com/",
+   "plans": [
+    {
+     "name": "Rides",
+     "price": "Set per ride by the service",
+     "detail": "Through Lyft or local apps"
+    },
+    {
+     "name": "City and partner deployments",
+     "price": "Contract",
+     "detail": "Contact May Mobility"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Fully driverless commercial service since 2025",
+   "Partnerships with Lyft and Toyota",
+   "Planned public listing would make its finances public"
+  ],
+  "cons": [
+   "Operates in only a few locations",
+   "SPAC deals can change or fall through before closing"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with May Mobility. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Waymo",
+     "url": "https://waymo.com/",
+     "what": "Alphabet's robotaxi service",
+     "starts_at": "See its own website",
+     "difference": "Largest US driverless ride-hail operator."
+    },
+    {
+     "name": "Zoox",
+     "url": "https://zoox.com/",
+     "what": "Amazon-owned robotaxi company",
+     "starts_at": "See its own website",
+     "difference": "Purpose-built vehicles without steering wheels."
+    },
+    {
+     "name": "Beep",
+     "url": "https://ridebeep.com/",
+     "what": "Autonomous shuttle operator",
+     "starts_at": "See its own website",
+     "difference": "Runs autonomous shuttles for communities and campuses."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is May Mobility going public?",
+    "a": "Yes. In September 2026 it agreed to merge with the SPAC ACP Holdings Acquisition Corp at a $1.4 billion valuation and list on Nasdaq, TechCrunch and Reuters reported."
+   },
+   {
+    "q": "Where can I ride with May Mobility?",
+    "a": "In Atlanta through Lyft, and in places such as Peachtree Corners, Georgia, and Eden Prairie and Grand Rapids, Minnesota."
+   },
+   {
+    "q": "Who founded May Mobility?",
+    "a": "Edwin Olson is cofounder and CEO; the company was founded in 2017."
+   },
+   {
+    "q": "What vehicles does May Mobility use?",
+    "a": "Modified Toyota Sienna minivans."
+   }
+  ],
+  "sources": [
+   {
+    "label": "May Mobility investors page",
+    "url": "https://maymobility.com/investors/"
+   },
+   {
+    "label": "TechCrunch: May Mobility is going public in a $1.4B SPAC deal",
+    "url": "https://techcrunch.com/2026/09/16/may-mobility-is-going-public-in-a-1-4b-spac-deal/"
+   },
+   {
+    "label": "Reuters: May Mobility to list on Nasdaq via $1.4 billion SPAC deal",
+    "url": "https://www.reuters.com/legal/transactional/may-mobility-list-nasdaq-via-14-billion-spac-deal-2026-09-16/"
+   },
+   {
+    "label": "TechCrunch: May Mobility launches its first driverless commercial service",
+    "url": "https://techcrunch.com/2025/02/12/may-mobility-launches-its-first-driverless-commercial-ride-hail-service/"
+   },
+   {
+    "label": "TechCrunch: Toyota leads $50M in May Mobility",
+    "url": "https://techcrunch.com/2019/12/04/toyota-leads-50-million-investment-in-autonomous-shuttle-startup-may-mobility/"
+   },
+   {
+    "label": "TechCrunch: May Mobility is a self-driving startup with a decade of experience",
+    "url": "https://techcrunch.com/2017/08/21/may-mobility-is-a-self-driving-startup-with-a-decade-of-experience/"
+   }
+  ]
+ }
+}

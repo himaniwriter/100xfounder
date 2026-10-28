@@ -1,0 +1,153 @@
+{
+ "slug": "magic-eden",
+ "website": "https://magiceden.io/",
+ "excerpt": "Magic Eden is a Solana NFT marketplace valued at $1.6 billion in 2022. In 2026 it closed its Bitcoin and EVM markets and wallet to focus on Solana and gaming.",
+ "content": "<p>Magic Eden is a marketplace for buying, selling and minting NFTs. It started on the Solana blockchain in 2021 and grew quickly, later adding Polygon and other EVM chains and a Bitcoin Ordinals marketplace, letting buyers pay by credit card, and launching a multi-chain crypto wallet. In December 2024 it launched its own token, ME, with a large airdrop to users.</p><p>Jack Lu is cofounder and CEO. In June 2022, nine months after launch, Magic Eden raised a $130 million Series B co-led by Electric Capital and Greylock at a $1.6 billion valuation, with Lightspeed, Paradigm and Sequoia also investing, TechCrunch reported; that came three months after a $27 million Series A. As NFT trading fell, it cut 22 jobs, about 15% of staff, in February 2023, The Block reported. In February 2026 Lu said Magic Eden would shut its EVM and Bitcoin NFT marketplaces in March, its Bitcoin API later that month and its wallet on 1 April, because, he said, 80% of costs went to products bringing in 20% of revenue. Cointelegraph and Crypto Briefing reported that it would focus on Solana, NFT packs and Dicey, a crypto casino and sports betting product.</p><p>Using Magic Eden's marketplace is free to browse; trades carry marketplace and creator fees set by Magic Eden and each collection, shown before you buy. NFTs and crypto tokens are volatile and can lose most of their value, and online gambling products carry their own risks and legal limits.</p><p><em>We have not used Magic Eden for this page. It brings together Magic Eden's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "NFT marketplace",
+  "platform": "Web and mobile",
+  "starts_at": "Free to browse; fees per trade",
+  "schema_category": "FinanceApplication",
+  "summary_short": "Solana-focused NFT marketplace, shifting towards crypto gaming in 2026",
+  "maker": {
+   "name": "Magic Eden",
+   "url": "https://magiceden.io/"
+  },
+  "team": [
+   {
+    "name": "Jack Lu",
+    "role": "Cofounder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/da/0b/84/da0b842b-6107-db58-80c3-fe0032fa1799/ios-0-0-1x_U007ephone-0-1-P3-85-220.png/512x512bb.jpg",
+    "alt": "Magic Eden logo: white rounded letters M and E on a black app icon",
+    "credit": "Image: Magic Eden, via its App Store listing",
+    "w": 512,
+    "h": 512
+   },
+   {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/43/e3/7043e34d-7692-6e5c-699c-e587fc781cad/Slide-1-1284x2778.png/600x1298bb.jpg",
+    "alt": "Magic Eden Wallet app screenshot titled View Market Movers, showing a token balance and a watchlist; the wallet closed in April 2026",
+    "credit": "Image: Magic Eden, via its App Store listing",
+    "w": 600,
+    "h": 1298
+   }
+  ],
+  "use_cases": [
+   "Buying and selling Solana NFTs",
+   "Minting new NFT collections",
+   "Opening NFT packs"
+  ],
+  "audience": {
+   "fit": [
+    "collectors and traders active on Solana",
+    "NFT creators launching on Solana"
+   ],
+   "not_fit": [
+    "anyone wanting Bitcoin Ordinals or Ethereum NFTs on Magic Eden, which it closed in 2026",
+    "people looking for a low-risk investment"
+   ]
+  },
+  "pricing": {
+   "intro": "Magic Eden does not charge to browse. Each trade carries marketplace and creator fees shown before you confirm.",
+   "url": "https://magiceden.io/",
+   "plans": [
+    {
+     "name": "Marketplace",
+     "price": "Fees per trade",
+     "detail": "Shown at checkout; vary by collection"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "One of the best-known Solana NFT marketplaces",
+   "Well funded in 2022"
+  ],
+  "cons": [
+   "Closed its Bitcoin and EVM marketplaces and wallet in 2026",
+   "Shift towards crypto gambling may not suit all users"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Magic Eden. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Tensor",
+     "url": "https://www.tensor.trade/",
+     "what": "Solana NFT marketplace",
+     "starts_at": "See its own website",
+     "difference": "Trading-focused Solana NFT marketplace."
+    },
+    {
+     "name": "OpenSea",
+     "url": "https://opensea.io/",
+     "what": "Multi-chain NFT marketplace",
+     "starts_at": "See its own website",
+     "difference": "The best-known NFT marketplace, strongest on Ethereum."
+    },
+    {
+     "name": "Ordinals Wallet",
+     "url": "https://ordinalswallet.com/",
+     "what": "Bitcoin Ordinals marketplace",
+     "starts_at": "See its own website",
+     "difference": "For Bitcoin NFTs that Magic Eden no longer supports."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Magic Eden shutting down?",
+    "a": "No, but in 2026 it closed its Bitcoin and EVM NFT marketplaces, Bitcoin API and wallet to focus on Solana, NFT packs and its Dicey gaming product."
+   },
+   {
+    "q": "How much is Magic Eden worth?",
+    "a": "Its June 2022 Series B valued it at $1.6 billion, TechCrunch reported."
+   },
+   {
+    "q": "What is the ME token?",
+    "a": "Magic Eden's token, launched in December 2024 with a large airdrop to users."
+   },
+   {
+    "q": "Who runs Magic Eden?",
+    "a": "Cofounder and CEO Jack Lu."
+   }
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch: Magic Eden raises $130M at $1.6B valuation",
+    "url": "https://techcrunch.com/2022/06/21/magic-eden-raises-130m-hitting-unicorn-status-at-1-6b-valuation/"
+   },
+   {
+    "label": "The Block: Magic Eden lays off 22",
+    "url": "https://www.theblock.co/news/business/2023-02-13-magic-eden-lays-off-22-about-15-of-staff-in-latests-workforce-cuts-211269"
+   },
+   {
+    "label": "Cointelegraph: Magic Eden winds down EVM and Bitcoin NFT markets",
+    "url": "https://regional-front.cointelegraph.com/news/magic-eden-winds-down-evm-bitcoin-nft-markets-to-focus-on-gambling"
+   },
+   {
+    "label": "Crypto Briefing: Magic Eden to shut Bitcoin and EVM marketplaces",
+    "url": "https://cryptobriefing.com/magic-eden-solana-focus/"
+   },
+   {
+    "label": "TechCrunch: Magic Eden launches Bitcoin marketplace",
+    "url": "https://techcrunch.com/2023/03/21/magic-eden-launches-bitcoin-marketplace-as-ordinal-inscriptions-continue-to-grow/"
+   },
+   {
+    "label": "TechCrunch: Magic Eden integrates with Polygon",
+    "url": "https://techcrunch.com/2022/11/22/nft-marketplace-magic-eden-integrates-with-polygon-to-grow-blockchain-gaming/"
+   },
+   {
+    "label": "Decrypt: Magic Eden token airdrop",
+    "url": "https://decrypt.co/295890/magic-eden-solana-token-airdrop-700-million"
+   },
+   {
+    "label": "TechCrunch: Magic Eden lets you buy NFTs with a credit card",
+    "url": "https://techcrunch.com/2023/02/13/want-to-buy-an-nft-with-your-credit-card-magic-eden-lets-you-do-just-that/"
+   }
+  ]
+ }
+}

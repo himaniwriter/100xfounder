@@ -1,0 +1,139 @@
+{
+ "slug": "searchlight",
+ "website": "https://www.multiverse.io/blog/searchlight",
+ "excerpt": "Searchlight was a San Francisco AI talent intelligence startup founded by twins Anna and Kerry Wang. Multiverse acquired it in April 2024 and wound down its recruiting product.",
+ "content": "<p>Searchlight was a talent intelligence and skills assessment platform. Companies used it to assess candidates and employees with AI, predict how well people would fit a role, and understand the skills in their workforce, with the aim of better hiring and closing skills gaps. Recruiter reported that its customers included Udemy, Zapier and Talkdesk.</p><p>Searchlight was founded in 2018 by twin sisters Anna Wang and Kerry Wang and went through Y Combinator in winter 2019; YC's directory lists it in San Francisco. Anna Wang's YC profile says Searchlight was backed by Accel at seed and Founders Fund in its Series A. On 8 April 2024 Multiverse, the UK workplace training and apprenticeship company, announced that it had acquired Searchlight for an undisclosed sum. Multiverse said it would use Searchlight's technology to build AI products for its own training services, and Recruiter reported that existing Searchlight customers would be served until their contracts ended, after which Multiverse would wind down Searchlight's recruitment services. Kerry Wang took a director of product role and Anna Wang a head of AI role at Multiverse at the time.</p><p>Searchlight's own website is no longer online, and the product is not sold separately, so there is no price to quote. Companies looking for similar tools today would compare skills-based hiring and talent intelligence platforms such as Eightfold, HireVue and TestGorilla.</p><p><em>We have not used Searchlight for this page. It brings together Searchlight's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Talent intelligence (acquired)",
+  "platform": "Web (discontinued)",
+  "starts_at": "No longer sold separately",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI talent intelligence and skills assessment, acquired by Multiverse in 2024",
+  "maker": {
+   "name": "Searchlight",
+   "url": "https://www.multiverse.io/blog/searchlight"
+  },
+  "team": [
+   {
+    "name": "Anna Wang",
+    "role": "Cofounder"
+   },
+   {
+    "name": "Kerry Wang",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://bookface-images.s3.amazonaws.com/small_logos/c614da05c9ea2efb343da05c4e5a237c56bad357.png",
+    "alt": "Searchlight logo: a stylised S in orange, purple and white on a dark purple square",
+    "credit": "Logo: Searchlight, via Y Combinator's company directory",
+    "w": 150,
+    "h": 144
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/6968d66cf449059590f1c2fb/6ac3696589aedcaea4ebcc81_6ac35e4fe850d3ee184a8b2a_og-05-news-blog.jpeg",
+    "alt": "Multiverse banner: the multiverse wordmark in white over a green and purple gradient, used on its post announcing the Searchlight acquisition",
+    "credit": "Image: Multiverse (multiverse.io), which acquired Searchlight",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Assessing job candidates' skills with AI",
+   "Predicting candidate fit for a role",
+   "Understanding skills across a workforce",
+   "Planning training to close skills gaps"
+  ],
+  "audience": {
+   "fit": [
+    "readers researching Searchlight's history or the Multiverse acquisition",
+    "companies evaluating AI talent intelligence tools"
+   ],
+   "not_fit": [
+    "anyone hoping to sign up for Searchlight today: the product is no longer sold"
+   ]
+  },
+  "pricing": {
+   "intro": "Searchlight is no longer sold. Multiverse wound down its recruitment services after existing contracts ended.",
+   "url": "https://www.multiverse.io/blog/searchlight",
+   "plans": [
+    {
+     "name": "Searchlight",
+     "price": "Discontinued",
+     "detail": "Technology absorbed into Multiverse"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Its technology lives on inside Multiverse's AI products"
+  ],
+  "cons": [
+   "No longer available as a standalone product"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Searchlight. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Eightfold AI",
+     "url": "https://eightfold.ai/",
+     "what": "AI talent intelligence platform",
+     "starts_at": "See its own website",
+     "difference": "Large enterprise platform for hiring, mobility and skills."
+    },
+    {
+     "name": "HireVue",
+     "url": "https://www.hirevue.com/",
+     "what": "Hiring assessments and video interviews",
+     "starts_at": "See its own website",
+     "difference": "Assessment-led hiring for high-volume recruiting."
+    },
+    {
+     "name": "TestGorilla",
+     "url": "https://www.testgorilla.com/",
+     "what": "Skills tests for hiring",
+     "starts_at": "See its own website",
+     "difference": "Self-serve skills testing with published prices."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What happened to Searchlight?",
+    "a": "Multiverse acquired it in April 2024 and planned to wind down its recruitment services once customer contracts ended."
+   },
+   {
+    "q": "Who founded Searchlight?",
+    "a": "Twin sisters Anna Wang and Kerry Wang, in 2018."
+   },
+   {
+    "q": "Who invested in Searchlight?",
+    "a": "Accel at seed and Founders Fund in its Series A, according to Anna Wang's Y Combinator profile; it was also a YC company."
+   },
+   {
+    "q": "How much did Multiverse pay?",
+    "a": "The price was not disclosed."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Multiverse: We've acquired Searchlight",
+    "url": "https://www.multiverse.io/blog/searchlight"
+   },
+   {
+    "label": "Y Combinator: Searchlight",
+    "url": "https://www.ycombinator.com/companies/searchlight"
+   },
+   {
+    "label": "Recruiter: Multiverse acquires AI talent software firm Searchlight",
+    "url": "https://www.recruiter.co.uk/news/2024/04/blairs-multiverse-acquires-ai-talent-software-firm-searchlight"
+   },
+   {
+    "label": "Fenwick: Searchlight acquisition by Multiverse",
+    "url": "https://www.fenwick.com/insights/experience/fenwick-represents-searchlight-in-acquisition-by-multiverse"
+   }
+  ]
+ }
+}

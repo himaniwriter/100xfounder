@@ -1,0 +1,116 @@
+{
+ "slug": "hey-noah",
+ "existing_listing_slug": null,
+ "ph_url": "https://www.producthunt.com/products/hey-noah",
+ "excerpt": "Hey Noah is an AI executive assistant you text: it emails people to set up meetings, reschedules conflicts, follows up and briefs you from your notes, using its own email identity with you copied. Free 30-day trial at launch. How it works, trust controls and alternatives.",
+ "content": "<p>Hey Noah is an AI executive assistant that works over text message, email and voice instead of an app. You text it the way you would a human assistant (\"set up coffee with Sarah next week\", \"I'm out Thursday and Friday\") and it emails the other person, negotiates a time, sends the invite and reschedules clashes. You can also copy Noah into any email thread and it takes over the back-and-forth, including reading Calendly links. It emails from its own account with you copied, the way an assistant would.</p><p>Beyond scheduling, the team says Noah follows up with people who have gone quiet, confirms restaurant bookings by phone, pulls your Granola meeting notes before a meeting, and posts summaries and action items to Slack. It connects to your calendar, Notion, Google Drive and Slack. You choose what it may do on its own and what needs your approval, and it only acts on threads you hand it. The company is Hey Noah AI Inc.; at launch the founder described a bootstrapped team of eight in Palo Alto.</p><p>Hey Noah launched on Product Hunt on 4 August 2026, its first launch there, and finished #1 for the day with 649 upvotes and 104 comments.</p><p><em>We have not tested Hey Noah ourselves. This page brings together its official site, FAQ and privacy page, its Product Hunt page, reviews and launch discussion, and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI assistant",
+  "platform": "SMS, email and voice",
+  "starts_at": "Pricing not published",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI executive assistant over text and email that schedules meetings and follows up for you",
+  "maker": {"name": "Ashish Toshniwal", "url": "https://www.producthunt.com/@ashish_toshniwal1"},
+  "team": [
+   {"name": "Ashish Toshniwal", "role": "Founder", "url": "https://www.producthunt.com/@ashish_toshniwal1"},
+   {"name": "Ryan Brandt", "role": "CTO and technical co-founder", "url": "https://www.producthunt.com/@ryan_brandt4"},
+   {"name": "John Beadle", "role": "Maker", "url": "https://www.producthunt.com/@johnbeadle"},
+   {"name": "Danira Lujan", "role": "Ops lead", "url": "https://www.producthunt.com/@danira_lujan"},
+   {"name": "Darshan Sonde", "role": "Founding Engineer", "url": "https://www.producthunt.com/@darcwader"}
+  ],
+  "ph": {"rank": 1, "votes": 649, "comments": 104, "followers": 1525, "launched": "2026-08-04", "as_of": "2026-10-14"},
+  "use_cases": [
+   "Texting an instruction to set up a meeting and letting Noah email the other person",
+   "Copying Noah into an email thread to handle the scheduling back-and-forth",
+   "Rescheduling everything when you are suddenly out for a few days",
+   "Getting a briefing from your previous meeting notes before a call",
+   "Chasing people who have not replied"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Ashish Toshniwal says he spent 14 years bootstrapping a company, and that his executive assistant managed not just his calendar but his relationships. Noah is his attempt to put that playbook into a chief of staff you text.",
+    "He stressed that Noah is SMS-first, proactive and sends emails itself rather than drafting them, connecting to your calendar, Granola, Notion, Google Drive and Slack. He offered a free 30-day trial with no credit card and promised to answer every question in the thread."
+   ],
+   "attribution": "Ashish Toshniwal, founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/hey-noah?comment=5294813"
+  },
+  "audience": {
+   "fit": [
+    "are a founder or executive with many meetings and no human assistant",
+    "find booking links too transactional for client or senior meetings",
+    "prefer to delegate by text rather than learn another app"
+   ],
+   "not_fit": [
+    "are not ready to let software email contacts for you: commenters said this is the main trust hurdle",
+    "want a published price before trying: the site shows no pricing",
+    "need a measured error rate: the team said it cannot define a correction rate crisply"
+   ]
+  },
+  "pricing": {
+   "intro": "Pricing not published on heynoah.io as of 14 October 2026. Product Hunt lists Hey Noah as free, and at launch the founder offered a free 30-day trial with no credit card.",
+   "url": "https://www.heynoah.io/faq",
+   "checked": "2026-10-14",
+   "plans": [],
+   "notes": []
+  },
+  "alternatives": {
+   "intro": "Calendly, Pally and Martin are on Product Hunt's alternatives list. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Calendly", "url": "https://calendly.com/", "what": "Scheduling links and booking pages", "starts_at": "See its pricing page", "ph_rating": 4.64, "ph_reviews": 28, "ph_url": "https://www.producthunt.com/products/calendly", "difference": "Others book through your link; Noah writes to people and negotiates times like an assistant, and several reviewers said they switched from Calendly for that reason."},
+    {"name": "Pally", "url": "https://www.producthunt.com/products/pally", "what": "Personal assistant over text", "starts_at": "See its pricing page", "ph_rating": 4.88, "ph_reviews": 16, "ph_url": "https://www.producthunt.com/products/pally", "difference": "Also text-based; Noah is aimed at founders' meetings and relationships."},
+    {"name": "Martin", "url": "https://www.trymartin.com/", "what": "AI personal assistant", "starts_at": "See its pricing page", "ph_rating": 4.57, "ph_reviews": 7, "ph_url": "https://www.producthunt.com/products/martin", "difference": "A general personal assistant; Noah emails your contacts from its own identity as your EA."}
+   ],
+   "more": "Product Hunt also lists Amie and Vimcal."
+  },
+  "reviews": {"count": 4, "rating": 5, "url": "https://www.producthunt.com/products/hey-noah/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Texting it like a human assistant", "Handling the full loop: outreach, scheduling, reminders and follow-ups", "Understanding nuanced scheduling rules in plain English"],
+    "asked": ["What it does unprompted in a normal week (follow-ups, reservation calls, pre-meeting briefs)", "How users build trust before it sends emails (start small, preferences for what needs approval)", "Whether it can ignore spam (it only acts when copied; spam detection was added later)"],
+    "criticised": ["A commenter said 17,000 meetings sent is volume, not accuracy, and asked for a correction rate"]
+   },
+   "quotes": [
+    {"text": "Now I text Noah the way I would text a human assistant, and the coordination just happens.", "author": "Zeynep Yorulmaz", "url": "https://www.producthunt.com/products/hey-noah?comment=5744357"},
+    {"text": "Calendly handles booking but nothing else -- no outreach, no follow-ups, no context, no tone.", "author": "Saket Toshniwal", "url": "https://www.producthunt.com/products/hey-noah/reviews?review=592864"},
+    {"text": "17,000 is volume, not accuracy.", "author": "Asad M.", "url": "https://www.producthunt.com/products/hey-noah?comment=5743940"}
+   ]
+  },
+  "pros": [
+   "No app to learn: works over SMS and email",
+   "Sends emails and follows up itself, from its own identity",
+   "You set what needs your approval",
+   "Connects to calendar, Granola, Notion, Google Drive and Slack"
+  ],
+  "cons": [
+   "No published pricing",
+   "Mistakes go out to real contacts, with you copied",
+   "No published accuracy or correction rate"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/hey-noah",
+   "x": {"none": "We found no posts about Hey Noah on X to link yet.", "search_url": "https://x.com/search?q=heynoah&f=live"}
+  },
+  "faq": [
+   {"q": "What is Hey Noah?", "a": "An AI executive assistant you reach by text, email or voice. It schedules meetings by emailing the other people, reschedules conflicts, follows up and briefs you from your notes."},
+   {"q": "How much does Hey Noah cost?", "a": "Its site does not publish prices. Product Hunt lists it as free, and at launch the founder offered a free 30-day trial with no credit card."},
+   {"q": "Does Noah send emails as me?", "a": "No. The team said Noah emails from its own account with you copied, the way a human assistant would."},
+   {"q": "Can I control what it does on its own?", "a": "Yes. The team said you choose which actions it takes alone and which need your sign-off, and you can tell it to always show you the plan first."},
+   {"q": "Will it act on every email I get?", "a": "No. The team said Noah only acts on threads you copy it into, and escalates anything that looks off."},
+   {"q": "How is it different from Calendly?", "a": "Calendly lets others book through a link; Noah writes to people, negotiates times and follows up, which several Product Hunt reviewers cited as their reason for choosing it."}
+  ],
+  "sources": [
+   {"label": "Hey Noah official site", "url": "https://www.heynoah.io/"},
+   {"label": "Hey Noah FAQ", "url": "https://www.heynoah.io/faq"},
+   {"label": "Hey Noah privacy policy", "url": "https://www.heynoah.io/privacy"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/hey-noah"},
+   {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/hey-noah/reviews"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/hey-noah/alternatives"}
+  ],
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/26e4fcaa-a567-4f35-a82f-3f4e3f0ee446.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Noah graphic 'Noah lives where you work. No new app to learn.' with WhatsApp, Gmail, Slack and calendar icons", "credit": "Image: Hey Noah via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/920c0f59-b62f-4863-bca5-e7301a61b774.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "alt": "Noah graphic 'Text Noah like you'd text your Chief of Staff' with a text thread about follow-ups", "credit": "Image: Hey Noah via Product Hunt"},
+   {"url": "https://ph-files.imgix.net/38ad55ee-e181-4955-8004-c5a77e6b036e.png?auto=format&fit=max&w=1400", "w": 549, "h": 805, "alt": "Example email from Noah offering three meeting times on behalf of the person it assists", "credit": "Image: Hey Noah via Product Hunt"}
+  ]
+ }
+}

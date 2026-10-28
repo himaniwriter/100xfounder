@@ -1,0 +1,92 @@
+{
+  "slug": "cotypist-2",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/cotypist-2",
+  "excerpt": "Cotypist is an on-device AI autocomplete for every Mac app: press Tab to accept the next words. Free tier, Plus and Pro plans, alternatives and launch-day comments.",
+  "content": "<p>Cotypist is a Mac app that predicts your next words as you type, in whatever app you are writing in: Mail, Slack, Notes, documents, even prompts to ChatGPT, Claude or coding agents. A grey suggestion appears after the cursor; press Tab to accept it, or keep typing and it updates. You can accept word by word, and paid plans add autocorrect, custom writing instructions and suggestions that learn from your own writing.</p><p>Its main selling point is privacy. The model runs on your Mac, with no cloud and no API calls, according to the developer. It needs an Apple Silicon Mac; there is no Windows, Linux or iOS version (the developer said on Product Hunt that iOS keyboard extensions are too limited).</p><p>Cotypist is built by Daniel Gräfe, who describes himself on Product Hunt as its developer. After a first launch in May, Product Hunt invited it back for a featured relaunch on 23 June 2026, where it finished #3 for the day with 315 points and 79 comments (as of 14 October 2026).</p><p><em>We have not tested Cotypist ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI writing autocomplete",
+    "platform": "macOS app",
+    "os": "Apple Silicon Mac required",
+    "starts_at": "Free (100 completed words a day); Plus from 6/month billed annually",
+    "schema_category": "UtilitiesApplication",
+    "summary_short": "On-device AI autocomplete that suggests your next words in every Mac app",
+    "maker": {"name": "Daniel Gräfe", "url": "https://www.producthunt.com/@daniel_a_a"},
+    "team": [{"name": "Daniel Gräfe", "role": "Developer (per his Product Hunt launch post)", "url": "https://www.producthunt.com/@daniel_a_a"}],
+    "ph": {"rank": 3, "votes": 315, "comments": 79, "followers": 617, "launched": "2026-06-23", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/d6f73e6e-df9c-4b4e-b71b-d9eb422b1ab1.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Cotypist graphic 'Type as fast as you can think' with an email draft where a grey suggestion completes the sentence", "credit": "Image: Cotypist via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/8637d2a1-b8d1-4ab7-abb1-5882add5121a.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Cotypist graphic 'Fly through your AI prompts' showing a suggested completion inside a ChatGPT prompt box", "credit": "Image: Cotypist via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "write a lot across many Mac apps and want suggestions without switching to an AI chat",
+        "care about privacy: the model runs on your Mac with no cloud calls, according to Cotypist",
+        "type slowly or with assistive tools: the developer said on Product Hunt that users with ALS and quadriplegia use it to communicate faster"
+      ],
+      "not_fit": [
+        "use Windows, Linux, an Intel Mac or mainly an iPhone: it is Apple Silicon Mac only",
+        "want an AI to draft whole emails or rewrite text: it completes what you are typing",
+        "rely on macOS's built-in autocorrect: an early user reported conflicts, which the developer acknowledged"
+      ]
+    },
+    "pricing": {
+      "intro": "Cotypist lists three plans on its own pricing page. Every new install starts with a 30-day Pro trial with no card required. The page we checked showed amounts without a currency symbol.",
+      "url": "https://cotypist.app/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Free", "price": "Free", "amount": 0, "detail": "Full suggestions for the first 100 completed words a day, then they fade out gradually"},
+        {"name": "Plus", "price": "6/month, billed annually as 72", "amount": 6, "detail": "Unlimited completions on one Mac, full autocorrect, configurable completion length, custom writing instructions"},
+        {"name": "Pro", "price": "9/month, billed annually as 108", "amount": 9, "detail": "Up to three Macs, the full model catalogue, per-app instructions, clipboard awareness, mid-line completion and early access to Labs features"}
+      ],
+      "notes": [
+        "Monthly billing is also offered; the site says annual billing saves 25%.",
+        "After the 30-day Pro trial you drop to the Free tier automatically and keep your settings."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. The dictation apps solve a different problem: they turn speech into text rather than predicting what you type. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Typeahead", "url": "https://typeahead.ai/", "what": "AI autocomplete for every app on your Mac", "starts_at": "14-day free trial, then $8/month ($96/year), or $149 once for a lifetime licence", "ph_rating": 4.83, "ph_reviews": 6,
+         "difference": "The closest like-for-like rival, with a one-off lifetime option. Cotypist has a permanent free tier and stresses on-device processing."},
+        {"name": "Caret", "url": "https://trycaret.com/", "what": "Press Tab for AI anywhere you type on Mac", "starts_at": "See its site", "ph_rating": 4.5, "ph_reviews": 2,
+         "difference": "Another Tab-to-accept Mac assistant; check its site for whether it runs locally."},
+        {"name": "Wispr Flow", "url": "https://wisprflow.ai/", "what": "Voice dictation and meeting notes", "starts_at": "Free plan; Pro $15/user/month", "ph_rating": 4.75, "ph_reviews": 81,
+         "difference": "You speak instead of type, on Mac, Windows, iOS and Android. Cotypist predicts typed text and is Mac-only."}
+      ],
+      "more": "Product Hunt also lists Fixkey (5.0 from 2 reviews) and the dictation app Typeless (4.91 from 11 reviews)."
+    },
+    "reviews": {"count": 5, "rating": 5, "url": "https://www.producthunt.com/products/cotypist/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/cotypist",
+      "quotes": [
+        {"author": "Richard Careaga", "text": "It was then over-eager in the same way that the usual auto-correct is, causing a lot of backspacing. That is now totally gone with the tab completion."},
+        {"author": "Ouriel Ohayon", "text": "One of the best desktop apps i tried for a while. i wish it was embedded in ios.",
+         "reply": "Daniel Gräfe: iOS keyboard extensions are very limited in what they can do."},
+        {"author": "Ryan Hudson-Peralta", "text": "I use Apple Voice Control to type most of the time due to my disability (born without hands)... I'll be over here hitting tab, saving time typing!"}
+      ],
+      "x": {"none": "We did not check X for this profile.", "profile_url": "https://twitter.com/cotypist", "search_url": "https://x.com/search?q=Cotypist&f=live"}
+    },
+    "faq": [
+      {"q": "What is Cotypist?", "a": "A Mac app that suggests your next words as you type in any app. Press Tab to accept a suggestion or keep typing to ignore it."},
+      {"q": "Does Cotypist send my text to the cloud?", "a": "No, according to Cotypist: it runs entirely on your Mac, with no cloud and no API calls."},
+      {"q": "Is Cotypist free?", "a": "Yes, for light use. The Free tier gives full suggestions for your first 100 completed words a day. Plus is 6 a month and Pro 9 a month, billed annually (pricing page, 14 October 2026). New installs get a 30-day Pro trial."},
+      {"q": "Which Macs does it run on?", "a": "Apple Silicon Macs only. The site invites Windows and Linux users to join a waitlist."},
+      {"q": "Does it work in ChatGPT and Claude?", "a": "Yes. Cotypist says it fills in the predictable parts of prompts in ChatGPT, Claude and coding agents."},
+      {"q": "How does Cotypist compare with Typeahead?", "a": "Both are Tab-to-accept autocomplete apps for Mac. Typeahead has a 14-day trial, then $8 a month or a $149 lifetime licence; Cotypist has a permanent free tier and paid Plus and Pro plans."},
+      {"q": "What do Product Hunt users rate it?", "a": "5 out of 5 from 5 reviews as of 14 October 2026."}
+    ],
+    "sources": [
+      {"label": "Cotypist official site", "url": "https://cotypist.app/"},
+      {"label": "Cotypist pricing", "url": "https://cotypist.app/pricing"},
+      {"label": "Cotypist imprint", "url": "https://cotypist.app/imprint"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/cotypist"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/cotypist-2"},
+      {"label": "Typeahead pricing", "url": "https://www.typeahead.ai/pricing"},
+      {"label": "Wispr Flow pricing", "url": "https://wisprflow.ai/pricing"}
+    ]
+  }
+}

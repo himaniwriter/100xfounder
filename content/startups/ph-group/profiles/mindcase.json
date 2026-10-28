@@ -1,0 +1,132 @@
+{
+  "slug": "mindcase",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/products/mindcase",
+  "excerpt": "Mindcase is a pay-per-result web data API for AI agents, from an Indian team in Noida. Pricing in rupees, alternatives and what people said at launch.",
+  "content": "<p>Mindcase sells web data as an API. Instead of writing and maintaining your own scrapers, you pick one of its ready-made \"APIs\" (the site lists 83, across sources such as LinkedIn, Google Maps, Amazon, Instagram, TikTok, YouTube, Reddit and X), send it your inputs, and get back structured records. It can be called from code, from its web console, or connected to an AI agent such as Claude Code through MCP. There is no CLI; a maker said on Product Hunt that each API has its own endpoint.</p><p>Billing is prepaid credits rather than a subscription: you pay per record collected, and credits do not expire. The company behind it is Mindcase Technologies Private Limited, registered in Noida, Uttar Pradesh. Co-founder Kritish Puri wrote on Product Hunt that the two founders are from IIM Ahmedabad.</p><p>Mindcase launched on Product Hunt on 21 August 2026 and finished #3 for the day, with 237 upvotes and 44 comments (as of 14 October 2026).</p><p><em>We have not tested Mindcase ourselves. This page brings together its official site, pricing and support pages and its Product Hunt page, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Web data API",
+    "platform": "API, web console and MCP server",
+    "starts_at": "Prepaid credits from ₹3,999",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Pay-per-result web data APIs for AI agents, covering LinkedIn, Google Maps, Amazon, social networks and more",
+    "maker": {"name": "Kritish Puri", "url": "https://www.producthunt.com/@kritishpuri"},
+    "team": [
+      {"name": "Kritish Puri", "role": "Co-founder", "url": "https://www.producthunt.com/@kritishpuri"},
+      {"name": "Saurabh Shubham", "role": "Co-founder", "url": "https://www.producthunt.com/@saurabh_shubham1"},
+      {"name": "Kanupriya Chhabra", "role": "Marketing", "url": "https://www.producthunt.com/@kanupriya_chhabra1"},
+      {"name": "Sanjay Khan", "role": "Maker", "url": "https://www.producthunt.com/@sanjay_khan_mindcase"}
+    ],
+    "ph": {"rank": 3, "votes": 237, "comments": 44, "followers": 547, "launched": "2026-08-21", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/b886c820-aede-49df-a749-a4e0c8b7ab94.png?auto=format&fit=max&w=1400", "w": 1536, "h": 1024, "credit": "Image: Mindcase via Product Hunt",
+       "alt": "Mindcase graphic 'stop scraping, start automating': sources such as LinkedIn, Google Maps and Amazon flow through Mindcase into structured JSON"},
+      {"url": "https://ph-files.imgix.net/637e44d2-f086-4383-a8d0-74aa7aabd24e.png?auto=format&fit=max&w=1400", "w": 1618, "h": 972, "credit": "Image: Mindcase via Product Hunt",
+       "alt": "Mindcase graphic 'any data, from any source, within minutes' with a grid of supported sources from Reddit to Shopify"},
+      {"url": "https://ph-files.imgix.net/181b79b9-f9fe-4893-a37f-6bf9ab492fab.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Mindcase via Product Hunt",
+       "alt": "Mindcase 'pay as you go' graphic with per-record prices for its LinkedIn, Google Maps, Meta Ads Library, TikTok and Instagram APIs"},
+      {"url": "https://ph-files.imgix.net/75652beb-24b1-4460-91a4-1483fbe1e840.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760, "credit": "Image: Mindcase via Product Hunt",
+       "alt": "Mindcase graphic comparing its own Reddit API price per 1,000 results with Bright Data and Apify, as claimed by Mindcase"}
+    ],
+    "use_cases": [
+      "Pulling company employee lists, profiles or posts from LinkedIn into a lead-generation pipeline",
+      "Collecting Google Maps places with ratings, hours and contact details",
+      "Tracking Amazon product prices, ratings and review counts by keyword or URL",
+      "Giving an AI agent such as Claude Code live web data through Mindcase's MCP server",
+      "Monitoring Reddit, X or Instagram posts for research or brand tracking"
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Co-founder Kritish Puri says the team did not set out to build a web data company. They needed reliable data for their own AI products, and found themselves spending more time fixing broken scrapers, blocked proxies and parsers than building the product.",
+        "Mindcase is the tool they wanted: one call in, structured data out, with collection, anti-bot handling, retries and parsing done on their side. At launch he highlighted 75+ ready-made agents, Python and Node.js SDKs, and prepaid pay-per-row pricing with no seats or minimums, and offered bonus credits for launch day."
+      ],
+      "attribution": "Kritish Puri, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/mindcase?comment=5788269"
+    },
+    "audience": {
+      "fit": [
+        "build AI agents or data pipelines that need data from sites with no official API",
+        "want to pay per record rather than a monthly subscription; credits never expire",
+        "are in India and want rupee pricing with a GST tax invoice"
+      ],
+      "not_fit": [
+        "only need data from platforms you own, like GA4 or Google Ads: a Mindcase maker told a commenter on Product Hunt to stay with an official-API connector for those",
+        "want a command-line tool: a maker said there is no CLI, only the API and MCP",
+        "need the same post fetched repeatedly at no extra cost: the team said a second call for a Reddit or X post counts as a new collection"
+      ]
+    },
+    "pricing": {
+      "intro": "Mindcase has no plans or seats. You buy prepaid credits, which never expire, and each API charges per record collected. Prices are in Indian rupees; GST is added at checkout.",
+      "url": "https://www.mindcase.co/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "₹3,999 top-up", "price": "₹3,999", "amount": 3999, "currency": "INR", "detail": "₹4,000 of usage"},
+        {"name": "₹9,999 top-up", "price": "₹9,999", "amount": 9999, "currency": "INR", "detail": "₹11,000 of usage (10% bonus)"},
+        {"name": "₹24,999 top-up", "price": "₹24,999", "amount": 24999, "currency": "INR", "detail": "₹30,000 of usage (20% bonus)"},
+        {"name": "₹1,00,000+ top-up", "price": "₹1,00,000+", "amount": 100000, "currency": "INR", "detail": "₹1,30,000+ of usage (30% bonus); above ₹5,00,000 the site asks you to talk to the team"}
+      ],
+      "notes": [
+        "Per-record prices shown on the pricing page include LinkedIn profiles from ₹0.40, Instagram profiles or posts ₹0.20, X tweets ₹0.025 and Reddit posts ₹0.50 per result.",
+        "There is no subscription and nothing auto-renews, according to Mindcase's support page.",
+        "The 100% bonus-credit offer mentioned on Product Hunt was for launch day only."
+      ]
+    },
+    "pros": [
+      "Pay only for records collected, with credits that never expire",
+      "One request format across sources, so switching sources is a small change",
+      "Works with AI agents through MCP as well as a REST API",
+      "Indian company with rupee pricing, GST invoices and a published support phone line and hours"
+    ],
+    "cons": [
+      "No CLI, according to a maker",
+      "Repeated calls for the same changing post are charged again",
+      "One reviewer on Product Hunt found the interface dated",
+      "Collecting data from platforms like LinkedIn may be limited by those platforms' own terms; check them for your use"
+    ],
+    "opinions": {
+      "themes": {
+        "liked": ["Prebuilt APIs without hunting through developer documentation", "One request format across very different sources"],
+        "asked": ["How it compares with Windsor.ai and Composio", "Whether fetching the same post twice in a day is charged twice (yes)", "Whether there is a CLI (no; API or MCP)"],
+        "criticised": ["The interface, which one reviewer called very 1990s Unix"]
+      },
+      "quotes": [
+        {"text": "Great product, UI could be friendlier, but I rather take robust over happy!", "author": "Andy Da Costa (4/5 review)", "url": "https://www.producthunt.com/products/mindcase/reviews?review=609815"},
+        {"text": "I myself connect a lot of APIs to my Claude Code. The problem it goes after is one most teams meet eventually.", "author": "Rohan Chaubey (hunter)", "url": "https://www.producthunt.com/products/mindcase?comment=5804478"}
+      ]
+    },
+    "alternatives": {
+      "intro": "These are the products Product Hunt lists as Mindcase alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Apify", "url": "https://apify.com/", "what": "Marketplace of ready-made scrapers and automation tools", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 12, "ph_url": "https://www.producthunt.com/products/apify",
+         "difference": "A large marketplace of community-built scrapers; Mindcase offers a smaller, curated set behind one request format, priced in rupees."},
+        {"name": "Firecrawl", "url": "https://www.firecrawl.dev/", "what": "Web data API that turns websites into LLM-ready data", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 17, "ph_url": "https://www.producthunt.com/products/extract-by-firecrawl",
+         "difference": "Crawls and converts any page; Mindcase focuses on source-specific APIs that return fixed fields such as a profile or product."},
+        {"name": "PhantomBuster", "url": "https://phantombuster.com/", "what": "Automations for lead generation from LinkedIn and other sites", "starts_at": "See its pricing page", "ph_rating": 4.79, "ph_reviews": 28, "ph_url": "https://www.producthunt.com/products/phantombuster",
+         "difference": "Aimed at sales teams and sold by subscription; Mindcase is pay-per-record and aimed at developers and AI agents."}
+      ],
+      "more": "Product Hunt also lists Browser Use and Databar.ai as alternatives."
+    },
+    "reviews": {"count": 1, "rating": 4, "url": "https://www.producthunt.com/products/mindcase/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/mindcase",
+      "x": {"none": "We found no posts about Mindcase on X to link yet.", "search_url": "https://x.com/search?q=mindcase.co&f=live"}
+    },
+    "faq": [
+      {"q": "What is Mindcase?", "a": "A web data API: you choose a ready-made API for a source such as LinkedIn, Google Maps or Amazon, send inputs, and get structured records back. It is made by Mindcase Technologies Private Limited in Noida, India."},
+      {"q": "How much does Mindcase cost?", "a": "There are no plans or seats. You buy prepaid credits starting at ₹3,999 (larger top-ups add a 10–30% bonus) and each API charges per record, for example ₹0.20 per Instagram profile. GST is added at checkout and credits never expire."},
+      {"q": "Does Mindcase have a CLI?", "a": "No. A maker said on Product Hunt that you use it through the API, with a separate endpoint per source, or through its MCP server."},
+      {"q": "Am I charged again if I fetch the same post twice?", "a": "Yes. The team said on Product Hunt that Reddit and X posts change, so a second call is treated as a new collection."},
+      {"q": "Should I use Mindcase for GA4 or Google Ads data?", "a": "A Mindcase maker advised against it on Product Hunt: for platforms you own with an official API, a connector like Windsor.ai fits better. Mindcase is for web sources with no such API."},
+      {"q": "What are the alternatives to Mindcase?", "a": "Product Hunt lists Apify, Firecrawl, PhantomBuster, Browser Use and Databar.ai."}
+    ],
+    "sources": [
+      {"label": "Mindcase official site", "url": "https://www.mindcase.co/"},
+      {"label": "Mindcase pricing", "url": "https://www.mindcase.co/pricing"},
+      {"label": "Mindcase support page (company details)", "url": "https://www.mindcase.co/support"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/mindcase"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/mindcase/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/mindcase/alternatives"}
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "type": "post",
+  "slug": "lambda-4b-raise-ahead-of-ipo",
+  "title": "Lambda seeks up to $4B at a $14.5B valuation ahead of 2027 IPO",
+  "excerpt": "Nvidia-backed Lambda is reportedly raising up to $4B led by Coatue and Blackstone. How a $50B backlog and cheap GPU-backed debt fund the AI compute boom.",
+  "category": "funding",
+  "tags": [
+    "Lambda",
+    "AI cloud",
+    "neocloud",
+    "Coatue",
+    "Blackstone",
+    "Anthropic",
+    "Nvidia",
+    "IPO"
+  ],
+  "content": "<p>Lambda, the Nvidia-backed company that rents out AI computing power, is raising up to $4 billion at a $14.5 billion pre-money valuation, <a href=\"https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/\">TechCrunch reported</a> on 6 October 2026, citing The Wall Street Journal. Coatue Management and Blackstone are leading the round, which is expected to be Lambda's last as a private company before a stock market listing planned for 2027.</p>\n<p>The figures are reported, not confirmed. Lambda has not announced the round. But the numbers fit with what the company has disclosed this year: a much larger order book, a $35 billion contract with Anthropic, and a new reliance on cheaper, bond-like debt. Together they show how money for AI computing now gets raised.</p>\n<h2>Key takeaways</h2>\n<ul>\n<li>Lambda is reportedly raising up to $4 billion at $14.5 billion before the new money. If the full amount comes in, the post-money valuation would be about $18.5 billion.</li>\n<li>Its contracted backlog rose from $15 billion in June to $50 billion in September 2026, according to TechCrunch. Most of the jump came from a reported $35 billion Anthropic deal.</li>\n<li>On 1 October Lambda closed a $1.008 billion investment-grade loan at a 6.78% fixed rate. The loan is secured by its GPUs and customer contracts.</li>\n<li>The listing has been pushed from 2026 to 2027 because of market uncertainty, TechCrunch reported.</li>\n</ul>\n<h2>What Lambda is raising, and from whom</h2>\n<p>According to TechCrunch, the round is worth up to $4 billion at a $14.5 billion pre-money valuation. \"Pre-money\" means the value before the new cash is added. Coatue and Blackstone are leading. <a href=\"https://www.pymnts.com/news/investment-tracker/2026/lambda-targets-14-5-billion-valuation-in-final-pre-ipo-round/\">PYMNTS</a>, also citing the Journal, called it Lambda's final round before an IPO. It said a listing in 2027 depends on how the company performs and on market conditions.</p>\n<p>The valuation has climbed fast. In February 2025 Lambda raised a $480 million Series D at about $2.5 billion, <a href=\"https://www.verdict.co.uk/lambda-raises-480m-funds/\">Verdict reported</a>. Andra Capital and SGW co-led that round, and Nvidia joined it. In November 2025 Lambda <a href=\"https://lambda.ai/blog/lambda-raises-over-1.5b-from-twg-global-usit-to-build-superintelligence-cloud-infrastructure\">announced</a> a Series E of more than $1.5 billion from TWG Global and the US Innovative Technology Fund (USIT). PYMNTS reported that round valued the company at $5.9 billion after the money came in.</p>\n<table>\n<thead><tr><th>Date</th><th>Round</th><th>Amount</th><th>Valuation</th></tr></thead>\n<tbody>\n<tr><td>February 2025</td><td>Series D</td><td>$480 million</td><td>About $2.5 billion (Verdict)</td></tr>\n<tr><td>November 2025</td><td>Series E</td><td>More than $1.5 billion</td><td>$5.9 billion post-money (PYMNTS)</td></tr>\n<tr><td>October 2026 (reported)</td><td>Pre-IPO round</td><td>Up to $4 billion</td><td>$14.5 billion pre-money (TechCrunch, WSJ)</td></tr>\n</tbody>\n</table>\n<p>That is close to six times the February 2025 price in about 20 months. The leadership has changed too. In May 2026 Lambda hired Michel Combes, a former chief executive of Sprint, as CEO, <a href=\"https://news.bgov.com/esg/ai-cloud-provider-lambda-taps-former-sprint-ceo-as-new-leader\">Bloomberg reported</a>. Co-founder Stephen Balaban moved to chief technology officer, and former AT&amp;T executive John Donovan became board chairman. Hiring an experienced public-company CEO is a usual step before an IPO.</p>\n<!-- xf-image-2 -->\n<h2>Why the backlog matters more than the valuation</h2>\n<p>Lambda was founded in 2012 by machine learning engineers, and it says it serves tens of thousands of customers. Its business is buying Nvidia graphics processors (GPUs) in bulk, putting them in data centres and renting the computing time to AI labs, large companies and other cloud providers. Companies that do this, without also running a general-purpose cloud the way Amazon, Microsoft and Google do, are now called \"neoclouds\".</p>\n<p>For a neocloud, the key number is backlog: revenue customers have signed contracts to pay in future. TechCrunch reported that Lambda's backlog rose from $15 billion in June 2026 to $50 billion in September. A $35 billion commitment from Anthropic, signed in late August, drove much of that rise. On those figures the backlog is more than three times the reported pre-money valuation. That contracted revenue is a big part of why investors will pay this price.</p>\n<p>The Anthropic deal was first reported by the Journal on 31 August. Lambda and Anthropic did not confirm it, <a href=\"https://thenextweb.com/news/anthropic-lambda-35bn-cloud-deal\">The Next Web</a> noted, but Reuters said a source confirmed it. According to the <a href=\"https://www.thestar.com.my/tech/tech-news/2026/09/01/anthropic-signs-35-billion-cloud-deal-with-nvidia-backed-lambda-source-says\">Reuters report</a>, the computing will come from a data centre of about 350 megawatts in Nueces County, Texas, being built by Hut 8, a former bitcoin miner. Nvidia leases the site and supplies the chips, and Lambda sells the computing on to Anthropic. Lambda also has a multibillion-dollar agreement, <a href=\"https://www.techcrunch.com/2025/11/03/lambda-inks-multi-billion-dollar-ai-infrastructure-deal-with-microsoft\">announced in November 2025</a>, to deploy tens of thousands of Nvidia GPUs for Microsoft.</p>\n<!-- xf-image-3 -->\n<h2>The financing model: equity on top, cheap debt underneath</h2>\n<p>The bigger story is how this capital is put together. Data centres full of GPUs cost far more than any equity round can pay for, so neoclouds borrow against the hardware and the contracts. Lambda's latest debt deal shows how far that has gone.</p>\n<p>On 1 October 2026 Lambda <a href=\"https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-fixed-rate-financing\">closed</a> a $1.008 billion delayed-draw term loan at a 6.78% fixed interest rate. Morningstar DBRS rated it A (low) and Moody's rated it Baa1, both investment grade. J.P. Morgan arranged it. The money pays for GPU infrastructure for three committed customer deployments with two investment-grade customers. The loan is secured by the GPU servers, related equipment and the contracted customer cash flows, and is repaid in full by May 2033. \"Delayed-draw\" means Lambda takes the cash in stages as each cluster is commissioned.</p>\n<p>CEO Michel Combes said the capital underwrites infrastructure \"in decades, not quarters\". Simply put, insurers and bond investors are now lending against AI computing contracts much as they lend against a toll road or a power plant. A year earlier, in August 2025, Lambda's credit facility was $275 million, according to PYMNTS.</p>\n<p>The equity round sits on top of this debt. It is the riskiest money and it gets the most upside. It pays for the parts lenders won't fund, such as land, power deals, early construction and the gap before a customer starts paying. PYMNTS reported that Lambda is moving towards building and owning its own data centres instead of renting space from larger operators, and that needs much more of this first-loss capital.</p>\n<h2>Where Lambda sits among the neoclouds</h2>\n<p>The nearest comparison is CoreWeave, which publishes quarterly results. In the quarter to 30 June 2026 it reported revenue of $2.58 billion, up from $1.21 billion a year earlier, and a net loss of $626 million, <a href=\"https://pulse2.com/coreweave-revenue-backlog-reaches-104-billion-before-another-25-billion-of-new-commitments/\">Pulse 2.0 reported</a>. Its backlog was $104 billion, before more than $25 billion of new commitments signed after the quarter. It had about 1.5 gigawatts of active power and about 3.7 gigawatts under contract.</p>\n<p>Nebius reported second-quarter 2026 revenue of $582.3 million, up 454% year on year. Its capital spending in the quarter was $5.66 billion, according to <a href=\"https://www.storagenewsletter.com/?p=304756\">StorageNewsletter</a>. Both companies are growing very fast and spending far more than they earn on new capacity. Investors will judge Lambda's IPO against both.</p>\n<!-- xf-image-4 -->\n<p>Private money is pouring into the same layer. <a href=\"https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/\">Crunchbase News</a> counted $159 billion of global venture funding in July–September 2026, with AI companies taking $102 billion (64%). A record 27 companies raised rounds of $1 billion or more. Data-centre builders Crusoe and Nscale each raised more than $3 billion. A $4 billion round would put Lambda in that top group of AI infrastructure raises.</p>\n<h2>The risks investors are pricing</h2>\n<p><strong>Customer concentration.</strong> If the reported Anthropic contract is right, one customer accounts for most of the backlog. That is valuable while the customer keeps growing, but it is a single point of failure. Anthropic has signed other large computing deals too. The Next Web listed a reported $45 billion commitment with Nscale and a deal with Amazon Web Services worth more than $100 billion over ten years.</p>\n<p><strong>Supplier dependence.</strong> Nvidia invests in Lambda, sells it chips, and in the Texas deal also leases the data centre. That ties Lambda closely to one company's product cycle and pricing.</p>\n<p><strong>Timing.</strong> TechCrunch reported the IPO was first aimed at 2026 and slipped to 2027 because of market uncertainty. Lambda's debt is rated investment grade because the contracts are long and the customers are strong. The equity carries the risk that AI demand, chip prices or interest rates change before the hardware has paid for itself.</p>\n<!-- xf-image-5 -->\n<h2>Why it matters</h2>\n<p>Lambda's round shows that AI computing is being financed like infrastructure. Long contracts with AI labs come first. Then come investment-grade loans secured by the GPUs and those contracts. A large equity round sits on top to cover what lenders won't. For founders, the lesson is that the cost of computing is now set by capital markets as much as by chipmakers. For Indian readers, the same model is likely to shape how data-centre capacity is financed at home. We track rounds like this on our <a href=\"/funding-tracker/\">funding tracker</a>, and AI infrastructure roles are listed on our <a href=\"/jobs/ai-ml-jobs/\">AI and ML jobs board</a>.</p>\n<h2>Frequently asked questions</h2>\n<h3>How much is Lambda raising, and at what valuation?</h3>\n<p>Up to $4 billion at a $14.5 billion pre-money valuation, led by Coatue and Blackstone, according to TechCrunch and PYMNTS, both citing The Wall Street Journal. Lambda had not confirmed the round when this was published.</p>\n<h3>When will Lambda go public?</h3>\n<p>Lambda is aiming for an IPO in 2027, depending on how the business performs and on market conditions. TechCrunch reported the plan was moved from 2026.</p>\n<h3>What does Lambda do?</h3>\n<p>It runs Nvidia GPU clusters in data centres and rents the computing power to AI labs, enterprises and cloud providers for training and running AI models. It was founded in 2012.</p>\n<h3>What is a neocloud?</h3>\n<p>A cloud provider that specialises in renting GPU computing for AI, rather than offering the full range of services of Amazon Web Services, Microsoft Azure or Google Cloud. CoreWeave, Nebius and Lambda are examples.</p>\n<h3>Is Anthropic Lambda's biggest customer?</h3>\n<p>On reported figures, yes. A $35 billion Anthropic commitment, first reported by The Wall Street Journal and confirmed by a Reuters source, accounts for most of Lambda's $50 billion backlog. Neither company has confirmed the deal.</p>\n<h2>Sources</h2>\n<ol>\n<li>TechCrunch, \"AI computing startup Lambda to raise $4B ahead of planned IPO\", 6 October 2026. <a href=\"https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/\">Link</a></li>\n<li>PYMNTS, \"Lambda Targets $14.5 Billion Valuation in Final Pre-IPO Round\", 6 October 2026. <a href=\"https://www.pymnts.com/news/investment-tracker/2026/lambda-targets-14-5-billion-valuation-in-final-pre-ipo-round/\">Link</a></li>\n<li>Lambda, \"Lambda closes $1 billion senior secured fixed rate financing\", 1 October 2026. <a href=\"https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-fixed-rate-financing\">Link</a></li>\n<li>Lambda, \"Lambda Raises Over $1.5B from TWG Global, USIT to Build Superintelligence Cloud Infrastructure\", 18 November 2025. <a href=\"https://lambda.ai/blog/lambda-raises-over-1.5b-from-twg-global-usit-to-build-superintelligence-cloud-infrastructure\">Link</a></li>\n<li>Verdict, \"Lambda raises $480m funds\", 20 February 2025. <a href=\"https://www.verdict.co.uk/lambda-raises-480m-funds/\">Link</a></li>\n<li>Bloomberg (via Bloomberg Government), \"AI Cloud Provider Lambda Taps Former Sprint CEO as New Leader\", 5 May 2026. <a href=\"https://news.bgov.com/esg/ai-cloud-provider-lambda-taps-former-sprint-ceo-as-new-leader\">Link</a></li>\n<li>The Next Web, \"Anthropic has signed a $35bn cloud deal with Nvidia-backed Lambda\", 1 September 2026. <a href=\"https://thenextweb.com/news/anthropic-lambda-35bn-cloud-deal\">Link</a></li>\n<li>Reuters via The Star, \"Anthropic signs $35 billion cloud deal with Nvidia-backed Lambda, source says\", 1 September 2026. <a href=\"https://www.thestar.com.my/tech/tech-news/2026/09/01/anthropic-signs-35-billion-cloud-deal-with-nvidia-backed-lambda-source-says\">Link</a></li>\n<li>TechCrunch, \"Lambda inks multibillion-dollar AI infrastructure deal with Microsoft\", 3 November 2025. <a href=\"https://www.techcrunch.com/2025/11/03/lambda-inks-multi-billion-dollar-ai-infrastructure-deal-with-microsoft\">Link</a></li>\n<li>Pulse 2.0, \"CoreWeave: Revenue Backlog Reaches $104 Billion Before Another $25 Billion Of New Commitments\", 12 August 2026. <a href=\"https://pulse2.com/coreweave-revenue-backlog-reaches-104-billion-before-another-25-billion-of-new-commitments/\">Link</a></li>\n<li>StorageNewsletter, \"Nebius: Fiscal 2Q26 Financial Results\", 20 August 2026. <a href=\"https://www.storagenewsletter.com/?p=304756\">Link</a></li>\n<li>Crunchbase News, \"Crunchbase Data: Q3 2026 Posted A Record Count Of Billion-Dollar Rounds As The Global AI Race Heats Up\", 5 October 2026. <a href=\"https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/\">Link</a></li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1920px-BalticServers_data_center.jpg",
+      "alt": "Rows of server racks with blue lighting inside a data centre",
+      "caption": "Neoclouds such as Lambda fill data centres with GPU servers and rent the computing power to AI labs.",
+      "credit": "Photo: BalticServers.com / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/NVIDIA_Headquarters.jpg/1920px-NVIDIA_Headquarters.jpg",
+      "alt": "The angular glass-and-steel Nvidia headquarters building in Santa Clara, California",
+      "caption": "Nvidia, headquartered in Santa Clara, is both an investor in Lambda and the supplier of its GPUs.",
+      "credit": "Photo: Coolcaesar / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:NVIDIA_Headquarters.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._%2854098999333%29.jpg/1920px-Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._%2854098999333%29.jpg",
+      "alt": "UK Secretary of State Peter Kyle during a visit to Anthropic's office in San Francisco in October 2024",
+      "caption": "Anthropic's office in San Francisco, pictured during a 2024 visit by a UK minister. A reported $35 billion Anthropic contract drives most of Lambda's backlog.",
+      "credit": "Photo: Alecsandra Dragoi, Department for Science, Innovation and Technology / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._(54098999333).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Google_Data_Center%2C_The_Dalles.jpg/1920px-Google_Data_Center%2C_The_Dalles.jpg",
+      "alt": "Exterior of a large data centre complex with cooling towers in The Dalles, Oregon",
+      "caption": "A hyperscale data centre in The Dalles, Oregon. Neoclouds now compete for power and sites at gigawatt scale.",
+      "credit": "Photo: Visitor7 / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Google_Data_Center,_The_Dalles.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/New_York_Stock_Exchange_Broad_Street_facade%2C_20231002_1720_1842.jpg/1920px-New_York_Stock_Exchange_Broad_Street_facade%2C_20231002_1720_1842.jpg",
+      "alt": "The columned Broad Street facade of the New York Stock Exchange",
+      "caption": "Lambda is aiming for a stock market listing in 2027, depending on market conditions.",
+      "credit": "Photo: Jakub Hałun / Wikimedia Commons, CC BY 4.0",
+      "license": "CC BY 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:New_York_Stock_Exchange_Broad_Street_facade,_20231002_1720_1842.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/",
+      "publisher": "TechCrunch",
+      "date": "2026-10-06",
+      "claim": "Up to $4B at $14.5B pre-money, Coatue and Blackstone lead, IPO 2027 (moved from 2026), backlog $15B June to $50B Sept, $35B Anthropic commitment, WSJ first reported"
+    },
+    {
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/lambda-targets-14-5-billion-valuation-in-final-pre-ipo-round/",
+      "publisher": "PYMNTS",
+      "date": "2026-10-06",
+      "claim": "Final pre-IPO round, Nov 2025 round valued Lambda at $5.9B post-money, Aug 2025 $275M credit facility, shift to owning data centres"
+    },
+    {
+      "url": "https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-fixed-rate-financing",
+      "publisher": "Lambda",
+      "date": "2026-10-01",
+      "claim": "$1.008B delayed-draw term loan, 6.78% fixed, A (low) DBRS / Baa1 Moody's, J.P. Morgan, three deployments with two investment-grade offtakers, May 2033 maturity, security, Combes quote, founded 2012, tens of thousands of customers"
+    },
+    {
+      "url": "https://lambda.ai/blog/lambda-raises-over-1.5b-from-twg-global-usit-to-build-superintelligence-cloud-infrastructure",
+      "publisher": "Lambda",
+      "date": "2025-11-18",
+      "claim": "Series E over $1.5B from TWG Global and USIT"
+    },
+    {
+      "url": "https://www.verdict.co.uk/lambda-raises-480m-funds/",
+      "publisher": "Verdict",
+      "date": "2025-02-20",
+      "claim": "$480M Series D at about $2.5B, Andra Capital and SGW co-led, Nvidia participated"
+    },
+    {
+      "url": "https://news.bgov.com/esg/ai-cloud-provider-lambda-taps-former-sprint-ceo-as-new-leader",
+      "publisher": "Bloomberg",
+      "date": "2026-05-05",
+      "claim": "Michel Combes CEO, Stephen Balaban to CTO, John Donovan chairman"
+    },
+    {
+      "url": "https://thenextweb.com/news/anthropic-lambda-35bn-cloud-deal",
+      "publisher": "The Next Web",
+      "date": "2026-09-01",
+      "claim": "$35B Anthropic deal reported by WSJ, unconfirmed by parties, Nvidia roles, Anthropic's Nscale $45B and AWS $100B+ deals"
+    },
+    {
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/09/01/anthropic-signs-35-billion-cloud-deal-with-nvidia-backed-lambda-source-says",
+      "publisher": "Reuters (via The Star)",
+      "date": "2026-09-01",
+      "claim": "Reuters source confirmation, ~350 MW Nueces County Texas site, Hut 8 developer, Nvidia lease"
+    },
+    {
+      "url": "https://www.techcrunch.com/2025/11/03/lambda-inks-multi-billion-dollar-ai-infrastructure-deal-with-microsoft",
+      "publisher": "TechCrunch",
+      "date": "2025-11-03",
+      "claim": "Multibillion-dollar Microsoft deal for tens of thousands of Nvidia GPUs"
+    },
+    {
+      "url": "https://pulse2.com/coreweave-revenue-backlog-reaches-104-billion-before-another-25-billion-of-new-commitments/",
+      "publisher": "Pulse 2.0",
+      "date": "2026-08-12",
+      "claim": "CoreWeave Q2 2026 revenue $2.58B vs $1.21B, net loss $626M, backlog $104B, $25B+ new commitments, 1.5 GW active, 3.7 GW contracted"
+    },
+    {
+      "url": "https://www.storagenewsletter.com/?p=304756",
+      "publisher": "StorageNewsletter",
+      "date": "2026-08-20",
+      "claim": "Nebius Q2 2026 revenue $582.3M (+454%), capex $5.66B"
+    },
+    {
+      "url": "https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/",
+      "publisher": "Crunchbase News",
+      "date": "2026-10-05",
+      "claim": "Q3 2026 $159B global VC, AI $102B (64%), 27 $1B+ rounds, Crusoe and Nscale >$3B"
+    }
+  ]
+}

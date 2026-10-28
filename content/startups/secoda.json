@@ -1,0 +1,155 @@
+{
+ "slug": "secoda",
+ "website": "https://www.secoda.co/",
+ "excerpt": "Secoda is an AI-powered data catalog, lineage and governance platform for data teams. Plans, funding and alternatives.",
+ "content": "<p>Secoda is a data catalog and governance tool. Companies with a data warehouse and many dashboards use it so people can find the right table or metric, see where data comes from (lineage), check its quality and know who owns it. Its site now calls it the AI platform for data and analytics, and describes data cataloguing, lineage, observability and quality enriched with business context. An AI assistant lets people ask questions about company data in plain language.</p><p>Secoda was cofounded by Etai Mizrahi, its chief executive, and Andrew McEwen, and is backed by Y Combinator, among others. In September 2023 TechCrunch reported a $14 million round led by Craft Ventures, with Abstract Ventures and angel investors, which took its total funding to $16 million; BetaKit described it as a CAD 19 million Series A. Mizrahi said the money would go into engineering and research, and BetaKit reported that the company had shifted its product after the rise of large language models from a 'Google for data' search tool towards an AI copilot for data management.</p><p>Secoda's pricing page lists three plans without prices. Core includes column- and table-level lineage, the full data catalog, automations, API access, workspace analytics, SAML single sign-on and role-based access. Premium adds a Data Quality Score, guest accounts, policies, single-tenant deployment, PII scanning and VPC peering. Enterprise adds custom roles, self-hosted deployment, a dedicated account manager, access request management, SIEM logging and unlimited integrations. All plans route to the sales team.</p><p>Secoda suits data teams at growing companies that use a modern data stack (Snowflake, BigQuery, dbt, Looker and similar) and want a lighter catalog than the large enterprise options.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Data catalog and governance",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Data catalog, lineage, observability and AI search for analytics teams",
+  "maker": {
+   "name": "Secoda",
+   "url": "https://www.secoda.co/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/61ddd0b42c51f86c96e1e90e/683a14fafd2295179b0ab954_Open%20graph%20image.jpg",
+    "alt": "Secoda banner reading 'Governed AI for analytics' beside a chat window answering a question with a monthly bar chart",
+    "credit": "Image: Secoda (secoda.co)",
+    "w": 2400,
+    "h": 1260
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/61ddd0b42c51f86c96e1e90e/66db031b916ab10345c6efc5_secoda-icon%201.png",
+    "alt": "Secoda icon: a white looped S-shaped mark on a coral rounded square",
+    "credit": "Image: Secoda (secoda.co)",
+    "w": 256,
+    "h": 256
+   }
+  ],
+  "use_cases": [
+   "Documenting tables, metrics and dashboards in one catalog",
+   "Tracing column-level lineage from source to dashboard",
+   "Monitoring data quality",
+   "Letting business users ask data questions in plain language",
+   "Managing data access requests and PII"
+  ],
+  "audience": {
+   "fit": [
+    "run a data team on a modern cloud data stack",
+    "struggle with people not finding or trusting data",
+    "need governance features such as PII scanning and access policies"
+   ],
+   "not_fit": [
+    "have a handful of tables and no data team",
+    "want published self-serve pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "Secoda's pricing page lists Core, Premium and Enterprise plans but no prices; each links to the sales team.",
+   "plans": [
+    {
+     "name": "Core",
+     "price": "Contact sales",
+     "detail": "Catalog, lineage, automations, API, SAML, RBAC"
+    },
+    {
+     "name": "Premium",
+     "price": "Contact sales",
+     "detail": "Adds Data Quality Score, policies, PII scanning, single-tenant"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Contact sales",
+     "detail": "Adds self-hosting, custom roles, SIEM logging, unlimited integrations"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.secoda.co/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Catalog, lineage, quality and AI search in one tool",
+   "Built for the modern data stack",
+   "Self-hosting option on Enterprise"
+  ],
+  "cons": [
+   "No public prices",
+   "Smaller vendor than the enterprise catalog leaders"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Atlan",
+     "url": "https://atlan.com/",
+     "what": "Active metadata and data catalog platform",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Larger, enterprise-focused catalog."
+    },
+    {
+     "name": "Alation",
+     "url": "https://www.alation.com/",
+     "what": "Enterprise data catalog",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Long-established enterprise vendor."
+    },
+    {
+     "name": "DataHub",
+     "url": "https://datahubproject.io/",
+     "what": "Open-source metadata platform",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Free to self-host; managed version from Acryl."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Secoda?",
+    "a": "An AI-powered data catalog with lineage, quality monitoring and governance for analytics teams."
+   },
+   {
+    "q": "How much does Secoda cost?",
+    "a": "It does not publish prices; its Core, Premium and Enterprise plans all go through sales."
+   },
+   {
+    "q": "How much funding has Secoda raised?",
+    "a": "TechCrunch reported $16 million in total after a $14 million round led by Craft Ventures in September 2023."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Secoda pricing",
+    "url": "https://www.secoda.co/pricing"
+   },
+   {
+    "label": "TechCrunch: Secoda secures $16M to expand its data cataloging platform (21 Sept 2023)",
+    "url": "https://techcrunch.com/2023/09/21/secoda-secures-16m-to-expand-its-data-cataloging-platform/"
+   },
+   {
+    "label": "BetaKit: Secoda closes $19-million CAD Series A",
+    "url": "https://betakit.com/secoda-closes-19-million-cad-series-a-to-scale-its-data-management-ai-copilot/"
+   },
+   {
+    "label": "Secoda official site",
+    "url": "https://www.secoda.co/"
+   }
+  ],
+  "team": [
+   {
+    "name": "Etai Mizrahi",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Andrew McEwen",
+    "role": "Cofounder"
+   }
+  ]
+ }
+}

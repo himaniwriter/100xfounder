@@ -1,0 +1,219 @@
+{
+ "slug": "gboard-kurukuru-version",
+ "excerpt": "Gboard Kurukuru Version is Google Japan's conveyor-belt keyboard: 116 keys on four moving belts. Not for sale; build files are free on GitHub.",
+ "content": "<p>Gboard Kurukuru Version is a keyboard whose keys move instead of your hands. Four conveyor belts each carry 29 keys, 116 in all, and roll them past your fingers, so you wait for the character you want and press it as it arrives. Upper and lower case letters are both on the belts, which means one hand can type everything and the other stays free for a mouse or, as Google Japan puts it, a cup of tea. Kurukuru is Japanese for going round and round; the GitHub repository calls it the Gboard Conveyor Belt Version.</p><p>It is the 15th of the joke-but-buildable keyboards that Google Japan's Gboard team releases every 1 October, following earlier ones such as the Yunomi (teacup) version in 2021, the Bar version in 2022 and the Dial version in 2025. It is not for sale and the repository says it is not an official Google product. Instead, Google published 3D-printable STL files, KiCad board files, firmware and a build guide in the google/mozc-devices repository under the Apache 2.0 licence. The guide covers a motorised Moving Keys Edition built from 157 printed parts, an N20 gear motor, an ATOMS3 Lite controller and 116 Kailh Choc low-profile switches with blank keycaps; a Bluetooth edition that works as a keyboard is listed as coming soon.</p><p>The launch was posted on Product Hunt under Google's product page by hunter Zac Zuo on 11 October 2026, and finished #10 for the day with 95 upvotes.</p><p><em>We have not built or tested the Kurukuru Version ourselves. This page brings together Google Japan's announcement, the official GitHub repository and build guide, and the Product Hunt launch, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "DIY hardware keyboard",
+  "platform": "DIY build (3D-printed, open-source files)",
+  "starts_at": "Not for sale; build files free on GitHub",
+  "schema_category": "ComputerHardware",
+  "summary_short": "Google Japan's open-source conveyor-belt keyboard that brings the keys to your fingers",
+  "maker": {
+   "name": "Google Japan Gboard team",
+   "url": "https://blog.google/intl/ja-jp/products/android-chrome-play/gboard-2026/"
+  },
+  "team": [
+   {
+    "name": "Zac Zuo",
+    "role": "Hunter on Product Hunt",
+    "url": "https://www.producthunt.com/@zaczuo"
+   }
+  ],
+  "ph": {
+   "rank": 10,
+   "votes": 95,
+   "comments": 5,
+   "launched": "2026-10-11",
+   "as_of": "2026-10-15"
+  },
+  "video_url": "https://www.youtube.com/watch?v=DAn34l_YrUM",
+  "video_title": "Gboard くるくるバージョン (Google Japan)",
+  "use_cases": [
+   "Building an unusual keyboard as a 3D-printing and electronics weekend project",
+   "Studying a working conveyor and sprocket mechanism with published STL and KiCad files",
+   "Teaching or demonstrating motor control with open firmware",
+   "Showing off a conversation piece on a desk",
+   "Exploring one-handed input ideas"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Zac Zuo, who posted the launch on Product Hunt, described the Kurukuru Version as the latest in Google Japan's yearly run of deliberately odd keyboards, the 15th after a one-key Morse keyboard, a teacup, a rotary phone and a hat.",
+    "He explained the name as the Japanese sound of something going round and round, which is what the keys do: four belts of 29 keys bring each letter to your fingers, and one hand is enough. He pointed builders to the guide for the 3D-printed frame, N20 motor and Choc low-profile switches, with board files and firmware in the same repository, and noted that the keycaps in the parts list are blank, so the legends are up to you."
+   ],
+   "attribution": "Zac Zuo, hunter, on Product Hunt",
+   "url": "https://www.producthunt.com/products/google?comment=5938679"
+  },
+  "audience": {
+   "fit": [
+    "own a 3D printer and enjoy keyboard or electronics builds",
+    "collect odd hardware or follow Google Japan's yearly keyboard series",
+    "want open-source mechanical design files to learn from"
+   ],
+   "not_fit": [
+    "want a keyboard to buy: it is not sold",
+    "need fast, practical typing: you wait for each key to come round",
+    "want a working Bluetooth keyboard today: that edition is listed as coming soon"
+   ]
+  },
+  "pricing": {
+   "intro": "Google does not sell the Kurukuru Version. The design files, firmware and build guide are free on GitHub under the Apache 2.0 licence; builders pay only for their own parts and printing.",
+   "url": "https://github.com/google/mozc-devices/tree/master/mozc-conveyorbelt",
+   "checked": "2026-10-15",
+   "plans": [],
+   "notes": [
+    "The build guide lists 157 3D-printed parts, an N20 6V gear motor, a DRV8833 motor driver, an ATOMS3 Lite controller and 116 Kailh Choc V1 switches and keycaps.",
+    "The board documentation and the Bluetooth Connection Edition are marked as coming soon in the guide."
+   ]
+  },
+  "alternatives": {
+   "intro": "Nothing else on sale works like this. The nearest options are Google's own Gboard app and the earlier keyboards in the same open-source series, all from Google's official pages.",
+   "items": [
+    {
+     "name": "Gboard (app)",
+     "url": "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin",
+     "what": "Google's on-screen keyboard app for Android and iPhone",
+     "tags": [
+      "Mobile keyboard",
+      "Voice typing",
+      "Translation"
+     ],
+     "starts_at": "Free",
+     "difference": "The everyday keyboard the series is named after, with voice input and translation; the repository points readers who prefer moving their hands to it."
+    },
+    {
+     "name": "Gboard Dial Version",
+     "url": "https://github.com/google/mozc-devices/tree/master/mozc-dial",
+     "what": "Google Japan's 2025 DIY keyboard that you type on by turning a dial",
+     "tags": [
+      "DIY keyboard",
+      "Open source"
+     ],
+     "starts_at": "Not for sale; build files free on GitHub",
+     "difference": "Last year's entry: rotary input like an old telephone instead of moving belts."
+    },
+    {
+     "name": "Gboard Bar Version",
+     "url": "https://github.com/google/mozc-devices/tree/master/mozc-bar",
+     "what": "Google Japan's 2022 DIY keyboard, built with 101 Cherry MX-style keys",
+     "tags": [
+      "DIY keyboard",
+      "Open source"
+     ],
+     "starts_at": "Not for sale; build files free on GitHub",
+     "difference": "A static build with no motor or moving belts, using 101 Cherry MX-style switches."
+    }
+   ],
+   "more": "The same repository also holds the Yunomi (teacup), Caps, Double-sided, Furikku, Mageru, Nazoru and Piropiro versions."
+  },
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/google?launch=gboard-kurukuru-version",
+   "x": {
+    "profile_url": "https://x.com/googlejapan",
+    "search_url": "https://x.com/search?q=Gboard%20%E3%81%8F%E3%82%8B%E3%81%8F%E3%82%8B&f=live",
+    "posts": [
+     {
+      "author": "Google Japan",
+      "url": "https://x.com/googlejapan/status/2105462954837578068",
+      "note": "The official announcement (in Japanese)"
+     },
+     {
+      "author": "Android Authority",
+      "url": "https://x.com/AndroidAuth/status/2105548177969459710",
+      "note": "News post about the conveyor-belt keyboard"
+     }
+    ]
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Gboard Kurukuru Version?",
+    "a": "A DIY keyboard from Google Japan's Gboard team in which 116 keys ride on four conveyor belts and come to your fingers, so one hand can type every character."
+   },
+   {
+    "q": "Can I buy it?",
+    "a": "No. It is not for sale, and the repository says it is not an official Google product. You can build one from the free files on GitHub."
+   },
+   {
+    "q": "What do I need to build one?",
+    "a": "A 3D printer for 157 parts, plus an N20 gear motor, a DRV8833 motor driver, an ATOMS3 Lite controller, bearings, shafts and screws, and 116 Kailh Choc V1 switches with keycaps, as listed in the build guide."
+   },
+   {
+    "q": "Does the build work as a real keyboard?",
+    "a": "The published guide covers the Moving Keys Edition, in which the motorised belts circulate. A Bluetooth Connection Edition, described as a functional Bluetooth keyboard, is listed as coming soon."
+   },
+   {
+    "q": "What licence are the files under?",
+    "a": "The google/mozc-devices repository is published under the Apache License 2.0."
+   },
+   {
+    "q": "What does kurukuru mean?",
+    "a": "It is the Japanese sound of something going round and round, describing the circulating keys."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Google Japan blog: Gboard 2026 announcement (Japanese)",
+    "url": "https://blog.google/intl/ja-jp/products/android-chrome-play/gboard-2026/"
+   },
+   {
+    "label": "GitHub: Gboard Conveyor Belt Version",
+    "url": "https://github.com/google/mozc-devices/tree/master/mozc-conveyorbelt"
+   },
+   {
+    "label": "GitHub: build guide",
+    "url": "https://github.com/google/mozc-devices/blob/master/mozc-conveyorbelt/buildguide.md"
+   },
+   {
+    "label": "GitHub: google/mozc-devices repository and licence",
+    "url": "https://github.com/google/mozc-devices"
+   },
+   {
+    "label": "Google Japan video on YouTube",
+    "url": "https://www.youtube.com/watch?v=DAn34l_YrUM"
+   },
+   {
+    "label": "Product Hunt launch",
+    "url": "https://www.producthunt.com/products/google?launch=gboard-kurukuru-version"
+   },
+   {
+    "label": "Google Japan announcement on X",
+    "url": "https://x.com/googlejapan/status/2105462954837578068"
+   },
+   {
+    "label": "Gboard on Google Play",
+    "url": "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/b21ba5f8-6a64-4a77-bff5-513bbe60a082.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Three Gboard Kurukuru keyboards in blue, yellow and red, the red one with its belts blurred in motion",
+    "credit": "Image: Gboard Kurukuru Version on Product Hunt",
+    "w": 1300,
+    "h": 866
+   },
+   {
+    "url": "https://ph-files.imgix.net/0c1261de-09ca-4843-b987-5be1f581054c.webp?auto=format&fit=max&w=1400",
+    "alt": "A blue Gboard Kurukuru keyboard standing upright on a desk in front of a monitor showing Google",
+    "credit": "Image: Gboard Kurukuru Version on Product Hunt",
+    "w": 2000,
+    "h": 1333
+   },
+   {
+    "url": "https://ph-files.imgix.net/b3f72a2d-72b8-4262-8c32-32888caf261f.webp?auto=format&fit=max&w=1400",
+    "alt": "A hand typing on the upright conveyor-belt keyboard with one hand",
+    "credit": "Image: Gboard Kurukuru Version on Product Hunt",
+    "w": 2000,
+    "h": 1333
+   },
+   {
+    "url": "https://ph-files.imgix.net/da61622e-4ed5-4e22-9b19-0b84e46f8253.webp?auto=format&fit=max&w=1400",
+    "alt": "Parts for building the keyboard laid out on a table: belt links, switch rows, sprockets and a finished unit",
+    "credit": "Image: Gboard Kurukuru Version on Product Hunt",
+    "w": 2200,
+    "h": 1466
+   }
+  ]
+ }
+}

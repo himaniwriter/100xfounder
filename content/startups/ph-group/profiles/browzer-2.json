@@ -1,0 +1,86 @@
+{
+  "slug": "browzer-2",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/browzer-2",
+  "excerpt": "Browzer connects to your GitHub repo and drafts developer content from the code (docs, blog posts, changelogs, cookbooks and demo videos), then updates it when the code changes. How it works, pricing, alternatives and Product Hunt figures.",
+  "content": "<p>Browzer is pitched as an AI developer-relations (DevRel) studio. You connect a GitHub repository and it reads the source, comments and structure, with no config files, then drafts the content developers read: a full docs site, quickstarts, cookbooks, SEO blog posts with structured data, changelogs and narrated demo videos rendered from the repo. You review each piece and approve it before it is published on your own domain.</p><p>Its main selling point is that the content heals itself. When code is merged, Browzer drafts the matching fix to the docs, plus new content for anything you shipped, so pages don't go stale and releases don't go unannounced. Its gallery says claims are checked against the code. The aim, according to its Product Hunt description, is to automate a DevRel team's written and video output so the team can spend more time on community, growth and events.</p><p>Browzer is made by Browzer Labs, Inc., and its contact page gives San Francisco, CA. This was its second Product Hunt launch, on 2 September 2026; it finished #2 for the day with 374 points and 43 comments.</p><p><em>We have not tested Browzer ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Developer documentation and content",
+    "platform": "Web app connected to GitHub",
+    "starts_at": "14-day free trial; prices not shown on its site",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Drafts docs, blog posts, changelogs and demo videos from your GitHub repo and updates them on every merge",
+    "ph": {"rank": 2, "votes": 374, "comments": 43, "followers": 888, "launched": "2026-09-02", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/7786db60-9542-4a1a-8bd0-ca031f925496.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Diagram 'Your repo is the source. Browzer is the content team.': a connected repo feeding blog posts, quickstarts, cookbooks, demo videos, academy and a docs site",
+       "credit": "Image: Browzer via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/6f43e995-42b0-476f-81b4-3f34f8c8c598.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "A Browzer cookbook page 'Build a support bot that answers from your docs', at step 3 with a code sample and a checkpoint",
+       "credit": "Image: Browzer via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/17a83d4b-59cb-4510-9593-f267bed88ab8.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "An engineering blog post drafted by Browzer from a repo folder, marked 'every claim verified', with target search phrases listed beside it",
+       "credit": "Image: Browzer via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "run a developer tool, SDK or API and your docs fall behind the code",
+        "have a small DevRel or developer-marketing team that can't keep up with tutorials, changelogs and launch posts",
+        "want each release announced and documented without writing everything by hand"
+      ],
+      "not_fit": [
+        "don't keep your code on GitHub: Browzer works by connecting a GitHub repository",
+        "need the price before you try it: the pricing page did not show plan prices when we checked",
+        "want hand-written thought pieces: Browzer drafts content grounded in your code, for you to review"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on trybrowzer.com as of 14 October 2026.",
+      "url": "https://trybrowzer.com/pricing",
+      "plans": [],
+      "notes": [
+        "Every plan has a 14-day free trial with no credit card required; after the trial you are charged the plan price unless you cancel.",
+        "Each generation run uses credits. The pricing FAQ says the Business plan includes generation credits each month, plus team collaboration and priority support.",
+        "You can upgrade, downgrade or cancel at any time."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. They host and publish docs; Browzer's difference is drafting and updating content from the code. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Mintlify", "url": "https://mintlify.com", "what": "Documentation platform with self-updating docs, built for people and AI agents", "starts_at": "Free Starter plan; Pro $450/month billed annually", "ph_rating": 5, "ph_reviews": 86,
+         "difference": "A full docs platform (editor, hosting, API playground, MCP server); Browzer also produces blogs, cookbooks and demo videos from the repo."},
+        {"name": "Docusaurus", "url": "https://docusaurus.io", "what": "Open-source framework for documentation websites", "starts_at": "Free (open source)", "ph_rating": 4.88, "ph_reviews": 26,
+         "difference": "You write the docs yourself in MDX and Docusaurus builds the site; nothing is generated from your code."},
+        {"name": "Hashnode", "url": "https://hashnode.com", "what": "Blogging and docs platform for developers", "starts_at": "See its pricing page", "ph_rating": 4.94, "ph_reviews": 16,
+         "difference": "A place to write and publish developer blogs, not an automated content engine."}
+      ],
+      "more": "Product Hunt also lists GitBook and Notice."
+    },
+    "reviews": {"count": 1, "rating": 4, "url": "https://www.producthunt.com/products/browzer/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/browzer",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=trybrowzer&f=live", "profile_url": "https://x.com/trybrowzer"}
+    },
+    "faq": [
+      {"q": "What is Browzer?", "a": "An AI DevRel studio from Browzer Labs, Inc. that connects to your GitHub repo and drafts docs, quickstarts, cookbooks, blog posts, changelogs and demo videos from the code. It launched on Product Hunt for the second time on 2 September 2026."},
+      {"q": "What does 'self-healing docs' mean?", "a": "When code is merged, Browzer drafts the matching update to your docs, plus new content for anything new you shipped, according to its site."},
+      {"q": "Does Browzer publish without review?", "a": "No. Its gallery describes the flow as 'you approve, it publishes', and the home page says drafts are ready to review and publish."},
+      {"q": "How much does Browzer cost?", "a": "Prices were not shown on its pricing page when we checked. Every plan has a 14-day free trial with no credit card, and generation runs use credits."},
+      {"q": "Where is Browzer based?", "a": "Its contact page gives San Francisco, CA."}
+    ],
+    "sources": [
+      {"label": "Browzer official site", "url": "https://trybrowzer.com/"},
+      {"label": "Browzer pricing", "url": "https://trybrowzer.com/pricing"},
+      {"label": "Browzer contact", "url": "https://trybrowzer.com/contact"},
+      {"label": "Browzer terms of use", "url": "https://trybrowzer.com/terms"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/browzer"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/browzer/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/browzer/alternatives"},
+      {"label": "Mintlify pricing", "url": "https://www.mintlify.com/pricing"},
+      {"label": "Docusaurus", "url": "https://docusaurus.io/"}
+    ]
+  }
+}

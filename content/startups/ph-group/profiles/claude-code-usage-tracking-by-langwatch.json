@@ -1,0 +1,92 @@
+{
+  "slug": "claude-code-usage-tracking-by-langwatch",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/claude-code-usage-tracking-by-langwatch",
+  "excerpt": "LangWatch's Claude Code usage tracking records every coding-agent session as a trace with token counts and what it would cost at API prices, set up with one command. How it works, pricing, alternatives and Product Hunt figures.",
+  "content": "<p>LangWatch is an Amsterdam platform for testing, evaluating and monitoring AI agents. This launch is one feature of it: tracking what your Claude Code sessions actually cost. You run <code>npx langwatch claude</code>, which switches on Claude Code's built-in OpenTelemetry export and points it at LangWatch. From then on every session arrives as a trace: each model turn, every Bash command, file edit, skill and MCP call, and tokens split by type, including cache reads and writes.</p><p>The headline is cost. On a Claude subscription (Pro, Max or Team) there is no per-token bill, so LangWatch labels those sessions 'Bundled' and works out a theoretical total at API list prices, showing what the same work would have cost on the API. The same endpoint also takes sessions from Codex, OpenCode, Copilot, Cursor and Pi. Because it collects over OpenTelemetry rather than reading local log files, LangWatch says the history follows you across machines. Secrets and personal data are redacted before storage, and Claude Code can query its own trace history back through LangWatch's MCP server.</p><p>LangWatch is run by Reasoning Engine B.V. in Amsterdam and was co-founded by Manouk Draisma (CEO) and Rogerio Chaves (CTO), who previously worked on AI agents at Booking.com, according to its About page. Its core is open source under Apache 2.0. Claude Code usage tracking was LangWatch's fourth Product Hunt launch, on 30 July 2026, and finished #4 for the day with 340 points and 95 comments.</p><p><em>We have not tested LangWatch ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI observability",
+    "platform": "Cloud or self-hosted, set up from the command line",
+    "starts_at": "Free for individual use",
+    "schema_category": "DeveloperApplication",
+    "summary_short": "Tracks every Claude Code session as a trace, with token use and what it would cost at API prices",
+    "team": [
+      {"name": "Manouk Draisma", "role": "Co-founder & CEO", "url": "https://langwatch.ai/about-us"},
+      {"name": "Rogerio Chaves", "role": "Co-founder & CTO", "url": "https://langwatch.ai/about-us"}
+    ],
+    "ph": {"rank": 4, "votes": 340, "comments": 95, "followers": 1667, "launched": "2026-07-30", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/780b35de-bb23-4de9-91aa-add00f138037.png?auto=format&fit=max&w=1400", "w": 1106, "h": 524,
+       "alt": "LangWatch 'Evaluate' features: an LLM-as-a-judge evaluator picker, a notebook-style comparison table and live production monitors",
+       "credit": "Image: LangWatch via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/70d0fbdd-9153-413b-9f7d-c06916cd7bb2.png?auto=format&fit=max&w=1400", "w": 1106, "h": 549,
+       "alt": "LangWatch 'Simulate' features: a voice simulation of a refund call, writing a test scenario in Claude Code, and scenarios running locally and in CI",
+       "credit": "Image: LangWatch via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "use Claude Code on a subscription and want to know what your sessions would cost at API prices",
+        "run several coding agents (Claude Code, Codex, Cursor, Copilot) and want their usage in one place",
+        "lead a team and want trace-level data on how coding agents are used across machines"
+      ],
+      "not_fit": [
+        "only want a quick local summary on one machine: a local log reader may be enough, which LangWatch itself compares against",
+        "can't send session traces to a third-party cloud: you would need LangWatch's self-hosted or enterprise set-up",
+        "want only cost tracking: the wider LangWatch platform is built for testing and evaluating AI agents"
+      ]
+    },
+    "pricing": {
+      "intro": "The Claude Code usage page says tracking is free for individual use. The wider LangWatch Cloud platform is priced in euros as below, and can also be self-hosted.",
+      "url": "https://langwatch.ai/pricing",
+      "plans": [
+        {"name": "Developer", "price": "€0", "amount": 0, "currency": "EUR", "detail": "Free forever: 50k events a month, 14-day data access, 2 users, 3 scenarios, simulations and custom evals, community support"},
+        {"name": "Growth", "price": "€29/core-seat/month", "amount": 29, "currency": "EUR", "detail": "200k events included, then €5 per 100k; 30-day retention (extend at €3/GB); unlimited lite users, simulations, evals and prompts; private Slack/Teams support"},
+        {"name": "Enterprise", "price": "Custom", "amount": null, "currency": "EUR", "detail": "Hybrid, self-hosted or on-prem; custom retention, SSO/RBAC, audit logs and SLAs; billing via AWS or Google Marketplace"}
+      ],
+      "notes": [
+        "No credit card is needed to start, according to the pricing page.",
+        "The pricing page also shows a self-managed option alongside LangWatch Cloud."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Langfuse", "url": "https://langfuse.com", "what": "Open-source LLM engineering platform for tracing, prompts and evaluation", "starts_at": "Hobby tier, then Core at $29/month", "ph_rating": 4.98, "ph_reviews": 49,
+         "difference": "A close like-for-like observability platform; LangWatch's pitch adds agent simulations and a ready-made Claude Code set-up."},
+        {"name": "Latitude", "url": "https://latitude.so", "what": "Open-source agent monitoring and observability", "starts_at": "Free plan; Pro $99/month", "ph_rating": 5, "ph_reviews": 5,
+         "difference": "Aimed at teams building AI products; LangWatch's launch focuses on coding-agent usage and cost."},
+        {"name": "Kilo Code", "url": "https://kilo.ai", "what": "Open-source coding agent with usage analytics on team plans", "starts_at": "Free with your own keys; Teams $15/user/month", "ph_rating": 4.96, "ph_reviews": 51,
+         "difference": "A coding agent in its own right; LangWatch tracks the agents you already use."}
+      ],
+      "more": "Product Hunt also lists Raindrop (monitoring for AI agents) and Scape."
+    },
+    "reviews": {"count": 5, "rating": 5, "url": "https://www.producthunt.com/products/langwatch/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/langwatch",
+      "quotes": [],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=langwatch%20claude%20code&f=live", "profile_url": "https://twitter.com/langwatchai"}
+    },
+    "faq": [
+      {"q": "How do I track my Claude Code usage with LangWatch?", "a": "Run npx langwatch claude. It configures Claude Code's OpenTelemetry export to LangWatch, and every session then appears as a trace with model turns, tool calls, tokens by type and a theoretical cost."},
+      {"q": "What does 'Bundled' mean?", "a": "Sessions on a Claude subscription (Pro, Max or Team) have no per-token bill. LangWatch marks them Bundled and calculates what they would have cost at API list prices."},
+      {"q": "Is it free?", "a": "LangWatch says Claude Code usage tracking is free for individual use. Its free Developer plan includes 50k events a month; Growth costs €29 per core seat a month plus usage."},
+      {"q": "Does it work with other coding agents?", "a": "Yes. Codex, OpenCode, Copilot, Cursor and Pi can export to the same endpoint, according to LangWatch."},
+      {"q": "What if I paste a secret key into a session?", "a": "LangWatch says API secrets and personal data are redacted automatically and never stored on its side."},
+      {"q": "Who makes LangWatch?", "a": "Reasoning Engine B.V. of Amsterdam, co-founded by Manouk Draisma (CEO) and Rogerio Chaves (CTO). Its platform is open source under Apache 2.0."}
+    ],
+    "sources": [
+      {"label": "LangWatch Claude Code usage page", "url": "https://langwatch.ai/claude-code-usage"},
+      {"label": "LangWatch official site", "url": "https://langwatch.ai/"},
+      {"label": "LangWatch pricing", "url": "https://langwatch.ai/pricing"},
+      {"label": "About LangWatch", "url": "https://langwatch.ai/about-us"},
+      {"label": "LangWatch terms", "url": "https://langwatch.ai/legal/terms-conditions"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/langwatch"},
+      {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/langwatch/reviews"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/langwatch/alternatives"},
+      {"label": "Langfuse pricing", "url": "https://langfuse.com/pricing"},
+      {"label": "Latitude pricing", "url": "https://latitude.so/pricing"}
+    ]
+  }
+}

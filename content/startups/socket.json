@@ -1,0 +1,79 @@
+{
+ "slug": "socket",
+ "website": "https://socket.dev/",
+ "excerpt": "Socket (socket.dev) scans open-source dependencies for malware, backdoors and risky behaviour before they reach your code. Pricing from free to $50 per developer, funding and alternatives.",
+ "content": "<p>Socket is a software supply chain security company. Most modern applications pull in hundreds of open-source packages from registries such as npm and PyPI, and attackers increasingly publish malicious packages or hijack popular ones. Socket inspects those dependencies for signs of trouble, such as backdoors, obfuscated code, install scripts or unexpected network access, and alerts developers or blocks the package when one is added or updated. TechCrunch reported that it also uses Anthropic and OpenAI models to summarise vulnerabilities, and can check open-source licence compliance.</p><p>Socket was founded in 2020 by Feross Aboukhadijeh, a prolific open-source maintainer who has lectured on web security at Stanford. In October 2024 it raised a $40 million Series B that TechCrunch described as pre-emptive, bringing total funding to $65 million, after a $20 million Series A led by Andreessen Horowitz in 2023. Investors named include Abstract Ventures, a16z, Elad Gil and several well-known angels. At the time Socket said it protected more than 7,500 organisations and 300,000 code repositories, had more than 100 paying customers including Anthropic, Figma and Vercel, and had 32 employees. Aboukhadijeh has said he wants to compete with Snyk.</p><p>Socket works through a GitHub app that comments on pull requests, a command-line tool, and an API. Its GitHub organisation publishes the open-source Socket CLI.</p><p>Pricing is public. When we checked, the Free plan cost $0 and included automatic blocking of malicious dependencies and 1,000 scans a month. Team costs $25 per developer a month (minimum five), adding reachability analysis and Slack alerts, and Business costs $50 per developer a month (minimum 20), adding SSO, SBOM import and export and compliance integrations. Enterprise is priced on request. Paying yearly saves 20%. A developer is anyone who committed to a scanned repository in the past 90 days.</p><p><em>This page is research, not a review. We have not tested Socket; facts come from its pricing page and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Software supply chain security",
+  "platform": "GitHub app, CLI and API",
+  "starts_at": "Free; Team $25 per developer/month",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Detects malicious and risky open-source packages before they enter your code",
+  "maker": {"name": "Socket", "url": "https://socket.dev/"},
+  "team": [{"name": "Feross Aboukhadijeh", "role": "Founder and CEO"}],
+  "gallery": [
+   {"url": "https://avatars.githubusercontent.com/u/69326764?v=4&s=400", "w": 400, "h": 400, "alt": "Socket logo: a white shield with a pink lightning bolt on a pink-to-purple gradient", "credit": "Logo: Socket (official GitHub organisation, SocketDev)"},
+   {"url": "https://opengraph.githubassets.com/e002dbed7979580ab579765edb498b297f8d1b8b038649e33d5e46a2d819aaec/SocketDev/socket-cli", "w": 1200, "h": 600, "alt": "GitHub card for SocketDev/socket-cli, the command-line interface for socket.dev security analysis, with the Socket shield logo", "credit": "Image: GitHub repository card for SocketDev/socket-cli"}
+  ],
+  "use_cases": [
+   "Blocking malicious npm, PyPI and other packages in pull requests",
+   "Getting alerts when a dependency adds install scripts, network access or obfuscated code",
+   "Prioritising vulnerabilities by whether your code actually reaches them",
+   "Producing and importing SBOMs for compliance",
+   "Checking open-source licence compliance"
+  ],
+  "audience": {
+   "fit": [
+    "engineering teams that depend heavily on open-source packages",
+    "security teams worried about supply chain attacks and typosquatting",
+    "open-source maintainers and small teams who can use the free plan"
+   ],
+   "not_fit": [
+    "teams that only need container or cloud configuration scanning",
+    "organisations whose repositories are not on supported platforms below the Enterprise tier"
+   ]
+  },
+  "pricing": {
+   "intro": "From Socket's pricing page, checked 15 October 2026. Prices are per developer per month; yearly billing saves 20% on Team and Business.",
+   "plans": [
+    {"name": "Free", "price": "$0", "detail": "1,000 scans a month; malicious dependency blocking and AI analysis"},
+    {"name": "Team", "price": "$25 per developer/month", "amount": 25, "currency": "USD", "detail": "Minimum 5 developers; reachability analysis, Slack alerts"},
+    {"name": "Business", "price": "$50 per developer/month", "amount": 50, "currency": "USD", "detail": "Minimum 20 developers; SSO/SAML, SBOM, compliance integrations"},
+    {"name": "Enterprise", "price": "Custom", "detail": "GitLab, Bitbucket, Azure DevOps and self-hosted repos; SCIM, audit logs"}
+   ],
+   "notes": ["A developer is anyone who committed to a scanned repository in the past 90 days. The page's free-plan member limits differ between the plan card and the comparison table."],
+   "url": "https://socket.dev/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Focuses on malicious packages, not only known vulnerabilities",
+   "Generous free plan",
+   "Transparent per-developer pricing"
+  ],
+  "cons": [
+   "Non-GitHub source hosts need the Enterprise plan",
+   "Minimum seat counts on Team and Business"
+  ],
+  "alternatives": {
+   "intro": "Other tools for open-source dependency security.",
+   "items": [
+    {"name": "Snyk", "url": "https://snyk.io/", "what": "Developer security platform including open-source dependency scanning", "difference": "Broader suite covering code, containers and infrastructure as code."},
+    {"name": "GitHub Dependabot", "url": "https://github.com/dependabot", "what": "Dependency updates and vulnerability alerts built into GitHub", "difference": "Free on GitHub but focused on known vulnerabilities."},
+    {"name": "Endor Labs", "url": "https://www.endorlabs.com/", "what": "Software composition analysis with reachability", "difference": "Named by TechCrunch as a competitor."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Socket free?", "a": "There is a free plan with malicious-dependency blocking and 1,000 scans a month. Team costs $25 and Business $50 per developer a month."},
+   {"q": "Who founded Socket?", "a": "Feross Aboukhadijeh founded it in 2020, according to TechCrunch."},
+   {"q": "How much has Socket raised?", "a": "$65 million in total after a $40 million Series B in October 2024."},
+   {"q": "How is Socket different from Dependabot?", "a": "Dependabot mainly flags known vulnerabilities and opens update pull requests. Socket also analyses package behaviour to catch malicious or suspicious code that has no published vulnerability yet."}
+  ],
+  "sources": [
+   {"label": "Socket: pricing", "url": "https://socket.dev/pricing"},
+   {"label": "TechCrunch: Socket lands a fresh $40M (Oct 2024)", "url": "https://techcrunch.com/2024/10/22/socket-lands-a-fresh-40m-to-scan-software-for-security-flaws"},
+   {"label": "Verdict: Socket secures $40m funding", "url": "https://www.verdict.co.uk/socket-secures-40m-funding/"},
+   {"label": "GitHub: SocketDev organisation", "url": "https://github.com/SocketDev"}
+  ]
+ }
+}

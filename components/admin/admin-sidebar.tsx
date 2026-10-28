@@ -10,6 +10,7 @@ import {
   FileText,
   Star,
   Gauge,
+  Rocket,
   Images,
   Settings,
   Sparkles,
@@ -22,6 +23,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { label: "Dashboard", href: "/admin", icon: Gauge },
   { label: "Data (Supabase)", href: "/admin/data", icon: Database },
+  { label: "Launch Outreach", href: "/admin/launch-outreach", icon: Rocket },
   { label: "Featured Requests", href: "/admin/featured-requests", icon: Star },
   { label: "Interview Submissions", href: "/admin/interview-submissions", icon: PenSquare },
   { label: "Social Feed", href: "/admin/social-feed", icon: Images },

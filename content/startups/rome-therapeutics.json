@@ -1,0 +1,161 @@
+{
+ "slug": "rome-therapeutics",
+ "website": "https://www.pretzeltx.com/",
+ "excerpt": "ROME Therapeutics was a biotech developing cancer and autoimmune drugs from the repeatome, the repetitive 'dark' part of the genome. It wound down in 2025 and became a subsidiary of Pretzel Therapeutics in January 2026.",
+ "content": "<p>ROME Therapeutics was a biotechnology company that tried to turn the repeatome into medicines. The repeatome is the large share of the human genome, roughly 60% according to the company's 2021 funding announcement, made up of repetitive DNA sequences that were long dismissed as junk. ROME built a platform it called repeatomics to study them, and its lead programme was a LINE-1 reverse transcriptase inhibitor aimed at autoimmune diseases, with cancer as a second focus.</p><p>ROME launched in 2020 with $50 million of Series A funding and in September 2021 raised a $77 million Series B led by Section 32, with Sanofi Ventures, Casdin Capital, Andreessen Horowitz and Alexandria Venture Investments joining founding investors ARCH Ventures, GV and Mass General Brigham Ventures. Endpoints News reported a further $72 million extension backed by Johnson &amp; Johnson and Bristol Myers Squibb, taking the Series B to $149 million. Rosana Kapeller was CEO; the scientific co-founders included David Ting of Massachusetts General Hospital Cancer Center and Benjamin Greenbaum of Memorial Sloan Kettering.</p><p><strong>Wound down and acquired.</strong> In September 2025 Fierce Biotech reported that ROME planned layoffs, was reviewing strategic options and would move to a fully virtual model, citing challenging market conditions. In January 2026 Fierce Biotech reported that ROME had finished winding down its operations and would operate as a wholly owned subsidiary of Pretzel Therapeutics, a mitochondrial-medicine company whose CEO and COO had both previously worked at ROME, with ROME's scientific co-founders continuing to advise. Terms were not disclosed. ROME's old website no longer loads.</p><p>ROME never had an approved product, so there is nothing to buy or price. This profile draws on published reporting and company announcements. It is not medical advice, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Biotech (wound down; now a Pretzel Therapeutics subsidiary)",
+  "platform": "Drug discovery (no approved products)",
+  "starts_at": "No products for sale",
+  "schema_category": "HealthApplication",
+  "summary_short": "Repeatome biotech that wound down in 2025 and became a subsidiary of Pretzel Therapeutics in 2026",
+  "maker": {
+   "name": "ROME Therapeutics (subsidiary of Pretzel Therapeutics since January 2026)",
+   "url": "https://www.pretzeltx.com/"
+  },
+  "team": [
+   {
+    "name": "Rosana Kapeller, MD, PhD",
+    "role": "CEO"
+   },
+   {
+    "name": "David Ting, MD",
+    "role": "Scientific co-founder (Massachusetts General Hospital Cancer Center)"
+   },
+   {
+    "name": "Benjamin Greenbaum, PhD",
+    "role": "Scientific co-founder (Memorial Sloan Kettering)"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LINE-1_retrotransposon_ORF2p_PDB-8UW3.png/1280px-LINE-1_retrotransposon_ORF2p_PDB-8UW3.png",
+    "alt": "Ribbon model of the human LINE-1 ORF2 protein, with the endonuclease domain in yellow-green and the reverse transcriptase domain in purple, bound to red nucleic acid",
+    "credit": "Image: Line1wiki, CC BY 4.0, via Wikimedia Commons (PDB 8UW3)",
+    "w": 1280,
+    "h": 951
+   },
+   {
+    "url": "https://www.pretzeltx.com/wp-content/uploads/2022/07/yoast-pretzel-logo.jpg",
+    "alt": "Pretzel Therapeutics logo beside an illustration of a mitochondrion in yellow and blue",
+    "credit": "Image: Pretzel Therapeutics",
+    "w": 1200,
+    "h": 600
+   }
+  ],
+  "use_cases": [
+   "Research into LINE-1 reverse transcriptase inhibitors for autoimmune disease",
+   "Studying repetitive genome sequences (the repeatome) in cancer",
+   "A case study in how well-funded preclinical biotechs wind down"
+  ],
+  "audience": {
+   "fit": [
+    "follow biotech funding and the dark-genome research field",
+    "research LINE-1 biology or autoimmune drug discovery"
+   ],
+   "not_fit": [
+    "are looking for a treatment: ROME had no approved products",
+    "want to invest or partner with an independent ROME: it is now a Pretzel subsidiary"
+   ]
+  },
+  "pricing": {
+   "intro": "ROME Therapeutics had no approved or marketed products, so there is no pricing.",
+   "plans": [
+    {
+     "name": "Products",
+     "price": "None",
+     "detail": "Preclinical and early-stage programmes only"
+    }
+   ],
+   "notes": [
+    "ROME now operates as a subsidiary of Pretzel Therapeutics."
+   ],
+   "url": "https://www.pretzeltx.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Pioneered drug discovery in the repeatome",
+   "Backed by J&J, Bristol Myers Squibb and top biotech investors"
+  ],
+  "cons": [
+   "Wound down its independent operations in 2025",
+   "No approved products"
+  ],
+  "alternatives": {
+   "intro": "Other companies working on the dark genome or LINE-1 biology. All are research-stage.",
+   "items": [
+    {
+     "name": "Transposon Therapeutics",
+     "url": "https://transposonrx.com/",
+     "what": "LINE-1 reverse transcriptase inhibitor developer",
+     "tags": [
+      "Biotech"
+     ],
+     "starts_at": "No products for sale",
+     "difference": "Also works on LINE-1 reverse transcriptase inhibition."
+    },
+    {
+     "name": "Enara Bio",
+     "url": "https://www.enarabio.com/",
+     "what": "Dark-genome cancer immunotherapy company",
+     "tags": [
+      "Biotech"
+     ],
+     "starts_at": "No products for sale",
+     "difference": "Works on dark-genome targets for cancer immunotherapy."
+    },
+    {
+     "name": "Pretzel Therapeutics",
+     "url": "https://www.pretzeltx.com/",
+     "what": "Mitochondrial medicine company and ROME's owner",
+     "tags": [
+      "Biotech"
+     ],
+     "starts_at": "No products for sale",
+     "difference": "Now owns ROME as a subsidiary."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is ROME Therapeutics still operating?",
+    "a": "Not independently. It wound down its operations in 2025 and became a wholly owned subsidiary of Pretzel Therapeutics in January 2026, Fierce Biotech reported."
+   },
+   {
+    "q": "What was ROME working on?",
+    "a": "Drugs based on the repeatome, led by a LINE-1 reverse transcriptase inhibitor for autoimmune diseases."
+   },
+   {
+    "q": "How much did ROME raise?",
+    "a": "A $50 million launch round in 2020 and a Series B of $149 million in total, including a $77 million first close in 2021 and a $72 million extension."
+   },
+   {
+    "q": "Who led ROME?",
+    "a": "Rosana Kapeller, MD, PhD, was CEO."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Business Wire: ROME Therapeutics secures $77 million Series B (14 Sep 2021)",
+    "url": "https://www.businesswire.com/news/home/20210914005262/en/ROME-Therapeutics-Secures-%2477-Million-in-Series-B-Financing-to-Advance-Repeatome-derived-Pipeline-for-Cancer-and-Autoimmune-Diseases-and-Expand-Repeatomics-Platform"
+   },
+   {
+    "label": "Endpoints News: Rome Therapeutics completes $72M Series B extension",
+    "url": "https://endpoints.news/?p=426681"
+   },
+   {
+    "label": "BioPharma Dive: ROME Series B extension",
+    "url": "https://www.biopharmadive.com/news/rome-rosana-kapeller-series-b-dark-genome/693272/"
+   },
+   {
+    "label": "Fierce Biotech: Rome Therapeutics nears end of road with layoffs and strategic review (Sep 2025)",
+    "url": "https://www.fiercebiotech.com/biotech/big-pharma-backed-rome-therapeutics-nears-end-road-planned-layoffs-and-strategic-review"
+   },
+   {
+    "label": "Fierce Biotech: Pretzel emerges as winner from rise and fall of Rome Therapeutics (Jan 2026)",
+    "url": "https://www.fiercebiotech.com/biotech/pretzel-winner-rise-and-fall-rome-therapeutics"
+   }
+  ]
+ }
+}

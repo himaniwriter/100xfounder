@@ -1,0 +1,123 @@
+{
+ "slug": "safe-superintelligence",
+ "website": "https://ssi.inc/",
+ "excerpt": "Safe Superintelligence (SSI) is Ilya Sutskever's AI lab with one stated goal: a safe superintelligence. Who runs it, what it has raised, its $32 billion valuation, and why it has no product.",
+ "content": "<p>Safe Superintelligence Inc., or SSI, is an artificial intelligence research lab with a single stated aim. Its website calls it the world's first \"straight-shot\" superintelligence lab, with one goal and one product: a safe superintelligence. It says it treats safety and capabilities as technical problems to solve together, and that its business model keeps it away from short-term commercial pressure and product cycles.</p><p>SSI was founded in June 2024 by Ilya Sutskever, OpenAI's co-founder and former chief scientist, Daniel Gross, who previously led AI work at Apple, and Daniel Levy, a former OpenAI researcher. It describes itself as an American company with offices in Palo Alto and Tel Aviv.</p><p>Reports in 2025 said SSI raised $2 billion in April 2025 at a $32 billion valuation. CNBC reported that Meta tried to buy SSI earlier that year and was turned down. Gross then left at the end of June 2025 to join Meta, and Sutskever said on X that he would take over as chief executive, with Levy becoming president.</p><p>SSI has released no product or model, and sells nothing. There is no pricing to compare, and no public timeline for when, or whether, it will release anything. Its website holds a short mission statement, an updates page, job applications and contact details.</p><p>That makes SSI unusual among the best-funded AI labs: rivals such as OpenAI and Anthropic sell products to fund their research, while SSI has chosen not to.</p><p><em>This page is research, not a review: SSI has no product we could try. It brings together SSI's own website and the reporting linked under Sources, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI research lab",
+  "platform": "None released",
+  "starts_at": "No product or pricing",
+  "schema_category": "Organization",
+  "summary_short": "AI research lab founded by Ilya Sutskever to build a safe superintelligence",
+  "maker": {
+   "name": "Safe Superintelligence Inc.",
+   "url": "https://ssi.inc/"
+  },
+  "gallery": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Democratizing_Deep_Learning_with_Nervana_and_Google_Brain_%2815105407149%29_%28cropped%29.jpg",
+    "w": 398,
+    "h": 744,
+    "alt": "Ilya Sutskever, SSI's co-founder and CEO, seated on a panel years before founding SSI",
+    "credit": "Photo: Steve Jurvetson, CC BY 2.0, via Wikimedia Commons"
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Safe_Superintelligence_Inc._logo.jpg",
+    "w": 400,
+    "h": 400,
+    "alt": "SSI logo: the lowercase letters ssi in white beside a grey bar on a dark background",
+    "credit": "Logo: Safe Superintelligence Inc., via Wikimedia Commons (public domain)"
+   }
+  ],
+  "team": [
+   {
+    "name": "Ilya Sutskever",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Daniel Levy",
+    "role": "Co-founder and president"
+   }
+  ],
+  "audience": {
+   "fit": [
+    "AI researchers and engineers considering where to work (SSI is hiring in Palo Alto and Tel Aviv)",
+    "investors and analysts following frontier AI labs"
+   ],
+   "not_fit": [
+    "anyone looking for an AI model or app to use: SSI has none",
+    "buyers comparing AI tool prices"
+   ]
+  },
+  "alternatives": {
+   "intro": "Frontier AI labs that, unlike SSI, offer products today.",
+   "items": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/",
+     "what": "Maker of ChatGPT and the GPT models",
+     "difference": "Sutskever's former company; sells consumer and API products."
+    },
+    {
+     "name": "Anthropic",
+     "url": "https://www.anthropic.com/",
+     "what": "Maker of the Claude models",
+     "difference": "A safety-focused lab that also sells products and an API."
+    },
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/",
+     "what": "Google's AI lab behind Gemini",
+     "difference": "Part of Alphabet, shipping research into Google products."
+    },
+    {
+     "name": "Thinking Machines Lab",
+     "url": "https://thinkingmachines.ai/",
+     "what": "AI lab founded by former OpenAI staff",
+     "difference": "Another lab founded by OpenAI alumni."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does SSI sell?",
+    "a": "Nothing. SSI says its one goal and only product is a safe superintelligence, and it has released no product or model."
+   },
+   {
+    "q": "Who founded Safe Superintelligence?",
+    "a": "Ilya Sutskever, Daniel Gross and Daniel Levy in June 2024. Gross left in June 2025, and Sutskever became CEO."
+   },
+   {
+    "q": "How much is SSI worth?",
+    "a": "Reports in 2025 said it raised $2 billion in April 2025 at a $32 billion valuation."
+   },
+   {
+    "q": "Where is SSI based?",
+    "a": "It describes itself as an American company with offices in Palo Alto and Tel Aviv."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Safe Superintelligence Inc. website",
+    "url": "https://ssi.inc/"
+   },
+   {
+    "label": "NBC / CNBC: Sutskever becomes CEO after Gross leaves for Meta",
+    "url": "https://www.nbcwashington.com/news/business/money-report/ilya-sutskever-becomes-ceo-of-safe-superintelligence-after-meta-poached-daniel-gross/3950120/?amp=1"
+   },
+   {
+    "label": "Globes: SSI declines Meta acquisition offer",
+    "url": "https://en.globes.co.il/en/article-1001513490"
+   },
+   {
+    "label": "CTech (Calcalist): Safe Superintelligence coverage",
+    "url": "https://www.calcalistech.com/tags/Safe_Superintelligence"
+   },
+   {
+    "label": "Wikimedia Commons: SSI logo",
+    "url": "https://commons.wikimedia.org/wiki/File:Safe_Superintelligence_Inc._logo.jpg"
+   }
+  ]
+ }
+}

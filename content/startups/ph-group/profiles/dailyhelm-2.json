@@ -1,0 +1,205 @@
+{
+  "slug": "dailyhelm-2",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/dailyhelm-2",
+  "excerpt": "DailyHelm is an AI business reviewer that checks your analytics, ads, SEO, code and costs overnight and sends a morning list of fixes ranked by revenue impact. Pricing, alternatives and launch-day Q&A.",
+  "content": "<p>DailyHelm connects to an online business's data (Google Analytics, ad accounts, SEO, Stripe, GitHub and others) and reviews it overnight. Instead of a dashboard, you get a morning brief: a prioritised list of issues and opportunities, each ranked by likely revenue impact, such as broken conversion tracking, wasted ad spend or a slower checkout page. Findings can go to Slack, a PDF, a shareable link, or your own tools through an API and webhooks.</p><p>The work is split between six specialist AI agents (analytics and growth, ads, SEO, code, cloud cost and site UX) coordinated by an orchestrator called Aria, which you can also chat with. DailyHelm says every connector is read-only, so it never changes anything in your accounts. Founder Brandon Dennis said on Product Hunt that connecting the integrations takes about ten minutes.</p><p>DailyHelm launched on Product Hunt on 5 October 2026 and finished #5 for the day with 216 points and 65 comments (as of 14 October 2026).</p><p><em>We have not tested DailyHelm ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "AI business analytics",
+    "platform": "Web app with Slack delivery and an API",
+    "starts_at": "$49 for the first month, then $99/month",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI agents that review your analytics, ads, SEO and costs overnight and send a ranked list of fixes",
+    "maker": {
+      "name": "Brandon Dennis",
+      "url": "https://www.producthunt.com/@bdennis11907"
+    },
+    "team": [
+      {
+        "name": "Brandon Dennis",
+        "role": "Founder (per his Product Hunt profile)",
+        "url": "https://www.producthunt.com/@bdennis11907"
+      }
+    ],
+    "ph": {
+      "rank": 5,
+      "votes": 216,
+      "comments": 65,
+      "followers": 520,
+      "launched": "2026-10-05",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/1d7ad7f5-25dd-457d-9738-dd6c5dab60c6.png?auto=format&fit=max&w=1400",
+        "w": 1620,
+        "h": 971,
+        "alt": "DailyHelm graphic 'Your business, reviewed by AI. Every morning.' with a Business Health screen listing today's priorities by severity and revenue at risk",
+        "credit": "Image: DailyHelm via Product Hunt"
+      },
+      {
+        "url": "https://ph-files.imgix.net/e2a6f968-a5d4-4e68-8472-ea39bad68e53.png?auto=format&fit=max&w=1400",
+        "w": 1620,
+        "h": 971,
+        "alt": "DailyHelm graphic 'Six specialists. One morning brief.' showing six robot agents for analytics, ads, SEO, code, cost and site UX",
+        "credit": "Image: DailyHelm via Product Hunt"
+      }
+    ],
+    "audience": {
+      "fit": [
+        "run a SaaS, e-commerce or agency business and check several dashboards every morning",
+        "want problems ranked by money at stake rather than more charts",
+        "want read-only access: DailyHelm says its connectors never change anything"
+      ],
+      "not_fit": [
+        "need a free plan: the site sells paid plans with a 14-day money-back guarantee",
+        "want a full product-analytics suite with funnels and session replays (see Mixpanel below)",
+        "run several businesses on one subscription: the site says each business has its own plan and billing"
+      ]
+    },
+    "pricing": {
+      "intro": "DailyHelm sells one plan with three billing terms, in US dollars. The pricing page shows a discounted first billing cycle against a $99/month price; after that, the regular rate applies.",
+      "url": "https://dailyhelm.com/pricing",
+      "checked": "2026-10-15",
+      "plans": [
+        {
+          "name": "Monthly",
+          "price": "$49 first month, then $99/month",
+          "amount": 99,
+          "currency": "USD",
+          "detail": "All 6 specialist agents plus the Aria orchestrator, 500 Aria chat credits a month, unlimited user seats, 24/7 support"
+        },
+        {
+          "name": "Quarterly",
+          "price": "$66/month for the first quarter, then $297 every 3 months",
+          "amount": 99,
+          "currency": "USD",
+          "detail": "Same features"
+        },
+        {
+          "name": "Annual",
+          "price": "$69/month for the first year, then $828/year",
+          "amount": 69,
+          "currency": "USD",
+          "detail": "Same features. The card shows $69/month against a struck-through $99, but the page's FAQ gives the annual renewal rate as $828 a year, which is also $69 a month"
+        }
+      ],
+      "notes": [
+        "The FAQ on the pricing page says the discounted price applies to the first billing cycle only, and that renewals are charged at $99/month (monthly), $297 every 3 months (quarterly) or $828/year (annual). This explains why the first monthly payment is lower than the annual rate.",
+        "If you run out of Aria chat credits they top up automatically at $49 per 1,000; you can switch that off in account settings.",
+        "Every plan has a 14-day money-back guarantee and can be cancelled any time. The founder mentioned a 7-day full-access trial on Product Hunt; the pricing page does not list one.",
+        "Each business needs its own plan."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {
+          "name": "Mixpanel",
+          "url": "https://mixpanel.com/",
+          "what": "Product analytics",
+          "starts_at": "Free to start; Growth plan priced by usage",
+          "ph_rating": 4.9,
+          "ph_reviews": 92,
+          "difference": "A full analytics tool you explore yourself. DailyHelm reads tools like this and tells you what to fix."
+        },
+        {
+          "name": "Mikrolo",
+          "url": "https://www.producthunt.com/products/mikrolo",
+          "what": "Catches marketing issues before you overspend",
+          "starts_at": "See its site",
+          "ph_rating": 5,
+          "ph_reviews": 5,
+          "difference": "Focused on marketing and ad issues; DailyHelm also covers SEO, code, cloud cost and site UX."
+        },
+        {
+          "name": "Houseware",
+          "url": "https://www.houseware.io/",
+          "what": "AI agents for digital experience teams",
+          "starts_at": "See its site",
+          "ph_rating": null,
+          "ph_reviews": 0,
+          "difference": "Aimed at digital-experience teams in larger companies rather than founders' daily review."
+        }
+      ],
+      "more": "Product Hunt also lists MarketRecon and Predflow AI. DailyHelm's own site has comparison pages against Databox, AgencyAnalytics, Klipfolio, Triple Whale and Baremetrics."
+    },
+    "reviews": {
+      "count": 0,
+      "rating": null,
+      "url": "https://www.producthunt.com/products/dailyhelm/reviews",
+      "as_of": "2026-10-14"
+    },
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/dailyhelm",
+      "quotes": [
+        {
+          "author": "Shivam Kushwaha",
+          "text": "This looks useful for tracking broken conversions and wasted ad spend. What's the setup time like for the integrations?",
+          "reply": "Brandon Dennis: integrations take a few clicks, and all connectors can be set up within 10 minutes."
+        },
+        {
+          "author": "Irene Chan",
+          "text": "As a founder, I'm guilty of having a bunch of dashboards and google sheets."
+        }
+      ],
+      "x": {
+        "none": "We did not check X for this profile.",
+        "search_url": "https://x.com/search?q=DailyHelm&f=live"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is DailyHelm?",
+        "a": "An AI business reviewer that connects to your analytics, ads, SEO, store and code data, reviews it overnight and sends a prioritised list of fixes ranked by likely revenue impact."
+      },
+      {
+        "q": "How much does DailyHelm cost?",
+        "a": "There is one plan. Billed monthly it costs $49 for the first month, then $99 a month; quarterly, $66 a month for the first quarter, then $297 every 3 months; annually, $69 a month for the first year, then $828 a year. All terms include the same features (pricing page and its billing FAQ, 15 October 2026)."
+      },
+      {
+        "q": "Is there a free trial?",
+        "a": "The pricing page offers a 14-day money-back guarantee rather than a free plan. The founder mentioned a 7-day full-access trial on Product Hunt."
+      },
+      {
+        "q": "Can DailyHelm change my ad or analytics settings?",
+        "a": "No, according to DailyHelm: every connector is read-only."
+      },
+      {
+        "q": "Which tools does it connect to?",
+        "a": "Its site lists integrations including Slack, Google Analytics, GitHub and Stripe, plus ad and SEO data, and offers an API and webhooks."
+      },
+      {
+        "q": "How did DailyHelm do on Product Hunt?",
+        "a": "It launched on 5 October 2026 and finished #5 for the day with 216 points and 65 comments."
+      }
+    ],
+    "sources": [
+      {
+        "label": "DailyHelm official site",
+        "url": "https://dailyhelm.com/"
+      },
+      {
+        "label": "DailyHelm pricing",
+        "url": "https://dailyhelm.com/pricing"
+      },
+      {
+        "label": "DailyHelm contact",
+        "url": "https://dailyhelm.com/contact"
+      },
+      {
+        "label": "Product Hunt page",
+        "url": "https://www.producthunt.com/products/dailyhelm"
+      },
+      {
+        "label": "Product Hunt launch",
+        "url": "https://www.producthunt.com/posts/dailyhelm-2"
+      },
+      {
+        "label": "Mixpanel pricing",
+        "url": "https://mixpanel.com/pricing/"
+      }
+    ]
+  }
+}

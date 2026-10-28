@@ -1,0 +1,76 @@
+{
+ "slug": "loft",
+ "website": "https://loft.com.br/",
+ "excerpt": "Loft is a São Paulo proptech for buying, selling and renting homes, with home-loan and rental-guarantee services. Founders, funding, the 2022 layoffs and alternatives.",
+ "content": "<p>Loft is a Brazilian real estate technology company based in São Paulo. TechCrunch described it in 2021 as a digital platform aiming to be a one-stop shop for buying and selling homes: a marketplace of listings worked by brokers, plus services in insurance, renovations, rentals and mortgages. It started as an iBuyer that bought apartments directly, then moved into mortgages in 2020 by acquiring a large Brazilian mortgage brokerage. At that time it listed more than 13,000 properties across about 130 regions of São Paulo and Rio de Janeiro and worked with more than 30,000 brokers.</p><p>Loft was founded in early 2018 by Mate Pencz and Florian Hagenbuch, who served as co-CEOs and had previously built and sold the Brazilian printing startup Printi. It grew quickly through acquisitions: Bloomberg Línea lists CredPago (rental leases without a guarantor), CrediHome (home-loan origination), Foxter, the condominium portal 123i, the real estate software company Vista, and Mexico City's TrueHome, which became Loft Mexico.</p><p>It also raised large sums. In March 2021 Loft raised a $425 million Series D led by D1 Capital Partners at a $2.2 billion valuation, with investors including Andreessen Horowitz, Tiger Global, Altimeter and Soros, TechCrunch reported; a $100 million extension in April 2021 lifted its valuation to $2.9 billion. Total equity funding reached about $800 million.</p><p>As Brazilian interest rates rose, Loft cut staff. TechCrunch reported about 380 layoffs in July 2022, after 159 in April, and Bloomberg Línea reported a further 312 in December 2022, about 12% of its roughly 2,600 staff, which it linked to integrating acquired companies. Loft denied a report that it had raised money at a lower valuation and said it had not raised equity since mid-2021, and that its products and services continued unchanged.</p><p>Loft does not charge buyers to browse listings; brokerage, loan and rental-guarantee costs depend on each transaction. Its website blocked our checks, so we could not confirm current fees.</p><p><em>This page is research, not a review. Facts come from the reporting listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Real estate marketplace and home credit (Brazil)",
+  "platform": "Web and mobile marketplace with broker tools",
+  "starts_at": "Free to browse; fees per transaction",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Brazilian platform for buying, selling and renting homes, plus home loans",
+  "maker": {"name": "Loft", "url": "https://loft.com.br/"},
+  "team": [
+   {"name": "Mate Pencz", "role": "Co-founder and co-CEO"},
+   {"name": "Florian Hagenbuch", "role": "Co-founder"}
+  ],
+  "gallery": [
+   {"url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Loft_logo.png", "w": 212, "h": 70, "alt": "Loft logo: the word loft in black beside a lime-green pixelated tag shape", "credit": "Logo: Loft, CC0, via Wikimedia Commons (File:Loft logo.png)"},
+   {"url": "https://avatars.githubusercontent.com/u/55814064?v=4&s=400", "w": 400, "h": 400, "alt": "Earlier Loft logo: the word loft in rounded orange letters on white", "credit": "Logo: Loft (official GitHub organisation, loft-br)"}
+  ],
+  "use_cases": [
+   "Searching apartments for sale or rent in São Paulo and Rio de Janeiro",
+   "Selling a home through brokers on the marketplace",
+   "Arranging a home loan through Loft's mortgage brokerage",
+   "Renting without a guarantor through CredPago",
+   "Real estate agency software (Vista)"
+  ],
+  "audience": {
+   "fit": [
+    "home buyers, sellers and renters in Brazil's large cities",
+    "real estate brokers and agencies in Brazil",
+    "buyers who need help comparing home loans"
+   ],
+   "not_fit": [
+    "people looking for property outside Brazil (Loft Mexico's site was under maintenance when we checked)",
+    "anyone wanting a single published fee schedule"
+   ]
+  },
+  "pricing": {
+   "intro": "Browsing listings is free. Brokerage commissions, loan costs and rental-guarantee fees depend on each transaction. Loft's website blocked our check in October 2026, so we could not confirm current fees.",
+   "plans": [{"name": "Marketplace", "price": "Free to browse", "detail": "Transaction costs vary"}],
+   "url": "https://loft.com.br/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Listings, brokers, loans and rental guarantees in one group",
+   "Large network of brokers in São Paulo and Rio",
+   "Backed by major international investors"
+  ],
+  "cons": [
+   "Cut about 855 jobs across 2022",
+   "No published fee schedule we could check"
+  ],
+  "alternatives": {
+   "intro": "Other Brazilian real estate platforms.",
+   "items": [
+    {"name": "QuintoAndar", "url": "https://www.quintoandar.com.br/", "what": "Rental and home-sale marketplace in Brazil", "difference": "Strong in rentals with its own guarantee model."},
+    {"name": "ZAP Imóveis", "url": "https://www.zapimoveis.com.br/", "what": "Large Brazilian property listings portal", "difference": "Classifieds portal for agencies and owners."},
+    {"name": "VivaReal", "url": "https://www.vivareal.com.br/", "what": "Property listings portal", "difference": "Part of the same group as ZAP Imóveis."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Loft?", "a": "A São Paulo real estate technology company with a marketplace for buying, selling and renting homes, plus home-loan and rental-guarantee services."},
+   {"q": "Who founded Loft?", "a": "Mate Pencz and Florian Hagenbuch, in early 2018."},
+   {"q": "How much is Loft valued at?", "a": "It was valued at $2.9 billion after a $100 million extension in April 2021. It denied a 2022 report of a lower-valuation round."},
+   {"q": "Did Loft have layoffs?", "a": "Yes. It cut 159 staff in April 2022, about 380 in July and 312 in December 2022, according to TechCrunch and Bloomberg Línea."}
+  ],
+  "sources": [
+   {"label": "TechCrunch: Loft raises $425M at a $2.2B valuation (March 2021)", "url": "https://techcrunch.com/2021/03/23/real-estate-platform-loft-raises-425m-at-a-2-2b-valuation-in-one-of-brazils-largest-venture-rounds"},
+   {"label": "TechCrunch: Loft lays off 380 employees (July 2022)", "url": "https://techcrunch.com/2022/07/05/brazilian-proptech-startup-loft-which-was-valued-at-2-9b-last-year-lays-off-380-employees"},
+   {"label": "Bloomberg Línea: Loft sheds 12% of staff in third wave of layoffs (Dec 2022)", "url": "https://www.bloomberglinea.com/english/brazilian-unicorn-loft-sheds-12-of-staff-in-third-wave-of-layoffs-this-year/"},
+   {"label": "Bloomberg Línea: Loft denies receiving down round", "url": "https://www.bloomberglinea.com/english/brazilian-unicorn-loft-denies-receiving-down-round/"}
+  ]
+ }
+}

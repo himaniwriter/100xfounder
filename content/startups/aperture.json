@@ -1,0 +1,277 @@
+{
+ "slug": "aperture",
+ "excerpt": "Aperture is an open-source AI code editor that stages every change as a diff and checks it (parse, imports, types, preview, tests) before you apply it. Pricing, setup and alternatives.",
+ "content": "<p>Aperture is an open-source AI code editor that runs in the browser. Its Composer reads your code, posts a plan you can edit, and only after you click to build it does it stage changes as diffs. Nothing is written to your files until you apply a change, and you can keep or skip each file.</p><p>Before you apply anything, Aperture runs five checks on the staged change: the code parses, its imports resolve, the TypeScript compiler finds no new type errors, the preview still renders, and the project's tests pass. The tests run in a sandboxed worker in your browser tab with no network access. A check that couldn't run says why instead of showing as a pass, and a test that was already failing before the edit is not blamed on it. Since launch the same checks are also available as an MCP tool that other coding agents can call, and as a GitHub Action for pull requests.</p><p>You bring your own model key (Grok, OpenAI, Anthropic, Gemini or DeepSeek) or use a local model through Ollama or LM Studio. The code is MIT-licensed and needs Node.js 22.6 or newer to run yourself. Aperture is built by Witchayut Samnakhon and launched on Product Hunt on 4 October 2026, finishing #33 for the day with 66 upvotes.</p><p><em>We have not tested Aperture ourselves. This page brings together its README, its official site and pricing page, its Product Hunt page and the official pricing pages of comparable editors, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI coding",
+  "platform": "Browser-based code editor; self-hostable",
+  "os": "Runs in the browser; self-hosting needs Node.js 22.6 or newer",
+  "starts_at": "Free (Hobby plan, bring your own model key)",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Open-source AI code editor that checks every staged change before you apply it",
+  "maker": {
+   "name": "Witchayut Samnakhon",
+   "url": "https://www.producthunt.com/@hankaws"
+  },
+  "team": [
+   {
+    "name": "Witchayut Samnakhon",
+    "role": "Founder",
+    "url": "https://www.producthunt.com/@hankaws"
+   }
+  ],
+  "ph": {
+   "rank": 33,
+   "votes": 66,
+   "comments": 12,
+   "followers": 60,
+   "launched": "2026-10-04",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://www.youtube.com/watch?v=4nLOAsB6W8A",
+  "video_title": "Aperture 30-second demo",
+  "use_cases": [
+   "Letting an AI propose code changes while you review a plan and a diff before anything is written",
+   "Catching AI edits that break imports, types or tests before they land",
+   "Adding a pre-apply check to another agent such as Claude Code or Cursor through MCP",
+   "Running the same checks on every pull request with a GitHub Action",
+   "Trying an AI editor on your own model key, or a local model, without a subscription"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Witchayut Samnakhon says AI code editors are good at writing edits that look right, but you usually only find out whether an edit parses, whether its imports point anywhere and whether the tests still pass after you've applied it. He built Aperture so the editor does that checking first.",
+    "At launch he described the workflow: the agent posts a plan and waits, edits arrive as staged diffs, and five checks run on each one. A new test failure goes back to the agent once to fix. In the comments he added that on a second miss it stops, leaves the change staged with the failing checks visible, and discards any fix the agent rates below 0.8 confidence.",
+    "He also asked for criticism: whether the checks catch the mistakes that actually hurt, where the in-browser test runner falls over, and what confused people in the first five minutes. Since launch he has shipped background runs (up to three at once), the MCP check tool and a GitHub Action."
+   ],
+   "attribution": "Witchayut Samnakhon, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/aperture-7?comment=5917986"
+  },
+  "audience": {
+   "fit": [
+    "want an AI editor that shows a plan and a diff before touching your files",
+    "work in TypeScript or JavaScript projects with node:test, Vitest or Jest tests",
+    "prefer open source and paying your model provider directly, with no markup",
+    "already use another coding agent and want a pre-apply check you can call over MCP"
+   ],
+   "not_fit": [
+    "work mainly in languages other than TypeScript and JavaScript: the type and test checks are built around that stack",
+    "have large projects: the in-browser type check is limited to projects of up to 600 files (the GitHub Action reads more)",
+    "want a hosted plan with model usage included: Pro and Team are announced but not available yet"
+   ]
+  },
+  "pricing": {
+   "intro": "Aperture charges nothing today. You use your own model key and the provider bills you directly, with no markup. Paid plans are listed but not yet on sale.",
+   "url": "https://aperturesais.grok.me/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Hobby",
+     "price": "$0/month",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "No card. Composer, Chat and inline edits on one bring-your-own key, with a session spending cap of about $1 on your key by default (adjustable)"
+    },
+    {
+     "name": "Pro",
+     "price": "Coming soon (no price published)",
+     "currency": "USD",
+     "detail": "Unlimited Composer on your own keys, model choice, ghost-text completion, one background job, external agents such as Claude Code and Codex"
+    },
+    {
+     "name": "Team",
+     "price": "Coming soon (no price published)",
+     "currency": "USD",
+     "detail": "Everything in Pro, three background jobs at once, usage dashboard and session caps"
+    },
+    {
+     "name": "Self-hosted",
+     "price": "Free (MIT licence)",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Run it yourself; you pay only your model provider. Local models and in-browser tests cost nothing"
+    }
+   ],
+   "notes": [
+    "The pricing page says no checkout exists yet and nothing is charged.",
+    "The MCP check tool, check_change, is free on every plan, according to the README.",
+    "The public demo replays recorded runs, so it calls no model and uses no API quota."
+   ]
+  },
+  "alternatives": {
+   "intro": "From Product Hunt's alternatives list. Prices come from each product's own pricing page, checked on 14 October 2026. Review scores are Product Hunt users' own.",
+   "items": [
+    {
+     "name": "Cursor",
+     "url": "https://cursor.com/",
+     "what": "AI code editor with agents, built on VS Code",
+     "starts_at": "Free plan; paid individual plans from $8/month",
+     "ph_rating": 5.0,
+     "ph_reviews": 961,
+     "difference": "A closed-source subscription with model usage bundled in. Aperture is open source, runs on your own key, and gates each change behind five checks before you apply it."
+    },
+    {
+     "name": "Cline",
+     "url": "https://cline.bot/",
+     "what": "Open-source AI coding agent for VS Code and other editors",
+     "starts_at": "Free open source (bring your own key); Enterprise on request",
+     "ph_rating": 4.7,
+     "ph_reviews": 7,
+     "difference": "Works inside your existing editor. Aperture is a separate browser editor with its own in-browser test sandbox."
+    },
+    {
+     "name": "Zed",
+     "url": "https://zed.dev/",
+     "what": "Fast open-source desktop code editor with AI features",
+     "starts_at": "Personal $0 (own key); Pro $10/month",
+     "ph_rating": 4.9,
+     "ph_reviews": 52,
+     "difference": "A native desktop editor without a pre-apply verification gate like Aperture's."
+    }
+   ],
+   "more": "Product Hunt also lists Claude Code, Kilo Code, Windsurf, Codex, Pythagora, Continue and theORQL."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/aperture-7/reviews",
+   "as_of": "2026-10-14"
+  },
+  "pros": [
+   "Nothing touches your files until you apply a staged diff",
+   "Five checks per change, and a check that couldn't run is never shown as a pass",
+   "Tests run free in a sandboxed browser worker with no network access",
+   "MIT open source; bring your own key or a local model, with no markup",
+   "Checks also available to other agents over MCP and on pull requests via a GitHub Action",
+   "The maker publishes a benchmark of bad and good edits, including misses"
+  ],
+  "cons": [
+   "Best suited to TypeScript and JavaScript projects",
+   "In-browser test runner supports node:test and only a subset of Vitest and Jest",
+   "In-browser type checking is limited to projects of up to 600 files",
+   "Paid plans are announced without prices or a date",
+   "The maker said a green check is not yet tied to an exact snapshot of the staged files"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/aperture-7",
+   "x": {
+    "none": "We found no posts about Aperture on X yet.",
+    "search_url": "https://x.com/search?q=Aperture%20Hankaws&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "Is Aperture free?",
+    "a": "Yes, today. The Hobby plan is $0 and self-hosting is free under the MIT licence. You pay your model provider directly. Pro and Team plans are listed as coming soon with no price."
+   },
+   {
+    "q": "Which AI models does it work with?",
+    "a": "Your own key for Grok, OpenAI, Anthropic, Gemini or DeepSeek, or a local model through Ollama or LM Studio. There is no shared key."
+   },
+   {
+    "q": "What happens if the agent's fix fails twice?",
+    "a": "According to the maker, it stops after the second miss. The change stays staged with the failing checks shown, you can jump to the failing line, and nothing touches your files unless you keep it."
+   },
+   {
+    "q": "Can I use Aperture's checks with Claude Code or Cursor?",
+    "a": "Yes. Aperture runs an MCP server with one tool, check_change, which any MCP client can call before applying a change. It is free on every plan, according to the README."
+   },
+   {
+    "q": "How do I try it locally?",
+    "a": "Clone the GitHub repository and run it with Node.js 22.6 or newer in replay mode, which plays recorded runs and needs no API key. The exact commands are in the README."
+   },
+   {
+    "q": "How well do the checks work?",
+    "a": "The maker's benchmark uses 48 staged edits, 33 with a mistake and 15 correct. In a Product Hunt post he reported the editor caught 27 of the 33 bad edits with one false alarm on the 15 good ones. We have not verified these numbers."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Aperture on GitHub (README)",
+    "url": "https://github.com/Hankaws/aperture"
+   },
+   {
+    "label": "Aperture licence",
+    "url": "https://raw.githubusercontent.com/Hankaws/aperture/main/LICENSE"
+   },
+   {
+    "label": "Aperture official site and demo",
+    "url": "https://aperturesais.grok.me/"
+   },
+   {
+    "label": "Aperture pricing",
+    "url": "https://aperturesais.grok.me/pricing"
+   },
+   {
+    "label": "Aperture demo video",
+    "url": "https://www.youtube.com/watch?v=4nLOAsB6W8A"
+   },
+   {
+    "label": "Product Hunt page, discussion and forum",
+    "url": "https://www.producthunt.com/products/aperture-7"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/aperture-7/alternatives"
+   },
+   {
+    "label": "Cursor pricing",
+    "url": "https://cursor.com/pricing"
+   },
+   {
+    "label": "Cline pricing",
+    "url": "https://cline.bot/pricing"
+   },
+   {
+    "label": "Zed pricing",
+    "url": "https://zed.dev/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/6fd69cb9-5345-4317-97fd-84157db573ed.png?auto=format&fit=max&w=1400",
+    "alt": "Aperture graphic 'Reads your code. Plans the edit. Waits for you.' beside the editor showing a plan waiting for approval",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/1919e69e-0f3e-41c9-96ab-3eda9cf688a9.png?auto=format&fit=max&w=1400",
+    "alt": "Aperture graphic 'Tests run in your browser tab.' with the editor showing test results under a staged change",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/9f3db233-de3f-45b7-898a-b27960436f75.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Aperture graphic 'Won't blame a test that was already red.' next to a staged diff with check results",
+    "w": 1280,
+    "h": 720
+   },
+   {
+    "url": "https://ph-files.imgix.net/8748b9ac-82d5-4319-821f-89c205e32893.png?auto=format&fit=max&w=1400",
+    "alt": "Aperture graphic 'Click the UI. Restyle it.' showing the design mode beside a live preview",
+    "w": 1400,
+    "h": 838
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/6fd69cb9-5345-4317-97fd-84157db573ed.png?auto=format&fit=max&w=1400",
+    "alt": "Aperture graphic 'Reads your code. Plans the edit. Waits for you.' beside the editor showing a plan waiting for approval",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/1919e69e-0f3e-41c9-96ab-3eda9cf688a9.png?auto=format&fit=max&w=1400",
+    "alt": "Aperture graphic 'Tests run in your browser tab.' with the editor showing test results under a staged change",
+    "w": 1400,
+    "h": 838
+   },
+   {
+    "url": "https://ph-files.imgix.net/9f3db233-de3f-45b7-898a-b27960436f75.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Aperture graphic 'Won't blame a test that was already red.' next to a staged diff with check results",
+    "w": 1280,
+    "h": 720
+   }
+  ]
+ }
+}

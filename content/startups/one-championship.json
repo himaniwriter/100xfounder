@@ -1,0 +1,149 @@
+{
+ "slug": "one-championship",
+ "website": "https://www.onefc.com/",
+ "excerpt": "ONE Championship is a Singapore-founded martial arts media company that stages MMA, Muay Thai, kickboxing and submission grappling events. Its founder says its last private round valued it at $1.4B.",
+ "content": "<p>ONE Championship is a sports media company built around martial arts. It promotes live events featuring mixed martial arts (MMA), Muay Thai, kickboxing and submission grappling, and sells the broadcasts, sponsorships and digital content around them. Its website calls ONE the world's largest martial arts organisation and the home of martial arts. Fights are shown through broadcast partners such as Prime Video in some markets and, for many events, on ONE's own platforms, including watch.onefc.com, YouTube and Facebook, depending on where you are; ONE also has a mobile super app.</p><p>Chatri Sityodtong is ONE's founder, chairman and CEO. Reuters, in a report carried by The Globe and Mail in August 2022, said ONE's parent company, Group ONE Holdings, was laying the groundwork for a US initial public offering once market conditions were right, and was moving its legal domicile from Singapore to the Cayman Islands. The same report cited Nielsen as saying ONE had become Asia's largest sports media property, and said Sityodtong had told an event in Qatar that ONE was valued at $1.4 billion. ONE had no set date for an IPO.</p><p>In June 2024 the Bangkok Post reported that Sityodtong, in an interview with the South China Morning Post, said ONE was on track to reach profitability in 2024 after a series of revenue-raising moves. He said its last funding round with investors had been done at a $1.4 billion valuation in 2021, and that he believed the company was worth more than the roughly $1.3 billion Forbes had estimated. These are the company's own statements; ONE is privately held and its figures are not independently audited in public.</p><p>For fans, watching ONE events can be free or paid depending on your country and the broadcaster. This profile draws on ONE's own site and published reporting. Nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Martial arts sports media",
+  "platform": "Live events, broadcast partners, ONE app and online streams",
+  "starts_at": "Varies by country; some events stream free on ONE's platforms",
+  "schema_category": "EntertainmentApplication",
+  "summary_short": "Martial arts sports media company staging MMA, Muay Thai, kickboxing and grappling events",
+  "maker": {
+   "name": "ONE Championship (Group ONE Holdings)",
+   "url": "https://www.onefc.com/"
+  },
+  "team": [
+   {
+    "name": "Chatri Sityodtong",
+    "role": "Founder, Chairman and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.onefc.com/wp-content/uploads/2018/08/180727-MNL-Stadiumweb.jpg",
+    "alt": "A packed, darkened arena lit by blue spotlights converging on the cage during a ONE Championship event",
+    "credit": "Image: ONE Championship",
+    "w": 1200,
+    "h": 731
+   }
+  ],
+  "use_cases": [
+   "Watching live MMA, Muay Thai, kickboxing and grappling events",
+   "Following martial arts athletes and results in the ONE app",
+   "Sponsoring or broadcasting martial arts content in Asia and worldwide"
+  ],
+  "audience": {
+   "fit": [
+    "follow combat sports, especially Muay Thai and kickboxing",
+    "want free-to-watch events on YouTube or ONE's own platforms where available",
+    "are a brand or broadcaster interested in Asian sports media"
+   ],
+   "not_fit": [
+    "do not watch combat sports",
+    "want a single global price: access depends on your country and broadcaster"
+   ]
+  },
+  "pricing": {
+   "intro": "How you watch ONE, and whether it costs anything, depends on your country. ONE's how-to-watch page lists the broadcaster for each region; for some events it lists free streams on watch.onefc.com, YouTube and Facebook, and for others a partner such as Prime Video.",
+   "plans": [
+    {
+     "name": "ONE's own platforms",
+     "price": "Free for some events",
+     "detail": "watch.onefc.com, YouTube and Facebook, where listed"
+    },
+    {
+     "name": "Broadcast partners",
+     "price": "Depends on partner",
+     "detail": "For example Prime Video in some markets"
+    }
+   ],
+   "notes": [
+    "Check ONE's how-to-watch page for your country."
+   ],
+   "url": "https://www.onefc.com/how-to-watch/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Several martial arts disciplines under one promotion",
+   "Some events free to stream on ONE's own platforms",
+   "Large audience in Asia, per Nielsen as cited by Reuters"
+  ],
+  "cons": [
+   "Viewing options differ by country",
+   "Financial figures are mostly the company's own statements"
+  ],
+  "alternatives": {
+   "intro": "Other major combat sports promotions.",
+   "items": [
+    {
+     "name": "UFC",
+     "url": "https://www.ufc.com/",
+     "what": "The largest MMA promotion",
+     "tags": [
+      "MMA"
+     ],
+     "starts_at": "See its own site",
+     "difference": "MMA only, centred on the US."
+    },
+    {
+     "name": "PFL",
+     "url": "https://pflmma.com/",
+     "what": "Professional Fighters League MMA promotion",
+     "tags": [
+      "MMA"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Season-and-playoff format."
+    },
+    {
+     "name": "Glory Kickboxing",
+     "url": "https://glorykickboxing.com/",
+     "what": "Kickboxing promotion",
+     "tags": [
+      "Kickboxing"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Focused on kickboxing only."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Who founded ONE Championship?",
+    "a": "Chatri Sityodtong, who is also its chairman and CEO."
+   },
+   {
+    "q": "How much is ONE Championship worth?",
+    "a": "Sityodtong has said its last funding round, in 2021, valued it at $1.4 billion; Forbes estimated about $1.3 billion, the Bangkok Post reported."
+   },
+   {
+    "q": "Is ONE Championship going public?",
+    "a": "In 2022 Reuters reported it was preparing for a possible US IPO and moving its domicile to the Cayman Islands, with no set date."
+   },
+   {
+    "q": "Where can I watch ONE Championship?",
+    "a": "It depends on your country. ONE's how-to-watch page lists broadcasters, and some events stream free on its own platforms, YouTube and Facebook."
+   }
+  ],
+  "sources": [
+   {
+    "label": "ONE Championship website",
+    "url": "https://www.onefc.com/"
+   },
+   {
+    "label": "ONE Championship: How to watch",
+    "url": "https://www.onefc.com/how-to-watch/"
+   },
+   {
+    "label": "The Globe and Mail (Reuters): ONE Championship lays groundwork for a U.S. IPO (31 Aug 2022)",
+    "url": "https://www.theglobeandmail.com/investing/investment-ideas/article-mixed-martial-arts-firm-one-championship-lays-groundwork-for-a-us-ipo/"
+   },
+   {
+    "label": "Bangkok Post: ONE Championship primed for record-high revenues (18 Jun 2024)",
+    "url": "https://www.bangkokpost.com/sports/2813239/one-championship-primed-for-record-high-revenues"
+   }
+  ]
+ }
+}

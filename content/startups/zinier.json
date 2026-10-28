@@ -1,0 +1,135 @@
+{
+ "slug": "zinier",
+ "website": "https://www.zinier.com/",
+ "excerpt": "Zinier makes no-code field service management software for telecom, utilities, EV charging and other asset-heavy industries. Products, funding and alternatives.",
+ "content": "<p>Zinier is a San Francisco software company that sells a field service management platform: the system a business uses to schedule technicians, send them to jobs, track parts and assets, and collect the results from the field on a phone. Its website describes the product as customizable and workflow-based, so an operator can build the processes it needs without writing code. The site's copyright line runs from 2014, and TechCrunch described it as a five-year-old startup in January 2020.</p><p>The current product is split into a Z Productivity Suite (scheduling and dispatch, capacity management, parts and inventory, asset and tool management, mobile task execution, forms, timesheets, a customer portal and reporting), Studio Z, a set of no-code and low-code builders, and Z Sidekick, a generative AI assistant. Zinier sells it in Essentials, Accelerator and Enterprise packages and lists integrations with SAP, Oracle, Microsoft, Salesforce, Zendesk, ServiceNow and IBM. The industries it targets are fibre-to-the-premises telecom, EV charging infrastructure, utilities, manufacturing assets and IT equipment. Customers shown on its site include Black & Veatch, NCR, Toshiba, Nokia, Midco and Community Fibre.</p><p>On funding, NGP Capital said in March 2019 that Zinier had closed a $22 million Series B led by returning investor Accel, with Founders Fund, NGP Capital, Qualcomm Ventures and Newfund. In January 2020 TechCrunch reported a $90 million Series C led by ICONIQ Capital with Tiger Global, which took its total raised to about $120 million; TechCrunch also reported, citing an investor, a valuation above $500 million, which the company did not confirm. We found no later funding announcement.</p><p>Zinier does not publish prices. You ask for a quote, and the package and number of users decide the cost. It suits mid-size and large field operations more than a small contractor with a handful of vans.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Field service management software",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "No-code field service management platform for scheduling, dispatch and mobile work",
+  "maker": {
+   "name": "Zinier Inc.",
+   "url": "https://www.zinier.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/62278a9e0a3c8afb35987caa/62384d283006dc0970b08b6d_Scheduling%20Hero.png",
+    "alt": "Zinier's scheduling console: a dispatcher's timeline of technicians and jobs on a desktop, beside a phone showing a technician's task list",
+    "credit": "Image: Zinier (zinier.com)",
+    "w": 1872,
+    "h": 1206
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/62278a9e0a3c8afb35987caa/62278a9e0a3c8a9307987cdb_Zinier%20WebClip.png",
+    "alt": "Zinier's logo mark: eight black dots in a circle, two of them joined",
+    "credit": "Image: Zinier (zinier.com)",
+    "w": 256,
+    "h": 256
+   }
+  ],
+  "use_cases": [
+   "Scheduling and dispatching field technicians against SLAs",
+   "Rolling out and maintaining fibre broadband networks",
+   "Installing and servicing EV chargers",
+   "Tracking parts, tools and assets used on jobs",
+   "Building custom field workflows and forms without code"
+  ],
+  "audience": {
+   "fit": [
+    "run a field workforce of dozens to thousands of technicians",
+    "need workflows that differ from an off-the-shelf tool",
+    "already use SAP, Oracle, Salesforce or ServiceNow and want field data flowing into them"
+   ],
+   "not_fit": [
+    "are a small contractor who wants a cheap self-serve app with published prices",
+    "do not have field technicians"
+   ]
+  },
+  "pricing": {
+   "intro": "Zinier does not publish prices. Its site offers three packages (Essentials, Accelerator and Enterprise) and asks you to request a demo for a quote.",
+   "plans": [
+    {
+     "name": "Essentials / Accelerator / Enterprise",
+     "price": "Quote on request",
+     "detail": "Packages listed on zinier.com; no prices shown"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.zinier.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "No-code builders for custom workflows",
+   "Industry focus on telecom, utilities and EV charging",
+   "Integrations with major ERP and CRM systems"
+  ],
+  "cons": [
+   "No public pricing",
+   "Built for larger operations rather than small teams"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "ServiceMax",
+     "url": "https://www.servicemax.com/",
+     "what": "Field service management software for equipment-heavy industries",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Long-established rival focused on asset-centric service; owned by PTC."
+    },
+    {
+     "name": "Salesforce Field Service",
+     "url": "https://www.salesforce.com/service/field-service-management/",
+     "what": "Field service module of Salesforce",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Best fit if you already run Salesforce for customer service."
+    },
+    {
+     "name": "IFS Field Service Management",
+     "url": "https://www.ifs.com/",
+     "what": "Field service part of the IFS enterprise suite",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Part of a wider ERP and asset-management suite."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Zinier do?",
+    "a": "It sells field service management software for scheduling, dispatch, asset tracking and mobile work, with no-code tools for building custom workflows."
+   },
+   {
+    "q": "How much funding has Zinier raised?",
+    "a": "TechCrunch reported about $120 million in total after its $90 million Series C in January 2020."
+   },
+   {
+    "q": "How much does Zinier cost?",
+    "a": "Zinier does not publish prices; you request a quote for one of its three packages."
+   },
+   {
+    "q": "Which industries use Zinier?",
+    "a": "Its site focuses on fibre telecom, EV charging, utilities, manufacturing and IT equipment."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Zinier official site",
+    "url": "https://www.zinier.com/"
+   },
+   {
+    "label": "TechCrunch: Zinier raises $90M to automate field service management (15 Jan 2020)",
+    "url": "https://techcrunch.com/2020/01/15/zinier-raises-90m-to-automate-filed-service-management"
+   },
+   {
+    "label": "NGP Capital: Zinier closes Series B (5 Mar 2019)",
+    "url": "https://ngpcap.com/insights/zinier-closes-oversubscribed-series-b-funding-round-to-bring-ai-powered-automation-to-the-field-service-industry"
+   }
+  ]
+ }
+}

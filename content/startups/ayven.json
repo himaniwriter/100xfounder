@@ -1,0 +1,285 @@
+{
+ "slug": "ayven",
+ "excerpt": "Ayven is an AI coordinator that turns a team's agenda into owned, dated tickets in Jira, Asana or YouTrack and then chases the work in Slack or Teams for weeks, changing tickets only with approval. Plans, security claims and alternatives.",
+ "content": "<p>Ayven is an AI agent that coordinates a team's work rather than doing tasks on request. Give it an agenda and it breaks the work into pieces, puts an owner and a due date on each and files them as tickets in Jira, Asana or YouTrack. Then it keeps going for weeks: it asks the person who knows, waits, chases people who go quiet, follows up when a ticket passes its due date, moves work to a teammate when someone is away (once you approve), and emails you if a launch looks likely to slip. Your team answers in Slack or Microsoft Teams and the board updates.</p><p>Messages and comments go out on their own, but ticket changes wait for a person's yes, and Ayven never marks a ticket done itself. Every action is logged and can be rolled back. It reads your tools before writing, connecting to Slack, Teams, Jira, Asana, YouTrack, Google Drive, Notion and GitHub, and handles longer projects as \"missions\" with follow-ups timed to deadlines. It works best in English. Ayven says it is SOC 2 Type II certified and GDPR compliant, encrypts data in transit and at rest, and does not train its models on your team's data.</p><p>Ayven is made by Alknoma Ltd., a UK company founded by Howard Chen. It launched on Product Hunt on 11 October 2026 and finished #7 for the day with 155 upvotes. Plans are priced per team, with no per-seat charge.</p><p><em>We have not tested Ayven ourselves. This page brings together its official site, pricing and FAQ, its Product Hunt page and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "AI workflow automation",
+  "platform": "Web app working through Slack or Microsoft Teams",
+  "os": "Browser; interaction through Slack or Teams apps",
+  "starts_at": "Free (500 credits a month); Standard from $179/month billed yearly",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI coordinator that files a team's agenda as tickets and chases the work in Slack or Teams for weeks",
+  "maker": {
+   "name": "Howard Chen",
+   "url": "https://www.producthunt.com/@howard_chen10"
+  },
+  "team": [
+   {
+    "name": "Howard Chen",
+    "role": "Founder, Alknoma",
+    "url": "https://www.producthunt.com/@howard_chen10"
+   },
+   {
+    "name": "Dani Doroftei",
+    "role": "Founder's associate",
+    "url": "https://www.producthunt.com/@dani_doroftei"
+   }
+  ],
+  "ph": {
+   "rank": 7,
+   "votes": 155,
+   "comments": 15,
+   "followers": 113,
+   "launched": "2026-10-11",
+   "as_of": "2026-10-14"
+  },
+  "use_cases": [
+   "Turning a quarterly or monthly agenda into owned, dated tickets",
+   "Chasing late tickets and silent teammates without a manager doing it by hand",
+   "Rerouting work when someone is on leave, with approval",
+   "Collecting answers from several people and passing them back to whoever asked",
+   "Drafting an update document from several teams' work"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Howard Chen says Alknoma didn't start with a product but with an annoyance: AI agents were impressive while you talked to them and then effectively disappeared when you stopped typing. Put one in Slack and you had another bot waiting to be told what to do, yet, as he puts it, you don't prompt your teammates.",
+    "The real problem, he writes, was giving a language model a spine: chaining work across days and months and reaching different people without a human babysitting it. Three lessons shaped Ayven: cutting work into pieces small enough to validate and close; treating waiting as normal and deciding when to wake up next; and treating change, such as a moved deadline, as the signal that matters. The team decided to launch after giving Ayven nothing but September's agenda and watching the board fill up."
+   ],
+   "attribution": "Howard Chen, founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/ayven?comment=5851866"
+  },
+  "audience": {
+   "fit": [
+    "run projects across Slack or Teams and Jira, Asana or YouTrack and spend a lot of time chasing updates",
+    "want follow-ups automated but ticket changes approved by a person",
+    "prefer team pricing with no per-seat charge"
+   ],
+   "not_fit": [
+    "don't use Slack or Microsoft Teams: that is where Ayven talks to people",
+    "need an API or webhooks without an Enterprise plan",
+    "work mainly in a language other than English: it works best in English"
+   ]
+  },
+  "pricing": {
+   "intro": "Ayven's plans cover the whole team at no extra cost per person, in US dollars. Paying yearly saves 10%.",
+   "url": "https://www.ayven.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "500 credits a month (1 credit per finished run), 1 autonomous and 1 interactive slot, all integrations, no card"
+    },
+    {
+     "name": "Standard",
+     "price": "$179/month billed yearly, or $199 month to month",
+     "amount": 179,
+     "currency": "USD",
+     "detail": "Unlimited usage, 1 autonomous and 3 interactive slots, priority support, advanced analytics"
+    },
+    {
+     "name": "Premium",
+     "price": "$358/month billed yearly, or $398 month to month",
+     "amount": 358,
+     "currency": "USD",
+     "detail": "Unlimited usage, 3 autonomous and 5 interactive slots"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "currency": "USD",
+     "detail": "Unlimited slots, custom deployment, dedicated infrastructure, SSO, data residency options, API and webhooks"
+    }
+   ],
+   "notes": [
+    "Credit packs for the Free plan never expire: 500 credits for $40 or 2,000 for $100.",
+    "The FAQ offers a 14-day money-back guarantee on subscriptions; credit packs aren't refundable.",
+    "The FAQ's description of the Standard plan's slots differs from the pricing page; we use the pricing page."
+   ]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Trace, Spoke.ai and Runbear among the alternatives; we compared Ayven with widely used tools that cover the same ground. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Dust",
+     "url": "https://dust.tt/",
+     "what": "Platform for building custom AI agents connected to company tools",
+     "starts_at": "Free seat; Pro €24 per seat a month (excl. VAT)",
+     "difference": "You build your own agents and pay per seat. Ayven is a ready-made coordinator priced per team."
+    },
+    {
+     "name": "Lindy",
+     "url": "https://www.lindy.ai/",
+     "what": "AI assistant and agents, including a Slack teammate and meeting notes",
+     "starts_at": "Free $50 of credits for 7 days; paid from $29.99/month",
+     "difference": "A credit-metered general assistant for email, meetings and workflows, not unlimited team coordination."
+    },
+    {
+     "name": "Motion",
+     "url": "https://www.usemotion.com/",
+     "what": "AI work platform with projects, tasks and calendar planning",
+     "starts_at": "Pro AI $19 per seat a month; free trial",
+     "difference": "Motion replaces your project tool; Ayven sits on top of Slack, Jira or Asana and chases people."
+    }
+   ],
+   "more": "Product Hunt lists Trace, Spoke.ai, Runbear and Surfsite AI as alternatives."
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/ayven/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Agenda mapping and tracking as the target",
+     "A team that proved the tool by running its own work on it"
+    ],
+    "asked": [
+     "Whether it can adjust deadlines when someone is away (yes, or reroute tasks to an available colleague)",
+     "Whether it reassigns work without warning (no; ticket changes wait for approval unless you allow otherwise)"
+    ],
+    "criticised": []
+   },
+   "quotes": [
+    {
+     "text": "Can Ayven adjust deadlines automatically when someone on the team is away?",
+     "author": "Daniel Henry",
+     "url": "https://www.producthunt.com/products/ayven?comment=5939764"
+    },
+    {
+     "text": "the workflow on agenda mapping and tracking is a perfect target",
+     "author": "Dhiraj Wohra",
+     "url": "https://www.producthunt.com/products/ayven?comment=5940516"
+    },
+    {
+     "text": "proving your tool works by actually putting it to work for you is always a best-case scenario!",
+     "author": "Adrian Knoll",
+     "url": "https://www.producthunt.com/products/ayven?comment=5940420"
+    }
+   ]
+  },
+  "pros": [
+   "Runs follow-ups for weeks, not just one-off requests",
+   "Ticket changes need a person's approval; every action is logged and reversible",
+   "Team pricing with no per-seat charge, and a free plan",
+   "Connects to Slack, Teams, Jira, Asana, YouTrack, Drive, Notion and GitHub",
+   "Says it is SOC 2 Type II certified and doesn't train on your data",
+   "14-day money-back guarantee on subscriptions"
+  ],
+  "cons": [
+   "Paid plans start at $179 a month billed yearly",
+   "API and webhooks only on Enterprise",
+   "The Teams app is currently a package you upload yourself",
+   "Works best in English",
+   "Its FAQ and pricing page describe plan slots differently"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/ayven",
+   "x": {
+    "none": "We found no posts about Ayven on X to link yet.",
+    "search_url": "https://x.com/search?q=ayven.ai&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "How much does Ayven cost?",
+    "a": "There is a free plan with 500 credits a month. Standard is $179 a month billed yearly or $199 month to month, Premium $358 or $398, and Enterprise is custom. Plans cover the whole team with no per-seat charge."
+   },
+   {
+    "q": "Can Ayven change tickets on its own?",
+    "a": "No. Messages and comments go out on their own, but ticket changes wait for approval unless you allow otherwise, and Ayven never marks a ticket done itself. Every action is logged and can be rolled back."
+   },
+   {
+    "q": "What happens when someone is away?",
+    "a": "According to the team on Product Hunt, Ayven can adjust deadlines or reroute tasks to an available colleague within the deadline's scope, after approval."
+   },
+   {
+    "q": "Which tools does it work with?",
+    "a": "Slack, Microsoft Teams, Jira, Asana, YouTrack, Google Drive, Notion and GitHub, with more listed as coming soon."
+   },
+   {
+    "q": "Is my data used to train AI?",
+    "a": "Ayven's FAQ says your team's data is never used to train its models, and that it uses frontier models from providers such as Anthropic and OpenAI."
+   },
+   {
+    "q": "Is there a refund?",
+    "a": "Ayven's FAQ offers a 14-day money-back guarantee on subscription plans. Credit packs are not refundable."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Ayven official site",
+    "url": "https://www.ayven.ai/"
+   },
+   {
+    "label": "Ayven pricing",
+    "url": "https://www.ayven.ai/pricing"
+   },
+   {
+    "label": "Ayven FAQ",
+    "url": "https://www.ayven.ai/faq"
+   },
+   {
+    "label": "Alknoma Ltd. at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/16076031"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/ayven"
+   },
+   {
+    "label": "Product Hunt alternatives",
+    "url": "https://www.producthunt.com/products/ayven/alternatives"
+   },
+   {
+    "label": "Dust pricing",
+    "url": "https://dust.tt/home/pricing"
+   },
+   {
+    "label": "Lindy pricing",
+    "url": "https://www.lindy.ai/pricing"
+   },
+   {
+    "label": "Motion pricing",
+    "url": "https://www.usemotion.com/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/ed12f6f2-23cf-49fb-ba09-fd64e48d563f.png?auto=format&fit=max&w=1400",
+    "alt": "Ayven graphic 'Cue the idea, see work get done' showing an agenda turned into tasks"
+   },
+   {
+    "url": "https://ph-files.imgix.net/9b3cfccc-ccb0-4bb0-8323-50a6bfd518bc.png?auto=format&fit=max&w=1400",
+    "alt": "Ayven graphic 'Ask what's stuck' showing a chat about blocked work"
+   },
+   {
+    "url": "https://ph-files.imgix.net/14aa6142-4c16-4649-be31-cbd1efec9c80.png?auto=format&fit=max&w=1400",
+    "alt": "Ayven graphic 'Watch coordination get automated' and 'Check before changes happen' with an approval step"
+   },
+   {
+    "url": "https://ph-files.imgix.net/686fb8e8-a41f-4c5e-bcdf-adebf3586ada.png?auto=format&fit=max&w=1400",
+    "alt": "Ayven settings screens for integrations and missions"
+   }
+  ],
+  "screenshots": [
+   {
+    "url": "https://ph-files.imgix.net/ed12f6f2-23cf-49fb-ba09-fd64e48d563f.png?auto=format&fit=max&w=1400",
+    "alt": "Ayven graphic 'Cue the idea, see work get done' showing an agenda turned into tasks"
+   },
+   {
+    "url": "https://ph-files.imgix.net/9b3cfccc-ccb0-4bb0-8323-50a6bfd518bc.png?auto=format&fit=max&w=1400",
+    "alt": "Ayven graphic 'Ask what's stuck' showing a chat about blocked work"
+   },
+   {
+    "url": "https://ph-files.imgix.net/14aa6142-4c16-4649-be31-cbd1efec9c80.png?auto=format&fit=max&w=1400",
+    "alt": "Ayven graphic 'Watch coordination get automated' and 'Check before changes happen' with an approval step"
+   }
+  ]
+ }
+}

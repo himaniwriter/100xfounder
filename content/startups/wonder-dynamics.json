@@ -1,0 +1,79 @@
+{
+ "slug": "wonder-dynamics",
+ "website": "https://www.wonderdynamics.com/",
+ "excerpt": "Wonder Dynamics made Wonder Studio, an AI tool that puts 3D characters into live-action footage. Autodesk acquired it in May 2024 and renamed the product Autodesk Flow Studio in 2025.",
+ "content": "<p>Wonder Dynamics is the company behind Wonder Studio, a cloud-based tool that uses AI to put computer-generated characters into live-action video. You upload footage of an actor, assign a 3D character, and the software tracks the performance and handles much of the animation, lighting and compositing that a visual effects team would otherwise do by hand. Animation World Network described it as combining AI with established 3D tools, and it offers a plug-in that connects to Autodesk Maya and Blender, so artists can take the results into their usual software.</p><p>The company was co-founded by Nikola Todorovic, its CEO, and the actor Tye Sheridan, its president. CG Channel noted that Wonder Studio, launched in 2023, was the company's first product, and that its advisory board included Steven Spielberg.</p><p><strong>Acquired by Autodesk.</strong> On 21 May 2024 Autodesk announced it had acquired Wonder Dynamics; the terms were not disclosed. Autodesk said Wonder Studio would become part of Flow, its cloud for media and entertainment. In March 2025 Digital Production reported that Wonder Studio had been renamed Autodesk Flow Studio. In August 2025 CG Channel reported that Autodesk had added a free, watermarked tier, cut the prices of the Lite and Pro subscriptions and introduced a Standard tier between them.</p><p>So Wonder Dynamics no longer operates as an independent startup. The product lives on as Autodesk Flow Studio, sold by Autodesk. Autodesk's own product and pricing pages would not load for us, so we do not quote current prices here; check Autodesk's site before you buy.</p><p>This profile draws on Autodesk's announcement as reported by trade press. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI visual effects and animation (acquired by Autodesk)",
+  "platform": "Web (cloud), with Maya and Blender plug-ins",
+  "starts_at": "Now sold by Autodesk as Flow Studio; see Autodesk's pricing",
+  "schema_category": "MultimediaApplication",
+  "summary_short": "AI tool that animates and composites 3D characters into live-action footage; now Autodesk Flow Studio",
+  "maker": {"name": "Autodesk (acquired Wonder Dynamics in May 2024)", "url": "https://www.awn.com/news/autodesk-acquires-wonder-dynamics"},
+  "team": [
+   {"name": "Nikola Todorovic", "role": "Co-founder and CEO"},
+   {"name": "Tye Sheridan", "role": "Co-founder and President; actor"}
+  ],
+  "gallery": [
+   {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tye_Sheridan_by_Gage_Skidmore_2.jpg/1280px-Tye_Sheridan_by_Gage_Skidmore_2.jpg", "alt": "Wonder Dynamics co-founder Tye Sheridan, in a dark striped jacket, speaking on stage at WonderCon 2018", "credit": "Photo: Gage Skidmore, CC BY-SA 3.0, via Wikimedia Commons", "w": 1280, "h": 1693},
+   {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Autodesk_headquarters.jpg/1280px-Autodesk_headquarters.jpg", "alt": "Autodesk's headquarters in San Rafael, California: a curved grey and glass office building with the Autodesk name on top", "credit": "Photo: Coolcaesar, CC BY-SA 3.0, via Wikimedia Commons", "w": 1280, "h": 960}
+  ],
+  "use_cases": [
+   "Replacing an actor with a 3D character in live-action footage",
+   "Capturing an actor's performance as motion data without a mocap suit",
+   "Exporting animation, lighting and camera data to Maya or Blender for finishing",
+   "Prototyping VFX shots on an indie or short-film budget"
+  ],
+  "audience": {
+   "fit": [
+    "are an indie filmmaker or small studio adding CG characters to live footage",
+    "already work in Maya or Blender and want a faster first pass",
+    "want AI motion capture from ordinary video"
+   ],
+   "not_fit": [
+    "want a standalone startup product: it is now part of Autodesk",
+    "need fully hand-controlled, frame-perfect VFX without an AI step"
+   ]
+  },
+  "pricing": {
+   "intro": "Wonder Studio is now sold by Autodesk as Flow Studio. Autodesk's own product and pricing pages did not load for us, so we do not quote prices. CG Channel reported in August 2025 that Autodesk added a free tier that watermarks output, cut the prices of the Lite and Pro subscriptions and added a Standard tier.",
+   "plans": [
+    {"name": "Autodesk Flow Studio", "price": "See Autodesk's pricing page", "detail": "Free (watermarked), Lite, Standard and Pro tiers, per CG Channel's August 2025 report"}
+   ],
+   "notes": ["Prices not quoted because we could not check them on Autodesk's official page."],
+   "url": "https://www.cgchannel.com/2025/08/autodesk-cuts-prices-of-flow-studio-subscriptions/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Automates much of the tracking, animation and compositing for CG characters",
+   "Works with Maya and Blender",
+   "Backed by Autodesk since 2024"
+  ],
+  "cons": [
+   "No longer an independent company",
+   "Results still need artist clean-up for high-end work"
+  ],
+  "alternatives": {
+   "intro": "Other AI tools for motion capture and character animation. We have not compared them hands-on.",
+   "items": [
+    {"name": "Move AI", "url": "https://www.move.ai/", "what": "Markerless motion capture from video", "tags": ["Motion capture"], "starts_at": "See its own pricing page", "difference": "Focuses on motion capture data rather than compositing characters into the shot."},
+    {"name": "Rokoko", "url": "https://www.rokoko.com/", "what": "Motion capture suits and AI video mocap", "tags": ["Motion capture"], "starts_at": "See its own pricing page", "difference": "Sells hardware suits as well as video-based capture."},
+    {"name": "Runway", "url": "https://runwayml.com/", "what": "AI video generation and editing tools", "tags": ["AI video"], "starts_at": "See its own pricing page", "difference": "Generates and edits video with AI rather than animating 3D characters."}
+   ]
+  },
+  "faq": [
+   {"q": "Who owns Wonder Dynamics?", "a": "Autodesk. It announced the acquisition on 21 May 2024; terms were not disclosed."},
+   {"q": "What happened to Wonder Studio?", "a": "It became part of Autodesk's Flow cloud and was renamed Autodesk Flow Studio in March 2025, according to Digital Production."},
+   {"q": "Who founded Wonder Dynamics?", "a": "Nikola Todorovic (CEO) and actor Tye Sheridan (President)."},
+   {"q": "Is there a free version?", "a": "CG Channel reported in August 2025 that Autodesk added a free Flow Studio tier that watermarks output. Check Autodesk's site for current terms."}
+  ],
+  "sources": [
+   {"label": "Animation World Network: Autodesk acquires Wonder Dynamics (21 May 2024)", "url": "https://www.awn.com/news/autodesk-acquires-wonder-dynamics"},
+   {"label": "CG Channel: Autodesk buys Wonder Studio developer Wonder Dynamics (22 May 2024)", "url": "https://www.cgchannel.com/2024/05/autodesk-acquires-wonder-studio-developer-wonder-dynamics/"},
+   {"label": "Digital Production: Wonder Studio rebrands as Autodesk Flow Studio (18 Mar 2025)", "url": "https://digitalproduction.com/2025/03/18/wonder-studio-rebrands-now-flowing-with-autodesk/"},
+   {"label": "CG Channel: Autodesk cuts prices of Flow Studio subscriptions (12 Aug 2025)", "url": "https://www.cgchannel.com/2025/08/autodesk-cuts-prices-of-flow-studio-subscriptions/"},
+   {"label": "Wikimedia Commons: Tye Sheridan and Autodesk headquarters photos", "url": "https://commons.wikimedia.org/wiki/File:Tye_Sheridan_by_Gage_Skidmore_2.jpg"}
+  ]
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "slug": "station",
+ "website": "https://github.com/getstation/desktop-app",
+ "excerpt": "Station was a Paris-built desktop app that put all your work web apps in one window. The company is listed as inactive and getstation.com no longer hosts it, but the app's open-source code is still on GitHub.",
+ "content": "<p>Station was a desktop app for Mac, Windows and Linux that gathered the web apps you use for work, such as Gmail, Slack, Trello, Google Drive and Notion, into a single window. Instead of dozens of browser tabs, each app sat as an icon in a sidebar, with one search bar across all of them, a combined notifications feed and a focus mode that silenced notifications for a while. TechCrunch described it as a sort of Spotlight for web apps.</p><p>Station was built inside eFounders, the Paris startup studio now called Hexa. Hexa's company page says it was known at first as BrowserX, joined the studio's 2017 batch and launched publicly in 2017; it names Julien Berthomier and Alexandre Lachèze as the team. Station took part in Y Combinator's Winter 2018 batch. In May 2018 Tech.eu reported that the Paris-based company raised €3.25 million (reported by others as $3.25 million) for what it called a browser for work, designed to cut distractions and tab overload.</p><p><strong>No longer active as a company.</strong> Both Y Combinator's directory and Hexa's portfolio page now list Station as inactive, and Y Combinator's profile describes its later pivot towards a team knowledge base. The getstation.com domain no longer hosts Station; when we checked it redirected to an unrelated site, so we do not link to it. The desktop app's source code remains public on GitHub under the Apache 2.0 licence, and the repository was still receiving updates in October 2026.</p><p>If you want an app like this today, look at the alternatives below. This profile draws on Station's GitHub repository and published reporting. We have not tested the app, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Workspace browser (company inactive)",
+  "platform": "macOS, Windows and Linux desktop app (open source)",
+  "starts_at": "Free, open-source code on GitHub",
+  "schema_category": "BrowserApplication",
+  "summary_short": "Desktop app that combined work web apps in one window; company now inactive, code open source",
+  "maker": {
+   "name": "Station (eFounders/Hexa studio company; inactive)",
+   "url": "https://www.hexa.com/companies/station"
+  },
+  "team": [
+   {
+    "name": "Julien Berthomier",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Alexandre Lachèze",
+    "role": "Co-founder (per Hexa)"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://raw.githubusercontent.com/getstation/desktop-app/main/docs/screenshots/1.png",
+    "alt": "Station's App Store screen listing popular apps such as Gmail, Google Calendar, Google Drive, WhatsApp, Slack, Trello, Twitter and Telegram, with a dark sidebar on the left",
+    "credit": "Image: Station, from its GitHub repository (Apache 2.0)",
+    "w": 1920,
+    "h": 1042
+   },
+   {
+    "url": "https://raw.githubusercontent.com/getstation/desktop-app/main/packages/app/build/icon_512x512.png",
+    "alt": "Station app icon: a blue gradient ring above a short blue bar on a white rounded square",
+    "credit": "Image: Station, from its GitHub repository (Apache 2.0)",
+    "w": 512,
+    "h": 512
+   }
+  ],
+  "use_cases": [
+   "Keeping Gmail, Slack, Trello and other web apps in one desktop window",
+   "Searching across several work apps from one search bar",
+   "Seeing notifications from many apps in a single feed",
+   "Building on or self-compiling an open-source multi-app browser"
+  ],
+  "audience": {
+   "fit": [
+    "are a developer interested in the open-source code of an Electron multi-app browser",
+    "want to understand how the workspace-browser category developed"
+   ],
+   "not_fit": [
+    "need a supported product: the company is listed as inactive",
+    "want a download from an official website: getstation.com no longer hosts Station"
+   ]
+  },
+  "pricing": {
+   "intro": "Station's code is open source under the Apache 2.0 licence on GitHub. There is no company-run paid service to buy.",
+   "plans": [
+    {
+     "name": "Open-source desktop app",
+     "price": "Free",
+     "detail": "Build from the GitHub repository; Apache 2.0 licence"
+    }
+   ],
+   "notes": [
+    "The original getstation.com website is no longer Station's."
+   ],
+   "url": "https://github.com/getstation/desktop-app",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Open source under a permissive licence",
+   "Large catalogue of web-app integrations"
+  ],
+  "cons": [
+   "Company inactive; no official support",
+   "Original website domain no longer belongs to the project"
+  ],
+  "alternatives": {
+   "intro": "Maintained apps that combine web apps in one window. We have not compared them hands-on.",
+   "items": [
+    {
+     "name": "Ferdium",
+     "url": "https://ferdium.org/",
+     "what": "Open-source app that combines messaging and web apps",
+     "tags": [
+      "Open source",
+      "Workspace browser"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Community-maintained fork in the Franz family."
+    },
+    {
+     "name": "Rambox",
+     "url": "https://rambox.app/",
+     "what": "Workspace browser for managing many web apps",
+     "tags": [
+      "Workspace browser"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Commercial product with paid plans."
+    },
+    {
+     "name": "Shift",
+     "url": "https://tryshift.com/",
+     "what": "Desktop app for email accounts and web apps",
+     "tags": [
+      "Workspace browser"
+     ],
+     "starts_at": "See its own pricing page",
+     "difference": "Strong focus on managing several email accounts."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Is Station still available?",
+    "a": "The company is listed as inactive by Y Combinator and Hexa, and getstation.com no longer hosts Station. Its open-source code is on GitHub."
+   },
+   {
+    "q": "Who made Station?",
+    "a": "A team at the Paris startup studio eFounders (now Hexa), led by co-founder and CEO Julien Berthomier."
+   },
+   {
+    "q": "How much did Station raise?",
+    "a": "€3.25 million in 2018, according to Tech.eu (other outlets reported $3.25 million)."
+   },
+   {
+    "q": "Is Station open source?",
+    "a": "Yes. The desktop app's code is public on GitHub under the Apache 2.0 licence."
+   }
+  ],
+  "sources": [
+   {
+    "label": "GitHub: getstation/desktop-app",
+    "url": "https://github.com/getstation/desktop-app"
+   },
+   {
+    "label": "TechCrunch: Station combines all your messy web apps into a single app (26 Oct 2017)",
+    "url": "https://techcrunch.com/2017/10/26/station-combines-all-your-messy-web-apps-into-a-single-app/"
+   },
+   {
+    "label": "Hexa: Station company page (status inactive)",
+    "url": "https://www.hexa.com/companies/station"
+   },
+   {
+    "label": "Y Combinator: Station (W18, inactive)",
+    "url": "https://www.ycombinator.com/companies/station"
+   },
+   {
+    "label": "Tech.eu: French startup Station raises €3.25 million (2 May 2018)",
+    "url": "https://tech.eu/2018/05/02/station-raises-funding/"
+   },
+   {
+    "label": "VentureBeat: France's Station raises $3.25 million for workplace browser",
+    "url": "https://venturebeat.com/business/frances-station-raises-3-25-million-for-workplace-browser-that-unifies-all-your-web-apps"
+   }
+  ]
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "input": "https://www.producthunt.com/posts/weave-router-2-0",
+ "final_url": "https://www.producthunt.com/products/weave?launch=weave-router-2-0",
+ "launch": {
+  "slug": "weave-router-2-0",
+  "featuredAt": "2026-09-16T00:01:00-07:00",
+  "dailyRank": "1",
+  "points": 319,
+  "commentsCount": 30,
+  "source": "launches page (no gallery/comments)",
+  "makers": [
+   {
+    "name": "Steven",
+    "username": "steventohme",
+    "headline": "Engineer #1 at Weave"
+   },
+   {
+    "name": "Drew Bailey",
+    "username": "drew_bailey",
+    "headline": "Senior Software Engineer makes code fast"
+   },
+   {
+    "name": "Brennan Lupyrypa",
+    "username": "brennan_lupyrypa",
+    "headline": "Founding GTM Engineer @ Weave (YC 25)"
+   },
+   {
+    "name": "Andrew Churchill",
+    "username": "adchurch",
+    "headline": "Founder at Weave"
+   },
+   {
+    "name": "Adam Cohen",
+    "username": "adambcohen",
+    "headline": "Co-Founder @ Weave"
+   }
+  ]
+ },
+ "product": {
+  "name": "Weave Engineering Intelligence",
+  "slug": "weave",
+  "tagline": "ML Models to Measure & Optimize Engineering Work",
+  "description": "Weave understands engineering work by combining LLMs and domain-specific machine learning. We tell you how much work is getting done, how good it is and how to optimize your token allocation. Used by startups and the fortune 100 (YC W25).",
+  "websiteUrl": "https://weaveos.com",
+  "reviewsCount": 2,
+  "reviewsRating": 4.5,
+  "followersCount": 937,
+  "twitterUrl": "https://twitter.com/workweave",
+  "linkedinUrl": "https://www.linkedin.com/company/weave-dev/?viewAsMember=true",
+  "instagramUrl": "",
+  "githubUrl": "https://github.com/weave-os/router",
+  "postsCount": 3,
+  "screenshots": [
+   "https://ph-files.imgix.net/f5cdc21f-eb93-487f-99a1-fa66aa190bfa.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/3b07563a-bfcc-44fd-b20b-72d0b250a96e.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/dfd3c315-6f0a-40bc-abc3-fc116a547297.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/ed123452-b778-4c04-9fa4-79d56ae64b9f.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/00070e70-788d-4059-bd7f-711ed7e59918.png?auto=format&fit=crop",
+   "https://ph-files.imgix.net/a67cb56d-593c-42fd-86b4-d5d8894274db.png?auto=format&fit=crop"
+  ],
+  "alternatives": [
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   },
+   {
+    "name": null,
+    "slug": null,
+    "tagline": null,
+    "reviewsRating": null,
+    "reviewsCount": null
+   }
+  ]
+ },
+ "comments": []
+}

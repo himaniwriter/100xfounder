@@ -1,0 +1,168 @@
+{
+ "slug": "wiz",
+ "website": "https://www.wiz.io/",
+ "excerpt": "Wiz is a cloud and AI security platform, now part of Google Cloud after a $32 billion acquisition. What it does, how it is priced, and alternatives.",
+ "content": "<p>Wiz is a cloud security company. Its platform connects to an organisation's cloud accounts and code environments and, in Google's words, secures everything organisations build and run in the cloud. Wiz now calls it a Cloud and AI Security Platform, covering AI systems as well as ordinary cloud workloads. Google describes Wiz as a platform that connects to all major clouds and code environments, and Wiz says its products keep working across Amazon Web Services, Google Cloud, Microsoft Azure and Oracle Cloud. Assaf Rappaport is Wiz's co-founder and CEO.</p>\n<h2>Google's acquisition</h2>\n<p>On 18 March 2025 Google announced an agreement to buy Wiz, then headquartered in New York, for $32 billion in cash, subject to closing adjustments. Google said on 11 March 2026 that it had completed the acquisition. Wiz has joined Google Cloud but keeps its own brand, and Google said Wiz products would continue to be available on all major clouds, not only its own. Google Cloud said it will offer an AI-powered security platform that combines Google's Threat Intelligence and Security Operations with Wiz's Cloud and AI Security Platform.</p>\n<p>In a post on 29 July 2026 looking back at six months inside Google, Rappaport wrote that about 90% of Wiz customers use its AI-powered security features, that the Wiz Integration Network now has 300 integrations, and that AI Threat Defense, which combines Wiz, Mandiant and Google DeepMind, had launched with Google.</p>\n<h2>Pricing</h2>\n<p>Wiz does not publish prices. Its pricing page names three ways to buy, Wiz One, Wiz Go and À la Carte, and asks you to fill in a form for a custom quote. Expect a sales process rather than self-serve sign-up.</p>\n<h2>Who it is for</h2>\n<p>Wiz is built for security and cloud teams at companies running significant workloads in one or more public clouds, especially those that use several clouds at once and want a single view of risk across them. Very small teams with a single cloud account may find the cloud provider's own security tools enough to start with.</p>\n<p><em>We have not tested Wiz ourselves. This page brings together Wiz's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "Cloud security (CNAPP)",
+  "platform": "SaaS, connecting to AWS, Google Cloud, Azure and Oracle Cloud",
+  "starts_at": "Custom quote",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Cloud and AI security platform, part of Google Cloud since March 2026",
+  "maker": {
+   "name": "Wiz (Google Cloud)",
+   "url": "https://www.wiz.io/"
+  },
+  "team": [
+   {
+    "name": "Assaf Rappaport",
+    "role": "Co-founder and CEO",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/wiz-acquisition/"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://www.datocms-assets.com/75231/1742297622-wiz-google.png",
+    "alt": "Graphic of the Wiz logo, a red heart and the Google logo on a blue background, from Wiz's announcement about joining Google",
+    "credit": "Image: Wiz",
+    "w": 1920,
+    "h": 1080
+   },
+   {
+    "url": "https://www.wiz.io/_next/static/immutable/media/social_share_image.0laakpxcv7kyu.jpg",
+    "alt": "The white Wiz logo with a small star on a bright blue background",
+    "credit": "Image: Wiz",
+    "w": 1600,
+    "h": 901
+   }
+  ],
+  "use_cases": [
+   "Get one view of security risks across several cloud providers",
+   "Connect cloud accounts and code environments to one security platform",
+   "Assess the security of AI systems running in the cloud"
+  ],
+  "audience": {
+   "fit": [
+    "are a security or cloud team at a company running workloads on AWS, Azure, Google Cloud or Oracle Cloud",
+    "use more than one cloud and want a single risk view",
+    "already buy from Google Cloud and want security from the same vendor"
+   ],
+   "not_fit": [
+    "want a published price or self-serve plan",
+    "are a very small team with one cloud account; the provider's built-in tools may be enough to start",
+    "need on-premises-only security tooling"
+   ]
+  },
+  "pros": [
+   "Covers all major clouds, which Google says will continue",
+   "Large integration ecosystem (300 integrations, per Wiz)",
+   "Backed by Google Cloud's threat intelligence"
+  ],
+  "cons": [
+   "No public pricing",
+   "Sales-led buying process",
+   "Some buyers may weigh that a cloud provider now owns a multi-cloud security tool"
+  ],
+  "pricing": {
+   "intro": "Wiz does not publish prices; you request a custom quote.",
+   "url": "https://www.wiz.io/pricing",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Wiz One",
+     "price": "Custom quote",
+     "detail": "Plan named on Wiz's pricing page"
+    },
+    {
+     "name": "Wiz Go",
+     "price": "Custom quote",
+     "detail": "Plan named on Wiz's pricing page"
+    },
+    {
+     "name": "À la Carte",
+     "price": "Custom quote",
+     "detail": "Buy individual products"
+    }
+   ],
+   "notes": [
+    "The pricing page leads to a multi-step pricing request form; no figures are shown."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other cloud security platforms. Descriptions come from each company's own site; check with them for pricing.",
+   "items": [
+    {
+     "name": "CrowdStrike Falcon Cloud Security",
+     "url": "https://www.crowdstrike.com/en-us/platform/cloud-security/",
+     "what": "Cloud security from code to cloud across clouds, applications and data",
+     "starts_at": "See its site",
+     "difference": "Part of CrowdStrike's wider endpoint and security platform."
+    },
+    {
+     "name": "Orca Security",
+     "url": "https://orca.security/",
+     "what": "AI-powered cloud security platform (CNAPP) for multi-cloud environments, from build to runtime",
+     "starts_at": "See its site",
+     "difference": "An independent multi-cloud security vendor."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Wiz do?",
+    "a": "It connects to an organisation's cloud and code environments and finds security risks across everything it builds and runs in the cloud, including AI systems."
+   },
+   {
+    "q": "Did Google buy Wiz?",
+    "a": "Yes. Google agreed in March 2025 to buy Wiz for $32 billion in cash and completed the acquisition on 11 March 2026. Wiz is now part of Google Cloud and keeps its brand."
+   },
+   {
+    "q": "Does Wiz still work with AWS and Azure?",
+    "a": "Yes. Google said Wiz products will continue to work and be available across all major clouds, including AWS, Azure and Oracle Cloud."
+   },
+   {
+    "q": "How much does Wiz cost?",
+    "a": "Prices are not published. Wiz offers Wiz One, Wiz Go and à la carte options through a custom quote."
+   },
+   {
+    "q": "Who runs Wiz?",
+    "a": "Assaf Rappaport is co-founder and CEO."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Wiz official site",
+    "url": "https://www.wiz.io/"
+   },
+   {
+    "label": "Wiz pricing",
+    "url": "https://www.wiz.io/pricing"
+   },
+   {
+    "label": "Alphabet, 18 Mar 2025: Google announces agreement to acquire Wiz",
+    "url": "https://abc.xyz/investor/news/news-details/2025/Google-Announces-Agreement-to-Acquire-Wiz-03-18-2025/default.aspx"
+   },
+   {
+    "label": "Google blog, 11 Mar 2026: Google completes acquisition of Wiz",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/wiz-acquisition/"
+   },
+   {
+    "label": "Google Cloud blog: welcoming Wiz to Google Cloud",
+    "url": "https://cloud.google.com/blog/products/identity-security/google-completes-acquisition-of-wiz"
+   },
+   {
+    "label": "Wiz blog, 29 Jul 2026: Wiz's first 6 months as part of Google",
+    "url": "https://www.wiz.io/blog/6-months-google"
+   },
+   {
+    "label": "CrowdStrike Falcon Cloud Security",
+    "url": "https://www.crowdstrike.com/en-us/platform/cloud-security/"
+   },
+   {
+    "label": "Orca Security",
+    "url": "https://orca.security/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

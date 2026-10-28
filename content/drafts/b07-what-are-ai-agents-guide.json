@@ -1,0 +1,200 @@
+{
+  "type": "post",
+  "slug": "what-are-ai-agents-guide",
+  "title": "What are AI agents? A 2026 guide for founders and teams",
+  "excerpt": "What AI agents are, real deployments from Claude Code to Agentforce, the main SDKs, MCP and A2A, the risks, and how founders can start with agents in 2026.",
+  "category": "in-depth",
+  "tags": [
+    "AI agents",
+    "agentic AI",
+    "Model Context Protocol",
+    "OpenAI",
+    "Anthropic",
+    "AI frameworks",
+    "prompt injection",
+    "startups"
+  ],
+  "content": "<p>An AI agent is software that uses a large language model to decide its own next steps and call tools, such as a code runner, a browser or a company API, until a goal is met. That separates it from a chatbot, which only answers. For founders and teams in 2026, the practical questions are where agents earn their cost, which frameworks to build on, and how to keep them safe.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>Anthropic, OpenAI, Google and IBM all describe agents in similar terms: a model that plans, picks tools and acts with some independence, not just a chat window.</li>\n<li>Agents are already running in production: coding agents from Anthropic, OpenAI and GitHub, Salesforce's Agentforce for customer service, and Klarna's support assistant.</li>\n<li>The main building blocks are open: SDKs from OpenAI, Anthropic, Google and Microsoft, frameworks such as LangGraph and CrewAI, and two shared protocols, MCP and A2A.</li>\n<li>The risks are real. Gartner expects over 40% of agentic AI projects to be cancelled by the end of 2027, and prompt injection tops OWASP's list of LLM risks.</li>\n<li>Start with one narrow, measurable workflow, give the agent few permissions, and keep a human in charge of anything irreversible.</li>\n</ul>\n\n<h2>What an AI agent actually is</h2>\n<p>There is no single official definition, but the major labs and vendors now describe agents in very similar terms.</p>\n<p>In its widely read December 2024 essay \"Building effective agents\", <a href=\"https://www.anthropic.com/engineering/building-effective-agents\">Anthropic</a> splits \"agentic systems\" into two kinds. <strong>Workflows</strong> are systems where models and tools follow code paths a developer has fixed in advance. <strong>Agents</strong> are systems where the model directs its own process and decides which tools to use and when. Much of what gets marketed as an \"agent\" is really a workflow, which is often the better choice.</p>\n<p>OpenAI's April 2025 guide, \"A practical guide to building agents\", describes agents as systems that complete tasks on a user's behalf with a high degree of independence, according to <a href=\"https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf\">OpenAI</a>. Apps that use a model without letting it control the workflow, such as simple chatbots or sentiment classifiers, do not count. In OpenAI's framing an agent has three parts: a <strong>model</strong> that reasons and decides, <strong>tools</strong> that let it read from and act on outside systems, and <strong>instructions</strong> that set its behaviour and guardrails.</p>\n<p><a href=\"https://cloud.google.com/discover/what-are-ai-agents\">Google Cloud</a> defines agents as software systems that use AI to pursue goals and complete tasks for users, showing reasoning, planning and memory along with some autonomy to make decisions. <a href=\"https://www.ibm.com/think/topics/ai-agents\">IBM</a> describes an agent as a system that performs tasks autonomously by designing its own workflow with the tools available to it.</p>\n<p>A useful working test: if the software chooses its own next action, calls outside tools and keeps going until the goal is met or it hands back to a person, it is an agent. If every step is scripted, it is automation with a model inside.</p>\n\n<h3>How an agent works, step by step</h3>\n<p>Most agents run a loop.</p>\n<ol>\n<li><strong>Take a goal.</strong> A user, a schedule or an event (a new support ticket, a failed build) gives the agent a task.</li>\n<li><strong>Plan.</strong> The model breaks the task into steps. IBM calls this goal initialisation and planning.</li>\n<li><strong>Act through tools.</strong> The model calls a tool: a search, a database query, a code runner, a browser or a company API.</li>\n<li><strong>Observe and adjust.</strong> It reads the result and decides what to do next, retrying or changing course if something fails.</li>\n<li><strong>Stop or hand off.</strong> It finishes, or it returns control to a human. OpenAI's guide says agents should be able to halt and give control back to the user when they fail.</li>\n</ol>\n<p>Agents trade latency and cost for better results on hard tasks, and their autonomy brings higher costs and a risk of compounding errors, according to <a href=\"https://www.anthropic.com/engineering/building-effective-agents\">Anthropic</a>. That is why the same essay advises starting with the simplest thing that works, often a single well-prompted model call, and adding agentic behaviour only for open-ended tasks whose steps cannot be predicted.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Real AI agents already in production</h2>\n\n<h3>Coding agents</h3>\n<p>Software engineering was the first area where agents became everyday tools. Anthropic introduced <strong>Claude Code</strong> as a limited research preview on 24 February 2025, describing a command-line tool that can search and read code, edit files, write and run tests, and commit and push to GitHub, according to <a href=\"https://www.anthropic.com/news/claude-3-7-sonnet\">Anthropic</a>.</p>\n<p>OpenAI launched <strong>Codex</strong> on 16 May 2025 as a coding agent inside ChatGPT that works in an isolated cloud sandbox preloaded with the user's repository. At launch it had no internet access while running a task, according to <a href=\"https://techcrunch.com/2025/05/16/openai-launches-codex-an-ai-coding-agent-in-chatgpt/\">TechCrunch</a>.</p>\n<p>GitHub announced the <strong>Copilot coding agent</strong> on 19 May 2025. Developers assign a GitHub issue to Copilot, which works in a GitHub Actions environment and opens a draft pull request for review, according to <a href=\"https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/\">GitHub</a>. Its guardrails make a good template: the agent can push only to branches it created, the developer who asked for the change cannot approve it, CI/CD workflows need human approval before they run, and internet access is limited to trusted destinations.</p>\n\n<h3>General-purpose agents</h3>\n<p>On 17 July 2025 OpenAI launched <strong>ChatGPT agent</strong>, which combines the website-browsing abilities of its earlier Operator tool with the research abilities of deep research. It can work through a user's calendar, build editable slide decks and run code, according to <a href=\"https://techcrunch.com/2025/07/17/openai-launches-a-general-purpose-agent-in-chatgpt/\">TechCrunch</a>. OpenAI disabled some memory features at launch to reduce prompt injection risk, the report said.</p>\n\n<h3>Customer service agents</h3>\n<p>Salesforce made <strong>Agentforce</strong> generally available on 29 October 2024, pricing its Service Agent from $2 per conversation, according to <a href=\"https://www.salesforce.com/news/press-releases/2024/10/29/agentforce-general-availability-announcement/\">Salesforce</a>. In the same release, publisher Wiley reported a more than 40% increase in case resolution compared with its previous chatbot.</p>\n<p>Klarna's assistant is the most cited case. In February 2024 Klarna said its AI assistant had handled 2.3 million conversations in its first month, two-thirds of its customer service chats, doing work equal to 700 full-time agents and cutting average resolution time from 11 minutes to under two, according to <a href=\"https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/\">Klarna</a>. By May 2025, chief executive Sebastian Siemiatkowski told Bloomberg that the company was hiring human agents again because a focus on cost had led to lower quality, as reported by <a href=\"https://fortune.com/2025/05/09/klarna-ai-humans-return-on-investment/\">Fortune</a>. The lesson: customers still want a guaranteed route to a person.</p>\n\n<!-- xf-image-3 -->\n\n<h2>Frameworks and SDKs for building agents</h2>\n<p>You do not have to write the agent loop yourself. The main options, as each project describes itself:</p>\n<table>\n<thead><tr><th>Toolkit</th><th>From</th><th>What it is good for</th></tr></thead>\n<tbody>\n<tr><td>OpenAI Agents SDK</td><td>OpenAI</td><td>A lightweight library built around agents, handoffs between agents, guardrails and sessions, with built-in tracing. OpenAI calls it a production-ready upgrade of its earlier Swarm experiment.</td></tr>\n<tr><td>Claude Agent SDK</td><td>Anthropic</td><td>The same tools, agent loop and context management that power Claude Code, in Python and TypeScript, with hooks, subagents, permissions and MCP support.</td></tr>\n<tr><td>Agent Development Kit (ADK)</td><td>Google</td><td>An open-source framework for Python, TypeScript, Go, Java and Kotlin that works with Gemini and other models and deploys to your own infrastructure or Google Cloud.</td></tr>\n<tr><td>Microsoft Agent Framework</td><td>Microsoft</td><td>An open-source SDK and runtime, announced on 1 October 2025, that combines Semantic Kernel and AutoGen and supports MCP and A2A.</td></tr>\n<tr><td>LangGraph</td><td>LangChain</td><td>An MIT-licensed, low-level orchestration framework for stateful agents with human-in-the-loop checks and persistent memory.</td></tr>\n<tr><td>CrewAI</td><td>CrewAI</td><td>An open-source framework for multi-agent \"crews\" that work inside event-driven \"flows\".</td></tr>\n</tbody>\n</table>\n<p>Sources: <a href=\"https://openai.github.io/openai-agents-python/\">OpenAI Agents SDK docs</a>, <a href=\"https://code.claude.com/docs/en/agent-sdk/overview\">Claude Agent SDK docs</a>, <a href=\"https://adk.dev/\">Google ADK docs</a>, <a href=\"https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/\">Microsoft</a>, <a href=\"https://www.langchain.com/langgraph\">LangChain</a> and <a href=\"https://docs.crewai.com/en/introduction\">CrewAI</a>.</p>\n<p>If you depend on one model provider, its SDK is usually the shortest path; if you need to swap models or run branching with approvals, a model-neutral orchestrator gives more control. Either way, insist on tracing, because debugging an agent without a record of its decisions is close to impossible.</p>\n\n<h2>MCP and A2A: the plumbing between agents and tools</h2>\n<p>The <strong>Model Context Protocol (MCP)</strong>, launched by Anthropic on 25 November 2024, is an open standard for connecting AI applications to data sources and tools through one interface instead of a custom connector for each system, according to <a href=\"https://www.anthropic.com/news/model-context-protocol\">Anthropic</a>. On 9 December 2025 the Linux Foundation formed the Agentic AI Foundation, with MCP, Block's goose and OpenAI's AGENTS.md as founding projects, according to the <a href=\"https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation\">Linux Foundation</a>. It said there were more than 10,000 published MCP servers and that MCP had been adopted in Claude, Cursor, Microsoft Copilot, Gemini, VS Code and ChatGPT.</p>\n<p>The <strong>Agent2Agent protocol (A2A)</strong>, announced by Google on 9 April 2025 with more than 50 technology partners, gives agents built on different frameworks a standard way to communicate and coordinate, according to <a href=\"https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/\">Google</a>. Google positions it as complementary to MCP: MCP connects an agent to tools and context, while A2A connects agents to each other.</p>\n<p>For a startup, exposing your product's key actions through an MCP server makes it usable by customers' agents without bespoke integrations.</p>\n\n<!-- xf-image-4 -->\n\n<h2>Risks: security, cost and reliability</h2>\n\n<h3>Prompt injection and over-broad permissions</h3>\n<p>Prompt injection is ranked first in OWASP's Top 10 for LLM applications. <a href=\"https://genai.owasp.org/llmrisk/llm01-prompt-injection/\">OWASP</a> separates direct injection, where a user's input changes the model's behaviour, from indirect injection, where instructions hidden in a web page, file or email take over the model when it reads them. Agents are especially exposed because they act on what they read. OWASP's recommended mitigations include giving the model the minimum access it needs, requiring human approval for privileged actions, and clearly separating untrusted content from instructions. Its Agentic Security Initiative published a separate guide in February 2025 covering agent-specific threats such as memory poisoning, tool misuse and privilege compromise, according to <a href=\"https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/\">OWASP</a>.</p>\n\n<h3>Cost and unclear value</h3>\n<p>Gartner predicted in June 2025 that more than 40% of agentic AI projects will be cancelled by the end of 2027 because of rising costs, unclear business value or weak risk controls, according to <a href=\"https://tech.yahoo.com/ai/articles/over-40-agentic-ai-projects-100510349.html\">Reuters</a>. Gartner also warned of \"agent washing\", the rebranding of chatbots and assistants as agents, and estimated that only about 130 of the thousands of vendors claiming agentic AI were genuine. It still expects agentic AI to make at least 15% of day-to-day work decisions autonomously by 2028, up from 0% in 2024.</p>\n<p>Separately, an IBM survey of chief executives found that only one in four AI projects had delivered the expected return on investment, as reported by <a href=\"https://fortune.com/2025/05/09/klarna-ai-humans-return-on-investment/\">Fortune</a>.</p>\n\n<h3>Reliability</h3>\n<p>Errors compound across a long run. Anthropic recommends extensive testing in sandboxed environments with guardrails. OpenAI's guide names two triggers for handing control to a person: when the agent exceeds a set number of failures or retries, and before high-risk actions that are sensitive, irreversible or high stakes.</p>\n\n<h2>How to start with AI agents</h2>\n<ol>\n<li><strong>Pick a workflow that has resisted automation.</strong> OpenAI's guide points to three signs: complex judgement calls, rule sets that have become hard to maintain, and heavy use of unstructured text. If simple rules work, use rules.</li>\n<li><strong>Try a workflow before an agent.</strong> Many tasks only need a fixed chain of model calls.</li>\n<li><strong>Start with one agent and a few tools.</strong> OpenAI recommends growing a single agent by adding tools before splitting work across several agents, because it keeps evaluation and maintenance simpler.</li>\n<li><strong>Set permissions first.</strong> Read-only by default, scoped keys, approval for production writes, and a log of every tool call.</li>\n<li><strong>Measure against a baseline.</strong> Track task success, cost per completed task and how often a human steps in, compared with the old process.</li>\n</ol>\n<p>If you want to work on these systems rather than buy them, our <a href=\"/jobs/ai-ml-jobs/\">AI and machine learning jobs board</a> lists openings from official career pages, including roles at <a href=\"/jobs/company/anthropic/\">Anthropic</a> and <a href=\"/jobs/company/openai/\">OpenAI</a>.</p>\n\n<!-- xf-image-5 -->\n\n<h2>Why it matters</h2>\n<p>Agents shift software from presenting information to taking action, which lets small teams cover more ground. But the evidence so far rewards restraint: narrow tasks, tight permissions, honest measurement and a human for the hard cases. Teams that treat agents as a product to test, not a label for a chatbot, are likelier to avoid Gartner's 40%. Follow our <a href=\"/news/\">AI news coverage</a> for new launches as they happen.</p>\n\n<h2>FAQ</h2>\n<h3>What is the difference between an AI agent and a chatbot?</h3>\n<p>A chatbot answers messages. An agent decides its own next steps and uses tools such as search, code execution or business APIs to complete a task.</p>\n<h3>What is the difference between an agent and a workflow?</h3>\n<p>In Anthropic's definition, a workflow follows code paths fixed in advance, while an agent lets the model decide the process and which tools to use.</p>\n<h3>Which framework should a startup use to build AI agents?</h3>\n<p>If you are committed to one model provider, start with its SDK, such as the OpenAI Agents SDK or the Claude Agent SDK. For model-neutral orchestration with human approvals, consider LangGraph, Google's ADK or Microsoft Agent Framework.</p>\n<h3>What is MCP in AI agents?</h3>\n<p>The Model Context Protocol is an open standard, launched by Anthropic in November 2024 and now part of the Linux Foundation's Agentic AI Foundation, for connecting AI applications to tools and data through one common interface.</p>\n<h3>Are AI agents safe to use with company data?</h3>\n<p>They can be, with controls. Because of prompt injection, OWASP recommends least-privilege access and human approval for privileged actions.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Anthropic, \"<a href=\"https://www.anthropic.com/engineering/building-effective-agents\">Building effective agents</a>\", 19 December 2024</li>\n<li>OpenAI, \"<a href=\"https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf\">A practical guide to building agents</a>\", April 2025</li>\n<li>Google Cloud, \"<a href=\"https://cloud.google.com/discover/what-are-ai-agents\">What is an AI agent?</a>\", updated 2 April 2026</li>\n<li>IBM, \"<a href=\"https://www.ibm.com/think/topics/ai-agents\">What are AI agents?</a>\", accessed 4 October 2026</li>\n<li>Anthropic, \"<a href=\"https://www.anthropic.com/news/claude-3-7-sonnet\">Claude 3.7 Sonnet and Claude Code</a>\", 24 February 2025</li>\n<li>TechCrunch, \"<a href=\"https://techcrunch.com/2025/05/16/openai-launches-codex-an-ai-coding-agent-in-chatgpt/\">OpenAI launches Codex, an AI coding agent, in ChatGPT</a>\", 16 May 2025</li>\n<li>GitHub, \"<a href=\"https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/\">GitHub Copilot: Meet the new coding agent</a>\", 19 May 2025</li>\n<li>TechCrunch, \"<a href=\"https://techcrunch.com/2025/07/17/openai-launches-a-general-purpose-agent-in-chatgpt/\">OpenAI launches a general purpose agent in ChatGPT</a>\", 17 July 2025</li>\n<li>Salesforce, \"<a href=\"https://www.salesforce.com/news/press-releases/2024/10/29/agentforce-general-availability-announcement/\">Salesforce's Agentforce is here</a>\", 29 October 2024</li>\n<li>Klarna, \"<a href=\"https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/\">Klarna AI assistant handles two-thirds of customer service chats in its first month</a>\", 27 February 2024</li>\n<li>Fortune, \"<a href=\"https://fortune.com/2025/05/09/klarna-ai-humans-return-on-investment/\">Klarna plans to hire humans again, as new landmark survey reveals most AI projects fail to deliver</a>\", 9 May 2025</li>\n<li>OpenAI, \"<a href=\"https://openai.github.io/openai-agents-python/\">OpenAI Agents SDK documentation</a>\", accessed 4 October 2026</li>\n<li>Anthropic, \"<a href=\"https://code.claude.com/docs/en/agent-sdk/overview\">Agent SDK overview</a>\", accessed 4 October 2026</li>\n<li>Google, \"<a href=\"https://adk.dev/\">Agent Development Kit documentation</a>\", accessed 4 October 2026</li>\n<li>Microsoft, \"<a href=\"https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/\">Introducing Microsoft Agent Framework</a>\", 1 October 2025</li>\n<li>LangChain, \"<a href=\"https://www.langchain.com/langgraph\">LangGraph</a>\", accessed 4 October 2026</li>\n<li>CrewAI, \"<a href=\"https://docs.crewai.com/en/introduction\">Introduction</a>\", accessed 4 October 2026</li>\n<li>Anthropic, \"<a href=\"https://www.anthropic.com/news/model-context-protocol\">Introducing the Model Context Protocol</a>\", 25 November 2024</li>\n<li>Linux Foundation, \"<a href=\"https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation\">Linux Foundation announces the formation of the Agentic AI Foundation</a>\", 9 December 2025</li>\n<li>Google for Developers, \"<a href=\"https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/\">Announcing the Agent2Agent Protocol (A2A)</a>\", 9 April 2025</li>\n<li>OWASP, \"<a href=\"https://genai.owasp.org/llmrisk/llm01-prompt-injection/\">LLM01:2025 Prompt Injection</a>\", updated 17 April 2025</li>\n<li>OWASP, \"<a href=\"https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/\">Agentic AI – Threats and Mitigations</a>\", 17 February 2025</li>\n<li>Reuters (via Yahoo), \"<a href=\"https://tech.yahoo.com/ai/articles/over-40-agentic-ai-projects-100510349.html\">Over 40% of agentic AI projects will be scrapped by 2027, Gartner says</a>\", 25 June 2025</li>\n</ol>\n",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Macro_laptop_coding_%28Unsplash%29.jpg/1920px-Macro_laptop_coding_%28Unsplash%29.jpg",
+      "alt": "Close-up of colourful lines of code in a text editor on a laptop screen",
+      "caption": "Coding was the first field where AI agents became everyday tools.",
+      "credit": "Photo: Marc Mueller (seven11nash) / Wikimedia Commons, CC0 1.0",
+      "license": "CC0 1.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Macro_laptop_coding_(Unsplash).jpg"
+    },
+    {
+      "url": "https://live.staticflickr.com/6045/6239564720_7a282a86fa_b.jpg",
+      "alt": "Rows of networking equipment and cables at the core of a data center",
+      "caption": "Every agent step is a model call and a tool call, which is why cost and latency rise with autonomy.",
+      "credit": "Photo: motleypixel / Openverse (Flickr), CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://www.flickr.com/photos/16894864@N05/6239564720"
+    },
+    {
+      "url": "https://live.staticflickr.com/3487/3309490947_30ea30fc19_b.jpg",
+      "alt": "Customer service staff working at desks with headsets in a call centre",
+      "caption": "Customer service is one of the busiest areas for AI agents, though customers still expect a route to a person.",
+      "credit": "Photo: markhillary / Openverse (Flickr), CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://www.flickr.com/photos/56087830@N00/3309490947"
+    },
+    {
+      "url": "https://live.staticflickr.com/563/20607701226_e0b1226cd2_b.jpg",
+      "alt": "Source code on a screen with a security-themed overlay",
+      "caption": "Prompt injection tops OWASP's list of risks for LLM applications, and agents are especially exposed.",
+      "credit": "Photo: Christiaan Colen / Openverse (Flickr), CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://www.flickr.com/photos/132889348@N07/20607701226"
+    },
+    {
+      "url": "https://live.staticflickr.com/7213/6887025506_38362b2f59_b.jpg",
+      "alt": "Students coding on laptops at a hackathon",
+      "caption": "The safest way to start is one narrow workflow, a few tools and a human in the loop.",
+      "credit": "Photo: hackNY / Openverse (Flickr), CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://www.flickr.com/photos/61623410@N08/6887025506"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "publisher": "Anthropic",
+      "date": "2024-12-19",
+      "claim": "Definitions of workflows vs agents; cost/latency trade-off; compounding errors; start simple; sandbox testing"
+    },
+    {
+      "url": "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf",
+      "publisher": "OpenAI",
+      "date": "2025-04-07",
+      "claim": "Agent definition; chatbots not agents; model/tools/instructions; when to build agents; single-agent first; human intervention triggers (PDF dated April 2025)"
+    },
+    {
+      "url": "https://cloud.google.com/discover/what-are-ai-agents",
+      "publisher": "Google Cloud",
+      "date": "2026-04-02",
+      "claim": "Google's definition of AI agents (reasoning, planning, memory, autonomy)"
+    },
+    {
+      "url": "https://www.ibm.com/think/topics/ai-agents",
+      "publisher": "IBM",
+      "date": "2026-10-04",
+      "claim": "IBM's definition; goal initialisation and planning (undated page, accessed)"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "publisher": "Anthropic",
+      "date": "2025-02-24",
+      "claim": "Claude Code launched as limited research preview and its capabilities"
+    },
+    {
+      "url": "https://techcrunch.com/2025/05/16/openai-launches-codex-an-ai-coding-agent-in-chatgpt/",
+      "publisher": "TechCrunch",
+      "date": "2025-05-16",
+      "claim": "Codex launch, cloud sandbox, no internet access during tasks"
+    },
+    {
+      "url": "https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/",
+      "publisher": "GitHub",
+      "date": "2025-05-19",
+      "claim": "Copilot coding agent launch, how it works and its guardrails"
+    },
+    {
+      "url": "https://techcrunch.com/2025/07/17/openai-launches-a-general-purpose-agent-in-chatgpt/",
+      "publisher": "TechCrunch",
+      "date": "2025-07-17",
+      "claim": "ChatGPT agent launch, Operator + deep research, capabilities, memory disabled for prompt injection"
+    },
+    {
+      "url": "https://www.salesforce.com/news/press-releases/2024/10/29/agentforce-general-availability-announcement/",
+      "publisher": "Salesforce",
+      "date": "2024-10-29",
+      "claim": "Agentforce GA, $2 per conversation, Wiley 40%+ case resolution increase"
+    },
+    {
+      "url": "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+      "publisher": "Klarna",
+      "date": "2024-02-27",
+      "claim": "2.3M conversations, two-thirds of chats, 700 FTE equivalent, 11 to under 2 minutes"
+    },
+    {
+      "url": "https://fortune.com/2025/05/09/klarna-ai-humans-return-on-investment/",
+      "publisher": "Fortune",
+      "date": "2025-05-09",
+      "claim": "Klarna CEO told Bloomberg it is hiring humans again; IBM CEO survey one in four AI projects delivered expected ROI"
+    },
+    {
+      "url": "https://openai.github.io/openai-agents-python/",
+      "publisher": "OpenAI",
+      "date": "2026-10-04",
+      "claim": "Agents SDK primitives, tracing, upgrade of Swarm (docs, accessed)"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/agent-sdk/overview",
+      "publisher": "Anthropic",
+      "date": "2026-10-04",
+      "claim": "Claude Agent SDK capabilities, Python and TypeScript (docs, accessed)"
+    },
+    {
+      "url": "https://adk.dev/",
+      "publisher": "Google",
+      "date": "2026-10-04",
+      "claim": "ADK open source, languages, model-agnostic, deployment options (docs, accessed)"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/",
+      "publisher": "Microsoft",
+      "date": "2025-10-01",
+      "claim": "Microsoft Agent Framework, unifies Semantic Kernel and AutoGen, MCP and A2A support"
+    },
+    {
+      "url": "https://www.langchain.com/langgraph",
+      "publisher": "LangChain",
+      "date": "2026-10-04",
+      "claim": "LangGraph MIT-licensed orchestration, human-in-the-loop, memory (accessed)"
+    },
+    {
+      "url": "https://docs.crewai.com/en/introduction",
+      "publisher": "CrewAI",
+      "date": "2026-10-04",
+      "claim": "CrewAI crews and flows, open source (docs, accessed)"
+    },
+    {
+      "url": "https://www.anthropic.com/news/model-context-protocol",
+      "publisher": "Anthropic",
+      "date": "2024-11-25",
+      "claim": "MCP launch and description"
+    },
+    {
+      "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation",
+      "publisher": "Linux Foundation",
+      "date": "2025-12-09",
+      "claim": "Agentic AI Foundation formed; MCP, goose, AGENTS.md; 10,000+ MCP servers; adopters"
+    },
+    {
+      "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+      "publisher": "Google for Developers",
+      "date": "2025-04-09",
+      "claim": "A2A announced with 50+ partners; complements MCP"
+    },
+    {
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "publisher": "OWASP",
+      "date": "2025-04-17",
+      "claim": "Prompt injection is LLM01; direct vs indirect; mitigations"
+    },
+    {
+      "url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+      "publisher": "OWASP",
+      "date": "2025-02-17",
+      "claim": "Agentic threats guide: memory poisoning, tool misuse, privilege compromise"
+    },
+    {
+      "url": "https://tech.yahoo.com/ai/articles/over-40-agentic-ai-projects-100510349.html",
+      "publisher": "Reuters (via Yahoo)",
+      "date": "2025-06-25",
+      "claim": "Gartner: 40%+ agentic projects cancelled by end 2027; ~130 genuine vendors; 15% of decisions by 2028"
+    }
+  ]
+}

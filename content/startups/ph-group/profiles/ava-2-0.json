@@ -1,0 +1,102 @@
+{
+  "slug": "ava-2-0",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/ava-2-0",
+  "excerpt": "Ava 2.0 is Artisan's AI BDR: it finds leads from a database of 250M+ contacts, runs email and LinkedIn outreach, handles replies and books meetings for your sales reps. What it does, pricing and alternatives.",
+  "content": "<p>Ava is an AI business development rep made by Artisan AI, Inc., a San Francisco company that builds what it calls AI employees. Ava runs outbound sales: it finds leads from a database Artisan says holds more than 250 million verified B2B contacts, plus a separate database of local businesses, enriches them, writes personalised messages, runs email and social campaigns, answers replies and books meetings on your reps' calendars. Campaign types cover cold outbound, intent signals, re-engaging contacts in your CRM, and cross-sell and upsell, with Salesforce and HubSpot sync.</p><p>Ava 2.0, launched on Product Hunt, is a rebuild that the company says runs outbound fully autonomously. On launch day the makers explained some of the safeguards: you set qualification criteria and an AI research agent checks each lead, filtering out hard disqualifiers before they are contacted; Ava handles objections from a knowledge base you provide and escalates anything it is unsure of, and you can write plain-text escalation rules such as escalating when a prospect raises pricing. Co-founder and CEO Jaspar Carmichael-Jack wrote that Artisan first launched Ava on Product Hunt in February 2024 and has raised more than $36 million. Ava 2.0 launched on 29 May 2026 and finished #1 for the day with 337 points and 32 comments.</p><p><em>We have not tested Ava ourselves. This page brings together Artisan's official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI sales agent",
+    "platform": "Web app (onboarding needs a computer)",
+    "starts_at": "Custom pricing by plan; talk to sales",
+    "schema_category": "BusinessApplication",
+    "summary_short": "Artisan's AI BDR that finds leads, runs outbound and books meetings autonomously",
+    "maker": {"name": "Jaspar Carmichael-Jack", "url": "https://www.producthunt.com/@jasparcj"},
+    "team": [
+      {"name": "Jaspar Carmichael-Jack", "role": "Co-founder & CEO (Product Hunt)", "url": "https://www.producthunt.com/@jasparcj"},
+      {"name": "Lucas Moeller", "url": "https://www.producthunt.com/@lucas_moeller"}
+    ],
+    "ph": {"rank": 1, "votes": 337, "comments": 32, "followers": 661, "launched": "2026-05-29", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/4d066ffc-be7a-4ebb-8fd7-66e4d5b33f70.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Artisan graphic 'Meet Ava 2.0, the autonomous AI BDR' with Ava's avatar over a campaign dashboard of leads enrolled, messages sent, positive outcomes and meetings booked", "credit": "Image: Artisan via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/3a2454e4-e4b0-4967-9e40-deabbdf7bf44.png?auto=format&fit=max&w=1400", "w": 2540, "h": 1520,
+       "alt": "Artisan lead search for 'VP of Engineering at Series B SaaS companies with 50+ engineers' returning matching contacts and companies", "credit": "Image: Artisan via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/f002cf42-afbe-4029-af0d-99e08f54802a.png?auto=format&fit=max&w=1400", "w": 2818, "h": 1592,
+       "alt": "Artisan home page 'Automate your outbound with an all-in-one, AI-first platform powered by AI employees' above a leads list and contact card", "credit": "Image: Artisan via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "run B2B outbound and want more pipeline without hiring more BDRs",
+        "already use Salesforce or HubSpot and want outreach and meeting booking synced",
+        "sell to local businesses as well as companies (Artisan has a local business database)"
+      ],
+      "not_fit": [
+        "want a cheap self-serve tool with a public price: plans are scoped with sales",
+        "are wary of fully autonomous outreach: commenters at launch worried about spray-and-pray, though you can set qualification and escalation rules",
+        "contact fewer than a few thousand leads a month: the smallest plan is sized at about 2,500 leads a month"
+      ]
+    },
+    "pricing": {
+      "intro": "Artisan does not publish prices; each plan is scoped with its sales team. Plans are sized by how many leads Ava contacts a month.",
+      "url": "https://www.artisan.co/pricing",
+      "plans": [
+        {"name": "Team", "price": "Custom", "detail": "About 2,500 leads contacted a month; full platform, autonomous replies and meeting booking, 250M+ B2B contacts, Salesforce and HubSpot sync, CSM support"},
+        {"name": "Scale", "price": "Custom", "detail": "About 6,000 leads contacted a month; adds a dedicated CSM, CRM setup and priority support"},
+        {"name": "Enterprise", "price": "Custom", "detail": "Custom volume, a forward-deployed strategist, advanced security controls and audit logs"}
+      ],
+      "notes": [
+        "An AI dialer is available as a per-seat add-on.",
+        "Product Hunt lists it as free options."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Apollo.io", "url": "https://www.apollo.io/", "what": "Go-to-market platform with 240M contacts and 30M companies, agents and outreach tools", "starts_at": "See its pricing page",
+         "ph_rating": 4.19, "ph_reviews": 42,
+         "difference": "A data and sales platform your reps operate. Ava is pitched as an autonomous rep that runs the outreach itself."},
+        {"name": "Jeeva AI", "url": "https://jeeva.ai/", "what": "AI that finds, enriches and scores leads and manages your inbox", "starts_at": "5-day free trial; see its pricing page",
+         "ph_rating": 4.68, "ph_reviews": 53,
+         "difference": "Offers a self-serve free trial; Artisan's plans go through sales."},
+        {"name": "Success.ai", "url": "https://success.ai/", "what": "AI-powered cold email outreach", "starts_at": "See its pricing page",
+         "ph_rating": 5, "ph_reviews": 105,
+         "difference": "Focused on cold email. Ava covers lead sourcing, multi-channel outreach and meeting booking."}
+      ],
+      "more": "Product Hunt also lists Starnus and Revscale as alternatives. Artisan's own site has comparison pages against 11x and AiSDR."
+    },
+    "reviews": {"count": 1, "rating": 4, "url": "https://www.producthunt.com/products/artisan-3/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/artisan-3",
+      "quotes": [
+        {"author": "Jim Jeffers", "text": "The hard part with an autonomous BDR is not \"can it send more?\" It is whether the system knows when not to send.",
+         "reply": "Lucas Moeller: you set qualification criteria; an AI research agent filters out hard disqualifiers, and Ava asks the lead about anything it can't verify."},
+        {"author": "Alina Tyslenok", "text": "Curious to see how Ava handles the messy real-world objections",
+         "reply": "Lucas Moeller: from a knowledge base you set, escalating to a human when unsure, with plain-text escalation rules."},
+        {"author": "Anna Ludwinowski", "text": "will this feel like spray and pray outreach, or will Ava understand the nuances of the buyer journey?"}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=Artisan%20%22Ava%202.0%22&f=live"}
+    },
+    "faq": [
+      {"q": "What is Ava 2.0?", "a": "Artisan's AI BDR, rebuilt to run outbound sales autonomously: it sources leads, runs multi-channel outreach, handles replies and books meetings. It launched on Product Hunt on 29 May 2026."},
+      {"q": "Where do Ava's leads come from?", "a": "Artisan says it has a database of 250M+ verified B2B contacts plus a local business database, and a maker said it enriches contacts across 15+ data providers."},
+      {"q": "How much does Ava cost?", "a": "Artisan does not publish prices. Plans (Team, Scale, Enterprise) are scoped with sales and sized by leads contacted per month."},
+      {"q": "Can I stop Ava contacting the wrong people?", "a": "You can set qualification criteria; Ava screens each lead with a research agent and filters hard disqualifiers before outreach, according to the makers."},
+      {"q": "What happens when a prospect objects?", "a": "Ava answers from a knowledge base you set and escalates to a human when unsure. You can add rules such as escalating any pricing question."},
+      {"q": "Can I set it up on my phone?", "a": "The CEO said on Product Hunt that onboarding needs to be done on a computer."}
+    ],
+    "sources": [
+      {"label": "Artisan official site", "url": "https://www.artisan.co/"},
+      {"label": "Artisan pricing", "url": "https://www.artisan.co/pricing"},
+      {"label": "About Artisan", "url": "https://www.artisan.co/about"},
+      {"label": "Artisan contact", "url": "https://www.artisan.co/contact-us"},
+      {"label": "Artisan terms of use", "url": "https://www.artisan.co/terms-of-use"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/ava-2-0"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/artisan-3"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/artisan-3/alternatives"},
+      {"label": "Apollo.io", "url": "https://www.apollo.io/"},
+      {"label": "Jeeva AI", "url": "https://jeeva.ai/try-jeeva-free"}
+    ]
+  }
+}

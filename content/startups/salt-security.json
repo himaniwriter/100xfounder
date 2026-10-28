@@ -1,0 +1,145 @@
+{
+ "slug": "salt-security",
+ "website": "https://salt.security/",
+ "excerpt": "Salt Security is a Palo Alto API security company, now also securing AI agents and MCP servers. Valued at $1.4 billion in 2022. What it does, who it suits and alternatives.",
+ "content": "<p>Salt Security protects APIs, the interfaces that apps and services use to talk to each other. Its platform discovers the APIs a company actually has, including undocumented ones, checks their security posture against policy, and uses behavioural analysis to spot and block attackers probing or abusing them. Its website now leads with agentic AI security and MCP discovery, applying the same approach to AI agents and the Model Context Protocol servers that connect them to company systems.</p><p>According to its about page, Roey Eliyahu and Michael Nicosia founded Salt in 2018 when they saw that breaking applications into APIs was creating a new security risk. Eliyahu is CEO; the company's headquarters address is in Palo Alto, California. In February 2022 Salt announced a $140 million Series D led by CapitalG, Alphabet's growth fund, at a $1.4 billion valuation, with existing investors including Sequoia Capital, Y Combinator, Tenaya Capital, Advent International, Alkeon Capital and DFJ Growth taking part. The company said that brought its total funding to $271 million and came less than eight months after a $70 million Series C; Calcalist and SC Media covered the round.</p><p>Salt does not publish prices; its site offers a free trial and asks larger buyers to contact sales. It is aimed at security teams at companies with many APIs, such as banks, retailers and SaaS providers, and competes with API security tools from Akamai (which bought Noname Security), Traceable and Wallarm, as well as with features inside web application firewalls.</p><p><em>We have not used Salt Security for this page. It brings together Salt Security's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "API and AI agent security",
+  "platform": "Cloud (SaaS)",
+  "starts_at": "Free trial; quote on request",
+  "schema_category": "SecurityApplication",
+  "summary_short": "API discovery, posture governance and threat protection, extended to AI agents and MCP",
+  "maker": {
+   "name": "Salt Security",
+   "url": "https://salt.security/"
+  },
+  "team": [
+   {
+    "name": "Roey Eliyahu",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Michael Nicosia",
+    "role": "Cofounder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/6334717ca56db63e16270dc4/6827dbed8d83756354702b83_SocialShare.jpg",
+    "alt": "Salt Security banner: the purple dotted Salt logo and the word SALT beside a black-and-white photo of a woman working on a laptop",
+    "credit": "Image: Salt Security (salt.security)",
+    "w": 1200,
+    "h": 628
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/6334717ca56db63e16270dc4/635836deb7de89d6ba84dd1a_mstile-310x310%2012.png",
+    "alt": "Salt Security icon: purple dots forming a stylised S on black",
+    "credit": "Logo: Salt Security (salt.security)",
+    "w": 256,
+    "h": 256
+   }
+  ],
+  "use_cases": [
+   "Discovering every API a company exposes, including shadow APIs",
+   "Checking API security posture against policy",
+   "Detecting and blocking API attacks",
+   "Finding MCP servers and securing AI agent access to company systems",
+   "Giving developers fixes for API vulnerabilities"
+  ],
+  "audience": {
+   "fit": [
+    "security teams at companies with large API estates",
+    "banks, insurers, retailers and SaaS companies with public APIs",
+    "organisations rolling out AI agents that call internal systems"
+   ],
+   "not_fit": [
+    "small sites with a handful of internal APIs",
+    "buyers who want published prices"
+   ]
+  },
+  "pricing": {
+   "intro": "Salt Security does not publish prices. Its website offers a free trial and a sales contact.",
+   "url": "https://salt.security/",
+   "plans": [
+    {
+     "name": "Salt platform",
+     "price": "Quote on request",
+     "detail": "Free trial available"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Specialist in API security since 2018",
+   "Covers AI agents and MCP servers",
+   "Well funded, backed by CapitalG and Sequoia"
+  ],
+  "cons": [
+   "No public pricing",
+   "Overlaps with features in existing WAF and API gateway products"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Salt Security. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Akamai API Security",
+     "url": "https://www.akamai.com/",
+     "what": "API security from Akamai, including the former Noname Security",
+     "starts_at": "See its own website",
+     "difference": "Part of a large CDN and security vendor."
+    },
+    {
+     "name": "Traceable",
+     "url": "https://www.traceable.ai/",
+     "what": "API security platform",
+     "starts_at": "See its own website",
+     "difference": "Close rival focused on API discovery and protection."
+    },
+    {
+     "name": "Wallarm",
+     "url": "https://www.wallarm.com/",
+     "what": "API and web application protection",
+     "starts_at": "See its own website",
+     "difference": "Combines WAF-style protection with API security."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Salt Security do?",
+    "a": "It discovers a company's APIs, checks their security posture and detects attacks on them; it now also covers AI agents and MCP servers."
+   },
+   {
+    "q": "Who founded Salt Security?",
+    "a": "Roey Eliyahu and Michael Nicosia, in 2018, according to the company."
+   },
+   {
+    "q": "How much is Salt Security worth?",
+    "a": "Its February 2022 Series D valued it at $1.4 billion."
+   },
+   {
+    "q": "Is there a free version?",
+    "a": "Its website offers a free trial; full pricing is on request."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Salt Security about page",
+    "url": "https://salt.security/about-us"
+   },
+   {
+    "label": "Salt Security: $140M Series D at $1.4B valuation",
+    "url": "https://salt.security/press-releases/salt-security-raises-140-million-series-d-round-led-by-capitalg-at-1-4-billion-valuation"
+   },
+   {
+    "label": "Calcalist: Salt Security reaches $1.4 billion valuation",
+    "url": "https://www.calcalistech.com/ctech/articles/0,7340,L-3929187,00.html"
+   },
+   {
+    "label": "SC Media: Salt Security lands $140 million Series D",
+    "url": "https://www.scworld.com/news/salt-security-lands-140-million-series-d-funding-to-focus-on-api-security-valuation-hits-1-4b"
+   }
+  ]
+ }
+}

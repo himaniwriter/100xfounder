@@ -1,0 +1,162 @@
+{
+ "slug": "sendbird",
+ "website": "https://sendbird.com/",
+ "excerpt": "Sendbird provides chat, voice and video APIs for apps and an AI customer experience platform called delight.ai. Founded in 2013, valued at $1.05 billion in 2021.",
+ "content": "<p>Sendbird sells communication infrastructure for apps. Developers add its chat API and SDKs to put in-app messaging, group chat, voice and video calls, business messaging and content moderation into their own products without building a messaging backend. More recently it has moved into AI customer service: its website now leads with delight.ai, an AI concierge for personalised customer experiences across the customer journey, alongside a support agent desk and a Salesforce connector. Y Combinator's directory quotes the company as saying the platform has more than 300 million monthly active users.</p><p>Sendbird was founded in 2013 and went through Y Combinator in winter 2016; it is based in San Francisco, and John S. Kim is cofounder and CEO. Before Sendbird, Kim founded Paprika Lab, a social gaming company. In April 2021 Sendbird raised a $100 million Series C at a $1.05 billion valuation, led by STEADFAST Capital Ventures with Emergence Capital, SoftBank Vision Fund 2 and World Innovation Lab joining earlier backers ICONIQ Growth, Tiger Global and Meritech, PYMNTS and KoreaTechDesk reported; KoreaTechDesk called it Korea's first B2B enterprise software unicorn. At the time Sendbird said 150 million users sent more than 2.5 billion messages a month on its platform.</p><p>Sendbird's pricing page offers a free trial and Starter, Pro and Enterprise chat plans priced by monthly active users; enterprise and AI products are quoted by sales.</p><p><em>We have not used Sendbird for this page. It brings together Sendbird's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Chat API and AI customer experience",
+  "platform": "APIs and SDKs for iOS, Android and web",
+  "starts_at": "Free trial; plans priced by monthly active users",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Chat, voice and video APIs for apps, plus the delight.ai customer experience platform",
+  "maker": {
+   "name": "Sendbird",
+   "url": "https://sendbird.com/"
+  },
+  "team": [
+   {
+    "name": "John S. Kim",
+    "role": "Cofounder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://sendbird.com/_nuxt/icons/icon_512x512.e709d1.png",
+    "alt": "Sendbird logo: a white rounded speech-bubble shape on black",
+    "credit": "Logo: Sendbird (sendbird.com)",
+    "w": 512,
+    "h": 512
+   },
+   {
+    "url": "https://sendbird.imgix.net/cms/Fork-messages1.png?auto=format,compress&crop=faces",
+    "alt": "Chat example from Sendbird's website: a customer says she moved into a new place and needs something to match her sofa, and delight.ai replies with a memory-added note",
+    "credit": "Image: Sendbird (sendbird.com)",
+    "w": 1728,
+    "h": 1028
+   }
+  ],
+  "use_cases": [
+   "Adding in-app chat and group messaging to a product",
+   "Voice and video calling inside an app",
+   "Customer support chat and business messaging",
+   "AI agents for customer service with delight.ai",
+   "Moderating user-generated messages"
+  ],
+  "audience": {
+   "fit": [
+    "product teams that need reliable chat without building it",
+    "marketplaces, fintech and healthcare apps that connect users",
+    "enterprises adding AI to customer service"
+   ],
+   "not_fit": [
+    "teams that only need a simple website chat widget",
+    "very small apps where a free open-source chat server is enough"
+   ]
+  },
+  "pricing": {
+   "intro": "Sendbird's pricing page lists chat plans priced by monthly active users (MAU).",
+   "url": "https://sendbird.com/pricing",
+   "plans": [
+    {
+     "name": "Free trial",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Try any chat feature"
+    },
+    {
+     "name": "Starter",
+     "price": "Priced by MAU",
+     "detail": "See pricing page"
+    },
+    {
+     "name": "Pro",
+     "price": "Priced by MAU",
+     "detail": "See pricing page"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Contact sales",
+     "detail": "Custom volumes and AI products"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Mature chat, voice and video APIs",
+   "Large scale: hundreds of millions of monthly users",
+   "Free trial to test features"
+  ],
+  "cons": [
+   "Costs rise with monthly active users",
+   "Shift towards AI products may change priorities"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Sendbird. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Stream",
+     "url": "https://getstream.io/",
+     "what": "Chat, video and activity feed APIs",
+     "starts_at": "See its own website",
+     "difference": "Close rival in chat APIs, with published plan prices."
+    },
+    {
+     "name": "Twilio Conversations",
+     "url": "https://www.twilio.com/",
+     "what": "Messaging APIs from Twilio",
+     "starts_at": "See its own website",
+     "difference": "Part of Twilio's broad communications platform."
+    },
+    {
+     "name": "CometChat",
+     "url": "https://www.cometchat.com/",
+     "what": "Chat, voice and video SDKs",
+     "starts_at": "See its own website",
+     "difference": "Similar SDKs aimed at smaller teams."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Sendbird do?",
+    "a": "It provides chat, voice and video APIs for apps and an AI customer experience platform called delight.ai."
+   },
+   {
+    "q": "Who founded Sendbird?",
+    "a": "John S. Kim is cofounder and CEO. The company was founded in 2013 and went through Y Combinator in 2016."
+   },
+   {
+    "q": "Is Sendbird a unicorn?",
+    "a": "Yes. Its $100 million Series C in 2021 valued it at $1.05 billion."
+   },
+   {
+    "q": "Is Sendbird free?",
+    "a": "It offers a free trial; paid chat plans are priced by monthly active users."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sendbird homepage",
+    "url": "https://sendbird.com/"
+   },
+   {
+    "label": "Sendbird pricing",
+    "url": "https://sendbird.com/pricing"
+   },
+   {
+    "label": "Y Combinator: Sendbird",
+    "url": "https://www.ycombinator.com/companies/sendbird"
+   },
+   {
+    "label": "PYMNTS: Sendbird notches $100M at $1B valuation",
+    "url": "https://www.pymnts.com/news/investment-tracker/2021/sendbird-messaging-app-notches-100-million-at-1-billion-valuation"
+   },
+   {
+    "label": "KoreaTechDesk: Sendbird joins the billion-dollar club",
+    "url": "https://koreatechdesk.com/korea-gets-new-unicorn-startup-as-sendbird-joins-the-billion-dollar-club"
+   }
+  ]
+ }
+}

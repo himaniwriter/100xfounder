@@ -1,0 +1,175 @@
+{
+ "slug": "hex",
+ "website": "https://hex.tech/",
+ "excerpt": "Hex is an AI analytics workspace with SQL and Python notebooks, data apps and a Hex agent. Plans from free to $75 per editor a month, and alternatives.",
+ "content": "<p>Hex is a data analytics workspace. Analysts work in notebooks that mix SQL, Python and no-code cells, then publish the results as interactive data apps that colleagues can use without touching code. On top of that sit AI features: a Notebook Agent that can write queries, build charts and draft reports, and Threads, a chat-style way for non-analysts to ask questions of the data themselves. To keep AI answers grounded, Hex uses a context layer built from semantic models and descriptions of your database. Its pricing page says every plan can connect to any data source.</p>\n<p>Hex says it supports more than 2,000 customers worldwide. Companies named on its site include Reddit, Notion, Anthropic, Ramp, Rivian, Figma, Cursor, StubHub, Chime, Brex and Mercor. On its homepage, Mercor is quoted as saying the Notebook Agent cut report turnaround from days to hours. The company does not give its founding year or investors on its About page, saying only that it has raised money from investors and is six years in.</p>\n<h2>Plans and pricing</h2>\n<p>Hex charges per <strong>editor</strong>, the people who build notebooks and apps. The free Community plan includes a trial of the Hex agent, any data connection, all cell types and small compute (4 GB memory, half a CPU). Professional costs $36 per editor a month and adds the Hex agent with a standard monthly AI credit grant, up to 5 published apps, 30-day version history and medium compute. Team costs $75 per editor a month with a larger credit grant, unlimited published apps, drill-down exploration, scheduled runs and alerts, and unlimited version history. Enterprise is custom and adds an Explorer seat for people who only explore, audit logs, single sign-on, single-tenant hosting, HIPAA and embedded analytics options.</p>\n<p>AI credits are granted per seat each month and do not roll over; Hex does not state the amounts. Larger machines are billed per minute on Team and Enterprise, from $0.32 an hour for Large to $4.06 an hour for an A10G GPU. Team has a free trial, and students and educators can get Professional free.</p>\n<p><em>We have not tested Hex ourselves. This page brings together Hex's official site, its own announcements and reputable news coverage, plus the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+ "profile": {
+  "category": "Data analytics and BI",
+  "platform": "Web",
+  "starts_at": "Free; Professional $36 per editor/month",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI analytics workspace with SQL and Python notebooks, data apps and a Hex agent",
+  "maker": {
+   "name": "Hex",
+   "url": "https://hex.tech/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.sanity.io/images/e92memrj/production/c423fc65085353820503111c97d9add8c3d5ca05-1200x630.png",
+    "alt": "Hex graphic with the Hex logo and the line 'Make everyone a data person' on a light background",
+    "credit": "Image: Hex",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.sanity.io/images/e92memrj/production/2bea70c10a42cdfa913e4321c260bb21bc054b7d-1200x630.png",
+    "alt": "Hex Pricing banner: the Hex logo and the word Pricing in pink on a dark grid background",
+    "credit": "Image: Hex",
+    "w": 1200,
+    "h": 630
+   }
+  ],
+  "use_cases": [
+   "Explore warehouse data in a notebook mixing SQL and Python",
+   "Publish an interactive data app or dashboard for colleagues",
+   "Let business users ask data questions in plain language (Threads)",
+   "Have the Notebook Agent draft queries, charts and reports",
+   "Schedule recurring analyses with alerts (Team)"
+  ],
+  "audience": {
+   "fit": [
+    "are a data team that works in SQL and Python and wants to share results as apps",
+    "want AI help grounded in your own semantic models",
+    "have a small team and want published per-editor prices"
+   ],
+   "not_fit": [
+    "need lots of viewers who only explore data without paying for editor seats: the Explorer seat is an Enterprise add-on",
+    "need SSO or audit logs below Enterprise",
+    "only want a free notebook for personal use; open-source Jupyter does that"
+   ]
+  },
+  "pros": [
+   "SQL, Python and no-code in one notebook",
+   "Results can be published as interactive apps",
+   "Clear per-editor prices for Professional and Team"
+  ],
+  "cons": [
+   "AI credit amounts per plan are not stated",
+   "Single sign-on and audit logs are Enterprise features",
+   "Large compute costs extra per minute"
+  ],
+  "pricing": {
+   "intro": "Hex's own prices, in US dollars per editor per month.",
+   "url": "https://hex.tech/pricing/",
+   "checked": "2026-10-15",
+   "plans": [
+    {
+     "name": "Community",
+     "price": "Free",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Hex agent trial, any data source, all cell types, small compute (4 GB, 0.5 CPU)"
+    },
+    {
+     "name": "Professional",
+     "price": "$36 per editor/month",
+     "amount": 36,
+     "currency": "USD",
+     "detail": "Hex agent with standard credits, up to 5 published apps, 30-day version history, medium compute"
+    },
+    {
+     "name": "Team",
+     "price": "$75 per editor/month",
+     "amount": 75,
+     "currency": "USD",
+     "detail": "Extended credits, unlimited published apps, drill-down exploration, unlimited version history, scheduled runs and alerts"
+    },
+    {
+     "name": "Enterprise",
+     "price": "Custom",
+     "detail": "Explorer seat add-on, premium credits, audit logs, OIDC SSO, BYOK, single-tenant, HIPAA and embedded analytics add-ons, dedicated support"
+    }
+   ],
+   "notes": [
+    "AI credits are granted per seat each month and do not roll over; extra credits can be bought on paid plans.",
+    "Pay-as-you-go compute on Team and Enterprise: Large $0.32/hr, XL $0.65/hr, 2XL $1.29/hr, 4XL $2.58/hr, A10G GPU $4.06/hr, L4 GPU $2.93/hr, billed per minute.",
+    "Students and educators can get Professional free; non-profits can apply for a discount."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other notebook and analytics tools. Descriptions come from each product's own site.",
+   "items": [
+    {
+     "name": "Deepnote",
+     "url": "https://deepnote.com/",
+     "what": "Collaborative analytics and data science notebook for Python and SQL",
+     "starts_at": "See its pricing page",
+     "difference": "Also a collaborative notebook; compare AI features and app publishing."
+    },
+    {
+     "name": "Mode",
+     "url": "https://mode.com/",
+     "what": "Collaborative data platform that combines SQL, R, Python and visual analytics",
+     "starts_at": "See its site",
+     "difference": "Closer to a classic BI and reporting tool."
+    },
+    {
+     "name": "Jupyter",
+     "url": "https://jupyter.org/",
+     "what": "Open-source, web-based interactive computing notebook",
+     "starts_at": "Free (open source)",
+     "difference": "Free and self-run, but without Hex's hosted apps, governance and AI agent."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Hex?",
+    "a": "An AI analytics workspace where analysts use SQL and Python notebooks, publish interactive data apps, and use a Hex agent and Threads to get answers from data."
+   },
+   {
+    "q": "Is Hex free?",
+    "a": "Yes, the Community plan is free, with a trial of the Hex agent and small compute."
+   },
+   {
+    "q": "How much does Hex cost?",
+    "a": "Professional is $36 and Team $75 per editor a month. Enterprise is custom."
+   },
+   {
+    "q": "Who uses Hex?",
+    "a": "Hex says it has more than 2,000 customers; it names Reddit, Notion, Anthropic, Ramp, Figma and Cursor among them."
+   },
+   {
+    "q": "Does Hex have a free trial?",
+    "a": "Yes, the Team plan has a free trial with no payment card required."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Hex official site",
+    "url": "https://hex.tech/"
+   },
+   {
+    "label": "Hex pricing",
+    "url": "https://hex.tech/pricing/"
+   },
+   {
+    "label": "About Hex",
+    "url": "https://hex.tech/about/"
+   },
+   {
+    "label": "Deepnote",
+    "url": "https://deepnote.com/"
+   },
+   {
+    "label": "Mode",
+    "url": "https://mode.com/"
+   },
+   {
+    "label": "Project Jupyter",
+    "url": "https://jupyter.org/"
+   }
+  ],
+  "checked": "2026-10-15"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "slug": "unito",
+ "website": "https://unito.io/",
+ "excerpt": "Unito is a Montreal no-code integration platform that keeps tools such as Jira, Asana, ServiceNow and Smartsheet in two-way sync. Founded in 2015; raised a $20M round led by CDPQ in 2022.",
+ "content": "<p>Unito connects the work tools different teams use and keeps them in two-way sync. If engineers live in Jira, project managers in Asana and support staff in ServiceNow or Zendesk, Unito can mirror tasks, tickets and records between them so that a change in one tool shows up in the others. Flows are set up without code: you pick the tools, choose which items and fields to sync, and set rules. Its website lists use cases such as ticket escalation from support to engineering, software development, project management, time tracking and billing, and record syncing, and it now also pitches integrations that give AI agents context from several tools.</p><p>Unito is based in Montreal. BetaKit reported that it was founded in 2015 by Marc Boscher, the CEO, and Eryk Warren, the CTO. It raised a CAD 10.5 million Series A led by Bessemer Venture Partners, and in October 2022 announced a $20 million round led by CDPQ through its Equity 253 fund, with Rainfall Ventures and Investissement Québec joining existing investors Bessemer, Tom Williams and Mistral Ventures. The announcement named Atlassian, Corpay, Teamwork, the Cincinnati Reds and Wrike as customers.</p><p>Unito sells self-serve plans for small teams (Basic and Pro) with a free trial, and enterprise plans through sales. Its pricing page says every plan includes unlimited users, that self-serve plans sync every 5 to 15 minutes with standard cloud connectors, and that enterprise plans add premium and on-premises connectors, live and historical syncing, SSO and a dedicated integration consultant. Exact self-serve prices are shown inside the app rather than on the page.</p><p>This profile draws on Unito's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "No-code two-way integrations",
+  "platform": "Web",
+  "starts_at": "Free trial; self-serve prices shown in-app",
+  "schema_category": "BusinessApplication",
+  "summary_short": "No-code two-way sync between Jira, Asana, ServiceNow, Smartsheet and other work tools",
+  "maker": {"name": "Unito", "url": "https://unito.io/about-us/"},
+  "team": [
+   {"name": "Marc Boscher", "role": "Co-founder and CEO"},
+   {"name": "Eryk Warren", "role": "Co-founder and CTO (per BetaKit)"}
+  ],
+  "gallery": [
+   {"url": "https://unito.io/wp-content/uploads/2025/11/site-og-image.png", "alt": "Unito logo: a teal circle with a white looping line, beside the word unito on a pale blue background", "credit": "Image: Unito", "w": 1200, "h": 675}
+  ],
+  "use_cases": [
+   "Escalating support tickets from Zendesk or ServiceNow into Jira and syncing status back",
+   "Keeping Asana projects and Jira issues aligned between product and engineering",
+   "Syncing tasks into Smartsheet or Google Sheets for reporting",
+   "Mirroring work across two companies' tools during a client project",
+   "Giving AI agents up-to-date context from several work tools"
+  ],
+  "audience": {
+   "fit": [
+    "have teams split across different project, ticketing or CRM tools",
+    "want two-way sync rather than one-way automations",
+    "do not have engineers free to build and maintain integrations"
+   ],
+   "not_fit": [
+    "need general-purpose automations across hundreds of apps",
+    "want to see the self-serve price before starting a trial"
+   ]
+  },
+  "pricing": {
+   "intro": "Unito's pricing page offers self-serve Basic and Pro plans for small teams and an Enterprise plan through sales. All plans include unlimited users. Self-serve prices are shown in the app rather than on the page.",
+   "plans": [
+    {"name": "Basic and Pro (self-serve)", "price": "See pricing in-app", "detail": "Standard cloud connectors, 5–15 minute updates, chat and email support, free trial"},
+    {"name": "Enterprise", "price": "Talk to sales", "detail": "Standard, premium and on-prem connectors, live and historical sync, SSO, dedicated integration consultant, developer platform"}
+   ],
+   "notes": ["Price is based on the connectors used and the number of flows, per the page's calculator."],
+   "url": "https://unito.io/pricing/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "True two-way sync, including fields and comments",
+   "Unlimited users on every plan",
+   "No code to write or maintain"
+  ],
+  "cons": [
+   "Self-serve prices not shown on the public page",
+   "Self-serve plans update every 5–15 minutes rather than instantly"
+  ],
+  "alternatives": {
+   "intro": "Other ways to connect work tools. We have not compared them hands-on.",
+   "items": [
+    {"name": "Exalate", "url": "https://exalate.com/", "what": "Two-way sync for Jira, ServiceNow, Zendesk and others", "tags": ["Two-way sync"], "starts_at": "See its own pricing page", "difference": "Allows scripted sync rules for complex cases."},
+    {"name": "Zapier", "url": "https://zapier.com/", "what": "No-code automation across thousands of apps", "tags": ["Automation"], "starts_at": "See its own pricing page", "difference": "Trigger-and-action automations rather than ongoing two-way sync."},
+    {"name": "Make", "url": "https://www.make.com/", "what": "Visual workflow automation platform", "tags": ["Automation"], "starts_at": "See its own pricing page", "difference": "Builds multi-step scenarios; two-way sync must be designed by hand."}
+   ]
+  },
+  "faq": [
+   {"q": "What does Unito do?", "a": "It keeps tasks, tickets and records in two-way sync between work tools such as Jira, Asana, ServiceNow and Smartsheet, without code."},
+   {"q": "Who founded Unito?", "a": "Marc Boscher (CEO) and Eryk Warren (CTO), in Montreal in 2015, according to BetaKit."},
+   {"q": "How much does Unito cost?", "a": "Self-serve Basic and Pro plans have a free trial and show prices in the app; Enterprise is priced through sales. All plans include unlimited users."},
+   {"q": "How much funding has Unito raised?", "a": "It announced a $20 million round led by CDPQ in October 2022, after a CAD 10.5 million Series A led by Bessemer Venture Partners."}
+  ],
+  "sources": [
+   {"label": "Unito website", "url": "https://unito.io/"},
+   {"label": "Unito pricing page", "url": "https://unito.io/pricing/"},
+   {"label": "Unito: About us", "url": "https://unito.io/about-us/"},
+   {"label": "Newswire: Unito raises $20 million (26 Oct 2022)", "url": "https://www.newswire.ca/news-releases/unito-raises-20-million-to-shape-the-future-of-collaborative-work-852828926.html"},
+   {"label": "BetaKit: Unito raises $20 million to build more integrations", "url": "https://betakit.com/workflow-saas-integrator-unito-raises-20-million-to-build-more-integrations/"}
+  ]
+ }
+}

@@ -1,0 +1,308 @@
+{
+ "slug": "velozity-3",
+ "ph_url": "https://www.producthunt.com/posts/velozity-3",
+ "existing_listing_slug": null,
+ "website": "https://getvelozity.com/",
+ "excerpt": "Velozity is a shared AI office: team chat, calls, tasks and files, plus AI agents on your own Claude or Codex plan. Free to start; paid seats from $6.99.",
+ "content": "<p>Velozity is a virtual office where a team and its AI agents work in the same place. People sit in \"cabins\" you can knock on to start talking, with chat, audio and video calls with transcripts, tasks, a shared calendar and files in one app. Each person can bring in AI agents that run on subscriptions they already pay for, such as Claude Code, Codex, Gemini CLI or Cursor CLI, or use Speed, the built-in agent that needs no outside subscription. Agents see the same conversations, files and calls as the team, can turn meetings and email into tasks, and can work in a cloud computer when you are away.</p><p>The rule the makers stress is that agents prepare and people approve: an email, message, calendar invite or code change is staged as a draft and nothing goes out until its owner approves it. Velozity says it connects to more than 100 apps, including Slack, Gmail, GitHub, Linear, HubSpot and Jira. It is free to start with no card; paid seats are sold per product, from $6.99 per user a month in the US (Rs 299 in India).</p><p>Velozity is run by Velozity Labs Inc. Its makers on Product Hunt are co-founder Ishu Darshan and CTO Akash Mandal. It launched on Product Hunt on 7 October 2026 and finished #3 for the day with 450 upvotes and 120 comments.</p><p><em>We have not tested Velozity ourselves. This page brings together its official site, pricing, privacy policy, terms and cancellation policy, its Product Hunt launch and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Team collaboration and AI agents",
+  "platform": "Web, Mac, iOS and Android",
+  "starts_at": "Free; paid seats from $6.99 per user/month (Rs 299 in India)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Shared virtual office where a team and its AI agents chat, meet and work on the same context",
+  "maker": {
+   "name": "Ishu Darshan",
+   "url": "https://www.producthunt.com/@ishudarshan"
+  },
+  "team": [
+   {
+    "name": "Ishu Darshan",
+    "role": "Co-founder and CEO",
+    "url": "https://www.producthunt.com/@ishudarshan"
+   },
+   {
+    "name": "Akash Mandal",
+    "role": "CTO",
+    "url": "https://www.producthunt.com/@see_akash"
+   }
+  ],
+  "ph": {
+   "rank": 3,
+   "votes": 450,
+   "comments": 120,
+   "followers": 1218,
+   "launched": "2026-10-07",
+   "as_of": "2026-10-14"
+  },
+  "video_url": "https://www.youtube.com/watch?v=vmpfglkcDUI",
+  "use_cases": [
+   "Running a remote team's chat, calls and tasks in one app",
+   "Tagging an AI agent in a team thread so it answers with the context everyone has",
+   "Turning meeting transcripts and email into tasks automatically",
+   "Letting a coding agent raise a pull request that goes through normal review",
+   "Sharing one place with guests through time-limited guest passes"
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Ishu Darshan, who goes by Darshan, says everyone on his team paid for their own AI and used it alone: prompt, paste the answer into chat, explain it to a teammate, then prompt again. The AI got faster but the team did not, so they built one shared office for people and their agents.",
+    "He listed live presence without meeting links, an agent for every teammate that reads the same mail, files and calls, agents that run on AI plans you already pay for, and a rule that nothing is sent, paid or signed without a person approving it. He said the team runs its own company in Velozity, planned the launch in it, and wanted to hear where it breaks."
+   ],
+   "attribution": "Ishu Darshan, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/velozity-2?comment=5890923"
+  },
+  "audience": {
+   "fit": [
+    "run a small or remote team and want chat, calls and tasks in one place",
+    "already pay for Claude, Codex or similar and want agents that share the team's context",
+    "want AI to draft work but a person to approve anything that goes out"
+   ],
+   "not_fit": [
+    "need per-file permissions inside a shared space: the co-founder said there are none today, the space is the boundary",
+    "want automatic workload or overload alerts for managers: the makers said that is not built yet",
+    "want refunds if it doesn't work out: the cancellation policy says no payments are refunded"
+   ]
+  },
+  "pricing": {
+   "intro": "Velozity sells three products with a free tier each: Office Space (for teams), AI Space and Co-Worker. Prices are launch prices before tax, per user a month; US visitors see dollars and visitors in India see rupees.",
+   "url": "https://getvelozity.com/pricing/",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Free (Office Space, AI Space, Co-Worker)",
+     "price": "$0",
+     "amount": 0,
+     "currency": "USD",
+     "detail": "Office Space free forever for the whole team: up to 3 people per cabin, 1 meeting room, 30 days of chat history, 300 transcription minutes a month shared, 1 app integration. AI Space Free: 15 personal tasks a week, 200 transcription minutes. Co-Worker Free: 150 credits"
+    },
+    {
+     "name": "Office Space Pro",
+     "price": "$6.99 per user/month (Rs 299 in India)",
+     "amount": 6.99,
+     "currency": "USD",
+     "detail": "Whole workspace on the same plan: unlimited cabins and meeting rooms, unlimited chat history and transcription (fair use), unlimited integrations, team activity dashboard"
+    },
+    {
+     "name": "AI Space Pro",
+     "price": "$7.99 per user/month (Rs 499 in India)",
+     "amount": 7.99,
+     "currency": "USD",
+     "detail": "Unlimited personal tasks, 800 transcription minutes, 45 days of history from connected apps, connected calendar"
+    },
+    {
+     "name": "AI Space Max",
+     "price": "$18.99 per user/month (Rs 1,299 in India)",
+     "amount": 18.99,
+     "currency": "USD",
+     "detail": "Everything in AI Space Pro plus 250 hours a month of cloud agent that works with your laptop closed"
+    },
+    {
+     "name": "Co-Worker Pro",
+     "price": "$15 per user/month (Rs 799 in India)",
+     "amount": 15,
+     "currency": "USD",
+     "detail": "700 credits a month, pick your model, 10 automatic missions, about 7 deep-research runs"
+    },
+    {
+     "name": "Co-Worker Max",
+     "price": "$99 per user/month (Rs 7,999 in India)",
+     "amount": 99,
+     "currency": "USD",
+     "detail": "7,000 credits a month, all models, 100 automatic missions, about 47 deep-research runs"
+    }
+   ],
+   "notes": [
+    "Office Space is all-or-nothing for a team; AI Space and Co-Worker seats are assigned person by person and admins can move them (pricing FAQ).",
+    "The cancellation policy describes a 30-day free trial with no card and no automatic charge at the end. You can cancel any time and keep paid features to the end of the billing cycle, but Velozity does not refund any payment, monthly or annual.",
+    "Checkout confirms the final regional price and currency before you pay."
+   ]
+  },
+  "alternatives": {
+   "intro": "Two well-known tools for a team's shared space and one AI agent platform. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Gather",
+     "url": "https://www.gather.town/",
+     "what": "Virtual office where remote teams see each other and talk in a shared map",
+     "starts_at": "Essential $12 per member a month; 30-day free trial",
+     "difference": "The closest match for the virtual-office side, but without Velozity's agents that run on your own AI subscriptions."
+    },
+    {
+     "name": "Slack",
+     "url": "https://slack.com/",
+     "what": "Team chat with huddles, apps and built-in AI features",
+     "starts_at": "Free; Pro Rs 294.75 per user a month billed monthly (Indian pricing shown)",
+     "difference": "Far more established, with a bigger app ecosystem; Velozity adds a spatial office and agents that act on tasks with approval."
+    },
+    {
+     "name": "Lindy",
+     "url": "https://www.lindy.ai/",
+     "what": "Platform for building AI agents that handle email, meetings and other work",
+     "starts_at": "Free with $50 of credits for 7 days; Team from $29.99 a month",
+     "difference": "Focused on AI agents and automations, with no team chat or video office of its own."
+    }
+   ]
+  },
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/velozity-2/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [
+     "Keeping a person in the loop before an agent sends anything",
+     "Replacing several chat spaces with one"
+    ],
+    "asked": [
+     "How the approval step works (the agent drafts, its owner approves, edits or rejects, and changes after approval need approving again)",
+     "Which chat tools it works with (it is its own chat, and a CTO reply says it can also pull context from Slack, Microsoft Teams, Discord, Telegram and WhatsApp Business)",
+     "Whether agents can work in a code repository (yes, through pull requests that go through normal review)",
+     "Who can see shared files (everyone and every agent in that space; personal email and calendar stay with their owner's agents)"
+    ],
+    "criticised": [
+     "No automatic way yet to flag teammates who are overloaded, which the makers confirmed",
+     "No per-file permissions inside a space"
+    ]
+   },
+   "quotes": [
+    {
+     "text": "Managing a lot of chat spaces is a pain so this has me intrigued. What chat tools does it work with?",
+     "author": "Jay Smith",
+     "url": "https://www.producthunt.com/products/velozity-2?comment=5929671"
+    },
+    {
+     "text": "Could you explain how the approval stage works?",
+     "author": "Swati Paliwal",
+     "url": "https://www.producthunt.com/products/velozity-2?comment=5928151"
+    }
+   ]
+  },
+  "pros": [
+   "Agents run on AI plans you already pay for, with a built-in agent if you have none",
+   "A person must approve anything an agent sends, and agent runs are logged in the space",
+   "Free tier for the whole team with no card",
+   "Low per-seat prices, with separate rupee pricing in India",
+   "Says your data is never used to train AI models"
+  ],
+  "cons": [
+   "No refunds on any payment",
+   "No per-file permissions inside a space",
+   "Pricing is split across three products, which takes some working out",
+   "Very new, with no Product Hunt reviews yet"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/velozity-2",
+   "quotes": [
+    {
+     "author": "Jay Smith",
+     "url": "https://www.producthunt.com/products/velozity-2?comment=5929671",
+     "text": "Managing a lot of chat spaces is a pain so this has me intrigued. What chat tools does it work with?",
+     "reply": "Akash Mandal: it connects with Slack, Microsoft Teams, Discord, Telegram and WhatsApp Business so agents can pull context into one place, and has its own chat."
+    }
+   ],
+   "x": {
+    "profile_url": "https://x.com/velozitylabs",
+    "none": "We found no posts about Velozity on X to link yet, apart from its own account.",
+    "search_url": "https://x.com/search?q=velozity&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Velozity?",
+    "a": "A shared virtual office for a team and its AI agents, with chat, audio and video calls with transcripts, tasks, a calendar and files in one place."
+   },
+   {
+    "q": "Is Velozity free?",
+    "a": "Yes, to start. Office Space is free forever for the whole team, and AI Space and Co-Worker have free tiers with limits. Paid seats start at $6.99 per user a month in the US, or Rs 299 in India."
+   },
+   {
+    "q": "Do I need to pay for a separate AI subscription?",
+    "a": "No. Agents can run on a plan you already have, such as Claude Code or Codex, but Velozity also has a built-in agent called Speed that needs no outside subscription."
+   },
+   {
+    "q": "Can an agent send emails or messages on its own?",
+    "a": "No. The agent stages the work as a draft, and only the person it works for can approve, change or reject it. If the draft changes after approval, it has to be approved again."
+   },
+   {
+    "q": "Who can see the files I share?",
+    "a": "A file added to a space is visible to everyone in that space and any agent working there. Personal email, calendar and meeting notes are read only by your own agents."
+   },
+   {
+    "q": "Can I get a refund?",
+    "a": "No. Velozity's cancellation policy says it does not refund payments; you can cancel any time and keep paid features to the end of the billing cycle."
+   },
+   {
+    "q": "What are the alternatives to Velozity?",
+    "a": "Gather for a virtual office, Slack for team chat, and Lindy for AI agents; see the comparison above."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Velozity official site",
+    "url": "https://getvelozity.com/"
+   },
+   {
+    "label": "Velozity pricing",
+    "url": "https://getvelozity.com/pricing/"
+   },
+   {
+    "label": "Velozity contact",
+    "url": "https://getvelozity.com/contact/"
+   },
+   {
+    "label": "Velozity privacy policy",
+    "url": "https://getvelozity.com/privacy/"
+   },
+   {
+    "label": "Velozity terms of service",
+    "url": "https://getvelozity.com/terms/"
+   },
+   {
+    "label": "Velozity cancellation and trial policy",
+    "url": "https://getvelozity.com/cancellation/"
+   },
+   {
+    "label": "Product Hunt launch page and discussion",
+    "url": "https://www.producthunt.com/products/velozity-2?launch=velozity-3"
+   },
+   {
+    "label": "Gather pricing",
+    "url": "https://www.gather.town/pricing"
+   },
+   {
+    "label": "Slack pricing",
+    "url": "https://slack.com/pricing"
+   },
+   {
+    "label": "Lindy pricing",
+    "url": "https://www.lindy.ai/pricing"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/b098c6ea-87c3-41e0-820b-bc0656478ad6.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Velozity graphic 'Use your existing AI subscriptions to create your agents', showing a Claude plan powering an agent called Kai",
+    "credit": "Image: Velozity on Product Hunt",
+    "w": 5080,
+    "h": 3040
+   },
+   {
+    "url": "https://ph-files.imgix.net/9b5a2fcf-8eea-49f0-8300-6a7e98cdbc4c.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Velozity's built-in agent Speed: reads email, transcripts and files, creates and captures tasks, deep research and a morning brief",
+    "credit": "Image: Velozity on Product Hunt",
+    "w": 5080,
+    "h": 3040
+   },
+   {
+    "url": "https://ph-files.imgix.net/8230039f-6980-4e8b-8e50-7147f6342b76.jpeg?auto=format&fit=max&w=1400",
+    "alt": "Velozity graphic 'Pull context from integrated tools to build your agent's knowledge base' with Notion, Gmail, Outlook and Google Calendar icons",
+    "credit": "Image: Velozity on Product Hunt",
+    "w": 5080,
+    "h": 3040
+   }
+  ]
+ }
+}

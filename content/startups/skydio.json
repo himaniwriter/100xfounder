@@ -1,0 +1,69 @@
+{
+ "slug": "skydio",
+ "website": "https://www.skydio.com/",
+ "excerpt": "Skydio builds autonomous drones and docks for public safety, infrastructure inspection and defence. It raised $110M at a $4.4B valuation in April 2026.",
+ "content": "<p>Skydio is a US maker of autonomous drones. Its aircraft use onboard AI and cameras to fly themselves, avoid obstacles and complete missions with little piloting skill required. Its website organises the business around Drone as First Responder (DFR) programmes for police and fire departments, physical security, inspection of assets such as substations, bridges and oil and gas sites, surveying and mapping, and national security. Its products include the X10 and X10D drones, the R10 for indoor flights and Skydio Dock, a rooftop base that lets a drone launch and recharge automatically.</p><p>Crunchbase News reported that Skydio was founded in 2014 and that Adam Bry is its co-founder and CEO. The company sold consumer drones in its early years but left the consumer market in 2023 to focus on enterprise, public safety and defence customers, DroneXL reported. Its drones are used across the US Department of Defense; in 2026 DroneXL reported a $52 million US Army order for X10D drones.</p><h2>Funding</h2><p>Skydio raised a $230 million Series E in February 2023 led by Linse Capital, at a $2.2 billion valuation, according to Crunchbase News; investors in that round included Andreessen Horowitz, Nvidia and Axon. On 23 April 2026 it announced a $110 million Series F at a $4.4 billion post-money valuation. DroneXL reported that Skydio says it has shipped more than 60,000 drones, flown 3.7 million customer missions, serves more than 3,800 enterprise customers and 1,200 public safety agencies, and earns hundreds of millions of dollars in annual revenue; those figures come from the company.</p><h2>Pricing</h2><p>Skydio does not publish prices on its website. Agencies and companies buy through its sales team and resellers, usually as a package of drones, docks and software.</p><p><em>We have not flown Skydio drones. This page is based on Skydio's website and announcements and on Crunchbase News and DroneXL reporting.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Autonomous drones",
+  "platform": "Drones, docks and cloud software",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "AI-powered autonomous drones and docks for first responders, inspection and defence",
+  "maker": {"name": "Skydio", "url": "https://www.skydio.com/"},
+  "team": [{"name": "Adam Bry", "role": "Co-founder and CEO", "url": "https://news.crunchbase.com/ai-robotics/drone-venture-funding-startup-skydio/"}],
+  "gallery": [
+   {"url": "https://cdn.sanity.io/images/mgxz50fq/production-v3-red/f7d19072039f498ee4f69635af8f5c127d4c49b8-3575x2507.jpg?w=1600&fit=max&auto=format", "alt": "An open Skydio Dock on a city rooftop at sunset with a Skydio X10 drone resting inside", "credit": "Image: Skydio", "w": 1600, "h": 1122},
+   {"url": "https://cdn.sanity.io/images/mgxz50fq/production-v3-red/6bc55640edeabf47e5af325d0eb78777e339f6f8-2880x1582.png?w=1600&fit=max&auto=format", "alt": "A Skydio X10 drone flying among high-voltage equipment at an electrical substation", "credit": "Image: Skydio", "w": 1600, "h": 879}
+  ],
+  "use_cases": [
+   "Sending a drone to a 911 call before officers arrive (Drone as First Responder)",
+   "Inspecting substations, bridges and pipelines without climbing",
+   "Patrolling sites and borders from automated docks",
+   "Mapping construction sites and crash or crime scenes",
+   "Reconnaissance for military units"
+  ],
+  "audience": {
+   "fit": [
+    "run a police, fire or public safety agency",
+    "manage utility, energy or transport infrastructure that needs regular inspection",
+    "are a defence or government buyer needing US-made small drones"
+   ],
+   "not_fit": [
+    "want a consumer drone for hobby photography: Skydio left the consumer market in 2023",
+    "need published prices for a one-off purchase"
+   ]
+  },
+  "pricing": {
+   "intro": "Skydio does not publish prices. Drones, docks and software are quoted by its sales team and partners.",
+   "plans": [
+    {"name": "Skydio X10 / X10D", "price": "Quote on request", "detail": "Enterprise and defence drones"},
+    {"name": "Skydio Dock", "price": "Quote on request", "detail": "Automated base for remote launches"},
+    {"name": "Software (DFR Command and others)", "price": "Quote on request", "detail": "Fleet and mission software"}
+   ],
+   "notes": [],
+   "url": "https://www.skydio.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other drone platforms for enterprise and public safety.",
+   "items": [
+    {"name": "DJI Enterprise", "url": "https://enterprise.dji.com/", "what": "Enterprise drones from the world's largest drone maker", "tags": ["Drones"], "starts_at": "See its own site", "difference": "Chinese-made, which restricts its use by some US government buyers."},
+    {"name": "Flock Safety", "url": "https://www.flocksafety.com/", "what": "Public safety technology including drone as first responder", "tags": ["Public safety"], "starts_at": "See its own site", "difference": "Bundles drones with licence-plate cameras and other police tech."},
+    {"name": "Percepto", "url": "https://percepto.co/", "what": "Drone-in-a-box systems for industrial inspection", "tags": ["Autonomous docks"], "starts_at": "See its own site", "difference": "Focused on fixed industrial sites."}
+   ]
+  },
+  "faq": [
+   {"q": "Does Skydio still sell consumer drones?", "a": "No. It left the consumer market in 2023 to focus on enterprise, public safety and defence."},
+   {"q": "How much is Skydio worth?", "a": "It raised $110 million at a $4.4 billion post-money valuation in April 2026."},
+   {"q": "Who runs Skydio?", "a": "Co-founder Adam Bry is CEO. The company was founded in 2014."},
+   {"q": "How much does a Skydio drone cost?", "a": "Skydio does not publish prices; drones and docks are quoted by its sales team."}
+  ],
+  "sources": [
+   {"label": "Skydio website", "url": "https://www.skydio.com/"},
+   {"label": "Skydio: Raises $110M Series F at $4.4B valuation", "url": "https://www.skydio.com/resources/podcasts/skydio-raises-usd110m-series-f-at-usd4-4b-valuation-ceo-adam-bry"},
+   {"label": "DroneXL: Skydio raises $110M Series F at $4.4B valuation (23 Apr 2026)", "url": "https://dronexl.co/2026/04/23/skydio-110m-series-f-44-billion-valuation/"},
+   {"label": "Crunchbase News: Skydio raises $230M Series E (27 Feb 2023)", "url": "https://news.crunchbase.com/ai-robotics/drone-venture-funding-startup-skydio/"}
+  ]
+ }
+}

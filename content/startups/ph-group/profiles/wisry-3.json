@@ -1,0 +1,231 @@
+{
+ "slug": "wisry-3",
+ "ph_url": "https://www.producthunt.com/posts/wisry-3",
+ "existing_listing_slug": null,
+ "website": "https://wisry.ai/",
+ "excerpt": "Wisry researches your rivals' winning Meta and TikTok ads, rebuilds them as static and video ads for your brand and launches them. Studio plan $99/month.",
+ "content": "<p>Wisry is an AI ad team for ecommerce brands. Its main product, Wisry Ads (also called AdClone), studies the ads your competitors run on Meta and TikTok, ranks the ones that seem to be working, and turns that evidence into concepts and then into static and video ads in your own brand style. It offers 20 static formats, AI presenters and editing by chat, and can push finished ads into connected Meta, Google and TikTok campaigns. Campaigns are built paused and only spend after you press Launch, and every concept keeps a citation to the sources behind it.</p><p>A second product, Wisry Creators, uses AI creator personas to post on Instagram, TikTok and X for your brand, with each post approved by you. Wisry says it orchestrates models from several providers, naming Grok, Gemini, OpenAI, Claude, Kling and Nano Banana.</p><p>Pricing is a single Studio plan with 2,000 flexible credits a month, shown at an introductory $99 a month plus VAT (regular price $199). Wisry's Product Hunt makers include Ruta Jaskunaite and serial entrepreneur Fardad Zand. It launched there on 11 September 2026, hunted by Jonno Riekwel, and finished #3 for the day with 283 upvotes and 47 comments. Asked in the comments whether cloning is just copying, Ruta Jaskunaite replied that only the format is reused (hook type, pacing, where the proof sits, how it closes), never the footage, copy, product shots or brand assets, and that the presenter is one of Wisry's avatars or your own footage, never a recreation of the person in the source ad.</p><p><em>We have not tested Wisry ourselves. This page brings together its official site, pricing page and privacy policy, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Marketing",
+  "platform": "Web app",
+  "starts_at": "Studio $99/month + VAT (introductory)",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Finds competitors' winning ads and rebuilds them as static and video ads for your brand",
+  "use_cases": [
+   "Researching which competitor ads on Meta and TikTok are performing",
+   "Turning a rival's winning angle into your own static or video ad",
+   "Producing many ad variants for creative testing without a design team",
+   "Launching and monitoring ads in connected Meta and Google campaigns",
+   "Running AI creator posts for a brand on Instagram, TikTok and X"
+  ],
+  "audience": {
+   "fit": [
+    "run an ecommerce brand that tests many ad creatives on Meta, Google or TikTok",
+    "want research, creative and launch in one tool rather than three",
+    "need ads quickly without a designer or video editor"
+   ],
+   "not_fit": [
+    "sell B2B services, where Wisry's ecommerce focus fits less well",
+    "want fully original creative: the method starts from what rivals already run",
+    "need ads on platforms beyond Meta, Google and TikTok"
+   ]
+  },
+  "pricing": {
+   "intro": "Wisry sells one self-serve plan with a monthly credit balance. Prices are from its pricing page, in US dollars plus VAT.",
+   "url": "https://ads.wisry.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {
+     "name": "Studio",
+     "price": "$99/month + VAT (introductory; regular price $199)",
+     "amount": 99,
+     "currency": "USD",
+     "detail": "2,000 flexible credits a month for research, static ads and video; top-ups available; Meta and Google campaign workflows. Wisry says 2,000 credits make about 6 Express videos, 2 High Thinking videos or 95 static ads; research uses about 3 credits"
+    }
+   ],
+   "notes": [
+    "The pricing page says the introductory price can be cancelled any time.",
+    "A launch banner offered up to 55% off after the Product Hunt launch."
+   ]
+  },
+  "alternatives": {
+   "intro": "Other tools for researching and producing ad creative. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Foreplay",
+     "url": "https://www.foreplay.co/",
+     "what": "Ad inspiration library, competitor analysis and creative briefs",
+     "starts_at": "$59/month (Basic, monthly); 7-day free trial",
+     "difference": "Strong for saving and analysing competitor ads and writing briefs; Wisry goes further and generates and launches the ads."
+    },
+    {
+     "name": "AdCreative.ai",
+     "url": "https://www.adcreative.ai/",
+     "what": "AI generator for ad creatives, copy and product shoots",
+     "starts_at": "See its pricing page",
+     "difference": "Generates creatives from your brand assets; Wisry starts from competitor ads that are already working."
+    }
+   ]
+  },
+  "pros": [
+   "Research, creative and launch in one workflow",
+   "Every concept keeps citations to the ads and sources behind it",
+   "Campaigns are created paused, so nothing spends without your click",
+   "One credit balance covers research, static and video"
+  ],
+  "cons": [
+   "Only one published plan; the $99 price is introductory",
+   "Video uses credits quickly (about 6 Express videos per month on Studio)",
+   "Copying competitors' angles needs care over originality, claims and rights"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/wisry",
+   "x": {
+    "none": "We found no independent posts about Wisry on X to link yet.",
+    "search_url": "https://x.com/search?q=wisry&f=live",
+    "profile_url": "https://x.com/wisry_ai"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Wisry?",
+    "a": "An AI tool for ecommerce brands that researches competitors' winning ads, rebuilds them as static and video ads in your brand, and launches them on Meta, Google and TikTok. A second product, Wisry Creators, runs AI creator posts."
+   },
+   {
+    "q": "How much does Wisry cost?",
+    "a": "The Studio plan is shown at an introductory $99 a month plus VAT (regular $199) for 2,000 credits a month, with top-ups available. You can cancel any time."
+   },
+   {
+    "q": "Will it spend my ad budget on its own?",
+    "a": "No. Wisry says campaigns are built paused and only spend after you press Launch."
+   },
+   {
+    "q": "Is 'cloning' an ad just copying it?",
+    "a": "On Product Hunt, maker Ruta Jaskunaite said Wisry reuses the format of a winning ad (hook type, pacing, structure) but not its footage, copy, product shots or brand assets, and never recreates the person in the source ad. Originality and claims still need your own review."
+   },
+   {
+    "q": "Which ad platforms does it support?",
+    "a": "Research covers Meta and TikTok ads; launching covers Meta, Google and TikTok according to the homepage, and the pricing page lists Meta and Google campaign workflows."
+   },
+   {
+    "q": "What are the alternatives to Wisry?",
+    "a": "Foreplay for ad research and briefs, or AdCreative.ai for generating creatives from your own assets."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Wisry official site",
+    "url": "https://wisry.ai/"
+   },
+   {
+    "label": "Wisry pricing",
+    "url": "https://ads.wisry.ai/pricing"
+   },
+   {
+    "label": "Wisry privacy policy",
+    "url": "https://wisry.ai/privacy"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/wisry"
+   },
+   {
+    "label": "Foreplay pricing",
+    "url": "https://www.foreplay.co/pricing"
+   },
+   {
+    "label": "AdCreative.ai pricing",
+    "url": "https://www.adcreative.ai/pricing"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/wisry/reviews",
+   "as_of": "2026-10-14"
+  },
+  "opinions": {
+   "themes": {
+    "liked": [],
+    "asked": [
+     "Whether 'cloning' amounts to copying other brands' work (the maker says only the format is reused)",
+     "How it handles niches where every competitor runs near-identical ads (there is no automatic saturation warning yet; the research view shows how many variants a format has and how long it has run)",
+     "How it handles ads that rely on a real person's likeness (it never recreates that person; it uses Wisry avatars or your footage)"
+    ],
+    "criticised": [
+     "The word 'cloning' itself, which the maker agreed does the product no favours"
+    ]
+   }
+  },
+  "ph": {
+   "rank": 3,
+   "votes": 283,
+   "comments": 47,
+   "followers": 462,
+   "launched": "2026-09-11",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Ruta Jaskunaite",
+    "role": "Building Wisry, AI ads for DTC brands",
+    "url": "https://www.producthunt.com/@ruta_jaskunaite"
+   },
+   {
+    "name": "Fardad Zand",
+    "role": "Serial entrepreneur",
+    "url": "https://www.producthunt.com/@fardaddy"
+   },
+   {
+    "name": "Mohammad Mahini",
+    "role": "AI builder at Wisry",
+    "url": "https://www.producthunt.com/@m_mahini"
+   },
+   {
+    "name": "Kasra Vafaey",
+    "role": "Chief of Agents and Product at Wisry",
+    "url": "https://www.producthunt.com/@kazzv"
+   },
+   {
+    "name": "Alireza Ghods",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@alireza_ghods1"
+   },
+   {
+    "name": "Kruti Parekh",
+    "role": "Maker",
+    "url": "https://www.producthunt.com/@krutiparekh16"
+   }
+  ],
+  "maker": {
+   "name": "Ruta Jaskunaite",
+   "url": "https://www.producthunt.com/@ruta_jaskunaite"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/ddf37319-b496-4b8a-8dcd-494dc6f989b7.png?auto=format&fit=max&w=1400",
+    "alt": "Wisry graphic 'Winning ads. Without the guesswork.' saying agents clone the ads already winning in your market and launch them to Meta and Google",
+    "credit": "Image: Wisry on Product Hunt",
+    "w": 1621,
+    "h": 970
+   },
+   {
+    "url": "https://ph-files.imgix.net/9d9be0f1-3d36-456a-be57-038662c63a62.png?auto=format&fit=max&w=1400",
+    "alt": "Wisry setup screens: importing a brand and products from a URL, then choosing a creative path such as cloning competitor ads or video ads",
+    "credit": "Image: Wisry on Product Hunt",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "url": "https://ph-files.imgix.net/a2abca18-da82-4a4b-bddd-e5c3cebb78d9.png?auto=format&fit=max&w=1400",
+    "alt": "Wisry screens for generating ad concepts, refining one by chat and sending approved ads to Meta",
+    "credit": "Image: Wisry on Product Hunt",
+    "w": 1672,
+    "h": 941
+   }
+  ],
+  "video_url": "https://youtu.be/OZn2Z7KxX3E",
+  "video_title": "Wisry product video"
+ }
+}

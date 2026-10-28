@@ -1,0 +1,134 @@
+{
+  "type": "post",
+  "slug": "ai-contract-review-tools-startups-2026",
+  "title": "AI contract review tools for startups in 2026, and their legal limits",
+  "excerpt": "Genie AI, Spellbook, LegalOn, Juro and Ironclad compared on pricing, playbooks and data terms, plus what regulators say AI contract review cannot do.",
+  "category": "ai-news",
+  "tags": [
+    "AI contract review",
+    "legal tech",
+    "Spellbook",
+    "Genie AI",
+    "Juro",
+    "LegalOn",
+    "startup legal",
+    "AI regulation"
+  ],
+  "content": "<p>AI contract review tools can now read an NDA, customer agreement or vendor contract in minutes, flag clauses that differ from your standard positions and suggest redlines. For startups, the realistic options in 2026 range from free and self-serve tools such as Genie AI to lawyer-focused Word add-ins such as Spellbook and LegalOn and full contract platforms such as Juro and Ironclad. None of them is a lawyer, and regulators have already penalised a company that claimed otherwise.</p>\n\n<p><em>This article is general information, not legal advice. For any contract that matters to your business, confirm terms with a qualified lawyer in the relevant jurisdiction.</em></p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>AI is good at first-pass review: summarising, spotting missing or unusual clauses against a playbook, and drafting suggested edits.</li>\n<li>Genie AI publishes self-serve prices from free to $75 a month; Spellbook, LegalOn, Juro and Ironclad quote custom prices.</li>\n<li>The US Federal Trade Commission required DoNotPay to pay $193,000 over claims that its \"robot lawyer\" could replace a human lawyer.</li>\n<li>Lawyers' regulators in California and England and Wales say professionals stay responsible for checking AI output and protecting confidential information.</li>\n<li>Before uploading a contract to any AI tool, check whether the vendor can use your data for model training.</li>\n</ul>\n\n<h2>What AI contract review does well, and where it falls short</h2>\n<p>Most startup contracts are routine: mutual NDAs, SaaS subscription terms, consultancy agreements, data processing addenda. For these, AI tools save time in four ways. They summarise the key terms in plain English. They compare the document with your preferred positions, often stored as a \"playbook\", and flag deviations such as uncapped liability or a one-sided termination right. They draft redlines and fallback wording. And contract platforms can extract dates and obligations, such as renewal deadlines, into a searchable record.</p>\n<p>The weak spots are just as clear. Generative AI can state wrong things confidently; the Law Society of England and Wales <a href=\"https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials\">describes these \"hallucinations\"</a> as outputs presented as accurate that are illogical, nonsensical or factually incorrect. AI also lacks your commercial context. It cannot know that a large customer is worth accepting a higher liability cap, or that a clause conflicts with a promise your sales team made by email. And it cannot tell you how a court in a given jurisdiction would read an ambiguous clause.</p>\n\n<h2>How we evaluated contract review tools</h2>\n<p>We take no affiliate fees, and we did not upload real contracts for this guide. We compared what vendors publish on their own pricing and product pages on 4 October 2026, using five criteria relevant to a founder or first in-house lawyer:</p>\n<ul>\n<li><strong>Who it is built for.</strong> Some tools assume a lawyer is driving; others are designed for founders, sales or HR teams to self-serve.</li>\n<li><strong>Playbooks.</strong> Can you encode your own standard positions so the review reflects your risk appetite?</li>\n<li><strong>Where it works.</strong> Microsoft Word add-ins fit how most contracts are actually negotiated.</li>\n<li><strong>Data handling.</strong> Whether the vendor states that your documents are not used to train models.</li>\n<li><strong>Price transparency.</strong> Published self-serve pricing versus \"book a demo\".</li>\n</ul>\n<!-- xf-image-2 -->\n\n<h2>AI contract review tools compared</h2>\n<table>\n<thead><tr><th>Tool</th><th>Built for</th><th>Pricing (as published)</th></tr></thead>\n<tbody>\n<tr><td>Genie AI</td><td>Founders and small teams self-serving</td><td>Free; Pro $59/month annually or $75 monthly; Business $259/month annually for 5 users</td></tr>\n<tr><td>Spellbook</td><td>Law firms and in-house lawyers, in Word</td><td>Custom, by number of users; free trial</td></tr>\n<tr><td>LegalOn</td><td>Solo attorneys, fractional GCs, in-house teams</td><td>Custom plans</td></tr>\n<tr><td>Juro</td><td>Companies wanting legal and business teams on one platform</td><td>Custom, based on contract volume</td></tr>\n<tr><td>Ironclad</td><td>Larger in-house legal teams</td><td>Custom quote</td></tr>\n<tr><td>Luminance</td><td>Enterprise legal and procurement</td><td>Not published</td></tr>\n</tbody>\n</table>\n\n<h3>Genie AI</h3>\n<p><a href=\"https://www.genieai.co/pricing\">Genie AI</a> is the most accessible option for a founder without a lawyer on staff. Its free plan includes AI drafting, Q&amp;A, review and editing plus more than 500 templates, with no card required. Pro costs $59 a month billed annually ($708 a year) or $75 month to month, with enough AI usage for around five documents a month, an AI editor for Word and Excel, and AI redlining and negotiation. Business, at $259 a month annually or $320 monthly for five users, adds company knowledge, team playbooks and negotiation rules. Enterprise is custom and covers more than 150 jurisdictions.</p>\n\n<h3>Spellbook</h3>\n<p><a href=\"https://www.spellbook.legal/pricing\">Spellbook</a> works inside Microsoft Word with review, drafting, Q&amp;A, benchmarks and playbooks, plus a multi-document agent it calls Associate. It is aimed at law firms and in-house teams, offers a free trial, and prices by the number of team members. Spellbook says it has zero data retention agreements that prevent your data being used for training, and that 5,000 legal teams use it. For a startup, it makes most sense once you hire your first in-house lawyer.</p>\n\n<h3>LegalOn</h3>\n<p><a href=\"https://www.legalontech.com/pricing\">LegalOn</a> offers a Core Review plan for solo attorneys and fractional general counsel, with unlimited AI contract review and redlining, more than 135 pre-built playbooks for common agreements and a Word add-in. Its in-house plan adds custom playbooks, a Playbook Agent that converts your precedents into playbooks, and intake from email, Slack and Microsoft Teams. Prices are not listed publicly.</p>\n\n<h3>Juro</h3>\n<p><a href=\"https://juro.com/pricing\">Juro</a> is a contract management platform meant for legal and non-legal teams alike, so sales, HR and finance can self-serve on approved templates. All plans include unlimited users, workflows and templates, with pricing based on contract volume and integrations; deeper connections such as Salesforce, HubSpot and Workday cost extra. Juro says businesses signing around ten or more contracts a month will see a return on the investment, and it can quote in US dollars, pounds or euros.</p>\n<!-- xf-image-3 -->\n\n<h3>Ironclad and Luminance</h3>\n<p><a href=\"https://ironcladapp.com/pricing\">Ironclad</a> sells contract lifecycle management with an agentic review assistant called Jurist, priced by tailored quote. <a href=\"https://www.luminance.com/\">Luminance</a> positions itself as enterprise \"contract intelligence\" with playbook-led negotiation and portfolio-wide risk discovery. Both are designed for established legal departments and are rarely the right first purchase for an early-stage company.</p>\n\n<h2>Can you just use ChatGPT or Claude to review contracts?</h2>\n<p>Many founders already paste contracts into a general assistant. It can be useful for summaries and for spotting obvious gaps, but two issues matter. First, general assistants do not carry your playbook unless you supply it, and they have no built-in legal content. Second, check the data settings. OpenAI's <a href=\"https://chatgpt.com/pricing\">pricing page</a> says content on its individual plans can be used for model training, with an opt-out available. Anthropic's <a href=\"https://www.anthropic.com/news/updates-to-our-consumer-terms\">August 2025 update</a> lets Free, Pro and Max users choose whether their chats train models, with data kept for five years if they opt in and 30 days if they do not; commercial plans fall under separate terms. Customer contracts often contain confidentiality clauses, so uploading them to a consumer account with training switched on could itself be a problem.</p>\n\n<h2>The legal limits of AI contract review</h2>\n\n<h3>AI is not a substitute for a lawyer</h3>\n<p>In September 2024 the FTC <a href=\"https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes\">took action against DoNotPay</a>, which had marketed \"the world's first robot lawyer\". According to the FTC, the company had not tested whether its chatbot's output matched a human lawyer's, and a feature that promised to check small-business websites for legal violations was not effective. The <a href=\"https://www.ftc.gov/legal-library/browse/cases-proceedings/donotpay\">final order</a>, issued in January 2025, required a $193,000 payment, notices to past subscribers about the service's limits, and a ban on claiming it could substitute for a professional service without evidence. The takeaway for buyers: treat any \"replace your lawyer\" marketing with suspicion.</p>\n<!-- xf-image-4 -->\n\n<h3>Professionals stay responsible</h3>\n<p>The State Bar of California's <a href=\"https://www.calbar.ca.gov/Portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf\">2026 practical guidance</a>, which replaces its November 2023 version, says lawyers must review, verify and correct AI-generated outputs and that the autonomy of agentic AI does not satisfy a lawyer's duty of independent judgement. It also says lawyers should not put confidential client information into a generative AI tool that presents material confidentiality or security risks without informed client consent, and that relying on vendors' marketing assurances is not enough. In England and Wales, the <a href=\"https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials\">Law Society's guidance</a> states that solicitors' professional duties apply to work they carry out with AI.</p>\n<p>These rules bind lawyers, not founders, but they are a useful standard. If your outside counsel uses AI, they remain responsible for the advice. If you use AI yourself without a lawyer, nobody else carries that responsibility.</p>\n\n<h2>A safe AI contract workflow for startups</h2>\n<ol>\n<li><strong>Write a one-page playbook.</strong> List your positions on liability caps, indemnities, payment terms, termination, governing law and data protection. Load it into whichever tool you use.</li>\n<li><strong>Use AI for the first pass.</strong> Summaries, deviation flags and suggested edits on routine paper such as NDAs.</li>\n<li><strong>Escalate by risk, not by length.</strong> Anything involving equity, IP assignment, exclusivity, large revenue, regulated data or a new country goes to a lawyer.</li>\n<li><strong>Check data terms first.</strong> Use business plans or tools that state they do not train on your documents.</li>\n<li><strong>Keep the human sign-off.</strong> A named person approves every signed contract.</li>\n</ol>\n<h3>How to test a tool before you trust it</h3>\n<p>Run any trial on a contract you have already negotiated with a lawyer's help, with confidential details removed. Because you know where the real issues were, you can see whether the tool finds them, whether it invents problems that are not there, and whether its suggested wording matches your positions. Repeat the test with a second, different type of agreement, such as a vendor contract after an NDA, because performance can vary by document type. Note how long you spend checking the output: if the review takes as long as reading the contract yourself, the tool is not saving time for that use.</p>\n<p>If you are building a legal or compliance function, our <a href=\"/jobs/\">jobs board</a> and <a href=\"/news/\">AI news</a> coverage track hiring and product moves at companies such as <a href=\"/jobs/company/anthropic/\">Anthropic</a>.</p>\n<!-- xf-image-5 -->\n\n<h2>Bottom line</h2>\n<p>AI contract review is worth using in 2026, mainly to speed up routine agreements and to make sure nothing obvious is missed. Founders without counsel can start with a self-serve tool such as Genie AI; teams with a lawyer should look at Word-based tools such as Spellbook or LegalOn; companies signing many contracts a month may justify Juro or Ironclad. Keep a lawyer for high-stakes deals and check every tool's data terms before uploading anything confidential.</p>\n\n<h2>FAQ</h2>\n<h3>Is AI contract review legally binding or reliable?</h3>\n<p>AI review has no legal status; it is a drafting and checking aid. Output can be wrong, so a qualified person should review anything you sign.</p>\n<h3>What is the best free AI contract review tool?</h3>\n<p>Genie AI publishes a free plan with AI review, drafting and more than 500 templates. General assistants also have free tiers, but check their training settings first.</p>\n<h3>Can I upload customer contracts to ChatGPT?</h3>\n<p>Check your plan's data settings and the contract's confidentiality clause first. OpenAI says individual-plan content can be used for training unless you opt out.</p>\n<h3>Do startups need a lawyer if they use AI for contracts?</h3>\n<p>For routine NDAs, AI plus a clear playbook may be enough. For funding, equity, IP, large deals or regulated data, use a qualified lawyer.</p>\n<h3>Is Spellbook suitable for non-lawyers?</h3>\n<p>Spellbook markets itself to law firms and in-house legal teams. Founders without legal training may find self-serve tools or a lawyer-led review a better fit.</p>\n\n<h2>Sources</h2>\n<ol>\n<li>Genie AI, \"Pricing\", accessed 4 October 2026. <a href=\"https://www.genieai.co/pricing\">genieai.co</a></li>\n<li>Spellbook, \"Spellbook Legal AI Pricing\", accessed 4 October 2026. <a href=\"https://www.spellbook.legal/pricing\">spellbook.legal</a></li>\n<li>LegalOn, \"Pricing &amp; Plans\", accessed 4 October 2026. <a href=\"https://www.legalontech.com/pricing\">legalontech.com</a></li>\n<li>Juro, \"Pricing\", accessed 4 October 2026. <a href=\"https://juro.com/pricing\">juro.com</a></li>\n<li>Ironclad, \"Pricing\", accessed 4 October 2026. <a href=\"https://ironcladapp.com/pricing\">ironcladapp.com</a></li>\n<li>Luminance, \"Contract Intelligence\", accessed 4 October 2026. <a href=\"https://www.luminance.com/\">luminance.com</a></li>\n<li>OpenAI, \"ChatGPT Pricing\", accessed 4 October 2026. <a href=\"https://chatgpt.com/pricing\">chatgpt.com</a></li>\n<li>Anthropic, \"Updates to Consumer Terms and Privacy Policy\", 28 August 2025. <a href=\"https://www.anthropic.com/news/updates-to-our-consumer-terms\">anthropic.com</a></li>\n<li>US Federal Trade Commission, \"FTC Announces Crackdown on Deceptive AI Claims and Schemes\", 25 September 2024. <a href=\"https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes\">ftc.gov</a></li>\n<li>US Federal Trade Commission, \"DoNotPay\" case page, accessed 4 October 2026. <a href=\"https://www.ftc.gov/legal-library/browse/cases-proceedings/donotpay\">ftc.gov</a></li>\n<li>The State Bar of California, \"Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law\", 2026. <a href=\"https://www.calbar.ca.gov/Portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf\">calbar.ca.gov</a></li>\n<li>The Law Society, \"Generative AI: the essentials\", accessed 4 October 2026. <a href=\"https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials\">lawsociety.org.uk</a></li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Legal_Contract_%26_Signature_-_Warm_Tones.jpg/1920px-Legal_Contract_%26_Signature_-_Warm_Tones.jpg",
+      "alt": "A printed contract with signature lines and a fountain pen resting on top",
+      "caption": "AI can flag risky clauses, but a person still decides what to sign.",
+      "credit": "Photo: Blogtrepreneur / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Legal_Contract_%26_Signature_-_Warm_Tones.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Litigation_and_Civil_Trial_Practice_Law_Books_in_Law_School_Library_%2829955442088%29.jpg/1920px-Litigation_and_Civil_Trial_Practice_Law_Books_in_Law_School_Library_%2829955442088%29.jpg",
+      "alt": "Rows of litigation and civil trial practice law books on a library shelf",
+      "caption": "AI tools lack the jurisdiction-specific judgement a qualified lawyer brings.",
+      "credit": "Photo: Tony Webster / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Litigation_and_Civil_Trial_Practice_Law_Books_in_Law_School_Library_(29955442088).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Internet_Law_%2827568497474%29.jpg/1920px-Internet_Law_%2827568497474%29.jpg",
+      "alt": "A wooden judge's gavel beside a large metallic @ symbol on a blue background",
+      "caption": "Contract platforms bring AI review into everyday business workflows.",
+      "credit": "Photo: Blogtrepreneur / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Internet_Law_(27568497474).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Close-up_of_Lady_Justice_statue_holding_scales%2C_symbolizing_justice_and_fairness.jpg/1920px-Close-up_of_Lady_Justice_statue_holding_scales%2C_symbolizing_justice_and_fairness.jpg",
+      "alt": "Close-up of a Lady Justice statue holding scales at a civil court building in Melbourne",
+      "caption": "Regulators have acted against AI products marketed as replacements for lawyers.",
+      "credit": "Photo: DP Singh Bhullar / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Close-up_of_Lady_Justice_statue_holding_scales,_symbolizing_justice_and_fairness.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Scales_of_Justice_%283285348799%29.jpg/1920px-Scales_of_Justice_%283285348799%29.jpg",
+      "alt": "A small brass scales of justice ornament",
+      "caption": "Escalate contracts to a lawyer by risk, not by page count.",
+      "credit": "Photo: frankieleon / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Scales_of_Justice_(3285348799).jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.genieai.co/pricing",
+      "publisher": "Genie AI",
+      "date": "2026-10-04",
+      "claim": "Free plan; Pro $59 annual/$75 monthly; Business $259/$320 for 5 users; Enterprise 150+ jurisdictions"
+    },
+    {
+      "url": "https://www.spellbook.legal/pricing",
+      "publisher": "Spellbook",
+      "date": "2026-10-04",
+      "claim": "Word add-in features; Associate agent; custom pricing by users; ZDR; 5,000 legal teams; free trial"
+    },
+    {
+      "url": "https://www.legalontech.com/pricing",
+      "publisher": "LegalOn",
+      "date": "2026-10-04",
+      "claim": "Core Review for solo attorneys/fractional GCs; unlimited review; 135+ playbooks; Word add-in; custom playbooks"
+    },
+    {
+      "url": "https://juro.com/pricing",
+      "publisher": "Juro",
+      "date": "2026-10-04",
+      "claim": "Custom pricing by contract volume; unlimited users; integrations extra; ROI at 10+ contracts/month; USD/GBP/EUR"
+    },
+    {
+      "url": "https://ironcladapp.com/pricing",
+      "publisher": "Ironclad",
+      "date": "2026-10-04",
+      "claim": "Tailored quote; Jurist AI contract partner"
+    },
+    {
+      "url": "https://www.luminance.com/",
+      "publisher": "Luminance",
+      "date": "2026-10-04",
+      "claim": "Enterprise contract intelligence; playbook-led negotiation"
+    },
+    {
+      "url": "https://chatgpt.com/pricing",
+      "publisher": "OpenAI",
+      "date": "2026-10-04",
+      "claim": "Individual plans: content used to train models, opt-out available"
+    },
+    {
+      "url": "https://www.anthropic.com/news/updates-to-our-consumer-terms",
+      "publisher": "Anthropic",
+      "date": "2025-08-28",
+      "claim": "Consumer training choice; 5-year vs 30-day retention; commercial terms excluded"
+    },
+    {
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+      "publisher": "US Federal Trade Commission",
+      "date": "2024-09-25",
+      "claim": "DoNotPay robot lawyer claims; untested; $193,000 proposed settlement"
+    },
+    {
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/donotpay",
+      "publisher": "US Federal Trade Commission",
+      "date": "2025-01-17",
+      "claim": "Final order January 2025; payment, notices, claims ban"
+    },
+    {
+      "url": "https://www.calbar.ca.gov/Portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf",
+      "publisher": "The State Bar of California",
+      "date": "2026-05-18",
+      "claim": "2026 guidance replacing Nov 2023 version; verify outputs; agentic AI; confidentiality"
+    },
+    {
+      "url": "https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials",
+      "publisher": "The Law Society",
+      "date": "2026-10-04",
+      "claim": "Hallucination definition; solicitors' duties apply to AI-assisted work"
+    }
+  ]
+}

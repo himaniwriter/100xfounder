@@ -1,0 +1,130 @@
+{
+ "slug": "inferock-bench",
+ "ph_url": "https://www.producthunt.com/products/inferock",
+ "existing_listing_slug": null,
+ "website": "https://github.com/inferock/inferock-bench",
+ "excerpt": "Inferock Bench is a free local proxy that sits in front of OpenAI, Anthropic, Gemini and OpenRouter calls and writes a per-call receipt of what you were billed and what failed. How it works, its limits, Inferock's hosted pricing and alternatives.",
+ "content": "<p>Inferock Bench (inferock-bench) is a local proxy for LLM API traffic. You point your existing SDK at it by changing the API key and base URL, and it records each call to OpenAI, Anthropic, the Gemini Developer API or pinned OpenRouter endpoints: provider-reported token usage, status, timing, retries and failures. From those records it builds a receipt that separates what you spent from money lost to failed or broken calls, time lost waiting, and amounts worth checking against your invoice, such as cache discounts at risk.</p><p>It looks for problems like empty replies that were still billed, refusals, truncated answers, token counts that do not match a recount, duplicate request IDs and retries caused by provider faults. According to the README, provider keys are not sent to Inferock and receipts stay on your machine unless you share them. It needs Node.js 22 or newer and is published on npm under the FSL-1.1-ALv2 licence. The README discloses that Inferock sells a hosted product and that receipts are graded against a standard Inferock wrote.</p><p>Inferock Bench launched on Product Hunt on 15 August 2026 and finished #1 for the day with 256 upvotes and 45 comments. It is made by Inferock, whose co-founders Bharath Koneti and Himashwetha Gowda answered questions in the thread.</p><p><em>We have not tested Inferock Bench ourselves. This page brings together its GitHub README, Inferock's website and pricing page, its Product Hunt page and launch discussion, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Developer tools",
+  "platform": "Local proxy (Node.js 22+, npm)",
+  "os": "Any system that runs Node.js 22 or newer",
+  "starts_at": "Free (local bench); Inferock Watch free on your own keys",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "Local proxy that writes an independent per-call receipt of LLM API spend and failures",
+  "maker": {"name": "Bharath Koneti", "url": "https://www.producthunt.com/@bharath_koneti"},
+  "team": [
+   {"name": "Bharath Koneti", "role": "Co-founder", "url": "https://www.producthunt.com/@bharath_koneti"},
+   {"name": "Himashwetha Gowda", "role": "Co-founder", "url": "https://www.producthunt.com/@himashwetha_gowda"},
+   {"name": "Hamza Afzal Butt", "role": "Maker", "url": "https://www.producthunt.com/@hamza_afzal_butt"}
+  ],
+  "ph": {"rank": 1, "votes": 256, "comments": 45, "followers": 580, "launched": "2026-08-15", "as_of": "2026-10-14"},
+  "gallery": [
+   {"url": "https://ph-files.imgix.net/42a255e5-2317-4539-ae0a-db2551b450bd.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160, "credit": "Image: Inferock via Product Hunt", "alt": "Inferock graphic 'Every call, every time' showing the proxy between your app and the provider bill"},
+   {"url": "https://ph-files.imgix.net/4f720947-f9c3-4e62-a2aa-51ea0b4238d0.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160, "credit": "Image: Inferock via Product Hunt", "alt": "Inferock Bench receipt in an illustrative synthetic scenario, listing money loss, spend, estimated recoverable amount and time loss"},
+   {"url": "https://ph-files.imgix.net/2eff64a2-6cdc-4588-a373-a6e582a6fc9e.png?auto=format&fit=max&w=1400", "w": 3840, "h": 2160, "credit": "Image: Inferock via Product Hunt", "alt": "Illustrative Inferock example listing API calls, with failed calls marked as still billed and an example overbilled total"}
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Bharath Koneti says the team built inferock-bench because they kept paying for AI answers that cut off mid-sentence and could not find out where the money went. Providers show totals, he wrote, but not the per-call record you would need to prove which answer broke or which retry ran, and the provider that charges you also decides what counts as a failure.",
+    "His pitch: run it locally in front of your existing calls by changing two settings, and get an independent record of every call without your provider key touching Inferock's servers. He asked the community whether they had ever managed to dispute an AI bill with a provider."
+   ],
+   "attribution": "Bharath Koneti, co-founder, on Product Hunt",
+   "url": "https://www.producthunt.com/products/inferock?comment=5784144"
+  },
+  "use_cases": [
+   "Checking whether you were billed for failed, empty or truncated LLM responses",
+   "Seeing how many silent retries your app or agent makes and what they cost",
+   "Breaking down a jump in a multi-model AI bill call by call",
+   "Routing Claude Code's metered Anthropic API traffic through a local meter",
+   "Running a smoke test or test battery in CI"
+  ],
+  "audience": {
+   "fit": [
+    "pay for OpenAI, Anthropic, Gemini or OpenRouter API usage and want per-call evidence",
+    "run agents that retry or switch between models and get unexplained bill jumps",
+    "prefer a local tool that keeps provider keys and receipts on your own machine"
+   ],
+   "not_fit": [
+    "want to audit past usage: it only records calls made through it after you install it",
+    "use web subscriptions like claude.ai rather than API keys: the makers say it does not work there",
+    "need to catch a successful call that returned a wrong value: the makers say that is out of scope"
+   ]
+  },
+  "pricing": {
+   "intro": "Inferock Bench itself is free to run locally. Inferock's website lists three hosted products; prices below are from its pricing page.",
+   "url": "https://inferock.ai/pricing",
+   "checked": "2026-10-14",
+   "plans": [
+    {"name": "inferock-bench (local)", "price": "$0", "amount": 0, "currency": "USD", "detail": "Open repository on GitHub and npm, FSL-1.1-ALv2 licence; your providers bill you as usual"},
+    {"name": "Inferock Watch", "price": "Free", "amount": 0, "currency": "USD", "detail": "Hosted observability on your own provider keys; providers bill you separately"},
+    {"name": "Inferock Serve", "price": "Pay per token", "currency": "USD", "detail": "Prepaid serverless inference with a 10% service fee on actual supplier cost; no provider key needed"},
+    {"name": "Inferock Dedicated", "price": "By agreement", "currency": "USD", "detail": "Reserved capacity; no published price"}
+   ],
+   "notes": ["Taxes are charged separately on Serve.", "Example per-token rates on the pricing page are marked as illustrations, not offers."]
+  },
+  "alternatives": {
+   "intro": "Product Hunt lists Langfuse, Helicone and LiteLLM among the alternatives. These are broader LLM observability or gateway tools rather than billing-receipt tools. Review scores are Product Hunt users' own.",
+   "items": [
+    {"name": "Langfuse", "url": "https://langfuse.com/", "what": "Open-source LLM engineering platform for tracing, evaluations and prompt management", "starts_at": "See its pricing page", "ph_rating": 4.98, "ph_reviews": 49, "ph_url": "https://www.producthunt.com/products/langfuse", "difference": "Full tracing and evaluation platform; Inferock Bench focuses narrowly on billing evidence for each call."},
+    {"name": "Helicone AI", "url": "https://www.helicone.ai/", "what": "Open-source LLM observability for developers", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 13, "ph_url": "https://www.producthunt.com/products/helicone-ai", "difference": "Also works as a proxy that logs requests and costs, with a hosted dashboard; Inferock Bench runs locally and grades failures against its own published standard."},
+    {"name": "LiteLLM", "url": "https://www.litellm.ai/", "what": "Library and proxy that standardises calls across LLM APIs", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 24, "ph_url": "https://www.producthunt.com/products/litellm", "difference": "A gateway for routing and spend tracking across providers, not a billing-integrity receipt."}
+   ],
+   "more": "Product Hunt also lists Edgee and Puddl."
+  },
+  "reviews": {"count": 1, "rating": 4, "url": "https://www.producthunt.com/products/inferock/reviews", "as_of": "2026-10-14"},
+  "opinions": {
+   "themes": {
+    "liked": ["Breakdown of failed calls and retries", "Setup that only changes the base URL and API key"],
+    "asked": [
+     "Whether it can audit past logs (no, it records from the moment traffic goes through it)",
+     "Whether it catches a successful call that returned a wrong value (no, that is out of scope)",
+     "Whether anyone has had a provider credit a charge using a receipt (not yet, the makers said)"
+    ],
+    "criticised": ["A reviewer could not tell how fresh the bench's copy of provider price tables was"]
+   },
+   "quotes": [
+    {"text": "‘$0.04/call’ means nothing if a successful job secretly takes 6 calls. I want cost per accepted outcome.", "author": "Chen Zhang", "url": "https://www.producthunt.com/products/inferock?comment=5789068"},
+    {"text": "Can I feed it a month of past logs and get a retroactive receipt or is it strictly forward-looking from install?", "author": "Kimberly West", "url": "https://www.producthunt.com/products/inferock?comment=5787672"},
+    {"text": "The failed-calls and retries breakdown is the part I'd use first.", "author": "Dmitriy Semenkevich", "url": "https://www.producthunt.com/products/inferock?comment=5788863"}
+   ]
+  },
+  "pros": [
+   "Free and runs locally; provider keys are not sent to Inferock, according to the README",
+   "Works by changing two SDK settings",
+   "Separates spend, money loss, time loss and invoice-check amounts instead of adding them up",
+   "Publishes its method, threat model and limits in the repository"
+  ],
+  "cons": [
+   "Cannot audit calls made before installation or that bypass the proxy",
+   "Measured support covers OpenAI, Anthropic, Gemini Developer API and pinned OpenRouter endpoints only",
+   "Grades receipts against a standard written by Inferock, which also sells a hosted product",
+   "Source-available FSL licence rather than a standard open-source licence"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/inferock",
+   "quotes": [
+    {"author": "Kimberly West", "url": "https://www.producthunt.com/products/inferock?comment=5787672", "text": "Asked whether past logs can be audited.", "reply": "Bharath Koneti said receipts start when you point your SDK at it; it cannot vouch for calls it never saw."},
+    {"author": "Jay Janarthanan", "url": "https://www.producthunt.com/products/inferock?comment=5788435", "text": "Asked about tools for web logins such as claude.ai.", "reply": "Bharath Koneti said it only works where there is an API key and base URL."}
+   ],
+   "x": {"none": "We found no posts about Inferock Bench on X to link yet.", "search_url": "https://x.com/search?q=inferock&f=live", "profile_url": "https://x.com/inferockai"}
+  },
+  "faq": [
+   {"q": "What is Inferock Bench?", "a": "A local proxy that records each LLM API call to OpenAI, Anthropic, Gemini or pinned OpenRouter endpoints and builds a receipt of what you were billed and what failed."},
+   {"q": "Is it free?", "a": "Yes, the local bench is free on GitHub and npm. Inferock's hosted Watch product is also free on your own provider keys; Serve and Dedicated are paid."},
+   {"q": "Does my API key go to Inferock?", "a": "According to the README, no: the proxy attaches your key only to requests to the provider, and receipts stay local unless you share them."},
+   {"q": "Can it check last month's bill?", "a": "No. It only records calls that go through it after you set it up."},
+   {"q": "Does it work with ChatGPT or claude.ai subscriptions?", "a": "No. The makers say it needs an API key and a base URL to point at; web subscriptions do not expose per-call detail."},
+   {"q": "What are the alternatives?", "a": "Product Hunt lists Langfuse, Helicone, LiteLLM, Edgee and Puddl. Langfuse and Helicone are wider observability platforms; LiteLLM is a gateway."}
+  ],
+  "sources": [
+   {"label": "inferock-bench on GitHub (README)", "url": "https://github.com/inferock/inferock-bench"},
+   {"label": "Inferock website", "url": "https://inferock.ai/"},
+   {"label": "Inferock pricing", "url": "https://inferock.ai/pricing"},
+   {"label": "Product Hunt page and launch discussion", "url": "https://www.producthunt.com/products/inferock"},
+   {"label": "Product Hunt reviews", "url": "https://www.producthunt.com/products/inferock/reviews"},
+   {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/inferock/alternatives"}
+  ]
+ }
+}

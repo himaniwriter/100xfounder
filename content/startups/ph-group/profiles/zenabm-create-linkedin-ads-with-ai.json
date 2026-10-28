@@ -1,0 +1,228 @@
+{
+  "slug": "zenabm-create-linkedin-ads-with-ai",
+  "ph_url": "https://www.producthunt.com/posts/zenabm-create-linkedin-ads-with-ai",
+  "existing_listing_slug": null,
+  "website": "https://zenabm.com/",
+  "excerpt": "ZenABM lets you create, optimise and report on LinkedIn Ads from Claude, ChatGPT, Perplexity or Gemini via its MCP server, plus ABM analytics. From $59/month.",
+  "content": "<p>ZenABM is an account-based marketing platform built around LinkedIn Ads. It shows which companies engage with your ads, scores accounts, tracks intent, and ties campaigns to pipeline and revenue through syncs with HubSpot, Salesforce and Attio. Its newer pieces let you run LinkedIn advertising with AI: an agent called Zena that answers questions and can build and optimise campaigns, and an MCP server that lets you create, analyse and manage LinkedIn ads from Claude, ChatGPT, Perplexity or Gemini.</p><p>The MCP server lists 105 read and write tools across companies, campaigns, ad sets, creatives, deals, contacts, ABM stages and intent data, plus 15 built-in skills that run as slash commands, such as an account audit, finding budget wasters, a persona audit, ad-decay checks, ABM strategy planning and monthly reports. ZenABM says nothing that changes live ad delivery happens without your approval.</p><p>ZenABM LTD is based in London, according to its privacy policy. Its Product Hunt listing describes the AI tools as having 96 tools and 20+ expert skills, while the website's MCP page now lists 105 tools and 15 skills; the product page there has four reviews averaging 5 out of 5. Plans run from Starter at $59 a month to Agency at $479 a month, with annual billing giving two months free and a 37-day free trial.</p><p>ZenABM launched on Product Hunt on 29 September 2026 and finished #3 for the day, with 270 upvotes and 72 comments. It has 4 Product Hunt reviews averaging 5 out of 5 (as of 14 October 2026).</p><p><em>We have not tested ZenABM ourselves. This page brings together its official site, pricing, MCP page and privacy policy, its Product Hunt page and the official pricing pages of comparable tools, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Marketing",
+    "platform": "Web app, MCP server and API",
+    "starts_at": "Starter $59/month; 37-day free trial",
+    "schema_category": "BusinessApplication",
+    "summary_short": "LinkedIn Ads and ABM analytics you can run from Claude, ChatGPT or Gemini",
+    "use_cases": [
+      "Building LinkedIn ad campaigns from a description inside Claude or ChatGPT",
+      "Finding and pausing underperforming LinkedIn ads",
+      "Seeing which target accounts engage with your ads and how they move through ABM stages",
+      "Attributing pipeline and revenue to LinkedIn and other ad channels",
+      "Producing monthly LinkedIn Ads reports for stakeholders"
+    ],
+    "audience": {
+      "fit": [
+        "run account-based marketing on LinkedIn Ads",
+        "want to manage LinkedIn campaigns from an AI assistant",
+        "need company-level engagement data synced to HubSpot, Salesforce or Attio"
+      ],
+      "not_fit": [
+        "don't advertise on LinkedIn",
+        "sell to consumers rather than target accounts",
+        "want an AI to change live campaigns without approval: ZenABM asks first"
+      ]
+    },
+    "pricing": {
+      "intro": "ZenABM has four plans. Prices are from zenabm.com, in US dollars per month on monthly billing; annual billing gives two months free.",
+      "url": "https://zenabm.com/pricing",
+      "checked": "2026-10-14",
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "$59/month",
+          "amount": 59,
+          "currency": "USD",
+          "detail": "For companies starting ABM: 10 Zena chats a day, default account scoring, 1 ABM campaign"
+        },
+        {
+          "name": "Growth",
+          "price": "$159/month",
+          "amount": 159,
+          "currency": "USD",
+          "detail": "50 Zena chats a day, customisable scoring and intent, up to 3 ABM campaigns"
+        },
+        {
+          "name": "Pro",
+          "price": "$399/month",
+          "amount": 399,
+          "currency": "USD",
+          "detail": "Unlimited Zena chats and ABM campaigns, for in-house teams, enterprise ABM and agencies"
+        },
+        {
+          "name": "Agency",
+          "price": "$479/month",
+          "amount": 479,
+          "currency": "USD",
+          "detail": "For agencies managing clients, with client accounts starting from 3"
+        }
+      ],
+      "notes": [
+        "37-day free trial, no setup fees, cancel any time.",
+        "ZenABM says it never marks up ad spend.",
+        "The feature table lists HubSpot, Salesforce and Attio integrations, webhooks, API access and the MCP server; check the pricing page for which plan includes each."
+      ]
+    },
+    "alternatives": {
+      "intro": "ZenABM publishes comparisons with Fibbler and Factors.ai. Prices come from each product's own pricing page, checked on 14 October 2026.",
+      "items": [
+        {
+          "name": "Fibbler",
+          "url": "https://fibbler.co/",
+          "what": "LinkedIn Ads attribution and company engagement analytics",
+          "starts_at": "$89/month; 30-day free trial",
+          "difference": "Focused on attribution; ZenABM adds campaign creation and an MCP server for AI assistants."
+        },
+        {
+          "name": "Factors.ai",
+          "url": "https://www.factors.ai/",
+          "what": "Account intelligence, website visitor identification and ABM analytics",
+          "starts_at": "Lite $199/month after a free trial",
+          "difference": "Broader account identification across website and ads; ZenABM is built around LinkedIn Ads."
+        }
+      ]
+    },
+    "pros": [
+      "Manage LinkedIn Ads from the AI assistant you already use",
+      "Changes to live campaigns need your approval",
+      "No ad-spend markup",
+      "Long 37-day free trial",
+      "CRM sync with HubSpot, Salesforce and Attio"
+    ],
+    "cons": [
+      "Mostly useful if LinkedIn is your main ad channel",
+      "Zena chats are capped on the lower plans",
+      "Agency plan is the most expensive at $479 a month"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/zena-by-zenabm-linkedin-ads-ai-chatbot",
+      "x": {
+        "none": "We found no posts about ZenABM's LinkedIn Ads AI tools on X to link yet.",
+        "search_url": "https://x.com/search?q=zenabm&f=live",
+        "profile_url": "https://x.com/_zenabm"
+      }
+    },
+    "faq": [
+      {
+        "q": "What is ZenABM?",
+        "a": "An account-based marketing platform for LinkedIn Ads that shows which companies engage, scores accounts and attributes pipeline. It also lets you create and manage LinkedIn ads from Claude, ChatGPT, Perplexity or Gemini through an MCP server."
+      },
+      {
+        "q": "How much does ZenABM cost?",
+        "a": "Starter is $59 a month, Growth $159, Pro $399 and Agency $479, billed monthly. Annual billing gives two months free, and there is a 37-day free trial."
+      },
+      {
+        "q": "Can the AI change my live campaigns?",
+        "a": "ZenABM says nothing that changes live ad delivery happens without your approval."
+      },
+      {
+        "q": "What can the MCP server do?",
+        "a": "It lists 105 read and write tools across companies, campaigns, ad sets, creatives, deals, contacts, ABM stages and intent data, plus 15 skills such as an account audit, budget-waster check and monthly report."
+      },
+      {
+        "q": "What are the alternatives to ZenABM?",
+        "a": "Fibbler for LinkedIn Ads attribution, or Factors.ai for broader account intelligence."
+      }
+    ],
+    "sources": [
+      {
+        "label": "ZenABM official site",
+        "url": "https://zenabm.com/"
+      },
+      {
+        "label": "ZenABM pricing",
+        "url": "https://zenabm.com/pricing"
+      },
+      {
+        "label": "ZenABM MCP server",
+        "url": "https://zenabm.com/mcp"
+      },
+      {
+        "label": "ZenABM privacy policy",
+        "url": "https://zenabm.com/privacy-policy"
+      },
+      {
+        "label": "Product Hunt page and launch discussion",
+        "url": "https://www.producthunt.com/products/zena-by-zenabm-linkedin-ads-ai-chatbot"
+      },
+      {
+        "label": "Fibbler pricing",
+        "url": "https://fibbler.co/pricing"
+      },
+      {
+        "label": "Factors.ai pricing",
+        "url": "https://www.factors.ai/pricing"
+      }
+    ],
+    "reviews": {
+      "count": 4,
+      "rating": 5,
+      "url": "https://www.producthunt.com/products/zena-by-zenabm-linkedin-ads-ai-chatbot/reviews",
+      "as_of": "2026-10-14"
+    },
+    "gallery": [
+      {
+        "url": "https://ph-files.imgix.net/31808d41-258c-499c-98a6-242e5abdc873.png?auto=format&fit=max&w=1400",
+        "alt": "ZenABM's Zena agent answering a request for average click-through rate by LinkedIn campaign type",
+        "credit": "Image: ZenABM on Product Hunt",
+        "w": 2140,
+        "h": 1280
+      },
+      {
+        "url": "https://ph-files.imgix.net/9f1f13e7-600f-4157-888e-b31eb801e4e7.png?auto=format&fit=max&w=1400",
+        "alt": "ZenABM summary of pipeline and deals influenced by LinkedIn Ads and ABM campaigns",
+        "credit": "Image: ZenABM on Product Hunt",
+        "w": 2140,
+        "h": 1280
+      },
+      {
+        "url": "https://ph-files.imgix.net/d5db059a-cce9-4415-96c0-912b14052145.png?auto=format&fit=max&w=1400",
+        "alt": "ZenABM table of top companies by LinkedIn ad impressions month on month, with their ABM stage",
+        "credit": "Image: ZenABM on Product Hunt",
+        "w": 2140,
+        "h": 1280
+      },
+      {
+        "url": "https://ph-files.imgix.net/0a93d6f1-1f83-42d9-8532-8a93fcae914b.png?auto=format&fit=max&w=1400",
+        "alt": "ZenABM dialog for sharing a campaign performance report privately or by public link",
+        "credit": "Image: ZenABM on Product Hunt",
+        "w": 2140,
+        "h": 1280
+      }
+    ],
+    "ph": {
+      "rank": 3,
+      "votes": 270,
+      "comments": 72,
+      "followers": 624,
+      "launched": "2026-09-29",
+      "as_of": "2026-10-14"
+    },
+    "team": [
+      {
+        "name": "Michal Jackowski",
+        "role": "Founder @ ZenABM",
+        "url": "https://www.producthunt.com/@mjackowski"
+      },
+      {
+        "name": "Emilia Korczyńska",
+        "role": "Co-founder @ ZenABM",
+        "url": "https://www.producthunt.com/@emilia_korczynska1"
+      },
+      {
+        "name": "Nihal Ahamed",
+        "role": "Growth Marketer - Stitchflow",
+        "url": "https://www.producthunt.com/@nihal_ahamed1"
+      }
+    ]
+  },
+  "ph_data_partial": "Launch stats and makers came from Product Hunt's launches and makers pages; launch comments were not available from Product Hunt, so there are no Product Hunt comment quotes."
+}

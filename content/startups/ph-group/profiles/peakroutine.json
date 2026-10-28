@@ -1,0 +1,129 @@
+{
+  "slug": "peakroutine",
+  "ph_url": "https://www.producthunt.com/posts/peakroutine",
+  "existing_listing_slug": null,
+  "website": "https://www.peakroutinehealth.com",
+  "excerpt": "PeakRoutine is an iPhone health coach that links sleep, HRV, daylight, mood and nutrition data from Apple Health and builds habits around them.",
+  "content": "<p>PeakRoutine is an iPhone app that reads your health data through Apple Health, so data from an Apple Watch, Oura, WHOOP or similar devices flows in on its own. It looks for links between your sleep, heart-rate variability (HRV), daylight exposure, exercise, nutrition, mood and hydration, and explains what they mean for you. Six AI coaches (health, sleep, fitness, nutrition, recovery and mental health) answer questions using your own data, and a habit engine builds a daily plan that adjusts to how recovered you are.</p><p>The makers say it is a wellness app, not a clinical tool for diagnosing or managing a condition. Its site says it is free to start, that subscriptions can be cancelled any time in the app or the App Store, and that your data is never sold or shared with advertisers.</p><p>PeakRoutine was started by co-founders Siddhant Gupta and Sakshi Khare. Siddhant writes on its About page that a pre-diabetes diagnosis, and wearable data that never explained why, led him to build it. It launched on Product Hunt on 16 June 2026 and finished #4 for the day with 266 upvotes and 47 comments (as of 14 October 2026).</p><p><em>We have not tested PeakRoutine ourselves. This page brings together its official site, its Product Hunt launch and the public pages of comparable apps, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-15",
+    "category": "Health and fitness",
+    "platform": "iPhone app",
+    "os": "iOS; reads data through Apple Health",
+    "starts_at": "Free to start; subscription prices not published on its site",
+    "schema_category": "HealthApplication",
+    "summary_short": "AI health coach that connects your wearable and lifestyle data and builds habits around it",
+    "maker": {"name": "Siddhant Gupta", "url": "https://www.producthunt.com/@siddhant_gupta12"},
+    "team": [
+      {"name": "Siddhant Gupta", "role": "Co-founder", "url": "https://www.producthunt.com/@siddhant_gupta12"},
+      {"name": "Sakshi Khare", "role": "Co-founder", "url": "https://www.producthunt.com/@sakshi_khare4"},
+      {"name": "Sakshi Patil", "role": "Product and go-to-market", "url": "https://www.producthunt.com/@sakshi_patil8"},
+      {"name": "Priyank Tyagi", "role": "Full-stack developer", "url": "https://www.producthunt.com/@priyanktyagi"},
+      {"name": "Hasnain Raza", "role": "Full-stack AI developer", "url": "https://www.producthunt.com/@hasnainrazaa03"}
+    ],
+    "ph": {"rank": 4, "votes": 266, "comments": 47, "followers": 522, "launched": "2026-06-16", "as_of": "2026-10-14"},
+    "video_url": "https://youtu.be/MZAxdkIedkQ",
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/cacd2325-0b1e-45f6-ba5b-c58ce8fbd33c.png?auto=format&fit=max&w=1400", "w": 1586, "h": 992, "credit": "Image: PeakRoutine on Product Hunt",
+       "alt": "PeakRoutine graphic 'Personalized health coaching powered by your biomarkers' with a phone showing an activity score of 81 and active habits"},
+      {"url": "https://ph-files.imgix.net/a3266b11-3009-426f-8be0-bfbdc9a3942a.png?auto=format&fit=max&w=1400", "w": 1586, "h": 992, "credit": "Image: PeakRoutine on Product Hunt",
+       "alt": "Two PeakRoutine screens titled 'Deep dives on sleep and daylight': a sleep-stage chart and a daylight exposure curve with sun habits"},
+      {"url": "https://ph-files.imgix.net/bf15463f-0f93-4242-82e0-a31133608470.png?auto=format&fit=max&w=1400", "w": 1586, "h": 992, "credit": "Image: PeakRoutine on Product Hunt",
+       "alt": "PeakRoutine's six AI coaches: health, sleep, fitness, nutrition, recovery and mental health"},
+      {"url": "https://ph-files.imgix.net/7351c72c-21dc-4c58-b87a-012ca4aae3bc.png?auto=format&fit=max&w=1400", "w": 1537, "h": 1023, "credit": "Image: PeakRoutine on Product Hunt",
+       "alt": "PeakRoutine chats with the Recovery Coach ('Why am I so tired today?') and the Fitness Coach ('Can I push hard today?') answering from HRV, sleep and heart-rate data"}
+    ],
+    "launch_story": {
+      "paragraphs": [
+        "Siddhant Gupta says he was pre-diabetic at 32 with an Apple Watch full of data and still no idea what was making him unwell; it turned out to be his sleep, and no app had told him. He calls most health apps expensive mirrors that track everything and change nothing.",
+        "PeakRoutine was built to close that gap: it pulls in sleep, sunlight, exercise, nutrition, mood, hydration, HRV and stress through Apple Health, looks for patterns specific to you, and adds six AI coaches and a habit engine that builds a plan around your biology."
+      ],
+      "attribution": "Siddhant Gupta, co-founder, on Product Hunt",
+      "url": "https://www.producthunt.com/products/peak-routine?comment=4531960"
+    },
+    "use_cases": [
+      "Finding out which habit (sleep, daylight, exercise) is behind low energy or poor recovery",
+      "Getting a daily plan that eases off on low-recovery days",
+      "Asking an AI coach about sleep, HRV or nutrition with answers based on your own data",
+      "Seeing data from several wearables and apps in one place through Apple Health"
+    ],
+    "audience": {
+      "fit": [
+        "already wear an Apple Watch, Oura, WHOOP or similar and want the data explained",
+        "want habits and coaching, not just more charts",
+        "use an iPhone"
+      ],
+      "not_fit": [
+        "need medical diagnosis or condition management: the makers describe it as a wellness app",
+        "use Android: the site links only to the App Store",
+        "want to compare prices before downloading: subscription prices are not listed on the website"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published. PeakRoutine's website says it is free to start, and its FAQ describes a Free plan that tracks your data and a paid Pro plan that explains what the data means. You can cancel a subscription any time from the app or the App Store. The site lists no prices (rechecked 15 October 2026).",
+      "url": "https://www.peakroutinehealth.com/",
+      "checked": "2026-10-15",
+      "plans": [],
+      "notes": ["Check the App Store listing for current in-app prices."]
+    },
+    "alternatives": {
+      "intro": "Apps that also turn wearable data into coaching. Prices are as stated on each company's own site.",
+      "items": [
+        {"name": "Bevel", "url": "https://www.bevel.health/", "what": "AI health coach covering strain, sleep, recovery, nutrition and medical records", "starts_at": "Free to start (its site)",
+         "difference": "Larger and more established, with its own strain and recovery scores and health-record storage; PeakRoutine centres on correlations between habits and six specialist coaches."},
+        {"name": "Welltory", "url": "https://welltory.com/", "what": "HRV-based stress, energy and health tracking", "starts_at": "See its pricing page",
+         "difference": "Built around HRV measurement and stress scores rather than habit plans."},
+        {"name": "Apple Health", "url": "https://www.apple.com/health/", "what": "Apple's built-in health data app", "starts_at": "Free with iPhone",
+         "difference": "Collects the data PeakRoutine reads but does not explain correlations or coach you."}
+      ]
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/peak-routine/reviews", "as_of": "2026-10-14"},
+    "opinions": {
+      "themes": {
+        "liked": ["Habits that adapt to how recovered you are, instead of punishing a missed day", "Turning wearable data into something to act on"],
+        "asked": ["Whether it gives a plan and daily goals rather than a short burst of motivation (yes, according to the maker)", "Whether the six coaches are separate models (six custom models sharing one biomarker context, the team said)", "How it avoids treating a coincidence as a pattern (the team said passive data alone can't fully separate two things that change together)", "Whether it is for chronic conditions (no, it is a wellness app)"],
+        "criticised": []
+      },
+      "quotes": [
+        {"text": "Finally an app that turns my wearable data into something I can actually act on instead of just staring at.", "author": "Zain Sheikh", "url": "https://www.producthunt.com/products/peak-routine?comment=5456466"},
+        {"text": "Why would someone use this instead of Apple Health?", "author": "Aleksandar Blazhev", "url": "https://www.producthunt.com/products/peak-routine?comment=5455814"}
+      ]
+    },
+    "pros": [
+      "Reads data from many wearables at once through Apple Health",
+      "Habit plans adjust to recovery rather than enforcing streaks",
+      "Says it never sells data or shares it with advertisers"
+    ],
+    "cons": [
+      "iPhone only, as far as its site shows",
+      "Prices are not published on its website",
+      "Not a medical tool, by the makers' own description"
+    ],
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/peak-routine",
+      "quotes": [
+        {"author": "Aleksandar Blazhev", "url": "https://www.producthunt.com/products/peak-routine?comment=5455814", "text": "Why would someone use this instead of Apple Health?",
+         "reply": "Siddhant Gupta said PeakRoutine is not trying to replace Apple Health but sits on top of it, with the dashboard, insights and habits all aimed at actually improving health."},
+        {"author": "Himani Sah", "url": "https://www.producthunt.com/products/peak-routine?comment=5456358", "text": "Is this more of a preventive care app or it's meant for people with chronic conditions or both?",
+         "reply": "Priyank Tyagi replied that it is a wellness app at heart, not for diagnosing or managing a condition."}
+      ],
+      "x": {"none": "We found no posts about PeakRoutine on X yet.", "search_url": "https://x.com/search?q=PeakRoutine&f=live"}
+    },
+    "faq": [
+      {"q": "What is PeakRoutine?", "a": "An iPhone app that connects your health data through Apple Health, finds patterns between sleep, HRV, daylight, exercise, nutrition and mood, and gives you six AI coaches and adaptive habit plans."},
+      {"q": "How much does PeakRoutine cost?", "a": "Its website says it is free to start and that subscriptions can be cancelled any time, but it does not publish prices. Check the App Store listing."},
+      {"q": "Which wearables does PeakRoutine work with?", "a": "Anything that syncs to Apple Health, such as Apple Watch, Oura or WHOOP, according to the maker."},
+      {"q": "Is PeakRoutine a medical app?", "a": "No. The team describes it as a wellness app for day-to-day health and habits, not for diagnosing or managing conditions."},
+      {"q": "Does PeakRoutine sell my data?", "a": "Its site says it never sells your data or shares it with advertisers, and that data is encrypted in transit and at rest."},
+      {"q": "How is it different from Apple Health?", "a": "It sits on top of Apple Health: Apple Health stores the data, PeakRoutine explains the links between it and coaches you on habits."}
+    ],
+    "sources": [
+      {"label": "PeakRoutine official site", "url": "https://www.peakroutinehealth.com/"},
+      {"label": "PeakRoutine About page", "url": "https://www.peakroutinehealth.com/about/"},
+      {"label": "PeakRoutine contact page", "url": "https://www.peakroutinehealth.com/contact/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/products/peak-routine?launch=peakroutine"},
+      {"label": "Bevel official site", "url": "https://www.bevel.health/"},
+      {"label": "Welltory official site", "url": "https://welltory.com/"}
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+ "slug": "simplified",
+ "website": "https://simplified.com/",
+ "excerpt": "Simplified is an AI marketing app that writes, designs, makes videos and schedules social posts, now built around AI agents that run whole campaigns. Plans from $79/month; backed by Craft Ventures.",
+ "content": "<p>Simplified is a web app for marketing content. It started as an all-in-one design and content tool: TechCrunch described it in 2021 as marketing-focused design software looking to take on Canva. It has since added AI writing, AI image and video generation and social media scheduling, and its website now presents it as a team of AI marketing agents. You brief the agents once with your brand kit, products and goals, and they plan, write, design and schedule campaigns across social, email and ads, showing you the finished work for approval before anything is published. Its site says it has more than 15 million users and publishes natively to more than 12 platforms.</p><p>KD (Koustubha) Deshpande is co-founder and CEO. In June 2021 TechCrunch reported that Simplified raised a $2.2 million seed round led by Craft Ventures, with angels including Superhuman's Rahul Vohra and former Uber product chief Manik Gupta. Later in 2021 it raised a further $8.5 million, again led by Craft Ventures, with Khosla Ventures and Wing Venture Capital participating, according to Pulse 2.0 and Venture Capital Journal. The company said that brought its total funding to $10.7 million.</p><p>Simplified publishes its prices. The pricing page lists Starter (\"from $79 a month\"), Pro and Business plans that differ by the number of campaigns per month, seats, social accounts, storage and brand kits; Pro and Business add team collaboration, and Business adds bulk scheduling and external client approval. A trial gives Starter-level access. No free plan was listed when we checked.</p><p>This profile draws on Simplified's own pages and published reporting. We have not tested the product, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI marketing and design",
+  "platform": "Web",
+  "starts_at": "From $79/month",
+  "schema_category": "DesignApplication",
+  "summary_short": "AI marketing agents that write, design, make video and schedule campaigns in your brand kit",
+  "maker": {"name": "Simplified", "url": "https://simplified.com/"},
+  "team": [
+   {"name": "KD (Koustubha) Deshpande", "role": "Co-founder and CEO"}
+  ],
+  "gallery": [
+   {"url": "https://lp-assets.simplified.com/og/en/home.png", "alt": "Simplified banner on a dark background reading AI agents for repeat marketing, Start with Riley, with a Brief, Build, Approve, Ship workflow strip", "credit": "Image: Simplified", "w": 1200, "h": 630},
+   {"url": "https://lp-assets.simplified.com/og/en/pricing.png", "alt": "Simplified pricing banner reading A fractional CMO costs thousands a month, Simplified costs a fraction of that, with Free, Starter, Pro and Business tabs", "credit": "Image: Simplified", "w": 1200, "h": 630}
+  ],
+  "use_cases": [
+   "Planning and producing a month of social media posts in your brand style",
+   "Writing ad and email copy with matching designs",
+   "Creating short AI videos for social channels",
+   "Scheduling and publishing across several social accounts",
+   "Getting client approval on agency campaigns before they go live"
+  ],
+  "audience": {
+   "fit": [
+    "are a small marketing team or solo marketer producing recurring campaigns",
+    "run an agency that needs client approval and many social accounts",
+    "want design, copy, video and scheduling in one tool"
+   ],
+   "not_fit": [
+    "want a free plan: none was listed when we checked",
+    "need fine-grained professional design control rather than AI-generated output"
+   ]
+  },
+  "pricing": {
+   "intro": "Prices from Simplified's official pricing page. The page headline says Starter is from $79 a month; Pro and Business list monthly and lower annual-billing prices.",
+   "plans": [
+    {"name": "Starter", "price": "From $79/month", "amount": 79, "currency": "USD", "detail": "5 campaigns a month, 100K AI words, 100 AI designs, 50 AI videos, 7 social accounts, 1 brand kit"},
+    {"name": "Pro", "price": "$119/month, or $99/month billed annually", "amount": 119, "currency": "USD", "detail": "15 campaigns a month, 3 seats, unlimited AI words, designs and videos, 15 social accounts, 3 brand kits"},
+    {"name": "Business", "price": "$239/month, or $199/month billed annually", "amount": 239, "currency": "USD", "detail": "40 campaigns a month, 7 seats, 30 social accounts, unlimited brand kits, bulk scheduling, client approval"}
+   ],
+   "notes": ["A trial with Starter-level access is offered; no free plan was listed."],
+   "url": "https://simplified.com/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Copy, design, video and scheduling in one app",
+   "Published prices",
+   "Approval step before anything is posted"
+  ],
+  "cons": [
+   "No free plan listed",
+   "Campaign limits on each plan"
+  ],
+  "alternatives": {
+   "intro": "Other AI design and marketing content tools. We have not compared them hands-on.",
+   "items": [
+    {"name": "Canva", "url": "https://www.canva.com/", "what": "Online design platform with AI features", "tags": ["Design"], "starts_at": "See its own pricing page", "difference": "Design-first with a large template library and a free plan."},
+    {"name": "Jasper", "url": "https://www.jasper.ai/", "what": "AI marketing writing and content platform", "tags": ["AI writing"], "starts_at": "See its own pricing page", "difference": "Focuses on marketing copy rather than design and scheduling."},
+    {"name": "Buffer", "url": "https://buffer.com/", "what": "Social media scheduling and analytics", "tags": ["Social scheduling"], "starts_at": "See its own pricing page", "difference": "Scheduling-first, with lighter AI content creation."}
+   ]
+  },
+  "faq": [
+   {"q": "What is Simplified?", "a": "An AI marketing app that plans, writes, designs, makes video for and schedules campaigns, now presented as a team of AI agents."},
+   {"q": "How much does Simplified cost?", "a": "Its pricing page lists Starter from $79 a month, Pro at $119 a month ($99 billed annually) and Business at $239 a month ($199 billed annually)."},
+   {"q": "Is there a free Simplified plan?", "a": "No free plan was listed when we checked; there is a trial with Starter-level access."},
+   {"q": "Who backs Simplified?", "a": "Craft Ventures led its 2021 seed rounds, with Khosla Ventures and Wing Venture Capital in the $8.5 million round."}
+  ],
+  "sources": [
+   {"label": "Simplified website", "url": "https://simplified.com/"},
+   {"label": "Simplified pricing page", "url": "https://simplified.com/pricing"},
+   {"label": "TechCrunch: Simplified raises $2.2 million in seed (3 Jun 2021)", "url": "https://techcrunch.com/2021/06/03/simplified-raises-2-2-million-in-seed-to-bring-automated-content-creation-to-marketers/"},
+   {"label": "Pulse 2.0: Simplified raises $8.5 million", "url": "https://pulse2.com/ai-based-content-creation-company-simplified-raises-8-5-million"},
+   {"label": "Venture Capital Journal: Simplified attracts $8.5m seed", "url": "https://www.venturecapitaljournal.com/simplified-attracts-8-5m-seed/"}
+  ]
+ }
+}

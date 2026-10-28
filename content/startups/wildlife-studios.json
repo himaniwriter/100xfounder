@@ -1,0 +1,69 @@
+{
+ "slug": "wildlife-studios",
+ "website": "https://wildlifestudios.com/",
+ "excerpt": "Wildlife Studios is a Brazilian mobile game developer behind Tennis Clash, Zooba and Sniper 3D, valued at about $3 billion in its 2020 Series B.",
+ "content": "<p>Wildlife Studios is a mobile game company from Brazil. Crunchbase News reported that brothers Victor and Arthur Lazarte founded it in 2011, and that by 2020 it had launched more than 60 titles and passed 2 billion downloads. Its best-known games include Tennis Clash, the battle game Zooba, the shooter Sniper 3D and War Machines. In its newsroom Wildlife says Sniper 3D has reached 1 billion downloads in ten years, and it announces partnerships such as a Tennis Clash tie-in with the Australian Open and the International Tennis Federation's World Tennis eChampionship. Wildlife also runs a publishing arm for games from outside studios and lists job openings and an internship programme on its site.</p><h2>Funding</h2><p>In August 2020 Wildlife raised a $120 million Series B led by Vulcan Capital, with existing investor Human Capital participating. Reuters reported that the round valued the company at $3 billion; Crunchbase News described the valuation as nearly $3 billion and said the round took Wildlife's total funding to about $250 million. Before that, a round from Benchmark in late 2019 had made it a unicorn. At the time, CEO Victor Lazarte said the company planned to spend up to $200 million over two years to attract game designers, according to PocketGamer.biz.</p><h2>Pricing</h2><p>Wildlife does not publish a price list on its website. Its games are distributed through the Apple App Store and Google Play, where each game's own listing shows its price and any in-app purchases.</p><h2>Who it is for</h2><p>For players, Wildlife makes casual and mid-core mobile games such as sports and shooting titles. For developers, its publishing team works with outside studios. For job seekers, its careers pages list openings and internships.</p><p><em>We have not reviewed Wildlife's games for this page. It is based on Wildlife's website and newsroom and on Reuters, Crunchbase News and PocketGamer.biz reporting.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Mobile games",
+  "platform": "iOS and Android",
+  "starts_at": "Game prices shown in app stores",
+  "schema_category": "GameApplication",
+  "summary_short": "Brazilian maker of mobile games including Tennis Clash, Zooba and Sniper 3D",
+  "maker": {"name": "Wildlife Studios", "url": "https://wildlifestudios.com/"},
+  "team": [
+   {"name": "Victor Lazarte", "role": "Co-founder; CEO at the time of the 2020 Series B", "url": "https://news.crunchbase.com/venture/wildlife-scores-vulcan-led-120m-series-b-financing-to-propel-mobile-game-platform"},
+   {"name": "Arthur Lazarte", "role": "Co-founder", "url": "https://news.crunchbase.com/venture/wildlife-scores-vulcan-led-120m-series-b-financing-to-propel-mobile-game-platform"}
+  ],
+  "gallery": [
+   {"url": "https://wildlifestudios.com/wp-content/themes/wildlife/assets/images/facebook.png", "alt": "The Wildlife logo surrounded by characters from its games, including tennis players from Tennis Clash and animal fighters from Zooba", "credit": "Image: Wildlife Studios", "w": 1200, "h": 630},
+   {"url": "https://wildlifestudios.com/wp-content/uploads/2023/10/001-wildlife-key-shots.jpg", "alt": "A tablet at a reception desk showing a Welcome to Wildlife Studios check-in screen", "credit": "Image: Wildlife Studios", "w": 1440, "h": 600}
+  ],
+  "use_cases": [
+   "Playing casual sports games such as Tennis Clash on a phone",
+   "Playing the battle game Zooba or the shooter Sniper 3D",
+   "Publishing a mobile game through Wildlife's publishing team",
+   "Finding game development jobs and internships in Brazil"
+  ],
+  "audience": {
+   "fit": [
+    "play mobile games on iPhone or Android",
+    "are an independent studio looking for a mobile publisher",
+    "want to work in game development in Latin America"
+   ],
+   "not_fit": [
+    "want console or PC games: Wildlife's catalogue is mobile",
+    "are looking for business software"
+   ]
+  },
+  "pricing": {
+   "intro": "Wildlife does not publish prices on its own site. Each game's price and in-app purchases are listed on its App Store or Google Play page.",
+   "plans": [
+    {"name": "Wildlife games", "price": "See each game's app store page", "detail": "Tennis Clash, Zooba, Sniper 3D, War Machines and others"}
+   ],
+   "notes": ["We did not check app store listings for this page."],
+   "url": "https://wildlifestudios.com/",
+   "checked": "2026-10-15"
+  },
+  "alternatives": {
+   "intro": "Other large mobile game studios.",
+   "items": [
+    {"name": "Supercell", "url": "https://supercell.com/", "what": "Finnish maker of Clash of Clans and Brawl Stars", "tags": ["Mobile games"], "starts_at": "See its own site", "difference": "A small number of long-running hit games."},
+    {"name": "Rovio", "url": "https://www.rovio.com/", "what": "Finnish studio behind Angry Birds", "tags": ["Mobile games"], "starts_at": "See its own site", "difference": "Built around the Angry Birds brand."},
+    {"name": "Miniclip", "url": "https://corporate.miniclip.com/", "what": "Mobile game developer and publisher, maker of 8 Ball Pool", "tags": ["Mobile games", "Sports"], "starts_at": "See its own site", "difference": "Also strong in casual sports titles."}
+   ]
+  },
+  "faq": [
+   {"q": "Who founded Wildlife Studios?", "a": "Brothers Victor and Arthur Lazarte, in 2011, according to Crunchbase News."},
+   {"q": "What games does Wildlife make?", "a": "Tennis Clash, Zooba, Sniper 3D and War Machines are among the titles on its website."},
+   {"q": "How much is Wildlife Studios worth?", "a": "Its last widely reported valuation was about $3 billion, from the $120 million Series B led by Vulcan Capital in August 2020."},
+   {"q": "Where is Wildlife Studios based?", "a": "It is a Brazilian company; Crunchbase News describes it as Brazil-based."}
+  ],
+  "sources": [
+   {"label": "Wildlife Studios website and newsroom", "url": "https://wildlifestudios.com/"},
+   {"label": "Crunchbase News: Wildlife scores Vulcan-led $120M Series B (14 Aug 2020)", "url": "https://news.crunchbase.com/venture/wildlife-scores-vulcan-led-120m-series-b-financing-to-propel-mobile-game-platform"},
+   {"label": "Reuters via Yahoo Finance: Brazilian gaming company reaches $3 billion valuation", "url": "https://money.yahoo.com/brazilian-gaming-company-reaches-3-202010691.html"},
+   {"label": "PocketGamer.biz: Wildlife raises $120 million at a $3 billion valuation", "url": "https://www.pocketgamer.biz/wildlife-series-b-funding/"}
+  ]
+ }
+}

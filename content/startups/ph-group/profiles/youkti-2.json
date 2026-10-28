@@ -1,0 +1,236 @@
+{
+ "slug": "youkti-2",
+ "ph_url": "https://www.producthunt.com/posts/youkti-2",
+ "existing_listing_slug": null,
+ "website": "https://youkti.ai/",
+ "excerpt": "Youkti is an Indian revenue intelligence platform that tracks 45+ buying signals per account and tells sales teams what to do next. Signals are free.",
+ "content": "<p>Youkti is a revenue intelligence platform for B2B sales teams. It researches each account across more than 100 parameters, watches for more than 45 buying signals such as funding rounds, hiring surges, leadership changes and tech-stack moves, and turns them into a specific next step: which deal is slipping and why, which dormant account is showing buying activity, or what to prepare for tomorrow's meeting. For each signal it explains why it matters for that account and suggests a timing window.</p><p>An AI agent called ARYA builds outreach flows from plain-English instructions (signal triggers, target personas, tone and cadence), and Youkti writes multi-step email sequences with A/B variants that can be pushed to Lemlist, Outreach or another sequencer. It syncs with Salesforce, HubSpot, Zoho CRM, Pipedrive and Freshsales, connects to Gmail, Outlook and calendars, and offers a REST API with 70+ endpoints and an MCP server with 39 tools for Claude, ChatGPT and other AI assistants.</p><p>Youkti is run by Aryacognis Pvt Ltd, an Indian company, and describes itself as a T-Hub associated startup. Its co-founder and CEO is Ramana Abhishek. Youkti launched on Product Hunt on 12 September 2026, hunted by Jonno Riekwel, and finished #1 for the day with 345 upvotes and 51 comments. Contact data, buying signals and intent data are free with no card or usage meter; the founder said on Product Hunt that customers pay for revenue outcomes instead, but no price list is published.</p><p><em>We have not tested Youkti ourselves. This page brings together its official site and privacy policy, its Product Hunt page and the official pages of comparable tools, and says where each fact comes from.</em></p>",
+ "profile": {
+  "checked": "2026-10-14",
+  "category": "Sales",
+  "platform": "Web app, API and MCP server",
+  "starts_at": "Data layer free; paid plans not published",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Tracks buying signals on every account and tells sales teams the next action",
+  "use_cases": [
+   "Spotting deals at risk and why before they stall",
+   "Prioritising accounts that show funding, hiring or leadership-change signals",
+   "Reactivating dormant accounts when a new buying signal appears",
+   "Preparing talking points and stakeholder maps before a meeting",
+   "Generating signal-based outreach sequences and pushing them to a sequencer"
+  ],
+  "audience": {
+   "fit": [
+    "run B2B sales with a CRM and want a daily list of what to act on",
+    "are a RevOps lead who wants signals tied to specific next steps",
+    "want sales data inside Claude, ChatGPT or Copilot through an MCP server"
+   ],
+   "not_fit": [
+    "only need a contact database, where a data tool may be simpler",
+    "need published pricing before you talk to anyone",
+    "sell to consumers rather than businesses"
+   ]
+  },
+  "pricing": {
+   "intro": "Pricing not published. Youkti's site and Product Hunt listing say contact data, buying signals and intent data are free, with no card and no usage meter. Its founder said on Product Hunt that customers pay for revenue outcomes and actions (leads engaged, opportunities moved, dormant deals reactivated) rather than contacts enriched, but no price list is published.",
+   "url": "https://youkti.ai/",
+   "checked": "2026-10-14",
+   "plans": [],
+   "notes": [
+    "Free items shown in its launch gallery: buying signals, verified mobile numbers, business emails and LinkedIn profiles."
+   ]
+  },
+  "alternatives": {
+   "intro": "Youkti compares itself with Apollo and Clay on its own site. Prices come from each product's own pricing page, checked on 14 October 2026.",
+   "items": [
+    {
+     "name": "Apollo.io",
+     "url": "https://www.apollo.io/",
+     "what": "B2B contact database with sequencing and AI features",
+     "starts_at": "Free plan; see its pricing page for paid plans",
+     "difference": "Mainly a contact database and outreach tool; Youkti works from signals and your existing deals to suggest the next action."
+    },
+    {
+     "name": "Clay",
+     "url": "https://www.clay.com/",
+     "what": "Data enrichment and prospecting workflow builder",
+     "starts_at": "14-day trial; see its pricing page",
+     "difference": "Orchestrates enrichment from many data sources; Youkti adds deal tracking and recommended actions on top of signals."
+    }
+   ]
+  },
+  "pros": [
+   "Signals and prospect lists are free to start",
+   "Explains why each signal matters and when to act",
+   "Works with the main CRMs and sequencers",
+   "API and MCP server for use inside AI assistants",
+   "Indian company with Indian payment processing (Razorpay)"
+  ],
+  "cons": [
+   "Paid pricing is not published",
+   "Many features to learn: signals, plays, journeys, sequences and ARYA",
+   "Signal-based outreach still needs a human to check tone and accuracy",
+   "Hands out personal contact data (mobile numbers, emails) for free; check that your outreach meets the consent rules that apply to you, such as India's DPDP Act or GDPR"
+  ],
+  "community": {
+   "ph_url": "https://www.producthunt.com/products/youkti",
+   "x": {
+    "none": "We found no posts about Youkti on X yet.",
+    "search_url": "https://x.com/search?q=youkti&f=live"
+   }
+  },
+  "faq": [
+   {
+    "q": "What is Youkti?",
+    "a": "A revenue intelligence platform for B2B sales teams. It researches accounts, tracks 45+ buying signals and turns them into next actions, outreach sequences and meeting prep."
+   },
+   {
+    "q": "Is Youkti free?",
+    "a": "The data layer is: contact data, buying signals and intent data are free with no card or usage meter. The founder says you pay for revenue outcomes such as leads engaged and deals moved, but Youkti does not publish a price list."
+   },
+   {
+    "q": "How does it compare with Apollo or Clay?",
+    "a": "Youkti's own FAQ says Apollo is a contact database and Clay orchestrates enrichment, while Youkti starts from your ideal customer profile and your existing deals and works out which accounts need attention today."
+   },
+   {
+    "q": "Which tools does it connect to?",
+    "a": "Salesforce, HubSpot, Zoho CRM, Pipedrive and Freshsales; Gmail, Outlook and calendars; data sources such as Snowflake and Google Drive; and prospecting tools such as Sales Navigator, Apollo and ZoomInfo. It also has a REST API and an MCP server."
+   },
+   {
+    "q": "Who is behind Youkti?",
+    "a": "Aryacognis Pvt Ltd, trading as Youkti, according to its privacy policy. The site describes it as a T-Hub associated startup."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Youkti official site",
+    "url": "https://youkti.ai/"
+   },
+   {
+    "label": "Youkti privacy policy",
+    "url": "https://youkti.ai/privacy-policy"
+   },
+   {
+    "label": "Product Hunt page and launch discussion",
+    "url": "https://www.producthunt.com/products/youkti"
+   },
+   {
+    "label": "Apollo pricing",
+    "url": "https://www.apollo.io/pricing"
+   },
+   {
+    "label": "Clay pricing",
+    "url": "https://www.clay.com/pricing"
+   }
+  ],
+  "reviews": {
+   "count": 0,
+   "rating": null,
+   "url": "https://www.producthunt.com/products/youkti/reviews",
+   "as_of": "2026-10-14"
+  },
+  "ph": {
+   "rank": 1,
+   "votes": 345,
+   "comments": 51,
+   "followers": 757,
+   "launched": "2026-09-12",
+   "as_of": "2026-10-14"
+  },
+  "team": [
+   {
+    "name": "Ramana Abhishek",
+    "role": "Co-founder and CEO, Youkti",
+    "url": "https://www.producthunt.com/@ramana_abhishek"
+   },
+   {
+    "name": "Rashi Arora",
+    "role": "Marketing at Youkti",
+    "url": "https://www.producthunt.com/@rashiaroraofficial"
+   },
+   {
+    "name": "Adithya Challa",
+    "role": "Founding engineer at Youkti",
+    "url": "https://www.producthunt.com/@adithya_challa"
+   },
+   {
+    "name": "RONAK BHOGAVALLI",
+    "role": "Founding marketing manager at Youkti",
+    "url": "https://www.producthunt.com/@ronak_bhogavalli"
+   },
+   {
+    "name": "Jayadeep Vadlamani",
+    "role": "Founding engineer (integrations) at Youkti",
+    "url": "https://www.producthunt.com/@jayadeep_vadlamani"
+   },
+   {
+    "name": "Judith Kaushik",
+    "role": "Founding engineer and CSM at Youkti",
+    "url": "https://www.producthunt.com/@judith_kaushik"
+   },
+   {
+    "name": "Pratik Dahale",
+    "role": "Founding engineer (AI) at Youkti",
+    "url": "https://www.producthunt.com/@pratik_dahale"
+   }
+  ],
+  "maker": {
+   "name": "Ramana Abhishek",
+   "url": "https://www.producthunt.com/@ramana_abhishek"
+  },
+  "gallery": [
+   {
+    "url": "https://ph-files.imgix.net/78a280bd-cc06-4531-8546-e148f16eaf8a.png?auto=format&fit=max&w=1400",
+    "alt": "Youkti graphic '45+ Buying Intent & Signals. Free!' with signal filters for buying triggers, scores, people and tech stack",
+    "credit": "Image: Youkti on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/4c21bb81-2a7e-4b1c-8fc6-0b4c82dff0ee.png?auto=format&fit=max&w=1400",
+    "alt": "Youkti daily cockpit listing prioritised accounts with signals such as leadership change and hiring surge",
+    "credit": "Image: Youkti on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/895b81a2-2320-4600-a5e8-614429e468ea.png?auto=format&fit=max&w=1400",
+    "alt": "Youkti Deal Actions screen flagging an at-risk deal with a recommended next action and ARYA's next steps",
+    "credit": "Image: Youkti on Product Hunt",
+    "w": 1270,
+    "h": 760
+   },
+   {
+    "url": "https://ph-files.imgix.net/32a729b9-26a0-4352-9c21-2664385f7a9d.png?auto=format&fit=max&w=1400",
+    "alt": "Youkti graphic showing buying signals, verified mobile numbers, business emails and LinkedIn profiles priced at $0",
+    "credit": "Image: Youkti on Product Hunt",
+    "w": 1270,
+    "h": 760
+   }
+  ],
+  "launch_story": {
+   "paragraphs": [
+    "Ramana Abhishek, Youkti's founder, says sales teams pay a fortune for data that is metered by the credit and still open their CRM on Monday guessing which account to work, while deals slip quietly until the quarter closes.",
+    "Youkti keeps a running memory of every account, conversation and deal and turns it into a daily list of specific moves: which deal is at risk and why, which dormant account just fired a signal, which renewal needs a call. His argument is that data has become cheap, so Youkti gives it away free and competes on knowing what to do next."
+   ],
+   "attribution": "Ramana Abhishek, maker, on Product Hunt",
+   "url": "https://www.producthunt.com/products/youkti?comment=5785937"
+  },
+  "video_url": "https://youtu.be/bHV7GaHle7I",
+  "video_title": "Youkti launch video",
+  "opinions": {
+   "themes": {
+    "liked": [],
+    "asked": [
+     "What the business model is if data is free (you pay for revenue outcomes and actions, the founder says)",
+     "Whether it replaces HubSpot (no; HubSpot is a connector and accounts import in a few clicks)",
+     "Whether the AI can learn your own sales process and writing tone (ARYA can be trained on company documents and your email style)",
+     "How often signals refresh (daily, weekly, fortnightly or monthly across 45+ sources)"
+    ],
+    "criticised": [
+     "One commenter joked that free contact data could mean more spam calls and emails for everyone"
+    ]
+   }
+  }
+ }
+}

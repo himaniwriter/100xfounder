@@ -1,0 +1,80 @@
+{
+ "slug": "wicked-ride",
+ "website": "https://bounceinfinity.com/",
+ "excerpt": "Wicked Ride was a Bengaluru premium motorcycle rental startup founded in 2014. It became Metro Bikes, then Bounce, which now makes the Infinity E1 electric scooter.",
+ "content": "<p>Wicked Ride was a Bengaluru startup that rented premium motorcycles to travellers and riding enthusiasts. Inc42 reported that it was founded in April 2014 by Varun Agni, Vivekananda Hallekere and Anil G, and that by mid-2015 it had completed more than 2,500 rides with a fleet of 32 motorcycles. Besides self-drive rentals it ran guided motorcycle trips (which it called Bikeations), fixed-departure tours, gear rental and photo sessions with premium bikes. In July 2015 it raised a seed round of about INR 5 crore from an undisclosed angel investor.</p><p>The business then changed shape. The same company, registered as Wickedride Adventure Services Pvt Ltd, launched Metro Bikes, a commuter scooter and bike rental service at Bengaluru metro stations with keyless, OTP-based access. Inc42 reported in June 2018 that it raised $8.98 million in a round led by Sequoia Capital and Accel, and described Metro Bikes as originally called Wicked Ride. Metro Bikes was later renamed Bounce and grew into a dockless scooter-sharing service.</p><p>Bounce later moved into electric vehicles. In December 2021 it launched its first electric scooter, the Bounce Infinity E1. Autocar Professional reported launch prices of Rs 68,999 with battery and charger, or Rs 45,099 without the battery for buyers who chose a battery-as-a-service swap plan, and a certified range of 85 km per charge. Hallekere was quoted as co-founder and CEO.</p><p>The Wicked Ride brand itself is no longer active: when we checked in October 2026, the wickedride.com domain was listed for sale, and the old Bounce domain redirects to bounceinfinity.com, which sells the E1 range. Anyone looking for a motorcycle rental in Bengaluru today will need a different provider.</p><p><em>This page is research, not a review. We have not used these services; facts come from the pages under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Motorcycle rental (historical); now electric scooters as Bounce",
+  "platform": "Rental service (closed brand); Bounce Infinity electric scooters",
+  "starts_at": "Wicked Ride no longer operates",
+  "schema_category": "LifestyleApplication",
+  "summary_short": "Bengaluru premium bike rental from 2014 that became Metro Bikes, then Bounce",
+  "maker": {"name": "Wickedride Adventure Services Pvt Ltd (Bounce)", "url": "https://bounceinfinity.com/"},
+  "team": [
+   {"name": "Vivekananda Hallekere", "role": "Co-founder; CEO of Bounce"},
+   {"name": "Varun Agni", "role": "Co-founder"},
+   {"name": "Anil G", "role": "Co-founder"}
+  ],
+  "gallery": [
+   {"url": "https://bounceinfinity.com/assets/images/productImages/e1bike_white.png", "w": 1310, "h": 1096, "alt": "White Bounce Infinity E1 electric scooter with a black seat, side view", "credit": "Image: Bounce (bounceinfinity.com)"},
+   {"url": "https://bounceinfinity.com/assets/images/productImages/e1LEred.png", "w": 1310, "h": 1096, "alt": "Red Bounce Infinity E1 electric scooter with a black seat and grey trim, side view", "credit": "Image: Bounce (bounceinfinity.com)"}
+  ],
+  "use_cases": [
+   "Renting a premium motorcycle for a road trip (Wicked Ride, 2014 onwards)",
+   "Guided and fixed-departure motorcycle tours",
+   "Short commuter scooter rentals at Bengaluru metro stations (Metro Bikes)",
+   "Buying an electric scooter with battery swapping (Bounce Infinity E1)"
+  ],
+  "audience": {
+   "fit": [
+    "readers researching the history of Bounce and India's bike-rental startups",
+    "commuters considering a Bounce Infinity electric scooter"
+   ],
+   "not_fit": [
+    "anyone trying to book a Wicked Ride rental today: the brand is no longer active",
+    "riders outside India"
+   ]
+  },
+  "pricing": {
+   "intro": "Wicked Ride no longer takes bookings. For reference, Inc42 reported that Metro Bikes charged INR 5 per km and INR 0.5 per minute including fuel in 2018, and Autocar Professional reported the Bounce Infinity E1's launch prices in December 2021.",
+   "plans": [
+    {"name": "Bounce Infinity E1 with battery (launch price, 2021)", "price": "Rs 68,999", "detail": "Ex-showroom Delhi, with battery and charger"},
+    {"name": "Bounce Infinity E1 without battery (launch price, 2021)", "price": "Rs 45,099", "detail": "Battery as a service with swapping"}
+   ],
+   "notes": ["These are reported launch prices, not current prices. Check bounceinfinity.com for today's prices."],
+   "url": "https://bounceinfinity.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Early mover in India's premium bike rental and scooter-sharing markets",
+   "Backed by Sequoia Capital and Accel",
+   "The company behind it still operates as Bounce"
+  ],
+  "cons": [
+   "The Wicked Ride rental service no longer exists",
+   "Its domain is now listed for sale"
+  ],
+  "alternatives": {
+   "intro": "Bike and scooter rental services that operate in Indian cities. Check each one's site for coverage and prices.",
+   "items": [
+    {"name": "Royal Brothers", "url": "https://www.royalbrothers.com/", "what": "Self-drive bike and scooter rentals in Indian cities", "difference": "Active rental service across many cities."},
+    {"name": "Vogo", "url": "https://www.vogo.in/", "what": "Scooter rental service", "difference": "Named by Inc42 as a Metro Bikes competitor."},
+    {"name": "Rentrip", "url": "https://www.rentrip.in/", "what": "Bike rental marketplace", "difference": "Lists bikes from rental vendors in several cities."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Wicked Ride still operating?", "a": "No. The Wicked Ride brand is not active and its domain was listed for sale when we checked in October 2026. The company became Metro Bikes and then Bounce."},
+   {"q": "Who founded Wicked Ride?", "a": "Varun Agni, Vivekananda Hallekere and Anil G founded it in Bengaluru in 2014, according to Inc42."},
+   {"q": "How much did Wicked Ride raise?", "a": "Inc42 reported a seed round of about INR 5 crore in 2015 and $8.98 million led by Sequoia Capital and Accel in 2018, when the business operated as Metro Bikes."},
+   {"q": "What does Bounce sell now?", "a": "The Bounce Infinity E1 electric scooter, launched in December 2021 with an option to buy it without a battery and pay for battery swaps."}
+  ],
+  "sources": [
+   {"label": "Inc42: Luxury bike-rental startup WickedRide raises $787K (2015)", "url": "https://inc42.com/startups/wickedride-seed-round"},
+   {"label": "Inc42: Bike rental startup Wicked Ride raises $8.98 Mn from Sequoia, Accel (2018)", "url": "https://inc42.com/?p=127640"},
+   {"label": "Autocar Professional: Bounce E1 e-scooter launched (2021)", "url": "https://autocarpro.in/news-national/bounce-e1-escooter-launched-at-prices-starting-rs-45-099-80591"},
+   {"label": "Bounce Infinity: official site", "url": "https://bounceinfinity.com/"},
+   {"label": "HugeDomains: wickedride.com listing (checked 15 Oct 2026)", "url": "https://www.hugedomains.com/domain_profile.cfm?d=wickedride.com"}
+  ]
+ }
+}

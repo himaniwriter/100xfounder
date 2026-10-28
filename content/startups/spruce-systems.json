@@ -1,0 +1,147 @@
+{
+ "slug": "spruce-systems",
+ "website": "https://spruceid.com/",
+ "excerpt": "Spruce Systems (SpruceID) builds digital identity software for governments, including the technology behind California's mobile driver's licence. Founders, funding and alternatives.",
+ "content": "<p>Spruce Systems, which operates as SpruceID, makes digital identity software. Its website now describes the company as helping governments design, integrate and operate secure identity, verification and data-exchange systems, with products for digital IDs, identity wallets, document intake, form modernisation and verification. Developers can use SpruceKit, its open-source identity toolkit, documented at sprucekit.dev.</p><p>Its best-known project is California's mobile driver's licence. SpruceID's blog says it worked with the California DMV for about 18 months to build the mobile licence, which residents add to the DMV's phone app, using SpruceKit and its Credible Platform to issue, update and revoke credentials. The licence follows the ISO/IEC 18013-5 standard and W3C Verifiable Credentials, and can be shown at participating TSA airport checkpoints. Biometric Update reported in 2026 that more than 3.5 million Californians had applied for a mobile licence since the CA DMV Wallet, developed with SpruceID, launched in August 2023, and that a new state law raised the pilot's cap from 15% to 60% of licensed drivers.</p><p>The company started in the web3 world. TechCrunch reported in April 2022 that co-founders Wayne Chang (CEO) and Gregory Rocco had both worked at ConsenSys, and that Spruce built Sign-In with Ethereum after winning a request for proposals from the Ethereum Foundation and Ethereum Name Service. At that point it raised a $34 million Series A led by Andreessen Horowitz, with Ethereal Ventures, Electric Capital, Y Combinator, Okta Ventures and others, after a $7.5 million seed round. The team then had 15 people.</p><p>SpruceID does not publish prices. Government projects are scoped and contracted individually, and its open-source components are free to use under their licences.</p><p><em>This page is research, not a review. We have not used SpruceID's products; facts come from the pages listed under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Digital identity and verifiable credentials",
+  "platform": "Government identity platform, mobile wallets and open-source SDKs",
+  "starts_at": "Not published; open-source toolkit is free",
+  "schema_category": "SecurityApplication",
+  "summary_short": "Digital ID, wallets and verification for governments; built California's mobile licence",
+  "maker": {
+   "name": "Spruce Systems, Inc. (SpruceID)",
+   "url": "https://spruceid.com/"
+  },
+  "team": [
+   {
+    "name": "Wayne Chang",
+    "role": "Co-founder and CEO"
+   },
+   {
+    "name": "Gregory Rocco",
+    "role": "Co-founder"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://framerusercontent.com/assets/mGYnrAZuHRblF20PZQ8kw30Wg0Y.png",
+    "w": 4800,
+    "h": 2520,
+    "alt": "The words Digital trust for the government over a misty dusk landscape with plants in the foreground, and the SpruceID logo",
+    "credit": "Image: SpruceID (spruceid.com)"
+   },
+   {
+    "url": "https://framerusercontent.com/images/FMAYHWcFJi0nIoA7y8O1ODI7YUo.png",
+    "w": 240,
+    "h": 240,
+    "alt": "SpruceID icon: white circles and two rounded bars forming a diamond shape on a dark blue-grey gradient",
+    "credit": "Logo: SpruceID (spruceid.com)"
+   }
+  ],
+  "use_cases": [
+   "Issuing mobile driver's licences and state IDs to residents' phones",
+   "Running a government identity wallet app",
+   "Verifying identity and credentials online or in person",
+   "Digitising document intake and paper forms for public programmes",
+   "Building verifiable-credential apps with the open-source SpruceKit"
+  ],
+  "audience": {
+   "fit": [
+    "state and local government agencies modernising identity and licensing",
+    "developers building on open digital-identity standards such as ISO 18013-5",
+    "organisations that need to verify mobile IDs"
+   ],
+   "not_fit": [
+    "individuals: residents get credentials through their government's app, not from SpruceID",
+    "small businesses seeking an off-the-shelf login product"
+   ]
+  },
+  "pricing": {
+   "intro": "SpruceID does not publish prices. Government work is scoped per project; SpruceKit's open-source components are free under their licences.",
+   "plans": [
+    {
+     "name": "Government platform",
+     "price": "Not published",
+     "detail": "Contact SpruceID"
+    },
+    {
+     "name": "SpruceKit (open source)",
+     "price": "Free",
+     "detail": "Documentation at sprucekit.dev"
+    }
+   ],
+   "url": "https://spruceid.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Proven at scale with California's mobile driver's licence",
+   "Built on open standards and open-source components",
+   "Privacy-minded design, such as offline verification"
+  ],
+  "cons": [
+   "No public pricing",
+   "Mostly focused on government buyers"
+  ],
+  "alternatives": {
+   "intro": "Other companies providing mobile ID and digital identity technology to governments.",
+   "items": [
+    {
+     "name": "IDEMIA Public Security",
+     "url": "https://www.idemia.com/",
+     "what": "Identity documents, biometrics and mobile IDs",
+     "difference": "Large incumbent supplier of physical and mobile IDs."
+    },
+    {
+     "name": "GET Group",
+     "url": "https://www.getgroupna.com/",
+     "what": "Driver's licence and mobile ID systems for US states",
+     "difference": "Long-time DMV card and mobile ID vendor."
+    },
+    {
+     "name": "Okta",
+     "url": "https://www.okta.com/",
+     "what": "Workforce and customer identity platform",
+     "difference": "Login and access management rather than government-issued credentials."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "Did SpruceID build California's mobile driver's licence?",
+    "a": "Yes. SpruceID says it partnered with the California DMV on the mobile licence, and Biometric Update reports the CA DMV Wallet was developed with SpruceID."
+   },
+   {
+    "q": "Who founded Spruce Systems?",
+    "a": "Wayne Chang (CEO) and Gregory Rocco, both formerly of ConsenSys, according to TechCrunch."
+   },
+   {
+    "q": "How much funding has SpruceID raised?",
+    "a": "A $7.5 million seed and a $34 million Series A led by Andreessen Horowitz in April 2022."
+   },
+   {
+    "q": "Is SpruceID open source?",
+    "a": "Its core SpruceKit components are open source, according to the company."
+   }
+  ],
+  "sources": [
+   {
+    "label": "SpruceID: homepage",
+    "url": "https://spruceid.com/"
+   },
+   {
+    "label": "SpruceID blog: SpruceID partners with CA DMV on mDL (Oct 2023)",
+    "url": "https://blog.spruceid.com/spruceid-partners-with-ca-dmv-on-mdl/"
+   },
+   {
+    "label": "TechCrunch: Decentralized identity startup Spruce (April 2022)",
+    "url": "https://techcrunch.com/2022/04/20/decentralized-identity-startup-spruce-wants-to-help-users-control-their-sign-in-data/"
+   },
+   {
+    "label": "Biometric Update: California quadruples access to mobile driver's licences",
+    "url": "https://www.biometricupdate.com/202607/california-quadruples-access-to-mobile-drivers-licenses"
+   }
+  ]
+ }
+}

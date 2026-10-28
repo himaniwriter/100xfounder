@@ -1,0 +1,165 @@
+{
+ "slug": "primer",
+ "website": "https://primer.com/",
+ "excerpt": "Primer began in 2020 as online homeschooling tools and kids' clubs, then pivoted to in-person microschools. It now runs teacher-led K–8 schools focused on reading, writing and math, with tuition often covered by state scholarships.",
+ "content": "<p>Primer is an education company that runs small, teacher-led private schools, known as microschools, for children from kindergarten to eighth grade. Its website describes a fundamentals-focused model inspired by the primers of early American education, built on mastering reading, writing and maths, with safe, caring classrooms and combined-age classes. Fortune reported in 2025 on Liberty City Primer, a Primer microschool in Miami with six classrooms and a few dozen students, led by a former public school teacher who runs it as her own school with Primer's support.</p><p>Primer did not start this way. TechCrunch reported in May 2020 that founder Ryan Delk, who was himself homeschooled from kindergarten through eighth grade, was building full-stack infrastructure for parents to homeschool their children, and had raised a $3.7 million seed round led by Founders Fund. Its early online products, including homeschooling resources and clubs for children, were meant to supplement a child's education. Contrary Research reported that Primer later shifted to in-person microschools, which became its core offering by December 2022, and that Delk is CEO.</p><p>Primer publishes tuition by state. Its tuition page says most Primer families pay between $0 and $3,000 a year, because it accepts state education savings accounts and scholarships such as Texas Education Freedom Accounts, Florida's Step Up for Students scholarships and Arizona's Empowerment Scholarship Accounts. In Texas, families earning $75,000 or less who receive Education Freedom Account funding pay nothing out of pocket; in Florida, out-of-pocket tuition ranges from $0 to $6,752 a year depending on household income.</p><p>This profile draws on Primer's own pages and published reporting. We have not visited a Primer school, and nothing here is paid placement.</p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Microschools (K–8)",
+  "platform": "In-person schools",
+  "starts_at": "Most families pay $0–$3,000 a year after state scholarships",
+  "schema_category": "EducationalApplication",
+  "summary_short": "Teacher-led K–8 microschools focused on reading, writing and maths, often funded by state scholarships",
+  "maker": {
+   "name": "Primer",
+   "url": "https://primer.com/"
+  },
+  "team": [
+   {
+    "name": "Ryan Delk",
+    "role": "Founder and CEO"
+   }
+  ],
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/68f68958c2668295d6501e97/693c74c3327ea330aa18ef2c_df4c880eb90ce56932ab99235d0578e7_OG.jpg",
+    "alt": "The Primer wordmark above a row of children of different ages standing, jumping rope and playing on a white background",
+    "credit": "Image: Primer",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/68f68958c2668295d6501e97/6917a75d73e3439f8338ee49_csms--024.webp",
+    "alt": "A boy sitting cross-legged on paper, holding a marker out towards the camera, with drawings on his hand and coloured markers around him",
+    "credit": "Image: Primer",
+    "w": 990,
+    "h": 1335
+   }
+  ],
+  "use_cases": [
+   "Enrolling a child in a small, teacher-led K–8 school",
+   "Using state scholarship or education savings account funds for private school tuition",
+   "Running a microschool as a teacher with Primer's support"
+  ],
+  "audience": {
+   "fit": [
+    "are a parent in a state where Primer operates and want a small-school alternative",
+    "qualify for a state education savings account or scholarship",
+    "are a teacher interested in leading your own microschool"
+   ],
+   "not_fit": [
+    "live where Primer has no schools",
+    "want online-only homeschooling tools: Primer moved to in-person schools"
+   ]
+  },
+  "pricing": {
+   "intro": "From Primer's official tuition page. Out-of-pocket costs depend on the state, household income and scholarship funding.",
+   "plans": [
+    {
+     "name": "Typical family",
+     "price": "$0–$3,000 a year",
+     "detail": "Per Primer, most families pay within this range"
+    },
+    {
+     "name": "Texas (with Education Freedom Account)",
+     "price": "$0 for households earning $75,000 or less",
+     "detail": "Higher-income families may pay up to $10,710 a student"
+    },
+    {
+     "name": "Florida (with Step Up for Students)",
+     "price": "$0–$6,752 a year",
+     "detail": "Depends on household income"
+    }
+   ],
+   "notes": [
+    "Arizona families can use Empowerment Scholarship Accounts; see the tuition page."
+   ],
+   "url": "https://primer.com/tuition",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Small classes and a fundamentals-first curriculum",
+   "Low or no out-of-pocket cost for many families with state scholarships",
+   "Published tuition by state"
+  ],
+  "cons": [
+   "Only available in states where Primer operates",
+   "Out-of-pocket costs rise with household income"
+  ],
+  "alternatives": {
+   "intro": "Other microschool and alternative school networks in the US. We have not compared them.",
+   "items": [
+    {
+     "name": "Alpha School",
+     "url": "https://alpha.school/",
+     "what": "Private school network",
+     "tags": [
+      "Private school"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Another venture-backed alternative to traditional schools."
+    },
+    {
+     "name": "Acton Academy",
+     "url": "https://www.actonacademy.org/",
+     "what": "Network of independently owned learner-driven microschools",
+     "tags": [
+      "Microschools"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Network of independently owned schools."
+    },
+    {
+     "name": "Prenda",
+     "url": "https://www.prenda.com/",
+     "what": "Microschool platform for guides and families",
+     "tags": [
+      "Microschools"
+     ],
+     "starts_at": "See its own site",
+     "difference": "Platform supporting people who run microschools."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What is Primer?",
+    "a": "A network of small, teacher-led K–8 private schools (microschools) focused on reading, writing and maths."
+   },
+   {
+    "q": "How much does Primer cost?",
+    "a": "Primer says most families pay $0 to $3,000 a year after state scholarships; exact costs depend on state and income."
+   },
+   {
+    "q": "Who founded Primer?",
+    "a": "Ryan Delk, who started it in 2020 as a homeschooling platform and is CEO."
+   },
+   {
+    "q": "Who invested in Primer?",
+    "a": "Founders Fund led its $3.7 million seed round in 2020, TechCrunch reported."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Primer website",
+    "url": "https://primer.com/"
+   },
+   {
+    "label": "Primer: Tuition and state scholarships",
+    "url": "https://primer.com/tuition"
+   },
+   {
+    "label": "TechCrunch: Homeschooling startup Primer raises $3.7M seed led by Founders Fund (12 May 2020)",
+    "url": "https://techcrunch.com/2020/05/12/homeschooling-startup-primer-closes-3-7m-seed-round-led-by-founders-fund/"
+   },
+   {
+    "label": "Contrary Research: Primer business breakdown",
+    "url": "https://research.contrary.com/company/primer"
+   },
+   {
+    "label": "Fortune: Teacher runs her own microschool with Primer (28 Sep 2025)",
+    "url": "https://fortune.com/2025/09/28/microschools-new-opportunity-educators-teacher-salary-100000-entrepreneur-school-leaders/"
+   }
+  ]
+ }
+}

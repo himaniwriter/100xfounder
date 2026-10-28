@@ -1,0 +1,91 @@
+{
+  "slug": "co-invest",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/co-invest",
+  "excerpt": "Co-Invest by Liquid lets you research markets and place trades from inside ChatGPT, Claude and other AI assistants. How it works, what it costs and what launch-day users asked.",
+  "content": "<p>Co-Invest is a connector from the trading app Liquid that puts a trading account inside AI assistants. Its site names Claude, ChatGPT, Grok, Meta Muse and iMessage. You ask the assistant about a market, it pulls in positioning, funding, on-chain flow and news, suggests a position sized to your balance, and you place the order from the chat. Liquid says it covers more than 500 markets, including crypto, stocks, indices, FX, commodities and prediction markets.</p><p>Every order needs a manual confirmation. Liquid's founder and CEO, Franklyn Wang, said on Product Hunt that a confirmation window appears before any trade executes, and that prediction-market orders go through Polymarket. Liquid's terms of service say it is a software layer that sends user-authorised instructions to third-party venues such as Hyperliquid, not an exchange or broker-dealer, and that the service is run by LiquidX AI, Inc., a Delaware company.</p><p>Co-Invest launched on Product Hunt on 2 June 2026 and finished #4 for the day with 258 points and 33 comments (as of 14 October 2026).</p><p><em>We have not tested Co-Invest ourselves, and this page is not investment advice: trading crypto, leveraged products and prediction markets can lose you money. This page brings together Liquid's official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "AI trading assistant",
+    "platform": "Connector for Claude, ChatGPT, Grok, Meta Muse and iMessage",
+    "starts_at": "Free to use; Liquid's standard trading fees apply",
+    "schema_category": "FinanceApplication",
+    "summary_short": "Trade crypto, stocks, FX, commodities and prediction markets from inside ChatGPT, Claude and other assistants",
+    "maker": {"name": "Franklyn Wang", "url": "https://www.producthunt.com/@frank_liquid"},
+    "team": [
+      {"name": "Franklyn Wang", "role": "Founder and CEO of Liquid (per his Product Hunt profile)", "url": "https://www.producthunt.com/@frank_liquid"},
+      {"name": "Josh Meng", "role": "Go-to-market at Liquid (per his Product Hunt profile)", "url": "https://www.producthunt.com/@josh_meng"}
+    ],
+    "ph": {"rank": 4, "votes": 258, "comments": 33, "followers": 470, "launched": "2026-06-02", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/5a0bee0c-1e23-4d45-aecd-1798b5e87be9.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080,
+       "alt": "Liquid graphic 'Introducing Co-Invest' with buttons for Claude and ChatGPT", "credit": "Image: Liquid via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/3cd2b183-6a5a-461a-ac0f-3f40f1669cae.png?auto=format&fit=max&w=1400", "w": 1920, "h": 1080,
+       "alt": "Co-Invest graphic 'Trade 500+ markets directly through your AI' above rows of tickers for crypto, stocks, FX pairs and metals", "credit": "Image: Liquid via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "already trade crypto or other markets and spend much of the day in ChatGPT or Claude",
+        "want the research (positioning, funding, on-chain flow, news) and the order in one conversation",
+        "are comfortable confirming every order yourself: Liquid says each trade needs a tap to confirm"
+      ],
+      "not_fit": [
+        "are new to trading: leveraged and crypto markets carry a real risk of loss, and an AI suggestion is not advice",
+        "need a regulated broker: Liquid's terms say it is not an exchange or broker-dealer and routes orders to third-party venues",
+        "want to trade without an AI assistant in the loop: the standard Liquid app does that"
+      ]
+    },
+    "pricing": {
+      "intro": "Liquid's Co-Invest page says the connector itself is free.",
+      "url": "https://www.liquid.trade/coinvest",
+      "checked": "2026-10-14",
+      "plans": [
+        {"name": "Co-Invest", "price": "$0", "amount": 0, "currency": "USD", "detail": "No subscription, no AI surcharge and, according to Liquid, no markup in the spread"}
+      ],
+      "notes": [
+        "You pay Liquid's standard trading fees. Liquid says these are well under Coinbase and Robinhood on the same products; we have not compared them.",
+        "Your AI assistant's own plan (ChatGPT, Claude and so on) is separate."
+      ]
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. None of them places trades inside a general AI assistant in the same way. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "NVSTly", "url": "https://nvstly.com/", "what": "Social investing app to track, share and copy trades", "starts_at": "Free to start; see its site for paid plans", "ph_rating": 4.92, "ph_reviews": 64,
+         "difference": "Built around following and copying other traders, not around trading from a chat assistant."},
+        {"name": "Scopechat", "url": "https://ai.0xscope.com/", "what": "Chat assistant for crypto research", "starts_at": "See its site", "ph_rating": 4.83, "ph_reviews": 25,
+         "difference": "Focused on crypto research questions; Co-Invest also executes orders across asset classes."},
+        {"name": "Surmount AI", "url": "https://surmount.ai/", "what": "Automated, data-driven investing strategies", "starts_at": "See its pricing page", "ph_rating": 5, "ph_reviews": 4,
+         "difference": "Runs rule-based strategies on your behalf rather than taking plain-language orders in a chat."}
+      ],
+      "more": "Product Hunt also lists Xtrades (4.78 from 23 reviews) and the SaberTrade browser extension (5.0 from 7 reviews)."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/liquid-5/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/liquid-5",
+      "quotes": [
+        {"author": "Othman Katim", "text": "What safety precautions do you have, like confirmation steps and limits, so a bad prompt can't accidentally execute a huge trade?",
+         "reply": "Franklyn Wang: all trades require manual confirmation."},
+        {"author": "Elena Fischer", "text": "Are you routing through an existing platform like Polymarket or Manifold, or have you built your own liquidity layer?",
+         "reply": "Franklyn Wang: Co-Invest uses Polymarket for prediction markets."},
+        {"author": "Tina Chhabra", "text": "Trading real money from a chat prompt is one of those things that sounds amazing until you think about what happens when you word something wrong."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "profile_url": "https://x.com/coinvestai", "search_url": "https://x.com/search?q=%22Co-Invest%22%20Liquid&f=live"}
+    },
+    "faq": [
+      {"q": "What is Co-Invest?", "a": "A connector from Liquid that puts a trading account inside AI assistants including Claude, ChatGPT, Grok, Meta Muse and iMessage, so you can research a market and place the order in the same chat."},
+      {"q": "Is Co-Invest free?", "a": "Liquid says Co-Invest costs nothing to install or use, with no subscription or AI surcharge. You pay Liquid's standard trading fees."},
+      {"q": "Can the AI place a trade without my approval?", "a": "No, according to Liquid. Its founder said on Product Hunt that every trade needs manual confirmation in a window shown before execution."},
+      {"q": "What can I trade?", "a": "Liquid says more than 500 markets across crypto, stocks, indices, FX, commodities and prediction markets. Prediction-market orders go through Polymarket, the founder said."},
+      {"q": "Is Liquid a broker?", "a": "Liquid's terms of service say it does not operate an exchange or act as a broker-dealer; it sends user-authorised instructions to third-party venues such as Hyperliquid. The service is run by LiquidX AI, Inc."},
+      {"q": "How did Co-Invest do on Product Hunt?", "a": "It launched on 2 June 2026 and finished #4 for the day with 258 points and 33 comments. It had no Product Hunt reviews as of 14 October 2026."}
+    ],
+    "sources": [
+      {"label": "Liquid Co-Invest page", "url": "https://www.liquid.trade/coinvest"},
+      {"label": "Liquid terms of service", "url": "https://www.liquid.trade/termsofservice"},
+      {"label": "Liquid privacy policy", "url": "https://www.liquid.trade/privacy"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/liquid-5"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/co-invest"},
+      {"label": "NVSTly", "url": "https://nvstly.com/"}
+    ]
+  }
+}

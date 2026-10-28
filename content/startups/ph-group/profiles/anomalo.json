@@ -1,0 +1,96 @@
+{
+  "slug": "anomalo",
+  "existing_listing_slug": null,
+  "ph_url": "https://www.producthunt.com/posts/anomalo",
+  "excerpt": "Anomalo Analyst is a team of AI agents that watches your Snowflake, Databricks or BigQuery tables and sends written insights about what changed, without SQL or dashboards. What it does, cost and alternatives.",
+  "content": "<p>Anomalo is a data quality company, and Anomalo Analyst, the product it launched on Product Hunt, turns that monitoring towards business insight. You connect a data warehouse or lake (Snowflake, Databricks or BigQuery), pick the tables you care about and answer a few questions so it understands your business. From then on it watches the tables every day and sends a feed of insights: trends, anomalies and shifts, each written up as a short report with a business summary, a technical summary with the numbers, a chart and the steps behind it. You can then ask follow-up questions in plain English and it queries the data to answer.</p><p>Anomalo says change detection is done by statistical modelling rather than a language model, which ranks every change by size before AI agents decide what matters and write it up. Because the company comes from data quality, it also tries to tell a real business change from broken data. Co-founder and CEO Elliot Shmukler, who previously worked in growth and product at Instacart and LinkedIn by his own account, says the point is that it is proactive: you don't have to know what to ask. It launched on 22 September 2026 and finished #3 for the day with 268 points and 21 comments.</p><p><em>We have not tested Anomalo Analyst ourselves. This page brings together its official site, its Product Hunt page and the public pages of the products it is compared with, and says where each fact comes from.</em></p>",
+  "profile": {
+    "checked": "2026-10-14",
+    "category": "Data analytics",
+    "platform": "Web app connected to Snowflake, Databricks or BigQuery",
+    "starts_at": "Free to start",
+    "schema_category": "BusinessApplication",
+    "summary_short": "AI agents that watch your warehouse tables and send written insights about what changed",
+    "maker": {"name": "Elliot Shmukler", "url": "https://www.producthunt.com/@eshmu"},
+    "team": [
+      {"name": "Elliot Shmukler", "role": "Co-founder and CEO", "url": "https://www.producthunt.com/@eshmu"},
+      {"name": "John Joo", "role": "Director of Product (Product Hunt profile)", "url": "https://www.producthunt.com/@john_joo2"}
+    ],
+    "ph": {"rank": 3, "votes": 268, "comments": 21, "followers": 524, "launched": "2026-09-22", "as_of": "2026-10-14"},
+    "gallery": [
+      {"url": "https://ph-files.imgix.net/bf1246fd-ae8d-434e-b093-b510985328be.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Anomalo Analyst feed of three written insights with charts, such as a paid social campaign driving a product surge and a supplier delivery slowdown", "credit": "Image: Anomalo via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/61e3ef39-14f0-4f73-9070-5e37ae6eed21.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "An Anomalo Analyst insight report with a business summary, a technical summary and a 'Dive in with Analyst' button", "credit": "Image: Anomalo via Product Hunt"},
+      {"url": "https://ph-files.imgix.net/3fb7f863-644a-42a7-b8dd-ba81094b0cce.png?auto=format&fit=max&w=1400", "w": 1270, "h": 760,
+       "alt": "Anomalo Analyst answering a plain-English follow-up with an inventory runway and restock table", "credit": "Image: Anomalo via Product Hunt"}
+    ],
+    "audience": {
+      "fit": [
+        "keep business data in Snowflake, Databricks or BigQuery and want to hear about changes without building dashboards",
+        "are a team without enough analysts to watch every metric",
+        "need to tell real business changes apart from data pipeline problems"
+      ],
+      "not_fit": [
+        "keep data only in spreadsheets or apps, not a warehouse: it connects to warehouses and lakes",
+        "prefer to frame every question yourself: one launch commenter argued proactive alerts can weaken how people learn the business",
+        "need predictable enterprise pricing up front: the site offers a free start and demos but publishes no price list"
+      ]
+    },
+    "pricing": {
+      "intro": "Pricing not published on anomalo.com as of 14 October 2026. The Anomalo Analyst page offers 'Start for Free'.",
+      "url": "https://www.anomalo.com/anomalo-analyst/",
+      "plans": [],
+      "notes": [
+        "Product Hunt lists it as free.",
+        "A maker said on Product Hunt that it works with small datasets too, as long as fresh data comes in regularly."
+      ],
+      "checked": "2026-10-14"
+    },
+    "alternatives": {
+      "intro": "These are products Product Hunt lists as alternatives. Review scores are Product Hunt users' own.",
+      "items": [
+        {"name": "Hex", "url": "https://hex.tech/", "what": "Agentic analytics platform for data teams, with notebooks, dashboards and data apps", "starts_at": "See its pricing page",
+         "ph_rating": 4.91, "ph_reviews": 11,
+         "difference": "A workspace where people build analyses and apps. Anomalo Analyst pushes insights to you without you asking."},
+        {"name": "Basedash", "url": "https://www.basedash.com/", "what": "AI-native BI with an AI data analyst, dashboards from prompts and anomaly insights", "starts_at": "See its pricing page",
+         "ph_rating": 5, "ph_reviews": 9,
+         "difference": "A broader BI tool that also catches anomalies, with its own managed warehouse and 750+ data sources."},
+        {"name": "Ada.im", "url": "https://ada.im/", "what": "AI data analyst for spreadsheets and CSV files", "starts_at": "See its site",
+         "ph_rating": 4.84, "ph_reviews": 43,
+         "difference": "Works from uploaded files rather than a warehouse. Its site says the service ends on 14 December 2026."}
+      ],
+      "more": "Product Hunt also lists LogicLoop AI SQL Copilot and Narrative BI as alternatives."
+    },
+    "reviews": {"count": 0, "rating": null, "url": "https://www.producthunt.com/products/anomalo/reviews", "as_of": "2026-10-14"},
+    "community": {
+      "ph_url": "https://www.producthunt.com/products/anomalo",
+      "quotes": [
+        {"author": "Emma Pugsley", "text": "Does it require a certain amount of data or can it work for startups or sites with low volume?",
+         "reply": "Jonathan Karon: it works with small datasets too; detection and confidence improve with more data."},
+        {"author": "Konstantin Tikhaev", "text": "if tool decides what is worth noticing before human forms hypothesis, understanding of system atrophies",
+         "reply": "John Joo: users tend to ask follow-up questions on each insight, so it prompts more thinking rather than less."},
+        {"author": "Rohit Kumar", "text": "Instead of hunting for what changed you just get the story."}
+      ],
+      "x": {"none": "We did not check X for this profile.", "search_url": "https://x.com/search?q=%22Anomalo%20Analyst%22&f=live"}
+    },
+    "faq": [
+      {"q": "What is Anomalo Analyst?", "a": "A team of AI agents from the data quality company Anomalo that monitors your warehouse tables and sends written insights about what changed and why it matters. It launched on Product Hunt on 22 September 2026."},
+      {"q": "Which data platforms does it work with?", "a": "Snowflake, Databricks and BigQuery, according to its Product Hunt description."},
+      {"q": "Do I need to write SQL?", "a": "No. You pick tables and answer a few setup questions; insights arrive automatically and you can ask follow-ups in plain English."},
+      {"q": "Does it use an LLM to find anomalies?", "a": "Anomalo says changes are detected by statistical modelling, not an LLM. AI agents then decide what matters and write the report."},
+      {"q": "How much does it cost?", "a": "Anomalo does not publish prices. Its page offers a free start and Product Hunt lists it as free."},
+      {"q": "Does it work with small datasets?", "a": "A maker said yes, as long as fresh data arrives regularly, though confidence improves with more data."}
+    ],
+    "sources": [
+      {"label": "Anomalo Analyst", "url": "https://www.anomalo.com/anomalo-analyst/"},
+      {"label": "About Anomalo", "url": "https://www.anomalo.com/about/"},
+      {"label": "Product Hunt launch", "url": "https://www.producthunt.com/posts/anomalo"},
+      {"label": "Product Hunt page", "url": "https://www.producthunt.com/products/anomalo"},
+      {"label": "Product Hunt alternatives", "url": "https://www.producthunt.com/products/anomalo/alternatives"},
+      {"label": "Hex", "url": "https://hex.tech/"},
+      {"label": "Basedash", "url": "https://www.basedash.com/"},
+      {"label": "Ada.im", "url": "https://ada.im/"}
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "type": "post",
+  "slug": "form-16-explained-itr-filing",
+  "title": "Form 16 explained: Part A, Part B and filing your ITR in 2026",
+  "excerpt": "What Form 16 Part A and Part B show, how Form 130 replaces it under the Income-tax Act, 2025, and how to use it to file your ITR, with two worked examples.",
+  "category": "careers-salary",
+  "tags": [
+    "form 16",
+    "form 130",
+    "itr filing",
+    "tds",
+    "income tax act 2025",
+    "salary",
+    "income tax",
+    "careers"
+  ],
+  "content": "<p>Form 16 is the certificate your employer gives you each year showing how much salary it paid and how much tax it deducted (TDS) and deposited. Part A summarises the TDS and Part B shows how your taxable salary was worked out. You use it to fill the salary schedule of your income tax return (ITR) and to check that every rupee deducted shows up against your PAN. For salary paid from 1 April 2026, it is replaced by Form 130 under the Income-tax Act, 2025, with the same job split into three parts.</p>\n\n<p><strong>Key takeaways</strong></p>\n<ul>\n<li>Employers must issue Form 16 (for 2025-26) and Form 130 (from 2026-27) by 15 June after the year ends.</li>\n<li>Part A covers TDS deposited; Part B (Part C in Form 130) is the salary and tax computation.</li>\n<li>Match Form 16 against Form 26AS and the Annual Information Statement (AIS) before you file, and add income your employer doesn't know about.</li>\n<li>Salaried filers who missed the 31 July 2026 deadline can still file a belated return for 2025-26 by 31 December 2026.</li>\n</ul>\n\n<h2>What Form 16 is and why it is changing</h2>\n<p>Under the Income-tax Act, 1961, an employer that deducts tax from salary under section 192 must issue Form 16, <a href=\"https://www.incometaxindia.gov.in/w/form-16-and-form-16a\">according to the Income Tax Department</a>. The certificate has two parts, and the employer must verify both, manually or with a digital signature, before handing them over. If you had more than one employer in a year, each issues Part A for its own period, and you can take Part B from each employer or only from the last one.</p>\n<p>The Income-tax Act, 2025 took effect on 1 April 2026, as the Finance Minister confirmed in the <a href=\"https://www.indiabudget.gov.in/doc/budget_speech.pdf\">Budget 2026-27 speech</a>. The Income-tax Rules, 2026, notified on 20 March 2026, renumbered most forms, <a href=\"https://www.taxmann.com/post/blog/cbdt-notifies-income-tax-rules\">according to Taxmann</a>. Form 16 became <strong>Form 130</strong>, issued under section 395(4)(b) of the new Act and rule 215(1) of the new rules, <a href=\"https://www.incometaxindia.gov.in/documents/d/guest/form-130-faqs\">according to the Income Tax Department's Form 130 FAQs</a>.</p>\n<p>The timing matters. Income earned from April 2025 to March 2026 falls under the old Act, so the certificate you used (or will use) for that return is Form 16. Salary from 1 April 2026 onward is in the new \"tax year\" 2026-27, and its certificate will be Form 130, due by 15 June 2027.</p>\n\n<!-- xf-image-2 -->\n\n<h2>Part A: the TDS summary</h2>\n<p>Part A \"provides information on the tax that has been deducted\", the department says. It identifies your employer, including its TAN (tax deduction account number), which section 397 of the new Act requires deductors to quote on every certificate, and you, by PAN, and it summarises the tax deducted and deposited with the government. Employers generate it from the TRACES portal. The department's tutorial lists the steps: log in with TAN, request Form 16, download it, and sign it with a digital signature or by hand.</p>\n<p><strong>Check:</strong></p>\n<ul>\n<li>Your PAN is correct. TDS reported against a wrong PAN won't reach your tax account.</li>\n<li>The total TDS in Part A matches the TDS shown in your payslips and in Form 26AS. The e-filing portal says Form 26AS, viewable after login, shows tax deducted and collected at source, and the AIS adds high-value transactions, tax payments, demands and refunds, <a href=\"https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1\">according to the e-filing portal</a>.</li>\n</ul>\n\n<h2>Part B: how your taxable salary was calculated</h2>\n<p>Part B \"includes details related to the employee's salary, such as allowances, deductions, rebates\", according to the department. The usual flow is:</p>\n<ol>\n<li><strong>Gross salary</strong>, including the value of perquisites. Where salary exceeds ₹1,50,000, perquisites are detailed separately in Form 12BA.</li>\n<li><strong>Exempt allowances</strong>, such as house rent allowance (HRA), if you chose the old regime with your employer.</li>\n<li><strong>Standard deduction and professional tax.</strong></li>\n<li><strong>Income from other sources or house property</strong> that you reported to the employer, if any.</li>\n<li><strong>Deductions</strong> such as 80C or 80D (old regime only, apart from a few allowed in both).</li>\n<li><strong>Taxable income, tax, rebate, cess and relief</strong>, ending with tax payable and the TDS deducted.</li>\n</ol>\n<p>Part B reflects what you declared to HR, not necessarily your final tax position. Investments you forgot to declare can still be claimed in the return if you file under the regime that allows them. Our <a href=\"/tools/in-hand-salary-calculator/\">in-hand salary calculator</a> helps you sanity-check the Part B numbers against your payslips.</p>\n\n<h2>Form 130 vs Form 16: what's different</h2>\n<table>\n<thead><tr><th></th><th>Form 16 (Income-tax Rules, 1962)</th><th>Form 130 (Income-tax Rules, 2026)</th></tr></thead>\n<tbody>\n<tr><td>Legal basis</td><td>Section 203 of the 1961 Act, rule 31</td><td>Section 395(4)(b) of the 2025 Act, rule 215(1)</td></tr>\n<tr><td>Structure</td><td>Part A and Part B</td><td>Part A (employer and employee details), Part B (summary reconciliation of amounts paid and TDS), Part C (Annexure I for salary computation; Annexure II for specified senior citizens)</td></tr>\n<tr><td>Source of data</td><td>Quarterly TDS statement</td><td>Quarterly TDS statement in Form 138</td></tr>\n<tr><td>Due date</td><td>15 June after the financial year</td><td>15 June after the tax year</td></tr>\n<tr><td>Multiple employers</td><td>Part A from each; Part B from each or the last</td><td>Parts A and B from each; Part C (Annexure I) from each or the last, at the employee's option</td></tr>\n</tbody>\n</table>\n<p>The Form 130 FAQs add three practical points. It cannot be issued offline: it must be downloaded from TRACES, and a certificate made any other way isn't valid. Errors are fixed by the employer filing a revised Form 138 statement and reissuing the certificate. It doesn't need to be attached to your return, but you should keep it. Form 26AS itself is being replaced by Form 168, <a href=\"https://www.mondaq.com/india/corporate-tax/1764640/income-tax-rules-2026-notified-hra-allowance-and-form-changes-that-salary-earners-and-corporates-must-prepare-for\">according to Legitpro Law in Mondaq</a>.</p>\n\n<!-- xf-image-3 -->\n\n<h2>How to use Form 16 to file your ITR</h2>\n<ol>\n<li><strong>Pick the right form.</strong> ITR-1 (Sahaj) is for resident individuals with total income up to ₹50 lakh (₹5 million) from salary, one house property, other sources and long-term capital gains under section 112A of up to ₹1.25 lakh. It can't be used by company directors, holders of unlisted shares or foreign assets, anyone with short-term capital gains, or anyone with deferred tax on ESOPs, among other exclusions, according to the e-filing portal. Otherwise use ITR-2 (or ITR-3 with business income).</li>\n<li><strong>Choose your regime.</strong> The new regime is the default. Salaried taxpayers can opt for the old regime each year directly in the return, but the portal says that return must be filed on or before the due date under section 139(1).</li>\n<li><strong>Match the numbers.</strong> Compare Form 16 Parts A and B with the pre-filled return, Form 26AS and AIS. Use the higher, correct figure and keep notes on anything you change.</li>\n<li><strong>Add what your employer doesn't know.</strong> Savings and fixed-deposit interest, dividends, capital gains, rent received and salary from a previous employer all go in.</li>\n<li><strong>Claim missed deductions or exemptions</strong>, if you're in the old regime.</li>\n<li><strong>Pay any balance tax, file and verify.</strong> If TDS exceeds your liability, the excess comes back as a refund.</li>\n</ol>\n\n<h3>Worked example 1: one employer plus bank interest</h3>\n<p>Aditi's Form 16 for 2025-26 shows a gross salary of ₹15,00,000 under the new regime, with ₹97,500 of TDS. She also earned ₹20,000 in savings interest on which no tax was deducted.</p>\n<ul>\n<li>Employer's computation: ₹15,00,000 − ₹75,000 standard deduction = ₹14,25,000. Tax = ₹60,000 + 15% × ₹2,25,000 = ₹93,750; cess 4% = ₹3,750; total <strong>₹97,500</strong>, matching TDS.</li>\n<li>With interest: ₹14,25,000 + ₹20,000 = ₹14,45,000. Tax = ₹60,000 + 15% × ₹2,45,000 = ₹96,750; cess = ₹3,870; total ₹1,00,620.</li>\n<li>Balance payable: ₹1,00,620 − ₹97,500 = <strong>₹3,120</strong>, plus any interest the portal computes for late payment.</li>\n</ul>\n<p>The slab figures (₹60,000 on the first ₹12 lakh, then 15%) and the 4% cess come from the AY 2026-27 rate tables on the e-filing portal.</p>\n\n<!-- xf-image-4 -->\n\n<h3>Worked example 2: switching jobs mid-year</h3>\n<p>Karan earned ₹6,00,000 from employer A (April to September) and ₹9,00,000 from employer B (October to March), and didn't tell B about his earlier salary.</p>\n<ul>\n<li>Employer A's view: ₹6,00,000 − ₹75,000 = ₹5,25,000, within the ₹12 lakh rebate. TDS = ₹0.</li>\n<li>Employer B's view: ₹9,00,000 − ₹75,000 = ₹8,25,000, also within the rebate. TDS = ₹0.</li>\n<li>Actual position: ₹15,00,000 − ₹75,000 (claimed only once) = ₹14,25,000. Tax with cess = <strong>₹97,500</strong>, all of it due when he files.</li>\n</ul>\n<p>Two Form 16s, each showing nil tax, can still add up to a large bill. When you switch jobs, give your new employer your earlier salary and TDS so it deducts correctly. If you're comparing offers, our <a href=\"/tools/salary-hike-calculator/\">salary hike calculator</a> shows the after-tax effect.</p>\n\n<h2>Deadlines and what to do in October 2026</h2>\n<ul>\n<li><strong>Original deadline:</strong> 31 July 2026 for ITR-1 and ITR-2 filers (2025-26 income). ClearTax reported it was not extended, <a href=\"https://cleartax.in/s/due-date-tax-filing\">according to ClearTax</a>. The department's Circular 07/2026 of 28 September 2026 extended due dates for ITRs and audit reports for the persons listed at Sl. No. 2 of the table under Explanation 2 to section 139(1), <a href=\"https://www.incometax.gov.in/iec/foportal/\">according to the e-filing portal</a>. Check whether that category covers you before assuming you have more time.</li>\n<li><strong>Belated return:</strong> can be filed by 31 December 2026, ClearTax says. Because the old-regime option for salaried people must be exercised in a return filed by the due date, a belated return will generally be under the new regime. Confirm this on the portal before relying on old-regime deductions.</li>\n<li><strong>Revisions:</strong> the Budget 2026 speech proposed allowing revised returns until 31 March, with a fee of ₹1,000 or ₹5,000 depending on whether income is up to or above ₹5 lakh. ClearTax lists 31 March 2027 for 2025-26 returns. Check the portal for the window that applies to you.</li>\n<li><strong>Next year:</strong> expect Form 130 for 2026-27 salary by 15 June 2027. The Budget speech said ITR-1 and ITR-2 filers keep a 31 July due date.</li>\n</ul>\n\n<!-- xf-image-5 -->\n\n<h2>Common Form 16 problems and fixes</h2>\n<ul>\n<li><strong>TDS in Form 16 but not in Form 26AS:</strong> the employer hasn't filed or has misfiled its TDS statement. Ask it to file a correction; credit follows the statement, not the certificate.</li>\n<li><strong>Wrong PAN or name:</strong> the employer must correct the TDS statement and reissue the certificate.</li>\n<li><strong>No Form 16 because no tax was deducted:</strong> Form 130 is mandatory once tax has been deducted and deposited, the FAQs say. With no TDS, file using payslips and AIS.</li>\n<li><strong>Lost certificate:</strong> the employer can issue a duplicate marked as such.</li>\n</ul>\n\n<h2>Bottom line</h2>\n<p>Form 16, and from next year Form 130, is your employer's version of your tax position, not the final word. Use it to fill the salary schedule, then reconcile it with Form 26AS and AIS, add your other income, and choose your regime deliberately and on time. The certificate's name and numbering have changed under the new Act; the checks you need to do have not.</p>\n<p><em>This is general information, not tax advice. Confirm your return with a chartered accountant (CA) or the Income Tax Department's guidance before filing.</em></p>\n\n<h2>FAQ</h2>\n<h3>Is Form 16 mandatory to file an ITR?</h3>\n<p>No. It isn't attached to the return. You can file using payslips, Form 26AS and AIS, though Form 16 makes it easier.</p>\n<h3>When will I get Form 130 instead of Form 16?</h3>\n<p>For salary earned from 1 April 2026. The first Form 130 is due by 15 June 2027.</p>\n<h3>Where can I download my Form 16?</h3>\n<p>From your employer. The employer downloads it from TRACES, signs it and issues it to you, so ask HR if it hasn't arrived by mid-June.</p>\n<h3>My Form 16 shows the new regime. Can I still choose the old one?</h3>\n<p>Yes, in the return, provided you file it by the due date. The portal treats the regime choice for salaried people as an annual option exercised in the ITR.</p>\n<h3>What is the difference between Form 16 and Form 16A?</h3>\n<p>Form 16 covers TDS on salary; Form 16A is a quarterly certificate for TDS on other payments, such as interest or professional fees.</p>\n<h2>Sources</h2>\n<ol>\n<li>Income Tax Department, \"<a href=\"https://www.incometaxindia.gov.in/w/form-16-and-form-16a\">Form 16 and Form 16A</a>\", accessed 4 October 2026</li>\n<li>Income Tax Department, \"<a href=\"https://www.incometaxindia.gov.in/documents/d/guest/form-130-faqs\">Form No. 130 – Frequently Asked Questions</a>\", accessed 4 October 2026</li>\n<li>Gazette of India (Ministry of Law and Justice), \"<a href=\"https://egazette.gov.in/WriteReadData/2025/265620.pdf\">The Income-tax Act, 2025 (No. 30 of 2025)</a>\", 21 August 2025</li>\n<li>Ministry of Finance (India Budget), \"<a href=\"https://www.indiabudget.gov.in/doc/budget_speech.pdf\">Budget 2026-2027: Speech of Nirmala Sitharaman</a>\", 1 February 2026</li>\n<li>Taxmann, \"<a href=\"https://www.taxmann.com/post/blog/cbdt-notifies-income-tax-rules\">CBDT Notifies Income Tax Rules 2026 Effective from 01-04-2026</a>\", March 2026</li>\n<li>Mondaq (Legitpro Law), \"<a href=\"https://www.mondaq.com/india/corporate-tax/1764640/income-tax-rules-2026-notified-hra-allowance-and-form-changes-that-salary-earners-and-corporates-must-prepare-for\">Income Tax Rules, 2026 Notified: HRA, Allowance And Form Changes That Salary Earners And Corporates Must Prepare For</a>\", 26 March 2026</li>\n<li>Income Tax Department (e-Filing portal), \"<a href=\"https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1\">Returns and Forms Applicable for Salaried Individuals for AY 2026-27</a>\", accessed 4 October 2026</li>\n<li>ClearTax, \"<a href=\"https://cleartax.in/s/due-date-tax-filing\">ITR Filing Last Date FY 2025-26 (AY 2026-27)</a>\", accessed 4 October 2026</li>\n<li>Income Tax Department (e-Filing portal), \"<a href=\"https://www.incometax.gov.in/iec/foportal/\">e-Filing home page notices</a>\", accessed 4 October 2026</li>\n</ol>",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Aayakar_Bhawan_-_Wikimedia_Photowalk_-_Kolkata_2011-12-18_%2838%29.jpg/1920px-Aayakar_Bhawan_-_Wikimedia_Photowalk_-_Kolkata_2011-12-18_%2838%29.jpg",
+      "alt": "Aayakar Bhawan, the Income Tax Department building in Kolkata",
+      "caption": "Form 16 records the salary TDS your employer deposited with the Income Tax Department.",
+      "credit": "Photo: Jayantanth / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Aayakar_Bhawan_-_Wikimedia_Photowalk_-_Kolkata_2011-12-18_(38).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/North_Block%2C_Raisina_Hill%2C_New_Delhi_04.jpg/1920px-North_Block%2C_Raisina_Hill%2C_New_Delhi_04.jpg",
+      "alt": "North Block on Raisina Hill, New Delhi, which houses the Ministry of Finance",
+      "caption": "The Income-tax Act, 2025 took effect on 1 April 2026, and Form 16 becomes Form 130.",
+      "credit": "Photo: Pinakpani / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:North_Block,_Raisina_Hill,_New_Delhi_04.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Hand-laptop-notebook-typing_%2823698140194%29.jpg/1920px-Hand-laptop-notebook-typing_%2823698140194%29.jpg",
+      "alt": "A hand typing on a laptop keyboard next to a notebook",
+      "caption": "Match Form 16 with Form 26AS and AIS on the e-filing portal before you submit.",
+      "credit": "Photo: www.Pixel.la Free Stock Photos / Wikimedia Commons, CC0",
+      "license": "CC0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hand-laptop-notebook-typing_(23698140194).jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/TCS_Hinjewadi_Pune.jpg/1920px-TCS_Hinjewadi_Pune.jpg",
+      "alt": "TCS office campus in Hinjewadi, Pune",
+      "caption": "Job switchers get a Form 16 from each employer and should declare earlier salary to the new one.",
+      "credit": "Photo: Shaikh Zubair S / Wikimedia Commons, CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:TCS_Hinjewadi_Pune.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/State_Bank_of_India_Hudkeshwar_Nagpur.jpg/1920px-State_Bank_of_India_Hudkeshwar_Nagpur.jpg",
+      "alt": "State Bank of India branch in Hudkeshwar, Nagpur",
+      "caption": "Excess TDS comes back as a refund to your bank account once the return is processed.",
+      "credit": "Photo: Ganesh Dhamodkar / Wikimedia Commons, CC BY 4.0",
+      "license": "CC BY 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:State_Bank_of_India_Hudkeshwar_Nagpur.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.incometaxindia.gov.in/w/form-16-and-form-16a",
+      "publisher": "Income Tax Department",
+      "date": "2026-10-04",
+      "claim": "Form 16 issued for section 192 TDS; Part A and Part B contents; verification; Form 12BA above ₹1,50,000; multiple employers; 15 June due date; TRACES download steps; Form 16A"
+    },
+    {
+      "url": "https://www.incometaxindia.gov.in/documents/d/guest/form-130-faqs",
+      "publisher": "Income Tax Department",
+      "date": "2026-10-04",
+      "claim": "Form 130 replaces Form 16; section 395(4)(b), rule 215(1); three parts; Form 138; TRACES only; 15 June after tax year; corrections; not attached to ITR; multiple employers; duplicate"
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2025/265620.pdf",
+      "publisher": "Gazette of India (Ministry of Law and Justice)",
+      "date": "2025-08-21",
+      "claim": "Section 395(4) certificate obligations; section 392 TDS on salary"
+    },
+    {
+      "url": "https://www.indiabudget.gov.in/doc/budget_speech.pdf",
+      "publisher": "Ministry of Finance (India Budget)",
+      "date": "2026-02-01",
+      "claim": "Income Tax Act, 2025 effective 1 April 2026; ITR-1/ITR-2 due 31 July; revised returns to 31 March with ₹1,000/₹5,000 fee proposed"
+    },
+    {
+      "url": "https://www.taxmann.com/post/blog/cbdt-notifies-income-tax-rules",
+      "publisher": "Taxmann",
+      "date": "2026-03-20",
+      "claim": "Income-tax Rules 2026 notified 20 March 2026 (G.S.R. 198(E)); 190 forms"
+    },
+    {
+      "url": "https://www.mondaq.com/india/corporate-tax/1764640/income-tax-rules-2026-notified-hra-allowance-and-form-changes-that-salary-earners-and-corporates-must-prepare-for",
+      "publisher": "Mondaq (Legitpro Law)",
+      "date": "2026-03-26",
+      "claim": "Form 130 replaces Form 16; Form 168 replaces Form 26AS"
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1",
+      "publisher": "Income Tax Department (e-Filing portal)",
+      "date": "2026-10-04",
+      "claim": "ITR-1 eligibility and exclusions; Form 26AS and AIS contents; regime option in ITR by due date; AY 2026-27 slabs, rebate, cess"
+    },
+    {
+      "url": "https://cleartax.in/s/due-date-tax-filing",
+      "publisher": "ClearTax",
+      "date": "2026-10-04",
+      "claim": "31 July 2026 due date not extended; belated return by 31 December 2026; revised return through 31 March 2027 with fees"
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/",
+      "publisher": "Income Tax Department (e-Filing portal)",
+      "date": "2026-10-04",
+      "claim": "Circular No. 07/2026 dated 28 September 2026 extended AY 2026-27 due dates for ITRs and audit reports for specified persons"
+    }
+  ]
+}

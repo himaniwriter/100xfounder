@@ -1,0 +1,85 @@
+{
+ "slug": "mistral-ai",
+ "website": "https://mistral.ai/",
+ "excerpt": "Mistral AI is a European AI lab that builds open and commercial language models, the Le Chat assistant and enterprise AI tools. Pricing, founders, funding and alternatives.",
+ "content": "<p>Mistral AI is a European artificial intelligence company that builds large language models and products on top of them. Its about page says it was born in April 2023 with a mission to make frontier AI open to all. It releases some models with open weights that companies can download and run themselves, and sells access to others through its API and cloud. Its product list includes the Le Chat assistant for consumers and businesses, Vibe (formerly Mistral Code) for developers, Mistral Studio and Forge for building and customising AI, models such as Mistral Large and Mistral Small, Voxtral for speech, OCR for document processing, and Mistral Compute for infrastructure.</p><p>The company was co-founded by Arthur Mensch (CEO), Guillaume Lample (chief science officer) and Timothée Lacroix (CTO). Its timeline shows a first employee in June 2023, its 100th in September 2024, and funding rounds in June 2023 (seed), December 2023 (Series A), June 2024 (Series B) and September 2025 (Series C). Named customers and partners include Stellantis, HSBC, IBM, BNP Paribas, SAP, ASML and the French Ministry of Defence. In September 2026 it opened a hub in Munich focused on industrial AI.</p><p>On 9 September 2025 Mistral announced a €1.7 billion Series C at an €11.7 billion post-money valuation, led by the Dutch chip-equipment maker ASML, with DST Global, Andreessen Horowitz, Bpifrance, General Catalyst, Index Ventures, Lightspeed and Nvidia. ASML said the deal included a strategic partnership and potential joint research, and Mistral said the round confirmed its independence.</p><p>Pricing is public. When we checked, Le Chat had a free plan, Pro at $14.99 a month, an education version of Pro at $5.99 a month for verified students, Team at $24.99 per user a month and custom Enterprise pricing, all before tax. API use is billed per million tokens; for example, Mistral Large costs $0.50 per million input tokens and $1.50 per million output tokens, with 50% off for batch processing.</p><p><em>This page is research, not a review. We have not benchmarked Mistral's models; facts come from its pages and the reporting under Sources.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI models and assistant (LLMs)",
+  "platform": "Le Chat on web and mobile; API; open-weight models; self-hosted deployment",
+  "starts_at": "Free; Le Chat Pro $14.99/month",
+  "schema_category": "DeveloperApplication",
+  "summary_short": "European AI lab behind open-weight models, the Le Chat assistant and an LLM API",
+  "maker": {"name": "Mistral AI", "url": "https://mistral.ai/"},
+  "team": [
+   {"name": "Arthur Mensch", "role": "Co-founder and CEO"},
+   {"name": "Guillaume Lample", "role": "Co-founder and chief science officer"},
+   {"name": "Timothée Lacroix", "role": "Co-founder and CTO"}
+  ],
+  "gallery": [
+   {"url": "https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp", "w": 1200, "h": 630, "alt": "Mistral banner reading #1 in Sovereign AI above stacked orange and red stripes with a small pixel-art cat", "credit": "Image: Mistral AI (mistral.ai)"},
+   {"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Mistral_AI_logo_%282025%E2%80%93%29.svg/1280px-Mistral_AI_logo_%282025%E2%80%93%29.svg.png", "w": 1280, "h": 903, "alt": "Mistral AI logo: a blocky pixel M in bands of yellow, orange and red", "credit": "Logo: Mistral AI, public domain, via Wikimedia Commons"}
+  ],
+  "use_cases": [
+   "Chatting with an AI assistant through Le Chat",
+   "Building apps on Mistral models through the API",
+   "Running open-weight models on your own infrastructure",
+   "Coding assistance with Vibe",
+   "Speech and document processing with Voxtral and OCR"
+  ],
+  "audience": {
+   "fit": [
+    "developers who want capable models at low per-token prices",
+    "European companies and public bodies that want a European AI provider",
+    "teams that need to self-host models for data control"
+   ],
+   "not_fit": [
+    "users who only want one consumer chatbot and already pay for another",
+    "workloads that require a specific rival model's features"
+   ]
+  },
+  "pricing": {
+   "intro": "From Mistral's pricing page, checked 15 October 2026. Prices exclude tax.",
+   "plans": [
+    {"name": "Le Chat Free", "price": "$0", "detail": "Free plan"},
+    {"name": "Le Chat Pro", "price": "$14.99/month", "amount": 14.99, "currency": "USD", "detail": "Education version $5.99/month for verified students"},
+    {"name": "Le Chat Team", "price": "$24.99 per user/month", "amount": 24.99, "currency": "USD", "detail": "For teams"},
+    {"name": "Enterprise", "price": "Custom", "detail": "Contact Mistral"},
+    {"name": "API (Mistral Large)", "price": "$0.50 / $1.50 per million tokens", "detail": "Input / output; batch processing 50% off"}
+   ],
+   "notes": ["Cached input tokens can cut input costs by up to 90%, the page says."],
+   "url": "https://mistral.ai/pricing",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Open-weight models you can self-host",
+   "Low API prices with batch and cache discounts",
+   "Strong European enterprise and public-sector backing"
+  ],
+  "cons": [
+   "Smaller ecosystem than the largest US AI labs",
+   "Product line changes quickly"
+  ],
+  "alternatives": {
+   "intro": "Other AI model providers and assistants.",
+   "items": [
+    {"name": "OpenAI", "url": "https://openai.com/", "what": "GPT models, ChatGPT and API", "difference": "Largest consumer assistant and developer ecosystem."},
+    {"name": "Anthropic", "url": "https://www.anthropic.com/", "what": "Claude models and assistant", "difference": "Focused on safety research and enterprise use."},
+    {"name": "Meta Llama", "url": "https://www.llama.com/", "what": "Open-weight Llama models", "difference": "Open-weight models from Meta without a paid assistant of the same kind."}
+   ]
+  },
+  "faq": [
+   {"q": "Is Mistral AI free?", "a": "Le Chat has a free plan. Pro costs $14.99 a month and Team $24.99 per user a month before tax."},
+   {"q": "Who founded Mistral AI?", "a": "Arthur Mensch (CEO), Guillaume Lample and Timothée Lacroix, in April 2023."},
+   {"q": "How much is Mistral AI valued at?", "a": "Its September 2025 Series C of €1.7 billion, led by ASML, valued it at €11.7 billion post-money."},
+   {"q": "Are Mistral's models open source?", "a": "Some are released with open weights that you can run yourself; others are available through Mistral's API and cloud."}
+  ],
+  "sources": [
+   {"label": "Mistral AI: about", "url": "https://mistral.ai/about"},
+   {"label": "Mistral AI: pricing", "url": "https://mistral.ai/pricing"},
+   {"label": "Mistral AI: raises €1.7B (Sept 2025)", "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai"},
+   {"label": "Pulse 2.0: Mistral AI €1.7 billion Series C", "url": "https://pulse2.com/mistral-ai-e1-7-billion-series-c-raised-at-e11-7-billion-valuation-for-advancing-frontier-ai-for-strategic-industries"},
+   {"label": "TechRepublic: Mistral AI and ASML Series C", "url": "https://www.techrepublic.com/article/news-mistral-ai-asml-series-c-funding/"}
+  ]
+ }
+}

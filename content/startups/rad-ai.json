@@ -1,0 +1,144 @@
+{
+ "slug": "rad-ai",
+ "website": "https://www.radai.com/",
+ "excerpt": "Rad AI makes generative AI tools for radiologists: automated report impressions, reporting and follow-up tracking. Funding, products and alternatives.",
+ "content": "<p>Rad AI builds AI software for radiologists. Its site describes the products as built by radiologists, for radiologists. The company was founded in 2018 by Jeff Chang, a radiologist, and Doktor Gurson, a serial entrepreneur who is chief executive.</p><p>There are three products. Rad AI Impressions (formerly Omni Impressions) drafts the impression, the summary and conclusion of a radiology report, from the radiologist's dictated findings, adapted to each doctor's style. Rad AI Reporting applies AI across the whole reporting workflow. Rad AI Continuity flags actionable findings, such as a possible new cancer, and tracks that the recommended follow-up actually happens. The company says Reporting can cut dictated words by up to 90% and save up to 50% of reporting time; these are its own claims. Its site says more than 200 health organisations use it, and shows testimonials from radiology groups including Lehigh Valley Health Network and Inland Imaging.</p><p>In May 2024 Rad AI raised a $50 million Series B led by Khosla Ventures and World Innovation Lab. Seven months later, on 30 January 2025, it announced a $60 million Series C led by Transformation Capital at a $525 million valuation, taking its total funding past $140 million. In May 2025 four health systems, Advocate Health, Memorial Hermann, Corewell Health and Atlantic Health System, added $8 million to the round.</p><p>Rad AI does not publish prices; hospitals and radiology practices request a demo. It is not a product for patients. Practices weighing it up usually compare it with the reporting tools they already use, since it has to fit into existing dictation and reporting systems.</p><p><em>This profile is put together from the company's own pages and published reporting, checked on 15 October 2026. We have not tested the product, and nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "AI for radiology",
+  "platform": "Web",
+  "starts_at": "Pricing on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Generative AI for radiology reporting, impressions and follow-up care",
+  "maker": {
+   "name": "Rad AI",
+   "url": "https://www.radai.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://cdn.prod.website-files.com/6a27c9e3a1b1b4177dd8bca5/6a2fac6fb0df449a6cb7c828_rad-ai-meta.jpg",
+    "alt": "Rad AI banner with its logo and the line 'AI Reporting And Follow-Up. Built By Radiologists, For Radiologists' on a pale purple background",
+    "credit": "Image: Rad AI (radai.com)",
+    "w": 1200,
+    "h": 630
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/6a27c9e3a1b1b4177dd8bca5/6a2fac04f47a888bc2955ad5_rad-ai-256.png",
+    "alt": "Rad AI icon: a light blue stack of layers connected to six small circles like a network",
+    "credit": "Image: Rad AI (radai.com)",
+    "w": 180,
+    "h": 180
+   }
+  ],
+  "use_cases": [
+   "Drafting radiology report impressions from dictated findings",
+   "Speeding up the full reporting workflow",
+   "Tracking follow-up on incidental findings",
+   "Reducing radiologist fatigue and burnout"
+  ],
+  "audience": {
+   "fit": [
+    "run a radiology practice or hospital imaging department",
+    "face high reading volumes and radiologist shortages",
+    "need to track follow-up recommendations reliably"
+   ],
+   "not_fit": [
+    "are a patient",
+    "work outside radiology"
+   ]
+  },
+  "pricing": {
+   "intro": "Rad AI does not publish prices; health systems and radiology groups request a demo.",
+   "plans": [
+    {
+     "name": "Rad AI Reporting, Impressions and Continuity",
+     "price": "Quote on request",
+     "detail": "Enterprise contracts"
+    }
+   ],
+   "notes": [],
+   "url": "https://www.radai.com/",
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Founded with a practising radiologist",
+   "Covers reporting and follow-up",
+   "Backed by health systems as investors"
+  ],
+  "cons": [
+   "No public pricing",
+   "Time-saving figures are the company's own"
+  ],
+  "alternatives": {
+   "intro": "Other products that do a similar job. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Microsoft Dragon Medical / PowerScribe",
+     "url": "https://www.nuance.com/healthcare/diagnostics-solutions/radiology-reporting.html",
+     "what": "Radiology reporting and speech recognition",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "The incumbent reporting platform used by many radiology departments."
+    },
+    {
+     "name": "Aidoc",
+     "url": "https://www.aidoc.com/",
+     "what": "AI for flagging urgent findings in imaging",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Focuses on image analysis and triage rather than report writing."
+    },
+    {
+     "name": "Nanox AI",
+     "url": "https://www.nanox.vision/",
+     "what": "AI for detecting findings on medical images",
+     "tags": [],
+     "starts_at": "See its own pricing page",
+     "difference": "Image-analysis AI rather than reporting."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Rad AI do?",
+    "a": "It uses generative AI to draft radiology report impressions, speed up reporting and track follow-up care."
+   },
+   {
+    "q": "Who founded Rad AI?",
+    "a": "Radiologist Jeff Chang and Doktor Gurson, in 2018."
+   },
+   {
+    "q": "How much has Rad AI raised?",
+    "a": "More than $140 million, including a $60 million Series C at a $525 million valuation in January 2025, later extended by $8 million."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Rad AI official site",
+    "url": "https://www.radai.com/"
+   },
+   {
+    "label": "MassDevice: Rad AI raises $60M in Series C",
+    "url": "https://www.massdevice.com/rad-ai-raises-60m-in-series-c-to-bring-generative-ai-to-radiology/"
+   },
+   {
+    "label": "HLTH: Rad AI secures $60M Series C (31 Jan 2025)",
+    "url": "https://hlth.com/insights/news/rad-ai-secures-60m-series-c-funding-to-advance-ai-driven-radiology-solutions-2025-01-31"
+   },
+   {
+    "label": "TechCrunch: Rad AI raises $50M Series B from Khosla Ventures (7 May 2024)",
+    "url": "https://techcrunch.com/2024/05/07/rad-ai-a-startup-that-helps-radiologists-save-time-on-report-generation-raises-50m-series-b-from-khosla-ventures"
+   }
+  ],
+  "team": [
+   {
+    "name": "Doktor Gurson",
+    "role": "Cofounder and CEO"
+   },
+   {
+    "name": "Jeff Chang",
+    "role": "Cofounder, radiologist"
+   }
+  ]
+ }
+}

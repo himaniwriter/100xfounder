@@ -1,0 +1,103 @@
+{
+  "name": "Moonshine Meadery",
+  "slug": "moonshine-meadery",
+  "existing_listing_slug": null,
+  "website": "https://www.moonshinemeadery.com",
+  "tagline": "Pune maker of mead, the honey-based alcoholic drink",
+  "industry_term": "food-drinks",
+  "excerpt": "Moonshine Meadery brought India's mead category to Shark Tank India Season 1, Episode 22.",
+  "content": "<p>Moonshine Meadery makes mead, an alcoholic drink brewed from honey, under the company Ronin Wines in Pune. It appeared in the 22nd episode of Shark Tank India's first season, aired on 18 January 2022, which SET India billed as featuring the world's oldest alcohol.</p><p>Reports on the outcome of the pitch come from blogs rather than outlets we rely on, so we do not state the ask or the result here.</p><p>Since the show, Ronin Wines raised a $675k pre-Series A in 2023, co-led by Zerodha-backed Rainmatter Capital and Grip Invest, to improve sales and distribution and promote better beekeeping. Inc42's filing data shows revenue slipping in FY25 and a continuing loss.</p>",
+  "shark_tank": {
+    "season": 1,
+    "episode": 22,
+    "air_date": "2022-01-18",
+    "deal": {},
+    "city": "Pune",
+    "category": "Mead (honey wine)",
+    "pitch_summary": "The team pitched mead, a honey-based drink, as a new alcohol category for India.",
+    "sources": [
+      {
+        "label": "SET India (official YouTube): Shark Tank India Ep 22, full episode, 18 January 2022",
+        "url": "https://www.youtube.com/watch?v=Ev7rzGsQzBE"
+      },
+      {
+        "label": "Entrackr: Ronin Wines raises pre-Series A round led by Rainmatter, 5 Jul 2023",
+        "url": "https://entrackr.com/2023/07/ronin-wines-raises-pre-series-a-round-led-by-rainmatter"
+      }
+    ]
+  },
+  "now": {
+    "status": "operating",
+    "status_source": {
+      "label": "Inc42 Datalabs: Moonshine Meadery financials (from statutory filings, accessed 2026-10-15)",
+      "url": "https://inc42.com/company/moonshine-meadery/financials/"
+    },
+    "latest_revenue": {
+      "value": 80000000,
+      "fiscal_year": "FY25",
+      "label": "Total revenue",
+      "date": "2026-10-15",
+      "source": {
+        "label": "Inc42 Datalabs: Moonshine Meadery financials (from statutory filings, accessed 2026-10-15)",
+        "url": "https://inc42.com/company/moonshine-meadery/financials/"
+      }
+    },
+    "notable_since_show": [
+      {
+        "date": "2023-07",
+        "event": "Raised $675k in a pre-Series A round co-led by Rainmatter Capital and Grip Invest.",
+        "source": {
+          "label": "Entrackr: Ronin Wines raises pre-Series A round led by Rainmatter, 5 Jul 2023",
+          "url": "https://entrackr.com/2023/07/ronin-wines-raises-pre-series-a-round-led-by-rainmatter"
+        }
+      }
+    ],
+    "checked_date": "2026-10-15"
+  },
+  "deal_closed": {
+    "status": "unknown",
+    "detail": "Outlets we rely on did not report the pitch outcome."
+  },
+  "pitch_video": {
+    "youtube_id": "Ev7rzGsQzBE",
+    "channel": "SET India",
+    "title": "Turning Ideas Into Businesses | Shark Tank India - Ep 22 | Full Episode | 18 January 2022",
+    "url": "https://www.youtube.com/watch?v=Ev7rzGsQzBE",
+    "upload_date": "2022-01-20"
+  },
+  "sonyliv_url": "https://www.sonyliv.com/shows/shark-tank-india-1700000741/turning-ideas-into-businesses-1000155170",
+  "media": {
+    "gallery": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0533/4197/8788/files/Flagship_Meads_-_PC_-_Tanya_Thomas_Aroonabha_Ghose.jpg?v=1683031430",
+        "alt": "Moonshine Meadery flagship meads",
+        "credit": "Photo: Moonshine Meadery (photo credit Tanya Thomas, Aroonabha Ghose)",
+        "source_url": "https://www.moonshinemeadery.com/",
+        "source_type": "brand_site"
+      }
+    ]
+  },
+  "where_to_buy": [
+    {
+      "label": "Official site",
+      "url": "https://www.moonshinemeadery.com"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Moonshine Meadery still in business?",
+      "a": "Yes. Ronin Wines, its maker, filed accounts for FY25."
+    },
+    {
+      "q": "What is Moonshine Meadery's revenue?",
+      "a": "Inc42's filing data shows total revenue of about ₹8.0 crore in FY25, with a net loss."
+    }
+  ],
+  "lessons": [
+    "Our analysis: for a brand creating a new category, TV exposure can matter more as consumer education than as funding."
+  ],
+  "related_pitches": [
+    "get-a-whey"
+  ],
+  "notes": "BELOW PUBLISHING BAR. Ask (₹80 lakh for 0.5%) and the no-deal outcome (founders rejected counter-offers) come only from blogs and a Shopify India blog interview; deal.made left out. Founders (Rohan Rehani, Nitin Vishwas) also only from those sources, so left out. No single-pitch official clip found; pitch_video is the official full episode."
+}

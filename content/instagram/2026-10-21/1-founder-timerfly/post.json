@@ -1,0 +1,87 @@
+{
+ "slides": [
+  {
+   "layout": "cover",
+   "img": "timerfly-screenshot-1-1024x640.jpg",
+   "fit": "cover",
+   "pos": "0% 0%",
+   "credit": "Screenshot supplied by Timerfly",
+   "panel_h": 560,
+   "logo": "timerfly-logo.png",
+   "label": "Founder featured · launched 20 Oct",
+   "h1": [
+    "Timerfly ",
+    "tracks",
+    " attendance on its own"
+   ],
+   "h1_size": 84,
+   "deck": "Employee monitoring built for Indian teams. It *never records keystrokes*.",
+   "foot": [
+    "100xfounder.com",
+    "Swipe to see it →"
+   ]
+  },
+  {
+   "layout": "bg",
+   "img": "timerfly-screenshot-2-1024x762.jpg",
+   "credit": "Screenshot supplied by Timerfly",
+   "pos": "50% 30%",
+   "label": "What it does",
+   "h1": [
+    "A workday that ",
+    "starts",
+    " by itself"
+   ],
+   "h1_size": 84,
+   "cards": [
+    {
+     "k": "Attendance",
+     "v": "Automatic",
+     "vsize": 52,
+     "s": "Late, left early and absent, marked per shift, night shifts included"
+    },
+    {
+     "k": "Live view",
+     "v": "4 states",
+     "vsize": 52,
+     "s": "Working, idle, on a break or off"
+    },
+    {
+     "k": "Alerts in",
+     "v": "Slack · Teams · Google Chat · Telegram",
+     "vsize": 36,
+     "wide": true
+    }
+   ],
+   "foot": [
+    "Details supplied by Timerfly",
+    "→"
+   ],
+   "shade": 0.82,
+   "img_blur": true
+  },
+  {
+   "layout": "bg",
+   "img": "timerfly-screenshot-3-1024x566.jpg",
+   "credit": "Screenshot supplied by Timerfly",
+   "pos": "0% 0%",
+   "label": "Pricing",
+   "big": "₹159",
+   "big_label": "Per person a month, billed yearly, plus GST",
+   "h1": [
+    "Try it ",
+    "free",
+    " for 14 days"
+   ],
+   "h1_size": 80,
+   "deck": "No card needed. Runs on Windows and Mac.",
+   "cta": "Full profile:",
+   "foot": [
+    "Details supplied by Timerfly",
+    "Link in bio"
+   ],
+   "shade": 0.82,
+   "img_blur": true
+  }
+ ]
+}

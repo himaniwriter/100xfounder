@@ -1,0 +1,134 @@
+{
+ "slug": "verato",
+ "website": "https://verato.com/",
+ "excerpt": "Verato sells identity resolution and master data management software that matches records about the same patient or customer across systems, mainly in healthcare.",
+ "content": "<p>Verato makes identity resolution and master data management (MDM) software. In plain terms, it works out when records held in different systems describe the same person, so a hospital, health insurer, health information exchange or government agency can link a patient's records and keep one accurate profile. Its current product is Verato MDM Cloud, which its website pitches as a fix for fragmented identity data that hurts customer experience, growth and readiness for AI. Its homepage shows customer logos including Intermountain Health, Baylor Scott & White Health, Teladoc Health, Optum and the Pennsylvania Department of Health.</p><p>According to the company's own timeline, it was founded in 2012 as Araxid to solve identity matching problems for the government, and rebranded as Verato in 2015 to sell into the commercial sector, with Series A funding from investors including Bessemer Venture Partners and Columbia Capital. In February 2017 Verato announced a $12.5 million Series B co-led by Bessemer and Columbia Capital and said it had signed five new healthcare customers, including a national payer and three health information exchanges, as Becker's Hospital Review also reported. The timeline lists a Series C in 2018 that added healthcare investors such as Blue Heron Capital and the California Health Care Foundation.</p><p>Verato does not publish prices; it sells to organisations through demos and quotes. It is aimed at healthcare and other regulated organisations with large volumes of person records, not at small businesses. Buyers usually compare it with general MDM vendors such as Informatica and Reltio, or with the matching tools inside their electronic health record system.</p><p><em>We have not used Verato for this page. It brings together Verato's own website and the reporting linked under Sources, and says where each fact comes from. Nothing here is paid placement.</em></p>",
+ "profile": {
+  "checked": "2026-10-15",
+  "category": "Identity resolution and MDM",
+  "platform": "Cloud (SaaS)",
+  "starts_at": "Quote on request",
+  "schema_category": "BusinessApplication",
+  "summary_short": "Identity resolution and master data management for healthcare and other large organisations",
+  "maker": {
+   "name": "Verato",
+   "url": "https://verato.com/"
+  },
+  "gallery": [
+   {
+    "url": "https://verato.com/wp-content/uploads/2026/09/Knowing-Who-is-Who-Business-Case-MDM-Video-Thumbnail-1024x576.webp",
+    "alt": "Video still from Verato's website: a man speaking in a living room beside a caption saying modern healthcare data is siloed across payers, providers, vendors and government",
+    "credit": "Image: Verato (verato.com)",
+    "w": 1024,
+    "h": 576
+   },
+   {
+    "url": "https://verato.com/wp-content/uploads/2026/09/Choosing-Right-MDM-Vendor-Video-Thumbnail-1024x576.webp",
+    "alt": "Video still from Verato's website with the caption Choosing the right MDM vendor",
+    "credit": "Image: Verato (verato.com)",
+    "w": 1024,
+    "h": 576
+   }
+  ],
+  "use_cases": [
+   "Matching patient records across hospitals, clinics and health information exchanges",
+   "Building a single, trusted profile of each patient, member or customer",
+   "Cleaning duplicate records in an existing database",
+   "Supplying reliable identity data to analytics and AI applications"
+  ],
+  "audience": {
+   "fit": [
+    "health systems, payers and health information exchanges",
+    "government health agencies managing person records",
+    "enterprises in regulated industries with records spread across many systems"
+   ],
+   "not_fit": [
+    "small businesses with one customer database",
+    "buyers who want self-serve, published pricing"
+   ]
+  },
+  "pricing": {
+   "intro": "Verato does not publish prices on its website; it sells through demos and quotes.",
+   "url": "https://verato.com/",
+   "plans": [
+    {
+     "name": "Verato MDM Cloud",
+     "price": "Quote on request",
+     "detail": "Contact Verato for a demo"
+    }
+   ],
+   "checked": "2026-10-15"
+  },
+  "pros": [
+   "Long focus on healthcare identity matching",
+   "Large named healthcare customers",
+   "Delivered as a cloud service"
+  ],
+  "cons": [
+   "No public pricing",
+   "Accuracy claims are the company's own"
+  ],
+  "alternatives": {
+   "intro": "Other tools and companies often compared with Verato. We have not compared them hands-on; check each one's own site for current prices.",
+   "items": [
+    {
+     "name": "Informatica MDM",
+     "url": "https://www.informatica.com/",
+     "what": "Enterprise master data management",
+     "starts_at": "See its own website",
+     "difference": "Broad data management suite used across many industries."
+    },
+    {
+     "name": "Reltio",
+     "url": "https://www.reltio.com/",
+     "what": "Cloud master data management and entity resolution",
+     "starts_at": "See its own website",
+     "difference": "Cloud-native MDM platform for customer and product data."
+    },
+    {
+     "name": "Semarchy",
+     "url": "https://www.semarchy.com/",
+     "what": "Master data management platform",
+     "starts_at": "See its own website",
+     "difference": "General-purpose MDM with data governance features."
+    }
+   ]
+  },
+  "faq": [
+   {
+    "q": "What does Verato do?",
+    "a": "It matches records about the same person across systems and maintains one trusted profile, mainly for healthcare organisations."
+   },
+   {
+    "q": "When was Verato founded?",
+    "a": "Its timeline says it was founded in 2012 as Araxid and rebranded as Verato in 2015."
+   },
+   {
+    "q": "Who has invested in Verato?",
+    "a": "Bessemer Venture Partners and Columbia Capital co-led its $12.5 million Series B in 2017; its timeline lists Blue Heron Capital and the California Health Care Foundation in a 2018 Series C."
+   },
+   {
+    "q": "How much does Verato cost?",
+    "a": "It does not publish prices; contact the company for a quote."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Verato company page and timeline",
+    "url": "https://verato.com/company/"
+   },
+   {
+    "label": "Verato homepage",
+    "url": "https://verato.com/"
+   },
+   {
+    "label": "GlobeNewswire: Verato raises $12.5M Series B",
+    "url": "https://www.globenewswire.com/news-release/2017/02/06/1216719/0/en/Verato-Raises-12-5M-in-Series-B-Financing-Signs-Five-New-Customers.html"
+   },
+   {
+    "label": "Becker's Hospital Review: Verato raises $12.5M",
+    "url": "https://www.beckershospitalreview.com/?p=95382"
+   }
+  ]
+ }
+}
