@@ -5,43 +5,53 @@ description: The daily 100xfounder.com content routine. Finds what's trending in
 
 # /daily-content
 
-Runs once a day on the owner's Mac (scheduled task "100xfounder daily content"), on the owner's Claude plan. **Owner decision, 4 Oct 2026: this routine publishes without a per-post review**, so the quality bar below is the review. Target 10 a day (owner, 4 Oct 2026). Never lower the bar to hit the count: publish fewer rather than weak ones.
+Runs once a day on the owner's Mac (scheduled task "100xfounder daily content"), on the owner's Claude plan.
 
-## 0. Setup checks (stop and report if any fail)
-- Working directory is the 100xfounder repo. Read `CLAUDE.md`, `docs/STYLE_GUIDE.md` and `content/BRIEF.md` (the writing rules; follow every one).
-- `XF_SITE_URL`, `XF_WP_USER`, `XF_WP_APP_PASSWORD` are set (in `~/.zshrc`; never print them). `curl -s -u "$XF_WP_USER:$XF_WP_APP_PASSWORD" "$XF_SITE_URL/wp-json/xf/v1/recent?days=14"` returns JSON.
+**This routine publishes without a per-post human review** (owner, 4 Oct 2026), so the step 3 self-review gate *is* the review — treat it as the line a careful editor would hold. Target 10 articles, but never trade quality for count: publish fewer rather than weak ones. Anything about a founder-verification item or a private person is out of scope here and still needs the owner's review.
 
-## 1. Pick 10 topics (today's mix)
-1. Get what we already published: `xf/v1/recent?days=30` plus `ls content/drafts/`. Never repeat a topic or angle.
-2. Find what's trending in the last 48 hours with WebSearch: Indian startup funding and IPOs (Inc42, Entrackr, Economic Times, Mint, Moneycontrol), global AI and startup news (TechCrunch, The Verge, Reuters, Sifted, BetaKit), AI model/tool launches (official vendor blogs), tech hiring and layoffs, and visa/tax/salary changes. **Never use ANI or sites that republish ANI.**
-3. Choose by search demand and fit, spread across all lanes (about 3 news analysis, 3 AI tools, 2 careers & salary, 2 founder story / how-to). Also work through the unwritten topics in `content/PLAN.md` (phase 2 and 3 batches) before inventing new evergreen ones:
-   - **News analysis**: the biggest sourced story of the day, written as an explainer with context, not a rewrite.
-   - **AI tools / "which AI for what"** (global traffic).
-   - **Careers & salary** (India or international: visas, pay, hiring at a company on our jobs board, an apply guide).
-   - **Founder story or startup how-to** (evergreen).
-4. Prefer topics that link naturally to our own pages (jobs board, a company page, a calculator, the funding tracker).
+## 0. Setup (stop and report if either fails)
+- You are in the 100xfounder repo. Read `CLAUDE.md`, `docs/STYLE_GUIDE.md` and `content/BRIEF.md`, and follow every rule in them.
+- `XF_SITE_URL`, `XF_WP_USER`, `XF_WP_APP_PASSWORD` are set (from `~/.zshrc`; never print their values). Confirm the API works: `curl -s -u "$XF_WP_USER:$XF_WP_APP_PASSWORD" "$XF_SITE_URL/wp-json/xf/v1/recent?days=14"` returns JSON.
 
-## 2. Research and write each article
-Write them with at most 3 writer agents at a time (Agent tool, run_in_background), each taking 3–4 topics and this brief; wait for them, then start the rest. Never more than 3 at once (owner's credit limit).
-Follow `content/BRIEF.md` exactly: 1,800–2,500 words (news analysis may be 900–1,400 if the story doesn't support more; never pad), Key takeaways, FAQ, a Sources list like news sites, inline attribution, at least 8 fetched sources, 5 openly licensed images (Wikimedia Commons / Openverse; PD, CC0, CC BY, CC BY-SA only) with markers `<!-- xf-image-2..5 -->`, 2–5 internal links. Save each to `content/drafts/daily-YYYYMMDD-<slug>.json`.
+## 1. Pick 10 topics
+Avoid repeats: check `xf/v1/recent?days=30` and `ls content/drafts/`; never reuse a topic or angle. Work through the unwritten topics in `content/PLAN.md` (phase 2 and 3) before inventing new evergreen ones.
 
-## 3. Self-review (the gate; a failed article is not uploaded)
-For each file check, and fix or drop:
-- Every number, date, quote and name maps to a source in `sources` that you actually fetched. No invented figures, no net-worth estimates.
-- No sentence copied from a source. No ANI.
-- Images: 5, licences allowed, credits and source pages present, markers 2–5 present once.
-- Word count, title 55–70 chars, excerpt 140–160 chars, valid JSON (`python3 -m json.tool`).
+Use WebSearch for the last 48 hours — Indian startup funding/IPOs (Inc42, Entrackr, Economic Times, Mint, Moneycontrol), global AI and startup news (TechCrunch, The Verge, Reuters, Sifted, BetaKit), AI model/tool launches (official vendor blogs), tech hiring and layoffs, visa/tax/salary changes. **Never use ANI (aninews.in, ani.in) or sites that republish ANI.**
+
+Choose by search demand and fit, spread across lanes (roughly 3 news analysis, 3 AI tools, 2 careers & salary, 2 founder story / how-to), and prefer topics that link naturally to our own pages (jobs board, a company page, a calculator, the funding tracker):
+- **News analysis** — the day's biggest sourced story, as an explainer with context, not a rewrite.
+- **AI tools / "which AI for what"** (global traffic).
+- **Careers & salary** — India or international: visas, pay, hiring at a company on our jobs board, an apply guide.
+- **Founder story or startup how-to** (evergreen).
+
+## 2. Research and write
+Dispatch writer agents with the Agent tool (`run_in_background`), **at most 3 at a time** (owner's credit limit), each handling 3–4 topics. Wait for a batch before starting the next.
+
+Each agent follows `content/BRIEF.md` exactly. In short: 1,800–2,500 words (news analysis may run 900–1,400 if the story won't support more — never pad); Key takeaways, an FAQ, and a Sources list with inline attribution; at least 8 sources you actually fetched; exactly 5 openly licensed images (Wikimedia Commons / Openverse; PD, CC0, CC BY, CC BY-SA only) with credits and source pages, the first as featured image and markers `<!-- xf-image-2 -->`…`<!-- xf-image-5 -->` for the rest; 2–5 internal links. Save each as `content/drafts/daily-YYYYMMDD-<slug>.json`.
+
+## 3. Self-review gate (a failing article is not uploaded)
+For each file, fix it or drop it:
+- Every number, date, quote and name maps to a source in `sources` you actually fetched. No invented figures, no net-worth/valuation/revenue estimates.
+- No sentence copied from a source. No ANI anywhere.
+- Images: exactly 5, licences allowed, credits and source pages present, markers 2–5 each present once.
+- Word count in range, title 55–70 chars, excerpt 140–160 chars, valid JSON (`python3 -m json.tool`).
 - Would a careful editor at a good news site publish this as is? If not, drop it.
 
 ## 4. Schedule on the live site
-`python3 content/upload_rest.py --per-day 4 content/drafts/daily-YYYYMMDD-*.json`
+```
+python3 content/upload_rest.py --per-day 4 content/drafts/daily-YYYYMMDD-*.json
+```
+Pace (owner, 6 Oct 2026): **four posts a day at random times between 07:00 and 22:30 IST, at least 90 minutes apart** (the script picks the times). Never bulk-publish in a spike. New drafts join the end of the existing queue; the site sends each to IndexNow and the news sitemap when it goes live.
 
-Publishing pace (owner, 6 Oct 2026): **four posts a day at random times** between 07:00 and 22:30 IST, at least 90 minutes apart (`content/upload.py` picks the times). New drafts join the end of the queue. If a draft is breaking news (a funding round, an acquisition, an IPO), move it to the front so it goes out while it is still news: `python3 content/reschedule.py --first <part-of-file-name>`.
-(Uses only WordPress's built-in REST API plus /xf/v1/drafts, so it works whether or not the latest plugin is deployed. It continues the schedule after posts already queued, uploads each image to the media library, and pauses between posts for Wikimedia's rate limit. `content/upload.py` is the alternative once the 2026-10-04 plugin release is live.)
-It spreads the 10 posts from 07:00 to 22:30 IST. The site sends each to IndexNow and the news sitemap when it goes live.
+`upload_rest.py` uses only WordPress's built-in REST API plus `/xf/v1/drafts`, so it works whether or not the latest plugin is deployed: it continues after already-queued posts, uploads each image to the media library, and pauses between posts for Wikimedia's rate limit. `content/upload.py` is the alternative once the 2026-10-04 plugin release is live.
 
-## 5. Report
-Write `content/reports/YYYY-MM-DD.md`: topics chosen and why, titles, scheduled times, URLs, anything dropped and why. Commit the drafts and report on the working branch (`git add content && git commit`), and push.
+For breaking news (a funding round, acquisition, IPO), move the draft to the front so it goes out while still news:
+```
+python3 content/reschedule.py --first <part-of-file-name>
+```
+
+## 5. Report and commit
+Write `content/reports/YYYY-MM-DD.md`: topics chosen and why, titles, scheduled times, URLs, and anything dropped and why. Then `git add content && git commit` on the working branch and push.
 
 ## URLs
-Every slug is 2–6 words, keyword first, and **never contains a year** (owner, 7 Oct 2026). Put the year in the title if it helps; the address has to stay valid next year. Event pages are the one exception, because the edition year is part of the event's name.
+Every slug is 2–6 words, keyword first, and **never contains a year** (owner, 7 Oct 2026) — the address must still be valid next year; put the year in the title instead if it helps. Event pages are the only exception, since the edition year is part of the event's name.

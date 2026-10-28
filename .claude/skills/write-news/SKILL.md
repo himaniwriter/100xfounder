@@ -5,63 +5,43 @@ description: Research and write 100Xfounder startup/funding news drafts from the
 
 # /write-news
 
-Writes startup and funding news for 100xfounder.com. It runs on the owner's Claude plan, not API credits. **Drafts are always uploaded as Pending review.** You never publish.
+Write startup and funding news for 100xfounder.com and upload each as a **Pending review** draft. Runs on the owner's Claude plan, not API credits. **You never publish** — the API only accepts pending, and so do you.
 
-## Before you start
-1. Read `CLAUDE.md` (rules) and `docs/STYLE_GUIDE.md` (how we write).
-2. Check that these environment variables exist. If any are missing, stop and ask the owner to set them:
-   - `XF_SITE_URL`, e.g. `https://100xfounder.com` or `http://localhost:8080`
-   - `XF_WP_USER`, a WordPress user with the **Author** role
-   - `XF_WP_APP_PASSWORD`, created in WordPress → Users → Profile → Application Passwords
-3. Run the helper in `.claude/skills/write-news/xf.sh`, for example `bash .claude/skills/write-news/xf.sh queue news 3`.
+## Setup
+- Read `CLAUDE.md` (rules) and `docs/STYLE_GUIDE.md` (how we write) before writing.
+- The helper `.claude/skills/write-news/xf.sh` needs `XF_SITE_URL`, `XF_WP_USER` (an **Author**), and `XF_WP_APP_PASSWORD` (WordPress → Users → Profile → Application Passwords). If any is unset, stop and ask the owner — never print the values.
+- **If the `100xfounder` MCP server is connected** (`docs/MCP.md`), use its tools (`list_queue`, `recent_posts`, `list_categories`, `create_draft`) instead of `xf.sh`, with the same payload. Everything below still applies.
 
-> **If the `100xfounder` MCP server is connected** (see `docs/MCP.md`), use its tools instead of `xf.sh`: `list_queue`, `recent_posts`, `list_categories`, then `create_draft` with the same payload. Everything below still applies.
-
-## Steps
-1. **Pick topics.**
-   - Run `xf.sh queue news N` (default N=3). If the owner gave a topic, use that instead.
-   - Run `xf.sh recent 3` and skip anything we already covered.
-2. **Research each topic.**
-   - Use web search and fetch. Start from the queue item's `source_urls`.
-   - Prefer primary sources: company announcement, filing, investor post. Add at least one reputable report.
-   - Keep a list for every source: `url`, `publisher`, `date` (YYYY-MM-DD) and the `claim` it supports.
-   - **Never invent numbers, quotes or names.** If a fact can't be sourced, leave it out.
-3. **Write.**
-   - Follow the style guide: 350–700 words, our own words, an inverted-pyramid structure, and H2 subheads. Apply **Written for Google News and Discover** below.
-   - End with a short "Why it matters" section.
-   - Output HTML: `<p>`, `<h2>`, `<ul>` and `<blockquote>` only for real, sourced quotes.
-   - Pick one category slug: `funding`, `startup-news`, `ai-news`, `fintech`, `ai-deeptech`, `ecommerce`, `consumer-d2c`, `saas`, `healthtech`, `ev-mobility`, `web3`, `spacetech`, `gaming`, `press-releases` or `reports`. Run `xf.sh categories` to list them.
-4. **Self-check before upload.** Every item must hold:
-   - Every figure and claim maps to a source in your list.
-   - No sentence is copied from a source (paraphrase; quote only short, attributed lines).
-   - The title is 55–70 characters, specific and not clickbait.
-   - The excerpt is 140–160 characters.
-   - The headline passes the News and Discover rules below, and there is a licensed lead image at least 1200px wide.
-5. **Upload.** Write a JSON file and run `xf.sh draft file.json`. The payload:
+## Workflow
+1. **Pick topics.** `xf.sh queue news N` (default N=3), or the owner's topic. Run `xf.sh recent 3` and skip anything already covered.
+2. **Research.** Start from the queue item's `source_urls`; use web search and fetch. Prefer primary sources (company announcement, filing, investor post) plus at least one reputable report. For every source keep `url`, `publisher`, `date` (YYYY-MM-DD) and the `claim` it supports. **Never invent numbers, quotes or names; if a fact can't be sourced, leave it out.** Summarise in our own words — never republish another outlet's article.
+3. **Write.** 350–700 words, inverted pyramid, our own words, sentence-case H2 subheads, ending in a short "Why it matters". Follow **Google News and Discover** below. Output HTML using only `<p>`, `<h2>`, `<ul>`, and `<blockquote>` (real, attributed quotes only). Pick one category slug from `xf.sh categories` (e.g. `funding`, `startup-news`, `ai-news`, `fintech`, `ai-deeptech`, `ecommerce`, `consumer-d2c`, `saas`, `healthtech`, `ev-mobility`, `web3`, `spacetech`, `gaming`, `press-releases`, `reports`).
+4. **Self-check — every item must hold:** each figure/claim maps to a source in your list; nothing copied (paraphrase; short attributed quotes only); title 55–70 chars, specific, not clickbait; excerpt 140–160 chars; a licensed lead image ≥1200px wide; headline passes the News/Discover rules.
+5. **Upload.** Write a JSON file and run `xf.sh draft file.json`:
    ```json
    {"type":"post","title":"…","excerpt":"…","content":"<p>…</p>","category":"funding","tags":["Zepto"],
     "sources":[{"url":"…","publisher":"…","date":"2026-10-04","claim":"Raised $X led by Y"}],
-    "original_url":"…","image_url":"(required: licensed image ≥1200px wide, see Written for Google News and Discover)","image_credit":"…","queue_id":12}
+    "original_url":"…","image_url":"(required: licensed image ≥1200px wide, see below)","image_credit":"…","queue_id":12}
    ```
-   - **Funding rounds** also go on the tracker. Upload a second draft with `"type":"xf_round"` and these `fields`: `company`, `sector`, `round`, `lead_investor`, `amount_display`, `amount_usd` (a plain number, or leave it out if undisclosed), `country`, `announced` and `source_url`.
-6. **Report** the edit links that come back, so the owner can review and publish them.
+   **Funding rounds** also get a second draft with `"type":"xf_round"` and `fields`: `company`, `sector`, `round`, `lead_investor`, `amount_display`, `amount_usd` (plain number, omit if undisclosed), `country`, `announced`, `source_url`.
+6. **Report** the edit links that come back so the owner can review and publish.
 
-## Written for Google News and Discover
-Neither surface can be bought or forced; Google picks stories from both automatically. What earns a place is the same in both: fast, original, clearly sourced news with an honest headline and a big picture. Hold every story to this:
+## Google News and Discover
+Google picks stories automatically; neither surface can be forced. Earn a place with fast, original, clearly sourced news, an honest headline and a big picture:
 
-- **Speed and freshness.** Write the story the day it breaks; a funding round is news for about 48 hours (that is also the window of our `news-sitemap.xml`). Never re-date an old story. If you update one, add an `<p><em>Updated DD Month YYYY: what changed.</em></p>` line at the top; only real changes count as an update.
-- **Headline.** Plain and specific: who did what, with the number when there is one ("Zepto raises $450M at $7B valuation led by General Catalyst"). 55–70 characters, under 110 at most. Never withhold the point, exaggerate, or bait ("You won't believe…", "This startup just…", "Huge news"). Discover demotes those headlines and Google News treats them as a policy problem.
-- **First two sentences carry the story.** Sentence one: who, what, how much, when, source. Sentence two: why it matters to a founder, investor or job seeker. Discover shows the first lines as the preview; a reader should get the news without clicking.
-- **Add something an aggregator does not.** At least one of: the round in context (previous rounds, sector totals from our funding tracker), the India angle for a global story, what it means for hiring (link `/jobs/company/<slug>/` when the company is on our board), or the primary document itself. A rewrite of one outlet's article adds nothing and Google ranks the original.
-- **One story per URL**, with a dateline and the publish time in the first paragraph's facts (e.g. "on Friday, 3 October").
-- **A large picture, always.** Discover's large card needs an image at least 1200px wide; stories without one barely show up. Use the image rules in `content/BRIEF.md` (Wikimedia Commons or Openverse, 1600px `thumburl`, accepted licences only) or an official press kit that grants media use. No logos, screenshots of tweets or text-heavy graphics as the lead image. Set it as `image_url` with `image_credit`.
-- **Attribute everything inline** ("according to its filing with the RoC", "the company told Inc42") and keep the Sources list. Trust signals are what get a small publisher into Top stories.
-- **Topic focus.** Stay inside our categories. A site that covers Indian startups, funding and AI deeply is more likely to be shown for those topics than one that also chases celebrity or viral stories.
+- **Freshness.** Write the day it breaks; a funding round is news for ~48 hours (our `news-sitemap.xml` window). Never re-date an old story. A real update gets a top line `<p><em>Updated DD Month YYYY: what changed.</em></p>`.
+- **Headline.** Who did what, with the number ("Zepto raises $450M at $7B valuation led by General Catalyst"). 55–70 chars, 110 max. No withholding, exaggeration or bait ("You won't believe…", "Huge news") — Discover demotes these and News treats them as a policy problem.
+- **First two sentences carry the story.** S1: who, what, how much, when, source. S2: why it matters to a founder, investor or job seeker. Discover previews these lines; the reader should get the news without clicking.
+- **Add what an aggregator can't:** the round in context (prior rounds, sector totals from our funding tracker), the India angle on a global story, the hiring implication (link `/jobs/company/<slug>/` if the company is on our board), or the primary document. A single-outlet rewrite adds nothing and ranks below the original.
+- **One story per URL,** with a dateline and publish time in the first paragraph ("on Friday, 3 October").
+- **Always a large picture, ≥1200px wide** (Discover's large card). Use the image rules in `content/BRIEF.md` (Wikimedia Commons or Openverse, 1600px `thumburl`, accepted licences only) or an official press kit granting media use. No logos, tweet screenshots or text graphics as the lead. Set `image_url` + `image_credit`.
+- **Attribute inline** ("according to its RoC filing", "the company told Inc42") and keep the Sources list.
+- **Stay inside our categories** — Indian startups, funding and AI, not celebrity or viral filler.
 
 ## Never
-- Publish, or set any status other than pending (the API won't allow it anyway).
-- Estimate net worth, revenue or valuations without a source.
+- Publish or set any status other than pending.
+- State net worth, revenue or valuation without a dated source.
 - Use images you don't have the right to use.
 
 ## URLs
-Every slug is 2–6 words, keyword first, and **never contains a year** (owner, 7 Oct 2026). Put the year in the title if it helps; the address has to stay valid next year. Event pages are the one exception, because the edition year is part of the event's name.
+Slugs are 2–6 words, keyword first, and **never contain a year** (owner, 7 Oct 2026) — the address must stay valid next year; put the year in the title if it helps. Event pages are the only exception (the edition year is part of the name).
